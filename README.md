@@ -12,8 +12,9 @@ The reconstruction is motivated by growth and future scale. Earlier corpora,
 papers and application repositories remain preserved as scientific provenance;
 they are not proof dependencies of this rebuild and are not being withdrawn.
 
-**Current phase:** constitutional and repository scaffold. No v3 scientific
-claim is admitted merely because it was closed in an earlier corpus.
+**Current phase:** independent foundation reconstruction. The premise-free root
+theorem and structural One are the first model-admitted v3 claims. No result is
+admitted merely because it was closed in an earlier corpus.
 
 ## Language generations
 
@@ -113,11 +114,13 @@ The initial Python scaffold is intentionally small:
 
 ```sh
 python -m sft status
-python tools/run_portable_checks.py
+python -m sft verify-all
 ```
 
-These commands currently validate the repository constitution and report that
-the scientific census is empty. They do not claim a rebuilt derivation.
+`verify-all` runs repository validation, the complete unit and end-to-end suite,
+the 100% core-engine executable-line coverage gate, and an independent rerun of
+every derivation in the ordered census. It is the single reviewer command; its
+exact gates are documented in [Complete verification](docs/VERIFICATION.md).
 
 ## Applications
 

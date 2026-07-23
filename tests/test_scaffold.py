@@ -6,16 +6,20 @@ from sft.cli import ROOT, engine_status, repository_status
 
 
 class ScaffoldTests(unittest.TestCase):
-    def test_census_starts_without_imported_claims(self) -> None:
+    def test_census_contains_only_engine_admitted_v3_claims(self) -> None:
         census = json.loads((ROOT / "census" / "claims.json").read_text(encoding="utf-8"))
-        self.assertEqual(census["claims"], [])
+        self.assertEqual(
+            [claim["claim_id"] for claim in census["claims"]],
+            ["SFT-ROOT-THERE-IS-NO-NOTHING", "SFT-FOUNDATION-ONE-001"],
+        )
+        self.assertTrue(all(claim["model_admitted"] for claim in census["claims"]))
         self.assertEqual(census["unclassified_obligations"], [])
 
     def test_status_registers_accessible_v3_and_self_hosted_v4(self) -> None:
         status = repository_status()
         self.assertEqual(status["generation"], "v3-python-accessible")
-        self.assertEqual(status["registered_claims"], 0)
-        self.assertEqual(status["admitted_claims"], 0)
+        self.assertEqual(status["registered_claims"], 2)
+        self.assertEqual(status["admitted_claims"], 2)
         self.assertEqual(status["future_generation"], "v4-sft-derived-self-hosted")
 
     def test_single_engine_policy_is_fail_closed(self) -> None:

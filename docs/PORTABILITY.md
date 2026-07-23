@@ -11,7 +11,7 @@ admission decision.
 The common validation command is:
 
 ```text
-python tools/run_portable_checks.py
+python -m sft verify-all
 ```
 
 Use the command name that launches Python 3 on the local machine. No POSIX shell,

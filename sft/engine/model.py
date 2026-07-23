@@ -148,6 +148,8 @@ class EngineReceipt:
     violations: tuple[str, ...]
     gate_results: tuple[GateResult, ...]
     derivation_seal_hash: Optional[str]
+    external_validation_hash: Optional[str]
+    empirical_validation_hash: Optional[str]
     receipt_hash: str = field(compare=False)
 
 

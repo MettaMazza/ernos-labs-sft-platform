@@ -27,12 +27,15 @@ REQUIRED_FILES = (
     "docs/ENGINE_AUTHORITY.md",
     "docs/ENGINE_STATUS.md",
     "docs/PORTABILITY.md",
+    "docs/VERIFICATION.md",
     "docs/V4_SELF_HOSTED_REBUILD.md",
     "census/claims.json",
+    "census/execution_manifest.json",
     "census/branches.json",
     "governance/claim.schema.json",
     "governance/engine_policy.json",
     "governance/engine_receipt.schema.json",
+    "governance/execution_manifest.schema.json",
     "governance/experiment.schema.json",
     ".github/workflows/portable-validation.yml",
 )
@@ -146,7 +149,8 @@ def main() -> None:
     if errors:
         raise SystemExit("repository validation failed:\n" + "\n".join(errors))
     print("repository validation: PASS")
-    print("scientific status: single admission engine; no v3 claims admitted")
+    census = json.loads((ROOT / "census" / "claims.json").read_text(encoding="utf-8"))
+    print(f"scientific status: {len(census['claims'])} v3 claim(s) admitted through the engine")
     print("future generation: v4 SFT-derived self-hosted reconstruction registered")
 
 

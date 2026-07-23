@@ -1,0 +1,9 @@
+{
+  "claim_id": "SFT-FOUNDATION-ONE-001",
+  "controls": [
+    {"kind": "false_premise", "passed": true, "expected_behavior": "reject an omitted root as a representation of the admitted occurrence", "observed_behavior": "omitted-root does not survive", "receipt_hash": "sha256:0dceced6a8585727559c36b83c2f4b0d0061703175b7ab66d4a653b3be67600a"},
+    {"kind": "tampered_source", "passed": true, "expected_behavior": "reject a changed source identity", "observed_behavior": "tampered source identity differs", "receipt_hash": "sha256:e4188d90cf7ccec55e447016899f3e85a391963b406e3ff5f914e99dcc3daaa3"},
+    {"kind": "tampered_artifact", "passed": true, "expected_behavior": "reject addition of an unforced extra to the complete root", "observed_behavior": "whole-plus-extra does not survive", "receipt_hash": "sha256:c857b9ae91fe5c805ba7e9d7b170f22ea1c25045938c3ae5c2599c5f948a199b"},
+    {"kind": "boundary", "passed": true, "expected_behavior": "refuse numerical magnitude claims not yet derived", "observed_behavior": "the admitted meaning is structural self-wholeness only", "receipt_hash": "sha256:f9b13fb3dc82eeffcfa15517eb3320854a0b96759feb5e9846c0c352df66bce9"}
+  ]
+}

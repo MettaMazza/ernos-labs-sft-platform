@@ -58,6 +58,8 @@ def read_receipt(path: Path) -> EngineReceipt:
         "violations",
         "gate_results",
         "derivation_seal_hash",
+        "external_validation_hash",
+        "empirical_validation_hash",
         "receipt_hash",
     }
     if set(payload) != expected:
@@ -74,5 +76,7 @@ def read_receipt(path: Path) -> EngineReceipt:
         violations=tuple(payload["violations"]),
         gate_results=gates,
         derivation_seal_hash=payload["derivation_seal_hash"],
+        external_validation_hash=payload["external_validation_hash"],
+        empirical_validation_hash=payload["empirical_validation_hash"],
         receipt_hash=payload["receipt_hash"],
     )

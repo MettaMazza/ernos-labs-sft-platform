@@ -30,9 +30,10 @@
 
 ## Current scientific status
 
-No v3 scientific derivation has been submitted. The model census remains empty.
-All executed examples are explicitly synthetic engine controls and cannot become
-SFT scientific dependencies.
+The premise-free operational root theorem and its first downstream result, the
+structural One, are model-admitted. Both are depth-independently closed at their
+declared structural boundaries and independently replicated. Synthetic engine
+controls remain excluded from the scientific census.
 
 ## Required before the first official empirical derivation
 

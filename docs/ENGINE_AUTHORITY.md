@@ -28,8 +28,9 @@ science from derivation. It assigns the appropriate external object to each.
 
 ## Engine stages
 
-1. **Registration gate** - one root theorem, no axioms, no free parameters,
-   admitted dependencies and classified provenance.
+1. **Registration gate** - the root theorem has no premise or dependency; every
+   later claim traces to that one root; no axioms, no free parameters, admitted
+   dependencies and classified provenance.
 2. **Enumeration gate** - declared generator, boundary, duplicate-free complete
    census and completeness certificate.
 3. **Forcing gate** - every candidate decided, exactly one survivor, minimality

@@ -1,7 +1,10 @@
 # Foundation
 
-Future home of the self-proven theorem, exact counted structures, the One,
-positive rational parts, the Fold, generated assembly grammar, form enforcement,
-measured-value boundary and adverse controls.
+The premise-free operational root theorem and structural One are model-admitted
+and independently replicated. Their claim packages are
+[`SFT-ROOT-THERE-IS-NO-NOTHING`](../../claims/SFT-ROOT-THERE-IS-NO-NOTHING/)
+and [`SFT-FOUNDATION-ONE-001`](../../claims/SFT-FOUNDATION-ONE-001/).
 
-No v3 foundational claim is admitted at scaffold creation.
+Positive rational parts, the Fold, generated assembly grammar, form enforcement
+and measured-value boundary remain separate future derivations. They must cite
+the admitted dependency receipts and cannot be imported from V2 correspondence.

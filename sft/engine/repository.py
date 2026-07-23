@@ -151,7 +151,6 @@ class EngineRepository:
                 "receipt_hash": receipt.receipt_hash,
             }
         )
-        claims.sort(key=lambda item: item["claim_id"])
         self._atomic_json_write(self.census_path, census)
 
     @staticmethod

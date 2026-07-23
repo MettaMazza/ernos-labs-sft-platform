@@ -22,7 +22,7 @@ def repository_status() -> dict[str, object]:
         "phase": BUILD_PHASE,
         "registered_claims": len(claims),
         "admitted_claims": sum(
-            claim.get("status") in {"uniquely_closed", "independently_replicated"}
+            claim.get("model_admitted") is True
             for claim in claims
         ),
         "remote_publication": "not-configured",
@@ -50,10 +50,22 @@ def engine_status() -> dict[str, object]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="sft")
-    parser.add_argument("command", choices=("status", "engine-status"))
+    parser.add_argument("command", choices=("status", "engine-status", "verify-all"))
     args = parser.parse_args()
 
     if args.command == "status":
         print(json.dumps(repository_status(), indent=2, sort_keys=True))
     elif args.command == "engine-status":
         print(json.dumps(engine_status(), indent=2, sort_keys=True))
+    elif args.command == "verify-all":
+        from sft.verification import verify_all
+
+        report = verify_all(ROOT)
+        print("SFT COMPLETE VERIFICATION: PASS")
+        print(f"unit and end-to-end tests passed: {report.coverage.tests_run}")
+        print(
+            "core engine executable-line coverage: "
+            f"{report.coverage.executed_lines}/{report.coverage.executable_lines} (100%)"
+        )
+        print(f"core engine modules covered: {report.coverage.modules}")
+        print(f"registered derivations independently rerun: {report.rerun_claims}")

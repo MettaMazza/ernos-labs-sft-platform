@@ -141,6 +141,7 @@ class SFTAdmissionEngine:
             external = independent_validator.validate(sealed)
         except Exception as exc:
             self._halt(registration.claim_id, "independent_validation", (f"validator raised: {exc}",), gates, seal_hash)
+        external_validation_hash = sha256_identity(external)
         violations = self._external_violations(registration, sealed, external)
         self._require(
             registration.claim_id,
@@ -149,9 +150,11 @@ class SFTAdmissionEngine:
             gates,
             "distinct implementation recomputed the sealed result from declared inputs",
             seal_hash,
+            external_validation_hash,
         )
 
         external_status = "independently_replicated"
+        empirical_validation_hash = None
         if registration.evidence_mode is EvidenceMode.EMPIRICAL:
             if empirical_validator is None:
                 self._halt(
@@ -160,11 +163,20 @@ class SFTAdmissionEngine:
                     ("empirical claim has no blind empirical validator",),
                     gates,
                     seal_hash,
+                    external_validation_hash,
                 )
             try:
                 empirical = empirical_validator.validate(sealed)
             except Exception as exc:
-                self._halt(registration.claim_id, "empirical_validation", (f"empirical validator raised: {exc}",), gates, seal_hash)
+                self._halt(
+                    registration.claim_id,
+                    "empirical_validation",
+                    (f"empirical validator raised: {exc}",),
+                    gates,
+                    seal_hash,
+                    external_validation_hash,
+                )
+            empirical_validation_hash = sha256_identity(empirical)
             violations = self._empirical_violations(sealed, empirical)
             self._require(
                 registration.claim_id,
@@ -173,6 +185,8 @@ class SFTAdmissionEngine:
                 gates,
                 "target-inaccessible prediction sealed before independent data measurement",
                 seal_hash,
+                external_validation_hash,
+                empirical_validation_hash,
             )
             external_status = "empirically_tested_and_independently_replicated"
         elif empirical_validator is not None:
@@ -182,6 +196,7 @@ class SFTAdmissionEngine:
                 ("formal claim supplied empirical evidence without registering empirical mode",),
                 gates,
                 seal_hash,
+                external_validation_hash,
             )
 
         model_admitted = closure.scope in {
@@ -207,6 +222,8 @@ class SFTAdmissionEngine:
             violations=(),
             gates=tuple(gates),
             seal_hash=seal_hash,
+            external_validation_hash=external_validation_hash,
+            empirical_validation_hash=empirical_validation_hash,
         )
 
     def _registration_violations(
@@ -219,7 +236,12 @@ class SFTAdmissionEngine:
             value = getattr(registration, field_name)
             if not isinstance(value, str) or not value.strip():
                 violations.append(f"{field_name} is missing")
-        if registration.root_theorems != (ROOT_THEOREM,):
+        if registration.claim_id == ROOT_THEOREM:
+            if registration.root_theorems:
+                violations.append("the root theorem cannot cite itself as a premise")
+            if registration.dependencies:
+                violations.append("the root theorem cannot depend on a prior model claim")
+        elif registration.root_theorems != (ROOT_THEOREM,):
             violations.append("foundation trace must contain exactly the single self-proven root theorem")
         if registration.axioms:
             violations.append("axioms are forbidden")
@@ -398,10 +420,20 @@ class SFTAdmissionEngine:
         gates: list[GateResult],
         pass_detail: str,
         seal_hash: Optional[str] = None,
+        external_validation_hash: Optional[str] = None,
+        empirical_validation_hash: Optional[str] = None,
     ) -> None:
         violation_tuple = tuple(violations)
         if violation_tuple:
-            self._halt(claim_id, stage, violation_tuple, gates, seal_hash)
+            self._halt(
+                claim_id,
+                stage,
+                violation_tuple,
+                gates,
+                seal_hash,
+                external_validation_hash,
+                empirical_validation_hash,
+            )
         gates.append(GateResult(stage, True, pass_detail))
 
     def _halt(
@@ -411,6 +443,8 @@ class SFTAdmissionEngine:
         violations: tuple[str, ...],
         gates: list[GateResult],
         seal_hash: Optional[str] = None,
+        external_validation_hash: Optional[str] = None,
+        empirical_validation_hash: Optional[str] = None,
     ) -> None:
         gates.append(GateResult(stage, False, "; ".join(violations)))
         receipt = self._make_receipt(
@@ -423,6 +457,8 @@ class SFTAdmissionEngine:
             violations=violations,
             gates=tuple(gates),
             seal_hash=seal_hash,
+            external_validation_hash=external_validation_hash,
+            empirical_validation_hash=empirical_validation_hash,
         )
         raise EngineHalt(receipt)
 
@@ -437,6 +473,8 @@ class SFTAdmissionEngine:
         violations: tuple[str, ...],
         gates: tuple[GateResult, ...],
         seal_hash: Optional[str],
+        external_validation_hash: Optional[str],
+        empirical_validation_hash: Optional[str],
     ) -> EngineReceipt:
         payload = {
             "engine_id": ENGINE_ID,
@@ -449,6 +487,8 @@ class SFTAdmissionEngine:
             "violations": violations,
             "gate_results": gates,
             "derivation_seal_hash": seal_hash,
+            "external_validation_hash": external_validation_hash,
+            "empirical_validation_hash": empirical_validation_hash,
         }
         return EngineReceipt(receipt_hash=sha256_identity(payload), **payload)
 
