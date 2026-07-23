@@ -62,7 +62,8 @@ def main() -> None:
     token = token_file.read_text(encoding="utf-8").strip()
     if not token:
         raise SystemExit("Zenodo token file is empty")
-    metadata = json.loads(args.metadata.read_text(encoding="utf-8"))
+    metadata_document = json.loads(args.metadata.read_text(encoding="utf-8"))
+    metadata = {"metadata": metadata_document["metadata"]}
 
     draft_url = f"{API}/deposit/depositions/{args.draft}"
     draft = request(token, "GET", draft_url)
