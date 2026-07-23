@@ -5,6 +5,31 @@ complete standalone branch paper, **From Distinction to Information**. Every ear
 branch paper remains unchanged in its own canonical source folder and archival
 record.
 
+## Completed computation branches - local prepublication
+
+The Classical Computation branch is frozen complete and documented in the new
+standalone manuscript
+[`After Turing: The Fold Machine`](computation/AFTER_TURING_THE_FOLD_MACHINE.md).
+Its rendered 396-page edition is
+[`output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf`](../../output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf).
+It covers all 113 frozen obligations, 28,928 candidates and exact evidence
+identities.
+
+The Reversible and Quantum Computation branch is separately frozen complete and
+documented in
+[`The Quantum Fold Machine`](quantum_computation/THE_QUANTUM_FOLD_MACHINE.md).
+Its rendered 80-page edition is
+[`output/pdf/the-quantum-fold-machine-branch-paper-001.pdf`](../../output/pdf/the-quantum-fold-machine-branch-paper-001.pdf).
+It covers all 21 frozen obligations, 5,376 candidates and the executable
+multi-error correction censuses.
+
+Both manuscripts have complete evidence maps, manifests and branch-publication
+receipts. Their metadata and release file plans are prepared locally. They carry
+`publication_authorized: false`: neither paper has been pushed, uploaded,
+assigned a DOI or published. The GitHub landing paper therefore remains the
+published Information Science edition until Maria Smith separately authorizes a
+coordinated release.
+
 ## Completed Information Science branch paper
 
 The third closed scientific branch has a new, independent paper:

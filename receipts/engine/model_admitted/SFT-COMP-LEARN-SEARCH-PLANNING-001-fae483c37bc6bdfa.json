@@ -1,0 +1,56 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-COMP-LEARN-SEARCH-PLANNING-001",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:15ffc8f3e5def5649d23e98ea4fdc3424e78eaadf8b6d73c82bb60159dcfcf57",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "independently_replicated",
+  "external_validation_hash": "sha256:4d3e3ee3ed6bcd4c5d13258a994ffbc068e989dfd5dd8c1472d0bdc2ac2979e6",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:fae483c37bc6bdfa9b29553a47c1620a9038fb736fd8cf2af77fe96535e780c7",
+  "violations": []
+}

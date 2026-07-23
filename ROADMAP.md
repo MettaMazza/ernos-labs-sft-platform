@@ -35,16 +35,22 @@ standalone exhaustive branch paper is published.
 - [x] Information science: twelve model-admitted, depth-independently closed and
   independently replicated claims; frozen inventory; standalone paper and
   evidence bundle published at DOI `10.5281/zenodo.21516916` on 23 July 2026.
-- Formal computation and model equivalence.
-- Computability and incompleteness boundaries.
-- Complexity and resource laws.
-- Algorithms and mathematical data structures.
-- Semantics and mathematical programming theory.
-- Concurrent and distributed computation.
-- Cryptography and computational security.
-- Learning and intelligence theory.
-- Scientific computation.
-- Reversible and quantum computation.
+- [x] Formal computation and model equivalence.
+- [x] Computability and incompleteness boundaries.
+- [x] Complexity and resource laws.
+- [x] Algorithms and mathematical data structures.
+- [x] Semantics and mathematical programming theory.
+- [x] Concurrent and distributed computation.
+- [x] Cryptography and computational security.
+- [x] Learning and intelligence theory.
+- [x] Scientific computation.
+- [x] Reversible and quantum computation.
+
+The Classical Computation inventory is frozen complete with 113 admitted claims
+and 28,928 generated candidates. The Reversible and Quantum Computation
+inventory is frozen complete with 21 admitted claims and 5,376 generated
+candidates. Their separate exhaustive papers and evidence maps pass their local
+publication gates; publication remains unauthorized.
 
 ## Phase E - physical sciences
 

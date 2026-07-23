@@ -1,0 +1,56 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-COMP-CBL-ENUMERATION-001",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:6c0d27b9378dd92f4cdedc7f7d4dc90a02fe816f4c8fbeef2c826ae564712d08",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "independently_replicated",
+  "external_validation_hash": "sha256:56a2658bc7bed4373c7763f34346566f995e7e95bcfcb87ede676a3ceb5e088c",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:b4a3d735406f9ab57023c47ed0a12a7a221b278c75727cb0a7170dbdfec940f2",
+  "violations": []
+}

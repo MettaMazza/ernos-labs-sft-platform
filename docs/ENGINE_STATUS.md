@@ -48,14 +48,32 @@ coding, mutual/conditional information, conservation/loss/transformation,
 classical/probabilistic correspondence and quantum-information support
 correspondence. Its grammars execute 11,776 candidates and contain exactly
 twelve survivors. All claims are depth-independently closed and independently
-replicated. The official census now contains thirty-four scientific claims and
-21,650 generated candidates through the three complete branches. Synthetic
-engine controls remain excluded from that census.
+replicated.
+
+The Classical Computation branch is frozen complete with 113 model-admitted
+claims across Formal Computation, Computability, Complexity, Algorithms,
+Semantics, Concurrent and Distributed Computation, Cryptography and Security,
+Learning and Intelligence Theory, and Scientific Computation. Its grammars
+execute 28,928 candidates, contain exactly 113 survivors, and preserve 452
+passing adverse controls and 113 implementation-distinct validations.
+
+The Reversible and Quantum Computation branch is frozen complete with 21
+model-admitted claims from the complete reversible model through quantum
+information units, composition, support, phase/interference, entanglement,
+measurement, gates, circuits, universality, algorithms, complexity,
+communication, coding, correction, fault tolerance, simulation, verification,
+learning, classical-quantum correspondence and limits. Its grammars execute
+5,376 candidates. Exact fault censuses close widths three, five and seven, with
+a structural 2t+1 successor certificate for every generated positive finite
+fault depth.
+
+The official census now contains 168 scientific claims and 55,954 generated
+candidates through the five complete branches. Synthetic engine controls remain
+excluded from that census.
 
 The standalone Mathematics paper, its evidence map and the complete
-paper/evidence release are published at DOI `10.5281/zenodo.21516146`. GitHub
-`main` displays the paper as the repository landing document. The Foundation
-paper remains separately preserved and published at DOI
+paper/evidence release are published at DOI `10.5281/zenodo.21516146`. The
+Foundation paper remains separately preserved and published at DOI
 `10.5281/zenodo.21515629`.
 
 The independent Information Science paper, *From Distinction to Information*,
@@ -65,9 +83,17 @@ record is published at DOI `10.5281/zenodo.21516916`, and GitHub `main` displays
 this paper as the repository landing document. Neither earlier canonical paper
 was edited.
 
-The current complete verifier result is 131 unit and end-to-end tests, 1,264 of
-1,264 executable core-engine lines (100 percent), fifteen core modules and all
-thirty-four admitted derivations independently rerun in dependency order.
+The Classical Computation paper, *After Turing: The Fold Machine*, is a
+396-page local prepublication manuscript. The Quantum Computation paper, *The
+Quantum Fold Machine*, is an 80-page local prepublication manuscript. Both have
+complete evidence maps and pass their local branch-paper gates with
+`publication_authorized: false`. No DOI, upload, push or publication action has
+been taken for either manuscript.
+
+The final repository-wide verifier passed after the complete computation-paper
+and documentation freeze: 153 unit and end-to-end tests passed, core-engine
+executable-line coverage was 1,264/1,264 (100%) across 15 modules, and all 168
+registered derivations were independently rerun.
 
 ## Required before the first official empirical derivation
 
