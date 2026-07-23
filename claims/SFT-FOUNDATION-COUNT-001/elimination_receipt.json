@@ -1,0 +1,23 @@
+{
+  "claim_id": "SFT-FOUNDATION-COUNT-001",
+  "decisions": [
+    {"candidate_id": "none-coverage__not-applicable__no-extra", "survives": false, "reason": "It retains no occurrence from the registered nonempty trace.", "proof_hash": "sha256:7d87e02b8306a9152857897f9a340906c1611a520ac3a8e6f18fd835bfe1dfdb"},
+    {"candidate_id": "none-coverage__not-applicable__has-extra", "survives": false, "reason": "It retains no occurrence from the registered nonempty trace.", "proof_hash": "sha256:3db15ac5a9cc72e8201fe79cea9c48de82ddd31f3a47e3378ada9cc52a364374"},
+    {"candidate_id": "proper-coverage__once__no-extra", "survives": false, "reason": "It omits at least one generated occurrence and is not the complete trace.", "proof_hash": "sha256:c3b731e7a3fc565893935dc751f761799d64e88f1f4953867fdfe849122b44f2"},
+    {"candidate_id": "proper-coverage__once__has-extra", "survives": false, "reason": "It omits at least one generated occurrence and is not the complete trace.", "proof_hash": "sha256:811d74092b8a4c2711a16a778700be09f5f65ac20c8f3e1ab32c4178c75352d2"},
+    {"candidate_id": "proper-coverage__duplicated__no-extra", "survives": false, "reason": "It omits at least one generated occurrence and is not the complete trace.", "proof_hash": "sha256:8fb097e5809b546260314475154c98f1ce922af81723df40aebe9e9ee6fbd999"},
+    {"candidate_id": "proper-coverage__duplicated__has-extra", "survives": false, "reason": "It omits at least one generated occurrence and is not the complete trace.", "proof_hash": "sha256:b2b9c7593d109c189677a2127f9f0eedc3f72298c1c275584ddc68d8f2dfb14a"},
+    {"candidate_id": "complete-coverage__once__no-extra", "survives": true, "reason": "It retains every generated occurrence once and adds no occurrence.", "proof_hash": "sha256:9ab16021f5baeef925efc4244128eff89b02538f8a176258bce42372f5027033"},
+    {"candidate_id": "complete-coverage__once__has-extra", "survives": false, "reason": "It adds an occurrence not supplied by the registered generation trace.", "proof_hash": "sha256:d4bbeba797c914db840e7367b7896e77a3fdadae6afa8940e36fa33473b46c26"},
+    {"candidate_id": "complete-coverage__duplicated__no-extra", "survives": false, "reason": "It repeats a retained occurrence and therefore changes the generated trace.", "proof_hash": "sha256:f6c10f9542507df2a37b6cf7d7c4b2b156b34b8f87ee7c8c6ddd0c196d37804f"},
+    {"candidate_id": "complete-coverage__duplicated__has-extra", "survives": false, "reason": "It repeats a retained occurrence and therefore changes the generated trace.", "proof_hash": "sha256:d0bab090c02c01b53dd9a80a15c78e150f656c924c5190f9107203aefcdc42e6"}
+  ],
+  "closure": {
+    "scope": "depth_independent",
+    "exact_boundary": "All representations of any registered nonempty finite generation trace, classified by coverage of its generated occurrences, multiplicity of retained occurrences, and addition of occurrences outside that trace.",
+    "minimality_passed": true,
+    "named_shape_uniqueness_passed": true,
+    "proof_hash": "sha256:5bdde2e748f2921bcb0d9f1f86181ec8bea9c104d9244977c40b36b8b9532f31",
+    "generality_certificate_hash": "sha256:c894a526f6830f0a4b714ce0b823d39a818b2e0ca6e79a252af3ab95deba7dfe"
+  }
+}

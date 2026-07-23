@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-FOLD-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the unchanged One as a nontrivial Fold",
+      "kind": "false_premise",
+      "observed_behavior": "the identity-extension proposal does not survive",
+      "passed": true,
+      "receipt_hash": "sha256:f46aee51f1c54c70c3b0ce43a1936c1a4d23c4d0466ab7a185f40f11c1c4a766"
+    },
+    {
+      "expected_behavior": "reject a changed derivation source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:5e083bb4485927855fea2404ff3ce7d9bf33d6ea6247bde1e8ee0a067be5920a"
+    },
+    {
+      "expected_behavior": "reject a later extension as the minimal Fold",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the later-extension proposal does not survive",
+      "passed": true,
+      "receipt_hash": "sha256:c8024e08141772ce43693bb845476c441ac6d103d0f3328a21099a1515a9f28b"
+    },
+    {
+      "expected_behavior": "refuse signed labels, asymmetric parameters and completed-infinite arity",
+      "kind": "boundary",
+      "observed_behavior": "the survivor uses two held labels from the first finite extension and no added datum",
+      "passed": true,
+      "receipt_hash": "sha256:2eabd3b595538dc26114f25dd8c47b8679e4661e6a45167aa79df25b928de951"
+    }
+  ]
+}

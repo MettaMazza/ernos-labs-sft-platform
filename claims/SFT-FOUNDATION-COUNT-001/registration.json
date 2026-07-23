@@ -1,0 +1,28 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "claim_id": "SFT-FOUNDATION-COUNT-001",
+  "title": "Exact positive finite count",
+  "branch": "foundation",
+  "status": "independently_replicated",
+  "statement": "Every generated nonempty finite succession of structural-One occurrences has one exact positive count representation: its complete generation trace, retaining every generated occurrence once and adding none.",
+  "dependencies": ["SFT-FOUNDATION-ONE-001"],
+  "provenance_classes": ["forward_forcing"],
+  "candidate_grammar": {
+    "generator": "For no retained occurrence, generate the two ungenerated-extra classes. For proper or complete retained coverage, generate the product of exact-once or duplicated multiplicity with absence or presence of ungenerated extra occurrences.",
+    "boundary": "All representations of any registered nonempty finite generation trace, classified by coverage of its generated occurrences, multiplicity of retained occurrences, and addition of occurrences outside that trace.",
+    "completeness_certificate": "sha256:9734ed97836865cec30abc8cd0539c36839b4b08de3ff60cb510f1e700e9caa1"
+  },
+  "excluded_inputs": [
+    "V2 count definitions, implementations or answer artifacts",
+    "conventional natural-number axioms",
+    "semantic numerical zero",
+    "negative, irrational, imaginary or floating proof quantities",
+    "completed infinity or an ungenerated continuum",
+    "application or measurement selected count"
+  ],
+  "required_controls": ["false_premise", "tampered_source", "tampered_artifact", "boundary"],
+  "intended_certificate": "Independent regeneration of the complete coverage, multiplicity and extra-occurrence grammar and its unique survivor.",
+  "empirical_protocol": null,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23"
+}

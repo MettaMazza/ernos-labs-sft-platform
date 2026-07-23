@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-PART-001",
+  "controls": [
+    {
+      "expected_behavior": "reject an empty selection as a positive part",
+      "kind": "false_premise",
+      "observed_behavior": "the empty-selection coordinate does not survive",
+      "passed": true,
+      "receipt_hash": "sha256:9862327e758bdc6709de851118d955190570c412e637ed7f5db6da19dcfd9eaa"
+    },
+    {
+      "expected_behavior": "reject a changed derivation source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:5e083bb4485927855fea2404ff3ce7d9bf33d6ea6247bde1e8ee0a067be5920a"
+    },
+    {
+      "expected_behavior": "reject a selection that extends outside the whole partition",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the outside-selection coordinate does not survive",
+      "passed": true,
+      "receipt_hash": "sha256:a08832bb17d902362392ea4ab7229111760e867e65c4f1791e7ebde310285c80"
+    },
+    {
+      "expected_behavior": "refuse equivalence, decimal, signed or infinite claims not derived here",
+      "kind": "boundary",
+      "observed_behavior": "the closure records exact coordinates and leaves cross-partition equivalence unresolved",
+      "passed": true,
+      "receipt_hash": "sha256:49806f230f4da2d6c8c2983bf69e3faf5a8d2b230e294fc72d0daf96d78b36a4"
+    }
+  ]
+}

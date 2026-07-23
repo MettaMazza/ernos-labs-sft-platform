@@ -1,0 +1,9 @@
+{
+  "claim_id": "SFT-FOUNDATION-COUNT-001",
+  "controls": [
+    {"kind": "false_premise", "passed": true, "expected_behavior": "reject absence of a generated occurrence as a positive count", "observed_behavior": "the no-coverage trace does not survive", "receipt_hash": "sha256:c345212a50305029c7cd1b73683100c6b9364ed11d0e38c4a9eff03143a5c86b"},
+    {"kind": "tampered_source", "passed": true, "expected_behavior": "reject a changed derivation source identity", "observed_behavior": "the changed source identity differs", "receipt_hash": "sha256:5e083bb4485927855fea2404ff3ce7d9bf33d6ea6247bde1e8ee0a067be5920a"},
+    {"kind": "tampered_artifact", "passed": true, "expected_behavior": "reject a duplicated occurrence in the complete trace", "observed_behavior": "the complete duplicated trace does not survive", "receipt_hash": "sha256:2dae34ee14f232523153e550e31280e5e07f53ded597aab0c3045097ecba57d0"},
+    {"kind": "boundary", "passed": true, "expected_behavior": "refuse zero, signed, floating or completed-infinite count claims", "observed_behavior": "only nonempty finitely generated complete traces are admitted", "receipt_hash": "sha256:c3148e0228e6336d8421753971e44b1b76ca7650c9c392cf26a561b431f1a7ca"}
+  ]
+}
