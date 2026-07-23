@@ -13,13 +13,13 @@ It is not an edit of the Foundation or Mathematics papers. Its 42-page rendered
 edition is
 [`output/pdf/from-distinction-to-information-branch-paper-001.pdf`](../../output/pdf/from-distinction-to-information-branch-paper-001.pdf).
 
-The paper covers all twelve obligations in the frozen Information Science
-inventory, 11,776 generated candidates, complete rejection axes, unique
+The published paper covers all twelve obligations in the frozen Information
+Science inventory, 11,776 generated candidates, complete rejection axes, unique
 survivors, depth-independent certificates, operational witnesses, adverse
 controls, implementation-distinct validators and exact receipt identities. Its
 evidence map, manifest and publication-readiness receipt explicitly carry
-`publication_authorized: true`. Maria Smith authorized release on 23 July 2026;
-the archival DOI is
+`publication_authorized: true`. Maria Smith authorized and published the release
+on 23 July 2026; the archival DOI is
 [`10.5281/zenodo.21516916`](https://doi.org/10.5281/zenodo.21516916).
 
 The complete standalone Information Science source is copied to `README.md` as

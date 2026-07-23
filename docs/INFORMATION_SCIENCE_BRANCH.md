@@ -1,6 +1,6 @@
 # Information Science branch status and review guide
 
-Status: `frozen_complete`; standalone paper: publication authorized.
+Status: `frozen_complete`; standalone paper: published.
 
 Paper: [From Distinction to Information](../publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md)
 

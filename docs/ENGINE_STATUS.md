@@ -59,10 +59,11 @@ paper remains separately preserved and published at DOI
 `10.5281/zenodo.21515629`.
 
 The independent Information Science paper, *From Distinction to Information*,
-is a 42-page publication-authorized standalone edition. Its evidence map and
-manifest pass the branch publication gate with `publication_authorized: true`.
-Its reserved archival DOI is `10.5281/zenodo.21516916`; neither earlier
-canonical paper was edited.
+is a published 42-page standalone edition. Its evidence map and manifest pass
+the branch publication gate with `publication_authorized: true`. The archival
+record is published at DOI `10.5281/zenodo.21516916`, and GitHub `main` displays
+this paper as the repository landing document. Neither earlier canonical paper
+was edited.
 
 The current complete verifier result is 131 unit and end-to-end tests, 1,264 of
 1,264 executable core-engine lines (100 percent), fifteen core modules and all
