@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ernos-labs.example/schemas/sft-claim-registration-v3.json",
+  "title": "SFT v3 claim registration",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "title",
+    "branch",
+    "status",
+    "statement",
+    "dependencies",
+    "provenance_classes",
+    "candidate_grammar",
+    "excluded_inputs",
+    "required_controls",
+    "registered_by"
+  ],
+  "properties": {
+    "claim_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "branch": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "registered",
+        "generated",
+        "executed",
+        "conditionally_closed",
+        "uniquely_closed",
+        "empirically_tested",
+        "independently_replicated",
+        "frontier",
+        "superseded"
+      ]
+    },
+    "statement": {"type": "string", "minLength": 1},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "provenance_classes": {"type": "array", "items": {"type": "string"}},
+    "candidate_grammar": {
+      "type": "object",
+      "required": ["generator", "boundary"],
+      "properties": {
+        "generator": {"type": "string", "minLength": 1},
+        "boundary": {"type": "string", "minLength": 1},
+        "completeness_certificate": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "excluded_inputs": {"type": "array", "items": {"type": "string"}},
+    "required_controls": {"type": "array", "items": {"type": "string"}},
+    "intended_certificate": {"type": ["string", "null"]},
+    "empirical_protocol": {"type": ["string", "null"]},
+    "registered_by": {"type": "string", "minLength": 1},
+    "registration_date": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
