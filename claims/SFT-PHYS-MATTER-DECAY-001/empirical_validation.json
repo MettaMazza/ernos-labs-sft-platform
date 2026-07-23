@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-MATTER-DECAY-001",
+  "data_source_ids": [
+    "PDG-2025-SUMMARY-TABLES"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8289ef77b372e9ab5e100e4346e660a0b53ed9d319ad122ef8b2276eea735620",
+  "falsification_condition": "The material law is falsified if a committed external row lacks the sealed constituent/composition/conservation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:92af8eeef129f8f13e711bb0fd2216e05afaa7ed77ad3938c508bff22e997ee0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4368c539ad348baf815aafa5c9a2c9b79f4b422339f97645fb57f52cb436b5a9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-MATTER-DECAY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b783e64645422fccf38c0a545b3c1b01a494322b1d443b08ee098f4474fe8dfb",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:839046ff442c889b0acc5a94b551ef8ed056cc8db842a9feb80a4c875950919d",
+    "prediction_seal_hash": "sha256:8005ef6f8e8d7fdebc2a2a53089f3e9d285abd85d34e1faecf4be11d32e36c7a",
+    "program_hash": "sha256:a5215359532703d4d0d5c151941fba16b432188812a7b1ac7cf91adc2d0ffb52",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c9a7dd0f31d310b627d44f34f4bad946f0d008c8a70090503f9772f3dc8445cb",
+    "target_material_present": false,
+    "trace_hash": "sha256:5a3cf0093b85fe8ae875c0a2045374e356ab50e7763cb481215d20c670855060"
+  },
+  "measurement_receipt_hash": "sha256:e38dcce46ece40beeadc86694d24f4621e7b92a5886b414d250b085528428231",
+  "measurements": [
+    "matter-decay-1: predicted particle-decay-transition; observed particle-decay-transition; exact match True",
+    "matter-decay-2: predicted particle-decay-transition; observed particle-decay-transition; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9b426857927415273d745cd432c067b61e5dfbcdffe6cbb352fc1a9ede77c1d7",
+    "custodian_id": "SFT-EXP-PHYS-MATTER-DECAY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:8289ef77b372e9ab5e100e4346e660a0b53ed9d319ad122ef8b2276eea735620",
+    "prediction_seal_hash": "sha256:8005ef6f8e8d7fdebc2a2a53089f3e9d285abd85d34e1faecf4be11d32e36c7a",
+    "registered_target_identity_hash": "sha256:c9a7dd0f31d310b627d44f34f4bad946f0d008c8a70090503f9772f3dc8445cb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:326f3602b76364decf991332bf6b45124f0bb40851a6bb3cebf2267f0a58c74c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7c3d62e4e9f23f4c61a96a2f4a3c7fc7179dd71964b6da4dc7ba44e1b86d4f7f"
+}

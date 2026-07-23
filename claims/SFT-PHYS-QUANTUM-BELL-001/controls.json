@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-QUANTUM-BELL-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:b09299bc18140e5c855348082952106725ba8320a83c8cafd1ab997351ddf377"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:538825205848b5bdac60332d5d6e1737736e12e6a7bd2068badb9f674bbd2c93"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:939c55bbbbf66a6d3fd049812da4f9361ad4b43066d21432229ec2ae79449d78"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:9fde24c371247082d6f4f220726cbb0fb1a12324e0645156b6a6bf934926108b"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-RADIOACTIVITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:7e9ccd542cf7e94950e6e4aa1e519f1337c9368433868c2ca3703d920a9562e4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:83f0826fdd6d0e6db144c50f30bdbcc9be7c25e0aa72c829226abc11ca3e6314"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:404a845a88efd25dbe794b73e078814ad4636aeff85114ecb1a00b642a80963f"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:eaa65ad66b7acc1ad1ded6aa28a4ca7d3f4bda1c0265fe92bc6cadcfc21bfad7"
+    }
+  ]
+}

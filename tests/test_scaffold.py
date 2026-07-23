@@ -8,21 +8,22 @@ from sft.cli import ROOT, engine_status, repository_status
 class ScaffoldTests(unittest.TestCase):
     def test_census_contains_only_engine_admitted_v3_claims(self) -> None:
         census = json.loads((ROOT / "census" / "claims.json").read_text(encoding="utf-8"))
-        inventory = json.loads(
-            (ROOT / "publications" / "inventories" / "foundation.json").read_text(encoding="utf-8")
+        manifest = json.loads(
+            (ROOT / "census" / "execution_manifest.json").read_text(encoding="utf-8")
         )
         self.assertEqual(
             [claim["claim_id"] for claim in census["claims"]],
-            inventory["required_claim_ids"],
+            [claim["claim_id"] for claim in manifest["claims"]],
         )
         self.assertTrue(all(claim["model_admitted"] for claim in census["claims"]))
         self.assertEqual(census["unclassified_obligations"], [])
 
     def test_status_registers_accessible_v3_and_self_hosted_v4(self) -> None:
         status = repository_status()
+        census = json.loads((ROOT / "census" / "claims.json").read_text(encoding="utf-8"))
         self.assertEqual(status["generation"], "v3-python-accessible")
-        self.assertEqual(status["registered_claims"], 10)
-        self.assertEqual(status["admitted_claims"], 10)
+        self.assertEqual(status["registered_claims"], len(census["claims"]))
+        self.assertEqual(status["admitted_claims"], len(census["claims"]))
         self.assertEqual(status["future_generation"], "v4-sft-derived-self-hosted")
 
     def test_single_engine_policy_is_fail_closed(self) -> None:

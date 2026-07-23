@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1111b793deef38ccd05162c2a85883eef2417a3e7762c5c86e6d8f3d38c03cf4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ddcc358eb534bdd1f240bc3694532fb8db0b67e6281b95bc4c3c6eaeb0c6e5db"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:512ad96f068b575ad0544dd3c8797dd7f8893144162266f9d2f3d8abb440f5c1"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:c110db659ea14ee96663e2ed3e8c5dbcdcf57d20d7a4d67e624d15c7cd6be233"
+    }
+  ]
+}

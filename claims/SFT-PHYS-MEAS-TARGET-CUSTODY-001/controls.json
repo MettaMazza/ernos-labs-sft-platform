@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form missing the first preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form missing the first preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9d1ae2f40bb91451031c219678c477468054cc6bfecb398935d7356e3e0e059a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:18e6f58bb38714edf42a2881d8bf8e19a8c4b4999a5132d7bde03a4a053f20c7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:53b93b6397aa18513fb73bcd48e2a739a26061f47428ae3790fa8d25f0248087"
+    },
+    {
+      "expected_behavior": "reject excluded capabilities, values or authority paths",
+      "kind": "boundary",
+      "observed_behavior": "reject excluded capabilities, values or authority paths",
+      "passed": true,
+      "receipt_hash": "sha256:0f1c55cf30f7c60f78e3ff7f089b1c3a641fe34e00e84508ede332bab9d54b03"
+    }
+  ]
+}

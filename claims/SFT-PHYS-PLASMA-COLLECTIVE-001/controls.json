@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-PLASMA-COLLECTIVE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a89f9ffa8ee5ae6d2a673c5e62fd60a6c313076e86184c2417c1ca9b3216d22e"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d9ab01dd2e6633d7a172025c5f01c04d1247d6177636d4d81f3085c9c84871f8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c9f04994806a3462214b469cce636a358c665007a36ab75140155e59e7cfbbbf"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:321294b1ba2e87e4b07d90a4815ddffc2bb23729469f21499c9e8d9fe5a7971d"
+    }
+  ]
+}

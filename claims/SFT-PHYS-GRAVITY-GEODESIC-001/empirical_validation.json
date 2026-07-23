@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-GRAVITY-GEODESIC-001",
+  "data_source_ids": [
+    "GWOSC-V2-CATALOGS-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d033ac6fb187507c411c9580ce7a76ad389859f1338e0b74c383e55b9433e377",
+  "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a5a13691d20b4468f53851defac36713913a05d25dcce1737d7922c65056c24c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:795c8cca6081fbc2345112800bb62f062120de67d5b6b9397827b05e53f7d9d8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-GRAVITY-GEODESIC-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:83094d823272f00bbf06d65237653bc335bca16df912580795a96f8b2c2d10bd",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:80b2d41c22714774b6d64bfde55c73b02dd5fda1a092ed247a23cd5e19dc57c3",
+    "prediction_seal_hash": "sha256:e1d60a9887e77e3250e8fbef22f64d31c7ff6ffd9e0d24a760f0d04560c44a3d",
+    "program_hash": "sha256:b9300ca119df51f177bed9d1383dd32994fb3aeadff807d31a563dddb913d818",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:51af917540f7930c915b836dfea1d855fb39d9a4799e808cc944a343123cc6cb",
+    "target_material_present": false,
+    "trace_hash": "sha256:5eea270307e6b1ba5324f76dabbb3841a6914cbffddf124fe0e746c6d6f6441c"
+  },
+  "measurement_receipt_hash": "sha256:2e87a9a5e3e82e5521850fc66255d692f4bdced8d84830787b33cdb3ac7783ee",
+  "measurements": [
+    "gravity-geodesic-1: predicted gravity-geodesic-propagation; observed gravity-geodesic-propagation; exact match True",
+    "gravity-geodesic-2: predicted gravity-geodesic-propagation; observed gravity-geodesic-propagation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:db317311a002ae98ae85890dfae6cb9296800ecea1e04ed36bb3be6765a437da",
+    "custodian_id": "SFT-EXP-PHYS-GRAVITY-GEODESIC-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:d033ac6fb187507c411c9580ce7a76ad389859f1338e0b74c383e55b9433e377",
+    "prediction_seal_hash": "sha256:e1d60a9887e77e3250e8fbef22f64d31c7ff6ffd9e0d24a760f0d04560c44a3d",
+    "registered_target_identity_hash": "sha256:51af917540f7930c915b836dfea1d855fb39d9a4799e808cc944a343123cc6cb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:94aba775036968988a60126486fe22795da35ae5803648f0be3e7095eeb67460"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b7027658c2c3b9c24d408fc0ff0a242c8dce9cc00b77b8a3581a14f863e7faa7"
+}

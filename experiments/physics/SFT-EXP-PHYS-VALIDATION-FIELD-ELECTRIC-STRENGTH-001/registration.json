@@ -1,0 +1,129 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:f904725036721509230396175765172bb9a536d7fa7e5580524ba7b8a12208f1"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants snapshot sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:9a667678ed2f1401b6d94a7f74b2dbf56f3fe9966786d226cad1b7db3dd9d6a5",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-post-seal-evaluator",
+    "falsification_condition": "The sealed exact predicted interval fails to overlap the independently released CODATA target interval, any registered input is missing, or the displaced unfavorable interval is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete exact-relation, input-provenance, target-access, interval, comparison, row, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa",
+      "sha256:7e661d88e70c749032cd9f4ad2250b3282a7755c4c70af0ae8b0215f07c2cde4",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:88089d61acc33978914e6b94830213e1ac3d8b216b79a4414bd90f6bbe566831"
+    ],
+    "exact_domain": "All exact positive interval predictions formed from registered measured inputs, one already forced relation, capability-closed arithmetic and a post-seal external target.",
+    "relation_hash": "sha256:a5eba484aa006196ef7349cc0f590f8bb58f8678879531fe9c25cd39af7f37bb",
+    "statement": "Atomic electric potential divided by atomic length predicts the CODATA atomic electric-field interval.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:4f22348be62ecc046f0e970a770debc53f603481ac3589603003cf36ed3c7a08",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:1138887b7b34bf56c0f1fc5ed36030ce77109248c39539f0278b06c3d8fef4f4",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:e9cc379d22d0a1f49809fee2a9489d5055ff7717616190a7a54111f3a405546d",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "target_id": "field-electric-strength-numeric-target"
+    }
+  ]
+}

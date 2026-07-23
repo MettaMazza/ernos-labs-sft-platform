@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAVITY-HORIZON-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:90c176ed08a43d27a61c034b0213577c6468523dd8cd8a190252fb874fdb3686"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:158073e681f1b8a87a714e63e93fef55959987dcadfc116ceee7a281f1c6eb0a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:aefc1806213b3b9c4642d09fc10e8ea8a2663ef634218e22bfcac424218d4d22"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:1a3295b020e67bd329f48fcaedc43302734345fba5abfe1ead76a577d5b8e4e0"
+    }
+  ]
+}

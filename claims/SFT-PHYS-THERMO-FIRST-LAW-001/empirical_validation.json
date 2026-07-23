@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-FIRST-LAW-001",
+  "data_source_ids": [
+    "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6f53b0225bb5beba3b0a9e300557c0904e24d1b61e83d642f140066c4a0ce2d9",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:4058fbb00286c41adb2382acde521c35dd5555cdd0ea862e2f050985072eb7c4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a73e6c0fb29b694e577c8b7dab36b7a29036684c91c1640df94d4bcf0f5d56ca",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-FIRST-LAW-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d620005bce9922402f5fd0a671565cdd5361d338f4d56bd66b7d26b1b7f49ada",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:0f6896b2bd786290e80924ed9525ec5cdaeeffb20320557c8e50c8d908350f65",
+    "prediction_seal_hash": "sha256:4a38d2ea770ee24f3eb5b467c564d4cf3384207df03c6b42707bd047ac9d880e",
+    "program_hash": "sha256:a24408679eb70a4c0306f028642744826696ab324ba691b4279827490a9c20c3",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3a4d5755c995678980e7d04848912f293f49b34074bbc0fe2357b8b55b1acfe4",
+    "target_material_present": false,
+    "trace_hash": "sha256:fcd0aa926168fa0591888f4afd9078c098d0c746d7beb18ad1ae95e7621f8b2d"
+  },
+  "measurement_receipt_hash": "sha256:5b600737da737e7769e0b3e0cc4528b75a6cc29c33012af23337de9054fa656a",
+  "measurements": [
+    "first-law-1: predicted first-law-energy-closure; observed first-law-energy-closure; exact match True",
+    "first-law-2: predicted first-law-energy-closure; observed first-law-energy-closure; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:fa7b84961f5628d8b997a2cb3e53055a7b9b52bd080fa841a40466a6e78027de",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-FIRST-LAW-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:6f53b0225bb5beba3b0a9e300557c0904e24d1b61e83d642f140066c4a0ce2d9",
+    "prediction_seal_hash": "sha256:4a38d2ea770ee24f3eb5b467c564d4cf3384207df03c6b42707bd047ac9d880e",
+    "registered_target_identity_hash": "sha256:3a4d5755c995678980e7d04848912f293f49b34074bbc0fe2357b8b55b1acfe4",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:5450873d2688d516bf74ad9f1f75401a60fb1d5688e4c1c644d6b4050f94eaa2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:0b838b25b123c6367b0fca9efe12dd04beac2bd5294d1bd202f587d1264ca8df"
+}

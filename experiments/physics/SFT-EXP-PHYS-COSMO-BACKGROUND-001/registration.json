@@ -1,0 +1,143 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-COSMO-BACKGROUND-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001-firas-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:9d9332f552bba2cbb6e588d6745af587ccb4e48f1ab4b6bf086ade2802321157"
+  },
+  "development_observations": [
+    {
+      "record": "FIRAS definitive background temperature 2.725 plus-or-minus 0.002 K",
+      "role": "registered_input_only",
+      "source_id": "NASA-LAMBDA-COBE-FIRAS-2026-07-23"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Aeronautics and Space Administration, Goddard Space Flight Center / COBE FIRAS snapshot sha256:5eae175f5ea06f7a5cb863866eeee9d87a38d870937d9a93ebf28629af0d6ef9; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The sealed and withheld temperature intervals overlap and the displaced unfavorable interval is rejected.",
+    "comparison_implementation_hash": "sha256:8721dcf6506c8ca9f7048b5be1db9fc5623bbe9fad398e1a68152e2e62df9c00",
+    "evaluator_id": "exact-FIRAS-interval-overlap/1",
+    "falsification_condition": "The sealed cross-analysis background-temperature interval fails to overlap the independently released NASA FIRAS monopole interval, or the displaced control is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare the sealed FIRAS input interval with the independently released FIRAS monopole interval using exact rational order.",
+        "metric_id": "exact-positive-temperature-interval-overlap",
+        "unit_protocol": "Kelvin remains an external measurement inscription; interval endpoints are exact fractions."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "development_only",
+      "measurement_body": "National Aeronautics and Space Administration, Goddard Space Flight Center / COBE FIRAS",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:5eae175f5ea06f7a5cb863866eeee9d87a38d870937d9a93ebf28629af0d6ef9",
+      "source_id": "NASA-LAMBDA-COBE-FIRAS-2026-07-23",
+      "source_uri": "https://lambda.gsfc.nasa.gov/product/cobe/about_firas.html"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Aeronautics and Space Administration, Goddard Space Flight Center / COBE FIRAS",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+      "source_id": "NASA-LAMBDA-COBE-FIRAS-MONOPOLE-2026-07-23",
+      "source_uri": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete emission, propagation, observation-time, source/response, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:05f1f0821cfd5dcf960fb767d68468b1af45d373b1a88a57d42b05f0e688af7f",
+      "sha256:c282cca9951e9672bf5b709503d9a073e5f6720aecb8922d9cd666ffb186006f",
+      "sha256:3314c9ef5abb0de12363e727263f9d5f31273ac02766334f7632b6d510d38131",
+      "sha256:aa9774f19eaf5a905f4f311dd5e1abe0bf44414fe3bce8d353916dd0717e019e",
+      "sha256:d884abf8b301cd56f9fe168f73ddf017828ad657f89de2428c6d7d730c1b4dcf",
+      "sha256:ae7caec28536e87b0652ba7b5cb49e6d4118c89138a9654ee342b11654d11df8"
+    ],
+    "exact_domain": "All finite cosmological-boundary forms generated from exact source-bound propagation, recurrence ratios, causal paths and observation records; astronomical census and historical initial conditions remain outside this Physics closure.",
+    "relation_hash": "sha256:26ac65f453db52d33b1ef99d172f384f3966918ffab82682353641c8a57d4166",
+    "statement": "Cosmic background radiation is a source-history-bound, frequency-consistent thermal Fold recurrence field.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:5eae175f5ea06f7a5cb863866eeee9d87a38d870937d9a93ebf28629af0d6ef9",
+      "input_id": "background-temperature-interval",
+      "value_kind": "exact-positive-rational-interval"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001-firas-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:c2dd0f2bdb8d7f04908fe28baab9ad0a3ff1b641b75ca84724622c0e9b91dcfe",
+    "program_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001-background-invariance"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/nasa-lambda-cobe-firas-monopole.html": "sha256:e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+    "experiments/external_sources/physics/snapshots/nasa-lambda-cobe-firas.html": "sha256:5eae175f5ea06f7a5cb863866eeee9d87a38d870937d9a93ebf28629af0d6ef9"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NASA-LAMBDA-COBE-FIRAS-MONOPOLE-2026-07-23",
+      "target_id": "firas_monopole_temperature"
+    }
+  ]
+}

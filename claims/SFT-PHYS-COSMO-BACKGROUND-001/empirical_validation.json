@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-COSMO-BACKGROUND-001",
+  "data_source_ids": [
+    "NASA-LAMBDA-COBE-FIRAS-2026-07-23",
+    "NASA-LAMBDA-COBE-FIRAS-MONOPOLE-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:978ffab592ddfc87bce3a3e87bba3d37947fd1c3a1de91a69ea295d23b93368d",
+  "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ea6140797f74add12df811f0492e2399fb4f6c9943d05cd726ddf661e02afba5",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8721dcf6506c8ca9f7048b5be1db9fc5623bbe9fad398e1a68152e2e62df9c00",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001-firas-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:fee736e92abc609cfbed744444359ed3488431c13743537d828222e38ce7e5aa",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:df3ad36654369a5df8e067161fe2719dbad027eabc32034a9a31c50fbf21b041",
+    "prediction_seal_hash": "sha256:650a99be615c3c1daaf34d88323fc5eb708148b360c2f073eb58699522826492",
+    "program_hash": "sha256:c2dd0f2bdb8d7f04908fe28baab9ad0a3ff1b641b75ca84724622c0e9b91dcfe",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:161cfff826a972a23a6a9b529af81eb27e402f06a66a87473cb3f47c514f45d5",
+    "target_material_present": false,
+    "trace_hash": "sha256:ce71d6ebabb02ed931781c427a91094057a2356e86033b0eac60d0af270c4eeb"
+  },
+  "measurement_receipt_hash": "sha256:5c3983615cf9824416f01352c48a21d4eeb5d3b05c0d5db1d210b7b20bcf2085",
+  "measurements": [
+    "FIRAS background interval predicted (Fraction(2723, 1000), Fraction(2727, 1000)); independently released monopole interval (Fraction(681, 250), Fraction(1363, 500)); overlap True",
+    "deliberately displaced unfavorable interval rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:fc67914925bc1270f3ac2a722d756ac6f0320c56405c838eef8be43aaae2ba5f",
+    "custodian_id": "SFT-EXP-PHYS-COSMO-BACKGROUND-001-firas-target-custodian",
+    "experiment_registration_hash": "sha256:978ffab592ddfc87bce3a3e87bba3d37947fd1c3a1de91a69ea295d23b93368d",
+    "prediction_seal_hash": "sha256:650a99be615c3c1daaf34d88323fc5eb708148b360c2f073eb58699522826492",
+    "registered_target_identity_hash": "sha256:161cfff826a972a23a6a9b529af81eb27e402f06a66a87473cb3f47c514f45d5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:05a212311c286d9a34bcccc97e5aba8fafcb9000a471cc052f0edc62da8e20a3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2b6cb1e58f97060778f59ea7a5b1935a2635333f35edc74b9800342f046d1a5e"
+}

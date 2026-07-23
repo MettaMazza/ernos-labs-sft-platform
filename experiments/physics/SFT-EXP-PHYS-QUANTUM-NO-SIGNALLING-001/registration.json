@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-QUANTUM-NO-SIGNALLING-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-QUANTUM-NO-SIGNALLING-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:30a2909160fdd33671fc8b2be19736e7891cebacca0598ea2694b0f79fbb9a63"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "European Organization for Nuclear Research snapshot sha256:4e232ef39985c02005828f97c43d903381411e7c0a762af768060343d17bd57d; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:c214a49618c20e428d7bafef69f66683aa93ab3fbedca21fb19e4551a36c6e7d",
+    "evaluator_id": "SFT-EXP-PHYS-QUANTUM-NO-SIGNALLING-001-post-seal-evaluator",
+    "falsification_condition": "The physical quantum law is falsified if a committed external row lacks its sealed support/composition/observation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-QUANTUM-NO-SIGNALLING-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "European Organization for Nuclear Research",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:4e232ef39985c02005828f97c43d903381411e7c0a762af768060343d17bd57d",
+      "source_id": "CERN-OPEN-DATA-DATASET-API-2026-07-23",
+      "source_uri": "https://opendata.cern.ch/api/records/?type=Dataset&size=1"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete physical-support, composition, phase/action, observation, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:630198c34fc5ef45d095f1cfc5af193963b0c471fd3a682baf3b9b38b674ec9d",
+      "sha256:ffd5ae7f787e98f77f7f24a57a047315b06148e748fc681f782faa5f3b3ccb3d",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:2876f5eb50cdc26e8f518f56d74463d9c9bd8f24d08b966cf7418735abed8167",
+      "sha256:d3d23aa55f758d5065584c15676331a45978b42e429020c888adca14c13a5e8f",
+      "sha256:0d7b17e1362a962e6b321befe2048206b5c6ddb26bfcb9da2e0c8bb757fa9b19",
+      "sha256:700627a1aa49ccaf987ad781ccff9d3ed733cf7e8d313df4061ffba67da8f6cd"
+    ],
+    "exact_domain": "All finite physical quantum forms generated from exact Fold word support, held cyclic labels, reversible transitions, predecessor merging and observation records without imported amplitudes or stochastic collapse.",
+    "relation_hash": "sha256:b73edb9bfc292c18098186c68cfaa9b373cd284987746b76adb2e84b0d9c37d3",
+    "statement": "Entanglement correlations preserve exact local observation support under remote setting changes and therefore cannot signal without a generated causal path.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:a2a9aebbff23dbdc9964de43fc97581837ec1ff3fbb1f4c797821f77a7cee708",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-QUANTUM-NO-SIGNALLING-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:5c3957c21575b19aedf762be7a0c36bef07d2d9619fe075890e3471e7f369cca",
+    "program_id": "SFT-EXP-PHYS-QUANTUM-NO-SIGNALLING-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:214179d74cd9cc21a0d2db314351aed5e8ed1446b46ad9148507f2420e294abc",
+    "experiments/external_sources/physics/snapshots/cern-open-data-dataset-api.json": "sha256:4e232ef39985c02005828f97c43d903381411e7c0a762af768060343d17bd57d"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "CERN-OPEN-DATA-DATASET-API-2026-07-23",
+      "target_id": "no-signalling-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "CERN-OPEN-DATA-DATASET-API-2026-07-23",
+      "target_id": "no-signalling-2"
+    }
+  ]
+}

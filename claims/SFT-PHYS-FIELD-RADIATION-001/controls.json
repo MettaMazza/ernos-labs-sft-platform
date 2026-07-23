@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-RADIATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1f6b8207b6701110505f7659295bfe8a2ec2e235b8c808e563443cc5247128cd"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0386c56bd1470024b84aebef849f3212bc179c348936e9d956f0be64faf63d43"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c7bc8f0e89263a161dfc2cd37fadf82e444cbf923916f175b457a998652ed914"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:37e033b8d370e9a37b1fc41f42c70c50360fa36303ae51c724540ffb76e430d0"
+    }
+  ]
+}

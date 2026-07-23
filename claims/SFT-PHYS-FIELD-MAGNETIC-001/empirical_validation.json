@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FIELD-MAGNETIC-001",
+  "data_source_ids": [
+    "NIST-CODATA-2022-ALL-CONSTANTS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6b0037b6fa305a8303f5e84817cf95aa0502c3e9efbc515b9e788ba82fa9b792",
+  "falsification_condition": "The field claim is falsified if any committed external row lacks the predicted source/response or propagation structure, any row is omitted, or the tampered unfavorable row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c0c7428cdbd6d2a40e2cd5bf2bf774b135424bc54e0951056b7264ba322031ad",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:cf3c92ef1b52d38dc9a9e510d085f956077510258fcf36f17d3c4dc82e8d13e9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FIELD-MAGNETIC-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:42fd75da56732db39fb8c6130c7bc00ed0bf6cc1c2a4434eddd56178d4ee9cac",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e05f701ae6043f53f65e60f333d7f65f156736c770a81508591eb69eaaa08cfc",
+    "prediction_seal_hash": "sha256:7ee8a22f70c574bcde2f2f1290e7263f219a0cabcdcb04d21bd05a9d90b248c6",
+    "program_hash": "sha256:c633e214e6df55e2cb3603895bb2d40234c04bb72e955035ea720e91c3310d4b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:bdc2337dd58448c2243ca73bebf7c7617833e3c73cf078bb2fbaf5d989342fe6",
+    "target_material_present": false,
+    "trace_hash": "sha256:c268b19f4799c6dbc4a35c2036022b361253cade0c043ce09d848b2b270d5a9b"
+  },
+  "measurement_receipt_hash": "sha256:7cc2da823d648c756e5c806a61c7dc0b4d5e00d24c847c4b9b6b742962595c52",
+  "measurements": [
+    "magnetic-1: predicted oriented-electric-transport-magnetic-response; observed oriented-electric-transport-magnetic-response; exact match True",
+    "magnetic-2: predicted oriented-electric-transport-magnetic-response; observed oriented-electric-transport-magnetic-response; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:abd25cb8c5572b0bf375789e2b66872da1c254ac08ae95f3d8e9209e544a7602",
+    "custodian_id": "SFT-EXP-PHYS-FIELD-MAGNETIC-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:6b0037b6fa305a8303f5e84817cf95aa0502c3e9efbc515b9e788ba82fa9b792",
+    "prediction_seal_hash": "sha256:7ee8a22f70c574bcde2f2f1290e7263f219a0cabcdcb04d21bd05a9d90b248c6",
+    "registered_target_identity_hash": "sha256:bdc2337dd58448c2243ca73bebf7c7617833e3c73cf078bb2fbaf5d989342fe6",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:8fa835054f0029bdb0c4322694d1e07700d0a84c7d48cdf791f7d7632811a926"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:46fb7deadb9ab1e5d70004af859171d67cae1ecb18b29c6a4fda07104eb42872"
+}

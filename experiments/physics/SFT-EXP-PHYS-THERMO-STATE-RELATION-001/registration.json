@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-THERMO-STATE-RELATION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-THERMO-STATE-RELATION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:a646e337156478f15e2928bf27435ed6f6e8f4b7339e6a4c4f66eaae7719fdb2"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "International Association for the Properties of Water and Steam snapshot sha256:d43b4241bc11f390633b03b041fe2b03f9a4f243348fa0f78b639cb8ec162c51; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:3acca22b6df386ef76ff74b58ba8094aeca9e02a10cae81c2594e70f4d96755b",
+    "evaluator_id": "SFT-EXP-PHYS-THERMO-STATE-RELATION-001-post-seal-evaluator",
+    "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-THERMO-STATE-RELATION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Association for the Properties of Water and Steam",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:d43b4241bc11f390633b03b041fe2b03f9a4f243348fa0f78b639cb8ec162c51",
+      "source_id": "IAPWS-RELEASES-2026-07-23",
+      "source_uri": "https://www.iapws.org/release.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete microstate support, observation partition, energy-transfer provenance, target-access, measurement-record, row, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:21211b7c80de5ce448a2c20eed8db8b1e5eb9c3d7419cd9257c0c47837117a77",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:1deb2fd3a8f52d8596c6616bf84d252e8e1dd425e5063472196ee0f0f7a2275c",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:cb585f8e1ed3c061109eae9ea74291b8058919463f74abfe9901924194c6a314",
+      "sha256:8fb248b3afaf5f4f470757ae81609bd002da6a3f2a0f434ac7879f915cf4230b"
+    ],
+    "exact_domain": "All finite thermal forms generated from exact state counts, held distinctions, observation merging, recurrence and closed energy transfer without importing a statistical distribution or continuum equation.",
+    "relation_hash": "sha256:ed09a4903ae180fd028d5b0ca3f6dd5eeaa1b8b66fdae92fdd1dacafe78d86bf",
+    "statement": "A thermodynamic state law is the unique minimal exact relation closing all registered state carriers on its declared finite domain.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:6b36583e02c03576b25b35754042e74909ade03705221611344a4564643b222f",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-THERMO-STATE-RELATION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:a3184536db93cd9c834f87a057827b7528d961359447b3ae4f67999907c28a11",
+    "program_id": "SFT-EXP-PHYS-THERMO-STATE-RELATION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:dab2cda98b0e7a9e0b55fa8ae31a25075df96017d36d2210b011f7f1ec749a23",
+    "experiments/external_sources/physics/snapshots/iapws-releases.html": "sha256:d43b4241bc11f390633b03b041fe2b03f9a4f243348fa0f78b639cb8ec162c51"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAPWS-RELEASES-2026-07-23",
+      "target_id": "state-relation-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAPWS-RELEASES-2026-07-23",
+      "target_id": "state-relation-2"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-COSMO-DISTANCE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:b3a123c68c9b7bed214db3d4d0ca8bc36a24a2df2a93d5c00eff3e60832c4f40"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center snapshot sha256:67266a5406cbee1dc98a9853beb42d771595fa474f5ddd33ab4b368d5b71c45d; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:6f6f8bbef4b0fd8d461ca398c10ff493fe089c16c058f2db33603a1c947ab03b",
+    "evaluator_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-post-seal-evaluator",
+    "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:67266a5406cbee1dc98a9853beb42d771595fa474f5ddd33ab4b368d5b71c45d",
+      "source_id": "GWOSC-GW231123-135430-V3-2026-07-23",
+      "source_uri": "https://gwosc.org/eventapi/json/GWTC-4.1/GW231123_135430/v3/"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete emission, propagation, observation-time, source/response, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:05f1f0821cfd5dcf960fb767d68468b1af45d373b1a88a57d42b05f0e688af7f",
+      "sha256:c282cca9951e9672bf5b709503d9a073e5f6720aecb8922d9cd666ffb186006f",
+      "sha256:3314c9ef5abb0de12363e727263f9d5f31273ac02766334f7632b6d510d38131",
+      "sha256:aa9774f19eaf5a905f4f311dd5e1abe0bf44414fe3bce8d353916dd0717e019e",
+      "sha256:d884abf8b301cd56f9fe168f73ddf017828ad657f89de2428c6d7d730c1b4dcf",
+      "sha256:57997a5ea3a6a4411a38f0c0396685ce96861879048622a2d68ea8cd667e2b42"
+    ],
+    "exact_domain": "All finite cosmological-boundary forms generated from exact source-bound propagation, recurrence ratios, causal paths and observation records; astronomical census and historical initial conditions remain outside this Physics closure.",
+    "relation_hash": "sha256:910e9a49badde1c21d9b4e5f02650de5b1156f937840432e77c40aa02cb1d1c4",
+    "statement": "Cosmological distance is a declared Fold projection of exact causal support and observation-time relations.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:cf378a3c43a2e147ae2000b6ff154261d102212b62809c98c390eaa28982e7f6",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:29665be585aff12532e1c0c3e99e84a39ab06472cdba737b9ca02d095c746b72",
+    "program_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:da1d852380530bcb0ba6f9f1a4c868ca39cc08372fb5db75d4fcd961462086cd",
+    "experiments/external_sources/physics/snapshots/gwosc-gw231123-135430-v3.json": "sha256:67266a5406cbee1dc98a9853beb42d771595fa474f5ddd33ab4b368d5b71c45d"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-GW231123-135430-V3-2026-07-23",
+      "target_id": "distance-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-GW231123-135430-V3-2026-07-23",
+      "target_id": "distance-2"
+    }
+  ]
+}

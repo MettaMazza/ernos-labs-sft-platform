@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-QUANTUM-EVOLUTION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-QUANTUM-EVOLUTION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:b1031779bc30d46066f22acb174eb110f690e500550e38008daee1ad554c8332"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants snapshot sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:e2e0bb82d3938019fd0ce4cb0edfebee5ca8006cb13b0e78a14c5fc95e04d008",
+    "evaluator_id": "SFT-EXP-PHYS-QUANTUM-EVOLUTION-001-post-seal-evaluator",
+    "falsification_condition": "The physical quantum law is falsified if a committed external row lacks its sealed support/composition/observation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-QUANTUM-EVOLUTION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete physical-support, composition, phase/action, observation, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:630198c34fc5ef45d095f1cfc5af193963b0c471fd3a682baf3b9b38b674ec9d",
+      "sha256:ffd5ae7f787e98f77f7f24a57a047315b06148e748fc681f782faa5f3b3ccb3d",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:2876f5eb50cdc26e8f518f56d74463d9c9bd8f24d08b966cf7418735abed8167",
+      "sha256:d3d23aa55f758d5065584c15676331a45978b42e429020c888adca14c13a5e8f",
+      "sha256:0d7b17e1362a962e6b321befe2048206b5c6ddb26bfcb9da2e0c8bb757fa9b19",
+      "sha256:ad6be0a9a587e5acb5c1ab9bb2af60e287541be9b1fd6bc8c40681d50e1bc904"
+    ],
+    "exact_domain": "All finite physical quantum forms generated from exact Fold word support, held cyclic labels, reversible transitions, predecessor merging and observation records without imported amplitudes or stochastic collapse.",
+    "relation_hash": "sha256:d2433c5b97ffd83a63ce445029c061419de9bcc2cc465331d222a984631942cc",
+    "statement": "Closed quantum evolution is exact reversible transition of the complete physical Fold support.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:c870fa11385ee1d2ae46b5ee79cd90724f88fe0a43b4d87a58abdee14fd8738a",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-QUANTUM-EVOLUTION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:9d59e320eb0251de8a303fcadf834caeac8bce2eea81bdb7a5fce6bd0ca273d2",
+    "program_id": "SFT-EXP-PHYS-QUANTUM-EVOLUTION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:7d008ef620a41cf3e4d2a6d540dced1de5f80928b80857e7be2340500d40525f",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "target_id": "evolution-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "target_id": "evolution-2"
+    }
+  ]
+}

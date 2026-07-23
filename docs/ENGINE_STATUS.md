@@ -21,6 +21,15 @@
   foreign-function access during prediction.
 - Separate target-custody evidence in place of an unverifiable host-network
   assertion.
+- A data-only, capability-closed straight-line Fold prediction interpreter with
+  exact positive counts and ratios, held labels, words, pairs, tables,
+  comparison and traced emission; its language has no ambient host capability.
+- A portable target commitment and post-seal release exchange whose target
+  contents are cryptographically committed before prediction and released only
+  to the matching envelope and seal.
+- A hostile-package auditor that accepts only the registered data-only Fold
+  program surface and verifies that the census and model-admitted receipt tree
+  did not change during package handling.
 - Empirical registration, isolation, target-order, measurement, falsification
   and complete-row gates.
 - Conditional evidence preservation without model admission.
@@ -67,9 +76,21 @@ learning, classical-quantum correspondence and limits. Its grammars execute
 a structural 2t+1 successor certificate for every generated positive finite
 fault depth.
 
-The official census now contains 168 scientific claims and 55,954 generated
-candidates through the five complete branches. Synthetic engine controls remain
-excluded from that census.
+The Physics branch is frozen complete with 132 required claims across
+measurement/metrology, mechanics, interactions/fields, waves, thermodynamics,
+physical quantum theory, matter/particles/nuclei, spacetime/gravitation,
+continua/collective matter and the Physics-to-Astronomy/Cosmology boundary.
+Each required claim contains 256 candidates and exactly one survivor. Eight
+supplemental measured-value admissions add exact interval checks for earlier
+subbranches. The 14-claim value suite uses exact positive rational endpoints,
+post-seal target release and official BIPM, NIST/CODATA, NIST ASD, PDG, IAEA,
+IAPWS, GWOSC, CERN Open Data and NASA LAMBDA records. All external comparisons
+passed and all displaced or tampered controls were rejected.
+
+The official census now contains 308 scientific claims and 91,794 generated
+candidates through the six complete branch programmes. Physics contributes 140
+claims and 35,840 candidates, including its eight supplemental measured-value
+admissions. Synthetic engine controls remain excluded from that census.
 
 The standalone Mathematics paper, its evidence map and the complete
 paper/evidence release are published at DOI `10.5281/zenodo.21516146`. The
@@ -89,26 +110,30 @@ Computation paper, *The Quantum Fold Machine*, is published as a separate
 80-page edition at DOI `10.5281/zenodo.21518313`. Both archival records contain
 the preview-first PDF, complete Markdown paper, full evidence/source ZIP and
 checksum ledger; matching GitHub releases preserve the same file set. GitHub
-`main` displays the complete Quantum paper as the current landing document.
+preserves both releases. The Physics paper now supersedes them only as the
+current GitHub landing document; every earlier canonical paper and archival
+record remains unchanged.
 
 The final repository-wide verifier passed after the complete computation-paper
 and documentation freeze: 153 unit and end-to-end tests passed, core-engine
 executable-line coverage was 1,264/1,264 (100%) across 15 modules, and all 168
 registered derivations were independently rerun.
 
-## Required before the first official empirical derivation
+## Physics empirical status
 
-- Complete the capability-closed Fold execution language and interpreter. Its
-  instruction set must itself be derived before it can execute an official
-  scientific prediction. Arbitrary Python is not accepted as capability-closed.
-- Exercise the portable blind exchange between a prediction custodian and a
-  target custodian on macOS, Windows and Linux.
-- Complete a hostile-package audit against receipt and census mutation paths.
+The capability-closed prediction, target-custody and hostile-package forms are
+model-admitted prerequisites. All 129 natural-law obligations use the registered
+empirical route: immutable source identity, target commitment, capability-closed
+prediction, seal-before-release custody, complete comparison rows, unfavorable
+control and explicit falsification. The three formal prerequisites themselves
+make no natural-law claim.
 
-The independent external-command adapter and official source-manifest binding
-are implemented. The engine already refuses empirical admission without an
-isolation-certificate identity and custody checks. A test fixture that merely
-constructs a certificate object is not official empirical evidence.
+The exhaustive 331-page Physics paper and evidence map pass the branch
+publication gate with `publication_authorized: true`. Maria Smith authorized
+public release on 24 July 2026. The PDF-first archival record, complete Markdown
+paper, evidence/source archive and checksum ledger are published at DOI
+`10.5281/zenodo.21520881`; GitHub `main` displays the complete paper as the
+repository landing document.
 
 No container runtime, virtual machine or third-party Python package is required.
 The policy is capability-based rather than OS-sandbox-based because the Python

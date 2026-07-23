@@ -1,34 +1,192 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://ernos-labs.example/schemas/sft-empirical-registration-v3.json",
-  "title": "SFT v3 empirical registration",
+  "title": "SFT v3 complete empirical registration",
   "type": "object",
   "required": [
+    "$schema",
     "experiment_id",
     "claim_id",
+    "evidence_mode",
     "development_observations",
+    "external_measurement_sources",
     "frozen_relation",
     "inputs",
     "withheld_targets",
-    "metrics",
+    "dimension_unit_boundary",
+    "prediction_protocol",
+    "evaluation_protocol",
     "controls",
+    "custody_protocol",
     "target_access_policy",
+    "row_retention_policy",
+    "stop_condition",
+    "source_hashes",
+    "registration_date",
+    "registered_by",
     "status"
   ],
   "properties": {
+    "$schema": {"type": "string", "minLength": 1},
     "experiment_id": {"type": "string", "minLength": 1},
     "claim_id": {"type": "string", "minLength": 1},
-    "development_observations": {"type": "array", "items": {"type": "string"}},
-    "frozen_relation": {"type": "string", "minLength": 1},
-    "inputs": {"type": "array", "items": {"type": "string"}},
-    "withheld_targets": {"type": "array", "items": {"type": "string"}},
-    "metrics": {"type": "array", "items": {"type": "string"}},
-    "controls": {"type": "array", "items": {"type": "string"}},
+    "evidence_mode": {"enum": ["observational_derivation", "blind_empirical_test"]},
+    "development_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "role", "content_hash"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "role": {"const": "development_only"},
+          "content_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "external_measurement_sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "measurement_body", "source_uri", "snapshot_hash", "retrieved_date", "custody_role"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "measurement_body": {"type": "string", "minLength": 1},
+          "source_uri": {"type": "string", "minLength": 1},
+          "snapshot_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+          "retrieved_date": {"type": "string", "format": "date"},
+          "custody_role": {"enum": ["development_only", "withheld_target", "unfavorable_control"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "frozen_relation": {
+      "type": "object",
+      "required": ["statement", "relation_hash", "dependency_hashes", "candidate_grammar", "exact_domain", "target_did_not_select_law"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "relation_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "dependency_hashes": {"type": "array", "items": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}},
+        "candidate_grammar": {"type": "string", "minLength": 1},
+        "exact_domain": {"type": "string", "minLength": 1},
+        "target_did_not_select_law": {"const": true}
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["input_id", "value_kind", "content_hash"],
+        "properties": {
+          "input_id": {"type": "string", "minLength": 1},
+          "value_kind": {"type": "string", "minLength": 1},
+          "content_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "withheld_targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["target_id", "source_id", "content_withheld_from_prediction"],
+        "properties": {
+          "target_id": {"type": "string", "minLength": 1},
+          "source_id": {"type": "string", "minLength": 1},
+          "content_withheld_from_prediction": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "dimension_unit_boundary": {
+      "type": "object",
+      "required": ["derived_dimension_carriers", "external_reference_protocol", "proof_value_policy", "measurement_record_policy"],
+      "properties": {
+        "derived_dimension_carriers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "external_reference_protocol": {"type": "string", "minLength": 1},
+        "proof_value_policy": {"const": "positive-generated-counts-and-exact-ratios-only"},
+        "measurement_record_policy": {"const": "external-records-never-become-proof-scalars-or-law-selectors"}
+      },
+      "additionalProperties": false
+    },
+    "prediction_protocol": {
+      "type": "object",
+      "required": ["interpreter_id", "program_id", "program_hash", "executor_id", "complete_trace_required", "forbidden_capabilities"],
+      "properties": {
+        "interpreter_id": {"const": "sft-v3-capability-closed-fold-interpreter/1"},
+        "program_id": {"type": "string", "minLength": 1},
+        "program_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "executor_id": {"type": "string", "minLength": 1},
+        "complete_trace_required": {"const": true},
+        "forbidden_capabilities": {
+          "const": ["clock", "dynamic_import", "environment", "filesystem_read", "filesystem_write", "foreign_function", "network", "subprocess"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "evaluation_protocol": {
+      "type": "object",
+      "required": ["evaluator_id", "comparison_implementation_hash", "metrics", "acceptance_condition", "falsification_condition"],
+      "properties": {
+        "evaluator_id": {"type": "string", "minLength": 1},
+        "comparison_implementation_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["metric_id", "definition", "unit_protocol", "all_rows"],
+            "properties": {
+              "metric_id": {"type": "string", "minLength": 1},
+              "definition": {"type": "string", "minLength": 1},
+              "unit_protocol": {"type": "string", "minLength": 1},
+              "all_rows": {"const": true}
+            },
+            "additionalProperties": false
+          }
+        },
+        "acceptance_condition": {"type": "string", "minLength": 1},
+        "falsification_condition": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["control_id", "kind", "expected_rejection"],
+        "properties": {
+          "control_id": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["false_premise", "tampered_source", "tampered_artifact", "boundary", "unfavorable_measurement"]},
+          "expected_rejection": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "custody_protocol": {
+      "type": "object",
+      "required": ["exchange_id", "custodian_id", "custodian_distinct_from_executor", "target_commitment_hash", "release_requires_matching_seal"],
+      "properties": {
+        "exchange_id": {"const": "sft-v3-portable-target-exchange/1"},
+        "custodian_id": {"type": "string", "minLength": 1},
+        "custodian_distinct_from_executor": {"const": true},
+        "target_commitment_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "release_requires_matching_seal": {"const": true}
+      },
+      "additionalProperties": false
+    },
     "target_access_policy": {"const": "structurally-denied-before-seal"},
-    "status": {"enum": ["registered", "executed", "sealed", "measured", "superseded"]},
-    "source_hashes": {"type": "object"},
-    "registration_date": {"type": ["string", "null"]},
-    "registered_by": {"type": "string"}
+    "row_retention_policy": {"const": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row"},
+    "stop_condition": {"type": "string", "minLength": 1},
+    "source_hashes": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}},
+    "registration_date": {"type": "string", "format": "date"},
+    "registered_by": {"type": "string", "minLength": 1},
+    "status": {"enum": ["registered", "executed", "sealed", "measured", "falsified", "superseded"]}
   },
   "additionalProperties": false
 }

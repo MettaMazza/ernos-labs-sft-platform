@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-WAVE-ENERGY-MOMENTUM-001",
+  "data_source_ids": [
+    "NIST-ASD-5.12"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ad08ecea766b48e5c7bae7151047d6e869b3a9b8244531ad812a108f2a982b05",
+  "falsification_condition": "The wave law is falsified if any committed NIST spectral/transition row lacks the predicted recurrence or propagation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0359905dc37a5254d9ee57565fd80b3e660d5a76079decaae9ac6ff8b3f7da41",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f0edc275020d10ca63ad0476c92463b28f2eabedd17b0602f0ad64c785dcec60",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-WAVE-ENERGY-MOMENTUM-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:1bb2f02aab387f52ab208ecd7d87371df04f75ca93c2d8fe9e4fef84d2dedf41",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:50c3a9ffe82a256a5bce7c8a0309669f64e7e7f3fca4089d75259a060701bf48",
+    "prediction_seal_hash": "sha256:fb240f8a9c74e779328a3b274479fb7e9fa59f8576c34104935aab12709ca4d5",
+    "program_hash": "sha256:cdcbd3d1383e6a97281dbb3fe4b8bc7055f27079f2ed46bb399c9169aed61004",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3e2a20af4df056ca82aec96d000a68492c96a36a22d622e3ea7db1c5f6140bd9",
+    "target_material_present": false,
+    "trace_hash": "sha256:edeebb57aa5934785ee001948e32969dcc7ebe70ce2c9b13c5a300bcb531c7b0"
+  },
+  "measurement_receipt_hash": "sha256:eb45a52316baae6215822fdfb276a428e8883cad50b45dcab87087a8fb9fc7af",
+  "measurements": [
+    "energy-momentum-1: predicted wave-energy-momentum-transport; observed wave-energy-momentum-transport; exact match True",
+    "energy-momentum-2: predicted wave-energy-momentum-transport; observed wave-energy-momentum-transport; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:72fee7f977609282e4a6f3102db753b3f19ef7de65429a8a70eebe15ea308622",
+    "custodian_id": "SFT-EXP-PHYS-WAVE-ENERGY-MOMENTUM-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:ad08ecea766b48e5c7bae7151047d6e869b3a9b8244531ad812a108f2a982b05",
+    "prediction_seal_hash": "sha256:fb240f8a9c74e779328a3b274479fb7e9fa59f8576c34104935aab12709ca4d5",
+    "registered_target_identity_hash": "sha256:3e2a20af4df056ca82aec96d000a68492c96a36a22d622e3ea7db1c5f6140bd9",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:363f3df91737725d42d949bc611ee6466dcb87ff35e1feffeb7e5e36d0b74ee5"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a2abc6592f4d4db9f1221685ee18b30ec9cd7db7ff109a260d50cb87ea83c9d5"
+}

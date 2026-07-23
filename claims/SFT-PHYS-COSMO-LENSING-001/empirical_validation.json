@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-COSMO-LENSING-001",
+  "data_source_ids": [
+    "NASA-LAMBDA-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:a6ef005376667ad1accc6bf18937f9168004c8765f5a3afbcc590092542b7d6c",
+  "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:be2f4bd026393f9cc4673cb386f1088ffaea6e38a6a05cb38d84525db1712e6b",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:096faa20773040ef366be7e70b2362a8a53eda0b086d81d11d1cb11354af0ce8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-COSMO-LENSING-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:40ea7010d9c1fa4ee07464ef56891b87d210c3a4e5e70edf04237da3889c9465",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d71ec5a6d783a19bc3e60d54a307514e6499a4a7b37ef031c19eeee559ca895c",
+    "prediction_seal_hash": "sha256:915a976eb0f78ad1da57d230480a089b2e6e19345c51725aa261477465f2a6d3",
+    "program_hash": "sha256:f5ccb17f7722bcb29e415633fffeb535b4cec155afbaddbc939331bcaca1e9df",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b8e4d180586f1fdcd0a3ae7118c6711a1834e62535f570246013324732d9d8d3",
+    "target_material_present": false,
+    "trace_hash": "sha256:c5db7197e57ec312e34f196edecf52ae5030eadb3052bf1eff7968658b1aa76a"
+  },
+  "measurement_receipt_hash": "sha256:53e32cc58a397f1475b947f7f25db97c5eab1c1f964992f7dd5e1e582da7f0b5",
+  "measurements": [
+    "lensing-1: predicted gravitational-lensing-relation; observed gravitational-lensing-relation; exact match True",
+    "lensing-2: predicted gravitational-lensing-relation; observed gravitational-lensing-relation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:099f8e5d84a2e620b5e9357fc612071c6ba22bd388c4ba9c301ec4ca5983b131",
+    "custodian_id": "SFT-EXP-PHYS-COSMO-LENSING-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:a6ef005376667ad1accc6bf18937f9168004c8765f5a3afbcc590092542b7d6c",
+    "prediction_seal_hash": "sha256:915a976eb0f78ad1da57d230480a089b2e6e19345c51725aa261477465f2a6d3",
+    "registered_target_identity_hash": "sha256:b8e4d180586f1fdcd0a3ae7118c6711a1834e62535f570246013324732d9d8d3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:6c80422263d8df027cc589c259f8cb8cba7a2c205ecc93e08204047bfbde68b3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:4fd7675d343fb9d994d603a695eb72260228dba9375314c3532c6cda7cbcb4cf"
+}

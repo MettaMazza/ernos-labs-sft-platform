@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-MASS-ENERGY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:ed0bec154485f63255b26601114771f2175e5c9c127aa857b0e159ebb53d3819"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0d3b8bf23c1d3242a5b5801dad3467f0698bae611dfca54dd64fc741e69eb04e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:aa11d50ff9abd65f109a711ae145bcaf5ce16355a23aabea67ce51f63cc71a1b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:5fe31bb7a21737a2dbf16c212f31f9e68ee0f67bb7ecd1330de2ae306d6c9945"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-LENSING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3cc2a9e0f5dfd8bf2a27996c4f376e3a512b0c3c176108f1b10a868461af918a"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f4e6b91bd814d859f13b3adafad665231ba76827cb01a8b25abfa05843dc5606"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1293463a7a30cb51089c59d24177fdd106c31613e039b12ed6871cc7c9e2f89c"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:e74c60c8dd88ff2f5a79298eeafec74420d3d4a42b0c9589b9354bba36906f0c"
+    }
+  ]
+}

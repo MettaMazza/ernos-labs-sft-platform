@@ -1,0 +1,137 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-MEAS-CALIBRATION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-MEAS-CALIBRATION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:1f610f8c9c977c6f8a241db24b3b30903d3adcf8ce00b468c33606dc2c656c71"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "BIPM SI Brochure 9th edition, update 2026; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:2b4024013623a6f11b06762802ff8395de2be3bff8b7a4d228f817f5ecf12f6c",
+    "evaluator_id": "SFT-EXP-PHYS-MEAS-CALIBRATION-001-post-seal-evaluator",
+    "falsification_condition": "The claim is falsified within this registered standards boundary if any committed BIPM target row does not exhibit the predicted structural label, if any row is omitted, or if the tampered control is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-MEAS-CALIBRATION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Bureau International des Poids et Mesures",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:5442eea2c680caf77a9d96879205a97f57c7c270b98a0bd0126c18fefe47e02c",
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "source_uri": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete product of carrier, relation, provenance, prediction access, measurement record, row retention, finite generality and extra-rule forms.",
+    "dependency_hashes": [
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:16406a77c8769e1d00f95687f66c4d31bae7fd16bc2074f888d937d2eb40cf73",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:8dee2dbe80704dc3d4e614d653b7ba476ce19c311f000d8a20eb95a4bb7d3e27",
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71"
+    ],
+    "exact_domain": "All measurement relations assembled from admitted Fold distinctions, exact reference pairing, held observation records, target-inaccessible execution and finite generated support.",
+    "relation_hash": "sha256:8edba903efe73a7ed4edf093b10a038ac63b28d0876648c03c2447dbc0a3f8c6",
+    "statement": "A calibration is the complete ordered composition of source-bound reference comparisons, closing at the realized unit and retaining every intermediate record.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:fbdca670643968f66bc81a5622bda4cedddf60291e0c781a369aafced276803f",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-MEAS-CALIBRATION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:8b4e91a4cb0f160aff18869daa5858377c8a95e09e4fce770389a23bf5091ccc",
+    "program_id": "SFT-EXP-PHYS-MEAS-CALIBRATION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:cff95f46ae4ba2d87312fc10170741b42596cd39d487b88c9a23080cb4529433",
+    "experiments/external_sources/physics/snapshots/bipm-si-brochure-9-en.pdf": "sha256:5442eea2c680caf77a9d96879205a97f57c7c270b98a0bd0126c18fefe47e02c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "target_id": "calibration-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "target_id": "calibration-2"
+    }
+  ]
+}

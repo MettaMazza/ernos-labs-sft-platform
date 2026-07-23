@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MEAS-OBSERVATION-CARRIER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a34141df720d459de4b146698583cf8fdcde23b929ddcda6e2efd7685bf2a6cd"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:99dffccfc8546e03a99d83a3b7a5a24e5a6e352e2a77380cd7904173382c2d60"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f62791c52be506a073e57cb83a2a099e6fa76f0f8e0ecb4df7950d4ceafa44dd"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:eedf3b06cb5ccdc9b7ffad27fa80d7f553e977f01d14994793b7e2530c3cb9a2"
+    }
+  ]
+}

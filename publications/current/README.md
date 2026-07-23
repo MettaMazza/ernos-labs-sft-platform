@@ -1,9 +1,28 @@
 # Current publications
 
 The repository landing page, [`README.md`](../../README.md), displays the latest
-complete standalone branch paper, **The Quantum Fold Machine**. Every earlier
+complete standalone branch paper, **From Fold to Physics**. Every earlier
 branch paper remains unchanged in its canonical source folder and archival
 record.
+
+## Published Physics branch paper
+
+The Physics branch is frozen complete and documented in the standalone
+manuscript [`From Fold to Physics`](physics/FROM_FOLD_TO_PHYSICS.md). Its
+visually verified 331-page edition is
+[`output/pdf/from-fold-to-physics-branch-paper-001.pdf`](../../output/pdf/from-fold-to-physics-branch-paper-001.pdf).
+It covers all 132 required laws, eight supplemental exact measured-value
+admissions, 35,840 Physics candidates, complete elimination tables, external
+measurement custody and immutable evidence identities.
+
+The exact [`evidence_map.json`](physics/evidence_map.json),
+[`manifest.json`](physics/manifest.json) and
+[`publication_receipt.json`](physics/publication_receipt.json) pass the branch
+publication gate with `ready_to_publish: true` and
+`publication_authorized: true`. Maria Smith authorized public release on 24
+July 2026. The archival edition is DOI
+[`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881), and the
+complete Markdown paper is the current GitHub landing document.
 
 ## Published computation branches
 

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-THERMO-FLUCTUATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:00138e10f0a178a63731e18278eccfda8318dbc158bd82da5420e550a30a5c76"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b0e40ef20b9a4436701c2356257b61ba295912e51754d039135fdf2fad587680"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c1f74423658eddae370554c1aeb672cd2b0738d8683ca9eba6e8d6e78ef88e87"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:087c5bd21117695a5b7de997a677d07134aaa675ae69aed071669d6feba944eb"
+    }
+  ]
+}

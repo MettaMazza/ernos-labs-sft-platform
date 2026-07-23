@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-NUCLEAR-REACTIONS-001",
+  "data_source_ids": [
+    "IAEA-ENDF-CURRENT-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:79aa65af77001e4936ce23435770d718cc03fce777c25731679099ab89fbdeee",
+  "falsification_condition": "The material law is falsified if a committed external row lacks the sealed constituent/composition/conservation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:8f9cd6cfb1475a8d1976125e63a314024123bfe2366d61e368899143faf36c1f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8cb8697dee097f791983a708e3285372fbcdd31a42af2a37fb0a4f2cb6368961",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-REACTIONS-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:fd1479758e35db982be297712c2774ea8c3196bc5b6d130ed9d6fc6cd9ec1fd6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e9f467864705b6ba6020856057e40f26d2761524ccdb4f32eef076ce65154acf",
+    "prediction_seal_hash": "sha256:370a0dc15ea7f3e36063e69bd7dbf71b0b98fbe7e5005399e076cd3aa657003c",
+    "program_hash": "sha256:75983256464ce21e39bbb71a26eef884f9697da80bcf07cf9e384504ab1b42e0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c6a75cc1a8c9e0b661632f3f54e86e5ee02f76dbfdc6fea54d56f9da5949bd7a",
+    "target_material_present": false,
+    "trace_hash": "sha256:a46515624cde04334c93b9fc467a50068646184890b9f38a5ac4a0bf5b0ad894"
+  },
+  "measurement_receipt_hash": "sha256:90df60f2143b04166e63a04b6073725d94456b6a4f9bbf2b614efdd72a911793",
+  "measurements": [
+    "nuclear-reactions-1: predicted nuclear-reaction-channel-closure; observed nuclear-reaction-channel-closure; exact match True",
+    "nuclear-reactions-2: predicted nuclear-reaction-channel-closure; observed nuclear-reaction-channel-closure; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:94a227c1a68856fbce05c9c808c686c569510cc4a6bdefd2f2d356d49eafb027",
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-REACTIONS-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:79aa65af77001e4936ce23435770d718cc03fce777c25731679099ab89fbdeee",
+    "prediction_seal_hash": "sha256:370a0dc15ea7f3e36063e69bd7dbf71b0b98fbe7e5005399e076cd3aa657003c",
+    "registered_target_identity_hash": "sha256:c6a75cc1a8c9e0b661632f3f54e86e5ee02f76dbfdc6fea54d56f9da5949bd7a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:751b3bbf81c06a0930b9729a18596fa92861fd01ad8b8cb4a5f8edc47dcf73ba"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:c4ca1115e7810dd0426286893e7508475510d5861221f6eb392b3dbfe9d0dace"
+}

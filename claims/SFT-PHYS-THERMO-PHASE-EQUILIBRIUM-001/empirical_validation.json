@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bb34fdf4c15242e3030d8bcdf8af7b3f406f2becf0a6d1212457213d1f4b16a6",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:e65dc19612a5d5e476aa80c965b6024222ee83334fd6f5e73163134f47edff48",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:9f8dfd952a90ad32ed78adb6e62f0e1e80d4c94d35bbc09e4cfda9c29c5ee975",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-PHASE-EQUILIBRIUM-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7a3c15693c3fe047ae1e7c15f8b9f59c2cc119aba24dbdabaf49f172d696ad60",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:a1bcc1a7e4bb985de07c70ee5acfaa43e642bfef4a7df299f2f96306105416c9",
+    "prediction_seal_hash": "sha256:95717dd2e99ad823dd49d08e0ed36a82a8dc762e5012bd1c5b40424b51504377",
+    "program_hash": "sha256:bd7cda841381606a2f438f3e73cea1ad99987828b816c249499bfee7536a0ad6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4d1421fdd33e927cb2466faadd5abf2b712349b66f1904911c034a830a2bad4a",
+    "target_material_present": false,
+    "trace_hash": "sha256:dce96bb36a2f86afe8dcd3e06f8da08d17d639a40b3c47ad15024941c1282b71"
+  },
+  "measurement_receipt_hash": "sha256:8d7e1705c61cb89e775e56f2bd970529f4c51505e8cdda5a4966c3972736e18c",
+  "measurements": [
+    "phase-equilibrium-1: predicted phase-coexistence-transition; observed phase-coexistence-transition; exact match True",
+    "phase-equilibrium-2: predicted phase-coexistence-transition; observed phase-coexistence-transition; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:63365f3340988042c81718784307802ae1e5fd1d5c10b7d3a792710962be5582",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-PHASE-EQUILIBRIUM-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:bb34fdf4c15242e3030d8bcdf8af7b3f406f2becf0a6d1212457213d1f4b16a6",
+    "prediction_seal_hash": "sha256:95717dd2e99ad823dd49d08e0ed36a82a8dc762e5012bd1c5b40424b51504377",
+    "registered_target_identity_hash": "sha256:4d1421fdd33e927cb2466faadd5abf2b712349b66f1904911c034a830a2bad4a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:41598a2b958829ec292d27ea0c1615092b413c6f0992ac57cbf0c5167caf6dbe"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2ea8645395888cb98611995be975d320e16cfbe1355bdc5cdd20b9f8e342c64f"
+}

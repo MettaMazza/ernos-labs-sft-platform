@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-WAVE-PERIOD-FREQUENCY-001",
+  "data_source_ids": [
+    "NIST-ASD-5.12"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:4aa6d3478aecdc425b5d8f89ab1f5cb7f46398646a9bde790632c568e7b44fd5",
+  "falsification_condition": "The wave law is falsified if any committed NIST spectral/transition row lacks the predicted recurrence or propagation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:81b4bfa06cf26fb3e492949bd7caba3d3a7ea2951358c131409849d2b92333ee",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1b2dbea79c30f86d41fbef138ca3cbfbf182a82bd086a95745dd63d665005376",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-WAVE-PERIOD-FREQUENCY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:edb992a8429a1cfd2b596a0bf99c679014f3449ba0b80aab8292ef383ad41d73",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d8bc210b355518d5d1213833b8bb6149480ad1abe6ea1690b723be10b975994e",
+    "prediction_seal_hash": "sha256:b84f6afbdca50a83f18d5d4fa41ea1e4506cb8382d330621e0d8719b67c8b1a0",
+    "program_hash": "sha256:b0a27bd8d98d629ca3bd5b936c84d476e0af839fdc0ef1399009114d766bee0b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b6173c0548c1d00b05bd16ffc12d37b2c176a27a1e43cc30ea8745b5dc3e30da",
+    "target_material_present": false,
+    "trace_hash": "sha256:d046b3c60faa09c02d0a8900103f39ec98c9e73aab7c9731567e58bff43b8614"
+  },
+  "measurement_receipt_hash": "sha256:00cf3fbd760d4912e92c38bce1e58c22b3b5abf1a644966e44f430085a9a0cba",
+  "measurements": [
+    "period-frequency-1: predicted periodic-recurrence-frequency; observed periodic-recurrence-frequency; exact match True",
+    "period-frequency-2: predicted periodic-recurrence-frequency; observed periodic-recurrence-frequency; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:248bfad8bcbd6458b8a6e19a43909aabdba5795241d266edf87aaf25c63f4919",
+    "custodian_id": "SFT-EXP-PHYS-WAVE-PERIOD-FREQUENCY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:4aa6d3478aecdc425b5d8f89ab1f5cb7f46398646a9bde790632c568e7b44fd5",
+    "prediction_seal_hash": "sha256:b84f6afbdca50a83f18d5d4fa41ea1e4506cb8382d330621e0d8719b67c8b1a0",
+    "registered_target_identity_hash": "sha256:b6173c0548c1d00b05bd16ffc12d37b2c176a27a1e43cc30ea8745b5dc3e30da",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4c7419578c1bc939df6f973dc05a39ed84282d480b042cd516020519d91712d9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:601b00b48bd3b97f643a7590795cbcf3f2f51ff535526a7fa531c4651f27f6a4"
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-COSMO-STRUCTURE-GROWTH-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-COSMO-STRUCTURE-GROWTH-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:e1a9535604468283f764fdddadb44b0092c74ab6aa2470564a0c7986a06249f1"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Aeronautics and Space Administration, Goddard Space Flight Center snapshot sha256:805ea293cbcf660499be996e0d80175b61ba2a68bdddedffe94e50b2d4275915; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:d7fd5c5abf5982b0deb866e01d798804849f23916e1d049a5b4734933fcedfb7",
+    "evaluator_id": "SFT-EXP-PHYS-COSMO-STRUCTURE-GROWTH-001-post-seal-evaluator",
+    "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-COSMO-STRUCTURE-GROWTH-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Aeronautics and Space Administration, Goddard Space Flight Center",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:805ea293cbcf660499be996e0d80175b61ba2a68bdddedffe94e50b2d4275915",
+      "source_id": "NASA-LAMBDA-2026-07-23",
+      "source_uri": "https://lambda.gsfc.nasa.gov/"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete emission, propagation, observation-time, source/response, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:05f1f0821cfd5dcf960fb767d68468b1af45d373b1a88a57d42b05f0e688af7f",
+      "sha256:c282cca9951e9672bf5b709503d9a073e5f6720aecb8922d9cd666ffb186006f",
+      "sha256:3314c9ef5abb0de12363e727263f9d5f31273ac02766334f7632b6d510d38131",
+      "sha256:aa9774f19eaf5a905f4f311dd5e1abe0bf44414fe3bce8d353916dd0717e019e",
+      "sha256:d884abf8b301cd56f9fe168f73ddf017828ad657f89de2428c6d7d730c1b4dcf",
+      "sha256:bef08ac61cc6e776696187c3222312ccbf8b688928c9c5753927f34473250115"
+    ],
+    "exact_domain": "All finite cosmological-boundary forms generated from exact source-bound propagation, recurrence ratios, causal paths and observation records; astronomical census and historical initial conditions remain outside this Physics closure.",
+    "relation_hash": "sha256:3b731ed5df9fa0c54999da48d733d26a9ec0fcb714de80bc53b24240310deafb",
+    "statement": "Cosmic structure growth is finite deterministic Fold network evolution under registered gravitational and expansion relations.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:30d957de7ff9a37301e8e5c21a38a52a220adcaf8c1792af369c04e1f9f26040",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-COSMO-STRUCTURE-GROWTH-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:0b9909f3e31e7a50e955b0940d8d2ec126449b0815ed65dd012841db772b043f",
+    "program_id": "SFT-EXP-PHYS-COSMO-STRUCTURE-GROWTH-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:311500e8c8ed87dc49d903d819b6cf2affcb283d8e63ebd229636351fbc396e3",
+    "experiments/external_sources/physics/snapshots/nasa-lambda-home.html": "sha256:805ea293cbcf660499be996e0d80175b61ba2a68bdddedffe94e50b2d4275915"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NASA-LAMBDA-2026-07-23",
+      "target_id": "structure-growth-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NASA-LAMBDA-2026-07-23",
+      "target_id": "structure-growth-2"
+    }
+  ]
+}

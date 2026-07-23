@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-THERMO-SECOND-LAW-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:bd5d44ca5ac75aae6520413625174d04324f813e3ed129902e5e22ffab16e867"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:89b5457505016a0591d72cd0d779469d88001625cf1c604645660e721a61faca"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:705cb309bd4a45d0bd0d43283d8cc3a6b0fd0ca2ae6d049478e3bc0c95927331"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:8a76f82a48d2516bb5d150b93a10eed9104453f1148a75c2790edb45b8119b54"
+    }
+  ]
+}

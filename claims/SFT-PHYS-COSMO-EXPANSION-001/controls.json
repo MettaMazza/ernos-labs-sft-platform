@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-EXPANSION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a2dbb0b406192e90d75444c33a1a0cc7bb0f88d0e13b4e41145f977438ba145f"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b5ae118031c6058ace28ac8f9026ffb3493dfe178c532404c893156cac44ebce"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ee430e29142cb3594511f207700c87ea69687f6058b67f30d75c8df741a03357"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:ff266063a5b0223e3d2a5cd0c274b948cd09fc341c0e0cbd98ddfc094ae379e7"
+    }
+  ]
+}

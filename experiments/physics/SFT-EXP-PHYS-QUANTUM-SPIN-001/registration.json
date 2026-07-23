@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-QUANTUM-SPIN-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-QUANTUM-SPIN-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:8630019fe7150e7174749a40093ff95815ae073eba6996269e57c6b30740ee78"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Particle Data Group, Lawrence Berkeley National Laboratory snapshot sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:00334ca770451ce00fe8a02940a1c9d5d33a99b6a089bf4693ae474b7391722e",
+    "evaluator_id": "SFT-EXP-PHYS-QUANTUM-SPIN-001-post-seal-evaluator",
+    "falsification_condition": "The physical quantum law is falsified if a committed external row lacks its sealed support/composition/observation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-QUANTUM-SPIN-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group, Lawrence Berkeley National Laboratory",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56",
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/contents_tables.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete physical-support, composition, phase/action, observation, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:630198c34fc5ef45d095f1cfc5af193963b0c471fd3a682baf3b9b38b674ec9d",
+      "sha256:ffd5ae7f787e98f77f7f24a57a047315b06148e748fc681f782faa5f3b3ccb3d",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:2876f5eb50cdc26e8f518f56d74463d9c9bd8f24d08b966cf7418735abed8167",
+      "sha256:d3d23aa55f758d5065584c15676331a45978b42e429020c888adca14c13a5e8f",
+      "sha256:0d7b17e1362a962e6b321befe2048206b5c6ddb26bfcb9da2e0c8bb757fa9b19",
+      "sha256:50bcbab4761166fdbf110cb115c92cdde6637d92548260d03a9ffdbbc7df7c21"
+    ],
+    "exact_domain": "All finite physical quantum forms generated from exact Fold word support, held cyclic labels, reversible transitions, predecessor merging and observation records without imported amplitudes or stochastic collapse.",
+    "relation_hash": "sha256:3ed552b803b72f46609041304302ee949c820b18ce34d451ae721cbc5f68c981",
+    "statement": "Spin is finite cyclic orientation action on a physical Fold constituent with exact held measurement labels.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3faddbeac303cd142989d7d59ef215438e1bfbaca8e2cb285a779a10f8d5e6fd",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-QUANTUM-SPIN-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:b846e742cea61e430b020c47b70b4da63c7311851d07c867a7ec266c34202c53",
+    "program_id": "SFT-EXP-PHYS-QUANTUM-SPIN-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:36d95c28e65c8b8618449e30b66db25954401d49ddf5b7b25cb7694de70cc8f1",
+    "experiments/external_sources/physics/snapshots/pdg-2025-summary-tables.html": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "spin-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "spin-2"
+    }
+  ]
+}

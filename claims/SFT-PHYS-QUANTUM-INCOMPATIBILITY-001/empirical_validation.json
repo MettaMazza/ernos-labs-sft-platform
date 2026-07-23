@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-QUANTUM-INCOMPATIBILITY-001",
+  "data_source_ids": [
+    "NIST-ASD-5.12"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:84457f7c89203b31c4ef76d2c4012df0814b57a4e77c917a1c45898958ed3bfc",
+  "falsification_condition": "The physical quantum law is falsified if a committed external row lacks its sealed support/composition/observation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:8249451c3e3afa9a18b70a43af14ead80b8c1da21fc7b8bf6975d4722f8d8501",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:94eb83bd46fdd5c7722ce9697c226821e73ac82c27a7911f0da4d95441fe3c3a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-QUANTUM-INCOMPATIBILITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3fc646943c6e243e92baea62d28aad6baf6f9336d3356d8615858fdf8a759a52",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7e1f7820dc0177b0dc216d655c43d93d38e85077b17bd0124b9210848528f5cf",
+    "prediction_seal_hash": "sha256:a8f9e9d3d0d1e86426455c4d9145d7a09ed7cd0992715e5a36735f81acdce066",
+    "program_hash": "sha256:5bcf17b64f2e3de950eb1300ced7ba15c3f8ee1c6e0469db1d3cddd32e9665b6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ade77c24cc263e82e75f635b6c612ced93ee6b43f8b66a8031f9a8b533be1e84",
+    "target_material_present": false,
+    "trace_hash": "sha256:bb09461b0490e40a12099064d731047a7ef94529a33300047fa4c4a26d171603"
+  },
+  "measurement_receipt_hash": "sha256:3c0bc44b43868fe92dff7a8b258cdf6895f9adfd65f43532e528e7e1c3fbd205",
+  "measurements": [
+    "incompatibility-1: predicted quantum-observation-incompatibility; observed quantum-observation-incompatibility; exact match True",
+    "incompatibility-2: predicted quantum-observation-incompatibility; observed quantum-observation-incompatibility; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f7dea63a65493f7ca9a1e266646684725b37edd5536f07d3e931c8d2616ca79e",
+    "custodian_id": "SFT-EXP-PHYS-QUANTUM-INCOMPATIBILITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:84457f7c89203b31c4ef76d2c4012df0814b57a4e77c917a1c45898958ed3bfc",
+    "prediction_seal_hash": "sha256:a8f9e9d3d0d1e86426455c4d9145d7a09ed7cd0992715e5a36735f81acdce066",
+    "registered_target_identity_hash": "sha256:ade77c24cc263e82e75f635b6c612ced93ee6b43f8b66a8031f9a8b533be1e84",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7a212cc6215e7d54d03559ac84dd7ceb91a1a2481be58efbe166b7dcd721a8d2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:35d09d2429fe2535d01ae8f4c3af7575b3a3a80ae8da112567c935fc4752dc2f"
+}

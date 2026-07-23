@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001",
+  "data_source_ids": [
+    "PDG-2025-SUMMARY-TABLES"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:58fec8467beb8cfa69928caea8aa5d8fb98950ac7c48e0c0e0175eeeb5e02e2f",
+  "falsification_condition": "The field claim is falsified if any committed external row lacks the predicted source/response or propagation structure, any row is omitted, or the tampered unfavorable row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cb240904ec157cde290f7f8bcf9ce498ef871efc85231c8487631844e824097a",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e741c0b3442982ef416a54366b16796101928cd3ad6b6198144858b241638f8b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:de3e07f199c08d076554f6e854e899a3ccdc37e3c4f421af3db0474659c0e857",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:dfd5fb2691f02ad27a04c36e98dee7d3098ed18897a2cc0064f30266abd188f7",
+    "prediction_seal_hash": "sha256:0008b9cf49e53f776745b762b453e8b9117faa84b48392eb90624aea51626c47",
+    "program_hash": "sha256:3c8b46eddd0ac1ee9b5b3baf94d68de54f4fd212f5f5fa2ca630425c327e7e9b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ca5663e64c07eaa54ff0b6b7a57607ba3c22d2ea4d77674eb8a426001976c875",
+    "target_material_present": false,
+    "trace_hash": "sha256:d03636700dd4712ddf69a87e32a903a6961948f3123c14aa6c23cbd1b04a56e2"
+  },
+  "measurement_receipt_hash": "sha256:ee9425b090876521cf61a35a68cf4cf8f8c82707c88083cbd5f841525eb42c27",
+  "measurements": [
+    "gauge-equivalence-1: predicted observable-equivalence-with-held-gauge-redundancy; observed observable-equivalence-with-held-gauge-redundancy; exact match True",
+    "gauge-equivalence-2: predicted observable-equivalence-with-held-gauge-redundancy; observed observable-equivalence-with-held-gauge-redundancy; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7f7d9343777dcde781f49a2337a3624f1929d1d33379f07498d1c8305434115b",
+    "custodian_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:58fec8467beb8cfa69928caea8aa5d8fb98950ac7c48e0c0e0175eeeb5e02e2f",
+    "prediction_seal_hash": "sha256:0008b9cf49e53f776745b762b453e8b9117faa84b48392eb90624aea51626c47",
+    "registered_target_identity_hash": "sha256:ca5663e64c07eaa54ff0b6b7a57607ba3c22d2ea4d77674eb8a426001976c875",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3e740b593e19eb8c2b8048fa5823bd1e6126fd4031149dc8acb76329c358f33e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:05abd37a18d2cf1e1193aaa56575c12b04dc0245e1d47c30e785a96dd5b95e2c"
+}

@@ -2,15 +2,89 @@
   "$schema": "../../governance/experiment.schema.json",
   "experiment_id": "SFT-EXP-BRANCH-NNN",
   "claim_id": "SFT-BRANCH-SUBJECT-NNN",
+  "evidence_mode": "blind_empirical_test",
   "development_observations": [],
-  "frozen_relation": "Replace with a source-bound relation identity.",
-  "inputs": [],
-  "withheld_targets": [],
-  "metrics": [],
-  "controls": [],
+  "external_measurement_sources": [
+    {
+      "source_id": "AUTHORITATIVE-SOURCE-ID",
+      "measurement_body": "Authoritative measurement body",
+      "source_uri": "https://replace.invalid/official-source",
+      "snapshot_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration",
+      "retrieved_date": "2026-07-23",
+      "custody_role": "withheld_target"
+    }
+  ],
+  "frozen_relation": {
+    "statement": "Replace with the explicit source-independent Fold relation.",
+    "relation_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration",
+    "dependency_hashes": [],
+    "candidate_grammar": "Replace with the complete generated candidate grammar and boundary.",
+    "exact_domain": "Replace with the exact finite or depth-independent generated domain.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "input_id": "REGISTERED-INPUT-ID",
+      "value_kind": "exact-fold-value",
+      "content_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration"
+    }
+  ],
+  "withheld_targets": [
+    {
+      "target_id": "WITHHELD-TARGET-ID",
+      "source_id": "AUTHORITATIVE-SOURCE-ID",
+      "content_withheld_from_prediction": true
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": ["replace-with-admitted-carrier-id"],
+    "external_reference_protocol": "Replace with the frozen authoritative unit and measurement protocol.",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors"
+  },
+  "prediction_protocol": {
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_id": "REGISTERED-PROGRAM-ID",
+    "program_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration",
+    "executor_id": "distinct-prediction-executor",
+    "complete_trace_required": true,
+    "forbidden_capabilities": ["clock", "dynamic_import", "environment", "filesystem_read", "filesystem_write", "foreign_function", "network", "subprocess"]
+  },
+  "evaluation_protocol": {
+    "evaluator_id": "distinct-post-seal-evaluator",
+    "comparison_implementation_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration",
+    "metrics": [
+      {
+        "metric_id": "REGISTERED-METRIC-ID",
+        "definition": "Replace with an exact, pre-seal comparison rule.",
+        "unit_protocol": "Replace with the frozen unit protocol.",
+        "all_rows": true
+      }
+    ],
+    "acceptance_condition": "Replace with an exact pre-seal acceptance condition.",
+    "falsification_condition": "Replace with an exact pre-seal falsification condition."
+  },
+  "controls": [
+    {"control_id": "FALSE-PREMISE", "kind": "false_premise", "expected_rejection": "Root or admitted dependency is absent."},
+    {"control_id": "TAMPERED-SOURCE", "kind": "tampered_source", "expected_rejection": "A registered source identity differs."},
+    {"control_id": "TAMPERED-ARTIFACT", "kind": "tampered_artifact", "expected_rejection": "A sealed prediction or trace differs."},
+    {"control_id": "BOUNDARY", "kind": "boundary", "expected_rejection": "An excluded value or target capability enters execution."},
+    {"control_id": "UNFAVORABLE-MEASUREMENT", "kind": "unfavorable_measurement", "expected_rejection": "A registered measurement violates the frozen relation."}
+  ],
+  "custody_protocol": {
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "custodian_id": "distinct-target-custodian",
+    "custodian_distinct_from_executor": true,
+    "target_commitment_hash": "sha256:replace-with-64-lowercase-hex-characters-before-registration",
+    "release_requires_matching_seal": true
+  },
   "target_access_policy": "structurally-denied-before-seal",
-  "status": "registered",
-  "source_hashes": {},
-  "registration_date": null,
-  "registered_by": "Maria Smith"
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "stop_condition": "Halt after every registered target and control row is evaluated exactly once, or immediately on any constitutional violation.",
+  "source_hashes": {
+    "replace-with-source-path": "sha256:replace-with-64-lowercase-hex-characters-before-registration"
+  },
+  "registration_date": "2026-07-23",
+  "registered_by": "Maria Smith",
+  "status": "registered"
 }

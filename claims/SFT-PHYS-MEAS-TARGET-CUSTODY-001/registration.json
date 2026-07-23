@@ -1,0 +1,39 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "physics",
+  "candidate_grammar": {
+    "boundary": "All finite portable target exchanges using admitted exact identities, pre-seal commitment, distinct custody and one post-seal release.",
+    "completeness_certificate": "sha256:b4a07fe889a1406ed597dfbeaf606a906b574828809e8bb970a001e8743342b8",
+    "generator": "Generate the complete product of timing, holder, target support, content identity, experiment, envelope, release and extension forms."
+  },
+  "claim_id": "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
+  "dependencies": [
+    "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
+    "SFT-INFO-ENCODING-DECODING-001",
+    "SFT-COMP-SEC-HASHING-001",
+    "SFT-COMP-SEC-COMMITMENT-001",
+    "SFT-COMP-SEC-INTEGRITY-001"
+  ],
+  "empirical_protocol": null,
+  "excluded_inputs": [
+    "target access by the prediction executor",
+    "release before a matching prediction seal",
+    "selective target-row omission",
+    "host-specific sandbox claims"
+  ],
+  "intended_certificate": "Independent regeneration of the complete 256-form product and sole preserving form.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "Within the registered blind-exchange grammar, target content remains unavailable to prediction in exactly one form: a distinct custodian commits the complete named target package and prediction envelope before execution, then releases that unchanged package once to the matching experiment only after a matching prediction seal exists.",
+  "status": "independently_replicated",
+  "title": "Portable target commitment and post-seal custody"
+}

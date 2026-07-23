@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FLUID-INVISCID-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:2dfd81c580bb59efca01f992f8cc1573ced5ceeb378ec1cb2fc54c598d76c618"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:518face2fa90408cb1537676e5ae2dc65a40dafcd9dddcbfcf09675c18b61ed9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a996c280c1b2b3383a30b0b528487bb4789d5b1a04fb9c144bf8194547ec8fca"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:a1b5cfa22dfeededb22eb4d43fddd0b01e467092976b426d90f7ee9ba26ef751"
+    }
+  ]
+}

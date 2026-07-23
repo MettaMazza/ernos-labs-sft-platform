@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-FLUCTUATION-001",
+  "data_source_ids": [
+    "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:34f2d7bc8ea53b183a8e4d241b7cdfc48ae20fc34ae638c17b3b373b437b2c00",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:15a12ba1249c8fdb3325c1b9cff562958f45b7c8eb979ca716e0569508249c02",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fe15f091f3894fa5e3b59d021bdb750685b5f3f0875d18a16213d1341f312b25",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-FLUCTUATION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:5c5d4b3e768147eee8fdfdea0d0e07b74f4317e5782448817e23cfc1fbae296b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d3a05ed1fc2a3b4bb13e57e21ebce461ac3b726c9e3f8241e7afd960245e3068",
+    "prediction_seal_hash": "sha256:e566e687034efbf79023cab6b4b624550cb5c799f9d81dd93276b9da8e1a9146",
+    "program_hash": "sha256:d7ea0cdfbe52b189ab90e468d8b8ad1b32d04caa64a0b22f3412dc24d98c1362",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f86c4527c8749ce9739044f2c45f1c21dea1286beca081f070640aebeee4fe7f",
+    "target_material_present": false,
+    "trace_hash": "sha256:90254497b1aa85c38ba08eda407cfa8ce7a5f2a82f277b789224c34717e7a201"
+  },
+  "measurement_receipt_hash": "sha256:c24fce3c578e4d987bd8cd1890a1888daa511269141b9f1dfac7e3d153619c23",
+  "measurements": [
+    "fluctuation-1: predicted deterministic-finite-thermal-fluctuation; observed deterministic-finite-thermal-fluctuation; exact match True",
+    "fluctuation-2: predicted deterministic-finite-thermal-fluctuation; observed deterministic-finite-thermal-fluctuation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2a54b66f71698bd7cb2234ceee3b35417c2eb375d1a8722952bc82f17346b888",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-FLUCTUATION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:34f2d7bc8ea53b183a8e4d241b7cdfc48ae20fc34ae638c17b3b373b437b2c00",
+    "prediction_seal_hash": "sha256:e566e687034efbf79023cab6b4b624550cb5c799f9d81dd93276b9da8e1a9146",
+    "registered_target_identity_hash": "sha256:f86c4527c8749ce9739044f2c45f1c21dea1286beca081f070640aebeee4fe7f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:709e192a78d39bdca8607f068dc601c14ef87a955ea1a4333a6737a782aa914e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1018628409f455d8d475562031fbe08345c74b74652c2d2532dfa4f754b2164f"
+}

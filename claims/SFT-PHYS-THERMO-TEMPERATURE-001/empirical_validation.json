@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-TEMPERATURE-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9da40bb5a0f58156233ec27dead3917a14bccd70e06254f74eefeb17e9cba40e",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:e7f04de4252891257ea2232f95b54ee8a44af79f7d9bca63acf13abf530e1209",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4f486e33d5faa7241113ed986696c69955b986cffd59e2c4f477e9cfb41feb99",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-TEMPERATURE-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8ea0574ae7dfa1bb6ef72f17605a3e134d2ca185fc8064d805bd15022f0dfc40",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:6b2a6451c7e5e16538cd681beaf848222bc3c400f7618d64a2721f0c46896f3c",
+    "prediction_seal_hash": "sha256:f445e3e818a21664a1edcf8a04455d88de24e777836ae4f354efffb982fa96b0",
+    "program_hash": "sha256:9e699bb3ef1c726565c3528ca7ed14c5c51c5441e0cbbb9908992fff8551ae6b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:dbbc9dd36fc16304849542551be4795cc5f8db845b3be60f906b73e18a831e4f",
+    "target_material_present": false,
+    "trace_hash": "sha256:b0f14019328027aab48f681b70cb1ccca06428b691da4d89b9896fa256739d6d"
+  },
+  "measurement_receipt_hash": "sha256:4d1eb98a218d275eaf351ed5538c5981c465ed13a8b3305a46873ef7f85ae315",
+  "measurements": [
+    "temperature-1: predicted exact-thermal-order-carrier; observed exact-thermal-order-carrier; exact match True",
+    "temperature-2: predicted exact-thermal-order-carrier; observed exact-thermal-order-carrier; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:4de3c72f269ec8861d9837098926011741d57af35c2ed25db40ef5ab0fde6f87",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-TEMPERATURE-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:9da40bb5a0f58156233ec27dead3917a14bccd70e06254f74eefeb17e9cba40e",
+    "prediction_seal_hash": "sha256:f445e3e818a21664a1edcf8a04455d88de24e777836ae4f354efffb982fa96b0",
+    "registered_target_identity_hash": "sha256:dbbc9dd36fc16304849542551be4795cc5f8db845b3be60f906b73e18a831e4f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a2ea0cea3755a83e2069aec2ebb56eef2e2145f9677bad98f9edf5c3e293ee05"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:3740214d264d8442af6b2e386567eaa01e64fad19b15ae07c7984aac0cac2c33"
+}

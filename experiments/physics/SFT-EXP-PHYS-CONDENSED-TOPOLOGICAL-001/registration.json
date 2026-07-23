@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-CONDENSED-TOPOLOGICAL-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-CONDENSED-TOPOLOGICAL-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:718e7f536e2e5ac8d5e44a7d0686814b546a2b5f64ad597f87983bec938df99f"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology snapshot sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:4d5456a25032b41ed95e8f37e84a7f78426303df97f8d9dfb12302e292a91043",
+    "evaluator_id": "SFT-EXP-PHYS-CONDENSED-TOPOLOGICAL-001-post-seal-evaluator",
+    "falsification_condition": "The collective-matter law is falsified if a committed external row lacks the sealed support/transfer/ordering structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-CONDENSED-TOPOLOGICAL-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6",
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "source_uri": "https://www.nist.gov/srd"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete cell support, carrier content, adjacency/transfer, observation scale, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:01899e4cc57ecd48c0974de22d63c9d55933cded23cd8c5de1a948cc317abf55",
+      "sha256:c5032f13890f8ff636bee2b30cae411ec7aa816f514cf50915d8ea7a85c8bae7",
+      "sha256:39a3a043ed4e4f1d6a28971aa7c12dc68daa384efb7a64d916dfcd209c6e2656",
+      "sha256:049c05ff331b479000ba824a46aaa7a09983a6f64dfbf7ab3573a23131469834",
+      "sha256:59b92b9c6da018205fc793bd14feee755f4532011b6e83b850fbbc75d5061ed5"
+    ],
+    "exact_domain": "All finite collective forms generated from exact cells, adjacency, content/support ratios, local transfer, recurrence and observation quotients without importing a continuum field equation or fitted constitutive law.",
+    "relation_hash": "sha256:e7385626929a0503c3f8bbaee107deaa80b77e87f2036b2c10819f5bb6f521ca",
+    "statement": "Topological collective order is invariance of the global Fold path class under all connectivity-preserving local transformations.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:153c02ee3c1b0a0aecbd73c17b0bb4834435164447953dd2a9a2499e44106af2",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-CONDENSED-TOPOLOGICAL-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:9a285ad596bfbaca1726082f14acb5c2c90777caa3392c4a78c00b4d0dd5c409",
+    "program_id": "SFT-EXP-PHYS-CONDENSED-TOPOLOGICAL-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:390626c4aeca820917770f96474bb238b9cbbef4ce2a8fd969e62b08b1ba868b",
+    "experiments/external_sources/physics/snapshots/nist-standard-reference-data.html": "sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "target_id": "condensed-topological-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "target_id": "condensed-topological-2"
+    }
+  ]
+}

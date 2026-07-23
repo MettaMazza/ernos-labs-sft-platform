@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-COSMO-REDSHIFT-001",
+  "data_source_ids": [
+    "GWOSC-GW231123-135430-V3-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:109d10394c074fe1b1bc63fa3a760969b9c8c4f5e0bf122f99c3f94978ffe76a",
+  "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6fedf4242f76a740ce399eb929ed0d161280c0a474ee5b6e175fadce7f09a418",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:c10fb2af5e30d8ffbcfa5fa0b92b9c9f92b636dad4e48c4d6a5cb0d2fa49d464",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-COSMO-REDSHIFT-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6ff47570a4edf5f8a7a41353a578f82c742b5da52374545d2642293394c13194",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:19b3abd411fa1888592afd6eef91f3d0ffdfb921f896f77be0f8adbd95514623",
+    "prediction_seal_hash": "sha256:bcad2a41629a7eca5468ef737b419896e166a0f6501a9808c2006fc51094fa2b",
+    "program_hash": "sha256:6952dd826242e0bd6a419ff591a2dff6a4e3872d514c030b8d561b8bf2fcf4c8",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:78693bd8842be78505f53970878d7baefef16ca73bfb3948f07933290b63cde9",
+    "target_material_present": false,
+    "trace_hash": "sha256:40e4bde8d7113c45c1419b42d33f825c2b69f472441f829a17dcb34c1c21b643"
+  },
+  "measurement_receipt_hash": "sha256:7371810eb276fce1cc21e2901b8055a3c0e48f0833584758695a0ea1cc33d296",
+  "measurements": [
+    "redshift-1: predicted cosmological-redshift-relation; observed cosmological-redshift-relation; exact match True",
+    "redshift-2: predicted cosmological-redshift-relation; observed cosmological-redshift-relation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:930f8df1cee6fff2559c714f23b4e11d6ce026920dd1e5140611801573e79674",
+    "custodian_id": "SFT-EXP-PHYS-COSMO-REDSHIFT-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:109d10394c074fe1b1bc63fa3a760969b9c8c4f5e0bf122f99c3f94978ffe76a",
+    "prediction_seal_hash": "sha256:bcad2a41629a7eca5468ef737b419896e166a0f6501a9808c2006fc51094fa2b",
+    "registered_target_identity_hash": "sha256:78693bd8842be78505f53970878d7baefef16ca73bfb3948f07933290b63cde9",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3660695ebf4b3590a107bc2aa41fada15e8083d1b1e5bb0ce2762441b1ac2fce"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:60131c2b825f16bb397f042a42440edb9c14ad3c4085e97db361d03983166874"
+}

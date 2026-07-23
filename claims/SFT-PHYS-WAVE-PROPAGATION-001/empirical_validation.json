@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-WAVE-PROPAGATION-001",
+  "data_source_ids": [
+    "NIST-ASD-5.12"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:1b7fd8b5bc964e66df0583203e665617241ffdafc313a02534bb25b81ef87f07",
+  "falsification_condition": "The wave law is falsified if any committed NIST spectral/transition row lacks the predicted recurrence or propagation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:66632297b37d6eb268dde1190e813653f9b1b5bd6c23b7901e4dffbedc221fc1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:93c60cc9c5c365542a3eae20bbe9ff32f8124609a72dd90861e37b64b17f34c8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-WAVE-PROPAGATION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2840f376ad3c208d4f05d93bae66bd545b55aff767b7ee17254137e36ef7e98f",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:4ce63882b420adbdbcb92a3f52873c39fe4b60c8322ceb6559d7349eb2faac01",
+    "prediction_seal_hash": "sha256:01ec462dff1f06ac733a27651bec114e39e78c35d9a8888bb9a66f4052d5e5a6",
+    "program_hash": "sha256:d0eae7b5722b9e81716a97a0c2726feb3aaa662add6ac430eec8ccbe887fabf8",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:43ca657e96a63ef4bdfe60a32f0ba079ae89a8f0ebeca2a865bdaa3d66909dec",
+    "target_material_present": false,
+    "trace_hash": "sha256:b4e3d91d5c821f9c8b4a5bcc4fd73f1c0dbd05f116417f5f64346dc158090ae3"
+  },
+  "measurement_receipt_hash": "sha256:ecbdf53b4616a61a417ab3a833b22defe0381ea259b331f5795cf2c77d663f00",
+  "measurements": [
+    "propagation-1: predicted adjacent-wave-propagation; observed adjacent-wave-propagation; exact match True",
+    "propagation-2: predicted adjacent-wave-propagation; observed adjacent-wave-propagation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:01b129f8343c2016bd0a36e1f6b06d2063af396859775dca2451e6e4d3a81368",
+    "custodian_id": "SFT-EXP-PHYS-WAVE-PROPAGATION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:1b7fd8b5bc964e66df0583203e665617241ffdafc313a02534bb25b81ef87f07",
+    "prediction_seal_hash": "sha256:01ec462dff1f06ac733a27651bec114e39e78c35d9a8888bb9a66f4052d5e5a6",
+    "registered_target_identity_hash": "sha256:43ca657e96a63ef4bdfe60a32f0ba079ae89a8f0ebeca2a865bdaa3d66909dec",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:6c5fa76e4976b250dec2901386039c1828c8d30efaa806a83e8ac68616a568f6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d6ac3a6995197c0391122fe470977d800b160fc7a1e54abffe23648d1a188d9f"
+}

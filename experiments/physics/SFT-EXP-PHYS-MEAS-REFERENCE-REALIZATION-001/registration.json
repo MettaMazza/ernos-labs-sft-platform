@@ -1,0 +1,137 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-MEAS-REFERENCE-REALIZATION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-MEAS-REFERENCE-REALIZATION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:25d3bb2d7f22938fc9af73b5cf3e29816a276d571aa9894b676dad568a0a6f73"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "BIPM SI Brochure 9th edition, update 2026; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:3938d3fb457281bf05933820cd5938dc8e87a6359ca086e35b8e436e6b2f91eb",
+    "evaluator_id": "SFT-EXP-PHYS-MEAS-REFERENCE-REALIZATION-001-post-seal-evaluator",
+    "falsification_condition": "The claim is falsified within this registered standards boundary if any committed BIPM target row does not exhibit the predicted structural label, if any row is omitted, or if the tampered control is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-MEAS-REFERENCE-REALIZATION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Bureau International des Poids et Mesures",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:5442eea2c680caf77a9d96879205a97f57c7c270b98a0bd0126c18fefe47e02c",
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "source_uri": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete product of carrier, relation, provenance, prediction access, measurement record, row retention, finite generality and extra-rule forms.",
+    "dependency_hashes": [
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:16406a77c8769e1d00f95687f66c4d31bae7fd16bc2074f888d937d2eb40cf73",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:8dee2dbe80704dc3d4e614d653b7ba476ce19c311f000d8a20eb95a4bb7d3e27",
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa",
+      "sha256:0136249d1d78c58e10d87de6228b9e56a4350a6e2f56e0ef5b0d891e55bde537"
+    ],
+    "exact_domain": "All measurement relations assembled from admitted Fold distinctions, exact reference pairing, held observation records, target-inaccessible execution and finite generated support.",
+    "relation_hash": "sha256:e1287fae17bcdea31e2dee972ce2486883a01e94098187c770465ec77654b4b0",
+    "statement": "Reference realization is a complete finite operational trace from the held definition through each comparison to the observed record.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:04bcee31e552449536e94274b30e4a160ecb6726e40d943100949ea8cc0a2d7c",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-MEAS-REFERENCE-REALIZATION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:734bf21b1994b648f345295bcbd58b70adc2f037556bbf766912c3ec9aef9e36",
+    "program_id": "SFT-EXP-PHYS-MEAS-REFERENCE-REALIZATION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:5b2699c8162bb377b1302ff528d20bda35a75b9f8ccd503dc761eaea95307eeb",
+    "experiments/external_sources/physics/snapshots/bipm-si-brochure-9-en.pdf": "sha256:5442eea2c680caf77a9d96879205a97f57c7c270b98a0bd0126c18fefe47e02c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "target_id": "reference-realization-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BIPM-SI-BROCHURE-9-2026",
+      "target_id": "reference-realization-2"
+    }
+  ]
+}

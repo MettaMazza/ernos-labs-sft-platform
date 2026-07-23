@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FLUID-CONSERVATION-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:185405144e19af9f6d5fc7699179a89efeb393566c13d2ea6e55c73a81dc37ac",
+  "falsification_condition": "The collective-matter law is falsified if a committed external row lacks the sealed support/transfer/ordering structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:09249dd3f9c13a897149dee7901f09c2f2da5993128f52f051f8f73eab8487d0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:2c58229b36345f08545c522c00ba0ac64aa18af0162111ee70aae817e3c6c3d8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FLUID-CONSERVATION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e79ccf6465fe900e246b3e972f8bb6d926a1f29eaa35b5c13343f813ac190c65",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:bb4f5233fee226fbac38b2309839f6823c4e4fa1c0147c59bba84c752f1bc5f7",
+    "prediction_seal_hash": "sha256:15126b7c93d12ac6cde88fab7622dcc9c08774502c37075a947122a4ffd29faf",
+    "program_hash": "sha256:e65aad602436e019adc3b23425e06a669605bf203bf710ea185c140cc5bef7e6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7e586a30e1d4084c1141ef37a4784977301202183ca80ce497edabb833491007",
+    "target_material_present": false,
+    "trace_hash": "sha256:7e4931f381b2faa1ce82838f4f7d8381aa687538aea2f15463f95ef865ef8248"
+  },
+  "measurement_receipt_hash": "sha256:c85a4e2ddd3f216213e75a4418da06e63cf1c171b339770422c9d9434fed12d9",
+  "measurements": [
+    "fluid-conservation-1: predicted fluid-flow-conservation; observed fluid-flow-conservation; exact match True",
+    "fluid-conservation-2: predicted fluid-flow-conservation; observed fluid-flow-conservation; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7b9e0b55f0b2c11511fdeb9b5007bcdfb3aac3df2dee9c83decb8850e22f717e",
+    "custodian_id": "SFT-EXP-PHYS-FLUID-CONSERVATION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:185405144e19af9f6d5fc7699179a89efeb393566c13d2ea6e55c73a81dc37ac",
+    "prediction_seal_hash": "sha256:15126b7c93d12ac6cde88fab7622dcc9c08774502c37075a947122a4ffd29faf",
+    "registered_target_identity_hash": "sha256:7e586a30e1d4084c1141ef37a4784977301202183ca80ce497edabb833491007",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7b30e8cc740e22db9136c4102bd61cff934b10e3b4c6f71c5fabe37a50438b0c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:221074ca4b603a432a39e472f4924f258ef2628d4f0ee8442dc47c05e977bc5c"
+}

@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FLUID-VISCOSITY-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:e566572fe837b9b8aca27b8528255c96f12291aae28b0de99f08d438beb8cc34",
+  "falsification_condition": "The collective-matter law is falsified if a committed external row lacks the sealed support/transfer/ordering structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cba153e98c6f7d6301365a14864a9b0fb1244a2adcf23514a8f6f93eeb2fa0a1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:852c941bb4df573488932490048e94a5a7b7e58f1e9c8b1f809e27f2e203b7d2",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FLUID-VISCOSITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:1b4d68a729493123bc115f7c78c45401a7af74ad53ed3f1c23bc4702dafc0780",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c3a4489cd46cceb610ab6f93a7468a32526a9a7f60262d30ffc22b57c735df2b",
+    "prediction_seal_hash": "sha256:1ebbc86beb51cd1b81af854a57f732a98d70567d350c2247bf20c0087a24ddd4",
+    "program_hash": "sha256:2740cade69a6a64aadace2a5c60059cf8cee72f732cdeb9f5160ddbb64701457",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7a4da8dfaa1059e06576b5b882d8c38146c0f37d1e36c997b7256d8f14e02da9",
+    "target_material_present": false,
+    "trace_hash": "sha256:bf602566425145217d9f366d6a851f4788a61c9bb571066476ff6edd371ab644"
+  },
+  "measurement_receipt_hash": "sha256:0dd046ca2d7e3d78f77c993ead65e6947505c7971b1647557a49f35914f8990b",
+  "measurements": [
+    "fluid-viscosity-1: predicted viscous-momentum-transport; observed viscous-momentum-transport; exact match True",
+    "fluid-viscosity-2: predicted viscous-momentum-transport; observed viscous-momentum-transport; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:90c414b23a8a13ecc14409cb3a656aaede90dc601c787ececbeefa0db0166fa8",
+    "custodian_id": "SFT-EXP-PHYS-FLUID-VISCOSITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:e566572fe837b9b8aca27b8528255c96f12291aae28b0de99f08d438beb8cc34",
+    "prediction_seal_hash": "sha256:1ebbc86beb51cd1b81af854a57f732a98d70567d350c2247bf20c0087a24ddd4",
+    "registered_target_identity_hash": "sha256:7a4da8dfaa1059e06576b5b882d8c38146c0f37d1e36c997b7256d8f14e02da9",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:5922590dea3a2d4af25bd0ec6ec9d784a9f247da0686e9caae61646e402353cd"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1992dc71f303b604c938e0e775750e54770e9f9b7e55124a58b7be68b74cee30"
+}

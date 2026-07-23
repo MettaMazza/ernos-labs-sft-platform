@@ -55,15 +55,20 @@ published at DOI `10.5281/zenodo.21518311` and DOI
 
 ## Phase E - physical sciences
 
-- Mechanics, fields and spacetime.
-- Thermodynamics and statistical structure.
-- Quantum physical correspondence.
-- Gravitation and cosmology.
-- Matter, particles and interactions.
-- Waves, fluids, plasmas and condensed structures.
+- [x] Measurement and metrology.
+- [x] Mechanics, interactions, fields and waves.
+- [x] Thermodynamics and statistical structure.
+- [x] Quantum physical correspondence.
+- [x] Matter, particles and nuclei.
+- [x] Spacetime and gravitation.
+- [x] Fluids, plasmas and condensed structures.
+- [x] Physics-to-Astronomy/Cosmology boundary.
 
-Every natural-science claim follows the empirical constitution where
-observation is required.
+The Physics inventory is frozen complete with 132 required and eight
+supplemental admitted claims, 35,840 generated candidates and fourteen exact
+measured-value correspondences. Its exhaustive 331-page paper and evidence
+release are published at DOI `10.5281/zenodo.21520881`. Every natural-science
+claim follows the empirical constitution where observation is required.
 
 ## Phase F - chemistry, materials and life
 

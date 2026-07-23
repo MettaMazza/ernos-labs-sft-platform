@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:3dbc9f6f5a6c90c83c6f9961468c0fb8a8449fe4726a9c02363c86e158dadf0c"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center snapshot sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:709e2824a06cfe6c7f9cbcd435c45a7f475562d76f62d4ee4a23e73f880a6e88",
+    "evaluator_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-post-seal-evaluator",
+    "falsification_condition": "The field claim is falsified if any committed external row lacks the predicted source/response or propagation structure, any row is omitted, or the tampered unfavorable row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c",
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "source_uri": "https://gwosc.org/api/v2/catalogs"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate every field carrier, source-response relation, provenance, target access, measurement record, row policy, successor and extra-rule form.",
+    "dependency_hashes": [
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:b19327e35ddf2ba77ba66e86ab577809eaab9df505aff6d63dd406ceaefadd5d",
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:5d70b520609740008aeb4af84da2f684b20940a0e8717fc0ea8ce1d5eef719ff"
+    ],
+    "exact_domain": "All finite source/response and propagation relations generated from Fold support, exact reference ratios, held orientation and closed transfer without an imported field equation.",
+    "relation_hash": "sha256:47a59015a251c8e9e9e8aa465ba0e208c8248955e547a50a1b53dd877b26a8ce",
+    "statement": "Weak relational gravitation is universal inertial-source response transported over generated support and observed as a free-motion change.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:bafb06db1b824958210eaeae2d63cdd8f0e47f6e96fbe7a17ee3412b54f97a64",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:2e4039841942b1b9ab66772bc7468a579da45f3b4756b8edd35bd1987d99d643",
+    "program_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:ea2ab964f00f9298af407206ebceb9aec9308afaa3bd709efe206f78f56cd176",
+    "experiments/external_sources/physics/snapshots/gwosc-v2-catalogs.json": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "gravitational-interaction-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "gravitational-interaction-2"
+    }
+  ]
+}

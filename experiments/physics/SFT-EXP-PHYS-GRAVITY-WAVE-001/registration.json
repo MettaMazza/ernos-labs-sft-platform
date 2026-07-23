@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-GRAVITY-WAVE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-GRAVITY-WAVE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:a704d8e8b7be47de2075789df15451a6ec45abda1e8b2a816b75f2718b8dd235"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center snapshot sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:80122554d9ce00f6839c85fd1e761485accf0256b314aba9c5acaa7264cbcceb",
+    "evaluator_id": "SFT-EXP-PHYS-GRAVITY-WAVE-001-post-seal-evaluator",
+    "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-GRAVITY-WAVE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c",
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "source_uri": "https://gwosc.org/api/v2/catalogs"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete event, causal-path, reference-frame, source/response, observation, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:30eff048d38da108f57dacb04d4d58a5405314cc687a752ee9bb23dc971f82fb",
+      "sha256:537ad43aeca3d32a5f80d1faecee830a2ca5005f0f98a9eb6d281751b0e71282",
+      "sha256:933e76c6f932c667da0bc1f2b856031dfdf3282f40731e71a9912b365ea59545",
+      "sha256:fbcad2f1b54389002f0d4353c0e881d6819f1ac966e6743fffa1b94ed6c01ec8",
+      "sha256:df21f0c010dcccd1c7e612e64069d8cf71edf192f5934bd6c71156f77063cdff",
+      "sha256:d56f18ac62ef8e52a044fdd41c5e24a61a3c5cb4b1101a0288e34ba5a9c5343c",
+      "sha256:874bd3b828838d7c5debafe8b23fd2258c2c6fe3b6984e992e769ecfdf338ed3"
+    ],
+    "exact_domain": "All finite spacetime and gravitational forms generated from exact event words, adjacent propagation, held orientation, recurrence clocks and complete source-bound relations without imported coordinates or continuum metric equations.",
+    "relation_hash": "sha256:d24be7487307685d986ecd4089a4a652f1b62d73a58a2abbc12efeabb953f2dc",
+    "statement": "Gravitational waves are limiting-speed source-curvature recurrences carrying energy, momentum and polarization.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3e6dbd5e15376975acdb0102a6429b9afbfb2a97575a1d258291716a6fd7accd",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-GRAVITY-WAVE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:9cefcab8a0203b4ac4c70bfb5823e165e6d2eede3998ed93dbdafc26f4a1c6d0",
+    "program_id": "SFT-EXP-PHYS-GRAVITY-WAVE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:c701bcd2380c7111cc8b8a33920f5d01fc8d38d3491f945d386c38a9d21c93d2",
+    "experiments/external_sources/physics/snapshots/gwosc-v2-catalogs.json": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "gravity-wave-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "gravity-wave-2"
+    }
+  ]
+}

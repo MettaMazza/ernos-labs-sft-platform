@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-CONDENSED-LATTICE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-CONDENSED-LATTICE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:f37c6a592969902bbb42ba8d2c1574ade16f55e198480c75678c43c8c56f4e85"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology snapshot sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:698e910f0d46eadf75760f31748c9ea4788db9e67e207f72e56dd4439c6ff333",
+    "evaluator_id": "SFT-EXP-PHYS-CONDENSED-LATTICE-001-post-seal-evaluator",
+    "falsification_condition": "The collective-matter law is falsified if a committed external row lacks the sealed support/transfer/ordering structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-CONDENSED-LATTICE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6",
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "source_uri": "https://www.nist.gov/srd"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete cell support, carrier content, adjacency/transfer, observation scale, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:01899e4cc57ecd48c0974de22d63c9d55933cded23cd8c5de1a948cc317abf55",
+      "sha256:c5032f13890f8ff636bee2b30cae411ec7aa816f514cf50915d8ea7a85c8bae7",
+      "sha256:39a3a043ed4e4f1d6a28971aa7c12dc68daa384efb7a64d916dfcd209c6e2656",
+      "sha256:049c05ff331b479000ba824a46aaa7a09983a6f64dfbf7ab3573a23131469834",
+      "sha256:2f8a37f354c1d69f195437c1f0afaf8025d86d1bc84127ecfda74915c2ae4322"
+    ],
+    "exact_domain": "All finite collective forms generated from exact cells, adjacency, content/support ratios, local transfer, recurrence and observation quotients without importing a continuum field equation or fitted constitutive law.",
+    "relation_hash": "sha256:7db27c9cc82ebdef021c813b06b23a09a64c381c4869b50263295d4bb3237fa8",
+    "statement": "Condensed lattice order is translation recurrence of a finite Fold adjacency network and excitation is its propagated labelled deviation.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:73acda5b1d0c928427bfa71d5c3156d324e82ecb4d4cf5069b3a02d152861f6f",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-CONDENSED-LATTICE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:aed9fc4ed3ae296a677278ea1b7cc42b262dce4a8c3588fb7e5237828595dcd5",
+    "program_id": "SFT-EXP-PHYS-CONDENSED-LATTICE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:85793da9402244b0a1c72441eb68a5b9a1f6b0d99728b97c21a851d965fc80ac",
+    "experiments/external_sources/physics/snapshots/nist-standard-reference-data.html": "sha256:ef45e92ec84987dd258eefdd30a4565989dba4adfd13a2fcbc34f6ffcb8364d6"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "target_id": "condensed-lattice-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-SRD-INDEX-2026-07-23",
+      "target_id": "condensed-lattice-2"
+    }
+  ]
+}

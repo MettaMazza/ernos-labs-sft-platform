@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FLUID-PRESSURE-STRESS-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bed2e370154dd4d2e932be0715b553b38da0b0584ada49c5022e4c5f1723a1ae",
+  "falsification_condition": "The collective-matter law is falsified if a committed external row lacks the sealed support/transfer/ordering structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:993024f8b77bc093509ed733a0de02aa6b13b8919c957c8cc4a5161ba787117c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:13384cb11d11b175d3986589a16bc6ab4d44ae362cf9a4a81e0f00b4d558a54e",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FLUID-PRESSURE-STRESS-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d298622a8c719e266826bb0add2e2ea2239f5b578f6bed463a71245592be6243",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7a7326c6d2ca4b14bd221b46446ef734900566812aeba53acba73edb3d56d468",
+    "prediction_seal_hash": "sha256:93ff0f9e57a31bae21b251166b579a9aca0c697ecf5daba57265fcce7f7850fc",
+    "program_hash": "sha256:9a29fd82941d113702d3efb395312d236f15d82502a5d82c92e70e48906898c0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8e7948baa952b29fcc2d6e788767178b4319dbb789500195225ff8bb6c7f4302",
+    "target_material_present": false,
+    "trace_hash": "sha256:9044624edb61f7415a7fa1b17acbc8d3281d4e79faccb7e57f45fb319bdeda48"
+  },
+  "measurement_receipt_hash": "sha256:452d42fbae15faaae0856ab60e86b7c067f1e7d0e29a7d3e366e5fea07c856af",
+  "measurements": [
+    "fluid-pressure-stress-1: predicted fluid-pressure-stress; observed fluid-pressure-stress; exact match True",
+    "fluid-pressure-stress-2: predicted fluid-pressure-stress; observed fluid-pressure-stress; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d86b1066ca74dc7a0879d484992d89103cb1a38c19d216a8af5c15df019597b9",
+    "custodian_id": "SFT-EXP-PHYS-FLUID-PRESSURE-STRESS-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:bed2e370154dd4d2e932be0715b553b38da0b0584ada49c5022e4c5f1723a1ae",
+    "prediction_seal_hash": "sha256:93ff0f9e57a31bae21b251166b579a9aca0c697ecf5daba57265fcce7f7850fc",
+    "registered_target_identity_hash": "sha256:8e7948baa952b29fcc2d6e788767178b4319dbb789500195225ff8bb6c7f4302",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:78669fbf99ad46268b47f62750de9fa983fdf612afd0af521c9b23ff7e4e08bd"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:ac4f7c24a99afa7c33f18e744fc5afbf29b6ba686c32fdc2cbd5c72c17e6576f"
+}

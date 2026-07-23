@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-FISSION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-FISSION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:c99fa489c18454487b2a2dc78edec416fcb3aa97468f83476100abf64f8c45de"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "International Atomic Energy Agency Nuclear Data Section snapshot sha256:16b8187ef7ef9024914aa7b54b6af07928a2f1d3bb97a6999f7563fa676ccbd9; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:fb47488f97ad110b28fe007e0f4959285d017da7ceefcf82a0c6ee8b697bb604",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-FISSION-001-post-seal-evaluator",
+    "falsification_condition": "The material law is falsified if a committed external row lacks the sealed constituent/composition/conservation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-FISSION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Atomic Energy Agency Nuclear Data Section",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:16b8187ef7ef9024914aa7b54b6af07928a2f1d3bb97a6999f7563fa676ccbd9",
+      "source_id": "IAEA-ENDF-CURRENT-2026-07-23",
+      "source_uri": "https://www-nds.iaea.org/endf/"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete constituent, composition/exchange, conserved-label, transition-channel, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:141e309ecfe6c82094d57a22b8da600bc0ddfbdada761b4a97f2bfff0d172f49",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:0fd6aaef8f1f1d3d7955b3cf1b94d6de6bdaa126976fbed4be1c6145461559b4",
+      "sha256:fe22a7367aa5d60f17ce1d33d2c76a8e62f13a8604283ca53bd79634e3cc166b"
+    ],
+    "exact_domain": "All finite material forms generated from exact physical Fold words, held orientations, closed transfer, phase recurrence and complete observation support without imported particle taxonomy or fitted coupling.",
+    "relation_hash": "sha256:43d6adbc122ed2e9521cd994f733480b10dd210ebc477bc031ab2de4d38055ca",
+    "statement": "Fission is conserved decomposition of one bound nuclear Fold word into multiple recurrent product words and released carriers.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3fed9b1ef97f4b424c93d47b8f4587e26fac3978c24b0aafcaaedbbf848441c8",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-FISSION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:c7cc999efbf717b7087ee673e5b6e40a7665ac43a33c0e36b36216524e07f35c",
+    "program_id": "SFT-EXP-PHYS-NUCLEAR-FISSION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:63515e12a2e478dc8f0afc6554146b7db9868d283d24afd3b1121e875919f4be",
+    "experiments/external_sources/physics/snapshots/iaea-endf-index.html": "sha256:16b8187ef7ef9024914aa7b54b6af07928a2f1d3bb97a6999f7563fa676ccbd9"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAEA-ENDF-CURRENT-2026-07-23",
+      "target_id": "nuclear-fission-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAEA-ENDF-CURRENT-2026-07-23",
+      "target_id": "nuclear-fission-2"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001",
+  "data_source_ids": [
+    "GWOSC-V2-CATALOGS-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ea2ab964f00f9298af407206ebceb9aec9308afaa3bd709efe206f78f56cd176",
+  "falsification_condition": "The field claim is falsified if any committed external row lacks the predicted source/response or propagation structure, any row is omitted, or the tampered unfavorable row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a230a0bba51fb5940c2035dfd7628114f8649062910724506297f4627960e785",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:709e2824a06cfe6c7f9cbcd435c45a7f475562d76f62d4ee4a23e73f880a6e88",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7a68e45c09a993468d67c309ed85a6e1dd84cf35c77f8e02835fbcd7586e143d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ef000c12d89a2d1439a14a8a7dc1f09074c5b30f482b99253c379ebbe6d7995d",
+    "prediction_seal_hash": "sha256:774cbf6cad98cfdca273fbf922e492c2798a7b75f871e407d83b8a8770b40f74",
+    "program_hash": "sha256:75ba1de6e40c5f90fbfab5ea21d6130a1d89320b05cbb5d7d9e819b50b292232",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ef93478a10b902d55cc665a55c8e0fd78748037aef46267c91a22732bd01b1c1",
+    "target_material_present": false,
+    "trace_hash": "sha256:231f1e12ad2f63a038e9a891af5a10902cf81b4e544a72634856abdeaea0d1ac"
+  },
+  "measurement_receipt_hash": "sha256:927062d762861272cdd1cbceacf880e129da86595b727c481e7c1c23c1ea5924",
+  "measurements": [
+    "gravitational-interaction-1: predicted universal-inertial-gravitational-response; observed universal-inertial-gravitational-response; exact match True",
+    "gravitational-interaction-2: predicted universal-inertial-gravitational-response; observed universal-inertial-gravitational-response; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:a3ced0e0bd48469617d4df7b261050ba56cd256bbc3b93a020887649c25f8b20",
+    "custodian_id": "SFT-EXP-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:ea2ab964f00f9298af407206ebceb9aec9308afaa3bd709efe206f78f56cd176",
+    "prediction_seal_hash": "sha256:774cbf6cad98cfdca273fbf922e492c2798a7b75f871e407d83b8a8770b40f74",
+    "registered_target_identity_hash": "sha256:ef93478a10b902d55cc665a55c8e0fd78748037aef46267c91a22732bd01b1c1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3ed3a53e48ae8e400449925d620ffdef68e6ecfb4f8a58462bb9f71aac227378"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:98df42a85cb0c69e1cd0d12ceab9721d463fc60730527b17e5eb9bfcdc677167"
+}

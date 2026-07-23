@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-SCATTERING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:5c420945a230b02e98d4dfa2a708774bb8984f0abebc9d5c98f193adaf32def3"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:999d57cb70e017713c5af6e41f6f7e0459044c050f9ddd56eddaba7cdb1220b6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:096cbfc59e330a05b88b0554bfa19788f10aa302e7d08849e159857d7ac7e063"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:61ca7df4431fdfa7b0090df0baab5bf4c030853e341a00f3fcb1d36be9f00886"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-KINETIC-TRANSPORT-001",
+  "data_source_ids": [
+    "IAPWS-RELEASES-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:85c6d183d3bfee5bee77b9dbc8b194f224564ea41863025cd061874a20b5fc21",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bd4b00e6c3dc34dee8920efb54c94fe0707ca3f051c04097f64f4eaad9dde8bc",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:09a9eb7d16a85f834ab0f900a3fa8f1ca6a485a875e436c676eb6ce3f4bc2be1",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-KINETIC-TRANSPORT-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0f5a2431585342fc81258d3966cf3c16be66298a5d918b5fa59b5ce2855bc193",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1d5c9f088d080966d35a48c98ad82ed90d2371784bd4b789ba03250645603694",
+    "prediction_seal_hash": "sha256:02cc41736aad34da28b854a53a56fc6c5f190ca98ed0690af24cdfd0c50a4a90",
+    "program_hash": "sha256:2d044d2135cb17a469570c15b5da53eee989c0ae93cc1286d9b7cc6790dc6dd4",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:fff3370de2cf9c57ea00b09630ee6fd367d1f8d29d15603bf8d613556519849f",
+    "target_material_present": false,
+    "trace_hash": "sha256:9cf69fc5e819e574eeddf3641b694229ef49b7aa814988943e51f583146d21d7"
+  },
+  "measurement_receipt_hash": "sha256:8e81fb917a5769ce9d1477e1fb113e43addd31d4cdd6a267e5f8a7e8b0114e98",
+  "measurements": [
+    "kinetic-transport-1: predicted finite-kinetic-transport; observed finite-kinetic-transport; exact match True",
+    "kinetic-transport-2: predicted finite-kinetic-transport; observed finite-kinetic-transport; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f9ebde4d1266eb476bf8be09200374a0ab79672ae4e591700006df918d88e4fc",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-KINETIC-TRANSPORT-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:85c6d183d3bfee5bee77b9dbc8b194f224564ea41863025cd061874a20b5fc21",
+    "prediction_seal_hash": "sha256:02cc41736aad34da28b854a53a56fc6c5f190ca98ed0690af24cdfd0c50a4a90",
+    "registered_target_identity_hash": "sha256:fff3370de2cf9c57ea00b09630ee6fd367d1f8d29d15603bf8d613556519849f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:254217d618f80106bbf257eb6cfc99aab5527e86784e0885c4d979c28bf72e81"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:970188e713877d4ca242224e6ee4bdbd89d64d5cdcfd9a024fa03e9b76183a55"
+}

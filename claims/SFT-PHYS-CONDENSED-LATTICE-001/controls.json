@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-CONDENSED-LATTICE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:b1cc8064129d3557b22b833afa9a83a704ab693dea418f8b40835f3df2f3d8ba"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8ed9ef2406b9bd6616e7f7cdd01a97adc21e8c5ed9bf668b5b67fa9f4f4e4017"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:07bab574e37e3d080d2079c1f26a7ab081f926d4f752ade2a505022ad9528967"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:4013bffdbbb665a8dabe7e065bb971764b0c102b235cc83180695b542cc35eae"
+    }
+  ]
+}

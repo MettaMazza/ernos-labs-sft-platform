@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ernos-labs.example/schemas/sft-fold-program-v3.json",
+  "title": "SFT v3 capability-closed Fold prediction program",
+  "type": "object",
+  "required": ["schema", "program_id", "instructions"],
+  "properties": {
+    "schema": {"const": "sft-v3-fold-program/1"},
+    "program_id": {"type": "string", "minLength": 1},
+    "instructions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["opcode", "destination", "arguments"],
+        "properties": {
+          "opcode": {
+            "enum": [
+              "input", "empty_one", "label", "count", "ratio", "word",
+              "pair", "table", "lookup", "junction", "product",
+              "quotient", "same", "assert_same", "emit"
+            ]
+          },
+          "destination": {"type": "string"},
+          "arguments": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

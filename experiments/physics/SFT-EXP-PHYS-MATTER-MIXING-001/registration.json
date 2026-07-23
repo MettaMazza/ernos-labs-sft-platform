@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-MATTER-MIXING-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-MATTER-MIXING-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:0fb135bf5f1a51bdfbc0a5b035c4963f67b1f5922e4034be2b1299cc63bf2361"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Particle Data Group, Lawrence Berkeley National Laboratory snapshot sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:924967e4db28889f3faa3af80a2e9b38aefff99439fb628c4c1058f5eacb44ab",
+    "evaluator_id": "SFT-EXP-PHYS-MATTER-MIXING-001-post-seal-evaluator",
+    "falsification_condition": "The material law is falsified if a committed external row lacks the sealed constituent/composition/conservation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-MATTER-MIXING-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group, Lawrence Berkeley National Laboratory",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56",
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/contents_tables.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete constituent, composition/exchange, conserved-label, transition-channel, provenance, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:141e309ecfe6c82094d57a22b8da600bc0ddfbdada761b4a97f2bfff0d172f49",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:0fd6aaef8f1f1d3d7955b3cf1b94d6de6bdaa126976fbed4be1c6145461559b4",
+      "sha256:67e515415bf3ae85184860d7831b991a01b735ad34372a44d7f79565ff0cb6df"
+    ],
+    "exact_domain": "All finite material forms generated from exact physical Fold words, held orientations, closed transfer, phase recurrence and complete observation support without imported particle taxonomy or fitted coupling.",
+    "relation_hash": "sha256:e9645092a3f6d1ffefc13f0212cd376bcf0edafd1903cf17bf0738b084d98b1d",
+    "statement": "Particle mixing is cyclic recurrence of one finite support viewed through nonaligned preparation and interaction partitions.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:af74c3bccd5e6ccfc387cf3a7c9da94a38722cc86147aeaca1d9c4c7a70d76c3",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-MATTER-MIXING-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:06159c92398315341f45a86ded012958b3017d1ff12abda4f8d12c68659908fa",
+    "program_id": "SFT-EXP-PHYS-MATTER-MIXING-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:bfba6e0c00d737d4bb2c48eaaf6cf688dde97e1d38035ee06aee31b148e75c42",
+    "experiments/external_sources/physics/snapshots/pdg-2025-summary-tables.html": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "matter-mixing-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "matter-mixing-2"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:57f7798b34c494250df0603f383f2e03912642d737e2cb613c231a77a5a81b65"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Particle Data Group, Lawrence Berkeley National Laboratory snapshot sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:e741c0b3442982ef416a54366b16796101928cd3ad6b6198144858b241638f8b",
+    "evaluator_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-post-seal-evaluator",
+    "falsification_condition": "The field claim is falsified if any committed external row lacks the predicted source/response or propagation structure, any row is omitted, or the tampered unfavorable row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group, Lawrence Berkeley National Laboratory",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56",
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/contents_tables.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate every field carrier, source-response relation, provenance, target access, measurement record, row policy, successor and extra-rule form.",
+    "dependency_hashes": [
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:b19327e35ddf2ba77ba66e86ab577809eaab9df505aff6d63dd406ceaefadd5d",
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:2383179e39b5923808c5c9cf55616091bf2625b63bcc21416dd4c7a05c44c3c4"
+    ],
+    "exact_domain": "All finite source/response and propagation relations generated from Fold support, exact reference ratios, held orientation and closed transfer without an imported field equation.",
+    "relation_hash": "sha256:17eab8b48d7b83d10f3ca32a00d59e782b5274f487667e59c94da8e77c6f3c59",
+    "statement": "Gauge equivalence is canonical equality of complete observable field traces under changes confined to held unobserved description labels.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:a49031cdc4789ca692587a452c5df4c252f8c4c545411ed9338fef6ec25d36ca",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:9a0bc6f823925435817d22e1ea704567a8ef32b602464ea4f7b9b6ade659f2fd",
+    "program_id": "SFT-EXP-PHYS-FIELD-GAUGE-EQUIVALENCE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:58fec8467beb8cfa69928caea8aa5d8fb98950ac7c48e0c0e0175eeeb5e02e2f",
+    "experiments/external_sources/physics/snapshots/pdg-2025-summary-tables.html": "sha256:ae10b6a7c6fefb8a6d90d35dc341d3ae8284a1e3cf2c94c656ae2e8957df4d56"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "gauge-equivalence-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-SUMMARY-TABLES",
+      "target_id": "gauge-equivalence-2"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-SPACETIME-INTERVAL-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:a271054620df26007ea85ed658befcb9c4ffc143d396cf5806837d7cb1b705b2"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants snapshot sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:92b171dcec789b64e445a0e170c3f4445d7896622f163b2160c0f596760f4912",
+    "evaluator_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-post-seal-evaluator",
+    "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete event, causal-path, reference-frame, source/response, observation, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:30eff048d38da108f57dacb04d4d58a5405314cc687a752ee9bb23dc971f82fb",
+      "sha256:537ad43aeca3d32a5f80d1faecee830a2ca5005f0f98a9eb6d281751b0e71282",
+      "sha256:933e76c6f932c667da0bc1f2b856031dfdf3282f40731e71a9912b365ea59545",
+      "sha256:fbcad2f1b54389002f0d4353c0e881d6819f1ac966e6743fffa1b94ed6c01ec8",
+      "sha256:df21f0c010dcccd1c7e612e64069d8cf71edf192f5934bd6c71156f77063cdff",
+      "sha256:d56f18ac62ef8e52a044fdd41c5e24a61a3c5cb4b1101a0288e34ba5a9c5343c",
+      "sha256:076ab5c1396b7bef1d0827049b7afb5464dfdac2c9599d70d8d936308f7d1b2a"
+    ],
+    "exact_domain": "All finite spacetime and gravitational forms generated from exact event words, adjacent propagation, held orientation, recurrence clocks and complete source-bound relations without imported coordinates or continuum metric equations.",
+    "relation_hash": "sha256:557fd6c43a35f5beb3e49b027699ed140cc85277ceafb32d46091ee4e4f1e072",
+    "statement": "Spacetime interval is the reference-invariant Fold class of exact temporal and spatial event separation.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3dbcc2f7df009b1836b80e997cb260cbdd99815ea5aa99c956bb164c8b99cb82",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:84cdbe5ac528c44181b7bc5658008ecb9807f42c524978116b2812b73247731e",
+    "program_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:28a9931b9e1a1028225198de7a0b6b2461c169b8c3e11f18bed70d244011e580",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "target_id": "spacetime-interval-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "target_id": "spacetime-interval-2"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-SPACETIME-INTERVAL-001",
+  "data_source_ids": [
+    "NIST-CODATA-2022-ALL-CONSTANTS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:28a9931b9e1a1028225198de7a0b6b2461c169b8c3e11f18bed70d244011e580",
+  "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cd342dd16ae11ba15020243d71220ed758ab08ebbb3eaefc4837e5c23613543e",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:92b171dcec789b64e445a0e170c3f4445d7896622f163b2160c0f596760f4912",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:919a8865f87410822ba113ea9a93dbd93b82f58efed088cab782bf14dc399f6c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b92957284a0d3b8092a02851d032135e673f7d7ff4fabc475626bf95e9b1d6ab",
+    "prediction_seal_hash": "sha256:6b4d6a71e38488fbf0bfc4d62b89f643ea6b5c77474386ec85331437088dbad5",
+    "program_hash": "sha256:f8a87b70a049d9b60246050fb2c593a712e71a2c2629ea2981ac28b5183c32ad",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c60c77abf4344f7953e99ef0d03ac60c05e31bbc9ae7597fb814cfaa477b5e3c",
+    "target_material_present": false,
+    "trace_hash": "sha256:e1ba7ee671ef3c5ead10d73eb395684806ad8d696e9f9942e5b8444963a6d080"
+  },
+  "measurement_receipt_hash": "sha256:e2bde2298077d8e2c5fed178ea398024d00549e3d72d24a2c05a2c66432223b8",
+  "measurements": [
+    "spacetime-interval-1: predicted invariant-spacetime-interval; observed invariant-spacetime-interval; exact match True",
+    "spacetime-interval-2: predicted invariant-spacetime-interval; observed invariant-spacetime-interval; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:54f90d96d76784160f28d4edd19d6410d0d8a7de43041662228c78b4ed6f75ce",
+    "custodian_id": "SFT-EXP-PHYS-SPACETIME-INTERVAL-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:28a9931b9e1a1028225198de7a0b6b2461c169b8c3e11f18bed70d244011e580",
+    "prediction_seal_hash": "sha256:6b4d6a71e38488fbf0bfc4d62b89f643ea6b5c77474386ec85331437088dbad5",
+    "registered_target_identity_hash": "sha256:c60c77abf4344f7953e99ef0d03ac60c05e31bbc9ae7597fb814cfaa477b5e3c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:865855c859beda58261238f0ef7ccb1331fa3ca1b97a58e56c5333e8b8cde596"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fec28317c8170661e758a9419a98c1debf2cb1ab1c4166cc27c45d6f6e79b004"
+}

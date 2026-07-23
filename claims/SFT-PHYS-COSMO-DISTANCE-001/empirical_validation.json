@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-COSMO-DISTANCE-001",
+  "data_source_ids": [
+    "GWOSC-GW231123-135430-V3-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:da1d852380530bcb0ba6f9f1a4c868ca39cc08372fb5db75d4fcd961462086cd",
+  "falsification_condition": "The cosmological-boundary law is falsified if a committed external row lacks the sealed propagation/observation relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ff57831a77dd9a7adefe215a5a1aad5f71cba62b55311bc363354fd26474fc27",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6f6f8bbef4b0fd8d461ca398c10ff493fe089c16c058f2db33603a1c947ab03b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7fa2ad33b6f59520a75064d874b222eb10b47e549692d91f3f43ca16fddf0b47",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2a87f5709f7631ca4e2d940de32ed369e5cd9650bd5b22a551edb81acbdebe96",
+    "prediction_seal_hash": "sha256:7e64cbe9ed377cb31a95c076b04042c625ef7bc229f4800e54a52d17b160ae4e",
+    "program_hash": "sha256:e64b4183b2f0111ca73065beccc1f2dd9c8b2081dfa2179df87b4d21b3e49b9a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a46e55fd62a5de127d6694958676dfa32925c04e33f72e3c06ef1777303902c8",
+    "target_material_present": false,
+    "trace_hash": "sha256:1bc6a6b14a1659e1fed0252d2ef6cc30aa7bd890e94b26ed1a0d244e10d0430d"
+  },
+  "measurement_receipt_hash": "sha256:788ac7ad1dca6ccc1703fd4c4121fc4c17eb6a02d9e96b42dcf479aa2c1b6d79",
+  "measurements": [
+    "distance-1: predicted cosmological-causal-distance; observed cosmological-causal-distance; exact match True",
+    "distance-2: predicted cosmological-causal-distance; observed cosmological-causal-distance; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:0ff4efd6aa10640c3b25a78199d855a0ff5f0dbecac776014d45a14a5c6b51d2",
+    "custodian_id": "SFT-EXP-PHYS-COSMO-DISTANCE-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:da1d852380530bcb0ba6f9f1a4c868ca39cc08372fb5db75d4fcd961462086cd",
+    "prediction_seal_hash": "sha256:7e64cbe9ed377cb31a95c076b04042c625ef7bc229f4800e54a52d17b160ae4e",
+    "registered_target_identity_hash": "sha256:a46e55fd62a5de127d6694958676dfa32925c04e33f72e3c06ef1777303902c8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:915cd516af389b4bacd524e3351d7c7f6fad2b0eacf1bcfc0de7c3b85470e284"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b81da4313a2a535edac98d00f96fd5c2d3df8d3b2c91b004eb6876774027c760"
+}

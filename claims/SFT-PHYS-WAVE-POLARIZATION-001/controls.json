@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-WAVE-POLARIZATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:41cdd4f74dea4fb6becc4f167cc10573d48f3d6f9d5ade29432ef3ea78cb1c93"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ce6994b049e729471b20447aef4c60376ee5b8704c069dacdb456903a20c7e34"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1f733f085dd0a916578c1b1caae7c363800f0c258ec6aea122c73732dc60d512"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:a9e2a076ae00e455be645d7c404747acee5880f3f5bb7674a828ebb80e500453"
+    }
+  ]
+}

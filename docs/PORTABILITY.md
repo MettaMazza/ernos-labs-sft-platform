@@ -36,8 +36,10 @@ part of the baseline route.
 Python cannot certify identical system-wide network or filesystem isolation for
 arbitrary native programs on all supported systems. The engine therefore does
 not use a boolean promise as proof of such isolation. Official prediction code
-must eventually run in the derived capability-closed Fold interpreter, whose
-language has no operation for those resources.
+must run in the registered capability-closed Fold interpreter, whose language
+has no operation for those resources. The current interpreter implementation
+remains infrastructure until its form is separately derived and admitted
+through the engine.
 
 The repository includes a continuous-validation matrix for the three host
 families. A passing matrix establishes implementation portability of the tested

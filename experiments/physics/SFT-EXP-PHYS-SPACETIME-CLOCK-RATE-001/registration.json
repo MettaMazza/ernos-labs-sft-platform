@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-SPACETIME-CLOCK-RATE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-SPACETIME-CLOCK-RATE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:3b1113ef3e63a2cdf3c7db8a5eae1cc20e71648518814e9cc1de660aca5ea4b2"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center snapshot sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:d6901e3cd6c900d3d37add9f1ed487b10122ff41d40e5010ee00564ff9f8cfb7",
+    "evaluator_id": "SFT-EXP-PHYS-SPACETIME-CLOCK-RATE-001-post-seal-evaluator",
+    "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-SPACETIME-CLOCK-RATE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "LIGO Scientific Collaboration, Virgo Collaboration and KAGRA Collaboration / Gravitational Wave Open Science Center",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c",
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "source_uri": "https://gwosc.org/api/v2/catalogs"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete event, causal-path, reference-frame, source/response, observation, target-access, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:30eff048d38da108f57dacb04d4d58a5405314cc687a752ee9bb23dc971f82fb",
+      "sha256:537ad43aeca3d32a5f80d1faecee830a2ca5005f0f98a9eb6d281751b0e71282",
+      "sha256:933e76c6f932c667da0bc1f2b856031dfdf3282f40731e71a9912b365ea59545",
+      "sha256:fbcad2f1b54389002f0d4353c0e881d6819f1ac966e6743fffa1b94ed6c01ec8",
+      "sha256:df21f0c010dcccd1c7e612e64069d8cf71edf192f5934bd6c71156f77063cdff",
+      "sha256:d56f18ac62ef8e52a044fdd41c5e24a61a3c5cb4b1101a0288e34ba5a9c5343c",
+      "sha256:fe4f69b327d988f47934192eae4527536781e24a4feec4dbc77acfc3901d9604"
+    ],
+    "exact_domain": "All finite spacetime and gravitational forms generated from exact event words, adjacent propagation, held orientation, recurrence clocks and complete source-bound relations without imported coordinates or continuum metric equations.",
+    "relation_hash": "sha256:baa2f2bac2539e0a7106ec3cde636188f3cc00efdff0fed7dffcd8c0660ae2c1",
+    "statement": "Relative clock rate is exact recurrence-count correspondence between causal paths sharing invariant event separation.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:f767911901b0ce57777ba71f5f03f6dcba7cbbb066d7993adc8307f45096fbb4",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-SPACETIME-CLOCK-RATE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:e744a8ec194c4ad948eb9dbbae88b0a2bbcad287e08411ce3af70f1ea63ca779",
+    "program_id": "SFT-EXP-PHYS-SPACETIME-CLOCK-RATE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:16f2b88c049e13e0bfbf0d8d86e3a19e1f7d0add2c4b9ba329383e6b334bf62b",
+    "experiments/external_sources/physics/snapshots/gwosc-v2-catalogs.json": "sha256:fcd8eef741cb536010539f3e42e6bb5d3a5e0fb7a120289fe95b8a1711f59e0c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "spacetime-clock-rate-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GWOSC-V2-CATALOGS-2026-07-23",
+      "target_id": "spacetime-clock-rate-2"
+    }
+  ]
+}

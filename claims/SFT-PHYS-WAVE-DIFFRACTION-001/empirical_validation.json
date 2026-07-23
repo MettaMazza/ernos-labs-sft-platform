@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-WAVE-DIFFRACTION-001",
+  "data_source_ids": [
+    "NIST-ASD-5.12"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:42e7772352eb1de4499741e3727f9af9fce3b9530472f91b8e633e575e984492",
+  "falsification_condition": "The wave law is falsified if any committed NIST spectral/transition row lacks the predicted recurrence or propagation structure, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f6e0757b310fca56631225d0a65abd4a8ec3c21f7b34bab9117caf846b14a7fe",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:dfee493228f0a9efba9e89bdf0a9448f011933b81e488107d4e5eacce7fdfa3c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-WAVE-DIFFRACTION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e7b42ef179df350cba1c03dc1e9c4e046c504585f37f3575753c8692bb534328",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:34b5d08346e45814793830147fffae4cd8e62235f0145d69bbea21b2031cee2f",
+    "prediction_seal_hash": "sha256:4cf53c348ead6883f84295c36f37020ce0cb52e7c09863f35e048b5ed4adab86",
+    "program_hash": "sha256:f4e2461ade9e756555b5945fee3decc5617c28972340244ee46ea1da91db577c",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a6155fe9fdf955698f24b16f3f11653059f39adac01002e7c0ff4f7551e1e689",
+    "target_material_present": false,
+    "trace_hash": "sha256:39a0eb872893b4b2c044439207557b733e5c767c216a846fd44f4d4990e5b75a"
+  },
+  "measurement_receipt_hash": "sha256:fddfbfb736f2506f418f6988471945f19870456bd066697ca2e5154e2ed5e891",
+  "measurements": [
+    "diffraction-1: predicted constrained-support-diffraction; observed constrained-support-diffraction; exact match True",
+    "diffraction-2: predicted constrained-support-diffraction; observed constrained-support-diffraction; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:30b61e49ddae2bc061146a367ebd3ab6c70c79eb4681ed642a42d5cba370d53e",
+    "custodian_id": "SFT-EXP-PHYS-WAVE-DIFFRACTION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:42e7772352eb1de4499741e3727f9af9fce3b9530472f91b8e633e575e984492",
+    "prediction_seal_hash": "sha256:4cf53c348ead6883f84295c36f37020ce0cb52e7c09863f35e048b5ed4adab86",
+    "registered_target_identity_hash": "sha256:a6155fe9fdf955698f24b16f3f11653059f39adac01002e7c0ff4f7551e1e689",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3140d944aa1cb50d86f93ef350996a206ac10443b18d1092bbe41f67f2755fea"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b00f0250f1d752d0d3213d9197a24d07cc28a664ef07afd90f726a7f9c7f14e6"
+}

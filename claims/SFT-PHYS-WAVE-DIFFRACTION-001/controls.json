@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-WAVE-DIFFRACTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:bba07f5cb14a9f143451e64b7e4ed0521d51a4361bea4867c0cff3c17cc88532"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:004b18f3ae136055c5cc72e2ff8713666ae74bed318be4a7b3e774c9636363ed"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a8c972847fbb73f4a71f95a8b5345ea9606159ce6f9d80b66103bce3da98142b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:12ddb094a78e44398cc42ca75027c12655d74c384edec117c098e8dae4a59684"
+    }
+  ]
+}

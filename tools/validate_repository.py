@@ -11,7 +11,15 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from sft.engine import ENGINE_ID, REQUIRED_DENIED_CAPABILITIES, ROOT_THEOREM  # noqa: E402
+from sft.engine import (  # noqa: E402
+    ENGINE_ID,
+    REQUIRED_DENIED_CAPABILITIES,
+    ROOT_THEOREM,
+    CapabilityClosedFoldInterpreter,
+    CrossPlatformCustodyExchange,
+    FoldOpcode,
+    HostilePackageAuditor,
+)
 from sft.engine.receipt_io import verify_receipt_mapping  # noqa: E402
 
 REQUIRED_FILES = (
@@ -37,6 +45,7 @@ REQUIRED_FILES = (
     "governance/engine_receipt.schema.json",
     "governance/execution_manifest.schema.json",
     "governance/experiment.schema.json",
+    "governance/fold_program.schema.json",
     ".github/workflows/portable-validation.yml",
 )
 
@@ -133,6 +142,24 @@ def validate() -> list[str]:
             errors.append("engine policy and executable denied-capability sets differ")
         if policy.get("host_platform_may_select_scientific_behavior") is not False:
             errors.append("host platform must not select scientific behavior")
+        if policy.get("official_prediction_interpreter_id") != CapabilityClosedFoldInterpreter.interpreter_id:
+            errors.append("engine policy and executable Fold interpreter identities differ")
+        if policy.get("official_prediction_program_schema") != "sft-v3-fold-program/1":
+            errors.append("engine policy must name the strict data-only Fold program schema")
+        if tuple(policy.get("official_prediction_opcodes", ())) != tuple(opcode.value for opcode in FoldOpcode):
+            errors.append("engine policy and executable Fold opcode surfaces differ")
+        if policy.get("portable_target_exchange_id") != CrossPlatformCustodyExchange.exchange_id:
+            errors.append("engine policy and executable target-exchange identities differ")
+        if policy.get("target_commitment_precedes_prediction") is not True:
+            errors.append("engine policy must require a target commitment before prediction")
+        if policy.get("target_release_requires_matching_seal") is not True:
+            errors.append("engine policy must bind target release to the matching prediction seal")
+        if policy.get("hostile_package_auditor_id") != HostilePackageAuditor.auditor_id:
+            errors.append("engine policy and executable hostile-package auditor identities differ")
+        if policy.get("protected_authority_paths") != ["census", "receipts/engine/model_admitted"]:
+            errors.append("engine policy must protect the census and model-admitted receipt tree")
+        if policy.get("contributor_executable_prediction_source_permitted") is not False:
+            errors.append("official empirical prediction must reject contributor executable source")
 
     branches_path = ROOT / "census" / "branches.json"
     if branches_path.is_file():

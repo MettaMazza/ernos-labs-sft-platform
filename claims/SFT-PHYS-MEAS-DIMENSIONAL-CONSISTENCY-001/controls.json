@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:205006977cc520a84734c06e70ac637ab6c19a87ed851309b146b576a2f9849b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fdd99f20271fea3b94c4d86056aa69692355c9e236302ae434dede45f04b99de"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5ebff673a39ef1ba8350015cf0f873f1ec3da528c4748d298b49eecb13fe0a81"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:9baeb7fe6d1d1e66374d4e218194d3d58557c0e9dfa1859bfcafcdff895e73fc"
+    }
+  ]
+}

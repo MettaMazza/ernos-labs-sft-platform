@@ -1,0 +1,133 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-WAVE-SUPERPOSITION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-WAVE-SUPERPOSITION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:865b1e9a44bc6d42ff516c0b9fc7a9705881ef3bf3dd55ccdce9b06e3db3af2d"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology snapshot sha256:a327a34eb1b85ef3f003e8c8f0dbcb0c3fc49f039ee4046546a924fc42118454; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:271db9d31a38a69587543eed02a12df40dfc6c194c43d7f31d7af59426c3426d",
+    "evaluator_id": "SFT-EXP-PHYS-WAVE-SUPERPOSITION-001-post-seal-evaluator",
+    "falsification_condition": "The wave law is falsified if any committed NIST spectral/transition row lacks the predicted recurrence or propagation structure, a row is omitted, or the tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-WAVE-SUPERPOSITION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:a327a34eb1b85ef3f003e8c8f0dbcb0c3fc49f039ee4046546a924fc42118454",
+      "source_id": "NIST-ASD-5.12",
+      "source_uri": "https://physics.nist.gov/PhysRefData/ASD/Html/verhist.shtml"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete carrier, recurrence/propagation relation, provenance, target-access, measurement-record, row, successor and extra-rule product.",
+    "dependency_hashes": [
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:69d7d867f2eecd710cf957af89759c8e06f2c56adf729673a26cb0086e56a73e",
+      "sha256:e4f7961aa6eacd2691ade8ee02b90289d15c6975525db36e8c7c1d5d49a60458",
+      "sha256:128490fcd72fe5e50db86d852662437660fe06f8a4fb6985cf8ef889c1e4a3d6",
+      "sha256:a3c5771fd6b8de7e76630a9b82f8217d14960eb6f680c3dd14b3add3761ca1a7"
+    ],
+    "exact_domain": "All finite wave forms constructed from generated recurrence, adjacent propagation, held phase/orientation, exact ratios and complete observation support without imported continuum equations.",
+    "relation_hash": "sha256:cdc0784b7307e54ab0014de1729e05b047b4881cf981a5f802d0c4be38f72f38",
+    "statement": "Independent waves superpose as the complete labelled junction of their source-bound traces on shared support.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:700b489ae5d5361e8f2226028ed1233f65845319c0e92f85f153200847252d84",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-WAVE-SUPERPOSITION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:df97672a5bb23373b1a6585c6a44179cb608e8b434ea44fb4762f90ac92014e4",
+    "program_id": "SFT-EXP-PHYS-WAVE-SUPERPOSITION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:93e4d838d72c9dc25f3947a8fd277150586c12f475158279d2f58fdc796681d3",
+    "experiments/external_sources/physics/snapshots/nist-asd-version-history.html": "sha256:a327a34eb1b85ef3f003e8c8f0dbcb0c3fc49f039ee4046546a924fc42118454"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-ASD-5.12",
+      "target_id": "superposition-1"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-ASD-5.12",
+      "target_id": "superposition-2"
+    }
+  ]
+}

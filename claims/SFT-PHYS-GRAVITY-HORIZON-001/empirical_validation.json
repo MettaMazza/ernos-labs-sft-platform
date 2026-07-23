@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-GRAVITY-HORIZON-001",
+  "data_source_ids": [
+    "GWOSC-V2-CATALOGS-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:1c0c6cb82f5636f23c4ae157660e666111294186c459a33ecb1e4829ee36bf0e",
+  "falsification_condition": "The spacetime/gravity law is falsified if a committed external row lacks the sealed event/causal/source relation, a row is omitted, or the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3d97d1dabc2f89390e65e54273b762de3256ca4605bea78726cbe2479fbdfde8",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:632ec9c20d9eed79041bda5e934fc49d07ed75da76f71baf41fdb82ce12556e2",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-GRAVITY-HORIZON-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c5713226f62a2a3195286fa1a1f60f94b2e3ad18b9a4b7e2abfa800116000da6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:4577b5f5ea9bba88cbf1123c535aca618898b4b32490f97d07bc8cf0e019f5ce",
+    "prediction_seal_hash": "sha256:bb5a0969811493c293270ca943b3d95e31e5c9c748a385c50317332f934d7eaf",
+    "program_hash": "sha256:3bafa3b8cac09de24e3039a296a4d1c81e159d6f84e040c08dad039d350d5dd5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:be203998ae7e6c5fa66a0037fd6ad18e1b018113531a2bbef6f82bd498741791",
+    "target_material_present": false,
+    "trace_hash": "sha256:038a31aabf093c181b5939c553057b77654d0bb5bc00cda88c508c629e1f05ac"
+  },
+  "measurement_receipt_hash": "sha256:25a77549a95884a6c8b2f2f636f8d2521bdf5c406b96c298326e7b5fc772a502",
+  "measurements": [
+    "gravity-horizon-1: predicted gravitational-causal-horizon; observed gravitational-causal-horizon; exact match True",
+    "gravity-horizon-2: predicted gravitational-causal-horizon; observed gravitational-causal-horizon; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:ffe0b5a8a931e75710308a7f166bbc63de7f2b82157da11a57c9c01e59155316",
+    "custodian_id": "SFT-EXP-PHYS-GRAVITY-HORIZON-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:1c0c6cb82f5636f23c4ae157660e666111294186c459a33ecb1e4829ee36bf0e",
+    "prediction_seal_hash": "sha256:bb5a0969811493c293270ca943b3d95e31e5c9c748a385c50317332f934d7eaf",
+    "registered_target_identity_hash": "sha256:be203998ae7e6c5fa66a0037fd6ad18e1b018113531a2bbef6f82bd498741791",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:38bb739d41e42888c53b29731f4b393769f40686f4f51e353c270e559dd366e8"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:0436ccab8b956bf9b4ff8dd85553679f27286fdaa52750759d8164f019c258a5"
+}

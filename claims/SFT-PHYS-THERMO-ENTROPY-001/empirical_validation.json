@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-THERMO-ENTROPY-001",
+  "data_source_ids": [
+    "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8749b550083c4ea21b90e9f3e3394eeaff0304e03651c566ca1ad7fb302049d2",
+  "falsification_condition": "The thermal law is falsified if any committed external row lacks the sealed finite-state, transfer or ordering structure, if a row is omitted, or if the tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6de0571242ea40dc7676ce7b5fa60f33665d6c3e4105ec0f4c9894d8ce8bca8f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:ec73a5b3517bd214b16d7103cdbbf43e2e4dbb4f90f7a78038882e9e9d1b04e4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-THERMO-ENTROPY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ad7881650ad8dc6c65d7412de57ee9b006c3d56293bf6d705fdc79fd09416769",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e41eff672558f68a6d04853f7ac99f40ae138f6f8508e85099e381a11f78036d",
+    "prediction_seal_hash": "sha256:6f1f63dfb441258d056b968c8b148917434795a0e952fafb72f9cf95f288e17b",
+    "program_hash": "sha256:8f7cc380bd3ff98c2ee80a5851b1d280d9a2e1db5fd2e849c0f931e84b699054",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4bd0c1ed79d9696b7a5338717ac8af69909799d42013dfb06f5fd3ec054d559b",
+    "target_material_present": false,
+    "trace_hash": "sha256:043e07b5047b133060b5c1ddc603625593eb8c195057c018dcf69b047138893e"
+  },
+  "measurement_receipt_hash": "sha256:64b76e6801c73b3c9946a0f76f966c56733d9a2e4a2d3f3abb5ee208f98dc6f7",
+  "measurements": [
+    "entropy-1: predicted finite-fold-thermodynamic-entropy; observed finite-fold-thermodynamic-entropy; exact match True",
+    "entropy-2: predicted finite-fold-thermodynamic-entropy; observed finite-fold-thermodynamic-entropy; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:91264e0a4fba63d40403ce5332242336b735783f3fbe774d3473a88cae9d3e1c",
+    "custodian_id": "SFT-EXP-PHYS-THERMO-ENTROPY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:8749b550083c4ea21b90e9f3e3394eeaff0304e03651c566ca1ad7fb302049d2",
+    "prediction_seal_hash": "sha256:6f1f63dfb441258d056b968c8b148917434795a0e952fafb72f9cf95f288e17b",
+    "registered_target_identity_hash": "sha256:4bd0c1ed79d9696b7a5338717ac8af69909799d42013dfb06f5fd3ec054d559b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b7f9fe84d6af5497bd7d5b82d03ea27596b5ee4344463ed9ac20f4b951a6b115"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d45decb31bfd567235b15d1f0ff5875757474f9ffcdd0cdb26e008daf9cd4c6b"
+}
