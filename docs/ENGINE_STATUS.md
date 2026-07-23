@@ -43,8 +43,11 @@ declared generated boundaries and independently replicated. Together, the
 official census contains twenty-two scientific claims. Synthetic engine controls
 remain excluded from that census.
 
-The mathematics paper and evidence map are being prepared locally. This status
-does not authorize a push or publication.
+The standalone Mathematics paper, its evidence map and the complete
+paper/evidence release are published at DOI `10.5281/zenodo.21516146`. GitHub
+`main` displays the paper as the repository landing document. The Foundation
+paper remains separately preserved and published at DOI
+`10.5281/zenodo.21515629`.
 
 ## Required before the first official empirical derivation
 
