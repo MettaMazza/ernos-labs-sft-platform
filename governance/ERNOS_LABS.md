@@ -20,6 +20,11 @@ Researchers may use the Ernos Labs designation for a project only if it:
 The designation is withdrawn from work that knowingly bypasses these
 conditions or uses the name to imply approval that was not granted.
 
+The designation policy does not restrict the open-license rights to inspect,
+copy, modify, distribute, test or criticize the code and papers. Independent
+work that does not pass the conformance route remains free to operate under its
+own name. See `TRADEMARK_POLICY.md`.
+
 ## Gate roles
 
 - **Submitter:** registers and supplies the complete evidence package.

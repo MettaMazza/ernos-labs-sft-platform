@@ -51,6 +51,13 @@ conclusions and publications.
 
 ## Licensing
 
-No public contribution should be accepted until the project licenses are
-selected and `LICENSE_PENDING.md` is replaced by the approved licenses and
-designation policy.
+Code contributions are accepted under Apache License 2.0 unless conspicuously
+marked “Not a Contribution.” Documentation and paper contributions are accepted
+under CC BY 4.0. Dataset contributors must state the dataset's own license and
+authority. See `LICENSING.md` and `TRADEMARK_POLICY.md`.
+
+The public source and challenge route is open. Formal external claim admission
+will open after the foundation interfaces and contribution-governance release
+are stabilized. Early reproductions, falsifications and proposals are welcome;
+they do not enter the model census without the complete mechanical and
+scientific review route.

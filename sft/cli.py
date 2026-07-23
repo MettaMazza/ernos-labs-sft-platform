@@ -25,7 +25,7 @@ def repository_status() -> dict[str, object]:
             claim.get("model_admitted") is True
             for claim in claims
         ),
-        "remote_publication": "not-configured",
+        "remote_publication": "github-public-zenodo-10.5281/zenodo.21514890",
         "future_generation": "v4-sft-derived-self-hosted",
     }
 

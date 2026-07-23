@@ -20,3 +20,9 @@ The intended notice for preserved publications is:
 V3 additionally registers a future fourth clean-room reconstruction in
 SFT-derived, self-hosted languages and principles. That future registration
 does not reduce the evidentiary standing of v3.
+
+Copyright © 2026 Maria Smith. Source-code portions are licensed under Apache
+License 2.0. Papers, documentation and non-code evidence are licensed under CC
+BY 4.0 unless otherwise marked. “Ernos Labs” is a reserved conformance
+designation and is not granted by the Apache license. See `LICENSING.md` and
+`TRADEMARK_POLICY.md`.
