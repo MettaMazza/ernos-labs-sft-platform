@@ -24,6 +24,8 @@ machine-readable [`evidence_map.json`](foundation/evidence_map.json),
 [`manifest.json`](foundation/manifest.json) and
 [`publication_receipt.json`](foundation/publication_receipt.json) are checked by
 `python3 tools/verify_foundation_publication.py` on macOS/Linux or
-`py tools/verify_foundation_publication.py` on Windows. The local bundle is prepared,
-and Maria Smith explicitly authorized its public GitHub and Zenodo release on
-23 July 2026 under reserved DOI `10.5281/zenodo.21515629`.
+`py tools/verify_foundation_publication.py` on Windows. Maria Smith explicitly
+authorized its public release on 23 July 2026. The exact GitHub source at commit
+`64b5123887081cfccf9b93e8368efb2d4af589a4` and the standalone paper/evidence
+bundle are published at
+[`10.5281/zenodo.21515629`](https://doi.org/10.5281/zenodo.21515629).
