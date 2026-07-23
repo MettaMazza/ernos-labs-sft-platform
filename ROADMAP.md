@@ -19,7 +19,7 @@
 ## Phase C - mathematical foundations
 
 Status: complete and frozen at the declared V3 generated finite boundary; the
-exhaustive branch paper is in local preparation.
+standalone exhaustive branch paper is published.
 
 - [x] Exact arithmetic and number structure.
 - [x] Discrete mathematics and combinatorics.
@@ -34,8 +34,7 @@ exhaustive branch paper is in local preparation.
 
 - [x] Information science: twelve model-admitted, depth-independently closed and
   independently replicated claims; frozen inventory; standalone paper and
-  evidence bundle pass the publication gate; Maria Smith authorized release on
-  23 July 2026.
+  evidence bundle published at DOI `10.5281/zenodo.21516916` on 23 July 2026.
 - Formal computation and model equivalence.
 - Computability and incompleteness boundaries.
 - Complexity and resource laws.
