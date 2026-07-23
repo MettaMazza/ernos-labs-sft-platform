@@ -49,8 +49,9 @@ standalone exhaustive branch paper is published.
 The Classical Computation inventory is frozen complete with 113 admitted claims
 and 28,928 generated candidates. The Reversible and Quantum Computation
 inventory is frozen complete with 21 admitted claims and 5,376 generated
-candidates. Their separate exhaustive papers and evidence maps pass their local
-publication gates; publication remains unauthorized.
+candidates. Their separate exhaustive papers and evidence releases are
+published at DOI `10.5281/zenodo.21518311` and DOI
+`10.5281/zenodo.21518313`, respectively.
 
 ## Phase E - physical sciences
 

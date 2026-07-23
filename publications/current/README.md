@@ -1,11 +1,11 @@
 # Current publications
 
 The repository landing page, [`README.md`](../../README.md), displays the latest
-complete standalone branch paper, **From Distinction to Information**. Every earlier
-branch paper remains unchanged in its own canonical source folder and archival
+complete standalone branch paper, **The Quantum Fold Machine**. Every earlier
+branch paper remains unchanged in its canonical source folder and archival
 record.
 
-## Completed computation branches - local prepublication
+## Published computation branches
 
 The Classical Computation branch is frozen complete and documented in the new
 standalone manuscript
@@ -24,11 +24,17 @@ It covers all 21 frozen obligations, 5,376 candidates and the executable
 multi-error correction censuses.
 
 Both manuscripts have complete evidence maps, manifests and branch-publication
-receipts. Their metadata and release file plans are prepared locally. They carry
-`publication_authorized: false`: neither paper has been pushed, uploaded,
-assigned a DOI or published. The GitHub landing paper therefore remains the
-published Information Science edition until Maria Smith separately authorizes a
-coordinated release.
+receipts with `publication_authorized: true`. The Classical paper is published
+at DOI [`10.5281/zenodo.21518311`](https://doi.org/10.5281/zenodo.21518311) and
+GitHub release
+[`classical-computation-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/classical-computation-v1.0.0).
+The Quantum paper is published at DOI
+[`10.5281/zenodo.21518313`](https://doi.org/10.5281/zenodo.21518313) and GitHub
+release
+[`quantum-computation-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/quantum-computation-v1.0.0).
+Each archive supplies the PDF first, full Markdown manuscript, complete
+evidence/source ZIP and checksum ledger. The complete Quantum Markdown paper is
+the current GitHub landing document.
 
 ## Completed Information Science branch paper
 

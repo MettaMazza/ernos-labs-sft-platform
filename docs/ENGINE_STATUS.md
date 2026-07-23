@@ -83,12 +83,13 @@ record is published at DOI `10.5281/zenodo.21516916`, and GitHub `main` displays
 this paper as the repository landing document. Neither earlier canonical paper
 was edited.
 
-The Classical Computation paper, *After Turing: The Fold Machine*, is a
-396-page local prepublication manuscript. The Quantum Computation paper, *The
-Quantum Fold Machine*, is an 80-page local prepublication manuscript. Both have
-complete evidence maps and pass their local branch-paper gates with
-`publication_authorized: false`. No DOI, upload, push or publication action has
-been taken for either manuscript.
+The Classical Computation paper, *After Turing: The Fold Machine*, is published
+as a 396-page standalone edition at DOI `10.5281/zenodo.21518311`. The Quantum
+Computation paper, *The Quantum Fold Machine*, is published as a separate
+80-page edition at DOI `10.5281/zenodo.21518313`. Both archival records contain
+the preview-first PDF, complete Markdown paper, full evidence/source ZIP and
+checksum ledger; matching GitHub releases preserve the same file set. GitHub
+`main` displays the complete Quantum paper as the current landing document.
 
 The final repository-wide verifier passed after the complete computation-paper
 and documentation freeze: 153 unit and end-to-end tests passed, core-engine

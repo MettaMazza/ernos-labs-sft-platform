@@ -1,7 +1,7 @@
 # Classical Computation branch status and review guide
 
-Status: `frozen_complete`; standalone paper: `ready_local`; publication:
-`not_authorized`.
+Status: `frozen_complete`; standalone paper: `published`; publication:
+`10.5281/zenodo.21518311`.
 
 Paper: [After Turing: The Fold Machine](../publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md)
 
@@ -40,8 +40,10 @@ candidate census, elimination receipt, controls, certificate, execution,
 independent validator and model-admitted receipt. The paper evidence map binds
 all 113 sections to exact artifact hashes.
 
-## Publication boundary
+## Publication record
 
-The 396-page paper and Zenodo/GitHub metadata are prepared locally. Publication
-is not authorized, no DOI has been reserved and the public landing paper has not
-been changed.
+The 396-page paper, complete Markdown source, repository evidence/source ZIP
+and checksum ledger are published at DOI
+[`10.5281/zenodo.21518311`](https://doi.org/10.5281/zenodo.21518311) and in the
+GitHub release
+[`classical-computation-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/classical-computation-v1.0.0).
