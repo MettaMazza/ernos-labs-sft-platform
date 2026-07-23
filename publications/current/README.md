@@ -22,7 +22,9 @@ publication gate with `ready_to_publish: true` and
 `publication_authorized: true`. Maria Smith authorized public release on 24
 July 2026. The archival edition is DOI
 [`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881), and the
-complete Markdown paper is the current GitHub landing document.
+complete Markdown paper is the current GitHub landing document. The matching
+public release is
+[`physics-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/physics-v1.0.0).
 
 ## Published computation branches
 

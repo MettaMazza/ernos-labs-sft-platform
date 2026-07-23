@@ -2,6 +2,8 @@
 
 The frozen Physics inventory, exhaustive paper and evidence release are
 published at DOI [`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881).
+The matching GitHub release is
+[`physics-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/physics-v1.0.0).
 
 The branch contains 132 required and eight supplemental model-admitted claims,
 35,840 generated candidates, one survivor per claim, 560 passing adverse
