@@ -29,3 +29,6 @@ authorized its public release on 23 July 2026. The exact GitHub source at commit
 `64b5123887081cfccf9b93e8368efb2d4af589a4` and the standalone paper/evidence
 bundle are published at
 [`10.5281/zenodo.21515629`](https://doi.org/10.5281/zenodo.21515629).
+The record supplies the paper independently as both the default-preview PDF and
+the complete Markdown source, alongside the evidence/source ZIP and checksum
+ledger.
