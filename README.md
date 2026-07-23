@@ -433,7 +433,7 @@ At this release's source state, the public route reports:
 - 2 registered and model-admitted derivations;
 - 60 unit, adverse-control and end-to-end tests;
 - 15 core engine modules;
-- 1,263 of 1,263 core-engine executable lines observed by the standard-library
+- 1,264 of 1,264 core-engine executable lines observed by the standard-library
   tracer; and
 - a fresh ordered rerun of both derivations and their distinct validators.
 
@@ -972,7 +972,7 @@ as an undifferentiated success number.
 The public verifier launches the full suite under Python's standard-library
 `trace` module. It scans every `sft.engine` source module, counts executable
 lines, and fails on any line marked missing or any module not executed. The
-current count is 1,263 executed of 1,263 executable lines across 15 modules.
+current count is 1,264 executed of 1,264 executable lines across 15 modules.
 Temporary trace files are discarded after the run.
 
 After software verification, the command loads

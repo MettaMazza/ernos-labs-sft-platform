@@ -391,10 +391,11 @@ class SFTAdmissionEngine:
                 validation.isolation_certificate,
             )
         )
-        if (
+        custody_registration_matches = (
             validation.target_custody_certificate.experiment_registration_hash
-            != validation.experiment_registration_hash
-        ):
+            == validation.experiment_registration_hash
+        )
+        if not custody_registration_matches:
             violations.append("target custody checked the wrong experiment registration")
         required_truths = (
             ("evaluator did not verify the seal", validation.evaluator_verified_seal),
