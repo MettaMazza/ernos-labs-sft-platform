@@ -30,10 +30,21 @@
 
 ## Current scientific status
 
-The premise-free operational root theorem and its first downstream result, the
-structural One, are model-admitted. Both are depth-independently closed at their
-declared structural boundaries and independently replicated. Synthetic engine
-controls remain excluded from the scientific census.
+The Foundation branch is frozen complete with ten model-admitted claims from the
+operational root theorem through the derivation-to-measurement boundary. Its
+comprehensive paper is published.
+
+The Mathematics branch is frozen complete with twelve model-admitted claims:
+exact arithmetic, discrete mathematics, combinatorics, graph/network theory,
+algebra, order/lattice theory, finite computational geometry/topology, exact
+probability/statistics, optimization, finite dynamics, logic/proof and
+category/type/composition. All twelve are depth-independently closed at their
+declared generated boundaries and independently replicated. Together, the
+official census contains twenty-two scientific claims. Synthetic engine controls
+remain excluded from that census.
+
+The mathematics paper and evidence map are being prepared locally. This status
+does not authorize a push or publication.
 
 ## Required before the first official empirical derivation
 

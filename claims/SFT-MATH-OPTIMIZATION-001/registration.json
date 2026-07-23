@@ -1,0 +1,37 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "mathematics",
+  "candidate_grammar": {
+    "boundary": "All finite optimization instances generated from canonical candidates, exact predicates, held preference relations, complete dominance checks, interface-preserving decomposition and exact positive part bounds.",
+    "completeness_certificate": "sha256:a15ea2f582138e72734b4421a5d69ae92089f444f70597f7539532587a30ddbe",
+    "generator": "Generate the complete product of candidate coverage, feasibility, preference, optimum selection, tie retention, constraint provenance, decomposition, approximation and extra-objective status."
+  },
+  "claim_id": "SFT-MATH-OPTIMIZATION-001",
+  "dependencies": [
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-GRAPH-NETWORK-001",
+    "SFT-MATH-ORDER-LATTICE-001"
+  ],
+  "empirical_protocol": null,
+  "excluded_inputs": [
+    "no floating objective or tolerance",
+    "no negative penalty term",
+    "no tunable regularizer or tie-break parameter",
+    "no unenumerated candidate domain"
+  ],
+  "intended_certificate": "Independent regeneration of the complete 512-candidate product, its sole all-preserving survivor, closure properties and controls.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "An admitted optimization problem is a complete canonical candidate carrier, a source-bound exact feasibility relation and a witnessed preference relation. Solutions are the complete undominated held selection; uniqueness is claimed only for a singleton, while ties and incomparable Pareto alternatives remain explicit. Constraints, decomposition and approximation are exact trace relations without floating objectives, negative penalties or free tuning parameters.",
+  "status": "independently_replicated",
+  "title": "Exact finite optimization and retained optima"
+}

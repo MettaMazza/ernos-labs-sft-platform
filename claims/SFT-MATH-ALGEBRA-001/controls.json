@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-ALGEBRA-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omission or aliasing changes which operation inputs exist.",
+      "passed": true,
+      "receipt_hash": "sha256:b0cb6ed9032c814991aae189ba084f58a0344948ecdeba10de30448360699e08"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no imported group, ring or field axioms; no negative or irrational carrier requirement; no property inferred from a conventional name; no completed infinite carrier",
+      "passed": true,
+      "receipt_hash": "sha256:e7630fd960384d7d35b15f2e1c900d720e648b0dd23ec4cea7ac6ce9dadc209c"
+    }
+  ]
+}

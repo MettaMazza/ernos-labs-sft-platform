@@ -18,14 +18,17 @@
 
 ## Phase C - mathematical foundations
 
-- Exact arithmetic and number structure.
-- Discrete mathematics and combinatorics.
-- Graph and network theory.
-- Algebra, order and lattice structures.
-- Computational geometry and topology.
-- Probability and statistics where structurally forced.
-- Optimization and dynamical systems.
-- Logic, proof, category, type and compositional structures where forced.
+Status: complete and frozen at the declared V3 generated finite boundary; the
+exhaustive branch paper is in local preparation.
+
+- [x] Exact arithmetic and number structure.
+- [x] Discrete mathematics and combinatorics.
+- [x] Graph and network theory.
+- [x] Algebra, order and lattice structures.
+- [x] Computational geometry and topology.
+- [x] Probability and statistics where structurally forced.
+- [x] Optimization and dynamical systems.
+- [x] Logic, proof, category, type and compositional structures where forced.
 
 ## Phase D - information and computation
 

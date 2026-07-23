@@ -1,13 +1,28 @@
 # Current publications
 
-The repository landing page, [`README.md`](../../README.md), is now the canonical
-display copy of the completed Foundation branch paper, **From Nothing to Fold**.
-This makes the paper—not a folder listing—the first object a visitor reads.
+The repository landing page, [`README.md`](../../README.md), displays the latest
+complete standalone branch paper, **From Fold to Mathematics**. Every earlier
+branch paper remains unchanged in its own canonical source folder and archival
+record.
 
-The archival typeset edition is
-[`output/pdf/there-is-no-nothing-sft-open-science-platform.pdf`](../../output/pdf/there-is-no-nothing-sft-open-science-platform.pdf).
-Its release manifest and checksum ledger are stored beside the publication
-bundle.
+## Completed Mathematics branch paper
+
+The second closed scientific branch and its standalone paper are
+[`From Fold to Mathematics`](mathematics/FROM_FOLD_TO_MATHEMATICS.md). Its
+archival PDF is
+[`output/pdf/from-fold-to-mathematics-branch-paper-001.pdf`](../../output/pdf/from-fold-to-mathematics-branch-paper-001.pdf).
+The paper covers all twelve obligations in the frozen Mathematics inventory,
+7,424 generated candidates, complete rejection axes, unique survivors,
+depth-independent certificates, adverse controls and independent validators.
+
+Its machine-readable `evidence_map.json`, `manifest.json` and
+`publication_receipt.json` are verified by
+`python3 tools/verify_mathematics_publication.py` on macOS/Linux or
+`py tools/verify_mathematics_publication.py` on Windows. Maria Smith explicitly
+authorized public release on 23 July 2026. The archival record is
+[`10.5281/zenodo.21516146`](https://doi.org/10.5281/zenodo.21516146) and supplies
+both the PDF and Markdown paper as separate files alongside the evidence/source
+archive and checksum ledger.
 
 The earlier inaugural methods paper remains preserved at DOI
 [`10.5281/zenodo.21514890`](https://doi.org/10.5281/zenodo.21514890) and in the

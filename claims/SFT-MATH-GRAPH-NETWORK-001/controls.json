@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-GRAPH-NETWORK-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Missing or aliased nodes change the graph carrier.",
+      "passed": true,
+      "receipt_hash": "sha256:2c881c5d8c3f3ab8e894f11a4fce432fbbfa4e49226ddb271ea8023ed8e3228b"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no ungenerated vertex or edge; no negative edge or flow quantity; no stochastic graph law; no infinite graph as a completed object",
+      "passed": true,
+      "receipt_hash": "sha256:3f199f993e865f79dd3ff17ba48418bbfca2470b4a79c8a8697148409b3ba7be"
+    }
+  ]
+}

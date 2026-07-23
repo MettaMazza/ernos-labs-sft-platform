@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-ORDER-LATTICE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Presentation aliases do not fix exact ordered identity.",
+      "passed": true,
+      "receipt_hash": "sha256:8b99f164faa8fd4a22432325f9d4c0afd5c8882ed01e4d35781cbb3544f51254"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no imported real-number line; no assumed total order; no lattice completeness without generated meets and joins; no completed infinite chain",
+      "passed": true,
+      "receipt_hash": "sha256:484dd6f1f271f8054f6f3e5e74696abdbe274c36cb08b223628218b599f5da79"
+    }
+  ]
+}

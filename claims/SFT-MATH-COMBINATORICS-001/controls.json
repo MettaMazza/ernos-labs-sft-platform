@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-COMBINATORICS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "A partial carrier silently omits possible generated choices.",
+      "passed": true,
+      "receipt_hash": "sha256:c1dbfffb55e34b1990cfc2d3bd521fd163d147f13c5598b09021959fcee3cfe3"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no random sampling as completeness evidence; no factorial or binomial answer table; no negative inclusion-exclusion proof value; no completed infinite combinatorial family",
+      "passed": true,
+      "receipt_hash": "sha256:5e256307e37a27f3cb51ece4a149427a8131c602ec3eb31051eb5b10fdb3dced"
+    }
+  ]
+}
