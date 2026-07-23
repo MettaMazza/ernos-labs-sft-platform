@@ -7,6 +7,8 @@ Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
 23 July 2026
 
+DOI: [10.5281/zenodo.21515629](https://doi.org/10.5281/zenodo.21515629)
+
 Foundation Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is

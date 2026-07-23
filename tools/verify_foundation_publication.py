@@ -26,6 +26,7 @@ from sft.engine.receipt_io import read_receipt
 
 
 BRANCH_ID = "foundation"
+PUBLICATION_AUTHORIZED = True
 INVENTORY_PATH = ROOT / "publications/inventories/foundation.json"
 CENSUS_PATH = ROOT / "census/claims.json"
 PAPER_PATH = ROOT / "publications/current/foundation/FROM_NOTHING_TO_FOLD.md"
@@ -176,7 +177,7 @@ def build_evidence_map() -> dict[str, Any]:
         },
         "claims": entries,
         "complete_claim_coverage": True,
-        "publication_action_authorized": False,
+        "publication_action_authorized": PUBLICATION_AUTHORIZED,
     }
 
 
@@ -232,7 +233,7 @@ def verify_written_bundle() -> dict[str, Any]:
         "comprehensive_derivation_coverage": True,
         "controls_passed": True,
         "publication_gate_receipt_hash": publication_receipt.receipt_hash,
-        "publication_authorized": False,
+        "publication_authorized": PUBLICATION_AUTHORIZED,
     }
     if read_json(MANIFEST_PATH) != expected_manifest:
         raise ValueError("foundation publication manifest is stale or has been altered")
@@ -279,7 +280,7 @@ def build_bundle() -> dict[str, Any]:
         "comprehensive_derivation_coverage": True,
         "controls_passed": True,
         "publication_gate_receipt_hash": receipt.receipt_hash,
-        "publication_authorized": False,
+        "publication_authorized": PUBLICATION_AUTHORIZED,
     }
     write_json(MANIFEST_PATH, manifest)
     write_json(PUBLICATION_RECEIPT_PATH, asdict(receipt))
@@ -293,7 +294,7 @@ def main() -> int:
     print(f"generated candidate classes: {result['candidate_count']}")
     print(f"paper hash: {result['paper_hash']}")
     print(f"publication receipt: {result['publication_receipt_hash']}")
-    print("publication authorized: false")
+    print(f"publication authorized: {str(PUBLICATION_AUTHORIZED).lower()}")
     return 0
 
 
