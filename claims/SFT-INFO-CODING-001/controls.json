@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-CODING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omission hides possible code or error images.",
+      "passed": true,
+      "receipt_hash": "sha256:f7172e9412e2f058233eedc9292241ada463109f88a567019995e1f842fa7acb"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no stochastic error model; no floating distance or likelihood threshold; no unaccounted redundancy; no asymptotic rate imported as a finite proof",
+      "passed": true,
+      "receipt_hash": "sha256:dbc8aa5bf22488e77f3b48616b7f6856c06cc2ed7350c94e878078caaed92030"
+    }
+  ]
+}

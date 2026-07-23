@@ -1,9 +1,29 @@
 # Current publications
 
 The repository landing page, [`README.md`](../../README.md), displays the latest
-complete standalone branch paper, **From Fold to Mathematics**. Every earlier
+complete standalone branch paper, **From Distinction to Information**. Every earlier
 branch paper remains unchanged in its own canonical source folder and archival
 record.
+
+## Completed Information Science branch paper
+
+The third closed scientific branch has a new, independent paper:
+[`From Distinction to Information`](information_science/FROM_DISTINCTION_TO_INFORMATION.md).
+It is not an edit of the Foundation or Mathematics papers. Its 42-page rendered
+edition is
+[`output/pdf/from-distinction-to-information-branch-paper-001.pdf`](../../output/pdf/from-distinction-to-information-branch-paper-001.pdf).
+
+The paper covers all twelve obligations in the frozen Information Science
+inventory, 11,776 generated candidates, complete rejection axes, unique
+survivors, depth-independent certificates, operational witnesses, adverse
+controls, implementation-distinct validators and exact receipt identities. Its
+evidence map, manifest and publication-readiness receipt explicitly carry
+`publication_authorized: true`. Maria Smith authorized release on 23 July 2026;
+the archival DOI is
+[`10.5281/zenodo.21516916`](https://doi.org/10.5281/zenodo.21516916).
+
+The complete standalone Information Science source is copied to `README.md` as
+the landing paper. The canonical earlier paper files remain untouched.
 
 ## Completed Mathematics branch paper
 

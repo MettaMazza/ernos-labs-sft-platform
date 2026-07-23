@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-MUTUAL-CONDITIONAL-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omission changes marginal, joint and conditional parts.",
+      "passed": true,
+      "receipt_hash": "sha256:f564b6aa6b8ba61accc8d69530492f79dc2980f78cc08304bea6d57f9801d75d"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no logarithmic mutual-information proof value; no signed or floating dependence score; no stochastic cause or prior distribution; no incomplete joint census presented as factorization",
+      "passed": true,
+      "receipt_hash": "sha256:23dc6a258a994a86504934396406af14c8c3d49dbbe6eaf38d4864f3f45aca3b"
+    }
+  ]
+}

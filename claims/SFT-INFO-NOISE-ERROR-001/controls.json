@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-NOISE-ERROR-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "An omitted source hides a possible predecessor.",
+      "passed": true,
+      "receipt_hash": "sha256:aa0a31d6b2f952723af21b700fd42b6e3524208149527bf5e2a28a1ef1db1f4f"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no stochastic noise cause; no floating error rate or threshold; no assumed metric or nearest-neighbor rule; no unrecorded source inference",
+      "passed": true,
+      "receipt_hash": "sha256:e9746338cf385cffd4197fa5fbf34f715cc9519738827c592e17a26421e0859f"
+    }
+  ]
+}

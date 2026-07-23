@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-CONSERVATION-LOSS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omission hides distinctions that may be lost.",
+      "passed": true,
+      "receipt_hash": "sha256:e49483a81fecb2b86c78c6d275a16553a1d404e42699dcfd48c68e3cc368ce89"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no image without source provenance; no assumed inverse across merged predecessors; no scalar conservation law replacing distinction ledgers; no downstream reopening without a declared external record",
+      "passed": true,
+      "receipt_hash": "sha256:985dfeb5e8a4ab2440265fb290f9431a0a8e901052f776a68ff919c0b2fd65f6"
+    }
+  ]
+}

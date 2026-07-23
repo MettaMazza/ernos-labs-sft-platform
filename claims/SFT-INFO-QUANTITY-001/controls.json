@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-QUANTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omitting a generated alternative changes every distinction count.",
+      "passed": true,
+      "receipt_hash": "sha256:66c8c2acb6c7e2805130d894dcbdcab51bd9665d1d065a1ca9860f3b23d14826"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no logarithm as a proof operation; no real-valued or irrational information quantity; no semantic numerical zero for identity information; no incomplete support presented as full quantity",
+      "passed": true,
+      "receipt_hash": "sha256:40cc647fb3b88cb6aca2ec0f86b8a4bc0e2a9c7e1810685d2ca3f5ce2df95355"
+    }
+  ]
+}

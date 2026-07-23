@@ -39,15 +39,34 @@ exact arithmetic, discrete mathematics, combinatorics, graph/network theory,
 algebra, order/lattice theory, finite computational geometry/topology, exact
 probability/statistics, optimization, finite dynamics, logic/proof and
 category/type/composition. All twelve are depth-independently closed at their
-declared generated boundaries and independently replicated. Together, the
-official census contains twenty-two scientific claims. Synthetic engine controls
-remain excluded from that census.
+declared generated boundaries and independently replicated.
+
+The Information Science branch is frozen complete with twelve model-admitted
+claims: symbols/distinguishability, encoding/decoding, information quantity,
+entropy/uncertainty, compression/redundancy, channels/capacity, noise/error,
+coding, mutual/conditional information, conservation/loss/transformation,
+classical/probabilistic correspondence and quantum-information support
+correspondence. Its grammars execute 11,776 candidates and contain exactly
+twelve survivors. All claims are depth-independently closed and independently
+replicated. The official census now contains thirty-four scientific claims and
+21,650 generated candidates through the three complete branches. Synthetic
+engine controls remain excluded from that census.
 
 The standalone Mathematics paper, its evidence map and the complete
 paper/evidence release are published at DOI `10.5281/zenodo.21516146`. GitHub
 `main` displays the paper as the repository landing document. The Foundation
 paper remains separately preserved and published at DOI
 `10.5281/zenodo.21515629`.
+
+The independent Information Science paper, *From Distinction to Information*,
+is a 42-page publication-authorized standalone edition. Its evidence map and
+manifest pass the branch publication gate with `publication_authorized: true`.
+Its reserved archival DOI is `10.5281/zenodo.21516916`; neither earlier
+canonical paper was edited.
+
+The current complete verifier result is 131 unit and end-to-end tests, 1,264 of
+1,264 executable core-engine lines (100 percent), fifteen core modules and all
+thirty-four admitted derivations independently rerun in dependency order.
 
 ## Required before the first official empirical derivation
 

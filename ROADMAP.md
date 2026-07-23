@@ -32,7 +32,10 @@ exhaustive branch paper is in local preparation.
 
 ## Phase D - information and computation
 
-- Information science.
+- [x] Information science: twelve model-admitted, depth-independently closed and
+  independently replicated claims; frozen inventory; standalone paper and
+  evidence bundle pass the publication gate; Maria Smith authorized release on
+  23 July 2026.
 - Formal computation and model equivalence.
 - Computability and incompleteness boundaries.
 - Complexity and resource laws.
