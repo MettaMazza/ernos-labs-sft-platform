@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-FOLD-ASSEMBLY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject incomplete one-step support",
+      "kind": "false_premise",
+      "observed_behavior": "a single held-label word omits the other forced branch",
+      "passed": true,
+      "receipt_hash": "sha256:33c9ed6fd45b0a599e529d2783e0c4c6e27cf1ac49b040d5f9b0183958830019"
+    },
+    {
+      "expected_behavior": "reject changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:a100fc522c0df37fd0e0b75aa91cec82a224c73202c30cad2dc0100c34d1d0c0"
+    },
+    {
+      "expected_behavior": "reject duplicated or missing word support",
+      "kind": "tampered_artifact",
+      "observed_behavior": "generated depths one through five are unique, equal-length and complete",
+      "passed": true,
+      "receipt_hash": "sha256:2ff11582661e71a84a1729084309f76e717a6a52d6c154e25b4d01cb92c82cf1"
+    },
+    {
+      "expected_behavior": "refuse imported binary numerals, exponentiation and completed-infinite support",
+      "kind": "boundary",
+      "observed_behavior": "support is generated only by finite held-label recursion",
+      "passed": true,
+      "receipt_hash": "sha256:60d76f25e6d49dc4d008a943a81590eee20224dd6565d7b0bd7ba0b06fb2dead"
+    }
+  ]
+}

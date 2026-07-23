@@ -13,3 +13,16 @@ This inaugural methods paper does not claim the foundation branch publication
 gate is complete. Subsequent papers are issued only when an entire frozen
 branch inventory closes; the final TOE rewrite follows only after every branch
 paper closes.
+
+## Completed Foundation branch paper
+
+The first complete branch paper is [`From Nothing to Fold`](foundation/FROM_NOTHING_TO_FOLD.md).
+Its archival PDF is
+[`output/pdf/from-nothing-to-fold-foundation-branch-paper-001.pdf`](../../output/pdf/from-nothing-to-fold-foundation-branch-paper-001.pdf).
+The paper covers every obligation in the frozen Foundation inventory. Its
+machine-readable [`evidence_map.json`](foundation/evidence_map.json),
+[`manifest.json`](foundation/manifest.json) and
+[`publication_receipt.json`](foundation/publication_receipt.json) are checked by
+`python3 tools/verify_foundation_publication.py` on macOS/Linux or
+`py tools/verify_foundation_publication.py` on Windows. The local bundle is prepared,
+but publication remains unauthorized until Maria Smith explicitly approves it.

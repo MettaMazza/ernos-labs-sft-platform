@@ -1,0 +1,21 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "claim_id": "SFT-FOUNDATION-PART-EQUIVALENCE-001",
+  "title": "Cross-partition exact part equivalence",
+  "branch": "foundation",
+  "status": "independently_replicated",
+  "statement": "Two admitted exact positive part coordinates identify the same part exactly when their generated pair-cell common refinement is complete, disjoint and equal-fibred and their completely lifted held selections admit a one-to-one and onto pairing without additional scale data.",
+  "dependencies": ["SFT-FOUNDATION-ONE-001", "SFT-FOUNDATION-COUNT-001", "SFT-FOUNDATION-PART-001"],
+  "provenance_classes": ["forward_forcing"],
+  "candidate_grammar": {
+    "generator": "Generate the complete product of common-refinement coverage, overlap, equal-fibre status, refinement of each source partition, complete lifting of each held selection, pairing class and unforced-extra-data presence.",
+    "boundary": "All equivalence witnesses between two admitted exact positive part coordinates, using only a generated pair-cell common refinement and an exact pairing of their lifted selected-fibre traces.",
+    "completeness_certificate": "sha256:f883c0c836a4cf1c40af847db35c0b56e8169680b8498b1495fb1a22de0d393d"
+  },
+  "excluded_inputs": ["V2 fraction equivalence", "conventional multiplication or division", "cross-multiplication", "decimal comparison", "semantic numerical zero", "negative, irrational, imaginary or floating proof quantities", "completed infinity", "application or measured targets"],
+  "required_controls": ["false_premise", "tampered_source", "tampered_artifact", "boundary"],
+  "intended_certificate": "Independent regeneration of all 1,024 witness forms and pair-cell controls.",
+  "empirical_protocol": null,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23"
+}

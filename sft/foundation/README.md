@@ -10,12 +10,9 @@ independently replicated. Their claim packages are
 structural Fold is also admitted at
 [`SFT-FOUNDATION-FOLD-001`](../../claims/SFT-FOUNDATION-FOLD-001/).
 
-Cross-partition part equivalence, generated Fold assembly grammar, form
-enforcement and measured-value boundary remain separate future derivations. The
-count claim establishes the trace identity of a generated nonempty finite
-succession. The part claim establishes the held/whole coordinate only for a
-registered complete, disjoint, equal-fibred partition and nonempty contained
-selection. Neither installs conventional arithmetic or fraction equivalence.
-The Fold claim establishes only the first nontrivial equal, disjoint,
-held-labelled, returning distinction. Later claims must cite admitted dependency
-receipts and cannot be imported from V2 correspondence.
+Cross-partition part equivalence, complete finite Fold assembly, the recursive
+foundational form grammar, canonical form enforcement and the one-way measured-
+value boundary are also model-admitted. The frozen foundation current-knowledge
+inventory contains ten claims and no unclassified or frontier obligation. The
+branch paper and evidence map pass their independent local publication gate;
+publication authorization remains false.

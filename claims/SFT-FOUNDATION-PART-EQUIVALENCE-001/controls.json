@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-PART-EQUIVALENCE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject unequal refined selected counts",
+      "kind": "false_premise",
+      "observed_behavior": "the generated unequal example has no bijection",
+      "passed": true,
+      "receipt_hash": "sha256:7fd2448bfd5621edd9a54b8e7c941f722a2233d98aca9f443c6078c63f3b1fc3"
+    },
+    {
+      "expected_behavior": "reject a changed derivation source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:5e083bb4485927855fea2404ff3ce7d9bf33d6ea6247bde1e8ee0a067be5920a"
+    },
+    {
+      "expected_behavior": "accept the generated one-of-two and two-of-four refinement pairing but reject an added survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the equal example has a bijection and only the registered witness shape survives",
+      "passed": true,
+      "receipt_hash": "sha256:ee44dca41c7e2137ba135207468a227d576954b7a3113aed78064746edced271"
+    },
+    {
+      "expected_behavior": "refuse imported multiplication, division and decimal comparison",
+      "kind": "boundary",
+      "observed_behavior": "the witness uses nested generation and exact trace pairing only",
+      "passed": true,
+      "receipt_hash": "sha256:deec574f5a1863b6973af416a28ac402a775867f31d8cfdaad64394f0d9aafd5"
+    }
+  ]
+}
