@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ernos-labs.example/schemas/sft-engine-receipt-v3.json",
+  "title": "SFT v3 admission-engine receipt",
+  "type": "object",
+  "required": [
+    "engine_id",
+    "claim_id",
+    "accepted_evidence",
+    "model_admitted",
+    "closure_status",
+    "external_status",
+    "halted_stage",
+    "violations",
+    "gate_results",
+    "derivation_seal_hash",
+    "receipt_hash"
+  ],
+  "properties": {
+    "engine_id": {"const": "sft-v3-single-admission-engine/1"},
+    "claim_id": {"type": "string", "minLength": 1},
+    "accepted_evidence": {"type": "boolean"},
+    "model_admitted": {"type": "boolean"},
+    "closure_status": {"type": "string"},
+    "external_status": {"type": "string"},
+    "halted_stage": {"type": ["string", "null"]},
+    "violations": {"type": "array", "items": {"type": "string"}},
+    "gate_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate", "passed", "detail"],
+        "properties": {
+          "gate": {"type": "string"},
+          "passed": {"type": "boolean"},
+          "detail": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "derivation_seal_hash": {"type": ["string", "null"]},
+    "receipt_hash": {"type": "string"}
+  },
+  "additionalProperties": false
+}

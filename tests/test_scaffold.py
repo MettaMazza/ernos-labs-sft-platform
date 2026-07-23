@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from sft.cli import ROOT, repository_status
+from sft.cli import ROOT, engine_status, repository_status
 
 
 class ScaffoldTests(unittest.TestCase):
@@ -17,6 +17,13 @@ class ScaffoldTests(unittest.TestCase):
         self.assertEqual(status["registered_claims"], 0)
         self.assertEqual(status["admitted_claims"], 0)
         self.assertEqual(status["future_generation"], "v4-sft-derived-self-hosted")
+
+    def test_single_engine_policy_is_fail_closed(self) -> None:
+        status = engine_status()
+        self.assertFalse(status["axioms_permitted"])
+        self.assertFalse(status["free_parameters_permitted"])
+        self.assertTrue(status["halt_on_any_violation"])
+        self.assertTrue(status["census_admission_requires_accepted_receipt"])
 
     def test_every_json_artifact_parses(self) -> None:
         for path in ROOT.rglob("*.json"):

@@ -6,6 +6,11 @@ The third reconstruction uses Python because it is widely readable, portable
 and easy for independent researchers to run. The authoritative v3 route should
 be reproducible with a normal Python installation and the standard library.
 
+The supported host systems are macOS, Windows and Linux. Repository paths,
+commands, receipts and scientific interfaces must use one portable contract;
+no scientific claim may depend on a host-specific branch. Docker, a virtual
+machine and third-party Python packages are not baseline requirements.
+
 Python does not select SFT mathematics. It hosts exact representations,
 enumerators, proofs, receipts and interfaces.
 
@@ -22,6 +27,9 @@ enumerators, proofs, receipts and interfaces.
 - Prefer `unittest` for the portable baseline.
 - Keep optional performance dependencies outside the proof authority.
 - No notebook is an authoritative derivation or receipt.
+- Use `pathlib`, argument-vector subprocess calls and standard-library file
+  operations; never encode one host's shell syntax into scientific execution.
+- Treat host platform identity as receipt metadata only.
 
 Host-language indices, empty containers, byte offsets and process status codes
 are implementation mechanics, not SFT mathematical objects. Their use must
@@ -32,6 +40,16 @@ remain behind a documented boundary.
 Important results should generate portable C certificates or another
 independent, readable execution form. Generated code must recompute the result
 and controls; it must not merely contain the expected answer.
+
+## Portable blind execution
+
+The Python standard library cannot impose and attest an identical operating-
+system sandbox on macOS, Windows and Linux. V3 therefore uses one capability-
+closed prediction policy and separate target custody. Official prediction
+programs receive only registered values and have no filesystem, network,
+subprocess, clock, environment, dynamic-import or foreign-function instruction.
+The portable interpreter and its language must be derived before use; arbitrary
+Python does not qualify merely because it runs in a temporary directory.
 
 ## Version discipline
 

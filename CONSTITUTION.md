@@ -124,6 +124,10 @@ declared mathematical construction. An empirical record verifies a sealed
 relation to observation. These evidence classes are never substituted for one
 another.
 
+One versioned admission engine evaluates every v3 claim. Direct edits, prose
+declarations or application results cannot bypass its gates. Any violation
+halts admission and produces a rejection receipt identifying the failed law.
+
 ## 8. Empirical constitution
 
 Natural-science claims follow this order:

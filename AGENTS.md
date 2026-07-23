@@ -28,6 +28,9 @@ Convenience never overrides the scientific constitution.
 - Use applications only as validation domains.
 - Keep target data and scores structurally inaccessible before an empirical
   prediction seal.
+- Run every proposed v3 derivation through `SFTAdmissionEngine`; never edit the
+  census directly to simulate admission.
+- Preserve the engine's accepted or rejected receipt without rewriting it.
 - Preserve every completed row, including failures and unfavorable outcomes.
 - Ask before any push, publication, DOI action or coordinated update to older
   repositories.
@@ -47,6 +50,8 @@ Convenience never overrides the scientific constitution.
 - Do not describe an opaque predictor's accuracy as proof of an unstated law.
 - Do not modify the future v4 trigger merely to begin self-hosting early.
 - Do not attribute scientific authorship or publication authority to an agent.
+- Do not call a branch paper complete until its frozen current-knowledge
+  obligation inventory passes the branch publication gate.
 
 ## File placement
 

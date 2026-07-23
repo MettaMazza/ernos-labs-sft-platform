@@ -44,6 +44,13 @@ The prediction runtime must be structurally incapable of reading targets,
 comparison scores or post-seal measurements. Discipline or an agent promise is
 not an access control.
 
+V3 uses one portable capability policy on macOS, Windows and Linux. The
+prediction language contains no filesystem, network, subprocess, clock,
+environment, dynamic-import or foreign-function operation. A separate custodian
+holds the target package until the prediction seal exists. This requires only
+Python's standard library; it does not make the false claim that Python can
+uniformly sandbox arbitrary native code on all three systems.
+
 ### Complete output and seal
 
 Write the complete declared prediction, state trace, census and resources.
@@ -86,6 +93,7 @@ Every receipt records:
 - run and protocol identity;
 - source, dependency, input and artifact hashes;
 - runtime target-access audit;
+- capability-closure and separate-custody certificates;
 - complete output identity;
 - seal time and evaluator order;
 - all registered measurements;

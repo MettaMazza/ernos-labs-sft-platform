@@ -47,6 +47,10 @@ Each `claims/<claim-id>/` contains:
 Natural-science claims additionally reference their experiment registration,
 sealed prediction and post-seal measurement.
 
+All status transitions from `registered` onward are emitted by the single SFT
+admission engine. The census is a projection of accepted engine receipts, not a
+manually curated source of scientific authority.
+
 ## Admission questions
 
 A reviewer must be able to answer yes to all applicable questions:

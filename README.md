@@ -18,7 +18,9 @@ claim is admitted merely because it was closed in an earlier corpus.
 ## Language generations
 
 - **V3 - accessible reconstruction:** Python, standard-library-first, exact and
-  cold-readable. Python is the implementation host, not a source of SFT law.
+  cold-readable on macOS, Windows and Linux. Python is the implementation host,
+  not a source of SFT law. Docker and third-party packages are not baseline
+  requirements.
 - **V4 - final self-hosted reconstruction:** a future independent rebuild in
   SFT-derived languages, compiler principles and runtime structures. V4 begins
   only after the v3 census shows that the model is as close to corpus-complete
@@ -63,6 +65,8 @@ Every contribution is governed by [CONSTITUTION.md](CONSTITUTION.md). In brief:
 | [`sft/engineering_translation`](sft/engineering_translation/) | Translation of closed laws into bounded engineering experiments |
 
 The [directory map](docs/DIRECTORY_MAP.md) explains the complete repository.
+The [portability contract](docs/PORTABILITY.md) defines the one host interface
+used on macOS, Windows and Linux.
 
 ## Evidence classes
 
@@ -81,6 +85,23 @@ The repository never uses one status word for unlike evidence. A claim may be:
 The required files and transitions are defined in
 [CLAIM_LIFECYCLE.md](docs/CLAIM_LIFECYCLE.md).
 
+## One admission engine
+
+Every v3 derivation must execute through the
+[single SFT admission engine](docs/ENGINE_AUTHORITY.md). No result enters the
+model or census unless the engine accepts its foundation trace, zero-parameter
+registration, complete generated enumeration, unique forced survivor, adverse
+controls and independent validation. Empirical claims additionally require a
+blind prediction seal and separate post-seal measurement against registered
+data.
+
+The same engine emits a deterministic rejection receipt when an independent
+researcher invalidates any required gate.
+
+See the [current engine implementation status](docs/ENGINE_STATUS.md) for the
+implemented gates and the capability-interpreter work required before the first
+official empirical derivation.
+
 Natural-science work additionally follows
 [EMPIRICAL_METHOD.md](docs/EMPIRICAL_METHOD.md): development observation,
 explicit law, preregistration, target-inaccessible execution, sealed output,
@@ -91,9 +112,8 @@ post-seal measurement, adverse controls and complete-row preservation.
 The initial Python scaffold is intentionally small:
 
 ```sh
-python3 -m sft status
-python3 tools/validate_repository.py
-python3 -m unittest discover -s tests -v
+python -m sft status
+python tools/run_portable_checks.py
 ```
 
 These commands currently validate the repository constitution and report that

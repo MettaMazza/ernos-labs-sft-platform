@@ -7,4 +7,4 @@ enter only through registered claim packages and the repository constitution.
 __all__ = ["BUILD_GENERATION", "BUILD_PHASE"]
 
 BUILD_GENERATION = "v3-python-accessible"
-BUILD_PHASE = "constitutional-scaffold"
+BUILD_PHASE = "single-admission-engine"
