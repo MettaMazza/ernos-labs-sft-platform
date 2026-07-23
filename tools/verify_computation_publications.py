@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build and verify local publication bundles for both computation branches.
+"""Build and verify publication bundles for both computation branches.
 
-This command is fail-closed and performs no push, DOI reservation, upload or
-publication action.
+This fail-closed command reads each branch's recorded authorization state. It
+performs no push, DOI reservation, upload or publication action.
 """
 
 from __future__ import annotations
@@ -23,7 +23,6 @@ from sft.engine.publication import BranchInventory, PaperEvidence, PublicationGa
 from sft.engine.receipt_io import read_receipt  # noqa: E402
 
 
-PUBLICATION_AUTHORIZED = False
 REQUIRED_CLAIM_FILES = (
     "registration.json", "WHY_DERIVATION_CHECK.md", "candidate_census.json",
     "elimination_receipt.json", "controls.json", "certificate.json",
@@ -36,6 +35,7 @@ CONFIGS = {
         "paper": ROOT / "publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md",
         "pdf": ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf",
         "directory": ROOT / "publications/current/computation",
+        "metadata": ROOT / "publication/computation_zenodo_metadata.json",
         "schema": "sft-v3-classical-computation-paper-evidence-map/1",
     },
     "quantum_computation": {
@@ -43,6 +43,7 @@ CONFIGS = {
         "paper": ROOT / "publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md",
         "pdf": ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001.pdf",
         "directory": ROOT / "publications/current/quantum_computation",
+        "metadata": ROOT / "publication/quantum_computation_zenodo_metadata.json",
         "schema": "sft-v3-quantum-computation-paper-evidence-map/1",
     },
 }
@@ -96,7 +97,14 @@ def build_evidence_map(branch_id: str) -> dict[str, Any]:
     if not paper.is_file() or not pdf.is_file():
         raise ValueError(f"{branch_id} paper source or PDF is missing")
     paper_text = paper.read_text(encoding="utf-8")
-    if "LOCAL PREPUBLICATION" not in paper_text or "publication is not yet authorized" not in paper_text:
+    publication = read_json(config["metadata"])
+    authorized = bool(publication["publication_authorized"])
+    doi = publication.get("doi", "")
+    if doi and doi not in paper_text:
+        raise ValueError(f"{branch_id} paper omits its reserved or published DOI")
+    if authorized and ("LOCAL PREPUBLICATION" in paper_text or "publication is not yet authorized" in paper_text):
+        raise ValueError(f"{branch_id} authorized paper still carries a draft boundary")
+    if not authorized and ("LOCAL PREPUBLICATION" not in paper_text or "publication is not yet authorized" not in paper_text):
         raise ValueError(f"{branch_id} draft does not preserve the publication boundary")
     entries = []
     for order, claim_id in enumerate(inventory.required_claim_ids, 1):
@@ -150,17 +158,17 @@ def build_evidence_map(branch_id: str) -> dict[str, Any]:
         "claims": entries,
         "complete_claim_coverage": True,
         "ready_to_publish": True,
-        "publication_action_authorized": PUBLICATION_AUTHORIZED,
+        "publication_action_authorized": authorized,
     }
 
 
-def controls(value: Mapping[str, Any], inventory: BranchInventory) -> None:
+def controls(value: Mapping[str, Any], inventory: BranchInventory, authorized: bool) -> None:
     if tuple(row["claim_id"] for row in value["claims"]) != inventory.required_claim_ids:
         raise ValueError("paper evidence map omits or reorders a claim")
     if not value["complete_claim_coverage"] or not value["ready_to_publish"]:
         raise ValueError("paper evidence map is not comprehensive and ready")
-    if value["publication_action_authorized"] is not False:
-        raise ValueError("local draft must not carry publication authorization")
+    if value["publication_action_authorized"] is not authorized:
+        raise ValueError("paper evidence map differs from the recorded publication authorization")
     missing = list(value["claims"][:-1])
     if tuple(row["claim_id"] for row in missing) == inventory.required_claim_ids:
         raise AssertionError("missing-claim control did not fail")
@@ -174,7 +182,8 @@ def build_branch(branch_id: str) -> dict[str, Any]:
     config = CONFIGS[branch_id]
     inventory = load_inventory(branch_id)
     evidence_map = build_evidence_map(branch_id)
-    controls(evidence_map, inventory)
+    authorized = bool(read_json(config["metadata"])["publication_authorized"])
+    controls(evidence_map, inventory, authorized)
     evidence_path = config["directory"] / "evidence_map.json"
     write_json(evidence_path, evidence_map)
     census = census_entries(branch_id)
@@ -200,7 +209,7 @@ def build_branch(branch_id: str) -> dict[str, Any]:
         "comprehensive_derivation_coverage": True,
         "controls_passed": True,
         "publication_gate_receipt_hash": receipt.receipt_hash,
-        "publication_authorized": PUBLICATION_AUTHORIZED,
+        "publication_authorized": authorized,
         "ready_to_publish": True,
     }
     write_json(config["directory"] / "manifest.json", manifest)
@@ -220,12 +229,13 @@ def build_branch(branch_id: str) -> dict[str, Any]:
 def main() -> int:
     for branch_id in CONFIGS:
         result = build_branch(branch_id)
-        print(f"SFT {branch_id.upper()} LOCAL PUBLICATION GATE: PASS")
+        authorized = bool(read_json(CONFIGS[branch_id]["metadata"])["publication_authorized"])
+        print(f"SFT {branch_id.upper()} PUBLICATION GATE: PASS")
         print(f"claims: {result['claim_count']}")
         print(f"generated candidate classes: {result['candidate_count']}")
         print(f"paper hash: {result['paper_hash']}")
         print(f"publication receipt: {result['publication_receipt']}")
-        print("publication authorized: false")
+        print(f"publication authorized: {str(authorized).lower()}")
     return 0
 
 

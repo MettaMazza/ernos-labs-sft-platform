@@ -1,4 +1,4 @@
-"""Publication-readiness checks for the two local computation manuscripts."""
+"""Publication checks for the two computation branch manuscripts."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 class ComputationPublicationTests(unittest.TestCase):
-    def test_local_publication_gate_passes_without_authorization(self) -> None:
+    def test_publication_gate_passes_at_recorded_authorization_state(self) -> None:
         completed = subprocess.run(
             (sys.executable, str(ROOT / "tools/verify_computation_publications.py")),
             cwd=ROOT,
@@ -22,8 +22,8 @@ class ComputationPublicationTests(unittest.TestCase):
             check=False,
         )
         self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
-        self.assertIn("SFT COMPUTATION LOCAL PUBLICATION GATE: PASS", completed.stdout)
-        self.assertIn("SFT QUANTUM_COMPUTATION LOCAL PUBLICATION GATE: PASS", completed.stdout)
+        self.assertIn("SFT COMPUTATION PUBLICATION GATE: PASS", completed.stdout)
+        self.assertIn("SFT QUANTUM_COMPUTATION PUBLICATION GATE: PASS", completed.stdout)
 
     def test_evidence_maps_cover_frozen_inventories_exactly(self) -> None:
         for branch, expected in (("computation", 113), ("quantum_computation", 21)):
@@ -34,12 +34,13 @@ class ComputationPublicationTests(unittest.TestCase):
                 self.assertEqual(len(evidence["claims"]), expected)
                 self.assertTrue(evidence["complete_claim_coverage"])
 
-    def test_manifests_are_ready_but_not_authorized(self) -> None:
+    def test_manifests_match_recorded_authorization(self) -> None:
         for branch in ("computation", "quantum_computation"):
             with self.subTest(branch=branch):
                 manifest = json.loads((ROOT / f"publications/current/{branch}/manifest.json").read_text(encoding="utf-8"))
+                metadata = json.loads((ROOT / f"publication/{branch}_zenodo_metadata.json").read_text(encoding="utf-8"))
                 self.assertTrue(manifest["ready_to_publish"])
-                self.assertFalse(manifest["publication_authorized"])
+                self.assertEqual(manifest["publication_authorized"], metadata["publication_authorized"])
 
     def test_rendered_papers_are_real_nontrivial_pdfs(self) -> None:
         paths = (

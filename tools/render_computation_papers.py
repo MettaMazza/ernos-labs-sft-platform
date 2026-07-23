@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from reportlab.lib.enums import TA_CENTER
@@ -17,7 +18,12 @@ import render_platform_paper as base
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def cover(kicker_text: str, title_text: str, subtitle_text: str, statistics: str):
+def publication_state(branch_id: str) -> tuple[bool, str]:
+    metadata = json.loads((ROOT / f"publication/{branch_id}_zenodo_metadata.json").read_text(encoding="utf-8"))
+    return bool(metadata["publication_authorized"]), str(metadata.get("doi", ""))
+
+
+def cover(kicker_text: str, title_text: str, subtitle_text: str, statistics: str, authorized: bool, doi: str):
     title = ParagraphStyle("ComputationCoverTitle", fontName="Helvetica-Bold", fontSize=25, leading=30, textColor=base.ACCENT_DARK, alignment=TA_CENTER)
     subtitle = ParagraphStyle("ComputationCoverSubtitle", fontName="Helvetica", fontSize=13, leading=18, textColor=base.INK, alignment=TA_CENTER)
     kicker = ParagraphStyle("ComputationCoverKicker", fontName="Helvetica-Bold", fontSize=9, leading=12, textColor=base.ACCENT, alignment=TA_CENTER)
@@ -38,14 +44,15 @@ def cover(kicker_text: str, title_text: str, subtitle_text: str, statistics: str
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph(statistics + "<br/>23 July 2026<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph(statistics + "<br/>23 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
-        Paragraph("LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
+        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]
 
 
-def render(source: Path, output: Path, title: str, subtitle: str, kicker: str, header: str, subject: str, statistics: str) -> None:
+def render(branch_id: str, source: Path, output: Path, title: str, subtitle: str, kicker: str, header: str, subject: str, statistics: str) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
+    authorized, doi = publication_state(branch_id)
 
     def draw_page(canvas, doc):
         canvas.saveState()
@@ -58,7 +65,8 @@ def render(source: Path, output: Path, title: str, subtitle: str, kicker: str, h
             canvas.setFillColor(base.MUTED)
             canvas.drawString(20 * mm, height - 11.8 * mm, header)
             canvas.drawRightString(width - 20 * mm, 11 * mm, str(doc.page))
-            canvas.drawString(20 * mm, 11 * mm, "Maria Smith - 2026 - CC BY 4.0 - LOCAL PREPUBLICATION")
+            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - LOCAL PREPUBLICATION"
+            canvas.drawString(20 * mm, 11 * mm, footer)
         canvas.restoreState()
 
     document = BaseDocTemplate(
@@ -68,12 +76,13 @@ def render(source: Path, output: Path, title: str, subtitle: str, kicker: str, h
     )
     frame = Frame(document.leftMargin, document.bottomMargin, document.width, document.height, id="body")
     document.addPageTemplates([PageTemplate(id="paper", frames=[frame], onPage=draw_page)])
-    document.build(cover(kicker, title, subtitle, statistics) + [PageBreak()] + base.body_story(source.read_text(encoding="utf-8")))
+    document.build(cover(kicker, title, subtitle, statistics, authorized, doi) + [PageBreak()] + base.body_story(source.read_text(encoding="utf-8")))
     print(f"rendered {output}")
 
 
 def main() -> None:
     render(
+        "computation",
         ROOT / "publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md",
         ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf",
         "After Turing: The Fold Machine",
@@ -84,6 +93,7 @@ def main() -> None:
         "Third clean-room reconstruction - Classical Computation inventory complete<br/>113 admitted derivations - 28,928 generated candidates",
     )
     render(
+        "quantum_computation",
         ROOT / "publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md",
         ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001.pdf",
         "The Quantum Fold Machine",

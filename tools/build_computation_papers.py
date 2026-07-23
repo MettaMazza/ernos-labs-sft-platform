@@ -177,8 +177,14 @@ def derivation_section(spec, order: int, section: int, survivor_function) -> str
     return "".join(parts)
 
 
-def common_front_matter(title: str, subtitle: str, branch_label: str, claim_count: int, candidate_count: int, abstract: str, inventory_hash: str, keywords: str) -> list[str]:
-    return [
+def publication_state(branch_id: str) -> tuple[bool, str]:
+    metadata = load(ROOT / f"publication/{branch_id}_zenodo_metadata.json")
+    return bool(metadata["publication_authorized"]), str(metadata.get("doi", ""))
+
+
+def common_front_matter(branch_id: str, title: str, subtitle: str, branch_label: str, claim_count: int, candidate_count: int, abstract: str, inventory_hash: str, keywords: str) -> list[str]:
+    authorized, doi = publication_state(branch_id)
+    matter = [
         L(f"# {title}"),
         L(f"## {subtitle}"),
         L("**Maria Smith**<br>"),
@@ -187,8 +193,6 @@ def common_front_matter(title: str, subtitle: str, branch_label: str, claim_coun
         L("23 July 2026"),
         L(),
         L(f"{branch_label} Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction"),
-        L(),
-        L("**LOCAL PREPUBLICATION MANUSCRIPT - publication is not yet authorized.**"),
         L(),
         L("Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0."),
         L(),
@@ -207,12 +211,18 @@ def common_front_matter(title: str, subtitle: str, branch_label: str, claim_coun
         L(),
         L(f"**Keywords:** {keywords}"),
     ]
+    if doi:
+        matter[9:9] = [L(f"DOI: [{doi}](https://doi.org/{doi})"), L()]
+    if not authorized:
+        matter[10:10] = [L("**LOCAL PREPUBLICATION MANUSCRIPT - publication is not yet authorized.**"), L()]
+    return matter
 
 
 def build_computation() -> str:
     inventory = load(ROOT / "publications/inventories/computation.json")
     candidate_total = sum(2 ** len(spec.dimensions) for spec in COMPUTATION_SPECS)
     parts = common_front_matter(
+        "computation",
         "After Turing: The Fold Machine",
         "An Exact, Parameter-Free and Machine-Closed Derivation of Classical Computational Science from Smithian Fold Theory",
         "Classical Computation",
@@ -349,6 +359,7 @@ def build_quantum() -> str:
     inventory = load(ROOT / "publications/inventories/quantum_computation.json")
     candidate_total = sum(2 ** len(spec.dimensions) for spec in QUANTUM_SPECS)
     parts = common_front_matter(
+        "quantum_computation",
         "The Quantum Fold Machine",
         "An Exact, Parameter-Free and Machine-Closed Derivation of Reversible and Quantum Computation from Smithian Fold Theory",
         "Reversible and Quantum Computation",

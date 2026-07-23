@@ -7,7 +7,7 @@ Maria.Smith.Sftoe@gmail.com<br>
 
 Classical Computation Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
-**LOCAL PREPUBLICATION MANUSCRIPT - publication is not yet authorized.**
+DOI: [10.5281/zenodo.21518311](https://doi.org/10.5281/zenodo.21518311)
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0.
 
