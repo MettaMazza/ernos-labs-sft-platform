@@ -392,6 +392,32 @@ checkpoint count. No new physical law was generated in this reconciliation
 pass, and no adverse V1/V2 statement was erased or counted as confirmed by a
 different later result.
 
+26. A conservative V2 semantic pass has now reconciled fifty additional exact
+    predecessor observations to admitted V3 receipts. The accepted group
+    includes Fold periodicity and fibres, generator three, half-One support,
+    definite observation, free phase, strong self-source direction, exact
+    redshift equivalence, nonlinear optical operations, exact arithmetic,
+    parity, entropy, finite-fluid regularity, causal speed, interference,
+    atomic one-unit selection, baryon transport, cyclic phase, exact spacetime,
+    irreversibility/recurrence, hadron closure, stationary spectra, exclusion,
+    exact lattice curvature, Maxwell closure, prime-sector mass partitions,
+    inverse-square versus confinement transport, units, Dirac closure,
+    magnetic relativity and entanglement/no-signalling.
+
+Sixteen nominal mappings were deliberately refused after full statement-level
+comparison. Generic decay did not close exact branching weights; generic
+scattering did not force an equal pass/scatter split; generic fusion did not
+retain the old quarter-to-half-to-One path; pressure did not prove hydrostatic
+stability; resonance did not prove tidal locking; and magnetofluid composition
+did not yet supply the Alfven propagation law. Each refused row now carries a
+precise versioned-successor boundary.
+
+The live ledger is 294 same-strength closed and 204 open. Eighty-seven open
+rows have precise partial or successor requirements; 141 remain unmapped and
+require semantic review. These counts supersede every earlier checkpoint
+count. This was receipt reconciliation only: no engine execution or heavy test
+run was repeated.
+
 ## Active group
 
 Receipt-level reconciliation of the remaining atomic, nuclear,
@@ -399,7 +425,7 @@ island-of-stability and particle-prediction obligations against the complete
 live V3 Physics corpus. The cubic and hydrogen post-seal comparisons are
 finished and must not be regenerated. The atomic precision, molecular and
 newly registered stronger field/gravity successors are genuinely open. Continue
-reviewing the remaining 194 unmapped rows; generate a new law only after its
+reviewing the remaining 141 unmapped rows; generate a new law only after its
 obligation has been shown absent rather than merely unmapped.
 
 The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
