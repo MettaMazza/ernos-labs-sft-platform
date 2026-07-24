@@ -1,0 +1,93 @@
+{
+  "schema": "sft-v3-nuclear-residual-force-source-record/1",
+  "retrieval_date": "2026-07-24",
+  "custody": {
+    "classification": "observational_derivation",
+    "development_targets_already_known": true,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-prediction",
+    "empirical_prediction_protocol": true,
+    "target_inaccessible_during_prediction_execution": true,
+    "formal_relations_contain_measurement": false,
+    "measurements_select_formal_survivors": false,
+    "engine_prediction_sealed_before_target_release_within_run": true,
+    "complete_reported_uncertainties_retained": true,
+    "interaction_strength_channel_dependence_retained": true,
+    "one_quarter_not_conflated_with_measured_cross_section": true,
+    "range_is_scale_not_hard_cutoff": true
+  },
+  "sources": {
+    "pdg_mediator_masses": {
+      "source_id": "PDG-2025-LIGHT-MESON-MASS-RANGE-VECTOR",
+      "body": "Particle Data Group",
+      "citation": "S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024) and 2025 update",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/rpp2025-sum-mesons.pdf",
+      "reported_record": [
+        {
+          "mediator": "neutral-pion",
+          "mass_MeV": "134.9768",
+          "standard_uncertainty_MeV": "0.0005",
+          "status": "PDG summary-table value"
+        },
+        {
+          "mediator": "charged-pion",
+          "mass_MeV": "139.57039",
+          "standard_uncertainty_MeV": "0.00018",
+          "status": "PDG summary-table value"
+        },
+        {
+          "mediator": "rho-neutral",
+          "mass_MeV": "775.26",
+          "standard_uncertainty_MeV": "0.23",
+          "status": "PDG Breit-Wigner summary-table value"
+        },
+        {
+          "mediator": "omega",
+          "mass_MeV": "782.66",
+          "standard_uncertainty_MeV": "0.13",
+          "status": "PDG summary-table value"
+        }
+      ]
+    },
+    "nist_hbar_c": {
+      "source_id": "NIST-CODATA-2022-HBAR-C-MEV-FM",
+      "body": "National Institute of Standards and Technology / CODATA",
+      "citation": "E. Tiesinga et al., 2022 CODATA Recommended Values of the Fundamental Physical Constants",
+      "source_uri": "https://physics.nist.gov/cuu/pdf/all.pdf",
+      "reported_record": {
+        "quantity": "reduced Planck constant times speed of light",
+        "displayed_value_MeV_fm": "197.3269804",
+        "displayed_resolution_upper_MeV_fm": "197.3269805",
+        "uncertainty_status": "exact defining conversion; NIST table displays an ellipsis after the recorded digits"
+      }
+    },
+    "nist_neutron_scattering": {
+      "source_id": "NIST-NCNR-NEUTRON-HYDROGEN-DEUTERIUM-SCATTERING",
+      "body": "NIST Center for Neutron Research",
+      "source_uri": "https://www.ncnr.nist.gov/resources/activation/scattering_table.html",
+      "reported_record": {
+        "evaluation_speed_m_per_s": "2200",
+        "natural_hydrogen_total_scattering_cross_section_barn": "82.02",
+        "natural_hydrogen_cross_section_uncertainty_barn": "0.06",
+        "deuterium_total_scattering_cross_section_barn": "7.640",
+        "deuterium_cross_section_uncertainty_barn": "0.030",
+        "comparison_status": "both complete intervals are positive and disjoint; the measured interaction strength is channel-dependent"
+      }
+    },
+    "nist_pion_exchange_context": {
+      "source_id": "NIST-JRES-2005-PION-LONG-RANGE-COMPONENT",
+      "body": "National Institute of Standards and Technology",
+      "source_uri": "https://nvlpubs.nist.gov/nistpubs/jres/110/3/j110-3pag.pdf",
+      "reported_record": {
+        "context_statement": "pion exchange mediates the only long-range component of the interaction",
+        "scope": "published nucleon-nucleon weak-interaction experiment context; retained as correspondence, not as a formal premise or direct range measurement"
+      }
+    }
+  },
+  "comparison_policy": {
+    "provenance": "Observation informed the explicit successor. No particle name, mass, cross section, uncertainty, source locator or dimensional conversion is readable by the executable law. Enumeration and sealing precede target release.",
+    "residual": "Positive NIST neutron-hydrogen and neutron-deuterium scattering intervals support a nonempty interaction outside individually colour-neutral nucleon boundaries.",
+    "strength_boundary": "The large disjoint channel cross sections reject interpreting the exact structural quarter-One as a universal measured nuclear cross section or strength coefficient.",
+    "range": "The complete PDG mass intervals are translated through the NIST displayed hbar-c enclosure only after sealing. Pion reciprocal-mass ranges must lie above rho/omega ranges, and every value and uncertainty remains visible.",
+    "cutoff_boundary": "The reciprocal mass is a finite decay scale, not a claim that the interaction becomes numerical zero at a hard radius."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Raw colour or first-order external exchange is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed mass, conversion, scattering or context row is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, a fitted profile or forbidden proof values are rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Conflating quarter-One with a universal measured strength or hiding channel dependence fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:fb9533c76a840309597734cfd002f73b0cb62c5b2ced8f701cba26adae927fbb"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1",
+      "role": "development_only",
+      "source_id": "PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "PDG MeV, NIST MeV-fm and NIST barn inscriptions remain external records; formal execution uses exact normalized carriers only.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-formal-survivor-selectors-or-universal-quarter-strengths",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Residual interaction evidence remains positive, pion ranges remain above vector ranges, channel dependence is retained and quarter-One is not relabelled as a measured strength.",
+    "comparison_implementation_hash": "sha256:e20bffd54b85d40e65f717f48e79ecd14578d41002a104c75107135a9ba7bc4f",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if neutral leading closure or quarter order changes, reciprocal ordering fails, the complete pion and vector ranges overlap, either scattering interval ceases to be positive, channel dependence is erased, one-quarter is relabelled as a measured strength, or target access precedes sealing.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every mediator mass/range, conversion, scattering interval, channel difference, context scope and unfavorable universal-strength row exactly.",
+        "metric_id": "complete-residual-range-and-scattering-vector",
+        "unit_protocol": "Dimensional inscriptions remain external records; interval propagation and reciprocal ordering use exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1",
+      "source_id": "PDG-2025-LIGHT-MESON-MASS-RANGE-VECTOR",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/rpp2025-sum-mesons.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1",
+      "source_id": "NIST-CODATA-2022-HBAR-C-MEV-FM",
+      "source_uri": "https://physics.nist.gov/cuu/pdf/all.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST Center for Neutron Research",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1",
+      "source_id": "NIST-NCNR-NEUTRON-HYDROGEN-DEUTERIUM-SCATTERING",
+      "source_uri": "https://www.ncnr.nist.gov/resources/activation/scattering_table.html"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1",
+      "source_id": "NIST-JRES-2005-PION-LONG-RANGE-COMPONENT",
+      "source_uri": "https://nvlpubs.nist.gov/nistpubs/jres/110/3/j110-3pag.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal residual, mass, reciprocal range, scattering, channel, source, custody and row-retention product.",
+    "dependency_hashes": [
+      "sha256:0dbb3b516617ab9f47c94ddc9a3e15c4dfb3ad43097b4d1565cea9d54ca5045b",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered PDG pion/rho/omega mass interval, the complete NIST displayed hbar-c resolution enclosure, both NIST hydrogen/deuterium scattering intervals, their evaluation speed and the NIST pion-exchange context statement.",
+    "relation_hash": "sha256:f3103de7b18228f8fd9fb39e966db5340e16252a6c52c0a1973f53f0fe9fe97b",
+    "statement": "Positive NIST hydrogen and deuterium scattering support a nonempty residual interaction outside neutral nucleon boundaries, while their disjoint intervals reject identifying structural quarter-One with one universal measured strength. Complete PDG mass intervals force pion reciprocal ranges above rho/omega ranges; the post-seal NIST conversion places the pion envelope at a finite femtometre scale.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:fa25609c564dee82a5e4a9ec3b277aa614000de43ef6a60ec570cdf54a47115e",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:b1408f4608fea01e392522f57253caa36a288597238e65c96d584c422e3b553e",
+    "program_id": "SFT-EXP-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:089712709feaca20f365f4d8279dc1023b683ecba0f64384d732d745d7b9038d",
+    "experiments/external_sources/physics/snapshots/nuclear-residual-force-successor-source-record.json": "sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every residual, mass, range, scattering, context and custody row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026",
+      "target_id": "PDG-MEDIATOR-MASS-RANGE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026",
+      "target_id": "NIST-HBAR-C-RANGE-TRANSLATION"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026",
+      "target_id": "NIST-NEUTRON-SCATTERING"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026",
+      "target_id": "NIST-PION-LONG-RANGE-CONTEXT"
+    }
+  ]
+}

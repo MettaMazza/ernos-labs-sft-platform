@@ -814,3 +814,48 @@ closed at its full formal and empirical boundary. The live inheritance ledger
 is 312 same-strength closed and 186 open, with 51 mapped open and 135 unmapped
 open. This count supersedes section 34. Do not regenerate V-2 after compaction;
 select the next obligation from the live ledger after committing this group.
+
+36. V1 V-3 and V2 Step 141 residual nuclear interaction are admitted and must
+    not be regenerated after conversation compaction:
+   - `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`, engine receipt
+     `sha256:05a3a23d0f0fbea4618128f8cfd75440505666931efcda6f9e89fa2dc37fd22e`;
+   - derivation seal
+     `sha256:ee8c38f20a6b686540b9e97193be1750ca64e48a24ccdbc38de2217c9baa4ec8`;
+   - independent validation
+     `sha256:e0acd3bad57bcc5456249a6f2f795290349ff557de0f498036eb2dfbf8a676e8`;
+   - empirical validation
+     `sha256:b8601aa2e2cdf29a1b6dededbcf3b32ac99fe85536db82631d97ee20f25c7090`;
+   - measurement receipt
+     `sha256:f06863514328b5975eb742c2d40e4ba4f52b977cd3f579815b9abaf4dc706df1`;
+   - source record
+     `sha256:898f2c17eaadb3419aa5ee9be4519b21eeeaf5523045111bb0a04017d18a11d1`.
+
+Complete colour-three closure leaves the leading external colour act as the
+empty form. One retained boundary act from each of two neutral composites
+therefore forces the exact second-order support `(1/2)^2=1/4`, with the exact
+Fold return `1/4 -> 1/2 -> One`. The successor preserves this V2 result while
+closing its scope: quarter-One is the structural residual order, not a
+universal dimensional cross section or fitted force coefficient. A present
+mediator mass is a positive exact carrier, forcing normalized range `One/m`;
+an absent mass label is the unbounded class without importing numerical zero.
+Exact reciprocal ordering proves that every lighter positive mediator has the
+longer range. Finite colour-boundary support plus finite massive range forces
+locality and saturation without an imported exponential or hard cutoff.
+
+Only after the 1,024-form target-inaccessible grammar retained one survivor did
+the complete PDG/NIST vector open. Exact outward propagation of PDG neutral
+pion, charged pion, rho and omega mass intervals through the displayed NIST
+exact hbar-c conversion places the pion reciprocal-range envelope wholly above
+the rho/omega envelope. NIST hydrogen and deuterium total neutron-scattering
+intervals at 2200 m/s are both strictly positive, supporting a nonempty
+interaction outside neutral nucleon boundaries; the intervals are also
+disjoint, so the prohibited universal-quarter measured-strength reading is
+adversely rejected and retained. NIST's pion long-range-component statement is
+registered only as post-seal correspondence. The range remains a finite scale,
+not a numerical-zero radius.
+
+The focused successor test ran once and passed (`5 passed`). V1 V-3 and V2
+Step 141 are now closed at their full formal and empirical boundary. The live
+inheritance ledger is 314 same-strength closed and 184 open, with 51 mapped
+open and 133 unmapped open. This count supersedes section 35. Do not regenerate
+this group after compaction; commit it and proceed to V1 V-4.
