@@ -12,7 +12,8 @@ import re
 import subprocess
 import sys
 import tempfile
-from typing import Optional
+import time
+from typing import Callable, Optional
 from unittest.mock import patch
 
 from sft.engine import AuthorityLedger, EngineReceipt, SFTAdmissionEngine
@@ -23,6 +24,16 @@ from sft.engine.source import build_source_manifest
 
 class VerificationError(RuntimeError):
     """Raised when any repository, engine, coverage or derivation check fails."""
+
+
+ProgressCallback = Callable[[str], None]
+
+
+def _notify(progress: Optional[ProgressCallback], message: str) -> None:
+    """Report orchestration progress without changing verification state."""
+
+    if progress is not None:
+        progress(message)
 
 
 @dataclass(frozen=True)
@@ -64,7 +75,10 @@ def run_repository_validation(root: Path) -> None:
         raise VerificationError("repository validation failed:\n" + completed.stdout + completed.stderr)
 
 
-def run_core_coverage(root: Path) -> CoverageReport:
+def run_core_coverage(
+    root: Path,
+    progress: Optional[ProgressCallback] = None,
+) -> CoverageReport:
     """Run all unit/E2E tests and require every executable engine line."""
 
     engine_modules = tuple(sorted((root / "sft" / "engine").glob("*.py")))
@@ -84,13 +98,39 @@ def run_core_coverage(root: Path) -> CoverageReport:
             "-s",
             "tests",
         )
-        completed = subprocess.run(
-            command,
-            cwd=root,
-            text=True,
-            capture_output=True,
-            check=False,
-        )
+        if progress is None:
+            completed = subprocess.run(
+                command,
+                cwd=root,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+        else:
+            process = subprocess.Popen(
+                command,
+                cwd=root,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            started = time.monotonic()
+            while True:
+                try:
+                    stdout, stderr = process.communicate(timeout=30)
+                    break
+                except subprocess.TimeoutExpired:
+                    elapsed = int(time.monotonic() - started)
+                    _notify(
+                        progress,
+                        f"unit/E2E tests and core coverage: running ({elapsed}s elapsed)",
+                    )
+            completed = subprocess.CompletedProcess(
+                command,
+                process.returncode,
+                stdout,
+                stderr,
+            )
         if completed.returncode != 0:
             raise VerificationError("unit/E2E suite failed:\n" + completed.stdout + completed.stderr)
 
@@ -190,7 +230,10 @@ def _sealed_replay_environment(
             yield
 
 
-def rerun_registered_claims(root: Path) -> int:
+def rerun_registered_claims(
+    root: Path,
+    progress: Optional[ProgressCallback] = None,
+) -> int:
     """Recompute all admitted claims in census order without modifying evidence."""
 
     execution_manifest = json.loads(
@@ -208,7 +251,9 @@ def rerun_registered_claims(root: Path) -> int:
 
     authority = AuthorityLedger()
     engine = SFTAdmissionEngine(authority)
-    for entry, row in zip(entries, rows):
+    total = len(rows)
+    _notify(progress, f"derivation replay: start ({total} registered claims)")
+    for index, (entry, row) in enumerate(zip(entries, rows), 1):
         execution = _load_execution(root, entry)
         if execution.program.registration.claim_id != entry["claim_id"]:
             raise VerificationError("execution factory and manifest claim identities differ")
@@ -229,11 +274,28 @@ def rerun_registered_claims(root: Path) -> int:
         if receipt.receipt_hash != row.get("receipt_hash") or receipt != stored:
             raise VerificationError(f"recomputed receipt differs from census evidence: {entry['claim_id']}")
         authority.admit(receipt)
+        if index == 1 or index % 25 == 0 or index == total:
+            _notify(
+                progress,
+                f"derivation replay: {index}/{total} verified ({entry['claim_id']})",
+            )
     return len(rows)
 
 
-def verify_all(root: Path) -> VerificationReport:
+def verify_all(
+    root: Path,
+    progress: Optional[ProgressCallback] = None,
+) -> VerificationReport:
+    _notify(progress, "repository integrity: start")
     run_repository_validation(root)
-    coverage = run_core_coverage(root)
-    rerun_claims = rerun_registered_claims(root)
+    _notify(progress, "repository integrity: pass")
+    _notify(progress, "unit/E2E tests and core coverage: start")
+    coverage = run_core_coverage(root, progress=progress)
+    _notify(
+        progress,
+        "unit/E2E tests and core coverage: pass "
+        f"({coverage.tests_run} tests; {coverage.executed_lines}/{coverage.executable_lines} lines)",
+    )
+    rerun_claims = rerun_registered_claims(root, progress=progress)
+    _notify(progress, "complete verification: pass")
     return VerificationReport(coverage, rerun_claims)

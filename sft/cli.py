@@ -60,8 +60,11 @@ def main() -> None:
     elif args.command == "verify-all":
         from sft.verification import verify_all
 
-        report = verify_all(ROOT)
-        print("SFT COMPLETE VERIFICATION: PASS")
+        def progress(message: str) -> None:
+            print(f"[SFT verify-all] {message}", flush=True)
+
+        report = verify_all(ROOT, progress=progress)
+        print("SFT COMPLETE VERIFICATION: PASS", flush=True)
         print(f"unit and end-to-end tests passed: {report.coverage.tests_run}")
         print(
             "core engine executable-line coverage: "
