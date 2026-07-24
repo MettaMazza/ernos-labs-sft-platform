@@ -125,11 +125,11 @@ def cover():
         ),
         Spacer(1, 15 * mm),
         Paragraph(
-            "Third clean-room reconstruction - Information Science inventory complete"
+            "Third clean-room reconstruction - complete V1/V2 Information Science reconciliation"
             "<br/>Twelve admitted derivations - 11,776 generated candidate structures"
-            "<br/>Version 1.0 - publication authorized 23 July 2026"
+            "<br/>Seventy-seven prior obligations closed - none open"
+            "<br/>Version 1.1 - 24 July 2026"
             f"<br/>{doi()}"
-            "<br/>23 July 2026"
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,
         ),

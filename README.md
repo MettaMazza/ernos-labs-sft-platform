@@ -1558,8 +1558,14 @@ generated candidates. [Mathematics Branch Paper 001 version 1.1](publications/cu
 is the current exhaustive account, with its [rendered PDF](output/pdf/from-fold-to-mathematics-branch-paper-001.pdf)
 and version DOI [`10.5281/zenodo.21536012`](https://doi.org/10.5281/zenodo.21536012).
 
-The next dependency-ordered branch is Information Science. It must complete its
-own 763-entry categorical-owner and same-strength reconstruction before its
+Information Science is now reconstructed at current registered V1/V2 strength:
+77 of 77 owned atomic obligations are closed by 12 model-admitted claims over
+11,776 generated candidates. [Information Science Branch Paper 001 version 1.1](publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md)
+is the current exhaustive account, with its [rendered PDF](output/pdf/from-distinction-to-information-branch-paper-001.pdf)
+and version DOI [`10.5281/zenodo.21536202`](https://doi.org/10.5281/zenodo.21536202).
+
+The next dependency-ordered branch is Classical Computation. It must complete
+its own 763-entry categorical-owner and same-strength reconstruction before its
 existing Paper 001 receives a successor version patch.
 
 ## Data and code availability

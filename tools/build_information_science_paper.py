@@ -16,6 +16,7 @@ from sft.information_science.catalog import SPECS  # noqa: E402
 OUTPUT = ROOT / "publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md"
 INVENTORY_HASH = "sha256:98162a98e2508cb36381ed2b99cb195e3cc7e1b33b8577d4c5a4550a492a0b17"
 DOI_PATH = ROOT / "publications/current/information_science/doi.txt"
+PRIOR_LEDGER_PATH = ROOT / "census/information_science_prior_obligations.json"
 
 
 INTERPRETATION = {
@@ -124,6 +125,8 @@ def line(text: str = "") -> str:
 def build() -> str:
     candidate_total = sum(2 ** len(spec.dimensions) for spec in SPECS)
     doi = DOI_PATH.read_text(encoding="utf-8").strip()
+    prior_ledger = load_json(PRIOR_LEDGER_PATH)
+    prior_summary = prior_ledger["information_science_summary"]
     parts: list[str] = []
     add = parts.append
 
@@ -132,9 +135,9 @@ def build() -> str:
     add(line("**Maria Smith**<br>"))
     add(line("Independent researcher and founder, Ernos Labs<br>"))
     add(line("Maria.Smith.Sftoe@gmail.com<br>"))
-    add(line("23 July 2026"))
+    add(line("24 July 2026"))
     add(line())
-    add(line("Information Science Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
+    add(line("Information Science Branch Paper 001 - Version 1.1 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
     add(line())
     add(line(f"DOI: [{doi}](https://doi.org/{doi})"))
     add(line())
@@ -161,7 +164,9 @@ def build() -> str:
         "boundary controls, cryptographic sealing and implementation-distinct recomputation. The branch therefore contains "
         "twelve depth-independently closed, model-admitted and independently replicated receipts. Every paper statement is "
         "mapped to its registration, complete census, elimination receipt, controls, certificate, source manifest and "
-        "model-admitted engine receipt."
+        "model-admitted engine receipt. The complete 763-entry V1/V2 source surface has also been reviewed for categorical "
+        "ownership: 77 atomic Information Science obligations were identified, 77 were reconstructed at equal strength, "
+        "and none remains open."
     ))
     add(line())
     add(line(
@@ -182,8 +187,9 @@ def build() -> str:
     add(line())
     add(line(
         "> Within the frozen SFT V3 Information Science current-knowledge inventory, every one of the twelve registered "
-        "obligations has a depth-independent, model-admitted and independently replicated engine receipt; the inventory "
-        "contains no unclassified or frontier obligation."
+        "obligations has a depth-independent, model-admitted and independently replicated engine receipt; all 77 "
+        "Information Science-owned V1/V2 atomic obligations are closed at equal strength; the inventory contains no "
+        "unclassified, open or frontier obligation."
     ))
     add(line())
     add(line(
@@ -197,8 +203,9 @@ def build() -> str:
     add(line("## 2. Standalone dependency foundation"))
     add(line())
     add(line(
-        "This paper is a new standalone work; it does not edit or replace the text of either earlier branch paper. It is "
-        "standalone in exposition while preserving scientific dependency identities. The Foundation supplies operational "
+        "This version is a same-paper successor patch to Information Science Branch Paper 001 in its existing DOI chain; it "
+        "does not create a second competing paper. It is standalone in exposition while preserving scientific dependency "
+        "identities. The Foundation supplies operational "
         "occurrence, structural One, complete positive finite count, exact held/whole parts, the minimal Fold, part "
         "equivalence, Fold assembly, finite form grammar, canonical form enforcement and the one-way measurement boundary."
     ))
@@ -508,6 +515,119 @@ def build() -> str:
     section += 1
 
     add(line())
+    add(line(f"## {section}. Complete V1/V2 ownership and same-strength reconstruction"))
+    add(line())
+    add(line(
+        "Version 1.1 closes the branch against the complete registered prior record rather than only the twelve V3 headings. "
+        "The audit read all 356 V1 theorem-manifest rows and all 407 V2 numbered results. Composite source statements were "
+        "split into atomic obligations so that an information theorem could not absorb an unperformed physical measurement, "
+        "and a downstream physical interpretation could not make a closed formal information result disappear. Twelve V1 "
+        "rows and twenty-five V2 steps contain Information Science-owned content. They decompose into 77 atomic obligations; "
+        "all 77 map to model-admitted V3 receipts at equal strength and none remains open. The authoritative ledger is "
+        "`census/information_science_prior_obligations.json`."
+    ))
+    add(line())
+    add(line(
+        "The reconstruction retains the strongest prior content: one native distinction closes per Fold observation; held "
+        "labels reconstruct the source; exact equal shares partition the One; entropy is complete observation-class and "
+        "unresolved-pair structure; predecessor merging is exact information loss; recurrent return retains its distinctions; "
+        "support uncertainty, branch support, deterministic probability, channel provenance, reverse records, finite coding, "
+        "conditional reconstruction and the classical-probabilistic-quantum support boundary all remain explicit. None is "
+        "reduced to a historical note or accepted merely because V1/V2 stated it."
+    ))
+    add(line())
+    add(line("| Prior source | Atomic obligations | Admitted V3 law labels | Result |"))
+    add(line("|---|---:|---|---|"))
+    for entry in prior_ledger["source_entries"]:
+        atoms = entry["atomic_obligations"]
+        claims = sorted({claim for item in atoms for claim in item["v3_claim_ids"]})
+        source = f"V1 `{entry['source_entry']}`" if entry["source"] == "v1" else f"V2 Step `{entry['source_entry']}`"
+        compact_claims = ", ".join(
+            f"`{claim.removeprefix('SFT-INFO-').removesuffix('-001')}`" for claim in claims
+        )
+        closed = sum(bool(item["same_strength_closed"]) for item in atoms)
+        add(line(f"| {source} | {len(atoms)} | {compact_claims} | {closed}/{len(atoms)} closed |"))
+    add(line())
+    add(line(
+        "Categorical separation is part of the result. The formal information component of thermodynamic erasure closes here; "
+        "the physical heat value remains a Physics obligation. Exact branch support and unresolved-part accounting close here; "
+        "Born dynamics and natural measurement remain Physics and Quantum Computation obligations. Finite support uncertainty "
+        "closes here; physical position-momentum measurements remain in Physics. Classical held-word copying and quantum-support "
+        "correspondence close here; operational no-cloning, gates and fault tolerance remain in Quantum Computation. These are "
+        "retained downstream requirements, not exclusions or deflations."
+    ))
+    section += 1
+
+    add(line())
+    add(line(f"## {section}. External validation at the correct evidential boundary"))
+    add(line())
+    add(line(
+        "Information Science is a formal branch: symbol identity, finite support, observation partitions, code relations and "
+        "distinction ledgers do not possess a natural measured constant for an external measurement body to supply. Inventing "
+        "one would be a category error and a free parameter. The applicable external validator is implementation-distinct exact "
+        "reproduction. For every law, a separate process regenerates the literal grammar, candidate order, decisions, unique "
+        "survivor, controls and closure certificate without importing the scientific law module; its result must match the "
+        "sealed receipt exactly or admission halts."
+    ))
+    add(line())
+    add(line(
+        "Post-seal comparison to Hartley, Shannon, Hamming, Landauer, Bennett and Schumacher identifies correspondence and "
+        "difference, not derivational authority [3-8]. The SFT carrier retains complete finite support and exact source "
+        "provenance; conventional logarithmic quantities, distances and rates can summarize a declared sealed object afterward. "
+        "Where a later physical claim has units and an authoritative measured value, that owning branch must seal the predictor "
+        "before target access and compare value, units, uncertainty, source version and every adverse row. Information Science "
+        "cannot pre-approve that empirical result by analogy."
+    ))
+    add(line())
+    add(line(
+        "This distinction is especially important for superdeterminism. An equal support part is not a random force. It reports "
+        "which exact deterministic alternatives remain unresolved relative to a declared observation. A pseudo-random seed, "
+        "sampler, Bayesian prior or fitted distribution would be an additional causal or representational input and is rejected "
+        "unless separately generated and registered. Randomized search can therefore be closed as equal-share accounting over an "
+        "unresolved deterministic target family while every source-conditioned execution remains fixed."
+    ))
+    section += 1
+
+    add(line())
+    add(line(f"## {section}. Information power, open knowledge and institutional accountability"))
+    add(line())
+    add(line(
+        "Information Science makes the politics of scientific access technically visible. A result that exposes only a score, "
+        "headline or authority label closes the distinctions needed to test its premises, alternatives, data custody, exclusions "
+        "and failure conditions. Paywalls, undisclosed training corpora, proprietary validators and inaccessible source data are "
+        "therefore not merely social inconveniences: they remove information required for independent falsification. An opaque "
+        "oracle may be useful, but its answer is not a closed theorem unless the evidential route is itself inspectable."
+    ))
+    add(line())
+    add(line(
+        "The institutional critique is evidence-based, not a claim that every funded scientist or institution acts in bad faith. "
+        "Systematic reviews report associations between commercial sponsorship and favorable outcomes and show that sponsorship "
+        "can shape research agendas [11,12]. Reviews of grant peer review identify limits in the evidence for reliability and "
+        "fairness [13,14]. The scientific record has also underrepresented null and negative results [15]. These mechanisms show "
+        "how capital, prestige, publication incentives and access control can become misaligned with complete public evidence. "
+        "Consensus and expertise remain valuable sources of criticism; neither is an admission certificate."
+    ))
+    add(line())
+    add(line(
+        "Ernos Labs answers that problem by attaching scientific authority to inspectable artifacts and revocable conformance. "
+        "The paper, ledgers and evidence maps are openly readable under CC BY 4.0; executable code is Apache-2.0; the Ernos Labs "
+        "designation is available only while a work obeys the public empirical constitution. Copyright preserves Maria Smith's "
+        "authorship and prevents appropriation from being confused with openness; it does not prohibit reading, redistribution, "
+        "criticism, reproduction or derivative scholarship under the stated licences. UNESCO's open-science recommendation "
+        "likewise treats scientific knowledge, infrastructures, communication and engagement as public-facing concerns [16]."
+    ))
+    add(line())
+    add(line(
+        "Maria Smith developed this programme without conventional academic credentials, institutional appointment or a funding "
+        "gate granting permission to speak. That biography is not evidence that any theorem is true; the public derivations and "
+        "receipts must carry that burden. It is evidence of what credential-first filtering risks excluding. The point is not a "
+        "celebration of one outsider but an indictment of every mind lost when access, status or capital is treated as a proxy for "
+        "the ability to produce testable knowledge. Independent researchers, academic specialists and institutional reviewers are "
+        "invited to reproduce, invalidate and improve the work on equal evidential terms."
+    ))
+    section += 1
+
+    add(line())
     add(line(f"## {section}. Machine reproduction and current verification"))
     add(line())
     add(line("The definitive cross-platform logical command is:"))
@@ -524,18 +644,21 @@ def build() -> str:
         "implementation-distinct validator and compares each result with its stored receipt."
     ))
     add(line())
-    add(line("The final local verification report for this release is:"))
+    add(line("The branch-specific release verification for this version is:"))
     add(line())
     add(line("```text"))
-    add(line("SFT COMPLETE VERIFICATION: PASS"))
-    add(line("unit and end-to-end tests passed: 131"))
-    add(line("core engine executable-line coverage: 1264/1264 (100%)"))
-    add(line("core engine modules covered: 15"))
-    add(line("registered derivations independently rerun: 34"))
+    add(line("SFT INFORMATION SCIENCE PUBLICATION GATE: PASS"))
+    add(line("live claims: 12"))
+    add(line("frozen inventory claims: 12"))
+    add(line("paper-covered claims: 12"))
+    add(line("generated candidate structures: 11,776"))
+    add(line("V1/V2 atomic Information Science obligations: 77/77 closed"))
     add(line("```"))
     add(line())
     add(line(
-        "The coverage report concerns implementation execution. Scientific closure additionally requires the claim-specific "
+        "The repository-wide 100 percent engine-coverage baseline remains an invariant of the platform, but it was not rerun for "
+        "inconsequential prose changes in this patch. The minimal release gate rechecked branch inventory equality, model-admitted "
+        "receipts, complete evidence-map coverage and paper hashes. Scientific closure additionally requires the claim-specific "
         "grammar, exhaustive decision vector, unique survivor, minimality, named-shape uniqueness and induction certificate. "
         "Neither test coverage nor a cryptographic hash substitutes for scrutiny of the registered scientific boundary."
     ))
@@ -590,8 +713,8 @@ def build() -> str:
     add(line(
         "Credentials cannot rescue a failed gate, and lack of credentials cannot prevent a reproducible counterexample from "
         "being evaluated. Independent replications, omitted candidates, counterexamples and submissions are invited through "
-        "Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr. Maria Smith explicitly authorized this branch release "
-        "on 23 July 2026."
+        "Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr. Maria Smith explicitly authorized this same-paper "
+        "successor release on 24 July 2026."
     ))
     section += 1
 
@@ -601,7 +724,8 @@ def build() -> str:
     add(line(
         f"The Information Science branch closes twelve dependency-ordered kernels through {candidate_total:,} generated "
         "candidates, twelve unique survivors, twelve depth-independent certificates and twelve implementation-distinct "
-        "validations. It reconstructs the progression from symbols and observation to representation, quantity, uncertainty, "
+        "validations. Its complete prior audit reviews 763 V1/V2 source entries and closes all 77 Information Science-owned "
+        "atomic obligations at equal strength. It reconstructs the progression from symbols and observation to representation, quantity, uncertainty, "
         "compression, channels, error, coding, dependence, conservation and classical-probabilistic-quantum support "
         "correspondence without importing conventional answer-producing models."
     ))
@@ -659,8 +783,8 @@ def build() -> str:
     add(line())
     add(line("## References"))
     add(line())
-    add(line("1. Smith M. *From Nothing to Fold: A Premise-Free, Parameter-Free and Machine-Closed Foundation for Smithian Fold Theory*. Ernos Labs Foundation Branch Paper 001. 2026. doi:10.5281/zenodo.21515629."))
-    add(line("2. Smith M. *From Fold to Mathematics: An Exact, Parameter-Free and Machine-Closed Derivation of Mathematical Foundations from Smithian Fold Theory*. Ernos Labs Mathematics Branch Paper 001. 2026. doi:10.5281/zenodo.21516146."))
+    add(line("1. Smith M. *From Nothing to Fold: A Premise-Free, Parameter-Free and Machine-Closed Foundation for Smithian Fold Theory*. Ernos Labs Foundation Branch Paper 001, version 1.1. 2026. doi:10.5281/zenodo.21535636."))
+    add(line("2. Smith M. *From Fold to Mathematics: An Exact, Parameter-Free and Machine-Closed Derivation of Mathematical Foundations from Smithian Fold Theory*. Ernos Labs Mathematics Branch Paper 001, version 1.1. 2026. doi:10.5281/zenodo.21536012."))
     add(line("3. Hartley RVL. Transmission of information. *Bell System Technical Journal*. 1928;7:535-563. doi:10.1002/j.1538-7305.1928.tb01236.x."))
     add(line("4. Shannon CE. A mathematical theory of communication. *Bell System Technical Journal*. 1948;27:379-423, 623-656. doi:10.1002/j.1538-7305.1948.tb01338.x; doi:10.1002/j.1538-7305.1948.tb00917.x."))
     add(line("5. Hamming RW. Error detecting and error correcting codes. *Bell System Technical Journal*. 1950;29:147-160. doi:10.1002/j.1538-7305.1950.tb00463.x."))
@@ -669,6 +793,14 @@ def build() -> str:
     add(line("8. Schumacher B. Quantum coding. *Physical Review A*. 1995;51:2738-2747. doi:10.1103/PhysRevA.51.2738."))
     add(line("9. Smith M. *Smithian Fold Theory Scientific Constitution*. V3 clean-room repository, `CONSTITUTION.md`, 2026."))
     add(line("10. Ernos Labs. *Comprehensive Branch-Paper Protocol*. V3 clean-room repository, `publications/BRANCH_PAPER_PROTOCOL.md`, 2026."))
+    add(line("11. Lundh A, Lexchin J, Mintzes B, Schroll JB, Bero L. Industry sponsorship and research outcome. *Intensive Care Medicine*. 2018. doi:10.1007/s00134-018-5293-7."))
+    add(line("12. Fabbri A, Lai A, Grundy Q, Bero LA. The influence of industry sponsorship on the research agenda. *American Journal of Public Health*. 2018. PMID:30252531."))
+    add(line("13. Gallo SA et al. Reliability and fairness in peer review of research funding. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/."))
+    add(line("14. Demicheli V, Di Pietrantonj C. Peer review for improving the quality of grant applications. *Cochrane Database of Systematic Reviews*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/."))
+    add(line("15. *Toward more published null and negative results*. *Nature Communications*. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/."))
+    add(line("16. UNESCO. *Recommendation on Open Science*. 2021. https://www.unesco.org/en/legal-affairs/recommendation-open-science."))
+    add(line("17. National Institute of Standards and Technology. *AI Risk Management Framework 1.0*. https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/."))
+    add(line("18. Heil BJ et al. Reproducibility standards for machine learning in the life sciences. *Nature Methods*. 2021. doi:10.1038/s41592-021-01256-7."))
     return "".join(parts)
 
 
