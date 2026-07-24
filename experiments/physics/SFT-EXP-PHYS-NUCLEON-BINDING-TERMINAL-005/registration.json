@@ -1,0 +1,163 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEON-BINDING-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete colour, ledger or ordering carriers are rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record or bound snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitted mass terms or forbidden proof values are rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A one-percent boundary crossing, ordering reversal or interval overlap fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEON-BINDING-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:07a92cc5b8ed1665e462c2a908abe22bb7bc1dc78560cafc7c990c6470423f5e"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:2f75c5124ce570fad3becd1ff5901f6062c6dea05b5a41a1892819006fa6290e",
+      "role": "development_only",
+      "source_id": "PDG-NIST-NUCLEON-BINDING-2022-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "PDG MSbar masses and NIST MeV inscriptions remain external records; formal execution uses only normalized exact Fold carriers.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "nonconflation_policy": "the exact 1/128 structural cell is not asserted equal to a scheme-dependent current-quark mass ratio",
+    "proof_value_policy": "positive-generated-counts-exact-ratios-held-labels-and-empty-neutral-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered composition, strict inequality, scheme disclosure, uncertainty endpoint and ordering row passes while structural/current-mass nonconflation remains explicit.",
+    "comparison_implementation_hash": "sha256:bda393428c57b95ca7e97a829f2f118a5c351ef06b5a2905151f1ef680827da3",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEON-BINDING-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if qqq colour closure differs, either complete dominance inequality fails, structural and scheme-dependent quantities are conflated, d/u or neutron/proton intervals cease to order, the direct mass difference leaves propagated intervals, a source/uncertainty changes, or target access precedes sealing.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered colour/composition, scheme, dominance, nonconflation, d/u ordering, nucleon interval and direct-difference row exactly.",
+        "metric_id": "complete-composition-dominance-ordering-vector",
+        "unit_protocol": "External MeV units remain source records; all interval and fraction decisions use exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEON-BINDING-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:2f75c5124ce570fad3becd1ff5901f6062c6dea05b5a41a1892819006fa6290e",
+      "source_id": "PDG-2025-QUARK-MODEL",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-model.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:d544d099aa15739ec83d87711bd4c5b1e0a1032d6f70aaa4847ec78601f7aeae",
+      "source_id": "PDG-2025-QUARK-MASSES",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-masses.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST / CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-NUCLEON-MASS-ENERGY",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal composition, dominance, ordering, source, scheme, custody and row-retention product.",
+    "dependency_hashes": [
+      "sha256:00dec63ddc386935fbd830bbd14b335e6bd44266487db01bcb9288963b3ae90b",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered PDG quark-model and light-mass records plus NIST proton, neutron and direct mass-difference intervals, including all standard uncertainties and scheme/status disclosures.",
+    "relation_hash": "sha256:2f00e4d721115e62a86c35b98e527b5436d78d181f81d32b90ce1975e8e38625",
+    "statement": "PDG independently corresponds to a three-colour qqq singlet; both sealed 1/128 and the complete PDG uud current-mass fraction are below 1/100 while remaining explicitly non-identical objects; both residuals exceed 99/100; complete PDG d/u and NIST neutron/proton intervals preserve the sealed ordering.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:d2c91a4fbefbe8da6afd07e04ceab662dc560b578f7cb3b7438b24525bcb8e35",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEON-BINDING-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:061206938147923e22c130d73cc5a9e1c36ddce00c55a58dae21feef8b9c8fd8",
+    "program_id": "SFT-EXP-PHYS-NUCLEON-BINDING-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:11972106efc54cb68ad5d16c746b7c8016c2c0712f79175194c4de6499eaaf79",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/nucleon-binding-successor-source-record.json": "sha256:2f75c5124ce570fad3becd1ff5901f6062c6dea05b5a41a1892819006fa6290e",
+    "experiments/external_sources/physics/snapshots/pdg-2025-quark-masses.pdf": "sha256:d544d099aa15739ec83d87711bd4c5b1e0a1032d6f70aaa4847ec78601f7aeae"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered composition, interval, disclosure and control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEON-BINDING-2022-2026",
+      "target_id": "PDG-THREE-COLOUR-QQQ-SINGLET"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEON-BINDING-2022-2026",
+      "target_id": "PDG-LIGHT-QUARK-MASS-DOMINANCE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-NIST-NUCLEON-BINDING-2022-2026",
+      "target_id": "NIST-NUCLEON-MASS-ORDERING"
+    }
+  ]
+}

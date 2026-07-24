@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEON-BINDING-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:54063610f9d68deac3d5bedebe77094f529e4c1797a39007600ee7ff74366834"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f726e25682e5a2c5d4e6d66241b58d9ebe7d9a1fc97f541ad69fb788dc30f0ce"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:62b1a594364f0ae5025d07323672a17bf9e216d471708087ad46956473d0e28a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8afc24456299ab469c4baf3fa778a81b6eb71b94762f7a2872b38455570697f2"
+    }
+  ]
+}

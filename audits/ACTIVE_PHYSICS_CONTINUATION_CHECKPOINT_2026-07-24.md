@@ -723,3 +723,51 @@ closed at its full formal and empirical boundary. The live inheritance ledger
 is 310 same-strength closed and 188 open, with 51 mapped open and 137 unmapped
 open. This count supersedes section 32. Do not regenerate III-6 after
 compaction; select the next open Physics obligation from the live ledger.
+
+34. V1 V-1 nucleon composition and binding dominance is admitted, closed and
+    must not be regenerated after conversation compaction:
+   - `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`, engine receipt
+     `sha256:deedcfb769c2cf51ebea249bd3e319ee7ec95c8feb883210312badabfd8332ab`;
+   - derivation seal
+     `sha256:4508e335fbab4cd7f80721d0d407cb88a1060748dbf2e5f911a46826a02a3a19`;
+   - independent validation
+     `sha256:f6d63fd149b170330b8751cfde4235978017e34d6969dbdf3c232043adf7dad3`;
+   - empirical validation
+     `sha256:dc934885b849a805997db2c7431dec71100bf8246f6c9dd99abdc034248b8592`;
+   - measurement receipt
+     `sha256:743b67038fcd9c2914a510027363b31ca9c9250e9375c4c950937dc8ada4c8bc`;
+   - source record
+     `sha256:2f75c5124ce570fad3becd1ff5901f6062c6dea05b5a41a1892819006fa6290e`.
+
+The exact period-three colour orbit is `1/7, 2/7, 4/7` and closes to the One.
+Complete positive light-flavour charge-word enumeration uniquely yields the
+unit-positive `uud` proton and empty-neutral `udd` neutron. The already forced
+upper-quark depth seven supplies complete binary support 128; its single
+explicit cell and unique positive predecessor force the structural mass ledger
+`1/128 + 127/128 = One`. Thus the explicit bare share is strictly below
+`1/100` and the held-cycle share is strictly above `99/100` without importing
+a percentage.
+
+The admitted down/up cubic invariants were independently enclosed using exact
+rational brackets. The light down-minus-up lower bound is greater than the
+complete admitted terminal proton electromagnetic dressing, so replacing one
+up label by one down label leaves a positive net neutron surplus. No measured
+quark or nucleon mass occurs in the executable law.
+
+Only after the 4,096-form grammar retained one survivor and sealed did the
+complete PDG/NIST vector open. PDG independently retains three colours, qqq
+colour-singlet baryons and the full MSbar 2 GeV `u=2.20 +/- 0.07 MeV`,
+`d=4.69 +/- 0.05 MeV` rows. The complete `uud` current-mass fraction over the
+NIST proton interval remains below one percent and its positive residual above
+ninety-nine percent. The exact structural `1/128` cell is explicitly not
+conflated with that scheme-dependent current-mass ratio; their nonidentity is
+retained as a boundary rather than hidden. NIST proton `938.27208943 +/-
+0.00000029 MeV`, neutron `939.56542194 +/- 0.00000048 MeV` and direct
+difference `1.29333251 +/- 0.00000038 MeV` rows preserve the sealed ordering,
+with exact outward interval propagation.
+
+The focused successor test ran once and passed (`5 passed`). V1 V-1 is now
+closed at its full formal and empirical boundary. The live inheritance ledger
+is 311 same-strength closed and 187 open, with 50 mapped open and 137 unmapped
+open. This count supersedes section 33. Do not regenerate V-1 after compaction;
+select V1 V-2 from the live ledger as the next hadron obligation.
