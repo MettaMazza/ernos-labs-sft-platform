@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:aa5bac9837a7818ed70ba9ca95fa92717770e5029da870ed653a7c8f483cf173"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1d88222acb46af18d14b0cb9c13022ee6d500a6454fd8b6639c38e0590b8eb90"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cdf01f744269da954e96e5160deadcb7d7a46e6b4f481fbe58a74825b0e37a62"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a02ce3ddca54d64008d3aa110b8826d6ea8f659fc72c768e70774eb375ea5646"
+    }
+  ]
+}

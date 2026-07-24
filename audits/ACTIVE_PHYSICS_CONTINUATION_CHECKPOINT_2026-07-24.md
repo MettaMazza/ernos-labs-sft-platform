@@ -859,3 +859,63 @@ Step 141 are now closed at their full formal and empirical boundary. The live
 inheritance ledger is 314 same-strength closed and 184 open, with 51 mapped
 open and 133 unmapped open. This count supersedes section 35. Do not regenerate
 this group after compaction; commit it and proceed to V1 V-4.
+
+37. V1 V-4 and the binding-landscape obligation in V2 Step 64 are admitted,
+    closed and must not be regenerated after conversation compaction:
+   - `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`, engine receipt
+     `sha256:0f08011755d14b3c910034436a4560016125b467a28b35b01b6b6fe02364024d`;
+   - derivation seal
+     `sha256:92bbc440b513a0b6a735f8fb84734ae90b49ba302a3e57a8ff0f9afbcecd4a51`;
+   - independent validation
+     `sha256:209da4fec36c3294a70435456379bde2a65ed0f8115ee3e833da1eb351b702fe`;
+   - independent certificate
+     `sha256:15f531e8c5394402b340056decd1679d7d6b65be5e837b6766b4b29daf33b97d`;
+   - empirical validation
+     `sha256:2bb993c08bfae9dc917121d46bc3defd7689fd9c50922614c044e287d7769308`;
+   - measurement receipt
+     `sha256:3330a4b8df04fbeb9c633deb13ee4bf75167d025ba048136c1ff2ac2c862c99b`;
+   - source manifest
+     `sha256:686d8168c02407836389bf72041c38ac4c3f6fe5ebbe6413ff291f1e3d6aa542`.
+
+The executable law contains no nuclide name, measured binding energy,
+semi-empirical mass-formula coefficient or fitted residual. Short-range
+saturation supplies bulk One. One missing boundary act over the independently
+admitted binary-plus-generator interface supplies exact surface share `1/5`.
+The already admitted exact alpha weights every ordered distinct proton path.
+The independently admitted residual order `1/4` weights unmatched neutron/
+proton pair support and the complete even/even, odd/odd and mixed pairing
+classes. Boundary rank two over spatial rank three is never evaluated as an
+irrational cube root: exact positive rational lower and upper enclosures refine
+only until every comparison separates.
+
+For each mass, exact concavity reduces the complete charge/parity census to all
+integer neighbors that can contain its vertex. The formal execution exhausts
+25,303 such candidates across every mass from two through 4,095. The cutoff is
+not selected: `2^(down+up)=2^(5+7)=4096`, whose exact cubic radius is sixteen.
+At and beyond it, charge at most one-fifth forces at least `9/100` asymmetry
+loss, while charge above one-fifth forces a monotonically increasing Coulomb
+lower bound. Both tail upper bounds lie below the finite winner. Eight exact
+binary enclosure refinements are the first generated resolution at which one
+survivor separates: `A=62`, `Z=28`, `N=34`.
+
+Only after that coordinate and its all-mass tail certificate sealed did the
+complete AMDC AME2020 table open. Its raw identity is
+`sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307`.
+All 2,548 positive composite binding-energy-per-nucleon rows and their reported
+uncertainties enter the comparison. The two free-singleton `0.0` inscriptions
+remain explicit external empty-binding boundary rows and never enter the proof
+domain as numerical zero. AME2020 independently places nickel-62 at
+`8794.5555 +/- 0.0069 keV` per nucleon; its lower uncertainty endpoint exceeds
+every rival upper endpoint, with iron-58 second. The complete registered anchor
+vector rises from deuterium through helium-4, carbon-12 and iron-56 to nickel-62,
+then lies lower at lead-208 and uranium-238. Thus the inherited iron-region
+statement is strengthened to the exact nickel-62 coordinate, while the old
+unqualified iron-only maximum is retained and rejected as an adverse control.
+
+The focused successor test ran once and passed (`5 passed`). The live
+inheritance ledger is 316 same-strength closed and 182 open, with 51 mapped
+open and 131 unmapped open. V2 Step 150 intentionally remains open: its
+stellar-fusion chain and reaction-threshold content belongs to the later V-7
+successor and is not falsely closed by the binding landscape alone. This count
+supersedes section 36. Do not regenerate V-4 after compaction; commit it and
+proceed to V1 V-6 because V-5 was already closed before this continuation.

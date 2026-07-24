@@ -1,0 +1,162 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Any fitted or nonforced ledger carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed raw table, row, uncertainty or source identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Any changed coordinate, census or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, evaluated irrational, numerical model zero or incomplete tail proof is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "An iron-only maximum or omitted higher rival fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:f0e3940c2a3b328c1eaabb7d944960a0d95d2d833a58f18108dff1fd056d6988"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:d10a9474253b2d29fac71ee21352039659f2e5f4b7d75395416d361878a18ddc",
+      "role": "development_only",
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001",
+      "SFT-PHYS-MATTER-MASS-ENERGY-001"
+    ],
+    "external_reference_protocol": "The formal ledger is an exact normalized binding order; AME2020 keV per nucleon values remain post-seal external dimensional records.",
+    "measurement_record_policy": "all-2548-positive-composite-rows-and-two-singleton-boundary-rows-retained-with-reported-uncertainty",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The predicted 62/28/34 coordinate is the uniquely separated AME2020 maximum and the registered light/heavy curve directions hold.",
+    "comparison_implementation_hash": "sha256:d06d65925584bf81b36eb8e5f860d05f19bafb5a6bf2260394caeec7e36d9631",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if the complete measured table has another maximum, the predicted coordinate differs, uncertainty intervals erase the separation, either curve direction fails, any numeric rival is omitted, or target access precedes the formal seal.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare the sealed coordinate with every positive composite AME2020 row, every uncertainty, the global rival envelope, light/heavy anchors and the adverse iron-only statement.",
+        "metric_id": "complete-binding-coordinate-curve-and-uncertainty-vector",
+        "unit_protocol": "keV-per-nucleon inscriptions remain external; every interval decision uses exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "landing_uri": "https://amdc.impcas.ac.cn/web/masseval.html",
+      "measurement_body": "Atomic Mass Data Center, Institute of Modern Physics, Chinese Academy of Sciences",
+      "publication_uris": [
+        "https://www-nds.iaea.org/amdc/ame2020/AME2020-a.pdf",
+        "https://www-nds.iaea.org/amdc/ame2020/AME2020-b.pdf"
+      ],
+      "raw_snapshot_hash": "sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:d10a9474253b2d29fac71ee21352039659f2e5f4b7d75395416d361878a18ddc",
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete post-seal coordinate, 2,548-positive-composite-row AME census, two singleton boundary rows, uncertainty, curve-direction, custody and unfavorable-iron-shortcut product.",
+    "dependency_hashes": [
+      "sha256:8720a1cfd81e0f253a4fc5f1afc7e697c457ab36d2a1ac5c716320e8718e2afc",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every positive composite AME2020 binding-energy-per-nucleon row, its reported standard uncertainty, both free-singleton empty-binding boundary inscriptions, the complete global ranking, registered light/heavy anchors, source identity and custody state.",
+    "relation_hash": "sha256:2e3f334ba805b00c0a247a9cd5ddf076e70fb33c55067c5a913d3b2526da3090",
+    "statement": "The complete 2,548-row positive-composite AME2020 census places nickel-62 at 8794.5555 +/- 0.0069 keV per nucleon. Its lower uncertainty endpoint exceeds every rival upper endpoint. The independently sealed A=62, Z=28, N=34 coordinate matches exactly; light anchors rise and lead-208/uranium-238 fall from the interior iron-nickel region.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:e7eb56a92a88ca5e76bcfd151767be0dbfa297f81755eaded35b3054592d0235",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:c30833ccf7a6119fc8f5f9234a7b1c4fd42843250682e569052f86575dee3239",
+    "program_id": "SFT-EXP-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-positive-composite-row-two-singleton-boundaries-uncertainty-rival-anchor-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:aa593ae97f92f58ee78ceaf2f249d74f89873c6b9f9e6d309f6f47fd7f18e7e3",
+    "experiments/external_sources/physics/snapshots/ame2020-mass_1.mas20": "sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+    "experiments/external_sources/physics/snapshots/nuclear-binding-curve-successor-source-record.json": "sha256:d10a9474253b2d29fac71ee21352039659f2e5f4b7d75395416d361878a18ddc"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered formal, AME, uncertainty, curve, custody and adverse row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-COMPLETE-BINDING-CENSUS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-GLOBAL-MAXIMUM"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-LIGHT-TO-IRON-NICKEL-RISE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-HEAVY-FALL"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-IRON-ONLY-ADVERSE"
+    }
+  ]
+}
