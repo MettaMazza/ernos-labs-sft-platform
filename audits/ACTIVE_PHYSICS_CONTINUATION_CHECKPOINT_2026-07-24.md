@@ -768,6 +768,49 @@ with exact outward interval propagation.
 
 The focused successor test ran once and passed (`5 passed`). V1 V-1 is now
 closed at its full formal and empirical boundary. The live inheritance ledger
-is 311 same-strength closed and 187 open, with 50 mapped open and 137 unmapped
+is 311 same-strength closed and 187 open, with 51 mapped open and 136 unmapped
 open. This count supersedes section 33. Do not regenerate V-1 after compaction;
 select V1 V-2 from the live ledger as the next hadron obligation.
+
+35. V1 V-2 light-hadron multiplets and Regge support are admitted, closed and
+    must not be regenerated after conversation compaction:
+   - `SFT-PHYS-HADRON-REGGE-TERMINAL-005`, engine receipt
+     `sha256:64caf5f62f3314597b9c525b694005ac4bc81f57446ff7e2dd436bd817646933`;
+   - derivation seal
+     `sha256:36d2f757779c14eda73684e49779c9f46f235f7a66b525805a2d1313d6b22daa`;
+   - independent validation
+     `sha256:b3a82a613b045dea1f1fdeee5551787bb3547b591c6cc1464a27ea0588ba2286`;
+   - empirical validation
+     `sha256:da1c36bd036f5c8ab81467f12ee9086b3ef35d493e1960a19a609887ee36806a`;
+   - measurement receipt
+     `sha256:0f3e190970773ede50717b7bff036ae1d691887b1d49d3bb134c66a92321a9e9`;
+   - source record
+     `sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358`.
+
+Complete generator-three flavour-word enumeration independently forces the
+light-meson organization `9=8+1`. Complete three-place exchange enumeration
+forces `27=10+8+8+1`: ten symmetric words, two eight-cell mixed Fold hands and
+one antisymmetric class. No conventional SU(3) representation enters the
+executable law. One retained fixed-tube act per positive spin successor proves
+the depth-independent normalized squared-support law `Q(J)=J`; restoring exact
+positive anchor and unit carriers preserves one common successor step. The
+inherited finite multiplicity `2^d` is exact through depth seven.
+
+Only after the 1,024-form target-inaccessible grammar retained one survivor did
+the complete PDG vector open. PDG independently records nine as octet plus
+singlet and twenty-seven as ten plus eight plus eight plus one. All five
+registered natural-parity mass intervals - rho(770), a2(1320), rho3(1690),
+a4(1970) and rho5(2350) - rise strictly with spin. Exact outward interval
+propagation retains all four squared-mass steps. Their common intersection is
+empty. Therefore the inherited literal claim that these reported resonance
+masses have an exact common squared-mass step is closed as false at the
+registered measurement boundary; it is not hidden, fitted away or supplied a
+free residual. The exact structural theorem remains the normalized
+fixed-carrier affine support law. The PDG rho5 row's explicit `OMITTED FROM
+SUMMARY TABLE` status is retained.
+
+The focused successor test ran once and passed (`5 passed`). V1 V-2 is now
+closed at its full formal and empirical boundary. The live inheritance ledger
+is 312 same-strength closed and 186 open, with 51 mapped open and 135 unmapped
+open. This count supersedes section 34. Do not regenerate V-2 after compaction;
+select the next obligation from the live ledger after committing this group.

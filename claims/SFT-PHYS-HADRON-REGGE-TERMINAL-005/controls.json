@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-HADRON-REGGE-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a51239286297ee3bbf8b2985502ac279a2d0028270b705005f1328f1837f935d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:792f08f5e1624f6c8026ac2fb851d08fe34493dac3f85501c655ddfabdcf537e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ce1e1df74076e998d8540199220566bda0b71667a0f23a7b0648f9a952ab3bbd"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:29a2e04e67f50893cc95aaf395d84a178a79f4bd01e8616165309005cc110d5e"
+    }
+  ]
+}

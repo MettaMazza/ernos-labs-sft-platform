@@ -1,0 +1,160 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-HADRON-REGGE-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete flavour, exchange or tube support is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record, mass, uncertainty or status is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, forbidden values or a fitted tension/residual is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Concealing the empty exact-step intersection or rho5 omission status fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-HADRON-REGGE-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:c4b765c1f015b77dc01819d0162a8d319bc34e00dea7239090d0b9a6b67b84c2"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358",
+      "role": "development_only",
+      "source_id": "PDG-HADRON-MULTIPLETS-REGGE-2025"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "PDG MeV inscriptions remain external records; the formal theorem uses exact normalized fixed-carrier support.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-formal-survivor-selectors-or-fitted-tensions",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Both exact multiplet counts match, the complete trajectory remains ordered, the adverse empty common-step intersection is retained and no fitted correction is introduced.",
+    "comparison_implementation_hash": "sha256:9fd7dc011d0623cadd6b98ad3ebfd8b8b09d7c7196fafebbe069ea060c807a36",
+    "evaluator_id": "SFT-EXP-PHYS-HADRON-REGGE-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if either sealed partition differs, the normalized affine successor ceases to be exact, any registered mass/uncertainty/status row is lost, strict ordering changes, the exact common-step result is misstated, a fitted correction is introduced, or target access precedes sealing.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare both complete multiplet partitions and every registered spin, parity, mass, uncertainty, squared-mass step and listing-status row exactly.",
+        "metric_id": "complete-multiplet-and-five-state-trajectory-vector",
+        "unit_protocol": "External MeV and GeV-squared inscriptions remain source records; all interval propagation uses exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-HADRON-REGGE-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358",
+      "source_id": "PDG-2025-QUARK-MODEL-MULTIPLETS",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-model.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358",
+      "source_id": "PDG-2025-MESON-SUMMARY-NATURAL-PARITY-TRAJECTORY",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/rpp2025-sum-mesons.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358",
+      "source_id": "PDG-2025-RHO5-2350-LISTING",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-rho5-2350.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal multiplet, composition, trajectory, interval, status, custody, adverse-result and row-retention product.",
+    "dependency_hashes": [
+      "sha256:802cc4168bf3172bba71f44be67ebfc4900a50a01f110a377c4e6a6ad03eac3f",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered PDG nine-cell meson and twenty-seven-cell baryon partitions plus every mass, uncertainty, spin, parity and status row in the inherited five-state natural-parity trajectory.",
+    "relation_hash": "sha256:696e92e13b45fa68622f621faf3519a0616e0dfcb13090e926c51f535bd8a76b",
+    "statement": "The independent Fold counts equal PDG's 9=8+1 and 27=10+8+8+1 organizations.  The five registered resonance mass intervals rise strictly with spin, but the four exact squared-mass step intervals have empty common intersection.  Therefore literal exact equal spacing of these reported masses is rejected; the exact theorem remains the normalized fixed-carrier affine support law, without a fitted correction.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:bfbdebc7ba8a282f8b60112e27259707cc9de1e81ad7dc64308daca1f7fbaee8",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-HADRON-REGGE-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:82eb6b12aa6aa55a9bf8799a002289af8e091749fa729f5f006306c8abebbb35",
+    "program_id": "SFT-EXP-PHYS-HADRON-REGGE-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:3f4763c36c43f10be1bbc2f852d4609e5ea57777429a74612ffb9688d0ce7dd6",
+    "experiments/external_sources/physics/snapshots/hadron-regge-successor-source-record.json": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every multiplet, trajectory, interval, status and custody row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-HADRON-MULTIPLETS-REGGE-2025",
+      "target_id": "PDG-LIGHT-MESON-MULTIPLET"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-HADRON-MULTIPLETS-REGGE-2025",
+      "target_id": "PDG-LIGHT-BARYON-MULTIPLETS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-HADRON-MULTIPLETS-REGGE-2025",
+      "target_id": "PDG-NATURAL-PARITY-TRAJECTORY"
+    }
+  ]
+}
