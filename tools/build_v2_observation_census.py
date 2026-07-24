@@ -30,6 +30,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001",
         "SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001",
     ),
+    7: ("SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",),
     14: ("SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",),
     32: ("SFT-PHYS-SPACE-DIMENSION-THREE-001",),
     43: (
@@ -291,6 +292,16 @@ DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
         "failed_receipt_hash": "sha256:2b7023f72254b172e690e820cd99fa75810c261b6956bfc40dbb22ce63c66439",
         "admitted_claim_id": "SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001",
         "admitted_receipt_hash": "sha256:c74f9c45eab7c232ebf85fe2fd5aea24f07d167df3857dad50ffcc5c34732294",
+    },
+    7: {
+        "status": "closed_by_joint_structural_and_empirical_admission",
+        "closed": True,
+        "reason": (
+            "The exact leading 27/5 and native period-five deepening 279/52 were generated without density "
+            "inputs and both passed the complete Planck cold-dark/baryon density interval in the same engine run."
+        ),
+        "admitted_claim_id": "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
+        "admitted_receipt_hash": "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
     },
     14: {
         "status": "closed_by_exact_postseal_empirical_validation",

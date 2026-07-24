@@ -27,10 +27,10 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertFalse(policy["prior_observation_may_select_v3_candidate_or_survivor"])
 
     def test_unmapped_steps_block_completion(self) -> None:
-        self.assertEqual(self.census["mapped_step_count"], 116)
-        self.assertEqual(self.census["unmapped_step_count"], 291)
-        self.assertEqual(self.census["same_strength_closed_step_count"], 2)
-        self.assertEqual(self.census["same_strength_open_step_count"], 405)
+        self.assertEqual(self.census["mapped_step_count"], 117)
+        self.assertEqual(self.census["unmapped_step_count"], 290)
+        self.assertEqual(self.census["same_strength_closed_step_count"], 3)
+        self.assertEqual(self.census["same_strength_open_step_count"], 404)
         self.assertGreater(self.census["unmapped_step_count"], 0)
         self.assertTrue(self.census["status"].startswith("open_blocking"))
 
@@ -65,6 +65,14 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertEqual(
             row["same_strength_disposition"]["admitted_receipt_hash"],
             "sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9",
+        )
+
+    def test_dark_baryon_step_is_jointly_closed(self) -> None:
+        row = next(row for row in self.census["steps"] if row["step"] == 7)
+        self.assertTrue(row["same_strength_disposition"]["closed"])
+        self.assertEqual(
+            row["same_strength_disposition"]["admitted_receipt_hash"],
+            "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
         )
 
 

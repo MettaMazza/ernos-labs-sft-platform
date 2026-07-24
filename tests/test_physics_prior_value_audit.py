@@ -20,8 +20,8 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
 
     def test_published_and_live_physics_surfaces_are_not_conflated(self) -> None:
         self.assertEqual(self.audit["published_physics_claim_count"], 140)
-        self.assertEqual(self.audit["current_physics_claim_count"], 156)
-        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 16)
+        self.assertEqual(self.audit["current_physics_claim_count"], 157)
+        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 17)
 
     def test_inverse_alpha_is_owned_by_physics_and_missing_from_v1_paper(self) -> None:
         alpha = self.audit["inverse_alpha"]
@@ -68,6 +68,16 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
         self.assertNotIn(
             "SFT-PHYS-VALIDATION-CHARGED-LEPTON-CUBIC-001",
             {claim["claim_id"] for claim in census["claims"]},
+        )
+
+    def test_dark_baryon_value_is_jointly_closed(self) -> None:
+        row = self.audit["dark_baryon_fraction"]
+        self.assertEqual(row["leading_ratio"], "27/5")
+        self.assertEqual(row["refined_ratio"], "279/52")
+        self.assertTrue(row["same_strength_prior_disposition_closed"])
+        self.assertEqual(
+            row["admission_receipt_hash"],
+            "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
         )
 
     def test_physics_successor_publication_gate_fails_closed(self) -> None:

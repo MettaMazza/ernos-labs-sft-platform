@@ -1,5 +1,5 @@
 {
-  "mapped_step_count": 116,
+  "mapped_step_count": 117,
   "policy": {
     "branch_completion_requires_every_assigned_step_closed": true,
     "prior_answer_artifacts_may_enter_v3_derivation": false,
@@ -7,8 +7,8 @@
     "prior_results_are_observational_data": true,
     "prior_results_define_reconstruction_obligations": true
   },
-  "same_strength_closed_step_count": 2,
-  "same_strength_open_step_count": 405,
+  "same_strength_closed_step_count": 3,
+  "same_strength_open_step_count": 404,
   "schema": "sft-v3-prior-observation-census/1",
   "source_id": "SFT-V2-ONE-FOLD-MASTER-407",
   "source_sha256": "sha256:42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf",
@@ -189,8 +189,10 @@
       "title": "The charged-lepton mass cubic, forced from the colour count"
     },
     {
-      "explicit_mapping_status": "blocking_explicit_disposition_required",
-      "explicit_v3_claim_ids": [],
+      "explicit_mapping_status": "mapped_to_current_admitted_claims",
+      "explicit_v3_claim_ids": [
+        "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001"
+      ],
       "missing_mapped_claim_ids": [],
       "named_group_memberships": [
         "particle_neutrino_dark_sector_and_complete_inventory"
@@ -213,9 +215,11 @@
         "ok    the second-order DEEPENING is unique (forced, not fitted)"
       ],
       "same_strength_disposition": {
-        "closed": false,
-        "reason": "No complete same-strength V3 disposition is registered.",
-        "status": "blocking_explicit_disposition_required"
+        "admitted_claim_id": "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
+        "admitted_receipt_hash": "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
+        "closed": true,
+        "reason": "The exact leading 27/5 and native period-five deepening 279/52 were generated without density inputs and both passed the complete Planck cold-dark/baryon density interval in the same engine run.",
+        "status": "closed_by_joint_structural_and_empirical_admission"
       },
       "source_block_sha256": "sha256:8eb35e87526fdea4f60e64c30664391ef8d8aef922540318ed1607fb7e1c709d",
       "step": 7,
@@ -8625,5 +8629,5 @@
       "title": "The unbounded finite quantum fault-tolerance law"
     }
   ],
-  "unmapped_step_count": 291
+  "unmapped_step_count": 290
 }

@@ -25,6 +25,10 @@ def blockers() -> list[str]:
         failures.append("Physics prior-value audit is not closed")
     if v1.get("unmapped_row_count"):
         failures.append(f"{v1['unmapped_row_count']} V1 observations lack explicit V3 disposition")
+    if v1.get("same_strength_open_row_count"):
+        failures.append(
+            f"{v1['same_strength_open_row_count']} V1 observations lack closed same-strength reconstruction"
+        )
     if v2.get("unmapped_step_count"):
         failures.append(f"{v2['unmapped_step_count']} V2 steps lack explicit V3 disposition")
     if v2.get("same_strength_open_step_count"):

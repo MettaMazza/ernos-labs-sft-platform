@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:13b87ee58afe7e2f83654afb81b6fcb56e86bd8cf9ef0bb0c5100b83cbfdb528"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4655befa0bb2e2327eb6a52c79ee6bfaa11e74f1e3e90651a0efe99374e58591"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ea4e84735302478c251e5608af61e891a7ed5edf79829dada9455096541c7c1a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:01bacc06ab1cdf3734a9b0d49205526e6878f557b380dee5fedccf17345520d1"
+    }
+  ]
+}

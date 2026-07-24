@@ -15,14 +15,14 @@ gravitation; continua and collective matter; and the Physics-to-Astronomy and
 Cosmology boundary.
 
 Those figures describe the immutable published v1 paper, not the current V3
-Physics corpus. Sixteen Physics claims were admitted afterward: generator
+Physics corpus. Seventeen Physics claims were admitted afterward: generator
 three; stable three-space; boundary rank two; inverse-square dilution; the
 source-boundary checker; inverse fine structure; orbit-cell capacity; colour
 coupling; nuclear closures; the atomic endpoint; and post-seal checks of inverse
 alpha, inverse-square response and nuclear closures, plus the exact
 charged-lepton cubic invariant law, its empirically admitted terminal
-refinement and the exact Koide validation. The live Physics namespace therefore
-contains 156 admitted claims. The inverse-alpha derivation and CODATA
+refinement, the exact Koide validation and the jointly empirical dark-to-baryon
+fraction. The live Physics namespace therefore contains 157 admitted claims. The inverse-alpha derivation and CODATA
 check are categorically Physics results even though their first exhaustive
 paper treatment appeared downstream in the Chemistry paper.
 
@@ -45,6 +45,8 @@ derivation then generated a 1,024-form terminal alpha/depth refinement that
 passed both complete CODATA intervals in the same admission run. V2 Step 6 is
 closed at that refined boundary. The exact Koide `2/3` consequence separately
 passed an all-interval rational-enclosure test, closing V2 Step 14.
+The exact dark/baryon ratios `27/5` and `279/52` passed the complete Planck
+density interval in their admission run, closing V2 Step 7 and V1 N8b.
 
 The v1 inventory is no longer eligible to be described as the current complete
 Physics branch. A successor paper is blocked until every V1/V2 physical value
