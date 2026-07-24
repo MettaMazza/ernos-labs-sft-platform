@@ -4,8 +4,8 @@
   "status": "open_blocking",
   "materials_work_paused": true,
   "published_physics_claim_count": 140,
-  "current_physics_claim_count": 159,
-  "postpublication_physics_claim_count": 19,
+  "current_physics_claim_count": 160,
+  "postpublication_physics_claim_count": 20,
   "postpublication_physics_claim_ids": [
     "SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001",
     "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001",
@@ -15,6 +15,7 @@
     "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
     "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
     "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+    "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
     "SFT-PHYS-FIELD-INVERSE-SQUARE-001",
     "SFT-PHYS-MEAS-BOUNDARY-GROWTH-001",
     "SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001",
@@ -29,10 +30,10 @@
   ],
   "prior_observation_censuses": {
     "v1_manifest_rows": 356,
-    "v1_explicitly_mapped_rows": 9,
+    "v1_explicitly_mapped_rows": 10,
     "v2_numbered_steps": 407,
-    "v2_explicitly_mapped_steps": 119,
-    "v2_unmapped_steps": 288
+    "v2_explicitly_mapped_steps": 121,
+    "v2_unmapped_steps": 286
   },
   "published_numeric_correspondence_classification": {
     "reported_count": 14,
@@ -124,6 +125,27 @@
     "v2_step": 187,
     "same_strength_prior_disposition_closed": true,
     "scope_boundary": "Structural absence plus consistency with the complete registered Planck parameter interval; the source analysis is not an SFT premise and does not alone establish mechanism."
+  },
+  "cosmic_budget": {
+    "claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+    "candidate_count": 2048,
+    "preserved_leading_values": ["2/3", "1/3", "5/96", "9/32"],
+    "leading_empirical_status": "all_four_outside_complete_planck_bao_68_percent_intervals",
+    "leading_failure_record": "audits/physics_cosmic_budget_leading_failure.json",
+    "refined_values": {
+      "vacuum": "11/16",
+      "matter": "5/16",
+      "baryon": "25/512",
+      "cold_dark": "135/512"
+    },
+    "refined_empirical_status": "all_four_inside_complete_planck_bao_68_percent_intervals",
+    "external_source": "PLANCK-2018-BAO-BASELINE-BUDGET",
+    "external_status": "empirically_tested_and_independently_replicated",
+    "provenance": "observational_derivation",
+    "admission_receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+    "v1_claim_id": "VIII-12",
+    "v2_steps": [15, 201],
+    "same_strength_prior_disposition_closed": true
   },
   "completion_gate": {
     "prior_results_are_observational_data": true,

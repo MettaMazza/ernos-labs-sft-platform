@@ -33,6 +33,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
     7: ("SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",),
     8: ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
     14: ("SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",),
+    15: ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
     32: ("SFT-PHYS-SPACE-DIMENSION-THREE-001",),
     43: (
         "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001",
@@ -118,6 +119,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-MAT-MECH-FRACTURE-001",
         "SFT-MAT-MECH-FATIGUE-CREEP-001",
     ),
+    201: ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
     249: ("SFT-CHEM-THERMO-REACTION-001", "SFT-CHEM-THERMO-DIRECTION-001"),
     266: (
         "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
@@ -328,6 +330,18 @@ DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
         "admitted_claim_id": "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",
         "admitted_receipt_hash": "sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9",
     },
+    15: {
+        "status": "closed_by_preserved_leading_rejection_and_depth_five_successor",
+        "closed": True,
+        "reason": (
+            "All four Step 15 leading values fail their complete Planck+BAO 68-percent intervals and remain "
+            "preserved as rejected. The later independently reconstructed depth-five boundary discriminator "
+            "forces 11/16, 5/16, 25/512 and 135/512; all four pass together in one successor admission."
+        ),
+        "failed_comparison": "audits/physics_cosmic_budget_leading_failure.json",
+        "admitted_claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+        "admitted_receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+    },
     187: {
         "status": "closed_by_absence_valued_observational_reconstruction_and_empirical_admission",
         "closed": True,
@@ -339,6 +353,17 @@ DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
         ),
         "admitted_claim_id": "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
         "admitted_receipt_hash": "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
+    },
+    201: {
+        "status": "closed_by_depth_five_successor_and_complete_four_value_validation",
+        "closed": True,
+        "reason": (
+            "The depth-five support, two boundary states per level, ten pinned matter states and twenty-two "
+            "free vacuum states were independently reconstructed. The exact 5/16 matter result and its full "
+            "four-value composition pass every complete Planck+BAO interval."
+        ),
+        "admitted_claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+        "admitted_receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
     },
 }
 

@@ -31,7 +31,7 @@ prior-observation accountability.
   `1539c1a4cc576ed9a167e1225534788a24737fcb10f53e9c10370dfd7c82d3f6`.
 - V2 OneFoldMaster: 407 numbered results, SHA-256
   `42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf`.
-- Current V3 Physics claim packages: 159.
+- Current V3 Physics claim packages: 160.
 - Published Physics paper inventory: 132 required plus 8 supplemental claims.
 
 The complete source-row censuses are
@@ -58,7 +58,7 @@ in Chemistry.
 
 ### PVA-02 — published Physics inventory is behind the live corpus
 
-The Physics v1 paper covers 140 claims. The live corpus now has 159. Nineteen
+The Physics v1 paper covers 140 claims. The live corpus now has 160. Twenty
 post-publication admissions are generator three, stable three-space, boundary
 rank two, inverse-square dilution, the boundary-growth checker, inverse alpha,
 orbit-cell capacity, colour coupling, nuclear closures, atomic endpoint, and
@@ -66,7 +66,8 @@ post-seal checks of inverse alpha, inverse-square response and nuclear closure,
 plus the exact charged-lepton cubic invariant law, its jointly empirical
 terminal self-coupling refinement, the exact Koide validation, the jointly
 admitted dark-to-baryon fraction, the Hubble calibration reconstruction and
-the absence-valued spatial-flatness reconstruction.
+the absence-valued spatial-flatness reconstruction and the refined four-part
+cosmic budget.
 
 The v1 paper remains an immutable record of its declared inventory, but it is
 not the current complete Physics paper.
@@ -76,9 +77,9 @@ not the current complete Physics paper.
 Before this correction there was no complete V1/V2 claim-to-V3 map. The new
 V2 census registers all 407 steps. After importing the already executed direct
 correspondences from the Materials, Chemistry, Information, Computation and
-Quantum Computation evidence surfaces and the first new prior-value laws, 119 currently have an explicit
-claim-level disposition; 288 still block completion. The V1 census registers all 356
-manifest rows; nine now have explicit mappings and 347 remain unmapped.
+Quantum Computation evidence surfaces and the first new prior-value laws, 121 currently have an explicit
+claim-level disposition; 286 still block completion. The V1 census registers all 356
+manifest rows; ten now have explicit mappings and 346 remain unmapped.
 
 An unmapped row does not prove that its subject is absent from V3. It proves
 that branch completion cannot yet establish reproduction of the earlier result
@@ -228,11 +229,25 @@ the complete 68-percent interval contains structural absence. No numerical
 zero or negative SFT proof scalar is constructed. The joint receipt is
 `sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66`.
 
+V2 Step 15 is not accepted by approximate resemblance. Its leading values
+`2/3`, `1/3`, `5/96` and `9/32` all lie outside their complete Planck+BAO
+68-percent intervals; the exact failure is preserved in
+`audits/physics_cosmic_budget_leading_failure.json`. The later Step 201
+depth-five discriminator was independently reconstructed: support `32`, two
+boundary-pinned states per each of five depths, ten matter states and twenty-two
+vacuum states. Composed with the admitted internal `5/32 : 27/32` matter
+partition, it forces vacuum `11/16`, matter `5/16`, baryon `25/512` and cold
+dark `135/512`. All four refined values pass together after exact outward
+propagation through all five required Planck+BAO rows. Receipt:
+`sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d`.
+This closes V2 Steps 15 and 201 and V1 VIII-12 without erasing the failed
+leading comparison.
+
 ## Existing evidence boundary
 
 This audit does not erase or rewrite any engine receipt or published DOI. The
 140 Physics v1 claims remain admitted at their exact registered boundaries, and
-the nineteen later claims retain their own receipts. What is withdrawn is the
+the twenty later claims retain their own receipts. What is withdrawn is the
 broader inference that those artifacts already constitute the complete current
 Physics branch.
 

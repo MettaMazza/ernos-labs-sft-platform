@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e81d1523b010a9f8a9afdc38fa6d75d1b6a71a2f668fd5e458e75158a2885e56"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4c9cf1328e2b99e37fd5530c3176c7bf5a2c22cd5ba908aa7335770f36029259"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:485b256c1b7845b037ee4d3664b2f5f8887919e64ff95e89fd02de409e9f8ff9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c3dc60a5559ebdbb06247db197bb11549765fa5140920078750c6578ae3701fb"
+    }
+  ]
+}

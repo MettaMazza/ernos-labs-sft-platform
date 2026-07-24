@@ -27,10 +27,10 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertFalse(policy["prior_observation_may_select_v3_candidate_or_survivor"])
 
     def test_unmapped_steps_block_completion(self) -> None:
-        self.assertEqual(self.census["mapped_step_count"], 119)
-        self.assertEqual(self.census["unmapped_step_count"], 288)
-        self.assertEqual(self.census["same_strength_closed_step_count"], 5)
-        self.assertEqual(self.census["same_strength_open_step_count"], 402)
+        self.assertEqual(self.census["mapped_step_count"], 121)
+        self.assertEqual(self.census["unmapped_step_count"], 286)
+        self.assertEqual(self.census["same_strength_closed_step_count"], 7)
+        self.assertEqual(self.census["same_strength_open_step_count"], 400)
         self.assertGreater(self.census["unmapped_step_count"], 0)
         self.assertTrue(self.census["status"].startswith("open_blocking"))
 
@@ -91,6 +91,24 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertEqual(
             row["same_strength_disposition"]["admitted_receipt_hash"],
             "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
+        )
+
+    def test_leading_budget_failure_and_refined_successor_are_both_preserved(self) -> None:
+        leading = next(row for row in self.census["steps"] if row["step"] == 15)
+        refined = next(row for row in self.census["steps"] if row["step"] == 201)
+        self.assertTrue(leading["same_strength_disposition"]["closed"])
+        self.assertEqual(
+            leading["same_strength_disposition"]["status"],
+            "closed_by_preserved_leading_rejection_and_depth_five_successor",
+        )
+        self.assertEqual(
+            leading["same_strength_disposition"]["failed_comparison"],
+            "audits/physics_cosmic_budget_leading_failure.json",
+        )
+        self.assertTrue(refined["same_strength_disposition"]["closed"])
+        self.assertEqual(
+            refined["same_strength_disposition"]["admitted_receipt_hash"],
+            "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
         )
 
 

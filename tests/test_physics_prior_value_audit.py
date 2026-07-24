@@ -20,8 +20,8 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
 
     def test_published_and_live_physics_surfaces_are_not_conflated(self) -> None:
         self.assertEqual(self.audit["published_physics_claim_count"], 140)
-        self.assertEqual(self.audit["current_physics_claim_count"], 159)
-        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 19)
+        self.assertEqual(self.audit["current_physics_claim_count"], 160)
+        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 20)
 
     def test_inverse_alpha_is_owned_by_physics_and_missing_from_v1_paper(self) -> None:
         alpha = self.audit["inverse_alpha"]
@@ -102,6 +102,23 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
             row["admission_receipt_hash"],
             "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
         )
+
+    def test_cosmic_budget_preserves_failure_and_admits_refinement(self) -> None:
+        row = self.audit["cosmic_budget"]
+        self.assertEqual(row["leading_empirical_status"], "all_four_outside_complete_planck_bao_68_percent_intervals")
+        self.assertEqual(row["refined_values"]["vacuum"], "11/16")
+        self.assertEqual(row["refined_values"]["matter"], "5/16")
+        self.assertEqual(row["refined_values"]["baryon"], "25/512")
+        self.assertEqual(row["refined_values"]["cold_dark"], "135/512")
+        self.assertEqual(row["refined_empirical_status"], "all_four_inside_complete_planck_bao_68_percent_intervals")
+        self.assertEqual(
+            row["admission_receipt_hash"],
+            "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+        )
+
+        failure = json.loads((ROOT / row["leading_failure_record"]).read_text())
+        self.assertFalse(failure["leading_values_all_passed"])
+        self.assertTrue(all(not item["overlap"] for item in failure["comparison"].values()))
 
     def test_physics_successor_publication_gate_fails_closed(self) -> None:
         from tools.verify_physics_successor_gate import blockers

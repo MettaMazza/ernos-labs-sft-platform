@@ -1,5 +1,5 @@
 {
-  "mapped_step_count": 119,
+  "mapped_step_count": 121,
   "policy": {
     "branch_completion_requires_every_assigned_step_closed": true,
     "prior_answer_artifacts_may_enter_v3_derivation": false,
@@ -7,8 +7,8 @@
     "prior_results_are_observational_data": true,
     "prior_results_define_reconstruction_obligations": true
   },
-  "same_strength_closed_step_count": 5,
-  "same_strength_open_step_count": 402,
+  "same_strength_closed_step_count": 7,
+  "same_strength_open_step_count": 400,
   "schema": "sft-v3-prior-observation-census/1",
   "source_id": "SFT-V2-ONE-FOLD-MASTER-407",
   "source_sha256": "sha256:42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf",
@@ -436,8 +436,10 @@
       "title": "The Koide relation"
     },
     {
-      "explicit_mapping_status": "blocking_explicit_disposition_required",
-      "explicit_v3_claim_ids": [],
+      "explicit_mapping_status": "mapped_to_current_admitted_claims",
+      "explicit_v3_claim_ids": [
+        "SFT-PHYS-COSMO-COMPLETE-BUDGET-001"
+      ],
       "missing_mapped_claim_ids": [],
       "named_group_memberships": [],
       "prior_measurement_observation": "The forced budget is exact (`2/3, 1/3, 5/96, 9/32`); measured (Planck 2018) `0.6889 \u00b1 0.0056`, `0.3111 \u00b1 0.0056`, `0.0493 \u00b1 0.0006`, `0.2607 \u00b1 0.0055` \u2014 each within about three percent, a zero-parameter budget, with no tighter forced order claimed. ---",
@@ -454,9 +456,12 @@
         "ok    Omega_cdm forced = 0.2812 (measured ~0.262)"
       ],
       "same_strength_disposition": {
-        "closed": false,
-        "reason": "No complete same-strength V3 disposition is registered.",
-        "status": "blocking_explicit_disposition_required"
+        "admitted_claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+        "admitted_receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+        "closed": true,
+        "failed_comparison": "audits/physics_cosmic_budget_leading_failure.json",
+        "reason": "All four Step 15 leading values fail their complete Planck+BAO 68-percent intervals and remain preserved as rejected. The later independently reconstructed depth-five boundary discriminator forces 11/16, 5/16, 25/512 and 135/512; all four pass together in one successor admission.",
+        "status": "closed_by_preserved_leading_rejection_and_depth_five_successor"
       },
       "source_block_sha256": "sha256:7249b850a0e5c88942edc236a3cf98e55e62bd89ee8085af1f6f0705ca5cb842",
       "step": 15,
@@ -4451,8 +4456,10 @@
       "title": "Strong-field gravity (no singularity, area law, r_s = 2M)"
     },
     {
-      "explicit_mapping_status": "blocking_explicit_disposition_required",
-      "explicit_v3_claim_ids": [],
+      "explicit_mapping_status": "mapped_to_current_admitted_claims",
+      "explicit_v3_claim_ids": [
+        "SFT-PHYS-COSMO-COMPLETE-BUDGET-001"
+      ],
       "missing_mapped_claim_ids": [],
       "named_group_memberships": [
         "extreme_gravity_information_and_nonstandard_spacetime",
@@ -4462,9 +4469,11 @@
       "prior_result_observation": "The covering tower at the counted depth 5 (minimal cover of 27) holds `2\u2075 = 32` states, built by explicit doubling. Two states per level are pinned as the level's boundary pair (`2\u00b75 = 10`); the free remainder is the vacuum share `22/32 = 11/16`, leaving the matter fraction `\u03a9_m = 5/16 = 0.3125`. Planck 2018 measures `0.315 \u00b1 0.007` \u2014 the forced value sits 0.8% below centre, inside 0.4\u03c3, zero parameters.",
       "recorded_check_lines": [],
       "same_strength_disposition": {
-        "closed": false,
-        "reason": "No complete same-strength V3 disposition is registered.",
-        "status": "blocking_explicit_disposition_required"
+        "admitted_claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+        "admitted_receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+        "closed": true,
+        "reason": "The depth-five support, two boundary states per level, ten pinned matter states and twenty-two free vacuum states were independently reconstructed. The exact 5/16 matter result and its full four-value composition pass every complete Planck+BAO interval.",
+        "status": "closed_by_depth_five_successor_and_complete_four_value_validation"
       },
       "source_block_sha256": "sha256:416e2cfe7a3d56ead02ee6f6f6a9fc9574aa634209740fbad02f603e8a1bfbaa",
       "step": 201,
@@ -8637,5 +8646,5 @@
       "title": "The unbounded finite quantum fault-tolerance law"
     }
   ],
-  "unmapped_step_count": 288
+  "unmapped_step_count": 286
 }
