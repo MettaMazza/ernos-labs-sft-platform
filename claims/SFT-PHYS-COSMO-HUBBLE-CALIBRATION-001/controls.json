@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e6a7e7f78a3e8655d01c36d33b35c823f5215d24eb4073dbf881de3c29eeba4c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:793381e00887efeac6ded724dc0422e9ba3039650cf85e5f288d49c70cbf0480"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3d16267cb16626a1efecb424ffc8cdc455c3733937fcaa52e48dd53ea0dd9f70"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:6a6c3eef48a63aab3af0d8af496a5247c390b8c5dbaccee665af301eaf944782"
+    }
+  ]
+}

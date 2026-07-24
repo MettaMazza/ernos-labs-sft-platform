@@ -27,10 +27,10 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertFalse(policy["prior_observation_may_select_v3_candidate_or_survivor"])
 
     def test_unmapped_steps_block_completion(self) -> None:
-        self.assertEqual(self.census["mapped_step_count"], 117)
-        self.assertEqual(self.census["unmapped_step_count"], 290)
-        self.assertEqual(self.census["same_strength_closed_step_count"], 3)
-        self.assertEqual(self.census["same_strength_open_step_count"], 404)
+        self.assertEqual(self.census["mapped_step_count"], 118)
+        self.assertEqual(self.census["unmapped_step_count"], 289)
+        self.assertEqual(self.census["same_strength_closed_step_count"], 4)
+        self.assertEqual(self.census["same_strength_open_step_count"], 403)
         self.assertGreater(self.census["unmapped_step_count"], 0)
         self.assertTrue(self.census["status"].startswith("open_blocking"))
 
@@ -73,6 +73,15 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertEqual(
             row["same_strength_disposition"]["admitted_receipt_hash"],
             "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
+        )
+
+    def test_hubble_step_is_reconstructed_and_jointly_closed(self) -> None:
+        row = next(row for row in self.census["steps"] if row["step"] == 8)
+        self.assertEqual(row["explicit_v3_claim_ids"], ["SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001"])
+        self.assertTrue(row["same_strength_disposition"]["closed"])
+        self.assertEqual(
+            row["same_strength_disposition"]["admitted_receipt_hash"],
+            "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
         )
 
 

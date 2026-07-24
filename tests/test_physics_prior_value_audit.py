@@ -20,8 +20,8 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
 
     def test_published_and_live_physics_surfaces_are_not_conflated(self) -> None:
         self.assertEqual(self.audit["published_physics_claim_count"], 140)
-        self.assertEqual(self.audit["current_physics_claim_count"], 157)
-        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 17)
+        self.assertEqual(self.audit["current_physics_claim_count"], 158)
+        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 18)
 
     def test_inverse_alpha_is_owned_by_physics_and_missing_from_v1_paper(self) -> None:
         alpha = self.audit["inverse_alpha"]
@@ -78,6 +78,18 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
         self.assertEqual(
             row["admission_receipt_hash"],
             "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
+        )
+
+    def test_hubble_calibration_is_jointly_closed_at_exact_ratio_boundary(self) -> None:
+        row = self.audit["hubble_calibration"]
+        self.assertEqual(row["leading_ratio"], "13/12")
+        self.assertEqual(row["refined_ratio"], "3305/3048")
+        self.assertEqual(row["external_ratio_interval"], ["720/679", "3704/3345"])
+        self.assertTrue(row["same_strength_prior_disposition_closed"])
+        self.assertEqual(row["provenance"], "observational_derivation")
+        self.assertEqual(
+            row["admission_receipt_hash"],
+            "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
         )
 
     def test_physics_successor_publication_gate_fails_closed(self) -> None:

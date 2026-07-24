@@ -15,14 +15,15 @@ gravitation; continua and collective matter; and the Physics-to-Astronomy and
 Cosmology boundary.
 
 Those figures describe the immutable published v1 paper, not the current V3
-Physics corpus. Seventeen Physics claims were admitted afterward: generator
+Physics corpus. Eighteen Physics claims were admitted afterward: generator
 three; stable three-space; boundary rank two; inverse-square dilution; the
 source-boundary checker; inverse fine structure; orbit-cell capacity; colour
 coupling; nuclear closures; the atomic endpoint; and post-seal checks of inverse
 alpha, inverse-square response and nuclear closures, plus the exact
 charged-lepton cubic invariant law, its empirically admitted terminal
-refinement, the exact Koide validation and the jointly empirical dark-to-baryon
-fraction. The live Physics namespace therefore contains 157 admitted claims. The inverse-alpha derivation and CODATA
+refinement, the exact Koide validation, the jointly empirical dark-to-baryon
+fraction and the Hubble calibration reconstruction. The live Physics namespace
+therefore contains 158 admitted claims. The inverse-alpha derivation and CODATA
 check are categorically Physics results even though their first exhaustive
 paper treatment appeared downstream in the Chemistry paper.
 
@@ -47,6 +48,14 @@ closed at that refined boundary. The exact Koide `2/3` consequence separately
 passed an all-interval rational-enclosure test, closing V2 Step 14.
 The exact dark/baryon ratios `27/5` and `279/52` passed the complete Planck
 density interval in their admission run, closing V2 Step 7 and V1 N8b.
+The Hubble reconstruction then generated the full V2 Step 8 result: exact
+matter/vacuum shares `1/3` and `2/3`, leading ratio `13/12`, depth-seven floor
+`127` and first-recursive ratio `3305/3048`. Both ratios passed the complete
+outward-propagated Planck 2018/SH0ES 2022 late-to-early interval in the same
+admission run, closing V2 Step 8 and V1 G11. Its provenance is explicitly
+`observational_derivation`, and its admitted scope is the dimensionless ratio
+correspondence—not an absolute Hubble magnitude or proof that two different
+measurement routes share the proposed mechanism.
 
 The v1 inventory is no longer eligible to be described as the current complete
 Physics branch. A successor paper is blocked until every V1/V2 physical value

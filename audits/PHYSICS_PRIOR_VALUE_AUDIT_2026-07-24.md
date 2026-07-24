@@ -31,7 +31,7 @@ prior-observation accountability.
   `1539c1a4cc576ed9a167e1225534788a24737fcb10f53e9c10370dfd7c82d3f6`.
 - V2 OneFoldMaster: 407 numbered results, SHA-256
   `42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf`.
-- Current V3 Physics claim packages: 157.
+- Current V3 Physics claim packages: 158.
 - Published Physics paper inventory: 132 required plus 8 supplemental claims.
 
 The complete source-row censuses are
@@ -58,14 +58,14 @@ in Chemistry.
 
 ### PVA-02 — published Physics inventory is behind the live corpus
 
-The Physics v1 paper covers 140 claims. The live corpus now has 157. Seventeen
+The Physics v1 paper covers 140 claims. The live corpus now has 158. Eighteen
 post-publication admissions are generator three, stable three-space, boundary
 rank two, inverse-square dilution, the boundary-growth checker, inverse alpha,
 orbit-cell capacity, colour coupling, nuclear closures, atomic endpoint, and
 post-seal checks of inverse alpha, inverse-square response and nuclear closure,
 plus the exact charged-lepton cubic invariant law, its jointly empirical
-terminal self-coupling refinement, the exact Koide validation and the jointly
-admitted dark-to-baryon fraction.
+terminal self-coupling refinement, the exact Koide validation, the jointly
+admitted dark-to-baryon fraction and the Hubble calibration reconstruction.
 
 The v1 paper remains an immutable record of its declared inventory, but it is
 not the current complete Physics paper.
@@ -75,9 +75,9 @@ not the current complete Physics paper.
 Before this correction there was no complete V1/V2 claim-to-V3 map. The new
 V2 census registers all 407 steps. After importing the already executed direct
 correspondences from the Materials, Chemistry, Information, Computation and
-Quantum Computation evidence surfaces and the first new prior-value laws, 117 currently have an explicit
-claim-level disposition; 290 still block completion. The V1 census registers all 356
-manifest rows; seven now have explicit mappings and 349 remain unmapped.
+Quantum Computation evidence surfaces and the first new prior-value laws, 118 currently have an explicit
+claim-level disposition; 289 still block completion. The V1 census registers all 356
+manifest rows; eight now have explicit mappings and 348 remain unmapped.
 
 An unmapped row does not prove that its subject is absent from V3. It proves
 that branch completion cannot yet establish reproduction of the earlier result
@@ -202,11 +202,26 @@ Planck 2018 abstract's cold-dark and baryon density values and both reported
 68-percent uncertainties. The joint receipt is
 `sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2`.
 
+V2 Step 8 and V1 G11 are now jointly closed. The complete 2,048-form V3
+reconstruction forces the oriented matter/vacuum partition `1/3 + 2/3 = 1`,
+depth-three support `8`, leading correction `1/12`, leading ratio `13/12`,
+depth-seven first-return floor `127` and first-recursive ratio `3305/3048`.
+The full Planck 2018 and SH0ES 2022 central-value and uncertainty intervals were
+propagated outward through late divided by early, producing exact interval
+`720/679` through `3704/3345`; both sealed ratios lie inside it. The claim is
+disclosed as an observational derivation because V1/V2 already recorded the
+answer. Its executable relation contains neither prior answer artifacts nor
+external Hubble values. The joint receipt is
+`sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88`.
+This closes the exact ratio correspondence only. It does not yet force an
+absolute Hubble magnitude or empirically establish that the distinct CMB and
+distance-ladder routes share the proposed calibration mechanism.
+
 ## Existing evidence boundary
 
 This audit does not erase or rewrite any engine receipt or published DOI. The
 140 Physics v1 claims remain admitted at their exact registered boundaries, and
-the seventeen later claims retain their own receipts. What is withdrawn is the
+the eighteen later claims retain their own receipts. What is withdrawn is the
 broader inference that those artifacts already constitute the complete current
 Physics branch.
 

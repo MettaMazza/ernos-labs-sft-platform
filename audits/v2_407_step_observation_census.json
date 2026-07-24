@@ -1,5 +1,5 @@
 {
-  "mapped_step_count": 117,
+  "mapped_step_count": 118,
   "policy": {
     "branch_completion_requires_every_assigned_step_closed": true,
     "prior_answer_artifacts_may_enter_v3_derivation": false,
@@ -7,8 +7,8 @@
     "prior_results_are_observational_data": true,
     "prior_results_define_reconstruction_obligations": true
   },
-  "same_strength_closed_step_count": 3,
-  "same_strength_open_step_count": 404,
+  "same_strength_closed_step_count": 4,
+  "same_strength_open_step_count": 403,
   "schema": "sft-v3-prior-observation-census/1",
   "source_id": "SFT-V2-ONE-FOLD-MASTER-407",
   "source_sha256": "sha256:42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf",
@@ -226,8 +226,10 @@
       "title": "The dark-to-baryon fraction, forced from the covering of generations"
     },
     {
-      "explicit_mapping_status": "blocking_explicit_disposition_required",
-      "explicit_v3_claim_ids": [],
+      "explicit_mapping_status": "mapped_to_current_admitted_claims",
+      "explicit_v3_claim_ids": [
+        "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001"
+      ],
       "missing_mapped_claim_ids": [],
       "named_group_memberships": [],
       "prior_measurement_observation": null,
@@ -248,9 +250,11 @@
         "ok    the second-order DEEPENING is unique (forced, not fitted)"
       ],
       "same_strength_disposition": {
-        "closed": false,
-        "reason": "No complete same-strength V3 disposition is registered.",
-        "status": "blocking_explicit_disposition_required"
+        "admitted_claim_id": "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
+        "admitted_receipt_hash": "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
+        "closed": true,
+        "reason": "The exact 1/3 plus 2/3 partition, depth-three correction 1/12, leading ratio 13/12, period-seven floor 127 and first-recursive ratio 3305/3048 were reconstructed in a complete V3 grammar. Both ratios passed the complete outward-propagated Planck/SH0ES interval in the same engine admission, with observational-derivation provenance disclosed.",
+        "status": "closed_by_observational_reconstruction_and_joint_empirical_admission"
       },
       "source_block_sha256": "sha256:525d64d75f4776a918852ea8c69ad2665deaa0b3e238b7c77a375b15823417f3",
       "step": 8,
@@ -8629,5 +8633,5 @@
       "title": "The unbounded finite quantum fault-tolerance law"
     }
   ],
-  "unmapped_step_count": 290
+  "unmapped_step_count": 289
 }

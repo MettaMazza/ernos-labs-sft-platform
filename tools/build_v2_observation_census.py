@@ -31,6 +31,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001",
     ),
     7: ("SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",),
+    8: ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
     14: ("SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",),
     32: ("SFT-PHYS-SPACE-DIMENSION-THREE-001",),
     43: (
@@ -302,6 +303,18 @@ DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
         ),
         "admitted_claim_id": "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
         "admitted_receipt_hash": "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
+    },
+    8: {
+        "status": "closed_by_observational_reconstruction_and_joint_empirical_admission",
+        "closed": True,
+        "reason": (
+            "The exact 1/3 plus 2/3 partition, depth-three correction 1/12, leading ratio 13/12, "
+            "period-seven floor 127 and first-recursive ratio 3305/3048 were reconstructed in a complete "
+            "V3 grammar. Both ratios passed the complete outward-propagated Planck/SH0ES interval in the "
+            "same engine admission, with observational-derivation provenance disclosed."
+        ),
+        "admitted_claim_id": "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
+        "admitted_receipt_hash": "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
     },
     14: {
         "status": "closed_by_exact_postseal_empirical_validation",
