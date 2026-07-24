@@ -76,7 +76,7 @@ claim follows the empirical constitution where observation is required.
   Chemistry laws published at DOI `10.5281/zenodo.21531455`.
 - [x] Molecular and material organization: 84/84 Materials Science laws,
   21,504 exact candidates, complete post-seal NIST/BIPM correspondence and
-  standalone exhaustive branch paper prepared at DOI
+  standalone exhaustive branch paper published at DOI
   `10.5281/zenodo.21532482`.
 - Genetics, proteins and cellular organization.
 - Evolution, ecosystems and biological dynamics.

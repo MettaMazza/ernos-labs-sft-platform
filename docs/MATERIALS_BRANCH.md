@@ -1,6 +1,6 @@
 # Materials Science branch
 
-Status: `inventory_frozen_all_ten_subbranches_model_admitted_publication_ready`
+Status: `inventory_frozen_all_ten_subbranches_model_admitted_published`
 
 The V3 Materials Science inventory contains 84 obligations in ten ordered
 subbranches. All 84 are model-admitted through the single fail-closed engine.
@@ -35,7 +35,7 @@ misrepresented as universal constants.
 
 The exhaustive manuscript is the repository `README.md` and
 `publications/current/materials/FROM_FOLD_TO_MATERIALS.md`. The archival PDF is
-`output/pdf/from-fold-to-materials-branch-paper-001.pdf`. The reserved DOI is
+`output/pdf/from-fold-to-materials-branch-paper-001.pdf`. The published DOI is
 `10.5281/zenodo.21532482`; the release tag is `materials-v1.0.0`.
 
 ## Mandatory regroup before the next branch
