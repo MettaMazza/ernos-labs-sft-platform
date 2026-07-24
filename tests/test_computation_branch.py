@@ -25,9 +25,11 @@ from sft.computation.spec_data import EXPECTED_GROUP_COUNTS
 class ComputationCatalogTests(unittest.TestCase):
     def test_catalog_is_frozen_complete_unique_and_ordered(self) -> None:
         validate_catalog()
-        self.assertEqual(len(SPECS), 113)
-        self.assertEqual(Counter(spec.group for spec in SPECS), Counter(EXPECTED_GROUP_COUNTS))
-        self.assertEqual(len({spec.claim_id for spec in SPECS}), 113)
+        self.assertEqual(len(SPECS), 116)
+        expected = Counter(EXPECTED_GROUP_COUNTS)
+        expected.update({"computability": 1, "complexity": 2})
+        self.assertEqual(Counter(spec.group for spec in SPECS), expected)
+        self.assertEqual(len({spec.claim_id for spec in SPECS}), 116)
 
     def test_every_claim_has_complete_product_and_one_survivor(self) -> None:
         for spec in SPECS:

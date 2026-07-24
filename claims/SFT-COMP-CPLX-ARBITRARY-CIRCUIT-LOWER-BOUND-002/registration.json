@@ -1,0 +1,38 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "computation",
+  "candidate_grammar": {
+    "boundary": "Every circuit whose vertices are generated native Fold words and whose gates are lawful unique depth-r to depth-(r-1) Fold edges.",
+    "completeness_certificate": "sha256:8634fe47e8c4a7a0cb69b91d5df2bad956c2cbc0edf8a0904af9696dd71c2f3d",
+    "generator": "Generate the literal product of gate, path, width, size, subset exhaustion, attainment, successor and gate-basis-boundary coordinates."
+  },
+  "claim_id": "SFT-COMP-CPLX-ARBITRARY-CIRCUIT-LOWER-BOUND-002",
+  "dependencies": [
+    "SFT-COMP-FORM-CIRCUIT-001",
+    "SFT-COMP-CPLX-CIRCUIT-RESOURCE-001",
+    "SFT-COMP-CPLX-BOUNDS-001"
+  ],
+  "empirical_protocol": null,
+  "excluded_inputs": [
+    "no Boolean or external quantum gate basis",
+    "no rewired Fold edge",
+    "no sampled input support",
+    "no completed infinite circuit",
+    "no claim beyond admitted Fold circuits"
+  ],
+  "intended_certificate": "Independent regeneration of all 256 candidates, the sole survivor, closure and controls.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "Across every circuit assembled from admitted Fold edges, closing a depth-k path requires at least k gates, complete source support requires width b^k, and complete layered coverage requires the sum of b^r edges for r from One through k. The registered circuit attains every bound.",
+  "status": "independently_replicated",
+  "title": "Arbitrary admitted Fold-circuit lower-bound law"
+}

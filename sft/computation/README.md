@@ -6,8 +6,8 @@ concurrency, distributed systems, security, learning and scientific computation.
 This branch reconstructs science and mathematics of computation rather than
 software-management practice.
 
-The archived inventory contains 113 dependency-ordered claims across nine
-sub-branches and 28,928 generated candidates. Every claim has exactly one
+The current inventory contains 116 dependency-ordered claims across nine
+sub-branches and 29,696 generated candidates. Every claim has exactly one
 survivor, depth-independent closure, four passing adverse controls and an
 implementation-distinct certificate. The authoritative inventory is
 `publications/inventories/computation.json`; the exhaustive local manuscript is

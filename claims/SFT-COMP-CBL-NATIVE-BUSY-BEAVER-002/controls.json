@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-COMP-CBL-NATIVE-BUSY-BEAVER-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking complete first-axis coverage",
+      "kind": "false_premise",
+      "observed_behavior": "An external table imports a machine grammar.",
+      "passed": true,
+      "receipt_hash": "sha256:7fa4e1a3c8c52b89eb4fe1c88a246d0beafc9846c8d8c910d0952883774581c1"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:8ec6cb871b58a6d0b74e5fc11946e78e9ccf9908e3c1684404a251caeb9809b4"
+    },
+    {
+      "expected_behavior": "reject missing, duplicated or additional survivors",
+      "kind": "tampered_artifact",
+      "observed_behavior": "literal product contains one survivor and unique identities",
+      "passed": true,
+      "receipt_hash": "sha256:a25439686f3492f54da3c16749c801647d48143f787cc9c8e18038db8e1e9e84"
+    },
+    {
+      "expected_behavior": "halt imported models, parameters or excluded quantum machinery",
+      "kind": "boundary",
+      "observed_behavior": "no external Turing transition table; no numerical-zero description depth; no completed infinite description; no recurrent process counted as halting; no claim about conventional Busy Beaver",
+      "passed": true,
+      "receipt_hash": "sha256:5d623ef9cebf62bac07fe850ed7327289a5b29bcc6f51b52e14e0cd2b0648a7b"
+    }
+  ]
+}

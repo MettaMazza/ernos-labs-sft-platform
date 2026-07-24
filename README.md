@@ -1564,9 +1564,16 @@ Information Science is now reconstructed at current registered V1/V2 strength:
 is the current exhaustive account, with its [rendered PDF](output/pdf/from-distinction-to-information-branch-paper-001.pdf)
 and version DOI [`10.5281/zenodo.21536202`](https://doi.org/10.5281/zenodo.21536202).
 
-The next dependency-ordered branch is Classical Computation. It must complete
-its own 763-entry categorical-owner and same-strength reconstruction before its
-existing Paper 001 receives a successor version patch.
+Classical Computation is now reconstructed at current registered V1/V2
+strength: 134 of 134 owned atomic obligations are closed by 116 model-admitted
+laws over 29,696 generated candidates. [Classical Computation Branch Paper 001 version 1.1](publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md)
+is the current exhaustive account, with its [rendered PDF](output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf)
+and successor-version DOI [`10.5281/zenodo.21536437`](https://doi.org/10.5281/zenodo.21536437).
+
+The next dependency-ordered branch is Reversible and Quantum Computation. It
+must complete its own 763-entry categorical-owner and same-strength
+reconstruction before its existing Paper 001 receives a successor version
+patch.
 
 ## Data and code availability
 

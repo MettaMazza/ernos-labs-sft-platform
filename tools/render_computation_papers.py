@@ -44,7 +44,7 @@ def cover(kicker_text: str, title_text: str, subtitle_text: str, statistics: str
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph(statistics + "<br/>23 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph(statistics + "<br/>24 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]
@@ -90,7 +90,7 @@ def main() -> None:
         "SMITHIAN FOLD THEORY - CLASSICAL COMPUTATION BRANCH PAPER 001",
         "AFTER TURING: THE FOLD MACHINE - ERNOS LABS CLASSICAL COMPUTATION PAPER 001",
         "Completed Smithian Fold Theory Classical Computation branch",
-        "Third clean-room reconstruction - Classical Computation inventory complete<br/>113 admitted derivations - 28,928 generated candidates",
+        "Third clean-room reconstruction - Classical Computation inventory complete<br/>116 admitted derivations - 29,696 generated candidates",
     )
     render(
         "quantum_computation",

@@ -1,10 +1,11 @@
-"""Dependency-ordered catalog of all 113 classical-computation obligations."""
+"""Dependency-ordered catalog of all 116 classical-computation obligations."""
 
 from __future__ import annotations
 
 from sft.computation.generated_law import LawSpec, Witness, binary_dimension
 from sft.computation.operations import group_witnesses
 from sft.computation.spec_data import GROUP_CODES, GROUP_TITLES, GROUP_TOPICS, Topic
+from sft.computation.lineage_laws import LINEAGE_SPECS
 
 
 FOUNDATION_DEPENDENCIES = (
@@ -182,13 +183,13 @@ def build_specs() -> tuple[LawSpec, ...]:
     return tuple(specs)
 
 
-SPECS = build_specs()
+SPECS = (*build_specs(), *LINEAGE_SPECS)
 SPEC_BY_ID = {spec.claim_id: spec for spec in SPECS}
 
 
 def validate_catalog() -> None:
-    if len(SPECS) != 113:
-        raise ValueError("the classical-computation catalog must contain exactly 113 obligations")
+    if len(SPECS) != 116:
+        raise ValueError("the classical-computation catalog must contain exactly 116 obligations")
     if len(SPEC_BY_ID) != len(SPECS):
         raise ValueError("the classical-computation catalog contains duplicate claim identities")
     available = set(FOUNDATION_DEPENDENCIES)
@@ -201,4 +202,3 @@ def validate_catalog() -> None:
 
 
 validate_catalog()
-

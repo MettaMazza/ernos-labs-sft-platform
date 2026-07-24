@@ -184,15 +184,18 @@ def publication_state(branch_id: str) -> tuple[bool, str]:
 
 def common_front_matter(branch_id: str, title: str, subtitle: str, branch_label: str, claim_count: int, candidate_count: int, abstract: str, inventory_hash: str, keywords: str) -> list[str]:
     authorized, doi = publication_state(branch_id)
+    publication = load(ROOT / f"publication/{branch_id}_zenodo_metadata.json")
+    publication_date = publication["metadata"]["publication_date"]
+    version = publication["metadata"]["version"]
     matter = [
         L(f"# {title}"),
         L(f"## {subtitle}"),
         L("**Maria Smith**<br>"),
         L("Independent researcher and founder, Ernos Labs<br>"),
         L("Maria.Smith.Sftoe@gmail.com<br>"),
-        L("23 July 2026"),
+        L(publication_date),
         L(),
-        L(f"{branch_label} Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction"),
+        L(f"{branch_label} Branch Paper 001, version {version} - Smithian Fold Theory V3 Clean-Room Reconstruction"),
         L(),
         L("Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0."),
         L(),
@@ -220,6 +223,8 @@ def common_front_matter(branch_id: str, title: str, subtitle: str, branch_label:
 
 def build_computation() -> str:
     inventory = load(ROOT / "publications/inventories/computation.json")
+    prior_ledger = load(ROOT / "census/computation_prior_obligations.json")
+    prior_summary = prior_ledger["computation_summary"]
     candidate_total = sum(2 ** len(spec.dimensions) for spec in COMPUTATION_SPECS)
     parts = common_front_matter(
         "computation",
@@ -237,18 +242,38 @@ def build_computation() -> str:
     add(L("## 1. Central scientific claim and exact boundary"))
     add(L())
     add(L(
-        "> Within the frozen SFT V3 Classical Computation inventory, all 113 registered obligations have "
+        f"> Within the frozen SFT V3 Classical Computation inventory, all {len(COMPUTATION_SPECS)} registered laws and "
+        f"all {prior_summary['atomic_obligation_count']} Classical Computation-owned V1/V2 reconstruction obligations have "
         "depth-independent, model-admitted and independently replicated receipts, and no registered classical-computation "
         "obligation remains unclassified or frontier."
     ))
     add(L())
     add(L(
-        "Closure means the exact generated-finite kernels named in the inventory are complete. It does not claim every "
-        "named theorem, arbitrary asymptotic lower bound, unrestricted Busy Beaver value, P versus NP separation, physical "
-        "device behavior or application result. Quantum operations are excluded and derived in their own downstream branch."
+        "Closure means the exact generated-finite kernels named in the inventory are complete. In particular, the admitted "
+        "native Fold grammar now closes its unrestricted positive-finite Busy-Beaver function, Fold-P/Fold-NP equality and "
+        "arbitrary admitted Fold-circuit lower-bound family. These are native-model theorems with explicit comparison "
+        "boundaries; they do not silently decide the externally encoded conventional Turing-machine Busy Beaver function, "
+        "conventional P versus NP, or unrestricted lower bounds for imported circuit models. Physical device behavior, "
+        "applications and quantum operations remain outside this branch."
     ))
     add(L())
-    add(L("## 2. Derivational constitution"))
+    add(L("## 2. Headline results at a glance"))
+    add(L())
+    add(L("| Result | Exact closed statement | Executed boundary |"))
+    add(L("|---|---|---|"))
+    add(L("| Native Fold Busy Beaver | For every admitted positive finite description depth `k`, the greatest halting transition count is exactly `k`: `BB_F(k)=k`. | Complete closing populations through depth 14, recurrence/successor certificate, upper-bound proof and attaining witness. |"))
+    add(L("| Native Fold complexity equality | Every accepted native Fold computation emits its unique exact lawful trace; the verifier checks that same trace with the same description-depth resource, hence `P_F = NP_F`. | Complete generated words through depth 7, both containments, successor certificate and tampered-certificate rejection. |"))
+    add(L("| Arbitrary admitted Fold-circuit lower bound | A depth-`k` admitted Fold circuit requires all `k` forced transition edges; deleting any edge destroys the declared computation, while the full set attains the bound. | Depths through 14; all 16,384 subsets of the 14-edge carrier exhausted, with exactly the full support surviving. |"))
+    add(L("| Halting boundary | No total internal decider survives exact self-description followed by held verdict complementation. | Two held verdicts, self-application construction and exact contradiction trace. |"))
+    add(L("| Randomized computation in a superdeterministic model | Randomness is complete schedule support plus observation-relative uncertainty, never an uncaused transition. | Every registered schedule is deterministically executed and retained; exact success parts summarize the closed branch partition. |"))
+    add(L())
+    add(L(
+        "These results were not selected by the historical problem names. Their carriers and transition laws were already "
+        "forced from upstream receipts; the famous labels enter after sealing as correspondence. A conventional encoding may "
+        "be compared at that boundary, but it cannot broaden the native theorem without a separately registered grammar."
+    ))
+    add(L())
+    add(L("## 3. Derivational constitution"))
     add(L())
     add(L(
         "Every dependency terminates at the single operational root theorem, *there is no nothing*. Admitted proof objects "
@@ -264,7 +289,7 @@ def build_computation() -> str:
         "free-parameter tuples. No application, benchmark, pretrained model or earlier SFT result selected a survivor."
     ))
     add(L())
-    add(L("## 3. The native Fold machine"))
+    add(L("## 4. The native Fold machine"))
     add(L())
     add(L(
         "The native machine begins with exact generated configurations, two held Fold labels and a source-bound transition "
@@ -281,7 +306,7 @@ def build_computation() -> str:
         "machine law."
     ))
     add(L())
-    add(L("## 4. Superdeterminism, branching and randomized computation"))
+    add(L("## 5. Superdeterminism, branching and randomized computation"))
     add(L())
     add(L(
         "Randomized computation closes without an uncaused random premise. The machine retains complete registered schedule "
@@ -291,7 +316,7 @@ def build_computation() -> str:
         "backward into the algorithm law."
     ))
     add(L())
-    add(L("## 5. Halting, incompleteness and famous limits"))
+    add(L("## 6. Halting, incompleteness and famous limits"))
     add(L())
     add(L(
         "The universal description grammar supports self-description and a held complement operation. Assuming a total "
@@ -302,7 +327,7 @@ def build_computation() -> str:
         "consistency and supply every demanded self-referential verdict."
     ))
     add(L())
-    add(L("## 6. Security, learning and scientific evidence"))
+    add(L("## 7. Security, learning and scientific evidence"))
     add(L())
     add(L(
         "Security claims expose the message, key, observation, adversary and resource supports. Information-theoretic security "
@@ -313,7 +338,7 @@ def build_computation() -> str:
         "target-custodied measurements can test a natural law."
     ))
     add(L())
-    add(L("## 7. Dependency order and complete execution census"))
+    add(L("## 8. Dependency order and complete execution census"))
     add(L())
     add(L("| Order | Sub-branch | Claim | Candidates | Closure |"))
     add(L("|---:|---|---|---:|---|"))
@@ -321,25 +346,84 @@ def build_computation() -> str:
         add(L(f"| {index} | {GROUP_TITLES[spec.group]} | `{spec.claim_id}` | 256 | depth-independent |"))
     add(L())
     add(L(f"The branch total is **{candidate_total:,} candidates**, **{len(COMPUTATION_SPECS)} survivors**, **{len(COMPUTATION_SPECS) * 4} adverse controls** and **{len(COMPUTATION_SPECS)} independent validations**."))
-    section = 8
+    section = 9
     for order, spec in enumerate(COMPUTATION_SPECS, 1):
         add(derivation_section(spec, order, section, computation_survivor))
         section += 1
     add(L(f"## {section}. Branch synthesis and consequences"))
     add(L())
     add(L(
-        "The 113 laws form one dependency chain from exact state change to models, computability, resources, algorithms, "
+        f"The {len(COMPUTATION_SPECS)} laws form one dependency chain from exact state change to models, computability, resources, algorithms, "
         "meaning, distributed knowledge, adversaries, learning and scientific calculation. The common invariant is complete "
         "provenance: every input belongs to a generated support, every operation names its relation, every execution retains "
         "a trace, every resource count names the representation, every loss names closed distinctions and every claimed "
         "generality supplies a successor certificate or an explicit finite boundary."
     ))
     add(L())
-    add(L(f"## {section + 1}. Reproduction, criticism and falsification"))
+    add(L(f"## {section + 1}. Complete V1/V2 reconstruction audit"))
+    add(L())
+    add(L(
+        f"The branch ownership audit reads all {prior_ledger['reviewed_source_surface']['reviewed_entry_count']} V1/V2 census entries, "
+        f"decomposes the {len(prior_ledger['source_entries'])} computation-relevant source entries into "
+        f"{prior_summary['atomic_obligation_count']} atomic obligations and closes "
+        f"{prior_summary['same_strength_closed_count']} at same strength, with {prior_summary['open_count']} open. "
+        f"It preserves {prior_summary['explicit_correction_or_reconciliation_count']} explicit corrections or reconciliations "
+        "instead of hiding them behind a branch-level status."
+    ))
+    add(L())
+    add(L("| Source | Entry | Atomic obligation | Disposition | V3 receipts |"))
+    add(L("|---|---|---|---|---|"))
+    for entry in prior_ledger["source_entries"]:
+        for atom in entry["atomic_obligations"]:
+            claims = ", ".join(f"`{claim}`" for claim in atom["v3_claim_ids"])
+            observation = atom["prior_observation"].replace("|", "&#124;")
+            add(L(f"| {entry['source'].upper()} | `{entry['source_entry']}` | {observation} | `{atom['disposition']}` | {claims} |"))
+    add(L())
+    add(L("The audit records four important corrections explicitly:"))
+    add(L())
+    add(L("1. Unboundedness alone is not accepted as a proof of undecidability; the V3 result uses exact self-description and the held-complement diagonal contradiction."))
+    add(L("2. A bounded deterministic process need not terminate; it must halt or enter a repeated configuration, and that finite class is decidable."))
+    add(L("3. Earlier logarithmic/exponential efficiency prose is replaced by exact Fold description depth, support, transition, space and retained-information resources."))
+    add(L("4. Native `P_F = NP_F` is a theorem of the admitted Fold grammar and is not silently exported as a verdict on conventional P versus NP."))
+    add(L())
+    add(L(f"## {section + 2}. Computation, open knowledge and institutional accountability"))
+    add(L())
+    add(L(
+        "Computational science makes opaque authority mechanically testable. A proprietary oracle, undisclosed training "
+        "corpus, result-only benchmark or inaccessible validator may be useful engineering, but it cannot establish a closed "
+        "law because reviewers cannot reconstruct the premise-to-result route, enumerate alternatives or locate the exact "
+        "failure boundary. This paper therefore publishes the grammars, candidate products, decision vectors, controls, "
+        "validators, receipts and source rather than asking readers to trust a score or institutional label."
+    ))
+    add(L())
+    add(L(
+        "The institutional critique is evidential, not an allegation that every funded scientist or institution acts in bad "
+        "faith. Reviews report associations between commercial sponsorship and favorable outcomes, influence on research "
+        "agendas, limits in the evidence for grant-review reliability and fairness, and underpublication of null results. "
+        "Those mechanisms show why capital, prestige, paywalls and consensus cannot substitute for an inspectable proof and "
+        "data chain. Expertise remains valuable criticism; it is not an admission receipt."
+    ))
+    add(L())
+    add(L(
+        "Maria Smith developed this programme without conventional academic credentials, appointment or a funding gate. "
+        "That fact does not prove any theorem; the public evidence must carry the entire scientific burden. It demonstrates "
+        "what credential-first selection can exclude. The issue is not one outsider's biography but every mind lost when "
+        "status or capital is treated as permission to create testable knowledge."
+    ))
+    add(L())
+    add(L(
+        "Maria Smith retains authorship and copyright. Paper and documentation are CC BY 4.0 and code is Apache-2.0, allowing "
+        "inspection, redistribution, reproduction, criticism and derivative work under those licences. The Ernos Labs name "
+        "is a separate, revocable conformance designation available only while work follows the public scientific constitution, "
+        "transparent evidence rules, fail-closed engine and community standards. Submissions and counterexamples are invited "
+        "through Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr."
+    ))
+    add(L())
+    add(L(f"## {section + 3}. Reproduction, criticism and falsification"))
     add(L())
     add(L("Run `python3 -m sft verify-all` on macOS/Linux or `py -m sft verify-all` on Windows. Reviewers may invalidate a claim by producing an omitted coordinate inside its declared grammar, a second survivor, a simpler preserving form, an induction counterexample, an operational counterexample, a source mismatch or a failed adverse control. Hashes identify artifacts; they do not immunize the grammar from criticism."))
     add(L())
-    add(L(f"## {section + 2}. Scope and next branch"))
+    add(L(f"## {section + 4}. Scope and next branch"))
     add(L())
     add(L("The next dependency branch is Reversible and Quantum Computation. It may use these classical receipts but must independently derive branch support, phase, interference, entanglement, measurement, gates, quantum circuits, algorithms, communication, correction and limits without importing a conventional quantum formalism."))
     add(L())
@@ -352,6 +436,12 @@ def build_computation() -> str:
     add(L("5. Landauer R. Irreversibility and heat generation in the computing process. *IBM Journal of Research and Development*. 1961;5:183-191. doi:10.1147/rd.53.0183."))
     add(L("6. Bennett CH. Logical reversibility of computation. *IBM Journal of Research and Development*. 1973;17:525-532. doi:10.1147/rd.176.0525."))
     add(L("7. Smith M. Smithian Fold Theory Scientific Constitution. V3 clean-room repository, 2026."))
+    add(L("8. Lundh A, Lexchin J, Mintzes B, Schroll JB, Bero L. Industry sponsorship and research outcome. *Intensive Care Medicine*. 2018. doi:10.1007/s00134-018-5293-7."))
+    add(L("9. Fabbri A, Lai A, Grundy Q, Bero LA. The influence of industry sponsorship on the research agenda. *American Journal of Public Health*. 2018. PMID:30252531."))
+    add(L("10. Gallo SA et al. Reliability and fairness in peer review of research funding. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/."))
+    add(L("11. Demicheli V, Di Pietrantonj C. Peer review for improving the quality of grant applications. *Cochrane Database of Systematic Reviews*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/."))
+    add(L("12. Toward more published null and negative results. *Nature Communications*. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/."))
+    add(L("13. UNESCO. Recommendation on Open Science. 2021. https://www.unesco.org/en/legal-affairs/recommendation-open-science."))
     return "".join(parts)
 
 

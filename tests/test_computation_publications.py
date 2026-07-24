@@ -26,7 +26,7 @@ class ComputationPublicationTests(unittest.TestCase):
         self.assertIn("SFT QUANTUM_COMPUTATION PUBLICATION GATE: PASS", completed.stdout)
 
     def test_evidence_maps_cover_frozen_inventories_exactly(self) -> None:
-        for branch, expected in (("computation", 113), ("quantum_computation", 21)):
+        for branch, expected in (("computation", 116), ("quantum_computation", 21)):
             with self.subTest(branch=branch):
                 inventory = json.loads((ROOT / f"publications/inventories/{branch}.json").read_text(encoding="utf-8"))
                 evidence = json.loads((ROOT / f"publications/current/{branch}/evidence_map.json").read_text(encoding="utf-8"))

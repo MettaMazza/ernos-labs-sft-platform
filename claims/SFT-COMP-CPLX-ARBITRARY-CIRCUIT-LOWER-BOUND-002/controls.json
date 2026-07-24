@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-COMP-CPLX-ARBITRARY-CIRCUIT-LOWER-BOUND-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking complete first-axis coverage",
+      "kind": "false_premise",
+      "observed_behavior": "A rewired or multi-depth edge is not a Fold transition.",
+      "passed": true,
+      "receipt_hash": "sha256:ab8058cad0f57cb7eeb62fb1e3c5dd2d0de96c8e21cb0bda5326b5240ce18c11"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:509ef5ebcf1e724f729efeef0a3abd43ac211de58044ab70bcdfbf9e90ce0223"
+    },
+    {
+      "expected_behavior": "reject missing, duplicated or additional survivors",
+      "kind": "tampered_artifact",
+      "observed_behavior": "literal product contains one survivor and unique identities",
+      "passed": true,
+      "receipt_hash": "sha256:ebc1f1cbd8029119ec005c207c3fa914d757ed30cf96b8b0eb07dfb233440f5d"
+    },
+    {
+      "expected_behavior": "halt imported models, parameters or excluded quantum machinery",
+      "kind": "boundary",
+      "observed_behavior": "no Boolean or external quantum gate basis; no rewired Fold edge; no sampled input support; no completed infinite circuit; no claim beyond admitted Fold circuits",
+      "passed": true,
+      "receipt_hash": "sha256:f3e4b316435e8ab426f45e30dc0dcbf3b0a4a82e94344b09197a77a0ce2322a8"
+    }
+  ]
+}
