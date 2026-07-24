@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from sft.computation.catalog import SPECS as COMPUTATION_SPECS  # noqa: E402
+from sft.computation.current_catalog import SPECS as COMPUTATION_SPECS  # noqa: E402
 from sft.computation.generated_law import survivor_id as computation_survivor  # noqa: E402
 from sft.computation.spec_data import GROUP_TITLES  # noqa: E402
 from sft.quantum_computation.catalog import SPECS as QUANTUM_SPECS  # noqa: E402

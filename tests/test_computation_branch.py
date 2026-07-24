@@ -6,7 +6,7 @@ from collections import Counter
 from fractions import Fraction
 import unittest
 
-from sft.computation.catalog import SPECS, validate_catalog
+from sft.computation.current_catalog import SPECS, validate_catalog
 from sft.computation.generated_law import GeneratedComputationProgram, candidate_records, survivor_id
 from sft.computation.operations import (
     ExactTransitionSystem,
