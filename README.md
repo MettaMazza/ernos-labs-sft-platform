@@ -1,10 +1,10 @@
-[Zenodo Paper 002 DOI: 10.5281/zenodo.21535458](https://doi.org/10.5281/zenodo.21535458) | [PDF](output/pdf/from-nothing-to-fold-foundation-branch-paper-002.pdf) | [Canonical Markdown](publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_002.md)
+[Zenodo Paper 001 v1.1 DOI: 10.5281/zenodo.21535636](https://doi.org/10.5281/zenodo.21535636) | [PDF](output/pdf/from-nothing-to-fold-foundation-branch-paper-001-v1.1.pdf) | [Canonical Markdown](publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_1.md)
 
 # From Nothing to Fold
 
 ## A premise-free, parameter-free and machine-closed Foundation for Smithian Fold Theory
 
-**Foundation Branch Paper 002 - exhaustive V3 successor**
+**Foundation Branch Paper 001 - expanded technical and empirical patch, version 1.1**
 **Maria Smith** - Independent researcher and founder, Ernos Labs
 Email: Maria.Smith.Sftoe@gmail.com
 GitHub: https://github.com/MettaMazza
@@ -24,8 +24,10 @@ Paper licence: CC BY 4.0 * Code licence: Apache-2.0
 
 ## Abstract
 
-This paper reports the completed Foundation successor of the third clean-room
-Smithian Fold Theory reconstruction. The live branch contains **16
+This version 1.1 patch reports the completed current-knowledge Foundation of the
+third clean-room Smithian Fold Theory reconstruction. It updates Foundation
+Branch Paper 001 within the same publication and DOI version chain; it is not a
+separately numbered paper. The live branch contains **16
 model-admitted theorems**, **5,222 generated candidate classes**,
 **64 required adverse-control executions**, and **16
 implementation-distinct reproductions**. Its V1/V2 ownership audit reviewed all
@@ -34,7 +36,7 @@ entries into atomic components, assigned **32**
 Foundation-owned obligations and closed all **32**
 at the registered exact strength.
 
-The reconstruction adds six laws absent from Foundation Paper 001: the complete
+The patch adds six laws absent from version 1.0: the complete
 exact operational interface; the uniquely forced half-One ground; the exact
 two-preimage Fold dynamics and uniform-partition theorem; the four-map and
 84-composition least-size uniqueness theorem; the depth-independent replayable
@@ -1406,7 +1408,101 @@ completed infinite objects, arbitrary host programs, physical constants and
 application performance are not claimed by this paper.
 
 
-## 24. One-command reproduction
+## 24. Empirical primacy, open knowledge and institutional accountability
+
+Science is strongest when a result can survive an unfavorable test by a person
+who owes the author, institution and prevailing consensus nothing. That ideal
+is not identical to the machinery by which modern research is funded, selected,
+published and amplified. Funding provenance, review selection, publication
+bias, access barriers and predictive opacity are therefore legitimate objects
+of methodological scrutiny rather than matters outside science.
+
+The argument is empirical. Systematic reviews have reported sponsor-associated
+differences in favorable efficacy results and conclusions, and evidence that
+commercial sponsorship can shape which questions are pursued. Studies of grant
+review have found limited agreement, sensitivity to panel composition and
+unequal outcomes for some applicant groups; a Cochrane review found insufficient
+evidence that grant peer review improves the quality of funded research and
+called for experimental study. Null and negative results remain systematically
+underrepresented in published literatures. UNESCO's Recommendation on Open
+Science identifies paywalls and high article-processing charges as sources of
+inequality and calls for methods, software, source code and outputs to be open
+for rigorous scrutiny. These findings do not prove misconduct in any particular
+institution or study. They do establish that institutional selection and
+funding are not neutral substitutes for an inspectable evidence chain.
+
+Opaque prediction presents the same epistemic problem in computational form.
+A hidden model can be a useful instrument and can establish bounded predictive
+reliability under a properly blind test. Accuracy alone does not disclose its
+premises, candidate alternatives, eliminated structures, information leakage,
+failure boundary or derivation from source to law. NIST accordingly treats
+validity, reliability, accountability, transparency, explainability and
+interpretability as related features of trustworthy AI; reproducibility
+research likewise requires accessible data, code, models and workflows. SFT
+therefore refuses three substitutions:
+
+1. funding success is not evidential closure;
+2. professional consensus is not generated uniqueness; and
+3. a black-box score is not an explicit scientific law.
+
+This is not a rejection of expertise, peer criticism, measurement, conventional
+correspondence, funding or machine learning as an instrument. It rejects their
+use as silent answer-selectors for a purportedly fundamental law. The remedy is
+public and executable: register the question, expose the derivation, generate
+the alternatives, preserve unfavorable outcomes, bind the sources, disclose the
+boundary and allow anyone to reproduce acceptance or rejection.
+
+Knowledge institutions operating through scarce grants, prestige markets,
+subscription access and author charges inherit incentives that are not identical
+to free human inquiry. Even without individual bad faith, those mechanisms help
+determine who can spend time asking questions, which questions appear fundable,
+what enters the visible record and who may read it. The loss is not limited to
+access to known answers; it includes questions and constructions that excluded
+people were never resourced or authorized to pursue.
+
+Maria Smith developed SFT outside conventional academic credential and funding
+routes. That biography is not evidence that SFT is correct. It is evidence of
+why the work, rather than the author's institutional status, must be the unit of
+admission. The same standard applies to insiders and outsiders: credentials
+cannot rescue a failed gate, and lack of credentials cannot prevent a complete,
+reproducible counterexample from being heard.
+
+### Why the Foundation result is empirically consequential
+
+The Foundation branch is formal, so it does not fabricate a physical measurement
+for a theorem that outputs no physical quantity. Its empirical consequence is
+the machinery that later natural-science claims must obey. A claim is not closed
+because it predicts one held-out number. It must expose the complete source-to-
+prediction trace, seal before target access, bind the target independently,
+compare every preregistered row, retain unfavorable and tampered controls and
+halt on leakage, ambiguity or mismatch. Blindness without transparency tests an
+instrument; transparency without blindness permits target selection. SFT
+requires both when nature is the judge.
+
+## 25. Open-source rights, participation and revocable authority
+
+The Ernos Labs Smithian Fold Theory Open Science Platform and Knowledge Tree is
+public, inspectable, reusable and redistributable. Maria Smith retains copyright
+and scientific authorship. Paper and documentation text is licensed CC BY 4.0;
+code is Apache-2.0. Those licenses permit lawful copying, forking, testing,
+modification and criticism with attribution. The Ernos Labs name is a separate
+conformance designation: it may be used only for work adhering to the published
+empirical constitution, transparent evidence requirements, fail-closed engine
+rules and community standards.
+
+Scientific authority in the model is narrower than authorship or publication
+authority. It is an accepted, independently reproducible engine receipt at an
+explicit boundary. If any reviewer exposes a broken dependency, omitted
+candidate, second survivor, failed control, seal mismatch or empirical failure,
+the engine must reject the package regardless of who authored, funded, reviewed
+or endorsed it. Authority is inspectable and revocable by evidence.
+
+Independent replications, invalidations, omitted candidates, counterexamples and
+full derivation-chain submissions are invited through
+Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr. No institutional
+permission is required to inspect, reproduce or challenge a public claim.
+
+## 26. One-command reproduction
 
 From the repository root on macOS, Windows or Linux with Python 3:
 
@@ -1417,14 +1513,14 @@ python3 tools/verify_publication_compliance.py --branch foundation --require-rea
 ```
 
 The first command rebuilds the exact prior-obligation ledger. The second
-reconstructs and verifies the complete Foundation successor evidence bundle.
-The third applies the strengthened successor inventory, ownership, manuscript,
-rendered-paper and receipt gate. Later branches are not replayed while their
-own successor reconstructions remain deliberately open.
+reconstructs and verifies the complete Foundation Paper 001 version 1.1 evidence
+bundle. The third applies the strengthened current-knowledge inventory,
+ownership, manuscript, rendered-paper and receipt gate. Later branches are not
+replayed by this branch-specific publication check.
 No Docker container, network service or opaque predictor is required.
 
 
-## 25. Immutable theorem ledger
+## 27. Immutable theorem ledger
 
 | Claim | Closure | Candidates | Engine receipt |
 |---|---|---|---|
@@ -1445,18 +1541,18 @@ No Docker container, network service or opaque predictor is required.
 | SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001 | depth_independent | 256 | sha256:a4e409f6bb8b203de746bd0c21d3f2566e8052003219490c657249e11f6f2086 |
 | SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001 | depth_independent | 2048 | sha256:0e21ffcb217271ddfab4000901691761c2b7fd423b93d27f81ab757f0300c58c |
 
-## 26. Conclusion
+## 28. Conclusion
 
 The Foundation branch is reconstructed at current registered V1/V2 strength:
 32 of 32 owned
 atomic obligations closed, 16 of 16 required theorems
 model-admitted, 5,222 candidate classes decided, and every
-required independent and adverse check preserved. The result is not a manifesto
-or a software lock. It is an inspectable chain of exact claims whose authority
-ends at their explicit grammar boundaries and whose receipts can be independently
-replayed or invalidated.
+required independent and adverse check preserved. This is both an exhaustive
+technical report and an explicit open-science position: scientific authority
+must rest on an inspectable chain of claims whose authority ends at their stated
+boundaries and whose receipts can be independently replayed or invalidated.
 
-The next dependency-ordered branch is Mathematics. Its successor cannot inherit
+The next dependency-ordered branch is Mathematics. Its current-knowledge paper cannot inherit
 Foundation's closure as a substitute for its own 763-entry ownership review,
 same-strength reconstruction, exact enumerations and independent checks.
 
@@ -1464,6 +1560,17 @@ same-strength reconstruction, exact enumerations and independent checks.
 
 All source, candidate censuses, decisions, controls, certificates and receipts
 are contained in the Ernos Labs Smithian Fold Theory Open Science Platform and
-Knowledge Tree. The archived Foundation Paper 001 and its DOI artifacts remain
-unchanged. This Paper 002 is a new successor and does not rewrite the historical
-record.
+Knowledge Tree. Foundation Paper 001 version 1.0 remains preserved in the DOI
+version history. This version 1.1 patch expands that same paper and does not
+renumber it.
+
+## References
+
+1. Lundh A, Lexchin J, Mintzes B, Schroll JB, Bero L. Industry sponsorship and research outcome. *Intensive Care Medicine*. 2018. https://doi.org/10.1007/s00134-018-5293-7.
+2. Fabbri A, Lai A, Grundy Q, Bero LA. The influence of industry sponsorship on the research agenda. *American Journal of Public Health*. 2018. https://pubmed.ncbi.nlm.nih.gov/30252531/.
+3. Gallo SA et al. Reliability and fairness in peer review of research funding. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/.
+4. Demicheli V, Di Pietrantonj C. Peer review for improving the quality of grant applications. *Cochrane Database of Systematic Reviews*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/.
+5. Nature Communications. *Toward more published null and negative results*. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/.
+6. UNESCO. *Recommendation on Open Science*. 2021. https://www.unesco.org/en/legal-affairs/recommendation-open-science.
+7. National Institute of Standards and Technology. *AI Risk Management Framework 1.0*. https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/.
+8. Heil BJ et al. Reproducibility standards for machine learning in the life sciences. *Nature Methods*. 2021. https://doi.org/10.1038/s41592-021-01256-7.

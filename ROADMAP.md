@@ -18,8 +18,8 @@ observation censuses.
 
 ## Phase B - foundation
 
-Status: current successor reconstruction closed; 32 of 32 prior obligations
-and 16 of 16 required theorems are closed. Foundation Branch Paper 002 is the
+Status: current reconstruction closed; 32 of 32 prior obligations and 16 of 16
+required theorems are closed. Foundation Branch Paper 001 version 1.1 is the
 current exhaustive account.
 
 - Reconstruct exact counted values and positive rational parts.

@@ -21,10 +21,10 @@ claims became model-admitted and independently replicated. The admitted chain is
 - `SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001` — unique fail-closed admission route.
 
 The complete 763-entry source review identifies 32 Foundation-owned atomic
-obligations and closes all 32. The successor inventory hash is
+obligations and closes all 32. The current-knowledge inventory hash is
 `sha256:15fe8e48aa49069a24347e809eaf2a195e4af0cd0a8e72c636b68b9384ba3ae1`.
 The paper, complete evidence map, rendered artifact and publication controls
 pass the strengthened branch gate. There is no open current Foundation
 obligation; any future expansion must be registered as a new explicit scope.
-Foundation Branch Paper 002 is published at DOI
-[`10.5281/zenodo.21535458`](https://doi.org/10.5281/zenodo.21535458).
+Foundation Branch Paper 001 version 1.1 is published at DOI
+[`10.5281/zenodo.21535636`](https://doi.org/10.5281/zenodo.21535636).

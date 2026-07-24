@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and verify the Foundation Paper 002 evidence bundle."""
+"""Build and verify the Foundation Paper 001 version 1.1 evidence bundle."""
 
 from __future__ import annotations
 
@@ -22,8 +22,8 @@ from sft.engine.receipt_io import read_receipt  # noqa: E402
 BRANCH = "foundation"
 INVENTORY_PATH = ROOT / "publications/inventories/successors/foundation.json"
 LEDGER_PATH = ROOT / "census/foundation_prior_obligations.json"
-PAPER_PATH = ROOT / "publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_002.md"
-PDF_PATH = ROOT / "output/pdf/from-nothing-to-fold-foundation-branch-paper-002.pdf"
+PAPER_PATH = ROOT / "publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_1.md"
+PDF_PATH = ROOT / "output/pdf/from-nothing-to-fold-foundation-branch-paper-001-v1.1.pdf"
 BUNDLE_ROOT = ROOT / "publications/successors/foundation"
 EVIDENCE_PATH = BUNDLE_ROOT / "evidence_map.json"
 MANIFEST_PATH = BUNDLE_ROOT / "manifest.json"
@@ -65,7 +65,7 @@ def build_map() -> dict[str, Any]:
         section = order + 5
         if claim_id not in paper or receipt.receipt_hash not in paper or f"## {section}." not in paper: raise ValueError(f"paper coverage missing {claim_id}")
         entries.append({"order": order, "paper_section": str(section), "claim_id": claim_id, "title": row["title"], "candidate_count": len(candidate["candidates"]), "closure_status": receipt.closure_status, "source_manifest_hash": certificate["source_manifest_hash"], "independent_implementation_hash": certificate["independent_implementation_hash"], "derivation_seal_hash": receipt.derivation_seal_hash, "external_validation_hash": receipt.external_validation_hash, "engine_receipt": {"path": row["receipt_path"], "sha256": raw_hash(receipt_path), "receipt_hash": receipt.receipt_hash}, "evidence_files": files})
-    return {"schema": "sft-v3-foundation-successor-evidence-map/1", "branch_id": BRANCH, "paper_number": "002", "version": "2.0.0", "archive_paper_001_unchanged": True, "inventory": {"path": INVENTORY_PATH.relative_to(ROOT).as_posix(), "inventory_hash": inv.inventory_hash, "required_claim_count": len(inv.required_claim_ids)}, "prior_obligation_ledger": {"path": LEDGER_PATH.relative_to(ROOT).as_posix(), "sha256": raw_hash(LEDGER_PATH), "reviewed_source_entries": 763, "atomic_obligations": ledger["foundation_summary"]["atomic_obligation_count"], "open": 0}, "paper": {"source_path": PAPER_PATH.relative_to(ROOT).as_posix(), "source_sha256": raw_hash(PAPER_PATH), "rendered_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_sha256": raw_hash(PDF_PATH)}, "claims": entries, "complete_live_claim_coverage": True, "publication_action_authorized": True}
+    return {"schema": "sft-v3-foundation-paper-patch-evidence-map/1", "branch_id": BRANCH, "paper_number": "001", "version": "1.1.0", "prior_version_preserved": True, "inventory": {"path": INVENTORY_PATH.relative_to(ROOT).as_posix(), "inventory_hash": inv.inventory_hash, "required_claim_count": len(inv.required_claim_ids)}, "prior_obligation_ledger": {"path": LEDGER_PATH.relative_to(ROOT).as_posix(), "sha256": raw_hash(LEDGER_PATH), "reviewed_source_entries": 763, "atomic_obligations": ledger["foundation_summary"]["atomic_obligation_count"], "open": 0}, "paper": {"source_path": PAPER_PATH.relative_to(ROOT).as_posix(), "source_sha256": raw_hash(PAPER_PATH), "rendered_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_sha256": raw_hash(PDF_PATH)}, "claims": entries, "complete_live_claim_coverage": True, "publication_action_authorized": True}
 
 
 def main() -> None:
@@ -74,12 +74,12 @@ def main() -> None:
     receipts = {claim_id: read_receipt(ROOT / rows[claim_id]["receipt_path"]) for claim_id in inv.required_claim_ids}
     evidence = PaperEvidence(source_hash=raw_hash(PAPER_PATH), rendered_paper_hash=raw_hash(PDF_PATH), evidence_map_hash=raw_hash(EVIDENCE_PATH), comprehensive_derivation_coverage=True, controls_passed=True)
     gate = PublicationGate().branch_ready(inv, receipts, evidence)
-    manifest = {"schema": "sft-v3-foundation-successor-publication-manifest/1", "branch_id": BRANCH, "paper_number": "002", "version": "2.0.0", "inventory_hash": inv.inventory_hash, "prior_obligation_ledger_hash": raw_hash(LEDGER_PATH), "source_path": PAPER_PATH.relative_to(ROOT).as_posix(), "source_hash": evidence.source_hash, "rendered_paper_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_paper_hash": evidence.rendered_paper_hash, "evidence_map_path": EVIDENCE_PATH.relative_to(ROOT).as_posix(), "evidence_map_hash": evidence.evidence_map_hash, "complete_live_claim_coverage": True, "comprehensive_derivation_coverage": True, "controls_passed": True, "archive_paper_001_unchanged": True, "ready_to_publish": True, "publication_authorized": True, "publication_gate_receipt_hash": gate.receipt_hash}
+    manifest = {"schema": "sft-v3-foundation-paper-patch-publication-manifest/1", "branch_id": BRANCH, "paper_number": "001", "version": "1.1.0", "inventory_hash": inv.inventory_hash, "prior_obligation_ledger_hash": raw_hash(LEDGER_PATH), "source_path": PAPER_PATH.relative_to(ROOT).as_posix(), "source_hash": evidence.source_hash, "rendered_paper_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_paper_hash": evidence.rendered_paper_hash, "evidence_map_path": EVIDENCE_PATH.relative_to(ROOT).as_posix(), "evidence_map_hash": evidence.evidence_map_hash, "complete_live_claim_coverage": True, "comprehensive_derivation_coverage": True, "controls_passed": True, "prior_version_preserved": True, "ready_to_publish": True, "publication_authorized": True, "publication_gate_receipt_hash": gate.receipt_hash}
     expected_receipt = json.loads(json.dumps(asdict(gate)))
     write(MANIFEST_PATH, manifest); write(RECEIPT_PATH, expected_receipt)
     if build_map() != read(EVIDENCE_PATH): raise ValueError("evidence map is not reproducible")
     if read(MANIFEST_PATH) != manifest or read(RECEIPT_PATH) != expected_receipt: raise ValueError("written bundle differs")
-    print(f"FOUNDATION SUCCESSOR GATE: PASS claims={len(inv.required_claim_ids)} candidates={sum(x['candidate_count'] for x in value['claims'])}")
+    print(f"FOUNDATION PAPER 001 V1.1 GATE: PASS claims={len(inv.required_claim_ids)} candidates={sum(x['candidate_count'] for x in value['claims'])}")
     print(f"paper={evidence.rendered_paper_hash}")
     print(f"receipt={gate.receipt_hash}")
 
