@@ -1,0 +1,92 @@
+{
+  "schema":"sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date":"2026-07-24",
+  "boundary":"Seven Fold consequences were sealed before these current IUPAC identities and ordered extractions were selected. Numerical rate, activation and equilibrium values remain condition-, method- and source-bounded external observations.",
+  "observations":[
+    {
+      "target_id":"chemical-reaction-iupac-composite","source_id":"IUPAC-GOLD-BOOK-CHEMICAL-REACTION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C01033","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01033.json","snapshot_hash":"sha256:83d7891114ad65c012ce2e35f4021beaee6a37d4473c416170d6643db4dc7347"},
+        {"kind":"goldbook-json","term_code":"C01034","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01034.json","snapshot_hash":"sha256:a582f71bc6c555d5513f365d18d5d46a6a5da61e0c1668d231ad860b9a32dea3"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C01034","required_fragment":"reactant entities are given on the left hand side and the product entities on the right hand side","normalized_feature":"reactants-transformed-to-products"},
+        {"document":"C01033","required_fragment":"interconversion of chemical species","normalized_feature":"chemical-identities-change"},
+        {"document":"C01034","required_fragment":"absolute values of the stoichiometric numbers","normalized_feature":"elemental-carriers-conserved"},
+        {"document":"C01034","required_fragment":"Symbolic representation of a chemical reaction","normalized_feature":"source-bound-reaction-record"}
+      ]
+    },
+    {
+      "target_id":"reaction-mechanism-iupac-composite","source_id":"IUPAC-GOLD-BOOK-REACTION-MECHANISM-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"M03804","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03804.json","snapshot_hash":"sha256:b84ddab1f13dbc71482ed3f7653eeab3e2cfe5b7ffba64c30ef9d08513d6be33"},
+        {"kind":"goldbook-json","term_code":"R05178","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/R05178.json","snapshot_hash":"sha256:ec3a863d69869927219b6a69ee8fef179a158e6a12c5e7a65ff8defebe7a1b7d"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"M03804","required_fragment":"process leading from the reactants to the products","normalized_feature":"overall-reaction-decomposed"},
+        {"document":"R05178","required_fragment":"one of the stages of a stepwise reaction","normalized_feature":"ordered-elementary-steps"},
+        {"document":"M03804","required_fragment":"reaction intermediates, products and transition states","normalized_feature":"intermediate-states-retained"},
+        {"document":"R05178","required_fragment":"sequence of intermediates between reactants and products","normalized_feature":"step-composition-reproduces-endpoints"}
+      ]
+    },
+    {
+      "target_id":"reaction-intermediate-iupac-i03096","source_id":"IUPAC-GOLD-BOOK-I03096-2026",
+      "support_documents":[{"kind":"goldbook-json","term_code":"I03096","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/I03096.json","snapshot_hash":"sha256:9de39353e9af29cbe1b9dcb7f7972e2125378129e82924805f5d97696d93fd4a"}],
+      "ordered_feature_extractions":[
+        {"document":"I03096","required_fragment":"formed directly or indirectly from the reactants","normalized_feature":"formed-in-one-elementary-step"},
+        {"document":"I03096","required_fragment":"reacts further to give directly or indirectly the products","normalized_feature":"consumed-in-later-step"},
+        {"document":"I03096","required_fragment":"from the reactants and reacts further to give","normalized_feature":"absent-from-overall-reaction"},
+        {"document":"I03096","required_fragment":"also the corresponding chemical species","normalized_feature":"retained-in-mechanism-trace"}
+      ]
+    },
+    {
+      "target_id":"activation-barrier-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ACTIVATION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"G02631","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/G02631.json","snapshot_hash":"sha256:c51e2c7167603bd633c54e11d238728c7313aa8584662ea4bfc3c3a4bf97a04c"},
+        {"kind":"goldbook-json","term_code":"T06468","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/T06468.json","snapshot_hash":"sha256:0e03ee5e90a5f7cd54ff84b84acb978ff31d04b94e4039be59dd0ac3eaf47bff"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"T06468","required_fragment":"between the reactants and the products","normalized_feature":"reactants-to-transition-state"},
+        {"document":"T06468","required_fragment":"potential energy maximum at the saddle point","normalized_feature":"minimum-required-energy"},
+        {"document":"G02631","required_fragment":"difference between the transition state of a reaction","normalized_feature":"barrier-relative-to-reactants"},
+        {"document":"G02631","required_fragment":"depend upon the choice of concentration units or thermodynamic standard state","normalized_feature":"reaction-path-source-bounded"}
+      ]
+    },
+    {
+      "target_id":"reaction-rate-iupac-composite","source_id":"IUPAC-GOLD-BOOK-REACTION-RATE-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"R05147","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/R05147.json","snapshot_hash":"sha256:4f61cb4a9d72b0266dd464f84a2349aee57aec161521fb2466bcf8febed361fe"},
+        {"kind":"goldbook-json","term_code":"R05156","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/R05156.json","snapshot_hash":"sha256:10937c057f963713f25ec1b2f6d79538779a8e14b873edb440d69178a245c40f"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"R05147","required_fragment":"time derivative of the extent of reaction","normalized_feature":"extent-of-reaction-change"},
+        {"document":"R05156","required_fragment":"divided by time","normalized_feature":"per-time-interval"},
+        {"document":"R05156","required_fragment":"chemical species actually observed","normalized_feature":"observation-boundary-retained"},
+        {"document":"R05156","required_fragment":"applicable conditions is required","normalized_feature":"conditions-and-method-source-bounded"}
+      ]
+    },
+    {
+      "target_id":"reaction-order-iupac-o04322","source_id":"IUPAC-GOLD-BOOK-O04322-2026",
+      "support_documents":[{"kind":"goldbook-json","term_code":"O04322","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/O04322.json","snapshot_hash":"sha256:acb0c1bcc39fca71b9fad77cfbc8813c6ffdc1728be3943d56dcd7631c90b9f4"}],
+      "ordered_feature_extractions":[
+        {"document":"O04322","required_fragment":"rate law containing concentration factors","normalized_feature":"rate-law-concentration-dependence"},
+        {"document":"O04322","required_fragment":"corresponding order with respect to each named reactant","normalized_feature":"reactant-specific-exponent"},
+        {"document":"O04322","required_fragment":"experimentally determined","normalized_feature":"experimentally-determined"},
+        {"document":"O04322","required_fragment":"no general connection between stoichiometric numbers and partial orders","normalized_feature":"not-forced-by-stoichiometry"}
+      ]
+    },
+    {
+      "target_id":"chemical-equilibrium-iupac-composite","source_id":"IUPAC-GOLD-BOOK-CHEMICAL-EQUILIBRIUM-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C01023","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01023.json","snapshot_hash":"sha256:8720b60c684dd7869500da1577be0f0a91f2362e02420d755fbbd1abbad6582b"},
+        {"kind":"goldbook-json","term_code":"C01024","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01024.json","snapshot_hash":"sha256:0655eac9b0e14a085bd8cb72ae871867b37b4da404af9370e1cd7624c0b14b00"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C01023","required_fragment":"forward or reverse direction","normalized_feature":"forward-and-reverse-reactions-continue"},
+        {"document":"C01023","required_fragment":"rates in both directions are identical","normalized_feature":"rates-equal-at-equilibrium"},
+        {"document":"C01024","required_fragment":"no observable concentration changes with time","normalized_feature":"macroscopic-composition-constant"},
+        {"document":"C01023","required_fragment":"condition dependent","normalized_feature":"condition-bound-dynamic-state"}
+      ]
+    }
+  ]
+}

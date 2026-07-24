@@ -1,0 +1,61 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-CHEM-MEAS-AMOUNT-001",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:e123e8f72a4f87a8188e392ea5f1e1526d778296998b7ba1cbec1429ffc0adc6",
+  "empirical_validation_hash": "sha256:d4e5ab18313a931276ffb357cb2851acd039d3ccd496b054715835c6474e3b01",
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "empirically_tested_and_independently_replicated",
+  "external_validation_hash": "sha256:d2f7b45fd1f7add2b9d3206a58cca2999f9519aaecc41f2d3dafc8eddc94834a",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "target-inaccessible prediction sealed before independent data measurement",
+      "gate": "empirical_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:c0dd23aedf3372bf9012540d9f80474ab7e34fa07b38664c9b0d3633f0cafa03",
+  "violations": []
+}

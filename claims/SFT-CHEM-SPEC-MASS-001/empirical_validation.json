@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-SPEC-MASS-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-MASS-SPECTROSCOPY-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9734c3bf2b27a5a555e427ada90e7b5c561b4080be02d45687bad96055012cf3",
+  "falsification_condition": "The claim fails if authority evidence lacks ion mass/charge separation, abundance, composition/fragment correspondence or method boundary, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:2b81b6c4e5626f4d9e1e9ce7b5152e70c1ef70b8967af710a3ce5f0ea2a7b1e4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8112f8d2d8c4d595228f1a505c1a43bd2171ae936edbaf2f6bddab282032a58b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-SPEC-MASS-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b026b620e2c3270a34c1e632ddc4fc2249713f354ff6d02153f32844efb1c604",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cc413256fa8672802b254b5965497c865876f8e5cbbfaf641597a9002ca53815",
+    "prediction_seal_hash": "sha256:e7a20a49693cdc4559057abbc85588d1c2fa3915b5032b12880ff4a0a2f3864c",
+    "program_hash": "sha256:f6cdb7fb01a9308281025b45eeb40f1b5f848caab8175bed067c0e362e891ff6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:89535554b504e83182e2d9912333e10a2d5208aec6cac0d0fddd5a86306a94ca",
+    "target_material_present": false,
+    "trace_hash": "sha256:d005a9926a44b210522ac518f2aef9320921b36d98c2db56ef07df41af79903d"
+  },
+  "measurement_receipt_hash": "sha256:77f7def06c3bc419f995ccf48f17f8d46ed68d2f835561979150017924e59336",
+  "measurements": [
+    "mass-spectroscopy-iupac-composite: predicted ions-separated-by-mass-to-charge__mass-spectrum-retains-relative-abundance__composition-fragment-correspondence__ionization-method-bounded; source-derived ions-separated-by-mass-to-charge__mass-spectrum-retains-relative-abundance__composition-fragment-correspondence__ionization-method-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2a1d5bc32a4354ccae5b3e58f09b16852cb112ec7ad240c15aee2376e5b7b20d",
+    "custodian_id": "SFT-EXP-CHEM-SPEC-MASS-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:9734c3bf2b27a5a555e427ada90e7b5c561b4080be02d45687bad96055012cf3",
+    "prediction_seal_hash": "sha256:e7a20a49693cdc4559057abbc85588d1c2fa3915b5032b12880ff4a0a2f3864c",
+    "registered_target_identity_hash": "sha256:89535554b504e83182e2d9912333e10a2d5208aec6cac0d0fddd5a86306a94ca",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:bb5264bda4aff7b7d278b2ba6eb3425f1545d1ca8ddd3ed06c6eadeaec9e4e0b"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:5800598040da59b271b7dffad5de0528b95c6782508fc03815e14bc1cbae40f9"
+}

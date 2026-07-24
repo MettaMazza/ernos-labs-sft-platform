@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-SPEC-ROT-VIB-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-ROTATION-VIBRATION-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:59493b8db0361a26e35dc488834f2d25f69bedd5d06ec91cc858e0a485924031",
+  "falsification_condition": "The claim fails if authority evidence lacks rotational/vibrational transitions, state composition, transition pattern or population/resolution boundary, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d6e4b8971fd420ccafcaae0d29e24ca2a51f85f504f5ac52e284dea925f10e45",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:d755751f5bfe609052b6e378f0f732c157d2965a8dada94c56113e9136b7992b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-SPEC-ROT-VIB-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d38680601a1c2179d0a0f198312fc7e98c08ba119edf74b1cd1f58f75503c9e7",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3d60a83183f58867478748d0055571ec5a11bf32b4202f3e89627879ce8491db",
+    "prediction_seal_hash": "sha256:bdc525ef898186b2e25eac86db17b730ac92b615f6a332aec92ed448ace39d06",
+    "program_hash": "sha256:332b100d05079cf9ce3d7e83973c3aa20270bfb8c6163ba871a4b7febc59be20",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:16bb2abb881907dc100e0b832611a70941c1a47e41c2d7f451649849d76bd5cd",
+    "target_material_present": false,
+    "trace_hash": "sha256:aad82cc1f22994ccf5ae80bf47966f158e94693e55d62353713c9f1c5e6cb6d6"
+  },
+  "measurement_receipt_hash": "sha256:9e6705743272cc7a980dbff088a552cc9fa032666221bce0201399ba9c83dc25",
+  "measurements": [
+    "rotation-vibration-iupac-composite: predicted molecular-spectra-retain-rotational-and-vibrational-transitions__state-composition-held__transition-pattern-complete__population-resolution-bounded; source-derived molecular-spectra-retain-rotational-and-vibrational-transitions__state-composition-held__transition-pattern-complete__population-resolution-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d6097c94596e1d228f13e4b8cc8fd50852a2dc8dcab8791cb81630c7fa40dd89",
+    "custodian_id": "SFT-EXP-CHEM-SPEC-ROT-VIB-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:59493b8db0361a26e35dc488834f2d25f69bedd5d06ec91cc858e0a485924031",
+    "prediction_seal_hash": "sha256:bdc525ef898186b2e25eac86db17b730ac92b615f6a332aec92ed448ace39d06",
+    "registered_target_identity_hash": "sha256:16bb2abb881907dc100e0b832611a70941c1a47e41c2d7f451649849d76bd5cd",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:cd566c959a47ae57828c2d2f2793a587012f96273b99b59e86a08227c8504a95"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:214611a96dc7ce7ed35126a179a111b50b66db259a3ac7be747818b07e920aef"
+}

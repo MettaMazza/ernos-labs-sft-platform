@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-BIOMOLECULAR-BOUNDARY-001",
+  "data_source_ids": [
+    "EMBL-EBI-CHEBI-BIOMOLECULAR-BOUNDARY-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:a5d8e48c29c29d71ee40d55c7c54fa694c91da18939646ee2447b284d2fd8a62",
+  "falsification_condition": "The claim fails if authority evidence cannot separate chemical molecular identity from biological function at an explicit handoff boundary, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:819826e2239d7b8e241efa0e71ca7e1ca417dd34a948063166a5fd66af8a9f79",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f0c673dab72e8aebed1554d1f1b680d0d9bf05c581b224252e6b584b21adb98b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-BIOMOLECULAR-BOUNDARY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:eaec61f42e39dad00d94840573b393eb1e105d46ff1c84e57fc1660ce8ff84f6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e89c9c25574b7439504be8686eb98bbc49663047a8c41ff8765c189ea879254e",
+    "prediction_seal_hash": "sha256:2b58d54d4d37b89a1353e2ba251fac678e3c440554703228c8a58ca2401c9dc8",
+    "program_hash": "sha256:29567e57f4a6572d83678adc793f8dea676b7ada91cc7ec8d1e2bb0c72fdc37d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c16241cd5598d9620113662398b1e2f4c706efdf6e860b82b2ee7dbd89f0e0eb",
+    "target_material_present": false,
+    "trace_hash": "sha256:f89d621506d0245a27d08b0ee5ec33131d337afbf8ae3601250664179fd572db"
+  },
+  "measurement_receipt_hash": "sha256:1fd01394c060361f41594cb2e5faeafacf6c2f2f4c6f9a57a1d93548da7df75a",
+  "measurements": [
+    "biomolecular-boundary-authority-composite: predicted chemical-molecular-identity-retained__biological-function-not-chemical-identity__structure-composition-handoff__biology-boundary-explicit; source-derived chemical-molecular-identity-retained__biological-function-not-chemical-identity__structure-composition-handoff__biology-boundary-explicit; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3434cfb36ec513b6089ed50cea8cb2fb844fca1392239b585b2c82af1f3db026",
+    "custodian_id": "SFT-EXP-CHEM-BIOMOLECULAR-BOUNDARY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:a5d8e48c29c29d71ee40d55c7c54fa694c91da18939646ee2447b284d2fd8a62",
+    "prediction_seal_hash": "sha256:2b58d54d4d37b89a1353e2ba251fac678e3c440554703228c8a58ca2401c9dc8",
+    "registered_target_identity_hash": "sha256:c16241cd5598d9620113662398b1e2f4c706efdf6e860b82b2ee7dbd89f0e0eb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:9e63f8ed27f8b15034f55496166911299a3609b8ee8c66aff930dd4f1ee183f3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:cc93dcd2e0b68c5cd2d497b751efc1292cb3a845fb29e86a07b8b7d9cf4c5a14"
+}

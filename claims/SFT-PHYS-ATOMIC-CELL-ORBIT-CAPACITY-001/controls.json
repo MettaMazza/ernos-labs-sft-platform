@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1ed87436e21f59d043967ca432026eaebd71e5e1f8be1907692eab24d946c6d5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:625315de8974967651ba198f65bcbd903e36bfac7a0cc349d449aed6298445b7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4bf7aa1fcc6d37bda661b6b898af0d9b3a48ba75d0f12afa04f8db6b363f4d61"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1c45ec73b2de2f2c722af6fcddecc09f844cab496f9bb77bdbdda1f0c85f80ab"
+    }
+  ]
+}

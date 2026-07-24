@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-STOICH-LIMITING-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-D01771-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:60aeb4dc051d975ecd92dbf91b17fa765c2817b8506bf38d985021588aa270c0",
+  "falsification_condition": "The claim fails if the IUPAC record lacks a limiting reagent and its amount relation, an exact nonleast carrier is selected, or a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:49ca936b63fb7bc678ad1191e82c2d8c6eaf963667978a997220527ede439d67",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:75fa7fe1b8fb29c998f6f24661abf7b7a5a3f5c84b1d80f335c0f67b13692c2f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-STOICH-LIMITING-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9aa75f0414a288dc8d2ccdef1669eb697ed599d98b39d1e859f16cd78c53b037",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9b0b38c01d820225075ae4812701bbb1c94daf35102519af9be765cd3d4e0a9a",
+    "prediction_seal_hash": "sha256:1a03f5b4a63d88d6b1f65ff03e802462fc9307cc353ad53e440bbf8de65454c4",
+    "program_hash": "sha256:b01d57347918fd1dc6fbe41e9e1b03ddbd0cb2261747f69a7659b494769d98a7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:31af8c6565664b5f821db7424b41d1b2805a3047ee510e25710a34a56358d3b1",
+    "target_material_present": false,
+    "trace_hash": "sha256:1eddf7675bc853442fdbf6be8fae151ab359117074dcab3598a20d6955825e83"
+  },
+  "measurement_receipt_hash": "sha256:af4b2a71f1cf3ff3049af90956d74c521b1fb6bd1f967619e433e1299d44382b",
+  "measurements": [
+    "limiting-reagent-iupac-d01771: predicted limiting-reagent-carrier__amount-boundary; source-derived limiting-reagent-carrier__amount-boundary; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c45284506b0557a4d8b86cdca4c78e0f4df93c446c56b96ae4ff409c8b27349e",
+    "custodian_id": "SFT-EXP-CHEM-STOICH-LIMITING-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:60aeb4dc051d975ecd92dbf91b17fa765c2817b8506bf38d985021588aa270c0",
+    "prediction_seal_hash": "sha256:1a03f5b4a63d88d6b1f65ff03e802462fc9307cc353ad53e440bbf8de65454c4",
+    "registered_target_identity_hash": "sha256:31af8c6565664b5f821db7424b41d1b2805a3047ee510e25710a34a56358d3b1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4117a3400505d3752ef9ce950646f70fb5ece48b91b0862f440c5faf1117599a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b784c5f3c18d8664ea883c1c9bbbba2321a6db47675ddb505a48367c1fb478f4"
+}

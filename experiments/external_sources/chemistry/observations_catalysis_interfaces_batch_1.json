@@ -1,0 +1,119 @@
+{
+  "schema":"sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date":"2026-07-24",
+  "boundary":"Eight Fold consequences were sealed before these IUPAC and RSC source identities and ordered extractions were selected. Numerical kinetic, selectivity, surface, colloidal and transfer values remain condition-, method- and source-bounded external observations.",
+  "observations":[
+    {
+      "target_id":"catalyst-authority-composite","source_id":"CHEM-AUTHORITY-CATALYST-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C00876","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C00876.json","snapshot_hash":"sha256:a960e78123592da7dd8ad054b65a590961706c25e22a578f9088f91fb3c89e5e"},
+        {"kind":"goldbook-json","term_code":"M03804","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03804.json","snapshot_hash":"sha256:b84ddab1f13dbc71482ed3f7653eeab3e2cfe5b7ffba64c30ef9d08513d6be33"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C00876","required_fragment":"increases the rate of a reaction","normalized_feature":"reaction-rate-increased"},
+        {"document":"M03804","required_fragment":"successive species along the reaction path","normalized_feature":"alternative-reaction-pathway"},
+        {"document":"C00876","required_fragment":"both a reactant and product of the reaction","normalized_feature":"catalyst-regenerated"},
+        {"document":"C00876","required_fragment":"without modifying the overall standard Gibbs energy change","normalized_feature":"net-reaction-unchanged"}
+      ]
+    },
+    {
+      "target_id":"catalytic-pathway-authority-composite","source_id":"CHEM-AUTHORITY-CATALYTIC-PATHWAY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C00876","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C00876.json","snapshot_hash":"sha256:a960e78123592da7dd8ad054b65a590961706c25e22a578f9088f91fb3c89e5e"},
+        {"kind":"goldbook-json","term_code":"M03804","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03804.json","snapshot_hash":"sha256:b84ddab1f13dbc71482ed3f7653eeab3e2cfe5b7ffba64c30ef9d08513d6be33"},
+        {"kind":"official-html","term_code":"RSC-CATALYSIS","snapshot_path":"experiments/external_sources/chemistry/snapshots/rsc-catalysis-lower-activation-extract.html","snapshot_hash":"sha256:a860c55a4e46eb950ff87f135d789257fbbd0ed63b9140ceb1acb901a05a6bc1"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"M03804","required_fragment":"detailed description of the process leading from the reactants to the products","normalized_feature":"alternative-reaction-mechanism"},
+        {"document":"RSC-CATALYSIS","required_fragment":"pathway (mechanism) which has a lower activation energy","normalized_feature":"lower-activation-energy-path"},
+        {"document":"C00876","required_fragment":"without modifying the overall standard Gibbs energy change","normalized_feature":"same-overall-reaction"},
+        {"document":"C00876","required_fragment":"both a reactant and product of the reaction","normalized_feature":"catalyst-cycle-retained"}
+      ]
+    },
+    {
+      "target_id":"catalytic-selectivity-iupac-composite","source_id":"IUPAC-GOLD-BOOK-CATALYTIC-SELECTIVITY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"S05563","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05563.json","snapshot_hash":"sha256:72489fb0beb2453befdf2628aa48d7fe5a18f8a8ce4e09573c09b3bb464d7506"},
+        {"kind":"goldbook-json","term_code":"F02496","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/F02496.json","snapshot_hash":"sha256:f29f0085edcc1384920d19a5c5fad7c731b60b2d5768d5f6d93dd423c3ae13d6"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"S05563","required_fragment":"ratio of products obtained from given reactants","normalized_feature":"one-product-favored-among-alternatives"},
+        {"document":"F02496","required_fragment":"single reactant taking part in two or more reactions","normalized_feature":"specified-reactant-consumption"},
+        {"document":"S05563","required_fragment":"quantitatively expressed by ratios of rate constants","normalized_feature":"condition-and-method-bounded"},
+        {"document":"F02496","required_fragment":"two or more competing reactions","normalized_feature":"competing-products-retained"}
+      ]
+    },
+    {
+      "target_id":"reaction-network-iupac-composite","source_id":"IUPAC-GOLD-BOOK-REACTION-NETWORK-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C01033","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01033.json","snapshot_hash":"sha256:83d7891114ad65c012ce2e35f4021beaee6a37d4473c416170d6643db4dc7347"},
+        {"kind":"goldbook-json","term_code":"C01210","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01210.json","snapshot_hash":"sha256:f7949843026a8fe090e71f1d952633b8c63eb8277ad6b067b4bcaf5babf3598d"},
+        {"kind":"goldbook-json","term_code":"C01034","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01034.json","snapshot_hash":"sha256:a582f71bc6c555d5513f365d18d5d46a6a5da61e0c1668d231ad860b9a32dea3"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C01033","required_fragment":"interconversion of chemical species","normalized_feature":"chemical-species-nodes"},
+        {"document":"C01210","required_fragment":"more than one elementary reaction","normalized_feature":"reaction-steps-connect-species"},
+        {"document":"C01210","required_fragment":"parallel reactions, opposing reactions and reactions occurring in sequence","normalized_feature":"combined-network-paths"},
+        {"document":"C01034","required_fragment":"reactant entities are given on the left hand side and the product entities on the right hand side","normalized_feature":"complete-source-product-boundary"}
+      ]
+    },
+    {
+      "target_id":"autocatalysis-iupac-composite","source_id":"IUPAC-GOLD-BOOK-AUTOCATALYSIS-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"A00525","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00525.json","snapshot_hash":"sha256:cd6e2b68b8eefaa71fd7212cb577bd9996810a0d64771508748f7d3599469b06"},
+        {"kind":"goldbook-json","term_code":"C01210","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01210.json","snapshot_hash":"sha256:f7949843026a8fe090e71f1d952633b8c63eb8277ad6b067b4bcaf5babf3598d"},
+        {"kind":"goldbook-json","term_code":"C01033","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01033.json","snapshot_hash":"sha256:83d7891114ad65c012ce2e35f4021beaee6a37d4473c416170d6643db4dc7347"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"A00525","required_fragment":"product or a reaction intermediate also functions as a catalyst","normalized_feature":"reaction-product-is-catalyst"},
+        {"document":"A00525","required_fragment":"rate of reaction is often found to increase with time","normalized_feature":"product-accelerates-own-formation"},
+        {"document":"C01210","required_fragment":"catalysis gives positive feedback","normalized_feature":"positive-feedback-cycle"},
+        {"document":"C01033","required_fragment":"normally involve sets of molecular entities","normalized_feature":"finite-resource-bounded"}
+      ]
+    },
+    {
+      "target_id":"adsorption-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ADSORPTION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"A00155","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00155.json","snapshot_hash":"sha256:8d8d32d4fad6f36f8be4aeed8056bac1efb3ef5f9d03c3ec26fddaade7cce582"},
+        {"kind":"goldbook-json","term_code":"A00152","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00152.json","snapshot_hash":"sha256:161a4692d5989c10042a1f54d2d227232e6ea9d7b78e43c79933b7cef3af72cc"},
+        {"kind":"goldbook-json","term_code":"S06171","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S06171.json","snapshot_hash":"sha256:2c71a652c0e9c6f3de502564664b4e95384e50f4ea2e662dc8a44aeb45ef97c1"},
+        {"kind":"goldbook-json","term_code":"D01620","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/D01620.json","snapshot_hash":"sha256:3b6fc4af9a29a977ccb6f427949fcb9cebf44e32e77cbac9699679178d527395"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"A00155","required_fragment":"increase in the concentration of a dissolved substance at the interface","normalized_feature":"accumulation-at-interface"},
+        {"document":"A00152","required_fragment":"molecular species","normalized_feature":"adsorbate-and-adsorbent-retained"},
+        {"document":"S06171","required_fragment":"difference between the amount actually present and that which would be present if the bulk concentration","normalized_feature":"surface-concentration-differs-from-bulk"},
+        {"document":"D01620","required_fragment":"converse of adsorption","normalized_feature":"reversible-desorption-boundary"}
+      ]
+    },
+    {
+      "target_id":"colloidal-dispersion-iupac-composite","source_id":"IUPAC-GOLD-BOOK-COLLOIDAL-DISPERSION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C01174","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01174.json","snapshot_hash":"sha256:a8261e1400d58c847f37722d7c1cb39f782a97844d847648156bf01dfad7a636"},
+        {"kind":"goldbook-json","term_code":"C01172","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01172.json","snapshot_hash":"sha256:3bd353f8d91706ac55ad01afda2b9d375a52ab7a92a3dbad0f49eb0611907497"},
+        {"kind":"goldbook-json","term_code":"I03082","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/I03082.json","snapshot_hash":"sha256:8b039a76e46ff222ef0950eb7a37820e60544c01e0a4aa7dfb2d9f41f7019db7"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C01174","required_fragment":"particles of colloidal size of any nature are dispersed in a continuous phase","normalized_feature":"microscopic-phase-dispersed-in-continuous-phase"},
+        {"document":"I03082","required_fragment":"boundary between two phases","normalized_feature":"phase-interface-retained"},
+        {"document":"C01172","required_fragment":"dimension roughly between one nanometre and one micrometre","normalized_feature":"particle-size-boundary"},
+        {"document":"C01174","required_fragment":"continuous phase of a different composition or state","normalized_feature":"dispersion-condition-bounded"}
+      ]
+    },
+    {
+      "target_id":"interface-transfer-iupac-composite","source_id":"IUPAC-GOLD-BOOK-INTERFACE-TRANSFER-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"P04536","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/P04536.json","snapshot_hash":"sha256:b60eba64e32f00b5bcb7ecf818b25abc53208476546555ae05349a52cbd7e7b6"},
+        {"kind":"goldbook-json","term_code":"I03082","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/I03082.json","snapshot_hash":"sha256:8b039a76e46ff222ef0950eb7a37820e60544c01e0a4aa7dfb2d9f41f7019db7"},
+        {"kind":"goldbook-json","term_code":"T06439","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/T06439.json","snapshot_hash":"sha256:c0abca96f747c51fafdb4e381fbcafa04b3dd304aeb1909265e876777ee27e4c"},
+        {"kind":"goldbook-json","term_code":"C01034","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01034.json","snapshot_hash":"sha256:a582f71bc6c555d5513f365d18d5d46a6a5da61e0c1668d231ad860b9a32dea3"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"P04536","required_fragment":"extracts one reactant across the interface into the other phase","normalized_feature":"chemical-species-crosses-phase-boundary"},
+        {"document":"I03082","required_fragment":"boundary between two phases","normalized_feature":"donor-and-receiver-phases-retained"},
+        {"document":"T06439","required_fragment":"expressed using rates of change","normalized_feature":"transfer-rate-condition-bounded"},
+        {"document":"C01034","required_fragment":"absolute values of the stoichiometric numbers","normalized_feature":"mass-balance-preserved"}
+      ]
+    }
+  ]
+}

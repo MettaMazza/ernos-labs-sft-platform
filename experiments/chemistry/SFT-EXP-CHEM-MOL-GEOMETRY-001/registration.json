@@ -1,0 +1,149 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-MOL-GEOMETRY-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-MOL-GEOMETRY-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:226b40c9952a4d4afd5d5153bd9d3634c1f76474f843be2f4a5ce9634c75891e",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_molecular_structure_batch_2.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:7cef5bdd79a09687b2e457a4473fff2fde14b786bf134934841778ec4084cc95"
+  },
+  "dependency_identity_amendment": "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_dependency_amendment.json",
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:54e8528018bf9f21628ef131839f4080ec6a9acbdad09031f09a584f4c5f93d9",
+    "evaluator_id": "SFT-EXP-CHEM-MOL-GEOMETRY-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the authoritative geometry record lacks identified atoms, relational spatial organization or source-bounded coordinates, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-MOL-GEOMETRY-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:65cc9feaea028f9ab7bd7ed349276522555ebcc66d2f079dc94d55fe9dc7230b",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/S06061.json",
+      "source_id": "IUPAC-GOLD-BOOK-S06061-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/S06061/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered geometry carrier, adjacency, orientation, completeness, equivalence, measurement, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:537ad43aeca3d32a5f80d1faecee830a2ca5005f0f98a9eb6d281751b0e71282",
+      "sha256:a8cb33d7d7d82dc4cf4197f87135099c0f8d79e477458c75972220fe67ea3062",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:40c63d50f9534bf644ad6083ebad1475350c9c09898d9a4c64c5dd773825bcb2",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:a9921b37fcfd2ae8902917ecf5d77b6aef1fc196b0ae6d0800b71dcac5dfe14f",
+      "sha256:a43dfe15d1e98f33247ca4b7c53275ff4187fd7821e8ecfbe3a541fd6c3ddd77",
+      "sha256:bc05c989f13006cd1cb48c03eadb6f0ffd3abad6470c6a8baca0788103cd0d1f",
+      "sha256:328bad35a4c1f0944ad1ce0e6bf858b19213848755aea2b7ff90b04c9f93595d",
+      "sha256:44e12eb55ccd83c19ec4425014346e94b0e77be0822275aa9435a9ce6a76d40c",
+      "sha256:27ebf68d06fb04b12c3ec677d5c952e805f9fdb220afb806b37d3a9fb7b23b2d",
+      "sha256:1cd1a6b729f20751959be84d890460d4221195efe2ce955d544f87fa2ad91669",
+      "sha256:b7214f06110018dab93d0df51adbc772cc6b769cd8ba545eccb4cfc7c6a55e29",
+      "sha256:a67a1d8519f4c7ac44255609e28362427c0cf405c5beb7ec3f9aafacd64c6dba",
+      "sha256:4438ab78509e1124db943a2d0bf8f83b301b58691d7d80d68098e0a37b34b65d",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256"
+    ],
+    "exact_domain": "Every finite admitted molecular carrier with a complete pairwise relative-orientation record, interpreted up to one global rigid relabelling and retained with its source and observation conditions.",
+    "relation_hash": "sha256:11f69d892b1d9919610dd9492313b0088632992d7cfab8ee1e4f2c8b35c96afd",
+    "statement": "identified-molecular-carrier__complete-atom-adjacency__held-relative-orientation__complete-pair-support__rigid-relabel-equivalence",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:35ad3f24ea4454533c378ab2ee5edc9ff0351c08244f73b752f74ef526b09413",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "pre_source_derivation_seal": "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_pre_source.json",
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-MOL-GEOMETRY-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:51b8a726c7df9755ec4426d871dfc0627382d2edbd3ab763c32ab63d452794c9",
+    "program_id": "SFT-EXP-CHEM-MOL-GEOMETRY-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:fca96d58c0e1c7f8cbf302043dd33a3b8c4af6af12d47050c13472b4798e1d9f",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/S06061.json": "sha256:65cc9feaea028f9ab7bd7ed349276522555ebcc66d2f079dc94d55fe9dc7230b"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:65cc9feaea028f9ab7bd7ed349276522555ebcc66d2f079dc94d55fe9dc7230b",
+      "source_id": "IUPAC-GOLD-BOOK-S06061-2026",
+      "source_locator": "https://goldbook.iupac.org/terms/view/S06061/json :: current definition and notes",
+      "target_id": "molecular-geometry-iupac-s06061"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-STOICH-COMPOSITION-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-M03722-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6d68625688c882498efd667bb77435f8173f20de74d69d465c0b8a879841877d",
+  "falsification_condition": "The claim fails if the IUPAC record lacks constituent identity, a constituent-to-total relation or mixture support, or if a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:2a8f74b85fac0e37d95b18ad205da144f96cf966913800109647a4cf545da143",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6049f4c23f3ab711bb42b0544135d2c6fe95eaa380635f21e6ecf226d675e67f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-STOICH-COMPOSITION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:29cc505fc32d9c68a3041edc9e0aa7f8595e60d72be5306ceeddb15fde29e37f",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c84fdb5a8b9776a8fc8c71f2505f10123ec69651a8f162d5aa8ba2c86b05e293",
+    "prediction_seal_hash": "sha256:6fedd3543a5f22778b14cb3f2b83b4b384562b5c145c3644b32eb91a13d0266d",
+    "program_hash": "sha256:f66c8bc27e5ad60ef4e358542331e9a17b758aec591e05d96bff0d07e7c1b6f0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b6cc31c1cae6bdda2b90114d6dc38828e72630620694f86df31c66924e302ee3",
+    "target_material_present": false,
+    "trace_hash": "sha256:d7bccb7cb8eb49d326576b744bced7fff813dbbe5bfce7a4f64beffe7716a53a"
+  },
+  "measurement_receipt_hash": "sha256:d4a6cc0ba56b7f6b94481f21014a9be2deca14df0f4ba7cc26b95a7fef4374b2",
+  "measurements": [
+    "composition-iupac-m03722: predicted constituent-carrier__constituent-part-over-total-mixture; source-derived constituent-carrier__constituent-part-over-total-mixture; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:0a657320e42bc4eefc3aeedbb705dd197c259007ae0d2dbd23cde01147eeac8e",
+    "custodian_id": "SFT-EXP-CHEM-STOICH-COMPOSITION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:6d68625688c882498efd667bb77435f8173f20de74d69d465c0b8a879841877d",
+    "prediction_seal_hash": "sha256:6fedd3543a5f22778b14cb3f2b83b4b384562b5c145c3644b32eb91a13d0266d",
+    "registered_target_identity_hash": "sha256:b6cc31c1cae6bdda2b90114d6dc38828e72630620694f86df31c66924e302ee3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a402f2fe523a27e7313bcf6d321fb5f129367d4ad815819763b708cdfea29234"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:165b5200764d9d49f6881b554db180129167625b1e98c79e12037a7bc4dfd5a0"
+}

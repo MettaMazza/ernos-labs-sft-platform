@@ -1,0 +1,146 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "authority_support_registry": "experiments/external_sources/chemistry/observations_acid_base_batch_1.json",
+  "claim_id": "SFT-CHEM-AB-BUFFER-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-AB-BUFFER-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:9b7ac560319d921e9cc1ddc47af3913c0dafca0144142ea9c3a8854b72262e7e",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_acid_base_batch_1.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:1481805a4e72cb537642756bc89d1713f216c6df1e28cf187964ba761ec00e87"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:da3130366ca6ac85ccfc2044eb75907be8fad54c7c72f29f70c31741d6d8ca3e",
+    "evaluator_id": "SFT-EXP-CHEM-AB-BUFFER-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the authoritative buffer record lacks a weak acid/conjugate base pair, response to added acid/base or finite composition-dependent capacity, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-AB-BUFFER-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:570a91d1a7de35b22a8469c117f10af9e4bed3012ae61f54362fe45534b3d01e",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/iupac-didac-buffer-e15-extract.html",
+      "source_id": "IUPAC-DIDAC-E15-2026",
+      "source_uri": "https://old.iupac.org/didac/Didac%20Eng/Didac02/Content/E15.htm"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered buffer components, support, acid response, base response, retention, capacity, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:a8cb33d7d7d82dc4cf4197f87135099c0f8d79e477458c75972220fe67ea3062",
+      "sha256:88089d61acc33978914e6b94830213e1ac3d8b216b79a4414bd90f6bbe566831",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:fce3ddff18354c507387b7e842d6a658d0078ea714f10d119fe10bdb6ddb05b9",
+      "sha256:a0bbc15e8f2c8d83d7f61f07b9013e27eec1465f864a1f05df9ded10a5db85a7",
+      "sha256:328bad35a4c1f0944ad1ce0e6bf858b19213848755aea2b7ff90b04c9f93595d",
+      "sha256:27ebf68d06fb04b12c3ec677d5c952e805f9fdb220afb806b37d3a9fb7b23b2d",
+      "sha256:1cd1a6b729f20751959be84d890460d4221195efe2ce955d544f87fa2ad91669",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:54b69d9b13e5608b43a8642bbf0301722f15ea207cbaddcf9f133e1459d86cc0",
+      "sha256:11c1aa236f0b3613acb6df1121d0ad9189ae08e5a7e6a78231b0c5edbb819e1f",
+      "sha256:989fbfcde926fa285fd191256f5c8bf5e6a9083e6a6593ca6023c0036996846c",
+      "sha256:1f8f6223f60e6b99dd0bfb3b143fde779c028b0dc0efd64f1c82d466862433b2"
+    ],
+    "exact_domain": "Every finite reservoir containing positive support of both members of a conjugate pair and two complementary response paths that consume added proton support or supply proton support to an added base within capacity.",
+    "relation_hash": "sha256:9d417539cbebd1a8c85cd35f19b0bf76c08889edb964322bbfc2dee1ce06236a",
+    "statement": "conjugate-pair-reservoir__positive-support-of-both__base-member-accepts-proton__acid-member-supplies-proton__conjugate-pair-retained",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:9653e376ab8dbdaafe52636b8279c6e8ff392045182bda20c4c1bfc2b9fb23a6",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "pre_source_derivation_seal": "experiments/sealed_predictions/chemistry_acid_base_batch_1_pre_source.json",
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-AB-BUFFER-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:b27f2068f2b9b1612669fa405473b0b92a626b2c4844b36c21091dd6d3a388a6",
+    "program_id": "SFT-EXP-CHEM-AB-BUFFER-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:2d76ba95c3b6ac93e80d6c328b9fd679660b90e0cd513ba922117858660d55ab",
+    "experiments/external_sources/chemistry/snapshots/iupac-didac-buffer-e15-extract.html": "sha256:570a91d1a7de35b22a8469c117f10af9e4bed3012ae61f54362fe45534b3d01e"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:570a91d1a7de35b22a8469c117f10af9e4bed3012ae61f54362fe45534b3d01e",
+      "source_id": "IUPAC-DIDAC-E15-2026",
+      "source_locator": "official IUPAC source set anchored at IUPAC-DIDAC-E15",
+      "target_id": "buffer-iupac-didac-e15"
+    }
+  ]
+}

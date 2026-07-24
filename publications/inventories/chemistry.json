@@ -1,0 +1,1125 @@
+{
+  "schema": "sft-v3-chemistry-branch-inventory/1",
+  "branch_id": "chemistry",
+  "inventory_frozen": true,
+  "inventory_date": "2026-07-24",
+  "scope": "Complete categorical Chemistry reconstruction through chemical observation and identity; elements and periodicity; composition and stoichiometry; bonding and molecular organization; acid/base, redox and electrochemistry; reactions, kinetics and thermochemistry; catalysis, networks and interfaces; stereochemistry, organic and polymer structure; analytical and spectroscopic correspondence; and explicit g-block, Smithium and periodic-endpoint predictions.",
+  "exclusions": [
+    "materials bulk-property reconstruction belongs to Materials Science",
+    "cellular, organismal and ecological functions belong to Biology",
+    "clinical intervention and population health belong to Medicine and Health Sciences",
+    "environmental fate and Earth-system chemistry belong to Earth and Environmental Sciences",
+    "application systems cannot select chemical laws",
+    "unobserved Smithium and endpoint claims are sealed predictions, not measured discoveries"
+  ],
+  "subbranch_order": [
+    "measurement_identity",
+    "elements_periodicity",
+    "composition_stoichiometry",
+    "bonding_molecular",
+    "acid_base_redox",
+    "reaction_kinetics_thermodynamics",
+    "catalysis_networks_interfaces",
+    "stereochemistry_organic_polymer",
+    "analytical_spectroscopic",
+    "gblock_smithium"
+  ],
+  "subbranch_counts": {
+    "measurement_identity": 8,
+    "elements_periodicity": 10,
+    "composition_stoichiometry": 7,
+    "bonding_molecular": 12,
+    "acid_base_redox": 10,
+    "reaction_kinetics_thermodynamics": 12,
+    "catalysis_networks_interfaces": 8,
+    "stereochemistry_organic_polymer": 8,
+    "analytical_spectroscopic": 8,
+    "gblock_smithium": 3
+  },
+  "required_claim_count": 86,
+  "required_claim_ids": [
+    "SFT-CHEM-MEAS-CHEMICAL-ENTITY-001",
+    "SFT-CHEM-MEAS-CHEMICAL-SPECIES-001",
+    "SFT-CHEM-MEAS-SUBSTANCE-001",
+    "SFT-CHEM-MEAS-AMOUNT-001",
+    "SFT-CHEM-MEAS-FORMULA-001",
+    "SFT-CHEM-MEAS-NOMENCLATURE-001",
+    "SFT-CHEM-MEAS-UNCERTAINTY-001",
+    "SFT-CHEM-MEAS-TRACEABILITY-001",
+    "SFT-CHEM-ELEM-ELEMENT-001",
+    "SFT-CHEM-ELEM-ATOMIC-NUMBER-001",
+    "SFT-CHEM-ELEM-ISOTOPE-001",
+    "SFT-CHEM-ELEM-ATOMIC-WEIGHT-001",
+    "SFT-CHEM-ELEM-PERIODIC-ORDER-001",
+    "SFT-CHEM-ELEM-PERIODIC-RECURRENCE-001",
+    "SFT-CHEM-ELEM-GROUP-PERIOD-001",
+    "SFT-CHEM-ELEM-VALENCE-001",
+    "SFT-CHEM-ELEM-ION-001",
+    "SFT-CHEM-ELEM-PERIODIC-BOUNDARY-001",
+    "SFT-CHEM-STOICH-COMPOSITION-001",
+    "SFT-CHEM-STOICH-CONSERVATION-001",
+    "SFT-CHEM-STOICH-COEFFICIENT-001",
+    "SFT-CHEM-STOICH-LIMITING-001",
+    "SFT-CHEM-STOICH-YIELD-001",
+    "SFT-CHEM-STOICH-MIXTURE-001",
+    "SFT-CHEM-STOICH-SOLUTION-001",
+    "SFT-CHEM-BOND-CHEMICAL-BOND-001",
+    "SFT-CHEM-BOND-COVALENT-001",
+    "SFT-CHEM-BOND-IONIC-001",
+    "SFT-CHEM-BOND-METALLIC-001",
+    "SFT-CHEM-BOND-ORDER-001",
+    "SFT-CHEM-BOND-LENGTH-STRENGTH-001",
+    "SFT-CHEM-MOL-MOLECULE-001",
+    "SFT-CHEM-MOL-GEOMETRY-001",
+    "SFT-CHEM-MOL-ISOMER-001",
+    "SFT-CHEM-MOL-INTERMOLECULAR-001",
+    "SFT-CHEM-MOL-SUPRAMOLECULAR-001",
+    "SFT-CHEM-MOL-NETWORK-001",
+    "SFT-CHEM-AB-ACID-BASE-001",
+    "SFT-CHEM-AB-PROTON-TRANSFER-001",
+    "SFT-CHEM-AB-LEWIS-001",
+    "SFT-CHEM-AB-AMPHOTERIC-001",
+    "SFT-CHEM-AB-BUFFER-001",
+    "SFT-CHEM-ELECTRONEGATIVITY-001",
+    "SFT-CHEM-BOND-POLARITY-001",
+    "SFT-CHEM-REDOX-OXIDATION-STATE-001",
+    "SFT-CHEM-REDOX-COUPLING-001",
+    "SFT-CHEM-ELECTROCHEM-CELL-001",
+    "SFT-CHEM-RXN-IDENTITY-001",
+    "SFT-CHEM-RXN-MECHANISM-001",
+    "SFT-CHEM-RXN-INTERMEDIATE-001",
+    "SFT-CHEM-KIN-ACTIVATION-001",
+    "SFT-CHEM-KIN-RATE-001",
+    "SFT-CHEM-KIN-ORDER-001",
+    "SFT-CHEM-EQ-CHEMICAL-001",
+    "SFT-CHEM-THERMO-REACTION-001",
+    "SFT-CHEM-THERMO-DIRECTION-001",
+    "SFT-CHEM-PHASE-CHEMICAL-001",
+    "SFT-CHEM-SOLUTION-EQUILIBRIUM-001",
+    "SFT-CHEM-PHOTOCHEM-001",
+    "SFT-CHEM-CAT-CATALYST-001",
+    "SFT-CHEM-CAT-PATHWAY-001",
+    "SFT-CHEM-CAT-SELECTIVITY-001",
+    "SFT-CHEM-NET-REACTION-001",
+    "SFT-CHEM-NET-AUTOCATALYSIS-001",
+    "SFT-CHEM-SURFACE-ADSORPTION-001",
+    "SFT-CHEM-COLLOID-DISPERSION-001",
+    "SFT-CHEM-INTERFACE-TRANSFER-001",
+    "SFT-CHEM-STEREO-CHIRALITY-001",
+    "SFT-CHEM-STEREO-ENANTIOMER-001",
+    "SFT-CHEM-STEREO-DIASTEREOMER-001",
+    "SFT-CHEM-ORGANIC-FUNCTIONAL-GROUP-001",
+    "SFT-CHEM-ORGANIC-REACTION-FAMILY-001",
+    "SFT-CHEM-POLYMER-CHAIN-001",
+    "SFT-CHEM-POLYMER-DISTRIBUTION-001",
+    "SFT-CHEM-BIOMOLECULAR-BOUNDARY-001",
+    "SFT-CHEM-ANALYTICAL-SAMPLE-001",
+    "SFT-CHEM-ANALYTICAL-CALIBRATION-001",
+    "SFT-CHEM-ANALYTICAL-SELECTIVITY-001",
+    "SFT-CHEM-SPEC-MASS-001",
+    "SFT-CHEM-SPEC-INFRARED-001",
+    "SFT-CHEM-SPEC-UVVIS-001",
+    "SFT-CHEM-SPEC-ROT-VIB-001",
+    "SFT-CHEM-ANALYTICAL-COMPLETE-RECORD-001",
+    "SFT-CHEM-PRED-G-BLOCK-001",
+    "SFT-CHEM-PRED-SMITHIUM-001",
+    "SFT-CHEM-PRED-PERIODIC-ENDPOINT-001"
+  ],
+  "admitted_claim_count_at_freeze": 86,
+  "unclassified_obligations": [],
+  "frontier_obligations": [],
+  "unobserved_prediction_targets": [
+    "external observation of element 126 chemistry",
+    "external observation of any generated g-block member beyond the known periodic table",
+    "external observation of the proposed periodic endpoint"
+  ],
+  "external_source_registry_path": "experiments/external_sources/chemistry/authoritative_sources.json",
+  "external_source_registry_hash": "sha256:afcd40afa93cef6eeb6edc67b72b964859b1e2a26061a907eac25dffdf96ad35",
+  "obligations": [
+    {
+      "claim_id": "SFT-CHEM-MEAS-CHEMICAL-ENTITY-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical entity and retained identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-M03986-2026"
+      ],
+      "position": 1,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-CHEMICAL-SPECIES-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical species and observation-equivalence class",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-CT01038-2026"
+      ],
+      "position": 2,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-SUBSTANCE-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical substance and composition identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-C01039-2026"
+      ],
+      "position": 3,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-AMOUNT-001",
+      "subbranch": "measurement_identity",
+      "title": "Amount-of-substance count and reference carrier",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 4,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-FORMULA-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical formula as exact composition encoding",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 5,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-NOMENCLATURE-001",
+      "subbranch": "measurement_identity",
+      "title": "Reversible chemical nomenclature and identity boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 6,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-UNCERTAINTY-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical measurement uncertainty and retained alternatives",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 7,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MEAS-TRACEABILITY-001",
+      "subbranch": "measurement_identity",
+      "title": "Chemical reference traceability and complete record",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 8,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-ELEMENT-001",
+      "subbranch": "elements_periodicity",
+      "title": "Chemical element identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 9,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-ATOMIC-NUMBER-001",
+      "subbranch": "elements_periodicity",
+      "title": "Atomic-number ordering and element distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 10,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-ISOTOPE-001",
+      "subbranch": "elements_periodicity",
+      "title": "Isotope identity within an element",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 11,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-ATOMIC-WEIGHT-001",
+      "subbranch": "elements_periodicity",
+      "title": "Atomic-weight record and isotopic composition boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 12,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-PERIODIC-ORDER-001",
+      "subbranch": "elements_periodicity",
+      "title": "Periodic ordering by retained nuclear identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 13,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-PERIODIC-RECURRENCE-001",
+      "subbranch": "elements_periodicity",
+      "title": "Periodic recurrence of outer chemical organization",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 14,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-GROUP-PERIOD-001",
+      "subbranch": "elements_periodicity",
+      "title": "Group and period compositional coordinates",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 15,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-VALENCE-001",
+      "subbranch": "elements_periodicity",
+      "title": "Valence availability and chemical combination boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-ASD-5.12"
+      ],
+      "position": 16,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-ION-001",
+      "subbranch": "elements_periodicity",
+      "title": "Ion formation with retained elemental identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-ASD-5.12"
+      ],
+      "position": 17,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELEM-PERIODIC-BOUNDARY-001",
+      "subbranch": "elements_periodicity",
+      "title": "Known periodic-table observation boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 18,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-COMPOSITION-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Exact chemical composition",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 19,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-CONSERVATION-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Conservation of elemental identity through reaction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 20,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-COEFFICIENT-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Positive stoichiometric coefficient and reaction balance",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 21,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-LIMITING-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Limiting-component and complete-consumption boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 22,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-YIELD-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Reaction yield as retained product share",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 23,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-MIXTURE-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Mixture components and composition support",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 24,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STOICH-SOLUTION-001",
+      "subbranch": "composition_stoichiometry",
+      "title": "Solution composition and solute-solvent distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 25,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-CHEMICAL-BOND-001",
+      "subbranch": "bonding_molecular",
+      "title": "Chemical bond as retained interaction closure",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 26,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-COVALENT-001",
+      "subbranch": "bonding_molecular",
+      "title": "Covalent shared-support bond",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-ASD-5.12"
+      ],
+      "position": 27,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-IONIC-001",
+      "subbranch": "bonding_molecular",
+      "title": "Ionic transferred-label bond",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-ASD-5.12"
+      ],
+      "position": 28,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-METALLIC-001",
+      "subbranch": "bonding_molecular",
+      "title": "Metallic collective-support bond",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 29,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-ORDER-001",
+      "subbranch": "bonding_molecular",
+      "title": "Bond order as retained joining multiplicity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 30,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-LENGTH-STRENGTH-001",
+      "subbranch": "bonding_molecular",
+      "title": "Bond length, energy and identity correspondence",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 31,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-MOLECULE-001",
+      "subbranch": "bonding_molecular",
+      "title": "Molecular identity and complete bonded carrier",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 32,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-GEOMETRY-001",
+      "subbranch": "bonding_molecular",
+      "title": "Molecular geometry from held adjacency and orientation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 33,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-ISOMER-001",
+      "subbranch": "bonding_molecular",
+      "title": "Isomer distinction under equal composition",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 34,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-INTERMOLECULAR-001",
+      "subbranch": "bonding_molecular",
+      "title": "Intermolecular interaction and residual joining",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 35,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-SUPRAMOLECULAR-001",
+      "subbranch": "bonding_molecular",
+      "title": "Supramolecular organization by reversible recognition",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 36,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-MOL-NETWORK-001",
+      "subbranch": "bonding_molecular",
+      "title": "Molecular network and connected chemical whole",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 37,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-AB-ACID-BASE-001",
+      "subbranch": "acid_base_redox",
+      "title": "Conjugate acid-base partition",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 38,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-AB-PROTON-TRANSFER-001",
+      "subbranch": "acid_base_redox",
+      "title": "Proton-transfer acid-base relation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 39,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-AB-LEWIS-001",
+      "subbranch": "acid_base_redox",
+      "title": "Electron-pair donor-acceptor relation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 40,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-AB-AMPHOTERIC-001",
+      "subbranch": "acid_base_redox",
+      "title": "Amphoteric dual-role relation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 41,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-AB-BUFFER-001",
+      "subbranch": "acid_base_redox",
+      "title": "Buffer response and conjugate-pair retention",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 42,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELECTRONEGATIVITY-001",
+      "subbranch": "acid_base_redox",
+      "title": "Electronegativity ordering",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-ASD-5.12"
+      ],
+      "position": 43,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BOND-POLARITY-001",
+      "subbranch": "acid_base_redox",
+      "title": "Bond polarity from unequal held affinity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 44,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-REDOX-OXIDATION-STATE-001",
+      "subbranch": "acid_base_redox",
+      "title": "Oxidation-state accounting",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 45,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-REDOX-COUPLING-001",
+      "subbranch": "acid_base_redox",
+      "title": "Coupled oxidation and reduction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 46,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ELECTROCHEM-CELL-001",
+      "subbranch": "acid_base_redox",
+      "title": "Electrochemical cell and separated redox closure",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 47,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-RXN-IDENTITY-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Chemical reaction as source-bound identity transformation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 48,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-RXN-MECHANISM-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Reaction mechanism as complete elementary-step trace",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 49,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-RXN-INTERMEDIATE-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Reaction intermediate and retained path identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 50,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-KIN-ACTIVATION-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Activation barrier and transition boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 51,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-KIN-RATE-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Reaction rate from counted transitions",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 52,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-KIN-ORDER-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Kinetic order and dependency multiplicity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 53,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-EQ-CHEMICAL-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Chemical equilibrium as balanced reversible support",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 54,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-THERMO-REACTION-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Reaction thermochemical accounting",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-JANAF-SRD13",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 55,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-THERMO-DIRECTION-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Reaction direction under complete energy and distinction accounting",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-JANAF-SRD13",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 56,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-PHASE-CHEMICAL-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Chemical phase and coexistence identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-JANAF-SRD13",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 57,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SOLUTION-EQUILIBRIUM-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Solution and solubility equilibrium",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 58,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-PHOTOCHEM-001",
+      "subbranch": "reaction_kinetics_thermodynamics",
+      "title": "Photochemical excitation and reaction channel",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 59,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-CAT-CATALYST-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Catalyst identity conserved through a reaction cycle",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 60,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-CAT-PATHWAY-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Catalytic alternative-path relation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 61,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-CAT-SELECTIVITY-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Catalytic selectivity among generated products",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 62,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-NET-REACTION-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Chemical reaction-network composition",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 63,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-NET-AUTOCATALYSIS-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Autocatalytic closure and self-amplifying path",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 64,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SURFACE-ADSORPTION-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Adsorption at a retained interface",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 65,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-COLLOID-DISPERSION-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Colloidal dispersion and phase-interface support",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 66,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-INTERFACE-TRANSFER-001",
+      "subbranch": "catalysis_networks_interfaces",
+      "title": "Chemical transfer across an interface",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 67,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STEREO-CHIRALITY-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Chirality and non-superposable held orientation",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 68,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STEREO-ENANTIOMER-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Enantiomer pair and chiral observation boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 69,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-STEREO-DIASTEREOMER-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Diastereomer distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-GOLD-BOOK-5.0.0-2025"
+      ],
+      "position": 70,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ORGANIC-FUNCTIONAL-GROUP-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Functional-group recurrence and reaction role",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 71,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ORGANIC-REACTION-FAMILY-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Organic reaction-family compositional law",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 72,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-POLYMER-CHAIN-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Polymer chain from repeated monomer identity",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 73,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-POLYMER-DISTRIBUTION-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Polymer population and retained chain-length distribution",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 74,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-BIOMOLECULAR-BOUNDARY-001",
+      "subbranch": "stereochemistry_organic_polymer",
+      "title": "Chemistry-to-biology molecular handoff boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 75,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ANALYTICAL-SAMPLE-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Analytical sample, analyte and matrix distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 76,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ANALYTICAL-CALIBRATION-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Analytical calibration and traceable comparison",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 77,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ANALYTICAL-SELECTIVITY-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Analytical selectivity and interference boundary",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "IUPAC-COLOUR-BOOKS-2026"
+      ],
+      "position": 78,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SPEC-MASS-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Mass-spectral composition correspondence",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 79,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SPEC-INFRARED-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Infrared recurrence and molecular distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 80,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SPEC-UVVIS-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Electronic absorption and molecular-state distinction",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 81,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-SPEC-ROT-VIB-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Rotational-vibrational molecular spectra",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-2025"
+      ],
+      "position": 82,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-ANALYTICAL-COMPLETE-RECORD-001",
+      "subbranch": "analytical_spectroscopic",
+      "title": "Complete analytical result and falsification record",
+      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
+      "external_source_ids": [
+        "NIST-CHEMISTRY-SRD-INDEX-2026"
+      ],
+      "position": 83,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-PRED-G-BLOCK-001",
+      "subbranch": "gblock_smithium",
+      "title": "Generated g-block structural prediction",
+      "evidence_mode": "formal_forcing_plus_known-domain_validation_and_sealed_prediction",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 84,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-PRED-SMITHIUM-001",
+      "subbranch": "gblock_smithium",
+      "title": "Smithium element-126 chemical prediction",
+      "evidence_mode": "formal_forcing_plus_known-domain_validation_and_sealed_prediction",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 85,
+      "status": "model_admitted"
+    },
+    {
+      "claim_id": "SFT-CHEM-PRED-PERIODIC-ENDPOINT-001",
+      "subbranch": "gblock_smithium",
+      "title": "Generated periodic endpoint prediction and observation boundary",
+      "evidence_mode": "formal_forcing_plus_known-domain_validation_and_sealed_prediction",
+      "external_source_ids": [
+        "IUPAC-PERIODIC-TABLE-2022",
+        "CIAAW-ATOMIC-WEIGHTS-2024"
+      ],
+      "position": 86,
+      "status": "model_admitted"
+    }
+  ],
+  "inventory_hash": "sha256:3ae9e5645d6148130936469b17acfa5e504550ccae07b5ecd5e4d503726b2d59"
+}

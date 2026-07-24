@@ -1,0 +1,110 @@
+{
+  "schema": "sft-v3-chemistry-mixed-source-derived-observations/1",
+  "prepared_date": "2026-07-24",
+  "boundary": "This immutable registry is opened only after each matching Fold consequence is sealed. Gold Book rows are reconstructed from current official term JSON. Periodic rows are reconstructed by a standard-library parser from the byte-sealed official IUPAC PDF. Categorical correspondence cannot select the Fold grammar and is not a parameter-free prediction of conventional decimal element properties.",
+  "observations": [
+    {
+      "target_id": "periodic-order-iupac-2022",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_kind": "iupac-periodic-table-pdf",
+      "required_pdf_fragments": [
+        "atomic number",
+        "1 H hydrogen",
+        "2 He helium",
+        "118 Og oganesson",
+        "This version is dated 4 May 2022"
+      ],
+      "ordered_features": [
+        "complete-known-element-support",
+        "atomic-number-coordinate-order"
+      ]
+    },
+    {
+      "target_id": "periodic-recurrence-iupac-2022",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_kind": "iupac-periodic-table-pdf",
+      "required_pdf_fragments": [
+        "H hydrogen",
+        "Li lithium",
+        "Na sodium",
+        "K potassium",
+        "Rb rubidium",
+        "Cs caesium",
+        "Fr francium",
+        "IUP AC Periodic T able of the Elements"
+      ],
+      "ordered_features": [
+        "recurrent-element-organization",
+        "ordered-periodic-table-support"
+      ]
+    },
+    {
+      "target_id": "group-period-iupac-2022",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_kind": "iupac-periodic-table-pdf",
+      "required_pdf_fragments": [
+        "1 18",
+        "2 13 14 15 16 17",
+        "3 456789 10 11 12",
+        "atomic number",
+        "IUP AC Periodic T able of the Elements"
+      ],
+      "ordered_features": [
+        "group-column-classes",
+        "period-row-progression",
+        "atomic-number-order-retained"
+      ]
+    },
+    {
+      "target_id": "valence-iupac-v06588",
+      "source_id": "IUPAC-GOLD-BOOK-V06588-2026",
+      "source_kind": "iupac-gold-book-json",
+      "term_code": "V06588",
+      "ordered_feature_extractions": [
+        {
+          "required_fragment": "maximum number of univalent atoms",
+          "normalized_feature": "maximum-univalent-combination-count"
+        },
+        {
+          "required_fragment": "atom of the element under consideration, or with a fragment",
+          "normalized_feature": "atom-or-fragment-carrier"
+        },
+        {
+          "required_fragment": "can be substituted",
+          "normalized_feature": "substitution-boundary"
+        }
+      ]
+    },
+    {
+      "target_id": "ion-iupac-i03158",
+      "source_id": "IUPAC-GOLD-BOOK-I03158-2026",
+      "source_kind": "iupac-gold-book-json",
+      "term_code": "I03158",
+      "ordered_feature_extractions": [
+        {
+          "required_fragment": "atomic or molecular particle",
+          "normalized_feature": "atomic-or-molecular-particle"
+        },
+        {
+          "required_fragment": "net electric charge",
+          "normalized_feature": "net-electric-charge"
+        }
+      ]
+    },
+    {
+      "target_id": "periodic-boundary-iupac-2022",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_kind": "iupac-periodic-table-pdf",
+      "required_pdf_fragments": [
+        "1 H hydrogen",
+        "118 Og oganesson",
+        "atomic number",
+        "This version is dated 4 May 2022"
+      ],
+      "ordered_features": [
+        "source-bounded-known-element-census",
+        "greatest-listed-atomic-number-118"
+      ]
+    }
+  ]
+}

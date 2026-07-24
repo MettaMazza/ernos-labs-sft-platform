@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-REDOX-COUPLING-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-REDOX-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c33cfc1891da0adf17e75eaa70f72a0155aecea77d5dd44fc8d99b9301705242",
+  "falsification_condition": "The claim fails if the authority record lacks paired oxidation/reduction, electron loss/gain or conserved transfer, or if a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:2c0211cda70ab9fe2c50674950761fe08cadb4808982525aae774882250d7edb",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0f5313e607c80e2f225c72af7591670bbc598445a550ba7e9b700392ff0f1960",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-REDOX-COUPLING-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:bb65be38579eff69085ded2accf567b34295db1df9d4abcec8c880ab821a35db",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:84d521d1bc5de34fd0f3a63e3300979df633e16bb2a35a302fc116e07a5fd218",
+    "prediction_seal_hash": "sha256:439de3f31be4f90a4d1b75872e9ce3877ad245cb72e0226fdef46ddae6656684",
+    "program_hash": "sha256:fd25dece70573f936851a2c6c8231c5b6c88abe7b6dc416c086c604f260079b1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:cc82365817bf3b7bf49777ea0b04d4517805f49737eb9f66bb6cf7ac448c6100",
+    "target_material_present": false,
+    "trace_hash": "sha256:af7fd52950d57c6524c46c767a80cbabb0187b997bc88d9fa461e26c35a27e69"
+  },
+  "measurement_receipt_hash": "sha256:56a9f13bed1324bb69831ef0046928a2c757d59f10f99d89c9a384b76a3844b1",
+  "measurements": [
+    "redox-coupling-iupac-composite: predicted oxidation-electron-loss__reduction-electron-gain__paired-half-reactions__electron-transfer-conserved; source-derived oxidation-electron-loss__reduction-electron-gain__paired-half-reactions__electron-transfer-conserved; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:b0d147cff0011710434513be7176ed15d8eea1dd2523dc50fe6f1360e14061b1",
+    "custodian_id": "SFT-EXP-CHEM-REDOX-COUPLING-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:c33cfc1891da0adf17e75eaa70f72a0155aecea77d5dd44fc8d99b9301705242",
+    "prediction_seal_hash": "sha256:439de3f31be4f90a4d1b75872e9ce3877ad245cb72e0226fdef46ddae6656684",
+    "registered_target_identity_hash": "sha256:cc82365817bf3b7bf49777ea0b04d4517805f49737eb9f66bb6cf7ac448c6100",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:0bc6952aa9ab9a48b053cddc46de2900f47b1880aaaf5b031ee3a90ec362806a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9a9262fd9a3f9e90c08a41eb5c2224ea19127901a4a9399f8addcf87454888c8"
+}

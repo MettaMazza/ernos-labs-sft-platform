@@ -1,7 +1,15 @@
 # Current publications
 
+The complete standalone Chemistry branch paper is
+[`From Fold to Chemistry`](chemistry/FROM_FOLD_TO_CHEMISTRY.md). Chemistry is
+86/86 model-admitted, including the clean V3 physical prerequisites and the
+g-block, Smithium and periodic-endpoint claims. The relevant V1/V2 lineage
+group is closed. Its 253-page PDF, evidence map, manifest and publication
+receipt pass the local publication gate; DOI `10.5281/zenodo.21531455` is
+reserved for the authorized archival release.
+
 The repository landing page, [`README.md`](../../README.md), displays the latest
-complete standalone branch paper, **From Fold to Physics**. Every earlier
+complete standalone branch paper, **From Fold to Chemistry**. Every earlier
 branch paper remains unchanged in its canonical source folder and archival
 record.
 

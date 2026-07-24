@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-STOICH-SOLUTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:4fe30a8a55d56b5ab42bf2b742148820ad68162cf9d5e70ee5a38004e0f457b9"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4ea951e01a0a70099147774aea8b7a15b2ec3dc32a151b75faf81596cee969d7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:24316754e898abeac2d19748aaf72de6a2f28f7cd99dd250b68a28cc3fa74def"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:e1aad5725bea83acba570f25c4e0438cbff9c9620e5629755c76672e3f2b015a"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-CAT-CATALYST-001",
+  "data_source_ids": [
+    "CHEM-AUTHORITY-CATALYST-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:3ca804a14a41d5ceeeedd8b51c5c7c01d4d10bbc24e7180e0266da01d003d862",
+  "falsification_condition": "The claim fails if an official authority does not retain changed rate, an alternative path, regenerated catalyst identity and unchanged net reaction, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bf6cf0fee16d5c387c00fcba0ca8e6c284dcd727845c7addf275e9d825667d15",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b0212fba22ac6733c20f18deb0700ce503af9d5ab8bee3cdd0457b428a7f82d9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-CAT-CATALYST-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:99f726178e6d21ec4845cbbac24dafb47b4c7ad94de2c1f92faffd00f18a0cdf",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7dbef34f38fe9dab9b1f104a97526077354b6553a78906739e7c93a9ee182f22",
+    "prediction_seal_hash": "sha256:b498ae719f96e95b41efbb8c01d4a4dda6e2ad68993788675f44a4e2a548ae54",
+    "program_hash": "sha256:2161d3484b01422e3b3effab3de931981e999c614bd230a41f0ca5547d74425d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9b166d6dce658f7fe67c6d1e2eb2ff84c7f2f63f9b463025cc632424022fd5c8",
+    "target_material_present": false,
+    "trace_hash": "sha256:5f815262ca71ec01cb1d3f3b823596be87d16031f699c6ff2a6d87ab3c1ac317"
+  },
+  "measurement_receipt_hash": "sha256:96d8e97195cd37027b33af2b192ef23d00925f57b66bff2ab20ba127440643ac",
+  "measurements": [
+    "catalyst-authority-composite: predicted reaction-rate-increased__alternative-reaction-pathway__catalyst-regenerated__net-reaction-unchanged; source-derived reaction-rate-increased__alternative-reaction-pathway__catalyst-regenerated__net-reaction-unchanged; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:712e07f3fc11a1f7a8494cf407b8f6630363cbe3a16a95cbb3de52dcd03a266d",
+    "custodian_id": "SFT-EXP-CHEM-CAT-CATALYST-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:3ca804a14a41d5ceeeedd8b51c5c7c01d4d10bbc24e7180e0266da01d003d862",
+    "prediction_seal_hash": "sha256:b498ae719f96e95b41efbb8c01d4a4dda6e2ad68993788675f44a4e2a548ae54",
+    "registered_target_identity_hash": "sha256:9b166d6dce658f7fe67c6d1e2eb2ff84c7f2f63f9b463025cc632424022fd5c8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:752c5b36d6e13bf88e57db2c88cc788164ed7ab9d726af1f8c3b87eb0cca31e4"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:dff7a7af9f63f2ce6f3acb8ebba8a8daef932c3556723ea419109b456507103a"
+}

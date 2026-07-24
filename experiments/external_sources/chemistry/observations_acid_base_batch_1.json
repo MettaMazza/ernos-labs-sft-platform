@@ -1,0 +1,75 @@
+{
+  "schema": "sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date": "2026-07-24",
+  "boundary": "The five target-blind Fold consequences were sealed before these IUPAC identities, source texts and ordered feature extractions were selected. Each observed label is reconstructed solely from byte-frozen official source fragments after prediction sealing.",
+  "observations": [
+    {
+      "target_id": "conjugate-acid-base-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-ACID-BASE-COMPOSITE-2026",
+      "support_documents": [
+        {"kind": "goldbook-json", "term_code": "B00744", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/B00744.json", "snapshot_hash": "sha256:243711708fadda8ebb2f5acfc7108d5b88205c2c40adc1ef9129809ac16db3a9"},
+        {"kind": "goldbook-json", "term_code": "B00745", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/B00745.json", "snapshot_hash": "sha256:47cc7a6d02ebfcc0025656b3ef92292a02ddd5f303c811d440f66eddcac0557f"},
+        {"kind": "goldbook-json", "term_code": "C01266", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/C01266.json", "snapshot_hash": "sha256:1ac0d6138e316d6230d10b2e7f99d4837175fcb640e824a8cb2249100221a504"}
+      ],
+      "ordered_feature_extractions": [
+        {"document": "B00744", "required_fragment": "capable of donating a hydron (proton) to a base", "normalized_feature": "proton-donor-acid"},
+        {"document": "B00745", "required_fragment": "capable of accepting a hydron (proton) from an acid", "normalized_feature": "proton-acceptor-base"},
+        {"document": "C01266", "required_fragment": "formed on protonation of a base", "normalized_feature": "conjugates-differ-by-one-proton"},
+        {"document": "C01266", "required_fragment": "constitute a conjugate acid–base pair", "normalized_feature": "paired-relation"}
+      ]
+    },
+    {
+      "target_id": "proton-transfer-iupac-p04915",
+      "source_id": "IUPAC-GOLD-BOOK-P04915-2026",
+      "support_documents": [
+        {"kind": "goldbook-json", "term_code": "P04915", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/P04915.json", "snapshot_hash": "sha256:72d9b1431f3daa6b0190094d8400bc73b31e786b7d69b4052632297b4b709d33"}
+      ],
+      "ordered_feature_extractions": [
+        {"document": "P04915", "required_fragment": "transfer of a proton (hydron)", "normalized_feature": "one-proton-carrier"},
+        {"document": "P04915", "required_fragment": "from one binding site to another", "normalized_feature": "donor-to-acceptor-transfer"},
+        {"document": "P04915", "required_fragment": "proton transfer event", "normalized_feature": "carrier-conserved"},
+        {"document": "P04915", "required_fragment": "one binding site to another", "normalized_feature": "endpoint-identities-retained"}
+      ]
+    },
+    {
+      "target_id": "lewis-acid-base-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-LEWIS-COMPOSITE-2026",
+      "support_documents": [
+        {"kind": "goldbook-json", "term_code": "L03511", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/L03511.json", "snapshot_hash": "sha256:ffa4ee695efef5da476dd1ab4f787c5854a46009a58bb9fced3f1c113aa284df"},
+        {"kind": "goldbook-json", "term_code": "L03508", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/L03508.json", "snapshot_hash": "sha256:9fa013b12d6d0e3f305883a0db53dac7484e292e0288e2c3d0ba9625cfb2011c"}
+      ],
+      "ordered_feature_extractions": [
+        {"document": "L03511", "required_fragment": "able to provide a pair of electrons", "normalized_feature": "electron-pair-donor"},
+        {"document": "L03508", "required_fragment": "electron-pair acceptor", "normalized_feature": "electron-pair-acceptor"},
+        {"document": "L03508", "required_fragment": "sharing the electron pair furnished by the Lewis base", "normalized_feature": "shared-or-transferred-pair"},
+        {"document": "L03508", "required_fragment": "the electron pair furnished by the Lewis base", "normalized_feature": "pair-conserved"}
+      ]
+    },
+    {
+      "target_id": "amphoteric-iupac-a00306",
+      "source_id": "IUPAC-GOLD-BOOK-A00306-2026",
+      "support_documents": [
+        {"kind": "goldbook-json", "term_code": "A00306", "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/A00306.json", "snapshot_hash": "sha256:70ab5021338400d9f02cbecc5c45b9f4271792e919d880aafff81684739022ab"}
+      ],
+      "ordered_feature_extractions": [
+        {"document": "A00306", "required_fragment": "behaves both as an acid and as a base", "normalized_feature": "same-species-acid-role"},
+        {"document": "A00306", "required_fragment": "A chemical species that behaves both", "normalized_feature": "same-species-base-role"},
+        {"document": "A00306", "required_fragment": "depends upon the medium", "normalized_feature": "context-dependent-dual-response"},
+        {"document": "A00306", "required_fragment": "acid when studied in water, but becomes amphoteric in superacids", "normalized_feature": "both-traces-retained"}
+      ]
+    },
+    {
+      "target_id": "buffer-iupac-didac-e15",
+      "source_id": "IUPAC-DIDAC-E15-2026",
+      "support_documents": [
+        {"kind": "official-html", "term_code": "IUPAC-DIDAC-E15", "snapshot_path": "experiments/external_sources/chemistry/snapshots/iupac-didac-buffer-e15-extract.html", "snapshot_hash": "sha256:570a91d1a7de35b22a8469c117f10af9e4bed3012ae61f54362fe45534b3d01e"}
+      ],
+      "ordered_feature_extractions": [
+        {"document": "IUPAC-DIDAC-E15", "required_fragment": "a weak acid together with a salt of this weak acid", "normalized_feature": "weak-acid-conjugate-base-pair"},
+        {"document": "IUPAC-DIDAC-E15", "required_fragment": "addition of considerable quantities of a strong acid or a strong base", "normalized_feature": "responds-to-added-acid-or-base"},
+        {"document": "IUPAC-DIDAC-E15", "required_fragment": "hydrogen carbonate ions are converted (protonated) into carbonic acid", "normalized_feature": "composition-change-limited"},
+        {"document": "IUPAC-DIDAC-E15", "required_fragment": "buffering capacity is not inexhaustible", "normalized_feature": "source-bounded-capacity"}
+      ]
+    }
+  ]
+}

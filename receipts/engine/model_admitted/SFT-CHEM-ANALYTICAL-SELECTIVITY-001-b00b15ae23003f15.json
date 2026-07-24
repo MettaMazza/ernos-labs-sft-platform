@@ -1,0 +1,61 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-CHEM-ANALYTICAL-SELECTIVITY-001",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:e3044df347a42d228e3b0e52ba0dfe680bc14e2a71dbe97beb680c3d7560040d",
+  "empirical_validation_hash": "sha256:59a8da91f9ca9b1d0ef6fcd6aafb566445163284aa455228f415f976afa39a22",
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "empirically_tested_and_independently_replicated",
+  "external_validation_hash": "sha256:208b713a88a9bfa39042681fadab45152cc4ddfcaac7f90ea134e10ec17a3d43",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "target-inaccessible prediction sealed before independent data measurement",
+      "gate": "empirical_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:b00b15ae23003f159f654f5f6bad65e0aae8268fe5769873ad0b3ab0e1859e8b",
+  "violations": []
+}

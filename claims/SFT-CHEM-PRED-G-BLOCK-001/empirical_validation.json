@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-PRED-G-BLOCK-001",
+  "data_source_ids": [
+    "IUPAC-PERIODIC-TABLE-2022"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6f842a78d164adf2ad6c33ce992aa03ff1267b5316dc57e653da26e97ea91557",
+  "falsification_condition": "The generated known closure prefix differs from the official source, the 5g opening is not 121, a target enters before sealing, a future prediction is called observed, or a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d11aee024e8a048521aa12fc28e2a03eca797223f52d918cd36ae5f7721eb501",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1592261378225ec8a4c97ffdf58846ae08cafe9dc0d480fc3d6d7fb1831d85f6",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-PRED-G-BLOCK-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c3be9fcac26646acb85518c308d513d88a1636a7bb29f8efa2bb2e230ca3fa37",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:92ca0573535c69b6882d5d54c9292124e13a7035c8c84cb0eaed1d5e9bf2439d",
+    "prediction_seal_hash": "sha256:2b41b7c76103c6b049a7e01e1878b43b6b26a22bc854770b69599f3d13d00436",
+    "program_hash": "sha256:05a3a095ee39f6f920f5dd599c80e9eac4889f0c6134cead80a8c3421b2cd289",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6d557c05f7985e9a5a75de91325c4fa03cbaad619683735a72bb2ec17f61fa8c",
+    "target_material_present": false,
+    "trace_hash": "sha256:13e1e37b730aedcd78ff0766d5d986c7021c6a760089a3a8c4ca72da8e2d5ede"
+  },
+  "measurement_receipt_hash": "sha256:f90a1aabda3ab41d3955dcf4b1ed2e8f96540de855f7ca982d0eaa623a49e97e",
+  "measurements": [
+    "IUPAC-G-BLOCK-KNOWN-PREFIX: predicted known-noble-closures-2-10-18-36-54-86-118__g-block-121-standing-unobserved-prediction; source-derived known-noble-closures-2-10-18-36-54-86-118__g-block-121-standing-unobserved-prediction; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f38e70328919f4e9f6ac89c2ce639f974e1f8bd41c9d40d67c849e49c9de9b91",
+    "custodian_id": "SFT-EXP-CHEM-PRED-G-BLOCK-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:6f842a78d164adf2ad6c33ce992aa03ff1267b5316dc57e653da26e97ea91557",
+    "prediction_seal_hash": "sha256:2b41b7c76103c6b049a7e01e1878b43b6b26a22bc854770b69599f3d13d00436",
+    "registered_target_identity_hash": "sha256:6d557c05f7985e9a5a75de91325c4fa03cbaad619683735a72bb2ec17f61fa8c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e462955dc33b4a7060b936fd9e72543f3d721bf17bd68643722110a3935ceff1"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:289d7818e0571477f6a481a2145684d578166225407f8e84db7d7f6306042113"
+}

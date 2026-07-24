@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-INVERSE-SQUARE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5126eae290f28749926e1532af4473ba49a075ffe7045e937a67ccb90b2c7afb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:73ad9ff5259b5413d9f21ced60ef80c4b9652e711a726e2229f6000c1f2a571c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6757de96ac570cbdebc3ea1c952bf89e3f2e322455d2086a84a65816abb12181"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e68c533619348505aa22d14cf741971fabc0ad820590878d5234ba19b9603915"
+    }
+  ]
+}

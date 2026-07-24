@@ -1,0 +1,56 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:f063dc762cb725c66340c946953cd008664875456944811ad902315d6b79b69d",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "independently_replicated",
+  "external_validation_hash": "sha256:4a0b588d1c3b8b4ea798c27237d953cdee1dcb0918ef3b436678c0aa798fccfa",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:35f7fe50e217d2a61383f4169c314f1d4d5b4671a1def5baa011d26a1d89af9f",
+  "violations": []
+}

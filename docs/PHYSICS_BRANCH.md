@@ -1,6 +1,6 @@
-# Published Physics branch
+# Published Physics v1 inventory and active reconciliation
 
-The frozen Physics inventory, exhaustive paper and evidence release are
+The frozen Physics v1 inventory, its paper and evidence release are
 published at DOI [`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881).
 The matching GitHub release is
 [`physics-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/physics-v1.0.0).
@@ -13,6 +13,18 @@ and metrology; mechanics; interactions and fields; waves; thermodynamics;
 physical quantum theory; matter, particles and nuclei; spacetime and
 gravitation; continua and collective matter; and the Physics-to-Astronomy and
 Cosmology boundary.
+
+That statement is exhaustive only for the declared v1 inventory. It is not a
+claim that every physical derivation in the authoritative 407-step V2 corpus
+has already been independently reconstructed in V3. The broader reconciliation
+is active and is a blocking completion requirement, not optional historical
+context. Every V1/V2 physical result must be independently regenerated and
+engine-admitted in V3 before the final Physics branch can be called complete.
+On 2026-07-24 V3 independently admitted generator three,
+three-dimensional stability, boundary rank two and inverse-square dilution,
+then admitted a separate post-derivation experimental comparison. Those new
+receipts do not rewrite the published v1 artifact; they belong to its eventual
+versioned successor.
 
 Release contents:
 

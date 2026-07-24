@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-CAT-PATHWAY-001",
+  "data_source_ids": [
+    "CHEM-AUTHORITY-CATALYTIC-PATHWAY-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:810db2b5ad9b6185603a898660b5091ba4bac01f5afaad5bcfd2b3b196086d5e",
+  "falsification_condition": "The claim fails if authority evidence lacks an alternative lower-activation mechanism with unchanged overall reaction and retained catalyst cycle, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7d484dc4ef0c775af469c9efc9f70780f7b717f839452044e0211b6dbd42a8a8",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:01dc6deabba236b3beecc7a9b16c4b5764c680c68bcb7ee6f1d690c4e71ea511",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-CAT-PATHWAY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:509e9b64313684f0fc7e16f926c4b509a69612c2dce4c9621bf73ae929858f44",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1d6bd7e34a88bd3d233b4c8c62c7e2f58ff150e20659b71320e696ccc0d3da78",
+    "prediction_seal_hash": "sha256:b9854503acd9e07893b3fe9d00165f95e66a3919af56584c1f4e88683f4c4615",
+    "program_hash": "sha256:7505a7217ff36e84888ed2f03b0bb0e563eee740ec3ccaa2901dd5264120504a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:16f9f4feb035ba4ff627894f6ad88f6947a924d9117d6332d2d430093043875b",
+    "target_material_present": false,
+    "trace_hash": "sha256:9e4e41970a881cb0874eb16cd854ec8df72c3e8e03be4484234e4af1dc1ee7b2"
+  },
+  "measurement_receipt_hash": "sha256:61f3215190fac9070c00cea0bf3365a37660a3b7d2a45cb99b44562c31599b37",
+  "measurements": [
+    "catalytic-pathway-authority-composite: predicted alternative-reaction-mechanism__lower-activation-energy-path__same-overall-reaction__catalyst-cycle-retained; source-derived alternative-reaction-mechanism__lower-activation-energy-path__same-overall-reaction__catalyst-cycle-retained; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:a4f0216152b5b357744336fe8e965ca0b06b612a97e474c3eb8fafeff4ebb423",
+    "custodian_id": "SFT-EXP-CHEM-CAT-PATHWAY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:810db2b5ad9b6185603a898660b5091ba4bac01f5afaad5bcfd2b3b196086d5e",
+    "prediction_seal_hash": "sha256:b9854503acd9e07893b3fe9d00165f95e66a3919af56584c1f4e88683f4c4615",
+    "registered_target_identity_hash": "sha256:16f9f4feb035ba4ff627894f6ad88f6947a924d9117d6332d2d430093043875b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:9bf0a848dcbb341c7ca0d873aaa6f2de6b08f9f30e2ed48bf882a6cf6491f3b3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:5e1ee14cf850b606ce8067cc51d25b66035f367c24c5cbb3cdfb1083aea494e9"
+}

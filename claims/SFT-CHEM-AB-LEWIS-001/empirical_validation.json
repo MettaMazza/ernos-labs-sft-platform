@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-AB-LEWIS-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-LEWIS-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:587c1c44f7d7fe2104bffcca4b588023b77b66a3166ad7d54c16ee8b5f868b32",
+  "falsification_condition": "The claim fails if the authoritative Lewis record lacks an electron-pair donor, electron-pair acceptor or conserved pair relation, or if a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d404805c02d76dbdba92d562da70a1c79b219d2e185760709ba33901f23d6332",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:61224551edddc58f7fb5b627183f750578f962fa065bbbd9703841050b905472",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-AB-LEWIS-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:062f90188487f6b391f41b0edb24c9960b7f85e1adea6523dc1dfad4809a1977",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d9c3db03c72ee007c8d58ec1debf5885b3fe2ceb16136e2a6bf7cfc9dcbfefd1",
+    "prediction_seal_hash": "sha256:5cb3a4628439f8ed64a926b898dae4d923de0fc214066642cf527a7b603690c0",
+    "program_hash": "sha256:3a80fed9e77f7185b5de663302d1eaf1434a64c302829cbe873d9a8e18f7d433",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:d9b912e6557e02695678b93d4413eb2c92c6094244445b28324d8428a597fcf2",
+    "target_material_present": false,
+    "trace_hash": "sha256:3f42fb53d018d92f45e7dab08b297e4724bd7f30ef22bb39b917e4adc9653a89"
+  },
+  "measurement_receipt_hash": "sha256:7e1da91cd604bf1a3d0c5b196dfe2a0f0f7632670886763eeef0ab88649f93e7",
+  "measurements": [
+    "lewis-acid-base-iupac-composite: predicted electron-pair-donor__electron-pair-acceptor__shared-or-transferred-pair__pair-conserved; source-derived electron-pair-donor__electron-pair-acceptor__shared-or-transferred-pair__pair-conserved; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:88b6adbf5b0ca93e411fde367c64a519f74c24348f4b5ef93993eb9223a8a223",
+    "custodian_id": "SFT-EXP-CHEM-AB-LEWIS-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:587c1c44f7d7fe2104bffcca4b588023b77b66a3166ad7d54c16ee8b5f868b32",
+    "prediction_seal_hash": "sha256:5cb3a4628439f8ed64a926b898dae4d923de0fc214066642cf527a7b603690c0",
+    "registered_target_identity_hash": "sha256:d9b912e6557e02695678b93d4413eb2c92c6094244445b28324d8428a597fcf2",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b670cdfe1bfeba75b0393a24f89016b2858206b356ea83a748071f0345912b1c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:75683df9ae25bb776f74e5fb9971972ccd137cea37b5c50ab35c08ca4545cace"
+}

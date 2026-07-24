@@ -1,6 +1,6 @@
 # Classical Computation branch status and review guide
 
-Status: `frozen_complete`; standalone paper: `published`; publication:
+Status: `published_v1_inventory_closed_v2_reconciliation_open`; standalone paper: `published`; publication:
 `10.5281/zenodo.21518311`.
 
 Paper: [After Turing: The Fold Machine](../publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md)
@@ -27,10 +27,17 @@ inventory contains no unclassified or frontier row.
 ## Exact boundary
 
 Closure applies to the exact generated-finite kernels in
-`publications/inventories/computation.json`. It does not claim an unrestricted
-Busy Beaver table, P versus NP separation, arbitrary circuit lower bounds,
-physical implementations, application results or quantum operations. Named
-historical models enter only as post-seal correspondence.
+`publications/inventories/computation.json`. The later authoritative V2 corpus
+Steps 404-406 additionally derive native unrestricted Fold Busy-Beaver
+behavior, `P_F = NP_F`, and arbitrary admitted Fold-circuit lower bounds. Those
+results are scientific V2 closures whose V3 clean-room replication is pending;
+they must not be described as absent from SFT and must not be imported into the
+V3 census without new receipts. They make no claim about arbitrary external
+Turing tables, languages, polynomial conventions or Boolean gate bases.
+
+Physical implementations, application results and quantum operations remain
+outside this classical inventory. Named historical models enter only as
+post-seal correspondence.
 
 ## Review route
 

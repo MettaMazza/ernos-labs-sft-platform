@@ -1,0 +1,151 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-MOL-NETWORK-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-MOL-NETWORK-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:226b40c9952a4d4afd5d5153bd9d3634c1f76474f843be2f4a5ce9634c75891e",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_molecular_structure_batch_2.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:0dec070105ed2793b66392cea2e17913968d07042bc1f547de7331b4f6f292ca"
+  },
+  "dependency_identity_amendment": "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_dependency_amendment.json",
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:7287870fa39c7ab67b4c8683356c95dc4a73a9383a65075a3260584ce8902076",
+    "evaluator_id": "SFT-EXP-CHEM-MOL-NETWORK-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the official molecular-network record lacks molecular nodes, interaction links or connected organization, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-MOL-NETWORK-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:a146d63f8340f0cf5043e1f9fe2f1cfa8e5fa7c3bf27b8a409e665f40ae2c046",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/N04112.json",
+      "source_id": "IUPAC-GOLD-BOOK-N04112-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/N04112/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered molecular-network nodes, edges, connectivity, paths, boundary, composition, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:537ad43aeca3d32a5f80d1faecee830a2ca5005f0f98a9eb6d281751b0e71282",
+      "sha256:a8cb33d7d7d82dc4cf4197f87135099c0f8d79e477458c75972220fe67ea3062",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:40c63d50f9534bf644ad6083ebad1475350c9c09898d9a4c64c5dd773825bcb2",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:a9921b37fcfd2ae8902917ecf5d77b6aef1fc196b0ae6d0800b71dcac5dfe14f",
+      "sha256:a43dfe15d1e98f33247ca4b7c53275ff4187fd7821e8ecfbe3a541fd6c3ddd77",
+      "sha256:bc05c989f13006cd1cb48c03eadb6f0ffd3abad6470c6a8baca0788103cd0d1f",
+      "sha256:328bad35a4c1f0944ad1ce0e6bf858b19213848755aea2b7ff90b04c9f93595d",
+      "sha256:44e12eb55ccd83c19ec4425014346e94b0e77be0822275aa9435a9ce6a76d40c",
+      "sha256:27ebf68d06fb04b12c3ec677d5c952e805f9fdb220afb806b37d3a9fb7b23b2d",
+      "sha256:1cd1a6b729f20751959be84d890460d4221195efe2ce955d544f87fa2ad91669",
+      "sha256:b7214f06110018dab93d0df51adbc772cc6b769cd8ba545eccb4cfc7c6a55e29",
+      "sha256:a67a1d8519f4c7ac44255609e28362427c0cf405c5beb7ec3f9aafacd64c6dba",
+      "sha256:4438ab78509e1124db943a2d0bf8f83b301b58691d7d80d68098e0a37b34b65d",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:54b69d9b13e5608b43a8642bbf0301722f15ea207cbaddcf9f133e1459d86cc0",
+      "sha256:3ed9ef354a640fd349137d4196ae1ed0297ae76277f0627148c0aa308493591a"
+    ],
+    "exact_domain": "Every finite generated set of molecular nodes and registered interaction edges whose maximal declared component is connected, with complete node, edge, path and boundary provenance.",
+    "relation_hash": "sha256:e1c96b022f99cb8ff120883ac1a2400ca66a8f32a48047dd68bc5307294df9f6",
+    "statement": "finite-molecular-node-set__registered-interaction-edges__connected-maximal-component__complete-reachability-census__finite-maximal-boundary",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:141f89a0711b6841bdafd9b4506251fddb776b496550d1ab507b6b5754137742",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "pre_source_derivation_seal": "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_pre_source.json",
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-MOL-NETWORK-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:7edb582dc3ab655c454dd50fb646baf02042092b4019329b09c0f7c956111b11",
+    "program_id": "SFT-EXP-CHEM-MOL-NETWORK-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:71e077bcfcdf9c2de56830873865a7cad235324791be700b425383fa85a524b3",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/N04112.json": "sha256:a146d63f8340f0cf5043e1f9fe2f1cfa8e5fa7c3bf27b8a409e665f40ae2c046"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a146d63f8340f0cf5043e1f9fe2f1cfa8e5fa7c3bf27b8a409e665f40ae2c046",
+      "source_id": "IUPAC-GOLD-BOOK-N04112-2026",
+      "source_locator": "https://goldbook.iupac.org/terms/view/N04112/json :: current definition and notes",
+      "target_id": "molecular-network-iupac-n04112"
+    }
+  ]
+}

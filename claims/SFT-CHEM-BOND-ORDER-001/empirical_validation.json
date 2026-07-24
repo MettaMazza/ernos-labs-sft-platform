@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-BOND-ORDER-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-B00707-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d828037ac1763d1d4a50786767881b62bceb0731c3b6d90370b684ebe85ad136",
+  "falsification_condition": "The claim fails if IUPAC lacks a bonding-degree index, single-bond reference or localized electron-pair reference, or if a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f2e6d4e1b7cb627ef32b40549779b2c5a63e70d3f4477c60c16f1133333bff48",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f94e00f6367458dbb6e386cc7596ffa6f9d371b46de022a20c6e4f8e292b9266",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-BOND-ORDER-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:08b102d629224b077c8cc7a6f6bb6e466aacb5646e931185b2252002c0d548cf",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7c0e175f427d56c45873c6a7aa67185e18bfe8b74fe7784aca778831373d3999",
+    "prediction_seal_hash": "sha256:dabc00af360bf1179abf47e64f381a606aa3d7b95327b606534933a8722e7ada",
+    "program_hash": "sha256:96e65f3f1cc8a3242693995ed9437c2e37a81a2c193a27349671556d21f51742",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8b033378ca863d6e6c635f007f1e2386a0282a6677d6c04c821c4f57bcb44b4a",
+    "target_material_present": false,
+    "trace_hash": "sha256:473f4bbbe1deb3ad52449c626100d6cce0947cd9944821c793b843bb93548920"
+  },
+  "measurement_receipt_hash": "sha256:a120f4b897afe2d75d9c56645abd96804f50c3006662c01685120d99d0dd0d05",
+  "measurements": [
+    "bond-order-iupac-b00707: predicted bonding-degree-index__single-bond-reference__localized-electron-pair; source-derived bonding-degree-index__single-bond-reference__localized-electron-pair; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9ad5ecdc91597061cdb61a59b8148a89e9bbb210dee0fcc3bd8817f61aa4c5e9",
+    "custodian_id": "SFT-EXP-CHEM-BOND-ORDER-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:d828037ac1763d1d4a50786767881b62bceb0731c3b6d90370b684ebe85ad136",
+    "prediction_seal_hash": "sha256:dabc00af360bf1179abf47e64f381a606aa3d7b95327b606534933a8722e7ada",
+    "registered_target_identity_hash": "sha256:8b033378ca863d6e6c635f007f1e2386a0282a6677d6c04c821c4f57bcb44b4a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:c9605d4a81e9d27511b86590966998feecc754a1cf6d27f563287a9e466cdd44"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7c78f302c8b6954108b1ad8c1255e7799e7ada125732370731e21f77f16ef140"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-STEREO-DIASTEREOMER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:8682d8dcee95265f2e77c106b5f8b4cea6d08860c097fe761367e7042ae95966"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3a570f720ae4e97c27103ded8bc92baa50d7d553202e4053e17e83a4c0f7aebd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d351449dc0617402486df5ae3d907c79a641ac271c17fb87bcbc906f884a6a24"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:ad5e7ea3c443b07d374848fb6d542ad5d4a5351ccb2ed46fb83b0be1f3bb9318"
+    }
+  ]
+}

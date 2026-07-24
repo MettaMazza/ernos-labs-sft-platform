@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:ca5b4e49ab3bedece92f0ec11667e4305baafe8624283410439868e1b79e151c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0d516338a2c561300eae04d43e460a74cae268ab52d41ce1ace635214b048ab5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:937d252d67fbb9ad1f3a8bcbd5000226d4d7bde3b511429cbe0ee917e4986843"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:debfd802d48d0d9c9b5e1df0a6bdbf950f19bd012c0bdf52cfeec2505494619b"
+    }
+  ]
+}

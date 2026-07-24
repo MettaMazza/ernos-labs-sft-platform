@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-STRUCT-GENERATOR-THREE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e990d2e429bd08054cf8b7dabd6f1ef1cd683f13016fd18b84c94b39c72c80ab"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:747052c401ddb2d214104d2c733bf23c0864fbe7b309ea5370b09358385d669e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:862121326d132cadaef270bd54d159d72e4b223683d7619ed55a95de8cbe7bc9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b44f622f2aca2e6f6f17edc34ee0b17e5e7acfb2c16ce2c030843ce1ffbf15ce"
+    }
+  ]
+}

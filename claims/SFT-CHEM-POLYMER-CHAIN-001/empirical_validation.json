@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-POLYMER-CHAIN-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-POLYMER-CHAIN-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:49e9c86b1280b382b853039baab28f17deecf94321110fe7c46fb8d2c6fb329b",
+  "falsification_condition": "The claim fails if authority evidence lacks a macromolecular carrier, repeated units, covalent sequence or chain boundary, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c1a94a17425a77377d1353ffc7f70eca79c658f079eaa129bc92295d9e6d57d5",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:adaf34e760770aa5e4c74a3dea2d98e69a5a6d577b0ef0a560169142768e91c4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-POLYMER-CHAIN-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0f952d405ea51c91e5e5039a8f2aa38d271f4d0447c40b63bb17d4edb3b0964a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d7f3f24eb0efe7f932401b36cde426c3794cd599e7d22a657789978d8588da34",
+    "prediction_seal_hash": "sha256:8628c2d6a2cfadf4d308a69bc088ce6194e2ee582fdd65aeafb27f359c01ae35",
+    "program_hash": "sha256:d7bfc66c94e1c05ad912b846c9821b470086a8974d6c5885575a3a4e31fbbec1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:24160d749f9c4121c2217f5a0a4a45ff8bbc82349db7b4bfdd368ea4f6c2efd1",
+    "target_material_present": false,
+    "trace_hash": "sha256:3083ffaa6c1fe7e1f6d0f4f33a4abb51021ad455c841f03c859a1a288e6dd049"
+  },
+  "measurement_receipt_hash": "sha256:223181a892b117c6316b5ea0b1fbd98c3be3cb4a3ff1516886ebf4ec3c705b5c",
+  "measurements": [
+    "polymer-chain-iupac-composite: predicted high-relative-molecular-mass-molecule__repeated-low-mass-units__covalent-sequence__chain-end-boundary; source-derived high-relative-molecular-mass-molecule__repeated-low-mass-units__covalent-sequence__chain-end-boundary; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:77b60028ee938c7506691af30ade2c909f7f5f7f742df34595b20b9066bf9247",
+    "custodian_id": "SFT-EXP-CHEM-POLYMER-CHAIN-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:49e9c86b1280b382b853039baab28f17deecf94321110fe7c46fb8d2c6fb329b",
+    "prediction_seal_hash": "sha256:8628c2d6a2cfadf4d308a69bc088ce6194e2ee582fdd65aeafb27f359c01ae35",
+    "registered_target_identity_hash": "sha256:24160d749f9c4121c2217f5a0a4a45ff8bbc82349db7b4bfdd368ea4f6c2efd1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:17cdc007d117d15eeb26af34df4105f0a8888f645d8110a69db777c891fe7497"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1fcd451ad68862206f24ed642c27aa2c8aa62529d27f19183d459a0413fe7a2f"
+}

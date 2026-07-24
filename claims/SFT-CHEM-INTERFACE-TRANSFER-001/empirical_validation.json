@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-INTERFACE-TRANSFER-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-INTERFACE-TRANSFER-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d2add4692d3c3712d17ec8c827f33a1b0b02290661d894d255cd6765cac445e5",
+  "falsification_condition": "The claim fails if authority evidence lacks a species crossing, two retained phases, a condition-bounded rate or mass balance, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:e38df0c603e3e727043aa36f198fe5c2b56c661009262d1db8656ca668659ff1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b8c9f21cade9da76a51a20a6c45c6ec620ca1d19ac904df414c27661f0676af0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-INTERFACE-TRANSFER-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d960b456f8517963fdb79dcd035c6fb40b768c9f5e1e2354ec2f298c21d76ced",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cb697a8973b7fe4bd4c14de86fd411a22ecd8a1073b40d8e4bd5b48363d4637c",
+    "prediction_seal_hash": "sha256:387984fa19a08939ad7a71f4279d5a5bf6a3e64619dd2fc69e7fc7ff466338a7",
+    "program_hash": "sha256:a58e05c38c0845c22444307cf1fb1bebf790afe9d0e48a6dfe8537f91eda5cb8",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e9a98737ee82ad4dc30a851d219aa81ce3e15c21abb8e0ee912036ebe6fb85a2",
+    "target_material_present": false,
+    "trace_hash": "sha256:4faf8d5e0a10d8514e6c1f3047be36419bb9b3fdf7f63befde5753dc92756d2a"
+  },
+  "measurement_receipt_hash": "sha256:96e6ca08d7e05fe76facc2f4cc855b2564a0d7f597ccf589a7342bde233489f7",
+  "measurements": [
+    "interface-transfer-iupac-composite: predicted chemical-species-crosses-phase-boundary__donor-and-receiver-phases-retained__transfer-rate-condition-bounded__mass-balance-preserved; source-derived chemical-species-crosses-phase-boundary__donor-and-receiver-phases-retained__transfer-rate-condition-bounded__mass-balance-preserved; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d74fcd2a35755fe07cd20835e3be116db9f53629849b9acd27645f0fa845b294",
+    "custodian_id": "SFT-EXP-CHEM-INTERFACE-TRANSFER-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:d2add4692d3c3712d17ec8c827f33a1b0b02290661d894d255cd6765cac445e5",
+    "prediction_seal_hash": "sha256:387984fa19a08939ad7a71f4279d5a5bf6a3e64619dd2fc69e7fc7ff466338a7",
+    "registered_target_identity_hash": "sha256:e9a98737ee82ad4dc30a851d219aa81ce3e15c21abb8e0ee912036ebe6fb85a2",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3f43eb6c2499556dc13aae2ef14bc2977a01566db7cc8e0b4490bdf91aad5521"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:4fdc50af81ae5440e6c0d7e6d9762ab95019915dc8c2dca15aa99c9ef5915cad"
+}

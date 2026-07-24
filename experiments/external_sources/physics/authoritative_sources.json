@@ -22,6 +22,16 @@
       "custody_roles": ["development_only", "withheld_target", "unfavorable_control"]
     },
     {
+      "source_id": "IAEA-INDC-NDS-0452-MAGIC-NUMBERS",
+      "body": "International Atomic Energy Agency Nuclear Data Section",
+      "source_class": "postseal_authoritative_report_record",
+      "scope": ["nuclear-shell-closures", "magic-numbers", "nuclear-structure-evidence"],
+      "source_uri": "https://www-nds.iaea.org/publications/indc/indc-nds-0452-part1.pdf",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/iaea-magic-numbers-source-record.json",
+      "snapshot_hash": "sha256:ce642d62698b97fa509b8101a5661e578d6524f8705c19e38f7426efe7a0f6a6",
+      "custody_roles": ["post_derivation_opened", "empirical_validation_target", "unfavorable_control"]
+    },
+    {
       "source_id": "NIST-ASD-5.12",
       "body": "National Institute of Standards and Technology",
       "scope": ["atomic-spectra", "quantum-levels", "radiative-transitions", "plasma-diagnostics"],
@@ -137,6 +147,39 @@
       "snapshot_path": "experiments/external_sources/physics/snapshots/nasa-lambda-cobe-firas-monopole.html",
       "snapshot_hash": "sha256:e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
       "custody_roles": ["development_only", "withheld_target", "unfavorable_control"]
+    },
+    {
+      "source_id": "NIST-SPECTRAL-IRRADIANCE-DISTANCE-2012",
+      "body": "National Institute of Standards and Technology, Sensor Science Division",
+      "scope": ["source-boundary-growth", "spectral-irradiance", "distance-dependence", "measurement-uncertainty"],
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=911999",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-spectral-irradiance-distance-2012.pdf",
+      "snapshot_hash": "sha256:5e16b067d8cf4f6fd484538388fa899a7ddd96b6c1799123935d37bc7228a117",
+      "custody_roles": ["postseal_opened", "withheld_target", "unfavorable_control"]
+    },
+    {
+      "source_id": "KSU-AL-YOUSEF-INVERSE-SQUARE-LAB-2022",
+      "body": "Ibraheem Al-Yousef; external university laboratory report",
+      "source_class": "external_student_measurement_report_not_authoritative_metrology",
+      "scope": ["source-boundary-growth", "gamma-count-rate", "distance-dependence", "repeated-trials"],
+      "source_uri": "https://iphysics.sa/undergrad/01_Courses/PHYS309_Experimental_Physics/InvSLaw.pdf",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/ksu-inverse-square-radiation-lab.pdf",
+      "snapshot_hash": "sha256:9a510948100c549a6b8236b39cf54ab2cacb317f6563bd50ed2ee911c043de03",
+      "custody_roles": ["postseal_opened", "unfavorable_control"]
+    },
+    {
+      "source_id": "APS-WILLIAMS-FALLER-HILL-1971-COULOMB",
+      "body": "American Physical Society / Physical Review Letters",
+      "source_class": "primary_peer_reviewed_experiment_abstract",
+      "scope": ["coulomb-law", "inverse-square-exponent", "reported-uncertainty", "photon-mass-test"],
+      "source_uri": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.26.721",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/aps-prl-26-721-source-record.json",
+      "snapshot_hash": "sha256:03840a7b8b64574c764c40eb91ba6e0ee2c413548ff0d317ca5c8334f72308bc",
+      "metadata_snapshot_paths": [
+        "experiments/external_sources/physics/snapshots/crossref-physrevlett-26-721.json",
+        "experiments/external_sources/physics/snapshots/osti-4073617.json"
+      ],
+      "custody_roles": ["post_derivation_opened", "empirical_validation_target"]
     }
   ]
 }

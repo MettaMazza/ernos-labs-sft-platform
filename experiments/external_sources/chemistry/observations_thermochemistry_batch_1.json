@@ -1,0 +1,84 @@
+{
+  "schema":"sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date":"2026-07-24",
+  "boundary":"Five Fold consequences were sealed before these current IUPAC identities and ordered extractions were selected. Numerical thermochemical, phase, solubility and photochemical values remain condition-, method- and source-bounded external observations and are not claimed here.",
+  "observations":[
+    {
+      "target_id":"reaction-thermochemistry-iupac-composite","source_id":"IUPAC-GOLD-BOOK-REACTION-THERMOCHEMISTRY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"S05923","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05923.json","snapshot_hash":"sha256:e976fc5090d3344af00af1a64fea3bc564f126f53d920a0387c1fbf56ba07bf6"},
+        {"kind":"goldbook-json","term_code":"D01860","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/D01860.json","snapshot_hash":"sha256:43d61bf4ad5071950c8717393ebc320c4f864e8283dd47692f118e5819012282"},
+        {"kind":"goldbook-json","term_code":"H02752","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/H02752.json","snapshot_hash":"sha256:c11d7e32f4095e64101a983b9bb434abc3ac05484ce6f730fcde739d46d52c7e"},
+        {"kind":"goldbook-json","term_code":"E02101","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E02101.json","snapshot_hash":"sha256:f2ebcd138844abedc98c839a32d71f28cbe988b62ce400645833673be0c6f6e6"},
+        {"kind":"goldbook-json","term_code":"E02269","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E02269.json","snapshot_hash":"sha256:48b03430367e8a11d07f088c1104870fb831960a6a5a2a1deb6bdaf6f5daa1b3"},
+        {"kind":"goldbook-json","term_code":"E02095","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E02095.json","snapshot_hash":"sha256:9a94edf47503cbcd1081e58f1c14ecd8ffdf92772188f114d8d5ea77f8851d31"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"S05923","required_fragment":"changes in thermodynamic functions with extent of reaction","normalized_feature":"reaction-energy-change"},
+        {"document":"D01860","required_fragment":"on going from the reactants to the products","normalized_feature":"products-minus-reactants"},
+        {"document":"H02752","required_fragment":"Energy transferred from a hotter to a cooler body","normalized_feature":"absorbed-or-released-transfer"},
+        {"document":"S05923","required_fragment":"reactants and products are in their standard states","normalized_feature":"state-and-condition-source-bounded"}
+      ]
+    },
+    {
+      "target_id":"reaction-direction-iupac-composite","source_id":"IUPAC-GOLD-BOOK-REACTION-DIRECTION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"A00178","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00178.json","snapshot_hash":"sha256:29e64f1b53aba905340496145e5393f853b118f32684689de8e79c573e2642ef"},
+        {"kind":"goldbook-json","term_code":"D01860","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/D01860.json","snapshot_hash":"sha256:43d61bf4ad5071950c8717393ebc320c4f864e8283dd47692f118e5819012282"},
+        {"kind":"goldbook-json","term_code":"C01023","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01023.json","snapshot_hash":"sha256:8720b60c684dd7869500da1577be0f0a91f2362e02420d755fbbd1abbad6582b"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C01023","required_fragment":"forward or reverse direction","normalized_feature":"forward-or-reverse-spontaneous-tendency"},
+        {"document":"A00178","required_fragment":"Gibbs energy with respect to extent of reaction at constant pressure and temperature","normalized_feature":"Gibbs-energy-condition"},
+        {"document":"C01023","required_fragment":"rates in both directions are identical","normalized_feature":"equilibrium-at-no-driving-force"},
+        {"document":"A00178","required_fragment":"positive for spontaneous reactions","normalized_feature":"direction-state-bounded"}
+      ]
+    },
+    {
+      "target_id":"chemical-phase-iupac-composite","source_id":"IUPAC-GOLD-BOOK-CHEMICAL-PHASE-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"P04528","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/P04528.json","snapshot_hash":"sha256:c903c27903b67f47a61403a4de408c23bb21c50100ee37e5d05e9a8aa168c4eb"},
+        {"kind":"goldbook-json","term_code":"PT07286","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/PT07286.json","snapshot_hash":"sha256:eab4632ac244f46b0a97389eab7295dbb596a98b9c181039f8f74b0d02fa745e"},
+        {"kind":"goldbook-json","term_code":"15320","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/15320.json","snapshot_hash":"sha256:002217684a8258059667a3c8da2143c20cbd42a22a531eccadc75c3dc5d21680"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"PT07286","required_fragment":"Region of a material that is uniform","normalized_feature":"homogeneous-material-region"},
+        {"document":"P04528","required_fragment":"uniform in chemical composition and physical state","normalized_feature":"uniform-intensive-properties"},
+        {"document":"15320","required_fragment":"Boundary of stable phase separation","normalized_feature":"phase-boundary-retained"},
+        {"document":"15320","required_fragment":"Coexistence is displayed against temperature, pressure or composition","normalized_feature":"coexistence-condition-bounded"}
+      ]
+    },
+    {
+      "target_id":"solution-equilibrium-iupac-composite","source_id":"IUPAC-GOLD-BOOK-SOLUTION-EQUILIBRIUM-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"14656","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/14656.json","snapshot_hash":"sha256:bd07661ff6120f150e0a53e67a72b1e212293bf96bfad41628c1e8f7ec9ffdcb"},
+        {"kind":"goldbook-json","term_code":"12654","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/12654.json","snapshot_hash":"sha256:5fcf4284044f34b9f04ca442775363d067c946cb7fd91dd26aecee8c84aa6d12"},
+        {"kind":"goldbook-json","term_code":"C01023","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01023.json","snapshot_hash":"sha256:8720b60c684dd7869500da1577be0f0a91f2362e02420d755fbbd1abbad6582b"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"14656","required_fragment":"temperature change produces dissolution or precipitation to restore equilibrium","normalized_feature":"dissolution-and-crystallization-continue"},
+        {"document":"C01023","required_fragment":"rates in both directions are identical","normalized_feature":"rates-balanced-at-saturation"},
+        {"document":"14656","required_fragment":"macroscopic properties become uniform and independent of time","normalized_feature":"dissolved-composition-constant"},
+        {"document":"14656","required_fragment":"saturated solution at fixed temperature and pressure is in equilibrium","normalized_feature":"solubility-condition-bounded"}
+      ]
+    },
+    {
+      "target_id":"photochemistry-iupac-composite","source_id":"IUPAC-GOLD-BOOK-PHOTOCHEMISTRY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"P04585","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/P04585.json","snapshot_hash":"sha256:5e052ba4dda35e0152ec2de28c4d90a748933bd99a82481d5b0b31d9f0c0ed3d"},
+        {"kind":"goldbook-json","term_code":"P04613","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/P04613.json","snapshot_hash":"sha256:6ebccaca759ffc50e47b19b3b2c2b33a0b8a4365ee18c5da050a33720d564748"},
+        {"kind":"goldbook-json","term_code":"E02257","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E02257.json","snapshot_hash":"sha256:a44e98d1c56aceae58d9a051322684506d385e955853ce22b1938e6c4f673ea9"},
+        {"kind":"goldbook-json","term_code":"14063","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/14063.json","snapshot_hash":"sha256:5dce83d01a416c5b81d64dc3c68d86ed15f5c6f06adf63c9741b18075415d6dc"},
+        {"kind":"goldbook-json","term_code":"P04583","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/P04583.json","snapshot_hash":"sha256:0e4dcaee4714042b69d32c7c1cff03eda8e1d87e3850641939a460104a761738"},
+        {"kind":"goldbook-json","term_code":"Q04991","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/Q04991.json","snapshot_hash":"sha256:97a02a16fb2d937afe80628509038185b1086fbfa5a7b2b9cf798833793d905c"},
+        {"kind":"goldbook-json","term_code":"E02101","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E02101.json","snapshot_hash":"sha256:f2ebcd138844abedc98c839a32d71f28cbe988b62ce400645833673be0c6f6e6"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"P04585","required_fragment":"chemical reaction caused by absorption","normalized_feature":"light-absorption-initiates-chemical-change"},
+        {"document":"P04613","required_fragment":"production of an excited state by the absorption","normalized_feature":"molecular-excited-state"},
+        {"document":"14063","required_fragment":"processes leading to relaxation of the electronically excited system without chemical transformations","normalized_feature":"reaction-or-relaxation-pathways"},
+        {"document":"E02101","required_fragment":"For photons, energy is the Planck constant multiplied by the frequency of radiation","normalized_feature":"photon-energy-accounted"}
+      ]
+    }
+  ]
+}

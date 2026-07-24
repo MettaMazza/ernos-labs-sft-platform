@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4160fd712b17226fbf3a8cc047e5446f5375e7bd3fa14fd1c64641c517a5e38e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:eba05c35e0e176c852c05a3f09315b28f7bd0cbe56b2511e8b5f44780bd2472a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:fe957e7c888b14fab4f760796244349be17a05c08bb8a440bb09417b28d8a928"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a37c7574414b2ddd6b071742183623ac6758ef060b905ba5bbf38a6617730b62"
+    }
+  ]
+}

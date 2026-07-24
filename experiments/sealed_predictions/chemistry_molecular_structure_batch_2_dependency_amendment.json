@@ -1,0 +1,21 @@
+{
+  "schema": "sft-v3-sealed-derivation-engineering-amendment/1",
+  "branch": "chemistry",
+  "batch": "molecular_structure_batch_2",
+  "amendment_date": "2026-07-24",
+  "original_pre_source_seal": "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_pre_source.json",
+  "original_sealed_payload_hash": "sha256:583e2aa3abd0239e5e7c67d460090e1942958947324e66575b0b6a881f2f7488",
+  "correction_class": "dependency-identity-alias-resolution-only",
+  "alias_resolution": {
+    "SFT-PHYS-KINEMATICS-POSITION-001": "SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001",
+    "SFT-PHYS-KINEMATICS-DISPLACEMENT-001": "SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001"
+  },
+  "duplicate_resolved_dependencies_collapsed": true,
+  "candidate_dimensions_changed": false,
+  "candidate_census_changed": false,
+  "survivors_changed": false,
+  "exact_results_changed": false,
+  "predicted_observation_labels_changed": false,
+  "external_targets_changed": false,
+  "reason": "The pre-admission dependency audit found two descriptive Physics aliases that were not census claim identities. Both denote the single admitted location, separation and held-displacement-orientation law. The engine binding resolves and de-duplicates those aliases; the byte-sealed Fold derivation and predictions remain unchanged."
+}

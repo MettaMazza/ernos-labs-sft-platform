@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e4e7687a9a1d832e556174d015e0aa64f11f64f92e06734a6051d3b987b676db"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e2edad0e6d45799bbf3bb96bb8c4e89f8be5a715fc0d921e462d57b1d7d2e8f0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:12e6496b82b65e70e5458cdc2c1f49daecc9625414c9a58da9cda056fea5e5c6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5947e11fa098dddaf9eb6ce47ae72cd6b0492d99a75eeb6452299129b69e0996"
+    }
+  ]
+}

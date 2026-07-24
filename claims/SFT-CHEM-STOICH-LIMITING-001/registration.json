@@ -1,0 +1,56 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "chemistry",
+  "candidate_grammar": {
+    "boundary": "Every finite reaction input with exact positive available amounts and primitive required coefficients, where complete reaction progress is bounded by every available-to-required ratio.",
+    "completeness_certificate": "sha256:143321e72354003894981f845c5543196dea34061c13cc01aa07eff3e7cc691a",
+    "generator": "Generate the literal product of the registered limiting carrier, requirement, comparison, selection, consumption, excess, record and extension choices."
+  },
+  "claim_id": "SFT-CHEM-STOICH-LIMITING-001",
+  "dependencies": [
+    "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-DISCRETE-001",
+    "SFT-MATH-COMBINATORICS-001",
+    "SFT-MATH-ORDER-LATTICE-001",
+    "SFT-MATH-LOGIC-PROOF-001",
+    "SFT-INFO-SYMBOL-DISTINCTION-001",
+    "SFT-INFO-ENCODING-DECODING-001",
+    "SFT-INFO-CONSERVATION-LOSS-001",
+    "SFT-PHYS-MECH-CONSERVATION-001",
+    "SFT-PHYS-MATTER-CONSERVED-LABELS-001",
+    "SFT-CHEM-MEAS-CHEMICAL-ENTITY-001",
+    "SFT-CHEM-MEAS-CHEMICAL-SPECIES-001",
+    "SFT-CHEM-MEAS-SUBSTANCE-001",
+    "SFT-CHEM-MEAS-AMOUNT-001",
+    "SFT-CHEM-MEAS-FORMULA-001",
+    "SFT-CHEM-ELEM-ELEMENT-001",
+    "SFT-CHEM-ELEM-PERIODIC-ORDER-001",
+    "SFT-CHEM-STOICH-COEFFICIENT-001"
+  ],
+  "empirical_protocol": "experiments/chemistry/SFT-EXP-CHEM-STOICH-LIMITING-001/registration.json",
+  "excluded_inputs": [
+    "no IUPAC wording, balanced equation, measured amount or V2 answer may select a candidate",
+    "no numerical zero, negative, irrational, imaginary or floating proof quantity",
+    "no free, fitted, learned or target-derived parameter",
+    "no absent species represented by a zero coefficient; absence is an empty generated form",
+    "no application result or opaque predictor",
+    "official target content opens only through post-seal custody",
+    "Every finite reaction input with exact positive available amounts and primitive required coefficients, where complete reaction progress is bounded by every available-to-required ratio."
+  ],
+  "intended_certificate": "Complete content-specific 256-form census, sole survivor, independent regeneration and post-seal source-derived IUPAC correspondence.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "The limiting support is the complete tied least set of exact available-amount to primitive-required-count ratios; it bounds reaction progress before any unavailable carrier would be required.",
+  "status": "empirically_tested",
+  "title": "Limiting-component and complete-consumption boundary"
+}

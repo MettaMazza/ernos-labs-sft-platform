@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-MEAS-CHEMICAL-ENTITY-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-M03986-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:a3e0bcd0e902d200319858634c6cb9331c9cf95790bdf3c1b04edade0a987337",
+  "falsification_condition": "The claim fails if the current source-derived IUPAC entity record lacks singular distinguishability, constitution/isotope identity or contextual precision, or if any altered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:96a541e22fd08099bd11c4e7d615141525231b3347b80e2bd9c78caf14ccfa28",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:770516612c599bca3c9649ae8bfa6fe5985a0f204c4226a577fbd336cb18d766",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-MEAS-CHEMICAL-ENTITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:42e49f24ef09e131a24699af4ebf3ccab8b6d1fa37b600460b9042e05902a0ae",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3b5c746b3df4c78150bfca828d07f77ea7b9d86ceccf0d79d7764cb7a9e59c72",
+    "prediction_seal_hash": "sha256:87febb78b145c24636ef3edb6ce8baefa0022425ee2fd5016eb4c444da31afdf",
+    "program_hash": "sha256:323444ee85a17b14aa2aefe735752843c97f67e56f6f7890dc3705e5014456f4",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:fc1712280eabd99a8302f893fea2c5cb3a692f6627af5afad5d200acc7569622",
+    "target_material_present": false,
+    "trace_hash": "sha256:73c32b62a1df3933e823881093ada8c1aa333bcb2ebfe306acf4b27b8c758ded"
+  },
+  "measurement_receipt_hash": "sha256:6a9b6ee1de808a674690a9a9a99fd5f30323d47069e59eefe8585b5947bdda7f",
+  "measurements": [
+    "chemical-entity-iupac-m03986: predicted singular-carrier__constitution-and-isotope-retained__separately-distinguishable__context-bounded-precision; source-derived singular-carrier__constitution-and-isotope-retained__separately-distinguishable__context-bounded-precision; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5784d9539afd879ed716b07d55763fa6bbdb94bec65bfe0a47728f00beca35bd",
+    "custodian_id": "SFT-EXP-CHEM-MEAS-CHEMICAL-ENTITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:a3e0bcd0e902d200319858634c6cb9331c9cf95790bdf3c1b04edade0a987337",
+    "prediction_seal_hash": "sha256:87febb78b145c24636ef3edb6ce8baefa0022425ee2fd5016eb4c444da31afdf",
+    "registered_target_identity_hash": "sha256:fc1712280eabd99a8302f893fea2c5cb3a692f6627af5afad5d200acc7569622",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:0c7778f66209a925979ac06d41284b3da1e8e181cebe75c5422d4e6e56654a60"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9de339302a77f6504cf71743ec67ac5e3ec4abfadcc74da783418fd88e2a9f4d"
+}

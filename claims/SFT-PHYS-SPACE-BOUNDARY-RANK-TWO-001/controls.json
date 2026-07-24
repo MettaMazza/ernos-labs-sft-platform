@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9b50b4f4f1fca1e42ca15c89d7bf1f7c5f533d4484c44c9234deaa5927e87138"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:66896c9dc47e667d9cc368cba3ee78533675b5c097542a9efc91ce2509e114c4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c0a38d668713c09944f2fce5ca02b238d428333fcb9cd43b4283e6c8f22a3649"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a4c33833ff4802fc48fd89fd2116d367ce1e625e43cffbcf2732fb5fc3fa613a"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5c771cf5592a53cc672843d7cdadcfbe7e340db992858decb1ab49eb0d695e8b"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:6e2dc9948609f6a9bcffed8b9e06971fa9e84b851c60221af6c0726a7a4bf601"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8069e2016e09a7983c9c51f36313fbec85fe529516e27d9f31877bb68d776e78"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9df3facdacb8b6591dcebf69efd2b75b8b300056734782cf444b7e08cdb38fc6"
+    }
+  ]
+}

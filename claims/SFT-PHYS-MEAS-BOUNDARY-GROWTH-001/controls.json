@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MEAS-BOUNDARY-GROWTH-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form missing the first preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form missing the first preservation",
+      "passed": true,
+      "receipt_hash": "sha256:49c0e9ad603063b7a798ce56d84af7fc98dd24c46fca8128895246b531f8598d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:adebcc98ce249122d2a47909ec040beba1db9e569667015df572c019d289d310"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cc21d02d3416b56c4207d23b16300b4c0e88bcda3089b0151c9f588a8ca1adb8"
+    },
+    {
+      "expected_behavior": "reject excluded capabilities, values or authority paths",
+      "kind": "boundary",
+      "observed_behavior": "reject excluded capabilities, values or authority paths",
+      "passed": true,
+      "receipt_hash": "sha256:47bea616cdeb5da7ba6914b5f7274f3af8f89013addec4dab1c9d32208381f9f"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "sft-v3-source-boundary-growth-observations/1",
+  "formal_method_claim_id": "SFT-PHYS-MEAS-BOUNDARY-GROWTH-001",
+  "empirical_claim_id": "SFT-PHYS-FIELD-BOUNDARY-GROWTH-001",
+  "experiment_id": "SFT-EXP-PHYS-FIELD-BOUNDARY-GROWTH-001",
+  "pre_target_protocol_path": "experiments/sealed_predictions/physics_source_boundary_growth_pre_target.json",
+  "pre_target_protocol_hash": "sha256:a1fe0f53a3384cb5976da51dd3c9eeb95aa7d394fd411bbfbd2efc5b12355881",
+  "observations": [
+    {
+      "source_id": "NIST-SPECTRAL-IRRADIANCE-DISTANCE-2012",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-spectral-irradiance-distance-2012.pdf",
+      "snapshot_hash": "sha256:5e16b067d8cf4f6fd484538388fa899a7ddd96b6c1799123935d37bc7228a117",
+      "opened_after_protocol_seal": true,
+      "reported_distance_centimetres": [
+        "50.0510",
+        "60.9149",
+        "78.7720",
+        "96.5429",
+        "115.5913",
+        "134.6078",
+        "142.5635",
+        "150.8247"
+      ],
+      "reported_response_values": "not_tabulated",
+      "reported_model": "S=a/(z+b)^2",
+      "reported_model_construction": "least_squares_with_exponent_fixed_to_two_and_fitted_a_b",
+      "reported_uncertainty_percent": {
+        "distance_input": "0.03",
+        "distance_sensitivity": "2",
+        "distance_contribution": "0.06",
+        "gofr_gonio_correction": "0.01",
+        "lamp_control": "0.11",
+        "scattered_light_control": "0.05",
+        "gofr_signal_to_noise_and_stability": "0.0014",
+        "position_repeatability": "0.07",
+        "gofr_total_k_1": "0.18",
+        "spectral_gonio_dependence": "0.09",
+        "total_k_1": "0.20",
+        "expanded_k_2": "0.40"
+      },
+      "protocol_compatible": false,
+      "empirical_result": "not_evaluable",
+      "accepted": false,
+      "classification": "unfavorable_control",
+      "falsification_reason": "The sealed method requires exact source-bound distance/response intervals from which every compatible positive exponent is enumerated. This source does not tabulate the measured response values and instead fixes exponent two before fitting a and b. It therefore cannot independently discriminate the exponent and cannot validate the empirical claim.",
+      "retained_use": "Documents that an authoritative source can support apparatus and uncertainty context while still failing the zero-parameter target-blind admission gate."
+    }
+  ],
+  "current_result": {
+    "admissible_source_count": 0,
+    "compatible_exponent_family": "not_evaluated",
+    "unique_physical_discriminator": "not_yet_measured",
+    "empirical_claim_admitted": false
+  }
+}

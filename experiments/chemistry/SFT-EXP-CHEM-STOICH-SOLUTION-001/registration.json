@@ -1,0 +1,140 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-STOICH-SOLUTION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-STOICH-SOLUTION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:9cc1cc0830eca089aab602a249d8c8b9e0368551b83c3392d971161548260af7",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_composition_stoichiometry_batch_1.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:a097282c2d803858ef21c71f7020ab3ead29ebcd2e8a0b4c3faa45ececc1dfe8"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:02bce1178b2a0220efa6fe9549c784e56c201debc6d036f924a84f4e319372f1",
+    "evaluator_id": "SFT-EXP-CHEM-STOICH-SOLUTION-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the IUPAC solution record lacks liquid/solid phase, multiple substances or solvent/solute distinction, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-STOICH-SOLUTION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:39f8916fdced6993ceb67e374641b95375570866a24123508ce26f9ec0049f28",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/S05746.json",
+      "source_id": "IUPAC-GOLD-BOOK-S05746-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/S05746/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered solution carrier, phase, composition, roles, identity, context, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:8dee2dbe80704dc3d4e614d653b7ba476ce19c311f000d8a20eb95a4bb7d3e27",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:a9921b37fcfd2ae8902917ecf5d77b6aef1fc196b0ae6d0800b71dcac5dfe14f",
+      "sha256:ba9251b1e062d0db85f63a33f61c68c7211e0aa959a7ba2fc71c27b1ecc5fc78",
+      "sha256:da261a6d3b0dfcdf9439cbb04e214522de0b0aeff6f9779fa53afa2208c9d29c",
+      "sha256:30519612f146d3be09ad20bb12fb6b6e4fa0dd237d18d3eade4a5dc05f71eb2c",
+      "sha256:a43dfe15d1e98f33247ca4b7c53275ff4187fd7821e8ecfbe3a541fd6c3ddd77",
+      "sha256:4b262caabfff848bff6f1bcd58caf9d154e9f5175d8fc29127c127d0c06a3960",
+      "sha256:a6c3e60b513f4052f864d276faf5d254104763f0a71a848e9ea9e2e1697a6d20",
+      "sha256:47e7807c0817c65f4da5e1123abd114641e6fa986f55389acfabb7819a3b1f5a"
+    ],
+    "exact_domain": "Every finite liquid or solid single-phase mixture with multiple retained substances and an explicit contextual partition between solvent carrier roles and solute carrier roles.",
+    "relation_hash": "sha256:6fedaa606456de5109fd91e2f110727fcb88ab637be7660e2eb25b11f0a429a0",
+    "statement": "liquid-or-solid-phase__single-phase-support__multiple-substance-support__solvent-solute-role-partition",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:6eec021dbb1fa759bd6cc8d7d40c0bc7e7e67a9532e08d6c05ae7dd4246bd1da",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-STOICH-SOLUTION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:f78eda70eedf9694cb556b9bfdcd7379e66bd8956933a33bc5d121eb5f0a1748",
+    "program_id": "SFT-EXP-CHEM-STOICH-SOLUTION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:c753192334b952d6ee5633abae5245d4f7a7cc3173ffe311fb4a16b818b5f857",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/S05746.json": "sha256:39f8916fdced6993ceb67e374641b95375570866a24123508ce26f9ec0049f28"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:39f8916fdced6993ceb67e374641b95375570866a24123508ce26f9ec0049f28",
+      "source_id": "IUPAC-GOLD-BOOK-S05746-2026",
+      "source_locator": "https://goldbook.iupac.org/terms/view/S05746/json :: term S05746, current definition",
+      "target_id": "solution-iupac-s05746"
+    }
+  ]
+}

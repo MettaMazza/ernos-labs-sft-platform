@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-ELECTRONEGATIVITY-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-ELECTRONEGATIVITY-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:495ed957f8d456973cde301d114ea17b1c3c70dfe4584266f8280241460e7f55",
+  "falsification_condition": "The claim fails if the authority record lacks atomic attraction for shared electrons or permits a scale value to replace the retained comparison relation, or if a changed row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7728d84dacaf8a2d81d017ead378e76b352da93fc4b8106ad8b7845188118103",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f6075a0e2d344c066894c8bca2ad2d0beaf74596f9ed9be0f06b0daade4f9466",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-ELECTRONEGATIVITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e68adcd2014dffa41f96c84b421ff5257b7042a03dca9f05f35b90b93e80b8ca",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:de7fdf6893ea69afb1674e72352d63b0f85cc3fe4f918f89abb181f2ff3f218b",
+    "prediction_seal_hash": "sha256:22b1c1585251e3e6fa3097678df719c3b9ee661fa5d5311778b3fa23cbd033d4",
+    "program_hash": "sha256:bd628d0ce9dddb2980199bd2bb5f909f1707cd8226ca60899edd0aede11583b7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:28832ed50e1173e5a5ae6982497709f70e839b7f965c99b4798bca8962003372",
+    "target_material_present": false,
+    "trace_hash": "sha256:18ae06a003a1d72b6a5a0b06e4cc13d3f3073a1f1b5beeb3794fe7018ec98af6"
+  },
+  "measurement_receipt_hash": "sha256:bd86b140ac84feb20fcd1503c6284630317056d1b172d1063aab0832cf6f2deb",
+  "measurements": [
+    "electronegativity-iupac-composite: predicted atomic-attraction-for-shared-electrons__pairwise-affinity-order__ties-retained__scale-values-source-bounded; source-derived atomic-attraction-for-shared-electrons__pairwise-affinity-order__ties-retained__scale-values-source-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:6c14f366bf01e75f03c76d99e2b637c938cc5618785b6f4aae53054700cc92eb",
+    "custodian_id": "SFT-EXP-CHEM-ELECTRONEGATIVITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:495ed957f8d456973cde301d114ea17b1c3c70dfe4584266f8280241460e7f55",
+    "prediction_seal_hash": "sha256:22b1c1585251e3e6fa3097678df719c3b9ee661fa5d5311778b3fa23cbd033d4",
+    "registered_target_identity_hash": "sha256:28832ed50e1173e5a5ae6982497709f70e839b7f965c99b4798bca8962003372",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:967c5a2a0bdc4cccfcd1c91adb603aedfe2919e935505e51432f4753509b7848"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9efe41b7f2f880257c5ad610b1b1cf5cc75636df410afe3c16d3fb518922611c"
+}

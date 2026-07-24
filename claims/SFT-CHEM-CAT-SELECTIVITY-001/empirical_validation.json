@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-CAT-SELECTIVITY-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-CATALYTIC-SELECTIVITY-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:21c45c7a29715d0ad23a88ceea6fcbe855c907ab30d4966c270be0a7b7d98ecf",
+  "falsification_condition": "The claim fails if authority evidence lacks product preference relative to alternatives, specified reactant consumption, a bounded method/condition or retained competitors, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:76ef47150ee7c3a9bb165a1de4560555e188915a78e73cf82cd221bb9dd17c93",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:81468eb84d0b687f781ed780de3cfa1a106594ac7290c731b989e557831c1c55",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-CAT-SELECTIVITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cb2df6c661791e77b0dc32d5c74034f43b06133988ff8a3fcbad5ebeafe5800e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:efa9ddde42781992d27b88ec78b7de8368b1ad1daf1af34b0afb270550867f95",
+    "prediction_seal_hash": "sha256:3786ff4148324649a6c325af14c90a58a97510e27939f2e8e60577dbd60c04d2",
+    "program_hash": "sha256:ede91349b1d493663a96519aa384bae91053d2336fe3e27a20de9cc2c3685ad6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:85ec3d2476efdae6558712566082a541a7ba6b0578f2bc34048911ef4d6784bf",
+    "target_material_present": false,
+    "trace_hash": "sha256:2d18855aca22619b49e8d576d61c9df6613b272c92d9e1e805599ed849c7c752"
+  },
+  "measurement_receipt_hash": "sha256:521c12218f929ef529d6f59320f28470cdddf57dd9eabd3c5199cb039673b03d",
+  "measurements": [
+    "catalytic-selectivity-iupac-composite: predicted one-product-favored-among-alternatives__specified-reactant-consumption__condition-and-method-bounded__competing-products-retained; source-derived one-product-favored-among-alternatives__specified-reactant-consumption__condition-and-method-bounded__competing-products-retained; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:92f075412058de4db93764aa8125c147d44fb094629ec239e44ce347c4c17b10",
+    "custodian_id": "SFT-EXP-CHEM-CAT-SELECTIVITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:21c45c7a29715d0ad23a88ceea6fcbe855c907ab30d4966c270be0a7b7d98ecf",
+    "prediction_seal_hash": "sha256:3786ff4148324649a6c325af14c90a58a97510e27939f2e8e60577dbd60c04d2",
+    "registered_target_identity_hash": "sha256:85ec3d2476efdae6558712566082a541a7ba6b0578f2bc34048911ef4d6784bf",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:67d05089a3d7a457b99cd2522f1966b3d10847d35988e59cd8e1c5f97f9b61d9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:31e00c5a6c64c7da5f688349a84bf49340ed271f9dc47797a6440c0dbeba3c35"
+}

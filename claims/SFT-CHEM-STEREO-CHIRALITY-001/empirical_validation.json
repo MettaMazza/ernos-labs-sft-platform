@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-STEREO-CHIRALITY-001",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-CHIRALITY-COMPOSITE-2026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8cd1f610ab552fd19926e370e5ce3e0aa4a22dd6863973b18cce4849a2bc80e9",
+  "falsification_condition": "The claim fails if authority evidence lacks reflection, non-superposability, retained chirality or an observation boundary, or if a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d81385cebada96333bdc67b2222c699f3cab100ecc5a0aad4bd27fd5223f9bf6",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:89c9b416f125fd15d58d3ca929cd4a4b1ddb53e760868df196863283e5bc3387",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-STEREO-CHIRALITY-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:bbbac1a256c292b75707abdf6c362a6cd6940c430b79ba41749d113ccc66ee77",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:03e72955f131a1e8e0a9a549c9220be0d76b16238afc11745a4c28e5055edb80",
+    "prediction_seal_hash": "sha256:5ed031fedd3b4c104f8df93b7a27189809e57b26d6837c2de462396e543e28af",
+    "program_hash": "sha256:13ab226e2b7a2454c33714849ca1d319d8efb9b40f77da8288e8525604e21cdf",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:bfbba25b06a12e6bd424d1c1901aafd55288e5212eda551bd182eb4930393502",
+    "target_material_present": false,
+    "trace_hash": "sha256:736c3c4c26c8be9b99028eed3d3b2f3da9b3f9da2680a62903da8550c9a17735"
+  },
+  "measurement_receipt_hash": "sha256:2f858469a86812414592d37f8c551eb2cab9aeefa37411935749a5a0ce5fbec0",
+  "measurements": [
+    "chirality-iupac-composite: predicted object-not-superposable-on-mirror-image__chirality-retained__reflection-distinction__observation-boundary-held; source-derived object-not-superposable-on-mirror-image__chirality-retained__reflection-distinction__observation-boundary-held; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7d44cc5ed9943c5e98870d49e914e1630ded60d1a79629b9a8e716a8558d8a15",
+    "custodian_id": "SFT-EXP-CHEM-STEREO-CHIRALITY-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:8cd1f610ab552fd19926e370e5ce3e0aa4a22dd6863973b18cce4849a2bc80e9",
+    "prediction_seal_hash": "sha256:5ed031fedd3b4c104f8df93b7a27189809e57b26d6837c2de462396e543e28af",
+    "registered_target_identity_hash": "sha256:bfbba25b06a12e6bd424d1c1901aafd55288e5212eda551bd182eb4930393502",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:75a3f46f9c23de1fcc8d70b223a5a71b7dd47a89d1576ebed8867f8d2e1f31d4"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2273f6d6e92d30bb607b5e7a6e75b44c980946bc18cf3630bf0b06c70ebdf659"
+}

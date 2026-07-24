@@ -1,0 +1,154 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "authority_support_registry": "experiments/external_sources/chemistry/observations_reaction_kinetics_batch_1.json",
+  "claim_id": "SFT-CHEM-KIN-RATE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-KIN-RATE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:669409b88a2d30b32aceb252773ee10c59c37fa53307fab0296d9c9313912b9e",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_reaction_kinetics_batch_1.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:8aa6ac813e4ff01f5b66a2901fcd1a638e7b8f5df4c9431c70a13b940c0ba19d"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:573e530d2c2cc6ccf2befb56f60851b17ab99c277c44d45398d1276711cd2c31",
+    "evaluator_id": "SFT-EXP-CHEM-KIN-RATE-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the authority record lacks reaction change per time or an observation/condition boundary, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-KIN-RATE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:4f61cb4a9d72b0266dd464f84a2349aee57aec161521fb2466bcf8febed361fe",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/R05147.json",
+      "source_id": "IUPAC-GOLD-BOOK-REACTION-RATE-COMPOSITE-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/R05147"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of event, count, duration, boundary, relation, condition, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:a8cb33d7d7d82dc4cf4197f87135099c0f8d79e477458c75972220fe67ea3062",
+      "sha256:88089d61acc33978914e6b94830213e1ac3d8b216b79a4414bd90f6bbe566831",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:fce3ddff18354c507387b7e842d6a658d0078ea714f10d119fe10bdb6ddb05b9",
+      "sha256:a0bbc15e8f2c8d83d7f61f07b9013e27eec1465f864a1f05df9ded10a5db85a7",
+      "sha256:328bad35a4c1f0944ad1ce0e6bf858b19213848755aea2b7ff90b04c9f93595d",
+      "sha256:27ebf68d06fb04b12c3ec677d5c952e805f9fdb220afb806b37d3a9fb7b23b2d",
+      "sha256:1cd1a6b729f20751959be84d890460d4221195efe2ce955d544f87fa2ad91669",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:54b69d9b13e5608b43a8642bbf0301722f15ea207cbaddcf9f133e1459d86cc0",
+      "sha256:11c1aa236f0b3613acb6df1121d0ad9189ae08e5a7e6a78231b0c5edbb819e1f",
+      "sha256:989fbfcde926fa285fd191256f5c8bf5e6a9083e6a6593ca6023c0036996846c",
+      "sha256:91a56fa578d394a34b15c903301d573e48a8d9d21b7953174668a21a398025f9",
+      "sha256:1f8f6223f60e6b99dd0bfb3b143fde779c028b0dc0efd64f1c82d466862433b2",
+      "sha256:ae57354dbd9af28cc98ffca2520a3da89d1fc1821b8b7798cf617a45934df709",
+      "sha256:bd8623594bbb47b8c94745e2075087e44d07932e929d99249b198b61aea9a9fa",
+      "sha256:b77846eef9a0a0a48cd730fdc4ba703cd473ec0a67a5a0655f2e14bcb2f52771",
+      "sha256:b8be9cba73afcadf4ef5964cbf0b483873958c3d71d1a67f2adac8c7a03f3570",
+      "sha256:ee85c3b5571cd9efa19268d0d706dbcb1ee571b87a938a139bb2680e5c110dba",
+      "sha256:5ec244b5d3c46e35945e6b9233b22cd876136f0a001f8ff5b5d31390790a70c2",
+      "sha256:7fb85b23f210fa978c7798266392b6bc0596273fbdf2892eb28ecde9ac7eeed2"
+    ],
+    "exact_domain": "Every finite observation boundary with a positive counted set of completed instances of one reaction transition and a positive counted set of registered recurrence intervals, retaining species amount and conditions as source records.",
+    "relation_hash": "sha256:97c4bf2dec1808e9dce38444008026ebed3cd81ca3d4d54aa9b208128d4e6176",
+    "statement": "one-registered-reaction-event__positive-completed-event-count__positive-reference-recurrence-count__registered-species-observation-boundary__event-count-per-recurrence",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:d629df4fc60df5e091dedb649d704745a3ae100b0f912bf7ce60dba034bf04d1",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "pre_source_derivation_seal": "experiments/sealed_predictions/chemistry_reaction_kinetics_batch_1_pre_source.json",
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-KIN-RATE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:2c8b45537b1e05a8f2b1535735a0c64d5f0d3f3f0c7d27961c1653d330ff2cf2",
+    "program_id": "SFT-EXP-CHEM-KIN-RATE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:17142ff59052fa76aa562d933dc17ab1f965f276f0047e4de80f2840de03526a",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/R05147.json": "sha256:4f61cb4a9d72b0266dd464f84a2349aee57aec161521fb2466bcf8febed361fe"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:4f61cb4a9d72b0266dd464f84a2349aee57aec161521fb2466bcf8febed361fe",
+      "source_id": "IUPAC-GOLD-BOOK-REACTION-RATE-COMPOSITE-2026",
+      "source_locator": "official IUPAC source set anchored at R05147",
+      "target_id": "reaction-rate-iupac-composite"
+    }
+  ]
+}

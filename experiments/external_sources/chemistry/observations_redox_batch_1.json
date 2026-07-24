@@ -1,0 +1,81 @@
+{
+  "schema": "sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date": "2026-07-24",
+  "boundary": "The five Fold consequences were byte-sealed before these IUPAC records and ordered feature extractions were selected. Scale values and electrode measurements remain external and source-bounded.",
+  "observations": [
+    {
+      "target_id": "electronegativity-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-ELECTRONEGATIVITY-COMPOSITE-2026",
+      "support_documents": [
+        {"kind":"goldbook-json","term_code":"E01990","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/E01990.json","snapshot_hash":"sha256:bc2888f84a2a3efc53f89738797c88528af75cd0564295e2a1d4138cd1c778e3"},
+        {"kind":"goldbook-json","term_code":"ET07030","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/ET07030.json","snapshot_hash":"sha256:5e7115bc5a50da233e2b9a5f2ac0254366c160875de92f507ba136e54426445c"}
+      ],
+      "ordered_feature_extractions": [
+        {"document":"E01990","required_fragment":"power of an atom to attract electrons to itself","normalized_feature":"atomic-attraction-for-shared-electrons"},
+        {"document":"E01990","required_fragment":"relative electronegativity differences","normalized_feature":"pairwise-affinity-order"},
+        {"document":"ET07030","required_fragment":"same electronegativity value","normalized_feature":"ties-retained"},
+        {"document":"E01990","required_fragment":"There are several definitions of this quantity","normalized_feature":"scale-values-source-bounded"}
+      ]
+    },
+    {
+      "target_id": "bond-polarity-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-BOND-POLARITY-COMPOSITE-2026",
+      "support_documents": [
+        {"kind":"goldbook-json","term_code":"08195","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08195.json","snapshot_hash":"sha256:a907133200cc3296e7ecdb7c8970ae8ce35af7b6d3b44d6746f7d18ad5086d41"},
+        {"kind":"goldbook-json","term_code":"11482","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/11482.json","snapshot_hash":"sha256:7c17c6aaa9986d62aaa064fc0c275470f7ee1671dbfc5c01f6ec00355744765d"},
+        {"kind":"goldbook-json","term_code":"C01384","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C01384.json","snapshot_hash":"sha256:5106a40f5b1c372a570fc42f3cb1641b63a270454e4a7138699c584754294622"}
+      ],
+      "ordered_feature_extractions": [
+        {"document":"08195","required_fragment":"atoms of different electronegativity","normalized_feature":"unequal-electron-attraction"},
+        {"document":"08195","required_fragment":"Characteristic of a bond","normalized_feature":"polar-covalent-bond"},
+        {"document":"11482","required_fragment":"uneven distribution of electrons in bonds","normalized_feature":"partial-charge-separation"},
+        {"document":"C01384","required_fragment":"sharing of electrons","normalized_feature":"bond-support-remains-shared"}
+      ]
+    },
+    {
+      "target_id": "oxidation-state-iupac-o04365",
+      "source_id": "IUPAC-GOLD-BOOK-O04365-2026",
+      "support_documents": [
+        {"kind":"goldbook-json","term_code":"O04365","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/O04365.json","snapshot_hash":"sha256:5413171bfaa9152ff9a6a2dee0c79a2ec3e31a4d1efbfff0f8c76804c7fdb06e"}
+      ],
+      "ordered_feature_extractions": [
+        {"document":"O04365","required_fragment":"ionic approximation of its heteronuclear bonds","normalized_feature":"ionic-approximation"},
+        {"document":"O04365","required_fragment":"assigned to the more electronegative partner","normalized_feature":"bond-electrons-assigned-by-electronegativity"},
+        {"document":"O04365","required_fragment":"charge of this atom","normalized_feature":"per-atom-charge-accounting"},
+        {"document":"O04365","required_fragment":"Homonuclear bonds are divided equally","normalized_feature":"complete-assignment-conserved"}
+      ]
+    },
+    {
+      "target_id": "redox-coupling-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-REDOX-COMPOSITE-2026",
+      "support_documents": [
+        {"kind":"goldbook-json","term_code":"O04362","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/O04362.json","snapshot_hash":"sha256:9e367d54ae7e7f9e5a40366f9298b1c8dfffbac4677847f60458b78e7e16fc68"},
+        {"kind":"goldbook-json","term_code":"R05222","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/R05222.json","snapshot_hash":"sha256:80b944aab45e8ef4ae83d74e50a700773319bde4394621c7dc12e732f842371c"},
+        {"kind":"goldbook-json","term_code":"09063","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/09063.json","snapshot_hash":"sha256:2045c794c03cff17b2ee77a6d2ebe4f116f721c21aaf8fdb7265c087b38451e4"}
+      ],
+      "ordered_feature_extractions": [
+        {"document":"O04362","required_fragment":"removal of one or more electrons","normalized_feature":"oxidation-electron-loss"},
+        {"document":"R05222","required_fragment":"transfer of one or more electrons to a molecular entity","normalized_feature":"reduction-electron-gain"},
+        {"document":"R05222","required_fragment":"reverse of the processes described under oxidation","normalized_feature":"paired-half-reactions"},
+        {"document":"09063","required_fragment":"electrons transferred in a charge transfer reaction","normalized_feature":"electron-transfer-conserved"}
+      ]
+    },
+    {
+      "target_id": "electrochemical-cell-iupac-composite",
+      "source_id": "IUPAC-GOLD-BOOK-ELECTROCHEMICAL-CELL-COMPOSITE-2026",
+      "support_documents": [
+        {"kind":"goldbook-json","term_code":"09058","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/09058.json","snapshot_hash":"sha256:0016d0976a51c44b0208458810ad455a459f988c7573d186293edff0aea33d68"},
+        {"kind":"goldbook-json","term_code":"09060","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/09060.json","snapshot_hash":"sha256:7b8dae111793b03bd3ba520f6fec793e760a9e1cdffdfa300d7d383d74bdb3d0"},
+        {"kind":"goldbook-json","term_code":"09066","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/09066.json","snapshot_hash":"sha256:050d2b84eead810596a423336f574793e2c8c59b2be6dce0e0497e2c5841f168"},
+        {"kind":"goldbook-json","term_code":"A00370","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00370.json","snapshot_hash":"sha256:9e66e733169dc57c717a9276545bae36ac034f155c6ada8a8ea37c8f332ed813"},
+        {"kind":"goldbook-json","term_code":"C00905","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C00905.json","snapshot_hash":"sha256:7f34fb31fc503a5a21a3a9c012e04df681553c9739fb9bf308617b692bbf8a31"}
+      ],
+      "ordered_feature_extractions": [
+        {"document":"09058","required_fragment":"at least two electron conductors","normalized_feature":"separated-redox-half-cells"},
+        {"document":"09060","required_fragment":"connected to the external circuit","normalized_feature":"external-electron-path"},
+        {"document":"09058","required_fragment":"in contact with ionic conductors","normalized_feature":"ionic-circuit-closure"},
+        {"document":"09066","required_fragment":"chemical energy is converted into electrical energy","normalized_feature":"chemical-to-electrical-work-transfer"}
+      ]
+    }
+  ]
+}

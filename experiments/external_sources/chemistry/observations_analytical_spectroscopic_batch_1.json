@@ -1,0 +1,125 @@
+{
+  "schema":"sft-v3-chemistry-multi-source-authority-observations/1",
+  "prepared_date":"2026-07-24",
+  "boundary":"Eight analytical and spectroscopic Fold consequences were derived and byte-sealed before these IUPAC and NIST source identities and ordered extractions were selected. No measured spectrum, calibration coefficient, fitted line shape, detection threshold or database assignment entered the derivation. Numerical observations remain sample-, state-, instrument-, method- and uncertainty-bounded.",
+  "observations":[
+    {
+      "target_id":"analytical-sample-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ANALYTICAL-SAMPLE-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"S05451","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05451.json","snapshot_hash":"sha256:f2d630c6a9a8ec0ab1304a6e9e3acf1bc495b9b3f2d5f3958375aa0c3fafa184"},
+        {"kind":"goldbook-json","term_code":"A00331","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00331.json","snapshot_hash":"sha256:1019b4cf6d0b38d163f37aa20c7f281cf8c14fd8edaa12d6ac824ce01c35dfc0"},
+        {"kind":"goldbook-json","term_code":"M03759","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03759.json","snapshot_hash":"sha256:0177b727b638e89cbd2aa38af6c5e2650972127d00bb447c22787c0889a2fe9e"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"S05451","required_fragment":"portion of material selected from a larger quantity of material","normalized_feature":"sample-is-declared-material-portion"},
+        {"document":"A00331","required_fragment":"component of a system to be analysed","normalized_feature":"analyte-is-component-under-determination"},
+        {"document":"M03759","required_fragment":"all components of the sample other than the analyte","normalized_feature":"matrix-is-other-sample-components"},
+        {"document":"S05451","required_fragment":"manner of selection of the sample should be prescribed in a sampling plan","normalized_feature":"sampling-boundary-held"}
+      ]
+    },
+    {
+      "target_id":"analytical-calibration-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ANALYTICAL-CALIBRATION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"C00775","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/C00775.json","snapshot_hash":"sha256:9a50ffb4e909ae78ac6ccf2cfa69db372a7ff659db4fb88b48e89e79322b69c0"},
+        {"kind":"goldbook-json","term_code":"T06420","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/T06420.json","snapshot_hash":"sha256:340db04ff7c8636653bf159eb3f1f09da8ca610c2bddbe99ed6c3a574269ab05"},
+        {"kind":"goldbook-json","term_code":"U06553","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/U06553.json","snapshot_hash":"sha256:5fcaf88d4df85f6147627de14435d8e23ea757c49a3890bb2a2127d486c522e7"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"C00775","required_fragment":"relationship between values indicated by the analytical instrument and the corresponding known values of an analyte","normalized_feature":"calibration-relates-response-to-reference-values"},
+        {"document":"T06420","required_fragment":"through an unbroken chain of comparisons","normalized_feature":"traceability-chain-retained"},
+        {"document":"C00775","required_fragment":"under specified conditions","normalized_feature":"calibration-domain-explicit"},
+        {"document":"U06553","required_fragment":"dispersion of the values that could reasonably be attributed to the measurand","normalized_feature":"uncertainty-method-bounded"}
+      ]
+    },
+    {
+      "target_id":"analytical-selectivity-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ANALYTICAL-SELECTIVITY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"S05564","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05564.json","snapshot_hash":"sha256:24cfb5654b5ba14eb99cc4dfe0c01efa7a251be91937a33000f362ba8a9730f6"},
+        {"kind":"goldbook-json","term_code":"I03089","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/I03089.json","snapshot_hash":"sha256:8c0a61e71477240cc401ec2b0fabbbf9cac0272cf74551c6382294009c25674a"},
+        {"kind":"goldbook-json","term_code":"S05715","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05715.json","snapshot_hash":"sha256:4d44575a3d72020fb800cc27c00232875d5f862b2a5d23f428e8899867f06df7"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"S05564","required_fragment":"other substances interfere with the determination of a substance","normalized_feature":"analyte-response-distinguished-amid-components"},
+        {"document":"I03089","required_fragment":"caused by the presence of concomitants in a sample","normalized_feature":"interference-retained"},
+        {"document":"S05715","required_fragment":"can not be distinguished from the signal given by the analyte","normalized_feature":"selectivity-not-universal"},
+        {"document":"S05564","required_fragment":"according to a given procedure","normalized_feature":"method-condition-boundary-held"}
+      ]
+    },
+    {
+      "target_id":"mass-spectroscopy-iupac-composite","source_id":"IUPAC-GOLD-BOOK-MASS-SPECTROSCOPY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"M03749","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03749.json","snapshot_hash":"sha256:bb7b4631fab65d61fd3c0f8b6257ae91bc87da91ceea23a961f4c824f20b4e56"},
+        {"kind":"goldbook-json","term_code":"M03748","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03748.json","snapshot_hash":"sha256:2cb1493223e0bad01c35c3abb9dbbee04adb730e923b527139be6ae8e366e54e"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"M03749","required_fragment":"beam of ions is separated according to the mass-to-charge ratios","normalized_feature":"ions-separated-by-mass-to-charge"},
+        {"document":"M03748","required_fragment":"mass-to-charge ratios and relative abundances","normalized_feature":"mass-spectrum-retains-relative-abundance"},
+        {"document":"M03748","required_fragment":"study of systems","normalized_feature":"composition-fragment-correspondence"},
+        {"document":"M03748","required_fragment":"causing the formation of gaseous ions, with or without fragmentation","normalized_feature":"ionization-method-bounded"}
+      ]
+    },
+    {
+      "target_id":"infrared-spectroscopy-iupac-composite","source_id":"IUPAC-GOLD-BOOK-INFRARED-SPECTROSCOPY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"08618","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08618.json","snapshot_hash":"sha256:0be3cc15940bfcf345e61af54ef378022de8f2c32b7e566b7d4ed25f69c553ab"},
+        {"kind":"goldbook-json","term_code":"08291","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08291.json","snapshot_hash":"sha256:ce58d3ad875678ed566901ff48822a8ca2137c8db8e179bcc71b416c268f3bb7"},
+        {"kind":"goldbook-json","term_code":"A00041","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00041.json","snapshot_hash":"sha256:56bac71ec75cc5cfb1a15ecd30a4c570de9437d1383f9226af83af61d0022f57"},
+        {"kind":"goldbook-json","term_code":"08289","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08289.json","snapshot_hash":"sha256:8c3b838278807e8c148d89f3033f952a692a9fb2635e35becd66cc8576b63fbe"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"08618","required_fragment":"vibrational spectroscopy using infrared radiation","normalized_feature":"infrared-absorption-corresponds-to-molecular-vibration"},
+        {"document":"08291","required_fragment":"at each wavelength, frequency or wavenumber","normalized_feature":"frequency-pattern-retained"},
+        {"document":"A00041","required_fragment":"series of discrete absorption lines can be used as an unambiguous identification","normalized_feature":"molecular-distinction-uses-whole-spectrum"},
+        {"document":"08289","required_fragment":"Resolution depends strongly on the instrument line shape function of the spectrometer","normalized_feature":"state-method-bounded"}
+      ]
+    },
+    {
+      "target_id":"uv-visible-spectroscopy-iupac-composite","source_id":"IUPAC-GOLD-BOOK-UVVISIBLE-SPECTROSCOPY-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"S05696","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/S05696.json","snapshot_hash":"sha256:bcf4022ed1743c6445d1c6a2dc88d616adad7f833c299734f1b3fc3b45652a7d"},
+        {"kind":"goldbook-json","term_code":"A00036","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00036.json","snapshot_hash":"sha256:15efc608e4a1acb435adf215584a96cd1df3a059a59495fb0d20f81d706ea774"},
+        {"kind":"goldbook-json","term_code":"A00043","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/A00043.json","snapshot_hash":"sha256:b87e4533f4be032473adebc9773d78a49c3c8c49b76049be7a033a66ce8d72e2"},
+        {"kind":"goldbook-json","term_code":"08289","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08289.json","snapshot_hash":"sha256:8c3b838278807e8c148d89f3033f952a692a9fb2635e35becd66cc8576b63fbe"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"S05696","required_fragment":"transition from the singlet ground state of the molecule into singlet excited states","normalized_feature":"ultraviolet-visible-absorption-involves-electronic-transition"},
+        {"document":"A00036","required_fragment":"chemical nature of molecules, atoms or ions","normalized_feature":"carrier-and-state-retained"},
+        {"document":"A00043","required_fragment":"wavelength dependence of the absorption","normalized_feature":"response-pattern-recorded"},
+        {"document":"08289","required_fragment":"depends strongly on the instrument line shape function","normalized_feature":"state-method-bounded"}
+      ]
+    },
+    {
+      "target_id":"rotation-vibration-iupac-composite","source_id":"IUPAC-GOLD-BOOK-ROTATION-VIBRATION-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"08676","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08676.json","snapshot_hash":"sha256:fa1bdd34ab2e93cce09dd22311bba6d9c1e3ee4221a285510eca2b7ce8e3e647"},
+        {"kind":"goldbook-json","term_code":"M03999","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03999.json","snapshot_hash":"sha256:42169fb7bd87268d04ddd4e4e0d496fd3bd2b5432314a6d34441e58c1dd364b7"},
+        {"kind":"goldbook-json","term_code":"V06614","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/V06614.json","snapshot_hash":"sha256:cfb156e6cf7098ee811bc9704690bb3f2c1a9580a0d01155bfe3bd7a1dd8d37b"},
+        {"kind":"goldbook-json","term_code":"08289","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08289.json","snapshot_hash":"sha256:8c3b838278807e8c148d89f3033f952a692a9fb2635e35becd66cc8576b63fbe"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"08676","required_fragment":"transitions between rotational-vibrational states of a molecule","normalized_feature":"molecular-spectra-retain-rotational-and-vibrational-transitions"},
+        {"document":"M03999","required_fragment":"rotational, vibrational and electronic transitions of molecules","normalized_feature":"state-composition-held"},
+        {"document":"M03999","required_fragment":"Spectra formed by bands consisting of rotational lines","normalized_feature":"transition-pattern-complete"},
+        {"document":"V06614","required_fragment":"distribution of their populations, characterized by the vibrational temperature","normalized_feature":"population-resolution-bounded"}
+      ]
+    },
+    {
+      "target_id":"complete-analytical-record-authority-composite","source_id":"IUPAC-NIST-COMPLETE-ANALYTICAL-RECORD-COMPOSITE-2026",
+      "support_documents":[
+        {"kind":"goldbook-json","term_code":"M03796","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/M03796.json","snapshot_hash":"sha256:f27104514cc2af6ad31064e74244121a076fc3c795f3f636e4f7f8face60e9a1"},
+        {"kind":"goldbook-json","term_code":"08028","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08028.json","snapshot_hash":"sha256:851cb36e104910ec637f84d8f69e34629528c770cb5b90aee04206bd74580610"},
+        {"kind":"goldbook-json","term_code":"T06420","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/T06420.json","snapshot_hash":"sha256:340db04ff7c8636653bf159eb3f1f09da8ca610c2bddbe99ed6c3a574269ab05"},
+        {"kind":"goldbook-json","term_code":"U06553","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/U06553.json","snapshot_hash":"sha256:5fcaf88d4df85f6147627de14435d8e23ea757c49a3890bb2a2127d486c522e7"},
+        {"kind":"goldbook-json","term_code":"08138","snapshot_path":"experiments/external_sources/chemistry/snapshots/goldbook-terms/08138.json","snapshot_hash":"sha256:2b28ae8639ebdd3ae3070d2480f4bc1d38da30e3b6b04677d8a03efcf3b827b3"},
+        {"kind":"official-html","term_code":"NIST-SCIENTIFIC-INTEGRITY","snapshot_path":"experiments/external_sources/chemistry/snapshots/nist-scientific-integrity-record-extract.html","snapshot_hash":"sha256:7516f754eb8e2e1ffd4374b3f27835955a6463ef6b0dc40a2ad67557dd8a25a0"},
+        {"kind":"official-html","term_code":"NIST-NEGATIVE-CONTROL","snapshot_path":"experiments/external_sources/chemistry/snapshots/nist-negative-control-extract.html","snapshot_hash":"sha256:182c1ccd96f8ba82812401aa7a59899ec389bc51ab15099e0a219f88f10f7dd1"}
+      ],
+      "ordered_feature_extractions":[
+        {"document":"M03796","required_fragment":"outcome of an analytical measurement, or value attributed to a measurand","normalized_feature":"analytical-result-identifies-measurand-sample-and-method"},
+        {"document":"T06420","required_fragment":"appropriate standards","normalized_feature":"traceability-and-uncertainty-retained"},
+        {"document":"NIST-NEGATIVE-CONTROL","required_fragment":"An analytical control","normalized_feature":"all-results-and-controls-preserved"},
+        {"document":"NIST-SCIENTIFIC-INTEGRITY","required_fragment":"changing or omitting data or results such that the research is not accurately represented in the research record","normalized_feature":"falsification-condition-explicit"}
+      ]
+    }
+  ]
+}

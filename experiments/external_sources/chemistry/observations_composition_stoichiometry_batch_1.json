@@ -1,0 +1,75 @@
+{
+  "schema": "sft-v3-chemistry-source-derived-observations/1",
+  "prepared_date": "2026-07-24",
+  "boundary": "This registry is opened only after each matching Fold consequence is sealed. Each categorical feature is reconstructed from a required fragment of current byte-sealed IUPAC JSON. The external rows test terminology correspondence; exact conservation, balance, primitive-vector and limiting-support claims are separately machine-checked formal results.",
+  "observations": [
+    {
+      "target_id": "composition-iupac-m03722",
+      "source_id": "IUPAC-GOLD-BOOK-M03722-2026",
+      "term_code": "M03722",
+      "ordered_feature_extractions": [
+        {"required_fragment": "Mass of a constituent", "normalized_feature": "constituent-carrier"},
+        {"required_fragment": "divided by the total mass", "normalized_feature": "constituent-part-over-total-mixture"}
+      ]
+    },
+    {
+      "target_id": "stoichiometry-iupac-s06026",
+      "source_id": "IUPAC-GOLD-BOOK-S06026-2026",
+      "term_code": "S06026",
+      "ordered_feature_extractions": [
+        {"required_fragment": "amounts of substances that react together", "normalized_feature": "reactant-amount-support"},
+        {"required_fragment": "amounts of products that are formed", "normalized_feature": "product-amount-support"},
+        {"required_fragment": "particular chemical reaction", "normalized_feature": "reaction-relation"}
+      ]
+    },
+    {
+      "target_id": "reaction-equation-iupac-c01034",
+      "source_id": "IUPAC-GOLD-BOOK-C01034-2026",
+      "term_code": "C01034",
+      "ordered_feature_extractions": [
+        {"required_fragment": "reactant entities are given on the left hand side and the product entities on the right hand side", "normalized_feature": "reactant-product-held-sides"},
+        {"required_fragment": "absolute values of the stoichiometric numbers", "normalized_feature": "absolute-stoichiometric-counts"},
+        {"required_fragment": "coefficients next to the symbols and formulae of entities", "normalized_feature": "formula-bound-coefficients"}
+      ]
+    },
+    {
+      "target_id": "limiting-reagent-iupac-d01771",
+      "source_id": "IUPAC-GOLD-BOOK-D01771-2026",
+      "term_code": "D01771",
+      "ordered_feature_extractions": [
+        {"required_fragment": "limiting reagent", "normalized_feature": "limiting-reagent-carrier"},
+        {"required_fragment": "amount of the limiting reagent", "normalized_feature": "amount-boundary"}
+      ]
+    },
+    {
+      "target_id": "chemical-yield-iupac-c01041",
+      "source_id": "IUPAC-GOLD-BOOK-C01041-2026",
+      "term_code": "C01041",
+      "ordered_feature_extractions": [
+        {"required_fragment": "fraction of the amount", "normalized_feature": "amount-fraction"},
+        {"required_fragment": "element or chemical compound", "normalized_feature": "element-or-compound-product"},
+        {"required_fragment": "specified chemical reaction or separation", "normalized_feature": "specified-reaction-or-separation"}
+      ]
+    },
+    {
+      "target_id": "mixture-iupac-m03949",
+      "source_id": "IUPAC-GOLD-BOOK-M03949-2026",
+      "term_code": "M03949",
+      "ordered_feature_extractions": [
+        {"required_fragment": "Portion of matter", "normalized_feature": "matter-portion"},
+        {"required_fragment": "two or more chemical substances", "normalized_feature": "two-or-more-substances"},
+        {"required_fragment": "called constituents", "normalized_feature": "constituent-identities"}
+      ]
+    },
+    {
+      "target_id": "solution-iupac-s05746",
+      "source_id": "IUPAC-GOLD-BOOK-S05746-2026",
+      "term_code": "S05746",
+      "ordered_feature_extractions": [
+        {"required_fragment": "liquid or solid phase", "normalized_feature": "single-liquid-or-solid-phase"},
+        {"required_fragment": "containing more than one substance", "normalized_feature": "multiple-substance-support"},
+        {"required_fragment": "called the solvent", "normalized_feature": "solvent-solute-role-partition"}
+      ]
+    }
+  ]
+}

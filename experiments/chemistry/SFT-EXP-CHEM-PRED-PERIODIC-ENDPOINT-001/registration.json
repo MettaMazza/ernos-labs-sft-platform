@@ -1,0 +1,136 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-PRED-PERIODIC-ENDPOINT-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-PRED-PERIODIC-ENDPOINT-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:d47773e2ebee6ed48a0766a3c6d46997cea914808630e1d388f0ce9cb9acaf60",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_gblock_predictions.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:898f4ebb55c239ce122eeb223e7e5a62deaf7867b546fa068a51ef224549bef5"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "The official known prefix matches, every row is retained, the changed row fails, and future coordinates remain explicitly unobserved.",
+    "comparison_implementation_hash": "sha256:ab1bcd2a131f91b745db35163bd4be11b3a071a38fbcae58327bbe031a7efb45",
+    "evaluator_id": "SFT-EXP-CHEM-PRED-PERIODIC-ENDPOINT-001-post-seal-source-evaluator",
+    "falsification_condition": "A verified neutral element beyond 137 satisfies the registered One-ceiling boundary, the exact prerequisite fails replay, the observed/source boundary is conflated with the structural law, or a tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "formal_forcing_plus_known_domain_validation_and_sealed_unobserved_prediction",
+  "experiment_id": "SFT-EXP-CHEM-PRED-PERIODIC-ENDPOINT-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/iupac-periodic-table-04may22.pdf",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_uri": "https://iupac.org/wp-content/uploads/2022/07/IUPAC_Periodic_Table-04May22_CRA.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of positive atomic carrier, exact binding boundary, greatest-whole construction, predicted coordinate, provenance, target custody, evidence status and extra-rule forms.",
+    "dependency_hashes": [
+      "sha256:5ebd7dda152064d8691fa7977d83032a51ebe14c01c7f3692bbebe0ad9575403",
+      "sha256:8dfbb651b89e076cf5c5062b6af9d0d294d275849dde37af35952512bca4f005",
+      "sha256:501da3355ef7ca9cac3d4eb0d60f1433fba15c6ec7273d2a1c1c5e4a41e6aa0b",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:4b262caabfff848bff6f1bcd58caf9d154e9f5175d8fc29127c127d0c06a3960",
+      "sha256:a17397294f765d20aa310846041a8f5ac9f0d1640c8272aa639f50b90d5bb79e",
+      "sha256:a6c3e60b513f4052f864d276faf5d254104763f0a71a848e9ea9e2e1697a6d20",
+      "sha256:40390fd221991edc073f7fdf53612531cb00d8824e724053520edaecd5144b29",
+      "sha256:233074bf6dcb53daec23d5ce265e944bfa7a1f907c088a02b1471fd873c75869",
+      "sha256:c811d2a759f828a2617e1dbec0bc5f674253901a78619daeff3218cadbca7116",
+      "sha256:8d8e9d951d357d4643194bf0cd9998aa2495e0fb6d53daf693fb1befad967acc",
+      "sha256:613b86c73438a4c89ac68deff699b70b652869be60640dd5a7a7927790d69bdb"
+    ],
+    "exact_domain": "All Chemistry endpoint consequences of the admitted exact atomic-existence boundary and positive atomic-number order, separated from the source-dated observed table boundary.",
+    "relation_hash": "sha256:3944c069199c6ac61518aa24ad77316c73ed3b374a0de2540c3dc3a9a0c0da8e",
+    "statement": "The model's exact structural periodic endpoint is positive atomic number 137; the IUPAC 2022 observed boundary remains 118, so 119-137 including the endpoint are unobserved standing predictions.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:bb34cd75b125284cb572ab5c811150bd8580e30fb089159a5590604258884bd1",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-PRED-PERIODIC-ENDPOINT-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:bec719f7da6e5e21f9aaf0252d585ba866646f12383d5fb3489f5da6dbb24d2c",
+    "program_id": "SFT-EXP-CHEM-PRED-PERIODIC-ENDPOINT-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:7d9443a849573d9a51302296d33d9a0f015b3e537fe4d4032b8d3470b5e2e896",
+    "experiments/external_sources/chemistry/snapshots/iupac-periodic-table-04may22.pdf": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_locator": "official IUPAC periodic-table release dated 4 May 2022",
+      "target_id": "IUPAC-ENDPOINT-OBSERVATION-BOUNDARY"
+    }
+  ]
+}

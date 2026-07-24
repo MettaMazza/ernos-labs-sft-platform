@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SURFACE-ADSORPTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1222829e939050aadd0f8822802fd259e38a34efc4956031923d6901d9376f77"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:5e79aced536f06e06417b9bd97561298a94bae3a6ed69a8edfc2238aa255bd21"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4208793f4c9b2043c17f721fc4db84dacd13580da5eb86b7480bbabfd24e615b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:59eae4ccdfd45006bede3138562ce34a170fd3cceaa0c58c81440c9b92f26b70"
+    }
+  ]
+}

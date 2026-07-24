@@ -1,0 +1,61 @@
+{
+  "schema": "sft-v3-chemistry-source-derived-observations/1",
+  "prepared_date": "2026-07-24",
+  "boundary": "This immutable batch is opened only by the empirical validator after its matching prediction is sealed. Each normalized feature requires an exact fragment in the byte-sealed official IUPAC definition and cannot enter candidate generation.",
+  "observations": [
+    {
+      "target_id": "amount-of-substance-iupac-a00297",
+      "source_id": "IUPAC-GOLD-BOOK-A00297-2026",
+      "term_code": "A00297",
+      "ordered_feature_extractions": [
+        {"required_fragment": "amount of substance", "normalized_feature": "amount-carrier"},
+        {"required_fragment": "measure of the number", "normalized_feature": "count-measure"},
+        {"required_fragment": "specified elementary entities", "normalized_feature": "specified-entity-reference"},
+        {"required_fragment": "atom, a molecule, an ion, an electron", "normalized_feature": "generated-entity-support"}
+      ]
+    },
+    {
+      "target_id": "molecular-formula-iupac-m03987",
+      "source_id": "IUPAC-GOLD-BOOK-M03987-2026",
+      "term_code": "M03987",
+      "ordered_feature_extractions": [
+        {"required_fragment": "compounds consisting of discrete molecules", "normalized_feature": "discrete-molecule-domain"},
+        {"required_fragment": "a formula", "normalized_feature": "formula-encoding"},
+        {"required_fragment": "relative molecular mass", "normalized_feature": "composition-mass-correspondence"},
+        {"required_fragment": "or the structure", "normalized_feature": "structure-correspondence"}
+      ]
+    },
+    {
+      "target_id": "systematic-name-iupac-s06236",
+      "source_id": "IUPAC-GOLD-BOOK-S06236-2026",
+      "term_code": "S06236",
+      "ordered_feature_extractions": [
+        {"required_fragment": "A name composed wholly", "normalized_feature": "complete-name-carrier"},
+        {"required_fragment": "specially coined or selected syllables", "normalized_feature": "generated-name-parts"},
+        {"required_fragment": "with or without numerical prefixes", "normalized_feature": "count-prefix-support"}
+      ]
+    },
+    {
+      "target_id": "target-uncertainty-iupac-08133",
+      "source_id": "IUPAC-GOLD-BOOK-08133-2026",
+      "term_code": "08133",
+      "ordered_feature_extractions": [
+        {"required_fragment": "Measurement uncertainty", "normalized_feature": "uncertainty-carrier"},
+        {"required_fragment": "specified as an upper limit", "normalized_feature": "upper-bound-support"},
+        {"required_fragment": "intended use", "normalized_feature": "use-bounded-resolution"},
+        {"required_fragment": "measurement results", "normalized_feature": "result-record-boundary"}
+      ]
+    },
+    {
+      "target_id": "certified-property-iupac-08013",
+      "source_id": "IUPAC-GOLD-BOOK-08013-2026",
+      "term_code": "08013",
+      "ordered_feature_extractions": [
+        {"required_fragment": "Property value of a reference material", "normalized_feature": "reference-material-property"},
+        {"required_fragment": "associated uncertainty", "normalized_feature": "uncertainty-retained"},
+        {"required_fragment": "traceability", "normalized_feature": "traceability-retained"},
+        {"required_fragment": "reference material certificate", "normalized_feature": "certificate-bound-record"}
+      ]
+    }
+  ]
+}

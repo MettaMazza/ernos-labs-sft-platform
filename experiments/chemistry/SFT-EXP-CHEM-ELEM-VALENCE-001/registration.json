@@ -1,0 +1,142 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-ELEM-VALENCE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-ELEM-VALENCE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:f67e0026a0320f47e52855f8dced9038a1148cfa5cd91763d7aa276b16313be5",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_elements_periodicity_batch_2.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:b61f0ec052d8eee0e50b74b5b890168aad7c8921c6fc56a0b1c6b128ef52b1eb"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:66a56f87fc0c6bf82e02f73c1b6266f33b3ea00c58fa39649b532b6217822f56",
+    "evaluator_id": "SFT-EXP-CHEM-ELEM-VALENCE-001-post-seal-mixed-source-evaluator",
+    "falsification_condition": "The claim fails if the source-derived IUPAC record lacks a maximum univalent combination count, atom/fragment carrier or substitution boundary, or if a changed row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "After prediction sealing, reconstruct registered categorical features from required fragments of byte-sealed official IUPAC Gold Book JSON or periodic-table PDF content streams, then compare the resulting held label with the sealed Fold consequence.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical authoritative correspondence; no decimal measured value is used as a proof scalar."
+      }
+    ]
+  },
+  "evidence_mode": "blind_mixed_source_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-ELEM-VALENCE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:99ae406a9ac89a8f0a89bf3c775ff9ba7c5d9d0c96f89f83a57a0b35c76c4077",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/V06588.json",
+      "source_id": "IUPAC-GOLD-BOOK-V06588-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/V06588/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered valence carrier, support, unit, selection, substitution, context, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:8dee2dbe80704dc3d4e614d653b7ba476ce19c311f000d8a20eb95a4bb7d3e27",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:86e35cc6575034fe1f5912b476d74fe46002dad3d05edaa088314286722347b7",
+      "sha256:7e661d88e70c749032cd9f4ad2250b3282a7755c4c70af0ae8b0215f07c2cde4",
+      "sha256:a8cb33d7d7d82dc4cf4197f87135099c0f8d79e477458c75972220fe67ea3062",
+      "sha256:e93cc21d7b9081185a9acb023fd8a06ea3269a8f9f62598cb64701326798142b",
+      "sha256:da2c846ed3c59c2b13c953b61f3fa1e16a4bf71f3202f5d2600b7dbffbbdb735",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:a9921b37fcfd2ae8902917ecf5d77b6aef1fc196b0ae6d0800b71dcac5dfe14f",
+      "sha256:4b262caabfff848bff6f1bcd58caf9d154e9f5175d8fc29127c127d0c06a3960",
+      "sha256:a17397294f765d20aa310846041a8f5ac9f0d1640c8272aa639f50b90d5bb79e",
+      "sha256:40390fd221991edc073f7fdf53612531cb00d8824e724053520edaecd5144b29",
+      "sha256:bfd14404221ab66ee2e451241fd17d1559c5fb4af9feada911661b692d4ce020"
+    ],
+    "exact_domain": "Every finite atom or chemical fragment with complete generated combination and substitution traces, where the largest realized univalent joining count is retained with its chemical context.",
+    "relation_hash": "sha256:842e29f438d85f24fea04177688061ccb3779110b0caf58fb82833c33866a9db",
+    "statement": "atom-or-fragment-carrier__complete-generated-combination-support__univalent-partner-count__maximum-realized-count",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:66824c6dca4580db034f98c4f51e39ebf3e5610cf8865d03526ac0bcda89667a",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-ELEM-VALENCE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:636a0e1bf188d9a6ddbd80784f5fe98ca2e288ed999a18af43e5845039ae5f1d",
+    "program_id": "SFT-EXP-CHEM-ELEM-VALENCE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:54ebbb3c5959c724e4f99b8b2a956e6ad063e22ec687d0da4efe819fdc507197",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/V06588.json": "sha256:99ae406a9ac89a8f0a89bf3c775ff9ba7c5d9d0c96f89f83a57a0b35c76c4077"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99ae406a9ac89a8f0a89bf3c775ff9ba7c5d9d0c96f89f83a57a0b35c76c4077",
+      "source_id": "IUPAC-GOLD-BOOK-V06588-2026",
+      "source_locator": "https://goldbook.iupac.org/terms/view/V06588/json :: term V06588, current definition",
+      "target_id": "valence-iupac-v06588"
+    }
+  ]
+}

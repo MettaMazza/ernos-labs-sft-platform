@@ -1,0 +1,140 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-ELEM-ISOTOPE-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the first chemical preservation is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed official snapshot identity or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived feature label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-ELEM-ISOTOPE-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "observation_registry_hash": "sha256:3b5f2d9bba72ab27bd2b6684815e8d9bedfdbad447ed12c76c4fc299a2eb276a",
+    "observation_registry_path": "experiments/external_sources/chemistry/observations_elements_periodicity_batch_1.json",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:9a7a55097093987f64bb09515c63d54bfd8ef40731e39a6a51baac0ef4eb8e9d"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered source-derived row matches and a deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:a471ee0abcbf0bf0642bbd6b9d7d566bf83e0479dedab88a6e1798814a2f322f",
+    "evaluator_id": "SFT-EXP-CHEM-ELEM-ISOTOPE-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if the source-derived IUPAC isotope record does not retain nuclides, common atomic number and distinct mass numbers, or if an altered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered ordered features from required fragments of each byte-sealed official term, then compare the resulting held label with the sealed Fold prediction.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Categorical terminology correspondence; this is not a numerical measurement."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-CHEM-ELEM-ISOTOPE-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_source_derived_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:7b5ca7fe293902804ca76194a6ac35a57a35bfa489245c93979eb81370a6635c",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/goldbook-terms/I03331.json",
+      "source_id": "IUPAC-GOLD-BOOK-I03331-2026",
+      "source_uri": "https://goldbook.iupac.org/terms/view/I03331/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of the registered isotope carrier, element, mass, complementary nuclear count, chemistry, observation, record and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:8dee2dbe80704dc3d4e614d653b7ba476ce19c311f000d8a20eb95a4bb7d3e27",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:86e35cc6575034fe1f5912b476d74fe46002dad3d05edaa088314286722347b7",
+      "sha256:f2af8d211e6031f97f486f3ad2908f8ddced49cb285616873375c08558ad48c3",
+      "sha256:7e661d88e70c749032cd9f4ad2250b3282a7755c4c70af0ae8b0215f07c2cde4",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:1f5cfe6628b8224e8a3dc20fa64c6105f8a4770ddbddcc4c091af4caf637df17",
+      "sha256:4164486c0f2547077bbfa8243c7faf1d9f8b9db32c51cb08290e2e4e0aae7591",
+      "sha256:91bccb2322e3bd80e62393161bb9e054fa41e04e92153b4a7571c457875add30",
+      "sha256:a9921b37fcfd2ae8902917ecf5d77b6aef1fc196b0ae6d0800b71dcac5dfe14f",
+      "sha256:ba9251b1e062d0db85f63a33f61c68c7211e0aa959a7ba2fc71c27b1ecc5fc78",
+      "sha256:da261a6d3b0dfcdf9439cbb04e214522de0b0aeff6f9779fa53afa2208c9d29c",
+      "sha256:4b262caabfff848bff6f1bcd58caf9d154e9f5175d8fc29127c127d0c06a3960",
+      "sha256:a17397294f765d20aa310846041a8f5ac9f0d1640c8272aa639f50b90d5bb79e"
+    ],
+    "exact_domain": "Every positive-finite family of admitted nuclides sharing one atomic-number identity while retaining each distinct generated mass-number coordinate and complete nuclear record.",
+    "relation_hash": "sha256:d21bfb8d2f2d3a297f2128928be0bea7646ad928262f74d3f9487d76c7319e14",
+    "statement": "nuclide-carriers__element-identity-retained__mass-number-distinction",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:e2d7af0ea11279aa454335175def4367a1fe6cdf280ba4eb8b8b910dbf1662b9",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-ELEM-ISOTOPE-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:7c2b85b30b14a4f00d963aaa65aa24fce345c5815e61ae851575d4e2faa287f5",
+    "program_id": "SFT-EXP-CHEM-ELEM-ISOTOPE-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:357d76681bdb9919a6986cf4d770119673e87fc2c429867245c3316272cd7ccb",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/I03331.json": "sha256:7b5ca7fe293902804ca76194a6ac35a57a35bfa489245c93979eb81370a6635c"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_derivation_specification": true,
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7b5ca7fe293902804ca76194a6ac35a57a35bfa489245c93979eb81370a6635c",
+      "source_id": "IUPAC-GOLD-BOOK-I03331-2026",
+      "source_locator": "https://goldbook.iupac.org/terms/view/I03331/json :: term I03331, current definition",
+      "target_id": "isotopes-iupac-i03331"
+    }
+  ]
+}
