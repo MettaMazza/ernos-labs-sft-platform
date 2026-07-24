@@ -1,36 +1,58 @@
 {
-  "schema": "sft-v3-prior-obligation-ownership/1",
   "as_of": "2026-07-24",
-  "status": "open_blocking",
   "assignment_complete": false,
-  "purpose": "Decompose every V1 theorem-manifest row and every V2 numbered result into its atomic scientific obligations, then assign every atomic obligation to exactly one categorical V3 owning branch before any branch can be declared complete against current registered knowledge.",
-  "ownership_law": {
-    "composite_source_rows_must_be_decomposed": true,
-    "exactly_one_primary_owner_per_atomic_obligation_required": true,
-    "one_source_row_may_have_multiple_owners_only_through_explicit_atomic_decomposition": true,
-    "downstream_consumers_may_reference_but_not_reown": true,
-    "physical_constants_and_dimensionless_physical_values_owner": "physics",
-    "chemical_consequences_of_physical_constants_owner": "chemistry",
-    "universal_physical_cosmology_relations_owner": "physics",
-    "observed_cosmic_state_history_and_population_owner": "astronomy_cosmology",
-    "formal_quantum_computational_models_owner": "quantum_computation",
-    "physical_quantum_correspondence_owner": "physics",
-    "unassigned_obligation_blocks_every_potential_owner": true,
-    "branch_specific_full_source_review_may_close_a_branch_before_global_ledger": true,
-    "global_all_branch_atomic_ledger_required_for_final_toe": true
-  },
-  "source_surfaces": {
-    "v1": {
-      "path": "audits/v1_theorem_manifest_observation_census.json",
-      "row_count": 356,
-      "owner_assignment_status": "not_yet_complete"
+  "branch_summary": {
+    "chemistry": {
+      "status": "open_blocking_owner_and_same_strength_audit"
     },
-    "v2": {
-      "path": "audits/v2_407_step_observation_census.json",
-      "step_count": 407,
-      "owner_assignment_status": "not_yet_complete"
+    "computation": {
+      "status": "open_blocking_owner_and_same_strength_audit"
+    },
+    "foundation": {
+      "atomic_obligations": 32,
+      "branch_ledger": "census/foundation_prior_obligations.json",
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "information_science": {
+      "status": "open_blocking_owner_and_same_strength_audit"
+    },
+    "materials": {
+      "status": "open_blocking_owner_and_same_strength_audit"
+    },
+    "mathematics": {
+      "atomic_obligations": 71,
+      "branch_ledger": "census/mathematics_prior_obligations.json",
+      "explicit_corrections_or_invalidations": 4,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "physics": {
+      "status": "open_blocking_owner_and_same_strength_audit"
+    },
+    "quantum_computation": {
+      "status": "open_blocking_owner_and_same_strength_audit"
     }
   },
+  "next_required_action": "Continue the 763-entry branch-specific ownership and same-strength reconstruction with Information Science.",
+  "ownership_law": {
+    "branch_specific_full_source_review_may_close_a_branch_before_global_ledger": true,
+    "chemical_consequences_of_physical_constants_owner": "chemistry",
+    "composite_source_rows_must_be_decomposed": true,
+    "downstream_consumers_may_reference_but_not_reown": true,
+    "exactly_one_primary_owner_per_atomic_obligation_required": true,
+    "formal_quantum_computational_models_owner": "quantum_computation",
+    "global_all_branch_atomic_ledger_required_for_final_toe": true,
+    "observed_cosmic_state_history_and_population_owner": "astronomy_cosmology",
+    "one_source_row_may_have_multiple_owners_only_through_explicit_atomic_decomposition": true,
+    "physical_constants_and_dimensionless_physical_values_owner": "physics",
+    "physical_quantum_correspondence_owner": "physics",
+    "unassigned_obligation_blocks_every_potential_owner": true,
+    "universal_physical_cosmology_relations_owner": "physics"
+  },
+  "purpose": "Decompose every V1 theorem-manifest row and every V2 numbered result into its atomic scientific obligations, then assign every atomic obligation to exactly one categorical V3 owning branch before any branch can be declared complete against current registered knowledge.",
   "registered_branches": [
     "foundation",
     "mathematics",
@@ -48,21 +70,18 @@
     "engineering_translation",
     "application_frontier"
   ],
-  "branch_summary": {
-    "foundation": {
-      "status": "closed_same_strength",
-      "branch_ledger": "census/foundation_prior_obligations.json",
-      "reviewed_source_entries": 763,
-      "atomic_obligations": 32,
-      "open_obligations": 0
+  "schema": "sft-v3-prior-obligation-ownership/1",
+  "source_surfaces": {
+    "v1": {
+      "owner_assignment_status": "not_yet_complete",
+      "path": "audits/v1_theorem_manifest_observation_census.json",
+      "row_count": 356
     },
-    "mathematics": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "information_science": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "computation": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "quantum_computation": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "physics": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "chemistry": {"status": "open_blocking_owner_and_same_strength_audit"},
-    "materials": {"status": "open_blocking_owner_and_same_strength_audit"}
+    "v2": {
+      "owner_assignment_status": "not_yet_complete",
+      "path": "audits/v2_407_step_observation_census.json",
+      "step_count": 407
+    }
   },
-  "next_required_action": "Continue the 763-entry branch-specific ownership and same-strength reconstruction sequentially. The Foundation review is closed; Mathematics is next. Complete the global atomic owner ledger before the final TOE paper."
+  "status": "open_blocking"
 }

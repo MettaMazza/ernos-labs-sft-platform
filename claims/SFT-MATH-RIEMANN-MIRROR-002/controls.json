@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-RIEMANN-MIRROR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Imaginary values are not admitted proof objects.",
+      "passed": true,
+      "receipt_hash": "sha256:47986d182ec9dcb7e128ba21b6556b7f1a6cd9e96b2a99e5d6aef6ae62254001"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "semantic numerical zero is not an admitted value; negative magnitude is represented only by held orientation; irrational, imaginary and floating proof values are excluded; a completed infinity and an ungenerated continuum are excluded",
+      "passed": true,
+      "receipt_hash": "sha256:d3e9e102d09c15d45a65651b202a39c4339861878490c72915593ef97661f237"
+    }
+  ]
+}

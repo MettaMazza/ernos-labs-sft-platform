@@ -125,9 +125,10 @@ def cover():
         ),
         Spacer(1, 17 * mm),
         Paragraph(
-            "Third clean-room reconstruction - Mathematics current-knowledge inventory complete"
-            "<br/>Twelve admitted derivations - 7,424 generated candidate structures"
-            "<br/>Version 1.0 - 23 July 2026"
+            "Third clean-room reconstruction - complete V1/V2 Mathematics reconciliation"
+            "<br/>Twenty-two admitted derivations - 9,984 generated candidate structures"
+            "<br/>Seventy-one prior obligations closed - none open"
+            "<br/>Version 1.1 - 24 July 2026"
             f"<br/>{doi()}"
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,

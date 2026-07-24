@@ -11,12 +11,13 @@ from sft.mathematics.exact_arithmetic import SPEC as EXACT_ARITHMETIC
 from sft.mathematics.geometry_topology import SPEC as GEOMETRY_TOPOLOGY
 from sft.mathematics.graph_network import SPEC as GRAPH_NETWORK
 from sft.mathematics.logic_proof import SPEC as LOGIC_PROOF
+from sft.mathematics.lineage_laws import LINEAGE_SPECS
 from sft.mathematics.optimization import SPEC as OPTIMIZATION
 from sft.mathematics.order_lattice import SPEC as ORDER_LATTICE
 from sft.mathematics.probability_statistics import SPEC as PROBABILITY_STATISTICS
 
 
-SPECS = (
+CORE_SPECS = (
     EXACT_ARITHMETIC,
     DISCRETE,
     COMBINATORICS,
@@ -31,12 +32,14 @@ SPECS = (
     CATEGORY_TYPE_COMPOSITION,
 )
 
+SPECS = CORE_SPECS + LINEAGE_SPECS
+
 
 def validate_catalog() -> None:
     """Halt if the branch inventory is duplicated, incomplete or misordered."""
 
-    if len(SPECS) != 12:
-        raise ValueError("the mathematics catalog must contain exactly twelve declared obligations")
+    if len(SPECS) != 22:
+        raise ValueError("the mathematics catalog must contain exactly twenty-two declared obligations")
     claim_ids = tuple(spec.claim_id for spec in SPECS)
     if len(set(claim_ids)) != len(claim_ids):
         raise ValueError("the mathematics catalog contains a duplicate claim identity")
@@ -51,6 +54,7 @@ def validate_catalog() -> None:
         "SFT-FOUNDATION-FORM-GRAMMAR-001",
         "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
         "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+        "SFT-FOUNDATION-HALF-ONE-001",
     }
     for spec in SPECS:
         spec.validate()

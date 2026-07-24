@@ -31,9 +31,10 @@ current exhaustive account.
 
 ## Phase C - mathematical foundations
 
-Status: next active reconstruction branch. The twelve-claim paper remains
-published archival evidence; current completion requires its own full owner and
-same-strength audit and successor reconstruction.
+Status: current reconstruction closed. All 763 prior source entries were
+reviewed for categorical ownership; 71 of 71 atomic Mathematics obligations are
+closed by 22 model-admitted claims. Mathematics Branch Paper 001 version 1.1 is
+the current successor account once its version deposit is synchronized.
 
 - [x] Exact arithmetic and number structure.
 - [x] Discrete mathematics and combinatorics.
@@ -45,6 +46,10 @@ same-strength audit and successor reconstruction.
 - [x] Logic, proof, category, type and compositional structures where forced.
 
 ## Phase D - information and computation
+
+Status: Information Science is the next active reconstruction branch. Its
+archived twelve-claim paper remains valid at its recorded boundary but is open
+for the complete owner and same-strength V1/V2 audit.
 
 - [x] Information science: twelve model-admitted, depth-independently closed and
   independently replicated claims; frozen inventory; standalone paper and

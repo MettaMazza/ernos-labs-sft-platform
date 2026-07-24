@@ -23,6 +23,7 @@ if str(ROOT) not in sys.path:
 from sft.engine.canonical import sha256_identity
 from sft.engine.publication import BranchInventory, PaperEvidence, PublicationGate
 from sft.engine.receipt_io import read_receipt
+from sft.mathematics.catalog import SPECS
 
 
 BRANCH_ID = "mathematics"
@@ -35,20 +36,7 @@ EVIDENCE_MAP_PATH = ROOT / "publications/current/mathematics/evidence_map.json"
 MANIFEST_PATH = ROOT / "publications/current/mathematics/manifest.json"
 PUBLICATION_RECEIPT_PATH = ROOT / "publications/current/mathematics/publication_receipt.json"
 
-PAPER_SECTIONS = {
-    "SFT-MATH-EXACT-ARITHMETIC-001": "6",
-    "SFT-MATH-DISCRETE-001": "7",
-    "SFT-MATH-COMBINATORICS-001": "8",
-    "SFT-MATH-GRAPH-NETWORK-001": "9",
-    "SFT-MATH-ALGEBRA-001": "10",
-    "SFT-MATH-ORDER-LATTICE-001": "11",
-    "SFT-MATH-GEOMETRY-TOPOLOGY-001": "12",
-    "SFT-MATH-PROBABILITY-STATISTICS-001": "13",
-    "SFT-MATH-OPTIMIZATION-001": "14",
-    "SFT-MATH-DYNAMICAL-SYSTEMS-001": "15",
-    "SFT-MATH-LOGIC-PROOF-001": "16",
-    "SFT-MATH-CATEGORY-TYPE-COMPOSITION-001": "17",
-}
+PAPER_SECTIONS = {spec.claim_id: str(index) for index, spec in enumerate(SPECS, start=6)}
 
 REQUIRED_CLAIM_FILES = (
     "registration.json",

@@ -1552,9 +1552,15 @@ technical report and an explicit open-science position: scientific authority
 must rest on an inspectable chain of claims whose authority ends at their stated
 boundaries and whose receipts can be independently replayed or invalidated.
 
-The next dependency-ordered branch is Mathematics. Its current-knowledge paper cannot inherit
-Foundation's closure as a substitute for its own 763-entry ownership review,
-same-strength reconstruction, exact enumerations and independent checks.
+Mathematics is now reconstructed at current registered V1/V2 strength: 71 of
+71 owned atomic obligations are closed by 22 model-admitted claims over 9,984
+generated candidates. [Mathematics Branch Paper 001 version 1.1](publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md)
+is the current exhaustive account, with its [rendered PDF](output/pdf/from-fold-to-mathematics-branch-paper-001.pdf)
+and version DOI [`10.5281/zenodo.21536012`](https://doi.org/10.5281/zenodo.21536012).
+
+The next dependency-ordered branch is Information Science. It must complete its
+own 763-entry categorical-owner and same-strength reconstruction before its
+existing Paper 001 receives a successor version patch.
 
 ## Data and code availability
 

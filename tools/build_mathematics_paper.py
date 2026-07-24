@@ -14,7 +14,7 @@ from sft.mathematics.catalog import SPECS  # noqa: E402
 
 
 OUTPUT = ROOT / "publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md"
-INVENTORY_HASH = "sha256:d8eaad7d40d75bb293ee49b1c6401aeb7a617068e597b2cc4eeb00a7879fc3d3"
+INVENTORY_HASH = "sha256:645bc6810273d4c1547c10eb6a7e63947e00d3953d9457096abe49be79f480aa"
 DOI_PATH = ROOT / "publications/current/mathematics/doi.txt"
 
 
@@ -100,6 +100,66 @@ INTERPRETATION = {
         "registered carrier. Products retain joint coordinates, sums retain held origin, and functorial or natural "
         "structure is admitted by replayable path-preservation witnesses."
     ),
+    "SFT-MATH-EXACT-RELATIONS-002": (
+        "This reconstruction joins the relation laws that V1/V2 stated separately. Ratio is a common-refinement "
+        "identity; separation is a positive shorter part with held orientation; reciprocal composition returns the "
+        "One; the m-fold threshold is its unique complement; and finite cycles return jointly at the least common "
+        "period. The result is stronger than a table because adding one cycle extends the same return certificate."
+    ),
+    "SFT-MATH-ORBIT-NUMBER-THEORY-002": (
+        "Number theory appears here as Fold dynamics, not as imported doctrine. Returning p/q after k Folds and "
+        "requiring the binary generator to have order k modulo the reduced odd denominator are literally the same "
+        "remainder identity. That identity forces the cyclotomic partition, prime-period divisor law and exact binary "
+        "transient depth. The Artin and asymptotic prime questions remain visible boundaries rather than inherited claims."
+    ),
+    "SFT-MATH-LIMIT-CONTINUUM-002": (
+        "The theorem distinguishes an indefinitely extendable procedure from an already completed infinite object. "
+        "Every reached rung is finite, exact and positive, and every rung has a lawful successor. Convergence is carried "
+        "by nested rational bounds and shrinking exact errors. The continuum can describe that open-ended refinement at "
+        "correspondence, but cannot enter the derivation as an ungenerated container or answer-producing cardinality."
+    ),
+    "SFT-MATH-ALGEBRAIC-BALANCE-002": (
+        "The no-irrational rule does not erase algebraic geometry or spectral magnitude. It changes the proof object. "
+        "Instead of storing an irrational scalar, SFT stores the exact equality of two positive polynomial sides and a "
+        "rational bracket whose order reverses. Exact bisection narrows the enclosure, while Vieta identities cross-check "
+        "whole root families. The object is its replayable balance certificate, never a rounded decimal."
+    ),
+    "SFT-MATH-BOUNDED-N-BODY-002": (
+        "The n-body theorem is exact for the model V1/V2 actually names: a finite tuple of rational states advanced "
+        "componentwise by Fold. Each component has a finite transient and odd-core cycle; their product is finite and its "
+        "first joint return is the least common period. This does not swap in continuum Newtonian dynamics after the fact. "
+        "It demonstrates precisely how the SFT native dynamics makes every finite tuple replayable and recurrent."
+    ),
+    "SFT-MATH-FLOORED-FLUID-REGULARITY-002": (
+        "Regularity is forced from two structural bounds: velocity separation cannot exceed the One and lattice spacing "
+        "cannot fall below its declared positive rung. Their exact quotient is b^k at depth k, giving 32 at depth five. "
+        "The number is therefore not an artificial CFD stabilizer. The paper keeps the categorical distinction between "
+        "this depth-independent Fold-lattice theorem and the separate classical continuum Millennium problem."
+    ),
+    "SFT-MATH-PRIME-PAIR-CENSUS-002": (
+        "This is a genuine exhaustive empirical proof over a frozen finite mathematical population. Every one of 4,999 "
+        "even wholes is generated, every complement is checked and every prime status is independently recomputed. The "
+        "result has zero failures and the twin census is exactly 205. Its strength comes from total declared coverage, "
+        "not from pretending that a boundary of 10,000 proves an unrestricted conjecture."
+    ),
+    "SFT-MATH-RIEMANN-MIRROR-002": (
+        "The complement involution has exactly one fixed point: the half-One. That is the forced SFT mirror corresponding "
+        "to the one-half axis of the classical functional equation. An unfavorable control constructs an off-axis symmetric "
+        "pair, proving that symmetry alone cannot locate all members of a symmetric set. This preserves the strongest "
+        "detailed V1 statement: prime-orbit structure and the mirror close, while classical complex zero location does not."
+    ),
+    "SFT-MATH-COLLATZ-FINITE-CENSUS-002": (
+        "All starts through 100,000 execute and reach the 1-4-2 cycle; start 27 takes 111 steps. Crucially, V3 also tests "
+        "the explanation attached to the old count. Start three maps to five after the first required halving, so a constant "
+        "three-quarter pointwise contraction is false. The engine retains the exact census and records the failed shortcut, "
+        "showing how clean-room reconstruction can strengthen a result without rewriting its evidential history."
+    ),
+    "SFT-MATH-SELF-SIMILAR-CONVERGENCE-002": (
+        "One Fold doubles an uncast local gap and closes one binary predecessor label. The same successor forces m^d support, "
+        "selects the unit rank exponent from the declared whole-exponent grammar, and gives exact rational convergence rates. "
+        "Finite accumulated separation is proved by partial sums and a rational tail bracket; no logarithm, exponential or "
+        "irrational limit value has to be smuggled into the proof language."
+    ),
 }
 
 
@@ -109,6 +169,11 @@ def load_json(path: Path):
 
 def line(text: str = "") -> str:
     return text + "\n"
+
+
+def publication_text(text: str) -> str:
+    """Normalize compact machine-bound range notation for academic prose."""
+    return text.replace("4..10,000", "4 through 10,000").replace("starts 1..100,000", "starts One through 100,000")
 
 
 def build() -> str:
@@ -121,9 +186,9 @@ def build() -> str:
     add(line("**Maria Smith**<br>"))
     add(line("Independent researcher and founder, Ernos Labs<br>"))
     add(line("Maria.Smith.Sftoe@gmail.com<br>"))
-    add(line("23 July 2026"))
+    add(line("24 July 2026"))
     add(line())
-    add(line("Mathematics Branch Paper 001 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
+    add(line("Mathematics Branch Paper 001 - Version 1.1 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
     add(line())
     if doi:
         add(line(f"DOI: [{doi}](https://doi.org/{doi})"))
@@ -138,25 +203,27 @@ def build() -> str:
     add(line())
     add(line(
         "This paper reports the completed Mathematics branch of the third clean-room reconstruction of Smithian "
-        "Fold Theory (SFT). Starting only from the ten model-admitted Foundation receipts, it derives exact "
+        "Fold Theory (SFT). Starting only from the sixteen model-admitted Foundation receipts, it derives exact "
         "arithmetic and number structure; discrete mathematics; combinatorics; graph and network theory; algebraic "
         "structures; order and lattice structure; finite computational geometry and topology; exact probability "
         "and statistics; optimization; finite dynamical systems; logic and proof theory; and category, type and "
-        "compositional structure. No conventional mathematical axiom system, semantic numerical zero, negative "
+        "compositional structure. It then reconciles all Mathematics-owned V1/V2 observations through exact relation "
+        "composition, Fold number theory, potential infinity, algebraic-balance certificates, native n-body recurrence, "
+        "floored-fluid regularity, bounded prime-pair and Collatz censuses, the Riemann mirror boundary and self-similar "
+        "convergence. No conventional mathematical axiom system, semantic numerical zero, negative "
         "quantity, irrational or imaginary proof value, floating-point proof quantity, completed infinity, "
         "ungenerated continuum, stochastic cause, fitted parameter, pretrained model or application result is "
         "admitted as a premise."
     ))
     add(line())
     add(line(
-        f"The twelve claim grammars execute {candidate_total:,} generated candidate structures. Every generated "
+        f"The twenty-two claim grammars execute {candidate_total:,} generated candidate structures. Every generated "
         "candidate receives an exact decision; each grammar has exactly one all-preserving survivor. Every claim "
         "passes minimality, named-shape uniqueness, a depth-independent base/successor certificate, false-premise, "
         "source-tamper, artifact-tamper and boundary controls, cryptographic sealing and implementation-distinct "
-        "recomputation. The branch therefore contains twelve depth-independently closed, model-admitted and "
-        "independently replicated engine receipts. A complete repository verification currently passes 111 unit "
-        "and end-to-end tests, observes 1,264 of 1,264 executable core-engine lines and independently reruns all 22 "
-        "admitted Foundation and Mathematics derivations in dependency order."
+        "recomputation. The branch therefore contains twenty-two depth-independently closed, model-admitted and "
+        "independently replicated engine receipts. The complete 763-entry V1/V2 source surface is reviewed for categorical "
+        "ownership; 71 atomic Mathematics obligations are reconstructed or explicitly corrected, with none left open."
     ))
     add(line())
     add(line(
@@ -176,14 +243,14 @@ def build() -> str:
     add(line("The exact claim of this paper is:"))
     add(line())
     add(line(
-        "> Within the frozen SFT V3 Mathematics current-knowledge inventory, every one of the twelve registered "
+        "> Within the frozen SFT V3 Mathematics current-knowledge inventory, every one of the twenty-two registered "
         "mathematical-foundation obligations has a depth-independent, model-admitted and independently replicated "
         "engine receipt; the inventory contains no unclassified or frontier obligation."
     ))
     add(line())
     add(line(
         f"The inventory identity is `{INVENTORY_HASH}`. It fixes the branch boundary and claim order before the "
-        "paper is evaluated. Branch closure means closure of these twelve general generated-finite mathematical "
+        "paper is evaluated. Branch closure means closure of these twenty-two generated-finite mathematical "
         "kernels. It does not assert a completed infinite universe or permit a familiar named structure to inherit "
         "properties without its own generated witness. Applications in computation, physics, biology, engineering, "
         "Fold Protein, Fold Chess, Fold Go and Unison AI did not select any law in this paper."
@@ -193,9 +260,10 @@ def build() -> str:
     add(line())
     add(line(
         "This paper is standalone in exposition but not dependency-free in the scientific census. The prior "
-        "Foundation branch supplies ten exact receipts: operational occurrence, structural One, complete positive "
-        "finite count, exact held/whole part coordinates, the minimal Fold, cross-partition part equivalence, Fold "
-        "assembly, finite form grammar, canonical form identity and the one-way measurement boundary. Those are "
+        "Foundation branch supplies sixteen exact receipts, including operational occurrence, structural One, complete "
+        "positive finite count, exact held/whole part coordinates, the minimal Fold, cross-partition equivalence, Fold "
+        "assembly, finite form grammar, canonical identity, exact cast/Fold/Take, half-One, Fold dynamics, extended "
+        "primitive-map uniqueness, root-bound replay, admission enforcement and the one-way measurement boundary. Those are "
         "cited as admitted dependencies, not copied assumptions. The published Foundation paper remains a separate "
         "work and is not modified by this paper."
     ))
@@ -258,7 +326,7 @@ def build() -> str:
     for index, spec in enumerate(SPECS, 1):
         add(line(f"| {index} | `{spec.claim_id}` | {2 ** len(spec.dimensions):,} | {len(spec.dimensions)} | depth-independent |"))
     add(line())
-    add(line(f"The Mathematics total is **{candidate_total:,}** generated structures and twelve survivors. The full V3 census, including the ten Foundation claims, contains 22 admitted derivations and 9,874 generated candidate structures across the two complete branches."))
+    add(line(f"The Mathematics total is **{candidate_total:,}** generated structures and twenty-two survivors. Foundation plus Mathematics contain 38 admitted derivations and 15,206 generated candidate structures across the two closed branches."))
     add(line())
     add(line(
         "The finite product count reports representation classes executed by the registered claim grammars. It is "
@@ -307,7 +375,7 @@ def build() -> str:
         add(line())
         add(line(f"### {section}.3 Unique survivor, minimality and laws"))
         add(line())
-        add(line(f"> {spec.exact_result}"))
+        add(line(f"> {publication_text(spec.exact_result)}"))
         add(line())
         add(line(
             "Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its "
@@ -373,10 +441,47 @@ def build() -> str:
         section += 1
 
     add(line())
+    add(line(f"## {section}. Complete V1/V2 Mathematics reconciliation"))
+    add(line())
+    add(line(
+        "The clean-room rule does not permit the new branch boundary to make an older result disappear. The audit reads "
+        "all 356 V1 theorem-manifest rows and all 407 V2 numbered results as observational reconstruction requirements, "
+        "decomposes composite rows into atomic scientific obligations and assigns each atomic obligation to exactly one "
+        "categorical owner. Prior executables and answer artifacts never enter the V3 derivation runtime."
+    ))
+    add(line())
+    add(line(
+        "The Mathematics ledger identifies 71 owned atomic obligations across 29 V1 rows and 38 V2 steps. Every atom maps "
+        "to one or more of the twenty-two admitted receipts and every mapping is closed. The remaining 327 V1 rows and 369 "
+        "V2 steps are recorded in an exact exclusion identity as reviewed non-Mathematics entries, not silently ignored. The "
+        "authoritative file is `census/mathematics_prior_obligations.json`."
+    ))
+    add(line())
+    add(line("| Reconciliation result | Exact outcome |"))
+    add(line("|---|---:|"))
+    add(line("| V1 rows reviewed | 356 |"))
+    add(line("| V2 numbered results reviewed | 407 |"))
+    add(line("| Mathematics atomic obligations | 71 |"))
+    add(line("| Closed Mathematics atomic obligations | 71 |"))
+    add(line("| Open Mathematics atomic obligations | 0 |"))
+    add(line("| Explicit corrections or invalidations retained | 4 |"))
+    add(line())
+    add(line(
+        "Four explicit reconciliation outcomes deserve front-page visibility because they demonstrate that V3 is neither a "
+        "rubber stamp nor a historical rewrite. First, old signed and zero host storage is retained as implementation history "
+        "but replaced at the admitted boundary by held orientation and structural empty One. Second, V1's detailed Riemann "
+        "statement governs: the prime skeleton and unique reflection axis close, while an unrestricted complex-zero theorem "
+        "does not arise from symmetry alone. Third, the prior constant-three-quarter Collatz shortcut fails the start-three "
+        "control even though the complete 100,000-start census succeeds. Fourth, the depth-five fluid value 32 is derived as "
+        "One divided by the positive floor, not installed as numerical damping. Physical interpretations of formal rational "
+        "thresholds remain assigned to their empirical owning branches rather than feeding back into Mathematics."
+    ))
+    section += 1
+    add(line())
     add(line(f"## {section}. Cross-derivation synthesis"))
     add(line())
     add(line(
-        "The twelve theorems form one dependency chain rather than a list of renamed fields. Exact arithmetic gives "
+        "The twenty-two theorems form one dependency chain rather than a list of renamed fields. Exact arithmetic gives "
         "lawful trace junction, pair-cell product, refinement and comparison. Discrete mathematics turns those operations "
         "into canonical carriers, selections, relations, maps and induction. Combinatorics then generates complete "
         "families of choices; graph theory holds a relation from complete pair support and promotes it to path, cycle, "
@@ -398,6 +503,15 @@ def build() -> str:
         "axiom used to select arithmetic. Because probability is downstream of complete deterministic support, it cannot "
         "install an ontic random cause in the earlier state law. Because geometry is finite incidence before continuum "
         "correspondence, an irrational coordinate cannot retroactively become foundational proof evidence."
+    ))
+    add(line())
+    add(line(
+        "The ten lineage reconstructions then make the archived named claims explicit. Relation composition supplies the "
+        "beat and joint-return laws; the same remainder identity unifies Fold orbit and multiplicative order; exact finite "
+        "successor traces separate potential infinity from a completed continuum; polynomial balance retains algebraic "
+        "magnitude without irrational proof values; finite product support closes native n-body recurrence; reciprocal-floor "
+        "geometry closes native fluid regularity; complete bounded censuses establish their declared populations; and adverse "
+        "controls prevent Riemann symmetry or Collatz heuristics from being inflated beyond what the execution establishes."
     ))
     section += 1
     add(line())
@@ -455,7 +569,7 @@ def build() -> str:
     add(line(f"## {section}. Formal proof versus empirical validation"))
     add(line())
     add(line(
-        "These twelve claims are formal structural theorems. Their empirical content is computational execution: the "
+        "These twenty-two claims are formal structural theorems or exhaustive finite mathematical censuses. Their empirical content is computational execution: the "
         "candidate products are actually generated, decisions actually run, controls are deliberately perturbed, separate "
         "validator processes execute and receipts are independently replayed. This execution evidence demonstrates that "
         "the declared finite grammars and certificates have the reported machine behavior. It is not observational evidence "
@@ -488,14 +602,14 @@ def build() -> str:
         "independent validator and compares each new receipt byte-for-structure with the admitted stored receipt."
     ))
     add(line())
-    add(line("The verified local report for this paper is:"))
+    add(line("The proportionate local report for this successor paper is:"))
     add(line())
     add(line("```text"))
-    add(line("SFT COMPLETE VERIFICATION: PASS"))
-    add(line("unit and end-to-end tests passed: 111"))
-    add(line("core engine executable-line coverage: 1264/1264 (100%)"))
-    add(line("core engine modules covered: 15"))
-    add(line("registered derivations independently rerun: 22"))
+    add(line("MATHEMATICS PRIOR-OBLIGATION LEDGER: 71/71 CLOSED"))
+    add(line("MATHEMATICS MODEL-ADMITTED CLAIMS: 22/22"))
+    add(line("MATHEMATICS GENERATED CANDIDATES: 9,984"))
+    add(line("NEW SUCCESSOR CLAIMS OFFICIALLY ADMITTED: 10/10"))
+    add(line("BRANCH PUBLICATION GATE: run once after final render"))
     add(line("```"))
     add(line())
     add(line(
@@ -563,15 +677,55 @@ def build() -> str:
     add(line(f"## {section}. Open-science status, rights and participation"))
     add(line())
     add(line(
+        "Mathematical validity must not depend on whether an institution funded the question, whether a journal selected it, "
+        "whether a reviewer recognizes the author's credential, or whether a prevailing programme finds the conclusion "
+        "comfortable. A proof either exposes a lawful chain at its declared boundary or it does not. Institutional review can "
+        "supply valuable criticism, but it cannot substitute for generated completeness, unique survival, exact witnesses and "
+        "a reproducible certificate. The same rule binds Maria Smith, Ernos Labs, universities, publishers and anonymous critics."
+    ))
+    add(line())
+    add(line(
+        "This positioning is not rhetoric detached from evidence. Sponsor-associated outcome differences and sponsor influence "
+        "on research agendas are documented; grant-review studies report limited agreement, panel sensitivity and unequal "
+        "outcomes; a Cochrane review found insufficient evidence that grant peer review improves funded-research quality; and "
+        "null or negative results remain underrepresented in visible literatures. UNESCO's Recommendation on Open Science "
+        "identifies paywalls and high publication charges as sources of inequality and calls for methods, software, source code "
+        "and outputs to be available for scrutiny. These findings do not accuse every institution or reviewer of misconduct. "
+        "They establish that prestige, funding and publication are selection systems with incentives and failure modes, not "
+        "neutral certificates of mathematical truth."
+    ))
+    add(line())
+    add(line(
+        "The exclusion cost is intellectual as well as economic. Scarce grants, credential filters, prestige markets, subscription "
+        "access and author charges shape who can devote time to a problem, which problems appear respectable, what enters the "
+        "searchable record and who can inspect it. Maria Smith developed SFT outside conventional academic education and funding. "
+        "That fact is not evidence that any theorem is correct. It is an indictment of a gate that would have treated the speaker's "
+        "status as a proxy for whether the work deserved to be heard. The unknown number of minds and questions lost to that proxy "
+        "is precisely why admission here attaches to public evidence rather than biography."
+    ))
+    add(line())
+    add(line(
+        "Opaque computational prediction reproduces the same authority problem in machine form. A hidden model can be a useful "
+        "instrument and may establish bounded predictive reliability in a genuinely blind trial. A score alone does not reveal "
+        "the premises, candidate space, exclusions, leakage path, failure boundary or derivation of a law. NIST treats validity, "
+        "reliability, transparency, accountability, explainability and interpretability as related features of trustworthy AI. "
+        "For formal mathematics, an oracle answer is therefore never a proof; for empirical science, blindness and transparency "
+        "must coexist. The target stays closed until the law seals, and the full source-to-result route remains inspectable afterward."
+    ))
+    add(line())
+    add(line(
         "The scientific platform is openly inspectable, reusable and redistributable under its published licences. Maria "
-        "Smith retains copyright and authorship. Paper and documentation text is CC BY 4.0; code is Apache-2.0. The Ernos "
-        "Labs designation is a separate conformance mark requiring adherence to the scientific constitution, transparent "
-        "evidence, fail-closed engine rules and community conduct policy."
+        "Smith retains copyright and authorship; that preserves attribution and does not close the knowledge. Paper and documentation "
+        "text is CC BY 4.0 and code is Apache-2.0, permitting copying, forking, testing, modification, redistribution and criticism "
+        "under their terms. The Ernos Labs designation is a separate conformance mark requiring the published scientific constitution, "
+        "transparent evidence, fail-closed engine rules and community conduct policy."
     ))
     add(line())
     add(line(
         "Credentials cannot rescue a failed gate, and lack of credentials cannot prevent a reproducible criticism from "
-        "being evaluated. Independent replications, omissions, counterexamples and submissions are invited through "
+        "being evaluated. Scientific authority is narrower than authorship: it is a currently accepted receipt at an explicit "
+        "boundary and is revoked when a broken dependency, omitted candidate, second survivor, failed control or contradictory "
+        "complete census is reproduced. Independent replications, omissions, counterexamples and submissions are invited through "
         "Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr."
     ))
     section += 1
@@ -579,8 +733,8 @@ def build() -> str:
     add(line(f"## {section}. Conclusion"))
     add(line())
     add(line(
-        f"The Mathematics branch closes twelve dependency-ordered kernels through {candidate_total:,} generated alternatives, "
-        "twelve unique survivors, twelve depth-independent certificates and twelve implementation-distinct validations. "
+        f"The Mathematics branch closes twenty-two dependency-ordered kernels through {candidate_total:,} generated alternatives, "
+        "twenty-two unique survivors, twenty-two depth-independent certificates and twenty-two implementation-distinct validations. "
         "It reconstructs exact arithmetic, finite discrete and combinatorial structure, relations and graphs, witnessed "
         "algebra and order, computational geometry and topology, deterministic-support probability, optimization, dynamics, "
         "proof and composition without importing conventional answer-producing models."
@@ -635,11 +789,19 @@ def build() -> str:
     add(line())
     add(line("## References"))
     add(line())
-    add(line("1. Smith M. *From Nothing to Fold: A Premise-Free, Parameter-Free and Machine-Closed Foundation for Smithian Fold Theory*. Ernos Labs Foundation Branch Paper 001. 2026. doi:10.5281/zenodo.21515629."))
+    add(line("1. Smith M. *From Nothing to Fold: A Premise-Free, Parameter-Free and Machine-Closed Foundation for Smithian Fold Theory*. Ernos Labs Foundation Branch Paper 001, version 1.1. 2026. doi:10.5281/zenodo.21535636."))
     add(line("2. Smith M. *Smithian Fold Theory Scientific Constitution*. V3 clean-room repository, `CONSTITUTION.md`, 2026."))
     add(line("3. Ernos Labs. *The Single SFT Admission Engine*. V3 clean-room repository, `docs/ENGINE_AUTHORITY.md`, 2026."))
     add(line("4. Ernos Labs. *Comprehensive Branch-Paper Protocol*. V3 clean-room repository, `publications/BRANCH_PAPER_PROTOCOL.md`, 2026."))
     add(line("5. Ernos Labs. *Mathematics Frozen Current-Knowledge Inventory*. V3 clean-room repository, `publications/inventories/mathematics.json`, 2026."))
+    add(line("6. Lundh A, Lexchin J, Mintzes B, Schroll JB, Bero L. Industry sponsorship and research outcome. *Intensive Care Medicine*. 2018. doi:10.1007/s00134-018-5293-7."))
+    add(line("7. Fabbri A, Lai A, Grundy Q, Bero LA. The influence of industry sponsorship on the research agenda. *American Journal of Public Health*. 2018. PMID:30252531."))
+    add(line("8. Gallo SA et al. Reliability and fairness in peer review of research funding. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/."))
+    add(line("9. Demicheli V, Di Pietrantonj C. Peer review for improving the quality of grant applications. *Cochrane Database of Systematic Reviews*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/."))
+    add(line("10. *Toward more published null and negative results*. *Nature Communications*. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/."))
+    add(line("11. UNESCO. *Recommendation on Open Science*. 2021. https://www.unesco.org/en/legal-affairs/recommendation-open-science."))
+    add(line("12. National Institute of Standards and Technology. *AI Risk Management Framework 1.0*. https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/."))
+    add(line("13. Heil BJ et al. Reproducibility standards for machine learning in the life sciences. *Nature Methods*. 2021. doi:10.1038/s41592-021-01256-7."))
     return "".join(parts)
 
 
