@@ -64,11 +64,14 @@ published at DOI `10.5281/zenodo.21518311` and DOI
 - [x] Fluids, plasmas and condensed structures.
 - [x] Physics-to-Astronomy/Cosmology boundary.
 
-The Physics inventory is frozen complete with 132 required and eight
+The published Physics v1 inventory is frozen at 132 required and eight
 supplemental admitted claims, 35,840 generated candidates and fourteen exact
-measured-value correspondences. Its exhaustive 331-page paper and evidence
-release are published at DOI `10.5281/zenodo.21520881`. Every natural-science
-claim follows the empirical constitution where observation is required.
+measured-value relation checks. Its 331-page paper and evidence release are
+published at DOI `10.5281/zenodo.21520881`. Sixteen later Physics admissions,
+including the inverse fine-structure value and its post-seal CODATA check, make
+that paper an immutable earlier version rather than the current complete
+branch. A full prior-observation value/discriminator audit blocks the Physics
+successor and every later final-TOE completion claim.
 
 ## Phase F - chemistry, materials and life
 

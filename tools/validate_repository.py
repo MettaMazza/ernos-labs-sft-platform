@@ -37,9 +37,13 @@ REQUIRED_FILES = (
     "docs/PORTABILITY.md",
     "docs/VERIFICATION.md",
     "docs/V4_SELF_HOSTED_REBUILD.md",
+    "governance/AMENDMENT_2026-07-24_PRIOR_OBSERVATIONS.md",
     "census/claims.json",
     "census/execution_manifest.json",
     "census/branches.json",
+    "audits/v1_theorem_manifest_observation_census.json",
+    "audits/v2_407_step_observation_census.json",
+    "audits/physics_prior_value_audit_2026-07-24.json",
     "governance/claim.schema.json",
     "governance/engine_policy.json",
     "governance/engine_receipt.schema.json",
@@ -167,6 +171,32 @@ def validate() -> list[str]:
         branch_ids = [branch.get("branch_id") for branch in branch_census.get("branches", [])]
         if not branch_ids or len(set(branch_ids)) != len(branch_ids):
             errors.append("branch census must contain unique registered branches")
+
+    prior_path = ROOT / "prior-work-ledger/manifest.json"
+    if prior_path.is_file():
+        prior = json.loads(prior_path.read_text(encoding="utf-8"))
+        if prior.get("observational_authority") is not True:
+            errors.append("prior SFT work must be registered as observational authority")
+        if prior.get("prior_results_must_be_registered_before_reconstruction") is not True:
+            errors.append("prior SFT results must define reconstruction obligations")
+        if prior.get("answer_artifacts_permitted_in_v3_derivation_runtime") is not False:
+            errors.append("prior answer artifacts must remain excluded from V3 derivation")
+
+    v1_path = ROOT / "audits/v1_theorem_manifest_observation_census.json"
+    if v1_path.is_file():
+        v1 = json.loads(v1_path.read_text(encoding="utf-8"))
+        rows = v1.get("rows", [])
+        if v1.get("source_row_count") != 356 or len(rows) != 356:
+            errors.append("V1 observational census must retain all 356 theorem-manifest rows")
+        if len({row.get("v1_claim_id") for row in rows}) != len(rows):
+            errors.append("V1 observational census claim identities must be unique")
+
+    v2_path = ROOT / "audits/v2_407_step_observation_census.json"
+    if v2_path.is_file():
+        v2 = json.loads(v2_path.read_text(encoding="utf-8"))
+        steps = v2.get("steps", [])
+        if [row.get("step") for row in steps] != list(range(1, 408)):
+            errors.append("V2 observational census must retain steps 1 through 407 once and in order")
 
     return errors
 

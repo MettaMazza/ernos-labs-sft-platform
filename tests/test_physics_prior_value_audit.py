@@ -1,0 +1,84 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+import sys
+import unittest
+
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+
+class PhysicsPriorValueAuditTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.audit = json.loads(
+            (ROOT / "audits/physics_prior_value_audit_2026-07-24.json").read_text()
+        )
+
+    def test_published_and_live_physics_surfaces_are_not_conflated(self) -> None:
+        self.assertEqual(self.audit["published_physics_claim_count"], 140)
+        self.assertEqual(self.audit["current_physics_claim_count"], 156)
+        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 16)
+
+    def test_inverse_alpha_is_owned_by_physics_and_missing_from_v1_paper(self) -> None:
+        alpha = self.audit["inverse_alpha"]
+        self.assertEqual(alpha["owning_branch"], "physics")
+        self.assertFalse(alpha["published_physics_v1_contains_claim"])
+        self.assertTrue(alpha["categorical_publication_failure"])
+
+    def test_relation_checks_are_not_called_forced_absolute_values(self) -> None:
+        values = self.audit["published_numeric_correspondence_classification"]
+        self.assertEqual(values["reported_count"], 14)
+        self.assertEqual(values["measured_input_relation_checks"], 13)
+        self.assertEqual(values["measured_interval_cross_analysis_checks"], 1)
+        self.assertEqual(values["root_forced_absolute_external_values"], 0)
+
+    def test_audit_blocks_materials_resumption(self) -> None:
+        self.assertEqual(self.audit["status"], "open_blocking")
+        self.assertTrue(self.audit["materials_work_paused"])
+
+    def test_charged_lepton_failed_attempt_is_resolved_without_erasure(self) -> None:
+        row = self.audit["charged_lepton_cubic"]
+        self.assertEqual(row["formal_status"], "independently_replicated")
+        self.assertEqual(row["candidate_count"], 2304)
+        self.assertEqual(row["empirical_validation_status"], "resolved_by_terminal_refinement")
+        self.assertTrue(row["same_strength_prior_disposition_closed"])
+        self.assertEqual(row["terminal_provenance"], "observational_derivation")
+        self.assertEqual(
+            row["terminal_admission_receipt_hash"],
+            "sha256:c74f9c45eab7c232ebf85fe2fd5aea24f07d167df3857dad50ffcc5c34732294",
+        )
+        self.assertEqual(
+            row["koide_validation_receipt_hash"],
+            "sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9",
+        )
+
+    def test_charged_lepton_failure_is_preserved_outside_the_model(self) -> None:
+        failure = json.loads(
+            (ROOT / "audits/physics_charged_lepton_empirical_failure.json").read_text()
+        )
+        self.assertEqual(failure["halted_stage"], "empirical_validation")
+        self.assertFalse(failure["comparison"]["all_rows_passed"])
+        self.assertFalse(failure["comparison"]["muon_electron"]["overlap"])
+        self.assertFalse(failure["comparison"]["muon_tau"]["overlap"])
+        census = json.loads((ROOT / "census/claims.json").read_text())
+        self.assertNotIn(
+            "SFT-PHYS-VALIDATION-CHARGED-LEPTON-CUBIC-001",
+            {claim["claim_id"] for claim in census["claims"]},
+        )
+
+    def test_physics_successor_publication_gate_fails_closed(self) -> None:
+        from tools.verify_physics_successor_gate import blockers
+
+        failures = blockers()
+        self.assertTrue(failures)
+        self.assertTrue(any("V1 observations" in failure for failure in failures))
+        self.assertTrue(any("V2 steps" in failure for failure in failures))
+        self.assertTrue(any("inverse alpha" in failure for failure in failures))
+
+
+if __name__ == "__main__":
+    unittest.main()

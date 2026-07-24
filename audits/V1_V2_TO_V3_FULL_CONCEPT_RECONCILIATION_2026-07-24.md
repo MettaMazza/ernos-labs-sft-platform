@@ -3,6 +3,12 @@
 Date: 2026-07-24
 Status: open and blocking; this audit admits no theorem
 
+**Current publication correction.** The Chemistry status paragraph below was a
+snapshot taken before publication. Chemistry is now published at DOI
+`10.5281/zenodo.21531455`, and Materials is published at DOI
+`10.5281/zenodo.21532482`. This status correction does not alter any derivation
+finding or receipt.
+
 ## Binding correction
 
 No result recorded as forced in the V1 or V2 Smithian Fold Theory corpus may be
@@ -85,14 +91,12 @@ alternative; pass a no-gain control and a deliberately incomplete ledger; then
 seal a discriminator before opening external measurements. The engine must halt
 on any unpaired carrier or unreturned state.
 
-## Chemistry publication state
+## Chemistry publication state at the initial audit snapshot
 
-No Chemistry paper has yet been published. There is no Chemistry manuscript
-under `publications/current`, no Chemistry release bundle under
-`output/release`, and no Chemistry GitHub release. The local branch is now
-86/86 and its elements/nuclear/island-of-stability lineage group is closed.
-Chemistry is eligible for manuscript construction, focused replay and the
-standalone paper/release verifier. Other open lineage groups remain blocking
+At the initial audit snapshot no Chemistry paper had yet been published. The
+subsequent authorized publication is recorded at DOI
+`10.5281/zenodo.21531455`, with its current release receipt under
+`publication/chemistry_release.json`. Other open lineage groups remain blocking
 for their own branches and the final TOE paper.
 
 ## What this audit changes

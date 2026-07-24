@@ -1,4 +1,4 @@
-"""Project an admitted formal claim into its complete machine-evidence package."""
+"""Project an admitted claim into its complete machine-evidence package."""
 
 from __future__ import annotations
 
@@ -48,6 +48,7 @@ def main() -> None:
     receipt = EngineRepository(ROOT).engine.run(
         execution.program,
         Capture(),
+        execution.empirical_validator,
         executed_source_hash=build_source_manifest(
             ROOT, execution.source_files
         ).manifest_hash,
@@ -77,6 +78,7 @@ def main() -> None:
             "independent_certificate_hash": external.certificate_hash,
             "derivation_seal_hash": sealed.seal_hash,
             "external_validation_hash": receipt.external_validation_hash,
+            "empirical_validation_hash": receipt.empirical_validation_hash,
             "engine_receipt_hash": receipt.receipt_hash,
             "engine_receipt_path": row["receipt_path"],
             "exact_result": args.exact_result,

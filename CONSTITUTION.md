@@ -54,7 +54,12 @@ cannot flow into derivation.
 
 Consensus equations, conventional mathematical models, trained weights,
 fitted parameters, benchmark answers and earlier SFT outputs cannot select an
-SFT law.
+SFT law. Earlier SFT results are nevertheless admissible and mandatory as
+observational records of what the clean reconstruction must attempt to
+reproduce or invalidate. Their stated questions, results, values, scopes and
+falsifiers populate the V3 reconciliation census before derivation begins;
+their code, certificates and answer-bearing artifacts remain excluded from the
+V3 proof runtime and candidate selector.
 
 Historical and conventional theories belong in `correspondence/` after an SFT
 result has been independently derived. Correspondence may compare meanings,
@@ -173,10 +178,21 @@ their fresh rebuilds are separately authorized.
 
 ## 11. Replication and earlier corpora
 
-Earlier repositories and papers are preserved as provenance and comparison
-objects. V3 must not import their generated code, certificates or answer files.
-The corresponding earlier result is opened for reconciliation only after a v3
-result has sealed.
+Earlier repositories and papers are preserved as provenance, observational and
+comparison objects. V3 must not import their generated code, certificates or
+answer files into a derivation. Every result previously stated as forced must,
+however, be registered openly before reconstruction with its earlier statement,
+value where present, scope, branch and falsification surface. This prior
+observation is allowed to choose the question and completeness obligation; it
+is not allowed to choose the V3 candidate grammar, eliminator or survivor.
+
+The V3 execution route remains answer-isolated: it consumes only the
+foundational theorem, admitted V3 dependencies and registered non-answering
+structural inputs. Comparison with the openly registered prior result occurs
+after the new result and its controls seal. Human knowledge of the earlier
+answer is not misrepresented as blindness; independence is established by the
+machine dependency boundary, complete enumeration, adverse controls and an
+implementation-distinct certificate.
 
 Agreement, representation-equivalence, stronger closure, weaker closure and
 disagreement are all reportable outcomes. Disagreement is preserved and

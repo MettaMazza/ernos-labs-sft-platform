@@ -220,6 +220,7 @@ class StructuralPhysicsSpec:
     induction_step: str
     exclusions: tuple[str, ...]
     witnesses: tuple[Witness, ...]
+    provenance: tuple[ProvenanceClass, ...] = (ProvenanceClass.FORWARD_FORCING,)
 
     def validate(self) -> None:
         if not self.claim_id.startswith("SFT-PHYS-"):
@@ -331,7 +332,7 @@ class StructuralPhysicsProgram:
             dependencies=self.spec.dependencies,
             axioms=(),
             free_parameters=(),
-            provenance=(ProvenanceClass.FORWARD_FORCING,),
+            provenance=self.spec.provenance,
             source_hash=self.source_hash,
         )
 

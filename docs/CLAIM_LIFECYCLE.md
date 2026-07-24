@@ -65,5 +65,12 @@ A reviewer must be able to answer yes to all applicable questions:
 8. Do adverse controls fail as registered?
 9. Does an independent certificate recompute the result?
 10. Is the claim wording no broader than its evidence?
+11. Is every relevant V1/V2 result registered as a prior observation and given
+    an explicit V3 disposition?
+12. If the claim emits a physical value, was that value forced and sealed
+    independently of external measurement rather than merely computed from
+    measured inputs?
+13. Is the result registered in its categorically owning branch before a
+    downstream branch consumes or publishes it?
 
 If any applicable answer is no, the claim is not admitted at that status.

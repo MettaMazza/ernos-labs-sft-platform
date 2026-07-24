@@ -59,13 +59,35 @@ class LineageReconciliationTests(unittest.TestCase):
             law["missing_mapping_status"],
             "blocking_v3_reconstruction_required",
         )
+        self.assertTrue(law["prior_results_are_observational_data"])
+        self.assertTrue(law["prior_results_must_be_registered_before_reconstruction"])
+        self.assertFalse(law["prior_answer_artifacts_may_enter_v3_derivation_runtime"])
         self.assertFalse(self.registry["v2_step_census"]["current_complete_step_to_claim_map"])
+        self.assertEqual(self.registry["v2_step_census"]["observed_count"], 407)
+        self.assertEqual(self.registry["v2_step_census"]["explicitly_mapped_steps"], 116)
+        self.assertEqual(self.registry["v2_step_census"]["unmapped_steps"], 291)
+        self.assertFalse(self.registry["v1_manifest_census"]["current_complete_row_to_claim_map"])
+        self.assertEqual(self.registry["v1_manifest_census"]["observed_rows"], 356)
+        self.assertEqual(self.registry["v1_manifest_census"]["unmapped_rows"], 356)
         self.assertEqual(self.registry["status"], "open_blocking")
         prior = json.loads((ROOT / "prior-work-ledger/manifest.json").read_text())
         self.assertTrue(prior["mandatory_reconciliation_authority"])
+        self.assertTrue(prior["observational_authority"])
+        self.assertTrue(prior["prior_results_must_be_registered_before_reconstruction"])
+        self.assertFalse(prior["answer_artifacts_permitted_in_v3_derivation_runtime"])
         self.assertTrue(
             all(row["mandatory_reconciliation_authority"] for row in prior["entries"])
         )
+        self.assertTrue(all(row["observational_authority"] for row in prior["entries"]))
+        self.assertTrue(all(not row["derivational_authority"] for row in prior["entries"]))
+
+    def test_clean_room_registers_prior_answers_without_importing_them(self) -> None:
+        protocol = (ROOT / "docs/CLEAN_ROOM_PROTOCOL.md").read_text()
+        constitution = (ROOT / "CONSTITUTION.md").read_text()
+        self.assertIn("register the earlier question, stated answer or value", protocol)
+        self.assertIn("prevent the answer-bearing artifact", protocol)
+        self.assertIn("observational records", constitution)
+        self.assertIn("not allowed to choose the V3 candidate grammar", constitution)
 
     def test_named_consequence_groups_cover_the_requested_high_risk_omissions(self) -> None:
         rows = {row["group_id"]: row for row in self.registry["named_consequence_groups"]}
@@ -85,13 +107,8 @@ class LineageReconciliationTests(unittest.TestCase):
         self.assertIn("net extractable-work accounting over a complete returned cycle", rows["vacuum_energy_extraction_and_inertia_engineering"]["required_results"])
         self.assertIn("Smithium at Z=126 N=184 A=310", rows["elements_nuclear_structure_and_island_of_stability"]["required_results"])
         self.assertIn("83 gauge carriers", rows["particle_neutrino_dark_sector_and_complete_inventory"]["required_results"])
-        self.assertEqual(
-            rows["elements_nuclear_structure_and_island_of_stability"]["v3_status"],
-            "closed_current_v3_standard",
-        )
-        for group_id, row in rows.items():
-            if group_id != "elements_nuclear_structure_and_island_of_stability":
-                self.assertTrue(row["v3_status"].startswith("blocking_"))
+        for row in rows.values():
+            self.assertTrue(row["v3_status"].startswith("blocking_"))
 
     def test_chemistry_publication_is_fail_closed(self) -> None:
         state = self.registry["publication_state"]
@@ -100,6 +117,8 @@ class LineageReconciliationTests(unittest.TestCase):
         self.assertTrue(state["chemistry_github_release_observed"])
         self.assertTrue(state["chemistry_zenodo_record_observed"])
         self.assertTrue(state["chemistry_publication_permitted"])
+        self.assertTrue(state["materials_publication_permitted_at_recorded_boundary"])
+        self.assertFalse(state["physics_successor_publication_permitted"])
         paper_root = ROOT / "publications/current/chemistry"
         self.assertTrue((paper_root / "FROM_FOLD_TO_CHEMISTRY.md").is_file())
         self.assertTrue((paper_root / "evidence_map.json").is_file())

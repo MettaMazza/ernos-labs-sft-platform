@@ -20,6 +20,18 @@ State exactly which observations exposed the phenomenon or material relation.
 Store their provenance. A relation derived from observation is labelled
 `observational_derivation`, not direct forcing.
 
+Earlier V1/V2 SFT derivations are also observations for reconstruction. Their
+questions, reported results, exact values, domains and falsifiers are registered
+openly so the clean rebuild cannot evade them. This does not make an earlier
+answer a V3 premise: the executable V3 derivation must be structurally unable
+to consume the answer-bearing artifact, and the registered comparison occurs
+only after the independent V3 result seals.
+
+Two empirical protocols must not be conflated. A genuinely new prediction uses
+a withheld target. A reconstruction of a published SFT result cannot claim
+human blindness to that result; it demonstrates independence through dependency
+isolation, complete enumeration, controls and separate certification.
+
 ### Explicit relation
 
 Publish a cold-readable proposed law containing its premises, exact generated

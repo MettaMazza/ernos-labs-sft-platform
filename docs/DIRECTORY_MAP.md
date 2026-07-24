@@ -37,8 +37,9 @@
 ## Boundaries
 
 - `correspondence/` - downstream comparison with historical and consensus work.
-- `prior-work-ledger/` - sealed identity of earlier SFT work for post-seal
-  reconciliation only.
+- `prior-work-ledger/` - sealed identity and mandatory observational census of
+  earlier SFT work; answer artifacts are excluded from derivation execution,
+  while their claims and values define required reconstruction targets.
 - `applications/frontier/` - placeholders for later clean application rebuilds.
 - `publications/` - current and superseded publication artifacts after explicit
   authorization.

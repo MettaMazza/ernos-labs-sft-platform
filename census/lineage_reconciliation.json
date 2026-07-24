@@ -10,7 +10,11 @@
     "missing_mapping_status": "blocking_v3_reconstruction_required",
     "measurement_may_select_a_law": false,
     "application_may_select_a_law": false,
-    "prior_receipts_may_be_rewritten": false
+    "prior_receipts_may_be_rewritten": false,
+    "prior_results_are_observational_data": true,
+    "prior_results_must_be_registered_before_reconstruction": true,
+    "prior_answer_artifacts_may_enter_v3_derivation_runtime": false,
+    "clean_room_meaning": "Complete prior-result accountability with executable derivation independence; not ignorance of the V1/V2 observational record."
   },
   "source_custody": [
     {
@@ -58,7 +62,21 @@
     "missing_step_numbers": [],
     "duplicate_step_numbers": [],
     "every_step_requires_an_explicit_v3_disposition": true,
-    "current_complete_step_to_claim_map": false
+    "current_complete_step_to_claim_map": false,
+    "observation_census": "audits/v2_407_step_observation_census.json",
+    "explicitly_mapped_steps": 116,
+    "unmapped_steps": 291,
+    "unmapped_status": "blocking"
+  },
+  "v1_manifest_census": {
+    "required_rows": 356,
+    "observed_rows": 356,
+    "every_row_requires_an_explicit_v3_disposition": true,
+    "current_complete_row_to_claim_map": false,
+    "observation_census": "audits/v1_theorem_manifest_observation_census.json",
+    "explicitly_mapped_rows": 0,
+    "unmapped_rows": 356,
+    "unmapped_status": "blocking"
   },
   "named_consequence_groups": [
     {
@@ -88,7 +106,7 @@
       "source_steps": [47, 49, 51, 58, 60, 62, 64, 66, 71, 127, 128, 140, 150, 151, 157, 165, 194, 266, 267, 287, 292, 293, 294],
       "source_artifacts": ["SFT-V1-CORE-PAPER", "SFT-V2-ONE-FOLD-MASTER-407"],
       "required_results": ["shell capacities", "all eight nuclear magic numbers", "no closure between 82 and 126", "Smithium at Z=126 N=184 A=310", "g-block width 18 and positions 121 through 137", "Smithium electron organization and oxidation states", "periodic endpoint at element 137", "falsification boundary"],
-      "v3_status": "closed_current_v3_standard",
+      "v3_status": "blocking_full_prior_result_reconciliation_required",
       "formal_prerequisite_claims": [
         "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
         "SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001",
@@ -110,7 +128,7 @@
         "Smithium at Z=126 N=184 A=310 with 8s2 5g6 active organization",
         "structural periodic endpoint at element 137"
       ],
-      "closure_note": "Every named result in this group has a clean V3 formal claim, complete grammar, sole survivor, root trace, exact arithmetic, four engine controls, implementation-distinct validator and immutable receipt. CODATA/IAEA known-domain checks are post-seal; 121, 126 and 137 remain explicitly unobserved predictions."
+      "closure_note": "The listed V3 claims and their receipts remain valid at their exact boundaries, including the standing 121, 126 and 137 predictions. The earlier closed label was too broad because not every V1/V2 row assigned to this group had an explicit same-strength V3 disposition. Full group completion therefore remains blocked without erasing any admitted receipt."
     },
     {
       "group_id": "particle_neutrino_dark_sector_and_complete_inventory",
@@ -155,6 +173,13 @@
     "chemistry_github_release_observed": true,
     "chemistry_zenodo_record_observed": true,
     "chemistry_publication_permitted": true,
-    "reason": "Chemistry is 86 of 86 admitted, its elements/nuclear/island-of-stability V1/V2 lineage group is reconstructed at the current V3 standard, and its exhaustive paper is published on GitHub and Zenodo after passing the local fail-closed publication gate. Other scientific lineage groups remain globally blocking for their own branches and the final TOE paper."
+    "materials_paper_exists_in_publications_current": true,
+    "materials_github_release_observed": true,
+    "materials_zenodo_record_observed": true,
+    "materials_publication_permitted_at_recorded_boundary": true,
+    "physics_successor_publication_permitted": false,
+    "physics_successor_gate": "tools/verify_physics_successor_gate.py",
+    "physics_successor_audit": "audits/physics_prior_value_audit_2026-07-24.json",
+    "reason": "Chemistry and Materials remain valid immutable publications at their recorded claim boundaries. The current Physics corpus exceeds its published inventory, and complete V1/V2 observation-to-V3 dispositions are absent; a successor Physics paper is therefore blocked. Other unmapped scientific lineage obligations remain blocking for their owning branches and the final TOE paper."
   }
 }
