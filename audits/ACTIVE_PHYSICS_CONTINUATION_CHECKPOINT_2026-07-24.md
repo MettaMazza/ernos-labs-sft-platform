@@ -919,3 +919,61 @@ stellar-fusion chain and reaction-threshold content belongs to the later V-7
 successor and is not falsely closed by the binding landscape alone. This count
 supersedes section 36. Do not regenerate V-4 after compaction; commit it and
 proceed to V1 V-6 because V-5 was already closed before this continuation.
+
+38. V1 V-6 and V2 Step 66 radioactive topology and half-life survival are
+    admitted, closed and must not be regenerated after conversation compaction:
+   - `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`, engine receipt
+     `sha256:83e9d821fef3a3c8d4717545ca5109a1a8e7849c433b55ce5c47a17f4ac845f4`;
+   - derivation seal
+     `sha256:4802ac50dd4d14b7c8cac7ea4c1a37eee8dbcaa9a146833ae0e90757249a3221`;
+   - independent validation
+     `sha256:d8928f7a90ca122f82dc52989b8a875608885bf59434da13c1cbd54e65e21ec3`;
+   - independent certificate
+     `sha256:363f509d49d688652a8a6eed058c1b81f11486302efe43b0e64bc87fee6fbcfd`;
+   - empirical validation
+     `sha256:bdf6efb3d44f289cfd9c57212f7b2e033af0e8c45bc45d5cca81f483f964cfe1`;
+   - measurement receipt
+     `sha256:16638308ef6939c5af8ad447616bb50bd0a385b4939423526b95286e53e55a73`;
+   - source manifest
+     `sha256:3ccac8e6fb82183f7bfb2f2666b76a23f1c03f74403bd33e7b17ae8a0de4ddbe`.
+
+The successor strengthens rather than silently repeats the inherited
+alpha/beta/gamma wording. Complete support, charge-label and recurrence
+enumeration forces exactly three primitive nonidentity nuclear-transition
+topologies: boundary release/decomposition; held charge-label conversion at
+retained constituent support; and internal level de-excitation at retained
+support and charge. Alpha is the complete binary-square mass-four/charge-two
+release representative, beta the conversion representative with complete
+lepton records, and gamma the de-excitation representative with a radiative
+record. Proton, neutron and other cluster emission and fission remain in the
+first topology; electron capture and double-beta families in the second;
+internal transition in the third; and delayed particle/fission channels are
+ordered compositions. The literal statement that only three named nuclear
+decay codes exist is therefore retained as an adverse form and rejected.
+
+At each positive half-life carrier, complete deterministic predecessor paths
+divide into the two Fold fibres: one retained and one released. The unique
+rational successor is `S(k)=1/2^k` for every positive finite count `k`, with
+`1/2, 1/4, 1/8, ...` and no numerical-zero endpoint. This is observer-relative
+uncertainty over a complete hidden-path census, not imported ontic randomness.
+A positive dimensional half-life transports the sealed relation but does not
+select its topology or form. No continuum exponential, transcendental proof
+value or fitted decay constant enters execution.
+
+Only after sealing did the complete AMDC NUBASE2020 table open, with raw
+identity
+`sha256:1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859`.
+All 5,843 nuclear-state rows, 5,500 rows carrying decay modes, 8,718 non-
+abundance mode entries, 50 distinct mode codes and 4,700 positive numeric
+half-life carriers are retained. Every code maps to one primitive or a recorded
+composition; none is omitted. Uranium-238 and beryllium-8 register release,
+carbon-14 and beryllium-7 register beta/electron-capture conversion, and
+technetium-99m registers internal de-excitation. Their complete half-life,
+unit, uncertainty and branching inscriptions remain visible.
+
+The focused successor test ran once and passed (`5 passed`). The live
+inheritance ledger is 318 same-strength closed and 180 open, with 51 mapped
+open and 129 unmapped open. V1 VI-2 intentionally remains open because total
+particle widths and branching partitions are a later particle-phenomenology
+law, not the nuclear half-life law. This count supersedes section 37. Do not
+regenerate V-6 after compaction; commit it and proceed to V1 V-7.

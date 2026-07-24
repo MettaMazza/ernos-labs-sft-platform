@@ -1,0 +1,163 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A fourth primitive or literal named-particle-only taxonomy is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed NUBASE row, code, half-life, uncertainty or source identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Any changed topology, survival relation, census or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, numerical model zero, continuum exponential, ontic randomness or fitted rate is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Omitting proton, neutron, cluster, fission, capture or delayed codes fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:aec0ffce7fa315bad5a214c56c9ed326bd2bd08eb9e4d33ebacceec327c4cef2"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:9a2275f1c4f82f0bdf3d41b25a1c8af535fefb7451ea28bad4f6cb2beec32391",
+      "role": "development_only",
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "The formal law fixes survival at positive half-life counts; NUBASE values and units remain positive post-seal dimensional carriers.",
+    "measurement_record_policy": "all-5843-state-5500-decay-row-8718-entry-50-code-and-4700-positive-half-life-records-retained",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every NUBASE code maps to the sealed primitives or composition and every positive time carrier transports exact finite survival.",
+    "comparison_implementation_hash": "sha256:dca32bd5fbb296c0ed4941f6378271af27620b88ff6e94608c811f218ef40e96",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if any NUBASE2020 decay code cannot be expressed by the three primitive topologies or their composition, a positive half-life cannot transport exact finite survival, a row or uncertainty is omitted, the literal only-three-code claim is retained, or target access precedes sealing.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Map every non-abundance mode code, retain every positive numeric half-life/unit/uncertainty and reject the literal only-three-named-code reading.",
+        "metric_id": "complete-mode-topology-and-half-life-vector",
+        "unit_protocol": "NUBASE time inscriptions remain external; exact half-life-count transport uses positive fractions only."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "landing_uri": "https://amdc.impcas.ac.cn/web/nubase_en.html",
+      "measurement_body": "Atomic Mass Data Center, Institute of Modern Physics, Chinese Academy of Sciences",
+      "publication_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/Kondev_2021_Chinese_Phys._C_45_030001.pdf",
+      "raw_snapshot_hash": "sha256:1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:9a2275f1c4f82f0bdf3d41b25a1c8af535fefb7451ea28bad4f6cb2beec32391",
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete post-seal 5,843-state, 5,500-decay-row, 8,718-entry, 50-code, 4,700-positive-half-life, topology, composition, uncertainty, custody and adverse-only-three product.",
+    "dependency_hashes": [
+      "sha256:cc3322eae080225adf90b94b929e10c5241152ef1c6b947809cea38cb97dd491",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every NUBASE2020 nuclear-state row, non-abundance decay-mode inscription, positive numeric half-life with reported unit/uncertainty, mode-to-primitive trace, composite delayed trace, registered example and source-custody state.",
+    "relation_hash": "sha256:183ffde18247745245389df4cc37ba7837f18f9679570d7065ca72ccd386012f",
+    "statement": "All 50 distinct NUBASE2020 decay codes across 8,718 entries map to boundary release/decomposition, held-label conversion, internal de-excitation or an ordered composition. The table contains 4,700 positive numeric half-life carriers; exact transport yields survival 1/2^k at each positive integer multiple. Alpha, beta and gamma remain canonical representatives, while the literal claim that only three named codes exist is rejected.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3e37e2bf769f4167a4846c3759a82487803f9d2f26da82fbac8d4be69dfa8b4d",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:088da404c6243c88b3dfd01872500062b0769c636fa5bfc645601adf593092d3",
+    "program_id": "SFT-EXP-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-state-decay-code-mode-entry-positive-half-life-unit-uncertainty-composition-and-adverse-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:c14744f5e9b86ca121231d63a986e3ade7be5446878cfdb0c48fb07abd7fd4e1",
+    "experiments/external_sources/physics/snapshots/nubase2020-nubase_4.mas20": "sha256:1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+    "experiments/external_sources/physics/snapshots/radioactive-decay-successor-source-record.json": "sha256:9a2275f1c4f82f0bdf3d41b25a1c8af535fefb7451ea28bad4f6cb2beec32391"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every formal, NUBASE, topology, lifetime, custody and adverse row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-COMPLETE-DECAY-CENSUS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-COMPLETE-HALFLIFE-CENSUS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-RELEASE-REPRESENTATIVES"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-CONVERSION-REPRESENTATIVES"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-DEEXCITATION-REPRESENTATIVE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-NUBASE2020-DECAY-HALFLIFE-2021",
+      "target_id": "NUBASE2020-ONLY-THREE-ADVERSE"
+    }
+  ]
+}
