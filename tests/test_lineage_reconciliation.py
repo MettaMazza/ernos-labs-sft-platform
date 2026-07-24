@@ -96,14 +96,18 @@ class LineageReconciliationTests(unittest.TestCase):
     def test_chemistry_publication_is_fail_closed(self) -> None:
         state = self.registry["publication_state"]
         self.assertTrue(state["chemistry_paper_exists_in_publications_current"])
-        self.assertFalse(state["chemistry_release_exists_in_output_release"])
+        self.assertTrue(state["chemistry_release_exists_in_output_release"])
+        self.assertTrue(state["chemistry_github_release_observed"])
+        self.assertTrue(state["chemistry_zenodo_record_observed"])
         self.assertTrue(state["chemistry_publication_permitted"])
         paper_root = ROOT / "publications/current/chemistry"
         self.assertTrue((paper_root / "FROM_FOLD_TO_CHEMISTRY.md").is_file())
         self.assertTrue((paper_root / "evidence_map.json").is_file())
         self.assertTrue((paper_root / "manifest.json").is_file())
         self.assertTrue((paper_root / "publication_receipt.json").is_file())
-        self.assertFalse((ROOT / "output/release/chemistry-1.0.0").exists())
+        release = json.loads((ROOT / "publication/chemistry_release.json").read_text())
+        self.assertEqual(release["doi"], "10.5281/zenodo.21531455")
+        self.assertTrue(all(release["public_verification"].values()))
 
 
 if __name__ == "__main__":

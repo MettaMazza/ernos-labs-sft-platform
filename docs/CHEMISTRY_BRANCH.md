@@ -1,6 +1,6 @@
 # Chemistry branch
 
-Status: `inventory_frozen_all_ten_subbranches_model_admitted_publication_release_pending`
+Status: `inventory_frozen_all_ten_subbranches_model_admitted_published`
 
 The Chemistry inventory contains 86 registered obligations in ten ordered
 subbranches.  All eighty-six are model-admitted: the complete 8/8 chemical
@@ -13,9 +13,9 @@ reaction-networks-and-interfaces subbranch, plus the complete 8/8
 stereochemistry/organic/polymer subbranch and the complete 8/8
 analytical/spectroscopic subbranch and the complete 3/3 g-block/Smithium/
 endpoint subbranch. The exhaustive Markdown manuscript, visually checked
-253-page PDF, evidence map, manifest and publication receipt are built and pass
-the local publication gate; DOI `10.5281/zenodo.21531455` is reserved for the
-authorized archival release. The relevant V1/V2 lineage group is independently
+253-page PDF, evidence map, manifest and publication receipt pass the local
+publication gate and are published at DOI `10.5281/zenodo.21531455` and GitHub
+release `chemistry-v1.0.0`. The relevant V1/V2 lineage group is independently
 reconstructed in V3. Other still-open lineage groups continue to block their
 own branches and the final TOE paper, but do not erase this Chemistry closure.
 

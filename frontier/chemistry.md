@@ -2,8 +2,9 @@
 
 The frozen Chemistry inventory contains 86 obligations and all 86 are
 model-admitted. The complete branch manuscript and release evidence are built,
-proofread and locally verified; the authorized GitHub and Zenodo publication
-is the remaining release action.
+proofread, locally verified and published at DOI
+`10.5281/zenodo.21531455` with matching GitHub release
+`chemistry-v1.0.0`.
 
 ## Preserved failed prerequisite executions
 
