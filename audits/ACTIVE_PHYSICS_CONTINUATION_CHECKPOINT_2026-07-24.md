@@ -418,15 +418,40 @@ require semantic review. These counts supersede every earlier checkpoint
 count. This was receipt reconciliation only: no engine execution or heavy test
 run was repeated.
 
+27. The complete 498-row Physics inheritance surface has now received
+    statement-level semantic review:
+    - six further rows were closed by exact thermodynamic, neutrino-mixing and
+      static-clock receipts;
+    - every remaining V1 thermodynamics, condensed, plasma, scattering,
+      cosmology, strong-CP, proton-stability, composite-sector, multiverse and
+      consciousness-adjacent claim now names its exact missing theorem and
+      empirical boundary;
+    - every remaining V2 row now names its exact successor or handoff,
+      including blackbody laws, Hall plateaus, BBN, finite-range mediation,
+      critical exponents, recombination, stellar collapse, proton radius,
+      coupling running, uncertainty, cross-prime composition, Kolmogorov
+      scaling, Parker Solar Probe cutoff, quasicrystal/astronomy separation,
+      the fluid experiment and the explicitly deferred Unison application;
+    - Step 257 explicitly retains substrate-independent observation,
+      consciousness, qualia and red-of-red as required future branch work. It
+      is not replaced by an unrelated information or measurement receipt.
+
+The live ledger is 300 same-strength closed and 198 open. All 198 open rows
+have a precise `partial` or `versioned_successor_required` disposition; there
+are no semantically unreviewed Physics rows. Of the open rows, 137 have no
+admitted same-strength claim mapping and therefore require new derivation or a
+categorical cross-branch successor. These counts supersede every earlier
+checkpoint count. No engine execution or heavy test run was repeated.
+
 ## Active group
 
-Receipt-level reconciliation of the remaining atomic, nuclear,
-island-of-stability and particle-prediction obligations against the complete
-live V3 Physics corpus. The cubic and hydrogen post-seal comparisons are
-finished and must not be regenerated. The atomic precision, molecular and
-newly registered stronger field/gravity successors are genuinely open. Continue
-reviewing the remaining 141 unmapped rows; generate a new law only after its
-obligation has been shown absent rather than merely unmapped.
+Derive the now-explicit successor groups from the fully reviewed ledger. The
+cubic and hydrogen post-seal comparisons are finished and must not be
+regenerated. Atomic precision and molecular spectroscopy are the first active
+group because their external source custody is already present; nuclear,
+thermodynamic, field, cosmological and consciousness-handoff groups follow in
+dependency order. Every new claim must close named ledger rows rather than
+merely adding a related result.
 
 The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
 five-claim atomic/spectral source, execution, validator and evidence modules are

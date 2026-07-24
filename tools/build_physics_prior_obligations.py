@@ -145,6 +145,9 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "II-10": ("SFT-MAT-TOPO-INVARIANT-001", "SFT-MAT-TOPO-BULK-BOUNDARY-001"),
     "II-11": ("SFT-MAT-MECH-STRESS-STRAIN-001", "SFT-MAT-MECH-ELASTICITY-001", "SFT-MAT-MECH-PLASTICITY-001", "SFT-MAT-MECH-SLIP-001", "SFT-MAT-MECH-MODULUS-001", "SFT-MAT-MECH-STRENGTH-HARDNESS-001", "SFT-MAT-MECH-FRACTURE-001", "SFT-MAT-MECH-FATIGUE-CREEP-001"),
     "III-7": ("SFT-CHEM-BOND-COVALENT-001", "SFT-CHEM-BOND-LENGTH-STRENGTH-001", "SFT-CHEM-MOL-MOLECULE-001"),
+    "I-2": ("SFT-PHYS-THERMO-MICRO-MACRO-001", "SFT-PHYS-THERMO-ENTROPY-001", "SFT-PHYS-THERMO-SECOND-LAW-001", "SFT-INFO-ENTROPY-UNCERTAINTY-001"),
+    "I-4": ("SFT-PHYS-THERMO-EQUILIBRIUM-001", "SFT-PHYS-THERMO-FIRST-LAW-001", "SFT-PHYS-THERMO-SECOND-LAW-001", "SFT-PHYS-THERMO-THIRD-LAW-001"),
+    "I-8": ("SFT-PHYS-THERMO-IRREVERSIBILITY-001", "SFT-MATH-BOUNDED-N-BODY-002"),
     "VI-4": ("SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003", "SFT-PHYS-VALIDATION-FINITE-LOOPS-003"),
     "VI-5": ("SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003", "SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003"),
     "VI-6": ("SFT-PHYS-MATTER-CKM-TERMINAL-004", "SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003", "SFT-PHYS-VALIDATION-QUARK-CKM-003", "SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003"),
@@ -408,6 +411,9 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     244: ("SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
     262: ("SFT-PHYS-QUANTUM-ENTANGLEMENT-001", "SFT-PHYS-QUANTUM-NO-SIGNALLING-001"),
     264: ("SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
+    28: ("SFT-PHYS-THERMO-EQUILIBRIUM-001", "SFT-MATH-EXACT-RELATIONS-002"),
+    122: ("SFT-PHYS-MATTER-MIXING-001", "SFT-PHYS-NEUTRINO-PMNS-ANGLES-002", "SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003"),
+    208: ("SFT-PHYS-GRAVITY-STATIC-CLOCK-003",),
 }
 
 
@@ -685,6 +691,251 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "empirical_boundary_status": "required_open",
         "remaining_work": "The stationary mode ladder and three-space result are sealed. An exhaustive placement of the complete particle inventory on Fold modes and the explicit exclusion of additional spatial dimensions/compactification alternatives remain.",
     },
+    "B5": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The bare and terminal electroweak shares are sealed. A target-inaccessible, scale-indexed running curve with unique depth transport and complete measured electroweak-running comparison remains.",
+    },
+    "B8": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Strong and electroweak running directions are registered separately. Their exact common-axis separation, monotone convergence proof and authoritative multi-scale comparison remain.",
+    },
+    "VIII-11": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The present cosmic budget is sealed. The exact matter-density fraction as a function of redshift, endpoint proof and observational comparison remain.",
+    },
+    "VIII-10": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Spatial flatness and the terminal budget are sealed. The deceleration carrier must be recomputed from that terminal budget and compared post-seal; the earlier magnitude one-half is not inherited automatically.",
+    },
+    "VIII-9": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The terminal matter/vacuum split is sealed. Matter-vacuum equality and acceleration-onset redshifts must be forced from it and compared against registered observations.",
+    },
+    "VIII-8": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old expansion formula used the superseded two-thirds/one-third budget. A versioned exact E-squared redshift law must use the terminal budget, retain all components and pass the measured expansion vector.",
+    },
+    "B-9N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The five-sector and lepton-family carriers are sealed. The complete lepton-flavour-violation transition-weight census, channel ratios and experimental upper-bound comparison remain.",
+    },
+    "XVIII-9": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Baryon transport is sealed. Primordial lithium production, stellar depletion transport and their separate abundance datasets require a versioned empirical reconstruction.",
+    },
+    "XVIII-8": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Many terminal constants and mixing quantities are sealed individually. A complete all-constant dependency web, perturbation controls, empirical vector and no-omission certificate remain.",
+    },
+    "XVIII-3": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The positive vacuum floor and finite cosmic budget are sealed. The dimensionless and dimensionful cosmological-constant magnitudes, scale transport and measured comparison remain.",
+    },
+    "XVIII-2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Weak-sector CP and parity fibres are sealed. Exact strong-sector alignment, the no-axion discriminator and a post-seal neutron-electric-dipole bound comparison remain.",
+    },
+    "XVIII-1": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Composite proton/electron mass precision is sealed. A probe-independent proton-radius carrier, scattering/spectroscopy translation and full muonic/electronic comparison remain.",
+    },
+    "VIII-6": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Expansion, flatness and causal structure are sealed. The inflation duration, e-fold count, scalar tilt, tensor discriminator and authoritative CMB comparison remain.",
+    },
+    "VIII-5": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Inverse-square gravity and the dark fraction are sealed. The linear growth law, transfer through radiation/matter eras and measured structure-spectrum comparison remain.",
+    },
+    "VIII-4": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The baryon-to-photon magnitude and CP carrier are sealed. The complete baryon-number-change, CP and nonequilibrium Sakharov dependency chain remains to be admitted as one law.",
+    },
+    "VIII-3": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Hydrogen binding, plasma response and flatness are sealed. Recombination, sound horizon, harmonic peak locations, odd/even loading and the measured CMB spectrum remain.",
+    },
+    "VIII-2": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old one-seventh freeze-out shortcut has not been reconstructed. Exact neutron/proton freeze-out, decay transport, helium abundance and multi-nuclide BBN comparison remain.",
+    },
+    "VIII-1": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Redshift and thermodynamic ordering are sealed separately. Temperature-scale transport and the ordered radiation, matter, recombination and vacuum epoch boundaries remain.",
+    },
+    "VII-7": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Discrete oscillator support and temperature are sealed. Exact blackbody occupation, Wien displacement, Stefan-Boltzmann fourth-power transport and measured spectrum remain.",
+    },
+    "VII-5": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Atomic transitions and resonance are sealed. Stimulated emission, inversion, gain/loss threshold, linewidth and measured laser correspondence remain.",
+    },
+    "VII-1": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Plasma collective response, oscillation and screening are sealed qualitatively. Exact plasma-frequency and Debye-length carriers plus measured comparisons remain.",
+    },
+    "VI-3": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Structural running directions are sealed. Exact generator-indexed running functions, common scale transport, convergence and measured multi-scale coupling data remain.",
+    },
+    "VI-2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Decay channel conservation is sealed. Total widths, exact branching partitions, lifetime relation and complete measured decay vectors remain.",
+    },
+    "VI-1": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Scattering as exact channel counting is sealed. Fold amplitudes, angular cross sections, Rutherford and Compton limits and authoritative data comparisons remain.",
+    },
+    "II-9": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Topological winding and bulk-boundary transport are sealed in Materials. Integer and fractional Hall conductance, filling, edge transport and measured plateau comparisons remain.",
+    },
+    "II-8": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Ferro- and antiferromagnetic order are sealed. Curie/Neel thresholds, hysteresis, susceptibility and measured transition curves remain.",
+    },
+    "II-3": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Phonons and support-dependent wave propagation are sealed. Acoustic/optical dispersion, Debye cutoff, Dulong-Petit limit and measured lattice spectra remain.",
+    },
+    "I-10": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Irreversibility and retained inverse records are sealed. Exact one-distinction erasure cost, Maxwell-demon cycle ledger and measured Landauer comparison remain.",
+    },
+    "I-9": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Bosonic composition and stationary ground support are sealed. Condensate occupation, critical-temperature carrier and measured BEC comparison remain.",
+    },
+    "I-7": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite fluctuation, response and deterministic noise are sealed separately. Their exact fluctuation-dissipation relation and measured response/noise comparison remain.",
+    },
+    "I-6": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Phase coexistence is sealed. A complete universality-class census, forced critical exponents, scaling identities and measured transition comparisons remain.",
+    },
+    "I-5": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Fermion/boson exchange classes and exclusion are sealed. Exact finite Bose and Fermi occupation weights, spin-statistics composition and measured limits remain.",
+    },
+    "I-3": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Exact statistical weights and equilibrium classes are sealed. The canonical distribution must be reconstructed without imported exponential or floating values and compared to finite-system data.",
+    },
+    "I-1": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Temperature is sealed as support-change ordering. The old mean-throw formula requires a positive exact successor, calibration transport and empirical thermometry comparison.",
+    },
+    "G9": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "No current V3 receipt derives substrate-independent self persistence across distinct universe supports. Reconstruct identity, memory, continuity and falsification carriers in the consciousness branch without reducing the claim to unrelated information receipts.",
+    },
+    "G8": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "No current V3 receipt derives travel or communication across a generated network of Fold universes. The topology, causal boundary, energy/information transport and adverse controls remain.",
+    },
+    "G7": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Entanglement is sealed within generated joint support, but a plurality of Fold universes and their shared-One composition are not. The universe census, joint-support law and observational discriminator remain.",
+    },
+    "N7": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Observation-relative irreversibility and the low-complexity One root are sealed. Inflationary doubling, transition exit, duration and external cosmological comparison remain.",
+    },
+    "N5": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Quark/lepton sector identities and hadron closure are sealed. Exact baryon-number conservation, exhaustive fibre-crossing exclusion and proton-lifetime comparison remain.",
+    },
+    "N2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Weak parity and CP are sealed. Strong-sector vectorial alignment, exact theta carrier, no-axion alternative and neutron-electric-dipole comparison remain.",
+    },
+    "N1c": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "A positive vacuum floor is sealed. Its cosmological energy-density magnitude, scale transport, radiative accounting and measured dark-energy comparison remain.",
+    },
+    "N1d": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Vacuum recurrence and the cosmic budget are sealed. Exact non-dilution and equation-of-state w=-1 correspondence remain.",
+    },
+    "N1f": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space and the terminal budget are sealed. Matter, radiation and vacuum dilution exponents plus complete observational comparison remain.",
+    },
+    "B15": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The terminal electroweak value is sealed. The unique internal source-square depth d=1, its all-depth exclusion proof and relation to physical scale transport remain.",
+    },
+    "B-10N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Prime sectors are sealed, but composite sector eight is not. Its orbit census, member/antipode inventory, coupling law and experimental discriminator remain.",
+    },
+    "B-11N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Composite sector twelve requires its denominator-eleven orbit census, ten-member/five-pair inventory, coupling law and empirical discriminator.",
+    },
+    "B-12N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Composite sector eighteen requires its denominator-seventeen two-orbit census, member inventory, coupling law and empirical discriminator.",
+    },
+    "B-13N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Composite sector twenty-four requires its denominator-twenty-three two-orbit census, member inventory, coupling law and empirical discriminator.",
+    },
+    "B-14N": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Composite sector thirty requires its denominator-twenty-nine orbit census, twenty-eight-member/fourteen-pair inventory, coupling law and empirical discriminator.",
+    },
 }
 
 
@@ -864,6 +1115,316 @@ REVIEWED_OPEN_V2: dict[int, dict[str, str]] = {
         "empirical_boundary_status": "required_open",
         "remaining_work": "Boundary rank two and tensor polarization are sealed. The four-dimensional symmetric metric component census and depth-two grid carrier remain under the D9n successor obligation.",
     },
+    23: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Bosons are sealed as preserving exchange-composition classes, not identified with a numerical One. Preserve the early shorthand and admit the positive exact occupancy/statistics successor.",
+    },
+    31: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The half-One map is sealed. Its proposed inflationary spectral tilt, scale transport and CMB comparison share the VIII-6 successor boundary.",
+    },
+    35: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Vacuum recurrence and fixed support are sealed. Exact non-dilution and equation-of-state w=-1 share the N1d successor boundary.",
+    },
+    40: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Vacuum mode support is sealed. A common-scale comparison of the Fold vacuum density, conventional zero-point sum and measured cosmological density shares the N1c/XVIII-3 boundary.",
+    },
+    46: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The two-thirds/one-third input is superseded by the terminal cosmic budget. Recompute deceleration from the terminal shares and compare post-seal under VIII-10.",
+    },
+    48: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space and thermal support are sealed. The exact fourth-power radiation law and measured blackbody comparison share VII-7.",
+    },
+    51: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite cyclic spin is sealed. The complete two-spin composition census, singlet/triplet multiplicities and measured coupling examples remain.",
+    },
+    58: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old one-seventh freeze-out shortcut is retained as adverse prior evidence. Exact neutron/proton freeze-out, decay transport and helium comparison share VIII-2.",
+    },
+    61: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space and expansion are sealed. Component-specific dilution exponents and measured correspondence share N1f.",
+    },
+    64: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Nuclear binding is sealed generically. The universal fixed-point shortcut must be replaced by an exact binding curve, maximum and iron/nickel comparison under V-4.",
+    },
+    66: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Decay recurrence is sealed. Exact half-life survival, lifetime carriers and measured decay data share VI-2/V-6.",
+    },
+    67: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Topological transport is sealed in Materials. Integer/fractional Hall units and plateau data share II-9.",
+    },
+    70: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Massive/massless carrier classes are registered. Exact positive finite-range transport and mediator comparisons share D11a/D11f.",
+    },
+    74: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Spin is sealed as a cyclic held-label action. The half-turn representation, spin-composition table and particle-spin comparison remain.",
+    },
+    76: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite algebra and orbit recurrence are sealed. The coprime two-by-three joint-support decomposition and independent full census remain.",
+    },
+    85: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The matter/radiation/vacuum exponent table and measured scaling comparison share N1f.",
+    },
+    87: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three generations are sealed, but the old one-sixth/half/five-sixths mass-site reading is not a terminal mass spectrum. Preserve it and admit an explicit measured-value successor under M10/M12.",
+    },
+    103: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Phase coexistence is sealed. Critical exponents, scaling identities and measured universality classes share I-6.",
+    },
+    104: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Binary and generator-three recurrences are sealed. The depth-independent m-Fold fixed-mode count and exhaustive admissible-generator certificate remain.",
+    },
+    106: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Exact binary fibres and generator three are sealed separately. A general positive finite m-to-one fibre theorem and uniqueness enumeration remain.",
+    },
+    107: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The half-One balance alone does not prove orbit stability. The all-dimension effective-potential census shares D9f.",
+    },
+    108: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Binary depth support is sealed. The physical scale-axis theorem, unique sector depths and absolute placement share B4/B17.",
+    },
+    109: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old two-thirds/one-third budget is superseded by the terminal 11/16 vacuum and 5/16 matter shares; retain the old row as adverse evidence and use only the terminal budget downstream.",
+    },
+    110: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Local conservation and lattice propagation are sealed. The exact half/quarter/quarter stencil, dimension extension, dispersion and experimental/numerical comparison share D1/D1c/D1d.",
+    },
+    111: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Resonance is sealed. Gain, loss, inversion and the exact lasing threshold share VII-5.",
+    },
+    113: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three generated sites are sealed structurally, but the old one-sixth/half/five-sixths mass identification is not the terminal measured spectrum and shares M10/M12.",
+    },
+    114: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old expansion curve used the superseded budget. Its terminal-budget replacement and data comparison share VIII-8.",
+    },
+    120: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old lithium fractions are not inherited. Primordial production, stellar depletion and abundance comparison share XVIII-9.",
+    },
+    121: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Exact optimization is sealed for generated candidate supports. The claimed universal unique half-One extremum needs an admissible objective grammar, adverse objectives and an exhaustive uniqueness census.",
+    },
+    139: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Hydrogen binding and plasma response are sealed. Recombination/decoupling, visibility support and CMB comparison share VIII-3.",
+    },
+    140: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Nuclear binding and gravity are sealed separately. Iron-core support loss, collapse threshold, endpoint census and astrophysical comparison remain.",
+    },
+    141: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Confinement is sealed. The universal one-quarter residual-force shortcut requires a versioned nucleon-force range/strength law and measured comparison under V-3.",
+    },
+    144: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Autocatalysis is registered in Chemistry, but the old quarter-to-half-to-One abiogenesis path is not closed. Reaction-network alternatives, sustained-cycle criterion and empirical prebiotic tests remain in the Chemistry/Life handoff.",
+    },
+    145: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The period-two orbit is sealed. Its use as a necessary and sufficient memory carrier, retention/noise comparison and substrate-independent persistence law remain in Learning/Consciousness.",
+    },
+    148: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The period-two orbit does not by itself derive sleep architecture. Deep/REM state variables, transition law and empirical sleep data remain in Neuroscience/Consciousness.",
+    },
+    159: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Measurement semantics are sealed without a universally fixed depth. The proposed depth-three/eighth outcome law requires a preparation-derived depth criterion and experimental comparison.",
+    },
+    164: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Joint support and recurrence are sealed generally. The exact 3-by-5 product orbit, shared origin and full component projection census remain.",
+    },
+    165: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The two-thirds structural radius shortcut is not a terminal physical radius. A probe-independent proton-radius successor and spectroscopy/scattering comparison share XVIII-1.",
+    },
+    172: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Structural running directions are sealed. The exact colour-plus-2^d and binary-plus-2^d functions, scale transport and measured comparison share VI-3/B5-B11.",
+    },
+    183: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Orbit number theory and the prime inventory are sealed. The exact gravity/EM/strong period-to-force dictionary and its exclusion alternatives remain.",
+    },
+    185: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Synchronization is registered abstractly. The exact two-map difference recurrence, critical coupling and adverse coupled-map census share E4/PH3.",
+    },
+    188: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The exact density-dilution equation and component w table share N1d/N1f.",
+    },
+    189: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space is sealed. The all-dimension orbital-stability coefficient and census share D9f.",
+    },
+    197: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Cosmic expansion, thermal ordering and budget are sealed separately. Their one-map ordered-history composition shares VIII-1 through VIII-11.",
+    },
+    202: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The old one-third matter endpoint is superseded. The terminal-budget Omega_m(redshift) law and data comparison share VIII-11.",
+    },
+    205: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Planar curvature four is sealed. The four-neighbour half/quarter stencil, depth-three weighting and causal-diamond census share D1c.",
+    },
+    212: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three generations are sealed, but the old one-third/two-thirds/One mass-site interpretation requires explicit successor transport to the terminal spectra under M10/M12.",
+    },
+    214: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The explicit generator-indexed running formula and multi-scale comparison share VI-3/B5-B11.",
+    },
+    221: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The generated-site census is sealed, but the old positions require an explicit relation to terminal mass and mixing carriers under M10/M12.",
+    },
+    222: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The quarter-ladder site assignment and separation-amplitude rule require a complete generation-mode census and comparison to terminal mixing entries.",
+    },
+    242: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space and stationary modes are sealed. Complete particle-to-mode placement and no-extra-dimension alternatives share G5.",
+    },
+    257: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Measurement does not require consciousness and is sealed operationally. The proposed depth-three/eighth-to-quarter join, substrate-independent observer closure, qualia and red-of-red derivation remain in the explicit Consciousness branch.",
+    },
+    260: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Incompatible observation is sealed. The exact variance-product floor, spacing cancellation and full minimal-state census share D6/D6b.",
+    },
+    261: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite algebra is sealed generally. The denominator-fifteen full state census proving Fold commutes with both prime projections remains.",
+    },
+    265: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Compositional support is sealed abstractly. The exact cross-prime walk, typed composition rule and complete adverse-path census remain.",
+    },
+    279: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite-depth cascade support is sealed. Kolmogorov structure-function and spectrum exponents, exact scaling identities and measured turbulence comparison remain.",
+    },
+    280: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Tipping, Gutenberg-Richter/flare scaling, burst atomicity and ringdown halving must be separated into four typed laws with independent datasets; no cross-domain analogy closes them as one result.",
+    },
+    283: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The 8 alpha-squared proton cutoff prediction requires independent V3 reconstruction, target-inaccessible execution, Parker source custody, uncertainty-aware comparison and adverse formulas.",
+    },
+    289: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The proposed beta, nu, gamma and delta critical exponents share the complete I-6 universality-class reconstruction and measured comparison.",
+    },
+    291: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Quasicrystal five-fold order, planetary doubling and Tully-Fisher scaling must be separated. Quasicrystals route to Materials; the orbital ladder and baryonic scaling require independent Astronomy laws and datasets.",
+    },
+    306: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Finite-depth fluid regularity is sealed. The simulator's rescaling rule, exact conservation audit, adverse high-shear controls and separation from physical viscosity remain as a validation experiment.",
+    },
+    308: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "deferred_application",
+        "remaining_work": "The two-family Unison spectral experiment is explicitly deferred by user instruction. Its generator-family law must later be rebuilt from immutable theory without allowing model outputs to select the law.",
+    },
 }
 
 
@@ -888,6 +1449,7 @@ RECENTLY_VERIFIED_V1 = {
     "M7", "M8", "M9", "M11", "M13", "M14",
     "M23", "M24", "M25", "M26", "QA1", "QA2", "QA3", "QA4", "QA5",
     "G1", "G2", "G3", "G6", "G10", "G14", "G15",
+    "I-2", "I-4", "I-8",
 }
 
 
@@ -903,6 +1465,7 @@ RECENTLY_VERIFIED_V2 = {
     129, 138, 147, 154, 162, 168, 173,
     180, 184, 186, 191, 192, 196, 198, 204, 206, 207, 211, 213,
     216, 217, 218, 223, 224, 237, 238, 244, 262, 264,
+    28, 122, 208,
 }
 
 
