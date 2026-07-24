@@ -172,18 +172,41 @@ This group reconstructs V2 Steps 228, 229 and 232 through 236 at their formal
 boundaries.  Post-seal baryon-abundance, universality and confinement
 comparisons remain separate empirical claims and cannot select these laws.
 
+17. Terminal CKM carrier completion and baryon-to-photon transport are now
+    sealed as explicitly disclosed observational derivations:
+   - terminal CKM transport
+     `sha256:745bc9840a7f5396866ff2e581fe700d9f254bff2538ef3c31eb74fc8683513e`;
+   - terminal baryon-to-photon transport
+     `sha256:21ba6f25f064602267b8e415ceb3ed6f985e318a3b29e7c8626b1cc71ea4c7cc`.
+
+The earlier adverse CKM receipt remains immutable.  Its physical law declared
+terminal quark dressing as a dependency but transported only the two leading
+root slopes.  The versioned successor completes that already declared carrier
+exactly once: one terminal alpha share is distributed over the complete three
+colour channels and passed through the existing upper-depth retention, giving
+the exact addition `1/[3(A+7)]` for the admitted inverse-alpha `A`.  No PDG
+quantity occurs in that executable relation.  Exact rational root enclosures
+then place all four terminal predictions - `s12`, `s23`, `s13` and `J` - inside
+their complete registered PDG three-standard-uncertainty intervals.
+
+The downstream target-free prediction `eta = J_terminal^2/2` is enclosed by
+`6.14612312138041663e-10` and `6.14612312138273977e-10`.  It lies strictly
+inside the independent PDG BBN abundance interval `[5.8e-10, 6.3e-10]` and
+overlaps the PDG Planck-density translation `[6.08e-10, 6.16e-10]`.  Source
+custody truthfully records that the CKM target was already visible during
+successor development, so neither claim is described as a blind forward
+discovery.  Both relations remain measurement-free, and the engine seals each
+prediction before releasing the registered target vector within its admission
+run.
+
 ## Active group
 
 Matter, flavour and particle-value reconstruction:
 
-- up- and down-type quark cubics and dressing;
-- CKM structure and complete physical mixing comparison;
 - proton/electron mass ratio and exact hierarchy reconstruction;
-- neutrino mass squares, ordering and absolute-mass boundary;
-- Majorana/Dirac discriminator and neutrinoless-double-beta prediction;
-- physical PMNS/CP refinement;
 - electron and muon magnetic anomaly reconstruction;
-- complete post-seal PDG, NIST/CODATA and neutrino/decay-body comparison.
+- exact separately generated successors for the two remaining adverse precision
+  comparisons without target-selected terms.
 
 The vacuum, relativistic/field and gravity/spacetime source, execution,
 validator and validation modules are frozen by their receipts and must not be

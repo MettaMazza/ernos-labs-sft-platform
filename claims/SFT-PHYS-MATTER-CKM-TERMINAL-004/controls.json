@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-CKM-TERMINAL-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fe3eec0be13f9f525a03306c6a999497d0c9d2ff2f7d19173b14744317dd4f25"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c4352e2e942341ffdda9795e3022e1b5890d2380334047acd6ff14740b1342e9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0417c11fe4f2247781f74107ca13f86aa39fb1d49dfb7f52dc430422fc153837"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e511a716293d36318f800889ed8ff7ff3f38074d0680c24c953cfee5ad1a9501"
+    }
+  ]
+}
