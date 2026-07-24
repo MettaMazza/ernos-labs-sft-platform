@@ -86,6 +86,56 @@ V2_PHYSICS_STEPS = values(
 
 
 V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
+    "E6": ("SFT-MATH-EXACT-RELATIONS-002", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
+    "A1": ("SFT-PHYS-WAVE-SUPERPOSITION-001", "SFT-PHYS-MECH-CONSERVATION-001"),
+    "A2": ("SFT-PHYS-WAVE-INTERFERENCE-001", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003"),
+    "PH4": ("SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003", "SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001"),
+    "PH4b": ("SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003", "SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003"),
+    "PH4c": ("SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003", "SFT-PHYS-MEAS-UNIT-COMPARISON-001"),
+    "PH5": ("SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "PH5a": ("SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D2": ("SFT-PHYS-WAVE-PROPAGATION-001", "SFT-PHYS-WAVE-SUPERPOSITION-001", "SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001"),
+    "D3": ("SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003"),
+    "D4": ("SFT-PHYS-SPACETIME-EXACT-INTERVAL-003", "SFT-PHYS-SPACETIME-CAUSAL-ORDER-001"),
+    "D5": ("SFT-PHYS-SPACETIME-EXACT-INTERVAL-003", "SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001", "SFT-PHYS-SPACETIME-LIMIT-SPEED-001", "SFT-PHYS-SPACETIME-CLOCK-RATE-001", "SFT-PHYS-FIELD-LORENTZ-TRANSFER-003"),
+    "D7": ("SFT-PHYS-QUANTUM-EXCLUSION-001", "SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001", "SFT-PHYS-MATTER-FERMION-BOSON-001", "SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001"),
+    "D7b": ("SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D7c": ("SFT-PHYS-WEAK-PARITY-FIBRE-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D7d": ("SFT-PHYS-MATTER-CONFINEMENT-LIFT-003", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D8": ("SFT-MATH-EXACT-ARITHMETIC-001", "SFT-MATH-ALGEBRAIC-BALANCE-002"),
+    "D9": ("SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003", "SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003"),
+    "D9b": ("SFT-PHYS-GRAVITY-STATIC-CLOCK-003", "SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003"),
+    "D9c": ("SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003", "SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003"),
+    "D9d": ("SFT-PHYS-FIELD-INVERSE-SQUARE-001", "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003", "SFT-PHYS-VALIDATION-INVERSE-SQUARE-001"),
+    "D9e": ("SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003", "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003"),
+    "D9g": ("SFT-PHYS-SPACE-DIMENSION-THREE-001", "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001", "SFT-PHYS-VALIDATION-INVERSE-SQUARE-001"),
+    "D9h": ("SFT-PHYS-GRAVITY-STATIC-CLOCK-003", "SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003", "SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003"),
+    "D9i": ("SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003", "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003"),
+    "D9j": ("SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003", "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003"),
+    "D9k": ("SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003", "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003"),
+    "D9l": ("SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003",),
+    "D9p": ("SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003", "SFT-MATH-LIMIT-CONTINUUM-002", "SFT-PHYS-CONTINUUM-COARSE-GRAIN-001"),
+    "D9p2": ("SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003", "SFT-MATH-LIMIT-CONTINUUM-002", "SFT-MATH-SELF-SIMILAR-CONVERGENCE-002"),
+    "D10a": ("SFT-PHYS-STRONG-RUNNING-DIRECTION-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D10b": ("SFT-PHYS-STRONG-RUNNING-DIRECTION-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D10c": ("SFT-PHYS-MATTER-CONFINEMENT-LIFT-003", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D10d": ("SFT-PHYS-MATTER-COMPOSITE-HADRONS-001", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D10g": ("SFT-PHYS-STRONG-RUNNING-DIRECTION-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D11b": ("SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002", "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003", "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003"),
+    "D11e": ("SFT-PHYS-WEAK-PARITY-FIBRE-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
+    "D11g": ("SFT-PHYS-ELECTROWEAK-WZ-RATIO-002", "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003", "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003"),
+    "EM1": ("SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "EM2": ("SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "EM3": ("SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003", "SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "EM4": ("SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "EM5": ("SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "EM6": ("SFT-PHYS-FIELD-LORENTZ-TRANSFER-003", "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003"),
+    "U1": ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003"),
+    "U2": ("SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003", "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003"),
+    "U4": ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",),
+    "U5": ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003"),
+    "U6": ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003"),
+    "U7": ("SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002", "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003"),
     "G13": ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001", "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001"),
     "G12": ("SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004", "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004"),
     "XVIII-6": ("SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004", "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004"),
@@ -209,6 +259,111 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
 # successor from a missing derivation.  They are deliberately not included in
 # RECENTLY_VERIFIED: none can close until its recorded remaining work is done.
 REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
+    "E3": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The odd-denominator live-cycle theorem and vacuum-floor comparison are sealed, but the prior all-region occupancy census and its measured recurrence vector are not yet present as one versioned claim.",
+    },
+    "E4": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The exact half-One sector coupling is sealed. A versioned coupled-ensemble law must still force the one-region synchronization boundary and compare the complete registered recurrence vector.",
+    },
+    "PH2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Exact branch count, entropy support and rational convergence are sealed. Their single Lyapunov/KS correspondence without imported logarithmic proof values and the complete external map comparison remain.",
+    },
+    "PH3": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The half-One coupling and phase-lock structures are sealed separately. A target-inaccessible coupled-map successor must force the exact synchronization threshold and compare the complete authoritative criticality record.",
+    },
+    "D1": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Lattice recurrence, propagation and dispersion classes are sealed, but the exact monatomic-chain mode spectrum, stationary flat mode and complete measured dispersion vector require a stronger successor.",
+    },
+    "D1c": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Planar curvature and Maxwell closure are sealed. The complete four-neighbour operator, point-source peak/ring census and causal diamond counts 5,13,25 remain to be admitted together.",
+    },
+    "D1d": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-axis curvature, cubic support and Maxwell closure are sealed. The complete six-neighbour operator, point-source peak/ring census and causal octahedral counts 7,25,63 remain to be admitted together.",
+    },
+    "D6": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Incompatible-observation and uncertainty structures are sealed, but the exact depth-independent support product s_t*s_f >= 2^k with complete Walsh-support census is not yet a V3 receipt.",
+    },
+    "D6b": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The support form remains open at D6. Its unit-free spread product, exact spacing cancellation and attained-One boundary require a separate versioned successor and independent census.",
+    },
+    "D9f": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-space is independently forced and inverse-square dilution validated. The all-dimension orbital-restoration census proving stable below four, marginal at four and unstable above four remains absent.",
+    },
+    "D9m": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Nonlinear gravitational self-source is sealed. The exact decreasing post-Newtonian correction recurrence, fixed-point certificate and external weak-field comparison remain.",
+    },
+    "D9n": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Ten symmetric four-dimensional slots and two radiative polarizations are sealed. The complete componentwise source ledger, discrete contracted-Bianchi conservation and adverse leaking-source control remain.",
+    },
+    "D9o": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Weak flux, static clocks and the horizon radius are sealed. The full exterior coefficient One-take-r_s/r, conserved vacuum flux, weak-field reduction and complete clock/redshift comparison require a successor.",
+    },
+    "D9q": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Quadrupole-first radiation and One-speed propagation are sealed. The exact third-difference-squared radiated-power law, static adverse control and complete binary-system power comparison remain.",
+    },
+    "D10e": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Colour self-source and exact binary running slope are sealed. The complete nonlinear strong-field iteration and its confinement fixed-point boundary remain.",
+    },
+    "D10f": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Confinement and free-phase propagation are sealed separately. A single claim must force the strong carrier to be simultaneously massless, luminal and confined, with complete PDG correspondence.",
+    },
+    "D11a": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Massive and massless interaction classes are registered, but the exact conserved forward/rest recurrence, inverse mass-range ordering and authoritative mediator-range comparison remain.",
+    },
+    "D11c": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Electroweak channel partition and measured on-shell share are sealed. The preserved-One massless direction versus displaced massive directions requires one explicit generated correspondence claim.",
+    },
+    "D11d": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The positive vacuum floor and electroweak split are sealed. The no-absence symmetry-breaking discriminator, displaced-ground census and terminal Higgs-sector comparison remain.",
+    },
+    "D11f": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Weak-sector massive mediation is structurally identified, but the exact finite-range law, boundary-to-absence transition and comparison against long-range inverse-square transport remain.",
+    },
+    "U3": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Every currently mapped constituent receipt reaches the root, but the complete Physics obligation ledger and its one dependency-web certificate cannot close until every remaining row is discharged.",
+    },
     "III-1": {
         "formal_same_strength_status": "partial",
         "empirical_boundary_status": "required_open",
@@ -385,6 +540,12 @@ RECENTLY_VERIFIED_V1 = {
     "G13", "G12", "XVIII-6", "M32", "N4b", "M27", "M28", "M29",
     "M30", "M31", "M15", "M16", "M17", "M18", "M20", "M21", "M22",
     "N8b", "G11", "N1e", "VIII-12", "V-5",
+    "E6", "A1", "A2", "PH4", "PH4b", "PH4c", "PH5", "PH5a",
+    "D2", "D3", "D4", "D5", "D7", "D7b", "D7c", "D7d", "D8",
+    "D9", "D9b", "D9c", "D9d", "D9e", "D9g", "D9h", "D9i",
+    "D9j", "D9k", "D9l", "D9p", "D9p2", "D10a", "D10b", "D10c",
+    "D10d", "D10g", "D11b", "D11e", "D11g", "EM1", "EM2", "EM3",
+    "EM4", "EM5", "EM6", "U1", "U2", "U4", "U5", "U6", "U7",
 }
 
 
@@ -399,10 +560,18 @@ RECENTLY_VERIFIED_V2 = {
 
 
 def physics_claims(row: dict[str, object], override: tuple[str, ...]) -> tuple[str, ...]:
+    """Return admitted claim identities regardless of their categorical branch.
+
+    Physics owns the prior observation, not every dependency theorem that may
+    discharge it.  Filtering this field to ``SFT-PHYS-`` incorrectly reopened
+    mathematical, informational, chemical and materials results already
+    admitted at their categorically correct locations.
+    """
+
     explicit = tuple(
         claim
         for claim in row.get("explicit_v3_claim_ids", ())
-        if isinstance(claim, str) and claim.startswith("SFT-PHYS-")
+        if isinstance(claim, str) and claim.startswith("SFT-")
     )
     return tuple(dict.fromkeys(explicit + override))
 

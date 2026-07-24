@@ -344,14 +344,38 @@ The current ledger is 102 same-strength closed and 396 open. Thirty-one open
 rows have a precise partial or versioned-successor boundary; the remaining 385
 are still unreviewed mappings and must not be treated as 385 absent laws.
 
+24. Cross-branch and first-block same-strength reconciliation is now durable:
+    - the ledger builder retains every admitted `SFT-*` claim identity instead
+      of incorrectly deleting non-Physics claim prefixes;
+    - thirteen Physics-owned observations already closed by their correctly
+      categorized Mathematics or Information receipts are now recognized;
+    - forty-nine additional V1 wave, spacetime, field, gravity, force-sector,
+      electroweak and exact-domain observations were reviewed against their
+      complete admitted V3 receipts and closed only where the later result is
+      same-strength or stronger;
+    - twenty-one stronger rows were deliberately left open with precise
+      successor boundaries, including exact lattice dispersion, Walsh support
+      uncertainty, orbital-stability dimension bounds, post-Newtonian fixed
+      points, contracted-Bianchi conservation, full exterior Schwarzschild
+      closure, quadrupole power, gluon massless/confining coexistence, massive
+      mediator range and no-absence symmetry breaking.
+
+The live ledger after this review is 164 same-strength closed and 334 open.
+Fifty-two open rows now have a precise partial or versioned-successor boundary;
+276 remain unmapped and require review. This supersedes the 102/396 atomic
+comparison snapshot above. No new physical law was generated during this
+reconciliation pass, and no stronger prior result was closed by a merely broad
+or nominally related claim.
+
 ## Active group
 
 Receipt-level reconciliation of the remaining atomic, nuclear,
 island-of-stability and particle-prediction obligations against the complete
 live V3 Physics corpus. The cubic and hydrogen post-seal comparisons are
-finished and must not be regenerated. The molecular successor is genuinely
-open. Do not generate any other law until its obligation has been shown absent
-rather than merely unmapped.
+finished and must not be regenerated. The atomic precision, molecular and
+newly registered stronger field/gravity successors are genuinely open. Continue
+reviewing the remaining 276 unmapped rows; generate a new law only after its
+obligation has been shown absent rather than merely unmapped.
 
 The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
 five-claim atomic/spectral source, execution, validator and evidence modules are
