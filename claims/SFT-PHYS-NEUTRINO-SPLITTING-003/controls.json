@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NEUTRINO-SPLITTING-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:bffb647896f78e999ca001940f829ac69bbf25f858dc9617d81c14aa5e9bc883"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7f28bd60d0a82607fc553c23fb62ef1e6155ac819f6d5d01c6b66c0adb0e6580"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8dc26c8a1ca7c3362efda86a14f0caf220a47611534bafe669342b4c26812cfa"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:6ef1d94bf5cc0d6a631a199c3dc817a203e04bd4d546d6075b4a50dd476d3d91"
+    }
+  ]
+}

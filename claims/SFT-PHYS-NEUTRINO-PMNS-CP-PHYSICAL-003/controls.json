@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:22174211eab4cf8c4c4e0a5cbe2c5142b73bc60e9f24c9f9e94f611df751695a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ad207c162a66d6615c0f9aa00e03d44fe60d0c90115e59527b864b203ec11aa8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:97d462bfe73083fb33887ac148411ef5b9984290fc705805d438f11c77118546"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7bcda760e7ab87c86ff371ad2e7db7461326aeedcaa6399a00436813df78ab81"
+    }
+  ]
+}

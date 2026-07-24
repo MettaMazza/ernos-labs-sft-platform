@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-QUARK-INVARIANTS-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:701e492976ce746f77d3d3a66e774e734480b45b9f5e0e584766a2cf3f0b35c1"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:5aea5f9105680ae4d40b236454cf2d039c658066468b3f344b9509043ea2114a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:58a26c819a69b30efc6ddc9625bac241135323a3d711a154728da7ea2071c3ef"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8912df316fc73ceefe8f14f5001820bf1b8b08c75e789fd2e7b88903d677baed"
+    }
+  ]
+}

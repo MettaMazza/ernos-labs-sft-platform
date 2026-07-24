@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-QUARK-CUBICS-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:61410ccc1145885dfc11eca3770442ad2bef5e540aa5dbb9fb8cd32a7ee1ae69"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b32992ae11355f4c1222ac08e26ec9285ac6c9f5f1a3cb45281bdac6feb5bd24"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:85127dfdb5b409fc2dae381443a60cbe2f809ea31e7d5355d5dbb886018d8687"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d70b91bb4102715e1376abb8ad5828a0e39ba029cdacba5fbd54608c46667cdb"
+    }
+  ]
+}

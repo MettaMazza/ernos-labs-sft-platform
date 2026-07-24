@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-PROTON-ELECTRON-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:850ea0d650a082e616ebcee9b5f92d0a3aae5663cad409e0d31d849411efcbb3"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4b173236c3f303a862a783db2b06a8e11251661e35916f8e02934273bfbfd62c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:71d55a7bb4d79fb1bc40b9039b64c7c49ea33f495a91a82bb6ef5b1f462eeeee"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ddfe5ccdacb15c5b2a6f890302d3fd4ba72453a56e27965b63f159f4675eef41"
+    }
+  ]
+}

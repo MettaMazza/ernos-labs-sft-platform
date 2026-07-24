@@ -117,6 +117,34 @@ temperature calibration, information recovery, wormholes, warp transport and
 physical closed timelike curves are not observed in the registered vector and
 remain explicit predictions or admissibility boundaries.
 
+14. Matter, flavour and particle-value formal reconstruction, now sealed:
+   - quark invariants `sha256:8dad6c72f49f916be9fd5d4aba1c3837e86795580ef246403098aed2a2b34b63`;
+   - quark cubics `sha256:e6fccd6c428a5ee8c9126ae25ef145d8c5780d69465d1bf878d3ff39b34969e3`;
+   - quark terminal dressing `sha256:4156d17fa99d73374151d8abebba074fb43f2d9852ae3c3e15564f8a49dd7f6e`;
+   - CKM fibre form `sha256:2cf6948eb88b328bc6efb24b394a37cb8c6d2c32044196fa39ae189488976ea3`;
+   - CKM physical form `sha256:beaa25910b1a8fb944c90bca43b8cf07fec997756bb3cf3b96724133eee18d4a`;
+   - proton/electron algebraic graph `sha256:456305f867a1afc75a47afa355364f48132b901c4c1f0f7a7ace9a40be64b988`;
+   - neutrino splitting `sha256:037d94c3ae94a015aa5177ee829fcd77e1137f5cdb10cfb2a9476f7a4bf4f5b7`;
+   - positive neutrino masses `sha256:049c0ce9ac0b05591b8636141be26c976a31f39aabb5941ad6aca5ffb60dd7fd`;
+   - physical PMNS/CP `sha256:6cc0b2828e8a304fd80c274f6e9a2e722cd1bebd68cff071f4c394bf25c872bd`;
+   - Majorana discriminator `sha256:da6688fb7442a5d3f4e3aa39f745c04aebc87102af60186b6e1bcd4e7078345e`;
+   - neutrinoless-double-beta noncancellation `sha256:3b7bc18e1160fe2a3633ce7cba15b9c3001f55ed73516ef9a6a6db474292f6fb`;
+   - lepton magnetic-anomaly carrier `sha256:e0a6844ac70a6e929c5e23ed576df2ea5c13eb4a05d33b148b2b3ad75a4c4f6f`.
+
+These twelve receipts are immutable.  A missing exact measurement does not
+weaken a sealed exact value: the top/charm ratio, Majorana character and
+neutrinoless-double-beta result remain closed predictions until direct tests
+exist.  The post-seal source vector is registered at
+`sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe`.
+Only raw measured values and uncertainties enter empirical validation;
+consensus-model interpretations are excluded from the evidence path.
+
+The matter/flavour empirical claims have not yet been admitted.  Their current
+comparison exposes successor obligations for the proton/electron precision
+ratio, CKM `s23`, and complete electron/muon anomaly.  Those successors must be
+generated and selected by Fold type and uniqueness before the already sealed
+measurements are used again as comparison objects.
+
 ## Active group
 
 Matter, flavour and particle-value reconstruction:
