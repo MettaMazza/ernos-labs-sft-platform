@@ -1,10 +1,13 @@
 # Chemistry frontier boundary
 
-The frozen Chemistry inventory contains 86 obligations and all 86 are
-model-admitted. The complete branch manuscript and release evidence are built,
+The archived Chemistry inventory contains 86 obligations and all 86 are
+model-admitted at their registered boundaries. The v1 branch manuscript and release evidence are built,
 proofread, locally verified and published at DOI
 `10.5281/zenodo.21531455` with matching GitHub release
 `chemistry-v1.0.0`.
+
+Current branch completion is reopened for the complete V1/V2 owner and
+same-strength audit and corrected categorical placement of Physics constants.
 
 ## Preserved failed prerequisite executions
 

@@ -1,11 +1,11 @@
 # Reversible and Quantum Computation branch status and review guide
 
-Status: `frozen_complete`; standalone paper: `published`; publication:
+Status: `published_v1_current_reconciliation_open`; standalone paper: `published`; publication:
 `10.5281/zenodo.21518313`.
 
 Paper: [The Quantum Fold Machine](../publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md)
 
-## Closed scope
+## Archived claim-set scope
 
 The branch contains 21 claims: complete reversible computation; Fold quantum
 information units and composition; superposition-equivalent support; phase and
@@ -15,7 +15,10 @@ tolerance; simulation; verification; learning; operational classical-quantum
 correspondence; and computational limits.
 
 The grammars contain 5,376 candidates and exactly 21 survivors. Every claim is
-depth-independently closed, controlled, independently replicated and admitted.
+depth-independently closed, controlled, independently replicated and admitted
+at their registered boundaries. Current branch completion remains blocked until
+every Quantum-Computation-owned V1/V2 result has a same-strength V3
+disposition.
 The operational kernel uses exact Fold words, finite phase-label cycles,
 pair-cell joint support, predecessor fibres, bijections and complete observation
 records. It imports no complex amplitude, imaginary or irrational proof value,

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-HALF-ONE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the One as the proper half-One ground",
+      "kind": "false_premise",
+      "observed_behavior": "the whole-selection candidate does not survive",
+      "passed": true,
+      "receipt_hash": "sha256:932f9927096ac22611767389ede7bcb475253b4893c5217016fa46da794a0870"
+    },
+    {
+      "expected_behavior": "reject changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:a100fc522c0df37fd0e0b75aa91cec82a224c73202c30cad2dc0100c34d1d0c0"
+    },
+    {
+      "expected_behavior": "reject a changed half-One coordinate",
+      "kind": "tampered_artifact",
+      "observed_behavior": "only one-of-two self-junctions exactly to the One",
+      "passed": true,
+      "receipt_hash": "sha256:b72673264e9e945bbd28821fe1b7f6934b9663fae2e3ebfc2c935fd8a676b2fe"
+    },
+    {
+      "expected_behavior": "keep complement and phase antipode distinct",
+      "kind": "boundary",
+      "observed_behavior": "half-One complements to half-One but its half-turn translation casts to the One",
+      "passed": true,
+      "receipt_hash": "sha256:39d4091d4cfbbffd6949ec1021c109772dd7b6f36711ff79b61a3845117e7353"
+    }
+  ]
+}

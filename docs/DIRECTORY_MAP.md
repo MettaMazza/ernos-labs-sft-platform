@@ -18,10 +18,17 @@
 - `sft/computation/` - classical computational science.
 - `sft/quantum_computation/` - reversible and quantum computation.
 - `sft/physics/` - physical laws.
-- `sft/chemistry_materials/` - chemistry and materials.
+- `sft/chemistry/` - chemical identity, periodicity, bonding and reactions.
+- `sft/materials/` - material structure, phases and response.
+- `sft/chemistry_materials/` - legacy routing marker only; no new derivation
+  belongs here.
 - `sft/biology/` - biological sciences.
+- `sft/consciousness_cognitive_science/` - substrate-independent
+  consciousness, cognition, self, binding and qualia obligations.
 - `sft/earth_environment/` - Earth and environmental sciences.
 - `sft/astronomy_cosmology/` - astronomy and cosmology.
+- `sft/social_collective_systems/` - social and collective-system laws that are
+  not merely applications of another branch.
 - `sft/engineering_translation/` - downstream engineering translations.
 
 ## Proof and evidence
@@ -41,6 +48,9 @@
   earlier SFT work; answer artifacts are excluded from derivation execution,
   while their claims and values define required reconstruction targets.
 - `applications/frontier/` - placeholders for later clean application rebuilds.
-- `publications/` - current and superseded publication artifacts after explicit
-  authorization.
+- `publications/current/` - compatibility location for the eight immutable v1
+  paper source trees; “current” in this path is historical and does not assert
+  current scientific completeness.
+- `publications/superseded/` - older pre-branch publication artifacts.
+- `publications/` - paper protocols, successor plans and publication records.
 - `tools/` - repository validation and reproducibility tools.

@@ -8,6 +8,7 @@ from pathlib import Path
 
 from sft import BUILD_GENERATION, BUILD_PHASE
 from sft.engine import ENGINE_ID, ROOT_THEOREM
+from sft.engine.publication_compliance import BRANCH_PREFIXES, audit_branch
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,6 +18,10 @@ def repository_status() -> dict[str, object]:
     census_path = ROOT / "census" / "claims.json"
     census = json.loads(census_path.read_text(encoding="utf-8"))
     claims = census["claims"]
+    publication = {
+        branch: audit_branch(ROOT, branch).current_publication_ready
+        for branch in BRANCH_PREFIXES
+    }
     return {
         "generation": BUILD_GENERATION,
         "phase": BUILD_PHASE,
@@ -27,6 +32,8 @@ def repository_status() -> dict[str, object]:
         ),
         "remote_publication": "github-public-zenodo-10.5281/zenodo.21514890",
         "future_generation": "v4-sft-derived-self-hosted",
+        "current_branch_publication_ready": publication,
+        "lineage_reconciliation": "open_blocking",
     }
 
 

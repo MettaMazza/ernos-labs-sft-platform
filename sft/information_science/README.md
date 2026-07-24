@@ -5,7 +5,8 @@ observation structure. It does not assume a bit, stochastic source,
 probability distribution, logarithmic entropy, channel metric, code distance,
 complex amplitude or quantum operation.
 
-The dependency-ordered inventory is:
+The archived v1 dependency-ordered claim-set inventory is listed below. The
+branch remains open for full V1/V2 owner and same-strength reconciliation:
 
 1. symbols and distinguishability;
 2. encoding and decoding;

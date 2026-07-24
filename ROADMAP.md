@@ -1,5 +1,14 @@
 # Dependency-ordered reconstruction roadmap
 
+## Current gate correction
+
+Every published branch has been reopened for complete V1/V2 categorical-owner
+and same-strength reconciliation. Checked items below record work admitted at
+its exact claim boundary; they do **not** presently mean that the whole branch
+passes the stronger current-knowledge publication gate. The authoritative
+status is `census/prior_obligation_ownership.json` together with the two prior
+observation censuses.
+
 ## Phase A - constitutional scaffold
 
 - Establish repository boundaries and contributor guidance.
@@ -8,6 +17,10 @@
 - Validate that the repository reports no admitted v3 science yet.
 
 ## Phase B - foundation
+
+Status: current successor reconstruction closed; 32 of 32 prior obligations
+and 16 of 16 required theorems are closed. Foundation Branch Paper 002 is the
+current exhaustive account.
 
 - Reconstruct exact counted values and positive rational parts.
 - Reconstruct the One and permitted operations.
@@ -18,8 +31,9 @@
 
 ## Phase C - mathematical foundations
 
-Status: complete and frozen at the declared V3 generated finite boundary; the
-standalone exhaustive branch paper is published.
+Status: next active reconstruction branch. The twelve-claim paper remains
+published archival evidence; current completion requires its own full owner and
+same-strength audit and successor reconstruction.
 
 - [x] Exact arithmetic and number structure.
 - [x] Discrete mathematics and combinatorics.
@@ -46,9 +60,9 @@ standalone exhaustive branch paper is published.
 - [x] Scientific computation.
 - [x] Reversible and quantum computation.
 
-The Classical Computation inventory is frozen complete with 113 admitted claims
+The archived Classical Computation inventory contains 113 admitted claims
 and 28,928 generated candidates. The Reversible and Quantum Computation
-inventory is frozen complete with 21 admitted claims and 5,376 generated
+archived inventory contains 21 admitted claims and 5,376 generated
 candidates. Their separate exhaustive papers and evidence releases are
 published at DOI `10.5281/zenodo.21518311` and DOI
 `10.5281/zenodo.21518313`, respectively.
@@ -64,10 +78,10 @@ published at DOI `10.5281/zenodo.21518311` and DOI
 - [x] Fluids, plasmas and condensed structures.
 - [x] Physics-to-Astronomy/Cosmology boundary.
 
-The published Physics v1 inventory is frozen at 132 required and eight
+The published Physics v1 inventory was frozen at 132 required and eight
 supplemental admitted claims, 35,840 generated candidates and fourteen exact
 measured-value relation checks. Its 331-page paper and evidence release are
-published at DOI `10.5281/zenodo.21520881`. Seventeen later Physics admissions,
+published at DOI `10.5281/zenodo.21520881`. Twenty later Physics admissions,
 including the inverse fine-structure value and its post-seal CODATA check, make
 that paper an immutable earlier version rather than the current complete
 branch. A full prior-observation value/discriminator audit blocks the Physics
@@ -75,9 +89,10 @@ successor and every later final-TOE completion claim.
 
 ## Phase F - chemistry, materials and life
 
-- [x] Chemical elements, bonding, reactions and periodic structure: 86/86
-  Chemistry laws published at DOI `10.5281/zenodo.21531455`.
-- [x] Molecular and material organization: 84/84 Materials Science laws,
+- [x] Archived Chemistry inventory: 86/86 listed laws published at DOI
+  `10.5281/zenodo.21531455`; current completion reopened for full reconciliation
+  and corrected Physics dependency order.
+- [x] Archived Materials inventory: 84/84 listed Materials Science laws,
   21,504 exact candidates, complete post-seal NIST/BIPM correspondence and
   standalone exhaustive branch paper published at DOI
   `10.5281/zenodo.21532482`.
@@ -85,8 +100,9 @@ successor and every later final-TOE completion claim.
 - Evolution, ecosystems and biological dynamics.
 - Earth and environmental systems.
 
-Before another science branch begins, the Physics paper and census receive a
-dedicated constant/value audit. Every claimed physical constant or
+Before another science branch begins, every prior result receives exactly one
+categorical owner. The Physics paper and census then receive the complete
+constant/value reconstruction. Every claimed physical constant or
 discriminator must have its own Fold derivation, pre-measurement value seal,
 post-seal authoritative value/units/uncertainty comparison and root trace.
 This audit specifically includes the inverse fine-structure constant and is

@@ -1,49 +1,63 @@
-# Physics branch status
+# Physics branch reconstruction status
 
-Status: `frozen_complete_and_published`; publication action: `authorized_and_executed`.
+Status: `open_blocking`; Physics Branch Paper 001 is preserved as a published
+archival artifact but is superseded for current-completeness claims.
 
-The frozen Physics inventory contains 132 obligations across ten ordered
-subbranches. Every obligation is model-admitted through the single engine:
+## Why Physics is open
 
-1. measurement and metrology: 12/12;
-2. mechanics: 15/15;
-3. interactions and fields: 14/14;
-4. waves: 10/10;
-5. thermodynamics and statistical physics: 15/15;
-6. physical quantum correspondence: 16/16;
-7. matter, particles and nuclei: 15/15;
-8. spacetime and gravitation: 13/13;
-9. continua and collective matter: 15/15; and
-10. the Physics-to-Astronomy/Cosmology boundary: 7/7.
+The archived paper contains 132 required Physics claims and eight supplemental
+validation claims. The live corpus contains 160 Physics claims. Twenty live
+claims are therefore absent from the paper, and the larger V1/V2 physical-value
+reconciliation remains incomplete.
 
-Each required claim has a complete 256-form candidate product, 256 decisions,
-one survivor, depth-independent closure, four passing adverse controls and an
-implementation-distinct reconstruction. Natural-law claims additionally carry
-post-seal external evidence. The required inventory therefore contains 33,792
-candidates, 132 survivors and 528 passing mandatory controls.
+The earlier publication gate verified the frozen inventory against its receipts
+and manuscript. It did not prove that the frozen inventory included every
+known prior Physics result. The successor gate now requires both.
 
-Eight supplemental measured-value claims add exact interval tests for earlier
-measurement, mechanics, field, wave and thermal relations. Together with the
-measured-value tests embedded in later required claims, the branch contains 14
-exact positive-rational value correspondences. Each relation was sealed before
-target release, matched its official external uncertainty interval and rejected
-a deliberately displaced interval. The external bodies represented in the
-evidence are BIPM, NIST/CODATA, NIST ASD, PDG, IAEA, IAPWS, GWOSC, CERN Open
-Data and NASA LAMBDA/COBE FIRAS.
+## Binding completion standard
 
-The exhaustive paper is:
+Physics Paper 002 cannot be built as a complete paper until:
 
-- `publications/current/physics/FROM_FOLD_TO_PHYSICS.md`;
-- rendered PDF: `output/pdf/from-fold-to-physics-branch-paper-001.pdf`;
-- exact evidence map: `publications/current/physics/evidence_map.json`; and
-- local publication gate: `publications/current/physics/manifest.json`.
+1. all 356 V1 rows and 407 V2 steps have been reviewed against Physics and
+   every Physics-owned atomic component has exactly one categorical owner;
+2. every Physics-owned row has an explicit same-strength V3 disposition;
+3. every claimed physical value is independently forced and sealed before
+   authoritative measurement comparison;
+4. values, units, uncertainty, source identity, complete rows and falsifiers
+   are preserved;
+5. failed results remain visible and keep the relevant obligation open unless
+   a separately generated lawful successor closes it;
+6. the successor evidence map equals the complete live Physics census; and
+7. `python3 tools/verify_publication_compliance.py --branch physics
+   --require-ready` passes.
 
-The paper is 331 A4 pages and covers all 132 required derivations plus all eight
-supplemental value admissions. Its publication gate passes with explicit
-authorization. The open archival edition is DOI
-[`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881), and the
-complete Markdown paper is the GitHub repository landing page.
+## Categorical paper rule
 
-Application experiments in Protein, Chess, Go and Unison remain excluded.
-Astronomical object census, cosmic historical reconstruction, chemistry and
-materials remain later branch work rather than hidden extensions of Physics.
+Fine structure, lepton and particle values, force couplings, nuclear constants,
+spatial dimension, inverse-square dilution and universal physical cosmology
+relations belong in Physics. Chemistry and Materials may cite their immutable
+receipts and derive downstream consequences, but cannot be their first or
+principal exhaustive derivation papers.
+
+Astronomy/Cosmology separately owns cosmic objects, populations, chronology,
+historical state and observational interpretation.
+
+## Current admitted progress
+
+The twenty post-publication Physics claims remain admitted at their exact
+boundaries. They include generator three, stable three-space, boundary rank
+two, inverse-square dilution and validation, terminal inverse fine structure
+and CODATA validation, orbit capacity, colour coupling, nuclear closures and
+validation, atomic endpoint, the charged-lepton formal invariant and terminal
+empirical refinement, Koide validation, dark/baryon ratios, Hubble calibration,
+spatial flatness and the refined cosmic budget.
+
+These receipts are progress toward the successor. They do not by themselves
+close the complete Physics obligation inventory.
+
+See:
+
+- `audits/PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md`;
+- `audits/PHYSICS_PRIOR_VALUE_AUDIT_2026-07-24.md`;
+- `census/prior_obligation_ownership.json`; and
+- `census/lineage_reconciliation.json`.

@@ -17,6 +17,20 @@ ROW = re.compile(r"^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| (.*) \|$")
 
 
 EXPLICIT_MAPPINGS: dict[str, tuple[str, ...]] = {
+    "Q1": (
+        "SFT-FOUNDATION-ONE-001",
+        "SFT-FOUNDATION-PART-001",
+        "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+    ),
+    "Q2": ("SFT-FOUNDATION-EXACT-OPERATIONS-001",),
+    "Q4": ("SFT-FOUNDATION-FOLD-ASSEMBLY-001", "SFT-FOUNDATION-COUNT-001"),
+    "Q7": ("SFT-FOUNDATION-FOLD-DYNAMICS-001",),
+    "Q11": (
+        "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+        "SFT-FOUNDATION-FOLD-DYNAMICS-001",
+    ),
+    "Q13": ("SFT-FOUNDATION-FOLD-DYNAMICS-001",),
+    "Q14": ("SFT-FOUNDATION-FOLD-DYNAMICS-001",),
     "M15": ("SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",),
     "M16": (
         "SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001",
@@ -40,6 +54,41 @@ EXPLICIT_MAPPINGS: dict[str, tuple[str, ...]] = {
 
 
 CLOSED_DISPOSITIONS: dict[str, dict[str, object]] = {
+    "Q1": {
+        "status": "closed_by_atomic_foundation_reconstruction",
+        "closed": True,
+        "ledger": "census/foundation_prior_obligations.json",
+    },
+    "Q2": {
+        "status": "closed_by_exact_operational_reconstruction",
+        "closed": True,
+        "receipt_hash": "sha256:5c0c14bcd2aa4f1df7eba1618f59ee9aa56be028aa6a8aa78fcec4d28139970d",
+    },
+    "Q4": {
+        "status": "closed_by_depth_independent_fold_support_reconstruction",
+        "closed": True,
+        "receipt_hash": "sha256:8fa632be9e4048a5f2cf6749da4110e3a7b8b4d937051610dcce0583d7ea610d",
+    },
+    "Q7": {
+        "status": "closed_by_exact_even_partition_fold_invariance",
+        "closed": True,
+        "receipt_hash": "sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675",
+    },
+    "Q11": {
+        "status": "closed_by_exact_domain_and_fold_closure",
+        "closed": True,
+        "receipt_hash": "sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675",
+    },
+    "Q13": {
+        "status": "closed_by_exact_phase_antipode_reconstruction",
+        "closed": True,
+        "receipt_hash": "sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675",
+    },
+    "Q14": {
+        "status": "closed_by_exact_two_preimage_fold_fibre_reconstruction",
+        "closed": True,
+        "receipt_hash": "sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675",
+    },
     "M15": {
         "status": "closed_by_exact_postseal_empirical_validation",
         "closed": True,

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+  "controls": [
+    {
+      "expected_behavior": "reject an axiom or free parameter",
+      "kind": "false_premise",
+      "observed_behavior": "the route halts when parameter freedom is false",
+      "passed": true,
+      "receipt_hash": "sha256:62b944027904d1c5f2056f6e9d8bc668dea529f18bf57714724483e3a4b2a2aa"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs and root custody fails",
+      "passed": true,
+      "receipt_hash": "sha256:72019b8d60501d5b0409ee1b264215a3fb969ed5d9f26fb6d48cf53f5221284c"
+    },
+    {
+      "expected_behavior": "reject a second survivor or discarded failure",
+      "kind": "tampered_artifact",
+      "observed_behavior": "both altered routes halt",
+      "passed": true,
+      "receipt_hash": "sha256:41d75269cfbc11cfd6ae0b6ee3d48356e64242f50266ae60494d81da4501eeab"
+    },
+    {
+      "expected_behavior": "reject pre-seal target access and unclosed dependencies",
+      "kind": "boundary",
+      "observed_behavior": "both capability violations halt while the complete path passes",
+      "passed": true,
+      "receipt_hash": "sha256:7591c90682bc057b2b8b102186fa8b63fdf332197b1d3b2ec48694fa0108071f"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject an unguarded reversed Take",
+      "kind": "false_premise",
+      "observed_behavior": "the exact carrier raises before constructing a forbidden part",
+      "passed": true,
+      "receipt_hash": "sha256:5c6e72a2eb565ca5fac8440fcd04358e5037eb5f6eb0a49320be76fcca1af9f9"
+    },
+    {
+      "expected_behavior": "reject changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:8e2f74c50aa905eb4f16b9fc9f5925508828336c4c178585b31eefc732a7ec52"
+    },
+    {
+      "expected_behavior": "reject a full turn represented as absence",
+      "kind": "tampered_artifact",
+      "observed_behavior": "casting two Ones returns the One",
+      "passed": true,
+      "receipt_hash": "sha256:b7677e88a7394b4d09228635dea030200138ecf107dba2f5ff13ed8873e2d8fc"
+    },
+    {
+      "expected_behavior": "reject zero, signed, inexact and beyond-One proof carriers",
+      "kind": "boundary",
+      "observed_behavior": "all four hostile carrier constructions halt",
+      "passed": true,
+      "receipt_hash": "sha256:aa257dc56f18168fe718d5756747d4f45563428a4d2d2aab33756cc52af7c780"
+    }
+  ]
+}

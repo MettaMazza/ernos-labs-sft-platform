@@ -1,49 +1,44 @@
-# Materials Science branch
+# Materials Science branch status
 
-Status: `inventory_frozen_all_ten_subbranches_model_admitted_published`
+Status: `published_v1_current_reconciliation_open`.
 
-The V3 Materials Science inventory contains 84 obligations in ten ordered
-subbranches. All 84 are model-admitted through the single fail-closed engine.
-The complete target-blind prediction surface was sealed before NIST or BIPM
-source identities were selected. It contains 21,504 generated candidates and
-decisions, 84 unique survivors, 84 depth-independent closure certificates,
-336 passing adverse controls, 84 implementation-distinct reconstructions and
-84 post-seal authority correspondences. A separate graph audit confirms all
-84 claims trace through admitted dependencies to the premise-free root
-theorem.
+Materials Branch Paper 001 and its 84 admitted claims remain preserved at DOI
+`10.5281/zenodo.21532482` and GitHub release `materials-v1.0.0`. Its evidence
+files record 21,504 candidates, 84 survivors, 336 adverse controls, independent
+reconstructions and post-seal authority correspondences at the declared
+boundaries.
 
-The subbranches are:
+The branch is reopened for the complete V1/V2 categorical-owner and
+same-strength audit. The earlier inventory's internal completeness cannot prove
+that every prior Materials result was included.
 
-1. measurement, identity and traceability (7);
-2. crystals, reciprocal support and quasicrystals (10);
-3. defects and microstructure (8);
-4. electronic materials and semiconductors (9);
-5. superconducting, superfluid and topological matter (9);
-6. mechanical response (8);
-7. thermal, magnetic and optical response (8);
-8. material classes and bulk correspondence (9);
-9. processing and degradation (8); and
-10. advanced functional and sustainable materials (8).
+## Correct categorical boundary
 
-Five exact structural consequences receive explicit count certificates: six
-simple-cubic neighbours; periodic rotation orders one, two, three, four and
-six with five excluded; seven crystal systems; fourteen Bravais classes; and
-three acoustic branches. Material-specific moduli, conductivities, strengths,
-transition temperatures and similar magnitudes remain specimen-, method-,
-direction-, scale-, history- and condition-bounded records. They are not
-misrepresented as universal constants.
+Materials owns material organization and response: crystal and reciprocal
+support, defects, electronic materials, semiconductors, superconducting and
+topological matter, mechanical and thermal response, magnetism, optics,
+material classes, processing, degradation and functional materials.
 
-The exhaustive manuscript is the repository `README.md` and
-`publications/current/materials/FROM_FOLD_TO_MATERIALS.md`. The archival PDF is
-`output/pdf/from-fold-to-materials-branch-paper-001.pdf`. The published DOI is
-`10.5281/zenodo.21532482`; the release tag is `materials-v1.0.0`.
+Physics owns universal constants, particles, forces and physical cosmology.
+Chemistry owns chemical identities and transformations. Materials consumes
+those upstream receipts but does not rederive or reown their constants.
 
-## Mandatory regroup before the next branch
+Material-specific moduli, conductivities, strengths, transition temperatures
+and related quantities remain specimen-, method-, direction-, history- and
+condition-bounded unless a separate SFT claim genuinely forces a universal
+value.
 
-No later science branch starts automatically after Materials publication. The
-next task is a dedicated Physics constant/value audit. It must enumerate every
-constant and physical discriminator claimed by the V3 Physics corpus and
-require, for each, an independent Fold derivation, a pre-measurement sealed
-value, an authoritative post-seal comparison including units and uncertainty,
-and a root trace. The inverse fine-structure constant is explicitly in scope,
-but the audit must not assume it is the only omission.
+## Successor requirements
+
+Materials Paper 002 is required only after every Materials-owned prior result
+has an explicit same-strength V3 disposition and all required Physics and
+Chemistry dependencies are current. Its evidence map must equal the live
+Materials census and the current-compliance gate must pass.
+
+Run:
+
+```text
+python3 tools/verify_publication_compliance.py --branch materials --require-ready
+```
+
+The command presently halts as required.

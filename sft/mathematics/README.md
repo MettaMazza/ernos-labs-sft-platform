@@ -4,7 +4,8 @@ Mathematics is reconstructed from the admitted Foundation in a fixed dependency
 order. Conventional names appear only as post-derivation correspondence; they
 do not select any candidate, rule, proof value or boundary.
 
-The complete branch inventory has twelve obligations:
+The archived v1 claim-set inventory has twelve obligations. The branch remains
+open for full V1/V2 owner and same-strength reconciliation:
 
 1. `exact_arithmetic/` — exact positive traces, parts, refinement and held remainder;
 2. `discrete_mathematics/` — canonical finite collections, relations, maps and induction;

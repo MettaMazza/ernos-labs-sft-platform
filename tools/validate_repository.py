@@ -41,11 +41,14 @@ REQUIRED_FILES = (
     "census/claims.json",
     "census/execution_manifest.json",
     "census/branches.json",
+    "census/prior_obligation_ownership.json",
     "audits/v1_theorem_manifest_observation_census.json",
     "audits/v2_407_step_observation_census.json",
     "audits/physics_prior_value_audit_2026-07-24.json",
     "governance/claim.schema.json",
     "governance/engine_policy.json",
+    "sft/engine/publication_compliance.py",
+    "tools/verify_publication_compliance.py",
     "governance/engine_receipt.schema.json",
     "governance/execution_manifest.schema.json",
     "governance/experiment.schema.json",
@@ -60,10 +63,13 @@ REQUIRED_DIRECTORIES = (
     "sft/computation",
     "sft/quantum_computation",
     "sft/physics",
-    "sft/chemistry_materials",
+    "sft/chemistry",
+    "sft/materials",
     "sft/biology",
+    "sft/consciousness_cognitive_science",
     "sft/earth_environment",
     "sft/astronomy_cosmology",
+    "sft/social_collective_systems",
     "sft/engineering_translation",
     "sft/engine",
     "claims",
@@ -164,6 +170,12 @@ def validate() -> list[str]:
             errors.append("engine policy must protect the census and model-admitted receipt tree")
         if policy.get("contributor_executable_prediction_source_permitted") is not False:
             errors.append("official empirical prediction must reject contributor executable source")
+        if policy.get("branch_paper_requires_complete_prior_work_reconciliation") is not True:
+            errors.append("branch publication must require complete prior-work reconciliation")
+        if policy.get("branch_paper_requires_live_census_inventory_equality") is not True:
+            errors.append("branch publication must require equality with the live branch census")
+        if policy.get("zenodo_publication_requires_current_compliance_gate") is not True:
+            errors.append("Zenodo publication must require the current compliance gate")
 
     branches_path = ROOT / "census" / "branches.json"
     if branches_path.is_file():
@@ -171,6 +183,16 @@ def validate() -> list[str]:
         branch_ids = [branch.get("branch_id") for branch in branch_census.get("branches", [])]
         if not branch_ids or len(set(branch_ids)) != len(branch_ids):
             errors.append("branch census must contain unique registered branches")
+        required_scientific_branches = {
+            "foundation", "mathematics", "information_science", "computation",
+            "quantum_computation", "physics", "chemistry", "materials",
+            "biology", "consciousness_cognitive_science", "earth_environment",
+            "astronomy_cosmology", "social_collective_systems",
+            "engineering_translation",
+        }
+        missing_branches = sorted(required_scientific_branches - set(branch_ids))
+        if missing_branches:
+            errors.append("branch census is missing: " + ", ".join(missing_branches))
 
     prior_path = ROOT / "prior-work-ledger/manifest.json"
     if prior_path.is_file():
@@ -197,6 +219,30 @@ def validate() -> list[str]:
         steps = v2.get("steps", [])
         if [row.get("step") for row in steps] != list(range(1, 408)):
             errors.append("V2 observational census must retain steps 1 through 407 once and in order")
+
+    ownership_path = ROOT / "census/prior_obligation_ownership.json"
+    if ownership_path.is_file():
+        ownership = json.loads(ownership_path.read_text(encoding="utf-8"))
+        law = ownership.get("ownership_law", {})
+        if law.get("composite_source_rows_must_be_decomposed") is not True:
+            errors.append("composite prior source rows must be decomposed into atomic obligations")
+        if law.get("exactly_one_primary_owner_per_atomic_obligation_required") is not True:
+            errors.append("every atomic prior obligation must have exactly one primary owner")
+        if law.get("physical_constants_and_dimensionless_physical_values_owner") != "physics":
+            errors.append("physical constants and dimensionless physical values must be owned by Physics")
+        if not isinstance(ownership.get("assignment_complete"), bool):
+            errors.append("prior-obligation owner completion status must be boolean")
+        if ownership.get("assignment_complete") and len(ownership.get("source_entry_assignments", [])) != 763:
+            errors.append("complete prior-obligation ownership must cover all 763 source entries")
+        registered_owners = set(ownership.get("registered_branches", []))
+        if branches_path.is_file():
+            branch_ids = {
+                row.get("branch_id")
+                for row in json.loads(branches_path.read_text(encoding="utf-8")).get("branches", [])
+            }
+            missing_owners = sorted((branch_ids - {"application_frontier"}) - registered_owners)
+            if missing_owners:
+                errors.append("ownership registry is missing branch owners: " + ", ".join(missing_owners))
 
     return errors
 

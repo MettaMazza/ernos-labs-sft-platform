@@ -1,12 +1,13 @@
 # Information Science branch status and review guide
 
-Status: `frozen_complete`; standalone paper: published.
+Status: `published_v1_current_reconciliation_open`; standalone paper: archived
+and published.
 
 Paper: [From Distinction to Information](../publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md)
 
 DOI: [10.5281/zenodo.21516916](https://doi.org/10.5281/zenodo.21516916)
 
-## Closed scope
+## Archived claim-set scope
 
 The V3 Information Science branch contains twelve dependency-ordered claims:
 
@@ -27,8 +28,10 @@ The frozen inventory is
 [`publications/inventories/information_science.json`](../publications/inventories/information_science.json).
 It has no unclassified or frontier obligation. The twelve registered grammars
 contain 11,776 generated candidates and exactly twelve survivors. Every claim
-has depth-independent closure, a model-admitted engine receipt, four passing
-adverse controls and an implementation-distinct validation certificate.
+has depth-independent closure at its registered boundary, a model-admitted
+engine receipt, four passing adverse controls and an implementation-distinct
+validation certificate. Current branch completion remains blocked until every
+Information-Science-owned V1/V2 result has a same-strength V3 disposition.
 
 ## Exact domain and central result
 

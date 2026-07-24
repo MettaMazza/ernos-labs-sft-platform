@@ -85,11 +85,28 @@ an unregistered branch complete.
 
 A branch paper can be declared ready only when:
 
+- every prior source entry is reviewed against the branch, every entry with a
+  branch-owned component is explicitly decomposed, every resulting atomic
+  obligation has exactly one categorical owner, and reviewed non-owning entries
+  remain enumerated and hash-bound;
+- every prior result owned by the branch has a same-strength V3 disposition;
 - the branch's current-knowledge obligation inventory is frozen;
+- the inventory and manuscript evidence map equal the complete live branch
+  census;
 - every obligation has an accepted receipt at its required evidence status;
 - no obligation is unclassified or silently omitted;
 - all conditional and empirical boundaries are stated; and
 - the branch paper itself passes source, evidence-map and adverse-control checks.
+
+The claim-set gate and current-compliance gate are distinct. The first proves
+that a paper covers the inventory it declares. The second proves that the
+inventory itself did not hide known obligations. Both must pass for any new
+public release. The Zenodo publication command invokes the second gate before
+network mutation.
+
+Branch-specific review permits dependency-ordered successor papers while later
+branches remain open. The final TOE paper additionally requires the complete
+global all-branch atomic owner ledger.
 
 The final Theory of Everything paper can be declared ready only when every
 registered branch has a completed branch paper and the global census contains

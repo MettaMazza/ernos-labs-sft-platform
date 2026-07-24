@@ -85,7 +85,8 @@ Release contents:
 - complete evidence/source archive; and
 - SHA-256 checksum ledger.
 
-The canonical manuscript is
+The archived manuscript is
 [`publications/current/physics/FROM_FOLD_TO_PHYSICS.md`](../publications/current/physics/FROM_FOLD_TO_PHYSICS.md).
-It is copied byte-for-byte to the repository `README.md` as the current landing
-paper. Earlier branch papers and their DOI records remain unchanged.
+The repository landing page now reports the blocking correction rather than
+displaying any archival paper as the complete current account. Earlier branch
+papers and their DOI records remain unchanged.

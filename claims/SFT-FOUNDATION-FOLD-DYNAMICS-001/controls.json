@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-FOLD-DYNAMICS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a single-preimage Fold fibre",
+      "kind": "false_premise",
+      "observed_behavior": "every control image has two distinct generated preimages",
+      "passed": true,
+      "receipt_hash": "sha256:e83268614e456953e0e9f641234c40c87e29d9dbc29365636a5c8daf3aa630b5"
+    },
+    {
+      "expected_behavior": "reject changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:a100fc522c0df37fd0e0b75aa91cec82a224c73202c30cad2dc0100c34d1d0c0"
+    },
+    {
+      "expected_behavior": "reject a phase pair with unequal Fold images",
+      "kind": "tampered_artifact",
+      "observed_behavior": "all exact control pairs collide and the phase map is involutive",
+      "passed": true,
+      "receipt_hash": "sha256:0a526cc0b2267d9a2b8f79edb7ce1b5ce4b7a34e96bce8de4a356a897588018c"
+    },
+    {
+      "expected_behavior": "retain exact even-partition and first-cycle scope",
+      "kind": "boundary",
+      "observed_behavior": "six even partitions remain uniform and the one-third orbit closes in two",
+      "passed": true,
+      "receipt_hash": "sha256:34b67649fd5078b8fe9148f2b0d1b0136c5ec085ec39626fe17093e0bfb3fd9e"
+    }
+  ]
+}

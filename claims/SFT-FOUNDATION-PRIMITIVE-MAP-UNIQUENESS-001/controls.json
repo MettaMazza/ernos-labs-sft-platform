@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-FOUNDATION-PRIMITIVE-MAP-UNIQUENESS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject identity as a generator",
+      "kind": "false_premise",
+      "observed_behavior": "identity leaves one-third unchanged and is injective",
+      "passed": true,
+      "receipt_hash": "sha256:fd2da653569af7967b51f930a30e6370304a00b168042c9179d18cdf3fd8e5ea"
+    },
+    {
+      "expected_behavior": "reject changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:a100fc522c0df37fd0e0b75aa91cec82a224c73202c30cad2dc0100c34d1d0c0"
+    },
+    {
+      "expected_behavior": "reject a shifted or second survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the 84-form prefix contains one declared survivor at base-four rank four",
+      "passed": true,
+      "receipt_hash": "sha256:598b2c23b2eba24776f6506cc32f37123f841c7290c456a4ebf0b1cb2e3e6225"
+    },
+    {
+      "expected_behavior": "retain the explicit grammar and least-size scope",
+      "kind": "boundary",
+      "observed_behavior": "Fold is noninjective and closes the exact two-cycle while larger words remain nonminimal",
+      "passed": true,
+      "receipt_hash": "sha256:7ad75ef148ce5118bca1ba090b0bee66372e4de16547f1fc5d942dd4c9e2329a"
+    }
+  ]
+}

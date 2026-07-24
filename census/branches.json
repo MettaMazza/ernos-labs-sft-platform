@@ -1,17 +1,19 @@
 {
   "schema": "sft-v3-branch-census/1",
   "branches": [
-    {"branch_id": "foundation", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "mathematics", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "information_science", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "computation", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "quantum_computation", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "physics", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "chemistry", "inventory_status": "frozen_complete", "paper_status": "published"},
-    {"branch_id": "materials", "inventory_status": "pending", "paper_status": "not_ready"},
+    {"branch_id": "foundation", "inventory_status": "current_reconstruction_closed_32_of_32_prior_obligations", "paper_status": "successor_v2_ready_to_publish"},
+    {"branch_id": "mathematics", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
+    {"branch_id": "information_science", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
+    {"branch_id": "computation", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
+    {"branch_id": "quantum_computation", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
+    {"branch_id": "physics", "inventory_status": "reopened_live_corpus_and_prior_value_reconciliation", "paper_status": "published_v1_superseded_successor_blocked"},
+    {"branch_id": "chemistry", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
+    {"branch_id": "materials", "inventory_status": "historical_frozen_scope_current_reconciliation_open", "paper_status": "published_v1_successor_blocked"},
     {"branch_id": "biology", "inventory_status": "pending", "paper_status": "not_ready"},
+    {"branch_id": "consciousness_cognitive_science", "inventory_status": "registered_not_started", "paper_status": "not_ready"},
     {"branch_id": "earth_environment", "inventory_status": "pending", "paper_status": "not_ready"},
     {"branch_id": "astronomy_cosmology", "inventory_status": "pending", "paper_status": "not_ready"},
+    {"branch_id": "social_collective_systems", "inventory_status": "registered_not_started", "paper_status": "not_ready"},
     {"branch_id": "engineering_translation", "inventory_status": "pending", "paper_status": "not_ready"}
   ],
   "lineage_reconciliation": {
@@ -19,6 +21,11 @@
     "registry": "census/lineage_reconciliation.json",
     "required_for_final_branch_completion": true,
     "historical_or_published_status_is_not_v3_reconstruction": true
+  },
+  "prior_obligation_ownership": {
+    "status": "open_blocking",
+    "registry": "census/prior_obligation_ownership.json",
+    "required_for_each_branch_successor": true
   },
   "final_toe_paper_status": "not_ready"
 }

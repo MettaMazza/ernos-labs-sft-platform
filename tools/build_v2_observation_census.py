@@ -21,7 +21,16 @@ OUTPUT = ROOT / "audits/v2_407_step_observation_census.json"
 
 
 EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
-    4: ("SFT-PHYS-STRUCT-GENERATOR-THREE-001",),
+    3: (
+        "SFT-FOUNDATION-ONE-001",
+        "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+        "SFT-FOUNDATION-DERIVATION-TRACE-001",
+    ),
+    4: (
+        "SFT-PHYS-STRUCT-GENERATOR-THREE-001",
+        "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+        "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    ),
     5: (
         "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
         "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001",
@@ -34,6 +43,8 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
     8: ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
     14: ("SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",),
     15: ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
+    24: ("SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-HALF-ONE-001"),
+    25: ("SFT-FOUNDATION-PRIMITIVE-MAP-UNIQUENESS-001",),
     32: ("SFT-PHYS-SPACE-DIMENSION-THREE-001",),
     43: (
         "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001",
@@ -108,6 +119,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-CHEM-STEREO-ENANTIOMER-001",
         "SFT-CHEM-STEREO-DIASTEREOMER-001",
     ),
+    182: ("SFT-FOUNDATION-FOLD-DYNAMICS-001",),
     187: ("SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",),
     193: (
         "SFT-MAT-MECH-STRESS-STRAIN-001",
@@ -121,6 +133,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
     ),
     201: ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
     249: ("SFT-CHEM-THERMO-REACTION-001", "SFT-CHEM-THERMO-DIRECTION-001"),
+    256: ("SFT-FOUNDATION-DERIVATION-TRACE-001",),
     266: (
         "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
         "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001",
@@ -271,8 +284,12 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-QUANTUM-LEARNING-001", "SFT-QUANTUM-CLASSICAL-CORRESPONDENCE-001",
         "SFT-QUANTUM-LIMITS-001",
     ),
-    401: ("SFT-FOUNDATION-FORM-GRAMMAR-001", "SFT-FOUNDATION-FORM-ENFORCEMENT-001"),
-    402: ("SFT-FOUNDATION-FORM-GRAMMAR-001",),
+    401: (
+        "SFT-FOUNDATION-PRIMITIVE-MAP-UNIQUENESS-001",
+        "SFT-FOUNDATION-FORM-GRAMMAR-001",
+        "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    ),
+    402: ("SFT-FOUNDATION-FOLD-ASSEMBLY-001", "SFT-FOUNDATION-FORM-GRAMMAR-001"),
     403: ("SFT-QUANTUM-ERROR-CORRECTION-001", "SFT-QUANTUM-FAULT-TOLERANCE-001"),
     407: ("SFT-QUANTUM-FAULT-TOLERANCE-001",),
 }
@@ -283,6 +300,41 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
 # and empirical strength.  Overrides preserve a known adverse result rather
 # than letting an admitted formal subclaim silently close a larger V2 step.
 DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
+    24: {
+        "status": "closed_by_forced_half_one_and_fixed_one_reconstruction",
+        "closed": True,
+        "reason": "The two equal first-Fold fibres force one-of-two as the unique proper self-junction ground; its complement, Fold image and the fixed One are reconstructed exactly, with complement separated from phase antipode.",
+        "admitted_claim_id": "SFT-FOUNDATION-HALF-ONE-001",
+        "admitted_receipt_hash": "sha256:eef37a29bf86f0e880af72af355112f4f8efea97ba817ef71ef25d9e74883a1d",
+    },
+    25: {
+        "status": "closed_by_mechanical_primitive_map_uniqueness",
+        "closed": True,
+        "reason": "The normalized primitive grammar is explicit, all four operational classes are run, Fold alone satisfies the declared generator predicate, and later positive-size compositions cannot displace the size-one survivor.",
+        "admitted_claim_id": "SFT-FOUNDATION-PRIMITIVE-MAP-UNIQUENESS-001",
+        "admitted_receipt_hash": "sha256:8ca5e163461025f367a87f8105208ec72e4a13679a881690a3420142a9518996",
+    },
+    182: {
+        "status": "closed_by_exact_first_two_cycle",
+        "closed": True,
+        "reason": "Exact Fold maps one-of-three to two-of-three and back, while the two orbit members differ by half-One phase translation.",
+        "admitted_claim_id": "SFT-FOUNDATION-FOLD-DYNAMICS-001",
+        "admitted_receipt_hash": "sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675",
+    },
+    256: {
+        "status": "closed_by_complete_replayable_derivation_trace",
+        "closed": True,
+        "reason": "The three-move and direct exact paths are independently replayed to the same terminal two-of-three identity under the depth-independent trace base/successor law.",
+        "admitted_claim_id": "SFT-FOUNDATION-DERIVATION-TRACE-001",
+        "admitted_receipt_hash": "sha256:457414dd7e3a14e44b200b1ac329cdc9e2bb3527abe901c3255d7fb6f9233c5e",
+    },
+    401: {
+        "status": "closed_by_base_four_composition_enumeration_and_size_induction",
+        "closed": True,
+        "reason": "Base-four ranking regenerates 4, 16 and 64 ordered words, Fold is the sole least-size survivor, and positive construction-size induction excludes every later finite word from displacing it.",
+        "admitted_claim_id": "SFT-FOUNDATION-PRIMITIVE-MAP-UNIQUENESS-001",
+        "admitted_receipt_hash": "sha256:8ca5e163461025f367a87f8105208ec72e4a13679a881690a3420142a9518996",
+    },
     6: {
         "status": "closed_by_formal_reconstruction_and_empirically_admitted_terminal_refinement",
         "closed": True,

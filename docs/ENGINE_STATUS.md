@@ -1,151 +1,103 @@
-# Engine implementation status
+# Engine and scientific status
 
-## Implemented in the current baseline
+## Engine implementation
 
-- One versioned `SFTAdmissionEngine` for every evidence class.
-- Single self-proven root-theorem enforcement.
-- Axiom and free-parameter rejection before candidate execution.
-- Model-admitted dependency ledger.
-- Generated-census cardinality, identity and completeness-certificate checks.
-- One decision per generated candidate.
-- Exactly-one-survivor forcing.
-- Minimality and named-shape uniqueness gates.
-- Mandatory false-premise, tampered-source, tampered-artifact and boundary
-  controls.
-- Deterministic derivation seals and accepted or rejected receipt hashes.
-- Distinct-implementation independent validation gate.
-- Two-phase blind empirical envelope and target-before-seal refusal.
-- One standard-library-only capability policy for macOS, Windows and Linux.
-- Portable capability-certificate sealing and verification, including denial of
-  filesystem, network, subprocess, clock, environment, dynamic-import and
-  foreign-function access during prediction.
-- Separate target-custody evidence in place of an unverifiable host-network
-  assertion.
-- A data-only, capability-closed straight-line Fold prediction interpreter with
-  exact positive counts and ratios, held labels, words, pairs, tables,
-  comparison and traced emission; its language has no ambient host capability.
-- A portable target commitment and post-seal release exchange whose target
-  contents are cryptographically committed before prediction and released only
-  to the matching envelope and seal.
-- A hostile-package auditor that accepts only the registered data-only Fold
-  program surface and verifies that the census and model-admitted receipt tree
-  did not change during package handling.
-- Empirical registration, isolation, target-order, measurement, falsification
-  and complete-row gates.
-- Conditional evidence preservation without model admission.
-- Receipt-only model census updates.
-- Comprehensive branch-paper gate.
-- Final TOE-paper gate requiring every completed branch paper.
+The accessible V3 baseline provides one standard-library-only
+`SFTAdmissionEngine` for macOS, Windows and Linux. It enforces:
+
+- the single premise-free root theorem and exactly one root trace;
+- rejection of axioms and free parameters;
+- exact permitted arithmetic rather than floating-point proof;
+- complete declared candidate generation and one decision per candidate;
+- exactly one survivor, minimality and named-shape uniqueness;
+- false-premise, tampered-source, tampered-artifact and boundary controls;
+- implementation-distinct formal reconstruction;
+- capability-closed empirical prediction;
+- target commitment before prediction and target release after the matching
+  seal;
+- complete-row empirical comparison and explicit falsification;
+- immutable accepted and rejected receipts; and
+- receipt-only admission to the model census.
+
+The original branch-paper gate correctly proves that a paper covers its given
+frozen inventory. The current-compliance gate adds the missing stronger checks:
+
+- complete 763-entry branch-specific ownership review, atomic decomposition of
+  every branch-owned component and same-strength closure;
+- same-strength closure for every result owned by the branch; and
+- equality between the live branch claim census and the paper evidence map.
+
+The Zenodo tool invokes this stronger gate before any `--publish` action.
 
 ## Current scientific status
 
-The Foundation branch is frozen complete with ten model-admitted claims from the
-operational root theorem through the derivation-to-measurement boundary. Its
-comprehensive paper is published.
+The official model census contains 504 admitted V3 claims. Admission remains
+valid only at each claim's registered formal and empirical boundary.
 
-The Mathematics branch is frozen complete with twelve model-admitted claims:
-exact arithmetic, discrete mathematics, combinatorics, graph/network theory,
-algebra, order/lattice theory, finite computational geometry/topology, exact
-probability/statistics, optimization, finite dynamics, logic/proof and
-category/type/composition. All twelve are depth-independently closed at their
-declared generated boundaries and independently replicated.
+The repository also contains eight published v1 branch papers. Their files,
+DOIs, evidence maps, manifests and receipts remain immutable archival evidence.
+Their former designation as complete current V3 branches is withdrawn because
+the full prior-result owner and same-strength audit is open.
 
-The Information Science branch is frozen complete with twelve model-admitted
-claims: symbols/distinguishability, encoding/decoding, information quantity,
-entropy/uncertainty, compression/redundancy, channels/capacity, noise/error,
-coding, mutual/conditional information, conservation/loss/transformation,
-classical/probabilistic correspondence and quantum-information support
-correspondence. Its grammars execute 11,776 candidates and contain exactly
-twelve survivors. All claims are depth-independently closed and independently
-replicated.
+Foundation has since completed the stronger successor route. Its full
+763-entry branch review assigns 32 atomic Foundation obligations and closes all
+32; its current inventory contains 16 admitted theorems and its successor paper
+covers all 16. The later branches remain open until they independently satisfy
+the same gate.
 
-The Classical Computation branch is frozen complete with 113 model-admitted
-claims across Formal Computation, Computability, Complexity, Algorithms,
-Semantics, Concurrent and Distributed Computation, Cryptography and Security,
-Learning and Intelligence Theory, and Scientific Computation. Its grammars
-execute 28,928 candidates, contain exactly 113 survivors, and preserve 452
-passing adverse controls and 113 implementation-distinct validations.
+The blocking counts are:
 
-The Reversible and Quantum Computation branch is frozen complete with 21
-model-admitted claims from the complete reversible model through quantum
-information units, composition, support, phase/interference, entanglement,
-measurement, gates, circuits, universality, algorithms, complexity,
-communication, coding, correction, fault tolerance, simulation, verification,
-learning, classical-quantum correspondence and limits. Its grammars execute
-5,376 candidates. Exact fault censuses close widths three, five and seven, with
-a structural 2t+1 successor certificate for every generated positive finite
-fault depth.
+- V1: 356 registered rows; 346 unmapped; 351 without same-strength closure.
+- V2: 407 registered steps; 286 unmapped; 400 without same-strength closure.
+- Physics: 160 live claims; Physics Paper 001 covers 140.
 
-The Physics branch is frozen complete with 132 required claims across
-measurement/metrology, mechanics, interactions/fields, waves, thermodynamics,
-physical quantum theory, matter/particles/nuclei, spacetime/gravitation,
-continua/collective matter and the Physics-to-Astronomy/Cosmology boundary.
-Each required claim contains 256 candidates and exactly one survivor. Eight
-supplemental measured-value admissions add exact interval checks for earlier
-subbranches. The 14-claim value suite uses exact positive rational endpoints,
-post-seal target release and official BIPM, NIST/CODATA, NIST ASD, PDG, IAEA,
-IAPWS, GWOSC, CERN Open Data and NASA LAMBDA records. All external comparisons
-passed and all displaced or tampered controls were rejected.
+Consequently:
 
-The official census now contains 308 scientific claims and 91,794 generated
-candidates through the six complete branch programmes. Physics contributes 140
-claims and 35,840 candidates, including its eight supplemental measured-value
-admissions. Synthetic engine controls remain excluded from that census.
+- Foundation is current and closed at its registered formal boundaries.
+- Mathematics is reopened for owner and same-strength reconciliation.
+- Information Science is reopened for owner and same-strength reconciliation.
+- Classical Computation is reopened for owner and same-strength
+  reconciliation.
+- Quantum Computation is reopened for owner and same-strength reconciliation.
+- Physics is open for the complete physical-value reconstruction and paper
+  replacement.
+- Chemistry is open for complete reconciliation and corrected Physics
+  dependency placement.
+- Materials is open for complete reconciliation.
+- all later branches remain unstarted or open according to their own ledgers.
 
-The standalone Mathematics paper, its evidence map and the complete
-paper/evidence release are published at DOI `10.5281/zenodo.21516146`. The
-Foundation paper remains separately preserved and published at DOI
-`10.5281/zenodo.21515629`.
+“Reopened” does not revoke admitted claims. It means the evidence is not yet
+sufficient for the stronger statement that the entire branch is closed against
+all registered prior and current knowledge.
 
-The independent Information Science paper, *From Distinction to Information*,
-is a published 42-page standalone edition. Its evidence map and manifest pass
-the branch publication gate with `publication_authorized: true`. The archival
-record is published at DOI `10.5281/zenodo.21516916`, and GitHub `main` displays
-this paper as the repository landing document. Neither earlier canonical paper
-was edited.
+## Current publication command
 
-The Classical Computation paper, *After Turing: The Fold Machine*, is published
-as a 396-page standalone edition at DOI `10.5281/zenodo.21518311`. The Quantum
-Computation paper, *The Quantum Fold Machine*, is published as a separate
-80-page edition at DOI `10.5281/zenodo.21518313`. Both archival records contain
-the preview-first PDF, complete Markdown paper, full evidence/source ZIP and
-checksum ledger; matching GitHub releases preserve the same file set. GitHub
-preserves both releases. The Physics paper now supersedes them only as the
-current GitHub landing document; every earlier canonical paper and archival
-record remains unchanged.
+```text
+python3 tools/verify_publication_compliance.py
+```
 
-The final repository-wide verifier passed after the complete computation-paper
-and documentation freeze: 153 unit and end-to-end tests passed, core-engine
-executable-line coverage was 1,264/1,264 (100%) across 15 modules, and all 168
-registered derivations were independently rerun.
+Foundation presently reports `READY`; the later listed branches report
+`BLOCKED`. A `READY` result is lawful only after the categorical-owner ledger is complete, that branch has no
+same-strength open result, the manuscript covers the live census exactly and
+all ordinary paper evidence checks pass.
 
-## Physics empirical status
+## Physics empirical correction
 
-The capability-closed prediction, target-custody and hostile-package forms are
-model-admitted prerequisites. All 129 natural-law obligations use the registered
-empirical route: immutable source identity, target commitment, capability-closed
-prediction, seal-before-release custody, complete comparison rows, unfavorable
-control and explicit falsification. The three formal prerequisites themselves
-make no natural-law claim.
+Measured-input relation checks and forced absolute or dimensionless values are
+different evidence classes. A relation that predicts one withheld measurement
+from another measured input does not force the input value from the
+foundational theorem.
 
-The exhaustive 331-page Physics paper and evidence map pass the branch
-publication gate with `publication_authorized: true`. Maria Smith authorized
-public release on 24 July 2026. The PDF-first archival record, complete Markdown
-paper, evidence/source archive and checksum ledger are published at DOI
-`10.5281/zenodo.21520881`; GitHub `main` displays the complete paper as the
-repository landing document.
+Every prior claim of an exact physical constant or value must therefore receive
+its own generated V3 grammar, unique sealed result and post-seal authoritative
+comparison. Inverse fine structure and every other physical constant belong in
+the Physics paper. Chemistry and Materials retain only dependency references
+and downstream consequences.
 
-No container runtime, virtual machine or third-party Python package is required.
-The policy is capability-based rather than OS-sandbox-based because the Python
-standard library cannot truthfully certify system-wide network or filesystem
-isolation on every supported host.
+## Publication authority
 
-## Required before any branch paper
+A local gate result never authorizes a push, release, DOI reservation, upload or
+publication. Those actions require Maria Smith's explicit authorization.
 
-- Freeze that branch's complete current-knowledge inventory.
-- Admit every required derivation through the engine.
-- Produce the comprehensive evidence map and paper controls.
-- Pass the branch publication gate.
-
-Publication readiness does not authorize publication. Maria Smith retains that
-decision.
+See `audits/PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md` for the complete
+finding and repair sequence.

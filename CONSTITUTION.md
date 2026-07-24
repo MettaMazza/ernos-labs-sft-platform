@@ -200,6 +200,22 @@ investigated; v3 is not back-fitted to erase it.
 
 ## 12. Publication and authority
 
+No branch is complete for publication merely because every row in a narrow
+frozen inventory passed. Before a current branch paper is eligible, every prior
+source entry must be explicitly reviewed against that branch; every entry with
+a branch-owned component must be decomposed without dropping any scientific
+component; every resulting atomic obligation must have exactly one categorical
+owner; every obligation owned by the branch must have a same-strength V3
+disposition; and the paper evidence map must equal the live branch census.
+Reviewed non-owning entries remain enumerated and hash-bound. A missing,
+unreviewed, unowned or weaker result halts publication. The all-branch atomic
+owner ledger remains mandatory for the final TOE paper.
+
+Physical constants and dimensionless physical values belong to Physics. A
+downstream Chemistry, Materials or Astronomy paper may consume their admitted
+receipts but cannot substitute for their complete Physics derivation and
+post-seal measurement treatment.
+
 Maria Smith is the scientific author and publication authority. Automated
 agents may implement, enumerate, test, reconcile and edit, but they cannot
 promote a result, select official experiments or publish without explicit

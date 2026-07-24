@@ -1,12 +1,12 @@
 # Mathematics branch status and review guide
 
-Status: `frozen_complete`
+Status: `published_v1_current_reconciliation_open`
 
 Paper: [From Fold to Mathematics](../publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md)
 
 DOI: [10.5281/zenodo.21516146](https://doi.org/10.5281/zenodo.21516146)
 
-## Closed scope
+## Archived claim-set scope
 
 The V3 Mathematics branch contains twelve dependency-ordered claims:
 
@@ -23,11 +23,13 @@ The V3 Mathematics branch contains twelve dependency-ordered claims:
 11. logic and proof boundaries; and
 12. category, type and compositional structure.
 
-The frozen inventory is
+The archived frozen inventory is
 [`publications/inventories/mathematics.json`](../publications/inventories/mathematics.json).
 It has no unclassified or frontier obligation. The twelve grammars contain 7,424
 generated candidates and exactly twelve survivors. Every claim is
-depth-independently closed, model-admitted and independently replicated.
+depth-independently closed, model-admitted and independently replicated at its
+registered boundary. Current branch completion remains blocked until every
+Mathematics-owned V1/V2 result has a same-strength V3 disposition.
 
 ## Exact domain
 

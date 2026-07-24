@@ -11,6 +11,17 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from sft.engine.publication_compliance import (  # noqa: E402
+    BRANCH_PREFIXES,
+    require_current_publication_ready,
+)
 
 
 API = "https://zenodo.org/api"
@@ -54,9 +65,18 @@ def main() -> None:
     parser.add_argument("--metadata", required=True, type=Path)
     parser.add_argument("--file", action="append", default=[], type=file_mapping)
     parser.add_argument("--publish", action="store_true")
+    parser.add_argument(
+        "--branch",
+        choices=tuple(BRANCH_PREFIXES),
+        help="required for publication; checked against full current-knowledge reconciliation",
+    )
     args = parser.parse_args()
     if not args.file:
         parser.error("at least one --file is required")
+    if args.publish and not args.branch:
+        parser.error("--publish requires --branch for the current-knowledge compliance gate")
+    if args.publish:
+        require_current_publication_ready(ROOT, args.branch)
 
     token_file = Path(os.environ.get("ZENODO_TOKEN_FILE", "~/.zenodo_token")).expanduser()
     token = token_file.read_text(encoding="utf-8").strip()

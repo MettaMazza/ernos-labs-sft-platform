@@ -5,7 +5,7 @@ Status: `published_v1_inventory_closed_v2_reconciliation_open`; standalone paper
 
 Paper: [After Turing: The Fold Machine](../publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md)
 
-## Closed scope
+## Archived claim-set scope
 
 The branch contains 113 dependency-ordered claims across:
 
@@ -19,10 +19,12 @@ The branch contains 113 dependency-ordered claims across:
 8. Learning and Intelligence Theory - 14; and
 9. Scientific Computation - 13.
 
-The complete grammars contain 28,928 candidates and exactly 113 survivors.
+The archived grammars contain 28,928 candidates and exactly 113 survivors.
 Every claim has a structural-One base/successor certificate, four passing
 controls, an independent validator and a model-admitted receipt. The frozen
-inventory contains no unclassified or frontier row.
+inventory contains no unclassified or frontier row at that declared boundary.
+The current branch remains open until every Computation-owned V1/V2 result has
+a same-strength V3 disposition.
 
 ## Exact boundary
 

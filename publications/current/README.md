@@ -1,131 +1,61 @@
-# Current publications
+# Published branch archive and current reconstruction status
 
-The complete standalone Chemistry branch paper is
-[`From Fold to Chemistry`](chemistry/FROM_FOLD_TO_CHEMISTRY.md). Chemistry is
-86/86 model-admitted, including the clean V3 physical prerequisites and the
-g-block, Smithium and periodic-endpoint claims. The relevant V1/V2 lineage
-group is closed. Its 253-page PDF, evidence map, manifest and publication
-receipt pass the local publication gate and are published at DOI
-[`10.5281/zenodo.21531455`](https://doi.org/10.5281/zenodo.21531455) with the
-matching GitHub release
-[`chemistry-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/chemistry-v1.0.0).
+The `current/` path is retained for compatibility with immutable manifests and
+release references. See
+[`ARCHIVE_AND_SUCCESSOR_POLICY.md`](../ARCHIVE_AND_SUCCESSOR_POLICY.md); the
+directory name does not assert current scientific completeness.
 
-The repository landing page, [`README.md`](../../README.md), displays the latest
-complete standalone branch paper, **From Fold to Chemistry**. Every earlier
-branch paper remains unchanged in its canonical source folder and archival
-record.
+## Completion correction
 
-## Published Physics branch paper
+The eight papers below are real published, citable and immutable archival
+artifacts. Their claim packages and receipts remain preserved. They are not
+currently designated complete V3 branch papers because the later full
+V1/V2-to-V3 audit found that the publication gate checked each paper only
+against its self-declared frozen inventory, not against every registered prior
+result belonging to that branch.
 
-The Physics branch is frozen complete and documented in the standalone
-manuscript [`From Fold to Physics`](physics/FROM_FOLD_TO_PHYSICS.md). Its
-visually verified 331-page edition is
-[`output/pdf/from-fold-to-physics-branch-paper-001.pdf`](../../output/pdf/from-fold-to-physics-branch-paper-001.pdf).
-It covers all 132 required laws, eight supplemental exact measured-value
-admissions, 35,840 Physics candidates, complete elimination tables, external
-measurement custody and immutable evidence identities.
+The binding finding and repair are documented in
+[`PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md`](../../audits/PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md).
+Successor publication is blocked until categorical ownership and same-strength
+reconstruction are complete. Foundation has now passed that stronger route;
+the other seven listed branches remain blocked.
 
-The exact [`evidence_map.json`](physics/evidence_map.json),
-[`manifest.json`](physics/manifest.json) and
-[`publication_receipt.json`](physics/publication_receipt.json) pass the branch
-publication gate with `ready_to_publish: true` and
-`publication_authorized: true`. Maria Smith authorized public release on 24
-July 2026. The archival edition is DOI
-[`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881), and the
-complete Markdown paper is the current GitHub landing document. The matching
-public release is
-[`physics-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/physics-v1.0.0).
+The current Foundation account is
+[`Foundation Branch Paper 002`](../successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_002.md),
+with its [rendered PDF](../../output/pdf/from-nothing-to-fold-foundation-branch-paper-002.pdf)
+and complete successor evidence bundle. Paper 001 below remains immutable
+archival evidence.
 
-## Published computation branches
+This correction does not alter any paper, DOI, hash, engine receipt or failed
+experimental record. It corrects the claim of current completeness.
 
-The Classical Computation branch is frozen complete and documented in the new
-standalone manuscript
-[`After Turing: The Fold Machine`](computation/AFTER_TURING_THE_FOLD_MACHINE.md).
-Its rendered 396-page edition is
-[`output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf`](../../output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf).
-It covers all 113 frozen obligations, 28,928 candidates and exact evidence
-identities.
+## Published archival papers
 
-The Reversible and Quantum Computation branch is separately frozen complete and
-documented in
-[`The Quantum Fold Machine`](quantum_computation/THE_QUANTUM_FOLD_MACHINE.md).
-Its rendered 80-page edition is
-[`output/pdf/the-quantum-fold-machine-branch-paper-001.pdf`](../../output/pdf/the-quantum-fold-machine-branch-paper-001.pdf).
-It covers all 21 frozen obligations, 5,376 candidates and the executable
-multi-error correction censuses.
+| Branch | Paper | DOI | Current status |
+|---|---|---|---|
+| Foundation | [From Nothing to Fold](foundation/FROM_NOTHING_TO_FOLD.md) | [10.5281/zenodo.21515629](https://doi.org/10.5281/zenodo.21515629) | Published v1 archive; Paper 002 successor closed and release-ready |
+| Mathematics | [From Fold to Mathematics](mathematics/FROM_FOLD_TO_MATHEMATICS.md) | [10.5281/zenodo.21516146](https://doi.org/10.5281/zenodo.21516146) | Published v1; successor blocked |
+| Information Science | [From Distinction to Information](information_science/FROM_DISTINCTION_TO_INFORMATION.md) | [10.5281/zenodo.21516916](https://doi.org/10.5281/zenodo.21516916) | Published v1; successor blocked |
+| Classical Computation | [After Turing: The Fold Machine](computation/AFTER_TURING_THE_FOLD_MACHINE.md) | [10.5281/zenodo.21518311](https://doi.org/10.5281/zenodo.21518311) | Published v1; successor blocked |
+| Quantum Computation | [The Quantum Fold Machine](quantum_computation/THE_QUANTUM_FOLD_MACHINE.md) | [10.5281/zenodo.21518313](https://doi.org/10.5281/zenodo.21518313) | Published v1; successor blocked |
+| Physics | [From Fold to Physics](physics/FROM_FOLD_TO_PHYSICS.md) | [10.5281/zenodo.21520881](https://doi.org/10.5281/zenodo.21520881) | Published v1; superseded for current completeness; paper covers 140 of 160 live Physics claims and the full value audit is open |
+| Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21531455](https://doi.org/10.5281/zenodo.21531455) | Published v1; successor must correct Physics dependency placement |
+| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21532482](https://doi.org/10.5281/zenodo.21532482) | Published v1; successor blocked by owner/same-strength audit |
 
-Both manuscripts have complete evidence maps, manifests and branch-publication
-receipts with `publication_authorized: true`. The Classical paper is published
-at DOI [`10.5281/zenodo.21518311`](https://doi.org/10.5281/zenodo.21518311) and
-GitHub release
-[`classical-computation-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/classical-computation-v1.0.0).
-The Quantum paper is published at DOI
-[`10.5281/zenodo.21518313`](https://doi.org/10.5281/zenodo.21518313) and GitHub
-release
-[`quantum-computation-v1.0.0`](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/quantum-computation-v1.0.0).
-Each archive supplies the PDF first, full Markdown manuscript, complete
-evidence/source ZIP and checksum ledger. The complete Quantum Markdown paper is
-the current GitHub landing document.
+## Machine-readable current gate
 
-## Completed Information Science branch paper
+Audit all branches without mutation:
 
-The third closed scientific branch has a new, independent paper:
-[`From Distinction to Information`](information_science/FROM_DISTINCTION_TO_INFORMATION.md).
-It is not an edit of the Foundation or Mathematics papers. Its 42-page rendered
-edition is
-[`output/pdf/from-distinction-to-information-branch-paper-001.pdf`](../../output/pdf/from-distinction-to-information-branch-paper-001.pdf).
+```text
+python3 tools/verify_publication_compliance.py
+```
 
-The published paper covers all twelve obligations in the frozen Information
-Science inventory, 11,776 generated candidates, complete rejection axes, unique
-survivors, depth-independent certificates, operational witnesses, adverse
-controls, implementation-distinct validators and exact receipt identities. Its
-evidence map, manifest and publication-readiness receipt explicitly carry
-`publication_authorized: true`. Maria Smith authorized and published the release
-on 23 July 2026; the archival DOI is
-[`10.5281/zenodo.21516916`](https://doi.org/10.5281/zenodo.21516916).
+Require the complete current Physics standard:
 
-The complete standalone Information Science source is copied to `README.md` as
-the landing paper. The canonical earlier paper files remain untouched.
+```text
+python3 tools/verify_publication_compliance.py --branch physics --require-ready
+```
 
-## Completed Mathematics branch paper
-
-The second closed scientific branch and its standalone paper are
-[`From Fold to Mathematics`](mathematics/FROM_FOLD_TO_MATHEMATICS.md). Its
-archival PDF is
-[`output/pdf/from-fold-to-mathematics-branch-paper-001.pdf`](../../output/pdf/from-fold-to-mathematics-branch-paper-001.pdf).
-The paper covers all twelve obligations in the frozen Mathematics inventory,
-7,424 generated candidates, complete rejection axes, unique survivors,
-depth-independent certificates, adverse controls and independent validators.
-
-Its machine-readable `evidence_map.json`, `manifest.json` and
-`publication_receipt.json` are verified by
-`python3 tools/verify_mathematics_publication.py` on macOS/Linux or
-`py tools/verify_mathematics_publication.py` on Windows. Maria Smith explicitly
-authorized public release on 23 July 2026. The archival record is
-[`10.5281/zenodo.21516146`](https://doi.org/10.5281/zenodo.21516146) and supplies
-both the PDF and Markdown paper as separate files alongside the evidence/source
-archive and checksum ledger.
-
-The earlier inaugural methods paper remains preserved at DOI
-[`10.5281/zenodo.21514890`](https://doi.org/10.5281/zenodo.21514890) and in the
-superseded-publication archive. It correctly reported the narrower state of the
-repository at its publication time.
-
-## Completed Foundation branch paper
-
-The first complete branch paper is [`From Nothing to Fold`](foundation/FROM_NOTHING_TO_FOLD.md).
-Its archival PDF is
-[`output/pdf/from-nothing-to-fold-foundation-branch-paper-001.pdf`](../../output/pdf/from-nothing-to-fold-foundation-branch-paper-001.pdf).
-The paper covers every obligation in the frozen Foundation inventory. Its
-machine-readable [`evidence_map.json`](foundation/evidence_map.json),
-[`manifest.json`](foundation/manifest.json) and
-[`publication_receipt.json`](foundation/publication_receipt.json) are checked by
-`python3 tools/verify_foundation_publication.py` on macOS/Linux or
-`py tools/verify_foundation_publication.py` on Windows. Maria Smith explicitly
-authorized its public release on 23 July 2026. The exact GitHub source at commit
-`64b5123887081cfccf9b93e8368efb2d4af589a4` and the standalone paper/evidence
-bundle are published at
-[`10.5281/zenodo.21515629`](https://doi.org/10.5281/zenodo.21515629).
-The record supplies the paper independently as both the default-preview PDF and
-the complete Markdown source, alongside the evidence/source ZIP and checksum
-ledger.
+The second command intentionally halts while any assigned obligation is
+missing, weaker than its registered source result, empirically unclosed or
+absent from the successor manuscript.

@@ -1,10 +1,10 @@
-# Reversible and quantum computation - frozen complete
+# Reversible and quantum computation — archived v1 claim set; reconciliation open
 
 Reversible machines, quantum information units, composition, interference,
 entanglement, measurement, gates, circuits, algorithms, communication, coding,
 fault tolerance, simulation, verification, learning, correspondence and limits.
 
-The frozen inventory contains 21 dependency-ordered claims and 5,376 generated
+The archived inventory contains 21 dependency-ordered claims and 5,376 generated
 candidates. Every claim has exactly one survivor, depth-independent closure,
 four passing adverse controls and an implementation-distinct certificate.
 Multi-error recovery exhausts all registered masks through widths three, five
@@ -13,4 +13,6 @@ authoritative inventory is `publications/inventories/quantum_computation.json`;
 the exhaustive local manuscript is
 `publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md`.
 
-Publication is not yet authorized.
+The v1 paper is published. A current successor is not authorized or eligible
+until every Quantum-Computation-owned prior result has a same-strength V3
+disposition and the current-compliance gate passes.
