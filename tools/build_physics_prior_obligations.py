@@ -107,7 +107,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "G11": ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
     "N1e": ("SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",),
     "VIII-12": ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
-    "III-1": ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004", "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001"),
+    "III-1": ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004", "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004", "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001"),
     "III-2": ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004", "SFT-PHYS-QUANTUM-SPIN-001"),
     "III-3": ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-VACUUM-ODD-RECURRENCE-003", "SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003"),
     "III-4": ("SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001", "SFT-PHYS-QUANTUM-EXCLUSION-001"),
@@ -191,9 +191,9 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     293: ("SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001", "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001"),
     298: ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",),
     302: ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001", "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001"),
-    47: ("SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004",),
+    47: ("SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004", "SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004"),
     60: ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004", "SFT-PHYS-QUANTUM-SPIN-001"),
-    62: ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004",),
+    62: ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004", "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004"),
     96: ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-VACUUM-ODD-RECURRENCE-003"),
     142: ("SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",),
     239: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-MATTER-CONFINEMENT-LIFT-003"),
@@ -240,9 +240,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "Magnetic/electric orientations are sealed. The 2l+1 Zeeman count, linear Zeeman, linear hydrogen Stark and quadratic nondegenerate response with measured splittings remain.",
     },
     "III-8": {
-        "formal_same_strength_status": "partial",
+        "formal_same_strength_status": "versioned_successor_required",
         "empirical_boundary_status": "required_open",
-        "remaining_work": "The electronic half and molecular quarter hierarchy is sealed. J(J+1), adjacent 2J spacing, oscillator/anharmonic ladder, isotope transport and NIST comparison remain.",
+        "remaining_work": "The electronic-half/molecular-quarter leading receipt is preserved. The registered NIST H2 vector supports electronic above vibrational above rotational scales but rejects a universal equal-quarter rotation/vibration reading and universal factor-two frequency translation. A successor must force distinct carriers, J(J+1), adjacent 2J spacing, oscillator/anharmonic ladders, isotope transport and the complete post-seal NIST comparison.",
     },
     "V-1": {
         "formal_same_strength_status": "partial",
@@ -304,9 +304,9 @@ REVIEWED_OPEN_V2: dict[int, dict[str, str]] = {
         "remaining_work": "The leading bound-return receipt is preserved, but its alpha^4-of-gross terminal scale is not the prior alpha^3 Lamb boundary; admit a versioned NIST-tested successor.",
     },
     142: {
-        "formal_same_strength_status": "closed_same_strength",
+        "formal_same_strength_status": "versioned_successor_required",
         "empirical_boundary_status": "required_open",
-        "remaining_work": "The electronic half, molecular quarter and two-quarter recomposition are sealed; execute the post-seal NIST spectral-class comparison.",
+        "remaining_work": "The immutable leading receipt is retained, but the registered NIST H2 vector rejects its universal equal-quarter rotation/vibration reading and universal factor-two numerical translation. Admit a versioned successor with distinct rotational/vibrational carriers, J(J+1), adjacent 2J spacing, oscillator/anharmonic ladders, isotope transport and complete post-seal comparison.",
     },
     240: {
         "formal_same_strength_status": "partial",
@@ -394,6 +394,7 @@ RECENTLY_VERIFIED_V2 = {
     134, 135, 136, 149, 151, 161, 171, 174, 179, 187, 194, 195, 200, 201,
     210, 215, 220, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235,
     236, 239, 245, 266, 267, 268, 269, 270, 272, 273, 275, 276, 292, 293, 298, 302,
+    47, 62,
 }
 
 

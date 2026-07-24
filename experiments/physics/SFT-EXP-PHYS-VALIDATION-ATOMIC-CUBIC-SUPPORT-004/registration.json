@@ -1,0 +1,137 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate or component snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:c65e0fda3a048332ae6e3e70809fe2871b5738069fbed2b46be5cb75f77738c5"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3",
+      "role": "development_only",
+      "source_id": "NIST-ATOMIC-SPECTRA-POSTSEAL-SOURCE-RECORD"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Authoritative NIST snapshots are hash-bound in sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3; observation informed law formation, but the execution surface cannot access comparison targets before sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered exact comparison passes and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:905d0c44620800d843c694839337711c521a260573a8ac2ef61d542fceade925",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-post-seal-evaluator",
+    "falsification_condition": "The registered NIST row is not six, the formal count changes, any source hash changes, target access precedes sealing, or a tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Verify every source hash, evaluate the immutable exact relation, retain every reported interval endpoint, and compare every row after seal release.",
+        "metric_id": "exact-rational-post-seal-correspondence",
+        "unit_protocol": "External unit inscriptions remain source records; only exact positive rational arithmetic enters the evaluator."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, NIST Center for Neutron Research",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:ab723f91d6658bd8b5d19889884fd87e07046d2b0060e23f7df8d7cb6c35fa5b",
+      "source_id": "NIST-NCNR-DCS-SUPERFLUID-HELIUM",
+      "source_uri": "https://www.nist.gov/document/dcs"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal exact-count, provenance, custody, row-retention and no-extra-rule product.",
+    "dependency_hashes": [
+      "sha256:6bc0eecf05d4e891311860396ff62d886aca73a97ec3316afa4dc03fd8f4be6c",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa",
+      "sha256:7e661d88e70c749032cd9f4ad2250b3282a7755c4c70af0ae8b0215f07c2cde4",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "All exact comparisons between the immutable six-neighbour Fold coordination and the sole complete registered NIST simple-cubic coordination row.",
+    "relation_hash": "sha256:fc7b022f1d4682009b8e74b16abdfbf07d077f2ae31626698e8f802398add0bc",
+    "statement": "The sealed Fold count 2*3=6 exactly equals the complete NIST simple-cubic nearest-neighbour count six.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:49b507cfdc586c37741b7b1a2bf6d13ff7a290d724af67ada165fd710df0cc46",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:cc5c81064aee7341687e5e9baf2fd5c920841504b73094c216d1f1c1a79294bf",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:d8052b09a62aba809ab960ce60b9957d18a513981e94e19c0dfdbc5ac31f833a",
+    "experiments/external_sources/physics/snapshots/atomic-spectra-postseal-source-record.json": "sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3",
+    "experiments/external_sources/physics/snapshots/nist-simple-cubic-neighbours.pdf": "sha256:ab723f91d6658bd8b5d19889884fd87e07046d2b0060e23f7df8d7cb6c35fa5b"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered source, target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-NCNR-DCS-SUPERFLUID-HELIUM",
+      "target_id": "NIST-SIMPLE-CUBIC-NEAREST-NEIGHBOURS"
+    }
+  ]
+}

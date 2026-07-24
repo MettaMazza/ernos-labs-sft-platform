@@ -309,17 +309,49 @@ when only its empirical claim remains.
       range, binding-curve maximum, decay, fission/fusion, deuteron exclusion,
       Higgs terminal precision, Smithion spectra and flavour-violation weights.
 
-The current ledger is 100 same-strength closed and 398 open, of which thirty
-have completed same-strength review and a precise successor/comparison boundary.
-These counts supersede the earlier 93/405 snapshot. They are mapping progress,
-not a claim that the remaining 385 unreviewed rows are absent derivations.
+The ledger at that checkpoint was 100 same-strength closed and 398 open, of
+which thirty had completed same-strength review and a precise
+successor/comparison boundary. Those counts superseded the earlier 93/405
+snapshot and are retained here only as the pre-atomic-comparison boundary.
+
+23. The two genuinely missing atomic post-seal comparisons are now admitted:
+    - cubic coordination comparison
+      `sha256:2d3a137022da53383895f1e43bdfd78a6ce04912b408c76c4a4d0bcef569ab61`;
+    - hydrogen Lyman/Balmer comparison
+      `sha256:ac7a0e6e2bac1372b978f599799af40cebb9660b655f6b67978c798256204285`.
+
+The cubic comparison retains the immutable formal count `2*3=6` and exactly
+matches the complete NIST simple-cubic nearest-neighbour row. The hydrogen
+comparison uses the NIST ionization wavenumber only as the dimensionful carrier:
+the sealed ratios `3/4` and `5/36` predict `82259.078775 cm^-1` and
+`1096787717/72000 cm^-1`, respectively inside the complete reported NIST
+intervals `[82259.02, 82259.30]` and `[15233.14, 15233.28] cm^-1`. Each claim
+exhausts 256 forms, has one survivor, preserves its external source custody and
+passes independent validation. The focused four-test module passed, followed
+by one repository validation at 613 admitted claims.
+
+The registered NIST H2 comparison is deliberately adverse to the old universal
+equal-quarter reading. Electronic above vibrational above rotational ordering
+is supported, but the measured values `91700.0`, `4401.213` and `60.8530 cm^-1`
+reject equality of rotational and vibrational scales and reject a universal
+electronic/molecular factor two. Receipt
+`sha256:234231a79ab030c84486fbee91cd79a5498ebb4f88c6467c366f38815ff681d0`
+remains immutable as a leading formal result; V1 III-8 and V2 Step 142 now
+correctly require a versioned successor. The complete adverse record is
+`audits/atomic_molecular_hierarchy_adverse_comparison_2026-07-24.json`.
+
+The current ledger is 102 same-strength closed and 396 open. Thirty-one open
+rows have a precise partial or versioned-successor boundary; the remaining 385
+are still unreviewed mappings and must not be treated as 385 absent laws.
 
 ## Active group
 
 Receipt-level reconciliation of the remaining atomic, nuclear,
 island-of-stability and particle-prediction obligations against the complete
-live V3 Physics corpus. Do not generate another law until the obligation has
-been shown genuinely absent rather than merely unmapped.
+live V3 Physics corpus. The cubic and hydrogen post-seal comparisons are
+finished and must not be regenerated. The molecular successor is genuinely
+open. Do not generate any other law until its obligation has been shown absent
+rather than merely unmapped.
 
 The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
 five-claim atomic/spectral source, execution, validator and evidence modules are

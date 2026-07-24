@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004",
+  "data_source_ids": [
+    "NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:220d4d9dbb5e8d6b14ec793290dcb0e2dc1634a68c96b751436ca3a37f9429e3",
+  "falsification_condition": "Either exact prediction lies outside its complete NIST interval, a row or uncertainty is omitted, a source hash changes, target access precedes sealing, or a tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6aebac42bbf5202ec170054d7ab0471da11584f7d77fd3f2d0b2015823a01093",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7978dcb2d9c9d1d1cfebd4456d4bb0573cd466137ff86f2e7ff2ec969294906c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:974a4dea27b6ce7c664bf1b314e4124570a151b5a3db99b1a95b08cf89574f3d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:927b47cf90db4430566596ee6a5d3b062f462d7ddffa5e138ade8682239e04fd",
+    "prediction_seal_hash": "sha256:b390991eb445748df6006d6eccb36568e1cfe6b45a713d7f8aa8028491cfdadd",
+    "program_hash": "sha256:a33af39abbb02eabbc2a5d852e8e1ffc56bc6cbd34946b33a9766cbd86da073d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:cdb0b7f9a277ea0c748460b0645d47e7b9d7a2586bc1f2830e42c7e623e229a9",
+    "target_material_present": false,
+    "trace_hash": "sha256:32e5fa05b9b68f39d74e99a16d98585574f687e59fed25c077719f2a3f2d62ee"
+  },
+  "measurement_receipt_hash": "sha256:420bc255caf0fe1ce3073b43c85250e0c00425f80ad03071f2acb5b7f128a097",
+  "measurements": [
+    "NIST-H-I-LYMAN-ALPHA-INTERVAL: predicted sealed-hydrogen-gross-ratios-lie-inside-both-complete-nist-line-intervals; observed sealed-hydrogen-gross-ratios-lie-inside-both-complete-nist-line-intervals; exact match True",
+    "NIST-H-I-BALMER-ALPHA-INTERVAL: predicted sealed-hydrogen-gross-ratios-lie-inside-both-complete-nist-line-intervals; observed sealed-hydrogen-gross-ratios-lie-inside-both-complete-nist-line-intervals; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d09e28f295d7556277b44445ac842f206f16ff6e8d9182a37e800562e61dcc84",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-external-target-custodian",
+    "experiment_registration_hash": "sha256:220d4d9dbb5e8d6b14ec793290dcb0e2dc1634a68c96b751436ca3a37f9429e3",
+    "prediction_seal_hash": "sha256:b390991eb445748df6006d6eccb36568e1cfe6b45a713d7f8aa8028491cfdadd",
+    "registered_target_identity_hash": "sha256:cdb0b7f9a277ea0c748460b0645d47e7b9d7a2586bc1f2830e42c7e623e229a9",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d7a57d2f98aad74077d81de0fa4fad0d6012775942810f2ba674253b753c76ec"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f2204f3d68b09b4480ae84bda3b465a6f903941f78d956c0e2ecfa1ead0c2f59"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "sft-v3-atomic-molecular-adverse-comparison/1",
+  "audit_date": "2026-07-24",
+  "formal_claim": "SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",
+  "formal_receipt": "sha256:234231a79ab030c84486fbee91cd79a5498ebb4f88c6467c366f38815ff681d0",
+  "source_record": {
+    "path": "experiments/external_sources/physics/snapshots/atomic-spectra-postseal-source-record.json",
+    "hash": "sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3"
+  },
+  "authoritative_measurement": {
+    "source_id": "NIST-WEBBOOK-SRD69-H2-DIATOMIC-CONSTANTS",
+    "body": "National Institute of Standards and Technology, Chemistry WebBook SRD 69",
+    "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1828",
+    "snapshot_path": "experiments/external_sources/physics/snapshots/nist-webbook-h2-diatomic-constants.html",
+    "snapshot_hash": "sha256:18036a188088f880122249544ceb6b384fabfba93b300b4f9f0fa01aa0ed9b24",
+    "reported_positive_wavenumbers_cm_inverse": {
+      "electronic_state_energy": "91700.0",
+      "ground_vibrational_constant": "4401.213",
+      "ground_rotational_constant": "60.8530"
+    }
+  },
+  "exact_external_relations": {
+    "electronic_above_vibrational": true,
+    "vibrational_above_rotational": true,
+    "vibrational_equals_rotational": false,
+    "electronic_equals_twice_vibrational": false,
+    "electronic_to_vibrational_ratio": "91700000/4401213",
+    "vibrational_to_rotational_ratio": "4401213/60853"
+  },
+  "retained_result": {
+    "formal_receipt_immutable": true,
+    "ordering_supported": "The registered H2 values support electronic above vibrational above rotational scales.",
+    "universal_numerical_translation_rejected": "The registered H2 values reject identifying rotation and vibration with one universal equal quarter and reject a universal electronic-to-molecular factor of two.",
+    "adverse_evidence_preserved": true
+  },
+  "required_versioned_successor": {
+    "status": "blocking",
+    "must_derive": [
+      "distinct rotational and vibrational carriers",
+      "the rotational J(J+1) ladder",
+      "adjacent rotational spacing proportional to the positive count 2J",
+      "the vibrational oscillator and anharmonic ladders",
+      "isotope transport without a fitted isotope factor",
+      "a complete post-seal authoritative molecular comparison vector"
+    ],
+    "prohibited_shortcut": "The immutable leading receipt may not be relabelled as a passed universal measured-frequency law."
+  },
+  "disposition": "formal-leading-receipt-retained; universal-measured-reading-falsified; versioned-successor-required"
+}

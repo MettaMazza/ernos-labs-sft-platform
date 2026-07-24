@@ -1,0 +1,153 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate or component snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:7b932bb0ec9073313c25d1aab3ffc3ebfd620baa45796220fc13f9d99ee3a2b1"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3",
+      "role": "development_only",
+      "source_id": "NIST-ATOMIC-SPECTRA-POSTSEAL-SOURCE-RECORD"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Authoritative NIST snapshots are hash-bound in sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3; observation informed law formation, but the execution surface cannot access comparison targets before sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered exact comparison passes and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:4bd72f41b257b8d9ae7bd65a557666a2dabf07736dcffc88644cb23e1668962e",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-post-seal-evaluator",
+    "falsification_condition": "Either exact prediction lies outside its complete NIST interval, a row or uncertainty is omitted, a source hash changes, target access precedes sealing, or a tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Verify every source hash, evaluate the immutable exact relation, retain every reported interval endpoint, and compare every row after seal release.",
+        "metric_id": "exact-rational-post-seal-correspondence",
+        "unit_protocol": "External unit inscriptions remain source records; only exact positive rational arithmetic enters the evaluator."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Atomic Spectra Database",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:cc54c774518d62cbb7e95f17b3b7fcd9d1faf0aa90043a607b91dff0a43e2087",
+      "source_id": "NIST-ASD-HYDROGEN-ATOMIC-DATA",
+      "source_uri": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable1.htm"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Atomic Physics Division",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:86ccaeb875fcdb4445e727618509621ceee656e5dc02295140ecdb6e1d2dd443",
+      "source_id": "NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019",
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal carrier-times-gap, exact-interval, provenance, custody, complete-row and no-extra-rule product.",
+    "dependency_hashes": [
+      "sha256:7ae46314b9d15c2fe8b6f665990624130eb036112873bf12462649de7d205431",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa",
+      "sha256:7e661d88e70c749032cd9f4ad2250b3282a7755c4c70af0ae8b0215f07c2cde4",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c"
+    ],
+    "exact_domain": "All exact post-seal applications of the immutable Fold Lyman-alpha and Balmer-alpha ratios to the one registered NIST hydrogen ionization carrier, compared with both complete reported line intervals.",
+    "relation_hash": "sha256:bd89271fa01b7ff754f9902513b5bc9cf240611d839421c6061f99d61d69db08",
+    "statement": "The sealed ratios predict Lyman-alpha 82259.078775 cm^-1 and Balmer-alpha 1096787717/72000 cm^-1; these lie respectively inside the complete NIST intervals [82259.02, 82259.30] and [15233.14, 15233.28] cm^-1.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:43307965dc8635f2c72fa5140591cc973351550f08fbb970d5d2ade29746276a",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:626d9871463d999a583ea324875418b03ed38f82f41bebae60cee5f3ce86d719",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:220d4d9dbb5e8d6b14ec793290dcb0e2dc1634a68c96b751436ca3a37f9429e3",
+    "experiments/external_sources/physics/snapshots/atomic-spectra-postseal-source-record.json": "sha256:64fb03e6758e3274d33c6e15682b5739adfa7cf097453892d57248a98e6d12c3",
+    "experiments/external_sources/physics/snapshots/nist-hydrogen-atomic-data.html": "sha256:cc54c774518d62cbb7e95f17b3b7fcd9d1faf0aa90043a607b91dff0a43e2087",
+    "experiments/external_sources/physics/snapshots/nist-hydrogen-critical-compilation.pdf": "sha256:86ccaeb875fcdb4445e727618509621ceee656e5dc02295140ecdb6e1d2dd443"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered source, target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019",
+      "target_id": "NIST-H-I-LYMAN-ALPHA-INTERVAL"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019",
+      "target_id": "NIST-H-I-BALMER-ALPHA-INTERVAL"
+    }
+  ]
+}
