@@ -1,0 +1,144 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete molecular carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate or component snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:fe99ea40a9980ae3a56617499dd997c01e7b71bd1fa0348f8065d602a39046c0"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:211fb30414204bcc61f9fb4a69a451db24cb5d5aaaacb2bb3b85fc83429388a9",
+      "role": "development_only",
+      "source_id": "NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Hash-bound NIST H2/D2 snapshots remain capability-closed while exact ladder and ratio relations seal; source inscriptions are released only to the exact post-seal comparator.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All four sealed ratios are contained, both exact ladders hold, both isotope directions hold and every tampered row is rejected.",
+    "comparison_implementation_hash": "sha256:06cf8f3cf92c01a090f0b2f0f94f1e1a25c6714170aa69804c1d38f52998ad0f",
+    "evaluator_id": "SFT-EXP-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if any sealed ratio leaves its complete registered exact displayed-resolution interval, the J(J+1), 2J or positive anharmonic ladder identity fails, either isotope hierarchy or source hash changes, a target becomes readable before sealing, development provenance is hidden, or an immutable leading or adverse receipt is erased.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Verify both source hashes, propagate every displayed-resolution endpoint outward, retain all four ratio intervals and compare only after seal release.",
+        "metric_id": "exact-rational-post-seal-correspondence",
+        "unit_protocol": "External inverse-centimetre and angstrom inscriptions remain source records; only exact positive rational arithmetic enters the evaluator."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Chemistry WebBook SRD 69",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:18036a188088f880122249544ceb6b384fabfba93b300b4f9f0fa01aa0ed9b24",
+      "source_id": "NIST-WEBBOOK-SRD69-H2-DIATOMIC-CONSTANTS",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1828"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Chemistry WebBook SRD 69",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:790276cd493dbede03fc9e83db95bc0808a36838eb31473aaf923493b4749936",
+      "source_id": "NIST-WEBBOOK-SRD69-D2-DIATOMIC-CONSTANTS",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782390&Mask=1000"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal NIST H2/D2 molecular-spectroscopy comparison product.",
+    "dependency_hashes": [
+      "sha256:4e3ea364e29283d63addaa77cd7790b22f1cbc668f95bcda92782113502a6027",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered NIST H2 and D2 ground-state constant rows, their displayed resolutions, immutable predecessor receipts, disclosed observational development and sealed target-inaccessible molecular relation vector.",
+    "relation_hash": "sha256:331b152542f231d690a6caa8aca4052e4cb006b57c877f462b64e89bda3e484b",
+    "statement": "The sealed J(J+1), 2J, oscillator/anharmonic and four-ratio molecular successor passes the complete registered NIST H2/D2 comparison vector at the sources' displayed resolutions.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:b53d5ef5398e52a836eb5d28252e1011c1e4373217e1e01d6cfd46bf6e4f5ca3",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:f4d22f20cc6e4b90e67dbff97363931746c00fe0a48c2100eb190110a03bb838",
+    "program_id": "SFT-EXP-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:d575117cb64d70486884656ec004ac34903aa9a78965e0367060d7a66588cad6",
+    "experiments/external_sources/physics/snapshots/molecular-spectroscopy-successor-source-record.json": "sha256:211fb30414204bcc61f9fb4a69a451db24cb5d5aaaacb2bb3b85fc83429388a9",
+    "experiments/external_sources/physics/snapshots/nist-webbook-d2-diatomic-constants.html": "sha256:790276cd493dbede03fc9e83db95bc0808a36838eb31473aaf923493b4749936",
+    "experiments/external_sources/physics/snapshots/nist-webbook-h2-diatomic-constants.html": "sha256:18036a188088f880122249544ceb6b384fabfba93b300b4f9f0fa01aa0ed9b24"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered source, ratio and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR",
+      "target_id": "NIST-MOLECULAR-H2-D2-COMPLETE-VECTOR"
+    }
+  ]
+}

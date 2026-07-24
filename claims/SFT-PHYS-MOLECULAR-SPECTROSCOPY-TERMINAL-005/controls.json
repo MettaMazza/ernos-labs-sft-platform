@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f01d0ff1ae2a565038b11a1fbb8d6f8dd676ccc0b317f24beb33633680006376"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7357d35b1e9d73a17a643f7ddd74659f8520e5e38d72843eeca43b1a73a2d66b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:80ad2ac3a4b100486bfa95508dace8af040368b7f66f7e96d1bd0078a39dbfbf"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:45a74a3e4905cc6e2ef65119261f21696ab3bb97a16c357ecf8cdd50468168eb"
+    }
+  ]
+}

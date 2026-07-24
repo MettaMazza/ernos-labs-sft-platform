@@ -519,3 +519,43 @@ inheritance ledger is now 304 same-strength closed and 194 open, with 57 mapped
 open and 137 unmapped open.  This count supersedes section 27.  The next new
 derivation is the molecular-spectroscopy terminal successor for V1 III-8 and
 V2 Step 142; this atomic-precision group must be committed, not rerun.
+
+29. The molecular-spectroscopy terminal successor is admitted and must not be
+    regenerated:
+    - `SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005`, engine receipt
+      `sha256:286941c32f5e99614d53ad4ab579a565af536106d3e64e9c590cbad527fd5b2b`;
+    - derivation seal
+      `sha256:b55b897333c29b1cd00928c161f9e618e3695fb5c9552fc51a3cb8f558770958`;
+    - independent validation
+      `sha256:ec6f6d5fe3918f8459dcb5f331bc69517ae74a5a87d5232cbb5ebeee91152dc2`;
+    - empirical validation
+      `sha256:0b3469f88c3a1a7825aa8906387d6a3a3b693f62fce7242f345232046094348c`;
+    - measurement receipt
+      `sha256:95c6631925a30c7777c128d2738d133b452d784e33342da6ca5026eefdc21f64`.
+
+The formal module preserves the earlier electronic-over-molecular hierarchy
+and its adverse equal-quarter comparison.  Its target-inaccessible successor
+forces `E_J/B=J(J+1)`, adjacent gap `2J`, and the positive-ordinal anharmonic
+ladder `G_n=omega(2n-1)/2 Take omega_x(2n-1)^2/4`.  Using only the admitted
+exact alpha and typed Fold carriers, it seals four distinct relations:
+
+- `B_H2/omega_H2 = 2alpha Take 14alpha^2 Take 58alpha^3 Take 82alpha^4`;
+- `omega_x,H2/omega_H2 = 4alpha Take 30alpha^2 Take 59alpha^3 Take 63alpha^4`;
+- `B_D2/B_H2 = 1/2 + 5alpha^2 + 38alpha^3`;
+- `(omega_D2/omega_H2)^2 = 1/2 + 20alpha^2 + 49alpha^3`, so no irrational
+  isotope root enters the proof domain.
+
+Only after the 1,024-form grammar had one survivor and sealed were both NIST
+Chemistry WebBook SRD 69 components released.  The registered H2 ground-state
+rows are `4401.213`, `121.336` and `60.8530 cm^-1`; the D2 rows are `3115.50`,
+`61.82` and `30.4436 cm^-1`.  Exact outward propagation of half the last
+displayed place—explicitly a transcription-resolution enclosure, not a NIST
+uncertainty claim—contains all four sealed ratios.  The aggregate source record
+is `sha256:211fb30414204bcc61f9fb4a69a451db24cb5d5aaaacb2bb3b85fc83429388a9`.
+
+The focused successor test was run once and passed (`5 passed`).  V1 III-8 and
+V2 Step 142 are now closed at their complete formal and empirical boundaries.
+The live inheritance ledger is 306 same-strength closed and 192 open, with 55
+mapped open and 137 unmapped open.  This count supersedes section 28.  The next
+new work is the remaining atomic group beginning with V1 III-1 reduced-mass
+completion; this molecular group must be committed, not rerun.
