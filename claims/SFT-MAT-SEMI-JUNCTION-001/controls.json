@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SEMI-JUNCTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:04fea8715f50e7048d9416d376c53e3450f90c1c8994797f356f59fc28bb26fd"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b60cab4caeac9244a50a12bfbcdba9f6971a485a5c9dca8d0dc056c9e1461973"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:341cc639ba0af26441cfc73b6163439bb85143317cd5e75e78911ae88dc2e7b5"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:bed3d1635d1a890677f6efc509da67b859b05cda4243428f4bfa2cb10c603d12"
+    }
+  ]
+}

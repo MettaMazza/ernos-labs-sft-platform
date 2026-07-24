@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-CERAMIC-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:76deb008a987f16ea7cf2d23813da1ce5b61f9665f182459ad93958acd125655"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:62d814937e216c438b3031aa1287c27a1c099fc17fb38a779a32a4c0abda3867"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:52134d6b9c5c728526c88b12b66102baf449f59f6b8deab50eda64a5d8430d18"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:b1df93ebe9661b7a1504c2c444af7ff8ce24fd932d309719a4a077d0effcf610"
+    }
+  ]
+}

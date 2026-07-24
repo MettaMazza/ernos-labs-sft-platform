@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-GRAIN-BOUNDARY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:c942c9634762db6520d32ff1ac8e7d7a1c63e39d2c641022dcd7138ef3598216"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:220e22dfdd09c0f9d947632d1b79d338308a1b410141a93266443951748ef628"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:dff2ad7f91bf18ad74cad7113fd23d4b572fc232ae3f3dacd4a2505c0501db95"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:4bed4e2d09f13bdd5c2a7afc570796ce789516387035f49315e09e75991a704b"
+    }
+  ]
+}

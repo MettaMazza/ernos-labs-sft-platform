@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-FUNC-NANOMATERIAL-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:31c76c3f386bed3a498183b0f457baf72566e4999e3bbfde6be9cf01415a227d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:dc40a0ec44efafc6e16bc5818d4e5876e2169c4a4d15e75a7c44b057a6232ce2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:42da32bcf34d016e4fb04da37d8e1a77bed1c2942845d0bbdb58abb5d23c657f"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:e95636207c13c2d934d5cc7503c8af418875ef0267cb94376f56979200802167"
+    }
+  ]
+}

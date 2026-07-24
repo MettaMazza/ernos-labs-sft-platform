@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-NUCLEATION-GROWTH-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:02e1b41356ebd232f4e1ffce226a6e14589a289969615744ce95a85aad756a91"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:85311f60dd07cce5138f6bd6e045ddff85be231164ee115db8a452a521f1fee8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:56ef43ac04bcd811cb45b4c7c6fdbcff6ccdb17e704f75735d8372bd501a556a"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:dd63ed8dc2853cf4afc78234cae08767527ac748ef137aa0f4a17520975b4ce6"
+    }
+  ]
+}

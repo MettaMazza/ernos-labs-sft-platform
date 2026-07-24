@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DIEL-POLARIZATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:ab4c971eddd4a0592c52799f300cbb68ccdd19e0d17929704c030e932e3147ef"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f811d9b97206cb817d188a47fc41c6ee4857a456316be6a1d8a144544071bcd3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e5b70b12ddb119fd8aab8971c8adb87e5830aadd0fa9b644bfc648aa356cbdf8"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:419fd084389f321aa44b601dd00e318fb0647694ec700f5298800692c0e802c1"
+    }
+  ]
+}

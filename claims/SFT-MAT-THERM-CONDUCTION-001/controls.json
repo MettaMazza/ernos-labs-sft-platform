@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-CONDUCTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:19069236c3c4b3a7dfaaab7b12bbef6c542b7fa84585b15712bd64dabb87e580"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e830330106bc942c9651b68e4685a201d4266513d442e71e66fd2321a9463b3e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:14fe4fe4b473610bb862eb6beff2dfd07c036ad39ee6a12848a26d4e24a8af58"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:7a817c1177ec039fa173c7e2f4b2458c3bc9a478948cec1e1e7b45539ae54486"
+    }
+  ]
+}

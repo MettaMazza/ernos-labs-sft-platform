@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-LIFECYCLE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:42532e43e708387eab368ef316263c2ed870195ef765bab6a76e7b16dd4a334b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1360d7af1f0267dfc482885e6b6289c9a952d85d977db53826e457f0fe3d337a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:599f2eca8225f1d225f32ee678bb4237582333e452455db62034e12fdbfc6981"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:29bef3fbd7454e3857b3b0be39cd76cdc6725365e836fe943c4c620e0cc2da2d"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-DIFFUSION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1d11be3a1ad882f5cd29b311457e62302459d6833393f74d4e942187679fae66"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2ed5233a8868de6e7a8153374b3de47540029249169de8412bcef7af92ebfb5d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0a97789d5adcb49aef646568c5f015237315bb8fa83088af4563c2e6bd4bc54b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:48a8135d5b012c395466cb8e4986b7799d63e98542cd8ca4fa9d311f782ba773"
+    }
+  ]
+}

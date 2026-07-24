@@ -1,0 +1,144 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-MAT-THERM-EXPANSION-001",
+  "complete_branch_pre_source_seal": {
+    "all_84_predictions_sealed_before_source_selection": true,
+    "hash": "sha256:da97a6cb6a001964a069b45a5a3698e7ea90f334a08d69c62bd09c46d8112035",
+    "path": "experiments/sealed_predictions/materials_complete_branch_pre_source.json"
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the content-specific carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed snapshot or missing required fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, an imported law or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-MAT-THERM-EXPANSION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:7afa1acfb52624c624d12982927396be94c7d694e806e1086a5485659589f4c9"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered fragment and snapshot reproduces, the exact held label matches, and the changed control is rejected.",
+    "comparison_implementation_hash": "sha256:3d2614f972a35ff5c0d12234449394ab8a1b3b058c4b593e0e9596b35285d47c",
+    "evaluator_id": "SFT-EXP-MAT-THERM-EXPANSION-001-post-seal-source-evaluator",
+    "falsification_condition": "The claim fails if a complete registered thermal expansion observation lacks any sealed carrier, relation, organization or boundary feature, any required row is omitted, or a tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Require every registered fragment in every byte-sealed authority source and compare the reconstructed categorical record with the sealed consequence.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Conditional categorical materials relation; no specimen-dependent magnitude is claimed as a universal constant."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-MAT-THERM-EXPANSION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "post-seal-authority-evidence",
+      "evidence_scope": "multiscale microstructure, phase evolution, heat treatment, porous materials and in-situ processing",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:2de46a8509f29f4ad9367652b9b4a4740b6cb0e1c7be1bf4cd3087b25e2eed2a",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-multiscale-materials.html",
+      "source_id": "NIST-MULTISCALE-MATERIALS-2026-07-24",
+      "source_uri": "https://www.nist.gov/programs-projects/multiscale-structure-and-dynamics-advanced-technological-materials"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of the registered content-specific carrier, relation, organization and observation choices with record, provenance, generality and extension choices.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:e458723a9896384bf1342969cd11d9142757a96aabbbfd875616a706903b3154",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:049c05ff331b479000ba824a46aaa7a09983a6f64dfbf7ab3573a23131469834",
+      "sha256:c5032f13890f8ff636bee2b30cae411ec7aa816f514cf50915d8ea7a85c8bae7",
+      "sha256:920b738099d5a4211455c084d904a2abdfeb1c6d07eadaa15adfd51c104ecbf4",
+      "sha256:6d598726dd5c94fb8c1cc9ec8451a160899f2e9a3b4a9e8ebf963b63d367a81d"
+    ],
+    "exact_domain": "Every positive finite generated Materials carrier in the registered thermal_magnetic_optical grammar that preserves bond-separation-network, excitation-conditioned-separation-change, material-identity-retained and direction-and-temperature-bounded.",
+    "relation_hash": "sha256:5e5e6b32a604ebe93f89e62c2b1a094b0d563cf3cba387fd472a4bc402997091",
+    "statement": "bond-separation-network__excitation-conditioned-separation-change__material-identity-retained__direction-and-temperature-bounded__complete-state-transition-boundary-trace__root-bound-forward-forcing__positive-finite-successor-closure__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-MAT-THERM-EXPANSION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:07ad35d8386146403cf7ffd4a0fc08dde82bc84f46238ff1d6036d438940d149",
+    "program_id": "SFT-EXP-MAT-THERM-EXPANSION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "required_source_features": [
+    {
+      "required_fragment": "heated over 4 hours",
+      "source_id": "NIST-MULTISCALE-MATERIALS-2026-07-24"
+    },
+    {
+      "required_fragment": "temperature and time",
+      "source_id": "NIST-MULTISCALE-MATERIALS-2026-07-24"
+    }
+  ],
+  "row_retention_policy": "retain-every-registered-source-feature-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:fd51f3715e5ce743490bdb35427614df99320efcb4e873f560ba00f248b38fd8",
+    "experiments/external_sources/materials/snapshots/nist-multiscale-materials.html": "sha256:2de46a8509f29f4ad9367652b9b4a4740b6cb0e1c7be1bf4cd3087b25e2eed2a"
+  },
+  "status": "authoritatively_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_target_blind_blueprint": true,
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "NIST-MULTISCALE-MATERIALS-2026-07-24"
+      ],
+      "target_id": "sft-mat-therm-expansion-001-authority-correspondence"
+    }
+  ]
+}

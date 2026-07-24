@@ -72,11 +72,22 @@ claim follows the empirical constitution where observation is required.
 
 ## Phase F - chemistry, materials and life
 
-- Chemical elements, bonding, reactions and periodic structure.
-- Molecular and material organization.
+- [x] Chemical elements, bonding, reactions and periodic structure: 86/86
+  Chemistry laws published at DOI `10.5281/zenodo.21531455`.
+- [x] Molecular and material organization: 84/84 Materials Science laws,
+  21,504 exact candidates, complete post-seal NIST/BIPM correspondence and
+  standalone exhaustive branch paper prepared at DOI
+  `10.5281/zenodo.21532482`.
 - Genetics, proteins and cellular organization.
 - Evolution, ecosystems and biological dynamics.
 - Earth and environmental systems.
+
+Before another science branch begins, the Physics paper and census receive a
+dedicated constant/value audit. Every claimed physical constant or
+discriminator must have its own Fold derivation, pre-measurement value seal,
+post-seal authoritative value/units/uncertainty comparison and root trace.
+This audit specifically includes the inverse fine-structure constant and is
+not limited to it.
 
 ## Phase G - astronomy and larger systems
 

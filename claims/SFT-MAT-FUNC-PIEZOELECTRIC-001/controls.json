@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-FUNC-PIEZOELECTRIC-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:8ab926031b7ddd6f9ae6723610d89598c05082b6a6aae33124e1485e2155a550"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:46b8080073955bdaff587c54bb623525c892ff9137218f8adc2ce6d36b3c9278"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:769c539ede54297da90196ce94b20c57bbbfa5cea6148c8d4b022abc7c36e8a9"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:178a33c9bd0f4b6d3e6f7842ba574a87781b2a3174b4f3c77ea99f725c82198f"
+    }
+  ]
+}

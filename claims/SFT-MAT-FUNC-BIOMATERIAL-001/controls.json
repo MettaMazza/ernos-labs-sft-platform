@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-FUNC-BIOMATERIAL-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:c77ecdcc4cee7390b374f11dac9a22f81f990b7789c59a924c07fe55f79a889e"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:cb1ea4682cb262aad2796a49a64cedd62acb16f9534428567b7cd8dc5a118235"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1d101e88432f57335048d4d9f0a2b09fe305b1cf62dd6fb95fe211598e2553a4"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:da528078953f494ae3b594ae054f42104f1e21c78ec26b6bae2a906ca4dc1689"
+    }
+  ]
+}

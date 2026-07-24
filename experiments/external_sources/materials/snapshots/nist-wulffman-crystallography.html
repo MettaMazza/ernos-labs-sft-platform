@@ -1,0 +1,1031 @@
+
+<html>
+<head>
+<title>WULFFMAN - CTCMS</title>
+<link rel="STYLESHEET" type="text/css" href="/PHP/templates/theme01/styles/default.css">
+
+<meta NAME="description" CONTENT="An Interactive Crystal Shape Constructor">
+<meta NAME="keywords" CONTENT="CTCMS Wulff Wulffman surface energy fixed volume crystallographic point group interactive crystal shape constructor">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" id="_fed_an_js_tag" src="/js/federated-analytics.all.min.js?agency=NIST&subagency=ctcms&pua=UA-37115410-17&yt=true"></script>
+<!-- Google tag (gtag.js) -->
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-W4GLEDDY8P></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'G-W4GLEDDY8P');
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="60"><img src="/PHP/templates/theme01/template04/img/topleft01.gif" width="180" height="98" alt="Curves Image"></td>
+          <td width="235" valign="top"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>			  
+                <td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              		<tr>	
+					<td nowrap background="/PHP/templates/theme01/template04/img/mid_blue_10x10.gif"><p class="SansBold">&nbsp;&nbsp;&nbsp;<a href="/" class="topmenu">Home</a> 
+	                        | <a href="/programs/" class="topmenu">Projects</a> | <a href="/people/" class="topmenu">People</a> | <a href="/opportunities/" class="topmenu">Opportunities</a> | <a href="/php/calendar/calendar.php" class="topmenu">Calendar</a> | <a href="/people/register.html" class="topmenu">Register</a> | <a href="/search.html" class="topmenu">Search</a> 
+	                        &nbsp;&nbsp;&nbsp;</p> 
+	                </td>
+					<td background="/PHP/templates/theme01/template04/img/mid_blue_10x10.gif"><img src="/PHP/templates/theme01/template04/img/mid_blue_10x10.gif" width="1" height="22"></td>
+					</tr>			  
+            	</table>
+				</td>
+              </tr>
+              <tr>
+                <td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+				<td><img src="/PHP/templates/theme01/template04/img/ctcmstop.gif" width="424" height="76" alt="NIST Materials Science and Engineering Laboratory / NIST Center for Theoretical and Computational Materials Science"></td>
+				<td width="90%" background="/PHP/templates/theme01/template04/img/topline2.gif">&nbsp;</td>
+				</tr></table>
+				</td>
+              </tr>			  
+            </table></td>
+          <td width="90%" background="/PHP/templates/theme01/template04/img/topline.gif">&nbsp;</td>
+          <td width="171"><a href="http://www.nist.gov"><img src="/PHP/templates/theme01/template04/img/nistlogo.gif" width="170" height="98" border="0" alt="NIST Home Page"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="180" align="left" valign="top"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="52" valign="top" align="left"><img src="/PHP/templates/theme01/template04/img/left01.gif" width="61" height="477" alt="CTCMS watermark"></td>
+                <td align="left" valign="top" bgcolor="#FFFFFF"> 
+                  <p><img src="/PHP/templates/theme01/template04/img/topleft02.gif" width="119" height="100"></p>
+                  	
+<p class="Sansmid">
+<b><a class="leftmenu" href="../index.html">Home</a></b></p>
+
+<p class="Sansmid">
+<A class="leftmenu" href="../overview_1.2.html">Overview</a><BR>
+<A class="leftmenu" HREF="../features.html">Basic Program Features</A><BR>
+<A class="leftmenu" HREF="../archive/index.html">Software Archive</A><BR>
+<A class="leftmenu" HREF="../docs_1.2/index.html">Documentation</A><BR>
+<A class="leftmenu" HREF="../examples.html">Examples</A><BR>
+<A class="leftmenu" HREF="../links.html">Links</A><BR>
+<A class="leftmenu" HREF="../bugs.html">Bug Information</A><BR>
+<A class="leftmenu" HREF="../disclaim.html">Disclaimer and Copyright</p>
+
+                  </td>
+              </tr>
+            </table>
+		  </td>
+          <td width="100%" align="left" valign="top"> 
+         <br><p><img src="/PHP/templates/theme01/template04/img/groupname.gif" width="424" height="43"></p>
+
+<!-- ********** Page Content Begin ********** -->
+<!-- 
+    ** Remove this comment for your actual pages **
+    these table tags are optional, you can remove them if you need more
+    space in terms of width of the content
+ -->
+<!-- <table width="440" border="0" cellspacing="10" cellpadding="0">
+<tr>
+<td> -->
+
+<P class="SubTitle">
+<IMG SRC="../shape_pics/fcc2bcc_anim.gif">
+WulffmanDocumentation</P>
+
+<BR><BR><BR>
+<HR ALIGN=left WIDTH="60%">
+<TABLE WIDTH="60%"><TR>
+<TD ALIGN=CENTER>  <IMG SRC="../shape_pics/loztr.gif" HEIGHT=50 WIDTH=50>
+<TD ALIGN=CENTER> <FONT SIZE=+1> <STRONG> Table Of Contents </STRONG> </FONT> </A>
+<TD ALIGN=CENTER>  <IMG SRC="../shape_pics/loztr.gif" HEIGHT=50 WIDTH=50>
+</TABLE>
+<HR ALIGN=left WIDTH="60%">
+<UL>
+  <LI> <A HREF="#how_to"> <STRONG> Running Wulffman </STRONG> </A>
+  <LI> <A HREF="#features"> <STRONG> Basic Program Features </STRONG> </A>
+       <UL>
+         <LI> Overview
+	 <LI> Layout
+	 <LI> Buttons
+	 <LI> Data Fields
+       </UL>
+  <LI> <A HREF="#main">  <STRONG> Main Window </STRONG></A>
+  <LI> <A HREF="#facet_tool"> <STRONG> Facet Tool </STRONG> </A>
+       <UL>
+	 <LI> Facet Normals
+	 <LI> Surface energy control
+	 <LI> Facet storage and retrieval
+       </UL>
+  <LI> <A HREF="#symmetry_tool"> <STRONG> Symmetry Tool </STRONG> </A>
+       <UL>
+	 <LI> Crystal Systems
+	 <LI> Point Groups
+       </UL>
+  <LI> <A HREF="#custom_tool"> <STRONG> Custom Tool </STRONG> </A>
+       <UL>
+	 <LI> Inversion symmetry
+	 <LI> Custom matrix
+	 <LI> Custom rotation axes
+	 <LI> Custom mirror planes
+       </UL>
+  <LI> <A HREF="#prefs"> <STRONG> Preferences </STRONG> </A>
+       <UL>
+	 <LI> Axis control
+	 <LI> Boundary Polytope Definition
+	 <LI> Tolerances
+	 <LI> Colormap Modification
+       </UL>
+  <LI> <A HREF="#group_info"> <STRONG> Group Information </STRONG> </A>
+       <UL>
+	 <LI> Equivalent positions
+	 <LI> Stereograms
+	 <LI> Group notation
+	 <LI> Crystal system specifications </STRONG> </A>
+       </UL>
+  <LI> <A HREF="#matrix_info"> <STRONG> Symmetry Matrices </STRONG> </A>
+  <LI> <A HREF="#xform_info"> <STRONG> Coordinate Transformations </STRONG> </A>
+  <LI> <A HREF="#glossary"> <STRONG> Glossary </STRONG> </A>
+</UL>
+<HR>
+
+<BR><BR><BR>
+<H2> <A NAME="how_to"> Running Wulffman</A> </H2>
+<HR ALIGN=left WIDTH="50%">
+<P>
+Wulffman is a module to be used with <I>Geomview</I>, a 3-D
+visualization environment written by the Geometry Center at the
+University of Minnesota.  The best way to learn how to use Wulffman is
+to experiment; it won't bite!  The basic procedure for running
+WUlffman is as follows:
+<OL>
+  <LI> Start <I>Geomview</I>
+  <LI> Within the Modules panel of the <I>Geomview</I> window, click
+       on <STRONG> Wulffman </STRONG>.  The <STORNG>Wulffman</STRONG>
+       control window should become visible.
+  <LI> Open the <I>Symmetry Tool</I> and select a point group.
+  <LI> Open the <I>Facet Tool</I> and enter some facets of interest
+  <LI> Click <STRONG>Go</STRONG> in either the Control or Facet
+       Windows.  The Wulff shape should be generated and output to
+       <I>Geomview</I>.
+</OL>
+For a description of the details of <STRONG>Wulffman</STRONG>, read
+the documentation below, or use the on-line <STRONG>Help</STRONG>
+contained in each Wulffman window.  The HTML documents and those
+contained within the program contain the same content, although there
+are no graphics within the program Help. </P>
+       
+<BR><BR><BR>
+<H2> <A NAME="features"> Basic Program Features </A> </H2>
+<HR ALIGN=left WIDTH="50%">
+<P>
+</P>
+<H3> <A NAME="Overview"> Overview </A> </H3>
+<P>
+<B>Wulffman</B> is designed to construct the global Wulff shape that
+results from the intersection of one or more constituent Wulff shapes.
+The <I>Global Shape Window</I> in <B>Wulffman</B> is
+used to spawn, close, or destroy all of the windows associated with
+each <I>sub-shape</I>.  Each individual sub-shape has its own
+set of specifications (Symmetry, Facets, Preferences,...) each of
+which is controlled by a distinct set of windows.  The actual Wulff
+shape displayed by <I>Geomview</I> can then be either one of the
+individual sub-shapes or the intersection of any subset of all
+possible sub-shapes.  A schematic representation of the relationship
+between the global window and all of the individual windows is shown
+below.<P>
+
+<CENTER>
+<IMG SRC="windowtree.gif">
+</CENTER>
+<BR>Window interrelationships in <B>Wulffman</B>.  The Global Shape
+Window (top) control the existence of all sub-shape windows (Labeled
+windows 1, 2, and n for convenience).<BR><BR>
+
+<H3> <A NAME="layout"> Layout </A> </H3>
+<P>
+The basic layout of the program invovles separation of the primary
+functions of the code into "Tool" windows and "Information" windows.
+Tool windows contain tools that the user can use to manipulate the
+program. Information windows contain information about selected
+aspects of each of the tools.  Each primary window contains a colored
+field in the upper left portion of the window indicating its name. 
+
+<H3> <A NAME="buttons"> Buttons </A> </H3>
+<DL>
+	<DT> <I> Normal </I> 
+	<DD> These buttons perform a simple function when pressed and do not
+	  remain active after their selection. An example of a
+	  normal button is the <I> Close </I> button present in all windows.
+	<DT> <I> Toggle  </I> 
+	<DD> These buttons control Wulffman's tool and information windows.
+	  When a toggle is activated, it changes color and the desired window
+	  is opened; closing the window acts to release the toggle,
+	  as does pushing the toggle while the window is active.  Most
+	  of the buttons in the <A HREF="#main"> Main Window </A> are toggles.
+	<DT> <I> Exclusive  </I>  
+	<DD>"Exclusive" buttons are used to select between a group of
+          mutually exclusive options.  When an exclusive button is active, it is
+          colored, and selection of other buttons within its group automatically
+          deactivates it.  An example of this can be found in the selection of
+          <A HREF="crystal_systems"> crystal systems </A>.
+</DL>
+
+<P>
+There are two buttons that are used throughout the application:
+the <I> Close </I> and <I> Help </I> buttons. <I> Close </I> acts to close the
+window in which it is pressed, usually activating a toggle 
+in the <A HREF="#main"> Main Window </A>.  The <I> Help </I> button 
+brings up help about the features of the window in which it is
+pressed; global help is available by pressing <I> Help </I> in the
+Main window.
+</P>
+
+<H3> <A NAME="fields"> Data Fields </A> </H3>
+<P> There are several instances where the user is presented with data
+fields that can be edited.  Instances of editable data fields occur in
+the Facet Tool, Custom Tool, Matrix Info, and Coord Xform windows.  An
+editable data field appears as a "down" box, and clicking on it with
+the mouse generates a cursor.  Normal keystrokes and cursor movement
+commands then function within this field.  Some data fields are <I>
+not always editable </I> by the user.  These fields are represented by
+simple flat boxes around the data in question (see <A
+HREF="#xform_info"> Coord Xform </A> for an example).  Clicking on
+these fields will have <I> no effect </I>.
+<BR>
+<BR>
+<BR>
+
+<! *************************** >
+<! Information for Meta window >
+<! *************************** >
+<H2> <A NAME="meta"> Meta Window</A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH="50%">
+<P ALIGN=center>
+<IMG SRC="meta_win.gif">
+</P>
+
+<P>
+This window controls all the Wulff shapes at once. It allows you to
+create new shapes, duplicate existing ones, and delete shapes. It also
+controls the intersection of shapes and provides statistics about
+the shape being shown by Geomview. The five buttons at the top of the
+window function as follows:
+<UL>
+  <LI> <B>New</B>: Add a new shape to the list
+       and open up its <A HREF="#main">Main</A> window.
+  <LI> <B>Go</B>: Build the Wulff shape.
+  <LI> <B>Prefs</B>: Opens and closes the <A
+       HREF="#prefs">Preferences</A> control window.
+  <LI> <B>Help</B>: Opens and closes a global help window.
+  <LI> <B>Quit</B>: Exit Wulffman. This will NOT delete the shape
+       shown by <I>Geomview</I>.
+</UL>
+
+Information can be found in the <B>Statistics</B> section about the
+displayed shape including the surface area, contained volume, and the
+total numbers of facets, edges, and vertices displayed by <I>Geomview</I>. Note
+that Euler's theorem governs the relationship between these three
+quantities: v - e + f = 2.<P>
+
+At the bottom of the window is a list of all the shapes which will be
+intersected to form the final shape. For most applications, only one
+Wulff shape will be examined. Each shape is described with one line on the
+form. From left to right: <UL>
+  <LI> A <B>Label</B> that will identify windows
+       associated with this shape.
+  <LI> The current <B>Symmetry</B> group of the shape.
+  <LI> A toggle button that controls whether windows associated with
+       this shape are <B>Show</B>n or not.
+  <LI> A toggle button indicating whether to <B>Include</B> this shape in
+       the final intersection or not.
+  <LI> The <B>Clone</B> button produces another shape having the same
+       symmetry and normals as the current shape. This is useful if
+       you wish to intersect two identical shapes with different
+       offsets or orientations.
+  <LI> The <B>Delete</B button deletes the shape from the list.
+</UL>
+
+<BR>
+<BR>
+<BR>
+
+<! *************************** >
+<! Information for Main window >
+<! *************************** >
+<H2> <A NAME="main"> Main Window </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH="50%">
+<P ALIGN=center>
+<IMG SRC="main_win.gif">
+</P>
+
+<P>
+This is the primary control window for an individual shape.  It allows
+access to other
+Tool and Information windows, and gives additional status about the
+current state of the program. The six control buttons (specified
+below) are all toggles
+that open their respective windows.  <I> Help </I> brings up help
+about this window. <I>Close</I> closes this window and all
+subsidiary windows, and pops up the show button on the <A
+HREF="#meta">Meta</A> form.
+</P>
+
+<H3> Tools for Building Wulff Shapes: </H3> 
+<UL>
+	<LI> <A HREF="#facet_tool"> <B> Facet Tool </B> </A> :
+              Construction of crystal facets
+	<LI> <A HREF="#symmetry_tool"> <B> Symmetry Tool </B> </A> :
+	      Specification of crystal symmetry
+	<LI> <A HREF="#custom_tool"> <B> Custom Tool </B> </A> :
+	      Build custom (non-crystallographic) symmetry groups
+</UL>
+
+<H3> Information Tools: </H3>
+<UL>
+	<LI> <A HREF="#group_info"> <B> Group Info </B> </A> :
+	      Obtain information about the selected symmetry group
+	<LI> <A HREF="#matrix_info"> <B> Matrix Info </B> </A> :
+	      Browse symmetry matrices
+	<LI> <A HREF="#xform_info"> <B> Coord Xform </B> </A> :
+	      Transformation between Cartesian and Unit Cell coordinates
+</UL>
+
+<H3>Spatial parameters:</H3>
+<UL>
+  <LI><B>Origin Shift</B>: The center of this Wulff shape is offset by
+       a vector according to these three input fields. If you shift
+       the origin of any Wulff shapes very far, you should be careful
+       to enter a center point in the <A HREF="#prefs">Preferences
+       Form.</A>
+  <LI><B>Rotation Angle</B>: Rotate the Wulff shape by this angle (in
+       degrees) around the <B>Rotation Axis</B>.
+  <LI><B>Rotation Axis</B>: The vector about which the Wulff shape
+       will be rotated. Note that only the direction is important: the
+       magnitude will have no effect.
+</UL>
+
+<H3>Axes:</H3>
+<UL>
+  <LI> <B> Show </B>: Toggle that determines whether
+       coordinate axes (either cell or Cartesian) are shown along with the
+       Wulff shape.
+  <LI> <B> Size </B>: Allows adjustment of the size of
+       the axes.  Double and single arrows allow large or small incremental
+       modifications of their length.
+</UL>
+
+<H3><A NAME="boundary">Boundary:</A></H3>
+This section controls the features of the <I> Boundary
+Polytope </I>.  This is a polytope that surrounds the
+Wulff shape at any given time; by default it is invisible, but note
+that each shape can have its own Boundary Polytope.  The shape
+of this polytope is 
+controlled by the <I> Size </I> and <I> Skew </I> parameters, and its
+volume is controlled by the Energy. The number of facets on the
+polytope is given by <I>Size</I>.
+The orientation of facets is determined by <I> Skew
+</I>.  For <I> Skew </I> = 0, the facets are uniformly distributed
+over the surface of a sphere.  For large values of 
+<I> Skew </I>, the facets are distributed over the surface of a sphere
+with the additional constraint that they are repelled from
+orientations that correspond to user-defined facets.  The strength of
+the repulsion is proportional to the value of <I>Skew</I>.<BR>
+<UL> 
+  <LI> <B> Color </B>: The default color appears as
+       black, but is actually transparent (the first entry in the colormap).
+  <LI> <B> Size</B>: Number of facets in the bounding polyhedron
+  <LI> <B> Skew</B>: Degree to which facets on the bounding
+       polytope are skewed away from user-defined facets.  A large value of
+       the skew effectively creates more facets on the bounding polytope,
+       assuming that this polytope intersects the Wulff shape.
+  <LI> <B> Energy</B>: Surface energy of the bounding polytope.
+       A large value of the surface energy (i.e., much larger than that of
+       the user-defined facets) will generate a bounding polytope that lies
+       completely <I> outside </I> the Wulff shape.  For energy values less
+       than or equal to the energies of facets defined by the user, the
+       bounding polytope effectively acts as an isotropic surface between
+       facets (for a large enough value of <I> Size </I>).
+</UL>
+
+<BR>
+<BR>
+<BR>
+
+<! ************************** >
+<! Information for Facet Tool >
+<! ************************** >
+<H2> <A NAME="facet_tool"> Facet Tool: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH="50%">
+<P>
+The Facet Tool controls the facets that will be present in the Wulff
+shape.  Each facet is specified by its normal, i.e., the unit vector
+perpendicular to that plane.  A surface energy for each facet can then
+be specified (the default is for isotropic surface energy).  Once all
+of the information is entered by the user in this window, it must be
+exported to <B> Wulffman </B> for shape construction.
+
+<P ALIGN=center>
+<IMG SRC="facet_win.gif">
+</P>
+
+<UL>
+  <LI> <B> Go </B>: Generate / Update the Wulff shape
+  <LI> <B> New </B>: Create a new (unspecified) facet
+  <LI> <B> Load </B>: <BR> 
+       Read in a set of stored facets.  This
+       buttong spawns a window allowing the user to locate the file
+       containing the facets of interest.  Within this load window, if the
+       <I>Overwrite</I> button is lit, the facets that are read in will
+       replace any existing list of facets.  If it is not lit, then the
+       facets that are read in are simply appended to the existing list.  The
+       symmetry group and crystal class associated with the loaded
+       facets are set automatically.  However, in the case of a set of
+       facets corresponding to a Custom group, the custom group is not
+       loaded; the custom group window is displayed and the user can
+       load the appropriate custom group at that time.
+  <LI> <B> Save </B>: <BR>
+       Save a group of facets (including the crystal
+       class and the point group).
+       No information about the boundary polyhedron is saved, and the current
+       group name is only saved for reference purposes.  
+  <LI> <B> XYZ / HKL </B>: (<B>XYZ / HKL / UVW</B> in V1.2.3)<BR>
+       Facet specifications in either
+       Cartesian or unit cell coordinates (or Miller indices in V1.2.3).
+	Each "down" box is an editable
+       field which holds facet normal directions.  The current coordinate
+       system is indicated by the colored letter above these fields.
+	XYZ indicates cartesian coordinates, HKL indicates unit cell
+	coordinates (Miller indices in V1.2.3+, with UVW indicating unit
+	cell coordinates).
+  <LI> <A NAME="hkl_toggle"> <B>XYZ / HKL Selection Button: </B> (<B>XYZ / HKL / UVW</B> in V1.2.3</A>  <BR>
+       Choose between facet
+       specification in Cartesian (XYZ) or Unit Cell (HKL) coordinates.
+       Pushing this button shifts the facets to the coordinate system
+indicated, i.e., if the button reads HKL, then pushing it indicates
+facets should be input in HKL coordinates. In version 1.2.3, HKL indicates
+Miller indices, and UVW is used to indicate cell coordinates: the button
+is a triple-toggle, cycling between the three choices.
+	<LI> <B> "On-the-Fly" Toggle</B>: <BR>
+Update the Wulff shape automatically
+as surface energy is changed (small light button located to the left
+of the surface energy controls).
+	<LI> <B> Surface energy </B>: <BR>
+The value of the surface energy
+for each facet is controlled in this editable data field.  Arrow
+buttons allow the value to be changed by large (>>) or small (>)
+preset increments.  Clicking each button changes the surface energy by
+a given increment; holding down the button changes the surface energy
+continuously until released.  Alternatively, the actual value of the surface 
+energy can be changed directly in its field.
+	<LI> <B> Unique </B>: <BR>
+Toggle button that allows the user to specify whether the symmetry
+group operations will act on the given facet (default = TRUE).  If
+this button is selected (yellow), then the facet is unique (i.e., it
+is a single crystallographic plane).
+	<LI> <I> Number </I>: <BR>
+The total number of symmetry-distinct facets of this type generated by
+the action of the symmetry group.  Note that this is <I> not </I>
+necessarily the number of facets that are visible in Geomview on the
+Wulff shape.  
+	<LI> <B> Color </B>: <BR> 
+Choose the color for the given facet.
+Note that the first color of the colormap (black) is actually
+transparent, so that facets can be made to effectively disappear.
+Note in addition that entries can be added to the colormap through the
+<A HREF="#prefs"> Preferences </A> control window.
+	<LI> <B> Delete </B>: Delete the given facet from the working set
+</UL>
+<BR>
+<BR>
+<BR>
+
+
+<! ***************************** >
+<! Information for Symmetry Tool >
+<! ***************************** >
+<H2> <A NAME="symmetry_tool"> Symmetry Tool: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P ALIGN=center>
+<IMG SRC="symm_win.gif">
+</P>
+
+<H3> <A NAME="crystal_system"> Crystal System: </A> </H3>
+<P> Select the crystal system for use.  These buttons all represent
+mutually exclusive options, hence only one system may be selected at
+any given time.  Systems are divided into three categories: (1)
+crystallographic systems (those that are consistent with translational
+periodicity), (2) Icosahedral systems (those that possess the symmetry
+of one of the icosahedral point groups), and (3) Custom systems.
+Icosahedral systems are not consistent with tranlsational periodicity;
+custom systems, i.e., those defined by the user, are consistent with
+translational periodicity only if the custom group defines a subgroup of
+one of the crystallographic groups.  In general, a custom system will
+not be consistent with translation, and hence is characterized below
+as non-crystallographic.
+<UL>
+	<LI> Crystallographic systems: Select the crystal system /
+                  Bravais lattice for use
+	   <UL>
+		<LI> <B> Triclinic </B>
+		<LI> <B> Monoclinic </B> (<B>c</B>-axis unique)
+		<LI> <B> Orthorhombic </B>
+		<LI> <B> Tetragonal </B>
+		<LI> <B> Trigonal </B> (Hexagonal axes)
+		<LI> <B> Hexagonal </B>
+		<LI> <B> Cubic </B>
+	   </UL>
+	<LI> Non-crystallographic systems:
+	   <UL>
+		<LI> <B> Icosahedral </B>: Choose groups possessing
+                           icosahedral symmetry
+		<LI> <B> Custom </B>: Select a custom group
+	   </UL>
+</UL>
+
+<H3> <A NAME="point_group"> Point Group: </A> </H3>
+<P> Output in the point group field depends on what crystal system has
+been selected.  If one of the crystallographic systems has been
+selected, then buttons for the crystallographic point groups
+corresponding to that crystal system will be revealed.  If the
+icosahedral system is chosen, then buttons for the two icosahedral
+point groups will be displayed.  If Custom is selected, buttons for
+custom groups will be displayed.  If the user has not defined any
+custom groups, then these buttons will just display <I> Custom 1 </I>
+through <I> Custom 6 </I>.  The user then needs to <B> Edit </B> the
+custom groups; this will have the effect of changing one of the
+displayed Custom buttons to reflect the set of symmetry elements
+specified. 
+
+<H3> Additional Actions: </H3>
+<UL>
+	<LI> <A HREF="#group_info"> <B> Group Info </B> </A>: Get
+            information about the selected crystallographic groups
+	<LI> <A HREF="#matrix_info"> <B> Show Matrices </B> </A>: Show
+the 3x3 matrices corresponding to the generators for the given group.
+	<LI> <A HREF="#xform_info"> <B> Coord Xform </B> </A>: View or
+edit unit cell parameters for the chosen crystal system that affect
+the global XYZ/HKL transformation.
+	<LI> <B> Copy to Custom </B>: (Visible only when
+non-custom group selected)
+	   <BR> Copy the selected crystallographic group to a custom
+group.  This feature is useful if one wishes to add non-crystallographic
+symmetry elements to a crystallographic group.
+	<LI> Custom group actions: (Visible only when <B> [Custom] </B> selected)
+	   <UL>
+		<LI> <B> Load </B>: Load a custom group
+		<LI> <B> Edit </B>: Edit one of the defined custom
+groups or create a new custom group if none are defined.
+		<LI> <B> Save </B>: Save the currently selected custom
+group to file.
+	   </UL>
+</UL>
+
+<BR>
+<BR>
+<BR>
+
+<! Information for Custom Tool >
+<H2> <A NAME="custom_tool"> Custom Tool: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P> The Custom Tool allows the user to define a custom symmetry group.
+The user can choose rotations, roto-inversions, and mirror reflections to
+define the symmetry elements in the group.  Each rotation axis is
+defined as a rotation by <I> 360/n </I> degrees, where the user supplies
+<I> n </I> and the direction around which the rotation occurs.  Mirror
+planes are defined by their normals.  Roto-inversion axes are defined by
+selecting the roto-inversion toggle in the rotations field.  Global
+inversion symmetry is selected using the <B> Inversion </B> toggle.
+Users can also input symmetry manually in the form of their 3x3
+matrices. 
+<P ALIGN=center>
+<IMG SRC="custom2_win.gif">
+</P>
+
+<UL>
+	<LI> <B> Group Name </B>: Select a name for the current custom group
+	<LI> <B> Load </B>: Load the elements from a previously defined
+                    group. 
+	<LI> <B> Save </B>: Save the current symmetry elements to a
+                   custom group.
+	<LI> <B> Inversion </B>: Toggle for global inversion symmetry
+	<LI> <B> Custom Matrix </B>: Input a symmetry matrix manually
+	<LI> Rotations:
+	  <UL> 
+		<LI> <B>Add</B>: Add a new axis to the working set
+		<LI> <B>n</B>: Order of rotation (360/n degrees)
+	 	<LI> Axis: Select the axis about which the rotation occurs.
+		<LI> <B>n_</B>: Roto-inversion toggle (Default = No
+                   roto-inversion, Yellow = Roto-inversion Axis)
+		<LI> <B> Delete </B>: Delete this axis from the working set.
+	  </UL>
+	<LI> Mirrors:
+	  <UL>
+		<LI> <B> Add </B>: Add a new mirror plane
+		<LI> <B> Axis </B>: Normal direction of mirror plane
+		<LI> <B> Delete </B>: Delete this mirror plane from the
+                        working set.
+	  </UL>
+</UL>
+<BR>
+<BR>
+<BR>
+
+<! *************************** >
+<! Information for Preferences >
+<! *************************** >
+<H2> <A NAME="prefs"> Preferences: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P> This window allows modification of some of the more detailed
+control features associated with construction of the Wulff shape.  
+Any changes made to input parameters do not take effect immediately.
+<B>The user must press a carriage return in any of the editable fields
+for these changes to take effect. </B>
+
+
+<P ALIGN=center>
+<IMG SRC="pref_win.gif">
+</P>
+<UL>
+  <LI> <B>Interior Point:</B><BR>
+       In order to use the fast <I>Qhull</I> algorithm to compute the
+       Wulff shape, we need to know <I>a priori</I> one point that
+       will be interior to the end shape. With just a single Wulff
+       shape, this is trivially the center of the Wulff shape, but if
+       two or more shapes are intersected, finding such an interior
+       point can be non-trivial. Thus, we leave it up to the user.</DD>
+       
+  <LI> <B>Tolerances:</B><BR>
+       <UL>
+	 <LI> <B> Vertex</B>: <BR>
+	      The minimum distance between vertices that are to be
+	      considered distinct.  Any vertices generated by action
+	      of symmetry operations that are separated by distances
+	      smaller than this value will be considered the same vertex.
+	 <LI> <B> Normal</B>: <BR>
+	      The minimum distance between normals defining distinct
+	      facets (similar in spirit to Vertex tolerance).
+	 <LI> <B> Max Facets</B>:  <BR>
+	      The maximum number of facets allowed in any given Wulff
+	      shape.  The primary function of this value is to
+	      control situations where an unreasonably large number of
+	      facets are generated by action of the symmetry group.
+	      An example of such a situation would be if a user
+	      defined a rotation group that involved rotations by some
+	      infinitesmal angle.  Under the action of such a group, a
+	      huge number of equivalent facets could be generated.  These
+	      situations should, in general, be avoided.
+       </UL>
+  <LI> <B>Colormap:</B><BR>
+       This button allows modification of the existing colormap.  It
+       allows for modification of existing colors or addition of new colors.
+       A new color is added by simply clicking on one of the black fields
+       below existing colormap entries.  A pop-up window then allows the user
+       to either choose from a group of predefined colors or specify the RGB
+       values for a custom color.  Note that existing colormap entries can be
+       modified, but this is likely to have unwanted side-effects on the
+       appearance of the windows within Wulffman.
+  <LI> <B>Energy Increment:</B><BR>
+       These input fields allow the user to adjust how rapidly the
+       surface energy will change when the energy arrows are clicked
+       in the <A HREF="#facet_tool"><B>Facet Tool</B></A>. The large and
+       small increments can be changed independently.
+  <LI> <B>Postscript:</B><BR>
+       Also known as "a Wulff in sheets, folding".
+       This feature allows you to print out a version of your Wulff
+       shape. Select a file name and hit this <B>Go</B> button, and a
+       flattened version will be produced as PostScript scaled to fit
+       on one 8.5"x11" piece of paper (with a small border for color
+       printers). With some cutting, folding, and taping, you can
+       produce a real model of your Wulff shape.
+</UL>
+<BR>
+<BR>
+<BR>
+
+
+
+
+
+
+<! ************************** >
+<! Information for Group Info >
+<! ************************** >
+<H2> <A NAME="group_info"> Group Information Window: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P>
+This window displays selected information about the current
+crystallographic group.  For each group, there is a finite set of
+symmetry operations, the number being the order <I>n</I> of the group.  The
+action of each symmetry element on a point in three-dimensional space
+creates an <I> equivalent point </I>, i.e., one that is equivalent to
+the first under the given symmetry operations.  If one were to operate
+the entire group on this point, a set of <I>m</I> equivalent points
+would be generated, where m is less than or equal to <I>n</I>, the group
+order.   
+<P ALIGN=center>
+<IMG SRC="group_info_win.gif">
+</P>
+
+<UL> 
+	<LI> <I>Equivalent points</I>:  <BR> The graphic in the upper left of the
+window is the stereographic projection of the set of points equivalent to
+a general point.  A representative stereographic projection is given
+in Figure 1.
+
+<P ALIGN=center>
+<IMG SRC="stereo.gif">
+</P>
+<P> <B> Figure 1:</B>: Locate a
+general position (large filled circle) on the
+surface of a sphere centered at the origin.  The action of each symmetry
+element of the point group on the vector to the general position
+generates an equivalent position.  Equivalent positions can either be
+above (small filled circles) or below (open circles) the equatorial
+plane of the sphere (denoted <I> projection plane </I>).  A
+two-dimensional representation of these equivalent points is then
+obtained by projecting each of them onto the projection plane, with
+points above the plane projecting as filled circles, and those below as
+open circles. 
+</P>
+
+	<LI> <I>Symmetry elements:</I>  <BR> The graphic in the upper right of the
+window is a stereographic projection of the symmetry elements for the
+chosen group.  The meaning of each symbol can be found in most standard
+reference texts on crystallography (ITC).
+	<LI> <I>Order:</I> Number of symmetry operations (elements) in the group
+	<LI> <I>Notation for selected point group:</I> <BR>
+	      There are three different standard notations for
+crystallographic point groups.  The short Hermann-Mauguin symbol is most
+often used, although the Schoenflies notation is commonly used as well.
+An explanation of the meaning of the various group names can be found in
+the ITC.
+	   <UL>
+		<LI> Hermann-Mauguin (Short)
+		<LI> Hermann-Mauguin (Full)
+		<LI> Schoenflies
+	   </UL>
+	<LI> <I>Information about crystal system:</I> For each crystallographic
+system, there is a corresponding set of requirements for the unit cell
+vector lengths and the angles between these vectors.  These requirements
+are specified in this section; inequality between parameters is
+represented by a "<>" symbol, and any piece of information <I> not </I> specified
+is understood to represent a free parameter.
+</UL>
+
+<BR>
+<BR>
+<BR>
+
+
+
+<! *************************** >
+<! Information for Matrix Info >
+<! *************************** >
+<H2> <A NAME="matrix_info"> Matrix Info Window: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P> 
+Each of the symmetry operations for a given group are
+represented as 3x3 matrices.  A subset of the symmetry elements can be
+used to <I> generate </I> all of the others; these elements are
+appropriately termed <I> generators </I> for the group.  In the Matrix
+Information Window, the generators for the current group can be browsed,
+and in the case of custom groups, edited.
+
+<P ALIGN=center>
+<IMG SRC="matrix_win.gif">
+</P>
+
+<UL>
+	<LI> <I>Generator:</I> <BR> The number of the current generator.  The total
+number of generators is given to the far right.  The user can jump to a
+specific generator by editing the data field, or move through the
+generators using the left and right arrow buttons.
+	<LI> <I>Matrix elements:</I> <BR> The 3x3 matrix representing a given
+symmetry element.  For the crystallographic and icosahedral groups, the
+elements are fixed and cannot be edited; custom group elements can be changed.
+</UL>
+
+<BR>
+<BR>
+<BR>
+<! *************************** >
+<! Information for Coord Xform >
+<! *************************** >
+<H2> <A NAME="xform_info"> Coord Xform Window: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+<P>
+The matrices of the symmetry elements for a given crystallographic group
+depend on the coordinate system chosen.  Facets for generating the Wulff
+shape must be entered in a coordinate system that is the same as that
+used to represent the symmetry elements.  The default coordinate system
+is Cartesian, but circumstances may arise where another coordinate
+system is desirable.  For example, the user may wish to enter facets in
+terms of <A HREF="#hkl_toggle"> unit cell coordinates </A>, as opposed to
+Cartesian coordinates (see Figure 2).
+
+<P ALIGN=center>
+<IMG SRC="unit_cell.gif">
+<BR>
+<B>Figure 2</B>: Unit cell parameters as defined inside <B>Wulffman</B>.  Cell
+vectors and angles are indicated.  Cartesian axes are superimposed.</P>
+<BR>
+</P>
+
+<P>
+If facets are entered in HKL coordinates, a coordinate transformation must be
+performed on the facets to change them into their appropriate Cartesian
+values.  The unit cell geometry for a given crystal system (cell
+constants and angles as defined in Figure 2) determines the form that
+this transformation takes.  All of this information can be specified by
+the user should such transformations be desirable. The user has the
+option of either editing the values of the cell constants and angles, or
+the values in the transformation matrix itself.  Editing one set of
+values fixes the others necessarily.
+<P ALIGN=center>
+<IMG SRC="xform_win.gif">
+</P>
+
+<UL> 
+	<LI> <B> Reset </B>: Revert to the default transformation
+	<LI> <B> Unit cell parameters </B>: Specify the cell parameters
+for the desired transformation. The parameters that can be modified by
+the user are indicated with "down" boxes, and are determined by the
+current crystal system.  If the crystal system is Custom, these fields
+are meaningless.
+	<LI> <B> Matrix </B>: The matrix of the transformation.  This is
+not editable in the case of crystallographic groups, but can be modified
+for custom groups.
+</UL>
+
+<BR><BR><BR>
+<! *************************** >
+<! Glossary                    >
+<! *************************** >
+<H2> <A NAME="glossary"> Glossary: </A> </H2>
+<HR ALIGN=left SIZE=4 WIDTH = "50%">
+
+<DL>
+	<DT> <I> Wulff Shape </I>
+	  <DD> The mathematical definition of a Wulff shape is as
+follows:  Given a set of N planes (defined by their normals) and energies
+associated with these planes {<B>n(i)</B>,e(i)} (i=1,...,N), the Wulff
+shape <B>W</B> is defined as
+  <B>W</B> = {<B>r</B>; <B>r</B>*<B>n(i)</B> <= e(i) for all i}, 
+where <B>r</B> is an arbitrary point in space.  Generally speaking, a
+Wulff shape is the convex polyhedron that defines a minimum energy shape
+for a crystal, and is hence presumably the form in which the crystal would
+be observed. 
+	<DT> <I> Unit cell </I>
+	  <DD> The fundamental building block of a periodic crystal.
+When the unit cell is repeated periodically according to the tranlsation
+vectors of the crystal lattice, the entire crystal is generated.
+	<DT> <I> Group </I>
+	  <DD>A group is a set that is closed under some (unspecified)
+binary operation (*).  Closure under this operation means that for every
+pair of elements A and B in the group, the element C created by combining
+A and B under this operation ( C = A * B ) must also be in the group.
+There are three properties of groups:
+	<OL>
+		<LI> Every group possess an <I>identity</I> element I such
+that for an element A, A * I = A.
+		<LI> Every element A of the group possesses an
+<I>inverse</I> A_1 such that A * A_1 = I.
+		<LI> The group operation is associative, so that (A * B)
+* C = A * (B * C) for elements A, B, and C in the group.
+	</OL>
+Groups are not necessarily commutative (i.e., A * B = B * A); groups
+that are also commutative are called <I> Abelian</I>. In the above
+defintion of a group, no reference is made to the properties of the
+elements of the group, i.e., what these elements represent.  The
+simplest example of a group is a permutation group, the set of all
+permutations of a collection of objects.  The operation in the group is
+defined as the act of permutation.  The set {123, 312, 231} is a simple
+permutation group of order three that is closed under a permutation that
+does a simple right shift of the elements.
+	<DT> <I> Point group </I>
+	  <DD> A point group is a group whose elements represent point
+isometries, i.e., actions on Euclidean space that leave the distance
+between points invariant.  The elements of the point group leave the
+environment around a point invariant.  The form that these isometries
+take are rotations of space, reflections through a plane, inversion
+through a point, or a combination of rotation followed by inversion.
+	<DT> <I> Crystallographic Point Group </I>
+	  <DD> A point group whose symmetry elements are consistent with
+translationally periodic structures.  Rotations in such a group are
+restricted to being of order 1, 2, 3, 4 and 6.  Combinations of these
+rotations with reflections and inversions generate the 32
+crystallographic point groups.
+	<DT> <I> Translational Periodicity </I>
+	  <DD> A lattice is said to possess translational periodicity
+because it can be generated by periodic repetitions of translations of a
+fundamental building block, the unit cell.
+	<DT> <I> Lattice </I>
+	  <DD> A collection of mathematical points in space where each
+point can be written as <B>r</B> = a1*<B>a</B> + a2*<B>a</B> +
+a3*<B>c</B> (a1, a2, a3 integer).  Vectors <B>a</B>, <B>b</B>, and
+<B>c</B> are referred to as the <I> translation vectors </I> of the
+lattice, and define a nontrivial, discrete subgroup of the group of all
+translations.  A lattice in three dimensions is simply a set of stacked
+parallelepipeds. 
+	<DT> <I> Reflection / Mirror</I>
+	  <DD> The symmetry operation that involves reflecting all
+points through a plane.  For example, if the xz-plane is taken to be a
+mirror plane, then the action of this plane if to reflect every point
+(x,y,z) into (x,-y,z).  The type of mirror / reflection plane is defined
+by its normal (i.e., the vector perpendicular to it).
+	<DT> <I> Rotation (or order n)</I>
+	  <DD> The symmetry operation that rotates space about some axis
+by (360/n) degrees.  For example, a 4-fold rotation around the z-axis
+rotates space by 90 degrees, i.e., a point (x,y,z) is rotated to (y,-x,z).
+	<DT> <I> Roto-Inversion (of order n)</I>
+	  <DD> A rotation of order n followed by inversion through the
+origin. 
+	<DT> <I> Inversion </I>
+	  <DD> The symmetry operation that takes every point (x,y,z)
+into (-x,-y,-z).
+	<DT> <I> Facet </I>
+	  <DD> A face of a polyhedron, defined by its normal vector.
+	<DT> <I> Order </I>
+	  <DD> (i) The order of a group is the number of elements that are
+contained in the group.  (ii) A rotation axis of order n defines a
+rotation by (360/n) degrees. (iii) The order of a group element is the
+number of times that element must be applied to itself before one
+obtains the identity element. 
+	<DT> <I> Identity </I>
+	  <DD> The element of a group that leaves elements unchanged,
+i.e., A * I = A for every element A in the group.  In terms of point
+groups, the identity element takes every point (x,y,z) onto itself.
+	<DT> <I> Crystal system </I>
+	  <DD>  The classification of a three-dimensional lattice that
+refers to the largest crystallographic point group that leaves the
+lattice invariant.  In three dimensions, there are seven such crystal
+systems: triclinic, monoclinic, orthorhombic, tetragonal, trigonal
+(rhombohedral) hexagonal, and cubic.  The 14 Bravais lattices are a
+subset of these crystal systems.    
+	<DT> <I> Generator </I>
+	  <DD> A group can be generated by a subset of its elements
+simply by combining these elements under the group operation, thus
+creating new elements.  These new elements are then combined with all
+elements and the process is repeated until closure of the group is
+achieved. 
+	<DT> <I> Stereographic Projection </I>
+	<DD> A simplified representation of equivalent points or
+symmetry elements in three dimensions that involves projections of
+points on the surface of the sphere onto the equatorial plane of the
+sphere. 
+</DL>
+
+<P>
+<ADDRESS>
+Center for Theoretical and Computational Materials Science, NIST
+<BR>
+</ADDRESS>
+Questions or comments: <A HREF="/cdn-cgi/l/email-protection#7106041d17171c101f311205121c025f1f1802055f161e07">
+<span class="__cf_email__" data-cfemail="8bfcfee7edede6eae5cbe8ffe8e6f8a5e5e2f8ffa5ece4fd">[email&#160;protected]</span></A>
+
+<!-- </td>
+</tr>
+</table> -->
+<!-- ********** Page Content End ********** -->
+
+
+<br><br>
+</td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="180"><img src="/PHP/templates/theme01/template04/img/clear.gif"width="180" height="1" border=0></td>
+          <td width="95%"></td>
+        </tr>
+        <tr> 
+          <td width="180"><img src="/PHP/templates/theme01/template04/img/lit_blue_10x10.gif"width="180" height="20"></td>
+          <td background="/PHP/templates/theme01/template04/img/mid_blue_10x10.gif"><img src="/PHP/templates/theme01/template04/img/clear.gif"width="30" height="10"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b><font color="#FFFFFF">NIST 
+            is an agency of the U.S. Department of Commerce</font></b></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br>
+<div align="center"> <font size="1"><font face="Arial,Helvetica,sans-serif">
+  Last updated: Sep 29, 2002<br>
+  </font></font> </div>
+<p>&nbsp;</p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a20247c879a8d708',t:'MTc4NDg4OTM1MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

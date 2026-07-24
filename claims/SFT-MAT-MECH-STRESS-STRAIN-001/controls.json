@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-STRESS-STRAIN-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:adb5d05a21d454b6bf5a2017f8be3f371d55fbd9a0b7ad25b947caa373ad534f"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:109a21a2e46dcd23f5466f23be5156d57b500eff7391011d89ecc112be5e6872"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6391dbcda50225bace528b7afbb330ee156b47e635d52cdd610f75541e72b83b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:04e5725ac444cc83fe68338efe05502691abd15b8808ea95150d1c8bb7212fe6"
+    }
+  ]
+}

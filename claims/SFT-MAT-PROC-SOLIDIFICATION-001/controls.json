@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-SOLIDIFICATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:28b0e07297d86f968e940b1b2ac43f3094e57aeb51ca1cf3957be002d4d3c900"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1d9abadcefe83f3d19ed07b99fe3c194097758fd2c19ca09640c2d36d329b587"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:25a0e1d82af8173155367a44fdfda6c03a8a457875f6d6237beb39a838f16497"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:97e19a857b778351e4607a1e2b02197c20cd922c00b6ab7a535f726ea471fec4"
+    }
+  ]
+}

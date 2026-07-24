@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-RADIATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:9038baa8e438b1ac2c472866e42bf6bf72685d5b5fcccafff338d1022d68b1fc"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:41a6bac5d899d6b3dc3443ea2f8ad03f200a69dc058c1c064bb1692905e50d94"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c5a8b28f1713b2c745128747d78b44c51d07371449023bddd94d0cb6f48d0518"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:0eae8804b4960020b1078c44aeb79a2bcf0b3b24bd45b92fee471ed6121b6014"
+    }
+  ]
+}

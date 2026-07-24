@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-POROUS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:86474f877d49101e7e3ace7b1ea74f2d9a093c01fe7680f3b1271e4489adc258"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:aa09a3db065810ef015d5e9c1c6c88deee9b27a1f27fe6dbf4b0cf92e5801cc6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:de7c2b045d20ac78f59d8ec13cc4ff932cc6c3c6f7cd7c236358dbf0836e8d40"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:79a409094422197b89e8c3e50fdf69c57e508575d8db62334202a4d2f429b0c0"
+    }
+  ]
+}

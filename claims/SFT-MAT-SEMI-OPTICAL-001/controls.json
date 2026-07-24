@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SEMI-OPTICAL-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:c936b0d5bb1ae8aec13da9742921982d562b55f6d4774bd1aab6e334a1e5b753"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8701918a766daef17bc285510ac5721438c7e56272c88217cd085a9d3e145154"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bc252118ced3be1bd50755e418df34a442529528051ab45a471d57b3cfcfb8f6"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:ceec9c1581794a42484f4f193268ea44aecb938181070c46a7f3f65721a2f46a"
+    }
+  ]
+}

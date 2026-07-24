@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYST-LATTICE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:c9646ff6ef73ed550d9dd57d3bd3376e1f2b6d1505670ff5b473a2ecc1f16dc5"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4b1c36d0e527ba983cfb859c1ee7030c18d678f7766b0b00850691b28a340ce7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d9773d30b11ed06149d52d2aaade731e6df807698242f853bb43b56cad410efe"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:3fffc29ee144f3e4f558b5a20eed2e6c152a3d985a503c009f484019144df44f"
+    }
+  ]
+}
