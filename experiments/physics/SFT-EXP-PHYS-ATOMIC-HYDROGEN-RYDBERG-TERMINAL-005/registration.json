@@ -1,0 +1,153 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete atomic carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate or component snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:2488439d3063b0845c9773e1c8ca73b7f9344824a19dc19dfde8514ec8fd8177"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:2bbdc82b1ff35fce2b486fe1c26fc8341faeca13fbba201ceffa64ee731ac448",
+      "role": "development_only",
+      "source_id": "NIST-HYDROGEN-RYDBERG-SUCCESSOR-2022-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Hash-bound NIST Rydberg, ionization and line rows remain capability-closed while the exact dimensionless hydrogen scale seals; only the post-seal evaluator composes inverse-length units.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The scale and ionization intervals are contained, both line intervals overlap, and every tampered row is rejected.",
+    "comparison_implementation_hash": "sha256:6d1c20e38f544c9df34348715dc98906ede36f478b1ca9069dc239c3b2cf3822",
+    "evaluator_id": "SFT-EXP-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if the sealed scale leaves the complete ionization/Rydberg interval, its translated ionization leaves the displayed-resolution enclosure, either line misses its full interval, any source hash or uncertainty changes, target access precedes sealing, development provenance is hidden, or a predecessor receipt is rewritten.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Verify all three source hashes; propagate CODATA and NIST endpoints outward through the sealed scale and immutable line gaps; retain every decision.",
+        "metric_id": "exact-rational-post-seal-correspondence",
+        "unit_protocol": "External inverse-centimetre inscriptions remain source records; only exact positive rational arithmetic enters the evaluator."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, CODATA 2022",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Atomic Spectra Database",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:cc54c774518d62cbb7e95f17b3b7fcd9d1faf0aa90043a607b91dff0a43e2087",
+      "source_id": "NIST-ASD-HYDROGEN-ATOMIC-DATA",
+      "source_uri": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable1.htm"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Atomic Physics Division",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:86ccaeb875fcdb4445e727618509621ceee656e5dc02295140ecdb6e1d2dd443",
+      "source_id": "NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019",
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal terminal hydrogen Rydberg comparison product.",
+    "dependency_hashes": [
+      "sha256:0227efd1bc209d9f012802597b30e4eb79df03383529f17286cc2e35346429bd",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered CODATA Rydberg row, NIST H-I ionization row, both Kramida line intervals, immutable predecessors, disclosed observational development and sealed target-inaccessible terminal relation.",
+    "relation_hash": "sha256:018d25294b3366d6d1fac57f170f75a410d34755968b0506283f255d0aa8db23",
+    "statement": "The exact terminal H/R-infinity interval is contained in the registered NIST ionization/Rydberg interval; its absolute ionization interval is contained at displayed resolution, and its immutable Lyman and Balmer gaps overlap both complete NIST line intervals.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:efacde6dc78516310cc27d98f0146042fac9e1d85800a779ae2156a5012ae0f0",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:3499cc34c9cff4486ad04956926edd630e4abf3b8d9e7234c7a66fc9bb8eb054",
+    "program_id": "SFT-EXP-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:d35c8dd7bc86e4bfcd4188058a43140c966367140f27d78427d25bdd01ceec7d",
+    "experiments/external_sources/physics/snapshots/hydrogen-rydberg-successor-source-record.json": "sha256:2bbdc82b1ff35fce2b486fe1c26fc8341faeca13fbba201ceffa64ee731ac448",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/nist-hydrogen-atomic-data.html": "sha256:cc54c774518d62cbb7e95f17b3b7fcd9d1faf0aa90043a607b91dff0a43e2087",
+    "experiments/external_sources/physics/snapshots/nist-hydrogen-critical-compilation.pdf": "sha256:86ccaeb875fcdb4445e727618509621ceee656e5dc02295140ecdb6e1d2dd443"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered source, interval and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-HYDROGEN-RYDBERG-SUCCESSOR-2022-2026",
+      "target_id": "NIST-HYDROGEN-RYDBERG-IONIZATION-LINE-COMPLETE-VECTOR"
+    }
+  ]
+}

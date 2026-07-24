@@ -559,3 +559,41 @@ The live inheritance ledger is 306 same-strength closed and 192 open, with 55
 mapped open and 137 unmapped open.  This count supersedes section 28.  The next
 new work is the remaining atomic group beginning with V1 III-1 reduced-mass
 completion; this molecular group must be committed, not rerun.
+
+30. The terminal hydrogen reduced-mass and Rydberg-scale completion is admitted
+    and must not be regenerated:
+    - `SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005`, engine receipt
+      `sha256:e9780bb0acb2e0c4038b037dbc53203529a305f7a1cae84c5e73dfe9013cb59c`;
+    - derivation seal
+      `sha256:50f746356e4bf578e887c5ab902532b7bc0b24f0ba7ce80d16ab2e27d528b180`;
+    - independent validation
+      `sha256:96d7771254cc33d3b6a380d037cf0e46eec3731b75a7e4d34c290485bf5aa356`;
+    - empirical validation
+      `sha256:8418722d6db952c3e39c94ee4614c0003b74d2419b6b85573755d9ece36a3462`;
+    - measurement receipt
+      `sha256:010f8374ca9c26dbfb95a38b0957ba6d857642eac243f8dd93e1551737c2a4c5`.
+
+This successor composes already admitted results instead of rebuilding them.
+For every exact terminal proton/electron ratio `rho`, the target-inaccessible
+law seals
+`H/R_infinity = rho/(rho+1) + alpha^2/5 + alpha^3/2 Take 6alpha^4 + 49alpha^5`.
+Multiplication by `alpha^2/2` gives the hydrogen ionization/electron-rest
+carrier; the immutable hydrogen-ladder gaps `3/4` and `5/36` give Lyman-alpha
+and Balmer-alpha.  The executable module contains no atomic measurement.
+
+After the 1,024-form grammar sealed one survivor, the CODATA 2022 Rydberg row,
+NIST ASD H-I ionization row and both NIST Kramida line rows were released.  The
+translated ionization interval is `109678.77170059067` to
+`109678.77170083053 cm^-1`, contained in the exact displayed-resolution
+enclosure `109678.77165` to `109678.77175 cm^-1`.  Its `3/4` line interval is
+approximately `82259.078775443` to `82259.078775623 cm^-1`, inside the complete
+reported NIST Lyman interval; its `5/36` line interval overlaps the complete
+reported Balmer interval.  The aggregate source record is
+`sha256:2bbdc82b1ff35fce2b486fe1c26fc8341faeca13fbba201ceffa64ee731ac448`.
+
+The focused successor test was run once and passed (`5 passed`).  V1 III-1 is
+now closed at its formal and empirical boundary.  The live inheritance ledger
+is 307 same-strength closed and 191 open, with 54 mapped open and 137 unmapped
+open.  This count supersedes section 29.  The next atomic obligations are V1
+III-4 shell/filling/periodicity and V1 III-5 transition-rate completion; this
+hydrogen-scale group must be committed, not rerun.
