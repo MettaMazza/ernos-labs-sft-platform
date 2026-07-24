@@ -1,0 +1,61 @@
+{
+  "schema": "sft-v3-atomic-field-splitting-source-record/1",
+  "retrieval_date": "2026-07-24",
+  "custody": {
+    "classification": "observational_derivation",
+    "development_targets_already_known": true,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-prediction",
+    "empirical_prediction_protocol": true,
+    "target_inaccessible_during_prediction_execution": true,
+    "formal_relations_contain_measurement": false,
+    "measurements_select_formal_survivors": false,
+    "engine_prediction_sealed_before_target_release_within_run": true,
+    "complete_reported_resolution_and_uncertainty_status_retained": true,
+    "linear_and_quadratic_stark_classes_separately_retained": true
+  },
+  "sources": {
+    "nist_zeeman": {
+      "source_id": "NIST-ATOMIC-SPECTROSCOPY-ZEEMAN",
+      "body": "National Institute of Standards and Technology",
+      "source_uri": "https://physics.nist.gov/Pubs/AtSpec/node12.html",
+      "reported_record": {
+        "sublevel_count_relation": "2J+1",
+        "weak_field_energy_relation": "delta-E=g*M*mu_B*B",
+        "field_order": "linear",
+        "wavenumber_shift_coefficient_cm_inverse_per_tesla": "0.46686",
+        "coefficient_status": "NIST displayed value; no uncertainty reported on page"
+      }
+    },
+    "nbs_hydrogen_linear_stark": {
+      "source_id": "NBS-SP617-HYDROGEN-LINEAR-STARK",
+      "body": "National Bureau of Standards",
+      "source_uri": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication617.pdf",
+      "reported_record": {
+        "system": "extreme hydrogen Rydberg state in a uniform electric field",
+        "response_order": "linear",
+        "measurement_protocol": "precision measurement of the linear energy shift"
+      }
+    },
+    "nist_cesium_quadratic_stark": {
+      "source_id": "NIST-CESIUM-RYDBERG-VOLTAGE-REFERENCE-2023",
+      "body": "National Institute of Standards and Technology",
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=933361",
+      "reported_record": {
+        "system": "nondegenerate cesium 15s Rydberg state",
+        "response_relation": "frequency-shift=(polarizability/2)*electric-field-squared",
+        "response_order": "quadratic",
+        "polarizability_displayed_hz_per_field_squared": "0.5",
+        "electrode_spacing_m": "0.005",
+        "quadratic_voltage_range_V": "750",
+        "first_level_crossing_field_V_per_cm": "1500",
+        "uncertainty_status": "no uncertainty reported for these displayed design values"
+      }
+    }
+  },
+  "comparison_policy": {
+    "provenance": "Observation informed the explicit frozen successor law. The executable module contains none of these formulas or values and cannot open this record. Complete enumeration, unique selection and sealing precede target release.",
+    "zeeman": "The sealed 2J+1 multiplicity and first-order magnetic response must equal the complete NIST weak-field relations; the dimensional coefficient remains an external unit carrier.",
+    "stark": "The sealed degeneracy discriminator must classify the NBS hydrogen row as linear and the NIST nondegenerate cesium row as quadratic, with the complete displayed coefficient and operating range retained.",
+    "scaling_controls": "Doubling exact field magnitude must double the sealed Zeeman and degenerate Stark responses and multiply the nondegenerate Stark response by four."
+  }
+}

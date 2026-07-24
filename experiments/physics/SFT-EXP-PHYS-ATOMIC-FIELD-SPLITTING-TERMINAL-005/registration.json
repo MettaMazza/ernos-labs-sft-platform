@@ -1,0 +1,159 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete angular or degeneracy carriers are rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate source record is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof values are rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed multiplicity, field order, value or uncertainty status fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:0f4b78b42a67a5cfb406487db485ef722414af193d8220d1606fc0b60f5453c1"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df",
+      "role": "development_only",
+      "source_id": "NIST-NBS-ATOMIC-FIELD-SPLITTING-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST/NBS dimensional coefficients and operating values remain external records; formal execution uses only exact normalized positive carriers.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every formal relation and complete registered NIST/NBS row passes while dimensional coefficients remain external carriers.",
+    "comparison_implementation_hash": "sha256:ffc10262a79c0b31271d02a13a46a4cabad84836614234723e3969dc81b0fdce",
+    "evaluator_id": "SFT-EXP-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if multiplicity or a field order differs, the degeneracy discriminator fails, the exact voltage/spacing translation fails, a displayed value or uncertainty status changes, target access precedes sealing, or observational provenance is concealed.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered multiplicity, field order, displayed coefficient, operating cross-check, uncertainty status and scaling control exactly.",
+        "metric_id": "complete-Zeeman-Stark-vector",
+        "unit_protocol": "Dimensional inscriptions remain external source records; response-order and scaling decisions use exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df",
+      "source_id": "NIST-ATOMIC-SPECTROSCOPY-ZEEMAN",
+      "source_uri": "https://physics.nist.gov/Pubs/AtSpec/node12.html"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Bureau of Standards",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df",
+      "source_id": "NBS-SP617-HYDROGEN-LINEAR-STARK",
+      "source_uri": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication617.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df",
+      "source_id": "NIST-CESIUM-RYDBERG-VOLTAGE-REFERENCE-2023",
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=933361"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal multiplicity, field-order, degeneracy, source, custody and row-retention product.",
+    "dependency_hashes": [
+      "sha256:ead4514a815c8e2dadd6c90c7c1d578fba5236af7ee56b58d7d6c5315b74f296",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered NIST Zeeman, NBS hydrogen linear-Stark and NIST cesium quadratic-Stark records, including displayed values, resolution status and exact operating cross-check.",
+    "relation_hash": "sha256:3ec5ff8cd72a2ec5db75056c48d7646280fd0f572378c5c4a36dfc00c01de3fb",
+    "statement": "The sealed 2J+1 multiplicity and linear Zeeman response equal the NIST weak-field law; retained degeneracy equals the NBS linear hydrogen Stark class; absent degeneracy equals the NIST quadratic cesium class, whose 750 V across 0.005 m exactly translates to 1500 V/cm.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:95b8b02b29159011bf07ce22d1657aea19a11a7906b2aafc3ef8df670510f4fd",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:a4cc5be3e2175af1fbb4af7e7456b211ddead442e8c0d714773f589f6ed43eed",
+    "program_id": "SFT-EXP-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:df917dbbafc0b4a63edb5ed3d1d8ab382d937c3f7a6972976e45b744b4352251",
+    "experiments/external_sources/physics/snapshots/atomic-field-splitting-successor-source-record.json": "sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered relation, displayed value, scaling control and custody row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-NBS-ATOMIC-FIELD-SPLITTING-2026",
+      "target_id": "NIST-WEAK-FIELD-ZEEMAN"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-NBS-ATOMIC-FIELD-SPLITTING-2026",
+      "target_id": "NBS-HYDROGEN-LINEAR-STARK"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-NBS-ATOMIC-FIELD-SPLITTING-2026",
+      "target_id": "NIST-CESIUM-QUADRATIC-STARK"
+    }
+  ]
+}

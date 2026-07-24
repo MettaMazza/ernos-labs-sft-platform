@@ -681,3 +681,45 @@ boundary.  The live inheritance ledger is 309 same-strength closed and 189
 open, with 52 mapped open and 137 unmapped open.  This count supersedes section
 31.  Do not regenerate III-5 after compaction; proceed to the next open Physics
 obligation selected from the live ledger.
+
+33. V1 III-6 Zeeman/Stark completion is admitted, closed and must not be
+    regenerated after conversation compaction:
+   - `SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005`, engine receipt
+     `sha256:91df8eb2a38be812ebd00525e22ed77945498d2aa03c52c3776eecc2d34f3a71`;
+   - derivation seal
+     `sha256:da777cc9aa9a3ac0034aadaaa4e0253c75921e2de62d11274874492fe0fdeb25`;
+   - independent validation
+     `sha256:8678fbe4c1a39a3d40b589030b3a32a0c149a89ed611fbe6ff7850c5a6c4345f`;
+   - empirical validation
+     `sha256:1789c354cc9ac36c1cc069a91950e1ea3bcba203462a7447daa632dd018834ea`;
+   - measurement receipt
+     `sha256:069d2196117fed492a2df1380b8962e6930327e9ac3010e4ec693b3b2cf8ecdb`;
+   - source record
+     `sha256:5093c824cec5438a98f82fd5e75460e737a001a11471d12dbd7cd67b930661df`.
+
+The frozen law represents opposing field directions with held labels and
+positive distances; the central unshifted class is the empty form, never a
+numerical zero. Complete angular support forces `2J+1` magnetic sublevels, one
+field act forces Zeeman magnitude `g*m*B` and equal adjacent spacing `g*B`, a
+retained degenerate electric partner forces a linear dipole response, and
+closure of opposed first acts in a nondegenerate support promotes the first
+retained response to `polarizability*E^2/2`. The independent implementation
+reconstructed all four laws using positive exact fractions and verified their
+depth-independent successor behavior without source access.
+
+The engine exhaustively enumerated the complete ten-axis grammar: 1,024 forms,
+one survivor. Only after the target-inaccessible prediction sealed were the
+NIST weak-field `2J+1` and `delta-E=g*M*mu_B*B` relations, the NBS SP617
+extreme-hydrogen linear-Stark record and the NIST nondegenerate cesium-15s
+quadratic-Stark record released. The displayed NIST Zeeman coefficient
+`0.46686 cm^-1/T` is retained as an external dimensional carrier rather than a
+formal selector. The cesium operating values cross-lock exactly:
+`750 V / 0.005 m = 150000 V/m = 1500 V/cm`. Both sources' explicit absent-
+uncertainty disclosures are retained rather than silently converted into
+precisions.
+
+The focused successor test ran once and passed (`5 passed`). V1 III-6 is now
+closed at its full formal and empirical boundary. The live inheritance ledger
+is 310 same-strength closed and 188 open, with 51 mapped open and 137 unmapped
+open. This count supersedes section 32. Do not regenerate III-6 after
+compaction; select the next open Physics obligation from the live ledger.
