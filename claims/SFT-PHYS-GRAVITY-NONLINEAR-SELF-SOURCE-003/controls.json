@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d54c6721eaa4476367500ed60d0dbda0486e12e04a8d0df8a129fd477795ad49"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:23476aa444ae59176da16d0f4ecf82202065d9897a56154e5e02ee45d9a4ade0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c2efcd39ebc636c66c75c91d913a37acf11ee43befab73c914db68656d9ec364"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8e75fa19591b5c7c5cfc055211ae29e06686c7bdc6c820b28bbd6a74d6423280"
+    }
+  ]
+}

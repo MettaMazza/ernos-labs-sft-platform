@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4162c08533363fc40c8a047f13d104ef86273ffc0122a78417b7669e8952ad22"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1188ac93e7ea3b9d8aadb79be92bdaa90e52d5ddf385dd5571be04fc171a198e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f16881aa678b81018a623faf9f769b7563e09e03d10bac2d7c227123c6c2cd75"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a732758c32ac5963478fa788dfd5d60c16eeeee14676fee382f2f7da885c1856"
+    }
+  ]
+}

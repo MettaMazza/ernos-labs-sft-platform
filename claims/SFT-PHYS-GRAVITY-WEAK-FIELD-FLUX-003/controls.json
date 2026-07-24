@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:cf6b59676d1adc6d639b0032d305cc79c0bebfb082ad3b124027655716448475"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:67e2899f9784ba430c1d9a152f4bd10f8ee35f00b78ec95a5a4d0978b7b52109"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:139890ccf0b6c0c76335901373433e22d031be49f72159f2576a386808e77aa2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:53d773b9122b5823346f7c3b3eb874aa41d779c8e386c53e6caf4b7bf06a7f58"
+    }
+  ]
+}

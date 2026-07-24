@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3dcc8a4686ae1db4f931da19670c6d4f5e35360b4c8b4e409099e36dbcaeeba0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:54e4f803ef2e864ecf1da37bbc319b56642fa5368fcaef466ba178900d8cb3fc"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e0414f864b09343c80f7cf6924fbfcccfcde6807d17409ca4dd3ca0818dfbc74"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:25f9f7cc3d8ee870e68b69f14f1f97871a3a0be0ab9b120c1a79738ae8e8bad6"
+    }
+  ]
+}

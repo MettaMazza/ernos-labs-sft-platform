@@ -1,0 +1,128 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:8a453766db18546bbbc5d46ee6a7469dbe0f0e4d3979bc4b66ae0192f8623a4c"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST/JILA, CNES MICROSCOPE, LIGO-Virgo-KAGRA/GWOSC and Event Horizon Telescope snapshot sha256:b64325355bd993ab32cff6c088023dbe7911ab13278b9439466cd0ae56bedd5e; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:1a2e5f68a476e168928318d25da6050c7c403e17857692e4824521c26515dc3a",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-post-seal-evaluator",
+    "falsification_condition": "A replicated multimessenger event establishes gravity propagation outside the registered One-speed class, a non-tensor mode replaces the two-tensor class, quadrupole support is absent, or any adverse/scope row is deleted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST/JILA, CNES MICROSCOPE, LIGO-Virgo-KAGRA/GWOSC and Event Horizon Telescope",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:b64325355bd993ab32cff6c088023dbe7911ab13278b9439466cd0ae56bedd5e",
+      "source_id": "GRAVITY-SPACETIME-AUTHORITATIVE-2017-2026",
+      "source_uri": "https://www.nist.gov/publications/resolving-gravitational-redshift-across-millimetre-scale-atomic-sample; https://cnes.fr/en/projects/microscope; https://dcc.ligo.org/P1700308/public; https://dcc.ligo.org/P2000091/public/; https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole; https://gwosc.org/api/v2/catalogs"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal gravitational-wave comparison product.",
+    "dependency_hashes": [
+      "sha256:dc7b10da8a513e5c4b7687de0553d7a83d2586d1adee7170a9c2baa9b033e983",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered multimessenger speed interval, polarization, quadrupolar ringdown and finite-coverage control row.",
+    "relation_hash": "sha256:1c196e86d2a289aaa7ad6b4c0c28ab6b3a9ad484ce0a8c3c1af2c68a7c708b3a",
+    "statement": "Gravity/light common speed is confirmed at the reported multimessenger bound; tensor polarization and quadrupolar strong-field support are confirmed within the registered catalog analyses.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:ea11817ba102e6e7166447e6bbbfe5bf386813ad74b2f2bc0701e9b177c57831",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:021963ca988e313c2b359012f9983cae8fa3ad47edd32b435021a5dbadadfc00",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:f7e1c6828e626dd80fccb16abbc865bbbc58289bdc588681e932bb83acb24b12",
+    "experiments/external_sources/physics/snapshots/gravity-spacetime-source-record.json": "sha256:b64325355bd993ab32cff6c088023dbe7911ab13278b9439466cd0ae56bedd5e"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GRAVITY-SPACETIME-AUTHORITATIVE-2017-2026",
+      "target_id": "GRAVITY-SPACETIME-WAVES"
+    }
+  ]
+}

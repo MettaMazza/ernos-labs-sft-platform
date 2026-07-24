@@ -88,40 +88,68 @@ unfavorable boundary: exact Fold witness coordinates are not relabelled as
 universal measured particle values, and finite conventional renormalized
 calculations do not directly measure substrate finiteness.
 
+12. Gravity, horizons, information and nonstandard spacetime, now sealed:
+    - weak-field flux `sha256:35145c1a594d6707add50a3f2e72dd3a2162092390fd9b3db03eed38b79ee147`;
+    - exact causal interval `sha256:c5560ae617b8b077c8d945e3f9b40475f2ca9c4b64028b4a7ea339753d936c4f`;
+    - static clock `sha256:8c03d3fd2812c980509616560286fd28ee1b29400c611cde02ef129d15fa8cb4`;
+    - redshift/equivalence `sha256:6726f8bb1dd6a005b03f9058957774e3e97b2d14f7850901331494aefef7185c`;
+    - lattice curvature `sha256:f10d0261e22c0cdfbce4d91bd75653851064c132325530b1b57e2da5e06ee457`;
+    - nonlinear self-source `sha256:ce5bb88d7247a7c82c3aa1050b1e4a5261acb4e4cbc301489b504668a87c5fbe`;
+    - graviton polarization `sha256:708fffd5a309a9cee077c2db46aef2bf8374435ec2c7bdf4685ef1fb719d0d73`;
+    - One-speed quadrupole propagation `sha256:e0769c5998c353edbc1b4d0a6df76c0c409591e722297dff3803cabe99e73ab1`;
+    - strong-field horizon `sha256:3c02d56ccea9efaed7a9fc9f065e27145f2b6597504a447e3b4ac623e61cc6af`;
+    - horizon information ledger `sha256:db27fe2ffddbd49475498a04db13944c1443b625794229c3b222676e143520a2`;
+    - wormhole admissibility `sha256:ad75329a73a9f31385c1e0e991770bed8415bafa318be84afb8f278ca322d96d`;
+    - warp admissibility `sha256:b864f95be8c08840d7e5e99ab664e84404d6121fa17385ed3fe751d5a53e5ab9`;
+    - closed-timelike admissibility `sha256:101b8251369135bcf188c580c15f045d3f54cc502ad46813ded8b478b60b19cb`.
+13. Complete post-seal gravity/spacetime comparison vector, now sealed:
+    - clock and equivalence `sha256:4fc85a7fb89b3bbace0a934db81587dff9653aa457cc76c7722ac8dca7383515`;
+    - gravitational waves `sha256:5617dfc8f9f7e7ddae1dd272e793d566071563db1e344afd340bf70b2c8ba493`;
+    - horizons and information `sha256:8279f3140235ca46ae66bbf4ed0fbf28c804d3bb42b43ecdb0d12ce45dc807b8`;
+    - nonstandard spacetime `sha256:5151d23acf5efc4266a74058442147b66ea3e2f926dd810d3578d417e255c883`.
+
+The gravity comparison retains all outcomes together. NIST/JILA supports
+gravitational clock redshift; MICROSCOPE supports equivalence; GW170817 binds
+gravity/light speed equality at the reported interval; LIGO/Virgo supports
+tensor polarization and quadrupolar strong-field modes; EHT supports a
+persistent horizon-scale shadow. Direct horizon imaging, Hawking radiation,
+temperature calibration, information recovery, wormholes, warp transport and
+physical closed timelike curves are not observed in the registered vector and
+remain explicit predictions or admissibility boundaries.
+
 ## Active group
 
-Gravity, horizons, information reconstruction and nonstandard spacetime:
+Matter, flavour and particle-value reconstruction:
 
-- exact weak-field potential and Gauss closure;
-- clock, length, interval and inertial transformation relations;
-- curvature, geodesic and nonlinear self-source closure;
-- gravitational propagation and electromagnetic speed correspondence;
-- escape/horizon boundary, temperature/information ledger and reconstruction;
-- wormhole, warp and closed-timelike support admissibility boundaries;
-- complete post-seal GWOSC, CODATA/BIPM and horizon-observation comparison.
+- up- and down-type quark cubics and dressing;
+- CKM structure and complete physical mixing comparison;
+- proton/electron mass ratio and exact hierarchy reconstruction;
+- neutrino mass squares, ordering and absolute-mass boundary;
+- Majorana/Dirac discriminator and neutrinoless-double-beta prediction;
+- physical PMNS/CP refinement;
+- electron and muon magnetic anomaly reconstruction;
+- complete post-seal PDG, NIST/CODATA and neutrino/decay-body comparison.
 
-The vacuum and relativistic/field source, execution, validator and validation
-modules are now frozen by their receipts and must not be edited. The next
-action is the new versioned gravity/spacetime module, not a rerun of any prior
-group.
+The vacuum, relativistic/field and gravity/spacetime source, execution,
+validator and validation modules are frozen by their receipts and must not be
+edited. The next action is a new versioned matter/flavour module, not a rerun
+of any completed group.
 
 ## Required remaining Physics sequence
 
 After the relativistic/field group, continue without restarting:
 
-1. Quark cubics, dressing, CKM, proton/electron ratio, neutrino masses/order,
-   Majorana prediction, physical PMNS/CP and magnetic anomalies.
-2. Atomic, nuclear, island-of-stability and particle-prediction reconciliation.
-3. Thermodynamics, critical exponents, fluids, plasma, condensed structures and
+1. Atomic, nuclear, island-of-stability and particle-prediction reconciliation.
+2. Thermodynamics, critical exponents, fluids, plasma, condensed structures and
    optical/acoustic spectra at their correct Physics/Materials boundaries.
-4. Universal physical cosmology relations and the explicit Astronomy/Cosmology
+3. Universal physical cosmology relations and the explicit Astronomy/Cosmology
    ownership handoff.
-5. Complete 763-entry Physics-specific V1/V2 atomic-obligation ledger, focused
+4. Complete 763-entry Physics-specific V1/V2 atomic-obligation ledger, focused
    branch gate, paper rewrite, proofread and publication update.
 
 ## Publication status
 
-No work in the active vacuum group has been pushed or published. Physics remains
-open and the existing Physics DOI must not be versioned until every Physics-owned
-obligation is closed or explicitly retained as a formally closed prediction with
-its empirical status stated exactly.
+No successor work recorded in this checkpoint has been pushed or published.
+Physics remains open and the existing Physics DOI must not be versioned until
+every Physics-owned obligation is closed or explicitly retained as a formally
+closed prediction with its empirical status stated exactly.
