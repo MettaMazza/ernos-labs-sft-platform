@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "publications/inventories/successors/foundation.json"
 LEDGER = ROOT / "census/foundation_prior_obligations.json"
 OUTPUT = ROOT / "publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_002.md"
+LANDING = ROOT / "README.md"
 
 
 def read_json(path: Path): return json.loads(path.read_text(encoding="utf-8"))
@@ -309,7 +310,20 @@ record.
 """)
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(publication_ascii("\n\n".join(parts).rstrip() + "\n"), encoding="utf-8")
+    paper_text = publication_ascii("\n\n".join(parts).rstrip() + "\n")
+    OUTPUT.write_text(paper_text, encoding="utf-8")
+    landing_header = (
+        "[Zenodo Paper 002 DOI: 10.5281/zenodo.21535458]"
+        "(https://doi.org/10.5281/zenodo.21535458) | "
+        "[PDF](output/pdf/from-nothing-to-fold-foundation-branch-paper-002.pdf) | "
+        "[Canonical Markdown](publications/successors/foundation/"
+        "FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_002.md)\n\n"
+    )
+    landing_text = paper_text.replace(
+        "(../../../census/foundation_prior_obligations.json)",
+        "(census/foundation_prior_obligations.json)",
+    )
+    LANDING.write_text(landing_header + landing_text, encoding="utf-8")
     print(f"wrote {OUTPUT.relative_to(ROOT)} bytes={OUTPUT.stat().st_size} sha256={digest(OUTPUT)}")
 
 

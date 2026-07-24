@@ -26,3 +26,5 @@ obligations and closes all 32. The successor inventory hash is
 The paper, complete evidence map, rendered artifact and publication controls
 pass the strengthened branch gate. There is no open current Foundation
 obligation; any future expansion must be registered as a new explicit scope.
+Foundation Branch Paper 002 is published at DOI
+[`10.5281/zenodo.21535458`](https://doi.org/10.5281/zenodo.21535458).
