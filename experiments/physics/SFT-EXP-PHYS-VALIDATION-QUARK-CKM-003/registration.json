@@ -1,0 +1,130 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-QUARK-CKM-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-QUARK-CKM-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:a6b7fa557f3b5a272aa32a6df2c4bc3941dc40da10388ef0960cc10a0ad03e2c"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST/CODATA, Particle Data Group, Fermilab Muon g-2 Collaboration and Planck Collaboration snapshot sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:f17b44032e229bec93c5f39b355750b042e21ca4ead809b000de6b0d97badbaa",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-QUARK-CKM-003-post-seal-evaluator",
+    "falsification_condition": "Any sealed passing ratio leaves its complete interval, the t/c prediction is weakened because no exact comparator exists, the s23 result is omitted, or source custody changes.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-QUARK-CKM-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST/CODATA, Particle Data Group, Fermilab Muon g-2 Collaboration and Planck Collaboration",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe",
+      "source_id": "MATTER-FLAVOUR-AUTHORITATIVE-2022-2026",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-masses.pdf; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf; https://muon-g-2.fnal.gov/result2025.pdf; https://arxiv.org/abs/1807.06209"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal quark dressing and ckm comparison comparison product.",
+    "dependency_hashes": [
+      "sha256:242b4e204108d23dbb5ed95f49e58ffad94afb84b68bf0059be546506fed3ad9",
+      "sha256:6c977e329b813a4aa42eedeb0e3da2ede4f86445ccf389130a167519818f497d",
+      "sha256:23556d0475dbf7b30cf1f47158b8c9e9824f410ac7c5c504b38e9c1b94365d1c",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered source row, uncertainty, scheme/status limitation and unfavorable outcome in this comparison.",
+    "relation_hash": "sha256:cac73f6e6b09345a16d1a76df4b269b8b7d96953c2f2645189ebf5a20b546792",
+    "statement": "Dressed s/d and b/s overlap their complete PDG intervals; the sealed exact t/c value is a prediction awaiting a direct scheme-matched test; CKM s12, s13 and J overlap three-sigma support while s23 does not.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:37fe40f3f71b79035b54eb1c38284ebc852494561d66a71edffcc59b6f056c0d",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-QUARK-CKM-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:d6b9c3255f5287ec2c777406223c116d91026c19eced78c44a20c4b07a42277e",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-QUARK-CKM-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:6d4f5beae28f834bf62066dc5c21b1633b118ca4589edeca4cecd6a35a8e0dfe",
+    "experiments/external_sources/physics/snapshots/matter-flavour-source-record.json": "sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "MATTER-FLAVOUR-AUTHORITATIVE-2022-2026",
+      "target_id": "MATTER-FLAVOUR-QUARK-CKM"
+    }
+  ]
+}

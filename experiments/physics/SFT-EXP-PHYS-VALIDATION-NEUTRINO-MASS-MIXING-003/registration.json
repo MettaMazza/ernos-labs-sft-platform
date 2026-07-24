@@ -1,0 +1,130 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:3ac89a18972d4e167e81fe33abbabbf061c2c43a4d102ce3feba144cb775eecb"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST/CODATA, Particle Data Group, Fermilab Muon g-2 Collaboration and Planck Collaboration snapshot sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:494196597eb2f5469cfcfcf3b58590ae4d866a8de4233bf23d53d88d7c4386bd",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-post-seal-evaluator",
+    "falsification_condition": "A PMNS/CP value leaves the registered support, the positive mass sum exceeds a robust bound, inverted ordering becomes decisive, or an uncertainty/scope row is altered.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST/CODATA, Particle Data Group, Fermilab Muon g-2 Collaboration and Planck Collaboration",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe",
+      "source_id": "MATTER-FLAVOUR-AUTHORITATIVE-2022-2026",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-masses.pdf; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf; https://muon-g-2.fnal.gov/result2025.pdf; https://arxiv.org/abs/1807.06209"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal neutrino mass, ordering, pmns and cp comparison comparison product.",
+    "dependency_hashes": [
+      "sha256:69ca02edd15318ecb51354e5f89a568e31a3067a861a579d68314be75e8755e1",
+      "sha256:25d4f1d7696fe9081793d7616d289e1347cca87a30cfb707a1ccbe35c28c0a65",
+      "sha256:5e0755be0686421c59137751d8f8f1a37433a8c9ffabfef3fa0e4d1f6dc09506",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered source row, uncertainty, scheme/status limitation and unfavorable outcome in this comparison.",
+    "relation_hash": "sha256:5ea678317b13f8277ffcca7d2d35468a644d91559713345a476cd530f22fb222",
+    "statement": "All PMNS/CP predictions lie in registered three-sigma support; the positive normal mass sum is about 0.060 eV and remains below current direct and cosmological bounds; normal ordering preference is not yet decisive.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:21b6911e02c46cc129c1cdb148e10cd1786f2d6472fab7417cdb1a16b8596e77",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:09febb9e95c3594e69cdabbb35108e03882b0c78e157c55ae7ba0e62ee1ca54c",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:d899335b4dd784261b1327afd118fd524c5469cac284f1141b1e5988bd4365be",
+    "experiments/external_sources/physics/snapshots/matter-flavour-source-record.json": "sha256:6e56fcdd94371ebf396b9600a1431fd448075f69073572b9cb0660959329b9fe"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "MATTER-FLAVOUR-AUTHORITATIVE-2022-2026",
+      "target_id": "MATTER-FLAVOUR-NEUTRINO"
+    }
+  ]
+}
