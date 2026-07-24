@@ -1,0 +1,161 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete rate carriers are rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record or NIST snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed exponent, lifetime or adverse boundary fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:17f619e26ee8b1725cf4af346ee42b9c0ec458b94bd65ce8076a02f366d83e43"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:77bb5da60432c1dd9d5979e952254ace888073af666605ecce7c8f5fda4eb5a4",
+      "role": "development_only",
+      "source_id": "NIST-ATOMIC-TRANSITION-RATE-LIFETIME-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST per-second and second inscriptions remain external records; formal execution uses only exact normalized positive ratios.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every formal equation, scaling cross-lock and complete registered lifetime interval passes while the M1 adverse boundary remains visible.",
+    "comparison_implementation_hash": "sha256:2781721a7aae81ad5d610bea208123fa147ca23173bdd25683ea92f0253978f0",
+    "evaluator_id": "SFT-EXP-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if a sealed exponent or lifetime relation differs, hydrogenic exponent four does not cross-lock, either complete metastable interval fails, M1's adverse boundary is erased, a source hash or uncertainty changes, target access precedes sealing, or observational provenance is concealed.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every exponent, reciprocal relation, scaling cross-lock, lifetime interval, source identity and adverse M1 row exactly.",
+        "metric_id": "complete-rate-lifetime-vector",
+        "unit_protocol": "External units remain source records; interval and reciprocal decisions use exact positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:35f4c76e7ed640958c6ef184cb731fc91c540608bda87bab7ab63130abb7f7a2",
+      "source_id": "NIST-ATOMIC-SPECTROSCOPY-SELECTION-RATE-LIFETIME",
+      "source_uri": "https://physics.nist.gov/Pubs/AtSpec/node17.html"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:77bb5da60432c1dd9d5979e952254ace888073af666605ecce7c8f5fda4eb5a4",
+      "source_id": "NIST-AR9-METASTABLE-M1-LIFETIME-2018",
+      "source_uri": "https://www.nist.gov/publications/lifetime-metastable-2p12-state-f-ar9-isolated-compact-penning-trap"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:77bb5da60432c1dd9d5979e952254ace888073af666605ecce7c8f5fda4eb5a4",
+      "source_id": "NIST-AL27-METASTABLE-CLOCK-LIFETIME-2007",
+      "source_uri": "https://www.nist.gov/publications/observation-1s0-3p0-clock-transition-27al"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal transition-rate, exponent, lifetime, source, adverse-boundary and row-retention product.",
+    "dependency_hashes": [
+      "sha256:6605e8280e161e5fdb95ec5462799179ea45148f5245670703337c9b0e479641",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The full registered NIST E1/E2/M1 exponent and lifetime equations, hydrogenic scaling rows, allowed helium record, Ar9+ and Al27+ metastable intervals, source identities and adverse M1 boundary.",
+    "relation_hash": "sha256:12073bc9cb4d47cf1af4cca27b554bf33202ce65408d858ad0936723babfba60",
+    "statement": "The sealed E1 exponent three, E2 exponent five and reciprocal total-rate lifetime equal the NIST laws; gap-squared hydrogenic scaling cubed with inverse-square strength gives NIST rate exponent four; both complete metastable lower endpoints exceed the allowed-example implied lifetime.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:b99cc16177343a2f51bf6f68fa31c12cd9e7ffa79206fbcf25aa47604c10c2ba",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:94e0080b0b78a5615b8255e5ea5fc995f84dd3e791fb517ebf97e85b8562b01d",
+    "program_id": "SFT-EXP-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:07595c3d0bf5e737bda745fd7b48a9a301d5c61f751cec2df2491fe92cac6e16",
+    "experiments/external_sources/physics/snapshots/atomic-transition-rate-successor-source-record.json": "sha256:77bb5da60432c1dd9d5979e952254ace888073af666605ecce7c8f5fda4eb5a4",
+    "experiments/external_sources/physics/snapshots/nist-atomic-selection-rules.html": "sha256:35f4c76e7ed640958c6ef184cb731fc91c540608bda87bab7ab63130abb7f7a2"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered equation, interval and adverse row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-ATOMIC-TRANSITION-RATE-LIFETIME-2026",
+      "target_id": "NIST-ATSPEC-RATE-LIFETIME-EQUATIONS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-ATOMIC-TRANSITION-RATE-LIFETIME-2026",
+      "target_id": "NIST-AR9-M1-METASTABLE-LIFETIME"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-ATOMIC-TRANSITION-RATE-LIFETIME-2026",
+      "target_id": "NIST-AL27-CLOCK-METASTABLE-LIFETIME"
+    }
+  ]
+}

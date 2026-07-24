@@ -637,3 +637,47 @@ ledger is 308 same-strength closed and 190 open, with 53 mapped open and 137
 unmapped open.  This count supersedes section 30.  The next atomic obligation
 is V1 III-5 transition-rate completion; this shell/periodicity group must be
 committed, not rerun.
+
+32. The terminal atomic transition-rate completion is admitted and must not be
+    regenerated:
+   - `SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005`, engine receipt
+     `sha256:23cb34b722250938fdbc749addee2c0d534ba0f7c0ee54cbb68c678fd4adc5d5`;
+   - derivation seal
+     `sha256:1a020ec6fb65d3804d53098bd13da5aca41648195be86feba07dc00d1d01b665`;
+   - independent validation
+     `sha256:2f6194effc05c95f69bf13278b412b2f0b0c5dae9c1cdd4ca5a2d81a61b03c30`;
+   - empirical validation
+     `sha256:502a83cb6b1548d91d9c1498d8475ae738065fd17e13065cb8dbc247e8a510f6`;
+   - measurement receipt
+     `sha256:f5b54570f563ed73f207b7dc4648b79ad7c39394a3dc6c9a48c397c0f754c57a`;
+   - source record
+     `sha256:77bb5da60432c1dd9d5979e952254ace888073af666605ecce7c8f5fda4eb5a4`.
+
+The frozen law retains the admitted one-unit E1 selection rule, forces the E1
+normalized rate as `gap^3*S/g`, forces lifetime as `1/(sum_i A_i)`, and proves
+the electric multipole exponent `2L+1` by a depth-independent positive-rank
+successor.  Equal-strength/equal-weight electric-rank succession is therefore
+suppressed by exact `gap^2`.  The successor deliberately improves the earlier
+unqualified forbidden-transition wording: the NIST E1 and M1 relations both
+carry cubic gap dependence, so channel naming alone cannot order arbitrary
+rates when their held strengths differ.  This is retained as an adverse
+boundary, while the registered NIST Ar9+ and Al27+ metastable lifetime rows
+test the observed long-lifetime consequence without becoming formal inputs.
+
+After the 1,024-form target-inaccessible grammar sealed one survivor, the NIST
+E1 cubic, E2 fifth-power, total-rate reciprocal lifetime and hydrogenic
+rate-four rows were released and matched exactly.  The implied lifetime of the
+complete allowed helium example is retained beside the full Ar9+ `9.39 +/-
+0.09 ms` and Al27+ `20.6 +/- 1.4 s` metastable intervals; both interval lower
+endpoints strictly exceed the allowed-example lifetime.  The M1 cubic row
+remains adverse evidence against the overbroad universal ordering.
+
+The focused successor test initially exposed only an overbroad prose-name
+assertion in the test, not a law or engine failure.  The admitted formal file
+was preserved byte-for-byte and the access test was narrowed to actual values
+and source primitives; the same focused file then passed (`5 passed`).  The
+engine was not rerun.  V1 III-5 is closed at its full formal and empirical
+boundary.  The live inheritance ledger is 309 same-strength closed and 189
+open, with 52 mapped open and 137 unmapped open.  This count supersedes section
+31.  Do not regenerate III-5 after compaction; proceed to the next open Physics
+obligation selected from the live ledger.

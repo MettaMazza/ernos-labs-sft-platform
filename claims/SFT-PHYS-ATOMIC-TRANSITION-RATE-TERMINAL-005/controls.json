@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:226dec5ab4ab69dfcadebf543257b117191a1957bc41ea3b8b1cb0fc168834ba"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8399e7e82be3c0197772f68a0dde646adf6b3f7ed8366a2eb96028584992ffda"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8a207dc13bd9188a6a113f07e03bc0d6d92b5013ac03193bd037350cd0f05399"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:35918069bd6ff102c9048d4c82c03488f0dba11fbaa7763cef032e25bb99bf2a"
+    }
+  ]
+}
