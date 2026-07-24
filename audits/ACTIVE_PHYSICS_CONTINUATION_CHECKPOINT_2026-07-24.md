@@ -255,14 +255,39 @@ executable law and do not select the formal survivor.  The earlier unfavorable
 leading-only receipt remains immutable.  The exact turn claim independently
 enumerates 512 forms and retains one survivor without opening any measurement.
 
+20. The first same-strength atomic/spectral reconciliation group is now
+    formally sealed and must not be regenerated after conversation compaction:
+   - cubic atomic support and exact neighbour balance
+     `sha256:8fa8b8bb81ea31d715fae3c5f3ceb869b5e4d8afad6c959ff86f12ab2ea7471a`;
+   - depth-independent hydrogen spectral ladder
+     `sha256:ea9b3b9f34311e1f1f41962a5405ffad6250fcd74d75cf107a3b92d35dd2d464`;
+   - leading atomic correction hierarchy
+     `sha256:a6239e61a184cf72e869fabe9c7d2dcc433366e30ef4bfdff68ebd0ff2a0fd9d`;
+   - atomic transition and field-orientation selection
+     `sha256:34ea2b8ac5ee23d6cfe9e2ca37a190682c73830e53fb3b0c32ece6506e7f8de2`;
+   - molecular rotational/vibrational hierarchy
+     `sha256:234231a79ab030c84486fbee91cd79a5498ebb4f88c6467c366f38815ff681d0`.
+
+Each claim exhausts its complete 256-form grammar, retains one survivor, passes
+four adverse controls and has an implementation-distinct exact reconstruction.
+Their formal receipts do not by themselves claim terminal measured-frequency
+agreement. In particular, the leading alpha-four Lamb-family order is retained
+as an immutable formal scale and cannot substitute for a later precision
+comparison. Any precision improvement must be a new versioned empirical
+behind-prediction claim and must preserve this receipt.
+
 ## Active group
 
-Atomic, nuclear, island-of-stability and particle-prediction reconciliation.
+Receipt-level reconciliation of the remaining atomic, nuclear,
+island-of-stability and particle-prediction obligations against the complete
+live V3 Physics corpus. Do not generate another law until the obligation has
+been shown genuinely absent rather than merely unmapped.
 
-The vacuum, relativistic/field, gravity/spacetime and completed matter/flavour
-source, execution, validator and validation modules are frozen by their
-receipts and must not be edited. The next action is a new versioned atomic and
-nuclear module, not a rerun of any completed group.
+The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
+five-claim atomic/spectral source, execution, validator and evidence modules are
+frozen by their receipts and must not be edited. The next action is mapping the
+nominally open V1/V2 rows to existing admitted receipts, followed only by new
+versioned claims for obligations proved absent from the live corpus.
 
 ## Required remaining Physics sequence
 

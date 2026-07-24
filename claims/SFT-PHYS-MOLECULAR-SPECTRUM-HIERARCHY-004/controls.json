@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c56488a117fb913327e10bcc2de8a462ec19479f7c7cab13a6d86b4c43107d1c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a77c0590f6f02e1afb77f47d70e44b15d08f53466c73b017c9157559a9789a1b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e42410e762f0869baeb3c2205938d8ae6a31ba8faf12002ce55d9a1c6406ac9d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:59475a84e7590e322b655736716d01b1a23b17b089f5298c52fe78a64580fb09"
+    }
+  ]
+}
