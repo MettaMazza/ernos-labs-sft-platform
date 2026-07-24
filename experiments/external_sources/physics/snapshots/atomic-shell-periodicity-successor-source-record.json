@@ -1,0 +1,67 @@
+{
+  "schema": "sft-v3-atomic-shell-periodicity-source-record/1",
+  "retrieval_date": "2026-07-24",
+  "custody": {
+    "classification": "observational_derivation",
+    "development_targets_already_known": true,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-prediction",
+    "empirical_prediction_protocol": true,
+    "target_inaccessible_during_prediction_execution": true,
+    "formal_relations_contain_measurement": false,
+    "measurements_select_formal_survivors": false,
+    "engine_prediction_sealed_before_target_release_within_run": true,
+    "complete_reported_uncertainties_retained": true,
+    "missing_uncertainty_display_resolution_separately_labelled": true,
+    "local_nonmonotonic_rows_retained_as_adverse_evidence": true,
+    "shell_capacity_and_period_width_distinguished": true
+  },
+  "sources": {
+    "periodic_table": {
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "body": "International Union of Pure and Applied Chemistry",
+      "source_uri": "https://iupac.org/wp-content/uploads/2022/05/IUPAC_Periodic_Table-04May22.pdf",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/iupac-periodic-table-04may22.pdf",
+      "snapshot_hash": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3",
+      "row": {
+        "closure_atomic_numbers": [2, 10, 18, 36, 54, 86, 118],
+        "period_widths": [2, 8, 8, 18, 18, 32, 32],
+        "table_date": "4 May 2022"
+      }
+    },
+    "ionization": {
+      "source_id": "NIST-ASD-5.12-NEUTRAL-ATOMIC-IONIZATION",
+      "body": "National Institute of Standards and Technology",
+      "source_uri": "https://physics.nist.gov/cgi-bin/ASD/ie.pl",
+      "query": "neutral H, He, Li, Be, B, N, O, Ne, Na, Mg, Al, Ar, K, Kr, Rb, Xe, Cs, Rn and Fr; eV; atomic number, element, ground shells, ground level, ionization energy, uncertainty and references",
+      "database_version": "5.12",
+      "database_doi": "10.18434/T4W30F",
+      "rows": {
+        "H": {"atomic_number": 1, "ground_shells": "1s", "value_eV": "13.598434599702", "uncertainty_eV": "0.000000000012", "references": ["HDEL"]},
+        "He": {"atomic_number": 2, "ground_shells": "1s2", "value_eV": "24.587389011", "uncertainty_eV": "0.000000025", "references": ["L17714"]},
+        "Li": {"atomic_number": 3, "ground_shells": "1s2.2s", "value_eV": "5.391714996", "uncertainty_eV": "0.000000022", "references": ["L12261"]},
+        "Be": {"atomic_number": 4, "ground_shells": "1s2.2s2", "value_eV": "9.322699", "uncertainty_eV": "0.000007", "references": ["L5964"]},
+        "B": {"atomic_number": 5, "ground_shells": "1s2.2s2.2p", "value_eV": "8.298019", "uncertainty_eV": "0.000003", "references": ["L12312"]},
+        "N": {"atomic_number": 7, "ground_shells": "1s2.2s2.2p3", "value_eV": "14.53413", "uncertainty_eV": "0.00004", "references": ["L1411"]},
+        "O": {"atomic_number": 8, "ground_shells": "1s2.2s2.2p4", "value_eV": "13.618055", "uncertainty_eV": "0.000007", "references": ["L74", "L3760"]},
+        "Ne": {"atomic_number": 10, "ground_shells": "1s2.2s2.2p6", "value_eV": "21.564541", "uncertainty_eV": "0.000007", "references": ["L8826", "L1407"]},
+        "Na": {"atomic_number": 11, "ground_shells": "[Ne].3s", "value_eV": "5.13907696", "uncertainty_eV": "0.00000025", "references": ["L10921", "L9648"]},
+        "Mg": {"atomic_number": 12, "ground_shells": "[Ne].3s2", "value_eV": "7.646236", "uncertainty_eV": "0.000004", "references": ["L10635", "L6969"]},
+        "Al": {"atomic_number": 13, "ground_shells": "[Ne].3s2.3p", "value_eV": "5.985769", "uncertainty_eV": "0.000003", "references": ["L7215", "L10321"]},
+        "Ar": {"atomic_number": 18, "ground_shells": "[Ne].3s2.3p6", "value_eV": "15.7596119", "uncertainty_eV": "0.0000005", "references": ["L9217"]},
+        "K": {"atomic_number": 19, "ground_shells": "[Ar].4s", "value_eV": "4.34066373", "uncertainty_eV": "0.00000009", "references": ["L5451", "L5783", "L7185"]},
+        "Kr": {"atomic_number": 36, "ground_shells": "[Ar].3d10.4s2.4p6", "value_eV": "13.9996055", "uncertainty_eV": "0.0000020", "references": ["L12196"]},
+        "Rb": {"atomic_number": 37, "ground_shells": "[Kr].5s", "value_eV": "4.1771281", "uncertainty_eV": "0.0000012", "references": ["L4740", "L5783"]},
+        "Xe": {"atomic_number": 54, "ground_shells": "[Cd].5p6", "value_eV": "12.1298437", "uncertainty_eV": "0.0000015", "references": ["L12013", "L9794", "L6426"]},
+        "Cs": {"atomic_number": 55, "ground_shells": "[Xe].6s", "value_eV": "3.89390572743", "uncertainty_eV": "0.00000000017", "references": ["L19479"]},
+        "Rn": {"atomic_number": 86, "ground_shells": "[Hg].6p6", "value_eV": "10.74850", "display_half_width_eV": "0.000005", "uncertainty_status": "not reported by query", "references": ["L272", "L7432"]},
+        "Fr": {"atomic_number": 87, "ground_shells": "[Rn].7s", "value_eV": "4.0727411", "uncertainty_eV": "0.0000011", "references": ["L10714"]}
+      }
+    }
+  },
+  "comparison_policy": {
+    "provenance": "Observation informed the explicit frozen successor law. The executable law module contains none of these rows and cannot open this record. Complete grammar enumeration, unique selection and sealing precede target release.",
+    "periodicity": "Exact generated closure coordinates and successive widths must equal the complete IUPAC table rows through 118.",
+    "configuration": "Every registered noble closure must end in a filled s or p cell and every registered successor must open the next s cell.",
+    "ionization": "Each period endpoint lower bound must exceed its start upper bound and each noble endpoint lower bound must exceed the successor alkali upper bound. Be-to-B, N-to-O and Mg-to-Al decreases are retained and must remain decreases, defeating a strict-monotonicity control."
+  }
+}

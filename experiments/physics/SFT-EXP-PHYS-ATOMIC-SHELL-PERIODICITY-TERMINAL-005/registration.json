@@ -1,0 +1,143 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete shell support is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record or IUPAC PDF is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A failed envelope/reset or erased local dip fails the complete comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:49a625b12444822ecd15181e814a9cf95e07d6ecf53b29a412e86b569bd30f01"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:3132a0088e0346af7d0ae0b88937765b4c6dfad951d79bb9677103aa6affbdbb",
+      "role": "development_only",
+      "source_id": "IUPAC-NIST-ATOMIC-SHELL-PERIODICITY-2022-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "IUPAC count coordinates and NIST eV inscriptions remain source records; only exact positive rational interval comparison occurs post-seal.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All generated coordinates and every registered favorable and adverse NIST relation pass.",
+    "comparison_implementation_hash": "sha256:3c9643006c323fb9d3545352de7faabc387db7b41730902413e884b55df39640",
+    "evaluator_id": "SFT-EXP-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The claim fails if any generated closure or width differs, a registered NIST configuration disagrees, a period envelope or reset fails, a retained local dip is erased, any source identity changes, target access precedes sealing, or observational development is concealed.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every closure, width, configuration, period envelope, reset, local dip, uncertainty and source identity exactly.",
+        "metric_id": "complete-periodicity-vector",
+        "unit_protocol": "External eV inscriptions are exact source records and all comparison arithmetic uses positive fractions."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3",
+      "source_id": "IUPAC-PERIODIC-TABLE-2022",
+      "source_uri": "https://iupac.org/wp-content/uploads/2022/05/IUPAC_Periodic_Table-04May22.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:3132a0088e0346af7d0ae0b88937765b4c6dfad951d79bb9677103aa6affbdbb",
+      "source_id": "NIST-ASD-5.12-NEUTRAL-ATOMIC-IONIZATION",
+      "source_uri": "https://physics.nist.gov/cgi-bin/ASD/ie.pl"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal atomic periodicity comparison product.",
+    "dependency_hashes": [
+      "sha256:5a2501b806e079b15f2c5d6c8fc962b7b00940db53e157660f2cd37e841fc54e",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete generated closure/width prefix through 118, registered NIST closure/successor configurations, all six period envelopes and resets, three adverse local dips, source identities and uncertainty/display-resolution records.",
+    "relation_hash": "sha256:3f44c1c79ea616430e88724387ceead9f1b654115acc741df8b9bf95c8a4f291",
+    "statement": "The exact closure and width vectors equal IUPAC; NIST ground configurations agree at every registered closure and successor; all period envelopes rise and reset while all three known local dips remain retained.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:0cec1140e45769523cfc1bbb3fa2575462ae272aec7218432ac5c8f888044aee",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:6077e75e919cafb5001f359dc85bc4c962dff6a77e836b6d93f9f73f52b47c72",
+    "program_id": "SFT-EXP-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:766c3c0e95701bb2019d40362a45d7053ac827c09451039d67649a09f06aa5db",
+    "experiments/external_sources/chemistry/snapshots/iupac-periodic-table-04may22.pdf": "sha256:ef6ca2f6d46554f96e30ad3a60693d6630fe45ad81ce83cb14e508c6cbb7d3b3",
+    "experiments/external_sources/physics/snapshots/atomic-shell-periodicity-successor-source-record.json": "sha256:3132a0088e0346af7d0ae0b88937765b4c6dfad951d79bb9677103aa6affbdbb"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered coordinate, configuration, interval and adverse row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-NIST-ATOMIC-SHELL-PERIODICITY-2022-2026",
+      "target_id": "IUPAC-NIST-ATOMIC-PERIODICITY-COMPLETE-VECTOR"
+    }
+  ]
+}

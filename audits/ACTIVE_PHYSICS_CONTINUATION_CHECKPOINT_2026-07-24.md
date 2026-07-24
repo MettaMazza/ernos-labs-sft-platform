@@ -597,3 +597,43 @@ is 307 same-strength closed and 191 open, with 54 mapped open and 137 unmapped
 open.  This count supersedes section 29.  The next atomic obligations are V1
 III-4 shell/filling/periodicity and V1 III-5 transition-rate completion; this
 hydrogen-scale group must be committed, not rerun.
+
+31. The terminal atomic shell, filling and periodicity completion is admitted
+    and must not be regenerated:
+   - `SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005`, engine receipt
+     `sha256:86b2573d6cd627c61d4816f1a90868906d5c66cc640d9a03f7d3b6e635c9406c`;
+   - derivation seal
+     `sha256:5ffc9fd662f8f402e00134b79ef722ffb129fc043e8ed1a24e5230d0cfedcfb5`;
+   - independent validation
+     `sha256:751edd05d95eea5aaaebf1c6c1ed2f7c2b3c454d2a1f5832cfc4a575e538fff3`;
+   - empirical validation
+     `sha256:4dcc83003b2c685d3968c484af3ca55526ba6ae2dddba040fbd0d243cb94f039`;
+   - measurement receipt
+     `sha256:af2aada6a6e8ee8f3d8421f1dd120407346653980179c775164423fcc4ab9458`.
+
+The depth-independent positive-rank induction now proves
+`sum_(r=1)^n 2(1+2(r-1)) = 2n^2`, giving complete shell capacities
+`2,8,18,32,...`.  Independently, increasing joint cover with retained
+principal-rank tie order generates filled outer-boundary closures
+`2,10,18,36,54,86,118`; their successive differences are the actual period
+widths `2,8,8,18,18,32,32`.  The successor therefore corrects the old wording
+that could conflate shell capacities with period widths while preserving the
+valid capacity theorem.
+
+Only after the 1,024-form target-inaccessible grammar sealed one survivor were
+the complete IUPAC closure/width vector and registered NIST ASD 5.12 neutral
+configuration/ionization rows released.  Every registered noble configuration
+closes and every successor opens the next s cell.  All six period endpoint
+envelopes rise and all six noble-to-alkali boundaries reset downward.  The
+Be-to-B, N-to-O and Mg-to-Al decreases are preserved as adverse evidence, so
+the empirical claim is the exact sawtooth envelope and reset law rather than a
+false strict-monotonicity assertion.  Every reported NIST uncertainty is held;
+the Radon row's absent reported uncertainty is explicitly handled only as a
+displayed-resolution enclosure.
+
+The focused successor test was run once and passed (`5 passed`).  V1 III-4 is
+now closed at its full formal and empirical boundary.  The live inheritance
+ledger is 308 same-strength closed and 190 open, with 53 mapped open and 137
+unmapped open.  This count supersedes section 30.  The next atomic obligation
+is V1 III-5 transition-rate completion; this shell/periodicity group must be
+committed, not rerun.
