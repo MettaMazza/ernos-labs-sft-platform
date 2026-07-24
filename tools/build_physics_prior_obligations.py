@@ -107,6 +107,13 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "G11": ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
     "N1e": ("SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",),
     "VIII-12": ("SFT-PHYS-COSMO-COMPLETE-BUDGET-001",),
+    "III-1": ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004", "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001"),
+    "III-2": ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004", "SFT-PHYS-QUANTUM-SPIN-001"),
+    "III-3": ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-VACUUM-ODD-RECURRENCE-003", "SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003"),
+    "III-4": ("SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001", "SFT-PHYS-QUANTUM-EXCLUSION-001"),
+    "III-5": ("SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004",),
+    "III-6": ("SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004", "SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003", "SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001"),
+    "III-8": ("SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",),
 }
 
 
@@ -183,6 +190,82 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     293: ("SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001", "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001"),
     298: ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",),
     302: ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001", "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001"),
+    47: ("SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004",),
+    60: ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004", "SFT-PHYS-QUANTUM-SPIN-001"),
+    62: ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004",),
+    96: ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-VACUUM-ODD-RECURRENCE-003"),
+    142: ("SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",),
+}
+
+
+# Reviewed open boundaries distinguish a missing comparison or stronger
+# successor from a missing derivation.  They are deliberately not included in
+# RECENTLY_VERIFIED: none can close until its recorded remaining work is done.
+REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
+    "III-1": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The 1/n^2 ladder, exact gaps and alpha^2/2 electron-rest ratio are sealed. Reduced-mass completion and the post-seal Rydberg, Lyman and Balmer vector remain.",
+    },
+    "III-2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The fine/gross alpha^2 scale, spin carrier and target-free proton/electron enclosure are sealed. The complete hyperfine carrier and twenty-one-centimetre comparison remain.",
+    },
+    "III-3": {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The live-vacuum direction is sealed, but the leading alpha^4 formal scale does not reproduce the prior alpha^3 terminal Lamb boundary. Preserve it and admit a versioned NIST-tested successor.",
+    },
+    "III-4": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Sublevel capacity 2(2l+1) and exclusion are sealed. The summed 2n^2 shell law, filling recurrence, period lengths and ionization-sawtooth comparison remain.",
+    },
+    "III-5": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The one-unit elementary transition is sealed. Gap-cubed rate, inverse lifetime, higher-multipole suppression and the complete NIST line-strength/lifetime comparison remain.",
+    },
+    "III-6": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Magnetic/electric orientations are sealed. The 2l+1 Zeeman count, linear Zeeman, linear hydrogen Stark and quadratic nondegenerate response with measured splittings remain.",
+    },
+    "III-8": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The electronic half and molecular quarter hierarchy is sealed. J(J+1), adjacent 2J spacing, oscillator/anharmonic ladder, isotope transport and NIST comparison remain.",
+    },
+}
+
+
+REVIEWED_OPEN_V2: dict[int, dict[str, str]] = {
+    47: {
+        "formal_same_strength_status": "closed_same_strength",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The exact six-neighbour, one-twelfth and half-One law is sealed; execute the post-seal NIST simple-cubic comparison.",
+    },
+    60: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The fine/gross alpha^2 scale and mass/spin dependencies are sealed; the terminal hyperfine ratio and measured hydrogen interval remain.",
+    },
+    62: {
+        "formal_same_strength_status": "closed_same_strength",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The depth-independent 1/n^2 ladder and exact Lyman/Balmer gaps are sealed; execute the post-seal NIST hydrogen vector.",
+    },
+    96: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The leading bound-return receipt is preserved, but its alpha^4-of-gross terminal scale is not the prior alpha^3 Lamb boundary; admit a versioned NIST-tested successor.",
+    },
+    142: {
+        "formal_same_strength_status": "closed_same_strength",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The electronic half, molecular quarter and two-quarter recomposition are sealed; execute the post-seal NIST spectral-class comparison.",
+    },
 }
 
 
@@ -217,19 +300,30 @@ def atom(
     claims: tuple[str, ...],
     closed: bool,
     source_status: str,
+    review: dict[str, str] | None = None,
 ) -> dict[str, object]:
+    review = review or {}
+    formal_status = "closed_at_declared_boundary" if closed else review.get("formal_same_strength_status", "unreviewed")
+    empirical_status = "closed_at_declared_boundary" if closed else review.get("empirical_boundary_status", "unreviewed")
+    remaining_work = "none" if closed else review.get(
+        "remaining_work",
+        "Complete same-strength formal and empirical review has not yet been recorded.",
+    )
     return {
         "atomic_obligation_id": atomic_id,
         "prior_observation": observation,
         "categorical_owner": "physics",
         "v3_claim_ids": list(claims),
         "same_strength_closed": closed,
+        "formal_same_strength_status": formal_status,
+        "empirical_boundary_status": empirical_status,
+        "remaining_work": remaining_work,
         "disposition": "closed" if closed else "open_reconstruction_required",
         "source_disposition_at_ledger_build": source_status,
         "reason": (
             "The mapped V3 claim package or packages carry model-admitted receipts at the recorded formal and empirical boundary."
             if closed
-            else "The recorded Physics result remains blocking until its complete same-strength V3 derivation, receipt and empirical boundary are verified."
+            else "The recorded Physics result remains blocking at the specifically recorded formal or empirical boundary."
         ),
     }
 
@@ -262,7 +356,7 @@ def main() -> None:
             "source_entry": source_id,
             "source_hash": row["source_row_sha256"],
             "source_observation": row["prior_result_observation"],
-            "atomic_obligations": [atom(f"V1-{source_id}-PHYSICS-SAME-STRENGTH", row["prior_result_observation"], claims, closed, disposition.get("status", "unreviewed"))],
+            "atomic_obligations": [atom(f"V1-{source_id}-PHYSICS-SAME-STRENGTH", row["prior_result_observation"], claims, closed, disposition.get("status", "unreviewed"), REVIEWED_OPEN_V1.get(source_id))],
         })
     for step in sorted(V2_PHYSICS_STEPS):
         row = v2_rows[step]
@@ -276,7 +370,7 @@ def main() -> None:
             "source_entry": step,
             "source_hash": row["source_block_sha256"],
             "source_observation": row["prior_result_observation"],
-            "atomic_obligations": [atom(f"V2-{step:03d}-PHYSICS-SAME-STRENGTH", row["prior_result_observation"], claims, closed, disposition.get("status", "unreviewed"))],
+            "atomic_obligations": [atom(f"V2-{step:03d}-PHYSICS-SAME-STRENGTH", row["prior_result_observation"], claims, closed, disposition.get("status", "unreviewed"), REVIEWED_OPEN_V2.get(step))],
         })
 
     atoms = [item for entry in entries for item in entry["atomic_obligations"]]
@@ -323,6 +417,15 @@ def main() -> None:
             "open_atomic_obligation_ids": [item["atomic_obligation_id"] for item in open_atoms],
             "mapped_open_count": sum(bool(item["v3_claim_ids"]) for item in open_atoms),
             "unmapped_open_count": sum(not bool(item["v3_claim_ids"]) for item in open_atoms),
+            "formal_same_strength_closed_but_empirical_open_count": sum(
+                item["formal_same_strength_status"] == "closed_same_strength"
+                and item["empirical_boundary_status"] == "required_open"
+                for item in open_atoms
+            ),
+            "reviewed_partial_or_successor_required_count": sum(
+                item["formal_same_strength_status"] in {"partial", "versioned_successor_required"}
+                for item in open_atoms
+            ),
         },
     }
     OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")

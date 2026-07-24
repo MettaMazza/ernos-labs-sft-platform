@@ -276,6 +276,21 @@ as an immutable formal scale and cannot substitute for a later precision
 comparison. Any precision improvement must be a new versioned empirical
 behind-prediction claim and must preserve this receipt.
 
+21. The complete live-receipt reconciliation index is generated at
+    `audits/physics_prior_receipt_reconciliation_candidates.json` by
+    `tools/build_physics_receipt_reconciliation.py`.
+
+The index binds all 498 Physics-owned prior obligations to all 253 admitted
+Physics registrations, certificates and engine receipts. All 405 nominally open
+rows have candidate evidence, proving that an empty manual override was not
+evidence of an absent derivation. Candidate ranking is deliberately
+non-admitting: each row still requires same-strength review. The atomic review
+now records the formal/empirical boundary separately. Three V2 atomic rows are
+formally closed but await post-seal comparison; nine additional V1/V2 rows are
+explicitly recorded as partial or requiring a versioned successor. This
+distinction is the restart boundary: do not regenerate a formally closed result
+when only its empirical claim remains.
+
 ## Active group
 
 Receipt-level reconciliation of the remaining atomic, nuclear,
