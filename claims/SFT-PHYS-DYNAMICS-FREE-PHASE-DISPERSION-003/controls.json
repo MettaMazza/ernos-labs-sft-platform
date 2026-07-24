@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8c8abe048b2e0d3c2b40b72cdc0934f6e08fc5372dfb1ddcbd0541dc2a63c3a9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:bf88bf71af8cd6e1866679adf017e7916401a9e88eb4637e05e30f7407a9597c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6bdefe43465be54912b1b709e50e7d7d8aebab95e2f94b1d23c7144448212750"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:59f5fc8c2264e7dfbc55bd587b4b388cd5eb669df4bdcf418b62391d62681335"
+    }
+  ]
+}

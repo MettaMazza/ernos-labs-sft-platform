@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:aed03d64d05dd11ac2114c94f12eeed64e5fbf8a41ac0785d8c7534a2adbb8a6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1db42473facdb53ec56c2ea4e22126862ac3d0e1d7522af4d04004a727102a95"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a02635acf69c4a02339b1721a416e0629ae94925af07f044f567ebf0e9b41cbe"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:25ab4a9872d7deb14c1bf89d25eeb44b1ae26eeff1151ddb88f65cfd2a1b1bdc"
+    }
+  ]
+}

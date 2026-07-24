@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2e43e78a4b885264b25e0875c6f9233f7800a358d7aa2942cf7553a0492cd847"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:45ec878430853f47134c7e072166bd943a0c29ba6cd6bb75a7b23142d13cd5a6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b9399927d3ba19ba0e13b5a8a72e6c74986a9bfde3722e6374591b82c4b0231d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f5a87e9e424a46e879175b4dca154d2c037f4d8158ddfbd0269ef327e85a724c"
+    }
+  ]
+}

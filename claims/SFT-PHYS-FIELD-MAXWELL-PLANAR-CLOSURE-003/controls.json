@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:eafd899a9d320fec212c4ab36f18c4a4efd682611fef094307d16dc5e1572ebf"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:306d2fa1aeb708f8c68d2b46d8a68a777b72679e9b4af54d77909a4385ff71cd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3ccafd6fdb2f836afd17c5e6fa0162cb1d033ed59894e8163efd758405fc5c94"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:74de44412fc44a7fb00345487361b8f0666807a320593e4416a269499189fc7c"
+    }
+  ]
+}

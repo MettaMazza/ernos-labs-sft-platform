@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-LORENTZ-TRANSFER-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6ba16b5ac831f6230b21f169c00a2c6421b2877b8a5a2509054bdc6fdf6876e6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:57ce2f114d67fb08f7ed01a12d2a3e11e914a41ca46adc9b446baf4680d797c3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1ab25ba309a9c883998b7016ca264e3f9266c5f540680afde7a5b6214ab10ccb"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f43103f36ebeb11d01a281a15a18d16a4554ed54e047faeaa13d6ba187ae38fa"
+    }
+  ]
+}

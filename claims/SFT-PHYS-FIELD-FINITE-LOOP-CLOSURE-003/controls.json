@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:643fde1c52ea524dff094a8fb8119cf4e8b1d12be431699739bf7d2213355340"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:160cb7c4a05a174ca6869795f4f8326f525fc3a526deff446b6d42db9af5aecf"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f40becab2c8048726c80864bb8da877019405784e6fbf5dd8fedef512446ffd4"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1f71dea4ae509caa698e6abeb41c08f7ce9de7649a8cd002dadc8cf54ba06390"
+    }
+  ]
+}

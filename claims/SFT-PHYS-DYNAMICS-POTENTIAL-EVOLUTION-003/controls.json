@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-DYNAMICS-POTENTIAL-EVOLUTION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b3d149ad76829ca3c63ca9bb36fbb2895c435c84f96096f023ca47d74a787205"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:65156571a85663c80655f18aafe7018aea3a858313aa78c3400061d68e6cd9db"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3d6e70f6e2dfc72a57de3c7bd5cbb299b9958ea4a6499e2183508c7507dd4dae"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9b6d171f23ae15b03c1c225f0282d8cee0585c8f23a800409bb214abc18475c6"
+    }
+  ]
+}

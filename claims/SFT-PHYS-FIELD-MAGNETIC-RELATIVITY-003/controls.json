@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fd58ff0c8faddc6b0127682f22c4ebd1ac5f8c72d78259c3b716b133d804e132"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:27588232bfaf00a92166f28965d32ef1fbba4636c5c126546b5c8594c192d178"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c4cf910271ff874cc8cde959f228e2b7023f1ebb13d6c1c262055bfa49051e52"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f6341899b006c65deee611e514f5b58ad6c05bf74b11d24504d79e33157946ff"
+    }
+  ]
+}

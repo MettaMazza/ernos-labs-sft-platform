@@ -1,0 +1,129 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:8c62c22e435b50c82c4e5f53c33c2fbe37c4f577067dc4a447d76fec4d3b7596"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST, CODATA, Particle Data Group and American Physical Society snapshot sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:7f4cb8d3c838dd467244099a40b95951309c0d77679349cad80347deffc1fe54",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-post-seal-evaluator",
+    "falsification_condition": "Authoritative spectra cease to exhibit discrete levels/transitions or the structural Fold normalization is promoted to a direct measured value without a committed measurement.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-DYNAMICS-SPECTRA-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST, CODATA, Particle Data Group and American Physical Society",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308",
+      "source_id": "RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026",
+      "source_uri": "https://physics.nist.gov/PhysRefData/ASD/Html/verhist.shtml; https://physics.nist.gov/cuu/Constants/Table/allascii.txt; https://doi.org/10.1103/PhysRevLett.26.721; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf; https://www.nist.gov/news-events/news/2019/12/new-playbook-interference; https://www.nist.gov/publications/nonlinear-networks-arbitrary-optical-synthesis; https://tf.nist.gov/ofm/synthesis/ppln.htm"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal dynamics/spectra comparison product.",
+    "dependency_hashes": [
+      "sha256:01f45b45dafe3309d7409b882c7c0122c621fd1cb12466a925363e93bf5cf833",
+      "sha256:b7523a6642894585a758324557ce0b9d0cdb854255308d7a8d1e78b40ac2924d",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "All registered NIST discrete-spectrum and CODATA energy-frequency rows together with the exact-normalization unfavorable control.",
+    "relation_hash": "sha256:fd0f32277e525c5d96deb17d04bc7ddac2e92f159c9c0d4bd7e98c63b03b9d99",
+    "statement": "Discrete spectra and energy-frequency phase correspondence are externally supported; the particular Fold fractions remain exact structural normalization witnesses, not universal measured atomic energies.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:7871f66ff1d6fefe3aee3b8418383b088a33d6f2f70a20608df8edce0abc3dc2",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:12a7e0e5638ed89e7b01082baa75b3acf2f09330339968231df262bb1226ebae",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:27bd615c11b4fa833a09ea817d81b66b951ce5f025c62ab4e4a6a165b08cc047",
+    "experiments/external_sources/physics/snapshots/relativistic-field-source-record.json": "sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026",
+      "target_id": "RELATIVISTIC-FIELD-DYNAMICS"
+    }
+  ]
+}

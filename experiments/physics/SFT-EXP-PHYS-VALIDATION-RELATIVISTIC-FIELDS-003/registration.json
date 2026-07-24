@@ -1,0 +1,131 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:351cd651e1736ee4e28f43ed921e3e51c0c36790b5a1a1664b282b5f05c4729b"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST, CODATA, Particle Data Group and American Physical Society snapshot sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:61817c091be6f255af36d36f46d22062295640ea39401cb5727f18a8600c8f51",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-post-seal-evaluator",
+    "falsification_condition": "A verified non-invariant vacuum propagation speed, non-inverse-square Coulomb exponent outside the registered bound, or absence of Dirac/Lorentz and electric/magnetic physical classes contradicts the correspondence; a changed source or omitted limitation invalidates the validation receipt.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST, CODATA, Particle Data Group and American Physical Society",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308",
+      "source_id": "RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026",
+      "source_uri": "https://physics.nist.gov/PhysRefData/ASD/Html/verhist.shtml; https://physics.nist.gov/cuu/Constants/Table/allascii.txt; https://doi.org/10.1103/PhysRevLett.26.721; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf; https://www.nist.gov/news-events/news/2019/12/new-playbook-interference; https://www.nist.gov/publications/nonlinear-networks-arbitrary-optical-synthesis; https://tf.nist.gov/ofm/synthesis/ppln.htm"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal relativistic/electromagnetic comparison product.",
+    "dependency_hashes": [
+      "sha256:5ab17d73025397dccaadf18937a3c44361f03861f24f78c40d47e187c4b498c5",
+      "sha256:a8b42dd5c9f9eb8d7178759ce167d016f62c6206d87922032ba4eb4208e84a99",
+      "sha256:5dcdccc901db5ac20c16bfa43d11ae953cd8fc5e86684144330413c02598fafb",
+      "sha256:697894b852803f2e7bcbf15b23612de99fc4aea4ad2c5e960ae400f9bfbd85ef",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "All registered PDG Dirac/Lorentz, CODATA speed/electromagnetic and APS inverse-square rows plus every rational-witness scope control.",
+    "relation_hash": "sha256:434d7e4b07fd8e2c370e804b4867bb38188555ae801eeb2320ac198700a10fb2",
+    "statement": "Dirac/Lorentz structure, invariant vacuum speed, electric/magnetic observables and inverse-square Coulomb behavior are externally supported; the exact rational Fold closures remain structural witnesses.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:ae60aafe42d6ad061c6b3e35bbb340bc124451e7d8f7113fa4f1d3b3bd5cf9ff",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:34f1ae5cf5ae24666d9dd1bdcf3ad5540b6dee93774388c5e5ab88a750ec768d",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:10e7de58a621baa4d78a6a490afb0e84179e996e12311854900c09d6576af992",
+    "experiments/external_sources/physics/snapshots/relativistic-field-source-record.json": "sha256:97a7631d956cc2eb8142e64603a1f51ece76944195274a28bbe91498edae0308"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026",
+      "target_id": "RELATIVISTIC-FIELD-FIELDS"
+    }
+  ]
+}

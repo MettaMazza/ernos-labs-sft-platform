@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-WAVE-EXACT-OPERATIONS-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:da1305278f885cee1927f9a78e3dabf323d17480590bac0f8db653ded1bca5b6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e85758931f7806bba8989aa4528d1e48278116ffde19d580946b04dd92285d43"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:68a2392e4b4cf80ccaa7c1dcc5c1f691115996e1fc6038100bce876165a5fce0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c50fcba605905e42479774ebd71bb662f6ceb2c3915aa07bcb9a91fef5570fa0"
+    }
+  ]
+}
