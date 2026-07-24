@@ -367,6 +367,31 @@ comparison snapshot above. No new physical law was generated during this
 reconciliation pass, and no stronger prior result was closed by a merely broad
 or nominally related claim.
 
+25. The next receipt-reconciliation pass is complete and conservatively
+    bounded:
+    - already admitted Chemistry, Materials, Mathematics, Information,
+      Quantum and Physics receipts now discharge eighty additional prior rows
+      at their categorically correct locations;
+    - exact force inventories, matter/flavour terminal values, quantum
+      semantics, relativistic dynamics, finite rational n-body recurrence and
+      finite-depth fluid regularity are linked without rerunning their engines;
+    - nineteen apparently related mappings were explicitly refused as closures
+      after semantic review. In particular, the early `M10` two-to-one and
+      third-massless form is preserved as adverse evidence rather than hidden
+      behind the terminal lepton and neutrino claims; `G4` is not closed by
+      merely placing gravity and quantum receipts beside one another; and `G5`
+      is not closed until the particle inventory is exhaustively placed on the
+      mode ladder;
+    - the refused mappings remain visible only as candidate dependencies for
+      their required versioned successors.
+
+The live ledger is now 244 same-strength closed and 254 open. Seventy-one open
+rows have a precise partial or versioned-successor boundary; 194 remain
+unmapped and require semantic review. These counts supersede every earlier
+checkpoint count. No new physical law was generated in this reconciliation
+pass, and no adverse V1/V2 statement was erased or counted as confirmed by a
+different later result.
+
 ## Active group
 
 Receipt-level reconciliation of the remaining atomic, nuclear,
@@ -374,7 +399,7 @@ island-of-stability and particle-prediction obligations against the complete
 live V3 Physics corpus. The cubic and hydrogen post-seal comparisons are
 finished and must not be regenerated. The atomic precision, molecular and
 newly registered stronger field/gravity successors are genuinely open. Continue
-reviewing the remaining 276 unmapped rows; generate a new law only after its
+reviewing the remaining 194 unmapped rows; generate a new law only after its
 obligation has been shown absent rather than merely unmapped.
 
 The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
