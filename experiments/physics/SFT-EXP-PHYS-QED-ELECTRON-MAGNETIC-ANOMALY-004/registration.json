@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:51a1f9d6d36b0356824fd6d2bbdb2bf0945fd4e22eac66ee0e24ff1e1f52fa02"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:4b506052fc5037576cd6ba4de8ee5afce74460f7a5cb8da4bc58cbb823f6732f",
+      "role": "development_only",
+      "source_id": "MATTER-FLAVOUR-TERMINAL-ANOMALY-AUTHORITATIVE-2022-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants and Fermilab Muon g-2 Collaboration snapshot sha256:4b506052fc5037576cd6ba4de8ee5afce74460f7a5cb8da4bc58cbb823f6732f; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:3bc36865eab96da30423258a7015baf29927a0c71b4d8707d7b35171dcecb58b",
+    "evaluator_id": "SFT-EXP-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-post-seal-evaluator",
+    "falsification_condition": "The exact sealed electron prediction leaves the complete registered interval, the target becomes readable before sealing, a measured value selects the survivor, an uncertainty changes, or observational provenance is hidden.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants and Fermilab Muon g-2 Collaboration",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:4b506052fc5037576cd6ba4de8ee5afce74460f7a5cb8da4bc58cbb823f6732f",
+      "source_id": "MATTER-FLAVOUR-TERMINAL-ANOMALY-AUTHORITATIVE-2022-2026",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt; https://muon-g-2.fnal.gov/result2025.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal terminal electron anomaly comparison product.",
+    "dependency_hashes": [
+      "sha256:9532004d0f07130d9b25edbbb32994b2a620bbfc2b18968787dbb5a8685b5240",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered NIST CODATA electron anomaly row, exact central value and complete standard uncertainty, together with the sealed target-inaccessible Fold prediction and preserved provenance.",
+    "relation_hash": "sha256:a433813340e6a33ed987dd6f66fe257bf05997110aac7c8df7c9c62147ac0cd0",
+    "statement": "The exact terminal electron anomaly sealed without target access lies inside the complete registered NIST CODATA standard-uncertainty interval.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:5c2b113e86faeb545dd7ccf619a867c209fd008f9378d926833cdeefc737ad62",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:4c9a3a6b3622574a3a3b5c9dd29073515189222dd5cb56125abd474fa50725a9",
+    "program_id": "SFT-EXP-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:b97372416cb3d33a74ece3ed12a576613a605d42e0f8fbcfc95119df59615292",
+    "experiments/external_sources/physics/snapshots/matter-flavour-terminal-anomaly-source-record.json": "sha256:4b506052fc5037576cd6ba4de8ee5afce74460f7a5cb8da4bc58cbb823f6732f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "MATTER-FLAVOUR-TERMINAL-ANOMALY-AUTHORITATIVE-2022-2026",
+      "target_id": "ELECTRON-MAGNETIC-ANOMALY-COMPLETE"
+    }
+  ]
+}

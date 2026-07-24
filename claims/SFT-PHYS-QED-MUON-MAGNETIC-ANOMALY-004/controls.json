@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:10a2e4a82eb07ef38e6087da7c06c66650945ce4b639df23ef71a2dde2502d86"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:de33e0625fde4d4b5ce4bef9b77098f827c6633db8de0b93119ba13a62a1773a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:63b3a7c81f925eb38705876db1b21d3437e0d29d9a9330b7b23d6a452c5502a6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:dd6d713d8248a0c754b67ca8dd4bf5fc7fb70b7bd6bb5de63933f47489cbd8a6"
+    }
+  ]
+}

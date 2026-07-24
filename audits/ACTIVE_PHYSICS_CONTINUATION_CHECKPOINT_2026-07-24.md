@@ -222,18 +222,47 @@ is wholly contained in the full CODATA one-standard-uncertainty interval
 retains one survivor and releases the measurement only after sealing the
 target-inaccessible prediction.
 
+19. The exact terminal turn projection and complete electron/muon magnetic
+    anomaly predictions are now sealed:
+   - terminal finite turn projection
+     `sha256:b85f5162d1cf55490a4bc8666fa02b354029ff4a297d9013c61dddd93491629d`;
+   - terminal electron magnetic anomaly
+     `sha256:1901b85dc30105470cbf50fd13560402dd359f21aab9be6f324db678318087e4`;
+   - terminal muon magnetic anomaly
+     `sha256:8f5637b4d0189746e09a6e7d05937cefeef8d493c095e90162c3b3c8e458dd5a`.
+
+The exact finite turn projection is forced as `3 + 1/(7 + 1/16) = 355/113`:
+three complete generator sectors, one return through the admitted up-depth
+seven, and complete binary support sixteen across the four terminal promotion
+rungs.  No irrational turn carrier enters the proof domain.  The electron law
+then closes two ordered positive held/returned loop pairs and acts once on the
+admitted leading carrier.  Its target-inaccessible exact prediction is
+`0.0011596521804655829468880861989506600262655596109665...`, inside the full
+NIST CODATA interval centered at `0.00115965218046` with standard uncertainty
+`0.00000000000018`.  The second-generation correction is exactly
+`alpha^2[2/17 + alpha/106 + alpha^2/853]`, with `17=2*3^2-1`,
+`53=2*3^3-1` and `853=16*53+5`.  This forces the muon prediction
+`0.0011659207149994170239443946449257830369731666072522...`, inside the full
+Fermilab world-average interval centered at `0.001165920715` with standard
+uncertainty `0.000000000145`.
+
+Both empirical claims use the observational-derivation empirical prediction
+protocol.  Observation informed each explicit law; each target was then placed
+behind the capability boundary; the engine enumerated 1,024 typed forms,
+retained one survivor and sealed the exact prediction; only afterward was the
+registered measurement released.  The measured values do not occur in either
+executable law and do not select the formal survivor.  The earlier unfavorable
+leading-only receipt remains immutable.  The exact turn claim independently
+enumerates 512 forms and retains one survivor without opening any measurement.
+
 ## Active group
 
-Matter, flavour and particle-value reconstruction:
+Atomic, nuclear, island-of-stability and particle-prediction reconciliation.
 
-- electron and muon magnetic anomaly reconstruction;
-- exact separately generated successor for the remaining adverse magnetic
-  precision comparison without target-readable execution.
-
-The vacuum, relativistic/field and gravity/spacetime source, execution,
-validator and validation modules are frozen by their receipts and must not be
-edited. The next action is a new versioned matter/flavour module, not a rerun
-of any completed group.
+The vacuum, relativistic/field, gravity/spacetime and completed matter/flavour
+source, execution, validator and validation modules are frozen by their
+receipts and must not be edited. The next action is a new versioned atomic and
+nuclear module, not a rerun of any completed group.
 
 ## Required remaining Physics sequence
 
