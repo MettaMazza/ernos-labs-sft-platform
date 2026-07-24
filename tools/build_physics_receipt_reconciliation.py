@@ -3,8 +3,11 @@
 
 This tool prevents a missing ledger mapping from being mistaken for a missing
 derivation.  It compares each V1/V2 observation with the complete live set of
-model-admitted Physics registrations and certificates, records the strongest
-lexical candidates, and binds every candidate to its immutable engine receipt.
+model-admitted registrations and certificates in every branch, records the
+strongest lexical candidates, and binds every candidate to its immutable
+engine receipt.  Cross-branch search is required because a Physics-owned prior
+observation may already be carried by an admitted mathematical, information,
+chemistry or materials theorem plus its Physics translation.
 
 Candidate ranking is an audit aid only.  It cannot mark an obligation closed;
 same-strength closure still requires an explicit reviewed mapping.
@@ -93,7 +96,7 @@ def claim_documents() -> tuple[list[dict[str, object]], dict[str, int]]:
     rows: list[dict[str, object]] = []
     document_frequency: Counter[str] = Counter()
     for claim in census:
-        if claim.get("branch") != "physics" or not claim.get("model_admitted"):
+        if not claim.get("model_admitted"):
             continue
         claim_id = str(claim["claim_id"])
         package = ROOT / "claims" / claim_id
@@ -105,12 +108,13 @@ def claim_documents() -> tuple[list[dict[str, object]], dict[str, int]]:
         statement = str(registration.get("statement", claim.get("statement", "")))
         exact_result = str(certificate.get("exact_result", ""))
         dependency_ids = tuple(str(value) for value in registration.get("dependencies", ()))
-        title_tokens = tokens(claim_id.replace("SFT-PHYS-", "") + " " + title)
+        title_tokens = tokens(claim_id.replace("SFT-", "") + " " + title)
         body_tokens = tokens(statement + " " + exact_result + " " + " ".join(dependency_ids))
         combined = title_tokens + body_tokens
         document_frequency.update(set(combined))
         rows.append({
             "claim_id": claim_id,
+            "branch": claim.get("branch"),
             "title": title,
             "statement": statement,
             "exact_result": exact_result,
@@ -148,6 +152,7 @@ def rank(observation: str, claims: list[dict[str, object]], frequency: dict[str,
         score = weighted + 2 * title_bonus
         candidates.append({
             "claim_id": claim["claim_id"],
+            "branch": claim["branch"],
             "title": claim["title"],
             "score": score,
             "query_token_coverage": f"{sum(query[token] for token in common)}/{sum(query.values())}",
@@ -182,7 +187,7 @@ def main() -> None:
         })
     open_entries = [row for row in entries if not row["current_same_strength_closed"]]
     payload = {
-        "schema": "sft-v3-physics-prior-receipt-reconciliation-candidates/1",
+        "schema": "sft-v3-physics-prior-receipt-reconciliation-candidates/2",
         "status": "audit_candidates_only_non_admitting",
         "policy": {
             "live_receipts_are_authoritative": True,
@@ -190,13 +195,15 @@ def main() -> None:
             "candidate_rank_does_not_close_obligation": True,
             "manual_same_strength_review_required": True,
             "new_derivation_forbidden_until_absence_confirmed": True,
+            "cross_branch_receipts_may_discharge_physics_obligations": True,
         },
         "inputs": {
             "obligation_ledger": str(LEDGER.relative_to(ROOT)),
             "obligation_ledger_hash": file_hash(LEDGER),
             "claim_census": str(CENSUS.relative_to(ROOT)),
             "claim_census_hash": file_hash(CENSUS),
-            "admitted_physics_claim_count": len(claims),
+            "admitted_all_branch_claim_count": len(claims),
+            "admitted_claim_count_by_branch": dict(sorted(Counter(str(row["branch"]) for row in claims).items())),
         },
         "summary": {
             "physics_obligation_count": len(entries),

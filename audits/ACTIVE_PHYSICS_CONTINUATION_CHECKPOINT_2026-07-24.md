@@ -280,16 +280,39 @@ behind-prediction claim and must preserve this receipt.
     `audits/physics_prior_receipt_reconciliation_candidates.json` by
     `tools/build_physics_receipt_reconciliation.py`.
 
-The index binds all 498 Physics-owned prior obligations to all 253 admitted
-Physics registrations, certificates and engine receipts. All 405 nominally open
-rows have candidate evidence, proving that an empty manual override was not
-evidence of an absent derivation. Candidate ranking is deliberately
-non-admitting: each row still requires same-strength review. The atomic review
-now records the formal/empirical boundary separately. Three V2 atomic rows are
-formally closed but await post-seal comparison; nine additional V1/V2 rows are
-explicitly recorded as partial or requiring a versioned successor. This
+The index binds all 498 Physics-owned prior obligations to all 611 admitted
+registrations, certificates and engine receipts across every branch. Restricting
+candidate search to the 253 Physics claims was incorrect: a Physics-owned prior
+observation may already be discharged by a mathematical theorem or by the
+categorically correct Chemistry/Materials claim plus its Physics dependencies.
+All nominally open rows have candidate evidence, proving that an empty manual
+override was not evidence of an absent derivation. Candidate ranking is
+deliberately non-admitting: each row still requires same-strength review. The
+atomic review records the formal/empirical boundary separately. Three V2 atomic
+rows are formally closed but await post-seal comparison; additional V1/V2 rows
+are explicitly recorded as partial or requiring a versioned successor. This
 distinction is the restart boundary: do not regenerate a formally closed result
 when only its empirical claim remains.
+
+22. The first cross-branch nuclear/particle reconciliation pass is durable:
+    - seven previously nominally open rows are now mapped to exact admitted
+      receipts, raising same-strength closure from 93 to 100;
+    - V1 Phase V nuclear-shell closure is mapped to the depth-independent
+      nuclear recurrence, IAEA comparison and spin carrier;
+    - V2 element filling/Smithium/endpoint is mapped to the categorically
+      correct Chemistry receipts rather than rederived in Physics;
+    - V2 prime-sector force criterion, penta/hepta singlets and mixing,
+      cross-sector mass shares and finite inventory boundary are mapped to the
+      already sealed sector inventory and its exact dependencies;
+    - thirty reviewed rows now name their precise missing formal or empirical
+      boundary, including nucleon binding, Regge trajectories, residual nuclear
+      range, binding-curve maximum, decay, fission/fusion, deuteron exclusion,
+      Higgs terminal precision, Smithion spectra and flavour-violation weights.
+
+The current ledger is 100 same-strength closed and 398 open, of which thirty
+have completed same-strength review and a precise successor/comparison boundary.
+These counts supersede the earlier 93/405 snapshot. They are mapping progress,
+not a claim that the remaining 385 unreviewed rows are absent derivations.
 
 ## Active group
 
@@ -313,7 +336,8 @@ After the relativistic/field group, continue without restarting:
    optical/acoustic spectra at their correct Physics/Materials boundaries.
 3. Universal physical cosmology relations and the explicit Astronomy/Cosmology
    ownership handoff.
-4. Complete 763-entry Physics-specific V1/V2 atomic-obligation ledger, focused
+4. Complete the 498-entry Physics-owned ledger within the fully reviewed
+   763-entry V1/V2 source surface, focused
    branch gate, paper rewrite, proofread and publication update.
 
 ## Publication status

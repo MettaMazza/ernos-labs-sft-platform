@@ -114,6 +114,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "III-5": ("SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004",),
     "III-6": ("SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004", "SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003", "SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001"),
     "III-8": ("SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",),
+    "V-5": ("SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001", "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001", "SFT-PHYS-QUANTUM-SPIN-001"),
 }
 
 
@@ -195,6 +196,12 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     62: ("SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004",),
     96: ("SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004", "SFT-PHYS-VACUUM-ODD-RECURRENCE-003"),
     142: ("SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",),
+    239: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-MATTER-CONFINEMENT-LIFT-003"),
+    267: ("SFT-CHEM-PRED-G-BLOCK-001", "SFT-CHEM-PRED-SMITHIUM-001", "SFT-CHEM-PRED-PERIODIC-ENDPOINT-001"),
+    270: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-MATTER-COMPOSITE-HADRONS-001"),
+    272: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",),
+    276: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",),
+    292: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003", "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001", "SFT-CHEM-PRED-PERIODIC-ENDPOINT-001", "SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002"),
 }
 
 
@@ -237,6 +244,41 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "empirical_boundary_status": "required_open",
         "remaining_work": "The electronic half and molecular quarter hierarchy is sealed. J(J+1), adjacent 2J spacing, oscillator/anharmonic ladder, isotope transport and NIST comparison remain.",
     },
+    "V-1": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Three-constituent colour closure, confinement and exact quark carriers are sealed. A versioned nucleon composition law must close the binding-dominant mass ledger, neutron/proton ordering and authoritative mass-energy comparison.",
+    },
+    "V-2": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The exhaustive meson/baryon singlet classification is sealed. Flavour multiplet organization, the depth-independent linear Regge law and a complete measured trajectory comparison remain.",
+    },
+    "V-3": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Nuclear binding, confinement and massive/massless interaction classes are sealed. The residual colour-neutral interaction, inverse-mediator range ordering and post-seal nucleon-force range comparison remain.",
+    },
+    "V-4": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Generic nuclear binding and Coulomb competition are sealed. The exact bulk/surface/Coulomb/asymmetry/pairing ledger, forced interior maximum and authoritative iron/nickel binding-curve comparison remain.",
+    },
+    "V-6": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Radioactive transition support, tunnelling and weak/nuclear channels are sealed. Exhaustive alpha/beta/gamma classification, rational half-life successor and authoritative decay-mode/lifetime comparison remain.",
+    },
+    "V-7": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Fission/fusion channel conservation is sealed. The exact binding-gain direction, barrier thresholds, relative yield law and measured energy comparison remain.",
+    },
+    "V-8": {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Spin and exclusion are sealed. The deuteron triplet binding discriminator, diproton/dineutron exclusion and authoritative spin/binding comparison remain.",
+    },
 }
 
 
@@ -266,13 +308,83 @@ REVIEWED_OPEN_V2: dict[int, dict[str, str]] = {
         "empirical_boundary_status": "required_open",
         "remaining_work": "The electronic half, molecular quarter and two-quarter recomposition are sealed; execute the post-seal NIST spectral-class comparison.",
     },
+    240: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Electroweak partition and free-phase dispersion are sealed. The preserved/broken-channel mass discriminator and finite-range comparison remain.",
+    },
+    241: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Free exact phase composition and the colour sector are sealed. Their explicit massless, luminal and dispersion-free gluon correspondence still requires a versioned claim and PDG comparison boundary.",
+    },
+    243: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The common prime-sector coupling and running family is sealed. The complete generator-indexed mixing/mass/running cross-lock table and its independent anchors remain.",
+    },
+    246: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The depth-five/depth-seven quark invariants are sealed. Their depth-independent colour/binary dual identity and independent orbit-floor reconstruction remain.",
+    },
+    250: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The depth-independent mass-ratio family is sealed. The exact subtraction-reach/longevity identity and lifetime comparison remain.",
+    },
+    251: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Two magnetic orientations are sealed. Symmetric doublet displacement about the retained mean, field-off recomposition and measured splitting remain.",
+    },
+    255: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Exclusion and horizon chains are sealed separately. The two-family compact-object endpoint census and mass-limit comparison remain.",
+    },
+    271: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The penta/hepta neutral-singlet inventory and exact dark/baryon ratio are sealed. The stable-lightest-relic discriminator and exact Omega_dm h^2 transport from the registered baryon-density interval remain.",
+    },
+    274: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Every named constant has an admitted exact receipt. The single generator-covariant dependency web, c-to-successor unfavorable perturbation and all-value reconciliation certificate remain.",
+    },
+    287: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The half/quarter/eighth leading Higgs hierarchy is retained as an observational leading form. A zero-parameter terminal successor must close the Higgs mass and self-coupling at the complete authoritative intervals.",
+    },
+    290: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Confinement and angular-momentum carriers are sealed. Equal mass-squared spin increments, depth ceiling and a complete Regge trajectory comparison remain.",
+    },
+    296: {
+        "formal_same_strength_status": "partial",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Penta/hepta sectors, mediator counts and the prime-eleven falsifier are sealed. Electromagnetic-neutrality, direct-recoil exclusion and collider/cosmological signature routing remain.",
+    },
+    297: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "The quark cubics and complete twelve-Smithion inventory are sealed. Four penta/hepta three-root cubics, exhaustive rational isolation, mass-ratio spectra and their standing prediction record remain.",
+    },
+    299: {
+        "formal_same_strength_status": "versioned_successor_required",
+        "empirical_boundary_status": "required_open",
+        "remaining_work": "Generation mass sites and the sector running family are sealed. The complete 3:5:20 flavour-violation weight table, tau-channel four-to-one discriminator and beta-slope cross-lock remain.",
+    },
 }
 
 
 RECENTLY_VERIFIED_V1 = {
     "G13", "G12", "XVIII-6", "M32", "N4b", "M27", "M28", "M29",
     "M30", "M31", "M15", "M16", "M17", "M18", "M20", "M21", "M22",
-    "N8b", "G11", "N1e", "VIII-12",
+    "N8b", "G11", "N1e", "VIII-12", "V-5",
 }
 
 
@@ -281,7 +393,7 @@ RECENTLY_VERIFIED_V2 = {
     36, 43, 44, 45, 59, 68, 69, 79, 95, 97, 101, 105, 119, 125, 127, 130,
     134, 135, 136, 149, 151, 161, 171, 174, 179, 187, 194, 195, 200, 201,
     210, 215, 220, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235,
-    236, 245, 266, 268, 269, 273, 275, 293, 298, 302,
+    236, 239, 245, 266, 267, 268, 269, 270, 272, 273, 275, 276, 292, 293, 298, 302,
 }
 
 
