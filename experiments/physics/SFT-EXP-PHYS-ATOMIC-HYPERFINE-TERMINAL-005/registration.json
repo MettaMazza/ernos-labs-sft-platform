@@ -1,0 +1,153 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed aggregate or component snapshot is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:2e3a022272c607439a835f99cff46a08637f2fc5ff32408a57994d453cc0d098"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1660817704753cfd689a7f9a4513cab4b3f40a53f5c58329d3610cc905dffd84",
+      "role": "development_only",
+      "source_id": "ATOMIC-PRECISION-SUCCESSOR-NIST-2022-2026"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Authoritative NIST snapshots are hash-bound in sha256:1660817704753cfd689a7f9a4513cab4b3f40a53f5c58329d3610cc905dffd84; observation informed law formation, while the execution surface cannot access the Rydberg carrier or comparison target before sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-formal-survivor-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered exact comparison passes and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:9aa2158245ee182558903e4e1d59191aa2cc4209d85a80624768164eb2a587e3",
+    "evaluator_id": "SFT-EXP-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "The sealed hyperfine prediction fails its complete registered interval decision, a source or uncertainty changes, a target becomes readable before sealing, a measured value selects the formal survivor, observational provenance is hidden, or a predecessor receipt is erased.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Verify every source hash, translate the immutable exact dimensionless relation with the registered Rydberg carrier, retain every interval endpoint and compare after seal release.",
+        "metric_id": "exact-rational-post-seal-correspondence",
+        "unit_protocol": "External hertz inscriptions remain source records; only exact positive rational arithmetic enters the evaluator."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ATOMIC-HYPERFINE-TERMINAL-005",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-RYDBERG-FREQUENCY",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, 2022 CODATA least-squares adjustment",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:4d7e7f34b98ab2fc4df68b38247f818f6fc8bdf7f25f91abcdfbc329e22d2f32",
+      "source_id": "NIST-CODATA-2022-HYDROGEN-TRANSITION-INPUTS",
+      "source_uri": "https://doi.org/10.1063/5.0279860"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Atomic Spectroscopy Compendium",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:33d048a7f7a8d83e5c2b0b96e442b495cf23b888ad1386d7205b17930af9f152",
+      "source_id": "NIST-ATOMIC-SPECTROSCOPY-HYDROGEN-HYPERFINE",
+      "source_uri": "https://physics.nist.gov/Pubs/AtSpec/node03.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal terminal hydrogen hyperfine comparison product.",
+    "dependency_hashes": [
+      "sha256:6995b8247518f00b38edcfc57429610ef7aaf273abd620c5bb397f3cbe2dc44d",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered NIST hyperfine target, exact Rydberg carrier and uncertainties, immutable predecessor receipts, custody disclosure and sealed target-inaccessible Fold prediction.",
+    "relation_hash": "sha256:5f8671428ab9ad11bdc7464e80a808148b9e4b7b29fd32bf3b5aa1bd78be8bdb",
+    "statement": "The sealed terminal hyperfine dimensionless carrier passes the complete registered NIST comparison: inside the NIST 21-cm interval at the central Rydberg carrier, while the complete propagated carrier interval overlaps it.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:aff8c2eb6a5c7b7f92e4948aa8cb5ac675fc94f775e86f63e0be53596281e99d",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:882d59a47e393ef78c0162defb111f4dcba0f615d63265a63a0fa9471137380e",
+    "program_id": "SFT-EXP-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:d6bec7ec020758dbeba39328b79471ff743b2f7d4543614eaca745f7bad2ff25",
+    "experiments/external_sources/physics/snapshots/atomic-precision-successor-source-record.json": "sha256:1660817704753cfd689a7f9a4513cab4b3f40a53f5c58329d3610cc905dffd84",
+    "experiments/external_sources/physics/snapshots/nist-atomic-states-hyperfine.html": "sha256:33d048a7f7a8d83e5c2b0b96e442b495cf23b888ad1386d7205b17930af9f152",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-adjustment.pdf": "sha256:4d7e7f34b98ab2fc4df68b38247f818f6fc8bdf7f25f91abcdfbc329e22d2f32",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered source, target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "ATOMIC-PRECISION-SUCCESSOR-NIST-2022-2026",
+      "target_id": "NIST-ATOMIC-HYPERFINE-COMPLETE"
+    }
+  ]
+}

@@ -478,3 +478,44 @@ No successor work recorded in this checkpoint has been pushed or published.
 Physics remains open and the existing Physics DOI must not be versioned until
 every Physics-owned obligation is closed or explicitly retained as a formally
 closed prediction with its empirical status stated exactly.
+
+28. The first atomic-precision terminal successor group is admitted and must
+    not be regenerated:
+    - `SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005`, engine receipt
+      `sha256:38fa8fa2ffbfa3733e9ab90ca7a052699c265c5e844e896a570c8edf1ec5afe3`,
+      derivation seal
+      `sha256:c73ab2b2ba64c77e09ce5a0fcfaea8fb09d291c7bf73fef2f7bb1d0af2705eee`,
+      measurement receipt
+      `sha256:c7a9435997ecde43fa7922c31846d62b8fc13d938b98c9ff8f033af4cef0270b`;
+    - `SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005`, engine receipt
+      `sha256:0ec7036e95a98f142a5ea57b49652d1de66df06d7cdf6c3b82f27156c4f0d61a`,
+      derivation seal
+      `sha256:e114171fc3f831c5ea7dfd7dc0a7df9529851fbbacad580db4fc88be01da5e67`,
+      measurement receipt
+      `sha256:171398126f1b83d81a1415382aa5d3bb23a4ea14236cbca34ca281a279bfd870`;
+    - `SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005`, engine receipt
+      `sha256:e65c383f1e1a6d48979d425f14ca83e9e906f3b60acb757e8df8a57ffa7994c1`,
+      derivation seal
+      `sha256:c9e3c0d7a5fe75c9caf18c7f7b8e63af09c9d01178fdb2ea01104ae4631314eb`,
+      measurement receipt
+      `sha256:044625ccc092b2bfdf2d068c7e9628301fcf2edbd428feb10f524e6e7cb8c704`.
+
+The frozen exact relations use the already admitted exact fine-structure value
+`3676744786/503846395469`.  Only after sealing were they translated through the
+NIST Rydberg-frequency interval.  The Lamb result gives
+`1057829506.9728574` to `1057829506.9751725 Hz` against the independently
+released NIST interval `1057826600` to `1057833000 Hz`; the fine-structure
+result gives `10969030057.99312` to `10969030058.017126 Hz` against the direct
+experimental NIST component sum centred at `10969029800 Hz` with conservative
+`15200 Hz` uncertainty; and the hyperfine result gives
+`1420405751.7651527` to `1420405751.7682617 Hz` against the NIST interval
+`1420405751.7657` to `1420405751.7677 Hz`.  The executable laws contain none of
+those released targets.  Their observational reconstruction provenance and
+the target-inaccessible execution boundary remain disclosed in the claim
+packages and source record.
+
+The focused successor test was run once and passed (`5 passed`).  The live
+inheritance ledger is now 304 same-strength closed and 194 open, with 57 mapped
+open and 137 unmapped open.  This count supersedes section 27.  The next new
+derivation is the molecular-spectroscopy terminal successor for V1 III-8 and
+V2 Step 142; this atomic-precision group must be committed, not rerun.

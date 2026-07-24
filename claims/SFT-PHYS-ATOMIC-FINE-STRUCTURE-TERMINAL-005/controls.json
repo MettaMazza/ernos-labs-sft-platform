@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:52114f33baac8e07ce48b362d3450a166fa9b9f2661d8d382d1317f030307cd0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1f4c4918b3bd51f788556dc51a642b4161904c00ff654b372eb08d865370b1e2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d410f54f1e07cbaf9ee72d9f2aa92867b594ae7220072d907ac1fcbc80dc09c0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:cc6c5bd8fad1123f2f152f19a6666bc86a4f7e762d5e5d25efa2d7de76a04158"
+    }
+  ]
+}

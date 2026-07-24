@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:202da18f8c49f533508fc653fbd7cad2bd05424edaa99ff240adbe31ce40f668"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a6d64ac4f3238ccffd8cbe848a37e2aafcb54971e6474f6b5abe197e33be3f3e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3a81cc4622e0b65e6bfd33dfb8f0e48079cca52a501b97613c36f5543db23665"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:917b749628833a2b10ab79c97c7ef007b7dd9a6c57697a248c4e079d9abed7f9"
+    }
+  ]
+}
