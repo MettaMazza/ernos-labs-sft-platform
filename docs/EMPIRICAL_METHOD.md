@@ -9,16 +9,21 @@ Four evidence objects remain distinct:
 
 1. mathematical proof;
 2. computational proof by construction;
-3. blind prediction; and
+3. capability-closed prediction, including empirical behind-prediction from
+   disclosed observational data; and
 4. post-seal empirical measurement.
 
 ## Required protocol
 
 ### Development observation
 
-State exactly which observations exposed the phenomenon or material relation.
-Store their provenance. A relation derived from observation is labelled
-`observational_derivation`, not direct forcing.
+State exactly which observations exposed the phenomenon or material relation
+and store their provenance. Observation is legitimate scientific input to the
+formation of an explicit candidate law. When that law is subsequently executed
+behind the target capability boundary, its result is an empirical prediction
+under this protocol. Its provenance is labelled `observational_derivation` so
+the route is transparent; that label does not demote it to fitting or deny its
+status as a prediction.
 
 Earlier V1/V2 SFT derivations are also observations for reconstruction. Their
 questions, reported results, exact values, domains and falsifiers are registered
@@ -27,10 +32,15 @@ answer a V3 premise: the executable V3 derivation must be structurally unable
 to consume the answer-bearing artifact, and the registered comparison occurs
 only after the independent V3 result seals.
 
-Two empirical protocols must not be conflated. A genuinely new prediction uses
-a withheld target. A reconstruction of a published SFT result cannot claim
-human blindness to that result; it demonstrates independence through dependency
-isolation, complete enumeration, controls and separate certification.
+The protocol distinguishes human observational knowledge from executable target
+access. A prospective prediction may withhold a target from both researcher and
+engine. An empirical behind-prediction may begin from disclosed observational
+data already known to the researcher, then place the comparison target behind
+the engine boundary. Both are predictions. Their blindness claims differ and
+must be stated exactly: the latter claims target-inaccessible execution, not
+human ignorance. Independence is demonstrated through dependency isolation,
+complete enumeration, unique selection, controls, sealing and separate
+certification.
 
 ### Explicit relation
 
@@ -52,9 +62,10 @@ Before prediction, register:
 
 ### Target-inaccessible execution
 
-The prediction runtime must be structurally incapable of reading targets,
-comparison scores or post-seal measurements. Discipline or an agent promise is
-not an access control.
+After the observational law-formation stage freezes the explicit relation and
+candidate grammar, the prediction runtime must be structurally incapable of
+reading targets, comparison scores or post-seal measurements. Discipline or an
+agent promise is not an access control.
 
 V3 uses one portable capability policy on macOS, Windows and Linux. The
 prediction language contains no filesystem, network, subprocess, clock,
@@ -95,8 +106,11 @@ Accordingly:
 - its observations support a performance claim within the tested domain; but
 - its accuracy alone cannot close an unstated fundamental law.
 
-SFT law claims require blind prediction plus transparent derivation,
-construction, sealing, measurement and falsification.
+SFT law claims require capability-closed prediction plus transparent
+derivation, construction, sealing, measurement and falsification. For an
+observational derivation, the receipt must additionally disclose the
+observations used to formulate the law and prove that the execution could not
+consume the comparison target.
 
 ## Minimum empirical receipt
 

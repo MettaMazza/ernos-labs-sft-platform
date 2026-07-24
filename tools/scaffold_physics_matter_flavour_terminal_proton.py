@@ -57,9 +57,10 @@ def main() -> None:
 {SPEC.statement}
 
 The earlier non-overlap is retained permanently. This successor uses the
-observational-derivation empirical prediction protocol: observation informs an
-explicit candidate law, the target is then inaccessible to execution, the
-engine seals the unique generated consequence, and comparison occurs afterward.
+empirical behind-prediction protocol based on disclosed observational data:
+observation informs an explicit candidate law, the frozen target is then
+inaccessible to execution, the engine seals the unique generated consequence,
+and comparison occurs afterward.
 
 ## DERIVATION
 

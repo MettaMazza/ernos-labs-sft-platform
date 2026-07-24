@@ -291,6 +291,8 @@ def main() -> None:
             "prior_results_are_observational_reconstruction_requirements": True,
             "prior_executable_answers_are_not_derivational_inputs": True,
             "observational_derivation_is_an_empirical_prediction_protocol": True,
+            "observational_data_legitimately_informs_law_formation": True,
+            "engine_blindness_is_distinct_from_human_ignorance": True,
             "target_is_capability_closed_during_prediction_execution": True,
             "measured_values_do_not_select_formal_survivors": True,
             "same_strength_or_stronger_v3_reconstruction_required": True,
@@ -300,7 +302,7 @@ def main() -> None:
             "physical_branch_has_natural_measured_values": True,
             "required_external_validation": "complete authoritative value, unit, uncertainty, source identity and falsifier released only after the target-inaccessible derivation seal",
             "allowed_prediction_provenance": ["forward_forcing", "observational_derivation"],
-            "observational_protocol": "observation informs an explicit law; target is placed behind the capability boundary; exhaustive target-inaccessible execution uniquely seals the exact prediction; target is released afterward for comparison",
+            "observational_protocol": "empirical behind-prediction based on disclosed observational data: observation informs an explicit law; the frozen target is placed behind the capability boundary; exhaustive target-inaccessible execution uniquely seals the exact prediction; target is released afterward for comparison",
         },
         "reviewed_source_surface": {
             "v1_total_rows": v1["source_row_count"],

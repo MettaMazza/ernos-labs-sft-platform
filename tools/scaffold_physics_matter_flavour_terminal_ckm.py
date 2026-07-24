@@ -59,9 +59,10 @@ def main() -> None:
 {item.statement}
 
 The earlier adverse comparison is preserved permanently. This separately
-versioned successor is an observational derivation: the target was already
-known during development, but no measurement occurs in the executable relation
-and no target value may select the generated survivor.
+versioned successor uses the empirical behind-prediction protocol based on
+disclosed observational data. Observation informed the explicit law-formation
+stage; the frozen execution cannot read the comparison target, and no target
+value may select the generated survivor.
 
 ## DERIVATION
 
@@ -85,8 +86,9 @@ Exact result: {item.exact_result}
 
 The engine regenerates every form, retains one survivor, runs four hostile
 controls, requires an implementation-distinct exact reconstruction, seals the
-formal prediction and only then releases every registered external row. The
-post-seal comparison does not convert this into a blind forward discovery.
+formal prediction and only then releases every registered external row. This is
+a capability-closed empirical prediction with disclosed observational
+provenance.
 
 ## EXCLUSIONS
 
