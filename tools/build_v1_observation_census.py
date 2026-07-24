@@ -34,6 +34,7 @@ EXPLICIT_MAPPINGS: dict[str, tuple[str, ...]] = {
     ),
     "N8b": ("SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",),
     "G11": ("SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",),
+    "N1e": ("SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",),
 }
 
 
@@ -52,6 +53,11 @@ CLOSED_DISPOSITIONS: dict[str, dict[str, object]] = {
         "status": "closed_by_observational_reconstruction_and_joint_empirical_admission",
         "closed": True,
         "receipt_hash": "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
+    },
+    "N1e": {
+        "status": "closed_by_absence_valued_observational_reconstruction_and_empirical_admission",
+        "closed": True,
+        "receipt_hash": "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
     },
 }
 

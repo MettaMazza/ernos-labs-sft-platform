@@ -31,7 +31,7 @@ prior-observation accountability.
   `1539c1a4cc576ed9a167e1225534788a24737fcb10f53e9c10370dfd7c82d3f6`.
 - V2 OneFoldMaster: 407 numbered results, SHA-256
   `42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf`.
-- Current V3 Physics claim packages: 158.
+- Current V3 Physics claim packages: 159.
 - Published Physics paper inventory: 132 required plus 8 supplemental claims.
 
 The complete source-row censuses are
@@ -58,14 +58,15 @@ in Chemistry.
 
 ### PVA-02 — published Physics inventory is behind the live corpus
 
-The Physics v1 paper covers 140 claims. The live corpus now has 158. Eighteen
+The Physics v1 paper covers 140 claims. The live corpus now has 159. Nineteen
 post-publication admissions are generator three, stable three-space, boundary
 rank two, inverse-square dilution, the boundary-growth checker, inverse alpha,
 orbit-cell capacity, colour coupling, nuclear closures, atomic endpoint, and
 post-seal checks of inverse alpha, inverse-square response and nuclear closure,
 plus the exact charged-lepton cubic invariant law, its jointly empirical
 terminal self-coupling refinement, the exact Koide validation, the jointly
-admitted dark-to-baryon fraction and the Hubble calibration reconstruction.
+admitted dark-to-baryon fraction, the Hubble calibration reconstruction and
+the absence-valued spatial-flatness reconstruction.
 
 The v1 paper remains an immutable record of its declared inventory, but it is
 not the current complete Physics paper.
@@ -75,9 +76,9 @@ not the current complete Physics paper.
 Before this correction there was no complete V1/V2 claim-to-V3 map. The new
 V2 census registers all 407 steps. After importing the already executed direct
 correspondences from the Materials, Chemistry, Information, Computation and
-Quantum Computation evidence surfaces and the first new prior-value laws, 118 currently have an explicit
-claim-level disposition; 289 still block completion. The V1 census registers all 356
-manifest rows; eight now have explicit mappings and 348 remain unmapped.
+Quantum Computation evidence surfaces and the first new prior-value laws, 119 currently have an explicit
+claim-level disposition; 288 still block completion. The V1 census registers all 356
+manifest rows; nine now have explicit mappings and 347 remain unmapped.
 
 An unmapped row does not prove that its subject is absent from V3. It proves
 that branch completion cannot yet establish reproduction of the earlier result
@@ -217,11 +218,21 @@ This closes the exact ratio correspondence only. It does not yet force an
 absolute Hubble magnitude or empirically establish that the distinct CMB and
 distance-ladder routes share the proposed calibration mechanism.
 
+V2 Step 187 and V1 N1e are now jointly closed. Every finite complete exact
+positive component partition and every positive parent-preserving refinement
+was generated under an eleven-axis, 2,048-form grammar and leaves the empty
+One curvature remainder. The external Planck equation 47b record is held as a
+positive central orientation, central magnitude `7/10000` and uncertainty
+magnitude `19/10000`; the uncertainty reaches beyond the central magnitude, so
+the complete 68-percent interval contains structural absence. No numerical
+zero or negative SFT proof scalar is constructed. The joint receipt is
+`sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66`.
+
 ## Existing evidence boundary
 
 This audit does not erase or rewrite any engine receipt or published DOI. The
 140 Physics v1 claims remain admitted at their exact registered boundaries, and
-the eighteen later claims retain their own receipts. What is withdrawn is the
+the nineteen later claims retain their own receipts. What is withdrawn is the
 broader inference that those artifacts already constitute the complete current
 Physics branch.
 

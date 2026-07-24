@@ -27,10 +27,10 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertFalse(policy["prior_observation_may_select_v3_candidate_or_survivor"])
 
     def test_unmapped_steps_block_completion(self) -> None:
-        self.assertEqual(self.census["mapped_step_count"], 118)
-        self.assertEqual(self.census["unmapped_step_count"], 289)
-        self.assertEqual(self.census["same_strength_closed_step_count"], 4)
-        self.assertEqual(self.census["same_strength_open_step_count"], 403)
+        self.assertEqual(self.census["mapped_step_count"], 119)
+        self.assertEqual(self.census["unmapped_step_count"], 288)
+        self.assertEqual(self.census["same_strength_closed_step_count"], 5)
+        self.assertEqual(self.census["same_strength_open_step_count"], 402)
         self.assertGreater(self.census["unmapped_step_count"], 0)
         self.assertTrue(self.census["status"].startswith("open_blocking"))
 
@@ -82,6 +82,15 @@ class PriorObservationCensusTests(unittest.TestCase):
         self.assertEqual(
             row["same_strength_disposition"]["admitted_receipt_hash"],
             "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
+        )
+
+    def test_spatial_flatness_step_is_absence_valued_and_closed(self) -> None:
+        row = next(row for row in self.census["steps"] if row["step"] == 187)
+        self.assertEqual(row["explicit_v3_claim_ids"], ["SFT-PHYS-COSMO-SPATIAL-FLATNESS-001"])
+        self.assertTrue(row["same_strength_disposition"]["closed"])
+        self.assertEqual(
+            row["same_strength_disposition"]["admitted_receipt_hash"],
+            "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
         )
 
 

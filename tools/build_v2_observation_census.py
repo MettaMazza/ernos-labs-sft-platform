@@ -107,6 +107,7 @@ EXPLICIT_MAPPINGS: dict[int, tuple[str, ...]] = {
         "SFT-CHEM-STEREO-ENANTIOMER-001",
         "SFT-CHEM-STEREO-DIASTEREOMER-001",
     ),
+    187: ("SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",),
     193: (
         "SFT-MAT-MECH-STRESS-STRAIN-001",
         "SFT-MAT-MECH-ELASTICITY-001",
@@ -326,6 +327,18 @@ DISPOSITION_OVERRIDES: dict[int, dict[str, object]] = {
         ),
         "admitted_claim_id": "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",
         "admitted_receipt_hash": "sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9",
+    },
+    187: {
+        "status": "closed_by_absence_valued_observational_reconstruction_and_empirical_admission",
+        "closed": True,
+        "reason": (
+            "Complete exact positive partitions and every positive parent-preserving refinement were proven "
+            "to leave the empty One remainder. The absence result passed the complete Planck equation 47b "
+            "curvature interval using held orientation and positive magnitudes without a numerical-zero or "
+            "negative SFT proof scalar."
+        ),
+        "admitted_claim_id": "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+        "admitted_receipt_hash": "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
     },
 }
 

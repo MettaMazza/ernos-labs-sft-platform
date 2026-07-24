@@ -15,15 +15,15 @@ gravitation; continua and collective matter; and the Physics-to-Astronomy and
 Cosmology boundary.
 
 Those figures describe the immutable published v1 paper, not the current V3
-Physics corpus. Eighteen Physics claims were admitted afterward: generator
+Physics corpus. Nineteen Physics claims were admitted afterward: generator
 three; stable three-space; boundary rank two; inverse-square dilution; the
 source-boundary checker; inverse fine structure; orbit-cell capacity; colour
 coupling; nuclear closures; the atomic endpoint; and post-seal checks of inverse
 alpha, inverse-square response and nuclear closures, plus the exact
 charged-lepton cubic invariant law, its empirically admitted terminal
 refinement, the exact Koide validation, the jointly empirical dark-to-baryon
-fraction and the Hubble calibration reconstruction. The live Physics namespace
-therefore contains 158 admitted claims. The inverse-alpha derivation and CODATA
+fraction, the Hubble calibration reconstruction and absence-valued spatial
+flatness. The live Physics namespace therefore contains 159 admitted claims. The inverse-alpha derivation and CODATA
 check are categorically Physics results even though their first exhaustive
 paper treatment appeared downstream in the Chemistry paper.
 
@@ -56,6 +56,12 @@ admission run, closing V2 Step 8 and V1 G11. Its provenance is explicitly
 `observational_derivation`, and its admitted scope is the dimensionless ratio
 correspondence—not an absolute Hubble magnitude or proof that two different
 measurement routes share the proposed mechanism.
+The complete-partition flatness law separately proves that every finite exact
+positive component partition and every positive parent-preserving refinement
+leaves the empty One curvature remainder. It passed the complete Planck 2018
+equation 47b curvature interval using a held sign orientation and positive
+magnitudes, so numerical zero and negative proof values never enter SFT. This
+closes V2 Step 187 and V1 N1e at the registered Planck+BAO boundary.
 
 The v1 inventory is no longer eligible to be described as the current complete
 Physics branch. A successor paper is blocked until every V1/V2 physical value

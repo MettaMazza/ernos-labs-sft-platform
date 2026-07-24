@@ -20,8 +20,8 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
 
     def test_published_and_live_physics_surfaces_are_not_conflated(self) -> None:
         self.assertEqual(self.audit["published_physics_claim_count"], 140)
-        self.assertEqual(self.audit["current_physics_claim_count"], 158)
-        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 18)
+        self.assertEqual(self.audit["current_physics_claim_count"], 159)
+        self.assertEqual(len(self.audit["postpublication_physics_claim_ids"]), 19)
 
     def test_inverse_alpha_is_owned_by_physics_and_missing_from_v1_paper(self) -> None:
         alpha = self.audit["inverse_alpha"]
@@ -90,6 +90,17 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
         self.assertEqual(
             row["admission_receipt_hash"],
             "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
+        )
+
+    def test_spatial_flatness_uses_absence_and_complete_curvature_record(self) -> None:
+        row = self.audit["spatial_flatness"]
+        self.assertIn("empty One curvature remainder", row["exact_result"])
+        self.assertEqual(row["external_record"]["central_magnitude"], "7/10000")
+        self.assertEqual(row["external_record"]["uncertainty_magnitude"], "19/10000")
+        self.assertTrue(row["same_strength_prior_disposition_closed"])
+        self.assertEqual(
+            row["admission_receipt_hash"],
+            "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
         )
 
     def test_physics_successor_publication_gate_fails_closed(self) -> None:

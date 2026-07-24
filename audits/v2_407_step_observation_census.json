@@ -1,5 +1,5 @@
 {
-  "mapped_step_count": 118,
+  "mapped_step_count": 119,
   "policy": {
     "branch_completion_requires_every_assigned_step_closed": true,
     "prior_answer_artifacts_may_enter_v3_derivation": false,
@@ -7,8 +7,8 @@
     "prior_results_are_observational_data": true,
     "prior_results_define_reconstruction_obligations": true
   },
-  "same_strength_closed_step_count": 4,
-  "same_strength_open_step_count": 403,
+  "same_strength_closed_step_count": 5,
+  "same_strength_open_step_count": 402,
   "schema": "sft-v3-prior-observation-census/1",
   "source_id": "SFT-V2-ONE-FOLD-MASTER-407",
   "source_sha256": "sha256:42c4be709dcd9edcfbedc70ee82055a8660d9658de21758561fd46e068a727bf",
@@ -4165,8 +4165,10 @@
       "title": "Scale invariance (the limit speed at every scale)"
     },
     {
-      "explicit_mapping_status": "blocking_explicit_disposition_required",
-      "explicit_v3_claim_ids": [],
+      "explicit_mapping_status": "mapped_to_current_admitted_claims",
+      "explicit_v3_claim_ids": [
+        "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001"
+      ],
       "missing_mapped_claim_ids": [],
       "named_group_memberships": [
         "extreme_gravity_information_and_nonstandard_spacetime"
@@ -4175,9 +4177,11 @@
       "prior_result_observation": "The physical density parameters sum to a total that neither grows nor decays under expansion \u2014 the fold's fixed point, `\u03a9_total = 1`. The curvature share is the remainder `\u03a9_k = 1 \u2212 1`, which lands on the boundary the domain `(0,1]` forbids (No-Zero): there is no curvature to carry, so space is flat. Not fine-tuned \u2014 a curved universe would need the density budget to hold a piece at the one excluded value. Measured: Planck `|\u03a9_k| < 0.005`.",
       "recorded_check_lines": [],
       "same_strength_disposition": {
-        "closed": false,
-        "reason": "No complete same-strength V3 disposition is registered.",
-        "status": "blocking_explicit_disposition_required"
+        "admitted_claim_id": "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+        "admitted_receipt_hash": "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
+        "closed": true,
+        "reason": "Complete exact positive partitions and every positive parent-preserving refinement were proven to leave the empty One remainder. The absence result passed the complete Planck equation 47b curvature interval using held orientation and positive magnitudes without a numerical-zero or negative SFT proof scalar.",
+        "status": "closed_by_absence_valued_observational_reconstruction_and_empirical_admission"
       },
       "source_block_sha256": "sha256:c78e51c910f2d19840792e30eda6ef3162a64ed6c921e558c52f124695274a83",
       "step": 187,
@@ -8633,5 +8637,5 @@
       "title": "The unbounded finite quantum fault-tolerance law"
     }
   ],
-  "unmapped_step_count": 289
+  "unmapped_step_count": 288
 }

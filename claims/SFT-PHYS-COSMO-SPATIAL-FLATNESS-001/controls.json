@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:75dad868142a0a34a404a85fbbc39d70a82b419d49390835a6254659f37d5131"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:60473ebc3e3cbb47602a0b5657066aaa39dcd3f4c0307d694ae87c0f8693aee9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e9c4b946bca30d903b8e277776feb03fdf005094151fae375d33420348370c40"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9d589341c63a50dcfca228e1b99a4e320a5d1e2f33205b66b28254303d70cca0"
+    }
+  ]
+}
