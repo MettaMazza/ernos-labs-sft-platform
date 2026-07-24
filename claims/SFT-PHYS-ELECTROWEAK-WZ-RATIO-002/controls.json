@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ELECTROWEAK-WZ-RATIO-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8d6af386d5b72c4c47d3dd7a1848b4a0f3584f60af3b4ba7687e661525b1b8d3"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e9e31cfdeb7d97be8f51a2b49f90bf2e6a70416d3a0bb5cb2faf88a8963c40a9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:de0a2b689c020172a062678a5cc32c5150549f0c4cbace73a3a04fd533e488c3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bbcffeb66ed945c758a4f68eb1995ebefcc6a0f312fe32c5312d2ef8f86c48bc"
+    }
+  ]
+}

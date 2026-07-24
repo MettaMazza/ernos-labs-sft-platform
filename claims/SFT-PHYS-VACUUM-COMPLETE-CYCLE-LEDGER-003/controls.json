@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6c9a7d833b3b0110709bda928a42da2f53e18eedb4a33baa3e9381c747fc78c0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2bde9e9f906aaad134ebdb7a39a62da7fb987ba0ce794556b05363a2043a64ce"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:071b8351889521815841af93def5f161d15d6488e583a10c04adaa6d41bf3687"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:791700b22bce99bfb57c65e063896b88220dee949e16479c67f75d784e7d7d7a"
+    }
+  ]
+}

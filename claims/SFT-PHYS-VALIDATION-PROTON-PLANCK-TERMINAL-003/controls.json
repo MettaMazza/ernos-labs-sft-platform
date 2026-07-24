@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:be07260dbfa4233d3bb0d739bb40fe35fc81fcf348b89b6e3c5a64fd65bb16ae"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f6dd73cab024961b7b1eee64f41622e759af190152ebe18a140eec0a3c72a023"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b205d74a96169e83e09d899ab57901854b936696b5340728d0b647a56f8d9c4d"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:9c21f4d3ceece1acc073200621d0f0fb8b533c14bdac560ba6a229f4bfbc326c"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:7bd7c74304217234fef6ff08648317974648a26071821cbf9cbcb2e2eb295fd5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:69655e626f057180c9028f67846d4bd9e9b47e0898272bd1b4251aba71ad4462"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:68d67b360ce6aa76d71bad675c8c5ddb071bb7a8f955c58a2230b85102f7c3d6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8ee95740ea9bfb696e2ff420311da10309620d1e8c88218bbb19a138c0f556fe"
+    }
+  ]
+}

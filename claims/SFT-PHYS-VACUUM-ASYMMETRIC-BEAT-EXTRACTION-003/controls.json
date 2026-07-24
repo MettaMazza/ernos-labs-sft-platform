@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4bf356fe9c24fe022293f5a5ed5c1500682d3b164da201fa5959b89b18d8112b"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b6de76683aea01da6edd411b7e57d7d6a6eb1488190604c7ba3887150ea85ce3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:91bd04981098412ed0e07bda628244e221c20bc8043ffec95e8a4aacaec2e393"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d13dd0b618e4449e4f46631bd8b8e922aed44be2978f532e283bdfa191ffae7b"
+    }
+  ]
+}

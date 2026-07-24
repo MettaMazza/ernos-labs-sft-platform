@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e0da3f1ad608075f24dc7c22e1ba300efc4afff20b1c929fd22f6e086dbf2a91"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:cbde686fb626e90fb2ac7838288cdb76d00b198b78063864afb39ae17b18c57e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d9b17a089155cdab4895ea44b5ad732c09127140b3743d6da0f6912bfa2fed2c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e8e8c91307ad668750ead2ccc08f5eb36976d8c4801fa25ecdd7a5a5436a71f5"
+    }
+  ]
+}

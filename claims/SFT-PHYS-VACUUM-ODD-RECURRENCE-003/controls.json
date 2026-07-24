@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-ODD-RECURRENCE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d48480aab6d50f9557755c7cd1705cb0c395baafa0443759b305697e7b4ce0fb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:db203330f3989affb79b99144ea157d9253410c257c1baf9074eda9a4f70ed07"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:293da57c4fdb0fb1d60b3a401553b7b2f9e7f607dc420f506897370c1d7bdb5e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:2258042d5ee3201b476efeea0a71b013701220c514831e59652022498af9c254"
+    }
+  ]
+}

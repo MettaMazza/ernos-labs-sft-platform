@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c74885975149e72dfdd85c229f5f15e3e4eb5fcc064cdfd2f60cf02f6665a6f4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:889413928203edd23333b8faf1d7a0f2f4090f0e33e531a0c29597ba07f19b86"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:26db1a75752722428065c5f51f5f9aa1ca599c763fd30441907777416bb2ac84"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:59ece166f57582dfae45fd8c546c2003f4121b783ca55c8248b827d4ff10921b"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-VACUUM-FLOOR-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-FLOOR-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:f6b503deb15d21f2934c036c1530e978a94affdaf2a823cf2a99038fb12b753b"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "NIST, Particle Data Group and CNES MICROSCOPE collaboration snapshot sha256:327696985650aebaa20436e9da1d7f20f9bbff4205f9e7146ec8bd887535f3a9; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:e8029a61a1229333ceb79a16618b106c1591b20208575ed2ec984ae92323a95c",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-FLOOR-003-post-seal-evaluator",
+    "falsification_condition": "NIST ceases to report nonempty ground support or boundary-dependent vacuum interaction, a source hash changes, or the half-offset is falsely promoted from indirect evidence to a direct scalar measurement.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-FLOOR-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NIST, Particle Data Group and CNES MICROSCOPE collaboration",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:327696985650aebaa20436e9da1d7f20f9bbff4205f9e7146ec8bd887535f3a9",
+      "source_id": "VACUUM-LINEAGE-AUTHORITATIVE-2015-2026",
+      "source_uri": "https://www.nist.gov/news-events/news/2015/06/vacuum-fluctuations-measuring-unreal; https://www.nist.gov/news-events/news/2013/02/calculating-quantum-vacuum-forces-nanostructures; https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf; https://cnes.fr/en/projects/microscope"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal vacuum-floor comparison product.",
+    "dependency_hashes": [
+      "sha256:ebad41c8236570da65528cbb330f205e7869fa7bbdb2291778aab789cb60ccfa",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered NIST ground-state and Casimir row, including the direct-measurement boundary on the absolute half-spacing offset.",
+    "relation_hash": "sha256:c71f7ecd495e3202589c945aa369e9bae8c9a26663b90020752815bbfba35144",
+    "statement": "NIST confirms nonempty ground fluctuations and boundary-dependent vacuum force; the sealed half-One coefficient remains a formal structural value rather than a separately isolated measured scalar.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:4d3cbb776828f331fd6f4497262840253e35fee3fa6a1615827339fa0ddf4ea1",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-FLOOR-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:ac1dd7940203a570faa430de342667b68930a4193e26831b3c75694415536e73",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-FLOOR-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:3a9c4bf09480ea5497dd5dae51044fb6af840a586deafff36dc9a472a7347873",
+    "experiments/external_sources/physics/snapshots/vacuum-lineage-source-record.json": "sha256:327696985650aebaa20436e9da1d7f20f9bbff4205f9e7146ec8bd887535f3a9"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "VACUUM-LINEAGE-AUTHORITATIVE-2015-2026",
+      "target_id": "VACUUM-LINEAGE-FLOOR"
+    }
+  ]
+}

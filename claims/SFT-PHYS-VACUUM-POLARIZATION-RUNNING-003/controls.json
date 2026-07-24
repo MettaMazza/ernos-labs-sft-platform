@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3a155046e477a1c21adb3ffb90fd772408c346db409d0e172ccf39cfd5ab5327"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b663484e15866b5b05d67a3e40919d253ee0e0ca5163c05a4d15b4738a15ca84"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:955c2f7f51a571fe90a3bf935ab10fe474d19eb89bbdfd22931a16be42c18f83"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a21e93bb9aa177cdefd411a060c7ff1d0387205d46dc5c4172327f39666a4397"
+    }
+  ]
+}

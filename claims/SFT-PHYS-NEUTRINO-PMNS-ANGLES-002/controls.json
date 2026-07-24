@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NEUTRINO-PMNS-ANGLES-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d340934bee8714c7a750e6e93d98dc73a496991650cd02aa0d6c4877d1aff5c3"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1177452085ab8e621fe3c07979fd647400be7695804ef0e945889c5af6257c38"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b47a2bfe918a8458685fc8ed0439bb5f20ce2279ba54416ddbea536368569cfb"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:be4fc2aee75404b3370cc9878eb7e0da27e33d584bc0b1b7f6900f40858a2229"
+    }
+  ]
+}

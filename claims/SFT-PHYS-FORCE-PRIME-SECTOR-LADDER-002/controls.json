@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fbc7fcd8393f763160ba4311295df1fbd4295f929c9d213611653f1d6cb54176"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:50ef75f995e5860dc10d502e63938d55b5edd6299dbe42475bf436a7aa349fee"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:193ea72fce01861503ea08ada27034731dd469a147bcf39a6a2772f1232697e3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7402ed46812fea45fa5d719b332b54e32704288ceb51128c7ecfdd0d11a3eb46"
+    }
+  ]
+}

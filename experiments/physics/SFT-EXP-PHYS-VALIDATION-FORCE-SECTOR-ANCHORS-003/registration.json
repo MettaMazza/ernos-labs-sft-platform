@@ -1,0 +1,127 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:6efd9946c0e45aacbe35c1f13caeea80fccea522b05f8c0f7c233bdf4288cebc"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "Particle Data Group, Lawrence Berkeley National Laboratory snapshot sha256:bb37e82e9515ff526cbaad742167c16ac1960b7bfca32d8b39dd4384c73b7341; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:30f97ee3ce4c7c3924ded21197033bade4287e0fa3fb2790f69292736a236306",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-post-seal-evaluator",
+    "falsification_condition": "Any known count differs, a source identity changes, an unmeasured penta/hepta result is omitted or mislabelled as observed, or a tampered row is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group, Lawrence Berkeley National Laboratory",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:bb37e82e9515ff526cbaad742167c16ac1960b7bfca32d8b39dd4384c73b7341",
+      "source_id": "PDG-FORCE-SECTOR-ANCHORS-2025",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf and https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed sector carrier, common count relation, provenance, custody, separate record, complete anchors, successor closure and no-extra-rule forms.",
+    "dependency_hashes": [
+      "sha256:e21a011b8449e8641cfc45ea1e80fa4768cb928dc9ed18e142375e4c06d60223",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "Every registered known PDG anchor of the common sector formula, plus a mandatory boundary record preserving every presently unmeasured penta/hepta consequence.",
+    "relation_hash": "sha256:bf28705600b36d9a29c234ad85a8a1eef8f437630ed84162da9028b083ed4b28",
+    "statement": "The sealed common formula reproduces weak mediator count three, colour count three and gluon count eight; sector-five count twenty-four and sector-seven count forty-eight remain standing unmeasured predictions.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:878305dfa4fb3385650720cc7f481d8fef4ada3f4bf60bf7bb7cb5abf75b8af1",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:cc31349ac5e0b3c5a68cdd64327e8e32b78cec7a0f4b60ab38f70b252a43a003",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:fede6f87e077b6d699e57edf965e01ec41a5714fa7b75450158b952589d50870",
+    "experiments/external_sources/physics/snapshots/pdg-force-sector-anchor-record.json": "sha256:bb37e82e9515ff526cbaad742167c16ac1960b7bfca32d8b39dd4384c73b7341"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-FORCE-SECTOR-ANCHORS-2025",
+      "target_id": "PDG-FORCE-SECTOR-COMPLETE-ANCHOR-RECORD"
+    }
+  ]
+}

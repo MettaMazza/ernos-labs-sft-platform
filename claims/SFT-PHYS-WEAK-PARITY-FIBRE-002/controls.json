@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-WEAK-PARITY-FIBRE-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:542ff56ad805d9ccb73fd88585057f41fa166d015d115020abc575757988e7f4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:84020e1fd0a86146b16c09234542f86cccdba61dca53fb9cac0ed7f7253baaac"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d0b9d1f721ff2993580bb827eb317c677485a274083ae3949b75c092d32c2e09"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:94af8f923be880482a518d812a7665411c8af59256168a285fedeceb1814dc24"
+    }
+  ]
+}
