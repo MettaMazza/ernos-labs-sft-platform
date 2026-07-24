@@ -1,0 +1,39 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "quantum_computation",
+  "candidate_grammar": {
+    "boundary": "Every supplied positive finite Fold fault-order trace, its generated repetition widths in increasing order, every fault mask through that order by exact subset class, and composition with admitted finite Fold circuit semantics.",
+    "completeness_certificate": "sha256:64561c32af9d020a6344cf3c2b92a2a332ee102671e713ead0acfe8e10bdc58b",
+    "generator": "Generate the literal product of fault order, width, mask coverage, minimality, recovery, circuit composition, successor and no-extra-parameter coordinates."
+  },
+  "claim_id": "SFT-QUANTUM-UNBOUNDED-FINITE-FAULT-TOLERANCE-002",
+  "dependencies": [
+    "SFT-QUANTUM-ERROR-CORRECTION-001",
+    "SFT-QUANTUM-FAULT-TOLERANCE-001",
+    "SFT-QUANTUM-CIRCUIT-001",
+    "SFT-COMP-CPLX-ARBITRARY-CIRCUIT-LOWER-BOUND-002"
+  ],
+  "empirical_protocol": null,
+  "excluded_inputs": [
+    "no numerical zero, negative, irrational, imaginary or floating proof quantity",
+    "no complex amplitude, Hilbert-space axiom or stochastic collapse postulate",
+    "no completed infinite-width code or completed infinity",
+    "no measured error rate, hardware threshold, fitted noise model or device parameter",
+    "no application output or physical benchmark may select the code law"
+  ],
+  "intended_certificate": "Independent regeneration of the 256-member product, every small fault mask, all predecessor-width counterexamples and the positive-finite fault-order successor.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-24",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "For every supplied positive finite fault-order trace t, the unique first repetition width correcting every mask through t is 2t+1: at least t+1 source labels remain against at most t changes, every width through 2t has a constructive tie or wrong-majority counterexample, redundancy is exactly 2t, and the successor fault order adds exactly two labels. The corrected word composes with exact Fold circuit semantics. This is an unbounded finite fault-order theorem, not a stochastic hardware-rate or physical threshold constant.",
+  "status": "independently_replicated",
+  "title": "Unbounded finite Fold quantum fault-tolerance law"
+}

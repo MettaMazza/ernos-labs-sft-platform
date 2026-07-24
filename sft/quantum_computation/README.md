@@ -4,7 +4,7 @@ Reversible machines, quantum information units, composition, interference,
 entanglement, measurement, gates, circuits, algorithms, communication, coding,
 fault tolerance, simulation, verification, learning, correspondence and limits.
 
-The archived inventory contains 21 dependency-ordered claims and 5,376 generated
+The current inventory contains 22 dependency-ordered claims and 5,632 generated
 candidates. Every claim has exactly one survivor, depth-independent closure,
 four passing adverse controls and an implementation-distinct certificate.
 Multi-error recovery exhausts all registered masks through widths three, five

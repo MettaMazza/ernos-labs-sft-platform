@@ -1570,10 +1570,15 @@ laws over 29,696 generated candidates. [Classical Computation Branch Paper 001 v
 is the current exhaustive account, with its [rendered PDF](output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf)
 and successor-version DOI [`10.5281/zenodo.21536437`](https://doi.org/10.5281/zenodo.21536437).
 
-The next dependency-ordered branch is Reversible and Quantum Computation. It
-must complete its own 763-entry categorical-owner and same-strength
-reconstruction before its existing Paper 001 receives a successor version
-patch.
+Reversible and Quantum Computation is now reconstructed at current registered
+V1/V2 strength: 29 of 29 owned atomic obligations are closed by 22
+model-admitted laws over 5,632 generated candidates. [Quantum Computation Branch Paper 001 version 1.1](publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md)
+is the current exhaustive account, with its [rendered PDF](output/pdf/the-quantum-fold-machine-branch-paper-001.pdf)
+and successor-version DOI [`10.5281/zenodo.21536581`](https://doi.org/10.5281/zenodo.21536581).
+
+The next dependency-ordered branch is Physics. It must complete its own
+763-entry categorical-owner, measured-value and same-strength reconstruction
+before its existing Paper 001 receives a successor version patch.
 
 ## Data and code availability
 

@@ -47,11 +47,11 @@ the current successor account once its version deposit is synchronized.
 
 ## Phase D - information and computation
 
-Status: Information Science and Classical Computation are reconstructed at
-current registered V1/V2 strength. Classical Computation closes 134 of 134
-owned atomic obligations through 116 admitted laws and 29,696 generated
-candidates. Reversible and Quantum Computation is the next active owner and
-same-strength reconstruction branch.
+Status: Information Science, Classical Computation, and Reversible and Quantum
+Computation are reconstructed at current registered V1/V2 strength. Quantum
+Computation closes 29 of 29 owned atomic obligations through 22 admitted laws
+and 5,632 generated candidates. Physics is the next active owner, measured-value
+and same-strength reconstruction branch.
 
 - [x] Information science: twelve model-admitted, depth-independently closed and
   independently replicated claims; frozen inventory; standalone paper and
@@ -68,14 +68,11 @@ same-strength reconstruction branch.
 - [x] Scientific computation.
 - [x] Reversible and quantum computation.
 
-The current Classical Computation inventory contains 116 admitted claims
-and 29,696 generated candidates; Paper 001 version 1.1 is reserved in the
-existing concept chain at DOI `10.5281/zenodo.21536437`. The Reversible and Quantum Computation
-archived inventory contains 21 admitted claims and 5,376 generated
-candidates. Their separate exhaustive papers and evidence releases are
-preserved at DOI `10.5281/zenodo.21518311` and DOI
-`10.5281/zenodo.21518313`, respectively; the former is superseded by the
-current Classical Computation version above.
+The current Classical Computation inventory contains 116 admitted claims and
+29,696 generated candidates at DOI `10.5281/zenodo.21536437`. The current
+Reversible and Quantum Computation inventory contains 22 admitted claims and
+5,632 generated candidates; Paper 001 version 1.1 is reserved in the existing
+concept chain at DOI `10.5281/zenodo.21536581`.
 
 ## Phase E - physical sciences
 

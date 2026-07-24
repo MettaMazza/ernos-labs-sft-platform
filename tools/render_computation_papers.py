@@ -101,7 +101,7 @@ def main() -> None:
         "SMITHIAN FOLD THEORY - REVERSIBLE AND QUANTUM COMPUTATION BRANCH PAPER 001",
         "THE QUANTUM FOLD MACHINE - ERNOS LABS QUANTUM COMPUTATION PAPER 001",
         "Completed Smithian Fold Theory Reversible and Quantum Computation branch",
-        "Third clean-room reconstruction - Quantum Computation inventory complete<br/>21 admitted derivations - 5,376 generated candidates",
+        "Third clean-room reconstruction - Quantum Computation inventory complete<br/>22 admitted derivations - 5,632 generated candidates",
     )
 
 

@@ -1,15 +1,15 @@
 """Unit and integration checks for Reversible and Quantum Computation."""
 from __future__ import annotations
 import unittest
-from sft.quantum_computation.catalog import SPECS, validate_catalog
+from sft.quantum_computation.current_catalog import SPECS, validate_catalog
 from sft.quantum_computation.generated_law import GeneratedQuantumProgram, candidate_records, survivor_id
 from sft.quantum_computation.operations import FoldQuantumState, ReversibleGate, apply_gate, complete_support, exhaustive_fault_census, is_factorable, observe, repetition_encode
 
 class QuantumCatalogTests(unittest.TestCase):
     def test_catalog_is_complete_unique_and_ordered(self) -> None:
         validate_catalog()
-        self.assertEqual(len(SPECS), 21)
-        self.assertEqual(len({spec.claim_id for spec in SPECS}), 21)
+        self.assertEqual(len(SPECS), 22)
+        self.assertEqual(len({spec.claim_id for spec in SPECS}), 22)
 
     def test_every_claim_has_one_survivor_and_live_witnesses(self) -> None:
         for spec in SPECS:

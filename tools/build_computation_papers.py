@@ -14,7 +14,7 @@ if str(ROOT) not in sys.path:
 from sft.computation.current_catalog import SPECS as COMPUTATION_SPECS  # noqa: E402
 from sft.computation.generated_law import survivor_id as computation_survivor  # noqa: E402
 from sft.computation.spec_data import GROUP_TITLES  # noqa: E402
-from sft.quantum_computation.catalog import SPECS as QUANTUM_SPECS  # noqa: E402
+from sft.quantum_computation.current_catalog import SPECS as QUANTUM_SPECS  # noqa: E402
 from sft.quantum_computation.generated_law import survivor_id as quantum_survivor  # noqa: E402
 
 
@@ -156,6 +156,14 @@ def derivation_section(spec, order: int, section: int, survivor_function) -> str
     ))
     add(L())
     add(L(spec.limitations))
+    if spec.claim_id == "SFT-QUANTUM-FAULT-TOLERANCE-001":
+        add(L())
+        add(L(
+            "Version 1.1 reconciliation: the sealed 001 wording uses 'unlimited thresholds' for physical hardware "
+            "thresholds. It must not be read as leaving the exact code-order theorem open. The separately generated and "
+            "admitted `SFT-QUANTUM-UNBOUNDED-FINITE-FAULT-TOLERANCE-002` closes every supplied positive finite fault "
+            "order by the forced width `2t+1`, while stochastic device thresholds remain empirical."
+        ))
     add(L())
     add(L("The following imports remain prohibited at this boundary:"))
     add(L())
@@ -447,6 +455,8 @@ def build_computation() -> str:
 
 def build_quantum() -> str:
     inventory = load(ROOT / "publications/inventories/quantum_computation.json")
+    prior_ledger = load(ROOT / "census/quantum_computation_prior_obligations.json")
+    prior_summary = prior_ledger["quantum_computation_summary"]
     candidate_total = sum(2 ** len(spec.dimensions) for spec in QUANTUM_SPECS)
     parts = common_front_matter(
         "quantum_computation",
@@ -464,14 +474,28 @@ def build_quantum() -> str:
     add(L("## 1. Central scientific claim and exact boundary"))
     add(L())
     add(L(
-        "> Within the frozen SFT V3 Reversible and Quantum Computation inventory, all 21 registered obligations have "
+        f"> Within the current SFT V3 Reversible and Quantum Computation inventory, all {len(QUANTUM_SPECS)} registered laws and "
+        f"all {prior_summary['atomic_obligation_count']} Quantum Computation-owned V1/V2 reconstruction obligations have "
         "depth-independent, model-admitted and independently replicated receipts, and no registered quantum-computation "
         "obligation remains unclassified or frontier."
     ))
     add(L())
-    add(L("Closure is formal and structural. It does not by itself claim that a physical device realizes these operations, supply a measured fault threshold, establish unrestricted speedups, or derive quantum physics as a natural law. Those require the later empirical Physics branch."))
+    add(L("Closure is formal and structural. It includes the unbounded positive-finite `2t+1` fault-order theorem, but does not convert that theorem into a measured stochastic hardware threshold. Physical realization, device fidelity, error distributions, natural quantum probabilities and quantum physics require the sealed empirical Physics branch."))
     add(L())
-    add(L("## 2. Fold-native quantum constitution"))
+    add(L("## 2. Headline results at a glance"))
+    add(L())
+    add(L("| Result | Exact closed statement | Executed boundary |"))
+    add(L("|---|---|---|"))
+    add(L("| One quantum information unit | One Fold distinction supplies the complete two-held-label information unit without a complex amplitude premise. | Exact finite word support, observation classes and retained phase-label carrier. |"))
+    add(L("| Superposition and interference | Superposition-equivalent structure is complete generated branch support; phase is period-held action; interference is exact predecessor merging with phase provenance. | Complete branch-to-image relations and inverse records; no stochastic collapse postulate. |"))
+    add(L("| Entanglement | A joint state is entangling exactly when its complete pair-cell support is nonfactorable relative to its marginals. | Product and correlated supports, component identities and exact marginal reconstruction. |"))
+    add(L("| Measurement | Observation retains one exact class and a complete source/phase/image record, making support reduction reconstructible at the declared record boundary. | Every pre-observation branch and closed distinction is recorded. |"))
+    add(L("| Unbounded finite fault order | For every supplied positive finite `t`, the unique first correcting width is `2t+1`, redundancy is `2t`, every predecessor width fails, and the successor adds two labels. | Every mask at `t=1,2,3`; all predecessor widths and successors through `t=14`; all 128 depth-seven words at `t=14`. |"))
+    add(L("| Quantum computational limits | Every admitted quantum circuit remains a finite generated description, so self-reference, halting and undeclared-oracle boundaries transfer. | Branchwise operational correspondence with the classical reversible submodel. |"))
+    add(L())
+    add(L("Historical quantum formalisms and names enter after the Fold carriers, transformations and observations are sealed. They are correspondence tests and cannot select the law, code width, survivor or claimed resource."))
+    add(L())
+    add(L("## 3. Fold-native quantum constitution"))
     add(L())
     add(L(
         "One Fold distinction supplies the native information unit. Complete held-label words across generated positions "
@@ -481,7 +505,7 @@ def build_quantum() -> str:
         "imaginary proof value or ungenerated continuum."
     ))
     add(L())
-    add(L("## 3. Superposition, interference and entanglement"))
+    add(L("## 4. Superposition, interference and entanglement"))
     add(L())
     add(L(
         "Superposition-equivalent means complete simultaneous support of every generated branch before an observation class "
@@ -491,7 +515,7 @@ def build_quantum() -> str:
         "subset is nonfactorable and supplies the entangling class."
     ))
     add(L())
-    add(L("## 4. Measurement and reversibility"))
+    add(L("## 5. Measurement and reversibility"))
     add(L())
     add(L(
         "Measurement is a total observation relation over complete branch support. The selected observation class becomes the "
@@ -500,18 +524,19 @@ def build_quantum() -> str:
         "map is bijective and its phase action has an exact inverse; any predecessor merge requires a retained predecessor label."
     ))
     add(L())
-    add(L("## 5. Coding, multi-error correction and fault tolerance"))
+    add(L("## 6. Coding, multi-error correction and unbounded finite fault order"))
     add(L())
     add(L(
-        "A generated fault-depth trace of length t forces repetition width 2t+1: at least t+1 copies retain the source label "
-        "after any family of at most t label changes. The executable census exhausts every mask through one error at width 3 "
-        "(4 masks), two errors at width 5 (16 masks), and three errors at width 7 (64 masks). The base and successor certificate "
-        "extends the majority separation to every generated positive finite t. Fault-tolerant circuits must contain declared "
-        "faults, prevent one location from opening more distinctions than the code can repair, and recover before errors escape "
-        "the registered support. No hardware threshold constant is asserted."
+        "A generated positive fault-order trace of length t forces repetition width 2t+1: no more than t labels change and "
+        "at least t+1 retain the source, forcing the strict majority. Every width through 2t has a constructive counterexample "
+        "formed by changing ceil(w/2) positions. The executable census exhausts every mask through one error at width 3, two "
+        "errors at width 5 and three errors at width 7. It executes every predecessor-width and successor certificate through "
+        "t=14 and round-trips all 128 depth-seven source words at t=14 before exact circuit evaluation. The successor t to t+1 "
+        "adds exactly two labels and constructively defeats every fixed positive finite ceiling. No completed infinite-width "
+        "object, measured error rate or physical hardware threshold is asserted."
     ))
     add(L())
-    add(L("## 6. Classical-quantum correspondence and limits"))
+    add(L("## 7. Classical-quantum correspondence and limits"))
     add(L())
     add(L(
         "Classical computation embeds as the single-held-branch, phase-insensitive reversible submodel. Quantum execution "
@@ -521,27 +546,57 @@ def build_quantum() -> str:
         "not acquire an undeclared oracle or hypercomputational escape."
     ))
     add(L())
-    add(L("## 7. Complete execution census"))
+    add(L("## 8. Complete execution census"))
     add(L())
     add(L("| Order | Claim | Candidates | Closure |"))
     add(L("|---:|---|---:|---|"))
     for index, spec in enumerate(QUANTUM_SPECS, 1):
         add(L(f"| {index} | `{spec.claim_id}` | 256 | depth-independent |"))
     add(L())
-    add(L(f"The branch total is **{candidate_total:,} candidates**, **21 survivors**, **84 adverse controls** and **21 independent validations**."))
-    section = 8
+    add(L(f"The branch total is **{candidate_total:,} candidates**, **{len(QUANTUM_SPECS)} survivors**, **{len(QUANTUM_SPECS) * 4} adverse controls** and **{len(QUANTUM_SPECS)} independent validations**."))
+    section = 9
     for order, spec in enumerate(QUANTUM_SPECS, 1):
         add(derivation_section(spec, order, section, quantum_survivor))
         section += 1
     add(L(f"## {section}. Branch synthesis"))
     add(L())
-    add(L("The 21 laws establish one operational machine family in which classical and quantum modes share descriptions, traces, resources and verification. Quantum distinctions arise from complete branch support, held phase action, predecessor merging and nonfactorable composition; they are not imported as a separate mathematical universe."))
+    add(L(f"The {len(QUANTUM_SPECS)} laws establish one operational machine family in which classical and quantum modes share descriptions, traces, resources and verification. Quantum distinctions arise from complete branch support, held phase action, predecessor merging and nonfactorable composition; they are not imported as a separate mathematical universe."))
     add(L())
-    add(L(f"## {section + 1}. Reproduction and invalidation"))
+    add(L(f"## {section + 1}. Complete V1/V2 reconstruction audit"))
+    add(L())
+    add(L(
+        f"The categorical-owner audit reads all {prior_ledger['reviewed_source_surface']['reviewed_entry_count']} V1/V2 census entries. "
+        f"It identifies {len(prior_ledger['source_entries'])} formal Quantum Computation source entries, decomposes them into "
+        f"{prior_summary['atomic_obligation_count']} obligations, closes {prior_summary['same_strength_closed_count']} at same strength "
+        f"and leaves {prior_summary['open_count']} open. V1's quantum-named natural phenomena are not omitted: they are explicitly "
+        "assigned to Physics because physical quantum effects and measured constants are not formal computation laws."
+    ))
+    add(L())
+    add(L("| Source | Entry | Atomic obligation | Disposition | V3 receipt |"))
+    add(L("|---|---|---|---|---|"))
+    for entry in prior_ledger["source_entries"]:
+        for atom in entry["atomic_obligations"]:
+            observation = atom["prior_observation"].replace("|", "&#124;")
+            claims = ", ".join(f"`{claim}`" for claim in atom["v3_claim_ids"])
+            add(L(f"| {entry['source'].upper()} | `{entry['source_entry']}` | {observation} | `{atom['disposition']}` | {claims} |"))
+    add(L())
+    add(L("The audit also corrects the former wording around 'unlimited thresholds'. The current theorem is unbounded over supplied positive finite code fault orders. A measured stochastic hardware threshold is a different empirical object; it is neither denied nor claimed here and must be derived and tested in its correct Physics or engineering branch."))
+    add(L())
+    add(L(f"## {section + 2}. Quantum knowledge, open science and institutional accountability"))
+    add(L())
+    add(L("Quantum science is especially vulnerable to authority by opacity: proprietary devices, inaccessible calibration data, result-only cloud interfaces and mathematical notation presented without the full route from premise to observation. Such systems may be useful instruments, but a reported score or vendor label cannot close a law when reviewers cannot reconstruct the support, transformation, measurement record, alternatives and failure boundary. This release exposes each of those objects."))
+    add(L())
+    add(L("The institutional critique is evidential, not an allegation that every funded scientist or institution acts in bad faith. Reviews report associations between commercial sponsorship and favorable outcomes, influence on research agendas, limits in grant-review reliability and fairness, and underpublication of null results. Capital, prestige, paywalls and consensus can therefore shape what becomes visible; none substitutes for an inspectable branch trace and independently reproducible receipt."))
+    add(L())
+    add(L("Maria Smith developed this programme without conventional academic credentials, appointment or a funding gate. That biography proves no quantum theorem; the public derivations must bear the whole scientific burden. It demonstrates why credentials cannot be permission to create knowledge and why every excluded mind is a scientific loss. Expert criticism is invited on the same evidential terms as outsider criticism."))
+    add(L())
+    add(L("Maria Smith retains authorship and copyright. Paper and documentation are CC BY 4.0 and code is Apache-2.0, permitting inspection, redistribution, reproduction, criticism and derivative work under those licences. Ernos Labs is a separate revocable conformance designation requiring the public scientific constitution, transparent evidence, fail-closed engine rules and community standards. Submissions and counterexamples are invited through Maria.Smith.Sftoe@gmail.com and https://discord.gg/ucwGryVxGr."))
+    add(L())
+    add(L(f"## {section + 3}. Reproduction and invalidation"))
     add(L())
     add(L("Run the repository-wide one-command verifier. A reviewer can invalidate a result by producing an omitted same-boundary coordinate, a second survivor, a nonminimal form, an induction counterexample, a failed inverse, an incomplete observation record, an uncorrected registered error mask or a mismatched receipt."))
     add(L())
-    add(L(f"## {section + 2}. Scope and next branch"))
+    add(L(f"## {section + 4}. Scope and next branch"))
     add(L())
     add(L("The next branch is Physics. It must test whether independently derived Fold relations correspond to mechanics, fields, spacetime, thermodynamics, quantum phenomena, gravitation, matter, waves, fluids, plasmas and condensed structures. Formal quantum computation cannot select the natural laws; sealed observation must do that work."))
     add(L())
@@ -555,6 +610,12 @@ def build_quantum() -> str:
     add(L("6. Grover LK. A fast quantum mechanical algorithm for database search. *Proceedings of STOC*. 1996:212-219. doi:10.1145/237814.237866."))
     add(L("7. Schumacher B. Quantum coding. *Physical Review A*. 1995;51:2738-2747. doi:10.1103/PhysRevA.51.2738."))
     add(L("8. Smith M. Smithian Fold Theory Scientific Constitution. V3 clean-room repository, 2026."))
+    add(L("9. Lundh A, Lexchin J, Mintzes B, Schroll JB, Bero L. Industry sponsorship and research outcome. *Intensive Care Medicine*. 2018. doi:10.1007/s00134-018-5293-7."))
+    add(L("10. Fabbri A, Lai A, Grundy Q, Bero LA. The influence of industry sponsorship on the research agenda. *American Journal of Public Health*. 2018. PMID:30252531."))
+    add(L("11. Gallo SA et al. Reliability and fairness in peer review of research funding. 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/."))
+    add(L("12. Demicheli V, Di Pietrantonj C. Peer review for improving the quality of grant applications. *Cochrane Database of Systematic Reviews*. https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/."))
+    add(L("13. Toward more published null and negative results. *Nature Communications*. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/."))
+    add(L("14. UNESCO. Recommendation on Open Science. 2021. https://www.unesco.org/en/legal-affairs/recommendation-open-science."))
     return "".join(parts)
 
 
