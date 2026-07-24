@@ -148,3 +148,4 @@ class GeneratedQuantumProgram:
             (ControlKind.BOUNDARY, "halt complex amplitude, stochastic collapse or imported quantum postulate", "; ".join(self.spec.boundary_exclusions), bool(self.spec.boundary_exclusions) and all(w.passed for w in self.spec.witnesses)),
         )
         return tuple(ControlResult(kind, passed, expected, observed, sha256_identity((self.spec.claim_id, kind.value, expected, observed, passed))) for kind, expected, observed, passed in payloads)
+

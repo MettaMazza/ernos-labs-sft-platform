@@ -256,3 +256,4 @@ def group_witnesses(group: str, claim_id: str) -> tuple[tuple[str, str, bool], .
         (f"{group}-witness-{index}", f"{group} exact operational witness {index} for {claim_id}", passed)
         for index, passed in enumerate(checks, 1)
     )
+

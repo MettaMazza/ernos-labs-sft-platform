@@ -21,6 +21,20 @@ This is the sole public validation route. It performs, in order:
 An omitted claim, changed source, changed receipt, dependency-order error,
 failed test or uncovered core-engine line makes the command fail.
 
+## Immutable replay identity
+
+Replay means byte-exact execution of the source context sealed at admission,
+not acceptance of a previously stored receipt without execution. Source hashes
+therefore include every byte, including terminal line endings and blank lines.
+Do not run a formatter or normalizer across admitted source artifacts unless it
+is proven to preserve their bytes.
+
+An existing receipt, certificate, census row and source identity are immutable.
+If a later engine or source revision needs a compatibility run, preserve the
+original replay context and record the new result as separate, versioned
+compatibility evidence. Never replace the original evidence and never bypass
+replay.
+
 ## Exact meaning of 100%
 
 The percentage is executable-line coverage of the complete core engine package,

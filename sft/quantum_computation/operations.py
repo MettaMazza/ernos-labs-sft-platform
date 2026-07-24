@@ -183,3 +183,4 @@ def operational_witnesses(claim_id: str) -> tuple[tuple[str, str, bool], ...]:
         (f"quantum-witness-{index}", f"exact Fold quantum operational witness {index} for {claim_id}", passed)
         for index, passed in enumerate(checks, 1)
     )
+

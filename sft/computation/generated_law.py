@@ -222,3 +222,4 @@ class GeneratedComputationProgram:
             ControlResult(kind, passed, expected, observed, sha256_identity((self.spec.claim_id, kind.value, expected, observed, passed)))
             for kind, expected, observed, passed in payloads
         )
+
