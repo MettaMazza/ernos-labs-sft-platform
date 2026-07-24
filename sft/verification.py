@@ -2,15 +2,18 @@
 
 from __future__ import annotations
 
+from contextlib import contextmanager
 from dataclasses import dataclass
 import importlib.util
 import json
 from pathlib import Path
+import platform
 import re
 import subprocess
 import sys
 import tempfile
 from typing import Optional
+from unittest.mock import patch
 
 from sft.engine import AuthorityLedger, EngineReceipt, SFTAdmissionEngine
 from sft.engine.model import DerivationProgram, EmpiricalValidator, IndependentValidator
@@ -144,6 +147,49 @@ def _load_execution(root: Path, entry: dict[str, object]) -> ClaimExecution:
     return execution
 
 
+@contextmanager
+def _sealed_replay_environment(
+    root: Path,
+    claim_id: str,
+    empirical_validator: Optional[EmpiricalValidator],
+):
+    """Recreate receipt-bound host metadata while rerunning empirical work.
+
+    Platform and Python implementation names are certificate metadata, not
+    scientific inputs.  Exact replay must nevertheless reproduce the metadata
+    sealed into the immutable admission receipt.  The empirical validator still
+    reruns every prediction, custody, comparison and adverse control.
+    """
+
+    if empirical_validator is None:
+        yield
+        return
+    evidence_path = root / "claims" / claim_id / "empirical_validation.json"
+    try:
+        evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+        isolation = evidence["isolation_certificate"]
+        evidence_claim_id = evidence["claim_id"]
+        host_platform = isolation["host_platform"]
+        python_implementation = isolation["python_implementation"]
+    except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
+        raise VerificationError(
+            f"empirical replay context is missing or malformed: {claim_id}"
+        ) from exc
+    if evidence_claim_id != claim_id:
+        raise VerificationError(f"empirical replay context has the wrong claim identity: {claim_id}")
+    if not isinstance(host_platform, str) or not host_platform.strip():
+        raise VerificationError(f"empirical replay host identity is invalid: {claim_id}")
+    if not isinstance(python_implementation, str) or not python_implementation.strip():
+        raise VerificationError(f"empirical replay Python identity is invalid: {claim_id}")
+    with patch.object(platform, "system", return_value=host_platform):
+        with patch.object(
+            platform,
+            "python_implementation",
+            return_value=python_implementation,
+        ):
+            yield
+
+
 def rerun_registered_claims(root: Path) -> int:
     """Recompute all admitted claims in census order without modifying evidence."""
 
@@ -167,12 +213,17 @@ def rerun_registered_claims(root: Path) -> int:
         if execution.program.registration.claim_id != entry["claim_id"]:
             raise VerificationError("execution factory and manifest claim identities differ")
         source_manifest = build_source_manifest(root, execution.source_files)
-        receipt = engine.run(
-            execution.program,
-            execution.independent_validator,
+        with _sealed_replay_environment(
+            root,
+            str(entry["claim_id"]),
             execution.empirical_validator,
-            executed_source_hash=source_manifest.manifest_hash,
-        )
+        ):
+            receipt = engine.run(
+                execution.program,
+                execution.independent_validator,
+                execution.empirical_validator,
+                executed_source_hash=source_manifest.manifest_hash,
+            )
         receipt_path = (root / row["receipt_path"]).resolve()
         stored = read_receipt(receipt_path)
         if receipt.receipt_hash != row.get("receipt_hash") or receipt != stored:

@@ -29,6 +29,12 @@ therefore include every byte, including terminal line endings and blank lines.
 Do not run a formatter or normalizer across admitted source artifacts unless it
 is proven to preserve their bytes.
 
+Empirical replay also restores the host-platform and Python-implementation
+labels sealed into the original isolation certificate. These are receipt-bound
+metadata, not scientific inputs: the prediction, target custody, comparison,
+all registered rows and adverse controls are still executed afresh on the
+reviewer's actual operating system.
+
 An existing receipt, certificate, census row and source identity are immutable.
 If a later engine or source revision needs a compatibility run, preserve the
 original replay context and record the new result as separate, versioned
