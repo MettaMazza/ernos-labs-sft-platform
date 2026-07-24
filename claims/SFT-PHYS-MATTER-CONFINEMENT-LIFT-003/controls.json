@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-CONFINEMENT-LIFT-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1a448fe27f4aecb62ef3cb8dec4b0eb060555ce3b287baa87957c8f5684268fe"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e1a7d6501000853476073c8b6663ed8593169d41136066d9580091ff11a6dd83"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:83a2544c740cb324dd0ad054cec80e316c0837608cadb041659e6d114a3a3912"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:00730b4fbf6ba7db829ad6ceac234db8610661ec657d2905518fe8270d76b617"
+    }
+  ]
+}

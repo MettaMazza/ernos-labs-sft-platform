@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-GENERATION-DEPTH-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d070d1a38a9f793bdd976358859df7f00dfa35d239432ba46d07788fe33f8b89"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:70b95a2d2cd3e50f23d8a7154f674325af2057d6c6438c0a699983301409c5a4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8f30e25a78d4faca49dcfce018fe0ea6ea0624d82dacefcb37083e78adf35754"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5dadf6ad9b24c7e8e3dacea28aca0a939fb72cfc51dcb835109a18d1c2d52661"
+    }
+  ]
+}

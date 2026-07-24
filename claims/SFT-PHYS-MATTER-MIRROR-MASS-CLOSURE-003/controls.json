@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c1dfc1914fc49f2342ab4c3ef9c0275934af2f03335bbd7983d791f51a3aed09"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ae8180a6ae41198e1486c567c366381774c279ac9099ec8943d4dc1978381f32"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:abf06429178c30c9d1499e9968d6db8547a9181d561da41d39885f03fa8cf4b4"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:003e0a517d302c9b660ea8a3dcc7083bc8eaeb53d3b9480c6eaf1bcb61e975b0"
+    }
+  ]
+}

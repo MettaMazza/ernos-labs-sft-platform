@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:53ee82af1f684449f3abdbea5fb6b136bd55d010c973619074fd546b78f7cc25"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ac116620d6b74cfb550484b4131b1a9fa0fba58e35916d6a8d81e9f4275dd119"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:83f7e568165c611deb04ab0918666b221ed83002a3ad2c8353d25272e14e97e3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1193336759f76dc52770c3acb8a4a80fc07c783c87fb25d19049083f4b6fdc08"
+    }
+  ]
+}
