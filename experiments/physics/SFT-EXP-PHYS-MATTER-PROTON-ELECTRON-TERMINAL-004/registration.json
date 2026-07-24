@@ -1,0 +1,128 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Incomplete physical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed BIPM snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Changed external observation label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:05e696b39d958067423c55366eb478398a29898b5e9f967c442d3ed5b8b5e26d"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants snapshot sha256:a2fd002521902242e3db10eac896389d2190f88169b827c3575640e9a31f2790; used only after prediction sealing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered external row matches and the deliberately changed row is rejected.",
+    "comparison_implementation_hash": "sha256:5a4bd24ff0d2b23f88fb0f74b531ae0050c38ef1ac1cb7dcd1962e28adabf77d",
+    "evaluator_id": "SFT-EXP-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-post-seal-evaluator",
+    "falsification_condition": "The sealed prediction enclosure leaves the complete registered CODATA interval, any uncertainty or adverse receipt is omitted, the target enters the relation, or observational provenance is hidden.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Compare every registered predicted structural label with its committed external observation label by exact identity.",
+        "metric_id": "exact-held-label-correspondence",
+        "unit_protocol": "Structural metrology correspondence; external unit inscriptions remain records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_empirical_test",
+  "experiment_id": "SFT-EXP-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology / CODATA Task Group on Fundamental Constants",
+      "retrieved_date": "2026-07-23",
+      "snapshot_hash": "sha256:a2fd002521902242e3db10eac896389d2190f88169b827c3575640e9a31f2790",
+      "source_id": "MATTER-FLAVOUR-TERMINAL-PROTON-AUTHORITATIVE-2022-2026",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis post-seal terminal proton/electron comparison product.",
+    "dependency_hashes": [
+      "sha256:f9d5e7d2318a87c78b0d92d8e19c214370d58a57853b3112ded49592213096af",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The complete registered CODATA proton/electron row, its central value, standard uncertainty, prior adverse receipt, custody disclosure and exact algebraic prediction enclosure.",
+    "relation_hash": "sha256:4bc140f5c668daba1bb5999b9ff8a015fe0d0f320c8474998dda1bb8f056f069",
+    "statement": "The target-free terminal proton/electron algebraic enclosure is wholly contained inside the complete registered CODATA one-standard-uncertainty interval.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:f310d63b74cefe0e0a458a7cb64b45364e75bc995170794e5c73de191e7f3ff1",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:d6ec57583c3b11b51f4c4be875f423c56ccb5ea47e6a01cfb13afefe9205b15d",
+    "program_id": "SFT-EXP-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-23",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:995c8a805c3da0dd9ad4eba7e6574e4bdddff22dfcc380b32865c3f3801adeb1",
+    "experiments/external_sources/physics/snapshots/matter-flavour-terminal-proton-source-record.json": "sha256:a2fd002521902242e3db10eac896389d2190f88169b827c3575640e9a31f2790"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "MATTER-FLAVOUR-TERMINAL-PROTON-AUTHORITATIVE-2022-2026",
+      "target_id": "NIST-CODATA-PROTON-ELECTRON-COMPLETE"
+    }
+  ]
+}

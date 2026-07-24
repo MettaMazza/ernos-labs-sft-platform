@@ -192,21 +192,43 @@ their complete registered PDG three-standard-uncertainty intervals.
 The downstream target-free prediction `eta = J_terminal^2/2` is enclosed by
 `6.14612312138041663e-10` and `6.14612312138273977e-10`.  It lies strictly
 inside the independent PDG BBN abundance interval `[5.8e-10, 6.3e-10]` and
-overlaps the PDG Planck-density translation `[6.08e-10, 6.16e-10]`.  Source
-custody truthfully records that the CKM target was already visible during
-successor development, so neither claim is described as a blind forward
-discovery.  Both relations remain measurement-free, and the engine seals each
-prediction before releasing the registered target vector within its admission
-run.
+overlaps the PDG Planck-density translation `[6.08e-10, 6.16e-10]`.  Both use
+the registered observational-derivation empirical prediction protocol:
+observation informed the explicit laws, both executable relations remain
+measurement-free, target-inaccessible execution seals each prediction, and the
+engine then releases the registered target vector for exact comparison.
+
+18. The terminal composite proton/electron precision successor is now sealed:
+   - engine receipt
+     `sha256:c52208ec2212ffa3fd16e34b90abfdd3adc083411d7a19914d3591b4f8ea9d23`;
+   - derivation seal
+     `sha256:e558533a1d64a278c2bc3ed093f1c27e07d06e7ba8fa92ea29a73e69a180c1d8`;
+   - measurement receipt
+     `sha256:7c86525e64500a2255c15a28bc21011e883d2dd54243756c91b504a6e2d43b2f`.
+
+The earlier proton/electron non-overlap remains immutable.  The versioned
+successor uses the registered observational-derivation empirical prediction
+protocol and consumes only admitted carriers during execution.  At complete
+composite depth three, binary-by-colour-volume support has predecessor 53; the
+complete colour bulk plus one carried boundary channel per colour has support
+`27+3=30`; the two charged Fold ends force alpha squared; and the sole terminal
+return transports both Fold labels once through down-depth five and the colour
+volume, forcing `2 alpha/(5*27)`.  Thus the exact dressing is
+`(53/30) alpha^2 [1 + (2/135) alpha]` and is held from the admitted algebraic
+ratio.  The resulting exact rational enclosure
+`[1836.15267342531272605858599346, 1836.15267342531296427600420778]`
+is wholly contained in the full CODATA one-standard-uncertainty interval
+`[1836.152673394, 1836.152673458]`.  The engine exhausts 2,048 typed forms,
+retains one survivor and releases the measurement only after sealing the
+target-inaccessible prediction.
 
 ## Active group
 
 Matter, flavour and particle-value reconstruction:
 
-- proton/electron mass ratio and exact hierarchy reconstruction;
 - electron and muon magnetic anomaly reconstruction;
-- exact separately generated successors for the two remaining adverse precision
-  comparisons without target-selected terms.
+- exact separately generated successor for the remaining adverse magnetic
+  precision comparison without target-readable execution.
 
 The vacuum, relativistic/field and gravity/spacetime source, execution,
 validator and validation modules are frozen by their receipts and must not be
