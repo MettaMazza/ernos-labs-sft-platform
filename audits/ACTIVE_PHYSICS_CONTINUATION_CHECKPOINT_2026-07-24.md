@@ -977,3 +977,62 @@ open and 129 unmapped open. V1 VI-2 intentionally remains open because total
 particle widths and branching partitions are a later particle-phenomenology
 law, not the nuclear half-life law. This count supersedes section 37. Do not
 regenerate V-6 after compaction; commit it and proceed to V1 V-7.
+
+39. The exact fusion/fission direction, release and normalized-barrier
+    successor is admitted and must not be regenerated after conversation
+    compaction:
+   - `SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005`, engine receipt
+     `sha256:fbbdba722e6fb27d738ad3cd1df1f62e4caa979038b212147120ca814f0e25fa`;
+   - derivation seal
+     `sha256:3b5ba8c1b1c7cef52e338ec2656e5043717dbb8f9d23040986d9325c1b25302c`;
+   - independent validation
+     `sha256:7e0c9230c8e5f9d819dea83227fcae05ee1e46f621ade23abe44782c31745316`;
+   - independent certificate
+     `sha256:5ca4f105af45becb2d736b592b744de0f59405642563449fa97a03216771cefa`;
+   - empirical validation
+     `sha256:8938824e23d81c3a0af6f06a90f74d4517541d3ef935743d19ee7ce1a0992d97`;
+   - measurement receipt
+     `sha256:722810443b2187a7ddf03f88a97bd8fd7b1123f536427cd976857f14552d35ee`;
+   - source manifest
+     `sha256:2a000fca551d443077a846fad52175406aa63aebc37ea397ac555ecb3a3c61c2`.
+
+The claimant contains no preselected survivor identity or admission flag. Its
+complete product has 1,152 forms: three fusion maps, three fission maps, both
+binding directions, four first-two-Fold barrier parts, both release-record
+states, both peak certificates, both custody states and both extension states.
+Exact predicates retain one form: binary junction, binary decomposition,
+higher-binding direction, Half-One normalized barrier, complete held release,
+unique unbounded peak, sealed target and empty extension.
+
+The exact representatives conserve all counts:
+`(2,1,1)+(2,1,1)->(4,2,2)` and
+`(238,92,146)->2*(119,46,73)`.  The terminal zero-parameter binding ledger
+places each complete product lower bound strictly above its incident upper
+bound.  The resulting total-binding gain enclosures are positive exact
+fractions.  Mass-energy and mechanical conservation therefore force a named
+released carrier.  The least nonidentity binary junction holds one of two equal
+fibres before completion, forcing the normalized barrier at Half-One.  This is
+not relabelled as one universal dimensional activation energy.
+
+Only after sealing did the complete AMDC AME2020 target open. All 2,548
+positive-composite rows, every uncertainty used by the comparisons and both
+singleton `0.0` boundary inscriptions are retained. The mass-four/charge-two
+interval lies strictly above mass-two/charge-one; the mass-119/charge-46
+interval lies strictly above mass-238/charge-92; and the sealed `(62,28,34)`
+coordinate remains the uniquely separated complete-census maximum. Reversed
+directions, an incomplete census and a displaced peak are rejected.
+
+The focused successor route ran once and passed (`5 tests`), the claim was
+officially admitted once, its exact receipt was reproduced once for evidence
+materialization, and the lightweight repository-integrity check passed with
+627 admitted claims. The engine tree remains exactly
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger remains 318 same-strength closed and 180 open; it
+now has 52 mapped open and 128 unmapped open. V2 Step 64 is strengthened by this
+successor and remains closed. V1 V-7 is not yet overstated as complete: its
+remaining law must separately force the fusion-versus-fission gain-per-nucleon
+inequality, distinct physical threshold carriers and authoritative total
+reaction-energy comparison. V2 Step 150 also retains the complete stellar
+fusion-chain obligation. Commit this group, then continue V1 V-7 without
+repeating the admitted direction law.

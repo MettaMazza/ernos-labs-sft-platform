@@ -1,0 +1,121 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE-REVERSED-DIRECTIONS",
+      "expected_rejection": "Both lower-binding reaction directions are rejected by exact formal and measured interval order.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed AME2020 record or raw snapshot identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A duplicated candidate, incomplete AME census or displaced peak is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "A non-Half-One normalized barrier or target access before prediction sealing is rejected.",
+      "kind": "boundary"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "prediction_seal_hash": "sha256:76f2760e15afefca07b526cfd5eeaaa7eff3fe780fc4b29d4fa250e0b99f2457",
+    "registered_target_identity_hash": "sha256:afb2efd527cc67e25a3c9578b21005cd1093c542d3256cb19d0b7f508139f594",
+    "release_requires_matching_seal": true,
+    "target_release_manifest_hash": "sha256:3d71d3c654f6b16db51e835c7d3181c6962b269f1e7dc69d74801a653db24c64"
+  },
+  "dimension_unit_boundary": {
+    "external_reference_protocol": "Formal values remain exact normalized binding-score parts. AME2020 keV-per-nucleon inscriptions enter only after the prediction seal.",
+    "measurement_record_policy": "all-2548-positive-composite-rows-two-singleton-boundary-inscriptions-and-every-used-reported-uncertainty",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Both formal binding directions remain strictly ordered in AME2020 after reported uncertainties, every coordinate matches, and the sealed 62/28/34 endpoint is the separated complete-census maximum.",
+    "comparison_protocol_id": "exact-AME2020-fusion-fission-interval-coordinate-comparator/1",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005-post-seal-evaluator",
+    "falsification_condition": "Reject if either sealed exact binding direction is absent from AME2020 after reported uncertainties, if mass/charge coordinates differ, if the sealed global maximum is not the complete-census maximum, if any positive-composite row or singleton boundary inscription is omitted, if a reversed-direction control is accepted, if a source identity changes, or if target content enters prediction before its seal.",
+    "measurement_receipt_hash": "sha256:722810443b2187a7ddf03f88a97bd8fd7b1123f536427cd976857f14552d35ee"
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005",
+  "experiment_registration_hash": "sha256:0d15bc9ca07fc1fbfb961d50f57127846c409613de4adf708d930a0dccd397d3",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "landing_uri": "https://amdc.impcas.ac.cn/web/masseval.html",
+      "measurement_body": "Atomic Mass Data Center, Institute of Modern Physics, Chinese Academy of Sciences",
+      "publication_uris": [
+        "https://www-nds.iaea.org/amdc/ame2020/AME2020-a.pdf",
+        "https://www-nds.iaea.org/amdc/ame2020/AME2020-b.pdf"
+      ],
+      "raw_snapshot_hash": "sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:d10a9474253b2d29fac71ee21352039659f2e5f4b7d75395416d361878a18ddc",
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "1,152 complete fusion-map, fission-map, direction, barrier, release, peak, custody and extension forms",
+    "exact_domain": "positive exact nuclear counts, binding-score enclosures, held release labels, Half-One and the inherited unbounded binding-peak certificate",
+    "statement": "Exact binary fusion and fission representatives conserve every nuclear count, increase the sealed zero-parameter binding score toward the unique unbounded maximum, retain a positive release record and use the normalized Half-One barrier.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:a2095c802eda94857c56a7560842091850c8f527a2539cef61c4a80dbb12b0a3"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain every positive-composite row, both singleton boundary inscriptions, every used uncertainty, global rival envelope and unfavorable direction",
+  "status": "measured",
+  "stop_condition": "Halt after every formal, source, custody, census, interval, coordinate and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-COMPLETE-POSITIVE-COMPOSITE-CENSUS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-SINGLETON-EMPTY-BINDING-BOUNDARIES"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-DEUTERIUM-HELIUM4-FUSION-ANCHORS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-URANIUM238-PALLADIUM119-FISSION-ANCHORS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-GLOBAL-BINDING-MAXIMUM"
+    }
+  ]
+}

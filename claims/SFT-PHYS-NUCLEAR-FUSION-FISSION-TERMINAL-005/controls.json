@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005",
+  "controls": [
+    {
+      "expected_behavior": "Reject a binding-loss direction for both exact representative reactions.",
+      "kind": "false_premise",
+      "observed_behavior": "Exact interval ordering gives a positive binding gain for both representatives.",
+      "passed": true,
+      "receipt_hash": "sha256:bae4807a0cb3647819ceeb0d3ebc9fe67b58f7053aaf0f5f2fd589b31ed537bf"
+    },
+    {
+      "expected_behavior": "Reject any changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed source identity differs from the registered manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:a9afcf0815909f62fdf159bee3d9b5e65c53dbf73156c3f19f7e0e9f89badbe4"
+    },
+    {
+      "expected_behavior": "Reject a duplicated candidate as an incomplete or nonunique census.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The deliberately duplicated candidate fails exact census uniqueness.",
+      "passed": true,
+      "receipt_hash": "sha256:147ddd65e940c7b98a128bd62ebeecbf1e8c6a2ff7dad6aedc88f85b2824138a"
+    },
+    {
+      "expected_behavior": "Reject a non-Half-One normalized barrier and any target-readable derivation.",
+      "kind": "boundary",
+      "observed_behavior": "Quarter-One and pre-seal target exposure each fail a computed boundary predicate.",
+      "passed": true,
+      "receipt_hash": "sha256:b12f93f19a2e1bbe0b9c76dacfd4ef176d9888ff2b934af4b61678ca2ec719c1"
+    }
+  ]
+}

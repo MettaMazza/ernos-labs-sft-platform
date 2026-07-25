@@ -263,6 +263,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "V-4": ("SFT-PHYS-NUCLEAR-BINDING-001", "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005", "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005"),
     "V-5": ("SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001", "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001", "SFT-PHYS-QUANTUM-SPIN-001"),
     "V-6": ("SFT-PHYS-NUCLEAR-RADIOACTIVITY-001", "SFT-PHYS-QUANTUM-TUNNELLING-001", "SFT-PHYS-WEAK-PARITY-FIBRE-002", "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005"),
+    "V-7": ("SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005"),
 }
 
 
@@ -283,7 +284,7 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     19: ("SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002", "SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004", "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004"),
     20: ("SFT-PHYS-WEAK-PARITY-FIBRE-002",),
     141: ("SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005",),
-    64: ("SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-QUANTUM-TUNNELLING-001"),
+    64: ("SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-QUANTUM-TUNNELLING-001", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005"),
     66: ("SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005",),
     26: ("SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",),
     32: ("SFT-PHYS-SPACE-DIMENSION-THREE-001", "SFT-PHYS-SPACETIME-EXACT-INTERVAL-003"),
@@ -387,7 +388,7 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
     138: ("SFT-PHYS-SPACETIME-LIMIT-SPEED-001",),
     146: ("SFT-PHYS-PLASMA-OSCILLATION-001", "SFT-PHYS-PLASMA-COLLECTIVE-001"),
     147: ("SFT-PHYS-WAVE-INTERFERENCE-001", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
-    150: ("SFT-PHYS-NUCLEAR-FUSION-001",),
+    150: ("SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005"),
     152: ("SFT-PHYS-FLUID-PRESSURE-STRESS-001",),
     153: ("SFT-PHYS-WAVE-RESONANCE-001",),
     154: ("SFT-MATH-DISCRETE-001", "SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003"),
@@ -595,9 +596,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "Radioactive transition support, tunnelling and weak/nuclear channels are sealed. Exhaustive alpha/beta/gamma classification, rational half-life successor and authoritative decay-mode/lifetime comparison remain.",
     },
     "V-7": {
-        "formal_same_strength_status": "partial",
+        "formal_same_strength_status": "versioned_successor_required",
         "empirical_boundary_status": "required_open",
-        "remaining_work": "Fission/fusion channel conservation is sealed. The exact binding-gain direction, barrier thresholds, relative yield law and measured energy comparison remain.",
+        "remaining_work": "Binary topology, exact count conservation, positive binding-gain direction, held release accounting, normalized Half-One barrier and complete AME2020 binding-order comparison are sealed. A separately forced fusion-versus-fission gain-per-nucleon inequality, distinct physical threshold carriers and authoritative total reaction-energy comparison remain.",
     },
     "V-8": {
         "formal_same_strength_status": "partial",
@@ -1096,7 +1097,7 @@ REVIEWED_OPEN_V2: dict[int, dict[str, str]] = {
     150: {
         "formal_same_strength_status": "versioned_successor_required",
         "empirical_boundary_status": "required_open",
-        "remaining_work": "Fusion conservation is sealed. The quarter-to-half-to-One path and unqualified iron endpoint are not silently retained; a versioned binding-gain and stellar-fusion chain remains.",
+        "remaining_work": "Fusion conservation, exact light-side binding gain, normalized Half-One junction barrier and the corrected nickel-62 endpoint are sealed. The complete stellar fusion-chain recurrence, its distinct dimensional threshold carriers and authoritative chain-energy comparison remain.",
     },
     152: {
         "formal_same_strength_status": "partial",
