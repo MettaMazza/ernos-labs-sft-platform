@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicationComplianceTests(unittest.TestCase):
-    def test_foundation_and_corrected_physics_are_ready_and_other_branches_remain_blocked(self) -> None:
+    def test_closed_formal_branches_are_ready_and_physics_ownership_remains_blocked(self) -> None:
         foundation = require_current_publication_ready(ROOT, "foundation")
         self.assertTrue(foundation.current_publication_ready)
         self.assertEqual(foundation.live_claim_count, 16)
@@ -30,10 +30,10 @@ class PublicationComplianceTests(unittest.TestCase):
                 self.assertTrue(result.current_publication_ready)
                 self.assertEqual(result.blockers, ())
 
-        physics = require_current_publication_ready(ROOT, "physics")
-        self.assertTrue(physics.current_publication_ready)
+        physics = audit_branch(ROOT, "physics")
+        self.assertFalse(physics.current_publication_ready)
         self.assertEqual(physics.live_claim_count, 285)
-        self.assertEqual(physics.blockers, ())
+        self.assertTrue(any("categorical ownership" in row for row in physics.blockers))
 
         for branch in (
             "chemistry",
@@ -46,12 +46,12 @@ class PublicationComplianceTests(unittest.TestCase):
                 with self.assertRaises(CurrentPublicationHalt):
                     require_current_publication_ready(ROOT, branch)
 
-    def test_physics_categorical_inventory_equals_live_claims(self) -> None:
+    def test_physics_categorical_inventory_equals_live_claims_but_does_not_close_prior_ownership(self) -> None:
         result = audit_branch(ROOT, "physics")
         self.assertEqual(result.live_claim_count, 285)
         self.assertEqual(result.frozen_inventory_claim_count, 285)
         self.assertEqual(result.archival_paper_claim_count, 285)
-        self.assertEqual(result.blockers, ())
+        self.assertTrue(any("categorical ownership" in row for row in result.blockers))
 
     def test_incomplete_branch_specific_review_halts_successor(self) -> None:
         real_read = publication_compliance._read
@@ -79,7 +79,7 @@ class PublicationComplianceTests(unittest.TestCase):
             result.blockers,
         )
 
-    def test_cli_enforcement_accepts_corrected_physics_scope(self) -> None:
+    def test_cli_enforcement_blocks_incomplete_physics_ownership(self) -> None:
         completed = subprocess.run(
             (
                 sys.executable,
@@ -93,12 +93,12 @@ class PublicationComplianceTests(unittest.TestCase):
             capture_output=True,
             check=False,
         )
-        self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertIn("physics: READY", completed.stdout)
+        self.assertNotEqual(completed.returncode, 0)
+        self.assertIn("current publication gate halted for physics", completed.stderr)
 
-    def test_zenodo_publish_compliance_precondition_accepts_physics(self) -> None:
-        result = require_current_publication_ready(ROOT, "physics")
-        self.assertTrue(result.current_publication_ready)
+    def test_zenodo_publish_compliance_precondition_blocks_physics(self) -> None:
+        with self.assertRaises(CurrentPublicationHalt):
+            require_current_publication_ready(ROOT, "physics")
 
     def test_invalid_branch_is_rejected(self) -> None:
         with self.assertRaises(ValueError):

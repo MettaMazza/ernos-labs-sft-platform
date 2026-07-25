@@ -37,6 +37,10 @@ def blockers() -> list[str]:
     if git_tree("sft/engine") != ENGINE_EXPECTED:
         failures.append("admission engine tree differs from the trusted frozen identity")
     inventory = read(ROOT / "publications/inventories/physics.json")
+    ownership = read(ROOT / "census/prior_obligation_ownership.json")
+    physics_ownership = ownership.get("branch_summary", {}).get("physics", {})
+    if ownership.get("assignment_complete") is not True or physics_ownership.get("complete_v1_v2_reconstruction_proven") is not True:
+        failures.append("complete one-owner V1/V2 Physics reconstruction is not yet proven")
     census_rows = read(ROOT / "census/claims.json")["claims"]
     live = [row for row in census_rows if row.get("branch") == "physics" and row.get("model_admitted") is True]
     ids = inventory.get("required_claim_ids", [])
