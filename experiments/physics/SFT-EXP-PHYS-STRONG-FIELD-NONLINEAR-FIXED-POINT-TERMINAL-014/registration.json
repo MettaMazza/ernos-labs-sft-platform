@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "experiment_id": "SFT-EXP-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014",
+  "claim_id": "SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014",
+  "evidence_mode": "observational_derivation",
+  "protocol": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "development_observations": [
+    {
+      "source_id": "V1-D10E-THREE-WAY-FIELD-ITERATION-DISCRIMINATOR",
+      "role": "development_only",
+      "content_hash": "sha256:05c7c285e87720c0b22a69cc69b07cdd9749a1aa1728afd934e1ed9f7c30ce93"
+    }
+  ],
+  "external_measurement_sources": [
+    {
+      "source_id": "PDG-2026-QCD-REVIEW",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-qcd.pdf",
+      "snapshot_hash": "sha256:c04c628d76b18610c5fa2a919c6081918a25b55fb971b6af5829f4ca2baa386f",
+      "custody_role": "withheld_target"
+    },
+    {
+      "source_id": "BULAVA-ET-AL-2019-STRING-BREAKING",
+      "source_uri": "https://arxiv.org/pdf/1902.04006",
+      "snapshot_hash": "sha256:6c6de4ebdfc86d7976fb343a35f490ff108ab0d56dd1450a1ee27539e2641bb5",
+      "custody_role": "withheld_target"
+    }
+  ],
+  "frozen_relation": {
+    "statement": "Chargeless hold, gravitational quarter-One contraction and colour self-source F-plus-two persistence uniquely separate the three field-update classes; the strong branch has no positive finite fixed point and exceeds every positive exact finite bound at a generated witness.",
+    "target_did_not_select_law": true,
+    "formal_prediction_commit": "8638badbc9d7fce370e1ad21b0fd04fcad42da21"
+  },
+  "withheld_targets": [
+    {
+      "target_id": "D10E-WITHHELD-HISTORICAL-PREREQUISITE-PDG-AND-LATTICE-RECORD",
+      "source_id": "D10E-STRONG-FIELD-NONLINEAR-FIXED-POINT-COMPARISON",
+      "content_withheld_from_prediction": true
+    }
+  ],
+  "prediction_protocol": {
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ]
+  },
+  "evaluation_protocol": {
+    "metrics": [
+      {
+        "metric_id": "three-way-field-update-and-string-branch-correspondence",
+        "all_rows": true
+      }
+    ],
+    "acceptance_condition": "The exact three-way Fold discriminator, complete V1 and admitted-prerequisite rows, complete PDG and lattice sources, unbroken-string correspondence, full-QCD saturation limit and all controls pass without target selection, fit or correction.",
+    "falsification_condition": "Any changed source, omitted row, nonpersistent strong correction, positive finite strong fixed point, failed finite bound witness, omitted QCD self-interaction, omitted string-branch growth, hidden full-QCD saturation or scope limit, target-selected survivor, fit or free correction rejects."
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "kind": "boundary"
+    }
+  ],
+  "target_access_policy": "structurally-denied-before-seal",
+  "row_retention_policy": "retain-all-forty-seven-historical-prerequisite-theory-measurement-and-scope-rows",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "status": "measured"
+}

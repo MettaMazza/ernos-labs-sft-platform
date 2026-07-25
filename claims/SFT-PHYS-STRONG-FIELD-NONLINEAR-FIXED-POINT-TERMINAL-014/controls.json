@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014",
+  "controls": [
+    {
+      "expected_behavior": "Reject conflating empty, shrinking and persistent correction records.",
+      "kind": "false_premise",
+      "observed_behavior": "Neutral, gravity and strong updates retain distinct exact correction classes.",
+      "passed": true,
+      "receipt_hash": "sha256:e4a7af5577b7ed98d709925f9db75a53724b7348abaf318dffdb4857ab64d3b4"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities are unique.",
+      "passed": true,
+      "receipt_hash": "sha256:0b5a37b200f6544185da03decea0e8f27bba78ad0ff859e5920232c0a780f049"
+    },
+    {
+      "expected_behavior": "Reject selected fixed point, finite-prefix/completed-infinity inference, target access and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only universal positive-order exclusion, finite witnesses, sealed custody and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:01fbecf349784fbb255dfecf26b57add49eece9e3bc3fee506da4ac196466b6e"
+    }
+  ]
+}
