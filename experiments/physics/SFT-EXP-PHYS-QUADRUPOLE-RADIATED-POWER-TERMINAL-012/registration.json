@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "experiment_id": "SFT-EXP-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012",
+  "claim_id": "SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012",
+  "evidence_mode": "observational_derivation",
+  "protocol": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "formal_prediction_commit": "6d2fc8cafd72fb3b50ca3d648a69190d469841e1",
+  "development_observations": [
+    {
+      "source_id": "V1-D9Q-QUADRUPOLE-POWER",
+      "role": "development_only",
+      "content_hash": "sha256:05c7c285e87720c0b22a69cc69b07cdd9749a1aa1728afd934e1ed9f7c30ce93"
+    },
+    {
+      "source_id": "EIGHT-ADMITTED-V3-PREREQUISITES",
+      "role": "admitted_prerequisites",
+      "content_hash": "sha256:e76489278f7f839949ca9ce6d21c578dfc8284af2a122519a54216d34f44861d"
+    }
+  ],
+  "external_measurement_sources": [
+    {
+      "source_id": "KRAMER-ET-AL-DOUBLE-PULSAR-2021",
+      "source_uri": "https://arxiv.org/abs/2112.06795",
+      "doi": "10.1103/PhysRevX.11.041050",
+      "snapshot_hash": "sha256:9d1b5b4dc304b1d6b1b11059a26d96ca97d1c0d43857523058f973c12bddc6a4",
+      "custody_role": "withheld_target"
+    }
+  ],
+  "frozen_relation": {
+    "statement": "Held lower moments, third generated quadrupole difference, field-energy square, half-One coupling and rank-two transport force the complete positive-magnitude radiated-power law.",
+    "target_did_not_select_law": true
+  },
+  "withheld_targets": [
+    {
+      "target_id": "D9Q-WITHHELD-HISTORICAL-PREREQUISITE-AND-DOUBLE-PULSAR-RECORD",
+      "source_id": "D9Q-QUADRUPOLE-RADIATED-POWER-COMPARISON",
+      "content_withheld_from_prediction": true
+    }
+  ],
+  "prediction_protocol": {
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ]
+  },
+  "evaluation_protocol": {
+    "metrics": [
+      {
+        "metric_id": "quadrupole-power-binary-timing-and-scope-vector",
+        "all_rows": true
+      }
+    ],
+    "acceptance_condition": "Exact quadrupole-first third-rate square, static emptiness, amplitude-square scaling, shell conservation, all source rows and exact normalized timing comparison pass without fitting, forbidden scalar or target selection.",
+    "falsification_condition": "Any changed source, omitted row, failed exact power identity, normalized timing record excluding the One at its registered uncertainty, overgeneralized regime, fitted value, free correction or pre-seal target access rejects."
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "kind": "boundary"
+    }
+  ],
+  "target_access_policy": "structurally-denied-before-seal",
+  "row_retention_policy": "retain-all-forty-eight-historical-prerequisite-measurement-correction-uncertainty-and-scope-rows",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "status": "measured"
+}

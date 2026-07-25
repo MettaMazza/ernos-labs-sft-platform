@@ -1642,3 +1642,32 @@ does not measure universal Fold fractions.
 No engine or protocol file changed. The regenerated inheritance ledger is now
 331 same-strength closed and 167 open. D9o has no remaining work. The next
 sequential V1 Physics obligation is D9q.
+
+## 53. D9q quadrupole radiated-power law closed
+
+`SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012` composes the admitted
+quadrupole-first, field-energy-square, half-One coupling and rank-two boundary
+laws. Held source and momentum records close monopole and dipole radiation;
+the third generated quadrupole difference is the first radiative rate. The
+exact cubic witness retains third rate `6`, so half-One times its square gives
+power `18`; doubling amplitude gives rate `12` and power `72`. A static
+quadrupole is an empty radiation record. Rank-two shell density quarters at
+every binary-radius successor while total power remains invariant.
+
+The target-free law and distinct implementation regenerated all 2,916 forms
+and left one survivor. The formal prediction was committed as `6d2fc8c`
+before primary target access. The untouched engine admitted the completed
+claim on its first official execution with receipt
+`sha256:e43448d651ade64487e4cbd44620c4812ffafcb62d20bd71c9c3bde51cdb4db6`.
+Only after the formal freeze did the complete 56-page primary Double Pulsar
+paper open. All 48 registered rows were retained, including Shklovskii,
+Galactic and spin-down corrections, measured GW decay
+`-1.247782(79)e-12`, total prediction `-1.247827(+6/-7)e-12`, ratio
+`0.999963(63)`, the extreme equation-of-state rerun and every stated regime
+and future-kinematic limitation. The exact normalized One lies inside the
+published uncertainty without becoming a fitted input.
+
+No engine or protocol file changed. The regenerated inheritance ledger is now
+332 same-strength closed and 166 open. D9q has no remaining work. The next
+sequential V1 Physics obligation is D10f: the single simultaneous massless,
+One-speed and confined strong-carrier law with complete PDG correspondence.

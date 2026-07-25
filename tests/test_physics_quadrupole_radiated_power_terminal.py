@@ -13,6 +13,11 @@ from sft.physics.quadrupole_radiated_power_terminal_law_v1 import (
     radiated_power_certificate,
     static_quadrupole_trace,
 )
+from sft.physics.quadrupole_radiated_power_terminal_validation_v1 import (
+    authoritative_record,
+    exact_measurement_analysis,
+    experiment_registration_record,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -66,6 +71,20 @@ class QuadrupoleRadiatedPowerTests(unittest.TestCase):
         decisions = tuple(program.decide_candidate(candidate) for candidate in census.candidates)
         self.assertTrue(program.closure_evidence(decisions).minimality_passed)
         self.assertTrue(all(control.passed for control in program.run_controls()))
+
+    def test_postseal_complete_binary_comparison(self):
+        record = authoritative_record(ROOT)
+        analysis = exact_measurement_analysis(record["registered_target"])
+        self.assertTrue(analysis["all_target_rows_retained"])
+        self.assertTrue(analysis["historical_relation_retained"])
+        self.assertTrue(analysis["primary_quadrupole_classification_matches"])
+        self.assertTrue(analysis["measured_contains_One_at_published_uncertainty"])
+        self.assertTrue(analysis["measured_within_95_percent_boundary"])
+        self.assertTrue(analysis["extreme_EOS_contains_One"])
+        self.assertFalse(analysis["negative_external_sign_used_as_proof"])
+        self.assertFalse(analysis["fitted_value_used"])
+        self.assertFalse(analysis["free_correction_used"])
+        self.assertEqual(len(experiment_registration_record()["source_hashes"]), 11)
 
 
 if __name__ == "__main__":

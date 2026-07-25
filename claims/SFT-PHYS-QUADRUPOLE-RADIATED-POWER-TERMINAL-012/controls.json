@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012",
+  "controls": [
+    {
+      "expected_behavior": "Reject numerical-zero static power or linear amplitude scaling.",
+      "kind": "false_premise",
+      "observed_behavior": "Static radiation is empty and doubled third rate gives fourfold power.",
+      "passed": true,
+      "receipt_hash": "sha256:e5d34752bf8c897a64aa0754ccdaa54c0d3200eb23175fa89cf22fb2632490cc"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities are unique.",
+      "passed": true,
+      "receipt_hash": "sha256:0b5a37b200f6544185da03decea0e8f27bba78ad0ff859e5920232c0a780f049"
+    },
+    {
+      "expected_behavior": "Reject free derivative order, pre-seal target access and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only generated third rate, sealed target custody and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:b4b67644c9dcf9c22ff5b0902cd3465f324534fcbd35e159a14cc378341037ed"
+    }
+  ]
+}
