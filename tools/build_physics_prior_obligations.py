@@ -88,6 +88,7 @@ V2_PHYSICS_STEPS = values(
 V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "PH2": ("SFT-INFO-ENTROPY-UNCERTAINTY-001", "SFT-MATH-SELF-SIMILAR-CONVERGENCE-002", "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008"),
     "PH3": ("SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007", "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008", "SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008"),
+    "D9f": ("SFT-PHYS-SPACE-DIMENSION-THREE-001", "SFT-PHYS-FIELD-INVERSE-SQUARE-001", "SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009"),
     "E6": ("SFT-MATH-EXACT-RELATIONS-002", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
     "A1": ("SFT-PHYS-WAVE-SUPERPOSITION-001", "SFT-PHYS-MECH-CONSERVATION-001"),
     "A2": ("SFT-PHYS-WAVE-INTERFERENCE-001", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003"),
@@ -484,9 +485,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "The support form remains open at D6. Its unit-free spread product, exact spacing cancellation and attained-One boundary require a separate versioned successor and independent census.",
     },
     "D9f": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Three-space is independently forced and inverse-square dilution validated. The all-dimension orbital-restoration census proving stable below four, marginal at four and unstable above four remains absent.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; for every positive whole dimension d at least two and every outward ratio q above the One, positive denominator ordering between q^(d-1) gravity and q^3 centrifugal response forces restoring orbits at d=2,3, exact marginality at d=4 and nonrestoring response for every d at least five. Both Cambridge comparison records open only after sealing and retain the force, potential, perturbation and effective-minimum criteria without signed-force or negative-exponent imports.",
     },
     "D9m": {
         "formal_same_strength_status": "versioned_successor_required",
@@ -1459,7 +1460,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4", "PH2", "PH3",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4", "PH2", "PH3", "D9f",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

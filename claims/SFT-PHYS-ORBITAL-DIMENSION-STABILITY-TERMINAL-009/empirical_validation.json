@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009",
+  "data_source_ids": [
+    "D9F-EXTERNAL-ORBITAL-DIMENSION-STABILITY"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9f7771d2ce0fb180b142f3f1e39f8136845a4c0e746a9885a5833fd441d9f01d",
+  "falsification_condition": "Reject if either Cambridge source or the source record changes; if any force-power, balance, perturbation, stability, dimension, marginal, unstable-family, potential or effective-potential row is omitted; if the exact positive-magnitude census differs; if dimension one is silently admitted; if a signed force, negative exponent, measured fit or free correction enters proof; or if targets enter before sealing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cc3c2fd11a02259dbf08fb7cce0e023c9b2386e05bc2e71ff27254e41253c084",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:77079f7d715693667b7dd72b7c2366cc53c91dcc281322c437c0ea2f60337b39",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c27740c1c3f55a46c27c078c8283b56bc36639e40cf7406a1b6f510912684ce3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:8c19ad7331c4a999fd0d36e5d84949b7fd77723ed6db9f85ef70e7bd01c6e94b",
+    "prediction_seal_hash": "sha256:0e14cf4c37f77c57debe3f660ba5e6f7546a2bbfcb33344dc1c31b9f5dbdaae1",
+    "program_hash": "sha256:623000cf4c86ff7eed145d3f79cf2d59217bbb9c7a3d26a0358c6a689b1780fc",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6f1658da2dec79f02c46f5c7b3208b4240e6640e00409790c21971ed2609f56f",
+    "target_material_present": false,
+    "trace_hash": "sha256:7d314b7cb46e5019c094233691a949e3236ffb2d38976cb49aa5cc97f0da5b56"
+  },
+  "measurement_receipt_hash": "sha256:0b1572fc86c9e9d4501efee787ab5388dc4991261d757828f419e19c65ccef09",
+  "measurements": [
+    "Both Cambridge derivations are byte-locked and opened only after the V3 prediction seal.",
+    "The independent census retains dimensions two through twelve at outward ratios three-halves, two and five-halves.",
+    "Dimensions two and three are restoring at every registered ratio; dimension four is exactly marginal; every tested dimension from five through twelve is nonrestoring.",
+    "The successor proof extends the unstable result to every higher positive whole dimension because each dimension successor multiplies only the gravity denominator by q greater than One.",
+    "The external inverse-(N-1) force result, N<4 boundary, potential-power boundary and strict-minimum criterion all match without fitting.",
+    "No signed force, negative exponent, irrational, measured parameter or correction enters the Fold proof."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:15d1d6b2dea21be60367f45f2ec9001b11598445a30182d8edf34f330dfc4fc6",
+    "custodian_id": "SFT-EXP-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009-external-target-custodian",
+    "experiment_registration_hash": "sha256:9f7771d2ce0fb180b142f3f1e39f8136845a4c0e746a9885a5833fd441d9f01d",
+    "prediction_seal_hash": "sha256:0e14cf4c37f77c57debe3f660ba5e6f7546a2bbfcb33344dc1c31b9f5dbdaae1",
+    "registered_target_identity_hash": "sha256:6f1658da2dec79f02c46f5c7b3208b4240e6640e00409790c21971ed2609f56f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7ec3daf6901549d47d7b2bc2739664b85f3c0840bcf3ff45d59089e8e92bf8b3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:167d4ec9cec1fbf7ca5a52db76919bb2d1c3bf11cec0074ae83c5c36f549c15b"
+}

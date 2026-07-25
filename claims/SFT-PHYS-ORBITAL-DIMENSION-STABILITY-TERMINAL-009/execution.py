@@ -1,0 +1,3 @@
+from pathlib import Path
+from sft.physics.orbital_dimension_stability_terminal_execution_v1 import build_orbital_dimension_stability_execution
+def build_execution(root:Path):return build_orbital_dimension_stability_execution(root,Path(__file__))

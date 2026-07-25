@@ -1549,3 +1549,22 @@ the frozen engine tree remains `ad30f4866c18b2adbade95a0b2de40d5caa61308`.
 The ledger is now 327 closed and 171 open. PH3 has no remaining work; the next
 still-open V1 Physics obligation is D9f, the all-dimension orbital-restoration
 stability census.
+
+## 49. D9f all-dimension orbital stability closed
+
+`SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009` compares only positive
+magnitudes after an outward ratio `q>One`: gravity has denominator `q^(d-1)`
+and centrifugal response `q^3`. This forces restoring response for `d=2,3`,
+exact marginality at `d=4`, and nonrestoring response for every `d>=5` by a
+successor proof. No signed force or negative exponent is imported.
+
+The target-free 2,916-form claimant and distinct implementation leave one
+survivor. The untouched engine admitted it on the first official execution,
+receipt `sha256:9a067d10ece75b8300bec3c77193649313dbc2fcc116f721bd0fef54544a433c`.
+Only after sealing did both complete Cambridge central-force records open;
+all fourteen force, perturbation, dimension, potential and effective-minimum
+rows were retained. No measured parameter was fitted.
+
+The ledger is now 328 closed and 170 open. D9f has no remaining work. The next
+still-open V1 Physics obligation is D9m, the decreasing post-Newtonian
+correction recurrence and weak-field fixed-point comparison.

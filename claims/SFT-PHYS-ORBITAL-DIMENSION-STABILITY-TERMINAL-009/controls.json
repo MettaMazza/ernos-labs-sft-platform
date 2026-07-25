@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009",
+  "controls": [
+    {
+      "expected_behavior": "Reject stable five-space orbit under inverse-fourth-power gravity.",
+      "kind": "false_premise",
+      "observed_behavior": "Gravity falls below inverse-cube centrifugal response.",
+      "passed": true,
+      "receipt_hash": "sha256:f687597bf5fcd7de0c8c037b98df2b6946078182352a98c83f7646ec777826a8"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities unique.",
+      "passed": true,
+      "receipt_hash": "sha256:5f9c0ad545be40ca825517099110bae199281727e06768826c0280cdfae9b73b"
+    },
+    {
+      "expected_behavior": "Reject negative-exponent import, pre-seal observation and correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only positive comparison, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:76d0758795c16363c1a6e8956a090b883ca59eb0503a7800d3814fc4a6728c2c"
+    }
+  ]
+}
