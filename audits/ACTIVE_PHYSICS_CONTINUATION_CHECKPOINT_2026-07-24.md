@@ -1091,3 +1091,57 @@ open. V1 V-7 has no remaining work at its declared boundary. V2 Step 150
 remains open because its complete stellar fusion-chain recurrence is a distinct
 obligation. The next V1 nuclear obligation is V-8: deuteron triplet binding,
 diproton/dineutron exclusion and authoritative spin/binding comparison.
+
+41. V1 V-8 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`, engine receipt
+     `sha256:c2a2ca11504bbe66760011c57dff2e8459f171c836b754d24b2ae3c200fa4cbc`;
+   - derivation seal
+     `sha256:a618c2d97aa7b0e98f2b95f55e582ae9432238180faa3b17c53e0450b5c6ab94`;
+   - independent validation
+     `sha256:cceefee5c41149be61fff0a214f71e987fb4cc83dea73c842847275d6ec2f9bf`;
+   - independent certificate
+     `sha256:09b05f9132863ba86a8807390fef592e706e53b45b72e9406eab6a570eb1e714`;
+   - empirical validation
+     `sha256:05f87ae0d5eee06b72dbf7925eb6aa00b14b45a59a12a9bd2df572552b92be32`;
+   - measurement receipt
+     `sha256:517fdc91b68661db3cf84eb534f213a8acfdb139ab490279a5aed8744ae9241d`;
+   - source manifest
+     `sha256:cf08b6132dc2c644a2a6316b6fc508ae22948dbb880c4ffd460115e699b0b605`.
+
+The formal claimant contains no target reader, measured nuclide/spin/binding
+value, stored expected survivor or submission-controlled admission flag. Its
+complete eight-axis product contains 2,592 forms and one engine-computed
+survivor. Complete two-label exchange enumeration gives three preserving
+readings and one alternating reading, hence exact supports `3/4` and `1/4`.
+The admitted two-boundary residual act is `1/4`, leaving `1/2` only in the
+preserving channel and the structural empty form in the alternating channel.
+
+The complete least-ground spatial/charge/spin exchange ledger requires the
+proton-neutron pair to use the preserving spin hand and both identical pairs
+to use the alternating spin hand. Consequently proton-neutron alone retains
+ground binding support, with composite spin One and three readings. The result
+does not misuse Pauli exclusion: exclusion permits and requires the identical
+singlet in this ground ledger; the independently admitted residual law then
+exhausts its support. Proton Coulomb opposition is retained as a secondary pp
+boundary and cannot explain the nn result.
+
+Only after sealing did the five-source target open. All 3,558 AME2020 numeric
+coordinates and all 5,843 NUBASE2020 states are retained; their complete A=2
+inventories contain stable deuterium-2 alone, with directly measured `1+*`
+spin/parity. Exact NIST CODATA mass-energy propagation gives central binding
+`222456637/100000000 MeV` and interval
+`[111228251/50000000, 55614193/25000000] MeV`, which overlaps the AME2020
+interval `[11122829/5000000, 11122833/5000000] MeV`. Both complete IAEA JENDL
+spin-channel parameter sets and every registered spin-dependence observation
+are retained, including the bound parallel-spin deuteron, singlet/triplet
+separation and their `1/4 : 3/4` weights.
+
+The five focused tests passed once. The frozen engine admitted the claim on its
+first official execution and the identical receipt was reproduced once for
+evidence materialization. The engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`. The live inheritance ledger is now
+320 same-strength closed and 178 open, with 51 mapped open and 127 unmapped
+open. V1 Phase V is closed at every declared target. The next sequential V1
+Physics obligation is VI-1: exact scattering/cross-section structure,
+Rutherford and Compton limits, and complete authoritative comparison.

@@ -1,0 +1,154 @@
+{
+  "custody": {
+    "complete_reported_rows_retained": true,
+    "development_targets_already_known": true,
+    "empirical_prediction_protocol": true,
+    "engine_prediction_sealed_before_target_release_within_run": true,
+    "formal_relations_contain_measurement": false,
+    "measurements_select_formal_survivors": false,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-prediction",
+    "target_inaccessible_during_prediction_execution": true
+  },
+  "measurement_scope": {
+    "amdc_ame2020": {
+      "a2_coordinate_count": 1,
+      "a2_coordinates": [
+        {
+          "binding_energy_per_nucleon_keV": "1112.2831",
+          "binding_energy_per_nucleon_standard_uncertainty_keV": "0.0002",
+          "charge_count": 1,
+          "mass_number": 2,
+          "neutron_count": 1,
+          "nuclide": "2H"
+        }
+      ],
+      "complete_numeric_coordinate_row_count": 3558,
+      "interpretation_boundary": "The complete evaluated mass table contains one A=2 coordinate. Absence of other A=2 coordinates is an external census result, not a formal derivation input."
+    },
+    "amdc_nubase2020": {
+      "a2_state_count": 1,
+      "a2_states": [
+        {
+          "atomic_number": 1,
+          "direct_measurement_marker": "*",
+          "half_life_inscription": "stbl",
+          "mass_number": 2,
+          "nuclide": "2H",
+          "spin_parity": "1+"
+        }
+      ],
+      "complete_state_row_count": 5843,
+      "format_note": "NUBASE2020 columns 89:102 mark directly measured spin/parity with an asterisk.",
+      "interpretation_boundary": "The complete evaluated state table contains one A=2 state. It supplies the external bound-nuclide census and directly measured deuteron spin/parity after the formal seal."
+    },
+    "iaea_jendl1": {
+      "deuteron_binding_energy_MeV": "2.225",
+      "pdf_page_index": 25,
+      "printed_page": 19,
+      "reported_parameter_sets": [
+        {
+          "effective_range_singlet_fm": "2.76",
+          "effective_range_singlet_standard_uncertainty_fm": "0.05",
+          "effective_range_triplet_fm": "1.750",
+          "effective_range_triplet_standard_uncertainty_fm": "0.005",
+          "scattering_length_singlet_fm": "-23.719",
+          "scattering_length_singlet_standard_uncertainty_fm": "0.013",
+          "scattering_length_triplet_fm": "5.414",
+          "scattering_length_triplet_standard_uncertainty_fm": "0.005",
+          "source": "Lomon and Wilson"
+        },
+        {
+          "effective_range_singlet_fm": "2.81",
+          "effective_range_singlet_standard_uncertainty_fm": "0.05",
+          "effective_range_triplet_fm": "1.760",
+          "effective_range_triplet_standard_uncertainty_fm": "0.005",
+          "scattering_length_singlet_fm": "-23.749",
+          "scattering_length_singlet_standard_uncertainty_fm": "0.009",
+          "scattering_length_triplet_fm": "5.423",
+          "scattering_length_triplet_standard_uncertainty_fm": "0.004",
+          "source": "Dilg"
+        }
+      ],
+      "retained_scope": "The complete printed singlet/triplet scattering-length and effective-range table is retained. Signed dimensional inscriptions remain external records and never enter the positive formal proof domain."
+    },
+    "iaea_nuclear_theory": {
+      "pdf_page_index": 35,
+      "printed_page": 25,
+      "registered_observations": [
+        "Nuclear forces are spin-dependent.",
+        "The neutron-proton system has a bound state, the deuteron.",
+        "The neutron and proton spins in the deuteron are correlated and parallel.",
+        "Only the triplet cross section is related to deuteron properties.",
+        "Experimentally determined singlet and triplet zero-energy cross sections differ by almost one order of magnitude."
+      ],
+      "reported_cross_section_context": {
+        "deuteron-only_parameter_range_upper_mb": "9.32",
+        "deuteron-only_parameter_range_lower_mb": "2.33",
+        "experimental_zero_energy_np_cross_section_mb": "20.36",
+        "experimental_zero_energy_np_cross_section_standard_uncertainty_mb": "0.10",
+        "singlet_weight": "1/4",
+        "triplet_weight": "3/4"
+      }
+    },
+    "nist_codata2022": {
+      "reported_mass_energy_equivalents_MeV": [
+        {
+          "quantity": "proton mass energy equivalent in MeV",
+          "standard_uncertainty_MeV": "0.00000029",
+          "value_MeV": "938.27208943"
+        },
+        {
+          "quantity": "neutron mass energy equivalent in MeV",
+          "standard_uncertainty_MeV": "0.00000048",
+          "value_MeV": "939.56542194"
+        },
+        {
+          "quantity": "deuteron mass energy equivalent in MeV",
+          "standard_uncertainty_MeV": "0.00000058",
+          "value_MeV": "1875.61294500"
+        }
+      ],
+      "relation_boundary": "The sealed mass-energy conservation relation is evaluated after release as proton plus neutron mass-energy support taking the bound deuteron support."
+    }
+  },
+  "retrieval_date": "2026-07-25",
+  "schema": "sft-v3-deuteron-dinucleon-source-record/1",
+  "source_id": "AMDC-NIST-IAEA-DEUTERON-DINUCLEON-2026",
+  "sources": [
+    {
+      "measurement_body": "Atomic Mass Data Center",
+      "snapshot_hash": "sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/ame2020-mass_1.mas20",
+      "source_id": "AMDC-AME2020-MASS-1-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/filel.html"
+    },
+    {
+      "measurement_body": "Atomic Mass Data Center",
+      "snapshot_hash": "sha256:1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nubase2020-nubase_4.mas20",
+      "source_id": "AMDC-NUBASE2020-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/web/nubase_en.html"
+    },
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt",
+      "source_id": "NIST-CODATA-2022",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/index.html"
+    },
+    {
+      "measurement_body": "International Atomic Energy Agency Nuclear Data Section",
+      "snapshot_hash": "sha256:f504aca94fab528cc9ddcdfbdad79b7390fd2ba955642ed755c9b774f341ad76",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/iaea-jendl-np-data.pdf",
+      "source_id": "IAEA-NDS-JENDL1-INDC-JAP-45",
+      "source_uri": "https://nds.iaea.org/records/c44qg-nyz17"
+    },
+    {
+      "measurement_body": "International Atomic Energy Agency",
+      "snapshot_hash": "sha256:74f7d06bc8b3c6ba719f5b6afb2e0a39fe9bf521f3b7a11bcafb666f1fe1761c",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/iaea-nuclear-theory.pdf",
+      "source_id": "IAEA-THEORY-NUCLEAR-STRUCTURE-STI-PUB-249",
+      "source_uri": "https://nds.iaea.org/records/qj1ka-8rt63"
+    }
+  ]
+}

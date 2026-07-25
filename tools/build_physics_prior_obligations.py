@@ -264,6 +264,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "V-5": ("SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001", "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001", "SFT-PHYS-QUANTUM-SPIN-001"),
     "V-6": ("SFT-PHYS-NUCLEAR-RADIOACTIVITY-001", "SFT-PHYS-QUANTUM-TUNNELLING-001", "SFT-PHYS-WEAK-PARITY-FIBRE-002", "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005"),
     "V-7": ("SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006"),
+    "V-8": ("SFT-PHYS-QUANTUM-SPIN-001", "SFT-PHYS-QUANTUM-EXCLUSION-001", "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005", "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006"),
 }
 
 
@@ -601,9 +602,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "none; the terminal direction law and yield/threshold successor jointly close binary topology, exact count conservation, positive binding gain, retained release, fusion-greater-per-nucleon, fission-greater-total, distinct charged/neutral/internal threshold carriers and complete AMDC/IAEA comparison while retaining reaction-specific dimensional values.",
     },
     "V-8": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Spin and exclusion are sealed. The deuteron triplet binding discriminator, diproton/dineutron exclusion and authoritative spin/binding comparison remain.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; complete two-label exchange support, the spatial/spin/charge fermionic ledger and the admitted quarter-One residual boundary jointly force proton-neutron triplet binding with spin One and exclude proton-proton and neutron-neutron ground binding. Complete AME2020, NUBASE2020, NIST CODATA and IAEA comparison retains the unique A=2 bound inventory, directly measured 1+ spin, exact binding-energy overlap and distinct singlet/triplet records.",
     },
     "N8": {
         "formal_same_strength_status": "partial",
@@ -1451,7 +1452,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",
