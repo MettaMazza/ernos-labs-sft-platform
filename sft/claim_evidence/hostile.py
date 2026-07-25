@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Mapping
 
 from sft.engine.canonical import sha256_identity
-from sft.engine.fold_language import FoldLanguageHalt, FoldProgram, fold_program_from_mapping
+from sft.claim_evidence.fold_language import FoldLanguageHalt, FoldProgram, fold_program_from_mapping
 
 
 class HostilePackageHalt(RuntimeError):

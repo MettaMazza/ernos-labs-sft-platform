@@ -6,8 +6,8 @@ import sys
 import unittest
 from unittest.mock import patch
 
-from sft.engine import publication_compliance
-from sft.engine.publication_compliance import (
+from sft import publication_compliance
+from sft.publication_compliance import (
     CurrentPublicationHalt,
     audit_branch,
     require_current_publication_ready,
@@ -63,7 +63,7 @@ class PublicationComplianceTests(unittest.TestCase):
             return real_read(path)
 
         with patch(
-            "sft.engine.publication_compliance._read",
+            "sft.publication_compliance._read",
             side_effect=read_with_incomplete_foundation_ledger,
         ):
             result = audit_branch(ROOT, "foundation")
@@ -141,9 +141,9 @@ class PublicationComplianceTests(unittest.TestCase):
                 }
             raise AssertionError(path)
 
-        with patch("sft.engine.publication_compliance._read", side_effect=read_fixture):
+        with patch("sft.publication_compliance._read", side_effect=read_fixture):
             with patch(
-                "sft.engine.publication_compliance._live_claim_ids",
+                "sft.publication_compliance._live_claim_ids",
                 return_value=("SFT-PHYS-X",),
             ):
                 result = require_current_publication_ready(ROOT, "physics")
@@ -177,9 +177,9 @@ class PublicationComplianceTests(unittest.TestCase):
                 }
             raise AssertionError(path)
 
-        with patch("sft.engine.publication_compliance._read", side_effect=read_fixture):
+        with patch("sft.publication_compliance._read", side_effect=read_fixture):
             with patch(
-                "sft.engine.publication_compliance._live_claim_ids",
+                "sft.publication_compliance._live_claim_ids",
                 return_value=("SFT-PHYS-X",),
             ):
                 result = audit_branch(ROOT, "physics")

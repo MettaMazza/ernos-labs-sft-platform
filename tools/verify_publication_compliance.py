@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from sft.engine.publication_compliance import (  # noqa: E402
+from sft.publication_compliance import (  # noqa: E402
     BRANCH_PREFIXES,
     CurrentPublicationHalt,
     audit_branch,

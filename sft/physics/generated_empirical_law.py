@@ -14,29 +14,31 @@ from pathlib import Path
 import platform
 from typing import Sequence
 
+from sft.claim_evidence import (
+    CapabilityClosedFoldInterpreter,
+    CrossPlatformCustodyExchange,
+    FoldOpcode,
+    HostilePackageAuditor,
+    TargetVault,
+    fold_program_from_mapping,
+    snapshot_protected_tree,
+    target_identity_from_release,
+)
 from sft.engine import (
     Candidate,
     CandidateCensus,
     CandidateDecision,
-    CapabilityClosedFoldInterpreter,
     ClaimRegistration,
     ClosureEvidence,
     ClosureScope,
     ControlKind,
     ControlResult,
-    CrossPlatformCustodyExchange,
     EmpiricalValidation,
     EvidenceMode,
-    FoldOpcode,
-    HostilePackageAuditor,
     ProvenanceClass,
     ROOT_THEOREM,
-    TargetVault,
-    fold_program_from_mapping,
     seal_isolation_certificate,
     seal_target_custody_certificate,
-    snapshot_protected_tree,
-    target_identity_from_release,
     unsealed_isolation_certificate,
     unsealed_target_custody_certificate,
 )

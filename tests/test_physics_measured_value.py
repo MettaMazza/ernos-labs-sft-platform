@@ -2,7 +2,7 @@ from fractions import Fraction
 from pathlib import Path
 import unittest
 
-from sft.engine.fold_language import CapabilityClosedFoldInterpreter, FoldPair, PositiveRatio
+from sft.claim_evidence import CapabilityClosedFoldInterpreter, FoldPair, PositiveRatio
 from sft.physics.measured_value import (
     CODATA_SOURCE_HASH,
     CODATA_SOURCE_ID,
@@ -16,7 +16,7 @@ from sft.physics.measured_value import (
     load_codata_interval,
     measured_value_program_document,
 )
-from sft.engine.fold_language import fold_program_from_mapping
+from sft.claim_evidence import fold_program_from_mapping
 
 
 ROOT = Path(__file__).resolve().parent.parent

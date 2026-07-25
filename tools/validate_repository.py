@@ -11,14 +11,16 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from sft.engine import (  # noqa: E402
-    ENGINE_ID,
-    REQUIRED_DENIED_CAPABILITIES,
-    ROOT_THEOREM,
+from sft.claim_evidence import (  # noqa: E402
     CapabilityClosedFoldInterpreter,
     CrossPlatformCustodyExchange,
     FoldOpcode,
     HostilePackageAuditor,
+)
+from sft.engine import (  # noqa: E402
+    ENGINE_ID,
+    REQUIRED_DENIED_CAPABILITIES,
+    ROOT_THEOREM,
 )
 from sft.engine.receipt_io import verify_receipt_mapping  # noqa: E402
 
@@ -47,7 +49,7 @@ REQUIRED_FILES = (
     "audits/physics_prior_value_audit_2026-07-24.json",
     "governance/claim.schema.json",
     "governance/engine_policy.json",
-    "sft/engine/publication_compliance.py",
+    "sft/publication_compliance.py",
     "tools/verify_publication_compliance.py",
     "governance/engine_receipt.schema.json",
     "governance/execution_manifest.schema.json",

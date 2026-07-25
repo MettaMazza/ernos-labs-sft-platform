@@ -13,21 +13,23 @@ import json
 from pathlib import Path
 import platform
 
-from sft.engine import (
+from sft.claim_evidence import (
     CapabilityClosedFoldInterpreter,
-    ClaimRegistration,
     CrossPlatformCustodyExchange,
-    EmpiricalValidation,
-    EvidenceMode,
     HostilePackageAuditor,
-    ProvenanceClass,
-    ROOT_THEOREM,
     TargetVault,
     fold_program_from_mapping,
-    seal_isolation_certificate,
-    seal_target_custody_certificate,
     snapshot_protected_tree,
     target_identity_from_release,
+)
+from sft.engine import (
+    ClaimRegistration,
+    EmpiricalValidation,
+    EvidenceMode,
+    ProvenanceClass,
+    ROOT_THEOREM,
+    seal_isolation_certificate,
+    seal_target_custody_certificate,
     unsealed_isolation_certificate,
     unsealed_target_custody_certificate,
 )

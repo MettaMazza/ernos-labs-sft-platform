@@ -17,25 +17,28 @@ from pathlib import Path
 import platform
 from typing import Iterable
 
-from sft.engine import (
+from sft.claim_evidence import (
     CapabilityClosedFoldInterpreter,
     CrossPlatformCustodyExchange,
-    EmpiricalValidation,
+    FoldPair,
     FoldOpcode,
     HostilePackageAuditor,
+    PositiveRatio,
+    TargetRelease,
     TargetVault,
     fold_program_from_mapping,
-    seal_isolation_certificate,
-    seal_target_custody_certificate,
     snapshot_protected_tree,
     target_identity_from_release,
+)
+from sft.engine import (
+    EmpiricalValidation,
+    seal_isolation_certificate,
+    seal_target_custody_certificate,
     unsealed_isolation_certificate,
     unsealed_target_custody_certificate,
 )
 from sft.engine.canonical import sha256_identity
-from sft.engine.custody import TargetRelease
 from sft.engine.empirical import BlindExperimentBoundary, PredictionEnvelope
-from sft.engine.fold_language import FoldPair, PositiveRatio
 from sft.engine.source import hash_file
 
 

@@ -19,17 +19,19 @@ from sft.chemistry.generated_law import (
     experiment_registration_record,
     prediction_program_document,
 )
-from sft.engine import (
+from sft.claim_evidence import (
     CapabilityClosedFoldInterpreter,
     CrossPlatformCustodyExchange,
-    EmpiricalValidation,
     HostilePackageAuditor,
     TargetVault,
     fold_program_from_mapping,
-    seal_isolation_certificate,
-    seal_target_custody_certificate,
     snapshot_protected_tree,
     target_identity_from_release,
+)
+from sft.engine import (
+    EmpiricalValidation,
+    seal_isolation_certificate,
+    seal_target_custody_certificate,
     unsealed_isolation_certificate,
     unsealed_target_custody_certificate,
 )

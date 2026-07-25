@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from sft.engine import (
+from sft.claim_evidence import (
     EMPTY_ONE,
     CapabilityClosedFoldInterpreter,
     CrossPlatformCustodyExchange,

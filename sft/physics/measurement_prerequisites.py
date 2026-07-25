@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from sft.engine import (
+from sft.claim_evidence import (
     CapabilityClosedFoldInterpreter,
     CrossPlatformCustodyExchange,
     FoldInstruction,
@@ -193,4 +193,3 @@ PREREQUISITE_SPECS = (
 
 for _spec in PREREQUISITE_SPECS:
     _spec.validate()
-

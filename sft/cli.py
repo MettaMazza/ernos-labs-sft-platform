@@ -8,7 +8,7 @@ from pathlib import Path
 
 from sft import BUILD_GENERATION, BUILD_PHASE
 from sft.engine import ENGINE_ID, ROOT_THEOREM
-from sft.engine.publication_compliance import BRANCH_PREFIXES, audit_branch
+from sft.publication_compliance import BRANCH_PREFIXES, audit_branch
 
 
 ROOT = Path(__file__).resolve().parent.parent
