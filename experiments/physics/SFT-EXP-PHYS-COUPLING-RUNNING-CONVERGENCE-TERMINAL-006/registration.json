@@ -1,0 +1,71 @@
+{
+  "claim_id": "SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",
+  "comparison_protocol": "exact rational interval ordering, complete-row and figure-class custody, opposite carrier-specific energy-direction control, non-promotion of formal convergence to measurement and hostile controls",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",
+  "falsification_condition": "Reject if any of the seven PDG QCD Table 9.1 rows, nine Figure 9.4 measurement classes, exact low- and m_Z-scale strong-coupling rows, five current alpha(0) rows, eleven current hadronic Delta-alpha rows, published electromagnetic running relation, direct LEP observation or explicit prior Z-scale endpoint is omitted or altered; if the separated strong-coupling intervals do not decrease from 1.37 GeV to m_Z; if the explicit inverse electromagnetic endpoint intervals do not decrease from the Thomson limit to the Z scale; if a universal physical energy sign is imposed despite the sealed carrier-specific coordinates; if the exact Fold support successor, running-share increment, pair-gap shrinkage or finite tolerance witness fails; if the formal convergence prediction is falsely labelled a direct measurement; or if any target content enters before the prediction seal.",
+  "frozen_relation": "The complete prime-sector ladder shares One-base binary support; each running share is the holding part of sector plus support, every share increases with support, every exact pair gap decreases, and every finite tolerance has a generated witness. Physical energy orientation is carrier-specific.",
+  "prediction_program": {
+    "instructions": [
+      {"arguments": ["support_one"], "destination": "support_one", "opcode": "input"},
+      {"arguments": ["support_two"], "destination": "support_two", "opcode": "input"},
+      {"arguments": ["support_four"], "destination": "support_four", "opcode": "input"},
+      {"arguments": ["support_eight"], "destination": "support_eight", "opcode": "input"},
+      {"arguments": ["pair_gap_base"], "destination": "pair_gap_base", "opcode": "input"},
+      {"arguments": ["pair_gap_level_four"], "destination": "pair_gap_level_four", "opcode": "input"},
+      {"arguments": ["finite_tolerance"], "destination": "finite_tolerance", "opcode": "input"},
+      {"arguments": ["finite_witness_gap"], "destination": "finite_witness_gap", "opcode": "input"},
+      {"arguments": ["scale_relation"], "destination": "scale_relation", "opcode": "input"},
+      {"arguments": ["running_relation"], "destination": "running_relation", "opcode": "input"},
+      {"arguments": ["gap_relation"], "destination": "gap_relation", "opcode": "input"},
+      {"arguments": ["convergence_relation"], "destination": "convergence_relation", "opcode": "input"},
+      {"arguments": ["translation_relation"], "destination": "translation_relation", "opcode": "input"},
+      {"arguments": ["sector_2_base"], "destination": "sector_2_base", "opcode": "input"},
+      {"arguments": ["sector_2_level_four"], "destination": "sector_2_level_four", "opcode": "input"},
+      {"arguments": ["sector_3_base"], "destination": "sector_3_base", "opcode": "input"},
+      {"arguments": ["sector_3_level_four"], "destination": "sector_3_level_four", "opcode": "input"},
+      {"arguments": ["sector_5_base"], "destination": "sector_5_base", "opcode": "input"},
+      {"arguments": ["sector_5_level_four"], "destination": "sector_5_level_four", "opcode": "input"},
+      {"arguments": ["sector_7_base"], "destination": "sector_7_base", "opcode": "input"},
+      {"arguments": ["sector_7_level_four"], "destination": "sector_7_level_four", "opcode": "input"},
+      {
+        "arguments": [
+          "support_one", "support_two", "support_four", "support_eight", "pair_gap_base",
+          "pair_gap_level_four", "finite_tolerance", "finite_witness_gap", "scale_relation",
+          "running_relation", "gap_relation", "convergence_relation", "translation_relation",
+          "sector_2_base", "sector_2_level_four", "sector_3_base", "sector_3_level_four",
+          "sector_5_base", "sector_5_level_four", "sector_7_base", "sector_7_level_four"
+        ],
+        "destination": "prediction",
+        "opcode": "word"
+      },
+      {"arguments": ["prediction"], "destination": "", "opcode": "emit"}
+    ],
+    "program_id": "SFT-EXP-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006-exact-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "protocol": "observational-data-informed_target-inaccessible_sealed-prediction",
+  "registered_by": "Maria Smith",
+  "row_retention_policy": "all seven PDG QCD Table 9.1 rows and all three columns; all nine Figure 9.4 measurement classes and its full immutable figure; both exact multi-scale strong rows; all five current alpha(0) rows; all eleven current Delta-alpha rows; the direct-observation statement, published relation and explicit prior high-scale endpoint",
+  "schema": "sft-v3-coupling-running-convergence-experiment/1",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json": "sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953",
+    "experiments/external_sources/physics/snapshots/pdg-2025-electroweak-model.pdf": "sha256:8642888a3408d8c57fc673b379325b07f02948135491f64a2e42320e8929320a",
+    "experiments/external_sources/physics/snapshots/pdg-2026-electroweak-model.pdf": "sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb",
+    "experiments/external_sources/physics/snapshots/pdg-2026-qcd.pdf": "sha256:c04c628d76b18610c5fa2a919c6081918a25b55fb971b6af5829f4ca2baa386f"
+  },
+  "source_id": "PDG-COUPLING-RUNNING-CONVERGENCE-2025-2026",
+  "source_ids": [
+    "PDG-2026-QCD-REVIEW",
+    "PDG-2026-ELECTROWEAK-REVIEW",
+    "PDG-2025-ELECTROMAGNETIC-RUNNING-ENDPOINT"
+  ],
+  "source_record_hash": "sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953",
+  "source_record_path": "experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json",
+  "target_access_policy": "capability-closed prediction; release only after matching seal",
+  "withheld_target_ids": [
+    "PDG-COMPLETE-STRONG-RUNNING-VECTOR",
+    "PDG-COMPLETE-ELECTROMAGNETIC-RUNNING-VECTOR",
+    "PDG-EXPLICIT-ELECTROMAGNETIC-ENDPOINT-PAIR"
+  ]
+}

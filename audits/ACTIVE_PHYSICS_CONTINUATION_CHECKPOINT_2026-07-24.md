@@ -1304,3 +1304,67 @@ declared boundary. The next sequential V1 Physics obligation is VI-3: force the
 generator-indexed running functions, common scale transport, convergence and
 complete authoritative multi-scale coupling comparison without reopening the
 already sealed running directions.
+
+44. V1 VI-3 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`, engine receipt
+     `sha256:b9263f585f01a2401261f465ad250f405a9914da5c53e57ba113f076aeb4f309`;
+   - derivation seal
+     `sha256:ba74e810bf7fdb5eaba6092188c295e809742ad65a33f8e4bc192f3a01326964`;
+   - independent validation
+     `sha256:305e1659813dc637a2e779b3578008bc1144c3318872ad7f8d9a6c0ee6efe283`;
+   - independent certificate
+     `sha256:dfa5fe2d5d8b63a7964d01f099c74abfb48ba490275147c4286b07f1b4645280`;
+   - independent implementation
+     `sha256:d6afafe211ebca3297f1e684cae091e39ca0cc80931b70c3cf11924360fdb9a1`;
+   - empirical validation
+     `sha256:2f1893b335cbcd3be69e125cc935f6b69ab16c56d65aedcc028cfe9c3e85d3cb`;
+   - measurement receipt
+     `sha256:f7b8eb2dd10c0c689ee5dedb5b1add4a6b69ff8466d70e2727964d94289993bc`;
+   - source manifest
+     `sha256:8e5b0d59dd3626f39dcb398cba57819bac31eca897583d65bb5b99084d67f3f9`;
+   - completeness certificate
+     `sha256:b42385ff8cb7a5e2549eb3366d8b9d20f938c894fc43be8ab4771f80e5d486a7`.
+
+The formal claimant contains no source locator, target value, stored expected
+survivor or submission-controlled admission flag. Its complete nine-axis
+product contains 8,748 forms and one engine-computed survivor. The complete
+prime-sector support through seven and One-based binary scale successor force
+the exact running share `g_p(R) = (p + R - 1)/(p + R)`. Its successor take is
+`R/[(p + R)(p + 2R)]`, which is strictly positive. For every `p < q`, the exact
+pair gap is `(q - p)/[(p + R)(q + R)]`, strictly shrinks at every successor and
+has a generated finite witness below every positive rational tolerance. This
+closes convergence constructively without a completed-infinity proof object.
+
+Only after sealing did the registered authoritative comparison open. The
+official current PDG 2026 QCD and electroweak reviews and the explicit PDG 2025
+high-scale electromagnetic endpoint are retained by immutable source hash.
+All seven QCD Table 9.1 rows and three columns, all nine Figure 9.4 measurement
+classes, all five current Thomson-limit inverse-alpha determinations and all
+eleven current hadronic Delta-alpha rows remain in custody. The exact strong
+interval at 1.37 GeV, `[331/1000, 559/1000]`, lies wholly above the exact
+`m_Z` interval `[1171/10000, 1189/10000]`, forcing the measured decrease of
+strong coupling with increasing momentum scale. The explicit Thomson inverse
+interval `[137035999063/1000000000, 27407199821/200000000]` lies wholly above
+the Z-scale inverse interval `[63961/500, 63969/500]`, forcing the measured
+increase of electromagnetic alpha toward the Z scale. These opposite physical
+energy directions are lawful because the sealed coordinates are carrier
+specific: self-source range grows in the strong case, whereas higher momentum
+exposes electromagnetically screened support. Measurements did not select the
+formal survivor.
+
+The common-support four-sector convergence result remains an exact standing
+prediction and is not mislabelled as a direct unification-scale measurement.
+The five focused tests passed once. The untouched official repository
+coordinator admitted the claim on one execution; the standard non-persisting
+materializer then reproduced the identical receipt once to write the evidence
+files. No engine or protocol file changed. The frozen engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 323 same-strength closed and 175 open, with
+51 mapped open and 124 unmapped open. V1 VI-3 has no remaining work at its
+declared boundary. VI-4 through VI-7 were already closed and are not to be
+reopened. The next still-open V1 Physics obligation in the regenerated ledger
+is E3: reconstruct the all-region live-cycle occupancy census and complete
+measured recurrence vector as one versioned claim, without reopening the sealed
+odd-denominator live-cycle theorem or vacuum-floor comparison.

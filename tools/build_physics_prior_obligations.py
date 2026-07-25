@@ -267,6 +267,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "V-8": ("SFT-PHYS-QUANTUM-SPIN-001", "SFT-PHYS-QUANTUM-EXCLUSION-001", "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005", "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006"),
     "VI-1": ("SFT-PHYS-MATTER-SCATTERING-001", "SFT-PHYS-QUANTUM-WEIGHT-001", "SFT-PHYS-FIELD-INVERSE-SQUARE-001", "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003", "SFT-PHYS-MECH-CONSERVATION-001", "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006"),
     "VI-2": ("SFT-PHYS-MATTER-DECAY-001", "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005", "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005", "SFT-PHYS-QUANTUM-WEIGHT-001", "SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006"),
+    "VI-3": ("SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",),
 }
 
 
@@ -809,9 +810,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "Plasma collective response, oscillation and screening are sealed qualitatively. Exact plasma-frequency and Debye-length carriers plus measured comparisons remain.",
     },
     "VI-3": {
-        "formal_same_strength_status": "versioned_successor_required",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Structural running directions are sealed. Exact generator-indexed running functions, common scale transport, convergence and measured multi-scale coupling data remain.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; the complete prime-sector support through seven, One-based binary scale successor and exact holding-share law force positive running, strictly shrinking pair gaps and a finite constructive convergence witness at every positive rational tolerance. Carrier-specific range and screening orientations pass the complete registered PDG 2026 strong-coupling and electromagnetic comparison sets, including exact interval-separated running directions, without using measurements to select the formal survivor. Common-support four-sector convergence remains the exact standing prediction rather than being misreported as a direct observed unification-scale measurement.",
     },
     "VI-2": {
         "formal_same_strength_status": "closed_at_declared_boundary",
@@ -1454,7 +1455,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",
