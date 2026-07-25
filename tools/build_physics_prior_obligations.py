@@ -265,6 +265,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "V-6": ("SFT-PHYS-NUCLEAR-RADIOACTIVITY-001", "SFT-PHYS-QUANTUM-TUNNELLING-001", "SFT-PHYS-WEAK-PARITY-FIBRE-002", "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005"),
     "V-7": ("SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006"),
     "V-8": ("SFT-PHYS-QUANTUM-SPIN-001", "SFT-PHYS-QUANTUM-EXCLUSION-001", "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005", "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006"),
+    "VI-1": ("SFT-PHYS-MATTER-SCATTERING-001", "SFT-PHYS-QUANTUM-WEIGHT-001", "SFT-PHYS-FIELD-INVERSE-SQUARE-001", "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003", "SFT-PHYS-MECH-CONSERVATION-001", "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006"),
 }
 
 
@@ -817,9 +818,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "Decay channel conservation is sealed. Total widths, exact branching partitions, lifetime relation and complete measured decay vectors remain.",
     },
     "VI-1": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Scattering as exact channel counting is sealed. Fold amplitudes, angular cross sections, Rutherford and Compton limits and authoritative data comparisons remain.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; exact Fold direction-transfer parts, paired overlap legs and conserved channel support force the inverse-transfer-part-squared Rutherford angular density, squared charge-product and inverse-squared energy scaling. Closed photon-electron transfer forces the Compton wavelength shift, exact outgoing-energy ratio and finite right-angle/backscatter high-energy ceilings. Complete registered IAEA and NIST comparison retains the historical large-angle discriminator, Rutherford and Compton relations, source assumptions, exact h/(m_e*c) interval overlap and electron-rest-energy transport.",
     },
     "II-9": {
         "formal_same_strength_status": "partial",
@@ -1452,7 +1453,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

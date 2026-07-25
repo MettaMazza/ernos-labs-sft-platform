@@ -1,0 +1,136 @@
+{
+  "claim_id": "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006",
+  "comparison_protocol": "exact rational angular/shift vectors, exact h/(m_e*c) interval propagation, exact rest-energy ceiling transport, source/page identity and deliberately false angular, omitted-row and changed-source controls",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006",
+  "falsification_condition": "Reject if the complete IAEA record does not retain inverse-square Coulomb force, the inverse-fourth-power half-angle Rutherford relation, nonempty large-angle Geiger-Marsden support, closed Compton energy-momentum transfer or the wavelength-shift relation; if exact h/(m_e*c) does not overlap the NIST Compton-wavelength interval; if the right-angle and backscatter energy ceilings disagree with the NIST electron rest-energy vector and IAEA limits; if any registered row, uncertainty, scope condition or adverse control is omitted; or if target content enters before seal.",
+  "frozen_relation": "Paired exact overlap legs force inverse-transfer-part-squared Coulomb differential support; closed photon-electron transfer forces two-transfer-part wavelength increase, exact recoil-energy loss and right-angle/backscatter high-energy ceilings of One and half-One rest support.",
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": ["coulomb_part_one_quarter"],
+        "destination": "coulomb_part_one_quarter",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["coulomb_part_one_half"],
+        "destination": "coulomb_part_one_half",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["coulomb_part_three_quarters"],
+        "destination": "coulomb_part_three_quarters",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["coulomb_part_one"],
+        "destination": "coulomb_part_one",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["charge_doubling"],
+        "destination": "charge_doubling",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["energy_doubling"],
+        "destination": "energy_doubling",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["shift_one_quarter"],
+        "destination": "shift_one_quarter",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["shift_one_half"],
+        "destination": "shift_one_half",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["shift_three_quarters"],
+        "destination": "shift_three_quarters",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["shift_one"],
+        "destination": "shift_one",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["right_angle_ceiling"],
+        "destination": "right_angle_ceiling",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["backscatter_ceiling"],
+        "destination": "backscatter_ceiling",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["forward_transfer"],
+        "destination": "forward_transfer",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["rutherford_scope"],
+        "destination": "rutherford_scope",
+        "opcode": "input"
+      },
+      {
+        "arguments": ["compton_scope"],
+        "destination": "compton_scope",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "coulomb_part_one_quarter",
+          "coulomb_part_one_half",
+          "coulomb_part_three_quarters",
+          "coulomb_part_one",
+          "charge_doubling",
+          "energy_doubling",
+          "shift_one_quarter",
+          "shift_one_half",
+          "shift_three_quarters",
+          "shift_one",
+          "right_angle_ceiling",
+          "backscatter_ceiling",
+          "forward_transfer",
+          "rutherford_scope",
+          "compton_scope"
+        ],
+        "destination": "prediction",
+        "opcode": "word"
+      },
+      {
+        "arguments": ["prediction"],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006-exact-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "protocol": "observational-data-informed_target-inaccessible_sealed-prediction",
+  "registered_by": "Maria Smith",
+  "row_retention_policy": "every registered IAEA Rutherford historical, force, scale, angular, Compton relation, conservation, assumption and scope row; all seven named NIST CODATA carrier rows with every reported uncertainty",
+  "schema": "sft-v3-scattering-rutherford-compton-experiment/1",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/iaea-rutherford-compton-handbook.pdf": "sha256:da4e3b5af19ed9506a812fea6704ff15cf55991902684a17759dbc7cbba05da0",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/scattering-rutherford-compton-source-record.json": "sha256:048ec96abfbd4835adf37e46f9f172a6310443aff1b3f3701bf3fe50bc402ef1"
+  },
+  "source_id": "IAEA-NIST-RUTHERFORD-COMPTON-2026",
+  "source_ids": [
+    "IAEA-STI-PUB-1196-RADIATION-PHYSICS",
+    "NIST-CODATA-2022"
+  ],
+  "source_record_hash": "sha256:048ec96abfbd4835adf37e46f9f172a6310443aff1b3f3701bf3fe50bc402ef1",
+  "source_record_path": "experiments/external_sources/physics/snapshots/scattering-rutherford-compton-source-record.json",
+  "target_access_policy": "capability-closed prediction; release only after matching seal",
+  "withheld_target_ids": [
+    "IAEA-RUTHERFORD-COMPTON-COMPLETE-REGISTERED-RECORD",
+    "NIST-CODATA-SCATTERING-CARRIER-VECTOR"
+  ]
+}

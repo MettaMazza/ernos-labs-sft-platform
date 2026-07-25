@@ -1145,3 +1145,86 @@ evidence materialization. The engine tree remains
 open. V1 Phase V is closed at every declared target. The next sequential V1
 Physics obligation is VI-1: exact scattering/cross-section structure,
 Rutherford and Compton limits, and complete authoritative comparison.
+
+42. V1 VI-1 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`, engine receipt
+     `sha256:2c2e6212e5bb27a2b7647e8eca1583bc75775c886f2185885a7925d83e195b91`;
+   - derivation seal
+     `sha256:dfe407aa03c635803c44c57974d102983d3873a525baa241ca3cc4c31e913180`;
+   - independent validation
+     `sha256:2dfad50881002854fd881204b6420b5c76d8e524fa066ab8b1c028b92b14eda5`;
+   - independent certificate
+     `sha256:633aaa0ff4b45f924cfe3a7ef076b2ddac8083b464eada0999874de472b80e99`;
+   - independent implementation
+     `sha256:0d35b75c4957b1b77081f92b1cfcf6cfda6596302a2ae3b324a7242b1a03accb`;
+   - empirical validation
+     `sha256:4bd3b98fb21c2f4758f64c4b2bba3df272ab97ea863c67477988b192679cf56e`;
+   - measurement receipt
+     `sha256:d6c7057f63d6f29411d7fbddef78e3a8cd96aeeadcf8f8ef1348b0c395c17cd0`;
+   - source manifest
+     `sha256:e5d2d0eef6a42f2e3af50b8fa33d8312b17c518a603b44ee9c1bf05046f9edc5`;
+   - experiment registration
+     `sha256:dfca5a8c28f983c3b244ea248b8158b4d9f3687f1458a6bdbfdc5a6d3a980c18`;
+   - completeness certificate
+     `sha256:3b1718476d1291144613203b15fd02a3f8c6460e0e6b69f5a6f0e1b32c1185d2`.
+
+The formal claimant contains no source reader, target value, stored expected
+survivor or submission-controlled admission flag. Its complete eight-axis
+product contains 2,916 forms and one engine-computed survivor. The exact
+direction-transfer part is positive; forward nondeflection is the structural
+empty form. One phase-compatible overlap leg supplies inverse transfer support,
+and pairing the two legs forces differential density `1/u^2`. The exact finite
+annulus identity `[C(a) take C(b)]/[b take a] = 1/(a*b)` closes to the same
+inverse square without importing a differential-limit axiom. At transfer parts
+`1/4`, `1/2`, `3/4` and One, the forced density vector is respectively `16`,
+`4`, `16/9` and One. Only at the comparison boundary does
+`u = sin^2(theta/2)` translate this result to Rutherford's
+`sin^-4(theta/2)` law. The separately forced scale is the squared charge
+product over squared incident energy: doubling charge multiplies support by
+four and doubling energy takes it to one quarter.
+
+Closed photon-electron conservation forces
+`r = 1/(1 + 2*x*u)` and wavelength increase
+`Delta lambda = 2*u*lambda_e`, where `lambda_e = h/(m_e*c)`. The same four
+transfer parts give shifts `1/2`, One, `3/2` and two electron Compton carriers;
+at incident energy equal to the electron rest carrier, the outgoing ratios are
+`2/3`, `1/2`, `2/5` and `1/3`. Exact positive successor comparison proves the
+high-energy transfer approaches finite ceilings rather than a numerical
+infinity: One electron-rest carrier at right angle and half-One at
+backscatter. No numerical zero, negative, irrational or imaginary proof object
+enters the derivation.
+
+Only after sealing did the authoritative target open. The registered IAEA
+handbook preserves the Geiger-Marsden large-angle discriminator, inverse-square
+Coulomb force, Rutherford angular and scale law, free stationary electron
+scope, closed Compton energy-momentum transfer and wavelength-shift relation.
+All seven named NIST CODATA carrier rows and their uncertainties are retained.
+Exact propagation gives the derived Compton-wavelength interval
+`[6310543/2600880509804446332, 18931629/7802641524616659668] m`, which overlaps
+the NIST interval
+`[121315511731/50000000000000000000000, 121315511807/50000000000000000000000] m`.
+The NIST electron-rest interval is
+`[51099895053/100000000000, 10219979017/20000000000] MeV`; its forced
+backscatter half is
+`[51099895053/200000000000, 10219979017/40000000000] MeV`. These ceilings are
+algebraic consequences of the IAEA transfer relation evaluated with the NIST
+rest-energy interval, not separately fitted or separately printed IAEA scalar
+targets. The IAEA rounded `0.024 Angstrom` Compton carrier contains the exact
+NIST interval at its stated precision.
+
+The five focused tests passed once. An initial direct engine-object invocation
+validated the claim but, by design, did not persist a repository receipt; a
+generic materializer therefore stopped because no census row yet existed. The
+untouched official repository coordinator was then used once, producing the
+persisted nine-gate receipt above, after which evidence materialization
+reproduced that receipt once. This was an API-routing correction, not an engine
+or protocol modification. The frozen engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 321 same-strength closed and 177 open, with
+51 mapped open and 126 unmapped open. V1 VI-1 has no remaining work at its
+declared boundary. The next sequential V1 Physics obligation is VI-2: force
+the total-width sum, exact branching partition, lifetime relation and complete
+authoritative decay-vector comparison without reopening already sealed decay
+channel conservation.
