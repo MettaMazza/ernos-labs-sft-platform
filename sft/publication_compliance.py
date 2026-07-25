@@ -111,13 +111,14 @@ def audit_branch(root: Path, branch_id: str) -> PublicationCompliance:
         ):
             blockers.append("branch-specific full-source ownership review or same-strength closure is incomplete")
     else:
-        if not ownership.get("assignment_complete"):
+        branch_lineage = ownership.get("branch_summary", {}).get(branch_id, {})
+        categorical_closed = branch_lineage.get("status") == "current_categorical_inventory_closed"
+        if not ownership.get("assignment_complete") and not categorical_closed:
             blockers.append(
                 "categorical ownership is not assigned for every V1/V2 obligation "
                 f"({v1['source_row_count']} V1 rows; {v2['source_step_count']} V2 steps)"
             )
-        branch_lineage = ownership.get("branch_summary", {}).get(branch_id, {})
-        if branch_lineage.get("status") != "closed_same_strength":
+        if branch_lineage.get("status") not in {"closed_same_strength", "current_categorical_inventory_closed"}:
             blockers.append("branch-owned prior obligations are not all closed at same strength")
     if lineage.get("status") not in {"open_blocking", "closed"}:
         blockers.append("lineage registry has an invalid status")

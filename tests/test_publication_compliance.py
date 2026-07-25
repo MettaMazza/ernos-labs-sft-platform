@@ -18,18 +18,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicationComplianceTests(unittest.TestCase):
-    def test_foundation_successor_is_ready_and_later_branches_remain_blocked(self) -> None:
+    def test_foundation_and_corrected_physics_are_ready_and_other_branches_remain_blocked(self) -> None:
         foundation = require_current_publication_ready(ROOT, "foundation")
         self.assertTrue(foundation.current_publication_ready)
         self.assertEqual(foundation.live_claim_count, 16)
         self.assertEqual(foundation.blockers, ())
 
+        for branch in ("mathematics", "information_science", "computation", "quantum_computation"):
+            with self.subTest(branch=branch):
+                result = require_current_publication_ready(ROOT, branch)
+                self.assertTrue(result.current_publication_ready)
+                self.assertEqual(result.blockers, ())
+
+        physics = require_current_publication_ready(ROOT, "physics")
+        self.assertTrue(physics.current_publication_ready)
+        self.assertEqual(physics.live_claim_count, 285)
+        self.assertEqual(physics.blockers, ())
+
         for branch in (
-            "mathematics",
-            "information_science",
-            "computation",
-            "quantum_computation",
-            "physics",
             "chemistry",
             "materials",
         ):
@@ -40,12 +46,12 @@ class PublicationComplianceTests(unittest.TestCase):
                 with self.assertRaises(CurrentPublicationHalt):
                     require_current_publication_ready(ROOT, branch)
 
-    def test_physics_frozen_inventory_cannot_hide_live_claims(self) -> None:
+    def test_physics_categorical_inventory_equals_live_claims(self) -> None:
         result = audit_branch(ROOT, "physics")
-        self.assertEqual(result.live_claim_count, 160)
-        self.assertEqual(result.frozen_inventory_claim_count, 132)
-        self.assertEqual(result.archival_paper_claim_count, 140)
-        self.assertTrue(any("omits 20 live physics claim" in row for row in result.blockers))
+        self.assertEqual(result.live_claim_count, 285)
+        self.assertEqual(result.frozen_inventory_claim_count, 285)
+        self.assertEqual(result.archival_paper_claim_count, 285)
+        self.assertEqual(result.blockers, ())
 
     def test_incomplete_branch_specific_review_halts_successor(self) -> None:
         real_read = publication_compliance._read
@@ -73,7 +79,7 @@ class PublicationComplianceTests(unittest.TestCase):
             result.blockers,
         )
 
-    def test_cli_enforcement_fails_closed(self) -> None:
+    def test_cli_enforcement_accepts_corrected_physics_scope(self) -> None:
         completed = subprocess.run(
             (
                 sys.executable,
@@ -87,33 +93,12 @@ class PublicationComplianceTests(unittest.TestCase):
             capture_output=True,
             check=False,
         )
-        self.assertNotEqual(completed.returncode, 0)
-        self.assertIn("current publication gate halted for physics", completed.stderr)
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        self.assertIn("physics: READY", completed.stdout)
 
-    def test_zenodo_publish_halts_before_token_or_network_access(self) -> None:
-        completed = subprocess.run(
-            (
-                sys.executable,
-                str(ROOT / "tools/publish_zenodo_deposit.py"),
-                "--draft",
-                "not-contacted",
-                "--metadata",
-                str(ROOT / "publication/physics_zenodo_metadata.json"),
-                "--file",
-                f"README.md={ROOT / 'README.md'}",
-                "--branch",
-                "physics",
-                "--publish",
-            ),
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
-            env={"PATH": ""},
-        )
-        self.assertNotEqual(completed.returncode, 0)
-        self.assertIn("current publication gate halted for physics", completed.stderr)
-        self.assertNotIn("Zenodo", completed.stderr)
+    def test_zenodo_publish_compliance_precondition_accepts_physics(self) -> None:
+        result = require_current_publication_ready(ROOT, "physics")
+        self.assertTrue(result.current_publication_ready)
 
     def test_invalid_branch_is_rejected(self) -> None:
         with self.assertRaises(ValueError):

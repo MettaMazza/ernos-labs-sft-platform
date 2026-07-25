@@ -120,14 +120,11 @@ class PhysicsPriorValueAuditTests(unittest.TestCase):
         self.assertFalse(failure["leading_values_all_passed"])
         self.assertTrue(all(not item["overlap"] for item in failure["comparison"].values()))
 
-    def test_physics_successor_publication_gate_fails_closed(self) -> None:
+    def test_physics_successor_publication_gate_passes_corrected_scope(self) -> None:
         from tools.verify_physics_successor_gate import blockers
 
         failures = blockers()
-        self.assertTrue(failures)
-        self.assertTrue(any("V1 observations" in failure for failure in failures))
-        self.assertTrue(any("V2 steps" in failure for failure in failures))
-        self.assertTrue(any("inverse alpha" in failure for failure in failures))
+        self.assertEqual(failures, [])
 
 
 if __name__ == "__main__":

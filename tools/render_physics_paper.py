@@ -42,7 +42,7 @@ def cover(authorized: bool, doi: str):
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph("Third clean-room reconstruction - Physics inventory complete<br/>132 required and 8 supplemental admitted derivations - 35,840 Physics candidates<br/>24 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph("Corrected and expanded version 1.1 - categorical Physics inventory complete<br/>285 engine-admitted derivations - 172,016 Physics candidates - 1,140 adverse controls<br/>25 July 2026" + (f"<br/>DOI concept/version lineage: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]

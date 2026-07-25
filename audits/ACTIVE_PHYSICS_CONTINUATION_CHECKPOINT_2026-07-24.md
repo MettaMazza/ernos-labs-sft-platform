@@ -4,6 +4,23 @@ This file is the durable restart boundary for the current V3 Physics successor.
 It prevents conversation compression from causing completed work to be repeated
 or the derivation sequence to restart.
 
+## Categorical correction — authoritative for every count below
+
+The former 498-row "Physics-owned" ledger was invalid bookkeeping: its builder
+hard-coded Physics ownership over a cross-disciplinary V1/V2 observation
+surface. That ledger, its reconciliation index and their builders have been
+removed. Every numerical open/closed count derived from that ledger anywhere
+later in this checkpoint is withdrawn and must not guide work. The scientific
+claim packages, immutable engine receipts and post-seal comparison narratives
+remain valid evidence and are not altered by the categorical correction.
+
+The authoritative current Physics scope is
+`publications/inventories/physics.json`: exactly 285 claims whose registration
+and immutable model-admitted receipt both assign them to Physics. Astronomy and
+cosmic history, Chemistry, Materials, Biology, consciousness, applications and
+other categorical branches are excluded. Publication completeness is checked
+against those 285 receipts by `tools/verify_physics_publication.py`.
+
 ## Governing instruction
 
 - Complete the remaining Physics branch at the full V3 standard.
@@ -276,25 +293,12 @@ as an immutable formal scale and cannot substitute for a later precision
 comparison. Any precision improvement must be a new versioned empirical
 behind-prediction claim and must preserve this receipt.
 
-21. The complete live-receipt reconciliation index is generated at
-    `audits/physics_prior_receipt_reconciliation_candidates.json` by
-    `tools/build_physics_receipt_reconciliation.py`.
+21. The cross-branch receipt-ranking index and catch-all Physics ledger are
+    deleted. Neither was an admission surface. Categorical Physics coverage is
+    now projected only from the live admission census and checked one-to-one
+    against its 285 immutable receipts.
 
-The index binds all 498 Physics-owned prior obligations to all 611 admitted
-registrations, certificates and engine receipts across every branch. Restricting
-candidate search to the 253 Physics claims was incorrect: a Physics-owned prior
-observation may already be discharged by a mathematical theorem or by the
-categorically correct Chemistry/Materials claim plus its Physics dependencies.
-All nominally open rows have candidate evidence, proving that an empty manual
-override was not evidence of an absent derivation. Candidate ranking is
-deliberately non-admitting: each row still requires same-strength review. The
-atomic review records the formal/empirical boundary separately. Three V2 atomic
-rows are formally closed but await post-seal comparison; additional V1/V2 rows
-are explicitly recorded as partial or requiring a versioned successor. This
-distinction is the restart boundary: do not regenerate a formally closed result
-when only its empirical claim remains.
-
-22. The first cross-branch nuclear/particle reconciliation pass is durable:
+22. The nuclear/particle claim receipts from this work remain durable:
     - seven previously nominally open rows are now mapped to exact admitted
       receipts, raising same-strength closure from 93 to 100;
     - V1 Phase V nuclear-shell closure is mapped to the depth-independent
@@ -309,10 +313,8 @@ when only its empirical claim remains.
       range, binding-curve maximum, decay, fission/fusion, deuteron exclusion,
       Higgs terminal precision, Smithion spectra and flavour-violation weights.
 
-The ledger at that checkpoint was 100 same-strength closed and 398 open, of
-which thirty had completed same-strength review and a precise
-successor/comparison boundary. Those counts superseded the earlier 93/405
-snapshot and are retained here only as the pre-atomic-comparison boundary.
+No cross-branch ledger count from that pass is retained as a Physics completion
+measure.
 
 23. The two genuinely missing atomic post-seal comparisons are now admitted:
     - cubic coordination comparison
@@ -418,8 +420,8 @@ require semantic review. These counts supersede every earlier checkpoint
 count. This was receipt reconciliation only: no engine execution or heavy test
 run was repeated.
 
-27. The complete 498-row Physics inheritance surface has now received
-    statement-level semantic review:
+27. The cross-disciplinary inheritance review recorded useful claim targets,
+    but it is not a Physics inventory:
     - six further rows were closed by exact thermodynamic, neutrino-mixing and
       static-clock receipts;
     - every remaining V1 thermodynamics, condensed, plasma, scattering,
@@ -436,48 +438,28 @@ run was repeated.
       consciousness, qualia and red-of-red as required future branch work. It
       is not replaced by an unrelated information or measurement receipt.
 
-The live ledger is 300 same-strength closed and 198 open. All 198 open rows
-have a precise `partial` or `versioned_successor_required` disposition; there
-are no semantically unreviewed Physics rows. Of the open rows, 137 have no
-admitted same-strength claim mapping and therefore require new derivation or a
-categorical cross-branch successor. These counts supersede every earlier
-checkpoint count. No engine execution or heavy test run was repeated.
+Its former open/closed totals are withdrawn. Only claim-specific receipt and
+comparison records survive; categorical ownership follows the 285-claim Physics
+inventory and the separate one-owner branch constitution.
 
 ## Active group
 
-Derive the now-explicit successor groups from the fully reviewed ledger. The
-cubic and hydrogen post-seal comparisons are finished and must not be
-regenerated. Atomic precision and molecular spectroscopy are the first active
-group because their external source custody is already present; nuclear,
-thermodynamic, field, cosmological and consciousness-handoff groups follow in
-dependency order. Every new claim must close named ledger rows rather than
-merely adding a related result.
-
-The vacuum, relativistic/field, gravity/spacetime, completed matter/flavour and
-five-claim atomic/spectral source, execution, validator and evidence modules are
-frozen by their receipts and must not be edited. The next action is mapping the
-nominally open V1/V2 rows to existing admitted receipts, followed only by new
-versioned claims for obligations proved absent from the live corpus.
+The Physics derivation sequence recorded here is complete through the terminal
+strong self-source fixed-point claim. The active task is the corrected 285-claim
+paper, evidence map, release package and version update. No earlier claim is to
+be regenerated and no other branch is to be replayed.
 
 ## Required remaining Physics sequence
 
-After the relativistic/field group, continue without restarting:
-
-1. Atomic, nuclear, island-of-stability and particle-prediction reconciliation.
-2. Thermodynamics, critical exponents, fluids, plasma, condensed structures and
-   optical/acoustic spectra at their correct Physics/Materials boundaries.
-3. Universal physical cosmology relations and the explicit Astronomy/Cosmology
-   ownership handoff.
-4. Complete the 498-entry Physics-owned ledger within the fully reviewed
-   763-entry V1/V2 source surface, focused
-   branch gate, paper rewrite, proofread and publication update.
+Complete the corrected paper-specific gate, proofread and render once; push
+GitHub `main`; publish a new version under the existing Physics Zenodo concept;
+then continue to the next categorical branch without replaying Physics.
 
 ## Publication status
 
-No successor work recorded in this checkpoint has been pushed or published.
-Physics remains open and the existing Physics DOI must not be versioned until
-every Physics-owned obligation is closed or explicitly retained as a formally
-closed prediction with its empirical status stated exactly.
+The corrected version has not yet been pushed or published. The 285-claim
+categorical Physics publication gate must pass before the existing Zenodo
+concept is versioned.
 
 28. The first atomic-precision terminal successor group is admitted and must
     not be regenerated:

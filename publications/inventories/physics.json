@@ -1,41 +1,2586 @@
 {
-  "schema": "sft-v3-physics-branch-inventory/1",
+  "admitted_claim_count": 285,
   "branch_id": "physics",
-  "inventory_frozen": true,
-  "inventory_date": "2026-07-23",
-  "scope": "Categorical reconstruction of measurement and metrology; mechanics; interactions and fields; waves; thermodynamics and statistical physics; quantum physical correspondence; matter, particles and nuclei; spacetime and gravitation; fluids, plasmas and condensed collective matter; and only the physical relations required at the later Astronomy/Cosmology boundary.",
   "exclusions": [
-    "astronomical object census and cosmological history belong to the later Astronomy/Cosmology branch",
-    "chemical species and materials-property reconstruction belong to Chemistry and Materials",
+    "astronomical object census, cosmic history and observed populations belong to Astronomy/Cosmology",
+    "chemical species and chemical transformation belong to Chemistry",
+    "materials properties and material processing belong to Materials",
+    "biology, consciousness, social sciences and engineering translation remain their own branches",
     "Protein, Chess, Go and Unison application experiments remain excluded",
-    "engineering implementations do not select physical laws",
-    "conventional equations, constants and measurements may test only after a Fold relation is sealed"
+    "external equations, constants and measurements test only after a Fold relation is sealed"
   ],
-  "subbranch_order": [
-    "measurement_metrology",
-    "mechanics",
-    "interactions_fields",
-    "waves",
-    "thermodynamics",
-    "quantum_physics",
-    "matter_particles_nuclei",
-    "spacetime_gravitation",
-    "continua_collective_matter",
-    "cosmological_boundary"
+  "inventory_date": "2026-07-25",
+  "inventory_hash": "sha256:813638522de72d6637facfa0d3f2d01e36314af191c4f648063515395d7493bc",
+  "inventory_status": "current_categorical_projection",
+  "obligations": [
+    {
+      "claim_id": "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
+      "position": 1,
+      "receipt_hash": "sha256:dc597e88dc8d1f725ef158e3e69a1bb6b4b402c4cc138372e40b1df21fe821d8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001-dc597e88dc8d1f72.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Capability-closed exact Fold prediction form"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
+      "position": 2,
+      "receipt_hash": "sha256:f788edf20c3f0bb019b813cb63534724518765fccaa1afe7610fb736ae6b21a5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-TARGET-CUSTODY-001-f788edf20c3f0bb0.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Portable target commitment and post-seal custody"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-HOSTILE-PACKAGE-001",
+      "position": 3,
+      "receipt_hash": "sha256:20cd01fae8743456043006ac2f882cbe025b5c0bc5fd1062417ef44a5572b9b0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-HOSTILE-PACKAGE-001-20cd01fae8743456.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Hostile empirical-package and authority protection"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-OBSERVATION-CARRIER-001",
+      "position": 4,
+      "receipt_hash": "sha256:4c4ab1e9623d357d1fcf16813b4c172b508ede8a5216c78c6ad786950b657009",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-OBSERVATION-CARRIER-001-4c4ab1e9623d357d.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Physical observation and retained distinction"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-QUANTITY-CARRIER-001",
+      "position": 5,
+      "receipt_hash": "sha256:9966065b5a469cd330eca589f63e5d58cc86cb9815f6ff14dc26e620368efa6e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-QUANTITY-CARRIER-001-9966065b5a469cd3.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Physical quantity as reference-equivalence carrier"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001",
+      "position": 6,
+      "receipt_hash": "sha256:88074780f2b97130169a864d0fe1e45073f0a0bc5544a0f71548c31739c12068",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001-88074780f2b97130.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Dimension composition and independence"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-UNIT-COMPARISON-001",
+      "position": 7,
+      "receipt_hash": "sha256:ddea20599918c381ea7bcf8172d46692ae36b76df2bbacbc168d54c1f3a2d5c0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-UNIT-COMPARISON-001-ddea20599918c381.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Unit comparison and exact scale transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-REFERENCE-REALIZATION-001",
+      "position": 8,
+      "receipt_hash": "sha256:7d7698fb49b9b740e1e29560195980c7dc9d7249a03580bace583c378198588f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-REFERENCE-REALIZATION-001-7d7698fb49b9b740.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Reference realization and traceability"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-VALUE-RECORD-001",
+      "position": 9,
+      "receipt_hash": "sha256:ee71a58e3d4f2f8b3c646c64cb8d3f922a270cb45b751330a85d7b97e69b6d2c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-VALUE-RECORD-001-ee71a58e3d4f2f8b.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Measured-value record separated from proof value"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-UNCERTAINTY-001",
+      "position": 10,
+      "receipt_hash": "sha256:b65a1d7557983a7dd30c30fdcde54c55370d7c7ea8c22848abd1ebbcb7ced24c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-UNCERTAINTY-001-b65a1d7557983a7d.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Measurement uncertainty as retained admissible alternatives"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-CALIBRATION-001",
+      "position": 11,
+      "receipt_hash": "sha256:63c0243e02bdf6d5786ee2ed2ba0fcabfd6ecae5aeeb7d299923a1d2c6728b67",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-CALIBRATION-001-63c0243e02bdf6d5.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Calibration chain and comparison closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001",
+      "position": 12,
+      "receipt_hash": "sha256:5310f3f1c40e05a2c14423b0d0d0d5b1775dc3ed45f585bd0971c05eab333c18",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001-5310f3f1c40e05a2.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Dimensional consistency and lawful conversion"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-EVENT-CHANGE-001",
+      "position": 13,
+      "receipt_hash": "sha256:04874257af857f7573d356ff8ad75f8f85ee0c441752d7f941dbd279bd766613",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-EVENT-CHANGE-001-04874257af857f75.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Physical event and generated change"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-DURATION-001",
+      "position": 14,
+      "receipt_hash": "sha256:d7c78c834e95a2881236a24ff907323fd5974b1d19eef5b1f5233dcd1fe80bd2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-DURATION-001-d7c78c834e95a288.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Duration from ordered recurrence"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001",
+      "position": 15,
+      "receipt_hash": "sha256:651765eae5dc825c8f634ce43690116dbe0a0296306ed19a35ae5a7ff7c4e067",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001-651765eae5dc825c.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Location, separation and held displacement orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-SPEED-VELOCITY-001",
+      "position": 16,
+      "receipt_hash": "sha256:43e7e8b28583d51949d24a75fd8ca4024ba7c27e2dfa1d31fb39597b4fb2da80",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-SPEED-VELOCITY-001-43e7e8b28583d519.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Speed and oriented velocity"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-ACCELERATION-001",
+      "position": 17,
+      "receipt_hash": "sha256:cef0caaf43f08f111540c5e96d75a0eac5bbb8c0c0a28d962742677f263e1352",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-ACCELERATION-001-cef0caaf43f08f11.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Change of velocity and acceleration"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-INERTIA-001",
+      "position": 18,
+      "receipt_hash": "sha256:c3e7e2bccfecec9a476fc32379bcdb814aaef16ee29fa228ee0a3b4290e5f249",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-INERTIA-001-c3e7e2bccfecec9a.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Inertial persistence"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-MOMENTUM-001",
+      "position": 19,
+      "receipt_hash": "sha256:5b0049e80287dbca2cb5544338ad288ebc2727bbcb04473a90494926f8693615",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-MOMENTUM-001-5b0049e80287dbca.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Momentum carrier and transfer"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-FORCE-001",
+      "position": 20,
+      "receipt_hash": "sha256:bd0576b7dcee5c595698b22128853aebe01eabf681d8e44d8b743c63e8d1f7ae",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-FORCE-001-bd0576b7dcee5c59.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Force as constrained momentum transfer"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-WORK-ENERGY-001",
+      "position": 21,
+      "receipt_hash": "sha256:117d45ba1a18c82dabffd028c5740f7dfb29924cd0502278ee0b2ec003d681b1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-WORK-ENERGY-001-117d45ba1a18c82d.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Work, kinetic change and energy carrier"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-POWER-001",
+      "position": 22,
+      "receipt_hash": "sha256:08e14aded1d213c827ff0a0c870fa1cf8d7a2c1058b12237cc90bf34907aa59e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-POWER-001-08e14aded1d213c8.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Power as ordered energy transfer"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-ANGULAR-MOTION-001",
+      "position": 23,
+      "receipt_hash": "sha256:b07d16797fa48c5cfbc499291558e44e8e02edea85b3730669acb58ce6730323",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-ANGULAR-MOTION-001-b07d16797fa48c5c.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Angular motion and cyclic orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-ANGULAR-MOMENTUM-001",
+      "position": 24,
+      "receipt_hash": "sha256:bdb07ed36a0c97019a98b71ae63029df5455948ff7f61ca5f302d7a29d07f5f2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-ANGULAR-MOMENTUM-001-bdb07ed36a0c9701.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Angular momentum and torque"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-COMPOSITE-CENTRE-001",
+      "position": 25,
+      "receipt_hash": "sha256:b565dc99daadf7225e7e9a817a731b8a9f7ab22359ea149bbbde3846dc5819c7",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-COMPOSITE-CENTRE-001-b565dc99daadf722.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Composite motion and centre relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-CONSERVATION-001",
+      "position": 26,
+      "receipt_hash": "sha256:01d57e618335bfc6fa3513336d0e1a30aa2fa8cf02bdd18420983b1a29a92093",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-CONSERVATION-001-01d57e618335bfc6.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Mechanical conservation under closed transfer"
+    },
+    {
+      "claim_id": "SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001",
+      "position": 27,
+      "receipt_hash": "sha256:269bf50548ac623910ae13c882311660ecf1ff58a23a1af3340fc9c6e7c80dab",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001-269bf50548ac6239.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Constrained motion, restoration and oscillation"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-SOURCE-RESPONSE-001",
+      "position": 28,
+      "receipt_hash": "sha256:203231945e022e79b7ffae5fc692aa84ec9e0cf0acea135fe22ac2bc6838ebc9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-SOURCE-RESPONSE-001-203231945e022e79.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Source, response and field carrier"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001",
+      "position": 29,
+      "receipt_hash": "sha256:afa50140059d7f2d81931e46b6761c0053f4e77eeee0538c1127843dfa690ceb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001-afa50140059d7f2d.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Generated support and geometric dilution"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001",
+      "position": 30,
+      "receipt_hash": "sha256:82395b33bc2287af04a87f7dead671259e3f3cbcb24d0cf507b64379649d7f23",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-82395b33bc2287af.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Gravitational interaction at the weak relational boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001",
+      "position": 31,
+      "receipt_hash": "sha256:479be6249f070c662d307aeec59a6ceeeceb4981de428f3200a78575f05e0cf3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001-479be6249f070c66.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Electric distinction and held charge orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001",
+      "position": 32,
+      "receipt_hash": "sha256:404307768a30ea39fce5e7ab47589d6a5e103841f6c7c532a63328bed4a4feca",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001-404307768a30ea39.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Electric field, potential and work correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-MAGNETIC-001",
+      "position": 33,
+      "receipt_hash": "sha256:4a212db2fc1113d2502f514d023caf210814886a20253226b2b4eeae0328f238",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-MAGNETIC-001-4a212db2fc1113d2.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Magnetic response to oriented change"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-INDUCTION-001",
+      "position": 34,
+      "receipt_hash": "sha256:65da863a9a1b716d62b7541040863b59ee56c0055a972eaa5ac8c2b5e82959c8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-INDUCTION-001-65da863a9a1b716d.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Induction from changing linked support"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001",
+      "position": 35,
+      "receipt_hash": "sha256:470397ea06dec2c8b33de5b77e4f6d0ba6681999d445b82eec45b93ab9233080",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001-470397ea06dec2c8.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Electric-magnetic compositional closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001",
+      "position": 36,
+      "receipt_hash": "sha256:7c9c2d1366bf84479e96fb53603fa5a94312f5f7606d35b495f6ec03320b5d70",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001-7c9c2d1366bf8447.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Gauge-equivalent descriptions and retained observables"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001",
+      "position": 37,
+      "receipt_hash": "sha256:53eddf9f05386d8a26a3de9279a68d1a36451f8dfb290681a1121bfbbd70a6ac",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001-53eddf9f05386d8a.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Local propagation and causal accessibility"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-RADIATION-001",
+      "position": 38,
+      "receipt_hash": "sha256:0d61c283fb2b593db4705f03525522b29ed15179ed4b36519d281ca9b34e2fcd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-RADIATION-001-0d61c283fb2b593d.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Radiative transport and source detachment"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-INTERACTION-CLASSES-001",
+      "position": 39,
+      "receipt_hash": "sha256:ac4ce2d6711e53b55ee78939d1ab2717b841dc92a84a5e0c2af31db12218d322",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-INTERACTION-CLASSES-001-ac4ce2d6711e53b5.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Empirical closure of physical interaction classes"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-CONSERVED-SOURCE-001",
+      "position": 40,
+      "receipt_hash": "sha256:48f15b7c73add25dba9c828842d81560ccc94d5733518a79f4d96de248334f53",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-CONSERVED-SOURCE-001-48f15b7c73add25d.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Source continuity and field conservation"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-ACTION-REACTION-001",
+      "position": 41,
+      "receipt_hash": "sha256:78ed10fe165871136905b7cde51a30df16627b13339643b9b340f69c368fb343",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-ACTION-REACTION-001-78ed10fe16587113.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Reciprocal interaction and transferred distinction"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-PERIOD-FREQUENCY-001",
+      "position": 42,
+      "receipt_hash": "sha256:55aecf75af90158e67ccf21446f06dc6d604ca0420482afe08637e465da99f93",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-PERIOD-FREQUENCY-001-55aecf75af90158e.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Period, recurrence and frequency"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-PROPAGATION-001",
+      "position": 43,
+      "receipt_hash": "sha256:50a4686ca478198084edb8fed8ddd16cf51d791da3aee98fde34e393b23d0998",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-PROPAGATION-001-50a4686ca4781980.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Generated wave propagation"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001",
+      "position": 44,
+      "receipt_hash": "sha256:0b1798571aa501d2d2f115ac1863142881c886214b0d3cbada2cc1cc03f47fc5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001-0b1798571aa501d2.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Propagation speed, wavelength and frequency relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-SUPERPOSITION-001",
+      "position": 45,
+      "receipt_hash": "sha256:f8421b45a2cf9ca516fca24b3a33fc71e3f9b11e3435c2eaf6a6ccfe471f45e3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-SUPERPOSITION-001-f8421b45a2cf9ca5.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Wave superposition"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-INTERFERENCE-001",
+      "position": 46,
+      "receipt_hash": "sha256:fecacb47e9a61a33c7df01e0cd569f3306ca1d298ed47232817357fbf247afee",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-INTERFERENCE-001-fecacb47e9a61a33.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Wave interference and predecessor merging"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-DIFFRACTION-001",
+      "position": 47,
+      "receipt_hash": "sha256:4c9922f000b07cfacacfbae4f820e76af89cc3e83f0e211e5396c5625b61902a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-DIFFRACTION-001-4c9922f000b07cfa.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Diffraction at constrained support"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-POLARIZATION-001",
+      "position": 48,
+      "receipt_hash": "sha256:ed7c412e559c3488049747a95ba94327326d631f7896cdd18ddc33db557ec81e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-POLARIZATION-001-ed7c412e559c3488.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Polarization as held transverse orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-DISPERSION-001",
+      "position": 49,
+      "receipt_hash": "sha256:72749162a46a877c7d54d3cde6f09848b2d383360ed687b201e6c94475a29fe8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-DISPERSION-001-72749162a46a877c.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Dispersion and support-dependent propagation"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-RESONANCE-001",
+      "position": 50,
+      "receipt_hash": "sha256:cac57d85a74fcf5b8f323aa8ea98203d242e8e40084465de77b89d33b6db55e3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-RESONANCE-001-cac57d85a74fcf5b.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Resonance and recurrence matching"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-ENERGY-MOMENTUM-001",
+      "position": 51,
+      "receipt_hash": "sha256:1a25f4c7e2b95a50fd6b37e122372952e6563575c716a6cda083ce1d0755e6de",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-ENERGY-MOMENTUM-001-1a25f4c7e2b95a50.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Wave energy and momentum transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-MICRO-MACRO-001",
+      "position": 52,
+      "receipt_hash": "sha256:11b63417e8a9d91dc1ceb4ecc356fe1083c36cf84cccb0522b42faae15a7e067",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-MICRO-MACRO-001-11b63417e8a9d91d.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Microstate-to-macrostate observation"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-TEMPERATURE-001",
+      "position": 53,
+      "receipt_hash": "sha256:d68a2030d9e3e914068a84fb738d109c84f7d1b7be48c88c97d37d26646c09f8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-TEMPERATURE-001-d68a2030d9e3e914.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Temperature carrier and thermal ordering"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-EQUILIBRIUM-001",
+      "position": 54,
+      "receipt_hash": "sha256:6ce39350919988486d96178e51a0bd45264f0c5498519109bdb0e184c29d40e5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-EQUILIBRIUM-001-6ce3935091998848.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Thermal equilibrium equivalence"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-HEAT-WORK-001",
+      "position": 55,
+      "receipt_hash": "sha256:3db98f953910f921028c19a7464ad19eb2aa44b2888ec82ab1be56d23576cbef",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-HEAT-WORK-001-3db98f953910f921.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Heat and work as distinct energy-transfer traces"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-FIRST-LAW-001",
+      "position": 56,
+      "receipt_hash": "sha256:18e493c59cbd7979db1bcc2b33a97f582329f92707c16bc6455c2ee55ef2b13a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-FIRST-LAW-001-18e493c59cbd7979.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Closed energy accounting"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-ENTROPY-001",
+      "position": 57,
+      "receipt_hash": "sha256:18dc9c224330e6542798ebde0073e90d982cd04d30fe0e756869f8148983d4f8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-ENTROPY-001-18dc9c224330e654.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Thermodynamic entropy from unresolved support"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-SECOND-LAW-001",
+      "position": 58,
+      "receipt_hash": "sha256:b1ec365f5fb8432d4ca9f69ecb6937596ff9e1a144860e58ade0d6a5f6bec17a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-SECOND-LAW-001-b1ec365f5fb8432d.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Irreversible observation and entropy orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-THIRD-LAW-001",
+      "position": 59,
+      "receipt_hash": "sha256:a66152169839178e093243202041879920e7d82b50d08fae42cf6c14f464e15c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-THIRD-LAW-001-a66152169839178e.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Finite unattainability boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001",
+      "position": 60,
+      "receipt_hash": "sha256:fc2fdc5352d172755221a6fb15a61dc121038e01f7390aae19cdbe4c9334c9d0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001-fc2fdc5352d17275.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Exact finite statistical weight"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-STATE-RELATION-001",
+      "position": 61,
+      "receipt_hash": "sha256:e74262c55559b31cb22638ee24e9203e34a582937ebb8053d54e55268cb707a8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-STATE-RELATION-001-e74262c55559b31c.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Thermodynamic state relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001",
+      "position": 62,
+      "receipt_hash": "sha256:804bbbce151a9807129d17226d039f46d4b5ad9fb4cd7d90135bbb01fc50da79",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001-804bbbce151a9807.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Phase coexistence and transition"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-KINETIC-TRANSPORT-001",
+      "position": 63,
+      "receipt_hash": "sha256:0001a2d7176cae05e6b1ad4ef9942e474d14916872262d377350c7a465823c18",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-KINETIC-TRANSPORT-001-0001a2d7176cae05.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Kinetic transport and collision mixing"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-FLUCTUATION-001",
+      "position": 64,
+      "receipt_hash": "sha256:c39f22eaadf319ad2c29d582ffc035e542f8df1e7665956e9e3d50506ce26d07",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-FLUCTUATION-001-c39f22eaadf319ad.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Finite fluctuation and recurrence"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-IRREVERSIBILITY-001",
+      "position": 65,
+      "receipt_hash": "sha256:10ae5d449758f74df3bba03643a4b2f3f48f58096812e5052dffe56e1b0ade69",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-IRREVERSIBILITY-001-10ae5d449758f74d.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Macroscopic irreversibility with retained microtrace"
+    },
+    {
+      "claim_id": "SFT-PHYS-THERMO-RESPONSE-001",
+      "position": 66,
+      "receipt_hash": "sha256:b5a02f181350f74161c9c1041572b66e4a180034f99401bdad07bb9ae177c262",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-THERMO-RESPONSE-001-b5a02f181350f741.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Susceptibility, response and transport correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001",
+      "position": 67,
+      "receipt_hash": "sha256:e1f0dfe8b6d4a57d7b408516d2e09ae677fabefc201c273f3f2a62182f9bea73",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001-e1f0dfe8b6d4a57d.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact molar Planck measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001",
+      "position": 68,
+      "receipt_hash": "sha256:4a7e754fdd04ef6ffe92456b90c10648d0c4b64194fd53774beaae63d98c62af",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001-4a7e754fdd04ef6f.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact momentum measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-MECHANICS-FORCE-001",
+      "position": 69,
+      "receipt_hash": "sha256:e394dd3d87bf8f712e39291a4f8dcc0fe2d2bea75d3d1fd5b88a67645fb691b1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MECHANICS-FORCE-001-e394dd3d87bf8f71.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact force measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001",
+      "position": 70,
+      "receipt_hash": "sha256:34a88c7435b67d0c73792b2eadc0ff77c03291db4280c5b806c286b78ddbb00f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001-34a88c7435b67d0c.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact electric-potential measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001",
+      "position": 71,
+      "receipt_hash": "sha256:b5b06d49508b35b38f352d022c8edcf0f2e593225086d53472aa679a8e64dbc8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-b5b06d49508b35b3.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact electric-field measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001",
+      "position": 72,
+      "receipt_hash": "sha256:d75c1886968251dd42429c73c3c8303ae4d22eededbe87ae37e24951e7e938fb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001-d75c1886968251dd.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact wave frequency measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-WAVE-ENERGY-001",
+      "position": 73,
+      "receipt_hash": "sha256:fd222d0ccab49086ac4daa8928f6c9f0cd65ccf15dc94dfdc56562cec0c22173",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-WAVE-ENERGY-001-fd222d0ccab49086.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact wave energy measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001",
+      "position": 74,
+      "receipt_hash": "sha256:4c675313be3e4006a248563bd452cb64e04425dbef90838ba7625a59beb8b277",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001-4c675313be3e4006.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Exact molar thermal measured-value correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-PHYSICAL-STATE-001",
+      "position": 75,
+      "receipt_hash": "sha256:66bb63008bf5c34e9b3d260cf59890ac2d05f4474830c998296449725445145b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-PHYSICAL-STATE-001-66bb63008bf5c34e.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Physical quantum state correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-EVOLUTION-001",
+      "position": 76,
+      "receipt_hash": "sha256:0744b73d5436d955436b9dc7c39a4a63f229d0ab019c41409dccc37663148fdc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-EVOLUTION-001-0744b73d5436d955.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Reversible physical quantum evolution"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-OBSERVABLE-001",
+      "position": 77,
+      "receipt_hash": "sha256:a7fffafe809c0f14f4eeaf1b32dbb4f54057f22c2ec06450c9f6d42450df1be1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-OBSERVABLE-001-a7fffafe809c0f14.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Observable and measurement record"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-WEIGHT-001",
+      "position": 78,
+      "receipt_hash": "sha256:ac65de8a653d0efe53bca999f07d44dcac07e42d121a74974e8ea0ecf49ad101",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-WEIGHT-001-ac65de8a653d0efe.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Measurement weights from exact branch support"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-INCOMPATIBILITY-001",
+      "position": 79,
+      "receipt_hash": "sha256:fd15b51c35d435c048c1f8d3d05bb80e67fe5ab8f706df40e6a2af13e04fd430",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-INCOMPATIBILITY-001-fd15b51c35d435c0.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Incompatible observations and uncertainty"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-SPIN-001",
+      "position": 80,
+      "receipt_hash": "sha256:f233aa5e16a279c3803209c902993252d6631531d91fc5959f1e3123c13f5351",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-SPIN-001-f233aa5e16a279c3.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Spin and finite cyclic label action"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001",
+      "position": 81,
+      "receipt_hash": "sha256:7e67d989399d97c898d0a1aad60aa27d5f62224f323adaec9159f8f38dc378d8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001-7e67d989399d97c8.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Identical physical constituents"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-EXCLUSION-001",
+      "position": 82,
+      "receipt_hash": "sha256:27239f90141d1287616ee28f368bcd94cf1f94b549e9b65a0a0982afab765eaf",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-EXCLUSION-001-27239f90141d1287.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Exclusion from antisymmetric composition"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-TUNNELLING-001",
+      "position": 83,
+      "receipt_hash": "sha256:a07368612ae686daeb2371484fa843364d9da57a9c8a8ade54dc8957c5841fe3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-TUNNELLING-001-a07368612ae686da.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Barrier traversal on complete support"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001",
+      "position": 84,
+      "receipt_hash": "sha256:40bcca8d05aea67f6b2812e426772bdf7b973d0410a1a24129afb79ab1650a57",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001-40bcca8d05aea67f.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Discrete bound-state spectra"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-ENTANGLEMENT-001",
+      "position": 85,
+      "receipt_hash": "sha256:4fe300f9b7c68fa7877536f5a6b517ad868f51f653621adf0ca0a16db177cebb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-ENTANGLEMENT-001-4fe300f9b7c68fa7.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Physical entanglement correlations"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-BELL-001",
+      "position": 86,
+      "receipt_hash": "sha256:2c368d4a200d2566c3c78014d6927a9a64017b2fde91972501b7cf865fb47aa7",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-BELL-001-2c368d4a200d2566.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Bell correlation and local-hidden-record boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-CONTEXTUALITY-001",
+      "position": 87,
+      "receipt_hash": "sha256:8b6083f43638b7416c9639697971b3e176c77f6db2858f00b927bcf0d8942946",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-CONTEXTUALITY-001-8b6083f43638b741.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Context-dependent joint observation"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-DECOHERENCE-001",
+      "position": 88,
+      "receipt_hash": "sha256:d55a9454999245b5fa0177305095d9fcd1e8c0bc6f0d75c9541ea1cfa58d8325",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-DECOHERENCE-001-d55a9454999245b5.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Decoherence through environmental record distribution"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001",
+      "position": 89,
+      "receipt_hash": "sha256:b87f06d0e0edbee677f693e0480d07cbad931e2a07a64841f47a204726cc9020",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001-b87f06d0e0edbee6.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Operational quantum-to-classical physical limit"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUANTUM-NO-SIGNALLING-001",
+      "position": 90,
+      "receipt_hash": "sha256:984ce2195db3fdf46ca0370f06565f79c7f1469bdf581f7c2ba99020827cd2fc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUANTUM-NO-SIGNALLING-001-984ce2195db3fdf4.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Entanglement and no-signalling boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-MASS-ENERGY-001",
+      "position": 91,
+      "receipt_hash": "sha256:f812b0091bd3e7f6fac435253a1e3dcf81af7a36de5b57f25c4b641cd3fa13cd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-MASS-ENERGY-001-f812b0091bd3e7f6.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Mass-energy correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001",
+      "position": 92,
+      "receipt_hash": "sha256:4840b7076ad83c2c76882af2e81a8309d6ee80028e61796c2f91a896fea2ebfd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001-4840b7076ad83c2c.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Particle-antiparticle held orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-FERMION-BOSON-001",
+      "position": 93,
+      "receipt_hash": "sha256:8e8738ba7238b2b8216d04aec21ebeb1d15ab6ce2e919b3b265f5a65d50c3951",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-FERMION-BOSON-001-8e8738ba7238b2b8.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Fermion and boson composition classes"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-CONSERVED-LABELS-001",
+      "position": 94,
+      "receipt_hash": "sha256:83772ecab34a176c0e87265993183d8c445be8f49ec0d86e615c9d0c1740e945",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-CONSERVED-LABELS-001-83772ecab34a176c.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Conserved physical labels"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001",
+      "position": 95,
+      "receipt_hash": "sha256:a5d2f4b06e01f8d5acabb36577883d2ad220e3dd5aa6aa2e170b52ff5273fff0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001-a5d2f4b06e01f8d5.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Observed elementary-particle spectrum"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-COMPOSITE-HADRONS-001",
+      "position": 96,
+      "receipt_hash": "sha256:f99b0600faea8923a9b335972b511b488ad0a252566da40911ad5fd2d9136697",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-COMPOSITE-HADRONS-001-f99b0600faea8923.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Composite hadron organization"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-SCATTERING-001",
+      "position": 97,
+      "receipt_hash": "sha256:01fb73df0849a188dfd668d8f8549cd1b64ed201e5fe706bcaa391967ab61f0f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-SCATTERING-001-01fb73df0849a188.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Scattering and cross-section measure"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-DECAY-001",
+      "position": 98,
+      "receipt_hash": "sha256:67296b745325db1768a99db563e6a6966b0201b9fb107133746aaac222ae8291",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-DECAY-001-67296b745325db17.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Particle transition and decay"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-MIXING-001",
+      "position": 99,
+      "receipt_hash": "sha256:6e42de870a32d7dd47c1d24d1410009498854662fc9b7b85ff2aae24642a3e2b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-MIXING-001-6e42de870a32d7dd.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "State mixing and oscillation"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-BINDING-001",
+      "position": 100,
+      "receipt_hash": "sha256:8ebc11747ec4bfd0552de732d26bbb60bcbbeb6ba273885ebec783ffd43dbb3f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-001-8ebc11747ec4bfd0.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Nuclear binding and mass relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-LEVELS-001",
+      "position": 101,
+      "receipt_hash": "sha256:8361256cd14917c077f36a6250d7706d6b97eaf4254633721107775112a94479",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-LEVELS-001-8361256cd14917c0.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Nuclear levels and transitions"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-RADIOACTIVITY-001",
+      "position": 102,
+      "receipt_hash": "sha256:abfd4ba82c2ecf7fba7473fa029c2b3c06ad54d536c4fef8a7b354fbdb587576",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVITY-001-abfd4ba82c2ecf7f.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Radioactive transition support"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-REACTIONS-001",
+      "position": 103,
+      "receipt_hash": "sha256:d619676a96d0ef76e876a31388e3ead4e581cf513277f87928f75ac490b62127",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-REACTIONS-001-d619676a96d0ef76.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Nuclear reaction and channel accounting"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-FISSION-001",
+      "position": 104,
+      "receipt_hash": "sha256:37bc1d64923a33e5d6548f4701606b8566eb51f9d6871e6e7815a289926a3ceb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FISSION-001-37bc1d64923a33e5.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Fission decomposition"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-FUSION-001",
+      "position": 105,
+      "receipt_hash": "sha256:9277671be548ed512279ff99a5347ed91531056cecddc1f22ed96da39a0a7676",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-001-9277671be548ed51.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Fusion composition"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-EVENT-RELATION-001",
+      "position": 106,
+      "receipt_hash": "sha256:82fcaa4e269454cbc2b6c7308f0505bc092b436bd8a240c9ad6799d2bd5e3622",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-EVENT-RELATION-001-82fcaa4e269454cb.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Relational spacetime event"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-INTERVAL-001",
+      "position": 107,
+      "receipt_hash": "sha256:50d120a00b976766cf5679b950c5b17e11f3c7718e90f8350bfb0f4de166298f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-INTERVAL-001-50d120a00b976766.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Invariant event interval"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-CAUSAL-ORDER-001",
+      "position": 108,
+      "receipt_hash": "sha256:1bfc8212981c9de42edb974516b15a92e3313182b0e61c7048f60ed8883d2678",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CAUSAL-ORDER-001-1bfc8212981c9de4.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Causal order and accessibility cone"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001",
+      "position": 109,
+      "receipt_hash": "sha256:a9a1243a2a78ae05c7b16a006f1841a05abf263e00f35ca77ea68d5a5d2dcbb9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001-a9a1243a2a78ae05.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Inertial frame correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-LIMIT-SPEED-001",
+      "position": 110,
+      "receipt_hash": "sha256:9bef8332bbd2d865002cece22dfd62dfbbc9a9084876156ff04bb8d388551a3e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-LIMIT-SPEED-001-9bef8332bbd2d865.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Invariant limiting propagation speed"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-CLOCK-RATE-001",
+      "position": 111,
+      "receipt_hash": "sha256:e7413efbd9b5a70f627078003097d132d54f3a872a7ffb58545a56e106487d34",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CLOCK-RATE-001-e7413efbd9b5a70f.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Relative clock-rate relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-LENGTH-RELATION-001",
+      "position": 112,
+      "receipt_hash": "sha256:34de5f07fb814d9d840ebfb262cff11c2fa45736e26a95d94c26328edd162a7d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-LENGTH-RELATION-001-34de5f07fb814d9d.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Relative spatial-extent relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-EQUIVALENCE-001",
+      "position": 113,
+      "receipt_hash": "sha256:391143646a9cbdfec7c08931a1e1f662f1132224e4303f02c6ca1e050213e459",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-EQUIVALENCE-001-391143646a9cbdfe.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Inertial-gravitational equivalence"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-CURVATURE-001",
+      "position": 114,
+      "receipt_hash": "sha256:4a4e70826c4fd7be1d00b9aa003261fb437402fb7c43ab61130e3f17852828b3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-CURVATURE-001-4a4e70826c4fd7be.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Source-linked relational curvature"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-GEODESIC-001",
+      "position": 115,
+      "receipt_hash": "sha256:fcd6e73b219916aa38b32b7f2f781e0711935f16db94bae6359634106e177782",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-GEODESIC-001-fcd6e73b219916aa.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Free propagation on curved relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-FIELD-SOURCE-001",
+      "position": 116,
+      "receipt_hash": "sha256:80e7d6df387d7f3fec02ef0deaf4a31f5838e858ed740f648e2f5950a4375140",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-FIELD-SOURCE-001-80e7d6df387d7f3f.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Gravitational field-source closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-WAVE-001",
+      "position": 117,
+      "receipt_hash": "sha256:f2bcf8f3bec360481dadd724546028e3c47c633bd288adecbf650d92a8d0f1ba",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WAVE-001-f2bcf8f3bec36048.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Gravitational-wave propagation"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-HORIZON-001",
+      "position": 118,
+      "receipt_hash": "sha256:7abc9b68655deb7986f0846887236bae69f14d4d6656d2ed71c388d0f889c52d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-HORIZON-001-7abc9b68655deb79.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Causal horizon boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONTINUUM-COARSE-GRAIN-001",
+      "position": 119,
+      "receipt_hash": "sha256:fca2926aba2b9fca7aaeb55fd3121f9a52d64846397776cbb26e30b884b1a509",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONTINUUM-COARSE-GRAIN-001-fca2926aba2b9fca.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Finite coarse-grained continuum correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-DENSITY-001",
+      "position": 120,
+      "receipt_hash": "sha256:042d8b74f0692ac0c11dac25c449690e74d8f5a8b1196641080e377627b9bbcd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-DENSITY-001-042d8b74f0692ac0.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Density as exact content-to-support relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-PRESSURE-STRESS-001",
+      "position": 121,
+      "receipt_hash": "sha256:94ae8c496c0ad93534009db375be075997529f8bb40292d7bff956f9dce7d853",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-PRESSURE-STRESS-001-94ae8c496c0ad935.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Pressure and stress transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-CONSERVATION-001",
+      "position": 122,
+      "receipt_hash": "sha256:f6882fdf667263556f24e891247deb5f60533155505e7dfa31bdee8fb68f23ce",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-CONSERVATION-001-f6882fdf66726355.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Flow conservation"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-INVISCID-001",
+      "position": 123,
+      "receipt_hash": "sha256:f697547d491a454368e7a58afdc7b0558bd77fc4a4c07419bae1d30623e21025",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-INVISCID-001-f697547d491a4543.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Inviscid flow correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-VISCOSITY-001",
+      "position": 124,
+      "receipt_hash": "sha256:b395ce239e1415b4afbd98cc99ab5f8a91dce5fb8a4914d2bdffe7e9b2108c71",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-VISCOSITY-001-b395ce239e1415b4.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Viscous momentum transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-FLUID-TURBULENCE-001",
+      "position": 125,
+      "receipt_hash": "sha256:d8a59dabe554a169c1f5d8f4c7c70feb2a0d3e1ebaa0d26186d1e2316a2e406a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FLUID-TURBULENCE-001-d8a59dabe554a169.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Finite turbulence and cascade boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-PLASMA-COLLECTIVE-001",
+      "position": 126,
+      "receipt_hash": "sha256:31da2d601e05d224850b377d80396438c38447c40e994dd8d51f613238a07499",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-PLASMA-COLLECTIVE-001-31da2d601e05d224.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Plasma collective response"
+    },
+    {
+      "claim_id": "SFT-PHYS-PLASMA-OSCILLATION-001",
+      "position": 127,
+      "receipt_hash": "sha256:14cdadbe5421c2cb5f6f231d20b0456b8dfda9d76e01c4c4ab815a2d915efc82",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-PLASMA-OSCILLATION-001-14cdadbe5421c2cb.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Plasma oscillation and screening"
+    },
+    {
+      "claim_id": "SFT-PHYS-PLASMA-MHD-001",
+      "position": 128,
+      "receipt_hash": "sha256:758229c88e39f5606a215e2bdd8ed689d2f31b0cb739eacdda0d8c53ecad0e5c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-PLASMA-MHD-001-758229c88e39f560.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Magnetofluid composition"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONDENSED-LATTICE-001",
+      "position": 129,
+      "receipt_hash": "sha256:46d5a4142f4a53f2665b0f45f89c00e0afe2b5cc8989e0f5169644fc100d6ea3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONDENSED-LATTICE-001-46d5a4142f4a53f2.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Lattice order and excitation"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONDENSED-BAND-001",
+      "position": 130,
+      "receipt_hash": "sha256:c9b70ce35823bff4a59e68486c4b7ebfe9820c03ec913c33c313e786bfc3dea4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONDENSED-BAND-001-c9b70ce35823bff4.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Band support and transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONDENSED-PHASE-ORDER-001",
+      "position": 131,
+      "receipt_hash": "sha256:7f20f2a8757ec6d79c32a77dd07c3fca5c25e58b1ae233c68d9daa30e5c86ceb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONDENSED-PHASE-ORDER-001-7f20f2a8757ec6d7.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Collective order and phase transition"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001",
+      "position": 132,
+      "receipt_hash": "sha256:ee86d5d893add989390c63fcc6f11bc7d95e0dc8c9c7dabd724c3233931deb04",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001-ee86d5d893add989.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Superconducting coherent transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONDENSED-TOPOLOGICAL-001",
+      "position": 133,
+      "receipt_hash": "sha256:817047e583a84e4443cabe268f2de478eae52cc8db2d84a6248c743102ae9d6e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONDENSED-TOPOLOGICAL-001-817047e583a84e44.json",
+      "status": "model_admitted",
+      "subbranch": "continua_collective_matter",
+      "title": "Topological collective-state correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-REDSHIFT-001",
+      "position": 134,
+      "receipt_hash": "sha256:0843f2c5ea47964fd54287546abaac627a210b4bfabd6c0ba87c415f665ccf8e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-REDSHIFT-001-0843f2c5ea47964f.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Propagation redshift relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-EXPANSION-001",
+      "position": 135,
+      "receipt_hash": "sha256:70b48d5fa5822a719fde0ab0073d965387cc0c4548ef14fda2138061b3966f53",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-EXPANSION-001-70b48d5fa5822a71.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Relational expansion observation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-BACKGROUND-001",
+      "position": 136,
+      "receipt_hash": "sha256:2e4f7d3e02b8d087c3cce4a29dd5ee6b13f28758400c6da93090007f6e2d7e29",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-BACKGROUND-001-2e4f7d3e02b8d087.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Background-radiation field relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-LENSING-001",
+      "position": 137,
+      "receipt_hash": "sha256:463d7041874e0b45a8ccafb32f1ee9fba54c8e733caa8446f52cce2549a07d73",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-LENSING-001-463d7041874e0b45.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Gravitational lensing relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-DISTANCE-001",
+      "position": 138,
+      "receipt_hash": "sha256:3652a0696753f255405d64eb358c82e5099ce743763a43a2b693946040f163a3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-DISTANCE-001-3652a0696753f255.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Causal distance and observation-time relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-STRUCTURE-GROWTH-001",
+      "position": 139,
+      "receipt_hash": "sha256:b150f2ddf89d4a0ea2352ebc7ae1ac954835eb6ac1856f38c6ddd8f8d5961744",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-STRUCTURE-GROWTH-001-b150f2ddf89d4a0e.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Finite structure-growth relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-BRANCH-BOUNDARY-001",
+      "position": 140,
+      "receipt_hash": "sha256:86e32f007bb9c6304edc82ae7e4f01db1f0391b5fbbef56d5ddedc12dd178160",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-BRANCH-BOUNDARY-001-86e32f007bb9c630.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Physics-to-astronomy/cosmology handoff boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-MEAS-BOUNDARY-GROWTH-001",
+      "position": 141,
+      "receipt_hash": "sha256:b2d8360be10ba4be5664b59ee4624d91d909962f83927b3bd98d4caf5b02e43b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MEAS-BOUNDARY-GROWTH-001-b2d8360be10ba4be.json",
+      "status": "model_admitted",
+      "subbranch": "measurement_metrology",
+      "title": "Exact source-boundary growth measurement discriminator"
+    },
+    {
+      "claim_id": "SFT-PHYS-STRUCT-GENERATOR-THREE-001",
+      "position": 142,
+      "receipt_hash": "sha256:3017771dde2eabf649278851cd9e43fb6c5e939b5a052a09f02f6e604d6ed50e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-STRUCT-GENERATOR-THREE-001-3017771dde2eabf6.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "The second structural Fold generator is three"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACE-DIMENSION-THREE-001",
+      "position": 143,
+      "receipt_hash": "sha256:fb06dcbd49ff61a213ff97420274014c7e2b683cddf0c593f269045b387d589e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACE-DIMENSION-THREE-001-fb06dcbd49ff61a2.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Three-dimensional Fold stability"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001",
+      "position": 144,
+      "receipt_hash": "sha256:84ef6397b0fc006ae2ea6525024a9e8920f20afcd42929632db793ae0a1d809b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001-84ef6397b0fc006a.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Rank-two boundary of three-space"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-INVERSE-SQUARE-001",
+      "position": 145,
+      "receipt_hash": "sha256:68fb6f9d11a0c64e08a8d6339dcc5feec4717a76d5d46d600988774ae79ccbf2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-INVERSE-SQUARE-001-68fb6f9d11a0c64e.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Inverse-square dilution from rank-two boundary support"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-INVERSE-SQUARE-001",
+      "position": 146,
+      "receipt_hash": "sha256:31bd4d97bd010d4af89b2b85ed1bb02056b5b6d67a3acca65110366ab479e698",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-INVERSE-SQUARE-001-31bd4d97bd010d4a.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal experimental agreement of the inverse-square exponent"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
+      "position": 147,
+      "receipt_hash": "sha256:4999a85b5862afebcf24604c2191c0ce8b96aa57f988b3fab83b469c3506a7c9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001-4999a85b5862afeb.json",
+      "status": "model_admitted",
+      "subbranch": "constants_scales_precision",
+      "title": "Terminal exact inverse fine-structure Fold ratio"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001",
+      "position": 148,
+      "receipt_hash": "sha256:2b8928b0ddf5b87a7bf56813a5f430ba4a99f715b1cfc1dd1db98106216e3d70",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001-2b8928b0ddf5b87a.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Atomic orbit-cell capacity from three-space boundary orientation"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001",
+      "position": 149,
+      "receipt_hash": "sha256:d38dc32f0926ae5f06e432f6bd7546d8680a8ea648c211dfbe965fc44e8179e5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001-d38dc32f0926ae5f.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Exact colour-sector Fold coupling"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001",
+      "position": 150,
+      "receipt_hash": "sha256:35f7fe50e217d2a61383f4169c314f1d4d5b4671a1def5baa011d26a1d89af9f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001-35f7fe50e217d2a6.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Complete Fold nuclear-closure sequence"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001",
+      "position": 151,
+      "receipt_hash": "sha256:5cedeb1cb99ec83a668db0c80839b248c93e83bdeeafbd067fa379fb8e45eb17",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001-5cedeb1cb99ec83a.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Exact atomic existence boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001",
+      "position": 152,
+      "receipt_hash": "sha256:cfe0c0b068864707942c03909ef4dd16660476c808fe5e9567970c60d8640bbd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001-cfe0c0b068864707.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal CODATA check of the terminal inverse fine-structure ratio"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001",
+      "position": 153,
+      "receipt_hash": "sha256:e55e9e67e3e4b389dd46c7a5cd6260674d11a9c832d55835d92100936f365bbd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001-e55e9e67e3e4b389.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal IAEA check of the nuclear-closure sequence"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001",
+      "position": 154,
+      "receipt_hash": "sha256:d45737a631dbf57c19fb433817cdb6e443f9a6e598f7d0cbb469d47819ee3ae2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001-d45737a631dbf57c.json",
+      "status": "model_admitted",
+      "subbranch": "constants_scales_precision",
+      "title": "Exact charged-lepton cubic invariants"
+    },
+    {
+      "claim_id": "SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001",
+      "position": 155,
+      "receipt_hash": "sha256:c74f9c45eab7c232ebf85fe2fd5aea24f07d167df3857dad50ffcc5c34732294",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001-c74f9c45eab7c232.json",
+      "status": "model_admitted",
+      "subbranch": "constants_scales_precision",
+      "title": "Terminal self-coupling refinement of the charged-lepton cubic"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",
+      "position": 156,
+      "receipt_hash": "sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001-369a1e48d622bba0.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal exact Koide comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
+      "position": 157,
+      "receipt_hash": "sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001-38b06863d5a59f8f.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Generation-cover dark-to-baryon fraction"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
+      "position": 158,
+      "receipt_hash": "sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001-d4ce8d8568e94b50.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Fold calibration ratio between early and late expansion routes"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+      "position": 159,
+      "receipt_hash": "sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-SPATIAL-FLATNESS-001-ec8cf537a7460687.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Complete-partition spatial flatness and absent curvature remainder"
+    },
+    {
+      "claim_id": "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+      "position": 160,
+      "receipt_hash": "sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COSMO-COMPLETE-BUDGET-001-9d9c7593823ce040.json",
+      "status": "model_admitted",
+      "subbranch": "physical_cosmology_boundary",
+      "title": "Depth-five Fold cosmic energy budget"
+    },
+    {
+      "claim_id": "SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002",
+      "position": 161,
+      "receipt_hash": "sha256:1e22b2eda37dc8afe38d740cf10db286fb2e5f238704a22ccfee7066c8cbaa85",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002-1e22b2eda37dc8af.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Complete prime-sector force and mediator ladder"
+    },
+    {
+      "claim_id": "SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002",
+      "position": 162,
+      "receipt_hash": "sha256:c15ae82a6cb030fc2b13b36ab6099bdbaf8faffb0092a7537e44aaa0d160db0c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002-c15ae82a6cb030fc.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Electroweak Fold-fibre mixing law"
+    },
+    {
+      "claim_id": "SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002",
+      "position": 163,
+      "receipt_hash": "sha256:d1cf13e86e2d9aeaa5f6993456b5f594a303d75e446ea1d9c80d41906b984d9f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002-d1cf13e86e2d9aea.json",
+      "status": "model_admitted",
+      "subbranch": "constants_scales_precision",
+      "title": "Squared proton-to-Planck hierarchy"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-PMNS-ANGLES-002",
+      "position": 164,
+      "receipt_hash": "sha256:f15bedd63f3cddc56f4ca7397633b6081ad47086cf77496cfd834bb82f5a5287",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-PMNS-ANGLES-002-f15bedd63f3cddc5.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Exact Fold PMNS squared-support triple"
+    },
+    {
+      "claim_id": "SFT-PHYS-ELECTROWEAK-WZ-RATIO-002",
+      "position": 165,
+      "receipt_hash": "sha256:a69443396f1fdf1f9beb11e65d2cc318b1c01dc5864e52d52a22eaebee1a4e89",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-WZ-RATIO-002-a69443396f1fdf1f.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Exact squared W-to-Z Fold relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-STRONG-RUNNING-DIRECTION-002",
+      "position": 166,
+      "receipt_hash": "sha256:c9628d8af62fc85936b91328ab2d539f4a5def412e3a61c4cf36c0b6d5a8d412",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-STRONG-RUNNING-DIRECTION-002-c9628d8af62fc859.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Self-sourced colour running direction"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-CP-PHASE-002",
+      "position": 167,
+      "receipt_hash": "sha256:66a61437fe9e5f7101002e716423413dbeb111125e7c9c4d540f179a8c1eb12f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-CP-PHASE-002-66a61437fe9e5f71.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Self-antipodal maximal Fold phase carrier"
+    },
+    {
+      "claim_id": "SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002",
+      "position": 168,
+      "receipt_hash": "sha256:2d4d2cf74bd6c8b589961f0ad65b4ebe3f614317493daa65c4024de4ef2ad66e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002-2d4d2cf74bd6c8b5.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Bare Dirac gyromagnetic Fold value"
+    },
+    {
+      "claim_id": "SFT-PHYS-WEAK-PARITY-FIBRE-002",
+      "position": 169,
+      "receipt_hash": "sha256:5e33439d3af142c055b5455921783e65a846e8d3d9bbf588409022480f263454",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WEAK-PARITY-FIBRE-002-5e33439d3af142c0.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Weak parity from the held Fold fibre"
+    },
+    {
+      "claim_id": "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003",
+      "position": 170,
+      "receipt_hash": "sha256:263cf79e79ed1d7ba0246f84abe869084aa4db7b195dd0c07300d1dabdef72f4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003-263cf79e79ed1d7b.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal exact on-shell electroweak Fold share"
+    },
+    {
+      "claim_id": "SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003",
+      "position": 171,
+      "receipt_hash": "sha256:affd1dc6754854b15d7f286291611e481f0572f50a11589dd88cb019289f88d7",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003-affd1dc6754854b1.json",
+      "status": "model_admitted",
+      "subbranch": "constants_scales_precision",
+      "title": "Terminal charged-colour proton-to-Planck hierarchy"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003",
+      "position": 172,
+      "receipt_hash": "sha256:e72a5865357e13d30301ecdc625014901122f399f1fd4a6967c585f214852d8a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003-e72a5865357e13d3.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Blind PDG test of the terminal electroweak Fold share"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003",
+      "position": 173,
+      "receipt_hash": "sha256:7e8e84ee71e17a8b40820223b0ecf00c5a814395a262ee6224a64eb47ed6eae8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003-7e8e84ee71e17a8b.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Blind CODATA test of the terminal proton-to-Planck hierarchy"
+    },
+    {
+      "claim_id": "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",
+      "position": 174,
+      "receipt_hash": "sha256:ee6b271f050a867fbe8d5ddcd10e7dba7f7ccba227b4094efbd5c6e2b48741fb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003-ee6b271f050a867f.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Complete finite prime-sector force and particle inventory"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003",
+      "position": 175,
+      "receipt_hash": "sha256:5cd64eeef9ed14372e44541ffc2df625aec020eb1277e52cd76de0bb222261a9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-5cd64eeef9ed1437.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Blind PDG anchor test of the complete force-sector formula"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003",
+      "position": 176,
+      "receipt_hash": "sha256:288674203497f376e9e6dbd0cb8aba169f1f2343b3b7717dbac789c886759548",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003-288674203497f376.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Half-One vacuum floor and oscillator spectrum"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-ODD-RECURRENCE-003",
+      "position": 177,
+      "receipt_hash": "sha256:dad4e023733464a86c1fcad9913bbe661064c10e67d270e47cc1430d3846a821",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-ODD-RECURRENCE-003-dad4e023733464a8.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Perpetually live odd-denominator vacuum recurrence"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003",
+      "position": 178,
+      "receipt_hash": "sha256:40f95e89489d596b961aeab5d234dca5938b41b0dd6de02ffae7da90e2d66d76",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003-40f95e89489d596b.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Vacuum polarization and running direction"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-INERTIA-UNITY-003",
+      "position": 179,
+      "receipt_hash": "sha256:3e1b000691688a8bec6ab6301c21ae05136256e08f10d0e0e36babb0dc602d71",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-INERTIA-UNITY-003-3e1b000691688a8b.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Exact vacuum-to-inertia unity relation"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003",
+      "position": 180,
+      "receipt_hash": "sha256:de7c651c4eccf51ac10efdc04853bcd36fcb3ef0dcbe3ef58bba0cf52efc0e1d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003-de7c651c4eccf51a.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Positive asymmetric vacuum-beat extraction"
+    },
+    {
+      "claim_id": "SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003",
+      "position": 181,
+      "receipt_hash": "sha256:a0ae88fcb49661c576a54741af33c09c88fb11d125f48e41edf2658b08ede835",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003-a0ae88fcb49661c5.json",
+      "status": "model_admitted",
+      "subbranch": "thermodynamics_vacuum",
+      "title": "Complete returned-cycle vacuum energy ledger"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-VACUUM-FLOOR-003",
+      "position": 182,
+      "receipt_hash": "sha256:b3ec9913e1dba8376934ffa7398a73079ec9f20f9a727693ad65bfe36581094d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-FLOOR-003-b3ec9913e1dba837.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal NIST test of the nonempty vacuum floor"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003",
+      "position": 183,
+      "receipt_hash": "sha256:89c64800b967585a1f8d5ec366c316fa95767b53479b8ef2878a963d292f3c06",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003-89c64800b967585a.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal PDG test of the vacuum-polarization running direction"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-VACUUM-INERTIA-003",
+      "position": 184,
+      "receipt_hash": "sha256:e529584ec3535d78973aea1f390db46a1324447a7b7e39cec21ebcf1a43086a5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-INERTIA-003-e529584ec3535d78.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal MICROSCOPE anchor test of vacuum-inertia unity"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003",
+      "position": 185,
+      "receipt_hash": "sha256:69f0aa277d9177a170f4b067291adfeaa8e849889e2829298c03832aa5109af6",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003-69f0aa277d9177a1.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal NIST boundary test of vacuum-work extraction"
+    },
+    {
+      "claim_id": "SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003",
+      "position": 186,
+      "receipt_hash": "sha256:d49c884c63339615c07f1b03712b44675c84df8cf0ebd84299aabc23645cba82",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003-d49c884c63339615.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Free-particle Fold phase and exact dispersion"
+    },
+    {
+      "claim_id": "SFT-PHYS-DYNAMICS-POTENTIAL-EVOLUTION-003",
+      "position": 187,
+      "receipt_hash": "sha256:2c0f29888cbfe276f5c1b03d27dc809046841d57b2857fe60a2f2f43c3a341f7",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-DYNAMICS-POTENTIAL-EVOLUTION-003-2c0f29888cbfe276.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Potential evolution and additive exact phase"
+    },
+    {
+      "claim_id": "SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003",
+      "position": 188,
+      "receipt_hash": "sha256:b144cf1ec79dc2f2086a89f90d3781f4165344e1170161469f2e800823e584e2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003-b144cf1ec79dc2f2.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Stationary Fold spectrum"
+    },
+    {
+      "claim_id": "SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003",
+      "position": 189,
+      "receipt_hash": "sha256:8781e3f2ddd1b3980b2ab928c942ccc4db1bccac6527d0723c0a797855991279",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003-8781e3f2ddd1b398.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Two-hand exact Dirac square"
+    },
+    {
+      "claim_id": "SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003",
+      "position": 190,
+      "receipt_hash": "sha256:8b58f344d672ea8b89164ee8c5e46e4faacb1eda64aa4d0d682fa4931cd30a4f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003-8b58f344d672ea8b.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Full three-plus-one Dirac square"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003",
+      "position": 191,
+      "receipt_hash": "sha256:f30356c4d6f5fc9478100b9626b8303088cead7845844e1dab28c744761b5197",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003-f30356c4d6f5fc94.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Charge, Coulomb potential and Gauss closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003",
+      "position": 192,
+      "receipt_hash": "sha256:8039e9c6e59176d5f9a09a7796e95e95fdf2587b1abc870becfdd5d715fe45dc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003-8039e9c6e59176d5.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Magnetic relativistic correction"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-LORENTZ-TRANSFER-003",
+      "position": 193,
+      "receipt_hash": "sha256:353351d17f145e0f89d0db4a7250469284dd4bae4732c1961bf519bfcd5f211f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-LORENTZ-TRANSFER-003-353351d17f145e0f.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Lorentz transfer partition"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003",
+      "position": 194,
+      "receipt_hash": "sha256:7178eac96fce3c977c64c4e4a9d5e681f1e48a91d8561045c6020979a476460b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003-7178eac96fce3c97.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Planar Maxwell curvature closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003",
+      "position": 195,
+      "receipt_hash": "sha256:e9314b2725d52aa3136325aee8ba08bca5fbc41e0ee3ee19db391ff98b7c1dac",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003-e9314b2725d52aa3.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Three-space Maxwell curvature closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-WAVE-EXACT-OPERATIONS-003",
+      "position": 196,
+      "receipt_hash": "sha256:bc9f7fff3079a79ca77a60d0680da1b8474ad13f0effedbf8b5cce9a75513e03",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-WAVE-EXACT-OPERATIONS-003-bc9f7fff3079a79c.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Exact wave, polarization, interference and nonlinear operations"
+    },
+    {
+      "claim_id": "SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003",
+      "position": 197,
+      "receipt_hash": "sha256:654937a341dfef2a5efc3ae1094a90b940e3535923bc1aa465d64e8930549853",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003-654937a341dfef2a.json",
+      "status": "model_admitted",
+      "subbranch": "fields_forces_waves_geometry",
+      "title": "Floored finite-loop closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003",
+      "position": 198,
+      "receipt_hash": "sha256:3c65449f45a60ef6f3285e063eb3a9c83b1e8c2942099c9acc09600951947eaa",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-3c65449f45a60ef6.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal dynamics and spectra comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003",
+      "position": 199,
+      "receipt_hash": "sha256:af06233350a2f6e005076914a40d3cbcc6d6744954d9c75238b52bebe204bee8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-af06233350a2f6e0.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal relativistic and electromagnetic field comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003",
+      "position": 200,
+      "receipt_hash": "sha256:2cd2aeb5d9d4f311bab1b6778728a80b9cf087a82263645db5e9c2a222078b83",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003-2cd2aeb5d9d4f311.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal optical-operation comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-FINITE-LOOPS-003",
+      "position": 201,
+      "receipt_hash": "sha256:a815c5258c82cf73a7775d9498f95ac45de0810da8eaa2ee033a5294f5612e8c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FINITE-LOOPS-003-a815c5258c82cf73.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal finite-loop and renormalization-boundary comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003",
+      "position": 202,
+      "receipt_hash": "sha256:35145c1a594d6707add50a3f2e72dd3a2162092390fd9b3db03eed38b79ee147",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003-35145c1a594d6707.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Weak gravitational potential and Gauss closure"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-EXACT-INTERVAL-003",
+      "position": 203,
+      "receipt_hash": "sha256:c5560ae617b8b077c8d945e3f9b40475f2ca9c4b64028b4a7ea339753d936c4f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-EXACT-INTERVAL-003-c5560ae617b8b077.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Exact causal interval"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-STATIC-CLOCK-003",
+      "position": 204,
+      "receipt_hash": "sha256:8c03d3fd2812c980509616560286fd28ee1b29400c611cde02ef129d15fa8cb4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-STATIC-CLOCK-003-8c03d3fd2812c980.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Static Fold-covariant clock"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003",
+      "position": 205,
+      "receipt_hash": "sha256:6726f8bb1dd6a005b03f9058957774e3e97b2d14f7850901331494aefef7185c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003-6726f8bb1dd6a005.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Gravitational-redshift and acceleration equivalence"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003",
+      "position": 206,
+      "receipt_hash": "sha256:f10d0261e22c0cdfbce4d91bd75653851064c132325530b1b57e2da5e06ee457",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003-f10d0261e22c0cdf.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Exact lattice curvature family"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003",
+      "position": 207,
+      "receipt_hash": "sha256:ce5bb88d7247a7c82c3aa1050b1e4a5261acb4e4cbc301489b504668a87c5fbe",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003-ce5bb88d7247a7c8.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Gravity self-sources through field energy"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003",
+      "position": 208,
+      "receipt_hash": "sha256:708fffd5a309a9cee077c2db46aef2bf8374435ec2c7bdf4685ef1fb719d0d73",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003-708fffd5a309a9ce.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Graviton polarization count"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003",
+      "position": 209,
+      "receipt_hash": "sha256:e0769c5998c353edbc1b4d0a6df76c0c409591e722297dff3803cabe99e73ab1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003-e0769c5998c353ed.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "One-speed quadrupole gravitational propagation"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003",
+      "position": 210,
+      "receipt_hash": "sha256:3c02d56ccea9efaed7a9fc9f065e27145f2b6597504a447e3b4ac623e61cc6af",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003-3c02d56ccea9efae.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Strong-field horizon and finite floor"
+    },
+    {
+      "claim_id": "SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003",
+      "position": 211,
+      "receipt_hash": "sha256:db27fe2ffddbd49475498a04db13944c1443b625794229c3b222676e143520a2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003-db27fe2ffddbd494.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Horizon information closure and reconstruction"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003",
+      "position": 212,
+      "receipt_hash": "sha256:ad75329a73a9f31385c1e0e991770bed8415bafa318be84afb8f278ca322d96d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003-ad75329a73a9f313.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Wormhole admissibility boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003",
+      "position": 213,
+      "receipt_hash": "sha256:b864f95be8c08840d7e5e99ab664e84404d6121fa17385ed3fe751d5a53e5ab9",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003-b864f95be8c08840.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Warp-support admissibility boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003",
+      "position": 214,
+      "receipt_hash": "sha256:101b8251369135bcf188c580c15f045d3f54cc502ad46813ded8b478b60b19cb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003-101b8251369135bc.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Closed-timelike recurrence admissibility boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003",
+      "position": 215,
+      "receipt_hash": "sha256:4fc85a7fb89b3bbace0a934db81587dff9653aa457cc76c7722ac8dca7383515",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003-4fc85a7fb89b3bba.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal gravity, clock and equivalence comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003",
+      "position": 216,
+      "receipt_hash": "sha256:5617dfc8f9f7e7ddae1dd272e793d566071563db1e344afd340bf70b2c8ba493",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-5617dfc8f9f7e7dd.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal gravitational-wave speed, polarization and quadrupole comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003",
+      "position": 217,
+      "receipt_hash": "sha256:8279f3140235ca46ae66bbf4ed0fbf28c804d3bb42b43ecdb0d12ce45dc807b8",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003-8279f3140235ca46.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal horizon and information-boundary comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003",
+      "position": 218,
+      "receipt_hash": "sha256:5151d23acf5efc4266a74058442147b66ea3e2f926dd810d3578d417e255c883",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003-5151d23acf5efc42.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal nonstandard-spacetime realization boundary"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-QUARK-INVARIANTS-003",
+      "position": 219,
+      "receipt_hash": "sha256:8dad6c72f49f916be9fd5d4aba1c3837e86795580ef246403098aed2a2b34b63",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-INVARIANTS-003-8dad6c72f49f916b.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Quark channel invariants and cover depths"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-QUARK-CUBICS-003",
+      "position": 220,
+      "receipt_hash": "sha256:e6fccd6c428a5ee8c9126ae25ef145d8c5780d69465d1bf878d3ff39b34969e3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-CUBICS-003-e6fccd6c428a5ee8.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Dual exact quark mass cubics"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-QUARK-DRESSING-003",
+      "position": 221,
+      "receipt_hash": "sha256:4156d17fa99d73374151d8abebba074fb43f2d9852ae3c3e15564f8a49dd7f6e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-DRESSING-003-4156d17fa99d7337.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal quark self-coupling dressing"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-CKM-FIBRE-003",
+      "position": 222,
+      "receipt_hash": "sha256:2cf6948eb88b328bc6efb24b394a37cb8c6d2c32044196fa39ae189488976ea3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-FIBRE-003-2cf6948eb88b328b.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Exact CKM fibre alignment"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-CKM-PHYSICAL-003",
+      "position": 223,
+      "receipt_hash": "sha256:beaa25910b1a8fb944c90bca43b8cf07fec997756bb3cf3b96724133eee18d4a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-PHYSICAL-003-beaa25910b1a8fb9.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Mass-root CKM physical mixing law"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-PROTON-ELECTRON-003",
+      "position": 224,
+      "receipt_hash": "sha256:456305f867a1afc75a47afa355364f48132b901c4c1f0f7a7ace9a40be64b988",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-PROTON-ELECTRON-003-456305f867a1afc7.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Proton-to-electron hierarchy reconstruction"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-SPLITTING-003",
+      "position": 225,
+      "receipt_hash": "sha256:037d94c3ae94a015aa5177ee829fcd77e1137f5cdb10cfb2a9476f7a4bf4f5b7",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-SPLITTING-003-037d94c3ae94a015.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Exact neutrino splitting ladder"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-POSITIVE-MASS-003",
+      "position": 226,
+      "receipt_hash": "sha256:049c0ce9ac0b05591b8636141be26c976a31f39aabb5941ad6aca5ffb60dd7fd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-POSITIVE-MASS-003-049c0ce9ac0b0559.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Positive absolute-neutrino mass structure"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003",
+      "position": 227,
+      "receipt_hash": "sha256:6cc0b2828e8a304fd80c274f6e9a2e722cd1bebd68cff071f4c394bf25c872bd",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003-6cc0b2828e8a304f.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Physical PMNS and CP support"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-MAJORANA-003",
+      "position": 228,
+      "receipt_hash": "sha256:da6688fb7442a5d3f4e3aa39f745c04aebc87102af60186b6e1bcd4e7078345e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-MAJORANA-003-da6688fb7442a5d3.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Single-hand Majorana discriminator"
+    },
+    {
+      "claim_id": "SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003",
+      "position": 229,
+      "receipt_hash": "sha256:3b7bc18e1160fe2a3633ce7cba15b9c3001f55ed73516ef9a6a6db474292f6fb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003-3b7bc18e1160fe2a.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Neutrinoless-double-beta noncancellation prediction"
+    },
+    {
+      "claim_id": "SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003",
+      "position": 230,
+      "receipt_hash": "sha256:e0a6844ac70a6e929c5e23ed576df2ea5c13eb4a05d33b148b2b3ad75a4c4f6f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003-e0a6844ac70a6e92.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Electron/muon magnetic-anomaly structure"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-QUARK-CKM-003",
+      "position": 231,
+      "receipt_hash": "sha256:f9b53638bf2ac6dd4c0a294d9e10926ad8a0c00b64043500e0560845f257ff8e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-QUARK-CKM-003-f9b53638bf2ac6dd.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Quark dressing and CKM comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-PROTON-ELECTRON-003",
+      "position": 232,
+      "receipt_hash": "sha256:4748126ffa9e95ad6473d568db39420d0252353b27f778ca67d3f3edc742a4a6",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-PROTON-ELECTRON-003-4748126ffa9e95ad.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Proton/electron precision comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003",
+      "position": 233,
+      "receipt_hash": "sha256:1971175fec6fe5978abe8142346e71e4800ef6bb31aaa678cd2752149f08f10c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-1971175fec6fe597.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Neutrino mass, ordering, PMNS and CP comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003",
+      "position": 234,
+      "receipt_hash": "sha256:028482eb80db7fb39fc3bc19b98ce247ab28fcd8121b80f1e4f6fab4a348d7d6",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003-028482eb80db7fb3.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Majorana and neutrinoless-double-beta status comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003",
+      "position": 235,
+      "receipt_hash": "sha256:e6065612de8e491dff5272b714302a4e85359e5e5d17afb43c08accdeb5e9b3f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003-e6065612de8e491d.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Electron and muon magnetic-anomaly comparison"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-BARYON-PHOTON-003",
+      "position": 236,
+      "receipt_hash": "sha256:2455218c2d7918d015bcacceffca6308da79a73beedf33f9ecdbd5a715413ceb",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-003-2455218c2d7918d0.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Baryon-to-photon Fold transport law"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003",
+      "position": 237,
+      "receipt_hash": "sha256:8a8a498160b16bb65ebfc1071d404a5db6de08b6c9f3499765889ca17677b501",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003-8a8a498160b16bb6.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Common quark/lepton mixing construction"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003",
+      "position": 238,
+      "receipt_hash": "sha256:2bd73d71dcee6d09c2d427da1e1ac79c1866ef75949c5571509fd37f8fd21168",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003-2bd73d71dcee6d09.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Depth-independent Fold mass-ratio family"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003",
+      "position": 239,
+      "receipt_hash": "sha256:bd01069f06d421e37672d6a58657824c529f0bf33ce2286dc723a40d1d7855e4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003-bd01069f06d421e3.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Mirror-closed lepton mass carrier"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003",
+      "position": 240,
+      "receipt_hash": "sha256:c1ef281840dac57df5ac309768874c793c7880fcbbfe5299d1b4deff3f2531ea",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003-c1ef281840dac57d.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Mixing-row coupling return law"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-GENERATION-DEPTH-003",
+      "position": 241,
+      "receipt_hash": "sha256:a120ad261a4308fc3008ccaab35d38939f6152f82c31f4f00c773582e3f2d726",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-GENERATION-DEPTH-003-a120ad261a4308fc.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Common generation return depth"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-CONFINEMENT-LIFT-003",
+      "position": 242,
+      "receipt_hash": "sha256:53f2509cb96b422753fb8211e2d7fdb93b351d64fb85eb1a90a7dacc717e646a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-CONFINEMENT-LIFT-003-53f2509cb96b4227.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Lightest-quark confinement lift"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-CKM-TERMINAL-004",
+      "position": 243,
+      "receipt_hash": "sha256:745bc9840a7f5396866ff2e581fe700d9f254bff2538ef3c31eb74fc8683513e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-TERMINAL-004-745bc9840a7f5396.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal physical CKM transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004",
+      "position": 244,
+      "receipt_hash": "sha256:21ba6f25f064602267b8e415ceb3ed6f985e318a3b29e7c8626b1cc71ea4c7cc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004-21ba6f25f0646022.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal baryon-to-photon transport"
+    },
+    {
+      "claim_id": "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004",
+      "position": 245,
+      "receipt_hash": "sha256:c52208ec2212ffa3fd16e34b90abfdd3adc083411d7a19914d3591b4f8ea9d23",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-c52208ec2212ffa3.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal composite proton/electron precision law"
+    },
+    {
+      "claim_id": "SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004",
+      "position": 246,
+      "receipt_hash": "sha256:b85f5162d1cf55490a4bc8666fa02b354029ff4a297d9013c61dddd93491629d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004-b85f5162d1cf5549.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Terminal exact finite turn projection"
+    },
+    {
+      "claim_id": "SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004",
+      "position": 247,
+      "receipt_hash": "sha256:1901b85dc30105470cbf50fd13560402dd359f21aab9be6f324db678318087e4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-1901b85dc3010547.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Terminal exact electron magnetic anomaly"
+    },
+    {
+      "claim_id": "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004",
+      "position": 248,
+      "receipt_hash": "sha256:8f5637b4d0189746e09a6e7d05937cefeef8d493c095e90162c3b3c8e458dd5a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004-8f5637b4d0189746.json",
+      "status": "model_admitted",
+      "subbranch": "physical_quantum_relativistic",
+      "title": "Terminal exact muon magnetic anomaly"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004",
+      "position": 249,
+      "receipt_hash": "sha256:8fa8b8bb81ea31d715fae3c5f3ceb869b5e4d8afad6c959ff86f12ab2ea7471a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004-8fa8b8bb81ea31d7.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Cubic atomic support and exact neighbour balance"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004",
+      "position": 250,
+      "receipt_hash": "sha256:ea9b3b9f34311e1f1f41962a5405ffad6250fcd74d75cf107a3b92d35dd2d464",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004-ea9b3b9f34311e1f.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Depth-independent exact hydrogen spectral ladder"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004",
+      "position": 251,
+      "receipt_hash": "sha256:a6239e61a184cf72e869fabe9c7d2dcc433366e30ef4bfdff68ebd0ff2a0fd9d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004-a6239e61a184cf72.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Exact atomic gross, fine and first bound-return hierarchy"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004",
+      "position": 252,
+      "receipt_hash": "sha256:34ea2b8ac5ee23d6cfe9e2ca37a190682c73830e53fb3b0c32ece6506e7f8de2",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004-34ea2b8ac5ee23d6.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Atomic transition, selection and field-splitting law"
+    },
+    {
+      "claim_id": "SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",
+      "position": 253,
+      "receipt_hash": "sha256:234231a79ab030c84486fbee91cd79a5498ebb4f88c6467c366f38815ff681d0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004-234231a79ab030c8.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Exact molecular rotational-vibrational spectral hierarchy"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004",
+      "position": 254,
+      "receipt_hash": "sha256:2d3a137022da53383895f1e43bdfd78a6ce04912b408c76c4a4d0bcef569ab61",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-2d3a137022da5338.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal NIST comparison of the forced six-neighbour cubic support"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004",
+      "position": 255,
+      "receipt_hash": "sha256:ac7a0e6e2bac1372b978f599799af40cebb9660b655f6b67978c798256204285",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-ac7a0e6e2bac1372.json",
+      "status": "model_admitted",
+      "subbranch": "post_seal_empirical_validation",
+      "title": "Post-seal NIST comparison of the exact hydrogen spectral ladder"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005",
+      "position": 256,
+      "receipt_hash": "sha256:38fa8fa2ffbfa3733e9ab90ca7a052699c265c5e844e896a570c8edf1ec5afe3",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005-38fa8fa2ffbfa373.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact hydrogen Lamb-shift successor"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005",
+      "position": 257,
+      "receipt_hash": "sha256:0ec7036e95a98f142a5ea57b49652d1de66df06d7cdf6c3b82f27156c4f0d61a",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005-0ec7036e95a98f14.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact hydrogen fine-structure successor"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005",
+      "position": 258,
+      "receipt_hash": "sha256:e65c383f1e1a6d48979d425f14ca83e9e906f3b60acb757e8df8a57ffa7994c1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-e65c383f1e1a6d48.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact hydrogen hyperfine and twenty-one-centimetre successor"
+    },
+    {
+      "claim_id": "SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005",
+      "position": 259,
+      "receipt_hash": "sha256:286941c32f5e99614d53ad4ab579a565af536106d3e64e9c590cbad527fd5b2b",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-286941c32f5e9961.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact molecular rotational, vibrational and isotope spectroscopy"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005",
+      "position": 260,
+      "receipt_hash": "sha256:e9780bb0acb2e0c4038b037dbc53203529a305f7a1cae84c5e73dfe9013cb59c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-e9780bb0acb2e0c4.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact hydrogen reduced-mass and Rydberg-scale completion"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005",
+      "position": 261,
+      "receipt_hash": "sha256:86b2573d6cd627c61d4816f1a90868906d5c66cc640d9a03f7d3b6e635c9406c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-86b2573d6cd627c6.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact atomic shell, filling and periodicity completion"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005",
+      "position": 262,
+      "receipt_hash": "sha256:23cb34b722250938fdbc749addee2c0d534ba0f7c0ee54cbb68c678fd4adc5d5",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-23cb34b722250938.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact atomic transition-rate, lifetime and multipole completion"
+    },
+    {
+      "claim_id": "SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005",
+      "position": 263,
+      "receipt_hash": "sha256:91df8eb2a38be812ebd00525e22ed77945498d2aa03c52c3776eecc2d34f3a71",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-91df8eb2a38be812.json",
+      "status": "model_admitted",
+      "subbranch": "atomic_molecular",
+      "title": "Terminal exact atomic Zeeman and Stark field-splitting completion"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEON-BINDING-TERMINAL-005",
+      "position": 264,
+      "receipt_hash": "sha256:deedcfb769c2cf51ebea249bd3e319ee7ec95c8feb883210312badabfd8332ab",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEON-BINDING-TERMINAL-005-deedcfb769c2cf51.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal nucleon composition, binding dominance and mass ordering"
+    },
+    {
+      "claim_id": "SFT-PHYS-HADRON-REGGE-TERMINAL-005",
+      "position": 265,
+      "receipt_hash": "sha256:64caf5f62f3314597b9c525b694005ac4bc81f57446ff7e2dd436bd817646933",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-HADRON-REGGE-TERMINAL-005-64caf5f62f331459.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal light-hadron multiplets and depth-independent Regge support"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005",
+      "position": 266,
+      "receipt_hash": "sha256:05a3a23d0f0fbea4618128f8cfd75440505666931efcda6f9e89fa2dc37fd22e",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-05a3a23d0f0fbea4.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal residual nuclear interaction and inverse-mediator range"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005",
+      "position": 267,
+      "receipt_hash": "sha256:0f08011755d14b3c910034436a4560016125b467a28b35b01b6b6fe02364024d",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-0f08011755d14b3c.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal zero-parameter nuclear binding curve and stability maximum"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005",
+      "position": 268,
+      "receipt_hash": "sha256:83e9d821fef3a3c8d4717545ca5109a1a8e7849c433b55ce5c47a17f4ac845f4",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-83e9d821fef3a3c8.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal radioactive transition topology and exact half-life survival"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005",
+      "position": 269,
+      "receipt_hash": "sha256:fbbdba722e6fb27d738ad3cd1df1f62e4caa979038b212147120ca814f0e25fa",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005-fbbdba722e6fb27d.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal fusion/fission direction, barrier and release law"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006",
+      "position": 270,
+      "receipt_hash": "sha256:1b13169930d9f4c22d75008ef7debe615a8c1dfdedee7a5f495b85c467444e50",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006-1b13169930d9f4c2.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Fusion/fission yield ordering and distinct threshold carriers"
+    },
+    {
+      "claim_id": "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006",
+      "position": 271,
+      "receipt_hash": "sha256:c2a2ca11504bbe66760011c57dff2e8459f171c836b754d24b2ae3c200fa4cbc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006-c2a2ca11504bbe66.json",
+      "status": "model_admitted",
+      "subbranch": "nuclear_hadronic",
+      "title": "Terminal deuteron binding, spin and dinucleon exclusion"
+    },
+    {
+      "claim_id": "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006",
+      "position": 272,
+      "receipt_hash": "sha256:2c2e6212e5bb27a2b7647e8eca1583bc75775c886f2185885a7925d83e195b91",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006-2c2e6212e5bb27a2.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal Fold scattering, Rutherford angular law and Compton transfer"
+    },
+    {
+      "claim_id": "SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006",
+      "position": 273,
+      "receipt_hash": "sha256:a4e14f20a7c1f6920115f0e5ad0b911b5462b690aad35ee79aac39b691d12d3f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006-a4e14f20a7c1f692.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal Fold decay widths, exact branching partitions and lifetimes"
+    },
+    {
+      "claim_id": "SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",
+      "position": 274,
+      "receipt_hash": "sha256:b9263f585f01a2401261f465ad250f405a9914da5c53e57ba113f076aeb4f309",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006-b9263f585f01a240.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Terminal Fold running functions and common-support convergence"
+    },
+    {
+      "claim_id": "SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",
+      "position": 275,
+      "receipt_hash": "sha256:185a5dfb16ba14910625b0e2e94a894e7f422cf8dfe65f824ab4f9f5759b07fe",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007-185a5dfb16ba1491.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Odd-lattice all-region occupancy and exact recurrence vector"
+    },
+    {
+      "claim_id": "SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007",
+      "position": 276,
+      "receipt_hash": "sha256:c761476abce4bdf4d357022245a0d069f2ca5f30cb34ee917e8a2f7578a5c2d0",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007-c761476abce4bdf4.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Half-One pair synchronization and coupled-ensemble terminal law"
+    },
+    {
+      "claim_id": "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008",
+      "position": 277,
+      "receipt_hash": "sha256:f0b74a8639f9e01be7b9adc31f83b4b24ed82f085e72c17736c38f030b5cae40",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008-f0b74a8639f9e01b.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Exact Fold expansion and information-rate carrier correspondence"
+    },
+    {
+      "claim_id": "SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008",
+      "position": 278,
+      "receipt_hash": "sha256:845ceed3f993a0523e1f01a5ce9375d469e426be12539941c5e5fd5130b9534f",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008-845ceed3f993a052.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "Exact normalized coupled-map synchronization threshold"
+    },
+    {
+      "claim_id": "SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009",
+      "position": 279,
+      "receipt_hash": "sha256:9a067d10ece75b8300bec3c77193649313dbc2fcc116f721bd0fef54544a433c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009-9a067d10ece75b83.json",
+      "status": "model_admitted",
+      "subbranch": "mechanics_dynamics",
+      "title": "All-dimension orbital-restoration stability law"
+    },
+    {
+      "claim_id": "SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009",
+      "position": 280,
+      "receipt_hash": "sha256:b0e30a2cb8fa9d9f2232df8f8790ab82d8fc2f8e6555326543e15fce2fb48bba",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009-b0e30a2cb8fa9d9f.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Exact gravitational self-source fixed point and correction contraction"
+    },
+    {
+      "claim_id": "SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010",
+      "position": 281,
+      "receipt_hash": "sha256:79b12fc32760832dc52e87fcf8d743575ebe2f944c18e7cb24cbb41a6d8a5b22",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010-79b12fc32760832d.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Four-coordinate symmetric curvature-source conservation law"
+    },
+    {
+      "claim_id": "SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011",
+      "position": 282,
+      "receipt_hash": "sha256:fca4c68a06026daea19121fd5b71d52bc98e2410be1f83eaef13ff62600d880c",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011-fca4c68a06026dae.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Exact static spherical exterior coefficient, flux and clock law"
+    },
+    {
+      "claim_id": "SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012",
+      "position": 283,
+      "receipt_hash": "sha256:e43448d651ade64487e4cbd44620c4812ffafcb62d20bd71c9c3bde51cdb4db6",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012-e43448d651ade644.json",
+      "status": "model_admitted",
+      "subbranch": "spacetime_gravitation",
+      "title": "Exact quadrupole third-difference radiated-power law"
+    },
+    {
+      "claim_id": "SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013",
+      "position": 284,
+      "receipt_hash": "sha256:bae91c8dc0b88c6130260c7e10ea22e9433ca322bd5ad3a8f9077653315f57e1",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013-bae91c8dc0b88c61.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Simultaneous massless, One-speed and confined strong-carrier law"
+    },
+    {
+      "claim_id": "SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014",
+      "position": 285,
+      "receipt_hash": "sha256:641cdf7a00a56d3889b1a31731dff04c70dbe068465924f005d000d3fc100cdc",
+      "receipt_path": "receipts/engine/model_admitted/SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014-641cdf7a00a56d38.json",
+      "status": "model_admitted",
+      "subbranch": "matter_interactions_flavour",
+      "title": "Strong self-source iteration and finite fixed-point boundary"
+    }
   ],
-  "subbranch_counts": {
-    "measurement_metrology": 12,
-    "mechanics": 15,
-    "interactions_fields": 14,
-    "waves": 10,
-    "thermodynamics": 15,
-    "quantum_physics": 16,
-    "matter_particles_nuclei": 15,
-    "spacetime_gravitation": 13,
-    "continua_collective_matter": 15,
-    "cosmological_boundary": 7
-  },
-  "required_claim_count": 132,
+  "ownership_rule": "A claim enters this inventory exactly when its claim registration and immutable model-admitted receipt both assign it to Physics. Cross-branch V1/V2 observations are never bulk-assigned to Physics.",
+  "required_claim_count": 285,
   "required_claim_ids": [
     "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
     "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
@@ -103,6 +2648,14 @@
     "SFT-PHYS-THERMO-FLUCTUATION-001",
     "SFT-PHYS-THERMO-IRREVERSIBILITY-001",
     "SFT-PHYS-THERMO-RESPONSE-001",
+    "SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001",
+    "SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001",
+    "SFT-PHYS-VALIDATION-MECHANICS-FORCE-001",
+    "SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001",
+    "SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001",
+    "SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001",
+    "SFT-PHYS-VALIDATION-WAVE-ENERGY-001",
+    "SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001",
     "SFT-PHYS-QUANTUM-PHYSICAL-STATE-001",
     "SFT-PHYS-QUANTUM-EVOLUTION-001",
     "SFT-PHYS-QUANTUM-OBSERVABLE-001",
@@ -168,1514 +2721,184 @@
     "SFT-PHYS-COSMO-LENSING-001",
     "SFT-PHYS-COSMO-DISTANCE-001",
     "SFT-PHYS-COSMO-STRUCTURE-GROWTH-001",
-    "SFT-PHYS-COSMO-BRANCH-BOUNDARY-001"
+    "SFT-PHYS-COSMO-BRANCH-BOUNDARY-001",
+    "SFT-PHYS-MEAS-BOUNDARY-GROWTH-001",
+    "SFT-PHYS-STRUCT-GENERATOR-THREE-001",
+    "SFT-PHYS-SPACE-DIMENSION-THREE-001",
+    "SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001",
+    "SFT-PHYS-FIELD-INVERSE-SQUARE-001",
+    "SFT-PHYS-VALIDATION-INVERSE-SQUARE-001",
+    "SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001",
+    "SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001",
+    "SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001",
+    "SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001",
+    "SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001",
+    "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001",
+    "SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001",
+    "SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001",
+    "SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001",
+    "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001",
+    "SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001",
+    "SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001",
+    "SFT-PHYS-COSMO-SPATIAL-FLATNESS-001",
+    "SFT-PHYS-COSMO-COMPLETE-BUDGET-001",
+    "SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002",
+    "SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002",
+    "SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002",
+    "SFT-PHYS-NEUTRINO-PMNS-ANGLES-002",
+    "SFT-PHYS-ELECTROWEAK-WZ-RATIO-002",
+    "SFT-PHYS-STRONG-RUNNING-DIRECTION-002",
+    "SFT-PHYS-NEUTRINO-CP-PHASE-002",
+    "SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002",
+    "SFT-PHYS-WEAK-PARITY-FIBRE-002",
+    "SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003",
+    "SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003",
+    "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003",
+    "SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003",
+    "SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003",
+    "SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003",
+    "SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003",
+    "SFT-PHYS-VACUUM-ODD-RECURRENCE-003",
+    "SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003",
+    "SFT-PHYS-VACUUM-INERTIA-UNITY-003",
+    "SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003",
+    "SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003",
+    "SFT-PHYS-VALIDATION-VACUUM-FLOOR-003",
+    "SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003",
+    "SFT-PHYS-VALIDATION-VACUUM-INERTIA-003",
+    "SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003",
+    "SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003",
+    "SFT-PHYS-DYNAMICS-POTENTIAL-EVOLUTION-003",
+    "SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003",
+    "SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003",
+    "SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003",
+    "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003",
+    "SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003",
+    "SFT-PHYS-FIELD-LORENTZ-TRANSFER-003",
+    "SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003",
+    "SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003",
+    "SFT-PHYS-WAVE-EXACT-OPERATIONS-003",
+    "SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003",
+    "SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003",
+    "SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003",
+    "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003",
+    "SFT-PHYS-VALIDATION-FINITE-LOOPS-003",
+    "SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003",
+    "SFT-PHYS-SPACETIME-EXACT-INTERVAL-003",
+    "SFT-PHYS-GRAVITY-STATIC-CLOCK-003",
+    "SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003",
+    "SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003",
+    "SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003",
+    "SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003",
+    "SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003",
+    "SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003",
+    "SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003",
+    "SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003",
+    "SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003",
+    "SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003",
+    "SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003",
+    "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003",
+    "SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003",
+    "SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003",
+    "SFT-PHYS-MATTER-QUARK-INVARIANTS-003",
+    "SFT-PHYS-MATTER-QUARK-CUBICS-003",
+    "SFT-PHYS-MATTER-QUARK-DRESSING-003",
+    "SFT-PHYS-MATTER-CKM-FIBRE-003",
+    "SFT-PHYS-MATTER-CKM-PHYSICAL-003",
+    "SFT-PHYS-MATTER-PROTON-ELECTRON-003",
+    "SFT-PHYS-NEUTRINO-SPLITTING-003",
+    "SFT-PHYS-NEUTRINO-POSITIVE-MASS-003",
+    "SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003",
+    "SFT-PHYS-NEUTRINO-MAJORANA-003",
+    "SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003",
+    "SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003",
+    "SFT-PHYS-VALIDATION-QUARK-CKM-003",
+    "SFT-PHYS-VALIDATION-PROTON-ELECTRON-003",
+    "SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003",
+    "SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003",
+    "SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003",
+    "SFT-PHYS-MATTER-BARYON-PHOTON-003",
+    "SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003",
+    "SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003",
+    "SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003",
+    "SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003",
+    "SFT-PHYS-MATTER-GENERATION-DEPTH-003",
+    "SFT-PHYS-MATTER-CONFINEMENT-LIFT-003",
+    "SFT-PHYS-MATTER-CKM-TERMINAL-004",
+    "SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004",
+    "SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004",
+    "SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004",
+    "SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004",
+    "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004",
+    "SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004",
+    "SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004",
+    "SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004",
+    "SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004",
+    "SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004",
+    "SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004",
+    "SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004",
+    "SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005",
+    "SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005",
+    "SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005",
+    "SFT-PHYS-NUCLEON-BINDING-TERMINAL-005",
+    "SFT-PHYS-HADRON-REGGE-TERMINAL-005",
+    "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005",
+    "SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005",
+    "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005",
+    "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005",
+    "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006",
+    "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006",
+    "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006",
+    "SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006",
+    "SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",
+    "SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",
+    "SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007",
+    "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008",
+    "SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008",
+    "SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009",
+    "SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009",
+    "SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010",
+    "SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011",
+    "SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012",
+    "SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013",
+    "SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014"
   ],
-  "admitted_claim_count_at_freeze": 132,
-  "unclassified_obligations": [],
-  "external_source_registry_path": "experiments/external_sources/physics/authoritative_sources.json",
-  "external_source_registry_hash": "sha256:cb3e67d9486246c81189a82f179529180d4734328f2b6d9fc075d8fcea4d9470",
-  "obligations": [
-    {
-      "claim_id": "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
-      "subbranch": "measurement_metrology",
-      "title": "Capability-closed exact Fold prediction form",
-      "evidence_mode": "formal_forcing",
-      "external_source_ids": [],
-      "position": 1,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
-      "subbranch": "measurement_metrology",
-      "title": "Portable target commitment and post-seal custody",
-      "evidence_mode": "formal_forcing",
-      "external_source_ids": [],
-      "position": 2,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-HOSTILE-PACKAGE-001",
-      "subbranch": "measurement_metrology",
-      "title": "Hostile empirical-package and authority protection",
-      "evidence_mode": "formal_forcing",
-      "external_source_ids": [],
-      "position": 3,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-OBSERVATION-CARRIER-001",
-      "subbranch": "measurement_metrology",
-      "title": "Physical observation and retained distinction",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 4,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-QUANTITY-CARRIER-001",
-      "subbranch": "measurement_metrology",
-      "title": "Physical quantity as reference-equivalence carrier",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 5,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001",
-      "subbranch": "measurement_metrology",
-      "title": "Dimension composition and independence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 6,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-UNIT-COMPARISON-001",
-      "subbranch": "measurement_metrology",
-      "title": "Unit comparison and exact scale transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 7,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-REFERENCE-REALIZATION-001",
-      "subbranch": "measurement_metrology",
-      "title": "Reference realization and traceability",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 8,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-VALUE-RECORD-001",
-      "subbranch": "measurement_metrology",
-      "title": "Measured-value record separated from proof value",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 9,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-UNCERTAINTY-001",
-      "subbranch": "measurement_metrology",
-      "title": "Measurement uncertainty as retained admissible alternatives",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 10,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-CALIBRATION-001",
-      "subbranch": "measurement_metrology",
-      "title": "Calibration chain and comparison closure",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 11,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001",
-      "subbranch": "measurement_metrology",
-      "title": "Dimensional consistency and lawful conversion",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 12,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-EVENT-CHANGE-001",
-      "subbranch": "mechanics",
-      "title": "Physical event and generated change",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 13,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-DURATION-001",
-      "subbranch": "mechanics",
-      "title": "Duration from ordered recurrence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 14,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001",
-      "subbranch": "mechanics",
-      "title": "Location, separation and held displacement orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 15,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-SPEED-VELOCITY-001",
-      "subbranch": "mechanics",
-      "title": "Speed and oriented velocity",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 16,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-ACCELERATION-001",
-      "subbranch": "mechanics",
-      "title": "Change of velocity and acceleration",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 17,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-INERTIA-001",
-      "subbranch": "mechanics",
-      "title": "Inertial persistence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 18,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-MOMENTUM-001",
-      "subbranch": "mechanics",
-      "title": "Momentum carrier and transfer",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 19,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-FORCE-001",
-      "subbranch": "mechanics",
-      "title": "Force as constrained momentum transfer",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 20,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-WORK-ENERGY-001",
-      "subbranch": "mechanics",
-      "title": "Work, kinetic change and energy carrier",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 21,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-POWER-001",
-      "subbranch": "mechanics",
-      "title": "Power as ordered energy transfer",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 22,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-ANGULAR-MOTION-001",
-      "subbranch": "mechanics",
-      "title": "Angular motion and cyclic orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 23,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-ANGULAR-MOMENTUM-001",
-      "subbranch": "mechanics",
-      "title": "Angular momentum and torque",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 24,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-COMPOSITE-CENTRE-001",
-      "subbranch": "mechanics",
-      "title": "Composite motion and centre relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 25,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-CONSERVATION-001",
-      "subbranch": "mechanics",
-      "title": "Mechanical conservation under closed transfer",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 26,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001",
-      "subbranch": "mechanics",
-      "title": "Constrained motion, restoration and oscillation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 27,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-SOURCE-RESPONSE-001",
-      "subbranch": "interactions_fields",
-      "title": "Source, response and field carrier",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 28,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001",
-      "subbranch": "interactions_fields",
-      "title": "Generated support and geometric dilution",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 29,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001",
-      "subbranch": "interactions_fields",
-      "title": "Gravitational interaction at the weak relational boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 30,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001",
-      "subbranch": "interactions_fields",
-      "title": "Electric distinction and held charge orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 31,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001",
-      "subbranch": "interactions_fields",
-      "title": "Electric field, potential and work correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 32,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-MAGNETIC-001",
-      "subbranch": "interactions_fields",
-      "title": "Magnetic response to oriented change",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 33,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-INDUCTION-001",
-      "subbranch": "interactions_fields",
-      "title": "Induction from changing linked support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 34,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001",
-      "subbranch": "interactions_fields",
-      "title": "Electric-magnetic compositional closure",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 35,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001",
-      "subbranch": "interactions_fields",
-      "title": "Gauge-equivalent descriptions and retained observables",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 36,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001",
-      "subbranch": "interactions_fields",
-      "title": "Local propagation and causal accessibility",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 37,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-RADIATION-001",
-      "subbranch": "interactions_fields",
-      "title": "Radiative transport and source detachment",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 38,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-INTERACTION-CLASSES-001",
-      "subbranch": "interactions_fields",
-      "title": "Empirical closure of physical interaction classes",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 39,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-CONSERVED-SOURCE-001",
-      "subbranch": "interactions_fields",
-      "title": "Source continuity and field conservation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 40,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FIELD-ACTION-REACTION-001",
-      "subbranch": "interactions_fields",
-      "title": "Reciprocal interaction and transferred distinction",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 41,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-PERIOD-FREQUENCY-001",
-      "subbranch": "waves",
-      "title": "Period, recurrence and frequency",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 42,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-PROPAGATION-001",
-      "subbranch": "waves",
-      "title": "Generated wave propagation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 43,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001",
-      "subbranch": "waves",
-      "title": "Propagation speed, wavelength and frequency relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 44,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-SUPERPOSITION-001",
-      "subbranch": "waves",
-      "title": "Wave superposition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 45,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-INTERFERENCE-001",
-      "subbranch": "waves",
-      "title": "Wave interference and predecessor merging",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 46,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-DIFFRACTION-001",
-      "subbranch": "waves",
-      "title": "Diffraction at constrained support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 47,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-POLARIZATION-001",
-      "subbranch": "waves",
-      "title": "Polarization as held transverse orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 48,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-DISPERSION-001",
-      "subbranch": "waves",
-      "title": "Dispersion and support-dependent propagation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 49,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-RESONANCE-001",
-      "subbranch": "waves",
-      "title": "Resonance and recurrence matching",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 50,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-WAVE-ENERGY-MOMENTUM-001",
-      "subbranch": "waves",
-      "title": "Wave energy and momentum transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 51,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-MICRO-MACRO-001",
-      "subbranch": "thermodynamics",
-      "title": "Microstate-to-macrostate observation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 52,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-TEMPERATURE-001",
-      "subbranch": "thermodynamics",
-      "title": "Temperature carrier and thermal ordering",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 53,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-EQUILIBRIUM-001",
-      "subbranch": "thermodynamics",
-      "title": "Thermal equilibrium equivalence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 54,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-HEAT-WORK-001",
-      "subbranch": "thermodynamics",
-      "title": "Heat and work as distinct energy-transfer traces",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 55,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-FIRST-LAW-001",
-      "subbranch": "thermodynamics",
-      "title": "Closed energy accounting",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 56,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-ENTROPY-001",
-      "subbranch": "thermodynamics",
-      "title": "Thermodynamic entropy from unresolved support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 57,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-SECOND-LAW-001",
-      "subbranch": "thermodynamics",
-      "title": "Irreversible observation and entropy orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 58,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-THIRD-LAW-001",
-      "subbranch": "thermodynamics",
-      "title": "Finite unattainability boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 59,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001",
-      "subbranch": "thermodynamics",
-      "title": "Exact finite statistical weight",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 60,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-STATE-RELATION-001",
-      "subbranch": "thermodynamics",
-      "title": "Thermodynamic state relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 61,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001",
-      "subbranch": "thermodynamics",
-      "title": "Phase coexistence and transition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 62,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-KINETIC-TRANSPORT-001",
-      "subbranch": "thermodynamics",
-      "title": "Kinetic transport and collision mixing",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 63,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-FLUCTUATION-001",
-      "subbranch": "thermodynamics",
-      "title": "Finite fluctuation and recurrence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 64,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-IRREVERSIBILITY-001",
-      "subbranch": "thermodynamics",
-      "title": "Macroscopic irreversibility with retained microtrace",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 65,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-THERMO-RESPONSE-001",
-      "subbranch": "thermodynamics",
-      "title": "Susceptibility, response and transport correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 66,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-PHYSICAL-STATE-001",
-      "subbranch": "quantum_physics",
-      "title": "Physical quantum state correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 67,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-EVOLUTION-001",
-      "subbranch": "quantum_physics",
-      "title": "Reversible physical quantum evolution",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 68,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-OBSERVABLE-001",
-      "subbranch": "quantum_physics",
-      "title": "Observable and measurement record",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 69,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-WEIGHT-001",
-      "subbranch": "quantum_physics",
-      "title": "Measurement weights from exact branch support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 70,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-INCOMPATIBILITY-001",
-      "subbranch": "quantum_physics",
-      "title": "Incompatible observations and uncertainty",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 71,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-SPIN-001",
-      "subbranch": "quantum_physics",
-      "title": "Spin and finite cyclic label action",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 72,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001",
-      "subbranch": "quantum_physics",
-      "title": "Identical physical constituents",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 73,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-EXCLUSION-001",
-      "subbranch": "quantum_physics",
-      "title": "Exclusion from antisymmetric composition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 74,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-TUNNELLING-001",
-      "subbranch": "quantum_physics",
-      "title": "Barrier traversal on complete support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 75,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001",
-      "subbranch": "quantum_physics",
-      "title": "Discrete bound-state spectra",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 76,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-ENTANGLEMENT-001",
-      "subbranch": "quantum_physics",
-      "title": "Physical entanglement correlations",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 77,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-BELL-001",
-      "subbranch": "quantum_physics",
-      "title": "Bell correlation and local-hidden-record boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 78,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-CONTEXTUALITY-001",
-      "subbranch": "quantum_physics",
-      "title": "Context-dependent joint observation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 79,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-DECOHERENCE-001",
-      "subbranch": "quantum_physics",
-      "title": "Decoherence through environmental record distribution",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 80,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001",
-      "subbranch": "quantum_physics",
-      "title": "Operational quantum-to-classical physical limit",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 81,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-QUANTUM-NO-SIGNALLING-001",
-      "subbranch": "quantum_physics",
-      "title": "Entanglement and no-signalling boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 82,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-MASS-ENERGY-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Mass-energy correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 83,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Particle-antiparticle held orientation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 84,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-FERMION-BOSON-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Fermion and boson composition classes",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 85,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-CONSERVED-LABELS-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Conserved physical labels",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 86,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Observed elementary-particle spectrum",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 87,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-COMPOSITE-HADRONS-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Composite hadron organization",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 88,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-SCATTERING-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Scattering and cross-section measure",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 89,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-DECAY-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Particle transition and decay",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 90,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-MATTER-MIXING-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "State mixing and oscillation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "PDG-2025-SUMMARY-TABLES",
-        "CERN-OPEN-DATA-DATASET-API-2026-07-23"
-      ],
-      "position": 91,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-BINDING-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Nuclear binding and mass relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 92,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-LEVELS-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Nuclear levels and transitions",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 93,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-RADIOACTIVITY-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Radioactive transition support",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 94,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-REACTIONS-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Nuclear reaction and channel accounting",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 95,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-FISSION-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Fission decomposition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 96,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-NUCLEAR-FUSION-001",
-      "subbranch": "matter_particles_nuclei",
-      "title": "Fusion composition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAEA-ENSDF-CURRENT-2026-07-23",
-        "IAEA-ENDF-CURRENT-2026-07-23"
-      ],
-      "position": 97,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-EVENT-RELATION-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Relational spacetime event",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 98,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-INTERVAL-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Invariant event interval",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 99,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-CAUSAL-ORDER-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Causal order and accessibility cone",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 100,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Inertial frame correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 101,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-LIMIT-SPEED-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Invariant limiting propagation speed",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 102,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-CLOCK-RATE-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Relative clock-rate relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "BIPM-SI-BROCHURE-9-2026"
-      ],
-      "position": 103,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-SPACETIME-LENGTH-RELATION-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Relative spatial-extent relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 104,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-EQUIVALENCE-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Inertial-gravitational equivalence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 105,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-CURVATURE-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Source-linked relational curvature",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 106,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-GEODESIC-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Free propagation on curved relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 107,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-FIELD-SOURCE-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Gravitational field-source closure",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 108,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-WAVE-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Gravitational-wave propagation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 109,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-GRAVITY-HORIZON-001",
-      "subbranch": "spacetime_gravitation",
-      "title": "Causal horizon boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "GWOSC-V2-CATALOGS-2026-07-23",
-        "NIST-CODATA-2022-ALL-CONSTANTS"
-      ],
-      "position": 110,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONTINUUM-COARSE-GRAIN-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Finite coarse-grained continuum correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 111,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-DENSITY-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Density as exact content-to-support relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 112,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-PRESSURE-STRESS-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Pressure and stress transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 113,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-CONSERVATION-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Flow conservation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 114,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-INVISCID-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Inviscid flow correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 115,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-VISCOSITY-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Viscous momentum transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 116,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-FLUID-TURBULENCE-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Finite turbulence and cascade boundary",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "IAPWS-RELEASES-2026-07-23",
-        "NIST-CHEMISTRY-WEBBOOK-2026-07-23"
-      ],
-      "position": 117,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-PLASMA-COLLECTIVE-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Plasma collective response",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 118,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-PLASMA-OSCILLATION-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Plasma oscillation and screening",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 119,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-PLASMA-MHD-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Magnetofluid composition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-ASD-5.12"
-      ],
-      "position": 120,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONDENSED-LATTICE-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Lattice order and excitation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 121,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONDENSED-BAND-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Band support and transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 122,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONDENSED-PHASE-ORDER-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Collective order and phase transition",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 123,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Superconducting coherent transport",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 124,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-CONDENSED-TOPOLOGICAL-001",
-      "subbranch": "continua_collective_matter",
-      "title": "Topological collective-state correspondence",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NIST-SRD-INDEX-2026-07-23"
-      ],
-      "position": 125,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-REDSHIFT-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Propagation redshift relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 126,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-EXPANSION-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Relational expansion observation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 127,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-BACKGROUND-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Background-radiation field relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 128,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-LENSING-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Gravitational lensing relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 129,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-DISTANCE-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Causal distance and observation-time relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 130,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-STRUCTURE-GROWTH-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Finite structure-growth relation",
-      "evidence_mode": "formal_forcing_plus_blind_external_measurement",
-      "external_source_ids": [
-        "NASA-LAMBDA-2026-07-23",
-        "GWOSC-V2-CATALOGS-2026-07-23"
-      ],
-      "position": 131,
-      "status": "model_admitted"
-    },
-    {
-      "claim_id": "SFT-PHYS-COSMO-BRANCH-BOUNDARY-001",
-      "subbranch": "cosmological_boundary",
-      "title": "Physics-to-astronomy/cosmology handoff boundary",
-      "evidence_mode": "formal_forcing",
-      "external_source_ids": [],
-      "position": 132,
-      "status": "model_admitted"
-    }
+  "schema": "sft-v3-physics-branch-inventory/2",
+  "scope": "Categorical reconstruction of measurement and metrology; mechanics and dynamics; physical geometry, forces, fields and waves; thermodynamics and vacuum; physical quantum and relativistic correspondence; constants, scales and precision; matter, interactions and flavour; atomic and molecular physics; nuclear and hadronic physics; spacetime and gravitation; fluids, plasmas and condensed collective matter; and only universal physical relations required at the Astronomy/Cosmology boundary.",
+  "subbranch_counts": {
+    "atomic_molecular": 15,
+    "constants_scales_precision": 5,
+    "continua_collective_matter": 15,
+    "fields_forces_waves_geometry": 37,
+    "matter_interactions_flavour": 43,
+    "measurement_metrology": 13,
+    "mechanics_dynamics": 23,
+    "nuclear_hadronic": 16,
+    "physical_cosmology_boundary": 11,
+    "physical_quantum_relativistic": 22,
+    "post_seal_empirical_validation": 34,
+    "spacetime_gravitation": 30,
+    "thermodynamics_vacuum": 21
+  },
+  "subbranch_order": [
+    "measurement_metrology",
+    "mechanics_dynamics",
+    "fields_forces_waves_geometry",
+    "thermodynamics_vacuum",
+    "physical_quantum_relativistic",
+    "constants_scales_precision",
+    "matter_interactions_flavour",
+    "atomic_molecular",
+    "nuclear_hadronic",
+    "spacetime_gravitation",
+    "continua_collective_matter",
+    "physical_cosmology_boundary",
+    "post_seal_empirical_validation"
   ],
-  "inventory_hash": "sha256:87b2ea61c780adf12f8eb79f4910b275ed8b430577315a099468977ad3f960b9"
+  "unclassified_obligations": []
 }

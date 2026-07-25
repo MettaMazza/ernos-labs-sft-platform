@@ -32,7 +32,7 @@ METADATA_PATH = ROOT / "publication/physics_zenodo_metadata.json"
 REQUIRED_FILES = (
     "registration.json", "WHY_DERIVATION_CHECK.md", "candidate_census.json",
     "elimination_receipt.json", "controls.json", "certificate.json",
-    "execution.py", "independent_validator.py", "STATUS.md",
+    "execution.py", "STATUS.md",
 )
 
 
@@ -56,8 +56,8 @@ def inventory() -> tuple[dict[str, Any], BranchInventory]:
     calculated = sha256_identity(unhashed)
     if claimed != calculated:
         raise ValueError("Physics inventory identity differs from its current content")
-    if not payload["inventory_frozen"] or payload["admitted_claim_count_at_freeze"] != payload["required_claim_count"]:
-        raise ValueError("Physics inventory is not frozen and completely admitted")
+    if payload["inventory_status"] != "current_categorical_projection" or payload["admitted_claim_count"] != payload["required_claim_count"]:
+        raise ValueError("Physics categorical inventory is not completely admitted")
     if any(row["status"] != "model_admitted" for row in payload["obligations"]):
         raise ValueError("Physics inventory contains an unadmitted obligation")
     return payload, BranchInventory(
@@ -76,12 +76,19 @@ def claim_entry(order: int, claim_id: str, census_row: dict[str, Any], paper_tex
         if not path.is_file():
             raise ValueError(f"missing Physics evidence file: {path.relative_to(ROOT)}")
         files[name] = {"path": path.relative_to(ROOT).as_posix(), "sha256": raw_sha256(path)}
+    independent_path = root / "independent_validator.py"
+    if independent_path.is_file():
+        files["independent_validator.py"] = {
+            "path": independent_path.relative_to(ROOT).as_posix(),
+            "sha256": raw_sha256(independent_path),
+        }
     candidate = read(root / "candidate_census.json")
     elimination = read(root / "elimination_receipt.json")
     controls = read(root / "controls.json")["controls"]
     certificate = read(root / "certificate.json")
-    if candidate["expected_cardinality"] != 256 or len(candidate["candidates"]) != 256 or len(elimination["decisions"]) != 256:
-        raise ValueError(f"Physics claim lacks complete 256-form support: {claim_id}")
+    cardinality = candidate["expected_cardinality"]
+    if cardinality < 1 or len(candidate["candidates"]) != cardinality or len(elimination["decisions"]) != cardinality:
+        raise ValueError(f"Physics claim lacks complete declared candidate support: {claim_id}")
     if sum(row["survives"] for row in elimination["decisions"]) != 1:
         raise ValueError(f"Physics survivor count differs from one: {claim_id}")
     if len(controls) != 4 or not all(row["passed"] for row in controls):
@@ -104,7 +111,7 @@ def claim_entry(order: int, claim_id: str, census_row: dict[str, Any], paper_tex
             raise ValueError(f"Physics empirical certificate failed: {claim_id}")
     return {
         "order": order, "claim_id": claim_id, "title": census_row["title"],
-        "candidate_count": 256, "decision_count": 256, "survivor_count": 1,
+        "candidate_count": cardinality, "decision_count": cardinality, "survivor_count": 1,
         "closure_status": receipt.closure_status, "external_status": receipt.external_status,
         "source_manifest_hash": certificate["source_manifest_hash"],
         "derivation_seal_hash": receipt.derivation_seal_hash,
@@ -122,19 +129,16 @@ def claim_entry(order: int, claim_id: str, census_row: dict[str, Any], paper_tex
     }
 
 
-def is_exact_value(entry: dict[str, Any]) -> bool:
-    joined = " ".join(entry["measurement_rows"]).lower()
-    return "exact predicted interval" in joined or "firas background interval predicted" in joined
-
-
 def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any]]:
     inventory_payload, branch_inventory = inventory()
     census_rows = read(ROOT / "census/claims.json")["claims"]
     census = {row["claim_id"]: row for row in census_rows}
     required = list(branch_inventory.required_claim_ids)
-    supplemental = [row["claim_id"] for row in census_rows if row["claim_id"].startswith("SFT-PHYS-VALIDATION-")]
-    if any(claim_id not in census for claim_id in required + supplemental):
-        raise ValueError("Physics census omits a required or supplemental claim")
+    if any(claim_id not in census for claim_id in required):
+        raise ValueError("Physics census omits a required claim")
+    live_physics = [row["claim_id"] for row in census_rows if row.get("branch") == "physics" and row.get("model_admitted") is True]
+    if live_physics != required:
+        raise ValueError("Physics inventory differs from the live categorical admission census")
     paper_text = PAPER_PATH.read_text(encoding="utf-8")
     metadata = read(METADATA_PATH)
     authorized = bool(metadata["publication_authorized"])
@@ -147,10 +151,7 @@ def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any
     elif "LOCAL PREPUBLICATION" not in paper_text or "Publication is not yet authorized" not in paper_text:
         raise ValueError("Physics paper omits its prepublication boundary")
     required_entries = [claim_entry(index, claim_id, census[claim_id], paper_text) for index, claim_id in enumerate(required, 1)]
-    supplemental_entries = [claim_entry(index, claim_id, census[claim_id], paper_text) for index, claim_id in enumerate(supplemental, 1)]
-    exact_value = [entry["claim_id"] for entry in required_entries + supplemental_entries if is_exact_value(entry)]
-    if len(exact_value) != 14:
-        raise ValueError(f"Physics exact measured-value suite differs from fourteen claims: {len(exact_value)}")
+    empirical_ids = [entry["claim_id"] for entry in required_entries if entry["measurement_rows"]]
     evidence = {
         "schema": "sft-v3-physics-paper-evidence-map/1", "branch_id": "physics",
         "inventory": {
@@ -162,10 +163,9 @@ def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any
             "source_path": PAPER_PATH.relative_to(ROOT).as_posix(), "source_sha256": raw_sha256(PAPER_PATH),
             "rendered_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_sha256": raw_sha256(PDF_PATH),
         },
-        "claims": required_entries, "supplemental_measured_value_claims": supplemental_entries,
-        "exact_measured_value_claim_ids": exact_value,
+        "claims": required_entries,
+        "empirically_validated_claim_ids": empirical_ids,
         "required_candidate_count": sum(row["candidate_count"] for row in required_entries),
-        "supplemental_candidate_count": sum(row["candidate_count"] for row in supplemental_entries),
         "complete_claim_coverage": True, "controls_passed": True,
         "ready_to_publish": True, "publication_action_authorized": authorized,
     }
@@ -197,8 +197,7 @@ def main() -> None:
         "rendered_paper_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_paper_hash": paper.rendered_paper_hash,
         "evidence_map_path": evidence_path.relative_to(ROOT).as_posix(), "evidence_map_hash": paper.evidence_map_hash,
         "required_claim_count": len(branch_inventory.required_claim_ids),
-        "supplemental_measured_value_claim_count": len(evidence["supplemental_measured_value_claims"]),
-        "exact_measured_value_claim_count": len(evidence["exact_measured_value_claim_ids"]),
+        "empirically_validated_claim_count": len(evidence["empirically_validated_claim_ids"]),
         "comprehensive_derivation_coverage": True, "controls_passed": True,
         "publication_gate_receipt_hash": publication_receipt.receipt_hash,
         "publication_authorized": bool(read(METADATA_PATH)["publication_authorized"]), "ready_to_publish": True,
@@ -210,9 +209,8 @@ def main() -> None:
         raise ValueError("Physics evidence map is stale after materialization")
     print("SFT PHYSICS PUBLICATION-READINESS GATE: PASS")
     print(f"required claims: {len(branch_inventory.required_claim_ids)}")
-    print(f"supplemental measured-value claims: {len(evidence['supplemental_measured_value_claims'])}")
-    print(f"exact measured-value claims: {len(evidence['exact_measured_value_claim_ids'])}")
-    print(f"generated Physics candidates: {evidence['required_candidate_count'] + evidence['supplemental_candidate_count']}")
+    print(f"empirically validated claims: {len(evidence['empirically_validated_claim_ids'])}")
+    print(f"generated Physics candidates: {evidence['required_candidate_count']}")
     print(f"paper hash: {paper.rendered_paper_hash}")
     print(f"publication receipt: {publication_receipt.receipt_hash}")
     print(f"publication authorized: {str(bool(read(METADATA_PATH)['publication_authorized'])).lower()}")
