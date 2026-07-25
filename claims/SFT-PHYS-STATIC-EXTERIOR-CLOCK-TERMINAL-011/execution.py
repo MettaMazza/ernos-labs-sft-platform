@@ -1,0 +1,3 @@
+from pathlib import Path
+from sft.physics.static_exterior_clock_terminal_execution_v1 import build_static_exterior_clock_execution
+def build_execution(root:Path):return build_static_exterior_clock_execution(root,Path(__file__))

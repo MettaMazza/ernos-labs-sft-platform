@@ -1617,3 +1617,28 @@ No engine or protocol file changed. The regenerated inheritance ledger is now
 330 same-strength closed and 168 open. D9n has no remaining work. The next
 sequential V1 Physics obligation is D9o: the exact exterior field coefficient,
 conserved vacuum flux, weak-field reduction and complete clock/redshift comparison.
+
+## 52. D9o static spherical exterior law closed
+
+`SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011` composes the admitted horizon,
+rank-two flux and clock laws. A normalized positive mass `1/4` generates
+boundary `1/2`; field is boundary over radius squared, well is boundary over
+radius, and the exterior coefficient is the well's positive complement from
+the One. Every outward binary successor halves the well, quarters the field,
+preserves flux and raises the coefficient without invoking completed infinity.
+The boundary clock record is empty. Exact-square coefficients `9/16` and
+`16/25` force rates `3/4` and `4/5`, so the farther clock is faster by `16/15`.
+
+The target-free claimant and distinct implementation regenerated all 2,916
+forms and left one survivor. The untouched engine admitted the claim on its
+first official execution with receipt
+`sha256:fca4c68a06026daea19121fd5b71d52bc98e2410be1f83eaef13ff62600d880c`.
+Only after sealing did the V1 row, five admitted prerequisites, complete
+primary exterior treatment, complete NIST/JILA clock paper and earlier gravity
+vector open. All 34 favorable and limiting rows were retained, including the
+physical-unit translation, NIST systematic boundary and statement that NIST
+does not measure universal Fold fractions.
+
+No engine or protocol file changed. The regenerated inheritance ledger is now
+331 same-strength closed and 167 open. D9o has no remaining work. The next
+sequential V1 Physics obligation is D9q.

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011",
+  "controls": [
+    {
+      "expected_behavior": "Reject a numerical boundary coefficient or exterior clock record at complete well depth.",
+      "kind": "false_premise",
+      "observed_behavior": "The boundary is the empty structural record.",
+      "passed": true,
+      "receipt_hash": "sha256:41b03ba80ef3029577651ebe4fa916e917f1e0176ab802661359e2becc45ca73"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities are unique.",
+      "passed": true,
+      "receipt_hash": "sha256:0b5a37b200f6544185da03decea0e8f27bba78ad0ff859e5920232c0a780f049"
+    },
+    {
+      "expected_behavior": "Reject signed import, pre-seal observation and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only positive complement, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:d1ecae9cbfce14712e209bda40343a65dc3218f4e5fd75074cefd7d08432b29b"
+    }
+  ]
+}
