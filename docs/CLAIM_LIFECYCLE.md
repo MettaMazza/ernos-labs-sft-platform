@@ -51,6 +51,15 @@ All status transitions from `registered` onward are emitted by the single SFT
 admission engine. The census is a projection of accepted engine receipts, not a
 manually curated source of scientific authority.
 
+The engine is not a tunable component of a claim submission. A claimant or
+agent may change the claim package only for a scientifically disclosed reason;
+it may not change the engine, weaken a gate, alter a comparator after results,
+premark the survivor or introduce an alternate route. If the frozen engine
+rejects the package, the status remains rejected until a protocol-conforming
+new claim package independently passes. Engine mutation requires Maria Smith's
+specific prior authorization and cannot be inferred from a request to fix,
+continue, complete or publish work.
+
 ## Admission questions
 
 A reviewer must be able to answer yes to all applicable questions:

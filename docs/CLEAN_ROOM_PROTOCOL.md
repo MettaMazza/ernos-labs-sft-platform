@@ -53,6 +53,13 @@ candidates; source-bound execution; and post-seal result comparison.
 
 Automated checks must reject:
 
+- any difference between `sft/engine/` and frozen Git tree
+  `ad30f4866c18b2adbade95a0b2de40d5caa61308`, unless Maria Smith has explicitly
+  authorized the precisely identified engine change before it is made;
+- alternate engines, admission wrappers, proxy authorities, shadow censuses,
+  synthetic receipts and direct census promotion;
+- protocol, validator, comparator, source, tolerance or test changes made to
+  turn a desired failure into acceptance;
 - dependencies from `sft/` into `prior-work-ledger/`;
 - dependencies from `sft/` into `correspondence/`;
 - dependencies from derivation into `experiments/post_seal_measurements/`;
@@ -78,4 +85,6 @@ to imitate the previous result.
 
 The local repository may be built and tested without publication. Creating a
 remote, changing preserved repositories, marking papers superseded in their
-public records, pushing code or publishing a DOI requires explicit authorization.
+public records, pushing code, submitting a contribution or publishing a DOI
+requires Maria Smith's explicit authorization for that exact action and target.
+Authorization never carries forward from another action or prior session.

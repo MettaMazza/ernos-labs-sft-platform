@@ -133,6 +133,28 @@ One versioned admission engine evaluates every v3 claim. Direct edits, prose
 declarations or application results cannot bypass its gates. Any violation
 halts admission and produces a rejection receipt identifying the failed law.
 
+### 7.1 Immutable admission authority
+
+The admission engine is frozen at Git tree
+`ad30f4866c18b2adbade95a0b2de40d5caa61308` from commit
+`501925b1c8553f49493d8efaeedfac9d8f42ab54`. Automated agents have no standing
+authority to modify this tree, its public surface or its behavior. The existing
+live-progress transparency commit
+`bed68facb01d938b8c5257d0843506f40978e111` exposes verification progress but
+does not alter scientific decisions and creates no broader exception.
+
+No claim failure, branch deadline, desired measurement, prior SFT result,
+publication objective or general instruction to continue authorizes an engine
+change. Only Maria Smith may authorize a specifically identified engine edit,
+and that authorization must be explicit before the edit occurs. Otherwise the
+agent must halt and report the proposed change.
+
+It is equally forbidden to evade immutability through a second engine, wrapper,
+proxy, shadow ledger, direct census mutation, synthetic receipt, relaxed test,
+target-aware validator, preselected survivor or protocol alteration designed
+to obtain acceptance. A claim passes the frozen protocol as submitted or it
+does not enter the model.
+
 ## 8. Empirical constitution
 
 Natural-science claims follow this order:
@@ -220,6 +242,11 @@ Maria Smith is the scientific author and publication authority. Automated
 agents may implement, enumerate, test, reconcile and edit, but they cannot
 promote a result, select official experiments or publish without explicit
 authorization.
+
+Authorization is action-specific. Permission for one commit, push, submission,
+repository, experiment, paper, release, Zenodo version or DOI does not authorize
+another. Instructions to continue scientific work do not authorize remote
+mutation or deviation from the registered submission protocol.
 
 Reviewer credentials do not override a failed mechanical gate. Mechanical
 closure does not replace specialist empirical review where observation is

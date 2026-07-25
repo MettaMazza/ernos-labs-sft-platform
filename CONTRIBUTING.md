@@ -12,6 +12,12 @@ Read:
 
 ## Submission route
 
+The admission engine is immutable for contributors and automated agents. Do
+not edit, extend, replace, wrap or bypass `sft/engine/`, and do not change a
+protocol or validation surface to manufacture a pass. A submission that cannot
+pass the frozen engine remains rejected. Only Maria Smith can authorize a
+specifically identified engine change before it occurs.
+
 1. Open a claim registration without encoding the desired answer.
 2. Name dependencies, provenance classes, grammar and exact boundary.
 3. Generate the candidate domain.
@@ -47,7 +53,9 @@ Questions and submissions:
 
 Contributing does not authorize a push, public release, DOI, paper update or
 official experimental conclusion. Maria Smith selects official runs, retained
-conclusions and publications.
+conclusions and publications. Authorization is action- and target-specific; it
+does not carry forward from another contribution, repository, paper, release or
+session.
 
 ## Licensing
 

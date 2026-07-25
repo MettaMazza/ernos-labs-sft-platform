@@ -12,6 +12,36 @@ This file governs every automated assistant working in this repository.
 
 Convenience never overrides the scientific constitution.
 
+## Absolute engine immutability
+
+`sft/engine/` is a frozen authority boundary. Its authoritative Git tree is
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`, established at commit
+`501925b1c8553f49493d8efaeedfac9d8f42ab54`.
+
+An automated agent must never edit, add, delete, move, rename, regenerate,
+replace, re-export, monkey-patch or indirectly override anything in
+`sft/engine/`. It must never change the engine identity, gates, schemas,
+receipt behavior, authority behavior, source binding, isolation rules or test
+expectations to obtain an admission. A failing or inconvenient claim must be
+corrected outside the engine or remain rejected.
+
+The sole existing post-freeze exception is the read-only live-progress
+transparency change in commit `bed68facb01d938b8c5257d0843506f40978e111`.
+That exception changes terminal visibility only and grants no authority for
+further engine or protocol edits.
+
+Only a new, precise and explicit instruction from Maria Smith that identifies
+the proposed engine change may authorize one. General instructions such as
+“proceed”, “continue”, “fix it”, “complete the branch”, “make it pass” or
+“publish” are never engine-edit authorization. If an agent believes an engine
+change is required, it must halt before editing and request Maria's decision.
+
+No alternate admission engine, compatibility proxy, wrapper, shadow census,
+synthetic receipt writer or weaker submission route may be created. Moving the
+same behavior outside `sft/engine/` does not make a bypass permissible. Every
+scientific submission must satisfy the published protocol through the frozen
+engine without target leakage, premarked survivors or outcome-seeking changes.
+
 ## Required behavior
 
 - Work only on the requested scope.
@@ -31,6 +61,8 @@ Convenience never overrides the scientific constitution.
 - Run every proposed v3 derivation through `SFTAdmissionEngine`; never edit the
   census directly to simulate admission.
 - Preserve the engine's accepted or rejected receipt without rewriting it.
+- Verify the frozen engine tree before an official admission run and halt on
+  any difference.
 - Preserve every completed row, including failures and unfavorable outcomes.
 - Ask before any push, publication, DOI action or coordinated update to older
   repositories.
@@ -52,6 +84,13 @@ Convenience never overrides the scientific constitution.
 - Do not attribute scientific authorship or publication authority to an agent.
 - Do not call a branch paper complete until its frozen current-knowledge
   obligation inventory passes the branch publication gate.
+- Do not alter a protocol, candidate generator, validator, comparator,
+  tolerance, source set, test or submission package for the purpose of making
+  a desired result pass.
+- Do not submit, push, publish, release, upload, create or update a DOI, open a
+  pull request, send a contribution, or alter any remote record without
+  Maria's explicit action-specific authorization. Prior authorization for a
+  different submission or publication does not carry forward.
 
 ## File placement
 
