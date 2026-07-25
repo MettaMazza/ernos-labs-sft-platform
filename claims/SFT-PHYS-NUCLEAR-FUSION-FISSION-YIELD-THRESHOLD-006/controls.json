@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006",
+  "controls": [
+    {
+      "expected_behavior": "Reject a reversed fusion/fission gain-per-nucleon order.",
+      "kind": "false_premise",
+      "observed_behavior": "Exact lower-versus-upper separation rejects the reversed order.",
+      "passed": true,
+      "receipt_hash": "sha256:45fa9ae8e1cfa4571b1b2811e710b45e6e8f2cb2b14c522e5a74df1f250af94c"
+    },
+    {
+      "expected_behavior": "Reject any changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered source manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:0de6112a4fa89e23a8625b623b57f00f6f65f6e8de7f00f0265c4d1e451b09ae"
+    },
+    {
+      "expected_behavior": "Reject any duplicated or incomplete candidate census.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The deliberate duplicate fails complete census uniqueness.",
+      "passed": true,
+      "receipt_hash": "sha256:9d47a2bed75a232a7ccef5e496679b0c00950d7bc18a8c16404a7dc8ae280226"
+    },
+    {
+      "expected_behavior": "Reject one universal dimensional threshold and any pre-seal target access.",
+      "kind": "boundary",
+      "observed_behavior": "Distinct incident carriers and sealed custody reject both boundary violations.",
+      "passed": true,
+      "receipt_hash": "sha256:955d7ff449ed8aa55a801fafc2ce3d2341ff5741519175cece8712c78da7bea7"
+    }
+  ]
+}

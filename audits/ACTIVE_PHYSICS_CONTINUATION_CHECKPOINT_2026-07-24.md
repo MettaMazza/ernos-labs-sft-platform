@@ -1036,3 +1036,58 @@ inequality, distinct physical threshold carriers and authoritative total
 reaction-energy comparison. V2 Step 150 also retains the complete stellar
 fusion-chain obligation. Commit this group, then continue V1 V-7 without
 repeating the admitted direction law.
+
+40. V1 V-7 is now closed by a separate yield/threshold successor and must not
+    be reopened or regenerated after conversation compaction:
+   - `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`, engine receipt
+     `sha256:1b13169930d9f4c22d75008ef7debe615a8c1dfdedee7a5f495b85c467444e50`;
+   - derivation seal
+     `sha256:9206289cf47782eef20fdfe8c8f6602338e0746b0a29f668edf950c8b5b90b4e`;
+   - independent validation
+     `sha256:d4fe6a92b4eee8e74b4106e2acc2c35333e42cd247fe5e0728a91d23b0db7fc0`;
+   - independent certificate
+     `sha256:0f3a80971c1639dd5665b1c7bb5faefcd77c90fa44fac7832a5da17f47a4cf2c`;
+   - empirical validation
+     `sha256:83a6f01dfa45d115b8e784d5904e99a605913f66e348ffdbae5b7daf54eaa085`;
+   - measurement receipt
+     `sha256:550034e2999fda2c58cd3c1d8dadca9e5833baee6d8445271718653240a5de8d`;
+   - source manifest
+     `sha256:7a0b18b87f3a1df38a9679fef0ed10a6e72fa9d06851a8a38f38626db55c1db8`.
+
+The formal claimant contains no target reader, stored expected winner or
+submission-controlled admission flag. Its complete nine-axis product contains
+5,832 forms and one computed survivor. Exact zero-parameter binding enclosures
+force the least light fusion representative strictly above the registered
+heavy fission representative per conserved nucleon. Multiplication by the
+respective conserved counts reverses the event-total order: the heavy fission
+representative is strictly greater in total. The exact metrics remain separate
+rather than being conflated.
+
+The incident topology independently forces distinct threshold carriers. The
+fusion representative contains two positively charged incident boundaries and
+one positive inter-boundary charge path. The fission representative contains
+one parent, so its inter-composite charged-path record is the structural empty
+form; its admissible carrier is neutral capture or a finite internal surface
+path. Thermal or directed energy supplies access support for charged approach,
+but neither Half-One nor quarter-order is relabelled as one universal
+dimensional activation energy.
+
+Only after the prediction sealed did the five-source target open. All 2,548
+AME2020 positive-composite rows, twelve IAEA fusion-energy rows, seven IAEA
+fission energy components, totals and intervals, the charged true/effective
+threshold distinction, incident-neutron fission class, spontaneous
+internal-barrier class, captured-particle class and rounded-mass limitation are
+retained. AME2020 and the independent IAEA D-T/U-235 comparison both reproduce
+fusion-greater-per-nucleon and fission-greater-total. The rounded illustrative
+fission masses were not substituted for the exact AME calculation.
+
+The five focused tests passed once. The frozen engine admitted the claim on its
+first official run and the receipt was reproduced once for evidence
+materialization. Lightweight repository validation passes with 628 admitted
+claims, and the frozen engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`. The live inheritance ledger is now
+319 same-strength closed and 179 open, with 51 mapped open and 128 unmapped
+open. V1 V-7 has no remaining work at its declared boundary. V2 Step 150
+remains open because its complete stellar fusion-chain recurrence is a distinct
+obligation. The next V1 nuclear obligation is V-8: deuteron triplet binding,
+diproton/dineutron exclusion and authoritative spin/binding comparison.

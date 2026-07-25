@@ -1,0 +1,150 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE-REVERSED-YIELD",
+      "expected_rejection": "The reversed fusion/fission gain-per-nucleon order fails exact formal and measured interval separation.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed AME or IAEA source, source record, energy row, threshold clause or limitation is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A duplicated candidate or incomplete AME, fusion-table or fission-ledger census is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "One universal dimensional threshold, conflated total/per-nucleon metrics or target access before sealing is rejected.",
+      "kind": "boundary"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "prediction_seal_hash": "sha256:859bc6a73faa36ca0b65e45dcccb91d43102779d6bde4c3fab1791e026320d76",
+    "registered_target_identity_hash": "sha256:2dd433edc1c70e4b2a00563e1c1fb88b55cac43c4bd57db73723959dbfc22b18",
+    "release_requires_matching_seal": true,
+    "target_release_manifest_hash": "sha256:0b3f5ffaa5890f66968a648a41fa287e5d25ae800d35530942c9697358829a0a"
+  },
+  "dimension_unit_boundary": {
+    "external_reference_protocol": "Formal binding-score enclosures and incident topologies seal first. AME keV-per-nucleon values and IAEA MeV, cross-section and threshold records remain post-seal dimensional targets attached to named reactions.",
+    "measurement_record_policy": "all-2548-AME-positive-composites-12-fusion-rows-7-fission-components-reported-totals-intervals-threshold-classes-and-limitations",
+    "proof_value_policy": "positive-generated-counts-exact-fractions-held-labels-and-empty-form-only",
+    "universal_dimensional_threshold_admitted": false
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The formal and AME representatives place fusion strictly above fission per nucleon and fission strictly above fusion in total; the IAEA D-T/U-235 comparison repeats both orders; and every charged, neutral, capture, spontaneous/internal and true/effective threshold class is retained.",
+    "comparison_protocol_id": "exact-AMDC-IAEA-fusion-fission-yield-threshold-comparator/1",
+    "evaluator_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006-post-seal-evaluator",
+    "falsification_condition": "Reject if the sealed fusion-greater-per-nucleon relation or fission-greater-total relation fails the exact AME2020 uncertainty intervals or the registered IAEA D-T/U-235 energy comparison; if the IAEA charged effective-barrier, neutron-trigger, spontaneous/internal-barrier or captured-particle class is absent; if per-nucleon and total metrics are conflated; if any AME, fusion-table, fission-ledger, threshold or limitation row is omitted; if a source identity changes; or if target content enters prediction before its seal.",
+    "measurement_receipt_hash": "sha256:550034e2999fda2c58cd3c1d8dadca9e5833baee6d8445271718653240a5de8d"
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006",
+  "experiment_registration_hash": "sha256:a7acd3f08ef7f6372224311af4257ff6456a9aa60a1477bc725c9c5eefcce018",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Atomic Mass Data Center, Institute of Modern Physics, Chinese Academy of Sciences",
+      "raw_snapshot_hash": "sha256:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "retrieved_date": "2026-07-25",
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "source_uri": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Atomic Energy Agency",
+      "raw_snapshot_hash": "sha256:6fbe70d3943dc9d7ab1e6e9f94cb4ea81eb1431467d79bee02ce1cfaac33aa64",
+      "retrieved_date": "2026-07-25",
+      "source_id": "IAEA-WORLD-FUSION-OUTLOOK-2023",
+      "source_uri": "https://www-pub.iaea.org/MTCD/Publications/PDF/FusionOutlook2023_web.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Atomic Energy Agency",
+      "raw_snapshot_hash": "sha256:712bbd5d6ad97c16f816d0f869626ded196c0ddbeece3f7a4a3f5d00f0db059a",
+      "retrieved_date": "2026-07-25",
+      "source_id": "IAEA-TECDOC-2024-NUCLEAR-COGENERATION",
+      "source_uri": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-2024web.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Atomic Energy Agency",
+      "raw_snapshot_hash": "sha256:77a0fee413c3b1d5d74a161ed9fe7f77bbcbc58a654304851b7b2b400183d022",
+      "retrieved_date": "2026-07-25",
+      "source_id": "IAEA-ENDF-102-DATA-FORMATS-PROCEDURES",
+      "source_uri": "https://nds.iaea.org/public/endf/endf-manual.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Atomic Energy Agency Nuclear Data Section",
+      "raw_snapshot_hash": "sha256:d9bfc53a63fe4cf307e1ba46c952d52dcca6c95f964dd672a3acee3bb93a0297",
+      "retrieved_date": "2026-07-25",
+      "source_id": "IAEA-NDS-LEXFOR-FISSION-2006",
+      "source_uri": "https://nds.iaea.org/nrdc/nrdc_doc/iaea-nds-0208-200601.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "5,832 complete per-nucleon, total, threshold-carrier, scope, access, metric, custody and extension forms",
+    "exact_domain": "positive exact nuclear counts, rational binding-score enclosures, held carrier labels and structural empty records",
+    "statement": "Fusion is greater per conserved nucleon, the registered heavy fission representative is greater in total, fusion has a charged two-boundary approach carrier, fission has neutral-capture or internal-surface carriers, and dimensional threshold values remain reaction-specific.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "input_manifest_hash": "sha256:79a9a8dc711cbb4661f8c14a4169d5642e0eca4e5256babf27aa4430068fcff6",
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:d0c3efb51d416203ca62a45e6a5aac91124b19cb6a490a22585321ae6a49ba4b",
+    "target_material_present": false
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain every AME positive-composite row, fusion-energy row, fission-energy component, reported total/interval, threshold class, rounded-mass limitation and adverse result",
+  "status": "measured",
+  "stop_condition": "Halt after every formal, source, custody, energy, threshold, census, interval and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-COMPLETE-POSITIVE-COMPOSITE-CENSUS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "AMDC-AME2020-MASS-1-BINDING-2021",
+      "target_id": "AME2020-FUSION-FISSION-YIELD-ANCHORS"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAEA-WORLD-FUSION-OUTLOOK-2023",
+      "target_id": "IAEA-COMPLETE-FUSION-REACTION-ENERGY-TABLE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAEA-TECDOC-2024-NUCLEAR-COGENERATION",
+      "target_id": "IAEA-FISSION-ENERGY-LEDGER"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IAEA-ENDF-102-DATA-FORMATS-PROCEDURES+IAEA-NDS-LEXFOR-FISSION-2006",
+      "target_id": "IAEA-FUSION-FISSION-THRESHOLD-CLASSES"
+    }
+  ]
+}
