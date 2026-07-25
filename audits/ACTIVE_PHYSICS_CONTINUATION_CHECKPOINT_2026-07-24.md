@@ -1428,3 +1428,59 @@ declared boundary. The next still-open V1 Physics obligation is E4: force the
 coupled-ensemble one-region synchronization boundary and compare its complete
 registered recurrence vector without reopening the already sealed half-One
 coupling law.
+
+46. V1 E4 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007`, engine receipt
+     `sha256:c761476abce4bdf4d357022245a0d069f2ca5f30cb34ee917e8a2f7578a5c2d0`;
+   - derivation seal
+     `sha256:b334a0cce278506495097aab5288a05ffd2eba2da739e13ed7dfdfdc2a22396a`;
+   - independent validation
+     `sha256:a818817af6843dd5ed1f9fbdb1c5c1b919968cd06876d35af4ee499b9eefc9e2`;
+   - independent certificate
+     `sha256:d5dd037ba8350aaa197d120cbefcb1cdf34c120fb6f2c84655111b2afae7c492`;
+   - independent implementation
+     `sha256:b7eb1e3b89d31ce53ad4cf841df1ca561739e92dd7268fa100b3813e10ea17d0`;
+   - empirical validation
+     `sha256:8630bc2f8c43136cd9e26c429267b05260218a997dfc00c4c1877037ae9e42cf`;
+   - measurement receipt
+     `sha256:26c258af8df7b47cb63990a322ad42259c7feae367af3364396472ff127ece79`;
+   - source manifest
+     `sha256:5316e4ee59f1d5a1abdffb19d98346915438ebd1e23d0c6f72181eb94d3417a1`;
+   - completeness certificate
+     `sha256:6522b543cf868964301e1c4dbaa9b43608771bdbef35b1b0ba1fe4cbd1b3b932`.
+
+The formal claimant contains no historical ensemble, recurrence coordinate,
+final count, terminal point, stored expected survivor or submission-controlled
+admission flag. Its 2,916-form product has one engine-computed survivor. For any
+positive pair separation, equal coupled movement makes both members meet if and
+only if the two moves reassemble the separation. Complete binary support forces
+each move to be half-One. Equality is retained as an empty residual record;
+every off-half generated coupling has a positive residual. A common Fold
+successor preserves every already synchronized finite ensemble. The claim does
+not inflate this into unproved universal convergence of every arbitrary
+nearest-neighbour ensemble.
+
+Only after sealing did the two byte-identical V1 files open. An implementation
+importing neither V1 nor the claimant retained all five couplings, all fifteen
+steps per coupling and every final point. It reproduced the complete final
+region vector `(7,7,1,5,5)`. The half-One recurrence is
+`(12,10,7,5,4,3,2,1,1,1,1,1,1,1,1)`: one-region synchronization first occurs
+at step eight and all twenty terminal members are exactly `4/7`. The four
+off-half final rows remain seven, seven, five and five occupied regions and
+cannot be deleted to manufacture uniqueness.
+
+The focused suite found one exact-type boundary defect before submission: an
+integer spelling of the One was passed to a Fraction-only positive-take helper.
+That line was corrected, after which all five focused tests passed. The
+untouched official coordinator then admitted the claim on one execution, and
+the non-persisting materializer reproduced the identical receipt once. No
+engine or protocol file changed; the engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 325 same-strength closed and 173 open, with
+51 mapped open and 122 unmapped open. V1 E4 has no remaining work. The next
+still-open V1 Physics obligation is PH2: force a single exact Lyapunov/KS
+correspondence without importing logarithmic proof values and compare the
+complete registered map record, while retaining the already sealed branch
+count, entropy support and rational convergence laws.

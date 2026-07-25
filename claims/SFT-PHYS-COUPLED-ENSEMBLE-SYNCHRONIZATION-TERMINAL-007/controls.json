@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007",
+  "controls": [
+    {
+      "expected_behavior": "Reject either off-half coupling as exact synchronization.",
+      "kind": "false_premise",
+      "observed_behavior": "Both leave the same positive residual magnitude.",
+      "passed": true,
+      "receipt_hash": "sha256:978495b19ea6a78a542087b299beca05d63505e8c7526fdd172d28f492034301"
+    },
+    {
+      "expected_behavior": "Reject a changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:f9cc802fda9684abe9042aa128f74d5f9a2c098b1846a200fdb61bd404bf4775"
+    },
+    {
+      "expected_behavior": "Reject duplicated candidate identities.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The complete product has unique identities.",
+      "passed": true,
+      "receipt_hash": "sha256:c74f2eab8555206eb5f3a49ee2b048122a0dc767178e467e00a155138bf2c2e1"
+    },
+    {
+      "expected_behavior": "Reject universal collapse, pre-seal observation and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only the conditional synchronized terminal, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:72ba6bce9aa44e789fee9d4adcd9e58976960c86fe569366903328839152515e"
+    }
+  ]
+}

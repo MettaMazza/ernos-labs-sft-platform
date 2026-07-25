@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007",
+  "data_source_ids": [
+    "SFTOM-V1-E4-EXACT-OBSERVATION"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:dcac41de7bb9692e3dd6e36b3f67a0473add8f0b4570023792539731bac5e2db",
+  "falsification_condition": "Reject if either frozen V1 source identity changes; if any registered ensemble, depth, region, coupling or printed final coordinate is omitted or altered; if the independent exact recurrence fails to reproduce all five final region counts; if half-One does not uniquely reach one occupied region; if its complete stepwise recurrence or terminal common point changes; if any off-half comparison is deleted; if the general pair synchronization or synchronized-terminal proof fails; or if target content enters before prediction sealing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b3e64fac2ad2e9c1a88c28ea514125b09d572e5faf258cb8ff120a4de5cd2ac4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6c71c78e9c29b03b99160aca58d0c0a9b3100054d640233ac7540d62270609b4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:57c419cd8ad63b81af9db7b2e27f6732b191af75b7e5bac91231d2f07ee7883e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9f3ad1fec718f8458bf90dd35fc3035132290e0fc49feac8c2af6d9f9c1434cc",
+    "prediction_seal_hash": "sha256:2f09ac05bca9c6679f58086e1fbdc763f824722c840a4976b1bb5d499464dad9",
+    "program_hash": "sha256:fd7594af3cfc0e21f38460e357f25df26f5a4402bf69e3b3e3d72435c6ffc73a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2784c4b4be93da8195d41eadca0a6033b80cacb335c57876bc8c79abf42d19e1",
+    "target_material_present": false,
+    "trace_hash": "sha256:8c639861931d8d83b806edd78325dd55cad33bf307e1348236f5b65c101d81c8"
+  },
+  "measurement_receipt_hash": "sha256:26c258af8df7b47cb63990a322ad42259c7feae367af3364396472ff127ece79",
+  "measurements": [
+    "Both frozen V1 E4 files are retained byte-for-byte and opened only after the V3 prediction seal.",
+    "All five registered couplings and all fifteen region-count steps per coupling were independently recomputed exactly.",
+    "Complete final coupling vector: (7, 7, 1, 5, 5).",
+    "Half-One recurrence: (12, 10, 7, 5, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1).",
+    "Half-One uniquely reaches one occupied region, first at step eight, and all twenty members finish exactly at four-sevenths.",
+    "Off-half controls remain visible and finish at seven, seven, five and five occupied regions; they cannot be discarded to manufacture uniqueness."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:ed0a7d1410486928a7bc01d727fabdefc472a961848a815e8551df18a28728bc",
+    "custodian_id": "SFT-EXP-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007-external-target-custodian",
+    "experiment_registration_hash": "sha256:dcac41de7bb9692e3dd6e36b3f67a0473add8f0b4570023792539731bac5e2db",
+    "prediction_seal_hash": "sha256:2f09ac05bca9c6679f58086e1fbdc763f824722c840a4976b1bb5d499464dad9",
+    "registered_target_identity_hash": "sha256:2784c4b4be93da8195d41eadca0a6033b80cacb335c57876bc8c79abf42d19e1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:948f508c9474d5f0f0cb584a64e736bafe0703cf5044f9c93091e820e72bc0c9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b334a0cce278506495097aab5288a05ffd2eba2da739e13ed7dfdfdc2a22396a"
+}
