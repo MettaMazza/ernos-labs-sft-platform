@@ -266,6 +266,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "V-7": ("SFT-PHYS-NUCLEAR-FUSION-001", "SFT-PHYS-NUCLEAR-FISSION-001", "SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005", "SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006"),
     "V-8": ("SFT-PHYS-QUANTUM-SPIN-001", "SFT-PHYS-QUANTUM-EXCLUSION-001", "SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005", "SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006"),
     "VI-1": ("SFT-PHYS-MATTER-SCATTERING-001", "SFT-PHYS-QUANTUM-WEIGHT-001", "SFT-PHYS-FIELD-INVERSE-SQUARE-001", "SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003", "SFT-PHYS-MECH-CONSERVATION-001", "SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006"),
+    "VI-2": ("SFT-PHYS-MATTER-DECAY-001", "SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005", "SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005", "SFT-PHYS-QUANTUM-WEIGHT-001", "SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006"),
 }
 
 
@@ -813,9 +814,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "Structural running directions are sealed. Exact generator-indexed running functions, common scale transport, convergence and measured multi-scale coupling data remain.",
     },
     "VI-2": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Decay channel conservation is sealed. Total widths, exact branching partitions, lifetime relation and complete measured decay vectors remain.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; paired transition support forces every exact positive open-channel partial width, complete composition forces total width, partial-over-total normalization forces the exclusive One partition, and action-width reciprocity forces lifetime and its strict inverse ordering. The complete PDG 2026 W-width table, thirteen-row mode table, both exclusive fit organizations, exact hadronic complements, partial-width enclosures and NIST reduced-action transport pass post-seal without subset double counting or fitted correction.",
     },
     "VI-1": {
         "formal_same_strength_status": "closed_at_declared_boundary",
@@ -1453,7 +1454,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

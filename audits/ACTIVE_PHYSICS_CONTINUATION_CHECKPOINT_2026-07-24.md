@@ -1228,3 +1228,79 @@ declared boundary. The next sequential V1 Physics obligation is VI-2: force
 the total-width sum, exact branching partition, lifetime relation and complete
 authoritative decay-vector comparison without reopening already sealed decay
 channel conservation.
+
+43. V1 VI-2 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006`, engine receipt
+     `sha256:a4e14f20a7c1f6920115f0e5ad0b911b5462b690aad35ee79aac39b691d12d3f`;
+   - derivation seal
+     `sha256:42d6264dd3d0731a3920f4c904f688ccf53e028f356a0be3ff910c6041dc0f6d`;
+   - independent validation
+     `sha256:72baee80b3adaeac88de833ce60ce9ab2f0c8885919a6d53aadc763fd5a44068`;
+   - independent certificate
+     `sha256:29c5bc317aac67c022d87e417828f668fd1d0748855e6d0eab968f7047c00910`;
+   - independent implementation
+     `sha256:b0291ebf59a77a2abc9bb3ba2774893f5738d22b048abf4b280be93fd0788e16`;
+   - empirical validation
+     `sha256:5f55eaf606e42e1746e073343e52e184ebe55bd62288aa5c0339e4834511eef7`;
+   - measurement receipt
+     `sha256:d48b51e08f77bfd7850e90dcc4f0bea4b17a68f8588730baa1d0627dd9376f36`;
+   - experiment registration
+     `sha256:0a913acdc00541ee2c9ee7bb3f1351c146fd5ce91a5992080caa4669006c9506`;
+   - source manifest
+     `sha256:d2750e9b099ed37535180507e4ef1eca7b678d6c4ce14a16b21c9cd8ec5ee688`;
+   - completeness certificate
+     `sha256:858936e46568b1519195e69568b7c1a7a7f68809c1ed32fcffc847d2f00e1880`.
+
+The formal claimant contains no source reader, particle identity, measured
+width, branching fraction, lifetime, stored expected survivor or
+submission-controlled admission flag. Its complete nine-axis product contains
+8,748 forms and one engine-computed survivor. Paired transition support times
+available generated output support per action forces every positive open-channel
+partial width. Closed channels are the structural empty form. Complete ordered
+composition forces total width; partial-over-total normalization forces the
+exclusive One partition. Action over total width forces lifetime and the strict
+greater-width/shorter-lifetime order. The one-channel base and arbitrary
+positive channel-successor step close the result depth-independently.
+
+Only after sealing did the current authoritative target open. The official
+2026 PDG W listing is frozen at
+`sha256:f1905e46980fb732a525de5a1eaa58cb6a87ff97a9dc135e3d7935912ba1d2a1`.
+All sixteen width-table rows, all thirteen primary mode rows, both exclusive fit
+organizations, every uncertainty, use-status, aggregate/subset classification
+and the exact PDG complement statement are retained. The official NIST CODATA
+snapshot retains the reduced-action inscription and is frozen at
+`sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67`.
+
+The PDG total-width interval is exactly `[209/100, 219/100] GeV`. The universal
+exclusive interval sum is `[1989/2000, 10053/10000]` and the individual
+exclusive interval sum is `[4967/5000, 2523/2500]`; both contain the One. The
+hadronic complements forced from the independently opened universal and
+individual leptonic central values are `3371/5000` and `841/1250`; both lie
+inside the PDG hadronic interval. Exact partial-width transport gives the summed
+enclosure `[1038103/500000, 552537/250000] GeV`, containing the reported total.
+Aggregate and hadronic-subset rows remain retained but cannot be double counted.
+
+The NIST reduced-action ellipsis is enclosed between adjacent exact rational
+decimal endpoints rather than promoted to an exact rational proof value.
+Combining that enclosure with the PDG width interval forces the finite positive
+lifetime interval
+`[6582119569/21900000000000000000000000000000000,
+658211957/2090000000000000000000000000000000] s` and independently retains the
+greater-width/shorter-lifetime ordering. This is exact dimensional transport;
+it does not misdescribe the lifetime as a separately printed PDG scalar.
+
+The five focused tests passed once. The untouched official coordinator admitted
+the claim on one execution. A diagnostic print then requested a convenience
+attribute absent from the receipt class and raised only after the receipt and
+census had already been persisted; the engine was not rerun. The standard
+non-persisting evidence materializer reproduced the exact receipt once. The
+frozen engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 322 same-strength closed and 176 open, with
+51 mapped open and 125 unmapped open. V1 VI-2 has no remaining work at its
+declared boundary. The next sequential V1 Physics obligation is VI-3: force the
+generator-indexed running functions, common scale transport, convergence and
+complete authoritative multi-scale coupling comparison without reopening the
+already sealed running directions.

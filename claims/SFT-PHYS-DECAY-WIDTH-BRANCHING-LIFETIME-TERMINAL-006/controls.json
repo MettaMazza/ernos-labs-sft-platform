@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006",
+  "controls": [
+    {
+      "expected_behavior": "Reject incomplete branching and a width-proportional lifetime.",
+      "kind": "false_premise",
+      "observed_behavior": "Complete normalization and exact inverse duration reject both false laws.",
+      "passed": true,
+      "receipt_hash": "sha256:1f11a1f6c70596215f0cd6e40f1fc35fac6a7542f354c765400f4b1a3d562c69"
+    },
+    {
+      "expected_behavior": "Reject any changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered source manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:0de6112a4fa89e23a8625b623b57f00f6f65f6e8de7f00f0265c4d1e451b09ae"
+    },
+    {
+      "expected_behavior": "Reject a duplicated or incomplete candidate census.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The deliberate duplicate fails complete candidate identity.",
+      "passed": true,
+      "receipt_hash": "sha256:85f7f2fccaaba82e12423de0043e0cde43f60a6c59bbf25b4c3079af293bc64a"
+    },
+    {
+      "expected_behavior": "Reject a numerical null channel, pre-seal target access and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Closed channels are structural absence; sealed custody and empty extension are required.",
+      "passed": true,
+      "receipt_hash": "sha256:89137a6f44d4b9f7604a1d09999b21276005254103306653d01e9d7fc79e424a"
+    }
+  ]
+}
