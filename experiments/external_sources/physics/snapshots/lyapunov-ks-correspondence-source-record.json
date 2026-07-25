@@ -1,0 +1,43 @@
+{
+  "schema": "sft-v3-lyapunov-ks-correspondence-source-record/1",
+  "source_id": "PH2-EXTERNAL-LYAPUNOV-KS-CORRESPONDENCE",
+  "source_class": "external-primary-literature-record",
+  "source_note": "The frozen papers are post-seal comparison records. They do not select the Fold law, its candidate survivor, or its exact carrier.",
+  "snapshots": [
+    {
+      "path": "experiments/external_sources/physics/snapshots/arxiv-1211.1234-chaotic-map-trng.pdf",
+      "sha256": "716c6b68b4755f47087747f67f4b2c4a7ed0ade30f77391a18129f2ad76de6c9",
+      "source_uri": "https://arxiv.org/abs/1211.1234",
+      "scope": "Bernoulli map equation, two preimages, uniform invariant distribution, Lyapunov label ln(2), and independent equiprobable binary output"
+    },
+    {
+      "path": "experiments/external_sources/physics/snapshots/arxiv-1004.3441-pesin-entropy-formula.pdf",
+      "sha256": "ea560114c9cc196e18feb4536f63f28c292dadda465aafcb9f41ef12c20ac090",
+      "source_uri": "https://arxiv.org/abs/1004.3441",
+      "scope": "Conditional Pesin entropy formula relating metric entropy to the integral of positive Lyapunov exponents under the paper's stated hypotheses"
+    }
+  ],
+  "registered_target": {
+    "direct_map_case": "complete-two-branch-Bernoulli-map",
+    "map_piece_count": "2",
+    "absolute_branch_slope": "2",
+    "preimage_count": "2",
+    "stationary_distribution": "uniform",
+    "output_alphabet_size": "2",
+    "output_symbols": "independent-and-equiprobable",
+    "conventional_lyapunov_label": "natural-logarithm-of-two",
+    "conventional_information_rate_label": "one-bit-per-step",
+    "entropy_formula_scope": "conditional-on-the-stated-regularity-invariance-and-splitting-hypotheses",
+    "entropy_formula_relation": "metric-entropy-equals-integrated-sum-of-positive-Lyapunov-exponents"
+  },
+  "custody": {
+    "development_observation_known": true,
+    "formal_claim_contains_external_target_values": false,
+    "target_inaccessible_during_prediction_execution": true,
+    "prediction_sealed_before_target_release_within_run": true,
+    "all_registered_comparison_rows_retained": true,
+    "measurements_select_formal_survivor": false,
+    "analytic_logarithms_used_as_sft_proof_values": false,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-comparison"
+  }
+}

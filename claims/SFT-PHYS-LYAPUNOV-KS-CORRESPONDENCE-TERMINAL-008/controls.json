@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008",
+  "controls": [
+    {
+      "expected_behavior": "Reject a selected binary carrier for a generated three-label Fold.",
+      "kind": "false_premise",
+      "observed_behavior": "Complete support and separation both return three, not two, as their multiplier.",
+      "passed": true,
+      "receipt_hash": "sha256:37122691e3a624a1772bee38e44dfa1048c8ed6e88089da0aaa9da8e5173ce0d"
+    },
+    {
+      "expected_behavior": "Reject a changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:f9cc802fda9684abe9042aa128f74d5f9a2c098b1846a200fdb61bd404bf4775"
+    },
+    {
+      "expected_behavior": "Reject duplicated candidate identities.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The complete product has unique identities.",
+      "passed": true,
+      "receipt_hash": "sha256:c74f2eab8555206eb5f3a49ee2b048122a0dc767178e467e00a155138bf2c2e1"
+    },
+    {
+      "expected_behavior": "Reject imported analytic proof values, pre-seal target access and a free rate correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only the exact carrier, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:f84863dd7961828969186e8bb156becee345cb4d435c032810a5de3ac8c5b3df"
+    }
+  ]
+}

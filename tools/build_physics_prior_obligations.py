@@ -86,6 +86,7 @@ V2_PHYSICS_STEPS = values(
 
 
 V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
+    "PH2": ("SFT-INFO-ENTROPY-UNCERTAINTY-001", "SFT-MATH-SELF-SIMILAR-CONVERGENCE-002", "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008"),
     "E6": ("SFT-MATH-EXACT-RELATIONS-002", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
     "A1": ("SFT-PHYS-WAVE-SUPERPOSITION-001", "SFT-PHYS-MECH-CONSERVATION-001"),
     "A2": ("SFT-PHYS-WAVE-INTERFERENCE-001", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003"),
@@ -447,9 +448,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "none; equal paired motion uniquely forces half-One as the empty-residual synchronization boundary, every off-half generated coupling retains positive residual separation, and every synchronized finite ensemble remains synchronized under common Fold successors. Both byte-identical V1 E4 files open only after sealing; the independent exact reconstruction retains all five couplings, all seventy-five recurrence coordinates, every final point, final region vector (7,7,1,5,5), half-One recurrence (12,10,7,5,4,3,2,1,1,1,1,1,1,1,1) and the common terminal point four-sevenths.",
     },
     "PH2": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "Exact branch count, entropy support and rational convergence are sealed. Their single Lyapunov/KS correspondence without imported logarithmic proof values and the complete external map comparison remain.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; every complete generated m-label Fold has exact support m^d, one-step support multiplier m and local-separation multiplier m, forcing one common positive-whole expansion/information carrier without a logarithmic proof scalar. The post-seal direct Bernoulli-map comparison retains every map, slope, preimage, invariant-distribution, independent-symbol and conventional-rate row; the Pesin-formula comparison retains its stated hypotheses rather than universalizing the correspondence.",
     },
     "PH3": {
         "formal_same_strength_status": "versioned_successor_required",
@@ -1457,7 +1458,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4", "PH2",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

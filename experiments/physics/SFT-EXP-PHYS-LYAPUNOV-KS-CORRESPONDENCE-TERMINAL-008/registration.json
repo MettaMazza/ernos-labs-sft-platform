@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "experiment_id": "SFT-EXP-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008",
+  "claim_id": "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008",
+  "evidence_mode": "observational_derivation",
+  "protocol": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "development_observations": [
+    {"source_id": "PH2-EXTERNAL-LYAPUNOV-KS-CORRESPONDENCE", "role": "development_only", "content_hash": "sha256:a23b394f6da97239f1cba263b949a7ca14d34ac26e657437807be5216c9c0be3"}
+  ],
+  "external_measurement_sources": [
+    {"source_id": "ARXIV-1211.1234", "source_uri": "https://arxiv.org/abs/1211.1234", "snapshot_hash": "sha256:716c6b68b4755f47087747f67f4b2c4a7ed0ade30f77391a18129f2ad76de6c9", "custody_role": "withheld_target"},
+    {"source_id": "ARXIV-1004.3441", "source_uri": "https://arxiv.org/abs/1004.3441", "snapshot_hash": "sha256:ea560114c9cc196e18feb4536f63f28c292dadda465aafcb9f41ef12c20ac090", "custody_role": "withheld_target"}
+  ],
+  "frozen_relation": {
+    "statement": "The generated positive whole m is the common exact one-step carrier of Fold separation and complete m-label support.",
+    "target_did_not_select_law": true,
+    "analytic_proof_value_required": false
+  },
+  "withheld_targets": [{"target_id": "PH2-WITHHELD-MAP-AND-ENTROPY-CORRESPONDENCE", "source_id": "PH2-EXTERNAL-LYAPUNOV-KS-CORRESPONDENCE", "content_withheld_from_prediction": true}],
+  "prediction_protocol": {
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "complete_trace_required": true,
+    "forbidden_capabilities": ["clock", "dynamic_import", "environment", "filesystem_read", "filesystem_write", "foreign_function", "network", "subprocess"]
+  },
+  "evaluation_protocol": {
+    "metrics": [{"metric_id": "complete-map-carrier-and-entropy-scope-vector", "all_rows": true, "definition": "Compare pieces, slope, preimages, output alphabet, complete Fold supports, separation ratios, conventional labels and hypothesis scope."}],
+    "acceptance_condition": "Every exact count equals the independently generated carrier, every scope row is retained and no analytic scalar or correction enters the Fold proof.",
+    "falsification_condition": "Any source change, omitted row, unequal exact carrier, imported logarithmic proof scalar, universalized hypothesis or pre-seal target access rejects the claim."
+  },
+  "controls": [
+    {"control_id": "FALSE-PREMISE", "kind": "false_premise"},
+    {"control_id": "TAMPERED-SOURCE", "kind": "tampered_source"},
+    {"control_id": "TAMPERED-ARTIFACT", "kind": "tampered_artifact"},
+    {"control_id": "BOUNDARY", "kind": "boundary"}
+  ],
+  "target_access_policy": "structurally-denied-before-seal",
+  "row_retention_policy": "retain-every-registered-favorable-scope-limiting-and-adverse-row",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "status": "measured"
+}

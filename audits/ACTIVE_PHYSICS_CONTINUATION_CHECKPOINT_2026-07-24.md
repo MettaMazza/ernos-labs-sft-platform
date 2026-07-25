@@ -1484,3 +1484,44 @@ still-open V1 Physics obligation is PH2: force a single exact Lyapunov/KS
 correspondence without importing logarithmic proof values and compare the
 complete registered map record, while retaining the already sealed branch
 count, entropy support and rational convergence laws.
+
+## 47. PH2 exact expansion/information carrier closed
+
+`SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008` closes V1 PH2 at its
+declared formal and empirical boundary. For every complete generated positive
+label count `m` and every positive depth `d`, local uncast separation grows by
+the exact carrier `m`, complete word support is `m^d`, and the next depth
+multiplies that support by the same `m`. Expansion and distinguishable-history
+growth therefore have one forced positive-whole carrier. No logarithm,
+irrational approximation, decimal rate or fitted correction is used as an SFT
+proof value.
+
+The claimant contained no paper identifier, external target label, preferred
+survivor or self-admission flag. An implementation importing neither claimant
+nor targets regenerated all 2,916 forms and every decision. The untouched
+engine found exactly one survivor and admitted it with receipt
+`sha256:f0b74a8639f9e01be7b9adc31f83b4b24ed82f085e72c17736c38f030b5cae40`.
+The top-level receipt records admission and the sealed forcing gate; the sealed
+elimination evidence records the complete survivor identifier.
+
+Only after the prediction seal did the two primary-source snapshots open. The
+direct Bernoulli-map record retains two pieces, absolute slope two, two
+preimages, uniform invariant distribution and two independent equiprobable
+output symbols. Independent Fold reconstruction gives complete supports
+`(2,4,8,16,32)` for depths one through five, with every support-successor ratio
+and every tested local-separation multiplier exactly two. Conventional
+Lyapunov and one-bit rate notation remains an external symbolic translation.
+The Pesin-formula comparison retains its stated regularity, invariance and
+splitting hypotheses and is not promoted to an unconditional theorem.
+
+All five focused tests passed. The official admission executed once; the
+non-persisting materializer reproduced the identical receipt once. No engine
+or protocol file changed; the engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 326 same-strength closed and 172 open, with
+50 mapped open and 122 unmapped open. PH2 has no remaining work. The next
+still-open V1 Physics obligation is PH3: force the exact coupled-map
+synchronization threshold and complete target-inaccessible criticality
+comparison while retaining the already admitted half-One coupling and phase
+locking laws.
