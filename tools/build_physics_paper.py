@@ -261,6 +261,8 @@ These are not detached assertions. Their full sections below expose the exact th
 
 Physics closure means that every claim in the current categorical Physics inventory has passed the common admission standard at its declared generated and empirical boundary. It does not reassign downstream chemical consequences, materials properties, organisms, consciousness, observed astronomical populations or cosmic history to Physics.
 
+Even after the V1/V2 ownership audit closes, branch closure will mean current-knowledge closure at a dated evidence boundary—not permanent completion of Physics. New discoveries, falsifications, corrections and stronger evidence remain lawful extensions when submitted as new versioned claims through the unchanged engine. Existing receipts remain immutable.
+
 ## 3. Exact constitutional domain
 
 The derivational domain admits the empty One as structural absence but never numerical zero. Proof magnitudes are positive generated counts and exact positive rational parts or ratios. Orientation, opposition and complement are held labels rather than negative quantities. Irrational, imaginary and binary floating values are barred from proof. Completed infinity, an ungenerated continuum, axioms, fitted coefficients and free parameters are also barred. External decimal measurements remain source-bound records. A finite decimal is converted to an exact rational interval only inside the empirical adapter and never gains authority to select the Fold law.
@@ -317,7 +319,7 @@ The repository uses Python's standard library for the core engine and supports m
 
 ## {section_number + 3}. Conclusion
 
-At the declared boundary, this Physics inventory is complete: {len(obligations)} derivations are forced, enumerated, independently reconstructed and admitted through one unchanged engine; {empirical_count} additionally carry registered empirical validation. The measured-value layer preserves the strict arithmetic constitution while allowing official observations to invalidate a sealed relation. The result is an open, inspectable tree of physical laws whose authority rests on reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection. Open science is not ornamental here: every authority claim is made vulnerable to computational reproduction, adverse control and public falsification.
+At the declared boundary, the current 285-claim V3 Physics inventory is internally evidence-closed, while publication and exhaustive V1/V2 closure remain blocked by the one-owner audit. Its {len(obligations)} derivations are forced, enumerated, independently reconstructed and admitted through one unchanged engine; {empirical_count} additionally carry registered empirical validation. When the broader audit closes, that status will still be current-knowledge closure rather than permanent completion: Physics remains open to lawful versioned extension and falsification. The measured-value layer preserves the strict arithmetic constitution while allowing official observations to invalidate a sealed relation. The result is an open, inspectable tree of physical laws whose authority rests on reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection. Open science is not ornamental here: every authority claim is made vulnerable to computational reproduction, adverse control and public falsification.
 
 ## References and official data bodies
 

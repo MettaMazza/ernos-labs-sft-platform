@@ -22,3 +22,8 @@ New work follows these locations:
 No new successor manuscript may silently overwrite a v1 paper. At successor
 freeze, a versioned source directory and new manifest must be created before
 any compatibility pointer changes.
+
+`Closed` and `complete` in an archived release mean current-knowledge closure
+at that release's enumerated boundary, never permanent completion of a field.
+Later lawful discoveries create versioned obligations and successor papers;
+they preserve rather than erase the earlier evidence boundary.

@@ -37,6 +37,12 @@ The scientific gate checks meaning, scope, empirical protocol,
 interpretation and correspondence. Specialist review cannot waive mechanical
 failure, and mechanical success cannot manufacture missing empirical evidence.
 
+Published branch closure is not a ban on extension. It records that all known
+obligations at the declared freeze met the stated evidence standard. A proposed
+new law, correction, falsification or stronger comparison is welcome when it is
+registered as a versioned extension and passes the same mechanical and
+scientific gates without rewriting an immutable receipt.
+
 ## Ernos Labs designation
 
 Contributors may identify conforming independent work as part of the open Ernos

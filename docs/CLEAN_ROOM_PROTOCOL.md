@@ -75,6 +75,11 @@ Automated branch-publication checks must additionally reject:
 - a V3 result used downstream before its categorically owning branch records
   it in the current manuscript inventory.
 
+A passing branch gate closes only its dated current-knowledge inventory. It
+must not lock the branch or claim permanent scientific finality. New lawful
+discoveries reopen the inventory by adding versioned obligations while
+preserving every earlier receipt and publication identity.
+
 ## Discrepancy rule
 
 A mismatch with an earlier corpus is evidence. It is preserved, registered and

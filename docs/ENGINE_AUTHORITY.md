@@ -83,6 +83,12 @@ receive an official isolation certificate.
 An accepted engine receipt is necessary for census admission. It does not make
 an unregistered branch complete.
 
+In every status surface, `closed` means closed against the registered
+current-knowledge inventory and evidence boundary at a stated date. It never
+means permanently finished. Lawful extensions, corrections, falsifications and
+new discoveries remain admissible as new versioned claims through the same
+frozen engine and cannot mutate an earlier receipt.
+
 A branch paper can be declared ready only when:
 
 - every prior source entry is reviewed against the branch, every entry with a
@@ -109,10 +115,10 @@ branches remain open. The final TOE paper additionally requires the complete
 global all-branch atomic owner ledger.
 
 The final Theory of Everything paper can be declared ready only when every
-registered branch has a completed branch paper and the global census contains
+registered branch has a current-knowledge-closed branch paper and the global census contains
 no unclassified or unclosed frontier obligation inside its frozen current-
 knowledge inventory. Work outside that inventory may be named as an external
-boundary, but it cannot be counted as a completed branch or admitted law.
+boundary, but it cannot be counted as current-knowledge branch closure or an admitted law.
 
 ## Independent invalidation
 

@@ -141,6 +141,7 @@ def main() -> None:
             "external equations, constants and measurements test only after a Fold relation is sealed",
         ],
         "ownership_rule": "A claim enters this inventory exactly when its claim registration and immutable model-admitted receipt both assign it to Physics. Cross-branch V1/V2 observations are never bulk-assigned to Physics.",
+        "extension_policy": "Closure of this inventory, when the prior-ownership audit is complete, means current-knowledge closure at its dated evidence boundary only. Physics remains open to lawful versioned extensions, correction, falsification and new discovery through the unchanged admission protocol.",
         "subbranch_order": list(SUBBRANCH_ORDER),
         "subbranch_counts": {name: counts[name] for name in SUBBRANCH_ORDER},
         "required_claim_count": len(obligations),

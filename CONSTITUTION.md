@@ -222,6 +222,15 @@ investigated; v3 is not back-fitted to erase it.
 
 ## 12. Publication and authority
 
+Branch closure is always **current-knowledge closure at an explicit registered
+boundary**. It means that every obligation known and owned at the freeze date
+has met the declared SFT standard and that the corresponding evidence is
+closed. It never means that a science is permanently finished, locked against
+new discovery or immune from correction. A branch remains open to lawful
+extensions, stronger evidence, falsification and newly discovered obligations.
+Such additions enter as new versioned claims through the unchanged admission
+route; they do not silently rewrite earlier receipts.
+
 No branch is complete for publication merely because every row in a narrow
 frozen inventory passed. Before a current branch paper is eligible, every prior
 source entry must be explicitly reviewed against that branch; every entry with
