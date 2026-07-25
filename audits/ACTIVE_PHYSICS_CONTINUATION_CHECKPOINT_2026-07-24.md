@@ -1593,3 +1593,27 @@ No engine or protocol file changed. The regenerated inheritance ledger is now
 329 same-strength closed and 169 open. D9m has no remaining work. The next
 sequential V1 Physics obligation is D9n: the ten-component symmetric source
 ledger and depth-independent discrete contracted-Bianchi conservation law.
+
+## 51. D9n symmetric source conservation closed
+
+`SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010` forces ten symmetric
+curvature-source pairs from four generated coordinate labels, partitioned as
+one energy, three momentum and six stress carriers. For each of four held
+source directions, commuting generated shifts expand the local divergence into
+48 carried and 48 opposed terms with identical 31-term canonical support.
+Removing one opposed term breaks balance. The coordinate-commutation successor
+certificate makes the result depth-independent.
+
+The target-free claimant and distinct implementation regenerated all 2,916
+forms and left one survivor. The untouched engine admitted the claim on its
+first official execution with receipt
+`sha256:79b12fc32760832dc52e87fcf8d743575ebe2f944c18e7cb24cbb41a6d8a5b22`.
+Only after sealing did the V1 row, admitted polarization prerequisite, Carroll
+notes, exact Regge identity paper and GW170817 measurement paper open. All 32
+registered favorable and limiting rows were retained, including the nonlinear
+Regge-operator distinction and pure-mode limitation of the GW comparison.
+
+No engine or protocol file changed. The regenerated inheritance ledger is now
+330 same-strength closed and 168 open. D9n has no remaining work. The next
+sequential V1 Physics obligation is D9o: the exact exterior field coefficient,
+conserved vacuum flux, weak-field reduction and complete clock/redshift comparison.

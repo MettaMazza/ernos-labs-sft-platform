@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010",
+  "controls": [
+    {
+      "expected_behavior": "Reject a source ledger missing one opposed flow term.",
+      "kind": "false_premise",
+      "observed_behavior": "The exact multisets no longer match.",
+      "passed": true,
+      "receipt_hash": "sha256:49286d6288e8c1870761485f13ecfe4cd14de2785e6d46532d0acecb723741f4"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities are unique.",
+      "passed": true,
+      "receipt_hash": "sha256:0b5a37b200f6544185da03decea0e8f27bba78ad0ff859e5920232c0a780f049"
+    },
+    {
+      "expected_behavior": "Reject imported operators, pre-seal observation and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only generated shifts, sealed targets and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:c29f33fe86181bd8646bae70e39a16e747ed8c9f6692072c73003c3ae9d1b8db"
+    }
+  ]
+}

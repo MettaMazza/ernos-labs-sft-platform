@@ -1,0 +1,3 @@
+from pathlib import Path
+from sft.physics.symmetric_source_conservation_terminal_execution_v1 import build_symmetric_source_conservation_execution
+def build_execution(root:Path):return build_symmetric_source_conservation_execution(root,Path(__file__))
