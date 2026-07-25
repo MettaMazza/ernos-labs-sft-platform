@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-SCIENTIFIC-CALCULATOR-006",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "An API alone is not a familiar calculator.",
+      "passed": true,
+      "receipt_hash": "sha256:ac04d355305d1827450c11aba9b90a9b2ae9bf5aeb23b9fcccd3efc6acf7c1a2"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no numerical zero, negative magnitude, irrational scalar, imaginary scalar or floating proof value; no fitted scientific parameter, host transcendental answer, random oracle, NaN or infinity; no GUI or terminal path may bypass the exact evaluator; no calculator replay is labelled an admission receipt; no claim to future Mathematics families not present in the exact predecessor census; no proprietary calculator-specific surface is claimed beyond the declared expression language",
+      "passed": true,
+      "receipt_hash": "sha256:eefb6e9e942e0a51c61bd23f963e704839a3ef7cb8507308620dae96ab4f04fc"
+    }
+  ]
+}

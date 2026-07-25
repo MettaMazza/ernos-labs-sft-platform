@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-SCIENTIFIC-CALCULATOR-005",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "A host float loses the exact entered part before proof begins.",
+      "passed": true,
+      "receipt_hash": "sha256:f1cae5eb43509a204e1458eacacacc8b1011649fb3e24e2004e089a9a431f8d5"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "semantic numerical zero, NaN and infinity are not admitted values; negative, irrational and imaginary scalars are replaced by typed Fold structures; binary floating-point and opaque host-library answers are excluded from proof; uncertified roots, series, singularities and exhausted resource bounds halt; decimal projections are correspondence displays only; no GUI button, memory action, angle mode or display conversion may bypass the exact evaluator; no host random generator, floating transcendental library, silent complex promotion or hidden calculator state; no claim to functions outside the explicit feature manifest without a new versioned extension",
+      "passed": true,
+      "receipt_hash": "sha256:627845b4d6543d567c0cd5487a9f699ffe05b60347b66670929301ef27028896"
+    }
+  ]
+}

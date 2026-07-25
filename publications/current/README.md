@@ -27,12 +27,14 @@ and complete evidence bundle at DOI
 [`10.5281/zenodo.21535636`](https://doi.org/10.5281/zenodo.21535636).
 Version 1.0 below remains preserved in the same Zenodo version chain.
 
-The current Mathematics account is the version 1.1 patch of
+The current Mathematics account is the version 1.2 update of
 [`Mathematics Branch Paper 001`](mathematics/FROM_FOLD_TO_MATHEMATICS.md),
 with its [rendered PDF](../../output/pdf/from-fold-to-mathematics-branch-paper-001.pdf),
-71/71 prior obligations closed, 22 admitted claims and DOI
-[`10.5281/zenodo.21536012`](https://doi.org/10.5281/zenodo.21536012).
-Version 1.0 remains preserved in the same Zenodo version chain.
+71/71 prior obligations closed, 27 registered claim records, the complete
+Smithian Fold Scientific Calculator lineage and DOI
+[`10.5281/zenodo.21558279`](https://doi.org/10.5281/zenodo.21558279).
+Versions 1.0 and 1.1 remain preserved in the same Zenodo version chain; the
+branch is current-evidence complete and open to lawful extension.
 
 The current Information Science account is the version 1.1 patch of
 [`Information Science Branch Paper 001`](information_science/FROM_DISTINCTION_TO_INFORMATION.md),
@@ -49,7 +51,7 @@ experimental record. It corrects the claim of current completeness.
 | Branch | Paper | DOI | Current status |
 |---|---|---|---|
 | Foundation | [From Nothing to Fold](foundation/FROM_NOTHING_TO_FOLD.md) | [10.5281/zenodo.21515629](https://doi.org/10.5281/zenodo.21515629) | Version 1.0 preserved; [Paper 001 v1.1 patch](https://doi.org/10.5281/zenodo.21535636) is current and closed |
-| Mathematics | [From Fold to Mathematics](mathematics/FROM_FOLD_TO_MATHEMATICS.md) | [10.5281/zenodo.21536012](https://doi.org/10.5281/zenodo.21536012) | Version 1.0 preserved; Paper 001 v1.1 is current and closed |
+| Mathematics | [From Fold to Mathematics](mathematics/FROM_FOLD_TO_MATHEMATICS.md) | [10.5281/zenodo.21558279](https://doi.org/10.5281/zenodo.21558279) | Versions 1.0 and 1.1 preserved; Paper 001 v1.2 is current-evidence complete and extension-open |
 | Information Science | [From Distinction to Information](information_science/FROM_DISTINCTION_TO_INFORMATION.md) | [10.5281/zenodo.21536202](https://doi.org/10.5281/zenodo.21536202) | Version 1.0 preserved; Paper 001 v1.1 is current and closed |
 | Classical Computation | [After Turing: The Fold Machine](computation/AFTER_TURING_THE_FOLD_MACHINE.md) | [10.5281/zenodo.21518311](https://doi.org/10.5281/zenodo.21518311) | Published v1; successor blocked |
 | Quantum Computation | [The Quantum Fold Machine](quantum_computation/THE_QUANTUM_FOLD_MACHINE.md) | [10.5281/zenodo.21518313](https://doi.org/10.5281/zenodo.21518313) | Published v1; successor blocked |

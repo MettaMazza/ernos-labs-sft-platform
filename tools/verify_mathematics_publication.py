@@ -23,7 +23,8 @@ if str(ROOT) not in sys.path:
 from sft.engine.canonical import sha256_identity
 from sft.engine.publication import BranchInventory, PaperEvidence, PublicationGate
 from sft.engine.receipt_io import read_receipt
-from sft.mathematics.catalog import SPECS
+from sft.mathematics.catalog import CORE_SPECS
+from sft.mathematics.lineage_laws import LINEAGE_SPECS
 
 
 BRANCH_ID = "mathematics"
@@ -36,7 +37,26 @@ EVIDENCE_MAP_PATH = ROOT / "publications/current/mathematics/evidence_map.json"
 MANIFEST_PATH = ROOT / "publications/current/mathematics/manifest.json"
 PUBLICATION_RECEIPT_PATH = ROOT / "publications/current/mathematics/publication_receipt.json"
 
-PAPER_SECTIONS = {spec.claim_id: str(index) for index, spec in enumerate(SPECS, start=6)}
+FOUNDATIONAL_CLAIM_IDS = tuple(spec.claim_id for spec in CORE_SPECS + LINEAGE_SPECS)
+CALCULATOR_CLAIM_IDS = (
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-003",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-004",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-005",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-006",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-007",
+)
+PAPER_SECTIONS = {
+    **{claim_id: str(index) for index, claim_id in enumerate(FOUNDATIONAL_CLAIM_IDS, start=6)},
+    **{claim_id: f"28.{index}" for index, claim_id in enumerate(CALCULATOR_CLAIM_IDS, start=1)},
+}
+
+CALCULATOR_VALIDATORS = {
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-003": "generated/mathematics/scientific_calculator_validator_v1.py",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-004": "generated/mathematics/scientific_calculator_validator_v2.py",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-005": "generated/mathematics/scientific_calculator_validator_v3.py",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-006": "generated/mathematics/scientific_calculator_validator_v4.py",
+    "SFT-MATH-SCIENTIFIC-CALCULATOR-007": "generated/mathematics/scientific_calculator_browser_validator_v1.py",
+}
 
 REQUIRED_CLAIM_FILES = (
     "registration.json",
@@ -46,7 +66,6 @@ REQUIRED_CLAIM_FILES = (
     "controls.json",
     "certificate.json",
     "execution.py",
-    "independent_validator.py",
 )
 
 
@@ -108,6 +127,17 @@ def build_evidence_map() -> dict[str, Any]:
                 "path": path.relative_to(ROOT).as_posix(),
                 "sha256": raw_sha256(path),
             }
+        validator_path = (
+            ROOT / CALCULATOR_VALIDATORS[claim_id]
+            if claim_id in CALCULATOR_VALIDATORS
+            else claim_root / "independent_validator.py"
+        )
+        if not validator_path.is_file():
+            raise ValueError(f"missing independent validator: {validator_path.relative_to(ROOT)}")
+        evidence_files["independent_validator.py"] = {
+            "path": validator_path.relative_to(ROOT).as_posix(),
+            "sha256": raw_sha256(validator_path),
+        }
 
         certificate = read_json(claim_root / "certificate.json")
         candidate_census = read_json(claim_root / "candidate_census.json")

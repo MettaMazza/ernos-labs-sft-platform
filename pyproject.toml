@@ -12,6 +12,9 @@ authors = [
 ]
 dependencies = []
 
+[project.optional-dependencies]
+test = ["coverage>=7"]
+
 [project.urls]
 Homepage = "https://github.com/MettaMazza/ernos-labs-sft-platform"
 Repository = "https://github.com/MettaMazza/ernos-labs-sft-platform"
@@ -19,6 +22,7 @@ Documentation = "https://github.com/MettaMazza/ernos-labs-sft-platform#readme"
 
 [project.scripts]
 sft = "sft.cli:main"
+sft-calculator = "sft.mathematics.calculator_complete.__main__:main"
 
 [tool.setuptools.packages.find]
 include = ["sft*"]

@@ -126,9 +126,10 @@ def cover():
         Spacer(1, 17 * mm),
         Paragraph(
             "Third clean-room reconstruction - complete V1/V2 Mathematics reconciliation"
-            "<br/>Twenty-two admitted derivations - 9,984 generated candidate structures"
+            "<br/>Twenty-seven registered records - 21,504 generated candidate structures"
+            "<br/>Complete exact scientific calculator - desktop, browser and local-network phone"
             "<br/>Seventy-one prior obligations closed - none open"
-            "<br/>Version 1.1 - 24 July 2026"
+            "<br/>Version 1.2 - 25 July 2026"
             f"<br/>{doi()}"
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,

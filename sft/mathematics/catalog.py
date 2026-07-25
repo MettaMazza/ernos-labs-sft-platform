@@ -4,6 +4,9 @@ from __future__ import annotations
 
 from sft.mathematics.algebraic_structures import SPEC as ALGEBRA
 from sft.mathematics.category_type_composition import SPEC as CATEGORY_TYPE_COMPOSITION
+from sft.mathematics.calculator.law_v2 import SPEC as SCIENTIFIC_CALCULATOR_CORE
+from sft.mathematics.calculator.law_v3 import SPEC as SCIENTIFIC_CALCULATOR
+from sft.mathematics.calculator_complete.law import SPEC as COMPLETE_SCIENTIFIC_CALCULATOR
 from sft.mathematics.combinatorics import SPEC as COMBINATORICS
 from sft.mathematics.discrete_mathematics import SPEC as DISCRETE
 from sft.mathematics.dynamical_systems import SPEC as DYNAMICAL_SYSTEMS
@@ -32,14 +35,18 @@ CORE_SPECS = (
     CATEGORY_TYPE_COMPOSITION,
 )
 
-SPECS = CORE_SPECS + LINEAGE_SPECS
+SPECS = CORE_SPECS + LINEAGE_SPECS + (
+    SCIENTIFIC_CALCULATOR_CORE,
+    SCIENTIFIC_CALCULATOR,
+    COMPLETE_SCIENTIFIC_CALCULATOR,
+)
 
 
 def validate_catalog() -> None:
     """Halt if the branch inventory is duplicated, incomplete or misordered."""
 
-    if len(SPECS) != 22:
-        raise ValueError("the mathematics catalog must contain exactly twenty-two declared obligations")
+    if len(SPECS) != 25:
+        raise ValueError("the mathematics catalog must contain exactly twenty-five declared obligations")
     claim_ids = tuple(spec.claim_id for spec in SPECS)
     if len(set(claim_ids)) != len(claim_ids):
         raise ValueError("the mathematics catalog contains a duplicate claim identity")
@@ -66,4 +73,4 @@ def validate_catalog() -> None:
 
 validate_catalog()
 
-__all__ = ("SPECS", "validate_catalog")
+__all__ = ("CORE_SPECS", "SPECS", "validate_catalog")

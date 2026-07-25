@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-SCIENTIFIC-CALCULATOR-007",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Mapped geometry did not ensure painted controls on the target macOS runtime.",
+      "passed": true,
+      "receipt_hash": "sha256:7695430e13d324c741370ca77b432f700184cdda88fded52e646b1bb7554aa87"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no edit to the frozen engine or immutable claim-006 source; no browser-side arithmetic or alternate evaluator; no displayed negative, irrational scalar, imaginary scalar, NaN or infinity; no counter-held result retained in answer, memory or history; no shared landing-state contamination between page sessions; no automatic expression focus on a touch-width calculator; no heavy GUI framework, container or network service beyond the user's local network",
+      "passed": true,
+      "receipt_hash": "sha256:b3a4601336eba4f37db8cf7851d8743b5a75a8be9e1793ed1f984b360c1cb4e7"
+    }
+  ]
+}

@@ -39,3 +39,26 @@ held-support/whole-support relation induced by observation over a complete
 deterministic generated microstate support. Natural measurements may challenge a
 sealed formal law only through the repository's preregistered blind empirical
 route; they cannot choose the law.
+
+## Open extension: exact scientific calculator
+
+The calculator lineage is the admitted executable translation of these laws.
+`SFT-MATH-SCIENTIFIC-CALCULATOR-003` is preserved as superseded adverse
+evidence after an enclosure-parity defect was found. Corrected core `004`,
+scientific surface `005`, complete calculator and law explorer `006`, and the
+accessible local-browser adapter `007` form the current versioned lineage.
+
+The current application is launched from `calculator_browser/`. It retains
+exact rational values, structural empty-One, certified non-rational intervals,
+typed orthogonal fibres, mandatory domain/resource halts and complete
+operation/resource traces. A result crossing below empty One halts
+transactionally and cannot enter answer, memory or history. The standards-
+rendered interface works on macOS, Windows, Linux and same-network phones using
+Python's standard library and the installed browser. It performs no browser-
+side arithmetic and routes every action through immutable claim 006.
+
+Calculator proof output is exact computational evidence, not a new engine
+admission. A proposed law still requires registration, complete enumeration,
+uniqueness, controls, independent validation and an official receipt from the
+untouched engine. Historical Mathematics releases remain immutable while the
+branch stays open to lawful extensions.

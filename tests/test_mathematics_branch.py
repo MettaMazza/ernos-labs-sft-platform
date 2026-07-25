@@ -5,7 +5,7 @@ from __future__ import annotations
 import unittest
 
 from sft.mathematics.algebraic_structures.law import OperationTable
-from sft.mathematics.catalog import SPECS, validate_catalog
+from sft.mathematics.catalog import CORE_SPECS, SPECS, validate_catalog
 from sft.mathematics.category_type_composition.law import Arrow, compose
 from sft.mathematics.combinatorics.law import arrangements, selections
 from sft.mathematics.discrete_mathematics.law import generated_collection, successor_trace
@@ -28,8 +28,9 @@ from sft.mathematics.probability_statistics.law import independent
 class MathematicsCatalogTests(unittest.TestCase):
     def test_catalog_is_complete_unique_and_dependency_ordered(self) -> None:
         validate_catalog()
-        self.assertEqual(len(SPECS), 12)
-        self.assertEqual(len({spec.claim_id for spec in SPECS}), 12)
+        self.assertEqual(len(CORE_SPECS), 12)
+        self.assertEqual(len(SPECS), 25)
+        self.assertEqual(len({spec.claim_id for spec in SPECS}), 25)
 
     def test_every_product_is_complete_and_has_one_survivor(self) -> None:
         for spec in SPECS:

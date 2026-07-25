@@ -10,12 +10,28 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from sft.mathematics.catalog import SPECS  # noqa: E402
+from sft.mathematics.catalog import CORE_SPECS  # noqa: E402
+from sft.mathematics.lineage_laws import LINEAGE_SPECS  # noqa: E402
+from sft.mathematics.calculator.law import SPEC as CALCULATOR_003  # noqa: E402
+from sft.mathematics.calculator.law_v2 import SPEC as CALCULATOR_004  # noqa: E402
+from sft.mathematics.calculator.law_v3 import SPEC as CALCULATOR_005  # noqa: E402
+from sft.mathematics.calculator_complete.law import SPEC as CALCULATOR_006  # noqa: E402
+from sft.mathematics.calculator_browser.law import SPEC as CALCULATOR_007  # noqa: E402
 
 
 OUTPUT = ROOT / "publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md"
-INVENTORY_HASH = "sha256:645bc6810273d4c1547c10eb6a7e63947e00d3953d9457096abe49be79f480aa"
 DOI_PATH = ROOT / "publications/current/mathematics/doi.txt"
+INVENTORY_PATH = ROOT / "publications/inventories/mathematics.json"
+
+FOUNDATIONAL_SPECS = CORE_SPECS + LINEAGE_SPECS
+CALCULATOR_SPECS = (
+    CALCULATOR_003,
+    CALCULATOR_004,
+    CALCULATOR_005,
+    CALCULATOR_006,
+    CALCULATOR_007,
+)
+ALL_PAPER_SPECS = FOUNDATIONAL_SPECS + CALCULATOR_SPECS
 
 
 INTERPRETATION = {
@@ -177,7 +193,11 @@ def publication_text(text: str) -> str:
 
 
 def build() -> str:
-    candidate_total = sum(2 ** len(spec.dimensions) for spec in SPECS)
+    foundational_candidate_total = sum(2 ** len(spec.dimensions) for spec in FOUNDATIONAL_SPECS)
+    calculator_candidate_total = sum(2 ** len(spec.dimensions) for spec in CALCULATOR_SPECS)
+    candidate_total = foundational_candidate_total + calculator_candidate_total
+    active_candidate_total = candidate_total - (2 ** len(CALCULATOR_003.dimensions))
+    inventory_hash = load_json(INVENTORY_PATH)["inventory_hash"]
     doi = DOI_PATH.read_text(encoding="utf-8").strip() if DOI_PATH.is_file() else ""
     parts: list[str] = []
     add = parts.append
@@ -186,9 +206,9 @@ def build() -> str:
     add(line("**Maria Smith**<br>"))
     add(line("Independent researcher and founder, Ernos Labs<br>"))
     add(line("Maria.Smith.Sftoe@gmail.com<br>"))
-    add(line("24 July 2026"))
+    add(line("25 July 2026"))
     add(line())
-    add(line("Mathematics Branch Paper 001 - Version 1.1 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
+    add(line("Mathematics Branch Paper 001 - Version 1.2 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
     add(line())
     if doi:
         add(line(f"DOI: [{doi}](https://doi.org/{doi})"))
@@ -202,7 +222,7 @@ def build() -> str:
     add(line("## Abstract"))
     add(line())
     add(line(
-        "This paper reports the completed Mathematics branch of the third clean-room reconstruction of Smithian "
+        "This paper reports the current-evidence-complete Mathematics branch of the third clean-room reconstruction of Smithian "
         "Fold Theory (SFT). Starting only from the sixteen model-admitted Foundation receipts, it derives exact "
         "arithmetic and number structure; discrete mathematics; combinatorics; graph and network theory; algebraic "
         "structures; order and lattice structure; finite computational geometry and topology; exact probability "
@@ -210,19 +230,26 @@ def build() -> str:
         "compositional structure. It then reconciles all Mathematics-owned V1/V2 observations through exact relation "
         "composition, Fold number theory, potential infinity, algebraic-balance certificates, native n-body recurrence, "
         "floored-fluid regularity, bounded prime-pair and Collatz censuses, the Riemann mirror boundary and self-similar "
-        "convergence. No conventional mathematical axiom system, semantic numerical zero, negative "
+        "convergence. Version 1.2 adds the complete Smithian Fold Scientific Calculator: an exact, proof-producing, "
+        "cross-platform application whose ordinary calculator surface is bound to the admitted mathematical laws, "
+        "whose local web interface works on computers and same-network phones, and whose prohibited outputs halt "
+        "transactionally. No conventional mathematical axiom system, semantic numerical zero, negative "
         "quantity, irrational or imaginary proof value, floating-point proof quantity, completed infinity, "
         "ungenerated continuum, stochastic cause, fitted parameter, pretrained model or application result is "
         "admitted as a premise."
     ))
     add(line())
     add(line(
-        f"The twenty-two claim grammars execute {candidate_total:,} generated candidate structures. Every generated "
+        f"The twenty-two foundational claim grammars execute {foundational_candidate_total:,} generated candidate "
+        f"structures. Five calculator records execute a further {calculator_candidate_total:,} structures: the first "
+        "is preserved as superseded adverse evidence after a parity defect was found, and claims 004 through 007 form "
+        f"the corrected active lineage. Across all twenty-seven registered Mathematics records, {candidate_total:,} "
+        f"candidate structures are preserved; the twenty-six current non-superseded claims account for {active_candidate_total:,}. Every generated "
         "candidate receives an exact decision; each grammar has exactly one all-preserving survivor. Every claim "
         "passes minimality, named-shape uniqueness, a depth-independent base/successor certificate, false-premise, "
         "source-tamper, artifact-tamper and boundary controls, cryptographic sealing and implementation-distinct "
-        "recomputation. The branch therefore contains twenty-two depth-independently closed, model-admitted and "
-        "independently replicated engine receipts. The complete 763-entry V1/V2 source surface is reviewed for categorical "
+        "recomputation. The branch therefore contains twenty-seven depth-independent engine receipts with the "
+        "supersession boundary explicit. The complete 763-entry V1/V2 source surface is reviewed for categorical "
         "ownership; 71 atomic Mathematics obligations are reconstructed or explicitly corrected, with none left open."
     ))
     add(line())
@@ -236,24 +263,27 @@ def build() -> str:
         "elimination, control, certificate and receipt evidence."
     ))
     add(line())
-    add(line("**Keywords:** Smithian Fold Theory; foundations of mathematics; exact arithmetic; discrete mathematics; combinatorics; graph theory; algebra; lattice theory; finite topology; probability; optimization; dynamical systems; proof theory; category theory; open computational science."))
+    add(line("**Keywords:** Smithian Fold Theory; foundations of mathematics; exact arithmetic; scientific calculator; computational proof; exact rational enclosure; structural empty One; fail-closed computation; cross-platform software; discrete mathematics; combinatorics; graph theory; algebra; probability; proof theory; open computational science."))
     add(line())
     add(line("## 1. Central scientific claim"))
     add(line())
     add(line("The exact claim of this paper is:"))
     add(line())
     add(line(
-        "> Within the frozen SFT V3 Mathematics current-knowledge inventory, every one of the twenty-two registered "
-        "mathematical-foundation obligations has a depth-independent, model-admitted and independently replicated "
-        "engine receipt; the inventory contains no unclassified or frontier obligation."
+        "> Within the SFT V3 Mathematics version 1.2 current-knowledge inventory, every one of the twenty-two "
+        "mathematical-foundation obligations and every one of the five preserved calculator records has a "
+        "depth-independent engine receipt. Claim 003 remains visibly superseded by the corrected 004 law; claims "
+        "004 through 007 form the active exact calculator lineage. The inventory contains no unclassified or "
+        "frontier obligation at this evidence date and remains open to lawful future extensions."
     ))
     add(line())
     add(line(
-        f"The inventory identity is `{INVENTORY_HASH}`. It fixes the branch boundary and claim order before the "
-        "paper is evaluated. Branch closure means closure of these twenty-two generated-finite mathematical "
-        "kernels. It does not assert a completed infinite universe or permit a familiar named structure to inherit "
+        f"The inventory identity is `{inventory_hash}`. It fixes the version 1.2 branch boundary and claim order before the "
+        "paper is evaluated. Current-evidence completion means closure of these generated-finite mathematical "
+        "kernels and calculator translations. It does not assert a completed infinite universe or permit a familiar named structure to inherit "
         "properties without its own generated witness. Applications in computation, physics, biology, engineering, "
-        "Fold Protein, Fold Chess, Fold Go and Unison AI did not select any law in this paper."
+        "Fold Protein, Fold Chess, Fold Go and Unison AI did not select any law in this paper. A new generated omission, "
+        "counterexample or lawful extension must be registered and published in a later version rather than excluded by a permanent lock."
     ))
     add(line())
     add(line("## 2. Standalone dependency foundation"))
@@ -323,10 +353,19 @@ def build() -> str:
     add(line())
     add(line("| Order | Claim | Candidate structures | Dimensions | Closure |"))
     add(line("|---:|---|---:|---:|---|"))
-    for index, spec in enumerate(SPECS, 1):
+    for index, spec in enumerate(FOUNDATIONAL_SPECS, 1):
         add(line(f"| {index} | `{spec.claim_id}` | {2 ** len(spec.dimensions):,} | {len(spec.dimensions)} | depth-independent |"))
+    for index, spec in enumerate(CALCULATOR_SPECS, len(FOUNDATIONAL_SPECS) + 1):
+        status = "depth-independent; superseded adverse evidence" if spec.claim_id.endswith("-003") else "depth-independent; current"
+        add(line(f"| {index} | `{spec.claim_id}` | {2 ** len(spec.dimensions):,} | {len(spec.dimensions)} | {status} |"))
     add(line())
-    add(line(f"The Mathematics total is **{candidate_total:,}** generated structures and twenty-two survivors. Foundation plus Mathematics contain 38 admitted derivations and 15,206 generated candidate structures across the two closed branches."))
+    add(line(
+        f"The version 1.2 Mathematics evidence surface preserves **{candidate_total:,}** generated structures across "
+        "twenty-seven registered records. The twenty-two foundational claims contribute 9,984; the calculator lineage "
+        "contributes 11,520. Claim 003 is retained as the exact historical record superseded after the endpoint-parity "
+        "defect was found; it is not counted as a current law. Claims 004 through 007 and the original twenty-two claims "
+        "form the twenty-six current non-superseded results."
+    ))
     add(line())
     add(line(
         "The finite product count reports representation classes executed by the registered claim grammars. It is "
@@ -335,7 +374,7 @@ def build() -> str:
     ))
 
     section = 6
-    for order, spec in enumerate(SPECS, 1):
+    for order, spec in enumerate(FOUNDATIONAL_SPECS, 1):
         package = ROOT / "claims" / spec.claim_id
         registration = load_json(package / "registration.json")
         certificate = load_json(package / "certificate.json")
@@ -441,6 +480,265 @@ def build() -> str:
         section += 1
 
     add(line())
+    add(line(f"## {section}. Version 1.2 extension: the Smithian Fold Scientific Calculator"))
+    add(line())
+    add(line(
+        "The calculator is not a conventional floating-point calculator carrying SFT labels. It is an executable "
+        "translation of the admitted Mathematics value law. Familiar keys and notation form a human boundary; every "
+        "accepted expression is parsed into exact SFT runtime types, every operation is routed through one exact evaluator, "
+        "and every result that would require a prohibited scalar halts before it can enter the answer, memory or history. "
+        "The browser surface contains no arithmetic implementation."
+    ))
+    add(line())
+    add(line(
+        "Five claim records are included because transparent correction is part of the scientific result. Claim 003 "
+        "passed its declared grammar but a later operational audit found reversed odd/even endpoints in one alternating "
+        "arctangent enclosure. Its artifacts and receipt remain preserved as superseded adverse evidence. Claim 004 "
+        "re-derived the core with corrected endpoint parity and an exact tangent-composition check. Claim 005 extended "
+        "that core to the declared scientific-calculator language and stateful application. Claim 006 completed the "
+        "calculator-first app, law explorer, resource controls and active-file coverage. Direct manual testing then exposed "
+        "a blank deprecated desktop widget on macOS and usability failures on phones. Claim 007 held the claim-006 evaluator "
+        "immutable and forced the accessible standards-rendered local web adapter."
+    ))
+
+    for extension_index, spec in enumerate(CALCULATOR_SPECS, 1):
+        package = ROOT / "claims" / spec.claim_id
+        registration = load_json(package / "registration.json")
+        certificate = load_json(package / "certificate.json")
+        controls = load_json(package / "controls.json")["controls"]
+        census = load_json(package / "candidate_census.json")
+        add(line())
+        add(line(f"### {section}.{extension_index} {spec.title}"))
+        add(line())
+        add(line(f"Claim identity: `{spec.claim_id}`"))
+        add(line())
+        if spec.claim_id == "SFT-MATH-SCIENTIFIC-CALCULATOR-003":
+            add(line(
+                "Publication status: `superseded_adverse_evidence`. The original machine receipt is preserved, but this "
+                "claim is not the active calculator law. Its later-discovered parity defect is the reason claim 004 was "
+                "derived independently rather than mutating claim 003."
+            ))
+        else:
+            add(line(f"Publication status: `{registration['status']}`; current versioned calculator lineage."))
+        add(line())
+        add(line("**WHY.** " + spec.why))
+        add(line())
+        add(line("**DERIVATION.** " + spec.derivation))
+        add(line())
+        add(line("**CHECK.** " + spec.check))
+        add(line())
+        add(line("Exact statement:"))
+        add(line())
+        add(line(f"> {spec.statement}"))
+        add(line())
+        add(line(f"Dependencies: {', '.join(f'`{value}`' for value in spec.dependencies)}."))
+        add(line())
+        add(line(f"Grammar boundary: {spec.grammar_boundary}"))
+        add(line())
+        add(line(f"Generation rule: {spec.generation_rule}"))
+        add(line())
+        add(line(
+            f"The complete Cartesian product contains {census['expected_cardinality']:,} candidate forms and has "
+            f"completeness identity `{census['completeness_certificate_hash']}`. Every coordinate is shown below; the "
+            "candidate census and elimination receipt preserve every product member and decision."
+        ))
+        add(line())
+        add(line("| Axis | Rejected coordinate and reason | Forced coordinate and reason |"))
+        add(line("|---|---|---|"))
+        for dimension in spec.dimensions:
+            rejected = next(choice for choice in dimension.choices if not choice.admitted)
+            admitted = dimension.admitted_choice
+            add(line(
+                f"| `{dimension.key}` | `{rejected.name}` - {rejected.reason} | "
+                f"`{admitted.name}` - {admitted.reason} |"
+            ))
+        add(line())
+        add(line("Unique survivor and exact result:"))
+        add(line())
+        add(line(f"> {publication_text(spec.exact_result)}"))
+        add(line())
+        add(line(
+            "Replacing any forced coordinate by its enumerated alternative loses a registered requirement; adding an "
+            "undeclared rule violates the no-extra-rule boundary. The unique product survivor therefore closes the declared "
+            "grammar by minimality and named-shape uniqueness. Its operational laws are:"
+        ))
+        add(line())
+        for law in spec.laws:
+            add(line(f"- {law}."))
+        add(line())
+        add(line("Executed witnesses:"))
+        add(line())
+        for witness in spec.witnesses:
+            add(line(f"- `{witness.name}` - {witness.statement} Result: `{'PASS' if witness.passed else 'FAIL'}`."))
+        add(line())
+        add(line("Adverse controls:"))
+        add(line())
+        for control in controls:
+            add(line(
+                f"- `{control['kind']}` - expected: {control['expected_behavior']} Observed: "
+                f"{control['observed_behavior']} Result: `{'PASS' if control['passed'] else 'FAIL'}`; "
+                f"receipt `{control['receipt_hash']}`."
+            ))
+        add(line())
+        add(line(f"Depth-independent base: {spec.induction_base}"))
+        add(line())
+        add(line(f"Depth-independent successor: {spec.induction_step}"))
+        add(line())
+        add(line("Exact exclusions:"))
+        add(line())
+        for exclusion in spec.boundary_exclusions:
+            add(line(f"- {exclusion}."))
+        add(line())
+        add(line(f"Limitation: {spec.limitations}"))
+        add(line())
+        add(line("Evidence identities:"))
+        add(line())
+        add(line(f"- Source manifest: `{certificate['source_manifest_hash']}`."))
+        add(line(f"- Derivation seal: `{certificate['derivation_seal_hash']}`."))
+        add(line(f"- Independent implementation: `{certificate['independent_implementation_hash']}`."))
+        add(line(f"- Independent certificate: `{certificate['independent_certificate_hash']}`."))
+        add(line(f"- External validation: `{certificate['external_validation_hash']}`."))
+        add(line(f"- Engine receipt: `{certificate['engine_receipt_hash']}`."))
+        add(line(f"- Engine receipt path: `{certificate['engine_receipt_path']}`."))
+
+    add(line())
+    add(line(f"### {section}.6 Exact value translation and fail-closed semantics"))
+    add(line())
+    add(line("| Familiar surface | Exact calculator meaning | Boundary behavior |"))
+    add(line("|---|---|---|"))
+    add(line("| `0` | structural empty One | displayable and usable as the empty/identity form; never stored as a conventional numerical-zero proof scalar |"))
+    add(line("| positive integer or decimal | exact positive whole or rational Fold part, parsed character by character | no binary floating conversion is admitted |"))
+    add(line("| subtraction with a nonnegative result | exact trace pairing and retained forward remainder | cancellation displays `0` with empty-One semantics |"))
+    add(line("| subtraction whose result crosses below empty One | prohibited negative/counter-held numeric result | transactional `HALT`; prior answer, memory and history are restored |"))
+    add(line("| exact rational root or function result | exact Fold scalar | exact numerator/denominator retained |"))
+    add(line("| non-rational correspondence such as `sqrt(2)` | certified rational lower and upper bounds plus replay trace | no irrational decimal is promoted to a scalar |"))
+    add(line("| orthogonal correspondence | typed real and orthogonal Fold fibres | no imaginary scalar or silent complex promotion |"))
+    add(line("| undefined domain, singularity, exhausted resource or unclosed certificate | no admitted result | mandatory `HALT`; no NaN or infinity |"))
+    add(line())
+    add(line(
+        "This distinction is why `1-1` may visibly return `0` while `1-4` must halt. The first is a structural empty result. "
+        "The second would require a prohibited scalar to be admitted as the calculator answer. Claim 007 snapshots the complete "
+        "controller state before every action and restores that snapshot if answer, memory or any history row contains a "
+        "counter-held scalar. The rejected expression and explanation remain visible, but the prohibited value does not."
+    ))
+
+    add(line())
+    add(line(f"### {section}.7 Declared calculation language"))
+    add(line())
+    add(line(
+        "The expression grammar accepts exact integers, decimal and scientific notation, parentheses, addition, subtraction, "
+        "multiplication, division, powers, postfix factorial and percent, and optional terminal equals. It supports result "
+        "chaining, `Ans`, memory clear/recall/store/add/subtract, ordered history, clear-entry, all-clear, backspace and explicit "
+        "RAD, DEG and GRAD angle modes. Every button and typed expression reaches the same evaluator."
+    ))
+    add(line())
+    add(line("The declared scientific functions are:"))
+    add(line())
+    add(line("```text"))
+    add(line("abs recip sqrt cbrt root pow"))
+    add(line("sin cos tan asin acos atan"))
+    add(line("sinh cosh tanh asinh acosh atanh"))
+    add(line("exp ln log log10 log2"))
+    add(line("ncr npr complex conj"))
+    add(line("sum prod mean variance stddev"))
+    add(line("floor ceil gcd lcm mod hypot"))
+    add(line("```"))
+    add(line())
+    add(line(
+        "Constants and retained state are `pi`, `tau`, `e`, `phi`, `empty`, `ans` and `mem`. Circle, exponential, "
+        "logarithmic, inverse and hyperbolic operations are not delegated to opaque host transcendental functions. They "
+        "produce exact rational enclosure objects with finite recurrence evidence. Large circular inputs undergo exact "
+        "whole-turn reduction before enclosure, preventing magnitude from silently exhausting the recurrence. Operation "
+        "limits and requested display precision are counted interface/resource boundaries; they do not tune a mathematical law."
+    ))
+
+    add(line())
+    add(line(f"### {section}.8 One evaluator, three operating systems and same-network phones"))
+    add(line())
+    add(line(
+        "The current public application uses only Python's standard library and an installed standards-compliant browser. "
+        "The local server binds to the machine's local network by default, advertises the phone URL, and offers an explicit "
+        "private mode. Each page load receives a fresh controller identity; one visitor cannot inherit another visitor's "
+        "answer, memory or history. A request token and page-session identifier bind local actions, requests are size bounded, "
+        "responses disable storage, and the content-security policy prevents external script or content dependencies."
+    ))
+    add(line())
+    add(line(
+        "The visible standard pad is always six rows of four keys. Memory controls are a separate five-key row and thirty-five "
+        "scientific controls remain a separate seven-by-five organisation, giving sixty-four controls exactly once. On phone "
+        "widths the standard pad appears first and scientific functions are disclosed by one button. Keypad taps do not focus "
+        "the expression field or summon the software keyboard; the keyboard opens only when the user deliberately taps the "
+        "editable expression. The layout was rendered and exercised at a 390-by-844 phone viewport without horizontal overflow."
+    ))
+    add(line())
+    add(line("Launch routes:"))
+    add(line())
+    add(line("```text"))
+    add(line("python3 -m sft.mathematics.calculator_browser"))
+    add(line("calculator_launchers/Launch Smithian Fold Calculator.command   # macOS"))
+    add(line("calculator_launchers/Launch Smithian Fold Calculator.bat       # Windows"))
+    add(line("calculator_launchers/launch-smithian-fold-calculator.sh         # Linux"))
+    add(line("```"))
+
+    add(line())
+    add(line(f"### {section}.9 Verification, coverage and direct-use evidence"))
+    add(line())
+    add(line(
+        "Claim 006 records 1,869 executable statements and 696 branches across its declared active calculator implementation, "
+        "all covered with no missing statement, branch or partial branch. Claim 007 records 293 executable statements and "
+        "86 branches across the active browser adapter, again with no missing statement, branch or partial branch. These are "
+        "statement-and-branch coverage facts over the declared files, not a claim that every physical browser or device in "
+        "existence has been tested."
+    ))
+    add(line())
+    add(line(
+        "The executed checks cover exact values; every operation and parser branch; invalid domains and resource exhaustion; "
+        "expression-machine, session, memory and history integration; pure controller state; command-line execution; operating-"
+        "system launchers; server API behavior; request bounds and authorization; fresh-session isolation; full control "
+        "partition; semantic page structure; phone reflow and focus behavior; exact interval presentation; negative-result "
+        "rollback; and implementation-distinct HTTP replay. Direct use supplied an additional unfavorable route: the first "
+        "desktop widget visibly opened blank even though hidden geometry tests passed. That failure is preserved in the 007 "
+        "false-premise control and is why the standards-rendered route, rather than the deprecated widget path, survives."
+    ))
+    add(line())
+    add(line("Representative end-to-end outcomes:"))
+    add(line())
+    add(line("| Input | Visible outcome | Exact significance |"))
+    add(line("|---|---|---|"))
+    add(line("| `1+1` | `2` | exact disjoint-junction result |"))
+    add(line("| `1-1` | `0` | structural empty One |"))
+    add(line("| `1-4` | `HALT` | prohibited negative result rejected transactionally, history unchanged |"))
+    add(line("| `0.1+0.2` | `3/10` or its familiar exact display | decimal characters translated to exact rational parts |"))
+    add(line("| `sqrt(2)` | certified rational interval | no `1.414...` scalar and no approximation glyph in proof output |"))
+    add(line("| `complex(2,3)` | real and orthogonal Fold fibres | typed composition, not an imaginary proof scalar |"))
+
+    add(line())
+    add(line(f"### {section}.10 Proof output, engine boundary and lawful transfer"))
+    add(line())
+    add(line(
+        "A calculator result carries its exact expression, typed result, rational numerator/denominator or enclosure bounds, "
+        "certificate, complete operation trace, tokens read, operations executed, calculator claim dependency and official "
+        "calculator receipt identity. That output is computational evidence that an admitted calculation law evaluated the "
+        "given expression. It is not, by itself, a receipt admitting a new theorem or scientific claim."
+    ))
+    add(line())
+    add(line(
+        "A researcher may transfer the exact expression, result object and trace into a proposed claim package, but official "
+        "admission still requires a registered statement and dependencies, complete candidate generation, uniqueness, "
+        "minimality, adverse controls, independent validation, execution through the untouched `SFTAdmissionEngine` and the "
+        "engine-issued receipt. The calculator cannot mint that receipt and does not call or modify the engine. Version 1.2 "
+        "does not claim a one-click source-bound evidence-export/replay bridge; that would be a separate lawful extension. "
+        "This boundary prevents a useful calculation tool from becoming a shadow admission route."
+    ))
+    add(line())
+    add(line(
+        "The frozen engine tree remains `ad30f4866c18b2adbade95a0b2de40d5caa61308`. The calculator work did not alter "
+        "that tree. Claims 006 and 007 are immutable admitted dependencies at their recorded source identities; future "
+        "calculator work must use a new claim and cannot rewrite either receipt."
+    ))
+    section += 1
+
+    add(line())
     add(line(f"## {section}. Complete V1/V2 Mathematics reconciliation"))
     add(line())
     add(line(
@@ -452,7 +750,7 @@ def build() -> str:
     add(line())
     add(line(
         "The Mathematics ledger identifies 71 owned atomic obligations across 29 V1 rows and 38 V2 steps. Every atom maps "
-        "to one or more of the twenty-two admitted receipts and every mapping is closed. The remaining 327 V1 rows and 369 "
+        "to one or more of the twenty-two foundational receipts and every mapping is closed. The remaining 327 V1 rows and 369 "
         "V2 steps are recorded in an exact exclusion identity as reviewed non-Mathematics entries, not silently ignored. The "
         "authoritative file is `census/mathematics_prior_obligations.json`."
     ))
@@ -481,7 +779,7 @@ def build() -> str:
     add(line(f"## {section}. Cross-derivation synthesis"))
     add(line())
     add(line(
-        "The twenty-two theorems form one dependency chain rather than a list of renamed fields. Exact arithmetic gives "
+        "The twenty-two foundational theorems form one dependency chain rather than a list of renamed fields. Exact arithmetic gives "
         "lawful trace junction, pair-cell product, refinement and comparison. Discrete mathematics turns those operations "
         "into canonical carriers, selections, relations, maps and induction. Combinatorics then generates complete "
         "families of choices; graph theory holds a relation from complete pair support and promotes it to path, cycle, "
@@ -569,7 +867,8 @@ def build() -> str:
     add(line(f"## {section}. Formal proof versus empirical validation"))
     add(line())
     add(line(
-        "These twenty-two claims are formal structural theorems or exhaustive finite mathematical censuses. Their empirical content is computational execution: the "
+        "The twenty-two foundational claims and five calculator records are formal structural theorems, exhaustive finite "
+        "mathematical censuses or executable translations. Their empirical content in this paper is computational execution and direct interface testing: the "
         "candidate products are actually generated, decisions actually run, controls are deliberately perturbed, separate "
         "validator processes execute and receipts are independently replayed. This execution evidence demonstrates that "
         "the declared finite grammars and certificates have the reported machine behavior. It is not observational evidence "
@@ -606,9 +905,11 @@ def build() -> str:
     add(line())
     add(line("```text"))
     add(line("MATHEMATICS PRIOR-OBLIGATION LEDGER: 71/71 CLOSED"))
-    add(line("MATHEMATICS MODEL-ADMITTED CLAIMS: 22/22"))
-    add(line("MATHEMATICS GENERATED CANDIDATES: 9,984"))
-    add(line("NEW SUCCESSOR CLAIMS OFFICIALLY ADMITTED: 10/10"))
+    add(line("MATHEMATICS REGISTERED CLAIM RECORDS: 27/27"))
+    add(line("MATHEMATICS CURRENT NON-SUPERSEDED CLAIMS: 26"))
+    add(line("MATHEMATICS GENERATED CANDIDATES PRESERVED: 21,504"))
+    add(line("CALCULATOR CLAIMS 004 THROUGH 007: CURRENT"))
+    add(line("CALCULATOR CLAIM 003: PRESERVED SUPERSEDED ADVERSE EVIDENCE"))
     add(line("BRANCH PUBLICATION GATE: run once after final render"))
     add(line("```"))
     add(line())
@@ -640,7 +941,7 @@ def build() -> str:
     add(line(f"## {section}. Consequences for the remaining knowledge tree"))
     add(line())
     add(line(
-        "The completed branch supplies the exact resources the next branch may cite: symbols can be canonical distinguished "
+        "The current-evidence-complete branch supplies the exact resources downstream branches may cite: symbols can be canonical distinguished "
         "forms; encodings can be complete maps; information quantity can be an exact relation between support distinctions "
         "and observation; channels can be relations; entropy and uncertainty must respect deterministic support and exact "
         "parts; coding can use combinatorial word families, graph paths and algebraic operations. None of those downstream "
@@ -656,10 +957,10 @@ def build() -> str:
     ))
     section += 1
     add(line())
-    add(line(f"## {section}. Scope, limitations and next branch"))
+    add(line(f"## {section}. Scope, limitations and lawful extension"))
     add(line())
     add(line(
-        "Closure is exact at the frozen generated-finite Mathematics boundary. It does not assert a completed universe of "
+        "Current-evidence completion is exact at the versioned generated-finite Mathematics boundary. It does not assert a completed universe of "
         "all sets, a real or complex continuum, an infinite-dimensional space or every named theorem of conventional "
         "mathematics. It derives the general structural kernels needed to generate and test finite exact instances. Named "
         "special structures must still expose their carrier and property evidence. Continuum expressions can enter only "
@@ -667,10 +968,10 @@ def build() -> str:
     ))
     add(line())
     add(line(
-        "No official natural empirical claim is made in this branch. No application experiment has been used. The next "
-        "dependency branch is Information Science: symbols and distinguishability, encoding and decoding, information "
-        "quantity, entropy and uncertainty, compression, channels and capacity, noise and error, coding, mutual and "
-        "conditional information, and classical-probabilistic-quantum information correspondence."
+        "No official natural empirical claim is made in this branch. The calculator is an executable mathematical "
+        "translation and validation surface, not a natural-data experiment. Information Science and the computation branches "
+        "have their own later papers and receipts; after this Mathematics 1.2 publication the active clean-room programme "
+        "returns to Physics. None of those downstream results can retroactively select a Mathematics law."
     ))
     section += 1
     add(line())
@@ -733,8 +1034,9 @@ def build() -> str:
     add(line(f"## {section}. Conclusion"))
     add(line())
     add(line(
-        f"The Mathematics branch closes twenty-two dependency-ordered kernels through {candidate_total:,} generated alternatives, "
-        "twenty-two unique survivors, twenty-two depth-independent certificates and twenty-two implementation-distinct validations. "
+        f"The Mathematics version 1.2 evidence surface preserves twenty-seven dependency-ordered records through {candidate_total:,} "
+        "generated alternatives. Twenty-two foundational claims and calculator claims 004 through 007 are current; calculator "
+        "claim 003 remains preserved as superseded adverse evidence after its operational parity defect was found. "
         "It reconstructs exact arithmetic, finite discrete and combinatorial structure, relations and graphs, witnessed "
         "algebra and order, computational geometry and topology, deterministic-support probability, optimization, dynamics, "
         "proof and composition without importing conventional answer-producing models."
@@ -751,7 +1053,7 @@ def build() -> str:
     add(line())
     add(line("| Claim | Engine receipt |"))
     add(line("|---|---|"))
-    for spec in SPECS:
+    for spec in ALL_PAPER_SPECS:
         certificate = load_json(ROOT / "claims" / spec.claim_id / "certificate.json")
         add(line(f"| `{spec.claim_id}` | `{certificate['engine_receipt_hash']}` |"))
     add(line())
@@ -767,12 +1069,13 @@ def build() -> str:
     add(line("claims/<CLAIM>/controls.json"))
     add(line("claims/<CLAIM>/certificate.json"))
     add(line("claims/<CLAIM>/execution.py"))
-    add(line("claims/<CLAIM>/independent_validator.py"))
+    add(line("generated/<BRANCH>/<VERSIONED-INDEPENDENT-VALIDATOR>.py"))
     add(line("receipts/engine/model_admitted/<CLAIM>-<receipt-prefix>.json"))
     add(line("```"))
     add(line())
     add(line(
-        "Executable law sources are under `sft/mathematics/`. `sft/mathematics/catalog.py` fixes dependency order. "
+        "Executable law sources are under `sft/mathematics/`. `sft/mathematics/catalog.py` fixes the foundational and "
+        "calculator-kernel order; the versioned claim registrations and execution manifest retain the 007 presentation extension. "
         "`census/claims.json` is the model-admitted projection; `census/execution_manifest.json` is the complete replay "
         "order; `publications/inventories/mathematics.json` freezes scope. The separate paper evidence map binds every "
         "derivation section to exact source, claim-package and receipt hashes."
