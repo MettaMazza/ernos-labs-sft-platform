@@ -229,6 +229,7 @@ V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "G10": ("SFT-MATH-BOUNDED-N-BODY-002", "SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003"),
     "G14": ("SFT-MATH-BOUNDED-N-BODY-002",),
     "G15": ("SFT-MATH-FLOORED-FLUID-REGULARITY-002", "SFT-PHYS-FLUID-TURBULENCE-001"),
+    "E3": ("SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",),
     "G13": ("SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001", "SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001"),
     "G12": ("SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004", "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004"),
     "XVIII-6": ("SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004", "SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004"),
@@ -435,9 +436,9 @@ V2_CLAIM_OVERRIDES: dict[int, tuple[str, ...]] = {
 # RECENTLY_VERIFIED: none can close until its recorded remaining work is done.
 REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
     "E3": {
-        "formal_same_strength_status": "partial",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "The odd-denominator live-cycle theorem and vacuum-floor comparison are sealed, but the prior all-region occupancy census and its measured recurrence vector are not yet present as one versioned claim.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; every positive finite odd complete lattice is permuted by the binary Fold, so every complete positive-region occupancy vector is invariant at every positive Fold depth, retains complete membership and occupies every region when region count does not exceed member count. Both byte-identical V1 E3 source files open only after the V3 prediction seal; the independent exact-rational reconstruction retains the full 255-member, twelve-step, eight-region vector (32,32,32,32,32,32,32,31), its total and its first/eleventh-step adverse comparisons.",
     },
     "E4": {
         "formal_same_strength_status": "versioned_successor_required",
@@ -1455,7 +1456,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

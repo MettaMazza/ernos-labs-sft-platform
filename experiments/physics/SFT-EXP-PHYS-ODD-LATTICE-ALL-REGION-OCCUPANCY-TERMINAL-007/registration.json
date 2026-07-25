@@ -1,0 +1,54 @@
+{
+  "claim_id": "SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",
+  "comparison_protocol": "exact rational re-execution by an implementation importing neither claimant nor frozen V1 code; full-vector, total, coverage, depth-invariance and adverse-boundary checks",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",
+  "falsification_condition": "Reject if either frozen V1 source identity changes; if the original E3 inputs, status, observation or acceptance rule are omitted or altered; if the independently measured complete recurrence vector changes with positive Fold depth; if any released region is empty despite region count not exceeding the odd complete-lattice count; if total occupancy differs from complete lattice membership; if the general odd-lattice permutation or positive-depth successor certificate fails; or if the historical target or result enters the claimant before its prediction seal.",
+  "frozen_relation": "Every complete positive odd lattice is permuted by the binary Fold; every complete positive-region occupancy vector is therefore invariant at every positive Fold depth, totals the lattice membership and occupies every region whenever the region count does not exceed the member count.",
+  "prediction_program": {
+    "instructions": [
+      {"arguments": ["sample_member_count"], "destination": "sample_member_count", "opcode": "input"},
+      {"arguments": ["sample_region_count"], "destination": "sample_region_count", "opcode": "input"},
+      {"arguments": ["sample_first_region_count"], "destination": "sample_first_region_count", "opcode": "input"},
+      {"arguments": ["sample_second_region_count"], "destination": "sample_second_region_count", "opcode": "input"},
+      {"arguments": ["lattice_relation"], "destination": "lattice_relation", "opcode": "input"},
+      {"arguments": ["Fold_relation"], "destination": "Fold_relation", "opcode": "input"},
+      {"arguments": ["observation_relation"], "destination": "observation_relation", "opcode": "input"},
+      {"arguments": ["depth_relation"], "destination": "depth_relation", "opcode": "input"},
+      {"arguments": ["coverage_relation"], "destination": "coverage_relation", "opcode": "input"},
+      {
+        "arguments": [
+          "sample_member_count",
+          "sample_region_count",
+          "sample_first_region_count",
+          "sample_second_region_count",
+          "lattice_relation",
+          "Fold_relation",
+          "observation_relation",
+          "depth_relation",
+          "coverage_relation"
+        ],
+        "destination": "prediction",
+        "opcode": "word"
+      },
+      {"arguments": ["prediction"], "destination": "", "opcode": "emit"}
+    ],
+    "program_id": "SFT-EXP-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007-exact-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "protocol": "observational-data-informed_target-inaccessible_sealed-replication",
+  "registered_by": "Maria Smith",
+  "row_retention_policy": "both complete frozen V1 source files, every original line, all three released counts, the original status and acceptance rule, and every coordinate of the independently measured vector",
+  "schema": "sft-v3-odd-lattice-all-region-experiment/1",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/odd-lattice-all-region-source-record.json": "sha256:9ea9421a47a6945d08915e0bdc03ec96b89e981718d99a84fe1ceae9e118cbfc",
+    "experiments/external_sources/physics/snapshots/sftom-v1-e3-claims-emergence.py": "sha256:627f1a340d656cf744449f3e7542ee6040a72766ba912c8ac4edb6149cdca446",
+    "experiments/external_sources/physics/snapshots/sftom-v1-e3-density.py": "sha256:a4fdd45d43307d7a5ecf0bcc2cdca68b5290da48f8c4ce1c0abf33bcf22d397b"
+  },
+  "source_id": "SFTOM-V1-E3-EXACT-OBSERVATION",
+  "source_ids": ["SFTOM-V1-E3-EXACT-OBSERVATION"],
+  "source_record_hash": "sha256:9ea9421a47a6945d08915e0bdc03ec96b89e981718d99a84fe1ceae9e118cbfc",
+  "source_record_path": "experiments/external_sources/physics/snapshots/odd-lattice-all-region-source-record.json",
+  "target_access_policy": "capability-closed prediction; release only after matching seal",
+  "withheld_target_ids": ["SFTOM-V1-E3-WITHHELD-EXACT-OBSERVATION"]
+}

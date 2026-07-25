@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007",
+  "controls": [
+    {
+      "expected_behavior": "Reject a nonpermuting residue rule.",
+      "kind": "false_premise",
+      "observed_behavior": "The deliberate nonpermutation loses complete support.",
+      "passed": true,
+      "receipt_hash": "sha256:047005037f2381c91895630630c1f6379614c36210bb6134ad9c99bb45e485f1"
+    },
+    {
+      "expected_behavior": "Reject a changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:f9cc802fda9684abe9042aa128f74d5f9a2c098b1846a200fdb61bd404bf4775"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidate identities.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The complete product has unique identities.",
+      "passed": true,
+      "receipt_hash": "sha256:f8ab5596c700dead84f72de6044f4023b122da6a24c0a8e1bbb6833779ed2a8e"
+    },
+    {
+      "expected_behavior": "Reject pre-seal target access and a free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Sealed custody and empty extension are forced.",
+      "passed": true,
+      "receipt_hash": "sha256:90d112d709b62a1c043a10493f170533fec5e7b22a55c597854a55b009ec6d63"
+    }
+  ]
+}

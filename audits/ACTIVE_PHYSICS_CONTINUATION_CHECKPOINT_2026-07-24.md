@@ -1368,3 +1368,63 @@ reopened. The next still-open V1 Physics obligation in the regenerated ledger
 is E3: reconstruct the all-region live-cycle occupancy census and complete
 measured recurrence vector as one versioned claim, without reopening the sealed
 odd-denominator live-cycle theorem or vacuum-floor comparison.
+
+45. V1 E3 is now closed and must not be reopened or regenerated after
+    conversation compaction:
+   - `SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007`, engine receipt
+     `sha256:185a5dfb16ba14910625b0e2e94a894e7f422cf8dfe65f824ab4f9f5759b07fe`;
+   - derivation seal
+     `sha256:7428718697ab3ad78dcc7d9b4b4b1ac2e439f159d444ad22c956903f8deb3372`;
+   - independent validation
+     `sha256:0dea9b70fb2495b3535ac3ed38aad3ffe5393ba88a942bf71c6158c70a33cb3f`;
+   - independent certificate
+     `sha256:964a744645d5e30ed8fbcd09732879d7b17a14e0ab40c432e80d31629cddfd3c`;
+   - independent implementation
+     `sha256:46c0f105c76584c7a483e0fb51e60842229e45a7edab165d4dd56d0956544621`;
+   - empirical validation
+     `sha256:bfd7812d12c91cd25d2c88b7060362652e29a4fd85dfa1f6cfc7ec0a741a9f52`;
+   - measurement receipt
+     `sha256:d594ef374830c0bbaaa7fa872e2bc62d0e69e1559739e76bc3c0618b335f6140`;
+   - source manifest
+     `sha256:bbd11bf580cae4c188a2924b2e35b24ae133985ae39d858462d1f54e9b8e6c8f`;
+   - completeness certificate
+     `sha256:8e915b61ceff24482c91c46919a499a5467ce58e16bcdbd2153064ca824e4e10`.
+
+The formal claimant contains no V1 source locator, historical lattice size,
+Fold count, region count, measured vector, stored expected survivor or
+submission-controlled admission flag. Its complete eight-axis product contains
+2,916 forms and one engine-computed survivor. For every positive finite odd
+complete lattice, equality of two binary-Fold images would make the odd lattice
+count divide twice a strict sub-lattice index gap. Coprimality with the binary
+fibre then makes it divide the gap, forcing identical sources. The finite image
+has complete source cardinality, so the Fold is a permutation. Every positive
+successor remains a permutation; complete region tallies depend on membership,
+not order, so the exact occupancy vector is depth-invariant. Every region is
+occupied whenever the positive region count does not exceed complete lattice
+membership.
+
+Only after sealing did the immutable V1 target open. Both original source files
+are retained byte-for-byte at hashes
+`627f1a340d656cf744449f3e7542ee6040a72766ba912c8ac4edb6149cdca446`
+and
+`a4fdd45d43307d7a5ecf0bcc2cdca68b5290da48f8c4ce1c0abf33bcf22d397b`.
+They were not imported or executed. An implementation importing neither V1 nor
+the V3 claimant independently reconstructed their explicit exact-rational
+procedure. The complete 255-member lattice after twelve Fold steps over eight
+regions gives exactly `(32,32,32,32,32,32,32,31)`. All eight regions are
+occupied, the vector totals 255, and the first-, eleventh- and twelfth-step
+vectors agree. This reproduces the old finite observation and strengthens it to
+the admitted depth-independent law without allowing the target to select it.
+
+The five focused tests passed once. The untouched official coordinator admitted
+the claim on one execution, and the standard non-persisting materializer then
+reproduced the identical receipt once. No engine or protocol file changed. The
+frozen engine tree remains
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+
+The live inheritance ledger is now 324 same-strength closed and 174 open, with
+51 mapped open and 123 unmapped open. V1 E3 has no remaining work at its
+declared boundary. The next still-open V1 Physics obligation is E4: force the
+coupled-ensemble one-region synchronization boundary and compare its complete
+registered recurrence vector without reopening the already sealed half-One
+coupling law.
