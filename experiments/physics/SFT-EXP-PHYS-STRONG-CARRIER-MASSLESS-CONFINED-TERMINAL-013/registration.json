@@ -1,0 +1,98 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "experiment_id": "SFT-EXP-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013",
+  "claim_id": "SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013",
+  "evidence_mode": "observational_derivation",
+  "protocol": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "formal_prediction_commit": "5cc20feeaa53a7ecfba3208a2f60f70af36c3d4a",
+  "development_observations": [
+    {
+      "source_id": "V1-D10F-STRONG-CARRIER-JOINT-LAW",
+      "role": "development_only",
+      "content_hash": "sha256:05c7c285e87720c0b22a69cc69b07cdd9749a1aa1728afd934e1ed9f7c30ce93"
+    },
+    {
+      "source_id": "TEN-ADMITTED-V3-PREREQUISITES",
+      "role": "admitted_prerequisites",
+      "content_hash": "sha256:35ad7c9c5a5a3c412c7e2a1eb26b9b06e68f2a596d74ea531293c265c9884a2c"
+    }
+  ],
+  "external_measurement_sources": [
+    {
+      "source_id": "PDG-2026-GLUON-LISTING",
+      "source_uri": "https://pdg.lbl.gov/encoder_listings/g021.pdf",
+      "snapshot_hash": "sha256:fcc152780d2efb6cb66d2f9351abd034d30cab0e914fd87a0daee46a0344353d",
+      "custody_role": "withheld_target"
+    },
+    {
+      "source_id": "PDG-2026-QCD-REVIEW",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-qcd.pdf",
+      "snapshot_hash": "sha256:c04c628d76b18610c5fa2a919c6081918a25b55fb971b6af5829f4ca2baa386f",
+      "custody_role": "withheld_target"
+    },
+    {
+      "source_id": "PDG-2026-QUARK-MODEL-REVIEW",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-quark-model.pdf",
+      "snapshot_hash": "sha256:6aa98fa53857122f27b638c59081af1a2857d787c4205370d8fa38fcb6b70ff0",
+      "custody_role": "withheld_target"
+    }
+  ],
+  "frozen_relation": {
+    "statement": "Three colour labels and eight carriers, empty mass/rest-capture, One-cell phase propagation, colour self-source, fixed half-One tube and positive two-thirds work successor jointly force local masslessness and asymptotic confinement.",
+    "target_did_not_select_law": true
+  },
+  "withheld_targets": [
+    {
+      "target_id": "D10F-WITHHELD-HISTORICAL-PREREQUISITE-AND-PDG-RECORD",
+      "source_id": "D10F-STRONG-CARRIER-MASSLESS-CONFINED-COMPARISON",
+      "content_withheld_from_prediction": true
+    }
+  ],
+  "prediction_protocol": {
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ]
+  },
+  "evaluation_protocol": {
+    "metrics": [
+      {
+        "metric_id": "strong-carrier-structure-mass-confinement-and-scope-vector",
+        "all_rows": true
+      }
+    ],
+    "acceptance_condition": "Exact three/eight carrier structure, empty mass/rest record, One-speed trace, fixed tube, arbitrary positive-bound confinement, all source rows, theoretical-mass qualification and measured colour-factor intervals pass without fitting, forbidden scalar or target selection.",
+    "falsification_condition": "Any changed source, omitted row, failed exact joint identity, observed isolated coloured state, measured colour-factor interval excluding its registered expectation, misreported theoretical mass classification, fitted value, free correction or pre-seal target access rejects."
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "kind": "boundary"
+    }
+  ],
+  "target_access_policy": "structurally-denied-before-seal",
+  "row_retention_policy": "retain-all-forty-eight-historical-prerequisite-theoretical-measurement-and-scope-rows",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "status": "measured"
+}

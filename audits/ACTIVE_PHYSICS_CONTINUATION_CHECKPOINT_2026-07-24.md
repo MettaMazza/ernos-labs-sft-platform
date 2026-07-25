@@ -1671,3 +1671,34 @@ No engine or protocol file changed. The regenerated inheritance ledger is now
 332 same-strength closed and 166 open. D9q has no remaining work. The next
 sequential V1 Physics obligation is D10f: the single simultaneous massless,
 One-speed and confined strong-carrier law with complete PDG correspondence.
+
+## 54. D10f simultaneous massless and confined strong-carrier law closed
+
+`SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013` composes the admitted
+three-colour/eight-carrier inventory, empty-mass causal boundary, One-cell wave
+operation, strong self-source, composite colour boundary and conserved-source
+laws. Its complete 2,916-form grammar has one engine-computed survivor. Empty
+mass/rest capture and retained One-cell phase force local One-speed propagation;
+the same colour-bearing carrier self-sources a fixed half-One tube whose work
+increases by exact two-thirds at every separation successor. For every positive
+exact finite bound, a generated finite separation witness exceeds it, so no
+completed infinity enters the confinement proof.
+
+The formal prediction was frozen at
+`5cc20feeaa53a7ecfba3208a2f60f70af36c3d4a` before the comparison sources were
+opened for D10f. Post-seal custody retains the complete V1 row, ten prerequisite
+certificates and complete current PDG gluon, QCD and quark-model sources. PDG
+correspondence covers `Nc=3`, eight gluons, the colour octet/adjoint structure,
+nonlinear three- and four-gluon interaction, no observed free coloured state,
+colour-singlet hadrons and collider colour factors. The listing's `m=0` is
+correctly recorded as theoretical, its few-MeV caveat is retained, and no direct
+free-gluon time-of-flight measurement is claimed.
+
+The untouched engine admitted the claim on its first official execution:
+`sha256:bae91c8dc0b88c6130260c7e10ea22e9433ca322bd5ad3a8f9077653315f57e1`.
+Independent validation, post-seal empirical validation, all hostile controls and
+the single evidence-materialization replay passed. After ledger regeneration the
+Physics prior census has 333 same-strength closed obligations and 165 open. D10f
+has no remaining work. The next sequential open V1 Physics obligation is D10e,
+the complete nonlinear strong-field iteration and confinement fixed-point
+boundary.

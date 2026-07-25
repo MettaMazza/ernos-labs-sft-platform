@@ -12,6 +12,11 @@ from sft.physics.strong_carrier_massless_confined_terminal_law_v1 import (
     strong_sector_structure,
     work_exceeds_positive_bound,
 )
+from sft.physics.strong_carrier_massless_confined_terminal_validation_v1 import (
+    authoritative_record,
+    exact_measurement_analysis,
+    experiment_registration_record,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -76,6 +81,26 @@ class StrongCarrierMasslessConfinedTests(unittest.TestCase):
         decisions = tuple(program.decide_candidate(candidate) for candidate in census.candidates)
         self.assertTrue(program.closure_evidence(decisions).minimality_passed)
         self.assertTrue(all(control.passed for control in program.run_controls()))
+
+    def test_postseal_complete_pdg_comparison(self):
+        record = authoritative_record(ROOT)
+        analysis = exact_measurement_analysis(record["registered_target"])
+        self.assertTrue(analysis["all_target_rows_retained"])
+        self.assertTrue(analysis["historical_joint_relation_retained"])
+        self.assertTrue(analysis["pdg_three_eight_correspondence"])
+        self.assertTrue(analysis["pdg_massless_classification_correspondence"])
+        self.assertTrue(analysis["pdg_mass_value_is_theoretical_not_direct_measurement"])
+        self.assertTrue(analysis["pdg_mass_caveat_retained"])
+        self.assertTrue(analysis["pdg_self_source_correspondence"])
+        self.assertTrue(analysis["pdg_confinement_correspondence"])
+        self.assertTrue(analysis["measured_CA_contains_expected"])
+        self.assertTrue(analysis["measured_CF_contains_expected"])
+        self.assertFalse(analysis["direct_free_gluon_time_of_flight_available"])
+        self.assertFalse(analysis["external_values_select_formal_survivor"])
+        self.assertFalse(analysis["external_mass_value_used_as_formal_proof"])
+        self.assertFalse(analysis["fitted_value_used"])
+        self.assertFalse(analysis["free_correction_used"])
+        self.assertEqual(len(experiment_registration_record()["source_hashes"]), 15)
 
 
 if __name__ == "__main__":

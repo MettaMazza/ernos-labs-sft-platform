@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013",
+  "controls": [
+    {
+      "expected_behavior": "Reject treating empty mass and empty isolated-colour records as the same claim or as numerical zero.",
+      "kind": "false_premise",
+      "observed_behavior": "Local propagation survives while isolated asymptotic colour remains empty.",
+      "passed": true,
+      "receipt_hash": "sha256:de98ae67df337f751884db61a7bff6821a5b74354eeaae2f79cdd62fa9a451c7"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities are unique.",
+      "passed": true,
+      "receipt_hash": "sha256:0b5a37b200f6544185da03decea0e8f27bba78ad0ff859e5920232c0a780f049"
+    },
+    {
+      "expected_behavior": "Reject numerical/fitted mass, false exclusivity, pre-seal target access and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only empty mass, simultaneous records, sealed custody and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:e74908f15eb59a896903336653189ab9920bb7e4dd97ca7a41b9cbf680c116cf"
+    }
+  ]
+}
