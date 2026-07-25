@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008",
+  "controls": [
+    {
+      "expected_behavior": "Reject half-One as a universal threshold for every m.",
+      "kind": "false_premise",
+      "observed_behavior": "The three-label threshold is two-thirds and half-One remains below it.",
+      "passed": true,
+      "receipt_hash": "sha256:5940cc08cb032c81f0309da13073f53f87d409b435d741e62abf26be88767591"
+    },
+    {
+      "expected_behavior": "Reject a changed claimant source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "The changed identity differs from the registered manifest.",
+      "passed": true,
+      "receipt_hash": "sha256:f9cc802fda9684abe9042aa128f74d5f9a2c098b1846a200fdb61bd404bf4775"
+    },
+    {
+      "expected_behavior": "Reject duplicated candidate identities.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "The complete product has unique identities.",
+      "passed": true,
+      "receipt_hash": "sha256:c74f2eab8555206eb5f3a49ee2b048122a0dc767178e467e00a155138bf2c2e1"
+    },
+    {
+      "expected_behavior": "Reject universal topology, pre-seal observation and free correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only normalized scope, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:79e19bb1b8b82b78e5b0a7c3c903c8d1b91154640ddf4c15693314e496b9792b"
+    }
+  ]
+}

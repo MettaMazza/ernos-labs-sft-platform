@@ -1525,3 +1525,27 @@ still-open V1 Physics obligation is PH3: force the exact coupled-map
 synchronization threshold and complete target-inaccessible criticality
 comparison while retaining the already admitted half-One coupling and phase
 locking laws.
+
+## 48. PH3 normalized coupled-map criticality closed
+
+`SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008` forces the normalized
+drive-response transverse multiplier `m(One-g)`. Its unique neutral boundary is
+`g=(m-1)/m`; smaller coupling expands, larger coupling contracts, and `m=2`
+gives half-One. The claim is depth-independent and does not universalize this
+threshold over arbitrary topology.
+
+The target-free claimant and distinct implementation enumerated 2,916 forms.
+The untouched engine admitted exactly one survivor on its first execution with
+receipt `sha256:845ceed3f993a0523e1f01a5ce9375d469e426be12539941c5e5fd5130b9534f`.
+After sealing, the complete six-page coupled-lattice paper and authoritative
+NLM abstract record opened. All twenty registered rows were retained,
+including topology-dependent bounds, the finite 21-map example at coupling
+0.8 with critical alpha approximately 0.867, markedly non-Gaussian finite-time
+fluctuations and intermittent bursting outside the synchronization window.
+Those decimal/analytic inscriptions remain external records, not proof values.
+
+All five focused tests and repository validation pass. No engine file changed;
+the frozen engine tree remains `ad30f4866c18b2adbade95a0b2de40d5caa61308`.
+The ledger is now 327 closed and 171 open. PH3 has no remaining work; the next
+still-open V1 Physics obligation is D9f, the all-dimension orbital-restoration
+stability census.

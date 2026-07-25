@@ -1,0 +1,52 @@
+{
+  "schema": "sft-v3-coupled-map-criticality-source-record/1",
+  "source_id": "PH3-EXTERNAL-COUPLED-MAP-CRITICALITY",
+  "source_class": "external-primary-literature-record",
+  "source_note": "The frozen records are post-seal comparison targets. They do not select the Fold threshold, candidate survivor or proof values.",
+  "snapshots": [
+    {
+      "path": "experiments/external_sources/physics/snapshots/arxiv-nlin-0504012-coupled-logistic-threshold.pdf",
+      "sha256": "6ec59cc2f85ed4d90ef3bd457b1f2877d92a4e10059548ab11297e363f588a4d",
+      "source_uri": "https://arxiv.org/abs/nlin/0504012",
+      "scope": "Complete six-page primary paper: diffusive lattice equation, synchronized-state criterion, transverse spectrum, topology-dependent threshold interval, Ulam-map rate label, finite-time fluctuations, and favorable/adverse critical observations"
+    },
+    {
+      "path": "experiments/external_sources/physics/snapshots/pubmed-15447575-sync-threshold.xml",
+      "sha256": "08ab034a50e7e6383669d3c6f607634c080cd741018628c4355eeeb8e142d8e1",
+      "source_uri": "https://pubmed.ncbi.nlm.nih.gov/15447575/",
+      "scope": "Authoritative NLM bibliographic and abstract record for Phys. Rev. E 70, 026217"
+    }
+  ],
+  "registered_target": {
+    "pubmed_id": "15447575",
+    "publication_doi": "10.1103/PhysRevE.70.026217",
+    "criterion_inputs": "largest-Lyapunov-exponent-and-coupling-coefficient",
+    "criterion_method": "linear-analysis-of-ensembles-of-simplest-dynamical-systems",
+    "criterion_empirical_status": "numerical-simulations-approximate-threshold-with-high-precision",
+    "lattice_local_map": "logistic-map-x-to-four-x-times-one-minus-x",
+    "coupling_class": "distance-dependent-diagonal-diffusive-coupling",
+    "complete_synchronization_state": "all-map-variables-equal-at-each-step",
+    "stability_condition": "largest-transversal-asymptotic-exponent-negative",
+    "transverse_rate_relation": "local-rate-plus-logarithm-of-absolute-topology-weighted-residual-coupling",
+    "threshold_lower_label": "one-minus-exponential-of-negative-local-rate-divided-by-one-minus-leading-topology-eigenratio",
+    "threshold_upper_label": "one-plus-exponential-of-negative-local-rate-divided-by-one-minus-terminal-topology-eigenratio",
+    "ulam_local_rate_label": "natural-logarithm-of-two",
+    "normalized-zero-eigenratio-lower-bound": "half-One",
+    "finite_example_member_count": "21",
+    "finite_example_coupling": "0.8",
+    "finite_example_critical_alpha": "approximately-0.867",
+    "finite_time_distribution": "markedly-non-Gaussian-near-criticality",
+    "outside_window_behavior": "intermittent-transition-and-bursting",
+    "topology_independence_claimed": false
+  },
+  "custody": {
+    "development_observation_known": true,
+    "formal_claim_contains_external_target_values": false,
+    "target_inaccessible_during_prediction_execution": true,
+    "prediction_sealed_before_target_release_within_run": true,
+    "all_registered_favorable_adverse_and_scope_rows_retained": true,
+    "measurements_select_formal_survivor": false,
+    "analytic_values_used_as_sft_proof_values": false,
+    "protocol_classification": "observational-data-informed_target-inaccessible_sealed-comparison"
+  }
+}

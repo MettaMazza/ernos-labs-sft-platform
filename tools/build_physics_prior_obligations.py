@@ -87,6 +87,7 @@ V2_PHYSICS_STEPS = values(
 
 V1_CLAIM_OVERRIDES: dict[str, tuple[str, ...]] = {
     "PH2": ("SFT-INFO-ENTROPY-UNCERTAINTY-001", "SFT-MATH-SELF-SIMILAR-CONVERGENCE-002", "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008"),
+    "PH3": ("SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007", "SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008", "SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008"),
     "E6": ("SFT-MATH-EXACT-RELATIONS-002", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003"),
     "A1": ("SFT-PHYS-WAVE-SUPERPOSITION-001", "SFT-PHYS-MECH-CONSERVATION-001"),
     "A2": ("SFT-PHYS-WAVE-INTERFERENCE-001", "SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003"),
@@ -453,9 +454,9 @@ REVIEWED_OPEN_V1: dict[str, dict[str, str]] = {
         "remaining_work": "none; every complete generated m-label Fold has exact support m^d, one-step support multiplier m and local-separation multiplier m, forcing one common positive-whole expansion/information carrier without a logarithmic proof scalar. The post-seal direct Bernoulli-map comparison retains every map, slope, preimage, invariant-distribution, independent-symbol and conventional-rate row; the Pesin-formula comparison retains its stated hypotheses rather than universalizing the correspondence.",
     },
     "PH3": {
-        "formal_same_strength_status": "versioned_successor_required",
-        "empirical_boundary_status": "required_open",
-        "remaining_work": "The half-One coupling and phase-lock structures are sealed separately. A target-inaccessible coupled-map successor must force the exact synchronization threshold and compare the complete authoritative criticality record.",
+        "formal_same_strength_status": "closed_at_declared_boundary",
+        "empirical_boundary_status": "closed_at_declared_boundary",
+        "remaining_work": "none; in the normalized drive-response transverse channel the exact retained multiplier m(One-g) uniquely forces neutral boundary g=(m-1)/m, strict expansion below and strict contraction above, with half-One at m=2. Post-seal comparison retains the complete primary criticality record, its topology-dependent bounds, finite example, non-Gaussian fluctuations and intermittent adverse behavior; arbitrary network topology is explicitly outside the universal threshold scope.",
     },
     "D1": {
         "formal_same_strength_status": "versioned_successor_required",
@@ -1458,7 +1459,7 @@ RECENTLY_VERIFIED_V1 = {
     "III-7", "VI-4", "VI-5", "VI-6", "VI-7", "VII-2", "VII-3", "VII-4",
     "VII-6", "VII-8", "VIII-7", "XVII-2", "XVII-3", "XVII-4", "XVII-5",
     "XVIII-4", "XVIII-5", "XVIII-7",
-    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4", "PH2",
+    "N1", "N3", "N4", "N6", "T1", "T2", "B2", "V-7", "V-8", "VI-1", "VI-2", "VI-3", "E3", "E4", "PH2", "PH3",
     "B6", "B12-R",
     "B14", "B16", "B18", "B19", "B20", "B-3N", "B-5N",
     "B-6N", "B-7N", "B-8N", "M2", "M4", "M5", "M6",

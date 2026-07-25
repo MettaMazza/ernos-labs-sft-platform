@@ -1,0 +1,3 @@
+from pathlib import Path
+from sft.physics.coupled_map_criticality_terminal_execution_v1 import build_coupled_map_criticality_execution
+def build_execution(root:Path):return build_coupled_map_criticality_execution(root,Path(__file__))

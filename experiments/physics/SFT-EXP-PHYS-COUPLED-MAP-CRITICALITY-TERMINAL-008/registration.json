@@ -1,0 +1,19 @@
+{
+  "$schema":"../../../governance/experiment.schema.json",
+  "experiment_id":"SFT-EXP-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008",
+  "claim_id":"SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008",
+  "evidence_mode":"observational_derivation",
+  "protocol":"observational-data-informed_target-inaccessible_sealed-comparison",
+  "development_observations":[{"source_id":"PH3-EXTERNAL-COUPLED-MAP-CRITICALITY","role":"development_only","content_hash":"sha256:a637fd6f2780279c0f38523e10e4c0b505e6a463c2dfb47d60fa60339456ac6c"}],
+  "external_measurement_sources":[{"source_id":"ARXIV-NLIN-0504012","source_uri":"https://arxiv.org/abs/nlin/0504012","snapshot_hash":"sha256:6ec59cc2f85ed4d90ef3bd457b1f2877d92a4e10059548ab11297e363f588a4d","custody_role":"withheld_target"},{"source_id":"PUBMED-15447575","source_uri":"https://pubmed.ncbi.nlm.nih.gov/15447575/","snapshot_hash":"sha256:08ab034a50e7e6383669d3c6f607634c080cd741018628c4355eeeb8e142d8e1","custody_role":"withheld_target"}],
+  "frozen_relation":{"statement":"m(One-g) uniquely forces neutral boundary (m-1)/m in the normalized transverse channel.","target_did_not_select_law":true,"arbitrary_topology_universalized":false},
+  "withheld_targets":[{"target_id":"PH3-WITHHELD-COUPLED-MAP-CRITICALITY-RECORD","source_id":"PH3-EXTERNAL-COUPLED-MAP-CRITICALITY","content_withheld_from_prediction":true}],
+  "prediction_protocol":{"interpreter_id":"sft-v3-capability-closed-fold-interpreter/1","complete_trace_required":true,"forbidden_capabilities":["clock","dynamic_import","environment","filesystem_read","filesystem_write","foreign_function","network","subprocess"]},
+  "evaluation_protocol":{"metrics":[{"metric_id":"complete-threshold-topology-criticality-vector","all_rows":true}],"acceptance_condition":"Exact normalized threshold and regimes pass; every topology, finite-example, fluctuation and adverse row is retained; no analytic scalar or correction enters proof.","falsification_condition":"Any source change, omitted row, wrong threshold, topology universalization, fitted correction or pre-seal target access rejects."},
+  "controls":[{"control_id":"FALSE-PREMISE","kind":"false_premise"},{"control_id":"TAMPERED-SOURCE","kind":"tampered_source"},{"control_id":"TAMPERED-ARTIFACT","kind":"tampered_artifact"},{"control_id":"BOUNDARY","kind":"boundary"}],
+  "target_access_policy":"structurally-denied-before-seal",
+  "row_retention_policy":"retain-all-twenty-favorable-adverse-and-scope-limiting-rows",
+  "registered_by":"Maria Smith",
+  "registration_date":"2026-07-25",
+  "status":"measured"
+}
