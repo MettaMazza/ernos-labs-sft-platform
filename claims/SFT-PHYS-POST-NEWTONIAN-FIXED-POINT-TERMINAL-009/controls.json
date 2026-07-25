@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009",
+  "controls": [
+    {
+      "expected_behavior": "Reject larger algebraic root as a Fold part.",
+      "kind": "false_premise",
+      "observed_behavior": "Seven-quarters exceeds the One.",
+      "passed": true,
+      "receipt_hash": "sha256:9d321bdfe55b3a09a66ffa3205e3e797a328bdcce871aba5a6ea04bdb48f5b80"
+    },
+    {
+      "expected_behavior": "Reject changed source identity.",
+      "kind": "tampered_source",
+      "observed_behavior": "Identity differs.",
+      "passed": true,
+      "receipt_hash": "sha256:7ebc0eee93d4c1357c2d77d871bfa7ad0c7abf4d7f8d00be54bca5119ebaac83"
+    },
+    {
+      "expected_behavior": "Reject duplicate candidates.",
+      "kind": "tampered_artifact",
+      "observed_behavior": "All identities unique.",
+      "passed": true,
+      "receipt_hash": "sha256:5f9c0ad545be40ca825517099110bae199281727e06768826c0280cdfae9b73b"
+    },
+    {
+      "expected_behavior": "Reject universalization, target access and correction.",
+      "kind": "boundary",
+      "observed_behavior": "Only scalar scope, sealed target and empty extension survive.",
+      "passed": true,
+      "receipt_hash": "sha256:66585422a19fd2f9635ec272fe744036151e2d1526d840a8a0bc556374ef3340"
+    }
+  ]
+}

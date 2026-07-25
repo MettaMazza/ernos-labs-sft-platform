@@ -1,0 +1,3 @@
+from pathlib import Path
+from sft.physics.post_newtonian_fixed_point_terminal_execution_v1 import build_post_newtonian_fixed_point_execution
+def build_execution(root:Path):return build_post_newtonian_fixed_point_execution(root,Path(__file__))

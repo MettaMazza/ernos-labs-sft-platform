@@ -1568,3 +1568,28 @@ rows were retained. No measured parameter was fitted.
 The ledger is now 328 closed and 170 open. D9f has no remaining work. The next
 still-open V1 Physics obligation is D9m, the decreasing post-Newtonian
 correction recurrence and weak-field fixed-point comparison.
+
+## 50. D9m exact self-source fixed point closed
+
+`SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009` forces the structural
+matter source `7/16`, half-One coupling and positive quadratic field feedback.
+The exact map has algebraic fixed points `1/4` and `7/4`; only quarter-One is
+an admissible Fold part. Starting from the linear field `7/32`, every iterate
+increases below quarter-One, while every remaining error and every newly added
+correction contracts by an exact positive factor below quarter-One. The
+difference-of-squares identities provide a depth-independent successor proof.
+
+The target-free claimant and distinct independent implementation regenerated
+all 2,916 forms and left one survivor. The untouched engine admitted the claim
+on its first official execution with receipt
+`sha256:b0e30a2cb8fa9d9f2232df8f8790ab82d8fc2f8e6555326543e15fce2fb48bba`.
+Only after sealing did the complete V1 correction vector, V2 map and primary
+post-Newtonian review open. All fifteen registered rows were retained. The
+external formal weak-field hierarchy is not promoted to universal numerical
+convergence; V3's general convergence proof is exactly the registered Fold
+scalar self-source channel.
+
+No engine or protocol file changed. The regenerated inheritance ledger is now
+329 same-strength closed and 169 open. D9m has no remaining work. The next
+sequential V1 Physics obligation is D9n: the ten-component symmetric source
+ledger and depth-independent discrete contracted-Bianchi conservation law.
