@@ -24,7 +24,7 @@ import render_platform_paper as base
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md"
 DOI_PATH = ROOT / "publications/current/mathematics/doi.txt"
-OUTPUT = ROOT / "output/pdf/from-fold-to-mathematics-branch-paper-001.pdf"
+OUTPUT = ROOT / "output/pdf/from-fold-to-mathematics-branch-paper-001-v1.3.pdf"
 
 
 def doi() -> str:
@@ -129,7 +129,7 @@ def cover():
             "<br/>Twenty-seven registered records - 21,504 generated candidate structures"
             "<br/>Complete exact scientific calculator - desktop, browser and local-network phone"
             "<br/>Seventy-one prior obligations closed - none open"
-            "<br/>Version 1.2 - 25 July 2026"
+            "<br/>Version 1.3 - 26 July 2026"
             f"<br/>{doi()}"
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,

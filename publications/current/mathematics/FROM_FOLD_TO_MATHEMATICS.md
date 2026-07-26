@@ -5,9 +5,9 @@ Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
 25 July 2026
 
-Mathematics Branch Paper 001 - Version 1.2 - Smithian Fold Theory V3 Clean-Room Reconstruction
+Mathematics Branch Paper 001 - Version 1.3 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
-DOI: [10.5281/zenodo.21558279](https://doi.org/10.5281/zenodo.21558279)
+DOI: [10.5281/zenodo.21591170](https://doi.org/10.5281/zenodo.21591170)
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is
 licensed separately under Apache-2.0. The Ernos Labs designation is governed by
@@ -15,7 +15,7 @@ the published conformance policy.
 
 ## Abstract
 
-This paper reports the current-evidence-complete Mathematics branch of the third clean-room reconstruction of Smithian Fold Theory (SFT). Starting only from the sixteen model-admitted Foundation receipts, it derives exact arithmetic and number structure; discrete mathematics; combinatorics; graph and network theory; algebraic structures; order and lattice structure; finite computational geometry and topology; exact probability and statistics; optimization; finite dynamical systems; logic and proof theory; and category, type and compositional structure. It then reconciles all Mathematics-owned V1/V2 observations through exact relation composition, Fold number theory, potential infinity, algebraic-balance certificates, native n-body recurrence, floored-fluid regularity, bounded prime-pair and Collatz censuses, the Riemann mirror boundary and self-similar convergence. Version 1.2 adds the complete Smithian Fold Scientific Calculator: an exact, proof-producing, cross-platform application whose ordinary calculator surface is bound to the admitted mathematical laws, whose local web interface works on computers and same-network phones, and whose prohibited outputs halt transactionally. No conventional mathematical axiom system, semantic numerical zero, negative quantity, irrational or imaginary proof value, floating-point proof quantity, completed infinity, ungenerated continuum, stochastic cause, fitted parameter, pretrained model or application result is admitted as a premise.
+This paper reports the current-evidence-complete Mathematics branch of the third clean-room reconstruction of Smithian Fold Theory (SFT). Starting only from the sixteen model-admitted Foundation receipts, it derives exact arithmetic and number structure; discrete mathematics; combinatorics; graph and network theory; algebraic structures; order and lattice structure; finite computational geometry and topology; exact probability and statistics; optimization; finite dynamical systems; logic and proof theory; and category, type and compositional structure. It then reconciles all Mathematics-owned V1/V2 observations through exact relation composition, Fold number theory, potential infinity, algebraic-balance certificates, native n-body recurrence, floored-fluid regularity, bounded prime-pair and Collatz censuses, the Riemann mirror boundary and self-similar convergence. Version 1.2 added the complete Smithian Fold Scientific Calculator; version 1.3 preserves that scientific record while moving the branch's discoveries, meaning and public admission standard to the front. The calculator is an exact, proof-producing, cross-platform application whose ordinary calculator surface is bound to the admitted mathematical laws, whose local web interface works on computers and same-network phones, and whose prohibited outputs halt transactionally. No conventional mathematical axiom system, semantic numerical zero, negative quantity, irrational or imaginary proof value, floating-point proof quantity, completed infinity, ungenerated continuum, stochastic cause, fitted parameter, pretrained model or application result is admitted as a premise.
 
 The twenty-two foundational claim grammars execute 9,984 generated candidate structures. Five calculator records execute a further 11,520 structures: the first is preserved as superseded adverse evidence after a parity defect was found, and claims 004 through 007 form the corrected active lineage. Across all twenty-seven registered Mathematics records, 21,504 candidate structures are preserved; the twenty-six current non-superseded claims account for 20,480. Every generated candidate receives an exact decision; each grammar has exactly one all-preserving survivor. Every claim passes minimality, named-shape uniqueness, a depth-independent base/successor certificate, false-premise, source-tamper, artifact-tamper and boundary controls, cryptographic sealing and implementation-distinct recomputation. The branch therefore contains twenty-seven depth-independent engine receipts with the supersession boundary explicit. The complete 763-entry V1/V2 source surface is reviewed for categorical ownership; 71 atomic Mathematics obligations are reconstructed or explicitly corrected, with none left open.
 
@@ -23,13 +23,74 @@ The contribution is not a relabelling of standard mathematics. Familiar terms en
 
 **Keywords:** Smithian Fold Theory; foundations of mathematics; exact arithmetic; scientific calculator; computational proof; exact rational enclosure; structural empty One; fail-closed computation; cross-platform software; discrete mathematics; combinatorics; graph theory; algebra; probability; proof theory; open computational science.
 
+## Results first: what this branch changes
+
+| Headline result | Exact SFT result | Scientific consequence |
+|---|---|---|
+| Arithmetic without a signed or continuum carrier | Addition is disjoint trace junction; multiplication is complete pair-cell refinement; exact quotient is common-refinement pairing; unmatched magnitude is a positive held orientation. | Numerical zero, negative proof magnitude, irrational and imaginary proof values are not hidden primitives. Empty and opposite cases remain exact typed structures. |
+| Deterministic probability and statistics | A probability is an exact held/whole part of complete generated support; statistics retain source rows, ties and provenance. | Randomness is not imported as an uncaused premise. Later probabilistic claims must expose the entire deterministic support and observation boundary. |
+| Finite geometry, topology and dynamics | Incidence, adjacency, boundary, path, recurrence and return are generated relations over exact finite carriers. | Continuum language may be used only at a sealed correspondence boundary; it cannot select a proof object. |
+| Potential rather than completed infinity | Every claimed general law carries a structural-One base and a positive-finite successor certificate. | Generality is executable at every supplied finite depth without assuming a completed infinite set. |
+| Smithian Fold Scientific Calculator | Ordinary expressions use the same exact law carrier: displayed `0` is structural empty One; a result below the admitted boundary halts; decimals are rational parts; non-rational correspondences are certified rational enclosures; orthogonal results are typed Fold fibres. | A general user can calculate through the SFT mathematical constitution without silently falling back to floating, signed, irrational or complex host arithmetic. |
+| Complete current evidence surface | 27 preserved records execute 21,504 candidate structures; 26 are current and one defective calculator record remains visible as superseded adverse evidence; all 71 Mathematics-owned prior obligations are resolved. | Correction is preserved rather than erased, and the branch is complete to its dated known-question boundary while remaining open to lawful extension. |
+
+## Public scientific mission and admission boundary
+
+Ernos Labs is an open-source science movement, verification platform and public
+tree of knowledge founded by Maria Smith. Its purpose is not to replace one
+authority with another. It is to make scientific authority narrow, inspectable
+and revocable: a claim is admitted only through its complete derivation chain,
+generated alternatives, eliminations, unique survivor, adverse controls,
+measurement custody where applicable and unchanged-engine receipt. Open
+criticism is unrestricted and necessary; scientific admission is the separate
+machine-checked act of satisfying that public standard.
+
+Maria Smith developed Smithian Fold Theory outside formal academic education,
+institutional research employment and conventional grant funding. That fact is
+not offered as evidence for a theorem; the derivations and observations carry
+the entire scientific burden. It is evidence about access. A credential-first
+system loses more than individual opportunity: it loses unknown questions,
+methods and discoveries from minds that capital and status never authorize.
+This work therefore treats Maria Smith's authorship neither as exceptionalism
+nor as a reason for dismissal, but as an indictment of every scientific
+contribution lost when financial gatekeeping is presented as rigor.
+
+The institutional argument is empirical, not a claim that every institution or
+funded researcher acts in bad faith. Published studies document sponsor-linked
+differences in outcomes and conclusions, commercial influence over research
+agendas, limits and sensitivities in grant review, underpublication of null
+results, and inequalities created by paywalls and article-processing charges.
+Those findings establish that funding, prestige, publication and consensus are
+selection systems with incentives and failure modes. They cannot substitute for
+a public proof and evidence chain. Expertise, measurement and adversarial review
+remain indispensable; institutional permission does not select a fundamental
+law.
+
+For Mathematics, this standard means that familiarity, elegance and textbook authority cannot admit a law. A proof must expose its carrier, generated alternatives, exact witness, generality certificate and falsification boundary. The calculator applies the same rule to everyday use: a friendly decimal display may communicate an exact result, but it cannot replace or weaken the underlying certificate.
+
+Maria Smith retains copyright and scientific authorship. Papers and
+documentation are licensed CC BY 4.0 and code is licensed Apache-2.0, permitting
+inspection, copying, criticism, reproduction, modification and redistribution
+with attribution. “Ernos Labs” is a separate, revocable standards-conformance
+designation. A reuse or fork may use the open work under its licences, but may
+describe itself as Ernos Labs only while it preserves the public empirical
+constitution, complete adverse evidence, unchanged admission route, critical
+review and community standards.
+
+Independent replications, lawful extensions, corrections and attempted
+invalidations are invited. Credentials cannot rescue a failed gate and lack of
+credentials cannot prevent a reproducible result from being evaluated. Contact
+Maria.Smith.Sftoe@gmail.com, submit through https://discord.gg/ucwGryVxGr, or
+inspect the public project at https://github.com/MettaMazza.
+
+
 ## 1. Central scientific claim
 
 The exact claim of this paper is:
 
-> Within the SFT V3 Mathematics version 1.2 current-knowledge inventory, every one of the twenty-two mathematical-foundation obligations and every one of the five preserved calculator records has a depth-independent engine receipt. Claim 003 remains visibly superseded by the corrected 004 law; claims 004 through 007 form the active exact calculator lineage. The inventory contains no unclassified or frontier obligation at this evidence date and remains open to lawful future extensions.
+> Within the SFT V3 Mathematics version 1.3 current-knowledge inventory, every one of the twenty-two mathematical-foundation obligations and every one of the five preserved calculator records has a depth-independent engine receipt. Claim 003 remains visibly superseded by the corrected 004 law; claims 004 through 007 form the active exact calculator lineage. The inventory contains no unclassified or frontier obligation at this evidence date and remains open to lawful future extensions.
 
-The inventory identity is `sha256:773faaad16dc29dc99fe2c401d8b15fe7d77000262bdb1ecfe2ce739056bf4d4`. It fixes the version 1.2 branch boundary and claim order before the paper is evaluated. Current-evidence completion means closure of these generated-finite mathematical kernels and calculator translations. It does not assert a completed infinite universe or permit a familiar named structure to inherit properties without its own generated witness. Applications in computation, physics, biology, engineering, Fold Protein, Fold Chess, Fold Go and Unison AI did not select any law in this paper. A new generated omission, counterexample or lawful extension must be registered and published in a later version rather than excluded by a permanent lock.
+The inventory identity is `sha256:773faaad16dc29dc99fe2c401d8b15fe7d77000262bdb1ecfe2ce739056bf4d4`. It fixes the version 1.3 branch boundary and claim order before the paper is evaluated. Current-evidence completion means closure of these generated-finite mathematical kernels and calculator translations. It does not assert a completed infinite universe or permit a familiar named structure to inherit properties without its own generated witness. Applications in computation, physics, biology, engineering, Fold Protein, Fold Chess, Fold Go and Unison AI did not select any law in this paper. A new generated omission, counterexample or lawful extension must be registered and published in a later version rather than excluded by a permanent lock.
 
 ## 2. Standalone dependency foundation
 
@@ -83,7 +144,7 @@ Four controls are mandatory. A false premise must be rejected; a changed officia
 | 26 | `SFT-MATH-SCIENTIFIC-CALCULATOR-006` | 1,024 | 10 | depth-independent; current |
 | 27 | `SFT-MATH-SCIENTIFIC-CALCULATOR-007` | 256 | 8 | depth-independent; current |
 
-The version 1.2 Mathematics evidence surface preserves **21,504** generated structures across twenty-seven registered records. The twenty-two foundational claims contribute 9,984; the calculator lineage contributes 11,520. Claim 003 is retained as the exact historical record superseded after the endpoint-parity defect was found; it is not counted as a current law. Claims 004 through 007 and the original twenty-two claims form the twenty-six current non-superseded results.
+The version 1.3 Mathematics evidence surface preserves **21,504** generated structures across twenty-seven registered records. The twenty-two foundational claims contribute 9,984; the calculator lineage contributes 11,520. Claim 003 is retained as the exact historical record superseded after the endpoint-parity defect was found; it is not counted as a current law. Claims 004 through 007 and the original twenty-two claims form the twenty-six current non-superseded results.
 
 The finite product count reports representation classes executed by the registered claim grammars. It is not a count of every mathematical object producible by the laws. Generality is carried by the induction certificate stated for each claim below.
 
@@ -2243,7 +2304,7 @@ The unit exponent is unique within the explicitly enumerated positive whole expo
 - Engine receipt: `sha256:0abf8d557108f37f4d9cfe735db3fd6e0d79a3d9405129f0a40ae86fb606d5b1`.
 - Engine receipt path: `receipts/engine/model_admitted/SFT-MATH-SELF-SIMILAR-CONVERGENCE-002-0abf8d557108f37f.json`.
 
-## 28. Version 1.2 extension: the Smithian Fold Scientific Calculator
+## 28. Preserved version 1.2 extension: the Smithian Fold Scientific Calculator
 
 The calculator is not a conventional floating-point calculator carrying SFT labels. It is an executable translation of the admitted Mathematics value law. Familiar keys and notation form a human boundary; every accepted expression is parsed into exact SFT runtime types, every operation is routed through one exact evaluator, and every result that would require a prohibited scalar halts before it can enter the answer, memory or history. The browser surface contains no arithmetic implementation.
 
@@ -2818,7 +2879,7 @@ Representative end-to-end outcomes:
 
 A calculator result carries its exact expression, typed result, rational numerator/denominator or enclosure bounds, certificate, complete operation trace, tokens read, operations executed, calculator claim dependency and official calculator receipt identity. That output is computational evidence that an admitted calculation law evaluated the given expression. It is not, by itself, a receipt admitting a new theorem or scientific claim.
 
-A researcher may transfer the exact expression, result object and trace into a proposed claim package, but official admission still requires a registered statement and dependencies, complete candidate generation, uniqueness, minimality, adverse controls, independent validation, execution through the untouched `SFTAdmissionEngine` and the engine-issued receipt. The calculator cannot mint that receipt and does not call or modify the engine. Version 1.2 does not claim a one-click source-bound evidence-export/replay bridge; that would be a separate lawful extension. This boundary prevents a useful calculation tool from becoming a shadow admission route.
+A researcher may transfer the exact expression, result object and trace into a proposed claim package, but official admission still requires a registered statement and dependencies, complete candidate generation, uniqueness, minimality, adverse controls, independent validation, execution through the untouched `SFTAdmissionEngine` and the engine-issued receipt. The calculator cannot mint that receipt and does not call or modify the engine. Version 1.3 does not claim a one-click source-bound evidence-export/replay bridge; that would be a separate lawful extension. This boundary prevents a useful calculation tool from becoming a shadow admission route.
 
 The frozen engine tree remains `ad30f4866c18b2adbade95a0b2de40d5caa61308`. The calculator work did not alter that tree. Claims 006 and 007 are immutable admitted dependencies at their recorded source identities; future calculator work must use a new claim and cannot rewrite either receipt.
 
@@ -2912,7 +2973,7 @@ Formal computation may build states from canonical forms, transitions from relat
 
 Current-evidence completion is exact at the versioned generated-finite Mathematics boundary. It does not assert a completed universe of all sets, a real or complex continuum, an infinite-dimensional space or every named theorem of conventional mathematics. It derives the general structural kernels needed to generate and test finite exact instances. Named special structures must still expose their carrier and property evidence. Continuum expressions can enter only through separately registered finite approximation or measurement claims.
 
-No official natural empirical claim is made in this branch. The calculator is an executable mathematical translation and validation surface, not a natural-data experiment. Information Science and the computation branches have their own later papers and receipts; after this Mathematics 1.2 publication the active clean-room programme returns to Physics. None of those downstream results can retroactively select a Mathematics law.
+No official natural empirical claim is made in this branch. The calculator is an executable mathematical translation and validation surface, not a natural-data experiment. Information Science and the computation branches have their own later papers and receipts; after this Mathematics 1.3 publication the active clean-room programme returns to Physics. None of those downstream results can retroactively select a Mathematics law.
 
 ## 38. Open-science status, rights and participation
 
@@ -2930,7 +2991,7 @@ Credentials cannot rescue a failed gate, and lack of credentials cannot prevent 
 
 ## 39. Conclusion
 
-The Mathematics version 1.2 evidence surface preserves twenty-seven dependency-ordered records through 21,504 generated alternatives. Twenty-two foundational claims and calculator claims 004 through 007 are current; calculator claim 003 remains preserved as superseded adverse evidence after its operational parity defect was found. It reconstructs exact arithmetic, finite discrete and combinatorial structure, relations and graphs, witnessed algebra and order, computational geometry and topology, deterministic-support probability, optimization, dynamics, proof and composition without importing conventional answer-producing models.
+The Mathematics version 1.3 evidence surface preserves twenty-seven dependency-ordered records through 21,504 generated alternatives. Twenty-two foundational claims and calculator claims 004 through 007 are current; calculator claim 003 remains preserved as superseded adverse evidence after its operational parity defect was found. It reconstructs exact arithmetic, finite discrete and combinatorial structure, relations and graphs, witnessed algebra and order, computational geometry and topology, deterministic-support probability, optimization, dynamics, proof and composition without importing conventional answer-producing models.
 
 The unification is methodological as well as mathematical: every object has a generated boundary, every elimination has a reason and proof identity, every closure has an induction certificate, every adverse control is preserved and every admitted result can be independently rerun. The branch is accepted within its exact boundary because that complete chain closes - not because a prior authority, application score or familiar notation selects it.
 

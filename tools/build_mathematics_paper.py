@@ -17,6 +17,7 @@ from sft.mathematics.calculator.law_v2 import SPEC as CALCULATOR_004  # noqa: E4
 from sft.mathematics.calculator.law_v3 import SPEC as CALCULATOR_005  # noqa: E402
 from sft.mathematics.calculator_complete.law import SPEC as CALCULATOR_006  # noqa: E402
 from sft.mathematics.calculator_browser.law import SPEC as CALCULATOR_007  # noqa: E402
+from tools.publication_series_voice import open_science_position  # noqa: E402
 
 
 OUTPUT = ROOT / "publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md"
@@ -208,7 +209,7 @@ def build() -> str:
     add(line("Maria.Smith.Sftoe@gmail.com<br>"))
     add(line("25 July 2026"))
     add(line())
-    add(line("Mathematics Branch Paper 001 - Version 1.2 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
+    add(line("Mathematics Branch Paper 001 - Version 1.3 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
     add(line())
     if doi:
         add(line(f"DOI: [{doi}](https://doi.org/{doi})"))
@@ -230,7 +231,9 @@ def build() -> str:
         "compositional structure. It then reconciles all Mathematics-owned V1/V2 observations through exact relation "
         "composition, Fold number theory, potential infinity, algebraic-balance certificates, native n-body recurrence, "
         "floored-fluid regularity, bounded prime-pair and Collatz censuses, the Riemann mirror boundary and self-similar "
-        "convergence. Version 1.2 adds the complete Smithian Fold Scientific Calculator: an exact, proof-producing, "
+        "convergence. Version 1.2 added the complete Smithian Fold Scientific Calculator; version 1.3 preserves that "
+        "scientific record while moving the branch's discoveries, meaning and public admission standard to the front. "
+        "The calculator is an exact, proof-producing, "
         "cross-platform application whose ordinary calculator surface is bound to the admitted mathematical laws, "
         "whose local web interface works on computers and same-network phones, and whose prohibited outputs halt "
         "transactionally. No conventional mathematical axiom system, semantic numerical zero, negative "
@@ -265,12 +268,30 @@ def build() -> str:
     add(line())
     add(line("**Keywords:** Smithian Fold Theory; foundations of mathematics; exact arithmetic; scientific calculator; computational proof; exact rational enclosure; structural empty One; fail-closed computation; cross-platform software; discrete mathematics; combinatorics; graph theory; algebra; probability; proof theory; open computational science."))
     add(line())
+    add(line("## Results first: what this branch changes"))
+    add(line())
+    add(line("| Headline result | Exact SFT result | Scientific consequence |"))
+    add(line("|---|---|---|"))
+    add(line("| Arithmetic without a signed or continuum carrier | Addition is disjoint trace junction; multiplication is complete pair-cell refinement; exact quotient is common-refinement pairing; unmatched magnitude is a positive held orientation. | Numerical zero, negative proof magnitude, irrational and imaginary proof values are not hidden primitives. Empty and opposite cases remain exact typed structures. |"))
+    add(line("| Deterministic probability and statistics | A probability is an exact held/whole part of complete generated support; statistics retain source rows, ties and provenance. | Randomness is not imported as an uncaused premise. Later probabilistic claims must expose the entire deterministic support and observation boundary. |"))
+    add(line("| Finite geometry, topology and dynamics | Incidence, adjacency, boundary, path, recurrence and return are generated relations over exact finite carriers. | Continuum language may be used only at a sealed correspondence boundary; it cannot select a proof object. |"))
+    add(line("| Potential rather than completed infinity | Every claimed general law carries a structural-One base and a positive-finite successor certificate. | Generality is executable at every supplied finite depth without assuming a completed infinite set. |"))
+    add(line("| Smithian Fold Scientific Calculator | Ordinary expressions use the same exact law carrier: displayed `0` is structural empty One; a result below the admitted boundary halts; decimals are rational parts; non-rational correspondences are certified rational enclosures; orthogonal results are typed Fold fibres. | A general user can calculate through the SFT mathematical constitution without silently falling back to floating, signed, irrational or complex host arithmetic. |"))
+    add(line("| Complete current evidence surface | 27 preserved records execute 21,504 candidate structures; 26 are current and one defective calculator record remains visible as superseded adverse evidence; all 71 Mathematics-owned prior obligations are resolved. | Correction is preserved rather than erased, and the branch is complete to its dated known-question boundary while remaining open to lawful extension. |"))
+    add(line())
+    add(line(open_science_position(
+        "For Mathematics, this standard means that familiarity, elegance and textbook authority cannot admit a law. "
+        "A proof must expose its carrier, generated alternatives, exact witness, generality certificate and falsification "
+        "boundary. The calculator applies the same rule to everyday use: a friendly decimal display may communicate an "
+        "exact result, but it cannot replace or weaken the underlying certificate."
+    )))
+    add(line())
     add(line("## 1. Central scientific claim"))
     add(line())
     add(line("The exact claim of this paper is:"))
     add(line())
     add(line(
-        "> Within the SFT V3 Mathematics version 1.2 current-knowledge inventory, every one of the twenty-two "
+        "> Within the SFT V3 Mathematics version 1.3 current-knowledge inventory, every one of the twenty-two "
         "mathematical-foundation obligations and every one of the five preserved calculator records has a "
         "depth-independent engine receipt. Claim 003 remains visibly superseded by the corrected 004 law; claims "
         "004 through 007 form the active exact calculator lineage. The inventory contains no unclassified or "
@@ -278,7 +299,7 @@ def build() -> str:
     ))
     add(line())
     add(line(
-        f"The inventory identity is `{inventory_hash}`. It fixes the version 1.2 branch boundary and claim order before the "
+        f"The inventory identity is `{inventory_hash}`. It fixes the version 1.3 branch boundary and claim order before the "
         "paper is evaluated. Current-evidence completion means closure of these generated-finite mathematical "
         "kernels and calculator translations. It does not assert a completed infinite universe or permit a familiar named structure to inherit "
         "properties without its own generated witness. Applications in computation, physics, biology, engineering, "
@@ -360,7 +381,7 @@ def build() -> str:
         add(line(f"| {index} | `{spec.claim_id}` | {2 ** len(spec.dimensions):,} | {len(spec.dimensions)} | {status} |"))
     add(line())
     add(line(
-        f"The version 1.2 Mathematics evidence surface preserves **{candidate_total:,}** generated structures across "
+        f"The version 1.3 Mathematics evidence surface preserves **{candidate_total:,}** generated structures across "
         "twenty-seven registered records. The twenty-two foundational claims contribute 9,984; the calculator lineage "
         "contributes 11,520. Claim 003 is retained as the exact historical record superseded after the endpoint-parity "
         "defect was found; it is not counted as a current law. Claims 004 through 007 and the original twenty-two claims "
@@ -480,7 +501,7 @@ def build() -> str:
         section += 1
 
     add(line())
-    add(line(f"## {section}. Version 1.2 extension: the Smithian Fold Scientific Calculator"))
+    add(line(f"## {section}. Preserved version 1.2 extension: the Smithian Fold Scientific Calculator"))
     add(line())
     add(line(
         "The calculator is not a conventional floating-point calculator carrying SFT labels. It is an executable "
@@ -726,7 +747,7 @@ def build() -> str:
         "A researcher may transfer the exact expression, result object and trace into a proposed claim package, but official "
         "admission still requires a registered statement and dependencies, complete candidate generation, uniqueness, "
         "minimality, adverse controls, independent validation, execution through the untouched `SFTAdmissionEngine` and the "
-        "engine-issued receipt. The calculator cannot mint that receipt and does not call or modify the engine. Version 1.2 "
+        "engine-issued receipt. The calculator cannot mint that receipt and does not call or modify the engine. Version 1.3 "
         "does not claim a one-click source-bound evidence-export/replay bridge; that would be a separate lawful extension. "
         "This boundary prevents a useful calculation tool from becoming a shadow admission route."
     ))
@@ -970,7 +991,7 @@ def build() -> str:
     add(line(
         "No official natural empirical claim is made in this branch. The calculator is an executable mathematical "
         "translation and validation surface, not a natural-data experiment. Information Science and the computation branches "
-        "have their own later papers and receipts; after this Mathematics 1.2 publication the active clean-room programme "
+        "have their own later papers and receipts; after this Mathematics 1.3 publication the active clean-room programme "
         "returns to Physics. None of those downstream results can retroactively select a Mathematics law."
     ))
     section += 1
@@ -1034,7 +1055,7 @@ def build() -> str:
     add(line(f"## {section}. Conclusion"))
     add(line())
     add(line(
-        f"The Mathematics version 1.2 evidence surface preserves twenty-seven dependency-ordered records through {candidate_total:,} "
+        f"The Mathematics version 1.3 evidence surface preserves twenty-seven dependency-ordered records through {candidate_total:,} "
         "generated alternatives. Twenty-two foundational claims and calculator claims 004 through 007 are current; calculator "
         "claim 003 remains preserved as superseded adverse evidence after its operational parity defect was found. "
         "It reconstructs exact arithmetic, finite discrete and combinatorial structure, relations and graphs, witnessed "
