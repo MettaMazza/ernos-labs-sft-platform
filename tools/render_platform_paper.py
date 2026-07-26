@@ -46,6 +46,11 @@ MUTED = colors.HexColor("#55645F")
 def inline_markup(text: str) -> str:
     """Escape text while retaining the small Markdown subset used by the paper."""
 
+    superscript = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ", "0123456789+-=()ni")
+    subscript = str.maketrans("₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ", "0123456789+-=()aehijklmnoprstuvx")
+    text = re.sub(r"[⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ]+", lambda match: "^" + match.group(0).translate(superscript), text)
+    text = re.sub(r"[₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ]+", lambda match: "_" + match.group(0).translate(subscript), text)
+
     tokens: list[str] = []
 
     def hold(value: str) -> str:
@@ -133,11 +138,11 @@ def draw_page(canvas, doc):
         canvas.setFillColor(MUTED)
         canvas.drawString(20 * mm, height - 11.8 * mm, "THERE IS NO NOTHING · ERNOS LABS METHODS PAPER 001")
         canvas.drawRightString(width - 20 * mm, 11 * mm, f"{doc.page}")
-        canvas.drawString(20 * mm, 11 * mm, "Maria Smith · 2026 · CC BY 4.0 · doi:10.5281/zenodo.21514890")
+        canvas.drawString(20 * mm, 11 * mm, "Maria Smith · 2026 · CC BY 4.0 · doi:10.5281/zenodo.21591160")
     canvas.restoreState()
 
 
-def cover_story():
+def cover_story(source_text: str = ""):
     width, height = A4
     story = [Spacer(1, 30 * mm)]
     title = ParagraphStyle("CoverTitle", fontName="Helvetica-Bold", fontSize=31, leading=35, textColor=ACCENT_DARK, alignment=TA_CENTER)
@@ -145,6 +150,12 @@ def cover_story():
     kicker = ParagraphStyle("CoverKicker", fontName="Helvetica-Bold", fontSize=9, leading=12, textColor=ACCENT, alignment=TA_CENTER, spaceAfter=8)
     author = ParagraphStyle("CoverAuthor", fontName="Times-Roman", fontSize=12, leading=18, textColor=INK, alignment=TA_CENTER)
     note = ParagraphStyle("CoverNote", fontName="Times-Roman", fontSize=9, leading=13, textColor=MUTED, alignment=TA_CENTER, leftIndent=25 * mm, rightIndent=25 * mm)
+    successor = "**Version:** 0.2.0" in source_text or "version 0.2.0" in source_text
+    release_note = (
+        "Third clean-room reconstruction · Methods successor update<br/>doi:10.5281/zenodo.21591160 · Version 0.2.0 · 26 July 2026<br/>Canonical source: versioned Methods Paper 00 Markdown · Code: Apache-2.0 · Paper: CC BY 4.0"
+        if successor else
+        "Third clean-room reconstruction · Inaugural methods release<br/>doi:10.5281/zenodo.21514890 · Version 0.1.0 · 23 July 2026<br/>Canonical source: repository README · Code: Apache-2.0 · Paper: CC BY 4.0"
+    )
     story.extend([
         Paragraph("METHODS AND FOUNDATION PAPER 001", kicker),
         Paragraph("There Is No Nothing", title),
@@ -158,7 +169,7 @@ def cover_story():
         Spacer(1, 18 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 22 * mm),
-        Paragraph("Third clean-room reconstruction · Inaugural methods release<br/>doi:10.5281/zenodo.21514890 · Version 0.1.0 · 23 July 2026<br/>Canonical source: repository README · Code: Apache-2.0 · Paper: CC BY 4.0", note),
+        Paragraph(release_note, note),
     ])
     return story
 
@@ -279,7 +290,7 @@ def render(source_path: Path, output_path: Path) -> None:
     )
     frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id="body")
     doc.addPageTemplates([PageTemplate(id="paper", frames=[frame], onPage=draw_page)])
-    doc.build(cover_story() + [PageBreak()] + body_story(source))
+    doc.build(cover_story(source) + [PageBreak()] + body_story(source))
     print(f"rendered {output_path}")
 
 
