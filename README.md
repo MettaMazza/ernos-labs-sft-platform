@@ -13,7 +13,7 @@ The publication contains all 349 current engine-admitted Physics claims. Their g
 
 ## 1. Publication and authorship boundary
 
-**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [10.5281/zenodo.21548363](https://doi.org/10.5281/zenodo.21548363). This canonical Markdown paper, its rendered PDF, complete evidence/source archive and checksum ledger form the Physics Branch Paper 001 release.
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [10.5281/zenodo.21591791](https://doi.org/10.5281/zenodo.21591791). This canonical Markdown paper, its rendered PDF, complete evidence/source archive and checksum ledger form the Physics Branch Paper 001 release.
 
 Maria Smith, independent researcher and founder of Ernos Labs. Contact: Maria.Smith.Sftoe@gmail.com. Submissions and reproducibility reports: https://discord.gg/ucwGryVxGr. GitHub: https://github.com/MettaMazza.
 
