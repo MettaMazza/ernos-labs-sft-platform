@@ -1,0 +1,227 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 067 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source identity or registered row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, omission or role relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "ERASED-STELLAR-REGIMES",
+      "expected_rejection": "Deleting four non-endpoint regimes rejects completeness.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "CENTRAL-ONLY-TULLY-FISHER",
+      "expected_rejection": "Deleting the systematic interval or hiding the central offset rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "FALSE-LUNAR-LOCK",
+      "expected_rejection": "Unequal lunar periods reject the 1:1 comparison.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "ERASED-MERCURY-BOUNDARY",
+      "expected_rejection": "Relabelling Mercury as 1:1 rejects the explicit resonance boundary.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:60511762f50fa48cf2d83aa5b1ca139eb23b5464f3b05b462b80903bcab135e6"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1155658f219be338dbbe6a3767ee7f5f08193c5af36aa6f6443bd9a212a5ce12",
+      "role": "development_only",
+      "source_id": "V1-V2-STELLAR-GALACTIC-TIDAL-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "hydrostatic restoration",
+      "stellar terminal powers",
+      "flat-curve support",
+      "fourth-power rotation carrier",
+      "isolated tidal terminal"
+    ],
+    "external_reference_protocol": "The seven sources supply only post-seal observational comparisons, reported uncertainties and declared capability boundaries.",
+    "measurement_record_policy": "reported coordinates remain external records and never select or alter the Fold proof",
+    "proof_value_policy": "positive exact whole and fractional Fold forms only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All seven sources and every favorable, offset, piecewise and boundary row remain, with formal and observational roles kept separate.",
+    "comparison_implementation_hash": "sha256:8783cb5cf940d4f3f2f2fa97c3b87fd5faa323b35fc1ee0b21fe68735bc51a0b",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity changes; any of the six stellar regimes, both Tully-Fisher interval classes, the full galaxy counts, the Bullet separation, the Moon terminal or the Mercury boundary is omitted; the formal law is changed after target release; a central offset is concealed; a conventional reference model is called an SFT prediction; a fitted parameter enters; or any hostile control passes incorrectly.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain helioseismic precision and the observed/reference interval without relabelling the conventional model as SFT.",
+        "metric_id": "SOLAR-STRUCTURE",
+        "unit_protocol": "exact rational solar-radius fractions and precision orders"
+      },
+      {
+        "all_rows": true,
+        "definition": "Compare powers three/four against all six measured slope intervals.",
+        "metric_id": "STELLAR-PIECEWISE",
+        "unit_protocol": "exact rational slopes and uncertainties"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain SPARC, central/systematic Tully-Fisher and Bullet Cluster rows together.",
+        "metric_id": "GALAXY-SUPPORT",
+        "unit_protocol": "exact counts, slopes, scatter and significance"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain lunar 1:1 and Mercury 3:2 records together.",
+        "metric_id": "TIDAL-BOUNDARY",
+        "unit_protocol": "exact rational periods and whole cycle ratios"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Our Sun IV: The Standard Model and Helioseismology: Consequences of Uncertainties in Input Physics and in Observed Solar Parameters",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:e523f76ba101f8becc7c18e593d9dce2ce999e4393f3efbace74bada0a51e42e",
+      "source_id": "NASA-NTRS-HELIOSEISMOLOGY-2001",
+      "source_uri": "https://ntrs.nasa.gov/citations/20010111092"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Interrelated main-sequence mass-luminosity, mass-radius and mass-effective temperature relations",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:38f82514c2bcc9f3732581232d86d0798fb758f84018ddce1ad5e5941a359ff3",
+      "source_id": "EKER-2018-MAIN-SEQUENCE-RELATIONS",
+      "source_uri": "https://arxiv.org/abs/1807.02568"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63",
+      "source_id": "SPARC-2016-ROTATION-CURVES",
+      "source_uri": "https://arxiv.org/abs/1606.09251"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "The baryonic Tully-Fisher relation for different velocity definitions and implications for galaxy angular momentum",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:a35dafd7d01967b64bbd78be5d337c0011f53fe3c3f6e224b32c23a7a7ba4e3f",
+      "source_id": "LELLI-2019-BARYONIC-TULLY-FISHER",
+      "source_uri": "https://arxiv.org/abs/1901.05966"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "A direct empirical proof of the existence of dark matter",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:59f2fb580797de5e5007fcea490a0f6c36036364546dbbb6a319a6e2fb5d0209",
+      "source_id": "CLOWE-2006-BULLET-CLUSTER",
+      "source_uri": "https://arxiv.org/abs/astro-ph/0608407"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Moon",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:8591513db27d380612afdf5d4c34e3fa1502fdf89100f745b88a578c49135df4",
+      "source_id": "NASA-GRC-MOON-SYNCHRONOUS-ROTATION",
+      "source_uri": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/moon/"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "The Gravity Field, Orientation, and Ephemeris of Mercury from MESSENGER Observations After Three Years in Orbit",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:836e77ddea47e52734be957e4f41bfcddfc247c8b9beec3a9b0eb900756cfd4e",
+      "source_id": "NASA-NTRS-MESSENGER-MERCURY-RESONANCE",
+      "source_uri": "https://ntrs.nasa.gov/citations/20150000346"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed physical carrier, seven-source custody, solar structure, complete six-row stellar relation, complete galaxy vector, central-plus-systematic Tully-Fisher comparison, Moon-plus-Mercury tidal boundary and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:aad7fdb3be3cf4f34a31840eab8d5c93ba0a3369f4ef6d3ac6b72c9f5a4555cc",
+      "sha256:4c962ffc47fec221dfbf2be872713a62350e9dd1e1f684c120d31cd387578386",
+      "sha256:af6574dd385535343cd1af2b3f6c920b09856ad67c31513961454c2258aec54d",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The sealed Claim 067 receipt; every row from the seven immutable source snapshots; exact positive whole and fraction values; reported uncertainties and systematic intervals; all six stellar regimes; the complete SPARC population; the Bullet Cluster separation; the lunar 1:1 observation; the Mercury 3:2 boundary; and structural target denial before formal sealing.",
+    "relation_hash": "sha256:3881d15b3302fc4992e399d7804f86cd6d964a41625943324141cad42c867f30",
+    "statement": "The NASA solar record reports sound-speed and adiabatic-index inference at the 1/10000 precision order and density at 1/1000; its reference-model convective boundary 1427/2000 lies inside the observed 713/1000 +/- 1/1000 interval and is retained only as external structure evidence. The complete six stellar slopes are 507/250, 1143/250, 5743/1000, 4329/1000, 3967/1000 and 573/200 with their six reported uncertainties; the 3967/1000 row contains four and the 573/200 row contains three, while the other four do not and remain explicit. SPARC contributes all 175 galaxies. The 153-galaxy baryonic Tully-Fisher result is 77/20 +/- 9/100 with intrinsic scatter 3/50: its central interval excludes four, while the reported systematic interval [7/2,4] contains the sealed endpoint. The Bullet Cluster records an eight-sigma mass/plasma separation. The Moon records equal approximately-655-hour orbital and rotation periods. MESSENGER records Mercury's 29323073/500000 +/- 11/1000000 day rotation and experimentally verifies its 3:2 resonance, preserving the separately generated eccentric-resonance boundary.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:24674dfa019c208012414ab3c587656ee404512f20d00ab44e26ee137be22ae2",
+      "input_id": "STELLAR-GALACTIC-TIDAL-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:543be15d53dfce192b9f418859ebd7d5416cc18327223d55318989074feefbc8",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-all-seven-sources-six-stellar-regimes-both-Tully-intervals-and-both-tidal-cases",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-1606.09251-sparc.pdf": "sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63",
+    "experiments/external_sources/physics/snapshots/arxiv-1807.02568-main-sequence-relations.pdf": "sha256:38f82514c2bcc9f3732581232d86d0798fb758f84018ddce1ad5e5941a359ff3",
+    "experiments/external_sources/physics/snapshots/arxiv-1901.05966-baryonic-tully-fisher.pdf": "sha256:a35dafd7d01967b64bbd78be5d337c0011f53fe3c3f6e224b32c23a7a7ba4e3f",
+    "experiments/external_sources/physics/snapshots/arxiv-astro-ph-0608407-bullet-cluster.pdf": "sha256:59f2fb580797de5e5007fcea490a0f6c36036364546dbbb6a319a6e2fb5d0209",
+    "experiments/external_sources/physics/snapshots/nasa-grc-moon-tidal-locking.html": "sha256:8591513db27d380612afdf5d4c34e3fa1502fdf89100f745b88a578c49135df4",
+    "experiments/external_sources/physics/snapshots/nasa-ntrs-20010111092-helioseismology.pdf": "sha256:e523f76ba101f8becc7c18e593d9dce2ce999e4393f3efbace74bada0a51e42e",
+    "experiments/external_sources/physics/snapshots/nasa-ntrs-20150000346-mercury-resonance.pdf": "sha256:836e77ddea47e52734be957e4f41bfcddfc247c8b9beec3a9b0eb900756cfd4e",
+    "experiments/external_sources/physics/snapshots/stellar-galactic-tidal-postseal-source-record.json": "sha256:37f777d96a7d4844e16f4fbe57ad1fa150882eb097f5426c6e5481d47a713f6c"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on changed evidence, omitted row, hidden offset, target access, fitting, role conflation or failed hostile control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "COMPLETE-SEVEN-SOURCE-VECTOR",
+      "target_id": "STELLAR-GALACTIC-TIDAL-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

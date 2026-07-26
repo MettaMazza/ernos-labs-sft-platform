@@ -1,0 +1,113 @@
+{
+  "schema": "sft-v3-gravitational-wave-chirp-ringdown-postseal-source-record/1",
+  "retrieval_date": "2026-07-26",
+  "formal_claim_id": "SFT-PHYS-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-TERMINAL-073",
+  "formal_receipt_hash": "sha256:7add0b09e795aee79758286268637f442b40155f4af5c83a4a123f90e2150e19",
+  "development_context": [
+    {
+      "source_id": "LIGO-VIRGO-GW150914-DISCOVERY-2016",
+      "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+      "source_uri": "https://dcc.ligo.org/P150914/public",
+      "snapshot": "ligo-p150914-gw150914-discovery.pdf",
+      "snapshot_hash": "sha256:e5e864c23d015b69be17e5b5d51b5b462d2829353a867513414b6728f54589c4",
+      "binding_role": "retrieved-before-formal-receipt-development-context-only",
+      "blind_validation_role": "none"
+    }
+  ],
+  "withheld_postseal_sources": [
+    {
+      "source_id": "LIGO-VIRGO-GW151226-DISCOVERY-2016",
+      "title": "GW151226: Observation of Gravitational Waves from a 22-Solar-Mass Binary Black Hole Coalescence",
+      "source_uri": "https://dcc.ligo.org/LIGO-P151226/public",
+      "snapshot": "ligo-p151226-gw151226-discovery.pdf",
+      "snapshot_hash": "sha256:a59bb954e9850a8800e2b62e1808553012e791b879e00f108b0bf061bf530e72",
+      "rows": {
+        "signal": {
+          "duration_seconds": "1/1",
+          "cycle_count": "55/1",
+          "frequency_start_hz": "35/1",
+          "frequency_end_hz": "450/1",
+          "frequency_direction": "strictly-rising",
+          "amplitude_direction": "rising-to-peak",
+          "peak_strain_central": "34/100000000000000000000000",
+          "network_snr": "13/1",
+          "significance_boundary": "greater-than-five-standard-deviations"
+        },
+        "source_and_remnant": {
+          "initial_component_count": "2/1",
+          "final_remnant_count": "1/1",
+          "primary_mass_solar": "71/5",
+          "primary_mass_lower_error_solar": "37/10",
+          "primary_mass_upper_error_solar": "83/10",
+          "secondary_mass_solar": "15/2",
+          "secondary_mass_lower_error_solar": "23/10",
+          "secondary_mass_upper_error_solar": "23/10",
+          "final_mass_solar": "104/5",
+          "final_mass_lower_error_solar": "17/10",
+          "final_mass_upper_error_solar": "61/10",
+          "radiated_energy_solar_c2": "1/1",
+          "radiated_energy_lower_error_solar_c2": "1/5",
+          "radiated_energy_upper_error_solar_c2": "1/10"
+        },
+        "scope": {
+          "uncertainty_role": "all reported source parameters use 90-percent credible intervals",
+          "waveform_role": "matched-filter recovery and parameter estimation use calibrated waveform models",
+          "stage_boundary": "the long inspiral is well resolved; merger and ringdown carry looser constraints for this lower-mass event"
+        }
+      }
+    },
+    {
+      "source_id": "LIGO-VIRGO-GW190521-DISCOVERY-2020",
+      "title": "GW190521: A Binary Black Hole Merger with a Total Mass of 150 Solar Masses",
+      "source_uri": "https://dcc.ligo.org/P2000020/public",
+      "snapshot": "ligo-p2000020-gw190521-discovery.pdf",
+      "snapshot_hash": "sha256:4d6661f18168267249b3ca043b0692d88376c9db9b3d9146a9500763f7b438a7",
+      "rows": {
+        "signal": {
+          "duration_seconds": "1/10",
+          "cycle_count": "4/1",
+          "frequency_start_hz": "30/1",
+          "frequency_end_hz": "80/1",
+          "network_snr": "147/10",
+          "false_alarm_return_years": "4900/1"
+        },
+        "source_and_remnant": {
+          "initial_component_count": "2/1",
+          "final_remnant_count": "1/1",
+          "primary_mass_solar": "85/1",
+          "primary_mass_lower_error_solar": "14/1",
+          "primary_mass_upper_error_solar": "21/1",
+          "secondary_mass_solar": "66/1",
+          "secondary_mass_lower_error_solar": "18/1",
+          "secondary_mass_upper_error_solar": "17/1",
+          "final_mass_solar": "142/1",
+          "final_mass_lower_error_solar": "16/1",
+          "final_mass_upper_error_solar": "28/1"
+        },
+        "ringdown": {
+          "reported_mode": "least-damped-l-equals-m-equals-two-mode",
+          "reported_result": "remnant-ringdown-compatible-with-full-waveform-analysis",
+          "damping_direction": "decaying-post-peak-support",
+          "exact_half_One_damping_directly_measured": false
+        },
+        "scope": {
+          "interpretation_role": "quasicircular-binary interpretation is conditional",
+          "short_signal_boundary": "approximately four cycles do not securely resolve an earlier inspiral",
+          "alternative_interpretations_retained": true,
+          "ringdown_role": "mode and remnant properties are model-assisted comparisons, not direct measurements of a universal Fold damping fraction"
+        }
+      }
+    }
+  ],
+  "methodological_boundary": {
+    "formal_receipt_existed_before_withheld_source_binding": true,
+    "gw150914_retained_as_preseal_development_context": true,
+    "gw150914_not_counted_as_blind_validation": true,
+    "all_postseal_source_rows_retained": true,
+    "measurement_selected_formal_survivor": false,
+    "dimensional_frequency_not_imported_as_fold_proof_scalar": true,
+    "model_assisted_mass_and_ringdown_roles_retained": true,
+    "exact_half_One_damping_not_claimed_as_directly_measured": true,
+    "cross_event_stage_support_explicit": true
+  }
+}

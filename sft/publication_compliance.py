@@ -110,6 +110,24 @@ def audit_branch(root: Path, branch_id: str) -> PublicationCompliance:
             and branch_ledger.get("status") == "closed"
         ):
             blockers.append("branch-specific full-source ownership review or same-strength closure is incomplete")
+    elif branch_id == "physics":
+        # Physics uses the later atomic categorical-ownership audit because mixed
+        # V1/V2 source rows must be decomposed before a branch owner is assigned.
+        # This publication check consumes that completed audit; it does not alter
+        # the admission engine, claims, or receipts.
+        atomic_audit = _read(root / "audits/physics_v1_v2_atomic_ownership.json")
+        source = atomic_audit.get("source_surface", {})
+        summary = atomic_audit.get("summary", {})
+        if not (
+            source.get("total_source_rows_reviewed") == v1["source_row_count"] + v2["source_step_count"]
+            and summary.get("physics_owned_atom_count") == summary.get("same_strength_closed_atom_count")
+            and summary.get("same_strength_open_atom_count") == 0
+            and summary.get("unique_atom_ids") is True
+            and summary.get("all_declared_composite_rows_decomposed") is True
+            and summary.get("publication_blocked") is False
+            and atomic_audit.get("audit_status") == "current_evidence_closed_extension_open"
+        ):
+            blockers.append("Physics atomic ownership review or same-strength closure is incomplete")
     else:
         if not ownership.get("assignment_complete"):
             blockers.append(

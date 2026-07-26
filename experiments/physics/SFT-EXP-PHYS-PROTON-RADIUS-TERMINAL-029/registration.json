@@ -1,0 +1,141 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-PROTON-RADIUS-TERMINAL-029",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A named proton without admitted composition is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction, census or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Early target access, fitted length or probe correction is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A disjoint electronic-hydrogen interval rejects the correspondence.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:e7514e6c6704f82998f3eaa3e6cee17c1e65c920524748dcc95c15c39f5b564f"
+  },
+  "development_observations": [
+    "The V1/V2 proton-radius proposal and the radius puzzle were known before this reconstruction; no historical-blindness claim is made.",
+    "The measured rows cannot select the ten-cell linear survivor because the eight-, nine- and ten-cell linear controls all overlap the current muonic interval."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "The exact propagated interval lies in every registered current interval, the historical conflict and all structural alternatives remain, target access is post-seal, and the tampered target fails.",
+    "comparison_implementation_hash": "sha256:ff815be3377f775bd00e1d585941977af8e03a964211a4d0149ad1c8d94addd9",
+    "evaluator_id": "SFT-EXP-PHYS-PROTON-RADIUS-TERMINAL-029-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity or registered row changes; if the exact terminal prediction leaves any registered current electronic, muonic, CODATA or outward PRad interval; if the historical CODATA-2014 conflict or current extraction limitations are omitted; if a probe, radius or Compton value enters before sealing; if observation is claimed to select ten charge cells; or if target access precedes the seal."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-PROTON-RADIUS-TERMINAL-029",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "Nature",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:834ddf04fdb3064d07307cc743544990e086601948903fb73390144d2a3ae253",
+      "source_id": "NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS",
+      "source_uri": "https://doi.org/10.1038/s41586-026-10124-3"
+    },
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "Nature manuscript via arXiv",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:66925b870f8391be1a940b741ff60322877df7551cfa1db58b59add002e15ad5",
+      "source_id": "NATURE-2019-PRAD-PROTON-RADIUS",
+      "source_uri": "https://doi.org/10.1038/s41586-019-1721-2"
+    },
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/index.html"
+    },
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:48c31408c79d3a9aa7c16efdbf5ef729d8ad162f2b9dbb8029d4d8cdcbef3568",
+      "source_id": "NIST-CODATA-2014-HISTORICAL",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/archive2014.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete product of proton carrier, tripling orbit, colour/Fold edge support, internal/external charge support, electromagnetic transport order, retained orientation, one-action scale boundary, target custody, provenance and extension forms.",
+    "dependency_hashes": [
+      "sha256:b6ee88b6143f56acb89c477b39d8cef44d5a14c044457d6d726f8fdc91d66c9a",
+      "sha256:d1404badf81996bdb15661d661a59e35d506c5769da65a050cb216661e4e325b",
+      "sha256:8ab168650d40784f57e4d315e29a8e7ee985703362fe91868ddc7ee20f9400c1",
+      "sha256:00dec63ddc386935fbd830bbd14b335e6bd44266487db01bcb9288963b3ae90b",
+      "sha256:92caa6e2757adad841d4f82e4e0c4d387121c5821ad58d487c226ab1ecacdf5e",
+      "sha256:c811d2a759f828a2617e1dbec0bc5f674253901a78619daeff3218cadbca7116",
+      "sha256:20cacddb85be8209bfe54f035254ec9169eb271aa995aa9295544483d834cfa3",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6"
+    ],
+    "exact_domain": "The admitted colour-three charged proton, its one-third/two-thirds tripling partition, both Fold labels, every ordered colour pair cell, the unique external unit charge, terminal alpha and the post-seal reduced proton Compton carrier.",
+    "relation_hash": "sha256:11e6b672d3c737850a28f259c818971cc342d935e444c543c92bf2ec39e33955",
+    "statement": "The unique terminal dimensionless proton rms charge-radius coefficient is exactly 10069574419808/2519231977345 = 4(One-alpha_terminal/10). A dimensionful radius is obtained only after the seal by composing this coefficient with the registered reduced proton Compton wavelength. The coefficient contains no electron, muon or scattering-probe input.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:0e1526eaf4f76d43764ff176ae83f81ae0df61c4ea5b4e3df50203da3d2f4083",
+    "program_id": "SFT-EXP-PHYS-PROTON-RADIUS-TERMINAL-029-exact-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "all current electronic, muonic, global-adjustment and scattering rows; historical conflict; source limitations; all structural formula controls",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-1902.08185-prad-proton-radius.pdf": "sha256:66925b870f8391be1a940b741ff60322877df7551cfa1db58b59add002e15ad5",
+    "experiments/external_sources/physics/snapshots/nature-2026-proton-radius-electronic.pdf": "sha256:834ddf04fdb3064d07307cc743544990e086601948903fb73390144d2a3ae253",
+    "experiments/external_sources/physics/snapshots/nist-codata-2014-all.pdf": "sha256:48c31408c79d3a9aa7c16efdbf5ef729d8ad162f2b9dbb8029d4d8cdcbef3568",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/proton-radius-terminal-source-record.json": "sha256:6bdbbef14cd8fc40d408028ba06911692f7b7c871b7214c038d51e33ed2118a1"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS",
+        "NATURE-2019-PRAD-PROTON-RADIUS",
+        "NIST-CODATA-2022",
+        "NIST-CODATA-2014-HISTORICAL"
+      ],
+      "target_id": "WITHHELD-PROTON-RADIUS-COMPLETE-VECTOR"
+    }
+  ]
+}

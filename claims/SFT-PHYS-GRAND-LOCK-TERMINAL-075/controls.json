@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-GRAND-LOCK-TERMINAL-075",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f4786d8a1868ac9dda94eacd530e2f7ee6b2edd640697d9918d5b1bb6ceb3819"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4c0f5ac74cf9fe44c88c8e6ec55de9f9cb5ea1bf87dd112e081f86b6667d1afe"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:deb3e5409ab49a544b77cf151557f3e24de8e44a6784215a4d3349e493725803"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:10640f437fe38173ec3f5697342bb57007e4c75ed6169e83dac6e47d1b8c4210"
+    }
+  ]
+}

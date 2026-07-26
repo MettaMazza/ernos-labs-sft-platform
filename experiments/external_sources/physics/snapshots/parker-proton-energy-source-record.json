@@ -1,0 +1,57 @@
+{
+  "schema": "sft-v3-parker-proton-energy-source-record/1",
+  "source_id": "DESAI-2025-PARKER-NIST-CODATA-PROTON-ENERGY",
+  "retrieval_date": "2026-07-25",
+  "sources": [
+    {
+      "source_id": "DESAI-ET-AL-2025-PARKER-HCS-PROTONS",
+      "measurement_body": "Astrophysical Journal Letters accepted manuscript via arXiv",
+      "source_uri": "https://arxiv.org/abs/2410.16539",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/desai-2025-parker-400kev.pdf",
+      "snapshot_hash": "sha256:6c950a6e142edf57df600d06e1ce40445fc18c84d42c3d2b916d63679a100fb5"
+    },
+    {
+      "source_id": "NIST-CODATA-2022",
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/index.html",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    }
+  ],
+  "registered_target": {
+    "parker_event": {
+      "event_date": "2022-12-12",
+      "heliocentric_distance_solar_radii": "16.25",
+      "reported_energy_wording": [
+        "above approximately 400 keV",
+        "up to approximately 400 keV",
+        "upwards of approximately 400 keV"
+      ],
+      "spectral_analysis_lower_keV": "67",
+      "spectral_analysis_upper_keV": "527",
+      "pitch_angle_analysis_lower_keV": "67",
+      "pitch_angle_analysis_upper_keV": "570",
+      "reported_power_law_index_magnitude": "5.1",
+      "available_magnetic_energy_per_particle_keV": "0.56",
+      "approximately_400_is_exact_cutoff_measurement": false,
+      "approximately_400_has_reported_standard_uncertainty": false,
+      "paper_calls_399_714_keV_a_prediction": false
+    },
+    "proton_rest_energy": {
+      "quantity": "proton mass energy equivalent in MeV",
+      "value_MeV": "938.27208943",
+      "standard_uncertainty_MeV": "0.00000029"
+    }
+  },
+  "row_custody": {
+    "abstract_and_event_rows_retained": true,
+    "complete_spectral_range_retained": true,
+    "complete_pitch_angle_range_retained": true,
+    "power_law_and_magnetic_energy_context_retained": true,
+    "approximation_and_missing_uncertainty_retained": true,
+    "proton_mass_and_uncertainty_retained": true,
+    "target_inaccessible_to_prediction_program": true,
+    "measurement_selects_formula": false,
+    "precision_cutoff_claim_permitted": false
+  }
+}

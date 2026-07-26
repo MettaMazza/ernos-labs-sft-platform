@@ -14,20 +14,33 @@ class VerificationProgressTests(unittest.TestCase):
         coverage = CoverageReport(304, 18, 1746, 1746)
         events: list[str] = []
         with patch("sft.verification.run_repository_validation") as repository:
-            with patch("sft.verification.run_core_coverage", return_value=coverage) as core:
-                with patch("sft.verification.rerun_registered_claims", return_value=407) as replay:
-                    report = verify_all(Path("."), progress=events.append)
+            with patch("sft.external_coverage.require_external_measurement_coverage") as external:
+                external.return_value.empirical_claims = 200
+                external.return_value.physics_formal_claims_reaching_measurement = 90
+                external.return_value.physics_formal_claims = 90
+                with patch("sft.verification.run_core_coverage", return_value=coverage) as core:
+                    with patch("sft.verification.rerun_registered_claims", return_value=407) as replay:
+                        with patch("sft.live_measurement.run_live_measurement_checks") as live:
+                            live.return_value.source_id = "NIST-CODATA-CURRENT-ALL-CONSTANTS"
+                            live.return_value.exact_checks = ("one", "two")
+                            report = verify_all(Path("."), progress=events.append)
         self.assertEqual(report, VerificationReport(coverage, 407))
         repository.assert_called_once_with(Path("."))
+        external.assert_called_once_with(Path("."))
         core.assert_called_once_with(Path("."), progress=events.append)
         replay.assert_called_once_with(Path("."), progress=events.append)
+        live.assert_called_once_with()
         self.assertEqual(
             events,
             [
                 "repository integrity: start",
                 "repository integrity: pass",
+                "external-measurement coverage: start",
+                "external-measurement coverage: pass (200 empirical claims; 90/90 formal Physics claims reach measurement)",
                 "unit/E2E tests and core coverage: start",
                 "unit/E2E tests and core coverage: pass (304 tests; 1746/1746 lines)",
+                "live authoritative measurement comparison: start",
+                "live authoritative measurement comparison: pass (2 exact current-source checks; NIST-CODATA-CURRENT-ALL-CONSTANTS)",
                 "complete verification: pass",
             ],
         )

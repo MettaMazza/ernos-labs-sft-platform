@@ -18,9 +18,9 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/atomic_spectra_completion_laws_v1.py",
         root / "sft/physics/atomic_spectra_postseal_validation_v1.py",
         root / "claims/SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004/execution.py",
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

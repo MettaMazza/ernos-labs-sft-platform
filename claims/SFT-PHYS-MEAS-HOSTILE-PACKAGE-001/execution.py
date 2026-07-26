@@ -16,8 +16,8 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/formal_law.py",
         root / "sft/physics/measurement_prerequisites.py",
         root / "claims/SFT-PHYS-MEAS-HOSTILE-PACKAGE-001/execution.py",
-        root / 'sft/engine/hostile.py',
-        root / 'sft/engine/fold_language.py',
+        root / 'sft/claim_evidence/hostile.py',
+        root / 'sft/claim_evidence/fold_language.py',
     )
     source_hash = build_source_manifest(root, source_files).manifest_hash
     validator = root / "claims/SFT-PHYS-MEAS-HOSTILE-PACKAGE-001/independent_validator.py"

@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042",
+  "data_source_ids": [
+    "NIST-COBLENTZ-BLACKBODY",
+    "NIST-DIODE-LASER-LINEWIDTH",
+    "NBS-ACOUSTIC-CAVITY-1986",
+    "NASA-PLASMA-FREQUENCY-PROBE-1992",
+    "NASA-STEREO-ALFVEN-LIST"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:781bed60aeda58caae7e0fae43bde4c5185855b06f4714c2cb93d800fda831af",
+  "falsification_condition": "Reject if a source or row changes; if the measured blackbody exponent is not four; if measured linewidth is empty or feedback does not narrow it; if acoustic resonances, direct plasma-frequency density dependence or Alfv\u00e9n observations are absent; if a dimensional coefficient is fitted from normalized structure; or if a target changes the formal survivor.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:888d25acd42241bcf5ca6fd22ade5ec7a4d86826d003f2cbbf0c563e3e38038e",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:190b909f593062b758867033c2cded08b50919a3c1b3a081b1ea3c70e42ccda0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7170c65d069033aa14fb9f9a00bfa574b3e6608c3d4808db44eea45b8398dc8c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2e8e08ceba695e1c6b65d73bdc191fcf5a1a7e4277a48a2d98d22a67a933c150",
+    "prediction_seal_hash": "sha256:3eddf88ac7f83e8e439c1f75308c072b811216796fe5ae8c950aab52adb8ccde",
+    "program_hash": "sha256:661d98dfcfc4416d7fa582fa053c48b1cab128896c463efced58976e8bc3cef3",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2bc3bb40eba1c87b8d126373ee04c4b104cc873b51eaa080886330eeb1bdabd2",
+    "target_material_present": false,
+    "trace_hash": "sha256:3c6768b9c86b00d4f22fdf7ed54a2743ba7626057d22b91de3d6903f9435e707"
+  },
+  "measurement_receipt_hash": "sha256:ff7685c1c62d0af80001e60ad5c44ba0199bea46b5a43073dedac0f3332a0dd7",
+  "measurements": [
+    "Measured blackbody exponent four forces doubling ratio sixteen.",
+    "Historical coefficient agreement is within one percent and spectrum shape agreement is retained.",
+    "Acoustic cavity resonances were measured to part-per-million precision.",
+    "Measured laser linewidth remains positive and feedback narrows it by at least factor twenty.",
+    "Two NASA flights track density through plasma frequency.",
+    "NASA registers Alfv\u00e9n observations across eight calendar years.",
+    "No dimensional coefficient is fitted from normalized Fold structure.",
+    "Tampered exponent three rejects."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:363a20ce7e39db88f33913b933b8b094dd389cb98329a79f05f46ca81275afcf",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042-external-target-custodian",
+    "experiment_registration_hash": "sha256:781bed60aeda58caae7e0fae43bde4c5185855b06f4714c2cb93d800fda831af",
+    "prediction_seal_hash": "sha256:3eddf88ac7f83e8e439c1f75308c072b811216796fe5ae8c950aab52adb8ccde",
+    "registered_target_identity_hash": "sha256:2bc3bb40eba1c87b8d126373ee04c4b104cc873b51eaa080886330eeb1bdabd2",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:8b835e0b93b586cf89bf7fb96b7b68e478d093fa27a36227913456b6b2a3ca14"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fdf048a5f1358d5dd699b09cc0df4135a9d45f2f439cd74e13768f4d8fa22d69"
+}

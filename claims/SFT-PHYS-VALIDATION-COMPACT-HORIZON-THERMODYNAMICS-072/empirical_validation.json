@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072",
+  "data_source_ids": [
+    "NASA-GSFC-WHITE-DWARF-CHANDRASEKHAR",
+    "FONSECA-2021-PSR-J0740-MASS",
+    "LIGO-VIRGO-2019-GW170817-REMNANT"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8ba2eb0d2c7868972e4316fb32dc0509713978c7f1de4b62bc8770c922380a0e",
+  "falsification_condition": "Reject if any source changes; the measured neutral-fermion object no longer lies above the complete white-dwarf limit; either conditional remnant row is omitted or stripped of its condition; Hawking non-observation is counted as confirmation; target data select or modify Claim 071; an external signed coordinate becomes a Fold proof scalar; or any hostile control passes incorrectly.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7d65d02a2f387d360082c171f4f6d10fe3548d315c86445fe47b15e1acf072c0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:846100317ec892a6df9ae5218c2f544ac2f5d2163629354b1bc5b3272987cfc3",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:46a4e26559b4688de96c8c6163a2aacbde53aa05ecfe781708e5b08b4919a216",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:206d9e270730633a3469f1a7661b14f06ca2f7125924284402093224aca7741d",
+    "prediction_seal_hash": "sha256:d1e3553fbd2b926d6cb2a9e14fe730d39b1a59ef043248d657a5c7a52d7da837",
+    "program_hash": "sha256:3001c089e2cb0fa3c1cad6b963103e347572c71629c9b9ab586c40992663ca01",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8b9f4250df66fab169f5e097932ed8180c07ef0f74479cbafddcbf37856b7e58",
+    "target_material_present": false,
+    "trace_hash": "sha256:7310c8cc6e713c74bcf891147f6c2e2f3103e7b10de37efa653219bcf3dded62"
+  },
+  "measurement_receipt_hash": "sha256:f6d5b035886daa8148cf24c06998e4f498ab93478bfd6af5988a21552f75299c",
+  "measurements": [
+    "NASA records electron degeneracy and the 7/5-solar-mass white-dwarf limit.",
+    "PSR J0740+6620 is measured at 52/25 +/- 7/100 solar masses; its complete interval lies above 7/5.",
+    "Both LIGO-Virgo conditional remnant limits are retained with their model conditions and are not called direct TOV measurements.",
+    "The prior horizon receipt is retained unchanged; direct Hawking radiation and temperature remain unmeasured standing tests.",
+    "Hawking non-observation is explicitly not counted as confirmation of the formal mT=1/16 prediction.",
+    "Reversed-order, collapsed-upper and erased-condition hostile controls all reject."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:cf5f250e6766c2a38fe66c7f8bb8e7daac18393d150e46819efa78efed40a9af",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-external-target-custodian",
+    "experiment_registration_hash": "sha256:8ba2eb0d2c7868972e4316fb32dc0509713978c7f1de4b62bc8770c922380a0e",
+    "prediction_seal_hash": "sha256:d1e3553fbd2b926d6cb2a9e14fe730d39b1a59ef043248d657a5c7a52d7da837",
+    "registered_target_identity_hash": "sha256:8b9f4250df66fab169f5e097932ed8180c07ef0f74479cbafddcbf37856b7e58",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:22699a032779a9026b24db2419e61d706524eee99bfd600d1c4a48c3c00c219e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:bfd7bc7756485a0dafece5f0e8f659d62f55132d13aa52d371010ecda340abc5"
+}

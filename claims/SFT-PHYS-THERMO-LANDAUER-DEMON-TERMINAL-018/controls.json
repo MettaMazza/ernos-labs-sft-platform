@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-THERMO-LANDAUER-DEMON-TERMINAL-018",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:556549826b012b3cd71e8b80542015d3224b773d5fa6f5869057a4b2d549c6ac"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f085eeb647249724d91ed525c9cccd368fe1fbbaa6b20ac7accc21ce81840518"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9edfe8f63e326a077581b89b692a4cd4105839ff44467908a825fdb9b2dcc58e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:372c69b1e6718117746a72b16bdb6732ac79dab6e19b75d13f20b81b065a1275"
+    }
+  ]
+}

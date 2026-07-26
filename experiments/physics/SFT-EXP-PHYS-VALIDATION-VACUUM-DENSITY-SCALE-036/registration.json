@@ -1,0 +1,117 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "An imported continuum vacuum sum cannot replace the sealed finite ledger.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record, primary PDF or CODATA table is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed coefficient, prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Early target access, fitted transport or untyped floor/fraction equality is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A vacuum central value changed to 0.6000 rejects the interval comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:65a50e456a5dc91ae2c46a1a3d63d23a91f82e0a3c1c3629b71beb294583450e"
+  },
+  "development_observations": [
+    "V1/V2 cosmological targets and an older local Planck transcription were known before V3 reconstruction; no historical-blindness claim is made.",
+    "Formal claim 035 was admitted before the primary Planck PDF was retrieved for this comparison.",
+    "The page-225 H0 row is 67.68 +/- 0.42 and corrects the older local 67.66 transcription without changing any prior receipt."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "Both exact Fold magnitudes lie in their complete Planck intervals, the central budget closes, dimensional transport is positive, type and transcription controls pass, and the tampered target fails.",
+    "comparison_implementation_hash": "sha256:763d40df314ddf01dd02b642d3a29e7c2b61145ae0c610b709d4dc68601a351d",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity or registered row changes; if 11/16 leaves the complete Planck vacuum interval; if 33/16 leaves its exact three-direction transported interval; if the Planck central budget ceases to close at the One; if dimensional transport is nonpositive or scale-inconsistent; if One/2^20 is relabeled as the global fraction; if the older H0 transcription is silently substituted; or if any target changes the formal survivor."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_primary_Planck_density_and_Hubble_rows",
+      "measurement_body": "Planck 2018 baseline parameter tables, 68 percent limits, table 12.16",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:03038805021f2f894e09f4b21b0f20418570e352822f095abcc085942919da70",
+      "source_id": "PLANCK-PLA-BASE-NRUN-TTTEEE-BAO-LENSING-68PC",
+      "source_uri": "https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf"
+    },
+    {
+      "custody_role": "withheld_exact_dimensional_speed_reference",
+      "measurement_body": "2022 CODATA recommended values - complete ASCII table",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-EXACT-C",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed vacuum relation, Planck/CODATA target, source provenance, capability-closed isolation, proof/measurement separation, complete row and correction retention, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:5896f3217b959a6133da3bc481333187f1744d5978afbf48861367a3c0f8fd95",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:d7af0a265f7b2f9ef64eb162d482f9b28e304d9d023391ed4017011221952208"
+    ],
+    "exact_domain": "The admitted exact local floor, finite mode ledger, 11/16 global share and 33/16 normalized magnitude; Planck table 12.16 page-225 H0, Omega_Lambda and Omega_m rows with complete uncertainties; CODATA exact c; the older H0 transcription correction; and the local/global adverse type control.",
+    "relation_hash": "sha256:35af6d1612fc75e8f2093379f93740eeb69495db7c39544911e73971270b1363",
+    "statement": "The exact Fold vacuum share 11/16 is inside Planck's interval [6833/10000,1389/2000]. The normalized Fold magnitude 33/16 is inside [20499/10000,4167/2000]=3 times that interval. Using page-225 H0=67.68 +/- 0.42 km s^-1 Mpc^-1 and exact c=299792.458 km s^-1 transports Lambda to the exact positive interval [(33/16)(67.26/c)^2,(33/16)(68.10/c)^2] Mpc^-2. One/2^20 is below the global interval and is therefore retained only as the separately typed local boundary-energy floor.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:154dad0657b50c554cf436a3696d0383a3ed047a66a8db5ddcc737a8ab5e09e6",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain all Planck vacuum, matter, H0, uncertainty, CODATA exact-c, transcription-correction and local/global type-control rows",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/planck-baseline-params-2018-68pc-v2.pdf": "sha256:03038805021f2f894e09f4b21b0f20418570e352822f095abcc085942919da70",
+    "experiments/external_sources/physics/snapshots/vacuum-density-planck-postseal-source-record.json": "sha256:a0c8d15b9ab666329943cac4d5899ff5617871d1e1d9d6f60e5d4dd22eed4652"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "PLANCK-PLA-BASE-NRUN-TTTEEE-BAO-LENSING-68PC",
+        "NIST-CODATA-2022-EXACT-C"
+      ],
+      "target_id": "PLANCK-CODATA-WITHHELD-COMPLETE-VACUUM-SCALE-RECORD"
+    }
+  ]
+}

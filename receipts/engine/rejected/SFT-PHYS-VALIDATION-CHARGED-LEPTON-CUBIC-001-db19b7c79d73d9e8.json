@@ -1,0 +1,58 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-PHYS-VALIDATION-CHARGED-LEPTON-CUBIC-001",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:96884823b1c4e57cc9285812647add0148a7831da80d428ce97fb9f78cfb48bd",
+  "empirical_validation_hash": "sha256:1357c4924ffd3581f73cef1eecda6748112aa774ba576ad4b74321c8870a3372",
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": "sha256:bbee752589d7b68b05a9b4e7d83bbbb088f6b1b5e23d09f8bb7ddc3a5f9613dd",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "empirical validation failed",
+      "gate": "empirical_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "empirical_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:db19b7c79d73d9e8b03f6dde54962b9c35bfd6202cb35c473728736fd99a19fd",
+  "violations": [
+    "empirical validation failed"
+  ]
+}

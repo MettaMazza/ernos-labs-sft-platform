@@ -1,0 +1,171 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A common axis not descending from the admitted formal receipt must reject.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source hash or registered row change must reject.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate must reject.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, row deletion, uncertainty rescaling or mismatch-as-success must reject.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced terminal or APV value must reject rather than become a passing label.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:9dba95ae6886127d78232a229b226b7ad9f23da77587a1dcf12d7db10023dfd2"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:44d542f87d12844c02c321ac651008ae7ddd738a3b16e7d2c3d8700ec89eca55",
+      "role": "development_only",
+      "source_id": "V1-V2-COMMON-SCALE-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "dimensionless terminal on-shell share",
+      "dimensionless support-eight APV share",
+      "ordered common-scale direction"
+    ],
+    "external_reference_protocol": "Only like-typed dimensionless records are compared after the prediction seal; no dimensional datum enters formal forcing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Both like-typed measured intervals contain the sealed exact values, the registered direction passes, every row and method boundary remains unchanged, and no displacement is rewarded as an SFT result.",
+    "comparison_implementation_hash": "sha256:01c433e1565216397f0a18f35b00e927b0c6e15f1d956e2b33743fc497224fa1",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054-post-seal-evaluator",
+    "falsification_condition": "Reject if a source or dependency changes; either forced value leaves its like-typed measured interval; the below-W direction reverses; a row or threshold boundary is omitted; NuTeV displacement is made a passing result; any uncertainty is widened; or target data alter the formal survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact membership of the terminal share in the complete on-shell interval.",
+        "metric_id": "TERMINAL-ON-SHELL-INTERVAL",
+        "unit_protocol": "dimensionless exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "Exact membership of 25/106 in the complete cesium APV interval.",
+        "metric_id": "SUPPORT-EIGHT-APV-INTERVAL",
+        "unit_protocol": "dimensionless exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "All registered numeric rows and threshold boundaries retained with their source method types.",
+        "metric_id": "COMPLETE-LOW-TRANSFER-CUSTODY",
+        "unit_protocol": "source-bound row vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics 2026: Electroweak Model and Constraints on New Physics",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb",
+      "source_id": "PDG-2026-ELECTROWEAK-SCALE-VECTOR",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Complete admitted strong and electromagnetic running vector",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953",
+      "source_id": "PDG-2025-2026-STRONG-EM-COMPLETE-RUNNING-VECTOR",
+      "source_uri": "repository-bound source record"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of common-scale carrier, target-free relation, provenance, custody, proof/measurement separation, row completeness, successor closure and absence of extra rules.",
+    "dependency_hashes": [
+      "sha256:eefa1fc4decc13cac6f30a4a706560c5c59428d8c578f95ff752b859e588090d",
+      "sha256:8f092b910fb6d0fb1c51944da62daee522b62beb896a86d6b9c149760d27494c",
+      "sha256:c5a9ad1316ea1aabb73d865a1d64dc0ccc4d495ecf8cf71ce970fce99f3615c9",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The admitted common-axis receipt; terminal and support-eight exact shares; all four scheme rows; all four numeric low-transfer rows; all eight plotted measurement classes; threshold boundaries; complete strong/electromagnetic receipt; and exact source identities.",
+    "relation_hash": "sha256:40f62b31fd3cf5755d78f9a80ce7768c1355f4b7470ba8891a1056bbdc3c2e96",
+    "statement": "The terminal on-shell share lies inside [22333,22351]/100000. The support-eight share 25/106 lies inside [2331,2367]/10000. The complete registered low-transfer vector preserves the sub-W direction. No mismatch, uncertainty multiplier, fitted rung or measurement-selected exception is admitted.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:44d542f87d12844c02c321ac651008ae7ddd738a3b16e7d2c3d8700ec89eca55",
+      "input_id": "FORMAL-COMMON-SCALE-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    },
+    {
+      "content_hash": "sha256:e93f04515944a1951b78463db3083350fbc77e6d8506edbcdc13178cedfbc852",
+      "input_id": "CORRECTED-ELECTROWEAK-RECEIPT",
+      "value_kind": "admitted-empirical-receipt"
+    },
+    {
+      "content_hash": "sha256:b9263f585f01a2401261f465ad250f405a9914da5c53e57ba113f076aeb4f309",
+      "input_id": "COUPLING-RUNNING-RECEIPT",
+      "value_kind": "admitted-empirical-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:ca48d78d33399ab87336dd329c1201078171720157df000c41e3507cf0f979bc",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "claims/SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006/certificate.json": "sha256:f598cd663a76f8137cf2e40c5e8154083b8196ec399751da8577ce9769f688d6",
+    "claims/SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030/certificate.json": "sha256:904ba1d325c5e5200cacb4ff09fdb0abe1b8328d6ae16177e29f2e596d4138bb",
+    "claims/SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053/certificate.json": "sha256:3a19d721c429874f404e7b75601511f8ba0c39a68fae6f2c46f2010d12a492a4",
+    "experiments/external_sources/physics/snapshots/common-scale-measured-value-successor-source-record.json": "sha256:4143fd2a2b5f480bc35c84e83b3febd9e04f72661b6c1607ba9bc7204ac61d00",
+    "experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json": "sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953",
+    "experiments/external_sources/physics/snapshots/pdg-2026-electroweak-model.pdf": "sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on a changed source, missed like-typed interval, reversed direction, omitted row, target access, fitting, uncertainty rescaling, mismatch-as-success or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2026-ELECTROWEAK-SCALE-VECTOR",
+      "target_id": "PDG-COMMON-SCALE-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD"
+    }
+  ]
+}

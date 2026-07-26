@@ -1,0 +1,120 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-INFLATION-GROWTH-040",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A fitted inflation model cannot replace the sealed Fold relation.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record or PDF is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, rounding, fitting or e-fold conflation is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A displaced scalar interval or non-strict tensor comparison rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:68367a142aa15a609e461d7b9041e18d391237b08ec73ae3f160de2ce90278a1"
+  },
+  "development_observations": [
+    "V1/V2 named inflation, scalar tilt, tensor support and structure growth; V3 independently sealed the exact relation before these source snapshots were bound.",
+    "Formal Claim 039 was admitted before the two bound source snapshots were retrieved.",
+    "The narrow tensor margin is retained exactly and cannot be rounded into a pass."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "31/32 is inside the complete scalar interval, 1/32 is strictly below the tensor upper bound, all rows remain visible, and the tampered scalar target fails.",
+    "comparison_implementation_hash": "sha256:3bc8ba41b984ea5ee2bab87793ea10ce71c4986cac2058c2cbef601aa55df6bc",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-INFLATION-GROWTH-040-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity or registered row changes; if 31/32 leaves the complete scalar interval; if 1/32 is not strictly below the tensor bound; if the narrow margin is omitted; if conventional e-fold language is asserted as exact equality; or if a target changes the formal survivor."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-INFLATION-GROWTH-040",
+  "external_measurement_sources": [
+    {
+      "custody_role": "primary scalar spectral-index measurement",
+      "measurement_body": "Planck 2018 results. X. Constraints on inflation",
+      "snapshot_hash": "sha256:fa728dc0198ccfddd7132c0e0a29cca586a1431a045568a33d7a197a0427427d",
+      "source_id": "PLANCK-2018-INFLATION",
+      "source_pages": [
+        1
+      ],
+      "source_uri": "https://arxiv.org/pdf/1807.06211"
+    },
+    {
+      "custody_role": "primary tensor-to-scalar upper-bound measurement",
+      "measurement_body": "Improved limits on the tensor-to-scalar ratio using BICEP and Planck",
+      "snapshot_hash": "sha256:5a1add11c98a8e5c4d70fd438eacd5242aa10631ffea0c72358f49e59eda07f2",
+      "source_id": "BICEP-PLANCK-2022-TENSOR",
+      "source_pages": [
+        1
+      ],
+      "source_uri": "https://arxiv.org/pdf/2112.07961"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed inflation relation, complete external target, source provenance, capability-closed isolation, proof/measurement separation, complete rows, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:88e6be0f5cd17165aa6a232d953e1b5ba2b88770cb8b15504bf0b9cd5335f269",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71"
+    ],
+    "exact_domain": "The admitted scalar support 31/32 and tensor support 1/32; both endpoints of the Planck one-standard scalar interval; the strict BICEP/Planck tensor upper bound; every bound source and custody row; and explicit separation of exact Fold doubling depth from conventional model-dependent e-fold language.",
+    "relation_hash": "sha256:89e0638cbf1a2aacd18d357f70f3054e6cc4610492b4beaf5abc59cc93726893",
+    "statement": "Planck ns=0.9649+/-0.0042 gives exact interval [9607/10000,9691/10000]; the independently forced 31/32 equals 0.96875 and lies inside that interval. BICEP/Keck plus Planck reports r<0.032=4/125 at 95 percent; the independently forced 1/32=0.03125 lies strictly below the bound by 3/4000=0.00075. The complete exact 31/32+1/32 partition therefore passes both external rows without fitting. Five Fold doublings is not relabelled as a conventional natural-log e-fold count, for which this claim asserts no measured equality.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:561c75af6c7f4c75d6e3340269a2fbd6f02f165af9ed55766c66b9da20c5d0a6",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-INFLATION-GROWTH-040-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain both primary sources, both scalar endpoints, the strict tensor bound and the exact 3/4000 margin",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-1807.06211-planck-inflation.pdf": "sha256:fa728dc0198ccfddd7132c0e0a29cca586a1431a045568a33d7a197a0427427d",
+    "experiments/external_sources/physics/snapshots/arxiv-2112.07961-bicep-planck-tensor.pdf": "sha256:5a1add11c98a8e5c4d70fd438eacd5242aa10631ffea0c72358f49e59eda07f2",
+    "experiments/external_sources/physics/snapshots/inflation-growth-postseal-source-record.json": "sha256:b04ac2ae7426e91117f0f7594019354fd4921629b22e42dbc38d3acce93ff45b"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "PLANCK-2018-INFLATION",
+        "BICEP-PLANCK-2022-TENSOR"
+      ],
+      "target_id": "INFLATION-GROWTH-WITHHELD-COMPLETE-OBSERVATION-RECORD"
+    }
+  ]
+}

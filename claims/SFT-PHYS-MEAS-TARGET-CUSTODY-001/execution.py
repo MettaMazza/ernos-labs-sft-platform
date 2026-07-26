@@ -16,7 +16,7 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/formal_law.py",
         root / "sft/physics/measurement_prerequisites.py",
         root / "claims/SFT-PHYS-MEAS-TARGET-CUSTODY-001/execution.py",
-        root / 'sft/engine/custody.py',
+        root / 'sft/claim_evidence/custody.py',
         root / 'sft/engine/empirical.py',
     )
     source_hash = build_source_manifest(root, source_files).manifest_hash

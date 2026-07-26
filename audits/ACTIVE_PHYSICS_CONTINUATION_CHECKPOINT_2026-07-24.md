@@ -4,6 +4,43 @@ This file is the durable restart boundary for the current V3 Physics successor.
 It prevents conversation compression from causing completed work to be repeated
 or the derivation sequence to restart.
 
+## Live restart position — 2026-07-26
+
+This section supersedes every older progress count in this file.  It must be
+read before any continuation work.
+
+- Newest formal receipt:
+  `SFT-PHYS-GRAND-LOCK-TERMINAL-075`,
+  `sha256:ae18f67371c8e7054430935d6b5e5f3162f24cf9cba073769384bf7ba467d817`.
+- Newest empirical receipt:
+  `SFT-PHYS-VALIDATION-GRAND-LOCK-076`,
+  `sha256:93f4497d6f7ef3c477246079f62c21f96a7ae27fd9516fa876e9d413bbab569e`.
+- Every preceding Physics family is completed evidence and must not be
+  regenerated or replayed because of conversation compression.
+- Claim 075 independently regenerated all 4,096 formal alternatives and closed
+  the complete pre-lock ownership, 534-node root trace, exact headline vector,
+  21-value generator perturbation and cross-domain identity certificate.
+- Claim 076 independently regenerated all 256 empirical alternatives and
+  reconciled 234 pre-lock empirical claims, 147 source identities, every
+  available measurement receipt, six legacy shapes and fourteen adverse/scope
+  claims.  Its first duplicate-dependency submission remains rejected evidence.
+- The categorical audit is 488/488 same-strength closed with zero open atom and
+  zero remaining gap family.  The current categorical inventory is 349 claims.
+- Physics paper v1.1 is being repaired as a publication-ready manuscript.  No
+  push or publication has occurred.
+- The former handwritten 49-ready/300-blocked publication ledger was not an
+  engine result and contradicted the authoritative admitted receipts, passed
+  empirical certificates and Grand Lock 076.  It is withdrawn as a release
+  classifier and must never be used to mark admitted Physics claims blocked.
+  Publication readiness is checked from the complete categorical inventory,
+  immutable receipts, claim evidence, empirical certificates, Grand Locks,
+  paper coverage and publication gate.  `verify-all` is not the current
+  operation because Maria previously stopped that replay.
+
+On every restart, inspect the newest live receipts and claim packages before
+trusting this prose.  If later receipts exist, advance from them and update this
+section; never fall back to an older row or a larger historical count.
+
 ## Categorical correction — authoritative for every count below
 
 The former 498-row "Physics-owned" ledger was invalid bookkeeping: its builder
@@ -15,11 +52,12 @@ claim packages, immutable engine receipts and post-seal comparison narratives
 remain valid evidence and are not altered by the categorical correction.
 
 The authoritative current Physics scope is
-`publications/inventories/physics.json`: exactly 285 claims whose registration
+`publications/inventories/physics.json`: exactly 349 claims whose registration
 and immutable model-admitted receipt both assign them to Physics. Astronomy and
 cosmic history, Chemistry, Materials, Biology, consciousness, applications and
 other categorical branches are excluded. Publication completeness is checked
-against those 285 receipts by `tools/verify_physics_publication.py`.
+against all 349 receipts by `tools/verify_physics_publication.py`. Remote
+release remains a separate act requiring Maria Smith's explicit authorization.
 
 ## Governing instruction
 
@@ -1684,3 +1722,226 @@ Physics prior census has 333 same-strength closed obligations and 165 open. D10f
 has no remaining work. The next sequential open V1 Physics obligation is D10e,
 the complete nonlinear strong-field iteration and confinement fixed-point
 boundary.
+
+## 55. Family 011 temperature, equilibrium and fluctuation-response closed
+
+The later categorical family audit supersedes the older sequential count above.
+`SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043` already jointly forces
+the six Family 011 obligations: finite mean-throw temperature; the total/count
+identity; unique half-One binomial equilibrium; the complete fixed-count,
+fixed-throw dyadic multinomial maximum; complementary three-quarter/quarter
+fluctuation and response; and the deterministic four-record thermal-noise
+orbit. Its immutable formal receipt is
+`sha256:cf536f7516eb1c85bb075500d9c1a0ebd64bdddb544878f26a27424d08de25bf`.
+
+The missing post-seal comparison is now closed by
+`SFT-PHYS-VALIDATION-THERMAL-EQUILIBRIUM-044`. The untouched engine generated
+all 256 registered empirical forms, found one survivor, reran an independent
+enumerator, denied target access before prediction sealing and admitted receipt
+`sha256:60366227e00c50a3529d98538a3ca42d9620f4da30a174b9cff96f1122097dbd`.
+The empirical-validation hash is
+`sha256:9d94b8c34f0413e7170a0aa78fc95dec6807bae70ea620e75af6f9f131e56a16`
+and the measurement receipt is
+`sha256:cffa2dbbd885f19cf9a19f08aec070370ba237b7aa12735d2173fc8d77f0e7f6`.
+
+All values are compared as exact integers over `10^30 J/K`. Exact SI `k_B` is
+`13806490/10^30`. The acoustic interval
+`[13806456,13806512]/10^30` and the Johnson-noise interval
+`[13806340,13806680]/10^30` independently contain it. The preserved target also
+retains the acoustic mean-kinetic-energy relation, the Johnson temperature and
+resistance noise-response relation, every uncertainty row and the explicit
+fact that neither the dyadic ladder nor the `3/4:1/4` Fold coordinates are
+reported as universal direct measurements. A tampered acoustic interval
+rejects.
+
+The regenerated authoritative categorical ledger is now 423 same-strength
+closed and 65 open atoms, allocated one-to-one across 12 remaining families.
+Family 011 must not be rederived after compaction. The next family is Family
+012: spin statistics and Bose-Einstein condensation.
+
+## 56. Family 012 spin statistics and Bose-Einstein condensation closed
+
+Family 012 is closed by the new formal successor
+`SFT-PHYS-SPIN-STATISTICS-CONDENSATION-TERMINAL-045` and its post-seal
+empirical successor
+`SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046`. The construction
+composes, rather than repeats, the already admitted exchange, exclusion,
+indistinguishability, two-spin/deuteron, thermal-equilibrium and collective
+radiation laws.
+
+The complete finite occupation census forces exactly `C(N+L-1,N)` preserving
+words for `N` occupants over `L` levels, with an admitted shared cell for every
+positive finite `N`. Alternating exchange forces exactly `C(L,N)` words when
+`N<=L`, caps every cell at one occupant, and produces the empty One support
+when `N>L`. Every admitted finite occupation word receives an exact rational
+dyadic weight and the complete measure sums to the One. The two-label spin
+census is exactly three preserving readings to one alternating reading. A
+typed alternating spin state changes held fibre after one complete turn and
+first returns after two; an alternating pair is preserving and returns after
+one. No negative or imaginary phase scalar is used.
+
+For every finite preserving population, level support and Fold factor `m>=2`,
+complete cold-recurrence enumeration produces one first depth at which the
+shared ground-orbit weight crosses the already admitted lock share
+`(m-1)/m`. The canonical mean throw at that depth is exact rational. Separate
+enumeration of total throw leaves one and only one minimum: the whole finite
+population in the shared ground orbit. The formal engine generated all 256
+law forms, eliminated 255, and admitted the unique survivor with receipt
+`sha256:f71da5b86f99d6569a1f33dc6fc37024cc5d458b12e625c5dbc4faf3c33ccda7`.
+Its derivation seal is
+`sha256:5ee1579388bfe3edb1a8772aee7d8c0c09a7eb05308730458a52e33091e85f95`.
+
+Only after that formal receipt existed were three primary physical records
+bound. The finite rubidium-87 Bose-gas record measures ground-state occupation
+increasing under cooling and a sharp transition at `(94 +/- 5)/100` of its
+declared trap scale, with exact interval `[89,99]/100`. The NIST/JILA
+potassium-40 record directly observes Pauli blocking in a two-spin-state gas
+and retains its reported factor-two collision-cross-section reduction. The
+neutron-interferometry record measures a return of `704 +/- 38` degrees, whose
+complete interval `[666,742]` contains the sealed two-turn `720`-degree
+correspondence. The apparatus-specific BEC scale and collision-response
+magnitude remain measured scale records rather than law selectors.
+
+The empirical engine generated all 256 registered forms, independently
+reconstructed their single survivor, denied target access before sealing,
+retained every source, interval, direction, response and limitation row, and
+rejected tampered-spinor and reversed-cooling controls. Its receipt is
+`sha256:6c37132ae33b8f23b06e69b7034c5acdd39144d51b2661d7e65f441b400604eb`,
+empirical-validation hash is
+`sha256:b19baca0cbfe8f4673e94c3cb40502fba2a954a0172387e9573a3d5bafd4e0fe`,
+and measurement receipt is
+`sha256:171baf50d3b3944b9f2c8e14f7bfddf7da778071c52a03bfc33e6c422ea6ff95`.
+
+The untouched engine seal remains valid. The authoritative categorical ledger
+is now 428 same-strength closed and 60 open atoms, allocated one-to-one across
+11 remaining families. Family 012 must not be repeated after compaction. The
+next family is Family 013: phase criticality, universality exponents and
+turbulence scaling.
+
+## 57. Family 013 phase criticality, universality and turbulence scaling closed
+
+Family 013 is closed at its declared V1/V2 boundary by the deductive successor
+`SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047` and the external
+empirical successor
+`SFT-PHYS-VALIDATION-CRITICALITY-UNIVERSALITY-TURBULENCE-048`.
+
+The first generated class is the binary self-antipodal local-order class. Its
+complete positive perfect-power construction forces threshold `1/2`,
+`beta=1/2`, `nu=1/2`, `gamma=1` and `delta=3`; alpha and eta are typed empty
+One records rather than numerical-zero proof scalars. Widom, Rushbrooke and
+Fisher close exactly. The second class is the separately generated conserved
+three-space cascade. Cube refinement carries a squared second-order structure
+record, forcing `2/3`; shell succession adds the One and forces a falling
+spectrum with positive magnitude `5/3`. At every positive whole base and depth,
+`structure^3=length^2` and `spectrum-divisor^3=wavenumber^5`. Equality of
+physical classes requires the complete generated class key; no assertion that
+every transition shares one exponent vector is admitted.
+
+The untouched engine generated all 256 formal candidates, eliminated 255 and
+admitted the unique survivor with receipt
+`sha256:0601d19640943c4b99eb8cccf061e3115c520773eac5e762bf7c5b7440339b25`.
+Its derivation seal is
+`sha256:b05e501fa57215bf093b880f7960323996494347ac2c58befc10f8200cfe0a58`.
+No renormalization group, Landau functional, Kolmogorov law, measured exponent
+or fitted correction entered candidate selection.
+
+Only after that receipt existed were four independent target records bound.
+Neutron scattering in erbium gives beta `[46,50]/100`, gamma `[90,102]/100`
+and nu `[47,51]/100`; each interval contains its sealed exact carrier. The
+complete five-composition manganite record retains every row: La00, La04, La06
+and La08 contain the full beta/gamma/delta vector, while La02 excludes
+gamma=One and delta=three and is retained as the unfavorable class-membership
+control. The independent turbulence computation gives
+`zeta_2=(679 +/- 13)/1000`, hence `[666,692]/1000`, which contains exactly
+`2/3`. A physical Reynolds-count-720 turbulent-channel experiment exhibits
+five-thirds compensated plateaux over `40--4000 Hz` by Fourier analysis and
+`20--2000 Hz` by Hilbert analysis. Finite-Reynolds and structure-function-range
+limitations remain explicit.
+
+The empirical engine independently regenerated all 256 registered forms,
+sealed the prediction before target release, retained all four sources and all
+seven reported measurement rows, and rejected a shifted structure interval, a
+false La02 match, a removed sample row and a reversed spectrum orientation. It
+admitted receipt
+`sha256:075d304c85f48d6886ba7cb1fd44d5db25815cdf3a5d016502da1435654f1bdc`.
+Its empirical-validation hash is
+`sha256:875b3c350cd9f407f5608d25ef989b2161ffad838c4c4d9805412d07c43aec58`
+and its measurement receipt is
+`sha256:eee857690b4e7a3a0c6c6d16b82055bd33a7ae269d887097921428c9f6ece26d`.
+
+The engine seal remains
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`
+with canonical tree `ad30f4866c18b2adbade95a0b2de40d5caa61308`. The regenerated
+categorical ledger is now 435 same-strength closed and 53 open atoms, allocated
+one-to-one across 10 remaining families. Family 013 must not be repeated after
+compaction. The next family is Family 015: quantum joint support, measurement
+depth and uncertainty product.
+
+## 58. Family 015 quantum support, preparation depth and Bell boundary closed
+
+Family 015 is closed at its declared V1/V2 boundary by the deductive successor
+`SFT-PHYS-QUANTUM-SUPPORT-UNCERTAINTY-TERMINAL-049` and the external empirical
+successor `SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050`.
+
+The formal successor corrects three inherited overstatements instead of
+rubber-stamping them. A complete Cartesian product is factorable and is not
+entanglement by itself; fifteen is exactly reducible as three times five; and a
+support-cardinality spread is not automatically a statistical moment variance.
+Entanglement is forced at the nonfactorable joint-support class.
+
+For every complete dyadic preparation `N=2^k`, the preparation itself uniquely
+fixes depth `k` and branch unit `1/N`. Thus depth three and `1/8` apply exactly
+to the eight-branch preparation, not as universal selected constants. Exact
+held/returned Walsh parity generates diagonal persistence and off-diagonal
+cancellation without an imported signed, complex or irrational proof scalar.
+Parseval counting then forces `s_t*s_f>=N`, unit-free support spread
+`(s_t*s_f)/N>=One`, and squared normalized support spread at least `1/N^2`.
+The complete census of 65,808 nonempty supports through depth four passes, and
+the registered induction extends the result depth-independently. Depth two
+attains the exact squared support-spread floor `1/16`.
+
+The complete `2 x 3` joint census contains 63 nonempty supports: 21 factorable
+and 42 nonfactorable. The complete `3 x 5` census contains 32,767: 217
+factorable and 32,550 nonfactorable. Every projection is complete and remote
+relabeling preserves local counts. All sixteen deterministic local two-setting
+response pairs obey the three-of-four bound, while complete setting-inclusive
+joint support exceeds that factorization boundary with invariant local
+marginals and no signalling.
+
+The untouched engine admitted the formal claim with receipt
+`sha256:1560f2e0de3870abac2bdc6575aa9811c4dc013d5a6d705e729a832dc451b79f`.
+Its derivation seal is
+`sha256:b87466e8c836feaea657b3d35f530a9de80e70f92fb663dd7a449b119c7fb469`.
+
+Only after that seal existed was the primary Storz et al. superconducting-
+circuit Bell record retrieved. More than one million trials measured
+`S=(20747 +/- 33)/10000`, so the exact interval `[20714,20780]/10000` lies
+wholly above the local-factorization bound two. The reported central excess is
+greater than twenty-two stated standard uncertainties and `P<10^-108`. The
+complete trial-duration interval lies below the light-travel-budget interval,
+and the memory-robust analysis is retained.
+
+The experiment's measurement-independence assumption is also retained rather
+than hidden. The result rejects local factorization under the declared
+conditions; it does not exclude every deterministic model, and the physical
+random-setting procedure is not imported as ontic nondeterminism. The Bell
+record does not relabel the separate formal Walsh support product as a measured
+variance.
+
+The empirical engine generated all 256 registered forms, independently
+reconstructed the unique survivor, denied target access before prediction
+sealing and rejected tampered-S and failed-space-like-timing controls. It
+admitted receipt
+`sha256:92401779cd8580dbaf3962207ae25e0b7fc75787f91e27681d1ac290de403085`.
+Its empirical-validation hash is
+`sha256:1c47006310cbe6ee2c744184c71d29789299e7ccf62f3d81b51de8b4fb68a4b7`
+and its measurement receipt is
+`sha256:c97b436ea794ddadea73446b5e06a1a88a0a23119e66279f989cba218a71c2b6`.
+
+The engine seal remains
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`
+with canonical tree `ad30f4866c18b2adbade95a0b2de40d5caa61308`. The regenerated
+categorical ledger is now 441 same-strength closed and 47 open atoms, allocated
+one-to-one across 9 remaining families. Family 015 must not be repeated after
+compaction. The next family is Family 020: particle modes, generation sites and
+mass-pattern transport.

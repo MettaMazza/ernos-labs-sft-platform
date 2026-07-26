@@ -1,0 +1,62 @@
+{
+  "audit_id": "sft-v3-engine-integrity-audit/2026-07-25",
+  "canonical_engine_file_count": 16,
+  "canonical_engine_git_tree": "ad30f4866c18b2adbade95a0b2de40d5caa61308",
+  "canonical_engine_seal": "sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a",
+  "current_engine_status": "VALID_CANONICAL_ENGINE",
+  "current_engine_worktree_clean": true,
+  "current_head": "1944fe037ed869d13c298246b37587ac0eb08dd0",
+  "current_origin_main": "1944fe037ed869d13c298246b37587ac0eb08dd0",
+  "engine_history": [
+    {
+      "commit": "8f0e473c95f3682b2954f3be0140927a9aac4e91",
+      "classification": "initial_authority",
+      "tree": "e5e870f5efc1e408a9ce57b3544c32eb75468c3d"
+    },
+    {
+      "commit": "9d5184bc45f0404425ddb3961c0640fa3f95e5ec",
+      "classification": "pre_freeze_strengthening",
+      "tree": "267cd6d792021c0f9b13eb7928d5515e8a4386a4"
+    },
+    {
+      "commit": "501925b1c8553f49493d8efaeedfac9d8f42ab54",
+      "classification": "canonical_freeze",
+      "tree": "ad30f4866c18b2adbade95a0b2de40d5caa61308"
+    },
+    {
+      "commit": "780de3a7888d69c6d1c10678a174654f3dcc0a02",
+      "classification": "post_freeze_namespace_expansion_violation_no_core_gate_change",
+      "tree": "cc3147268896dccfe81a96c42f56af7a940c020f"
+    },
+    {
+      "commit": "8963cd974ee2aeb640879f655884d97dd5af800b",
+      "classification": "post_freeze_namespace_expansion_violation_no_core_gate_change",
+      "tree": "311b7e6e8b9b85f3bb53dcd5fa6cc5a11e7e8f36"
+    },
+    {
+      "commit": "3c815132bccd9a56a3a7c05105a620607e979536",
+      "classification": "canonical_tree_restored",
+      "tree": "ad30f4866c18b2adbade95a0b2de40d5caa61308"
+    }
+  ],
+  "expanded_interval_claims": {
+    "bound_to_auxiliary_engine_namespace": 341,
+    "bound_to_auxiliary_engine_namespace_by_branch": {
+      "chemistry": 86,
+      "materials": 84,
+      "physics": 171
+    },
+    "entered_census": 458,
+    "remain_in_head_census": 458
+  },
+  "findings": [
+    "core admission decision code is byte-identical from the canonical freeze through current HEAD",
+    "post-freeze auxiliary namespace additions changed the protected engine tree until restoration",
+    "a temporary publication-compliance bypass was introduced and then fully restored",
+    "all 77 inspected admission launchers imported the engine before their own identity check",
+    "21 launchers compared only the committed tree and 56 contained no canonical tree literal",
+    "the new runtime seal verifies actual files before package import and halts on any mismatch"
+  ],
+  "remote_actions_performed": false,
+  "seal_external_anchor_status": "prepared_locally_not_yet_committed_signed_pushed_or_published"
+}

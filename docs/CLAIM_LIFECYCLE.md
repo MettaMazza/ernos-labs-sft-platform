@@ -51,6 +51,14 @@ All status transitions from `registered` onward are emitted by the single SFT
 admission engine. The census is a projection of accepted engine receipts, not a
 manually curated source of scientific authority.
 
+The actual runtime engine must first pass the canonical byte seal
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`.
+An unchanged `HEAD:sft/engine` lookup is not sufficient because it does not
+detect an uncommitted imported edit. `python3 tools/verify_engine_seal.py`
+hashes the exact runtime support, and the `sft` package repeats the requirement
+before permitting engine import. A mismatch makes the attempted lifecycle void
+and halted; it cannot produce a lawful status transition.
+
 The engine is not a tunable component of a claim submission. A claimant or
 agent may change the claim package only for a scientifically disclosed reason;
 it may not change the engine, weaken a gate, alter a comparator after results,

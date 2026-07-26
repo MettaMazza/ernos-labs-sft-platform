@@ -23,9 +23,9 @@ def build_radioactive_decay_execution(root: Path, execution_file: Path) -> Claim
         root / "sft/physics/generated_empirical_law.py",
         root / "sft/physics/radioactive_decay_successor_execution_v1.py",
         execution_file,
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

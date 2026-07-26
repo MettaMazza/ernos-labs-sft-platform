@@ -1,0 +1,174 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 063 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, omission or evidential relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "CONFIRMED-EDM",
+      "expected_rejection": "A confirmed nonempty neutron EDM rejects alignment.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "CONFIRMED-PROTON-DECAY",
+      "expected_rejection": "A confirmed proton decay rejects stability.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:c6c573631fde7dbe87267940e7eb4c80517c871db34311e9e691e79e021efb11"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1155658f219be338dbbe6a3767ee7f5f08193c5af36aa6f6443bd9a212a5ce12",
+      "role": "development_only",
+      "source_id": "V1-V2-STRONG-CP-PROTON-STABILITY-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "aligned One strong phase",
+      "empty-One EDM carrier",
+      "baryon One invariant"
+    ],
+    "external_reference_protocol": "EDM uncertainties and proton lifetime limits remain post-seal measurement records.",
+    "measurement_record_policy": "null estimates and finite limits retain their source-defined evidential type",
+    "proof_value_policy": "positive-generated-counts-exact-ratios-and-empty-One-absence-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "No direct row reports a confirmed nonempty neutron EDM or statistically significant proton decay, and every evidential boundary remains intact.",
+    "comparison_implementation_hash": "sha256:16a921de02d7975796664dbcc89d7fae77f371b0586f0cfcb17932fc5a026f85",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064-post-seal-evaluator",
+    "falsification_condition": "Reject if any source changes; the direct EDM record reports a confirmed nonempty displacement; any proton mode reports a statistically significant decay signal; a candidate or uncertainty is omitted or relabelled; a finite limit is called exact absence/infinity; target data select the formal law; or any hostile control passes incorrectly.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain central status, both uncertainty magnitudes and finite upper limit without proof-value relabelling.",
+        "metric_id": "DIRECT-NEDM",
+        "unit_protocol": "source-bound exact rational magnitude"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain all six mode limits and every candidate interpretation.",
+        "metric_id": "PROTON-DECAY-VECTOR",
+        "unit_protocol": "source-bound complete mode vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Measurement of the permanent electric dipole moment of the neutron",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:1afeb830f372c7725cca9fd3d004333fe19cade698fd9798af9dfac7adc5c180",
+      "source_id": "NEDM-2020-PSI-PERMANENT-EDM",
+      "source_uri": "https://arxiv.org/abs/2001.11966"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Search for proton decay via p to e-plus pi-zero and p to mu-plus pi-zero",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:6fa532b3b2671e8d6e028308297b95837567a6e3608b471aaa8af00fff6a9679",
+      "source_id": "SUPERK-2020-PROTON-E-MU-PI0",
+      "source_uri": "https://arxiv.org/abs/2010.16098"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Search for proton decay via p to e-plus eta and p to mu-plus eta",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:5b4bf694378930d7e38935546fea9c5deced9531137b0da276778e7b67fb4937",
+      "source_id": "SUPERK-2024-PROTON-E-MU-ETA",
+      "source_uri": "https://arxiv.org/abs/2409.19633"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Search for proton decay via p to e-plus two-pi-zero and p to mu-plus two-pi-zero",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:06d10f843d39b54a14465628d72a9af18920976369326b1c717e3621b2109c98",
+      "source_id": "SUPERK-2026-PROTON-E-MU-TWO-PI0",
+      "source_uri": "https://arxiv.org/abs/2604.10975"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed formal carrier, all registered EDM and proton-search rows, source binding, capability closure, proof/measurement separation, row completeness, successor closure and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:b86b442f51b18d8ce65ab954d06bbe5f8f0f654f25b831100cbd371c72e11d07",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The sealed Claim 063; the direct neutron-EDM central-status, statistical uncertainty, systematic uncertainty and upper-limit rows; all six registered Super-Kamiokande mode limits and candidate interpretations; all four primary source snapshots; and no target access before the prediction seal.",
+    "relation_hash": "sha256:f1cb45e3352f5faa16f036b5f3b64a9709e7a10631321ca710fa499cfbb84420",
+    "statement": "The PSI result retains its null central status, positive 1.1 and 0.2 times ten-to-the-minus-26 uncertainty magnitudes and positive 1.8 times ten-to-the-minus-26 90-percent upper bound. The six proton modes retain 90-percent partial-lifetime lower limits 2.4e34, 1.6e34, 1.4e34, 7.3e33, 7.2e33 and 4.5e33 years. No source reports a statistically significant proton-decay signal; the explicitly retained candidates are background compatible. Thus no registered row violates the sealed aligned-One or fibre-preserving baryon-One predictions.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:6bd69d2eb78150c11fefc82f512bdfd775eaa2f3a2667127407d7a34bd695657",
+      "input_id": "STRONG-CP-BARYON-STABILITY-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:20f4e2f20815edf6f151d2a1db6597a305c57046d3ff834130a0996353a4b114",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-every-registered-uncertainty-candidate-and-mode-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-2001.11966-nedm.pdf": "sha256:1afeb830f372c7725cca9fd3d004333fe19cade698fd9798af9dfac7adc5c180",
+    "experiments/external_sources/physics/snapshots/arxiv-2010.16098-proton-e-pi0.pdf": "sha256:6fa532b3b2671e8d6e028308297b95837567a6e3608b471aaa8af00fff6a9679",
+    "experiments/external_sources/physics/snapshots/arxiv-2409.19633-proton-eta.pdf": "sha256:5b4bf694378930d7e38935546fea9c5deced9531137b0da276778e7b67fb4937",
+    "experiments/external_sources/physics/snapshots/arxiv-2604.10975-proton-two-pi0.pdf": "sha256:06d10f843d39b54a14465628d72a9af18920976369326b1c717e3621b2109c98",
+    "experiments/external_sources/physics/snapshots/strong-cp-baryon-stability-postseal-source-record.json": "sha256:80475bde8d961642a902c84e0e1043c36a8a55d12430b72b18c6015e0c7a51db"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on changed evidence, confirmed contradictory signal, omitted row, target access, fitting, evidential relabelling or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NEDM-2020-PSI-PERMANENT-EDM",
+      "target_id": "STRONG-CP-BARYON-STABILITY-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

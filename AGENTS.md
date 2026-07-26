@@ -36,6 +36,16 @@ the proposed engine change may authorize one. General instructions such as
 “publish” are never engine-edit authorization. If an agent believes an engine
 change is required, it must halt before editing and request Maria's decision.
 
+Before importing or executing any SFT module, an automated agent must require
+the canonical runtime-byte seal. The public identities are Git tree
+`ad30f4866c18b2adbade95a0b2de40d5caa61308` and SHA-256 seal
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`.
+Run `python3 tools/verify_engine_seal.py`; the package also enforces this check
+before engine import. Any changed, missing, added or symbolically substituted
+engine file, or any changed seal manifest, makes the attempted run
+`VOID_INVALID_HALTED`. The agent must not edit the seal, verifier or guard to
+ratify a mismatch.
+
 No alternate admission engine, compatibility proxy, wrapper, shadow census,
 synthetic receipt writer or weaker submission route may be created. Moving the
 same behavior outside `sft/engine/` does not make a bypass permissible. Every
@@ -66,6 +76,78 @@ engine without target leakage, premarked survivors or outcome-seeking changes.
 - Preserve every completed row, including failures and unfavorable outcomes.
 - Ask before any push, publication, DOI action or coordinated update to older
   repositories.
+
+## Compression and restart continuity — mandatory
+
+Conversation memory, a compacted summary, an earlier plan and an old numerical
+count are never sufficient evidence of the current work position.  After any
+context compression, agent restart, hand-off or uncertainty about progress, an
+automated agent must remain read-only until it has reconstructed the live
+checkpoint from the repository itself.
+
+The reconstruction must inspect, at minimum:
+
+1. the current repository and branch;
+2. the newest immutable model-admitted receipts and their timestamps;
+3. the newest claim packages and certificates;
+4. the active branch continuation checkpoint;
+5. the current branch obligation/gap census; and
+6. the current publication inventory and gate artifacts.
+
+The agent must compare those sources and state the exact last admitted claim,
+the exact remaining operation and any disagreement between them before doing
+scientific work.  A generated audit or conversational summary may identify
+something to inspect, but it may not override admitted receipts or substitute
+for direct inspection of the relevant claim packages.  If the sources
+disagree, the agent must halt mutation, resolve the discrepancy read-only and
+report it; it must never choose the older or larger workload merely because it
+looks comprehensive.
+
+An admitted claim family is completed evidence and must not be regenerated,
+resubmitted, revalidated or rebuilt merely because context was compressed.
+Never restart a branch from an earlier family, repeat an atomic audit, expand a
+remaining-count from memory, or rerun a heavy verification command unless the
+live checkpoint proves it is the next required operation or Maria explicitly
+orders that exact replay.  New work must begin at the first genuinely absent
+receipt after the live checkpoint.
+
+After every new official admission, the agent must immediately update the
+durable continuation checkpoint with the claim ID, receipt hash, closure
+status and next exact operation.  This update is continuity bookkeeping, not a
+scientific admission and never changes an immutable receipt.  Before ending a
+turn that leaves work in progress, the agent must ensure the checkpoint names
+the precise restart position in small current counts.
+
+### Current Physics restart boundary
+
+As of 2026-07-26, the newest admitted formal Physics claim is
+`SFT-PHYS-GRAND-LOCK-TERMINAL-075`, receipt
+`sha256:ae18f67371c8e7054430935d6b5e5f3162f24cf9cba073769384bf7ba467d817`.
+Its 4,096-form grammar binds the complete pre-lock Physics ownership surface,
+534-node acyclic dependency dictionary, root trace to the foundational One,
+exact headline vector, cross-domain identity graph and generator-successor
+adverse census.  Its empirical successor is
+`SFT-PHYS-VALIDATION-GRAND-LOCK-076`, receipt
+`sha256:93f4497d6f7ef3c477246079f62c21f96a7ae27fd9516fa876e9d413bbab569e`.
+That 256-form claim reconciles all 234 pre-lock empirical claims, 147 distinct
+source identities, every available measurement receipt, all six disclosed
+legacy receipt shapes and all fourteen detected unfavorable/scope claims.  The
+first 076 submission halted on duplicate dependencies and its rejected receipt
+is retained; the unchanged scientific claim was admitted only after the
+duplicate registration entries were removed.
+
+The categorical audit is now 488/488 same-strength current-evidence closed
+with zero open atom and zero remaining family.  The live Physics inventory
+contains 349 admitted claims.  Formal and empirical Grand Locks 075 and 076
+are the authoritative closure records.  A later handwritten 49-ready/300-
+blocked publication ledger was not an engine result, contradicted admitted
+receipts and passed empirical certificates, and must never be used to classify
+the Physics claims.  Publication readiness is determined from the complete
+inventory, immutable admitted receipts, complete claim evidence, passed
+empirical certificates, Grand Locks, paper coverage and publication gate.
+Remote release remains explicitly unauthorized.  Do not repeat any Physics
+family, Grand Lock, inventory rebuild or full `verify-all` run because of
+compression.  Do not push or publish without Maria's explicit authorization.
 
 ## Prohibited behavior
 

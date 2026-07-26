@@ -1,0 +1,119 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A named proton without the admitted colour structure is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction, census or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Early target access, a local plasma fit or a precision-cutoff overclaim is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "Reducing the registered spectrum ceiling below the prediction rejects the correspondence.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:2afa7f739fc9feedfb1dde75b6a188f9a400af0bcc78276de5188f460cac5597"
+  },
+  "development_observations": [
+    "The earlier SFT formula and the Parker report were known before this V3 reconstruction; no historical-blindness claim is made.",
+    "The external manuscripts do not define approximately 400 keV as an exact cutoff or report an uncertainty for that label."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "The exact propagated terminal interval lies within the complete registered Parker spectrum range, every context and adverse-formula row is retained, the precision overclaim is rejected, and the unfavorable altered-range control fails.",
+    "comparison_implementation_hash": "sha256:befdb06638d747d32a24b500c80ad8245a485b4368a753c0b48623473ec707e2",
+    "evaluator_id": "SFT-EXP-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity or registered row changes; if the terminal fraction or NIST-propagated prediction leaves the complete 67-527 keV Parker analysis range; if approximately 400 keV is presented as an exact cutoff or given an unreported uncertainty; if the broad observation is claimed to empirically select eight over every adverse formula; if a local plasma value enters the derivation; or if targets are accessible before prediction sealing."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "Astrophysical Journal Letters accepted manuscript via arXiv",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6c950a6e142edf57df600d06e1ce40445fc18c84d42c3d2b916d63679a100fb5",
+      "source_id": "DESAI-ET-AL-2025-PARKER-HCS-PROTONS",
+      "source_uri": "https://arxiv.org/abs/2410.16539"
+    },
+    {
+      "custody_role": "withheld_external_target_boundary",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/index.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete product of proton identity, alpha stage, all four forced mediator-sector counts, amplitude/energy/cubic powers, typed composition, rest-scale carrier, prediction custody, provenance, external comparison and extension forms.",
+    "dependency_hashes": [
+      "sha256:c811d2a759f828a2617e1dbec0bc5f674253901a78619daeff3218cadbca7116",
+      "sha256:e21a011b8449e8641cfc45ea1e80fa4768cb928dc9ed18e142375e4c06d60223",
+      "sha256:00dec63ddc386935fbd830bbd14b335e6bd44266487db01bcb9288963b3ae90b",
+      "sha256:1deb2fd3a8f52d8596c6616bf84d252e8e1dd425e5063472196ee0f0f7a2275c",
+      "sha256:2071f063a20b668df69706f4ea2e4115c7306ea4c9c2424b4590dc8eb0b255a4",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6"
+    ],
+    "exact_domain": "The admitted proton, all forced sectors two/three/five/seven and their mediator counts, the leading and terminal exact alpha rungs, powers one through three, and a post-seal proton-rest-energy/Parker comparison.",
+    "relation_hash": "sha256:9340119b4686494a000c1c5afa3ce578cd2513abf1f96dab78ad9f4927645617",
+    "statement": "The terminal structural proton-energy fraction is exactly 108147617771025486368/253861190227103943729961 = 8 alpha_terminal^2. The superseded leading-rung prediction 500000/1173679081 is retained as an exact historical control.  External proton mass and Parker observations remain inaccessible until the derivation seal.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:793e993dd9e03268eb497e79b66e528a31e55efa33c680e57be872bde24485bd",
+    "program_id": "SFT-EXP-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028-exact-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "complete primary event/range/context rows, exact CODATA proton row, all forced-sector/power controls and precision nonclaim",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/desai-2025-parker-400kev.pdf": "sha256:6c950a6e142edf57df600d06e1ce40445fc18c84d42c3d2b916d63679a100fb5",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/parker-proton-energy-source-record.json": "sha256:bd644fb01e46ae9ee3cdb096776e4d68fcfecc4ecb9bba078f3ac185edaecae1"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "DESAI-ET-AL-2025-PARKER-HCS-PROTONS",
+        "NIST-CODATA-2022"
+      ],
+      "target_id": "WITHHELD-PARKER-PROTON-RANGE-AND-CODATA-SCALE"
+    }
+  ]
+}

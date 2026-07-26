@@ -1,0 +1,194 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 065 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, omission or evidential relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "OUTSIDE-MASS",
+      "expected_rejection": "An aggregate interval excluding the exact mass prediction rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "OUTSIDE-COUPLING",
+      "expected_rejection": "A direct interval excluding normalized unity rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "ERASED-INDIVIDUAL-OFFSET",
+      "expected_rejection": "Deleting an individual offset rejects completeness.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:cdf0b4f7049c348ade78074d5ddf070430153c87e240279f6e129bffe677ee92"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1155658f219be338dbbe6a3767ee7f5f08193c5af36aa6f6443bd9a212a5ce12",
+      "role": "development_only",
+      "source_id": "V1-V2-HIGGS-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "terminal Higgs mass ratio",
+      "native self-coupling"
+    ],
+    "external_reference_protocol": "The PDG electroweak scale supplies the dimensional GeV reference only after the exact ratio seals.",
+    "measurement_record_policy": "reported signed coordinates remain typed external directions and magnitudes, never negative Fold proof scalars",
+    "proof_value_policy": "positive exact whole and fractional Fold forms only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The aggregate mass interval contains the sealed prediction, direct self-coupling bounds contain normalized unity, and all individual offsets and capability boundaries remain visible.",
+    "comparison_implementation_hash": "sha256:5e0d5168a3ca26ac7fd4e3419d9aa56f1b0cb877c6c3514710386bb57e2d48b5",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066-post-seal-evaluator",
+    "falsification_condition": "Reject if any source changes; the sealed mass prediction lies outside the complete authoritative aggregate interval; normalized unity lies outside the direct self-coupling interval; an individual offset or uncertainty is omitted; a broad limit is called a precision measurement; target data select or modify the formal law; a signed external coordinate becomes a Fold proof scalar; or any hostile control passes incorrectly.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Test the exact predicted GeV value against the complete PDG listed-average interval.",
+        "metric_id": "HIGGS-MASS-AGGREGATE",
+        "unit_protocol": "exact rational GeV"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain exact ATLAS and CMS offsets and every reported uncertainty without relabelling.",
+        "metric_id": "HIGGS-MASS-INDIVIDUAL",
+        "unit_protocol": "exact rational GeV and exact uncertainty ratio"
+      },
+      {
+        "all_rows": true,
+        "definition": "Test normalized unity against the complete direct-search interval while retaining the precision boundary.",
+        "metric_id": "HIGGS-SELF-COUPLING",
+        "unit_protocol": "typed signed-coordinate interval with positive exact magnitudes"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Electroweak Model and Constraints on New Physics",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:4689caae925ee279228684249333a8395a40dda74a94863549b48f758d3fdd3f",
+      "source_id": "PDG-2024-ELECTROWEAK-VACUUM-SCALE",
+      "source_uri": "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-standard-model.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group Higgs-boson listing",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:228835096e2003bb332f456ad412cbfbd628a6973be715309da7d2f419ac77bc",
+      "source_id": "PDG-2025-HIGGS-MASS-AVERAGE",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-higgs-boson.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Combined measurement of the Higgs boson mass from H to gamma-gamma and H to ZZ-star to four leptons",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:b3d2c09226e54f4553a381c70e41095f8f1c18aec3aabbc845e0481aa9207e4e",
+      "source_id": "ATLAS-2023-COMBINED-HIGGS-MASS",
+      "source_uri": "https://arxiv.org/abs/2308.04775"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Measurement of the Higgs boson mass and width using the four-lepton final state",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:8dfaa73b5df3a958998a1a95dc123dc02013ef22c0a4fc3f82253550fc1c1807",
+      "source_id": "CMS-2024-FOUR-LEPTON-HIGGS-MASS",
+      "source_uri": "https://arxiv.org/abs/2409.13663"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Combination of ATLAS and CMS searches for Higgs boson pair production at 13 TeV",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:eaf44d724e33f500781a964a2918b5d2062c55be760704736346233ed02ff678",
+      "source_id": "ATLAS-CMS-2026-HIGGS-PAIR-COMBINATION",
+      "source_uri": "https://arxiv.org/abs/2602.23991"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed Higgs carrier, dimensional reference, aggregate mass, individual mass rows, source custody, self-coupling boundary, measurement separation and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:dbe28b03019c389f2e432fcc790d46abf336e3d25fdffa94744a7313ead78fdd",
+      "sha256:c811d2a759f828a2617e1dbec0bc5f674253901a78619daeff3218cadbca7116",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The sealed Claim 065 ratio and coupling; the PDG 246.22 GeV dimensional reference; the complete PDG listed average and uncertainty; the direct ATLAS and CMS mass rows with every reported uncertainty; the latest combined ATLAS-CMS kappa-lambda interval; all five source snapshots; and no target access before seal.",
+    "relation_hash": "sha256:91a407c12bc7a9a919bfd34258483c2516880cb284515c9d1a6785cd5a68df1d",
+    "statement": "Using the post-seal PDG dimensional reference v = 12311/50 GeV, the sealed ratio predicts exactly m_H = 31557437733819647/251923197734500 GeV = 125.266104978... GeV. The PDG 2025 listed average is 626/5 +/- 11/100 GeV, whose reported-uncertainty interval [12509/100,12531/100] contains the prediction; the exact displacement from its central value is 16653377460247/251923197734500 GeV. ATLAS reports 12511/100 +/- 11/100 GeV and CMS reports 3126/25 +/- 3/25 GeV; their exact positive offsets remain in the certificate and are not called aggregate failures. The exact native lambda is 6570778165695741824959729/50772238045420788745992200. The 2026 ATLAS-CMS 95-percent normalized kappa-lambda interval, recorded as a below-reference direction of magnitude 71/100 through 61/10, contains the SFT normalized unity correspondence but does not yet resolve native lambda precisely.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3f84e4ede48a489bc78a8cc47eac935bbff3566d1e561c26ef0059d7bbcbfb1e",
+      "input_id": "HIGGS-TERMINAL-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:fe63fd88f1a5ed35eed60da8fba5f8204931a8226b316d281663d76cfcb9355d",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-aggregate-individual-uncertainty-and-coupling-boundary-rows",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-2308.04775-atlas-higgs-mass.pdf": "sha256:b3d2c09226e54f4553a381c70e41095f8f1c18aec3aabbc845e0481aa9207e4e",
+    "experiments/external_sources/physics/snapshots/arxiv-2409.13663-cms-higgs-mass.pdf": "sha256:8dfaa73b5df3a958998a1a95dc123dc02013ef22c0a4fc3f82253550fc1c1807",
+    "experiments/external_sources/physics/snapshots/arxiv-2602.23991-atlas-cms-hh.pdf": "sha256:eaf44d724e33f500781a964a2918b5d2062c55be760704736346233ed02ff678",
+    "experiments/external_sources/physics/snapshots/higgs-terminal-postseal-source-record.json": "sha256:62d866e1b94f43e7cb73c9da46ac672434e00b4f8bc628b17f4060e8fb019d21",
+    "experiments/external_sources/physics/snapshots/pdg-2024-standard-model-review.pdf": "sha256:4689caae925ee279228684249333a8395a40dda74a94863549b48f758d3fdd3f",
+    "experiments/external_sources/physics/snapshots/pdg-2025-higgs-listing.pdf": "sha256:228835096e2003bb332f456ad412cbfbd628a6973be715309da7d2f419ac77bc"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on changed evidence, aggregate exclusion, coupling exclusion, omitted individual row, target access, fitting, signed-coordinate import or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-HIGGS-MASS-AVERAGE",
+      "target_id": "HIGGS-TERMINAL-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

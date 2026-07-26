@@ -1,0 +1,182 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A count not descending from Claim 051 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, row deletion or reinterpretation rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced precision fit, altered direct-row custody or reversed lifetime rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:8688f7472af0f110589d20eb2db102b3b63a9fe66127d6ec3475b2fccb09ff4d"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:c475546316355bcfdc77aac50982f522bb2e5d2837eec8b3175f6691668e0508",
+      "role": "development_only",
+      "source_id": "V1-V2-PARTICLE-MODE-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "three generation labels",
+      "terminal mass-order carriers",
+      "mixing and reach relations"
+    ],
+    "external_reference_protocol": "All measured masses, lifetimes, counts, mixing rows and limits remain post-seal records.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The precision count and every registered terminal comparison pass; the independent direct row remains an unchanged measurement record and does not select the law.",
+    "comparison_implementation_hash": "sha256:a266e1fa4f824527accb9358831e283ecd1e9b6ed62f4fbac7900f153fe73d93",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052-post-seal-evaluator",
+    "falsification_condition": "Reject if any source changes; the precision generation interval excludes three; the independent direct row is omitted, altered, rescaled or used to select the law; a registered terminal mass or mixing comparison fails; the charged-lepton mass/lifetime orders reverse; the missing t/c comparator is presented as measured; any search or model boundary is omitted; an old site coordinate is relabelled as mass; or target data alter the formal survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Forced count three in the precision measurement interval with the independent direct row retained unchanged.",
+        "metric_id": "GENERATION-COUNT",
+        "unit_protocol": "exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "Lepton, quark, CKM, neutrino, lifetime and search-boundary rows retained and recomputed.",
+        "metric_id": "COMPLETE-PARTICLE-VECTOR",
+        "unit_protocol": "source-bound complete vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics 2025 update: Leptons summary tables",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:5aa9a3a33b554204056cb04c42319bb32c9664ae518907652ff5cdc1cb87e5bb",
+      "source_id": "PDG-2025-LEPTON-SUMMARY",
+      "source_uri": "https://pdg.lbl.gov/2025/tables/rpp2025-sum-leptons.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "2022 CODATA recommended values",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics: Quark Masses",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:d544d099aa15739ec83d87711bd4c5b1e0a1032d6f70aaa4847ec78601f7aeae",
+      "source_id": "PDG-2025-QUARK-MASSES",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-masses.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics: CKM Quark-Mixing Matrix",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:a0a78578971f38ff89c6fc5579bc608de41ec383a205dc25cba1d26f7145610a",
+      "source_id": "PDG-2025-CKM-MATRIX",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics: Neutrino Masses, Mixing, and Oscillations",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:d7067e2e3c9098cc924f10ffbca579c557fb8e848bf3acc17f9815598cdda7a6",
+      "source_id": "PDG-2025-NEUTRINO-MIXING",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed particle-mode law, full generation/mass/mixing/lifetime vector, provenance, target isolation, proof/measurement separation, complete-row retention, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:89d197ef12bd331fbaeab9ef816d2cbf331c31e009b63406a249205b66fc603d",
+      "sha256:9b7c39ccd45e54511d4b7ce718d187fe7992637cef0ee68647acd682a3c9d483",
+      "sha256:7ecfe0998d0d1af6b697d352916e2e9ac0167c9083a0e45bb662b0c13158f914",
+      "sha256:cfa18d65a1b77dd07d446ea6aca35b68d9071a6d0765ff010b1d6cc10ed458ef",
+      "sha256:63bb4be35b214daf3db71fc63b70bc687bc2d356bb1222cdeb29ee29cd24e074",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The admitted Claim 051; the precision fitted neutrino-count measurement and the unchanged independent direct determination; both charged-lepton ratios; all available quark ratios and the missing-comparator boundary; all terminal CKM rows; the positive-neutrino mass/mixing vector; all three charged-lepton masses and lifetimes; heavy-lepton search limits; and every interpretive limitation.",
+    "relation_hash": "sha256:365c799696778d81d6e12ce833e9691976f8defd89b6d9cc1fe1fce703d7889d",
+    "statement": "The forced count three lies in the PDG LEP-SLC precision interval [2989,3003]/1000. The independent direct determination 292/100 with stated uncertainty 5/100 is preserved exactly and has central-value displacement 8/5 stated uncertainties from three; it is neither adjusted nor used to select the result. Both terminal charged-lepton mass-ratio intervals, the available s/d and b/s quark ratio intervals, all four terminal CKM intervals and the positive-neutrino mass/mixing support pass their registered comparisons; t/c remains without an exact scheme-matched direct comparator. The charged-lepton records give m_e<m_mu<m_tau and lifetime_e>lifetime_mu>lifetime_tau. These measurements test the terminal polynomial and ordering consequences, not the superseded site-as-mass, universal rate-ratio, dimensional lifetime-equality or extra-spatial-dimension claims.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:18e4aac0792a01c613d31f4d980951b0e2da69107155c4e50967ed80c9eaa700",
+      "input_id": "PARTICLE-MODE-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:54420e93dd8bb39daa45ff818a0f393a26dde59b41a4c20c5267f6a487825dbc",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-measurement-boundary-and-control-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/particle-mode-generation-postseal-source-record.json": "sha256:abf29f6244ad64e49b169489675627424bcdbdc3d38e8ceef4b1628681889cd5",
+    "experiments/external_sources/physics/snapshots/pdg-2025-ckm-matrix.pdf": "sha256:a0a78578971f38ff89c6fc5579bc608de41ec383a205dc25cba1d26f7145610a",
+    "experiments/external_sources/physics/snapshots/pdg-2025-leptons-summary.pdf": "sha256:5aa9a3a33b554204056cb04c42319bb32c9664ae518907652ff5cdc1cb87e5bb",
+    "experiments/external_sources/physics/snapshots/pdg-2025-neutrino-mixing.pdf": "sha256:d7067e2e3c9098cc924f10ffbca579c557fb8e848bf3acc17f9815598cdda7a6",
+    "experiments/external_sources/physics/snapshots/pdg-2025-quark-masses.pdf": "sha256:d544d099aa15739ec83d87711bd4c5b1e0a1032d6f70aaa4847ec78601f7aeae"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on changed evidence, failed terminal comparison, omitted row, target access, fitting, reinterpretation or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-LEPTON-SUMMARY",
+      "target_id": "PARTICLE-MODE-GENERATION-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

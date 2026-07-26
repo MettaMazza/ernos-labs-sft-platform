@@ -1,0 +1,133 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046",
+  "controls": [
+    {
+      "control_id": "FALSE_PREMISE",
+      "expected_rejection": "Any premise, source, artifact, boundary, cooling-direction or spinor-interval violation halts.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED_SOURCE",
+      "expected_rejection": "Any premise, source, artifact, boundary, cooling-direction or spinor-interval violation halts.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED_ARTIFACT",
+      "expected_rejection": "Any premise, source, artifact, boundary, cooling-direction or spinor-interval violation halts.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Any premise, source, artifact, boundary, cooling-direction or spinor-interval violation halts.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE_MEASUREMENT",
+      "expected_rejection": "Any premise, source, artifact, boundary, cooling-direction or spinor-interval violation halts.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:3921393e2f6b52daed0f3759c2e69052a6c3ee97b4e057b2fe4fa447a2ed92bc"
+  },
+  "development_observations": [
+    "V1 and V2 named fermion/boson occupation, the two-turn spinor, the shared boson ground orbit and Bose-Einstein condensation as observational targets. V3 independently generated and officially admitted Claim 045, including its complete 256-form census, before this measurement vector was assembled. The external records can test the sealed result but cannot alter its survivor.",
+    "Formal Claim 045, its complete 256-form census, and its official engine receipt preceded the bound target vector.",
+    "The apparatus-specific BEC scale and Pauli collision factor remain measured records rather than universal formal proof scalars."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "Finite BEC occupation and cooling direction pass; direct Pauli blocking passes; the complete neutron-spinor interval contains 720 degrees; all scale limitations and adverse controls are retained.",
+    "comparison_implementation_hash": "sha256:5255bf610dea427a1386e8f52114c732f35b801385ab7596722da7a02ae5f0ab",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046-post-seal-evaluator",
+    "falsification_condition": "Reject if any source or row changes; finite bosons fail to accumulate in the measured ground state under cooling; Pauli blocking is absent in the declared identical-fermion regime; the complete spinor interval excludes 720 degrees; a trap-specific or response-specific value is relabelled as a universal formal scalar; an unfavorable row is omitted; or target data alter the sealed formal survivor."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046",
+  "external_measurement_sources": [
+    {
+      "custody_role": "Primary ground-state-occupation and transition-temperature measurement for a finite rubidium-87 Bose gas",
+      "measurement_body": "Bose-Einstein Condensation in a Dilute Gas: Measurement of Energy and Ground-State Occupation",
+      "snapshot_hash": "sha256:9086058e1c750191fb36eab5acf7c65da1aa7f0e4cdcf643887e282ad3920c93",
+      "source_id": "APS-JILA-BEC-GROUND-OCCUPATION-1996",
+      "source_pages": [
+        "4984-4987"
+      ],
+      "source_uri": "https://doi.org/10.1103/PhysRevLett.77.4984"
+    },
+    {
+      "custody_role": "Primary institutional record of directly measured Pauli blocking in a two-spin-state potassium-40 gas",
+      "measurement_body": "Pauli Blocking of Collisions in a Quantum Degenerate Atomic Fermi Gas",
+      "snapshot_hash": "sha256:82555a4057e339aef96cde7484fe3fbd190a8d2cecbf4c3de73996af473b9af7",
+      "source_id": "NIST-JILA-PAULI-BLOCKING-2001",
+      "source_pages": [
+        "NIST publication abstract"
+      ],
+      "source_uri": "https://www.nist.gov/publications/pauli-blocking-collisions-quantum-degenerate-atomic-fermi-gas-0"
+    },
+    {
+      "custody_role": "Primary neutron-interferometry measurement of the fermion two-turn return",
+      "measurement_body": "Verification of Coherent Spinor Rotation of Fermions",
+      "snapshot_hash": "sha256:11638b8c2aaf8fbdd96aa50c9496bb9f7597b308f19d780ab779cc2dd6752824",
+      "source_id": "RAUCH-COHERENT-SPINOR-ROTATION-1975",
+      "source_pages": [
+        "425-427"
+      ],
+      "source_uri": "https://doi.org/10.1016/0375-9601(75)90798-7"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of the sealed spin-statistics law, finite BEC record, Pauli-blocking record, two-turn spinor interval, custody, full-row retention and formal/measurement separation.",
+    "dependency_hashes": [
+      "sha256:f3e042448517867e2a031486ed4cc8a4518c6b6b080ce24803b68fc2c606bf50",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The admitted 256-form formal survivor; all three bound primary records; the complete BEC transition interval and direction rows; the complete Pauli rows; the complete spinor interval and return rows; and every custody, limitation and adverse-control row.",
+    "relation_hash": "sha256:291ad86bf4b474e88087a2bf5c465d4643f919904ce6ac4bf96f240b60b15c67",
+    "statement": "The finite Bose record measures ground-state occupation, its increase under cooling, and a sharp transition at (94 +/- 5)/100 of the declared trap scale, giving the exact interval [89,99]/100. The finite two-spin-state Fermi record directly observes Pauli blocking and a factor-two reduction in effective collision cross section. The sealed alternating-state return is two complete turns, corresponding to 720 degrees; the neutron-interferometry result is 704 +/- 38 degrees, giving [666,742], which contains 720. All three physical routes agree with their respective sealed structural distinctions. The BEC scale ratio and collision-response factor are retained as external apparatus-dependent measurements rather than relabelled universal Fold proof scalars.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:a9e818fe15ded2dee8d9c02a6c9aa228a91085f6b832bdfef93a1d63981a0e9c",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain all three sources, the complete BEC and spinor intervals, every direction and response row, finite-population correction and all scale limitations",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/ensher-bec-ground-occupation-1996.pdf": "sha256:9086058e1c750191fb36eab5acf7c65da1aa7f0e4cdcf643887e282ad3920c93",
+    "experiments/external_sources/physics/snapshots/nist-pauli-blocking-2001.html": "sha256:82555a4057e339aef96cde7484fe3fbd190a8d2cecbf4c3de73996af473b9af7",
+    "experiments/external_sources/physics/snapshots/rauch-spinor-rotation-1975.pdf": "sha256:11638b8c2aaf8fbdd96aa50c9496bb9f7597b308f19d780ab779cc2dd6752824",
+    "experiments/external_sources/physics/snapshots/spin-statistics-condensation-postseal-source-record.json": "sha256:9d24c12e31092f34854c71c3dce2b355dd1d1f2ae6347a03bbea45ef01508cfa"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "APS-JILA-BEC-GROUND-OCCUPATION-1996",
+        "NIST-JILA-PAULI-BLOCKING-2001",
+        "RAUCH-COHERENT-SPINOR-ROTATION-1975"
+      ],
+      "target_id": "SPIN-STATISTICS-CONDENSATION-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

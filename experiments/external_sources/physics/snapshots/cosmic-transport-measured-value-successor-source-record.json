@@ -1,0 +1,40 @@
+{
+  "schema": "sft-v3-cosmic-transport-measured-value-successor-source-record/1",
+  "correction_scope": "This successor replaces the arbitrary two-standard-uncertainty all-row predicate and mismatch-as-success use of Claim SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032 for empirical closure. Claim 032 remains the admitted formal transport law and its immutable receipt remains a dependency.",
+  "formal_claim_id": "SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032",
+  "formal_receipt_hash": "sha256:504257d441fad45a8f173fad45015c7d723caa7636c517e71d27fddc43a2c42d",
+  "formal_certificate_hash": "sha256:c83b4fc53d29e878502657b310325adcee62be483407433d61465dd744b57354",
+  "retrieval_date": "2026-07-25",
+  "sources": [
+    {"source_id": "GOMEZ-VALENT-2023-CCH-32", "title": "Cosmic chronometers to calibrate the ladders and measure the curvature of the Universe", "url": "https://doi.org/10.1093/mnras/stad1511", "snapshot_path": "experiments/external_sources/physics/snapshots/gomez-valent-2023-cosmic-chronometers.html", "snapshot_hash": "sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128"},
+    {"source_id": "PLANCK-2018-BAO-BASELINE-BUDGET", "title": "Planck 2018 plus BAO baseline parameter table", "url": "https://doi.org/10.1051/0004-6361/201833880", "snapshot_path": "experiments/external_sources/physics/snapshots/planck-2018-bao-budget-record.json", "snapshot_hash": "sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612"},
+    {"source_id": "HARIDASU-2018-LATE-EXPANSION", "title": "An improved model-independent assessment of the late-time cosmic expansion", "url": "https://doi.org/10.1088/1475-7516/2018/10/015", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1805.03595-source-record.json", "snapshot_hash": "sha256:4ac5d80b39e3dc963d5cc7a0c1b8996b0b895a974f08fa736803186bd100f74c"},
+    {"source_id": "GOMEZ-VALENT-2019-ACCELERATION", "title": "Quantifying the evidence for the current speed-up of the Universe", "url": "https://arxiv.org/abs/1810.02278", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1810.02278-cosmic-acceleration.pdf", "snapshot_hash": "sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0"},
+    {"source_id": "ESCAMILLA-2024-DARK-ENERGY-STATE", "title": "The state of the dark energy equation of state circa 2023", "url": "https://arxiv.org/abs/2307.14802", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-2307.14802-dark-energy-state.pdf", "snapshot_hash": "sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5"},
+    {"source_id": "DESI-DR2-2025-COSMOLOGY", "title": "DESI DR2 Results II: BAO measurements and cosmological constraints", "url": "https://arxiv.org/abs/2503.14738", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-2503.14738-desi-dr2.pdf", "snapshot_hash": "sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841"}
+  ],
+  "registered_target_source": {
+    "path": "experiments/external_sources/physics/snapshots/cosmic_transport_terminal-source-record.json",
+    "hash": "sha256:6a88728657b19dba0bcf2430d28218a595c0798c6ac34bf2778ef53a1b540705",
+    "complete_original_rows_retained": true
+  },
+  "corrected_acceleration_target": {
+    "present_deceleration_conventional_center": "-0.52",
+    "present_deceleration_standard_uncertainty": "0.06",
+    "transition_redshift_center": "0.64",
+    "transition_redshift_lower_uncertainty": "0.09",
+    "transition_redshift_upper_uncertainty": "0.12"
+  },
+  "methodological_boundary": {
+    "all_thirty_two_chronometer_rows_enter_one_complete_normalized_residual_ledger": true,
+    "unit_mean_squared_residual_is_forced_by_reported_standard_uncertainty_units": true,
+    "rational_root_enclosures_refine_until_the_pass_or_reject_decision_is_exact": true,
+    "no_fixed_sigma_multiplier_or_selected_tolerance": true,
+    "Planck_budget_and_Haridasu_acceleration_values_are_like_typed_tests": true,
+    "Gomez_Valent_2019_reconstruction_is_retained_as_an_alternate_method_record": true,
+    "DESI_w0_wa_preference_is_retained_as_a_model_comparison_record_not_a_direct_scalar_measurement": true,
+    "no_uncertainty_is_widened_or_rescaled": true,
+    "measurement_selected_formal_survivor": false,
+    "target_inaccessible_to_formal_derivation": true
+  }
+}

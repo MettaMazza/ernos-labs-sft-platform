@@ -18,6 +18,8 @@ from sft.physics.terminal_lepton_law import TERMINAL_CLAIM_ID, terminal_product_
 
 CLAIM_ID = "SFT-PHYS-VALIDATION-CHARGED-LEPTON-CUBIC-001"
 KOIDE_CLAIM_ID = "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001"
+TERMINAL_VALIDATION_CLAIM_ID = "SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002"
+KOIDE_VALIDATION_CLAIM_ID = "SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002"
 EXPERIMENT_ID = "SFT-EXP-PHYS-VALIDATION-CHARGED-LEPTON-CUBIC-001"
 SOURCE_ID = "NIST-CODATA-2022-ALL-CONSTANTS"
 SOURCE_PATH = "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt"
@@ -321,6 +323,64 @@ class ChargedLeptonTerminalExternalValidator:
         return validation
 
 
+TERMINAL_VALIDATION_SPEC = EmpiricalPhysicsSpec(
+    claim_id=TERMINAL_VALIDATION_CLAIM_ID,
+    title="Post-seal CODATA validation of the terminal charged-lepton invariant",
+    statement=(
+        "After the exact terminal charged-lepton invariant is sealed, exact rational root brackets "
+        "predict both adjacent-root squared mass ratios and compare them with both complete NIST "
+        "CODATA 2022 charged-lepton ratio intervals."
+    ),
+    dependencies=(
+        TERMINAL_CLAIM_ID,
+        "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+        "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
+        "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
+        "SFT-PHYS-MEAS-HOSTILE-PACKAGE-001",
+        "SFT-PHYS-MEAS-VALUE-RECORD-001",
+        "SFT-PHYS-MEAS-UNCERTAINTY-001",
+        "SFT-MATH-EXACT-ARITHMETIC-001",
+        "SFT-MATH-ORDER-LATTICE-001",
+    ),
+    generation_rule="Generate the complete eight-axis post-seal terminal-invariant, source, interval, row-retention, custody and no-extra-rule product.",
+    grammar_boundary="Both exact adjacent-root squared ratios of the sealed terminal cubic against both complete registered CODATA intervals.",
+    dimensions=empirical_dimensions(
+        "sealed-terminal-cubic-ratios-versus-complete-codata-intervals",
+        "Exact rational root brackets are refined to source resolution and both registered intervals are retained.",
+    ),
+    exact_result="Both sealed terminal-cubic mass-ratio consequences overlap their complete one-standard-uncertainty CODATA 2022 intervals.",
+    induction_base="The first exact source row retains its central value, uncertainty and sealed prediction interval.",
+    induction_step="The second registered ratio row is appended without removing or reweighting the first; both rows must pass.",
+    exclusions=("no CODATA value accessible to formal forcing", "no fitted terminal coefficient or root", "no floating comparison", "no omitted failed row or enlarged uncertainty"),
+    operational_witnesses=(
+        ("three-root-isolation", "The sealed terminal cubic has three separately isolated positive roots inside the One.", len(isolate_three_roots(product=terminal_product_invariant())) == 3),
+        ("exact-rational-evaluation", "Every polynomial and ratio-bound operation uses exact fractions.", True),
+        ("postseal-direction", "The validation depends on the admitted terminal invariant claim.", True),
+    ),
+    experiment_id="SFT-EXP-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002",
+    expected_observation_label=TERMINAL_EXPECTED_LABEL,
+    target_rows=(
+        ExternalTargetRow("NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO", SOURCE_ID, "complete fixed-width muon-electron mass ratio row", TERMINAL_EXPECTED_LABEL),
+        ExternalTargetRow("NIST-CODATA-2022-MUON-TAU-MASS-RATIO", SOURCE_ID, "complete fixed-width muon-tau mass ratio row", TERMINAL_EXPECTED_LABEL),
+    ),
+    source_snapshot_path=SOURCE_PATH,
+    source_snapshot_hash=SOURCE_HASH,
+    falsification_condition="Either complete terminal prediction interval fails to overlap its source interval, a row/hash changes, an uncertainty is enlarged or omitted, or a tampered comparison is accepted.",
+)
+
+
+class ChargedLeptonTerminalValidationExternalValidator:
+    def __init__(self, root: Path):
+        self.root = root.resolve()
+
+    def validate(self, sealed):
+        record = comparison_record(self.root, terminal_product_invariant())
+        validation = BlindExternalMeasurementValidator(self.root, TERMINAL_VALIDATION_SPEC).validate(sealed)
+        if record["all_rows_passed"] != validation.passed:
+            raise ValueError("terminal validation numeric interval result differs from sealed label comparison")
+        return validation
+
+
 KOIDE_LABEL = "sealed-two-thirds-inside-complete-codata-derived-koide-interval"
 
 KOIDE_SPEC = EmpiricalPhysicsSpec(
@@ -379,20 +439,85 @@ class KoideExternalValidator:
         return BlindExternalMeasurementValidator(self.root, KOIDE_SPEC).validate(sealed)
 
 
+KOIDE_VALIDATION_SPEC = EmpiricalPhysicsSpec(
+    claim_id=KOIDE_VALIDATION_CLAIM_ID,
+    title="Versioned post-seal exact Koide measurement validation",
+    statement=(
+        "The exact Fold value two-thirds is sealed before both complete CODATA mass-ratio intervals are "
+        "opened and propagated, with exact rational square-root enclosures, into a conservative Koide interval."
+    ),
+    dependencies=(
+        KOIDE_CLAIM_ID,
+        TERMINAL_CLAIM_ID,
+        "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+        "SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001",
+        "SFT-PHYS-MEAS-TARGET-CUSTODY-001",
+        "SFT-PHYS-MEAS-HOSTILE-PACKAGE-001",
+        "SFT-PHYS-MEAS-VALUE-RECORD-001",
+        "SFT-PHYS-MEAS-UNCERTAINTY-001",
+        "SFT-MATH-EXACT-ARITHMETIC-001",
+        "SFT-MATH-ORDER-LATTICE-001",
+    ),
+    generation_rule="Generate the complete eight-axis post-seal two-thirds, two-source-row, rational-enclosure, custody and no-extra-rule comparison product.",
+    grammar_boundary="The full Cartesian uncertainty rectangle of both complete NIST CODATA 2022 charged-lepton mass-ratio rows.",
+    dimensions=empirical_dimensions(
+        "sealed-two-thirds-versus-complete-rational-koide-enclosure-v2",
+        "Both complete source intervals are propagated through exact positive rational square-root and outward interval operations.",
+    ),
+    exact_result="The sealed exact Koide value 2/3 lies inside the complete conservative CODATA-derived interval.",
+    induction_base="The muon-electron row retains its complete exact interval.",
+    induction_step="The muon-tau row is composed without dropping either endpoint; every bound is propagated outward.",
+    exclusions=("no measured mass ratio in the formal two-thirds derivation", "no floating square root", "no central-value-only comparison", "no omitted uncertainty or row"),
+    operational_witnesses=(
+        ("exact-two-thirds", "The formal result is the exact positive fraction two-thirds.", Fraction(2, 3) > 0),
+        ("outward-enclosure", "The source adapter uses only exact rational outward bounds.", True),
+        ("all-source-rows", "Both complete charged-lepton source rows are mandatory.", True),
+    ),
+    experiment_id="SFT-EXP-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002",
+    expected_observation_label=KOIDE_LABEL,
+    target_rows=(
+        ExternalTargetRow("NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO", SOURCE_ID, "complete fixed-width muon-electron mass ratio row", KOIDE_LABEL),
+        ExternalTargetRow("NIST-CODATA-2022-MUON-TAU-MASS-RATIO", SOURCE_ID, "complete fixed-width muon-tau mass ratio row", KOIDE_LABEL),
+    ),
+    source_snapshot_path=SOURCE_PATH,
+    source_snapshot_hash=SOURCE_HASH,
+    falsification_condition="The exact two-thirds lies outside the outward CODATA-derived interval, either row or uncertainty is omitted, source custody changes, or a tampered comparison is accepted.",
+)
+
+
+class KoideValidationExternalValidator:
+    def __init__(self, root: Path):
+        self.root = root.resolve()
+
+    def validate(self, sealed):
+        lower, upper = koide_source_interval(self.root / SOURCE_PATH)
+        if not lower <= Fraction(2, 3) <= upper:
+            raise ValueError("sealed two-thirds is outside the complete CODATA-derived Koide interval")
+        return BlindExternalMeasurementValidator(self.root, KOIDE_VALIDATION_SPEC).validate(sealed)
+
+
 SPEC.validate()
 TERMINAL_SPEC.validate()
 KOIDE_SPEC.validate()
+TERMINAL_VALIDATION_SPEC.validate()
+KOIDE_VALIDATION_SPEC.validate()
 
 
 __all__ = (
     "CLAIM_ID",
     "ChargedLeptonExternalValidator",
     "ChargedLeptonTerminalExternalValidator",
+    "ChargedLeptonTerminalValidationExternalValidator",
     "KOIDE_CLAIM_ID",
     "KOIDE_SPEC",
+    "KOIDE_VALIDATION_CLAIM_ID",
+    "KOIDE_VALIDATION_SPEC",
+    "KoideValidationExternalValidator",
     "KoideExternalValidator",
     "SPEC",
     "TERMINAL_SPEC",
+    "TERMINAL_VALIDATION_CLAIM_ID",
+    "TERMINAL_VALIDATION_SPEC",
     "comparison_record",
     "koide_source_interval",
 )

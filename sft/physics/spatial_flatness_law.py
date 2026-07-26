@@ -5,7 +5,8 @@ from __future__ import annotations
 from fractions import Fraction
 from typing import Sequence
 
-from sft.engine import EMPTY_ONE, EvidenceMode, ProvenanceClass
+from sft.claim_evidence import EMPTY_ONE
+from sft.engine import EvidenceMode, ProvenanceClass
 from sft.physics.structural_constants import StructuralPhysicsSpec, Witness, binary_axis
 
 

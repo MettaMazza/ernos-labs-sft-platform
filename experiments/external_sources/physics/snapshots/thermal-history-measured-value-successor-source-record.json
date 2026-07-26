@@ -1,0 +1,35 @@
+{
+  "schema": "sft-v3-thermal-history-measured-value-successor-source-record/1",
+  "correction_scope": "This successor replaces the exact-quarter-exclusion acceptance predicate in Claim SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038. Claim 037 remains the analytic thermal-family law; Claim 057 supplies the independently enumerated physical-isotope closure; historical receipts remain immutable.",
+  "analytic_claim_id": "SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037",
+  "analytic_receipt_hash": "sha256:25dda78644ebc04ad43cd3e416950ad76dae6b124ed023f41364f0661eae9c00",
+  "analytic_certificate_hash": "sha256:d3b85781f4413b1fe50145852f202342bb18ea31ef3db510a295f221d60c6bb3",
+  "physical_isotope_claim_id": "SFT-PHYS-THERMAL-HELIUM-ISOTOPE-TERMINAL-057",
+  "physical_isotope_receipt_hash": "sha256:a3b3a44a0d3add7032680427c3b2b504147c0eb824d05fa5d044cef454c5ebc4",
+  "physical_isotope_certificate_hash": "sha256:1222b7660115f66ca7f69affed5464c2ef65cc83e1c16dd7bf47d038a9019fa7",
+  "superseded_validation_claim_id": "SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038",
+  "retrieval_date": "2026-07-25",
+  "registered_target_source": {
+    "path": "experiments/external_sources/physics/snapshots/thermal-history-postseal-source-record.json",
+    "hash": "sha256:8ce41a6c68923395da2502fbb8e078dc770ac2c7648c966b241d8c671273a0d8",
+    "all_original_rows_retained": true
+  },
+  "sources": [
+    {"source_id": "NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE", "title": "The evolution of the Cosmic Microwave Background Temperature", "url": "https://arxiv.org/abs/1012.3164", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1012.3164-cmb-temperature-redshift.pdf", "snapshot_hash": "sha256:aa79c65170e84d6a8dc71dbd0876538c19619a1c926453ce5a54bd96d3f1efb7"},
+    {"source_id": "AVER-ET-AL-2026-PRIMORDIAL-HELIUM", "title": "The LBT Yp Project IV: A New Value of the Primordial Helium Abundance", "url": "https://arxiv.org/abs/2601.22238", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-2601.22238-primordial-helium.pdf", "snapshot_hash": "sha256:72f646a345c36b77211e6035d3a78345498f0766cf9fc0a54932ebe0dd670c6a"},
+    {"source_id": "COOKE-PETTINI-STEIDEL-2018-DEUTERIUM", "title": "One percent determination of the primordial deuterium abundance", "url": "https://arxiv.org/abs/1710.11129", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1710.11129-primordial-deuterium.pdf", "snapshot_hash": "sha256:1a6ec19d6568b8854a40e9dd587906f99a8ea94ecd2d5c712ad86aa506b93f4a"},
+    {"source_id": "PLANCK-2018-OVERVIEW-PEAKS", "title": "Planck 2018 results I: overview and cosmological legacy", "url": "https://arxiv.org/abs/1807.06205", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1807.06205-planck-overview.pdf", "snapshot_hash": "sha256:dca932893b7d2724aa2b8d33170fc1b5682c425dd56fcd3c5d7b2098d377db5c"},
+    {"source_id": "PLANCK-2018-COSMOLOGICAL-PARAMETERS", "title": "Planck 2018 results VI: cosmological parameters", "url": "https://arxiv.org/abs/1807.06209", "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1807.06209-planck-cosmological-parameters.pdf", "snapshot_hash": "sha256:8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77"},
+    {"source_id": "PDG-2025-BBN-REVIEW", "title": "Big-Bang Nucleosynthesis", "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf", "snapshot_path": "experiments/external_sources/physics/snapshots/pdg-2025-bbang-nucleosynthesis.pdf", "snapshot_hash": "sha256:1843c1d9025aa33c059700708f1041c4462364cdb582325f0c685a6ba1b38484"}
+  ],
+  "methodological_boundary": {
+    "analytic_quarter_and_physical_59_over_240_are_separately_typed": true,
+    "physical_helium_value_was_sealed_before_measurement_release": true,
+    "all_temperature_deuterium_recombination_and_peak_rows_are_retained": true,
+    "angular_projection_rows_are_method_records_not_exact_internal_mode_values": true,
+    "noninteger_angular_positions_are_not_rewarded_as_a_result": true,
+    "no_uncertainty_is_widened_or_rescaled": true,
+    "measurement_selected_formal_survivor": false,
+    "target_inaccessible_to_formal_derivation": true
+  }
+}

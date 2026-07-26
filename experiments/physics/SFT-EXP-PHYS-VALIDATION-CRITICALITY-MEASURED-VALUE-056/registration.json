@@ -1,0 +1,177 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A class not descending from Claim 047 must reject.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source hash or measurement row change must reject.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate must reject.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, row selection, uncertainty rescaling or mismatch-as-success must reject.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced vector or incomplete class key must reject rather than become a passing label.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:6f87096eef15eb54e6ee9db864b20d9d6e03edad9d38cff34a38916b79357e25"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:075d304c85f48d6886ba7cb1fd44d5db25815cdf3a5d016502da1435654f1bdc",
+      "role": "development_only",
+      "source_id": "V1-V2-CRITICALITY-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "exact critical exponent vector",
+      "exact cascade exponent vector",
+      "generated universality class key"
+    ],
+    "external_reference_protocol": "Measured exponents remain post-seal dimensionless records normalized only by their reported standard uncertainties.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All five class keys are complete, the fifteen-value residual mean is below the One, and every independent erbium/turbulence check passes without rewarding a displaced material row.",
+    "comparison_implementation_hash": "sha256:f348dc05bfd158103c6d8f3d21b012a3cef3fd1c71ee05428a38f18cd13ad651",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056-post-seal-evaluator",
+    "falsification_condition": "Reject if a source or dependency changes; any material structural key is incomplete; the complete fifteen-value mean squared residual reaches the One; erbium or turbulence excludes a sealed exponent; either spectrum route is absent; any row is omitted or uncertainty rescaled; La02 displacement is rewarded; or targets alter the survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Every material retains transition order, interaction range, scaling relation and exponent vector.",
+        "metric_id": "MANGANITE-COMPLETE-CLASS-KEYS",
+        "unit_protocol": "source-bound structural key"
+      },
+      {
+        "all_rows": true,
+        "definition": "All fifteen exponent measurements contribute once to the exact mean squared normalized residual.",
+        "metric_id": "MANGANITE-COMPLETE-UNIT-RESIDUAL",
+        "unit_protocol": "exact rational unit-normalized squared residual"
+      },
+      {
+        "all_rows": true,
+        "definition": "Complete independent critical and cascade measurements contain the sealed exact carriers.",
+        "metric_id": "ERBIUM-TURBULENCE-VECTOR",
+        "unit_protocol": "dimensionless exact rational intervals and route records"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Structural, magnetic, and magnetocaloric properties of La and Sm co-doped CaMnO3 manganites",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:afd0f783bd40b8ed376238eda9b254387c75c0c26ecc57488ab9b81b33d1d455",
+      "source_id": "SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026",
+      "source_uri": "https://doi.org/10.1007/s10854-026-17400-y"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Critical magnetic scattering in erbium",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:d8b6495b7defb46daa4d1162967d11b4680012ebd4a8e6d60e8892b83b9b3564",
+      "source_id": "MCMASTER-LIN-ERBIUM-CRITICAL-SCATTERING-1993",
+      "source_uri": "https://doi.org/10.1063/1.353720"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Spectral analysis of structure functions and their scaling exponents in forced isotropic turbulence",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:0c9f4321b52f78fe64b02684b4139a450955c12092c4faf8487f49bf6ff1d0f5",
+      "source_id": "APS-MCCOMB-TURBULENCE-STRUCTURE-2014",
+      "source_uri": "https://doi.org/10.1103/PhysRevE.90.053010"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Second-order structure function in fully developed turbulence",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:1bff196a24bc3f852dd384469c5f8e4112fcdf717c2416190ad44b0012ac06cb",
+      "source_id": "APS-HUANG-TURBULENCE-SPECTRUM-2010",
+      "source_uri": "https://doi.org/10.1103/PhysRevE.82.026319"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of class carrier, complete structural-key relation, provenance, custody, proof/measurement separation, all-row retention, successor closure and no extra rule.",
+    "dependency_hashes": [
+      "sha256:630b05dc8ef25a3c5ae7236f1fa6a46cfdcf0bb6c597332354c2495dc7106b8f",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:4d4ee16a0d9f057755aebc5518d1b879ddb782c503c65bc3e0a0e14b657b6f75"
+    ],
+    "exact_domain": "The admitted two-class formal census; complete structural key for each of five manganites; all fifteen manganite exponent values; complete erbium vector; complete turbulence structure interval; both physical spectrum routes; limitations; and every source identity.",
+    "relation_hash": "sha256:0ed80156bf7fef5078436fbba66d144879ac14dfeb310bb93337e2f6200d797c",
+    "statement": "All five manganite structural keys identify the binary local-order mean-field class. The complete fifteen-value mean squared normalized residual is exactly 5286961/10584000, below the One. The erbium beta/gamma/nu intervals contain 1/2, One and 1/2; the turbulence interval contains 2/3; and both physical routes exhibit the registered falling five-thirds plateau. No material mismatch is an acceptance condition.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:0601d19640943c4b99eb8cccf061e3115c520773eac5e762bf7c5b7440339b25",
+      "input_id": "FORMAL-CRITICALITY-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:81b8b16e63c4b61098f0e75e3a6f9eeac32c515a2dd5447d28b8dc82619f2808",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "claims/SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047/certificate.json": "sha256:3f6af79001628c06e1c04a08b4e17c349ffa2205d6c574a865eb8be0ecedd6c0",
+    "experiments/external_sources/physics/snapshots/cetin-manganite-critical-exponents-2026.html": "sha256:afd0f783bd40b8ed376238eda9b254387c75c0c26ecc57488ab9b81b33d1d455",
+    "experiments/external_sources/physics/snapshots/criticality-measured-value-successor-source-record.json": "sha256:5a4db9bd5af7028de244c97e18e75fd4d2cd0b7004a6778c8581b493c99537f5",
+    "experiments/external_sources/physics/snapshots/criticality-universality-turbulence-postseal-source-record.json": "sha256:7c3cb34584f3581b46c9c9e1f91d2c550cfd8441761a512fee767baf8cc801fa",
+    "experiments/external_sources/physics/snapshots/huang-turbulence-spectrum-2010.pdf": "sha256:1bff196a24bc3f852dd384469c5f8e4112fcdf717c2416190ad44b0012ac06cb",
+    "experiments/external_sources/physics/snapshots/lin-erbium-critical-scattering-1993.html": "sha256:d8b6495b7defb46daa4d1162967d11b4680012ebd4a8e6d60e8892b83b9b3564",
+    "experiments/external_sources/physics/snapshots/mccomb-turbulence-structure-exponent-2014.pdf": "sha256:0c9f4321b52f78fe64b02684b4139a450955c12092c4faf8487f49bf6ff1d0f5"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on a changed source, incomplete class key, unit residual failure, excluded exponent, missing route, omitted row, target access, fitting, uncertainty rescaling, mismatch-as-success or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026",
+      "target_id": "CRITICALITY-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD"
+    }
+  ]
+}

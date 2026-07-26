@@ -1,0 +1,171 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-DARK-SMITHION-LFV-062",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 061 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting or evidential relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A displaced density or fabricated nonzero LFV rate rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-DARK-SMITHION-LFV-062-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:91e15cac0aaa1191b053e5a1971c2dd403b9b7eb38194f0b20e4c10b1da4a078"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1155658f219be338dbbe6a3767ee7f5f08193c5af36aa6f6443bd9a212a5ce12",
+      "role": "development_only",
+      "source_id": "V1-V2-DARK-SMITHION-LFV-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "27/5 abundance ratio",
+      "four exact cubic spectra",
+      "3:5:20 LFV relative weights"
+    ],
+    "external_reference_protocol": "Density values, galaxy records, search limits and measurement status remain post-seal.",
+    "measurement_record_policy": "upper-limits-and-unobserved-status-never-become-measured-proof-scalars",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every presently measurable comparison passes and every unmeasured prediction remains explicitly unmeasured.",
+    "comparison_implementation_hash": "sha256:7f0e76d9b336e04ff95d12ea78650e3c81f2f721af9ae4660202c02bf86cf639",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-DARK-SMITHION-LFV-062-post-seal-evaluator",
+    "falsification_condition": "Reject if any source changes; 27/5 leaves the complete Planck ratio interval; 0.12096 leaves the complete cold-dark interval; the galaxy discrepancy row is omitted; an LFV limit is altered or relabelled as a rate; a Smithion is relabelled as measured without a source; target data select the formal law; or any hostile control passes incorrectly.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact ratio and absolute central transport inside complete Planck intervals.",
+        "metric_id": "DARK-DENSITY",
+        "unit_protocol": "exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "Galaxy, LFV upper-limit and Smithion measurement-status rows retained without evidential relabelling.",
+        "metric_id": "STANDING-TEST-CUSTODY",
+        "unit_protocol": "source-bound complete vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-DARK-SMITHION-LFV-062",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Planck 2018 results. VI. Cosmological parameters",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:274e0189de5846ce0b8c2d7b83ae06c72587cf8325d4d2b2338e88dd0a74a88f",
+      "source_id": "PLANCK-2018-VI-ABSTRACT-DENSITIES",
+      "source_uri": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63",
+      "source_id": "SPARC-2016-175-GALAXY-MASS-MODELS",
+      "source_uri": "https://arxiv.org/abs/1606.09251"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "New limit on the muon-to-electron-gamma decay with the MEG II experiment",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:0efbf99543c92d340eb7b07f40e6fea580b7746caab26c9233d3e30e8b71a5b6",
+      "source_id": "MEGII-2025-MU-E-GAMMA",
+      "source_uri": "https://arxiv.org/abs/2504.15711"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Searches for Lepton Flavor Violation in the Decays tau to e gamma and tau to mu gamma",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:ba3e1352f4c14b1867e06f6436b4a6b1e1980cd55ce52d9a9454bd618ed70015",
+      "source_id": "BABAR-2010-TAU-LFV-GAMMA",
+      "source_uri": "https://arxiv.org/abs/0908.2381"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of the sealed law, Planck density rows, galaxy discriminator, LFV search rows, prediction status, target isolation, complete-row custody and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:af6574dd385535343cd1af2b3f6c920b09856ad67c31513961454c2258aec54d",
+      "sha256:f3a2b9c60d74be8353bb24abeae60fba2b658a64a49f77185699cf8c368cf639",
+      "sha256:725c5a4a65e9a6e0f91a827c9fe0682b26ec8848088665dccee323b62e0bab6f",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The admitted Claim 061; both Planck density rows with uncertainties; the complete SPARC sample statement; all three registered LFV radiative upper-limit rows; every current Smithion measurement-status row; and no target access before seal.",
+    "relation_hash": "sha256:8511dd1058b4c0f1bf141d8b5a56b003519024fa91fbfa6c511d508232b30dde",
+    "statement": "The exact 27/5 ratio lies inside the complete Planck dark/baryon interval, and 27/5 times 0.0224 gives 0.12096 inside the reported cold-dark interval [0.119,0.121]. The 175-galaxy SPARC record rejects finite baryon-only inverse-square asymptotics and supports additional gravitating matter under the admitted law. MEG II and BaBar provide three positive upper limits after null searches, not three measured rates; the 3:5:20 and 4:1 LFV predictions remain standing tests. No measured Smithion mass exists, so all twelve mass-ratio enclosures remain standing predictions rather than fabricated measured-value matches.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:71a131119ffd152690ec772019177fb06599474cd5e89b60a62c1b9b69ec5762",
+      "input_id": "DARK-SMITHION-LFV-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-DARK-SMITHION-LFV-062-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:d6d811e9c259b7c79dae7dd89a7aadd25b0802fb61aa9bd0dadf3e62a957b98c",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-DARK-SMITHION-LFV-062-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-measurement-and-unmeasured-status-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-0908.2381-babar-tau-lfv.pdf": "sha256:ba3e1352f4c14b1867e06f6436b4a6b1e1980cd55ce52d9a9454bd618ed70015",
+    "experiments/external_sources/physics/snapshots/arxiv-1606.09251-sparc.pdf": "sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63",
+    "experiments/external_sources/physics/snapshots/arxiv-2504.15711-megii-lfv.pdf": "sha256:0efbf99543c92d340eb7b07f40e6fea580b7746caab26c9233d3e30e8b71a5b6",
+    "experiments/external_sources/physics/snapshots/dark-smithion-lfv-postseal-source-record.json": "sha256:ed0dba82cdd49f67258eb152466a629d9086804197d2c56bcfdc49e2849345f3",
+    "experiments/external_sources/physics/snapshots/planck-2018-density-abstract-record.json": "sha256:274e0189de5846ce0b8c2d7b83ae06c72587cf8325d4d2b2338e88dd0a74a88f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on changed evidence, failed measured comparison, omitted row, target access, fitting, evidential relabelling or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PLANCK-2018-VI-ABSTRACT-DENSITIES",
+      "target_id": "DARK-SMITHION-LFV-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

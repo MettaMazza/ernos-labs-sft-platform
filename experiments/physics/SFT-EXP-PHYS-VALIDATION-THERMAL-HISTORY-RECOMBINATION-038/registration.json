@@ -1,0 +1,174 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A named cosmological chronology cannot replace the sealed Fold relation.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed source record or PDF is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitted correction or type conflation is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A displaced temperature exponent rejects; the real unfavorable helium row must remain visible.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:be5c7ebbcc8a415da746d4be54a204ab2bf244b44b7923ecd5f095cf5f3fd918"
+  },
+  "development_observations": [
+    "V1/V2 already named the temperature-redshift, approximate freeze-out, helium and CMB targets. The V3 executable could not read any target before its formal survivor and receipt were fixed.",
+    "Formal Claim 037 was admitted before the six newly bound source snapshots were retrieved.",
+    "The current direct helium interval and the noninteger Planck angular positions are retained as adverse corrections, not hidden or fitted away."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "Complete temperature, abundance, recombination and peak rows pass their typed comparisons; unfavorable equality controls remain visible; and the tampered exponent fails.",
+    "comparison_implementation_hash": "sha256:f805b9b70cf179899cb9f7a897465c075295cd475243e5c350359ce6c279567b",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038-post-seal-evaluator",
+    "falsification_condition": "Reject if any source identity or registered row changes; if exact One leaves the temperature-exponent interval; if the typed One/six to One/seven sequence is absent; if the unfavorable helium exclusion is hidden or used to fit a correction; if deuterium is nonpositive; if recombination support or the acoustic census is erased; if observed peak intervals are falsely relabelled as exact integer multiples; or if any target changes the formal survivor."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038",
+  "external_measurement_sources": [
+    {
+      "custody_role": "primary direct high-redshift CMB thermometry",
+      "measurement_body": "The evolution of the Cosmic Microwave Background Temperature",
+      "snapshot_hash": "sha256:aa79c65170e84d6a8dc71dbd0876538c19619a1c926453ce5a54bd96d3f1efb7",
+      "source_id": "NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE",
+      "source_pages": [
+        1
+      ],
+      "source_uri": "https://arxiv.org/abs/1012.3164"
+    },
+    {
+      "custody_role": "primary direct primordial-helium measurement",
+      "measurement_body": "The LBT Yp Project IV: A New Value of the Primordial Helium Abundance",
+      "snapshot_hash": "sha256:72f646a345c36b77211e6035d3a78345498f0766cf9fc0a54932ebe0dd670c6a",
+      "source_id": "AVER-ET-AL-2026-PRIMORDIAL-HELIUM",
+      "source_pages": [
+        1,
+        24
+      ],
+      "source_uri": "https://arxiv.org/abs/2601.22238"
+    },
+    {
+      "custody_role": "primary direct primordial-deuterium measurement",
+      "measurement_body": "One percent determination of the primordial deuterium abundance",
+      "snapshot_hash": "sha256:1a6ec19d6568b8854a40e9dd587906f99a8ea94ecd2d5c712ad86aa506b93f4a",
+      "source_id": "COOKE-PETTINI-STEIDEL-2018-DEUTERIUM",
+      "source_pages": [
+        1,
+        13,
+        15
+      ],
+      "source_uri": "https://arxiv.org/abs/1710.11129"
+    },
+    {
+      "custody_role": "primary mission acoustic-spectrum extrema",
+      "measurement_body": "Planck 2018 results. I. Overview and the cosmological legacy of Planck",
+      "snapshot_hash": "sha256:dca932893b7d2724aa2b8d33170fc1b5682c425dd56fcd3c5d7b2098d377db5c",
+      "source_id": "PLANCK-2018-OVERVIEW-PEAKS",
+      "source_pages": [
+        1,
+        16
+      ],
+      "source_uri": "https://arxiv.org/abs/1807.06205"
+    },
+    {
+      "custody_role": "primary mission recombination-redshift and acoustic-peak measurement",
+      "measurement_body": "Planck 2018 results. VI. Cosmological parameters",
+      "snapshot_hash": "sha256:8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77",
+      "source_id": "PLANCK-2018-COSMOLOGICAL-PARAMETERS",
+      "source_pages": [
+        14,
+        16
+      ],
+      "source_uri": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "custody_role": "authoritative synthesis used only to check the separately derived one-sixth to one-seventh transport and analytic quarter partition",
+      "measurement_body": "Big-Bang Nucleosynthesis",
+      "snapshot_hash": "sha256:1843c1d9025aa33c059700708f1041c4462364cdb582325f0c685a6ba1b38484",
+      "source_id": "PDG-2025-BBN-REVIEW",
+      "source_pages": [
+        1,
+        2
+      ],
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed thermal relation, complete external target, source provenance, capability-closed isolation, proof/measurement separation, complete row and adverse-result retention, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:804f63fd2295bd3e39fe598176395da3f17db4cbd8633348fcd343d36b6816fe",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71"
+    ],
+    "exact_domain": "The admitted temperature exponent One, typed freeze-out/capture sequence, analytic quarter family partition, positive minor channels, finite visibility and internal acoustic parity; every registered uncertainty endpoint; all seven Planck TT peak positions and amplitudes; the eighteen-peak mission count; and explicit rejection of exact observed quarter equality and exact observed angular integer multiples.",
+    "relation_hash": "sha256:fbc6ebe122cfe01ee936e6dbf9a614f669dc55dee018d5e4344f9a3eeed03714",
+    "statement": "The direct high-redshift CMB temperature exponent interval [49/50,517/500] contains exact One. The external freeze-out sequence is approximately 1/6 then 1/7, matching the separately forced typed transport. Direct helium Yp=0.2458+/-0.0013 gives [489/2000,2471/10000], which excludes 1/4; therefore 1/4 remains the exact analytic helium-family partition and is not relabelled as the exact isotope measurement. Direct primordial deuterium (2.527+/-0.030) times 10^-5 is positive and subordinate. Planck retains z*=1089.92+/-0.25, eighteen finite extrema and seven complete TT peak rows. Those angular peak intervals are not integer multiples of the first, so the internal-whole-mode/observed-projection distinction passes and the old angular-integer reading is rejected.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:e8441865795a8112ac68a4f6bbec9cce097a77c882b15b45b5173d1f9c367b1f",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain every source, uncertainty, TT peak position/amplitude, current adverse helium result, and angular-integer control",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-1012.3164-cmb-temperature-redshift.pdf": "sha256:aa79c65170e84d6a8dc71dbd0876538c19619a1c926453ce5a54bd96d3f1efb7",
+    "experiments/external_sources/physics/snapshots/arxiv-1710.11129-primordial-deuterium.pdf": "sha256:1a6ec19d6568b8854a40e9dd587906f99a8ea94ecd2d5c712ad86aa506b93f4a",
+    "experiments/external_sources/physics/snapshots/arxiv-1807.06205-planck-overview.pdf": "sha256:dca932893b7d2724aa2b8d33170fc1b5682c425dd56fcd3c5d7b2098d377db5c",
+    "experiments/external_sources/physics/snapshots/arxiv-1807.06209-planck-cosmological-parameters.pdf": "sha256:8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77",
+    "experiments/external_sources/physics/snapshots/arxiv-2601.22238-primordial-helium.pdf": "sha256:72f646a345c36b77211e6035d3a78345498f0766cf9fc0a54932ebe0dd670c6a",
+    "experiments/external_sources/physics/snapshots/pdg-2025-bbang-nucleosynthesis.pdf": "sha256:1843c1d9025aa33c059700708f1041c4462364cdb582325f0c685a6ba1b38484",
+    "experiments/external_sources/physics/snapshots/thermal-history-postseal-source-record.json": "sha256:8ce41a6c68923395da2502fbb8e078dc770ac2c7648c966b241d8c671273a0d8"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE",
+        "AVER-ET-AL-2026-PRIMORDIAL-HELIUM",
+        "COOKE-PETTINI-STEIDEL-2018-DEUTERIUM",
+        "PLANCK-2018-OVERVIEW-PEAKS",
+        "PLANCK-2018-COSMOLOGICAL-PARAMETERS",
+        "PDG-2025-BBN-REVIEW"
+      ],
+      "target_id": "THERMAL-HISTORY-WITHHELD-COMPLETE-OBSERVATION-RECORD"
+    }
+  ]
+}

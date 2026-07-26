@@ -19,9 +19,9 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/relativistic_field_validation_v1.py",
         root / "sft/physics/generated_empirical_law.py",
         root / "claims/SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003/execution.py",
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

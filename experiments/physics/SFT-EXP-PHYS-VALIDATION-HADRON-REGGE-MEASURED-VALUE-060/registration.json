@@ -1,0 +1,182 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A carrier not descending from Claim 059 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, row deletion, width widening or mismatch-as-success rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced mass or missing rho5 row rejects rather than becoming a passing label.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:90f69c86ac2c0acaae682386750db0ef6a037d0eb85864abd9cbad388101fd60"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358",
+      "role": "development_only",
+      "source_id": "V1-V2-HADRON-REGGE-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "exact 3/5 base",
+      "exact 6/5 successor",
+      "depth-independent (6J-3)/5 squared carrier"
+    ],
+    "external_reference_protocol": "The common positive GeV-squared comparison label and all resonance records are attached only after the formal seal.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All five exact carriers lie inside their complete measured resonance supports; no mismatch is an acceptance condition.",
+    "comparison_implementation_hash": "sha256:500a65533b92a73d72b7fbcdcd9159c5d112559ee9a7c36e886da3615db575f8",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060-post-seal-evaluator",
+    "falsification_condition": "Reject if a source or dependency changes; any exact carrier leaves its most restrictive measured resonance support; a row or status is missing; a width or uncertainty is widened; a coefficient or correction is fitted; a mismatch is rewarded; or targets alter the formal survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Each exact squared carrier must lie inside its most restrictive mass-and-width support intersection.",
+        "metric_id": "COMPLETE-RESONANCE-SUPPORT",
+        "unit_protocol": "exact rational GeV-squared intervals"
+      },
+      {
+        "all_rows": true,
+        "definition": "All five mass, uncertainty, width, width-uncertainty and status records retained.",
+        "metric_id": "COMPLETE-ROW-CUSTODY",
+        "unit_protocol": "source-bound complete vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+      "source_id": "PDG-2025-RHO-770",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-rho-770.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+      "source_id": "PDG-2025-A2-1320",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-a2-1320.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+      "source_id": "PDG-2025-RHO3-1690",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-rho3-1690.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+      "source_id": "PDG-2025-A4-1970",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-a4-1970.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+      "source_id": "PDG-2025-RHO5-2350",
+      "source_uri": "https://pdg.lbl.gov/2025/listings/rpp2025-list-rho5-2350.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed Regge carrier, complete resonance support, provenance, custody, proof/measurement separation, complete rows, successor closure and no extra rule.",
+    "dependency_hashes": [
+      "sha256:802cc4168bf3172bba71f44be67ebfc4900a50a01f110a377c4e6a6ad03eac3f",
+      "sha256:a19e49787624cf1db627147014bc7abadb58d546c33b1803a270dfd3ff676410",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The formal 059 receipt; all five registered masses, uncertainties, widths, width uncertainties and statuses; the exact most-restrictive support construction; common post-seal GeV-squared translation; and all source identities.",
+    "relation_hash": "sha256:5d950e076cf01a1ef58b0efebeb161f375ee4dfae66fbe25e370facd8104e400",
+    "statement": "The forced squared carriers 3/5, 9/5, 3, 21/5 and 27/5 all lie inside their corresponding complete measured resonance-support intervals. All five rows and the rho5 omission status are retained. No fitted slope, intercept, residual, selected row, uncertainty widening or mismatch-as-success remains.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:04c8e3bd170de61199bf13e4ead70e3082a0e2cfc68c6213787ab4bfd1becaf1",
+      "input_id": "REGGE-NORMALIZED-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    },
+    {
+      "content_hash": "sha256:b5b3d9ec546d74a68080efba6d8249ea590c37aaba4618847ea6daabc6306489",
+      "input_id": "REGGE-DIMENSIONAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:007d7352138b2f6d1bebe8ae64021c7748db36ce3c85643999e61424fe2aafb8",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-measurement-status-and-control-row",
+  "source_hashes": {
+    "claims/SFT-PHYS-HADRON-REGGE-DIMENSIONAL-TERMINAL-059/certificate.json": "sha256:b5b3d9ec546d74a68080efba6d8249ea590c37aaba4618847ea6daabc6306489",
+    "claims/SFT-PHYS-HADRON-REGGE-TERMINAL-005/certificate.json": "sha256:04c8e3bd170de61199bf13e4ead70e3082a0e2cfc68c6213787ab4bfd1becaf1",
+    "experiments/external_sources/physics/snapshots/hadron-regge-measured-value-successor-source-record.json": "sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356",
+    "experiments/external_sources/physics/snapshots/hadron-regge-successor-source-record.json": "sha256:c6e671212984fa6b6956a3d748c12c81879686b9198ca5a0818670fe63301358"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on a changed source, excluded carrier, omitted row, target access, fitting, width widening, mismatch-as-success or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-RHO-770",
+      "target_id": "HADRON-REGGE-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD"
+    }
+  ]
+}

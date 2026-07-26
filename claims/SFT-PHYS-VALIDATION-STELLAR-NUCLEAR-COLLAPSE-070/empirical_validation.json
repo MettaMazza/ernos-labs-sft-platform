@@ -1,0 +1,66 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070",
+  "data_source_ids": [
+    "NASA-GSFC-COSMIC-ELEMENTS-STELLAR-STAGES",
+    "BOREXINO-2020-CNO-NEUTRINOS",
+    "LOREDO-LAMB-2001-SN1987A-NEUTRINOS",
+    "DIEHL-2014-SN2014J-GAMMA-LINES",
+    "WATSON-2019-GW170817-STRONTIUM"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:42663c6f2952d190dc0c9cc7d8d822e5516b85b23be84f76c1cc8bcfeeed8f1c",
+  "falsification_condition": "Reject if any source changes; any stage, duration, detector, line, flux, uncertainty, confidence, feature or modelling boundary is omitted; the stage temperatures are not strictly ordered; the direct channel observations are absent; target data alter the sealed law; a fit enters; or any hostile control passes incorrectly.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a60aa94729e3f966a44a65c625162ae9a300b75ac462023625fec2a19707aa7a",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:007b831e78c511e289a4930edfc9da457823d08a85d5caeb68fde02ae8cbd753",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:58bd8d697f5dc2ee4db19173e01ea0a0f801738d246a2f88d0ae9453a9f0aba9",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:aef49d8ce9e326c973ca17a37910a00c813fd80fb89daca7def369c44a00c4b9",
+    "prediction_seal_hash": "sha256:b410aa8fb2ba51d223b1a286395a902aa7667e9bc4da6377fa41e078a06e0f70",
+    "program_hash": "sha256:b8bb8ca9fa15b0756ca19cf57459b3715d3c1cfcb0f38988c4db99dc46450946",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0b96ed7b542a95ad9246d9671c935d5cfb9e45e2bce542ee2479042047f510a6",
+    "target_material_present": false,
+    "trace_hash": "sha256:625afc898fd9901ce21060a24dcd1cd0ed73fda61d53bf7c3b34484013046a00"
+  },
+  "measurement_receipt_hash": "sha256:a7a660979d997ee220d888616b4cb0893150f610c7a11cfae2f04f62787b2370",
+  "measurements": [
+    "All six stellar stages have strictly increasing measured temperatures; every duration, including the nonmonotonic neon/oxygen pair, is retained.",
+    "Borexino directly records CNO fusion neutrinos at 36/5 +3 -17/10 cpd per 100 tonnes and at least five-sigma significance.",
+    "The complete three-detector SN1987A neutrino record is retained, with model preference explicitly identified as model-assisted.",
+    "Both SN2014J cobalt lines, flux errors and ratio are retained; the measured ratio interval contains 17/25.",
+    "GW170817 spectroscopy identifies strontium while retaining every spectral-modelling boundary.",
+    "Erased-stage, hidden-irregularity, erased-detector, outside-ratio and erased-capture controls reject."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:76ab98508c7a77d326f0211169d6bd8d4dc8bed11b0474a668d37a9fe0c7787a",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070-external-target-custodian",
+    "experiment_registration_hash": "sha256:42663c6f2952d190dc0c9cc7d8d822e5516b85b23be84f76c1cc8bcfeeed8f1c",
+    "prediction_seal_hash": "sha256:b410aa8fb2ba51d223b1a286395a902aa7667e9bc4da6377fa41e078a06e0f70",
+    "registered_target_identity_hash": "sha256:0b96ed7b542a95ad9246d9671c935d5cfb9e45e2bce542ee2479042047f510a6",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4e43a6997d0d5a655d50c7e1dc1630e2d1086cae822ed04c42732a6784931849"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:606e96edc6791a89f2d03d4f09069c448275102eb50e8c6da23938285869906c"
+}

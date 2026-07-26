@@ -19,6 +19,8 @@ depart from protocol without her prior explicit request.
 
 - Engine commit: `501925b1c8553f49493d8efaeedfac9d8f42ab54`
 - Engine Git tree: `ad30f4866c18b2adbade95a0b2de40d5caa61308`
+- Engine runtime-byte seal:
+  `sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`
 - Sole existing post-freeze exception:
   `bed68facb01d938b8c5257d0843506f40978e111`
 - Exception scope: read-only live terminal progress during verification; no
@@ -64,3 +66,13 @@ The amendment is violated if any automated agent:
 
 Any such event must halt the affected work. It cannot be relabeled as a repair,
 convenience change or successful derivation.
+
+## Mechanical seal enforcement
+
+`python3 tools/verify_engine_seal.py` hashes the actual runtime source support
+before admission. The `sft` package performs the same requirement before any
+engine submodule import. This closes the distinction between a clean committed
+tree and a modified working tree: either form of drift is
+`VOID_INVALID_HALTED`. The full threat model and history audit are recorded in
+`governance/ENGINE_SEAL.md` and
+`audits/engine_integrity_audit_2026-07-25.md`.

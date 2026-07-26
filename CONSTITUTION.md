@@ -155,6 +155,26 @@ target-aware validator, preselected survivor or protocol alteration designed
 to obtain acceptance. A claim passes the frozen protocol as submitted or it
 does not enter the model.
 
+### 7.2 Canonical runtime-byte seal
+
+The engine's committed Git tree and the actual bytes imported at runtime must
+both equal the canonical authority. The Git tree is
+`ad30f4866c18b2adbade95a0b2de40d5caa61308`; the exact 16-file runtime seal is
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`.
+
+Every researcher, reviewer and automated system must verify the runtime seal
+before admission. The host package enforces the same check before engine
+import. A changed, missing, added or symbolically substituted engine file, or a
+changed seal manifest, halts the run as `VOID_INVALID_HALTED`. Editing the seal,
+verifier, guard or tests to ratify a mismatch is a protocol violation, not a new
+valid engine identity.
+
+The seal proves that the same admission authority judged the package. It does
+not replace source custody, candidate closure, controls, independent
+recomputation or empirical validation, and it cannot make fitting, target
+leakage or fabricated evidence admissible. Public cryptographic anchoring of a
+seal or a newly versioned engine remains Maria Smith's publication decision.
+
 ## 8. Empirical constitution
 
 Natural-science claims follow this order:

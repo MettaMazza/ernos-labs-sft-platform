@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-COMPOSITE-CONFINING-SECTOR-TERMINAL-031",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d64de949d0073feb311cb6b076043542586f4bb0f6d164c1c5ae451b8344c2f8"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:de67bce63f980db5ef3b82782a6980729c913a1abb9e175ed3ce896e696d48ce"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8720f86993e5ca432ed6f38fd4bc5f64f288b42723ba14aa0f57729cc611249a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:11ce4408c46af0dca4b297e5207ff15539732f5323461ae6ca66338a157e79e4"
+    }
+  ]
+}

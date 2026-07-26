@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_rows_required": true,
+  "claim_id": "SFT-PHYS-VALIDATION-GRAND-LOCK-076",
+  "controls": [
+    "missing empirical claim row rejects",
+    "missing unfavorable or scope-boundary row rejects",
+    "false legacy receipt shape rejects",
+    "measurement-selected formal survivor rejects"
+  ],
+  "evidence_mode": "observational_derivation_after_formal_grand_lock_seal",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-GRAND-LOCK-076",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "complete immutable pre-lock Physics evidence surface",
+      "snapshot_hash": "sha256:e233cd761aa874893d2c2a4e2b09f071297aee1204d531fce3d93429948177a3",
+      "source_id": "SFT-V3-PHYSICS-IMMUTABLE-EMPIRICAL-EVIDENCE-SURFACE",
+      "source_uri": "experiments/external_sources/physics/snapshots/physics-grand-lock-empirical-reconciliation-record.json"
+    }
+  ],
+  "falsification_condition": "Reject on any omitted or changed empirical claim, validation hash, available measurement receipt, source identity, legacy receipt shape, unfavorable result or scope boundary; on false pre-seal provenance; or if observation selects a formal survivor.",
+  "formal_seal_receipt": "sha256:ae18f67371c8e7054430935d6b5e5f3162f24cf9cba073769384bf7ba467d817",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain all 234 pre-lock empirical claims, all 147 distinct source identities, all fourteen detected unfavorable/scope claims and all six legacy receipt shapes",
+  "status": "measured",
+  "target_access_policy": "aggregate evidence record opens only after formal Grand Lock 075",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "SFT-V3-PHYSICS-IMMUTABLE-EMPIRICAL-EVIDENCE-SURFACE",
+      "target_id": "SFT-V3-PHYSICS-COMPLETE-EMPIRICAL-RECONCILIATION"
+    }
+  ]
+}

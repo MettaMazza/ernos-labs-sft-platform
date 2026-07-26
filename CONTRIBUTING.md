@@ -18,6 +18,18 @@ protocol or validation surface to manufacture a pass. A submission that cannot
 pass the frozen engine remains rejected. Only Maria Smith can authorize a
 specifically identified engine change before it occurs.
 
+Before any SFT execution, verify the actual runtime bytes:
+
+```text
+python3 tools/verify_engine_seal.py
+```
+
+The accepted SHA-256 identity is
+`sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`.
+Any other identity is void and must halt before admission. See
+`governance/ENGINE_SEAL.md` for the threat model, exact file support and public
+anchoring procedure.
+
 1. Open a claim registration without encoding the desired answer.
 2. Name dependencies, provenance classes, grammar and exact boundary.
 3. Generate the candidate domain.

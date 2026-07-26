@@ -1,0 +1,182 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 073 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, omission or provenance relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "REVERSED-CHIRP",
+      "expected_rejection": "Falling post-seal event frequency rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "ERASED-REMNANT",
+      "expected_rejection": "Failure of the two-to-one transition rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "FALSE-BLINDNESS",
+      "expected_rejection": "Relabelling GW150914 as blind rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "ERASED-SCOPE",
+      "expected_rejection": "Deleting the conditional/model boundary rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:d9faa5c28b8beafab288430f5f108e4d489eb9e7c86755de0c428badfd3c3ddd"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:e5e864c23d015b69be17e5b5d51b5b462d2829353a867513414b6728f54589c4",
+      "role": "preseal-development-context-not-blind-validation",
+      "source_id": "LIGO-VIRGO-GW150914-DISCOVERY-2016"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "positive radiation take",
+      "squared frequency ordering",
+      "two-to-one source join",
+      "positive finite damping"
+    ],
+    "external_reference_protocol": "Dimensional event records open only after Claim 073 and never set a Fold scale.",
+    "measurement_record_policy": "dimensional values, uncertainties and model roles remain typed external records",
+    "proof_value_policy": "positive exact whole and fractional Fold forms only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All stages and all provenance, uncertainty and scope rows remain; no target changes Claim 073.",
+    "comparison_implementation_hash": "sha256:6bd05e64ee7dc81780facd2f92c95b93f257ecd4b06791110a21cb4276af1956",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-post-seal-evaluator",
+    "falsification_condition": "Reject if a post-seal source changes; rising frequency/amplitude, positive radiation, two-to-one merger or decaying quadrupolar remnant support fails; any uncertainty or conditional/model boundary is omitted; GW150914 is relabelled as blind; a dimensional target selects Claim 073; or any hostile control passes.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain all GW151226 frequency, amplitude, cycle and scope rows.",
+        "metric_id": "RISING-CHIRP",
+        "unit_protocol": "exact rational external records"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain both event source/remnant and radiated-energy rows with uncertainties.",
+        "metric_id": "TWO-TO-ONE-MERGER",
+        "unit_protocol": "typed source and exact rational records"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain GW190521 quadrupolar decay and every interpretation boundary.",
+        "metric_id": "DAMPED-RINGDOWN",
+        "unit_protocol": "typed mode and scope records"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain GW150914 as development context, never as blind validation.",
+        "metric_id": "PROVENANCE",
+        "unit_protocol": "typed provenance record"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation_with_postseal_independent_comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_postseal_target",
+      "measurement_body": "LIGO Scientific Collaboration and Virgo Collaboration",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:a59bb954e9850a8800e2b62e1808553012e791b879e00f108b0bf061bf530e72",
+      "source_id": "LIGO-VIRGO-GW151226-DISCOVERY-2016",
+      "source_uri": "https://dcc.ligo.org/LIGO-P151226/public"
+    },
+    {
+      "custody_role": "withheld_postseal_target",
+      "measurement_body": "LIGO Scientific Collaboration and Virgo Collaboration",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:4d6661f18168267249b3ca043b0692d88376c9db9b3d9146a9500763f7b438a7",
+      "source_id": "LIGO-VIRGO-GW190521-DISCOVERY-2020",
+      "source_uri": "https://dcc.ligo.org/P2000020/public"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed Fold sequence, complete post-seal event vector, source custody, rising-chirp ordering, two-to-one remnant transition, damped-mode support, scope retention and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:2bb60b127531e3dcd908dbdc4c0b03ad3662df4fb4b43efa4a94e41976694e13",
+      "sha256:654b752435e7092eec165a59ac9cb2164e0d9c5dbbe1eab54b848ac51cf41f7b",
+      "sha256:cc467e33f2b4198ea1d8d6aeba0c110acae90df06cf7a8be87e15a8450f6f913",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The immutable Claim 073 receipt; disclosed GW150914 development context; every GW151226 frequency, amplitude, cycle, source, remnant, energy, uncertainty and model-role row; every GW190521 duration, cycle, frequency, source, remnant, ringdown and conditional-interpretation row; and all hostile controls.",
+    "relation_hash": "sha256:9ff50c845d5d2d8dec3357a5ac4d4321e121e3f3107ea89c387a398346b88308",
+    "statement": "The complete empirical record supports all three forced waveform stages. GW151226 rises from 35 to 450 Hz and in amplitude over 55 cycles, retains positive radiated energy and records two initial components joining one final remnant. GW190521 retains a decaying least-damped l=m=2 remnant mode compatible with its full waveform analysis. Its short duration, conditional quasicircular interpretation and alternative-source boundary remain explicit. GW150914 is retained as observational development evidence, not counted as a blind target. No external value selects or modifies the 4096-form Claim 073 survivor, and no dimensional frequency or fitted damping value becomes a Fold proof scalar.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:7add0b09e795aee79758286268637f442b40155f4af5c83a4a123f90e2150e19",
+      "input_id": "GRAVITATIONAL-WAVE-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:3bd1a293c727f46a3638fa99beda9df530b6923fab5fe2ef9c263782b8dc215d",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-development-provenance-and-every-postseal-value-error-condition-and-scope-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/gravitational-wave-chirp-ringdown-postseal-source-record.json": "sha256:b24e9d1e8fc37f39bcbc692ac7cfaddbe7666bc4e161880ff45708d958ed1d92",
+    "experiments/external_sources/physics/snapshots/ligo-p150914-gw150914-discovery.pdf": "sha256:e5e864c23d015b69be17e5b5d51b5b462d2829353a867513414b6728f54589c4",
+    "experiments/external_sources/physics/snapshots/ligo-p151226-gw151226-discovery.pdf": "sha256:a59bb954e9850a8800e2b62e1808553012e791b879e00f108b0bf061bf530e72",
+    "experiments/external_sources/physics/snapshots/ligo-p2000020-gw190521-discovery.pdf": "sha256:4d6661f18168267249b3ca043b0692d88376c9db9b3d9146a9500763f7b438a7"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on changed evidence, omission, role conflation, target access, fitting or failed hostile control.",
+  "target_access_policy": "structurally-denied-before-empirical-prediction-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "COMPLETE-POSTSEAL-GRAVITATIONAL-WAVE-VECTOR",
+      "target_id": "GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-WITHHELD-POSTSEAL-RECORD"
+    }
+  ]
+}

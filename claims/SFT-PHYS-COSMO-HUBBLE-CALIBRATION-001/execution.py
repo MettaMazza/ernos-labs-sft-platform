@@ -20,9 +20,9 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/generated_empirical_law.py",
         root / "sft/physics/measured_value.py",
         root / "claims/SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001/execution.py",
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

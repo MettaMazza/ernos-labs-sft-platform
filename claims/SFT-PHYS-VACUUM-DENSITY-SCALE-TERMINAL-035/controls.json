@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4aeb43be5f9e2b45452280cbd30496eddbc0607aba3ac2a1b9de4e54fcdc820c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:81167a736ebfd0209293af293c2d9751cb0eff2a31cf7a415da2653ef0f2ad19"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:74a9f3aaf140a89bddd338da261541701151f82dd1ed6490a59310d95e21db5c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:77bde99e13a432ec1df6a953152db7ae57c1fc3aaf061198814f68ce4cfd4cad"
+    }
+  ]
+}

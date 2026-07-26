@@ -1,0 +1,77 @@
+{
+  "schema": "sft-v3-vacuum-density-planck-postseal-source-record/1",
+  "record_id": "VACUUM-DENSITY-PLANCK-CODATA-POSTSEAL-2018-2026",
+  "retrieval_date": "2026-07-25",
+  "formal_claim_id": "SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035",
+  "formal_receipt_hash": "sha256:c7b4777b12fc70628b0fd9a2f7d957274b61ede7f3624a665781364c8c9f7723",
+  "historical_knowledge_boundary": {
+    "v1_v2_target_known_before_v3_reconstruction": true,
+    "older_local_planck_transcription_known_before_formal_seal": true,
+    "historical_blindness_claimed": false,
+    "formal_executable_target_access_before_seal": false,
+    "new_primary_pdf_retrieved_after_formal_receipt": true,
+    "methodological_class": "observational-data-informed_target-inaccessible_sealed-comparison"
+  },
+  "sources": [
+    {
+      "source_id": "PLANCK-PLA-BASE-NRUN-TTTEEE-BAO-LENSING-68PC",
+      "body": "European Space Agency Planck Legacy Archive",
+      "title": "Planck 2018 baseline parameter tables, 68 percent limits, table 12.16",
+      "source_uri": "https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/planck-baseline-params-2018-68pc-v2.pdf",
+      "snapshot_hash": "sha256:03038805021f2f894e09f4b21b0f20418570e352822f095abcc085942919da70",
+      "source_page": 225,
+      "table_id": "12.16 base_nrun_plikHM_TTTEEE_lowl_lowE_post_BAO_lensing_zre6p5",
+      "rows": {
+        "hubble_constant_km_s_mpc": {
+          "central": "67.68",
+          "standard_uncertainty": "0.42"
+        },
+        "vacuum_fraction_omega_lambda": {
+          "central": "0.6889",
+          "standard_uncertainty": "0.0056"
+        },
+        "matter_fraction_omega_m": {
+          "central": "0.3111",
+          "standard_uncertainty": "0.0056"
+        }
+      },
+      "transcription_note": "The page-225 H0 row is 67.68 +/- 0.42. This direct primary-table transcription supersedes, for this claim only, the earlier local 67.66 +/- 0.42 transcription; no already admitted receipt is edited."
+    },
+    {
+      "source_id": "NIST-CODATA-2022-EXACT-C",
+      "body": "National Institute of Standards and Technology / CODATA Task Group",
+      "title": "2022 CODATA recommended values - complete ASCII table",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "row": {
+        "quantity": "speed of light in vacuum",
+        "exact_value_m_s": "299792458",
+        "exact_value_km_s": "299792.458",
+        "status": "exact in SI"
+      }
+    }
+  ],
+  "registered_target": {
+    "planck_hubble_central_km_s_mpc": "67.68",
+    "planck_hubble_standard_uncertainty_km_s_mpc": "0.42",
+    "planck_vacuum_fraction_central": "0.6889",
+    "planck_vacuum_fraction_standard_uncertainty": "0.0056",
+    "planck_matter_fraction_central": "0.3111",
+    "planck_matter_fraction_standard_uncertainty": "0.0056",
+    "codata_speed_km_s": "299792.458",
+    "planck_page": 225,
+    "all_registered_rows_retained": true,
+    "older_hubble_transcription_corrected_without_rewriting_prior_receipts": true
+  },
+  "row_custody": {
+    "formal_receipt_precedes_primary_pdf_retrieval": true,
+    "target_inaccessible_to_formal_executable": true,
+    "target_did_not_rewrite_formal_survivor": true,
+    "complete_uncertainty_rows_retained": true,
+    "local_floor_and_global_fraction_kept_separate": true,
+    "dimensional_transport_uses_held_external_references_only": true,
+    "unfavorable_type_control_retained": true
+  }
+}

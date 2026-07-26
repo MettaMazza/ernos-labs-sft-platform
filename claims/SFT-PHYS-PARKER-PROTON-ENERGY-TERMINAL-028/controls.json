@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8a698572330616bbe1d93d09c5416ec8ec01e583ff1effdff412eb40647ff207"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:41ecf3347f1f4aa20f85a7e123fd66850f15f7934d3a2f4cc54fdab2dd949a29"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a6fe0f61a16b5f1e132529709d14156c2714bc883d3d10553f14cb207b45484b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a6d0935252f735483db99db340353132969c9bb58a1ee253c53965bb1e111847"
+    }
+  ]
+}

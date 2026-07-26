@@ -17,40 +17,53 @@ import render_platform_paper as base
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md"
-OUTPUT = ROOT / "output/pdf/from-fold-to-physics-branch-paper-001.pdf"
+OUTPUT = ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.1.pdf"
 METADATA = ROOT / "publication/physics_zenodo_metadata.json"
 
 
-def cover(authorized: bool, doi: str):
+def cover(authorized: bool, doi: str, statistics: str):
     title = ParagraphStyle("PhysicsCoverTitle", fontName="Helvetica-Bold", fontSize=27, leading=32, textColor=base.ACCENT_DARK, alignment=TA_CENTER)
     subtitle = ParagraphStyle("PhysicsCoverSubtitle", fontName="Helvetica", fontSize=13, leading=18, textColor=base.INK, alignment=TA_CENTER)
     kicker = ParagraphStyle("PhysicsCoverKicker", fontName="Helvetica-Bold", fontSize=9, leading=12, textColor=base.ACCENT, alignment=TA_CENTER)
     author = ParagraphStyle("PhysicsCoverAuthor", fontName="Times-Roman", fontSize=12, leading=18, textColor=base.INK, alignment=TA_CENTER)
     note = ParagraphStyle("PhysicsCoverNote", fontName="Times-Roman", fontSize=9, leading=13, textColor=base.MUTED, alignment=TA_CENTER, leftIndent=18 * mm, rightIndent=18 * mm)
     warning = ParagraphStyle("PhysicsCoverWarning", fontName="Helvetica-Bold", fontSize=9, leading=13, textColor=base.ACCENT_DARK, alignment=TA_CENTER)
+    result = ParagraphStyle("PhysicsCoverResult", fontName="Helvetica-Bold", fontSize=13, leading=18, textColor=base.ACCENT_DARK, alignment=TA_CENTER, leftIndent=12 * mm, rightIndent=12 * mm)
     return [
         Spacer(1, 18 * mm),
         Paragraph("SMITHIAN FOLD THEORY - PHYSICS BRANCH PAPER 001", kicker),
         Paragraph("From Fold to Physics", title),
         Spacer(1, 7 * mm),
         Paragraph("An Exact, Parameter-Free and Machine-Closed Reconstruction of Physical Science from Smithian Fold Theory", subtitle),
-        Spacer(1, 10 * mm),
+        Spacer(1, 7 * mm),
+        Paragraph("Lead result: exact first-principles fine-structure constant<br/>alpha<super>-1</super> = 503846395469 / 3676744786 = 137.035999177180855...", result),
+        Spacer(1, 7 * mm),
         Table([[""]], colWidths=[70 * mm], rowHeights=[1.5 * mm], style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), base.ACCENT)])),
         Spacer(1, 10 * mm),
         Paragraph("Ernos Labs", kicker),
         Paragraph("Open Source Science Platform and Knowledge Tree", author),
-        Spacer(1, 13 * mm),
+        Spacer(1, 9 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
-        Spacer(1, 13 * mm),
-        Paragraph("Corrected and expanded version 1.1 private draft<br/>285 current engine-admitted derivations - V1/V2 one-owner audit remains open<br/>172,016 Physics candidates - 1,140 adverse controls - 25 July 2026" + (f"<br/>Reserved draft DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Spacer(1, 9 * mm),
+        Paragraph("Corrected and expanded publication-ready version 1.1<br/>" + statistics + (f"<br/>Reserved DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
-        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
+        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "PUBLICATION-READY MANUSCRIPT - RELEASE NOT YET AUTHORIZED", warning),
     ]
 
 
 def main() -> None:
     metadata = json.loads(METADATA.read_text(encoding="utf-8"))
     authorized = bool(metadata["publication_authorized"]); doi = str(metadata.get("doi", ""))
+    inventory = json.loads((ROOT / "publications/inventories/physics.json").read_text(encoding="utf-8"))
+    obligations = inventory["obligations"]
+    candidate_total = sum(
+        json.loads((ROOT / "claims" / row["claim_id"] / "candidate_census.json").read_text(encoding="utf-8"))["expected_cardinality"]
+        for row in obligations
+    )
+    statistics = (
+        f"{len(obligations)} current engine-admitted derivations - 488/488 categorical Physics atoms closed, lawful extensions open"
+        f"<br/>{candidate_total:,} Physics candidates - {4 * len(obligations):,} mandatory adverse controls - 26 July 2026"
+    )
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
     def draw_page(canvas, doc):
@@ -61,7 +74,7 @@ def main() -> None:
             canvas.setFont("Helvetica", 7.1); canvas.setFillColor(base.MUTED)
             canvas.drawString(18 * mm, height - 11.8 * mm, "FROM FOLD TO PHYSICS - ERNOS LABS PHYSICS PAPER 001")
             canvas.drawRightString(width - 18 * mm, 11 * mm, str(doc.page))
-            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - LOCAL PREPUBLICATION"
+            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - PUBLICATION-READY / UNRELEASED"
             canvas.drawString(18 * mm, 11 * mm, footer)
         canvas.restoreState()
 
@@ -73,7 +86,7 @@ def main() -> None:
     )
     frame = Frame(document.leftMargin, document.bottomMargin, document.width, document.height, id="body")
     document.addPageTemplates([PageTemplate(id="paper", frames=[frame], onPage=draw_page)])
-    document.build(cover(authorized, doi) + [PageBreak()] + base.body_story(SOURCE.read_text(encoding="utf-8")))
+    document.build(cover(authorized, doi, statistics) + [PageBreak()] + base.body_story(SOURCE.read_text(encoding="utf-8")))
     print(f"rendered {OUTPUT.relative_to(ROOT)}")
 
 

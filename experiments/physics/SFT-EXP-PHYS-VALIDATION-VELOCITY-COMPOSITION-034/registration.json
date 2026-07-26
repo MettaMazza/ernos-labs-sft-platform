@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-VELOCITY-COMPOSITION-034",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Ordinary addition violates the limiting-One constraint.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Either changed source identity is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed operation, prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Early target access, fitting or a precision overclaim is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "An ordinary-addition row moved to the measured value destroys and rejects the discriminator.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:b077d12af87c1386d39f945a7920261f5e614186ac5f9e14de57f3cf74d98d9f"
+  },
+  "development_observations": [
+    "V2 named the conventional velocity formula, but no V2 executable or measurement entered the V3 formal runtime.",
+    "The V3 formal law was model-admitted before this external Fizeau source was retrieved and hash-locked."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "The complete relativistic-systematics bracket contains the measured interval, ordinary addition is more than tenfold farther, the air row agrees, all limitations remain and the tampered control fails.",
+    "comparison_implementation_hash": "sha256:4e3e1037ed229b390948d7f94f38ea76014ba9667fb0dbc4d0e8994755d67123",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-VELOCITY-COMPOSITION-034-post-seal-evaluator",
+    "falsification_condition": "Reject if either source identity changes; if a registered measurement, control or limitation is omitted; if the water measured interval leaves the complete reported relativistic-systematics bracket; if ordinary addition is at least as close as both relativistic rows; if the air control no longer disfavors ordinary addition; if any target changes the sealed operation; or if a precision confirmation is claimed beyond the source."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-VELOCITY-COMPOSITION-034",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_external_Fizeau_discriminator",
+      "measurement_body": "Fizeau's aether-drag experiment in the undergraduate laboratory",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:8c19ceeccda50a3c297aa13c6006a6cf032d41a3c714f128b2be663bd3c5b5b3",
+      "source_id": "ARXIV-1201.0501-FIZEAU-WATER-AIR",
+      "source_uri": "https://arxiv.org/pdf/1201.0501"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed operation, Fizeau discriminator, provenance, target isolation, measurement separation, complete row/limitation retention, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:a07c669439fcbf9ca0dc4a1f8c798c7cc5d76844ab0f0f6924fa856b7debe1ab",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:d7af0a265f7b2f9ef64eb162d482f9b28e304d9d023391ed4017011221952208"
+    ],
+    "exact_domain": "The admitted exact positive velocity operation; the complete registered water measured/uncertainty, raw relativistic, corrected relativistic and ordinary-addition rows; the air result; and every stated systematic limitation.",
+    "relation_hash": "sha256:0a12ccf865bfe71ddc475333027a70eca3694dc3c2730a8debebbde157397336",
+    "statement": "The measured water slope is 274/1000 +/- 3/1000 rad s/m. It lies inside the complete reported relativistic-systematics bracket 248/1000 to 299/1000 and is more than ten times closer to its nearest relativistic row than to ordinary addition at 563/1000. The air result independently rejects ordinary addition and is compatible with relativistic composition. This is a post-seal discriminator, not a fit or precision confirmation; all source-stated systematics remain open.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:8d11bf58f17ff03b56cb29d5312de537b53c1b015250206a0a526f01779c9877",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-VELOCITY-COMPOSITION-034-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain measured slope/uncertainty, both relativistic rows, ordinary-addition control, air row and all stated systematics",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-1201.0501-fizeau.pdf": "sha256:8c19ceeccda50a3c297aa13c6006a6cf032d41a3c714f128b2be663bd3c5b5b3",
+    "experiments/external_sources/physics/snapshots/velocity-composition-fizeau-source-record.json": "sha256:2d8f4c921c10e4d3917cce4c5cdeb83269c6f135d3d98c99d824ff3cc1fca1b7"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "ARXIV-1201.0501-FIZEAU-WATER-AIR",
+      "target_id": "ARXIV-1201.0501-WITHHELD-COMPLETE-FIZEAU-RECORD"
+    }
+  ]
+}

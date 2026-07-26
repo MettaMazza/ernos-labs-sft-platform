@@ -1,0 +1,189 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A law not descending from Claim 071 rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source or row change rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, omission or role relabelling rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "REVERSED-OBJECT-ORDER",
+      "expected_rejection": "A neutral-fermion interval below the white-dwarf limit rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "COLLAPSED-UPPER",
+      "expected_rejection": "A conditional upper below the measured neutron-star interval rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "ERASED-CONDITION",
+      "expected_rejection": "Relabelling a conditional limit as direct rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "REWARDED-ABSENCE",
+      "expected_rejection": "Counting Hawking non-observation as confirmation rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:7e4218e7e2884a733ef30f5c51fe6f910d8a91bde67488e50a425d5a34ad523e"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:1155658f219be338dbbe6a3767ee7f5f08193c5af36aa6f6443bd9a212a5ce12",
+      "role": "development_only",
+      "source_id": "V1-V2-COMPACT-HORIZON-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "exclusion support",
+      "endpoint count",
+      "area rank",
+      "thermal-mass product"
+    ],
+    "external_reference_protocol": "Solar-mass values and observational classifications open only after the formal receipt; they do not set a Fold mass scale.",
+    "measurement_record_policy": "uncertainties and conditional/model-assisted roles remain typed external records",
+    "proof_value_policy": "positive exact whole and fractional Fold forms only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All sources, values, errors and conditions remain; measured ordering is retained; Hawking absence is not scored as agreement; Claim 071 is unchanged.",
+    "comparison_implementation_hash": "sha256:a968abf15cd3542e928db147b398c6d019a5f8470d80c8af0e2168c26f42feef",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-post-seal-evaluator",
+    "falsification_condition": "Reject if any source changes; the measured neutral-fermion object no longer lies above the complete white-dwarf limit; either conditional remnant row is omitted or stripped of its condition; Hawking non-observation is counted as confirmation; target data select or modify Claim 071; an external signed coordinate becomes a Fold proof scalar; or any hostile control passes incorrectly.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain electron degeneracy and the exact reported 7/5 solar-mass limit with its theoretical-summary role.",
+        "metric_id": "WHITE-DWARF-LIMIT",
+        "unit_protocol": "exact rational solar-mass record"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain PSR J0740 central mass, both errors, credibility and Shapiro method.",
+        "metric_id": "NEUTRON-STAR-MASS",
+        "unit_protocol": "exact rational solar-mass and credibility records"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain both LIGO-Virgo upper rows and their conditions.",
+        "metric_id": "CONDITIONAL-REMNANT-LIMITS",
+        "unit_protocol": "exact rational solar-mass records with typed model roles"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain direct non-observation without rewarding it as confirmation.",
+        "metric_id": "HAWKING-STANDING-TEST",
+        "unit_protocol": "typed observation-status record"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "NASA GSFC Imagine the Universe: White Dwarfs",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:29d25e42773e2b6c5c5f292ef97b6abb28e430f4b6af6336720ee5e3d41aa2a5",
+      "source_id": "NASA-GSFC-WHITE-DWARF-CHANDRASEKHAR",
+      "source_uri": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Refined Mass and Geometric Measurements of the High-Mass PSR J0740+6620",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:66c7fbaacc06a5fa3513a7d963d2b300b05a0a52552e2358e9f257940f37b47a",
+      "source_id": "FONSECA-2021-PSR-J0740-MASS",
+      "source_uri": "https://arxiv.org/abs/2104.00880"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Model comparison from LIGO-Virgo data on GW170817 binary components and consequences for the merger remnant",
+      "retrieved_date": "2026-07-26",
+      "snapshot_hash": "sha256:86d4efa4b4c5153799edf278bcd99b10753540337c876fbf505855b8bb949122",
+      "source_id": "LIGO-VIRGO-2019-GW170817-REMNANT",
+      "source_uri": "https://dcc.ligo.org/LIGO-P1800379/public"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed compact carrier, complete object-family vector, source custody, dimensional-role separation, conditional-limit retention, Hawking standing-test status, target inaccessibility and no-extra-rule.",
+    "dependency_hashes": [
+      "sha256:00dbfb8beaafbe32c865c5555f1b5a271b33c8eb0e2ad988482679ab851e1813",
+      "sha256:cc467e33f2b4198ea1d8d6aeba0c110acae90df06cf7a8be87e15a8450f6f913",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The sealed Claim 071 receipt; all NASA white-dwarf rows; the full PSR J0740 mass, uncertainty, credibility and method record; both conditional LIGO-Virgo remnant limits; the immutable prior horizon-validation boundary; all three source snapshots; and no target access before seal.",
+    "relation_hash": "sha256:9782e653faa1de23bf78051b001c2d8305a084068b71c16c489443ae1ed2c060",
+    "statement": "The external dimensional record contains the 7/5-solar-mass electron-degenerate limit. The independently measured neutral-fermion-supported PSR J0740 mass interval is [201/100,215/100] solar masses, wholly above 7/5. The conditional merger-remnant upper records 267/100 and 61/20 solar masses are both above that measured interval and remain explicitly model-assisted rather than direct TOV measurements. Together with the earlier horizon-scale shadow/ringdown receipt, the post-seal record supports the ordered finite white-dwarf, neutron-star and horizon-endpoint classes. No direct astrophysical Hawking-radiation or temperature measurement exists in the registered vector, so the exact mT=1/16 law remains an unconfirmed, falsifiable prediction rather than a rewarded absence.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:69152da01b20c6b1a7ab6ecfab4e44cf836d588cba4ea6f3b02d5827cb5a0b3f",
+      "input_id": "COMPACT-HORIZON-FORMAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:e80bbe95d03cc8d27fa960bac86249c35ead5075fc6e4c053d375f05adad0dfd",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-all-three-sources-values-errors-conditions-and-Hawking-standing-test-boundary",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/arxiv-2104.00880-psr-j0740-mass.pdf": "sha256:66c7fbaacc06a5fa3513a7d963d2b300b05a0a52552e2358e9f257940f37b47a",
+    "experiments/external_sources/physics/snapshots/compact-horizon-postseal-source-record.json": "sha256:670c9467f5638513c16345de4ce15da834ed46a358ed40371160d951e739921d",
+    "experiments/external_sources/physics/snapshots/ligo-p1800379-gw170817-remnant.pdf": "sha256:86d4efa4b4c5153799edf278bcd99b10753540337c876fbf505855b8bb949122",
+    "experiments/external_sources/physics/snapshots/nasa-gsfc-white-dwarf-chandrasekhar.html": "sha256:29d25e42773e2b6c5c5f292ef97b6abb28e430f4b6af6336720ee5e3d41aa2a5"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on changed evidence, omission, role conflation, rewarded absence, target access, fitting or failed hostile control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "COMPLETE-COMPACT-HORIZON-VECTOR",
+      "target_id": "COMPACT-HORIZON-WITHHELD-COMPLETE-RECORD"
+    }
+  ]
+}

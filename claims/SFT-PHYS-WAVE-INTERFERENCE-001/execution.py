@@ -12,8 +12,8 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/physics/generated_empirical_law.py",
         root / 'sft/physics/wave_laws.py',
         root / "claims/SFT-PHYS-WAVE-INTERFERENCE-001/execution.py",
-        root / "sft/engine/fold_language.py", root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py", root / "sft/engine/isolation.py", root / "sft/engine/empirical.py",
+        root / "sft/claim_evidence/fold_language.py", root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py", root / "sft/engine/isolation.py", root / "sft/engine/empirical.py",
     )
     source_hash = build_source_manifest(root, source_files).manifest_hash
     validator = root / "claims/SFT-PHYS-WAVE-INTERFERENCE-001/independent_validator.py"

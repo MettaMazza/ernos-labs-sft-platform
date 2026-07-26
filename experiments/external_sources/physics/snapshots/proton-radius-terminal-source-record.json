@@ -1,0 +1,108 @@
+{
+  "schema": "sft-v3-proton-radius-terminal-source-record/1",
+  "source_id": "PROTON-RADIUS-COMPLETE-CURRENT-AND-HISTORICAL-BOUNDARY-2026",
+  "retrieval_date": "2026-07-25",
+  "sources": [
+    {
+      "source_id": "NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS",
+      "measurement_body": "Nature",
+      "source_uri": "https://doi.org/10.1038/s41586-026-10124-3",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nature-2026-proton-radius-electronic.pdf",
+      "snapshot_hash": "sha256:834ddf04fdb3064d07307cc743544990e086601948903fb73390144d2a3ae253"
+    },
+    {
+      "source_id": "NATURE-2019-PRAD-PROTON-RADIUS",
+      "measurement_body": "Nature manuscript via arXiv",
+      "source_uri": "https://doi.org/10.1038/s41586-019-1721-2",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/arxiv-1902.08185-prad-proton-radius.pdf",
+      "snapshot_hash": "sha256:66925b870f8391be1a940b741ff60322877df7551cfa1db58b59add002e15ad5"
+    },
+    {
+      "source_id": "NIST-CODATA-2022",
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/index.html",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt",
+      "snapshot_hash": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "source_id": "NIST-CODATA-2014-HISTORICAL",
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_uri": "https://physics.nist.gov/cuu/Constants/archive2014.html",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2014-all.pdf",
+      "snapshot_hash": "sha256:48c31408c79d3a9aa7c16efdbf5ef729d8ad162f2b9dbb8029d4d8cdcbef3568"
+    }
+  ],
+  "registered_target": {
+    "dimension_scale": {
+      "quantity": "reduced proton Compton wavelength",
+      "value_fm": "0.210308910051",
+      "standard_uncertainty_fm": "0.000000000066",
+      "source_id": "NIST-CODATA-2022"
+    },
+    "current_radius_rows": [
+      {
+        "row_id": "electronic-hydrogen-2S-6P-2026",
+        "probe_class": "electronic-hydrogen-spectroscopy",
+        "value_fm": "0.8406",
+        "standard_uncertainty_fm": "0.0015",
+        "uncertainty_components_fm": {
+          "QED": "0.0005",
+          "experiment": "0.0014"
+        },
+        "source_id": "NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS"
+      },
+      {
+        "row_id": "muonic-hydrogen-current-reference",
+        "probe_class": "muonic-hydrogen-spectroscopy",
+        "value_fm": "0.84060",
+        "standard_uncertainty_fm": "0.00039",
+        "source_id": "NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS"
+      },
+      {
+        "row_id": "codata-2022-global-adjustment",
+        "probe_class": "global-adjustment",
+        "value_fm": "0.84075",
+        "standard_uncertainty_fm": "0.00064",
+        "source_id": "NIST-CODATA-2022"
+      },
+      {
+        "row_id": "PRad-electron-proton-scattering-2019",
+        "probe_class": "electron-proton-scattering",
+        "value_fm": "0.831",
+        "statistical_uncertainty_fm": "0.007",
+        "systematic_uncertainty_fm": "0.012",
+        "comparison_interval_rule": "exact outward sum of separately reported positive uncertainty components",
+        "source_id": "NATURE-2019-PRAD-PROTON-RADIUS"
+      }
+    ],
+    "historical_adverse_rows": [
+      {
+        "row_id": "codata-2014-global-adjustment",
+        "probe_class": "historical-global-adjustment",
+        "value_fm": "0.8751",
+        "standard_uncertainty_fm": "0.0061",
+        "source_id": "NIST-CODATA-2014-HISTORICAL",
+        "current_primary_context": "The 2026 Nature paper reports its new electronic-hydrogen radius as 5.5 standard deviations from this historical value."
+      }
+    ],
+    "scope_rows": {
+      "earlier_electronic_hydrogen_results_partly_discrepant": true,
+      "electron_proton_scattering_analyses_give_different_radii": true,
+      "current_electronic_result_agrees_with_muonic_value": true,
+      "historical_CODATA_2014_conflict_retained": true,
+      "probe_independence_does_not_identify_every_extraction_as_systematics_free": true,
+      "no_claim_that_the_charge_radius_is_a_hard_material_edge": true
+    }
+  },
+  "row_custody": {
+    "complete_current_electronic_and_muonic_rows_retained": true,
+    "complete_current_CODATA_row_retained": true,
+    "PRad_statistical_and_systematic_uncertainties_retained_separately": true,
+    "historical_unfavorable_CODATA_row_retained": true,
+    "current_discrepancy_and_scattering_analysis_limits_retained": true,
+    "reduced_Compton_scale_and_uncertainty_retained": true,
+    "target_inaccessible_to_prediction_program": true,
+    "measurement_selects_formula": false,
+    "precision_widening_permitted": false
+  }
+}

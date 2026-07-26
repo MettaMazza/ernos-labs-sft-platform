@@ -1,0 +1,360 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A component law lacking generated support is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed nested source or source record is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed curve, census, prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, signed proof scalars, irrational roots or fitted normalization are rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A failed CCH row or omitted DESI adverse result rejects the comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:4622fed21fa66c5c04b9cc5a62a05d121dee16f0dc6d5906532462cfd57f9be2"
+  },
+  "development_observations": [
+    "V1/V2 and the external cosmology measurements were known before reconstruction; no historical-blindness claim is made.",
+    "The terminal 11/16 and 5/16 shares were independently admitted before this successor law and replace the adverse earlier 2/3 and 1/3 curve."
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001",
+      "SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030"
+    ],
+    "external_reference_protocol": "The exact dimensionless curve seals before the external H0 interval transports it into H-squared measurement records.",
+    "measurement_record_policy": "conventional signs and decimal intervals remain post-seal source-bound records",
+    "proof_value_policy": "positive-exact-wholes-fractions-typed-empty-and-held-orientation-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered row passes its exact boundary and the deliberately changed control fails.",
+    "comparison_implementation_hash": "sha256:07a65ed8f19a497fd402288749d91d6166379d82b6ffd69c52967f79ce092f3d",
+    "evaluator_id": "SFT-EXP-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032-post-seal-evaluator",
+    "falsification_condition": "Any of the 32 CCH intervals fails the registered squared two-uncertainty comparison; either threshold cube lies outside its complete external interval; the q or tension magnitude lies outside its interval; any source hash, row, custody record or adverse DESI statement changes; or a tampered target is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact overlap of squared positive predicted and reported two-uncertainty intervals.",
+        "metric_id": "complete-32-row-CCH-vector"
+      },
+      {
+        "all_rows": true,
+        "definition": "Equality, onset, q magnitude, tension magnitude and adverse DESI row are all retained.",
+        "metric_id": "complete-threshold-and-state-vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_external_target_or_adverse_row",
+      "measurement_body": "Cosmic chronometers to calibrate the ladders and measure the curvature of the Universe. A model-independent study",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128",
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "source_uri": "https://academic.oup.com/mnras/article/523/3/3406/7188316"
+    },
+    {
+      "custody_role": "withheld_external_target_or_adverse_row",
+      "measurement_body": "Planck 2018 plus BAO baseline parameter table",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612",
+      "source_id": "PLANCK-2018-BAO-BASELINE-BUDGET",
+      "source_uri": "https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf"
+    },
+    {
+      "custody_role": "withheld_external_target_or_adverse_row",
+      "measurement_body": "Quantifying the evidence for the current speed-up of the Universe with low and intermediate-redshift data",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0",
+      "source_id": "GOMEZ-VALENT-2019-ACCELERATION",
+      "source_uri": "https://arxiv.org/abs/1810.02278"
+    },
+    {
+      "custody_role": "withheld_external_target_or_adverse_row",
+      "measurement_body": "The state of the dark energy equation of state circa 2023",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5",
+      "source_id": "ESCAMILLA-2024-DARK-ENERGY-STATE",
+      "source_uri": "https://arxiv.org/abs/2307.14802"
+    },
+    {
+      "custody_role": "withheld_external_target_or_adverse_row",
+      "measurement_body": "DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841",
+      "source_id": "DESI-DR2-2025-COSMOLOGY",
+      "source_uri": "https://arxiv.org/abs/2503.14738"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete product of spatial carrier, matter transport, radiation transport, vacuum invariant, terminal expansion, density fractions, equality threshold, acceleration threshold, orientation typing, physical scale transport, target custody, prior-correction and extension forms.",
+    "dependency_hashes": [
+      "sha256:0be25c3345a73d6a907ec8362b68aa7a9698dc16debe0d92bde7d8cb2206a054",
+      "sha256:9807457e53a1e2b29a997d47305a47e5ff589189c70ef9761df322825e1cd688",
+      "sha256:8e42a0d9f353c8c4f3de367dcba4c33bece23f05bda49cdf93aa60a29b463cef",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:b6ee88b6143f56acb89c477b39d8cef44d5a14c044457d6d726f8fdc91d66c9a",
+      "sha256:980a383c1986dc9ada77e4e0f4c0877e2f36e6b2628a048260d4d56f96ba882e",
+      "sha256:a3c5771fd6b8de7e76630a9b82f8217d14960eb6f680c3dd14b3add3761ca1a7",
+      "sha256:d615abbcc1eec0e38498f3455562f637f411abacf2f44550f94a416514d05715",
+      "sha256:ae7caec28536e87b0652ba7b5cb49e6d4118c89138a9654ee342b11654d11df8",
+      "sha256:558fcdcd43dac59c5435f90cd1279343c3d54a36516489af7b0b1256b77ed9f5",
+      "sha256:3c9be23ea5a990405898e45be2806a6ba2a4b1fd62dc5829bc424ce132590482",
+      "sha256:eefa1fc4decc13cac6f30a4a706560c5c59428d8c578f95ff752b859e588090d",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:ddb96b8a63deb4305ed98ea16350bf569d5ec8e426f47eebaa61496518c5fb0c",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:88e1e46d18669cb3708a7289139c7b240fdc2c546fd25355830d9addfb0298fa"
+    ],
+    "exact_domain": "Every positive exact rational stretch; the three matter/radiation/vacuum transport classes; the admitted terminal 5/16 and 11/16 late-time shares; every exact derived fraction and cube threshold; all thirty-two registered cosmic-chronometer rows; the registered acceleration, equation-of-state, Planck-ratio and DESI adverse rows; and no imported continuum or signed proof scalar.",
+    "relation_hash": "sha256:d77e760287ef4a6e8aed0ae51f8d2d6e475b9cc9b0471e9eea54516d3fb8fc9a",
+    "statement": "Matter, radiation and vacuum have respectively third-power, fourth-power and Fold-invariant transport. The terminal late-time law is E2(r)=(11+5r^3)/16; Omega_m(r)=5r^3/(11+5r^3); Omega_v(r)=11/(11+5r^3); matter-vacuum equality is r^3=11/5; acceleration onset is r^3=22/5; and the present accelerating magnitude is 17/32. The static-vacuum correspondence is tension of One magnitude. All quantities are exact positive whole/fractional Fold forms or typed empty/orientation structures.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:42f0f089666f3ebd3b2bc0725d26ebe69ce2403360336e5a771c2baa57fcc897",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:f4fbf56ff90fcea8c7fb0d1c4ad92c582b2c72c000085bbca728a21ec2b20c31",
+    "program_id": "SFT-EXP-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-all-favorable-unfavorable-model-extension-and-tampered-rows",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:fc29cf3f68946a7f354f0c234a4ae73a201a7013d70702fd75c52f65a92d7512",
+    "experiments/external_sources/physics/snapshots/cosmic_transport_terminal-source-record.json": "sha256:6a88728657b19dba0bcf2430d28218a595c0798c6ac34bf2778ef53a1b540705"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-01"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-02"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-03"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-04"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-05"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-06"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-07"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-08"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-09"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-10"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-11"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-12"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-13"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-14"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-15"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-16"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-17"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-18"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-19"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-20"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-21"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-22"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-23"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-24"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-25"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-26"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-27"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-28"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-29"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-30"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-31"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "CCH-H2-32"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PLANCK-2018-BAO-BASELINE-BUDGET",
+      "target_id": "PLANCK-EQUALITY-CUBE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2019-ACCELERATION",
+      "target_id": "Q0-TYPED-MAGNITUDE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2019-ACCELERATION",
+      "target_id": "ACCELERATION-TRANSITION-CUBE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "ESCAMILLA-2024-DARK-ENERGY-STATE",
+      "target_id": "VACUUM-TENSION-MAGNITUDE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "DESI-DR2-2025-COSMOLOGY",
+      "target_id": "DESI-DYNAMIC-ADVERSE-ROW"
+    }
+  ]
+}

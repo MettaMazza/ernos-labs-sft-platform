@@ -1,0 +1,76 @@
+{
+  "schema": "sft-v3-common-scale-axis-source-record/1",
+  "retrieval_date": "2026-07-25",
+  "sources": [
+    {
+      "source_id": "PDG-2026-ELECTROWEAK-SCALE-VECTOR",
+      "authority": "Particle Data Group",
+      "citation": "F. Takahashi et al. (Particle Data Group), Electroweak Model and Constraints on New Physics, Review of Particle Physics 2026",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/pdg-2026-electroweak-model.pdf",
+      "snapshot_hash": "sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb",
+      "complete_scheme_rows_printed_page_23": [
+        {"scheme": "on-shell", "quantity": "sin-squared theta-W", "central": "0.22342", "standard_uncertainty": "0.00009"},
+        {"scheme": "effective lepton angle", "quantity": "sin-squared theta-effective-lepton", "central": "0.23154", "standard_uncertainty": "0.00006"},
+        {"scheme": "MS at Z", "quantity": "sin-squared theta-hat at MZ", "central": "0.23122", "standard_uncertainty": "0.00006"},
+        {"scheme": "MS non-decoupled", "quantity": "sin-squared theta-hat ND", "central": "0.23140", "standard_uncertainty": "0.00006"}
+      ],
+      "complete_explicit_low_transfer_rows_printed_page_25": [
+        {"row_id": "NuTeV-DIS-on-shell", "scheme": "on-shell", "scale": "DIS experiment", "central": "0.2277", "standard_uncertainty": "0.0016", "classification": "reported tension and interpretation concerns retained"},
+        {"row_id": "Jefferson-Lab-Hall-A-eDIS", "scheme": "MS at Z translation", "scale": "electron DIS", "central": "0.2299", "standard_uncertainty": "0.0043", "classification": "two-percent measurement"},
+        {"row_id": "SLAC-E158", "scheme": "MS running", "scale": "0.161 GeV", "central": "0.2403", "standard_uncertainty": "0.0013", "classification": "reported six-standard-deviation scale-dependence test"},
+        {"row_id": "Cesium-atomic-parity-violation", "scheme": "MS running", "scale": "0.0024 GeV", "central": "0.2349", "standard_uncertainty": "0.0018", "classification": "atomic parity violation translation"}
+      ],
+      "figure_10_1_printed_page_26": {
+        "complete_figure_retained_by_snapshot_hash": true,
+        "numeric_reverse_digitization_permitted": false,
+        "displayed_measurement_classes": ["APV", "Qweak", "SLAC E158", "eDIS", "LEP I", "SLC", "Tevatron", "LHC"],
+        "reported_curve_boundary": "The curve reaches its minimum at the W mass; below that scale an effective theory is used and the beta-function sign changes.",
+        "threshold_and_scheme_discontinuities_retained": true,
+        "low_energy_strong_interaction_theory_width_retained": true
+      },
+      "scope_rows": {
+        "scheme_dependence_retained": true,
+        "NuTeV_tension_and_interpretation_concerns_retained": true,
+        "sub_W_monotone_boundary_retained": true,
+        "above_W_sign_change_prevents_universal_monotone_claim": true,
+        "figure_coordinates_not_invented": true
+      }
+    },
+    {
+      "source_id": "PDG-2025-2026-STRONG-EM-COMPLETE-RUNNING-VECTOR",
+      "authority": "Particle Data Group",
+      "source_uri": "experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json",
+      "snapshot_hash": "sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953",
+      "scope": "Complete QCD Table 9.1, full Figure 9.4 custody, all five alpha(0) rows, all eleven hadronic Delta-alpha rows, direct running statements and explicit low/Z endpoints already admitted by claim 006."
+    }
+  ],
+  "inherited_admitted_evidence": [
+    {
+      "claim_id": "SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006",
+      "certificate_path": "claims/SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006/certificate.json",
+      "certificate_hash": "sha256:f598cd663a76f8137cf2e40c5e8154083b8196ec399751da8577ce9769f688d6"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003",
+      "certificate_path": "claims/SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003/certificate.json",
+      "certificate_hash": "sha256:3d93670205eb78e5f45da65574c011beb64a142bdf07cd36a2f09f97f8c93980"
+    },
+    {
+      "claim_id": "SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003",
+      "certificate_path": "claims/SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003/certificate.json",
+      "certificate_hash": "sha256:41ac74e37c135774d5c8b384c5fcf5aae5415c21c2a63b3d77c5a5d2981ed651"
+    }
+  ],
+  "row_custody": {
+    "all_printed_weak_scheme_rows_retained": true,
+    "all_printed_low_transfer_numeric_rows_retained": true,
+    "complete_weak_running_figure_retained": true,
+    "complete_inherited_strong_and_electromagnetic_vectors_retained": true,
+    "terminal_on_shell_and_proton_Planck_receipts_retained": true,
+    "unfavorable_and_scheme_boundaries_retained": true,
+    "target_inaccessible_to_prediction_program": true,
+    "measurement_selects_scale_law": false
+  }
+}

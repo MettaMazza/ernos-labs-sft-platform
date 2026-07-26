@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-PROTON-RADIUS-TERMINAL-029",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a7a6a49aa74db2977d54690d7a0ce9f676adb4bcc085662d318f3380d6d3a760"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b2b88486d92413ea48792aecfd581c0f6708d599a9e42be2cc007085c3604811"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0990ec3b4ad7b9cd1ce8c9d4bd44fdb8747b9ef8e7ef9846327c49c945ccfa50"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ca75083edfef55fc18c3d5e70d7091287a3eac7767e4bba931ae56b02e6002fc"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "An isolated colour carrier is not a physical singlet.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Either changed source hash is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "A dimensionful fit, continuum overclaim or early target access is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "An altered lowest mass that breaks interval order is rejected.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:c4854bc0e9233c1d6c148919b7cb87777195237f290c2f8a840f40b9f02dca54"
+  },
+  "development_observations": [
+    "V1/V2 and the glueball literature were known before this V3 reconstruction; no blind-discovery claim is made."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "All precise intervals are positive and ordered, every scope/nonidentification row is retained, and the tampered control fails.",
+    "comparison_implementation_hash": "sha256:36e5c8c5fef3495a7f6a975e46174febd49aacdae8449d72b2702a3c909c090a",
+    "evaluator_id": "SFT-EXP-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027-post-seal-evaluator",
+    "falsification_condition": "Reject if either source snapshot changes; if any registered spectrum or limitation row is omitted; if the least retained pure-gauge mass interval reaches the empty boundary; if registered intervals lose their stated ordering; if an external mass is imported into the Fold proof; if a lattice prediction is relabelled as direct detection; or if the target is available to the capability-closed predictor before sealing."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_external_spectrum_boundary",
+      "measurement_body": "Particle Data Group",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:6aa98fa53857122f27b638c59081af1a2857d787c4205370d8fa38fcb6b70ff0",
+      "source_id": "PDG-2026-QUARK-MODEL-GLUEBALL-BOUNDARY",
+      "source_uri": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-quark-model.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of physical carrier, positive-gap relation, provenance, prediction isolation, measurement separation, complete spectrum-row retention, finite successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:7b94d1cba79a26e88d4b274ab848bceb03e5ee2d385708b4fc8607f8415d9348",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:d7af0a265f7b2f9ef64eb162d482f9b28e304d9d023391ed4017011221952208"
+    ],
+    "exact_domain": "The admitted finite Fold colour-singlet gap and every registered PDG 2026 pure-gauge glueball mass/uncertainty row, ground/excitation ordering row, quenched, mixing, full-QCD and experimental-identification limitation.",
+    "relation_hash": "sha256:1c263ed5c4f1c4c5a9bc40552eac97ff99446b5820585c598dbe872595e68998",
+    "statement": "The sealed Fold prediction of a positive physical colour-singlet gap matches every retained PDG pure-gauge lattice interval: 0++ at 1653+/-26 MeV, 2++ at 2376+/-32 MeV and 0-+ at 2561+/-40 MeV are each strictly positive and their intervals are ordered and disjoint.  These are external lattice records, not fitted Fold values.  Quenching, state mixing, full-QCD requirements and the lack of an unambiguous experimental glueball remain explicit boundaries.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:2d173c4693e203d2590ccc1c964be178e21adcf73ac637a2fec0ad6d36adf114",
+    "program_id": "SFT-EXP-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain all three precise mass/uncertainty rows plus ground-order, quenched, mixing, full-QCD and nonidentification boundaries",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/pdg-2026-quark-model.pdf": "sha256:6aa98fa53857122f27b638c59081af1a2857d787c4205370d8fa38fcb6b70ff0",
+    "experiments/external_sources/physics/snapshots/yang-mills-singlet-gap-source-record.json": "sha256:cf0ccdbcb6d2fe3c69a5b64f07da0b9e5aef93c7d32654b341ec2eb1397ae75c"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2026-QUARK-MODEL-GLUEBALL-BOUNDARY",
+      "target_id": "PDG-2026-WITHHELD-COMPLETE-GLUEBALL-BOUNDARY"
+    }
+  ]
+}

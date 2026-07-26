@@ -1,0 +1,110 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050",
+  "controls": [
+    {
+      "control_id": "FALSE_PREMISE",
+      "expected_rejection": "Any premise, source, artifact, interval, timing, assumption or interpretation-boundary violation halts.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED_SOURCE",
+      "expected_rejection": "Any premise, source, artifact, interval, timing, assumption or interpretation-boundary violation halts.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED_ARTIFACT",
+      "expected_rejection": "Any premise, source, artifact, interval, timing, assumption or interpretation-boundary violation halts.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Any premise, source, artifact, interval, timing, assumption or interpretation-boundary violation halts.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE_MEASUREMENT",
+      "expected_rejection": "Any premise, source, artifact, interval, timing, assumption or interpretation-boundary violation halts.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:639478241ec2c7c200152ad2f89717ca823090d5d97337030fdf3d3e3c7aeec8"
+  },
+  "development_observations": [
+    "V1 and V2 named dyadic support uncertainty, joint products, Bell correlation and no-signalling as targets. V3 independently generated and officially admitted Claim 049, including its complete formal censuses and corrected factorability boundary, before this external measurement record was retrieved. The external record tests the sealed local-factorization boundary but cannot alter its survivor.",
+    "Formal Claim 049, its complete formal censuses, and its official engine receipt preceded target retrieval.",
+    "The source's measurement-independence assumption and deterministic-model limitation remain retained as evidence boundaries."
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "The complete S interval exceeds two; trial, significance, timing and memory rows pass; every assumption and interpretation boundary remains explicit.",
+    "comparison_implementation_hash": "sha256:05674593bb80fc9f3127d37505e2e9ffce4f0b461b3dc4396d43a5c0b9493b44",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050-post-seal-evaluator",
+    "falsification_condition": "Reject if either source identity changes; the complete S interval touches or falls below two; the trial, significance, timing or memory records fail; measurement independence or any stated limitation is omitted; the result is presented as excluding all determinism; ontic randomness is imported; the Walsh support law is called a measured variance; or any target changes the sealed survivor."
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050",
+  "external_measurement_sources": [
+    {
+      "custody_role": "Primary superconducting-circuit measurement of a CHSH-type Bell parameter with locality, detection and memory controls",
+      "measurement_body": "Loophole-free Bell inequality violation with superconducting circuits",
+      "snapshot_hash": "sha256:fabe97e4970990cef6246f0541a8b9e80e47b0df58f10234b8f8155d1b4ade81",
+      "source_id": "NATURE-STORZ-LOOPHOLE-FREE-BELL-2023",
+      "source_pages": [
+        "Nature 617, 265-270 (2023), abstract, main result and Methods"
+      ],
+      "source_uri": "https://doi.org/10.1038/s41586-023-05885-0"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of sealed Bell boundary, external interval, provenance, target isolation, proof/measurement separation, complete condition retention, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:d2e5a064f2c5946e699120eb0d075fe5485b66b4f80f1d534c581baa097fe36a",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:ea85e0a1cf5242cea6125f36537cc40c116bc9b6d1466349ae04cd9cfebfb970",
+      "sha256:0fd6aaef8f1f1d3d7955b3cf1b94d6de6bdaa126976fbed4be1c6145461559b4"
+    ],
+    "exact_domain": "The admitted Claim 049 Bell-response census; the complete primary S interval, trial-count, significance, space-like timing, memory-analysis and measurement-independence records; and every stated interpretive limitation.",
+    "relation_hash": "sha256:6dc349717aac052359cf5a4779b53b9ac1635179ec24508e0cda8702f2945472",
+    "statement": "The exact measured S interval [20714,20780]/10000 lies wholly above the local-factorization bound two; its central excess exceeds twenty-two stated standard uncertainties and the reported P value is below 10^-108 across more than one million trials. The complete timing intervals preserve space-like separation, and the analysis retains its memory control. This physically rejects the sealed local-factorization class under the source's declared conditions while preserving deterministic complete-record admissibility, no signalling, and the explicit measurement-independence assumption. The distinct Walsh support-count product remains a formal/computational result and is not relabelled as a variance measurement.",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:03604eb30e0b3796e3f21fcf08009ead20dcc3b95ad9a3781b197aca3c48b9cd",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain the complete S interval, trials, significance, timing, memory, setting method, measurement-independence assumption and every interpretation boundary",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/quantum-support-bell-postseal-source-record.json": "sha256:51df41e3e1669d853ea3894b3ce039f6f631ad75d519bc632f26b013ff6a7ab1",
+    "experiments/external_sources/physics/snapshots/storz-loophole-free-bell-2023.html": "sha256:fabe97e4970990cef6246f0541a8b9e80e47b0df58f10234b8f8155d1b4ade81"
+  },
+  "status": "measured",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "NATURE-STORZ-LOOPHOLE-FREE-BELL-2023"
+      ],
+      "target_id": "NATURE-STORZ-2023-WITHHELD-COMPLETE-BELL-RECORD"
+    }
+  ]
+}

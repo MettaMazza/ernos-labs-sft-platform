@@ -1,0 +1,48 @@
+{
+  "schema": "sft-v3-landauer-erasure-source-record/1",
+  "retrieval_date": "2026-07-25",
+  "sources": {
+    "BERUT-NATURE-2012": {
+      "body": "Nature",
+      "citation": "A. Berut et al., Experimental verification of Landauer's principle linking information and thermodynamics, Nature 483, 187-189 (2012)",
+      "doi": "10.1038/nature10872",
+      "source_uri": "https://www.nature.com/articles/nature10872",
+      "registered_rows": [
+        "A classical one-bit memory was implemented by one colloidal particle in a modulated double-well potential.",
+        "Erasing the memory produced a finite mean dissipated heat.",
+        "The mean dissipated heat saturated at the Landauer bound in the limit of long erasure cycles.",
+        "The paper reports an experimental information-thermodynamics correspondence and an irreversible-computation limit."
+      ],
+      "scope_rows": [
+        "The reported saturation is a long-cycle limiting mean, not a claim that every individual finite-time erasure has identical heat.",
+        "The experiment tests a generic model of a one-bit memory; it does not identify an SFT native half-One carrier with a dimensional joule value."
+      ]
+    },
+    "PIECHOCINSKA-PRA-2000": {
+      "body": "American Physical Society",
+      "citation": "B. Piechocinska, Information erasure, Physical Review A 61, 062314 (2000)",
+      "doi": "10.1103/PhysRevA.61.062314",
+      "source_uri": "https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.61.062314/fulltext",
+      "registered_rows": [
+        "Erasure is a reset from two distinguishable bit states to one possible state.",
+        "For a symmetric equiprobable bit in contact with a thermal reservoir, average work and dissipated heat are bounded below by k_B T ln 2.",
+        "The microscopic treatment covers classical continuous, classical discrete and quantum cases.",
+        "The bound is explicitly an ensemble-average statement."
+      ],
+      "scope_rows": [
+        "The derivation assumes contact with a thermal reservoir.",
+        "For a non-equiprobable initial distribution the lower bound depends on that distribution.",
+        "The conventional logarithm is retained only as an external dimensional translation and never enters the SFT proof scalar domain."
+      ]
+    }
+  },
+  "registered_target": {
+    "memory_support": "two-distinguishable-states-reset-to-one",
+    "environmental_transfer": "finite-positive-mean-dissipated-heat",
+    "slow-cycle_result": "mean-heat-saturates-Landauer-bound",
+    "thermal_boundary": "symmetric-equiprobable-bit-in-thermal-reservoir",
+    "conventional_bound": "average-heat-at-least-kBT-ln2",
+    "scope": "ensemble-average-and-long-cycle-limit-with-distribution-and-reservoir-conditions",
+    "native_translation_boundary": "no-dimensional-equality-claimed-for-half-One"
+  }
+}

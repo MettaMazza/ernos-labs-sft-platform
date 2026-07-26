@@ -24,9 +24,9 @@ def build_terminal_execution(root: Path, claim_id: str, execution_file: Path) ->
         root / "sft/physics/generated_empirical_law.py",
         root / "sft/physics/matter_flavour_terminal_ckm_execution_v1.py",
         execution_file,
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

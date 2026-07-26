@@ -1,0 +1,150 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A relation not descending from the admitted terminal formal claim must reject.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source hash or registered row change must reject.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate census, trace or certificate must reject.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, uncertainty rescaling or aggregate-as-law conflation must reject.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced direct angle or compatible W value must reject rather than become a passing label.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:b48adace36599a1b5264073ac210b029c6d05c10590f118ab67061dec7167936"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:e72a5865357e13d30301ecdc625014901122f399f1fd4a6967c585f214852d8a",
+      "role": "development_only",
+      "source_id": "V1-V2-ELECTROWEAK-MEASURED-VALUE-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "dimensionless on-shell sine-squared Fold fraction",
+      "dimensionless compatible W/Z squared reconstruction"
+    ],
+    "external_reference_protocol": "Mass units cancel only in the post-seal like-dimension ratio; no external unit enters formal forcing.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Both like-typed measured-value intervals contain the sealed exact relation; every source and methodology row remains unchanged; no inconsistent aggregate is promoted to a physical target.",
+    "comparison_implementation_hash": "sha256:a3007ad07b4d12a1c462b8edb24aedf1ecdae8eebba165876de0cece480f7b68",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053-post-seal-evaluator",
+    "falsification_condition": "Reject if either source changes; the sealed exact share leaves the direct on-shell interval; its complement leaves the compatible W/Z squared interval; any uncertainty is widened; the inconsistent aggregate is deleted, used as a second law, or relabelled as an SFT result; or target data alter the formal survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact membership of the sealed terminal share in the complete direct PDG interval.",
+        "metric_id": "DIRECT-ON-SHELL-INTERVAL",
+        "unit_protocol": "dimensionless exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "Exact membership of the sealed complement in the complete outward W/Z squared interval.",
+        "metric_id": "COMPATIBLE-WZ-INTERVAL",
+        "unit_protocol": "like-dimension mass ratio squared after seal"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics: Electroweak Model and Constraints on New Physics",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:8642888a3408d8c57fc673b379325b07f02948135491f64a2e42320e8929320a",
+      "source_id": "PDG-2025-STANDARD-MODEL-REVIEW",
+      "source_uri": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Review of Particle Physics: W-boson listing",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:91cb466bfea8fa49b53ae53d2168797189c14a5a114f30d7cc926f64c4c1e772",
+      "source_id": "PDG-2024-W-BOSON-LISTING",
+      "source_uri": "https://pdg.lbl.gov/2024/listings/rpp2024-list-w-boson.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of the sealed terminal electroweak value, like-typed direct measurements, exact interval transport, source consistency, custody, proof/measurement separation, successor closure and extension.",
+    "dependency_hashes": [
+      "sha256:d84cc15c5d6a4d4fed28e114d0cc5299b8cec6277a47e8ae781fd468a390cee0",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167"
+    ],
+    "exact_domain": "The admitted target-free terminal on-shell value; the complete direct on-shell row; the complete compatible W and Z rows; the unchanged internally inconsistent all-input aggregation record; both source identities; and every measurement-method boundary.",
+    "relation_hash": "sha256:5d7cd1a8b33d25d563b79e75b5479f6036a35a44e473f32f31dfb303b929c3b1",
+    "statement": "The exact forced terminal on-shell share lies inside the complete PDG interval [22333,22351]/100000. Its exact complement lies inside the outward-propagated compatible-input W/Z squared interval. No uncertainty is widened and no inconsistent aggregate is converted into a passing or failing SFT law.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:263cf79e79ed1d7ba0246f84abe869084aa4db7b195dd0c07300d1dabdef72f4",
+      "input_id": "FORMAL-ELECTROWEAK-TERMINAL-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:f802eb84be615db6e9991f2abd4552fbbc994c57a389774fc9ddf529f3044731",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/electroweak-measured-value-successor-source-record.json": "sha256:e608503e4832c272911c0653dd6db9cf5b662647c4fd652908b7d2299e598057",
+    "experiments/external_sources/physics/snapshots/pdg-2024-w-boson-listing.pdf": "sha256:91cb466bfea8fa49b53ae53d2168797189c14a5a114f30d7cc926f64c4c1e772",
+    "experiments/external_sources/physics/snapshots/pdg-2025-electroweak-model.pdf": "sha256:8642888a3408d8c57fc673b379325b07f02948135491f64a2e42320e8929320a"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on a changed source, missed like-typed interval, altered method record, target access, fitting, uncertainty rescaling or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PDG-2025-STANDARD-MODEL-REVIEW",
+      "target_id": "PDG-ELECTROWEAK-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD"
+    }
+  ]
+}

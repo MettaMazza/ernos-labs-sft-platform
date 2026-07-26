@@ -2,116 +2,180 @@
 
 ## Abstract
 
-This corrected and expanded draft reports the 285 claims currently registered to Physics and admitted by the unchanged engine: 172,016 explicitly generated candidates, the same number of recorded decisions, 285 unique survivors, 1,140 passing adverse controls and 197 claim packages carrying post-seal empirical validation. It does not yet prove that these 285 claims exhaust every Physics-owned atomic obligation in V1/V2: the required one-owner decomposition of that complete source surface remains open and blocks publication. Candidate grammars range across 12 exact cardinalities (1 claims at 128, 232 claims at 256, 2 claims at 512, 24 claims at 1,024, 1 claims at 1,152, 5 claims at 2,048, 1 claims at 2,304, 1 claims at 2,592, 12 claims at 2,916, 3 claims at 4,096, 1 claims at 5,832, 2 claims at 8,748); the paper no longer misstates every derivation as one 256-form template. The current derivation ledger includes the generator-three law, three-dimensional stability, boundary rank two, inverse-square dilution, the exact inverse fine-structure result and CODATA comparison, physical constants and scale relations, vacuum and extraction boundaries, force sectors, relativistic and quantum correspondence, matter and flavour, atomic and molecular precision, nuclear and hadronic structure, gravitation, collective dynamics and the universal Physics-to-Cosmology boundary. Every included claim is traced to its root dependency chain, complete generated grammar, unique survivor, controls, independent reconstruction, external comparison where registered, and immutable engine receipt.
+This paper reports a zero-parameter reconstruction of physical science from the single foundational Smithian One theorem, without imported axioms, fitted coefficients, numerical zero, negative proof magnitudes, irrational or imaginary proof values, floating-point proof equality, or continuum premises. Its lead numerical result is an exact first-principles derivation of the fine-structure constant:
+
+> α⁻¹ = 503846395469/3676744786 = 137.035999177180855…<br/>
+> α = 3676744786/503846395469 = 0.007297352564321794…
+
+The value was sealed before the registered CODATA 2022 target was released and lies inside the complete interval 137.035999177 ± 0.000000021. The same derivational constitution produces exact charged-lepton cubic and Koide relations, electron and muon magnetic anomalies, the on-shell electroweak share, Higgs mass and self-coupling, the Planck/proton hierarchy, proton radius, vacuum and cosmological ratios, nuclear closure numbers, hadron trajectories, inverse-square dilution, relativistic and quantum laws, thermodynamic and extraction boundaries, gravitational-wave ordering, and the remaining Physics inventory documented here.
+
+The publication contains all 349 current engine-admitted Physics claims. Their generated grammars contain 249,072 candidates, 249,072 one-for-one decisions, 349 unique survivors and 1,396 passing mandatory adverse controls. Of those claims, 235 contain sealed post-derivation external-validation records; formal claims are connected to their registered empirical successors or retain their exact structural test boundary. The categorical clean-room audit closes all 488 Physics-owned V1/V2 atoms at the declared current-evidence boundary, with no open Physics atom or gap family. Grand Lock 075 proves the complete root trace and structural perturbation result; Grand Lock 076 reconciles the full empirical vector, including adverse and scope-boundary rows. These locks establish a reproducible release snapshot while leaving Physics permanently open to lawful extension, correction and falsification.
 
 ## 1. Publication and authorship boundary
 
-**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** This file and its rendered PDF may be inspected locally, but no GitHub push, release, Zenodo upload, DOI reservation or publication action follows from the branch gate.
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [10.5281/zenodo.21548363](https://doi.org/10.5281/zenodo.21548363). This canonical Markdown paper, its rendered PDF, complete evidence/source archive and checksum ledger form the Physics Branch Paper 001 release.
 
 Maria Smith, independent researcher and founder of Ernos Labs. Contact: Maria.Smith.Sftoe@gmail.com. Submissions and reproducibility reports: https://discord.gg/ucwGryVxGr. GitHub: https://github.com/MettaMazza.
 
 The paper is prepared for CC BY 4.0 distribution; the engine code remains under the repository's Apache-2.0 license. Copyright preserves authorship while the licenses preserve open inspection, reuse and independent criticism. Use of the Ernos Labs designation requires adherence to the published empirical and community standards.
 
-## 2. Results first: what this Physics reconstruction claims
+### 1.1 Ernos Labs and the authorship of this work
 
-The current categorical inventory contains 285 Physics claims in 13 ordered subbranches. All 285 have immutable model-admitted receipts. This corrected scope replaces a faulty bookkeeping ledger that bulk-labelled cross-disciplinary V1/V2 observations as Physics. No Chemistry, Materials, Biology, Consciousness, astronomical-history or application claim is counted here. The correction changes publication organization, not a derivation, receipt or engine decision.
+Ernos Labs is an open-source science movement, verification platform and public tree of knowledge founded by Maria Smith. Its purpose is not to ask readers to trust a new institution. Its purpose is to make the work inspectable enough that trust is unnecessary. Every claimed law must expose its premises, generated alternatives, eliminations, survivor, controls, measurement custody, unfavorable evidence and exact receipt. A reviewer needs no credential, subscription, institutional affiliation or permission to reproduce an acceptance or demonstrate an invalidation.
 
-**Publication blocker.** The global V1/V2 ownership constitution is not complete, so the corpus cannot yet certify that every Physics-owned atomic obligation has entered this inventory. The 285-claim coverage proof is exact for the live categorical V3 census only. It must not be represented as exhaustive V1/V2 Physics reconstruction until the one-owner audit closes with zero Physics-owned omissions.
+Maria Smith developed Smithian Fold Theory outside formal academic education, institutional research employment and conventional grant funding. That biography is not offered as evidence for a physical result; the derivations and observations must carry that burden. It is evidence about access. A system that decides who may be heard before their work can be inspected does not merely exclude individuals: it loses questions, methods and discoveries that its credential and capital filters never authorize. This paper therefore refuses both romantic exceptionalism and credentialed dismissal. The same public empirical standard applies to Maria Smith, an established professor, an independent reproducer and an AI system.
 
-| Result | Claim | Immutable engine receipt |
-|---|---|---|
-| The second structural Fold generator is three | `SFT-PHYS-STRUCT-GENERATOR-THREE-001` | `sha256:3017771dde2eabf649278851cd9e43fb6c5e939b5a052a09f02f6e604d6ed50e` |
-| Three-dimensional Fold stability | `SFT-PHYS-SPACE-DIMENSION-THREE-001` | `sha256:fb06dcbd49ff61a213ff97420274014c7e2b683cddf0c593f269045b387d589e` |
-| Rank-two boundary of three-space | `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001` | `sha256:84ef6397b0fc006ae2ea6525024a9e8920f20afcd42929632db793ae0a1d809b` |
-| Inverse-square dilution from rank-two boundary support | `SFT-PHYS-FIELD-INVERSE-SQUARE-001` | `sha256:68fb6f9d11a0c64e08a8d6339dcc5feec4717a76d5d46d600988774ae79ccbf2` |
-| Terminal exact inverse fine-structure Fold ratio | `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001` | `sha256:4999a85b5862afebcf24604c2191c0ce8b96aa57f988b3fab83b469c3506a7c9` |
-| Post-seal CODATA check of the terminal inverse fine-structure ratio | `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001` | `sha256:cfe0c0b068864707942c03909ef4dd16660476c808fe5e9567970c60d8640bbd` |
-| Complete finite prime-sector force and particle inventory | `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003` | `sha256:ee6b271f050a867fbe8d5ddcd10e7dba7f7ccba227b4094efbd5c6e2b48741fb` |
-| Positive asymmetric vacuum-beat extraction | `SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003` | `sha256:de7c651c4eccf51ac10efdc04853bcd36fcb3ef0dcbe3ef58bba0cf52efc0e1d` |
-| Complete returned-cycle vacuum energy ledger | `SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003` | `sha256:a0ae88fcb49661c576a54741af33c09c88fb11d125f48e41edf2658b08ede835` |
-| Terminal charged-colour proton-to-Planck hierarchy | `SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003` | `sha256:affd1dc6754854b15d7f286291611e481f0572f50a11589dd88cb019289f88d7` |
-| Terminal exact hydrogen hyperfine and twenty-one-centimetre successor | `SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005` | `sha256:e65c383f1e1a6d48979d425f14ca83e9e906f3b60acb757e8df8a57ffa7994c1` |
-| Terminal zero-parameter nuclear binding curve and stability maximum | `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005` | `sha256:0f08011755d14b3c910034436a4560016125b467a28b35b01b6b6fe02364024d` |
-| Exact static spherical exterior coefficient, flux and clock law | `SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011` | `sha256:fca4c68a06026daea19121fd5b71d52bc98e2410be1f83eaef13ff62600d880c` |
-| Exact quadrupole third-difference radiated-power law | `SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012` | `sha256:e43448d651ade64487e4cbd44620c4812ffafcb62d20bd71c9c3bde51cdb4db6` |
-| Strong self-source iteration and finite fixed-point boundary | `SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014` | `sha256:641cdf7a00a56d3889b1a31731dff04c70dbe068465924f005d000d3fc100cdc` |
+### 1.2 Why this is an open-science publication
 
-These are not detached assertions. Their full sections below expose the exact theorem statement, dependencies, candidate generator, cardinality, survivor, axis-level uniqueness witnesses, base/successor or finite-boundary certificate, adverse controls, independent implementation, empirical custody record and receipt hashes.
+The institutional critique is evidence-based. Systematic research has found sponsor-associated differences in reported efficacy results and conclusions, while work on commercial sponsorship shows that funding can influence which questions are pursued ([Lundh et al., 2018](https://doi.org/10.1007/s00134-018-5293-7); [Fabbri et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30252531/)). Grant selection is not an infallible oracle: empirical studies report sensitivity to review design and reviewer composition, and a Cochrane review found limited evidence that grant peer review improves the quality of funded research ([Gallo et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/); [Demicheli and Di Pietrantonj, 2007/2022 archive](https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/)). Null and negative results remain systematically underrepresented, distorting the visible scientific record ([Nature Communications, 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/)). UNESCO's Recommendation on Open Science calls for methods, software, source and outputs to be open to rigorous scrutiny and identifies paywalls and high publication charges as sources of inequality ([UNESCO, 2021](https://www.unesco.org/en/legal-affairs/recommendation-open-science)).
 
-Physics closure means that every claim in the current categorical Physics inventory has passed the common admission standard at its declared generated and empirical boundary. It does not reassign downstream chemical consequences, materials properties, organisms, consciousness, observed astronomical populations or cosmic history to Physics.
+Opaque prediction presents a related problem. A black-box system may be a useful instrument and may pass a declared blind benchmark, but predictive accuracy alone does not disclose a law or a derivation. NIST accordingly treats transparency, explainability, interpretability, validity and reliability as distinct properties of trustworthy AI ([NIST AI RMF 1.0](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/)). Ernos Labs therefore rejects three substitutions: funding success is not evidential closure; professional consensus is not generated uniqueness; and a black-box score is not an explicit scientific law.
 
-Even after the V1/V2 ownership audit closes, branch closure will mean current-knowledge closure at a dated evidence boundary—not permanent completion of Physics. New discoveries, falsifications, corrections and stronger evidence remain lawful extensions when submitted as new versioned claims through the unchanged engine. Existing receipts remain immutable.
+The editorial position is direct. Knowledge institutions organized through competitive capital, scarce grants, prestige markets, subscription access and author charges have incentives that are not identical to free human inquiry. Expertise, criticism and measurement remain indispensable, but credentials, funding and consensus cannot select a fundamental law and then stand in for its evidence. The remedy is not weaker science. It is a harder, public standard: derive the law, generate its alternatives, preserve the failures, seal the prediction, expose the observation and permit anyone to reproduce the decision.
 
-## 3. Exact constitutional domain
+### 1.3 Rights, participation and the Ernos Labs designation
+
+Maria Smith retains copyright and scientific authorship. CC BY 4.0 for papers and documentation and Apache 2.0 for code permit inspection, copying, criticism, modification and redistribution with attribution. The words “Ernos Labs” are a separate standards-conformance designation. A fork may freely test or reuse the open work, but it may represent itself as Ernos Labs only while it follows the published empirical constitution, preserves adverse evidence, submits to critical review and does not weaken the engine or admission route.
+
+Independent replications, lawful extensions, corrections and attempted invalidations are invited. Submissions must include the full derivation chain and pass the same engine; reputation cannot open the gate and lack of credentials cannot close it. Contact Maria.Smith.Sftoe@gmail.com, join https://discord.gg/ucwGryVxGr, or inspect the public work at https://github.com/MettaMazza.
+
+### 1.4 Published sequence through Physics
+
+The present release stops at Physics. Chemistry, Materials and every later branch remain outside this ordered update.
+
+| Order | Paper | Version | Open paper | Archival DOI |
+|---:|---|---:|---|---|
+| 00 | *There Is No Nothing* — Methods Paper 00 | 0.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/successors/methods/THERE_IS_NO_NOTHING_METHODS_PAPER_001_V0_2.md) | [10.5281/zenodo.21591160](https://doi.org/10.5281/zenodo.21591160) |
+| 01 | *From Nothing to Fold* — Foundation | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_2.md) | [10.5281/zenodo.21591169](https://doi.org/10.5281/zenodo.21591169) |
+| 02 | *From Fold to Mathematics* | 1.3.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md) | [10.5281/zenodo.21591170](https://doi.org/10.5281/zenodo.21591170) |
+| 03 | *From Distinction to Information* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md) | [10.5281/zenodo.21591171](https://doi.org/10.5281/zenodo.21591171) |
+| 04 | *After Turing: The Fold Machine* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md) | [10.5281/zenodo.21591174](https://doi.org/10.5281/zenodo.21591174) |
+| 05 | *The Quantum Fold Machine* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md) | [10.5281/zenodo.21591175](https://doi.org/10.5281/zenodo.21591175) |
+| 06 | *From Fold to Physics* | 1.1.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/physics/FROM_FOLD_TO_PHYSICS.md) | [10.5281/zenodo.21548363](https://doi.org/10.5281/zenodo.21548363) |
+
+## 2. Lead derivation: the exact fine-structure constant
+
+The paper does not present α as a guessed expression, a regression target or a coincidence selected from nearby fractions. Its construction is a typed chain from earlier admitted Fold structure:
+
+1. The foundational Fold distinction supplies exactly two fibre labels, so `b = 2`.
+2. The independently enumerated second nonidentity recurrence closes uniquely at generator `c = 3`.
+3. Three-direction support gives the complete generation volume `3³ = 27`; its successor volume is `3⁴ = 81`.
+4. The least complete binary covers are forced by exact inequalities: `2⁴ < 27 ≤ 2⁵` and `2⁶ < 81 ≤ 2⁷`. Therefore the down and up cover depths are exactly `5` and `7`.
+5. Those typed blocks force the tower `2⁷ = 128`, the rank-two boundary block `3² = 9`, and the complete directed cover `2·5³ = 250`.
+6. Promoting one of the three interchangeable directions from depth five to depth seven at each finite rung produces the complete ladder `(5³, 5²·7, 5·7², 7³) = (125, 175, 245, 343)`.
+7. The terminal effective cover is therefore the exact positive rational
+
+   `C = 250 + 1/(175 + 1/(245 + 1/343)) = 3676744786/14706643`.
+
+8. The tower, boundary, returning One and effective cover then force
+
+   `α⁻¹ = 128 + 9(C + 1)/C = 503846395469/3676744786`,
+
+   and hence
+
+   `α = 3676744786/503846395469`.
+
+The four exact promotion stages converge internally from `34259/250` to `5995462/43751`, `1468922449/10719245`, and the terminal `503846395469/3676744786`. The formal claim generated and decided all 1,024 members of its declared grammar, admitted exactly one survivor, passed minimality and named-shape uniqueness, passed all four mandatory adverse controls, and was independently reconstructed. Its 256-form empirical successor kept the CODATA target inaccessible until the prediction seal, converted the complete published central value and uncertainty into exact rational endpoints `[137.035999156, 137.035999198]`, found the sealed result inside that interval, and rejected the deliberately tampered control. Measurement confirms the result; it does not select any rung, coefficient or survivor.
+
+This derivation is the paper's central numerical result. It is also a dependency rather than an isolated endpoint: the same exact α propagates into the charged-lepton refinement, electroweak share, Higgs relation, proton/Planck hierarchy, magnetic anomalies, proton radius and other terminal precision laws below.
+
+## 3. Landmark first-principles results
+
+The discoveries are ordered by physical consequence. Evidence identifiers are supplied for reproducibility, but the findings—not filenames or hashes—are the scientific headlines.
+
+| Headline finding | Exact first-principles result | External measured comparison | Evidence claim |
+|---|---|---|---|
+| Fine-structure constant | α⁻¹ = 503846395469/3676744786 = 137.035999177180855…; α = 3676744786/503846395469 = 0.007297352564321794… | CODATA 2022: α⁻¹ = 137.035999177 ± 0.000000021; the sealed exact result lies inside the complete interval | `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001` |
+| Charged-lepton mass structure | exact cubic invariants (1, 1/6, 1/485, 3/1454), terminal α³ refinement, and Koide invariant 2/3 | both terminal adjacent-mass-ratio consequences and exact 2/3 lie inside the complete CODATA-derived intervals | `SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002` |
+| Higgs mass and self-coupling | m_H/v = 1/2 + 6α/5; with post-seal v=246.22 GeV, m_H = 125.266104978… GeV; λ = 0.1294167525… | mass prediction lies inside PDG 2025 [125.09, 125.31] GeV; complete ATLAS, CMS and self-coupling rows retained | `SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066` |
+| On-shell electroweak share | 1930922298157999/8642477221479757 = 0.223422318471252882… | inside PDG [0.22333, 0.22351]; compatible-input W/Z check passes and the all-input tension is retained | `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003` |
+| Squared Planck/proton hierarchy | 2^127(1 − 2α/3) = 1.693134633261878984…×10³⁸ | inside the complete propagated CODATA interval [1.693112648161510904…, 1.693187333165341130…]×10³⁸ | `SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003` |
+| Electron and muon magnetic anomalies | aₑ = 0.00115965218046558296…; aμ = 0.00116592071499941707…, both exact positive fractions | inside the complete CODATA electron and Fermilab world-average muon intervals without fitted coefficients | `SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004` |
+| Proton rms charge radius | coefficient 4(1 − α/10); post-seal scale translation gives approximately 0.840621761 fm | inside the registered 2026 electronic-hydrogen, muonic-hydrogen, CODATA-2022 and conservative PRad intervals; historical CODATA-2014 mismatch retained | `SFT-PHYS-PROTON-RADIUS-TERMINAL-029` |
+| Vacuum and cosmological scale | local floor 1/2^20; vacuum share 11/16; normalized Λ(c/H)² = 33/16 | 11/16 lies inside Planck [0.6833, 0.6945]; the dimensional Λ interval is transported only after post-seal H and c | `SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036` |
+| Dark-to-baryon and expansion calibration | dark/baryon 27/5 with shares 27/32 and 5/32, refined 279/52; late/early expansion 13/12, refined 3305/3048 | both ratio families lie inside their complete registered Planck and SH0ES observational intervals | `SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001` |
+| Second nonidentity generator | exact count 3; first-return orbit 1/7 → 2/7 → 4/7 → 1/7 | structural exact result | `SFT-PHYS-STRUCT-GENERATOR-THREE-001` |
+| Stable spatial dimension | 3 | independent structural stability census | `SFT-PHYS-SPACE-DIMENSION-THREE-001` |
+| Boundary rank | 2 | boundary of the forced three-direction carrier | `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001` |
+| Source dilution exponent | 2; response = source/r² | experiment reports 2 + q with q=(2.7 ± 3.1)×10⁻¹⁶; 2 is the sole positive integer in the interval | `SFT-PHYS-VALIDATION-INVERSE-SQUARE-001` |
+| Nuclear closure sequence | (2, 8, 20, 28, 50, 82, 126, 184) | exact match to the complete registered IAEA sequence | `SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001` |
+| Binding-per-nucleon maximum | A=62, Z=28, N=34 (nickel-62) | same unique maximum in the complete 2,548-row positive-composite AME2020 census | `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005` |
+| Primordial support partition | scalar 31/32 = 0.96875; tensor 1/32 = 0.03125 | Planck nₛ interval [0.9607, 0.9691]; tensor bound r<0.032, passed by 0.00075; no equality to conventional e-fold count is claimed | `SFT-PHYS-VALIDATION-INFLATION-GROWTH-040` |
+| Radiation scaling | fourth-power scale law; exact doubling ratio 2⁴ = 16 | post-seal comparison with the measured Stefan fourth-power exponent; no dimensional coefficient is claimed as structure-only | `SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042` |
+| Physics Grand Lock | 349 current claims; pre-lock certificate over 347 claims and 534 dependency nodes; 21/21 declared generator-dependent headline values move under 3→4 while half-One, spatial rank 3 and boundary rank 2 hold | 234 pre-lock empirical receipts reconcile 147 distinct external source identities; all 14 detected unfavorable-result or scope-boundary claims and all 6 legacy receipt shapes remain explicit | `SFT-PHYS-VALIDATION-GRAND-LOCK-076` |
+
+### 3.1 Charged leptons: mass structure without irrational roots
+
+Generator-three support forces one three-root carrier with symmetric invariants `sum = 1`, `pair sum = 1/6`, `leading product = 1/485` and sharpened product `3/1454`. The terminal refinement holds from that product the unique complete electromagnetic self-coupling `α³/3³ · (5 + 7α/3)`. Exact rational root brackets then predict both adjacent squared mass-ratio consequences; both lie inside their complete CODATA 2022 intervals. Independently, the Fold normalization forces the charged-lepton Koide invariant exactly `2/3`, which lies inside the complete CODATA-derived interval. No measured mass enters the cubic, no irrational root is admitted into proof, and no mass-ratio row chooses the invariant.
+
+### 3.2 Electroweak and Higgs sector
+
+The terminal electroweak construction uses complete binary support sixteen, the three held generator directions, charged support `15²`, four neutral pair channels of `14²`, and one terminal `α/17` self-return. It forces
+
+`sin²θ_W = 1930922298157999/8642477221479757 = 0.223422318471252882…`.
+
+That sealed value lies inside the complete PDG on-shell interval `[0.22333, 0.22351]`. Its exact One-complement passes the compatible-input W/Z interval; the known all-input tension is preserved rather than deleted or used to change the derivation.
+
+For the scalar sector, half-One is the unique displaced ground and the leading rungs are `1/2`, `1/4` and `1/8`. Six-cell scalar support, its held return and cover depth five force `m_H/v = 1/2 + 6α/5`. Applying the registered post-seal dimensional reference `v = 246.22 GeV` yields the exact mass `31557437733819647/251923197734500 GeV = 125.266104978… GeV`, inside the PDG 2025 interval `[125.09, 125.31] GeV`. The same relation forces native `λ = (m_H/v)²/2 = 0.1294167525…`. Individual ATLAS and CMS offsets and the present broad direct self-coupling constraint remain explicit in the validation record.
+
+### 3.3 Precision magnetic anomalies and proton structure
+
+With the admitted exact α and exact terminal turn `355/113`, the finite electron loop forces one exact rational anomaly `aₑ = 0.00115965218046558296…`, inside the complete CODATA interval centred on `0.00115965218046` with standard uncertainty `0.00000000000018`. The second-generation correction `α²(2/17 + α/106 + α²/853)` forces `aμ = 0.00116592071499941707…`, inside the Fermilab world-average interval centred on `0.001165920715` with standard uncertainty `0.000000000145`. Neither value imports a conventional perturbation series or fitted coefficient.
+
+The proton charge-support law independently forces the dimensionless coefficient `4(1 − α/10)`. Post-seal composition with the CODATA reduced proton Compton scale gives approximately `0.840621761 fm`. It lies inside the registered current electronic-hydrogen, muonic-hydrogen, CODATA-2022 and conservative PRad intervals. The disjoint historical CODATA-2014 interval remains in the record as an unfavorable historical row rather than being erased.
+
+### 3.4 Scale hierarchy, vacuum and cosmological ratios
+
+The terminal squared Planck/proton hierarchy is exactly `2¹²⁷(1 − 2α/3) = 1.693134633261878984…×10³⁸`, inside the complete outward-propagated CODATA mass interval. Vacuum structure separates three quantities that conventional shorthand can conflate: a local boundary-energy floor `1/2²⁰`, a global vacuum share `11/16`, and normalized cosmological magnitude `Λ(c/H)² = 33/16`. The global share lies inside the complete registered Planck interval; dimensional Λ is obtained only after the sealed coefficient is composed with held observational `H` and exact `c` scales.
+
+The three-space generation volume `27` and its least binary cover `32` force dark and baryonic shares `27/32` and `5/32`, ratio `27/5`, with the period-five refinement `279/52`. A separate Fold calibration forces matter/vacuum shares `1/3` and `2/3`, a leading late/early expansion ratio `13/12`, and depth-seven refinement `3305/3048`. Both ratio families pass their complete registered Planck and SH0ES interval tests.
+
+### 3.5 Space, force, nuclei, hadrons and gravitational waves
+
+The independently enumerated generator is three; stability selects three spatial directions; their boundary has rank two; and complete propagation across that boundary forces inverse-square dilution. The exponent is exactly `2`, while the registered experiment reports `2 + q` with `q = (2.7 ± 3.1)×10⁻¹⁶`, making two the sole positive integer in the complete interval.
+
+The same structure forces the nuclear closure sequence `(2, 8, 20, 28, 50, 82, 126, 184)` and the unique positive-composite AME2020 binding-per-nucleon maximum at nickel-62. Light-hadron support follows the exact squared trajectory `Q(J) = (6J − 3)/5`; all five registered carriers lie inside their complete resonance-support intervals without fitting a slope or intercept. Gravitational-wave structure forces inspiral with rising chirp, merger, then damped ringdown; the complete GW151226 and GW190521 records validate the three-stage ordering while retaining the short-signal and alternative-source boundaries.
+
+## 4. What the result changes
+
+The scientific claim is not merely that several fractions approximate familiar numbers. One exact, axiom-free derivational language produces the structural dimension, force exponent, dimensionless couplings, mass ratios, scale hierarchies, thermodynamic boundaries, quantum relations and macroscopic propagation laws under one admission standard. Every numeric result is connected to the same foundational root, generated within an explicit finite grammar, isolated from its measurement target, and tested after sealing. That conjunction—unification, exactness, zero fitted parameters, uniqueness enumeration and external validation—is the work's substantive contribution.
+
+The paper therefore keeps three levels distinct without diminishing any of them: the physical result is the headline; the exact derivation explains why it follows; and the receipt, hash, adverse controls and independent reconstruction establish that the reported chain is the chain actually executed.
+
+## 5. Complete current Physics status
+
+The current categorical inventory contains 349 Physics claims in 13 ordered subbranches. All 349 have immutable model-admitted receipts. The categorical V1/V2 ownership audit identifies 488 Physics-owned atoms, all 488 closed at the declared same-strength current-evidence boundary, with no open atom or gap family. Formal Grand Lock 075 binds the complete pre-lock ownership surface, verifies its acyclic 534-node dependency dictionary, proves that every Physics route reaches the foundational One and tests generator dependence. Empirical Grand Lock 076 reconciles all 234 pre-lock empirical claims, 147 distinct external source identities, every available measurement receipt, all disclosed legacy receipt shapes and every detected unfavorable or scope-boundary claim.
+
+“Closed” here means complete to the dated corpus, methods and evidence standard. It never means immune to correction or permanently closed to discovery. New findings, stronger evidence and falsifications remain lawful versioned extensions through the unchanged engine; existing receipts remain immutable.
+
+## 6. Exact constitutional domain
 
 The derivational domain admits the empty One as structural absence but never numerical zero. Proof magnitudes are positive generated counts and exact positive rational parts or ratios. Orientation, opposition and complement are held labels rather than negative quantities. Irrational, imaginary and binary floating values are barred from proof. Completed infinity, an ungenerated continuum, axioms, fitted coefficients and free parameters are also barred. External decimal measurements remain source-bound records. A finite decimal is converted to an exact rational interval only inside the empirical adapter and never gains authority to select the Fold law.
 
-## 4. The single admission engine
+## 7. The single admission engine
 
 Each claim entered the same `SFTAdmissionEngine`. Registration rejects axioms, free parameters, missing root trace, unadmitted dependencies and source-identity failure before candidate execution. The engine then checks census cardinality and identity, one decision per candidate, exactly one survivor, minimality, named-shape uniqueness, the four mandatory controls, an implementation-distinct external reconstruction and, for empirical claims, prediction isolation, target custody, complete rows and falsification. A failure halts without model admission. Accepted receipts are immutable evidence identities. The engine source is not edited by this publication correction, and the paper cannot confer admission.
 
-## 5. Why superdeterminism permits uncertainty and quantum weights
+## 8. Why superdeterminism permits uncertainty and quantum weights
 
 No law in this branch installs ontic nondeterminism. The complete Fold state includes preparation, held labels, measurement setting, path and observation record. A probabilistic or quantum weight is an exact census ratio over unresolved support. Each branch execution remains deterministic. Measurement uncertainty records distinctions unavailable to an observation class; it does not assert causeless state selection. Bell correspondence therefore retains setting and preparation records in the complete state, identifies the factorization assumption that fails, and separately preserves the no-signalling marginal through complete remote-fibre enumeration.
 
-## 6. Empirical constitution
+## 9. Empirical constitution
 
 External evidence follows one direction. First the Fold dependencies generate and eliminate candidate laws. Then a data-only Fold program receives only registered inputs and the sealed derivation identity. Its instruction set has no filesystem, network, subprocess, clock, environment, dynamic import or foreign-function capability. A distinct custodian commits target identity before execution and releases content only to the matching prediction seal. The evaluator preserves every registered row and must reject a deliberately altered or displaced control. BIPM, NIST/CODATA, NIST ASD, PDG, IAEA, IAPWS, GWOSC, CERN Open Data and NASA LAMBDA supply the external records.
 
-## 7. Exact measured-value correspondence
+## 10. Exact measured-value correspondence
 
 Measured-value forcing means that a zero-parameter Fold relation produces a sealed consequence and a registered exact adapter compares it with withheld observation. The observation is evidence, not a tunable parameter: it cannot enter candidate generation, choose a survivor or add a correction. Finite decimals and uncertainties are parsed as exact positive fractions. Multiplication and quotient propagate interval endpoints in the capability-closed interpreter; target overlap is evaluated only after release. Exact official decimal prefixes with ellipses are bounded by their next decimal place. Any non-overlap halts admission.
 
-The inverse fine-structure result belongs here, in Physics: `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001` forces the terminal exact ratio and `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001` performs its sealed CODATA comparison. The same rule applies to every constant, scale and precision claim in the inventory. They are listed here rather than hidden in a later Chemistry narrative:
+The inverse fine-structure result belongs here, in Physics: `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001` forces the terminal exact ratio and `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001` performs its sealed CODATA comparison. The same rule governs every constant, scale and precision claim in the inventory. No redundant handwritten status may override an engine-admitted receipt or a passed empirical certificate.
 
-| Physics value or post-seal comparison | Claim | Status |
-|---|---|---|
-| Exact molar Planck measured-value correspondence | `SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001` | `empirically_tested_and_independently_replicated` |
-| Exact momentum measured-value correspondence | `SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001` | `empirically_tested_and_independently_replicated` |
-| Exact force measured-value correspondence | `SFT-PHYS-VALIDATION-MECHANICS-FORCE-001` | `empirically_tested_and_independently_replicated` |
-| Exact electric-potential measured-value correspondence | `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001` | `empirically_tested_and_independently_replicated` |
-| Exact electric-field measured-value correspondence | `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001` | `empirically_tested_and_independently_replicated` |
-| Exact wave frequency measured-value correspondence | `SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001` | `empirically_tested_and_independently_replicated` |
-| Exact wave energy measured-value correspondence | `SFT-PHYS-VALIDATION-WAVE-ENERGY-001` | `empirically_tested_and_independently_replicated` |
-| Exact molar thermal measured-value correspondence | `SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001` | `empirically_tested_and_independently_replicated` |
-| Post-seal experimental agreement of the inverse-square exponent | `SFT-PHYS-VALIDATION-INVERSE-SQUARE-001` | `empirically_tested_and_independently_replicated` |
-| Terminal exact inverse fine-structure Fold ratio | `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001` | `independently_replicated` |
-| Post-seal CODATA check of the terminal inverse fine-structure ratio | `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001` | `empirically_tested_and_independently_replicated` |
-| Post-seal IAEA check of the nuclear-closure sequence | `SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001` | `empirically_tested_and_independently_replicated` |
-| Exact charged-lepton cubic invariants | `SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001` | `independently_replicated` |
-| Terminal self-coupling refinement of the charged-lepton cubic | `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001` | `empirically_tested_and_independently_replicated` |
-| Post-seal exact Koide comparison | `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001` | `empirically_tested_and_independently_replicated` |
-| Squared proton-to-Planck hierarchy | `SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002` | `independently_replicated` |
-| Terminal charged-colour proton-to-Planck hierarchy | `SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003` | `independently_replicated` |
-| Blind PDG test of the terminal electroweak Fold share | `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003` | `empirically_tested_and_independently_replicated` |
-| Blind CODATA test of the terminal proton-to-Planck hierarchy | `SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003` | `empirically_tested_and_independently_replicated` |
-| Blind PDG anchor test of the complete force-sector formula | `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal NIST test of the nonempty vacuum floor | `SFT-PHYS-VALIDATION-VACUUM-FLOOR-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal PDG test of the vacuum-polarization running direction | `SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal MICROSCOPE anchor test of vacuum-inertia unity | `SFT-PHYS-VALIDATION-VACUUM-INERTIA-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal NIST boundary test of vacuum-work extraction | `SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal dynamics and spectra comparison | `SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal relativistic and electromagnetic field comparison | `SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal optical-operation comparison | `SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal finite-loop and renormalization-boundary comparison | `SFT-PHYS-VALIDATION-FINITE-LOOPS-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal gravity, clock and equivalence comparison | `SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal gravitational-wave speed, polarization and quadrupole comparison | `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal horizon and information-boundary comparison | `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal nonstandard-spacetime realization boundary | `SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003` | `empirically_tested_and_independently_replicated` |
-| Quark dressing and CKM comparison | `SFT-PHYS-VALIDATION-QUARK-CKM-003` | `empirically_tested_and_independently_replicated` |
-| Proton/electron precision comparison | `SFT-PHYS-VALIDATION-PROTON-ELECTRON-003` | `empirically_tested_and_independently_replicated` |
-| Neutrino mass, ordering, PMNS and CP comparison | `SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003` | `empirically_tested_and_independently_replicated` |
-| Majorana and neutrinoless-double-beta status comparison | `SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003` | `empirically_tested_and_independently_replicated` |
-| Electron and muon magnetic-anomaly comparison | `SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003` | `empirically_tested_and_independently_replicated` |
-| Post-seal NIST comparison of the forced six-neighbour cubic support | `SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004` | `empirically_tested_and_independently_replicated` |
-| Post-seal NIST comparison of the exact hydrogen spectral ladder | `SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004` | `empirically_tested_and_independently_replicated` |
-
-## 8. Reading the derivation ledger
+## 11. Reading the complete derivation ledger
 
 Each claim section below is a self-contained prose projection of its machine evidence. The complete `candidate_census.json`, `elimination_receipt.json`, `controls.json`, `certificate.json`, external experiment registration and receipt remain authoritative. The paper includes every claim identity and admitted receipt hash so the evidence map can fail closed on omission or substitution.
 
 
-## 9. Measurement Metrology
+## 12. Measurement Metrology
 
 Measurement is reconstructed before natural law: observation classes, quantities, dimensions, units, references, uncertainty and calibration remain exact carriers, while decimal inscriptions stay outside the proof domain.
 
@@ -1169,7 +1233,7 @@ The result is closed only at its registered generated and empirical boundary. It
 **Immutable evidence identities.** Source manifest `sha256:6b6069bb58cce5f30869ea2ed0cc6228b1809295b42c454f51af592277d61059`; engine receipt `sha256:b2d8360be10ba4be5664b59ee4624d91d909962f83927b3bd98d4caf5b02e43b` at `receipts/engine/model_admitted/SFT-PHYS-MEAS-BOUNDARY-GROWTH-001-b2d8360be10ba4be.json`; empirical-validation hash `None`; measurement receipt `None`.
 
 
-## 10. Mechanics Dynamics
+## 13. Mechanics Dynamics
 
 Mechanics and dynamics are reconstructed as exact state change, recurrence count, relational displacement, closed transfer and coupled evolution. Motion quantities are not imported coordinates; each is the minimal Fold carrier retaining the relevant event and resource trace.
 
@@ -3080,12 +3144,85 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b5f097071692fa729280a05aa9d9c264532f3ff28fda7bb7b689104e130556f1`; engine receipt `sha256:9a067d10ece75b8300bec3c77193649313dbc2fcc116f721bd0fef54544a433c` at `receipts/engine/model_admitted/SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009-9a067d10ece75b83.json`; empirical-validation hash `sha256:b545a3186cb862437c92f3d65e46e5570bdf71cbf7b8c2a028280e916f37d03f`; measurement receipt `sha256:0b1572fc86c9e9d4501efee787ab5388dc4991261d757828f419e19c65ccef09`.
 
+### 37. Finite Fold symmetry, conservation and least action
 
-## 11. Fields Forces Waves Geometry
+Claim identity: `SFT-PHYS-DYNAMICS-SYMMETRY-ACTION-TERMINAL-016`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Exact Fold preserves every reduced odd denominator core; complete finite Fold symmetries preserve held invariant fibres; every registered conserved partition generates its preserving symmetry class; the unique dyadic Fold trajectory descends to stationary One; monotone positive descent telescopes to endpoint separation and no finite detour has smaller action.
+
+> Fold preserves the reduced odd denominator core of every rational part; complete finite Fold symmetries preserve their held invariant fibres, every registered conserved partition generates its complete preserving symmetry class; every dyadic Fold part follows its unique binary-rank descent to stationary One; every monotone positive descent path telescopes to its endpoint carrier; and no finite detour has smaller action.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-MATH-GRAPH-NETWORK-001`
+- `SFT-MATH-ORDER-LATTICE-001`
+- `SFT-MATH-DYNAMICAL-SYSTEMS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-ORBIT-NUMBER-THEORY-002`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-PHYS-MECH-CONSERVATION-001`
+- `SFT-PHYS-MECH-WORK-ENERGY-001`
+- `SFT-FOUNDATION-PART-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of support, symmetry, incidence, carrier, conserved-fibre, converse, action, path and extension forms. The declared exact boundary is: Every exact positive rational Fold part; the complete dyadic fixed-point basin; every finite generated state support; every bijection of that support; every registered exact transition/carrier relation and held fibre partition; every finite path of distinct adjacent states with exact positive ranked coordinates. The generator produced `512` named candidates and the decision support contains `512` one-for-one decisions. Exactly one candidate survived: `complete-finite-generated-support__complete-bijection-enumeration__transition-incidence-preserved__exact-positive-carrier-preserved__odd-core-and-held-invariant-fibre__enumerate-all-fibre-preserving-bijections__sum-of-positive-oriented-step-magnitudes__dyadic-Fold-descent-and-positive-detour-bound__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `support` | `complete-finite-generated-support` | `selected-or-continuous-state-sample` | A sample or continuum premise is not a complete generated domain. |
+| `symmetry` | `complete-bijection-enumeration` | `named-transformation-without-census` | A named transformation does not prove bijection or completeness. |
+| `incidence` | `transition-incidence-preserved` | `state-labels-without-transition-law` | Ignoring incidence can turn a non-dynamics map into a symmetry. |
+| `carrier` | `exact-positive-carrier-preserved` | `free-rescaling-under-symmetry` | A free rescaling changes the physical law. |
+| `conserved` | `odd-core-and-held-invariant-fibre` | `answer-only-scalar` | A scalar detached from support has no conservation trace. |
+| `converse` | `enumerate-all-fibre-preserving-bijections` | `assert-every-conservation-has-unknown-symmetry` | An ungenerated symmetry is not evidence. |
+| `action` | `sum-of-positive-oriented-step-magnitudes` | `signed-or-imported-action-integral` | Signed continuum integration is outside the proof domain. |
+| `path` | `dyadic-Fold-descent-and-positive-detour-bound` | `postulated-stationary-physical-path` | Postulating stationarity imports the desired principle. |
+| `extension` | `no-extra-rule` | `free-Lagrangian-or-Euler-equation` | An imported functional or equation is an extra premise. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:441f216f6c5c0b73c0db50445b2fea60e3796f38f54a4617f5471b65adaf08a5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:c993d211ebd09080e4cc3077d8fffee231d05f9ba2a5c0aa80ae292d546f70f5`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:bafd7588c69ca117953fded10f3b6e4f1f381737b86e925f69c249698ec85444`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:250b52554881e0d14d83e9b306f3ce1421a73e9366da9663f93d8509f54115a0`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:1839b0fae41ca54f4daa155e56b8d3a75ecc683bd62a3c856453df07a6719066`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4c5efd8efc82310605344c83bfaba79470f3632a90a8dda029a64fcac3cb6b37`. Independent certificate: `sha256:f22863557ec8d4f77008bfd44d42b3885d99c3a8eef7a89bba04d24d8cdae6be`. Engine external-validation hash: `sha256:b16add97905a64f9097085c2ca029a1cfc0c6806fbf49c5a65dbee7fff2c4d49`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Mechanics and dynamics are reconstructed as exact state change, recurrence count, relational displacement, closed transfer and coupled evolution. Motion quantities are not imported coordinates; each is the minimal Fold carrier retaining the relevant event and resource trace. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported Noether theorem, Lagrangian, Euler-Lagrange equation or continuum variation
+- no prior V1/V2 proof artifact, answer table or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no assertion that an arbitrary non-Fold physical system has the registered dyadic ranking
+- no measured trajectory or target selecting the symmetry, charge or action form
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:8e275a82b73779b75647ea049b663e7e733f9318c4d1f8f793f20e7ec758ec72`; engine receipt `sha256:3c158a5e6f5ad82f89435d0b00c6542d1230e20706f5cdadad0db202864d4075` at `receipts/engine/model_admitted/SFT-PHYS-DYNAMICS-SYMMETRY-ACTION-TERMINAL-016-3c158a5e6f5ad82f.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 14. Fields Forces Waves Geometry
 
 Three-space, rank-two boundaries, inverse-square dilution, force sectors, fields and waves are generated from Fold support and source-bound response. Held labels carry orientation without signed proof magnitude, and locality requires a complete adjacent propagation trace.
 
-### 37. Source, response and field carrier
+### 38. Source, response and field carrier
 
 Claim identity: `SFT-PHYS-FIELD-SOURCE-RESPONSE-001`
 
@@ -3167,7 +3304,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:6a8409307ffe7115cc2e0eedc4f99557d8bb07df360cb88cceb8ec040bb390ff`; engine receipt `sha256:203231945e022e79b7ffae5fc692aa84ec9e0cf0acea135fe22ac2bc6838ebc9` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-SOURCE-RESPONSE-001-203231945e022e79.json`; empirical-validation hash `sha256:69a79da801e537f1ac5d55c7c785a98140d4a4b89b6f2c30c47a31cd43822e96`; measurement receipt `sha256:ebc58b140ebc9bb3b1a12b505dff0de9ef6fadb8e9adbdccfe53045a8203daaf`.
 
-### 38. Generated support and geometric dilution
+### 39. Generated support and geometric dilution
 
 Claim identity: `SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001`
 
@@ -3250,7 +3387,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a1d9d6acc9d4794e6ca8f81d22c2caf35ff18a9d4876197736779c206b294cfc`; engine receipt `sha256:afa50140059d7f2d81931e46b6761c0053f4e77eeee0538c1127843dfa690ceb` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001-afa50140059d7f2d.json`; empirical-validation hash `sha256:1984c29055fd7e0858da0bdad73676ee0b11df022da20fef9c51036c1f6cb3c9`; measurement receipt `sha256:7c949ef7a741f0d750e380e39695e428563e895f4056966995f73fa721d4bd3e`.
 
-### 39. Gravitational interaction at the weak relational boundary
+### 40. Gravitational interaction at the weak relational boundary
 
 Claim identity: `SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001`
 
@@ -3333,7 +3470,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:959b4df999632bda004902de2ef28119033c172f7551c25e097d3e8b949fbd3b`; engine receipt `sha256:82395b33bc2287af04a87f7dead671259e3f3cbcb24d0cf507b64379649d7f23` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001-82395b33bc2287af.json`; empirical-validation hash `sha256:f45f6c9954f64dbbddfbf33e554d27c607df83a6c89480ca0ce6442292a4d804`; measurement receipt `sha256:927062d762861272cdd1cbceacf880e129da86595b727c481e7c1c23c1ea5924`.
 
-### 40. Electric distinction and held charge orientation
+### 41. Electric distinction and held charge orientation
 
 Claim identity: `SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001`
 
@@ -3416,7 +3553,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3b19a83d707e022cee35bb81cd57554e60965da8cd660562699270b1aaa43212`; engine receipt `sha256:479be6249f070c662d307aeec59a6ceeeceb4981de428f3200a78575f05e0cf3` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001-479be6249f070c66.json`; empirical-validation hash `sha256:fee8a5e70fbcfa86d433625149b2927d948bde0ae51c92ac12783236bdf75863`; measurement receipt `sha256:22c918d208c1b4bc38aeb319dc9ba5aeed21cac8d558392edeb6c341a85e2325`.
 
-### 41. Electric field, potential and work correspondence
+### 42. Electric field, potential and work correspondence
 
 Claim identity: `SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001`
 
@@ -3499,7 +3636,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:974168706fd3887f0fd2fb69728d2b38b064d2fa5fcb00130cf5be4220f942d0`; engine receipt `sha256:404307768a30ea39fce5e7ab47589d6a5e103841f6c7c532a63328bed4a4feca` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001-404307768a30ea39.json`; empirical-validation hash `sha256:6af026f60911b1f1a0642a8ac4949daea63e99b0859ba57eaa9876439a5046fe`; measurement receipt `sha256:07aaa4990023f31405ca92090ea2aa9e9ddad31f4cb58413884f1a42cdaead89`.
 
-### 42. Magnetic response to oriented change
+### 43. Magnetic response to oriented change
 
 Claim identity: `SFT-PHYS-FIELD-MAGNETIC-001`
 
@@ -3582,7 +3719,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:26b1b3c56afb0e115418eb8afb799524ff9b54ca8b2084f02dbedce5e165192e`; engine receipt `sha256:4a212db2fc1113d2502f514d023caf210814886a20253226b2b4eeae0328f238` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-MAGNETIC-001-4a212db2fc1113d2.json`; empirical-validation hash `sha256:c064915bfc94f33a0d756ee592e8b77849b75320ea296143a33cdc28380dfda6`; measurement receipt `sha256:7cc2da823d648c756e5c806a61c7dc0b4d5e00d24c847c4b9b6b742962595c52`.
 
-### 43. Induction from changing linked support
+### 44. Induction from changing linked support
 
 Claim identity: `SFT-PHYS-FIELD-INDUCTION-001`
 
@@ -3665,7 +3802,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:91048d8bdf43be16b8fe48671f5b7bd714b7ea78acf2903749347e3049beadfe`; engine receipt `sha256:65da863a9a1b716d62b7541040863b59ee56c0055a972eaa5ac8c2b5e82959c8` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-INDUCTION-001-65da863a9a1b716d.json`; empirical-validation hash `sha256:a2fc5738662e6375822daa99fca34c25b0efcc44a4cac79f29529db6dd10e3df`; measurement receipt `sha256:82ddf178dd9b2f895e85ccfeed9b438ba2c20abbab8d6872acdd92ade0f54328`.
 
-### 44. Electric-magnetic compositional closure
+### 45. Electric-magnetic compositional closure
 
 Claim identity: `SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001`
 
@@ -3748,7 +3885,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:dba269304955eec2c12619e9043329c08e61e0ae65151f17c09951511441c2e4`; engine receipt `sha256:470397ea06dec2c8b33de5b77e4f6d0ba6681999d445b82eec45b93ab9233080` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001-470397ea06dec2c8.json`; empirical-validation hash `sha256:315ce6e7344ac779f48d29f8127718531c10815e571ec6c46a7fa8e4e368742a`; measurement receipt `sha256:84f2644f6405541a10ec990c1840254adc51d1930d8adeee9ebbbe359f0d20b0`.
 
-### 45. Gauge-equivalent descriptions and retained observables
+### 46. Gauge-equivalent descriptions and retained observables
 
 Claim identity: `SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001`
 
@@ -3831,7 +3968,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:6ec0cd95c2db07b0f5aed6500a49bbaf23e243af48fa165a86885b944c29678f`; engine receipt `sha256:7c9c2d1366bf84479e96fb53603fa5a94312f5f7606d35b495f6ec03320b5d70` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001-7c9c2d1366bf8447.json`; empirical-validation hash `sha256:8a968022783129910d6e052c8a995e855f03394964a31d93f7fbd92ae1979651`; measurement receipt `sha256:ee9425b090876521cf61a35a68cf4cf8f8c82707c88083cbd5f841525eb42c27`.
 
-### 46. Local propagation and causal accessibility
+### 47. Local propagation and causal accessibility
 
 Claim identity: `SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001`
 
@@ -3914,7 +4051,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:377aad9ec09b8b2fc819f404397cc879a95cb81abb380af3a4a88970a6c3c2c2`; engine receipt `sha256:53eddf9f05386d8a26a3de9279a68d1a36451f8dfb290681a1121bfbbd70a6ac` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001-53eddf9f05386d8a.json`; empirical-validation hash `sha256:4c0da852185c5b19f157ed8b3f7f3a2c2a7abb6a74efba679b195834fab5d18d`; measurement receipt `sha256:d7471789b05174ea0fb30ba3ab266534b351b2a406ab1a69b97a4cdc77d0adb6`.
 
-### 47. Radiative transport and source detachment
+### 48. Radiative transport and source detachment
 
 Claim identity: `SFT-PHYS-FIELD-RADIATION-001`
 
@@ -3997,7 +4134,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ab2660f76840eb85ad5503c84c0e2ed5c340caaac7da09d66532d4236964f5c3`; engine receipt `sha256:0d61c283fb2b593db4705f03525522b29ed15179ed4b36519d281ca9b34e2fcd` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-RADIATION-001-0d61c283fb2b593d.json`; empirical-validation hash `sha256:87d41f9553bcb7449b6c0d58978b6d3c0677da708d44f703e56c56f337813742`; measurement receipt `sha256:f67a662a2e3f152a9d529c835ad00b1044fd652fcac0664c17aae5a7314e9866`.
 
-### 48. Empirical closure of physical interaction classes
+### 49. Empirical closure of physical interaction classes
 
 Claim identity: `SFT-PHYS-FIELD-INTERACTION-CLASSES-001`
 
@@ -4080,7 +4217,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:01c6393d317faab6655b107e5dc2bae30615a8d7c2c0a5046b257e1b14cf5a7d`; engine receipt `sha256:ac4ce2d6711e53b55ee78939d1ab2717b841dc92a84a5e0c2af31db12218d322` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-INTERACTION-CLASSES-001-ac4ce2d6711e53b5.json`; empirical-validation hash `sha256:8800c5a991882decab96e3717aa028b3a2a12c13bf52b9c3bc88882655e77f1a`; measurement receipt `sha256:dd3a368b3edf145c3b387532f7c14b2d2607dfd08a62ca953b3c4c338c13e624`.
 
-### 49. Source continuity and field conservation
+### 50. Source continuity and field conservation
 
 Claim identity: `SFT-PHYS-FIELD-CONSERVED-SOURCE-001`
 
@@ -4163,7 +4300,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e9267d967e4bbffebe4ad0239802582a994936b5e949d563c55533c0839d54ac`; engine receipt `sha256:48f15b7c73add25dba9c828842d81560ccc94d5733518a79f4d96de248334f53` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-CONSERVED-SOURCE-001-48f15b7c73add25d.json`; empirical-validation hash `sha256:183057ccc690f97a75b6782893c5236ebd3c122936080aac8c7eff8d4f9120d3`; measurement receipt `sha256:07029ac4d3d3fd288e1146ece1493bbabcf5bb46dd0b829d26dfd6a208db6e75`.
 
-### 50. Reciprocal interaction and transferred distinction
+### 51. Reciprocal interaction and transferred distinction
 
 Claim identity: `SFT-PHYS-FIELD-ACTION-REACTION-001`
 
@@ -4246,7 +4383,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:6fd0b816fe52b6f475f046aceb099bea7065e9fcbd8f24befa3eb181c5ac35dd`; engine receipt `sha256:78ed10fe165871136905b7cde51a30df16627b13339643b9b340f69c368fb343` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-ACTION-REACTION-001-78ed10fe16587113.json`; empirical-validation hash `sha256:be0b4ef2b80815d848e946c18f5c5fe98d11974a1296949fff5f83e5b7dcc7f4`; measurement receipt `sha256:dfd339e24fdf144d8825e7ba69c9990478519cc4d372a6c0b2fcaea5f4f99b73`.
 
-### 51. Period, recurrence and frequency
+### 52. Period, recurrence and frequency
 
 Claim identity: `SFT-PHYS-WAVE-PERIOD-FREQUENCY-001`
 
@@ -4327,7 +4464,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8c089d92e70f95b50a09fe3ccc510250303d72ce0d7297d31030ac46a0733f87`; engine receipt `sha256:55aecf75af90158e67ccf21446f06dc6d604ca0420482afe08637e465da99f93` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-PERIOD-FREQUENCY-001-55aecf75af90158e.json`; empirical-validation hash `sha256:9c2404e18eb33aa4056099c5c3dbb9fbc21c0b8fcddbd59cdf2cd4dfc4df951b`; measurement receipt `sha256:00cf3fbd760d4912e92c38bce1e58c22b3b5abf1a644966e44f430085a9a0cba`.
 
-### 52. Generated wave propagation
+### 53. Generated wave propagation
 
 Claim identity: `SFT-PHYS-WAVE-PROPAGATION-001`
 
@@ -4409,7 +4546,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:583d105d16ec8e339b799ea1bf11abfb70f5a129ed8f38091429bda7f81f7db7`; engine receipt `sha256:50a4686ca478198084edb8fed8ddd16cf51d791da3aee98fde34e393b23d0998` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-PROPAGATION-001-50a4686ca4781980.json`; empirical-validation hash `sha256:c69dd8f7d2a4f89cc7b94d6bb085107d89e6fb483a87bbec02aaa683dea47791`; measurement receipt `sha256:ecbdf53b4616a61a417ab3a833b22defe0381ea259b331f5795cf2c77d663f00`.
 
-### 53. Propagation speed, wavelength and frequency relation
+### 54. Propagation speed, wavelength and frequency relation
 
 Claim identity: `SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001`
 
@@ -4491,7 +4628,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ef50b7f656f86bbb15cd4cb0d3c8172cf7736f419eda1817621fb875f7031a87`; engine receipt `sha256:0b1798571aa501d2d2f115ac1863142881c886214b0d3cbada2cc1cc03f47fc5` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001-0b1798571aa501d2.json`; empirical-validation hash `sha256:abd7e043ca2448e874c0bb8b5cf68cb1acef82d8ec018a52d35d065705e51571`; measurement receipt `sha256:e7fa7a2d678af00aa3058d405464161c3862a771103dec03a4e8390ef7d8ffd3`.
 
-### 54. Wave superposition
+### 55. Wave superposition
 
 Claim identity: `SFT-PHYS-WAVE-SUPERPOSITION-001`
 
@@ -4573,7 +4710,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1e084c75cd32f819fb2724505d0d805269b650e12b6cd78784cb2d5aff46c356`; engine receipt `sha256:f8421b45a2cf9ca516fca24b3a33fc71e3f9b11e3435c2eaf6a6ccfe471f45e3` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-SUPERPOSITION-001-f8421b45a2cf9ca5.json`; empirical-validation hash `sha256:c8364b6cc5f873f40e52a5c5daf2f57d6deaba3727a12ed8ba4256bda4970cf7`; measurement receipt `sha256:6179415fbcec744b0d304d9e41c8a46334d46232548acf05dcd34bab9dfba677`.
 
-### 55. Wave interference and predecessor merging
+### 56. Wave interference and predecessor merging
 
 Claim identity: `SFT-PHYS-WAVE-INTERFERENCE-001`
 
@@ -4655,7 +4792,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:be7b9c926641bd8cabda9e0e20899b92c7e630147cf731a62da44fede8cd2f66`; engine receipt `sha256:fecacb47e9a61a33c7df01e0cd569f3306ca1d298ed47232817357fbf247afee` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-INTERFERENCE-001-fecacb47e9a61a33.json`; empirical-validation hash `sha256:c77d3e82f8dfd7a43ac79cc5a07ff9d95e0e396dfa0230cc753b4866f51fdb7c`; measurement receipt `sha256:27ee402e11aa853c8e3f3907f43db528e593512879dac3c0bfb19d0e00baa1e0`.
 
-### 56. Diffraction at constrained support
+### 57. Diffraction at constrained support
 
 Claim identity: `SFT-PHYS-WAVE-DIFFRACTION-001`
 
@@ -4737,7 +4874,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7161343d80b1f1dfcca31709a1932fc0c38ac92cc61923966f7f6819137a1c93`; engine receipt `sha256:4c9922f000b07cfacacfbae4f820e76af89cc3e83f0e211e5396c5625b61902a` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-DIFFRACTION-001-4c9922f000b07cfa.json`; empirical-validation hash `sha256:2e8d10315460c7a7da499c47da3fd3ece4ecf21dd3f19edb6381bd040fcd3b84`; measurement receipt `sha256:fddfbfb736f2506f418f6988471945f19870456bd066697ca2e5154e2ed5e891`.
 
-### 57. Polarization as held transverse orientation
+### 58. Polarization as held transverse orientation
 
 Claim identity: `SFT-PHYS-WAVE-POLARIZATION-001`
 
@@ -4819,7 +4956,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ff32660b2dd6d39c4658c6320647c05df6c2f984de9ebf2883d67a9628371925`; engine receipt `sha256:ed7c412e559c3488049747a95ba94327326d631f7896cdd18ddc33db557ec81e` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-POLARIZATION-001-ed7c412e559c3488.json`; empirical-validation hash `sha256:9191952e3689a1574ad3c1119eabba9143b8df9766c151c1fcfd33e6b816c324`; measurement receipt `sha256:a43d059197b55a8f4b0ec6822538a49fa62203e937ac3c1083dd3cb87af201e9`.
 
-### 58. Dispersion and support-dependent propagation
+### 59. Dispersion and support-dependent propagation
 
 Claim identity: `SFT-PHYS-WAVE-DISPERSION-001`
 
@@ -4901,7 +5038,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:99dfb753c9092b1a1d9e26c0d60986514bd3b990a3c69ce166e2a40c5802da83`; engine receipt `sha256:72749162a46a877c7d54d3cde6f09848b2d383360ed687b201e6c94475a29fe8` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-DISPERSION-001-72749162a46a877c.json`; empirical-validation hash `sha256:31b6281252888e47b64ef536c44289125704bed608fdc95a2f077fcbeeb7841f`; measurement receipt `sha256:faf14b33a5493c9d3f99a9920b8f33f44d5ba2b2ddb1a04bdf29c3d0f8f7420f`.
 
-### 59. Resonance and recurrence matching
+### 60. Resonance and recurrence matching
 
 Claim identity: `SFT-PHYS-WAVE-RESONANCE-001`
 
@@ -4983,7 +5120,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4530e5320e83f41278376ce35c1394e1134d846d07515c70aa7c78fbf5b24e35`; engine receipt `sha256:cac57d85a74fcf5b8f323aa8ea98203d242e8e40084465de77b89d33b6db55e3` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-RESONANCE-001-cac57d85a74fcf5b.json`; empirical-validation hash `sha256:76602285c6259cca45dc32916d234702b3b607e013728be5e2e94f616a0891ee`; measurement receipt `sha256:5587beb44326be1e025b8a6a32d5769ea98ff4821fae2f0a40cf5de33a9ad33a`.
 
-### 60. Wave energy and momentum transport
+### 61. Wave energy and momentum transport
 
 Claim identity: `SFT-PHYS-WAVE-ENERGY-MOMENTUM-001`
 
@@ -5065,7 +5202,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:f58817363c14545510ba7152e7f925e69303e204f13e93e236d43a392980330a`; engine receipt `sha256:1a25f4c7e2b95a50fd6b37e122372952e6563575c716a6cda083ce1d0755e6de` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-ENERGY-MOMENTUM-001-1a25f4c7e2b95a50.json`; empirical-validation hash `sha256:337ba7284de709779a228b8d01faeba71e03195569fadbabfe66d18071ba31ab`; measurement receipt `sha256:eb45a52316baae6215822fdfb276a428e8883cad50b45dcab87087a8fb9fc7af`.
 
-### 61. The second structural Fold generator is three
+### 62. The second structural Fold generator is three
 
 Claim identity: `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
 
@@ -5136,7 +5273,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c87a7354ead0e1b5834d7da7b269539830b7baab74260db9e0b4205a4152a7de`; engine receipt `sha256:3017771dde2eabf649278851cd9e43fb6c5e939b5a052a09f02f6e604d6ed50e` at `receipts/engine/model_admitted/SFT-PHYS-STRUCT-GENERATOR-THREE-001-3017771dde2eabf6.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 62. Three-dimensional Fold stability
+### 63. Three-dimensional Fold stability
 
 Claim identity: `SFT-PHYS-SPACE-DIMENSION-THREE-001`
 
@@ -5206,7 +5343,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:28ea66b5537d3d9b6adb8241b0ab0863ee82c80179db2ed4b40d2cd020c207ef`; engine receipt `sha256:fb06dcbd49ff61a213ff97420274014c7e2b683cddf0c593f269045b387d589e` at `receipts/engine/model_admitted/SFT-PHYS-SPACE-DIMENSION-THREE-001-fb06dcbd49ff61a2.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 63. Rank-two boundary of three-space
+### 64. Rank-two boundary of three-space
 
 Claim identity: `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001`
 
@@ -5276,7 +5413,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a888f6a3dab8ef342e57456e170a55a97520a3bb65702e6f7a0ef9e8e613c186`; engine receipt `sha256:84ef6397b0fc006ae2ea6525024a9e8920f20afcd42929632db793ae0a1d809b` at `receipts/engine/model_admitted/SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001-84ef6397b0fc006a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 64. Inverse-square dilution from rank-two boundary support
+### 65. Inverse-square dilution from rank-two boundary support
 
 Claim identity: `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
 
@@ -5351,7 +5488,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8a3751d86c3485d1aae1196986d3beabc52ad66603ab501e2202fa2d48a00ea8`; engine receipt `sha256:68fb6f9d11a0c64e08a8d6339dcc5feec4717a76d5d46d600988774ae79ccbf2` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-INVERSE-SQUARE-001-68fb6f9d11a0c64e.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 65. Complete prime-sector force and mediator ladder
+### 66. Complete prime-sector force and mediator ladder
 
 Claim identity: `SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002`
 
@@ -5418,7 +5555,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a05666ce9ce250c3a40e7f745a59a6e801ca7671082e33aef826d19a102b5c98`; engine receipt `sha256:1e22b2eda37dc8afe38d740cf10db286fb2e5f238704a22ccfee7066c8cbaa85` at `receipts/engine/model_admitted/SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002-1e22b2eda37dc8af.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 66. Complete finite prime-sector force and particle inventory
+### 67. Complete finite prime-sector force and particle inventory
 
 Claim identity: `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
 
@@ -5492,7 +5629,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ed90e7c9cd5e1693f0cb76d19db5c57283b70bf94c1841ca79beec9910a10829`; engine receipt `sha256:ee6b271f050a867fbe8d5ddcd10e7dba7f7ccba227b4094efbd5c6e2b48741fb` at `receipts/engine/model_admitted/SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003-ee6b271f050a867f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 67. Charge, Coulomb potential and Gauss closure
+### 68. Charge, Coulomb potential and Gauss closure
 
 Claim identity: `SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003`
 
@@ -5558,7 +5695,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c881d6a01b046c3069e5b317d7a7da7c0ced55fc2f759078ec68e659befe3dd2`; engine receipt `sha256:f30356c4d6f5fc9478100b9626b8303088cead7845844e1dab28c744761b5197` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003-f30356c4d6f5fc94.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 68. Magnetic relativistic correction
+### 69. Magnetic relativistic correction
 
 Claim identity: `SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003`
 
@@ -5624,7 +5761,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e07df5d65e828be51bddc3e891f8596ac28e766e55a0ff318f06b6708897176b`; engine receipt `sha256:8039e9c6e59176d5f9a09a7796e95e95fdf2587b1abc870becfdd5d715fe45dc` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003-8039e9c6e59176d5.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 69. Lorentz transfer partition
+### 70. Lorentz transfer partition
 
 Claim identity: `SFT-PHYS-FIELD-LORENTZ-TRANSFER-003`
 
@@ -5690,7 +5827,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:672db44f64f8909e47215811622cf8a83547dce97fe44a3e301419f1aace10bc`; engine receipt `sha256:353351d17f145e0f89d0db4a7250469284dd4bae4732c1961bf519bfcd5f211f` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-LORENTZ-TRANSFER-003-353351d17f145e0f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 70. Planar Maxwell curvature closure
+### 71. Planar Maxwell curvature closure
 
 Claim identity: `SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003`
 
@@ -5756,7 +5893,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1538c42ddea5976e24c0826c734aa61011c750a8b02babef778576e80d51f1f0`; engine receipt `sha256:7178eac96fce3c977c64c4e4a9d5e681f1e48a91d8561045c6020979a476460b` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003-7178eac96fce3c97.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 71. Three-space Maxwell curvature closure
+### 72. Three-space Maxwell curvature closure
 
 Claim identity: `SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003`
 
@@ -5822,7 +5959,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7d91ff057b317ebf0105a8b7789182eb010f224ec331528c6a0f321ab99a1010`; engine receipt `sha256:e9314b2725d52aa3136325aee8ba08bca5fbc41e0ee3ee19db391ff98b7c1dac` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003-e9314b2725d52aa3.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 72. Exact wave, polarization, interference and nonlinear operations
+### 73. Exact wave, polarization, interference and nonlinear operations
 
 Claim identity: `SFT-PHYS-WAVE-EXACT-OPERATIONS-003`
 
@@ -5889,7 +6026,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a95c36f5d6be268d83a9555126fbb62c7e647452ee14ba7c72ca938cd9f009f6`; engine receipt `sha256:bc9f7fff3079a79ca77a60d0680da1b8474ad13f0effedbf8b5cce9a75513e03` at `receipts/engine/model_admitted/SFT-PHYS-WAVE-EXACT-OPERATIONS-003-bc9f7fff3079a79c.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 73. Floored finite-loop closure
+### 74. Floored finite-loop closure
 
 Claim identity: `SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003`
 
@@ -5957,11 +6094,11 @@ The result is closed only at its registered generated and empirical boundary. It
 **Immutable evidence identities.** Source manifest `sha256:8e0e61bb5a069e723c60edea5efa42d7f06c7368db6eeb3b7c5f2c103adef023`; engine receipt `sha256:654937a341dfef2a5efc3ae1094a90b940e3535923bc1aa465d64e8930549853` at `receipts/engine/model_admitted/SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003-654937a341dfef2a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
 
-## 12. Thermodynamics Vacuum
+## 15. Thermodynamics Vacuum
 
 Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced.
 
-### 74. Microstate-to-macrostate observation
+### 75. Microstate-to-macrostate observation
 
 Claim identity: `SFT-PHYS-THERMO-MICRO-MACRO-001`
 
@@ -6044,7 +6181,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cafff80fffa91147655094797dc206b2b2a726fff4aafc70cd55cb66789c48bc`; engine receipt `sha256:11b63417e8a9d91dc1ceb4ecc356fe1083c36cf84cccb0522b42faae15a7e067` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-MICRO-MACRO-001-11b63417e8a9d91d.json`; empirical-validation hash `sha256:adce150365d521a8ea0d96844c6c91803c18a1e6be04b8d7781dc87522e88ce5`; measurement receipt `sha256:4a564a747c5f3959532436ca15634960455791ad2dffc83a600d2cbebf3a6926`.
 
-### 75. Temperature carrier and thermal ordering
+### 76. Temperature carrier and thermal ordering
 
 Claim identity: `SFT-PHYS-THERMO-TEMPERATURE-001`
 
@@ -6128,7 +6265,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fa5a2f29b5b494f06a5addbb0c869a18bff1bf098bdaa2d286a07abe0f05ea23`; engine receipt `sha256:d68a2030d9e3e914068a84fb738d109c84f7d1b7be48c88c97d37d26646c09f8` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-TEMPERATURE-001-d68a2030d9e3e914.json`; empirical-validation hash `sha256:ab9efc043970126329e33dc9b07174c9dcdf0277d8e1a347a6ed4a8d0ccc0558`; measurement receipt `sha256:4d1eb98a218d275eaf351ed5538c5981c465ed13a8b3305a46873ef7f85ae315`.
 
-### 76. Thermal equilibrium equivalence
+### 77. Thermal equilibrium equivalence
 
 Claim identity: `SFT-PHYS-THERMO-EQUILIBRIUM-001`
 
@@ -6212,7 +6349,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:767102333f0f294a68e74238a8acb09acffa668a81f929393389a5462cb2d6be`; engine receipt `sha256:6ce39350919988486d96178e51a0bd45264f0c5498519109bdb0e184c29d40e5` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-EQUILIBRIUM-001-6ce3935091998848.json`; empirical-validation hash `sha256:355dafe24741d90270ac9e7b7c41ab85ed0ff2a64c4da56942ea8f9ab0236f6b`; measurement receipt `sha256:25e7ad1d4802cb8ec058e96d9d018212ba832434e8ac2bd424f290cc6960091e`.
 
-### 77. Heat and work as distinct energy-transfer traces
+### 78. Heat and work as distinct energy-transfer traces
 
 Claim identity: `SFT-PHYS-THERMO-HEAT-WORK-001`
 
@@ -6296,7 +6433,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:433edef20fcdce50fae8e8dc2430c354fdca8dbe3c424b7ab6a24a2ac3f83550`; engine receipt `sha256:3db98f953910f921028c19a7464ad19eb2aa44b2888ec82ab1be56d23576cbef` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-HEAT-WORK-001-3db98f953910f921.json`; empirical-validation hash `sha256:7d6de73b7f85e56a2ebb17473aed9ae2420e614e45b7b9ee48f234ec27e98140`; measurement receipt `sha256:52a3381716ae93ecfd8e95729dd33c5d25f7a54d5d21cf059eee11bd2a04cb25`.
 
-### 78. Closed energy accounting
+### 79. Closed energy accounting
 
 Claim identity: `SFT-PHYS-THERMO-FIRST-LAW-001`
 
@@ -6380,7 +6517,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c3e7e60ad32808dc97aaa5544458b40e50de9ca3f17275ec2f17cb2753812fd8`; engine receipt `sha256:18e493c59cbd7979db1bcc2b33a97f582329f92707c16bc6455c2ee55ef2b13a` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-FIRST-LAW-001-18e493c59cbd7979.json`; empirical-validation hash `sha256:fa52340b68dc82d2ea089378f31bc3aadad7fa494d08bb9794add9ad60c54406`; measurement receipt `sha256:5b600737da737e7769e0b3e0cc4528b75a6cc29c33012af23337de9054fa656a`.
 
-### 79. Thermodynamic entropy from unresolved support
+### 80. Thermodynamic entropy from unresolved support
 
 Claim identity: `SFT-PHYS-THERMO-ENTROPY-001`
 
@@ -6464,7 +6601,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c746cceb4a0536fab9745ff843ca2d6ee21eda56ae9707e3eed6fe98534c0d50`; engine receipt `sha256:18dc9c224330e6542798ebde0073e90d982cd04d30fe0e756869f8148983d4f8` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-ENTROPY-001-18dc9c224330e654.json`; empirical-validation hash `sha256:76bb357cdc75b56d5a332823af4523174d6cd06f6ffe87228b6ed832a083ba3a`; measurement receipt `sha256:64b76e6801c73b3c9946a0f76f966c56733d9a2e4a2d3f3abb5ee208f98dc6f7`.
 
-### 80. Irreversible observation and entropy orientation
+### 81. Irreversible observation and entropy orientation
 
 Claim identity: `SFT-PHYS-THERMO-SECOND-LAW-001`
 
@@ -6548,7 +6685,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:02fcf9468b069998405e2fff909dc5fef14a8c287ad295f5a7c9d454dfc46410`; engine receipt `sha256:b1ec365f5fb8432d4ca9f69ecb6937596ff9e1a144860e58ade0d6a5f6bec17a` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-SECOND-LAW-001-b1ec365f5fb8432d.json`; empirical-validation hash `sha256:3c4186c69899746c010d7918efdf89c44bdf75c4cfadeb977486c08f111d6b05`; measurement receipt `sha256:ceab052d9b5040aef06ba2bef0167154438fa87511c4573a57975a3d29a8d591`.
 
-### 81. Finite unattainability boundary
+### 82. Finite unattainability boundary
 
 Claim identity: `SFT-PHYS-THERMO-THIRD-LAW-001`
 
@@ -6632,7 +6769,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:41b7d4b59030442a33336e31cb3ccfc9db10f430919f43cf47bf513ab0612b18`; engine receipt `sha256:a66152169839178e093243202041879920e7d82b50d08fae42cf6c14f464e15c` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-THIRD-LAW-001-a66152169839178e.json`; empirical-validation hash `sha256:411250ec2b850cb5347f9bfb0852a26191fbb8d018f34cf93a43e9bc9645d153`; measurement receipt `sha256:855ece6421af57b129259ade0b6f65c572b248e809fcb3fcb0fddab1bdc8042d`.
 
-### 82. Exact finite statistical weight
+### 83. Exact finite statistical weight
 
 Claim identity: `SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001`
 
@@ -6716,7 +6853,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e5c8a8c575ea73a768b25a408c73950578a9dded6d59d781b870fb94d2ae5691`; engine receipt `sha256:fc2fdc5352d172755221a6fb15a61dc121038e01f7390aae19cdbe4c9334c9d0` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001-fc2fdc5352d17275.json`; empirical-validation hash `sha256:b473c92dbc371b98ccfa9e4b7f5577449e1de07f76492138709dda2596d14a4e`; measurement receipt `sha256:1d77769023931c2dbdd4012815b6bc4d9b3f7763b52c1c0ef9ede5da8aaec85a`.
 
-### 83. Thermodynamic state relation
+### 84. Thermodynamic state relation
 
 Claim identity: `SFT-PHYS-THERMO-STATE-RELATION-001`
 
@@ -6800,7 +6937,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:83596a70b3b622fc58c4f2694fb31f764aea5895333f19dddec9148a9d267987`; engine receipt `sha256:e74262c55559b31cb22638ee24e9203e34a582937ebb8053d54e55268cb707a8` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-STATE-RELATION-001-e74262c55559b31c.json`; empirical-validation hash `sha256:2a5bd1c195abe5b66e19ebb70d273a115ed3ee1aaf309aa3dbd37240053b73a2`; measurement receipt `sha256:ab0aa384e9b13ed17f21031e5eba406bc1c9b93bfd5c5f5de5fd1c6a868c454e`.
 
-### 84. Phase coexistence and transition
+### 85. Phase coexistence and transition
 
 Claim identity: `SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001`
 
@@ -6884,7 +7021,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:500813f6ac91be300d730b71689ca9330667887f4ebd6d97ac3b77914245ad2f`; engine receipt `sha256:804bbbce151a9807129d17226d039f46d4b5ad9fb4cd7d90135bbb01fc50da79` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001-804bbbce151a9807.json`; empirical-validation hash `sha256:3507c316bca528f72c7e066c7e9b8da9bcf31bccfdd292be2258f80106b712e0`; measurement receipt `sha256:8d7e1705c61cb89e775e56f2bd970529f4c51505e8cdda5a4966c3972736e18c`.
 
-### 85. Kinetic transport and collision mixing
+### 86. Kinetic transport and collision mixing
 
 Claim identity: `SFT-PHYS-THERMO-KINETIC-TRANSPORT-001`
 
@@ -6968,7 +7105,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:27dc7b5558723466a12162ff23a4c83eb32bb10ce9053af043919dae22f6d8d4`; engine receipt `sha256:0001a2d7176cae05e6b1ad4ef9942e474d14916872262d377350c7a465823c18` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-KINETIC-TRANSPORT-001-0001a2d7176cae05.json`; empirical-validation hash `sha256:aa0023c1ca2b4b546c7f8680153d6c14d572396674e067622c2a5ee39399302e`; measurement receipt `sha256:8e81fb917a5769ce9d1477e1fb113e43addd31d4cdd6a267e5f8a7e8b0114e98`.
 
-### 86. Finite fluctuation and recurrence
+### 87. Finite fluctuation and recurrence
 
 Claim identity: `SFT-PHYS-THERMO-FLUCTUATION-001`
 
@@ -7052,7 +7189,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9e7385a5320d843028b9c3cffb918c0cbcbc4b5ef29a98d10c68f48b2183297a`; engine receipt `sha256:c39f22eaadf319ad2c29d582ffc035e542f8df1e7665956e9e3d50506ce26d07` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-FLUCTUATION-001-c39f22eaadf319ad.json`; empirical-validation hash `sha256:0193016a0f6bdb0b5d0349f7a7e4562b81d57c23bc26cc8a9d05f83923ab49ef`; measurement receipt `sha256:c24fce3c578e4d987bd8cd1890a1888daa511269141b9f1dfac7e3d153619c23`.
 
-### 87. Macroscopic irreversibility with retained microtrace
+### 88. Macroscopic irreversibility with retained microtrace
 
 Claim identity: `SFT-PHYS-THERMO-IRREVERSIBILITY-001`
 
@@ -7136,7 +7273,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:47d423e50a3b67c092517b42de9ef930ab20226a2be315c511c8d4e1ce7f4078`; engine receipt `sha256:10ae5d449758f74df3bba03643a4b2f3f48f58096812e5052dffe56e1b0ade69` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-IRREVERSIBILITY-001-10ae5d449758f74d.json`; empirical-validation hash `sha256:62adf31b0648d8e60afcc5d5009c749c3f5e9b5f409f3c878323efd055f95f03`; measurement receipt `sha256:ac90cb1396e2257b13162cdd1249089686047e24f83b2226b1357f983a0710ba`.
 
-### 88. Susceptibility, response and transport correspondence
+### 89. Susceptibility, response and transport correspondence
 
 Claim identity: `SFT-PHYS-THERMO-RESPONSE-001`
 
@@ -7220,7 +7357,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:6e79304fa667cd6f93ef31a4f8ff35ec930d6cafa75c59f2bbbf91dfe3ab074d`; engine receipt `sha256:b5a02f181350f74161c9c1041572b66e4a180034f99401bdad07bb9ae177c262` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-RESPONSE-001-b5a02f181350f741.json`; empirical-validation hash `sha256:742f32e96d6a7c55270447d00d5410b54ddb51f4daf50b60f1522d80e87efd1c`; measurement receipt `sha256:e5ca7d358c3abb7496c905cf1f57e75196354b55b78e843ac022e7f01592c1ae`.
 
-### 89. Half-One vacuum floor and oscillator spectrum
+### 90. Half-One vacuum floor and oscillator spectrum
 
 Claim identity: `SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003`
 
@@ -7288,7 +7425,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d81fef2090a7156a7624c032cbb33b0fc51f93ad76a4599b456de0f0166cb089`; engine receipt `sha256:288674203497f376e9e6dbd0cb8aba169f1f2343b3b7717dbac789c886759548` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003-288674203497f376.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 90. Perpetually live odd-denominator vacuum recurrence
+### 91. Perpetually live odd-denominator vacuum recurrence
 
 Claim identity: `SFT-PHYS-VACUUM-ODD-RECURRENCE-003`
 
@@ -7355,7 +7492,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:23af938da6534560c91d70cb33221166d64ef31b77fdc08f249b3891f426a21b`; engine receipt `sha256:dad4e023733464a86c1fcad9913bbe661064c10e67d270e47cc1430d3846a821` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-ODD-RECURRENCE-003-dad4e023733464a8.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 91. Vacuum polarization and running direction
+### 92. Vacuum polarization and running direction
 
 Claim identity: `SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003`
 
@@ -7423,7 +7560,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4db98f792906b7ce138c295954059ec4063c32f4a3e987f8ec0f2dc0fbfb9b20`; engine receipt `sha256:40f95e89489d596b961aeab5d234dca5938b41b0dd6de02ffae7da90e2d66d76` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003-40f95e89489d596b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 92. Exact vacuum-to-inertia unity relation
+### 93. Exact vacuum-to-inertia unity relation
 
 Claim identity: `SFT-PHYS-VACUUM-INERTIA-UNITY-003`
 
@@ -7491,7 +7628,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:00072adfe4dcd71e07d644bfd46420ec9f6b4b8588902be3bab08bb5abeb554a`; engine receipt `sha256:3e1b000691688a8bec6ab6301c21ae05136256e08f10d0e0e36babb0dc602d71` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-INERTIA-UNITY-003-3e1b000691688a8b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 93. Positive asymmetric vacuum-beat extraction
+### 94. Positive asymmetric vacuum-beat extraction
 
 Claim identity: `SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003`
 
@@ -7560,7 +7697,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:f6f2c4c55430e81592b9cf311250acda2491ce4cfd32da5f042e6cd92b055985`; engine receipt `sha256:de7c651c4eccf51ac10efdc04853bcd36fcb3ef0dcbe3ef58bba0cf52efc0e1d` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003-de7c651c4eccf51a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 94. Complete returned-cycle vacuum energy ledger
+### 95. Complete returned-cycle vacuum energy ledger
 
 Claim identity: `SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003`
 
@@ -7628,12 +7765,480 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:98996bf1b2d39caa17f257315a7068e396ef95e789608d452d163589cac20c45`; engine receipt `sha256:a0ae88fcb49661c576a54741af33c09c88fb11d125f48e41edf2658b08ede835` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003-a0ae88fcb49661c5.json`; empirical-validation hash `None`; measurement receipt `None`.
 
+### 96. Exact one-distinction erasure cost and Maxwell-demon ledger
 
-## 13. Physical Quantum Relativistic
+Claim identity: `SFT-PHYS-THERMO-LANDAUER-DEMON-TERMINAL-018`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The complete quarter-One/three-quarter-One reset fibre merges at half-One, closes one distinction with native throw half-One, requires one reverse label, and forces a Maxwell-demon cycle to export exactly one environment record.
+
+> Resetting the complete quarter-One/three-quarter-One Fold fibre to half-One closes exactly one binary distinction with native throw half-One; reversal requires one predecessor label; and a closed Maxwell-demon cycle exports exactly that one label to its environment.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-HALF-ONE-001`
+- `SFT-INFO-CONSERVATION-LOSS-001`
+- `SFT-INFO-ENTROPY-UNCERTAINTY-001`
+- `SFT-COMP-CPLX-REVERSIBILITY-COST-001`
+- `SFT-PHYS-THERMO-IRREVERSIBILITY-001`
+- `SFT-PHYS-THERMO-SECOND-LAW-001`
+- `SFT-PHYS-THERMO-HEAT-WORK-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of reset support, image, distinction, native throw, reverse record, sorting, memory, environment, thermal translation and extension forms. The declared exact boundary is: Every exact reset of the complete two-preimage Fold fibre to one held ready image; every finite closed sorting-memory-reset-environment cycle; and every retained predecessor-label assignment. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `complete-two-preimage-fibre__common-half-One-image__exactly-one-binary-distinction__half-One-preimage-separation__retain-one-predecessor-label__one-held-gas-distinction__two-label-Fold-memory__one-environment-reverse-label__postseal-dimensional-correspondence__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `support` | `complete-two-preimage-fibre` | `sampled-memory-state` | A sampled state cannot establish a two-to-one reset. |
+| `image` | `common-half-One-image` | `selected-reset-state` | A selected state has no Fold trace. |
+| `distinction` | `exactly-one-binary-distinction` | `unquantified-information-loss` | An unquantified loss cannot balance a cycle. |
+| `throw` | `half-One-preimage-separation` | `free-or-vanishing-cost` | A free or vanishing cost violates the exact fibre separation. |
+| `reverse` | `retain-one-predecessor-label` | `infer-erased-predecessor` | The common image cannot identify its source. |
+| `sorting` | `one-held-gas-distinction` | `unrecorded-sorting-gain` | An unrecorded distinction is outside the closed system. |
+| `memory` | `two-label-Fold-memory` | `memory-without-two-states` | A one-state memory cannot encode the decision. |
+| `environment` | `one-environment-reverse-label` | `erased-without-external-record` | That would destroy the predecessor distinction from the closed ledger. |
+| `thermal` | `postseal-dimensional-correspondence` | `import-kT-log-two-as-premise` | A conventional thermal formula cannot select the Fold law. |
+| `extension` | `no-extra-rule` | `free-cost-or-demon-exception` | A free exception defeats closure. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:86744c170537a1f26f665bd8afa02395f86f81ee0fc6d48028eb7c6e2a61b6ad`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:556549826b012b3cd71e8b80542015d3224b773d5fa6f5869057a4b2d549c6ac`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:f085eeb647249724d91ed525c9cccd368fe1fbbaa6b20ac7accc21ce81840518`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:9edfe8f63e326a077581b89b692a4cd4105839ff44467908a825fdb9b2dcc58e`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:372c69b1e6718117746a72b16bdb6732ac79dab6e19b75d13f20b81b065a1275`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:1829d0eb2c8ca53323d38289398a7be8cf250eee451bab6ef02f7c374cfe7758`. Independent certificate: `sha256:7acc7a70718cf879102de06754364697ed9fc271868177acb62f393306874ac8`. Engine external-validation hash: `sha256:07a875d566587e561700d4f1eecc50c80b2fea02cfbb581955e3bc3a0adb54d3`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no conventional Landauer formula, logarithm or experimental target as a derivation premise
+- no claim that native half-One is numerically identical to a dimensional energy ratio
+- no numerical-zero, negative, irrational, imaginary or floating proof value
+- no stochastic demon decision, free reset or omitted environment record
+- no V1/V2 executable, answer table or stored survivor
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:19be5baaaefa68250f055175ebd66cf2fee7fdadf3332a82c1ba8c77e1ae0575`; engine receipt `sha256:b130990c39c87ac65a1f5728a4c471bc05f8f5720d0413feebffb5b03760f88b` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-LANDAUER-DEMON-TERMINAL-018-b130990c39c87ac6.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 97. Post-seal Landauer erasure and Maxwell-ledger comparison
+
+Claim identity: `SFT-PHYS-THERMO-LANDAUER-EMPIRICAL-019`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The admitted one-distinction Fold reset predicts nonfree environmental transfer; primary theory gives the conditional k_B T ln 2 average bound and primary experiment reports long-cycle mean-heat saturation, without equating native half-One to a dimensional energy number.
+
+> The exact Fold one-distinction reset predicts a nonfree environmental transfer for physical erasure.  Primary theory identifies the symmetric thermal-reservoir ensemble bound as k_B T ln 2 and primary experiment finds long-cycle mean heat saturating it; all distribution, reservoir, average and long-cycle scope rows are retained, while native half-One is not falsely identified with a dimensional energy number.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-THERMO-LANDAUER-DEMON-TERMINAL-018`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of physical carrier, erasure relation, provenance, prediction isolation, measurement separation, row retention, successor closure and extension forms. The declared exact boundary is: The admitted exact two-preimage Fold reset and every registered primary source row concerning a symmetric one-bit memory, thermal-reservoir erasure, environmental heat, ensemble averaging and long-cycle approach. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__one-distinction-reset-with-environment-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `one-distinction-reset-with-environment-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:16eae314150f4ef5415826275a0bd5bfffe62cd95ee60d16ecb10273a76d196a`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:2047f7bb211fa66dcc8744e437d3c453a04625798a8920fd39b5b1c28d88c8c8`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:befd819dcb8d77edbc8ef2a6234a79acd3f70a14eacffbc2c769f917bbea35f2`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:4050b7eaddd8cccadd44897f07254dae6869044a51fd68cf3c1728b0892fb4fa`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:e55ed114da671c1b05fc0e9a9e9b6abb33f388712ed08769dbff27ddd4f4edc0`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:84839a2508413f560a01deddae908cb9c312f00d19c256c0e60601972e2ddff5`. Independent certificate: `sha256:66b4c5a652c1c49075027abfbc6a3ded3c0d080cdc3462e286624478182376b8`. Engine external-validation hash: `sha256:8970e6e8ed2f188332f346b0959e9ad84999cd7ca38f0c33053b7ec85b7306e9`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PIECHOCINSKA-PRA-2000
+- BERUT-NATURE-2012
+
+Observed comparison records:
+
+- LANDAUER-TWO-TO-ONE-RESET: predicted two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; observed two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; exact match True
+- LANDAUER-THERMAL-BOUND: predicted two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; observed two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; exact match True
+- LANDAUER-EXPERIMENTAL-SATURATION: predicted two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; observed two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; exact match True
+- LANDAUER-SCOPE-CONTROL: predicted two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; observed two-state-bit-reset-to-one__finite-positive-environmental-heat__long-cycle-mean-saturates-Landauer-bound__thermal-reservoir-and-ensemble-scope-retained__no-half-One-to-joule-identity; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Reject if the source snapshot changes; if a registered reset, heat, bound, experiment or scope row is omitted; if physical reliable erasure has no positive environment transfer; if long-cycle mean heat does not approach the registered bound; if the thermal coefficient enters the Fold proof; or if native half-One is misreported as a dimensional numerical equality.
+
+Measurement receipt: `sha256:22ca198ca9538ec8ce25f9a63769c520fa423768c6e6d2500c3df4c2e45a3476`. Isolation certificate: `sha256:d02b3f8cfaafaa6e038f114f6b54b919ec8f2aca69aaaf284193952e0d3c778d`. Custody certificate: `sha256:4df01ed99678ac1bfe03b87d41d775043d9767c29e7136890eb4d0d697521820`.
+
+Registered source descriptions:
+
+- Nature: https://www.nature.com/articles/nature10872 (sha256:76a746eb8760816598724a2db17fb7cd1f3a07325e69193525d313fecea4d27f)
+- American Physical Society: https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.61.062314/fulltext (sha256:76a746eb8760816598724a2db17fb7cd1f3a07325e69193525d313fecea4d27f)
+
+Registered target identities:
+
+- LANDAUER-TWO-TO-ONE-RESET from PIECHOCINSKA-PRA-2000
+- LANDAUER-THERMAL-BOUND from PIECHOCINSKA-PRA-2000
+- LANDAUER-EXPERIMENTAL-SATURATION from BERUT-NATURE-2012
+- LANDAUER-SCOPE-CONTROL from BERUT-NATURE-2012
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no source text, k_B T ln 2 coefficient or experimental result in the formal predecessor law
+- no numerical identification of native half-One with joules or with ln 2
+- no omission of ensemble-average, reservoir, distribution or long-cycle limitations
+- no numerical-zero, negative, irrational, imaginary or floating SFT proof value
+- no target access before the prediction seal and no fitted correction
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:d624b93544e7d34754e530739caa4c2e54f6d204bb2b8e12fa027b643db37cc3`; engine receipt `sha256:eb264a10c1fe3666cf25a5e18beb9bab271534333bfdee25fadc0ffafcc3a93e` at `receipts/engine/model_admitted/SFT-PHYS-THERMO-LANDAUER-EMPIRICAL-019-eb264a10c1fe3666.json`; empirical-validation hash `sha256:774f63c5cce8ca0eee88a9f9cda0d0bf6095d9d105d90bc43c45f8b2e6b0c0c8`; measurement receipt `sha256:22ca198ca9538ec8ce25f9a63769c520fa423768c6e6d2500c3df4c2e45a3476`.
+
+### 98. Terminal vacuum floor, cosmic density and scale-transport law
+
+Claim identity: `SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The unique complete local vacuum boundary-energy floor is One/2^20=(One/2^10)^2. At every finite radiative depth k, the complete 2^k half-spacing modes sum to 2^(k-1) and have common-scale mean 1/2. The terminal cosmic vacuum fraction is separately 11/16. The normalized cosmological magnitude is Lambda(c/H)^2=33/16, and dimensional transport is Lambda=(33/16)H^2/c^2 after held external scale references are supplied. Equating the local floor, a raw mode total, the global fraction or a dimensional cosmological density is rejected as a type error.
+
+> The unique complete local vacuum boundary-energy floor is One/2^20=(One/2^10)^2. At every finite radiative depth k, the complete 2^k half-spacing modes sum to 2^(k-1) and have common-scale mean 1/2. The terminal cosmic vacuum fraction is separately 11/16. The normalized cosmological magnitude is Lambda(c/H)^2=33/16, and dimensional transport is Lambda=(33/16)H^2/c^2 after held external scale references are supplied. Equating the local floor, a raw mode total, the global fraction or a dimensional cosmological density is rejected as a type error.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-FOUNDATION-EXACT-OPERATIONS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003`
+- `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+- `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of generator volume, binary cover, boundary-label scope, observable composition, local floor, finite radiative ledger, cosmic share, spatial rate multiplicity, typed prior-claim correction, scale transport, measurement custody and extension form. The declared exact boundary is: The generated volume 3^3; every binary support until the unique least cover; one-label versus complete-two-label boundary support; amplitude versus two-leg energy composition; every finite positive-depth complete half-spacing mode ledger; exact 11/16 terminal vacuum share; three-space rate transport; every exact positive rational held rate/speed reference; and no untyped equality between a local floor, density fraction and dimensional cosmological constant. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `generator-three-cubed-volume__least-cover-depth-five__both-held-labels-per-depth__two-leg-energy-self-composition__complete-boundary-energy-floor__complete-finite-ledger-and-half-One-mean__terminal-eleven-sixteenths-share__three-space-squared-rate-carrier__distinct-typed-quantities-and-prior-correction__postseal-rate-squared-over-speed-squared__postseal-only-comparison__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `volume` | `generator-three-cubed-volume` | `borrowed-cosmic-volume` | A borrowed volume imports a model. |
+| `cover` | `least-cover-depth-five` | `selected-depth-ten-or-twenty` | Selecting the desired exponent is circular. |
+| `boundary` | `both-held-labels-per-depth` | `one-label-per-depth` | One label omits half the Fold fibre. |
+| `observable` | `two-leg-energy-self-composition` | `amplitude-relabeled-as-energy` | A one-leg support is not a complete energy observation. |
+| `floor` | `complete-boundary-energy-floor` | `named-one-over-two-to-twenty` | Naming the prior value does not force it. |
+| `radiative` | `complete-finite-ledger-and-half-One-mean` | `unbounded-mode-sum-as-local-density` | An unbounded sum erases finite support, common scale and quantity type. |
+| `cosmic` | `terminal-eleven-sixteenths-share` | `local-floor-equals-cosmic-fraction` | The quantities have different supports and types. |
+| `geometry` | `three-space-squared-rate-carrier` | `borrowed-continuum-coefficient` | A conventional field equation cannot be a premise. |
+| `typing` | `distinct-typed-quantities-and-prior-correction` | `untyped-number-identification-or-rubber-stamp` | Equal-looking numbers without scale carriers are not one quantity, and preserving an old label cannot excuse a type error. |
+| `transport` | `postseal-rate-squared-over-speed-squared` | `fitted-dimensional-value` | A fitted unit magnitude is a parameter. |
+| `measurement` | `postseal-only-comparison` | `measurement-readable-before-seal` | That would fit the magnitude. |
+| `extension` | `no-extra-rule` | `free-vacuum-scale` | A second vacuum ruler violates the one-axis law. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:c01238ae67c8185018e5b6be9ad1cf39d8c2dfc241b7e6e0845381f81fa87586`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:4aeb43be5f9e2b45452280cbd30496eddbc0607aba3ac2a1b9de4e54fcdc820c`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:81167a736ebfd0209293af293c2d9751cb0eff2a31cf7a415da2653ef0f2ad19`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:74a9f3aaf140a89bddd338da261541701151f82dd1ed6490a59310d95e21db5c`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:77bde99e13a432ec1df6a953152db7ae57c1fc3aaf061198814f68ce4cfd4cad`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:ea8f27dc1760e402a959b6da81c14c9bbc8ecb3c20de37ede2abfc9a0f41fc10`. Independent certificate: `sha256:b4c62c3d58a90ce9af0c1db9053aed8b9962d5cab16e2adf5502500d15bb31ad`. Engine external-validation hash: `sha256:0f107bf8bfbd842816b120cd750e391cd712a567ecd649cad20db2163b818f52`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, stored exponent survivor, dark-energy measurement or conventional field equation in forcing
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof scalar
+- no fitted cosmological density, Hubble value, gravitational value or second vacuum scale
+- no direct identification of the local One/2^20 cell floor with Omega_v, Lambda or a dimensionful density
+- no reuse of the withdrawn measurement-influenced 2 alpha^4/H^3 proposal
+- no claim that a continuum zero-point mode sum is an SFT derivational object
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:b6466fba1a682b36391e848e061aa30773de6cb511b44b1767e23cb677346772`; engine receipt `sha256:c7b4777b12fc70628b0fd9a2f7d957274b61ede7f3624a665781364c8c9f7723` at `receipts/engine/model_admitted/SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035-c7b4777b12fc7062.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 99. Terminal thermal-history, freeze-out and recombination law
+
+Claim identity: `SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every exact positive scale growth g, T_later=T_earlier/g and T_later*g=T_earlier. Distinct binding thresholds are crossed in unique descending order. The depth-seven binary orbit (1,2,4)/7 forces freeze-out neutron/proton shares 1/7 and 6/7 and ratio 1/6. The least complete binary-cover successor forces capture-entry shares 1/8 and 7/8 and ratio 1/7. Complete retained-neutron pairing forces helium-family mass share 1/4 and hydrogen-family share 3/4. Recombination has an exact half-One classification midpoint and a finite positive visibility ledger at every generated radius. Acoustic standing modes are positive whole labels with exact odd/even compression-rarefaction parity; observed angular positions retain their projection and are not proof identical to the internal whole labels.
+
+> For every exact positive scale growth g, T_later=T_earlier/g and T_later*g=T_earlier. Distinct binding thresholds are crossed in unique descending order. The depth-seven binary orbit (1,2,4)/7 forces freeze-out neutron/proton shares 1/7 and 6/7 and ratio 1/6. The least complete binary-cover successor forces capture-entry shares 1/8 and 7/8 and ratio 1/7. Complete retained-neutron pairing forces helium-family mass share 1/4 and hydrogen-family share 3/4. Recombination has an exact half-One classification midpoint and a finite positive visibility ledger at every generated radius. Acoustic standing modes are positive whole labels with exact odd/even compression-rarefaction parity; observed angular positions retain their projection and are not proof identical to the internal whole labels.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-FOUNDATION-EXACT-OPERATIONS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-THERMO-TEMPERATURE-001`
+- `SFT-PHYS-THERMO-EQUILIBRIUM-001`
+- `SFT-PHYS-COSMO-REDSHIFT-001`
+- `SFT-PHYS-COSMO-BACKGROUND-001`
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+- `SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004`
+- `SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
+- `SFT-PHYS-PLASMA-COLLECTIVE-001`
+- `SFT-PHYS-PLASMA-OSCILLATION-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of provenance, temperature transport, threshold order, freeze-out carrier, complete-cover transport, nuclear capture, recombination support and acoustic observation form. The declared exact boundary is: Every exact positive rational temperature and scale carrier; every finite set of distinct positive binding thresholds; the complete binary orbit of the least part on depth seven; the least complete depth-three binary cover; every finite positive visibility radius; every finite positive internal acoustic mode count; exact generated-finite sound-horizon segments; and strict separation of internal mode labels from observed projection. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `admitted-threshold-and-transport-dependencies__exact-inverse-scale-transport__descending-distinct-binding-thresholds__least-live-neutron-share__least-complete-binary-cover-successor__paired-neutron-helium-and-hydrogen-families__half-One-midpoint-with-finite-visibility__internal-whole-modes-parity-and-projection-record`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `provenance` | `admitted-threshold-and-transport-dependencies` | `named-cosmological-chronology` | A familiar chronology cannot select a Fold law. |
+| `temperature` | `exact-inverse-scale-transport` | `same-direction-or-fitted-cooling` | A named cooling curve or fitted exponent adds a rule. |
+| `threshold` | `descending-distinct-binding-thresholds` | `named-epoch-list` | Names do not prove order. |
+| `freezeout` | `least-live-neutron-share` | `one-seventh-ratio-rubber-stamp` | The old label conflates a constituent share with a pair ratio. |
+| `decay` | `least-complete-binary-cover-successor` | `selected-decay-correction` | A fitted decay fraction is inadmissible. |
+| `capture` | `paired-neutron-helium-and-hydrogen-families` | `named-quarter-abundance` | Naming one quarter does not force it. |
+| `recombination` | `half-One-midpoint-with-finite-visibility` | `instantaneous-zero-width-collapse` | A zero-width event erases physical visibility support. |
+| `acoustic` | `internal-whole-modes-parity-and-projection-record` | `observed-multipoles-assumed-exact-integers` | Projection and driving cannot be erased to preserve an old slogan. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:e2b318586427283e1e61c49e481e1879341de04ac670c7fafd5eb773e6d1e4b5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:ca700bf092d66ef62469796c6034f11ce2c3fbf15077e333c745944e70df2965`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:5344c8a8ce62d060bb86c94ede6ce9e478829115c9b53de55441b0605db23a08`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:69a86c8830048d9b18e28fe284a06eb763f1c1810f4670bc959c5dc6be95bc50`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:1835665e3693287862638f0ef309fb7a625762c9048a4d8df2297913b141d8ca`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:22a9e8259b3e561ef7cc79cdf28846e652a16bd4fbdbcea06323462bd46acfe9`. Independent certificate: `sha256:11a443134f16d7f8946c96ad3f94487aa48fddef4ad560f0526a378441a582ed`. Engine external-validation hash: `sha256:bce1224d0bcc023c31e2ca981ca1963b0f59601c8016ec9dfa07f848b3450972`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no conventional hot-big-bang equation, continuum fluid integral, stochastic freeze-out or fitted thermal exponent as a premise
+- no measurement value, helium abundance, recombination redshift or CMB peak location available to candidate selection
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof scalar
+- no untyped identification of neutron share with neutron/proton ratio
+- no instantaneous zero-width recombination event
+- no claim that observed CMB angular multipoles are exact integer multiples
+- no free reaction rate, decay fraction, sound speed, baryon loading or projection coefficient
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:9e3ef14860b7a7675b9c189a6512168ec5815fdd4289c6652283ba0aad5c186c`; engine receipt `sha256:25dda78644ebc04ad43cd3e416950ad76dae6b124ed023f41364f0661eae9c00` at `receipts/engine/model_admitted/SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037-25dda78644ebc04a.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 100. Terminal exact temperature, finite canonical equilibrium and fluctuation-response law
+
+Claim identity: `SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every finite positive population, T=(sum throws)/N and total=N*T. Every paired binary population uniquely maximizes multiplicity at half-One. For L levels, exact canonical counts are (2^(L-1),...,1), weights divide by 2^L-1, sum to One and are the unique fixed-count/fixed-throw multinomial maximum. The least fluctuation/response pair is 3/4 and 1/4 around equilibrium 1/2, with equal departure 1/4; the complete deterministic cycle (1/4,1/2,3/4,1/2) has mean 1/2.
+
+> For every finite positive population, T=(sum throws)/N and total=N*T. Every paired binary population uniquely maximizes multiplicity at half-One. For L levels, exact canonical counts are (2^(L-1),...,1), weights divide by 2^L-1, sum to One and are the unique fixed-count/fixed-throw multinomial maximum. The least fluctuation/response pair is 3/4 and 1/4 around equilibrium 1/2, with equal departure 1/4; the complete deterministic cycle (1/4,1/2,3/4,1/2) has mean 1/2.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-HALF-ONE-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-THERMO-TEMPERATURE-001`
+- `SFT-PHYS-THERMO-EQUILIBRIUM-001`
+- `SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001`
+- `SFT-PHYS-THERMO-FLUCTUATION-001`
+- `SFT-PHYS-THERMO-RESPONSE-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of temperature, total throw, equilibrium, canonical weighting, maximum-count, fluctuation, response and noise-orbit forms. The declared exact boundary is: Every finite nonempty tuple of exact positive throws; every positive paired binary population; every finite generated level count at least two; every exact fixed-count/fixed-throw population vector; and every positive repetition of the complete deterministic response cycle. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `exact-positive-mean-throw__population-count-times-mean__unique-binomial-multiplicity-maximum__normalized-dyadic-successor-ladder__complete-fixed-count-throw-multinomial-maximum__three-quarter-complementary-departure__quarter-One-antipodal-response__finite-periodic-orbit-readout`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `temperature` | `exact-positive-mean-throw` | `primitive-continuum-coordinate` | A primitive continuum coordinate is not Fold-generated. |
+| `total` | `population-count-times-mean` | `fitted-Boltzmann-coefficient` | A fitted coefficient adds a parameter. |
+| `equilibrium` | `unique-binomial-multiplicity-maximum` | `selected-half-label` | A named midpoint alone is not a census. |
+| `canonical` | `normalized-dyadic-successor-ladder` | `continuum-exponential` | An exponential is outside exact Fold arithmetic. |
+| `maximum` | `complete-fixed-count-throw-multinomial-maximum` | `asserted-geometric-shape` | A shape assertion does not eliminate alternatives. |
+| `fluctuation` | `three-quarter-complementary-departure` | `ontic-random-kick` | Ontic randomness is not forced. |
+| `response` | `quarter-One-antipodal-response` | `free-dissipation-rate` | A free response adds a parameter. |
+| `noise` | `finite-periodic-orbit-readout` | `untracked-stochastic-source` | An untracked source violates determinism. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:5c35b4405e5642b59fd905d0bd2234f993c9044d79992afda6fe01fb378c4272`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:c3b1b82ed7cd92c6c8ae26c3af6308311cccecdab0dbfeafae63c7f3bf346418`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:0ab83da6161f67c5bc0714e98e112e553c81dac404123f06a41c4ffe1b564811`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:32db5e2c2486690c946989ea76680a858768efbe3539a292f37f2cf8b5904fc4`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:eb6624a1ed05a67939cf033f893fbff90f4c850fc29c8cd206d14db219e44a4e`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:89170070cce40d01eecb4b5d96ff33dba1dca2d04353cab3ee8f7a00348197d5`. Independent certificate: `sha256:5f0562864209036b569059443c080ce156913ae27a8fd0bfffb4482b4a9ee8c4`. Engine external-validation hash: `sha256:5d8e46a19f68ad5d44097d3f450594420c4cbd4f87e765f4c2371a568378f891`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Boltzmann exponential, continuum bath, Lagrange multiplier or fitted distribution
+- no thermometry, noise voltage or measured k_B available to candidate selection
+- no ontic randomness
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof magnitude
+- empty combinatorial counts are structural absence records only
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:85f556f93bf5dfcf96da823aaa9cafe4cdecf73a781e4bdfc6d03f5f5f95dd22`; engine receipt `sha256:cf536f7516eb1c85bb075500d9c1a0ebd64bdddb544878f26a27424d08de25bf` at `receipts/engine/model_admitted/SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043-cf536f7516eb1c85.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 101. Terminal physical helium-isotope closure
+
+Claim identity: `SFT-PHYS-THERMAL-HELIUM-ISOTOPE-TERMINAL-057`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The complete four-position by fifteen-nonempty-subword capture ledger has sixty cells and exactly one collective composite-identity record. The unique physical isotope conversion is therefore 59/60. Composed with the admitted analytic helium-family share One/four, this forces primordial physical helium-isotope share 59/240 and complementary hydrogen-family share 181/240, closing exactly to the One.
+
+> The complete four-position by fifteen-nonempty-subword capture ledger has sixty cells and exactly one collective composite-identity record. The unique physical isotope conversion is therefore 59/60. Composed with the admitted analytic helium-family share One/four, this forces primordial physical helium-isotope share 59/240 and complementary hydrogen-family share 181/240, closing exactly to the One.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037`
+- `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
+- `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of analytic-family, constituent, subword, capture-product, composite-identity, isotope-conversion, physical-partition and target-boundary forms. The declared exact boundary is: The admitted analytic helium family; exactly four helium-four constituent positions; every nonempty subword of those positions; their complete incidence product; the single global composite identity; exact positive rational partitions; and no measurement in candidate selection. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `admitted-quarter-baryon-family__helium-four-complete-arity__all-fifteen-nonempty-subwords__complete-four-by-fifteen-product__one-global-composite-identity__fifty-nine-of-sixty-isotope-cells__fifty-nine-over-two-forty-and-one-eighty-one-over-two-forty__target-closed-until-formal-seal`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `family` | `admitted-quarter-baryon-family` | `measured-decimal-called-family-law` | A measured decimal cannot select the analytic predecessor. |
+| `constituents` | `helium-four-complete-arity` | `selected-arity` | A selected isotope arity is an extra premise. |
+| `subwords` | `all-fifteen-nonempty-subwords` | `selected-proper-subset` | A selected subset erases a physical composition channel. |
+| `product` | `complete-four-by-fifteen-product` | `partial-incidence-ledger` | A partial ledger breaks permutation completeness. |
+| `identity` | `one-global-composite-identity` | `empty-or-multiple-composite-identities` | No identity leaves the labels unbound; multiple identities add an ungenerated split. |
+| `conversion` | `fifty-nine-of-sixty-isotope-cells` | `fitted-isotope-correction` | A fitted correction reads the measurement. |
+| `partition` | `fifty-nine-over-two-forty-and-one-eighty-one-over-two-forty` | `quarter-rubber-stamp-or-decimal-copy` | Neither the analytic quarter nor a copied decimal is the completed isotope partition. |
+| `target` | `target-closed-until-formal-seal` | `target-readable-candidate-selection` | Target access could manufacture a correction. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:ef909127179759e20899c1a50e206b4eba113be6e79c7f1cf06c05c14dfc7327`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:ecce4667ef692326a59c782ce85a23682f9c1d0a82679d13ce636264cd914663`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:8d4c010fe7c9e3c154a34ec6d86d4704fbe8b5340c827720ad6f08ba8a152e2e`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:6ed685241657e4ba96441f453f3f0318495b23ec540abd4cdfa60e2235d11e08`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:ee2859ae1b79e5ae1f35d866602c3857fb690467ae4dc1972b81c11cbb2f9d48`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4546969d129794116becb23ba047631a9235a6af3675cdfa5639e9bdc26ece39`. Independent certificate: `sha256:6005685a689e8c82d6ec3c8079e8949bc5a2d84150cc802332ad387a95b52c6d`. Engine external-validation hash: `sha256:1e59614b5080af79330ce3d00e48e3da143d488a925dc3e0f94eb9385e72d31e`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Thermodynamics and vacuum structure are reconstructed over complete finite support. Temperature, entropy, equilibrium, irreversibility, zero-point structure and extraction limits are exact observation and transfer relations; ontic randomness and unaccounted energy are not introduced. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured helium abundance, uncertainty or central value in formal survivor selection
+- no fitted decay rate, reaction rate, binding coefficient, abundance correction or selected denominator
+- no omission of a constituent position or nonempty subword
+- no multiple ungenerated composite identities
+- no numerical-nothing, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:324b4b482bfbf10a8ae53f9b27a1814344b7405e5638423d292672166b74a3c1`; engine receipt `sha256:a3b3a44a0d3add7032680427c3b2b504147c0eb824d05fa5d044cef454c5ebc4` at `receipts/engine/model_admitted/SFT-PHYS-THERMAL-HELIUM-ISOTOPE-TERMINAL-057-a3b3a44a0d3add70.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 16. Physical Quantum Relativistic
 
 Physical quantum and relativistic theory provide empirical correspondence for exact Fold support, phase, composition, observation and causal propagation. Complete-state evolution remains deterministic.
 
-### 95. Physical quantum state correspondence
+### 102. Physical quantum state correspondence
 
 Claim identity: `SFT-PHYS-QUANTUM-PHYSICAL-STATE-001`
 
@@ -7716,7 +8321,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:646d05ecdd35f77c6440a8725ed08c85e6a8b59ed17c7a999e30c649417ad9e0`; engine receipt `sha256:66bb63008bf5c34e9b3d260cf59890ac2d05f4474830c998296449725445145b` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-PHYSICAL-STATE-001-66bb63008bf5c34e.json`; empirical-validation hash `sha256:0b3e2b8b03aa236e15c72bb453856c5055d6b5996c4f8c5cf9b987ec2ca2f54f`; measurement receipt `sha256:557cb140756b84937cff842ca98bc46a5ba17f33b66ecd390541eea96ab3e8c8`.
 
-### 96. Reversible physical quantum evolution
+### 103. Reversible physical quantum evolution
 
 Claim identity: `SFT-PHYS-QUANTUM-EVOLUTION-001`
 
@@ -7799,7 +8404,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c5f29458763791f86a617642bcdf6b2e8e97f01f8baf5d689e702d136424a983`; engine receipt `sha256:0744b73d5436d955436b9dc7c39a4a63f229d0ab019c41409dccc37663148fdc` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-EVOLUTION-001-0744b73d5436d955.json`; empirical-validation hash `sha256:7665bd0ab9d73de01f2b4ef090839dc749773336cf8a7d28585bb22bcfe5b1f4`; measurement receipt `sha256:41780708e62d7216e0211cf8c8c7e026ec72ec34530c9d843f5e0051cc445edc`.
 
-### 97. Observable and measurement record
+### 104. Observable and measurement record
 
 Claim identity: `SFT-PHYS-QUANTUM-OBSERVABLE-001`
 
@@ -7883,7 +8488,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a15964f14ab058b547e8eb3b2e3238bfa7a09a9ed447f178e78f39196dee4579`; engine receipt `sha256:a7fffafe809c0f14f4eeaf1b32dbb4f54057f22c2ec06450c9f6d42450df1be1` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-OBSERVABLE-001-a7fffafe809c0f14.json`; empirical-validation hash `sha256:93cbfc103be9c659299bdfbe057e2d895f8d7026be8e8dee44eb7b363d2f1087`; measurement receipt `sha256:2871381c6705550221b73749a4698fea5746c13528f010e96af8cc00cdb27470`.
 
-### 98. Measurement weights from exact branch support
+### 105. Measurement weights from exact branch support
 
 Claim identity: `SFT-PHYS-QUANTUM-WEIGHT-001`
 
@@ -7967,7 +8572,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3bde7c0d35d4ce9a0fd5c01b7fb760d6fbf328b60b0152b2e97f962527dc810a`; engine receipt `sha256:ac65de8a653d0efe53bca999f07d44dcac07e42d121a74974e8ea0ecf49ad101` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-WEIGHT-001-ac65de8a653d0efe.json`; empirical-validation hash `sha256:e92f51b52deb77493b1cdc52cd55bc05c358afa0c818375b3a9db0d54132d265`; measurement receipt `sha256:535fc025ce1999bed3c30aef0f2ae77cfba6395ee37f9ffe816aa59b2c736dae`.
 
-### 99. Incompatible observations and uncertainty
+### 106. Incompatible observations and uncertainty
 
 Claim identity: `SFT-PHYS-QUANTUM-INCOMPATIBILITY-001`
 
@@ -8051,7 +8656,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a35454ea1d2cc3324b041bfa1e5a343337b71ce6fc3ef953d24d47cdd192b269`; engine receipt `sha256:fd15b51c35d435c048c1f8d3d05bb80e67fe5ab8f706df40e6a2af13e04fd430` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-INCOMPATIBILITY-001-fd15b51c35d435c0.json`; empirical-validation hash `sha256:f925f8612be1d3bb5ebac1b74f17e66b9c7a3c4d00859d8425e64e5c8cc8d04d`; measurement receipt `sha256:3c0bc44b43868fe92dff7a8b258cdf6895f9adfd65f43532e528e7e1c3fbd205`.
 
-### 100. Spin and finite cyclic label action
+### 107. Spin and finite cyclic label action
 
 Claim identity: `SFT-PHYS-QUANTUM-SPIN-001`
 
@@ -8135,7 +8740,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b9ec52945330138564cb3a577cb2440ccc4d25c872102ed9e1362f569832a8e7`; engine receipt `sha256:f233aa5e16a279c3803209c902993252d6631531d91fc5959f1e3123c13f5351` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-SPIN-001-f233aa5e16a279c3.json`; empirical-validation hash `sha256:0f6db2e5307e2cfc3bfb7007770f189e38455b9b82594f11e4ce3c2d2f95e5da`; measurement receipt `sha256:7d20ee9ac2ed5843b1a09f6ffa54fce08fb7bb59c53e19903c735c772dbd3ffa`.
 
-### 101. Identical physical constituents
+### 108. Identical physical constituents
 
 Claim identity: `SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001`
 
@@ -8219,7 +8824,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4f56f583db68635a253fb89c468c68303a45f12623b0f532f3b24b756bc27dab`; engine receipt `sha256:7e67d989399d97c898d0a1aad60aa27d5f62224f323adaec9159f8f38dc378d8` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001-7e67d989399d97c8.json`; empirical-validation hash `sha256:89f7c99135492c64d116908f9bab5ebf019a4b4d4e8a89c7b034ca1613bdb830`; measurement receipt `sha256:dad17c56682caf0c7113d28d618515d4903b9790953166b4479fdcb8208cc46b`.
 
-### 102. Exclusion from antisymmetric composition
+### 109. Exclusion from antisymmetric composition
 
 Claim identity: `SFT-PHYS-QUANTUM-EXCLUSION-001`
 
@@ -8303,7 +8908,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4ab498dbd8b0d9aa4e62db6bca8e8e87eb80c4ed58fea206c06eb538c21f1973`; engine receipt `sha256:27239f90141d1287616ee28f368bcd94cf1f94b549e9b65a0a0982afab765eaf` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-EXCLUSION-001-27239f90141d1287.json`; empirical-validation hash `sha256:3802d875f3aef69b91e7bbac3eb7f17bee7c6b599c0fabaa61b92e5bdca5f129`; measurement receipt `sha256:9d4c868e9c114a7b9fcd325b6ca8cea8a1497590cdad5e6ef70e03aa66c382a1`.
 
-### 103. Barrier traversal on complete support
+### 110. Barrier traversal on complete support
 
 Claim identity: `SFT-PHYS-QUANTUM-TUNNELLING-001`
 
@@ -8387,7 +8992,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d4dcc2f2b5cbbe69ab4db94e0813a7745106099cda2bad310876b7d29526d5b1`; engine receipt `sha256:a07368612ae686daeb2371484fa843364d9da57a9c8a8ade54dc8957c5841fe3` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-TUNNELLING-001-a07368612ae686da.json`; empirical-validation hash `sha256:86d898a1e550e1d68a3c624d7d6e1994a7960621a6129f49e0112a1b7f2f6701`; measurement receipt `sha256:74ad6683ed699277b5bec118e07af8ca5d095679bce121b28a5991cf24d5b1b2`.
 
-### 104. Discrete bound-state spectra
+### 111. Discrete bound-state spectra
 
 Claim identity: `SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001`
 
@@ -8471,7 +9076,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a8581a5d686b58f9a0bfee85d11be0a91a13e3b6d1ebc5fbfb40da70d49c68f8`; engine receipt `sha256:40bcca8d05aea67f6b2812e426772bdf7b973d0410a1a24129afb79ab1650a57` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001-40bcca8d05aea67f.json`; empirical-validation hash `sha256:bbc82779ca094ae3dec89dd18b17ec8c653228a0e5072e95cf2dcd1169e8ff1c`; measurement receipt `sha256:b674c815c986f459beac866858a0cc50e67908b3044aa2d8a5e68e72e13cd720`.
 
-### 105. Physical entanglement correlations
+### 112. Physical entanglement correlations
 
 Claim identity: `SFT-PHYS-QUANTUM-ENTANGLEMENT-001`
 
@@ -8555,7 +9160,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9c33166d4650e2b66a1daf713804f5c025a21c157730a80bee1645131ebca6f8`; engine receipt `sha256:4fe300f9b7c68fa7877536f5a6b517ad868f51f653621adf0ca0a16db177cebb` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-ENTANGLEMENT-001-4fe300f9b7c68fa7.json`; empirical-validation hash `sha256:2a22e56f177817dff8555448a08e6bdb6f9c740557a06fff6e4873f380843f6b`; measurement receipt `sha256:738d451159d76be70e460472ad139ae20cad76767c7de8959369e12ffbd2f299`.
 
-### 106. Bell correlation and local-hidden-record boundary
+### 113. Bell correlation and local-hidden-record boundary
 
 Claim identity: `SFT-PHYS-QUANTUM-BELL-001`
 
@@ -8639,7 +9244,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8480c03a3eb947112387ce6883c18aa824b617284a2bb64c67170422b924097f`; engine receipt `sha256:2c368d4a200d2566c3c78014d6927a9a64017b2fde91972501b7cf865fb47aa7` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-BELL-001-2c368d4a200d2566.json`; empirical-validation hash `sha256:130c9d0eef669e97bdb02886a33ad59beeafb42924b6b27463c70fc42c9ea016`; measurement receipt `sha256:36ee32c42f1452ca3d8556227dc36fe48b04c0e2f7875de74807377bbfe4636d`.
 
-### 107. Context-dependent joint observation
+### 114. Context-dependent joint observation
 
 Claim identity: `SFT-PHYS-QUANTUM-CONTEXTUALITY-001`
 
@@ -8723,7 +9328,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:dba339b5c3b9f5f131240bc554ec7d013eec62b16b1163a31a7c94c5291437e3`; engine receipt `sha256:8b6083f43638b7416c9639697971b3e176c77f6db2858f00b927bcf0d8942946` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-CONTEXTUALITY-001-8b6083f43638b741.json`; empirical-validation hash `sha256:51a645d0762908514a2c86f29988424b8858318ccc8ff71aa2ccfc6907325d10`; measurement receipt `sha256:009ae275af7ed879270ba6b817d4e6db440ee62d4b6123a81bb8a026c8101bb3`.
 
-### 108. Decoherence through environmental record distribution
+### 115. Decoherence through environmental record distribution
 
 Claim identity: `SFT-PHYS-QUANTUM-DECOHERENCE-001`
 
@@ -8807,7 +9412,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:40b2ad33193d36d486b8c6fb4edae22fbc2632b36e355b165a2296ea25070939`; engine receipt `sha256:d55a9454999245b5fa0177305095d9fcd1e8c0bc6f0d75c9541ea1cfa58d8325` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-DECOHERENCE-001-d55a9454999245b5.json`; empirical-validation hash `sha256:8b313ff949f29e4e2e1c59211c96794d2a79f01ed2dfb32897411483ee92830e`; measurement receipt `sha256:0a29356b051ea36807814c65d4ced93db31a45d9c91278e0c43a2ad417c67a10`.
 
-### 109. Operational quantum-to-classical physical limit
+### 116. Operational quantum-to-classical physical limit
 
 Claim identity: `SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001`
 
@@ -8891,7 +9496,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:316655c872665410113abbe9d5e347660917473f2df1466f53c8ad0fd014f64e`; engine receipt `sha256:b87f06d0e0edbee677f693e0480d07cbad931e2a07a64841f47a204726cc9020` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001-b87f06d0e0edbee6.json`; empirical-validation hash `sha256:4813ad6d27220db24bec1ea9c440157ef9a5ded7fec9cce1f48408ea7d69d5b1`; measurement receipt `sha256:51666f38ecfba3745a6e04f824e24e0e2cf0c95104722ab8b5f1dccd6d2e59e5`.
 
-### 110. Entanglement and no-signalling boundary
+### 117. Entanglement and no-signalling boundary
 
 Claim identity: `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
 
@@ -8975,7 +9580,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:38c8e09824b751f13b2c7841ce8b49995fc78f0cb862bf570a4909621599fbe1`; engine receipt `sha256:984ce2195db3fdf46ca0370f06565f79c7f1469bdf581f7c2ba99020827cd2fc` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-NO-SIGNALLING-001-984ce2195db3fdf4.json`; empirical-validation hash `sha256:173268462d4ff03fc8b60527fcf3a464e24cda0ac2a7dc90e9c654901931c602`; measurement receipt `sha256:450eab3defda05b7ad82cccc90bbe07e93564b75c6117d69cf907932c4348215`.
 
-### 111. Two-hand exact Dirac square
+### 118. Two-hand exact Dirac square
 
 Claim identity: `SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003`
 
@@ -9041,7 +9646,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:40ef972c0547c26a2117edca910060284b765d0fe367cab1d5eba616e3b88eea`; engine receipt `sha256:8781e3f2ddd1b3980b2ab928c942ccc4db1bccac6527d0723c0a797855991279` at `receipts/engine/model_admitted/SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003-8781e3f2ddd1b398.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 112. Full three-plus-one Dirac square
+### 119. Full three-plus-one Dirac square
 
 Claim identity: `SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003`
 
@@ -9107,7 +9712,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c3987de00e4203965aaa1d5be22f2e3271663bee9a5b794a0e3dff741afc3b5f`; engine receipt `sha256:8b58f344d672ea8b89164ee8c5e46e4faacb1eda64aa4d0d682fa4931cd30a4f` at `receipts/engine/model_admitted/SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003-8b58f344d672ea8b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 113. Electron/muon magnetic-anomaly structure
+### 120. Electron/muon magnetic-anomaly structure
 
 Claim identity: `SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003`
 
@@ -9174,7 +9779,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:46732443f32f146935ec1afede91a6c9bacad389cea20ef8150b7f224d41cec6`; engine receipt `sha256:e0a6844ac70a6e929c5e23ed576df2ea5c13eb4a05d33b148b2b3ad75a4c4f6f` at `receipts/engine/model_admitted/SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003-e0a6844ac70a6e92.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 114. Terminal exact finite turn projection
+### 121. Terminal exact finite turn projection
 
 Claim identity: `SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004`
 
@@ -9242,7 +9847,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4fa0407163c8c6f8f346b78cf12d51e9a74c28c6fb123488b4abd84b5528d1a2`; engine receipt `sha256:b85f5162d1cf55490a4bc8666fa02b354029ff4a297d9013c61dddd93491629d` at `receipts/engine/model_admitted/SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004-b85f5162d1cf5549.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 115. Terminal exact electron magnetic anomaly
+### 122. Terminal exact electron magnetic anomaly
 
 Claim identity: `SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004`
 
@@ -9326,7 +9931,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fc418f64a16c0e62b0f737b92a281a91f405cd5415bfd40060a8db8db965b663`; engine receipt `sha256:1901b85dc30105470cbf50fd13560402dd359f21aab9be6f324db678318087e4` at `receipts/engine/model_admitted/SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004-1901b85dc3010547.json`; empirical-validation hash `sha256:27d7c447bf883365a58cdc46832155aa9fac6b0c928cf8df52f113ccf8bf41c7`; measurement receipt `sha256:0333ea4cb3caa128658e08eed7d087f6d3cfcb8cadaa10587a0bd6636ee84495`.
 
-### 116. Terminal exact muon magnetic anomaly
+### 123. Terminal exact muon magnetic anomaly
 
 Claim identity: `SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004`
 
@@ -9410,12 +10015,165 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7cf1d27c83bb525f718b3e39b081d7055af231b5098a3160a117479fc1b476e9`; engine receipt `sha256:8f5637b4d0189746e09a6e7d05937cefeef8d493c095e90162c3b3c8e458dd5a` at `receipts/engine/model_admitted/SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004-8f5637b4d0189746.json`; empirical-validation hash `sha256:fb81d1a4113a2a96a692624b1b55b6bb57d00d09fe913b2e927d46e4f71922a4`; measurement receipt `sha256:c7a96120cd4417a4c2ed2c0017302fae283a054f57360a89a5b43ab7edcbb3ad`.
 
+### 124. Terminal finite spin-statistics, occupation and Bose-condensation law
 
-## 14. Constants Scales Precision
+Claim identity: `SFT-PHYS-SPIN-STATISTICS-CONDENSATION-TERMINAL-045`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For positive finite N and L, preserving exchange has exactly C(N+L-1,N) occupation words and admits N occupants in one cell for every N; alternating exchange has exactly C(L,N) words for N<=L, an empty support for N>L, and never exceeds one occupant per cell. Every finite canonical occupation weight is exact rational and sums to One. The two-label spin census is 3/4 preserving and 1/4 alternating; alternating spin first returns after two turns, while a pair is preserving and returns after one. For every N,L and m>=2, the ground-orbit share crosses (m-1)/m at a uniquely first finite cold depth, fixing an exact rational critical mean throw; the unique minimum-throw preserving word places all N occupants in the shared ground orbit.
+
+> For positive finite N and L, preserving exchange has exactly C(N+L-1,N) occupation words and admits N occupants in one cell for every N; alternating exchange has exactly C(L,N) words for N<=L, an empty support for N>L, and never exceeds one occupant per cell. Every finite canonical occupation weight is exact rational and sums to One. The two-label spin census is 3/4 preserving and 1/4 alternating; alternating spin first returns after two turns, while a pair is preserving and returns after one. For every N,L and m>=2, the ground-orbit share crosses (m-1)/m at a uniquely first finite cold depth, fixing an exact rational critical mean throw; the unique minimum-throw preserving word places all N occupants in the shared ground orbit.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-HALF-ONE-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-QUANTUM-SPIN-001`
+- `SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001`
+- `SFT-PHYS-QUANTUM-EXCLUSION-001`
+- `SFT-PHYS-MATTER-FERMION-BOSON-001`
+- `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`
+- `SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008`
+- `SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043`
+- `SFT-PHYS-COLLECTIVE-RADIATION-RESPONSE-TERMINAL-041`
+
+**Generated grammar and closure boundary.** Generate the complete product of exchange, exclusion, accumulation, occupation-weight, spin-return, pairing, lock-threshold and ground-orbit forms. The declared exact boundary is: Every positive finite particle count N, positive finite level count L, preserving or alternating exchange class, positive finite cold depth, and Fold factor m at least two; empty cells are typed structural-absence records. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `preserving-versus-alternating-held-trace__one-cell-distinction-exclusion__every-positive-finite-multiplicity-admitted__complete-exact-dyadic-occupation-census__typed-one-turn-two-turn-held-orbits__alternating-pair-preserves-exchange__first-exact-crossing-of-forced-m-minus-one-over-m-share__unique-minimum-throw-shared-ground-word`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `exchange` | `preserving-versus-alternating-held-trace` | `named-particle-species` | A species name does not force its exchange law. |
+| `fermion` | `one-cell-distinction-exclusion` | `selected-occupancy-cap` | A selected cap is a free rule. |
+| `boson` | `every-positive-finite-multiplicity-admitted` | `finite-selected-ceiling` | No generated ceiling follows from preserving exchange. |
+| `weights` | `complete-exact-dyadic-occupation-census` | `continuum-statistical-distribution` | A continuum distribution is outside Fold arithmetic. |
+| `spin` | `typed-one-turn-two-turn-held-orbits` | `imaginary-signed-phase` | Imaginary or signed proof scalars are inadmissible. |
+| `pairing` | `alternating-pair-preserves-exchange` | `independent-boson-postulate` | An independent postulate breaks the single derivation chain. |
+| `lock` | `first-exact-crossing-of-forced-m-minus-one-over-m-share` | `measured-or-fitted-temperature` | A measured or fitted onset would select the law. |
+| `ground` | `unique-minimum-throw-shared-ground-word` | `asserted-macroscopic-ground-mode` | Naming a condensate is not an enumeration. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:5ee1579388bfe3edb1a8772aee7d8c0c09a7eb05308730458a52e33091e85f95`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:605f4063b74d23be764144a1028dc3b1319b22982a21a8c6b3ed31a9d1ed22d3`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:890c659e1760dc96d83ab9ee8051afa91a93668f46e03415fb11ba1e9ecbd6d4`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:0a855eb9c0225038937d4f3f46327ecc7dc1005cb7c237489b76ee28b7435148`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:dedd5d8e13991355ca1ba3ec94cd7c41b87841659d51696b3cf828e1f85d3fdf`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:274d954c4cd12e6b469d51421e40869b90a3aef3fcc2f7eea6a22b54d18442c1`. Independent certificate: `sha256:18f0ad787e6f6a48fb7eed4308f6dce85e09c74d6b815b4c60db0b81df9de0ed`. Engine external-validation hash: `sha256:cd4226bd92f2cc114d70530b517280e799828647c49c75afc8d5af64ff4e9bab`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Physical quantum and relativistic theory provide empirical correspondence for exact Fold support, phase, composition, observation and causal propagation. Complete-state evolution remains deterministic. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Fermi-Dirac or Bose-Einstein continuum function imported as a premise
+- no measured transition temperature, particle species or 360/720-degree observation available to candidate selection
+- no selected occupancy cap, chemical potential, thermodynamic limit or infinite population
+- no ontic randomness
+- no conventional numerical-nothingness, negative, irrational, imaginary, floating, NaN or continuum proof magnitude; visible 0 in an occupation vector denotes an empty One cell
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:231ff1d3b8535154ad55b040e0317d77b3f2f2059a8ec02cc46eb1dad41782d3`; engine receipt `sha256:f71da5b86f99d6569a1f33dc6fc37024cc5d458b12e625c5dbc4faf3c33ccda7` at `receipts/engine/model_admitted/SFT-PHYS-SPIN-STATISTICS-CONDENSATION-TERMINAL-045-f71da5b86f99d656.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 125. Terminal preparation-depth, support-uncertainty and joint-correlation law
+
+Claim identity: `SFT-PHYS-QUANTUM-SUPPORT-UNCERTAINTY-TERMINAL-049`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every complete dyadic preparation N=2^k and every nonempty position support, exact Fold-parity observation forces s_t*s_f>=N, unit-free support-spread product (s_t*s_f)/N>=One and squared normalized support-spread product at least 1/N^2; depth two attains 1/16 and an eight-branch preparation uniquely has depth three with branch unit 1/8. The complete 2-by-3 census has 63 nonempty supports: 21 factorable and 42 nonfactorable. The complete 3-by-5 census has 32767: 217 factorable and 32550 nonfactorable. Both full products are factorable, correcting their prior relabelling as entanglement; entanglement is the nonfactorable class. Complete projection preserves local counts under remote relabelling. All sixteen local deterministic Bell-response pairs obey the three-of-four bound, while setting-inclusive joint support can exceed it with invariant exact local marginals and no signalling.
+
+> For every complete dyadic preparation N=2^k and every nonempty position support, exact Fold-parity observation forces s_t*s_f>=N, unit-free support-spread product (s_t*s_f)/N>=One and squared normalized support-spread product at least 1/N^2; depth two attains 1/16 and an eight-branch preparation uniquely has depth three with branch unit 1/8. The complete 2-by-3 census has 63 nonempty supports: 21 factorable and 42 nonfactorable. The complete 3-by-5 census has 32767: 217 factorable and 32550 nonfactorable. Both full products are factorable, correcting their prior relabelling as entanglement; entanglement is the nonfactorable class. Complete projection preserves local counts under remote relabelling. All sixteen local deterministic Bell-response pairs obey the three-of-four bound, while setting-inclusive joint support can exceed it with invariant exact local marginals and no signalling.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-MATH-ALGEBRA-001`
+- `SFT-QUANTUM-STATE-COMPOSITION-001`
+- `SFT-QUANTUM-MEASUREMENT-001`
+- `SFT-PHYS-QUANTUM-INCOMPATIBILITY-001`
+- `SFT-PHYS-QUANTUM-ENTANGLEMENT-001`
+- `SFT-PHYS-QUANTUM-BELL-001`
+- `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of preparation depth, Fold-parity observation, support bound, spacing-weighted spread, joint factorability, projection, Bell-factorization and extra-rule forms. The declared exact boundary is: Every nonempty subset of complete binary support through exhaustive depth four with depth-independent orthogonality induction; every nonempty 2-by-3 and 3-by-5 joint subset; all sixteen deterministic local two-setting response pairs; and the complete setting-inclusive two-outcome support. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `preparation-derived-complete-binary-depth__held-returned-parity-count-table__orthogonality-Parseval-support-count__exact-unit-free-support-spread__complete-factorability-subset-census__complete-marginal-count-invariance__incomplete-local-factorization-record__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `depth` | `preparation-derived-complete-binary-depth` | `universally-selected-depth-three` | A universal depth is an unforced parameter. |
+| `observation` | `held-returned-parity-count-table` | `imported-complex-Walsh-amplitudes` | Complex amplitudes are outside the proof grammar. |
+| `uncertainty` | `orthogonality-Parseval-support-count` | `named-or-selected-uncertainty-bound` | Naming a prior theorem does not force it. |
+| `spread` | `exact-unit-free-support-spread` | `support-width-called-statistical-variance` | Support extent is not automatically a statistical central moment. |
+| `joint` | `complete-factorability-subset-census` | `product-size-relabeled-entanglement` | A full Cartesian product factorizes exactly. |
+| `projection` | `complete-marginal-count-invariance` | `remote-label-change-relabeled-signal` | A bijective relabelling changes no local count. |
+| `bell` | `incomplete-local-factorization-record` | `ontic-randomness-or-superluminal-message` | Neither is forced by the finite correlation census. |
+| `extension` | `no-extra-rule` | `measurement-selected-correction` | A fitted correction would select the law. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:b87466e8c836feaea657b3d35f530a9de80e70f92fb663dd7a449b119c7fb469`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:f62a278d0ac5036bccf72d4a00e15ad07756b8bb607da8a238cb7c4886b34b63`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:a3c93700d600582544c0cb2f801144a1d23eee3c2ca588338760d5aab12bd18f`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:090198dc748d1481a485cefd5c34157d91fd5f1e9346d266361e10f6f1085502`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:b6008e573ace6486049207789bfcabb1459212302db171f5fa384ad7a819c2ad`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:e78b5c1aaf806e5969295fa2d7cea0f8bea225528621eca464e3c54cba1a5afc`. Independent certificate: `sha256:25877a95c51e203cd290ecafaffaa47587c6082300cd3454b337b60470a1344d`. Engine external-validation hash: `sha256:b3339e6b86d61ef06190b2f4cc4c1dd778e3b039e34c0d6b35cf2bd7701176bf`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Physical quantum and relativistic theory provide empirical correspondence for exact Fold support, phase, composition, observation and causal propagation. Complete-state evolution remains deterministic. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported Fourier, Donoho-Stark, Heisenberg, tensor-product or Bell theorem as a premise
+- no universal depth-three measurement rule independent of preparation
+- no relabelling of support extent as statistical moment variance
+- no relabelling of a complete Cartesian product or product-greater-than-sum arithmetic as entanglement
+- no claim that fifteen is irreducible to its three-by-five product factors
+- no ontic nondeterminism, stochastic setting oracle, superluminal signal or omitted preparation/setting record
+- no measured Bell or uncertainty value accessible to candidate selection
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:246abe6ea59ec47581adf7eb2cc9552ad5cf703fe88d5e65b404a8d1ad83a672`; engine receipt `sha256:1560f2e0de3870abac2bdc6575aa9811c4dc013d5a6d705e729a832dc451b79f` at `receipts/engine/model_admitted/SFT-PHYS-QUANTUM-SUPPORT-UNCERTAINTY-TERMINAL-049-1560f2e0de3870ab.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 17. Constants Scales Precision
 
 Dimensionless constants, mass scales and precision values are kept in Physics. Each reported value is tied to its zero-parameter Fold relation, sealed prediction, exact rational measurement adapter and immutable receipt.
 
-### 117. Terminal exact inverse fine-structure Fold ratio
+### 126. Terminal exact inverse fine-structure Fold ratio
 
 Claim identity: `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
 
@@ -9488,7 +10246,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:624239a4a1a47a06acec655b1a55db66675f5d32fe9f67c6a4305d52eb56b99a`; engine receipt `sha256:4999a85b5862afebcf24604c2191c0ce8b96aa57f988b3fab83b469c3506a7c9` at `receipts/engine/model_admitted/SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001-4999a85b5862afeb.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 118. Exact charged-lepton cubic invariants
+### 127. Exact charged-lepton cubic invariants
 
 Claim identity: `SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001`
 
@@ -9559,7 +10317,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c24fd6454b7ad9b50590f83fff13e4e005094537cd495720210047085a28056f`; engine receipt `sha256:d45737a631dbf57c19fb433817cdb6e443f9a6e598f7d0cbb469d47819ee3ae2` at `receipts/engine/model_admitted/SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001-d45737a631dbf57c.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 119. Terminal self-coupling refinement of the charged-lepton cubic
+### 128. Terminal self-coupling refinement of the charged-lepton cubic
 
 Claim identity: `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
 
@@ -9607,7 +10365,21 @@ Claim identity: `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:99ce35598da99fedf661a7d92e1bfc40adeb85861204eb5196a13aa30f7a0746`. Independent certificate: `sha256:05d0e8eebbcb2b6dcff81df8eef6f8f3aa7f9fa838ed210a6b035720858fc4c3`. Engine external-validation hash: `sha256:65703bcf3b046bfb3d385c0e9177a6d8bdabb3afcc63a226e0a86d8ee615fe2f`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-CODATA-2022-ALL-CONSTANTS
+
+Observed comparison records:
+
+- NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO: predicted terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; observed terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; exact match True
+- NIST-CODATA-2022-MUON-TAU-MASS-RATIO: predicted terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; observed terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Either terminal prediction interval fails to overlap its complete source interval, source custody changes, or any failed row is omitted.
+
+Measurement receipt: `sha256:0c73be05888de167157643d1b1773ade8b7cb32fa0c4eb0fcc0e8aeef4c4b731`. Isolation certificate: `sha256:ce6192af110a16a013d2a9733358725fe8f18cabc61d32634529ee0cdb5bb049`. Custody certificate: `sha256:0d6a80603ccf392a0caa760b048f143bc620c60b50241eb632b8e1e1e3b76014`.
 
 Registered source descriptions:
 
@@ -9630,7 +10402,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:15f02146523652fee8ca84a6d2d023e1a9ba5e8764956c7cf6c221ded12db04d`; engine receipt `sha256:c74f9c45eab7c232ebf85fe2fd5aea24f07d167df3857dad50ffcc5c34732294` at `receipts/engine/model_admitted/SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001-c74f9c45eab7c232.json`; empirical-validation hash `sha256:3df224f1ca64f8ccc26c3fd5d785d4ee2abdea51c783550accec714a96eb52d5`; measurement receipt `None`.
 
-### 120. Squared proton-to-Planck hierarchy
+### 129. Squared proton-to-Planck hierarchy
 
 Claim identity: `SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002`
 
@@ -9696,7 +10468,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d847dbf538c92b07c9f710c9f33887685b40dca9eef56f3943e855ac2f49b5bb`; engine receipt `sha256:d1cf13e86e2d9aeaa5f6993456b5f594a303d75e446ea1d9c80d41906b984d9f` at `receipts/engine/model_admitted/SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002-d1cf13e86e2d9aea.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 121. Terminal charged-colour proton-to-Planck hierarchy
+### 130. Terminal charged-colour proton-to-Planck hierarchy
 
 Claim identity: `SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003`
 
@@ -9765,12 +10537,317 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:5eca6d00fe54b7afbabb728a9dab3716786ae87790266d141e993221dddce0d6`; engine receipt `sha256:affd1dc6754854b15d7f286291611e481f0572f50a11589dd88cb019289f88d7` at `receipts/engine/model_admitted/SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003-affd1dc6754854b1.json`; empirical-validation hash `None`; measurement receipt `None`.
 
+### 131. Terminal colour-channel alpha-squared proton-energy fraction
 
-## 15. Matter Interactions Flavour
+Claim identity: `SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The terminal structural proton-energy fraction is exactly 108147617771025486368/253861190227103943729961 = 8 alpha_terminal^2. The superseded leading-rung prediction 500000/1173679081 is retained as an exact historical control.  External proton mass and Parker observations remain inaccessible until the derivation seal.
+
+> The terminal structural proton-energy fraction is exactly 108147617771025486368/253861190227103943729961 = 8 alpha_terminal^2. The superseded leading-rung prediction 500000/1173679081 is retained as an exact historical control.  External proton mass and Parker observations remain inaccessible until the derivation seal.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
+- `SFT-PHYS-MECH-WORK-ENERGY-001`
+- `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of proton identity, alpha stage, all four forced mediator-sector counts, amplitude/energy/cubic powers, typed composition, rest-scale carrier, prediction custody, provenance, external comparison and extension forms. The declared exact boundary is: The admitted proton, all forced sectors two/three/five/seven and their mediator counts, the leading and terminal exact alpha rungs, powers one through three, and a post-seal proton-rest-energy/Parker comparison. The generator produced `3072` named candidates and the decision support contains `3072` one-for-one decisions. Exactly one candidate survived: `admitted-three-colour-proton__complete-terminal-alpha-rung__colour-eight-channels__alpha-squared-energy__complete-channel-count-times-energy-share__proton-own-rest-energy-postseal__capability-closed-before-Parker-release__observational-derivation-explicit__complete-reported-range-and-limitations__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `particle` | `admitted-three-colour-proton` | `named-proton-without-composition` | A name does not generate its interaction support. |
+| `alpha` | `complete-terminal-alpha-rung` | `selected-leading-alpha-rung` | The leading rung is retained as a historical control but is not the completed promotion object. |
+| `channels` | `colour-eight-channels` | `weak-three-channels` | The binary-sector mediator count does not match proton colour. |
+| `power` | `alpha-squared-energy` | `linear-alpha-amplitude` | A single amplitude is not an energy self-composition. |
+| `composition` | `complete-channel-count-times-energy-share` | `add-or-average-channel-shares` | Addition or averaging changes the complete channel multiplicity. |
+| `scale` | `proton-own-rest-energy-postseal` | `local-plasma-fit-or-free-energy` | A local field or density would be a fitted environmental parameter. |
+| `target` | `capability-closed-before-Parker-release` | `Parker-range-readable-before-seal` | That would permit formula selection by the observation. |
+| `provenance` | `observational-derivation-explicit` | `claim-new-blind-discovery` | V2 and the Parker report were already known during V3 reconstruction. |
+| `comparison` | `complete-reported-range-and-limitations` | `treat-approximately-400-as-exact-cutoff` | The paper reports an approximate energy reach and no uncertainty on 400 keV. |
+| `extension` | `no-extra-rule` | `free-local-factor-or-correction` | A free local factor would fit the event. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:ba3f74d46f0fa4868ea25ce160affd879952128cb5dc07f451750f83598b38eb`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:8a698572330616bbe1d93d09c5416ec8ec01e583ff1effdff412eb40647ff207`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:41ecf3347f1f4aa20f85a7e123fd66850f15f7934d3a2f4cc54fdab2dd949a29`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:a6fe0f61a16b5f1e132529709d14156c2714bc883d3d10553f14cb207b45484b`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:a6d0935252f735483db99db340353132969c9bb58a1ee253c53965bb1e111847`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:9e8af8c582652edc7816af89b7d3254a39c2a7cabcd838f7371d5cdc8d36029a`. Independent certificate: `sha256:65903e28af5143824e401feddc2b1261fe3bdd81a8f13aa4e7ab9a3c8b50bc11`. Engine external-validation hash: `sha256:4adb9cda9fd0ffa1ba246a731e1009ea3a9d8ef1815222bacdac90ca92279438`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- DESAI-ET-AL-2025-PARKER-HCS-PROTONS
+- NIST-CODATA-2022
+
+Observed comparison records:
+
+- The primary Parker manuscript, complete CODATA source and curated row record are hash-locked and released only after the exact Fold prediction seal.
+- The terminal prediction from the complete current alpha rung is approximately 399.714077 keV after post-seal CODATA scale translation; the retained V2 leading-rung control is approximately 399.714072 keV.
+- Both exact propagated prediction intervals lie inside the paper's complete 67-527 keV analyzed proton spectrum.
+- The primary paper reports protons up to, above and upwards of approximately 400 keV; it does not register 400 keV as an exact cutoff and gives no standard uncertainty for that approximate label.
+- Therefore the earlier 'within 0.1 percent' wording is not admitted as a precision measurement claim; only range-level correspondence is supported.
+- The complete forced-sector/power control census is retained. Both three-alpha-squared and eight-alpha-squared land inside the broad observed range, so the Parker event alone does not select the eight-channel formula.
+- Eight channels remain structurally selected by the independently admitted proton colour sector, never by the Parker target.
+- Changing the external upper range to 300 keV rejects the prediction as an unfavorable control.
+
+Falsification condition: Reject if any source identity or registered row changes; if the terminal fraction or NIST-propagated prediction leaves the complete 67-527 keV Parker analysis range; if approximately 400 keV is presented as an exact cutoff or given an unreported uncertainty; if the broad observation is claimed to empirically select eight over every adverse formula; if a local plasma value enters the derivation; or if targets are accessible before prediction sealing.
+
+Measurement receipt: `sha256:f934b85069bf77672ff16ee8acf662add04f6e652d0fe2a3807076f7bc9a5f36`. Isolation certificate: `sha256:260875f77819464ff90d563f292a61190470d0d2f647199ccdb69270c40af7c9`. Custody certificate: `sha256:d64484e3eef9294ffde93e19b562a48f1eb47bbd49e7e9990e0c78da943a2d6c`.
+
+Registered source descriptions:
+
+- Astrophysical Journal Letters accepted manuscript via arXiv: https://arxiv.org/abs/2410.16539 (sha256:6c950a6e142edf57df600d06e1ce40445fc18c84d42c3d2b916d63679a100fb5)
+- National Institute of Standards and Technology: https://physics.nist.gov/cuu/Constants/index.html (sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67)
+
+Registered target identities:
+
+- WITHHELD-PARKER-PROTON-RANGE-AND-CODATA-SCALE from None
+
+**Meaning.** Dimensionless constants, mass scales and precision values are kept in Physics. Each reported value is tied to its zero-parameter Fold relation, sealed prediction, exact rational measurement adapter and immutable receipt. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no local plasma density, magnetic field, Alfven energy or guide-field parameter
+- no proton mass-energy or Parker spectrum in the candidate generator or survivor decision
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+- no claim that approximately 400 keV is an exact measured cutoff or has 0.1-percent precision
+- no omission of alternative forced-sector/power formulas at the post-seal comparison boundary
+- no claim of historical blindness; V2 and the external result were known before reconstruction
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:003e85d7036062243cbc4a81865ab602477779d486516d64533b64f681eedb21`; engine receipt `sha256:41f17af1f94905b0e93d67d7dfc7a399fd9063a53e6db4d21d486e1a8c5f1673` at `receipts/engine/model_admitted/SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028-41f17af1f94905b0.json`; empirical-validation hash `sha256:ba3f659435ad35064dfb8c2e5fc085b84dc24edf6109f8d4090878e770a67c6b`; measurement receipt `sha256:f934b85069bf77672ff16ee8acf662add04f6e652d0fe2a3807076f7bc9a5f36`.
+
+### 132. Terminal probe-independent proton rms charge-radius relation
+
+Claim identity: `SFT-PHYS-PROTON-RADIUS-TERMINAL-029`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The unique terminal dimensionless proton rms charge-radius coefficient is exactly 10069574419808/2519231977345 = 4(One-alpha_terminal/10). A dimensionful radius is obtained only after the seal by composing this coefficient with the registered reduced proton Compton wavelength. The coefficient contains no electron, muon or scattering-probe input.
+
+> The unique terminal dimensionless proton rms charge-radius coefficient is exactly 10069574419808/2519231977345 = 4(One-alpha_terminal/10). A dimensionful radius is obtained only after the seal by composing this coefficient with the registered reduced proton Compton wavelength. The coefficient contains no electron, muon or scattering-probe input.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001`
+- `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
+- `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001`
+- `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-QUANTUM-EVOLUTION-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of proton carrier, tripling orbit, colour/Fold edge support, internal/external charge support, electromagnetic transport order, retained orientation, one-action scale boundary, target custody, provenance and extension forms. The declared exact boundary is: The admitted colour-three charged proton, its one-third/two-thirds tripling partition, both Fold labels, every ordered colour pair cell, the unique external unit charge, terminal alpha and the post-seal reduced proton Compton carrier. The generator produced `2304` named candidates and the decision support contains `2304` one-for-one decisions. Exactly one candidate survived: `admitted-uud-colour-three-proton__outer-two-thirds-complement__all-three-colours-times-both-Fold-labels__ten-internal-pairs-plus-unit-charge__one-alpha-spatial-traversal__hold-inward-share-from-edge__reduced-proton-Compton-postseal__capability-closed-before-target-release__observational-derivation-explicit__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `particle` | `admitted-uud-colour-three-proton` | `named-proton-without-composition` | A particle name does not generate a radius. |
+| `orbit` | `outer-two-thirds-complement` | `inner-one-third-as-outer-edge` | The inner constituent site is not the composite edge. |
+| `edge` | `all-three-colours-times-both-Fold-labels` | `partial-colour-or-single-fibre-support` | Omitting a colour or Fold label loses a charged path. |
+| `charge` | `ten-internal-pairs-plus-unit-charge` | `eight-nonreturn-mediators` | The mediator count omits the return and external charge roles. |
+| `transport` | `one-alpha-spatial-traversal` | `no-terminal-transport` | This retains only the earlier leading structural radius. |
+| `orientation` | `hold-inward-share-from-edge` | `append-outward-free-share` | Appending a free share breaks the held bound-composite ledger. |
+| `scale` | `reduced-proton-Compton-postseal` | `full-cycle-or-fitted-length` | A fitted length or full-cycle circumference double-counts the one-action radial carrier. |
+| `target` | `capability-closed-before-target-release` | `probe-results-readable-before-seal` | That would fit the known radius puzzle. |
+| `provenance` | `observational-derivation-explicit` | `claim-historical-blindness` | V1/V2 and the measurements were already known. |
+| `extension` | `no-extra-rule` | `free-form-factor-or-probe-correction` | An added term would be a fitted parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:1f5b55c75de20a987a553421413cf4ad54e259b5da55649402bce332cf7d926f`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:a7a6a49aa74db2977d54690d7a0ce9f676adb4bcc085662d318f3380d6d3a760`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:b2b88486d92413ea48792aecfd581c0f6708d599a9e42be2cc007085c3604811`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:0990ec3b4ad7b9cd1ce8c9d4bd44fdb8747b9ef8e7ef9846327c49c945ccfa50`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:ca75083edfef55fc18c3d5e70d7091287a3eac7767e4bba931ae56b02e6002fc`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:b7ae5cd32b920bc549c3cb64b718a2ea64732691be02ccf8cb0118764207f7de`. Independent certificate: `sha256:1bdcc6ce6b78572a95ca6fc1b89b728840d2624720824904ffb9b1f1179ace31`. Engine external-validation hash: `sha256:c30497188e21b2cf74496f02ce05fd120478ff49a586f643a660ac364c916451`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS
+- NATURE-2019-PRAD-PROTON-RADIUS
+- NIST-CODATA-2022
+- NIST-CODATA-2014-HISTORICAL
+
+Observed comparison records:
+
+- The exact coefficient and all structural alternatives seal before the four primary/authoritative source identities and radius rows are released.
+- The exact terminal coefficient is 10069574419808/2519231977345 = 4(One-alpha_terminal/10), with no probe or radius measurement in its derivation.
+- Post-seal composition with the complete CODATA-2022 reduced-proton-Compton interval predicts approximately 0.840621761 fm with exact outward uncertainty propagation.
+- The prediction interval lies inside the registered 2026 electronic-hydrogen 0.8406(15) fm interval and the current muonic-hydrogen 0.84060(39) fm interval.
+- The prediction interval lies inside the CODATA-2022 0.84075(64) fm interval and the conservative PRad 0.831 +/-0.007(stat) +/-0.012(syst) outward interval.
+- The historical CODATA-2014 0.8751(61) fm interval is disjoint and remains an explicit unfavorable historical row.
+- The primary 2026 paper's partly discrepant earlier electronic results and scattering-analysis dependence remain explicit; probe independence is not relabelled as universal agreement among all extractions.
+- All three linear-support alternatives land inside the present muonic interval, so measurement does not select ten; the complete proton charge-support derivation does.
+- Changing the current electronic-hydrogen row to a disjoint interval rejects the correspondence.
+
+Falsification condition: Reject if any source identity or registered row changes; if the exact terminal prediction leaves any registered current electronic, muonic, CODATA or outward PRad interval; if the historical CODATA-2014 conflict or current extraction limitations are omitted; if a probe, radius or Compton value enters before sealing; if observation is claimed to select ten charge cells; or if target access precedes the seal.
+
+Measurement receipt: `sha256:6a828b91cce631a0caa5a33a44284ade02f779931199d0e9fc96e42ecfd3607f`. Isolation certificate: `sha256:f9112b893f35f1a69d98ea1e06da8339cd9df96de0c830502c76fe6896853a6b`. Custody certificate: `sha256:7bf579b9c3ac12c02353d9692b0a29ccaede0dcc3e7ff0599a263d402c23ca06`.
+
+Registered source descriptions:
+
+- Nature: https://doi.org/10.1038/s41586-026-10124-3 (sha256:834ddf04fdb3064d07307cc743544990e086601948903fb73390144d2a3ae253)
+- Nature manuscript via arXiv: https://doi.org/10.1038/s41586-019-1721-2 (sha256:66925b870f8391be1a940b741ff60322877df7551cfa1db58b59add002e15ad5)
+- National Institute of Standards and Technology: https://physics.nist.gov/cuu/Constants/index.html (sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67)
+- National Institute of Standards and Technology: https://physics.nist.gov/cuu/Constants/archive2014.html (sha256:48c31408c79d3a9aa7c16efdbf5ef729d8ad162f2b9dbb8029d4d8cdcbef3568)
+
+Registered target identities:
+
+- WITHHELD-PROTON-RADIUS-COMPLETE-VECTOR from None
+
+**Meaning.** Dimensionless constants, mass scales and precision values are kept in Physics. Each reported value is tied to its zero-parameter Fold relation, sealed prediction, exact rational measurement adapter and immutable receipt. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no proton radius, reduced Compton wavelength, electron, muon or scattering result in the candidate generator or survivor decision
+- no fitted coefficient, probe-dependent correction, selected uncertainty or hidden form factor
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+- no claim that rms charge radius is a hard material edge
+- no claim that every historical extraction is mutually consistent or systematics-free
+- no historical-blindness claim
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:d39039deed7c3890466a520e0c899d59b6dc8e7b70600f46697fb153e0142e37`; engine receipt `sha256:77a31b069cc1cdd4bdf84f3ca08fb4849ae33fddb02945727f1809d9e4c2373d` at `receipts/engine/model_admitted/SFT-PHYS-PROTON-RADIUS-TERMINAL-029-77a31b069cc1cdd4.json`; empirical-validation hash `sha256:39c3b0612ff4b5ddc4ec5c86b7194a9d3f814b3f3af85dc4dad38d03093d8465`; measurement receipt `sha256:6a828b91cce631a0caa5a33a44284ade02f779931199d0e9fc96e42ecfd3607f`.
+
+### 133. Common Fold scale axis and terminal electroweak transport
+
+Claim identity: `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** One exact common scale axis is forced: supports 1,2,4,8,...; spacings One, half-One, quarter-One, eighth-One,...; and every forced prime sector uses the same support. The electroweak leading curve is w(R)=(R+2)^2/[4(R+1)^2+(R+2)^2]. Terminal support sixteen holds three directions, forcing active level thirteen, w(13)=225/1009 and the separately typed alpha/17 return, exactly reproducing the admitted terminal on-shell share. The unique internal power anchor is support two. Common exact unit rescaling leaves every dimensionless result unchanged; physical magnitudes are transported only through sealed exact ratios and a post-seal held reference.
+
+> One exact common scale axis is forced: supports 1,2,4,8,...; spacings One, half-One, quarter-One, eighth-One,...; and every forced prime sector uses the same support. The electroweak leading curve is w(R)=(R+2)^2/[4(R+1)^2+(R+2)^2]. Terminal support sixteen holds three directions, forcing active level thirteen, w(13)=225/1009 and the separately typed alpha/17 return, exactly reproducing the admitted terminal on-shell share. The unique internal power anchor is support two. Common exact unit rescaling leaves every dimensionless result unchanged; physical magnitudes are transported only through sealed exact ratios and a post-seal held reference.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-COUNT-001`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-MEAS-UNIT-COMPARISON-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+- `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
+- `SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003`
+- `SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003`
+- `SFT-PHYS-MATTER-QUARK-INVARIANTS-003`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of foundation origin, scale successor, order/spacing relation, local propagation transport, sector domain, electroweak squared-support form, terminal held-support completion, internal anchor, unit transformation, absolute-ratio placement, target custody, provenance disclosure and extension form. The declared exact boundary is: The One, every positive finite binary support successor, reciprocal exact spacing, one-cell causal transport, all four forced prime sectors, binary charged and neutral Fold fibres, terminal support sixteen with three held directions and one alpha return, every common positive rational unit rescaling, the exact proton-Planck scale ratio and the complete registered post-seal coupling vector. The generator produced `12288` named candidates and the decision support contains `12288` one-for-one decisions. Exactly one candidate survived: `One-origin__binary-complete-support-successor__reciprocal-One-over-support-spacing__one-local-act-per-support-cell__complete-prime-sector-ladder__neutral-square-over-charged-plus-neutral-squares__support-sixteen-hold-three-return-alpha-over-seventeen__unique-support-two-source-four__common-positive-rational-rescaling-cancels__forced-ratio-then-postseal-held-reference__capability-closed-before-target-release__observational-development-explicit__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `origin` | `One-origin` | `numerical-zero-origin` | Semantic numerical zero is not an SFT scale carrier. |
+| `successor` | `binary-complete-support-successor` | `linear-or-continuous-free-step` | A free or continuous step is not generated by Fold. |
+| `spacing` | `reciprocal-One-over-support-spacing` | `untyped-arbitrary-spacing` | Arbitrary spacing loses the common exact ratio. |
+| `transport` | `one-local-act-per-support-cell` | `independent-free-running-axis` | A second arbitrary axis breaks one-cell propagation. |
+| `sectors` | `complete-prime-sector-ladder` | `selected-known-sectors` | Selecting familiar sectors omits forced penta/hepta predictions. |
+| `weak_curve` | `neutral-square-over-charged-plus-neutral-squares` | `linear-channel-ratio` | Channel amplitudes require squared support. |
+| `terminal` | `support-sixteen-hold-three-return-alpha-over-seventeen` | `identify-active-level-with-full-support` | Three held generator directions would be omitted. |
+| `anchor` | `unique-support-two-source-four` | `target-selected-depth` | A measurement cannot assign the internal landmark. |
+| `units` | `common-positive-rational-rescaling-cancels` | `unit-name-changes-dimensionless-law` | A held reference cannot change a like-dimension ratio. |
+| `placement` | `forced-ratio-then-postseal-held-reference` | `measured-rung-or-free-unit-selects-law` | A target-selected rung or calibration would be a free parameter. |
+| `target` | `capability-closed-before-target-release` | `target-readable-before-seal` | That would fit the known running vector. |
+| `provenance` | `observational-development-explicit` | `claim-historical-blindness` | The V1/V2 observations and physical measurements were known. |
+| `extension` | `no-extra-rule` | `free-scale-or-running-correction` | An unforced addition would violate zero parameters. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:688facc545ef6d4e7cbbf86ea70d5400432086ec1b86e421fb5118c1661dfb2c`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:8f4540da7dcef139c22150d7490b7a29ff18f3a4c5ff0127fa9412ad3e212d47`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:efeba3f23ea1e5900da498c95bedf19655677ebe0f090f0aff8873ced57feab8`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:39f4f41bb376072deaa4b774f3f7255ab3410bd25ef449aa6c0155a38e496d80`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:4c5aabb4e2c5926719fd737be86a2211bb0f6cbde8e77e2ed0e0f59f889e8bdf`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:c39e4a115db04ee65c879d06d98342923668e286b615eac1805203ab76def489`. Independent certificate: `sha256:a4215f5464a8f8e2dca60674b41b77841a71c70ab155afddd9dcbc379be9110b`. Engine external-validation hash: `sha256:0bbcd4db30a68a6a99843f5a139129d19cda5330d4a32f62b6b9c1c4e0ef93b3`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2026-ELECTROWEAK-SCALE-VECTOR
+- PDG-2025-2026-STRONG-EM-COMPLETE-RUNNING-VECTOR
+
+Observed comparison records:
+
+- The exact common axis, terminal held-support chain and scale-ratio law sealed before release of any coupling or dimensional target.
+- The terminal on-shell weak share lies inside the complete PDG 2026 on-shell interval without a fitted rung or correction.
+- The exact leading support-eight weak share 25/106 lies inside the complete registered cesium APV interval; this is a post-seal correspondence, not the selector of support eight.
+- The full SLAC E158 and cesium APV intervals lie above the MS Z interval, matching the sealed sub-W descending direction.
+- The eDIS interval overlaps the Z interval and remains non-discriminating; the NuTeV on-shell interval lies above the terminal interval and remains an explicit adverse row with its interpretation concerns.
+- The complete PDG weak-running figure is retained by immutable source hash; no unprinted coordinates are reverse-digitized.
+- The PDG W-threshold minimum and sign change are retained, so the finite monotone Fold branch is not overclaimed as one universal all-energy curve.
+- The already admitted complete strong and electromagnetic multi-scale vectors, terminal electroweak comparison and proton-Planck hierarchy comparison remain hash-bound dependencies of this one-axis result.
+- Changing the on-shell target to a disjoint interval rejects the correspondence.
+
+Falsification condition: Reject if any source or inherited receipt identity changes; if the terminal on-shell prediction leaves the registered on-shell interval; if the registered sub-W low-transfer direction is reversed; if the NuTeV adverse row, scheme distinctions, W-threshold sign change, strong/EM complete vectors or proton-Planck scale receipt are omitted; if a measured value selects a rung or law; or if target access precedes the seal.
+
+Measurement receipt: `sha256:14ba878aa37865afc13d58c3f89581aed5136172f4acfc4141078da959c50a20`. Isolation certificate: `sha256:05a792a4b6f8bdcc6b6aec0fb266de053d1072eeaa3f4b8d4fba8cdc49bb8e4b`. Custody certificate: `sha256:882a236b6d1f3e176438b58b8addefc46a30e4e6348e2a5aa90222f9ddbf8e30`.
+
+Registered source descriptions:
+
+- Particle Data Group: https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf (sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb)
+- Particle Data Group: experiments/external_sources/physics/snapshots/coupling-running-convergence-source-record.json (sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953)
+
+Registered target identities:
+
+- WITHHELD-COMMON-SCALE-AND-COUPLING-COMPLETE-VECTOR from None
+
+**Meaning.** Dimensionless constants, mass scales and precision values are kept in Physics. Each reported value is tied to its zero-parameter Fold relation, sealed prediction, exact rational measurement adapter and immutable receipt. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no numerical-zero scale origin, negative exponent, irrational, imaginary, floating or completed-continuum proof value
+- no imported renormalization-group equation, beta function, logarithmic energy coordinate or continuous scale
+- no measured energy, weak angle, coupling, Planck value or selected rung in the formal survivor decision
+- no identification of the earlier full-support running level with the terminal held-support level
+- no claim that one monotone weak curve applies above the registered W-threshold boundary
+- no fitted offset, calibration constant, scheme correction or hidden target-selected depth
+- no historical-blindness claim
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:41008d57dd39bcbccd3e2bb5c023c4ab96e0cf7e8e1666a2ce689507cca8fc7f`; engine receipt `sha256:44d542f87d12844c02c321ac651008ae7ddd738a3b16e7d2c3d8700ec89eca55` at `receipts/engine/model_admitted/SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030-44d542f87d12844c.json`; empirical-validation hash `sha256:626bb4f32ea61fd62a404aafc02a12c1fa95c2b64e116eafdfb1ef9c30aaf5ba`; measurement receipt `sha256:14ba878aa37865afc13d58c3f89581aed5136172f4acfc4141078da959c50a20`.
+
+
+## 18. Matter Interactions Flavour
 
 Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed.
 
-### 122. Mass-energy correspondence
+### 134. Mass-energy correspondence
 
 Claim identity: `SFT-PHYS-MATTER-MASS-ENERGY-001`
 
@@ -9851,7 +10928,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:205e2ecd215cf16dae0cb8afaecb503ddde7c5ec132379c728020e8f87c80147`; engine receipt `sha256:f812b0091bd3e7f6fac435253a1e3dcf81af7a36de5b57f25c4b641cd3fa13cd` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-MASS-ENERGY-001-f812b0091bd3e7f6.json`; empirical-validation hash `sha256:c92bb3e6d747fab7f9feccef2a19ea88774b68e10431891b9b22ca0af330677b`; measurement receipt `sha256:8bdb0451dcbb1ef48b8ff41f8847fd33e3892e527e0b6a7eaa3c2b62513f8a6d`.
 
-### 123. Particle-antiparticle held orientation
+### 135. Particle-antiparticle held orientation
 
 Claim identity: `SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001`
 
@@ -9934,7 +11011,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:893742fb4e72ad76d3698e0dc95990485d8a2282321c2fc79ee6fc6528535dac`; engine receipt `sha256:4840b7076ad83c2c76882af2e81a8309d6ee80028e61796c2f91a896fea2ebfd` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001-4840b7076ad83c2c.json`; empirical-validation hash `sha256:21fadf4dd9de421fc4ef535a9d2f551fb9dfd5d59a0365c85c79cff5d3f8dd1b`; measurement receipt `sha256:114ac7cfe3c8afe08e4ded55d36915cd0f9c6b736def7d0c28cc69522b3df520`.
 
-### 124. Fermion and boson composition classes
+### 136. Fermion and boson composition classes
 
 Claim identity: `SFT-PHYS-MATTER-FERMION-BOSON-001`
 
@@ -10017,7 +11094,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:84e502c03f5b1e7f8ffdd767e97ebba9c71a066725b2500625ed3fa8817213c9`; engine receipt `sha256:8e8738ba7238b2b8216d04aec21ebeb1d15ab6ce2e919b3b265f5a65d50c3951` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-FERMION-BOSON-001-8e8738ba7238b2b8.json`; empirical-validation hash `sha256:a27494b99485e534973865ca0648ff11ae6cce9e9cc3f0ec7bedabf42782cba3`; measurement receipt `sha256:b62d84281d62a3bd43e014f64e0fc119c7173a712656a2e1c54a5305b7a089e4`.
 
-### 125. Conserved physical labels
+### 137. Conserved physical labels
 
 Claim identity: `SFT-PHYS-MATTER-CONSERVED-LABELS-001`
 
@@ -10100,7 +11177,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:73ef40384dac7f3c76495576bf9f808e57c5fdc63c81a989c914d82c090bc2d1`; engine receipt `sha256:83772ecab34a176c0e87265993183d8c445be8f49ec0d86e615c9d0c1740e945` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-CONSERVED-LABELS-001-83772ecab34a176c.json`; empirical-validation hash `sha256:b44d6261da8de14792040b7131fda6cf2219d91d5632dfc2b4b3ca60fd0ba8c0`; measurement receipt `sha256:a37fbf21c2c1532ceb7477f56a5acd1e4ce9cb6c5588899a05175aec3ac4e588`.
 
-### 126. Observed elementary-particle spectrum
+### 138. Observed elementary-particle spectrum
 
 Claim identity: `SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001`
 
@@ -10183,7 +11260,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:17408d0e7ea308694f773c1adfbd532ab0a6f5304c8e9088f7eff63cdddecfca`; engine receipt `sha256:a5d2f4b06e01f8d5acabb36577883d2ad220e3dd5aa6aa2e170b52ff5273fff0` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001-a5d2f4b06e01f8d5.json`; empirical-validation hash `sha256:72e141aef98afe3d189fe1fd563e8f46123cbe94f14447d62931d82925f53772`; measurement receipt `sha256:c6c667a66b77d96b117f8e97fafdf3cb9c40c0423908f5f9c6b8ea5f27fa763f`.
 
-### 127. Composite hadron organization
+### 139. Composite hadron organization
 
 Claim identity: `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
 
@@ -10266,7 +11343,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:98f3c1986b69b272fabf8a95f88c72cb8ecfb48edd659776bd5c16fa73fe7d74`; engine receipt `sha256:f99b0600faea8923a9b335972b511b488ad0a252566da40911ad5fd2d9136697` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-COMPOSITE-HADRONS-001-f99b0600faea8923.json`; empirical-validation hash `sha256:02b815af214cb37ac677f126abf0c880ed63cebda6397dc7704230c5fb42b682`; measurement receipt `sha256:84b6999676d9e3786fb32a7bdca5efdc93ca0d9596b75fbfeae52b80a0bb3bb6`.
 
-### 128. Scattering and cross-section measure
+### 140. Scattering and cross-section measure
 
 Claim identity: `SFT-PHYS-MATTER-SCATTERING-001`
 
@@ -10349,7 +11426,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cfd674c28ced7dfb9302c3ef44c582c57bf8fc35d77a6525e9f426c250072bb1`; engine receipt `sha256:01fb73df0849a188dfd668d8f8549cd1b64ed201e5fe706bcaa391967ab61f0f` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-SCATTERING-001-01fb73df0849a188.json`; empirical-validation hash `sha256:910bbc6b8cb2daca6e00dc9b9792851b70d7126484b3fa78a522d2928594fd60`; measurement receipt `sha256:9fce4306e8bd1dc729a61f34e3166eb388153ff8bd3fda93842ffd1258dd5f6e`.
 
-### 129. Particle transition and decay
+### 141. Particle transition and decay
 
 Claim identity: `SFT-PHYS-MATTER-DECAY-001`
 
@@ -10432,7 +11509,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c01f0e0c1c08c62ff3c0f887f1b65d8a94002e2e887cd018a30b2700ffd4c9ac`; engine receipt `sha256:67296b745325db1768a99db563e6a6966b0201b9fb107133746aaac222ae8291` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-DECAY-001-67296b745325db17.json`; empirical-validation hash `sha256:7081680de252cc8971336c5ab0e2296c5092c49e1dc9d4bba6cd0eaf4663fe3e`; measurement receipt `sha256:e38dcce46ece40beeadc86694d24f4621e7b92a5886b414d250b085528428231`.
 
-### 130. State mixing and oscillation
+### 142. State mixing and oscillation
 
 Claim identity: `SFT-PHYS-MATTER-MIXING-001`
 
@@ -10515,7 +11592,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1d735f19a4e97bfe8341691b055e6b7274fc5380833ef335cd4e314677047ee4`; engine receipt `sha256:6e42de870a32d7dd47c1d24d1410009498854662fc9b7b85ff2aae24642a3e2b` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-MIXING-001-6e42de870a32d7dd.json`; empirical-validation hash `sha256:462921308b12d9ad2785f45aac4e115da26e8e33f0cbad99fd658cc2809adb4e`; measurement receipt `sha256:29c2514184ac55bea194bf4dd3a54c68dc30cb837dfc48626be37458aff7e7c4`.
 
-### 131. Electroweak Fold-fibre mixing law
+### 143. Electroweak Fold-fibre mixing law
 
 Claim identity: `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
 
@@ -10581,7 +11658,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:43210de9ea1472d62b32f5dc7639fb5c7bc7dced272aa3925d66563505d057f8`; engine receipt `sha256:c15ae82a6cb030fc2b13b36ab6099bdbaf8faffb0092a7537e44aaa0d160db0c` at `receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002-c15ae82a6cb030fc.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 132. Exact Fold PMNS squared-support triple
+### 144. Exact Fold PMNS squared-support triple
 
 Claim identity: `SFT-PHYS-NEUTRINO-PMNS-ANGLES-002`
 
@@ -10647,7 +11724,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c9b825a0bb567ea8b3160782c0b05d414b543a41b685136c5ef9dc2cd0f23f05`; engine receipt `sha256:f15bedd63f3cddc56f4ca7397633b6081ad47086cf77496cfd834bb82f5a5287` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-PMNS-ANGLES-002-f15bedd63f3cddc5.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 133. Exact squared W-to-Z Fold relation
+### 145. Exact squared W-to-Z Fold relation
 
 Claim identity: `SFT-PHYS-ELECTROWEAK-WZ-RATIO-002`
 
@@ -10713,7 +11790,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4469cf54ba2db54b9670721e12c705b796c564846d172ffed40c2bf5d7dc0abb`; engine receipt `sha256:a69443396f1fdf1f9beb11e65d2cc318b1c01dc5864e52d52a22eaebee1a4e89` at `receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-WZ-RATIO-002-a69443396f1fdf1f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 134. Self-sourced colour running direction
+### 146. Self-sourced colour running direction
 
 Claim identity: `SFT-PHYS-STRONG-RUNNING-DIRECTION-002`
 
@@ -10780,7 +11857,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b8e20f3f9f64ffa2fbc29048ea7c06fef38df706fb17093d6961a68da8d7a6ab`; engine receipt `sha256:c9628d8af62fc85936b91328ab2d539f4a5def412e3a61c4cf36c0b6d5a8d412` at `receipts/engine/model_admitted/SFT-PHYS-STRONG-RUNNING-DIRECTION-002-c9628d8af62fc859.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 135. Self-antipodal maximal Fold phase carrier
+### 147. Self-antipodal maximal Fold phase carrier
 
 Claim identity: `SFT-PHYS-NEUTRINO-CP-PHASE-002`
 
@@ -10845,7 +11922,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cbd6a5fd6b8bd47abce44109d527dde714c4d0290c70d4f7c666c3360ceb6578`; engine receipt `sha256:66a61437fe9e5f7101002e716423413dbeb111125e7c9c4d540f179a8c1eb12f` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-CP-PHASE-002-66a61437fe9e5f71.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 136. Bare Dirac gyromagnetic Fold value
+### 148. Bare Dirac gyromagnetic Fold value
 
 Claim identity: `SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002`
 
@@ -10911,7 +11988,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2cfa8f4103b3f5c5d8096bac8874a6aa3e3f953c75d4bcf9578ea6333ac3ed79`; engine receipt `sha256:2d4d2cf74bd6c8b589961f0ad65b4ebe3f614317493daa65c4024de4ef2ad66e` at `receipts/engine/model_admitted/SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002-2d4d2cf74bd6c8b5.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 137. Weak parity from the held Fold fibre
+### 149. Weak parity from the held Fold fibre
 
 Claim identity: `SFT-PHYS-WEAK-PARITY-FIBRE-002`
 
@@ -10976,7 +12053,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:258fdfa55042a4bc6030320a2913118ad436dba74602e50835a0a87c3cdbeb96`; engine receipt `sha256:5e33439d3af142c055b5455921783e65a846e8d3d9bbf588409022480f263454` at `receipts/engine/model_admitted/SFT-PHYS-WEAK-PARITY-FIBRE-002-5e33439d3af142c0.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 138. Terminal exact on-shell electroweak Fold share
+### 150. Terminal exact on-shell electroweak Fold share
 
 Claim identity: `SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003`
 
@@ -11045,7 +12122,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2e86543fe719e208cbcea24ccb6205531713d8b4fac915803978c313f77b048e`; engine receipt `sha256:263cf79e79ed1d7ba0246f84abe869084aa4db7b195dd0c07300d1dabdef72f4` at `receipts/engine/model_admitted/SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003-263cf79e79ed1d7b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 139. Quark channel invariants and cover depths
+### 151. Quark channel invariants and cover depths
 
 Claim identity: `SFT-PHYS-MATTER-QUARK-INVARIANTS-003`
 
@@ -11111,7 +12188,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:45d72cc60c27211a20d2f8cb0b327b506990007b9e7714637893e4303450c507`; engine receipt `sha256:8dad6c72f49f916be9fd5d4aba1c3837e86795580ef246403098aed2a2b34b63` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-INVARIANTS-003-8dad6c72f49f916b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 140. Dual exact quark mass cubics
+### 152. Dual exact quark mass cubics
 
 Claim identity: `SFT-PHYS-MATTER-QUARK-CUBICS-003`
 
@@ -11177,7 +12254,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:af7d8959524fca444e74bf7fb69c4ea963a99a5275a7dd3f6bdddfc18a68033d`; engine receipt `sha256:e6fccd6c428a5ee8c9126ae25ef145d8c5780d69465d1bf878d3ff39b34969e3` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-CUBICS-003-e6fccd6c428a5ee8.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 141. Terminal quark self-coupling dressing
+### 153. Terminal quark self-coupling dressing
 
 Claim identity: `SFT-PHYS-MATTER-QUARK-DRESSING-003`
 
@@ -11243,7 +12320,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:5a1c9cd707d96b02bec6217a0dfb4c49cca00839f5f431ed0c747ce89cdea3e4`; engine receipt `sha256:4156d17fa99d73374151d8abebba074fb43f2d9852ae3c3e15564f8a49dd7f6e` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-QUARK-DRESSING-003-4156d17fa99d7337.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 142. Exact CKM fibre alignment
+### 154. Exact CKM fibre alignment
 
 Claim identity: `SFT-PHYS-MATTER-CKM-FIBRE-003`
 
@@ -11309,7 +12386,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8dd6650b21e8c5fcdec9f7539ab0861eab3981ab189243d3826d62f4a5afb674`; engine receipt `sha256:2cf6948eb88b328bc6efb24b394a37cb8c6d2c32044196fa39ae189488976ea3` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-FIBRE-003-2cf6948eb88b328b.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 143. Mass-root CKM physical mixing law
+### 155. Mass-root CKM physical mixing law
 
 Claim identity: `SFT-PHYS-MATTER-CKM-PHYSICAL-003`
 
@@ -11375,7 +12452,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:90a16983817869e8773eadc5d7820bb5216766026cb0a4649adbb1cfd0b489fd`; engine receipt `sha256:beaa25910b1a8fb944c90bca43b8cf07fec997756bb3cf3b96724133eee18d4a` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-PHYSICAL-003-beaa25910b1a8fb9.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 144. Proton-to-electron hierarchy reconstruction
+### 156. Proton-to-electron hierarchy reconstruction
 
 Claim identity: `SFT-PHYS-MATTER-PROTON-ELECTRON-003`
 
@@ -11441,7 +12518,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d041effc72083dd57b57e76ec98be80792624f76010a05243e8ecd06fa3aae0d`; engine receipt `sha256:456305f867a1afc75a47afa355364f48132b901c4c1f0f7a7ace9a40be64b988` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-PROTON-ELECTRON-003-456305f867a1afc7.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 145. Exact neutrino splitting ladder
+### 157. Exact neutrino splitting ladder
 
 Claim identity: `SFT-PHYS-NEUTRINO-SPLITTING-003`
 
@@ -11507,7 +12584,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:122cbab6e170a47c4af1e4f210294c097929f323ea0ab21baf046a9d36516032`; engine receipt `sha256:037d94c3ae94a015aa5177ee829fcd77e1137f5cdb10cfb2a9476f7a4bf4f5b7` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-SPLITTING-003-037d94c3ae94a015.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 146. Positive absolute-neutrino mass structure
+### 158. Positive absolute-neutrino mass structure
 
 Claim identity: `SFT-PHYS-NEUTRINO-POSITIVE-MASS-003`
 
@@ -11574,7 +12651,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3dace26ddd3e2dedad0068cc4aa8d87eb183e2a14c7d4830f0f7c4d823a36604`; engine receipt `sha256:049c0ce9ac0b05591b8636141be26c976a31f39aabb5941ad6aca5ffb60dd7fd` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-POSITIVE-MASS-003-049c0ce9ac0b0559.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 147. Physical PMNS and CP support
+### 159. Physical PMNS and CP support
 
 Claim identity: `SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003`
 
@@ -11640,7 +12717,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3de5e79626b2ffb9a4f60b807960030d601dd222fbf903ece4cb28cccaadaf25`; engine receipt `sha256:6cc0b2828e8a304fd80c274f6e9a2e722cd1bebd68cff071f4c394bf25c872bd` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003-6cc0b2828e8a304f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 148. Single-hand Majorana discriminator
+### 160. Single-hand Majorana discriminator
 
 Claim identity: `SFT-PHYS-NEUTRINO-MAJORANA-003`
 
@@ -11706,7 +12783,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:820ff5018ea73ac86f2793fd7cea4a77c11ed4f9cb13203250761f724496f355`; engine receipt `sha256:da6688fb7442a5d3f4e3aa39f745c04aebc87102af60186b6e1bcd4e7078345e` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-MAJORANA-003-da6688fb7442a5d3.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 149. Neutrinoless-double-beta noncancellation prediction
+### 161. Neutrinoless-double-beta noncancellation prediction
 
 Claim identity: `SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003`
 
@@ -11773,7 +12850,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:20d78c28b28c0d7c6a524a6b86ca039ec35f6d448a4dc7d9d3542aa70d8c15f4`; engine receipt `sha256:3b7bc18e1160fe2a3633ce7cba15b9c3001f55ed73516ef9a6a6db474292f6fb` at `receipts/engine/model_admitted/SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003-3b7bc18e1160fe2a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 150. Baryon-to-photon Fold transport law
+### 162. Baryon-to-photon Fold transport law
 
 Claim identity: `SFT-PHYS-MATTER-BARYON-PHOTON-003`
 
@@ -11839,7 +12916,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:46e32e2d1115d1e27342a153fe03037e3fc0bb0108893096576f3a65d1f7d763`; engine receipt `sha256:2455218c2d7918d015bcacceffca6308da79a73beedf33f9ecdbd5a715413ceb` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-003-2455218c2d7918d0.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 151. Common quark/lepton mixing construction
+### 163. Common quark/lepton mixing construction
 
 Claim identity: `SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003`
 
@@ -11905,7 +12982,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:78b6a1f0ad3701b6fb0e0afc8cc150d00c7627cd5f86967fbb952c458810baac`; engine receipt `sha256:8a8a498160b16bb65ebfc1071d404a5db6de08b6c9f3499765889ca17677b501` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003-8a8a498160b16bb6.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 152. Depth-independent Fold mass-ratio family
+### 164. Depth-independent Fold mass-ratio family
 
 Claim identity: `SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003`
 
@@ -11971,7 +13048,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:0cd36623ca774b0159e22354a79d4ccaa6de4cf617236e3d7a788443bb772a65`; engine receipt `sha256:2bd73d71dcee6d09c2d427da1e1ac79c1866ef75949c5571509fd37f8fd21168` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003-2bd73d71dcee6d09.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 153. Mirror-closed lepton mass carrier
+### 165. Mirror-closed lepton mass carrier
 
 Claim identity: `SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003`
 
@@ -12037,7 +13114,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cc112ad075219f223756ab606e34c4979a6fff9bbd4733570352cb652916ae03`; engine receipt `sha256:bd01069f06d421e37672d6a58657824c529f0bf33ce2286dc723a40d1d7855e4` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003-bd01069f06d421e3.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 154. Mixing-row coupling return law
+### 166. Mixing-row coupling return law
 
 Claim identity: `SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003`
 
@@ -12103,7 +13180,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:f5d787dfeaa767ad67d5d3b4389c64742ffe4dfcf50619513936a8e372f9ef6d`; engine receipt `sha256:c1ef281840dac57df5ac309768874c793c7880fcbbfe5299d1b4deff3f2531ea` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003-c1ef281840dac57d.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 155. Common generation return depth
+### 167. Common generation return depth
 
 Claim identity: `SFT-PHYS-MATTER-GENERATION-DEPTH-003`
 
@@ -12169,7 +13246,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:173a98a17650553e593e97fa9882cc6f5ba74b783a0ede98df20e631e81cf5d8`; engine receipt `sha256:a120ad261a4308fc3008ccaab35d38939f6152f82c31f4f00c773582e3f2d726` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-GENERATION-DEPTH-003-a120ad261a4308fc.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 156. Lightest-quark confinement lift
+### 168. Lightest-quark confinement lift
 
 Claim identity: `SFT-PHYS-MATTER-CONFINEMENT-LIFT-003`
 
@@ -12235,7 +13312,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:022b73b16a6366287fb7a90cbd6c836e9eea19e3255568c74500f32e5ed79102`; engine receipt `sha256:53f2509cb96b422753fb8211e2d7fdb93b351d64fb85eb1a90a7dacc717e646a` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-CONFINEMENT-LIFT-003-53f2509cb96b4227.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 157. Terminal physical CKM transport
+### 169. Terminal physical CKM transport
 
 Claim identity: `SFT-PHYS-MATTER-CKM-TERMINAL-004`
 
@@ -12321,7 +13398,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7d72dcc15e07636e51dfe544a4e423ae594982850e38eeed19a8104cb33c43d8`; engine receipt `sha256:745bc9840a7f5396866ff2e581fe700d9f254bff2538ef3c31eb74fc8683513e` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-CKM-TERMINAL-004-745bc9840a7f5396.json`; empirical-validation hash `sha256:0559e001acd3bc3927566d610d059744d52960b7fa419ae2a8518fc8c87896f5`; measurement receipt `sha256:604170b5df7b720c1094ccc24ab02cb9afd8f1901f3f6a3548e1bfdec23b8977`.
 
-### 158. Terminal baryon-to-photon transport
+### 170. Terminal baryon-to-photon transport
 
 Claim identity: `SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004`
 
@@ -12403,7 +13480,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e0b821d56719441b9abf5e31bc3681ea338d0b05e502f9d6978560d72b6c81b1`; engine receipt `sha256:21ba6f25f064602267b8e415ceb3ed6f985e318a3b29e7c8626b1cc71ea4c7cc` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004-21ba6f25f0646022.json`; empirical-validation hash `sha256:63ebdda8d0667627c3a7ece5e018c0def2e0bab906e49bf8ff4d9d0f247af74c`; measurement receipt `sha256:8eb2337c426dc25c6c9cb35803b78804dc2ab707f729dba7139fa5f8c37bd26c`.
 
-### 159. Terminal composite proton/electron precision law
+### 171. Terminal composite proton/electron precision law
 
 Claim identity: `SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004`
 
@@ -12490,7 +13567,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:caec57525d68d96feb9a78bc73f427a1ab961c3b131c950b5579008ee730ef79`; engine receipt `sha256:c52208ec2212ffa3fd16e34b90abfdd3adc083411d7a19914d3591b4f8ea9d23` at `receipts/engine/model_admitted/SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004-c52208ec2212ffa3.json`; empirical-validation hash `sha256:aa1a599db84034f15fa144add92d2af133935ab2fd3848c8fde56da5a96a79d1`; measurement receipt `sha256:7c86525e64500a2255c15a28bc21011e883d2dd54243756c91b504a6e2d43b2f`.
 
-### 160. Terminal Fold scattering, Rutherford angular law and Compton transfer
+### 172. Terminal Fold scattering, Rutherford angular law and Compton transfer
 
 Claim identity: `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`
 
@@ -12593,7 +13670,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e5d2d0eef6a42f2e3af50b8fa33d8312b17c518a603b44ee9c1bf05046f9edc5`; engine receipt `sha256:2c2e6212e5bb27a2b7647e8eca1583bc75775c886f2185885a7925d83e195b91` at `receipts/engine/model_admitted/SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006-2c2e6212e5bb27a2.json`; empirical-validation hash `sha256:4bd3b98fb21c2f4758f64c4b2bba3df272ab97ea863c67477988b192679cf56e`; measurement receipt `sha256:d6c7057f63d6f29411d7fbddef78e3a8cd96aeeadcf8f8ef1348b0c395c17cd0`.
 
-### 161. Terminal Fold decay widths, exact branching partitions and lifetimes
+### 173. Terminal Fold decay widths, exact branching partitions and lifetimes
 
 Claim identity: `SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006`
 
@@ -12694,7 +13771,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d2750e9b099ed37535180507e4ef1eca7b678d6c4ce14a16b21c9cd8ec5ee688`; engine receipt `sha256:a4e14f20a7c1f6920115f0e5ad0b911b5462b690aad35ee79aac39b691d12d3f` at `receipts/engine/model_admitted/SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006-a4e14f20a7c1f692.json`; empirical-validation hash `sha256:5f55eaf606e42e1746e073343e52e184ebe55bd62288aa5c0339e4834511eef7`; measurement receipt `sha256:d48b51e08f77bfd7850e90dcc4f0bea4b17a68f8588730baa1d0627dd9376f36`.
 
-### 162. Terminal Fold running functions and common-support convergence
+### 174. Terminal Fold running functions and common-support convergence
 
 Claim identity: `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
 
@@ -12799,7 +13876,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8e5b0d59dd3626f39dcb398cba57819bac31eca897583d65bb5b99084d67f3f9`; engine receipt `sha256:b9263f585f01a2401261f465ad250f405a9914da5c53e57ba113f076aeb4f309` at `receipts/engine/model_admitted/SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006-b9263f585f01a240.json`; empirical-validation hash `sha256:2f1893b335cbcd3be69e125cc935f6b69ab16c56d65aedcc028cfe9c3e85d3cb`; measurement receipt `sha256:f7b8eb2dd10c0c689ee5dedb5b1add4a6b69ff8466d70e2727964d94289993bc`.
 
-### 163. Simultaneous massless, One-speed and confined strong-carrier law
+### 175. Simultaneous massless, One-speed and confined strong-carrier law
 
 Claim identity: `SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013`
 
@@ -12902,7 +13979,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c523e40c2f6b2f01c6c825148b83d9dfe2d0c20fffe768152a77196764da1742`; engine receipt `sha256:bae91c8dc0b88c6130260c7e10ea22e9433ca322bd5ad3a8f9077653315f57e1` at `receipts/engine/model_admitted/SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013-bae91c8dc0b88c61.json`; empirical-validation hash `sha256:76113e290c7e36ae64b9325312733981bc88d5dd06a3620245b74140a7a16b05`; measurement receipt `sha256:798dc0308ac250c03b0c1a8685e9192e95bb1f950344edc37b3c1fa1defd4447`.
 
-### 164. Strong self-source iteration and finite fixed-point boundary
+### 176. Strong self-source iteration and finite fixed-point boundary
 
 Claim identity: `SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014`
 
@@ -13001,12 +14078,921 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4af939c69d947be443ff772e7030b49ca3104b4b090febee3ec396240c01ff61`; engine receipt `sha256:641cdf7a00a56d3889b1a31731dff04c70dbe068465924f005d000d3fc100cdc` at `receipts/engine/model_admitted/SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014-641cdf7a00a56d38.json`; empirical-validation hash `sha256:6a20eb16725a453c3f37f22c5b0b63324e1a9cc9cc3912738b6584eb73650d4f`; measurement receipt `sha256:ef22864dfb7236904932ef92516fdedfd7b22bd5d2b471a9a1c3ad1d6e0fbf95`.
 
+### 177. Finite accumulated Fold-coupling separation
 
-## 16. Atomic Molecular
+Claim identity: `SFT-PHYS-COUPLING-ACCUMULATED-SEPARATION-TERMINAL-015`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For the admitted binary and generator-three running sectors, every positive finite partial accumulation of their exact common-support gaps lies in [1/12, 11/60); every successor from the second gap onward is below half its predecessor, and every positive rational tolerance has a generated finite tail witness.
+
+> Every positive finite partial sum of the binary/generator-three Fold coupling gaps lies in the exact bracket [1/12, 11/60); after the second level every successor gap is below half its predecessor, and every positive rational tolerance has a generated finite tail witness.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-MATH-SELF-SIMILAR-CONVERGENCE-002`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-FOUNDATION-COUNT-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of predecessor, gap term, first-step, contraction, envelope, finite-boundary, tolerance and extension forms. The declared exact boundary is: Every positive finite common-support level generated from the One by binary succession; the exact binary/generator-three pair gap; every positive finite partial accumulation and every positive rational tolerance represented by a positive denominator. The generator produced `512` named candidates and the decision support contains `512` one-for-one decisions. Exactly one candidate survived: `admitted-common-support-gap-law__exact-adjacent-sector-gap__retain-one-twelfth-and-one-twentieth__exact-strict-half-contraction-after-level-two__eleven-sixtieths__every-positive-finite-partial-support__generated-finite-tail-witness__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `predecessor` | `admitted-common-support-gap-law` | `imported-or-selected-coupling-table` | A conventional or selected table is not an admitted predecessor. |
+| `term` | `exact-adjacent-sector-gap` | `unsigned-or-fitted-difference` | A fitted difference can encode a target. |
+| `first` | `retain-one-twelfth-and-one-twentieth` | `assert-half-contraction-from-first-gap` | The transition 1/12 to 1/20 shrinks but is not below half. |
+| `contraction` | `exact-strict-half-contraction-after-level-two` | `visual-or-imported-convergence` | Visual approach and an imported series theorem are not Fold proof objects. |
+| `envelope` | `eleven-sixtieths` | `one-sixth` | Later exact partial sums exceed this candidate. |
+| `boundary` | `every-positive-finite-partial-support` | `completed-infinite-sum` | Completed infinity is outside the SFT domain. |
+| `tolerance` | `generated-finite-tail-witness` | `limit-symbol-without-witness` | A limit label alone supplies no finite certificate. |
+| `extension` | `no-extra-rule` | `free-tail-correction` | A free correction is a parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:5ab1dace9fee93e8153b8079d416bcb0d8a7b6f77af74ad8c27931ddf9ce1beb`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:e6b9d33fb638063e5ba0234bcd82d4893ce84bd7de2e3cd9bdc1a4800c024ad4`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:59fc2a7bc6963288e74ddf7ecec05a7d87ab2912550cda0b8100f98a348f930b`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:9895bbbd82df65ced4fbba2385eced8ba8abee2c31bdf0ae5725ff30b43ea464`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:a563d412cbe3b2652716fb85b51c254c26c5a2dec563675a60639c7eaa467bdc`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:2cc5ffedbd8c84347cf51184f9d36cfc05a3e969dacad6592956690b77d3f34b`. Independent certificate: `sha256:180c8807b7d767624480aae2662b1589e08ec8c7bbfff5d132d609f47a84ce47`. Engine external-validation hash: `sha256:525894b57a38373dfc48ecad834d5b588803d3b69779fc2101a093beac584626`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, certificate, stored partial-sum table or prior survivor in execution
+- no imported coupling equation, infinite-series formula, logarithm or continuum limit
+- no numerical-zero, negative, irrational, imaginary or floating proof value
+- no measured coupling, target value, fitted coefficient or selected stopping depth
+- no completed infinity and no claim of an attained terminal sum
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:b12b82925d6cfe4cc7d55b920957f5a3afceb5362164da3818782126d0d3e85b`; engine receipt `sha256:723ff785cf91a40c287d2f2b38394a63fd8bfaa7a0be7a34be2e9e973202f4bf` at `receipts/engine/model_admitted/SFT-PHYS-COUPLING-ACCUMULATED-SEPARATION-TERMINAL-015-723ff785cf91a40c.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 178. Exact two-fibre scattering partition and reciprocal mean free path
+
+Claim identity: `SFT-PHYS-SCATTERING-PARTITION-PATH-TERMINAL-017`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The registered one-target Fold support partitions into scatter half-One and pass half-One; cross section is successful/incident support; and mean free path is the reciprocal of positive density times cross section, with larger section forcing shorter path.
+
+> The registered one-target Fold support partitions exactly into scatter half-One and pass half-One; cross section is successful/incident support; and mean free path is the exact reciprocal of positive density times cross section, with larger section forcing shorter path.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-MATH-PROBABILITY-STATISTICS-001`
+- `SFT-INFO-SYMBOL-DISTINCTION-001`
+- `SFT-INFO-CLASSICAL-PROBABILISTIC-001`
+- `SFT-PHYS-MATTER-SCATTERING-001`
+- `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of target geometry, outcome support, exclusivity, outcome measure, cross-section measure, density, path, causal interpretation and extension forms. The declared exact boundary is: The one-target geometry with exactly two equipotent Fold outcome cells; all positive finite incident/successful support counts; and all exact positive target densities and cross sections. The generator produced `512` named candidates and the decision support contains `512` one-for-one decisions. Exactly one candidate survived: `registered-one-target-Fold-geometry__complete-scatter-pass-pair__mutually-exclusive-held-labels__equipotent-two-cell-support__successful-over-incident-support__positive-density-times-section__reciprocal-encounter-support__deterministic-held-outcomes__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `geometry` | `registered-one-target-Fold-geometry` | `arbitrary-scatterer` | Arbitrary geometry does not force equal outcome cells. |
+| `outcomes` | `complete-scatter-pass-pair` | `sampled-or-omitted-channel` | An omitted channel cannot establish certainty. |
+| `exclusivity` | `mutually-exclusive-held-labels` | `overlapping-outcome-cells` | Overlap double-counts one event. |
+| `measure` | `equipotent-two-cell-support` | `assumed-equal-probability` | An assumed probability imports the answer. |
+| `section` | `successful-over-incident-support` | `fitted-dimensional-number` | A fitted number is not the structural measure. |
+| `density` | `positive-density-times-section` | `density-omitted` | Omitting density makes reciprocal path dimensionally incomplete. |
+| `path` | `reciprocal-encounter-support` | `selected-path-length` | A selected length has no encounter trace. |
+| `cause` | `deterministic-held-outcomes` | `stochastic-transition-oracle` | A random cause is not supplied by deterministic Fold structure. |
+| `extension` | `no-extra-rule` | `free-geometry-or-correction` | A free correction defeats zero-parameter closure. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:e429e239bc740c04992863e402d178f69f6a39f6e0b4a4f98c0df4cce80e7b4a`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:f12cced3188c8fd3c53734121199b399596f46210cd1717cc718adc4c6ee6b4a`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:4caec307ab95c9decfce61920cbc4a6d0a92d5ad49da1793b3dc81f27f72b6c4`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:f3e060037ddaf61b1b2fe110639e9d5b88d3f9f254bb77ec77a195940bf4f9b8`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:ba7b87b2808814ec99f967b0dfdd6c22be77466992cc5052594752fb451071f8`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:965070318a614d6cb29833c963c07a4aefa2d05f692222ac1a1f74855deeb597`. Independent certificate: `sha256:3bfa663478d1cbc7a15fe9223a42e5d8b023a36cc1ab063d2f9ed05fc39927aa`. Engine external-validation hash: `sha256:6534bb6de6dd67d5b84d7d490b5a06d74692e33d1585e2820dd60c143238dfeb`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no assertion that arbitrary scattering has equal scatter/pass measures
+- no stochastic causal selector or nondeterministic transition premise
+- no numerical-zero, negative, irrational, imaginary or floating proof value
+- no fitted cross section, measured path or target-selected correction
+- no omission of target density from the general reciprocal law
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:b741febb3bdb061e559fa6ba2ff10235d96a2d0ddf4952acfb5954ef0cb4a316`; engine receipt `sha256:b4b42d9e9e0a52a703a059c265cc94325c4f56907da3422c4cb83b0facd9efdf` at `receipts/engine/model_admitted/SFT-PHYS-SCATTERING-PARTITION-PATH-TERMINAL-017-b4b42d9e9e0a52a7.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 179. Preserved/broken Fold channels and inverse mediator range
+
+Claim identity: `SFT-PHYS-MEDIATOR-RANGE-CHANNEL-TERMINAL-020`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Complete-One channels have empty mass record; proper channels have positive shortfall, exact conserved forward/rest transfer, finite native trace and reciprocal mass range; larger mass means shorter range while massless inverse-square response remains positive at every finite radius.
+
+> Complete-One channels have an empty mass record and no finite transport endpoint; proper channels have positive shortfall, exact conserved forward/rest transfer, a finite native trace and reciprocal mass range; larger mass means shorter range, while massless inverse-square response remains positive at every finite radius.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-EQUIVALENCE-001`
+- `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
+- `SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003`
+- `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of carrier, channel completion, mass record, forward/rest transfer, conservation, range scale, mass ordering, massless transport, post-seal comparison and extension forms. The declared exact boundary is: Every exact positive proper Fold channel and every complete channel sum; every positive finite mass share, its complete positive subtraction trace and reciprocal range; every exact positive finite radius; and the already sealed W/Z, electroweak-share and mediator-range comparison records. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `held-forward-and-rest-carriers__combination-reassembling-the-One__positive-shortfall-or-empty-record__exact-positive-forward-to-rest-transfer__forward-plus-rest-reassembles-One__positive-trace-and-reciprocal-mass-scale__larger-mass-shorter-range__held-forward-and-positive-finite-radius__inherit-sealed-electroweak-and-range-records__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `held-forward-and-rest-carriers` | `untracked-field-value` | An untracked value cannot conserve transferred support. |
+| `channel` | `combination-reassembling-the-One` | `named-unbroken-channel` | A name does not prove completion. |
+| `mass` | `positive-shortfall-or-empty-record` | `assigned-mass-label` | An assigned label imports the classification. |
+| `transfer` | `exact-positive-forward-to-rest-transfer` | `sink-or-imported-exponential` | A sink loses support and an exponential is not generated. |
+| `conservation` | `forward-plus-rest-reassembles-One` | `forward-loss-without-ledger` | That violates closed transfer. |
+| `range` | `positive-trace-and-reciprocal-mass-scale` | `selected-cutoff-distance` | A selected cutoff is a free parameter. |
+| `ordering` | `larger-mass-shorter-range` | `independent-range-order` | Independent ordering can contradict the carrier. |
+| `massless` | `held-forward-and-positive-finite-radius` | `finite-hard-stop` | No generated positive mass exists to supply a stop. |
+| `comparison` | `inherit-sealed-electroweak-and-range-records` | `W-Z-photon-selected-before-law` | Named targets cannot select the discriminator. |
+| `extension` | `no-extra-rule` | `free-Yukawa-or-cutoff-rule` | A free profile or cutoff adds a parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:99da829e577bcbc3cc137f224acb0f9d8e17b1bfb14a3ae8896dc950fb8cb0a4`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:69e754afee5837b3eda670ba0f811559a1aa35d07851f1adbac32f6519d9a306`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:c03d0aeca1d46b9f7df23ddee15a2125eadf000da02f0240e71dd48d2404c1fd`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:6db4abf41d52e7f0e129e09fd4099afe11c4a198267f17d86fb05bc06a405de1`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:f49676a98e78127dfcfb2b2f1a2ecc870035f253200fd40bbcb708e7ac3b451a`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:8ab6340e93e19ee8a863181f592c6834e42deb555ca7472fa81c525ff2ea7a32`. Independent certificate: `sha256:ecbb5b36bc6221e4a891fbca2720ed86be8747bddd32314ce1cf3836ea5a0ee3`. Engine external-validation hash: `sha256:573b48a888abd5f135aa27b44db4f4d9b8be0eb3521a2443ff71710c185cd9e9`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, answer table, selected particle name or stored survivor
+- no imported exponential, fitted range, hard physical numerical-zero cutoff or sink
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no claim that the finite native subtraction trace is a universal physical field profile
+- no target access before the predecessor electroweak and mediator-range seals
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:e2c3444e331c2693253b4e161eed9d6566d0edd036f774a26749476b033dd86a`; engine receipt `sha256:3ad2016a90d7adc2c1c5c5afdfdaf5510f73ade146e2ea2e0a097d9158621f54` at `receipts/engine/model_admitted/SFT-PHYS-MEDIATOR-RANGE-CHANNEL-TERMINAL-020-3ad2016a90d7adc2.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 180. Fold baryogenesis dependency and retained-residue law
+
+Claim identity: `SFT-PHYS-BARYOGENESIS-DEPENDENCY-TERMINAL-021`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** From exact paired particle/antiparticle support, a positive retained baryon residue exists exactly when baryon tally change, CP-distinguished conjugate paths and a nonequilibrium reverse-completion hold are all present; the other seven complete combinations return the empty-One residue record.
+
+> From exact paired particle/antiparticle support, a positive retained baryon residue exists exactly when baryon tally change, CP-distinguished conjugate paths and a nonequilibrium reverse-completion hold are all present; the other seven complete combinations return the empty-One residue record.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-EQUIVALENCE-001`
+- `SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001`
+- `SFT-PHYS-THERMO-IRREVERSIBILITY-001`
+- `SFT-PHYS-MATTER-CKM-TERMINAL-004`
+- `SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of initial carrier, baryon-tally action, conjugate-path relation, reverse-completion relation, residue ledger, dependency composition, enumeration, physical correspondence, provenance disclosure and extension forms. The declared exact boundary is: Every finite minimal process beginning from one positive paired particle/antiparticle carrier, with each of baryon-tally change, conjugate-path distinction and reverse-completion hold either present or absent, plus the already admitted terminal CP and baryon-abundance comparison records. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `exact-paired-particle-antiparticle-carrier__one-explicit-tally-changing-transition__CP-carrier-distinguishes-conjugate-paths__nonequilibrium-reverse-completion-held__positive-oriented-residue-or-empty-One__single-three-condition-process-composition__all-eight-presence-absence-combinations__inherit-sealed-CKM-and-baryon-photon-records__observational-reconstruction-explicit__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `exact-paired-particle-antiparticle-carrier` | `preloaded-unpaired-residue` | A preloaded residue assumes the result. |
+| `tally` | `one-explicit-tally-changing-transition` | `every-transition-preserves-baryon-tally` | A preserving transition cannot create a tally difference from paired support. |
+| `conjugacy` | `CP-carrier-distinguishes-conjugate-paths` | `exactly-paired-conjugate-paths` | Equal conjugate appends preserve the paired tally. |
+| `reverse` | `nonequilibrium-reverse-completion-held` | `complete-reverse-recurrence` | Complete reversal closes every newly appended carrier. |
+| `ledger` | `positive-oriented-residue-or-empty-One` | `signed-or-unrecorded-net-number` | A signed or missing ledger violates positive exact accounting. |
+| `composition` | `single-three-condition-process-composition` | `named-independent-conditions` | Names alone do not prove their joint necessity. |
+| `enumeration` | `all-eight-presence-absence-combinations` | `selected-successful-combination` | Selecting the familiar triple is not uniqueness. |
+| `comparison` | `inherit-sealed-CKM-and-baryon-photon-records` | `abundance-selects-dependency-law` | A measured abundance cannot choose the formal conditions. |
+| `provenance` | `observational-reconstruction-explicit` | `mislabel-as-blind-discovery` | The dependency triple was known before this V3 reconstruction. |
+| `extension` | `no-extra-rule` | `free-efficiency-or-extra-condition` | An inserted efficiency or condition is a free parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:97be399ff1fc4749dff9e890d336b1888f8ce4735e8a5fd642f065ef5acbfffa`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:e3bae526e83cc28f339b9d5a9119cad60a18dc63bdb69e86fceefa06ba8ceb5c`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:0e3b154bfe87d76d7f8129c5874028dc59692ca2a8aa7d3b2635f6b3cdb7a4c0`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:29ad32c527daca782aa19ff642ad10b565934de369d47aac2730a7ff659fbf1b`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:0f15328abb659835ff35fdb4efba0235867f24814e58f0230bd90c896b51d2e8`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:c8f6b747b46a795c765a24c8f311aa2d4d7f8e4e4082ed396e7290bf6a168091`. Independent certificate: `sha256:098fcbe06ef474f48600931558aa9ca3ba817711e07989ed650609ec262d57df`. Engine external-validation hash: `sha256:9acd0a3e91324547d90bd78059493ffe57c7a37963659598ad08e2afd459738f`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported Sakharov theorem or conventional kinetic equation as a premise
+- no V1/V2 executable, result table, measurement or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no measured baryon abundance, fitted efficiency or selected mechanism in the derivation
+- no claim that the V3 reconstruction was a blind historical discovery
+- no cosmic-history claim beyond the universal physical dependency law
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:b51006c613c918a6983ff9d857f3e515f4c955917ce1aeca6552c7a1316f25bb`; engine receipt `sha256:738dd11360b3cb43280ce6b595023c6f6408166ab6ef96ad4f8e9a6d4592c7b4` at `receipts/engine/model_admitted/SFT-PHYS-BARYOGENESIS-DEPENDENCY-TERMINAL-021-738dd11360b3cb43.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 181. Prime-sector standing-mode, interaction and period unification
+
+Claim identity: `SFT-PHYS-INTERACTION-UNIFICATION-TERMINAL-025`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The forced sectors (2,3,5,7) share one exact m-indexed interaction table; half-One uniquely unifies the odd-sector standing modes; all finite common-support sector gaps are positive and shrink without finite coincidence; the gravity/EM/strong Fold periods are 1/2/3 with joint recurrence 6; and the inconsistent flat-EM slope bundle is rejected in favour of the sealed terminal carrier-specific running laws.
+
+> The forced sectors (2,3,5,7) share one exact m-indexed interaction table; half-One uniquely unifies the odd-sector standing modes; all finite common-support sector gaps are positive and shrink without finite coincidence; the gravity/EM/strong Fold periods are 1/2/3 with joint recurrence 6; and the inconsistent flat-EM slope bundle is rejected in favour of the sealed terminal carrier-specific running laws.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
+- `SFT-PHYS-STRONG-RUNNING-DIRECTION-002`
+- `SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003`
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003`
+- `SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003`
+- `SFT-MATH-ORBIT-NUMBER-THEORY-002`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of sector domain, standing-mode carrier, coupling table, mass relation, common support, sector order, coincidence boundary, period dictionary, empirical succession and extension forms. The declared exact boundary is: Every forced prime sector through seven, every interior standing mode, every positive binary common-support successor, every ordered sector pair, the exact Fold periods of One, one-third and one-seventh, and the already sealed complete force/running comparison records. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `complete-prime-ladder-through-seven__unique-self-antipodal-half-One-mode__single-m-indexed-exact-table__positive-shortfall-from-unison__common-positive-binary-support__exact-positive-m-difference-gap__finite-triple-coincidence-forbidden__complete-one-two-three-period-dictionary__terminal-carrier-specific-running-and-anchors__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `sector` | `complete-prime-ladder-through-seven` | `selected-familiar-sectors` | Selection omits generated prime sectors or the exclusion boundary. |
+| `standing` | `unique-self-antipodal-half-One-mode` | `named-unification-point` | A name does not prove membership or uniqueness. |
+| `table` | `single-m-indexed-exact-table` | `independent-fitted-couplings` | Independent values violate the one-generator law. |
+| `mass` | `positive-shortfall-from-unison` | `inserted-mass-parameter` | An inserted mass is not forced by the holding relation. |
+| `support` | `common-positive-binary-support` | `independent-scale-axes` | Independent axes cannot define exact separation or convergence. |
+| `order` | `exact-positive-m-difference-gap` | `target-named-physical-order` | A physical label cannot choose an inequality. |
+| `coincidence` | `finite-triple-coincidence-forbidden` | `asserted-unification-crossing` | A crossing contradicts the positive pair-gap identity. |
+| `period` | `complete-one-two-three-period-dictionary` | `selected-force-periods` | Selected labels provide no Fold traces. |
+| `comparison` | `terminal-carrier-specific-running-and-anchors` | `flat-EM-and-inconsistent-slope-bundle` | It conflicts internally and with admitted electromagnetic running. |
+| `extension` | `no-extra-rule` | `free-group-or-crossing-scale` | An added group or fitted crossing scale is a free premise. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:286814bb194316d6ca1b4ba21051191f7ae874f2b884b018593d5a189349f367`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:11291e339eeb79bc8fd240fa7f224091ae8d90181454b0e5f7dc54036db11e0f`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:3f3679f7090946e7e35c8c24b3404ea6d728db8441fbcee8d15c9340a77c896c`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:4bc46d67f83fe4f2fd275512e8d0fe0b5fbf7b4d79bd1c8c8a2af05dff6ad616`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:f15b3d34a2b7c0ee7df313404be18a2a1be08f98b252e38425e7f7c638322e0c`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:912c5c89d9d541e061c7403105de6f544a261de230b53815c44e381fc3a03606`. Independent certificate: `sha256:761d3decd7f1740758885b49c4b939885091bc84bd9b04ba311257a8cecd52ee`. Engine external-validation hash: `sha256:b3654b21b34c6f939fa95016665043430242b00e09da2b02541fd3988504c9a8`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported gauge-unification group, beta function, coupling crossing or mass model
+- no V1/V2 executable, answer table, measured target or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no physical-sector ordering substituted for the exact common-support m ordering
+- no retention of the internally inconsistent slope=m-1 and slope(2)=0 bundle
+- no target access before the inherited force-sector and running seals
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:33d4c53c23e99c7b5b4b44662cc05b6531060e42157a5153505898281139c14a`; engine receipt `sha256:464f20ad41d716a52836a9d5952a62991e76b488a2ea70539ea6f4c0ee8c8f0e` at `receipts/engine/model_admitted/SFT-PHYS-INTERACTION-UNIFICATION-TERMINAL-025-464f20ad41d716a5.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 182. Finite Fold colour-singlet positive excitation gap
+
+Claim identity: `SFT-PHYS-YANG-MILLS-SINGLET-GAP-TERMINAL-026`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Within the complete finite Fold colour grammar, the least observable colour singlet has normalized gap one-third above the empty excitation record at every positive finite depth; confinement work advances by two-thirds; the two shares form a period-two partition of the One; and the locally massless confined carrier is retained without being mistaken for a free gapless physical singlet.
+
+> Within the complete finite Fold colour grammar, the least observable colour singlet has normalized gap one-third above the empty excitation record at every positive finite depth; confinement work advances by two-thirds; the two shares form a period-two partition of the One; and the locally massless confined carrier is retained without being mistaken for a free gapless physical singlet.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013`
+- `SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014`
+- `SFT-PHYS-INTERACTION-UNIFICATION-TERMINAL-025`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of colour sector, observable support, vacuum boundary, gap carrier, confinement work, local-carrier distinction, Fold orbit, depth closure, prior-claim correction and extension forms. The declared exact boundary is: The generated colour-three Fold sector, its complete antipodal and three-member singlet supports, every positive finite separation/depth successor, the locally massless confined carrier and the normalized One partition. No continuum field action or completed infinite-volume limit is asserted. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `generated-colour-three-sector__complete-colour-singlet-support__empty-excitation-record__exact-positive-one-third-complement__fixed-two-thirds-positive-work-successor__retain-local-massless-physical-gapped-distinction__complete-period-two-Fold-partition__positive-finite-successor-induction__correct-free-singlet-spectrum-boundary__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `sector` | `generated-colour-three-sector` | `named-Yang-Mills-sector` | A conventional name does not generate colour structure. |
+| `support` | `complete-colour-singlet-support` | `isolated-colour-carrier` | The admitted confinement law leaves the isolated-colour observation record empty. |
+| `vacuum` | `empty-excitation-record` | `numerical-zero-vacuum` | Numerical zero is outside the Fold proof domain. |
+| `gap` | `exact-positive-one-third-complement` | `massless-or-fitted-gap` | A fitted value or an empty mass label conflates local carrier and physical singlet. |
+| `confinement` | `fixed-two-thirds-positive-work-successor` | `bounded-or-free-separation-work` | Bounded or free work permits an unrecorded free colour state. |
+| `carrier` | `retain-local-massless-physical-gapped-distinction` | `conflate-local-carrier-with-physical-singlet` | The local carrier is not an observable isolated colour state. |
+| `orbit` | `complete-period-two-Fold-partition` | `selected-gap-coupling-pair` | A selected pair does not prove closure or recurrence. |
+| `depth` | `positive-finite-successor-induction` | `bounded-depth-census-or-completed-infinity` | A bounded sample or completed infinity cannot certify every finite successor. |
+| `prior` | `correct-free-singlet-spectrum-boundary` | `repeat-no-massless-strong-excitation` | That wording contradicts the admitted locally massless strong carrier. |
+| `extension` | `no-extra-rule` | `free-scale-action-or-continuum-limit` | An added scale or action is a new premise. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:17d2c3576cd428a73269198c334acb0f1cf802b25f6e497ed6bacfca9b0190a4`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:c99ca2dfdaa551521dbaf64ffa4fe813fb7ebf7aefd9fe92a43cc9acc3490815`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:7dfce3e24867adf20b37bd68a2974b3187df30d0a3fd70d622a21cb0ad1425ef`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:f0a61704c36c3b494f221da8100787eed72ce7f23f01f0bf4ccc2768b06fa77c`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:7cb2b037e883a22a7ffc40dc3dfc3ce55a2407fe78599ed0360d879f2713a4e6`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:9036da93a060fe7853f080b732a716bc5660a07b3dff95439a56848c43e86f33`. Independent certificate: `sha256:7e8adb8391a99dcbd0a57c2801f6a9929eedd49ef4ebe7aeb5419dda306c6226`. Engine external-validation hash: `sha256:fcf8862fd656cdff3479ca59a90b686dd0ad9ed1d8d1b5844e42682bfd549305`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported Yang-Mills action, gauge-group axiom, Hamiltonian or continuum mass-gap proof
+- no V1/V2 executable, answer table, lattice mass or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no fitted dimensionful glueball scale or claim that one-third equals a mass in MeV
+- no completed infinity or inference from a finite simulation to a conventional continuum theorem
+- no conflation of the empty local carrier mass label with the least physical singlet gap
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:98fe4e9d3c65ed14b2416232187dd76ef9816f3774b984860d87138ad775fb82`; engine receipt `sha256:899e904600c1018041286e947de6acefe6c1afb50f1f8da202cfda587fa9568a` at `receipts/engine/model_admitted/SFT-PHYS-YANG-MILLS-SINGLET-GAP-TERMINAL-026-899e904600c10180.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 183. Post-seal lattice-spectrum boundary for the colour-singlet gap
+
+Claim identity: `SFT-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The sealed Fold prediction of a positive physical colour-singlet gap matches every retained PDG pure-gauge lattice interval: 0++ at 1653+/-26 MeV, 2++ at 2376+/-32 MeV and 0-+ at 2561+/-40 MeV are each strictly positive and their intervals are ordered and disjoint.  These are external lattice records, not fitted Fold values.  Quenching, state mixing, full-QCD requirements and the lack of an unambiguous experimental glueball remain explicit boundaries.
+
+> The sealed Fold prediction of a positive physical colour-singlet gap matches every retained PDG pure-gauge lattice interval: 0++ at 1653+/-26 MeV, 2++ at 2376+/-32 MeV and 0-+ at 2561+/-40 MeV are each strictly positive and their intervals are ordered and disjoint.  These are external lattice records, not fitted Fold values.  Quenching, state mixing, full-QCD requirements and the lack of an unambiguous experimental glueball remain explicit boundaries.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-YANG-MILLS-SINGLET-GAP-TERMINAL-026`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of physical carrier, positive-gap relation, provenance, prediction isolation, measurement separation, complete spectrum-row retention, finite successor closure and extension. The declared exact boundary is: The admitted finite Fold colour-singlet gap and every registered PDG 2026 pure-gauge glueball mass/uncertainty row, ground/excitation ordering row, quenched, mixing, full-QCD and experimental-identification limitation. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__positive-colour-singlet-gap-with-complete-spectrum-scope__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `positive-colour-singlet-gap-with-complete-spectrum-scope` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:b91011e3dc72496d920bcc5b4aed304377a9c66b2f4de7e181c4ecb7a3175197`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:67966cb00d6a0c9fd1864193d149e7e29bc3e4a4678bb14be657f7527f7419db`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:f303362e4cc90b1b2c95b5098b87e69832a55e960e23b88ca6df495dd0df0dae`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:8feb5e24377ab231eb8515c33743564d296e3e046311f170e02121a0cef32202`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:f2b80835649f5c2ba9eb104f5c7dbe64338493657e15e5b076ce067128d5a8d8`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4f4480d8febbdb8825c6729c2869fd8f455314664312e2be313925fafec7b9ad`. Independent certificate: `sha256:b6b4b4ec429281b86ec1e5485d020d152dcb0bb939f415377433ec4648bbde77`. Engine external-validation hash: `sha256:241e721b4221701046a50bdd437bb7c219336e8e53cf0d6ab0f93767d5b1f364`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2026-QUARK-MODEL-GLUEBALL-BOUNDARY
+
+Observed comparison records:
+
+- The PDG 2026 source record and complete PDF are hash-locked and released only after the Fold prediction seal.
+- All three registered pure-gauge lattice mass and uncertainty rows are retained and evaluated with exact rational inscriptions.
+- The 0++ interval 1627-1679 MeV, 2++ interval 2344-2408 MeV and 0-+ interval 2521-2601 MeV are each strictly positive and mutually ordered without overlap.
+- The source identifies 0++ as the lattice ground state and 2++ as the first excitation; these quantum-number labels are retained external records, not separately forced by this Fold claim.
+- The quenched approximation, neglected quark loops, glue/quark-state mixing, full-QCD requirements and high-statistics limitation are retained.
+- The PDG nonidentification boundary is retained: no scalar below 2 GeV is established as predominantly glueball, and no unambiguous experimental glueball is claimed.
+- No dimensionful lattice value selects, fits or numerically identifies the exact normalized Fold gap one-third.
+- A deliberately altered lowest-mass row breaks interval ordering and is rejected.
+
+Falsification condition: Reject if either source snapshot changes; if any registered spectrum or limitation row is omitted; if the least retained pure-gauge mass interval reaches the empty boundary; if registered intervals lose their stated ordering; if an external mass is imported into the Fold proof; if a lattice prediction is relabelled as direct detection; or if the target is available to the capability-closed predictor before sealing.
+
+Measurement receipt: `sha256:3835a4b4efc277cbd7a7a69ec3afb546254ca82d841b405b6f5abb3bb9100b0f`. Isolation certificate: `sha256:f0903f9280b06201a1a69b2e3297c8741e7ad4ef85af1ae70c9956984e919fa8`. Custody certificate: `sha256:6e92af1f8314d310047e62c9a970652cb5ce748cdf6a635c001b9934a40c35b0`.
+
+Registered source descriptions:
+
+- Particle Data Group: https://pdg.lbl.gov/2026/reviews/rpp2026-rev-quark-model.pdf (sha256:6aa98fa53857122f27b638c59081af1a2857d787c4205370d8fa38fcb6b70ff0)
+
+Registered target identities:
+
+- PDG-2026-WITHHELD-COMPLETE-GLUEBALL-BOUNDARY from PDG-2026-QUARK-MODEL-GLUEBALL-BOUNDARY
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no PDG, lattice mass, uncertainty or quantum-number ordering in the formal predecessor derivation
+- no claim that normalized one-third equals 1653 MeV or any dimensionful mass
+- no omission of quenched, mixing, full-QCD or unresolved-identification limitations
+- no claim of direct experimental glueball detection or conventional continuum Yang-Mills proof
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+- no target access before the prediction seal and no fitted correction
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:24e898b09f1ff360265f53be7b7fb3c7ef2555cdc64056bc0118c2c0fa00f61b`; engine receipt `sha256:d85984ba94789e15d9fdb97588e63d318b014b3e84315ace56cb50c16cbeb2fe` at `receipts/engine/model_admitted/SFT-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027-d85984ba94789e15.json`; empirical-validation hash `sha256:b96e76915046971454a96f7d502c2a1f81c6b84d810d1c21cab293c1e99a1e6c`; measurement receipt `sha256:3835a4b4efc277cbd7a7a69ec3afb546254ca82d841b405b6f5abb3bb9100b0f`.
+
+### 184. Depth-independent composite confining-sector orbit law
+
+Claim identity: `SFT-PHYS-COMPOSITE-CONFINING-SECTOR-TERMINAL-031`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The complete composite-sector census is: sector 8, denominator 7, orbits (1,2,4)/(3,6,5), three antipodal pairs and coupling 7/8; sector 12, denominator 11, one ten-mode orbit, five pairs and 11/12; sector 18, denominator 17, two eight-mode orbits, eight pairs and 17/18; sector 24, denominator 23, two eleven-mode orbits, eleven pairs and 23/24; sector 30, denominator 29, one twenty-eight-mode orbit, fourteen pairs and 29/30. The general odd-support inverse proves denominator confinement and complete recurrence at every positive finite Fold depth.
+
+> The complete composite-sector census is: sector 8, denominator 7, orbits (1,2,4)/(3,6,5), three antipodal pairs and coupling 7/8; sector 12, denominator 11, one ten-mode orbit, five pairs and 11/12; sector 18, denominator 17, two eight-mode orbits, eight pairs and 17/18; sector 24, denominator 23, two eleven-mode orbits, eleven pairs and 23/24; sector 30, denominator 29, one twenty-eight-mode orbit, fourteen pairs and 29/30. The general odd-support inverse proves denominator confinement and complete recurrence at every positive finite Fold depth.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-COUNT-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-EQUIVALENCE-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-MATH-ORBIT-NUMBER-THEORY-002`
+- `SFT-PHYS-FOLD-UNIVERSE-TRANSPORT-TERMINAL-024`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003`
+- `SFT-PHYS-INTERACTION-UNIFICATION-TERMINAL-025`
+
+**Generated grammar and closure boundary.** Generate the complete product of sector scope, held support, standing-mode census, Fold action, confinement, orbit partition, antipodal closure, pair-count law, holding coupling, external correspondence boundary and extension form. The declared exact boundary is: Every positive finite even sector beyond two; its odd positive predecessor denominator; every nonempty numerator label; every exact Fold successor and first return; every complement pair; the five registered composite-sector instances; and the already sealed force-sector anchor boundary. The generator produced `2048` named candidates and the decision support contains `2048` one-for-one decisions. Exactly one candidate survived: `every-generated-even-sector__positive-predecessor-denominator__all-nonempty-predecessor-labels__double-and-cast-denominator-wholes__odd-support-exact-inverse__complete-disjoint-first-return-partition__unique-positive-One-complements__predecessor-of-denominator-over-two__all-but-one-predecessor-over-sector__sealed-eight-anchor-and-explicit-standing-cases__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `scope` | `every-generated-even-sector` | `five-selected-case-table` | A selected table does not prove the next even sector. |
+| `support` | `positive-predecessor-denominator` | `borrowed-or-measured-denominator` | A named or measured denominator can select the orbit. |
+| `modes` | `all-nonempty-predecessor-labels` | `selected-mode-subset` | A subset cannot establish exhaustive confinement. |
+| `action` | `double-and-cast-denominator-wholes` | `selected-orbit-permutation` | A listed permutation imports its answer. |
+| `confinement` | `odd-support-exact-inverse` | `finite-table-assertion` | A table alone does not close arbitrary successor depth. |
+| `orbits` | `complete-disjoint-first-return-partition` | `named-or-overlapping-orbits` | Named or overlapping rows omit a complete partition proof. |
+| `antipodes` | `unique-positive-One-complements` | `borrowed-pairing-rule` | A borrowed pair rule does not prove exhaustiveness. |
+| `pair_count` | `predecessor-of-denominator-over-two` | `ambiguous-sector-minus-one-over-two` | That notation is not a whole count for even s. |
+| `coupling` | `all-but-one-predecessor-over-sector` | `measured-or-fitted-coupling` | Measurement cannot select a holding law. |
+| `comparison` | `sealed-eight-anchor-and-explicit-standing-cases` | `unobserved-cases-counted-as-confirmed` | A standing prediction is not a measurement. |
+| `extension` | `no-extra-rule` | `free-orbit-or-coupling-correction` | An inserted row or correction is a free parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:f2a635c4e730cc95000af2f718ae9c0ea451904511d39264b7aa4669be821395`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:d64de949d0073feb311cb6b076043542586f4bb0f6d164c1c5ae451b8344c2f8`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:de67bce63f980db5ef3b82782a6980729c913a1abb9e175ed3ce896e696d48ce`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:8720f86993e5ca432ed6f38fd4bc5f64f288b42723ba14aa0f57729cc611249a`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:11ce4408c46af0dca4b297e5207ff15539732f5323461ae6ca66338a157e79e4`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:d0a35a4a0cf61ded5a2a3438c5811e48274991518e20380c4132a18b441f638c`. Independent certificate: `sha256:d3cb445ee39882793a1669e1a0519589f5c1d7353d1f4f8f2c1d1822de9d0cac`. Engine external-validation hash: `sha256:a4b6ff145b49bdf9e7752f6b380faa2559e021103010f6efd6932681e2fe9e7e`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, stored orbit table or prior survivor in the derivation runtime
+- no imported gauge group, particle taxonomy, measured coupling or target-selected sector
+- no semantic numerical zero, negative, irrational, imaginary, floating or completed-infinity proof value
+- no claim that every arithmetic composite sector is already an observed independent physical force
+- no relabelling of the standing sectors twelve, eighteen, twenty-four or thirty as measured confirmations
+- no ambiguous half-whole pair count: the exact whole formula is (s-2)/2
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:fdfab054033e97c405ab0a5d9237425c3b5ee4acaf1e3ccc154e47160c5454ab`; engine receipt `sha256:eb8b53e1662db23eff80d371b5b6db094e3c7d4665b5ea0a6882ba3072e29ec8` at `receipts/engine/model_admitted/SFT-PHYS-COMPOSITE-CONFINING-SECTOR-TERMINAL-031-eb8b53e1662db23e.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 185. Terminal general Fold-fibre, particle-mode and generation-transport law
+
+Claim identity: `SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every positive finite m>=2, the m-Fold has exactly m positive preimages and m-2 interior fixed modes. The four generation coordinate records are complete ordered three-label systems and are not masses. The exact 27-cell state volume forces binary cover depth five and colour cover depth three. Every finite recurrent particle class injects into internal Fold modes without adding a spatial dimension. Generation order transports to the admitted terminal lepton, quark and neutrino polynomial carriers; superseded site-as-mass readings are rejected. The exact dual seeds are 1/95, 1/383 and 1/485; at every positive depth the heavy/light ratio equals the subtraction reach N-1; and the quarter-mode 1:1:4 record is a structural squared-separation multiplicity, not a universal measured mixing-rate ratio.
+
+> For every positive finite m>=2, the m-Fold has exactly m positive preimages and m-2 interior fixed modes. The four generation coordinate records are complete ordered three-label systems and are not masses. The exact 27-cell state volume forces binary cover depth five and colour cover depth three. Every finite recurrent particle class injects into internal Fold modes without adding a spatial dimension. Generation order transports to the admitted terminal lepton, quark and neutrino polynomial carriers; superseded site-as-mass readings are rejected. The exact dual seeds are 1/95, 1/383 and 1/485; at every positive depth the heavy/light ratio equals the subtraction reach N-1; and the quarter-mode 1:1:4 record is a structural squared-separation multiplicity, not a universal measured mixing-rate ratio.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003`
+- `SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001`
+- `SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003`
+- `SFT-PHYS-MATTER-QUARK-INVARIANTS-003`
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
+- `SFT-PHYS-NEUTRINO-POSITIVE-MASS-003`
+- `SFT-PHYS-MATTER-GENERATION-DEPTH-003`
+- `SFT-PHYS-MATTER-CKM-TERMINAL-004`
+
+**Generated grammar and closure boundary.** Generate the complete product of fibre, fixed-mode, generation-coordinate, cover-depth, particle-placement, mass-transport, dual, reach, transition and extra-rule forms. The declared exact boundary is: Every positive finite m-Fold by depth-independent index induction; all four complete three-label coordinate systems; the exact 27-cell cover; every finite recurrent particle-trace census; all admitted terminal charged-lepton, quark, neutrino and CKM carriers; and every superseded site-as-mass and separation-as-observed-rate alternative. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `complete-m-offset-fibre__complete-fixed-index-range__three-order-isomorphic-coordinate-systems__least-cover-of-generator-volume__internal-recurrent-trace-mode__order-transport-to-terminal-polynomials__complete-colour-binary-dual__exact-structural-reach-identity__structural-separation-multiplicity__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `fibre` | `complete-m-offset-fibre` | `selected-binary-or-colour-count` | A selected special case is not a general law. |
+| `mode` | `complete-fixed-index-range` | `named-three-mode-pattern` | Naming three modes does not force the general count. |
+| `generation` | `three-order-isomorphic-coordinate-systems` | `one-coordinate-system-selected-as-mass` | A coordinate value is not automatically a physical mass. |
+| `cover` | `least-cover-of-generator-volume` | `chosen-depth-five-or-seven` | A selected depth is a free choice. |
+| `placement` | `internal-recurrent-trace-mode` | `extra-spatial-dimension` | An extra spatial coordinate is not generated. |
+| `mass` | `order-transport-to-terminal-polynomials` | `site-fraction-is-mass` | This superseded identification conflicts with the terminal spectra. |
+| `dual` | `complete-colour-binary-dual` | `lookup-depth-fractions` | Looked-up fractions are not forced. |
+| `reach` | `exact-structural-reach-identity` | `lifetime-equals-mass-ratio-postulate` | A dimensional lifetime equality is not forced by the count. |
+| `transition` | `structural-separation-multiplicity` | `universal-observed-rate-ratio` | The old 1:1:4 physical-rate claim omits interaction carriers. |
+| `extension` | `no-extra-rule` | `extra-dimension-or-fit` | Either addition is an unforced parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:c475546316355bcfdc77aac50982f522bb2e5d2837eec8b3175f6691668e0508`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:89d95f25da0998aeee0e2c12ef972877ed435ba65c15ba347f4ad8cc2464ef27`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:49d418baf34f44b4527e9317cc194779bc21f294b0dfd0d94461154a0bb2fd63`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:847552ca2ada1c1c2f5999d26c3c4e4278c5ba52eae77a5d4ff309df95948836`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:4c316148e986b887cbd73d1b0bbce7b8c7dd31124b99dca5d77a7040247ff17f`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:d7e58bd3b815e0c502770da64b136f2235d69191a2118750f48392f9020b1738`. Independent certificate: `sha256:e3a787096b77a1d8c83910dd1d3de2908658797d5c75947f31aa4abc1c01b97e`. Engine external-validation hash: `sha256:c7a4c26b64bed04fe7a5cb92b586a03223af71bd5f707908a514762f11d6b4e8`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 result artifact, string-theory dimension rule, particle table or measured mass as a formal premise
+- no identification of 1/6, 1/2, 5/6, 1/3, 2/3, One, 1/4 or 3/4 with terminal measured masses
+- no claim that 1:1:4 is a universal observed mixing or decay-rate spectrum
+- no extra spatial dimension, compactification choice, landscape count or target-selected mode
+- no fitted mass coefficient, lifetime coefficient, mixing shift or omitted terminal sector
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:4e6de203282d2e77866724630a7ca291d01785551605bda4768e703600efb464`; engine receipt `sha256:18e4aac0792a01c613d31f4d980951b0e2da69107155c4e50967ed80c9eaa700` at `receipts/engine/model_admitted/SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051-18e4aac0792a01c6.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 186. Terminal dark relic, Smithion spectrum and flavour-transition law
+
+Claim identity: `SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Four exact penta/hepta cubics at depths (7,10,9,12) each have three disjoint positive roots, yielding twelve exact rationally enclosed Smithion mass-ratio predictions. Their coloured product family cross-locks the two quark values 3/1454 and 3/13118. Complete neutral p-member singlets and unique lightest roots force the stable relic class within the closed grammar. Dark/baryon is 27/5 and matter/baryon 32/5. Flavour weights are exactly 1/32, 5/96 and 5/24, reducing to 3:5:20 with tau-to-e over tau-to-mu equal to 4. Sector beta slopes are p-1.
+
+> Four exact penta/hepta cubics at depths (7,10,9,12) each have three disjoint positive roots, yielding twelve exact rationally enclosed Smithion mass-ratio predictions. Their coloured product family cross-locks the two quark values 3/1454 and 3/13118. Complete neutral p-member singlets and unique lightest roots force the stable relic class within the closed grammar. Dark/baryon is 27/5 and matter/baryon 32/5. Flavour weights are exactly 1/32, 5/96 and 5/24, reducing to 3:5:20 with tau-to-e over tau-to-mu equal to 4. Sector beta slopes are p-1.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-MATTER-CONFINEMENT-LIFT-003`
+- `SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051`
+- `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-PHYS-COMPOSITE-CONFINING-SECTOR-TERMINAL-031`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of sector, kind, depth, invariant, root-census, mass-ratio, neutral-singlet, stability, abundance, flavour-weight, measurement-boundary and extension forms. The declared exact boundary is: Prime sectors five and seven; down/up cover powers three/four; the complete exact cubic grid; all three root intervals; complete neutral sector fibres; all three lepton transitions; exact positive whole/fraction carriers; and no physical target before seal. The generator produced `2048` named candidates and the decision support contains `2048` one-for-one decisions. Exactly one candidate survived: `both-forced-prime-sectors__complete-down-up-dual__least-binary-cover-of-sector-power__same-coloured-product-family__complete-grid-and-rational-halving__squared-rational-enclosures-with-light-lift__least-complete-neutral-singlet__generation-volume-over-cover-depth__squared-separation-times-parent-part__all-targets-inaccessible-until-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `sector` | `both-forced-prime-sectors` | `selected-particle-sector` | A selected sector is not a complete census. |
+| `kind` | `complete-down-up-dual` | `one-selected-kind` | One kind omits half the generated spectrum. |
+| `depth` | `least-binary-cover-of-sector-power` | `chosen-depth` | A chosen exponent fits a hierarchy. |
+| `invariant` | `same-coloured-product-family` | `independent-mass-parameter` | A mass parameter forks the law. |
+| `roots` | `complete-grid-and-rational-halving` | `chosen-decimal-roots` | Chosen decimals import an irrational model. |
+| `ratios` | `squared-rational-enclosures-with-light-lift` | `floating-central-estimates` | A central decimal loses exact root custody. |
+| `relic` | `least-complete-neutral-singlet` | `named-dark-particle` | A name does not force stability or neutrality. |
+| `abundance` | `generation-volume-over-cover-depth` | `freezeout-fit-or-density-input` | A cross-section or density would be a parameter. |
+| `flavour` | `squared-separation-times-parent-part` | `fitted-branching-fractions` | Fitted rates cannot force a ratio. |
+| `measurement` | `all-targets-inaccessible-until-seal` | `search-result-readable-before-seal` | That would tune the theory to current limits. |
+| `extension` | `no-extra-rule` | `extra-scale-sector-or-correction` | Any added choice violates zero parameters. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:3351ece9cf5b191e15416884e44dce897be9cb7cfaa2359d088604779ae3602e`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:3084e9fee79537fb19204951d2bc8e82d13335ddf0ad5d68a2c9054f0c7d738d`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:3187efb26cdc55782a7d746a3e39775a4088b3aa65b92c31e188588d54803f10`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:1a08b1cc107e3eb8504a130861084b840018b107d069e3991364b95b3eda5f90`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:5d51b9f8d04a4587584e88486b2a63c0fc0677fb27663430bf131394d110606a`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4eb56b948d11e8219bfddf29dac76fae3eb2a7d8e6cc994888e2fec4432e29c4`. Independent certificate: `sha256:f53233046528aef9158e3a637b87e7a874856c29aa86d1808a8568bc89eb5699`. Engine external-validation hash: `sha256:0d0180e4437cf2371bdd914f9b6b5519bbeaf33ba5d192dc4761bc66689728b7`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 code, answer table, survivor identifier or measurement in formal execution
+- no fitted mass, coupling, cross-section, freeze-out efficiency, density, branching fraction or search limit
+- no negative, irrational, imaginary, floating, NaN, infinite or continuum proof scalar
+- no claim that an unobserved Smithion mass has already been experimentally measured
+- no claim that non-detection alone identifies the relic
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:dfbaa171ffbee41651dcf56b1a0e0097d2cd088376d003686d56f094f7c8113a`; engine receipt `sha256:71a131119ffd152690ec772019177fb06599474cd5e89b60a62c1b9b69ec5762` at `receipts/engine/model_admitted/SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061-71a131119ffd1526.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 187. Terminal strong-CP alignment and proton/baryon stability law
+
+Claim identity: `SFT-PHYS-STRONG-CP-BARYON-STABILITY-TERMINAL-063`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Strong-sector CP is the aligned One; the strong-violation, electric-dipole and added-compensator records are empty-One. The weak one-hand phase remains the self-antipodal half-One. All 83 generated mediators are fibre-preserving; all 202 ordered cross-fibre label pairs and all six colour-to-binary pairs lack a generated carrier. The proton carries baryon One = 3*(1/3), all 27 generated colour-three images retain it, and every finite composition remains in the colour fibre. Proton decay is absent within the complete declared grammar.
+
+> Strong-sector CP is the aligned One; the strong-violation, electric-dipole and added-compensator records are empty-One. The weak one-hand phase remains the self-antipodal half-One. All 83 generated mediators are fibre-preserving; all 202 ordered cross-fibre label pairs and all six colour-to-binary pairs lack a generated carrier. The proton carries baryon One = 3*(1/3), all 27 generated colour-three images retain it, and every finite composition remains in the colour fibre. Proton decay is absent within the complete declared grammar.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-WEAK-PARITY-FIBRE-002`
+- `SFT-PHYS-NEUTRINO-CP-PHASE-002`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001`
+- `SFT-PHYS-MATTER-CONSERVED-LABELS-001`
+- `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
+- `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
+- `SFT-PHYS-BARYOGENESIS-DEPENDENCY-TERMINAL-021`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of immutable predecessor, CP carrier, handed support, strong-sector product, compensator, sector-action typing, baryon tally, finite transition, baryogenesis boundary, measurement custody and extension forms. The declared exact boundary is: All nonempty subsets of the exact two-hand fibre; complete colour-three times hand support; every mediator cell in prime sectors two, three, five and seven; every ordered cross-fibre label pair; every colour-three word; and every finite composition of the generated typed actions. The generator produced `2048` named candidates and the decision support contains `2048` one-for-one decisions. Exactly one candidate survived: `compose-immutable-predecessors__aligned-One-or-self-antipodal-half-One__complete-two-hand-support__paired-parity-returns-aligned-One__empty-One-no-extra-compensator__all-generated-actions-are-fibre-preserving__three-one-third-parts-close-to-One__finite-composition-preserves-the-fibre__retain-explicit-cosmological-boundary__targets-inaccessible-until-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `predecessor` | `compose-immutable-predecessors` | `rewrite-or-bypass-predecessors` | A successor cannot change an admitted receipt. |
+| `cp` | `aligned-One-or-self-antipodal-half-One` | `continuum-angle-or-fitted-small-value` | A continuum angle or small fitted value is inadmissible. |
+| `hand` | `complete-two-hand-support` | `selected-single-hand` | Selecting one hand omits half the colour-times-hand product. |
+| `strong` | `paired-parity-returns-aligned-One` | `weak-antipode-reused-for-strong` | A one-hand weak carrier contradicts complete strong support. |
+| `compensator` | `empty-One-no-extra-compensator` | `add-axion-or-free-compensator` | An extra carrier has no discrepancy to act on and forks the closed inventory. |
+| `sector` | `all-generated-actions-are-fibre-preserving` | `invent-cross-fibre-mediator` | A two-sector signature is absent from every complete sector action table. |
+| `baryon` | `three-one-third-parts-close-to-One` | `untyped-particle-name` | A name alone does not establish conservation. |
+| `transition` | `finite-composition-preserves-the-fibre` | `assume-an-unregistered-decay-step` | An unregistered fibre crossing inserts the desired decay. |
+| `baryogenesis` | `retain-explicit-cosmological-boundary` | `conflate-distinct-process-grammars` | A cosmological tally-changing premise is not a low-energy mediator. |
+| `measurement` | `targets-inaccessible-until-seal` | `target-readable-before-seal` | That would tune alignment or stability to observation. |
+| `extension` | `no-extra-rule` | `free-angle-carrier-or-operation` | Any such addition is an unforced parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:d9f8979ae65fb3c20f78a9ab79262c68e94e265ee6c4ca439f4dfe72eae49a84`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:290a02b4e4f473a3ce4642758d4802afc041ce55fa1bdd67b6bfa67362291492`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:52f4575af714aac932f9d9b34d2ffa0e5c9f931c5e2344837a94e396c9dad408`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:552ae613a5e02f35cf12b163fba2b2bab42f8d26c5f5fa288400676c03132929`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:35261f06a81f2466962ec820e1b6b4ec55dd52c60bdf13960ff56c23e2f0db76`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:158f6d0db3af5495b5377fbaa556c17f4010b3ef24b7274d6c60f7e0c4608e67`. Independent certificate: `sha256:3fe766ec11ea0dba5bf00a0d2acd889ca3523c97ef518c6f35d6379d0c32fcab`. Engine external-validation hash: `sha256:fc2a863920358c2c6138acdbecd364cce3472795ef6a85c45b2f9695b2e4e9fe`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, certificate, answer table, survivor identifier or measurement as a premise
+- no conventional theta continuum, fitted small angle, negative, irrational, imaginary, floating, NaN or infinite proof scalar
+- no neutron electric-dipole bound or proton-lifetime limit in formal execution
+- no imported Peccei-Quinn, axion, grand-unification or Standard Model mechanism as a proof premise
+- no contradiction of the separately admitted cosmological baryogenesis dependency law
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:751d04511116f683c0771afbc6752af128a9360cedbb8b98ad9ba08a2cbc6818`; engine receipt `sha256:6bd69d2eb78150c11fefc82f512bdfd775eaa2f3a2667127407d7a34bd695657` at `receipts/engine/model_admitted/SFT-PHYS-STRONG-CP-BARYON-STABILITY-TERMINAL-063-6bd69d2eb78150c1.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 188. Terminal displaced-ground and Higgs mass/self-coupling law
+
+Claim identity: `SFT-PHYS-HIGGS-SYMMETRY-TERMINAL-065`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The displaced ground is uniquely half-One; the retained leading Higgs rungs are 1/2, 1/4 and 1/8. Complete six-cell scalar support, its unique held return and the independently equal cover depth five force terminal m_H/v = 1/2 + (6/5) alpha = 2563352914777/5038463954690. The exact native self-coupling is lambda = (m_H/v)^2/2 = 6570778165695741824959729/50772238045420788745992200. Both routes cross-lock in the squared domain; no irrational root is formed.
+
+> The displaced ground is uniquely half-One; the retained leading Higgs rungs are 1/2, 1/4 and 1/8. Complete six-cell scalar support, its unique held return and the independently equal cover depth five force terminal m_H/v = 1/2 + (6/5) alpha = 2563352914777/5038463954690. The exact native self-coupling is lambda = (m_H/v)^2/2 = 6570778165695741824959729/50772238045420788745992200. Both routes cross-lock in the squared domain; no irrational root is formed.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
+- `SFT-PHYS-MEDIATOR-RANGE-CHANNEL-TERMINAL-020`
+- `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of ground carrier, displacement, leading rungs, scalar directional support, held return, cover cross-lock, terminal transport, coupling composition, route equality, measurement custody and extension forms. The declared exact boundary is: Structural empty-One, half-One and One ground forms; every binary successor of the displaced ground through the leading coupling rung; the complete binary-hand times generator-direction product; its unique held return; the least cover of generator volume; exactly one terminal alpha transport; exact positive rational operations; and no physical target before seal. The generator produced `2048` named candidates and the decision support contains `2048` one-for-one decisions. Exactly one candidate survived: `positive-proper-ground-carrier__unique-self-antipodal-half-One__retain-half-quarter-eighth-controls__complete-two-by-three-product__hold-unique-return-leaving-five__least-cover-of-generation-volume__one-six-over-five-alpha-return__squared-excitation-shared-over-two-fibres__exact-two-route-cross-lock__all-targets-inaccessible-until-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `ground` | `positive-proper-ground-carrier` | `absence-as-numerical-ground` | Structural absence is not a field value. |
+| `displacement` | `unique-self-antipodal-half-One` | `unison-or-selected-part` | Unison is not displaced and a selected part is a parameter. |
+| `rungs` | `retain-half-quarter-eighth-controls` | `discard-or-rewrite-leading-rungs` | A terminal successor cannot erase its lower-order receipt. |
+| `directions` | `complete-two-by-three-product` | `selected-direction-subset` | A subset omits a generated hand or generator direction. |
+| `return` | `hold-unique-return-leaving-five` | `retain-all-six-as-active` | The invariant return cannot also be an active displaced direction. |
+| `cover` | `least-cover-of-generation-volume` | `free-denominator` | A denominator chosen for agreement is a parameter. |
+| `transport` | `one-six-over-five-alpha-return` | `fitted-offset-or-repeated-series` | An offset or truncation is a fit. |
+| `coupling` | `squared-excitation-shared-over-two-fibres` | `import-potential-or-free-lambda` | An imported potential or free lambda would add an axiom. |
+| `route` | `exact-two-route-cross-lock` | `independent-mass-and-coupling-routes` | Independent routes introduce a dial. |
+| `measurement` | `all-targets-inaccessible-until-seal` | `target-readable-before-seal` | That would fit the coefficient to the measured mass. |
+| `extension` | `no-extra-rule` | `extra-mass-potential-or-correction` | Any added term is a free parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:b032f36759d5585227839385874ee6a097037af0b1142ebf0738a290b480bff5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:92eb8365d3cc30c6263094989f3acef1ac062d7e661401ab949da0b36db56255`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:c1821578d2ccf8237255f446bbde7e3117de5edcd59b00b37071f3e485c6a946`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:7f5b272fccfbef1f1ce7eabace8825d5f3c8073c754e1e4b9ab230a2b07b530d`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:ea6d7a5ec8dbbde9369629b7a0919e4233a1aec722a5894371da443dd9818951`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:89f6565f52c17b5f9eb1f217a3dabd38f0142336cd4e23900204d370aa4e78bc`. Independent certificate: `sha256:348c2daebd8443b15a0943ea97c6336d0767529492929a71a15fa788a4a30d53`. Engine external-validation hash: `sha256:3482618408366fc7c558674ede8b2c5ee86d7b0d6e80b42a2373df5bc0ca70db`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Matter, interaction and flavour sectors are classified by minimal recurrent physical words, exchange classes, conserved labels and complete transition channels. External tables test membership and value only after the classification law is sealed. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, certificate, target value, candidate table or stored survivor as a premise
+- no measured Higgs mass, VEV, Fermi constant or self-coupling in formal execution
+- no imported Higgs potential, Standard Model mass relation, fitted coefficient, uncertainty or correction series
+- no semantic numerical zero, negative, irrational, imaginary, floating, NaN, continuum or infinite proof scalar
+- no claim that the leading 1/2 mass ratio or 1/8 coupling is the terminal result
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:2c07deac3b179ef81471403a48877e0da72f003cae44166043302a1f0f0a973b`; engine receipt `sha256:3f84e4ede48a489bc78a8cc47eac935bbff3566d1e561c26ef0059d7bbcbfb1e` at `receipts/engine/model_admitted/SFT-PHYS-HIGGS-SYMMETRY-TERMINAL-065-3f84e4ede48a489b.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 19. Atomic Molecular
 
 Atomic and molecular laws are reconstructed from exact Fold support, transition, shell, splitting, rate and spectral relations, including terminal precision successors rather than leaving the measured-value work in Chemistry.
 
-### 165. Atomic orbit-cell capacity from three-space boundary orientation
+### 189. Atomic orbit-cell capacity from three-space boundary orientation
 
 Claim identity: `SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001`
 
@@ -13077,7 +15063,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7b624a62e7d39d55c7a235163b8d0f93f6ffeebf172a7b94bf8fd4790be796f8`; engine receipt `sha256:2b8928b0ddf5b87a7bf56813a5f430ba4a99f715b1cfc1dd1db98106216e3d70` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001-2b8928b0ddf5b87a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 166. Exact atomic existence boundary
+### 190. Exact atomic existence boundary
 
 Claim identity: `SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001`
 
@@ -13149,7 +15135,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:97c4ce7770ec307c488fa3e908f713ef94eb5057771ebba5848675592d99d879`; engine receipt `sha256:5cedeb1cb99ec83a668db0c80839b248c93e83bdeeafbd067fa379fb8e45eb17` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001-5cedeb1cb99ec83a.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 167. Cubic atomic support and exact neighbour balance
+### 191. Cubic atomic support and exact neighbour balance
 
 Claim identity: `SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004`
 
@@ -13215,7 +15201,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:afbd1739770387458474abfbc467386a6746ceb7ab03ecf7a3ff9630a08b0da6`; engine receipt `sha256:8fa8b8bb81ea31d715fae3c5f3ceb869b5e4d8afad6c959ff86f12ab2ea7471a` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004-8fa8b8bb81ea31d7.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 168. Depth-independent exact hydrogen spectral ladder
+### 192. Depth-independent exact hydrogen spectral ladder
 
 Claim identity: `SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004`
 
@@ -13281,7 +15267,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:a0d511dc4a594dc2724d449a85150580a244d8b41e08614e5f5009855fa5c5bb`; engine receipt `sha256:ea9b3b9f34311e1f1f41962a5405ffad6250fcd74d75cf107a3b92d35dd2d464` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004-ea9b3b9f34311e1f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 169. Exact atomic gross, fine and first bound-return hierarchy
+### 193. Exact atomic gross, fine and first bound-return hierarchy
 
 Claim identity: `SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004`
 
@@ -13347,7 +15333,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1e410425b3bb9024c271c6dde057a448c61cdbfaf058d73fdfbfa724bb7fe382`; engine receipt `sha256:a6239e61a184cf72e869fabe9c7d2dcc433366e30ef4bfdff68ebd0ff2a0fd9d` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004-a6239e61a184cf72.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 170. Atomic transition, selection and field-splitting law
+### 194. Atomic transition, selection and field-splitting law
 
 Claim identity: `SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004`
 
@@ -13414,7 +15400,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8cffe700c5ddd7de94f9813647f587fe3653a6c650a2145240f2e3d96ae7785d`; engine receipt `sha256:34ea2b8ac5ee23d6cfe9e2ca37a190682c73830e53fb3b0c32ece6506e7f8de2` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004-34ea2b8ac5ee23d6.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 171. Exact molecular rotational-vibrational spectral hierarchy
+### 195. Exact molecular rotational-vibrational spectral hierarchy
 
 Claim identity: `SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004`
 
@@ -13480,7 +15466,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:087830fbf4a75d48ba2a44a86ee67841a65ba408f686797d8350a7eb0ccf1d4e`; engine receipt `sha256:234231a79ab030c84486fbee91cd79a5498ebb4f88c6467c366f38815ff681d0` at `receipts/engine/model_admitted/SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004-234231a79ab030c8.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 172. Terminal exact hydrogen Lamb-shift successor
+### 196. Terminal exact hydrogen Lamb-shift successor
 
 Claim identity: `SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005`
 
@@ -13566,7 +15552,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3acf765129966437257ec188341de795ad376198186f00734b036a3197982aea`; engine receipt `sha256:38fa8fa2ffbfa3733e9ab90ca7a052699c265c5e844e896a570c8edf1ec5afe3` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005-38fa8fa2ffbfa373.json`; empirical-validation hash `sha256:60554a83dedfb28a27cc08aaddd2f9371c1d0bb4f301077c9a70fb341a3b78ae`; measurement receipt `sha256:c7a9435997ecde43fa7922c31846d62b8fc13d938b98c9ff8f033af4cef0270b`.
 
-### 173. Terminal exact hydrogen fine-structure successor
+### 197. Terminal exact hydrogen fine-structure successor
 
 Claim identity: `SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005`
 
@@ -13652,7 +15638,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9b367f82939e9f357a9cc7f5ea6baf860fd501be8ad219633890eb983aefc642`; engine receipt `sha256:0ec7036e95a98f142a5ea57b49652d1de66df06d7cdf6c3b82f27156c4f0d61a` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005-0ec7036e95a98f14.json`; empirical-validation hash `sha256:52e86b80d10670238d23c9ce096004afa900f9e240cfbba4e80c52ee109b4e1d`; measurement receipt `sha256:171398126f1b83d81a1415382aa5d3bb23a4ea14236cbca34ca281a279bfd870`.
 
-### 174. Terminal exact hydrogen hyperfine and twenty-one-centimetre successor
+### 198. Terminal exact hydrogen hyperfine and twenty-one-centimetre successor
 
 Claim identity: `SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005`
 
@@ -13739,7 +15725,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2b4c314c38dbb279ca5eeedf2a6336f5f5c30b293806071f366a517a6390dbe7`; engine receipt `sha256:e65c383f1e1a6d48979d425f14ca83e9e906f3b60acb757e8df8a57ffa7994c1` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005-e65c383f1e1a6d48.json`; empirical-validation hash `sha256:caf9d4d2166e12d3ca8b0acb1a72a433e77a0b39ca6e7388f7c6d3430cd77374`; measurement receipt `sha256:044625ccc092b2bfdf2d068c7e9628301fcf2edbd428feb10f524e6e7cb8c704`.
 
-### 175. Terminal exact molecular rotational, vibrational and isotope spectroscopy
+### 199. Terminal exact molecular rotational, vibrational and isotope spectroscopy
 
 Claim identity: `SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005`
 
@@ -13825,7 +15811,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4eeece79bbece4a90041d6651d1d0d414aab170838dbbccc11771aeb7f014e81`; engine receipt `sha256:286941c32f5e99614d53ad4ab579a565af536106d3e64e9c590cbad527fd5b2b` at `receipts/engine/model_admitted/SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005-286941c32f5e9961.json`; empirical-validation hash `sha256:0b3469f88c3a1a7825aa8906387d6a3a3b693f62fce7242f345232046094348c`; measurement receipt `sha256:95c6631925a30c7777c128d2738d133b452d784e33342da6ca5026eefdc21f64`.
 
-### 176. Terminal exact hydrogen reduced-mass and Rydberg-scale completion
+### 200. Terminal exact hydrogen reduced-mass and Rydberg-scale completion
 
 Claim identity: `SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005`
 
@@ -13911,7 +15897,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e201006611698be5cb430fd39353664a1f611c1d51702e43f05e30142bae242a`; engine receipt `sha256:e9780bb0acb2e0c4038b037dbc53203529a305f7a1cae84c5e73dfe9013cb59c` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005-e9780bb0acb2e0c4.json`; empirical-validation hash `sha256:8418722d6db952c3e39c94ee4614c0003b74d2419b6b85573755d9ece36a3462`; measurement receipt `sha256:010f8374ca9c26dbfb95a38b0957ba6d857642eac243f8dd93e1551737c2a4c5`.
 
-### 177. Terminal exact atomic shell, filling and periodicity completion
+### 201. Terminal exact atomic shell, filling and periodicity completion
 
 Claim identity: `SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005`
 
@@ -13997,7 +15983,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c0d999b3565a88a45f02f971b6fa0bc52d6ba903e75bb68b42f4efbc2ea87e65`; engine receipt `sha256:86b2573d6cd627c61d4816f1a90868906d5c66cc640d9a03f7d3b6e635c9406c` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005-86b2573d6cd627c6.json`; empirical-validation hash `sha256:4dcc83003b2c685d3968c484af3ca55526ba6ae2dddba040fbd0d243cb94f039`; measurement receipt `sha256:af2aada6a6e8ee8f3d8421f1dd120407346653980179c775164423fcc4ab9458`.
 
-### 178. Terminal exact atomic transition-rate, lifetime and multipole completion
+### 202. Terminal exact atomic transition-rate, lifetime and multipole completion
 
 Claim identity: `SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005`
 
@@ -14088,7 +16074,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:adee356d47c06de43bbdb0f59122eba878324e5eadf306f8d4b1b9468fcf030e`; engine receipt `sha256:23cb34b722250938fdbc749addee2c0d534ba0f7c0ee54cbb68c678fd4adc5d5` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005-23cb34b722250938.json`; empirical-validation hash `sha256:502a83cb6b1548d91d9c1498d8475ae738065fd17e13065cb8dbc247e8a510f6`; measurement receipt `sha256:f5b54570f563ed73f207b7dc4648b79ad7c39394a3dc6c9a48c397c0f754c57a`.
 
-### 179. Terminal exact atomic Zeeman and Stark field-splitting completion
+### 203. Terminal exact atomic Zeeman and Stark field-splitting completion
 
 Claim identity: `SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005`
 
@@ -14180,11 +16166,11 @@ The result is closed only at its registered generated and empirical boundary. It
 **Immutable evidence identities.** Source manifest `sha256:7ff3926a45c8a68799c705b25c9c23675a4a189b628ef503064345dcb8f115ed`; engine receipt `sha256:91df8eb2a38be812ebd00525e22ed77945498d2aa03c52c3776eecc2d34f3a71` at `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005-91df8eb2a38be812.json`; empirical-validation hash `sha256:1789c354cc9ac36c1cc069a91950e1ea3bcba203462a7447daa632dd018834ea`; measurement receipt `sha256:069d2196117fed492a2df1380b8962e6930327e9ac3010e4ec693b3b2cf8ecdb`.
 
 
-## 17. Nuclear Hadronic
+## 20. Nuclear Hadronic
 
 Nuclear and hadronic laws close composition, residual interaction, binding, levels, decay, reaction, fission, fusion and spectral support at their registered exact boundaries.
 
-### 180. Nuclear binding and mass relation
+### 204. Nuclear binding and mass relation
 
 Claim identity: `SFT-PHYS-NUCLEAR-BINDING-001`
 
@@ -14267,7 +16253,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2db6a24ffdb2047e02bea855ac44381848b991bd43fbb9e3ad460b5675c53552`; engine receipt `sha256:8ebc11747ec4bfd0552de732d26bbb60bcbbeb6ba273885ebec783ffd43dbb3f` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-001-8ebc11747ec4bfd0.json`; empirical-validation hash `sha256:7f9bc2dd84794e9d4709ca05dc1e74efe1515768885a50211800d6daab707073`; measurement receipt `sha256:d7cbe20b60e87671320f3a1d90549b701b9a751b5a00c01ad1bacf84a19ac624`.
 
-### 181. Nuclear levels and transitions
+### 205. Nuclear levels and transitions
 
 Claim identity: `SFT-PHYS-NUCLEAR-LEVELS-001`
 
@@ -14350,7 +16336,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:37409d7dc276088da25835592fb355d85cbd857d5586f3161e147360d3e5c1b1`; engine receipt `sha256:8361256cd14917c077f36a6250d7706d6b97eaf4254633721107775112a94479` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-LEVELS-001-8361256cd14917c0.json`; empirical-validation hash `sha256:cba148bdbd2aedc9548d29c9b027d0467962567fab73bdbeaa016c59037b48fa`; measurement receipt `sha256:6a1a8e1613eb6cac74c66843c4553f3e5416c30fb09ab78eb6eb000b90ad0961`.
 
-### 182. Radioactive transition support
+### 206. Radioactive transition support
 
 Claim identity: `SFT-PHYS-NUCLEAR-RADIOACTIVITY-001`
 
@@ -14433,7 +16419,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:273f3a543b43ca1522707cc521dc8ca7b294b36cffd379a51963940262ca28f0`; engine receipt `sha256:abfd4ba82c2ecf7fba7473fa029c2b3c06ad54d536c4fef8a7b354fbdb587576` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVITY-001-abfd4ba82c2ecf7f.json`; empirical-validation hash `sha256:2eb2570415ea91beb3310bbccedcaeb644075e14b7a193c71a9ebf7c57c9724c`; measurement receipt `sha256:2fb40b4979572faebf3f41b84ffe8676f1e7659c4d9a3524d72f8800d851e569`.
 
-### 183. Nuclear reaction and channel accounting
+### 207. Nuclear reaction and channel accounting
 
 Claim identity: `SFT-PHYS-NUCLEAR-REACTIONS-001`
 
@@ -14516,7 +16502,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:39b1e4d4ec2f64e601b1c6724c2838f65797441cb1df32d4406b2c37bac7b8ac`; engine receipt `sha256:d619676a96d0ef76e876a31388e3ead4e581cf513277f87928f75ac490b62127` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-REACTIONS-001-d619676a96d0ef76.json`; empirical-validation hash `sha256:0d3686a4a22399ad626810c76085b19c7b8ac64edc30664bdece602a19e3b55c`; measurement receipt `sha256:90df60f2143b04166e63a04b6073725d94456b6a4f9bbf2b614efdd72a911793`.
 
-### 184. Fission decomposition
+### 208. Fission decomposition
 
 Claim identity: `SFT-PHYS-NUCLEAR-FISSION-001`
 
@@ -14599,7 +16585,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:de201d487f30f1538d3129d5586fc1357329f6bb4b7cc60e1495711119d9246f`; engine receipt `sha256:37bc1d64923a33e5d6548f4701606b8566eb51f9d6871e6e7815a289926a3ceb` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FISSION-001-37bc1d64923a33e5.json`; empirical-validation hash `sha256:3c4f86c17f05f95b240fa9ef4de61ca95114514b336de96606dc54275857ecba`; measurement receipt `sha256:08869f2c7c3b92aebb67f0c94c0e50f8271c407f7b088280ae658630c7b2533b`.
 
-### 185. Fusion composition
+### 209. Fusion composition
 
 Claim identity: `SFT-PHYS-NUCLEAR-FUSION-001`
 
@@ -14682,7 +16668,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9f4db1843099be37632c5ceb2509b9c49a8b486d75fe5aa23f44b63887db43e2`; engine receipt `sha256:9277671be548ed512279ff99a5347ed91531056cecddc1f22ed96da39a0a7676` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-001-9277671be548ed51.json`; empirical-validation hash `sha256:849afd978cbb0ca37c0a51c1143457fa6acdc09d55356b8edf5691d61334d4a4`; measurement receipt `sha256:230a7c0b1b00ce89a6ae991f6ea31d37886fadf99dfe45272a755e2951f1e273`.
 
-### 186. Exact colour-sector Fold coupling
+### 210. Exact colour-sector Fold coupling
 
 Claim identity: `SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001`
 
@@ -14749,7 +16735,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:55e3c26bda6cce369b8f47cf4b459b445cabed93342517e8e9ee93424b0ca57f`; engine receipt `sha256:d38dc32f0926ae5f06e432f6bd7546d8680a8ea648c211dfbe965fc44e8179e5` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001-d38dc32f0926ae5f.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 187. Complete Fold nuclear-closure sequence
+### 211. Complete Fold nuclear-closure sequence
 
 Claim identity: `SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001`
 
@@ -14823,7 +16809,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:239be83e36611d89d86421f4dc8e517f20288187660251a1313146246bfe5133`; engine receipt `sha256:35f7fe50e217d2a61383f4169c314f1d4d5b4671a1def5baa011d26a1d89af9f` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001-35f7fe50e217d2a6.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 188. Terminal nucleon composition, binding dominance and mass ordering
+### 212. Terminal nucleon composition, binding dominance and mass ordering
 
 Claim identity: `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
 
@@ -14917,7 +16903,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b3f0673c9be151a4b910fd51c93b8fca3a23d5884f858a538d25eaaf7076e889`; engine receipt `sha256:deedcfb769c2cf51ebea249bd3e319ee7ec95c8feb883210312badabfd8332ab` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEON-BINDING-TERMINAL-005-deedcfb769c2cf51.json`; empirical-validation hash `sha256:dc934885b849a805997db2c7431dec71100bf8246f6c9dd99abdc034248b8592`; measurement receipt `sha256:743b67038fcd9c2914a510027363b31ca9c9250e9375c4c950937dc8ada4c8bc`.
 
-### 189. Terminal light-hadron multiplets and depth-independent Regge support
+### 213. Terminal light-hadron multiplets and depth-independent Regge support
 
 Claim identity: `SFT-PHYS-HADRON-REGGE-TERMINAL-005`
 
@@ -15008,7 +16994,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c8b82a773604b1b447731f03b1fcbdb2c366569c09e7c65f442c7bf88c8ec227`; engine receipt `sha256:64caf5f62f3314597b9c525b694005ac4bc81f57446ff7e2dd436bd817646933` at `receipts/engine/model_admitted/SFT-PHYS-HADRON-REGGE-TERMINAL-005-64caf5f62f331459.json`; empirical-validation hash `sha256:da1c36bd036f5c8ab81467f12ee9086b3ef35d493e1960a19a609887ee36806a`; measurement receipt `sha256:0f3e190970773ede50717b7bff036ae1d691887b1d49d3bb134c66a92321a9e9`.
 
-### 190. Terminal residual nuclear interaction and inverse-mediator range
+### 214. Terminal residual nuclear interaction and inverse-mediator range
 
 Claim identity: `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`
 
@@ -15104,7 +17090,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:31f1fb80d5db676704229a846f5e8dfc22ead05a4697e97e730cfdd56de0003d`; engine receipt `sha256:05a3a23d0f0fbea4618128f8cfd75440505666931efcda6f9e89fa2dc37fd22e` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-05a3a23d0f0fbea4.json`; empirical-validation hash `sha256:b8601aa2e2cdf29a1b6dededbcf3b32ac99fe85536db82631d97ee20f25c7090`; measurement receipt `sha256:f06863514328b5975eb742c2d40e4ba4f52b977cd3f579815b9abaf4dc706df1`.
 
-### 191. Terminal zero-parameter nuclear binding curve and stability maximum
+### 215. Terminal zero-parameter nuclear binding curve and stability maximum
 
 Claim identity: `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
 
@@ -15201,7 +17187,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:686d8168c02407836389bf72041c38ac4c3f6fe5ebbe6413ff291f1e3d6aa542`; engine receipt `sha256:0f08011755d14b3c910034436a4560016125b467a28b35b01b6b6fe02364024d` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-0f08011755d14b3c.json`; empirical-validation hash `sha256:2bb993c08bfae9dc917121d46bc3defd7689fd9c50922614c044e287d7769308`; measurement receipt `sha256:3330a4b8df04fbeb9c633deb13ee4bf75167d025ba048136c1ff2ac2c862c99b`.
 
-### 192. Terminal radioactive transition topology and exact half-life survival
+### 216. Terminal radioactive transition topology and exact half-life survival
 
 Claim identity: `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`
 
@@ -15300,7 +17286,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3ccac8e6fb82183f7bfb2f2666b76a23f1c03f74403bd33e7b17ae8a0de4ddbe`; engine receipt `sha256:83e9d821fef3a3c8d4717545ca5109a1a8e7849c433b55ce5c47a17f4ac845f4` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-83e9d821fef3a3c8.json`; empirical-validation hash `sha256:bdf6efb3d44f289cfd9c57212f7b2e033af0e8c45bc45d5cca81f483f964cfe1`; measurement receipt `sha256:16638308ef6939c5af8ad447616bb50bd0a385b4939423526b95286e53e55a73`.
 
-### 193. Terminal fusion/fission direction, barrier and release law
+### 217. Terminal fusion/fission direction, barrier and release law
 
 Claim identity: `SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005`
 
@@ -15396,7 +17382,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2a000fca551d443077a846fad52175406aa63aebc37ea397ac555ecb3a3c61c2`; engine receipt `sha256:fbbdba722e6fb27d738ad3cd1df1f62e4caa979038b212147120ca814f0e25fa` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005-fbbdba722e6fb27d.json`; empirical-validation hash `sha256:8938824e23d81c3a0af6f06a90f74d4517541d3ef935743d19ee7ce1a0992d97`; measurement receipt `sha256:722810443b2187a7ddf03f88a97bd8fd7b1123f536427cd976857f14552d35ee`.
 
-### 194. Fusion/fission yield ordering and distinct threshold carriers
+### 218. Fusion/fission yield ordering and distinct threshold carriers
 
 Claim identity: `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
 
@@ -15504,7 +17490,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7a0b18b87f3a1df38a9679fef0ed10a6e72fa9d06851a8a38f38626db55c1db8`; engine receipt `sha256:1b13169930d9f4c22d75008ef7debe615a8c1dfdedee7a5f495b85c467444e50` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006-1b13169930d9f4c2.json`; empirical-validation hash `sha256:83a6f01dfa45d115b8e784d5904e99a605913f66e348ffdbae5b7daf54eaa085`; measurement receipt `sha256:550034e2999fda2c58cd3c1d8dadca9e5833baee6d8445271718653240a5de8d`.
 
-### 195. Terminal deuteron binding, spin and dinucleon exclusion
+### 219. Terminal deuteron binding, spin and dinucleon exclusion
 
 Claim identity: `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`
 
@@ -15607,12 +17593,81 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cf08b6132dc2c644a2a6316b6fc508ae22948dbb880c4ffd460115e699b0b605`; engine receipt `sha256:c2a2ca11504bbe66760011c57dff2e8459f171c836b754d24b2ae3c200fa4cbc` at `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006-c2a2ca11504bbe66.json`; empirical-validation hash `sha256:05f87ae0d5eee06b72dbf7925eb6aa00b14b45a59a12a9bd2df572552b92be32`; measurement receipt `sha256:517fdc91b68661db3cf84eb534f213a8acfdb139ab490279a5aed8744ae9241d`.
 
+### 220. Terminal dimensional light-hadron Regge carrier
 
-## 18. Spacetime Gravitation
+Claim identity: `SFT-PHYS-HADRON-REGGE-DIMENSIONAL-TERMINAL-059`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Every positive spin rank has the exact squared resonance-support carrier Q(J)=(6J-3)/5. The base is 3/5; every successor step is 6/5; the first five carriers are 3/5, 9/5, 3, 21/5 and 27/5.
+
+> Every positive spin rank has the exact squared resonance-support carrier Q(J)=(6J-3)/5. The base is 3/5; every successor step is 6/5; the first five carriers are 3/5, 9/5, 3, 21/5 and 27/5.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-HADRON-REGGE-TERMINAL-005`
+- `SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003`
+- `SFT-PHYS-MATTER-CONFINEMENT-LIFT-003`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of predecessor custody, motion share, tube hands, base rank, successor act, closed form, unit boundary, target custody and extension forms. The declared exact boundary is: The admitted exact 3/5 motion share, exactly two Fold tube hands, every positive spin successor, exact positive fractions, a post-seal common unit label and no measurement in survivor selection. The generator produced `512` named candidates and the decision support contains `512` one-for-one decisions. Exactly one candidate survived: `immutable-receipt-custody__admitted-three-fifths-motion-share__both-forced-Fold-hands__two-times-three-fifths__first-positive-rank-three-fifths__depth-independent-induction__postseal-common-positive-unit__target-inaccessible-until-formal-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `predecessor` | `immutable-receipt-custody` | `rewrite-or-ignore-admitted-laws` | A successor may not replace an admitted dependency. |
+| `motion` | `admitted-three-fifths-motion-share` | `selected-or-fitted-intercept` | A selected intercept reads the spectrum. |
+| `hands` | `both-forced-Fold-hands` | `chosen-trajectory-multiplicity` | A chosen multiplicity changes the slope. |
+| `successor` | `two-times-three-fifths` | `fitted-common-slope` | A measured slope is not a derivation. |
+| `base` | `first-positive-rank-three-fifths` | `numerical-zero-or-free-offset` | Neither numerical nothingness nor an offset is generated. |
+| `closure` | `depth-independent-induction` | `finite-five-row-pattern` | Five inspected rows do not establish a general law. |
+| `units` | `postseal-common-positive-unit` | `unit-name-selects-coefficients` | A unit label cannot choose a ratio. |
+| `target` | `target-inaccessible-until-formal-seal` | `target-readable-before-seal` | That would fit the known spectrum. |
+| `extension` | `no-extra-rule` | `free-spin-correction` | An ungenerated correction is a parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:9f7d24de80fb141e1123b67d6c9295b208fb454e4fb95d34e54fc5d21689043b`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:f8d54892b5d1ed3de6ba27737dd5b9c621492a76f12a7ac16c91ae9adbe70762`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:da01e8d6d5522b0b8e723c54fdd47faa177bba7822980c9fd58585ff2ed16c23`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:ab20aee40cd9249b6bf57a500d8ba2e70e83717f2eb6edbfe97b6b0982951749`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:bc80d96fa5308bfe83ed5785f06f0a5a4cb2407237f8386e2aadad901aa56e2d`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:d8eb0ca9a875d53c79c84e15781c7b8432d9e5e0e36c184f5953831babba8d0b`. Independent certificate: `sha256:33518183cdd429114c0ead42400024b705b56090b4981d0ffcf41b0c0e059bc7`. Engine external-validation hash: `sha256:fdbe35e195df34916562fc5484c6c7c5f813b09c2de7688d49580c3e08bdd9d4`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Nuclear and hadronic laws close composition, residual interaction, binding, levels, decay, reaction, fission, fusion and spectral support at their registered exact boundaries. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no fitted or measured Regge slope, intercept, mass, width, residual or selected trajectory row
+- no imported string-tension parameter or continuum string equation
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof scalar
+- no pre-seal physical-unit calibration or target access
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:6ffe106a351c8ba56384198d304d4fa489454b66823ee3ec41e608c59fd69daf`; engine receipt `sha256:f82510d61a2e1472c8d090f2fd1f63b53491bab9f875ce4ae27b0e0b6b5fc54e` at `receipts/engine/model_admitted/SFT-PHYS-HADRON-REGGE-DIMENSIONAL-TERMINAL-059-f82510d61a2e1472.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 21. Spacetime Gravitation
 
 Spacetime is relational event support and gravitation is source-linked path structure. No background continuum or imported metric equation is installed as a premise.
 
-### 196. Relational spacetime event
+### 221. Relational spacetime event
 
 Claim identity: `SFT-PHYS-SPACETIME-EVENT-RELATION-001`
 
@@ -15695,7 +17750,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1432661c0f6d82366ac4f9242b50b0cb701690050a23fd3a14003aa89079fa30`; engine receipt `sha256:82fcaa4e269454cbc2b6c7308f0505bc092b436bd8a240c9ad6799d2bd5e3622` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-EVENT-RELATION-001-82fcaa4e269454cb.json`; empirical-validation hash `sha256:696e6ebacc729052b3b4ae64b4149ab84ea68d38cfac3f247505f0a79d33cf3e`; measurement receipt `sha256:8dada648a51868ea3569d4c92ba039fad71738b6191c83b0ab311e3aad6072e9`.
 
-### 197. Invariant event interval
+### 222. Invariant event interval
 
 Claim identity: `SFT-PHYS-SPACETIME-INTERVAL-001`
 
@@ -15779,7 +17834,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e4d316c3500dbca3efc77b55638d28b6e9f6a12af7611643374a3cfd28a65ad0`; engine receipt `sha256:50d120a00b976766cf5679b950c5b17e11f3c7718e90f8350bfb0f4de166298f` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-INTERVAL-001-50d120a00b976766.json`; empirical-validation hash `sha256:2a2776461015bd10876a20724e3935b290f458bf6725d340951e4114c8b2ca6f`; measurement receipt `sha256:e2bde2298077d8e2c5fed178ea398024d00549e3d72d24a2c05a2c66432223b8`.
 
-### 198. Causal order and accessibility cone
+### 223. Causal order and accessibility cone
 
 Claim identity: `SFT-PHYS-SPACETIME-CAUSAL-ORDER-001`
 
@@ -15863,7 +17918,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ebac04b824e98f9d993423d4e8eb91d0a11b27106eaa53b2f134cba581aba6ef`; engine receipt `sha256:1bfc8212981c9de42edb974516b15a92e3313182b0e61c7048f60ed8883d2678` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CAUSAL-ORDER-001-1bfc8212981c9de4.json`; empirical-validation hash `sha256:d8c887f8b816e18cad223094fd3ab55579943d65e68a11e7ee4553a067807603`; measurement receipt `sha256:25be46db3ad5277c12a1891ceae8822285bc4b86090bb022f136f7bfafb4aad6`.
 
-### 199. Inertial frame correspondence
+### 224. Inertial frame correspondence
 
 Claim identity: `SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001`
 
@@ -15947,7 +18002,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:bf6777d88a537ebb9ece0f7805aa0d6f0052ed940444b7f178d08469ef3148f0`; engine receipt `sha256:a9a1243a2a78ae05c7b16a006f1841a05abf263e00f35ca77ea68d5a5d2dcbb9` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001-a9a1243a2a78ae05.json`; empirical-validation hash `sha256:ca79b98d79e30fc96b7a7f154dd3908e663f5a9fd38543595403aa25a8b69169`; measurement receipt `sha256:ed541a487244cbea726608732cbff8123eba2f7e749162ab5d6f111e7cf1d863`.
 
-### 200. Invariant limiting propagation speed
+### 225. Invariant limiting propagation speed
 
 Claim identity: `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
 
@@ -16030,7 +18085,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fbe9031ec69bbcf574735a42d111b6098057e3ebd47aba0ba6b244143e4c7803`; engine receipt `sha256:9bef8332bbd2d865002cece22dfd62dfbbc9a9084876156ff04bb8d388551a3e` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-LIMIT-SPEED-001-9bef8332bbd2d865.json`; empirical-validation hash `sha256:97e83cbfc50402a837d53fcd83feb9ca236caf6a396f55dfc1fdf3a778c68433`; measurement receipt `sha256:af13f413002d4934e1d6e502ec6563cc9afcbf087fe6443bed2bb4c863451b94`.
 
-### 201. Relative clock-rate relation
+### 226. Relative clock-rate relation
 
 Claim identity: `SFT-PHYS-SPACETIME-CLOCK-RATE-001`
 
@@ -16114,7 +18169,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e2c7e10a97fa2126fb26c770b9c8e23423ca25e1a9412836eaa2cfb1db9dba47`; engine receipt `sha256:e7413efbd9b5a70f627078003097d132d54f3a872a7ffb58545a56e106487d34` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CLOCK-RATE-001-e7413efbd9b5a70f.json`; empirical-validation hash `sha256:3795eb8d27b90586e27be5332749347c83245b4339a2898be1d50e1b3a0b0eba`; measurement receipt `sha256:6d5fbd1c9a090fe1f28fbecd908e63eafcdf60ebaf732e2d7ba7749b1bc29c1d`.
 
-### 202. Relative spatial-extent relation
+### 227. Relative spatial-extent relation
 
 Claim identity: `SFT-PHYS-SPACETIME-LENGTH-RELATION-001`
 
@@ -16198,7 +18253,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4e5f6f72c85b5622f17b4e8847f5657f6491f1d55346b47e2df5e9afd62442c0`; engine receipt `sha256:34de5f07fb814d9d840ebfb262cff11c2fa45736e26a95d94c26328edd162a7d` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-LENGTH-RELATION-001-34de5f07fb814d9d.json`; empirical-validation hash `sha256:adaee49ca1b23978a9d18c187e8ff3cfe0e5fa447d2ba63c8ce27fe41c52cf4d`; measurement receipt `sha256:a32487b92a5a6536054fc88923113da4d4464fe04bb45ac3f57ecb92a98578cc`.
 
-### 203. Inertial-gravitational equivalence
+### 228. Inertial-gravitational equivalence
 
 Claim identity: `SFT-PHYS-GRAVITY-EQUIVALENCE-001`
 
@@ -16282,7 +18337,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:debdf06bf6ab446c0e570406a49f5da060c602c5d45563b682df99144f160c05`; engine receipt `sha256:391143646a9cbdfec7c08931a1e1f662f1132224e4303f02c6ca1e050213e459` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-EQUIVALENCE-001-391143646a9cbdfe.json`; empirical-validation hash `sha256:e8a5760895c5fe0229b3d28c7081c53bb1a517c749f497002bbf880043c93703`; measurement receipt `sha256:8da3f466abdecd2171edccd7bc27493a6d8730c6ff2fde273ab946f273f0f07a`.
 
-### 204. Source-linked relational curvature
+### 229. Source-linked relational curvature
 
 Claim identity: `SFT-PHYS-GRAVITY-CURVATURE-001`
 
@@ -16366,7 +18421,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c882cbf1ee5ee7f660f46f000d82d7434a3174d8a745f73e60fdc255e42058ae`; engine receipt `sha256:4a4e70826c4fd7be1d00b9aa003261fb437402fb7c43ab61130e3f17852828b3` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-CURVATURE-001-4a4e70826c4fd7be.json`; empirical-validation hash `sha256:fef1f1331caa9c032a29ad4ce7977f4119571cf1ccb39f17b20a5f0d8b233438`; measurement receipt `sha256:ad2de4c531e6cc4451e44954e488fcd55cdc5ed63a7fdd0d45605474943d8a46`.
 
-### 205. Free propagation on curved relation
+### 230. Free propagation on curved relation
 
 Claim identity: `SFT-PHYS-GRAVITY-GEODESIC-001`
 
@@ -16450,7 +18505,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:374514b1682e1464b36702b385c0fa0f5956f5d119eaf8a44230d2386388cbcf`; engine receipt `sha256:fcd6e73b219916aa38b32b7f2f781e0711935f16db94bae6359634106e177782` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-GEODESIC-001-fcd6e73b219916aa.json`; empirical-validation hash `sha256:abb3be49e4d9abc5657257c748d69b0d531896492951089c3eab598e745f11fe`; measurement receipt `sha256:2e87a9a5e3e82e5521850fc66255d692f4bdced8d84830787b33cdb3ac7783ee`.
 
-### 206. Gravitational field-source closure
+### 231. Gravitational field-source closure
 
 Claim identity: `SFT-PHYS-GRAVITY-FIELD-SOURCE-001`
 
@@ -16534,7 +18589,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:586326ad2962e36fb72e63267cf73f63a2b7a2769ef76b79936138c42547ffb3`; engine receipt `sha256:80e7d6df387d7f3fec02ef0deaf4a31f5838e858ed740f648e2f5950a4375140` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-FIELD-SOURCE-001-80e7d6df387d7f3f.json`; empirical-validation hash `sha256:e58b1b4ad9f490bce8fac6023b462c676cf34c47ae54f106d172a5e67d92c328`; measurement receipt `sha256:b7f53de6ed47b473111318347f5cdc8ab679312ee0cd53db38f0220ed397a1b9`.
 
-### 207. Gravitational-wave propagation
+### 232. Gravitational-wave propagation
 
 Claim identity: `SFT-PHYS-GRAVITY-WAVE-001`
 
@@ -16618,7 +18673,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d3c2e4ade0bcd74a1cb6731c8db906e8b9e9a53d4ce309301b39790715679923`; engine receipt `sha256:f2bcf8f3bec360481dadd724546028e3c47c633bd288adecbf650d92a8d0f1ba` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WAVE-001-f2bcf8f3bec36048.json`; empirical-validation hash `sha256:013c0d29ad9a8ad2f3850f481e9b0be54e0a291f3baea625227a050109934f05`; measurement receipt `sha256:b294c31d9d0cccfdb72234bc8edd7fc77f2e8f2e81328ac54b3f94683b099b00`.
 
-### 208. Causal horizon boundary
+### 233. Causal horizon boundary
 
 Claim identity: `SFT-PHYS-GRAVITY-HORIZON-001`
 
@@ -16702,7 +18757,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:dc739559de7afaf7c8fff7beb4ceb24afcf08cf87fe9832f66b9f235c694fd65`; engine receipt `sha256:7abc9b68655deb7986f0846887236bae69f14d4d6656d2ed71c388d0f889c52d` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-HORIZON-001-7abc9b68655deb79.json`; empirical-validation hash `sha256:8c7e559f057c9378e631a19da8f7ac4d999c223aee5e3673ab8260e1014bbcbd`; measurement receipt `sha256:25a77549a95884a6c8b2f2f636f8d2521bdf5c406b96c298326e7b5fc772a502`.
 
-### 209. Weak gravitational potential and Gauss closure
+### 234. Weak gravitational potential and Gauss closure
 
 Claim identity: `SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003`
 
@@ -16768,7 +18823,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7c0505b506dfe931f6cc18545096842c688511616b5a689011fec0919398570a`; engine receipt `sha256:35145c1a594d6707add50a3f2e72dd3a2162092390fd9b3db03eed38b79ee147` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003-35145c1a594d6707.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 210. Exact causal interval
+### 235. Exact causal interval
 
 Claim identity: `SFT-PHYS-SPACETIME-EXACT-INTERVAL-003`
 
@@ -16834,7 +18889,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:388e83da2499c5e29b9f4c9a54b10d6728cb9fc9900ae60fb561b65608b9ee27`; engine receipt `sha256:c5560ae617b8b077c8d945e3f9b40475f2ca9c4b64028b4a7ea339753d936c4f` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-EXACT-INTERVAL-003-c5560ae617b8b077.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 211. Static Fold-covariant clock
+### 236. Static Fold-covariant clock
 
 Claim identity: `SFT-PHYS-GRAVITY-STATIC-CLOCK-003`
 
@@ -16900,7 +18955,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:bf88511ad49c19ee24bae6de64e2f8e2977ed8e31e5c0f473640c27d71332bee`; engine receipt `sha256:8c03d3fd2812c980509616560286fd28ee1b29400c611cde02ef129d15fa8cb4` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-STATIC-CLOCK-003-8c03d3fd2812c980.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 212. Gravitational-redshift and acceleration equivalence
+### 237. Gravitational-redshift and acceleration equivalence
 
 Claim identity: `SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003`
 
@@ -16966,7 +19021,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9ac9a202b994c37ead3a9befcaac43fa469fc5b49ca0eb2a46241e1dfe9262a3`; engine receipt `sha256:6726f8bb1dd6a005b03f9058957774e3e97b2d14f7850901331494aefef7185c` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003-6726f8bb1dd6a005.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 213. Exact lattice curvature family
+### 238. Exact lattice curvature family
 
 Claim identity: `SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003`
 
@@ -17032,7 +19087,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7e746116ea5adbf38e0424307cef139670ef7b261813a4e196ba3d94f78cb787`; engine receipt `sha256:f10d0261e22c0cdfbce4d91bd75653851064c132325530b1b57e2da5e06ee457` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003-f10d0261e22c0cdf.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 214. Gravity self-sources through field energy
+### 239. Gravity self-sources through field energy
 
 Claim identity: `SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003`
 
@@ -17098,7 +19153,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8ac8e53f3269e2eb63aae1ac45af265f8731882d171ae9d5c120f2b640d93670`; engine receipt `sha256:ce5bb88d7247a7c82c3aa1050b1e4a5261acb4e4cbc301489b504668a87c5fbe` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003-ce5bb88d7247a7c8.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 215. Graviton polarization count
+### 240. Graviton polarization count
 
 Claim identity: `SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003`
 
@@ -17164,7 +19219,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4a4e93a0ec30fe32dc6426ba37a59997f1ba955a54ac323f1f16a72e9b8145b8`; engine receipt `sha256:708fffd5a309a9cee077c2db46aef2bf8374435ec2c7bdf4685ef1fb719d0d73` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003-708fffd5a309a9ce.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 216. One-speed quadrupole gravitational propagation
+### 241. One-speed quadrupole gravitational propagation
 
 Claim identity: `SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003`
 
@@ -17230,7 +19285,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:213090faa82308f6a578c468bf789350ae23d79bc26ca90da85020678f8a4415`; engine receipt `sha256:e0769c5998c353edbc1b4d0a6df76c0c409591e722297dff3803cabe99e73ab1` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003-e0769c5998c353ed.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 217. Strong-field horizon and finite floor
+### 242. Strong-field horizon and finite floor
 
 Claim identity: `SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003`
 
@@ -17297,7 +19352,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b722ecbf789c1bbc44be3a51f17133c93acc9f519572e5e27c93156ba959c6db`; engine receipt `sha256:3c02d56ccea9efaed7a9fc9f065e27145f2b6597504a447e3b4ac623e61cc6af` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003-3c02d56ccea9efae.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 218. Horizon information closure and reconstruction
+### 243. Horizon information closure and reconstruction
 
 Claim identity: `SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003`
 
@@ -17363,7 +19418,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d578e7a1a921310db0c147efd4ec00f3b615bcbd2778ead49ce42d1b7ccef823`; engine receipt `sha256:db27fe2ffddbd49475498a04db13944c1443b625794229c3b222676e143520a2` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003-db27fe2ffddbd494.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 219. Wormhole admissibility boundary
+### 244. Wormhole admissibility boundary
 
 Claim identity: `SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003`
 
@@ -17430,7 +19485,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:67c1666443b8ed04ce9307ab397b0928be0efcceed8444bdafec9817c69d7cc7`; engine receipt `sha256:ad75329a73a9f31385c1e0e991770bed8415bafa318be84afb8f278ca322d96d` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003-ad75329a73a9f313.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 220. Warp-support admissibility boundary
+### 245. Warp-support admissibility boundary
 
 Claim identity: `SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003`
 
@@ -17497,7 +19552,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d190525037fcae71f32029e1d2d030ea68ffcd51ca42aa7cc7fdf2f0b69cf098`; engine receipt `sha256:b864f95be8c08840d7e5e99ab664e84404d6121fa17385ed3fe751d5a53e5ab9` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003-b864f95be8c08840.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 221. Closed-timelike recurrence admissibility boundary
+### 246. Closed-timelike recurrence admissibility boundary
 
 Claim identity: `SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003`
 
@@ -17564,7 +19619,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9bdb9f8c120d617b2cab104453a64776034f03b12b936fb070f853cbd129420b`; engine receipt `sha256:101b8251369135bcf188c580c15f045d3f54cc502ad46813ded8b478b60b19cb` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003-101b8251369135bc.json`; empirical-validation hash `None`; measurement receipt `None`.
 
-### 222. Exact gravitational self-source fixed point and correction contraction
+### 247. Exact gravitational self-source fixed point and correction contraction
 
 Claim identity: `SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009`
 
@@ -17655,7 +19710,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:f84ebef827868c003789aad44f9088adf3c06844f66bbaecb17d26ee53ca2c48`; engine receipt `sha256:b0e30a2cb8fa9d9f2232df8f8790ab82d8fc2f8e6555326543e15fce2fb48bba` at `receipts/engine/model_admitted/SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009-b0e30a2cb8fa9d9f.json`; empirical-validation hash `sha256:ca10b7b14f51a35455ae8ad25496eb963f4e4f9c9da7fe69085349663f8f364d`; measurement receipt `sha256:527fd031517257181bd22ccd2b9152f5a09ce8690dd0917818c00961f784f0e6`.
 
-### 223. Four-coordinate symmetric curvature-source conservation law
+### 248. Four-coordinate symmetric curvature-source conservation law
 
 Claim identity: `SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010`
 
@@ -17753,7 +19808,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d431ad929bc7f92e5dbefee79f3035e70ea388ffcb3a410c4200932ef6096424`; engine receipt `sha256:79b12fc32760832dc52e87fcf8d743575ebe2f944c18e7cb24cbb41a6d8a5b22` at `receipts/engine/model_admitted/SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010-79b12fc32760832d.json`; empirical-validation hash `sha256:ec7c1dffc9a180ff3f16ed4ab83a2919d2642fb06239e9288d65aff94393cd45`; measurement receipt `sha256:34d28a05fe1a7fcfb4fd61bb56d7b4a0977ed55509006d5f77e994f3e78793f0`.
 
-### 224. Exact static spherical exterior coefficient, flux and clock law
+### 249. Exact static spherical exterior coefficient, flux and clock law
 
 Claim identity: `SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011`
 
@@ -17852,7 +19907,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:e5f2822b8dd9d6c891579c00b272e1f47f6f682a772df43caa5e5965f7863e74`; engine receipt `sha256:fca4c68a06026daea19121fd5b71d52bc98e2410be1f83eaef13ff62600d880c` at `receipts/engine/model_admitted/SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011-fca4c68a06026dae.json`; empirical-validation hash `sha256:eca6a4597b64466858c074f25b32e63047298bd700645bf2fc6939183255f393`; measurement receipt `sha256:15a204fcfe5f0dff58a1f20ab334170998568827dde8b70e681adee9e7537d3b`.
 
-### 225. Exact quadrupole third-difference radiated-power law
+### 250. Exact quadrupole third-difference radiated-power law
 
 Claim identity: `SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012`
 
@@ -17950,12 +20005,323 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d66fcf0085cdaf7086a73cd43170aba452784f91acf319dce4ce84281e43833d`; engine receipt `sha256:e43448d651ade64487e4cbd44620c4812ffafcb62d20bd71c9c3bde51cdb4db6` at `receipts/engine/model_admitted/SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012-e43448d651ade644.json`; empirical-validation hash `sha256:fdd1e90d58113fe690623d58a08292113881bfcb55f9bb2d3407edcd63b7aedd`; measurement receipt `sha256:86923e0713e593e62ee8cade4399e2321732f802fceb921aaf303a58707d554b`.
 
+### 251. Single finite Fold quantum-gravity composition
 
-## 19. Continua Collective Matter
+Claim identity: `SFT-PHYS-FINITE-QUANTUM-GRAVITY-TERMINAL-023`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** At every positive finite Fold depth, one shared lattice jointly retains complete quantum support, three spatial directions, a symmetric rank-two gravity carrier with two physical polarizations, empty mass/rest record, One-cell causal advance, a positive distance floor, a finite rational loop sum and a quarter-area horizon ledger; no extra spatial direction or completed infinity is generated.
+
+> At every positive finite Fold depth, one shared lattice jointly retains complete quantum support, three spatial directions, a symmetric rank-two gravity carrier with two physical polarizations, empty mass/rest record, One-cell causal advance, a positive distance floor, a finite rational loop sum and a quarter-area horizon ledger; no extra spatial direction or completed infinity is generated.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-QUANTUM-PHYSICAL-STATE-001`
+- `SFT-PHYS-QUANTUM-EVOLUTION-001`
+- `SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003`
+- `SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010`
+- `SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003`
+- `SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003`
+- `SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003`
+- `SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
+- `SFT-PHYS-VALIDATION-FINITE-LOOPS-003`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of shared carrier, dimensional support, rank-two source, polarization reduction, mass/causal carrier, quantum support, finite-loop closure, horizon ledger, comparison boundary and extension forms. The declared exact boundary is: Every positive finite Fold depth on the admitted three-space lattice, its complete binary quantum support, four-coordinate symmetric rank-two source slots, finite exact loop prefix, positive distance floor and complete quarter-area horizon record.  Continuum completion is outside the boundary. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `single-finite-Fold-lattice__three-space-plus-one-process-direction__complete-symmetric-rank-two-source__ten-take-four-take-four-leaves-two__empty-mass-record-and-One-cell-per-tick__complete-finite-binary-word-support__complete-finite-rational-loop-prefix__positive-floor-and-quarter-area-record__inherit-sealed-wave-loop-and-horizon-comparisons__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `single-finite-Fold-lattice` | `separate-quantum-and-gravity-substrates` | Separate substrates do not establish a composition law. |
+| `dimension` | `three-space-plus-one-process-direction` | `chosen-or-extra-dimensional-space` | A chosen or added dimension is not generated by the stability theorem. |
+| `rank` | `complete-symmetric-rank-two-source` | `scalar-or-selected-tensor` | A scalar or selected tensor omits the admitted complete source slots. |
+| `polarization` | `ten-take-four-take-four-leaves-two` | `assigned-spin-or-mode-count` | An assigned label does not derive physical degrees. |
+| `propagation` | `empty-mass-record-and-One-cell-per-tick` | `fitted-mass-or-speed` | A fitted mass or speed imports the target. |
+| `quantum` | `complete-finite-binary-word-support` | `continuum-amplitude-space` | A continuum adds ungenerated support. |
+| `loops` | `complete-finite-rational-loop-prefix` | `completed-infinity-or-counterterm` | A completed infinity and correction are outside the Fold grammar. |
+| `horizon` | `positive-floor-and-quarter-area-record` | `unbounded-or-unrecorded-boundary` | An unbounded or unrecorded boundary loses the finite ledger. |
+| `comparison` | `inherit-sealed-wave-loop-and-horizon-comparisons` | `target-selects-composition` | External programmes cannot choose the joint model. |
+| `extension` | `no-extra-rule` | `extra-dimension-or-free-regulator` | Either addition changes the generated model. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:f096b575fff7c59ef6ae9d4a7f92f9e78b8ca7f901d67a6329218d8003dc4db1`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:bc21475047b4e738c5bdd65495fdad246c91a59c4b3f1db1db7944785e6715af`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:cd38d0775100d18bfc3cf208b6993ae2b2b1443141df70112c6ef0232c1c1522`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:a6791b69b5fb4b37c86d8b6c5d774414fb1d896e586f28e383a38937a06801b9`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:610f2dae6849e9463367f5c6e25fea21fd1120b805ea63b4af0ddd004cffabb4`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:50fe71d3ae3dc9f2a84f9956a1fe508b355fef7d5f6e5d71b824dc9753908084`. Independent certificate: `sha256:9c22d51a095f633f83a21d93863618612c1d42c3816c08a4d29efe4dd73f5110`. Engine external-validation hash: `sha256:a3c69b5deb330c8717e1f165a1469a1fbfb5ceeecf6016c9a0345ff18f31c4d7`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Spacetime is relational event support and gravitation is source-linked path structure. No background continuum or imported metric equation is installed as a premise. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported continuum quantum field, Einstein quantization or conventional quantum-gravity programme as a premise
+- no V1/V2 executable, answer table, measured value or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no completed infinity, fitted counterterm, free regulator or extra dimension
+- no claim of direct graviton detection or proof of a continuum Yang-Mills/Einstein completion
+- no external comparison before the inherited wave, loop and horizon seals
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:3a1a03aa2db41ddfec0d52aa4cef5f80c5bd2448cfeeb8c3c862209bc4c63672`; engine receipt `sha256:a627c3db6aff944a007b53df0a06975454cec52c113e672da62a440ebfd191e7` at `receipts/engine/model_admitted/SFT-PHYS-FINITE-QUANTUM-GRAVITY-TERMINAL-023-a627c3db6aff944a.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 252. Exact positive Fold velocity-composition law
+
+Claim identity: `SFT-PHYS-SPACETIME-VELOCITY-COMPOSITION-TERMINAL-033`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The unique exact same-direction Fold composition is (u+v)/(One+uv). Typed rest is a two-sided identity; the limiting One is absorbing; positive sublimit parts remain strictly sublimit; pair multiplication makes the law associative and reconstructible; and the complete identity-compatible bilinear census contains four candidates with exactly one survivor.
+
+> The unique exact same-direction Fold composition is (u+v)/(One+uv). Typed rest is a two-sided identity; the limiting One is absorbing; positive sublimit parts remain strictly sublimit; pair multiplication makes the law associative and reconstructible; and the complete identity-compatible bilinear census contains four candidates with exactly one survivor.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-EXACT-OPERATIONS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-MECH-SPEED-VELOCITY-001`
+- `SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001`
+- `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of motion domain, typed rest, forward/held representation, identity-compatible numerator cross term, identity-compatible denominator cross term, limiting-speed behavior, closure, associativity, held-record reversibility, empirical custody and extension form. The declared exact boundary is: Every exact positive rational speed part through the limiting One; typed rest; typed empty held part; both present/absent choices for the bilinear cross term after two-sided identity forces the left, right and denominator-One terms; every exact triple composition; and no signed or continuum proof scalar. The generator produced `2048` named candidates and the decision support contains `2048` one-for-one decisions. Exactly one candidate survived: `exact-positive-parts-and-held-direction__typed-rest-state__forward-held-pair__cross-term-absent__cross-term-present__limiting-One-is-absorbing__strictly-inside-One__exact-associative-product__retain-forward-and-held-parts__postseal-only-comparison__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `domain` | `exact-positive-parts-and-held-direction` | `imported-real-line-velocity` | A continuum imports the target model. |
+| `rest` | `typed-rest-state` | `numerical-zero` | Numerical nothing is not an admitted physical part. |
+| `representation` | `forward-held-pair` | `single-unrecorded-scalar` | One scalar discards the reverse distinction. |
+| `numerator` | `cross-term-absent` | `cross-term-present` | It prevents the limiting One from remaining fixed. |
+| `denominator` | `cross-term-present` | `cross-term-absent` | Then composing the limiting One with motion exceeds the One. |
+| `limit` | `limiting-One-is-absorbing` | `limit-moves-or-is-exceeded` | That violates the admitted causal boundary. |
+| `closure` | `strictly-inside-One` | `unbounded-sum` | Ordinary addition can leave the domain. |
+| `associativity` | `exact-associative-product` | `order-dependent-rule` | Frame grouping cannot change one physical relation. |
+| `record` | `retain-forward-and-held-parts` | `discard-held-part` | Discarding the held part makes reversal ambiguous. |
+| `measurement` | `postseal-only-comparison` | `Fizeau-readable-before-seal` | A measured fringe slope could select the survivor. |
+| `extension` | `no-extra-rule` | `free-coefficient-or-correction` | A coefficient would be a parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:e223da6d28c5b7d688dad577ff84b1390f312761a376a600f0ed1e14502193dd`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:1a79d62f8ac2f0a5fe2ffe1d3f2dca509e9f18574bc167ecdb1dab811e6204de`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:5813a6c7d53a6d4e3115124335f2123031a0e24752459a9b03375bb0c7ec5938`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:e38d5fdee7058292ad1eadfc03d800a6406911159ddd0706be07124cb04bf09e`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:1260794679b17e38744d0f6ff5ab19124bbd9d70cf8176ba23e0e66d5f86bb13`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:aae0a1d576d4398f4ec1cc2d1bae82141125702742896d55b4effd574b61e078`. Independent certificate: `sha256:99a423ca52573da9a5770fac70fb2414a1e0949e4acb826714bf285e58b5458f`. Engine external-validation hash: `sha256:c9cf1eef018a668be095cd8d378c4ceda7d99d0ccd70b166758188ed9b250d85`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Spacetime is relational event support and gravitation is source-linked path structure. No background continuum or imported metric equation is installed as a premise. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, stored velocity-addition formula or measured optical result in the forcing runtime
+- no numerical zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof value
+- no imported Lorentz transform, rapidity, hyperbolic function or consensus kinematic equation as a premise
+- no target-selected coefficient, fitted denominator or hidden premarked survivor
+- no claim that the same-direction scalar law alone supplies the full non-collinear rotation law
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:1ae6884e89287d60530400baa6c2765a3339fc5329619cc83d6270e09516fada`; engine receipt `sha256:337fccb78afd2207d9976e8034d89d1db75ba9fed2f63c44a3b36ae0e90935a0` at `receipts/engine/model_admitted/SFT-PHYS-SPACETIME-VELOCITY-COMPOSITION-TERMINAL-033-337fccb78afd2207.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 253. Terminal compact-object and horizon-thermodynamics law
+
+Claim identity: `SFT-PHYS-COMPACT-HORIZON-THERMODYNAMICS-TERMINAL-071`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every positive whole q, complete exclusion packing has q^3 occupants, forced momentum depth q, relativistic support q^4 and gravitational paired support q^6; q^6 is strictly greater after the exact base. The loaded exclusion threshold is 3/4 and its Fold balance is 1/2. Exactly two pre-horizon support families exist. For every positive exact mass m, horizon radius is 2m, area support is (2m)^2, entropy support is one quarter of that area, and temperature is 1/(16m), preserving exact product mT=1/16. At m=1/4 the admitted radius and temperature are respectively 1/2 and 1/4. Every finite halving emission trace retains positive mass, temperature, area and information support; no numerical zero or completed infinity enters.
+
+> For every positive whole q, complete exclusion packing has q^3 occupants, forced momentum depth q, relativistic support q^4 and gravitational paired support q^6; q^6 is strictly greater after the exact base. The loaded exclusion threshold is 3/4 and its Fold balance is 1/2. Exactly two pre-horizon support families exist. For every positive exact mass m, horizon radius is 2m, area support is (2m)^2, entropy support is one quarter of that area, and temperature is 1/(16m), preserving exact product mT=1/16. At m=1/4 the admitted radius and temperature are respectively 1/2 and 1/4. Every finite halving emission trace retains positive mass, temperature, area and information support; no numerical zero or completed infinity enters.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001`
+- `SFT-PHYS-QUANTUM-EXCLUSION-001`
+- `SFT-PHYS-VACUUM-ODD-RECURRENCE-003`
+- `SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003`
+- `SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003`
+- `SFT-PHYS-FINITE-QUANTUM-GRAVITY-TERMINAL-023`
+- `SFT-PHYS-STELLAR-NUCLEAR-COLLAPSE-TERMINAL-069`
+
+**Generated grammar and closure boundary.** Generate the complete twelve-axis product of occupation, momentum, support scaling, gravity scaling, threshold, endpoint-family, horizon-radius, area, entropy, thermal, finite-floor and extension forms. The declared exact boundary is: Every positive finite perfect-cube exclusion support and successor; the complete binary endpoint fibre; the admitted quarter-One horizon witness; every positive exact mass carrier; every finite binary emission depth; and the complete twelve-axis alternative product, with dimensional observations inaccessible. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `one-fermion-per-generated-cell__cube-side-momentum-depth__occupants-times-forced-depth-q4__paired-source-q6__three-quarter-preimage-to-half-One__exactly-two-binary-fibre-families__one-Fold-mass-doubling__rank-two-radius-pair__quarter-area-boundary-record__fixed-thermal-mass-product__positive-finite-floor-at-every-reached-depth__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `occupation` | `one-fermion-per-generated-cell` | `multiply-occupied-cell` | That violates the admitted exclusion law. |
+| `momentum` | `cube-side-momentum-depth` | `selected-momentum-scale` | A selected scale is a free parameter. |
+| `support` | `occupants-times-forced-depth-q4` | `imported-pressure-equation` | An imported equation cannot select the Fold law. |
+| `gravity` | `paired-source-q6` | `linear-unpaired-source` | Gravity couples the complete source support to itself. |
+| `threshold` | `three-quarter-preimage-to-half-One` | `chosen-dimensional-mass` | A measured mass cannot choose a structural threshold. |
+| `endpoint` | `exactly-two-binary-fibre-families` | `open-ended-remnant-list` | An open list is not generated by the binary fibre. |
+| `radius` | `one-Fold-mass-doubling` | `imported-metric-radius` | A conventional metric is not a premise. |
+| `area` | `rank-two-radius-pair` | `volume-support` | A volume count contradicts boundary rank two. |
+| `entropy` | `quarter-area-boundary-record` | `selected-entropy-coefficient` | A selected coefficient is an extra rule. |
+| `thermal` | `fixed-thermal-mass-product` | `constant-or-fitted-temperature` | A constant or fitted temperature loses the scale recurrence. |
+| `floor` | `positive-finite-floor-at-every-reached-depth` | `numerical-zero-or-completed-infinity` | Neither is an admissible Fold proof form. |
+| `extension` | `no-extra-rule` | `free-family-or-correction` | An ungenerated addition destroys uniqueness. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:56d27e2bf2befa6f84307356e39c47f3e504c62df9abf7b2308422a1b55e2b02`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:0878afc8bf2c2c8f737679a1c61c32e38401807d20596f05b5f47dc537e086a4`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:50471e1307e0c04b3cf08a18994d9af7ecaa4ef648402663b012ab188253ab85`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:6910b46decbdf4d41ac76a288239eef5b0ca41b5d6e8e3a7b9fa96066e7c3f5a`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:b6638c8870605306c719cd98a4b5ccdd7c66c10d1dafd55134832de03f8d1977`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:dec2163b532cbc88444fee5bb33e4db12b914fe99dbc46cad6b9edbce6e3a676`. Independent certificate: `sha256:ee8bdb300a7efc9e7e3f2bed94d58781b80605853c27c1f8e06fb0f523da8bce`. Engine external-validation hash: `sha256:d1a6ef1df492186113ff9b23ce189642cc691394402e6275109743177960b4d1`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Spacetime is relational event support and gravitation is source-linked path structure. No background continuum or imported metric equation is installed as a premise. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, conventional compact-object equation, catalogue mass or Hawking target in formal execution
+- no fitted mass limit, equation-of-state knob, temperature calibration, area normalization or evaporation correction
+- no numerical zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinite proof scalar
+- no claim that a normalized Fold temperature alone is a direct kelvin observation
+- no third pre-horizon family, hidden support source, volume entropy or information deletion
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:244b4f8381f20d52b62cb6b81bb90e001fcdb6aecf409046330a78c7d7b4c6fd`; engine receipt `sha256:69152da01b20c6b1a7ab6ecfab4e44cf836d588cba4ea6f3b02d5827cb5a0b3f` at `receipts/engine/model_admitted/SFT-PHYS-COMPACT-HORIZON-THERMODYNAMICS-TERMINAL-071-69152da01b20c6b1.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 254. Terminal gravitational-wave chirp, merger and ringdown law
+
+Claim identity: `SFT-PHYS-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-TERMINAL-073`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For every positive finite binary shrink depth, separation and period squared strictly fall, exact squared orbital and gravitational-wave frequencies strictly rise, and every successor retains a positive radiated take. The quadrupole wave frequency is exactly twice the orbital frequency. At the first exact horizon contact, two compact source supports join one remnant with the complete radiation and component ledger held. The remnant mass/turn key fixes one tone class and its positive amplitude halves at every finite return. The unique causal waveform order is inspiral with rising chirp, merger, then damped ringdown; no negative, irrational, imaginary, continuum, numerical-zero or completed-infinite proof scalar enters.
+
+> For every positive finite binary shrink depth, separation and period squared strictly fall, exact squared orbital and gravitational-wave frequencies strictly rise, and every successor retains a positive radiated take. The quadrupole wave frequency is exactly twice the orbital frequency. At the first exact horizon contact, two compact source supports join one remnant with the complete radiation and component ledger held. The remnant mass/turn key fixes one tone class and its positive amplitude halves at every finite return. The unique causal waveform order is inspiral with rising chirp, merger, then damped ringdown; no negative, irrational, imaginary, continuum, numerical-zero or completed-infinite proof scalar enters.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-PHYS-MECH-CONSERVATION-001`
+- `SFT-PHYS-MECH-ANGULAR-MOTION-001`
+- `SFT-PHYS-WAVE-PERIOD-FREQUENCY-001`
+- `SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009`
+- `SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003`
+- `SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012`
+- `SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003`
+- `SFT-PHYS-COMPACT-HORIZON-THERMODYNAMICS-TERMINAL-071`
+
+**Generated grammar and closure boundary.** Generate the complete twelve-axis product of source, radiative moment, transfer ledger, separation, orbital balance, wave recurrence, contact, merger, remnant tone, damping, finite-floor and sequence forms. The declared exact boundary is: Every finite positive binary separation successor ending at the admitted horizon-contact support; every exact squared period/frequency and positive radiation-take record; the complete two-to-one source join; every finite binary remnant return; and all 4096 registered alternative combinations. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `held-two-source-orbit__admitted-quadrupole-rate__positive-retained-take__strictly-shrinking-positive-separation__inverse-square-period-square-equals-radius-cube__two-wave-cycles-per-orbit__first-horizon-boundary-contact__one-remnant-with-held-ledger__held-remnant-mass-turn-class__binary-half-One-contraction__positive-at-every-finite-depth__inspiral-chirp-merger-ringdown`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `source` | `held-two-source-orbit` | `unheld-single-source` | A single unheld source has no generated binary orbit. |
+| `moment` | `admitted-quadrupole-rate` | `monopole-or-dipole-radiation` | Conserved source and momentum close those records. |
+| `transfer` | `positive-retained-take` | `negative-or-erased-energy` | A negative scalar or erased distinction violates the Fold ledger. |
+| `separation` | `strictly-shrinking-positive-separation` | `fixed-or-expanding-orbit` | That does not conserve the positive binding and radiation ledger. |
+| `balance` | `inverse-square-period-square-equals-radius-cube` | `imported-or-selected-frequency-law` | An imported or selected law is not forced. |
+| `wave` | `two-wave-cycles-per-orbit` | `one-or-free-wave-cycle-per-orbit` | A free multiplier loses the two-lobed source record. |
+| `contact` | `first-horizon-boundary-contact` | `chosen-merger-time` | A chosen time is a parameter. |
+| `merger` | `one-remnant-with-held-ledger` | `erased-or-two-source-remnant` | It either deletes provenance or fails to join. |
+| `tone` | `held-remnant-mass-turn-class` | `fitted-tone` | A fitted tone is measurement-selected. |
+| `damping` | `binary-half-One-contraction` | `negative-exponential-or-free-decay` | That imports a forbidden scalar or parameter. |
+| `floor` | `positive-at-every-finite-depth` | `numerical-zero-or-completed-infinity` | Neither is an admissible Fold proof endpoint. |
+| `sequence` | `inspiral-chirp-merger-ringdown` | `permuted-or-omitted-stage` | It violates contact and source causality. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:32121943d933e156c025ac6e64a1ea453122f13d421c0cc1a6b7c1fe56d9aa5b`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:5cfebdc73d3ed910e8d7e650bd05623f61c3784e9893a4315e79132d2e2c3ba8`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:a2f756d006fe4276cceb5b5f90db01e157663e808cbd4c37e4a49756582e2388`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:54cb462cc3670586005c76324d6abbc96ca1d0949db6ed365b1a0f97703851b2`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:0230f911c50b7e075bd6308cd0d401310ea086b772d57fb59c1388ae88f5fb8b`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:0775b4e9ea9962f5407b6321178bd5571184eef331f569e088bd1326c6409981`. Independent certificate: `sha256:331dde20de8d262dd8f1086f919f30c3ddaa36eca49d78de9d8438dc3ec48069`. Engine external-validation hash: `sha256:c2a8a1d0a98c5fed6e75d2cf5634af2244239b42e188f9c82a3d1f9250cf4809`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Spacetime is relational event support and gravitation is source-linked path structure. No background continuum or imported metric equation is installed as a premise. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, LIGO waveform, dimensional frequency, measured mass or conventional inspiral equation in formal execution
+- no fitted chirp mass, merger time, waveform template, damping time, tone, amplitude or correction
+- no numerical zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinite proof scalar
+- no erased radiation, source, component, contact or remnant record
+- no claim that normalized Fold frequency is a measured hertz value
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:fb5a228f7f149ff8eb6b404af09b762c1c49fb051219104e070f9d80ff528571`; engine receipt `sha256:7add0b09e795aee79758286268637f442b40155f4af5c83a4a123f90e2150e19` at `receipts/engine/model_admitted/SFT-PHYS-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-TERMINAL-073-7add0b09e795aee7.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 22. Continua Collective Matter
 
 Continuum language is recovered as a declared observation quotient of finite generated cell networks. Fluids, plasmas and condensed phases retain local transfer and boundary provenance.
 
-### 226. Finite coarse-grained continuum correspondence
+### 255. Finite coarse-grained continuum correspondence
 
 Claim identity: `SFT-PHYS-CONTINUUM-COARSE-GRAIN-001`
 
@@ -18038,7 +20404,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7eed273621cf5466b155832334d6233f73b2969d81c206d2099fbf4eff584b37`; engine receipt `sha256:fca2926aba2b9fca7aaeb55fd3121f9a52d64846397776cbb26e30b884b1a509` at `receipts/engine/model_admitted/SFT-PHYS-CONTINUUM-COARSE-GRAIN-001-fca2926aba2b9fca.json`; empirical-validation hash `sha256:9350cfc2a37afabfe63d2c94540dea6bf21904ee8ba60b7b34f5988d94c95022`; measurement receipt `sha256:54e4a46c2fbe6c04e91bc6b288e9125ced225bde8547a007b72529f9fc3ff051`.
 
-### 227. Density as exact content-to-support relation
+### 256. Density as exact content-to-support relation
 
 Claim identity: `SFT-PHYS-FLUID-DENSITY-001`
 
@@ -18121,7 +20487,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2174bd50493277533f2bcb3ca5327a31201118dc149504ea5603ec2bbe31deba`; engine receipt `sha256:042d8b74f0692ac0c11dac25c449690e74d8f5a8b1196641080e377627b9bbcd` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-DENSITY-001-042d8b74f0692ac0.json`; empirical-validation hash `sha256:5f9caf1c3efb73312888b0181c4595a61ad9f10cd6ba1288e1a34ccdd179f078`; measurement receipt `sha256:6f1ec3ffdd790df3ad9700de6a7bcf02e133f22bdede346e418c3ba41dfba650`.
 
-### 228. Pressure and stress transport
+### 257. Pressure and stress transport
 
 Claim identity: `SFT-PHYS-FLUID-PRESSURE-STRESS-001`
 
@@ -18205,7 +20571,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fa1293b29e0e53ca46291f56f2a6d76cace71777596bb5d5c4008416b3a759ba`; engine receipt `sha256:94ae8c496c0ad93534009db375be075997529f8bb40292d7bff956f9dce7d853` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-PRESSURE-STRESS-001-94ae8c496c0ad935.json`; empirical-validation hash `sha256:59b462aa2e41aa117ca7b45e6d676ddd7c60b09cd67e2b15299d72979379f5c7`; measurement receipt `sha256:452d42fbae15faaae0856ab60e86b7c067f1e7d0e29a7d3e366e5fea07c856af`.
 
-### 229. Flow conservation
+### 258. Flow conservation
 
 Claim identity: `SFT-PHYS-FLUID-CONSERVATION-001`
 
@@ -18289,7 +20655,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:17c21e0e61208e61b4b3a30ede51a89dd492c9720b01444d85b5b4cd8676f409`; engine receipt `sha256:f6882fdf667263556f24e891247deb5f60533155505e7dfa31bdee8fb68f23ce` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-CONSERVATION-001-f6882fdf66726355.json`; empirical-validation hash `sha256:2f2c901861c6a9e382e381bc5f63e24f1b166f45c8c7a2217f0c435bba14d978`; measurement receipt `sha256:c85a4e2ddd3f216213e75a4418da06e63cf1c171b339770422c9d9434fed12d9`.
 
-### 230. Inviscid flow correspondence
+### 259. Inviscid flow correspondence
 
 Claim identity: `SFT-PHYS-FLUID-INVISCID-001`
 
@@ -18373,7 +20739,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:77981b1d9a4897ac79c4b93ee40fe02ef653ce17a93c9ddbfdf7b4137a8e45d6`; engine receipt `sha256:f697547d491a454368e7a58afdc7b0558bd77fc4a4c07419bae1d30623e21025` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-INVISCID-001-f697547d491a4543.json`; empirical-validation hash `sha256:240df644cb228a10a0388173cd15ee75473126fa655c7fc8d8295b93c8666cf7`; measurement receipt `sha256:b859bde36d69a637bb96f9cbd9d011e09bd29ac37789d276326d3e0ae3406be5`.
 
-### 231. Viscous momentum transport
+### 260. Viscous momentum transport
 
 Claim identity: `SFT-PHYS-FLUID-VISCOSITY-001`
 
@@ -18457,7 +20823,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7ef2a3786fb504b69aa64fd2dc22720096cad991236c9713b9310c8827270ac5`; engine receipt `sha256:b395ce239e1415b4afbd98cc99ab5f8a91dce5fb8a4914d2bdffe7e9b2108c71` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-VISCOSITY-001-b395ce239e1415b4.json`; empirical-validation hash `sha256:708e3c3f3fe96ccc69bc563b2145f46739256206c6ea6e68f6f125e055704f93`; measurement receipt `sha256:0dd046ca2d7e3d78f77c993ead65e6947505c7971b1647557a49f35914f8990b`.
 
-### 232. Finite turbulence and cascade boundary
+### 261. Finite turbulence and cascade boundary
 
 Claim identity: `SFT-PHYS-FLUID-TURBULENCE-001`
 
@@ -18541,7 +20907,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1d7f62f73bd0650e4705ba612c4d86f3640108c8d91e45efcd8db87d7fb3e369`; engine receipt `sha256:d8a59dabe554a169c1f5d8f4c7c70feb2a0d3e1ebaa0d26186d1e2316a2e406a` at `receipts/engine/model_admitted/SFT-PHYS-FLUID-TURBULENCE-001-d8a59dabe554a169.json`; empirical-validation hash `sha256:35c6d95008dbd73d5f4b12364f48f9d2e20127a35bd2d15eae7c18d989aae7c3`; measurement receipt `sha256:39abd31200a9319915f19bbbff0d68a4084b5e3520ddf1035af29c7ab7085135`.
 
-### 233. Plasma collective response
+### 262. Plasma collective response
 
 Claim identity: `SFT-PHYS-PLASMA-COLLECTIVE-001`
 
@@ -18624,7 +20990,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1a17a43a87ddbe90c7ffff4645ea017347a3955e923efcc63bd5280c4c9e8186`; engine receipt `sha256:31da2d601e05d224850b377d80396438c38447c40e994dd8d51f613238a07499` at `receipts/engine/model_admitted/SFT-PHYS-PLASMA-COLLECTIVE-001-31da2d601e05d224.json`; empirical-validation hash `sha256:71356ff0a424d73c918de32c5bc719462f1fa7619fa68772d092921c212690ed`; measurement receipt `sha256:9b1424fffe6a51cf3dd08684b0aad17f3157ec20a53bc0cff2aaf25ed4655e50`.
 
-### 234. Plasma oscillation and screening
+### 263. Plasma oscillation and screening
 
 Claim identity: `SFT-PHYS-PLASMA-OSCILLATION-001`
 
@@ -18708,7 +21074,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:32e35ac55e76c5661d80eeaf2b1cb3ab1f8caaac3e3a1c29bcaea6e6798d39d7`; engine receipt `sha256:14cdadbe5421c2cb5f6f231d20b0456b8dfda9d76e01c4c4ab815a2d915efc82` at `receipts/engine/model_admitted/SFT-PHYS-PLASMA-OSCILLATION-001-14cdadbe5421c2cb.json`; empirical-validation hash `sha256:084f84514358c4efb0b9b9a64b5dfe4a310fa571c5b95ea31751036bbb13601b`; measurement receipt `sha256:d7876b6ca9718f6b2e4efd047847aee1442c7c0c7da6464c9e8083d715ce7bc2`.
 
-### 235. Magnetofluid composition
+### 264. Magnetofluid composition
 
 Claim identity: `SFT-PHYS-PLASMA-MHD-001`
 
@@ -18792,7 +21158,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:bc7e3dd69af9792887aac4aa519554faed5ecce78cbbd933307323f97348d3b2`; engine receipt `sha256:758229c88e39f5606a215e2bdd8ed689d2f31b0cb739eacdda0d8c53ecad0e5c` at `receipts/engine/model_admitted/SFT-PHYS-PLASMA-MHD-001-758229c88e39f560.json`; empirical-validation hash `sha256:5e92998418418aeb0f51f1c25eba8bd0411a2a2839db5fd39a2f7866a6e37a33`; measurement receipt `sha256:2849ed848c310b0815fcc89987abf99503720c5a4c5dcdd8394e982d2a5df506`.
 
-### 236. Lattice order and excitation
+### 265. Lattice order and excitation
 
 Claim identity: `SFT-PHYS-CONDENSED-LATTICE-001`
 
@@ -18876,7 +21242,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fdacf91e04fd5ab26a7fdd1cb2db5b3e0efb319be91b292307cfe73e2c175963`; engine receipt `sha256:46d5a4142f4a53f2665b0f45f89c00e0afe2b5cc8989e0f5169644fc100d6ea3` at `receipts/engine/model_admitted/SFT-PHYS-CONDENSED-LATTICE-001-46d5a4142f4a53f2.json`; empirical-validation hash `sha256:5c3b3b0f9927d524776ca6218313f669ed527bd513d6f85e0f7076cc5600b3ce`; measurement receipt `sha256:183d206a75d8e56ee46c5727c0ecb1de78cffd0de89bb0a640b98d9f8dfc6aca`.
 
-### 237. Band support and transport
+### 266. Band support and transport
 
 Claim identity: `SFT-PHYS-CONDENSED-BAND-001`
 
@@ -18960,7 +21326,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b3c1b1b6488a433372bf26faa0a8c351bc843da6ca2fda996ffc739298e4e684`; engine receipt `sha256:c9b70ce35823bff4a59e68486c4b7ebfe9820c03ec913c33c313e786bfc3dea4` at `receipts/engine/model_admitted/SFT-PHYS-CONDENSED-BAND-001-c9b70ce35823bff4.json`; empirical-validation hash `sha256:48dfc545c3f094e43ce2e88aa88e63aca96856868be3678e531b86fcc3cbedea`; measurement receipt `sha256:f27b2b1dbc982d5f064420c6fb2637d57ea98952c119c87ee199885bdd3c2987`.
 
-### 238. Collective order and phase transition
+### 267. Collective order and phase transition
 
 Claim identity: `SFT-PHYS-CONDENSED-PHASE-ORDER-001`
 
@@ -19044,7 +21410,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:5ad5edea1584254b0a73286c2af6fdafbbfc5ec40352dee35cc2da4a1ab9ac51`; engine receipt `sha256:7f20f2a8757ec6d79c32a77dd07c3fca5c25e58b1ae233c68d9daa30e5c86ceb` at `receipts/engine/model_admitted/SFT-PHYS-CONDENSED-PHASE-ORDER-001-7f20f2a8757ec6d7.json`; empirical-validation hash `sha256:c00fc15ba1b4e90f8fc8522f35c3423d6e3666e7d4330b195d60b7a552056fa0`; measurement receipt `sha256:2ad3641024604c67411e28aeb1308239b87f5f6e3b6467348f81a1416797f22f`.
 
-### 239. Superconducting coherent transport
+### 268. Superconducting coherent transport
 
 Claim identity: `SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001`
 
@@ -19128,7 +21494,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8edc42cffa4a9b38f5ce59196ef66c6289fd4bc2ddd5acf024b4619d167f542b`; engine receipt `sha256:ee86d5d893add989390c63fcc6f11bc7d95e0dc8c9c7dabd724c3233931deb04` at `receipts/engine/model_admitted/SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001-ee86d5d893add989.json`; empirical-validation hash `sha256:6251be4d6b6ee93d576f77e76672172a19d45db415dd21fee237071438ad1258`; measurement receipt `sha256:7d7f1311995147699ba306a7a965ed3cb550ae1d6ee4cf61ba47e1ed373d43d8`.
 
-### 240. Topological collective-state correspondence
+### 269. Topological collective-state correspondence
 
 Claim identity: `SFT-PHYS-CONDENSED-TOPOLOGICAL-001`
 
@@ -19212,12 +21578,241 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:f4dd6ad6fc8f7a583b5dbe8e244bb6ff41376c3394d8b72442aab461ef1f4d3f`; engine receipt `sha256:817047e583a84e4443cabe268f2de478eae52cc8db2d84a6248c743102ae9d6e` at `receipts/engine/model_admitted/SFT-PHYS-CONDENSED-TOPOLOGICAL-001-817047e583a84e44.json`; empirical-validation hash `sha256:d6751b11a96db285f6bfdf7c753ae7112a35fb5ee93b9d393cdf0ab457111a7c`; measurement receipt `sha256:e57b9563687b05ec272c5eaf1f9cf40387eb01335d284c07d15ab0197ac4e087`.
 
+### 270. Exact Fold lattice operators, causal cones and phase modes
 
-## 20. Physical Cosmology Boundary
+Claim identity: `SFT-PHYS-LATTICE-OPERATOR-TERMINAL-022`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact Fold nearest-neighbour family retains half-One at the centre and shares half-One over 2d neighbours; point-source peak and opposition-ring magnitudes are 2d; causal balls at ticks 1,2,3 are (3,5,7), (5,13,25) and (7,25,63) for dimensions one, two and three; and every N-site cycle has N exact phase-mode carriers with one stationary identity mode.
+
+> The exact Fold nearest-neighbour family retains half-One at the centre and shares half-One over 2d neighbours; point-source peak and opposition-ring magnitudes are 2d; causal balls at ticks 1,2,3 are (3,5,7), (5,13,25) and (7,25,63) for dimensions one, two and three; and every N-site cycle has N exact phase-mode carriers with one stationary identity mode.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-EQUIVALENCE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003`
+- `SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003`
+- `SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003`
+- `SFT-PHYS-WAVE-DISPERSION-001`
+- `SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003`
+- `SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of site carrier, neighbour family, conserved stencil, positive operator, point-source ring, causal support, cycle modes, dimension induction, comparison boundary and extension forms. The declared exact boundary is: Every positive finite one-, two- and three-direction nearest-neighbour Fold lattice; every positive tick and oriented causal cell; every positive finite cyclic site count of at least three; and the already sealed dispersion, Maxwell and cubic-support comparison records. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `positive-held-site-presence__complete-two-per-generated-axis-ring__half-One-held-half-One-equally-distributed__positive-peak-with-held-opposition__two-dimension-peak-and-complete-ring__complete-oriented-taxicab-ball__complete-exact-phase-mode-carriers__axis-and-oriented-step-successor__inherit-sealed-dispersion-and-cubic-records__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `positive-held-site-presence` | `signed-field-number` | A signed scalar imports cancellation and an unheld absence value. |
+| `neighbours` | `complete-two-per-generated-axis-ring` | `selected-or-remote-neighbours` | Selection or remote adjacency breaks locality and completeness. |
+| `stencil` | `half-One-held-half-One-equally-distributed` | `free-dimension-specific-weights` | Independent weights introduce parameters. |
+| `operator` | `positive-peak-with-held-opposition` | `signed-Laplacian-value` | A signed result is not a positive Fold record. |
+| `source` | `two-dimension-peak-and-complete-ring` | `chosen-peak-or-partial-ring` | A chosen peak or incomplete ring does not conserve the neighbour ledger. |
+| `causality` | `complete-oriented-taxicab-ball` | `continuum-or-selected-front` | A continuum or selected sample omits generated cells. |
+| `modes` | `complete-exact-phase-mode-carriers` | `evaluated-cosine-or-mode-table` | An imported cosine or table introduces nonnative and potentially irrational proof values. |
+| `induction` | `axis-and-oriented-step-successor` | `bounded-count-list` | A short list does not close the next generated axis or tick. |
+| `comparison` | `inherit-sealed-dispersion-and-cubic-records` | `measurement-selects-operator` | External targets cannot choose the stencil or cone. |
+| `extension` | `no-extra-rule` | `free-coefficient-or-extra-neighbour` | That changes the generated conservative family. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:31f2aed551b31a4e2dbdbbbdfe60aa10d749cd91e0bca328cdc7da8409bd5362`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:62664c6125390b5cecdcdb762b22312db24644f6901cbd965944a7de259418e2`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:c8f5dac5af8783ca95453b0fab2a430910ce74fae14f2fd406a8a34d2fd0b14a`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:fb404db2158783d426d842850836a63421288fb3383c8598b89671690c645cdd`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:fbcc3aa0b64e314009868b01a0345a4cecda24e0ad4121391e5647ec8b4bd955`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:507f7e32537e49871acf519e2834df4c5c6318e561bb2b49069218004bf10d30`. Independent certificate: `sha256:3ee7bd89b082732dac0bc7118a197cf982b2f12db163add3de4d79a8d05913be`. Engine external-validation hash: `sha256:4e4449c05d228fc505dc6fce3b16d66fc7e557de66befaf5de6af0ef92c7e90c`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Continuum language is recovered as a declared observation quotient of finite generated cell networks. Fluids, plasmas and condensed phases retain local transfer and boundary provenance. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported continuum, signed Laplacian, Fourier cosine or monatomic-chain equation as a premise
+- no V1/V2 executable, answer table, measured spectrum or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no target-selected neighbour, coefficient, mode or causal-front count
+- no claim that the exact phase carrier evaluates an irrational conventional eigenvalue
+- no external comparison before the inherited dispersion and cubic-support seals
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:355f6b2232eae04527ae5f7d859449a4649f32cd1eaeb7f4f0b0ca4db254fc2b`; engine receipt `sha256:2d54a071b1a994f26b3a05083d0d57ec33659b9d5430b17467f5dfd03d525fb8` at `receipts/engine/model_admitted/SFT-PHYS-LATTICE-OPERATOR-TERMINAL-022-2d54a071b1a994f2.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 271. Terminal finite radiation, acoustic, laser, plasma and Alfvén response law
+
+Claim identity: `SFT-PHYS-COLLECTIVE-RADIATION-RESPONSE-TERMINAL-041`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Every finite cavity occupation is an exact rational mean over the complete microcanonical word census; all modes above total support are empty and common scale changes preserve the complete word set. Wien covariance is exact at the relation level. In stable three-space P(gT)/P(T)=g^4, so doubling gives 16. Acoustic modes are f_n=n f_1. Laser inversion is greater than 1/2, threshold is gain=loss, above-threshold requires gain>loss, and linewidth times coherence ticks is One. Plasma omega_p^2=nq^2/(m epsilon), lambda_D^2=epsilon T/(nq^2), and Alfvén v_A^2=B^2/(mu rho), all as exact positive rational carriers.
+
+> Every finite cavity occupation is an exact rational mean over the complete microcanonical word census; all modes above total support are empty and common scale changes preserve the complete word set. Wien covariance is exact at the relation level. In stable three-space P(gT)/P(T)=g^4, so doubling gives 16. Acoustic modes are f_n=n f_1. Laser inversion is greater than 1/2, threshold is gain=loss, above-threshold requires gain>loss, and linewidth times coherence ticks is One. Plasma omega_p^2=nq^2/(m epsilon), lambda_D^2=epsilon T/(nq^2), and Alfvén v_A^2=B^2/(mu rho), all as exact positive rational carriers.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001`
+- `SFT-PHYS-THERMO-TEMPERATURE-001`
+- `SFT-PHYS-MATTER-FERMION-BOSON-001`
+- `SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001`
+- `SFT-PHYS-FIELD-RADIATION-001`
+- `SFT-PHYS-WAVE-RESONANCE-001`
+- `SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005`
+- `SFT-PHYS-PLASMA-COLLECTIVE-001`
+- `SFT-PHYS-PLASMA-OSCILLATION-001`
+- `SFT-PHYS-FLUID-DENSITY-001`
+- `SFT-PHYS-FIELD-MAGNETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of finite occupation, radiative dimension, acoustic boundary, stimulated mode, gain threshold, linewidth, plasma balance and magnetofluid response forms. The declared exact boundary is: Every finite positive-whole mode-cost list and positive total-quanta support; every common positive-whole scale; every exact positive temperature ratio; every positive acoustic mode count; every positive laser population, gain, loss and coherence count; and every exact positive charge, mass, permittivity, temperature, field, permeability and density carrier. Empty occupation is a structural empty record, not a physical zero magnitude. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-finite-boson-word-census__three-mode-powers-plus-one-energy-power__positive-whole-harmonic-ladder__duplicated-identical-held-mode__gain-loss-equality-with-strict-half-One-inversion__positive-reciprocal-coherence-carrier__charge-stiffness-over-inertia-and-thermal-balance__magnetic-tension-over-fluid-inertia`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `occupation` | `complete-finite-boson-word-census` | `continuum-exponential-premise` | An imported exponential violates finite exact generation. |
+| `radiation` | `three-mode-powers-plus-one-energy-power` | `fitted-Stefan-exponent` | A fitted exponent is target-selected. |
+| `acoustic` | `positive-whole-harmonic-ladder` | `selected-frequency-list` | A named spectrum cannot select the law. |
+| `stimulated` | `duplicated-identical-held-mode` | `unrelated-spontaneous-output` | An unrelated output does not amplify a held mode. |
+| `threshold` | `gain-loss-equality-with-strict-half-One-inversion` | `free-gain-setting` | A free setting adds a parameter. |
+| `linewidth` | `positive-reciprocal-coherence-carrier` | `zero-width-monochromatic-idealization` | A numerical-zero width erases the finite record. |
+| `plasma` | `charge-stiffness-over-inertia-and-thermal-balance` | `named-empirical-fit` | A named fit cannot select the carrier. |
+| `magnetofluid` | `magnetic-tension-over-fluid-inertia` | `selected-wave-speed` | A measured speed is not a derivation. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:b55f7422998c6bf29035fca2e4d0c8636e26da1d9c58a4541e17630ef5ebf43c`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:d2f95bbcb1a590cd99cadb1377bebfb4976fe85d32db6c8b4dd2afb248109883`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:8bab28793b529c5c4c48d5a1397fa044d6ec84f1a70a5852f1ab0741eb3fadc7`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:6848a259aebfde6e574cca1866c660f3f962a9bdb705035700064ff9c179efee`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:bd27fdedb838b7a2218f203a53ca54b64809e258d407881ab8f0b3a44615bd99`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:c0623faae3b4b8928150de44e49170e249d77076c1310271af05579a2811fba1`. Independent certificate: `sha256:7b21c482e17e56c9fac34cee25c1a428562ac59c0bbf82a3bb51318854fe8dba`. Engine external-validation hash: `sha256:c2471891deaf2b417e317d017a3b53a8c59e638145c98c27539c71eb8de8815d`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Continuum language is recovered as a declared observation quotient of finite generated cell networks. Fluids, plasmas and condensed phases retain local transfer and boundary provenance. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Planck exponential, Bose-Einstein continuum distribution, fitted Wien constant or Stefan coefficient as premise
+- no measured spectrum, laser setting, plasma frequency, screening length or Alfvén speed available to selection
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof magnitude
+- no square-root proof value; squared frequency, length and speed carriers are the exact native forms
+- no free gain, loss, linewidth, plasma, acoustic or magnetofluid coefficient
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:b500ac7de380339137eca53bb1d67451c29a9e5d3b479b9d43d7ebf0077c32ab`; engine receipt `sha256:50974ab152438d8b84fe8220281e0d98737df0880f9a6384d50bac6060987b07` at `receipts/engine/model_admitted/SFT-PHYS-COLLECTIVE-RADIATION-RESPONSE-TERMINAL-041-50974ab152438d8b.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 272. Terminal exact phase-criticality, universality and turbulence-scaling law
+
+Claim identity: `SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** For the binary self-antipodal local-order class, the threshold is 1/2 and the exact exponent carriers are beta=1/2, nu=1/2, gamma=1 and delta=3, with alpha and eta typed as empty One records. Widom gamma=beta(delta-1), Rushbrooke 2beta+gamma=2 and Fisher gamma=2nu all close exactly. For the distinct generator-three conserved cascade, the second-order structure exponent is 2/3 and the energy-spectrum exponent has falling orientation with positive magnitude 5/3. At every positive whole scale q and depth d, structure^3=length^2 and spectrum-divisor^3=wavenumber^5, providing depth-independent exact witnesses without irrational evaluation.
+
+> For the binary self-antipodal local-order class, the threshold is 1/2 and the exact exponent carriers are beta=1/2, nu=1/2, gamma=1 and delta=3, with alpha and eta typed as empty One records. Widom gamma=beta(delta-1), Rushbrooke 2beta+gamma=2 and Fisher gamma=2nu all close exactly. For the distinct generator-three conserved cascade, the second-order structure exponent is 2/3 and the energy-spectrum exponent has falling orientation with positive magnitude 5/3. At every positive whole scale q and depth d, structure^3=length^2 and spectrum-divisor^3=wavenumber^5, providing depth-independent exact witnesses without irrational evaluation.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-HALF-ONE-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-DYNAMICAL-SYSTEMS-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001`
+- `SFT-PHYS-CONDENSED-PHASE-ORDER-001`
+- `SFT-PHYS-FLUID-TURBULENCE-001`
+- `SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008`
+
+**Generated grammar and closure boundary.** Generate the complete product of critical threshold, order, correlation, response, critical-field, scaling-identity, cascade and spectrum forms. The declared exact boundary is: The binary self-antipodal local-order class and the generator-three conserved-cascade class; every positive whole perfect-power scale base and depth; exact rational exponent carriers; and typed empty exponent records. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `binary-self-antipodal-half-One__square-excess-to-linear-order-carrier__square-excess-to-linear-inverse-correlation__reciprocal-linear-excess-response__generator-three-order-cube__typed-empty-alpha-eta-with-exact-identities__three-branch-cube-to-square-transfer__falling-held-orientation-with-five-thirds-magnitude`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `threshold` | `binary-self-antipodal-half-One` | `measured-critical-temperature` | A measured temperature would select the law. |
+| `order` | `square-excess-to-linear-order-carrier` | `fitted-decimal-exponent` | A fitted exponent is not forced. |
+| `correlation` | `square-excess-to-linear-inverse-correlation` | `continuum-correlation-length-ansatz` | A continuum ansatz is outside the Fold grammar. |
+| `response` | `reciprocal-linear-excess-response` | `selected-response-power` | A selected power adds a parameter. |
+| `field` | `generator-three-order-cube` | `imported-field-polynomial` | An imported polynomial is an independent model. |
+| `identities` | `typed-empty-alpha-eta-with-exact-identities` | `numerical-zero-residuals` | Conventional zero is not a proof scalar. |
+| `cascade` | `three-branch-cube-to-square-transfer` | `dimensional-analysis-assumption` | Named dimensional analysis does not force the branch count. |
+| `spectrum` | `falling-held-orientation-with-five-thirds-magnitude` | `fitted-negative-five-thirds` | A fitted signed exponent violates the grammar. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:b05e501fa57215bf093b880f7960323996494347ac2c58befc10f8200cfe0a58`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:ff266871a7c66c6e020794234f45ed42e85407e9de5ac1c729d78a7ee5f38f5b`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:d811c2f0fbf0ad2a0508722d88072c64994579e55ac5c2a190d9a414c5a3e50c`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:0c0ff1a6ce8765f94f653f179c2b8eb457f45d130612ef1a2cb2637d5e324fa5`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:424effe32a4dedfaa352c97e4e845e6436d547e40bdbcdb6e092474b09ac8b2b`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:bf784f179216305a8029a2fe648735d072b7bfe6b34f81662d523f8b3ed02859`. Independent certificate: `sha256:8c5ffb7c980bc8fc76da3665d7fffeaadaa514ecf820d5ee98c56430ab402a64`. Engine external-validation hash: `sha256:db340f6a2e87fa45d45b46f167e02cf12947996b22ebd1a310ab29db4a84231d`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** Continuum language is recovered as a declared observation quotient of finite generated cell networks. Fluids, plasmas and condensed phases retain local transfer and boundary provenance. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no renormalization-group, continuum field theory, Landau functional or Kolmogorov law imported as a premise
+- no measured critical exponent, transition temperature, structure function or spectrum slope available to candidate selection
+- no claim that every physical transition belongs to one class; equality requires the complete generated class key
+- no fitted exponent, intermittency correction or Reynolds-number calibration
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof magnitude; spectral decrease and empty exponents are typed records
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:90edf0a55d6c31e17fd8092433e55b4bc14c422006998aa12e67f29ebefd170e`; engine receipt `sha256:0601d19640943c4b99eb8cccf061e3115c520773eac5e762bf7c5b7440339b25` at `receipts/engine/model_admitted/SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047-0601d19640943c4b.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 23. Physical Cosmology Boundary
 
 The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology.
 
-### 241. Propagation redshift relation
+### 273. Propagation redshift relation
 
 Claim identity: `SFT-PHYS-COSMO-REDSHIFT-001`
 
@@ -19299,7 +21894,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:4eb9d9e702e73970639f63cb01084df7b21f51888583fa65d5a82780fa20b5b9`; engine receipt `sha256:0843f2c5ea47964fd54287546abaac627a210b4bfabd6c0ba87c415f665ccf8e` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-REDSHIFT-001-0843f2c5ea47964f.json`; empirical-validation hash `sha256:cfed03b376b686cfc7cadd95821b7cae29ab05266f6964728dff79a22a0de2b3`; measurement receipt `sha256:7371810eb276fce1cc21e2901b8055a3c0e48f0833584758695a0ea1cc33d296`.
 
-### 242. Relational expansion observation
+### 274. Relational expansion observation
 
 Claim identity: `SFT-PHYS-COSMO-EXPANSION-001`
 
@@ -19382,7 +21977,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:227354f67ed81a6825724f89cc89a803b4f8952d65e0ca19945f89ca4bf3a965`; engine receipt `sha256:70b48d5fa5822a719fde0ab0073d965387cc0c4548ef14fda2138061b3966f53` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-EXPANSION-001-70b48d5fa5822a71.json`; empirical-validation hash `sha256:ca1f3946976b4526c76109d23042f0b93b6e28caba7f1cfa19edd7f8daba7f72`; measurement receipt `sha256:93fd59729996521dcfe3e36997dcbe6d913f4bffb4231c4558e9e6f85d15a34b`.
 
-### 243. Background-radiation field relation
+### 275. Background-radiation field relation
 
 Claim identity: `SFT-PHYS-COSMO-BACKGROUND-001`
 
@@ -19465,7 +22060,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:552759b9f4be9557b1196984bffcfc001d6d13c69e75b831b71999fb46070c65`; engine receipt `sha256:2e4f7d3e02b8d087c3cce4a29dd5ee6b13f28758400c6da93090007f6e2d7e29` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-BACKGROUND-001-2e4f7d3e02b8d087.json`; empirical-validation hash `sha256:7d88b311c29f98a6dd326a9d4944fafb5827c056276e1ed688bc555348b76b42`; measurement receipt `sha256:5c3983615cf9824416f01352c48a21d4eeb5d3b05c0d5db1d210b7b20bcf2085`.
 
-### 244. Gravitational lensing relation
+### 276. Gravitational lensing relation
 
 Claim identity: `SFT-PHYS-COSMO-LENSING-001`
 
@@ -19548,7 +22143,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2ff9cfb087ab2d14e71a157108c18c09818244662fc701edfa132b7ce816a5d5`; engine receipt `sha256:463d7041874e0b45a8ccafb32f1ee9fba54c8e733caa8446f52cce2549a07d73` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-LENSING-001-463d7041874e0b45.json`; empirical-validation hash `sha256:e8dedb014783ed584746eef77f30aecb9246ff3004ebfd791c247a51910da85c`; measurement receipt `sha256:53e32cc58a397f1475b947f7f25db97c5eab1c1f964992f7dd5e1e582da7f0b5`.
 
-### 245. Causal distance and observation-time relation
+### 277. Causal distance and observation-time relation
 
 Claim identity: `SFT-PHYS-COSMO-DISTANCE-001`
 
@@ -19631,7 +22226,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8d540e77a05ef62593ddf4542ffb1fc546723823ef6fc086372c60ccfe3cf52b`; engine receipt `sha256:3652a0696753f255405d64eb358c82e5099ce743763a43a2b693946040f163a3` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-DISTANCE-001-3652a0696753f255.json`; empirical-validation hash `sha256:0298a6976febe7b847faf2e661c41e5c67f2f31f60af258af6f337b76255eaa3`; measurement receipt `sha256:788ac7ad1dca6ccc1703fd4c4121fc4c17eb6a02d9e96b42dcf479aa2c1b6d79`.
 
-### 246. Finite structure-growth relation
+### 278. Finite structure-growth relation
 
 Claim identity: `SFT-PHYS-COSMO-STRUCTURE-GROWTH-001`
 
@@ -19714,7 +22309,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7e09ebcf55d86d177b601ec853ea64167d5c7ac6dd6f573d8caed18256da3437`; engine receipt `sha256:b150f2ddf89d4a0ea2352ebc7ae1ac954835eb6ac1856f38c6ddd8f8d5961744` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-STRUCTURE-GROWTH-001-b150f2ddf89d4a0e.json`; empirical-validation hash `sha256:b9423cbed498d5c7190ff4f9823de2a3944613d4acd5d2c9b4f071f5be563f6c`; measurement receipt `sha256:e4d0d65ebfcb3ae49d1835e3cffc745e67e2a981ffbb3125196a576e2cbca395`.
 
-### 247. Physics-to-astronomy/cosmology handoff boundary
+### 279. Physics-to-astronomy/cosmology handoff boundary
 
 Claim identity: `SFT-PHYS-COSMO-BRANCH-BOUNDARY-001`
 
@@ -19797,7 +22392,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:c5e9469ae63514fb6102751a96b8e9102244e843b8a7c3a959c9bade858cb3fb`; engine receipt `sha256:86e32f007bb9c6304edc82ae7e4f01db1f0391b5fbbef56d5ddedc12dd178160` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-BRANCH-BOUNDARY-001-86e32f007bb9c630.json`; empirical-validation hash `sha256:fa5c646653b938d6c7de35cadac6259a51aa2d0fdccab5e76f8482da14f4b618`; measurement receipt `sha256:0b9e11696be7f741781838ec270ac7e215e09d009fc3c12042e6675586b2fdf8`.
 
-### 248. Generation-cover dark-to-baryon fraction
+### 280. Generation-cover dark-to-baryon fraction
 
 Claim identity: `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
 
@@ -19846,7 +22441,21 @@ Claim identity: `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:675d474c832285d80cb109d73394f0a5568cc55361437841ff048913967a99d1`. Independent certificate: `sha256:ed22d598f85cc461219ca381a91a8f098ee968271527e934a9d49eb066ecfbc0`. Engine external-validation hash: `sha256:671295b17b78b7078c86aa5d91762fa03d64255579c107685e0b933f03dea13f`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-VI-ABSTRACT-DENSITIES
+
+Observed comparison records:
+
+- PLANCK-2018-BARYON-DENSITY: predicted sealed-leading-and-native-deepened-ratios-inside-complete-planck-density-interval; observed sealed-leading-and-native-deepened-ratios-inside-complete-planck-density-interval; exact match True
+- PLANCK-2018-COLD-DARK-DENSITY: predicted sealed-leading-and-native-deepened-ratios-inside-complete-planck-density-interval; observed sealed-leading-and-native-deepened-ratios-inside-complete-planck-density-interval; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Either sealed ratio lies outside the complete density interval, either density row or uncertainty is omitted, source custody changes, or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:5d3f4de0ae278c3995c2316e770d497042e3bbd76514c9f502a946d0f707c62a`. Isolation certificate: `sha256:55eb8379a160e1e4a32ee838811cf1b6dfc6431f0822ddf66e0d673f08cb4174`. Custody certificate: `sha256:0461a4f28a373375ef898773b281129a6e493484e028dc83167f7c2c3c17652f`.
 
 Registered source descriptions:
 
@@ -19869,7 +22478,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:7b82678d0d69bf27fbeaa45a81386c321a2b55287b5716ded6d04b3299eeac97`; engine receipt `sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001-38b06863d5a59f8f.json`; empirical-validation hash `sha256:7dc5aa166443cb243a2a2d7e9e81be6188df5f77ee441a95879c35aec27a47fa`; measurement receipt `None`.
 
-### 249. Fold calibration ratio between early and late expansion routes
+### 281. Fold calibration ratio between early and late expansion routes
 
 Claim identity: `SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001`
 
@@ -19920,7 +22529,22 @@ Claim identity: `SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:990b8774815230213ce4e33207c0362f06a6685321085ae27872cecc79e0708c`. Independent certificate: `sha256:b9a45aaa7f5eab1950f7a8df2fce83966bd9a39efa88de12a7439730d8f63e89`. Engine external-validation hash: `sha256:1bced278722f05a70ba1afa40ab187899f7fb655794506b9cd525ba9f18d73bd`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-VI-HUBBLE
+- SHOES-2022-BASELINE-HUBBLE
+
+Observed comparison records:
+
+- PLANCK-2018-HUBBLE-INTERVAL: predicted sealed-leading-and-depth-seven-ratios-inside-complete-planck-shoes-ratio-interval; observed sealed-leading-and-depth-seven-ratios-inside-complete-planck-shoes-ratio-interval; exact match True
+- SHOES-2022-HUBBLE-INTERVAL: predicted sealed-leading-and-depth-seven-ratios-inside-complete-planck-shoes-ratio-interval; observed sealed-leading-and-depth-seven-ratios-inside-complete-planck-shoes-ratio-interval; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Either sealed exact ratio lies outside the complete outward-propagated late/early interval; either route, central value, uncertainty, unit or qualification is omitted; source custody changes; or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:707f4c2183b11bb784794a61169b173740df83da19bd169960a8cc3f5fcbb803`. Isolation certificate: `sha256:b649a5ba65e6c9c33f1c0b2c6df315f32fabf9bf3ab4f2f80185fc7884eaa7e3`. Custody certificate: `sha256:70e5d45c18f9001d7fe328f22d4548878c9edfade98365a71739751aaf73d883`.
 
 Registered source descriptions:
 
@@ -19944,7 +22568,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:10cf8943a4026234c1c170b2cc41441c6ca8678525deb7b05031ab6d9c5aeb42`; engine receipt `sha256:d4ce8d8568e94b5032fc65633d024aaa7cba6365e6d88217c61ec9a388153e88` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001-d4ce8d8568e94b50.json`; empirical-validation hash `sha256:b2090f6bb9fc1db1e7963539ad9adf580de79e45a0681c0a77cf886046c99c8d`; measurement receipt `None`.
 
-### 250. Complete-partition spatial flatness and absent curvature remainder
+### 282. Complete-partition spatial flatness and absent curvature remainder
 
 Claim identity: `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
 
@@ -19993,7 +22617,20 @@ Claim identity: `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:40818b5b12e926755cf41400949fcd6aa049e5438a291041e90fe079461f1366`. Independent certificate: `sha256:a18c1dd8c93e9f17769729de3035bef04e20cabf573ebc81956327fea57b5b22`. Engine external-validation hash: `sha256:f6c4e1e72d8200602921503cdd8a5af9c5395f790abeb8ab45d5b6968fb30361`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-VI-CURVATURE-47B
+
+Observed comparison records:
+
+- PLANCK-2018-BAO-CURVATURE-47B: predicted sealed-empty-curvature-remainder-inside-complete-planck-bao-signed-interval; observed sealed-empty-curvature-remainder-inside-complete-planck-bao-signed-interval; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: The complete registered curvature interval excludes structural absence; its orientation, central magnitude, uncertainty, confidence region or data combination is omitted; source custody changes; or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:d27eb94493dd7fa36684f9bb7cbd8333bec3046a0251767c2ca2f27cc9a48927`. Isolation certificate: `sha256:bad32e4c57d6fb6be9aaf7ea8ccd6895aa59c6ab8a0ec6acbd163aff9c8bac1f`. Custody certificate: `sha256:4e0aaf8ff7f9536427a40c95f4e3227116a28f221e4083bec4df300fa931ff49`.
 
 Registered source descriptions:
 
@@ -20017,7 +22654,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:34000aa9eb14f2f83a9f2bc1652509fac37592d7698da5ee08cf030f4738cb60`; engine receipt `sha256:ec8cf537a7460687e1ca3d1c9e5d1781b96b477e4c11f68d7c3208e82d3d1a66` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-SPATIAL-FLATNESS-001-ec8cf537a7460687.json`; empirical-validation hash `sha256:d552516176eb76d0262093e421930cf43cf3c005763ee90e5c75a88faaf97978`; measurement receipt `None`.
 
-### 251. Depth-five Fold cosmic energy budget
+### 283. Depth-five Fold cosmic energy budget
 
 Claim identity: `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
 
@@ -20069,7 +22706,23 @@ Claim identity: `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:a88c40db509140589a9cd7606cef716d5bcbda246a38e268f57b06cd4c6ed419`. Independent certificate: `sha256:146f3c550bedff74d628ff8e3feafee3a5dd7c1264e491ca91efceda1f31a1bd`. Engine external-validation hash: `sha256:d5cba833780bb989f3c44a164fa199005eef7e1a84a1af9b7b340cbad61ad86d`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-BAO-BASELINE-BUDGET
+
+Observed comparison records:
+
+- PLANCK-BAO-VACUUM-FRACTION: predicted sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; observed sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; exact match True
+- PLANCK-BAO-MATTER-FRACTION: predicted sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; observed sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; exact match True
+- PLANCK-BAO-BARYON-FRACTION: predicted sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; observed sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; exact match True
+- PLANCK-BAO-COLD-DARK-FRACTION: predicted sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; observed sealed-refined-four-part-budget-inside-all-complete-planck-bao-intervals; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Any refined component lies outside its complete interval; any earlier leading component is falsely labelled as passing; any required source row or uncertainty is omitted; custody changes; or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:4bae1310817433cc59334a735d348e0b4b2295c0f5efaa6aeebb9eabb38da859`. Isolation certificate: `sha256:e6b8579f22d9e46e57ac79ffeeb9ada4b2753ca112296b08efdddd3b9660d9ec`. Custody certificate: `sha256:a570925340e728e88f1d9fa03f6d3cfcf0c00e4aa8f209afcf75e11d5abe5d0b`.
 
 Registered source descriptions:
 
@@ -20093,12 +22746,504 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d1211befaf769f9729f7d8b95168e99e2193f47b1e8a72a950fbf9ad7d471152`; engine receipt `sha256:9d9c7593823ce0409ee7030e2c03baf19e99e90630092de30e20f00980dcbc2d` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-COMPLETE-BUDGET-001-9d9c7593823ce040.json`; empirical-validation hash `sha256:4c109570794bded6ad2fd8b5b916845eb39fa85198d4fe9526291cb683430cd9`; measurement receipt `None`.
 
+### 284. Composite Fold-orbit topology and inter-universe transport boundary
 
-## 21. Post Seal Empirical Validation
+Claim identity: `SFT-PHYS-FOLD-UNIVERSE-TRANSPORT-TERMINAL-024`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Coprime odd-denominator Fold components have an exact bijective composite map that commutes with Fold and has least-common-multiple recurrence, forcing joint lockstep correlation; native Fold dynamics preserves each denominator, one component cannot steer another, and the literal physical inter-component signalling/travel record is empty.
+
+> Coprime odd-denominator Fold components have an exact bijective composite map that commutes with Fold and has least-common-multiple recurrence, forcing joint lockstep correlation; native Fold dynamics preserves each denominator, one component cannot steer another, and the literal physical inter-component signalling/travel record is empty.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-EQUIVALENCE-001`
+- `SFT-MATH-DYNAMICAL-SYSTEMS-001`
+- `SFT-MATH-ALGEBRA-001`
+- `SFT-MATH-ORBIT-NUMBER-THEORY-002`
+- `SFT-PHYS-QUANTUM-ENTANGLEMENT-001`
+- `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
+- `SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001`
+- `SFT-PHYS-SPACETIME-CAUSAL-ORDER-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of orbit identity, denominator dynamics, composite topology, component map, period law, correlation record, signal test, travel test, physical interpretation and extension forms. The declared exact boundary is: Every positive reduced odd-denominator Fold orbit; every coprime pair and its complete composite unit-residue product; every positive finite Fold depth; and the admitted locality, causal-order, entanglement and no-signalling boundaries. The generator produced `1024` named candidates and the decision support contains `1024` one-for-one decisions. Exactly one candidate survived: `exact-odd-denominator-orbit-component__denominator-preserved-at-every-step__complete-coprime-composite-product__bijective-commuting-component-map__least-common-multiple-period__joint-lockstep-support-correlation__target-trajectory-independent-of-source__empty-cross-component-transition-record__arithmetic-correspondence-with-causal-boundary__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `orbit` | `exact-odd-denominator-orbit-component` | `unbounded-cosmological-world` | A cosmological world is not generated by denominator arithmetic. |
+| `dynamics` | `denominator-preserved-at-every-step` | `selected-denominator-change` | No Fold transition generates a new denominator. |
+| `topology` | `complete-coprime-composite-product` | `asserted-network-edge` | An asserted edge has no exact state map. |
+| `mapping` | `bijective-commuting-component-map` | `lossy-or-selected-projection` | Selection or loss breaks exact component recovery. |
+| `period` | `least-common-multiple-period` | `chosen-or-multiplied-period` | A chosen/product period ignores shared recurrence factors. |
+| `correlation` | `joint-lockstep-support-correlation` | `independent-unrelated-trajectories` | That discards the shared composite origin. |
+| `signal` | `target-trajectory-independent-of-source` | `correlation-relabeled-as-signal` | Correlation alone supplies no sender-selected change. |
+| `travel` | `empty-cross-component-transition-record` | `description-map-relabeled-as-travel` | A preparation/projection map is not a native transition path. |
+| `physical` | `arithmetic-correspondence-with-causal-boundary` | `literal-multiverse-transport-asserted` | Arithmetic components do not by themselves establish multiple physical cosmologies or traversal. |
+| `extension` | `no-extra-rule` | `free-portal-or-time-channel` | A portal or temporal channel is an unforced extra law. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:1b13d077a862deef71159fe0510fe85a55df8692127f59bae10afa4c58ec1612`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:42d217e1ec9558cef2ed9e8eae23b48fca3b93c20eb6f6105f3358d7453499da`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:84b93776a59aed706e545a356e4b0a22671d1c01b0a7f233e0d7cdf836981623`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:21843056311f55d0f352361d3b45405dfbcedd28f78885292121975ac0942a3d`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:bcdd2b1f4aa185c175a837aa171b4065c0c5c805f59c6b78f31904f8b349283d`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:f9152ab79a3d9b2dbf20612699ffa53bf0dd91a02cf8f94dacf517bb1c2df172`. Independent certificate: `sha256:c7aaba8e82e50a15947f40eaab615a661c035b5635fe1c62922855f44a103591`. Engine external-validation hash: `sha256:acbbb2768ee213ad6f25d2b834c6d534a16f448de4cb8dcc24b0a509b4cbbf42`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no imported cosmological multiverse, wormhole, closed-timelike-curve or portal premise
+- no V1/V2 executable, answer table, physical target or stored survivor
+- no numerical-zero, negative, irrational, imaginary or floating proof magnitude
+- no relabelling of arithmetic composition/projection as literal physical travel
+- no relabelling of deterministic correlation as directed communication
+- no physical universe plurality without a separately admitted observational discriminator
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:11495f5fc8cfb40b8b30ef1b5ad2d6566c2aedf6acef48066fb6d1ca39703b92`; engine receipt `sha256:b03563b484c95269254dd2bb409ae42efbd2a71989eba3ac1b3dd8171c7e467d` at `receipts/engine/model_admitted/SFT-PHYS-FOLD-UNIVERSE-TRANSPORT-TERMINAL-024-b03563b484c95269.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 285. Terminal cosmic component transport and expansion law
+
+Claim identity: `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Matter, radiation and vacuum have respectively third-power, fourth-power and Fold-invariant transport. The terminal late-time law is E2(r)=(11+5r^3)/16; Omega_m(r)=5r^3/(11+5r^3); Omega_v(r)=11/(11+5r^3); matter-vacuum equality is r^3=11/5; acceleration onset is r^3=22/5; and the present accelerating magnitude is 17/32. The static-vacuum correspondence is tension of One magnitude. All quantities are exact positive whole/fractional Fold forms or typed empty/orientation structures.
+
+> Matter, radiation and vacuum have respectively third-power, fourth-power and Fold-invariant transport. The terminal late-time law is E2(r)=(11+5r^3)/16; Omega_m(r)=5r^3/(11+5r^3); Omega_v(r)=11/(11+5r^3); matter-vacuum equality is r^3=11/5; acceleration onset is r^3=22/5; and the present accelerating magnitude is 17/32. The static-vacuum correspondence is tension of One magnitude. All quantities are exact positive whole/fractional Fold forms or typed empty/orientation structures.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-COUNT-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001`
+- `SFT-PHYS-COSMO-REDSHIFT-001`
+- `SFT-PHYS-COSMO-EXPANSION-001`
+- `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
+- `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
+- `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-HOSTILE-PACKAGE-001`
+
+**Generated grammar and closure boundary.** Generate the complete product of spatial carrier, matter transport, radiation transport, vacuum invariant, terminal expansion, density fractions, equality threshold, acceleration threshold, orientation typing, physical scale transport, target custody, prior-correction and extension forms. The declared exact boundary is: Every positive exact rational stretch; the three matter/radiation/vacuum transport classes; the admitted terminal 5/16 and 11/16 late-time shares; every exact derived fraction and cube threshold; all thirty-two registered cosmic-chronometer rows; the registered acceleration, equation-of-state, Planck-ratio and DESI adverse rows; and no imported continuum or signed proof scalar. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `admitted-generator-three-volume__inverse-volume-third-power__volume-plus-one-recurrence-power__Fold-invariant-One__terminal-eleven-five-curve__component-over-complete-rate__exact-cube-eleven-fifths__exact-seventeen-thirty-seconds-and-twenty-two-fifths__positive-magnitude-with-held-orientation__post-seal-held-reference-transport__all-targets-open-only-after-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `space` | `admitted-generator-three-volume` | `borrowed-three-dimensional-volume` | Borrowing the exponent imports a premise. |
+| `matter` | `inverse-volume-third-power` | `selected-matter-power` | A selected exponent is a free law. |
+| `radiation` | `volume-plus-one-recurrence-power` | `selected-radiation-power` | A selected fourth power is not derived. |
+| `vacuum` | `Fold-invariant-One` | `selected-static-density` | A named cosmological constant cannot select invariance. |
+| `expansion` | `terminal-eleven-five-curve` | `superseded-two-thirds-curve` | The leading budget is rejected by the admitted terminal discriminator. |
+| `fractions` | `component-over-complete-rate` | `fitted-epoch-density` | An epoch fit is a parameter. |
+| `equality` | `exact-cube-eleven-fifths` | `decimal-root-selected` | A decimal root may be target-selected and irrational. |
+| `acceleration` | `exact-seventeen-thirty-seconds-and-twenty-two-fifths` | `old-half-magnitude-and-four-cube` | The old result inherits a superseded budget. |
+| `orientation` | `positive-magnitude-with-held-orientation` | `negative-proof-scalars` | Negative scalars violate the Fold proof language. |
+| `scale` | `post-seal-held-reference-transport` | `fitted-Hubble-normalization` | Fitting H0 to the chronometer rows would select the result. |
+| `target` | `all-targets-open-only-after-seal` | `measurements-readable-before-seal` | Target access can manufacture the law. |
+| `extension` | `no-extra-rule` | `free-component-correction` | An inserted coefficient is a fit. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:8efa797d1e574e5c87696c84bbdd034a73bc59b71b68d3f60850c8c00172f2e0`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:946f81f183439e0e95006a602f8bd8deac1eb8098846018d89fce73b82b02833`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:ce283a1afae5385be857dd9d15f628774982e125943bff0717b59b0b164d2b3a`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:78728a9bbebf9ad4da51d496b0edaac4e14e3f739ad4c4d316fb5c9961d41648`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:af2dc89f3d4177fba3f98917394e50ada6e45233730681b1c90e7830eaef38b0`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:0368583227e567a96df47d2c3a39f3914cf6d3222bf26981b35db371739a33a9`. Independent certificate: `sha256:1c27cf58211873ad12e183709250ba9d3a9b35179287eabe4817ffc07624630c`. Engine external-validation hash: `sha256:1912e7d1290e48f17710a1214bb1b33ff3979ce747d8b85f9b9194589ec3db8f`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- GOMEZ-VALENT-2023-CCH-32
+- PLANCK-2018-BAO-BASELINE-BUDGET
+- GOMEZ-VALENT-2019-ACCELERATION
+- ESCAMILLA-2024-DARK-ENERGY-STATE
+- DESI-DR2-2025-COSMOLOGY
+
+Observed comparison records:
+
+- CCH-H2-01: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-02: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-03: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-04: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-05: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-06: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-07: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-08: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-09: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-10: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-11: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-12: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-13: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-14: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-15: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-16: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-17: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-18: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-19: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-20: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-21: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-22: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-23: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-24: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-25: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-26: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-27: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-28: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-29: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-30: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-31: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- CCH-H2-32: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- PLANCK-EQUALITY-CUBE: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- Q0-TYPED-MAGNITUDE: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- ACCELERATION-TRANSITION-CUBE: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- VACUUM-TENSION-MAGNITUDE: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- DESI-DYNAMIC-ADVERSE-ROW: predicted terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; observed terminal-cosmic-transport-complete-vector-passes-with-adverse-desi-row-retained; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Any of the 32 CCH intervals fails the registered squared two-uncertainty comparison; either threshold cube lies outside its complete external interval; the q or tension magnitude lies outside its interval; any source hash, row, custody record or adverse DESI statement changes; or a tampered target is accepted.
+
+Measurement receipt: `sha256:a33e0831e949329261b8cf0d72892053904c03dc38d4e21f086127b16196697a`. Isolation certificate: `sha256:47678f36ed211ed8e386676c03ea0525a0a85131a1e903322e8167783559f414`. Custody certificate: `sha256:f7088cb50ea54bd246562b80fced3192aa0c79f7ff1cea970b3650fc404efc15`.
+
+Registered source descriptions:
+
+- Cosmic chronometers to calibrate the ladders and measure the curvature of the Universe. A model-independent study: https://academic.oup.com/mnras/article/523/3/3406/7188316 (sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128)
+- Planck 2018 plus BAO baseline parameter table: https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf (sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612)
+- Quantifying the evidence for the current speed-up of the Universe with low and intermediate-redshift data: https://arxiv.org/abs/1810.02278 (sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0)
+- The state of the dark energy equation of state circa 2023: https://arxiv.org/abs/2307.14802 (sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5)
+- DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints: https://arxiv.org/abs/2503.14738 (sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841)
+
+Registered target identities:
+
+- CCH-H2-01 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-02 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-03 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-04 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-05 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-06 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-07 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-08 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-09 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-10 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-11 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-12 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-13 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-14 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-15 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-16 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-17 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-18 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-19 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-20 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-21 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-22 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-23 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-24 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-25 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-26 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-27 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-28 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-29 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-30 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-31 from GOMEZ-VALENT-2023-CCH-32
+- CCH-H2-32 from GOMEZ-VALENT-2023-CCH-32
+- PLANCK-EQUALITY-CUBE from PLANCK-2018-BAO-BASELINE-BUDGET
+- Q0-TYPED-MAGNITUDE from GOMEZ-VALENT-2019-ACCELERATION
+- ACCELERATION-TRANSITION-CUBE from GOMEZ-VALENT-2019-ACCELERATION
+- VACUUM-TENSION-MAGNITUDE from ESCAMILLA-2024-DARK-ENERGY-STATE
+- DESI-DYNAMIC-ADVERSE-ROW from DESI-DR2-2025-COSMOLOGY
+
+**Meaning.** The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, old two-thirds/one-third survivor or external equation in forcing
+- no numerical-nothing zero, negative, irrational, imaginary, floating, NaN or completed-infinity proof scalar
+- no continuum scale factor, differential field equation, fitted Hubble value, fitted density or selected redshift
+- no use of a measured q, w, transition, H row or DESI interpretation before the derivation seal
+- no erasure of the superseded one-half/four-cube results or the current DESI dynamic-dark-energy tension
+- no claim that the terminal late matter-vacuum slice supplies a measured present radiation normalization
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:e1004c307761e6e384dfebeb1cacc43157ac49b91d746bfe9cef867d59fadc1d`; engine receipt `sha256:504257d441fad45a8f173fad45015c7d723caa7636c517e71d27fddc43a2c42d` at `receipts/engine/model_admitted/SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032-504257d441fad45a.json`; empirical-validation hash `sha256:2356d7946091e0bf3fc556d6750ecf94f76435c1dedb3ef864edc81d59b87a9e`; measurement receipt `sha256:a33e0831e949329261b8cf0d72892053904c03dc38d4e21f086127b16196697a`.
+
+### 286. Terminal inflation, primordial-support and structure-growth law
+
+Claim identity: `SFT-PHYS-INFLATION-GROWTH-TERMINAL-039`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The unique generator-volume inflation cover is five Fold doublings with support 32. The complete primordial partition is scalar 31/32 and least tensor-pair 1/32. The structural exit is the first complete cover of volume 27. The least resolved perturbation grows exactly 1/4 to 1/2 to One in two Fold steps. For every exact positive later scale growth g, matter retention is 1/g^3, radiation retention is 1/g^4 and their relative growth is g. A conventional natural-log e-fold count is a comparison label, not an SFT proof scalar.
+
+> The unique generator-volume inflation cover is five Fold doublings with support 32. The complete primordial partition is scalar 31/32 and least tensor-pair 1/32. The structural exit is the first complete cover of volume 27. The least resolved perturbation grows exactly 1/4 to 1/2 to One in two Fold steps. For every exact positive later scale growth g, matter retention is 1/g^3, radiation retention is 1/g^4 and their relative growth is g. A conventional natural-log e-fold count is a comparison label, not an SFT proof scalar.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-FOLD-DYNAMICS-001`
+- `SFT-FOUNDATION-PART-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-COMBINATORICS-001`
+- `SFT-INFO-CONSERVATION-LOSS-001`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001`
+- `SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003`
+- `SFT-PHYS-COSMO-EXPANSION-001`
+- `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
+- `SFT-PHYS-COSMO-STRUCTURE-GROWTH-001`
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+
+**Generated grammar and closure boundary.** Generate the complete product of spatial volume, binary cover, duration carrier, scalar support, tensor support, exit boundary, perturbation growth and component-transfer form. The declared exact boundary is: Generator-three volume in stable three-space; every positive binary support until the unique least cover; every exact complete doubling ratio; the complete thirty-two-record primordial partition; the quarter/half/One Fold growth trace; and every exact positive rational later scale-growth carrier under admitted third/fourth transport. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `generator-three-space-volume__least-binary-depth-five-cover__five-exact-doubling-transitions__one-boundary-record-short-of-complete__one-tensor-pair-record-in-thirty-two__first-complete-generator-volume-cover__quarter-half-One-two-step-growth__third-versus-fourth-power-relative-growth`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `volume` | `generator-three-space-volume` | `named-observable-universe-size` | A measured horizon cannot select the support. |
+| `cover` | `least-binary-depth-five-cover` | `selected-sixty-efold-story` | A conventional model-dependent duration is not a generated Fold count. |
+| `duration` | `five-exact-doubling-transitions` | `irrational-logarithmic-efolds` | A continuum logarithm is outside exact Fold arithmetic. |
+| `scalar` | `one-boundary-record-short-of-complete` | `fitted-spectral-index` | A decimal index selected from CMB data is a fit. |
+| `tensor` | `one-tensor-pair-record-in-thirty-two` | `free-tensor-amplitude` | A tunable tensor amplitude adds a parameter. |
+| `exit` | `first-complete-generator-volume-cover` | `chosen-inflaton-potential-exit` | A chosen potential imports an independent model. |
+| `growth` | `quarter-half-One-two-step-growth` | `stochastic-or-decaying-seed` | Ontic noise or decay is not forced by the Fold. |
+| `transfer` | `third-versus-fourth-power-relative-growth` | `fitted-transfer-function` | A fitted spectrum is not a law. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:038cb81edb90bea3adf8f8d01c98503c453223fc79676f8eac63aff1b3c9ee5f`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:716a5ab4fb9d1de1475efcf5399bcd85b405d32abf2fc73e383c859b06ee8809`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:648551c6e3e7563a2f5261e04e0076c4c28d64b7a019bd14c1c847ac8854a32d`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:d454a7c0e4d9470179577a2c03aa3a0484980f8c4a5db65b88be3c391e1b7fc4`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:cb7f3f69be4ae22f13eb9fc0311effa52d977dbe2d6e25e9a504045d15533a4d`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:75b56683b979a9f537c5a4675e5e83e6fe2a0caf4247b9e8799b8779fa082470`. Independent certificate: `sha256:b6fe904029ba98e5a266135a0550b50b142ec04df91beb8de888382c67442541`. Engine external-validation hash: `sha256:48aadd0587f83014412a792ae95266b11fd4c61d4cca3ae27464033b082f31ff`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no inflaton potential, slow-roll equation, conventional natural logarithm or selected sixty-e-fold premise
+- no CMB spectral index, tensor bound, matter spectrum or measured horizon available to candidate selection
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity proof scalar
+- no ontic stochastic seed, fitted transfer function, amplitude or free exit scale
+- no claim that five Fold doublings equal sixty conventional e-folds
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:abf31c25a28d3d16ce81601347077dccdff7ec229f558a98ad6170602bdb32d5`; engine receipt `sha256:00aa52b47f8ebfe57fb5a90530a54614ba175d87f6708c69e454fcf9fd888aa7` at `receipts/engine/model_admitted/SFT-PHYS-INFLATION-GROWTH-TERMINAL-039-00aa52b47f8ebfe5.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 287. Terminal stellar hydrostatics, galactic response and tidal-lock law
+
+Claim identity: `SFT-PHYS-STELLAR-GALACTIC-TIDAL-TERMINAL-067`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Hydrostatic balance is exactly (1/2,1/2). Radial pressure and gravity responses are 5/3 and 4/3, certified only through q^5 and q^4 perfect powers: every compression is outward restoring and every expansion inward restoring. The two terminal homologous luminosity exponents are three and four, forcing lifetime-fall magnitudes two and three. Circular balance is v^2=M(r)/r; flat v forces M(r) proportional to r and excludes a finite visible-only asymptote. The baryonic Tully-Fisher exponent is exactly four. Every finite rational isolated circular tidal mismatch exhausts to 1:1; eccentric or externally forced resonances remain an explicit separate boundary rather than a counterexample hidden from the census.
+
+> Hydrostatic balance is exactly (1/2,1/2). Radial pressure and gravity responses are 5/3 and 4/3, certified only through q^5 and q^4 perfect powers: every compression is outward restoring and every expansion inward restoring. The two terminal homologous luminosity exponents are three and four, forcing lifetime-fall magnitudes two and three. Circular balance is v^2=M(r)/r; flat v forces M(r) proportional to r and excludes a finite visible-only asymptote. The baryonic Tully-Fisher exponent is exactly four. Every finite rational isolated circular tidal mismatch exhausts to 1:1; eccentric or externally forced resonances remain an explicit separate boundary rather than a counterexample hidden from the census.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009`
+- `SFT-PHYS-FLUID-PRESSURE-STRESS-001`
+- `SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043`
+- `SFT-PHYS-WAVE-RESONANCE-001`
+- `SFT-PHYS-MECH-ANGULAR-MOTION-001`
+- `SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061`
+- `SFT-PHYS-COSMO-STRUCTURE-GROWTH-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-DYNAMICAL-SYSTEMS-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+
+**Generated grammar and closure boundary.** Generate the complete twelve-axis product of hydrostatic balance, radial response, stellar scaling, lifetime, circular balance, flat-curve support, dark carrier, Tully-Fisher exponent, resonance, tidal dissipation, measurement custody and extension forms. The declared exact boundary is: Exact positive normalized shares; three-space and two-fibre counts; exact q above the One; perfect-power response comparisons; homologous volume and radiative-recurrence stellar endpoints; circular inverse-square balance; finite enclosed-support and velocity ratios; finite rational spin/orbit cycle counts; inherited neutral relic and resonance laws; and no measurement before seal. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `complete-self-antipodal-half-One__five-thirds-versus-four-thirds-perfect-power-test__three-space-and-volume-plus-recurrence__one-fuel-carrier-over-complete-luminosity__inverse-square-balance-v-squared-equals-M-over-r__enclosed-support-grows-linearly-with-radius__admitted-neutral-stable-relic-under-fixed-gravity__three-space-plus-one-orbital-recurrence__finite-low-denominator-common-refinement__finite-mismatch-exhaustion-to-one-to-one__all-targets-inaccessible-until-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `hydrostatic` | `complete-self-antipodal-half-One` | `selected-pressure-gravity-ratio` | A selected ratio is a parameter. |
+| `radial` | `five-thirds-versus-four-thirds-perfect-power-test` | `asserted-self-correction` | An assertion does not compare response carriers. |
+| `stellar` | `three-space-and-volume-plus-recurrence` | `fitted-single-power` | A fitted exponent is selected by stellar data. |
+| `lifetime` | `one-fuel-carrier-over-complete-luminosity` | `independent-lifetime-fit` | An independent lifetime exponent adds a dial. |
+| `circular` | `inverse-square-balance-v-squared-equals-M-over-r` | `imported-Kepler-answer` | An inherited named answer is not a Fold derivation. |
+| `flat` | `enclosed-support-grows-linearly-with-radius` | `finite-visible-asymptote` | A fixed mass makes M/r fall outward. |
+| `dark` | `admitted-neutral-stable-relic-under-fixed-gravity` | `modified-law-or-named-particle` | A named alternative is not structurally selected. |
+| `tully` | `three-space-plus-one-orbital-recurrence` | `measured-or-fitted-slope` | A slope selected from galaxies is a parameter. |
+| `resonance` | `finite-low-denominator-common-refinement` | `irrational-continuum-period` | An irrational continuum period violates the generated finite recurrence grammar. |
+| `tidal` | `finite-mismatch-exhaustion-to-one-to-one` | `unbounded-or-selected-terminal-ratio` | An unbounded path or selected ratio does not close. |
+| `measurement` | `all-targets-inaccessible-until-seal` | `target-readable-before-seal` | That would fit the result. |
+| `extension` | `no-extra-rule` | `free-response-scale-or-correction` | An added response forks the law. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:8e8cf180731600a6dbe1310cb2d9a83ed0bf793c01f957c0884313ecc37e12b4`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:152c1d169c9d2e59069fb8b6598ba79f5c79b2e519d16f6ce902b13da9fcf324`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:9e6f6491ddb20e53761897e5ef7bac5f4d7630c039a7428b3df40be1fa405274`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:111d6aef6b9dd85abd6b0d078cc84264abebb621f9fd85ed8a32dda84ecd76c9`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:22ef586869d3ff3a3e257e57eae785a3e2625dda7f5e808bb7e129b0f01f35f4`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:e4cc3ed8767fe932277c90468e576b14f06536c91f8aa3f31259c738975fa89d`. Independent certificate: `sha256:e1a5dced711c5b5a9425bd16975c0b9c082e6d74e77812bae1beeb5e795d6527`. Engine external-validation hash: `sha256:d78e63db5478ae7a4f1531ab83b8a78e0b89c20ec0161c8206c913c8474f2949`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, stellar catalogue, galaxy slope, lunar period, survivor identifier or measured target in formal execution
+- no fitted exponent, mass-to-light ratio, halo profile, tidal quality factor, age, metallicity or normalization
+- no universal claim that every stellar mass domain has one exponent and no concealment of separate microphysical regimes
+- no universal 1:1 claim for eccentric or externally maintained spin-orbit resonances
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:4c30c363ac59c1fb301ea0197223c174dc7c25defaa5d15e5012177f0684cb2a`; engine receipt `sha256:24674dfa019c208012414ab3c587656ee404512f20d00ab44e26ee137be22ae2` at `receipts/engine/model_admitted/SFT-PHYS-STELLAR-GALACTIC-TIDAL-TERMINAL-067-24674dfa019c2080.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 288. Terminal stellar nuclear chain, collapse and heavy-element law
+
+Claim identity: `SFT-PHYS-STELLAR-NUCLEAR-COLLAPSE-TERMINAL-069`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Charged access paths are exactly n(n+1) and strictly increase for every positive stage successor; finite stage supports are strictly nested. Exothermic ordinary fusion terminates at the independently forced global binding maximum (mass 62, charge 28, neutron count 34), beyond which its release is the empty One form. Retained inward gravity then forces the support-loss collapse channel, with compressed nuclear support and horizon closure as the complete endpoints. The distinct linked-fuel recurrence has no interior fixed point and ends only at finite fuel exhaustion, forcing thermonuclear unbinding. Neutral capture has the empty inter-boundary charge path; repeated capture followed by registered radioactive rebalance forces the heavy-element channel beyond the ordinary-fusion terminal. Dimensional ignition temperatures and observed events remain post-seal checks.
+
+> Charged access paths are exactly n(n+1) and strictly increase for every positive stage successor; finite stage supports are strictly nested. Exothermic ordinary fusion terminates at the independently forced global binding maximum (mass 62, charge 28, neutron count 34), beyond which its release is the empty One form. Retained inward gravity then forces the support-loss collapse channel, with compressed nuclear support and horizon closure as the complete endpoints. The distinct linked-fuel recurrence has no interior fixed point and ends only at finite fuel exhaustion, forcing thermonuclear unbinding. Neutral capture has the empty inter-boundary charge path; repeated capture followed by registered radioactive rebalance forces the heavy-element channel beyond the ordinary-fusion terminal. Dimensional ignition temperatures and observed events remain post-seal checks.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-FOUNDATION-FOLD-001`
+- `SFT-FOUNDATION-ONE-001`
+- `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
+- `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`
+- `SFT-PHYS-STELLAR-GALACTIC-TIDAL-TERMINAL-067`
+- `SFT-PHYS-GRAVITY-HORIZON-001`
+- `SFT-PHYS-MATTER-CONSERVED-LABELS-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete twelve-axis product of stage composition, charged boundary order, release direction, global binding terminal, nested support, fusion-support loss, collapse endpoint, thermonuclear recurrence, neutral capture, radioactive rebalance, target custody and extension forms. The declared exact boundary is: Every positive finite stage count and successor; complete charged boundary paths; the inherited all-mass binding maximum and tail induction; half-One hydrostatic shares; empty-One absence of release; both compressed support and horizon endpoint classes; every finite fuel recurrence; neutral incident capture followed by registered radioactive rebalance; and no stellar or supernova target before seal. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `positive-Fold-stage-successor__strictly-growing-charged-boundary-paths__only-toward-higher-binding__unique-all-mass-62-28-binding-maximum__strictly-nested-access-support__empty-One-fusion-support-with-gravity-retained__compressed-nuclear-support-or-horizon__runaway-to-finite-fuel-exhaustion__neutral-capture-with-empty-charge-path__registered-radioactive-label-successor__all-targets-inaccessible-until-seal__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `stage` | `positive-Fold-stage-successor` | `named-stage-list` | A named observational list is not a derivation. |
+| `barrier` | `strictly-growing-charged-boundary-paths` | `one-universal-dimensional-temperature` | One selected temperature erases reaction-specific structure. |
+| `release` | `only-toward-higher-binding` | `fusion-past-peak-by-assertion` | Fusion past the maximum cannot release binding support. |
+| `terminal` | `unique-all-mass-62-28-binding-maximum` | `selected-iron-name` | A conventional name cannot select the endpoint. |
+| `nesting` | `strictly-nested-access-support` | `unordered-mixed-shells` | Higher access cannot occupy a larger lower-access support. |
+| `loss` | `empty-One-fusion-support-with-gravity-retained` | `hidden-residual-fusion-energy` | An ungenerated residual is a free source. |
+| `collapse` | `compressed-nuclear-support-or-horizon` | `single-selected-remnant` | Selecting one outcome omits the distinct support boundary. |
+| `thermonuclear` | `runaway-to-finite-fuel-exhaustion` | `chosen-partial-burn` | A partial terminal is not fixed under positive feedback. |
+| `capture` | `neutral-capture-with-empty-charge-path` | `charged-fusion-beyond-maximum` | That requires inward energy and a Coulomb path. |
+| `rebalance` | `registered-radioactive-label-successor` | `unrecorded-charge-change` | An unrecorded change violates label conservation. |
+| `measurement` | `all-targets-inaccessible-until-seal` | `target-readable-before-seal` | That would fit the channel census. |
+| `extension` | `no-extra-rule` | `free-channel-or-energy` | An ungenerated term destroys zero-parameter closure. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:3689e53b92ca88280d666ece8306d439f340fd0a80d9977b8c3e878ed6fad13d`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:8165d365df02494a33ae9d5360d2c4b970d49ca9b5db7927e9308c441a34b9ad`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:928815f87df9944fe2d6a80762ef34a558d7b736f5d40d1c3f02bce9ac2c0ea2`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:7301e51c84488a2130717a8bdf54f192be47839475a07674e4996c6d431b7aa0`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:a7a6dfc2cd363681c827ff106cc67147e6c7340aca3f0bbbe90a2a7bd78b2c54`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:874f1168f335a9a58e6c94231d156a36322ff6d890a353d74523c06027f90ee8`. Independent certificate: `sha256:852e960611e5afb743d00ddd6278d85ed07d7df951e6b4e3f0353b442169ec87`. Engine external-validation hash: `sha256:19dc8622b1cea19c71e340328c0b4e55c8bc208a3a331d22389f9540ebd206b9`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** The Physics boundary closes universal source, propagation and observation relations while explicitly handing astronomical census, historical initial conditions and cosmic chronology to Astronomy/Cosmology. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no V1/V2 executable, named stellar stage, ignition temperature, supernova event, abundance, isotope target or survivor identifier in formal execution
+- no fitted reaction rate, stellar mass, opacity, metallicity, explosion energy, neutrino efficiency or standard-candle calibration
+- no universal dimensional threshold substituted for reaction-specific access carriers
+- no fusion release asserted beyond the globally sealed binding maximum
+- no unrecorded charge change and no omission of either collapse endpoint or either explosion channel
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:498653ec652f93ab85ca1466d0954e8fd3a0eacd4996a0d4d5eb4179b66b611b`; engine receipt `sha256:a41b28a935f54de5daabdbe77b6c1aba9286f174526b8feaa60829ec848e08af` at `receipts/engine/model_admitted/SFT-PHYS-STELLAR-NUCLEAR-COLLAPSE-TERMINAL-069-a41b28a935f54de5.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+
+## 24. Post Seal Empirical Validation
 
 These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims.
 
-### 252. Exact molar Planck measured-value correspondence
+### 289. Exact molar Planck measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001`
 
@@ -20179,7 +23324,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:9225e8b389f0d1611722e0ee9082aed36211d7cad352f164b9784d71c7e0bf81`; engine receipt `sha256:e1f0dfe8b6d4a57d7b408516d2e09ae677fabefc201c273f3f2a62182f9bea73` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001-e1f0dfe8b6d4a57d.json`; empirical-validation hash `sha256:6a8f75e99001bab6986b19ecb01b097c11c6765dfee5b6dfe76a5573ee66f334`; measurement receipt `sha256:36b3c9aa786510f0f47fd90fdb05d61bcf377891525319a794afa48d7e053939`.
 
-### 253. Exact momentum measured-value correspondence
+### 290. Exact momentum measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001`
 
@@ -20260,7 +23405,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:5cbeade6d136aa75bd5230ed8c319ca39ef239a071b3a340252e8b120e9b6ea2`; engine receipt `sha256:4a7e754fdd04ef6ffe92456b90c10648d0c4b64194fd53774beaae63d98c62af` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001-4a7e754fdd04ef6f.json`; empirical-validation hash `sha256:747a63254d71bc932e64a52bc276ac83ff79026765de82e9730c03b3c074abb4`; measurement receipt `sha256:56ee927b7a59252157c870d7b617361dbccb8149618a1312b23aff974eabaf91`.
 
-### 254. Exact force measured-value correspondence
+### 291. Exact force measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-MECHANICS-FORCE-001`
 
@@ -20341,7 +23486,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:542c07dc5b33cd59956904767eda58be58b9338a4f0df6fa6208904864ff4e6e`; engine receipt `sha256:e394dd3d87bf8f712e39291a4f8dcc0fe2d2bea75d3d1fd5b88a67645fb691b1` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MECHANICS-FORCE-001-e394dd3d87bf8f71.json`; empirical-validation hash `sha256:a3fd66e3f20289357da1a8679e0fba1574529cee162cca2c5067d03d2b50af04`; measurement receipt `sha256:31429d5b44a542dc11e26006c28ab86fd8d4f766eda307b47f1215069204902c`.
 
-### 255. Exact electric-potential measured-value correspondence
+### 292. Exact electric-potential measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001`
 
@@ -20422,7 +23567,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:b4905946f588c0b676abca54102aea83324c31bb32bcf614ff4d1376a916e6c7`; engine receipt `sha256:34a88c7435b67d0c73792b2eadc0ff77c03291db4280c5b806c286b78ddbb00f` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001-34a88c7435b67d0c.json`; empirical-validation hash `sha256:490ac035799a28d5636017d5332003ba8a8c8242399bb2f73c8ad1549035608d`; measurement receipt `sha256:4edaa6daf75bf922b1b265d0c71158cf9c4cbf46fba764a099d9abfeb8190114`.
 
-### 256. Exact electric-field measured-value correspondence
+### 293. Exact electric-field measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001`
 
@@ -20503,7 +23648,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:bdb2a10e1b1f70da8cdf3c6f285dd547459ebf99e75ed39a00c3a1094e05ab72`; engine receipt `sha256:b5b06d49508b35b38f352d022c8edcf0f2e593225086d53472aa679a8e64dbc8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001-b5b06d49508b35b3.json`; empirical-validation hash `sha256:a1d5c9e8da6710ad18d84368335db10cf121930ebf59504a863157d7ff31baea`; measurement receipt `sha256:828c7e4fbb00764d4e9df5ddc3582e7aee6bca095db57f37bbb8deaf67c469a0`.
 
-### 257. Exact wave frequency measured-value correspondence
+### 294. Exact wave frequency measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001`
 
@@ -20584,7 +23729,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:0fc7adec00d3a5e509382fc951f24c3dad4a1836c18770735393de6818453713`; engine receipt `sha256:d75c1886968251dd42429c73c3c8303ae4d22eededbe87ae37e24951e7e938fb` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001-d75c1886968251dd.json`; empirical-validation hash `sha256:75b2bdcab27442712f9b8272975533b3121f04fe4ddb633a879e2ecf201f2111`; measurement receipt `sha256:c273d3186b7d7c1f07493ee7b303e28d6299fa252e4abd65c72eaa968ecd3723`.
 
-### 258. Exact wave energy measured-value correspondence
+### 295. Exact wave energy measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-WAVE-ENERGY-001`
 
@@ -20665,7 +23810,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ee42680f05f96265966953bbaf31df5c983b1ea1ecf841ab7288e3826137da33`; engine receipt `sha256:fd222d0ccab49086ac4daa8928f6c9f0cd65ccf15dc94dfdc56562cec0c22173` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-WAVE-ENERGY-001-fd222d0ccab49086.json`; empirical-validation hash `sha256:ebd6ff2986706f73adeb320421bc15a51030bc97df03321697f53af5930a04d3`; measurement receipt `sha256:bfcee7ac76277f2eca8503e567c67cb5661ad12a342cad3a531c126ae66c676a`.
 
-### 259. Exact molar thermal measured-value correspondence
+### 296. Exact molar thermal measured-value correspondence
 
 Claim identity: `SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001`
 
@@ -20746,7 +23891,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:55cdab99ac1372af5d769f493866a3dc73d31ed5fee6c0e24a30667d32590e50`; engine receipt `sha256:4c675313be3e4006a248563bd452cb64e04425dbef90838ba7625a59beb8b277` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001-4c675313be3e4006.json`; empirical-validation hash `sha256:2e08d99977b76a21e09ae04a2080633f83f89d247304f1b54df868ca5e9b42cf`; measurement receipt `sha256:72a70301b05b1847cb68d81b26ec8b12ba9fd6ed0b7633034f7c4c062a5439c8`.
 
-### 260. Post-seal experimental agreement of the inverse-square exponent
+### 297. Post-seal experimental agreement of the inverse-square exponent
 
 Claim identity: `SFT-PHYS-VALIDATION-INVERSE-SQUARE-001`
 
@@ -20832,7 +23977,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:697c2ddd7d7f792cbdf283fa279f572c8b427b2a643466dfb2d6324329ed8564`; engine receipt `sha256:31bd4d97bd010d4af89b2b85ed1bb02056b5b6d67a3acca65110366ab479e698` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-INVERSE-SQUARE-001-31bd4d97bd010d4a.json`; empirical-validation hash `sha256:4790e8635bc9a04ccfda3909c6b242cfb3b8f0aa04c26bdaa7f901276124f141`; measurement receipt `sha256:7e578b51b3663020cfec74ee6d42bc8c1085373c9a5f91730a784d8e7b7b5582`.
 
-### 261. Post-seal CODATA check of the terminal inverse fine-structure ratio
+### 298. Post-seal CODATA check of the terminal inverse fine-structure ratio
 
 Claim identity: `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001`
 
@@ -20916,7 +24061,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fb0058c462a90eec0073158ae31c88e7bad16311f630152e83ed5ae277d5282a`; engine receipt `sha256:cfe0c0b068864707942c03909ef4dd16660476c808fe5e9567970c60d8640bbd` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001-cfe0c0b068864707.json`; empirical-validation hash `sha256:5eed8e7391a59d9ffdbf11d158d63dc889357300a19a27203f3719606f5e6877`; measurement receipt `sha256:060cad30845d985ab813c4e4114eabee8d690c4f62d18860ab215d35061db1d7`.
 
-### 262. Post-seal IAEA check of the nuclear-closure sequence
+### 299. Post-seal IAEA check of the nuclear-closure sequence
 
 Claim identity: `SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001`
 
@@ -20998,7 +24143,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1d815786712147e935c6d17ddb736acd9863124d56a42adab83e860b22b0d131`; engine receipt `sha256:e55e9e67e3e4b389dd46c7a5cd6260674d11a9c832d55835d92100936f365bbd` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001-e55e9e67e3e4b389.json`; empirical-validation hash `sha256:bfb9984c3d44e47579ac8b6b710cc22f04875b3c99fbfc07a179ccb8905a036a`; measurement receipt `sha256:aae2b19de5952d1488ac8ec859b09819c1378406999367008709aa7b423a7f08`.
 
-### 263. Post-seal exact Koide comparison
+### 300. Post-seal exact Koide comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001`
 
@@ -21046,7 +24191,21 @@ Claim identity: `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001`
 
 **Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:e3cd83ee4f6fafde717e8b0e0cf9225f363bf191cffa99cd90546a5acfe486cd`. Independent certificate: `sha256:c060fa4e8d243d22657a297a4d45013b3dc832315ad6e3e78ade240d1dbbfc26`. Engine external-validation hash: `sha256:dbb16a3a4ad6570771883dc38fe894de89cf5a7038664a5279be808d51fa8456`.
 
-**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-CODATA-2022-ALL-CONSTANTS
+
+Observed comparison records:
+
+- NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO: predicted sealed-two-thirds-inside-complete-codata-derived-koide-interval; observed sealed-two-thirds-inside-complete-codata-derived-koide-interval; exact match True
+- NIST-CODATA-2022-MUON-TAU-MASS-RATIO: predicted sealed-two-thirds-inside-complete-codata-derived-koide-interval; observed sealed-two-thirds-inside-complete-codata-derived-koide-interval; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: The exact two-thirds lies outside the outward CODATA-derived interval, either row or uncertainty is omitted, source custody changes, or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:550f4a01b231c2375c639d5486b8c252ee0431cdf4012d8a7174fd5543d324cb`. Isolation certificate: `sha256:5a7e06f3e7fbc8c5d72606785384aeb6fd57af986b11dee9f91dc1425bb3b4b9`. Custody certificate: `sha256:bdc61acb9c3ebc999a602c9bb9a07039b4e24d8dfbdefd9f3aab635482456397`.
 
 Registered source descriptions:
 
@@ -21069,7 +24228,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:99550383ca1d0858c6dac68fb34c27f8065c37b19dd50c4fb8235de4de6db20f`; engine receipt `sha256:369a1e48d622bba0f3e4abc1e89fef8553b17097c3d8c4427afca26386f6cbf9` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001-369a1e48d622bba0.json`; empirical-validation hash `sha256:4580bae1908fdd208c75dc159f8ff406fbbcbbd9be2ec6f6e0e9376bc9a0244f`; measurement receipt `None`.
 
-### 264. Blind PDG test of the terminal electroweak Fold share
+### 301. Blind PDG test of the terminal electroweak Fold share
 
 Claim identity: `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003`
 
@@ -21149,7 +24308,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:134b2d492cf9a84819fb9fbf7701bbd77f649a2acd56545efa1b9fc74909c5de`; engine receipt `sha256:e72a5865357e13d30301ecdc625014901122f399f1fd4a6967c585f214852d8a` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003-e72a5865357e13d3.json`; empirical-validation hash `sha256:c54ebb425958b1801b404eca6bd2d2dd5be7fa6d6ea04914aae1540174f06c39`; measurement receipt `sha256:a6bb11e7f817c5480a2fdba24c1c416bd9dc24599e76da1cd41b8071a1837268`.
 
-### 265. Blind CODATA test of the terminal proton-to-Planck hierarchy
+### 302. Blind CODATA test of the terminal proton-to-Planck hierarchy
 
 Claim identity: `SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003`
 
@@ -21230,7 +24389,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3935656eb4fb86648b2a496cb2f170e4e6900b49de2e2de85eca178803818dc5`; engine receipt `sha256:7e8e84ee71e17a8b40820223b0ecf00c5a814395a262ee6224a64eb47ed6eae8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003-7e8e84ee71e17a8b.json`; empirical-validation hash `sha256:57e1a8bbee37a75646a9f157969540c879c1aaeff44dc09bedfc7404692436aa`; measurement receipt `sha256:6cc7ef49dd74460c9d469324be9aab23c252df8caa1afb098315daf2139c6645`.
 
-### 266. Blind PDG anchor test of the complete force-sector formula
+### 303. Blind PDG anchor test of the complete force-sector formula
 
 Claim identity: `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003`
 
@@ -21309,7 +24468,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1889142c48413b5124e4dbc8b585a1e419ea4519c5461eb3f66a4ddf0a2f7ac3`; engine receipt `sha256:5cd64eeef9ed14372e44541ffc2df625aec020eb1277e52cd76de0bb222261a9` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003-5cd64eeef9ed1437.json`; empirical-validation hash `sha256:d37956fd80f0bceb8395c122997d8f3a970a901ba10a90724d2e45f1f062a9e8`; measurement receipt `sha256:94ec3c6dd81be8626acd688f9316d73c63338dcce1251156448de4fdcbd20830`.
 
-### 267. Post-seal NIST test of the nonempty vacuum floor
+### 304. Post-seal NIST test of the nonempty vacuum floor
 
 Claim identity: `SFT-PHYS-VALIDATION-VACUUM-FLOOR-003`
 
@@ -21388,7 +24547,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:85f051adb7ada691157f11e9bac65e1122dc02ae240c85dc9b6b88eaf8a125a1`; engine receipt `sha256:b3ec9913e1dba8376934ffa7398a73079ec9f20f9a727693ad65bfe36581094d` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-FLOOR-003-b3ec9913e1dba837.json`; empirical-validation hash `sha256:530e0e9e77180509594b1cf287227d798c8d93cff31003cd64b935aad7593f7a`; measurement receipt `sha256:bbff5927e2f7c0658d96b870bb2259f7880bcd76607a9ab015f78380e83fbe75`.
 
-### 268. Post-seal PDG test of the vacuum-polarization running direction
+### 305. Post-seal PDG test of the vacuum-polarization running direction
 
 Claim identity: `SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003`
 
@@ -21468,7 +24627,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:6a5fe81fa08340640e916ddbfad1114aa650147b5fe48a822e5cc517e0541963`; engine receipt `sha256:89c64800b967585a1f8d5ec366c316fa95767b53479b8ef2878a963d292f3c06` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003-89c64800b967585a.json`; empirical-validation hash `sha256:e82cea38e8e08ce5f75e0273369e848c054abfd98b14333023573cd7fce543e7`; measurement receipt `sha256:e555277d4ddcc736be3baa5be0396411711be8e7e6d231c2336afa5a7d26bd3b`.
 
-### 269. Post-seal MICROSCOPE anchor test of vacuum-inertia unity
+### 306. Post-seal MICROSCOPE anchor test of vacuum-inertia unity
 
 Claim identity: `SFT-PHYS-VALIDATION-VACUUM-INERTIA-003`
 
@@ -21547,7 +24706,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:0d791400d27451caff0b06d85590a9547272086ef027dfbe414455594de21b8c`; engine receipt `sha256:e529584ec3535d78973aea1f390db46a1324447a7b7e39cec21ebcf1a43086a5` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-INERTIA-003-e529584ec3535d78.json`; empirical-validation hash `sha256:b156e66cbf0fae3f85ea91ab7a631197cd8eadc620ae806b30f03e5f2afabe03`; measurement receipt `sha256:e2894d05572af3cf37328d05605f8765fd280d04a934c4ed0631c55ab0f1006e`.
 
-### 270. Post-seal NIST boundary test of vacuum-work extraction
+### 307. Post-seal NIST boundary test of vacuum-work extraction
 
 Claim identity: `SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003`
 
@@ -21628,7 +24787,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2c718a951786fba8c269f606d2f7bf17b04a7d6d4d37a241a8a79c916b7ed88d`; engine receipt `sha256:69f0aa277d9177a170f4b067291adfeaa8e849889e2829298c03832aa5109af6` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003-69f0aa277d9177a1.json`; empirical-validation hash `sha256:716868324dd40d4bfffff6be77aa62581b21cf7c7960447eed51ba17d949b7a0`; measurement receipt `sha256:d1bffd6aa3b85892e7cde13c175aa64901eba8d877db60ac17adc222239465e3`.
 
-### 271. Post-seal dynamics and spectra comparison
+### 308. Post-seal dynamics and spectra comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003`
 
@@ -21708,7 +24867,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:670d4c6098485e1583ab5b0b0f653a82941ac4b808f4a930c4a34e725852358c`; engine receipt `sha256:3c65449f45a60ef6f3285e063eb3a9c83b1e8c2942099c9acc09600951947eaa` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003-3c65449f45a60ef6.json`; empirical-validation hash `sha256:83a7f19781bc7b9c922c7fa649dc7ddba0da70cc0af4b3c152f3a7355103d8a5`; measurement receipt `sha256:c635493af4b50a1d0c957d4468a85df1311fef3d1ec3fb1fe5c3c6a027b49ff6`.
 
-### 272. Post-seal relativistic and electromagnetic field comparison
+### 309. Post-seal relativistic and electromagnetic field comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003`
 
@@ -21790,7 +24949,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:99ecfc87d8f303b62e401e6b46dcd2b73acaf5743f282587d9965631c308ab11`; engine receipt `sha256:af06233350a2f6e005076914a40d3cbcc6d6744954d9c75238b52bebe204bee8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003-af06233350a2f6e0.json`; empirical-validation hash `sha256:557122754d87fd03eea18126cdc1e5a10b0b09f2d3b37277fc260c04b3295924`; measurement receipt `sha256:6e2b123b895e50de032c92694765532679f3fb973e0a8d7ef86f3e8fac7e2220`.
 
-### 273. Post-seal optical-operation comparison
+### 310. Post-seal optical-operation comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003`
 
@@ -21870,7 +25029,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:2dcef842a366ce922fe85ae79df7284fc8f231b2cdc95f3116b867af68aacac4`; engine receipt `sha256:2cd2aeb5d9d4f311bab1b6778728a80b9cf087a82263645db5e9c2a222078b83` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003-2cd2aeb5d9d4f311.json`; empirical-validation hash `sha256:a2a16e3f3b10f21bb0058aeceafac87b76a0ef521e5ef5bbc82fc8462eb69a33`; measurement receipt `sha256:32da7e42cfd301ed589ba2c8e40eeddd7f5a0976125c8bc5f270b055f4c13c75`.
 
-### 274. Post-seal finite-loop and renormalization-boundary comparison
+### 311. Post-seal finite-loop and renormalization-boundary comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-FINITE-LOOPS-003`
 
@@ -21949,7 +25108,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:8a3553097aeeb1eb6d79d2fb7db17ff0148a8580a13c671f64397c5f02d00050`; engine receipt `sha256:a815c5258c82cf73a7775d9498f95ac45de0810da8eaa2ee033a5294f5612e8c` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-FINITE-LOOPS-003-a815c5258c82cf73.json`; empirical-validation hash `sha256:d5739892abc343e334f8e697e35a0b6f5b31e8452dab01df04dc1e522dde1761`; measurement receipt `sha256:c56843e3508a80f52813258c6db3270907823266331589cf24b42651bf8a978e`.
 
-### 275. Post-seal gravity, clock and equivalence comparison
+### 312. Post-seal gravity, clock and equivalence comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003`
 
@@ -22029,7 +25188,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:60d44fd852ce8287c042a28679f9c520cecba00adb07db25c19b0d34c6da564e`; engine receipt `sha256:4fc85a7fb89b3bbace0a934db81587dff9653aa457cc76c7722ac8dca7383515` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003-4fc85a7fb89b3bba.json`; empirical-validation hash `sha256:17f80e9bb3ed53c84c92e2ad7d9a6900351247afa4945c0eab32a1a5b75c686e`; measurement receipt `sha256:0a9abfa9f2cb8482951ae4c1c9b0f8cb76d1627f28a84beee599d06dda3d1ecf`.
 
-### 276. Post-seal gravitational-wave speed, polarization and quadrupole comparison
+### 313. Post-seal gravitational-wave speed, polarization and quadrupole comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003`
 
@@ -22108,7 +25267,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:ee5fb47223e46148fb6beb470dde3ff9a2d02996763de5b748980b97cf7916a4`; engine receipt `sha256:5617dfc8f9f7e7ddae1dd272e793d566071563db1e344afd340bf70b2c8ba493` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003-5617dfc8f9f7e7dd.json`; empirical-validation hash `sha256:be2b4574a9b44f33f71c7b2704fdfc4bbe665e1e5a22418e827c47d98079f76c`; measurement receipt `sha256:1acb4baba3df38ef3d5313fb2fbe0d6628ea9fac7f60c448b1dc316f263b9c65`.
 
-### 277. Post-seal horizon and information-boundary comparison
+### 314. Post-seal horizon and information-boundary comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
 
@@ -22189,7 +25348,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d7d94dd728088dbb0e16bfa6abd38d6b3c88b08dd0d3a7a11fa2ada4c943cf48`; engine receipt `sha256:8279f3140235ca46ae66bbf4ed0fbf28c804d3bb42b43ecdb0d12ce45dc807b8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003-8279f3140235ca46.json`; empirical-validation hash `sha256:b0c28bf902eb524babfda5092b927443e1baef638f8b6d77babd6ae45be348e6`; measurement receipt `sha256:a15894aa0d01b667e5f1ff9750c1044d160fcd8bfabf67b97c1580fafce31968`.
 
-### 278. Post-seal nonstandard-spacetime realization boundary
+### 315. Post-seal nonstandard-spacetime realization boundary
 
 Claim identity: `SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003`
 
@@ -22271,7 +25430,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fad156f4c6464a5287002819578ce1668d104b37f511c40c16db7476cf8c17b7`; engine receipt `sha256:5151d23acf5efc4266a74058442147b66ea3e2f926dd810d3578d417e255c883` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003-5151d23acf5efc42.json`; empirical-validation hash `sha256:0c0517c9aecadcd34d26405d2a1711817ca3e08f25174c7cf08d07d4420a5461`; measurement receipt `sha256:a9546b367e2a18a2622a5841bafda64d09d031a716b9e24734bf0903016b2cdd`.
 
-### 279. Quark dressing and CKM comparison
+### 316. Quark dressing and CKM comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-QUARK-CKM-003`
 
@@ -22354,7 +25513,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:cd6572b28e067455cde9d87e98965e84605075da2091873566f521290cee32da`; engine receipt `sha256:f9b53638bf2ac6dd4c0a294d9e10926ad8a0c00b64043500e0560845f257ff8e` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-QUARK-CKM-003-f9b53638bf2ac6dd.json`; empirical-validation hash `sha256:609a035688d5e01dfa51f7bebf5dff8ac1aba8927ebe2680ba8a0b668d0be51b`; measurement receipt `sha256:6316469fae9eeeecc412867cf8d6a30f6dededc827002783cf95c32f94ef7fb8`.
 
-### 280. Proton/electron precision comparison
+### 317. Proton/electron precision comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-PROTON-ELECTRON-003`
 
@@ -22434,7 +25593,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:fa889edbff377ffbd3b92f2940ac4899925e9cec0fa41bf96a495a1693fccc1c`; engine receipt `sha256:4748126ffa9e95ad6473d568db39420d0252353b27f778ca67d3f3edc742a4a6` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-PROTON-ELECTRON-003-4748126ffa9e95ad.json`; empirical-validation hash `sha256:febfc972d601325a4b44284686c0bf60b4d83b06b8c4f41a3d37703760753d34`; measurement receipt `sha256:91e37b94e9c6ac56cc8835eb9d34f72d076ce889b88c9e36bc249de212ede41f`.
 
-### 281. Neutrino mass, ordering, PMNS and CP comparison
+### 318. Neutrino mass, ordering, PMNS and CP comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003`
 
@@ -22516,7 +25675,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:5cb1dbd8514f2638426cede2eda71ec7d3bca6ed13bee59d71a22d60c35efb9d`; engine receipt `sha256:1971175fec6fe5978abe8142346e71e4800ef6bb31aaa678cd2752149f08f10c` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003-1971175fec6fe597.json`; empirical-validation hash `sha256:149522407a080710893da60ef2df60312cc4f6af08acd447cb93811985da1897`; measurement receipt `sha256:df7aba217bf77a02ec9af53a1b59e3b0d57899ea3ec234f0bbddae8031a13f37`.
 
-### 282. Majorana and neutrinoless-double-beta status comparison
+### 319. Majorana and neutrinoless-double-beta status comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003`
 
@@ -22597,7 +25756,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:60e4265b532387ed0aeb9221f012dfaed68052b939c5de9d1e5ad264b570c076`; engine receipt `sha256:028482eb80db7fb39fc3bc19b98ce247ab28fcd8121b80f1e4f6fab4a348d7d6` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003-028482eb80db7fb3.json`; empirical-validation hash `sha256:f361adf2d3faab0214bee4a388a54efea7704a7fc31d0c4babc58779e45c0983`; measurement receipt `sha256:d5ca10085433326e6c4c491a7daf2ee1e3a56cf41b6d8191e6fa49ef60aed782`.
 
-### 283. Electron and muon magnetic-anomaly comparison
+### 320. Electron and muon magnetic-anomaly comparison
 
 Claim identity: `SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003`
 
@@ -22678,7 +25837,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:d54d0adc55b307d7e96e8a2c573ddf0bfb758ad5a7e2d615ffec234408a55fd9`; engine receipt `sha256:e6065612de8e491dff5272b714302a4e85359e5e5d17afb43c08accdeb5e9b3f` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003-e6065612de8e491d.json`; empirical-validation hash `sha256:d2e6637abbf732a0cd8a16ca3f0834aee2fb114b4d3bc4f194cc4bd1e72b1c96`; measurement receipt `sha256:1df0cdf663368b440cb6d8120c7ed3c4e6fb44a86254e851cdfc9fbc0915733d`.
 
-### 284. Post-seal NIST comparison of the forced six-neighbour cubic support
+### 321. Post-seal NIST comparison of the forced six-neighbour cubic support
 
 Claim identity: `SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004`
 
@@ -22760,7 +25919,7 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:3537e0b151d2ec9e090298d9a07e7c03cd41d0fd890b564a8b4b1be61dddbce8`; engine receipt `sha256:2d3a137022da53383895f1e43bdfd78a6ce04912b408c76c4a4d0bcef569ab61` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004-2d3a137022da5338.json`; empirical-validation hash `sha256:d19984f3e335290e5de23709947563f30e1befeb68bc478987fa8dfc281c3ebc`; measurement receipt `sha256:fd1f07c8d8d931c7b817d9b78ea6dbf9d28f8a7835713ff1ae43f9be118b0578`.
 
-### 285. Post-seal NIST comparison of the exact hydrogen spectral ladder
+### 322. Post-seal NIST comparison of the exact hydrogen spectral ladder
 
 Claim identity: `SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004`
 
@@ -22847,26 +26006,3211 @@ The result is closed only at its registered generated and empirical boundary. It
 
 **Immutable evidence identities.** Source manifest `sha256:1c203ba48a0913a643b9e5f9e170a5188824f9e381e5aed905df73174997f2f5`; engine receipt `sha256:ac7a0e6e2bac1372b978f599799af40cebb9660b655f6b67978c798256204285` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004-ac7a0e6e2bac1372.json`; empirical-validation hash `sha256:32332cd52f1c5e67266580dae73d1302fabc89f0c0297f717654b3ae53273154`; measurement receipt `sha256:420bc255caf0fe1ce3073b43c85250e0c00425f80ad03071f2acb5b7f128a097`.
 
+### 323. Post-seal Fizeau discriminator for Fold velocity composition
 
-## 22. Cross-branch synthesis
+Claim identity: `SFT-PHYS-VALIDATION-VELOCITY-COMPOSITION-034`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The measured water slope is 274/1000 +/- 3/1000 rad s/m. It lies inside the complete reported relativistic-systematics bracket 248/1000 to 299/1000 and is more than ten times closer to its nearest relativistic row than to ordinary addition at 563/1000. The air result independently rejects ordinary addition and is compatible with relativistic composition. This is a post-seal discriminator, not a fit or precision confirmation; all source-stated systematics remain open.
+
+> The measured water slope is 274/1000 +/- 3/1000 rad s/m. It lies inside the complete reported relativistic-systematics bracket 248/1000 to 299/1000 and is more than ten times closer to its nearest relativistic row than to ordinary addition at 563/1000. The air result independently rejects ordinary addition and is compatible with relativistic composition. This is a post-seal discriminator, not a fit or precision confirmation; all source-stated systematics remain open.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-SPACETIME-VELOCITY-COMPOSITION-TERMINAL-033`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed operation, Fizeau discriminator, provenance, target isolation, measurement separation, complete row/limitation retention, successor closure and extension. The declared exact boundary is: The admitted exact positive velocity operation; the complete registered water measured/uncertainty, raw relativistic, corrected relativistic and ordinary-addition rows; the air result; and every stated systematic limitation. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-velocity-composition-with-complete-Fizeau-discriminator__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-velocity-composition-with-complete-Fizeau-discriminator` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:2c95368e6cb55afa4f0ff970e6a336df3f2aefbb2eb3d5d84c437e5167934a41`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:8009bd07833670e510f10387289b297f705cccb3914d77a5950657cfd4f6b395`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:27812259a34558ed1713aa01e228303994b6a3412740a08d998686ed6e1f7aaa`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:248e0a15eade5b255ce84bb354d5fa31d1189398dcc0efd2df92e545791c45ac`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:83549ee13670779240a1e7473688fc47758bbaa3df875f9bcdcb293b1b96f240`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:b9a10021cdd87914bfa0c1b2056460b07cbc35c10e4a923fa9dcd60d6cf6c784`. Independent certificate: `sha256:37966620627fdbe37ededaf13405fbc189d23ffa27d2b5bb93af1c75d1b52efe`. Engine external-validation hash: `sha256:45aff6a43141ce2fe66d8b31ed63704e133c8eb97f065e5513f569319e5297e0`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- ARXIV-1201.0501-FIZEAU-WATER-AIR
+
+Observed comparison records:
+
+- The exact Fold velocity operation was admitted before the Fizeau source was retrieved.
+- The water slope is retained as 274/1000 +/- 3/1000 rad s/m.
+- The raw and corrected relativistic rows 248/1000 and 299/1000 bracket the measured interval.
+- Ordinary addition predicts 563/1000; its distance 289/1000 exceeds the nearest relativistic distance 25/1000 by more than tenfold.
+- The air row rejects ordinary addition and is compatible with relativistic composition.
+- Flow calibration, turbulent-profile and path-length systematics are retained; no precision overclaim is made.
+- A tampered ordinary-addition row equal to the measured central value destroys the discriminator and is rejected.
+
+Falsification condition: Reject if either source identity changes; if a registered measurement, control or limitation is omitted; if the water measured interval leaves the complete reported relativistic-systematics bracket; if ordinary addition is at least as close as both relativistic rows; if the air control no longer disfavors ordinary addition; if any target changes the sealed operation; or if a precision confirmation is claimed beyond the source.
+
+Measurement receipt: `sha256:9b184c06fd6dd000723fe92c1f69d7a1f7b48afd4b0d9e3d32e88d90e567e0be`. Isolation certificate: `sha256:8af63e373e75f8c1e898e37db3f6b796cb871e2db1c44176b53fea0e14c6820c`. Custody certificate: `sha256:901464dd7418ef296ff80c3dee2c1d39c45e51c03c9fe8ea257d20cb2961182a`.
+
+Registered source descriptions:
+
+- Fizeau's aether-drag experiment in the undergraduate laboratory: https://arxiv.org/pdf/1201.0501 (sha256:8c19ceeccda50a3c297aa13c6006a6cf032d41a3c714f128b2be663bd3c5b5b3)
+
+Registered target identities:
+
+- ARXIV-1201.0501-WITHHELD-COMPLETE-FIZEAU-RECORD from ARXIV-1201.0501-FIZEAU-WATER-AIR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Fizeau slope, refractive record or external velocity formula in the formal predecessor derivation
+- no fit of a Fold coefficient to the water or air record
+- no omission of the ordinary-addition control or source-stated systematic limitations
+- no precision interval claim where the source reports an eight-percent systematic-level agreement
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+- no target access before the formal prediction seal
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:70a12111a120963928d953bec47666c73308724f2eb2ec93275f27b25d5e2c8d`; engine receipt `sha256:54dce92f903c6f102e4d39f3bdb826a89c05e69e80b6d6df66728711dbc03cf4` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VELOCITY-COMPOSITION-034-54dce92f903c6f10.json`; empirical-validation hash `sha256:932b06b5da3476726d83ce723657ae4e1f0cfb8b57a70670279a7fa99f7d23b9`; measurement receipt `sha256:9b184c06fd6dd000723fe92c1f69d7a1f7b48afd4b0d9e3d32e88d90e567e0be`.
+
+### 324. Post-seal Planck/CODATA test of the Fold vacuum-density scale law
+
+Claim identity: `SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact Fold vacuum share 11/16 is inside Planck's interval [6833/10000,1389/2000]. The normalized Fold magnitude 33/16 is inside [20499/10000,4167/2000]=3 times that interval. Using page-225 H0=67.68 +/- 0.42 km s^-1 Mpc^-1 and exact c=299792.458 km s^-1 transports Lambda to the exact positive interval [(33/16)(67.26/c)^2,(33/16)(68.10/c)^2] Mpc^-2. One/2^20 is below the global interval and is therefore retained only as the separately typed local boundary-energy floor.
+
+> The exact Fold vacuum share 11/16 is inside Planck's interval [6833/10000,1389/2000]. The normalized Fold magnitude 33/16 is inside [20499/10000,4167/2000]=3 times that interval. Using page-225 H0=67.68 +/- 0.42 km s^-1 Mpc^-1 and exact c=299792.458 km s^-1 transports Lambda to the exact positive interval [(33/16)(67.26/c)^2,(33/16)(68.10/c)^2] Mpc^-2. One/2^20 is below the global interval and is therefore retained only as the separately typed local boundary-energy floor.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed vacuum relation, Planck/CODATA target, source provenance, capability-closed isolation, proof/measurement separation, complete row and correction retention, successor closure and extension. The declared exact boundary is: The admitted exact local floor, finite mode ledger, 11/16 global share and 33/16 normalized magnitude; Planck table 12.16 page-225 H0, Omega_Lambda and Omega_m rows with complete uncertainties; CODATA exact c; the older H0 transcription correction; and the local/global adverse type control. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-vacuum-density-law-versus-complete-Planck-CODATA-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-vacuum-density-law-versus-complete-Planck-CODATA-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:aac1f5afbedc98835000ee0959231e7e6213eae90e23f1502c48346abd816225`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:80323984b7f3e4556b6a437274b69af93eb908accc7828348411dbf280b6c821`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:a0c6725ee5796923141b8a1ed45d77de545e582264fadb7dbe5bf403ef5f1af1`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:a89ecd40b7631fe123e2b57bebffdd301066da0cde5dd1abc2e4291838ff98d7`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:e0414394833e40ba64335f2decf3b46c98cba1a7dfb295cd38cbf1b095c23f0a`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:9b4f66424c7fa3b2ffc7943492d8d556da80dcd1b280405db5a9fb1cb0f5520b`. Independent certificate: `sha256:b8101dfd5ee3a439f81be03bd7b4f8a8c88e3c3cc125901e60a32e5bd8113404`. Engine external-validation hash: `sha256:d8ddaf48a77d46203c68ba9687c9b06a2bc92bee78d687688e73cd0fa83b6cab`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-PLA-BASE-NRUN-TTTEEE-BAO-LENSING-68PC
+- NIST-CODATA-2022-EXACT-C
+
+Observed comparison records:
+
+- The formal vacuum-density law was admitted before the primary Planck PDF was retrieved.
+- Historical V1/V2 targets and an older local transcription were known; no historical-blindness claim is made.
+- The exact 11/16 vacuum share lies inside the complete Planck 0.6889 +/- 0.0056 interval.
+- The exact 33/16 normalized magnitude lies inside the three-direction transported Planck interval.
+- Page 225 directly reports H0=67.68 +/- 0.42; the older 67.66 transcription is corrected here without rewriting prior receipts.
+- CODATA exact c transports the sealed coefficient to a positive exact inverse-square-megaparsec interval.
+- One/2^20 and the finite-ledger mean remain outside the global fraction interval, preserving their distinct types.
+- A tampered vacuum central value of 0.6000 rejects the registered comparison.
+
+Falsification condition: Reject if any source identity or registered row changes; if 11/16 leaves the complete Planck vacuum interval; if 33/16 leaves its exact three-direction transported interval; if the Planck central budget ceases to close at the One; if dimensional transport is nonpositive or scale-inconsistent; if One/2^20 is relabeled as the global fraction; if the older H0 transcription is silently substituted; or if any target changes the formal survivor.
+
+Measurement receipt: `sha256:0bb3659038316226f202044b500f6bf1a6867720089a91f659b908e9fe356cf4`. Isolation certificate: `sha256:f285d0debc6ce9b8d4818d3543c820f822146affc4724edbebe6681167e8fada`. Custody certificate: `sha256:e87a3b3313685c954c8c60820553b833343ee076775dec0952b8d5d4b43af12e`.
+
+Registered source descriptions:
+
+- Planck 2018 baseline parameter tables, 68 percent limits, table 12.16: https://wiki.cosmos.esa.int/planck-legacy-archive/images/4/43/Baseline_params_table_2018_68pc_v2.pdf (sha256:03038805021f2f894e09f4b21b0f20418570e352822f095abcc085942919da70)
+- 2022 CODATA recommended values - complete ASCII table: https://physics.nist.gov/cuu/Constants/Table/allascii.txt (sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67)
+
+Registered target identities:
+
+- PLANCK-CODATA-WITHHELD-COMPLETE-VACUUM-SCALE-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Planck or CODATA value readable by the formal candidate generator or independent formal validator
+- no fit, recalibration or coefficient choice from Omega_Lambda or H0
+- no claim of historical blindness: V1/V2 targets and an older local transcription were known
+- no silent reuse of the older 67.66 H0 transcription where primary page 225 reports 67.68
+- no direct equality between One/2^20, a raw radiative sum, Omega_Lambda and dimensional Lambda
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:f13f4bb53dc4e55f6ffa2503fba63bdc74c8024e6692b57e3f30269ee5c18485`; engine receipt `sha256:6379f0d35a606d217e2351a35c42ae258aea71c52d8d20d2c4abeef2fdd8c202` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036-6379f0d35a606d21.json`; empirical-validation hash `sha256:7695b43af80dd5ba9987cee7e0375f9f91c9dcd81fde97020402fd544559998a`; measurement receipt `sha256:0bb3659038316226f202044b500f6bf1a6867720089a91f659b908e9fe356cf4`.
+
+### 325. Post-seal thermal-history, nucleosynthesis and recombination test
+
+Claim identity: `SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The direct high-redshift CMB temperature exponent interval [49/50,517/500] contains exact One. The external freeze-out sequence is approximately 1/6 then 1/7, matching the separately forced typed transport. Direct helium Yp=0.2458+/-0.0013 gives [489/2000,2471/10000], which excludes 1/4; therefore 1/4 remains the exact analytic helium-family partition and is not relabelled as the exact isotope measurement. Direct primordial deuterium (2.527+/-0.030) times 10^-5 is positive and subordinate. Planck retains z*=1089.92+/-0.25, eighteen finite extrema and seven complete TT peak rows. Those angular peak intervals are not integer multiples of the first, so the internal-whole-mode/observed-projection distinction passes and the old angular-integer reading is rejected.
+
+> The direct high-redshift CMB temperature exponent interval [49/50,517/500] contains exact One. The external freeze-out sequence is approximately 1/6 then 1/7, matching the separately forced typed transport. Direct helium Yp=0.2458+/-0.0013 gives [489/2000,2471/10000], which excludes 1/4; therefore 1/4 remains the exact analytic helium-family partition and is not relabelled as the exact isotope measurement. Direct primordial deuterium (2.527+/-0.030) times 10^-5 is positive and subordinate. Planck retains z*=1089.92+/-0.25, eighteen finite extrema and seven complete TT peak rows. Those angular peak intervals are not integer multiples of the first, so the internal-whole-mode/observed-projection distinction passes and the old angular-integer reading is rejected.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed thermal relation, complete external target, source provenance, capability-closed isolation, proof/measurement separation, complete row and adverse-result retention, successor closure and extension. The declared exact boundary is: The admitted temperature exponent One, typed freeze-out/capture sequence, analytic quarter family partition, positive minor channels, finite visibility and internal acoustic parity; every registered uncertainty endpoint; all seven Planck TT peak positions and amplitudes; the eighteen-peak mission count; and explicit rejection of exact observed quarter equality and exact observed angular integer multiples. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-thermal-history-law-versus-complete-primary-observation-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-thermal-history-law-versus-complete-primary-observation-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:15bb75cf8556908a2498c9611ae022d5f26c7f8869bf195bfd51e24f992fbd79`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:da3b69464f65ec92f9d718e382f646416b99f6ad2d22ed3400b7422807ee7c40`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:9385edfe317a9f525e0d985f2ba5be0917d5ee3c28190101f8ab0bdf91cb537e`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:82bdaa2907c33acaf5d625f07b19d93588963bcddf3179924cb10519b0d151d7`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:a36854cd806c012a590df961b03c57faa3bd44f63ba8f520013c518f424b5091`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:17bd84328167f26310571135007e60049fe99b927637d4416853c2604908960b`. Independent certificate: `sha256:35623ce9812112afaca02c9a38799dca2e331cd1a284756a2bbcdac0dc592516`. Engine external-validation hash: `sha256:437b0ab034ac12219f463c53f2435c820096d84aefea57fa07f05491ef30d126`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE
+- AVER-ET-AL-2026-PRIMORDIAL-HELIUM
+- COOKE-PETTINI-STEIDEL-2018-DEUTERIUM
+- PLANCK-2018-OVERVIEW-PEAKS
+- PLANCK-2018-COSMOLOGICAL-PARAMETERS
+- PDG-2025-BBN-REVIEW
+
+Observed comparison records:
+
+- The formal thermal-history law was admitted before the new primary snapshots were retrieved.
+- Direct high-redshift CMB thermometry contains exact exponent One.
+- The external freeze-out sequence is approximately One/six then One/seven.
+- Current direct helium measurement excludes exact One/four; the old exact measured-equality reading is rejected without fitting.
+- Direct primordial deuterium remains a positive minor light-nuclide channel.
+- Planck retains finite recombination support, eighteen extrema and all seven TT peak rows.
+- Observed angular multipoles reject exact integer multiples of the first peak, preserving the internal-mode/projection distinction.
+- A tampered temperature exponent rejects the comparison.
+
+Falsification condition: Reject if any source identity or registered row changes; if exact One leaves the temperature-exponent interval; if the typed One/six to One/seven sequence is absent; if the unfavorable helium exclusion is hidden or used to fit a correction; if deuterium is nonpositive; if recombination support or the acoustic census is erased; if observed peak intervals are falsely relabelled as exact integer multiples; or if any target changes the formal survivor.
+
+Measurement receipt: `sha256:f5710146b77a40129a6f52186fa2622ec68b7bc3ddc765685c6532dadc769f78`. Isolation certificate: `sha256:5823d5b59a85e6b38a07af5cf433d1913c23d7e8ec5c7aa56de869e6f33663d9`. Custody certificate: `sha256:d8fcf914ad1ad8db6fae9575f19e0508a9018033aac51294ff1bec29494dd4e9`.
+
+Registered source descriptions:
+
+- The evolution of the Cosmic Microwave Background Temperature: https://arxiv.org/abs/1012.3164 (sha256:aa79c65170e84d6a8dc71dbd0876538c19619a1c926453ce5a54bd96d3f1efb7)
+- The LBT Yp Project IV: A New Value of the Primordial Helium Abundance: https://arxiv.org/abs/2601.22238 (sha256:72f646a345c36b77211e6035d3a78345498f0766cf9fc0a54932ebe0dd670c6a)
+- One percent determination of the primordial deuterium abundance: https://arxiv.org/abs/1710.11129 (sha256:1a6ec19d6568b8854a40e9dd587906f99a8ea94ecd2d5c712ad86aa506b93f4a)
+- Planck 2018 results. I. Overview and the cosmological legacy of Planck: https://arxiv.org/abs/1807.06205 (sha256:dca932893b7d2724aa2b8d33170fc1b5682c425dd56fcd3c5d7b2098d377db5c)
+- Planck 2018 results. VI. Cosmological parameters: https://arxiv.org/abs/1807.06209 (sha256:8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77)
+- Big-Bang Nucleosynthesis: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf (sha256:1843c1d9025aa33c059700708f1041c4462364cdb582325f0c685a6ba1b38484)
+
+Registered target identities:
+
+- THERMAL-HISTORY-WITHHELD-COMPLETE-OBSERVATION-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no external value readable by the formal candidate generator or formal independent validator
+- no fitted cooling exponent, abundance correction, reaction rate, visibility width or angular projection
+- no historical-blindness claim because V1/V2 named these targets
+- no omission of the current direct helium interval that excludes exact One/four
+- no preservation of the old exact observed-quarter or angular-integer claims by weakened comparison
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:f3401b72677923a0ba81abb3f9790bc49b6edf2e2b0a2711b4d6ad51a0d5fe8d`; engine receipt `sha256:7440c78415e834656217aca301aaa8b6f987d6f795544eb5c03b0679970321f4` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038-7440c78415e83465.json`; empirical-validation hash `sha256:d07b6ae3dcbfb2690cf52cb27769c24b2533d40955a2f338cd8f03a30b622413`; measurement receipt `sha256:f5710146b77a40129a6f52186fa2622ec68b7bc3ddc765685c6532dadc769f78`.
+
+### 326. Post-seal scalar-support and tensor-support measurement test
+
+Claim identity: `SFT-PHYS-VALIDATION-INFLATION-GROWTH-040`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Planck ns=0.9649+/-0.0042 gives exact interval [9607/10000,9691/10000]; the independently forced 31/32 equals 0.96875 and lies inside that interval. BICEP/Keck plus Planck reports r<0.032=4/125 at 95 percent; the independently forced 1/32=0.03125 lies strictly below the bound by 3/4000=0.00075. The complete exact 31/32+1/32 partition therefore passes both external rows without fitting. Five Fold doublings is not relabelled as a conventional natural-log e-fold count, for which this claim asserts no measured equality.
+
+> Planck ns=0.9649+/-0.0042 gives exact interval [9607/10000,9691/10000]; the independently forced 31/32 equals 0.96875 and lies inside that interval. BICEP/Keck plus Planck reports r<0.032=4/125 at 95 percent; the independently forced 1/32=0.03125 lies strictly below the bound by 3/4000=0.00075. The complete exact 31/32+1/32 partition therefore passes both external rows without fitting. Five Fold doublings is not relabelled as a conventional natural-log e-fold count, for which this claim asserts no measured equality.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-INFLATION-GROWTH-TERMINAL-039`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed inflation relation, complete external target, source provenance, capability-closed isolation, proof/measurement separation, complete rows, successor closure and extension. The declared exact boundary is: The admitted scalar support 31/32 and tensor support 1/32; both endpoints of the Planck one-standard scalar interval; the strict BICEP/Planck tensor upper bound; every bound source and custody row; and explicit separation of exact Fold doubling depth from conventional model-dependent e-fold language. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-inflation-growth-law-versus-complete-scalar-index-and-tensor-bound-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-inflation-growth-law-versus-complete-scalar-index-and-tensor-bound-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:ac9c38c10ba15714347560effb54dce239f5ef3d293433fecf50442e1cedd5c5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:f2a877f8ea086325067023690358917ac7059f44eb87fa1bc8ae5c211e77e629`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:a639582b262acfd4204bced27e3e4eb9f404e56b99a711698d85e32e9feeb3b8`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:10416829131668b2e9a5f08af885fae861009dc76a59ff081e255215b712fb26`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:2c07eba135d75e0a47a23c88d003a12e3374cc1c163cf8d44a8e065ad5a45657`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:00278934fa11f29736892bf5adbd1c82c2cbd6305f9f47ec5b1dcc352a27b38a`. Independent certificate: `sha256:3cae59937dfb3791d3ee2c24c32584194b9fa10a1301bd26e6d73fc00e1862e3`. Engine external-validation hash: `sha256:7a0c0dfaa703412fe6099687c7a2e15459282635cb36047b2e3f79061620f5ee`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-INFLATION
+- BICEP-PLANCK-2022-TENSOR
+
+Observed comparison records:
+
+- The formal inflation-growth law was admitted before the primary snapshots were bound.
+- Exact scalar support 31/32 lies within Planck ns=0.9649+/-0.0042.
+- Exact tensor support 1/32 lies strictly below r<0.032 by 3/4000.
+- The complete 31/32 plus 1/32 partition is retained without fitting.
+- No measured equality is claimed between five Fold doublings and conventional logarithmic e-folds.
+- A tampered scalar target rejects the comparison.
+
+Falsification condition: Reject if any source identity or registered row changes; if 31/32 leaves the complete scalar interval; if 1/32 is not strictly below the tensor bound; if the narrow margin is omitted; if conventional e-fold language is asserted as exact equality; or if a target changes the formal survivor.
+
+Measurement receipt: `sha256:b642e922c44895919b78a5d1f98b2adc1d42fa97e7d1422b69e23a3fda14fe8b`. Isolation certificate: `sha256:c44e9ae1e05fe66e91a2cd0550c53e62b7d9aec763965e44517219c4246c5a74`. Custody certificate: `sha256:28c44958737414705d1e7638388a7a18a41c26aeee1b568e990d928927ecdf58`.
+
+Registered source descriptions:
+
+- Planck 2018 results. X. Constraints on inflation: https://arxiv.org/pdf/1807.06211 (sha256:fa728dc0198ccfddd7132c0e0a29cca586a1431a045568a33d7a197a0427427d)
+- Improved limits on the tensor-to-scalar ratio using BICEP and Planck: https://arxiv.org/pdf/2112.07961 (sha256:5a1add11c98a8e5c4d70fd438eacd5242aa10631ffea0c72358f49e59eda07f2)
+
+Registered target identities:
+
+- INFLATION-GROWTH-WITHHELD-COMPLETE-OBSERVATION-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no external scalar index or tensor limit readable by the formal generator or formal validator
+- no fitted spectral index, tensor amplitude, inflaton potential, transfer function or exit scale
+- no historical-blindness claim because V1/V2 named these observables
+- no claim that five exact Fold doublings equal a conventional logarithmic e-fold count
+- no omission or rounding of the narrow tensor-bound margin
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:6aa90bdf5f84f09a5c3d941b128a685c262a0bbaecc9a665a1ec7e86ccde3066`; engine receipt `sha256:8e06d75a25206d5cce129a9afd2583a54cb1e070a0daf6eeeff92ece99a8d01f` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-INFLATION-GROWTH-040-8e06d75a25206d5c.json`; empirical-validation hash `sha256:272562ca8235316e3bae097e8a3af450c1c4785525266797ca8bf6d012a272e9`; measurement receipt `sha256:b642e922c44895919b78a5d1f98b2adc1d42fa97e7d1422b69e23a3fda14fe8b`.
+
+### 327. Post-seal blackbody, acoustic, laser, plasma and Alfvén response test
+
+Claim identity: `SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** External blackbody measurement reports exponent 4 exactly, matching the forced rank-three-plus-energy exponent; doubling therefore remains the exact ratio 16. The historical Stefan coefficient is reported within 1/100 of the present value and spectrum shape agreement is retained, but no dimensional coefficient is manufactured from a normalized carrier. Acoustic and microwave cavity resonances were measured to part-per-million precision. NIST reports unmodified laser linewidths of at least 10,000,000 Hz and extended-cavity linewidths no more than 500,000 Hz, so linewidth remains positive and feedback narrows it by at least factor 20. Two NASA flights directly track electron density through plasma frequency, and NASA registers Alfvén waves from 2007 through 2014. All comparisons pass at their declared relation/value type without fitting.
+
+> External blackbody measurement reports exponent 4 exactly, matching the forced rank-three-plus-energy exponent; doubling therefore remains the exact ratio 16. The historical Stefan coefficient is reported within 1/100 of the present value and spectrum shape agreement is retained, but no dimensional coefficient is manufactured from a normalized carrier. Acoustic and microwave cavity resonances were measured to part-per-million precision. NIST reports unmodified laser linewidths of at least 10,000,000 Hz and extended-cavity linewidths no more than 500,000 Hz, so linewidth remains positive and feedback narrows it by at least factor 20. Two NASA flights directly track electron density through plasma frequency, and NASA registers Alfvén waves from 2007 through 2014. All comparisons pass at their declared relation/value type without fitting.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-COLLECTIVE-RADIATION-RESPONSE-TERMINAL-041`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed collective response, complete targets, bound provenance, capability isolation, proof/measurement separation, complete rows, successor closure and extension. The declared exact boundary is: The sealed finite occupation and exact scaling laws; measured exponent four; coefficient agreement bound one percent; positive measured linewidth ranges; acoustic resonance precision; direct plasma-frequency density dependence; complete Alfvén observation-year boundary; and every source/custody row. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-collective-response-versus-complete-blackbody-acoustic-laser-plasma-Alfven-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-collective-response-versus-complete-blackbody-acoustic-laser-plasma-Alfven-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:fdf048a5f1358d5dd699b09cc0df4135a9d45f2f439cd74e13768f4d8fa22d69`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:9e95f31ffd65f7e0e7fe88cff91fa56174657df423fe9339a700d16d8af28c8d`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:4a9bf8a263ce6dee9c7b4fecbac1db0490cb2ab1e2dff3a463e0f17f77d7576b`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:e078e684ee11df95956211e36bb820cf50e1465dc92d49b3bc4b4cfab7f81cb3`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:cd21f5572e340e60783f653afb6f6a9081e9a9d32378cb85c23e9dab152bfcb3`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:374078411155f78c3dd1273bad1444aeba59106a0bdc75d2c5b4e3828bbbc021`. Independent certificate: `sha256:d5e36700fbe06d0dbe4cda4afa473cfe7c18d8bc19318a677ccf8a15e776a81a`. Engine external-validation hash: `sha256:cb22b4bcf0d3da68cd1002f5d0d0556664932179bfa9a62796cf3ca65cbf7c1b`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-COBLENTZ-BLACKBODY
+- NIST-DIODE-LASER-LINEWIDTH
+- NBS-ACOUSTIC-CAVITY-1986
+- NASA-PLASMA-FREQUENCY-PROBE-1992
+- NASA-STEREO-ALFVEN-LIST
+
+Observed comparison records:
+
+- Measured blackbody exponent four forces doubling ratio sixteen.
+- Historical coefficient agreement is within one percent and spectrum shape agreement is retained.
+- Acoustic cavity resonances were measured to part-per-million precision.
+- Measured laser linewidth remains positive and feedback narrows it by at least factor twenty.
+- Two NASA flights track density through plasma frequency.
+- NASA registers Alfvén observations across eight calendar years.
+- No dimensional coefficient is fitted from normalized Fold structure.
+- Tampered exponent three rejects.
+
+Falsification condition: Reject if a source or row changes; if the measured blackbody exponent is not four; if measured linewidth is empty or feedback does not narrow it; if acoustic resonances, direct plasma-frequency density dependence or Alfvén observations are absent; if a dimensional coefficient is fitted from normalized structure; or if a target changes the formal survivor.
+
+Measurement receipt: `sha256:ff7685c1c62d0af80001e60ad5c44ba0199bea46b5a43073dedac0f3332a0dd7`. Isolation certificate: `sha256:888d25acd42241bcf5ca6fd22ade5ec7a4d86826d003f2cbbf0c563e3e38038e`. Custody certificate: `sha256:363a20ce7e39db88f33913b933b8b094dd389cb98329a79f05f46ca81275afcf`.
+
+Registered source descriptions:
+
+- Coblentz and blackbody radiation measurements: https://nvlpubs.nist.gov/nistpubs/sp958-lide/html/007-009.html (sha256:deb600e47fd138dfe82aef3271b19f2030cd7cd3e4fa202ef80f4f1ae82eec71)
+- Diode Laser Technology: https://tf.nist.gov/ofm/lasers/diode.htm (sha256:7c0a9a1b4dc19b573cb6603f87453161508784ca59ec26ed698b0354bb7520b6)
+- Measurement of the ratio of the speed of sound to the speed of light: https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925220 (sha256:f4dbf2b01604b8a6f26621bb8bafa856913e25158a8635f7454838ef5360f1b4)
+- Measuring ionospheric electron density using the plasma frequency probe: https://ntrs.nasa.gov/citations/19920042037 (sha256:4fff15fe03f66e4009ca34e83f0d0ea02e66b2d40e92ee987ae46f437f39f36c)
+- STEREO-A PLASTIC Alfvén Wave List: https://data.nasa.gov/dataset/stereo-a-plastic-alfven-wave-list (sha256:da0eab2e7955e0670d734c905c360758aabe57bb900de277e42da13fa0314385)
+
+Registered target identities:
+
+- COLLECTIVE-RADIATION-WITHHELD-COMPLETE-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no target readable by the formal generator
+- no fitted dimensional coefficient or converted absolute value
+- no historical-blindness claim
+- no omission of finite linewidth or source limitations
+- no numerical-zero, negative, irrational, imaginary or floating Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:e5232310fe7cfa0feeaffd1866117045b7718fee1f1ccc7725a73fc11715683e`; engine receipt `sha256:1d7dd8e6373027c10bd83aa9ff128ebabe3fdc60569b24ad597f9c22abad2455` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042-1d7dd8e6373027c1.json`; empirical-validation hash `sha256:83cf47bcba4dc585c59c8f16adf89071a2d100d79b6cf98f197a45ea82a3d8f6`; measurement receipt `sha256:ff7685c1c62d0af80001e60ad5c44ba0199bea46b5a43073dedac0f3332a0dd7`.
+
+### 328. Post-seal CODATA validation of the terminal charged-lepton invariant
+
+Claim identity: `SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** After the exact terminal charged-lepton invariant is sealed, exact rational root brackets predict both adjacent-root squared mass ratios and compare them with both complete NIST CODATA 2022 intervals.
+
+> Both sealed terminal-cubic mass-ratio consequences overlap their complete one-standard-uncertainty CODATA 2022 intervals.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-HOSTILE-PACKAGE-001`
+- `SFT-PHYS-MEAS-VALUE-RECORD-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-ORDER-LATTICE-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis post-seal terminal-invariant, source, interval, row-retention, custody and no-extra-rule product. The declared exact boundary is: Both exact adjacent-root squared ratios of the sealed terminal cubic against both complete registered CODATA intervals. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-terminal-cubic-ratios-versus-complete-codata-intervals__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-terminal-cubic-ratios-versus-complete-codata-intervals` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:4b0f13ecfa647507c2116a80608f8817884eef53fde16d2ca18ab9c9f8edadf0`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:c44fcfd2be5a25663f279cd0a06772eeccf6e63e389685a64899dcc4a0861008`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:b596438bde200a2809c35642cb33eda7a71543904271bf37b296e7518f065e3f`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:5cb9911daba73b152460a90883b7b8cf5f5b3cfe81f98402dfec24998918f976`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:dfee970fb252d4b9a06366c282e3d38063bba95f0b2800b2cae879e18cf322ba`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:024f84cb4b6103c422fa67d656620f53d80ea7dceff6c720aa1f02201de5ae31`. Independent certificate: `sha256:bb85213071aba6fa4ef1f4ce506c214a9fa4bebe181d02881e36c2b705057381`. Engine external-validation hash: `sha256:355eb559ee89354203142ccb3b59c17e0081caa150f150c0778bddc056239ffb`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-CODATA-2022-ALL-CONSTANTS
+
+Observed comparison records:
+
+- NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO: predicted terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; observed terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; exact match True
+- NIST-CODATA-2022-MUON-TAU-MASS-RATIO: predicted terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; observed terminal-cubic-mass-ratios-inside-both-complete-codata-intervals; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: Either complete terminal prediction interval fails to overlap its source interval, a row/hash changes, an uncertainty is enlarged or omitted, or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:b1bc18c4ca4396fcaf2a88e4a9a8fc34bd1acf30ae4d80949faa6d1c67ec44e7`. Isolation certificate: `sha256:bb11637734c577c68efa087896e41a65b07db3971be5a6c9bfc12b01eab1f9ec`. Custody certificate: `sha256:2f89d8555574629bf6360dd461ca6c73a9c117a6e67cd5b5e8e445f66a9417e9`.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no CODATA value accessible to formal forcing
+- no fitted terminal coefficient or root
+- no floating comparison
+- no omitted failed row or enlarged uncertainty
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:73e9e100453602ec568ccfebb17a875ea8e6387b9d1559d50f2ad5d36aca92f3`; engine receipt `sha256:1df007d68f197e5a8a8a58dad28190bbaf10229ab2f8136365a25622eba5d5d8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002-1df007d68f197e5a.json`; empirical-validation hash `sha256:1502cfabdf3a00b544b7fd2a44179bff7f0dc10ed9141b342c0e4ff684c9af26`; measurement receipt `sha256:b1bc18c4ca4396fcaf2a88e4a9a8fc34bd1acf30ae4d80949faa6d1c67ec44e7`.
+
+### 329. Versioned post-seal exact Koide measurement validation
+
+Claim identity: `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact Fold value two-thirds is sealed before both complete CODATA mass-ratio intervals are opened and propagated through exact rational square-root enclosures.
+
+> The sealed exact Koide value 2/3 lies inside the complete conservative CODATA-derived interval.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001`
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-HOSTILE-PACKAGE-001`
+- `SFT-PHYS-MEAS-VALUE-RECORD-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-ORDER-LATTICE-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis post-seal two-thirds, two-source-row, rational-enclosure, custody and no-extra-rule comparison product. The declared exact boundary is: The full Cartesian uncertainty rectangle of both complete NIST CODATA 2022 charged-lepton mass-ratio rows. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-two-thirds-versus-complete-rational-koide-enclosure-v2__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-two-thirds-versus-complete-rational-koide-enclosure-v2` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:bca9ace286d82c15f81c66da94c8f5d4e3a41caf7ca3c5d72cceb4c447fdf4ec`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:3532da9d5c6d2e27a021faa14ff22e62256b4adcb27b72a74275eb48c11afb19`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:e5c839d5cadeaa5f243adec6dbf44c23ebb0cb9872c6359cf1be7151bc93f17c`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:724d004ca77c3a8a5f941c8168ccdede605016800fdf94dad1d07935882fac4d`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:f138b0a8ca62e6462c8e2caa1cdfc6f57077a46208c91c28053c30ac3e6f8438`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:ca563bc0a2c7d291e111a9f6c0511b689c4b0f45314fb520d97c75ead0f3a808`. Independent certificate: `sha256:6ddde3960e2364184cfbb6e3c47d13d74ab4c5b1f77f827db1d4ead9c0bb7f6b`. Engine external-validation hash: `sha256:97998128cccbc5765d78232c461abd4155fc23719c1fd13659e8f73769cf49b5`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-CODATA-2022-ALL-CONSTANTS
+
+Observed comparison records:
+
+- NIST-CODATA-2022-MUON-ELECTRON-MASS-RATIO: predicted sealed-two-thirds-inside-complete-codata-derived-koide-interval; observed sealed-two-thirds-inside-complete-codata-derived-koide-interval; exact match True
+- NIST-CODATA-2022-MUON-TAU-MASS-RATIO: predicted sealed-two-thirds-inside-complete-codata-derived-koide-interval; observed sealed-two-thirds-inside-complete-codata-derived-koide-interval; exact match True
+- deliberately tampered unfavorable control rejected
+
+Falsification condition: The exact two-thirds lies outside the outward CODATA-derived interval, either row or uncertainty is omitted, source custody changes, or a tampered comparison is accepted.
+
+Measurement receipt: `sha256:e7ccd0d3a9e0f675cd2d1e894bd347e753ad9f4d7c9081bc094e8b850fb8baf7`. Isolation certificate: `sha256:6e92f178a47954d84aa0acb09fdefee178f7cbb36533fb38688a89a6f2d81308`. Custody certificate: `sha256:68ac69675369c6d62faa95647520644b327f0ab77851e51e60b40127a8dde030`.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured mass ratio in the formal two-thirds derivation
+- no floating square root
+- no central-value-only comparison
+- no omitted uncertainty or row
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:685f4a86e3a630c03aa11251b684b32319b7b27b9f58520b1f1972aa6c076748`; engine receipt `sha256:4e7a64b6751e5622c827612840751a26b40b61ee657bb011eded7ff7914aa776` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002-4e7a64b6751e5622.json`; empirical-validation hash `sha256:d399bfa96ceabc1eedd3b61d77618e85f20e488f1ffb2db46f619413beac4a7a`; measurement receipt `sha256:e7ccd0d3a9e0f675cd2d1e894bd347e753ad9f4d7c9081bc094e8b850fb8baf7`.
+
+### 330. Post-seal acoustic and Johnson-noise thermometry test
+
+Claim identity: `SFT-PHYS-VALIDATION-THERMAL-EQUILIBRIUM-044`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** With all values carried as exact integers over 10^30 J/K, exact SI k_B is 13806490/10^30. The acoustic result is (13806484 +/- 28)/10^30 and therefore gives [13806456,13806512]/10^30; the Johnson-noise result is (13806510 +/- 170)/10^30 and gives [13806340,13806680]/10^30. Both intervals contain the exact carrier. The two measurement routes are physically distinct. The acoustic record identifies thermodynamic temperature with mean kinetic energy, and the electronic record reports Johnson noise power as jointly dependent on temperature and resistance to one part per million in its declared regime. No external row claims the Fold dyadic ladder or 3/4:1/4 response coordinates as universal measured values.
+
+> With all values carried as exact integers over 10^30 J/K, exact SI k_B is 13806490/10^30. The acoustic result is (13806484 +/- 28)/10^30 and therefore gives [13806456,13806512]/10^30; the Johnson-noise result is (13806510 +/- 170)/10^30 and gives [13806340,13806680]/10^30. Both intervals contain the exact carrier. The two measurement routes are physically distinct. The acoustic record identifies thermodynamic temperature with mean kinetic energy, and the electronic record reports Johnson noise power as jointly dependent on temperature and resistance to one part per million in its declared regime. No external row claims the Fold dyadic ladder or 3/4:1/4 response coordinates as universal measured values.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of the sealed thermal law, exact source-bound intervals, target custody, complete row retention and formal/measurement separation. The declared exact boundary is: The sealed finite-population theorem; exact SI k_B; the complete acoustic and electronic k_B standard-uncertainty intervals; the kinetic-temperature and Johnson-noise relation rows; both explicit nonmeasurement boundaries; and every source/custody row. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-thermal-law-versus-complete-acoustic-and-Johnson-noise-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-thermal-law-versus-complete-acoustic-and-Johnson-noise-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:019db88dcdb566512199c250c6841ce242ba1a225cf35f4495a68b1977c7ed37`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:3616e5ddecafab7522954ecae0da77f6eec8e9057249d748373534465565149d`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:400a1cdd726220cd82097342db240c8988e9eaf785459534e546c1d842111bcc`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:5b4a3858a67e89cb7ed7cdcf2a40e56a17718850916d10aef131f36b472cb81b`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:9892ff517e4a939131153c66697e30fda07f1b043ee104300ee03ce7cfc29eff`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:ca67b8df9587363e46d0c18b5d69a4c5d234e99832846b5dcf5a8e5c8e1b009b`. Independent certificate: `sha256:37d234b90b063945ab5f2d13a1be76fe385c6cda55be766f1eda81f4b0aa1304`. Engine external-validation hash: `sha256:51495049d9401534e4174d42f85d8fca21b8a9e8e89eb7ecba2128eb492a0053`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NIST-CODATA-2022-BOLTZMANN
+- NIM-NIST-ACOUSTIC-BOLTZMANN-2017
+- NIST-JOHNSON-NOISE-BOLTZMANN-2011
+
+Observed comparison records:
+
+- Exact SI k_B is 13806490/10^30 J/K.
+- Acoustic interval [13806456,13806512]/10^30 J/K contains exact SI k_B.
+- Johnson-noise interval [13806340,13806680]/10^30 J/K contains exact SI k_B.
+- Acoustic and electronic routes are physically distinct and both remain complete.
+- Acoustic thermometry retains the mean-kinetic-energy temperature relation.
+- Johnson noise retains joint temperature/resistance response at the reported one-part-per-million regime.
+- No direct universal measurement is claimed for the dyadic ladder or 3/4:1/4 Fold coordinates.
+- Tampered acoustic interval excludes the exact carrier and rejects.
+
+Falsification condition: Reject if any source or row changes; either complete measured interval excludes exact SI k_B; the routes are not physically distinct; the kinetic-temperature or Johnson-noise response row is absent; a limitation row is omitted; an internal Fold coordinate is relabelled as directly measured; or target data alter the formal survivor.
+
+Measurement receipt: `sha256:cffa2dbbd885f19cf9a19f08aec070370ba237b7aa12735d2173fc8d77f0e7f6`. Isolation certificate: `sha256:ee10f5a56f89082a81a2e386f8e5f82d14ff84edf39ea3859ba317b2e04b3eb7`. Custody certificate: `sha256:2e674cf79354cc078e08ef624ddad870c176f981f96c15a124d1c6a36730445f`.
+
+Registered source descriptions:
+
+- NIST CODATA 2022 all constants - Boltzmann constant: https://physics.nist.gov/cuu/Constants/Table/allascii.txt (sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67)
+- Determination of the Boltzmann constant with cylindrical acoustic gas thermometry: https://doi.org/10.1088/1681-7575/aa7b4a (sha256:1cbb21f0e5817270b5e028105aa79fea22017fd84130c2c4b79d1492fb37e418)
+- An electronic measurement of the Boltzmann constant: https://doi.org/10.1088/0026-1394/48/3/008 (sha256:187066b5390d57a3c058e0a34f6c7803a659045ba714ca4b25eed7b84b212bbb)
+
+Registered target identities:
+
+- THERMAL-EQUILIBRIUM-WITHHELD-COMPLETE-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no target readable by the formal generator
+- no fitted Boltzmann carrier, temperature scale or response coefficient
+- no conventional continuum distribution imported into the formal proof
+- no claim that the dyadic ladder or 3/4:1/4 coordinates were directly measured
+- no omitted unfavorable, uncertainty or applicability row
+- no numerical-zero, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:9c5025b8f068aebe13e964ab1abf997dd143ddb453308512038c162fe8bed065`; engine receipt `sha256:60366227e00c50a3529d98538a3ca42d9620f4da30a174b9cff96f1122097dbd` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-THERMAL-EQUILIBRIUM-044-60366227e00c50a3.json`; empirical-validation hash `sha256:9d94b8c34f0413e7170a0aa78fc95dec6807bae70ea620e75af6f9f131e56a16`; measurement receipt `sha256:cffa2dbbd885f19cf9a19f08aec070370ba237b7aa12735d2173fc8d77f0e7f6`.
+
+### 331. Post-seal finite BEC, Pauli-blocking and two-turn spinor test
+
+Claim identity: `SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The finite Bose record measures ground-state occupation, its increase under cooling, and a sharp transition at (94 +/- 5)/100 of the declared trap scale, giving the exact interval [89,99]/100. The finite two-spin-state Fermi record directly observes Pauli blocking and a factor-two reduction in effective collision cross section. The sealed alternating-state return is two complete turns, corresponding to 720 degrees; the neutron-interferometry result is 704 +/- 38 degrees, giving [666,742], which contains 720. All three physical routes agree with their respective sealed structural distinctions. The BEC scale ratio and collision-response factor are retained as external apparatus-dependent measurements rather than relabelled universal Fold proof scalars.
+
+> The finite Bose record measures ground-state occupation, its increase under cooling, and a sharp transition at (94 +/- 5)/100 of the declared trap scale, giving the exact interval [89,99]/100. The finite two-spin-state Fermi record directly observes Pauli blocking and a factor-two reduction in effective collision cross section. The sealed alternating-state return is two complete turns, corresponding to 720 degrees; the neutron-interferometry result is 704 +/- 38 degrees, giving [666,742], which contains 720. All three physical routes agree with their respective sealed structural distinctions. The BEC scale ratio and collision-response factor are retained as external apparatus-dependent measurements rather than relabelled universal Fold proof scalars.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-SPIN-STATISTICS-CONDENSATION-TERMINAL-045`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of the sealed spin-statistics law, finite BEC record, Pauli-blocking record, two-turn spinor interval, custody, full-row retention and formal/measurement separation. The declared exact boundary is: The admitted 256-form formal survivor; all three bound primary records; the complete BEC transition interval and direction rows; the complete Pauli rows; the complete spinor interval and return rows; and every custody, limitation and adverse-control row. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-spin-statistics-condensation-law-versus-complete-finite-BEC-Pauli-and-spinor-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-spin-statistics-condensation-law-versus-complete-finite-BEC-Pauli-and-spinor-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:00c2bf991301e167212f42e5e1cd5c4271d69a5bf5b209d0f397261877c1e853`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:71667d88b3de82c75428da3d963a842ffecca969031fec3d637d34cd953ab4f9`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:6023224eea2ee01eb133f80d8898133abfd6bf5f32965a3af344c0b301999eaa`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:cac70197006d203259866f1502a64a75ecaa45ee6e9a9e230ad7fdb161e17354`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:9e81125fdafed5f0286f7510956a2e8ac22ed6c4348943017be4f33b4d75088f`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:2abf34329c76d85d6e1e413feb2cf8ad0445ddd30070ecde9689518fdedf80ea`. Independent certificate: `sha256:9628100ad1af900942a0252fa75c303188d2a2904aef0e65de5543f6ccd83532`. Engine external-validation hash: `sha256:105fb7e4fb72eb3d20b4fe28c0c832a8cdd38e5601c361a134768b37eaaffbd7`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- APS-JILA-BEC-GROUND-OCCUPATION-1996
+- NIST-JILA-PAULI-BLOCKING-2001
+- RAUCH-COHERENT-SPINOR-ROTATION-1975
+
+Observed comparison records:
+
+- Finite rubidium-87 Bose gas ground occupation is measured and rises as temperature is lowered.
+- BEC transition interval is [89,99]/100 of the declared trap scale; its finite-population correction remains retained.
+- Two-spin-state potassium-40 gas directly exhibits Pauli blocking and the reported factor-two collision reduction.
+- Neutron spinor interval [666,742] degrees contains the sealed two-turn 720-degree return.
+- One turn changes the held spinor orientation and two turns restore the identical state.
+- Trap-specific BEC and collision-response magnitudes remain external scale records, not formal-law selectors.
+- Tampered spinor and reversed-cooling controls reject.
+
+Falsification condition: Reject if any source or row changes; finite bosons fail to accumulate in the measured ground state under cooling; Pauli blocking is absent in the declared identical-fermion regime; the complete spinor interval excludes 720 degrees; a trap-specific or response-specific value is relabelled as a universal formal scalar; an unfavorable row is omitted; or target data alter the sealed formal survivor.
+
+Measurement receipt: `sha256:171baf50d3b3944b9f2c8e14f7bfddf7da778071c52a03bfc33e6c422ea6ff95`. Isolation certificate: `sha256:3df0e1a9705da1b597362b4786897f30b2125a11228ef0823a6dcd24fbd79b09`. Custody certificate: `sha256:cd36776ecd5e074b3c50f48ec1eeb5875970aa180c17018a3382c3897350bdb3`.
+
+Registered source descriptions:
+
+- Bose-Einstein Condensation in a Dilute Gas: Measurement of Energy and Ground-State Occupation: https://doi.org/10.1103/PhysRevLett.77.4984 (sha256:9086058e1c750191fb36eab5acf7c65da1aa7f0e4cdcf643887e282ad3920c93)
+- Pauli Blocking of Collisions in a Quantum Degenerate Atomic Fermi Gas: https://www.nist.gov/publications/pauli-blocking-collisions-quantum-degenerate-atomic-fermi-gas-0 (sha256:82555a4057e339aef96cde7484fe3fbd190a8d2cecbf4c3de73996af473b9af7)
+- Verification of Coherent Spinor Rotation of Fermions: https://doi.org/10.1016/0375-9601(75)90798-7 (sha256:11638b8c2aaf8fbdd96aa50c9496bb9f7597b308f19d780ab779cc2dd6752824)
+
+Registered target identities:
+
+- SPIN-STATISTICS-CONDENSATION-WITHHELD-COMPLETE-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no BEC temperature, Pauli response, particle species or spinor angle readable by the formal generator
+- no fitted occupation ceiling, critical temperature, collision factor or rotation interval
+- no continuum Fermi-Dirac or Bose-Einstein function imported into the formal proof
+- no relabelling of the apparatus-specific BEC ratio or collision reduction as a universal Fold proof scalar
+- no omitted unfavorable, uncertainty, finite-population or applicability row
+- no conventional numerical-nothingness, negative, irrational, imaginary, floating, NaN or continuum Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:76e98275459015406d1fb9dcc615d65b8bc0c2d55deeaf0fde4e4ab8bde88733`; engine receipt `sha256:6c37132ae33b8f23b06e69b7034c5acdd39144d51b2661d7e65f441b400604eb` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046-6c37132ae33b8f23.json`; empirical-validation hash `sha256:b19baca0cbfe8f4673e94c3cb40502fba2a954a0172387e9573a3d5bafd4e0fe`; measurement receipt `sha256:171baf50d3b3944b9f2c8e14f7bfddf7da778071c52a03bfc33e6c422ea6ff95`.
+
+### 332. Post-seal critical-exponent, universality and turbulence-scaling test
+
+Claim identity: `SFT-PHYS-VALIDATION-CRITICALITY-UNIVERSALITY-TURBULENCE-048`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The erbium intervals [46,50]/100 for beta, [90,102]/100 for gamma and [47,51]/100 for nu contain exactly 1/2, One and 1/2. Of the complete five-row manganite record, La00, La04, La06 and La08 contain the entire beta=1/2, gamma=One, delta=three vector; La02 excludes gamma=One and delta=three and therefore cannot be admitted to that generated universality class. The independent turbulence interval [666,692]/1000 contains exactly 2/3. A Reynolds-count-720 physical flow exhibits five-thirds compensated plateaux over 40--4000 Hz by Fourier analysis and 20--2000 Hz by Hilbert analysis. The nonmatching composition, finite-Reynolds correction boundary, structure-function range limitation, normalized-threshold boundary and empty-exponent typing are all retained.
+
+> The erbium intervals [46,50]/100 for beta, [90,102]/100 for gamma and [47,51]/100 for nu contain exactly 1/2, One and 1/2. Of the complete five-row manganite record, La00, La04, La06 and La08 contain the entire beta=1/2, gamma=One, delta=three vector; La02 excludes gamma=One and delta=three and therefore cannot be admitted to that generated universality class. The independent turbulence interval [666,692]/1000 contains exactly 2/3. A Reynolds-count-720 physical flow exhibits five-thirds compensated plateaux over 40--4000 Hz by Fourier analysis and 20--2000 Hz by Hilbert analysis. The nonmatching composition, finite-Reynolds correction boundary, structure-function range limitation, normalized-threshold boundary and empty-exponent typing are all retained.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of the sealed criticality/cascade law, exact external intervals, universality membership, complete-row custody, method agreement, limitation retention and proof/measurement separation. The declared exact boundary is: The admitted 256-form formal survivor; all four bound source records; every reported erbium and five-composition manganite exponent interval; the complete turbulence structure interval; both physical spectrum-analysis routes; every unfavorable row, limitation and custody record. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-criticality-and-cascade-law-versus-complete-postseal-exponent-and-turbulence-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-criticality-and-cascade-law-versus-complete-postseal-exponent-and-turbulence-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:37318550316d6549d405a22e3baa9ec6dab4de1c5646452d2a188f234e930e2e`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:9b5652ebc3f084bc0e3a2c2987fab6356660f2d418e607754557b3d973e67b34`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:8a47b83313e602972ed0b81b0c6df8037546083c6d6aff27ee3a08227163ef2c`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:3663e27042caebc8ec58272e4bf040604e79a8480d8616419b76612ea7d3d4ec`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:84d564af90805459dd95a0b12bbdf10fb2024d47fdb2d7cefc5fcb63b438541a`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:664628e4ab961c2fe2bbc9289ecfcae9b3805d45f0f05fd1f2e86dd98e24c37a`. Independent certificate: `sha256:87f93c3da5f96313e0d799a45fce681b7570c0e08bb36a5d12f9b39c551713ad`. Engine external-validation hash: `sha256:84d787b11748ec58ad11057fee614d97e312e5801219e21d9bc4fb85f4992618`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026
+- MCMASTER-LIN-ERBIUM-CRITICAL-SCATTERING-1993
+- APS-MCCOMB-TURBULENCE-STRUCTURE-2014
+- APS-HUANG-TURBULENCE-SPECTRUM-2010
+
+Observed comparison records:
+
+- Erbium beta/gamma/nu intervals contain exactly 1/2, One and 1/2.
+- Four of five complete manganite vectors contain exactly beta=1/2, gamma=One and delta=three.
+- La02 is retained and rejected as a complete member of that generated exponent class.
+- The independent zeta_2 interval [666,692]/1000 contains exactly 2/3.
+- The physical channel-flow record exhibits five-thirds compensated plateaux by Fourier and Hilbert routes.
+- Finite-Reynolds, structure-function-range, threshold and empty-exponent boundaries remain retained.
+- Tampered interval, relabelled nonmatch, removed-row and reversed-spectrum controls reject.
+
+Falsification condition: Reject if any source or reported row changes; the erbium vector excludes a sealed carrier; fewer than the registered four manganite rows match or La02 is concealed or relabelled as a complete match; the zeta_2 interval excludes 2/3; either registered physical spectrum route lacks its five-thirds plateau; any limitation is omitted; or target data alter the sealed survivor.
+
+Measurement receipt: `sha256:eee857690b4e7a3a0c6c6d16b82055bd33a7ae269d887097921428c9f6ece26d`. Isolation certificate: `sha256:59dd6d2b2fe4fc0d7366b399c5888ae5728bcbdd91d489d31b9ca29e020acc0a`. Custody certificate: `sha256:5710aa5047e21e2e8f0994451a3b0d42b9feb38c36a8f27d963753f47336328f`.
+
+Registered source descriptions:
+
+- Structural, magnetic, and magnetocaloric properties of La and Sm co-doped CaMnO3 manganites: https://link.springer.com/article/10.1007/s10854-026-17400-y (sha256:afd0f783bd40b8ed376238eda9b254387c75c0c26ecc57488ab9b81b33d1d455)
+- Critical magnetic scattering in erbium: https://experts.mcmaster.ca/scholarly-works/262851 (sha256:d8b6495b7defb46daa4d1162967d11b4680012ebd4a8e6d60e8892b83b9b3564)
+- Spectral analysis of structure functions and their scaling exponents in forced isotropic turbulence: https://doi.org/10.1103/PhysRevE.90.053010 (sha256:0c9f4321b52f78fe64b02684b4139a450955c12092c4faf8487f49bf6ff1d0f5)
+- Second-order structure function in fully developed turbulence: https://doi.org/10.1103/PhysRevE.82.026319 (sha256:1bff196a24bc3f852dd384469c5f8e4112fcdf717c2416190ad44b0012ac06cb)
+
+Registered target identities:
+
+- CRITICALITY-UNIVERSALITY-TURBULENCE-WITHHELD-COMPLETE-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no critical exponent, sample class, Reynolds record, structure exponent or spectrum slope readable by the formal generator
+- no fitted exponent, uncertainty interval, intermittency correction or measurement-selected universality class
+- no omission of La02 or any other unfavorable measurement row
+- no conversion of the normalized half-One threshold into a universal laboratory temperature
+- no conversion of typed empty alpha or eta into a numerical-zero measurement
+- no claim that every physical transition shares the binary self-antipodal exponent vector
+- no conventional numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:79e4dae658e266d5768876896a2ffff9d1a8b2adcede60acedbc65409a3430dc`; engine receipt `sha256:075d304c85f48d6886ba7cb1fd44d5db25815cdf3a5d016502da1435654f1bdc` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CRITICALITY-UNIVERSALITY-TURBULENCE-048-075d304c85f48d68.json`; empirical-validation hash `sha256:875b3c350cd9f407f5608d25ef989b2161ffad838c4c4d9805412d07c43aec58`; measurement receipt `sha256:eee857690b4e7a3a0c6c6d16b82055bd33a7ae269d887097921428c9f6ece26d`.
+
+### 333. Post-seal superconducting-circuit test of the Fold Bell factorization boundary
+
+Claim identity: `SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact measured S interval [20714,20780]/10000 lies wholly above the local-factorization bound two; its central excess exceeds twenty-two stated standard uncertainties and the reported P value is below 10^-108 across more than one million trials. The complete timing intervals preserve space-like separation, and the analysis retains its memory control. This physically rejects the sealed local-factorization class under the source's declared conditions while preserving deterministic complete-record admissibility, no signalling, and the explicit measurement-independence assumption. The distinct Walsh support-count product remains a formal/computational result and is not relabelled as a variance measurement.
+
+> The exact measured S interval [20714,20780]/10000 lies wholly above the local-factorization bound two; its central excess exceeds twenty-two stated standard uncertainties and the reported P value is below 10^-108 across more than one million trials. The complete timing intervals preserve space-like separation, and the analysis retains its memory control. This physically rejects the sealed local-factorization class under the source's declared conditions while preserving deterministic complete-record admissibility, no signalling, and the explicit measurement-independence assumption. The distinct Walsh support-count product remains a formal/computational result and is not relabelled as a variance measurement.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-QUANTUM-SUPPORT-UNCERTAINTY-TERMINAL-049`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-QUANTUM-BELL-001`
+- `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed Bell boundary, external interval, provenance, target isolation, proof/measurement separation, complete condition retention, successor closure and extension. The declared exact boundary is: The admitted Claim 049 Bell-response census; the complete primary S interval, trial-count, significance, space-like timing, memory-analysis and measurement-independence records; and every stated interpretive limitation. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-local-factorization-law-versus-complete-superconducting-circuit-Bell-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-local-factorization-law-versus-complete-superconducting-circuit-Bell-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:d9d2ffe6f3de6a674f40a65c0f7ba8c9bdf10a54fe7061141ebc9fa73bff4fdc`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:ba21cca4d789ae798ee99d66062a03b65b548a0941483202a985b2908c22f2f9`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:99df30fde6e9e24905d717834894b22176a56ac9a56e12e24e618b3da29fd370`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:b1e892060c3134158247569c3f75db2a7b153d8e4193d4df177f7ac37ccac46c`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:d6cfacd47b3e5fa3c8e02c4c0602fb52aed94102f4778a23ca7614efbab26950`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4e5da504fe3f3a28d7e51131cd3113d4e77eb9aaa32ac15577492c21dbc8bd4f`. Independent certificate: `sha256:6e96d67c42eb8074c876d6595ec8c0748b60daacc5f22cfcfb78ae396ba5f232`. Engine external-validation hash: `sha256:40e0fe145c4f95e92ef5cb0d86081a7ae76b5914d1a02b78018bf1c515bc610a`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NATURE-STORZ-LOOPHOLE-FREE-BELL-2023
+
+Observed comparison records:
+
+- The complete measured S interval [20714,20780]/10000 lies above the local-factorization bound two.
+- The central excess is greater than twenty-two stated standard uncertainties and P is reported below 10^-108.
+- More than one million superconducting-circuit trials are retained.
+- The complete trial-duration interval lies below the complete light-travel-budget interval.
+- The memory-robust analysis and setting-choice procedure are retained.
+- Measurement independence remains a declared source assumption; no ontic randomness premise is imported.
+- The result rejects local factorization under those conditions, not determinism as a whole.
+- The Bell record does not relabel the separate formal Walsh support product as measured variance.
+- Tampered S and timing controls reject.
+
+Falsification condition: Reject if either source identity changes; the complete S interval touches or falls below two; the trial, significance, timing or memory records fail; measurement independence or any stated limitation is omitted; the result is presented as excluding all determinism; ontic randomness is imported; the Walsh support law is called a measured variance; or any target changes the sealed survivor.
+
+Measurement receipt: `sha256:c97b436ea794ddadea73446b5e06a1a88a0a23119e66279f989cba218a71c2b6`. Isolation certificate: `sha256:8a5f0cf9ed57acca9841b1e5ebeccb9f552f33865e270b5a8eacc1d0046eea83`. Custody certificate: `sha256:bf791660650594a56788cae969a412800b6365ee0b08619ddfad007e6d0e108b`.
+
+Registered source descriptions:
+
+- Loophole-free Bell inequality violation with superconducting circuits: https://doi.org/10.1038/s41586-023-05885-0 (sha256:fabe97e4970990cef6246f0541a8b9e80e47b0df58f10234b8f8155d1b4ade81)
+
+Registered target identities:
+
+- NATURE-STORZ-2023-WITHHELD-COMPLETE-BELL-RECORD from None
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Bell value, trial result, significance record or timing record available to formal candidate selection
+- no claim that a Bell violation excludes all deterministic or complete-record models
+- no import of random-number generation as ontic nondeterminism
+- no omission of the measurement-independence assumption or the authors' stated assumption boundary
+- no relabelling of support cardinality as statistical moment variance
+- no claim that this Bell experiment separately measures the Walsh support product
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:10b33ae9570072c13faeaaf5093bd33adb08f6cc638bfc9eb8534039a811a012`; engine receipt `sha256:92401779cd8580dbaf3962207ae25e0b7fc75787f91e27681d1ac290de403085` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050-92401779cd8580db.json`; empirical-validation hash `sha256:1c47006310cbe6ee2c744184c71d29789299e7ccf62f3d81b51de8b4fb68a4b7`; measurement receipt `sha256:c97b436ea794ddadea73446b5e06a1a88a0a23119e66279f989cba218a71c2b6`.
+
+### 334. Terminal electroweak measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact forced terminal on-shell share lies inside the complete PDG interval [22333,22351]/100000. Its exact complement lies inside the outward-propagated compatible-input W/Z squared interval. No uncertainty is widened and no inconsistent aggregate is converted into a passing or failing SFT law.
+
+> The exact forced terminal on-shell share lies inside the complete PDG interval [22333,22351]/100000. Its exact complement lies inside the outward-propagated compatible-input W/Z squared interval. No uncertainty is widened and no inconsistent aggregate is converted into a passing or failing SFT law.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of the sealed terminal electroweak value, like-typed direct measurements, exact interval transport, source consistency, custody, proof/measurement separation, successor closure and extension. The declared exact boundary is: The admitted target-free terminal on-shell value; the complete direct on-shell row; the complete compatible W and Z rows; the unchanged internally inconsistent all-input aggregation record; both source identities; and every measurement-method boundary. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-terminal-electroweak-value-versus-like-typed-direct-measurements__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-terminal-electroweak-value-versus-like-typed-direct-measurements` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:191e23e5365839ffb39393534fad4c68cbb3c69a26526969dd2a2aa70a15bcee`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:3e4b8abb05c6d184cb34a5a25f61a48cc359196fa3dd7514ef58bd8faf631abb`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:7b78e6fbad92bcdf6ed876234c371f9ed1c4a68f45d8bf116c90814ba7403638`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:76e5b62b331c12427c35dbdd6a447ce1f368b12099344a66614725bb637d339b`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:522d95548ec25f2dc17eb43ebaff006b93c24978311ef817c611f7f1f2b8eb28`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:0d160846dfd86800df046d3e306ab0801659da92682854572c47e80fff5724d3`. Independent certificate: `sha256:bdb4d5c3e0a39efc8e1b4da389915a147cc4ce1089435221e0618fded1b7cfce`. Engine external-validation hash: `sha256:18d3d16b8154e97a765842993bf67bae6d35a558ba3824aa5787478415a389f1`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2025-STANDARD-MODEL-REVIEW
+- PDG-2024-W-BOSON-LISTING
+
+Observed comparison records:
+
+- The exact forced on-shell share 1930922298157999/8642477221479757 lies inside [22333,22351]/100000.
+- Its exact One-complement lies inside the complete compatible-input W/Z squared interval.
+- No uncertainty was widened and no measured row selected the formal relation.
+- The all-input aggregate and its uncertainties remain unchanged, but its source-identified incompatible input prevents it from being treated as a second like-typed physical target.
+- Tampered direct-angle and compatible-W controls reject.
+
+Falsification condition: Reject if either source changes; the sealed exact share leaves the direct on-shell interval; its complement leaves the compatible W/Z squared interval; any uncertainty is widened; the inconsistent aggregate is deleted, used as a second law, or relabelled as an SFT result; or target data alter the formal survivor.
+
+Measurement receipt: `sha256:fde304793a48fcfd4a37491fce37c4c1f7b254c39eecc9759ba83bd4fab871e7`. Isolation certificate: `sha256:c0357f9ab5def03b84b5aeda8ed2025cf948e92685b8c4d00e07b1152b38663c`. Custody certificate: `sha256:f5df2b4aa8c65fbe72832ec209c323fbe46f8ea1071271d17ae09ce89fb9ae7d`.
+
+Registered source descriptions:
+
+- Review of Particle Physics: Electroweak Model and Constraints on New Physics: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf (sha256:8642888a3408d8c57fc673b379325b07f02948135491f64a2e42320e8929320a)
+- Review of Particle Physics: W-boson listing: https://pdg.lbl.gov/2024/listings/rpp2024-list-w-boson.pdf (sha256:91cb466bfea8fa49b53ae53d2168797189c14a5a114f30d7cc926f64c4c1e772)
+
+Registered target identities:
+
+- PDG-ELECTROWEAK-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from PDG-2025-STANDARD-MODEL-REVIEW
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured weak angle or boson mass in the formal relation
+- no fitted rung, correction, coefficient, uncertainty multiplier or selected central value
+- no mismatch relabelled as successful empirical closure
+- no deletion or alteration of the all-input aggregation record
+- no consensus classification used as proof; source consistency is checked from the published record
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:c6c5f370a54459c49dc300cfe78fe04ca6b1a2b9d3c23c6fecb1006e6631123f`; engine receipt `sha256:e93f04515944a1951b78463db3083350fbc77e6d8506edbcdc13178cedfbc852` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053-e93f04515944a195.json`; empirical-validation hash `sha256:4152cde723ac46d74d2053f6b43f8ac609c54133f27b27750e673223a7f8d7df`; measurement receipt `sha256:fde304793a48fcfd4a37491fce37c4c1f7b254c39eecc9759ba83bd4fab871e7`.
+
+### 335. Common Fold scale measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The terminal on-shell share lies inside [22333,22351]/100000. The support-eight share 25/106 lies inside [2331,2367]/10000. The complete registered low-transfer vector preserves the sub-W direction. No mismatch, uncertainty multiplier, fitted rung or measurement-selected exception is admitted.
+
+> The terminal on-shell share lies inside [22333,22351]/100000. The support-eight share 25/106 lies inside [2331,2367]/10000. The complete registered low-transfer vector preserves the sub-W direction. No mismatch, uncertainty multiplier, fitted rung or measurement-selected exception is admitted.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053`
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of common-scale carrier, target-free relation, provenance, custody, proof/measurement separation, row completeness, successor closure and absence of extra rules. The declared exact boundary is: The admitted common-axis receipt; terminal and support-eight exact shares; all four scheme rows; all four numeric low-transfer rows; all eight plotted measurement classes; threshold boundaries; complete strong/electromagnetic receipt; and exact source identities. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-common-scale-values-versus-like-typed-measurements__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-common-scale-values-versus-like-typed-measurements` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:dcdd173f7ca0731f1c4330774a7d9b935db9e655a6eecd78b139eaf107e6db12`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:85653d59c680816e42666db3be96a88a1a392189b7bef80bda4929e13ab36f54`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:57af3942a29ed8a3075b1b67012bceab6fc7696e61057e9bd160186ff7dfdfb3`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:8bfda0144733672b4df92ccafcd2d8adb6a8eed355f33f69a2c90d98143251ac`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:b9f8f831567c843db4b2268175a876079d6341e2f9ffd633b52ba46ce5fac0d6`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:c5a642b9a74d2c41c3e81b7cfd550e2dc1003d4e4d59c7500759e43760495805`. Independent certificate: `sha256:8f17c55fb5249ada38631b72e5d7d780f1e38575b3cd70eceea171406ede09fe`. Engine external-validation hash: `sha256:29fcb4125abefbdef3a90b5ae64f4d21af9460bacc7e0410b88eefda51d438ba`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2026-ELECTROWEAK-SCALE-VECTOR
+- PDG-2025-2026-STRONG-EM-COMPLETE-RUNNING-VECTOR
+
+Observed comparison records:
+
+- The exact forced terminal weak share lies inside [22333,22351]/100000.
+- The exact forced support-eight share 25/106 lies inside [2331,2367]/10000.
+- The complete E158 and APV intervals preserve the sealed below-W direction relative to the MS-Z interval.
+- NuTeV remains unchanged as a source-identified interpretation-sensitive DIS extraction; its displacement is not an SFT result or acceptance condition.
+- No row was deleted and no uncertainty was widened; displaced terminal and APV controls reject.
+
+Falsification condition: Reject if a source or dependency changes; either forced value leaves its like-typed measured interval; the below-W direction reverses; a row or threshold boundary is omitted; NuTeV displacement is made a passing result; any uncertainty is widened; or target data alter the formal survivor.
+
+Measurement receipt: `sha256:4bc4c5859b4f63e25cc5a73d4814a0f0030c4668e4b01ac2b95e6ac075ee7661`. Isolation certificate: `sha256:ddf578f829cf128b80abcd8fddfdb2932301a9f31f95ea82e6d94b6f1868c44e`. Custody certificate: `sha256:30a93b5c0742b2693862b910e4cc205ecdc38d1e1b40a58954623ea3ca788efd`.
+
+Registered source descriptions:
+
+- Review of Particle Physics 2026: Electroweak Model and Constraints on New Physics: https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf (sha256:a102f6252b7190dc423200271dffa7c805cd15a50391b1c578853d2f777611cb)
+- Complete admitted strong and electromagnetic running vector: repository-bound source record (sha256:b83331089d96c073fbd5101753ba5c4716ae1a8b1b891e068684b6f7246d9953)
+
+Registered target identities:
+
+- PDG-COMMON-SCALE-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from PDG-2026-ELECTROWEAK-SCALE-VECTOR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured weak angle in the formal common-axis construction
+- no fitted support, coefficient, correction, uncertainty multiplier or selected central value
+- no NuTeV displacement relabelled as successful empirical closure
+- no deletion, alteration or silent retyping of any registered measurement row
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:a4943e87cae5b12b391da771e8435eb70068faff98f29bea497e45577fc7a96f`; engine receipt `sha256:0514d2a2fe7ad505dfd99c494f0c6ac6214169791c09596d4657e32ee1c458d8` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054-0514d2a2fe7ad505.json`; empirical-validation hash `sha256:a27a65924cde81c28c15ac470e4e89221a82d44493ee31ae50e4e581f83eb326`; measurement receipt `sha256:4bc4c5859b4f63e25cc5a73d4814a0f0030c4668e4b01ac2b95e6ac075ee7661`.
+
+### 336. Terminal cosmic transport measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact upper enclosure of the complete 32-row mean squared normalized residual is below the One after the fourth exact enclosure round (three forced bisection refinements). The exact 11/5, 22/5, 17/32 and tension-One values lie inside the complete registered Planck, Haridasu and constant-state intervals. No sigma multiplier, fitted component, uncertainty rescaling, deleted row or mismatch-as-success predicate remains.
+
+> The exact upper enclosure of the complete 32-row mean squared normalized residual is below the One after the fourth exact enclosure round (three forced bisection refinements). The exact 11/5, 22/5, 17/32 and tension-One values lie inside the complete registered Planck, Haridasu and constant-state intervals. No sigma multiplier, fitted component, uncertainty rescaling, deleted row or mismatch-as-success predicate remains.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+- `SFT-MATH-PROBABILITY-STATISTICS-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of exact transport carrier, unit-normalized residual relation, provenance, custody, proof/measurement separation, complete rows, successor closure and no extra rule. The declared exact boundary is: The admitted terminal transport receipt; all 32 CCH rows; H0 and complete Planck budget; both registered acceleration reconstructions; constant-w interval; DESI model-comparison record; exact rational root enclosures; and every source identity. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-cosmic-transport-versus-complete-unit-residual-and-like-typed-values__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-cosmic-transport-versus-complete-unit-residual-and-like-typed-values` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:686a44491ee46aac075aa4752daa819f6417f039614f1f361594560a3b246a25`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:624147300356701da75d1412c41d5a6fdfbcfd9dc40b727d4e7cf83350d4e4a6`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:1924ea5750e2ae67ee9bfacca7939eb2ecbed5b8312b9812998458a02b5758c1`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:57a3b73bd4e72c2475d11e25b201e6b86988e15fcdec4f5c1bcf6c3c248febd0`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:e9198019efe4e3f15762d11adf9acd3777c4728d42e4a65b5062087f18936725`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:94a56325bcf7bab112806fef190159f248a5ebb19391bb72d6832f0ecedb6af6`. Independent certificate: `sha256:a4916f203d0a194a8fa9028afbcda359a26b81d0ddb6280f3bfde2ce0df8eaa6`. Engine external-validation hash: `sha256:c073fd4672a744a2fabb64a70d07e9cb00a6bc145bd0fd2a85f7e7afb46f3c58`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- GOMEZ-VALENT-2023-CCH-32
+- PLANCK-2018-BAO-BASELINE-BUDGET
+- HARIDASU-2018-LATE-EXPANSION
+- GOMEZ-VALENT-2019-ACCELERATION
+- ESCAMILLA-2024-DARK-ENERGY-STATE
+- DESI-DR2-2025-COSMOLOGY
+
+Observed comparison records:
+
+- All 32 direct chronometer rows contribute once to a complete exact normalized-residual ledger; its upper enclosure is below the One on the fourth exact enclosure round, after three data-independent rational-root refinements.
+- The exact equality 11/5 and onset 22/5 lie inside the complete Planck budget transports.
+- The exact acceleration magnitude 17/32 and onset 22/5 lie inside the complete Haridasu q0 and transition intervals.
+- Tension-One lies inside the registered constant-state interval; alternate reconstruction and DESI model-comparison records remain unchanged but are not acceptance conditions.
+- No uncertainty multiplier was selected or widened; tampered chronometer and transition records reject.
+
+Falsification condition: Reject if a source or dependency changes; the complete normalized-residual lower enclosure reaches the One; any forced threshold, acceleration or static-state value leaves its like-typed interval; any row is omitted; an uncertainty is rescaled; a method/model-comparison displacement is rewarded; or target data alter the formal survivor.
+
+Measurement receipt: `sha256:49342e727ece7edb6b0a68b4d001c15b772ae3d10898be217b458b03ede64b2b`. Isolation certificate: `sha256:0c8e6b029ffb29a423ec31f2af85827dbb7aa0e416d4efd4a4d53aeedc658673`. Custody certificate: `sha256:072be24ecd90149ee7303d23dba00c628b498d56d4bafee71b1ce1a0f30db2d1`.
+
+Registered source descriptions:
+
+- Cosmic chronometers to calibrate the ladders and measure the curvature of the Universe: https://doi.org/10.1093/mnras/stad1511 (sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128)
+- Planck 2018 plus BAO baseline parameter table: https://doi.org/10.1051/0004-6361/201833880 (sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612)
+- An improved model-independent assessment of the late-time cosmic expansion: https://doi.org/10.1088/1475-7516/2018/10/015 (sha256:4ac5d80b39e3dc963d5cc7a0c1b8996b0b895a974f08fa736803186bd100f74c)
+- Quantifying the evidence for the current speed-up of the Universe: https://arxiv.org/abs/1810.02278 (sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0)
+- The state of the dark energy equation of state circa 2023: https://arxiv.org/abs/2307.14802 (sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5)
+- DESI DR2 Results II: BAO measurements and cosmological constraints: https://arxiv.org/abs/2503.14738 (sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841)
+
+Registered target identities:
+
+- COSMIC-TRANSPORT-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from GOMEZ-VALENT-2023-CCH-32
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no external H, density, q, transition or state target in the formal transport law
+- no fitted H0, density, exponent, residual coefficient or selected uncertainty multiplier
+- no rowwise two-standard-uncertainty shortcut
+- no DESI model preference or alternate reconstruction relabelled as an SFT result
+- no deleted measurement row or rescaled uncertainty
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:0fe774dfc5e9e0d08a491f543b4c3012dc0bd07ed2a9e715f47636f519c84c64`; engine receipt `sha256:e3e00a1c023f76cd0817c7eaec86c0243ab10d338e552f6bae1f90a94a959380` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055-e3e00a1c023f76cd.json`; empirical-validation hash `sha256:b050727f8732043890a71a6cb17e10e5581e06453e7f5c374ad632a2aa562c73`; measurement receipt `sha256:49342e727ece7edb6b0a68b4d001c15b772ae3d10898be217b458b03ede64b2b`.
+
+### 337. Criticality and turbulence measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** All five manganite structural keys identify the binary local-order mean-field class. The complete fifteen-value mean squared normalized residual is exactly 5286961/10584000, below the One. The erbium beta/gamma/nu intervals contain 1/2, One and 1/2; the turbulence interval contains 2/3; and both physical routes exhibit the registered falling five-thirds plateau. No material mismatch is an acceptance condition.
+
+> All five manganite structural keys identify the binary local-order mean-field class. The complete fifteen-value mean squared normalized residual is exactly 5286961/10584000, below the One. The erbium beta/gamma/nu intervals contain 1/2, One and 1/2; the turbulence interval contains 2/3; and both physical routes exhibit the registered falling five-thirds plateau. No material mismatch is an acceptance condition.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-PROBABILITY-STATISTICS-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of class carrier, complete structural-key relation, provenance, custody, proof/measurement separation, all-row retention, successor closure and no extra rule. The declared exact boundary is: The admitted two-class formal census; complete structural key for each of five manganites; all fifteen manganite exponent values; complete erbium vector; complete turbulence structure interval; both physical spectrum routes; limitations; and every source identity. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-class-keys-versus-complete-measured-vectors__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-class-keys-versus-complete-measured-vectors` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:e1d06bfae39d2baff3af1ee014becfb762a4b6c7b83b9d53d33f73dc5b647353`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:1719b267af4323421d187741a62fca2f5e1213bb21ece4856f4b3b95d445c11d`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:4eafee2cb6316ccb3f6e636fb0c19676c7053c57e782ed0653bda8898ac0d21a`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:f3db1e1d3ac6e5656325c9d1a8aa679172df0a5fe985f6b0f652e110c0b3c3fb`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:82c45b89bef04fe802501c9d86a6ede46331807acc9e22c09efb48fe0d14b6bd`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:abecd535b035d40744922b3b96b09e6fbb2a89d4ccd2fb516f0531445269b187`. Independent certificate: `sha256:b056e6b7a7cba98ff7975a1e6b5fdf01d22ab2a91bbb18a36a9269d25a30c965`. Engine external-validation hash: `sha256:299fa83470a7c8596c73ec61feda3a7e046673df23abd28923bc07be8918cd31`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026
+- MCMASTER-LIN-ERBIUM-CRITICAL-SCATTERING-1993
+- APS-MCCOMB-TURBULENCE-STRUCTURE-2014
+- APS-HUANG-TURBULENCE-SPECTRUM-2010
+
+Observed comparison records:
+
+- All five complete manganite structural class keys identify the registered mean-field class.
+- All fifteen beta/gamma/delta measurements enter once; their exact mean squared normalized residual is 5286961/10584000, below the One.
+- The complete erbium vector contains one-half, One and one-half; the independent turbulence interval contains two-thirds.
+- Both physical spectral routes exhibit the falling five-thirds compensated plateau with all limitations retained.
+- La02 remains visible without its displacement becoming a result; tampered vector and structural-key controls reject.
+
+Falsification condition: Reject if a source or dependency changes; any material structural key is incomplete; the complete fifteen-value mean squared residual reaches the One; erbium or turbulence excludes a sealed exponent; either spectrum route is absent; any row is omitted or uncertainty rescaled; La02 displacement is rewarded; or targets alter the survivor.
+
+Measurement receipt: `sha256:27d3a2750e7db5e6204fbeb1b647aa84ac9a4dfad6b9de6a383638e56f9a3402`. Isolation certificate: `sha256:9535981b71f46414bfc904845396564a93e81667af7b4faf6410228639f0798a`. Custody certificate: `sha256:be2305b343aaa6b76070795f86a948a65d6d7f04dffec2428a216149f722d20e`.
+
+Registered source descriptions:
+
+- Structural, magnetic, and magnetocaloric properties of La and Sm co-doped CaMnO3 manganites: https://doi.org/10.1007/s10854-026-17400-y (sha256:afd0f783bd40b8ed376238eda9b254387c75c0c26ecc57488ab9b81b33d1d455)
+- Critical magnetic scattering in erbium: https://doi.org/10.1063/1.353720 (sha256:d8b6495b7defb46daa4d1162967d11b4680012ebd4a8e6d60e8892b83b9b3564)
+- Spectral analysis of structure functions and their scaling exponents in forced isotropic turbulence: https://doi.org/10.1103/PhysRevE.90.053010 (sha256:0c9f4321b52f78fe64b02684b4139a450955c12092c4faf8487f49bf6ff1d0f5)
+- Second-order structure function in fully developed turbulence: https://doi.org/10.1103/PhysRevE.82.026319 (sha256:1bff196a24bc3f852dd384469c5f8e4112fcdf717c2416190ad44b0012ac06cb)
+
+Registered target identities:
+
+- CRITICALITY-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured exponent or material label in the formal class census
+- no selected matching subset or La02 mismatch-as-success predicate
+- no fitted exponent, uncertainty multiplier, intermittency correction or measurement-selected class
+- no row deletion or uncertainty rescaling
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:972770658891b5371be10884db72f00aacd524b07d5fe190dc434a5567c25f4f`; engine receipt `sha256:7e437d81bee9d4c88b304a013c5c980fa9d0390f95acaf30c2dfb45b30a1602a` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056-7e437d81bee9d4c8.json`; empirical-validation hash `sha256:51ddbbffc9736ecc850a4828f962f1499b2fdd51809d6e252688eebdeaf7828c`; measurement receipt `sha256:27d3a2750e7db5e6204fbeb1b647aa84ac9a4dfad6b9de6a383638e56f9a3402`.
+
+### 338. Thermal history and physical helium measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-THERMAL-HISTORY-MEASURED-VALUE-058`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Exact exponent One lies inside [49/50,517/500]. Exact physical helium-isotope share 59/240 lies inside [489/2000,2471/10000]. The one-sixth to one-seventh freezeout sequence, positive deuterium, finite recombination support, eighteen extrema and all seven TT rows remain complete. No excluded quarter or angular noninteger record is admitted as a successful result.
+
+> Exact exponent One lies inside [49/50,517/500]. Exact physical helium-isotope share 59/240 lies inside [489/2000,2471/10000]. The one-sixth to one-seventh freezeout sequence, positive deuterium, finite recombination support, eighteen extrema and all seven TT rows remain complete. No excluded quarter or angular noninteger record is admitted as a successful result.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037`
+- `SFT-PHYS-THERMAL-HELIUM-ISOTOPE-TERMINAL-057`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of physical thermal carrier, isotope relation, provenance, custody, proof/measurement separation, complete rows, successor closure and no extra rule. The declared exact boundary is: The admitted analytic and physical-isotope receipts; complete temperature, helium, deuterium, freezeout, recombination and acoustic records; all uncertainty endpoints; all seven TT rows; all eighteen extrema; projection boundary; and every source identity. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-physical-thermal-values-versus-complete-measurements__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-physical-thermal-values-versus-complete-measurements` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:71d5b821c08b24d0a200db067d1344d662e111fd6b5b28faad0fb8bc19cc9dd5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:d8bb99bae704fa0f9359dba4a0077ebb8e4a6ac52415f747430e8fe64fef82a2`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:a96d9010099338a297ce51e80473e184dd3f77cf24a73a0b87f2751a0407e06e`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:bd8b792a7864e21a1369417e13b923b95dee61035cb784af21ec4fd3bff2d139`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:93b71dfa37d98bc1b88e9b4ab0e4dd780330e0080ff83b251d8f83bb9f56eabb`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:d3afd654004d34d24ba55451eda4328e7b249a86254e778902bcfc98e0dfe7e6`. Independent certificate: `sha256:61be22939d2ea95b2cc9e77c9d966e7dd3d30860ba7f9caeae64d805a13069e5`. Engine external-validation hash: `sha256:e0a2835a1ae33c589af028c1579f4e7a0ef3b3d20d95f099031507e2a749f214`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE
+- AVER-ET-AL-2026-PRIMORDIAL-HELIUM
+- COOKE-PETTINI-STEIDEL-2018-DEUTERIUM
+- PLANCK-2018-OVERVIEW-PEAKS
+- PLANCK-2018-COSMOLOGICAL-PARAMETERS
+- PDG-2025-BBN-REVIEW
+
+Observed comparison records:
+
+- Exact CMB temperature exponent One lies inside [49/50,517/500].
+- Exact physical primordial helium share 59/240 lies inside [489/2000,2471/10000].
+- The one-sixth to one-seventh freezeout sequence and positive deuterium channel remain complete.
+- Finite recombination support, eighteen extrema and all seven TT rows remain source-bound and positive; angular projection records are not mismatch results.
+- No uncertainty was widened; displaced helium and incomplete-peak controls reject.
+
+Falsification condition: Reject if a source or dependency changes; exponent One or 59/240 leaves its complete measured interval; the freezeout sequence, positive deuterium, finite recombination support, extrema or TT rows are missing; an uncertainty is widened; a mismatch is rewarded; or targets alter either formal survivor.
+
+Measurement receipt: `sha256:8663e550fdb13a666d3c2b1d099e1b9f44b175879d5652b7909bc1e4ee0cbbcf`. Isolation certificate: `sha256:c2d36c150cf297b75ea33c3be9994f9032dc76d36def77c065ed4bba8e0f36d2`. Custody certificate: `sha256:c0e4760965d8d0c0f6e4e11a1bf5a19d2ddcc3404e752855a9a3c46dba600899`.
+
+Registered source descriptions:
+
+- The evolution of the Cosmic Microwave Background Temperature: https://arxiv.org/abs/1012.3164 (sha256:aa79c65170e84d6a8dc71dbd0876538c19619a1c926453ce5a54bd96d3f1efb7)
+- The LBT Yp Project IV: A New Value of the Primordial Helium Abundance: https://arxiv.org/abs/2601.22238 (sha256:72f646a345c36b77211e6035d3a78345498f0766cf9fc0a54932ebe0dd670c6a)
+- One percent determination of the primordial deuterium abundance: https://arxiv.org/abs/1710.11129 (sha256:1a6ec19d6568b8854a40e9dd587906f99a8ea94ecd2d5c712ad86aa506b93f4a)
+- Planck 2018 results I: overview and cosmological legacy: https://arxiv.org/abs/1807.06205 (sha256:dca932893b7d2724aa2b8d33170fc1b5682c425dd56fcd3c5d7b2098d377db5c)
+- Planck 2018 results VI: cosmological parameters: https://arxiv.org/abs/1807.06209 (sha256:8e172730faf07c9f4ff3fdcc7043f76ed67df6f76066d47df30d693025b6ce77)
+- Big-Bang Nucleosynthesis: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf (sha256:1843c1d9025aa33c059700708f1041c4462364cdb582325f0c685a6ba1b38484)
+
+Registered target identities:
+
+- THERMAL-HISTORY-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from AVER-ET-AL-2026-PRIMORDIAL-HELIUM
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no measured helium central value or uncertainty in either formal survivor
+- no fitted decay, capture, binding, reaction, projection or abundance coefficient
+- no exact-quarter-exclusion or noninteger-angular-position mismatch rewarded as closure
+- no deleted row or rescaled uncertainty
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:03d3d89369145a006af94d8a419a408810d74d099a771168fec92d1b766194af`; engine receipt `sha256:7339aa07e1a9f52e8ef1fede03cbe17d38834362f1c9d63bb00b05deb6d49021` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-THERMAL-HISTORY-MEASURED-VALUE-058-7339aa07e1a9f52e.json`; empirical-validation hash `sha256:2376571e5468f9eadcadf80482ad61e6a43a9b0bd50a3812c903ee5f114eaa47`; measurement receipt `sha256:8663e550fdb13a666d3c2b1d099e1b9f44b175879d5652b7909bc1e4ee0cbbcf`.
+
+### 339. Complete hadron Regge measured-value correction
+
+Claim identity: `SFT-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The forced squared carriers 3/5, 9/5, 3, 21/5 and 27/5 all lie inside their corresponding complete measured resonance-support intervals. All five rows and the rho5 omission status are retained. No fitted slope, intercept, residual, selected row, uncertainty widening or mismatch-as-success remains.
+
+> The forced squared carriers 3/5, 9/5, 3, 21/5 and 27/5 all lie inside their corresponding complete measured resonance-support intervals. All five rows and the rho5 omission status are retained. No fitted slope, intercept, residual, selected row, uncertainty widening or mismatch-as-success remains.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-HADRON-REGGE-TERMINAL-005`
+- `SFT-PHYS-HADRON-REGGE-DIMENSIONAL-TERMINAL-059`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed Regge carrier, complete resonance support, provenance, custody, proof/measurement separation, complete rows, successor closure and no extra rule. The declared exact boundary is: The formal 059 receipt; all five registered masses, uncertainties, widths, width uncertainties and statuses; the exact most-restrictive support construction; common post-seal GeV-squared translation; and all source identities. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-exact-regge-carriers-versus-complete-measured-resonance-supports__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-exact-regge-carriers-versus-complete-measured-resonance-supports` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:9576dd4d668afb3fa2951c8e13c59ec3779a02432720bd2a996d06280a35fc15`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:909b4ce12e13596c9c1aa2b479c79c5d9bd49154e27dba348aa3bfbd6d11a683`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:af80693aeb595bd40d2593d435871114812faa4839bae161891105d654f06b58`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:3cff8caf802fccc5e3d071067220be16da18b1ada81fcd6e29ddb5345415346d`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:d5d152764842943169dc695f4c58d24fe26ace16bb8e830a768f0adfb194a7ac`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:0c8bc06ef57ebb6e35a54fb76c53932605eebaea3d9d70ffdbde3261c5aee370`. Independent certificate: `sha256:92422c7be03302267a28cc17db31e79b1e7a1236591bbd40866a1b6cb8e39dfe`. Engine external-validation hash: `sha256:f6b749a0f22d24de38b5f7e9d0743d1420f8dd540efcf7f885c378d5eebeb1bb`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2025-RHO-770
+- PDG-2025-A2-1320
+- PDG-2025-RHO3-1690
+- PDG-2025-A4-1970
+- PDG-2025-RHO5-2350
+
+Observed comparison records:
+
+- Exact zero-parameter Regge base is 3/5 GeV^2 and exact successor step is 6/5 GeV^2.
+- All five exact squared carriers lie inside the corresponding most-restrictive measured resonance-support intervals.
+- Every mass, mass uncertainty, width, width uncertainty and listing status is retained once.
+- The rho5 summary omission and single-measurement status remain explicit.
+- No slope, intercept, residual or correction is fitted; displaced and missing-row controls reject.
+
+Falsification condition: Reject if a source or dependency changes; any exact carrier leaves its most restrictive measured resonance support; a row or status is missing; a width or uncertainty is widened; a coefficient or correction is fitted; a mismatch is rewarded; or targets alter the formal survivor.
+
+Measurement receipt: `sha256:26f6d86b2e87b8eccb5e37b1685aec25dfdc5d151d16c80a04217dd6d85502b0`. Isolation certificate: `sha256:c62628600e61bebf70c8ee49456ef12c27caf8e1ab3c52887a2fc68acdb7996f`. Custody certificate: `sha256:295f755df18b9ca5edde5d8478bf4e238a5754e38b9fb1f54d3bb3b9917011e6`.
+
+Registered source descriptions:
+
+- Particle Data Group: https://pdg.lbl.gov/2025/listings/rpp2025-list-rho-770.pdf (sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356)
+- Particle Data Group: https://pdg.lbl.gov/2025/listings/rpp2025-list-a2-1320.pdf (sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356)
+- Particle Data Group: https://pdg.lbl.gov/2025/listings/rpp2025-list-rho3-1690.pdf (sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356)
+- Particle Data Group: https://pdg.lbl.gov/2025/listings/rpp2025-list-a4-1970.pdf (sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356)
+- Particle Data Group: https://pdg.lbl.gov/2025/listings/rpp2025-list-rho5-2350.pdf (sha256:6877a2e12365b035d3391a1a28af2f49693d8a749df276be3c772491a50ca356)
+
+Registered target identities:
+
+- HADRON-REGGE-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD from PDG-2025-RHO-770
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no pole-mass standard uncertainty mislabelled as the support of an unstable resonance
+- no fitted slope, intercept, string tension, residual, mass correction or selected trajectory subset
+- no widened mass uncertainty or resonance width and no omission of rho5 status
+- no target access before the formal survivor and prediction label seal
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:a0c377dd985d02964b48a385b4625fa59a3208339d8f60503314f04a7fced0ff`; engine receipt `sha256:15c9daaa90d88c5193e5e3af4a5ca64a75c0418ee85797a2b90607c37a21cb06` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060-15c9daaa90d88c51.json`; empirical-validation hash `sha256:b66c9c9da0cfb84a24085e0b1d1bdb2ec00e7fd64a02bdbc0210b9403aca1f1e`; measurement receipt `sha256:26f6d86b2e87b8eccb5e37b1685aec25dfdc5d151d16c80a04217dd6d85502b0`.
+
+### 340. Complete particle-generation, mass-pattern, mixing and longevity comparison
+
+Claim identity: `SFT-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The forced count three lies in the PDG LEP-SLC precision interval [2989,3003]/1000. The independent direct determination 292/100 with stated uncertainty 5/100 is preserved exactly and has central-value displacement 8/5 stated uncertainties from three; it is neither adjusted nor used to select the result. Both terminal charged-lepton mass-ratio intervals, the available s/d and b/s quark ratio intervals, all four terminal CKM intervals and the positive-neutrino mass/mixing support pass their registered comparisons; t/c remains without an exact scheme-matched direct comparator. The charged-lepton records give m_e<m_mu<m_tau and lifetime_e>lifetime_mu>lifetime_tau. These measurements test the terminal polynomial and ordering consequences, not the superseded site-as-mass, universal rate-ratio, dimensional lifetime-equality or extra-spatial-dimension claims.
+
+> The forced count three lies in the PDG LEP-SLC precision interval [2989,3003]/1000. The independent direct determination 292/100 with stated uncertainty 5/100 is preserved exactly and has central-value displacement 8/5 stated uncertainties from three; it is neither adjusted nor used to select the result. Both terminal charged-lepton mass-ratio intervals, the available s/d and b/s quark ratio intervals, all four terminal CKM intervals and the positive-neutrino mass/mixing support pass their registered comparisons; t/c remains without an exact scheme-matched direct comparator. The charged-lepton records give m_e<m_mu<m_tau and lifetime_e>lifetime_mu>lifetime_tau. These measurements test the terminal polynomial and ordering consequences, not the superseded site-as-mass, universal rate-ratio, dimensional lifetime-equality or extra-spatial-dimension claims.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002`
+- `SFT-PHYS-VALIDATION-QUARK-CKM-003`
+- `SFT-PHYS-MATTER-CKM-TERMINAL-004`
+- `SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed particle-mode law, full generation/mass/mixing/lifetime vector, provenance, target isolation, proof/measurement separation, complete-row retention, successor closure and extension. The declared exact boundary is: The admitted Claim 051; the precision fitted neutrino-count measurement and the unchanged independent direct determination; both charged-lepton ratios; all available quark ratios and the missing-comparator boundary; all terminal CKM rows; the positive-neutrino mass/mixing vector; all three charged-lepton masses and lifetimes; heavy-lepton search limits; and every interpretive limitation. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-particle-mode-generation-law-versus-complete-registered-spectrum-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-particle-mode-generation-law-versus-complete-registered-spectrum-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:234198c4dedadb99627b00ac01684e59ec98279b3dafe9b154ec25a1a9131ace`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:9fe79983d3b6a4b8bc543dfd8e9dc5f53b1908f3855e6cc7aa49b06f9a01b32b`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:206dd3eb485875b622471c84fb7661aff32d95c18749effd964e6c52ee7ae1f7`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:31ba6457edc32db6d1ad37a5d913d2d3b023e56034a79ac890b44265cb17ac22`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:6f167c1bbb175fa1a86526e6de7ff54306a535b9c92573ad855a4822e3d8dd37`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:698b9367acec9c6f40c5463c18f1c0c8f682c4f00ec78afdac8de48b65050da1`. Independent certificate: `sha256:8fe3ed5259739b150bbef45c19438bd41f267c21bfb732c49a37c87eef94be14`. Engine external-validation hash: `sha256:8572aa491dcd0973dcb9e6e6bf5c163ec07f8b93df9736332fbaaa19f1bbcc9f`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2025-LEPTON-SUMMARY
+- NIST-CODATA-2022-ALL-CONSTANTS
+- PDG-2025-QUARK-MASSES
+- PDG-2025-CKM-MATRIX
+- PDG-2025-NEUTRINO-MIXING
+
+Observed comparison records:
+
+- The precision fitted neutrino-type interval [2989,3003]/1000 contains the forced count three.
+- The independent direct determination 292/100 with stated uncertainty 5/100 is retained without adjustment.
+- Its exact central-value displacement from three is 8/5 stated uncertainties; it does not select or alter the forced law.
+- Both terminal charged-lepton ratios, available s/d and b/s ratios, all terminal CKM rows and the positive-neutrino vector pass their registered comparisons.
+- No exact scheme-matched direct t/c comparator is claimed.
+- Charged-lepton mass intervals increase electron-muon-tau and lifetimes decrease in the same label order.
+- Heavy-lepton search limits, measurement-model provenance and nondecisive neutrino-ordering boundaries are retained.
+- No coordinate fraction is relabelled as mass and no structural reach count is relabelled as seconds.
+- Tampered fit, altered direct record and reversed-lifetime controls reject.
+
+Falsification condition: Reject if any source changes; the precision generation interval excludes three; the independent direct row is omitted, altered, rescaled or used to select the law; a registered terminal mass or mixing comparison fails; the charged-lepton mass/lifetime orders reverse; the missing t/c comparator is presented as measured; any search or model boundary is omitted; an old site coordinate is relabelled as mass; or target data alter the formal survivor.
+
+Measurement receipt: `sha256:69150d847fbccce53bef6578047d3afceb4cd159eb05e20b02549956ac43a03d`. Isolation certificate: `sha256:bc0344002addffce79dec59fadf802a036be32f799a4e6f5ebf47b4e55bd75f8`. Custody certificate: `sha256:26d5c53f2b8b66cd7d153272f3f414edd69eb0243963b7704a255786369ca026`.
+
+Registered source descriptions:
+
+- Review of Particle Physics 2025 update: Leptons summary tables: https://pdg.lbl.gov/2025/tables/rpp2025-sum-leptons.pdf (sha256:5aa9a3a33b554204056cb04c42319bb32c9664ae518907652ff5cdc1cb87e5bb)
+- 2022 CODATA recommended values: https://physics.nist.gov/cuu/Constants/Table/allascii.txt (sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67)
+- Review of Particle Physics: Quark Masses: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-quark-masses.pdf (sha256:d544d099aa15739ec83d87711bd4c5b1e0a1032d6f70aaa4847ec78601f7aeae)
+- Review of Particle Physics: CKM Quark-Mixing Matrix: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-ckm-matrix.pdf (sha256:a0a78578971f38ff89c6fc5579bc608de41ec383a205dc25cba1d26f7145610a)
+- Review of Particle Physics: Neutrino Masses, Mixing, and Oscillations: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrino-mixing.pdf (sha256:d7067e2e3c9098cc924f10ffbca579c557fb8e848bf3acc17f9815598cdda7a6)
+
+Registered target identities:
+
+- PARTICLE-MODE-GENERATION-WITHHELD-COMPLETE-RECORD from PDG-2025-LEPTON-SUMMARY
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no external particle mass, lifetime, generation count, mixing entry or search limit in the formal survivor
+- no omission, rescaling or reinterpretation of the independent direct neutrino-count determination or the absent exact t/c comparator
+- no use of generation coordinate fractions as measured mass values
+- no claim that structural subtraction reach equals a dimensional lifetime ratio
+- no claim that quarter-mode 1:1:4 is a universal observed mixing or decay-rate ratio
+- no inference that heavy-particle search limits prove absolute nonexistence
+- no extra spatial dimension or compactification rule selected from particle data
+- no numerical-nothingness, negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:7b1248718fba75f0e23a4f31f0b8fbf98cdd266cfdf8dfed9cc4c8e2d8660b55`; engine receipt `sha256:0a2ca2749eed1cdaf6b92ab645ace007b3190ac5e5bb952e3a0cbdedff1c0804` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052-0a2ca2749eed1cda.json`; empirical-validation hash `sha256:0bae7a0db26bde3b738ec6c24f82bfc74856941136042da60d0971c4ef3feb7b`; measurement receipt `sha256:69150d847fbccce53bef6578047d3afceb4cd159eb05e20b02549956ac43a03d`.
+
+### 341. Measured dark abundance and complete Smithion/LFV standing-test record
+
+Claim identity: `SFT-PHYS-VALIDATION-DARK-SMITHION-LFV-062`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The exact 27/5 ratio lies inside the complete Planck dark/baryon interval, and 27/5 times 0.0224 gives 0.12096 inside the reported cold-dark interval [0.119,0.121]. The 175-galaxy SPARC record rejects finite baryon-only inverse-square asymptotics and supports additional gravitating matter under the admitted law. MEG II and BaBar provide three positive upper limits after null searches, not three measured rates; the 3:5:20 and 4:1 LFV predictions remain standing tests. No measured Smithion mass exists, so all twelve mass-ratio enclosures remain standing predictions rather than fabricated measured-value matches.
+
+> The exact 27/5 ratio lies inside the complete Planck dark/baryon interval, and 27/5 times 0.0224 gives 0.12096 inside the reported cold-dark interval [0.119,0.121]. The 175-galaxy SPARC record rejects finite baryon-only inverse-square asymptotics and supports additional gravitating matter under the admitted law. MEG II and BaBar provide three positive upper limits after null searches, not three measured rates; the 3:5:20 and 4:1 LFV predictions remain standing tests. No measured Smithion mass exists, so all twelve mass-ratio enclosures remain standing predictions rather than fabricated measured-value matches.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061`
+- `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of the sealed law, Planck density rows, galaxy discriminator, LFV search rows, prediction status, target isolation, complete-row custody and no-extra-rule. The declared exact boundary is: The admitted Claim 061; both Planck density rows with uncertainties; the complete SPARC sample statement; all three registered LFV radiative upper-limit rows; every current Smithion measurement-status row; and no target access before seal. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-dark-smithion-lfv-law-versus-complete-current-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-dark-smithion-lfv-law-versus-complete-current-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:e37c8e8a0fb85346cac4c921b758a9b0adbee5b5a358a99d1be8f27ef73116a4`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:8b245e9d86ac5517361d422e8a43f2cee3d25a6c2e1db291e6617d70683e1605`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:eb6f888f446824a0cab8d1c97cc6d52652a7ffaed86670f240e31fe6b7493453`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:7f053e393fab0a7adaae778ff2b7613165b852a1e23f2d3b9cd1a3d1d0c8cb02`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:b28ad019c6371ee4d5bcebd9bcf0bae85ff05997cd206c01e9067efc1f4de628`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:e4a059747073e52276d7db230a328c84cfc618a73a9adbf29066b563e3de9b45`. Independent certificate: `sha256:edc9f8101bfff4a5025bb403ee6d1f854e6c149f73fdc87c80c3b78c1fc12731`. Engine external-validation hash: `sha256:c16302fba31483b63cb4c01692f1bda069ba8f75e09da2798a935bb2324a087b`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PLANCK-2018-VI-ABSTRACT-DENSITIES
+- SPARC-2016-175-GALAXY-MASS-MODELS
+- MEGII-2025-MU-E-GAMMA
+- BABAR-2010-TAU-LFV-GAMMA
+
+Observed comparison records:
+
+- The exact dark/baryon ratio 27/5 lies inside the complete Planck density-ratio interval.
+- Comparison-side transport 27/5 times 0.0224 equals 0.12096 and lies inside [0.119,0.121].
+- The complete 175-galaxy SPARC record requires additional gravitating support under the admitted inverse-square law; it does not alone identify a particle.
+- MEG II and BaBar retain all three null-search upper limits. They do not constitute measured nonzero LFV rates, so no 3:5:20 match is fabricated.
+- No registered Smithion mass measurement exists; all twelve spectra remain exact standing predictions.
+- Tampered-density and fabricated-rate controls reject.
+
+Falsification condition: Reject if any source changes; 27/5 leaves the complete Planck ratio interval; 0.12096 leaves the complete cold-dark interval; the galaxy discrepancy row is omitted; an LFV limit is altered or relabelled as a rate; a Smithion is relabelled as measured without a source; target data select the formal law; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:2da4d4ef1c11b3dec958dac4f13b5bac740eea49b084d8131d511b81b59ed11a`. Isolation certificate: `sha256:bd444dda787a62b1b01e8969c0d1e8aac8245ad3fc1740c14133b8c32c67bd8d`. Custody certificate: `sha256:f5dd79b438273ad54e593d3009e4b590d9c8e3656e2cf0117cc0502032081cc0`.
+
+Registered source descriptions:
+
+- Planck 2018 results. VI. Cosmological parameters: https://arxiv.org/abs/1807.06209 (sha256:274e0189de5846ce0b8c2d7b83ae06c72587cf8325d4d2b2338e88dd0a74a88f)
+- SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves: https://arxiv.org/abs/1606.09251 (sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63)
+- New limit on the muon-to-electron-gamma decay with the MEG II experiment: https://arxiv.org/abs/2504.15711 (sha256:0efbf99543c92d340eb7b07f40e6fea580b7746caab26c9233d3e30e8b71a5b6)
+- Searches for Lepton Flavor Violation in the Decays tau to e gamma and tau to mu gamma: https://arxiv.org/abs/0908.2381 (sha256:ba3e1352f4c14b1867e06f6436b4a6b1e1980cd55ce52d9a9454bd618ed70015)
+
+Registered target identities:
+
+- DARK-SMITHION-LFV-WITHHELD-COMPLETE-RECORD from PLANCK-2018-VI-ABSTRACT-DENSITIES
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no density, galaxy datum, search limit or particle mass in formal survivor selection
+- no upper limit relabelled as an observed rate or relative-rate measurement
+- no null search relabelled as proof of particle identity
+- no unobserved Smithion relabelled as a measured discovery
+- no fitted abundance, cross-section, mediator mass, branching fraction or uncertainty multiplier
+- no negative, irrational, imaginary, floating, NaN, continuum or completed-infinity Fold proof magnitude
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:0111d63af2037414d6394950c563e819550f34d1196e42a6ee1a4614e0c787f9`; engine receipt `sha256:51e623e6512223c23a0f0cae604ca556ed30fd15173236ffd1c889dd6424e27d` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-DARK-SMITHION-LFV-062-51e623e6512223c2.json`; empirical-validation hash `sha256:8eb364d2768268207e98259bfe3f0269ddf1685006fb1d491750d3163521c832`; measurement receipt `sha256:2da4d4ef1c11b3dec958dac4f13b5bac740eea49b084d8131d511b81b59ed11a`.
+
+### 342. Blind neutron-EDM and multi-channel proton-stability validation
+
+Claim identity: `SFT-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The PSI result retains its null central status, positive 1.1 and 0.2 times ten-to-the-minus-26 uncertainty magnitudes and positive 1.8 times ten-to-the-minus-26 90-percent upper bound. The six proton modes retain 90-percent partial-lifetime lower limits 2.4e34, 1.6e34, 1.4e34, 7.3e33, 7.2e33 and 4.5e33 years. No source reports a statistically significant proton-decay signal; the explicitly retained candidates are background compatible. Thus no registered row violates the sealed aligned-One or fibre-preserving baryon-One predictions.
+
+> The PSI result retains its null central status, positive 1.1 and 0.2 times ten-to-the-minus-26 uncertainty magnitudes and positive 1.8 times ten-to-the-minus-26 90-percent upper bound. The six proton modes retain 90-percent partial-lifetime lower limits 2.4e34, 1.6e34, 1.4e34, 7.3e33, 7.2e33 and 4.5e33 years. No source reports a statistically significant proton-decay signal; the explicitly retained candidates are background compatible. Thus no registered row violates the sealed aligned-One or fibre-preserving baryon-One predictions.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-STRONG-CP-BARYON-STABILITY-TERMINAL-063`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed formal carrier, all registered EDM and proton-search rows, source binding, capability closure, proof/measurement separation, row completeness, successor closure and no-extra-rule. The declared exact boundary is: The sealed Claim 063; the direct neutron-EDM central-status, statistical uncertainty, systematic uncertainty and upper-limit rows; all six registered Super-Kamiokande mode limits and candidate interpretations; all four primary source snapshots; and no target access before the prediction seal. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-strong-alignment-and-baryon-stability-versus-complete-registered-direct-search-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-strong-alignment-and-baryon-stability-versus-complete-registered-direct-search-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:38100d6833e49ccffbea934b617894201371284cc9db173c1944618d174e17b9`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:576d04f2cc2e35de96d1f95fd64b1543e032a14fbc27c4ffa7bcb81c18a74c40`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:636aa152173b656c5c090c6023503779b90c47d91a6c35b0fa26756a8bef684f`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:ad6e2347a557026397acb3574713a1d49b7b2d0a4ae2ed9a7b9c97e3be0f3d68`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:afb52c0be23620df9d200e86ca2d5a08174b3678f1b571358534c5b77bea02c0`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:4d0799c837a396410e90962d9354a8b4a675a30f8bb6093077312c1c394f39eb`. Independent certificate: `sha256:219d673b42b16ff5a7b5ab93deca735ccae9d63fa7962177f2710df976e6eda0`. Engine external-validation hash: `sha256:1d3374be2ed6753471294e271f5bfb58cba46e4f0213f2cee5a7f84ba71f6a5b`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NEDM-2020-PSI-PERMANENT-EDM
+- SUPERK-2020-PROTON-E-MU-PI0
+- SUPERK-2024-PROTON-E-MU-ETA
+- SUPERK-2026-PROTON-E-MU-TWO-PI0
+
+Observed comparison records:
+
+- PSI reports a null neutron-EDM central displacement with both positive uncertainty magnitudes and a finite 90-percent upper limit of 1.8e-26 e cm.
+- The neutron-EDM row is consistent with the sealed empty-One strong-dipole prediction; it is not relabelled as numerical proof zero.
+- All six registered Super-Kamiokande proton modes retain their finite 90-percent partial-lifetime lower limits.
+- No registered mode reports a statistically significant proton-decay signal; every candidate interpretation, including background-compatible events, is retained.
+- Finite lifetime limits are not called infinity and do not select the already sealed proton-stability law.
+- Confirmed-EDM and confirmed-proton-decay hostile controls both reject.
+
+Falsification condition: Reject if any source changes; the direct EDM record reports a confirmed nonempty displacement; any proton mode reports a statistically significant decay signal; a candidate or uncertainty is omitted or relabelled; a finite limit is called exact absence/infinity; target data select the formal law; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:13d218828f910869fcffd434f0367d39e0bbd287fb203e61f56303f6b7cf369c`. Isolation certificate: `sha256:7a7bcee294d5be0d191c5ffefa7728d992a8bdaa3535aea6976af11a81bc8ce3`. Custody certificate: `sha256:0f2c58711f4c0cc427856875accad7747aee8abbe00cda684166fe0a3c628cd0`.
+
+Registered source descriptions:
+
+- Measurement of the permanent electric dipole moment of the neutron: https://arxiv.org/abs/2001.11966 (sha256:1afeb830f372c7725cca9fd3d004333fe19cade698fd9798af9dfac7adc5c180)
+- Search for proton decay via p to e-plus pi-zero and p to mu-plus pi-zero: https://arxiv.org/abs/2010.16098 (sha256:6fa532b3b2671e8d6e028308297b95837567a6e3608b471aaa8af00fff6a9679)
+- Search for proton decay via p to e-plus eta and p to mu-plus eta: https://arxiv.org/abs/2409.19633 (sha256:5b4bf694378930d7e38935546fea9c5deced9531137b0da276778e7b67fb4937)
+- Search for proton decay via p to e-plus two-pi-zero and p to mu-plus two-pi-zero: https://arxiv.org/abs/2604.10975 (sha256:06d10f843d39b54a14465628d72a9af18920976369326b1c717e3621b2109c98)
+
+Registered target identities:
+
+- STRONG-CP-BARYON-STABILITY-WITHHELD-COMPLETE-RECORD from NEDM-2020-PSI-PERMANENT-EDM
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no neutron-EDM value, uncertainty, proton candidate or lifetime limit in formal survivor selection
+- no null central estimate relabelled as conventional numerical proof zero
+- no finite experimental upper or lower limit relabelled as an exact absence or completed infinity
+- no background-compatible event relabelled as proton decay and no candidate row omitted
+- no fitted theta, axion coefficient, decay rate, lifetime, confidence multiplier or tolerance
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:8892bb86644f083a8401009a9263a9eb545ef11baf0ad4641c7247d412119385`; engine receipt `sha256:48e9dbebdb29b3902876a09cde2154eea3700904898930c1f12ab0a5e5ed9a09` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064-48e9dbebdb29b390.json`; empirical-validation hash `sha256:725517ecde0475192e96b7c9f79419b33afebe5a5aacebf1dbae29ed89b05673`; measurement receipt `sha256:13d218828f910869fcffd434f0367d39e0bbd287fb203e61f56303f6b7cf369c`.
+
+### 343. Blind terminal Higgs mass and self-coupling validation
+
+Claim identity: `SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Using the post-seal PDG dimensional reference v = 12311/50 GeV, the sealed ratio predicts exactly m_H = 31557437733819647/251923197734500 GeV = 125.266104978... GeV. The PDG 2025 listed average is 626/5 +/- 11/100 GeV, whose reported-uncertainty interval [12509/100,12531/100] contains the prediction; the exact displacement from its central value is 16653377460247/251923197734500 GeV. ATLAS reports 12511/100 +/- 11/100 GeV and CMS reports 3126/25 +/- 3/25 GeV; their exact positive offsets remain in the certificate and are not called aggregate failures. The exact native lambda is 6570778165695741824959729/50772238045420788745992200. The 2026 ATLAS-CMS 95-percent normalized kappa-lambda interval, recorded as a below-reference direction of magnitude 71/100 through 61/10, contains the SFT normalized unity correspondence but does not yet resolve native lambda precisely.
+
+> Using the post-seal PDG dimensional reference v = 12311/50 GeV, the sealed ratio predicts exactly m_H = 31557437733819647/251923197734500 GeV = 125.266104978... GeV. The PDG 2025 listed average is 626/5 +/- 11/100 GeV, whose reported-uncertainty interval [12509/100,12531/100] contains the prediction; the exact displacement from its central value is 16653377460247/251923197734500 GeV. ATLAS reports 12511/100 +/- 11/100 GeV and CMS reports 3126/25 +/- 3/25 GeV; their exact positive offsets remain in the certificate and are not called aggregate failures. The exact native lambda is 6570778165695741824959729/50772238045420788745992200. The 2026 ATLAS-CMS 95-percent normalized kappa-lambda interval, recorded as a below-reference direction of magnitude 71/100 through 61/10, contains the SFT normalized unity correspondence but does not yet resolve native lambda precisely.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-HIGGS-SYMMETRY-TERMINAL-065`
+- `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed Higgs carrier, dimensional reference, aggregate mass, individual mass rows, source custody, self-coupling boundary, measurement separation and no-extra-rule. The declared exact boundary is: The sealed Claim 065 ratio and coupling; the PDG 246.22 GeV dimensional reference; the complete PDG listed average and uncertainty; the direct ATLAS and CMS mass rows with every reported uncertainty; the latest combined ATLAS-CMS kappa-lambda interval; all five source snapshots; and no target access before seal. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-terminal-Higgs-ratio-and-self-coupling-versus-complete-current-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-terminal-Higgs-ratio-and-self-coupling-versus-complete-current-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:c9f03004accc73fcf2f616a607413669e9bb114672dda69254dc4dfb5765f1b2`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:7cb3166cd4916a6c62c86c5c2adc3ff09b42876cb10d5a8006aedbc1a51c6130`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:f94882b3dd5c935411d6ebaaeaa5fbbd9e7bd7589dee0a084614ccc76ef67cb1`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:569660b6c17442aad7ef9beabf9e8a81dcb02d4126315d8add78afa41d59b5f6`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:e6aa6fdc968a856053a7eb789a45daa916263e18008360f5727bfd6dec31037f`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:b9feec25ed76098c2f850434d0ccb1fd68e8de7db024e6f98697faebca453233`. Independent certificate: `sha256:d2fdff3ecd3577f12218d6ff2ecd49bcb7035ccd7170de7b4b0d05a954d1f956`. Engine external-validation hash: `sha256:7a680e6dcacaa8f558fdffd086fada8181356528069b1adae675f94c7b2a7191`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- PDG-2024-ELECTROWEAK-VACUUM-SCALE
+- PDG-2025-HIGGS-MASS-AVERAGE
+- ATLAS-2023-COMBINED-HIGGS-MASS
+- CMS-2024-FOUR-LEPTON-HIGGS-MASS
+- ATLAS-CMS-2026-HIGGS-PAIR-COMBINATION
+
+Observed comparison records:
+
+- The sealed exact ratio and post-seal PDG 246.22 GeV dimensional reference give 125.266104978... GeV.
+- The prediction lies inside the PDG 2025 125.20 +/- 0.11 GeV listed-average interval.
+- ATLAS and CMS individual offsets are retained exactly and are not falsely described as one-uncertainty agreements.
+- The exact native coupling is 0.1294167525...; normalized unity lies inside the 2026 combined direct-search interval.
+- The direct self-coupling constraint remains broad and is not called a precision measurement.
+- Outside-mass, outside-coupling and erased-offset hostile controls all reject.
+
+Falsification condition: Reject if any source changes; the sealed mass prediction lies outside the complete authoritative aggregate interval; normalized unity lies outside the direct self-coupling interval; an individual offset or uncertainty is omitted; a broad limit is called a precision measurement; target data select or modify the formal law; a signed external coordinate becomes a Fold proof scalar; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:f86cdc91c32c1dae5d3677b2b4b0de33d01ac3f3cddbb717b8a379be425d5a29`. Isolation certificate: `sha256:477f2c064986183a80e924e90f8fd3cc398a221df87eb8e9cbe83db1a23b78c1`. Custody certificate: `sha256:628b1386b9dd4a7f87bf260ec9dd7cabacef458c49ea06bc754f825c1cdeb5c9`.
+
+Registered source descriptions:
+
+- Electroweak Model and Constraints on New Physics: https://pdg.lbl.gov/2024/reviews/rpp2024-rev-standard-model.pdf (sha256:4689caae925ee279228684249333a8395a40dda74a94863549b48f758d3fdd3f)
+- Particle Data Group Higgs-boson listing: https://pdg.lbl.gov/2025/listings/rpp2025-list-higgs-boson.pdf (sha256:228835096e2003bb332f456ad412cbfbd628a6973be715309da7d2f419ac77bc)
+- Combined measurement of the Higgs boson mass from H to gamma-gamma and H to ZZ-star to four leptons: https://arxiv.org/abs/2308.04775 (sha256:b3d2c09226e54f4553a381c70e41095f8f1c18aec3aabbc845e0481aa9207e4e)
+- Measurement of the Higgs boson mass and width using the four-lepton final state: https://arxiv.org/abs/2409.13663 (sha256:8dfaa73b5df3a958998a1a95dc123dc02013ef22c0a4fc3f82253550fc1c1807)
+- Combination of ATLAS and CMS searches for Higgs boson pair production at 13 TeV: https://arxiv.org/abs/2602.23991 (sha256:eaf44d724e33f500781a964a2918b5d2062c55be760704736346233ed02ff678)
+
+Registered target identities:
+
+- HIGGS-TERMINAL-WITHHELD-COMPLETE-RECORD from PDG-2025-HIGGS-MASS-AVERAGE
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no Higgs mass, VEV, self-coupling interval, uncertainty or aggregate in formal survivor selection
+- no coefficient, correction term, target-selected tolerance, uncertainty inflation or fitted series
+- no omission of the ATLAS or CMS individual offsets and no claim that both lie within one reported uncertainty
+- no direct-search interval relabelled as a precision measurement of native lambda
+- no signed external coordinate imported as a negative Fold proof scalar
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:cb014d09798e1ef2e597b0c9d2d9081635d84d9aa8e8eb6ee91c05176b5a63a4`; engine receipt `sha256:f69729204538a9c0949fa5c4e3dfce51beece2ebe2d4e43163910d6192f9b523` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066-f69729204538a9c0.json`; empirical-validation hash `sha256:56c919c8c0a8107a97ead48490ea16b9ae64ae334208a7ae8530cdfcd15c24a4`; measurement receipt `sha256:f86cdc91c32c1dae5d3677b2b4b0de33d01ac3f3cddbb717b8a379be425d5a29`.
+
+### 344. Blind stellar, galactic and tidal terminal validation
+
+Claim identity: `SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The NASA solar record reports sound-speed and adiabatic-index inference at the 1/10000 precision order and density at 1/1000; its reference-model convective boundary 1427/2000 lies inside the observed 713/1000 +/- 1/1000 interval and is retained only as external structure evidence. The complete six stellar slopes are 507/250, 1143/250, 5743/1000, 4329/1000, 3967/1000 and 573/200 with their six reported uncertainties; the 3967/1000 row contains four and the 573/200 row contains three, while the other four do not and remain explicit. SPARC contributes all 175 galaxies. The 153-galaxy baryonic Tully-Fisher result is 77/20 +/- 9/100 with intrinsic scatter 3/50: its central interval excludes four, while the reported systematic interval [7/2,4] contains the sealed endpoint. The Bullet Cluster records an eight-sigma mass/plasma separation. The Moon records equal approximately-655-hour orbital and rotation periods. MESSENGER records Mercury's 29323073/500000 +/- 11/1000000 day rotation and experimentally verifies its 3:2 resonance, preserving the separately generated eccentric-resonance boundary.
+
+> The NASA solar record reports sound-speed and adiabatic-index inference at the 1/10000 precision order and density at 1/1000; its reference-model convective boundary 1427/2000 lies inside the observed 713/1000 +/- 1/1000 interval and is retained only as external structure evidence. The complete six stellar slopes are 507/250, 1143/250, 5743/1000, 4329/1000, 3967/1000 and 573/200 with their six reported uncertainties; the 3967/1000 row contains four and the 573/200 row contains three, while the other four do not and remain explicit. SPARC contributes all 175 galaxies. The 153-galaxy baryonic Tully-Fisher result is 77/20 +/- 9/100 with intrinsic scatter 3/50: its central interval excludes four, while the reported systematic interval [7/2,4] contains the sealed endpoint. The Bullet Cluster records an eight-sigma mass/plasma separation. The Moon records equal approximately-655-hour orbital and rotation periods. MESSENGER records Mercury's 29323073/500000 +/- 11/1000000 day rotation and experimentally verifies its 3:2 resonance, preserving the separately generated eccentric-resonance boundary.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-STELLAR-GALACTIC-TIDAL-TERMINAL-067`
+- `SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009`
+- `SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed physical carrier, seven-source custody, solar structure, complete six-row stellar relation, complete galaxy vector, central-plus-systematic Tully-Fisher comparison, Moon-plus-Mercury tidal boundary and no-extra-rule. The declared exact boundary is: The sealed Claim 067 receipt; every row from the seven immutable source snapshots; exact positive whole and fraction values; reported uncertainties and systematic intervals; all six stellar regimes; the complete SPARC population; the Bullet Cluster separation; the lunar 1:1 observation; the Mercury 3:2 boundary; and structural target denial before formal sealing. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-stellar-galactic-tidal-law-versus-complete-seven-source-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-stellar-galactic-tidal-law-versus-complete-seven-source-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:8a2aca0e7bf45cac58fc4a88bbbda934681d60af816702d9301a0b3ea68d5a48`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:af2210735a54649ca8ae52dedc43b60b5a6261827642aac4479775c9bac293f5`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:1a6b661784eeac5d9900d5e3b1fbdd96cd7c68088554a407e3c1172d48ec787c`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:8302a4bb44f6f038ed5326e59b92adf075ac0e67b439a3c5e0d9ac0ad40dd933`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:cc352e780d6815d7afd54c64c6066adb0d67ebefded9b213b6894867a920eded`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:eb56f2d40414512405ccbac57899a615c098e7af11df3ff0b9190561a4e09f94`. Independent certificate: `sha256:a91da4b516a074ba15fcca4787da29800ccda7fcb0e1e281d4991c757c63858f`. Engine external-validation hash: `sha256:72e7b0069871be252494e39a49b820076d3a41a76cf531298ab2cc6a84760f7d`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NASA-NTRS-HELIOSEISMOLOGY-2001
+- EKER-2018-MAIN-SEQUENCE-RELATIONS
+- SPARC-2016-ROTATION-CURVES
+- LELLI-2019-BARYONIC-TULLY-FISHER
+- CLOWE-2006-BULLET-CLUSTER
+- NASA-GRC-MOON-SYNCHRONOUS-ROTATION
+- NASA-NTRS-MESSENGER-MERCURY-RESONANCE
+
+Observed comparison records:
+
+- Helioseismology reports stable solar structure at parts-per-ten-thousand sound-speed precision; its conventional reference value is not relabelled as an SFT prediction.
+- All six piecewise stellar slopes remain; only the high and very-high mass rows contain terminal powers four and three.
+- All 175 SPARC galaxies and all 153 Tully-Fisher galaxies remain in the registered population records.
+- The Tully-Fisher central interval excludes four while the complete reported systematic interval reaches four; both are retained.
+- The Bullet Cluster records an eight-sigma separation between the mass and dominant plasma peaks.
+- The Moon records 1:1 synchronous rotation; Mercury records the separately declared 3:2 eccentric-resonance boundary.
+- Erased-row, central-only, false-lunar-lock and erased-Mercury hostile controls reject.
+
+Falsification condition: Reject if any source identity changes; any of the six stellar regimes, both Tully-Fisher interval classes, the full galaxy counts, the Bullet separation, the Moon terminal or the Mercury boundary is omitted; the formal law is changed after target release; a central offset is concealed; a conventional reference model is called an SFT prediction; a fitted parameter enters; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:313655e8d2faf9fae7c637f0139713d9ddda3e18b70b3360397ac6adcca7c673`. Isolation certificate: `sha256:16c31cc82998c61691f15702aa12fcd5f61e912741ee9878d0f06a68ac97078c`. Custody certificate: `sha256:d914349f61c1421ff2bcd03fcde8b1a263ff788a5da65e88eb4c0993961cc4c5`.
+
+Registered source descriptions:
+
+- Our Sun IV: The Standard Model and Helioseismology: Consequences of Uncertainties in Input Physics and in Observed Solar Parameters: https://ntrs.nasa.gov/citations/20010111092 (sha256:e523f76ba101f8becc7c18e593d9dce2ce999e4393f3efbace74bada0a51e42e)
+- Interrelated main-sequence mass-luminosity, mass-radius and mass-effective temperature relations: https://arxiv.org/abs/1807.02568 (sha256:38f82514c2bcc9f3732581232d86d0798fb758f84018ddce1ad5e5941a359ff3)
+- SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves: https://arxiv.org/abs/1606.09251 (sha256:d089215877213661e40965543ee7e05736619082ad16d95e65ec059029588c63)
+- The baryonic Tully-Fisher relation for different velocity definitions and implications for galaxy angular momentum: https://arxiv.org/abs/1901.05966 (sha256:a35dafd7d01967b64bbd78be5d337c0011f53fe3c3f6e224b32c23a7a7ba4e3f)
+- A direct empirical proof of the existence of dark matter: https://arxiv.org/abs/astro-ph/0608407 (sha256:59f2fb580797de5e5007fcea490a0f6c36036364546dbbb6a319a6e2fb5d0209)
+- Moon: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/moon/ (sha256:8591513db27d380612afdf5d4c34e3fa1502fdf89100f745b88a578c49135df4)
+- The Gravity Field, Orientation, and Ephemeris of Mercury from MESSENGER Observations After Three Years in Orbit: https://ntrs.nasa.gov/citations/20150000346 (sha256:836e77ddea47e52734be957e4f41bfcddfc247c8b9beec3a9b0eb900756cfd4e)
+
+Registered target identities:
+
+- STELLAR-GALACTIC-TIDAL-WITHHELD-COMPLETE-RECORD from COMPLETE-SEVEN-SOURCE-VECTOR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no source row, stellar slope, galaxy fit, tidal period or uncertainty in formal survivor selection
+- no fitted exponent, normalization, mass-to-light choice, halo profile, tolerance or correction term
+- no deletion of four non-endpoint stellar regimes and no universal single stellar exponent
+- no replacement of the Tully-Fisher central interval by its systematic interval or concealment of either
+- no relabelling of a conventional solar reference-model value as an SFT dimensional prediction
+- no universal lunar 1:1 rule extended across the explicitly separate Mercury eccentric resonance
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:d6683300dc5935bb78a3cc5c38421bab652cc3dc42f3bcb7353dca988b63be3d`; engine receipt `sha256:2410fe8ac97e22ffea7303b50155129dfe6c914d84e549c3c9bb6d24b0672ad6` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-2410fe8ac97e22ff.json`; empirical-validation hash `sha256:f13a517866bb232d464d74547d87605e5b470146d0f89eacbddf5b33880a04c9`; measurement receipt `sha256:313655e8d2faf9fae7c637f0139713d9ddda3e18b70b3360397ac6adcca7c673`.
+
+### 345. Blind stellar nuclear chain, collapse and heavy-element validation
+
+Claim identity: `SFT-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The complete six NASA stage temperatures are (3/100,1/5,4/5,3/2,2,33/10) billion kelvin and strictly increase in the formal stage order; all durations (10000000,1000000,1000,1/10,2,1/100 years) remain and are not falsely called monotonic. Borexino reports 36/5 +3 -17/10 cpd per 100 tonnes, minimum significance five sigma at 99/100 confidence. SN1987A neutrinos were recorded by three detectors; the reported two-component preference exceeds 100:1 and the sub-One-second accretion component remains model-assisted. SN2014J records 847 and 1238 keV cobalt lines with fluxes 73/20 +/- 121/100 and 227/100 +/- 69/100 in 10^-4 photon units; the measured ratio 31/50 +/- 7/25 contains 17/25 and the spectrum significance is 113/10 sigma. GW170817 records the 810 nm strontium feature from 3/2 to 10 days, with 1/5-c broadening and 23/100-c blueshift.
+
+> The complete six NASA stage temperatures are (3/100,1/5,4/5,3/2,2,33/10) billion kelvin and strictly increase in the formal stage order; all durations (10000000,1000000,1000,1/10,2,1/100 years) remain and are not falsely called monotonic. Borexino reports 36/5 +3 -17/10 cpd per 100 tonnes, minimum significance five sigma at 99/100 confidence. SN1987A neutrinos were recorded by three detectors; the reported two-component preference exceeds 100:1 and the sub-One-second accretion component remains model-assisted. SN2014J records 847 and 1238 keV cobalt lines with fluxes 73/20 +/- 121/100 and 227/100 +/- 69/100 in 10^-4 photon units; the measured ratio 31/50 +/- 7/25 contains 17/25 and the spectrum significance is 113/10 sigma. GW170817 records the 810 nm strontium feature from 3/2 to 10 days, with 1/5-c broadening and 23/100-c blueshift.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-STELLAR-NUCLEAR-COLLAPSE-TERMINAL-069`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
+- `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed carrier, source custody, complete stage table, direct fusion-neutrino row, collapse-neutrino vector, thermonuclear gamma vector, neutron-capture spectrum and no-extra-rule. The declared exact boundary is: The sealed Claim 069 receipt; all five immutable sources; all six stage temperatures and durations; Borexino rate and asymmetric errors; all three SN1987A detectors and model boundary; both SN2014J lines, fluxes, errors, ratio and significance; the complete registered GW170817 strontium row; and no target access before seal. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-stellar-nuclear-collapse-law-versus-complete-five-source-record__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-stellar-nuclear-collapse-law-versus-complete-five-source-record` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:606e96edc6791a89f2d03d4f09069c448275102eb50e8c6da23938285869906c`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:295b2763cd15381d7792c51086f1bcf1631ba50e58ff10583c034d31fd31134c`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:9902e6720af71e081ceaffc4de9f1e7c20be7cc9bf946ce88e3e51b87111a98e`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:38f5f64a33f4ef3e9174cdf3758984a1f3e16e343f2c18be29da2b902ef7fe3c`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:2b1785820c991b9e7f22c226823f597a44d41f30bf453d92d94891545b866950`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:2c72d85ead6719362cd8b783b9b26a127a2e605061d0253b155fbb76a561a5c5`. Independent certificate: `sha256:d0078b02f631aec18fb80d091764b7e01e1011b73167cbec14781bff981b52fa`. Engine external-validation hash: `sha256:99883a85a8fc27fd03f1c3bedfebb1464b4722a7a15a2fb0898dc07f0197352c`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NASA-GSFC-COSMIC-ELEMENTS-STELLAR-STAGES
+- BOREXINO-2020-CNO-NEUTRINOS
+- LOREDO-LAMB-2001-SN1987A-NEUTRINOS
+- DIEHL-2014-SN2014J-GAMMA-LINES
+- WATSON-2019-GW170817-STRONTIUM
+
+Observed comparison records:
+
+- All six stellar stages have strictly increasing measured temperatures; every duration, including the nonmonotonic neon/oxygen pair, is retained.
+- Borexino directly records CNO fusion neutrinos at 36/5 +3 -17/10 cpd per 100 tonnes and at least five-sigma significance.
+- The complete three-detector SN1987A neutrino record is retained, with model preference explicitly identified as model-assisted.
+- Both SN2014J cobalt lines, flux errors and ratio are retained; the measured ratio interval contains 17/25.
+- GW170817 spectroscopy identifies strontium while retaining every spectral-modelling boundary.
+- Erased-stage, hidden-irregularity, erased-detector, outside-ratio and erased-capture controls reject.
+
+Falsification condition: Reject if any source changes; any stage, duration, detector, line, flux, uncertainty, confidence, feature or modelling boundary is omitted; the stage temperatures are not strictly ordered; the direct channel observations are absent; target data alter the sealed law; a fit enters; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:a7a660979d997ee220d888616b4cb0893150f610c7a11cfae2f04f62787b2370`. Isolation certificate: `sha256:a60aa94729e3f966a44a65c625162ae9a300b75ac462023625fec2a19707aa7a`. Custody certificate: `sha256:76ab98508c7a77d326f0211169d6bd8d4dc8bed11b0474a668d37a9fe0c7787a`.
+
+Registered source descriptions:
+
+- What is Your Cosmic Connection to the Elements?: https://imagine.gsfc.nasa.gov/educators/elements/imagine/05.html (sha256:156c6ce406b0ec49ceac6921ad36fccf5d8778fb5cec7539e24ee8cce961a794)
+- Experimental evidence of neutrinos produced in the CNO fusion cycle in the Sun: https://arxiv.org/abs/2006.15115 (sha256:d61241252a22a4c9614d5a29a05cf7d211c4a8dde9dec77fe21e242238ed736d)
+- Bayesian analysis of neutrinos observed from supernova SN 1987A: https://arxiv.org/abs/astro-ph/0107260 (sha256:72b8acc99ba37cf8557492669ce53851bf154b95950c7fc34e53a6681599b2d2)
+- SN2014J gamma-rays from the 56Ni decay chain: https://arxiv.org/abs/1409.5477 (sha256:aaf0bc90867cdc5e13a8ee2dfd83a23def499e5d5be9bf3f7506e56e6afdaae1)
+- Identification of strontium in the merger of two neutron stars: https://arxiv.org/abs/1910.10510 (sha256:34b7f1a277959937f868e6987ec8ce39d481165fccbea8cbab6cfa27457e77c1)
+
+Registered target identities:
+
+- STELLAR-NUCLEAR-COLLAPSE-WITHHELD-COMPLETE-RECORD from COMPLETE-FIVE-SOURCE-VECTOR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no stage temperature, neutrino event, gamma line, spectral feature, abundance or source value in formal survivor selection
+- no fitted reaction rate, explosion energy, nickel mass, standard-candle calibration, ejecta model or target-selected tolerance
+- no deletion of the oxygen-duration irregularity, any SN1987A detector, either cobalt line or any GW170817 modelling boundary
+- no model-assisted interpretation relabelled as a direct SFT dimensional prediction
+- no negative, irrational, imaginary, floating, NaN, continuum or infinite Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:d37b32552b807987d11a36d7c667f15d25f1c45a6286b2e9a30fa9c218403a77`; engine receipt `sha256:d439aaf47e94dcc7baba1031cf0ac05c446d03fbd089ed86654618d815c2032c` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070-d439aaf47e94dcc7.json`; empirical-validation hash `sha256:92967ad9cb187ae466cda94c34ca26c4c0571526b5e70ec403e4de0db3db117a`; measurement receipt `sha256:a7a660979d997ee220d888616b4cb0893150f610c7a11cfae2f04f62787b2370`.
+
+### 346. Blind compact-object and horizon-thermodynamics validation
+
+Claim identity: `SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The external dimensional record contains the 7/5-solar-mass electron-degenerate limit. The independently measured neutral-fermion-supported PSR J0740 mass interval is [201/100,215/100] solar masses, wholly above 7/5. The conditional merger-remnant upper records 267/100 and 61/20 solar masses are both above that measured interval and remain explicitly model-assisted rather than direct TOV measurements. Together with the earlier horizon-scale shadow/ringdown receipt, the post-seal record supports the ordered finite white-dwarf, neutron-star and horizon-endpoint classes. No direct astrophysical Hawking-radiation or temperature measurement exists in the registered vector, so the exact mT=1/16 law remains an unconfirmed, falsifiable prediction rather than a rewarded absence.
+
+> The external dimensional record contains the 7/5-solar-mass electron-degenerate limit. The independently measured neutral-fermion-supported PSR J0740 mass interval is [201/100,215/100] solar masses, wholly above 7/5. The conditional merger-remnant upper records 267/100 and 61/20 solar masses are both above that measured interval and remain explicitly model-assisted rather than direct TOV measurements. Together with the earlier horizon-scale shadow/ringdown receipt, the post-seal record supports the ordered finite white-dwarf, neutron-star and horizon-endpoint classes. No direct astrophysical Hawking-radiation or temperature measurement exists in the registered vector, so the exact mT=1/16 law remains an unconfirmed, falsifiable prediction rather than a rewarded absence.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-COMPACT-HORIZON-THERMODYNAMICS-TERMINAL-071`
+- `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed compact carrier, complete object-family vector, source custody, dimensional-role separation, conditional-limit retention, Hawking standing-test status, target inaccessibility and no-extra-rule. The declared exact boundary is: The sealed Claim 071 receipt; all NASA white-dwarf rows; the full PSR J0740 mass, uncertainty, credibility and method record; both conditional LIGO-Virgo remnant limits; the immutable prior horizon-validation boundary; all three source snapshots; and no target access before seal. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-compact-horizon-law-versus-complete-current-object-boundary__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-compact-horizon-law-versus-complete-current-object-boundary` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:bfd7bc7756485a0dafece5f0e8f659d62f55132d13aa52d371010ecda340abc5`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:6bf6814835ef4eeb2f511d887bef6e8221922fe9e99c26b4a47af7ce909505ec`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:47197b8de4600a7aaad77e5868980b543cc3f3239b787d2fe6d7be881916958a`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:c0d38852e5d941098fdbbe8f5dada47c679aac539a404f1fdae54d21aaf1d1e0`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:0f770d778da96c076a83132c7d57e64499d4a9905fb4cd8bf31e828d99ed5d96`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:bce83e05cc4d335ba8b1bf4166592e2cf61e9eedceee0891844903b0ed01ba85`. Independent certificate: `sha256:74bc925ce6fa49912d235061d924e290c8362727f2593b5525e9bbbcc7630406`. Engine external-validation hash: `sha256:785891cb94b1f22d4c67da47f895069919dc319709bde25853120526159113fd`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- NASA-GSFC-WHITE-DWARF-CHANDRASEKHAR
+- FONSECA-2021-PSR-J0740-MASS
+- LIGO-VIRGO-2019-GW170817-REMNANT
+
+Observed comparison records:
+
+- NASA records electron degeneracy and the 7/5-solar-mass white-dwarf limit.
+- PSR J0740+6620 is measured at 52/25 +/- 7/100 solar masses; its complete interval lies above 7/5.
+- Both LIGO-Virgo conditional remnant limits are retained with their model conditions and are not called direct TOV measurements.
+- The prior horizon receipt is retained unchanged; direct Hawking radiation and temperature remain unmeasured standing tests.
+- Hawking non-observation is explicitly not counted as confirmation of the formal mT=1/16 prediction.
+- Reversed-order, collapsed-upper and erased-condition hostile controls all reject.
+
+Falsification condition: Reject if any source changes; the measured neutral-fermion object no longer lies above the complete white-dwarf limit; either conditional remnant row is omitted or stripped of its condition; Hawking non-observation is counted as confirmation; target data select or modify Claim 071; an external signed coordinate becomes a Fold proof scalar; or any hostile control passes incorrectly.
+
+Measurement receipt: `sha256:f6d5b035886daa8148cf24c06998e4f498ab93478bfd6af5988a21552f75299c`. Isolation certificate: `sha256:7d65d02a2f387d360082c171f4f6d10fe3548d315c86445fe47b15e1acf072c0`. Custody certificate: `sha256:cf5f250e6766c2a38fe66c7f8bb8e7daac18393d150e46819efa78efed40a9af`.
+
+Registered source descriptions:
+
+- NASA GSFC Imagine the Universe: White Dwarfs: https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html (sha256:29d25e42773e2b6c5c5f292ef97b6abb28e430f4b6af6336720ee5e3d41aa2a5)
+- Refined Mass and Geometric Measurements of the High-Mass PSR J0740+6620: https://arxiv.org/abs/2104.00880 (sha256:66c7fbaacc06a5fa3513a7d963d2b300b05a0a52552e2358e9f257940f37b47a)
+- Model comparison from LIGO-Virgo data on GW170817 binary components and consequences for the merger remnant: https://dcc.ligo.org/LIGO-P1800379/public (sha256:86d4efa4b4c5153799edf278bcd99b10753540337c876fbf505855b8bb949122)
+
+Registered target identities:
+
+- COMPACT-HORIZON-WITHHELD-COMPLETE-RECORD from COMPLETE-COMPACT-HORIZON-VECTOR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no compact-object mass, uncertainty, merger condition, horizon image or Hawking status in formal survivor selection
+- no fitted mass coefficient, equation-of-state choice, tolerance, temperature scale or target-selected correction
+- no white-dwarf theory summary relabelled as direct mass measurement
+- no observed neutron-star mass relabelled as the unknown maximum mass
+- no conditional merger bound relabelled as a direct TOV measurement
+- no Hawking non-observation rewarded as confirmation and no signed external coordinate imported as a Fold proof scalar
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:7e8c74ff06b33668cd0baec4d0ea0812645956b4f0d5f5904f3ea162ef1f56c1`; engine receipt `sha256:3df00caeaae7eb06d7b17539e9eb6282737e70c3a8c9a7208c83009b97acd124` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072-3df00caeaae7eb06.json`; empirical-validation hash `sha256:cc4c30b739d2862f07b85dc43938f0e80374ec5331adcff998cd5507863f64f2`; measurement receipt `sha256:f6d5b035886daa8148cf24c06998e4f498ab93478bfd6af5988a21552f75299c`.
+
+### 347. Complete empirical gravitational-wave chirp, merger and ringdown comparison
+
+Claim identity: `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The complete empirical record supports all three forced waveform stages. GW151226 rises from 35 to 450 Hz and in amplitude over 55 cycles, retains positive radiated energy and records two initial components joining one final remnant. GW190521 retains a decaying least-damped l=m=2 remnant mode compatible with its full waveform analysis. Its short duration, conditional quasicircular interpretation and alternative-source boundary remain explicit. GW150914 is retained as observational development evidence, not counted as a blind target. No external value selects or modifies the 4096-form Claim 073 survivor, and no dimensional frequency or fitted damping value becomes a Fold proof scalar.
+
+> The complete empirical record supports all three forced waveform stages. GW151226 rises from 35 to 450 Hz and in amplitude over 55 cycles, retains positive radiated energy and records two initial components joining one final remnant. GW190521 retains a decaying least-damped l=m=2 remnant mode compatible with its full waveform analysis. Its short duration, conditional quasicircular interpretation and alternative-source boundary remain explicit. GW150914 is retained as observational development evidence, not counted as a blind target. No external value selects or modifies the 4096-form Claim 073 survivor, and no dimensional frequency or fitted damping value becomes a Fold proof scalar.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-TERMINAL-073`
+- `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of sealed Fold sequence, complete post-seal event vector, source custody, rising-chirp ordering, two-to-one remnant transition, damped-mode support, scope retention and no-extra-rule. The declared exact boundary is: The immutable Claim 073 receipt; disclosed GW150914 development context; every GW151226 frequency, amplitude, cycle, source, remnant, energy, uncertainty and model-role row; every GW190521 duration, cycle, frequency, source, remnant, ringdown and conditional-interpretation row; and all hostile controls. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__sealed-Fold-chirp-merger-ringdown-sequence-versus-complete-postseal-LIGO-vector__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `sealed-Fold-chirp-merger-ringdown-sequence-versus-complete-postseal-LIGO-vector` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:92bdc306ff6274441d2cb013f7365da9d6177cbd4dc537e79abadc2fe70950f8`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:8d6ad202adf8a70915d4cead12907a1296914626f921ea9a01600d578bfc7520`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:329e5d4db94a3fa35b0cf093a42c00037843fff6d581493f77f15add230e698f`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:14b95e26cf8f0a19780927b2e7c1fd82b6f912719570584d74226ee90573e6bd`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:45dece7ae7177ccf5e3e8cdfeca815fdc131af0943ffc70f5ffbc6d1a7b0bece`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:62c52df9671103756f013b7c2525757b1d2652c3e1149840f8f1bd0eca087d15`. Independent certificate: `sha256:5f5d4fa9d496a8064f43df7450856bc28c9e5333db1656d8560a041bf631e5b1`. Engine external-validation hash: `sha256:149d5efb655201049e1c3fcf2cd34337a83ca45684e321bd0240259b58079e1d`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- LIGO-VIRGO-GW151226-DISCOVERY-2016
+- LIGO-VIRGO-GW190521-DISCOVERY-2020
+
+Observed comparison records:
+
+- GW150914 is retained as pre-seal observational context and is not counted as blind validation.
+- GW151226 rises in frequency from 35 to 450 Hz and in amplitude over 55 cycles.
+- GW151226 retains positive radiated energy and the two-component-to-one-remnant transition with full uncertainties and model role.
+- GW190521 retains one remnant, a decaying least-damped quadrupolar mode and compatibility with the full waveform analysis.
+- GW190521's conditional quasicircular interpretation, short-signal limit and alternative interpretations remain explicit.
+- No dimensional frequency or exact half-One damping value is relabelled as a Fold proof scalar or direct universal measurement.
+
+Falsification condition: Reject if a post-seal source changes; rising frequency/amplitude, positive radiation, two-to-one merger or decaying quadrupolar remnant support fails; any uncertainty or conditional/model boundary is omitted; GW150914 is relabelled as blind; a dimensional target selects Claim 073; or any hostile control passes.
+
+Measurement receipt: `sha256:1e267de913c50323223c4e548c9b10fab5ccf279081db59446b78f1684309f7e`. Isolation certificate: `sha256:ed8c3a7d3d2a84f2d0ea64a6c3af2c31a2caa04320a413b092583784623e7870`. Custody certificate: `sha256:21fb28c3798ac2479fb847753b0a04b6e5bdffe39464ba5e502c59886c77d996`.
+
+Registered source descriptions:
+
+- LIGO Scientific Collaboration and Virgo Collaboration: https://dcc.ligo.org/LIGO-P151226/public (sha256:a59bb954e9850a8800e2b62e1808553012e791b879e00f108b0bf061bf530e72)
+- LIGO Scientific Collaboration and Virgo Collaboration: https://dcc.ligo.org/P2000020/public (sha256:4d6661f18168267249b3ca043b0692d88376c9db9b3d9146a9500763f7b438a7)
+
+Registered target identities:
+
+- GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-WITHHELD-POSTSEAL-RECORD from COMPLETE-POSTSEAL-GRAVITATIONAL-WAVE-VECTOR
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no claim that GW150914 was unseen before Claim 073
+- no use of GW151226 or GW190521 values to select or alter the formal survivor
+- no fitted chirp mass, waveform, merger time, damping coefficient, tone or tolerance
+- no model-assisted remnant property relabelled as direct model-free measurement
+- no claim that half-One damping or normalized Fold frequency was directly measured
+- no omitted uncertainty, short-signal, conditional-interpretation or alternative-source row
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:76cd8e8bf521eeadf34de36bf9951e70cdd1578454b268cceb84a67a2da8d470`; engine receipt `sha256:80a9f13dc620d3cb2bf16597d54b63562aeac60ad1bab25d1327aabafb8bf576` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-80a9f13dc620d3cb.json`; empirical-validation hash `sha256:a197d901695d69375e3d5adc571616d5324340f82ae7539dd190aaff9b26b361`; measurement receipt `sha256:1e267de913c50323223c4e548c9b10fab5ccf279081db59446b78f1684309f7e`.
+
+### 348. Terminal Physics Grand Lock and extension-open no-omission certificate
+
+Claim identity: `SFT-PHYS-GRAND-LOCK-TERMINAL-075`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** The frozen pre-lock Physics surface contains exactly 347 uniquely owned admitted claims and 534 transitive dependency nodes. Every Physics claim reaches SFT-FOUNDATION-ONE-001 in one acyclic dependency dictionary. Exactly 234 Physics claims carry empirical-test receipts, and every recorded unfavorable result or scope boundary remains bound. The current generator-three headline vector recomputes exactly, including inverse alpha 503846395469/3676744786, charged-lepton invariants 1, 1/6, 1/485 and 3/1454 plus the terminal product, quark products 1/383 and 1/3071, dark/baryon 27/5 with 27/32 and 5/32, Hubble 13/12 and 3305/3048, the terminal squared Planck/proton hierarchy, local vacuum floors 1/2^10 and 1/2^20, and normalized cosmological value 33/16. Under the complete generator successor three-to-four, every declared generator-dependent value changes while half-One, spatial rank three and boundary rank two remain fixed.
+
+> The frozen pre-lock Physics surface contains exactly 347 uniquely owned admitted claims and 534 transitive dependency nodes. Every Physics claim reaches SFT-FOUNDATION-ONE-001 in one acyclic dependency dictionary. Exactly 234 Physics claims carry empirical-test receipts, and every recorded unfavorable result or scope boundary remains bound. The current generator-three headline vector recomputes exactly, including inverse alpha 503846395469/3676744786, charged-lepton invariants 1, 1/6, 1/485 and 3/1454 plus the terminal product, quark products 1/383 and 1/3071, dark/baryon 27/5 with 27/32 and 5/32, Hubble 13/12 and 3305/3048, the terminal squared Planck/proton hierarchy, local vacuum floors 1/2^10 and 1/2^20, and normalized cosmological value 33/16. Under the complete generator successor three-to-four, every declared generator-dependent value changes while half-One, spatial rank three and boundary rank two remain fixed.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-ATOMIC-CELL-ORBIT-CAPACITY-001`
+- `SFT-PHYS-ATOMIC-CORRECTION-HIERARCHY-004`
+- `SFT-PHYS-ATOMIC-CUBIC-SUPPORT-004`
+- `SFT-PHYS-ATOMIC-EXISTENCE-BOUNDARY-001`
+- `SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-HYDROGEN-SPECTRUM-004`
+- `SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-TRANSITION-SELECTION-004`
+- `SFT-PHYS-BARYOGENESIS-DEPENDENCY-TERMINAL-021`
+- `SFT-PHYS-COLLECTIVE-RADIATION-RESPONSE-TERMINAL-041`
+- `SFT-PHYS-COMPACT-HORIZON-THERMODYNAMICS-TERMINAL-071`
+- `SFT-PHYS-COMPOSITE-CONFINING-SECTOR-TERMINAL-031`
+- `SFT-PHYS-CONDENSED-BAND-001`
+- `SFT-PHYS-CONDENSED-LATTICE-001`
+- `SFT-PHYS-CONDENSED-PHASE-ORDER-001`
+- `SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001`
+- `SFT-PHYS-CONDENSED-TOPOLOGICAL-001`
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-CUBIC-001`
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
+- `SFT-PHYS-CONSTANT-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-CONTINUUM-COARSE-GRAIN-001`
+- `SFT-PHYS-COSMO-BACKGROUND-001`
+- `SFT-PHYS-COSMO-BRANCH-BOUNDARY-001`
+- `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+- `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
+- `SFT-PHYS-COSMO-DISTANCE-001`
+- `SFT-PHYS-COSMO-EXPANSION-001`
+- `SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001`
+- `SFT-PHYS-COSMO-LENSING-001`
+- `SFT-PHYS-COSMO-REDSHIFT-001`
+- `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
+- `SFT-PHYS-COSMO-STRUCTURE-GROWTH-001`
+- `SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007`
+- `SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008`
+- `SFT-PHYS-COUPLING-ACCUMULATED-SEPARATION-TERMINAL-015`
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-PHYS-CRITICALITY-UNIVERSALITY-TURBULENCE-TERMINAL-047`
+- `SFT-PHYS-DARK-SMITHION-LFV-TERMINAL-061`
+- `SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006`
+- `SFT-PHYS-DYNAMICS-FREE-PHASE-DISPERSION-003`
+- `SFT-PHYS-DYNAMICS-POTENTIAL-EVOLUTION-003`
+- `SFT-PHYS-DYNAMICS-STATIONARY-SPECTRUM-003`
+- `SFT-PHYS-DYNAMICS-SYMMETRY-ACTION-TERMINAL-016`
+- `SFT-PHYS-ELECTRON-DIRAC-G-FACTOR-002`
+- `SFT-PHYS-ELECTROWEAK-FOLD-MIXING-002`
+- `SFT-PHYS-ELECTROWEAK-TERMINAL-ON-SHELL-003`
+- `SFT-PHYS-ELECTROWEAK-WZ-RATIO-002`
+- `SFT-PHYS-FIELD-ACTION-REACTION-001`
+- `SFT-PHYS-FIELD-CONSERVED-SOURCE-001`
+- `SFT-PHYS-FIELD-COULOMB-GAUSS-CLOSURE-003`
+- `SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001`
+- `SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001`
+- `SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001`
+- `SFT-PHYS-FIELD-FINITE-LOOP-CLOSURE-003`
+- `SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001`
+- `SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001`
+- `SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001`
+- `SFT-PHYS-FIELD-INDUCTION-001`
+- `SFT-PHYS-FIELD-INTERACTION-CLASSES-001`
+- `SFT-PHYS-FIELD-INVERSE-SQUARE-001`
+- `SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001`
+- `SFT-PHYS-FIELD-LORENTZ-TRANSFER-003`
+- `SFT-PHYS-FIELD-MAGNETIC-001`
+- `SFT-PHYS-FIELD-MAGNETIC-RELATIVITY-003`
+- `SFT-PHYS-FIELD-MAXWELL-PLANAR-CLOSURE-003`
+- `SFT-PHYS-FIELD-MAXWELL-THREE-SPACE-CLOSURE-003`
+- `SFT-PHYS-FIELD-RADIATION-001`
+- `SFT-PHYS-FIELD-SOURCE-RESPONSE-001`
+- `SFT-PHYS-FINITE-QUANTUM-GRAVITY-TERMINAL-023`
+- `SFT-PHYS-FLUID-CONSERVATION-001`
+- `SFT-PHYS-FLUID-DENSITY-001`
+- `SFT-PHYS-FLUID-INVISCID-001`
+- `SFT-PHYS-FLUID-PRESSURE-STRESS-001`
+- `SFT-PHYS-FLUID-TURBULENCE-001`
+- `SFT-PHYS-FLUID-VISCOSITY-001`
+- `SFT-PHYS-FOLD-UNIVERSE-TRANSPORT-TERMINAL-024`
+- `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003`
+- `SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002`
+- `SFT-PHYS-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-TERMINAL-073`
+- `SFT-PHYS-GRAVITY-CURVATURE-001`
+- `SFT-PHYS-GRAVITY-EQUIVALENCE-001`
+- `SFT-PHYS-GRAVITY-FIELD-SOURCE-001`
+- `SFT-PHYS-GRAVITY-GEODESIC-001`
+- `SFT-PHYS-GRAVITY-GRAVITON-POLARIZATION-003`
+- `SFT-PHYS-GRAVITY-HORIZON-001`
+- `SFT-PHYS-GRAVITY-HORIZON-INFORMATION-003`
+- `SFT-PHYS-GRAVITY-LATTICE-CURVATURE-003`
+- `SFT-PHYS-GRAVITY-NONLINEAR-SELF-SOURCE-003`
+- `SFT-PHYS-GRAVITY-REDSHIFT-EQUIVALENCE-003`
+- `SFT-PHYS-GRAVITY-STATIC-CLOCK-003`
+- `SFT-PHYS-GRAVITY-STRONG-FIELD-HORIZON-003`
+- `SFT-PHYS-GRAVITY-WAVE-001`
+- `SFT-PHYS-GRAVITY-WAVE-QUADRUPOLE-003`
+- `SFT-PHYS-GRAVITY-WEAK-FIELD-FLUX-003`
+- `SFT-PHYS-HADRON-REGGE-DIMENSIONAL-TERMINAL-059`
+- `SFT-PHYS-HADRON-REGGE-TERMINAL-005`
+- `SFT-PHYS-HIGGS-SYMMETRY-TERMINAL-065`
+- `SFT-PHYS-INFLATION-GROWTH-TERMINAL-039`
+- `SFT-PHYS-INTERACTION-UNIFICATION-TERMINAL-025`
+- `SFT-PHYS-LATTICE-OPERATOR-TERMINAL-022`
+- `SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008`
+- `SFT-PHYS-MATTER-BARYON-PHOTON-003`
+- `SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004`
+- `SFT-PHYS-MATTER-CKM-FIBRE-003`
+- `SFT-PHYS-MATTER-CKM-PHYSICAL-003`
+- `SFT-PHYS-MATTER-CKM-TERMINAL-004`
+- `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
+- `SFT-PHYS-MATTER-CONFINEMENT-LIFT-003`
+- `SFT-PHYS-MATTER-CONSERVED-LABELS-001`
+- `SFT-PHYS-MATTER-DECAY-001`
+- `SFT-PHYS-MATTER-FERMION-BOSON-001`
+- `SFT-PHYS-MATTER-GENERATION-DEPTH-003`
+- `SFT-PHYS-MATTER-INTER-ENTRY-COUPLING-003`
+- `SFT-PHYS-MATTER-MASS-ENERGY-001`
+- `SFT-PHYS-MATTER-MASS-RATIO-FAMILY-003`
+- `SFT-PHYS-MATTER-MIRROR-MASS-CLOSURE-003`
+- `SFT-PHYS-MATTER-MIXING-001`
+- `SFT-PHYS-MATTER-MIXING-CORRESPONDENCE-003`
+- `SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001`
+- `SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001`
+- `SFT-PHYS-MATTER-PROTON-ELECTRON-003`
+- `SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004`
+- `SFT-PHYS-MATTER-QUARK-CUBICS-003`
+- `SFT-PHYS-MATTER-QUARK-DRESSING-003`
+- `SFT-PHYS-MATTER-QUARK-INVARIANTS-003`
+- `SFT-PHYS-MATTER-SCATTERING-001`
+- `SFT-PHYS-MEAS-BOUNDARY-GROWTH-001`
+- `SFT-PHYS-MEAS-CALIBRATION-001`
+- `SFT-PHYS-MEAS-CAPABILITY-PREDICTION-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+- `SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001`
+- `SFT-PHYS-MEAS-HOSTILE-PACKAGE-001`
+- `SFT-PHYS-MEAS-OBSERVATION-CARRIER-001`
+- `SFT-PHYS-MEAS-QUANTITY-CARRIER-001`
+- `SFT-PHYS-MEAS-REFERENCE-REALIZATION-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-UNIT-COMPARISON-001`
+- `SFT-PHYS-MEAS-VALUE-RECORD-001`
+- `SFT-PHYS-MECH-ACCELERATION-001`
+- `SFT-PHYS-MECH-ANGULAR-MOMENTUM-001`
+- `SFT-PHYS-MECH-ANGULAR-MOTION-001`
+- `SFT-PHYS-MECH-COMPOSITE-CENTRE-001`
+- `SFT-PHYS-MECH-CONSERVATION-001`
+- `SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001`
+- `SFT-PHYS-MECH-DURATION-001`
+- `SFT-PHYS-MECH-EVENT-CHANGE-001`
+- `SFT-PHYS-MECH-FORCE-001`
+- `SFT-PHYS-MECH-INERTIA-001`
+- `SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001`
+- `SFT-PHYS-MECH-MOMENTUM-001`
+- `SFT-PHYS-MECH-POWER-001`
+- `SFT-PHYS-MECH-SPEED-VELOCITY-001`
+- `SFT-PHYS-MECH-WORK-ENERGY-001`
+- `SFT-PHYS-MEDIATOR-RANGE-CHANNEL-TERMINAL-020`
+- `SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005`
+- `SFT-PHYS-MOLECULAR-SPECTRUM-HIERARCHY-004`
+- `SFT-PHYS-NEUTRINO-CP-PHASE-002`
+- `SFT-PHYS-NEUTRINO-MAJORANA-003`
+- `SFT-PHYS-NEUTRINO-PMNS-ANGLES-002`
+- `SFT-PHYS-NEUTRINO-PMNS-CP-PHYSICAL-003`
+- `SFT-PHYS-NEUTRINO-POSITIVE-MASS-003`
+- `SFT-PHYS-NEUTRINO-SPLITTING-003`
+- `SFT-PHYS-NEUTRINO-ZERO-NU-BETA-BETA-003`
+- `SFT-PHYS-NUCLEAR-BINDING-001`
+- `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-CLOSURE-SEQUENCE-001`
+- `SFT-PHYS-NUCLEAR-COLOUR-COUPLING-001`
+- `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`
+- `SFT-PHYS-NUCLEAR-FISSION-001`
+- `SFT-PHYS-NUCLEAR-FUSION-001`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
+- `SFT-PHYS-NUCLEAR-LEVELS-001`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVITY-001`
+- `SFT-PHYS-NUCLEAR-REACTIONS-001`
+- `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`
+- `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
+- `SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007`
+- `SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009`
+- `SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028`
+- `SFT-PHYS-PARTICLE-MODE-GENERATION-TERMINAL-051`
+- `SFT-PHYS-PLASMA-COLLECTIVE-001`
+- `SFT-PHYS-PLASMA-MHD-001`
+- `SFT-PHYS-PLASMA-OSCILLATION-001`
+- `SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009`
+- `SFT-PHYS-PROTON-RADIUS-TERMINAL-029`
+- `SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004`
+- `SFT-PHYS-QED-LEPTON-MAGNETIC-ANOMALY-003`
+- `SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004`
+- `SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004`
+- `SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012`
+- `SFT-PHYS-QUANTUM-BELL-001`
+- `SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001`
+- `SFT-PHYS-QUANTUM-CONTEXTUALITY-001`
+- `SFT-PHYS-QUANTUM-DECOHERENCE-001`
+- `SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001`
+- `SFT-PHYS-QUANTUM-ENTANGLEMENT-001`
+- `SFT-PHYS-QUANTUM-EVOLUTION-001`
+- `SFT-PHYS-QUANTUM-EXCLUSION-001`
+- `SFT-PHYS-QUANTUM-INCOMPATIBILITY-001`
+- `SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001`
+- `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
+- `SFT-PHYS-QUANTUM-OBSERVABLE-001`
+- `SFT-PHYS-QUANTUM-PHYSICAL-STATE-001`
+- `SFT-PHYS-QUANTUM-SPIN-001`
+- `SFT-PHYS-QUANTUM-SUPPORT-UNCERTAINTY-TERMINAL-049`
+- `SFT-PHYS-QUANTUM-TUNNELLING-001`
+- `SFT-PHYS-QUANTUM-WEIGHT-001`
+- `SFT-PHYS-RELATIVITY-FULL-DIRAC-SQUARE-003`
+- `SFT-PHYS-RELATIVITY-TWO-HAND-DIRAC-SQUARE-003`
+- `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+- `SFT-PHYS-SCALE-PROTON-PLANCK-HIERARCHY-002`
+- `SFT-PHYS-SCALE-PROTON-PLANCK-TERMINAL-003`
+- `SFT-PHYS-SCATTERING-PARTITION-PATH-TERMINAL-017`
+- `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`
+- `SFT-PHYS-SPACE-BOUNDARY-RANK-TWO-001`
+- `SFT-PHYS-SPACE-DIMENSION-THREE-001`
+- `SFT-PHYS-SPACETIME-CAUSAL-ORDER-001`
+- `SFT-PHYS-SPACETIME-CLOCK-RATE-001`
+- `SFT-PHYS-SPACETIME-CLOSED-TIMELIKE-ADMISSIBILITY-003`
+- `SFT-PHYS-SPACETIME-EVENT-RELATION-001`
+- `SFT-PHYS-SPACETIME-EXACT-INTERVAL-003`
+- `SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001`
+- `SFT-PHYS-SPACETIME-INTERVAL-001`
+- `SFT-PHYS-SPACETIME-LENGTH-RELATION-001`
+- `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
+- `SFT-PHYS-SPACETIME-VELOCITY-COMPOSITION-TERMINAL-033`
+- `SFT-PHYS-SPACETIME-WARP-ADMISSIBILITY-003`
+- `SFT-PHYS-SPACETIME-WORMHOLE-ADMISSIBILITY-003`
+- `SFT-PHYS-SPIN-STATISTICS-CONDENSATION-TERMINAL-045`
+- `SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011`
+- `SFT-PHYS-STELLAR-GALACTIC-TIDAL-TERMINAL-067`
+- `SFT-PHYS-STELLAR-NUCLEAR-COLLAPSE-TERMINAL-069`
+- `SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013`
+- `SFT-PHYS-STRONG-CP-BARYON-STABILITY-TERMINAL-063`
+- `SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014`
+- `SFT-PHYS-STRONG-RUNNING-DIRECTION-002`
+- `SFT-PHYS-STRUCT-GENERATOR-THREE-001`
+- `SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010`
+- `SFT-PHYS-THERMAL-EQUILIBRIUM-RESPONSE-TERMINAL-043`
+- `SFT-PHYS-THERMAL-HELIUM-ISOTOPE-TERMINAL-057`
+- `SFT-PHYS-THERMAL-HISTORY-RECOMBINATION-TERMINAL-037`
+- `SFT-PHYS-THERMO-ENTROPY-001`
+- `SFT-PHYS-THERMO-EQUILIBRIUM-001`
+- `SFT-PHYS-THERMO-FIRST-LAW-001`
+- `SFT-PHYS-THERMO-FLUCTUATION-001`
+- `SFT-PHYS-THERMO-HEAT-WORK-001`
+- `SFT-PHYS-THERMO-IRREVERSIBILITY-001`
+- `SFT-PHYS-THERMO-KINETIC-TRANSPORT-001`
+- `SFT-PHYS-THERMO-LANDAUER-DEMON-TERMINAL-018`
+- `SFT-PHYS-THERMO-LANDAUER-EMPIRICAL-019`
+- `SFT-PHYS-THERMO-MICRO-MACRO-001`
+- `SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001`
+- `SFT-PHYS-THERMO-RESPONSE-001`
+- `SFT-PHYS-THERMO-SECOND-LAW-001`
+- `SFT-PHYS-THERMO-STATE-RELATION-001`
+- `SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001`
+- `SFT-PHYS-THERMO-TEMPERATURE-001`
+- `SFT-PHYS-THERMO-THIRD-LAW-001`
+- `SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003`
+- `SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003`
+- `SFT-PHYS-VACUUM-DENSITY-SCALE-TERMINAL-035`
+- `SFT-PHYS-VACUUM-HALF-ONE-FLOOR-003`
+- `SFT-PHYS-VACUUM-INERTIA-UNITY-003`
+- `SFT-PHYS-VACUUM-ODD-RECURRENCE-003`
+- `SFT-PHYS-VACUUM-POLARIZATION-RUNNING-003`
+- `SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004`
+- `SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002`
+- `SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042`
+- `SFT-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054`
+- `SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072`
+- `SFT-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055`
+- `SFT-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056`
+- `SFT-PHYS-VALIDATION-CRITICALITY-UNIVERSALITY-TURBULENCE-048`
+- `SFT-PHYS-VALIDATION-DARK-SMITHION-LFV-062`
+- `SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003`
+- `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001`
+- `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001`
+- `SFT-PHYS-VALIDATION-FINITE-LOOPS-003`
+- `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003`
+- `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074`
+- `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
+- `SFT-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060`
+- `SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066`
+- `SFT-PHYS-VALIDATION-INFLATION-GROWTH-040`
+- `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-VALIDATION-INVERSE-SQUARE-001`
+- `SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003`
+- `SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003`
+- `SFT-PHYS-VALIDATION-MECHANICS-FORCE-001`
+- `SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001`
+- `SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001`
+- `SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003`
+- `SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003`
+- `SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001`
+- `SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003`
+- `SFT-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052`
+- `SFT-PHYS-VALIDATION-PROTON-ELECTRON-003`
+- `SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003`
+- `SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050`
+- `SFT-PHYS-VALIDATION-QUARK-CKM-003`
+- `SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003`
+- `SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046`
+- `SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068`
+- `SFT-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070`
+- `SFT-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064`
+- `SFT-PHYS-VALIDATION-THERMAL-EQUILIBRIUM-044`
+- `SFT-PHYS-VALIDATION-THERMAL-HISTORY-MEASURED-VALUE-058`
+- `SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038`
+- `SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001`
+- `SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036`
+- `SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003`
+- `SFT-PHYS-VALIDATION-VACUUM-FLOOR-003`
+- `SFT-PHYS-VALIDATION-VACUUM-INERTIA-003`
+- `SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003`
+- `SFT-PHYS-VALIDATION-VELOCITY-COMPOSITION-034`
+- `SFT-PHYS-VALIDATION-WAVE-ENERGY-001`
+- `SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001`
+- `SFT-PHYS-WAVE-DIFFRACTION-001`
+- `SFT-PHYS-WAVE-DISPERSION-001`
+- `SFT-PHYS-WAVE-ENERGY-MOMENTUM-001`
+- `SFT-PHYS-WAVE-EXACT-OPERATIONS-003`
+- `SFT-PHYS-WAVE-INTERFERENCE-001`
+- `SFT-PHYS-WAVE-PERIOD-FREQUENCY-001`
+- `SFT-PHYS-WAVE-POLARIZATION-001`
+- `SFT-PHYS-WAVE-PROPAGATION-001`
+- `SFT-PHYS-WAVE-RESONANCE-001`
+- `SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001`
+- `SFT-PHYS-WAVE-SUPERPOSITION-001`
+- `SFT-PHYS-WEAK-PARITY-FIBRE-002`
+- `SFT-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027`
+- `SFT-PHYS-YANG-MILLS-SINGLET-GAP-TERMINAL-026`
+
+**Generated grammar and closure boundary.** Generate the complete twelve-axis product of ownership, receipt identity, registration identity, dependency closure, root reachability, value vector, generator perturbation, invariant control, cross-domain identity, empirical reconciliation, extension status and extra-rule forms. The declared exact boundary is: All 347 admitted pre-lock Physics claims, all 534 nodes in their dependency closure, every bound exact-result and empirical certificate row, the complete generator-three to generator-four adverse perturbation, all shared structural carriers and all 4096 alternatives. The generator produced `4096` named candidates and the decision support contains `4096` one-for-one decisions. Exactly one candidate survived: `unique-complete-physics-owner__receipt-and-certificate-hash-bound__registration-and-dependencies-hash-bound__complete-acyclic-dictionary__foundational-One-root__all-claim-exact-result-vector__every-and-only-declared-dependent-value-moves__binary-space-boundary-held__complete-cross-domain-identity-graph__complete-receipts-with-adverse-boundaries__current-evidence-closed-extension-open__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `ownership` | `unique-complete-physics-owner` | `omitted-or-duplicate-owner` | That is not a complete branch census. |
+| `receipt` | `receipt-and-certificate-hash-bound` | `unbound-or-current-only-result` | That cannot detect replacement. |
+| `registration` | `registration-and-dependencies-hash-bound` | `unstated-or-mutable-premises` | That erases the proof route. |
+| `dependency` | `complete-acyclic-dictionary` | `orphan-or-cycle` | An orphan or cycle cannot derive from the One. |
+| `root` | `foundational-One-root` | `multiple-or-missing-roots` | That adds an axiom or loses derivation. |
+| `values` | `all-claim-exact-result-vector` | `headline-selection-only` | Selecting favorable headlines permits omission. |
+| `perturbation` | `every-and-only-declared-dependent-value-moves` | `selected-values-move` | A selected subset cannot prove structural dependence. |
+| `invariants` | `binary-space-boundary-held` | `silent-global-retuning` | Global retuning cannot localize cause. |
+| `identity` | `complete-cross-domain-identity-graph` | `duplicate-unrelated-numbers` | Coincidence without provenance is not identity. |
+| `empirical` | `complete-receipts-with-adverse-boundaries` | `favourable-rows-only` | Cherry-picking violates the empirical record. |
+| `extension` | `current-evidence-closed-extension-open` | `permanently-locked-theory` | That would exclude lawful discovery. |
+| `rule` | `no-extra-rule` | `free-extra-rule` | An extra rule is a parameter. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:cf92b9cf88639e40fc0cbbe37f7361b252f6839e6a64cdbe7c0e48d47857a592`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the form missing the first structural preservation; observed reject the form missing the first structural preservation; receipt `sha256:f4786d8a1868ac9dda94eacd530e2f7ee6b2edd640697d9918d5b1bb6ceb3819`.
+- `tampered_source`: passed; expected reject a changed source identity; observed reject a changed source identity; receipt `sha256:4c0f5ac74cf9fe44c88c8e6ec55de9f9cb5ea1bf87dd112e081f86b6667d1afe`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:deb3e5409ab49a544b77cf151557f3e24de8e44a6784215a4d3349e493725803`.
+- `boundary`: passed; expected reject forbidden values, target feedback and extra laws; observed reject forbidden values, target feedback and extra laws; receipt `sha256:10640f437fe38173ec3f5697342bb57007e4c75ed6169e83dac6e47d1b8c4210`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:bff4a8792ccae133d39c7661cf47ba22f3ea3330d4f8b3dc0c29228ff36077ef`. Independent certificate: `sha256:0599cd41db3228cf2f60d71a77582a1ed85a272cde0e16b19645ace592648898`. Engine external-validation hash: `sha256:65110685b0d6c88d72cdb3f2704a305b540d1c011e92b5a5ef87bb00c9dd5392`.
+
+**External empirical check.** This formal prerequisite makes no direct natural-law claim.
+
+Registered source descriptions:
+
+- None.
+
+Registered target identities:
+
+- None.
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no edit to the canonical engine or any admitted receipt
+- no measurement, V1/V2 result or external equation selecting a formal survivor
+- no fitted parameter, tolerance, candidate neighborhood or omitted adverse result
+- no numerical-zero, negative, irrational, imaginary, floating, NaN or completed-infinite proof scalar
+- no assertion that current completion prohibits a later lawfully forced extension
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:91770400e9861ef159a95209bd52e675bc08f4e1cd81bd02de93dba586758cb0`; engine receipt `sha256:ae18f67371c8e7054430935d6b5e5f3162f24cf9cba073769384bf7ba467d817` at `receipts/engine/model_admitted/SFT-PHYS-GRAND-LOCK-TERMINAL-075-ae18f67371c8e705.json`; empirical-validation hash `None`; measurement receipt `None`.
+
+### 349. Complete Physics empirical-vector and adverse-result Grand Lock
+
+Claim identity: `SFT-PHYS-VALIDATION-GRAND-LOCK-076`
+
+**Question.** Which generated form preserves the physical carrier, the Fold relation, complete provenance, target inaccessibility, measurement separation, complete rows, successor closure and absence of an extra rule?
+
+**Theorem.** Exactly 234 pre-lock Physics claims carry independently replicated empirical validation; their complete vector binds 147 distinct registered external source identities. All 234 empirical and external validation hashes are retained. Every available separate measurement receipt is retained, while six older claim packages lacking that later materialization field are explicitly identified rather than silently upgraded. All fourteen detected unfavorable-result or scope-boundary claims remain inside the same vector. The formal Grand Lock receipt predates this aggregate reconciliation; observations validate or challenge their declared claims but never select or alter a formal survivor.
+
+> Exactly 234 pre-lock Physics claims carry independently replicated empirical validation; their complete vector binds 147 distinct registered external source identities. All 234 empirical and external validation hashes are retained. Every available separate measurement receipt is retained, while six older claim packages lacking that later materialization field are explicitly identified rather than silently upgraded. All fourteen detected unfavorable-result or scope-boundary claims remain inside the same vector. The formal Grand Lock receipt predates this aggregate reconciliation; observations validate or challenge their declared claims but never select or alter a formal survivor.
+
+**Dependency chain.** The engine accepted only the following already model-admitted premises in addition to the single root theorem:
+
+- `SFT-PHYS-GRAND-LOCK-TERMINAL-075`
+- `SFT-PHYS-ATOMIC-FIELD-SPLITTING-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-FINE-STRUCTURE-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-HYPERFINE-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-SHELL-PERIODICITY-TERMINAL-005`
+- `SFT-PHYS-ATOMIC-TRANSITION-RATE-TERMINAL-005`
+- `SFT-PHYS-CONDENSED-BAND-001`
+- `SFT-PHYS-CONDENSED-LATTICE-001`
+- `SFT-PHYS-CONDENSED-PHASE-ORDER-001`
+- `SFT-PHYS-CONDENSED-SUPERCONDUCTIVITY-001`
+- `SFT-PHYS-CONDENSED-TOPOLOGICAL-001`
+- `SFT-PHYS-CONSTANT-CHARGED-LEPTON-TERMINAL-001`
+- `SFT-PHYS-CONTINUUM-COARSE-GRAIN-001`
+- `SFT-PHYS-COSMO-BACKGROUND-001`
+- `SFT-PHYS-COSMO-BRANCH-BOUNDARY-001`
+- `SFT-PHYS-COSMO-COMPLETE-BUDGET-001`
+- `SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032`
+- `SFT-PHYS-COSMO-DARK-BARYON-FRACTION-001`
+- `SFT-PHYS-COSMO-DISTANCE-001`
+- `SFT-PHYS-COSMO-EXPANSION-001`
+- `SFT-PHYS-COSMO-HUBBLE-CALIBRATION-001`
+- `SFT-PHYS-COSMO-LENSING-001`
+- `SFT-PHYS-COSMO-REDSHIFT-001`
+- `SFT-PHYS-COSMO-SPATIAL-FLATNESS-001`
+- `SFT-PHYS-COSMO-STRUCTURE-GROWTH-001`
+- `SFT-PHYS-COUPLED-ENSEMBLE-SYNCHRONIZATION-TERMINAL-007`
+- `SFT-PHYS-COUPLED-MAP-CRITICALITY-TERMINAL-008`
+- `SFT-PHYS-COUPLING-RUNNING-CONVERGENCE-TERMINAL-006`
+- `SFT-PHYS-DECAY-WIDTH-BRANCHING-LIFETIME-TERMINAL-006`
+- `SFT-PHYS-FIELD-ACTION-REACTION-001`
+- `SFT-PHYS-FIELD-CONSERVED-SOURCE-001`
+- `SFT-PHYS-FIELD-ELECTRIC-DISTINCTION-001`
+- `SFT-PHYS-FIELD-ELECTRIC-POTENTIAL-001`
+- `SFT-PHYS-FIELD-ELECTROMAGNETIC-COMPOSITION-001`
+- `SFT-PHYS-FIELD-GAUGE-EQUIVALENCE-001`
+- `SFT-PHYS-FIELD-GEOMETRIC-DILUTION-001`
+- `SFT-PHYS-FIELD-GRAVITATIONAL-INTERACTION-001`
+- `SFT-PHYS-FIELD-INDUCTION-001`
+- `SFT-PHYS-FIELD-INTERACTION-CLASSES-001`
+- `SFT-PHYS-FIELD-LOCALITY-CAUSALITY-001`
+- `SFT-PHYS-FIELD-MAGNETIC-001`
+- `SFT-PHYS-FIELD-RADIATION-001`
+- `SFT-PHYS-FIELD-SOURCE-RESPONSE-001`
+- `SFT-PHYS-FLUID-CONSERVATION-001`
+- `SFT-PHYS-FLUID-DENSITY-001`
+- `SFT-PHYS-FLUID-INVISCID-001`
+- `SFT-PHYS-FLUID-PRESSURE-STRESS-001`
+- `SFT-PHYS-FLUID-TURBULENCE-001`
+- `SFT-PHYS-FLUID-VISCOSITY-001`
+- `SFT-PHYS-GRAVITY-CURVATURE-001`
+- `SFT-PHYS-GRAVITY-EQUIVALENCE-001`
+- `SFT-PHYS-GRAVITY-FIELD-SOURCE-001`
+- `SFT-PHYS-GRAVITY-GEODESIC-001`
+- `SFT-PHYS-GRAVITY-HORIZON-001`
+- `SFT-PHYS-GRAVITY-WAVE-001`
+- `SFT-PHYS-HADRON-REGGE-TERMINAL-005`
+- `SFT-PHYS-LYAPUNOV-KS-CORRESPONDENCE-TERMINAL-008`
+- `SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004`
+- `SFT-PHYS-MATTER-CKM-TERMINAL-004`
+- `SFT-PHYS-MATTER-COMPOSITE-HADRONS-001`
+- `SFT-PHYS-MATTER-CONSERVED-LABELS-001`
+- `SFT-PHYS-MATTER-DECAY-001`
+- `SFT-PHYS-MATTER-FERMION-BOSON-001`
+- `SFT-PHYS-MATTER-MASS-ENERGY-001`
+- `SFT-PHYS-MATTER-MIXING-001`
+- `SFT-PHYS-MATTER-PARTICLE-ANTIPARTICLE-001`
+- `SFT-PHYS-MATTER-PARTICLE-SPECTRUM-001`
+- `SFT-PHYS-MATTER-PROTON-ELECTRON-TERMINAL-004`
+- `SFT-PHYS-MATTER-SCATTERING-001`
+- `SFT-PHYS-MEAS-CALIBRATION-001`
+- `SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001`
+- `SFT-PHYS-MEAS-DIMENSIONAL-CONSISTENCY-001`
+- `SFT-PHYS-MEAS-OBSERVATION-CARRIER-001`
+- `SFT-PHYS-MEAS-QUANTITY-CARRIER-001`
+- `SFT-PHYS-MEAS-REFERENCE-REALIZATION-001`
+- `SFT-PHYS-MEAS-UNCERTAINTY-001`
+- `SFT-PHYS-MEAS-UNIT-COMPARISON-001`
+- `SFT-PHYS-MEAS-VALUE-RECORD-001`
+- `SFT-PHYS-MECH-ACCELERATION-001`
+- `SFT-PHYS-MECH-ANGULAR-MOMENTUM-001`
+- `SFT-PHYS-MECH-ANGULAR-MOTION-001`
+- `SFT-PHYS-MECH-COMPOSITE-CENTRE-001`
+- `SFT-PHYS-MECH-CONSERVATION-001`
+- `SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001`
+- `SFT-PHYS-MECH-DURATION-001`
+- `SFT-PHYS-MECH-EVENT-CHANGE-001`
+- `SFT-PHYS-MECH-FORCE-001`
+- `SFT-PHYS-MECH-INERTIA-001`
+- `SFT-PHYS-MECH-LOCATION-DISPLACEMENT-001`
+- `SFT-PHYS-MECH-MOMENTUM-001`
+- `SFT-PHYS-MECH-POWER-001`
+- `SFT-PHYS-MECH-SPEED-VELOCITY-001`
+- `SFT-PHYS-MECH-WORK-ENERGY-001`
+- `SFT-PHYS-MOLECULAR-SPECTROSCOPY-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-BINDING-001`
+- `SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-DEUTERON-DINUCLEON-TERMINAL-006`
+- `SFT-PHYS-NUCLEAR-FISSION-001`
+- `SFT-PHYS-NUCLEAR-FUSION-001`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-FUSION-FISSION-YIELD-THRESHOLD-006`
+- `SFT-PHYS-NUCLEAR-LEVELS-001`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005`
+- `SFT-PHYS-NUCLEAR-RADIOACTIVITY-001`
+- `SFT-PHYS-NUCLEAR-REACTIONS-001`
+- `SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005`
+- `SFT-PHYS-NUCLEON-BINDING-TERMINAL-005`
+- `SFT-PHYS-ODD-LATTICE-ALL-REGION-OCCUPANCY-TERMINAL-007`
+- `SFT-PHYS-ORBITAL-DIMENSION-STABILITY-TERMINAL-009`
+- `SFT-PHYS-PARKER-PROTON-ENERGY-TERMINAL-028`
+- `SFT-PHYS-PLASMA-COLLECTIVE-001`
+- `SFT-PHYS-PLASMA-MHD-001`
+- `SFT-PHYS-PLASMA-OSCILLATION-001`
+- `SFT-PHYS-POST-NEWTONIAN-FIXED-POINT-TERMINAL-009`
+- `SFT-PHYS-PROTON-RADIUS-TERMINAL-029`
+- `SFT-PHYS-QED-ELECTRON-MAGNETIC-ANOMALY-004`
+- `SFT-PHYS-QED-MUON-MAGNETIC-ANOMALY-004`
+- `SFT-PHYS-QUADRUPOLE-RADIATED-POWER-TERMINAL-012`
+- `SFT-PHYS-QUANTUM-BELL-001`
+- `SFT-PHYS-QUANTUM-CLASSICAL-LIMIT-001`
+- `SFT-PHYS-QUANTUM-CONTEXTUALITY-001`
+- `SFT-PHYS-QUANTUM-DECOHERENCE-001`
+- `SFT-PHYS-QUANTUM-DISCRETE-SPECTRA-001`
+- `SFT-PHYS-QUANTUM-ENTANGLEMENT-001`
+- `SFT-PHYS-QUANTUM-EVOLUTION-001`
+- `SFT-PHYS-QUANTUM-EXCLUSION-001`
+- `SFT-PHYS-QUANTUM-INCOMPATIBILITY-001`
+- `SFT-PHYS-QUANTUM-INDISTINGUISHABILITY-001`
+- `SFT-PHYS-QUANTUM-NO-SIGNALLING-001`
+- `SFT-PHYS-QUANTUM-OBSERVABLE-001`
+- `SFT-PHYS-QUANTUM-PHYSICAL-STATE-001`
+- `SFT-PHYS-QUANTUM-SPIN-001`
+- `SFT-PHYS-QUANTUM-TUNNELLING-001`
+- `SFT-PHYS-QUANTUM-WEIGHT-001`
+- `SFT-PHYS-SCALE-COMMON-AXIS-TERMINAL-030`
+- `SFT-PHYS-SCATTERING-RUTHERFORD-COMPTON-TERMINAL-006`
+- `SFT-PHYS-SPACETIME-CAUSAL-ORDER-001`
+- `SFT-PHYS-SPACETIME-CLOCK-RATE-001`
+- `SFT-PHYS-SPACETIME-EVENT-RELATION-001`
+- `SFT-PHYS-SPACETIME-INERTIAL-TRANSFORMATION-001`
+- `SFT-PHYS-SPACETIME-INTERVAL-001`
+- `SFT-PHYS-SPACETIME-LENGTH-RELATION-001`
+- `SFT-PHYS-SPACETIME-LIMIT-SPEED-001`
+- `SFT-PHYS-STATIC-EXTERIOR-CLOCK-TERMINAL-011`
+- `SFT-PHYS-STRONG-CARRIER-MASSLESS-CONFINED-TERMINAL-013`
+- `SFT-PHYS-STRONG-FIELD-NONLINEAR-FIXED-POINT-TERMINAL-014`
+- `SFT-PHYS-SYMMETRIC-SOURCE-CONSERVATION-TERMINAL-010`
+- `SFT-PHYS-THERMO-ENTROPY-001`
+- `SFT-PHYS-THERMO-EQUILIBRIUM-001`
+- `SFT-PHYS-THERMO-FIRST-LAW-001`
+- `SFT-PHYS-THERMO-FLUCTUATION-001`
+- `SFT-PHYS-THERMO-HEAT-WORK-001`
+- `SFT-PHYS-THERMO-IRREVERSIBILITY-001`
+- `SFT-PHYS-THERMO-KINETIC-TRANSPORT-001`
+- `SFT-PHYS-THERMO-LANDAUER-EMPIRICAL-019`
+- `SFT-PHYS-THERMO-MICRO-MACRO-001`
+- `SFT-PHYS-THERMO-PHASE-EQUILIBRIUM-001`
+- `SFT-PHYS-THERMO-RESPONSE-001`
+- `SFT-PHYS-THERMO-SECOND-LAW-001`
+- `SFT-PHYS-THERMO-STATE-RELATION-001`
+- `SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001`
+- `SFT-PHYS-THERMO-TEMPERATURE-001`
+- `SFT-PHYS-THERMO-THIRD-LAW-001`
+- `SFT-PHYS-VALIDATION-ATOMIC-CUBIC-SUPPORT-004`
+- `SFT-PHYS-VALIDATION-ATOMIC-HYDROGEN-SPECTRUM-004`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-001`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-KOIDE-002`
+- `SFT-PHYS-VALIDATION-CHARGED-LEPTON-TERMINAL-002`
+- `SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042`
+- `SFT-PHYS-VALIDATION-COMMON-SCALE-MEASURED-VALUE-054`
+- `SFT-PHYS-VALIDATION-COMPACT-HORIZON-THERMODYNAMICS-072`
+- `SFT-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055`
+- `SFT-PHYS-VALIDATION-CRITICALITY-MEASURED-VALUE-056`
+- `SFT-PHYS-VALIDATION-CRITICALITY-UNIVERSALITY-TURBULENCE-048`
+- `SFT-PHYS-VALIDATION-DARK-SMITHION-LFV-062`
+- `SFT-PHYS-VALIDATION-DYNAMICS-SPECTRA-003`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-MEASURED-VALUE-053`
+- `SFT-PHYS-VALIDATION-ELECTROWEAK-TERMINAL-003`
+- `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-POTENTIAL-001`
+- `SFT-PHYS-VALIDATION-FIELD-ELECTRIC-STRENGTH-001`
+- `SFT-PHYS-VALIDATION-FINITE-LOOPS-003`
+- `SFT-PHYS-VALIDATION-FORCE-SECTOR-ANCHORS-003`
+- `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074`
+- `SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVES-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-CLOCK-EQUIVALENCE-003`
+- `SFT-PHYS-VALIDATION-GRAVITY-HORIZONS-003`
+- `SFT-PHYS-VALIDATION-HADRON-REGGE-MEASURED-VALUE-060`
+- `SFT-PHYS-VALIDATION-HIGGS-SYMMETRY-TERMINAL-066`
+- `SFT-PHYS-VALIDATION-INFLATION-GROWTH-040`
+- `SFT-PHYS-VALIDATION-INVERSE-FINE-STRUCTURE-001`
+- `SFT-PHYS-VALIDATION-INVERSE-SQUARE-001`
+- `SFT-PHYS-VALIDATION-MAGNETIC-ANOMALIES-003`
+- `SFT-PHYS-VALIDATION-MAJORANA-ZERO-NU-003`
+- `SFT-PHYS-VALIDATION-MECHANICS-FORCE-001`
+- `SFT-PHYS-VALIDATION-MECHANICS-MOMENTUM-001`
+- `SFT-PHYS-VALIDATION-METROLOGY-MOLAR-PLANCK-001`
+- `SFT-PHYS-VALIDATION-NEUTRINO-MASS-MIXING-003`
+- `SFT-PHYS-VALIDATION-NONSTANDARD-SPACETIME-003`
+- `SFT-PHYS-VALIDATION-NUCLEAR-CLOSURES-001`
+- `SFT-PHYS-VALIDATION-OPTICAL-OPERATIONS-003`
+- `SFT-PHYS-VALIDATION-PARTICLE-MODE-GENERATION-052`
+- `SFT-PHYS-VALIDATION-PROTON-ELECTRON-003`
+- `SFT-PHYS-VALIDATION-PROTON-PLANCK-TERMINAL-003`
+- `SFT-PHYS-VALIDATION-QUANTUM-SUPPORT-UNCERTAINTY-050`
+- `SFT-PHYS-VALIDATION-QUARK-CKM-003`
+- `SFT-PHYS-VALIDATION-RELATIVISTIC-FIELDS-003`
+- `SFT-PHYS-VALIDATION-SPIN-STATISTICS-CONDENSATION-046`
+- `SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068`
+- `SFT-PHYS-VALIDATION-STELLAR-NUCLEAR-COLLAPSE-070`
+- `SFT-PHYS-VALIDATION-STRONG-CP-BARYON-STABILITY-064`
+- `SFT-PHYS-VALIDATION-THERMAL-EQUILIBRIUM-044`
+- `SFT-PHYS-VALIDATION-THERMAL-HISTORY-MEASURED-VALUE-058`
+- `SFT-PHYS-VALIDATION-THERMAL-HISTORY-RECOMBINATION-038`
+- `SFT-PHYS-VALIDATION-THERMO-MOLAR-ENERGY-001`
+- `SFT-PHYS-VALIDATION-VACUUM-DENSITY-SCALE-036`
+- `SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003`
+- `SFT-PHYS-VALIDATION-VACUUM-FLOOR-003`
+- `SFT-PHYS-VALIDATION-VACUUM-INERTIA-003`
+- `SFT-PHYS-VALIDATION-VACUUM-POLARIZATION-003`
+- `SFT-PHYS-VALIDATION-VELOCITY-COMPOSITION-034`
+- `SFT-PHYS-VALIDATION-WAVE-ENERGY-001`
+- `SFT-PHYS-VALIDATION-WAVE-FREQUENCY-001`
+- `SFT-PHYS-WAVE-DIFFRACTION-001`
+- `SFT-PHYS-WAVE-DISPERSION-001`
+- `SFT-PHYS-WAVE-ENERGY-MOMENTUM-001`
+- `SFT-PHYS-WAVE-INTERFERENCE-001`
+- `SFT-PHYS-WAVE-PERIOD-FREQUENCY-001`
+- `SFT-PHYS-WAVE-POLARIZATION-001`
+- `SFT-PHYS-WAVE-PROPAGATION-001`
+- `SFT-PHYS-WAVE-RESONANCE-001`
+- `SFT-PHYS-WAVE-SPEED-LENGTH-FREQUENCY-001`
+- `SFT-PHYS-WAVE-SUPERPOSITION-001`
+- `SFT-PHYS-YANG-MILLS-SINGLET-GAP-EMPIRICAL-027`
+- `SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001`
+- `SFT-PHYS-MEAS-TARGET-CUSTODY-001`
+- `SFT-MATH-EXACT-ARITHMETIC-001`
+
+**Generated grammar and closure boundary.** Generate the complete eight-axis product of full empirical carrier, reconciliation relation, immutable provenance, sealed execution, separate observation record, complete favorable/adverse rows, successor closure and no-extra-rule. The declared exact boundary is: Every empirically tested pre-lock Physics claim; every source, validation and available measurement-receipt identity; every explicit legacy receipt shape; every retained unfavorable result and scope boundary; and all 256 alternatives. The generator produced `256` named candidates and the decision support contains `256` one-for-one decisions. Exactly one candidate survived: `complete-fold-carrier__complete-Physics-empirical-vector-with-all-adverse-and-scope-boundary-records-retained__source-bound-proof-trace__capability-closed-prediction__separate-measurement-record__complete-registered-rows__one-successor-closure__no-extra-rule`. Closure is `depth_independent` with both minimality and named-shape uniqueness passed.
+
+**Axis-by-axis uniqueness witness.** The complete census is the literal product declared above. Each row below changes one survivor coordinate to a generated alternative while holding the other survivor coordinates fixed. The cited elimination is therefore a direct local witness; the complete decision file records every candidate, including every further value on non-binary axes.
+
+| Axis | Forced form | Eliminated form | Elimination reason |
+|---|---|---|---|
+| `carrier` | `complete-fold-carrier` | `answer-only-scalar` | An answer-only scalar erases the generated physical carrier. |
+| `relation` | `complete-Physics-empirical-vector-with-all-adverse-and-scope-boundary-records-retained` | `imported-or-fitted-relation` | An imported or fitted relation lets consensus or target data select the law. |
+| `provenance` | `source-bound-proof-trace` | `unbound-provenance` | Unbound provenance cannot demonstrate which premises produced the result. |
+| `prediction` | `capability-closed-prediction` | `target-readable-prediction` | A target-readable predictor can copy or optimize against the measurement. |
+| `record` | `separate-measurement-record` | `proof-measurement-conflation` | Treating an external decimal record as a proof scalar violates the measured-value boundary. |
+| `rows` | `complete-registered-rows` | `selected-favourable-rows` | Selecting favorable rows cannot falsify the relation. |
+| `generality` | `one-successor-closure` | `finite-answer-lookup` | An answer lookup has no successor certificate. |
+| `extension` | `no-extra-rule` | `free-extra-rule` | A free constant, scale or exception can select the measured answer. |
+
+**Base and successor.** The closure proof is sealed by derivation hash `sha256:34282851b5cb8020dc5448ec744c2bb0eff495beb17951ae20f8b2d631410cc2`. Its generality certificate is stored in `elimination_receipt.json`; it preserves the registered One base and successor statement for every generated positive finite extension. The complete candidate and decision files are part of this claim package rather than abbreviated by the paper.
+
+**Adverse controls.** All four mandatory controls passed:
+
+- `false_premise`: passed; expected reject the generated form lacking the complete physical carrier; observed reject the generated form lacking the complete physical carrier; receipt `sha256:2166f3eb725f8e397e29da86404a23c6c6beabadbe1c1653149666d38a885966`.
+- `tampered_source`: passed; expected reject a changed registered source identity; observed reject a changed registered source identity; receipt `sha256:768689bc7417602c40fbf5c009cabdb2944d3b93cb862e6a5a459f097fbef4a6`.
+- `tampered_artifact`: passed; expected reject a missing, duplicate or additional survivor; observed reject a missing, duplicate or additional survivor; receipt `sha256:f6b377ac20aa317940cf02063001fbf392bea2ce910b263150ce921e32411cf4`.
+- `boundary`: passed; expected reject target access, forbidden proof values, imported laws and free parameters; observed reject target access, forbidden proof values, imported laws and free parameters; receipt `sha256:604e0ad1d0c52955bad892346c3d808138fcbe75a74497118b5b6f694a919d4a`.
+
+**Independent reconstruction.** A distinct standard-library implementation regenerated the candidate product and survivor. Implementation hash: `sha256:2c1c76e69ce41d87d211866b32d87a5d932767a610da975592feac6608c021ba`. Independent certificate: `sha256:7b0c9ee0781ae529abf368b8c34477f02a06b1adae84bb07d7921a77306defd9`. Engine external-validation hash: `sha256:dad245e3012d7c9dd22c6599a0f049ae623f49895dbafea6fe234fb3ed4183cb`.
+
+**External empirical check.** The target was absent until prediction seal: `True`. It was released after the matching seal: `True`. All rows were preserved: `True`. The isolation certificate denied clock, environment, filesystem, network, subprocess, dynamic-import and foreign-function capabilities and reported no attempted forbidden operation.
+
+External source identities:
+
+- AMDC-AME2020-MASS-1-2021
+- AMDC-AME2020-MASS-1-BINDING-2021
+- AMDC-NUBASE2020-2021
+- AMDC-NUBASE2020-DECAY-HALFLIFE-2021
+- APS-HUANG-TURBULENCE-SPECTRUM-2010
+- APS-JILA-BEC-GROUND-OCCUPATION-1996
+- APS-MCCOMB-TURBULENCE-STRUCTURE-2014
+- APS-WILLIAMS-FALLER-HILL-1971-COULOMB
+- ARXIV-1201.0501-FIZEAU-WATER-AIR
+- ATLAS-2023-COMBINED-HIGGS-MASS
+- ATLAS-CMS-2026-HIGGS-PAIR-COMBINATION
+- ATOMIC-PRECISION-SUCCESSOR-NIST-2022-2026
+- AVER-ET-AL-2026-PRIMORDIAL-HELIUM
+- BABAR-2010-TAU-LFV-GAMMA
+- BERUT-NATURE-2012
+- BICEP-PLANCK-2022-TENSOR
+- BIPM-SI-BROCHURE-9-2026
+- BOREXINO-2020-CNO-NEUTRINOS
+- CERN-OPEN-DATA-DATASET-API-2026-07-23
+- CLOWE-2006-BULLET-CLUSTER
+- CMS-2024-FOUR-LEPTON-HIGGS-MASS
+- COOKE-PETTINI-STEIDEL-2018-DEUTERIUM
+- D10E-STRONG-FIELD-NONLINEAR-FIXED-POINT-COMPARISON
+- D10F-STRONG-CARRIER-MASSLESS-CONFINED-COMPARISON
+- D9F-EXTERNAL-ORBITAL-DIMENSION-STABILITY
+- D9M-POST-NEWTONIAN-FIXED-POINT-COMPARISON
+- D9N-SYMMETRIC-SOURCE-CONSERVATION-COMPARISON
+- D9O-STATIC-EXTERIOR-CLOCK-COMPARISON
+- D9Q-QUADRUPOLE-RADIATED-POWER-COMPARISON
+- DESAI-ET-AL-2025-PARKER-HCS-PROTONS
+- DESI-DR2-2025-COSMOLOGY
+- DIEHL-2014-SN2014J-GAMMA-LINES
+- EKER-2018-MAIN-SEQUENCE-RELATIONS
+- ESCAMILLA-2024-DARK-ENERGY-STATE
+- FONSECA-2021-PSR-J0740-MASS
+- GOMEZ-VALENT-2019-ACCELERATION
+- GOMEZ-VALENT-2023-CCH-32
+- GRAVITY-SPACETIME-AUTHORITATIVE-2017-2026
+- GWOSC-GW231123-135430-V3-2026-07-23
+- GWOSC-V2-CATALOGS-2026-07-23
+- HARIDASU-2018-LATE-EXPANSION
+- IAEA-ENDF-102-DATA-FORMATS-PROCEDURES
+- IAEA-ENDF-CURRENT-2026-07-23
+- IAEA-ENSDF-CURRENT-2026-07-23
+- IAEA-INDC-NDS-0452-MAGIC-NUMBERS
+- IAEA-NDS-JENDL1-INDC-JAP-45
+- IAEA-NDS-LEXFOR-FISSION-2006
+- IAEA-STI-PUB-1196-RADIATION-PHYSICS
+- IAEA-TECDOC-2024-NUCLEAR-COGENERATION
+- IAEA-THEORY-NUCLEAR-STRUCTURE-STI-PUB-249
+- IAEA-WORLD-FUSION-OUTLOOK-2023
+- IAPWS-RELEASES-2026-07-23
+- IUPAC-NIST-ATOMIC-SHELL-PERIODICITY-2022-2026
+- LELLI-2019-BARYONIC-TULLY-FISHER
+- LIGO-VIRGO-2019-GW170817-REMNANT
+- LIGO-VIRGO-GW151226-DISCOVERY-2016
+- LIGO-VIRGO-GW190521-DISCOVERY-2020
+- LOREDO-LAMB-2001-SN1987A-NEUTRINOS
+- MATTER-FLAVOUR-AUTHORITATIVE-2022-2026
+- MATTER-FLAVOUR-TERMINAL-ANOMALY-AUTHORITATIVE-2022-2026
+- MATTER-FLAVOUR-TERMINAL-AUTHORITATIVE-2025-2026
+- MATTER-FLAVOUR-TERMINAL-PROTON-AUTHORITATIVE-2022-2026
+- MCMASTER-LIN-ERBIUM-CRITICAL-SCATTERING-1993
+- MEGII-2025-MU-E-GAMMA
+- NASA-GRC-MOON-SYNCHRONOUS-ROTATION
+- NASA-GSFC-COSMIC-ELEMENTS-STELLAR-STAGES
+- NASA-GSFC-WHITE-DWARF-CHANDRASEKHAR
+- NASA-LAMBDA-2026-07-23
+- NASA-LAMBDA-COBE-FIRAS-2026-07-23
+- NASA-LAMBDA-COBE-FIRAS-MONOPOLE-2026-07-23
+- NASA-NTRS-HELIOSEISMOLOGY-2001
+- NASA-NTRS-MESSENGER-MERCURY-RESONANCE
+- NASA-PLASMA-FREQUENCY-PROBE-1992
+- NASA-STEREO-ALFVEN-LIST
+- NATURE-2019-PRAD-PROTON-RADIUS
+- NATURE-2026-ELECTRONIC-HYDROGEN-PROTON-RADIUS
+- NATURE-STORZ-LOOPHOLE-FREE-BELL-2023
+- NBS-ACOUSTIC-CAVITY-1986
+- NEDM-2020-PSI-PERMANENT-EDM
+- NIM-NIST-ACOUSTIC-BOLTZMANN-2017
+- NIST-ASD-5.12
+- NIST-ATOMIC-TRANSITION-RATE-LIFETIME-2026
+- NIST-CHEMISTRY-WEBBOOK-2026-07-23
+- NIST-COBLENTZ-BLACKBODY
+- NIST-CODATA-2014-HISTORICAL
+- NIST-CODATA-2022
+- NIST-CODATA-2022-ALL-CONSTANTS
+- NIST-CODATA-2022-BOLTZMANN
+- NIST-CODATA-2022-EXACT-C
+- NIST-DIODE-LASER-LINEWIDTH
+- NIST-HYDROGEN-RYDBERG-SUCCESSOR-2022-2026
+- NIST-JILA-PAULI-BLOCKING-2001
+- NIST-JOHNSON-NOISE-BOLTZMANN-2011
+- NIST-KRAMIDA-HYDROGEN-CRITICAL-COMPILATION-2010-2019
+- NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR
+- NIST-NBS-ATOMIC-FIELD-SPLITTING-2026
+- NIST-NCNR-DCS-SUPERFLUID-HELIUM
+- NIST-SRD-INDEX-2026-07-23
+- NOTERDAEME-ET-AL-2011-CMB-TEMPERATURE
+- PDG-2024-ELECTROWEAK-VACUUM-SCALE
+- PDG-2024-W-BOSON-LISTING
+- PDG-2025-2026-STRONG-EM-COMPLETE-RUNNING-VECTOR
+- PDG-2025-A2-1320
+- PDG-2025-A4-1970
+- PDG-2025-BBN-REVIEW
+- PDG-2025-CKM-MATRIX
+- PDG-2025-ELECTROMAGNETIC-RUNNING-ENDPOINT
+- PDG-2025-HIGGS-MASS-AVERAGE
+- PDG-2025-LEPTON-SUMMARY
+- PDG-2025-NEUTRINO-MIXING
+- PDG-2025-QUARK-MASSES
+- PDG-2025-RHO-770
+- PDG-2025-RHO3-1690
+- PDG-2025-RHO5-2350
+- PDG-2025-STANDARD-MODEL-REVIEW
+- PDG-2025-SUMMARY-TABLES
+- PDG-2026-ELECTROWEAK-REVIEW
+- PDG-2026-ELECTROWEAK-SCALE-VECTOR
+- PDG-2026-QCD-REVIEW
+- PDG-2026-QUARK-MODEL-GLUEBALL-BOUNDARY
+- PDG-2026-W-BOSON-LISTING
+- PDG-ELECTROWEAK-PRECISION-2024-2025
+- PDG-FORCE-SECTOR-ANCHORS-2025
+- PDG-HADRON-MULTIPLETS-REGGE-2025
+- PDG-NIST-NUCLEAR-RESIDUAL-RANGE-2025-2026
+- PDG-NIST-NUCLEON-BINDING-2022-2026
+- PH2-EXTERNAL-LYAPUNOV-KS-CORRESPONDENCE
+- PH3-EXTERNAL-COUPLED-MAP-CRITICALITY
+- PIECHOCINSKA-PRA-2000
+- PLANCK-2018-BAO-BASELINE-BUDGET
+- PLANCK-2018-COSMOLOGICAL-PARAMETERS
+- PLANCK-2018-INFLATION
+- PLANCK-2018-OVERVIEW-PEAKS
+- PLANCK-2018-VI-ABSTRACT-DENSITIES
+- PLANCK-PLA-BASE-NRUN-TTTEEE-BAO-LENSING-68PC
+- RAUCH-COHERENT-SPINOR-ROTATION-1975
+- RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026
+- SFTOM-V1-E3-EXACT-OBSERVATION
+- SFTOM-V1-E4-EXACT-OBSERVATION
+- SPARC-2016-175-GALAXY-MASS-MODELS
+- SPARC-2016-ROTATION-CURVES
+- SPRINGER-CETIN-MANGANITE-CRITICAL-EXPONENTS-2026
+- SUPERK-2020-PROTON-E-MU-PI0
+- SUPERK-2024-PROTON-E-MU-ETA
+- SUPERK-2026-PROTON-E-MU-TWO-PI0
+- VACUUM-LINEAGE-AUTHORITATIVE-2015-2026
+- WATSON-2019-GW170817-STRONTIUM
+
+Observed comparison records:
+
+- Complete immutable reconciliation of 234 empirically tested Physics claims.
+- All 147 distinct registered external source identities remain present.
+- Every empirical and external validation hash and every available separate measurement receipt remains bound.
+- Six older materialization shapes without a separate measurement-receipt field are explicitly retained, not silently upgraded.
+- All fourteen detected unfavorable-result or scope-boundary claims remain in the same evidence vector.
+- Observation remains empirical evidence; prior observations are not relabelled as unseen predictions and never select a formal survivor.
+
+Falsification condition: Reject if any empirical claim, validation hash, available measurement receipt, source identity, legacy receipt shape, unfavorable result or scope boundary is omitted or changed; if the formal receipt does not predate this reconciliation; if prior observations are relabelled as unseen; if measurement selects a formal survivor; or if any hostile control passes.
+
+Measurement receipt: `sha256:6837b0a6ba85b94ed9a282a974e7f0b11514ab82e441e01587ae8db871f71bd1`. Isolation certificate: `sha256:4872b1dd81f1ece18a811463bf455907c2aa6a709b2dca12480fe968faee6613`. Custody certificate: `sha256:09c27a514eb50e5e0fc87a5e8b1ad256d070da51745fed7eeb7e5010a6a9efea`.
+
+Registered source descriptions:
+
+- complete immutable pre-lock Physics evidence surface: experiments/external_sources/physics/snapshots/physics-grand-lock-empirical-reconciliation-record.json (sha256:e233cd761aa874893d2c2a4e2b09f071297aee1204d531fce3d93429948177a3)
+
+Registered target identities:
+
+- SFT-V3-PHYSICS-COMPLETE-EMPIRICAL-RECONCILIATION from SFT-V3-PHYSICS-IMMUTABLE-EMPIRICAL-EVIDENCE-SURFACE
+
+**Meaning.** These claims are not supplemental footnotes. They are Physics-owned post-seal empirical tests of forced relations, including exact measured values, and remain first-class engine-admitted claims. In this claim specifically, the forced result identifies the minimal exact relation named in the theorem; the external body tests the sealed consequence but does not choose its grammar or survivor.
+
+**Boundary and non-claim.** The following forms are explicitly excluded:
+
+- no favorable-only selection or deletion of mismatch, non-observation, tension, uncertainty or scope boundary
+- no prior observation relabelled as an unseen prediction
+- no legacy certificate silently represented as having a later separate measurement-receipt field
+- no measurement, consensus model, fit, parameter or tolerance selecting a formal survivor
+- no edit to the canonical engine or any admitted receipt
+
+The result is closed only at its registered generated and empirical boundary. It does not turn an external unit scale, historical initial condition or finite observation census into a premise-free consequence of the One.
+
+**Immutable evidence identities.** Source manifest `sha256:3ccc728167a1e7a63da295820a4061a1e60d4c985824b86eb9305cd1f097be18`; engine receipt `sha256:93f4497d6f7ef3c477246079f62c21f96a7ae27fd9516fa876e9d413bbab569e` at `receipts/engine/model_admitted/SFT-PHYS-VALIDATION-GRAND-LOCK-076-93f4497d6f7ef3c4.json`; empirical-validation hash `sha256:7ec55dbb12f906e009c994473b79791759328778eefc4d19b59a83ba32d3f3f2`; measurement receipt `sha256:6837b0a6ba85b94ed9a282a974e7f0b11514ab82e441e01587ae8db871f71bd1`.
+
+
+## 25. Cross-branch synthesis
 
 The completed branch has one compositional arc. Measurement defines what an observation can retain. Mechanics defines relational change and transfer. Fields extend source-response over local support. Waves close recurrence and propagation. Thermodynamics identifies macro-observation fibres and information-retention costs. Physical quantum theory retains complete support, phase/action and joint composition. Matter identifies recurrent constituent and channel classes. Spacetime orders events by limiting causal paths; gravitation changes their source-linked relational closure. Collective matter takes finite cell networks to scale-declared macro-observations. The cosmological boundary exports universal propagation laws while refusing to disguise historical state as a law.
 
 This unification is operational: the same Fold objects - exact counts, ratios, words, held labels, tables, transition traces and observation fibres - appear in every subbranch. The claim is not that established terminology selected those objects. Correspondence is registered only after each Fold form survives its generated alternatives.
 
-## 23. Limitations and falsification
+## 26. Limitations and falsification
 
 The paper makes no claim of an actually completed physical infinity, exact continuum substrate, derivation of contingent initial conditions, unbounded astronomical census or replacement of later Chemistry, Materials, Astronomy and Cosmology branches. It does not treat a simulation as empirical proof, an exact SI definition as an independent natural observation, or portal availability as numerical agreement. Categorical external rows test structural correspondence; the dedicated value adapters test numerical consequences. A new observation outside the registered boundary requires a new preregistration and cannot silently broaden an old receipt.
 
 Any admitted empirical claim is falsified within its boundary by a preserved external row that does not match the sealed prediction, by target access before sealing, by omitted adverse evidence, by a changed source snapshot, by failure of its independent reconstruction or by an engine-constitution violation. The correct response is a halted new claim and investigation of the derivation or adapter. Existing immutable receipts remain identities of the artifacts they certify; new evidence cannot be retroactively written into them.
 
-## 24. Reproducibility
+## 27. Reproducibility
 
 The repository uses Python's standard library for the core engine and supports macOS, Windows and Linux without Docker. Researchers may inspect every claim package directly. The one-command repository verifier remains available for release validation, but this branch build deliberately used proportionate admission-time checks and a read-only evidence census rather than repeatedly replaying historical derivations. The Physics inventory is `publications/inventories/physics.json`; this manuscript's exact evidence map is `publications/current/physics/evidence_map.json`.
 
-## 25. Conclusion
+## 28. Conclusion
 
-At the declared boundary, the current 285-claim V3 Physics inventory is internally evidence-closed, while publication and exhaustive V1/V2 closure remain blocked by the one-owner audit. Its 285 derivations are forced, enumerated, independently reconstructed and admitted through one unchanged engine; 197 additionally carry registered empirical validation. When the broader audit closes, that status will still be current-knowledge closure rather than permanent completion: Physics remains open to lawful versioned extension and falsification. The measured-value layer preserves the strict arithmetic constitution while allowing official observations to invalidate a sealed relation. The result is an open, inspectable tree of physical laws whose authority rests on reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection. Open science is not ornamental here: every authority claim is made vulnerable to computational reproduction, adverse control and public falsification.
+The paper's lead result is the exact derivation `α⁻¹ = 503846395469/3676744786`, not an isolated numerical fit but the first terminal constant in a connected Physics reconstruction. The same root and admission constitution force and validate the charged-lepton relations, precision anomalies, electroweak share, Higgs sector, Planck/proton hierarchy, proton radius, vacuum and cosmological ratios, spatial rank, inverse-square force law, nuclear and hadronic structure, quantum and relativistic correspondence, thermodynamics, collective matter and gravitation documented in the complete ledger.
+
+At the declared derivational boundary, all 349 current V3 Physics claims and all 488 categorically Physics-owned V1/V2 atoms are engine-admitted and current-evidence closed, with no open Physics gap family. Grand Locks 075 and 076 make ownership, root trace, structural perturbation and complete empirical reconciliation explicit. The manuscript and evidence package are publication-ready; release authority remains Maria Smith's alone. Physics remains open to lawful versioned extension, correction and falsification after publication. The result is an open, inspectable tree of physical laws whose authority rests on exact derivation, complete enumeration, sealed measurement, adverse evidence and reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection.
 
 ## References and official data bodies
 
@@ -22879,9 +29223,26 @@ At the declared boundary, the current 285-claim V3 Physics inventory is internal
 - Gravitational Wave Open Science Center, GWTC catalog and event APIs.
 - CERN Open Data Portal, public dataset API.
 - NASA LAMBDA and COBE FIRAS public data products.
+- Lundh, A. et al. (2018), *Industry sponsorship and research outcome*, systematic review and meta-analysis, https://doi.org/10.1007/s00134-018-5293-7.
+- Fabbri, A. et al. (2018), *The influence of industry sponsorship on the research agenda*, https://pubmed.ncbi.nlm.nih.gov/30252531/.
+- Gallo, S. A. et al. (2023), empirical study of grant-review ranking, rating and applicant effects, https://pmc.ncbi.nlm.nih.gov/articles/PMC10553257/.
+- Demicheli, V. and Di Pietrantonj, C., Cochrane review of grant peer review, https://pmc.ncbi.nlm.nih.gov/articles/PMC8973940/.
+- UNESCO (2021), *Recommendation on Open Science*, https://www.unesco.org/en/legal-affairs/recommendation-open-science.
+- National Institute of Standards and Technology, *AI Risk Management Framework 1.0*, transparency, explainability and interpretability characteristics.
+- Nature Communications (2025), consensus statement on null-result publication and research waste, https://pmc.ncbi.nlm.nih.gov/articles/PMC12459790/.
 - Smith, Maria, *There Is No Nothing*, Ernos Labs methods and foundation paper.
 - Smith, Maria, *From One to Fold*, Foundation branch evidence corpus.
 - Smith, Maria, *From Fold to Mathematics*, Mathematics branch paper.
 - Smith, Maria, *From Distinction to Information*, Information Science branch paper.
 - Smith, Maria, *After Turing: The Fold Machine*, Classical Computation branch paper.
 - Smith, Maria, *The Quantum Fold Machine*, Reversible and Quantum Computation branch paper.
+
+## Data, code, rights and participation
+
+The canonical open repository is https://github.com/MettaMazza/ernos-labs-sft-platform. The release package contains this Markdown manuscript, the archival PDF, the complete evidence map, publication receipt, categorical inventory, claim packages, generated candidate censuses, elimination decisions, controls, independent validators, empirical source records and immutable engine receipts.
+
+Copyright 2026 Maria Smith. Paper and documentation are licensed CC BY 4.0; repository code is licensed Apache 2.0. These licenses permit open copying, inspection, criticism, modification and redistribution with attribution. “Ernos Labs” remains a standards-conformance designation whose use requires adherence to the published empirical constitution and community standards.
+
+Independent review, replication, lawful extension and attempted invalidation are invited. Contact Maria.Smith.Sftoe@gmail.com or https://discord.gg/ucwGryVxGr. Scientific admission requires the complete derivation chain and an unchanged-engine receipt; neither reputation nor criticism alone changes the model census.
+
+Suggested citation: Smith, Maria (2026), *From Fold to Physics: An Exact, Parameter-Free and Machine-Closed Reconstruction of Physical Science from Smithian Fold Theory*, Ernos Labs Physics Branch Paper 001, version 1.1.

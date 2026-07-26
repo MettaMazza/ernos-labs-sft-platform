@@ -289,6 +289,17 @@ def verify_all(
     _notify(progress, "repository integrity: start")
     run_repository_validation(root)
     _notify(progress, "repository integrity: pass")
+    _notify(progress, "external-measurement coverage: start")
+    from sft.external_coverage import require_external_measurement_coverage
+
+    measurement_coverage = require_external_measurement_coverage(root)
+    _notify(
+        progress,
+        "external-measurement coverage: pass "
+        f"({measurement_coverage.empirical_claims} empirical claims; "
+        f"{measurement_coverage.physics_formal_claims_reaching_measurement}/"
+        f"{measurement_coverage.physics_formal_claims} formal Physics claims reach measurement)",
+    )
     _notify(progress, "unit/E2E tests and core coverage: start")
     coverage = run_core_coverage(root, progress=progress)
     _notify(
@@ -297,5 +308,14 @@ def verify_all(
         f"({coverage.tests_run} tests; {coverage.executed_lines}/{coverage.executable_lines} lines)",
     )
     rerun_claims = rerun_registered_claims(root, progress=progress)
+    _notify(progress, "live authoritative measurement comparison: start")
+    from sft.live_measurement import run_live_measurement_checks
+
+    live = run_live_measurement_checks()
+    _notify(
+        progress,
+        "live authoritative measurement comparison: pass "
+        f"({len(live.exact_checks)} exact current-source checks; {live.source_id})",
+    )
     _notify(progress, "complete verification: pass")
     return VerificationReport(coverage, rerun_claims)

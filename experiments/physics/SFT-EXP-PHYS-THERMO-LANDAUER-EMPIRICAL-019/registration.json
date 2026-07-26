@@ -1,0 +1,151 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-THERMO-LANDAUER-EMPIRICAL-019",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A reset lacking two distinguishable preimages is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed source record is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed prediction or trace is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access or dimensional proof-value import is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A changed heat, bound, saturation or scope label fails.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-THERMO-LANDAUER-EMPIRICAL-019-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:616fcdbb2677352bc87e6dbcd46bb3de5c34dd3985000e788a0057cb6c3398b2"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "SFT-PHYS-MEAS-DIMENSION-COMPOSITION-001"
+    ],
+    "external_reference_protocol": "The conventional k_B T ln 2 inscription remains an external conditional thermal-energy record.",
+    "measurement_record_policy": "external-logarithmic-and-dimensional-records-never-become-SFT-proof-scalars",
+    "proof_value_policy": "positive-generated-counts-exact-ratios-held-labels-and-empty-form-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "Every registered primary-source and scope row matches the sealed structural prediction and the tampered label is rejected.",
+    "comparison_implementation_hash": "sha256:e2983cc5840c6365ef14ec694cdfdc3d0625db81242a13b094f692c638cf21e3",
+    "evaluator_id": "SFT-EXP-PHYS-THERMO-LANDAUER-EMPIRICAL-019-post-seal-evaluator",
+    "falsification_condition": "Reject if the source snapshot changes; if a registered reset, heat, bound, experiment or scope row is omitted; if physical reliable erasure has no positive environment transfer; if long-cycle mean heat does not approach the registered bound; if the thermal coefficient enters the Fold proof; or if native half-One is misreported as a dimensional numerical equality.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain every reset, heat, bound, experimental-saturation and limitation row exactly.",
+        "metric_id": "complete-erasure-bound-scope-vector",
+        "unit_protocol": "Dimensional and logarithmic inscriptions remain external records."
+      }
+    ]
+  },
+  "evidence_mode": "observational-data-informed_target-inaccessible_sealed-comparison",
+  "experiment_id": "SFT-EXP-PHYS-THERMO-LANDAUER-EMPIRICAL-019",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Nature",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:76a746eb8760816598724a2db17fb7cd1f3a07325e69193525d313fecea4d27f",
+      "source_id": "BERUT-NATURE-2012",
+      "source_uri": "https://www.nature.com/articles/nature10872"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "American Physical Society",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:76a746eb8760816598724a2db17fb7cd1f3a07325e69193525d313fecea4d27f",
+      "source_id": "PIECHOCINSKA-PRA-2000",
+      "source_uri": "https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.61.062314/fulltext"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of physical carrier, erasure relation, provenance, prediction isolation, measurement separation, row retention, successor closure and extension forms.",
+    "dependency_hashes": [
+      "sha256:602d9f253b1634aa2b61d4ee8d809d778dc7463701ccb47764a7bced6d7aead1",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:d7af0a265f7b2f9ef64eb162d482f9b28e304d9d023391ed4017011221952208"
+    ],
+    "exact_domain": "The admitted exact two-preimage Fold reset and every registered primary source row concerning a symmetric one-bit memory, thermal-reservoir erasure, environmental heat, ensemble averaging and long-cycle approach.",
+    "relation_hash": "sha256:a1b0e17296e2ef578274365f6807f48da6cd7a51c51f6513083e25ae2f34efef",
+    "statement": "The exact Fold one-distinction reset predicts a nonfree environmental transfer for physical erasure.  Primary theory identifies the symmetric thermal-reservoir ensemble bound as k_B T ln 2 and primary experiment finds long-cycle mean heat saturating it; all distribution, reservoir, average and long-cycle scope rows are retained, while native half-One is not falsely identified with a dimensional energy number.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:26bce61334d9af55389695e11eab0e29d4a1ac001d863e2e6dd1555e008afece",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-THERMO-LANDAUER-EMPIRICAL-019-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:8b15011a360431439998c296365785c8658ce9756b6a36ca6288f3f7b0fd8df4",
+    "program_id": "SFT-EXP-PHYS-THERMO-LANDAUER-EMPIRICAL-019-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-favorable-limiting-and-tampered-row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:9c45d2e6703070de52f7d742f776ab442d020413304fe8f8b106f86d2bd689a6",
+    "experiments/external_sources/physics/snapshots/landauer-erasure-source-record.json": "sha256:76a746eb8760816598724a2db17fb7cd1f3a07325e69193525d313fecea4d27f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every registered target and adverse-control row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PIECHOCINSKA-PRA-2000",
+      "target_id": "LANDAUER-TWO-TO-ONE-RESET"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "PIECHOCINSKA-PRA-2000",
+      "target_id": "LANDAUER-THERMAL-BOUND"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BERUT-NATURE-2012",
+      "target_id": "LANDAUER-EXPERIMENTAL-SATURATION"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "BERUT-NATURE-2012",
+      "target_id": "LANDAUER-SCOPE-CONTROL"
+    }
+  ]
+}

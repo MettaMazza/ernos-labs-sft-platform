@@ -1,0 +1,69 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068",
+  "data_source_ids": [
+    "NASA-NTRS-HELIOSEISMOLOGY-2001",
+    "EKER-2018-MAIN-SEQUENCE-RELATIONS",
+    "SPARC-2016-ROTATION-CURVES",
+    "LELLI-2019-BARYONIC-TULLY-FISHER",
+    "CLOWE-2006-BULLET-CLUSTER",
+    "NASA-GRC-MOON-SYNCHRONOUS-ROTATION",
+    "NASA-NTRS-MESSENGER-MERCURY-RESONANCE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:b2de4bd8821a669375746ff316bd7c76dfddac48265c7026967b5efc945ffb3e",
+  "falsification_condition": "Reject if any source identity changes; any of the six stellar regimes, both Tully-Fisher interval classes, the full galaxy counts, the Bullet separation, the Moon terminal or the Mercury boundary is omitted; the formal law is changed after target release; a central offset is concealed; a conventional reference model is called an SFT prediction; a fitted parameter enters; or any hostile control passes incorrectly.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:16c31cc82998c61691f15702aa12fcd5f61e912741ee9878d0f06a68ac97078c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:efc60bbb0f0ef426e4fdad9d95b6836685450c322d2a2317c050dc9623b06fe7",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c325d88edf62c5cd0677d38297691cc6fb8d336e80fcd8558914412635688027",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:949a9db188c9a3415a9cdb8ae20b723cebed3d50bd6843053cc02357961c26f0",
+    "prediction_seal_hash": "sha256:db405172e643ef9cd023b1fa3cbece280a34c33defbb5cb16d488bc273061271",
+    "program_hash": "sha256:2282ef7971ee884582fd82cde20b690b69cc21e6435e50d8563aeca794b81a3a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:df31a819fb3f69bbd833054e34fc9b2e125dcda470314d9007431ea1f864a448",
+    "target_material_present": false,
+    "trace_hash": "sha256:5b5d44fc58dc3ce8331255e5162f063234579b46dd328793490a59274388e083"
+  },
+  "measurement_receipt_hash": "sha256:313655e8d2faf9fae7c637f0139713d9ddda3e18b70b3360397ac6adcca7c673",
+  "measurements": [
+    "Helioseismology reports stable solar structure at parts-per-ten-thousand sound-speed precision; its conventional reference value is not relabelled as an SFT prediction.",
+    "All six piecewise stellar slopes remain; only the high and very-high mass rows contain terminal powers four and three.",
+    "All 175 SPARC galaxies and all 153 Tully-Fisher galaxies remain in the registered population records.",
+    "The Tully-Fisher central interval excludes four while the complete reported systematic interval reaches four; both are retained.",
+    "The Bullet Cluster records an eight-sigma separation between the mass and dominant plasma peaks.",
+    "The Moon records 1:1 synchronous rotation; Mercury records the separately declared 3:2 eccentric-resonance boundary.",
+    "Erased-row, central-only, false-lunar-lock and erased-Mercury hostile controls reject."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d914349f61c1421ff2bcd03fcde8b1a263ff788a5da65e88eb4c0993961cc4c5",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-STELLAR-GALACTIC-TIDAL-068-external-target-custodian",
+    "experiment_registration_hash": "sha256:b2de4bd8821a669375746ff316bd7c76dfddac48265c7026967b5efc945ffb3e",
+    "prediction_seal_hash": "sha256:db405172e643ef9cd023b1fa3cbece280a34c33defbb5cb16d488bc273061271",
+    "registered_target_identity_hash": "sha256:df31a819fb3f69bbd833054e34fc9b2e125dcda470314d9007431ea1f864a448",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3d026604db0e8f567c7e33d624e6a73f9e91ea9d80ff87bcbd7aad976305ee3a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8a2aca0e7bf45cac58fc4a88bbbda934681d60af816702d9301a0b3ea68d5a48"
+}

@@ -1,0 +1,53 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-PHYS-COUPLING-ACCUMULATED-SEPARATION-TERMINAL-015",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:5ab1dace9fee93e8153b8079d416bcb0d8a7b6f77af74ad8c27931ddf9ce1beb",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": null,
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "validator raised: external validator omitted fields: recomputed_from_declared_inputs, validated_seal_hash",
+      "gate": "independent_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "independent_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:a3de1bff0c600033393952992a67206428cb6562b3fd91bbb57427902e34c455",
+  "violations": [
+    "validator raised: external validator omitted fields: recomputed_from_declared_inputs, validated_seal_hash"
+  ]
+}

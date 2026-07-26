@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074",
+  "data_source_ids": [
+    "LIGO-VIRGO-GW151226-DISCOVERY-2016",
+    "LIGO-VIRGO-GW190521-DISCOVERY-2020"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:599065f63b58789c653848bfe387628a43b47d3d345509787926b81f82199e5c",
+  "falsification_condition": "Reject if a post-seal source changes; rising frequency/amplitude, positive radiation, two-to-one merger or decaying quadrupolar remnant support fails; any uncertainty or conditional/model boundary is omitted; GW150914 is relabelled as blind; a dimensional target selects Claim 073; or any hostile control passes.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ed8c3a7d3d2a84f2d0ea64a6c3af2c31a2caa04320a413b092583784623e7870",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e1a1b2333533fa29470fb5dc64be06e2e329412e3b07b79563ed245ed44f951f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:dd66a7bd2dedfc9ef30154c91abef263a43f6c362dce4a3d97fb8ab7d2b84c05",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7f07eb25a10111536aa9910d17e426e7fe652763a4cba2cd80a5d860ef4ee44f",
+    "prediction_seal_hash": "sha256:417a7f0db4e24d56c5f23d03c9fdf73d8eb21b05c2c77248baec13be17c68f6f",
+    "program_hash": "sha256:cd1017218b207fd2dc9904c3befc581e1ae6428e05b2d30da39c6a8a2dc03c17",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:147dcb95000517bf58768a2e9628cd4054616a8a67e1d78dfbe98492797b5974",
+    "target_material_present": false,
+    "trace_hash": "sha256:cae7ad61cb9cd623d1a09bc76567c515d35636cbeb1d2a2898e1ff809a4e028a"
+  },
+  "measurement_receipt_hash": "sha256:1e267de913c50323223c4e548c9b10fab5ccf279081db59446b78f1684309f7e",
+  "measurements": [
+    "GW150914 is retained as pre-seal observational context and is not counted as blind validation.",
+    "GW151226 rises in frequency from 35 to 450 Hz and in amplitude over 55 cycles.",
+    "GW151226 retains positive radiated energy and the two-component-to-one-remnant transition with full uncertainties and model role.",
+    "GW190521 retains one remnant, a decaying least-damped quadrupolar mode and compatibility with the full waveform analysis.",
+    "GW190521's conditional quasicircular interpretation, short-signal limit and alternative interpretations remain explicit.",
+    "No dimensional frequency or exact half-One damping value is relabelled as a Fold proof scalar or direct universal measurement."
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:21fb28c3798ac2479fb847753b0a04b6e5bdffe39464ba5e502c59886c77d996",
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-GRAVITATIONAL-WAVE-CHIRP-RINGDOWN-074-external-target-custodian",
+    "experiment_registration_hash": "sha256:599065f63b58789c653848bfe387628a43b47d3d345509787926b81f82199e5c",
+    "prediction_seal_hash": "sha256:417a7f0db4e24d56c5f23d03c9fdf73d8eb21b05c2c77248baec13be17c68f6f",
+    "registered_target_identity_hash": "sha256:147dcb95000517bf58768a2e9628cd4054616a8a67e1d78dfbe98492797b5974",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f31eb26b6ebfa7ad6992db30e71710685d069114f4fde67f8f6babe0e394a5cd"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:92bdc306ff6274441d2cb013f7365da9d6177cbd4dc537e79abadc2fe70950f8"
+}

@@ -1,0 +1,196 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A transport law not descending from Claim 032 must reject.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any source hash or registered row change must reject.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed census, trace or certificate must reject.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, fitting, row deletion, uncertainty rescaling or mismatch-as-success must reject.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "DISPLACED-MEASUREMENT",
+      "expected_rejection": "A deliberately displaced chronometer or transition record must reject rather than become a passing label.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:5c6365e6307a9ab841bc3d8f7b6cfbb793254b50e89a4bdd91cfb81ef1edee9c"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:504257d441fad45a8f173fad45015c7d723caa7636c517e71d27fddc43a2c42d",
+      "role": "development_only",
+      "source_id": "V1-V2-COSMIC-TRANSPORT-CONTEXT"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "exact dimensionless E2 transport",
+      "exact equality and onset cubes",
+      "typed acceleration and tension magnitudes"
+    ],
+    "external_reference_protocol": "A held measured H0 transports the sealed dimensionless relation after the seal; every root is used only through generated exact rational enclosures.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "The complete residual upper enclosure is below the One; every like-typed exact value is inside its complete interval; all method and model-comparison records remain unchanged; no mismatch is an acceptance condition.",
+    "comparison_implementation_hash": "sha256:76baf7a9deeb5d4a3d12755d3436f0214b77692702ed299fe9af12c917bb5a10",
+    "evaluator_id": "SFT-EXP-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055-post-seal-evaluator",
+    "falsification_condition": "Reject if a source or dependency changes; the complete normalized-residual lower enclosure reaches the One; any forced threshold, acceleration or static-state value leaves its like-typed interval; any row is omitted; an uncertainty is rescaled; a method/model-comparison displacement is rewarded; or target data alter the formal survivor.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact upper/lower enclosure of the complete mean squared residual in reported standard-uncertainty units.",
+        "metric_id": "COMPLETE-CCH-UNIT-RESIDUAL",
+        "unit_protocol": "exact rational unit-normalized squared residual"
+      },
+      {
+        "all_rows": true,
+        "definition": "Exact equality and onset cube membership in complete budget transports.",
+        "metric_id": "PLANCK-THRESHOLDS",
+        "unit_protocol": "dimensionless exact rational interval"
+      },
+      {
+        "all_rows": true,
+        "definition": "Exact acceleration, transition and static-state membership in like-typed reconstruction intervals.",
+        "metric_id": "ACCELERATION-STATE-VALUES",
+        "unit_protocol": "typed magnitudes and exact rational intervals"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Cosmic chronometers to calibrate the ladders and measure the curvature of the Universe",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128",
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "source_uri": "https://doi.org/10.1093/mnras/stad1511"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Planck 2018 plus BAO baseline parameter table",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612",
+      "source_id": "PLANCK-2018-BAO-BASELINE-BUDGET",
+      "source_uri": "https://doi.org/10.1051/0004-6361/201833880"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "An improved model-independent assessment of the late-time cosmic expansion",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:4ac5d80b39e3dc963d5cc7a0c1b8996b0b895a974f08fa736803186bd100f74c",
+      "source_id": "HARIDASU-2018-LATE-EXPANSION",
+      "source_uri": "https://doi.org/10.1088/1475-7516/2018/10/015"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "Quantifying the evidence for the current speed-up of the Universe",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0",
+      "source_id": "GOMEZ-VALENT-2019-ACCELERATION",
+      "source_uri": "https://arxiv.org/abs/1810.02278"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "The state of the dark energy equation of state circa 2023",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5",
+      "source_id": "ESCAMILLA-2024-DARK-ENERGY-STATE",
+      "source_uri": "https://arxiv.org/abs/2307.14802"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "DESI DR2 Results II: BAO measurements and cosmological constraints",
+      "retrieved_date": "2026-07-25",
+      "snapshot_hash": "sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841",
+      "source_id": "DESI-DR2-2025-COSMOLOGY",
+      "source_uri": "https://arxiv.org/abs/2503.14738"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the complete eight-axis product of exact transport carrier, unit-normalized residual relation, provenance, custody, proof/measurement separation, complete rows, successor closure and no extra rule.",
+    "dependency_hashes": [
+      "sha256:236c94746429d25a06a1eac8c1f33ee8ed91c723124adcdc33c75a79b4224956",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:1cc0facaa945ef7587b7e77b5516bed3bbd789ba22f885a3ac173d9c8be2e3c6",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:4d4ee16a0d9f057755aebc5518d1b879ddb782c503c65bc3e0a0e14b657b6f75"
+    ],
+    "exact_domain": "The admitted terminal transport receipt; all 32 CCH rows; H0 and complete Planck budget; both registered acceleration reconstructions; constant-w interval; DESI model-comparison record; exact rational root enclosures; and every source identity.",
+    "relation_hash": "sha256:d96a26f7835ba621a56566e6c06a6a8b787d5b01ec2d157ed5337b8e8553e6d8",
+    "statement": "The exact upper enclosure of the complete 32-row mean squared normalized residual is below the One after the fourth exact enclosure round (three forced bisection refinements). The exact 11/5, 22/5, 17/32 and tension-One values lie inside the complete registered Planck, Haridasu and constant-state intervals. No sigma multiplier, fitted component, uncertainty rescaling, deleted row or mismatch-as-success predicate remains.",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:504257d441fad45a8f173fad45015c7d723caa7636c517e71d27fddc43a2c42d",
+      "input_id": "FORMAL-COSMIC-TRANSPORT-RECEIPT",
+      "value_kind": "admitted-formal-receipt"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:04faa60ca2106fb3d93ec1e7a1238a48f179e3d4914ea26603979285c40901f3",
+    "program_id": "SFT-EXP-PHYS-VALIDATION-COSMIC-TRANSPORT-MEASURED-VALUE-055-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-25",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "claims/SFT-PHYS-COSMO-COMPONENT-TRANSPORT-TERMINAL-032/certificate.json": "sha256:c83b4fc53d29e878502657b310325adcee62be483407433d61465dd744b57354",
+    "experiments/external_sources/physics/snapshots/arxiv-1805.03595-source-record.json": "sha256:4ac5d80b39e3dc963d5cc7a0c1b8996b0b895a974f08fa736803186bd100f74c",
+    "experiments/external_sources/physics/snapshots/arxiv-1810.02278-cosmic-acceleration.pdf": "sha256:55100ed889f8aad5ada957f33759d954466b944d21b461b4c63c62f0b0fb45d0",
+    "experiments/external_sources/physics/snapshots/arxiv-2307.14802-dark-energy-state.pdf": "sha256:67c8d75e79fd85d727012e72e8838651de6720a2e8898e225e251601814c20a5",
+    "experiments/external_sources/physics/snapshots/arxiv-2503.14738-desi-dr2.pdf": "sha256:1e82f26e4cc3901b16168cd147f252bfa804f9c3caad3f4f7e3532640d237841",
+    "experiments/external_sources/physics/snapshots/cosmic-transport-measured-value-successor-source-record.json": "sha256:d4595bfbf4a8bf413fd17493eeed848da664a1d794dacd8ad90627307bcbb8a1",
+    "experiments/external_sources/physics/snapshots/cosmic_transport_terminal-source-record.json": "sha256:6a88728657b19dba0bcf2430d28218a595c0798c6ac34bf2778ef53a1b540705",
+    "experiments/external_sources/physics/snapshots/gomez-valent-2023-cosmic-chronometers.html": "sha256:cbd38055c3c9b27b2cbe1fb7456c60dfd7df3eeb366182932b7899d25207b128",
+    "experiments/external_sources/physics/snapshots/planck-2018-bao-budget-record.json": "sha256:a8525585688e7ba818f8650fc0f8b73a449823d5e199a8be36e37b8e73a0e612"
+  },
+  "status": "measured",
+  "stop_condition": "Halt without admission on a changed source, unit residual failure, missed like-typed interval, omitted row, target access, fitting, uncertainty rescaling, mismatch-as-success or failed control.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "GOMEZ-VALENT-2023-CCH-32",
+      "target_id": "COSMIC-TRANSPORT-WITHHELD-COMPLETE-MEASURED-VALUE-RECORD"
+    }
+  ]
+}

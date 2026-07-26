@@ -26,9 +26,13 @@ from sft.engine.receipt_io import read_receipt  # noqa: E402
 
 INVENTORY_PATH = ROOT / "publications/inventories/physics.json"
 PAPER_PATH = ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md"
-PDF_PATH = ROOT / "output/pdf/from-fold-to-physics-branch-paper-001.pdf"
+PDF_PATH = ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.1.pdf"
 OUTPUT_DIRECTORY = ROOT / "publications/current/physics"
 METADATA_PATH = ROOT / "publication/physics_zenodo_metadata.json"
+ATOMIC_AUDIT_PATH = ROOT / "audits/physics_v1_v2_atomic_ownership.json"
+GAP_AUDIT_PATH = ROOT / "audits/physics_v1_v2_gap_families.md"
+FORMAL_GRAND_LOCK_ID = "SFT-PHYS-GRAND-LOCK-TERMINAL-075"
+EMPIRICAL_GRAND_LOCK_ID = "SFT-PHYS-VALIDATION-GRAND-LOCK-076"
 REQUIRED_FILES = (
     "registration.json", "WHY_DERIVATION_CHECK.md", "candidate_census.json",
     "elimination_receipt.json", "controls.json", "certificate.json",
@@ -136,6 +140,8 @@ def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any
     required = list(branch_inventory.required_claim_ids)
     if any(claim_id not in census for claim_id in required):
         raise ValueError("Physics census omits a required claim")
+    if FORMAL_GRAND_LOCK_ID not in required or EMPIRICAL_GRAND_LOCK_ID not in required:
+        raise ValueError("Physics publication inventory omits a Grand Lock")
     live_physics = [row["claim_id"] for row in census_rows if row.get("branch") == "physics" and row.get("model_admitted") is True]
     if live_physics != required:
         raise ValueError("Physics inventory differs from the live categorical admission census")
@@ -146,12 +152,19 @@ def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any
     if authorized:
         if not doi or "PUBLISHED OPEN-ACCESS BRANCH PAPER" not in paper_text or doi not in paper_text:
             raise ValueError("Authorized Physics paper omits its publication boundary or DOI")
-        if "LOCAL PREPUBLICATION" in paper_text or "Publication is not yet authorized" in paper_text:
+        if "PUBLICATION-READY MANUSCRIPT" in paper_text or "RELEASE NOT YET AUTHORIZED" in paper_text:
             raise ValueError("Authorized Physics paper retains a prepublication marker")
-    elif "LOCAL PREPUBLICATION" not in paper_text or "Publication is not yet authorized" not in paper_text:
-        raise ValueError("Physics paper omits its prepublication boundary")
+    elif "PUBLICATION-READY MANUSCRIPT" not in paper_text or "RELEASE NOT YET AUTHORIZED" not in paper_text:
+        raise ValueError("Physics paper omits its publication-ready unreleased boundary")
     required_entries = [claim_entry(index, claim_id, census[claim_id], paper_text) for index, claim_id in enumerate(required, 1)]
     empirical_ids = [entry["claim_id"] for entry in required_entries if entry["measurement_rows"]]
+    atomic_audit = read(ATOMIC_AUDIT_PATH)
+    atomic_summary = atomic_audit.get("summary", {})
+    if atomic_summary.get("physics_owned_atom_count") != 488 or atomic_summary.get("same_strength_closed_atom_count") != 488 or atomic_summary.get("same_strength_open_atom_count") != 0:
+        raise ValueError("Physics atomic ownership audit is not 488/488 closed")
+    gap_text = GAP_AUDIT_PATH.read_text(encoding="utf-8")
+    if "0 remaining open Physics atoms" not in gap_text or "0 independent law families" not in gap_text:
+        raise ValueError("Physics gap-family audit does not expose zero open families")
     evidence = {
         "schema": "sft-v3-physics-paper-evidence-map/1", "branch_id": "physics",
         "inventory": {
@@ -164,10 +177,20 @@ def build_evidence_map() -> tuple[dict[str, Any], BranchInventory, dict[str, Any
             "rendered_path": PDF_PATH.relative_to(ROOT).as_posix(), "rendered_sha256": raw_sha256(PDF_PATH),
         },
         "claims": required_entries,
+        "current_evidence_closure": {
+            "atomic_audit_path": ATOMIC_AUDIT_PATH.relative_to(ROOT).as_posix(),
+            "atomic_audit_sha256": raw_sha256(ATOMIC_AUDIT_PATH),
+            "physics_owned_atoms": 488,
+            "closed_atoms": 488,
+            "open_atoms": 0,
+            "formal_grand_lock_claim_id": FORMAL_GRAND_LOCK_ID,
+            "empirical_grand_lock_claim_id": EMPIRICAL_GRAND_LOCK_ID,
+        },
         "empirically_validated_claim_ids": empirical_ids,
         "required_candidate_count": sum(row["candidate_count"] for row in required_entries),
         "complete_claim_coverage": True, "controls_passed": True,
-        "ready_to_publish": True, "publication_action_authorized": authorized,
+        "ready_to_publish": True,
+        "publication_action_authorized": authorized,
     }
     return evidence, branch_inventory, census
 
@@ -200,10 +223,14 @@ def main() -> None:
         "empirically_validated_claim_count": len(evidence["empirically_validated_claim_ids"]),
         "comprehensive_derivation_coverage": True, "controls_passed": True,
         "publication_gate_receipt_hash": publication_receipt.receipt_hash,
-        "publication_authorized": bool(read(METADATA_PATH)["publication_authorized"]), "ready_to_publish": True,
+        "publication_authorized": bool(read(METADATA_PATH)["publication_authorized"]),
+        "ready_to_publish": evidence["ready_to_publish"],
     }
     write(OUTPUT_DIRECTORY / "manifest.json", manifest)
-    write(OUTPUT_DIRECTORY / "publication_receipt.json", asdict(publication_receipt))
+    write(
+        OUTPUT_DIRECTORY / "publication_receipt.json",
+        asdict(publication_receipt),
+    )
     rebuilt, _, _ = build_evidence_map()
     if read(evidence_path) != rebuilt:
         raise ValueError("Physics evidence map is stale after materialization")
