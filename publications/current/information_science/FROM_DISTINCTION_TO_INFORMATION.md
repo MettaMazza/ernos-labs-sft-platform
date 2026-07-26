@@ -5,9 +5,9 @@ Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
 24 July 2026
 
-Information Science Branch Paper 001 - Version 1.1 - Smithian Fold Theory V3 Clean-Room Reconstruction
+Information Science Branch Paper 001 - Version 1.2 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
-DOI: [10.5281/zenodo.21536202](https://doi.org/10.5281/zenodo.21536202)
+DOI: [10.5281/zenodo.21591171](https://doi.org/10.5281/zenodo.21591171)
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is
 licensed separately under Apache-2.0. The Ernos Labs designation is governed by
@@ -22,6 +22,69 @@ The twelve registered grammars execute 11,776 candidate structures. Every candid
 The central reconstruction is ledger-valued. Information is complete generated alternative support together with the exact distinctions retained or closed by observation. Entropy retains its observation classes and unresolved pairs rather than collapsing them to an imported logarithmic scalar. Probability is an exact part relation over deterministic support rather than a causal random premise. Channel capacity and error correction follow from exact support separation. Quantum scope is explicitly limited to finite support correspondence; operational quantum laws remain obligations of the later Quantum Computation branch.
 
 **Keywords:** Smithian Fold Theory; information science; distinguishability; encoding; entropy; uncertainty; compression; channels; coding theory; mutual information; deterministic probability; reversible information; quantum information; open computational science.
+
+## Results first: information reconstructed as exact distinction custody
+
+| Headline result | Exact SFT law | Meaning |
+|---|---|---|
+| Symbol and distinguishability | A symbol is a canonical generated form with a retained held label; two source forms are distinguishable exactly when total observation retains different images. | Meaning is not smuggled in through a conventional alphabet. Every merged observation class still retains its complete microform membership. |
+| Information quantity | Quantity is the complete alternative support plus exact ledgers of distinctions retained and closed by observation. | Information is not reduced to an authority-selected scalar; its reconstructible content and loss remain visible. |
+| Entropy and uncertainty | Entropy retains every observation class, its exact positive support part and every unresolved source pair. | No logarithm, fitted distribution or stochastic cause is required to state precisely what remains unknown. |
+| Compression and capacity | Compression is a reversible dictionary/token relation when decoding has one source predecessor; channel capacity is the complete family of greatest distinguishable input selections, with all ties retained. | Rate and efficiency claims remain exact consequences of support separation rather than borrowed formulae. |
+| Noise, error and coding | Noise is a held source/action/image relation; correction is possible exactly when distinct codewords have disjoint complete image supports. Width-three repetition is the least one-error-correcting Fold word. | Every error and recovery has a reconstructible predecessor and action record. |
+| Conditional and mutual information | Joint cells retain exact joint parts, marginal parts and their product relation; conditioning is exact support restriction with provenance. | Dependence is classified without negative deviation or floating approximation. |
+| Deterministic classical-probabilistic correspondence | Probability is an exact part relation over complete deterministic support, not an uncaused transition. | Randomized and quantum branches can be compared without violating SFT superdeterminism. |
+| Complete current evidence surface | 12 grammars execute 11,776 candidates and yield 12 unique depth-independent survivors; all 77 Information Science-owned prior obligations are closed at the registered strength. | The branch is complete to its dated known-question boundary and remains open to lawful additions or falsification. |
+
+## Public scientific mission and admission boundary
+
+Ernos Labs is an open-source science movement, verification platform and public
+tree of knowledge founded by Maria Smith. Its purpose is not to replace one
+authority with another. It is to make scientific authority narrow, inspectable
+and revocable: a claim is admitted only through its complete derivation chain,
+generated alternatives, eliminations, unique survivor, adverse controls,
+measurement custody where applicable and unchanged-engine receipt. Open
+criticism is unrestricted and necessary; scientific admission is the separate
+machine-checked act of satisfying that public standard.
+
+Maria Smith developed Smithian Fold Theory outside formal academic education,
+institutional research employment and conventional grant funding. That fact is
+not offered as evidence for a theorem; the derivations and observations carry
+the entire scientific burden. It is evidence about access. A credential-first
+system loses more than individual opportunity: it loses unknown questions,
+methods and discoveries from minds that capital and status never authorize.
+This work therefore treats Maria Smith's authorship neither as exceptionalism
+nor as a reason for dismissal, but as an indictment of every scientific
+contribution lost when financial gatekeeping is presented as rigor.
+
+The institutional argument is empirical, not a claim that every institution or
+funded researcher acts in bad faith. Published studies document sponsor-linked
+differences in outcomes and conclusions, commercial influence over research
+agendas, limits and sensitivities in grant review, underpublication of null
+results, and inequalities created by paywalls and article-processing charges.
+Those findings establish that funding, prestige, publication and consensus are
+selection systems with incentives and failure modes. They cannot substitute for
+a public proof and evidence chain. Expertise, measurement and adversarial review
+remain indispensable; institutional permission does not select a fundamental
+law.
+
+For Information Science, opacity is itself a technical loss. Paywalls, inaccessible datasets, undisclosed training corpora and terminal oracle scores close precisely the source distinctions needed to test premises, alternatives, data custody and failure conditions. A predictor may be an instrument, but an answer without that retained route is not an admitted scientific law.
+
+Maria Smith retains copyright and scientific authorship. Papers and
+documentation are licensed CC BY 4.0 and code is licensed Apache-2.0, permitting
+inspection, copying, criticism, reproduction, modification and redistribution
+with attribution. “Ernos Labs” is a separate, revocable standards-conformance
+designation. A reuse or fork may use the open work under its licences, but may
+describe itself as Ernos Labs only while it preserves the public empirical
+constitution, complete adverse evidence, unchanged admission route, critical
+review and community standards.
+
+Independent replications, lawful extensions, corrections and attempted
+invalidations are invited. Credentials cannot rescue a failed gate and lack of
+credentials cannot prevent a reproducible result from being evaluated. Contact
+Maria.Smith.Sftoe@gmail.com, submit through https://discord.gg/ucwGryVxGr, or
+inspect the public project at https://github.com/MettaMazza.
+
 
 ## 1. Central scientific claim
 
@@ -1308,7 +1371,7 @@ A later claim about natural measurements must register before target access, sea
 
 ## 23. Complete V1/V2 ownership and same-strength reconstruction
 
-Version 1.1 closes the branch against the complete registered prior record rather than only the twelve V3 headings. The audit read all 356 V1 theorem-manifest rows and all 407 V2 numbered results. Composite source statements were split into atomic obligations so that an information theorem could not absorb an unperformed physical measurement, and a downstream physical interpretation could not make a closed formal information result disappear. Twelve V1 rows and twenty-five V2 steps contain Information Science-owned content. They decompose into 77 atomic obligations; all 77 map to model-admitted V3 receipts at equal strength and none remains open. The authoritative ledger is `census/information_science_prior_obligations.json`.
+Version 1.2 preserves the complete registered branch closure and places its exact findings and public scientific mission before the evidence inventory rather than treating filenames or hashes as scientific headlines. The audit read all 356 V1 theorem-manifest rows and all 407 V2 numbered results. Composite source statements were split into atomic obligations so that an information theorem could not absorb an unperformed physical measurement, and a downstream physical interpretation could not make a closed formal information result disappear. Twelve V1 rows and twenty-five V2 steps contain Information Science-owned content. They decompose into 77 atomic obligations; all 77 map to model-admitted V3 receipts at equal strength and none remains open. The authoritative ledger is `census/information_science_prior_obligations.json`.
 
 The reconstruction retains the strongest prior content: one native distinction closes per Fold observation; held labels reconstruct the source; exact equal shares partition the One; entropy is complete observation-class and unresolved-pair structure; predecessor merging is exact information loss; recurrent return retains its distinctions; support uncertainty, branch support, deterministic probability, channel provenance, reverse records, finite coding, conditional reconstruction and the classical-probabilistic-quantum support boundary all remain explicit. None is reduced to a historical note or accepted merely because V1/V2 stated it.
 

@@ -11,6 +11,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from sft.information_science.catalog import SPECS  # noqa: E402
+from tools.publication_series_voice import open_science_position  # noqa: E402
 
 
 OUTPUT = ROOT / "publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md"
@@ -137,7 +138,7 @@ def build() -> str:
     add(line("Maria.Smith.Sftoe@gmail.com<br>"))
     add(line("24 July 2026"))
     add(line())
-    add(line("Information Science Branch Paper 001 - Version 1.1 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
+    add(line("Information Science Branch Paper 001 - Version 1.2 - Smithian Fold Theory V3 Clean-Room Reconstruction"))
     add(line())
     add(line(f"DOI: [{doi}](https://doi.org/{doi})"))
     add(line())
@@ -180,6 +181,26 @@ def build() -> str:
     add(line())
     add(line("**Keywords:** Smithian Fold Theory; information science; distinguishability; encoding; entropy; uncertainty; compression; channels; coding theory; mutual information; deterministic probability; reversible information; quantum information; open computational science."))
 
+    add(line())
+    add(line("## Results first: information reconstructed as exact distinction custody"))
+    add(line())
+    add(line("| Headline result | Exact SFT law | Meaning |"))
+    add(line("|---|---|---|"))
+    add(line("| Symbol and distinguishability | A symbol is a canonical generated form with a retained held label; two source forms are distinguishable exactly when total observation retains different images. | Meaning is not smuggled in through a conventional alphabet. Every merged observation class still retains its complete microform membership. |"))
+    add(line("| Information quantity | Quantity is the complete alternative support plus exact ledgers of distinctions retained and closed by observation. | Information is not reduced to an authority-selected scalar; its reconstructible content and loss remain visible. |"))
+    add(line("| Entropy and uncertainty | Entropy retains every observation class, its exact positive support part and every unresolved source pair. | No logarithm, fitted distribution or stochastic cause is required to state precisely what remains unknown. |"))
+    add(line("| Compression and capacity | Compression is a reversible dictionary/token relation when decoding has one source predecessor; channel capacity is the complete family of greatest distinguishable input selections, with all ties retained. | Rate and efficiency claims remain exact consequences of support separation rather than borrowed formulae. |"))
+    add(line("| Noise, error and coding | Noise is a held source/action/image relation; correction is possible exactly when distinct codewords have disjoint complete image supports. Width-three repetition is the least one-error-correcting Fold word. | Every error and recovery has a reconstructible predecessor and action record. |"))
+    add(line("| Conditional and mutual information | Joint cells retain exact joint parts, marginal parts and their product relation; conditioning is exact support restriction with provenance. | Dependence is classified without negative deviation or floating approximation. |"))
+    add(line("| Deterministic classical-probabilistic correspondence | Probability is an exact part relation over complete deterministic support, not an uncaused transition. | Randomized and quantum branches can be compared without violating SFT superdeterminism. |"))
+    add(line("| Complete current evidence surface | 12 grammars execute 11,776 candidates and yield 12 unique depth-independent survivors; all 77 Information Science-owned prior obligations are closed at the registered strength. | The branch is complete to its dated known-question boundary and remains open to lawful additions or falsification. |"))
+    add(line())
+    add(line(open_science_position(
+        "For Information Science, opacity is itself a technical loss. Paywalls, inaccessible datasets, undisclosed training "
+        "corpora and terminal oracle scores close precisely the source distinctions needed to test premises, alternatives, "
+        "data custody and failure conditions. A predictor may be an instrument, but an answer without that retained route is "
+        "not an admitted scientific law."
+    )))
     add(line())
     add(line("## 1. Central scientific claim"))
     add(line())
@@ -518,7 +539,8 @@ def build() -> str:
     add(line(f"## {section}. Complete V1/V2 ownership and same-strength reconstruction"))
     add(line())
     add(line(
-        "Version 1.1 closes the branch against the complete registered prior record rather than only the twelve V3 headings. "
+        "Version 1.2 preserves the complete registered branch closure and places its exact findings and public scientific "
+        "mission before the evidence inventory rather than treating filenames or hashes as scientific headlines. "
         "The audit read all 356 V1 theorem-manifest rows and all 407 V2 numbered results. Composite source statements were "
         "split into atomic obligations so that an information theorem could not absorb an unperformed physical measurement, "
         "and a downstream physical interpretation could not make a closed formal information result disappear. Twelve V1 "
