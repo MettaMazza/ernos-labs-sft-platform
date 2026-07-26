@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Foundation Branch Paper 001 version 1.1 from sealed evidence."""
+"""Build Foundation Branch Paper 001 version 1.2 from sealed evidence."""
 
 from __future__ import annotations
 
@@ -7,13 +7,18 @@ from collections import Counter
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from tools.publication_series_voice import open_science_position  # noqa: E402
+
 INVENTORY = ROOT / "publications/inventories/successors/foundation.json"
 LEDGER = ROOT / "census/foundation_prior_obligations.json"
-OUTPUT = ROOT / "publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_1.md"
-LANDING = ROOT / "README.md"
+OUTPUT = ROOT / "publications/successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_2.md"
 
 
 def read_json(path: Path): return json.loads(path.read_text(encoding="utf-8"))
@@ -72,12 +77,13 @@ def main() -> None:
 
 ## A premise-free, parameter-free and machine-closed Foundation for Smithian Fold Theory
 
-**Foundation Branch Paper 001 - expanded technical and empirical patch, version 1.1**
+**Foundation Branch Paper 001 - expanded technical and empirical patch, version 1.2**
 **Maria Smith** — Independent researcher and founder, Ernos Labs
+DOI: https://doi.org/10.5281/zenodo.21591169
 Email: Maria.Smith.Sftoe@gmail.com
 GitHub: https://github.com/MettaMazza
 Discord submissions: https://discord.gg/ucwGryVxGr
-Date: 24 July 2026
+Date: 26 July 2026
 Paper licence: CC BY 4.0 · Code licence: Apache-2.0
 
 > **Principal result.** Starting from the operational impossibility of presenting
@@ -91,7 +97,7 @@ Paper licence: CC BY 4.0 · Code licence: Apache-2.0
 """)
     parts.append(f"""## Abstract
 
-This version 1.1 patch reports the completed current-knowledge Foundation of the
+This version 1.2 patch reports the completed current-knowledge Foundation of the
 third clean-room Smithian Fold Theory reconstruction. It updates Foundation
 Branch Paper 001 within the same publication and DOI version chain; it is not a
 separately numbered paper. The live branch contains **{len(claims)}
@@ -151,6 +157,12 @@ candidate, elimination, control, certificate and receipt route for every theorem
    form closure, controls, independent validation, post-seal measurement order,
    receipt retention and admitted-dependency use.
 """)
+    parts.append(open_science_position(
+        "For Foundation, no institution, conventional axiom set, inherited ontology or target result is allowed to fill "
+        "the premise-free starting point. The public burden is stronger than declaration: every proposed form must appear "
+        "in the generated census, every rejection must remain visible, and the sole survivor must be reproducible through "
+        "the unchanged admission engine."
+    ))
     parts.append("## 2. Exact validation scoreboard\n\n" + table(
         ("Measure", "Exact result"),
         [
@@ -374,7 +386,7 @@ python3 tools/verify_publication_compliance.py --branch foundation --require-rea
 ```
 
 The first command rebuilds the exact prior-obligation ledger. The second
-reconstructs and verifies the complete Foundation Paper 001 version 1.1 evidence
+reconstructs and verifies the complete Foundation Paper 001 version 1.2 evidence
 bundle. The third applies the strengthened current-knowledge inventory,
 ownership, manuscript, rendered-paper and receipt gate. Later branches are not
 replayed by this branch-specific publication check.
@@ -401,7 +413,7 @@ same-strength reconstruction, exact enumerations and independent checks.
 All source, candidate censuses, decisions, controls, certificates and receipts
 are contained in the Ernos Labs Smithian Fold Theory Open Science Platform and
 Knowledge Tree. Foundation Paper 001 version 1.0 remains preserved in the DOI
-version history. This version 1.1 patch expands that same paper and does not
+version history. This version 1.2 patch expands that same paper and does not
 renumber it.
 
 ## References
@@ -419,18 +431,6 @@ renumber it.
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     paper_text = publication_ascii("\n\n".join(parts).rstrip() + "\n")
     OUTPUT.write_text(paper_text, encoding="utf-8")
-    landing_header = (
-        "[Zenodo Paper 001 v1.1 DOI: 10.5281/zenodo.21535636]"
-        "(https://doi.org/10.5281/zenodo.21535636) | "
-        "[PDF](output/pdf/from-nothing-to-fold-foundation-branch-paper-001-v1.1.pdf) | "
-        "[Canonical Markdown](publications/successors/foundation/"
-        "FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_1.md)\n\n"
-    )
-    landing_text = paper_text.replace(
-        "(../../../census/foundation_prior_obligations.json)",
-        "(census/foundation_prior_obligations.json)",
-    )
-    LANDING.write_text(landing_header + landing_text, encoding="utf-8")
     print(f"wrote {OUTPUT.relative_to(ROOT)} bytes={OUTPUT.stat().st_size} sha256={digest(OUTPUT)}")
 
 
