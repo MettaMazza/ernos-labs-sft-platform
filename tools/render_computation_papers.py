@@ -44,7 +44,7 @@ def cover(kicker_text: str, title_text: str, subtitle_text: str, statistics: str
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph(statistics + "<br/>24 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph(statistics + "<br/>26 July 2026" + (f"<br/>{'DOI' if authorized else 'Previous version DOI'}: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]
@@ -84,24 +84,24 @@ def main() -> None:
     render(
         "computation",
         ROOT / "publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md",
-        ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf",
+        ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001-v1.2.pdf",
         "After Turing: The Fold Machine",
         "An Exact, Parameter-Free and Machine-Closed Derivation of Classical Computational Science from Smithian Fold Theory",
         "SMITHIAN FOLD THEORY - CLASSICAL COMPUTATION BRANCH PAPER 001",
         "AFTER TURING: THE FOLD MACHINE - ERNOS LABS CLASSICAL COMPUTATION PAPER 001",
         "Completed Smithian Fold Theory Classical Computation branch",
-        "Third clean-room reconstruction - Classical Computation inventory complete<br/>116 admitted derivations - 29,696 generated candidates",
+        "Version 1.2 - Classical Computation inventory complete<br/>116 admitted derivations - 29,696 generated candidates",
     )
     render(
         "quantum_computation",
         ROOT / "publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md",
-        ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001.pdf",
+        ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001-v1.2.pdf",
         "The Quantum Fold Machine",
         "An Exact, Parameter-Free and Machine-Closed Derivation of Reversible and Quantum Computation from Smithian Fold Theory",
         "SMITHIAN FOLD THEORY - REVERSIBLE AND QUANTUM COMPUTATION BRANCH PAPER 001",
         "THE QUANTUM FOLD MACHINE - ERNOS LABS QUANTUM COMPUTATION PAPER 001",
         "Completed Smithian Fold Theory Reversible and Quantum Computation branch",
-        "Third clean-room reconstruction - Quantum Computation inventory complete<br/>22 admitted derivations - 5,632 generated candidates",
+        "Version 1.2 - Quantum Computation inventory complete<br/>22 admitted derivations - 5,632 generated candidates",
     )
 
 

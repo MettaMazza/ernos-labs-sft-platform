@@ -33,7 +33,7 @@ CONFIGS = {
     "computation": {
         "inventory": ROOT / "publications/inventories/computation.json",
         "paper": ROOT / "publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md",
-        "pdf": ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001.pdf",
+        "pdf": ROOT / "output/pdf/after-turing-the-fold-machine-classical-computation-branch-paper-001-v1.2.pdf",
         "directory": ROOT / "publications/current/computation",
         "metadata": ROOT / "publication/computation_zenodo_metadata.json",
         "schema": "sft-v3-classical-computation-paper-evidence-map/1",
@@ -41,7 +41,7 @@ CONFIGS = {
     "quantum_computation": {
         "inventory": ROOT / "publications/inventories/quantum_computation.json",
         "paper": ROOT / "publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md",
-        "pdf": ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001.pdf",
+        "pdf": ROOT / "output/pdf/the-quantum-fold-machine-branch-paper-001-v1.2.pdf",
         "directory": ROOT / "publications/current/quantum_computation",
         "metadata": ROOT / "publication/quantum_computation_zenodo_metadata.json",
         "schema": "sft-v3-quantum-computation-paper-evidence-map/1",

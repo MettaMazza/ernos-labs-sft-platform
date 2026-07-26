@@ -3,11 +3,11 @@
 **Maria Smith**<br>
 Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
-2026-07-24
+2026-07-26
 
-Classical Computation Branch Paper 001, version 1.1.0 - Smithian Fold Theory V3 Clean-Room Reconstruction
+Classical Computation Branch Paper 001, version 1.2.0 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
-DOI: [10.5281/zenodo.21536437](https://doi.org/10.5281/zenodo.21536437)
+DOI: [10.5281/zenodo.21591174](https://doi.org/10.5281/zenodo.21591174)
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0.
 
@@ -16,8 +16,6 @@ Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is lic
 This paper reports the completed Classical Computation branch of the third clean-room reconstruction of Smithian Fold Theory. From Foundation, Mathematics and Information Science receipts it derives Formal Computation, Computability, Complexity, Algorithms and mathematical data structures, Program Semantics, Concurrent and Distributed Computation, Cryptography and Security, Learning and Intelligence Theory, and Scientific Computation. The branch does not import a Turing machine, lambda calculus, conventional complexity class, probability cause, cryptographic hardness assumption, pretrained model, fitted parameter, floating proof value or application result as a premise. Historical models enter only after sealing as explicit correspondence tests.
 
 The frozen branch contains 116 dependency-ordered claims and 29,696 generated candidate structures. Every candidate is decided, each grammar has exactly one survivor, and every claim passes minimality, named-shape uniqueness, depth-independent closure, four adverse controls, cryptographic sealing and implementation-distinct recomputation.
-
-Inventory identity: `sha256:cebee4dc4c4b66fa6c73b587dd93ca56a9ea7b5c86593fda179967ee70fb49e8`.
 
 **Keywords:** Smithian Fold Theory; classical computation; Turing machine; computability; complexity; algorithms; semantics; distributed systems; cryptography; learning theory; scientific computing; computational proof; open science
 
@@ -38,6 +36,58 @@ Closure means the exact generated-finite kernels named in the inventory are comp
 | Randomized computation in a superdeterministic model | Randomness is complete schedule support plus observation-relative uncertainty, never an uncaused transition. | Every registered schedule is deterministically executed and retained; exact success parts summarize the closed branch partition. |
 
 These results were not selected by the historical problem names. Their carriers and transition laws were already forced from upstream receipts; the famous labels enter after sealing as correspondence. A conventional encoding may be compared at that boundary, but it cannot broaden the native theorem without a separately registered grammar.
+
+## Public scientific mission and admission boundary
+
+Ernos Labs is an open-source science movement, verification platform and public
+tree of knowledge founded by Maria Smith. Its purpose is not to replace one
+authority with another. It is to make scientific authority narrow, inspectable
+and revocable: a claim is admitted only through its complete derivation chain,
+generated alternatives, eliminations, unique survivor, adverse controls,
+measurement custody where applicable and unchanged-engine receipt. Open
+criticism is unrestricted and necessary; scientific admission is the separate
+machine-checked act of satisfying that public standard.
+
+Maria Smith developed Smithian Fold Theory outside formal academic education,
+institutional research employment and conventional grant funding. That fact is
+not offered as evidence for a theorem; the derivations and observations carry
+the entire scientific burden. It is evidence about access. A credential-first
+system loses more than individual opportunity: it loses unknown questions,
+methods and discoveries from minds that capital and status never authorize.
+This work therefore treats Maria Smith's authorship neither as exceptionalism
+nor as a reason for dismissal, but as an indictment of every scientific
+contribution lost when financial gatekeeping is presented as rigor.
+
+The institutional argument is empirical, not a claim that every institution or
+funded researcher acts in bad faith. Published studies document sponsor-linked
+differences in outcomes and conclusions, commercial influence over research
+agendas, limits and sensitivities in grant review, underpublication of null
+results, and inequalities created by paywalls and article-processing charges.
+Those findings establish that funding, prestige, publication and consensus are
+selection systems with incentives and failure modes. They cannot substitute for
+a public proof and evidence chain. Expertise, measurement and adversarial review
+remain indispensable; institutional permission does not select a fundamental
+law.
+
+For Computational Science, this constitution refuses both imported machine authority and benchmark theatre. A Turing machine, complexity class, randomized schedule, cryptographic adversary, learning model or simulation may enter only after its native Fold carrier and resource boundary have been forced. A terminal program output or opaque benchmark score cannot replace the transition trace that makes the computation scientific.
+
+Maria Smith retains copyright and scientific authorship. Papers and
+documentation are licensed CC BY 4.0 and code is licensed Apache-2.0, permitting
+inspection, copying, criticism, reproduction, modification and redistribution
+with attribution. “Ernos Labs” is a separate, revocable standards-conformance
+designation. A reuse or fork may use the open work under its licences, but may
+describe itself as Ernos Labs only while it preserves the public empirical
+constitution, complete adverse evidence, unchanged admission route, critical
+review and community standards.
+
+Independent replications, lawful extensions, corrections and attempted
+invalidations are invited. Credentials cannot rescue a failed gate and lack of
+credentials cannot prevent a reproducible result from being evaluated. Contact
+Maria.Smith.Sftoe@gmail.com, submit through https://discord.gg/ucwGryVxGr, or
+inspect the public project at https://github.com/MettaMazza.
+
+
+Evidence-boundary inventory identity: `sha256:cebee4dc4c4b66fa6c73b587dd93ca56a9ea7b5c86593fda179967ee70fb49e8`.
 
 ## 3. Derivational constitution
 

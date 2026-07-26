@@ -16,6 +16,7 @@ from sft.computation.generated_law import survivor_id as computation_survivor  #
 from sft.computation.spec_data import GROUP_TITLES  # noqa: E402
 from sft.quantum_computation.current_catalog import SPECS as QUANTUM_SPECS  # noqa: E402
 from sft.quantum_computation.generated_law import survivor_id as quantum_survivor  # noqa: E402
+from tools.publication_series_voice import open_science_position  # noqa: E402
 
 
 COMPUTATION_OUTPUT = ROOT / "publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md"
@@ -218,12 +219,12 @@ def common_front_matter(branch_id: str, title: str, subtitle: str, branch_label:
             "sealing and implementation-distinct recomputation."
         ),
         L(),
-        L(f"Inventory identity: `{inventory_hash}`."),
-        L(),
         L(f"**Keywords:** {keywords}"),
     ]
-    if doi:
+    if doi and authorized:
         matter[9:9] = [L(f"DOI: [{doi}](https://doi.org/{doi})"), L()]
+    elif doi:
+        matter[9:9] = [L(f"Previous published version DOI: [{doi}](https://doi.org/{doi})"), L()]
     if not authorized:
         matter[10:10] = [L("**LOCAL PREPUBLICATION MANUSCRIPT - publication is not yet authorized.**"), L()]
     return matter
@@ -280,6 +281,15 @@ def build_computation() -> str:
         "forced from upstream receipts; the famous labels enter after sealing as correspondence. A conventional encoding may "
         "be compared at that boundary, but it cannot broaden the native theorem without a separately registered grammar."
     ))
+    add(L())
+    add(L(open_science_position(
+        "For Computational Science, this constitution refuses both imported machine authority and benchmark theatre. "
+        "A Turing machine, complexity class, randomized schedule, cryptographic adversary, learning model or simulation "
+        "may enter only after its native Fold carrier and resource boundary have been forced. A terminal program output or "
+        "opaque benchmark score cannot replace the transition trace that makes the computation scientific."
+    )))
+    add(L())
+    add(L(f"Evidence-boundary inventory identity: `{inventory['inventory_hash']}`."))
     add(L())
     add(L("## 3. Derivational constitution"))
     add(L())
@@ -494,6 +504,15 @@ def build_quantum() -> str:
     add(L("| Quantum computational limits | Every admitted quantum circuit remains a finite generated description, so self-reference, halting and undeclared-oracle boundaries transfer. | Branchwise operational correspondence with the classical reversible submodel. |"))
     add(L())
     add(L("Historical quantum formalisms and names enter after the Fold carriers, transformations and observations are sealed. They are correspondence tests and cannot select the law, code width, survivor or claimed resource."))
+    add(L())
+    add(L(open_science_position(
+        "For Quantum Computation, inaccessible hardware summaries, proprietary simulation, fitted amplitude tables and "
+        "authority labels cannot admit a quantum law. Every support branch, phase action, merge, joint cell, observation "
+        "record, correction mask and resource must remain inspectable. Hardware measurements may test a separately sealed "
+        "physical claim, but cannot flow backward to select the formal quantum-computation structure."
+    )))
+    add(L())
+    add(L(f"Evidence-boundary inventory identity: `{inventory['inventory_hash']}`."))
     add(L())
     add(L("## 3. Fold-native quantum constitution"))
     add(L())
