@@ -3,11 +3,11 @@
 **Maria Smith**<br>
 Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
-2026-07-24
+2026-07-26
 
-Reversible and Quantum Computation Branch Paper 001, version 1.1.0 - Smithian Fold Theory V3 Clean-Room Reconstruction
+Reversible and Quantum Computation Branch Paper 001, version 1.2.0 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
-DOI: [10.5281/zenodo.21536581](https://doi.org/10.5281/zenodo.21536581)
+DOI: [10.5281/zenodo.21591175](https://doi.org/10.5281/zenodo.21591175)
 
 Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0.
 
@@ -16,8 +16,6 @@ Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is lic
 This paper reports the completed Reversible and Quantum Computation branch of the third clean-room reconstruction of Smithian Fold Theory. From the admitted Foundation, Mathematics, Information Science and Classical Computation receipts it derives a complete reversible model; Fold quantum information units and composition; superposition-equivalent support; phase and interference; entanglement; measurement; gates and circuits; quantum universality, algorithms and complexity; communication; coding, error correction and fault tolerance; simulation; verification; learning; full operational classical-quantum correspondence; and the limits of quantum computation. It imports no complex amplitude, Hilbert-space axiom, stochastic collapse postulate, fitted parameter or physical benchmark as a premise.
 
 The frozen branch contains 22 dependency-ordered claims and 5,632 generated candidate structures. Every candidate is decided, each grammar has exactly one survivor, and every claim passes minimality, named-shape uniqueness, depth-independent closure, four adverse controls, cryptographic sealing and implementation-distinct recomputation.
-
-Inventory identity: `sha256:d421a26e77e356ebb227bbcab026dfe6aaedcd3019dc55d7e70adf2503cfd542`.
 
 **Keywords:** Smithian Fold Theory; reversible computation; quantum information; superposition; phase; interference; entanglement; measurement; quantum circuits; error correction; fault tolerance; quantum algorithms; quantum complexity; open computational science
 
@@ -39,6 +37,58 @@ Closure is formal and structural. It includes the unbounded positive-finite `2t+
 | Quantum computational limits | Every admitted quantum circuit remains a finite generated description, so self-reference, halting and undeclared-oracle boundaries transfer. | Branchwise operational correspondence with the classical reversible submodel. |
 
 Historical quantum formalisms and names enter after the Fold carriers, transformations and observations are sealed. They are correspondence tests and cannot select the law, code width, survivor or claimed resource.
+
+## Public scientific mission and admission boundary
+
+Ernos Labs is an open-source science movement, verification platform and public
+tree of knowledge founded by Maria Smith. Its purpose is not to replace one
+authority with another. It is to make scientific authority narrow, inspectable
+and revocable: a claim is admitted only through its complete derivation chain,
+generated alternatives, eliminations, unique survivor, adverse controls,
+measurement custody where applicable and unchanged-engine receipt. Open
+criticism is unrestricted and necessary; scientific admission is the separate
+machine-checked act of satisfying that public standard.
+
+Maria Smith developed Smithian Fold Theory outside formal academic education,
+institutional research employment and conventional grant funding. That fact is
+not offered as evidence for a theorem; the derivations and observations carry
+the entire scientific burden. It is evidence about access. A credential-first
+system loses more than individual opportunity: it loses unknown questions,
+methods and discoveries from minds that capital and status never authorize.
+This work therefore treats Maria Smith's authorship neither as exceptionalism
+nor as a reason for dismissal, but as an indictment of every scientific
+contribution lost when financial gatekeeping is presented as rigor.
+
+The institutional argument is empirical, not a claim that every institution or
+funded researcher acts in bad faith. Published studies document sponsor-linked
+differences in outcomes and conclusions, commercial influence over research
+agendas, limits and sensitivities in grant review, underpublication of null
+results, and inequalities created by paywalls and article-processing charges.
+Those findings establish that funding, prestige, publication and consensus are
+selection systems with incentives and failure modes. They cannot substitute for
+a public proof and evidence chain. Expertise, measurement and adversarial review
+remain indispensable; institutional permission does not select a fundamental
+law.
+
+For Quantum Computation, inaccessible hardware summaries, proprietary simulation, fitted amplitude tables and authority labels cannot admit a quantum law. Every support branch, phase action, merge, joint cell, observation record, correction mask and resource must remain inspectable. Hardware measurements may test a separately sealed physical claim, but cannot flow backward to select the formal quantum-computation structure.
+
+Maria Smith retains copyright and scientific authorship. Papers and
+documentation are licensed CC BY 4.0 and code is licensed Apache-2.0, permitting
+inspection, copying, criticism, reproduction, modification and redistribution
+with attribution. “Ernos Labs” is a separate, revocable standards-conformance
+designation. A reuse or fork may use the open work under its licences, but may
+describe itself as Ernos Labs only while it preserves the public empirical
+constitution, complete adverse evidence, unchanged admission route, critical
+review and community standards.
+
+Independent replications, lawful extensions, corrections and attempted
+invalidations are invited. Credentials cannot rescue a failed gate and lack of
+credentials cannot prevent a reproducible result from being evaluated. Contact
+Maria.Smith.Sftoe@gmail.com, submit through https://discord.gg/ucwGryVxGr, or
+inspect the public project at https://github.com/MettaMazza.
+
+
+Evidence-boundary inventory identity: `sha256:d421a26e77e356ebb227bbcab026dfe6aaedcd3019dc55d7e70adf2503cfd542`.
 
 ## 3. Fold-native quantum constitution
 
