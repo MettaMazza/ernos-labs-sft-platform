@@ -2,12 +2,12 @@
 
 ## Current gate correction
 
-Every published branch has been reopened for complete V1/V2 categorical-owner
-and same-strength reconciliation. Checked items below record work admitted at
-its exact claim boundary; they do **not** presently mean that the whole branch
-passes the stronger current-knowledge publication gate. The authoritative
-status is `census/prior_obligation_ownership.json` together with the two prior
-observation censuses.
+The dependency-ordered successor reconstruction is published through Physics.
+Foundation, Mathematics, Information Science, Classical Computation, Reversible
+and Quantum Computation, and Physics pass their current-evidence publication
+gates while remaining open to lawful extension, correction, falsification and
+new discovery. Chemistry and Materials retain their archived papers but await
+their ordered successor updates.
 
 ## Phase A - constitutional scaffold
 
@@ -18,9 +18,9 @@ observation censuses.
 
 ## Phase B - foundation
 
-Status: current reconstruction closed; 32 of 32 prior obligations and 16 of 16
-required theorems are closed. Foundation Branch Paper 001 version 1.1 is the
-current exhaustive account.
+Status: current-evidence closed; 32 of 32 prior obligations and 16 of 16
+required theorems are closed. Foundation Branch Paper 001 version 1.2 is
+published at DOI `10.5281/zenodo.21591169`.
 
 - Reconstruct exact counted values and positive rational parts.
 - Reconstruct the One and permitted operations.
@@ -33,8 +33,8 @@ current exhaustive account.
 
 Status: current reconstruction closed. All 763 prior source entries were
 reviewed for categorical ownership; 71 of 71 atomic Mathematics obligations are
-closed by 22 model-admitted claims. Mathematics Branch Paper 001 version 1.1 is
-the current successor account once its version deposit is synchronized.
+closed by 27 model-admitted claims. Mathematics Branch Paper 001 version 1.3 is
+published at DOI `10.5281/zenodo.21591170`.
 
 - [x] Exact arithmetic and number structure.
 - [x] Discrete mathematics and combinatorics.
@@ -51,12 +51,12 @@ Status: Information Science, Classical Computation, and Reversible and Quantum
 Computation are reconstructed at current registered V1/V2 strength. Quantum
 Computation closes 29 of 29 owned atomic obligations through 22 admitted laws
 and 5,632 generated candidates. Physics is the next active owner, measured-value
-and same-strength reconstruction branch.
+branch; the ordered successor series is published through Physics.
 
 - [x] Information science: twelve model-admitted, depth-independently closed and
   independently replicated claims; frozen inventory; standalone paper and
-  evidence bundle; Paper 001 version 1.1 closes 77/77 prior obligations at DOI
-  `10.5281/zenodo.21536202` on 24 July 2026.
+  evidence bundle; Paper 001 version 1.2 closes 77/77 prior obligations at DOI
+  `10.5281/zenodo.21591171`.
 - [x] Formal computation and model equivalence.
 - [x] Computability and incompleteness boundaries.
 - [x] Complexity and resource laws.
@@ -69,10 +69,10 @@ and same-strength reconstruction branch.
 - [x] Reversible and quantum computation.
 
 The current Classical Computation inventory contains 116 admitted claims and
-29,696 generated candidates at DOI `10.5281/zenodo.21536437`. The current
+29,696 generated candidates at DOI `10.5281/zenodo.21591174`. The current
 Reversible and Quantum Computation inventory contains 22 admitted claims and
-5,632 generated candidates; Paper 001 version 1.1 is reserved in the existing
-concept chain at DOI `10.5281/zenodo.21536581`.
+5,632 generated candidates; Paper 001 version 1.2 is published at DOI
+`10.5281/zenodo.21591175`.
 
 ## Phase E - physical sciences
 
@@ -85,14 +85,13 @@ concept chain at DOI `10.5281/zenodo.21536581`.
 - [x] Fluids, plasmas and condensed structures.
 - [x] Physics-to-Astronomy/Cosmology boundary.
 
-The published Physics v1 inventory was frozen at 132 required and eight
-supplemental admitted claims, 35,840 generated candidates and fourteen exact
-measured-value relation checks. Its 331-page paper and evidence release are
-published at DOI `10.5281/zenodo.21520881`. Twenty later Physics admissions,
-including the inverse fine-structure value and its post-seal CODATA check, make
-that paper an immutable earlier version rather than the current complete
-branch. A full prior-observation value/discriminator audit blocks the Physics
-successor and every later final-TOE completion claim.
+Physics Branch Paper 001 version 1.1 is published at DOI
+`10.5281/zenodo.21591791`. Its current categorical inventory contains 349
+engine-admitted claims, 249,072 generated candidates and 1,396 mandatory adverse
+controls. The atomic V1/V2 audit closes all 488 Physics-owned obligations at the
+declared current-evidence boundary. The exact inverse fine-structure result and
+its sealed CODATA comparison are front-loaded as the lead derivation. Physics
+remains open to lawful versioned extension, correction and falsification.
 
 ## Phase F - chemistry, materials and life
 
@@ -107,13 +106,10 @@ successor and every later final-TOE completion claim.
 - Evolution, ecosystems and biological dynamics.
 - Earth and environmental systems.
 
-Before another science branch begins, every prior result receives exactly one
-categorical owner. The Physics paper and census then receive the complete
-constant/value reconstruction. Every claimed physical constant or
-discriminator must have its own Fold derivation, pre-measurement value seal,
-post-seal authoritative value/units/uncertainty comparison and root trace.
-This audit specifically includes the inverse fine-structure constant and is
-not limited to it.
+The next ordered publication work is the Chemistry successor, followed by the
+Materials successor. Every claimed physical or chemical value must retain its
+Fold derivation, pre-measurement value seal, post-seal authoritative
+value/units/uncertainty comparison and root trace.
 
 ## Phase G - astronomy and larger systems
 
