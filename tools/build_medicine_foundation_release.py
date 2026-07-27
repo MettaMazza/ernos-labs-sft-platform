@@ -39,6 +39,8 @@ def evidence_paths() -> tuple[Path, ...]:
         ROOT / "census/prior_obligation_ownership.json",
         ROOT / "publications/inventories/medicine.json",
         ROOT / "publication/medicine_foundation_zenodo_metadata.json",
+        ROOT / "publication/medicine_foundation_github_metadata.json",
+        ROOT / "publication/medicine_foundation_github_release_notes.md",
         ROOT / "experiments/medicine",
         ROOT / "experiments/external_sources/medicine",
         ROOT / "experiments/sealed_predictions/medicine_foundation_complete_pre_source.json",
@@ -70,7 +72,9 @@ def write_deterministic_zip(target: Path) -> int:
         "schema": "sft-v3-medicine-foundation-evidence-map/1",
         "branch": "medicine",
         "version": VERSION,
-        "publication_authorized": False,
+        "publication_authorized": bool(
+            json.loads((ROOT / "publication/medicine_foundation_zenodo_metadata.json").read_text(encoding="utf-8"))["publication_authorized"]
+        ),
         "claim_count": 72,
         "candidate_count": 18_432,
         "unique_survivor_count": 72,
@@ -104,8 +108,10 @@ def main() -> None:
         (ROOT / "publication/medicine_foundation_zenodo_metadata.json").read_text(encoding="utf-8")
     )
     authorized = bool(metadata_document["publication_authorized"])
-    if authorized:
-        raise RuntimeError("this local prepublication build refuses remote authorization")
+    doi = str(metadata_document.get("doi", ""))
+    zenodo_record = metadata_document.get("zenodo_draft_id")
+    if authorized and (not doi or not isinstance(zenodo_record, int)):
+        raise RuntimeError("authorized release requires a reserved DOI and Zenodo record")
     RELEASE.mkdir(parents=True, exist_ok=True)
     for existing in RELEASE.iterdir():
         if existing.is_file():
@@ -124,15 +130,15 @@ def main() -> None:
         encoding="utf-8",
     )
     manifest = {
-        "schema": "sft-v3-local-prepublication-branch-release/1",
+        "schema": "sft-v3-published-branch-release/1" if authorized else "sft-v3-local-prepublication-branch-release/1",
         "branch_id": "medicine",
         "version": VERSION,
         "publication_date": "2026-07-27",
-        "publication_authorized": False,
-        "github_push_authorized": False,
-        "zenodo_publish_authorized": False,
-        "zenodo_record": None,
-        "doi": "",
+        "publication_authorized": authorized,
+        "github_push_authorized": authorized,
+        "zenodo_publish_authorized": authorized,
+        "zenodo_record": zenodo_record,
+        "doi": doi,
         "foundational_status": "current_evidence_closed_extension_open",
         "full_field_status": "planned",
         "bundled_evidence_file_count": bundled_file_count,
@@ -146,7 +152,7 @@ def main() -> None:
     )
     print(
         f"Medicine foundation local release: READY files=4 evidence_files={bundled_file_count} "
-        "publication_authorized=false"
+        f"publication_authorized={str(authorized).lower()}"
     )
 
 

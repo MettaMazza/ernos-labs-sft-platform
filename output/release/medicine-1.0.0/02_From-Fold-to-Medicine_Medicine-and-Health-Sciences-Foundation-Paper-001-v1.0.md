@@ -78,7 +78,7 @@ inspect the public project at https://github.com/MettaMazza.
 
 ## 1. Publication, authorship and open-science boundary
 
-**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this paper performs no push, release, upload, DOI creation or Zenodo action.
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [10.5281/zenodo.21630785](https://doi.org/10.5281/zenodo.21630785). The canonical Markdown paper, rendered PDF, evidence archive and checksums form this release.
 
 Maria Smith, independent researcher and founder of Ernos Labs. Contact: Maria.Smith.Sftoe@gmail.com. Reproducibility reports and submissions: https://discord.gg/ucwGryVxGr. GitHub: https://github.com/MettaMazza.
 
@@ -8750,11 +8750,11 @@ That is the empirical gravity of this branch: a medical statement is admitted on
 ## 28. Repository and publication status
 
 - Canonical repository: https://github.com/MettaMazza/ernos-labs-sft-platform
-- Zenodo DOI: not created; separate authorization required
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21630785
 - Author: Maria Smith, Ernos Labs
 - Contact: Maria.Smith.Sftoe@gmail.com
 - Submissions: https://discord.gg/ucwGryVxGr
-- Current state: local prepublication; no remote action performed
+- Current state: published open access
 
 ## 29. References
 
