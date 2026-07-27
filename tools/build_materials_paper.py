@@ -32,7 +32,7 @@ from tools.publication_series_voice import open_science_position  # noqa: E402
 INVENTORY = ROOT / "publications/inventories/materials.json"
 PAPER = ROOT / "publications/current/materials/FROM_FOLD_TO_MATERIALS.md"
 CENSUS = ROOT / "census/claims.json"
-METADATA = ROOT / "publication/materials_zenodo_metadata.json"
+METADATA = ROOT / "publication/materials_zenodo_metadata_v1_2_draft.json"
 
 SUBBRANCH_INTRO = {
     "measurement_identity": "The branch begins by retaining material, specimen, composition, phase, microstructure, property and metrological identities as different carriers with explicit method and scale boundaries.",

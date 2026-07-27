@@ -18,7 +18,7 @@ import render_platform_paper as base
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/materials/FROM_FOLD_TO_MATERIALS.md"
 OUTPUT = ROOT / "output/pdf/from-fold-to-materials-branch-paper-001-v1.2.pdf"
-METADATA = ROOT / "publication/materials_zenodo_metadata.json"
+METADATA = ROOT / "publication/materials_zenodo_metadata_v1_2_draft.json"
 
 
 def cover(authorized: bool, doi: str):

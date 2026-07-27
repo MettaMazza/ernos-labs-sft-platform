@@ -69,7 +69,7 @@ inspect the public project at https://github.com/MettaMazza.
 
 ## 1. Publication, authorship and open-science boundary
 
-**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this file performs no push, upload or publication.
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [10.5281/zenodo.21629306](https://doi.org/10.5281/zenodo.21629306).
 
 Maria Smith, independent researcher and founder of Ernos Labs. Contact: Maria.Smith.Sftoe@gmail.com. Reproducibility reports and submissions: https://discord.gg/ucwGryVxGr. GitHub: https://github.com/MettaMazza.
 
@@ -9382,7 +9382,7 @@ The Materials foundation is current-evidence closed and extension-open at its fr
 
 - Canonical repository: https://github.com/MettaMazza/ernos-labs-sft-platform
 - Materials release: https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/materials-v1.0.0
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21532482
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21629306
 - Author: Maria Smith, Ernos Labs
 - Contact: Maria.Smith.Sftoe@gmail.com
 - Submissions: https://discord.gg/ucwGryVxGr
