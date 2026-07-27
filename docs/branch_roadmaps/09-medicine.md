@@ -2,11 +2,13 @@
 
 ## Repository prerequisite
 
-Medicine is already named as a mandatory Chemistry handoff but does not yet
-have its own `sft/medicine/` scientific directory.  Before derivation begins,
-create that branch scaffold, register its categorical prefix, inventory and
-publication boundary, and add it to the directory map.  This roadmap alone does
-not create scientific or admission state.
+Medicine now has its registered `sft/medicine/` scientific directory,
+categorical `SFT-MED-` prefix, frozen foundational inventory and publication
+boundary.  Its first seventy-two laws are admitted through the canonical sealed
+engine and the branch is current-evidence closed at that declared foundation,
+while remaining explicitly open to lawful correction, falsification and
+extension.  This roadmap records the larger field still to be reconstructed; it
+does not itself create additional scientific or admission state.
 
 ## Scientific ownership
 
@@ -63,10 +65,11 @@ The complete field census covers:
 
 ## Publication sequence
 
-The first Medicine paper follows only after the branch scaffold, ownership
-census and foundational clinical evidence standards are admitted.  Later
-versions expand specialty by specialty.  No medical claim is accepted merely
-because a biological mechanism or predictive model appears plausible.
+The first Medicine paper is prepared locally after completion of the branch
+scaffold, 763-entry ownership audit and all seventy-two foundational clinical
+evidence admissions.  Remote publication remains separately unauthorized.
+Later versions expand specialty by specialty.  No medical claim is accepted
+merely because a biological mechanism or predictive model appears plausible.
 
 ## Handoffs
 

@@ -1,0 +1,187 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-MED-TOXICITY-001",
+  "complete_branch_pre_source_seal": {
+    "all_72_predictions_sealed_before_source_selection": true,
+    "hash": "sha256:57b0813078b36814b831862db7e888601d8e1c1d2820f7429915431bf6066cd5",
+    "path": "experiments/sealed_predictions/medicine_foundation_complete_pre_source.json"
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the clinical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed snapshot or missing fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, an imported law, opaque predictor or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-MED-TOXICITY-001-E1-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:1d19f00018aecd5b20f18cc1ac933f7a4365aad5a1a5f2313b94b762b5c55012"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every source hash and fragment reproduces, the held label matches exactly, all failed and adverse source rows remain preserved, and the changed control is rejected.",
+    "comparison_implementation_hash": "sha256:9bdd80d29e0698a984560a049da8ab72e4da0d05a2f6a1a7e03ea50ac71153b7",
+    "evaluator_id": "SFT-EXP-MED-TOXICITY-001-E1-post-seal-source-evaluator",
+    "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Require every registered fragment in every byte-sealed source and compare its reconstructed categorical record with the sealed consequence.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Conditional categorical clinical relation; patient-, population-, setting- or method-dependent magnitudes remain bounded records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_and_primary_data_correspondence",
+  "experiment_id": "SFT-EXP-MED-TOXICITY-001-E1",
+  "external_measurement_sources": [
+    {
+      "custody_role": "post-seal-authority-or-primary-evidence",
+      "evidence_scope": "dose, exposure, response, benefit and risk study boundary",
+      "measurement_body": "United States Food and Drug Administration",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:748ca63404e58ef7f56d321395e646aa918f1ba0e679dbab98e62be95bc40291",
+      "snapshot_path": "experiments/external_sources/medicine/snapshots/MED-FDA-EXPOSURE-RESPONSE-001.html",
+      "source_id": "MED-FDA-EXPOSURE-RESPONSE-001",
+      "source_uri": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/exposure-response-relationships-study-design-data-analysis-and-regulatory-applications"
+    },
+    {
+      "custody_role": "post-seal-authority-or-primary-evidence",
+      "evidence_scope": "final Good Clinical Practice: rights, safety, wellbeing, consent, protocol, allocation, blinding, adverse events, confidentiality and essential records",
+      "measurement_body": "International Council for Harmonisation",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:e6ce19e36ce7d2e294f89ee89492b9e035178c3cca48984392bbd92eec9b002c",
+      "snapshot_path": "experiments/external_sources/medicine/snapshots/MED-ICH-E6R3-001.pdf",
+      "source_id": "MED-ICH-E6R3-001",
+      "source_uri": "https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf"
+    },
+    {
+      "custody_role": "post-seal-authority-or-primary-evidence",
+      "evidence_scope": "normal and pathogenic processes; risk, diagnostic, monitoring, prognostic, response and safety biomarkers; method and context",
+      "measurement_body": "United States Food and Drug Administration",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:93c5ee4b5e3480ed27aa805a7739f4acf7108701fc6f429ae5d4e5a1ad9d3d31",
+      "snapshot_path": "experiments/external_sources/medicine/snapshots/MED-FDA-BIOMARKER-001.html",
+      "source_id": "MED-FDA-BIOMARKER-001",
+      "source_uri": "https://www.fda.gov/drugs/biomarker-qualification-program/about-biomarkers-and-qualification"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the Cartesian product of all registered binary preservation dimensions before opening any clinical source or outcome.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:4d4ee16a0d9f057755aebc5518d1b879ddb782c503c65bc3e0a0e14b657b6f75",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:f2338e6124d41380e058ad42b5bb2897125fd92c4bc99d95d625c25ff75d417c",
+      "sha256:21211b7c80de5ce448a2c20eed8db8b1e5eb9c3d7419cd9257c0c47837117a77",
+      "sha256:6311d802557b16a8d5d592ba83fa5e9d2198c681a47be6004bd0bf6bca15d082",
+      "sha256:a5e2b145bf68f4136e8acab0dccfe49182cf73ec68b94961e0af9a430728f272",
+      "sha256:d12a3316690a5a1b67eb1d62f304a09e0fdd1b3955b0c51b241470e89c3ac3c0",
+      "sha256:3a0a5b1e4db39ad27051a4ddbc8ac1b229a3b97dc145c14a67f4b8add2744288",
+      "sha256:86e35cc6575034fe1f5912b476d74fe46002dad3d05edaa088314286722347b7",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:ba9251b1e062d0db85f63a33f61c68c7211e0aa959a7ba2fc71c27b1ecc5fc78",
+      "sha256:77bc8dfaaa639336ee2f686f33cc9a099dde4671b4a30396bb8ec67c85538e74",
+      "sha256:002a27745f7240dcb4dafe845974390708783a50408ddb3954ac808939ee9606",
+      "sha256:a8e51c91dd9b73c036e5be0c2512ed247b492797c592b1e652fe43c8d37e6797",
+      "sha256:baf7d0d7a6847a35277e49cd0b286a0d7a39ee90de0f82aa7211c76752dd00ed",
+      "sha256:574e704adc895838de613d3ee8e3cda966fa839ace77222029116b31295c36c3",
+      "sha256:68796e8627c48e87f86c2731e2cba2a9a8b2a7f1ec8c0d453902b725bbeeb299",
+      "sha256:73c73c40b25f04e57a1c56bc58c566028b5151823676cefc3610cc8f7085764c",
+      "sha256:51aca4cb95571752777212fea6dc38f578929762c9a8e2d3d095095ebb739d6b",
+      "sha256:27c13cdf2609aa624ee213b03fa15a631e9c96ab43c955e96a8d107bfd0ff635",
+      "sha256:29980fee556fdbcff4bfd79cac1476468bb0d59051e614e3d032f989b4a6002c",
+      "sha256:7344add841a3331b07f11cf244862da249fed093f8fa70058e2a1b7dd7b07cf0",
+      "sha256:2ace6a2260c443a2cc6280648fc26a9d6aa98822beac7f13ad73cad921de0879",
+      "sha256:45b9528d6e3f23513a24ee359517a32cc692479d75ca9c6352479f57f7b1fb8c"
+    ],
+    "exact_domain": "Exactly eight binary dimensions and therefore 256 forms; closure is conditional only on this explicit complete grammar.",
+    "relation_hash": "sha256:be403d0a65bc2b0c628fda8e3834302b3ae63a91e5c075a4b0f5fe0e684b16a0",
+    "statement": "exposure-and-harm-state__exposure-linked-dysfunction-or-injury__organ-course-dose-and-recovery__method-population-and-time__complete-protocol-state-transition-adverse-null-record__root-bound-forward-forcing__positive-finite-successor-and-unfavorable-closure__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-MED-TOXICITY-001-E1-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:d8a37924fdd2e54613e4f14ba95641340f7453695b4e935f0014025712775de3",
+    "program_id": "SFT-EXP-MED-TOXICITY-001-E1-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27",
+  "required_source_features": [
+    {
+      "required_fragment": "exposure-response",
+      "source_id": "MED-FDA-EXPOSURE-RESPONSE-001"
+    },
+    {
+      "required_fragment": "adverse event",
+      "source_id": "MED-ICH-E6R3-001"
+    },
+    {
+      "required_fragment": "responses to an exposure or intervention",
+      "source_id": "MED-FDA-BIOMARKER-001"
+    }
+  ],
+  "row_retention_policy": "retain-every-source-feature, transport/content failure, adverse scientific result and tampered row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:313c0c1700d99b6576cb5876d5bacb585efe070aa06c68394dd891ad82ad4cff",
+    "experiments/external_sources/medicine/snapshots/MED-FDA-BIOMARKER-001.html": "sha256:93c5ee4b5e3480ed27aa805a7739f4acf7108701fc6f429ae5d4e5a1ad9d3d31",
+    "experiments/external_sources/medicine/snapshots/MED-FDA-EXPOSURE-RESPONSE-001.html": "sha256:748ca63404e58ef7f56d321395e646aa918f1ba0e679dbab98e62be95bc40291",
+    "experiments/external_sources/medicine/snapshots/MED-ICH-E6R3-001.pdf": "sha256:e6ce19e36ce7d2e294f89ee89492b9e035178c3cca48984392bbd92eec9b002c"
+  },
+  "status": "authoritatively_and_empirically_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_target_blind_blueprint": true,
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "MED-FDA-EXPOSURE-RESPONSE-001",
+        "MED-ICH-E6R3-001",
+        "MED-FDA-BIOMARKER-001"
+      ],
+      "target_id": "sft-med-toxicity-001-authority-correspondence"
+    }
+  ]
+}

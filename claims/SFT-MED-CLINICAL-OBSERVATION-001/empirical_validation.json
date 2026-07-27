@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-CLINICAL-OBSERVATION-001",
+  "data_source_ids": [
+    "MED-WHO-HEALTH-001",
+    "MED-ICH-E6R3-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6660145ba5b45ebb27c94ad2f2bf86f557e2f8e3d238b8c33293ab609a77fa4b",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f3a1079a0a4e36c6b9915084fabe78aff9ca22874b87f6fd40ef808d7896b442",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:030d41719ccc9e0365544984d0fc15381f4df4f53596a8c42042fb462a634381",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-CLINICAL-OBSERVATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3182303730d2c1afb395ee58e2d6d9ea20d47ad006965b2bbcc2056d912a54ff",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:0912f7664d5216b85a7fb0681f8935ec057d66af06f470aeb843aa30bda15987",
+    "prediction_seal_hash": "sha256:43c2dc4d1e295715acc2692c54e79a5221c9b6ba6f070d8c3bc002388c310d04",
+    "program_hash": "sha256:cb2b43b9a727ca194ab9b7d67efaee2ab0c4751dd7e63061bd5dae60036f0866",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6e37438950d52561dc754192589e98e8bb87830d34874a1497677994dcbf6529",
+    "target_material_present": false,
+    "trace_hash": "sha256:3117392d2cb641c088c02b281eacdfeace4a6740b83e8c85660eb9b97df1153c"
+  },
+  "measurement_receipt_hash": "sha256:1c3b51349ceb7807da6702e85b9bbc65d9535696f079997ead53d5a06e10f488",
+  "measurements": [
+    "sft-med-clinical-observation-001-authority-correspondence: predicted medicine:patient-state-and-observer-record__observation-with-retained-method__source-method-result-provenance__declared-observer-instrument-setting-time; source-derived medicine:patient-state-and-observer-record__observation-with-retained-method__source-method-result-provenance__declared-observer-instrument-setting-time; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:978c9aa4b68b3ea82648061fac19cb17d4e9eca3c4d90e9f3a8ce4bfa8ac22bc",
+    "custodian_id": "SFT-EXP-MED-CLINICAL-OBSERVATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:6660145ba5b45ebb27c94ad2f2bf86f557e2f8e3d238b8c33293ab609a77fa4b",
+    "prediction_seal_hash": "sha256:43c2dc4d1e295715acc2692c54e79a5221c9b6ba6f070d8c3bc002388c310d04",
+    "registered_target_identity_hash": "sha256:6e37438950d52561dc754192589e98e8bb87830d34874a1497677994dcbf6529",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4c4104bd2b8e0080b6eabd9eb8d9f886fe9b9348a46a5a9036698df7078cac10"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9b0f7daa274a1098a981eb3a451ca36e1b7d624c7be7816e3207044736f259d0"
+}

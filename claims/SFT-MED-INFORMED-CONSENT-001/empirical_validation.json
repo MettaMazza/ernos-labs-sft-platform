@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-INFORMED-CONSENT-001",
+  "data_source_ids": [
+    "MED-ICH-E6R3-001",
+    "MED-COCHRANE-MISSING-EVIDENCE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ef42b723748821e1501db13670014c57af83b48574572b11845aee316f164868",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a662082336e462d84a34e79c8b82d9dd878e71e587e02e95661518dc2aba49e9",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:9995dbeed99621b9c0ffb07012c1bd2c100308367ec75c411223a2705932b284",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-INFORMED-CONSENT-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:887db147c0303db343703764988d00905e67fb7e3ddfe404345850b6536a6ce5",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:091c87c49a3e80ca999b2838663d399b356bea0c8a0300567009d0e333c00130",
+    "prediction_seal_hash": "sha256:12c25d5168372f729634e94c7475753cc55a1fd87857cceb4c10d5c788efb59b",
+    "program_hash": "sha256:61a9fe717c501b496b0bbd200f1068608d6b1e39cfe37cb49a5da0ea05b50c90",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4dc1f11aeb88b2ac5eca698ac7459db819047f46ccbebcf8167bbfe2b8312e50",
+    "target_material_present": false,
+    "trace_hash": "sha256:601b4e8d136636fa68deef7bb49542a0949c2d180c4806d03f429562f714aa76"
+  },
+  "measurement_receipt_hash": "sha256:8a6214011187f5d30258416c366243947859e2e060b1b96418643472ef72c80c",
+  "measurements": [
+    "sft-med-informed-consent-001-authority-correspondence: predicted medicine:person-information-choice-record__understanding-voluntariness-authorization__versioned-scope-and-withdrawal__purpose-time-capacity-and-recorder; source-derived medicine:person-information-choice-record__understanding-voluntariness-authorization__versioned-scope-and-withdrawal__purpose-time-capacity-and-recorder; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:b034b58bba367abf433542fe1e7afb20a8f4eecae9e275a94b49b2ab86ceb4f0",
+    "custodian_id": "SFT-EXP-MED-INFORMED-CONSENT-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:ef42b723748821e1501db13670014c57af83b48574572b11845aee316f164868",
+    "prediction_seal_hash": "sha256:12c25d5168372f729634e94c7475753cc55a1fd87857cceb4c10d5c788efb59b",
+    "registered_target_identity_hash": "sha256:4dc1f11aeb88b2ac5eca698ac7459db819047f46ccbebcf8167bbfe2b8312e50",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ffd9f847436ea26f981aebbf51a1d9552cae57631a3a8bf0c1247bca4a0f3e61"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:4ab8b1fa8d05b22469c14285699d4be3712870a33c81abc675130b679c915174"
+}

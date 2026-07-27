@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-PROGNOSTIC-CALIBRATION-001",
+  "data_source_ids": [
+    "MED-FDA-BIOMARKER-001",
+    "MED-ICH-E9R1-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:b1919f11b51babe13d0e039cd4ab4ce251549bfe39cdb40edf9a591c7a9d7727",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3f22ae7e5d9beebbb3b5fd75d5c1f78124771154481a95fbb6a6fc33d4019bf6",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:64706fd3818584d0c35c02e75c60e47865fdf6dfa3f058c3f4b0220dad86d5e1",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-PROGNOSTIC-CALIBRATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:80ea26105b7c2a090a84ca65e74fac6309a3be59eee32320a8ca6bdac73114f7",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:71725e664392ee271c156e04d1794e776ae2241f141a4dbdfd0bdaf7bef60ea8",
+    "prediction_seal_hash": "sha256:5dcb012ff2a77869db3dd3ea346472a4ceecdb9060ba1a1e0226c1bbb371903c",
+    "program_hash": "sha256:a7bfdad82566e2dca43397ef40bea9be7a212102699db3beb8bd41b36bbdd060",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3a87742ea32ce5403101f017528eba1517be757e176516d206cb13a5c63a37e3",
+    "target_material_present": false,
+    "trace_hash": "sha256:65e3faf86851b4c078b68aedb96f657aa9bf3473e636450f26c681c08363c146"
+  },
+  "measurement_receipt_hash": "sha256:2296ca4123dbef4e3b74cfb759cec8383ddfe07b69fdcc84f2ff8508fb175c42",
+  "measurements": [
+    "sft-med-prognostic-calibration-001-authority-correspondence: predicted medicine:predicted-and-observed-risk-groups__prediction-observation-incidence__complete-calibration-table__new-population-and-time-window; source-derived medicine:predicted-and-observed-risk-groups__prediction-observation-incidence__complete-calibration-table__new-population-and-time-window; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2a87dee5da207b72014e4dfdce2cd63e4bd280757c6adc9896abb17d4314e651",
+    "custodian_id": "SFT-EXP-MED-PROGNOSTIC-CALIBRATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:b1919f11b51babe13d0e039cd4ab4ce251549bfe39cdb40edf9a591c7a9d7727",
+    "prediction_seal_hash": "sha256:5dcb012ff2a77869db3dd3ea346472a4ceecdb9060ba1a1e0226c1bbb371903c",
+    "registered_target_identity_hash": "sha256:3a87742ea32ce5403101f017528eba1517be757e176516d206cb13a5c63a37e3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:07a4d946dfeaa43693382a6109c9a0048e2b4aef84b7c3cec116a1a66539e039"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:4222adce38cb9e303d04b8715f21a0a64b95695ec63b783206ec8822eb37455a"
+}

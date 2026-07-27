@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-INCIDENCE-PREVALENCE-001",
+  "data_source_ids": [
+    "MED-FDA-BIOMARKER-001",
+    "MED-ICH-E9R1-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:655a7dfb2edbc515a60049fa0d60088cc084bf5151b73eaabc6a460431433874",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:1c412ec98f9b1dd99ffc1429c18422a1eaa400a0a9c66c6e02f5b6cd4d3d2a5c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:908a530147ea9ff399332474a2c5204e750dfcadb6e8c7dab54f6fe872fc4f8f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-INCIDENCE-PREVALENCE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7e7935d840cb288161f8ecd2f3603489b3108b17f220f902f9f0e54338c10664",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:100fa724715fc50f71530438f3b25a3ac6859ca929538d1999489768ee71ae32",
+    "prediction_seal_hash": "sha256:59e7cd8a58ab44bf35cce9db9385f9a998cf6191ec879cf7eb2f9f3d0969ea95",
+    "program_hash": "sha256:de2c4541e2b58cdebbde2b38c329c8d4f53d5613be8e16ac084bcbcd86a5959c",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:73ba53210732cc4288aa8df3f1148b7101f1dd197d0db0bcbf2aeb63baec6560",
+    "target_material_present": false,
+    "trace_hash": "sha256:a283aedd90deead70765450721178ef9e0376c85e450514b37cb6a50a895a707"
+  },
+  "measurement_receipt_hash": "sha256:59dcc89c34208961f0fd72df51d3b4284d1638cf9d06e9c780249b2b11243244",
+  "measurements": [
+    "sft-med-incidence-prevalence-001-authority-correspondence: predicted medicine:population-condition-records__new-event-versus-state-support__flow-and-stock-kept-distinct__population-and-time-boundary; source-derived medicine:population-condition-records__new-event-versus-state-support__flow-and-stock-kept-distinct__population-and-time-boundary; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:a7bcf3142676b07fc739a7096ca25b75a61915e46d38865388a63c3d9cb62db3",
+    "custodian_id": "SFT-EXP-MED-INCIDENCE-PREVALENCE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:655a7dfb2edbc515a60049fa0d60088cc084bf5151b73eaabc6a460431433874",
+    "prediction_seal_hash": "sha256:59e7cd8a58ab44bf35cce9db9385f9a998cf6191ec879cf7eb2f9f3d0969ea95",
+    "registered_target_identity_hash": "sha256:73ba53210732cc4288aa8df3f1148b7101f1dd197d0db0bcbf2aeb63baec6560",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d3b61946e504b68dca9dfe04293655cc3c03f347cb4a89bfd60ed7378d4267e7"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f5db347958e034815278f25390f79c5a8395897b92c750fcdac399896ea9f846"
+}

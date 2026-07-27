@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-DOSE-001",
+  "data_source_ids": [
+    "MED-FDA-EXPOSURE-RESPONSE-001",
+    "MED-ICH-E6R3-001",
+    "MED-FDA-BIOMARKER-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8d5396e2e17a64f79a6e826278bf03915d368f939fca21cb8cb52d93596ef7f7",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:deceb7d27a8baa67e3b3bc06a6329cb65dce780f41ad029040a2575ff9d25d0f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:dd2a1ffa9095aa614c3c1afa0521acff7f629ceeb2155b7fbf93a85cb92d7947",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-DOSE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0d7b0f9764c7d335ad2d267ab0120e79bd1cd81625a205c0141fe09cd360c290",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d35ffb56c28d4ef6c4f5a095520df580d6c940bcd41cfaad17f426dac4810f32",
+    "prediction_seal_hash": "sha256:076ff120f0251e98553a906dc1386ba481287db0bf01ecd4653bbb60f2fa2450",
+    "program_hash": "sha256:f85f9afa5a748f65c3ce147a80f91607d9a369ce0df91b71a3fc8f936f36acb4",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:98183ece5824ae32de13259cfc4188ade48c70d10c6f85af219b4b189c189aa8",
+    "target_material_present": false,
+    "trace_hash": "sha256:3a351bfdc023b03e17ea5a4bd610f54b16a1964e8c58d14592b68c12d2c8e374"
+  },
+  "measurement_receipt_hash": "sha256:03521b2f66f3753bdf3976a48248249e333d4e1306b5da9ec2bd621f19f7ae18",
+  "measurements": [
+    "sft-med-dose-001-authority-correspondence: predicted medicine:administered-substance-or-action__amount-per-declared-carrier-and-time__unit-route-formulation-schedule__delivered-and-received-record; source-derived medicine:administered-substance-or-action__amount-per-declared-carrier-and-time__unit-route-formulation-schedule__delivered-and-received-record; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7fd8ff02c4bcdd5cf61878a31896d9ccfdb82a22fe82a4282482c57f5d7a95fb",
+    "custodian_id": "SFT-EXP-MED-DOSE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:8d5396e2e17a64f79a6e826278bf03915d368f939fca21cb8cb52d93596ef7f7",
+    "prediction_seal_hash": "sha256:076ff120f0251e98553a906dc1386ba481287db0bf01ecd4653bbb60f2fa2450",
+    "registered_target_identity_hash": "sha256:98183ece5824ae32de13259cfc4188ade48c70d10c6f85af219b4b189c189aa8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:45c054431e60fcbf81a7939a50576dfeec15d696fe29125887ddba31520072f6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:eea6ea4e08e8555c8a88345f784f7a874b6812baf13c045de248d61c4eb0b11b"
+}

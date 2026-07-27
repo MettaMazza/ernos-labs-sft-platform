@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-ALLOCATION-001",
+  "data_source_ids": [
+    "MED-ICH-E6R3-001",
+    "MED-ICH-E9R1-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:28bac9c6d916334fe23c02285e9cfe3d4b70ad1062ed98dc8f9bdef3bf948b2b",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:2c1c048bc057fa7818ba6e9a9aca0afdda15358079c6ff98fc8b22a63dc1b87b",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:2b2f839fb3b9fa16499f2bf55a87682fb270a9e0fda9a7c9d62104caed6a6e8c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-ALLOCATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2eeee306cf9943585e03f01c68e0b1771a574911c5a16126ebbb078f1c5cbb5b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ff20ad76796f9f5c5bbd4a5e90ba23c6d19f162f2b4cc1d92969f7ed81cc9a0f",
+    "prediction_seal_hash": "sha256:d93431cf8247557c751f091763898c6cf52abab69b553bf98df5906ae66aed4d",
+    "program_hash": "sha256:f680b76b7fc1f71b5ce9ca0abd7c6e3b3c3f48d4d9920318160721735653abd5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a329935cc4a2c01c71a17cff97325814f88081397c34213a414cad2954cf153a",
+    "target_material_present": false,
+    "trace_hash": "sha256:a1f3d202ea7ee3d68f10935e23469d566ddd816a7f2db803839251a40b5f45af"
+  },
+  "measurement_receipt_hash": "sha256:82150f7a758ded7d65dc2246c870b8143792b7d07287ffd13b324f883bbb2c6f",
+  "measurements": [
+    "sft-med-allocation-001-authority-correspondence: predicted medicine:eligible-participant-records__assignment-to-declared-arm__allocation-sequence-with-concealment__generation-implementation-and-time; source-derived medicine:eligible-participant-records__assignment-to-declared-arm__allocation-sequence-with-concealment__generation-implementation-and-time; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:241289c48600d736a7970c3b805f7b6b3c16bff6892f9cccf9575dc02d08532f",
+    "custodian_id": "SFT-EXP-MED-ALLOCATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:28bac9c6d916334fe23c02285e9cfe3d4b70ad1062ed98dc8f9bdef3bf948b2b",
+    "prediction_seal_hash": "sha256:d93431cf8247557c751f091763898c6cf52abab69b553bf98df5906ae66aed4d",
+    "registered_target_identity_hash": "sha256:a329935cc4a2c01c71a17cff97325814f88081397c34213a414cad2954cf153a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3daef6a05bdf230ed3ada11be78d3a154a2e1d684c9c8552e1e6d0dc27440f74"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b8a0da8d68be89e7181796ed7b941f5ab31bf2c9c6986eca4b4c9458ca92ee49"
+}

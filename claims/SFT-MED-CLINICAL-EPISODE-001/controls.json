@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MED-CLINICAL-EPISODE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:7a398eadedbd8114f1b10b4f04cb4b92735bed5c3224e73bb41f5d89b410869d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:78dd85bc40b065d7aa5476a90644f4ff02459fd1cc3c394b4a929d4a6f375e1a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9641c3c164e93f11fa4a31a12fc6b14f9c9b5305bfc8ba9506b298977bac5e72"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:fb2114fd04450d2acb834bf20f24af9b91f61e51d9d5a35747b4d34738cb47f2"
+    }
+  ]
+}

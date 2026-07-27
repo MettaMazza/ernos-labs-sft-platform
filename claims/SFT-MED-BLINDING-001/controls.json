@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MED-BLINDING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:4214f3bbf9014501112511d6299abae119284040c65c22f8b4790d30a2920617"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0a4f5eaff51d7ec6d75a5f9465e0e0caeae97e50eaa5dbeddbb3b33ef9fbea72"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cbba1dff3899ee720a063e37149c27ec01f418e8b2cfce62bd4de42dbbd26299"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:25eea8e60fc855c0a1d15ec0534dd587b8772f36408e9501b234d501e555e17b"
+    }
+  ]
+}

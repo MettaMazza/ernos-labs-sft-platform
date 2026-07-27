@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-BLINDING-001",
+  "data_source_ids": [
+    "MED-ICH-E6R3-001",
+    "MED-STROBE-001",
+    "MED-COCHRANE-MISSING-EVIDENCE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f81d20649fde9267c03f5793f41c340acf0f8c565fb8d68d9729a5d0999c4623",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bf97e573616061b8aa79aa055cccb65fae42e14a7392ee56dd1fc6470b1de514",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:98c0caacf5dcbfd3f4c7fca3f31af6db3dede1c469cc9f2245c782dc34358876",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-BLINDING-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:33b560467930ee8580f6dd53becaa96c503cb5e58ddb11378231b877d761bb2b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:603d2703400a869b282dd24ac0297653e95a2626a8f58a0bd0b18324fbd09675",
+    "prediction_seal_hash": "sha256:d434687207f8185b6a22d2edc25ecc68e55731090b8fce583042bf18851be0f1",
+    "program_hash": "sha256:9ec701157f11136882c7c42943266679a87231fc0bd22549523f53fa965aa1c7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:17faa7bf0418bd3acdca8d6cf071dd68197f3e0eb2c88a80edbb1ac40d5322d5",
+    "target_material_present": false,
+    "trace_hash": "sha256:38763808b7e96f3b26a7a97b8c4b9c5c592bff6dfc3b3ad2fdbf7d4f930d648d"
+  },
+  "measurement_receipt_hash": "sha256:bfc23b8e30b1bd8fc127713b6e5861e7946347c6a592e67a7ff3df6a62e5f207",
+  "measurements": [
+    "sft-med-blinding-001-authority-correspondence: predicted medicine:participant-carer-assessor-role-word__role-to-allocation-access-restriction__access-and-unblinding-trace__stage-role-and-information-boundary; source-derived medicine:participant-carer-assessor-role-word__role-to-allocation-access-restriction__access-and-unblinding-trace__stage-role-and-information-boundary; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:0705a3b4a58bbf3fbf63d8975cd988f023531ad70ffdb015d4a5b46c71eea940",
+    "custodian_id": "SFT-EXP-MED-BLINDING-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:f81d20649fde9267c03f5793f41c340acf0f8c565fb8d68d9729a5d0999c4623",
+    "prediction_seal_hash": "sha256:d434687207f8185b6a22d2edc25ecc68e55731090b8fce583042bf18851be0f1",
+    "registered_target_identity_hash": "sha256:17faa7bf0418bd3acdca8d6cf071dd68197f3e0eb2c88a80edbb1ac40d5322d5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:2dd1733074f84fcc1a1f41996d03b2c2ee0bfbfa5e3c8bafec7e2544da4eb901"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:336decf243f8cc1132a0345f75f36f11f9f135443183dc07b4e9c7983ed86805"
+}

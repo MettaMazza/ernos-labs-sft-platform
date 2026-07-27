@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-TOXICITY-001",
+  "data_source_ids": [
+    "MED-FDA-EXPOSURE-RESPONSE-001",
+    "MED-ICH-E6R3-001",
+    "MED-FDA-BIOMARKER-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:313c0c1700d99b6576cb5876d5bacb585efe070aa06c68394dd891ad82ad4cff",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7fcddb6bd03c8d53f82f2cbadd96f826dd5ee2e5201fe75e927ea03d77679426",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0d5bb57f6749050bd08da29b30f611913622acea34c1680f95ab47465210770c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-TOXICITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cff37e93a736186e78f1f6e0fd409b427cb4ce08ffe3ea519ef65cb2784d5627",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3754a25ee4b0cc271b2a48199dbee85dd749608a5dab95cee1bd8ede682de695",
+    "prediction_seal_hash": "sha256:51b2f3d8e12aa1206c5d30dc595788093d3faaa25ee133bb6466c53b781b2ea1",
+    "program_hash": "sha256:24c2bde31abbb9f4a94ff5a2cb3d4441b77d7d4d16780e739a9fbf89c478ce34",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7943731aeef59142ad5518f0a241d96529120d72501df5226d5ceb03f5f21f89",
+    "target_material_present": false,
+    "trace_hash": "sha256:69f1513c9a4fa47730257f2d9b2ed3b1c64d74fab99213502e08843eb5cb54ee"
+  },
+  "measurement_receipt_hash": "sha256:fd77dfb202c5d2dc02ed1ea52c8029e5a3269cbdf42e77bfaf3431e4b75fbbe0",
+  "measurements": [
+    "sft-med-toxicity-001-authority-correspondence: predicted medicine:exposure-and-harm-state__exposure-linked-dysfunction-or-injury__organ-course-dose-and-recovery__method-population-and-time; source-derived medicine:exposure-and-harm-state__exposure-linked-dysfunction-or-injury__organ-course-dose-and-recovery__method-population-and-time; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:43854e03353485fed434dd6764741a1e1e09bebc22c783428ad577406b51b3f3",
+    "custodian_id": "SFT-EXP-MED-TOXICITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:313c0c1700d99b6576cb5876d5bacb585efe070aa06c68394dd891ad82ad4cff",
+    "prediction_seal_hash": "sha256:51b2f3d8e12aa1206c5d30dc595788093d3faaa25ee133bb6466c53b781b2ea1",
+    "registered_target_identity_hash": "sha256:7943731aeef59142ad5518f0a241d96529120d72501df5226d5ceb03f5f21f89",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:92af7781d4b732c4cc4f09138b497d53552d99bb5cb8fcaa93f31c2cba519ffd"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1ae3be2f31029639b662a517005bf50c0bcf5e4225a856ffc34ca86622b4c0c6"
+}

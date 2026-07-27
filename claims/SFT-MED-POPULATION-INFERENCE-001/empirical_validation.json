@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-POPULATION-INFERENCE-001",
+  "data_source_ids": [
+    "MED-ICH-E9R1-001",
+    "MED-CDC-EPIDEMIOLOGY-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:574231ef093495e3da19a2ff3163757176dd23138842876827201c933df66c9f",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3d9200d5d85edac1b14f8ae5aca515ddb24885c75031430a2ffb92ca3361897a",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:2786ecdf74c6fac4254d4b3f1d4441fec14070e3c0d0c92f8d91f89ed8623c7f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-POPULATION-INFERENCE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2fccb3723723e89bf230f049bef098ca42b179b3fe4235455d8df5e9972780e5",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3a5e21b02540d2c9c59bd922baa90077153d8072f780512923b765c709d88200",
+    "prediction_seal_hash": "sha256:4c341963a1feddb670812ad9d4710149c97e4d90610a0c87af71ecf7b989b82d",
+    "program_hash": "sha256:609b25c8d82953c46789dcee8a2eef4e0e30b627c21ee22bb77b2f1ce4d117ef",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4c95d12608de9a7c44f30d84002b00e974c62dcc5fe38c70135572f8ed0bd2ba",
+    "target_material_present": false,
+    "trace_hash": "sha256:614876650a95e267ce5768cfd1c1494da1ebdfce93eb182bb381cb58b402165d"
+  },
+  "measurement_receipt_hash": "sha256:1fa63ec8edea91034eae1d549eb58b32eb1c7ae603358282c6d35e8d5d44fb36",
+  "measurements": [
+    "sft-med-population-inference-001-authority-correspondence: predicted medicine:sample-and-source-population__sample-to-population-relation__selection-weights-and-missingness__eligibility-place-time-and-method; source-derived medicine:sample-and-source-population__sample-to-population-relation__selection-weights-and-missingness__eligibility-place-time-and-method; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3d6c7c4342ea41054cad623e9480b578e478f0ef8acffc01fca49df8d38da91c",
+    "custodian_id": "SFT-EXP-MED-POPULATION-INFERENCE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:574231ef093495e3da19a2ff3163757176dd23138842876827201c933df66c9f",
+    "prediction_seal_hash": "sha256:4c341963a1feddb670812ad9d4710149c97e4d90610a0c87af71ecf7b989b82d",
+    "registered_target_identity_hash": "sha256:4c95d12608de9a7c44f30d84002b00e974c62dcc5fe38c70135572f8ed0bd2ba",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e4b483e3f61636c1f06def8cb8332fd8a8e9b0d1f4314be00143cdd97d692777"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:75c8aff1dc6c3de5249feb1ee88a9b1da75b48ca3bbfea215b8d597f44fa8024"
+}

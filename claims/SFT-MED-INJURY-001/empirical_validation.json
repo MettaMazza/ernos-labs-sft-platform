@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-INJURY-001",
+  "data_source_ids": [
+    "MED-FDA-BIOMARKER-001",
+    "MED-CDC-EPIDEMIOLOGY-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ace585d71f30af7670e7902927f5f42ded08afd093900d706ca3a998f0d5b9a2",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:39c632edc65eab9318d587af43da82d055614f3cbfd59618cb7177ff67666855",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:509bcbbaa45088422c784ebf82a34d8ff991c43bea16eb139eebbf9d045d3a22",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-INJURY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:866b6f5314dc7cffb417e19f83b1451fc9f86203493fb2161f7293c9adffea03",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:75b0ac648e2616df551fe8136e91f1115661f239e3bc66ff011992770aef2aae",
+    "prediction_seal_hash": "sha256:724b3c0ba30cca96039a6579d15d2706ddd30f6c8ffa055bd730ac12b254a338",
+    "program_hash": "sha256:ce71f1eeb699ae228ed8f9afb089baf572446aebfe055003056b241d1f29bc58",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0579f23a740cb33d8bdd72fc1de4ee3248872a61bf54913599811c36f071cd03",
+    "target_material_present": false,
+    "trace_hash": "sha256:a9895cc98e309c47be24dbfbdf8755aa7d6ba5e4dc40197cde7a10166e4cb6d7"
+  },
+  "measurement_receipt_hash": "sha256:a008360ccdac5c036e8c6d1dea7cd6c125c0dc51e5a15a9b49d3518ed01b42b1",
+  "measurements": [
+    "sft-med-injury-001-authority-correspondence: predicted medicine:patient-tissue-or-function-state__damage-following-declared-exposure__exposure-damage-consequence-trace__site-time-severity-method; source-derived medicine:patient-tissue-or-function-state__damage-following-declared-exposure__exposure-damage-consequence-trace__site-time-severity-method; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:01f33d656967ab64969ccfacf2a4203871361fcf42c37f6cf4f02d8a61965161",
+    "custodian_id": "SFT-EXP-MED-INJURY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:ace585d71f30af7670e7902927f5f42ded08afd093900d706ca3a998f0d5b9a2",
+    "prediction_seal_hash": "sha256:724b3c0ba30cca96039a6579d15d2706ddd30f6c8ffa055bd730ac12b254a338",
+    "registered_target_identity_hash": "sha256:0579f23a740cb33d8bdd72fc1de4ee3248872a61bf54913599811c36f071cd03",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:44a838e3bc5b86e80c64711189d8c05f82092f9cc06b553b2b4b4f6821ffcbce"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:bd627d982dd17f99f12480273935bc0e9ca81ca6786c08f30543e867a207ebb0"
+}

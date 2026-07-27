@@ -1,0 +1,60 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-SYMPTOM-001",
+  "data_source_ids": [
+    "MED-FDA-BIOMARKER-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:b6ea35a9af7d65ffc29621f4d8f1699b7171bb5c3d7e0063d8f0eb19a7243059",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:1c828defb4be4abc873f17cfba12be2752d91c2085fca3be4a498f847326cbc2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:c565008e3ece4b122f0311cc458714b0303a03bd1d595ffa130bb5a53bf2a47a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-SYMPTOM-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8c1c3f723f30876c41788cdb5a070e0155b79a081c23d2e46f5c480ebf489908",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:119ac6dba6c5b04234a4b6b552058f83b03b6b534630b8588fa78a6bd86869e9",
+    "prediction_seal_hash": "sha256:03d838714279353e4b4106fe616072c0d07c62eb97cb590948f7eee9342782c8",
+    "program_hash": "sha256:8e02a8fe4cf7b7ce792159e11f9fab4206ab012795592dfa8ec4104373abee95",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:428aa617bc748076d77cffcf61f89561bef8bf1f178baa0b75895219952c9059",
+    "target_material_present": false,
+    "trace_hash": "sha256:418d41bcb3397d0cfd7b79c93d5ee277171aa783af7e5a567063660f8d57a1a3"
+  },
+  "measurement_receipt_hash": "sha256:dd0d1bbe61cace5b2696d0c6fa7aff5f634f53bdec06ccf0fa032f560244ceac",
+  "measurements": [
+    "sft-med-symptom-001-authority-correspondence: predicted medicine:patient-reported-experience__report-to-person-state-relation__content-intensity-timing-context__elicitation-method-and-language; source-derived medicine:patient-reported-experience__report-to-person-state-relation__content-intensity-timing-context__elicitation-method-and-language; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:fbec03d4bf972bcc1ba34b24fe98e8897091532d4a7d6f37bec815bcc8678230",
+    "custodian_id": "SFT-EXP-MED-SYMPTOM-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:b6ea35a9af7d65ffc29621f4d8f1699b7171bb5c3d7e0063d8f0eb19a7243059",
+    "prediction_seal_hash": "sha256:03d838714279353e4b4106fe616072c0d07c62eb97cb590948f7eee9342782c8",
+    "registered_target_identity_hash": "sha256:428aa617bc748076d77cffcf61f89561bef8bf1f178baa0b75895219952c9059",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4ed7f977a68d4ce073f18e90199576574e4877d08a6def2026403bd6e95e8cf3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b26bfca849d2c764587a2c22840f1327c1e8f788073f2e047b8271b5e1c4e292"
+}

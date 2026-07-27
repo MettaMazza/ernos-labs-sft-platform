@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MED-MISSING-REPORTING-001",
+  "data_source_ids": [
+    "MED-ICH-E6R3-001",
+    "MED-STROBE-001",
+    "MED-COCHRANE-MISSING-EVIDENCE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:0aac9de3a46af3e8b17684fbe04fa138d15db153b2c4765f9c08875f8bda24f7",
+  "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7a18df5c66e591fdf7477ccbddcf212e189f6600ec897c060fd93bd684385e68",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:64316d094ba6a3a69e332f9779a388c6b49d4d6d8cdc60786f489974bdbc9169",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MED-MISSING-REPORTING-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8fdc6a3ab2ca79b727b627b9c43a6105c33603fc2d5b63f6f74b33d9e6b2a71f",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:6c6215f2710beccb0b28fb6f4983555651d75101579ca734595e9d03a0d16001",
+    "prediction_seal_hash": "sha256:55f3aacada4c5c22606acdfea1447ae94cb9a631e5f53c7e86ddabb259bb6069",
+    "program_hash": "sha256:5f1c744ef20f020dc7c2863b514bf3279ea6cbf72429854fdcf0d77c3d9110f7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:10b57cea6bbe431ed78700f1bdda0feb53ff3b1eb602f4fc7134cf39d464d20a",
+    "target_material_present": false,
+    "trace_hash": "sha256:dd81e005403e9488ed86a6510ab5e09cabeed24c63243e6cb266f13231a88753"
+  },
+  "measurement_receipt_hash": "sha256:fe6b03de2f9d68aa1d51a015b4788885dfde3a607ef78d47c180df23781577d4",
+  "measurements": [
+    "sft-med-missing-reporting-001-authority-correspondence: predicted medicine:registered-and-observed-study-results__registration-publication-correspondence__reported-unreported-support__registry-search-and-cutoff-date; source-derived medicine:registered-and-observed-study-results__registration-publication-correspondence__reported-unreported-support__registry-search-and-cutoff-date; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:ac177a34c0576a82ccc1829fe20fbd6c1a672d8312124aca0bc6b897fbd79dd4",
+    "custodian_id": "SFT-EXP-MED-MISSING-REPORTING-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:0aac9de3a46af3e8b17684fbe04fa138d15db153b2c4765f9c08875f8bda24f7",
+    "prediction_seal_hash": "sha256:55f3aacada4c5c22606acdfea1447ae94cb9a631e5f53c7e86ddabb259bb6069",
+    "registered_target_identity_hash": "sha256:10b57cea6bbe431ed78700f1bdda0feb53ff3b1eb602f4fc7134cf39d464d20a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4f37ddf5c2bd6dea45509f29d475f81a7b798305a8722d71cd2883751f65e57e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:bf5d20e14cbd6ba90776a4e3cdf382114ce17eaaa02eaafe9eb129caca3d7aef"
+}

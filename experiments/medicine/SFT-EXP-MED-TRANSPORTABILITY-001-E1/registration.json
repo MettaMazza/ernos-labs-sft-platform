@@ -1,0 +1,179 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-MED-TRANSPORTABILITY-001",
+  "complete_branch_pre_source_seal": {
+    "all_72_predictions_sealed_before_source_selection": true,
+    "hash": "sha256:57b0813078b36814b831862db7e888601d8e1c1d2820f7429915431bf6066cd5",
+    "path": "experiments/sealed_predictions/medicine_foundation_complete_pre_source.json"
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the clinical carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed snapshot or missing fragment is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, an imported law, opaque predictor or forbidden proof value is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CORRESPONDENCE",
+      "expected_rejection": "A changed source-derived label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-MED-TRANSPORTABILITY-001-E1-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_reference_hash": "sha256:1007e33bb8f452506d8d05371b63e310128d35d7f1b9f1ed593bb5622b6a4c82"
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every source hash and fragment reproduces, the held label matches exactly, all failed and adverse source rows remain preserved, and the changed control is rejected.",
+    "comparison_implementation_hash": "sha256:228d308dc2b38b94c04a27f08f8633b2da8731c62b99e37d8261c77b034dcd44",
+    "evaluator_id": "SFT-EXP-MED-TRANSPORTABILITY-001-E1-post-seal-source-evaluator",
+    "falsification_condition": "Reject if any registered authoritative medical source contradicts a required relation, if another generated form preserves every dimension, or if any patient, arm, outcome, adverse, null, missing, consent or provenance distinction is erased.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Require every registered fragment in every byte-sealed source and compare its reconstructed categorical record with the sealed consequence.",
+        "metric_id": "source-derived-structural-correspondence",
+        "unit_protocol": "Conditional categorical clinical relation; patient-, population-, setting- or method-dependent magnitudes remain bounded records."
+      }
+    ]
+  },
+  "evidence_mode": "blind_authoritative_and_primary_data_correspondence",
+  "experiment_id": "SFT-EXP-MED-TRANSPORTABILITY-001-E1",
+  "external_measurement_sources": [
+    {
+      "custody_role": "post-seal-authority-or-primary-evidence",
+      "evidence_scope": "final estimand, population, endpoint, intercurrent-event, missing-data and sensitivity-analysis distinctions",
+      "measurement_body": "International Council for Harmonisation",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:f7471f411f1c87ee76783d5b2b9faaeca31d01d530213f71b50d136b39e3b0d9",
+      "snapshot_path": "experiments/external_sources/medicine/snapshots/MED-ICH-E9R1-001.pdf",
+      "source_id": "MED-ICH-E9R1-001",
+      "source_uri": "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+    },
+    {
+      "custody_role": "post-seal-authority-or-primary-evidence",
+      "evidence_scope": "population, comparison, frequency, pattern, cause, disease and injury epidemiology",
+      "measurement_body": "United States Centers for Disease Control and Prevention",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:430c2d885670c185491ab9b84d1c703eeaff0eece3ddb69fc855c001fb93478b",
+      "snapshot_path": "experiments/external_sources/medicine/snapshots/MED-CDC-EPIDEMIOLOGY-001.html",
+      "source_id": "MED-CDC-EPIDEMIOLOGY-001",
+      "source_uri": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/summary.html"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the Cartesian product of all registered binary preservation dimensions before opening any clinical source or outcome.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:d51b7a34ecd77b13c550bd559449e564630c2f15f695c7d419cb046adfb14fa6",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:4d4ee16a0d9f057755aebc5518d1b879ddb782c503c65bc3e0a0e14b657b6f75",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:f2338e6124d41380e058ad42b5bb2897125fd92c4bc99d95d625c25ff75d417c",
+      "sha256:21211b7c80de5ce448a2c20eed8db8b1e5eb9c3d7419cd9257c0c47837117a77",
+      "sha256:6311d802557b16a8d5d592ba83fa5e9d2198c681a47be6004bd0bf6bca15d082",
+      "sha256:a5e2b145bf68f4136e8acab0dccfe49182cf73ec68b94961e0af9a430728f272",
+      "sha256:d12a3316690a5a1b67eb1d62f304a09e0fdd1b3955b0c51b241470e89c3ac3c0",
+      "sha256:3a0a5b1e4db39ad27051a4ddbc8ac1b229a3b97dc145c14a67f4b8add2744288",
+      "sha256:86e35cc6575034fe1f5912b476d74fe46002dad3d05edaa088314286722347b7",
+      "sha256:be541878f35e083875f5968e9e923577177518cb6b3282da600f879b7b393b71",
+      "sha256:ba9251b1e062d0db85f63a33f61c68c7211e0aa959a7ba2fc71c27b1ecc5fc78",
+      "sha256:77bc8dfaaa639336ee2f686f33cc9a099dde4671b4a30396bb8ec67c85538e74",
+      "sha256:002a27745f7240dcb4dafe845974390708783a50408ddb3954ac808939ee9606",
+      "sha256:a8e51c91dd9b73c036e5be0c2512ed247b492797c592b1e652fe43c8d37e6797",
+      "sha256:baf7d0d7a6847a35277e49cd0b286a0d7a39ee90de0f82aa7211c76752dd00ed",
+      "sha256:574e704adc895838de613d3ee8e3cda966fa839ace77222029116b31295c36c3",
+      "sha256:68796e8627c48e87f86c2731e2cba2a9a8b2a7f1ec8c0d453902b725bbeeb299",
+      "sha256:73c73c40b25f04e57a1c56bc58c566028b5151823676cefc3610cc8f7085764c",
+      "sha256:51aca4cb95571752777212fea6dc38f578929762c9a8e2d3d095095ebb739d6b",
+      "sha256:27c13cdf2609aa624ee213b03fa15a631e9c96ab43c955e96a8d107bfd0ff635",
+      "sha256:29980fee556fdbcff4bfd79cac1476468bb0d59051e614e3d032f989b4a6002c",
+      "sha256:7344add841a3331b07f11cf244862da249fed093f8fa70058e2a1b7dd7b07cf0",
+      "sha256:2ace6a2260c443a2cc6280648fc26a9d6aa98822beac7f13ad73cad921de0879",
+      "sha256:fff4cdabee3838bd568fb3e4f7b46115e007788873a47bc57fce6f8852a16ecf"
+    ],
+    "exact_domain": "Exactly eight binary dimensions and therefore 256 forms; closure is conditional only on this explicit complete grammar.",
+    "relation_hash": "sha256:3283d63636e697bcca18e6793e0bc70ed3b20ed19a9d782f0a11c0198bed02e3",
+    "statement": "source-and-target-populations__invariant-and-different-features__joint-population-treatment-outcome__setting-time-and-care-system__complete-protocol-state-transition-adverse-null-record__root-bound-forward-forcing__positive-finite-successor-and-unfavorable-closure__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-MED-TRANSPORTABILITY-001-E1-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:69bf2fb01efa4f6f862d82d4c8c87172ed0d2ce33d45d40c6b528600a7cfcaac",
+    "program_id": "SFT-EXP-MED-TRANSPORTABILITY-001-E1-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27",
+  "required_source_features": [
+    {
+      "required_fragment": "population of interest",
+      "source_id": "MED-ICH-E9R1-001"
+    },
+    {
+      "required_fragment": "missing data",
+      "source_id": "MED-ICH-E9R1-001"
+    },
+    {
+      "required_fragment": "sensitivity analysis",
+      "source_id": "MED-ICH-E9R1-001"
+    },
+    {
+      "required_fragment": "health-related states or events in populations",
+      "source_id": "MED-CDC-EPIDEMIOLOGY-001"
+    }
+  ],
+  "row_retention_policy": "retain-every-source-feature, transport/content failure, adverse scientific result and tampered row",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:7fab689c27c5d144a7805200812f50f7f181ff60a6fd56c31960163c080d8b97",
+    "experiments/external_sources/medicine/snapshots/MED-CDC-EPIDEMIOLOGY-001.html": "sha256:430c2d885670c185491ab9b84d1c703eeaff0eece3ddb69fc855c001fb93478b",
+    "experiments/external_sources/medicine/snapshots/MED-ICH-E9R1-001.pdf": "sha256:f7471f411f1c87ee76783d5b2b9faaeca31d01d530213f71b50d136b39e3b0d9"
+  },
+  "status": "authoritatively_and_empirically_corresponded",
+  "stop_condition": "Halt after every target and control is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_absent_from_target_blind_blueprint": true,
+      "content_withheld_from_prediction": true,
+      "source_ids": [
+        "MED-ICH-E9R1-001",
+        "MED-CDC-EPIDEMIOLOGY-001"
+      ],
+      "target_id": "sft-med-transportability-001-authority-correspondence"
+    }
+  ]
+}
