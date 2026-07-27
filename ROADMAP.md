@@ -28,15 +28,15 @@ directory and census must be scaffolded before its derivation begins.
 
 ## Current gate correction
 
-The dependency-ordered successor reconstruction is published through Physics.
+The dependency-ordered successor reconstruction is published through Materials.
 Foundation, Mathematics, Information Science, Classical Computation, Reversible
 and Quantum Computation, and Physics pass their dated current-evidence gates
 while remaining open to lawful extension, correction, falsification and new
 discovery. Chemistry's 86-law foundation is now secure and 90 further Chemistry
-claims are admitted through ORG-011; its local 176-law version 1.2 manuscript is
-prepared, with 97 complete-field operations remaining. Materials retains its
-84-law admitted foundation. Local roadmap successors for Papers 00 through
-Materials are prepared but are not authorized for remote publication.
+claims are admitted through ORG-011; its 176-law version 1.2 paper is published,
+with 97 complete-field operations remaining. Materials version 1.2 is published
+with 92 admitted laws and complete 56/56 V1/V2 Materials ownership
+reconciliation.
 
 ## Phase A - constitutional scaffold
 
@@ -131,9 +131,11 @@ remains open to lawful versioned extension, correction and falsification.
 - [ ] Chemistry complete field: 78 of 175 continuation obligations after the
   trusted 98-claim checkpoint are admitted; 97 remain. ORG-012 is next when the
   paused branch resumes.
-- [x] Materials foundation: 84/84 listed Materials Science laws, 21,504 exact
-  candidates, complete post-seal NIST/BIPM correspondence and standalone
-  exhaustive branch paper published at DOI `10.5281/zenodo.21532482`.
+- [x] Materials foundation: 92 admitted Materials Science laws, 23,552 exact
+  candidates, 92 unique survivors, 368 adverse controls, 92 independent
+  reconstructions, 92 post-seal NIST/BIPM comparisons and complete 56/56 V1/V2
+  Materials ownership reconciliation. Version 1.2 is published at DOI
+  `10.5281/zenodo.21629306`.
 - [ ] Materials complete field: dependency-ordered subject-family expansion
   remains governed by `docs/branch_roadmaps/07-materials.md`.
 - Genetics, proteins and cellular organization.

@@ -1,16 +1,17 @@
 # Materials Science branch status
 
-Status: `published_v1_current_reconciliation_open`.
+Status: `published_v1_2_foundation_current_evidence_closed_extension_open`.
 
-Materials Branch Paper 001 and its 84 admitted claims remain preserved at DOI
-`10.5281/zenodo.21532482` and GitHub release `materials-v1.0.0`. Its evidence
-files record 21,504 candidates, 84 survivors, 336 adverse controls, independent
-reconstructions and post-seal authority correspondences at the declared
-boundaries.
+Materials Branch Paper 001 version 1.2 and its 92 admitted claims are published
+at DOI `10.5281/zenodo.21629306` and GitHub release `materials-v1.2.0`. Its
+evidence files record 23,552 candidates, 92 survivors, 368 adverse controls, 92
+independent reconstructions and 92 post-seal NIST/BIPM correspondences at the
+declared boundaries.
 
-The branch is reopened for the complete V1/V2 categorical-owner and
-same-strength audit. The earlier inventory's internal completeness cannot prove
-that every prior Materials result was included.
+The complete V1/V2 categorical-owner and same-strength audit closes all 56 of
+56 Materials-owned atomic obligations. This is a dated current-evidence-closed
+foundation, not a permanent lock: lawful additions, corrections, stronger
+tests and falsifications remain admissible through the unchanged engine.
 
 ## Correct categorical boundary
 
@@ -28,12 +29,13 @@ and related quantities remain specimen-, method-, direction-, history- and
 condition-bounded unless a separate SFT claim genuinely forces a universal
 value.
 
-## Successor requirements
+## Complete-field continuation
 
-Materials Paper 002 is required only after every Materials-owned prior result
-has an explicit same-strength V3 disposition and all required Physics and
-Chemistry dependencies are current. Its evidence map must equal the live
-Materials census and the current-compliance gate must pass.
+Later same-paper versions extend the branch through the complete field census
+defined in `docs/branch_roadmaps/07-materials.md`. Every added law requires its
+own complete grammar, enumeration, unique survivor, controls, independent
+reconstruction, empirical comparison where possible, root trace and unchanged-
+engine receipt.
 
 Run:
 
@@ -41,4 +43,4 @@ Run:
 python3 tools/verify_publication_compliance.py --branch materials --require-ready
 ```
 
-The command presently halts as required.
+The command presently reports `READY; live=92; frozen=92; paper=92`.

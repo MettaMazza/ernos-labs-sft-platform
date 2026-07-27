@@ -11,8 +11,9 @@ The papers below are real published, citable archival records.
 Their claim packages and receipts remain immutable. Later ownership audits and
 same-strength reconstructions repaired the earlier completion boundary through
 Physics; the Chemistry foundation is now secure and 90 further Chemistry laws
-have also been admitted through ORG-011. Materials retains its admitted
-84-law foundational inventory while its complete-field programme remains open.
+have also been admitted through ORG-011. Materials now has 92 admitted laws,
+including complete 56/56 V1/V2 Materials ownership reconciliation, while its
+complete-field programme remains open.
 
 The project now uses one rule for every branch: first publish a complete
 foundational reconstruction, then extend the same paper through sequential
@@ -22,11 +23,12 @@ corrections, falsification and stronger evidence.
 
 Same-paper roadmap successors are published for Methods Paper 00, Foundation,
 Mathematics, Information Science, Classical Computation, Reversible and Quantum
-Computation, Physics and Chemistry. They preserve all scientific results and
-add each branch's exact foundation/full-field plan. Materials was explicitly
-excluded from this coordinated update; its existing archival version remains
-unchanged. The successor set is recorded in
-[`branch_roadmap_successor_versions.json`](../../publication/branch_roadmap_successor_versions.json).
+Computation, Physics, Chemistry and Materials. They preserve all scientific
+results and add each branch's exact foundation/full-field plan. The coordinated
+set through Chemistry is recorded in
+[`branch_roadmap_successor_versions.json`](../../publication/branch_roadmap_successor_versions.json);
+the subsequently completed Materials release is recorded in
+[`materials_release.json`](../../publication/materials_release.json).
 
 ## Published archival papers
 
@@ -40,7 +42,7 @@ unchanged. The successor set is recorded in
 | Quantum Computation | [The Quantum Fold Machine](../successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_3.md) | [10.5281/zenodo.21627748](https://doi.org/10.5281/zenodo.21627748) | 22 laws and 29 prior obligations admitted; v1.3 roadmap published |
 | Physics | [From Fold to Physics](../successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_2.md) | [10.5281/zenodo.21627765](https://doi.org/10.5281/zenodo.21627765) | 349 laws and 488 prior atoms current-evidence complete; v1.2 roadmap published; extension-open |
 | Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21627782](https://doi.org/10.5281/zenodo.21627782) | Foundation 86/86 secure; 90 further laws admitted; v1.2 published; 97 continuation operations remain |
-| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21532482](https://doi.org/10.5281/zenodo.21532482) | Existing v1.0 archival record unchanged; roadmap successor intentionally not published |
+| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21629306](https://doi.org/10.5281/zenodo.21629306) | Version 1.2; 92 laws and 56/56 prior Materials atoms current-evidence closed; extension-open |
 
 ## Machine-readable current gate
 
