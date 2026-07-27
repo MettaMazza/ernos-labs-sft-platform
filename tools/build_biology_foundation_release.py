@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the local, publication-unauthorized Biology foundation release bundle."""
+"""Build the authorized or prepublication Biology foundation release bundle."""
 
 from __future__ import annotations
 
@@ -100,6 +100,14 @@ def write_deterministic_zip(target: Path) -> int:
 
 
 def main() -> None:
+    metadata_document = json.loads(
+        (ROOT / "publication" / "biology_foundation_zenodo_metadata.json").read_text(encoding="utf-8")
+    )
+    authorized = bool(metadata_document["publication_authorized"])
+    doi = str(metadata_document.get("doi", ""))
+    zenodo_record = metadata_document.get("zenodo_draft_id")
+    if authorized and (not doi or not isinstance(zenodo_record, int)):
+        raise RuntimeError("authorized release requires a reserved DOI and Zenodo record")
     RELEASE.mkdir(parents=True, exist_ok=True)
     pdf = RELEASE / PDF_NAME
     md = RELEASE / MD_NAME
@@ -113,13 +121,15 @@ def main() -> None:
         encoding="utf-8",
     )
     manifest = {
-        "schema": "sft-v3-local-prepublication-branch-release/1",
+        "schema": "sft-v3-published-branch-release/1" if authorized else "sft-v3-local-prepublication-branch-release/1",
         "branch_id": "biology",
         "version": VERSION,
         "publication_date": "2026-07-27",
-        "publication_authorized": False,
-        "github_push_authorized": False,
-        "zenodo_publish_authorized": False,
+        "publication_authorized": authorized,
+        "github_push_authorized": authorized,
+        "zenodo_publish_authorized": authorized,
+        "zenodo_record": zenodo_record,
+        "doi": doi,
         "foundational_status": "current_evidence_closed_extension_open",
         "full_field_status": "planned",
         "bundled_evidence_file_count": bundled_file_count,
@@ -134,7 +144,7 @@ def main() -> None:
     )
     print(
         f"Biology foundation local release: READY files=4 evidence_files={bundled_file_count} "
-        f"publication_authorized=false"
+        f"publication_authorized={str(authorized).lower()}"
     )
 
 

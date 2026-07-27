@@ -181,8 +181,16 @@ def main() -> None:
         raise SystemExit("Biology foundation inventory is not completely admitted")
     if any(row["status"] != "model_admitted" for row in inventory["obligations"]):
         raise SystemExit("Biology inventory contains an unadmitted law")
-    if metadata["publication_authorized"]:
-        raise SystemExit("this builder is for the local unauthorized draft")
+    authorized = bool(metadata["publication_authorized"])
+    doi = str(metadata.get("doi", ""))
+    if authorized and not doi:
+        raise SystemExit("authorized Biology publication requires its reserved DOI")
+    publication_banner = (
+        f"**PUBLISHED OPEN-ACCESS BRANCH PAPER.** DOI: [{doi}](https://doi.org/{doi}). "
+        "The canonical Markdown paper, rendered PDF, complete evidence/source archive and checksum ledger form this release."
+        if authorized
+        else "**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this paper performs no push, release, upload, DOI creation or Zenodo action."
+    )
     counts = exact_codon_certificate()
     mission = open_science_position("For Biology, a database label, selected organism, favorable specimen, opaque structure predictor or consensus classification cannot stand for a law of life. Organism, lineage, compartment, environment, condition, method, missingness and adverse observations remain in the evidence. Exact code counts are stated as exact; variable biological magnitudes remain bounded to their measured populations and protocols.")
     sections = [f"""# From Fold to Life
@@ -213,7 +221,7 @@ The exact headline construction generates four DNA coding labels from two held d
 
 ## 1. Publication, authorship and open-science boundary
 
-**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this paper performs no push, release, upload, DOI creation or Zenodo action.
+{publication_banner}
 
 Maria Smith, independent researcher and founder of Ernos Labs. Contact: Maria.Smith.Sftoe@gmail.com. Reproducibility reports and submissions: https://discord.gg/ucwGryVxGr. GitHub: https://github.com/MettaMazza.
 
@@ -310,12 +318,12 @@ The corrections matter as much as the correspondences. The engine did not reward
 
 ## {section_number + 6}. Repository and publication status
 
-- Canonical repository prepared for later authorized push: https://github.com/MettaMazza/ernos-labs-sft-platform
-- Zenodo DOI: reserved only after explicit publication authorization
+- Canonical repository: https://github.com/MettaMazza/ernos-labs-sft-platform
+- Zenodo DOI: {f'https://doi.org/{doi}' if authorized else 'reserved only after explicit publication authorization'}
 - Author: Maria Smith, Ernos Labs
 - Contact: Maria.Smith.Sftoe@gmail.com
 - Submissions: https://discord.gg/ucwGryVxGr
-- Current state: local prepublication; no remote action performed
+- Current state: {'published open access' if authorized else 'local prepublication; no remote action performed'}
 
 ## {section_number + 7}. References
 
