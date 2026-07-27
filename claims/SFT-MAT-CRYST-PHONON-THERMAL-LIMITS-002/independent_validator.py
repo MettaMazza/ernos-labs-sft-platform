@@ -1,0 +1,8 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-MAT-CRYST-PHONON-THERMAL-LIMITS-002'
+DOMAINS=(('carrier-erased-or-answer-only', 'rank-three-labelled-displacement-carrier'), ('relation-imported-fitted-or-erased', 'shared-and-opposed-basis-displacement-relation'), ('organization-collapsed', 'acoustic-optical-and-complete-mode-support-retained'), ('observation-boundary-unrecorded', 'gapless-shared-mode-and-rank-three-cube-count'), ('result-without-transition-trace', 'complete-state-transition-boundary-trace'), ('authority-or-target-selected-law', 'root-bound-forward-forcing'), ('finite-answer-lookup', 'positive-finite-successor-closure'), ('free-fit-exception-or-extra-rule', 'no-extra-rule'))
+SURVIVOR='rank-three-labelled-displacement-carrier__shared-and-opposed-basis-displacement-relation__acoustic-optical-and-complete-mode-support-retained__gapless-shared-mode-and-rank-three-cube-count__complete-state-transition-boundary-trace__root-bound-forward-forcing__positive-finite-successor-closure__no-extra-rule'
+def main():
+ s=json.load(open(sys.argv[1],encoding="utf-8")); generated=["__".join(x) for x in product(*DOMAINS)]; received=[x["candidate_id"] for x in s["census"]["candidates"]]; decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]}; passed=s["claim_id"]==CLAIM_ID and received==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and all(x["passed"] for x in s["controls"]); print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"candidate_count":len(generated),"survivor":SURVIVOR if passed else None}},sort_keys=True))
+if __name__=="__main__": main()

@@ -17,7 +17,7 @@ import render_platform_paper as base
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/materials/FROM_FOLD_TO_MATERIALS.md"
-OUTPUT = ROOT / "output/pdf/from-fold-to-materials-branch-paper-001.pdf"
+OUTPUT = ROOT / "output/pdf/from-fold-to-materials-branch-paper-001-v1.2.pdf"
 METADATA = ROOT / "publication/materials_zenodo_metadata.json"
 
 
@@ -42,7 +42,7 @@ def cover(authorized: bool, doi: str):
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph("Third clean-room reconstruction - Materials inventory complete<br/>84 required laws - 21,504 exact candidates<br/>24 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph("Version 1.2 - current-evidence closed, extension-open foundation<br/>92 required laws - 23,552 exact candidates<br/>27 July 2026" + (f"<br/>{'DOI' if authorized else 'Previous version DOI'}: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]

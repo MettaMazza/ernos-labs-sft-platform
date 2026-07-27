@@ -1,0 +1,948 @@
+Reference Correlations for Thermophysical Properties of Liquid Water
+at 0.1 MPa
+Jaroslav Pátek, Jan Hrubý, a… Jaroslav Klomfar, and Monika Sou čková
+Institute of Thermomechanics AS CR, v.v.i., Dolejškova 5, Prague 8 CZ-182 00, Czech Republic
+Allan H. Harvey b…
+Thermophysical Properties Division, National Institute of Standards and Technology, 325 Broadway, Boulder , Colorado 80305, USA
+/H20849Received 7 November 2008; accepted 18 November 2008; published online 15 January 2009 /H20850
+Simple but highly accurate correlations have been developed for the thermodynamic
+properties /H20849including density, heat capacity, and speed of sound /H20850, viscosity, thermal con-
+ductivity, and static dielectric constant of liquid water as a function of temperature at a
+pressure of 0.1 MPa. The calculations may be simply extended to a pressure range from
+the saturation pressure to 0.3 MPa. The temperature range covered in most cases is from
+253.15 to 383.15 K; this includes some temperatures where liquid water is metastable.
+These correlations are designed to reproduce the best available data, which in most cases
+are described by formulations issued by the International Association for the Properties of
+Water and Steam /H20849IAPWS/H20850. The equations presented here are simple enough to be used in
+applications such as spreadsheets. They provide a convenient alternative to the more
+complicated IAPWS formulations in cases where only liquid properties at near-
+atmospheric pressure are of interest without increasing the uncertainty beyond that of the
+more complex formulations. © 2009 American Institute of Physics .
+/H20851DOI: 10.1063/1.3043575/H20852
+Key words: calibration; density; dielectric constant; heat capacity; speed of sound; thermal conductivity; ther-
+modynamic properties; viscosity; water .
+CONTENTS
+1. Introduction .............................. 2 2
+2. Thermodynamic Properties .................. 2 3
+2.1. Input Data ........................... 2 3
+2.2. Correlation Results .................... 2 3
+2.3. Range of V alidity and Uncertainty ........ 2 4
+2.4. Application at Standard Atmospheric
+Pressure............................. 2 5
+2.5. Application in a Limited Pressure Range. . 25
+3. Viscosity ................................ 2 6
+3.1. Input Data ........................... 2 6
+3.2. Correlation Results .................... 2 6
+3.3. Range of V alidity and Uncertainty ........ 2 6
+4. Thermal Conductivity ...................... 2 6
+4.1. Input Data ........................... 2 6
+4.2. Correlation Results .................... 2 6
+4.3. Range of V alidity and Uncertainty ........ 2 7
+5. Static Dielectric Constant ................... 2 7
+5.1. Input Data ........................... 2 7
+5.2. Correlation Results .................... 2 8
+5.3. Range of V alidity and Uncertainty ........ 2 8
+6. Calculations at Other Pressures .............. 2 8
+7. Discussion ............................... 2 8
+8. Acknowledgments ......................... 2 9
+List of Tables
+1. Coefﬁcients and exponents of Eqs. /H208492/H20850–/H208494/H20850..... 2 3
+2. Thermodynamic properties of liquid water at
+0.1 MPa obtained by differentiating Eqs.
+/H208492/H20850–/H208494/H20850.................................. 2 3
+3. Thermodynamic properties of liquid water at
+0.1 MPa given by algebraic combinations of
+Eqs. /H208492/H20850–/H208494/H20850and their derivatives ............. 2 4
+4. Relations for thermodynamic properties of
+liquid water at pressure p different from
+0 . 1M P a ................................. 2 5
+5. Parameters for calculation of viscosity with
+Eq. /H208497/H20850.................................. 2 6
+6. Parameters for calculation of thermal
+conductivity with Eq. /H208499/H20850................... 2 7
+7. Parameters for calculation of static dielectric
+constant with Eq. /H2084911/H20850...................... 2 8
+8. Sample points for computer-program
+veriﬁcation of calculated properties at 0.1 MPa. . 29
+a/H20850Electronic mail: hruby@it.cas.cz
+b/H20850Electronic mail: aharvey@boulder.nist.gov
+© 2009 American Institute of Physics.
+0047-2689/2009/38„1…/21/9/$45.00 J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 200921
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+List of Figures
+1. Relative deviation of the speciﬁc volume at
+0.1 MPa given by the present formulation
+from the IAPWS-95 formulation.
+1,2........... 2 4
+2. Relative deviation of the speciﬁc isobaric heat
+capacity at 0.1 MPa given by the present
+formulation from the IAPWS-95
+formulation.1,2............................ 2 4
+3. Relative deviation of the speed of sound at
+0.1 MPa given by the present formulation
+from the IAPWS-95 formulation. 1,2........... 2 5
+4. Relative deviation of the density at
+0.101 325 MPa given by the present
+formulation /H20851reciprocal of /H9263atm from Eq. /H208496/H20850/H20852
+and by the IAPWS-95 formulation 1,2 from the
+CIPM recommended values for the density of
+water between 0 and 40 ° C.
+15............... 2 5
+5. Relative deviation of correlations for viscosity
+/H20851Eq. /H208497/H20850/H20852and thermal conductivity /H20851Eq. /H208499/H20850/H20852
+from the corresponding IAPWS standards.. . . . . 26
+6. Deviation from the correlation of Hamelin et
+al.18 of dielectric-constant data from studies
+that measured data for supercooled water. ...... 2 7
+7. Deviation of accepted dielectric-constant data
+from Eq. /H2084911/H20850. ............................ 2 8
+1. Introduction
+Water is probably the most important chemical substance
+in science and industry. International efforts to produce stan-
+dardized, high-accuracy values of water’s thermophysical
+properties began in the 1920s; these efforts are now orga-
+nized by the International Association for the Properties of
+Water and Steam /H20849IAPWS/H20850.
+IAPWS has produced comprehensive formulations for
+general and scientiﬁc uses for a variety of properties, includ-
+ing the thermodynamic properties,
+1,2 the viscosity,3,4 the ther-
+mal conductivity, 5,6 and the static dielectric constant. 7,8
+These formulations are designed to describe /H20849within the un-
+certainty of available experimental data /H20850the behavior of va-
+por, liquid, and supercritical water over wide ranges of tem-
+perature and pressure.
+However, the comprehensive IAPWS formulations are not
+simple to use /H20849unless one obtains software where someone
+else has done the work of implementation /H20850. For example, the
+formulation for thermodynamic properties,
+1,2 commonly
+known as IAPWS-95, is a fundamental equation for the
+Helmholtz energy as a function of temperature and density,
+containing eight terms in the ideal-gas part and 56 terms,
+some rather complicated, in the residual part. Differentiation
+and iterative solution are required to obtain common proper-
+ties such as density and heat capacity as a function of tem-
+perature and pressure. For other properties such as the vis-
+cosity, obtaining a property as a function of temperature and
+pressure requires ﬁrst solving the IAPWS-95 thermodynamic
+formulation to obtain the density to be input to the formula-
+tion for the property of interest.
+For many purposes, a simpler option would be desirable.
+For example, water is widely used as a calibration ﬂuid, and
+many of these calibrations use liquid water at atmospheric
+pressure. A one-dimensional correlation of the relevant prop-
+erty as a function of temperature would be suitable for these
+purposes. The desire for simplicity has led people to use
+tabulated numbers from handbooks /H20849which may not represent
+the best current knowledge /H20850or obsolete and less accurate
+equations such as the density correlation of Kell,
+9 in prefer-
+ence to the ofﬁcial IAPWS formulations.
+In this work, we provide simple formulas as a function of
+temperature for properties of liquid water at 0.1 MPa pres-
+sure. They are designed to reproduce the more comprehen-
+sive IAPWS standards to a precision at least a factor of 10
+smaller than the uncertainty of the original IAPWS formula-
+tion, so that the correlations developed here contribute neg-
+ligibly to the overall uncertainty of the property calculation.
+The formulas can be programmed easily in common appli-
+cations such as spreadsheets, allowing users to obtain prop-
+erties of the best accuracy with relatively little effort.
+The temperature range covered by these correlations is
+/H20849with exceptions to be noted below /H20850253.15– 383.15 K. This
+exceeds the range in which liquid water is the thermody-
+namically stable phase at 0.1 MPa by approximately 20 K at
+the low-temperature end and 10 K at the high-temperature
+end. Properties in this extended range are useful for the study
+of metastable water and for the study of aqueous solutions
+that are stable over a wider temperature range than the pure
+solvent.
+The formulas presented here were adopted as a Supple-
+mentary Release by IAPWS at its meeting in Berlin, Ger-
+many, in September 2008.
+10
+In this paper, we begin by discussing thermodynamic
+properties in Sec. 2. Sections 3 and 4 present the viscosity
+and thermal conductivity, respectively. Section 5 describes
+the static dielectric constant, for which the publication of
+more accurate data subsequent to the IAPWS release re-
+quired a different approach. Application at different pres-
+sures /H20849particularly the commonly used standard atmospheric
+pressure of 0.101 325 MPa /H20850is discussed in Sec. 6.
+Before we present our correlations, we mention three de-
+tails. First, we use “water” to refer to what is often called
+“ordinary water substance” in IAPWS formulations. This
+means chemically pure H
+2O with the standard isotopic com-
+position for hydrogen and oxygen given by Vienna Standard
+Mean Ocean Water /H20849VSMOW/H20850.
+11 Most water in nature or in
+the laboratory will have isotopic composition differing
+slightly from that of VSMOW, but the difference is negli-
+gible for all properties considered here, with the exception of
+the density, where isotopic composition could affect the most
+precise measurements. Second, these formulations are for
+pure, air-free water. In some applications, the interest may be
+in water in contact with the atmosphere and therefore fully or
+partially saturated with air. Dissolved air at atmospheric
+22 PÁTEK ET AL.
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+pressure has a negligible effect on the properties considered
+here, again with the exception of very precise density mea-
+surements. The small effect of dissolved atmospheric air on
+the density /H20849and refractive index /H20850of water has been dis-
+cussed by Harvey et al.
+12 Third, we do not consider the “in-
+dustrial” formulation for thermodynamic properties 13,14
+/H20849commonly known as IAPWS-IF97 /H20850, which IAPWS devel-
+oped primarily for the steam power industry. While IAPWS-
+IF97 closely approximates thermodynamic properties from
+IAPWS-95, it does not provide the simple one-dimensional
+correlations that we seek here.
+2. Thermodynamic Properties
+2.1. Input Data
+The correlation of thermodynamic properties was de-
+signed to reproduce values from the Release on the IAPWS
+Formulation 1995 for the Thermodynamic Properties of Or-
+dinary Water Substance for General and Scientiﬁc Use ,
+1,2
+referred to in this paper as IAPWS-95 or simply as 95 when
+used in subscripts. V alues of the dependent variables were
+generated from IAPWS-95 for liquid water at 0.1 MPa at
+1 K intervals from 253.15 to 383.15 K, and the ﬁtting pro-
+cedure was constrained to ﬁt the input data to a precision at
+least a factor of 10 smaller than the uncertainty of the
+IAPWS formulation.
+2.2. Correlation Results
+Thermodynamic properties are related by thermodynamic
+identities. Correlation of each property separately would in-
+evitably lead to inconsistency, i.e., the thermodynamic iden-
+tities would not be satisﬁed exactly. Moreover, the number of
+equations would be large. One approach to ensure thermody-
+namic consistency is to employ a thermodynamic potential
+such as the Helmholtz energy or Gibbs energy depending on
+the natural independent variables. All thermodynamic prop-
+erties are then obtained from thermodynamic identities as
+combinations of derivatives of the potential. For the present
+purpose of a formulation restricted to a ﬁxed pressure p
+0
+= 0.1 MPa, this approach is not suitable. To ensure thermo-
+TABLE 1. Coefﬁcients and exponents of Eqs. /H208492/H20850–/H208494/H20850/H20849the notation yE /H11006n should be interpreted as y /H1100310/H11006n/H20850
+Eq. in i mi ai bi ci
+/H208492/H20850 1 4 2 −1.661 470 539E + 5 −8.237 426 256E − 1 −2.452 093 414E + 2
+2 5 3 2.708 781 640E + 6 1.908 956 353 3.869 269 598E + 1
+3 7 4 −1.557 191 544E + 8 −2.017 597 384 −8.983 025 854
+4 n/a 5 n/a 8.546 361 348E − 1
+/H208493/H20850 5 n/a 1 1.937 631 57E − 2 5.785 452 92E − 3
+6 4 2 6.744 584 46E + 3 −1.531 956 65E − 2
+7 5 3 −2.225 216 04E + 5 3.113 378 59E − 2
+8 7 4 1.002 312 47E + 8 −4.235 462 41E − 2
+9 8 5 −1.635 521 18E + 9 3.387 135 07E − 2
+10 9 6 8.322 996 58E + 9 −1.199 467 61E − 2
+/H208494/H2085011 1 1 −7.524 587 8E − 6 −3.109 147 0E − 6
+12 3 3 −1.376 741 8E − 2 2.896 491 9E − 5
+13 5 4 1.062 729 3E + 1 −1.311 276 3E − 4
+14 6 5 −2.045 779 5E + 2 3.041 045 3E − 4
+15 7 6 1.203 741 4E + 3 −3.903 459 4E − 4
+16 7 2.340 311 7E − 4
+17 9 −4.851 010 1E − 5
+TABLE 2. Thermodynamic properties of liquid water at 0.1 MPa obtained by differentiating Eqs. /H208492/H20850–/H208494/H20850
+Propertya Relation
+Entropy
+/H20851derived from Eq. /H208492/H20850/H20852 s0 =− dg0
+dT =− R/H20851c2 + c3/H208491+l n /H9270/H20850+ /H20858i=1
+3 niai/H9251ni+1 − /H20858i=1
+4 mibi/H9252mi+1/H20852
+Isobaric heat capacity
+/H20851derived from Eq. /H208492/H20850/H20852 cp0 =− T d2g0
+dT2 =−R/H20851c3 + /H9270/H20858i=1
+3 ni/H20849ni +1 /H20850ai/H9251ni+2 + /H9270/H20858i=1
+4 mi/H20849mi +1 /H20850bi/H9252mi+2/H20852
+vT /H11013/H20849/H11509v / /H11509T/H20850p
+/H20851derived from Eq. /H208493/H20850/H20852 vT0 = dv0
+dT = R
+p0
+/H20849/H20858i=6
+10 niai/H9251ni+1 − /H20858i=5
+10 mibi/H9252mi+1/H20850
+vTT /H11013/H20849/H115092v / /H11509T2/H20850p
+/H20851derived from Eq. /H208493/H20850/H20852 vTT0 = d2v0
+dT2 = R
+p0TR
+/H20849/H20858i=6
+10 ni/H20849ni +1 /H20850ai/H9251ni+2 + /H20858i=5
+10 mi/H20849mi +1 /H20850bi/H9252mi+2/H20850
+vpT /H11013/H115092v / /H11509p/H11509T
+/H20851derived from Eq. /H208494/H20850/H20852 vpT0 = dvp0
+dT = R
+p0
+2 /H20849/H20858i=11
+15 niai/H9251ni+1 − /H20858i=11
+17 mibi/H9252mi+1/H20850
+aDerivatives vTT0 and vpT0 are only needed for computing thermodynamic properties at pressures different from
+0.1 MPa /H20849Table 4/H20850.
+PROPERTIES OF LIQUID WATER AT 0.1 MPA 23
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+dynamic consistency and to avoid redundant equations, the
+formulation is based on three temperature-dependent func-
+tions: the Gibbs energy g, the speciﬁc volume v, and the
+isothermal derivative of speciﬁc volume with respect to pres-
+sure
+vp /H11013/H20849/H11509v / /H11509p/H20850T. The remaining properties are obtained
+from thermodynamic identities.
+For easy programming and speed of computation, polyno-
+mial equations are employed in this work. However, the iso-
+bar 0.1 MPa given by IAPWS-95 has two singular points:
+one in the region of superheated water, corresponding to the
+liquid-vapor spinodal, and one in the region of supercooled
+water, corresponding to the so-called re-entrant spinodal. Al-
+though these singular points are well beyond the range of
+validity of the present formulation, it proved efﬁcient to in-
+clude terms imitating these singular behaviors at high and
+low temperatures. Consequently, the equations were de-
+signed as mixed polynomials in terms of dimensionless tem-
+perature parameters,
+/H9270= T
+TR
+, /H9251= TR
+Ta − T , /H9252= TR
+T − Tb
+, /H208491/H20850
+where T is the temperature in K, TR =1 0 K, Ta = 593 K, and
+Tb = 232 K. The particular values of TR, Ta, and Tb have no
+physical signiﬁcance. The temperature-dependent thermody-
+namic functions at p
+0 = 0.1 MPa are represented by
+g0/H20849T/H20850/H11013g/H20849p0,T/H20850= RTR/H20873c1 + c2/H9270+ c3/H9270ln /H9270+ /H20858
+i=1
+3
+ai/H9251ni
++ /H20858
+i=1
+4
+bi/H9252mi/H20874, /H208492/H20850
+v0/H20849T/H20850/H11013v/H20849p0,T/H20850= RTR
+p0
+/H20873a5 + /H20858
+i=6
+10
+ai/H9251ni + /H20858
+i=5
+10
+bi/H9252mi/H20874, /H208493/H20850
+vp0/H20849T/H20850/H11013vp/H20849p0,T/H20850= RTR
+p0
+2 /H20873/H20858
+i=11
+15
+ai/H9251ni + /H20858
+i=11
+17
+bi/H9252mi/H20874, /H208494/H20850
+where R = 461.518 05 J kg −1 K−1,1 and the dimensionless co-
+efﬁcients ai, bi, and ci and integer exponents ni and mi are
+given in Table 1. The coefﬁcients were rounded such that the
+ignored digits have negligible effect on the computed ther-
+modynamic properties.
+Further properties are derived from Eqs. /H208492/H20850–/H208494/H20850by use of
+thermodynamic identities. Quantities obtained by differenti-
+ating Eqs. /H208492/H20850–/H208494/H20850are given in Table 2. Table 3 shows rela-
+tions for properties obtained by algebraic combinations of
+quantities given by Eqs. /H208492/H20850–/H208494/H20850and quantities given in Table
+2.
+The performance of the correlation in reproducing
+IAPWS-95 results at p
+0 = 0.1 MPa for speciﬁc volume, iso-
+baric heat capacity, and speed of sound may be seen in Figs.
+1–3, respectively. In each case, the deviations from
+IAPWS-95 are smaller than the uncertainties for the corre-
+sponding properties of IAPWS-95 itself by more than an
+order of magnitude through the entire range of correlation.
+2.3. Range of Validity and Uncertainty
+The correlation of thermodynamic properties at p
+0
+= 0.1 MPa given by Eqs. /H208492/H20850–/H208494/H20850is recommended for use in
+the following temperature range:
+TABLE 3. Thermodynamic properties of liquid water at 0.1 MPa given by
+algebraic combinations of Eqs. /H208492/H20850–/H208494/H20850and their derivatives
+Property Relation
+Enthalpy h0 = g0 + Ts0
+Internal energy u0 = g0 + Ts0 − p0v0
+Helmholtz energy f0 = g0 − p0v0
+Isochoric heat
+capacity
+cv0 = cp0 + TvT0
+2 / vp0
+Isothermal
+compressibility /H9260T /H11013− 1
+v /H20849
+/H11509v
+/H11509p /H20850T
+/H9260T0 =− vp0 / v0
+Thermal expansivity /H9251/H110131
+v /H20849
+/H11509v
+/H11509T /H20850p
+/H92510 = vT0 / v0
+Isentropic
+compressibility /H9260s /H11013− 1
+v /H20849
+/H11509v
+/H11509p /H20850s
+/H9260s0 =− /H20849TvT0
+2 / cp0 + vp0/H20850/ v0
+Speed of sound w0 = /H20851−v0
+2 / /H20849vp0 + TvT0
+2 / cp0/H20850/H208521/2
+250 275 300 325 350 375
+−0.06
+−0.04
+−0.02
+0
+0.02
+0.04
+0.06
+106 × (v0 / v95 −1 )
+Temperature, K
+FIG. 1. Relative deviation of the speciﬁc volume at 0.1 MPa given by the
+present formulation from the IAPWS-95 formulation. 1,2
+250 275 300 325 350 375
+−60
+−40
+−20
+0
+20
+40
+60
+106 × (cp0 / cp95 −1 )
+Temperature, K
+FIG. 2. Relative deviation of the speciﬁc isobaric heat capacity at 0.1 MPa
+given by the present formulation from the IAPWS-95 formulation. 1,2
+24 PÁTEK ET AL.
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+253.15 K /H33355T /H33355383.15 K. /H208495/H20850
+It should not be extrapolated outside these limits. At some
+temperatures within this range, the equilibrium phase at
+0.1 MPa is a solid /H20849below approximately 273.15 K /H20850or a va-
+por /H20849above approximately 372.76 K /H20850; at these conditions
+Eqs. /H208492/H20850–/H208494/H20850describe only the properties of the metastable
+liquid phase.
+The uncertainty of Eqs. /H208492/H20850–/H208494/H20850/H20849which can be considered
+as an estimate of the expanded uncertainty with coverage
+factor k =2 /H20850is that of the underlying IAPWS-95
+formulation.
+1,2 In most of the stable region, this is a relative
+uncertainty of 0.0001% for speciﬁc volume /H20849or density /H20850,
+0.005% for the speed of sound, and 0.1% for isobaric heat
+capacity. No uncertainty estimate is given for the metastable
+regions, but the agreement with available data for the super-
+cooled region is within about 0.01% in density, 1% in speed
+of sound, and 1% in isobaric heat capacity.
+2.4. Application at Standard Atmospheric Pressure
+The speciﬁc volume of liquid water at standard atmo-
+spheric pressure p
+atm = 0.101 325 MPa, computed as
+vatm = v0 + vp0/H20849patm − p0/H20850, /H208496/H20850
+agrees in relative terms within 0.04 /H1100310−6 with the
+IAPWS-95 formulation 1,2 over the whole temperature inter-
+val given by Eq. /H208495/H20850. The speed of sound and isobaric heat
+capacity at standard atmospheric pressure can be taken equal
+to their values at 0.1 MPa, w0 and cp0, respectively, with no
+appreciable effect on the uncertainty.
+Comparison may also be made with the standard correla-
+tion for the density of liquid water from 273.15 to 313.15 K
+adopted for use in metrology by the International Committee
+for Weights and Measures /H20849known by its French acronym as
+the CIPM/H20850.
+15 The CIPM formulation and IAPWS-95 are mu-
+tually consistent, within their respective uncertainties, in the
+range in which the CIPM formulation is valid.
+16 Figure 4
+shows that the density from this work is similarly consistent
+with the CIPM formulation.
+2.5. Application in a Limited Pressure Range
+Thermodynamic properties of liquid water at other pres-
+sures can be obtained based on Eqs. /H208492/H20850–/H208494/H20850and thermody-
+namic identities; e.g., the Gibbs energy can be approximated
+as g/H20849T , p/H20850/H11015g0/H20849T/H20850+ v0/H20849T/H20850/H20849p − p0/H20850. This approach is applicable
+to all thermodynamic properties except for the isothermal
+compressibility and related properties, particularly isentropic
+compressibility and speed of sound. For these properties, a
+linear correction was applied: /H20849
+/H11509v / /H11509p/H20850T /H11015vp0/H20849T/H20850+ vpp0/H20849p
+− p0/H20850, where the linear coefﬁcient vpp0 is a constant /H20849indepen-
+dent of temperature /H20850. Unlike vp0, the coefﬁcient vpp0 does
+not closely approximate the corresponding derivative of the
+speciﬁc volume /H20849
+/H115092v / /H11509p2/H20850T. Relations for computing the
+thermodynamic properties of liquid water at pressures differ-
+ent from 0.1 MPa are given in Table 4. The uncertainties of
+the properties are essentially identical with the uncertainties
+of the IAPWS-95 formulation 1,2 in the pressure range from
+the vapor-liquid saturation pressure up to 0.3 MPa.
+The present formulation can also be used for phase-
+equilibrium computations. Saturation vapor pressure com-
+250 275 300 325 350 375
+−3
+−2
+−1
+0
+1
+2
+3
+106 × (w0 / w95 −1 )
+Temperature, K
+FIG. 3. Relative deviation of the speed of sound at 0.1 MPa given by the
+present formulation from the IAPWS-95 formulation. 1,2
+270 280 290 300 310
+−2
+−1.5
+−1
+−0.5
+0
+0.5
+1
+1.5
+2
+106 × (ρ / ρCIPM −1 )
+Temperature, K
+this formulation
+IAPWS−95
+CIPM uncertainty
+FIG. 4. Relative deviation of the density at 0.101 325 MPa given by the
+present formulation /H20851reciprocal of /H9263atm from Eq. /H208496/H20850/H20852and by the IAPWS-95
+formulation1,2 from the CIPM recommended values for the density of water
+between 0 and 40 ° C. 15
+TABLE 4. Relations for thermodynamic properties of liquid water at pressure
+p different from 0.1 MPa
+Property Relation
+Gibbs energy g /H11015g0 + v0/H20849p − p0/H20850
+Entropy s /H11015s0 − vT0/H20849p − p0/H20850
+Isobaric heat capacity cp /H11015cp0 − TvTT0/H20849p − p0/H20850
+Speciﬁc volume v /H11015v0 + vp0/H20849p − p0/H20850
+vT /H11013/H20849/H11509v / /H11509T/H20850p vT /H11015vT0 + vpT0/H20849p − p0/H20850
+vp /H11013/H20849/H11509v / /H11509p/H20850T vp /H11015vp0 + vpp0/H20849p − p0/H20850
+where vpp0 /H110133.24/H1100310−10RTR / p0
+3
+Enthalpy h = g + Ts
+Internal energy u = g + Ts − pv
+Helmholtz energy f = g − pv
+Isochoric heat capacity cv = cp + TvT
+2 / vp
+Isothermal compressibility /H9260T =− vp / v
+Thermal expansivity /H9251= vT / v
+Isentropic compressibility /H9260s =− /H20849TvT
+2 / cp + vp/H20850/ v
+Speed of sound w = /H20851−v2 / /H20849vp + TvT
+2 / cp/H20850/H208521/2
+PROPERTIES OF LIQUID WATER AT 0.1 MPA 25
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+puted by equating the Gibbs energy of liquid water /H20849as given
+in Table 4/H20850to the Gibbs energy of vapor /H20849as given by
+IAPWS-95/H20850deviates negligibly over the entire temperature
+range given by Eq. /H208495/H20850from the saturation pressure com-
+puted by using IAPWS-95 for both vapor and liquid phases.
+3. Viscosity
+3.1. Input Data
+The viscosity correlation was designed to reproduce val-
+ues computed from the Release on the IAPWS Formulation
+2008 for the Viscosity of Ordinary Water Substance .3,4 Points
+were generated from this formulation for liquid water at
+0.1 MPa pressure at 1 K intervals from 253.15 to 383.15 K,
+and the ﬁtting procedure was constrained to ﬁt the input data
+to a precision at least a factor of 10 smaller than the uncer-
+tainty of the IAPWS formulation.
+3.2. Correlation Results
+The viscosity
+/H9262of liquid water at a pressure of 0.1 MPa is
+described as a function of absolute temperature T by the
+following equation:
+/H9262//H2084910−6 Pa s/H20850= /H20858
+i=1
+4
+ai/H20849T*/H20850bi , /H208497/H20850
+where T* = T / /H20849300 K /H20850and the coefﬁcients and exponents ai
+and bi are given in Table 5.
+Figure 5 shows the percentage deviation of Eq. /H208497/H20850from
+the full IAPWS viscosity formulation. The deviations in Fig.
+5 are at least two orders of magnitude smaller than the un-
+certainty of the underlying IAPWS formulation /H20849see below /H20850,
+meaning that approximating the viscosity by Eq. /H208497/H20850adds
+negligible additional uncertainty to the viscosity calculation
+at these conditions.
+Equation /H208497/H20850also reproduces the ISO recommended
+17
+value of the viscosity at 20 ° C /H20849293.15 K /H20850and standard at-
+mospheric pressure within the number of digits given in Ref.
+17; it also agrees with all values from 288.15 to 313.15 K at
+atmospheric pressure in Ref. 17 within the stated uncertainty
+of 0.17% at 293.15 K.
+3.3. Range of Validity and Uncertainty
+Equation /H208497/H20850is recommended for use in the following tem-
+perature range:
+253.15 K /H33355T /H33355383.15 K. /H208498/H20850
+It should not be extrapolated outside these limits. At some
+temperatures within this range, the equilibrium phase at
+0.1 MPa is a solid /H20849below approximately 273.15 K /H20850or a va-
+por /H20849above approximately 372.76 K /H20850; at these conditions Eq.
+/H208497/H20850describes the viscosity of the metastable liquid phase.
+The uncertainty of Eq. /H208497/H20850/H20849which can be considered as an
+estimate of the expanded uncertainty with coverage factor
+k =2 /H20850is that of the underlying IAPWS formulation.
+3,4 This is
+1% for the stable liquid region. No uncertainty estimate is
+given for the metastable regions, but the agreement with
+available data for the supercooled region is within 5%.
+4. Thermal Conductivity
+4.1. Input Data
+The thermal conductivity correlation was designed to re-
+produce values computed from the Revised Release on the
+IAPS Formulation 1985 for the Thermal Conductivity of Or-
+dinary Water Substance .
+5,6 Points were generated from this
+formulation for liquid water at 0.1 MPa pressure at 1 K in-
+tervals from 273.15 to 383.15 K, and the ﬁtting procedure
+was constrained to ﬁt the input data to a precision at least a
+factor of 10 smaller than the uncertainty of the IAPWS for-
+mulation. For this property, the supercooled liquid below
+273.15 K was not included because those conditions are out-
+side the range of validity of the underlying IAPWS
+formulation.
+5,6
+4.2. Correlation Results
+The thermal conductivity /H9261of liquid water at a pressure of
+0.1 MPa is described as a function of absolute temperature T
+by the following equation:
+/H9261//H208491Wm −1 K−1/H20850= /H20858
+i=1
+4
+ci/H20849T*/H20850di , /H208499/H20850
+where T* = T / /H20849300 K /H20850, and the coefﬁcients and exponents ci
+and di are given in Table 6.
+Figure 5 shows the percentage deviation of Eq. /H208499/H20850from
+the full IAPWS thermal conductivity formulation. The devia-
+TABLE 5. Parameters for calculation of viscosity with Eq. /H208497/H20850
+ia i bi
+1 280.68 −1.9
+2 511.45 −7.7
+3 61.131 −19.6
+4 0.459 03 −40.0
+FIG. 5. Relative deviation of correlations for viscosity /H20851Eq. /H208497/H20850/H20852and thermal
+conductivity /H20851Eq. /H208499/H20850/H20852from the corresponding IAPWS standards.
+26 PÁTEK ET AL.
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+tions in Fig. 5 are at least two orders of magnitude smaller
+than the uncertainty of the underlying IAPWS formulation
+/H20849see below /H20850, meaning that approximating the thermal con-
+ductivity by Eq. /H208499/H20850adds negligible additional uncertainty to
+the thermal conductivity calculation at these conditions.
+4.3. Range of Validity and Uncertainty
+Equation /H208499/H20850is recommended for use in the following tem-
+perature range:
+273.15 K /H33355T /H33355383.15 K. /H2084910/H20850
+It should not be extrapolated outside these limits. At some
+temperatures within this range, the equilibrium phase at
+0.1 MPa is a vapor /H20849above approximately 372.76 K /H20850; at these
+conditions Eq. /H208499/H20850describes the thermal conductivity of the
+metastable liquid phase.
+The uncertainty of Eq. /H208499/H20850/H20849which can be considered as an
+estimate of the expanded uncertainty with coverage factor
+k =2 /H20850is that of the underlying IAPWS formulation.
+5,6 This is
+given approximately by the tolerances stated in Table A.1 of
+the IAPWS release,
+5 which are between 1.5% and 2% in
+relative terms.
+5. Static Dielectric Constant
+5.1. Input Data
+The static dielectric constant is different from the other
+properties considered here, in that experimental data of su-
+perior accuracy have become available since the production
+of the current IAPWS formulation.
+7,8 In particular, the radio-
+frequency resonance measurements of Hamelin et al.18 deter-
+mine the dielectric constant of the liquid to much greater
+accuracy than it was previously known, with an expanded
+/H20849k =2 /H20850uncertainty of approximately 0.01 in the dielectric
+constant /H9255.
+We therefore use the data of Hamelin et al.
+18 as the pri-
+mary basis for our correlation. These data cover the liquid
+over the approximate temperature range from 274 to 418 K;
+we used their data up to our temperature limit of 383.15 K.
+Because the pressure associated with these data is not always
+0.1 MPa, a small adjustment is required to produce values
+corresponding to 0.1 MPa. This adjustment was computed
+with values of /H20849
+/H11509/H9255/ /H11509p/H20850T from the current IAPWS
+formulation7,8 as implemented in the database of Harvey
+et al.19 The adjustment was no larger than 0.005 in /H9255for any
+of the points used in our work.
+For the supercooled liquid over our temperature range of
+interest, three experimental sources are available, and their
+data are not mutually consistent. Hodge and Angell 20 used an
+emulsion polarization technique to obtain an indirect esti-
+mate of the static dielectric constant of liquid water down to
+238 K. Bertolini et al.
+21 measured the dielectric properties of
+supercooled liquid water down to 257 K, reporting static val-
+ues extrapolated from measurements at 27.5 MHz. Risman
+and Wäppling-Raaholt
+22 derived static values from reso-
+nance measurements at 920 MHz; their lowest temperature
+was near 258 K.
+In order to see the differences among these data, we plot
+them in Fig. 6 as the differences between the experimental
+values and the smoothing equation of Hamelin et al.
+18 While
+that smoothing equation is not valid below 274 K, it gives us
+a convenient means of comparing the data with one another
+and with the more precise data of Hamelin et al.
+18 at tem-
+peratures where they overlap.
+All three of the data sources are in fair agreement with the
+data of Hamelin et al. for the normal liquid. However, their
+supercooled liquid behavior differs signiﬁcantly by more
+than the claimed uncertainties of the experiments. The low-
+temperature data of Bertolini et al.
+21 are in better agreement
+with the equation of Hamelin et al.,18 but that is not decisive
+because the equation of Hamelin et al. is empirical and its
+extrapolation to lower temperatures may not be correct.
+While there is no deﬁnitive reason to prefer any of these
+three data sets, we chose to use the data of Bertolini et al. 21
+because their work most closely approximated a measure-
+ment of the static dielectric constant. The extrapolation from
+the measurement frequency to zero frequency is much fur-
+ther for the data of Risman and Wäppling-Raaholt, 22 with
+correspondingly greater opportunity for error. Hodge and
+Angell20 did not use pure water, and their data require vari-
+ous manipulations in order to obtain a value for /H9255. Because
+of the scatter of the data sources, it must be recognized that
+there is an inherent uncertainty in our knowledge of the di-
+electric constant of supercooled liquid water; that uncertainty
+is indicated by the scatter in Fig. 6.
+We observed that the data of Bertolini et al.
+21 were sys-
+TABLE 6. Parameters for calculation of thermal conductivity with Eq. /H208499/H20850
+ic i di
+1 0.802 01 −0.32
+2 −0.259 92 −5.7
+3 0.100 24 −12.0
+4 −0.032 005 −15.0
+FIG. 6. Deviation from the correlation of Hamelin et al. 18 of dielectric-
+constant data from studies that measured data for supercooled water.
+PROPERTIES OF LIQUID WATER AT 0.1 MPA 27
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+tematically below the deﬁnitive data of Hamelin et al. 18 for
+liquid water above 274 K. A shift of their data upward by
+0.18 in /H9255produced excellent agreement with the data of
+Hamelin et al. in the region where the sources overlap, so we
+applied this same shift to the supercooled data of Bertolini
+et al.
+21 before ﬁtting the correlation to the data. In the ﬁtting
+process, greater weight was given to the data of Hamelin
+et al.
+18 due to their much smaller uncertainty.
+5.2. Correlation Results
+The static dielectric constant /H9255of liquid water at a pres-
+sure of 0.1 MPa is described as a function of absolute tem-
+perature T by the following equation:
+/H9255=
+/H20858
+i=1
+4
+ei/H20849T*/H20850fi , /H2084911/H20850
+where T* = T / /H20849300 K /H20850and the coefﬁcients and exponents ei
+and fi are given in Table 7.
+Figure 7 shows the deviation of our two accepted data
+sources from Eq. /H2084911/H20850. In addition, the current IAPWS
+formulation7,8 is plotted for comparison. The data of Hamelin
+et al. 18 are ﬁtted well within their uncertainty of 0.01. We
+were unable to ﬁt Eq. /H2084911/H20850closely through the data of Ber-
+tolini et al.21 in the supercooled region without distorting the
+rest of the ﬁt, so we are left with a small systematic deviation
+for these data /H20849the points shown are shifted as discussed in
+Sec. 5.1 /H20850. However, this deviation is well within the overall
+uncertainty of the dielectric constant in this supercooled re-
+gion.
+5.3. Range of Validity and Uncertainty
+Equation /H2084911/H20850is recommended for use in the following
+temperature range:
+257 K /H33355T /H33355383.15 K. /H2084912/H20850
+It should not be extrapolated outside these limits. At some
+temperatures within this range, the equilibrium phase at
+0.1 MPa is a solid /H20849below approximately 273.15 K /H20850or a va-
+por /H20849above approximately 372.76 K /H20850; at these conditions Eq.
+/H2084911/H20850describes the dielectric constant of the metastable liquid
+phase.
+The uncertainty of Eq. /H2084911/H20850/H20849which can be considered as an
+estimate of the expanded uncertainty with coverage factor
+k =2 /H20850is that of the underlying experimental data. As dis-
+cussed in Sec. 5.1, this is approximately 0.01 for the stable
+and superheated liquid regions /H20849above 273.15 K /H20850but is much
+larger /H20849at least 1.0 /H20850for the supercooled liquid.
+6. Calculations at Other Pressures
+It may be of interest to calculate the properties considered
+here at pressures other than 0.1 MPa, such as the often-used
+standard atmospheric pressure of 0.101 325 MPa. The for-
+mulations for viscosity, thermal conductivity, and static di-
+electric constant /H20851Eqs. /H208497/H20850, /H208499/H20850, and /H2084911/H20850/H20852given here may be
+used for liquid water at any pressure between the vapor-
+liquid saturation pressure and 0.3 MPa with no signiﬁcant
+loss in accuracy /H20849since the change in property due to the
+change in pressure is smaller by more than an order of mag-
+nitude than the uncertainty of the property itself /H20850.
+For some thermodynamic properties, additional calcula-
+tions beyond the level of the basic Eqs. /H208492/H20850–/H208494/H20850may be nec-
+essary to maintain the required accuracy at pressures differ-
+ing from 0.1 MPa. These calculations are described in Secs.
+2.4 and 2.5.
+7. Discussion
+Correlations have been developed for the thermodynamic
+properties, viscosity, thermal conductivity, and static dielec-
+tric constant of liquid water at a pressure of 0.1 MPa. These
+correlations are much simpler than the more comprehensive
+and wide-ranging IAPWS formulations for these properties
+while retaining the same accuracy.
+The same strategy could be applied to other IAPWS for-
+mulations, such as those for the refractive index
+23,24 and the
+ionization constant of water. 25,26 However, the work pre-
+sented here can already simplify the calculation of other
+properties. The IAPWS formulations are functions of inde-
+pendent variables temperature and density /H20849and wavelength,
+in the case of the refractive index /H20850. Previously, calculation of
+a property at a pressure such as 0.1 MPa required iteratively
+solving the IAPWS-95 formulation for density. Now, Eq. /H208493/H20850
+can be used to calculate the density in a straightforward man-
+ner, and this density can be input along with the temperature
+to calculate these additional properties.
+FIG. 7. Deviation of accepted dielectric-constant data from Eq. /H2084911/H20850.
+TABLE 7. Parameters for calculation of static dielectric constant with Eq.
+/H2084911/H20850
+ie i fi
+1 −43.7527 −0.05
+2 299.504 −1.47
+3 −399.364 −2.11
+4 221.327 −2.31
+28 PÁTEK ET AL.
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions
+
+For purposes of computer-program veriﬁcation, Table 8
+contains values of properties calculated at three different
+temperatures from the correlations presented here.
+8. Acknowledgments
+This project was originally inspired by a suggestion from
+J. M. H. Levelt Sengers. We thank J. V . Sengers, K. Miya-
+gawa, and R. Mareš for their work as the Evaluation Task
+Group during the consideration of this work by IAPWS. We
+also thank M. R. Moldover for helpful discussion of
+dielectric-constant measurements and E. W. Lemmon for as-
+sistance in ﬁtting Eqs. /H208497/H20850, /H208499/H20850, and /H2084911/H20850. The authors afﬁli-
+ated with the Institute of Thermomechanics acknowledge
+support from Grant No. IAA200760701 of the Grant Agency
+of the AS CR and the Research Plan of the Institute of Ther-
+momechanics No. A V0Z20760514.
+1 International Association for the Properties of Water and Steam, Release
+on the IAPWS Formulation 1995 for the Thermodynamic Properties of
+Ordinary Water Substance for General and Scientiﬁc Use , available at
+www.iapws.org /H208491996/H20850.
+2 W. Wagner and A. Pruß, J. Phys. Chem. Ref. Data 31, 387 /H208492002/H20850.
+3 International Association for the Properties of Water and Steam, Release
+on the IAPWS Formulation 2008 for the Viscosity of Ordinary Water
+Substance, available at www.iapws.org /H208492008/H20850.
+4 M. L. Huber, R. A. Perkins, A. Laesecke, D. G. Friend, J. V . Sengers, M.
+J. Assael, I. M. Metaxa, E. V ogel, R. Mareš, and K. Miyagawa, J. Phys.
+Chem. Ref. Data /H20849unpublished/H20850.
+5 International Association for the Properties of Water and Steam, Revised
+Release on the IAPS Formulation 1985 for the Thermal Conductivity of
+Ordinary Water Substance , available at www.iapws.org /H208492008/H20850.
+6 J. V . Sengers and J. T. R. Watson, J. Phys. Chem. Ref. Data 15, 1291
+/H208491986/H20850.
+7 International Association for the Properties of Water and Steam, Release
+on the Static Dielectric Constant of Ordinary Water Substance for Tem-
+peratures from 238 K to 873 K and Pressures up to 1000 MPa, available
+at www.iapws.org /H208491997/H20850.
+8 D. P . Fernández, A. R. H. Goodwin, E. W. Lemmon, J. M. H. Levelt
+Sengers, and R. C. Williams, J. Phys. Chem. Ref. Data 26, 1125 /H208491997/H20850.
+9 G. S. Kell, J. Phys. Chem. Ref. Data 6, 1109 /H208491977/H20850.
+10 International Association for the Properties of Water and Steam, Supple-
+mentary Release on Properties of Liquid Water at 0.1 MPa, available at
+www.iapws.org /H208492008/H20850.
+11 International Association for the Properties of Water and Steam, Guide-
+line on the Use of Fundamental Physical Constants and Basic Constants
+of Water, available at www.iapws.org /H208492008/H20850.
+12 A. H. Harvey, S. G. Kaplan, and J. H. Burnett, Int. J. Thermophys. 26,
+1495 /H208492005/H20850.
+13 International Association for the Properties of Water and Steam, Revised
+Release on the IAPWS Industrial Formulation 1997 for the Thermody-
+namic Properties of Water and Steam , available at www.iapws.org
+/H208492007/H20850.
+14 W. Wagner, J. R. Cooper, A. Dittmann, J. Kijima, H.-J. Kretzschmar, A.
+Kruse, R. Mareš, K. Oguchi, H. Sato, I. Stöcker, O. Šifner, Y . Takaishi, I.
+Tanishita, J. Trübenbach, and Th. Willkommen, J. Eng. Gas Turbines
+Power 122, 150 /H208492000/H20850.
+15 M. Tanaka, G. Girard, R. Davis, A. Peuto, and N. Bignell, Metrologia 38,
+301 /H208492001/H20850.
+16 A. H. Harvey, R. Span, K. Fujii, M. Tanaka, and R. S. Davis, Metrologia
+/H20849in press /H20850.
+17 International Organization for Standardization /H20849ISO/H20850Technical Report
+No. 3666 /H208491998/H20850.
+18 J. Hamelin, J. B. Mehl, and M. R. Moldover, Int. J. Thermophys. 19,
+1359 /H208491998/H20850.
+19 A. H. Harvey, A. P . Peskin, and S. A. Klein, NIST/ASME Steam Proper-
+ties /H20849NIST Standard Reference Database 10 /H20850, V ersion 2.21 /H20849National In-
+stitute of Standards and Technology, Gaithersburg, MD, 2004 /H20850.
+20 I. M. Hodge and C. A. Angell, J. Chem. Phys. 68, 1363 /H208491978/H20850.
+21 D. Bertolini, M. Cassettari, and G. Salvetti, J. Chem. Phys. 76,3 2 8 5
+/H208491982/H20850.
+22 P . O. Risman and B. Wäppling-Raaholt, Meas. Sci. Technol. 18,9 5 9
+/H208492007/H20850.
+23 International Association for the Properties of Water and Steam, Release
+on the Refractive Index of Ordinary Water Substance as a Function of
+Wavelength, Temperature, and Pressure , available at www.iapws.org
+/H208491997/H20850.
+24 A. H. Harvey, J. S. Gallagher, and J. M. H. Levelt Sengers, J. Phys.
+Chem. Ref. Data 27, 761 /H208491998/H20850.
+25 International Association for the Properties of Water and Steam, Release
+on the Ionization Constant of H2O, available at www.iapws.org /H208492007/H20850.
+26 A. V . Bandura and S. N. Lvov, J. Phys. Chem. Ref. Data 35,1 5 /H208492006/H20850.
+TABLE 8. Sample points for computer-program veriﬁcation of calculated properties at 0.1 MPa
+Property Units
+V alue at
+260 K
+V alue at
+298.15 K
+V alue at
+375 K
+Gibbs energy g0 Jk g−1 −1 265.989 2 −4 561.753 7 −71 058.802 1
+Entropy s0 Jk g−1 K−1 −209.985 55 367.201 45 1 328.066 16
+Isobaric heat capacity cp0 Jk g−1 K−1 4 300.147 72 4 181.446 18 4 217.746 97
+Density /H92670 =1 / v0 kg m−3 997.068 360 997.047 013 957.009 710
+107vT0 m3 kg−1 K−1 −3.865 509 41 2.580 541 78 7.947 066 23
+108vTT0 m3 kg−1 K−2 3.274 425 03 0.972 020 76 0.620 241 04
+1013vp0 m3 kg−1 Pa−1 −5.820 968 20 −4.538 033 40 −5.156 665 28
+1015vpT0 m3 kg−1 Pa−1 K−1 7.809 382 94 1.000 385 67 −2.270 735 94
+Speed of sound w0 ms −1 1 324.872 58 1 496.699 22 1 541.466 11
+Viscosity /H9262/H9262 Pa s 3 058.360 75 889.996 774 276.207 245
+Thermal conductivity /H9261Wm −1 K−1 n/a 0.607 198 237 0.679 647 057
+Static dielectric constant /H9255/H20849unitless/H20850 93.455 835 78.375 218 55.266 199
+PROPERTIES OF LIQUID WATER AT 0.1 MPA 29
+J. Phys. Chem. Ref. Data, Vol. 38, No. 1, 2009
+Downloaded 18 Mar 2013 to 129.6.105.191. Redistribution subject to AIP license or copyright; see http://jpcrd.aip.org/about/rights_and_permissions

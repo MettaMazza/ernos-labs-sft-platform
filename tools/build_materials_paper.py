@@ -16,6 +16,7 @@ from sft.engine.canonical import sha256_identity  # noqa: E402
 from sft.materials.external_bindings import BINDING_BY_CLAIM  # noqa: E402
 from sft.materials.generated_law import MATERIALS_SPECS  # noqa: E402
 from sft.materials.sources import SOURCE_BY_ID  # noqa: E402
+from sft.materials.successor_evidence import BINDINGS as SUCCESSOR_BINDINGS, SOURCE_BY_ID as SUCCESSOR_SOURCE_BY_ID, SPECS as SUCCESSOR_SPECS  # noqa: E402
 from sft.materials.structural_counts import (  # noqa: E402
     acoustic_branch_census,
     allowed_crystallographic_orders,
@@ -25,6 +26,7 @@ from sft.materials.structural_counts import (  # noqa: E402
     simple_cubic_neighbours,
 )
 from sft.materials.v2_reconciliation import V2_MATERIALS_QUESTIONS  # noqa: E402
+from tools.publication_series_voice import open_science_position  # noqa: E402
 
 
 INVENTORY = ROOT / "publications/inventories/materials.json"
@@ -101,8 +103,12 @@ def claim_block(order: int, spec, level: int = 3) -> str:
     certificate = read(root / "certificate.json")
     empirical = read(root / "empirical_validation.json")
     census_row = next(row for row in read(CENSUS)["claims"] if row["claim_id"] == claim_id)
-    binding = BINDING_BY_CLAIM[claim_id]
-    source_rows = [SOURCE_BY_ID[source_id] for source_id in spec.source_ids]
+    if claim_id in BINDING_BY_CLAIM:
+        binding_requirements = BINDING_BY_CLAIM[claim_id].requirements
+        source_rows = [SOURCE_BY_ID[source_id] for source_id in spec.source_ids]
+    else:
+        binding_requirements = SUCCESSOR_BINDINGS[claim_id]
+        source_rows = [SUCCESSOR_SOURCE_BY_ID[source_id] for source_id in spec.source_ids]
     witness_text = "\n".join(
         f"- `{name}`: {description}; passed `{str(passed).lower()}`."
         for name, description, passed in spec.operational_witnesses
@@ -112,10 +118,14 @@ def claim_block(order: int, spec, level: int = 3) -> str:
         for row in controls
     )
     source_text = "\n".join(
-        f"- `{row.source_id}` - {row.body}; [{row.source_uri}]({row.source_uri}); snapshot `{row.snapshot_path}`; `{row.snapshot_hash}`; scope: {row.evidence_scope}."
+        f"- `{row.source_id}` - {row.body if hasattr(row, 'body') else 'National Institute of Standards and Technology'}; "
+        f"[{row.source_uri if hasattr(row, 'source_uri') else row.uri}]({row.source_uri if hasattr(row, 'source_uri') else row.uri}); "
+        f"snapshot `{row.snapshot_path if hasattr(row, 'snapshot_path') else row.path}`; "
+        f"`{row.snapshot_hash if hasattr(row, 'snapshot_hash') else row.digest}`; scope: "
+        f"{row.evidence_scope if hasattr(row, 'evidence_scope') else 'post-seal claim-specific authoritative comparison'}."
         for row in source_rows
     )
-    fragment_identity = sha256_identity(tuple((row.source_id, row.fragment) for row in binding.requirements))
+    fragment_identity = sha256_identity(tuple((row.source_id, row.fragment) for row in binding_requirements))
     heading = "#" * level
     return f"""{heading} {order}. {spec.title}
 
@@ -161,7 +171,7 @@ Closure scope: `{certificate['closure_scope']}`. Minimality and named-shape uniq
 
 **Independent implementation.** The implementation-distinct validator regenerated the literal eight-axis product, candidate order, all decisions, one survivor, closure fields and four control classes. Implementation hash `{certificate['independent_implementation_hash']}`; certificate `{certificate['independent_certificate_hash']}`; external-validation hash `{certificate['external_validation_hash']}`.
 
-**Post-seal empirical correspondence.** The complete 84-law prediction set was sealed before any Materials source identity was selected. For this claim, `{len(binding.requirements)}` claim-specific source discriminators were required; their ordered identity is `{fragment_identity}`. Target content opened after the derivation seal: `{str(empirical['target_opened_after_seal']).lower()}`. All rows preserved: `{str(empirical['all_rows_preserved']).lower()}`. Exact comparison passed: `{str(empirical['passed']).lower()}`. The deliberately changed unfavorable record was rejected.
+**Post-seal empirical correspondence.** This claim belonged either to the original complete 84-law seal or the complete eight-law V1/V2 reconciliation seal; in both cases its entire prediction family was fixed before its external source identities were selected. For this claim, `{len(binding_requirements)}` claim-specific source discriminators were required; their ordered identity is `{fragment_identity}`. Target content opened after the derivation seal: `{str(empirical['target_opened_after_seal']).lower()}`. All rows preserved: `{str(empirical['all_rows_preserved']).lower()}`. Exact comparison passed: `{str(empirical['passed']).lower()}`. The deliberately changed unfavorable record was rejected.
 
 Measurement-body sources:
 
@@ -177,14 +187,14 @@ Falsification boundary: {clean(empirical['falsification_condition'])}
 
 {bullets(registration['excluded_inputs'])}
 
-**Immutable evidence identities.** Pre-source branch seal `{certificate['pre_source_complete_branch_seal']}`; source manifest `{certificate['source_manifest_hash']}`; derivation seal `{certificate['derivation_seal_hash']}`; engine receipt `{census_row['receipt_hash']}` at `{census_row['receipt_path']}`; empirical validation `{certificate['empirical_validation_hash']}`; measurement receipt `{certificate['measurement_receipt_hash']}`; isolation `{empirical['isolation_certificate']['certificate_hash']}`; custody `{empirical['target_custody_certificate']['certificate_hash']}`.
+**Immutable evidence identities.** Pre-source branch seal `{certificate.get('pre_source_complete_branch_seal', certificate.get('pre_source_complete_successor_seal'))}`; source manifest `{certificate['source_manifest_hash']}`; derivation seal `{certificate['derivation_seal_hash']}`; engine receipt `{census_row['receipt_hash']}` at `{census_row['receipt_path']}`; empirical validation `{certificate['empirical_validation_hash']}`; measurement receipt `{certificate['measurement_receipt_hash']}`; isolation `{empirical['isolation_certificate']['certificate_hash']}`; custody `{empirical['target_custody_certificate']['certificate_hash']}`.
 """
 
 
 def main() -> None:
     inventory = read(INVENTORY)
     metadata = read(METADATA)
-    if inventory["required_claim_count"] != 84 or inventory["admitted_claim_count_at_freeze"] != 84:
+    if inventory["required_claim_count"] != 92 or inventory["admitted_claim_count_at_freeze"] != 92:
         raise SystemExit("Materials inventory is not completely admitted")
     if any(row["status"] != "model_admitted" for row in inventory["obligations"]):
         raise SystemExit("Materials inventory contains an unadmitted obligation")
@@ -197,11 +207,32 @@ def main() -> None:
         if authorized else
         "**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this file performs no push, upload or publication."
     )
+    mission = open_science_position(
+        "For Materials Science, an attractive specimen, vendor datasheet or selected favorable measurement cannot stand "
+        "for a material law. Carrier, composition, phase, microstructure, preparation, direction, scale, method and condition "
+        "remain in the observation record. Exact structural counts are stated as exact; variable magnitudes remain bound to "
+        "their measured specimen rather than being promoted into fictitious universal constants."
+    )
     sections = [f"""# From Fold to Materials
+
+**Materials Science Branch Paper 001, version 1.2.0 — Smithian Fold Theory V3 Clean-Room Reconstruction**
 
 ## Abstract
 
-This paper reports the complete Materials Science branch of the third clean-room reconstruction of Smithian Fold Theory. The frozen inventory contains 84 obligations in ten ordered subbranches. Their exact grammars execute 21,504 candidates and 21,504 one-for-one decisions, yielding 84 unique survivors, 84 depth-independent closure certificates, 336 passing adverse controls, 84 implementation-distinct reconstructions and 84 post-seal NIST/BIPM correspondence checks. All 84 dependency graphs reach the single premise-free root theorem. The whole prediction surface was sealed before any external Materials source identity was selected. Exact structural consequences include six simple-cubic neighbours; periodic rotation orders one, two, three, four and six with five excluded; seven crystal systems; fourteen Bravais classes; and three acoustic branches. Material-property magnitudes that vary with specimen, method, direction, scale, history or conditions remain conditional records and are not presented as universal constants.
+This paper reports the Materials Science foundation of the third clean-room reconstruction of Smithian Fold Theory at its current-evidence-closed, extension-open boundary. The frozen successor inventory contains 92 obligations in ten ordered subbranches. Their exact grammars execute 23,552 candidates and 23,552 one-for-one decisions, yielding 92 unique survivors, 92 depth-independent closure certificates, 368 passing adverse controls, 92 implementation-distinct reconstructions and 92 post-seal NIST/BIPM correspondence checks. All 92 dependency graphs reach the single premise-free root theorem. The original 84-law surface and the subsequent eight-law V1/V2 atomic-reconciliation surface were each sealed in full before their external target identities were selected. Headline exact results include six simple-cubic neighbours; periodic rotation orders one, two, three, four and six with five excluded; seven crystal systems; fourteen Bravais classes; three acoustic displacement orientations; exact two-label aperiodic substitution without a positive rational fixed scale; shared acoustic and opposed optical basis modes; rank-three cube-count thermal support; p-n rectification without signed proof values; superconducting isotope-response provenance; ferrimagnetic unequal-sublattice residual support; integer and primary reduced odd-denominator Hall classes with even-denominator observations explicitly retained outside that primary hierarchy; exact positive-whole topological edge-class gaps; and a source-bound water bulk-property ledger including boiling, liquid/solid density and heat capacity.
+
+## Results first: exact materials classifications
+
+| Headline result | Exact result | Empirical and scientific meaning |
+|---|---|---|
+| Simple-cubic nearest adjacency | `3` spatial generators x `2` held orientations = `6` neighbours | The full adjacency count is forced without signed coordinates and agrees with the registered crystallographic source boundary. |
+| Crystallographic rotation restriction | Allowed positive orders are exactly `1, 2, 3, 4, 6`; `5` is the least excluded order | A depth-independent factor certificate replaces trigonometric approximation; the standard crystallographic restriction is recovered after sealing. |
+| Crystal systems | Exactly `7` rotation-compatible rank-three metric quotient classes | The complete `3 x 4` length/angle grammar is enumerated and quotient compatibility retains seven. |
+| Bravais classes | Exactly `14` survivors from `7 x 5 = 35` system/centering candidates | Basis and centering compatibility eliminate the other 21 candidates; the standard classification is a post-derivation correspondence. |
+| Acoustic branches | Exactly `3`: one longitudinal and two transverse | A held propagation orientation consumes one of the three spatial orientations and leaves two independent cross-axis orientations. |
+| Complete branch evidence | 92 laws, 23,552 candidates, 92 survivors, 368 adverse controls, 92 independent reconstructions and 92 post-seal NIST/BIPM checks | Structural results and specimen-dependent measurements are not mixed. Each external comparison preserves method, scale, condition, uncertainty and falsification rows. |
+
+{mission}
 
 ## 1. Publication, authorship and open-science boundary
 
@@ -221,11 +252,11 @@ Structural absence is empty One, never numerical zero. Counts are generated posi
 
 ## 4. Dependency spine to the root theorem
 
-Each Materials registration has `root_theorems=(SFT-ROOT-THERE-IS-NO-NOTHING,)`, zero axioms and zero free parameters. Dependencies are accepted only when their immutable model-admission receipts already exist. A separate graph traversal over the materialized registrations confirms 84 of 84 paths reach the root. The path runs through the independently admitted Foundation, Mathematics, Information Science, Physics and Chemistry receipts named in each claim section; no branch name substitutes for an actual dependency identity.
+Each Materials registration has `root_theorems=(SFT-ROOT-THERE-IS-NO-NOTHING,)`, zero axioms and zero free parameters. Dependencies are accepted only when their immutable model-admission receipts already exist. A separate graph traversal over the materialized registrations confirms 92 of 92 paths reach the root. The path runs through the independently admitted Foundation, Mathematics, Information Science, Physics and Chemistry receipts named in each claim section; no branch name substitutes for an actual dependency identity.
 
 ## 5. Complete pre-source seal
 
-Before NIST or BIPM source identities were chosen, V3 froze the 84 obligations, the exact counting module and the 84 target-blind blueprints. The seal records 21,504 candidates, hashes all three source files and binds every `(claim identity, exact result, prediction label)` tuple. It expressly records that source identities were unselected and target content unopened. Its sealed payload hash is `sha256:da97a6cb6a001964a069b45a5a3698e7ea90f334a08d69c62bd09c46d8112035` and its prediction-set hash is `sha256:ed531eccac30f6915908052ced79e3875d8faf75c1add9eec48c7360d9f6a1e7`.
+Before NIST or BIPM source identities were chosen, V3 froze the original 84 obligations, exact counting module and target-blind blueprints. That seal records 21,504 candidates and remains `sha256:da97a6cb6a001964a069b45a5a3698e7ea90f334a08d69c62bd09c46d8112035`. The later atomic V1/V2 audit exposed eight nonduplicative Materials-owned omissions. Before selecting any new source identity, V3 froze all eight successor obligations together, 2,048 candidates and their complete prediction set under `sha256:0e8d7f14a7389b7ec44a37205ce2c9074db65f7b6ed5a466b97f2a01418ef331`. Both seals expressly record that source identities were unselected and target content unopened.
 
 ## 6. Single fail-closed engine
 
@@ -233,7 +264,7 @@ For each claim, the engine verifies registration, source identity, admitted depe
 
 ## 7. Empirical method
 
-Thirty-three byte-frozen records from NIST and BIPM/JCGM supply the independent external boundary. Each claim requires at least two claim-specific discriminators. The predictor cannot read filesystem, network, clock, environment, subprocess, dynamic import or foreign functions. A distinct custodian opens source content only after sealing, verifies every snapshot hash and required feature, constructs the registered observation record and releases it through the portable custody exchange. External authority may falsify a correspondence but cannot alter the already sealed grammar or survivor.
+Forty-two registered byte-frozen records from NIST and BIPM/JCGM supply the independent external boundary across the original and successor seals. Each claim requires at least two claim-specific discriminators. The predictor cannot read filesystem, network, clock, environment, subprocess, dynamic import or foreign functions. A distinct custodian opens source content only after sealing, verifies every snapshot hash and required feature, constructs the registered observation record and releases it through the portable custody exchange. External authority may falsify a correspondence but cannot alter the already sealed grammar or survivor.
 
 This branch distinguishes exact structural counts from specimen-dependent magnitudes. Six neighbours, allowed rotation orders, seven systems, fourteen Bravais classes and three acoustic branches are exact count/classification claims. Elastic moduli, conductivities, strengths, transition temperatures and analogous quantities depend on material identity, preparation, direction, scale, method and condition; the Fold laws force those dependencies and ledgers, not one fictitious number for every material.
 
@@ -267,7 +298,7 @@ Every claim section below records the theorem, exact dependency identities, gram
     order = 1
     for subbranch in inventory["subbranch_order"]:
         sections.append(f"\n## {section}. {subbranch.replace('_', ' ').title()}\n\n{SUBBRANCH_INTRO[subbranch]}\n")
-        for spec in (row for row in MATERIALS_SPECS if row.subbranch == subbranch):
+        for spec in (row for row in MATERIALS_SPECS + SUCCESSOR_SPECS if row.subbranch == subbranch):
             sections.append(claim_block(order, spec))
             order += 1
         section += 1
@@ -278,6 +309,9 @@ Every claim section below records the theorem, exact dependency identities, gram
     source_rows = "\n".join(
         f"- `{row.source_id}` - [{row.source_uri}]({row.source_uri}); snapshot `{row.snapshot_path}`; `{row.snapshot_hash}`; {row.evidence_scope}."
         for row in SOURCE_BY_ID.values()
+    ) + "\n" + "\n".join(
+        f"- `{row.source_id}` - [{row.uri}]({row.uri}); snapshot `{row.path}`; `{row.digest}`; post-seal claim-specific authoritative comparison."
+        for row in SUCCESSOR_SOURCE_BY_ID.values()
     )
     sections.append(f"""
 ## {section}. Integrated reconciliation table
@@ -290,7 +324,7 @@ Every claim section below records the theorem, exact dependency identities, gram
 
 ## {section + 2}. Reproducibility and falsification
 
-The repository's one-command validation route parses every schema, verifies snapshot and source hashes, checks the frozen inventory, exercises the engine and replays every admitted execution manifest entry. The Materials publication gate separately requires all 84 evidence packages, complete candidate/decision parity, one survivor each, four passing controls each, 84 empirical validations, paper inclusion of each receipt identity, the pre-source seal, V2 reconciliation, evidence maps and a rendered PDF.
+The repository's one-command validation route parses every schema, verifies snapshot and source hashes, checks the frozen inventory, exercises the engine and replays every admitted execution manifest entry. The Materials publication gate separately requires all 92 evidence packages, complete candidate/decision parity, one survivor each, four passing controls each, 92 empirical validations, paper inclusion of each receipt identity, both pre-source seals, atomic V1/V2 reconciliation, evidence maps and a rendered PDF.
 
 The branch fails if any registered source hash changes without an explicit new version, any required discriminator is absent, any prediction opens a target before sealing, any row is omitted, any tampered record passes, any dependency no longer resolves to the root, any census is incomplete, any claim has other than one survivor, or an independent validator fails to reconstruct the result.
 
@@ -304,7 +338,7 @@ The branch fails if any registered source hash changes without an explicit new v
 
 ## {section + 4}. Conclusion
 
-The Materials branch is complete at its frozen V3 boundary: 84 required laws, 21,504 exact candidates and decisions, 84 unique survivors, 336 adverse controls, 84 independent reconstructions, 84 post-seal authority checks and 84 root traces. The result is an openly inspectable computational account of material identity, organization, defects, collective response, classes, processing, degradation and function. Its evidential authority lies in the complete public chain from the premise-free root theorem to immutable receipts and falsifiable external checks.
+The Materials foundation is current-evidence closed and extension-open at its frozen V3 successor boundary: 92 required laws, 23,552 exact candidates and decisions, 92 unique survivors, 368 adverse controls, 92 independent reconstructions, 92 post-seal authority checks and 92 root traces. The result is an openly inspectable computational account of material identity, organization, defects, collective response, classes, processing, degradation and function. Later lawful discoveries may extend or falsify this boundary; they may not be excluded merely because the present census is complete. Its evidential authority lies in the complete public chain from the premise-free root theorem to immutable receipts and falsifiable external checks.
 
 ## {section + 5}. Publication and repository links
 
@@ -330,7 +364,6 @@ The Materials branch is complete at its frozen V3 boundary: 84 required laws, 21
     rendered = "\n".join(sections).rstrip() + "\n"
     PAPER.parent.mkdir(parents=True, exist_ok=True)
     PAPER.write_text(rendered, encoding="utf-8")
-    (ROOT / "README.md").write_text(rendered, encoding="utf-8")
     print(f"built {PAPER.relative_to(ROOT)} with {order - 1} exhaustive claim sections")
 
 

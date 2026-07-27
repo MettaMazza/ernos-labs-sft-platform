@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-MAT-BULK-WATER-RESPONSE-002",
+  "complete_successor_pre_source_seal": {
+    "all_eight_predictions_sealed_before_source_selection": true,
+    "hash": "sha256:0e8d7f14a7389b7ec44a37205ce2c9074db65f7b6ed5a466b97f2a01418ef331",
+    "path": "experiments/sealed_predictions/materials_v1_v2_successor_complete_pre_source.json"
+  },
+  "controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary",
+    "unfavorable_measurement"
+  ],
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-MAT-BULK-WATER-RESPONSE-002",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:ba9fc5225bc8d0d89cbe15703bff2d9dc06ef64244598c420c7666931f1befbf",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-water-complete-2026-07-27.html",
+      "source_id": "NIST-WATER-THERMOPHYSICAL-2026-07-27",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=FFF&Units=CAL"
+    },
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:b3af256bcffd7ff87fbf2aa00f545910a531d5a1b285fa9bb9f926f7afad9e24",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-liquid-water-properties-2026-07-27.txt",
+      "source_id": "NIST-LIQUID-WATER-DENSITY-2026-07-27",
+      "source_uri": "https://www.nist.gov/document/jpcrd38200921ppdf"
+    },
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:7073b61255cf73163595c9ca25646dcf2c323dd2aca942d797f9f0e4dd6c178e",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-ice-properties-2026-07-27.txt",
+      "source_id": "NIST-ICE-DENSITY-2026-07-27",
+      "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=926353"
+    }
+  ],
+  "frozen_relation": {
+    "relation_hash": "sha256:47bbd25c3ff681311f41144d441118c883c16afdb65b65a2934c0a6a21736170",
+    "statement": "molecular-network-and-bulk-specimen-carrier__intermolecular-organization-to-bulk-response-relation__phase-density-boiling-and-heat-capacity-records-retained__identity-condition-method-and-uncertainty-bounded__complete-state-transition-boundary-trace__root-bound-forward-forcing__positive-finite-successor-closure__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "required_source_features": [
+    {
+      "required_fragment": "373.17",
+      "source_id": "NIST-WATER-THERMOPHYSICAL-2026-07-27"
+    },
+    {
+      "required_fragment": "liquid phase heat capacity",
+      "source_id": "NIST-WATER-THERMOPHYSICAL-2026-07-27"
+    },
+    {
+      "required_fragment": "997.068 360",
+      "source_id": "NIST-LIQUID-WATER-DENSITY-2026-07-27"
+    },
+    {
+      "required_fragment": "0 0.9167",
+      "source_id": "NIST-ICE-DENSITY-2026-07-27"
+    }
+  ],
+  "status": "registered",
+  "stop_condition": "Halt on any violation; otherwise stop after every registered row and control is evaluated once.",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "target_id": "sft-mat-bulk-water-response-002-external"
+    }
+  ]
+}

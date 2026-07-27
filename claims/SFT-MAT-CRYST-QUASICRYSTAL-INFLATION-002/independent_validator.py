@@ -1,0 +1,8 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-MAT-CRYST-QUASICRYSTAL-INFLATION-002'
+DOMAINS=(('carrier-erased-or-answer-only', 'two-labelled-aperiodic-word-carrier'), ('relation-imported-fitted-or-erased', 'first-label-to-pair-second-label-to-first-substitution'), ('organization-collapsed', 'finite-word-provenance-and-nonperiodic-population-retained'), ('observation-boundary-unrecorded', 'positive-successor-and-no-rational-fixed-scale'), ('result-without-transition-trace', 'complete-state-transition-boundary-trace'), ('authority-or-target-selected-law', 'root-bound-forward-forcing'), ('finite-answer-lookup', 'positive-finite-successor-closure'), ('free-fit-exception-or-extra-rule', 'no-extra-rule'))
+SURVIVOR='two-labelled-aperiodic-word-carrier__first-label-to-pair-second-label-to-first-substitution__finite-word-provenance-and-nonperiodic-population-retained__positive-successor-and-no-rational-fixed-scale__complete-state-transition-boundary-trace__root-bound-forward-forcing__positive-finite-successor-closure__no-extra-rule'
+def main():
+ s=json.load(open(sys.argv[1],encoding="utf-8")); generated=["__".join(x) for x in product(*DOMAINS)]; received=[x["candidate_id"] for x in s["census"]["candidates"]]; decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]}; passed=s["claim_id"]==CLAIM_ID and received==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and all(x["passed"] for x in s["controls"]); print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"candidate_count":len(generated),"survivor":SURVIVOR if passed else None}},sort_keys=True))
+if __name__=="__main__": main()

@@ -1,0 +1,59 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-SEMI-RECTIFICATION-002",
+  "data_source_ids": [
+    "NIST-PN-RECTIFICATION-2026-07-27"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5d4a62693cd1936e1ecda20f23ea5f1ad51fe04e48a77e5dd8515a48f4659782",
+  "falsification_condition": "The claim fails if any registered carrier, relation, organization or observation feature is absent, any required external row fails, or any tampered row is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:65b5f7ae534d603f11f917cc1061ba772035490b6a36f4e51b868a596df904b4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e5ff4abb2eabeb3dad677908e14ffb16d898f61adac1e8e1c161cfd145ae7302",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-SEMI-RECTIFICATION-002-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:aa95d9f24c1e14b5d9388c3b5a0a4b4e6d9728a31f3a591fb6fa0361818b1d07",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ff9f1aa529fa6f6b79f507302de2b28a01043395fb942b0489c69aa6a5a105ca",
+    "prediction_seal_hash": "sha256:f06729c87edf24c9ebb457bedc902dc2e4554e95b7e4f408968377fec77bcb3e",
+    "program_hash": "sha256:7ce5072ac634caf77730fee1c6a99c67d48bd350c66c6e8581e64faae2041299",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0354c8f18f0c772e84fd8f010c4ab208757a0687497494373d3902d3eacf800b",
+    "target_material_present": false,
+    "trace_hash": "sha256:4863aa2dc72383a19564ead7109de04cbe34c76b69f7c8beaaeb9f1cce5ca95a"
+  },
+  "measurement_receipt_hash": "sha256:06c4e475020998315f98335528e79fcb642bc1176030bca0f7f729022ac026b9",
+  "measurements": [
+    "sealed prediction equals complete source-derived observation: True",
+    "all registered rows preserved",
+    "tampered changed label rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e970053159f8be987db9dd34005e22f72951151146d54ed1a9a82ab1bf89168a",
+    "custodian_id": "SFT-EXP-MAT-SEMI-RECTIFICATION-002-custodian",
+    "experiment_registration_hash": "sha256:5d4a62693cd1936e1ecda20f23ea5f1ad51fe04e48a77e5dd8515a48f4659782",
+    "prediction_seal_hash": "sha256:f06729c87edf24c9ebb457bedc902dc2e4554e95b7e4f408968377fec77bcb3e",
+    "registered_target_identity_hash": "sha256:0354c8f18f0c772e84fd8f010c4ab208757a0687497494373d3902d3eacf800b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:770171fd3c2f5987331c26693359da12d12662f75eb2c115052c6a03646e803e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:4235421a299754c0130b0539c84de12ccc13f420cb83c72cd00d73bc69c6ee34"
+}

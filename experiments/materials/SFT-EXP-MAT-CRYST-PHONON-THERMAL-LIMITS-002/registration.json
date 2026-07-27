@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-MAT-CRYST-PHONON-THERMAL-LIMITS-002",
+  "complete_successor_pre_source_seal": {
+    "all_eight_predictions_sealed_before_source_selection": true,
+    "hash": "sha256:0e8d7f14a7389b7ec44a37205ce2c9074db65f7b6ed5a466b97f2a01418ef331",
+    "path": "experiments/sealed_predictions/materials_v1_v2_successor_complete_pre_source.json"
+  },
+  "controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary",
+    "unfavorable_measurement"
+  ],
+  "evidence_mode": "blind_authoritative_correspondence",
+  "experiment_id": "SFT-EXP-MAT-CRYST-PHONON-THERMAL-LIMITS-002",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:208d3ff48584c6548ccb00d3b1559ba63d66b1fabe027af9bb499504d5cad64b",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-phonon-thermal-limits-2026-07-27.txt",
+      "source_id": "NIST-PHONON-THERMAL-LIMITS-2026-07-27",
+      "source_uri": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication960-11.pdf"
+    }
+  ],
+  "frozen_relation": {
+    "relation_hash": "sha256:778823af2bd30b4fcf19ae4cc0b65de7f367213c9def364781ace5d7065c9a8f",
+    "statement": "rank-three-labelled-displacement-carrier__shared-and-opposed-basis-displacement-relation__acoustic-optical-and-complete-mode-support-retained__gapless-shared-mode-and-rank-three-cube-count__complete-state-transition-boundary-trace__root-bound-forward-forcing__positive-finite-successor-closure__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "required_source_features": [
+    {
+      "required_fragment": "onelongitudinalmodeandthetwoshear",
+      "source_id": "NIST-PHONON-THERMAL-LIMITS-2026-07-27"
+    },
+    {
+      "required_fragment": "dulongandpetitlimit",
+      "source_id": "NIST-PHONON-THERMAL-LIMITS-2026-07-27"
+    }
+  ],
+  "status": "registered",
+  "stop_condition": "Halt on any violation; otherwise stop after every registered row and control is evaluated once.",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "target_id": "sft-mat-cryst-phonon-thermal-limits-002-external"
+    }
+  ]
+}

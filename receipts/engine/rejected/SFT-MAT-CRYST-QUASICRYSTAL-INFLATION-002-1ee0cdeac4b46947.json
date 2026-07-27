@@ -1,0 +1,58 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-MAT-CRYST-QUASICRYSTAL-INFLATION-002",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:74e24fa7015fdf938f5de95b091a1aa9b2a6580f3bed00f373782f9640d4ccf2",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": "sha256:5654f7e3c37abb78b5164fb96b3a94fb7e33de87a688ecb16c404de02840c39d",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "empirical validator raised: unsealed_isolation_certificate() takes 0 positional arguments but 11 were given",
+      "gate": "empirical_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "empirical_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:1ee0cdeac4b46947db406b528a8a39d5a1be3cd929c5eb42442b6ccf0d79b3d9",
+  "violations": [
+    "empirical validator raised: unsealed_isolation_certificate() takes 0 positional arguments but 11 were given"
+  ]
+}
