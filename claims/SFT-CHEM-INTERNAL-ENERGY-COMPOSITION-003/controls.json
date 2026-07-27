@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-INTERNAL-ENERGY-COMPOSITION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:e9f9f220534c3ab22f9ac7b0e43ba0366d5bb8daeca378b1c3463660116f568c"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ac25cd920ca675a39afb321f926b0536aa9556c87516c2521c361a900b926f36"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:78a09cd905908aec930c816bf4003e9d3805f8b80b3ee4885f5e47b267c5959b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:375bcb57f0477b03ee3b23feaa7a6f9924c85f62f4dc5dad2f3ec753201f07c8"
+    }
+  ]
+}

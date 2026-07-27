@@ -1,0 +1,60 @@
+{
+  "schema": "sft-v3-ligand-denticity-chelation-prefetch-specification/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-INORG-003",
+  "claim_id": "SFT-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003",
+  "fixed_before_source_capture": true,
+  "target_values_present": false,
+  "selection_rule": "Capture the complete current IUPAC Gold Book JSON records for binding sites, chelation, denticity, eta, kappa and ligands. Retain every definition, example, exclusion, related-term link, source, status, citation, licence and disclaimer row; no term content may select or modify the Fold law.",
+  "sources": [
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-binding-sites.json",
+      "source_role": "complete-current-binding-sites-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/B00649/json"
+    },
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-chelation.json",
+      "source_role": "complete-current-chelation-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/C01012/json"
+    },
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-denticity.json",
+      "source_role": "complete-current-denticity-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/D01594/json"
+    },
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-eta.json",
+      "source_role": "complete-current-eta-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/H01881/json"
+    },
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-kappa.json",
+      "source_role": "complete-current-kappa-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/K03366/json"
+    },
+    {
+      "authority": "International Union of Pure and Applied Chemistry",
+      "document_identity": "iupac-ligands.json",
+      "source_role": "complete-current-ligands-term-record",
+      "uri": "https://goldbook.iupac.org/terms/view/L03518/json"
+    }
+  ],
+  "forbidden_before_prediction_seal": [
+    "definition text as a law selector",
+    "observed denticity or chelation classification as a candidate selector",
+    "example identity or topology as a candidate selector",
+    "selected or omitted favorable source row",
+    "target payload hash",
+    "target-derived correction"
+  ],
+  "absence_boundary": {
+    "native_form": "structural EmptyOne",
+    "external_glyph": "0",
+    "external_glyph_meaning": "absence only",
+    "numerical_zero_admitted": false
+  }
+}

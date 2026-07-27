@@ -1,0 +1,100 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/1",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "external_values_products_equations_smiles_or_outcomes_present": false,
+  "selection_rule_frozen_before_rhea_payload_open": true,
+  "development_observed_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-IUPAC-001",
+      "source_id": "IUPAC-A00133",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "addition reaction complete current term record",
+      "source_record_role": "complete definition and boundary correspondence",
+      "custody_class": "development_observed",
+      "uri": "https://goldbook.iupac.org/terms/view/A00133/json",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-a00133.json",
+      "snapshot_sha256": "sha256:e78bf2a8c6d7d1088b0e3f6cb43bf23080450ba11c85791986b21c61b4556c24"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-IUPAC-002",
+      "source_id": "IUPAC-A00132",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "addition complete current term record",
+      "source_record_role": "complete general-term and loose-usage control",
+      "custody_class": "development_observed",
+      "uri": "https://goldbook.iupac.org/terms/view/A00132/json",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-a00132.json",
+      "snapshot_sha256": "sha256:4cdf069ab7818c6c85a8a9d6f91fe32e335b1269464786886db39e350d373687"
+    }
+  ],
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-RHEA-EC-MAP",
+      "source_id": "RHEA-RELEASE-141-RHEA2EC",
+      "authority": "Rhea, SIB Swiss Institute of Bioinformatics",
+      "registered_identity": "Rhea release 141 complete reaction-to-EC mapping TSV",
+      "source_record_role": "complete independently curated EC classification surface",
+      "custody_class": "outcome_unopened_before_claim_specific_seal",
+      "uri": "https://ftp.expasy.org/databases/rhea/tsv/rhea2ec.tsv",
+      "registered_http_head": {
+        "last_modified": "Wed, 10 Jun 2026 13:00:00 GMT",
+        "etag": "2f5c8-653e5d23b9400",
+        "content_length": 193992,
+        "content_type": "text/tab-separated-values"
+      }
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-RHEA-DIRECTIONS",
+      "source_id": "RHEA-RELEASE-141-DIRECTIONS",
+      "authority": "Rhea, SIB Swiss Institute of Bioinformatics",
+      "registered_identity": "Rhea release 141 complete reaction-direction mapping TSV",
+      "source_record_role": "complete direction-quartet surface",
+      "custody_class": "outcome_unopened_before_claim_specific_seal",
+      "uri": "https://ftp.expasy.org/databases/rhea/tsv/rhea-directions.tsv",
+      "registered_http_head": {
+        "last_modified": "Wed, 10 Jun 2026 13:00:00 GMT",
+        "etag": "6cc00-653e5d23b9400",
+        "content_length": 445440,
+        "content_type": "text/tab-separated-values"
+      }
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-RHEA-SMILES",
+      "source_id": "RHEA-RELEASE-141-REACTION-SMILES",
+      "authority": "Rhea, SIB Swiss Institute of Bioinformatics",
+      "registered_identity": "Rhea release 141 complete directed reaction SMILES TSV",
+      "source_record_role": "blind complete reactant and product structure-vector surface",
+      "custody_class": "outcome_unopened_before_claim_specific_seal",
+      "uri": "https://ftp.expasy.org/databases/rhea/tsv/rhea-reaction-smiles.tsv",
+      "registered_http_head": {
+        "last_modified": "Wed, 10 Jun 2026 13:00:00 GMT",
+        "etag": "acff12-653e5d23b9400",
+        "content_length": 11337490,
+        "content_type": "text/tab-separated-values"
+      }
+    }
+  ],
+  "blind_row_selection_rule": {
+    "classification": "retain every Rhea release-141 reaction mapped independently to an EC identifier whose complete dot-delimited class begins 4.2.1",
+    "direction": "from the complete Rhea direction quartet, inspect only the source side and retain each directed row having exactly two source components, exactly one source water component and at least one explicit reducible multiple-bond token in the other source component",
+    "outcome_inaccessibility": "the target side, target component count, target atom inventory and target adjacency are forbidden to the selector and prediction program",
+    "ordering": "retain qualifying target identities in exact increasing Rhea identifier order without a row limit, random draw, favorable-only filter or major-product selector",
+    "postseal_targets": [
+      "complete target-side component count",
+      "complete target-side canonical SMILES inscription",
+      "exact heavy-atom occurrence inventory on both sides",
+      "source multiple-bond support and target adjacency correspondence",
+      "every favorable adverse absent malformed and unresolved qualifying row"
+    ]
+  },
+  "release_context_disclosed_before_seal": {
+    "release": 141,
+    "release_date": "2026-06-10",
+    "source": "https://www.rhea-db.org/statistics",
+    "not_a_target_outcome": true
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "remote_source_payload_open_count_before_seal": 0
+}

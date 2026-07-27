@@ -1,0 +1,30 @@
+{
+  "schema": "sft-v3-chemistry-source-identity-addendum/1",
+  "claim_id": "SFT-CHEM-CONJUGATED-SUPPORT-001",
+  "obligation_id": "SFT-CHEM-OBL-ORG-001",
+  "registered_date": "2026-07-27",
+  "parent_family_registry": [
+    "experiments/external_sources/chemistry/org_001_016_family_source_identity_registry_v1.json",
+    "sha256:12c6822a695eb7135081ef8d044a3136c2fee2b0d486c9164b1f1166ef087381"
+  ],
+  "parent_registered_page": [
+    "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/nist-webbook-c106990-spectra.html",
+    "sha256:95e197d79153a8092487190884a97ac540d3efc8dc5b0b1a5c424a0e1f566373"
+  ],
+  "derivation_law": [
+    "sft/chemistry/conjugated_support_law_v1.py",
+    "sha256:69590fd71a11af17729aeda74eabb6340678be8e8f401754f5ee2d958d4d3833"
+  ],
+  "selection_rule": "Capture the sole UV-visible JCAMP-DX payload linked by the already registered complete NIST 1,3-butadiene spectrum page. The link identity is fixed before payload bytes open; no peak, value or outcome selects this source.",
+  "target_values_peaks_intensities_or_outcomes_present": false,
+  "sources": [
+    {
+      "source_id": "NIST-WEBBOOK-C106990-UVVIS-JCAMP-INDEX-0",
+      "authority": "NIST Chemistry WebBook SRD 69",
+      "uri": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C106990&Index=0&Type=UVVis",
+      "identity": "CAS 106-99-0 UV-visible spectrum, sole linked JCAMP-DX payload at registered index 0",
+      "custody_status": "identity_only_unopened",
+      "obligations": ["ORG-001"]
+    }
+  ]
+}

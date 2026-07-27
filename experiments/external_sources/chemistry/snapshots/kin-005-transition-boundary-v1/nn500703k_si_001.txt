@@ -1,0 +1,109 @@
+1 
+ 
+1
+SUPPORTING INFORMATION 
+ 
+Significant Quantum Effects in Hydrogen Activation 
+ 
+Georgios Kyriakou, Erlend R. M. Davidson, Guowen Peng, Luke T. Roling, Suyash Singh,  
+Matthew B. Boucher, Matthew D. Marcinkowski, Manos Mavrikakis, Angelos Michaelides, 
+and E. Charles H. Sykes 
+ 
+ 
+ 
+Figure S1. The top graphs show the spread of HQTST beads (red dots) at 85 K over the one-dimensional barrier that 
+was computed with DFT (green line) for both hydrogen and deuterium dissociative chemisorption (top left and top 
+right respectively). Spreading of the beads across the barrier (going from the precursor physisorbed state to the 
+chemisorbed state) is a signature for quantum tunneling through the barrier. A clear isotope effect is visible as the 
+centroid heights (shown as blue crosses) are at different heights for hydrogen and deuterium, and the zero-point 
+energy levels being at different heights (pink line), resulting in a higher effective quantum barrier for deuterium. The 
+graph bottom left shows how the effective quantum barrier (accounting for both zero-point energy and tunneling) 
+changes with temperature, with the inset snapshot showing the spread of beads from path-integral molecular 
+dynamics at 85 K. The plot on the bottom right shows the quantum effects lead to a marked change in the rate of the 
+chemisorption process when compared with the classical rates. 
+
+
+2 
+ 
+2 
+ 
+ 
+ 
+Figure S2. Sample lattice for KMC simulations of H 2/D2 uptake. KMC simulations were performed on a 20x20 
+periodic Cu(111) grid with 1% random surface substitutions of Pd atoms. Four types of sites were treated explicitly 
+in the model, as shown in the figure above. H 2/D2 were allowed to occupy only Cu and Pd top sites, while H/D were 
+allowed to occupy only Cu and Pd hollow sites. 
+ 
+ 
+Figure S3. Activation energy barriers for the H 2/D2 dissociation step over Pd surface sites. The symbols represent the 
+quantum tunneling (QT) barriers obtained using the quantu m path-integral molecular dynamics simulations and the 
+solid lines denote the linear fits used for that process in our kMC calculations. 
+
+
+3 
+ 
+3 
+ 
+Summary of Adjustments to DFT parameters in the KMC simulations 
+KMC simulations performed using the DFT derived parameters (binding energies, activation 
+energy barriers etc.) as the initial guesses to the model yielded no quantifiable H2/D2 uptake 
+over the entire temperature range. Systematic adjustments in several of these DFT-derived 
+parameters were needed to obtain a reasonable fit to experimentally observed trends. For the 
+H
+2 uptake simulations, molecularly adsorbed H2 was stabilized on Pd-atop surface sites, and 
+H adatoms were stabilized on all hollow sites by 0.10 eV. The slope and intercept of the 
+linear function describing the temperature-dependent barrier for H2 dissociation over Pd sites 
+were adjusted in a way that resulted in a marginally higher barrier in the low temperature 
+region and a slightly lower barrier in the high-temperature region when compared to the 
+initial guesses, which were derived from the instanton calculations, as shown in Figure S4(a).  
+Similarly, for the D
+2 uptake simulations, adsorbed D2 was stabilized on Pd-atop surface sites 
+by 0.20 eV, and D adatoms were stabilized on all hollow sites by 0.15 eV. The intercept of 
+the temperature-dependent activation energy barrier for D
+2 dissociation was increased by 0.07 
+eV, and the classical barrier was decreased by 0.09 eV to fit the experimental trend, as shown 
+in Figure S4(b). A summary of the adjustments made to the DFT-derived parameters is 
+shown in Table S1. 
+  
+
+4 
+ 
+4 
+ 
+ 
+Figure S4.  Adjustments to the kinetic barriers for (a) H2 dissociation and (b) D2 dissociation on the Pd/Cu sites, as 
+required in our KMC simulations to obtain good fits with the experimental trends. The quantum tunneling barrier 
+was lower than the classical barrier for H2 dissociation over the entire temperature region of interest. The transition 
+from quantum tunneling barrier to classical barrier is evident in the D2 case, as the (zero slope) classical barrier 
+becomes energetically preferred at higher temperatures. 
+ 
+  
+
+
+5 
+ 
+5 
+ 
+Table S1.  Activation energy barriers for elementary steps included in KMC simulations. All energy barriers for H2 
+and D2 processes are the same, with the exception of H2/D2 dissociation (Step 3) over surface Pd sites, as noted below. 
+Elementary Step E act_forward_DFT (eV) E act_forward_adjusted (eV) 
+(1) H2 (g) ↔ H2 (phy,Pd) 0.00 0.00 
+(2) H2 (g) ↔ H2 (phy,Cu) 0.00 0.00 
+(3) H2 (phy,Pd) ↔ 2H (PdCu) min(0.37 a, 0.002*T – 0.0654b) min(0.37, 0.0007*T + 0.08) 
+      D2 (phy,Pd) ↔ 2D (PdCu) min(0.39 a, 0.0031*T – 0.061b) min(0.30, 0.0031*T + 0.009) 
+(4) H2 (phy,Cu) ↔ 2H (Cu) 0.74 a 0.74 
+(5) H2 (phy,Pd) ↔ H2 (phy,Cu) 0.12 0.27 c 
+(6) H2 (phy,Cu) ↔ H2 (phy,Cu) 0.12 0.27 c 
+(7) H (PdCu) ↔ H (Cu) 0.12 0.27 c 
+(8) H (Pd) ↔ H (Pd) 0.12 0.27 c 
+(9) H (Cu) ↔ H (Cu) 0.12 0.27 c 
+a  ZPE corrected activation energy barriers obtained from DFT calculations 
+b Linear functions used to describe the temperature-dependent quantum tunneling barriers obtained from quantum path-
+integral calculations 
+c The forward and reverse rate constants for diffusion events were reduced by several orders of magnitude (corresponding to 
+a higher activation energy) while maintaining a constant Keq to avoid spending prohibitively large amounts of time 
+simulating these events, thereby reducing the computational requirements for KMC simulations. All modifications in these 
+rate constants were verified for convergence at each temperature by comparing them to the simulations with full diffusion 
+rates to ensure that the results were unaffected by the reduction in rate constants. 
+‘g’ and ‘phy’ in the parenthesis refer to gas-phase and physisorbed species, respectively. 
+ 

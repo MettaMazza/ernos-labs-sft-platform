@@ -22,9 +22,9 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "experiments/sealed_predictions/chemistry_molecular_structure_batch_2_dependency_amendment.json",
         root / "claims/SFT-CHEM-MOL-NETWORK-001/execution.py",
         root / "sft/physics/generated_empirical_law.py",
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

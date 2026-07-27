@@ -1,0 +1,1363 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "NIST_snapshot": [
+    "experiments/external_sources/chemistry/snapshots/thermo-shared-water-isobar-v1/nist-webbook-water-isobar-1bar-300-400K.html",
+    "sha256:fe25279cb2c8f54a749b503dc17249656e8ac773be0b273aa3f99d283d15050c"
+  ],
+  "all_temperatures_phases_internal_energies_and_other_property_values_absent_from_prediction": true,
+  "claim_id": "SFT-CHEM-INTERNAL-ENERGY-COMPOSITION-003",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-INTERNAL-ENERGY-COMPOSITION-003",
+  "external_sources": [
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "complete direct internal-energy and thermophysical state vector",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+    }
+  ],
+  "falsification_condition": "The claim fails if internal energy requires a fitted or unnamed contribution; if change direction requires a negative proof magnitude; if exact successive same-direction steps do not compose to the direct separation; if appending a part changes an earlier part; if any target opens before all 13 identities seal; if any of 13 rows, 14 columns, 9 liquid rows, 4 vapour rows or either 372.75593 K phase-boundary state is omitted; if the complete direct internal-energy path is not exact and increasing; or if target values select the law.",
+  "frozen_relation": "complete-held-chemical-internal-energy-state__nonempty-exact-positive-named-part-composition__held-transfer-orientation-plus-positive-magnitude__structural-EmptyOne-equality__complete-same-orientation-step-composition__complete-value-free-thermochemical-identity-seal__complete-13-row-14-column-state-vector__depth-independent-append-only-positive-part-successor",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/thermophysical_state_target_identities_v1.json",
+    "sha256:1161a9a8913ddedd309110077bcdab883fbb1f7046a59e279e8972f435602025"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0001"
+        ],
+        "destination": "internal-energy-row-1-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-1-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-1-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "1"
+        ],
+        "destination": "internal-energy-row-1-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-1-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-1-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-1-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-1-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-1-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-1-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-1-identity-1",
+          "internal-energy-row-1-identity-2",
+          "internal-energy-row-1-identity-3",
+          "internal-energy-row-1-identity-4",
+          "internal-energy-row-1-identity-5",
+          "internal-energy-row-1-columns",
+          "internal-energy-row-1-law-7",
+          "internal-energy-row-1-law-8",
+          "internal-energy-row-1-law-9"
+        ],
+        "destination": "internal-energy-row-1-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0002"
+        ],
+        "destination": "internal-energy-row-2-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-2-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-2-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "2"
+        ],
+        "destination": "internal-energy-row-2-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-2-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-2-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-2-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-2-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-2-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-2-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-2-identity-1",
+          "internal-energy-row-2-identity-2",
+          "internal-energy-row-2-identity-3",
+          "internal-energy-row-2-identity-4",
+          "internal-energy-row-2-identity-5",
+          "internal-energy-row-2-columns",
+          "internal-energy-row-2-law-7",
+          "internal-energy-row-2-law-8",
+          "internal-energy-row-2-law-9"
+        ],
+        "destination": "internal-energy-row-2-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0003"
+        ],
+        "destination": "internal-energy-row-3-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-3-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-3-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "3"
+        ],
+        "destination": "internal-energy-row-3-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-3-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-3-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-3-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-3-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-3-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-3-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-3-identity-1",
+          "internal-energy-row-3-identity-2",
+          "internal-energy-row-3-identity-3",
+          "internal-energy-row-3-identity-4",
+          "internal-energy-row-3-identity-5",
+          "internal-energy-row-3-columns",
+          "internal-energy-row-3-law-7",
+          "internal-energy-row-3-law-8",
+          "internal-energy-row-3-law-9"
+        ],
+        "destination": "internal-energy-row-3-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0004"
+        ],
+        "destination": "internal-energy-row-4-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-4-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-4-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "4"
+        ],
+        "destination": "internal-energy-row-4-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-4-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-4-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-4-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-4-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-4-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-4-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-4-identity-1",
+          "internal-energy-row-4-identity-2",
+          "internal-energy-row-4-identity-3",
+          "internal-energy-row-4-identity-4",
+          "internal-energy-row-4-identity-5",
+          "internal-energy-row-4-columns",
+          "internal-energy-row-4-law-7",
+          "internal-energy-row-4-law-8",
+          "internal-energy-row-4-law-9"
+        ],
+        "destination": "internal-energy-row-4-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0005"
+        ],
+        "destination": "internal-energy-row-5-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-5-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-5-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "5"
+        ],
+        "destination": "internal-energy-row-5-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-5-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-5-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-5-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-5-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-5-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-5-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-5-identity-1",
+          "internal-energy-row-5-identity-2",
+          "internal-energy-row-5-identity-3",
+          "internal-energy-row-5-identity-4",
+          "internal-energy-row-5-identity-5",
+          "internal-energy-row-5-columns",
+          "internal-energy-row-5-law-7",
+          "internal-energy-row-5-law-8",
+          "internal-energy-row-5-law-9"
+        ],
+        "destination": "internal-energy-row-5-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0006"
+        ],
+        "destination": "internal-energy-row-6-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-6-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-6-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "6"
+        ],
+        "destination": "internal-energy-row-6-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-6-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-6-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-6-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-6-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-6-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-6-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-6-identity-1",
+          "internal-energy-row-6-identity-2",
+          "internal-energy-row-6-identity-3",
+          "internal-energy-row-6-identity-4",
+          "internal-energy-row-6-identity-5",
+          "internal-energy-row-6-columns",
+          "internal-energy-row-6-law-7",
+          "internal-energy-row-6-law-8",
+          "internal-energy-row-6-law-9"
+        ],
+        "destination": "internal-energy-row-6-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0007"
+        ],
+        "destination": "internal-energy-row-7-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-7-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-7-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "7"
+        ],
+        "destination": "internal-energy-row-7-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-7-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-7-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-7-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-7-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-7-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-7-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-7-identity-1",
+          "internal-energy-row-7-identity-2",
+          "internal-energy-row-7-identity-3",
+          "internal-energy-row-7-identity-4",
+          "internal-energy-row-7-identity-5",
+          "internal-energy-row-7-columns",
+          "internal-energy-row-7-law-7",
+          "internal-energy-row-7-law-8",
+          "internal-energy-row-7-law-9"
+        ],
+        "destination": "internal-energy-row-7-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0008"
+        ],
+        "destination": "internal-energy-row-8-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-8-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-8-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "8"
+        ],
+        "destination": "internal-energy-row-8-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-8-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-8-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-8-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-8-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-8-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-8-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-8-identity-1",
+          "internal-energy-row-8-identity-2",
+          "internal-energy-row-8-identity-3",
+          "internal-energy-row-8-identity-4",
+          "internal-energy-row-8-identity-5",
+          "internal-energy-row-8-columns",
+          "internal-energy-row-8-law-7",
+          "internal-energy-row-8-law-8",
+          "internal-energy-row-8-law-9"
+        ],
+        "destination": "internal-energy-row-8-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0009"
+        ],
+        "destination": "internal-energy-row-9-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-9-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-9-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "9"
+        ],
+        "destination": "internal-energy-row-9-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-9-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-9-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-9-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-9-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-9-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-9-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-9-identity-1",
+          "internal-energy-row-9-identity-2",
+          "internal-energy-row-9-identity-3",
+          "internal-energy-row-9-identity-4",
+          "internal-energy-row-9-identity-5",
+          "internal-energy-row-9-columns",
+          "internal-energy-row-9-law-7",
+          "internal-energy-row-9-law-8",
+          "internal-energy-row-9-law-9"
+        ],
+        "destination": "internal-energy-row-9-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0010"
+        ],
+        "destination": "internal-energy-row-10-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-10-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-10-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "10"
+        ],
+        "destination": "internal-energy-row-10-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-10-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-10-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-10-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-10-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-10-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-10-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-10-identity-1",
+          "internal-energy-row-10-identity-2",
+          "internal-energy-row-10-identity-3",
+          "internal-energy-row-10-identity-4",
+          "internal-energy-row-10-identity-5",
+          "internal-energy-row-10-columns",
+          "internal-energy-row-10-law-7",
+          "internal-energy-row-10-law-8",
+          "internal-energy-row-10-law-9"
+        ],
+        "destination": "internal-energy-row-10-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0011"
+        ],
+        "destination": "internal-energy-row-11-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-11-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-11-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "11"
+        ],
+        "destination": "internal-energy-row-11-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-11-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-11-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-11-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-11-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-11-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-11-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-11-identity-1",
+          "internal-energy-row-11-identity-2",
+          "internal-energy-row-11-identity-3",
+          "internal-energy-row-11-identity-4",
+          "internal-energy-row-11-identity-5",
+          "internal-energy-row-11-columns",
+          "internal-energy-row-11-law-7",
+          "internal-energy-row-11-law-8",
+          "internal-energy-row-11-law-9"
+        ],
+        "destination": "internal-energy-row-11-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0012"
+        ],
+        "destination": "internal-energy-row-12-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-12-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-12-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "12"
+        ],
+        "destination": "internal-energy-row-12-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-12-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-12-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-12-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-12-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-12-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-12-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-12-identity-1",
+          "internal-energy-row-12-identity-2",
+          "internal-energy-row-12-identity-3",
+          "internal-energy-row-12-identity-4",
+          "internal-energy-row-12-identity-5",
+          "internal-energy-row-12-columns",
+          "internal-energy-row-12-law-7",
+          "internal-energy-row-12-law-8",
+          "internal-energy-row-12-law-9"
+        ],
+        "destination": "internal-energy-row-12-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0013"
+        ],
+        "destination": "internal-energy-row-13-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "NIST-WebBook-finite-isobaric-thermophysical-state-row"
+        ],
+        "destination": "internal-energy-row-13-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+        ],
+        "destination": "internal-energy-row-13-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "positive-source-row-ordinal",
+          "13"
+        ],
+        "destination": "internal-energy-row-13-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "H2O"
+        ],
+        "destination": "internal-energy-row-13-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "declared-query-identity",
+          "one-bar; 300-to-400-kelvin; ten-kelvin-requested-increment; returned-phase-boundary-rows-retained"
+        ],
+        "destination": "internal-energy-row-13-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "column-identity-schema-hash",
+          "sha256:f36c3a0b7c53ddaf3f3888ee22926fa1580abdef57a16a699e5964b4436b1cc9"
+        ],
+        "destination": "internal-energy-row-13-columns",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "state-law",
+          "complete-held-chemical-internal-energy-state"
+        ],
+        "destination": "internal-energy-row-13-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "orientation-law",
+          "held-transfer-orientation-plus-positive-magnitude"
+        ],
+        "destination": "internal-energy-row-13-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "path-law",
+          "complete-same-orientation-step-composition"
+        ],
+        "destination": "internal-energy-row-13-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "internal-energy-row-13-identity-1",
+          "internal-energy-row-13-identity-2",
+          "internal-energy-row-13-identity-3",
+          "internal-energy-row-13-identity-4",
+          "internal-energy-row-13-identity-5",
+          "internal-energy-row-13-columns",
+          "internal-energy-row-13-law-7",
+          "internal-energy-row-13-law-8",
+          "internal-energy-row-13-law-9"
+        ],
+        "destination": "internal-energy-row-13-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "internal-energy-row-1-target",
+          "internal-energy-row-1-word",
+          "internal-energy-row-2-target",
+          "internal-energy-row-2-word",
+          "internal-energy-row-3-target",
+          "internal-energy-row-3-word",
+          "internal-energy-row-4-target",
+          "internal-energy-row-4-word",
+          "internal-energy-row-5-target",
+          "internal-energy-row-5-word",
+          "internal-energy-row-6-target",
+          "internal-energy-row-6-word",
+          "internal-energy-row-7-target",
+          "internal-energy-row-7-word",
+          "internal-energy-row-8-target",
+          "internal-energy-row-8-word",
+          "internal-energy-row-9-target",
+          "internal-energy-row-9-word",
+          "internal-energy-row-10-target",
+          "internal-energy-row-10-word",
+          "internal-energy-row-11-target",
+          "internal-energy-row-11-word",
+          "internal-energy-row-12-target",
+          "internal-energy-row-12-word",
+          "internal-energy-row-13-target",
+          "internal-energy-row-13-word"
+        ],
+        "destination": "complete-internal-energy-state-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "complete-internal-energy-state-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-INTERNAL-ENERGY-COMPOSITION-003-value-free-complete-vector",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "program_hash": "sha256:1f3e4e568b4fee114b92954ba6133e8b98c20d3e631e95093992cb585a726f0c",
+    "target_content_inaccessible": true,
+    "temperatures_phases_or_property_values_present": false
+  },
+  "primary_source_record": [
+    "experiments/external_sources/chemistry/snapshots/thermo-shared-water-isobar-v1/thermophysical-state-primary-records-v1.json",
+    "sha256:48d25011fb7b87017a06e8b0e89d3f4a8d9928ef74625008cd2f7cba9a124c95"
+  ],
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "NIST_snapshot": "sha256:fe25279cb2c8f54a749b503dc17249656e8ac773be0b273aa3f99d283d15050c",
+    "identity_registry": "sha256:1161a9a8913ddedd309110077bcdab883fbb1f7046a59e279e8972f435602025",
+    "normalized_primary_records": "sha256:48d25011fb7b87017a06e8b0e89d3f4a8d9928ef74625008cd2f7cba9a124c95",
+    "withheld_targets": "sha256:707f5005e6a47197f320e98977d2a2c000dfa4bc2877f81c6e38b1a6c7d637ad"
+  },
+  "status": "complete_direct_internal_energy_state_vector_opened_postseal",
+  "target_ids": [
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0001",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0002",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0003",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0004",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0005",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0006",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0007",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0008",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0009",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0010",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0011",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0012",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0013"
+  ],
+  "withheld_target_registry": [
+    "experiments/external_sources/chemistry/thermophysical_state_withheld_targets_v1.json",
+    "sha256:707f5005e6a47197f320e98977d2a2c000dfa4bc2877f81c6e38b1a6c7d637ad"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-MOLECULAR-IONIZATION-ENERGY-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:25533a4f7302622511ff09d6853c16c61d98e40b58af573892aa41f209023c19"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7e25dcad984fef29c995bd64ab24a1a7b8014cfb471cb270963b3a98ea028828"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2786bb13a2dbd67ed9dc9d0280bd2306cf73ad911f90fe5f8ac2af2c93ee2e6e"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:6a22ae157af4f1ea1b4090402d35a836df77b5ff41805e457511ab14589f3ec7"
+    }
+  ]
+}

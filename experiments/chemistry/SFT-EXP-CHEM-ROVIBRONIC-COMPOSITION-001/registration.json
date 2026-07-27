@@ -1,0 +1,156 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-ROVIBRONIC-COMPOSITION-001",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form lacking the identified molecular carrier rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed aggregate or component source identity rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A missing, duplicate or additional survivor rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, imported molecular model, forbidden proof value or free exception rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-MEASUREMENT",
+      "expected_rejection": "A changed external state label or ratio fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-external-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:4b6543e9a0ddf33bbc9bad8c0db791f5f81658a09a505601f940730c051f9ea0"
+  },
+  "development_observations": [
+    {
+      "content_hash": "sha256:211fb30414204bcc61f9fb4a69a451db24cb5d5aaaacb2bb3b85fc83429388a9",
+      "role": "development_only",
+      "source_id": "NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "positive molecular-state occurrence counts",
+      "positive vibrational and rotational recurrence counts",
+      "held isotope, spin and observation labels",
+      "exact positive molecular-spectroscopy ratios inherited from the admitted Physics receipt"
+    ],
+    "external_reference_protocol": "The H2/D2 component records remain capability-closed until the Chemistry prediction seals; the custodian then checks all four exact ratio intervals and all structural hierarchy rows.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All four exact ratios are contained, both hierarchy rows and the isotope direction hold, and the tampered row rejects.",
+    "comparison_implementation_hash": "sha256:0ec987e3c955456133dc11d1d303f5379d12a9c52e4aba975c9ef90d01bc2326",
+    "evaluator_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-post-seal-NIST-evaluator",
+    "falsification_condition": "The claim fails if any retained nucleus, isotope, electronic, vibrational, rotational, spin or observation coordinate can be erased without merging a registered state; if the exact admitted H2/D2 ladder or isotope relations leave the complete NIST displayed-resolution vector; if a source is opened before the prediction seal; or if any favorable, unfavorable, predecessor or tampered row is omitted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Check every displayed source endpoint, all four sealed exact ratios, both state hierarchies, the isotope direction and a deliberately changed row.",
+        "metric_id": "complete-H2-D2-exact-ratio-vector",
+        "unit_protocol": "NIST inverse-centimetre and angstrom inscriptions remain source records; the evaluator uses exact positive rational interval propagation."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Chemistry WebBook SRD 69",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:18036a188088f880122249544ceb6b384fabfba93b300b4f9f0fa01aa0ed9b24",
+      "source_id": "NIST-WEBBOOK-SRD69-H2-DIATOMIC-CONSTANTS",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1828"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology, Chemistry WebBook SRD 69",
+      "retrieved_date": "2026-07-24",
+      "snapshot_hash": "sha256:790276cd493dbede03fc9e83db95bc0808a36838eb31473aaf923493b4749936",
+      "source_id": "NIST-WEBBOOK-SRD69-D2-DIATOMIC-CONSTANTS",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782390&Mask=1000"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal eight-axis product of carrier, nuclear-electronic composition, scale order, vibrational recurrence, rotational recurrence, held spin, observation and extension forms; decide every form by preservation of the admitted dependency chain.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:2876f5eb50cdc26e8f518f56d74463d9c9bd8f24d08b966cf7418735abed8167",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:e92d8a1b31effb285b9f86949aee91a9d6855918c4a2e16405484a464ba72c9b",
+      "sha256:4e3ea364e29283d63addaa77cd7790b22f1cbc668f95bcda92782113502a6027",
+      "sha256:937738e4f735283268ef9139f57b868f331f3ba722c9978439711f34f9da692b",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:1f3cdec0862f2e62503084529964348aa413da5a2c748193b765b13c22eea5bc"
+    ],
+    "exact_domain": "Every positive-finite molecular electronic carrier with positive-finite retained nuclei, isotope labels, positive vibration and rotation ordinals, held spin and a declared finite observation resolution.",
+    "relation_hash": "sha256:0dc927889f28fc566b8071b61e36bd6c0aa7e2c56a4002a5a1fc0fc694220e72",
+    "statement": "identified-molecular-state-carrier__nuclear-electronic-joint-support__admitted-electronic-vibrational-rotational-order__positive-odd-vibrational-recurrence__positive-counted-rotational-recurrence__held-spin-state__retained-rovibronic-observation__no-extra-rule",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:e7db3a611fdbcd45be86c7dcc5a227ae47dabfbb790820ce6ad4f0d4bca158ce",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:9f180789e88a10a121e856f1b0eb0984231056859a95101cf600e34cbda0e3e8",
+    "program_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/molecular-spectroscopy-successor-source-record.json": "sha256:211fb30414204bcc61f9fb4a69a451db24cb5d5aaaacb2bb3b85fc83429388a9",
+    "experiments/external_sources/physics/snapshots/nist-webbook-d2-diatomic-constants.html": "sha256:790276cd493dbede03fc9e83db95bc0808a36838eb31473aaf923493b4749936",
+    "experiments/external_sources/physics/snapshots/nist-webbook-h2-diatomic-constants.html": "sha256:18036a188088f880122249544ceb6b384fabfba93b300b4f9f0fa01aa0ed9b24",
+    "observational-experiment-registration-record": "sha256:8f019b0f3ea3ea535a7c289531764cc65b10391f2f163711b125f83f966e36dd"
+  },
+  "status": "measured",
+  "stop_condition": "Halt after every source, ratio, hierarchy and adverse row is evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR",
+      "target_id": "NIST-MOLECULAR-H2-D2-COMPLETE-VECTOR"
+    }
+  ]
+}

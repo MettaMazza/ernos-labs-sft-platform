@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:f4e8a463127ad996ea9657acc5c769dd178feca9004a539a3d4df7e19de5bee4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b48a65426cc4682980f40d3de37ef27021454d1d19c60d82f07d1fd5c2cb1081"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5beba579e6ef4662899f49b12c129452e11bd03f456549b0fe3de7a4418483ff"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:e400eaac9e7aba78ad6d6e3fdb39922544f650afd3159711bda0bd19c88aa427"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-CHEM-DIFFUSION-LIMITED-REACTION-BOUNDARY-011",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:fe5a4e483378e760221074137f63299ca98b5414656c2060aaff952f16b0ff67",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": null,
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "validator raised: external validator exited 1: Traceback (most recent call last):\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/claims/SFT-CHEM-DIFFUSION-LIMITED-REACTION-BOUNDARY-011/independent_validator.py\", line 14, in <module>\n    if __name__==\"__main__\":main()\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/claims/SFT-CHEM-DIFFUSION-LIMITED-REACTION-BOUNDARY-011/independent_validator.py\", line 9, in main\n    d=json.load(open(sys.argv[1])); generated=[\"__\".join(row) for row in product(*DOMAINS)]; received=[row[\"candidate_id\"] for row in d[\"census\"][\"candidates\"]]; decisions={row[\"candidate_id\"]:row[\"survives\"] for row in d[\"decisions\"]}\nUnboundLocalError: local variable 'product' referenced before assignment",
+      "gate": "independent_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "independent_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:afc6a72692ecbecceed4303ffc85bf53c4e56072fc8a321cbbd7966ce496b03a",
+  "violations": [
+    "validator raised: external validator exited 1: Traceback (most recent call last):\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/claims/SFT-CHEM-DIFFUSION-LIMITED-REACTION-BOUNDARY-011/independent_validator.py\", line 14, in <module>\n    if __name__==\"__main__\":main()\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/claims/SFT-CHEM-DIFFUSION-LIMITED-REACTION-BOUNDARY-011/independent_validator.py\", line 9, in main\n    d=json.load(open(sys.argv[1])); generated=[\"__\".join(row) for row in product(*DOMAINS)]; received=[row[\"candidate_id\"] for row in d[\"census\"][\"candidates\"]]; decisions={row[\"candidate_id\"]:row[\"survives\"] for row in d[\"decisions\"]}\nUnboundLocalError: local variable 'product' referenced before assignment"
+  ]
+}

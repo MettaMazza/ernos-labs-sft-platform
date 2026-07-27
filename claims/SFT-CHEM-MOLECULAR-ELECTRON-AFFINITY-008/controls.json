@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-MOLECULAR-ELECTRON-AFFINITY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:415942e31adccd232623a4989bc8ad1a9cea46589a6ff6df36912bd575cfbc3b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:aa691bdbebc0ad6120a4d4f5e1eb36b72b5697b26eab73da56bdd327cc4588c2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:40c705e6b79ccd7fac5812e049d5c55f8a0bf1f86e78eacf18327927cb1208f3"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:5f441baa7f22e43634a6b3abef0605200f253ad0f10294506f64217da98371f7"
+    }
+  ]
+}

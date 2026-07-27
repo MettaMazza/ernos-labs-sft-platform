@@ -1,0 +1,536 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "meaning": "absence only",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false,
+    "rule": "The NIST ground baseline glyph 0 remains a held source inscription and is interpreted only as absence of excitation, never as an SFT number.",
+    "source_ground_baseline_glyph_count": 1
+  },
+  "claim_id": "SFT-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A freely preserving total electron-pair word rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed NIST snapshot bytes reject.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "An omitted state, pair or changed separation rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "A target-readable law, imported exchange sign/integral, numerical zero or fitted split rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "WRONG-MULTIPLICITY",
+      "expected_rejection": "A two-electron multiplicity outside the complete One/three census rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "SAME-CELL-TRIPLET",
+      "expected_rejection": "A paired orbital in the alternating spatial sector rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "THIRD-OCCURRENCE",
+      "expected_rejection": "A third identical electron in one orbital support rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "OPPOSITE-ORDER-RETENTION",
+      "expected_rejection": "Deleting the observed singlet-below-triplet pair to simulate a universal order sign rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006-NIST-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:204dd9ddc92ae70ab9b89461bd4d86b59bb90ac87add8af34fcbf1dfb906d085",
+    "withheld_target_registry_path": "experiments/external_sources/chemistry/pair_exchange_withheld_targets_v1.json"
+  },
+  "development_observations": [
+    {
+      "role": "question-and-complete-test-domain-only",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "term_multiplicity_occupancy_order_and_separation_absent_from_survivor_selection": true
+    }
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "All 46 states, 25 One-width sectors, 21 three-width sectors, two explicit same-cell singlets, 14 same-configuration pairs, 13 triplet-below-singlet records, the one singlet-below-triplet record, every positive exact separation and every adverse control pass.",
+    "comparison_implementation_hash": "sha256:b452e614cb2ed977499dc136f033b9f1e6d608164c5a7cd106cf9c0f63b78549",
+    "evaluator_id": "SFT-EXP-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006-post-seal-NIST-evaluator",
+    "falsification_condition": "The claim fails if a molecular electron pair is not exchange-equivalent; if its total exchange is not alternating; if a positive One-width spin sector is not paired with preserving spatial exchange; if a positive three-width spin sector is not paired with alternating spatial exchange; if a same-cell pair is accepted in the alternating spatial sector; if any of 46 NIST H2 states, 25 singlets, 21 triplets, two explicit same-cell singlet records, 14 same-configuration exchange pairs, 13 triplet-below-singlet records or the one retained opposite-order record is omitted or altered; if any positive measured separation is replaced by a fitted value; or if source glyph 0 is treated as a number rather than absence.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain and test all 46 NIST H2 term assignments: 25 One-width and 21 three-width states.",
+        "metric_id": "complete-two-electron-state-census"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain every explicit orbital-occupancy record and require both paired-cell inscriptions to occur in the One-width preserving-spatial sector.",
+        "metric_id": "same-cell-exclusion"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain all 14 same-configuration complementary exchange pairs with exact positive measured separations and both observed order fibres.",
+        "metric_id": "same-support-exchange-distinction"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006",
+  "external_measurement_sources": [
+    {
+      "complete_state_rows": 46,
+      "custody_role": "post-seal-spin-state-occupancy-and-exchange-sensitive-target",
+      "database": "NIST Chemistry WebBook SRD 69",
+      "doi": "10.18434/T4D303",
+      "measurement_body": "National Institute of Standards and Technology",
+      "same_configuration_exchange_pairs": 14,
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1000",
+      "species": "molecular hydrogen H2"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of carrier, constituent identity, total exchange, spin sector, complementary composition, same-cell support, complete record and extension forms. Decide all 256 forms solely by the admitted Fold indistinguishability, exclusion, spin-census, orbital-support and state-symmetry laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:da2c846ed3c59c2b13c953b61f3fa1e16a4bf71f3202f5d2600b7dbffbbdb735",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:f3e042448517867e2a031486ed4cc8a4518c6b6b080ce24803b68fc2c606bf50",
+      "sha256:8f2910acd375fb6ac0f7d289bb6384f2cae8b38086f1c9fe69cb7c1fa43c3c24",
+      "sha256:2fc3c61877e77e8acbf750d5174ecb057e2b07fc43487171282189a57698c080",
+      "sha256:d7d1d14baf73e85a4c6029cfed9087be20b20700d294165a5930b89aaedc7bd3"
+    ],
+    "energy_order_not_part_of_forcing_relation": true,
+    "exact_domain": "Every molecular carrier containing an identical electron pair; both complete two-label spin-composition sectors; every retained spatial support and pairwise successor in a larger molecule. External closure uses the complete 46-state NIST molecular-hydrogen term census, both explicit same-cell pair records and all 14 same-configuration singlet/triplet observation pairs.",
+    "relation_hash": "sha256:33b7899c76baa6c3ece646965dc4258916ae77b065e25d9175e97b5f911d913d",
+    "statement": "one-molecule-electron-pair__exchange-equivalent-constituents__alternating-total-word__complete-one-and-three-spin-sectors__complementary-spin-spatial-fibres__spatial-exchange-controlled-occupation__complete-state-and-exchange-pair-record__pairwise-successor-with-no-extra-rule",
+    "target_did_not_select_survivor": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:e8d56d892ef2bf3d2bc6977c4022884ad22a559ff574fbbb0cff8804d4922cd3",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:3b108e98b7060047bd3e7a1e24cfb474579a5d5a235c2a4b76096ef8c1280574",
+      "input_id": "target-identities-only",
+      "path": "experiments/external_sources/chemistry/pair_exchange_target_identities_v1.json",
+      "state_and_pair_outcomes_absent": true
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:e919c9574e2303f08d851acfc64583a459e2ce5d818817683eaa9ddea15033da",
+    "program_id": "SFT-EXP-CHEM-MOLECULAR-EXCLUSION-EXCHANGE-006-pair-exchange-law-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-all-46-states-all-14-pairs-all-order-fibres-and-all-adverse-results",
+  "scope_boundary": "The forced result is complementary pair-exchange organization and exclusion. Exact NIST energy separations test exchange-sensitive distinction after sealing; neither their sign nor magnitude is promoted to a universal imported exchange-integral law.",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:399092cfeaaf48056b4239f02f3b818a96134d47eb7e8b6f1289bf50d0d8e94b",
+    "experiments/external_sources/chemistry/pair_exchange_target_identities_v1.json": "sha256:3b108e98b7060047bd3e7a1e24cfb474579a5d5a235c2a4b76096ef8c1280574",
+    "experiments/external_sources/chemistry/pair_exchange_withheld_targets_v1.json": "sha256:204dd9ddc92ae70ab9b89461bd4d86b59bb90ac87add8af34fcbf1dfb906d085",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C1333740.html": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any violation; otherwise stop after the complete vector and controls.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-031"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-032"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-033"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-034"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-035"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-036"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-037"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-038"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-039"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-040"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-041"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-042"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-043"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-044"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-045"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-state-046"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-EXCHANGE-2025",
+      "target_id": "H2-exchange-pair-014"
+    }
+  ]
+}

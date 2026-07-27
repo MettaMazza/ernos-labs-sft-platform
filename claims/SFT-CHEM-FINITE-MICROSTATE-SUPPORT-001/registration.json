@@ -1,0 +1,52 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "chemistry",
+  "candidate_grammar": {
+    "boundary": "Every nonempty finite generated chemical-state tuple and its complete disjoint observation partition, with one-state finite successor closure. Completed infinity and continuum ensembles are outside the grammar. External structure is tested on all 330 direct CaH+ state rows and all 57 NIST water calorimetric rows.",
+    "completeness_certificate": "sha256:bbdc0fb3df219792f413e1e695c9d15fd1ece74ae96cffc46b66c78e5fb6d1b9",
+    "expected_cardinality": 256,
+    "generator": "Generate the literal product of support, identity, partition, multiplicity, weight, prediction, record and extension forms; decide all 256 candidates only from admitted exact state, observation, counting and thermodynamic carrier laws."
+  },
+  "claim_id": "SFT-CHEM-FINITE-MICROSTATE-SUPPORT-001",
+  "dependencies": [
+    "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-COMBINATORICS-001",
+    "SFT-MATH-PROBABILITY-STATISTICS-001",
+    "SFT-MATH-ORDER-LATTICE-001",
+    "SFT-INFO-SYMBOL-DISTINCTION-001",
+    "SFT-INFO-ENTROPY-UNCERTAINTY-001",
+    "SFT-INFO-CONSERVATION-LOSS-001",
+    "SFT-COMP-FORM-STATE-TRANSITION-001",
+    "SFT-PHYS-THERMO-MICRO-MACRO-001",
+    "SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001",
+    "SFT-PHYS-THERMO-STATE-RELATION-001",
+    "SFT-CHEM-MOL-MOLECULE-001",
+    "SFT-CHEM-MOLECULAR-STATE-TRANSITION-009",
+    "SFT-CHEM-CROSS-PROPERTY-MOLECULAR-VECTOR-014"
+  ],
+  "empirical_protocol": "experiments/chemistry/SFT-EXP-CHEM-FINITE-MICROSTATE-SUPPORT-001/registration.json",
+  "excluded_inputs": [
+    "no numerical zero; native absence is structural EmptyOne and external zero glyphs remain source inscriptions",
+    "no negative, irrational, imaginary, floating, signed or continuum SFT proof value",
+    "no completed infinity, continuum ensemble, partition-function prior or assumed probability distribution",
+    "no temperature, population, calorimetric value, target payload or target hash in law, grammar or prediction",
+    "no fitted coefficient, species parameter, imported statistical equation or target-selected state partition",
+    "no selected species, favorable state rows, deduplication of the NIST regime-boundary row or omitted source row"
+  ],
+  "provenance_classes": [
+    "observational_derivation"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "A chemical thermodynamic support is the complete generated finite tuple of held chemical microstates, partitioned so every state occurs exactly once in one named macro-observation fibre. Multiplicity is the exact positive fibre count and statistical weight is that count over the complete finite support count. All 387 external identities seal before 330 direct state records and 57 calorimetric rows open.",
+  "status": "empirically_tested",
+  "title": "Finite chemical microstate-support law"
+}

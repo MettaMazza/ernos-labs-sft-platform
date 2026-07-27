@@ -1,0 +1,50 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/8",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "supersedes_for_new_product_selection_only": "experiments/external_sources/chemistry/org_009_target_identities_v7.json",
+  "all_v1_through_v7_results_must_remain_preserved_and_barred_from_selective_reuse": true,
+  "preserved_prior_results": {
+    "v5_x2_source_result": "structural_absence",
+    "v6_cycloaddition_product_counts": {"favorable": 8, "adverse": 31, "unresolved": 8, "malformed": 0},
+    "v6_status": "failed_universal_source_signature_preserved_not_rewarded",
+    "v7_rhea_exact_name_query_result": "header_only_structural_absence"
+  },
+  "frozen_product_vector_surface": {
+    "source_id": "FIGSHARE-FILE-44192531",
+    "authority": "Figshare repository record supplied by the LocalMapper dataset authors",
+    "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-009-localmapper-blind-v5/remapped_USPTO_FULL.csv",
+    "snapshot_sha256": "sha256:7395b05af9d7e22189ac4f04498051226dde4b126d57f1ce56ff8819c2cbb63a",
+    "snapshot_bytes": 427144675,
+    "doi": "10.6084/m9.figshare.25046471.v1",
+    "license": "CC BY 4.0",
+    "custody_class": "source_observed_selected_azide_alkyne_products_unopened"
+  },
+  "source_only_orientation": {
+    "complete_data_row_count": 1065119,
+    "complete_two-component_uniquely-mapped_azide-alkyne_source_count": 93,
+    "product_fields_opened_by_orientation": false
+  },
+  "blind_row_selection_rule": {
+    "reaction_column": "mapped_rxn",
+    "reaction_field_split": "Parse only the reactant field before the first reaction separator. The product field is prohibited until the complete 93-identity source-only selection is written and hash-sealed.",
+    "source_component_rule": "Retain every row with exactly two dot-separated parser-resolved source components and a globally unique map identity on every non-hydrogen atom.",
+    "azide_rule": "Exactly one component contains exactly one three-nitrogen path: one nitrogen occurrence adjacent to two other nitrogen occurrences through retained single, double or triple supports. No second three-nitrogen path is permitted.",
+    "alkyne_rule": "The other component contains exactly one non-aromatic mapped carbon-carbon triple adjacency.",
+    "ordering": "Retain all 93 qualifying identities in original file order without a row limit, random draw, favorable-only filter, named-product selector, yield threshold or post-outcome exclusion.",
+    "postseal_generated_product_family": "The product has one connected mapped carrier and exactly the same map inventory. Every source adjacency remains. Exactly two new cross-source-component adjacencies form one complete matching between the two outer azide nitrogens and the two alkyne carbons; both matching orientations are generated. At least one source multiplicity layer relocates, and every other mapped adjacency is unchanged. Aromatic and Kekule inscriptions remain explicit external representation classes rather than native parameters.",
+    "postseal_targets": [
+      "complete product component count",
+      "complete mapped-atom inventory conservation",
+      "exact two new cross-component adjacencies",
+      "complete two-orientation endpoint matching family",
+      "positive finite source multiplicity change",
+      "all source adjacency retention",
+      "all other mapped adjacency retention",
+      "every favorable adverse absent malformed and unresolved selected row"
+    ]
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "selected_product_outcome_open_count_before_v8_seal": 0
+}

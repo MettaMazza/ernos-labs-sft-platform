@@ -1,0 +1,270 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the complete coordination carrier or complete direct-incidence support is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed or omitted IUPAC/NIST source record is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate, incidence count, or consequence is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Premature target access, mixed coordination-number sense, or a forbidden proof value is rejected.",
+      "kind": "boundary"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002-complete-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:507cc60f6e04d20a781fa3cefb7e0cc9f0a3d36f48b0e078e283a8850a081d4b"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "finite coordination-entity identity",
+      "positive direct incidence",
+      "positive incidence count"
+    ],
+    "external_reference_protocol": "Source inscriptions and direct-link counts open only after the complete identity and consequence seal.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All twenty-three identity, consequence, count, boundary, absence, disclaimer, and post-seal target bindings pass; exact 3/4/5 direct-incidence counts reconstruct; every adverse control rejects.",
+    "comparison_implementation_hash": "sha256:9e590a227bdcf6ee6e6ca9eafb75c2e89cf80d86024ffc673385ae2ccf2f29a6",
+    "evaluator_id": "SFT-EXP-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002-post-seal-evaluator",
+    "falsification_condition": "Any count differing from complete distinct direct incidence; collapsed occurrence; counted absence; failed successor; changed or omitted source record; mixed definitional sense; nonmatching NIST 3/4/5 vector; premature target access; or forbidden numerical form falsifies the claim.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact structural, count, boundary, and custody comparison across the complete twenty-three-record vector.",
+        "metric_id": "complete-coordination-number-vector-correspondence",
+        "unit_protocol": "Categorical source correspondence and exact positive generated incidence counts."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:5c995bf40117e65eb042dc5d585692c56443ef3dc93805466779053da415fb5a",
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "source_uri": "https://goldbook.iupac.org/terms/view/C01331/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:63e6ea2c88b3aef4137c15a7986358be95c411aff96a9789ec421641e20963dc",
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "source_uri": "https://cccbdb.nist.gov/expgeom2x.asp?casno=13709472&charge=0"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:3cdd6c8814bb2c9efc172afc3d83cc81e45c78a94e17d6fcbffd593b5de26358",
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "source_uri": "https://cccbdb.nist.gov/expgeom2x.asp?casno=7550450&charge=0"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:35d46ce135ea052860c42e24dce03a4211336c0038a8a64813b24136b5b1e4b4",
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "source_uri": "https://cccbdb.nist.gov/expgeom2x.asp?casno=13463406&charge=0"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Literal product of eight binary coordinates; 256 forms.",
+    "dependency_hashes": [
+      "sha256:84d18de18b1345bf506138493aebd7808bb0bd00cc3b318040e00751929c7c8a",
+      "sha256:a4e409f6bb8b203de746bd0c21d3f2566e8052003219490c657249e11f6f2086",
+      "sha256:28252bae62373d8657967ba28f8f2d497c2cf09abbae71609cb05c4f40196418",
+      "sha256:632de46c995329ed86f8397e8cf2cc493d5074027941a50069df66b4ac9e29bb",
+      "sha256:52e1db94bb7865270bb3387c47c609c438de3338b542cc31d910b981e4250968",
+      "sha256:b4072f93147c8cd9b7233fc96cfeadeb791210239ab4e4ff7dec0ed7462e6d2a",
+      "sha256:e387d64c93f5241d90ecf2a447eb6a3518c1e9f473e7ec627d38b7f03ac9d941",
+      "sha256:4e2892e85c1624a2234163fdd51377a7086219ce0945cbf6acfcaa41664303f4",
+      "sha256:6ff1fdc0b1d041805addd6ef9350dee1fe38a41082072c9f7888d4a22975228f",
+      "sha256:130c21788e898b4b6f0cb012bc72b4cb29d5aeda5b86e67257c6008c13318f66",
+      "sha256:6f5a76351dd92e06a0982b6a611e3bf04d2d69dae0635e8dd6b4a3b4e92586eb",
+      "sha256:4749de58750e305820c39678a3a2f0f6d8332e721a17921651eafca98a8a1dbc",
+      "sha256:bf8c0a082163ff1e531df0754a15edff05eb59c8c881f602af3bc4b581c030b6"
+    ],
+    "exact_domain": "Every admitted positive finite single-central coordination entity with complete distinct direct-incidence support.",
+    "relation_hash": "sha256:0e2c6d2b373a2e64a5f21663c8bedb1c8e2aa197bdf27509013faa885902b501",
+    "statement": "positive cardinality of every distinct direct ligand incidence on the retained central occurrence",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3cd517bcffa282d4850658d05684b9af15303a7b84d684e8d46297012854d380",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:8b4f85500bb86fd435a2a779e507ac41edd3d75b9d102e177e928d809a26526a",
+    "program_id": "SFT-EXP-CHEM-COORDINATION-NUMBER-INCIDENCE-COUNT-002-value-free-complete-vector"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "identity_registry": "sha256:c018c7ca63e082958f73c5b48fe6cbc873dc020026b8e2c519e57a4bb2ed005a",
+    "prefetch_specification": "sha256:1a101ccde5af91e79a07291ac76c3a4b537e0da0dbf9c2a363d468544d4be84c",
+    "primary_records": "sha256:dacc826bfaa7f87a6e13d8f90164f76d5a283d8a09df7d2b2d28bb024c4073ef",
+    "source_inventory": "sha256:6e33fa85567afee247f09c44be5b48f40c8e5ba06c8cf92bda0e67f5f373d527",
+    "withheld_targets": "sha256:507cc60f6e04d20a781fa3cefb7e0cc9f0a3d36f48b0e078e283a8850a081d4b"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any source, seal, identity, custody, incidence, count, completeness, boundary, adverse-control, or forbidden-value violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "target_id": "SFT-CHEM-INORG002-COUNT-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "target_id": "SFT-CHEM-INORG002-COUNT-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "target_id": "SFT-CHEM-INORG002-COUNT-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "target_id": "SFT-CHEM-INORG002-COUNT-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01331",
+      "target_id": "SFT-CHEM-INORG002-COUNT-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-SCF3",
+      "target_id": "SFT-CHEM-INORG002-COUNT-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-TICL4",
+      "target_id": "SFT-CHEM-INORG002-COUNT-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "NIST-CCCBDB-SRD101-FECO5",
+      "target_id": "SFT-CHEM-INORG002-COUNT-023"
+    }
+  ]
+}

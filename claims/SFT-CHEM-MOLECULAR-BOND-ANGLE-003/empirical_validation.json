@@ -1,0 +1,70 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-MOLECULAR-BOND-ANGLE-003",
+  "data_source_ids": [
+    "NIST-CCCBDB-SRD101-BF3-EXPERIMENTAL-GEOMETRY",
+    "NIST-CCCBDB-SRD101-XEF2-EXPERIMENTAL-GEOMETRY",
+    "NIST-CCCBDB-SRD101-XEF4-EXPERIMENTAL-GEOMETRY"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:73e1c9935e4728fdefd06d68a2a7255ff4b8a0ad26b5d652b33699f1b362c737",
+  "falsification_condition": "The claim fails if any sealed turn fraction translated after release does not equal its source-bound degree inscription at the registered observation resolution; if any of the four rows or its species, state, geometry, angle definition, method/condition or comment is erased; if a degree value is readable before prediction sealing; if a displaced, swapped, wrong-count or unsupported-geometry control is accepted; or if a fitted correction or continuum construction is introduced.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:601d3bde31ecaa087e9c21aef509d651c8a5827fb1a52c53c0c22af9460e85f1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6cb7cb886b997e77a72947b0e0a503330eeae71e33f1b70e99ea535b2e83566f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-MOLECULAR-BOND-ANGLE-003-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:67a67e734500d65b7c9a9c1f648825b6144e58374869759f4ce582617b72b29b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:fa1f8d8ef510b2911050e5b5ea6eaeb5ddc806b85e6644f330fb04e1fe9d7a4f",
+    "prediction_seal_hash": "sha256:5e2d04570f50d9af926b7a05f1ebb7bf7ee841b52dd3ef71ef90c12e168210a7",
+    "program_hash": "sha256:9f7e7191a057d7c5ba3b4aa98321d421072587fc773bceceb92a95870891836e",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9e72418556b25b470979b1015758936c713123ac427655af355dd139712e70d8",
+    "target_material_present": false,
+    "trace_hash": "sha256:af5382390ad62a5e5a2bd00a506495be8829f15af4b856a9fcef1cdf7f0b90ac"
+  },
+  "measurement_receipt_hash": "sha256:8cba26d29c398990114e3803676c6ccb709e1b24e59b77fc645b4a8ee360c25e",
+  "measurements": [
+    "NIST-CCCBDB-BF3-FBF-ADJACENT: exact 1/3 turn -> 120 degree; source 120 degree; exact match True",
+    "NIST-CCCBDB-XEF2-FXEF-OPPOSITE: exact 1/2 turn -> 180 degree; source 180 degree; exact match True",
+    "NIST-CCCBDB-XEF4-FXEF-ADJACENT: exact 1/4 turn -> 90 degree; source 90 degree; exact match True",
+    "NIST-CCCBDB-XEF4-FXEF-OPPOSITE: exact 1/2 turn -> 180 degree; source 180 degree; exact match True",
+    "adverse complete_four_angle_vector: True",
+    "adverse all_degree_values_absent_from_prediction: True",
+    "adverse all_identity_and_condition_fields_held: True",
+    "adverse every_displaced_value_rejected: True",
+    "adverse adjacent_opposite_swap_rejected: True",
+    "adverse wrong_geometry_count_rejected: True",
+    "adverse unsupported_tetrahedral_continuum_form_rejected: True",
+    "adverse tampered_snapshot_identity_rejected: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:8405745660a2a175cc1f79823219f19c32a36e2895797ca9f1baaf78279369fd",
+    "custodian_id": "SFT-EXP-CHEM-MOLECULAR-BOND-ANGLE-003-external-target-custodian",
+    "experiment_registration_hash": "sha256:73e1c9935e4728fdefd06d68a2a7255ff4b8a0ad26b5d652b33699f1b362c737",
+    "prediction_seal_hash": "sha256:5e2d04570f50d9af926b7a05f1ebb7bf7ee841b52dd3ef71ef90c12e168210a7",
+    "registered_target_identity_hash": "sha256:9e72418556b25b470979b1015758936c713123ac427655af355dd139712e70d8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:6c431441c2edcf5ae2e163b5e73e536db089160ee2d11c50c0d0d4ea62ea5d19"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:56f271157d431cd0997e00143caef84578eef540da0d7884cb41e280b71e1ebb"
+}

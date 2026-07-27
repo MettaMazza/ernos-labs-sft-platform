@@ -1,0 +1,515 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_complete_cccbdb_table_rows_required": true,
+  "all_four_rows_required": true,
+  "all_rows_development_observed_and_disclosed": true,
+  "claim_id": "SFT-CHEM-CONFORMER-GENERATION-EQUIVALENCE-005",
+  "complete_target_registry": [
+    "experiments/external_sources/chemistry/org_005_withheld_targets_v1.json",
+    "sha256:35de0b7eb5b41d2a655af1bc546fcec240c64bd45c916c7b8348f7bc3edd0eec"
+  ],
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-CONFORMER-GENERATION-EQUIVALENCE-005",
+  "external_sources": [
+    {
+      "body": "International Union of Pure and Applied Chemistry",
+      "custody": "development-observed-correspondence",
+      "role": "complete conformer, conformation and conformational-analysis records",
+      "source_id": "IUPAC-CONFORMER-TERMINOLOGY-SURFACE"
+    },
+    {
+      "body": "National Institute of Standards and Technology",
+      "custody": "development-observed-correspondence",
+      "role": "complete butane experimental-property, state, configuration and reference page",
+      "source_id": "NIST-CCCBDB-BUTANE-CONFORMER-SURFACE"
+    }
+  ],
+  "falsification_condition": "The claim fails if an atom, bond, rotor, held state, Cartesian assignment or preserving graph bijection is omitted; if equivalence uses a coordinate tolerance or measured energy; if any assignment occurs in no class or more than one class; if the four-site witness does not generate three assignments, two graph actions and two classes of sizes one and two; if any of four authority records or any of the 19 tables and 105 CCCBDB rows is omitted; if Anti/Gauche is selected rather than compared after derivation; or if the adverse Gauche false-minimum row, signed values, conventional zeros or absent cells are erased.",
+  "frozen_relation": "complete-finite-molecular-graph__complete-ordered-rotor-census__complete-cartesian-state-generation__exhaustive-graph-automorphism-action__exact-automorphism-orbit-equivalence__complete-disjoint-orbit-quotient__value-free-operational-census-seal__finite-product-successor-no-extra-rule",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/org_005_target_identities_v1.json",
+    "sha256:7f148f0b99d0939aefb6023521d697dc00386a0de2f7a328d6b1220377965ad4"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-ORG-005-001"
+        ],
+        "destination": "conformer-record-1-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "1"
+        ],
+        "destination": "conformer-record-1-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC-C01262"
+        ],
+        "destination": "conformer-record-1-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC"
+        ],
+        "destination": "conformer-record-1-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "conformer complete current term record"
+        ],
+        "destination": "conformer-record-1-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "complete-conformer-term-record"
+        ],
+        "destination": "conformer-record-1-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "family-development-observed-before-ORG-005-seal"
+        ],
+        "destination": "conformer-record-1-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "complete-cartesian-held-state-generation"
+        ],
+        "destination": "conformer-record-1-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exhaustive-graph-automorphism-census"
+        ],
+        "destination": "conformer-record-1-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exact-disjoint-orbit-equivalence"
+        ],
+        "destination": "conformer-record-1-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "development-observed-complete-external-census-after-seal"
+        ],
+        "destination": "conformer-record-1-law-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "conformer-record-1-identity-1",
+          "conformer-record-1-identity-2",
+          "conformer-record-1-identity-3",
+          "conformer-record-1-identity-4",
+          "conformer-record-1-identity-5",
+          "conformer-record-1-identity-6",
+          "conformer-record-1-law-7",
+          "conformer-record-1-law-8",
+          "conformer-record-1-law-9",
+          "conformer-record-1-law-10"
+        ],
+        "destination": "conformer-record-1-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-ORG-005-002"
+        ],
+        "destination": "conformer-record-2-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "2"
+        ],
+        "destination": "conformer-record-2-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC-C01258"
+        ],
+        "destination": "conformer-record-2-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC"
+        ],
+        "destination": "conformer-record-2-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "conformation complete current term record"
+        ],
+        "destination": "conformer-record-2-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "complete-conformation-term-record"
+        ],
+        "destination": "conformer-record-2-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "family-development-observed-before-ORG-005-seal"
+        ],
+        "destination": "conformer-record-2-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "complete-cartesian-held-state-generation"
+        ],
+        "destination": "conformer-record-2-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exhaustive-graph-automorphism-census"
+        ],
+        "destination": "conformer-record-2-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exact-disjoint-orbit-equivalence"
+        ],
+        "destination": "conformer-record-2-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "development-observed-complete-external-census-after-seal"
+        ],
+        "destination": "conformer-record-2-law-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "conformer-record-2-identity-1",
+          "conformer-record-2-identity-2",
+          "conformer-record-2-identity-3",
+          "conformer-record-2-identity-4",
+          "conformer-record-2-identity-5",
+          "conformer-record-2-identity-6",
+          "conformer-record-2-law-7",
+          "conformer-record-2-law-8",
+          "conformer-record-2-law-9",
+          "conformer-record-2-law-10"
+        ],
+        "destination": "conformer-record-2-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-ORG-005-003"
+        ],
+        "destination": "conformer-record-3-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "3"
+        ],
+        "destination": "conformer-record-3-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC-C01259"
+        ],
+        "destination": "conformer-record-3-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "IUPAC"
+        ],
+        "destination": "conformer-record-3-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "conformational analysis complete current term record"
+        ],
+        "destination": "conformer-record-3-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "complete-conformational-analysis-term-record"
+        ],
+        "destination": "conformer-record-3-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "family-development-observed-before-ORG-005-seal"
+        ],
+        "destination": "conformer-record-3-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "complete-cartesian-held-state-generation"
+        ],
+        "destination": "conformer-record-3-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exhaustive-graph-automorphism-census"
+        ],
+        "destination": "conformer-record-3-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exact-disjoint-orbit-equivalence"
+        ],
+        "destination": "conformer-record-3-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "development-observed-complete-external-census-after-seal"
+        ],
+        "destination": "conformer-record-3-law-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "conformer-record-3-identity-1",
+          "conformer-record-3-identity-2",
+          "conformer-record-3-identity-3",
+          "conformer-record-3-identity-4",
+          "conformer-record-3-identity-5",
+          "conformer-record-3-identity-6",
+          "conformer-record-3-law-7",
+          "conformer-record-3-law-8",
+          "conformer-record-3-law-9",
+          "conformer-record-3-law-10"
+        ],
+        "destination": "conformer-record-3-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-ORG-005-004"
+        ],
+        "destination": "conformer-record-4-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "4"
+        ],
+        "destination": "conformer-record-4-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "NIST-CCCBDB-106978-NEUTRAL-EXPERIMENTAL"
+        ],
+        "destination": "conformer-record-4-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "NIST CCCBDB SRD 101"
+        ],
+        "destination": "conformer-record-4-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "CAS 106-97-8 neutral complete experimental-property and conformer-reference page"
+        ],
+        "destination": "conformer-record-4-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "complete-butane-conformer-census-and-experimental-surface"
+        ],
+        "destination": "conformer-record-4-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "registered-source-identity",
+          "family-development-observed-before-ORG-005-seal"
+        ],
+        "destination": "conformer-record-4-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "complete-cartesian-held-state-generation"
+        ],
+        "destination": "conformer-record-4-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exhaustive-graph-automorphism-census"
+        ],
+        "destination": "conformer-record-4-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "exact-disjoint-orbit-equivalence"
+        ],
+        "destination": "conformer-record-4-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "conformer-law",
+          "development-observed-complete-external-census-after-seal"
+        ],
+        "destination": "conformer-record-4-law-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "conformer-record-4-identity-1",
+          "conformer-record-4-identity-2",
+          "conformer-record-4-identity-3",
+          "conformer-record-4-identity-4",
+          "conformer-record-4-identity-5",
+          "conformer-record-4-identity-6",
+          "conformer-record-4-law-7",
+          "conformer-record-4-law-8",
+          "conformer-record-4-law-9",
+          "conformer-record-4-law-10"
+        ],
+        "destination": "conformer-record-4-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "conformer-record-1-target",
+          "conformer-record-1-word",
+          "conformer-record-2-target",
+          "conformer-record-2-word",
+          "conformer-record-3-target",
+          "conformer-record-3-word",
+          "conformer-record-4-target",
+          "conformer-record-4-word"
+        ],
+        "destination": "complete-conformer-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "complete-conformer-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-CONFORMER-GENERATION-EQUIVALENCE-005-value-free-vector",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "pre_source_prediction": "experiments/sealed_predictions/chemistry_org_005_conformer_generation_equivalence_pre_source.json",
+    "program_hash": "sha256:cc274e5cdf7f1c549a89ebb9ecf9e23e96bddd958516ae0b570010f6bc815c69",
+    "target_payload_hashes_inaccessible": true,
+    "unknown_target_blind_claimed": false
+  },
+  "primary_source_record": [
+    "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/org-005-primary-records-v1.json",
+    "sha256:83cf55e7f3749fc675f48984644f52ed0611d988827596327ce630cb11345089"
+  ],
+  "provenance": "observational_derivation_all-four-records-development-observed-not-claimed-blind",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27",
+  "source_hashes": {
+    "complete_targets": "sha256:35de0b7eb5b41d2a655af1bc546fcec240c64bd45c916c7b8348f7bc3edd0eec",
+    "identity_registry": "sha256:7f148f0b99d0939aefb6023521d697dc00386a0de2f7a328d6b1220377965ad4",
+    "normalized_primary": "sha256:83cf55e7f3749fc675f48984644f52ed0611d988827596327ce630cb11345089"
+  },
+  "status": "measured",
+  "target_ids": [
+    "SFT-CHEM-ORG-005-001",
+    "SFT-CHEM-ORG-005-002",
+    "SFT-CHEM-ORG-005-003",
+    "SFT-CHEM-ORG-005-004"
+  ],
+  "target_payload_hashes_released_only_after_derivation_seal": true,
+  "unknown_target_blind_prediction_claimed": false
+}

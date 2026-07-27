@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-EQUILIBRIUM-BOND-LENGTH-001",
+  "data_source_ids": [
+    "NIST-CODATA-2022-ALL-CONSTANTS",
+    "NIST-WEBBOOK-SRD69-H2-DIATOMIC-CONSTANTS",
+    "NIST-WEBBOOK-SRD69-D2-DIATOMIC-CONSTANTS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:94bbd206f6cc26328cd11d4c9cc418889da2bb8fefca3167e8ded99c9c58b3b2",
+  "falsification_condition": "The claim fails if either exact sealed physical interval does not overlap its complete NIST displayed equilibrium-distance interval; if species, isotopologue, X state, gas-phase condition, CODATA scale provenance or source uncertainty is erased; if either target is readable before sealing; if any extra coefficient or species rule is appended; or if a deliberately displaced interval is accepted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:06ab29061b07bd42b4c19d1569506b7feb6e0feb832ce402119aa41fa607e266",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e49f66e64379220bc305a7b505400352143e8361147e2f4014e1c125d895b61a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-EQUILIBRIUM-BOND-LENGTH-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8adb33a1a456365273ad4caf45219641b464d9ab23ad4e47b2833744a5d01614",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:80c5e96527305df70af979c3ae23ef8d8259e5d4e5414834f9835b9463a7a5a5",
+    "prediction_seal_hash": "sha256:7a0b1730ed6f60faef8736ffbbc3d5fd25e118a4982c414193ba512dba60ba50",
+    "program_hash": "sha256:6e336e30b80d4ff2eb621049a786c73bae3994aa471aa6133add748b27024c2f",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7b29f74f153f9887595cbfa562c29e1338fcad244e28d250a0cbd06a7415a1b6",
+    "target_material_present": false,
+    "trace_hash": "sha256:8dc5bc838f6a722d117cd0889410d95e3c96154a1f763d52a9eada0abc0a9a55"
+  },
+  "measurement_receipt_hash": "sha256:a4cc02639a1ada2e70cafe7ea3a71e4ba564f3f8af0584be7d57b8dfbef2ff27",
+  "measurements": [
+    "H2: exact predicted interval [470557014695201322848924166499563917/634652975567759859324902500000000000, 470557014841034039912907896380265091/634652975567759859324902500000000000] angstrom; NIST 0.74144 within [148287/200000, 148289/200000]; overlap True",
+    "D2: exact predicted interval [470610667121473368366229158732047057/634652975567759859324902500000000000, 470610667267322713126445183781277311/634652975567759859324902500000000000] angstrom; NIST 0.74152 within [148303/200000, 29661/40000]; overlap True",
+    "adverse displaced H2 interval rejected: True",
+    "adverse displaced D2 interval rejected: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:05ecee08c201b2692c07c82d29fa82ce8215ed5ba52a1bf958eff741ff0bd621",
+    "custodian_id": "SFT-EXP-CHEM-EQUILIBRIUM-BOND-LENGTH-001-NIST-target-custodian",
+    "experiment_registration_hash": "sha256:94bbd206f6cc26328cd11d4c9cc418889da2bb8fefca3167e8ded99c9c58b3b2",
+    "prediction_seal_hash": "sha256:7a0b1730ed6f60faef8736ffbbc3d5fd25e118a4982c414193ba512dba60ba50",
+    "registered_target_identity_hash": "sha256:7b29f74f153f9887595cbfa562c29e1338fcad244e28d250a0cbd06a7415a1b6",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d27fcd5557f1410d684929c865ac2c662a4e9f0f8a65670a451af2895994d865"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:12c2b2c9cd881d17ce8a4e0b99556e8988d0eec2af32cd9eb3e1cdf9da5969df"
+}

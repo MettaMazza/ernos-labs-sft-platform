@@ -1,0 +1,17 @@
+{
+  "all_equilibrium_composition_values_absent": true,
+  "capture_rule": "Capture the complete NIST TRC ThermoML JSON record for DOI 10.1021/acs.jced.8b00680. Retain every experimental binary vapor-liquid-equilibrium dataset in that record, every reported point in source order, every compound identity, every phase label, every reported liquid and gas composition, every temperature and pressure condition, every uncertainty field and every method/provenance field. Do not retain model-correlated or regressed values as measurements and do not discard endpoints, azeotropic rows, adverse rows or duplicate reported records.",
+  "environment_rule": "Each retained point is one held finite environment identified only by its source dataset ordinal and point ordinal before values open. Temperature and pressure values are withheld targets, not identity inputs.",
+  "identity_rule": "Each target identity is the DOI, complete-source identity, PureOrMixture dataset ordinal and point ordinal. No compound name, component composition, temperature, pressure, phase value, equilibrium result or target hash enters an identity row.",
+  "no_selected_system_row_or_composition": true,
+  "property_rule": "Retain only directly reported experimental vapor-liquid-equilibrium composition records whose ThermoML property and variable metadata bind gas and liquid phases of the same binary system; preserve all companion reported conditions and uncertainties for those records.",
+  "schema": "sft-v3-component-exchange-prefetch-capture-spec/1",
+  "source": {
+    "archive_authority": "NIST Thermodynamics Research Center ThermoML Archive",
+    "doi": "10.1021/acs.jced.8b00680",
+    "json_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.8b00680.json",
+    "landing_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.8b00680.html",
+    "source_id": "NIST-TRC-THERMOML-JCED-2018-8B00680"
+  },
+  "target_values_or_hashes_present": false
+}

@@ -1,0 +1,70 @@
+# Biology and Life Sciences branch roadmap
+
+## Scientific ownership
+
+Biology owns living organization, inheritance, regulation, development,
+organisms, populations and ecosystems.  Chemistry owns molecular identity;
+Biology owns the living processes composed from those identities.
+
+## Layer One — foundational reconstruction
+
+The foundational Biology paper must derive and test:
+
+1. the boundary between nonliving chemical networks and living organization;
+2. retained biological identity and compartment;
+3. metabolism, maintenance and resource closure;
+4. information-bearing inheritance and lawful replication;
+5. variation, selection and evolutionary recurrence;
+6. gene, genome, expression and regulation;
+7. protein sequence, fold, function and interaction boundaries;
+8. cell, membrane, transport, signalling and division;
+9. multicellular composition, differentiation and development;
+10. organism, physiology, homeostasis and reproduction;
+11. population, ecology and ecosystem interaction; and
+12. observation, experimental evidence and cross-branch handoffs.
+
+No opaque predictor may be used as a biological law.  Predictive tools may be
+comparators only; every admitted relation requires a readable derivation and
+purpose-matched empirical evidence.
+
+## Layer Two — complete field reconstruction
+
+The full Biology census covers:
+
+- biochemistry and molecular biology at the living-process boundary;
+- structural biology, biophysics and quantitative biological measurement;
+- genetics, genomics, epigenetics and inheritance;
+- RNA, proteins, folding, interactions and cellular machinery;
+- membranes, organelles, cells, cycles, signalling and cell death;
+- microbiology, virology and host-microbe systems;
+- taxonomy, systematics, phylogeny and comparative classification;
+- development, differentiation, morphology and regeneration;
+- evolution, phylogeny, adaptation and population genetics;
+- plant, fungal, animal and comparative biology;
+- marine, freshwater, terrestrial and extreme-environment biology;
+- physiology, endocrinology, metabolism and homeostasis;
+- neuroscience at the biological substrate boundary;
+- immunology, defence, tolerance and pathogen dynamics;
+- behaviour, learning and organism-environment interaction;
+- ethology, sensory biology and communication;
+- ecology, biodiversity, communities and ecosystems;
+- systems, synthetic and computational biology as scientific translations;
+- bioinformatics and biological data inference with explicit algorithmic
+  handoffs;
+- origins-of-life and major-transition hypotheses with explicit evidence
+  boundaries;
+- ageing, senescence and biological longevity;
+- conservation biology and biosphere-scale processes; and
+- astrobiology handoffs without treating absence of observation as proof.
+
+## Publication sequence
+
+The foundational edition establishes life, inheritance, cell and evolution
+laws.  Later versions add complete molecular, organismal, evolutionary and
+ecological families.  Fold Protein is rebuilt only after the relevant Biology
+and upstream branches are admitted and only as an application testbed.
+
+## Handoffs
+
+Biology exports organismal laws to Medicine, Consciousness, Earth Science and
+Social Systems.  Medical intervention and clinical efficacy belong to Medicine.

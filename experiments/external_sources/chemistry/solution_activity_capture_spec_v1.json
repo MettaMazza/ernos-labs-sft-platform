@@ -1,0 +1,17 @@
+{
+  "all_activity_composition_condition_values_absent": true,
+  "capture_rule": "Capture the complete NIST TRC ThermoML JSON record for DOI 10.1021/acs.jced.9b00694 and preserve the raw source byte-for-byte. Retain every directly reported experimental relative-water-activity dataset, every source row in source order, all binary and ternary compositions, every molality inscription, every temperature, compound and phase identity, every uncertainty, method and provenance field. Retain external zero glyphs as source declarations of an absent component and translate them only to structural EmptyOne at the SFT interface. Do not use NRTL, NRF-NRTL, mNRTL, Wilson, TNRF-mNRTL, modified-NRTL, correlated, regressed or model-calculated values as measurements, and do not discard adverse, duplicate, boundary or absent-component rows.",
+  "environment_rule": "Each target is identified only by the DOI, complete-source identity, PureOrMixture dataset ordinal and source point ordinal before values open. Compound identities, temperature, composition, activity, uncertainty, absence status and target hash remain withheld targets.",
+  "identity_rule": "No compound name or identifier, temperature, molality, activity, phase value, uncertainty, absent-component flag or target hash enters an identity row.",
+  "no_selected_system_row_or_activity": true,
+  "property_rule": "Retain every direct-value (Relative) activity of water record measured by the source's ISOPIE method, together with all condition and composition variables from the same ThermoML point. Preserve the complete raw record even if an unanticipated dataset is encountered.",
+  "schema": "sft-v3-solution-activity-prefetch-capture-spec/1",
+  "source": {
+    "archive_authority": "NIST Thermodynamics Research Center ThermoML Archive",
+    "doi": "10.1021/acs.jced.9b00694",
+    "json_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.9b00694.json",
+    "landing_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.9b00694.html",
+    "source_id": "NIST-TRC-THERMOML-JCED-2019-9B00694"
+  },
+  "target_values_or_hashes_present": false
+}

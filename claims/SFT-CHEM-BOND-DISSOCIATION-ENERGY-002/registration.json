@@ -1,0 +1,48 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "chemistry",
+  "candidate_grammar": {
+    "boundary": "The complete eight-row H2/D2 path vector: two B-prime thresholds, two atomic 1S-2S segments, two APS-1994 ground-state rows, and the later high-resolution H2-2009 and D2-2022 rows, with species, state, product channel, condition and uncertainty held and every number withheld until after sealing.",
+    "completeness_certificate": "sha256:130ac5ead7ff37b8f1d8e3c52746d61656d52a905c566ffd846e1cdd5cc9a296",
+    "expected_cardinality": 256,
+    "generator": "Generate the literal product of identity, channel, path, operation, public-input, target-custody, record-completeness and extension forms; decide all 256 using only admitted transition/conservation laws and the registered source identities."
+  },
+  "claim_id": "SFT-CHEM-BOND-DISSOCIATION-ENERGY-002",
+  "dependencies": [
+    "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-ORDER-LATTICE-001",
+    "SFT-INFO-CONSERVATION-LOSS-001",
+    "SFT-PHYS-MECH-CONSERVATION-001",
+    "SFT-PHYS-ATOMIC-HYDROGEN-RYDBERG-TERMINAL-005",
+    "SFT-CHEM-JOINT-CORRELATION-DISSOCIATION-007",
+    "SFT-CHEM-MOLECULAR-STATE-TRANSITION-009",
+    "SFT-CHEM-CONFIGURATION-ORDER-PATH-011",
+    "SFT-CHEM-EQUILIBRIUM-BOND-LENGTH-001"
+  ],
+  "empirical_protocol": "experiments/chemistry/SFT-EXP-CHEM-BOND-DISSOCIATION-ENERGY-002/registration.json",
+  "excluded_inputs": [
+    "no numerical zero, negative, irrational, imaginary, floating, signed or continuum proof value",
+    "no conventional molecular potential, wavefunction, ab-initio energy or fitted bond coefficient",
+    "no threshold, atomic-transition or dissociation value in the executable law or prediction",
+    "no target-derived atomic transition, selected residual correction or species exception",
+    "no erased X state, rotational state, B-prime channel, atomic product state or measurement condition",
+    "no omission of a historical or current registered target row",
+    "no claim beyond the registered H2/D2 homolytic ground-state boundary"
+  ],
+  "provenance_classes": [
+    "observational_derivation"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "For each registered H2 or D2 channel, the B-prime threshold terminates in one ground-state atom and one 2s atom, while X-state ground dissociation terminates in two ground-state atoms. Their shared ground-atom prefix cancels structurally, so D0(M2) is exactly the B-prime threshold after the held atomic 1S-2S separation is Taken. This relation is sealed without measured values; only afterward does the complete threshold, atomic and historical/later ground-dissociation vector test it exactly.",
+  "status": "empirically_tested",
+  "title": "Exact H2/D2 ground-state bond-dissociation path relation"
+}

@@ -17,7 +17,7 @@ import render_platform_paper as base
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/chemistry/FROM_FOLD_TO_CHEMISTRY.md"
-OUTPUT = ROOT / "output/pdf/from-fold-to-chemistry-branch-paper-001.pdf"
+OUTPUT = ROOT / "output/pdf/from-fold-to-chemistry-branch-paper-001-v1.2.pdf"
 METADATA = ROOT / "publication/chemistry_zenodo_metadata.json"
 
 
@@ -42,7 +42,7 @@ def cover(authorized: bool, doi: str):
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph("Third clean-room reconstruction - Chemistry inventory complete<br/>86 required Chemistry claims and 7 explicit upstream claims<br/>24 July 2026" + (f"<br/>DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph("Version 1.2 - secure foundation and admitted field extension<br/>176 Chemistry claims, 45,056 complete candidate decisions and 704 controls<br/>27 July 2026" + (f"<br/>{'DOI' if authorized else 'Previous version DOI'}: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
     ]
@@ -72,7 +72,7 @@ def main() -> None:
     document = BaseDocTemplate(
         str(OUTPUT), pagesize=A4, rightMargin=16 * mm, leftMargin=16 * mm,
         topMargin=21 * mm, bottomMargin=18 * mm, title="From Fold to Chemistry",
-        author="Maria Smith", subject="Completed Smithian Fold Theory Chemistry branch",
+        author="Maria Smith", subject="Secure Chemistry foundation and admitted field-wide extension in Smithian Fold Theory",
         creator="Ernos Labs publication renderer",
     )
     frame = Frame(document.leftMargin, document.bottomMargin, document.width, document.height, id="body")

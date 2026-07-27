@@ -1,0 +1,42 @@
+{
+  "schema": "sft-v3-thermal-conductivity-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-THERMO-018",
+  "claim_id": "SFT-CHEM-THERMAL-CONDUCTIVITY-RELATION-018",
+  "capture_rule": "Capture every byte and every compound, citation, dataset, property, variable, constraint, phase, method, uncertainty and point from each complete NIST ThermoML source. Construct the empirical vector from every direct-value thermal-conductivity property point in those sources. Preserve every non-thermal-conductivity companion property and dataset but exclude it from thermal-conductivity measurements. Do not select substances, mixtures, phases, compositions, temperatures, pressures, methods, datasets, properties or rows within a source.",
+  "source_selection_boundary": "The three complete authoritative sources are fixed before any thermal-conductivity value, uncertainty or target hash is captured and before executable-law registration, candidate enumeration or prediction-program construction. Coverage is fixed structurally: pure, binary and ternary chemical systems; gas, liquid and crystalline phases; composition, temperature and pressure carriers; and independently named measurement methods. No observed result value selects a source or row.",
+  "sources": [
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2013-58-663-670",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/je301171y",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/je301171y.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/je301171y.html",
+      "capture_scope": "complete pure, binary and ternary liquid-system source"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-JCT-2019-133-135-142",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.jct.2019.01.028",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2019.01.028.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2019.01.028.html",
+      "capture_scope": "complete binary refrigerant gas-and-liquid source"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-FPE-2018-477-78-86",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.fluid.2018.08.016",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.08.016.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.08.016.html",
+      "capture_scope": "complete pure heavy-alkane liquid-and-crystalline source"
+    }
+  ],
+  "admissible_thermal_conductivity_property_name": "Thermal conductivity, W/m/K",
+  "all_substance_mixture_phase_composition_temperature_pressure_method_value_uncertainty_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "Fourier_constitutive_temperature_gradient_kinetic_theory_mixing_temperature_law_logarithm_or_continuum_permitted": false,
+  "non_thermal_conductivity_companions_preserved_but_excluded_from_measurements": true,
+  "external_zero_glyph_if_encountered_must_translate_postseal_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

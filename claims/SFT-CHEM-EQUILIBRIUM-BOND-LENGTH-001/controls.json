@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-EQUILIBRIUM-BOND-LENGTH-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:e02f662e7c0aa692f67d0e8ed4f95ff1659257b5f822d8b1edd4d124578eda34"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b6058901f49f5d30bdd0b9f772615573c5a67f1443350cdbfbe668e0e6ea09cb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2262681aa14d89d7542bb2d5e13de2e19cb730e877a496a3a01c2e929cf3d3ab"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:7668d5103f2085ff8a84019c7ee04624068999d18dde947556032b18b10fcfcb"
+    }
+  ]
+}

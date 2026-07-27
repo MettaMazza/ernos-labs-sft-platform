@@ -1,0 +1,183 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_rows_required": true,
+  "claim_id": "SFT-CHEM-EQUILIBRIUM-BOND-LENGTH-001",
+  "custody_protocol": {
+    "identity_registry_path": "experiments/external_sources/chemistry/equilibrium_bond_length_target_identities_v1.json",
+    "scale_input_path": "experiments/external_sources/chemistry/equilibrium_bond_length_scale_input_v1.json",
+    "target_release_requires_prediction_seal": true,
+    "withheld_target_path": "experiments/external_sources/chemistry/equilibrium_bond_length_withheld_targets_v1.json"
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-EQUILIBRIUM-BOND-LENGTH-001",
+  "external_measurement_sources": [
+    {
+      "database": "2022 CODATA complete fixed-width table",
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "public same-dimension atomic-length reference",
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS"
+    },
+    {
+      "database": "Chemistry WebBook SRD 69",
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "withheld H2 equilibrium-distance target",
+      "source_id": "NIST-WEBBOOK-SRD69-H2-DIATOMIC-CONSTANTS"
+    },
+    {
+      "database": "Chemistry WebBook SRD 69",
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "withheld D2 equilibrium-distance target",
+      "source_id": "NIST-WEBBOOK-SRD69-D2-DIATOMIC-CONSTANTS"
+    }
+  ],
+  "falsification_condition": "The claim fails if either exact sealed physical interval does not overlap its complete NIST displayed equilibrium-distance interval; if species, isotopologue, X state, gas-phase condition, CODATA scale provenance or source uncertainty is erased; if either target is readable before sealing; if any extra coefficient or species rule is appended; or if a deliberately displaced interval is accepted.",
+  "frozen_relation": "For the complete registered gas-phase H2/D2 X-state boundary, the common Fold electronic base is seven-fifths of the held atomic-length carrier. The binary-order alpha return adds twenty-one alpha squared for H2 and twenty-four alpha squared for D2. Thus r_e(H2)/a0=7/5+21 alpha^2 and r_e(D2)/a0=7/5+24 alpha^2 before either NIST distance target is released.",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/equilibrium_bond_length_target_identities_v1.json",
+    "sha256:539cefd200cd81a2cd3a9d8986f7c4b531999bdf1b633b621eaecf4fecb75cd8"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "atomic-lower"
+        ],
+        "destination": "atomic-lower",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "atomic-upper"
+        ],
+        "destination": "atomic-upper",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "molecular-isotopologue",
+          "H2"
+        ],
+        "destination": "h2-key",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "1778447769072972315618307",
+          "1269305951135519718649805"
+        ],
+        "destination": "h2-multiplier",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "atomic-lower",
+          "h2-multiplier"
+        ],
+        "destination": "h2-lower",
+        "opcode": "product"
+      },
+      {
+        "arguments": [
+          "atomic-upper",
+          "h2-multiplier"
+        ],
+        "destination": "h2-upper",
+        "opcode": "product"
+      },
+      {
+        "arguments": [
+          "h2-lower",
+          "h2-upper"
+        ],
+        "destination": "h2-interval",
+        "opcode": "pair"
+      },
+      {
+        "arguments": [
+          "molecular-isotopologue",
+          "D2"
+        ],
+        "destination": "d2-key",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "1778650545856292988405247",
+          "1269305951135519718649805"
+        ],
+        "destination": "d2-multiplier",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "atomic-lower",
+          "d2-multiplier"
+        ],
+        "destination": "d2-lower",
+        "opcode": "product"
+      },
+      {
+        "arguments": [
+          "atomic-upper",
+          "d2-multiplier"
+        ],
+        "destination": "d2-upper",
+        "opcode": "product"
+      },
+      {
+        "arguments": [
+          "d2-lower",
+          "d2-upper"
+        ],
+        "destination": "d2-interval",
+        "opcode": "pair"
+      },
+      {
+        "arguments": [
+          "h2-key",
+          "h2-interval",
+          "d2-key",
+          "d2-interval"
+        ],
+        "destination": "equilibrium-length-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "equilibrium-length-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-EQUILIBRIUM-BOND-LENGTH-001-exact-interval-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "program_hash": "sha256:4e78e44ea091f7429c36ec37efd83b962f94945f37e053181ef000ce346e0f61",
+    "target_content_inaccessible": true
+  },
+  "provenance": "observational_derivation",
+  "public_scale_input": [
+    "experiments/external_sources/chemistry/equilibrium_bond_length_scale_input_v1.json",
+    "sha256:c29c269b522c73f2bdc08dc10ac2bf9599de5ce35edd4b5992fb27e2b874af53"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "identity_registry": "sha256:539cefd200cd81a2cd3a9d8986f7c4b531999bdf1b633b621eaecf4fecb75cd8",
+    "scale_input": "sha256:c29c269b522c73f2bdc08dc10ac2bf9599de5ce35edd4b5992fb27e2b874af53",
+    "withheld_targets": "sha256:2223ed429a82a16bf2945235ba19941aea7553238fbf9c990f4f37662d5c6f9f"
+  },
+  "status": "measured",
+  "target_content_absent_from_law_and_scale_input": true,
+  "target_ids": [
+    "NIST-H2-X1SIGMA-G-EQUILIBRIUM-DISTANCE",
+    "NIST-D2-X1SIGMA-G-EQUILIBRIUM-DISTANCE"
+  ],
+  "withheld_target_registry": [
+    "experiments/external_sources/chemistry/equilibrium_bond_length_withheld_targets_v1.json",
+    "sha256:2223ed429a82a16bf2945235ba19941aea7553238fbf9c990f4f37662d5c6f9f"
+  ]
+}

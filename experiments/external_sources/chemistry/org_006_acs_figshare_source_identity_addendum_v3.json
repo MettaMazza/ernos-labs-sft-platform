@@ -1,0 +1,35 @@
+{
+  "schema": "sft-v3-value-blind-source-identity-addendum/3",
+  "claim_id": "SFT-CHEM-CONFORMER-POPULATION-ORDERING-006",
+  "obligation_id": "SFT-CHEM-OBL-ORG-006",
+  "registered_date": "2026-07-27",
+  "preserved_v2_addendum": [
+    "experiments/external_sources/chemistry/org_006_value_blind_source_identity_addendum_v2.json",
+    "sha256:5e53e3d3278b4ae93e6f2ca3e30459ff5afd5c85e99bdd3dd13d4867e93af8c3"
+  ],
+  "preserved_v2_capture": [
+    "experiments/external_sources/chemistry/snapshots/org-006-value-blind-v2/source-inventory-v2.json",
+    "sha256:7030ee5cd2c738d0f89b849626517432e1ced739b15e26556e5f4c4fb2601fe1"
+  ],
+  "adverse_predecessor_outcomes_disclosed": "V1 returned the NIST lost-molecule response, an OSTI metadata-only record and an OSTI full-text HTTP 404. V2 preserved every PubMed-linked response; both registered full-text providers failed, and the ACS primary request failed before returning any supplementary link. No predecessor supplied a quantitative population table.",
+  "selection_rule": "Submit exactly one fixed machine query to the public Figshare API for the already registered ACS resource DOI 10.1021/jp404315t. Retain every exact-resource-DOI result in returned order, fetch each complete article-metadata record, and capture every file download URL in each record in returned order. Do not retain nonmatching resource DOIs and do not stop after any favorable result.",
+  "development_information_disclosed": "The ACS article title, DOI, qualitative summary and supplementary filename jp404315t_si_001.txt were observed before this addendum. The Figshare repository existence is infrastructural knowledge. Exact repository result identities, item identifiers, file identifiers, download URLs, file bytes, temperatures, energies, populations, couplings, rows and availability outcomes remain unopened.",
+  "exact_repository_results_item_ids_file_ids_download_urls_values_rows_or_outcomes_present": false,
+  "complete_registered_source_group_count": 1,
+  "source_groups": [
+    {
+      "source_group_id": "ACS-FIGSHARE-EXACT-RESOURCE-DOI-JP404315T",
+      "authority": "American Chemical Society public Figshare research repository",
+      "query_method": "POST",
+      "uri": "https://api.figshare.com/v2/articles/search",
+      "canonical_query_body": {
+        "resource_doi": "10.1021/jp404315t",
+        "order": "published_date",
+        "order_direction": "asc",
+        "page_size": 1000
+      },
+      "identity": "Complete public Figshare search surface for exact ACS resource DOI 10.1021/jp404315t, every exact-match metadata record and every returned file",
+      "custody_class": "fixed-doi-query-identity-only-exact-results-files-values-and-outcomes-unopened-before-ORG-006-v3-value-seal"
+    }
+  ]
+}

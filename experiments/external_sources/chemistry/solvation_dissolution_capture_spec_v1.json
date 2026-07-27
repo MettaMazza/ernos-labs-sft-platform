@@ -1,0 +1,37 @@
+{
+  "schema": "sft-v3-solvation-dissolution-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-THERMO-015",
+  "claim_id": "SFT-CHEM-SOLVATION-DISSOLUTION-FREE-ORDER-015",
+  "capture_rule": "Capture every data row and every field from the immutable FreeSolv database revision and every direct-value point, compound record, property record, variable, constraint, phase and citation from the complete NIST ThermoML record. Preserve calculated or correlated companion fields as source provenance but exclude them from the measured vector, Fold law, candidate decisions and prediction program. Do not select compounds, solvents, states, conditions, datasets or rows.",
+  "source_selection_boundary": "The two complete authoritative surfaces were identified during disclosed observational source research. This specification is sealed before executable-law registration, candidate enumeration, prediction-program construction or measurement release. No source value, uncertainty, row hash or target hash is present here or may enter those pre-release artifacts.",
+  "sources": [
+    {
+      "source_id": "FREESOLV-0.52-COMMIT-6C7D19B",
+      "measurement_body": "MobleyLab FreeSolv curated experimental hydration free-energy database",
+      "source_class": "solvation",
+      "immutable_revision": "6c7d19b4b565537365ffd22006aa2cd4643200c6",
+      "raw_url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/database.txt",
+      "landing_url": "https://github.com/MobleyLab/FreeSolv/tree/6c7d19b4b565537365ffd22006aa2cd4643200c6",
+      "primary_paper_doi": "10.1007/s10822-014-9747-x",
+      "capture_scope": "complete semicolon-delimited database, all experimental values and uncertainties, all original experimental references, and all calculated companion fields and notes"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2016-61-1470-1476",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "source_class": "dissolution",
+      "doi": "10.1021/acs.jced.5b00870",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.5b00870.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.5b00870.html",
+      "capture_scope": "complete ThermoML source with all seven direct-value solubility datasets and all binary and mixed-solvent points"
+    }
+  ],
+  "all_compound_solute_solvent_state_condition_value_uncertainty_reference_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "force_field_continuum_solvent_partition_activity_solubility_product_logarithm_or_correlation_permitted": false,
+  "calculated_and_correlated_companion_fields_preserved_but_excluded_from_measurements": true,
+  "external_signed_inscriptions_must_translate_postseal_to_held_orientation_plus_exact_positive_magnitude": true,
+  "external_zero_glyph_if_encountered_must_translate_postseal_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

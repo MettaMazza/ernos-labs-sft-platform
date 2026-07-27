@@ -1,0 +1,1654 @@
+/*
+  File:  jcamp-plot.js
+
+  Mehthods for displayig JCAMP-DX files in a web browser.
+
+  Developed by the NIST Chemical Sciences Divison.
+
+  This software was developed at the National Institute of Standards
+  and Technology by employees of the Federal Government in the course
+  of their official duties. Pursuant to title 17 Section 105 of the
+  United States Code this software is not subject to copyright protection
+  and is in the public domain. NIST assumes no responsibility whatsoever
+  for its use by other parties, and makes no guarantees, expressed or
+  implied, about its quality, reliability, or any other characteristic.
+
+  This software requires third party software to function. Use or mention
+  of technologies or programs in this code is not intended to imply
+  recommendation or endorsement by the National Institute of Standards
+  and Technology, nor is it intended to imply that these items are
+  necessarily the best available for the purpose.
+*/
+
+/* Use strict mode, if supported, for the contents of this file. */
+"use strict"
+
+/* Declare global variables. */
+var _jcamp_display_info = [];
+var _jcamp_info = [];
+
+
+function display_jcamp(jcamp_text, reference_text, div_id, height,
+                       preload_function)
+{
+  _jcamp_display_info.push([jcamp_text, reference_text, div_id,
+                            height, preload_function])
+}
+
+
+async function set_up_jcamp_displays()
+{
+  // Set up jcamp displays.
+  for(var index = 0; index < _jcamp_display_info.length; index++)
+  {
+    // If this is not the first display, take a short
+    // break so we don't beat up the server.
+    if(index > 0)
+    {
+      // Sleep for two seconds.
+      await new Promise(r => setTimeout(r, 2000));
+    }
+
+    // Get information for the display at this index.
+    var info = _jcamp_display_info[index]
+
+    // Check for a pre-load function.
+    if(typeof info[4] === "function")
+    {
+      info[4]()
+    }
+
+    // Set up the display.
+    set_up_jcamp_display(info[0], info[1], info[2], info[3]);
+  }
+
+  // Clear the JCAMP display information array.
+  _jcamp_display_info = [];
+}
+
+
+jQuery(document).ready(function()
+{
+  // Set up any displays which have been mandated for this document.
+  set_up_jcamp_displays();
+});
+
+
+function add_select(div_id, id_suffix, title, options, parent)
+{
+  var select = document.createElement('select');
+
+  select.style.display = 'none';
+
+  select.id = div_id + id_suffix;
+  select.setAttribute('aria-label', title);
+
+  for(var index = 0; index < options.length; index++)
+  {
+    var option = document.createElement('option');
+
+    option.value = options[index];
+    option.appendChild(document.createTextNode(options[index]));
+
+    select.appendChild(option);
+  }
+
+  select.onchange = function() {update_jcamp_display(div_id, false);}
+  parent.appendChild(select);
+
+  return select;
+}
+
+
+function add_button(div_id, id_suffix, label, parent)
+{
+  var button = document.createElement('input')
+
+  button.id = div_id + id_suffix
+  button.type = 'button';
+  button.style.display = 'none';
+  button.style.marginLeft = '1ex';
+  button.style.marginRight = button.style.marginLeft;
+  button.value = label;
+  button.onclick = function() {handle_button(div_id, label);}
+
+  parent.appendChild(button);
+
+  return button;
+}
+
+
+function create_jcamp_display(div_id, height)
+{
+  var container = document.getElementById(div_id);
+  var y_width = 25;
+
+  var title_div = document.createElement('div');
+  title_div.id = div_id + '_title_div';
+  title_div.style.width = '100%';
+  title_div.style.textAlign = 'center';
+
+  var title_p = document.createElement('p');
+  title_p.id = div_id + '_title_p';
+  title_p.style.textAlign = 'center';
+
+  var subtitle_p = document.createElement('p');
+  subtitle_p.id = div_id + '_subtitle_p';
+  subtitle_p.style.textAlign = 'center';
+
+  var message_p = document.createElement('p');
+  message_p.id = div_id + '_message_p';
+  message_p.style.textAlign = 'left';
+
+  title_div.appendChild(title_p);
+  title_div.appendChild(subtitle_p);
+  title_div.appendChild(message_p);
+  container.appendChild(title_div);
+
+  var plot_div = document.createElement('div');
+  plot_div.id = div_id + '_plot_div';
+  plot_div.style.height = height + 'px';
+  plot_div.style.width = '100%';
+
+  container.appendChild(plot_div);
+
+  var control_div = document.createElement('div');
+  control_div.id = div_id + '_control_div';
+
+  var control_p = document.createElement('p');
+  control_p.id = div_id + '_control_p';
+  control_p.style.textAlign = 'center';
+  control_p.style.marginBottom = '0px';
+
+  var prior_button = add_button(div_id, '_prior_button',
+                                '<<', control_p);
+
+  var reserse_select = add_select(div_id, '_reverse_select',
+                                  'select X axis direction',
+                                  ['normal X', 'reverse X'],
+                                  control_p);
+
+  var unit_select = add_select(div_id, '_unit_select',
+                               'select X axis units',
+                               ['cm-1', '\u00B5m'],
+                               control_p);
+
+  var quantity_select = add_select(div_id, '_quantity_select',
+                                   'select y axis value type',
+                                   ['Transmittance', 'Absorbance'],
+                                   control_p);
+
+
+  var next_button = add_button(div_id, '_next_button',
+                               '>>', control_p);
+
+  control_div.appendChild(control_p);
+  container.appendChild(control_div);
+}
+
+
+function normalize_text(rules, text)
+{
+
+  // Loop through the rules.
+  for(var index = 0; index < rules.length; index++)
+  {
+    // See if a rule matches.
+    if(text_match(text, rules[index][0]))
+    {
+      return rules[index][1];
+    }
+  }
+
+  // No match, return the original string.
+  return text;
+}
+
+
+function has_string_content(item)
+{
+  return ((typeof item) == 'string') && (item.length > 0);
+}
+
+
+function string_content_match(item_one, item_two)
+{
+  return (((typeof item_one) == 'string') &&
+          ((typeof item_two) == 'string') &&
+          (item_one.toLowerCase().replace(/\s+/g, '') ==
+           item_two.toLowerCase().replace(/\s+/g, '')));
+}
+
+
+function get_label(axis_info)
+{
+  // Apply the same rules to units and labels since they are often
+  // used interchangably in JCAMP-DX.
+  var rules = [[['relativeintensity',
+                 'relintensity',
+                 'rel.intensity'], 'Relative Intensity'],
+               [['absorbance'], 'Absorbance'],
+               [['transmittance'], 'Transmitance'],
+               [['%transmission',
+                 'percenttransmission',
+                 '%transmittance',
+                 'percenttransmittance'], 'Percent Transmission'],
+               [['m/z'], 'm/z'],
+               [['\u00B5m',
+                 'um',
+                 'micrometers'], 'Micrometers'],
+               [['nm',
+                 'nanometers'], 'Nanometers']];
+
+  // Nomralize common strings.
+  var text = normalize_text(rules, axis_info.label);
+
+  // See if units are supplied,
+  if(axis_info.units.length > 0)
+  {
+    // Normalize common strings.
+    var units = normalize_text(rules, axis_info.units);
+
+    // Add the units.
+    if(text.length > 0)
+    {
+      text += (' (' +  units  + ')');
+    }
+    else
+    {
+      text = units;
+    }
+  }
+
+  // Return the completed label.
+  return text;
+}
+
+
+function escape_html(text)
+{
+  // Define characters that need to be escaped.
+  var escape_map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"' : '&quot;',
+    '\'' : '&#39;'
+  };
+
+  // Replace characters as appropriate.
+  text = text.replace(/[&<>\'\"]/g, function(char)
+                      {return escape_map[char] || char;});
+
+  // Return the escaped string.
+  return text;
+}
+
+
+function set_element_text(element_id, text)
+{
+  // Get the DOM element.
+  var element = document.getElementById(element_id);
+
+  // Set the contents based on broweser capabilities.
+  if(element.textContent)
+  {
+    element.textContent = text;
+  }
+  else
+  {
+    element.innerHTML = escape_html(text);
+  }
+}
+
+
+function get_max_abs_y_value(jcamp_data)
+{
+  // Check the arguremnt.
+  if(jcamp_data.get_value_count() < 1)
+  {
+    return Number.NaN;
+  }
+
+  // Initialize the max value.
+  var y_max = Math.abs(jcamp_data.get_value(0).get_y());
+
+  // Read the rest of the data.
+  for(var index = 1; index < jcamp_data.get_value_count(); index++)
+  {
+    // Get the current data point.
+    y_max= Math.max(Math.abs(jcamp_data.get_value(index).get_y()),
+                    y_max);
+  }
+
+  return y_max;
+}
+
+
+function modify_x_value(x, data_options, series_options)
+{
+  // See if there is a transform function.
+  if(data_options.x_transform != null)
+  {
+    x = data_options.x_transform(x);
+  }
+
+  // Return the desired value.
+  return x;
+}
+
+
+function modify_y_value(y, data_options, series_options)
+{
+  // If appropriate, scale the value.
+  if(!isNaN(series_options.y_scale))
+  {
+    y = y * series_options.y_scale;
+  }
+
+  // See if there is a transform function.
+  if(data_options.y_transform != null)
+  {
+    y = data_options.y_transform(y);
+  }
+
+  // If appropriate, reverse the Y coordinate.
+  if(series_options.reverse_y)
+  {
+    y = (-y);
+  }
+
+  // Return the desired value.
+  return y;
+}
+
+
+function get_ir_uncert_params(jcamp_data)
+{
+  // Check for an uncertinty string.
+  var ir_uncert = jcamp_data.get_field(JDX_CONST.NIST_Y_UNCERTAINTY_LABEL);
+
+  if(!has_string_content(ir_uncert))
+  {
+    return null;
+  }
+
+  // See if the string matches the approipraite format.
+  var ir_uncert_re = RegExp('([0-9\.]*?) % relative.*' +
+                            'B=([0-9\.E\-]+),' +
+                            'C=([0-9\.E\-]+),' +
+                            'D=([0-9\.E\-]+)');
+
+  var match = ir_uncert_re.exec(ir_uncert);
+
+  if(match != null)
+  {
+    return {rel_error : parseFloat(match[1]) / 100.0,
+            b : parseFloat(match[2]),
+            c : parseFloat(match[3]),
+            d : parseFloat(match[4])};
+  }
+
+  // Unknown string, return null.
+  return null;
+}
+
+
+
+function get_ir_uncert_values(values, jcamp_data, data_options,
+                              series_options, upper_bound)
+{
+  // Get the parameters.
+  var params = series_options.ir_uncert;
+
+  // See if a line segment separtor should be inserted.
+  if((values.length > 0) &&
+     (values[values.length - 1] != null))
+  {
+    values.push(null);
+  }
+
+  // Read all the data.
+  for(var index = 0; index < jcamp_data.get_value_count(); index++)
+  {
+    // Get the current data point.
+    var value = jcamp_data.get_value(index)
+
+    // Get the X  and Y values.
+    var x = value.get_x();
+    var y = value.get_y();
+
+    // Check the X value to see if uncertinty can be computed.
+    if(((x >= 1325.) && (x <= 1900.)) ||
+       ((x >= 2050.) && (x <= 2225.)) ||
+       ((x >= 2295.) && (x <= 2385.)) ||
+       ((x >= 3550.) && (x <= 3950.)))
+    {
+      // See if we need to insert a line segment separtor.
+      if((values.length != 0) &&
+         (values[values.length - 1] != null))
+      {
+        values.push(null);
+      }
+
+      // Skip to the next value.
+      continue;
+    }
+
+    // Compute the uncertinty based on th y value.
+    if(y >= 1.0e-4)
+    {
+      var uncert = params.rel_error * y;
+    }
+    else
+    {
+      var uncert = 2.0 * Math.sqrt((y * y * params.b) +
+                                   (y * params.c) +
+                                   params.d);
+    }
+
+    // Update the x value.
+    x = modify_x_value(x, data_options, series_options);
+
+    // Get the y value.
+    y = modify_y_value(upper_bound ? y + uncert : y - uncert,
+                       data_options, series_options);
+
+    // Save data.
+    values.push([x, y]);
+  }
+}
+
+
+function add_jcamp_data(plot_data, jcamp_data, is_ref,
+                        data_options)
+{
+  // Create an object to store options for this series.
+  var series_options = {};
+
+  // See if we should reverse the Y value.
+  series_options.reverse_y = is_ref && data_options.is_peak_table;
+
+  // See if there are labels.
+  series_options.have_labels = ((jcamp_data.get_data_types() &
+                                 JDX_CONST.LABEL_DATA_PRESENT) != 0);
+
+  series_options.x_value_labels =
+    (!data_options.canvas_emulated &&
+     text_match(jcamp_data.get_field(JDX_CONST.DATA_TYPE_LABEL),
+                ['massspectrum']));
+
+  // See if there are IR uncertenties.
+  series_options.ir_uncert = get_ir_uncert_params(jcamp_data);
+
+  // See if Y values should be normalized.
+  series_options.y_scale = Number.NaN;
+
+  if(data_options.y_normalize)
+  {
+    var y_max = get_max_abs_y_value(jcamp_data);
+
+    if(!isNaN(y_max))
+    {
+      series_options.y_scale = 100.0 / y_max;
+    }
+  }
+
+  // Declare an array for XY data.
+  var values = [];
+
+  // If appropriate, declare an array for point labels.
+  if(series_options.have_labels || series_options.x_value_labels)
+  {
+    var labels = [];
+  }
+
+  // Read all the data.
+  for(var index = 0; index < jcamp_data.get_value_count(); index++)
+  {
+    // Get the current data point.
+    var value = jcamp_data.get_value(index)
+
+    // Get the X value.
+    var x = modify_x_value(value.get_x(), data_options, series_options);
+
+    // Get the Y value.
+    var y = modify_y_value(value.get_y(), data_options, series_options);
+
+    // Save the (x, y) pair.
+    values.push([x, y]);
+
+    // If appropriate, save the label.
+    if(series_options.have_labels)
+    {
+      labels.push(value.get_label());
+    }
+    else if(series_options.x_value_labels)
+    {
+      labels.push(x.toString())
+    }
+  }
+
+  // Start buiding up series information.
+  var series = {data : values,
+                shadowSize : 0};
+
+  // Set the color using accesible colors from
+  // https://jfly.uni-koeln.de/color/#pallet
+  if(data_options.alt_colors)
+  {
+    // #009E73 = Bluish Green
+    // #0072B2 = Blue
+    series.color = is_ref ? '#009E73' : '#0072B2';
+  }
+  else
+  {
+    // #0072B2 = Blue
+    // #D55E00 = Vermillion
+    series.color = is_ref ? '#0072B2' : '#D55E00';
+  }
+
+  // Set the series label.
+  if(data_options.have_ref_data || (series_options.ir_uncert != null))
+  {
+    series.label = is_ref ? 'reference' : 'spectrum';
+  }
+
+  // If appropriate, label values.
+  if(series_options.have_labels || series_options.x_value_labels)
+  {
+    series.showLabels = true;
+    series.canvasRender = true;
+    series.labelPlacement = series_options.reverse_y ? 'below' : 'above';
+    // Note that we need to explicitly specify the font because the default
+    // won't work with an emulated canvas.
+    series.cFont = '9px sans-serif';
+    series.labels = labels;
+  }
+
+  // Check for a peak table.
+  if(data_options.is_peak_table)
+  {
+    series.lines = {show: false};
+    series.bars =  {show: true, fill: 1, align: 'center',
+                    horizontal: false};
+
+    // If x axis is m/z, set peak width to one tenth of a unit.
+    if(text_match(jcamp_data.get_field(JDX_CONST.X_UNITS_LABEL),
+                  ['m/z']))
+    {
+      series.bars.barWidth = 0.1;
+    }
+  }
+
+  // Save series data.
+  plot_data.push(series);
+
+  // Check for NIST IR uncertainties.
+  if(series_options.ir_uncert != null)
+  {
+    var uncert_values = []
+
+    get_ir_uncert_values(uncert_values, jcamp_data, data_options,
+                         series_options, true);
+    get_ir_uncert_values(uncert_values, jcamp_data, data_options,
+                         series_options, false);
+
+    var uncert_series = {data : uncert_values,
+                         color : 'gray',
+                         lines : {lineWidth : 1},
+                         label : 'uncertinty',
+                         shadowSize : 0};
+
+      plot_data.push(uncert_series);
+  }
+}
+
+
+function get_plot_data_range(plot_data)
+{
+  // initia;ize limits
+  var x_min = null;
+  var x_max = null;
+
+  var y_min = null;
+  var y_max = null;
+
+  // Loop through all data series.
+  var total_series = plot_data.length
+
+  for(var series_index = 0;
+      series_index < total_series;
+      series_index++)
+  {
+    // Get the data for this series.
+    var data = plot_data[series_index].data;
+
+    // Loop thropugh all of the values.
+    var total_values = data.length
+
+    for(var value_index = 0;
+        value_index < total_values;
+        value_index++)
+    {
+      // Get the value.
+      var value = data[value_index];
+
+      // Check the x value.
+      var x = value[0];
+
+      if(typeof x == 'number')
+      {
+        if((x_max == null) || (x > x_max))
+        {
+          x_max = x;
+        }
+
+        if((x_min == null) || (x < x_min))
+        {
+          x_min = x;
+        }
+      }
+
+      // Check the y value.
+      var y = value[0];
+
+      if(typeof y == 'number')
+      {
+        if((y_max == null) || (y > y_max))
+        {
+          y_max = y;
+        }
+
+        if((y_min == null) || (y < y_min))
+        {
+          y_min = y;
+        }
+      }
+    }
+  }
+
+  // Return an object with the range.
+  return {x_min: x_min,
+          x_max: x_max,
+          y_min: y_min,
+          y_max: y_max};
+}
+
+
+function jcamp_unselect_handler(event, ranges)
+{
+  // Get plot info.
+  var plot_id = event.target.id;
+  var div_id = plot_id.substring(0, plot_id.search(/_[A-Za-z]+_[A-Za-z]+$/));
+
+  // See of any ranges have been set.
+  var options = _jcamp_info[div_id].plot_object.getOptions();
+
+  if((typeof options.xaxes[0].min == 'number') ||
+     (typeof options.xaxes[0].max == 'number') ||
+     (typeof options.yaxes[0].min == 'number') ||
+     (typeof options.yaxes[0].max == 'number'))
+  {
+    // Revert to the orignal range.
+    options.xaxes[0].min = (typeof options.xaxis.min_original == "number") ?
+      options.xaxis.min_original : null;
+    options.xaxes[0].max = (typeof options.xaxis.max_original == "number") ?
+      options.xaxis.max_original : null;
+
+    options.yaxes[0].min = null;
+    options.yaxes[0].max = null;
+
+    // Update the plot.
+    _jcamp_info[div_id].plot_object.setupGrid();
+    _jcamp_info[div_id].plot_object.draw();
+   }
+}
+
+
+function jcamp_select_handler(event, ranges)
+{
+  // Get the IDs for the plot and the div that contains it.
+  var plot_id = event.target.id;
+  var div_id = plot_id.substring(0, plot_id.search(/_[A-Za-z]+_[A-Za-z]+$/));
+
+  // Get the selected range.
+  var x_min = ranges.xaxis.from;
+  var x_max = ranges.xaxis.to;
+
+  var y_min = ranges.yaxis.from;
+  var y_max = ranges.yaxis.to;
+
+  // See if there is data in the selected range.
+  var plot_data = _jcamp_info[div_id].plot_data;
+  var have_data = false;
+
+  for(var data_index = 0; data_index < plot_data.length; data_index++)
+  {
+    var series = plot_data[data_index].data
+
+    if(typeof plot_data[data_index].bars === 'undefined')
+    {
+      var bars = false
+    }
+    else
+    {
+      var bars = plot_data[data_index].bars.show;
+    }
+
+    for(var series_index = 0; series_index < series.length; series_index++)
+    {
+      // Check for a line segment separator.
+      if(series[series_index] == null)
+      {
+        continue;
+      }
+
+      // Check for a valid point.
+      var x = series[series_index][0]
+      var y = series[series_index][1]
+
+      if((x == null) || (y == null) ||
+         (x < x_min) || (x > x_max))
+      {
+        continue;
+      }
+
+      // See if the point is out of the specified range.
+      if(((y < y_min) || (y > y_max)) &&
+         (!bars || (0.0 < y_min) || (0.0 > y_max)))
+      {
+        continue;
+      }
+
+      // Note that we have data in range.
+      have_data = true;
+
+      break;
+    }
+  }
+
+  // See if the plot should be zoomed.
+  var options = _jcamp_info[div_id].plot_object.getOptions();
+
+  if(have_data)
+  {
+    // Set the new plot range.
+    options.xaxes[0].min = x_min;
+    options.xaxes[0].max = x_max;
+
+    options.yaxes[0].min = y_min;
+    options.yaxes[0].max = y_max;
+  }
+  else
+  {
+    // Revert to the original range.
+    options.xaxes[0].min = (typeof options.xaxis.min_original == "number") ?
+      options.xaxis.min_original : null;
+    options.xaxes[0].max = (typeof options.xaxis.max_original == "number") ?
+      options.xaxis.max_original : null;
+
+    options.yaxes[0].min = null;
+    options.yaxes[0].max = null;
+  }
+
+  // Re-draw the plot.
+  _jcamp_info[div_id].plot_object.setupGrid();
+  _jcamp_info[div_id].plot_object.draw();
+  _jcamp_info[div_id].plot_object.clearSelection(true);
+}
+
+
+function get_axis_info(jdx_data, x_axis)
+{
+  // Get information from the JCAMP file.
+  var units = jdx_data.get_field(x_axis ?
+                                 JDX_CONST.X_UNITS_LABEL :
+                                 JDX_CONST.Y_UNITS_LABEL);
+  var label = jdx_data.get_field(x_axis ?
+                                 JDX_CONST.X_AXIS_LABEL :
+                                 JDX_CONST.Y_AXIS_LABEL);
+
+  // Look for units in the label.
+  if(has_string_content(label))
+  {
+    var match = /\s*(.*)\s*\(([^\)]*)\)\s*$/.exec(label);
+
+    if(match != null)
+    {
+      var paren_units = match[2];
+
+      if(!has_string_content(units) ||
+         string_content_match(paren_units, units))
+      {
+        units = paren_units;
+
+        label = match[1];
+      }
+    }
+  }
+
+  // Make sure the label is a string (even if it's empty).
+  else
+  {
+    label = '';
+  }
+
+  // Make sure the units object is a string (even if it's empty).
+  if(!has_string_content(units))
+  {
+    units = '';
+  }
+
+  // See if the units and label match.
+  if(string_content_match(units, label))
+  {
+    label = ''
+  }
+
+  // Return the label and the units.
+  return {label : label, units : units};
+}
+
+
+function get_x_units(jdx_data)
+{
+  return get_axis_info(jdx_data, true).units;
+}
+
+
+function get_y_units(jdx_data)
+{
+  return get_axis_info(jdx_data, false).units;
+}
+
+
+function text_match(text, match_list)
+{
+  // Check for an empty sting.
+  if((text == null) || (text.length == 0))
+  {
+    return false;
+  }
+
+  // Convert unit to lower case and remove all whitespace.
+  text = text.toLowerCase().replace(/\s+/g, '');
+
+  // Look for a match in the list.
+  for(var index = 0; index < match_list.length; index++)
+  {
+    if(text == match_list[index])
+    {
+      return true;
+    }
+  }
+
+  // Could not find a match, return false.
+  return false;
+}
+
+
+function is_wavenumbers(text)
+{
+  return text_match(text, ['wavenumber', '1/cm', 'cm-1']);
+}
+
+
+function is_micrometers(text)
+{
+  return text_match(text, ['micrometers', 'um', '\u00B5m']);
+}
+
+
+function is_absorbance(text)
+{
+  return text_match(text, ['absorbance']);
+}
+
+
+function is_transmittance(text)
+{
+  return text_match(text, ['transmittance']);
+}
+
+
+function is_percent_transmission(text)
+{
+  return text_match(text, ['%transmission', 'percenttransmission',
+                           '%transmittance', 'percenttransmittance']);
+}
+
+
+function handle_button(div_id, button_label)
+{
+  // Get information on this plot.
+  var display_data = _jcamp_info[div_id];
+
+  // Check the button direction.
+  if(button_label == '>>')
+  {
+    display_data.index = (display_data.index + 1) %
+      display_data.main.length;
+  }
+  else
+  {
+    display_data.index = (display_data.index + display_data.main.length - 1) %
+      display_data.main.length;
+  }
+
+  // Update the display accordingly.
+  update_jcamp_display(div_id, true);
+}
+
+
+function get_other_plot_label(current_jcamp, other_jcamp)
+{
+  // See if the titles are different.
+  if(current_jcamp.get_field(JDX_CONST.TITLE_LABEL) !=
+     other_jcamp.get_field(JDX_CONST.TITLE_LABEL))
+  {
+    return other_jcamp.get_field(JDX_CONST.TITLE_LABEL)
+  }
+
+  // See if the data types are different.
+  if(current_jcamp.get_field(JDX_CONST.DATA_TYPE_LABEL) !=
+     other_jcamp.get_field(JDX_CONST.DATA_TYPE_LABEL))
+  {
+    return fix_capitals(other_jcamp.get_field(JDX_CONST.DATA_TYPE_LABEL))
+  }
+
+  // See if the y axis labels are different.
+  if(current_jcamp.get_field(JDX_CONST.Y_AXIS_LABEL) !=
+     other_jcamp.get_field(JDX_CONST.Y_AXIS_LABEL))
+  {
+    // See if the x axis labels are also different.
+    if(current_jcamp.get_field(JDX_CONST.X_AXIS_LABEL) !=
+       other_jcamp.get_field(JDX_CONST.X_AXIS_LABEL))
+    {
+      return other_jcamp.get_field(JDX_CONST.Y_AXIS_LABEL) + ' vs. ' +
+        other_jcamp.get_field(JDX_CONST.X_AXIS_LABEL);
+    }
+    else
+    {
+      return other_jcamp.get_field(JDX_CONST.Y_AXIS_LABEL);
+    }
+  }
+
+  // See if the x axis labels are different.
+  if(current_jcamp.get_field(JDX_CONST.X_AXIS_LABEL) !=
+     other_jcamp.get_field(JDX_CONST.X_AXIS_LABEL))
+  {
+    return other_jcamp.get_field(JDX_CONST.X_AXIS_LABEL);
+  }
+
+  // Can't find an obvious difference, return a default string.
+  return 'Other plot';
+}
+
+
+function update_controls(div_id)
+{
+  var display_data = _jcamp_info[div_id];
+
+  var prior_button = document.getElementById(div_id + '_prior_button');
+  var next_button = document.getElementById(div_id + '_next_button');
+
+  // See if there is more than one plot.
+  if(display_data.main.length > 1)
+  {
+    // Handle the special case of just two plots.
+    if(display_data.main.length == 2)
+    {
+      prior_button.style.display = 'none';
+
+      var button_label = "View " +
+          get_other_plot_label(display_data.main[display_data.index],
+                               display_data.main[(display_data.index + 1) %
+                                                 display_data.main.length]);
+
+      next_button.value = button_label;
+      next_button.title = button_label;
+      next_button.disabled = false;
+      next_button.style.display = 'inline';
+    }
+    else
+    {
+      // Configure the prior plot button.
+      if(display_data.index == 0)
+      {
+        prior_button.disabled = true;
+        prior_button.title = '';
+      }
+      else
+      {
+        prior_button.disabled = false;
+        prior_button.title =
+          get_other_plot_label(display_data.main[display_data.index],
+                               display_data.main[display_data.index - 1]);
+      }
+
+      prior_button.value = '<<';
+      prior_button.style.display = 'inline';
+
+      // Configure the next plot button.
+      if((display_data.index + 1) >= display_data.main.length)
+      {
+        next_button.disabled = true;
+        next_button.title = '';
+      }
+      else
+      {
+        next_button.disabled = false;
+        next_button.title =
+          get_other_plot_label(display_data.main[display_data.index],
+                               display_data.main[display_data.index + 1]);
+      }
+
+      next_button.value = '>>';
+      next_button.style.display = 'inline';
+    }
+  }
+  else
+  {
+    // Only oned plot, don't display next or prior buttons.
+    prior_button.style.display = 'none';
+    next_button.style.display = 'none';
+  }
+
+  var main_data = display_data.main[display_data.index];
+
+  var reverse_select = document.getElementById(div_id + '_reverse_select');
+  var x_units_select = document.getElementById(div_id + '_unit_select');
+  var quantity_select = document.getElementById(div_id + '_quantity_select');
+
+  // Check for an IR spectrum.
+  if((main_data != undefined) &&
+     text_match(main_data.get_field(JDX_CONST.DATA_TYPE_LABEL),
+                ['infraredspectrum']))
+  {
+    // Allow the X axis to be reversed.
+    reverse_select.style.display = 'inline';
+    reverse_select.selectedIndex = 0;
+  }
+  else
+  {
+    reverse_select.style.display = 'none';
+  }
+
+  // See if unit conversions are possible.
+  if((main_data != undefined) &&
+     (is_wavenumbers(get_x_units(main_data)) ||
+      is_micrometers(get_x_units(main_data))))
+  {
+    // Allow X unit conversions.
+    x_units_select.style.display = 'inline';
+    x_units_select.selectedIndex = 0;
+
+    // Specifiy reversed X axis.
+    if(reverse_select.style.display == 'inline')
+    {
+      reverse_select.selectedIndex = 1;
+    }
+  }
+  else
+  {
+    x_units_select.style.display = 'none';
+  }
+
+  // See if we have absorbance or transmittance.
+  if((main_data != undefined) &&
+     (is_absorbance(get_y_units(main_data)) ||
+      is_transmittance(get_y_units(main_data)) ||
+      is_percent_transmission(get_y_units(main_data))))
+  {
+    // Allow quantity conversions.
+    quantity_select.style.display = 'inline';
+    quantity_select.selectedIndex = 0;
+  }
+  else
+  {
+    quantity_select.style.display = 'none';
+  }
+}
+
+
+function wavenumbers_to_micrometers(value)
+{
+  return (10000.0 / value);
+}
+
+
+function micrometers_to_wavenumbers(value)
+{
+  return (10000.0 / value);
+}
+
+
+function absorbance_to_transmittance(value)
+{
+    return Math.pow(10, -value);
+}
+
+
+function transmittance_to_absorbance(value)
+{
+  if(value > 0.0)
+  {
+    // Log is base 10.
+    return -Math.log(value) / Math.LN10;
+  }
+
+  return Number.NaN;
+}
+
+
+function percent_transmission_to_transmittance(value)
+{
+  return value / 100.0;
+}
+
+
+function percent_transmission_to_absorbance(value)
+{
+  return transmittance_to_absorbance(
+    percent_transmission_to_transmittance(value));
+}
+
+
+function fix_capitals(text)
+{
+  // Break the string into words.
+  var tokens = text.split(/\s/g);
+
+  // Fix the capitalization of each word.
+  for(var token_index = 0; token_index < tokens.length; token_index++)
+  {
+    // Get the current token.
+    var token = tokens[token_index];
+
+    // Look for the first alphabetic character.
+    // Note: this does not support Unicode (neither does JCAMP-DX).
+    var capital_index = token.search(/[A-Za-z]/);
+
+    // If an alphabetic character is found, make everything after
+    // it lower case.
+    if((capital_index >= 0) &&
+       ((capital_index + 1) < token.length))
+    {
+      tokens[token_index] = token.slice(0, capital_index + 1) +
+        token.slice(capital_index + 1).toLowerCase();
+    }
+  }
+
+  // Return the re-assembled string.
+  return tokens.join(' ');
+}
+
+
+function is_canvas_native()
+{
+  var test_element = document.createElement("canvas");
+
+  return !!(test_element.getContext &&
+            test_element.getContext("2d"));
+}
+
+
+function is_canvas_emulated()
+{
+  // Assume excanvas is installed if G_vmlCanvasManager is present.
+  return !(typeof G_vmlCanvasManager === 'undefined');
+}
+
+
+function is_canvas_supported()
+{
+  var test_element = document.createElement("canvas");
+
+  return !!(test_element.getContext &&
+            test_element.getContext("2d"));
+}
+
+
+function set_jcamp_message(div_id, text)
+{
+  // Set the message text.
+  set_element_text(div_id + '_message_p', text);
+
+  // Make sure the message is visible.
+  document.getElementById(div_id + '_message_p').style.display = 'block';
+}
+
+
+function hide_jcamp_plot(div_id, hide_buttons)
+{
+  // Hide the plot.
+  document.getElementById(div_id + '_plot_div').style.display = 'none';
+
+  // Hide the controls
+  document.getElementById(div_id + '_reverse_select').style.display = 'none';
+  document.getElementById(div_id + '_unit_select').style.display = 'none';
+  document.getElementById(div_id + '_quantity_select').style.display = 'none';
+
+  // If specified, hide the buttons.
+  if(hide_buttons)
+  {
+    document.getElementById(div_id + '_prior_button').style.display = 'none';
+    document.getElementById(div_id + '_next_button').style.display = 'none';
+  }
+}
+
+
+function update_jcamp_display(div_id, new_data)
+{
+  // Update control displays.
+  if(new_data)
+  {
+    update_controls(div_id);
+  }
+
+  // Get data.
+  var display_data = _jcamp_info[div_id];
+
+  var main_data = display_data.main[display_data.index];
+  var ref_data = display_data.ref[display_data.index];
+
+  // Set the title and the subtitle.
+  set_element_text(div_id + '_title_p',
+                   fix_capitals(
+                     main_data.get_field(JDX_CONST.TITLE_LABEL))
+                  );
+  set_element_text(div_id + '_subtitle_p',
+                   fix_capitals(
+                     main_data.get_field(JDX_CONST.DATA_TYPE_LABEL))
+                  );
+
+  // Check the data count.
+  var total_values = main_data.get_value_count();
+
+  if(ref_data != undefined)
+  {
+    total_values += ref_data.get_value_count();
+  }
+
+  // Check for large spectra that won't display well.
+  if(total_values > 20000)
+  {
+    // Put up an error message.
+    set_jcamp_message(div_id,
+                      'This spectrum contains too many points ' +
+                      'to be efficiently plotted, please choose ' +
+                      'a lower resolution.');
+
+    // Hide the plot and controls (leave any buttons on screen).
+    hide_jcamp_plot(div_id, false);
+
+    // Done, return.
+    return;
+  }
+
+  // Make sure HTML canvas is supported or emulated.
+  if(!is_canvas_native() && !is_canvas_emulated())
+  {
+    // Put up an error message.
+    set_jcamp_message(div_id,
+                      'Unfortunately the spectrum cannot be displayed. ' +
+                      'A browser with HTML 5 canvas aupport is required.');
+
+    // Hide the plot and controls (including buttons).
+    hide_jcamp_plot(div_id, true);
+
+    // Done, return.
+    return;
+  }
+
+  // Hide the error message, show the plot.
+  document.getElementById(div_id + '_message_p').style.display = 'none';
+  document.getElementById(div_id + '_plot_div').style.display = 'block';
+
+  // Set options.
+  var data_options = {};
+
+  data_options.have_ref_data = (ref_data != undefined);
+  data_options.is_peak_table = (main_data.get_data_label() ==
+                                JDX_CONST.PEAK_TABLE_LABEL)
+
+  data_options.x_transform = null;
+  data_options.y_transform = null;
+
+  data_options.y_normalize = text_match(get_y_units(main_data),
+                                        ['relintensity',
+                                         'rel.intensity',
+                                         'relativeintensity'])
+
+  data_options.canvas_emulated = is_canvas_emulated();
+
+  // Check for an x-axis transform.
+  var x_axis_info = get_axis_info(main_data, true);
+
+  var x_units_select = document.getElementById(div_id + '_unit_select');
+
+  if(x_units_select.style.display == 'inline')
+  {
+    var x_select_units =
+      x_units_select.options[x_units_select.selectedIndex].text;
+
+    if(is_wavenumbers(x_select_units))
+    {
+      if(is_micrometers(x_axis_info.units))
+      {
+        data_options.x_transform = micrometers_to_wavenumbers;
+      }
+
+      x_axis_info.label = 'Wavenumbers';
+    }
+    else if(is_wavenumbers(x_axis_info.units))
+    {
+      if(is_micrometers(x_select_units))
+      {
+        data_options.x_transform = wavenumbers_to_micrometers;
+      }
+
+      x_axis_info.label = 'Wavelength'
+    }
+
+    x_axis_info.units = x_select_units;
+  }
+
+  // Check for a y-axis transform.
+  var y_axis_info = get_axis_info(main_data, false);
+
+  var quantity_select = document.getElementById(div_id + '_quantity_select');
+
+  if(quantity_select.style.display == 'inline')
+  {
+    var selected_quantity =
+      quantity_select.options[quantity_select.selectedIndex].text;
+
+    if(is_absorbance(selected_quantity))
+    {
+      if(is_transmittance(y_axis_info.units))
+      {
+        data_options.y_transform = transmittance_to_absorbance;
+      }
+      else if(is_percent_transmission(y_axis_info.units))
+      {
+        data_options.y_transform = percent_transmission_to_absorbance;
+      }
+    }
+
+    else if(is_transmittance(selected_quantity))
+    {
+      if(is_absorbance(y_axis_info.units))
+      {
+        data_options.y_transform = absorbance_to_transmittance;
+      }
+      else if(is_percent_transmission(y_axis_info.units))
+      {
+        data_options.y_transform = percent_transmission_to_transmittance;
+      }
+    }
+
+    y_axis_info.units = selected_quantity;
+    y_axis_info.label = '';
+  }
+
+  // See if we should use alternate colors.
+  data_options.alt_colors = is_absorbance(y_axis_info.units);
+
+  // Read data.
+  var plot_data = [];
+
+  add_jcamp_data(plot_data, main_data, false, data_options);
+
+  if(data_options.have_ref_data)
+  {
+    add_jcamp_data(plot_data, ref_data, true, data_options);
+  }
+
+  // Set the selection mode.
+  var plot_options = {selection: {mode: 'xy'}};
+
+  // Set the axis labels.
+  if(data_options.canvas_emulated)
+  {
+    // Us a single line message to note the axis labels.
+    set_jcamp_message(div_id,
+                      get_label(y_axis_info) + ' vs. ' +
+                      get_label(x_axis_info));
+  }
+  else
+  {
+    // Use the flot extension to label the axes.
+    plot_options.xaxes = [{axisLabel: get_label(x_axis_info)}];
+    plot_options.yaxes = [{axisLabel: get_label(y_axis_info)}];
+  }
+
+  // Set y axis display for peak tables with reference spectra.
+  if(data_options.is_peak_table && data_options.have_ref_data)
+  {
+    plot_options.yaxis = {tickFormatter: function(val, axis){
+      return Math.abs(val).toFixed(axis.tickDecimals);}};
+  }
+
+  // See if the x axis should be reversed.
+  var x_reversed = false;
+
+  var reverse_select = document.getElementById(div_id + '_reverse_select');
+
+  if((reverse_select.style.display == 'inline') &&
+     (reverse_select.selectedIndex > 0))
+  {
+    plot_options.xaxis = {
+      transform: function (v) { return -v; },
+      inverseTransform: function (v) { return -v; }};
+
+    x_reversed = true;
+  }
+
+  // If the plot is a peak table, make sure there margin on each side.
+  if(data_options.is_peak_table)
+  {
+    // If the x axis is m/z, set margins to be at least five units.
+    if(text_match(main_data.get_field(JDX_CONST.X_UNITS_LABEL), ['m/z']))
+    {
+      // Get the range of the plot data.
+      var range = get_plot_data_range(plot_data);
+
+      // Make sure we have a valid x axis range.
+      if((typeof range.x_max == "number") &&
+         (typeof range.x_min == "number"))
+      {
+        // Make sure there is an "xaxis" object in the plot options.
+        if(typeof plot_options.xaxis == "undefined")
+        {
+          plot_options.xaxis = {}
+        }
+
+        // Set the x axis range.
+        if(x_reversed)
+        {
+          plot_options.xaxis.min = range.x_max + 5.0;
+          plot_options.xaxis.max = Math.max(0.0, range.x_min - 5.0);
+        }
+        else
+        {
+          plot_options.xaxis.min = Math.max(0.0, range.x_min - 5.0);
+          plot_options.xaxis.max = range.x_max + 5.0;
+        }
+
+        // Save the x axis range for use if plot is zoomed and un-zoomed.
+        plot_options.xaxis.min_original = plot_options.xaxis.min;
+        plot_options.xaxis.max_original = plot_options.xaxis.max;
+      }
+    }
+    else
+    {
+      // X axis is not m/z, use auto scaling.
+      if(typeof plot_options.xaxis == "undefined")
+      {
+        plot_options.xaxis = {}
+      }
+
+      plot_options.xaxis.autoscaleMargin = 0.02;
+    }
+  }
+
+  // Save options and data.
+  display_data.options = plot_options;
+  display_data.plot_data = plot_data;
+
+  // Create the plot.
+  display_data.plot_object =
+    jQuery.plot(document.getElementById(div_id + '_plot_div'),
+                plot_data, plot_options);
+
+  // Set handlers.
+  jQuery('#' + div_id).bind('plotselected', jcamp_select_handler);
+  jQuery('#' + div_id).bind('plotunselected', jcamp_unselect_handler);
+}
+
+
+function parse_jcamp(text)
+{
+  // Make sure we have a non-empty string.
+  if(!has_string_content(text))
+  {
+    return [];
+  }
+
+  // Build up an array with data for each section of the JCAMP-DX file.
+  var items = [];
+
+  // Inidicate that we are at the start of the file.
+  var index = 0;
+
+  while(true)
+  {
+    // Create a new parsing object to hold data.
+    var jcamp_parser= new jdx_parse()
+
+    // Parse the next section of the file and update our position in the file.
+    var index = jcamp_parser.load(text, index, true)
+
+    // See if we are done.
+    if(jcamp_parser.get_value_count() == 0)
+    {
+      break;
+    }
+
+    // Save the data.
+    items.push(jcamp_parser)
+  }
+
+  // Return the array with parsed data.
+  return items;
+}
+
+
+function load_jcamp_display(div_id, jcamp_text, reference_text)
+{
+  // Parse jcamp data.
+  var jcamp_data = {};
+
+  jcamp_data.main = parse_jcamp(jcamp_text)
+  jcamp_data.ref = parse_jcamp(reference_text)
+
+  jcamp_data.index = 0;
+
+  _jcamp_info[div_id] = jcamp_data
+
+  // Display data
+  update_jcamp_display(div_id, true)
+}
+
+
+function is_jcamp(text)
+{
+  // Make sure we have a string that starts with two number signs.
+  return /^\s*##/.test(text);
+}
+
+
+function set_up_jcamp_display(jcamp_text, reference_text, div_id, height)
+{
+  // Create the JCAMP display
+  create_jcamp_display(div_id, height);
+
+  // Get the jcamp_text.
+  if(!has_string_content(jcamp_text) || is_jcamp(jcamp_text))
+  {
+    set_up_jcamp_display_2(jcamp_text, reference_text, div_id);
+  }
+  else
+  {
+    jQuery.ajax(jcamp_text, {
+      url : jcamp_text,
+      accepts : 'text/plain',
+      dataType : 'text',
+      mimeType : 'text/plain',
+      success : function(data, status, qjXHR)
+      {set_up_jcamp_display_2(data, reference_text, div_id);},
+      error : function(jqXHR, status, error)
+      {handle_read_error(div_id, jcamp_text, jqXHR);}});
+  }
+}
+
+
+function set_up_jcamp_display_2(jcamp_text, reference_text, div_id)
+{
+  // Get the reference jcamp_text.
+  if(!has_string_content(reference_text) || is_jcamp(reference_text))
+  {
+    load_jcamp_display(div_id, jcamp_text, reference_text);
+  }
+  else
+  {
+    jQuery.ajax(reference_text, {
+      url : reference_text,
+      accepts : 'text/plain',
+      dataType : 'text',
+      mimeType : 'text/plain',
+      success : function(data, status, qjXHR)
+      {load_jcamp_display(div_id, jcamp_text, data);},
+      error : function(jqXHR, status, error)
+      {handle_read_error(div_id, reference_text, jqXHR);}});
+  }
+}
+
+
+function handle_read_error(div_id, url, jqXHR)
+{
+  // Write a message to the console. There should be an error
+  // already logged to the console since the spectrum load failed.
+  // This is an additional non-error message for help in
+  // debugging potentail problems.
+  console.log("Unable to retrieve " + url +
+                ", HTTP status: " + jqXHR.status +
+                ".")
+
+  // See if we got a JCAMP file.
+  if(is_jcamp(jqXHR.responseText))
+  {
+    // Parse the JCAMP file.
+    var jcamp_parser= new jdx_parse()
+
+    // Parse the JCAMP.
+    jcamp_parser.load(jqXHR.responseText, 0, false)
+
+    // Use the title to indicate the error.
+    var error_message = "Unable to load data. " +
+        jcamp_parser.get_field(JDX_CONST.TITLE_LABEL);
+  }
+  else
+  {
+    var error_message = "Unable to load data, HTTP error " +
+        jqXHR.status + "."
+  }
+
+  // Put up an error message.
+  set_jcamp_message(div_id, error_message);
+
+  // Hide the plot and controls (leave any buttons on screen).
+  hide_jcamp_plot(div_id, false);
+}

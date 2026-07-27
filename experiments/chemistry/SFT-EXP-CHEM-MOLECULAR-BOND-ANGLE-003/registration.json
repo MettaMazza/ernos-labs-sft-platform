@@ -1,0 +1,446 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false
+  },
+  "all_degree_values_absent_from_law_and_prediction": true,
+  "claim_id": "SFT-CHEM-MOLECULAR-BOND-ANGLE-003",
+  "custody_protocol": {
+    "all_four_values_release_only_after_prediction_seal": true,
+    "identity_registry_path": "experiments/external_sources/chemistry/bond_angle_target_identities_v1.json",
+    "withheld_target_path": "experiments/external_sources/chemistry/bond_angle_withheld_targets_v1.json"
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-MOLECULAR-BOND-ANGLE-003",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "NIST",
+      "role": "withheld BF3 aFBF experimental-geometry row",
+      "source_id": "NIST-CCCBDB-SRD101-BF3-EXPERIMENTAL-GEOMETRY"
+    },
+    {
+      "measurement_body": "NIST",
+      "role": "withheld XeF2 aFXeF experimental-geometry row",
+      "source_id": "NIST-CCCBDB-SRD101-XEF2-EXPERIMENTAL-GEOMETRY"
+    },
+    {
+      "measurement_body": "NIST",
+      "role": "withheld XeF4 adjacent and opposite aFXeF rows",
+      "source_id": "NIST-CCCBDB-SRD101-XEF4-EXPERIMENTAL-GEOMETRY"
+    }
+  ],
+  "falsification_condition": "The claim fails if any sealed turn fraction translated after release does not equal its source-bound degree inscription at the registered observation resolution; if any of the four rows or its species, state, geometry, angle definition, method/condition or comment is erased; if a degree value is readable before prediction sealing; if a displaced, swapped, wrong-count or unsupported-geometry control is accepted; or if a fitted correction or continuum construction is introduced.",
+  "frozen_relation": "A closed molecular turn divided into n symmetry-indistinguishable positive ligand sectors has no lawful unequal-sector form: unequal parts would introduce an ungenerated distinction. Each sector is therefore exactly 1/n turn and a retained k-sector separation is exactly k/n turn. The structural fractions seal without degrees; only afterward are all four NIST CCCBDB BF3, XeF2 and XeF4 angle rows opened.",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/bond_angle_target_identities_v1.json",
+    "sha256:3d3c67505120a588c014f1417f518edda10295cfd9eb55a84530e50fd2f2cbcc"
+  ],
+  "postseal_unit_translation": "one complete turn translated to the external degree inscription only after release",
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-BF3-FBF-ADJACENT"
+        ],
+        "destination": "angle-1-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "BF3"
+        ],
+        "destination": "angle-1-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "neutral-experimental-geometry-carrier"
+        ],
+        "destination": "angle-1-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "trigonal-planar-equal-three-sector"
+        ],
+        "destination": "angle-1-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "internal-coordinate",
+          "aFBF"
+        ],
+        "destination": "angle-1-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "angle-role",
+          "adjacent"
+        ],
+        "destination": "angle-1-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "3"
+        ],
+        "destination": "angle-1-sector-count",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1"
+        ],
+        "destination": "angle-1-sector-separation",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1",
+          "3"
+        ],
+        "destination": "angle-1-turn-fraction",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "premise",
+          "angle-1-label-1",
+          "angle-1-label-2",
+          "angle-1-label-3",
+          "angle-1-label-4",
+          "angle-1-label-5",
+          "angle-1-label-6",
+          "angle-1-sector-count",
+          "angle-1-sector-separation",
+          "angle-1-turn-fraction"
+        ],
+        "destination": "angle-1-carrier",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-XEF2-FXEF-OPPOSITE"
+        ],
+        "destination": "angle-2-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "XeF2"
+        ],
+        "destination": "angle-2-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "neutral-experimental-geometry-carrier"
+        ],
+        "destination": "angle-2-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "linear-equal-two-sector"
+        ],
+        "destination": "angle-2-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "internal-coordinate",
+          "aFXeF"
+        ],
+        "destination": "angle-2-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "angle-role",
+          "opposite"
+        ],
+        "destination": "angle-2-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "2"
+        ],
+        "destination": "angle-2-sector-count",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1"
+        ],
+        "destination": "angle-2-sector-separation",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1",
+          "2"
+        ],
+        "destination": "angle-2-turn-fraction",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "premise",
+          "angle-2-label-1",
+          "angle-2-label-2",
+          "angle-2-label-3",
+          "angle-2-label-4",
+          "angle-2-label-5",
+          "angle-2-label-6",
+          "angle-2-sector-count",
+          "angle-2-sector-separation",
+          "angle-2-turn-fraction"
+        ],
+        "destination": "angle-2-carrier",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-XEF4-FXEF-ADJACENT"
+        ],
+        "destination": "angle-3-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "XeF4"
+        ],
+        "destination": "angle-3-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "neutral-experimental-geometry-carrier"
+        ],
+        "destination": "angle-3-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "square-planar-equal-four-sector"
+        ],
+        "destination": "angle-3-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "internal-coordinate",
+          "aFXeF"
+        ],
+        "destination": "angle-3-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "angle-role",
+          "adjacent"
+        ],
+        "destination": "angle-3-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "4"
+        ],
+        "destination": "angle-3-sector-count",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1"
+        ],
+        "destination": "angle-3-sector-separation",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1",
+          "4"
+        ],
+        "destination": "angle-3-turn-fraction",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "premise",
+          "angle-3-label-1",
+          "angle-3-label-2",
+          "angle-3-label-3",
+          "angle-3-label-4",
+          "angle-3-label-5",
+          "angle-3-label-6",
+          "angle-3-sector-count",
+          "angle-3-sector-separation",
+          "angle-3-turn-fraction"
+        ],
+        "destination": "angle-3-carrier",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-XEF4-FXEF-OPPOSITE"
+        ],
+        "destination": "angle-4-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "XeF4"
+        ],
+        "destination": "angle-4-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "neutral-experimental-geometry-carrier"
+        ],
+        "destination": "angle-4-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "square-planar-equal-four-sector"
+        ],
+        "destination": "angle-4-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "internal-coordinate",
+          "aFXeF"
+        ],
+        "destination": "angle-4-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "angle-role",
+          "opposite"
+        ],
+        "destination": "angle-4-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "4"
+        ],
+        "destination": "angle-4-sector-count",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "2"
+        ],
+        "destination": "angle-4-sector-separation",
+        "opcode": "count"
+      },
+      {
+        "arguments": [
+          "1",
+          "2"
+        ],
+        "destination": "angle-4-turn-fraction",
+        "opcode": "ratio"
+      },
+      {
+        "arguments": [
+          "premise",
+          "angle-4-label-1",
+          "angle-4-label-2",
+          "angle-4-label-3",
+          "angle-4-label-4",
+          "angle-4-label-5",
+          "angle-4-label-6",
+          "angle-4-sector-count",
+          "angle-4-sector-separation",
+          "angle-4-turn-fraction"
+        ],
+        "destination": "angle-4-carrier",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "angle-1-label-1",
+          "angle-1-carrier",
+          "angle-2-label-1",
+          "angle-2-carrier",
+          "angle-3-label-1",
+          "angle-3-carrier",
+          "angle-4-label-1",
+          "angle-4-carrier"
+        ],
+        "destination": "molecular-angle-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "molecular-angle-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-MOLECULAR-BOND-ANGLE-003-value-free-turn-fraction-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "degree_values_present": false,
+    "program_hash": "sha256:6c5f7968c688f0780e8b8cec3d88043029eacfa7d8ba8cbc50a7f2e1c78d0dc1",
+    "target_content_inaccessible": true
+  },
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "bf3_snapshot": "sha256:3585dfdfe7551bce657c377a96f7800759e027325a0b5bac96c264591ba01181",
+    "identity_registry": "sha256:3d3c67505120a588c014f1417f518edda10295cfd9eb55a84530e50fd2f2cbcc",
+    "withheld_measurements": "sha256:f6f614ad7ee9f7d992a80cf61b9b49443b7f1fe8d14cd186a33566f759f06b7e",
+    "xef2_snapshot": "sha256:39e69a157c1bda28a8aa1dc48e39e0e9550ecb79c396cd543bc4aaf728938df4",
+    "xef4_snapshot": "sha256:26ca18c0606aca4acb21c8e5555d1a6bc2a263c22510776e7834a22783ea3426"
+  },
+  "status": "measured",
+  "target_ids": [
+    "NIST-CCCBDB-BF3-FBF-ADJACENT",
+    "NIST-CCCBDB-XEF2-FXEF-OPPOSITE",
+    "NIST-CCCBDB-XEF4-FXEF-ADJACENT",
+    "NIST-CCCBDB-XEF4-FXEF-OPPOSITE"
+  ],
+  "withheld_measurement_registry": [
+    "experiments/external_sources/chemistry/bond_angle_withheld_targets_v1.json",
+    "sha256:f6f614ad7ee9f7d992a80cf61b9b49443b7f1fe8d14cd186a33566f759f06b7e"
+  ]
+}

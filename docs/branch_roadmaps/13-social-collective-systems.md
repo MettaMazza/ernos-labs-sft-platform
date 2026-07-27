@@ -1,0 +1,73 @@
+# Social and Collective Systems branch roadmap
+
+## Scientific ownership
+
+This branch owns genuinely collective human and multi-agent phenomena that are
+not merely restatements of graph theory, distributed computation, individual
+cognition or engineering.  It must preserve historical, cultural and
+institutional context as observed state rather than universalize it without
+evidence.
+
+## Layer One — foundational reconstruction
+
+The foundational paper must establish:
+
+1. agent, relation, group and collective identity;
+2. observation, action, communication and shared record;
+3. coordination, cooperation, competition and conflict;
+4. norm, rule, institution and enforcement;
+5. trust, reputation and collective knowledge;
+6. exchange, allocation and resource distribution;
+7. power, authority, dependency and exclusion;
+8. network diffusion, synchronization and collective transition;
+9. culture, language and transmitted social information;
+10. individual-to-collective and collective-to-individual causation boundaries;
+11. historical contingency, intervention and ethical evidence boundaries; and
+12. exact separation from upstream mathematics and computation.
+
+## Layer Two — complete field reconstruction
+
+The full census covers:
+
+- social networks, groups, organizations and institutions;
+- anthropology, archaeology and comparative social organization;
+- sociology, communities, family and social change;
+- cooperation, competition, bargaining and collective action;
+- governance, law, political organization and public decision;
+- economics, exchange, production, distribution and financial systems;
+- management, labour, organizations and industrial relations at the collective
+  science boundary;
+- inequality, stratification, mobility and access;
+- demography, migration, population change and settlement;
+- human geography, cities, regions and spatial collective systems;
+- culture, language, education, religion and knowledge transmission;
+- historical reconstruction and historiography with source-custody boundaries;
+- communication, media, information diffusion and collective belief;
+- criminology, justice institutions and social harm;
+- conflict, violence, peace, security and recovery;
+- social psychology and behaviour at the collective boundary;
+- linguistics and language communities at the cognition/information handoff;
+- innovation, science, technology and institutional knowledge production;
+- socio-economic cycles and network-scale dynamics;
+- public health and environmental interaction at branch handoffs;
+- multi-agent and artificial collectives;
+- causal inference, intervention, replication and cross-context limits; and
+- ethics and values clearly separated from empirical law admission.
+
+The branch must not treat credential, funding status, institutional prestige or
+consensus vote as scientific evidence.  Equally, criticism of institutions does
+not itself admit an SFT law: the complete derivation and empirical standards
+remain unchanged.
+
+## Publication sequence
+
+The foundational edition establishes collective objects and evidence boundaries.
+Later versions expand across social-science families with source-dated,
+context-declared evidence.  Universal claims require cross-context tests;
+bounded historical findings retain their boundary.
+
+## Handoffs
+
+The branch consumes Mathematics, Computation, Biology, Consciousness, Medicine
+and Earth Science.  Policy or platform construction moves to Engineering
+Translation and cannot select the social law.

@@ -1,0 +1,56 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "chemistry",
+  "candidate_grammar": {
+    "boundary": "Every finite solvation or dissolution record with one held solute, one or more distinct held solvents, distinct source and destination states, an exact condition or structural reference absence, and a held order/capacity. External testing preserves all 642 FreeSolv experimental rows and all 157 direct NIST ThermoML solubility rows.",
+    "completeness_certificate": "sha256:9ac6a3170e01e6d8b6855e8ffd7827f0ba3e82eec534e53bfe83225e3c912ead",
+    "expected_cardinality": 256,
+    "generator": "Generate the literal product of carrier, identity, state, condition, order, absence, prediction and extension forms; decide all 256 candidates only from admitted Fold identity, exact state transition, exact order, solution recurrence, EmptyOne and finite-successor laws."
+  },
+  "claim_id": "SFT-CHEM-SOLVATION-DISSOLUTION-FREE-ORDER-015",
+  "dependencies": [
+    "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-COMBINATORICS-001",
+    "SFT-MATH-ORDER-LATTICE-001",
+    "SFT-INFO-CONSERVATION-LOSS-001",
+    "SFT-PHYS-THERMO-EQUILIBRIUM-001",
+    "SFT-CHEM-STOICH-COMPOSITION-001",
+    "SFT-CHEM-STOICH-MIXTURE-001",
+    "SFT-CHEM-STOICH-SOLUTION-001",
+    "SFT-CHEM-SOLUTION-EQUILIBRIUM-001",
+    "SFT-CHEM-INTERMOLECULAR-BINDING-011",
+    "SFT-CHEM-ENTROPY-MULTIPLICITY-CORRESPONDENCE-005",
+    "SFT-CHEM-FREE-ENERGY-EQUIVALENT-DIRECTION-007",
+    "SFT-CHEM-CHEMICAL-POTENTIAL-EQUIVALENT-COMPONENT-008",
+    "SFT-CHEM-ACTIVITY-NONIDEAL-COMPOSITION-009",
+    "SFT-CHEM-PHASE-RULE-STRUCTURAL-011",
+    "SFT-CHEM-MULTICOMPONENT-PHASE-DIAGRAM-013",
+    "SFT-CHEM-COLLIGATIVE-COMPOSITION-RESPONSE-014"
+  ],
+  "empirical_protocol": "experiments/chemistry/SFT-EXP-CHEM-SOLVATION-DISSOLUTION-FREE-ORDER-015/registration.json",
+  "excluded_inputs": [
+    "no numerical zero; absent condition or coincident separation is structural EmptyOne",
+    "no negative, irrational, imaginary, logarithmic, floating, signed or continuum SFT proof value",
+    "no imported force field, continuum-solvent model, partition coefficient, activity-coefficient fit or solubility-product equation",
+    "no correlation, interpolation, regression, fitted parameter, selected compound/solvent/state/condition/row or target correction",
+    "no compound, solute, solvent, state, condition, value, uncertainty, reference or target hash before prediction seal",
+    "every source row and companion field remains preserved; calculated and correlated companions are never measurements"
+  ],
+  "intended_certificate": "Complete 256-form census, one survivor, independent state/order/capacity reconstruction, depth-independent successor and complete post-seal 799-record FreeSolv/NIST vector.",
+  "provenance_classes": [
+    "observational_derivation"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "Solvation and dissolution are exact state-transfer relations whose carrier retains the solute, every solvent, the distinct source and destination states, and the condition. Free order is represented by a held state orientation plus exact positive magnitude, never a signed SFT value; solubility is exact positive condition-bound composition capacity. No force field, continuum solvent, partition or activity fit, solubility-product equation, logarithm, correlation, regression or fitted parameter enters.",
+  "status": "empirically_tested",
+  "title": "Exact solvation and dissolution free-order law"
+}

@@ -1,0 +1,3634 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Gas-Phase Ion Thermochemistry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" type="text/css"
+ href="../style/webbook.css"
+ title="Default Chemistry WebBook style"
+ media="screen, print" />
+
+<link rel="icon"
+ sizes="64x64 48x48 32x32 16x16"
+ href="../../favicon.ico"
+ type="image/x-icon" />
+
+<link rel="apple-touch-icon"
+ sizes="76x76"
+ href="../img/touch-icon-76x76.png"
+ type="image/png" />
+<link rel="apple-touch-icon"
+ sizes="120x120"
+ href="../img/touch-icon-120x120.png"
+ type="image/png" />
+<link rel="apple-touch-icon"
+ sizes="152x152"
+ href="../img/touch-icon-152x152.png"
+ type="image/png" />
+<link rel="apple-touch-icon"
+ sizes="180x180"
+ href="../img/touch-icon-180x180.png"
+ type="image/png" />
+<link rel="apple-touch-icon"
+ sizes="192x192"
+ href="../img/touch-icon-192x192.png"
+ type="image/png" />
+
+<link rel="manifest"
+ href="../../manifest.webmanifest"
+ type="application/manifest+json" />
+
+
+<link rel="help"
+ href="../#Documentation"
+ title="Documentation" />
+<link rel="search"
+ href="../#Search"
+ title="Search options" />
+<link rel="author"
+ href="../#Top"
+ title="Credits" />
+<link rel="license"
+ href="../#Notes"
+ title="Notes" />
+
+<link rel="home"
+ href="../"
+ title="Main site page" />
+
+
+<!-- GSA Digital Analytics Program -->
+<script async="async" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&amp;subagency=webbook&amp;yt=false&amp;exts=mol,sdf,jdx,ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+<!-- End of GSA Digital Analytics Program -->
+<!-- NIST Google Analtyics -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PS24JGCKSZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PS24JGCKSZ',
+       {'cookie_domain': 'webbook.nist.gov',
+        'cookie_flags': 'SameSite=None;Secure'});
+</script>
+<!-- End of NIST Google Analytics -->
+
+<script type="text/javascript" src="../../packages/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../../packages/nist/nist-exit-script.js"></script>
+
+<!-- svg4everybody.js by Jon Neal enables external SVG on older
+     browsers. See https://github.com/jonathantneal/svg4everybody
+     for more information. -->
+<script src="../../packages/svg4everybody/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+<!-- End of svg4everybody.js section. -->
+
+<!-- Script for inserting US government banner. -->
+<script src="../../packages/uswds/components/usa-banner.js.mjs" type="module"></script>
+
+<!-- Menu controls. -->
+<script type="text/javascript" src="../../packages/menu/menu.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="ion.css" />
+</head>
+<body>
+<p id="skip-link"><a class="element-invisible element-focusable" href="#main">
+Jump to content</a>
+</p>
+<usa-banner></usa-banner>
+
+<header>
+<div class="webbook_header_bar"  role="presentation"
+  aria-label="Site label for NIST Chemistry WebBook">
+<span class="logo">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.nist.gov/"
+     title="Link to NIST home page">National Institute of Standards and
+    Technology</a>
+</span>
+<h1><span class="no-handheld">NIST</span> Chemistry
+  WebBook<span class="no-handheld">, SRD 69</span></h1>
+</div>
+
+<div class="no-print" role="navigation" aria-label="Main menu">
+  <ul class="webbook_nav">
+    <li>
+      <a href="../"
+         title="Main page of this site">
+        <span class="sr-only">Home</span>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             class="webbook_icon_big" role="img"
+             aria-hidden="true">
+          <use xlink:href="..//img/icons.svg#home-icon"></use>
+      </svg></a>
+    </li>
+    <li>
+      <a class="menu_below" href="#">Search</a>
+      <ul>
+        <li>
+          <a href="../name-ser/"
+             title="Search for species by chemical name">
+            Name</a>
+        </li>
+        <li>
+          <a href="../form-ser/"
+             title="Search for species by chemical formula">
+            Formula</a>
+        </li>
+        <li>
+          <a href="../inchi-ser/"
+             title="Search for species by InChI or InChIKey">
+            IUPAC identifier</a>
+        </li>
+        <li>
+          <a href="../cas-ser/"
+             title="Search for species by CAS number">
+            CAS number</a>
+        </li>
+        <li>
+          <a href="../#Search"
+             title="More serach options on the main page of this site">
+            More options</a>
+        </li>
+      </ul>
+    </li>
+    <li class="no-handheld">
+      <a class="menu_below" href="#">NIST Data</a>
+      <ul>
+        <li>
+          <a href="https://www.nist.gov/srd/"
+             title="Standard Reference Data page">SRD Program
+          </a>
+        </li>
+        <li>
+          <a href="https://data.nist.gov/sdp/"
+             title="NIST data discovery site">Science Data Portal
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nist.gov/mml/mdd"
+             title="Material Data Division page">Material Data
+            Division
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a class="menu_below" href="#">About</a>
+      <ul>
+        <li>
+          <a href="../faq/"
+             title="Frequently asked questions page">
+          FAQ</a>
+        </li>
+        <li>
+          <a href="../#CreditsControl"
+             title="Credits on the main page of the site">
+            Credits</a>
+        </li>
+        <li>
+          <a href="../#Documentation"
+             title="More documentation on the main page of the site">
+            More documentation</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</header>
+
+
+<main id="main">
+
+
+
+<h1 class="title">GAS-PHASE ION THERMOCHEMISTRY</h1>
+<p class="subtitle">Sharon G. Lias and John E. Bartmess</p>
+
+
+<h1>Summary</h1>
+
+<p>
+The WebBook includes a database concerned with ion thermochemistry that
+presents a collection of experimentally-determined values for
+</p>
+
+<ul>
+<li><a href="#IE">ionization energies</a></li>
+<li><a href="#AE">appearance energies</a></li>
+<li><a href="#EA">electron affinities</a></li>
+<li><a href="#A">acidities</a></li>
+</ul>
+
+<p>
+of molecules or molecular fragments. In addition, data for
+<a href="#PA">proton affinities</a>, and <a href="#GB">gas phase basicities</a>
+from a new re-evaluation of the thermochemical scales is included.
+Guidance is provided
+(at least for the more common molecules) in the selection of a "best" value,
+when several different values have been reported for a quantity. Values for
+the gas phase <a href="#DH">enthalpies of formation</a> of some of the common
+positive and negative ions derived from these data are displayed. The values
+for enthalpies of formation are presented using the so-called
+<a href="#IC">Ion Convention</a> for treating the thermochemistry
+of the electron (rather than the <a href="#EC">Electron Convention</a>
+commonly used in some thermodynamics compilations).
+</p>
+
+<p>
+In the accompanying text, definitions of all the above-listed quantities
+are provided. The <a href="#HCandP">coverage of data</a> in the collection is
+outlined, and explained in terms of the history of the database. The
+<a href="#U">units</a> used are explained, and a tutorial discussion of
+<a href="#TC">thermochemical conventions for the electron</a> is provided,
+including instructions for <a href="#C">converting data</a> from one
+convention to the other, and a value for the <a href="#HV">integrated heat
+capacity of the electron</a> calculated using the correct Fermi-Dirac
+statistics. Scientific background necessary to an understanding of the
+interpretation of these kinds of data is presented, and includes descriptions
+of the <a href="#FC">Franck-Condon Principle</a>, the meanings of the terms
+"<a href="#HB">hot bands</a>" and "<a href="#KS">kinetic shift</a>", as
+well as the role of <a href="#PB">potential barriers</a> in the reaction
+coordinate in the interpretation of appearance energy data. The derivation of
+gas phase thermochemical information on ions from the interpretation of
+<a href="#R">Rydberg series</a> and from <a href="#EQ">ion/molecule
+equilibrium</a> constant determinations is also discussed.
+</p>
+
+<p>
+A description of the <a href="#EXP">methods</a> from which the various
+kinds of data are derived is provided. This includes descriptions of the
+experimental techniques:
+</p>
+
+<ul>
+<li><a href="#EI">electron ionization techniques</a></li>
+<li><a href="#PI">photoionization mass spectrometry</a></li>
+<li><a href="#TRPI">time-resolved photodissociation</a></li>
+<li><a href="#LS">laser spectroscopy</a></li>
+<li><a href="#PE">photoelectron spectroscopy</a></li>
+<li><a href="#TE">threshold electron detection</a></li>
+<li><a href="#PIPECO">photoion-photoelectron coincidence spectroscopy</a></li>
+<li><a href="#CI">chemi-ionization</a></li>
+<li><a href="#CEMS">charge exchange mass spectrometry</a></li>
+<li><a href="#NBIP">neutral beam ionization/appearance energy</a></li>
+<li><a href="#EFD ">electric field detachment</a></li>
+</ul>
+
+<p>
+In addition, the derivation of thermochemical information from ion/molecule
+reaction studies (including
+<a href="#EQ">ion/molecule equilibrium</a> constant determinations,
+determinations of <a href="#END">reaction endothermicity</a>,
+<a href="#IMB">ion/molecule bracketing experiments</a>, and
+<a href="#KIN">the kinetic branching method</a>
+are discussed. Descriptions are also included of techniques used less often
+for the derivation of ion energetics information, for example:
+</p>
+
+<ul>
+<li><a href="#CIEL">charge inversion energy loss spectroscopy</a></li>
+<li><a href="#CAD">collisionally-activated dissociation</a></li>
+<li><a href="#DTI">delayed thermionic ionization</a></li>
+<li><a href="#CTS">charge transfer spectra</a></li>
+<li><a href="#AUG">Auger electron spectroscopy</a></li>
+<li><a href="#SI">surface ionization</a></li>
+<li><a href="#LE">liquid phase electrochemical determinations</a></li>
+<li><a href="#KINT">electron auto-detachment rate</a></li>
+<li><a href="#ETS">electron transmission spectroscopy</a></li>
+<li><a href="#Mobl">kinetic mobility of ions</a></li>
+<li><a href="#LOG">laser optogalvanic spectroscopy</a></li>
+<li><a href="#ZTID">zero-pressure thermal radiation induced dissociation</a></li>
+<li><a href="#Scat">scattering of atoms from ions</a></li>
+</ul>
+
+<p>
+The use of <a href="#DER">derivations</a>,
+<a href="#EST">estimations</a>, literature <a href="#EVAL">evaluations</a>,
+theoretical <a href="#CALC">calculations</a>, and
+<a href="#Latt">lattice energy calculations</a>,
+in the collection is also described.
+</p>
+
+<p>
+A short discussion of the reliability of data and criteria for evaluation
+presents <a href="#COMP">comparisons among results of different
+techniques</a> and a description of the handling of <a href="#EL">error
+limits</a> in the database.
+</p>
+
+<p>
+Because data on positive ions and negative ions, derived from separately
+maintained databases, are integrated here for the first time, the WebBook
+user may notice that there are some inconsistencies in the way analogous
+items are treated; a <a href="#P">description of these inconsistencies</a>
+is provided to aid the WebBook user in searching for these items.
+</p>
+
+
+<hr />
+
+<h1><strong>Outline</strong></h1>
+
+<ol class="level1">
+ <li>Introduction
+ <ol class="level2">
+ <li>Definitions
+ <ol class="level3">
+ <li><a href="#IE">Ionization Energy</a>
+ <ol class="level4">
+ <li><a href="#AIE">Adiabatic Ionization Energy</a></li>
+ <li><a href="#VIE">Vertical Ionization Energy</a></li>
+ </ol></li>
+ <li><a href="#AE">Appearance Energy</a></li>
+ <li><a href="#PA">Proton Affinity</a> and <a href="#GB"> Gas Phase Basicity</a></li>
+ <li><a href="#EA">Electron Affinity</a></li>
+ <li><a href="#A">Gas Phase Acidity and Relative Acidity</a></li>
+ <li><a href="#DH">Enthalpies of Formation of Ions in the Gas Phase</a></li>
+ <li>Thermochemical Conventions for Enthalpies of Formation of Ions
+ <ol class="level4">
+ <li><a href="#IC">The Ion Convention</a></li>
+ <li><a href="#EC">The Electron Convention</a></li>
+ </ol></li>
+ </ol></li>
+ <li> <a href="#HCandP">History, Coverage, and Presentation of the Database</a>
+ <ol class="level3">
+ <li><a href="#H">History</a></li>
+ <li><a href="#C">Coverage</a></li>
+ <li><a href="#P">Presentation</a></li>
+ </ol></li>
+ <li> <a href="#U"> Units</a></li>
+ <li> <a href="#TC"> Thermochemical Conventions for the Electron</a></li>
+ </ol></li>
+ <li>Interpretation of Ion Thermochemistry Data
+ <ol class="level2">
+ <li>Ionization Thresholds
+ <ol class="level3">
+ <li><a href="#FC">The Franck-Condon Principle</a></li>
+ <li><a href="#HB">Hot bands</a></li>
+ </ol></li>
+ <li><a href="#AP">Appearance Energies</a>
+ <ol class="level3">
+ <li><a href="#PB">Potential Barriers</a></li>
+ <li><a href="#KS">Kinetic Shift</a></li>
+ </ol></li>
+ <li><a href="#R">Rydberg Series</a></li>
+ <li><a href="#EQ">Ion/molecule Equilibria</a></li>
+ <li><a href="#FT">Enthalpies of Formation of Ions in the Gas Phase at Finite Temperatures</a>
+ <ol class="level3">
+ <li><a href="#MI">Molecular Ions</a></li>
+ <li><a href="#APT">Fragment Ions</a></li>
+ </ol></li>
+ </ol></li>
+ <li><a href="#EXP">Experimental Techniques</a>
+ <ol class="level2">
+ <li><a href="#S">Optical Spectroscopy [S]</a></li>
+ <li><a href="#TH">Threshold Experiments</a>
+ <ol class="level3">
+ <li><a href="#EI">Electron Ionization Techniques [EI]</a></li>
+ <li>Photoionization Techniques
+ <ol class="level4">
+ <li><a href="#PI">Photoionization Mass Spectrometry [PI],[PD],[LPD]</a></li>
+ <li><a href="#TRPI">Time-Resolved Photodissociation [TRPI]</a></li>
+ <li><a href="#LS">Laser Spectroscopy [LS]</a> (multi-photon ionization and resonance ionization mass spectrometry)</li>
+ <li><a href="#PE">Photoelectron Spectroscopy [PE],[LPES]</a></li>
+ <li><a href="#TE">Threshold Electron Detection [TE],[ZEKE]</a></li>
+ <li><a href="#PIPECO">Photoion-Photoelectron Coincidence Spectroscopy [PIPECO]</a></li>
+ </ol></li>
+ <li><a href="#CI">Chemi-Ionization [CI]</a></li>
+ <li><a href="#CEMS">Charge Exchange Mass Spectrometry [CEMS]</a></li>
+ <li><a href="#NBIP">Neutral Beam Ionization/Appearance Energy [NBIE],[NBAE]</a></li>
+ <li><a href="#EFD ">Electric Field Detachment [EFD]</a></li>
+ </ol></li>
+ <li>Thermochemical Information from Studies of Ion/Molecule Reactions
+ <ol class="level3">
+ <li><a href="#EQD">Ion/Molecule Equilibrium Constant Determinations [EQ],[IMRE],[TDEq],[TDAs]</a></li>
+ <li><a href="#END">Determinations of Reaction Endothermicity [END],[Endo]</a></li>
+ <li><a href="#IMB">Ion/molecule Bracketing Experiments [IMB],[IMRB]</a></li>
+ <li><a href="#KIN">The Kinetic Branching Method [KIN,BRAN,CIDC]</a></li>
+ <li><a href="#ECD">The Electron Capture Detector [ECD] </a></li>
+ <li><a href="#ES">Electron Swarm [ES] </a></li>
+ </ol></li>
+ <li> Other Experimental Techniques
+ <ol class="level3">
+ <li><a href="#CIEL">Charge Inversion Energy Loss Spectrometry [CIEL]</a></li>
+ <li><a href="#CAD">Collisionally-Activated Dissociation [CAD],[CIDT]</a></li>
+ <li><a href="#DTI">Delayed Thermionic Ionization [DTI]</a></li>
+ <li><a href="#CTS">Charge Transfer Spectra [CTS]</a></li>
+ <li><a href="#AUG">Auger Electron Spectroscopy [AUG]</a></li>
+ <li><a href="#SI">Surface Ionization [SI]</a></li>
+ <li><a href="#LE">Liquid-Phase Electrochemical Determinations [LE]</a></li>
+ <li><a href="#KINT">Electron Auto-Detachment Rate [KINT]</a></li>
+ <li><a href="#ETS">Electron Transmission Spectroscopy [ETS]</a></li>
+ <li><a href="#Mobl">Kinetic Mobility of Ions [Mobl]</a></li>
+ <li><a href="#LOG">Laser Optogalvanic Spectroscopy [LOG]</a></li>
+ <li><a href="#ZTID">Zero-pressure Thermal radiation Induced Dissociation [ZTID]</a></li>
+ <li><a href="#Scat">Scattering of Atoms from Ions [Scat]</a></li>
+ </ol></li>
+ <li>Non-Experimental Methods
+ <ol class="level3">
+ <li><a href="#DER">Derivation [DER]</a></li>
+ <li><a href="#EST">Estimation [EST]</a></li>
+ <li><a href="#EVAL">Evaluation [EVAL]</a></li>
+ <li><a href="#CALC">Calculations [Calc]</a></li>
+ <li><a href="#Latt">Lattice Energy Calculations [Latt]</a></li>
+ </ol></li>
+ </ol></li>
+ <li>Reliability of Data and Criteria for Evaluation
+ <ol class="level2">
+ <li><a href="#COMP">Comparisons Among Results of Different Techniques</a></li>
+ <li><a href="#EL">Error Limits</a></li>
+ </ol></li>
+ <li>References</li>
+</ol>
+
+<hr />
+
+
+<h1>INTRODUCTION</h1>
+
+<p>
+The database concerned with ion thermochemistry included in the WebBook
+makes available a reasonably complete listing of values for
+</p>
+
+<ul>
+<li><a href="#IE">ionization energies</a></li>
+<li><a href="#AE">appearance energies</a></li>
+<li><a href="#EA">electron affinities</a></li>
+<li><a href="#A">acidities</a></li>
+<li><a href="#PA">proton affinities</a> and
+<a href="#GB">gas phase basicities</a></li>
+</ul>
+
+<p>
+of molecules or molecular fragments. Data displayed for
+ionization energies, electron affinities and acidities are
+experimental values as reported in the literature, and are
+given along with a citation of the original paper; values
+for proton affinities and gas phase basicities are taken
+from a new <a href="#EV">re-evaluation</a> of the
+relevant thermochemical scales, and original references
+are not given in the current version of the WebBook.
+For the experimental data, guidance is provided
+(at least for the more common molecules) in the selection of a "best" value,
+when several different values have been reported for a quantity. Values for
+the gas phase <a href="#DH">enthalpies of formation</a> of some of the common
+positive and negative ions derived from these data are displayed. The values
+for enthalpies of formation are presented using the so-called <a href="#IC">
+Ion Convention</a> for treating the thermochemistry of the electron (rather
+than the <a href="#EC">Electron Convention</a> commonly used in
+thermodynamics compilations).
+</p>
+
+<p>
+In the August 1997 release of the WebBook, for the first time, the
+NIST Positive Ion (ionization energies, appearance energies), Proton
+Affinity (gas phase basicities, proton affinities) and Negative
+Ion (electron affinities, gas phase acidities) databases are combined
+into a single searchable Ion Energetics database. Because the Positive
+and Negative Ion databases were developed and maintained separately,
+the structures of the two sets of files are different, resulting
+in some <a href="#EV">inconsistencies</a> in the way analogous data are
+presented in the WebBook. In future updates, these inconsistencies will
+be removed, but at the present time users should be aware that (a) data
+relevant to formation of positive ions are accessed through a search for the
+<em>precursor neutral species</em> while data on the thermochemistry
+of the anion is found by searching for the <em>anion</em>; (b) when the
+box on the entry screen denoting a search for "Ion Energetics" data
+is checked, available data on gas phase basicities and proton
+affinities will be displayed with every "hit", while available data
+on gas phase acidities will not appear; in order to access gas phase
+acidity data, the user must also click on the box in the entry
+screen labeled "Reaction". For the same reason, the user will find that
+sometimes the same experimental technique is designated by two different
+acronyms in accessing results on positive and negative ions; because
+these acronyms are fully defined, it is hoped that this will not
+cause confusion.
+</p>
+
+<p>
+The current collection is an update and extension of several earlier
+data compilations / evaluations, including all the data which appeared
+in previous publications [<a href="#REF1">1</a>, <a href="#REF2">2</a>,
+<a href="#REF3">3</a>, <a href="#REF4">4</a>, <a href="#REF7">7</a>]
+and electronic databases [<a href="#REF5">5</a>, <a href="#REF9">9</a>],
+and the new re-evaluation of the proton affinity scale
+[<a href="#REF10">10</a>], as well as data which has appeared in the
+literature since the release of the most recent electronic
+database [<a href="#REF9">9</a>].
+</p>
+
+<h2>Definitions</h2>
+
+<h3 id="IE">Ionization Energy</h3>
+
+<p>
+The <em>ionization energy</em>, sometimes called (less correctly) the
+<em>ionization potential</em> (usually designated by IE, IP, or, in the
+older literature, I), is the energy required to remove an electron from a
+molecule or atom:
+</p>
+
+<p class="equation">
+M
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>+</sup> + e<sup>&minus;</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&Delta;H<sub>rxn</sub>= IEa
+</p>
+
+<p>
+Ionization energies are characterized as <a href="#AIE">adiabatic</a> or
+<a href="#VIE">vertical</a> values.
+</p>
+
+<h4 id="AIE">Adiabatic Ionization Energy</h4>
+
+<p>
+The <em>adiabatic ionization energy</em> is the lowest energy required
+to effect the removal of an electron from a molecule or atom, and corresponds
+to the transition from the lowest electronic, vibrational and rotational level
+of the isolated molecule to the lowest electronic, vibrational and rotational
+level of the isolated ion. Adiabatic ionization energy data can be used to
+obtain values for the <a href="#DH">enthalpy of formation of the ion</a>,
+M<sup>+</sup>.
+</p>
+
+<h4 id="VIE">Vertical Ionization Energy</h4>
+
+<p>
+The <em>vertical ionization energy</em> is the energy change
+corresponding to an ionization reaction leading to formation of the ion in a
+configuration which is the same as that of the equilibrium geometry of the
+ground state neutral molecule. According to the <a href="#FC">Franck-Condon
+principle</a>, when a molecule is ionized by photoionization or by
+interaction with energetic electrons, the highest probability configuration of
+the resulting ion will be the configuration of the precursor neutral molecule.
+When the equilibrium geometry of the ion is very similar to that of the
+neutral precursor molecule, the vertical and adiabatic ionization energies
+will be the same, or nearly so. The vertical ionization energy must always be
+greater than or equal to the adiabatic ionization energy.
+</p>
+
+<h3 id="AE">Appearance Energy</h3>
+
+<p>
+Since ionization energies are often determined in experiments in which
+the ionizing photon or electron energy is varied until the appearance of an
+ion is observed ("threshold measurements"), ionization energies have sometimes
+been called appearance energies. However, in general usage this term has come
+to have a more specific meaning. As used here, and in most of the technical
+literature, the term <em>appearance energy</em>, sometimes (less correctly)
+called the <em>appearance potential</em>, refers to the minimum energy
+required to form a particular fragment ion from a precursor neutral
+molecule:
+</p>
+
+<p class="equation">
+AB
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+A<sup>+</sup> + B + e<sup>&minus;</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&Delta;&nbsp;H<sub>rxn</sub> = AP
+</p>
+
+<p>
+For more information see the description of the presentation of
+<a href="#AED">appearance energy data</a>, the discussion of the use of
+appearance energy data to derive enthalpies of formation of
+<a href="#APT">fragment ions</a>, as well as the description of
+some of the complicating factors involved in the interpretation
+of <a href="#AP">appearance energy data</a>.
+</p>
+
+<h3><span id="PA">Proton Affinity</span> and <span id="GB">Gas Phase
+Basicity</span></h3>
+
+<p>
+Stable cations formed in the gas phase also include protonated neutral
+molecules, generated in proton transfer reactions. Formally, the relationship
+between the enthalpy of formation of MH<sup>+</sup> and its neutral
+counterpart, M, is defined in terms of a quantity called the <em>proton
+affinity</em>, PA. This the negative of the enthalpy change of the
+hypothetical protonation reaction:
+</p>
+
+<p class="equation">
+M + H<sup>+</sup>
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+MH<sup>+</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&Delta;&nbsp;H<sub>rxn</sub> = &minus;PA
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(MH<sup>+</sup>) =
+&Delta;<sub>f</sub>H&deg;(M) +
+&Delta;<sub>f</sub>H;(H<sup>+</sup>) &minus; PA
+</p>
+
+<p>
+The term proton affinity, as universally used, is a quantity defined at a
+finite temperature, usually 298 K, and is therefore not strictly analogous to
+the <a href="#AIE">adiabatic ionization energy</a> or <a href="#EA">electron
+affinity</a>, both of which are the 0 K enthalpy changes of the corresponding
+reactions.
+</p>
+
+<p>
+At 298 K, the enthalpy of formation of the proton, using the
+<a href="#IC">Ion Convention</a> (or "stationary electron"
+convention), is 365.7 kcal/mol, 1530.0 kJ/mol.
+</p>
+
+<p>
+The Gibbs energy change associated with the protonation reaction is
+called the <em>gas phase basicity</em>, GB, of molecule M. Most available
+data on gas phase basicities and proton affinities has been obtained from
+experiments in which the equilibrium constants of proton transfer reactions
+are determined. See the discussion of derivation of thermochemical data from
+<a href="#EQ">ion/molecule equilibrium constants</a> for relevant equations
+and details.
+</p>
+
+<h3 id="EA">Electron Affinity</h3>
+
+<p>
+The <em>electron affinity</em>, EA, of a molecule is, for negative ions
+or anions, the quantity that is analogous to the ionization energy for
+positive ions. That is, the electron affinity is equal to the energy
+difference between the enthalpy of formation of a neutral species and the
+enthalpy of formation of the negative ion of the same structure. The electron
+affinity is defined as the negative of the 0 K enthalpy change for the
+electron attachment reaction:
+</p>
+
+<p class="equation">
+M + e<sup>&minus;</sup>
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>&minus;</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&Delta;&nbsp;H<sub>rxn</sub> = &minus;EAa
+</p>
+
+
+
+<p class="equation">
+-EA = &Delta;<sub>f</sub>H;(M<sup>&minus;</sup>) &minus;
+&Delta;<sub>f</sub>H&deg;(M) &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)
+</p>
+
+<p>
+As with the ionization energy, it is possible to have either vertical or
+adiabatic electron affinities, with the numeric value of the vertical quantity
+being greater than or equal to the adiabatic value. A difference from the
+ionization energy is that for stable ("bound") negative ions, the ion is lower
+in energy than the corresponding neutral. If the negative ion is higher in
+energy than the neutral, the neutral is said to have a negative electron
+affinity, and the ion will usually undergo spontaneous loss of the electron.
+</p>
+
+<h3 id="A">Gas Phase Acidity and Relative Acidity</h3>
+
+<p>
+The <em>gas phase acidity</em> (or merely, <em>acidity</em>) of a
+molecule AH, &Delta;<sub>acid</sub>&nbsp;G(AH),
+is the Gibbs energy change of the reaction:
+</p>
+
+<p class="equation">
+AH
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+A<sup>&minus;</sup> + H<sup>+</sup>
+</p>
+
+<p>
+usually defined at 298 K. The enthalpy change of this reaction,
+&Delta;<sub>acid</sub>&nbsp;H, is, of course, the proton affinity of the
+anion. The Gibbs energy change of the reaction:
+</p>
+
+<p class="equation">
+AH + B<sup>&minus;</sup>
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+BH + A<sup>&minus;</sup>
+</p>
+
+<p>
+is called the <em>relative acidity</em> of species AH and BH. Most data are
+derived from determinations of the equilibrium constant of this reaction. See
+the discussion of derivation of thermochemical data from <a href="#EQ">
+ion/molecule equilibrium</a> constants for relevant equations and details.
+</p>
+
+<h3 id="DH">Enthalpies of Formation of Ions in the Gas
+Phase</h3>
+
+<p>
+The <em>enthalpy of formation (or heat of formation) of an ion in the
+gas phase</em> can, in principle, be obtained through a straightforward
+treatment of the thermochemistry of the ionization process. For example, the
+enthalpy of formation of a positive molecular ion is obtained by adding the
+enthalpy of formation of the precursor molecule to the <a href="#AIE">
+adiabatic ionization energy</a> (IE) and subtracting the enthalpy of formation
+of the electron,
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>) =
+&Delta;<sub>f</sub>H&deg;(M) + IE<sub>a</sub> &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)
+</p>
+
+<p>
+while that of an anion is based on the analogous quantities combined with the
+value for the <a href="#EA">electron affinity</a>:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>) =
+&Delta;<sub>f</sub>H&deg;(M) &minus; EA +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)
+</p>
+
+<p>
+Similarly, enthalpies of formation of positive <em>fragment ions</em>,
+A<sup>+</sup>, are given by:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(A<sup>+</sup>) =
+&Delta;<sub>f</sub>H&deg;(AB) &minus;
+&Delta;<sub>f</sub>H&deg;(B) &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>) + AP
+</p>
+
+<p>
+assuming that there is no <a href="#PB">potential barrier</a> in the reaction
+coordinate for the dissociation reaction, and little or no <a href="#KS">
+kinetic shift</a>.
+</p>
+
+<p>
+Note that in the equations given here, there is no reference to
+temperature, but in practice, one may have to be concerned about the fact that
+the ionization energy or electron affinity is a quantity corresponding to a
+zero degrees Kelvin process, while the available data on the enthalpy of
+formation of the neutral species may correspond to some higher temperature.
+This presents a complication (especially for those interested in highly
+accurate data) in the derivation of enthalpies of formation of ions in the gas
+phase. A rigorous treatment of enthalpies of formation of ions at finite
+temperatures requires a consideration of the changes in the ionization
+energy/enthalpy of formation with temperature. However, when high accuracy is
+not required, the simplifying assumption that the adiabatic ionization energy
+is approximately equivalent to the 298 K enthalpy of ionization is usually
+adequate. (For a more detailed presentation, see the discussion of the
+<a href="#FT">thermochemistry of ions in the gas phase at finite
+temperatures</a>.)
+</p>
+
+<p>
+In this compilation, the <a href="#IC">Ion Convention</a> for treating
+the thermochemistry of the electron is used. This essentially means that the
+terms involving the electron can be ignored in these equations.
+</p>
+
+<h3>Thermochemical Conventions for Enthalpies of Formation of
+Ions</h3>
+
+<p>
+In order to derive <a href="#DH">enthalpies of formation</a> of positive
+or negative ions in the gas phase using ionization or appearance energy data,
+it is necessary to treat the <a href="#TC">thermochemistry of the
+electron</a>. There are two conventions, both in widespread use, for dealing
+with the thermochemistry of the electron, one (the <em>Ion Convention</em>)
+used by the ion chemistry/physics community, and one (the <em>Electron
+Convention</em>) used by thermodynamicists.
+</p>
+
+<h4 id="IC">The Ion Convention</h4>
+
+<p>
+According to the "<em>Ion Convention</em>" (sometimes unfortunately
+called the "stationary electron convention") which is adopted here, the
+enthalpy of formation of the electron at non-zero temperatures is equal to the
+integrated heat capacity of the electron; when data are treated this way (for
+details, see discussion on <a href="#TC">Thermochemical Conventions for the
+Electron</a>), the enthalpy of formation of the electron cancels out in
+calculating the enthalpy of formation of an ion. That is, in this convention,
+which is adopted by most mass spectrometrists and other ion physicists and
+chemists, the thermochemistry of the electron can be ignored when deriving an
+ion enthalpy of formation.
+</p>
+
+<h4 id="EC">The Electron Convention</h4>
+
+<p>
+Thermodynamicists commonly use the "<em>Electron Convention</em>" which
+treats the electron as a <em>standard chemical element</em> with an enthalpy
+of formation defined as zero at all temperatures. Since standard
+thermodynamics is a non-rationalized system, the effect of constraining the
+enthalpy of formation of the electron gas to zero at all temperatures, is that
+the electron's integrated heat capacity must be accommodated elsewhere in the
+equation &mdash; namely, in the derived value for the enthalpy of formation of the
+ion. Therefore, in standard thermodynamics data compilations
+[<a href="#REF6">6</a>], cited values for enthalpies of formation of ions at
+temperatures other than 0K differ from those given here. Because in standard
+thermodynamic data compilations [<a href="#REF6">6</a>], the <a href="#HV">
+integrated heat capacity of an electron gas</a> has commonly been taken to be
+the same as that of an ideal gas following Boltzmann statistics &minus; 5/2 RT &mdash; a
+value for an <a href="#IC">"Ion Convention" enthalpy of formation</a> of a
+positive ion is numerically more negative than the value in the "Electron
+Convention" by 5/2 RT (6.2 kJ/mol at 298 K); that for a negative ion, is more
+positive by the same amount.
+</p>
+
+<h2 id="HCandP">History, Coverage, and Presentation of
+the Database</h2>
+
+<h3 id="H">History</h3>
+
+<p>
+The collection of gas phase ion energetics data presented in the
+WebBook traces its origin to a series of publications concerned with this
+subject area, beginning with a table of ionization energies and evaluated
+enthalpies of formation of ions included in the 1957 book &quot;Electron
+Impact Phenomena and the Properties of Gaseous Ions&quot; by F. H. Field and
+J. L. Franklin [<a href="#REF1">1</a>]. In 1969, H. M. Rosenstock and
+collaborators, from the National Bureau of Standards, joined Field and
+Franklin to expand that table in the publication &quot;Ionization Potentials,
+Appearance Potentials, and Heats of Formation of Gaseous Positive
+Ions&quot; [<a href="#REF2">2</a>]. In 1977, H.M. Rosenstock, K. Draxl, B.W.
+Steiner, and J.T.Herron published an update, &quot;Energetics of Gaseous
+Ions,&quot; [<a href="#REF3">3</a>] which included a complete re-evaluation of
+the data, and for the first time, a table of electron affinity data.
+</p>
+
+<p>
+In 1982, an extensive compilation of ionization potential and appearance
+potential data, &quot;Ionization Potential and Appearance Potential
+Measurements, 1971-1981&quot; [<a href="#REF4">4</a>], presented unevaluated
+measurements which had appeared in the literature from the 1971 cut-off date
+of the previous collection [<a href="#REF3">3</a>] up to mid-1981. In 1988,
+an evaluation or re-evaluation of the data from the collective database
+presented in all these earlier publications [<a href="#REF1">1</a>,
+<a href="#REF2">2</a>, <a href="#REF3">3</a>, <a href="#REF4">4</a>],
+was published in &quot;Gas-phase Ion and Neutral Thermochemistry&quot;
+[<a href="#REF7">7</a>] (commonly referred to as &quot;the GIANT Tables&quot;).
+The 1988 publication also included more recent data and evaluated proton
+affinity values, as well as a comprehensive table of data on negative ions,
+including both electron affinity and gas phase acidity values. The data on
+proton affinities were taken from a 1984 publication [<a href="#REF8">8</a>] in
+which the entire thermochemical scale of gas phase basicities and proton
+affinities had been evaluated.
+</p>
+
+<p>
+The 1988 publication of evaluated data on ion thermochemistry
+[<a href="#REF9">9</a>] was made available by the National Institute of Standards
+and Technology's Standard Reference Data program as a searchable computer
+database available on diskettes &mdash; in fact, as two jointly-distributed
+databases, one presenting the data relevant to positive ions
+[<a href="#REF9a">9a</a>] and the other, data on negative ions
+[<a href="#REF9b">9b</a>]. In the initial release, the negative ion database
+[<a href="#REF9b">9b</a>] displayed the entire corpus of data from which the
+evaluations were drawn, but the original version of the electronic database on
+positive ions [<a href="#REF9a">9a</a>] presented only evaluated values for
+ionization energies, proton affinities, and enthalpies of formation of
+positive ions in the gas phase. The 1991 and 1993 updates
+[<a href="#REF5">5</a>] to the electronic database added more recent data, and, in
+the case of the positive ion collection [<a href="#REF5a">5a</a>], for the
+first time displayed some of the original data (e.g. data published after
+1971) from which the evaluations were drawn.
+</p>
+
+<p>
+After new experimental determinations had made necessary a re-evaluation of
+the entire proton affinity scale as presented in the 1984 publication
+[<a href="#REF8">8</a>] (data derived from equilibrium constant determinations are
+interdependent and must be evaluated collectively), proton affinity data which
+had appeared in the original electronic database [<a href="#REF9a">9a</a>] were
+removed from the updated version [<a href="#REF5">5</a>] to prevent
+dissemination of out-of-date information. The re-evaluation of the proton
+affinity scale has now been completed [<a href="#REF10">10</a>], and the
+evaluated proton affinity and gas basicity data are included in the
+WebBook.
+</p>
+
+<p>
+Since most of these precursor publications are still in widespread use
+(even the woefully out-of-date 1969 compilation [<a href="#REF2">2</a>]
+continues to be cited), it is worthwhile to summarize the contents and
+coverage of the various publications, and compare these to the contents and
+coverage of the WebBook:
+</p>
+
+<p>
+<em>Summary</em>
+</p>
+
+<dl>
+<dt>Field and Franklin, 1957 [<a href="#REF1">1</a>]</dt>
+<dd>
+Table of ionization energies and enthalpies of formation of positive ions
+</dd>
+<dt>Franklin et al, 1969 [<a href="#REF2">2</a>]</dt>
+<dd>
+Comprehensive collection of ionization/appearance energy measurements
+with evaluations where possible and enthalpies of formation of some
+positive ions; cut-off date, mid-1966.</dd>
+<dt>Rosenstock et al, 1977 [<a href="#REF3">3</a>]</dt>
+<dd>
+Comprehensive collection of ionization/appearance energy and electron
+affinity measurements with evaluations where possible and enthalpies
+of formation of some positive and negative ions; cut-off date, mid-1971.</dd>
+<dt>Levin and Lias, 1982 [<a href="#REF4">4</a>]</dt>
+<dd>
+Comprehensive collection of ionization/appearance energy data;
+no evaluations; covers literature from mid-1971 to mid-1981.</dd>
+<dt>Lias, Liebman and Levin, 1984 [<a href="#REF8">8</a>]</dt>
+<dd>
+Evaluation of the scale of gas phase basicities/proton affinities
+with data for 820 molecules.</dd>
+<dt>GIANT Tables, 1988 [<a href="#REF7">7</a>]</dt>
+<dd>
+<strong>Positive ions:</strong> Evaluated ionization energy values, proton affinities, and
+enthalpies of formation; original measurements and appearance energies not
+displayed.<br />
+<strong>Negative ions:</strong> Comprehensive collection of electron affinity and gas phase
+acidity data with evaluations and anion enthalpies of formation.<br />
+Cut-off date for literature coverage, mid-1986.</dd>
+<dt>GIANT Tables PC Version 1.0, 1990 [<a href="#REF9">9</a>]</dt>
+<dd>
+Same as 1988 GIANT Tables</dd>
+<dt>GIANT Tables PC Versions 2.0/3.0, 1991-93 [<a href="#REF5">5</a>]</dt>
+<dd>
+Original ionization energy measurements 1971-1992 displayed along
+with evaluations from 1988 GIANT Tables. Proton affinity data removed.
+Electron affinity and gas phase acidity data updated.</dd>
+<dt>NIST WebBook, Feb. 1997</dt>
+<dd>
+Only positive ion data provided; original ionization energy measurements
+from all earlier references displayed, with evaluations from 1988 GIANT
+Tables. Newly-evaluated proton affinity data added. Literature update
+through mid-1996.</dd>
+<dt>NIST WebBook, August 1997</dt>
+<dd>
+Addition of updated negative ion data (electron affinities, gas
+phase acidities, and cluster ion data). Some new ionization
+energy/appearance energy data added, and some evaluations of
+positive ion data revised.</dd>
+<dt>
+Hunter and Lias, 1998 [<a href="#REF10">10</a>]</dt>
+<dd>
+Re-evaluation of the gas phase basicity/proton affinity scale with data
+for 1740 molecules.</dd>
+</dl>
+
+<h3 id="C">Coverage</h3>
+
+<p>
+The ion energetics database at the present time has as its focus numeric
+data concerned with the energies for formation of particular positive and
+negative ions in the gas phase, as well as with the energetics of certain
+reactions, namely protonation and deprotonation, of those ions. That is, the
+database includes values for ionization energies, appearance energies,
+electron affinities, gas phase acidities and basicities, as well as proton
+affinities. In addition, the database contains data on the energies
+associated with the clustering of neutral molecules to anions.
+</p>
+
+<p>
+Thermochemical information about positively-charged ion/molecule clusters
+has been compiled, but has not yet been incorporated into the WebBook
+database. Some information on ionization energies of small cluster ions (with
+not more than three or four ligand molecules), especially in inorganic
+systems, is included. The database does not at the present time include
+thermochemical data derived from collisionally-activated dissociation
+experiments of positive ions, although such results for negative ions
+are included.
+</p>
+
+<p>
+In recent years, numerous publications giving quantum mechanical
+calculations of very high accuracy on the thermochemical properties of ions,
+especially small ions, have appeared. The present work includes only data
+derived from experimental determinations, although some calculational results
+have been used in carrying out evaluations, especially of the proton affinity
+data.
+</p>
+
+<p>
+A particular explanation about the coverage of ionization energy data is
+in order. In most of the precursor publications
+[<a href="#REF1">1</a>, <a href="#REF2">2</a>, <a href="#REF3">3</a>,
+<a href="#REF4">4</a>, <a href="#REF7">7</a>]
+the primary focus was the thermochemistry of ions in the gas phase. That is,
+the goal of collecting ionization energies, appearance energies, electron
+affinities, and so forth was the derivation of enthalpies of formation of
+ions. Because of this emphasis, the coverage of data was restricted to
+information directly relevant to deriving ionic enthalpies of formation. This
+limited focus had particular implications for the coverage of data on
+ionization energies, since it necessarily meant that only data on the lowest
+ionization energies was included; ionization energies leading to the formation
+of excited ions, or multiply charged ions were excluded (except for atoms and
+diatomic molecules in the 1977 publication [<a href="#REF3">3</a>]).
+Furthermore, coverage was restricted to <a href="#AIE">adiabatic ionization
+energy data</a> except in cases where publications gave only <a href="#VIE">
+vertical ionization energy values</a>. In abstracting data from the more
+recent literature (since 1993), we have attempted to include both adiabatic
+and vertical values where both are available, but have not gone back to the
+thousands of earlier papers to re-abstract data on vertical ionization
+energies or upper ionization energies that were not originally included.
+</p>
+
+<h3 id="P">Presentation</h3>
+
+<p>
+The positive ion database (<a href="#IE">ionization energies</a>,
+<a href="#AE">appearance energies</a>, <a href="#PA">proton affinities</a>) and
+negative ion database (<a href="#EA">electron affinities</a>, <a href="#A">
+acidities</a>) were developed and are maintained separately. As a result,
+certain inconsistencies exist at the present time in the presentation of the
+two types of data in the Web Book. For example, the primary sort in the anion
+database depends on the identity of the anion, while the positive ion database
+has always been organized around the identity of the precursor neutral
+molecule. For this reason, until further work has been accomplished, users of
+the WebBook will occasionally see an apparently illogical list of
+&quot;hits&quot; when data for a particular chemical species has been
+requested. It is intended that such inconsistencies be cleaned up up in the
+next version of the WebBook.
+</p>
+
+<p>
+For example, when carrying out a sort for &quot;ion energetics&quot;
+data, if the database contains both ionization/appearance energy data and
+electron affinity data for species M, then M will be listed twice in the list
+of &quot;hits&quot;, once as M (giving data on the energies associated with
+ionization of M to M+) and once as M- (with data on the electron affinity of
+molecule M). Retrieval of data listed under M will also lead to a table
+giving the proton affinity and gas phase basicity of molecule M, if they are
+available. Unlike gas phase basicity data, data on gas phase acidities can be
+retrieved only if you started the search by requesting data on
+&quot;reactions&quot; (in addition to &quot;ion energetics&quot;) on the
+opening screen. The gas phase basicity/proton affinity data are, at the
+present time, presented in less detail.
+</p>
+
+<p>
+The formal organization of the positive and negative ion data based
+on neutral precursor (positive ions) or on the ion also has implications
+for carrying out a search for data based on registry number. For positive
+ion data, searches should be conducted based on the registry number
+of the neutral species; for anion data searches should be conducted
+on the registry number of the anion. Since the database contains registry
+number data for a limited portion of the anions in the database, a
+chemical formula search will often be a better choice for finding
+a specific anion.
+</p>
+
+<p>
+<span id="AED">Appearance energy data</span> are presented in two ways.
+First, by calling up all data for a particular molecule, you access a listing
+of all ionization energy determinations, and also the appearance energies that
+have been determined for fragmentation processes of that parent ion. Second,
+if you are interested in knowing the appearance energies determined for the
+formation of a particular ion through fragmentation of larger species, you are
+given the option (at the top of the display) to &quot;View reactions leading
+to ____+ (ion structure unspecified)&quot;. By clicking on this text, you
+will access a list of all appearance energies determined for formation of
+fragment ions of that particular formula from other (larger) molecular
+species. It should be understood that in the great majority of cases, the
+structure of the fragment ion is not specified, and such data should be used
+mainly as auxiliary information, or as a guide to the original literature.
+However, in some cases where the original authors have carried out a
+sufficient analysis to be able to specify the structure of the fragment ion,
+this structure is indicated. (In other cases, the structure may be obvious,
+and such an indication is not necessary.) A word of caution is in order:
+again, in earlier versions of the database, such specifications were not
+included, and we have not yet gone back to fill in this missing
+information.
+</p>
+
+<h2 id="U">Units</h2>
+
+<p>
+Units used for the display of information are dictated by the current
+practices for reporting data of a particular kind. For example, ionization
+energy and electron affinity values are usually reported in electron volts,
+and that is the unit used here for these data. The user is given the option
+of displaying values for enthalpies of formation of ions, proton affinities,
+and gas phase basicities in kJ/mol or kcal/mol, both of which are widely used
+in the relevant literature.
+</p>
+
+<p>
+The conversion factors which were used are: 1 electron volt (eV) =
+23.06054 kcal/mol = 96.4853 kJ/mol; 1 kcal/mol =
+4.184 kJ/mol, as given by the 1986 CODATA compilation
+[<a href="#REF11">11</a>].
+</p>
+
+<h2 id="TC">Thermochemical Conventions for the
+Electron</h2>
+
+<p>
+The enthalpy of formation of any chemical species is defined as the
+difference between the enthalpy of the compound and the sum of the enthalpies
+of the elements of which it is composed. However, in the case of an ion,
+M<sup>+</sup> or M<sup>&minus;</sup>, one must explicitly take into account the enthalpy
+of the electron in some way. There are two widely-used conventions for
+dealing with the thermochemistry of the electron, one &mdash; called the "Electron
+Convention" &mdash; used predominantly by thermodynamicists and one &mdash; "the Ion
+Convention" &mdash; commonly adopted by scientists studying ion physics/chemistry.
+The "Ion Convention" is used here.
+</p>
+
+<p>
+There is considerable confusion and misunderstanding of the basic
+assumptions and treatment of the thermochemistry of the electron in the two
+approaches. In fact, the so-called "electron" and "ion" conventions are
+really names assigned by the ion chemistry community to the two different
+conventions used by thermodynamicists for handling the integrated heat
+capacity of elements. The more widely-used convention (corresponding to the
+"electron convention") defines the enthalpies of formation of elements in
+their standard states to be zero at all temperatures; in this case, the
+integrated heat capacity of the element must be accommodated elsewhere in any
+thermodynamic equation, as shown in the more detailed discussion below &mdash; and
+in the particular case in which we are interested (ionization) end up as an
+increment in the derived enthalpy of formation of the ion. There is also a
+community of scientists in Europe (SGTE) who define the enthalpy of formation
+of elements at temperatures above absolute zero to be equal to the integrated
+heat capacity of the species; this corresponds to the treatment used for the
+electron in the so-called "ion convention". As will be derived below, when
+this treatment is followed, the integrated heat capacity term cancels out in
+the expression defining the enthalpy of formation of the ion. Of course,
+enthalpies of reaction are identical when using the two conventions (provided
+the same value is chosen for the integrated heat capacity term in question);
+the value of the integrated heat capacity merely appears on opposite sides of
+the equation, with opposite signs.
+</p>
+
+<p>
+Further confusion exists because in the past, users of the two
+conventions have cited different values for the integrated heat capacity of
+the electron. Standard thermodynamics works [<a href="#REF6">6</a>], usually
+using the "electron convention", have taken a value of 5/2 RT
+(<a href="#HV">6.197 kJ/mol at 298 K</a>), that is, the heat capacity of an ideal
+gas under Boltzmann statistics. Ion chemists/physicists, in deriving values
+for enthalpies of formation of ions, have in much of the earlier literature
+[<a href="#REF7">7</a>, <a href="#REF13">13</a>] stated that they were assuming a
+value of zero for the integrated heat capacity of the electron; since the
+term cancels out in deriving an ion heat of formation in the "ion convention",
+the value chosen was, in fact, moot. A correct treatment of the heat capacity
+of an electron gas uses Fermi-Dirac, rather than Boltzmann, statistics
+[<a href="#REF12">12</a>]. A 1994 publication [<a href="#REF12">12</a>] arrives
+at a value of 3.145 kJ/mol (0.0326 eV) for the <a href="#HV">integrated heat
+capacity of an electron gas at 298 K</a>, and is recommended for use in
+instances (such as reactions where the electron appears as a reactant) where
+the term does not cancel out.
+</p>
+
+<p>
+Because of these differences in the treatment of the thermochemistry of
+the electron, values for the gas phase enthalpies of formation of ions at
+temperatures other than absolute zero cited in standard thermochemical
+compilations [<a href="#REF6">6</a>] differ from those given here or in
+most mass spectrometric literature, usually by 5/2 RT
+(<a href="#HV">6.197 kJ/mol at 298 K</a>). Values for enthalpies of
+formation under the Electron Convention are higher (more positive) for
+positive ions and lower (less positive) for negative ions than the
+corresponding values expressed in the Ion Convention (used here). Problems
+arise when users unknowingly mix inconsistent values for enthalpies of
+formation in the same equation. The Table lists several commonly-used
+compilations and shows which convention is used in each.
+</p>
+
+<div class="figure">
+
+<h4>Summary of Conventions Used for Electron
+Thermochemistry in Data Compilations</h4>
+
+<table class="summary">
+<tr>
+<th rowspan="2">Compilation</th>
+<th rowspan="2">Convention</th>
+<th colspan="3">H<sub>T</sub> &minus; H<sub>0</sub>
+Included?&nbsp;<sup>c</sup></th>
+<th rowspan="2"><span style="font-size: larger">&int;</span>
+C<sub>p</sub>(e<sup>&minus;</sup>) <br /> (kJ/mol)</th>
+</tr>
+<tr>
+<th> M</th>
+<th> M<sup>+</sup>/M<sup>&minus;</sup></th>
+<th> e<sup>&minus;</sup></th>
+</tr>
+<tr>
+<td class="left">JANAF Tables [<a href="#REF6a">6a</a>, <a href="#REF6b">6b</a>, <a href="#REF6c">6c</a>]</td>
+<td>Electron</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>Yes</td>
+<td>6.197</td>
+</tr>
+<tr>
+<td class="left">Gurvich et al. [<a href="#REF6e">6e</a>]</td>
+<td>Electron</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>Yes</td>
+<td>6.197</td>
+</tr>
+<tr>
+<td class="left">NBS Tables [<a href="#REF6d">6d</a>]</td>
+<td>Electron</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>6.197</td>
+</tr>
+<tr>
+<td class="left">Rosenstock et al. [<a href="#REF3">3</a>]</td>
+<td>Ion</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+<tr>
+<td class="left">GIANT [<a href="#REF7">7</a>]</td>
+<td>Ion</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+<tr>
+<td class="left">NIST Database 19A <br /> Version 1.09</td>
+<td>Ion</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+<tr>
+<td class="left">NIST Database 19A <br /> Versions 2.0/3.05</td>
+<td>Ion</td>
+<td>No</td>
+<td>No</td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+<tr>
+<td class="left">NIST Database 19B [<a href="#REF5b">5b</a>, <a href="#REF9b">9b</a>]</td>
+<td>Ion</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+<tr>
+<td class="left">WebBook</td>
+<td>Ion</td>
+<td>Yes<sup>a</sup></td>
+<td>Yes<sup>a</sup></td>
+<td>N/A<sup>b</sup></td>
+<td>N/A<sup>b</sup></td>
+</tr>
+</table>
+
+<p>
+a. When sufficient information is available.<br />
+b. N/A: Not applicable. See discussion.<br />
+c. Indicates treatment of integrated heat capacity terms for
+molecules and ions.
+</p>
+</div>
+
+<p>
+The following more detailed discussion of these issues is intended to
+present the question of how the electron is treated in a thermochemical
+equation in a tutorial manner, in the hope that some of the confusion will be
+dispelled. This discussion is also intended to justify the choice of the usual
+mass spectrometrists' convention for use in these tables.
+</p>
+
+<p>
+The relationships between the various quantities that must be considered
+are shown in the thermochemical cycles:
+</p>
+
+<table class="equation">
+<tr>
+<td> M<sub>0K</sub></td>
+<td> <span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span> </td>
+<td> M<sup>+</sup><sub>0K</sub></td>
+<td>+</td>
+<td> e<sup>&minus;</sup><sub>0K</sub></td>
+<td> &nbsp;&nbsp;&nbsp;&nbsp;&Delta;H<sub>rxn</sub> = IE<sub>a</sub></td>
+</tr>
+<tr>
+<td> A<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td>&nbsp;</td>
+<td> B<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td> &nbsp;</td>
+<td> C<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td> &nbsp;</td>
+</tr>
+<tr>
+<td> M<sub>298 K</sub></td>
+<td> <span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span> </td>
+<td> M<sup>+</sup><sub>298 K</sub></td>
+<td>+</td>
+<td> e<sup>&minus;</sup><sub>298 K</sub></td>
+<td> &nbsp;&nbsp;&nbsp;&nbsp;&Delta;H<sub>rxn</sub> =
+&Delta;H<sub>I</sub></td>
+</tr>
+</table>
+
+<p>
+and
+</p>
+
+<table class="equation">
+<tr>
+<td> M<sub>0K</sub></td>
+<td>+</td>
+<td> e<sup>&minus;</sup><sub>0K</sub></td>
+<td> <span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span> </td>
+<td> M<sup>&minus;</sup><sub>0K</sub></td>
+<td> &nbsp;&nbsp;&nbsp;&nbsp;&Delta;H<sub>rxn</sub> = &minus;EA</td>
+</tr>
+<tr>
+<td> A<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td> &nbsp;</td>
+<td> C<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td> &nbsp;</td>
+<td> D<span style="font-size: large; vertical-align: top;"
+ title="arrow pointing downward">&darr;</span></td>
+<td> &nbsp;</td>
+</tr>
+<tr>
+<td> M<sub>298 K</sub></td>
+<td>+</td>
+<td> e<sup>&minus;</sup><sub>298 K</sub></td>
+<td> <span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span> </td>
+<td> M<sup>&minus;</sup><sub>298 K</sub></td>
+<td> &nbsp;&nbsp;&nbsp;&nbsp;&Delta;H<sub>rxn</sub> = &Delta;H<sub>EA</sub>
+</td>
+</tr>
+</table>
+
+<p>
+where <em>A</em>, <em>B</em>, <em>C</em>, and <em>D</em> are the
+integrated heat capacities for the various indicated species (e.g., <em>
+A</em> is the energy required to raise M from 0 K to 298 K), IE<sub>a</sub>
+and EA are the <a href="#AIE">adiabatic ionization energy</a> and the
+<a href="#EA">electron affinity</a> (defined as the <em> negative</em> of the
+enthalpy change), and &Delta;H<sub>I</sub> and
+&Delta;H<sub>EA</sub> are the 298 K enthalpies of reaction. This
+discussion will be concerned with the standard temperature, 298 K, but the
+arguments can obviously be extended to any other temperature.
+</p>
+
+<p>
+In both conventions, at 0 K the enthalpy of formation of the electron is
+zero and the enthalpies of formation of the ions are exactly equal to the 0 K
+enthalpy of formation of the molecule M plus the energy difference between M
+and the corresponding ion:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>0K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>0K</sub> + IE<sub>a</sub>
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>0K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>0K</sub> &minus; EA
+</p>
+
+<p>
+At absolute zero, there is no difference in values derived using the two
+conventions.
+</p>
+
+<p>
+When the temperature is raised to 298 K, the enthalpies of formation of
+M<sup>+</sup> and M<sup>&minus;</sup> will be related to the enthalpy of formation of M at
+298 K through the enthalpy changes of the reactions at 298 K:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H(M<sup>+</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> +
+&Delta;H<sub>I</sub>
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H(M<sup>&minus;</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> +
+&Delta;H<sub>EA</sub>
+</p>
+
+<p>
+The enthalpy changes of reaction at 298 K are related to the 0 K ionization
+energy and electron affinity through the relationships:
+</p>
+
+<p class="equation">
+&Delta;H<sub>I</sub> = IE<sub>a</sub> + (C + B &minus; A)
+</p>
+
+
+
+<p class="equation">
+&Delta;H<sub>EA</sub> = &minus; EA &minus; (C + A &minus; D)
+</p>
+
+<p>
+In many treatments of thermodynamics of ions, the integrated heat
+capacity terms for M and the corresponding ion, M<sup>+</sup> or M<sup>&minus;</sup>, are
+taken to be approximately equal, i.e. <em> A</em> = <em> B</em> = <em> D</em>.
+In the present discussion, merely for the sake of focusing our attention on
+the treatment of <em>C</em>, the integrated heat capacity of the electron,
+let us temporarily make this assumption in order to simplify the equations.
+The validity of the usually-made assumption that <em>A</em> = <em>B</em> =
+<em>D</em> is considered in more detail in the section on
+<a href="#FT">thermochemistry of ions at finite temperature</a>:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> +
+[IE<sub>a</sub> + C]
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> &minus;
+[EA + C]
+</p>
+
+<p>
+In the <a href="#EC">Electron Convention</a>, the electron is treated like a
+standard chemical element. Therefore, using the normal procedure for treating
+the thermochemistry of an element, its enthalpy of formation is constrained to
+be zero at all temperatures, but the integrated heat capacity is not taken to
+be zero. Therefore, the expressions for the enthalpies of formation of
+positive and negative ions reduce to:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298 K</sub>
+= &Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> + [IE<sub>a</sub> + C]
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> &minus; [EA + C]
+</p>
+
+<p>
+(where the quantity in brackets is the assumed enthalpy change of reaction at
+298 K). What most often causes confusion for non-thermodynamicists is that
+the integrated heat capacity of the electron, C, becomes an increment in the
+value for the enthalpy of formation of the <em>ion</em> M<sup>+</sup> or
+M<sup>&minus;</sup>.
+</p>
+
+<p>
+In contrast, the standard treatment of ion enthalpies of formation
+followed in almost the entire corpus of literature on ion
+physics/chemistry &mdash; the <a href="#IC">Ion Convention</a> &mdash; is
+equivalent to assuming that the integrated heat capacity of the electron,
+C, is equal to the enthalpy of formation of the electron at temperature
+T, so that the equations reduce to:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> +
+[IE<sub>a</sub> + C]
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> + IE<sub>a</sub>
+</p>
+
+<p>
+and
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>298 K</sub> &minus; [EA + C]
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>298 K</sub> &minus; EA
+</p>
+
+<p>
+Thus, for the purposes of deriving enthalpies of formation of ions from
+ionization energy or electron affinity data, it does not matter what value is
+chosen for the integrated heat capacity of the electron, <em>C</em>, since it
+does not appear in the final expression for the enthalpy of formation.
+However, the expressions relating the enthalpies of reaction at finite
+temperatures to the zero degree quantities, IE<sub>a</sub> and EA, do
+explicitly include the integrated heat capacity of the electron:
+</p>
+
+<p class="equation">
+&Delta;H<sub>I</sub> = IE<sub>a</sub> + C
+</p>
+
+
+
+<p class="equation">
+&Delta;H<sub>EA</sub> = &minus; EA &minus; C
+</p>
+
+<p>
+or, more correctly:
+</p>
+
+<p class="equation">
+&Delta;H<sub>I</sub> = IE<sub>a</sub> + C + B &minus; A
+</p>
+
+
+
+<p class="equation">
+&Delta;H<sub>EA</sub> = &minus; EA &minus; C &minus; A + D
+</p>
+
+<p id="HV">
+<a href="#EC">As mentioned above</a>, it is recommended that the
+value for the integrated heat capacity term for the electron derived using
+Fermi-Dirac statistics (3.145 kJ/mol, 0.0326 eV) be used.
+</p>
+
+<p>
+Since in most thermodynamic literature or data compilations where the
+<a href="#EC">Electron Convention</a> is used [<a href="#REF6">6</a>], values of
+enthalpies of formation of ions have been derived assuming that the heat
+capacity of the electron can be estimated to be that of an ideal gas following
+Boltzmann statistics, or 5/2 RT (6.197 kJ/mol at 298 K), the relationship
+between 298 K enthalpies of formation of ions in the Ion Convention (IC) and
+most published values for enthalpies of formation derived using the Electron
+Convention (EC) is:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298 K</sub> (IC) =
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>298 K</sub> (EC) &minus;
+6.197 kJ/mol
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> (IC) =
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>298 K</sub> (EC) + 6.197 kJ/mol
+</p>
+
+<p>
+In preparing the current edition of this data collection for distribution
+via the WebBook, the possibility was considered of using the Electron
+Convention. However, the decision was made to retain the use of the Ion
+Convention. The reasons for this decision were:
+</p>
+
+<ol>
+<li>The Ion Convention is to be recommended because of its simplicity.
+Introduction of an arbitrary (even if small) temperature dependence to ion
+enthalpies of formation invites confusion and error, especially among the
+large community of users/generators of such data who are accustomed to the Ion
+Convention.</li>
+<li>There is a great body of numeric data in the literature that was derived
+over the last 50 or more years using the Ion Convention. If the convention
+were changed, anyone using data from the older literature would have to make
+appropriate changes to these data before using them. Some error and confusion
+would inevitably result.</li>
+</ol>
+
+<p>
+That is, it appears that considerable confusion could result from an attempt
+to change the presentation of data here. Therefore, in this database, the use
+of the "Ion Convention" is retained. It is recommended that in all literature
+dealing with thermochemistry of ions in the gas phase, clear signposts should
+be provided to indicate which convention is being used.
+</p>
+
+<h1>INTERPRETATION OF ION THERMOCHEMISTRY DATA</h1>
+
+<p>
+This section provides brief descriptions of some of the factors relevant
+to the interpretation and evaluation of ionization energy and appearance
+energy data. More detailed discussions of the ionization process are
+available in many books and reviews, notably in the Introduction to
+"Energetics of Gaseous Ions" [<a href="#REF3">3</a>]. Material presented
+here has as its focus those aspects of the subject which have a bearing on the
+evaluation of data on ionization energies, appearance energies, or
+ion/molecule equilibrium constants.
+</p>
+
+<h2>Ionization Thresholds</h2>
+
+
+
+<h3 id="FC">The Franck-Condon Principle</h3>
+
+<p>
+Ionization of a molecule by <a href="#PI">photoionization</a> or by
+<a href="#EI">energetic electrons</a> (sometimes called "electron impact") is
+governed by the Franck-Condon principle, which states that the most probable
+ionizing transition will be that in which the positions and momenta of the
+nuclei are unchanged. Thus, when the equilibrium geometries of an ion and its
+corresponding neutral species are closely similar, the energy dependence of
+the onset of ionization will be a sharp step function leading to the ion
+vibrational ground state. However, when the equilibrium geometry of the ion
+involves a significant change in one or more bond lengths/angles from that of
+the neutral species, the transition to the lowest vibrational level of the ion
+is no longer the most intense, and the maximum transition probability (the
+<a href="#VIE">vertical ionization energy</a>) will favor population of a
+higher vibrational level of the ion; if the geometry change is great, it is
+possible that the transition to the lowest vibrational level of the ion (i.e.
+the <a href="#AIE">adiabatic ionization energy</a>) will not even be
+observed. These situations are illustrated for hypothetical diatomic species
+in Fig. 1.
+</p>
+
+<p>
+In evaluating ionization energy data, the shapes of <a href="#PE">
+photoelectron</a> bands are useful indicators as to which of the situations
+pictured in Fig. l prevails for the particular molecule. A sharp onset
+indicates that the equilibrium geometries of ion and neutral are quite
+similar, and that photoionization or electron impact determinations of the
+ionization threshold are likely to be free of complications. When an
+ionization process proceeds according to the second situation pictured in the
+figure, the onset of the photoelectron band is observed approximately at the
+adiabatic ionization energy; adiabatic ionization energies derived from
+observation of the onsets of photoelectron bands are usually in excellent
+agreement with adiabatic ionization energies obtained from optical
+spectroscopy (analyses of <a href="#R">Rydberg series</a>) or from the
+most reliable <a href="#TH">threshold determinations</a>.
+</p>
+
+<p>
+When the equilibrium geometry of the ion is very different from that of
+the corresponding neutral molecule and the lowest vibrational level is not
+populated in ionization by photon absorption or electron ionization, it has
+been shown that values for the adiabatic ionization energies can be obtained
+by determining the equilibrium constant for charge transfer to another
+molecule of known ionization energy:
+</p>
+
+
+<p class="equation">
+A<sup>+</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+B<sup>+</sup> + A
+</p>
+
+<p>
+In such determinations, the ions are at thermal equilibrium with their
+surroundings, and one measures the thermochemical properties of the ions in
+their equilibrium geometries. The enthalpy change for this reaction, which is
+obtained from the <a href="#EQ">equilibrium constant determination</a>, is
+just the difference between the enthalpies of ionization,
+&Delta;H<sub>I</sub>, of species A and B. As derived in the
+discussion of <a href="#FT">thermochemistry of ions at finite
+temperatures</a>, this difference is likely to be quite close to the
+difference in the adiabatic ionization energies:
+</p>
+
+<p class="equation">
+&Delta;H = [&Delta;H<sub>I</sub> (B) &minus;
+&Delta;H<sub>I</sub> (A)] ~
+[IE<sub>a</sub> (B)-IE<sub>a</sub> (A)]
+</p>
+
+<div class="figure" id="FIGURE1">
+<div style="text-align: center;">
+<img src="fig1a.gif" alt="Figure 1a" />
+</div>
+
+<p>
+<strong>Fig. l.</strong> Potential energy curves for
+hypothetical diatomic molecule AB, and the corresponding positive ion,
+AB<sup>+</sup> for the cases in which the equilibrium internuclear
+distance is (a) the same, (b) slightly different, or (c) greatly different.
+Below the potential energy curves are hypothetical probabilities for
+ionization as a function of energy for cases (a), (b), and (c), and,
+at bottom, shapes of observed photoelectron bands for the three
+corresponding cases.
+</p>
+</div>
+
+<h3 id="HB">Hot Bands</h3>
+
+<p>
+In addition to the problem of accurately detecting an ionization onset
+when there is a large change of molecular geometry in the ionization process,
+there is the problem of "hot bands". This term is applied to the observation
+of ionization at energies below the <a href="#AIE">adiabatic ionization
+energy</a> when there is a significant population of vibrationally excited
+molecules in the neutral species.
+</p>
+
+<h2 id="AP">Appearance Energies</h2>
+
+<p>
+The <a href="#AE">appearance energy</a> (sometimes called the
+appearance potential) is the minimum energy required to form a particular
+fragment ion from a precursor neutral molecule:
+</p>
+
+<p class="equation">
+AB
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+A<sup>+</sup> + B + e<sup>&minus;</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&Delta;H<sub>rxn</sub> = AP
+</p>
+
+<p>
+We have discussed elsewhere the derivation of the <a href="#FT">enthalpy of
+formation</a> of the fragment ion, A<sup>+</sup>, from the appearance
+energy, and considerations having to do with derivations of <a href="#FT">
+enthalpies of formation</a> at temperatures other than absolute zero. In
+those discussions, we specified that thermodynamic information can be obtained
+from appearance energy values only when there is no <a href="#PB">potential
+barrier</a> in the reaction coordinate for the fragmentation reaction, and no
+significant "<a href="#KS">kinetic shift</a>" associated with the
+determination (except for those <a href="#TRPI">experiments</a>
+specifically designed to determine the kinetic shift). The meanings of these
+terms is given here.
+</p>
+
+<h3 id="PB">Potential Barriers</h3>
+
+<p>
+It is well known that some ionic decomposition processes occur via
+pathways involving the surmounting of a barrier on the potential surface.
+This is especially true of rearrangements, in contrast to simple bond
+cleavage fragmentations. Surmounting such a barrier requires an activation
+energy greater than the enthalpy of reaction for the process. For this
+reason, the determination of thermochemical information from fragmentation
+threshold energies is always subject to the uncertainty that the enthalpy
+of reaction may not be the same as the observed onset energy. In some
+instances, the existence of a potential barrier for a fragmentation
+process may be deduced from experimental observations, such as fragment
+ion kinetic energies, or the shapes of metastable peaks.
+</p>
+
+<h3 id="KS">Kinetic Shift</h3>
+
+<p>
+The "kinetic shift" is the term applied to experimentally-observed
+ionization onsets which are higher than the thermodynamic onset energy due to
+the fact that the apparatus samples the (fragmenting) ions at a certain time
+(usually around l0<sup>-5</sup> s) after ionization has occurred, when ions
+undergoing a slow fragmentation process have not yet had time to dissociate.
+One approach for getting around this problem is an analysis based on the
+determination of the so-called rate-energy curve for a given fragmentation; in
+this approach, the rate constant of the dissociating ion is determined as a
+function of energy. The information is derived from an analysis of the data
+from a technique which is, moreover, capable of delivering very accurate
+thermochemical information for fragmentation processes, <a href="#PIPECO">
+photoion-photoelectron coincidence spectroscopy (PIPECO)</a>. In addition,
+recent studies have approached this problem by sampling the fragmenting ions
+as a function of time using <a href="#TRPI">time-resolved dissociation</a>
+techniques.
+</p>
+
+<h2 id="R">Rydberg Series</h2>
+
+<p>
+The interpretation of <a href="#S">optical spectra</a> to give
+ionization energies is a highly developed field with an extensive theoretical
+foundation. To summarize briefly, an <em>atom</em> with one excited electron
+in an orbital of high principal quantum number can, in first approximation be
+considered to be hydrogen-like. The excited electron is subjected to the
+central force field of the nucleus screened by the remaining core electrons.
+The energy levels of this system can be described by the Rydberg formula:
+</p>
+
+<p class="equation">
+T<sub>n</sub> = I &minus; [2&pi;<sup>2</sup> Z<sup>2</sup>
+e<sup>4</sup> / ch<sup>3</sup> n<sup>2</sup> ] 7 [mM/(m + M)] =
+I &minus; RZ<sup>2</sup> / n<sup>2</sup>
+</p>
+
+<p>
+where I is the ionization energy, Z is the net charge of the nucleus and core
+electrons, n the principal quantum number, e the electronic charge, m the
+electron mass, M the mass of the nucleus plus core electrons, c the velocity
+of light, h Planck's constant and R the Rydberg constant (for mass M).
+Although highly accurate ionization energies can be derived for atoms from
+Rydberg series, there are some possible complications such as the existence of
+terms and series which are perturbed by configuration interaction, or
+spin-orbit splitting of terms.
+</p>
+
+<p>
+The identification of <em>molecular</em> Rydberg series is often not
+completely straightforward. Criteria that are used include the requirement
+that the transitions be strong and gradually decrease in intensity with
+increasing energy, and, evidently, that the series fit the Rydberg formula.
+Although some highly accurate molecular ionization energy data are derived
+from optical spectroscopic studies, especially for diatomic molecules, the
+evaluation of molecular Rydberg series is not always straightforward, and
+reported spectroscopic ionization energies of polyatomic species may disagree
+with values derived from ionization onset determinations or the onsets of
+<a href="#PE">photoelectron</a> bands due to complications in the analysis of
+vibrational and rotational structure [<a href="#REF14">14</a>].
+</p>
+
+<h2 id="EQ">Ion/Molecule Equilibria</h2>
+
+<p>
+Most of the <a href="#GB">gas phase basicity</a> / <a href="#PA">
+proton affinity</a> and gas phase <a href="#A">acidity</a> data, as well as
+some of the <a href="#EA">electron affinity</a> and <a href="#IE">
+ionization energy</a> data presented in the WebBook collection are derived
+from determinations of the equilibrium constants for ion/molecule
+reactions:
+</p>
+
+<p class="equation">
+A<sup>+</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+C<sup>+</sup> + D
+</p>
+
+
+
+<p class="equation">
+A<sup>&minus;</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+C<sup>&minus;</sup> + D
+</p>
+
+<p>
+Since the equilibrium constant
+</p>
+
+<p class="equation">
+K<sub>eq</sub> = [C<sup>+</sup> ][D] / [A<sup>+</sup> ][B]
+</p>
+
+
+
+<p class="equation">
+K<sub>eq</sub> = [C<sup>&minus;</sup> ][D] / [A<sup>&minus;</sup> ][B]
+</p>
+
+<p>
+directly gives a value for the Gibbs free energy change associated with the
+reaction
+</p>
+
+<p class="equation">
+- RTlnK<sub>eq</sub> = &Delta;G&deg; =
+&Delta;H&deg; &minus; T &Delta;S&deg;
+</p>
+
+<p>
+relative thermochemical scales are generated through such measurements. In
+order to determine the enthalpy changes of these reactions, values for the
+entropy changes of reaction must be obtained, through measurements of the
+equilibrium constant as a function of temperature (Van't Hoff plot) or through
+statistical mechanical estimations.
+</p>
+
+<p>
+In practice, many studies have been published in which measurements were
+made at a single temperature, with the (usually small) entropy change for the
+reaction estimated from statistical mechanical considerations. More recently,
+studies have appeared which include determinations of the equilibrium constant
+as a function of temperature (e.g. experimental determinations of the entropy
+changes), but in a recent evaluation [<a href="#REF10">10</a>] of gas phase
+basicity data, it has been found that Van 't Hoff plots determined in
+different laboratories usually show poor agreement, indicating possible
+experimental problems in these determinations.
+</p>
+
+<p>
+This, in part may be due to a problem described [<a href="#REF15">15</a>]
+as pertaining to accurate determination of the reactive neutral pressure in
+pulsed high pressure mass spectrometers. The pressure in the source of such an
+instrument has often been in the transition regime between molecular and
+viscous flow. This can cause appreciable fractionation of neutral species in
+the bath gas, based on the diffusivity of the compound, which is related to
+the square root of the mass. Thus, both relative and absolute neutral pressures
+may have been poorly characterized in such experiments in the past. These
+could vary from instrument to instrument, based on design, and from experiment
+to experiment, based on varying operating conditions. Other possible
+contributing factors are clustering of neutral molecules to the ions at
+low temperatures, and pyrolysis of the ions at high temperatures.
+</p>
+
+<p>
+Therefore, at the present time, it appears that the most reliable values
+for entropy changes associated with such ion-molecule equilibria can be
+obtained by judiciously examining experimentally-determined entropy changes in
+conjunction with ab initio calculations of those quantities.
+</p>
+
+<p>
+Thermochemical scales derived from equilibrium constant determinations
+are, of course, scales of <em>relative</em> thermochemical values.
+Absolute values for thermochemical quantities can be assigned if a
+reliable value for the quantity in question (ionization energy,
+electron affinity, proton affinity, acidity, etc.) is available for
+one or more species in the scale.
+</p>
+
+<p>
+The evaluation of thermochemical scales derived from equilibrium
+constant determinations presents special challenges, since the data
+for different molecules are all interrelated, so the scale must be
+evaluated as a whole, not molecule-by-molecule. That is, evaluation
+of such a thermochemical scale imposes the requirements of internal
+consistency in three parameters, &Delta;&nbsp;G (at
+different temperatures), &Delta;&nbsp;H and
+&Delta;&nbsp;S; furthermore, final absolute values
+assigned for properties of individual compounds must be consistent
+with what is known about enthalpies of formation of the relevant
+species, or with entropies of reaction that would be predicted
+from statistical mechanics and values (when available) of absolute
+entropies of the relevant species. In addition, trends in data for
+homologous series or compounds of a particular structural type must
+make sense.
+</p>
+
+<p>
+The major uncertainty in data derived from equilibrium constant
+determinations, aside from the question of whether thermodynamic
+equilibrium is actually attained, is in knowing the temperature
+accurately. In the recent <span id="EV">re-evaluation of the
+extensive scales of proton affinity</span> and gas basicity, it was found
+that for the large body of data evaluated in the 1984 publication
+[<a href="#REF8">8</a>] the thermochemical scales (particularly
+the end of the scale representing high gas phase basicities) had
+been significantly constricted because operating temperatures
+of the instruments used in the experiments had been underestimated.
+For this reason, users will find that certain cited values for
+proton affinities and gas basicities given here are significantly
+different from those listed earlier [<a href="#REF8">8</a>,
+<a href="#REF9">9</a>], although for all species for which sufficient
+information was available to do a complete evaluation, internal
+consistency is maintained.
+</p>
+
+<p>
+Most ion/molecule equilibrium studies have been devoted to the derivation
+of extensive scales of relative <a href="#PA">proton affinities</a> and gas
+phase <a href="#A">acidities</a>. The results were mainly derived from
+interlocking ladders of enthalpy changes for the proton transfer reactions:
+</p>
+
+<p class="equation">
+AH<sup>+</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+BH<sup>+</sup> + A
+</p>
+
+
+
+<p class="equation">
+AH + B<sup>&minus;</sup>
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+A<sup>&minus;</sup> + BH
+</p>
+
+<p>
+Other published ion/molecule equilibrium studies provide data on
+charge transfer:
+</p>
+
+<p class="equation">
+A<sup>+</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+B<sup>+</sup> + A
+</p>
+
+
+
+<p class="equation">
+A<sup>&minus;</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+B<sup>&minus;</sup> + A
+</p>
+
+<p>
+which yield scales of relative enthalpies of ionization or electron affinities
+at finite temperatures. A thermochemical ladder of relative ionization
+energies determined in this way [<a href="#REF16">16</a>] closely reproduces
+the equivalent scale of spectroscopic ionization energies, thus demonstrating
+the reliability of the approach for deriving information on relative
+ionization energies.
+</p>
+
+<p>
+The most useful application of this approach for ionization energy data
+has proved to be the determination of ionization energies for species which
+undergo a large change of geometry upon ionization, and which therefore
+exhibit very gradual onsets of ionization as a function of energy. For
+example, the only reliable information about the adiabatic ionization energies
+of n-alkanes and of alkyl hydrazines comes from thermochemical ladders
+established through equilibrium constant determinations. Since the electron
+transfer occurs in a long-lived collision complex which endures for many
+vibrational periods, the ionic configuration corresponding to the equilibrium
+geometry of the ion (the geometry corresponding to the <a href="#AIE">
+adiabatic transition</a>) is accessed.
+</p>
+
+<p>
+Other equilibrium studies have been concerned with hydride or halide
+transfer reactions:
+</p>
+
+<p class="equation">
+R<sub>1</sub><sup>+</sup> + R<sub>2</sub>X
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+R<sub>2</sub><sup>+</sup> + R<sub>1</sub> X
+</p>
+
+<p>
+(where X is H, F, Cl, Br, or I). Studies of hydride transfer and halide
+transfer equilibria have led to quantitative information about the relative
+enthalpies of formation of alkyl carbocations. These data were used to
+supplement information from appearance potential determinations in evaluating
+enthalpies of formation of alkyl carbocations.
+</p>
+
+<p>
+See the discussion of <a href="#EQD">determinations of ion/molecule
+equilibrium constants</a> for more experimental details.
+</p>
+
+<h2 id="FT">Thermochemistry of Ions in the Gas Phase
+at Finite Temperatures</h2>
+
+<p>
+The auxiliary thermochemical information required for citation of ion
+enthalpies of formation &mdash; enthalpies of formation of relevant neutral species
+- is available mostly for species at 298 K. These thermochemical data are
+correct for use in treatment of data for processes occurring at temperatures
+other than 0 K (ion/molecule equilibria, for example). However, strictly
+speaking, <a href="#IE">ionization energies</a>, <a href="#AE">appearance
+energies</a>, and <a href="#EA">electron affinities</a> are quantities which
+correspond to processes occurring at 0 K. To correctly derive enthalpies of
+formation of ions from these kinds of data requires explicit treatment of the
+differences in thermochemical values at 0 K and at higher temperatures. This
+section discusses the principles involved in such a correct treatment,
+describes the simplifications which are often made in the literature, and
+specifies how data are treated here.
+</p>
+
+<h3 id="MI">Molecular Ions</h3>
+
+<p>
+The enthalpy of formation of molecular ion M<sup>+</sup> or M<sup>&minus;</sup> at
+temperature <em> T</em> can be defined in terms of the enthalpy of formation
+of the corresponding neutral species, M, at temperature <em>T</em>, and the
+enthalpy change of the ionization process at that temperature,
+&Delta;H<sub>I</sub> or &Delta;H<sub>EA</sub>
+for positive or negative ions, respectively.
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>T</sub> &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>T</sub> +
+&Delta;H<sub>I</sub>
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>T</sub> +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>T</sub> +
+&Delta;H<sub>EA</sub>
+</p>
+
+<p>
+In applying this equation, the values for &Delta;H<sub>I</sub> or
+&Delta;H<sub>EA</sub> are usually taken to be
+exactly equal to the <a href="#AIE">adiabatic ionization energy</a> or
+negative of the <a href="#EA">electron affinity</a>. Actually, however, the
+ionization energy and electron affinity are the equivalents of the
+spectroscopic transitions between the lowest rotational and vibrational levels
+of the ground state of the molecule and the lowest rotational and vibrational
+levels of the electronic ground state of the ion; that is, they are equal to
+the difference between the enthalpies of formation of the molecule and the
+corresponding ion at absolute zero. As derived in the discussion on
+<a href="#TC">Thermochemical Conventions</a>, the enthalpy changes of reaction
+at temperature <em> T</em> are related to the adiabatic ionization energy and
+electron affinity by the expressions:
+</p>
+
+<p class="equation">
+&Delta;H<sub>I</sub> = IE<sub>a</sub> + (C + B &minus; A)
+</p>
+
+
+
+<p class="equation">
+&Delta;H<sub>EA</sub> = &minus; EA &minus; (C + A &minus; D)
+</p>
+
+<p>
+where <em>A</em>, <em>B</em>, <em>D</em>, and <em>C</em> represent,
+respectively, the integrated heat capacities (energies required to raise the
+species from 0 K to temperature <em>T</em>) of the neutral molecule (<em>A</em>),
+positive (<em>B</em>) or negative ion (<em>D</em>), and electron
+(<em>C</em>). Thus the expressions for the enthalpies of formation of the
+ions at temperature <em>T</em> become:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)T &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>T</sub> +
+IE<sub>a</sub> + C + B &minus; A
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)T +
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>T</sub> &minus;
+EA &minus; C &minus; A + D
+</p>
+
+<p>
+Using the <a href="#IC">Ion Convention</a> where
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>)<sub>T</sub> is taken to be
+equal to <em>C</em>,
+the full expressions for deriving a value for an enthalpy of formation of an
+ion at temperature <em>T</em> using the <a href="#AIE">adiabatic ionization
+energy</a> or <a href="#EA">electron affinity</a> and values for
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>T</sub> or
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>T</sub> reduce to:
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>+</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>T</sub> + IEa + B &minus; A
+</p>
+
+
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(M<sup>&minus;</sup>)<sub>T</sub> =
+&Delta;<sub>f</sub>H&deg;(M)<sub>T</sub> &minus; EA &minus; A + D
+</p>
+
+<p>
+Thus, for a correct treatment of the enthalpy of formation of an ion at
+any temperature other than absolute zero, the integrated heat capacities of
+the ion, <em>B</em> or <em>D</em>, and its precursor neutral molecule,
+<em>A</em>, (or more specifically the differences between those heat capacities)
+must be taken into account. However, it is a common practice to derive "298 K
+heats of formation" of positive ions by simply adding the 0 K value for the
+ionization energy to the 298 K enthalpy of formation of the molecule.
+Therefore, we must examine to what extent the simplifying assumption that
+<em>A</em> = <em>B</em> = <em>D</em> is valid.
+</p>
+
+<p>
+A published analysis of the differences between integrated heat
+capacities of M and M<sup>+</sup> for various molecules demonstrated
+[<a href="#REF16">16</a>] that (a) there will be no discernible differences
+between the translational and rotational heat capacities of M and
+M<sup>+</sup>, (b) that differences arising from a splitting of degenerate
+energy levels in multiplet ground states of M or M<sup>+</sup>
+will never be larger
+than 0.009 eV (0.9 kJ/mol) at temperatures in the 300&ndash;400 K range,
+and (c) when the frequency of a particular vibration changes upon ionization, a
+difference between the integrated heat capacities of M and M<sup>+</sup> will
+result. However, even this contribution will usually be sufficiently small
+that a significant error will not be introduced if it is ignored. For
+example, the lowest ionization energy of ethylene corresponds to removal of an
+electron from the C-C pi bond, which leads to a lowering of the frequency of
+the symmetric C-C stretch from 1623 to 1230 cm<sup>-1</sup> and a reduction
+in the frequency of the twisting around the C&ndash;C bond from 1027 to 430
+cm<sup>-1</sup>. Although these differences in vibrational frequencies are
+significant, the predicted effect on the 298 K enthalpy of ionization is to
+raise it above the value for the adiabatic ionization potential by only 0.0069
+eV (0.7 kJ/mol), i.e. only the most accurate experimental measurements could
+detect an increment of this size. Although this analysis was concerned with
+heat capacities of positive ions, the same reasoning &mdash; and the
+conclusions &mdash; should apply equally well to negative ions, that is,
+to changes in the electron affinity with temperature.
+</p>
+
+<p>
+Therefore we conclude that for most species, the simplifying assumption
+that the <a href="#AIE">adiabatic ionization energy</a> or <a href="#EA">
+electron affinity</a> and the corresponding enthalpies of ionization at an
+elevated temperature are approximately the same:
+</p>
+
+<p class="equation">
+IE<sub>a</sub> ~ &Delta;H<sub>I</sub>
+</p>
+
+
+
+<p class="equation">
+-EA ~ &Delta;H<sub>EA</sub>
+</p>
+
+<p>
+will introduce errors in enthalpies of formation derived for molecular ions at
+298 K of the magnitude of 2 kJ/mol or less. At higher temperatures, it is
+possible that larger errors would result from this simplification.
+</p>
+
+<p>
+In this database, most of the cited values for enthalpies of formation of
+molecular ions correspond to 298 K, and were obtained by simply adding the
+value for the adiabatic ionization energy to the 298 K enthalpy of formation
+of the neutral species; that is, the assumption discussed above was usually
+made. A rigorous treatment would require calculating exact values for
+integrated heat capacities and from complete sets of vibrational frequencies
+for the molecule and the ion. Vibrational frequencies for most of the ions
+are not available, and the correction would simply cancel out if one made the
+often-used assumption that the vibrational frequencies of the ion and its
+neutral counterpart are the same. Whenever the original authors of a paper
+carried out such a complete analysis (a routine procedure only for
+<a href="#PIPECO">photoelectron-photoion coincidence</a> studies),
+the results of that analysis are included here, and both 0 K and 298 K
+values for the ion enthalpy of formation are given; only in these cases
+is the temperature specified.
+</p>
+
+<h3 id="APT">Fragment Ions</h3>
+
+<p>
+Arguments analogous to those given for <a href="#MI">molecular ion
+data</a> can be applied to the use of appearance energies for the derivation
+of enthalpies of formation of fragment ions, A<sup>+</sup>, at temperature
+<em>T</em>. If there are no complicating factors (such as
+<a href="#PB">potential barriers</a> or a
+<a href="#KS">kinetic shift</a>), the appearance energy,
+<em>AP</em>, corresponds to the enthalpy change for the fragmentation
+reaction, and can be used to derive a value for the enthalpy of formation of
+the fragment ion, A<sup>+</sup>.
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(A<sup>+</sup>) =
+&Delta;<sub>f</sub>H&deg;(AB) &minus;
+&Delta;<sub>f</sub>H&deg;(B) &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>) + AP
+</p>
+
+<p>
+Correctly, a 0 K enthalpy of formation of A<sup>+</sup> must be obtained
+using 0 K enthalpies of formation of AB and B in the calculation, and this
+enthalpy of formation can then be corrected to some other temperature,
+<em>T</em>, taking into account the vibrational frequencies of the ion and
+appropriate thermodynamic functions of the elements.
+</p>
+
+<p>
+For the most common experimental techniques (energy selected electron
+impact, photoionization techniques, etc.) used to measure the appearance
+energy of a fragment positive ion starting from a molecule or radical at
+temperature, <em> T</em>, the major problem is to identify the internal
+energies of the reaction products. This matter has been discussed at length by
+Traeger and McLaughlin [<a href="#REF17">17</a>]. At <em> onset</em> the
+products of the unimolecular decomposition will be formed with zero
+translational energy with respect to the center of mass (provided that the
+fragmentation does not involve a <a href="#PB">reverse energy barrier</a>)
+and a center of mass translational energy the same as that of the precursor
+molecule. The products thus are at a translational quasi-temperature, <em>
+T</em> *. In principle, if the observational time scale of the experiment and
+the sensitivity of the ion detector are great enough, then the observed
+appearance energy approaches that for products having 0 K internal energy
+(i.e., all internal energy modes have contributed to reaching the transition
+state). Traeger and McLaughlin showed that for the molecule RX dissociating
+to give (R<sup>+</sup> + X):
+</p>
+
+<p class="equation">
+AP <sub>T</sub> (exp) =
+&Delta;<sub>f</sub>H; [R <sup>+</sup> + X + e] <sub>T</sub> &minus;
+&Delta;<sub>f</sub>H&deg; [RX] <sub>T</sub> &minus; 5/2RT &minus;
+<span style="font-size: larger">&int;</span> C<sub>p</sub>
+[R <sup>+</sup> + X + e] d <sub>T</sub>
+</p>
+
+<p>
+In effect, this equation corrects the observed threshold energy for the
+fragmentation process to an effective 0 K value by adding the thermal
+rotational and vibrational energy contained in RX to the onset energy.
+</p>
+
+<p>
+Most enthalpies of formation of fragment ions are derived making the
+simplifying assumption that the last two terms of this equation will cancel
+one another. That is, values for enthalpies of formation of fragment ions at
+298 K derived from appearance potential data are more often obtained by simply
+using an observed onset energy and 298 K enthalpies of formation of relevant
+neutral species.
+</p>
+
+<p class="equation">
+&Delta;<sub>f</sub>H;(A<sup>+</sup>) =
+&Delta;<sub>f</sub>H&deg;(AB) &minus;
+&Delta;<sub>f</sub>H&deg;(B) &minus;
+&Delta;<sub>f</sub>H;(e<sup>&minus;</sup>) + AP
+</p>
+
+<p>
+The user should be cautioned that the 298 K value assigned to a enthalpy of
+formation of a fragment ion may differ by as much as 12-18 kJ/mol, depending
+on which of these treatments has been used. For example, Brand and Baer
+[<a href="#REF18">18</a>], and Lossing [<a href="#REF19">19</a>] determined
+the appearance energies for formation of C<sub>4</sub>H<sub>7</sub><sup>+</sup>
+ions in C<sub>5</sub>H<sub>10</sub> isomers. Although the
+appearance energies reported in the two studies were almost identical,
+the 298 K values for enthalpies of formation of the
+C<sub>4</sub>H<sub>7</sub><sup>+</sup>
+ions derived by Brand and Baer, using a complete treatment of
+the temperature dependence of the enthalpy of formation, are higher than the
+values derived by Lossing by 18 kJ/mol.
+</p>
+
+<p>
+As mentioned elsewhere, this database displays evaluated values for enthalpies
+of formation for only a very few much-studied fragment ions at the present
+time; as evaluations are made, additional values will be added. However, in
+many cases, sufficient information is given in the WebBook databases to allow
+users to derive such values as needed.
+</p>
+
+<h1 id="EXP">EXPERIMENTAL TECHNIQUES</h1>
+
+
+<p>
+In this section, we summarize briefly the different types of experiments
+from which the data presented here originate, and where possible indicate the
+strengths and/or limitations of the different techniques, and how these
+influence the evaluator in arriving at a recommended value for a particular
+property.
+</p>
+
+<p>
+In the database, techniques are identified by acronyms, shown in
+square brackets in the discussion, or in some cases, after the appropriate
+headings. A problem in defining an experimental technique for the purposes of
+assigning acronyms in the database is that acronyms used in the literature
+have evolved over the years as experimental techniques evolve, so that for a
+collection like this one with experimental results originating over a 70-year
+time period, a problem of internal consistency arises. Because of this
+problem, we have elected to use fewer, more broadly-defined acronyms, rather
+than attempt to maintain a detailed breakdown of experimental techniques,
+which may differ only in subtle details, in the assignment of acronyms. Even
+using broadly-defined acronyms, there are certain studies for which it is
+difficult to pigeonhole the experimental technique; for example, the
+borderline between "photoionization" and "laser spectroscopy" is sometimes not
+easily defined, and the distinction is sometimes made more on the basis of the
+focus of the study than on the actual details of the experiments.
+</p>
+
+<p>
+For at least two specialized techniques that would logically fit under
+our broad umbrella-acronyms, we have assigned individualized acronyms, because
+the data provided by these techniques &mdash; <a href="#TRPI">time-resolved
+photodissociation (TRPI)</a> which is actually a <a href="#PI">
+photoionization (PI)</a> technique, and
+<a href="#PIPECO">photoion-photoelectron coincidence (PIPECO)</a> &minus;
+which could also be considered either
+<a href="#PI">photoionization (PI)</a> or a
+<a href="#TE">threshold electron detection (TE)</a> technique &minus;
+are uniquely informative. In the case of time-resolved photodissociation
+results, measured appearance energies often differ significantly from those
+determined using other techniques since slow fragmentation processes are
+detected.
+</p>
+
+<h2 id="S">Optical Spectroscopy [S]</h2>
+
+<p>
+The identification of a <a href="#R">Rydberg series</a> in an atomic or
+molecular spectrum leads to a value for the ionization energy. In cases where
+the analysis of the spectrum is straightforward, the spectroscopic ionization
+energy values are highly accurate. The determination of atomic ionization
+energies through optical spectroscopy is a highly developed field which has
+been extensively reviewed. A large fraction of atomic ionization energies
+listed here are from expert evaluations of atomic spectra. In the evaluation
+of ionization energies of atoms and diatomic molecules, spectroscopic
+ionization energies have been chosen as "selected values" where they are
+available. For polyatomic species, a value derived from an analysis of
+the optical spectrum has been given great weight, unless several
+determinations from other highly reliable techniques are in conflict
+with the spectroscopic value.
+</p>
+
+<h2 id="TH">Threshold Experiments</h2>
+
+<p>
+The most widely-used technique for determination of ionization and
+appearance energies involves a direct determination of the minimum energy
+required to form a parent or fragment ion from a neutral species, or to detach
+an electron from a negative ion. In these approaches, ionization may be
+effected by photoionization, by interaction with energetic electrons
+("electron ionization" or, in older literature, "electron impact"), or by
+interaction with excited atoms (Penning ionization) or other chemi-ionization
+reactions; the measurement involves a determination of the minimum energy
+("threshold") required to form an ion. The resulting ions or the ejected
+electrons, or both, are detected using various mass spectrometric
+techniques.
+</p>
+
+<h3 id="EI">Electron Ionization Techniques[EI],[EIAE]</h3>
+
+<p>
+Over the years, the most widely-used techniques for the determination of
+ionization and appearance energies have involved the use of mass spectrometers
+in which ionization is effected by an electron beam. The energy of the beam
+is varied, and the abundance of the resulting ion(s) is monitored; the
+"onset" of the ion on the energy scale must be detected. A problem with this
+approach that had to be dealt with before accurate data could be obtained was
+that standard electron beams had a large energy spread, so the nominal energy
+expected from the applied electrode potentials was not a good indication of
+the actual energy of electrons in the beam. However, by the 1960s, techniques
+were developed [<a href="#REF20">20</a>] to narrow the energy range of the
+electron beams through the use of so-called "electron monochromators", in
+which the energy of the electron beam is narrowly defined by passing the beam
+through electron energy selectors of various designs. Other laboratories have
+utilized a so-called fast-beam apparatus to determine accurate ionization
+cross sections as a function of electron energy. Modern results obtained
+using electron beams with well-defined energies are in excellent agreement
+with analogous results derived from determinations of photoionization
+thresholds.
+</p>
+
+<p>
+Early on, there were other, somewhat less rigorous, approaches to solving
+this problem of energy spread in electron beams, leading to what Rosenstock et
+al [<a href="#REF3">3</a>] call "quasi-monoenergetic" beams (the "Retarding
+Potential Difference" [<a href="#REF21">21</a>] and "Energy Distribution
+Difference" [<a href="#REF22">22</a>] methods).
+</p>
+
+<p>
+Some electron ionization data reported here were never intended to be
+accurate ionization energy/appearance energy determinations, but were carried
+out simply as diagnostic measurements, to unravel chemical processes occurring
+in particular systems (such as in the vapor over a Knudsen cell).
+</p>
+
+<p>
+In the WebBook database, all of these techniques are simply designated by
+the acronym "EI" or for negative ions "EIAE". Measurements made using the more careful approaches can be
+distinguished from the non-quantitative measurements by the cited error limits
+or (where there are no error limits given) by the number of significant
+figures displayed. Most of the quantitative measurements made during the past
+20 years have been made with well-defined electron energies.
+</p>
+
+<h3>Photoionization Techniques</h3>
+
+<h4 id="PI">Photoionization Mass Spectrometry [PI],[PD],[LPD]</h4>
+
+<p>
+In the mid-1960s, the problem of exactly defining the energy of the
+ionizing agent was approached in some laboratories by replacing the electron
+beam by photons, whose energy could be well defined. In classical
+photoionization mass spectrometry, monochromators were used with standard
+light sources, and the ion abundance was determined as a function of photon
+energy. That is, the approach to determining a threshold energy was exactly
+analogous to that used in electron ionization experiments. In such
+experiments, as with the <a href="#EI">electron ionization techniques</a>,
+one must be able to detect the onset of ionization. According to the
+<a href="#FC">Franck-Condon Principle</a>, if the configuration of the ion is
+different from that of the precursor neutral molecule, the <em>onset</em> of
+ionization as a function of energy will be gradual, and the exact onset may be
+difficult to pinpoint accurately.
+</p>
+
+<p>
+Modern photoionization experiments often utilize laser or synchrotron
+light sources, and may have other distinctive features designed to provide
+more detailed information. For example, studies are published examining
+pressure- or <a href="#TRPI">time-dependencies of ionic photodissociation
+processes</a>. The latter are assigned a separate acronym here (TRPI), rather
+than being categorized with other "photoionization" experiments, since
+observed onsets may differ markedly from onsets measured on the conventional
+time-scale, and it is useful to be able to recognize (through the acronym) why
+this is so.
+</p>
+
+<p>
+The electron affinity of a species can be determined by finding the
+threshold for electron photodetachment, via irradiation of a trapped negative
+ion by variable frequency light. This is denoted by the acronyms [PD] for
+photodetachment, using a continuous frequency light source and a
+monochromator, or [LPD] for use of a variable frequency laser as the light
+source.
+</p>
+
+<h4 id="TRPI">Time-Resolved Photodissociation [TRPI]</h4>
+
+<p>
+Two complementary photoionization methods are often used for studying
+dissociation processes where a "<a href="#KS">kinetic shift</a>" exists
+(that is, where experimentally-observed ionization onsets are higher than the
+thermodynamic onset energy due to the fact that the apparatus samples the
+fragmenting ions at a certain time when ions undergoing a slow fragmentation
+process have not yet had time to dissociate). These approaches, both of which
+examine the dissociation process as a function of time, are time-resolved
+photodissociation (the acronym TRPD is used in the literature) and
+time-resolved photoionization mass spectrometry (the acronym TPIMS is used in the
+literature). In time-resolved photodissociation experiments, parent ions are
+formed by electron impact, thermalized, and photoexcited by a monochromatic
+pulsed laser; the dissociation is followed as a function of time in an ion
+cyclotron resonance spectrometer (ICR). In time-resolved photoionization mass
+spectrometry, ions are formed by a pulsed VUV light source in an ion trap, and
+are ejected after a given delay time into a quadrupole mass filter. While
+both approaches give time-resolved information about dissociation processes,
+they are complementary rather than effectively the same since in the former
+technique, all parent ions are excited to the same energy, while in the
+latter, parent ions are excited to a range of internal energies extending from
+zero up to the maximum available energy.
+</p>
+
+<h4><span id="LS">Laser Spectroscopy [LS]</span><br />
+(Multi-Photon Ionization and Resonance Ionization Mass Spectrometry)
+</h4>
+
+<p>
+In recent years, spectroscopic studies using laser techniques have
+provided highly accurate ionization energy values. For example, ionization
+energies for molecules have been determined using multiphoton ionization or
+resonance-enhanced multiphoton ionization (REMPI) of vibrationally-cooled
+species in a molecular beam. In these studies, the cooled beam of molecules is
+raised to a specific excited state by irradiation with a tunable laser; while
+this excitation energy is held constant, a second independently tunable laser
+is used to ionize the beam of excited molecules, with the photon energy being
+tuned through the ionization onset. The excitation laser is then tuned to a
+different transition, and the ionization scan is repeated. In this way, the
+entire Franck-Condon accessible region of the intermediate electronic state is
+mapped out, insuring that the molecular geometry corresponding to the
+<a href="#AIE">adiabatic ionization energy</a> is accessed. Since every
+intermediate vibronic state leads to an independent value of the ionization
+threshold, the experiment contains an internal consistency check.
+</p>
+
+<p>
+For atoms, the related technique known as Resonance Ionization Mass
+Spectrometry (RIMS) is sometimes employed to determine accurate ionization
+energies.
+</p>
+
+<h4 id="PE">Photoelectron Spectroscopy [PE], [LPES]</h4>
+
+<p>
+It is also possible to determine the energy change associated with an
+ionization process by effecting ionization with a photon of well-defined
+energy and measuring the energy of the ejected electrons:
+</p>
+
+<p class="equation">
+M + <em>hv</em>
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>+</sup> + e<sup>&minus;</sup>
+</p>
+
+<p>
+where
+</p>
+
+<p class="equation">
+KE(e<sup>&minus;</sup>) = <em>hv</em> &minus; I &minus; E*(vib,rot)
+</p>
+
+<p>
+(where <em>E</em>*(vib,rot) is the internal energy of M<sup>+</sup> and
+<em>I</em> is the binding energy of the electron).
+</p>
+
+
+<p>
+The most widely-used technique of this type is conventional photoelectron
+spectroscopy in which the photon sources are usually the helium or neon
+resonance lines (21.218 eV and 40.813 eV or 16.848 eV and 16.671 eV,
+respectively) or other intense monochromatic sources. In such an experiment,
+the ejected electrons will have differing energies depending on the
+distribution of energy levels in the M<sup>+</sup> ions formed; a map of the
+abundances of the ejected electrons as a function of energy is called the
+photoelectron spectrum. The shapes of the photoelectron bands will reflect
+not only the energy differences in the different states of M<sup>+</sup>,
+but also show the M
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>+</sup> transition
+probabilities as governed by the <a href="#FC">Franck-Condon principle</a>.
+In cases where the equilibrium geometry of the ion and the corresponding
+neutral are the same or are similar, it is found that the observed onset of
+the first photoelectron band is usually a reliable indicator of the
+<a href="#AIE">adiabatic ionization energy</a>. This situation is easily
+recognized by the <a href="#FIGURE1">sharp onset</a> of the photoelectron
+band.
+</p>
+
+<p>
+Most photoelectron spectroscopy studies are carried out with the goal of
+elucidating the <em>spectroscopy</em> of the system through determinations of
+<a href="#VIE">vertical ionization energies</a> leading to the ground state
+and excited state ions, and therefore, little attention is usually given to
+determinations of adiabatic ionization energy values. In many instances,
+figures showing the photoelectron spectra are displayed, and onsets of
+photoelectron curves which correspond approximately to the adiabatic
+ionization energies can be estimated from the figure. Such values are reported
+here, but are surrounded by parentheses to indicate that these are approximate
+values not selected by the original authors.
+</p>
+
+<p>
+For negative ions, if a beam of ions is irradiated by a laser beam with
+photons in excess of the energy required to detach the electron, then analysis
+of the translational energy of the detached electrons allows for determination
+of the electron affinity. This technique [LPES] can provide electron
+affinities precise to micro-electron volts. The method often provides
+information on the vibrational states of the neutral and ionic species as
+well. However, the assignment of the (0-0) threshold can be complicated by
+these states. The precision is commonly better than 0.2 kJ/mol, and can be
+much better.
+</p>
+
+<h4 id="TE">Threshold Electron Detection [TE], [ZEKE]</h4>
+
+<p>
+Highly accurate determinations of ionization energies come from a family
+of techniques in which laser ionization (e.g. REMPI) or pulsed field (PFI)
+techniques are combined with the detection of energy-selected electrons. In
+so-called "threshold photoelectron spectroscopy" or "zero-kinetic energy
+spectroscopy" (the acronym "ZEKE" is often used in the literature) ions with a
+well-defined energy are formed, and only those electrons which correspond to
+essentially zero energy of ejection are detected. Such experiments yield
+vibrationally/rotationally resolved spectra of the ions. In some cases, mass
+analysis of the positive ion is included (mass-ZEKE). The acronym [ZEKE] is
+used in the negative ion data base here.
+</p>
+
+<h4 id="PIPECO">Photoion-Photoelectron Coincidence
+Spectroscopy [PIPECO]</h4>
+
+<p>
+For the purposes of studying the thermochemistry of ionic fragmentation
+processes, a powerful variation of the Threshold Electron Detection approach
+is used which involves the simultaneous detection of a (single) zero-kinetic
+energy electron and the corresponding (single) positive ion. In the technique
+known as photoion-photoelectron coincidence (or sometimes,
+photoelectron-photoion coincidence &mdash; PEPICO), ejected electrons
+which originated with "zero"
+kinetic energy are matched with their corresponding positive ions. At
+energies where parent ions, M<sup>+</sup>, are undergoing dissociation to
+form one or more fragment ions, one obtains the relative probabilities for the
+formation of the daughter ions from parent ions of exactly known energy (i.e.
+the breakdown curve). The ions can be detected at differing times after the
+ionization event for the determination of the time dependence of the
+dissociation process. The complete interpretation of such data requires a
+modeling of the dissociation using statistical theories of unimolecular
+decomposition (i.e. quasi-equilibrium/RRKM theory), but the thermochemistry
+and detailed mechanism of an ionic fragmentation process can be mapped out
+very accurately. As pointed out by Dannacher [<a href="#REF23">23</a>], in
+spite of its great strengths, this technique has not been widely utilized,
+possibly because of the intricate instrumentation required, the complexity of
+the data analysis, and the fact that each determination requires the
+investment of a great amount of time on the part of the experimentalist.
+</p>
+
+<h3 id="CI">Chemi-Ionization [CI]</h3>
+
+<p>
+In the older literature, Penning Ionization &mdash; ionization by collisions
+with a beam of metastable neutral rare gas atoms with known excitation energy
+or energies &mdash; was often used as an ionization mechanism.
+</p>
+
+<p class="equation">
+X* + M
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>+</sup> + X + e<sup>&minus;</sup>
+</p>
+
+<p>
+In these experiments, metastable atoms employed include mixtures of He(2<sup>3</sup>S)
+(19.818 eV) and He(2<sup>1</sup>S) (20.614 eV), Ne(<sup>3</sup>P<sub>2</sub>)
+(16.619 eV) and Ne(<sup>3</sup>P<sub>0</sub>) (16.715 eV),
+or Ar(<sup>3</sup>P<sub>2</sub>) (11.548 eV) and Ar(<sup>3</sup>P<sub>0</sub>)
+(11.723 eV). Because of the presence of two metastable states in a
+given atom beam, the Penning electron spectrum consists of a shifted
+superposition of two spectra, each formed by one of the species. The energy
+of the ejected electrons was analyzed.
+</p>
+
+<p>
+Some recent studies have examined systems where other chemi-ionization
+reactions such as:
+</p>
+
+<p class="equation">
+M + X<sub>2</sub>
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+MX<sup>+</sup> + X<sup>&minus;</sup>
+</p>
+
+<p>
+occur, and have obtained thermochemical data from experiments in which the
+collision energy is varied, and positive and negative product ions are counted
+and analyzed mass spectrometrically.
+</p>
+
+<h3 id="CEMS">Charge Exchange Mass Spectrometry [CEMS]
+</h3>
+
+<p>
+In this technique, ionization is effected through charge exchange:
+</p>
+
+<p class="equation">
+X<sup>+</sup> + M
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>+</sup> + X
+</p>
+
+<p>
+and a determination of the absolute cross section for production of
+M<sup>+</sup>. A series of charge donors, X<sup>+</sup>, of varying
+recombination energies (that is, where the ionization energy of X varies) are
+used. The plot of cross section as a function of recombination energy
+provides values for ionization and appearance energies. Because a continuous
+energy scale is not available with this technique, error limits are usually of
+the order of &plusmn;0.1 eV.
+</p>
+
+<h3 id="NBIP">Neutral Beam Ionization or Appearance Energy
+[NBIE],[NBAE]</h3>
+
+<p>
+Collision of a neutral species with an energetic particle of low ionization
+potential, such as an alkali atom, can result in electron transfer, giving an
+alkali cation and an anion. The electron affinity of the neutral species is
+equal to the translational energy of the alkali atom less its ionization
+energy. Determinations of electron affinities by this method have the
+advantage that one obtains values for the true electron affinity: electron
+attachment to a neutral species, rather than detachment from an anion.
+Certain anions can be produced by this technique which are not accessible via
+electron impact due to low energy exit channels, e.g. CCl<sub>4</sub> Due to
+the limited energy resolution of the neutral alkali beam, the precision of
+this technique is not high, typically 20 kJ/mol. The onset energies of
+fragment ions can also provide useful thermochemical information, if the
+thermochemistry of the coproduced neutral species is known. Normally this
+technique results in a determination of the adiabatic electron affinity, but
+for a sufficiently fast beam of neutral species, the onset corresponds to the
+vertical attachment energy of the electron, which, in contrast to detachment
+methods, is smaller than the adiabatic value.
+</p>
+
+<h3 id="EFD">Electric Field Detachment [EFD]</h3>
+
+<p>
+Negative ions with electron affinities of a few tenths of an electron volt
+or less can undergo detachment of the electron in a strong electric field.
+Based on the strength of the field, the dipole moment of the neutral species
+produced, and the rate of loss of the electron, the electron affinity can be
+derived. This often is used to access information on negative ions where the
+electron is in a non-valence state, such as dipole-bound anions.
+</p>
+
+<h2>Thermochemical Information from Studies of Ion/Molecule Reactions</h2>
+
+<h3 id="EQD">Ion/Molecule Equilibrium Constant Determinations
+[EQ], [IMRE], [TDEq], [TDAs]</h3>
+
+<p>
+An ion/molecule equilibrium:
+</p>
+
+<p class="equation">
+A<sup>+</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+C<sup>+</sup> + D
+</p>
+
+
+
+<p class="equation">
+A<sup>&minus;</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+C<sup>&minus;</sup> + D
+</p>
+
+<p>
+is established in a high pressure mass spectrometer, flow tube, or ion
+cyclotron resonance spectrometer, and the equilibrium constant is determined
+by observing the relative abundances of the two ions, A<sup>+/-</sup> and
+C<sup>+/-</sup> after a large number of collisions:
+</p>
+
+<p class="equation">
+K<sub>eq</sub> = [C<sup>+/-</sup> ] [D] / [A<sup>+/-</sup> ] [B]
+</p>
+
+<p>
+(where A<sup>+/-</sup> and C<sup>+/-</sup> are generic representations of
+positive/negative ions). The neutral reactants, B and D, are present in great
+abundance compared to the ionic reactants, and therefore, the ratio [D]/[B]
+does not change as equilibrium is established. A single measurement leads to
+a value for the Gibbs energy change of reaction at the temperature of the
+measurement, while a series of measurements at different temperatures permits
+an experimental evaluation of the entropy and enthalpy changes associated with
+the reaction:
+</p>
+
+<p class="equation">
+- RTln K<sub>eq</sub> = &Delta;G&deg; =
+&Delta;H&deg; &minus;T&Delta;S&deg;
+</p>
+
+<p>
+The main uncertainty associated with this technique, aside from the
+necessity of ensuring that the system is at a true thermodynamic equilibrium,
+is that the temperature of the reacting system must be accurately known.
+Although the reproduction of relative spectroscopic ionization energies
+through equilibrium measurements carried out in widely different pressure
+regimes demonstrates that this is not a serious problem, it is true that the
+initially-reported networks of <a href="#GB">gas phase basicities</a> led to
+thermochemical ladders that were constricted by as much as 15% because of
+problems with temperature determinations [<a href="#REF10">10</a>]. In
+addition, since the measurement leads only to <em> relative</em>
+thermochemical data, the resulting thermochemical ladders must be related to
+reliable comparison standards if absolute values are desired.
+</p>
+
+<p>
+In the negative ion database, the acronym [IMRE] is used to indicate an
+equilibrium measurement made at a single temperature, while [TDEq] denotes
+those at multiple temperatures. [TDAs], for temperature-dependent
+association, is used in specific case of association equilibria such as:
+</p>
+
+<p class="equation">
+A<sup>&minus;</sup> + B
+<span style="font-size: large; vertical-align: top;"
+title="equilbrium arrows">&#8652;</span>
+AB<sup>&minus;</sup>
+</p>
+
+<p>
+The positive ion database uses the identifier [EQ] for all such results.
+</p>
+
+<h3 id="END">Determinations of Reaction Endothermicity
+[END], [Endo]</h3>
+
+<p>
+Some thermochemical data reported here comes from studies where the
+enthalpy change of an endothermic ion/molecule reaction is determined.
+Information about the thermochemistry of a particular ion is obtained when
+relevant thermochemical data for other species participating in the reaction
+is available. In a very few instances, such information comes from
+straightforward kinetic treatments (Arrhenius plots) of the temperature
+dependencies of the rate constants of endothermic ion/molecule reactions.
+However, more commonly a so-called guided-beam apparatus is utilized for such
+determinations. Ions are generated in a flow tube, extracted and mass
+analyzed, then focused at the desired kinetic energy into a static cell
+containing the neutral reactant. The kinetic energy of the reactant ions is
+varied, and reaction onsets are determined as a function of translational
+energy.
+</p>
+
+<h3 id="IMB">Ion/Molecule Bracketing Experiments [IMB], [IMRB]
+</h3>
+
+<p>
+There are some ion/molecule systems for which an equilibrium can not be
+established in an ion source, either because one of the relevant neutral
+species is unstable (e.g. a radical or unstable molecule) or because of
+competing reactions in the system. In such cases, it is sometimes possible to
+obtain an experimental estimate of the enthalpy change of a particular
+reaction (charge transfer, proton transfer, hydride transfer, etc.) by use of
+a technique known as "bracketing" in which the ion of interest is reacted with
+a series of molecules chosen for variations in the relevant thermochemical
+parameter (<a href="#IE">ionization energy</a>, <a href="#EA">electron
+affinity</a>, <a href="#GB">gas phase basicity</a>, <a href="#A">acidity</a>).
+The occurrence, and sometimes the rate constant, of reaction is monitored as a
+function of the parameter of interest. The approach is based on the assumption
+that an endothermic reaction will not be observed, or will occur only at a low
+efficiency. Thus, the approximate onset energy is usually assumed to lie on
+the energy scale at a point where the rate of reaction becomes very slow. One
+problem with this approach is that the reaction of interest may be exothermic
+(even highly exothermic) but will not be observed if another, more favorable
+reaction channel is available to the reacting pair.
+</p>
+
+<p>
+In the positive ion database, only a few gas phase basicity values are
+derived from such measurements, but the information from these
+experiments is useful in evaluating conflicting experimental results from
+other techniques. More widespread use of this technique is made in the
+negative ion database.
+</p>
+
+<h3 id="KIN">The Kinetic Method [KIN], [BRAN], [CIDC]</h3>
+
+<p>
+If certain criteria of similarity in structure occur, the ratio of ions
+from the competitive fragmentation of an dimeric ion has been shown
+to reflect the thermochemical stability of the product ions. The energy for
+activation of the precursor ion can be from collision-induced dissociation,
+chemical activation, or the ion may be formed is a metastable state.
+Proton-bound species such as MeNH<sub>3</sub><sup>+..</sup>H<sub>2</sub>NEt or
+MeOH<sup>..&minus;</sup>OEt are examples of the structures applicable to
+this method. A calibration line based on the ion ratios of several species
+with energetics known from other methods, such as ion/molecule equilibria, is
+necessary to assign quantitative values in this experiment. Values denoted as
+[BRAN] for negative ions are from chemically-activated species; those labeled
+[BRAN] (positive ions) or [CIDC] (negative ions) are from metastable or
+collisionally-activated species.
+</p>
+
+<h3 id="ECD">The Electron Capture Detector [ECD]</h3>
+
+<p>
+An electron capture detector, using a beta source, can be modified to
+operate in a time resolved mode. By modeling the response of the ECD as a
+function of both time and temperature, the rate constants for both attachment
+and detachment of electrons can be determined, and thus the equilibrium
+constant for binding the electron can be obtained, leading to a value for
+the electron affinity. The method appears limited to EAs of 1 eV or so
+and less.
+</p>
+
+<h3 id="ES">The Electron Swarm [ES]</h3>
+
+<p>
+The rate constant for electron attachment to a neutral can be measured as
+a function of mean electron energy in a drift tube. When combined with
+detachment rate constants from a beam technique, the electron affinity can be
+estimated. This gives a lower limit, which is often up to 0.5 eV too low.
+</p>
+
+<h2>Other Experimental Techniques</h2>
+
+<p>
+Essentially all of data included in this collection have been derived from
+results obtained using the experimental approaches listed above. Data are also
+included which result from the use of several additional techniques that are
+not easily placed in the broad categories as organized here.
+</p>
+
+<h3 id="CIEL">Charge Inversion Energy Loss Spectrometry [CIEL]</h3>
+
+<p>
+Positive ions are generated by an electron beam and accelerated to
+translational energies well above thermal (4-6 eV), mass-selected and
+transmitted into a collision-gas cell, where they undergo collisions with an
+appropriate target gas. Electron capture reactions with the target molecules
+occur:
+</p>
+
+<p class="equation">
+M<sup>+</sup> + T
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M + T<sup>+</sup>
+</p>
+
+<p class="equation">
+M + T
+<span style="font-size: large; vertical-align: top;"
+ title="reaction arrow">&rarr;</span>
+M<sup>&minus;</sup> + T<sup>+</sup>
+</p>
+
+<p>
+Any stable anions that are formed are translational-energy analyzed prior to
+detection. As only forward-scattered anions are detected, the translational
+energy losses associated with these species are essentially equal to the
+endoergicities of their formative process.
+</p>
+
+<h3 id="CAD">Collisionally-Activated Dissociation [CAD], [CIDT]
+</h3>
+
+<p>
+Ions are generated, mass selected and accelerated into a chamber where
+they collide energetically with target molecules, and undergo
+collisionally-activated dissociation processes. The onset energies for particular
+dissociations are determined. Most of the body of data originating from this
+type of experiment has not been incorporated into the positive ion database,
+in that the quantity which is determined is the energy required to form a
+fragment ion from a precursor <em> ion</em> (rather than from a neutral
+species), and therefore, to match conventions used for presenting data in this
+database, the collisional onsets must be normalized by adding them to the
+appropriate ionization energy. In the future, this body of data will be
+re-examined, and, if there is sufficient demand, will be incorporated into an
+auxiliary database. There is extensive use of this method in the negative ion
+database, where the acronym [CIDT] is used.
+</p>
+
+<h3 id="DTI">Delayed Thermionic Ionization [DTI]</h3>
+
+<p>
+The one study [<a href="#REF24">24</a>] using this technique whose
+results are included in the database was an investigation of fullerenes. Ions
+and neutral molecules in the gas phase were generated by laser desorption from
+stainless steel target rods coated with C<sub>60</sub> or C<sub>60</sub>
+/C<sub>70</sub> films. Delayed ionization by thermionic emission during the
+flight time between source and time-of-flight acceleration optics was detected
+by withdrawing ions perpendicular to the cluster beam. Thermionization rates
+were determined from these measurements, and ionization energies were derived
+from the results using statistical mechanical formulations. For details,
+users are referred to the original reference [<a href="#REF24">24</a>].
+</p>
+
+<h3 id="CTS">Charge Transfer Spectra [CTS]</h3>
+
+<p>
+The charge transfer spectrum method is a semi-empirical method often
+used, especially in the past, to estimate ionization energies of large
+molecules such as polycyclic aromatics and certain biochemical compounds. It
+is based on a semi-empirical theory developed by Mulliken
+[<a href="#REF25">25</a>] to explain the absorption bands of electron donor-electron acceptor
+complexes in solution. These bands arise from a transition from the ground
+state of the molecular complex to an excited state in which an electron is
+largely transferred from the donor to the acceptor molecule. The bands are
+not characteristic of the isolated donor or acceptor molecules. Hastings et
+al [<a href="#REF26">26</a>] derived from the Mulliken theory a simple
+algebraic relation between the frequency of the maximum of the charge transfer
+band and the ionization energy of the donor, and correlated it with
+experimental information. A limited comparison of ionization energies derived
+by this method and more accurate methods indicates that the estimates are
+usually within a few tenths of an electron volt of the more correct value.
+</p>
+
+<h3 id="AUG">Auger Electron Spectroscopy [AUG]</h3>
+
+<p>
+The technique of Auger Electron Spectroscopy is similar in principle to
+<a href="#PE">photoelectron spectroscopy</a>. It is based on an analysis of
+the energies of ejected electrons. However, in this case the electron is
+ejected via an Auger cascade following prior inner shell ionization. The
+inner shell ionization is brought about by a high energy electron beam or a
+discrete X-ray source.
+</p>
+
+<h3 id="SI">Surface ionization [SI]</h3>
+
+<p>
+The surface ionization method has been applied to the determination of
+first ionization energies of some metal atoms. The method is based on the
+assumption that the atoms in a beam, after impinging on a hot metal surface,
+will come to thermodynamic equilibrium, producing a surface concentration of
+atoms and ions whose composition can be described by the Saha-Langmuir
+equation:
+</p>
+
+<p class="equation">
+N<sub>+</sub> / N<sub>0</sub> = g<sub>+</sub> /
+g<sub>0</sub> exp[e(&phi; &minus; I)/kT
+</p>
+
+<p>
+where N<sub>+</sub> /N<sub>0</sub> is the fraction of the atoms which are
+ionized, g<sub>+</sub> and g<sub>0</sub> are the statistical weights of the
+ions and atoms, e is the electronic charge, &phi; the work
+function of the metal, I the ionization energy, k the Boltzmann constant, and
+T the absolute temperature. The temperature dependence of the positive ion
+current gives the ionization energy if the work function is known.
+Complications include the effect of surface coverage or impurities on the work
+function, definition of the work function for a polycrystalline surface
+exhibiting a variety of crystal planes with different work functions, and an
+occasional lack of reproducibility of experimental results. Where comparisons
+can be made with more reliable methods, determinations of relative ionization
+energies using this approach reproduce other results within several tenths of
+an electron volt.
+</p>
+
+<p>
+For negative ions, a common version of this experiment, the Magnetron
+technique, lacks mass analysis, and therefore many of the values for
+thermochemical parameters resulting from this method correspond to anions of
+uncertain identity. Precision is claimed to be several tenths of a volt (&gt;20
+kJ/mol), but appears to be worse in many cases, based on current data.
+</p>
+
+<h3 id="LE">Liquid-Phase Electrochemical Determinations [LE]
+</h3>
+
+<p>
+Several studies have been published in which gas phase ionization
+energies are determined from measurements of photocurrent thresholds of
+compounds dissolved in nonpolar solvents. This approach was used primarily
+for obtaining ionization energy data for non-volatile organic compounds. The
+Born equation is employed to obtain the solvation energies for the cations.
+</p>
+
+<h3 id="KINT">Electron Auto-Detachment Rate [KINT]</h3>
+
+<p>
+For negative ions with electron affinities of less than about 0.5 eV, the
+rate for auto-detachment of the electron as a function of temperature can be
+measured. The activation energy obtained from this represents the electron
+affinity.
+</p>
+
+<h3 id="ETS">Electron Transmission Spectroscopy [ETS]</h3>
+
+<p>
+In this technique, the scattering of a monoenergetic electron beam
+impacting on a gas at less than the ionization threshold is determined. The
+presence of resonances in the spectrum implies electron capture to produce a
+temporary state, followed by autodetachment. This is the principal technique
+for measurement of negative electron affinities, i.e. cases where the anion is
+less stable that the neutral species. Occasionally, a series of resonances can
+be extrapolated to below zero electron energy to give an estimate of a
+positive electron affinity.
+</p>
+
+<h3 id="Mobl">Kinetic Mobility of Ions [Mobl]</h3>
+
+<p>
+If the mobility of an ion in a gas can be measured in response to a weak
+electric field, the potential well depth, corresponding to the enthalpy for
+the ion associating with the neutral gas can be determined.
+</p>
+
+<h3 id="LOG">Laser Optogalvanic Spectroscopy [LOG]
+</h3>
+
+<p>
+The gas of interest is subjected to an electrical discharge, and the discharge
+region is probed by a laser. The 'LOG' spectrum is recorded by scanning the
+wavelength of the laser, and monitoring laser-induced changes in the discharge
+impedance. The spectrum produced will be similar to the laser absorption
+spectrum but relative intensities of spectral features may be very different.
+The method is particularly suitable for detecting unstable (radical) species.
+</p>
+
+<h3 id="ZTID">Zero-pressure Thermal-radiation Induced Dissociation
+[ZTID]</h3>
+
+<p>
+In an Paul (ICR) trap, infrared radiation from the walls is absorbed by
+trapped ions. If a weak bond exists in the ion, the ion can dissociate to a
+new ion and neutral species, as its internal energy increases with time.
+Modeling of the rate constant for this process can yield a bond strength.
+</p>
+
+<h3 id="Scat">Scattering of Atoms from Ions [Scat]</h3>
+
+<p>
+If a beam of ions is passed through a gas of some neutral species, and the
+resulting ion-neutral complex both has an appreciable binding energy, and
+undergoes electron loss in this process, then an electron affinity for that
+complex can be derived from the scattering as a function of translational
+energy of the ion beam.
+</p>
+
+<h2>Non-Experimental Methods</h2>
+
+<h3 id="DER">Derivation [DER]</h3>
+
+<p>
+In a number of instances, authors have derived values for ionization
+energies or appearance energies through a variety of approaches. The most
+common type of derivation is based simply on taking the difference in
+enthalpies of formation of an ion and its corresponding neutral species,
+usually when for some reason an ionization energy can not be directly
+determined, but the necessary enthalpy of formation values are available from
+other measurements. This is not the only type of derivation appearing in the
+literature, however; results cited here include a variety of other types of
+derivation.
+</p>
+
+<h3 id="EST">Estimation [EST]</h3>
+
+<p>
+In a few instances, results have been included that are designated as
+"estimated". The chief difference between a "derived" value and an
+"estimated" value is that derived values are usually closely tied to specific
+experimental results related to a particular ion, while "estimated" results
+usually come from an examination of trends in data for a series of molecules.
+Such results have been included here only when they come from studies that are
+sufficiently careful and systematic that the results appear to have some value
+for users searching for information about a particular ionic species. For
+both "derived" and "estimated" results, interested users should consult the
+original references for details.
+</p>
+
+<h3 id="EVAL">Evaluation [EVAL]</h3>
+
+<p>
+Literature covered in putting together the database included reviews and
+papers where the authors have carried out expert evaluations of
+particular systems. Values recommended by the authors of such publications
+are included here and are specifically noted as "evaluations" by using the
+acronym EVAL.
+</p>
+
+<h3 id="CALC">Calculations [Calc]</h3>
+
+<p>
+The present work is intended to be an experimentally-based compilation.
+Although high level quantum calculations have been at times used in the
+evaluation of experimental data in the Webbook, they are not included in
+this work save for a very few cases where experimental formation of key
+ions in a series are unlikely to be successful.
+</p>
+
+<h3 id="Latt">Lattice Energy Calculations [Latt]</h3>
+
+<p>
+The heat of formation of an anion can be derived from a Born-Haber cycle using
+the lattice energy and heat of formation of a crystal and the thermochemistry
+of the appropriate gas phase cation. This method is not especially accurate
+relative to more recent techniques, but for some singly charged inorganic
+anions it provides the only data available.
+</p>
+
+<h1>RELIABILITY OF DATA AND CRITERIA FOR EVALUATION</h1>
+
+<h2 id="COMP">Comparisons among Results of Different
+Techniques</h2>
+
+<p>
+The <a href="#HCandP">ion energetics data included in the WebBook</a> are
+derived from the various different methods described above, and are
+consequently of widely varying quality, not only because the accuracies of the
+measurement techniques differ, but also because of differences in the focuses
+of the research in which the measurements were made. For example, many of the
+ionization energies reported for inorganic species were never intended by the
+original authors to be quantitative ionization energy measurement, but are
+simply qualitative indicators of whether or not a given ion observed in the
+vapor over a heated Knudsen cell has been formed by electron impact ionization
+of the corresponding neutral species (in which case it exhibits an onset at a
+relatively low energy) or through fragmentation of a molecular ion (which
+would correspond to a higher onset energy). In these experiments, error
+limits of &plusmn;0.5 to l eV are commonly cited by the original authors.
+</p>
+
+<p>
+In carrying out an evaluation of data to arrive at a recommended value
+for an ionization energy, an attempt is made to integrate the entire corpus of
+information about any given ion, giving weight to various determinations
+depending on the nature of the ionization onset, the measurement techniques
+used, the attention to detail by the original authors, and so forth. For
+atoms or diatomic molecules, a spectroscopically-determined ionization energy
+is usually (but not always) considered more reliable than a contradictory
+value obtained by observation of an ionization threshold. Data obtained from
+<a href="#PIPECO">coincidence</a> experiments and other highly accurate
+measurements based on laser spectroscopy techniques are usually considered to
+be the most reliable. A value obtained from an observed ionization onset
+using <a href="#PI">photoionization</a> or <a href="#EI">electron
+ionization</a> with well-defined electron energies is considered more reliable
+than an onset obtained using less accurate techniques. In all of these cases,
+an observed onset of a <a href="#PE">photoelectron</a> band is given great
+weight in carrying out the analysis, with values from simple onset
+observations being downgraded if they do not match the photoelectron onset
+(unless, of course, the differences could be rationalized in terms of the
+principles outlined above).
+</p>
+
+<p>
+As mentioned above, many <a href="#PE">photoelectron spectroscopy</a>
+studies do not cite values for <a href="#AIE">adiabatic ionization
+energies</a>. In cases where the authors have provided a figure showing the
+photoelectron spectrum, it is sometimes possible to estimate from the figure
+the value for the adiabatic onset; where listed adiabatic ionization energies
+have been obtained in this way, the values are shown surrounded by
+parentheses, and should be considered to be only rough estimates.
+</p>
+
+<p>
+Most of the <a href="#PA">proton affinity</a> data have been derived
+from ion/molecule equilibrium constant determinations. The values reported
+here are taken from the recent <a href="#EV">re-evaluation of proton affinity
+data</a> [<a href="#REF10">10</a>], and differ somewhat from those listed in the
+frequently-cited 1984 evaluation [<a href="#REF8">8</a>], since the scale of
+relative values of proton affinities was shown to have been constricted, and
+has now been expanded in agreement with recent results and calculations
+[<a href="#REF10">10</a>]. Other equilibrium constant data have been
+utilized as
+an aid in evaluating information obtained from other sources.
+</p>
+
+<h2 id="EL">Error Limits</h2>
+
+<p>
+The experimentally-determined data collected here display widely varying
+uncertainties, ranging from &plusmn;0.0001 eV or smaller for some optical- or
+laser-spectroscopic determinations to &plusmn;1 eV for electron ionization
+measurements carried out on the vapor above a heated Knudsen cell. The error
+limits shown for any particular determination are those given by the original
+author(s). When the original authors do not indicate error limits, no limits
+are listed here. Some of the ionization energy values are shown enclosed in
+parentheses. These indicate data which were not reported in the original
+paper, but which have been derived by us from a figure or other information in
+the paper.
+</p>
+
+<p>
+In some cases, a recommended value for an ionization energy is given.
+Recommended values may originate from an analysis of the original experimental
+data listed for the species; in this case, cited error limits are derived from
+the various experimentally-determined values for the ionization energy using
+standard statistical analyses of the data. As explained above, different
+weights are given to determinations, depending on the accuracy of the
+experimental technique used; in most cases, this means that when measurements
+derived from reliable techniques are available, those that are clearly
+unreliable (for example, an ionization onset determination made with an
+electron beam where the energy spread of the electrons is broad) are
+disregarded. In a few cases, recommended values come from reviews in which
+the authors have carried out detailed data evaluations; when those evaluations
+are accepted for this database, the value reported in the review is listed,
+with "EVAL" (evaluation) given as the technique, and that value, with its
+error limits, is simply reproduced in the space for our recommended value.
+</p>
+
+<h1>REFERENCES</h1>
+
+
+<ol class="bibliography">
+<li><span id="REF1">F. H. Field</span> and J. L. Franklin, <em> Electron Impact
+ Phenomena and the Properties of Gaseous Ions</em> (Academic Press, New
+ York, 1957).</li>
+
+<li><span id="REF2">J. L. Franklin</span>, J.G. Dillard, H. M. Rosenstock, J.T.
+ Herron, K. Draxl, and F. H. Field, <em> Ionization Potentials, Appearance
+ Potentials and Heats of Formation of Gaseous Positive Ions</em> ,
+ Nat. Stand. Ref. Data Ser., Nat. Bur. Stand. (U.S.) 26 (1969).</li>
+
+<li><span id="REF3">H. M. Rosenstock</span>, K. Draxl, B. W. Steiner, and J.T.
+ Herron, <em> Energetics of Gaseous Ions</em>, J. Phys. Chem. Ref. Data,
+ Vol. 6, Suppl. 1 (1977).</li>
+
+<li><span id="REF4">R. D. Levin</span> and S. G. Lias, <em> Ionization Potential
+ and Appearance Potential Measurements, 1971-1981</em>, Nat. Stand. Ref.
+ Data Ser., Nat. Bur. Stand. (U.S.) 71 (1982).</li>
+
+<li><span id="REF5a">(a)</span> <span id="REF5">S. G. Lias</span> and S. E. Stein,
+ NIST Positive Ion Energetics, Versions 2.0 and 3.0, NIST Standard
+ Reference Database 19A, National Institute of Standards and Technology,
+ Gaithersburg, Maryland (1991 and 1993).<br />
+
+ <span id="REF5b">(b)</span> J. E. Bartmess, NIST Negative Ion Energetics, Versions 2.0
+ and 3.0, NIST Standard Reference Database 19B, National Institute of
+ Standards and Technology, Gaithersburg, Maryland (1991 and 1993).</li>
+
+<li><span id="REF6a">(a)</span> <span id="REF6">D. R. Stull</span> and H. Prophet,
+ <em> JANAF Thermochemical Tables</em>, Nat. Stand. Ref. Data Ser.
+ (U.S.) 37 (1971).<br />
+
+ <span id="REF6b">(b)</span> M. W. Chase, J. L. Curnutt, A. T. Hu, H. Prophet,
+ A.N. Syverud, and L. C. Walker, <em>JANAF Thermochemical Tables</em>,
+ <em>1974 Supplement</em>, J. Phys. Chem. Ref. Data 3, 311 (1974).<br />
+
+ <span id="REF6c">(c)</span> M. W. Chase, Jr., C. A. Davies, J. R. Downey, Jr.,
+ D. J. Frurip, R. A. McDonald, and A. N. Syverud, <em>JANAF Thermochemical
+ Tables, Third Edition, Parts I and II</em>, J. Phys. Chem. Ref. Data 14,
+ Suppl. 1 (1985).<br />
+
+ <span id="REF6d">(d)</span> D. D. Wagman, W. H. Evans, V. B. Parker,
+ R. H. Schumm, I. Halow, S. M. Bailey, K. L. Churney, and R. L. Nuttall,
+ <em>The NBS Tables of Chemical Thermodynamic Properties: Selected
+ Values for Inorganic and C<sub>1</sub> and C<sub>2</sub> Organic
+ Substances in SI Units</em>, J. Phys. Chem. Ref. Data 11, Suppl. 2
+ (1982).<br />
+
+ <span id="REF6e">(e)</span> L. V. Gurvich, I. V. Veits, V. A. Medvedev,
+ G. A. Khachkuruzov, V. S. Yungman, G. A. Bergman, et al.,
+ <em>Termodinamicheskie Svoistva Individual'nykh Veshchestv
+ (Thermodynamic Properties of Individual Substances)</em>,
+ V. P. Glushko, Gen. Ed., Vols. 1 through 4 (in 8 parts), (1978-1982),
+ Izdatel'stvo "Nauka" Moscow.<br /></li>
+
+<li><span id="REF7">S. G. Lias</span>, J. E. Bartmess, J. F. Liebman, J. L.
+ Holmes, R. D. Levin, and W. G. Mallard, "Gas-Phase Ion and Neutral
+ Thermochemistry," J. Phys. Chem. Ref. Data, Vol. 16, Suppl. 1 (1988).</li>
+
+<li><span id="REF8">S. G. Lias</span>, J. F. Liebman, and R. D. Levin, <em>
+ Evaluated Gas Phase Basicities and Proton Affinities of Molecules;
+ Heats of Formation of Protonated Molecules</em>, J. Phys. Chem. Ref.
+ Data, Vol. 13, 695 (1984).</li>
+
+<li><span id="REF9a">(a)</span> <span id="REF9">S. G. Lias</span>, J. F. Liebman,
+ J. L. Holmes, R. D. Levin, and W. G. Mallard, NIST Positive Ion
+ Energetics, Version 1.0, NIST Standard Reference Database 19A, National
+ Institute of Standards and Technology, Gaithersburg, Maryland (1990).
+
+ <span id="REF9b">(b)</span> J. E. Bartmess, NIST Negative Ion Energetics,
+ Version 1.0, NIST Standard Reference Database 19B, National Institute of
+ Standards and Technology, Gaithersburg, Maryland (1990).</li>
+
+<li><span id="REF10">E. P. Hunter</span>, and S. G. Lias, "Evaluated Gas Phase
+ Basicities and Proton Affinities of Molecules", J. Phys. Chem. Ref. Data,
+ Vol. 27(3), 413 (1998).</li>
+
+<li><span id="REF11">E. R. Cohen</span>, B. N. Taylor, J. Res. Nat. Bureau Stand.,
+ 92, 85 (1987).</li>
+
+<li><span id="REF12">(a) J. E. Bartmess</span>, J. Phys. Chem. 98, 6420
+ (1994).<br />
+ (b) A. C. G. Mitchell, Z. Physik 51, 720 (1928).</li>
+
+<li><span id="REF13">H. M. Rosenstock</span>, "Standard States in Gas Phase Ion
+ Thermochemistry", in <em> Kinetics of Ion-Molecule Reactions</em>, (P.
+ Ausloos, Editor), Plenum: New York, 1979, p. 246.</li>
+
+<li><span id="REF14">H. M. Rosenstock</span>, Int. J. Mass Spectrom. Ion Phys.
+ 20, 139 (1976).</li>
+
+<li><span id="REF15">D.S. McGrew</span>, W.B. Knighton, J.A. Bognar, E.P.
+ Grimsrud, Int. J. Mass Spectrom. Ion Phys. 139, 47 (1994); D.H.
+ Williamson, W.B. Knighton, E.P. Grimsrud, Int. J. Mass Spectrom. Ion
+ Phys. 154, 15 (1996).</li>
+
+<li><span id="REF16">S. G. Lias</span> and P. Ausloos, J. Am. Chem. Soc. 100,
+ 6027 (1978).</li>
+
+<li><span id="REF17">J. C. Traeger</span> and R. G. McLaughlin, J. Am. Chem.
+ Soc. 103, 3647 (1981).</li>
+
+<li><span id="REF18">W. A. Brand</span> and T. Baer, J. Am. Chem. Soc. 106, 3154
+ (1984).</li>
+
+<li><span id="REF19">F. P. Lossing</span>, Can. J. Chem. 50, 3973 (1972).</li>
+
+<li><span id="REF20a">(a)</span> <span id="REF20">J. A. Simpson</span> and
+ C. E. Kuyatt, Rev. Sci. Instr. 34, 265 (1963).<br />
+
+ <span id="REF20b">(b)</span> J. A. Simpson, Rev. Sci. Instru.
+ 35, 1698 (1964).<br />
+
+ <span id="REF20c">(c)</span> K. Maeda, G. P. Semeluk, and F. P. Lossing,
+ J. Mass Spectrom. Ion. Phys. 1, 395 (1968).<br />
+
+ <span id="REF20d">(d)</span> P. Marmet and L. Kerwin, Can. J. Phys.
+ 38, 787 (1960).</li>
+
+<li><span id="REF21a">(a)</span> <span id="REF21">R. E. Fox</span>, W. M. Kickam,
+ T. Kjeldaas, Jr., and D. J. Grove, Phys. Rev. 84, 859 (1951).<br />
+
+ <span id="REF21b">(b)</span> R. E. Fox, W. M. Hickam, D. J. Grove, and
+ T. Kjeldaas, Jr., Rev. Sci. Instr. 26, 1101 (1955).</li>
+
+<li><span id="REF22">R. E. Winters</span>, J. H. Collins, and W. L. Courchene,
+ J. Chem. Phys. 45, 1931 (1966).</li>
+
+<li><span id="REF23">J. Dannacher</span>, Org. Mass Spectrom. 19, 253
+ (1984).</li>
+
+<li><span id="REF24">R. D. Beck</span>, P. Weis, G. Brauchle, and M. M. Kappes,
+ Mechanistic aspects of fullerene coalescence upon ultraviolet laser
+ desorption from thin films, J. Chem. Phys. 1994, 100, 262.</li>
+
+<li><span id="REF25">R. S. Mullikan</span>, J. Am. Chem. Soc. 74, 811
+ (1952).</li>
+
+<li><span id="REF26">S. H. Hastings</span>, J. L. Franklin, J. C. Schiller, and
+ F. A. Matsen, J. Am. Chem. Soc. 75, 2900 (1953).</li>
+</ol>
+
+
+
+
+</main>
+
+<footer id="footer">
+
+<div class="row">
+  <ul class="list-center-inline">
+    <li><a href="https://www.nist.gov/privacy-policy"
+           title="NIST site privacy statement"
+           target="_blank" rel="noopener noreferrer">Site Privacy</a>
+    </li>
+    <li><a href="https://www.nist.gov/oism/accessibility"
+           title="NIST accessibilty statement"
+           target="_blank" rel="noopener noreferrer">Accessibility</a>
+    </li>
+    <li><a href="https://www.nist.gov/privacy"
+           title="information on the NIST privacy program"
+           target="_blank" rel="noopener noreferrer">Privacy Program</a>
+    </li>
+    <li><a href="https://www.nist.gov/oism/copyrights"
+           title="statement on copyright for NIST authored material"
+           target="_blank" rel="noopener noreferrer">Copyrights</a>
+
+    </li>
+    <li><a href="https://www.commerce.gov/vulnerability-disclosure-policy"
+           title="US Department of Commerce vulnerability disclosure policy"
+           target="_blank" rel="noopener noreferrer">Vulnerability Disclosure</a>
+    </li>
+    <li><a href="https://www.nist.gov/no-fear-act-policy"
+           title="NIST No Fear Act policy"
+           target="_blank" rel="noopener noreferrer">No Fear Act Policy</a>
+    </li>
+    <li><a href="https://www.nist.gov/office-director/freedom-information-act"
+           title="NIST Freedom of Information Act policy"
+           target="_blank" rel="noopener noreferrer">FOIA</a>
+    </li>
+    <li><a href="https://www.nist.gov/environmental-policy-statement"
+           title="NIST environmental policy statement"
+           target="_blank" rel="noopener noreferrer">Environmental Policy</a>
+    </li>
+    <li><a href="https://www.nist.gov/summary-report-scientific-integrity"
+           title="NIST summary report on scientific integrity"
+           target="_blank" rel="noopener noreferrer">Scientific Integrity</a>
+    </li>
+    <li><a href="https://www.nist.gov/nist-information-quality-standards"
+           title="NIST information quality guidelines and standards"
+           target="_blank" rel="noopener noreferrer">Information Quality Standards</a>
+    </li>
+    <li><a href="https://www.commerce.gov/"
+           title="US Department of Commerce web site"
+           target="_blank" rel="noopener noreferrer">Commerce.gov</a>
+    </li>
+    <li><a href="https://www.science.gov/"
+           title="access to scientific research results from U.S. federal agencies"
+           target="_blank" rel="noopener noreferrer">Science.gov</a>
+    </li>
+    <li><a href="https://www.usa.gov/"
+           title="official guide to USA government information and services"
+           target="_blank" rel="noopener noreferrer">USA.gov</a>
+    </li>
+    <li><a href="https://vote.gov/"
+           title="information on registering to vote or updating registration"
+           target="_blank" rel="noopener noreferrer">Vote.gov</a>
+    </li>
+  </ul>
+</div>
+
+</footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a21473c86916786b',t:'MTc4NTA3OTg5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+

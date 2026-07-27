@@ -1,0 +1,63 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/5",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "supersedes_for_new_capture_only": "experiments/external_sources/chemistry/org_009_target_identities_v4.json",
+  "all_v1_v2_v3_v4_results_must_remain_preserved_and_barred_from_closure": true,
+  "external_values_products_reaction_rows_or_outcomes_present": false,
+  "development_observed_metadata_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-LOCALMAPPER-FULL-METADATA",
+      "source_id": "FIGSHARE-ARTICLE-25046471",
+      "authority": "Figshare repository record supplied by the LocalMapper dataset authors",
+      "registered_identity": "USPTO reaction datasets remapped by LocalMapper",
+      "article_id": 25046471,
+      "doi": "10.6084/m9.figshare.25046471.v1",
+      "published_date": "2024-01-23T10:06:08Z",
+      "license": "CC BY 4.0",
+      "source_record_role": "repository, license and complete-file identity only",
+      "custody_class": "development_observed_metadata_only",
+      "uri": "https://api.figshare.com/v2/articles/25046471"
+    }
+  ],
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-LOCALMAPPER-USPTO-FULL",
+      "source_id": "FIGSHARE-FILE-44192531",
+      "authority": "Figshare repository record supplied by the LocalMapper dataset authors",
+      "registered_identity": "complete remapped_USPTO_FULL.csv payload",
+      "source_record_role": "blind atom-mapped addition product vectors",
+      "custody_class": "outcome_unopened_before_v5_claim_specific_seal",
+      "uri": "https://ndownloader.figshare.com/files/44192531",
+      "registered_file": {
+        "file_id": 44192531,
+        "name": "remapped_USPTO_FULL.csv",
+        "content_length": 427144675,
+        "supplied_md5": "7edb3d418f22f0cded6a6cdcaa424939",
+        "computed_md5": "7edb3d418f22f0cded6a6cdcaa424939",
+        "mimetype": "text/plain"
+      }
+    }
+  ],
+  "blind_row_selection_rule": {
+    "reaction_column_resolution": "After opening the sealed payload, normalize each header by lowercasing and replacing spaces and hyphens with underscores. Select exactly one column whose normalized header is one of mapped_reaction_smiles, mapped_rxn_smiles, localmapper_results, mapped_rxn, rxn_smiles, reaction_smiles or reaction. Halt on no match or more than one match; no product value may resolve ambiguity.",
+    "reaction_field_split": "Accept exactly the standard reactants>agents>products or reactants>>products field topology. The selector may parse only the reactant field. The agent and product fields remain unread until the complete source-only qualifying identity list has been sealed.",
+    "source_component_rule": "Retain every row whose reactant field has exactly two dot-separated mapped components: one substrate carrier and one X2 carrier. X2 consists of exactly two uniquely mapped heavy atoms of the same element Cl or Br, joined by exactly one single support and containing no other atom. The substrate has exactly one non-aromatic carbon-carbon double support between uniquely mapped carbon atoms. Every non-hydrogen source atom is mapped exactly once and every map identity is unique across both components.",
+    "source_exclusion_rule": "Reject malformed fields, unmapped non-hydrogen atoms, duplicate map identities, X2 components with any additional atom or non-single internal support, substrates without exactly one non-aromatic mapped carbon-carbon double support, and sources with a component count other than two. Rejection is source-only and is never revised after product opening.",
+    "ordering": "Retain every qualifying row in original file order without a row limit, random draw, favorable-only filter, yield threshold, named-product selector or post-outcome exclusion.",
+    "postseal_prediction": "Each retained source identity opens to exactly one product carrier containing every source map identity once; the X-X support is absent, the selected C=C support becomes one retained C-C support, exactly two new C-X supports attach the two halogen maps to the two selected carbon maps, and every other mapped source adjacency is unchanged.",
+    "postseal_targets": [
+      "complete product component count",
+      "complete mapped-atom inventory conservation",
+      "exact X-X support change",
+      "exact selected C=C multiplicity reduction",
+      "exact two new C-X supports",
+      "all other mapped adjacency retention",
+      "every favorable adverse absent malformed and unresolved qualifying row"
+    ]
+  },
+  "parser_boundary": "The independent standard-library parser recognizes bracket atoms, bare organic-subset atoms, explicit atom maps, dot components, parentheses, ring closures, single/double/triple/aromatic support glyphs and standard reaction separators. Any qualifying-candidate field containing an unsupported or ambiguous token is retained as unresolved rather than silently discarded.",
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "remote_source_payload_open_count_before_v5_seal": 0
+}

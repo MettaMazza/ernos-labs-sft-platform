@@ -1,0 +1,35 @@
+{
+  "schema": "sft-v3-value-blind-source-identity-addendum/2",
+  "claim_id": "SFT-CHEM-CONFORMER-POPULATION-ORDERING-006",
+  "obligation_id": "SFT-CHEM-OBL-ORG-006",
+  "registered_date": "2026-07-27",
+  "preserved_predecessor_addendum": [
+    "experiments/external_sources/chemistry/org_006_blind_source_identity_addendum_v1.json",
+    "sha256:72fa75a828a84c2a3eab4c21f5dd4e11bb230ed8d7d1a13ac888540d39b435b6"
+  ],
+  "preserved_predecessor_capture": [
+    "experiments/external_sources/chemistry/snapshots/org-006-blind-v1/source-inventory-v1.json",
+    "sha256:6b3fbef19c0bdf233691edcb5cf74856626d273338910ec76becbe313d1f6c31"
+  ],
+  "adverse_predecessor_outcomes_disclosed": "The NIST successor page returned a lost-molecule response; the OSTI record contained qualitative metadata without numeric tables; its registered public-fulltext endpoint returned HTTP 404. All three responses remain immutable and are not counted as quantitative closure.",
+  "selection_rule": "For the already registered DOI 10.1063/1.4904822, capture PubMed PMID 25591384 and deterministically follow every full-text-provider link returned by that record in source order, preserving every response. Independently capture the complete ACS primary record for DOI 10.1021/jp404315t and every supplementary-information link returned by that record in source order, preserving every response. These routes were selected by fixed bibliographic identity and complete-link traversal, not by numerical outcome, and capture does not stop after a favorable result.",
+  "development_information_disclosed": "Titles, DOIs, qualitative abstracts, free-article status and the ACS supplementary filename jp404315t_si_001.txt were development-observed during bibliographic discovery. Exact temperatures, energies, conformer probabilities, couplings, data rows and attachment contents remain unopened.",
+  "exact_values_data_rows_attachment_contents_provider_outcomes_or_payload_hashes_present": false,
+  "complete_registered_source_group_count": 2,
+  "source_groups": [
+    {
+      "source_group_id": "PUBMED-25591384-COMPLETE-FULLTEXT-PROVIDER-SURFACE",
+      "authority": "United States National Library of Medicine PubMed",
+      "uri": "https://pubmed.ncbi.nlm.nih.gov/25591384/",
+      "identity": "PMID 25591384 complete public record and every returned full-text-provider link for DOI 10.1063/1.4904822",
+      "custody_class": "identity-title-abstract-and-free-status-observed-exact-provider-payload-values-tables-and-figures-unopened-before-ORG-006-v2-value-seal"
+    },
+    {
+      "source_group_id": "ACS-JP404315T-COMPLETE-PRIMARY-AND-SI-SURFACE",
+      "authority": "American Chemical Society",
+      "uri": "https://pubs.acs.org/doi/10.1021/jp404315t",
+      "identity": "DOI 10.1021/jp404315t complete primary record and every returned supplementary-information link including registered filename jp404315t_si_001.txt",
+      "custody_class": "identity-title-qualitative-summary-and-si-filename-observed-exact-primary-and-si-payload-values-and-rows-unopened-before-ORG-006-v2-value-seal"
+    }
+  ]
+}

@@ -19,9 +19,9 @@ def build_execution(root: Path) -> ClaimExecution:
         root / "sft/chemistry/elements_periodicity_batch_2.py",
         root / "claims/SFT-CHEM-ELEM-GROUP-PERIOD-001/execution.py",
         root / "sft/physics/generated_empirical_law.py",
-        root / "sft/engine/fold_language.py",
-        root / "sft/engine/custody.py",
-        root / "sft/engine/hostile.py",
+        root / "sft/claim_evidence/fold_language.py",
+        root / "sft/claim_evidence/custody.py",
+        root / "sft/claim_evidence/hostile.py",
         root / "sft/engine/isolation.py",
         root / "sft/engine/empirical.py",
     )

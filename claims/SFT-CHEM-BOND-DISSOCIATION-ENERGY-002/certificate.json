@@ -1,0 +1,122 @@
+{
+  "all_external_rows_preserved": true,
+  "all_measurement_values_released_after_relation_seal": true,
+  "candidate_count": 256,
+  "chemistry_obligation": "SFT-CHEM-OBL-PROP-002",
+  "claim_id": "SFT-CHEM-BOND-DISSOCIATION-ENERGY-002",
+  "closure_scope": "finite_complete",
+  "complete_external_rows": 8,
+  "derivation_seal_hash": "sha256:768bad055854acda5a9baf4d7973469636522893cb4974c3aafe5594040c3f8b",
+  "empirical_validation_hash": "sha256:b528f5d188c869f84a2c08bddd753673eb65ee63cd8b67302508df0d756ac29c",
+  "engine_receipt_hash": "sha256:23224e2d802e317a0c49a3d2ae914fab62454843a2d660e0b027afbf73793b92",
+  "engine_receipt_path": "receipts/engine/model_admitted/SFT-CHEM-BOND-DISSOCIATION-ENERGY-002-23224e2d802e317a.json",
+  "exact_path_law": "D0(M2) = B-prime threshold[M(1s)+M(2s)] Take atomic[M(1s)->M(2s)]",
+  "exact_result": "named-isotopologue-and-X-state__both-product-channels-held__shared-prefix-path-composition__ordered-positive-held-Take__all-measurements-opened-post-seal__target-inaccessible-until-prediction-seal__complete-historical-and-current-vector__typed-two-row-exhaustion-no-extra-rule",
+  "external_data_source_ids": [
+    "APS-PRA-49-2460-1994",
+    "PRL-UDEM-H-1S2S-1997",
+    "PRL-PARTHEY-HD-1S2S-SHIFT-2010",
+    "SI-DEFINING-LIGHT-SPEED",
+    "JCP-LIU-H2-DISSOCIATION-2009",
+    "PRA-HUSSELS-D2-DISSOCIATION-2022"
+  ],
+  "external_validation_hash": "sha256:56b1636fe9c0e840fa8893ebfd24e8d6e04d5deba9cc7d93f86bcb1046100ad6",
+  "falsification_condition": "The claim fails if either post-seal threshold Take atomic interval does not overlap every registered historical and later ground-dissociation interval for its isotopologue; if any of eight measurement rows, a state, product channel, condition, source or uncertainty is erased; if any measured number is readable before the relation seal; if a deliberately displaced interval is accepted; or if a fitted coefficient or correction is introduced.",
+  "fitted_or_free_parameter_used": false,
+  "independent_certificate_hash": "sha256:2e70c75b5ea57a65ba0688cfd293bed9275ecdf158dfde656799936d6c6e507a",
+  "independent_implementation_hash": "sha256:197c36c493be53c9160e9c89cd3d01f18965a080d1a1575f35d8a0888256aa31",
+  "measured_value_in_derivation_or_prediction": false,
+  "measurement_receipt_hash": "sha256:7ea52e3943c49ad36c07db9fa165563c3172acd066fa17e009fb4da18f631b68",
+  "observational_development_disclosed": true,
+  "quantitative_vector": {
+    "D2": {
+      "all_registered_ground_targets_overlap": true,
+      "comparisons": [
+        {
+          "overlap": true,
+          "record_class": "historical-ground-dissociation",
+          "source_inscription_inverse_centimetre": "36748.38",
+          "source_lower_inverse_centimetre": {
+            "denominator": 100,
+            "numerator": 3674831
+          },
+          "source_upper_inverse_centimetre": {
+            "denominator": 20,
+            "numerator": 734969
+          },
+          "target_id": "APS-1994-D2-X-GROUND-D0"
+        },
+        {
+          "overlap": true,
+          "record_class": "later-ground-dissociation",
+          "source_inscription_inverse_centimetre": "36748.362282",
+          "source_lower_inverse_centimetre": {
+            "denominator": 62500,
+            "numerator": 2296772641
+          },
+          "source_upper_inverse_centimetre": {
+            "denominator": 250000,
+            "numerator": 9187090577
+          },
+          "target_id": "CURRENT-D2-X-GROUND-D0"
+        }
+      ],
+      "postseal_exact_Take_lower_display_inverse_centimetre": "36748.3436388697610264765",
+      "postseal_exact_Take_lower_inverse_centimetre": {
+        "denominator": 29979245800,
+        "numerator": 1101687626692543
+      },
+      "postseal_exact_Take_upper_display_inverse_centimetre": "36748.4236389268004867554",
+      "postseal_exact_Take_upper_inverse_centimetre": {
+        "denominator": 29979245800,
+        "numerator": 1101690025033917
+      }
+    },
+    "H2": {
+      "all_registered_ground_targets_overlap": true,
+      "comparisons": [
+        {
+          "overlap": true,
+          "record_class": "historical-ground-dissociation",
+          "source_inscription_inverse_centimetre": "36118.11",
+          "source_lower_inverse_centimetre": {
+            "denominator": 100,
+            "numerator": 3611803
+          },
+          "source_upper_inverse_centimetre": {
+            "denominator": 100,
+            "numerator": 3611819
+          },
+          "target_id": "APS-1994-H2-X-GROUND-D0"
+        },
+        {
+          "overlap": true,
+          "record_class": "later-ground-dissociation",
+          "source_inscription_inverse_centimetre": "36118.06962",
+          "source_lower_inverse_centimetre": {
+            "denominator": 4000,
+            "numerator": 144472277
+          },
+          "source_upper_inverse_centimetre": {
+            "denominator": 100000,
+            "numerator": 3611806999
+          },
+          "target_id": "CURRENT-H2-X-GROUND-D0"
+        }
+      ],
+      "postseal_exact_Take_lower_display_inverse_centimetre": "36118.0656006808550200419",
+      "postseal_exact_Take_lower_inverse_centimetre": {
+        "denominator": 3747405725,
+        "numerator": 135349045807917
+      },
+      "postseal_exact_Take_upper_display_inverse_centimetre": "36118.1456007368937880352",
+      "postseal_exact_Take_upper_inverse_centimetre": {
+        "denominator": 749481145,
+        "numerator": 27069869120117
+      }
+    }
+  },
+  "source_manifest_hash": "sha256:b86f385526a9cd90bd3a104566cc4806238b4282ba1723ad5474baf65059a842",
+  "status": "model_admitted_observationally_derived_empirically_tested_and_independently_replicated",
+  "unique_survivor_count": 1
+}

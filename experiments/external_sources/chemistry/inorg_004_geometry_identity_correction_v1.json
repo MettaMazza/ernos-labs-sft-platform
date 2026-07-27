@@ -1,0 +1,23 @@
+{
+  "schema": "sft-v3-chemistry-inorg-004-source-identity-correction/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-INORG-004",
+  "family_identity_registry_sha256": "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2",
+  "family_source_inventory_sha256": "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5",
+  "correction_reason": "All four originally registered CCCBDB CAS routes returned the complete formaldehyde page rather than their declared target identities. The adverse rows remain preserved in the family inventory. This addendum corrects target identity transport only; it was sealed before the replacement geometry outcomes were opened.",
+  "original_adverse_source_ids": [
+    "NIST-CCCBDB-13463393-NEUTRAL-GEOMETRY",
+    "NIST-CCCBDB-13007926-NEUTRAL-GEOMETRY",
+    "NIST-CCCBDB-13939065-NEUTRAL-GEOMETRY",
+    "NIST-CCCBDB-14040110-NEUTRAL-GEOMETRY"
+  ],
+  "selection_rule": "Take the first available neutral CCCBDB identity at each positive central-incidence count from two through six in the official all-species list, restricted to one central atom and identical directly attached ligands; no geometry outcome, point group, coordinate, distance or angle is consulted.",
+  "target_values_or_outcomes_present": false,
+  "sources": [
+    {"source_id":"NIST-CCCBDB-ALL-SPECIES-IDENTITY-LIST","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/listallx.asp","identity":"complete species identity list","source_role":"identity-selection-authority"},
+    {"source_id":"NIST-CCCBDB-7646857-NEUTRAL-GEOMETRY","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/expgeom2x.asp?casno=7646857&charge=0","identity":"ZnCl2 neutral; positive direct-incidence count two","source_role":"complete-experimental-geometry-record"},
+    {"source_id":"NIST-CCCBDB-7784181-NEUTRAL-GEOMETRY","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/expgeom2x.asp?casno=7784181&charge=0","identity":"AlF3 neutral; positive direct-incidence count three","source_role":"complete-experimental-geometry-record"},
+    {"source_id":"NIST-CCCBDB-7783633-NEUTRAL-GEOMETRY","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/expgeom2x.asp?casno=7783633&charge=0","identity":"TiF4 neutral; positive direct-incidence count four","source_role":"complete-experimental-geometry-record"},
+    {"source_id":"NIST-CCCBDB-7784363-NEUTRAL-GEOMETRY","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/expgeom2x.asp?casno=7784363&charge=0","identity":"AsF5 neutral; positive direct-incidence count five","source_role":"complete-experimental-geometry-record"},
+    {"source_id":"NIST-CCCBDB-7783791-NEUTRAL-GEOMETRY","authority":"NIST CCCBDB","uri":"https://cccbdb.nist.gov/expgeom2x.asp?casno=7783791&charge=0","identity":"SeF6 neutral; positive direct-incidence count six","source_role":"complete-experimental-geometry-record"}
+  ]
+}

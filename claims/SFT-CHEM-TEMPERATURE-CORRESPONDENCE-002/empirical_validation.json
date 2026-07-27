@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-TEMPERATURE-CORRESPONDENCE-002",
+  "data_source_ids": [
+    "NIST-CODATA-2022-BOLTZMANN",
+    "NIM-NIST-ACOUSTIC-BOLTZMANN-2017",
+    "NIST-JOHNSON-NOISE-BOLTZMANN-2011"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:e1f72e7c3e3948c359534c1e694624ca08e81da15ec296b93370067252fa44a2",
+  "falsification_condition": "The claim fails if Chemistry requires a different temperature carrier, composition-dependent scale or route-specific correction; if adding a composition changes the common carrier; if any target value opens before all three identities seal; if the exact SI carrier lies outside either complete measured interval; if argon, gas phase, TPW reference, kinetic-temperature relation, Johnson response, uncertainty endpoint or source limitation is omitted; or if target values select the law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6e5aafa523a662e61e27efc16c7894592cfb844d5e80d994527245561ed45786",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f8da9480fd5435e0744eff143b576ef4eb67a709c478e5e63660418c88ce2475",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-TEMPERATURE-CORRESPONDENCE-002-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4eadd693afbe5c6891884c070353005b2a8dc7d25cbb9f98bd47fcd8299c53ff",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:31a7bd43330e77af1d0485447ea1d888d2bc0346f3a409f6b1a3d5ea0dbab57b",
+    "prediction_seal_hash": "sha256:c78741160dd1312fd29124629a7cf90da17f26aface550aaeddf148ad72658a7",
+    "program_hash": "sha256:164d34736a3d6681914cf07fdf053b41cb84cdfe3d46974ea2d208b00f138a31",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:778071bcd7d564ff0ce7f1988e922e5cdf2c77c1cce701cd14129f1cf7f38bf4",
+    "target_material_present": false,
+    "trace_hash": "sha256:639b9669b94433acdb9908fb5208633858ac43329a9ac6786450e83a5cef5efd"
+  },
+  "measurement_receipt_hash": "sha256:66a07d4f83a2894410537fecd50d589489dd805c58455ce4eba1dd952007af61",
+  "measurements": [
+    "Exact SI common carrier: 13806490/10^30 joule per kelvin.",
+    "Acoustic argon interval: [13806456,13806512]/10^30 joule per kelvin; exact carrier contained.",
+    "Johnson-noise interval: [13806340,13806680]/10^30 joule per kelvin; exact carrier contained.",
+    "Acoustic composition/condition: pure argon gas at the triple point of water retained.",
+    "Acoustic kinetic-temperature and electronic Johnson temperature-response relations retained.",
+    "tampered_acoustic_interval_rejected: True",
+    "complete_three_target_rows_retained: True",
+    "two_physically_distinct_routes_retained: True",
+    "all_exact_interval_relations_pass: True",
+    "prediction_contains_no_withheld_target_hash: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3c74b8d6b1e90e26e41944cfcb1b761608a14ecf3331c16b1a28749d02d9fc43",
+    "custodian_id": "SFT-EXP-CHEM-TEMPERATURE-CORRESPONDENCE-002-complete-target-custodian",
+    "experiment_registration_hash": "sha256:e1f72e7c3e3948c359534c1e694624ca08e81da15ec296b93370067252fa44a2",
+    "prediction_seal_hash": "sha256:c78741160dd1312fd29124629a7cf90da17f26aface550aaeddf148ad72658a7",
+    "registered_target_identity_hash": "sha256:778071bcd7d564ff0ce7f1988e922e5cdf2c77c1cce701cd14129f1cf7f38bf4",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:72d7250c241a3b3625738f95084fb0d6256215aef75a9c825840610b0faeac1a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:73bf9031ce11215cfdd165d86caa1308cfb54d81c41e14bd66e50b036ae72bdd"
+}

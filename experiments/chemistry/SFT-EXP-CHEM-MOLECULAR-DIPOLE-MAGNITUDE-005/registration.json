@@ -1,0 +1,551 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0 or 0.000",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false
+  },
+  "all_measured_values_absent_from_law_and_prediction": true,
+  "all_nine_rows_required": true,
+  "claim_id": "SFT-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005",
+  "custody_protocol": {
+    "all_nine_values_release_only_after_prediction_seal": true,
+    "identity_registry_path": "experiments/external_sources/chemistry/molecular_dipole_target_identities_v1.json",
+    "withheld_target_path": "experiments/external_sources/chemistry/molecular_dipole_withheld_targets_v1.json"
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "National Bureau of Standards / Journal of Chemical Physics",
+      "role": "withheld H2O, D2O and HDO component and total dipole magnitudes",
+      "source_id": "NIST-NBS-JCP-59-2254-1973"
+    },
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "withheld H2 and D2 source-absence total records",
+      "source_id": "NIST-CCCBDB-SRD101-EXPERIMENTAL-DIPOLES"
+    }
+  ],
+  "falsification_condition": "The claim fails if either registered homonuclear total is not source absence; if H2O or D2O does not retain exactly one reported component, HDO does not retain exactly two, or any post-seal exact outward component-square Junction fails to overlap its separately reported squared-total interval; if any row, identity, state, geometry, symmetry, axis, method, condition or uncertainty is erased; if a value is readable before sealing; or if a signed, irrational, fitted or continuum rule is introduced.",
+  "frozen_relation": "A molecular dipole is the retained orientation of a complete molecular charge-distinction carrier. Its molecular symmetry closes forbidden components to structural EmptyOne and retains every allowed component as an exact positive magnitude on a held axis. The orientation-free squared magnitude is exactly the Junction of those component squares. The relation seals before all nine NIST values open; the H2/D2 absence rows, water-isotopologue component organization and reported total magnitudes then test the same law without a signed proof scalar or an irrational square root.",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/molecular_dipole_target_identities_v1.json",
+    "sha256:fbeffee44a4f3231814728c4b2046811a9c90160f889077c1190ea9e0a31f023"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "H2"
+        ],
+        "destination": "h2-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "gas-phase-ground-vibrational-effective-dipole"
+        ],
+        "destination": "h2-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "homonuclear-diatomic"
+        ],
+        "destination": "h2-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "charge-distinction-carrier",
+          "exchange-identical-two-endpoint-charge-organization"
+        ],
+        "destination": "h2-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-symmetry",
+          "inversion-exchange-symmetric-homonuclear-diatomic"
+        ],
+        "destination": "h2-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-component-support",
+          "structural-EmptyOne"
+        ],
+        "destination": "h2-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-magnitude-definition",
+          "exact-Junction-of-positive-component-squares"
+        ],
+        "destination": "h2-label-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-custody",
+          "all-nine-values-open-after-relation-seal"
+        ],
+        "destination": "h2-label-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "structural-empty-One"
+        ],
+        "destination": "h2-axes-empty",
+        "opcode": "empty_one"
+      },
+      {
+        "arguments": [
+          "premise",
+          "h2-label-1",
+          "h2-label-2",
+          "h2-label-3",
+          "h2-label-4",
+          "h2-label-5",
+          "h2-label-6",
+          "h2-label-7",
+          "h2-label-8",
+          "h2-axes-empty"
+        ],
+        "destination": "h2-relation",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "D2"
+        ],
+        "destination": "d2-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "gas-phase-ground-vibrational-effective-dipole"
+        ],
+        "destination": "d2-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "homonuclear-diatomic"
+        ],
+        "destination": "d2-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "charge-distinction-carrier",
+          "exchange-identical-two-endpoint-charge-organization"
+        ],
+        "destination": "d2-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-symmetry",
+          "inversion-exchange-symmetric-homonuclear-diatomic"
+        ],
+        "destination": "d2-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-component-support",
+          "structural-EmptyOne"
+        ],
+        "destination": "d2-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-magnitude-definition",
+          "exact-Junction-of-positive-component-squares"
+        ],
+        "destination": "d2-label-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-custody",
+          "all-nine-values-open-after-relation-seal"
+        ],
+        "destination": "d2-label-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "structural-empty-One"
+        ],
+        "destination": "d2-axes-empty",
+        "opcode": "empty_one"
+      },
+      {
+        "arguments": [
+          "premise",
+          "d2-label-1",
+          "d2-label-2",
+          "d2-label-3",
+          "d2-label-4",
+          "d2-label-5",
+          "d2-label-6",
+          "d2-label-7",
+          "d2-label-8",
+          "d2-axes-empty"
+        ],
+        "destination": "d2-relation",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "H2O"
+        ],
+        "destination": "h2o-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "gas-phase-ground-vibrational-effective-dipole"
+        ],
+        "destination": "h2o-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "bent-water-triatomic"
+        ],
+        "destination": "h2o-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "charge-distinction-carrier",
+          "one-oxygen-centred-two-endpoint-electronic-charge-organization"
+        ],
+        "destination": "h2o-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-symmetry",
+          "exchange-symmetric-equal-endpoint-isotopologue"
+        ],
+        "destination": "h2o-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-component-support",
+          "one-positive-component"
+        ],
+        "destination": "h2o-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-magnitude-definition",
+          "exact-Junction-of-positive-component-squares"
+        ],
+        "destination": "h2o-label-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-custody",
+          "all-nine-values-open-after-relation-seal"
+        ],
+        "destination": "h2o-label-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-axis",
+          "principal-b"
+        ],
+        "destination": "h2o-axis-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "h2o-label-1",
+          "h2o-label-2",
+          "h2o-label-3",
+          "h2o-label-4",
+          "h2o-label-5",
+          "h2o-label-6",
+          "h2o-label-7",
+          "h2o-label-8",
+          "h2o-axis-1"
+        ],
+        "destination": "h2o-relation",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "D2O"
+        ],
+        "destination": "d2o-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "gas-phase-ground-vibrational-effective-dipole"
+        ],
+        "destination": "d2o-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "bent-water-triatomic"
+        ],
+        "destination": "d2o-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "charge-distinction-carrier",
+          "one-oxygen-centred-two-endpoint-electronic-charge-organization"
+        ],
+        "destination": "d2o-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-symmetry",
+          "exchange-symmetric-equal-endpoint-isotopologue"
+        ],
+        "destination": "d2o-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-component-support",
+          "one-positive-component"
+        ],
+        "destination": "d2o-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-magnitude-definition",
+          "exact-Junction-of-positive-component-squares"
+        ],
+        "destination": "d2o-label-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-custody",
+          "all-nine-values-open-after-relation-seal"
+        ],
+        "destination": "d2o-label-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-axis",
+          "principal-b"
+        ],
+        "destination": "d2o-axis-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "d2o-label-1",
+          "d2o-label-2",
+          "d2o-label-3",
+          "d2o-label-4",
+          "d2o-label-5",
+          "d2o-label-6",
+          "d2o-label-7",
+          "d2o-label-8",
+          "d2o-axis-1"
+        ],
+        "destination": "d2o-relation",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "molecular-species",
+          "HDO"
+        ],
+        "destination": "hdo-label-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-state",
+          "gas-phase-ground-vibrational-effective-dipole"
+        ],
+        "destination": "hdo-label-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-geometry",
+          "bent-water-triatomic"
+        ],
+        "destination": "hdo-label-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "charge-distinction-carrier",
+          "one-oxygen-centred-two-endpoint-electronic-charge-organization"
+        ],
+        "destination": "hdo-label-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-symmetry",
+          "isotope-distinguished-principal-axis-carrier"
+        ],
+        "destination": "hdo-label-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-component-support",
+          "multiple-orthogonal-positive-components"
+        ],
+        "destination": "hdo-label-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-magnitude-definition",
+          "exact-Junction-of-positive-component-squares"
+        ],
+        "destination": "hdo-label-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-custody",
+          "all-nine-values-open-after-relation-seal"
+        ],
+        "destination": "hdo-label-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-axis",
+          "principal-a"
+        ],
+        "destination": "hdo-axis-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "dipole-axis",
+          "principal-b"
+        ],
+        "destination": "hdo-axis-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "hdo-label-1",
+          "hdo-label-2",
+          "hdo-label-3",
+          "hdo-label-4",
+          "hdo-label-5",
+          "hdo-label-6",
+          "hdo-label-7",
+          "hdo-label-8",
+          "hdo-axis-1",
+          "hdo-axis-2"
+        ],
+        "destination": "hdo-relation",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "h2-label-1",
+          "h2-relation",
+          "d2-label-1",
+          "d2-relation",
+          "h2o-label-1",
+          "h2o-relation",
+          "d2o-label-1",
+          "d2o-relation",
+          "hdo-label-1",
+          "hdo-relation"
+        ],
+        "destination": "molecular-dipole-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "molecular-dipole-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005-value-free-relation-prediction",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "measured_values_present": false,
+    "program_hash": "sha256:1236de77abaaec74caf5d626bd5d92b5d7a2b3caca4e83f0cb33401a4409f450",
+    "target_content_inaccessible": true
+  },
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "identity_registry": "sha256:fbeffee44a4f3231814728c4b2046811a9c90160f889077c1190ea9e0a31f023",
+    "nist_cccbdb_html": "sha256:6320aca1d0c0e4fd12509dedaa985d2252813011e69d090a127b49f12414b49d",
+    "nist_water_pdf": "sha256:e3df9979865e12887c564327a3029f11c03caeb8cf6d9c90b499972a954ebb84",
+    "normalized_primary_records": "sha256:6ad1fa4ff8c570cb0d8f84df2def3670f630924d9fdac8e3a8011c2ec3578dc5",
+    "withheld_measurements": "sha256:c3de218ecc55ed614835ebed25ece8ea3e2d9c2155e12c03c5e91889b6c17e73"
+  },
+  "status": "measured",
+  "target_ids": [
+    "NIST-CCCBDB-H2-TOTAL",
+    "NIST-CCCBDB-D2-TOTAL",
+    "NIST-1973-H2O-B-COMPONENT",
+    "NIST-1973-H2O-TOTAL",
+    "NIST-1973-D2O-B-COMPONENT",
+    "NIST-1973-D2O-TOTAL",
+    "NIST-1973-HDO-A-COMPONENT",
+    "NIST-1973-HDO-B-COMPONENT",
+    "NIST-1973-HDO-TOTAL"
+  ],
+  "withheld_measurement_registry": [
+    "experiments/external_sources/chemistry/molecular_dipole_withheld_targets_v1.json",
+    "sha256:c3de218ecc55ed614835ebed25ece8ea3e2d9c2155e12c03c5e91889b6c17e73"
+  ]
+}

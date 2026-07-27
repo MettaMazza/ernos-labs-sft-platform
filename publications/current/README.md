@@ -5,59 +5,42 @@ release references. See
 [`ARCHIVE_AND_SUCCESSOR_POLICY.md`](../ARCHIVE_AND_SUCCESSOR_POLICY.md); the
 directory name does not assert current scientific completeness.
 
-## Completion correction
+## Current boundary and published roadmap successors
 
-The eight papers below are real published, citable and immutable archival
-artifacts. Their claim packages and receipts remain preserved. They are not
-currently designated complete V3 branch papers because the later full
-V1/V2-to-V3 audit found that the publication gate checked each paper only
-against its self-declared frozen inventory, not against every registered prior
-result belonging to that branch.
+The papers below are real published, citable archival records.
+Their claim packages and receipts remain immutable. Later ownership audits and
+same-strength reconstructions repaired the earlier completion boundary through
+Physics; the Chemistry foundation is now secure and 90 further Chemistry laws
+have also been admitted through ORG-011. Materials retains its admitted
+84-law foundational inventory while its complete-field programme remains open.
 
-The binding finding and repair are documented in
-[`PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md`](../../audits/PUBLISHED_BRANCH_COMPLETENESS_AUDIT_2026-07-24.md).
-Successor publication is blocked until categorical ownership and same-strength
-reconstruction are complete. Foundation, Mathematics and Information Science
-have now passed that stronger route; the other five listed branches remain blocked.
+The project now uses one rule for every branch: first publish a complete
+foundational reconstruction, then extend the same paper through sequential
+versions until the dated full-field census is current-evidence complete. Even a
+current-knowledge-complete edition remains open to lawful discoveries,
+corrections, falsification and stronger evidence.
 
-The current Foundation account is the version 1.1 patch of
-[`Foundation Branch Paper 001`](../successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_1.md),
-with its [rendered PDF](../../output/pdf/from-nothing-to-fold-foundation-branch-paper-001-v1.1.pdf)
-and complete evidence bundle at DOI
-[`10.5281/zenodo.21535636`](https://doi.org/10.5281/zenodo.21535636).
-Version 1.0 below remains preserved in the same Zenodo version chain.
-
-The current Mathematics account is the version 1.2 update of
-[`Mathematics Branch Paper 001`](mathematics/FROM_FOLD_TO_MATHEMATICS.md),
-with its [rendered PDF](../../output/pdf/from-fold-to-mathematics-branch-paper-001.pdf),
-71/71 prior obligations closed, 27 registered claim records, the complete
-Smithian Fold Scientific Calculator lineage and DOI
-[`10.5281/zenodo.21558279`](https://doi.org/10.5281/zenodo.21558279).
-Versions 1.0 and 1.1 remain preserved in the same Zenodo version chain; the
-branch is current-evidence complete and open to lawful extension.
-
-The current Information Science account is the version 1.1 patch of
-[`Information Science Branch Paper 001`](information_science/FROM_DISTINCTION_TO_INFORMATION.md),
-with its [rendered PDF](../../output/pdf/from-distinction-to-information-branch-paper-001.pdf),
-77/77 prior obligations closed, 12 admitted claims and DOI
-[`10.5281/zenodo.21536202`](https://doi.org/10.5281/zenodo.21536202).
-Version 1.0 remains preserved in the same Zenodo version chain.
-
-This correction does not alter any paper, DOI, hash, engine receipt or failed
-experimental record. It corrects the claim of current completeness.
+Same-paper roadmap successors are published for Methods Paper 00, Foundation,
+Mathematics, Information Science, Classical Computation, Reversible and Quantum
+Computation, Physics and Chemistry. They preserve all scientific results and
+add each branch's exact foundation/full-field plan. Materials was explicitly
+excluded from this coordinated update; its existing archival version remains
+unchanged. The successor set is recorded in
+[`branch_roadmap_successor_versions.json`](../../publication/branch_roadmap_successor_versions.json).
 
 ## Published archival papers
 
 | Branch | Paper | DOI | Current status |
 |---|---|---|---|
-| Foundation | [From Nothing to Fold](foundation/FROM_NOTHING_TO_FOLD.md) | [10.5281/zenodo.21515629](https://doi.org/10.5281/zenodo.21515629) | Version 1.0 preserved; [Paper 001 v1.1 patch](https://doi.org/10.5281/zenodo.21535636) is current and closed |
-| Mathematics | [From Fold to Mathematics](mathematics/FROM_FOLD_TO_MATHEMATICS.md) | [10.5281/zenodo.21558279](https://doi.org/10.5281/zenodo.21558279) | Versions 1.0 and 1.1 preserved; Paper 001 v1.2 is current-evidence complete and extension-open |
-| Information Science | [From Distinction to Information](information_science/FROM_DISTINCTION_TO_INFORMATION.md) | [10.5281/zenodo.21536202](https://doi.org/10.5281/zenodo.21536202) | Version 1.0 preserved; Paper 001 v1.1 is current and closed |
-| Classical Computation | [After Turing: The Fold Machine](computation/AFTER_TURING_THE_FOLD_MACHINE.md) | [10.5281/zenodo.21518311](https://doi.org/10.5281/zenodo.21518311) | Published v1; successor blocked |
-| Quantum Computation | [The Quantum Fold Machine](quantum_computation/THE_QUANTUM_FOLD_MACHINE.md) | [10.5281/zenodo.21518313](https://doi.org/10.5281/zenodo.21518313) | Published v1; successor blocked |
-| Physics | [From Fold to Physics](physics/FROM_FOLD_TO_PHYSICS.md) | [10.5281/zenodo.21520881](https://doi.org/10.5281/zenodo.21520881) | Published v1; superseded for current completeness; paper covers 140 of 160 live Physics claims and the full value audit is open |
-| Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21531455](https://doi.org/10.5281/zenodo.21531455) | Published v1; successor must correct Physics dependency placement |
-| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21532482](https://doi.org/10.5281/zenodo.21532482) | Published v1; successor blocked by owner/same-strength audit |
+| Methods 00 | [There Is No Nothing](../successors/methods/THERE_IS_NO_NOTHING_METHODS_PAPER_001_V0_3.md) | [10.5281/zenodo.21627646](https://doi.org/10.5281/zenodo.21627646) | Version 0.3 publishes the shared two-layer branch roadmap |
+| Foundation | [From Nothing to Fold](../successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_3.md) | [10.5281/zenodo.21627656](https://doi.org/10.5281/zenodo.21627656) | 16-law foundation current-evidence complete; v1.3 roadmap published; extension-open |
+| Mathematics | [From Fold to Mathematics](../successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_4.md) | [10.5281/zenodo.21627708](https://doi.org/10.5281/zenodo.21627708) | 22-law kernel plus calculator lineage admitted; v1.4 full-field roadmap published |
+| Information Science | [From Distinction to Information](../successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_3.md) | [10.5281/zenodo.21627717](https://doi.org/10.5281/zenodo.21627717) | 12-law kernel and 77 prior obligations complete; v1.3 roadmap published |
+| Classical Computation | [After Turing: The Fold Machine](../successors/computation/AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_3.md) | [10.5281/zenodo.21627721](https://doi.org/10.5281/zenodo.21627721) | 116 laws and 134 prior obligations admitted; v1.3 roadmap published |
+| Quantum Computation | [The Quantum Fold Machine](../successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_3.md) | [10.5281/zenodo.21627748](https://doi.org/10.5281/zenodo.21627748) | 22 laws and 29 prior obligations admitted; v1.3 roadmap published |
+| Physics | [From Fold to Physics](../successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_2.md) | [10.5281/zenodo.21627765](https://doi.org/10.5281/zenodo.21627765) | 349 laws and 488 prior atoms current-evidence complete; v1.2 roadmap published; extension-open |
+| Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21627782](https://doi.org/10.5281/zenodo.21627782) | Foundation 86/86 secure; 90 further laws admitted; v1.2 published; 97 continuation operations remain |
+| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21532482](https://doi.org/10.5281/zenodo.21532482) | Existing v1.0 archival record unchanged; roadmap successor intentionally not published |
 
 ## Machine-readable current gate
 

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ELECTROPHILIC-SUBSTITUTION-FAMILY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:99f596213d121bb8742f42ada55e184ffaf133177e25320786f17090b6f40ede"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a1856309d25e527286f50640a1c4df186611acafa974c242d69116d804b51d62"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:73fea1dd0a577468d6192db9705cbd9e4af4b14e7c949267ac45273765d0513c"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:f21fbfa77ea89505835834b2f6db7293fdb1699771609146c61b3cd108a5e30a"
+    }
+  ]
+}

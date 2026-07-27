@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_temperature_Gibbs_logK_direction_and_target_hash_values_absent_from_prediction": true,
+  "claim_id": "SFT-CHEM-FREE-ENERGY-EQUIVALENT-DIRECTION-007",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-FREE-ENERGY-EQUIVALENT-DIRECTION-007",
+  "external_sources": [
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "complete NO2 gas NIST-JANAF table",
+      "source_id": "NIST-JANAF-N-007-NO2-GAS"
+    },
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "complete N2O4 gas NIST-JANAF table",
+      "source_id": "NIST-JANAF-N-032-N2O4-GAS"
+    }
+  ],
+  "falsification_condition": "The claim fails if direction requires a fitted scalar trade-off, imported free-energy equation, sign-valued SFT proof or arbitrary tie-break; if exact equal accounts do not yield structural equilibrium; if common extension changes direction; if any target opens before all 64 identities seal; if any common JANAF row or species column is omitted; if Gibbs and log-K records disagree in direction; if all five reverse, all fifty-nine forward or the 300-to-350 K crossing bracket are not retained; or if targets select the law.",
+  "frozen_relation": "complete-forward-and-reverse-path-accounts__exact-positive-retained-energy-requirements__exact-positive-closed-distinction-counts__strict-exact-product-support-order__held-forward-reverse-or-EmptyOne-equilibrium__complete-value-free-reaction-state-identity-seal__complete-64-row-two-direction-crossing-vector__depth-independent-common-account-successor",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/reaction_direction_target_identities_v1.json",
+    "sha256:7d877d03ccd120c8ccb9019429427d18f230cdd2cc5b7c9f4abc8e460c6aa730"
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "program_hash": "sha256:a169101b138157f38f4565e9e6272e449a2fb6118448a3e825de43d59fc3f539",
+    "target_content_inaccessible": true,
+    "temperature_Gibbs_logK_or_direction_values_present": false
+  },
+  "prefetch_capture_spec": [
+    "experiments/external_sources/chemistry/reaction_direction_capture_spec_v1.json",
+    "sha256:01fe95d11ecf2c2d509dca0260f1a064d6c6ca4bfd7be6e38657b1244b4a86ec"
+  ],
+  "primary_source_record": [
+    "experiments/external_sources/chemistry/snapshots/thermo-007-reaction-direction-v1/reaction-direction-primary-records-v1.json",
+    "sha256:3666e32ec5237bac12e5a84265da708301e93b910966f0a11c8f2439eea3edf7"
+  ],
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "status": "complete_64_row_two_direction_crossing_vector_opened_postseal",
+  "withheld_target_registry": [
+    "experiments/external_sources/chemistry/reaction_direction_withheld_targets_v1.json",
+    "sha256:66c0c9a8e35284531eeddc68c7874eda40788a11eddc5075ce27dff375a609bd"
+  ]
+}

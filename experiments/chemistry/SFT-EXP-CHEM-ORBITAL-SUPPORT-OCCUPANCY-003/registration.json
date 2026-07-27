@@ -1,0 +1,2371 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Detached carrier or incomplete electron support rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Changed NIST bytes or registry identity rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "Missing or duplicate candidate/state row rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Continuum coordinate, conventional target access or free species rule rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNKNOWN-SUPPORT",
+      "expected_rejection": "An ungenerated support symbol rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "TRIPLE-OCCUPANCY",
+      "expected_rejection": "A third electron in one spatial support rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "WRONG-MULTIPLICITY",
+      "expected_rejection": "A state width with the wrong electron-count parity rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "OMITTED-ROW",
+      "expected_rejection": "A 359-row census rejects.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003-NIST-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:6f3773b443f9376bc4eee04c99cc35f49515684c8e418df46106ca846ac7095d",
+    "withheld_target_registry_path": "experiments/external_sources/chemistry/orbital_support_withheld_targets_v1.json"
+  },
+  "development_observations": [
+    {
+      "content_absent_from_survivor_selection": true,
+      "role": "question-and-comparison-domain-only",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "comparison_only_symbols": [
+      "Sigma/sigma",
+      "Pi/pi",
+      "Delta/delta",
+      "Phi/phi",
+      "NIST state multiplicity and configuration inscriptions"
+    ],
+    "native_carriers": [
+      "positive radial recurrence",
+      "structural empty-One or positive axis recurrence",
+      "two held joining phases",
+      "held exchange/reflection labels",
+      "single or complementary-pair occupancy"
+    ],
+    "proof_value_policy": "positive-counts-held-labels-and-structural-empty-One-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All 360 rows and all adverse controls pass exactly.",
+    "comparison_implementation_hash": "sha256:3b44abcf46c7485b7da2f704382a19ed2ca1f3398b936b0d946b061eb6ca4a57",
+    "evaluator_id": "SFT-EXP-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003-post-seal-NIST-evaluator",
+    "falsification_condition": "The claim fails if a joined molecular support lacks one of the two phase fibres; if a required axis class cannot be represented by structural empty One or positive recurrence; if a spatial cell admits a third electron or same-spin pair; if complete occupied support loses or duplicates an electron occurrence; if any of the 360 registered NIST state rows or 362 term assignments leaves the generated axis-support grammar; if any of the 87 explicit spectroscopic configuration assignments leaves the occupancy grammar; if a measured state multiplicity violates the ELEC-002 electron-count parity law; or if any source, row or adverse control is altered.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Evaluate all 360 state rows, 362 term assignments and 87 configuration assignments without selection.",
+        "metric_id": "complete-spectroscopic-support-census"
+      },
+      {
+        "all_rows": true,
+        "definition": "Reconstruct every explicit/implicit occupancy and check every measured state multiplicity against the admitted ELEC-002 species parity.",
+        "metric_id": "occupancy-and-multiplicity-census"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003",
+  "external_measurement_sources": [
+    {
+      "configuration_assignment_count": 87,
+      "custody_role": "post-seal_spectroscopic_support_target",
+      "database": "NIST Chemistry WebBook SRD 69",
+      "doi": "10.18434/T4D303",
+      "last_data_update": "March 2025",
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_uri": "https://webbook.nist.gov/chemistry/",
+      "species_count": 22,
+      "state_row_count": 360,
+      "term_assignment_count": 362
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of carrier, joining, axis organization, held symmetry, occupancy, spin, completeness and extension forms. Decide all 256 forms only by admitted molecular composition, exact recurrence, two-fibre, spin, indistinguishability, exclusion, electron-count and information-retention laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:da2c846ed3c59c2b13c953b61f3fa1e16a4bf71f3202f5d2600b7dbffbbdb735",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:44e12eb55ccd83c19ec4425014346e94b0e77be0822275aa9435a9ce6a76d40c",
+      "sha256:1f3cdec0862f2e62503084529964348aa413da5a2c748193b765b13c22eea5bc",
+      "sha256:8f2910acd375fb6ac0f7d289bb6384f2cae8b38086f1c9fe69cb7c1fa43c3c24"
+    ],
+    "exact_domain": "Every positive finite molecular carrier; every positive radial recurrence; the structural axis-invariant boundary and every positive axis recurrence; both held joining phases; applicable held exchange/reflection labels; and every positive finite electron support. Closure is depth-independent because each newly generated cell and occurrence repeats the same coordinate-identity, occupancy, complementary-spin and complete-partition checks.",
+    "relation_hash": "sha256:08d92c9768448b21a9ec5e16e30368b3bbe149ae73b5eb8ff2d161dc480d3861",
+    "statement": "molecule-bound-support-cell__two-held-joining-phases__empty-One-or-positive-axis-recurrence__held-exchange-and-reflection-labels__empty-One-single-or-complementary-pair__complementary-spin-double-occupation__complete-electron-support-partition__no-extra-rule",
+    "target_did_not_select_survivor": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:3b19e243f29ef0d6dcc7893c4dce04fa90643c3492317631cbe112cb6cfedc35",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:9972d91da982bdae04b8a19e6eeb2c6d22e145b5597e0ca6ba613bae0150b54b",
+      "input_id": "electron-count-and-species-parity",
+      "path": "experiments/external_sources/chemistry/electron_spin_inputs_v1.json",
+      "state_assignment_content_absent": true
+    },
+    {
+      "content_hash": "sha256:9e3a77634e9871ecd6716cf40face2bfad6a39b3b7720afbb33468a9e27b1fdc",
+      "input_id": "target-identities-only",
+      "path": "experiments/external_sources/chemistry/orbital_support_target_identities_v1.json",
+      "state_assignment_content_absent": true
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:8a21d6e2a9f7fc23d4d26d0758d5295f775f7da59433fd0bf814569ba906dcce",
+    "program_id": "SFT-EXP-CHEM-ORBITAL-SUPPORT-OCCUPANCY-003-support-law-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-all-360-source-and-all-adverse-rows",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:12f6a59f2dfbee2539b93693638cac08df3c65efbe09b0c19af574c1490e0e28",
+    "experiments/external_sources/chemistry/electron_spin_inputs_v1.json": "sha256:9972d91da982bdae04b8a19e6eeb2c6d22e145b5597e0ca6ba613bae0150b54b",
+    "experiments/external_sources/chemistry/orbital_support_target_identities_v1.json": "sha256:9e3a77634e9871ecd6716cf40face2bfad6a39b3b7720afbb33468a9e27b1fdc",
+    "experiments/external_sources/chemistry/orbital_support_withheld_targets_v1.json": "sha256:6f3773b443f9376bc4eee04c99cc35f49515684c8e418df46106ca846ac7095d",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10035106.html": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10097286.html": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10102439.html": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C11062774.html": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C12184906.html": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C12185078.html": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C1333740.html": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13774920.html": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13827322.html": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13966046.html": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C14452938.html": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C14967783.html": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C3315375.html": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C3352576.html": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C630080.html": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7553562.html": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7647010.html": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7664393.html": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7727379.html": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782414.html": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782447.html": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782505.html": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any protocol violation; otherwise stop only after all 360 rows and adverse controls are recorded.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-031"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-032"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-033"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-034"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-035"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-036"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-037"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-038"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-039"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-040"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-041"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-042"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-043"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-044"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-045"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C1333740-state-046"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-031"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-032"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-033"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-034"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-035"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-036"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-037"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-038"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-039"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7727379-state-040"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782447-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782414-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-031"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C630080-state-032"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10102439-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3352576-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13774920-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C3315375-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782505-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782505-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782505-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782505-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7782505-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10097286-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13827322-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7664393-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7664393-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7664393-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7664393-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7664393-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7647010-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C10035106-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C7553562-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12184906-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12184906-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12184906-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12184906-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C13966046-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C12185078-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14452938-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C11062774-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C11062774-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C11062774-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "target_id": "C14967783-state-007"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "sft-v3-activation-barrier-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-KIN-004",
+  "claim_id": "SFT-CHEM-ACTIVATION-BARRIER-VALUE-RELATION-004",
+  "capture_rule": "Capture the complete NIST CCCBDB Experimental Barriers to Internal Rotation index and every experimental barrier record reachable from every species identity listed on that index. Preserve every species, formula, retained internal-rotation path/state identity, reported barrier magnitude, unit, uncertainty or structural absence, measurement method, reference, note, duplicate determination and unfavorable or unresolved record in authoritative source order. Do not select by magnitude, agreement, chemical family, method or completeness and do not fit, average, convert through a floating approximation or infer a missing barrier.",
+  "source_selection_boundary": "The NIST Standard Reference Database 101 experimental-barrier collection, its complete live index and the exhaustive all-listed-species/all-records traversal rule are fixed before any barrier value page opens, before executable-law registration, before candidate enumeration and before prediction-program construction. The source is selected structurally because it is an authoritative public experimental barrier collection with retained species and internal-rotation identities. No observed barrier value, trend, fit or desired agreement selects the source, species, record or Fold law.",
+  "sources": [
+    {
+      "source_id": "NIST-SRD-101-CCCBDB-EXPERIMENTAL-INTERNAL-ROTATION-BARRIERS-COMPLETE",
+      "measurement_body": "National Institute of Standards and Technology, Standard Reference Database 101, Computational Chemistry Comparison and Benchmark Database",
+      "collection_title": "Experimental Barriers to Internal Rotation",
+      "index_url": "https://cccbdb.nist.gov/exprotbarx.asp",
+      "database_release_identity": "CCCBDB Release 22 (May 2022) as declared by the public collection page",
+      "capture_scope": "complete index and every experimental internal-rotation barrier record linked for every listed species"
+    }
+  ],
+  "all_species_path_state_barrier_unit_uncertainty_method_reference_note_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_average_or_correction_permitted": false,
+  "transition_state_saddle_continuum_arrhenius_prefactor_fitted_activation_or_absolute_energy_origin_permitted_in_law": false,
+  "external_zero_glyph_if_encountered_must_remain_source_provenance_or_translate_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27"
+}

@@ -1,0 +1,25 @@
+"""Registered ELEC-005 state-equivalence and symmetry specification."""
+from __future__ import annotations
+import json
+from pathlib import Path
+from sft.chemistry.generated_law import ChemistryTargetReference,EmpiricalChemistrySpec
+from sft.chemistry.state_symmetry_law_v1 import DEPENDENCIES,DIMENSIONS,EXACT_RESULT,OPERATIONAL_WITNESSES
+from sft.engine.source import hash_file
+ROOT=Path(__file__).resolve().parents[2]
+IDENTITY_PATH="experiments/external_sources/chemistry/state_symmetry_target_identities_v1.json";IDENTITY_HASH="sha256:c35f4951ab2576d8b369ac0edd16e562a1b29314b7b1da65bd376fea02042f0f"
+TARGET_PATH="experiments/external_sources/chemistry/state_symmetry_withheld_targets_v1.json";TARGET_HASH="sha256:b4241adb2b4648d40f984329699714c829daa46a83204c1928eae302de9df93f"
+SOURCE_ID="NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025"
+for p,h in ((IDENTITY_PATH,IDENTITY_HASH),(TARGET_PATH,TARGET_HASH)):
+ if hash_file(ROOT/p)!=h:raise ValueError("ELEC-005 registered source changed: "+p)
+identities=json.loads((ROOT/IDENTITY_PATH).read_text())
+if identities.get("schema")!="sft-v3-state-symmetry-identities/1" or len(identities.get("rows",()))!=362:raise ValueError("ELEC-005 identity registry is incomplete")
+TARGET_REFERENCES=tuple(ChemistryTargetReference(str(r["target_id"]),SOURCE_ID,str(r["source_url"])+f" :: state {r['state_row_ordinal']} term {r['term_assignment_ordinal']}",str(r["snapshot_path"]),str(r["snapshot_hash"])) for r in identities["rows"])
+STATE_SYMMETRY_SPEC=EmpiricalChemistrySpec(
+ claim_id="SFT-CHEM-STATE-SYMMETRY-DEGENERACY-005",title="Finite electronic-state equivalence, degeneracy and retained symmetry",statement="At one molecular carrier, electronic states are equivalent exactly when their complete positive-spin, axis-support, inversion, reflection and component signatures agree. Axis-invariant support retains one orientation; every positive axis recurrence retains the complementary orientation pair; the finite equivalence class contains exactly the positive spin multiplicity times the positive orientation count, with every applicable symmetry distinction held and every absent distinction represented only by structural EmptyOne.",dependencies=DEPENDENCIES,
+ generation_rule="Generate the literal product of carrier, identity, spin, axis, orientation, symmetry, class and extension forms. Decide all 256 forms solely by admitted exact equivalence, held-label, spin, exclusion, support and finite-order laws.",grammar_boundary="Every positive finite molecular electronic-state support; every positive spin multiplicity; structural axis invariance and every positive axis recurrence; both held inversion/reflection fibres where applicable; and structural EmptyOne wherever a symmetry coordinate is absent. Closure is depth-independent because each added component, multiplicity successor or axis recurrence repeats the same exact signature and complete-component checks.",dimensions=DIMENSIONS,exact_result=EXACT_RESULT,
+ induction_base="One molecular carrier, spin width One and axis-invariant EmptyOne support force one retained state component; every absent optional symmetry coordinate remains structural EmptyOne.",induction_step="Advancing positive spin width adds one component per retained axis orientation; advancing from axis invariance to a positive recurrence forces the complementary orientation pair; adjoining a held symmetry label refines rather than erases the equivalence class.",
+ exclusions=("no numerical zero; glyph 0 is source/interface notation for absence only","no negative, irrational, imaginary, floating or continuum proof value","no imported point group, character table or conventional degeneracy formula in candidate generation","no measured NIST term or symmetry label before prediction seal","no asserted free degeneracy count or species exception","no omitted or normalized-away term assignment","source component glyph 0 normalizes only to structural EmptyOne"),operational_witnesses=OPERATIONAL_WITNESSES,experiment_id="SFT-EXP-CHEM-STATE-SYMMETRY-DEGENERACY-005",expected_observation_label="complete-finite-state-symmetry-equivalence",
+ target_rows=TARGET_REFERENCES,observation_registry_path=TARGET_PATH,
+ falsification_condition="The claim fails if equivalence merges different carriers or retained symmetry signatures; if axis-invariant support has more than one orientation; if a positive axis recurrence lacks the complementary pair; if the component census differs from positive spin multiplicity times positive orientation count; if any source absence glyph is treated as a number rather than EmptyOne; if any of 362 NIST term assignments, 170 inversion labels, 167 reflection labels, 32 positive axis-component labels, 330 absent axis-component coordinates, 11 source component-absence glyphs or their exact state inscriptions is omitted or mismapped; or if a changed label, free degeneracy, incomplete class, omitted row or tampered source is accepted.")
+STATE_SYMMETRY_SPEC.validate()
+__all__=("IDENTITY_HASH","IDENTITY_PATH","SOURCE_ID","STATE_SYMMETRY_SPEC","TARGET_HASH","TARGET_PATH","TARGET_REFERENCES")

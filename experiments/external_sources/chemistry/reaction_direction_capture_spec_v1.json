@@ -1,0 +1,35 @@
+{
+  "all_source_values_absent": true,
+  "capture_rule": "Retain every finite positive-temperature row present in both official NIST-JANAF gas tables for which both formation-Gibbs and log-formation-equilibrium columns are populated; preserve source order, all returned columns, all orientations and every crossing row.",
+  "columns_to_preserve": [
+    "temperature-kelvin",
+    "heat-capacity-joule-per-mole-kelvin",
+    "entropy-joule-per-mole-kelvin",
+    "gibbs-function-joule-per-mole-kelvin",
+    "enthalpy-increment-kilojoule-per-mole",
+    "formation-enthalpy-kilojoule-per-mole",
+    "formation-gibbs-kilojoule-per-mole",
+    "log10-formation-equilibrium-constant"
+  ],
+  "identity_rule": "Each target identity is the ordered common-row ordinal plus the held reaction, state, standard-pressure and paired-source identities; no temperature or thermochemical value enters an identity row.",
+  "no_selected_temperature_or_direction": true,
+  "reaction_identity": "N2O4(g) -> 2 NO2(g)",
+  "schema": "sft-v3-reaction-direction-prefetch-capture-spec/1",
+  "source_tables": [
+    {
+      "formula": "NO2",
+      "phase": "gas",
+      "source_id": "NIST-JANAF-N-007-NO2-GAS",
+      "url": "https://janaf.nist.gov/tables/N-007.html"
+    },
+    {
+      "formula": "N2O4",
+      "phase": "gas",
+      "source_id": "NIST-JANAF-N-032-N2O4-GAS",
+      "url": "https://janaf.nist.gov/tables/N-032.html"
+    }
+  ],
+  "standard_state_pressure": "0.1 MPa",
+  "stoichiometric_identity": "one N2O4 gas carrier to two NO2 gas carriers",
+  "target_values_or_hashes_present": false
+}

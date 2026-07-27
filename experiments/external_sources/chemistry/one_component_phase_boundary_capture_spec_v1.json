@@ -1,0 +1,30 @@
+{
+  "all_compound_temperature_pressure_phase_uncertainty_and_target_hash_values_absent": true,
+  "capture_rule": "From the already byte-sealed complete NIST TRC ThermoML record for DOI 10.1016/j.fluid.2018.12.005, retain every directly reported experimental one-component coexistence-pressure dataset and every row in source order, with complete compound, phase, temperature, pressure, uncertainty, method and provenance records. Preserve the entire 21-dataset 176-point parent source and do not select a compound, temperature interval, pressure interval, favorable row or curve segment. Do not use any equation-of-state, vapor-pressure equation, Clausius-Clapeyron relation, interpolation, regression, correlation or model-calculated value as a measurement or derivation input.",
+  "derivation_input_boundary": {
+    "allowed_before_target_release": [
+      "admitted foundational, exact-arithmetic and finite-support claims",
+      "admitted composition, equilibrium, exchange-support, phase-rule and THERMO-001 through THERMO-011 claims",
+      "complete parent source identity and byte hash",
+      "source dataset and row ordinals only"
+    ],
+    "forbidden_before_target_release": [
+      "compound identity",
+      "temperature or pressure inscription",
+      "phase identity or uncertainty",
+      "coexistence-curve outcome or target hash",
+      "Clausius-Clapeyron or other differential equation",
+      "equation of state, interpolation, fit or continuum curve",
+      "selected compound, dataset, row, interval or target-derived correction"
+    ]
+  },
+  "parent_source": {
+    "doi": "10.1016/j.fluid.2018.12.005",
+    "path": "experiments/external_sources/chemistry/snapshots/thermo-010-real-gas-equilibrium-v1/nist-trc-thermoml-fpe-2019-485-145-152.json",
+    "sha256": "sha256:fdaaa9d89f1a324610ae9c5d77b4b129207b6a291e586c3bc3c42c17043724dc",
+    "source_id": "NIST-TRC-THERMOML-FPE-2019-485-145-152"
+  },
+  "provenance": "observational_derivation_reusing_prior_byte_sealed_authority",
+  "schema": "sft-v3-one-component-phase-boundary-prefetch-capture-spec/1",
+  "target_values_or_hashes_present": false
+}

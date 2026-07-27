@@ -52,6 +52,31 @@ same behavior outside `sft/engine/` does not make a bypass permissible. Every
 scientific submission must satisfy the published protocol through the frozen
 engine without target leakage, premarked survivors or outcome-seeking changes.
 
+## Frozen verification authority
+
+Shared verifiers, publication gates, discipline-census gates, schemas and
+closure maps are evidence-bearing authority surfaces. An automated agent must
+never edit an existing one after it has produced a pass or halt in order to
+change that outcome. Renaming the edit, deriving expected values dynamically,
+moving the condition into a helper or changing a closure mapping is still an
+outcome-seeking verifier change.
+
+The exact protected surface is registered in
+`governance/verification_authority_seal_v1.json`. Before scientific mutation,
+admission, branch reconciliation or publication preparation, run
+`python3 tools/verify_verification_authority_seal.py` in addition to the engine
+seal. Any byte mismatch is `VOID_INVALID_HALTED` and must not be repaired by
+resealing. Only Maria Smith may authorize a precisely identified new verifier
+version or authority-seal version before work begins. General permission to
+continue, complete, fix, validate or publish is not authorization.
+
+A lawful new gate is a new, explicitly versioned file prepared before it sees
+the result it will judge. It must preserve the predecessor gate and its adverse
+result. Claim-specific independent validators remain submission evidence: they
+may be created before admission, but after a receipt binds their implementation
+hash they are immutable and must never be edited or substituted. Closure credit
+must not be awarded by editing a census expectation after a halted result.
+
 ## Required behavior
 
 - Work only on the requested scope.

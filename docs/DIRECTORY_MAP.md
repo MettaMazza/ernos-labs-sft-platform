@@ -7,6 +7,8 @@
 - `AGENTS.md` - operational rules for automated assistants.
 - `LANGUAGE_POLICY.md` - accessible Python v3 and host boundary.
 - `ROADMAP.md` - dependency-ordered reconstruction programme.
+- `docs/branch_roadmaps/` - foundational and complete-field plan for every
+  scientific branch, including the planned Medicine branch.
 - `CONTRIBUTING.md` - submission process.
 - `governance/` - Ernos Labs designation and review gates.
 
@@ -23,6 +25,8 @@
 - `sft/chemistry_materials/` - legacy routing marker only; no new derivation
   belongs here.
 - `sft/biology/` - biological sciences.
+- `sft/medicine/` - planned Medicine and Health Sciences branch; this directory
+  must be created and registered before scientific work begins.
 - `sft/consciousness_cognitive_science/` - substrate-independent
   consciousness, cognition, self, binding and qualia obligations.
 - `sft/earth_environment/` - Earth and environmental sciences.

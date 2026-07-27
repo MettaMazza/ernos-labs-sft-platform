@@ -1,0 +1,17 @@
+{
+  "all_equilibrium_composition_values_absent": true,
+  "capture_rule": "Capture the complete NIST TRC ThermoML JSON record for DOI 10.1021/acs.jced.9b00414. Preserve the raw source byte-for-byte. Retain every directly reported experimental binary vapor-liquid-equilibrium temperature dataset and every directly reported experimental gas-composition-at-equilibrium dataset for all three binary systems, every point in source order, every compound identity, phase label, liquid and gas composition, temperature and pressure condition, uncertainty field, method and provenance field. Preserve unpaired pure-component endpoints separately. Do not use correlated, regressed or model-calculated values as measurements and do not discard adverse, duplicate or boundary records.",
+  "environment_rule": "Each retained multicomponent point is one finite environment identified only by the DOI, paired source-dataset ordinals and shared source point ordinal before values open. Temperature, pressure, compounds, liquid composition, gas composition, equilibrium relation and target hash remain withheld targets.",
+  "identity_rule": "Each target identity contains only the DOI, complete-source identity, ordered paired PureOrMixture dataset ordinals and common interior point ordinal. No compound identity, composition, temperature, pressure, phase value, equilibrium result or target hash enters an identity row.",
+  "no_selected_system_row_or_composition": true,
+  "pairing_rule": "Pair a gas-phase CompositionAtPhaseEquilibrium dataset with the unique liquid-phase Boiling temperature at pressure P dataset having the same ordered binary Component identities. Pair only rows whose reported liquid-component mole-fraction inscriptions are exactly identical. Retain every matched interior row and preserve every unmatched source row in the primary record.",
+  "schema": "sft-v3-component-exchange-prefetch-capture-spec/2",
+  "source": {
+    "archive_authority": "NIST Thermodynamics Research Center ThermoML Archive",
+    "doi": "10.1021/acs.jced.9b00414",
+    "json_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.9b00414.json",
+    "landing_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.9b00414.html",
+    "source_id": "NIST-TRC-THERMOML-JCED-2019-9B00414"
+  },
+  "target_values_or_hashes_present": false
+}

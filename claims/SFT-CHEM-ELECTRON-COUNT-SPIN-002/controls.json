@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ELECTRON-COUNT-SPIN-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3bdaaa578e56bbafea5b3ac7b95c2cdbfe3cf0b8be3252a57b2532a6f4eda844"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fefdb22a0f6e9935551760009ac2ab8209b027d5ded1666578bc947f2b0ab5b0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:702741be8f4d03ca2f2de9666b9fa6dae216ea63ec0220145a8de474acb06770"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:b7618d96dd0e90723590860f0ae12b53b8798b64b75a8fc2ae450250f5538221"
+    }
+  ]
+}

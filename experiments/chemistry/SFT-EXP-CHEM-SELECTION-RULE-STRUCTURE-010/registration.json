@@ -1,0 +1,495 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "meaning": "absence only",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false
+  },
+  "claim_id": "SFT-CHEM-SELECTION-RULE-STRUCTURE-010",
+  "custody_protocol": {
+    "cross_platform_exchange_required": true,
+    "hostile_package_audit_required": true,
+    "identity_registry_hash": "sha256:974583091f4c1cd484b8761fe014c5870db38a175a3fd5c8c2b1147b17e62e87",
+    "target_release_requires_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:94af2d38e07bbcdd4f70e74557c5f174ebff586f4d287db541bee00ae204b56f"
+  },
+  "development_observations": [
+    {
+      "endpoint_transition_and_adverse_outcomes_absent_from_survivor_selection": true,
+      "role": "question-and-complete-test-domain-only",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE"
+    }
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "All 63 source records, exact class counts and adverse controls pass.",
+    "comparison_implementation_hash": "sha256:0dc04bcb514b64b97c82f4d82ca9ce97386b42767c19fba8c9dde8288ce0d9eb",
+    "evaluator_id": "SFT-EXP-CHEM-SELECTION-RULE-STRUCTURE-010-post-seal-NIST-evaluator",
+    "falsification_condition": "The claim fails if a direct observation changes multiplicity, preserves a known g/u fibre, jumps more than one axis recurrence, or loses either endpoint; if an observed non-direct case is admitted without a retained mediation requirement; if channel absence is treated as numerical zero or universal nonexistence; or if any of 60 NIST transition rows, three adverse notes, 52 direct one-step records, two mediated two-step records, one unresolved endpoint, four couplings or one closed coordinate is omitted or changed.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain all direct, mediated, unresolved, coupled and closed source records.",
+        "metric_id": "complete-selection-vector"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain NIST notes 42, 73 and 78 without normalizing away forbidden, alternate-channel or uncoupling evidence.",
+        "metric_id": "complete-adverse-vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-SELECTION-RULE-STRUCTURE-010",
+  "external_measurement_sources": [
+    {
+      "adverse_notes": 3,
+      "database": "NIST Chemistry WebBook SRD 69",
+      "doi": "10.18434/T4D303",
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1000",
+      "transition_rows": 60
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of endpoint, observation-class, multiplicity, inversion, axis, mediation, absence and complete-record forms. Decide all 256 forms only from admitted Fold observation, information-retention, state-symmetry and molecular-transition laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:4dcf62fcd84dc6263d3f03f2db51b8502567e1fa3218184b6d21e16039c64bfa",
+      "sha256:2876f5eb50cdc26e8f518f56d74463d9c9bd8f24d08b966cf7418735abed8167",
+      "sha256:d7d1d14baf73e85a4c6029cfed9087be20b20700d294165a5930b89aaedc7bd3",
+      "sha256:6e6982dbceb3552f78aa913660aea010ebb3215aade9cd9da18ec937e5500883"
+    ],
+    "exact_domain": "Every positive finite Fold axis recurrence under one direct observation action, together with mediated finite compositions and the complete registered NIST H2 transition, coupling, absence and adverse-note surface.",
+    "relation_hash": "sha256:a49e8e764ffa62af693982902c38877cd5d9b9d5e566e93de3d1d4d0dddf3825",
+    "statement": "retained-endpoint-signatures__declared-observation-class__direct-multiplicity-retention__known-inversion-fibre-change__same-or-neighbour-axis-support__non-direct-requires-retained-mediator__channel-closed-EmptyOne__complete-adverse-inclusive-vector",
+    "targets_did_not_select_survivor": true,
+    "textbook_selection_rule_not_imported": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:eaa911f16f02d5d71b7062168aacc9b1c2e2ac09262d316c4ea1fff4c86aa428",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:974583091f4c1cd484b8761fe014c5870db38a175a3fd5c8c2b1147b17e62e87",
+      "input_id": "target-identities-only",
+      "outcomes_absent": true,
+      "path": "experiments/external_sources/chemistry/selection_rule_target_identities_v1.json"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:032c71b0fe8c6346e334fe8286ce0e258a6ae38dfad200bf6a4730121431f011",
+    "program_id": "SFT-EXP-CHEM-SELECTION-RULE-STRUCTURE-010-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "retention_policy": "retain-all-sixty-transition-records-three-adverse-notes-and-every-direct-mediated-coupled-unresolved-closed-class",
+  "scope_boundary": "This closes molecular observation-class selection structure. It does not assign transition intensities or import a stochastic probability model.",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:03c5e67b64a847193e2a2c6742e24844723c364c721e3028770f345620ce820f",
+    "experiments/external_sources/chemistry/selection_rule_target_identities_v1.json": "sha256:974583091f4c1cd484b8761fe014c5870db38a175a3fd5c8c2b1147b17e62e87",
+    "experiments/external_sources/chemistry/selection_rule_withheld_targets_v1.json": "sha256:94af2d38e07bbcdd4f70e74557c5f174ebff586f4d287db541bee00ae204b56f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any violation; otherwise stop after the complete vector and controls.",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-024"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-025"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-026"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-027"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-028"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-029"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-030"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-031"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-032"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-033"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-034"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-035"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-036"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-037"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-038"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-039"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-040"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-041"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-continuation-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-042"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-043"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-044"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-045"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-H2-transition-state-046"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-adverse-note-42"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-adverse-note-73"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-SELECTION-SURFACE",
+      "target_id": "selection-adverse-note-78"
+    }
+  ]
+}

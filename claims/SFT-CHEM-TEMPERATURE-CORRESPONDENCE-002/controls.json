@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-TEMPERATURE-CORRESPONDENCE-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:fb67c928165a3608eb3bd3072fb5af10813067075d6c3e1fd70d59c26fdc9d4b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:08d3ba62c776a8ad7906a5924a83390d6dba4dba38c8525b71cbde2af57b2729"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0e8bdbce6f749f4638c5f435c46f2b6c4b3c15645a1887c0aee7057a4bcb06a4"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:bb74aa92f5277635131d945ed866a633064999cf80bf5900ee6f87eefce3df95"
+    }
+  ]
+}

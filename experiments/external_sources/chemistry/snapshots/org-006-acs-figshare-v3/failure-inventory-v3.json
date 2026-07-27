@@ -1,0 +1,40 @@
+{
+  "schema": "sft-v3-source-capture-method-failure-inventory/1",
+  "claim_id": "SFT-CHEM-CONFORMER-POPULATION-ORDERING-006",
+  "capture_script": [
+    "tools/capture_chemistry_org_006_acs_figshare_v3.py",
+    "sha256:d800f1e651fa5ef7ea604baa3a40683b5b61c5c5cbaa52df9d3c12bd13987e17"
+  ],
+  "prediction_seal": [
+    "experiments/sealed_predictions/chemistry_org_006_conformer_population_ordering_pre_source_v3.json",
+    "sha256:6e73bcf51461074dc44dcfb6680d1b43f0d2288c2577bad78a79ee1ca84ef3ee"
+  ],
+  "failure": "AttributeError: Request object has no attribute method while constructing the metadata capture record",
+  "failure_boundary": "The complete DOI search response and the complete single exact-match metadata response were written before the recorder halted. No returned file was downloaded or opened.",
+  "source_recapture_count": 0,
+  "preserved_partial_files": [
+    {
+      "path": "experiments/external_sources/chemistry/snapshots/org-006-acs-figshare-v3/acs-figshare-search-response.json",
+      "sha256": "sha256:1c239538dabf7745ccd2f50c9e3eea0ef36ba616c391a309ec091bef782296b8",
+      "bytes": 993
+    },
+    {
+      "path": "experiments/external_sources/chemistry/snapshots/org-006-acs-figshare-v3/acs-figshare-item-01-metadata.json",
+      "sha256": "sha256:b0872bc80803a5978934812e1ed3295e6b19765846ddf6d96a6be3796dbd2020",
+      "bytes": 6337
+    }
+  ],
+  "observed_metadata_result": {
+    "exact_resource_doi_result_count": 1,
+    "article_id": 2372920,
+    "resource_doi": "10.1021/jp404315t",
+    "returned_file_count": 1,
+    "returned_file_id": 4012420,
+    "returned_file_name": "jp404315t_si_001.txt",
+    "returned_file_size": 10913,
+    "returned_file_download_url": "https://ndownloader.figshare.com/files/4012420",
+    "returned_file_payload_opened": false
+  },
+  "method_failure_is_not_scientific_evidence_or_closure": true,
+  "all_written_bytes_preserved": true
+}

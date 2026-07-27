@@ -1,0 +1,348 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-ELECTRON-COUNT-SPIN-002",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "Missing nuclear support or an electron-removal action erasing all positive support rejects.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "Any changed NIST source byte or target registry identity rejects.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed, duplicate or omitted candidate or empirical row rejects.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Signed charge, numerical-zero proof value, measured target access or species exception rejects.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "TAMPERED-CHARGE",
+      "expected_rejection": "Changing a neutral held action to electron removal changes the predicted census and rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "TAMPERED-MULTIPLICITY",
+      "expected_rejection": "A state width with the wrong parity cannot decompose complete electron support and rejects.",
+      "kind": "unfavorable_measurement"
+    },
+    {
+      "control_id": "OMITTED-ROW",
+      "expected_rejection": "A 21-row result cannot satisfy the registered 22-row target support.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-ELECTRON-COUNT-SPIN-002-NIST-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:b7a58ce1a399e415d13def0e22de48f9a90c913840554598864a20d334de48bb",
+    "withheld_target_registry_path": "experiments/external_sources/chemistry/electron_spin_withheld_targets_v1.json"
+  },
+  "development_observations": [
+    {
+      "content_absent_from_candidate_survivor_selection": true,
+      "role": "question-and-test-domain-observation-only",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025"
+    }
+  ],
+  "dimension_unit_boundary": {
+    "derived_carriers": [
+      "positive atomic-number occurrence counts",
+      "structural empty-One neutral transfer",
+      "positive held adjoin/remove transfer counts",
+      "positive electron occurrence counts",
+      "two held spin fibres",
+      "positive spin widths"
+    ],
+    "external_records": "NIST formula, X-state term and measured multiplicity remain source-bound observations and never become proof scalars or candidate selectors.",
+    "proof_value_policy": "positive-generated-counts-held-labels-and-structural-empty-One-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All 22 neutral/cation/anion rows pass exact count and width-parity reconstruction and every adverse control rejects.",
+    "comparison_implementation_hash": "sha256:1041303b98b0180cdf8ee7d994d9f8f50c30a2b6ef0b9b3503a9e8c65a91aceb",
+    "evaluator_id": "SFT-EXP-CHEM-ELECTRON-COUNT-SPIN-002-post-seal-NIST-evaluator",
+    "falsification_condition": "The claim fails if electron occurrence support differs from the complete atomic-number/held-transfer census; if a same-fibre duplicate occupies one cell; if complete support cannot be decomposed into complementary pairs and unmatched held fibres; if any NIST X-state multiplicity violates the sealed count/width parity; if any registered neutral, cation or anion row is omitted; or if a changed charge, state width, source byte, target row, prediction trace or adverse control is accepted.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct exact electron count from every NIST molecular formula and held charge direction, retaining all 22 rows.",
+        "metric_id": "complete-electron-count-vector",
+        "unit_protocol": "dimensionless positive electron occurrence count"
+      },
+      {
+        "all_rows": true,
+        "definition": "Compare the sealed forced width parity with every NIST X-state multiplicity and reconstruct its exact pair-plus-held organization.",
+        "metric_id": "complete-held-spin-width-compatibility-vector",
+        "unit_protocol": "positive state multiplicity and held fibre organization"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-ELECTRON-COUNT-SPIN-002",
+  "external_measurement_sources": [
+    {
+      "custody_role": "post-seal_ground-state-term-and-multiplicity_target",
+      "database": "NIST Chemistry WebBook, Standard Reference Database 69",
+      "doi": "10.18434/T4D303",
+      "last_data_update": "March 2025",
+      "measurement_body": "National Institute of Standards and Technology",
+      "retrieved_date": "2026-07-26",
+      "snapshot_count": 22,
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_uri": "https://webbook.nist.gov/chemistry/"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of nuclear support, charge representation, electron census, spin carrier, cell occupation, pair/surplus decomposition, observable width and extension choices. Decide every one of the 256 forms solely by preservation of admitted exact arithmetic, atomic-number, ion, spin, indistinguishability, exclusion, information and molecular-state laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:10e16905460d05aae48847b1ddf9ad833334ddfb7d39000f02aed8d61b6c6d29",
+      "sha256:a1756c0cabc54a1df0a6958981f5f14408419ae8303fa4925be9c4dcb788c7ff",
+      "sha256:da2c846ed3c59c2b13c953b61f3fa1e16a4bf71f3202f5d2600b7dbffbbdb735",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:a17397294f765d20aa310846041a8f5ac9f0d1640c8272aa639f50b90d5bb79e",
+      "sha256:a0bbc15e8f2c8d83d7f61f07b9013e27eec1465f864a1f05df9ded10a5db85a7",
+      "sha256:044aa30602ccecd3f439ce5bd725818824cf92af45cc6973a1855788079f0256",
+      "sha256:1f3cdec0862f2e62503084529964348aa413da5a2c748193b765b13c22eea5bc"
+    ],
+    "exact_domain": "Every positive finite molecular multiset of admitted atomic-number occurrences, structural empty-One or a positive held electron-transfer count that leaves positive support, and every positive spin width. Closure is depth-independent: adjoining one nucleus, electron occurrence, complementary pair or unmatched fibre repeats the same local census, two-fibre, exclusion and complete-support checks.",
+    "relation_hash": "sha256:57f0b291ec41b1390a220cd23a53bdc56f2c017ee66fe23f87f260f1bd7287c2",
+    "statement": "atomic-number-occurrence-support__held-directed-electron-transfer__complete-electron-occurrence-census__two-held-spin-fibres__complementary-cell-occupation__complete-pairs-plus-held-surplus__support-compatible-spin-width__no-extra-rule",
+    "target_did_not_select_survivor": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:ddd49453775983b22a60287a282cd650f14bb75d681c29258725a7013751b137",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:9972d91da982bdae04b8a19e6eeb2c6d22e145b5597e0ca6ba613bae0150b54b",
+      "input_id": "molecular-nuclear-support-and-held-charge",
+      "path": "experiments/external_sources/chemistry/electron_spin_inputs_v1.json",
+      "target_multiplicity_absent": true,
+      "value_kind": "22-row-positive-finite-source-bound-input-registry"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-ELECTRON-COUNT-SPIN-002-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "predicted_rows": 22,
+    "program_hash": "sha256:7e939099e51434fd2c7c650aec210e71f4fb8dcbb9a12bce557a2e5aa0985fd1",
+    "program_id": "SFT-EXP-CHEM-ELECTRON-COUNT-SPIN-002-complete-vector-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "row_retention_policy": "retain-all-22-favorable-unfavorable-failed-and-tampered-rows",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:5d3ef7517c609fda5c77787e31ebb5687c0d88e6b1ae882888e00cf05a120d3f",
+    "experiments/external_sources/chemistry/electron_spin_inputs_v1.json": "sha256:9972d91da982bdae04b8a19e6eeb2c6d22e145b5597e0ca6ba613bae0150b54b",
+    "experiments/external_sources/chemistry/electron_spin_withheld_targets_v1.json": "sha256:b7a58ce1a399e415d13def0e22de48f9a90c913840554598864a20d334de48bb",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10035106.html": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10097286.html": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C10102439.html": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C11062774.html": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C12184906.html": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C12185078.html": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C1333740.html": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13774920.html": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13827322.html": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C13966046.html": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C14452938.html": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C14967783.html": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C3315375.html": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C3352576.html": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C630080.html": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7553562.html": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7647010.html": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7664393.html": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7727379.html": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782414.html": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782447.html": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C7782505.html": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on the first protocol violation; otherwise stop only after all 22 rows and every adverse control are recorded.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydrogen-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:a9f784f4008c1560e37d8dd72eec2a0b1fd8b95bbdaff6cf8b6e99323b70e71d",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "nitrogen-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:c5c641dd9d9602b717e7e5e60205ebfc12859caa7bdb1cec3fc2a5571f5d855b",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782447&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "oxygen-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:8575be86d1ad228f2504f68e7263f2dbc699d908141d58ffcb2da67e50ec9454",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782414&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "fluorine-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:86ca3f6c7d2224d722c0c7f7a5dceaa459852f77337cb5bd46475f4741f9acf0",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C630080&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "carbon-monoxide-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:8e66e852600978a638428d1cbec9fb4f841f6c36782d7d2ac4cc8e5b6817b791",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C10102439&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "nitric-oxide-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:cdef711024178d495c2eb4d101fdeffd28ab59687f3f2f83e13b44c820c59246",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C3352576&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydroxyl-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:cfea0ff361866be9d2be390dc10c114f769d94c3f6b24f00599381710bdce040",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C13774920&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "imidogen-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:bf2e4e153dd696031102cb4275e0d7754b2d9f8ee807f77e50214935708c7229",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C3315375&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "methylidyne-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:fd9941a9967435e55844cbde09d04cc30ba4f373ac44150a089fb9980245424f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782505&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "chlorine-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:2a4ba519335ddcf1d82348cb58ffe4234a731cbfa58b69b96b5e57b0e77a53bb",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C10097286&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "silicon-monoxide-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:718863a882ff35345f640a2f9b39fdb99f54143d5905446da30308fb3d0102be",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C13827322&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "sulfur-monoxide-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:35ee9282a1f440dde590e61780bb3a21fca2bc1b2f81a75c3ba35b48a9071c10",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664393&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydrogen-fluoride-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:07a6005545466fa7155b672a9cdba62a9998fe681055a7ad98479475f9ed02c7",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7647010&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydrogen-chloride-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:6f0e057c2a32e9d05bbe656478ea39c7205073248563680153fb0c2fe9ad36d6",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C10035106&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydrogen-bromide-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:0d785bbcd5f9a3c8e77869a58afbfefe75ea33429fb5e7b91ee0754c1a66d6a8",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7553562&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "iodine-neutral"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:ddc6d1ce3fb65280cb0e200bb3966704841c929e05a0aa2d301d31cb44e28188",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C12184906&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "hydrogen-cation"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:c4eb18def78f132ab22e101503bb4d419b8306802b33c44287342cdc2e67fbd5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C13966046&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "nitrogen-cation"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:7a6027834f421b0e85296dbec9dfbf4781c7d7dd3c920c654302b209f778e7e5",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C12185078&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "oxygen-cation"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:9c760e65725a3b14c3841b1b52223cbe1b8ed43dd7e664dcd574de67ef5caf31",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C14452938&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "nitric-oxide-cation"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:1c52aa1b190b5cd1910754e1c5326c497f52cc6757e69d184b944455f3609d13",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C11062774&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "oxygen-anion"
+    },
+    {
+      "content_withheld_from_capability_closed_prediction": true,
+      "snapshot_hash": "sha256:0cba4791e76291360b020efca7e6333e8fbda6681bebb1e8206d509654ff838f",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-DIATOMIC-CONSTANTS-2025",
+      "source_locator": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C14967783&Mask=1000 :: Constants of diatomic molecules :: X state",
+      "target_id": "nitric-oxide-anion"
+    }
+  ]
+}

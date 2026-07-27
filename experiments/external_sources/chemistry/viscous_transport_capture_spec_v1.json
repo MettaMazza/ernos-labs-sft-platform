@@ -1,0 +1,42 @@
+{
+  "schema": "sft-v3-viscous-transport-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-THERMO-017",
+  "claim_id": "SFT-CHEM-VISCOUS-TRANSPORT-RELATION-017",
+  "capture_rule": "Capture every byte and every compound, citation, dataset, property, variable, constraint, phase, uncertainty and point from each complete NIST ThermoML source. Construct the empirical vector from every direct-value viscosity point in those sources. Preserve every density, interfacial-tension and other companion dataset but exclude it from viscosity measurements. Do not select substances, mixtures, phases, compositions, temperatures, pressures, methods, datasets or rows within a source.",
+  "source_selection_boundary": "The three complete authoritative sources are fixed before any measured value, uncertainty or target hash is captured and before executable-law registration, candidate enumeration or prediction-program construction. The selection spans pure, binary and ternary chemical systems, broad composition/temperature/pressure support and multiple direct viscometry methods without using a result value.",
+  "sources": [
+    {
+      "source_id": "NIST-TRC-THERMOML-FPE-2018-474-6-13",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.fluid.2018.07.008",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.07.008.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.07.008.html",
+      "capture_scope": "complete ternary liquid-metal source and all 50 direct viscosity records"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2005-50-1038-1042",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/je050021e",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/je050021e.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/je050021e.html",
+      "capture_scope": "complete pure/binary source and all 159 direct viscosity records"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-FPE-2017-453-13-23",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.fluid.2017.09.005",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2017.09.005.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2017.09.005.html",
+      "capture_scope": "complete three-binary-mixture source and all 216 direct viscosity records"
+    }
+  ],
+  "admissible_viscosity_property_name": "Viscosity, Pa*s",
+  "all_substance_mixture_phase_composition_temperature_pressure_method_value_uncertainty_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "Newtonian_constitutive_velocity_gradient_Arrhenius_WLF_VFT_logarithm_or_continuum_permitted": false,
+  "non_viscosity_companion_datasets_preserved_but_excluded_from_measurements": true,
+  "external_zero_glyph_if_encountered_must_translate_postseal_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

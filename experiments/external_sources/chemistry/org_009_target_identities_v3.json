@@ -1,0 +1,90 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/3",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "supersedes_for_new_capture_only": "experiments/external_sources/chemistry/org_009_target_identities_v2.json",
+  "v1_Rhea_adverse_and_v2_DeepChem_zero_row_results_must_remain_preserved": true,
+  "v1_and_v2_do_not_award_closure": true,
+  "external_values_products_reaction_rows_or_outcomes_present": false,
+  "development_observed_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-RXNEBM-REPOSITORY",
+      "source_id": "COLEYGROUP-RXN-EBM-USPTO50K",
+      "authority": "Coley Research Group",
+      "registered_identity": "published rxn-ebm repository declaring the included extra-clean Schneider USPTO-50K source files",
+      "source_record_role": "dataset custody, provenance and split identities only",
+      "custody_class": "development_observed",
+      "uri": "https://github.com/coleygroup/rxn-ebm"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-USPTO50K-PUBLICATION",
+      "source_id": "NEURIPS-2020-USPTO50K-SUPPLEMENT",
+      "authority": "NeurIPS proceedings",
+      "registered_identity": "published ten-class census identifying class 10 as functional-group addition",
+      "source_record_role": "independent class definition and declared class-10 census",
+      "custody_class": "development_observed",
+      "uri": "https://papers.nips.cc/paper/2020/file/819f46e52c25763a55cc642422644317-Supplemental.pdf"
+    }
+  ],
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-009-SCHNEIDER50K-TRAIN",
+      "source_id": "COLEYGROUP-SCHNEIDER50K-TRAIN",
+      "authority": "Coley Research Group public rxn-ebm repository",
+      "registered_identity": "complete atom-mapped Schneider-50K training split",
+      "source_record_role": "blind class-labelled atom-mapped addition product vectors",
+      "custody_class": "outcome_unopened_before_v3_claim_specific_seal",
+      "uri": "https://raw.githubusercontent.com/coleygroup/rxn-ebm/master/rxnebm/data/original_data/schneider50k_train.csv",
+      "registered_http_head": {
+        "etag": "51e7f5f4e22f3a8cbe58e970473158517ff554b35b03415d167105983fa19227",
+        "content_length": 15958271,
+        "content_type": "text/plain; charset=utf-8"
+      }
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-SCHNEIDER50K-VALID",
+      "source_id": "COLEYGROUP-SCHNEIDER50K-VALID",
+      "authority": "Coley Research Group public rxn-ebm repository",
+      "registered_identity": "complete atom-mapped Schneider-50K validation split",
+      "source_record_role": "blind class-labelled atom-mapped addition product vectors",
+      "custody_class": "outcome_unopened_before_v3_claim_specific_seal",
+      "uri": "https://raw.githubusercontent.com/coleygroup/rxn-ebm/master/rxnebm/data/original_data/schneider50k_valid.csv",
+      "registered_http_head": {
+        "etag": "14ef36d0fa9d99d39fe75f5ce57f97afcead3eaa402d7fb02f7e5dc0cfc6b459",
+        "content_length": 1992406,
+        "content_type": "text/plain; charset=utf-8"
+      }
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-009-SCHNEIDER50K-TEST",
+      "source_id": "COLEYGROUP-SCHNEIDER50K-TEST",
+      "authority": "Coley Research Group public rxn-ebm repository",
+      "registered_identity": "complete atom-mapped Schneider-50K test split",
+      "source_record_role": "blind class-labelled atom-mapped addition product vectors",
+      "custody_class": "outcome_unopened_before_v3_claim_specific_seal",
+      "uri": "https://raw.githubusercontent.com/coleygroup/rxn-ebm/master/rxnebm/data/original_data/schneider50k_test.csv",
+      "registered_http_head": {
+        "etag": "7f71a7c9e38737ee5aab49669b4e5c86e1f3c43c9d38b9dd514b6de64918d4ce",
+        "content_length": 1989083,
+        "content_type": "text/plain; charset=utf-8"
+      }
+    }
+  ],
+  "blind_row_selection_rule": {
+    "classification": "retain every row whose independent Schneider reaction-class field is exactly class 10 functional-group addition",
+    "source_only_completeness": "before reading its product field, retain a class-10 row only when the atom-mapped reactant side has exactly two dot-separated components, every mapped atom identity is unique, every non-hydrogen atom is mapped, and at least one source bond has explicit multiplicity greater than one",
+    "outcome_inaccessibility": "the product field, product component count, product atom-map inventory and product adjacency are forbidden to the selector and prediction program",
+    "ordering": "retain every qualifying identity in train then validation then test file order without a row limit, random draw, favorable-only filter or major-product selector",
+    "postseal_targets": [
+      "complete product component count",
+      "complete atom-mapped product SMILES",
+      "exact source and product atom-map inventory",
+      "exact source-component ownership of every newly formed product bond",
+      "exact source multiple-bond support and target bond-order correspondence",
+      "every favorable adverse absent malformed and unresolved qualifying row"
+    ]
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "remote_source_payload_open_count_before_v3_seal": 0
+}

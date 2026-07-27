@@ -1,0 +1,54 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/7",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "supersedes_for_new_external_label_query_only": "experiments/external_sources/chemistry/org_009_target_identities_v6.json",
+  "all_v1_through_v6_results_must_remain_preserved_and_barred_from_selective_reuse": true,
+  "preserved_v6_complete_result": {
+    "comparison_path": "experiments/external_sources/chemistry/snapshots/org-009-localmapper-blind-v5/cycloaddition-product-comparison-v6.json",
+    "comparison_sha256": "sha256:32dbf8ae33dc4e70d61ae282ce359bacddd653b60d20281aea997962d0e00934",
+    "complete_selected_product_count": 47,
+    "favorable_count": 8,
+    "adverse_count": 31,
+    "unresolved_count": 8,
+    "malformed_count": 0,
+    "status": "failed_universal_source_signature_preserved_not_rewarded"
+  },
+  "frozen_product_vector_surface": {
+    "source_id": "RHEA-REACTION-SMILES-2026-06-10",
+    "authority": "Rhea expert-curated biochemical reaction knowledgebase",
+    "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-009-rhea-blind-v1/rhea-reaction-smiles.tsv",
+    "snapshot_sha256": "sha256:d6e30a597878334d13685f4a215a27b3f35350d167347e07bd89024d7c191069",
+    "snapshot_bytes": 11337490,
+    "registered_last_modified": "Wed, 10 Jun 2026 13:00:00 GMT",
+    "custody_class": "complete_surface_captured_selected_diels_alder_rows_unidentified_and_unopened"
+  },
+  "outcome_unopened_label_query": {
+    "target_id": "SFT-CHEM-ORG-009-RHEA-DIELS-ALDER-QUERY",
+    "source_id": "RHEA-WEB-QUERY-DIELS-ALDER",
+    "authority": "Rhea expert-curated biochemical reaction knowledgebase",
+    "registered_identity": "complete exact-phrase Diels-Alder query with Rhea identifier and equation columns",
+    "source_record_role": "independent reaction-family label and complete selected-identity census",
+    "custody_class": "query_outcome_unopened_before_v7_seal",
+    "uri": "https://www.rhea-db.org/rhea?query=%22Diels-Alder%22&columns=rhea-id,equation&format=tsv"
+  },
+  "blind_selection_and_comparison_rule": {
+    "selection": "After the query opens, retain every returned Rhea identifier in query order. Join every identifier to the frozen complete Rhea reaction-SMILES surface without an outcome-dependent exclusion.",
+    "direction": "Evaluate every exact declared reaction direction present for each independently labeled Rhea identity. A direction instantiates addition only when two or more complete source components become one product component; no direction may be chosen by a favorable-only rule.",
+    "atom_correspondence": "Enumerate every element-preserving exact source-product atom bijection. No imported atom mapping, product name, measured value, fitted score or heuristic survivor may choose the correspondence.",
+    "predicted_family": "For every independently labeled addition direction, at least one exact bijection retains all atom occurrences, forms exactly two cross-source-component adjacencies, relocates a positive finite number of multiplicity layers while every reduced adjacency retains a base support, and leaves all other held adjacency unchanged.",
+    "complete_retention": "Preserve every favorable, adverse, absent, malformed, unresolved, reverse-only and no-frozen-vector query row.",
+    "postseal_targets": [
+      "complete query hit count",
+      "complete joined reaction-SMILES count",
+      "complete direction census",
+      "element-preserving bijection count",
+      "exact two new cross-component adjacencies",
+      "positive finite multiplicity reduction",
+      "every favorable adverse absent malformed unresolved and reverse-only row"
+    ]
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "query_outcome_open_count_before_v7_seal": 0
+}

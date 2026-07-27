@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-LIGAND-STATE-SPLITTING-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:e478e458e59bf2d84a283159d4f028110587ff565d5f33f1fa2e39fef5958e9b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1d1533f13270b69d6905fe412a120b236af2c31ce594a9003ad79e470dceb8dd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b0fc797514dc0dbedb68131cd4762a7d7e48a708faff0de53b156742e9c8e983"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:18dc29834a0328c06e614c9d815b5e3203664aadf55afd0418e2127add028c2b"
+    }
+  ]
+}

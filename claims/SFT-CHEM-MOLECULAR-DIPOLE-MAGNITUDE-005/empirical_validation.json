@@ -1,0 +1,72 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005",
+  "data_source_ids": [
+    "NIST-NBS-JCP-59-2254-1973",
+    "NIST-CCCBDB-SRD101-EXPERIMENTAL-DIPOLES"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:a82a7bd2f50e42c82966f3963b7a912c86fd9256c7b8f33f58beef350dab6b61",
+  "falsification_condition": "The claim fails if either registered homonuclear total is not source absence; if H2O or D2O does not retain exactly one reported component, HDO does not retain exactly two, or any post-seal exact outward component-square Junction fails to overlap its separately reported squared-total interval; if any row, identity, state, geometry, symmetry, axis, method, condition or uncertainty is erased; if a value is readable before sealing; or if a signed, irrational, fitted or continuum rule is introduced.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a290c5f115ce816a33bc84fb5803a8ea0f2ff50c8c3ee59439f33aac34e8aa26",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4236fe67c7f5366f70fd56b64c1ffa40083d75f1ee493edf87f6828d70a80b49",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:196ef04a14b1e67b42af07c9cd1c6a080a93d09c07ddfe9b5deadb6a50ea6193",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:6499c5cd34820bf0434b5fc8096e6fe1ee6e27738b18d242c305f0b7ace68104",
+    "prediction_seal_hash": "sha256:e4553ba6806f234dee66c128551856f062c5e8e2c5f8dd133be77399be03c69e",
+    "program_hash": "sha256:27af17542caebb2df13966d13c4db5917ad236a189ee99717046b3fd1f84339b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:1ca5f9677ae8b80080c985036d11dde7b1d734648f58ee853651da244cc3e0ec",
+    "target_material_present": false,
+    "trace_hash": "sha256:a474fc385dc5ac9fdf589ddea2749dd8e49ab4e3cb30e86e131dcd20a69b78b0"
+  },
+  "measurement_receipt_hash": "sha256:c6af87f488728153073021e08c3ff5d8379f3724b6c45215aded5a0aaedbcf71",
+  "measurements": [
+    "H2: source 0.000 D maps to native EmptyOne; match True",
+    "D2: source 0.000 D maps to native EmptyOne; match True",
+    "H2O: 1 post-seal component intervals give exact squared-magnitude [859329/250000, 5377761/1562500]; reported squared total [859329/250000, 5377761/1562500]; overlap True",
+    "D2O: 1 post-seal component intervals give exact squared-magnitude [343620369/100000000, 345179241/100000000]; reported squared total [343620369/100000000, 345179241/100000000]; overlap True",
+    "HDO: 2 post-seal component intervals give exact squared-magnitude [6853489/2000000, 34340297/10000000]; reported squared total [342583081/100000000, 343472089/100000000]; overlap True",
+    "adverse complete_five_species_nine_row_vector: True",
+    "adverse all_measurements_absent_from_prediction: True",
+    "adverse symmetry_forces_component_counts: True",
+    "adverse homonuclear_source_glyphs_map_only_to_EmptyOne: True",
+    "adverse every_squared_magnitude_interval_overlaps: True",
+    "adverse every_displaced_total_rejected: True",
+    "adverse missing_component_is_not_computable: True",
+    "adverse duplicate_axis_rejected: True",
+    "adverse conventional_signed_direction_absent_from_prediction: True",
+    "adverse tampered_registry_identity_rejected: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:59c786d68d53f725f2d71392f0ac2d03030885e7cb71711e4b021219730f9082",
+    "custodian_id": "SFT-EXP-CHEM-MOLECULAR-DIPOLE-MAGNITUDE-005-external-target-custodian",
+    "experiment_registration_hash": "sha256:a82a7bd2f50e42c82966f3963b7a912c86fd9256c7b8f33f58beef350dab6b61",
+    "prediction_seal_hash": "sha256:e4553ba6806f234dee66c128551856f062c5e8e2c5f8dd133be77399be03c69e",
+    "registered_target_identity_hash": "sha256:1ca5f9677ae8b80080c985036d11dde7b1d734648f58ee853651da244cc3e0ec",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:385b10f8ca0d81844e19f9c3a77094dd6cd4c310ef2c0bf9d4d6003f209fa89e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:3f26018ad55b11710333262bef1d101f961a5768516e08834e09d37a2bb59a98"
+}

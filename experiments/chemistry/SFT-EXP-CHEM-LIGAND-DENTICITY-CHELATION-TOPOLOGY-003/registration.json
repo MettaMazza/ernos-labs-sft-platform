@@ -1,0 +1,293 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003",
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing one exact ligand carrier, complete donor support or one retained centre is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed or omitted IUPAC source surface is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate, donor count or path-closure consequence is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Premature target access, collapsed carrier or attachment boundary, or forbidden proof value is rejected.",
+      "kind": "boundary"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003-complete-target-custodian",
+    "exchange_id": "sft-v3-portable-target-exchange/1",
+    "release_requires_matching_seal": true,
+    "target_commitment_hash": "sha256:f4ffb125e92b0550ad875c550216bcfecbadfcf26c1f18e777da0668460ffd08"
+  },
+  "development_observations": [],
+  "dimension_unit_boundary": {
+    "derived_dimension_carriers": [
+      "finite ligand-carrier identity",
+      "positive donor incidence",
+      "positive denticity",
+      "finite connected path"
+    ],
+    "external_reference_protocol": "Definitions, examples, exclusions and attachment-mode classifications open only after the complete identity and consequence seal.",
+    "measurement_record_policy": "external-records-never-become-proof-scalars-or-law-selectors",
+    "proof_value_policy": "positive-generated-counts-and-exact-ratios-only"
+  },
+  "evaluation_protocol": {
+    "acceptance_condition": "All twenty-four identity, consequence, topology, boundary, provenance and post-seal target bindings pass; open/first-closed/successor relations reconstruct; every adverse control rejects.",
+    "comparison_implementation_hash": "sha256:d2dab3c98338628d31a6b2a30e9e508b7029f38ec449f2df4653447133acfb78",
+    "evaluator_id": "SFT-EXP-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003-post-seal-evaluator",
+    "falsification_condition": "Any denticity differing from complete donor incidence; collapsed carrier; mixed centre; one-site chelation; failed first closure or successor; changed or omitted record; collapsed kappa/eta/separate-site boundary; premature target access; or forbidden numerical form falsifies the claim.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Exact structural, topology, boundary, provenance and custody comparison across the complete twenty-four-record vector.",
+        "metric_id": "complete-ligand-denticity-chelation-topology-correspondence",
+        "unit_protocol": "Categorical source correspondence and exact positive generated donor-site counts."
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003",
+  "external_measurement_sources": [
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:4f1d275678db299b664a1a00c5ca5cd19fbf012f3dc7077973476ac31b2676d9",
+      "source_id": "IUPAC-GOLD-BOOK-B00649",
+      "source_uri": "https://goldbook.iupac.org/terms/view/B00649/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:85714ca65d24b09e2ad69e14c149c4aeec432b2bdaee157009043fdc711b96d8",
+      "source_id": "IUPAC-GOLD-BOOK-C01012",
+      "source_uri": "https://goldbook.iupac.org/terms/view/C01012/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:b69110d29a5d564c6f3177b466c417bd2b3e5f0b3db4bad5028686baec4fff04",
+      "source_id": "IUPAC-GOLD-BOOK-D01594",
+      "source_uri": "https://goldbook.iupac.org/terms/view/D01594/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:cc3b324c693924c912a66d5966521da3eccf45155f4d41056bc1c5d255d23aaf",
+      "source_id": "IUPAC-GOLD-BOOK-H01881",
+      "source_uri": "https://goldbook.iupac.org/terms/view/H01881/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:9fdfc562103adc48f47d7ec18652eb1db776ef12543ced9e1826fb4844e3cbe0",
+      "source_id": "IUPAC-GOLD-BOOK-K03366",
+      "source_uri": "https://goldbook.iupac.org/terms/view/K03366/json"
+    },
+    {
+      "custody_role": "withheld_target",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "retrieved_date": "2026-07-27",
+      "snapshot_hash": "sha256:b3414a011d1571ad71a6b8d6dec00913f27ebc3d6bd7d8a118434ed4c158ad14",
+      "source_id": "IUPAC-GOLD-BOOK-L03518",
+      "source_uri": "https://goldbook.iupac.org/terms/view/L03518/json"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Literal product of eight binary coordinates; 256 forms.",
+    "dependency_hashes": [
+      "sha256:84d18de18b1345bf506138493aebd7808bb0bd00cc3b318040e00751929c7c8a",
+      "sha256:a4e409f6bb8b203de746bd0c21d3f2566e8052003219490c657249e11f6f2086",
+      "sha256:28252bae62373d8657967ba28f8f2d497c2cf09abbae71609cb05c4f40196418",
+      "sha256:632de46c995329ed86f8397e8cf2cc493d5074027941a50069df66b4ac9e29bb",
+      "sha256:52e1db94bb7865270bb3387c47c609c438de3338b542cc31d910b981e4250968",
+      "sha256:b4072f93147c8cd9b7233fc96cfeadeb791210239ab4e4ff7dec0ed7462e6d2a",
+      "sha256:e387d64c93f5241d90ecf2a447eb6a3518c1e9f473e7ec627d38b7f03ac9d941",
+      "sha256:4e2892e85c1624a2234163fdd51377a7086219ce0945cbf6acfcaa41664303f4",
+      "sha256:6ff1fdc0b1d041805addd6ef9350dee1fe38a41082072c9f7888d4a22975228f",
+      "sha256:130c21788e898b4b6f0cb012bc72b4cb29d5aeda5b86e67257c6008c13318f66",
+      "sha256:6f5a76351dd92e06a0982b6a611e3bf04d2d69dae0635e8dd6b4a3b4e92586eb",
+      "sha256:4749de58750e305820c39678a3a2f0f6d8332e721a17921651eafca98a8a1dbc",
+      "sha256:bf8c0a082163ff1e531df0754a15edff05eb59c8c881f602af3bc4b581c030b6",
+      "sha256:7b69ed0faf732d306aa10eac8ff74cb7e0cdad9debcb2c45b3b3ab75da4352f8"
+    ],
+    "exact_domain": "Every positive finite complete donor-site topology for one retained ligand carrier and one retained central occurrence.",
+    "relation_hash": "sha256:3869daf4e8271a57bebb17558fed94509cff1ce8f74738648c178b67ade43db8",
+    "statement": "positive denticity of one carrier-centre donor support and first multiple-site path closure",
+    "target_did_not_select_law": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:67a1f891fd61760478b51b60fd340b0f36d23ec593c1363f5f6a085da27acb33",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:93405d949da7ae5ef13ea8197ae350cf18b14f34651a964fa118ffe971fcc739",
+    "program_id": "SFT-EXP-CHEM-LIGAND-DENTICITY-CHELATION-TOPOLOGY-003-value-free-complete-vector"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-27",
+  "row_retention_policy": "retain-every-registered-favorable-unfavorable-failed-and-tampered-row",
+  "source_hashes": {
+    "identity_registry": "sha256:a50a392959dca5189676e2a5291234e1176e69ceabe4695b1003893619774cde",
+    "prefetch_specification": "sha256:4bc31567a0f215741459cfcb41a3d3b00e00de4093ba938a8511e654dfa8b899",
+    "primary_records": "sha256:720055bba1c487a6ffbd806265a1c67ebc74ac68026239f8feff011fd110f7d9",
+    "source_inventory": "sha256:93b6713df74ed37ac82439a1c9a6eecea4bdedc598850feca71a886dca03a142",
+    "withheld_targets": "sha256:f4ffb125e92b0550ad875c550216bcfecbadfcf26c1f18e777da0668460ffd08"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any source, seal, identity, custody, carrier, centre, donor-site, path, count, completeness, boundary, adverse-control or forbidden-value violation.",
+  "target_access_policy": "structurally-denied-before-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-B00649",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-B00649",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-B00649",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-B00649",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01012",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01012",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01012",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-007"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-C01012",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-008"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-D01594",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-009"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-D01594",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-010"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-D01594",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-011"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-D01594",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-012"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-H01881",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-013"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-H01881",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-014"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-H01881",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-015"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-H01881",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-016"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-K03366",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-017"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-K03366",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-018"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-K03366",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-019"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-K03366",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-020"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-L03518",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-021"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-L03518",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-022"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-L03518",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-023"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "source_id": "IUPAC-GOLD-BOOK-L03518",
+      "target_id": "SFT-CHEM-INORG003-TOPOLOGY-024"
+    }
+  ]
+}

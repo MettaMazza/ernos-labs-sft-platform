@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ROTATIONAL-CONSTANT-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:632627a6ed5ac0c86cb24760c29576c4cf1f34aa12990774deebb5805affec82"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:5b841759faf3f49267be06e270740e77e8589d37ba5845fa2a4de115a9dec573"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9cc423d822fef57a20f09850f4bc8fd67f7ebe50a1e689ab12f5db62da371f03"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:a82b832626432a596cad3e368686f03ec6ce981fde655830bc3327f4b0564005"
+    }
+  ]
+}

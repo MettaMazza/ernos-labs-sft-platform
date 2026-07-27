@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+ <title>NIST Chemical Kinetics Database</title>
+ <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+ <link rel="shortcut icon" href="/kinetics/favicon.ico" type="image/x-icon">
+ <style type="text/css">
+  a:link, a:visited, a:active { text-decoration: none }
+  a:link, a:visited { color: #0000ff }
+  a:hover { text-decoration: underline; }
+ </style>
+ <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+ <meta name="description" content="A compilation of kinetics data on gas-phase chemical reactions">
+ <meta name="keywords" content="NIST chemical kinetics database, kinetics database, chemical kinetics, reaction kinetics, kinetics, chemical reaction, reaction, reaction rate constant, rate constant, rate coefficient, arrhenius equation">
+ <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
+ <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+ <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-37115410-20&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+</head>
+
+<body>
+
+<script language="javascript" type="text/javascript">
+<!-- Begin
+function checkAll() {
+  var nrec = document.KineticsResults.nRec.value;
+  var nord = document.KineticsResults.order.value;
+  for (var j = 1; j <= nrec; j++) {
+    oval = eval("document.KineticsResults.order" +j +".value"); 
+    if (oval != 0) {
+    box = eval("document.KineticsResults.item" + j); 
+    if (oval == nord) {
+      if (box.checked == false) box.checked = true;
+    } else {
+      if (box.checked == true) box.checked = false;
+    }
+    }
+  }
+}
+
+function uncheckAll() {
+  var nrec = document.KineticsResults.nRec.value;
+  for (var j = 1; j <= nrec; j++) {
+    oval = eval("document.KineticsResults.order" +j +".value"); 
+    if (oval != 0) {
+      box = eval("document.KineticsResults.item" + j); 
+      if (box.checked == true) box.checked = false;
+    }
+  }
+}
+
+function Show(tag) {
+  document.getElementById(tag).style.visibility = "visible";
+}
+
+function Hide(tag) {
+  document.getElementById(tag).style.visibility = "hidden";
+}
+
+function showRef(TXT,evt) {
+  var IE = document.all?true:false;
+  var e = (window.event) ? window.event : evt;
+  if (IE) {
+    document.getElementById('Alt').style.left=(e.clientX+document.body.scrollLeft+10)+"px";
+    document.getElementById('Alt').style.top=(e.clientY+document.body.scrollTop+10)+"px";
+  } else {
+    document.getElementById('Alt').style.left=(e.pageX+10)+"px";
+    document.getElementById('Alt').style.top=(e.pageY+10)+"px";
+  }
+  document.getElementById('Alt2').innerHTML=TXT;
+  Show('Alt');
+}
+
+function showPicture(id, evt) {
+  var IE = document.all?true:false;
+  var e = (window.event) ? window.event : evt;
+  if (IE) {
+    document.getElementById('iAlt').style.left=(e.clientX+document.body.scrollLeft+20)+"px";
+    document.getElementById('iAlt').style.top=(e.clientY+document.body.scrollTop+20)+"px";
+  } else {
+    document.getElementById('iAlt').style.left=(e.pageX+20)+"px";
+    document.getElementById('iAlt').style.top=(e.pageY+20)+"px";
+  }
+  document.getElementById('iAlt2').innerHTML="<img src="+id+">";
+  Show('iAlt');
+}
+//  End -->
+</script>
+
+<div id="Alt" style="position: absolute; border:1px #000000 solid; background:#EEEEEE;top: 0; left: 0; width: 209px; visibility: hidden">
+<table border="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" bgcolor="#FFFFCC" valign="middle" align="left">
+<div id="Alt2" style="font:11px verdana, arial, sans-serif; color:#000000; width: 201px; padding: 3px">
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="iAlt" style="position: absolute; background:#eee; top: 0; left: 0; width: 0; border:none; visibility: hidden;">
+<table border="1" cellspacing="0" width="100%">
+<tr>
+<td width="100%" bgcolor="#eee" valign="middle" align="left">
+<div id="iAlt2" style="color:#000000; width: 100%; border:none;"></div>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="exitBox" title="Leaving Chemical Kinetics Database">
+
+  <div id="exitBoxContent" class="exitBoxContent">
+
+    <div id="exitBoxHeader"></div>
+
+    <div id="exitBoxMessage"></div>
+
+    <div id="exitBoxFooter" class="exitBoxFooter">
+
+      <span id="exitBoxContinueButton"></span>
+
+      <span id="exitBoxCloseButton"></span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/trc_exit.js" type="text/javascript"></script>
+
+<table style="width: 100%;background-color:#515151; border: 0">
+
+<tr>
+
+  <td colspan="2" style="width: 100%">
+
+    <table style="width: 100%">
+
+    <tr>
+
+      <td style="width: 135px;text-valign: top"><img style="padding-left: 15px" src="gr/logo3.gif" height="55" width="118" align="middle" alt="Kinetics Database Logo"></td>
+
+      <td style="width: 30%">&nbsp;</td>
+
+      <td style="width: 40%;text-align: center">&nbsp;</td>
+
+      <td style="width: 30%;text-align: right">
+
+        <a href="index.jsp" style="color: white">Home</a><br>
+
+        <a href="https://www.nist.gov/oism/copyrights" style="color: white">&copy;NIST, <span style="color: white">2026</span></a><br>
+
+        <a href="https://www.nist.gov/oism/accessibility" style="color: white">Accessibility information</a><br>
+
+      </td>
+
+    </tr>
+
+    </table>
+
+  </td>
+
+</tr>
+
+<tr>
+
+  <td style="width: 15%; padding-left: 15px; padding-top: 15px; background-color:#FFF;vertical-align:top">
+
+    <b><font style="color: #0000FF">Kinetics Database Resources</font></b>
+
+    <p><a href="index.jsp">Simple Reaction Search</a></p>
+
+    <p><a href="KineticsSearchForm.jsp">Search Reaction Database</a></p>
+
+    <p><a href="BiblioSearchForm.jsp">Search Bibliographic Database</a></p>
+
+    <!--<p><a href="entry.jsp">Targeted Evaluations</a></p>-->
+
+    <p><a href="SetUnitPrefs.jsp">Set Unit Preferences</a></p>
+
+    <p><a href="/cdn-cgi/l/email-protection#cfaca7bda6bce1a2bab5a1b68fa1a6bcbbe1a8a0b9f0bcbaada5aaacbbf29baaaca7a1a6acaea3efaebcbca6bcbbaea1acaaefa9a0bdefa4a6a1aabba6acbce1a1a6bcbbe1a8a0b9">Contact Us to Submit an Article</a></p>
+
+    <p><a href="citation.jsp">Citation</a></p>
+
+    <!--<p><a href="status.jsp">Project status</a></p>-->
+
+    <p><a href="getting_started.jsp">Help</a></p>
+
+    <hr style="width:70%;margin: 0px">
+
+    <b><font style="color: #0000FF">Other Databases</font></b>
+
+    <p><a href="https://www.nist.gov/srd">NIST Standard Reference Data Program</a></p>
+
+    <p><a href="https://webbook.nist.gov/">NIST Chemistry Web Book</a></p>
+
+    <p><a href="https://kinetics.nist.gov/solution">NDRL-NIST Solution Kinetics Database</a></p>
+
+    <p><a href="https://cccbdb.nist.gov/">NIST Computational Chemistry Comparison and Benchmark Database</a></p>
+
+    <p><a href="https://physics.nist.gov/cuu/index.html">The NIST Reference on Constants, Units, and Uncertainty</a></p>
+
+    <p><a href="links.jsp">More...</a></p>
+
+    <hr style="width:70%;margin: 0px">
+
+    <b><font style="color: #0000FF">Administrative Links</font></b>
+
+    <p><a href="https://www.commerce.gov/">DOC home page</a></p>
+
+    <p><a href="https://www.nist.gov/">NIST home page</a></p>
+
+    <p><a href="https://www.nist.gov/mml/">MML home page</a></p>
+
+    <p><a href="https://www.nist.gov/mml/csd">Chemical Sciences Division</a></p>
+
+    <p><a href="http://www.nist.gov/mml/acmd">Applied Chemicals and Materials Division</a></p>
+    </td>
+
+    <td style="width: 85%; padding-left: 15px; background-color:#FFF">
+
+<B>Author(s):</B>&nbsp;&nbsp;
+Wilson, W.E.<BR>
+<B>Title:</B>&nbsp;&nbsp;
+Rate constant for the reaction N + O<sub>2</sub> → NO + O<BR>
+<B>Journal:</B>&nbsp;&nbsp;
+J. Chem. Phys.<BR>
+<B>Volume:</B>&nbsp;&nbsp;
+46<BR>
+<B>Page(s):</B>&nbsp;&nbsp;
+<BR>
+<B>Year:</B>&nbsp;&nbsp;
+1967<BR>
+<B>Reference type:</B>&nbsp;&nbsp;
+Journal article<BR>
+<B>Squib:</B>&nbsp;&nbsp;
+1967WIL2017<BR>
+<P>
+<B>Reaction:</B>&nbsp;&nbsp;
+<a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=7782447&amp;Units=SI" target=_blank onMouseOver="showPicture('https://webbook.nist.gov/cgi/cbook.cgi?Struct=7782447&Type=Solid',event);" onMouseOut="Hide('iAlt');">O<sub>2</sub></a> + <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=17778880&amp;Units=SI" target=_blank onMouseOver="showPicture('https://webbook.nist.gov/cgi/cbook.cgi?Struct=17778880&Type=Solid',event);" onMouseOut="Hide('iAlt');">N</a> → <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=10102439&amp;Units=SI" target=_blank onMouseOver="showPicture('https://webbook.nist.gov/cgi/cbook.cgi?Struct=10102439',event);" onMouseOut="Hide('iAlt');">NO</a> + <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=17778802&amp;Units=SI" target=_blank onMouseOver="showPicture('https://webbook.nist.gov/cgi/cbook.cgi?Struct=17778802',event);" onMouseOut="Hide('iAlt');">O&middot;</a><BR>
+<B>Reaction order:</B>&nbsp;&nbsp;
+2<BR>
+<B>Temperature:</B>&nbsp;&nbsp;
+300 - 900
+ 
+K<BR>
+<b>Pressure:</b>&nbsp;&nbsp;9.33E-4 - 3.07E-3 bar<br>
+<B>Rate expression:</B>&nbsp;&nbsp;
+2.34x10<sup>-11</sup> [&plusmn;1.16x10<sup>-12</sup> cm<sup>3</sup>/molecule s]  e<sup>-33092 [&plusmn;989 J/mole]/RT</sup><BR>
+<B>Bath gas:</B>&nbsp;&nbsp;
+<A HREF=https://webbook.nist.gov/cgi/cbook.cgi?ID=7727379&Units=SI TARGET=_blank>N2</A><BR>
+<b>Category:</b>&nbsp; Experiment<br>
+<B>Data type:</B>&nbsp;&nbsp;
+Absolute value measured directly<BR>
+<B>Excitation technique:</B>&nbsp;&nbsp;
+Electron beam<BR>
+<B>Analytical technique:</B>&nbsp;&nbsp;
+Electron spin resonance (ESR or EPR)<BR>
+<p><a href="/kinetics/Detail;jsessionid=7BB4A236796FA3D852EB2C9577B8C724?id=1967WIL2017:0">View</a> full bibliographic record.<br>
+<hr>
+<h3>Rate constant values calculated from the Arrhenius expression:</h3>
+<table>
+<tr><th>T (K)</th><th>k(T) [cm<SUP>3</SUP>/molecule s]</th></tr>
+<tr>
+<td>300</td>
+<td>4.05E-17</td>
+</tr>
+<tr>
+<td>350</td>
+<td>2.70E-16</td>
+</tr>
+<tr>
+<td>400</td>
+<td>1.12E-15</td>
+</tr>
+<tr>
+<td>450</td>
+<td>3.38E-15</td>
+</tr>
+<tr>
+<td>500</td>
+<td>8.17E-15</td>
+</tr>
+<tr>
+<td>550</td>
+<td>1.69E-14</td>
+</tr>
+<tr>
+<td>600</td>
+<td>3.08E-14</td>
+</tr>
+<tr>
+<td>650</td>
+<td>5.13E-14</td>
+</tr>
+<tr>
+<td>700</td>
+<td>7.95E-14</td>
+</tr>
+<tr>
+<td>750</td>
+<td>1.16E-13</td>
+</tr>
+<tr>
+<td>800</td>
+<td>1.62E-13</td>
+</tr>
+<tr>
+<td>850</td>
+<td>2.17E-13</td>
+</tr>
+<tr>
+<td>900</td>
+<td>2.81E-13</td>
+</tr>
+</table>
+    </td>
+
+  </tr>
+
+</table>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a21705f29cec7c6a',t:'MTc4NTEwNjg1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

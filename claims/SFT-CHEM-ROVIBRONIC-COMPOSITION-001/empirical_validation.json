@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-ROVIBRONIC-COMPOSITION-001",
+  "data_source_ids": [
+    "NIST-MOLECULAR-SPECTROSCOPY-H2-D2-SUCCESSOR"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8f019b0f3ea3ea535a7c289531764cc65b10391f2f163711b125f83f966e36dd",
+  "falsification_condition": "The claim fails if any retained nucleus, isotope, electronic, vibrational, rotational, spin or observation coordinate can be erased without merging a registered state; if the exact admitted H2/D2 ladder or isotope relations leave the complete NIST displayed-resolution vector; if a source is opened before the prediction seal; or if any favorable, unfavorable, predecessor or tampered row is omitted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:97d2bb3f62cc2d5e2b5ed84398ac37a27a424d7d34834989bd700f05cd2b264e",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0ec987e3c955456133dc11d1d303f5379d12a9c52e4aba975c9ef90d01bc2326",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b57b0e5de2a34a061de6ce1923c8aa8dd6706a62d36aca5188c055e2d27b9d4a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3fdabca9b38ab3ba042d3eebb32aa0881167bb110eedba011df361d2cd456473",
+    "prediction_seal_hash": "sha256:130974f13f0e3fe3e78ba0757f8991b80101d468196922eca80462ad60898f98",
+    "program_hash": "sha256:8104042359d09b4528c1a09d08fd2a2612b9289460b0ef3146b82f6982e6d572",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:abd1fe03032d01f053b103c2bec8cc9611876a9b42c8c88b6c75a08bc6084cca",
+    "target_material_present": false,
+    "trace_hash": "sha256:0b1e485860f03978103e809aeb6aa8f1af7a0a1a5664d939ba27ef0f68d65704"
+  },
+  "measurement_receipt_hash": "sha256:f44faf3133a9d2e7dd64e0fd4d6e96844caf5cc9eb358165952a1cf12426a117",
+  "measurements": [
+    "hydrogen_rotation_over_vibration: exact 891050294212130200059015688492600075210824140/64445503903521854869538077484881292205289061521 contained in source-derived interval [1217059/88024270, 1217061/88024250]: True",
+    "hydrogen_anharmonic_over_vibration: exact 1776682883707972233972700395355383633647719432/64445503903521854869538077484881292205289061521 contained in source-derived interval [242671/8802427, 242673/8802425]: True",
+    "deuterium_rotation_over_hydrogen_rotation: exact 127978935375939764924042592947263805/255814091290792903110270905899893418 contained in source-derived interval [202957/405687, 608873/1217059]: True",
+    "deuterium_vibration_over_hydrogen_vibration_squared: exact 128184365564433438104117938993725957/255814091290792903110270905899893418 contained in source-derived interval [38825236380100/77482721090329, 1553019424804/3099307435225]: True",
+    "NIST-MOLECULAR-H2-D2-COMPLETE-VECTOR: predicted terminal-molecular-JJplusOne-anharmonic-and-isotope-relations-contained-in-complete-NIST-H2-D2-displayed-resolution-vector__observational-prediction-protocol-passed; source-derived terminal-molecular-JJplusOne-anharmonic-and-isotope-relations-contained-in-complete-NIST-H2-D2-displayed-resolution-vector__observational-prediction-protocol-passed; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:15eb1a56334502803d7c3d1dbb4bc54421ac4715520c63838dfa14fa5cedd485",
+    "custodian_id": "SFT-EXP-CHEM-ROVIBRONIC-COMPOSITION-001-external-target-custodian",
+    "experiment_registration_hash": "sha256:8f019b0f3ea3ea535a7c289531764cc65b10391f2f163711b125f83f966e36dd",
+    "prediction_seal_hash": "sha256:130974f13f0e3fe3e78ba0757f8991b80101d468196922eca80462ad60898f98",
+    "registered_target_identity_hash": "sha256:abd1fe03032d01f053b103c2bec8cc9611876a9b42c8c88b6c75a08bc6084cca",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ea19a4b5993fa4638198000fea4d21d17934683f5f826e70221ce0dfc5838e44"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:0358f73d4a6c8b63dbf2da56a28cc21496286c0edec1b7ed85cfe90ecda0bca1"
+}

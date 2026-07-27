@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-FINITE-MICROSTATE-SUPPORT-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:6572d31d70c74976313000e5bf8a08b713816419110371e85415da892fb3f767"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fbdccf18d0cdab5ddb2ad9cea3230bc0270c618a33c39af0c9837ace021e14cd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ccf68a1b05a06e3ac7880bd13665d65aa954944705a0c708f096979e3a06b158"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:c3034c6a32a8a2e7166ef3b370a8a37bb0b2dda0e0f52f0fc58dd2ce80e79934"
+    }
+  ]
+}

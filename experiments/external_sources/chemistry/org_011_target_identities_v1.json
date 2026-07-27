@@ -1,0 +1,84 @@
+{
+  "schema": "sft-v3-chemistry-org-011-target-identities/1",
+  "claim_id": "SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011",
+  "obligation_id": "SFT-CHEM-OBL-ORG-011",
+  "registered_date": "2026-07-27",
+  "law_path": "sft/chemistry/rearrangement_reaction_law_v1.py",
+  "law_sha256": "sha256:9e06ff8f7e720ef9efb6b79db6c501d8b01d04506744b84362c7b614c0d9ce3a",
+  "supplementary_product_structures_characterization_values_or_complete_pages_present": false,
+  "development_observed_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-011-IUPAC-001",
+      "source_id": "IUPAC-M03997",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "molecular rearrangement complete current term record",
+      "source_record_role": "composition-connectivity and intramolecular/intermolecular scope correspondence",
+      "custody_class": "development_observed",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-m03997.json",
+      "snapshot_sha256": "sha256:55614e4895882e0d0405d675ffce95f09fffbf30f0f001e071b138655a3ccedd"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-011-IUPAC-002",
+      "source_id": "IUPAC-R05194",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "rearrangement requested current term route",
+      "source_record_role": "preserved malformed HTML response that resolves to molecular rearrangement rather than a distinct JSON record",
+      "custody_class": "development_observed_adverse_capture_preserved",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-r05194.json",
+      "snapshot_sha256": "sha256:420b101c1f21ba8055e107379491a899067479c12002a6ae0707016eeadde0ba"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-011-IUPAC-003",
+      "source_id": "IUPAC-R05196",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "rearrangement stage complete current term record",
+      "source_record_role": "bond-making and bond-breaking stage correspondence",
+      "custody_class": "development_observed",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-r05196.json",
+      "snapshot_sha256": "sha256:70da8c9927572e8c39fec4b69fb711b7ebdc5581b275dd310a46fd3a3551d17c"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-011-ARTICLE-001",
+      "source_id": "EUROPE-PMC-PMC8247891-ARTICLE",
+      "authority": "Europe PMC and Angewandte Chemie International Edition",
+      "registered_identity": "Divergent, Strain-Release Reactions of Azabicyclo[1.1.0]butyl Carbinols: Semipinacol or Spiroepoxy Azetidine Formation",
+      "doi": "10.1002/anie.202100583",
+      "pmcid": "PMC8247891",
+      "pmid": "33555105",
+      "source_record_role": "open-access article identity and disclosed family scope only",
+      "custody_class": "development_observed_article_exact_supplement_unopened",
+      "article_disclosures_before_seal": [
+        "the article reports semipinacol rearrangement and a divergent spiroepoxy pathway",
+        "the article-level search result disclosed a substrate scope and selected product/yield prose",
+        "the exact supplementary pages, complete starting-material and product vectors, spectra, adverse rows and characterization values remained unopened"
+      ]
+    }
+  ],
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-011-EUROPEPMC-SUPPLEMENT-001",
+      "source_id": "EUROPE-PMC-PMC8247891-SUPPLEMENTARY-FILES",
+      "authority": "Europe PMC official full-text and supplementary-file service",
+      "registered_identity": "complete supplementary-file archive for PMC8247891",
+      "source_record_role": "blind complete starting-material, rearrangement-product, divergent-product, optimization, adverse-control and spectral surface",
+      "custody_class": "outcome_unopened_before_org_011_claim_specific_seal",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8247891/supplementaryFiles",
+      "registered_http_head": {
+        "http_status": 200,
+        "content_type": "application/zip",
+        "content_disposition": "attachment; filename = PMC8247891_SupplementaryFiles.zip"
+      },
+      "supplementary_archive_downloaded_or_opened_before_seal": false
+    }
+  ],
+  "blind_postseal_rule": {
+    "archive_completeness": "Retain every archive member and every page of every registered supplementary document; do not select only successful rearrangement products.",
+    "product_vector": "Retain every reported starting material, rearrangement product, divergent product, alternative, yield inscription, stereochemical inscription, unsuccessful row, optimization row, mechanism control and characterization block in source order.",
+    "structural_test": "For every complete source/product pair exposed by the supplement, test exact atom occurrence retention, exact held-support identity retention and a positive finite change of support incidence; do not infer absent coproducts or structures.",
+    "scope_test": "Preserve semipinacol rearrangement and the divergent spiroepoxy branch separately; no reaction-success or preferred-branch threshold is permitted.",
+    "absence": "Any pair that cannot be reconstructed exactly remains unresolved; any mismatch remains adverse; neither class may be omitted.",
+    "observation_order": "The Fold law, target identities and value-free product-vector relation seal before the supplementary archive opens."
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum, yield, temperature, time, energy or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "supplementary_archive_open_count_before_seal": 0
+}

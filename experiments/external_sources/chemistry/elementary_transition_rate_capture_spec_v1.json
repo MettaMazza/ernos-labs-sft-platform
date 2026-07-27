@@ -1,0 +1,45 @@
+{
+  "schema": "sft-v3-elementary-transition-rate-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-KIN-001",
+  "claim_id": "SFT-CHEM-ELEMENTARY-TRANSITION-RATE-001",
+  "capture_rule": "Capture every byte and every reaction identity, endpoint state, source citation, declared condition, experimental category, data type, procedure record, rate-expression inscription and complete tabulated temperature/rate row from each declared NIST SRD 17 detail record. Preserve complete pages and every table row. Do not select or omit rows by their temperature, rate value, trend or agreement.",
+  "source_selection_boundary": "The four NIST record identities are fixed before executable-law registration, candidate enumeration or prediction-program construction. The boundary is structural rather than value-selected: one declared unimolecular transition, two independently sourced declared bimolecular transitions and one declared termolecular transition, all categorized by NIST as experiments and all carrying tabulated rate vectors. Conventional reaction order, Arrhenius expressions and tabulated rates remain post-seal source provenance and never enter the Fold law or its candidate decisions.",
+  "sources": [
+    {
+      "source_id": "NIST-SRD17-1972TIN-KOO3-15",
+      "measurement_body": "National Institute of Standards and Technology Chemical Kinetics Database, SRD 17",
+      "record_id": "1972TIN/KOO3:15",
+      "detail_url": "https://kinetics.nist.gov/kinetics/Detail?id=1972TIN%2FKOO3%3A15",
+      "capture_scope": "complete declared unimolecular experimental record and every tabulated rate row"
+    },
+    {
+      "source_id": "NIST-SRD17-1967WIL2017-1",
+      "measurement_body": "National Institute of Standards and Technology Chemical Kinetics Database, SRD 17",
+      "record_id": "1967WIL2017:1",
+      "detail_url": "https://kinetics.nist.gov/kinetics/Detail?id=1967WIL2017%3A1",
+      "capture_scope": "complete first declared bimolecular experimental record and every tabulated rate row"
+    },
+    {
+      "source_id": "NIST-SRD17-1967AVR-KRA501-503-1",
+      "measurement_body": "National Institute of Standards and Technology Chemical Kinetics Database, SRD 17",
+      "record_id": "1967AVR/KRA501-503:1",
+      "detail_url": "https://kinetics.nist.gov/kinetics/Detail?id=1967AVR%2FKRA501-503%3A1",
+      "capture_scope": "complete second independently sourced declared bimolecular experimental record and every tabulated rate row"
+    },
+    {
+      "source_id": "NIST-SRD17-1962ASH-BUR685-691-1",
+      "measurement_body": "National Institute of Standards and Technology Chemical Kinetics Database, SRD 17",
+      "record_id": "1962ASH/BUR685-691:1",
+      "detail_url": "https://kinetics.nist.gov/kinetics/Detail?id=1962ASH%2FBUR685-691%3A1",
+      "capture_scope": "complete declared termolecular experimental record and every tabulated rate row"
+    }
+  ],
+  "all_reaction_state_condition_method_expression_temperature_rate_value_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "mass_action_rate_equation_reaction_order_arrhenius_logarithm_concentration_derivative_or_continuum_permitted_in_law": false,
+  "source_reported_arrhenius_tabulations_are_external_records_not_raw_event_counts": true,
+  "external_zero_glyph_if_encountered_must_remain_source_provenance_or_translate_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

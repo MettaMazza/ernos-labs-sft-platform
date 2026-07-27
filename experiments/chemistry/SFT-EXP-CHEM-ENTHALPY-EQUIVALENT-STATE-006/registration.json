@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "NIST_snapshot": [
+    "experiments/external_sources/chemistry/snapshots/thermo-shared-water-isobar-v1/nist-webbook-water-isobar-1bar-300-400K.html",
+    "sha256:fe25279cb2c8f54a749b503dc17249656e8ac773be0b273aa3f99d283d15050c"
+  ],
+  "all_enthalpy_component_phase_and_state_values_absent_from_prediction": true,
+  "claim_id": "SFT-CHEM-ENTHALPY-EQUIVALENT-STATE-006",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-ENTHALPY-EQUIVALENT-STATE-006",
+  "external_sources": [
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "complete direct enthalpy, internal-energy, pressure-volume and phase state vector",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-WATER-FLUID-PROPERTIES"
+    }
+  ],
+  "falsification_condition": "The claim fails if an enthalpy-equivalent state requires an imported thermodynamic equation, signed scalar, fitted environment correction or lost state identity; if absence requires numerical zero; if direction requires negative content; if successor extension changes a prior part; if any target opens before all identities seal; if any of thirteen enthalpy/component rows is omitted; if the complete enthalpy path or environment contributions are not exact positive; if the independent pressure-volume and enthalpy/internal-energy component records disagree beyond exact displayed-resolution bounds; or if targets select the law.",
+  "frozen_relation": "complete-held-state-and-environment-carrier__retained-exact-positive-internal-content__observation-forced-organized-environment-transfer-parts__exact-positive-composition-plus-EmptyOne-absence__held-state-orientation-plus-positive-separation__complete-value-free-enthalpy-state-identity-seal__complete-13-row-enthalpy-component-vector__depth-independent-append-only-environment-part-successor",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/thermophysical_state_target_identities_v1.json",
+    "sha256:1161a9a8913ddedd309110077bcdab883fbb1f7046a59e279e8972f435602025"
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "enthalpy_component_or_state_values_present": false,
+    "program_hash": "sha256:9466213f7c6741224cdc261f3654acfbb93095d2f90fdf6f4b2ebfa67c66b729",
+    "target_content_inaccessible": true
+  },
+  "primary_source_record": [
+    "experiments/external_sources/chemistry/snapshots/thermo-shared-water-isobar-v1/thermophysical-state-primary-records-v1.json",
+    "sha256:48d25011fb7b87017a06e8b0e89d3f4a8d9928ef74625008cd2f7cba9a124c95"
+  ],
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "status": "complete_direct_enthalpy_and_component_vectors_opened_postseal",
+  "target_ids": [
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0001",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0002",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0003",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0004",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0005",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0006",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0007",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0008",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0009",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0010",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0011",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0012",
+    "SFT-CHEM-THERMO-SHARED-WATER-ISOBAR-0013"
+  ],
+  "withheld_target_registry": [
+    "experiments/external_sources/chemistry/thermophysical_state_withheld_targets_v1.json",
+    "sha256:707f5005e6a47197f320e98977d2a2c000dfa4bc2877f81c6e38b1a6c7d637ad"
+  ]
+}

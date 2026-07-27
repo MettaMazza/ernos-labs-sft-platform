@@ -1,0 +1,55 @@
+{
+  "schema": "sft-v3-chemistry-org-011-target-identities/2",
+  "claim_id": "SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011",
+  "obligation_id": "SFT-CHEM-OBL-ORG-011",
+  "registered_date": "2026-07-27",
+  "law_path": "sft/chemistry/rearrangement_reaction_law_v1.py",
+  "law_sha256": "sha256:9e06ff8f7e720ef9efb6b79db6c501d8b01d04506744b84362c7b614c0d9ce3a",
+  "preserved_first_blind_surface": {
+    "target_identity_path": "experiments/external_sources/chemistry/org_011_target_identities_v1.json",
+    "target_identity_sha256": "sha256:8ae0fcf2482cc32fa65e8b718de312883a88789c1c172c2e208f87bf14538b85",
+    "analysis_path": "experiments/external_sources/chemistry/snapshots/org-011-europe-pmc-blind-v1/complete-postseal-analysis-v1.json",
+    "analysis_sha256": "sha256:ac22ce665f1b93617b07705518b499ef233c1a8e22122bd27a6768180dfbe031",
+    "result": "All 12 archive members, all 114 PDF pages, 20 starting materials and 52 product-characterization blocks are retained. The displayed schemes omit at least one complete reagent-derived or coproduct carrier, so all exact whole-reaction atom/support comparisons remain unresolved and this surface does not close ORG-011."
+  },
+  "development_observed_article_surface": {
+    "target_id": "SFT-CHEM-ORG-011-CLAISEN-ARTICLE-001",
+    "source_id": "PMC2547484-ARTICLE",
+    "authority": "PubMed Central and Journal of the American Chemical Society",
+    "registered_identity": "Enantioselective Claisen Rearrangements with a Hydrogen-Bond Donor Catalyst",
+    "doi": "10.1021/ja803370x",
+    "pmcid": "PMC2547484",
+    "pmid": "18576616",
+    "custody_class": "development_observed_article_exact_supplement_unopened",
+    "disclosures_before_supplement_seal": [
+      "the article identifies a [3,3]-sigmatropic rearrangement of substituted allyl vinyl ethers",
+      "the article's two displayed tables, substrate/product graphics, conversions, yields, stereochemical ratios and prose were opened during source orientation and can never be relabelled blind",
+      "the article identifies the supplement as complete experimental procedures, optimization studies and characterization data for new compounds",
+      "the exact supplementary PDF pages, characterization blocks, formula inscriptions and spectra remained unopened"
+    ]
+  },
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-011-CLAISEN-SUPPLEMENT-001",
+      "source_id": "PMC2547484-NIHMS54435-SUPPLEMENT-1",
+      "authority": "PubMed Central official associated-data surface",
+      "registered_identity": "NIHMS54435-supplement-1.pdf complete supporting information",
+      "source_record_role": "blind complete experimental, starting-material, rearrangement-product, optimization, adverse-control, characterization and spectral surface",
+      "custody_class": "outcome_unopened_before_org_011_v2_claim_specific_seal",
+      "expected_filename": "NIHMS54435-supplement-1.pdf",
+      "article_link_identity": "PMC2547484 associated-data supplement link 40",
+      "uri": "https://pmc.ncbi.nlm.nih.gov/articles/instance/2547484/bin/NIHMS54435-supplement-1.pdf",
+      "supplementary_pdf_downloaded_or_opened_before_seal": false
+    }
+  ],
+  "blind_postseal_rule": {
+    "document_completeness": "Retain every page and every characterization, optimization, unfavorable, absent, unresolved and spectral row in source order.",
+    "pair_selection": "Retain every source/product pair explicitly joined by one reported Claisen rearrangement procedure; no yield, selectivity, formula-equality or favorable-result filter is permitted.",
+    "structural_test": "Where both source and product structures and formula inscriptions are complete, test identical atom inventory and a positive finite constitutional-incidence change. Never infer an unprinted structure, coproduct or atom map.",
+    "support_test": "A conventional structure pair may externally test support incidence but cannot observe the physical identity of individual held supports; that identity remains an independently reconstructed Fold consequence.",
+    "absence": "Every pair lacking either complete endpoint remains unresolved; every complete mismatch remains adverse; neither class may be omitted.",
+    "observation_order": "The unchanged Fold law, V1 boundary, target identity and value-free exact-pair relation seal before this supplementary PDF opens."
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum, yield, temperature, time, energy, enantiomeric excess, stereochemical ratio or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "supplementary_pdf_open_count_before_seal": 0
+}

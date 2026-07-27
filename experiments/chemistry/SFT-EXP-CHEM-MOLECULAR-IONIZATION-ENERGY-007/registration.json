@@ -1,0 +1,1539 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_nine_energy_values_absent_from_prediction": true,
+  "claim_id": "SFT-CHEM-MOLECULAR-IONIZATION-ENERGY-007",
+  "definition_source": [
+    "experiments/external_sources/chemistry/snapshots/prop-007-molecular-ionization-v1/nist-webbook-gas-phase-ion-thermochemistry.html",
+    "sha256:3037004952cc27531f9ff87ed9f403e7dc2fd3c7293881a3ab3b7bfb9a5523d6"
+  ],
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-MOLECULAR-IONIZATION-ENERGY-007",
+  "external_measurement_sources": [
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "ionization definitions and adiabatic/vertical state-ordering surface",
+      "source_id": "NIST-WEBBOOK-SRD69-GAS-PHASE-ION-THERMOCHEMISTRY"
+    },
+    {
+      "measurement_body": "National Institute of Standards and Technology",
+      "role": "withheld complete nine-species experimental ionization-energy vector",
+      "source_id": "NIST-CCCBDB-SRD101-EXPERIMENTAL-IONIZATION-ENERGY"
+    }
+  ],
+  "falsification_condition": "The claim fails if a registered separated ion-plus-electron state does not lie at an exact positive Take from its retained neutral state; if a held-geometry vertical terminal lies below the least complete-support adiabatic terminal; if any of the nine post-seal NIST records is absent, duplicated, displaced, non-positive or detached from its initial and resulting states, method, condition, units and uncertainty class; if a target value is readable before sealing; or if a signed, continuum, imported, fitted or species-specific correction rule is introduced.",
+  "frozen_relation": "complete-neutral-to-ionic-carrier__held-removal-and-positive-terminal-separation__ordered-positive-final-from-initial-Take__least-adiabatic-and-held-geometry-vertical-paths__vertical-not-below-adiabatic__value-free-carrier-and-operation-seal__complete-nine-diatomic-NIST-vector__one-ionization-law-no-extra-rule",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/molecular_ionization_target_identities_v1.json",
+    "sha256:c14f627c7e247f01fc02243fce3d9cf6e06be5df92f1edf855787c0703f79c9c"
+  ],
+  "normalized_primary_records": [
+    "experiments/external_sources/chemistry/snapshots/prop-007-molecular-ionization-v1/molecular-ionization-primary-records-v1.json",
+    "sha256:060293fa3a611e46a26fc0ac004a9933542c6b61ecc48c3a9e84bd320b755212"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-D2-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-1-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "D2"
+        ],
+        "destination": "ionization-row-1-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Deuterium diatomic"
+        ],
+        "destination": "ionization-row-1-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "7782390"
+        ],
+        "destination": "ionization-row-1-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma-g"
+        ],
+        "destination": "ionization-row-1-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-1-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "D2-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-1-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-1-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-1-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-1-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-1-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-1-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-displays-no-explicit-uncertainty; exact display-rounding-enclosure-only"
+        ],
+        "destination": "ionization-row-1-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-1-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-1-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-1-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-1-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-1-identity-1",
+          "ionization-row-1-identity-2",
+          "ionization-row-1-identity-3",
+          "ionization-row-1-identity-4",
+          "ionization-row-1-identity-5",
+          "ionization-row-1-identity-6",
+          "ionization-row-1-identity-7",
+          "ionization-row-1-identity-8",
+          "ionization-row-1-identity-9",
+          "ionization-row-1-identity-10",
+          "ionization-row-1-identity-11",
+          "ionization-row-1-identity-12",
+          "ionization-row-1-law-13",
+          "ionization-row-1-law-14",
+          "ionization-row-1-law-15",
+          "ionization-row-1-law-16"
+        ],
+        "destination": "ionization-row-1-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-HD-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-2-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "HD"
+        ],
+        "destination": "ionization-row-2-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Deuterium hydride"
+        ],
+        "destination": "ionization-row-2-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "13983205"
+        ],
+        "destination": "ionization-row-2-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma-g"
+        ],
+        "destination": "ionization-row-2-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-2-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "HD-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-2-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-2-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-2-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-2-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-2-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-2-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-displays-no-explicit-uncertainty; exact display-rounding-enclosure-only"
+        ],
+        "destination": "ionization-row-2-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-2-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-2-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-2-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-2-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-2-identity-1",
+          "ionization-row-2-identity-2",
+          "ionization-row-2-identity-3",
+          "ionization-row-2-identity-4",
+          "ionization-row-2-identity-5",
+          "ionization-row-2-identity-6",
+          "ionization-row-2-identity-7",
+          "ionization-row-2-identity-8",
+          "ionization-row-2-identity-9",
+          "ionization-row-2-identity-10",
+          "ionization-row-2-identity-11",
+          "ionization-row-2-identity-12",
+          "ionization-row-2-law-13",
+          "ionization-row-2-law-14",
+          "ionization-row-2-law-15",
+          "ionization-row-2-law-16"
+        ],
+        "destination": "ionization-row-2-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-H2-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-3-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "H2"
+        ],
+        "destination": "ionization-row-3-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Hydrogen diatomic"
+        ],
+        "destination": "ionization-row-3-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "1333740"
+        ],
+        "destination": "ionization-row-3-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma-g"
+        ],
+        "destination": "ionization-row-3-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-3-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "H2-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-3-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-3-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-3-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-3-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-3-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-3-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-3-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-3-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-3-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-3-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-3-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-3-identity-1",
+          "ionization-row-3-identity-2",
+          "ionization-row-3-identity-3",
+          "ionization-row-3-identity-4",
+          "ionization-row-3-identity-5",
+          "ionization-row-3-identity-6",
+          "ionization-row-3-identity-7",
+          "ionization-row-3-identity-8",
+          "ionization-row-3-identity-9",
+          "ionization-row-3-identity-10",
+          "ionization-row-3-identity-11",
+          "ionization-row-3-identity-12",
+          "ionization-row-3-law-13",
+          "ionization-row-3-law-14",
+          "ionization-row-3-law-15",
+          "ionization-row-3-law-16"
+        ],
+        "destination": "ionization-row-3-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-N2-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-4-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "N2"
+        ],
+        "destination": "ionization-row-4-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Nitrogen diatomic"
+        ],
+        "destination": "ionization-row-4-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "7727379"
+        ],
+        "destination": "ionization-row-4-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma-g"
+        ],
+        "destination": "ionization-row-4-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-4-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "N2-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-4-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-4-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-4-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-4-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-4-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-4-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-4-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-4-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-4-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-4-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-4-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-4-identity-1",
+          "ionization-row-4-identity-2",
+          "ionization-row-4-identity-3",
+          "ionization-row-4-identity-4",
+          "ionization-row-4-identity-5",
+          "ionization-row-4-identity-6",
+          "ionization-row-4-identity-7",
+          "ionization-row-4-identity-8",
+          "ionization-row-4-identity-9",
+          "ionization-row-4-identity-10",
+          "ionization-row-4-identity-11",
+          "ionization-row-4-identity-12",
+          "ionization-row-4-law-13",
+          "ionization-row-4-law-14",
+          "ionization-row-4-law-15",
+          "ionization-row-4-law-16"
+        ],
+        "destination": "ionization-row-4-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-CO-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-5-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "CO"
+        ],
+        "destination": "ionization-row-5-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Carbon monoxide"
+        ],
+        "destination": "ionization-row-5-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "630080"
+        ],
+        "destination": "ionization-row-5-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma"
+        ],
+        "destination": "ionization-row-5-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "C-infinity-v"
+        ],
+        "destination": "ionization-row-5-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "CO-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-5-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-5-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-5-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-5-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-5-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-5-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-5-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-5-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-5-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-5-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-5-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-5-identity-1",
+          "ionization-row-5-identity-2",
+          "ionization-row-5-identity-3",
+          "ionization-row-5-identity-4",
+          "ionization-row-5-identity-5",
+          "ionization-row-5-identity-6",
+          "ionization-row-5-identity-7",
+          "ionization-row-5-identity-8",
+          "ionization-row-5-identity-9",
+          "ionization-row-5-identity-10",
+          "ionization-row-5-identity-11",
+          "ionization-row-5-identity-12",
+          "ionization-row-5-law-13",
+          "ionization-row-5-law-14",
+          "ionization-row-5-law-15",
+          "ionization-row-5-law-16"
+        ],
+        "destination": "ionization-row-5-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-NO-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-6-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "NO"
+        ],
+        "destination": "ionization-row-6-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Nitric oxide"
+        ],
+        "destination": "ionization-row-6-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "10102439"
+        ],
+        "destination": "ionization-row-6-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "2-Pi"
+        ],
+        "destination": "ionization-row-6-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "C-infinity-v"
+        ],
+        "destination": "ionization-row-6-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "NO-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-6-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-6-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-6-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-6-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-6-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-6-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-6-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-6-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-6-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-6-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-6-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-6-identity-1",
+          "ionization-row-6-identity-2",
+          "ionization-row-6-identity-3",
+          "ionization-row-6-identity-4",
+          "ionization-row-6-identity-5",
+          "ionization-row-6-identity-6",
+          "ionization-row-6-identity-7",
+          "ionization-row-6-identity-8",
+          "ionization-row-6-identity-9",
+          "ionization-row-6-identity-10",
+          "ionization-row-6-identity-11",
+          "ionization-row-6-identity-12",
+          "ionization-row-6-law-13",
+          "ionization-row-6-law-14",
+          "ionization-row-6-law-15",
+          "ionization-row-6-law-16"
+        ],
+        "destination": "ionization-row-6-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-O2-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-7-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "O2"
+        ],
+        "destination": "ionization-row-7-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Oxygen diatomic"
+        ],
+        "destination": "ionization-row-7-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "7782447"
+        ],
+        "destination": "ionization-row-7-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "3-Sigma-g"
+        ],
+        "destination": "ionization-row-7-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-7-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "O2-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-7-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-7-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-7-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-7-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-7-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-7-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-7-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-7-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-7-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-7-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-7-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-7-identity-1",
+          "ionization-row-7-identity-2",
+          "ionization-row-7-identity-3",
+          "ionization-row-7-identity-4",
+          "ionization-row-7-identity-5",
+          "ionization-row-7-identity-6",
+          "ionization-row-7-identity-7",
+          "ionization-row-7-identity-8",
+          "ionization-row-7-identity-9",
+          "ionization-row-7-identity-10",
+          "ionization-row-7-identity-11",
+          "ionization-row-7-identity-12",
+          "ionization-row-7-law-13",
+          "ionization-row-7-law-14",
+          "ionization-row-7-law-15",
+          "ionization-row-7-law-16"
+        ],
+        "destination": "ionization-row-7-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-HF-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-8-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "HF"
+        ],
+        "destination": "ionization-row-8-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Hydrogen fluoride"
+        ],
+        "destination": "ionization-row-8-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "7664393"
+        ],
+        "destination": "ionization-row-8-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma"
+        ],
+        "destination": "ionization-row-8-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "C-infinity-v"
+        ],
+        "destination": "ionization-row-8-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "HF-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-8-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-8-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-8-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-8-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-8-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-8-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-8-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-8-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-8-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-8-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-8-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-8-identity-1",
+          "ionization-row-8-identity-2",
+          "ionization-row-8-identity-3",
+          "ionization-row-8-identity-4",
+          "ionization-row-8-identity-5",
+          "ionization-row-8-identity-6",
+          "ionization-row-8-identity-7",
+          "ionization-row-8-identity-8",
+          "ionization-row-8-identity-9",
+          "ionization-row-8-identity-10",
+          "ionization-row-8-identity-11",
+          "ionization-row-8-identity-12",
+          "ionization-row-8-law-13",
+          "ionization-row-8-law-14",
+          "ionization-row-8-law-15",
+          "ionization-row-8-law-16"
+        ],
+        "destination": "ionization-row-8-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "NIST-CCCBDB-PROP-007-F2-ADIABATIC-IE"
+        ],
+        "destination": "ionization-row-9-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-formula",
+          "F2"
+        ],
+        "destination": "ionization-row-9-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "molecular-name",
+          "Fluorine diatomic"
+        ],
+        "destination": "ionization-row-9-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "source-species-identity",
+          "7782414"
+        ],
+        "destination": "ionization-row-9-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-state",
+          "1-Sigma-g"
+        ],
+        "destination": "ionization-row-9-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "initial-molecular-conformation",
+          "D-infinity-h"
+        ],
+        "destination": "ionization-row-9-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "resulting-ionic-state",
+          "F2-positive-ion-least-generated-state"
+        ],
+        "destination": "ionization-row-9-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "removed-carrier",
+          "one-held-electron-distinction"
+        ],
+        "destination": "ionization-row-9-identity-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-path",
+          "adiabatic-least-terminal-positive-Take"
+        ],
+        "destination": "ionization-row-9-identity-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-method",
+          "NIST-evaluated-experimental-ionization-energy"
+        ],
+        "destination": "ionization-row-9-identity-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-condition",
+          "isolated-gas-phase-molecule-to-isolated-positive-ion-and-released-electron"
+        ],
+        "destination": "ionization-row-9-identity-10",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "measurement-unit",
+          "electronvolt"
+        ],
+        "destination": "ionization-row-9-identity-11",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "uncertainty-class",
+          "source-explicit-symmetric-uncertainty"
+        ],
+        "destination": "ionization-row-9-identity-12",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "held-removal-orientation",
+          "neutral-carrier-to-separated-ion-and-electron"
+        ],
+        "destination": "ionization-row-9-law-13",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "ionization-law",
+          "ordered-positive-terminal-from-initial-Take"
+        ],
+        "destination": "ionization-row-9-law-14",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "adiabatic-law",
+          "least-complete-generated-terminal-Take"
+        ],
+        "destination": "ionization-row-9-law-15",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "vertical-law",
+          "held-geometry-terminal-not-below-adiabatic"
+        ],
+        "destination": "ionization-row-9-law-16",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "ionization-row-9-identity-1",
+          "ionization-row-9-identity-2",
+          "ionization-row-9-identity-3",
+          "ionization-row-9-identity-4",
+          "ionization-row-9-identity-5",
+          "ionization-row-9-identity-6",
+          "ionization-row-9-identity-7",
+          "ionization-row-9-identity-8",
+          "ionization-row-9-identity-9",
+          "ionization-row-9-identity-10",
+          "ionization-row-9-identity-11",
+          "ionization-row-9-identity-12",
+          "ionization-row-9-law-13",
+          "ionization-row-9-law-14",
+          "ionization-row-9-law-15",
+          "ionization-row-9-law-16"
+        ],
+        "destination": "ionization-row-9-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "ionization-row-1-target",
+          "ionization-row-1-word",
+          "ionization-row-2-target",
+          "ionization-row-2-word",
+          "ionization-row-3-target",
+          "ionization-row-3-word",
+          "ionization-row-4-target",
+          "ionization-row-4-word",
+          "ionization-row-5-target",
+          "ionization-row-5-word",
+          "ionization-row-6-target",
+          "ionization-row-6-word",
+          "ionization-row-7-target",
+          "ionization-row-7-word",
+          "ionization-row-8-target",
+          "ionization-row-8-word",
+          "ionization-row-9-target",
+          "ionization-row-9-word"
+        ],
+        "destination": "molecular-ionization-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "molecular-ionization-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-MOLECULAR-IONIZATION-ENERGY-007-value-free-complete-vector",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "measured_values_present": false,
+    "program_hash": "sha256:3e83403a2182f010da81fffdba5ff957c1bc97ec1562569ae9a491ba59e7104f",
+    "target_content_inaccessible": true
+  },
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "definition_source": "sha256:3037004952cc27531f9ff87ed9f403e7dc2fd3c7293881a3ab3b7bfb9a5523d6",
+    "identity_registry": "sha256:c14f627c7e247f01fc02243fce3d9cf6e06be5df92f1edf855787c0703f79c9c",
+    "normalized_primary_records": "sha256:060293fa3a611e46a26fc0ac004a9933542c6b61ecc48c3a9e84bd320b755212",
+    "withheld_measurements": "sha256:f2e1f1fbfda163d5e13e5256ab74d2d519adcfc2ee04b21e4bf5b8906ca198f8"
+  },
+  "status": "measured",
+  "target_ids": [
+    "NIST-CCCBDB-PROP-007-D2-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-HD-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-H2-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-N2-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-CO-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-NO-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-O2-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-HF-ADIABATIC-IE",
+    "NIST-CCCBDB-PROP-007-F2-ADIABATIC-IE"
+  ],
+  "withheld_measurement_registry": [
+    "experiments/external_sources/chemistry/molecular_ionization_withheld_targets_v1.json",
+    "sha256:f2e1f1fbfda163d5e13e5256ab74d2d519adcfc2ee04b21e4bf5b8906ca198f8"
+  ]
+}

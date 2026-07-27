@@ -1,0 +1,198 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "meaning": "absence only",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false,
+    "rule": "Absent uncertainty coordinates use EmptyOne; external inscriptions remain held provenance and are never SFT numbers."
+  },
+  "claim_id": "SFT-CHEM-JOINT-CORRELATION-DISSOCIATION-007",
+  "custody_protocol": {
+    "cross_platform_exchange_required": true,
+    "hostile_package_audit_required": true,
+    "identity_registry_hash": "sha256:52c9f872da74817277f48aacaa8536b3dbf972f9cbee8b6d05bf96aa0e181c31",
+    "target_release_requires_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:f7043a52c1c2bd95fc49ab2457f9ab64ad6879e8c835e2fc818dadcd0cbced5c"
+  },
+  "development_observations": [
+    {
+      "measured_values_uncertainties_and_record_classes_absent_from_survivor_selection": true,
+      "role": "question-and-complete-test-domain-only",
+      "source_ids": [
+        "APS-PRA-49-2460-1994",
+        "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-DISSOCIATION"
+      ]
+    }
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "All nine records, all exact inscriptions, the two-to-four structural discriminator and every adverse control pass.",
+    "comparison_implementation_hash": "sha256:be33a83c3de1c0f807716e50c3a71ebca9ebf42b1c3198d65e20781b55119c1a",
+    "evaluator_id": "SFT-EXP-CHEM-JOINT-CORRELATION-DISSOCIATION-007-post-seal-APS-NIST-evaluator",
+    "falsification_condition": "The claim fails if independent marginals reconstruct the exact joint support; if either complementary cross-centre word is missing; if either same-centre Cartesian word is admitted; if constituent names, fitted coefficients or imported correlation models select the support; if the bound-to-separated trace loses carrier or product identity; if any of nine APS/NIST records, six APS values, three NIST values, seven direct measured/compiled records, two explicitly derived ionic records, every uncertainty or exact positive inscription is omitted or changed; or if any source absence glyph is treated as an SFT number.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Require exactly two complementary cross-centre words against four independent Cartesian products.",
+        "metric_id": "nonfactorizable-joint-support"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain all nine exact positive dissociation records and all reported uncertainties.",
+        "metric_id": "complete-dissociation-vector"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain six APS, three NIST, seven direct/compiled and two derived-ion records without reclassification.",
+        "metric_id": "complete-provenance-vector"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-JOINT-CORRELATION-DISSOCIATION-007",
+  "external_measurement_sources": [
+    {
+      "doi": "10.1103/PhysRevA.49.2460",
+      "journal": "Physical Review A 49, 2460 (1994)",
+      "measurement_body": "American Physical Society",
+      "record_boundary": "byte-sealed transparent numerical extract of six primary-source values",
+      "records": 6,
+      "source_id": "APS-PRA-49-2460-1994",
+      "source_uri": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.49.2460"
+    },
+    {
+      "database": "NIST Chemistry WebBook SRD 69",
+      "doi": "10.18434/T4D303",
+      "measurement_body": "National Institute of Standards and Technology",
+      "record_boundary": "byte-sealed source notes independently parsed from the archived HTML",
+      "records": 3,
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-DISSOCIATION",
+      "source_uri": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1000"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of carrier, support, relation, exchange, transition, energy, record and extension forms. Decide all 256 forms solely by admitted indistinguishability, exclusion, joint-state, molecular-support, state-order and exchange laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:76bc27331343ba156cb14e1a296975f10771a5f7afef01d2e9c32728960bc98c",
+      "sha256:634a33c6be3581c5fdd0925eb6b3694ee5ca5b7a4493f3f6951f1c6ad4ab76d2",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:0a3f13e8b7586fc6655baf37580c296b6ed75d53cf5ca223d84d9e3e9d35ec0f",
+      "sha256:d9dafa0eeecd7f63d1ba56da17c2d454a94fa8475005b10e328b68bc40e133e0",
+      "sha256:40c63d50f9534bf644ad6083ebad1475350c9c09898d9a4c64c5dd773825bcb2",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:2fc3c61877e77e8acbf750d5174ecb057e2b07fc43487171282189a57698c080",
+      "sha256:b248b31d8bb539424f97bda94c0b20b9d6a99f7297b03031f5a6dee253a31032",
+      "sha256:d7d1d14baf73e85a4c6029cfed9087be20b20700d294165a5930b89aaedc7bd3",
+      "sha256:c93f72e041c8eb45b6bca804b6c700c216a5fd4965d1a3b571a75ebeb4870454"
+    ],
+    "exact_domain": "Every identical molecular electron pair at a two-centre separated-product boundary and every pairwise successor in a larger finite support graph. External closure uses all nine pre-registered APS and NIST hydrogen/deuterium neutral, ionic, ground-state, excited-state and threshold dissociation records.",
+    "measured_magnitude_not_a_forcing_premise": true,
+    "relation_hash": "sha256:95604a5026c77ba508edc6e62f079a445989ec8b6d1534aceac049231879f691",
+    "statement": "bound-carrier-and-product-support__complete-complementary-joint-support__nonfactorizable-held-joint-relation__held-fibre-exchange-pair__bound-to-separated-support-transition__positive-post-seal-separation-record__complete-measurement-and-provenance-vector__pairwise-successor-with-no-extra-rule",
+    "target_did_not_select_survivor": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:d721c3cec045530fc26e8c963d03f80d70705a40f34bfd16b7415621d7cade8a",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:52c9f872da74817277f48aacaa8536b3dbf972f9cbee8b6d05bf96aa0e181c31",
+      "input_id": "target-identities-only",
+      "outcomes_absent": true,
+      "path": "experiments/external_sources/chemistry/joint_correlation_target_identities_v1.json"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-JOINT-CORRELATION-DISSOCIATION-007-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:dfed1e0bad46a7fa24f9febfebdd615b212017343df25cad22253104ab3e0119",
+    "program_id": "SFT-EXP-CHEM-JOINT-CORRELATION-DISSOCIATION-007-joint-support-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "retention_policy": "retain-all-nine-records-all-values-all-uncertainties-all-provenance-classes-and-all-adverse-results",
+  "scope_boundary": "The forced result is exact nonfactorizable joint support and its bound-to-separated transition. The nine exact dissociation magnitudes are post-seal external observations testing the law's physical domain; this claim does not introduce or pretend to derive a universal numerical energy functional.",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:f18c988cff7a6aa05499c5493a3671cb10ee8ff8ae5555b88663a74f471ceba7",
+    "experiments/external_sources/chemistry/joint_correlation_target_identities_v1.json": "sha256:52c9f872da74817277f48aacaa8536b3dbf972f9cbee8b6d05bf96aa0e181c31",
+    "experiments/external_sources/chemistry/joint_correlation_withheld_targets_v1.json": "sha256:f7043a52c1c2bd95fc49ab2457f9ab64ad6879e8c835e2fc818dadcd0cbced5c",
+    "experiments/external_sources/chemistry/snapshots/aps-hydrogen-dissociation-1994.json": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+    "experiments/external_sources/chemistry/snapshots/electron-spin-v1/C1333740.html": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any violation; otherwise stop after the complete vector and controls.",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-003"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-004"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-005"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:9c41d01395090b18b2eb8b1223e9cb430d9309f79d1a0324b092a5ed8c1b6953",
+      "source_id": "APS-PRA-49-2460-1994",
+      "target_id": "APS-HYDROGEN-DISSOCIATION-006"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-DISSOCIATION",
+      "target_id": "NIST-H2-DISSOCIATION-001"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-DISSOCIATION",
+      "target_id": "NIST-H2-DISSOCIATION-002"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:410fae804b1fa35ab72d829d95bd3b26c831dde2f0ec0078b614fea2c87d795e",
+      "source_id": "NIST-CHEMISTRY-WEBBOOK-SRD69-H2-DISSOCIATION",
+      "target_id": "NIST-H2-DISSOCIATION-003"
+    }
+  ]
+}

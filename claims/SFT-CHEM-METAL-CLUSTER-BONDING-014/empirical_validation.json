@@ -1,0 +1,67 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-METAL-CLUSTER-BONDING-014",
+  "data_source_ids": [
+    "IUPAC-CT06769",
+    "IUPAC-IT06779"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d5f576d3285c40c5b92dce4431faf9187b6426abb49f0436ecdac20822376ad9",
+  "falsification_condition": "The claim fails if centre support is finite-incomplete, duplicated or disconnected; if direct, bridging and held grouping relations are conflated; if bridge occurrences are implicit; if absent classes use numerical zero; if an observed example or charge inscription selects the law; if any of ten IUPAC surfaces is removed; or if outcomes open before sealing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c8d1e43f74e058426f7a2991496f8be42d44f710dfed18a1c31a46acdc6a8b58",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f5311ff2f558a1e24138a51c913699d4dda9cd1813fa867754c319bfc5923324",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-METAL-CLUSTER-BONDING-014-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c430f97e123b0fc3803d504dd86e09a16c0828c68946d17215a6fc453162f849",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e3c02487a9a6816c0c71d1509fa1a1157684a9da66fd58f6253b65844c5e23e8",
+    "prediction_seal_hash": "sha256:8a10747194bae35e8de0e61ec2749f15418cf83825a79060caeaa7d163454c8e",
+    "program_hash": "sha256:f105a8a04339d70ca95dd58e36106f9fb449e2833a1b0755bb3bdd8eae1ca6ce",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:aa9569e7daccd5f4faf8abf2fd8c43f3bbb7998c22639ff18fe339bf112cead3",
+    "target_material_present": false,
+    "trace_hash": "sha256:9aca26ebf2017409c26a001953d9ab2d3fc254e8b88710a8d589f62f2d3c722e"
+  },
+  "measurement_receipt_hash": "sha256:0fbff4fba7020d35fa6dc5728cd33db9fab19eae29811e507aeed152af35bfa0",
+  "measurements": [
+    "two-centre direct, two-centre two-bridge and held grouping cluster witnesses; successor centre count three",
+    "complete ten-row two-source cluster and iron-sulfur vector; external charge inscriptions retained downstream",
+    "complete exact target vector sha256:a96d298d931b9f18de9fad29050c343e88a40991823aa72e6fb3147cc9ddb99e",
+    "control omitted_source_row_rejected: True",
+    "control numerical_zero_rejected: True",
+    "control all_ten_target_hashes_bound_postseal: True",
+    "control disconnected_cluster_rejected: True",
+    "control signed_charge_retained_downstream_only: True",
+    "control sources_not_recaptured: True",
+    "control prediction_contains_no_definition_example_charge_or_target: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2da45bac94d4c947ae1c2ac41ac15975a60907698be51cd25ef5810db2d685d0",
+    "custodian_id": "SFT-EXP-CHEM-METAL-CLUSTER-BONDING-014-complete-target-custodian",
+    "experiment_registration_hash": "sha256:d5f576d3285c40c5b92dce4431faf9187b6426abb49f0436ecdac20822376ad9",
+    "prediction_seal_hash": "sha256:8a10747194bae35e8de0e61ec2749f15418cf83825a79060caeaa7d163454c8e",
+    "registered_target_identity_hash": "sha256:aa9569e7daccd5f4faf8abf2fd8c43f3bbb7998c22639ff18fe339bf112cead3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:29ef2b880d2edd6ad1306edadf05e7f0e7ff00c7f86832b7f38f35326cd66742"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a9b2a5d85541abe26e362307abc8db182de97bcd0bbe9ea23d81179590a036b7"
+}

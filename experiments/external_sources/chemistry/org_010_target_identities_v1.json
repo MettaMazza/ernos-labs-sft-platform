@@ -1,0 +1,71 @@
+{
+  "schema": "sft-v3-chemistry-org-010-target-identities/1",
+  "claim_id": "SFT-CHEM-ELIMINATION-REACTION-FAMILY-010",
+  "obligation_id": "SFT-CHEM-OBL-ORG-010",
+  "registered_date": "2026-07-27",
+  "external_product_structures_yields_spectra_or_supplementary_product_pages_present": false,
+  "development_observed_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-010-IUPAC-001",
+      "source_id": "IUPAC-E02038",
+      "authority": "IUPAC Gold Book",
+      "registered_identity": "elimination complete current term record",
+      "source_record_role": "complete definition and structural-boundary correspondence",
+      "custody_class": "development_observed",
+      "uri": "https://goldbook.iupac.org/terms/view/E02038/json",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-e02038.json",
+      "snapshot_sha256": "sha256:99ec6c2aae4b034e06eb5bc91d11c2c3773aefc78819f6406c7efd35bf7ad075"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-010-RSC-ARTICLE-001",
+      "source_id": "RSC-D4SC01905A-ARTICLE",
+      "authority": "Royal Society of Chemistry, Chemical Science",
+      "registered_identity": "Transition metal-free decarboxylative olefination of carboxylic acid salts, DOI 10.1039/D4SC01905A",
+      "source_record_role": "open-access article identity, elimination-family label, scope identity and disclosed adverse controls only",
+      "custody_class": "development_observed_article_exact_supplementary_product_pages_unopened",
+      "uri": "https://pubs.rsc.org/en/content/articlehtml/2024/sc/d4sc01905a",
+      "doi": "10.1039/D4SC01905A",
+      "pmcid": "PMC11186341",
+      "article_disclosures_before_seal": [
+        "the study reports a decarboxylative elimination scope",
+        "the article identifies the supplementary information as the complete underlying evidence surface",
+        "article-level scope and selected yield prose are development-observed and are not claimed blind",
+        "the exact supplementary product pages, compound-characterization vector, spectra and complete optimization rows remain unopened"
+      ]
+    }
+  ],
+  "outcome_unopened_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-010-EUROPEPMC-SUPPLEMENT-001",
+      "source_id": "EUROPE-PMC-PMC11186341-SUPPLEMENTARY-FILES",
+      "authority": "Europe PMC official full-text and supplementary-file service",
+      "registered_identity": "complete supplementary-file archive for PMC11186341 containing SC-015-D4SC01905A-s001.pdf",
+      "source_record_role": "blind complete product, procedure, characterization, optimization, adverse-control and spectral surface",
+      "custody_class": "outcome_unopened_before_org_010_claim_specific_seal",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11186341/supplementaryFiles",
+      "registered_http_head": {
+        "http_status": 200,
+        "content_type": "application/zip",
+        "content_disposition": "attachment; filename = PMC11186341_SupplementaryFiles.zip"
+      },
+      "registered_archive_member_identity": "SC-015-D4SC01905A-s001.pdf",
+      "registered_supplementary_boundary": {
+        "declared_page_count": 117,
+        "product_analysis_pages": "44-45",
+        "compound_characterization_pages": "46-53",
+        "complete_spectral_pages": "54-116",
+        "page_ranges_are_registered_identity_metadata_only": true,
+        "product_structures_values_and_complete_page_contents_opened_before_seal": false
+      }
+    }
+  ],
+  "blind_postseal_rule": {
+    "archive_completeness": "Retain every archive member and every page of the registered supplementary PDF; do not select only favorable product pages.",
+    "product_vector": "Retain every reported elimination product identity, starting-material identity, product amount or yield inscription, regioisomer or stereoisomer inscription, unsuccessful or recovered-material record, alternative product, optimization row and mechanism control in source order.",
+    "structural_test": "For every complete reported elimination transform whose full reactant and product structures are present, reconstruct the exact atom and held-support carrier and test the sealed inverse-addition law without importing a named mechanism, yield threshold or favored-product selector.",
+    "absence": "Any structure that cannot be reconstructed exactly remains unresolved; any mismatch remains adverse; neither class may be omitted.",
+    "observation_order": "The law, target identities and predicted product-vector relation seal before the supplementary archive opens."
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum, yield, temperature, time, energy or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "supplementary_archive_open_count_before_seal": 0
+}

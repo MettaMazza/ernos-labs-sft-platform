@@ -1,0 +1,267 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "meaning": "absence only",
+    "native_proof_form": "structural EmptyOne",
+    "numerical_zero_admitted": false,
+    "rule": "Categorical source rows use EmptyOne in the magnitude coordinate; decimal inscriptions are exact held post-seal records."
+  },
+  "claim_id": "SFT-CHEM-MULTICENTRE-DELOCALIZED-SUPPORT-008",
+  "custody_protocol": {
+    "cross_platform_exchange_required": true,
+    "hostile_package_audit_required": true,
+    "identity_registry_hash": "sha256:c77b359440bb7f44259974e34ce23b13de0ff2057f4c859c9015a27f033958c4",
+    "target_release_requires_prediction_seal": true,
+    "withheld_target_registry_hash": "sha256:d3188205f896f7ad4719a25d2367bbc98d262c7c66424a02c05ae5dec863c445"
+  },
+  "development_observations": [
+    {
+      "role": "question-and-complete-test-domain-only",
+      "source_ids": [
+        "IUPAC-GOLD-BOOK-08789-2026",
+        "NIST-CCCBDB-SRD101-DIBORANE",
+        "NIST-CCCBDB-SRD101-BENZENE"
+      ],
+      "topologies_species_geometries_and_values_absent_from_survivor_selection": true
+    }
+  ],
+  "evaluation_protocol": {
+    "acceptance_condition": "All 20 rows, all exact values, all topology correspondences and every adverse control pass.",
+    "comparison_implementation_hash": "sha256:6e28ffc0c464efc7284c21a0226a27d5677da623ca2ee530c40c0a97cbe10f85",
+    "evaluator_id": "SFT-EXP-CHEM-MULTICENTRE-DELOCALIZED-SUPPORT-008-post-seal-IUPAC-NIST-evaluator",
+    "falsification_condition": "The claim fails if the complete support is disconnected; if fewer than three centres are relabelled multicentre; if a one-pair support retains the same complete identity as a support spanning three or more centres; if path, cycle or polyhedral incidence requires an imported chemical model; if the measured B-H-B bridge or equal six-link benzene cycle is absent; if any of four IUPAC, nine diborane or seven benzene registered rows is omitted or changed; or if an absence glyph is treated as an SFT number.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Retain the complete neutral-diborane geometry, including distinct outer/bridging B-H distances and B-H-B connectivity.",
+        "metric_id": "three-centre-bridge"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain the complete benzene geometry and all six equal aromatic links.",
+        "metric_id": "six-centre-cycle"
+      },
+      {
+        "all_rows": true,
+        "definition": "Retain IUPAC ribbon, surface and volume delocalization records and the localized-model contrast.",
+        "metric_id": "topology-census"
+      }
+    ]
+  },
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-MULTICENTRE-DELOCALIZED-SUPPORT-008",
+  "external_measurement_sources": [
+    {
+      "database": "IUPAC Gold Book 5th edition",
+      "doi": "10.1351/goldbook.08789",
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "records": 4,
+      "role": "complete-authoritative-delocalization-topology-vector",
+      "source_id": "IUPAC-GOLD-BOOK-08789-2026"
+    },
+    {
+      "database": "CCCBDB SRD 101 release 22",
+      "measurement_body": "National Institute of Standards and Technology",
+      "records": 9,
+      "role": "complete-neutral-diborane-experimental-geometry-and-bond-vector",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "source_uri": "https://cccbdb.nist.gov/expgeom2x.asp?casno=19287457"
+    },
+    {
+      "database": "CCCBDB SRD 101 release 22",
+      "measurement_body": "National Institute of Standards and Technology",
+      "records": 7,
+      "role": "complete-benzene-experimental-geometry-and-bond-vector",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "source_uri": "https://cccbdb.nist.gov/expgeom2x.asp?casno=71432"
+    }
+  ],
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal product of molecular carrier, centre count, electron support, connection, topology, reduction, external record and extension forms. Decide all 256 forms solely by admitted Fold graph, joint-support, exchange and exclusion laws.",
+    "dependency_hashes": [
+      "sha256:666ec5c71c7b81bcb6ffc762de1d32ebd4f055730d86dd6a91b6f65b1ab1b23e",
+      "sha256:b190fb84573c88cd18d87514522f344c7d3b0540b82336b486cf60220880a167",
+      "sha256:7186aa869828bb2c2425f26a403d1859e8c735dda35dd58538a16020ee622d4d",
+      "sha256:a8601f95a5d65fc4f744f6d5277dc7b1b18ef186b0660aa805c8c5c06f10ae66",
+      "sha256:dccc189eb01d5000c199a5aa4df94242c78b67a992dc32b30ea554c62425d16c",
+      "sha256:5462f870eae94a1125b907d634327626914824213c213d80907c78d58d024302",
+      "sha256:1030d8dfb11cd9bbb59a999e9a0cb6265cbc4cd2f04a8409ac3a5ba3ae8aa3ab",
+      "sha256:40c63d50f9534bf644ad6083ebad1475350c9c09898d9a4c64c5dd773825bcb2",
+      "sha256:f9c7be4f67cd05209bcda841ee2f2501f662dea1a81cb5280986ea22ea73e1ee",
+      "sha256:2fc3c61877e77e8acbf750d5174ecb057e2b07fc43487171282189a57698c080",
+      "sha256:c93f72e041c8eb45b6bca804b6c700c216a5fd4965d1a3b571a75ebeb4870454",
+      "sha256:b7382940214061c0f3d5d26ea0b97d64daf641ace4c87ed2f7a0eca1bb219d87"
+    ],
+    "exact_domain": "Every positive finite connected molecular support containing at least three retained centres, with post-seal testing against all four IUPAC delocalization records, all nine NIST neutral-diborane geometry/bond-count records and all seven NIST benzene geometry/bond-count records.",
+    "relation_hash": "sha256:b3f28be31f31e9fcfc26c92e0dcf7be6e8508741873c42f8731378e0172d2f51",
+    "statement": "complete-molecular-carrier__three-or-more-generated-centres__one-complete-extended-support__connected-generated-graph__ribbon-surface-volume-census__multicentre-irreducible-support__complete-authority-and-geometry-vector__connected-successor-with-no-extra-rule",
+    "targets_did_not_select_survivor": true
+  },
+  "inputs": [
+    {
+      "content_hash": "sha256:83c2615e0a3f7c2c7b4b9c4a76ab91c3647b27d9982bc6b79d3d34aac8dae360",
+      "input_id": "registered-premise",
+      "value_kind": "held-sealed-derivation"
+    },
+    {
+      "content_hash": "sha256:c77b359440bb7f44259974e34ce23b13de0ff2057f4c859c9015a27f033958c4",
+      "input_id": "target-identities-only",
+      "outcomes_absent": true,
+      "path": "experiments/external_sources/chemistry/multicentre_target_identities_v1.json"
+    }
+  ],
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "executor_id": "SFT-EXP-CHEM-MULTICENTRE-DELOCALIZED-SUPPORT-008-prediction-executor",
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program_hash": "sha256:be48e1cc48fc774f6ff39f05587d87dfb3848d29451978e7d193f5baa4c13024",
+    "program_id": "SFT-EXP-CHEM-MULTICENTRE-DELOCALIZED-SUPPORT-008-multicentre-law-prediction"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "retention_policy": "retain-all-twenty-records-all-exact-values-all-source-classes-and-all-adverse-results",
+  "scope_boundary": "The forced result is one connected support word spanning three or more centres and the path/cycle/polyhedral topology census. IUPAC and NIST rows are post-seal external tests; no imported bonding model or measured magnitude selects the law.",
+  "source_hashes": {
+    "experiment-registration-record": "sha256:2e1d97bfca21792dd9528c96021554b6e6d0dd164dd5e37b8bad7f2d751d037e",
+    "experiments/external_sources/chemistry/multicentre_target_identities_v1.json": "sha256:c77b359440bb7f44259974e34ce23b13de0ff2057f4c859c9015a27f033958c4",
+    "experiments/external_sources/chemistry/multicentre_withheld_targets_v1.json": "sha256:d3188205f896f7ad4719a25d2367bbc98d262c7c66424a02c05ae5dec863c445",
+    "experiments/external_sources/chemistry/snapshots/goldbook-terms/08789.json": "sha256:570755940f01bfa32741b03b6b2f22b02742101605a2263e57369966ea433abd",
+    "experiments/external_sources/chemistry/snapshots/multicentre-v1/nist-cccbdb-benzene-experimental-geometry.html": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+    "experiments/external_sources/chemistry/snapshots/multicentre-v1/nist-cccbdb-diborane-experimental-geometry.html": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527"
+  },
+  "status": "measured",
+  "stop_condition": "Halt on any violation; otherwise stop after the complete vector and controls.",
+  "withheld_targets": [
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:570755940f01bfa32741b03b6b2f22b02742101605a2263e57369966ea433abd",
+      "source_id": "IUPAC-GOLD-BOOK-08789-2026",
+      "target_id": "IUPAC-DELOCALIZATION-DEFINITION"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:570755940f01bfa32741b03b6b2f22b02742101605a2263e57369966ea433abd",
+      "source_id": "IUPAC-GOLD-BOOK-08789-2026",
+      "target_id": "IUPAC-DELOCALIZATION-RIBBON"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:570755940f01bfa32741b03b6b2f22b02742101605a2263e57369966ea433abd",
+      "source_id": "IUPAC-GOLD-BOOK-08789-2026",
+      "target_id": "IUPAC-DELOCALIZATION-SURFACE"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:570755940f01bfa32741b03b6b2f22b02742101605a2263e57369966ea433abd",
+      "source_id": "IUPAC-GOLD-BOOK-08789-2026",
+      "target_id": "IUPAC-DELOCALIZATION-VOLUME"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-POINT-GROUP"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-rBB"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-rBH-OUTER"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-rBH-BRIDGING"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-aHBH-OUTER"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-aHBH-BRIDGING"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-aBHB"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-aHBH-SYMMETRY"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:99e1c36da1bf8aa2b559ba9ef84b43b4965982c3ee1cab13abb933c8fba22527",
+      "source_id": "NIST-CCCBDB-SRD101-DIBORANE",
+      "target_id": "NIST-DIBORANE-HB-LINK-COUNT"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-POINT-GROUP"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-rCC"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-rCH"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-aCCC"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-aHCC"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-AROMATIC-LINK-COUNT"
+    },
+    {
+      "content_withheld_from_prediction": true,
+      "snapshot_hash": "sha256:6e158d7639b301cfa6a18bfab4461988c9ffc6190f99fb9a5c0df7baf6f3ec0f",
+      "source_id": "NIST-CCCBDB-SRD101-BENZENE",
+      "target_id": "NIST-BENZENE-HC-LINK-COUNT"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "all_values_uncertainties_intervals_and_relation_flags_absent_from_prediction": true,
+  "claim_id": "SFT-CHEM-TEMPERATURE-CORRESPONDENCE-002",
+  "evidence_mode": "observational_derivation",
+  "experiment_id": "SFT-EXP-CHEM-TEMPERATURE-CORRESPONDENCE-002",
+  "external_sources": [
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "exact SI common temperature-energy carrier",
+      "source_id": "NIST-CODATA-2022-BOLTZMANN"
+    },
+    {
+      "body": "National Institute of Metrology and National Institute of Standards and Technology",
+      "role": "complete acoustic argon gas thermometry interval and TPW chemical context",
+      "source_id": "NIM-NIST-ACOUSTIC-BOLTZMANN-2017"
+    },
+    {
+      "body": "National Institute of Standards and Technology",
+      "role": "independent electronic Johnson-noise thermometry interval",
+      "source_id": "NIST-JOHNSON-NOISE-BOLTZMANN-2011"
+    }
+  ],
+  "falsification_condition": "The claim fails if Chemistry requires a different temperature carrier, composition-dependent scale or route-specific correction; if adding a composition changes the common carrier; if any target value opens before all three identities seal; if the exact SI carrier lies outside either complete measured interval; if argon, gas phase, TPW reference, kinetic-temperature relation, Johnson response, uncertainty endpoint or source limitation is omitted; or if target values select the law.",
+  "frozen_relation": "chemistry-consumes-admitted-physics-temperature-carrier__held-chemical-composition-identity__held-phase-and-equilibrium-reference__identity-preserving-temperature-correspondence__one-common-carrier-across-equilibrated-routes__complete-value-free-thermometric-identity-seal__complete-three-row-two-route-value-vector__append-only-composition-consequence-with-common-carrier",
+  "identity_registry": [
+    "experiments/external_sources/chemistry/chemical_temperature_target_identities_v1.json",
+    "sha256:ccfce4f71bb3eb8edfc96e2b9b7b6e68e54643c83bce87c6beb98e8b94c907ea"
+  ],
+  "physics_source_record": [
+    "experiments/external_sources/physics/snapshots/thermal-equilibrium-postseal-source-record.json",
+    "sha256:8048a2397c064290a0b948b4238b4133c1a2e5c76a72ecf0c47222c9a951d7b5"
+  ],
+  "prediction_program": {
+    "instructions": [
+      {
+        "arguments": [
+          "registered-premise"
+        ],
+        "destination": "premise",
+        "opcode": "input"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-002-COMMON-CARRIER-0001"
+        ],
+        "destination": "chemical-temperature-row-1-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "exact-si-common-temperature-energy-carrier"
+        ],
+        "destination": "chemical-temperature-row-1-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-CODATA-2022-BOLTZMANN"
+        ],
+        "destination": "chemical-temperature-row-1-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermometric-route",
+          "exact-si-definition"
+        ],
+        "destination": "chemical-temperature-row-1-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "all-lawful-chemical-compositions-share-one-physics-temperature-carrier"
+        ],
+        "destination": "chemical-temperature-row-1-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "phase-identity",
+          "composition-and-phase-held-separately-from-temperature-carrier"
+        ],
+        "destination": "chemical-temperature-row-1-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermal-equilibrium-reference",
+          "held-not-applicable-to-common-carrier-definition"
+        ],
+        "destination": "chemical-temperature-row-1-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "authority-law",
+          "chemistry-consumes-admitted-physics-temperature-carrier"
+        ],
+        "destination": "chemical-temperature-row-1-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "correspondence-law",
+          "identity-preserving-temperature-correspondence"
+        ],
+        "destination": "chemical-temperature-row-1-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "equilibrium-law",
+          "one-common-carrier-across-equilibrated-routes"
+        ],
+        "destination": "chemical-temperature-row-1-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "chemical-temperature-row-1-identity-1",
+          "chemical-temperature-row-1-identity-2",
+          "chemical-temperature-row-1-identity-3",
+          "chemical-temperature-row-1-identity-4",
+          "chemical-temperature-row-1-identity-5",
+          "chemical-temperature-row-1-identity-6",
+          "chemical-temperature-row-1-law-7",
+          "chemical-temperature-row-1-law-8",
+          "chemical-temperature-row-1-law-9"
+        ],
+        "destination": "chemical-temperature-row-1-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-002-ACOUSTIC-ARGON-0002"
+        ],
+        "destination": "chemical-temperature-row-2-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "chemical-composition-bound-acoustic-gas-thermometry-route"
+        ],
+        "destination": "chemical-temperature-row-2-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIM-NIST-ACOUSTIC-BOLTZMANN-2017"
+        ],
+        "destination": "chemical-temperature-row-2-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermometric-route",
+          "cylindrical-acoustic-gas-thermometry"
+        ],
+        "destination": "chemical-temperature-row-2-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "argon"
+        ],
+        "destination": "chemical-temperature-row-2-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "phase-identity",
+          "gas"
+        ],
+        "destination": "chemical-temperature-row-2-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermal-equilibrium-reference",
+          "triple-point-of-water"
+        ],
+        "destination": "chemical-temperature-row-2-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "authority-law",
+          "chemistry-consumes-admitted-physics-temperature-carrier"
+        ],
+        "destination": "chemical-temperature-row-2-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "correspondence-law",
+          "identity-preserving-temperature-correspondence"
+        ],
+        "destination": "chemical-temperature-row-2-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "equilibrium-law",
+          "one-common-carrier-across-equilibrated-routes"
+        ],
+        "destination": "chemical-temperature-row-2-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "chemical-temperature-row-2-identity-1",
+          "chemical-temperature-row-2-identity-2",
+          "chemical-temperature-row-2-identity-3",
+          "chemical-temperature-row-2-identity-4",
+          "chemical-temperature-row-2-identity-5",
+          "chemical-temperature-row-2-identity-6",
+          "chemical-temperature-row-2-law-7",
+          "chemical-temperature-row-2-law-8",
+          "chemical-temperature-row-2-law-9"
+        ],
+        "destination": "chemical-temperature-row-2-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "target-id",
+          "SFT-CHEM-THERMO-002-ELECTRONIC-0003"
+        ],
+        "destination": "chemical-temperature-row-3-target",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-record-class",
+          "independent-electronic-Johnson-noise-thermometry-route"
+        ],
+        "destination": "chemical-temperature-row-3-identity-1",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "external-source-identity",
+          "NIST-JOHNSON-NOISE-BOLTZMANN-2011"
+        ],
+        "destination": "chemical-temperature-row-3-identity-2",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermometric-route",
+          "Johnson-noise-thermometry"
+        ],
+        "destination": "chemical-temperature-row-3-identity-3",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "chemical-composition",
+          "electronic-resistor-material-held-by-primary-route"
+        ],
+        "destination": "chemical-temperature-row-3-identity-4",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "phase-identity",
+          "condensed-material-route"
+        ],
+        "destination": "chemical-temperature-row-3-identity-5",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "thermal-equilibrium-reference",
+          "held-not-applicable-to-common-carrier-definition"
+        ],
+        "destination": "chemical-temperature-row-3-identity-6",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "authority-law",
+          "chemistry-consumes-admitted-physics-temperature-carrier"
+        ],
+        "destination": "chemical-temperature-row-3-law-7",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "correspondence-law",
+          "identity-preserving-temperature-correspondence"
+        ],
+        "destination": "chemical-temperature-row-3-law-8",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "equilibrium-law",
+          "one-common-carrier-across-equilibrated-routes"
+        ],
+        "destination": "chemical-temperature-row-3-law-9",
+        "opcode": "label"
+      },
+      {
+        "arguments": [
+          "premise",
+          "chemical-temperature-row-3-identity-1",
+          "chemical-temperature-row-3-identity-2",
+          "chemical-temperature-row-3-identity-3",
+          "chemical-temperature-row-3-identity-4",
+          "chemical-temperature-row-3-identity-5",
+          "chemical-temperature-row-3-identity-6",
+          "chemical-temperature-row-3-law-7",
+          "chemical-temperature-row-3-law-8",
+          "chemical-temperature-row-3-law-9"
+        ],
+        "destination": "chemical-temperature-row-3-word",
+        "opcode": "word"
+      },
+      {
+        "arguments": [
+          "chemical-temperature-row-1-target",
+          "chemical-temperature-row-1-word",
+          "chemical-temperature-row-2-target",
+          "chemical-temperature-row-2-word",
+          "chemical-temperature-row-3-target",
+          "chemical-temperature-row-3-word"
+        ],
+        "destination": "complete-chemical-temperature-vector",
+        "opcode": "table"
+      },
+      {
+        "arguments": [
+          "complete-chemical-temperature-vector"
+        ],
+        "destination": "",
+        "opcode": "emit"
+      }
+    ],
+    "program_id": "SFT-EXP-CHEM-TEMPERATURE-CORRESPONDENCE-002-value-free-complete-vector",
+    "schema": "sft-v3-fold-program/1"
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "program_hash": "sha256:b73a29810df2ec7ed54ffd83188073f1dac23cac837e2d78b04b1d0885bc0e59",
+    "target_content_inaccessible": true,
+    "values_uncertainties_intervals_or_relation_flags_present": false
+  },
+  "primary_source_record": [
+    "experiments/external_sources/chemistry/snapshots/thermo-002-temperature-correspondence-v1/chemical-temperature-primary-records-v1.json",
+    "sha256:a20431a2644dbb5c41dd009472fd1c57b597611904739d118c64cbb07caf1bb9"
+  ],
+  "provenance": "observational_derivation",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "source_hashes": {
+    "experiments/external_sources/physics/snapshots/nist-acoustic-boltzmann-2017.pdf": "sha256:1cbb21f0e5817270b5e028105aa79fea22017fd84130c2c4b79d1492fb37e418",
+    "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+    "experiments/external_sources/physics/snapshots/nist-electronic-boltzmann-2011.pdf": "sha256:187066b5390d57a3c058e0a34f6c7803a659045ba714ca4b25eed7b84b212bbb",
+    "identity_registry": "sha256:ccfce4f71bb3eb8edfc96e2b9b7b6e68e54643c83bce87c6beb98e8b94c907ea",
+    "normalized_primary_records": "sha256:a20431a2644dbb5c41dd009472fd1c57b597611904739d118c64cbb07caf1bb9",
+    "physics_source_record": "sha256:8048a2397c064290a0b948b4238b4133c1a2e5c76a72ecf0c47222c9a951d7b5",
+    "withheld_targets": "sha256:93819764e02927c5f15ac2b52f58219d4b2429c24621f9f38e017f07c0223d70"
+  },
+  "status": "complete_exact_common_carrier_and_two_route_value_vector_opened_postseal",
+  "target_ids": [
+    "SFT-CHEM-THERMO-002-COMMON-CARRIER-0001",
+    "SFT-CHEM-THERMO-002-ACOUSTIC-ARGON-0002",
+    "SFT-CHEM-THERMO-002-ELECTRONIC-0003"
+  ],
+  "withheld_target_registry": [
+    "experiments/external_sources/chemistry/chemical_temperature_withheld_targets_v1.json",
+    "sha256:93819764e02927c5f15ac2b52f58219d4b2429c24621f9f38e017f07c0223d70"
+  ]
+}

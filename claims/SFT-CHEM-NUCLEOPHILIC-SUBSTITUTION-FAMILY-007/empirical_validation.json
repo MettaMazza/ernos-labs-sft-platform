@@ -1,0 +1,71 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-NUCLEOPHILIC-SUBSTITUTION-FAMILY-007",
+  "data_source_ids": [
+    "IUPAC-N04249",
+    "IUPAC-08191",
+    "IUPAC-E02130",
+    "IUPAC-S06078",
+    "IUPAC-H02809",
+    "PUBCHEM-PUG-BROMOMETHANE-STRUCTURE",
+    "PUBCHEM-PUG-HYDROXIDE-STRUCTURE",
+    "PUBCHEM-PUG-METHANOL-STRUCTURE",
+    "PUBCHEM-PUG-BROMIDE-STRUCTURE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9eaa3a655cae08657269d516ecd2da93f2c15d97a477be4033f62615abfd6a2e",
+  "falsification_condition": "The claim fails if any carrier, source bond, free pair, atom or electron occurrence is omitted; if more or fewer than one centre bond is replaced; if formation-before-cleavage is accepted; if either generated path family is omitted; if the census has other than 256 forms and one survivor; if any of nine external records is erased; if the post-seal IUPAC entering-group, substitution or heterolysis records fail their declared relations; if the PubChem source and terminal formula inventories differ; or if C-Br to C-O connectivity replacement is absent.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cc72da68cdbab1494e95b6a4bcee5fa28e05a0a1e0188bf30cfdc6e027ad7ef4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:ef44da08e720973fb7c774a520e0d9bfb3d199743949ef5ecec455c2bd9eb794",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-NUCLEOPHILIC-SUBSTITUTION-FAMILY-007-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8d5eaff17a44a867f875efde964dd67a973dcc155b11544ad30c1c2f15be433a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2dfdf3af531f1bb31731e4cf830101a2883384eab369fb50f0c91c34e85be2b9",
+    "prediction_seal_hash": "sha256:0bd2356f34286a11aefe7908e6ffd25df0ceb178b56a5eceb0ac175fb78d7b8a",
+    "program_hash": "sha256:b48043802c8a41b7171b6560eb2911c7b5ac57e0323a0adbb145792afc7ab379",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:eb57ce60e8a9db71b50b387524942a181f64ba24b5255598692ba14c7f6676b5",
+    "target_material_present": false,
+    "trace_hash": "sha256:20ac638518ddf6c7724e440cb2064ede1a08602e40fc0e725f46da4b872faeb6"
+  },
+  "measurement_receipt_hash": "sha256:6cd9326b6c4ab69b7f2f813eb4e514f79a8fc6c76f3d940bb22caee9cfb47efd",
+  "measurements": [
+    "complete nine-record external structure and mechanism vector retained",
+    "seven exact IUPAC and PubChem payloads opened only after the ORG-007 seal; two development-observed IUPAC rows disclosed",
+    "source formula inventory {'Br': 1, 'C': 1, 'H': 4, 'O': 1}; terminal formula inventory {'Br': 1, 'C': 1, 'H': 4, 'O': 1}; exact conservation True",
+    "connectivity CBr plus [OH-] becomes CO plus [Br-]",
+    "post-seal IUPAC records preserve entering-group bond formation, elementary-or-stepwise replacement, and both-electron heterolysis",
+    "V1 development-snapshot hash transcription error preserved; V2 correction changes no source, target, prediction, law or outcome and performs no recapture",
+    "deliberately omitted-row and tampered-label controls rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:af667dd30798c5b2fd8dd12a34aae9e43dfadc995e491fb40cd35440fd9152cc",
+    "custodian_id": "SFT-EXP-CHEM-NUCLEOPHILIC-SUBSTITUTION-FAMILY-007-external-target-custodian",
+    "experiment_registration_hash": "sha256:9eaa3a655cae08657269d516ecd2da93f2c15d97a477be4033f62615abfd6a2e",
+    "prediction_seal_hash": "sha256:0bd2356f34286a11aefe7908e6ffd25df0ceb178b56a5eceb0ac175fb78d7b8a",
+    "registered_target_identity_hash": "sha256:eb57ce60e8a9db71b50b387524942a181f64ba24b5255598692ba14c7f6676b5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d0d82f1584a159534aeb2e1a023eeb15c5f3b8b30bb0ebb0c8b62ebb7e978ac5"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8d58ff877dcbf4323a6a7ef7b8fba631ab5a3e6164a8f64697e58823a6f6bcd2"
+}

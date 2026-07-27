@@ -1,0 +1,46 @@
+{
+  "schema": "sft-v3-molecular-diffusion-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-THERMO-016",
+  "claim_id": "SFT-CHEM-MOLECULAR-DIFFUSION-RELATION-016",
+  "capture_rule": "Capture every byte and every compound, citation, dataset, property, variable, constraint, phase, uncertainty and point from each complete NIST ThermoML source. Construct the empirical vector from every direct-value binary, self or tracer diffusion-coefficient point in those sources. Preserve every viscosity, conductivity, density, phase-equilibrium, volumetric and other companion dataset but exclude it from diffusion measurements. Do not select species, media, phases, compositions, temperatures, pressures, methods, datasets or rows within a source.",
+  "source_selection_boundary": "The three complete authoritative sources are fixed before any measured value, uncertainty or target hash is captured and before executable-law registration, candidate enumeration or prediction-program construction. The selection spans binary, self and tracer diffusion across aqueous, molecular, ionic-liquid and sub/supercritical media without using a result value.",
+  "sources": [
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2011-56-4840-4848",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/je200808q",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/je200808q.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/je200808q.html",
+      "capture_scope": "complete high-pressure aqueous potassium-chloride source and all direct binary diffusion records"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-FPE-2017-437-34-42",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.fluid.2016.11.022",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2016.11.022.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2016.11.022.html",
+      "capture_scope": "complete source and every direct self and tracer diffusion record; all viscosity, phase and volumetric companions preserved but excluded"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-FPE-2008-271-43-52",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1016/j.fluid.2008.07.006",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2008.07.006.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2008.07.006.html",
+      "capture_scope": "complete ionic-liquid source and every direct binary diffusion record; all density and conductivity companions preserved but excluded"
+    }
+  ],
+  "admissible_diffusion_property_names": [
+    "Binary diffusion coefficient, m2/s",
+    "Self diffusion coefficient, m2/s",
+    "Tracer diffusion coefficient, m2/s"
+  ],
+  "all_species_medium_phase_composition_temperature_pressure_method_value_uncertainty_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "Fick_Brownian_random_walk_Stokes_Einstein_activation_transport_fit_logarithm_or_continuum_permitted": false,
+  "non_diffusion_companion_datasets_preserved_but_excluded_from_measurements": true,
+  "external_zero_glyph_if_encountered_must_translate_postseal_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

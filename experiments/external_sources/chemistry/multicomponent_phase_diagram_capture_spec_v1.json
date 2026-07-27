@@ -1,0 +1,30 @@
+{
+  "all_compound_component_count_phase_temperature_pressure_composition_uncertainty_and_target_hash_values_absent": true,
+  "capture_rule": "Capture the complete NIST TRC ThermoML JSON and landing record for DOI 10.1016/j.jct.2011.10.025 byte-for-byte. Retain every directly reported experimental binary and ternary vapor-liquid coexistence dataset and every point in source order, including complete compound, component-count, phase, temperature, pressure, liquid composition, vapor composition, uncertainty, method and provenance records. Preserve all companion pure-component, refractive-index and other source datasets. Do not select a system, phase, tie line, azeotropic or non-azeotropic region, favorable row or diagram segment. Do not use Wilson, Margules, NRTL, UNIQUAC, UNIFAC, extended Redlich-Kister, correlated, predicted or model-calculated values as measurements or derivation inputs.",
+  "derivation_input_boundary": {
+    "allowed_before_target_release": [
+      "admitted foundational, exact-arithmetic, finite-support, composition and equilibrium claims",
+      "admitted activity, fugacity-equivalent, phase-rule and THERMO-001 through THERMO-012 claims",
+      "source identity, DOI, dataset and row ordinals",
+      "binary-or-ternary dataset class only"
+    ],
+    "forbidden_before_target_release": [
+      "compound identity",
+      "temperature, pressure or composition inscription",
+      "phase identity, uncertainty or tie-line outcome",
+      "target payload hash",
+      "lever rule, tie-line equation, Gibbs triangle or convex-hull construction",
+      "equation of state, continuum phase diagram, interpolation, regression or fitted interaction parameter",
+      "selected system, dataset, phase, row, interval or target-derived correction"
+    ]
+  },
+  "provenance": "observational_derivation",
+  "schema": "sft-v3-multicomponent-phase-diagram-prefetch-capture-spec/1",
+  "source": {
+    "doi": "10.1016/j.jct.2011.10.025",
+    "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2011.10.025.json",
+    "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2011.10.025.html",
+    "source_id": "NIST-TRC-THERMOML-JCT-2012-47-260-266"
+  },
+  "target_values_or_hashes_present": false
+}

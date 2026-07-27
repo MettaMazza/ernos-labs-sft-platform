@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-AROMATIC-RECURRENCE-STABILITY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:935f9aa7ca5faacd45d5e339e379aeb1bc6564e988e570f8ec8034bab647703e"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c45c54d01082611072335278b23e29f9c731e980a73b00b614ccc626d7f62003"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:211dcf37e2fc914bdbb435f631635b8b7ee7e5257befb1dadba7c3e02df35ccb"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:bf4a86f8a63e2725408da8b6a9afbceebe1a70aff5f97355febb97527cbbffcf"
+    }
+  ]
+}

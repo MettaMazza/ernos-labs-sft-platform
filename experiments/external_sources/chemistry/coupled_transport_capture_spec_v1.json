@@ -1,0 +1,49 @@
+{
+  "schema": "sft-v3-coupled-transport-prefetch-capture-spec/1",
+  "chemistry_obligation": "SFT-CHEM-OBL-THERMO-019",
+  "claim_id": "SFT-CHEM-COUPLED-MASS-HEAT-CHARGE-TRANSPORT-019",
+  "capture_rule": "Capture every byte and every compound, citation, dataset, property, variable, constraint, phase, method, uncertainty and point from each complete NIST ThermoML source. Construct three post-seal coupled evidence surfaces: every direct Soret and mass-diffusion record in the mass-heat source; every direct electrical-conductivity and tracer-diffusion record in the mass-charge source; and every direct thermal-conductivity and electrical-conductivity record in the heat-charge source. Preserve every companion property and dataset but exclude it from the coupled measurements. Do not select substances, mixtures, phases, compositions, temperatures, pressures, methods, datasets, properties or rows within a source.",
+  "source_selection_boundary": "The three complete authoritative sources are fixed before any measured value, uncertainty or target hash is captured and before executable-law registration, candidate enumeration or prediction-program construction. Selection is by complementary carrier topology only: one complete mass-heat source, one complete mass-charge source and one complete heat-charge source. Together they test every pair of the mass, heat and charge carrier triad without using a result value.",
+  "sources": [
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2015-60-3621-3630",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/acs.jced.5b00609",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.5b00609.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.5b00609.html",
+      "carrier_pair": "mass-heat",
+      "capture_scope": "complete source and every direct Soret and mass-diffusion record"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2006-51-680-685",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/je0504515",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/je0504515.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/je0504515.html",
+      "carrier_pair": "mass-charge",
+      "capture_scope": "complete source and every direct electrical-conductivity and tracer-diffusion record"
+    },
+    {
+      "source_id": "NIST-TRC-THERMOML-JCED-2014-59-757-763",
+      "measurement_body": "National Institute of Standards and Technology ThermoML Archive",
+      "doi": "10.1021/je400882q",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1021/je400882q.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1021/je400882q.html",
+      "carrier_pair": "heat-charge",
+      "capture_scope": "complete source and every direct thermal-conductivity and electrical-conductivity record"
+    }
+  ],
+  "admissible_property_families": {
+    "mass-heat": ["Soret coefficient", "diffusion coefficient"],
+    "mass-charge": ["Electrical conductivity", "Tracer diffusion coefficient"],
+    "heat-charge": ["Thermal conductivity", "Electrical conductivity"]
+  },
+  "all_substance_mixture_phase_composition_temperature_pressure_method_value_uncertainty_and_target_hash_values_absent": true,
+  "target_values_or_hashes_present": false,
+  "selection_fit_or_correction_permitted": false,
+  "Onsager_matrix_continuum_gradient_flux_equation_phenomenological_cross_coefficient_signed_magnitude_or_fitted_law_permitted": false,
+  "companion_properties_preserved_but_excluded_from_coupled_measurements": true,
+  "external_zero_glyph_if_encountered_must_translate_postseal_to_structural_EmptyOne": true,
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ROVIBRONIC-COMPOSITION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:43920d03d40e96ffa3e5717d0954eb056c14c944a35f3e6af44a666f580b0721"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1f856682ffe39c1d10ee4fe918e73426aba8835d3de76abb025721b31d70b822"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:abbb86f1565dfe4535a2b859c0453816831830da88f9cc4c5867b5aaadd704dc"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:adac792031608424057db06c9c6ec79a7969472d9cd29f57c16160d24e421c8f"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../governance/claim.schema.json",
+  "branch": "chemistry",
+  "candidate_grammar": {
+    "boundary": "Every finite registered elementary chemical transition between distinct molecular states with complete conditions, positive completed-event count, positive tick count and positive observation support. External testing preserves all 46 rate rows from four complete declared NIST SRD 17 experimental records.",
+    "completeness_certificate": "sha256:85dbdd122d62947004bd1e1972532c2541faf3ac13ae44d7f29699ae09c87a13",
+    "expected_cardinality": 256,
+    "generator": "Generate the literal product of carrier, state, event, recurrence, boundary, magnitude, prediction and extension forms."
+  },
+  "claim_id": "SFT-CHEM-ELEMENTARY-TRANSITION-RATE-001",
+  "dependencies": [
+    "SFT-FOUNDATION-FORM-ENFORCEMENT-001",
+    "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    "SFT-MATH-EXACT-ARITHMETIC-001",
+    "SFT-MATH-DISCRETE-001",
+    "SFT-MATH-COMBINATORICS-001",
+    "SFT-MATH-GRAPH-NETWORK-001",
+    "SFT-MATH-DYNAMICAL-SYSTEMS-001",
+    "SFT-MATH-PROBABILITY-STATISTICS-001",
+    "SFT-INFO-CONSERVATION-LOSS-001",
+    "SFT-COMP-FORM-STATE-TRANSITION-001",
+    "SFT-COMP-CPLX-TIME-SPACE-001",
+    "SFT-PHYS-THERMO-STATISTICAL-WEIGHT-001",
+    "SFT-CHEM-STOICH-CONSERVATION-001",
+    "SFT-CHEM-MOLECULAR-STATE-TRANSITION-009",
+    "SFT-CHEM-STATE-ENERGY-ORDER-004",
+    "SFT-CHEM-FREE-ENERGY-EQUIVALENT-DIRECTION-007",
+    "SFT-CHEM-RXN-IDENTITY-001",
+    "SFT-CHEM-RXN-MECHANISM-001",
+    "SFT-CHEM-KIN-RATE-001",
+    "SFT-CHEM-FINITE-MICROSTATE-SUPPORT-001",
+    "SFT-CHEM-ENTROPY-MULTIPLICITY-CORRESPONDENCE-005",
+    "SFT-CHEM-COUPLED-MASS-HEAT-CHARGE-TRANSPORT-019"
+  ],
+  "empirical_protocol": "experiments/chemistry/SFT-EXP-CHEM-ELEMENTARY-TRANSITION-RATE-001/registration.json",
+  "excluded_inputs": [
+    "no numerical zero; absent external coordinates are structural EmptyOne",
+    "no negative, irrational, imaginary, logarithmic, floating, signed or continuum SFT proof value",
+    "no imported mass-action equation, reaction order, Arrhenius form, fitted rate constant, concentration derivative or continuum time",
+    "no interpolation, regression, selection or target-derived correction",
+    "no target content before the complete identity and prediction seal",
+    "source-reported Arrhenius tabulations remain post-seal external records and are not raw event counts"
+  ],
+  "intended_certificate": "Complete 256-form census, one survivor, implementation-distinct reconstruction, depth-independent successor and complete post-seal 46-row NIST elementary-rate vector.",
+  "provenance_classes": [
+    "forward_forcing"
+  ],
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-26",
+  "required_controls": [
+    "false_premise",
+    "tampered_source",
+    "tampered_artifact",
+    "boundary"
+  ],
+  "statement": "An elementary chemical transition rate is the exact positive count of completed instances of one registered transition between distinct retained molecular states per positive reference tick and observation support, with conditions held and direction represented as a label.",
+  "status": "empirically_tested",
+  "title": "Exact elementary-transition rate relation"
+}

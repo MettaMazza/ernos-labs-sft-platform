@@ -1,0 +1,73 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-DEFECT-NONSTOICHIOMETRY-016",
+  "data_source_ids": [
+    "IUPAC-S05735",
+    "IUPAC-13807",
+    "IUPAC-09464",
+    "IUPAC-14011",
+    "IUPAC-14026"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c4928e93f220f6a6116082b10e293dd9655ce8cfa1433d0fdee48e580b957a39",
+  "falsification_condition": "The claim fails if a site or occurrence is omitted, if vacancy is numerical zero, if missing and added support is signed or fitted, if primitive formulas or defect/origin classes do not reconstruct, if either V1 missing note surface is hidden, if the V1 predecessor is overwritten, if either scope mismatch is concealed, if any of fifteen rows is removed, or if outcomes open before sealing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a71cbfabe45156c0953785475c4a1562b2291ce3f9ac86ce25e0e16d7b864fb4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1a7802377c60718f6b4addc3882b5ee3eb0780c84d60490fa89d224d884d4202",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-DEFECT-NONSTOICHIOMETRY-016-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d221a091cc6bbb87bca6a951a5e47f21c1186275729d0f981c5c1a0ad2aa82f0",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:71db332a01e30a22d9e1dafcd5f43fa3b46e3fae4249eb710d30ea72394001d6",
+    "prediction_seal_hash": "sha256:a93549b3976d2c447745fc0b603a8a478354e509153be2779d2542bad1b972bc",
+    "program_hash": "sha256:0d2638d458799906ce99e97b654c8a692d727b7727cab014290ce188889b479b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:04e14146af0a48ab3d9c891809b85b086743363f030e7e0b113e6f32cc79533c",
+    "target_material_present": false,
+    "trace_hash": "sha256:d77a7f0f0ed17eb3af0bb03f76207cd9b0c9c6be6d1ebc0a32e2ac6733b43464"
+  },
+  "measurement_receipt_hash": "sha256:ffde5aa08191de9a61c5677e5756a889ffbe138d04e63e5043def7d323aea86b",
+  "measurements": [
+    "vacancy formula one-to-two with one positive missing A and structural EmptyOne occupancy",
+    "native interstitial formula three-to-two; foreign substitution formula one-to-one-to-two",
+    "complete fifteen-row five-source defect vector with two definition-note surfaces",
+    "V1 two-surface adverse record preserved and V2 correction separately sealed",
+    "complete exact target vector sha256:4662e91b77bb6e4b448c32569191e9f358560f01af41ee33df865552ff79153f",
+    "control omitted_source_row_rejected: True",
+    "control numerical_zero_rejected: True",
+    "control all_fifteen_target_hashes_bound_postseal: True",
+    "control v1_two_missing_note_surfaces_preserved: True",
+    "control v2_two_note_surfaces_complete: True",
+    "control two_scope_or_identity_distinctions_preserved: True",
+    "control sources_not_recaptured: True",
+    "control prediction_contains_no_definition_note_or_target_payload: True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:8fcfe84bb1e1e4378ebf0ae098b8b8b8a2fe168b3d4808365b6f02f8c714bc6f",
+    "custodian_id": "SFT-EXP-CHEM-DEFECT-NONSTOICHIOMETRY-016-complete-target-custodian",
+    "experiment_registration_hash": "sha256:c4928e93f220f6a6116082b10e293dd9655ce8cfa1433d0fdee48e580b957a39",
+    "prediction_seal_hash": "sha256:a93549b3976d2c447745fc0b603a8a478354e509153be2779d2542bad1b972bc",
+    "registered_target_identity_hash": "sha256:04e14146af0a48ab3d9c891809b85b086743363f030e7e0b113e6f32cc79533c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e2cd43421f66ddc90db5b743006c012a324480644de246f30e1f094ecd37dcd7"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:5dbf9c4e958f0d4b8fbb69c23400c922600595d7413ea646d6b6fe160c87c62e"
+}

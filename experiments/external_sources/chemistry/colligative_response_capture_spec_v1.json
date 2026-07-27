@@ -1,0 +1,47 @@
+{
+  "all_compound_solvent_solute_phase_temperature_pressure_composition_response_uncertainty_and_target_hash_values_absent": true,
+  "capture_rule": "Capture each registered NIST TRC ThermoML JSON and landing record byte-for-byte. From the boiling source retain every directly reported experimental boiling-temperature-at-pressure dataset and every point in source order. From the freezing source retain every directly reported experimental solid-liquid-equilibrium-temperature dataset and every point in source order. From the osmotic source retain every directly reported experimental osmotic-coefficient dataset and every point in source order. Preserve every companion compound, phase, method, uncertainty and non-target dataset in all three complete parent sources. Do not select a solvent, solute, concentration, temperature, pressure, favorable response, interval or row. Do not use correlated, smoothed, derived-from-model, predicted or model-calculated values as measurements or derivation inputs.",
+  "derivation_input_boundary": {
+    "allowed_before_target_release": [
+      "admitted foundational, exact-arithmetic, finite-support, composition, equilibrium and phase laws",
+      "admitted THERMO-001 through THERMO-013 claims",
+      "registered source identity, DOI, response class, dataset and row ordinals",
+      "direct experimental presentation and method class only"
+    ],
+    "forbidden_before_target_release": [
+      "compound, solvent or solute identity",
+      "temperature, pressure, composition, response or uncertainty inscription",
+      "phase outcome or target payload hash",
+      "van't Hoff factor or dissociation parameter",
+      "Raoult law, boiling/freezing constant or osmotic equation",
+      "molality/molarity response equation, continuum, logarithm, interpolation, regression or fitted coefficient",
+      "selected solvent, solute, concentration, temperature, pressure, dataset, row, interval or target-derived correction"
+    ]
+  },
+  "provenance": "observational_derivation",
+  "schema": "sft-v3-colligative-response-prefetch-capture-spec/1",
+  "sources": [
+    {
+      "doi": "10.1016/j.fluid.2012.09.013",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2012.09.013.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2012.09.013.html",
+      "response_class": "boiling",
+      "source_id": "NIST-TRC-THERMOML-FPE-2013-337-60-66"
+    },
+    {
+      "doi": "10.1016/j.fluid.2015.11.035",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2015.11.035.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2015.11.035.html",
+      "response_class": "freezing",
+      "source_id": "NIST-TRC-THERMOML-FPE-2016-420-14-19"
+    },
+    {
+      "doi": "10.1016/j.jct.2009.06.024",
+      "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2009.06.024.json",
+      "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.jct.2009.06.024.html",
+      "response_class": "osmotic",
+      "source_id": "NIST-TRC-THERMOML-JCT-2009-41-1439-1445"
+    }
+  ],
+  "target_values_or_hashes_present": false
+}

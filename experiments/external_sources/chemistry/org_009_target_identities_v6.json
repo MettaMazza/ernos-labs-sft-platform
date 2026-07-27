@@ -1,0 +1,58 @@
+{
+  "schema": "sft-v3-chemistry-org-009-target-identities/6",
+  "claim_id": "SFT-CHEM-ADDITION-REACTION-FAMILY-009",
+  "obligation_id": "SFT-CHEM-OBL-ORG-009",
+  "registered_date": "2026-07-27",
+  "supersedes_for_new_product_selection_only": "experiments/external_sources/chemistry/org_009_target_identities_v5.json",
+  "all_v1_v2_v3_v4_v5_results_must_remain_preserved_and_barred_from_closure": true,
+  "source_structures_observed_before_v6_seal": true,
+  "product_structures_or_product_outcomes_observed_before_v6_seal": false,
+  "frozen_source_payload": {
+    "source_id": "FIGSHARE-FILE-44192531",
+    "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-009-localmapper-blind-v5/remapped_USPTO_FULL.csv",
+    "snapshot_sha256": "sha256:7395b05af9d7e22189ac4f04498051226dde4b126d57f1ce56ff8819c2cbb63a",
+    "snapshot_bytes": 427144675,
+    "snapshot_md5": "7edb3d418f22f0cded6a6cdcaa424939",
+    "authority": "Figshare repository record supplied by the LocalMapper dataset authors",
+    "doi": "10.6084/m9.figshare.25046471.v1",
+    "license": "CC BY 4.0",
+    "custody_class": "source_observed_product_unopened"
+  },
+  "preserved_v5_absent_result": {
+    "selection_path": "experiments/external_sources/chemistry/snapshots/org-009-localmapper-blind-v5/source-only-selection-v5.json",
+    "selection_sha256": "sha256:ffec1d71690c09f9329e6ed5aec848a06528eefb7cfb373abdc57b0f13fcabf6",
+    "qualifying_source_count": 0,
+    "unresolved_candidate_count": 0,
+    "status": "adverse_structural_absence_preserved_not_rewarded"
+  },
+  "source_only_orientation": {
+    "complete_data_row_count": 1065119,
+    "two_component_row_count": 144368,
+    "two_component_parser_resolved_count": 144368,
+    "all_heavy_atoms_uniquely_mapped_count": 9027,
+    "one_component_with_two_cc_double_supports_and_other_with_one_count": 66,
+    "complete_conjugated_diene_plus_alkene_source_count": 47,
+    "product_columns_opened_by_orientation": false
+  },
+  "blind_row_selection_rule": {
+    "reaction_column": "mapped_rxn",
+    "reaction_field_split": "Parse only the reactant field before the first reaction separator. The product field is prohibited until the complete 47-identity source-only selection is written and hash-sealed.",
+    "source_component_rule": "Retain every row with exactly two dot-separated parser-resolved source components and a globally unique map identity on every non-hydrogen atom.",
+    "diene_rule": "One component has exactly two non-aromatic mapped carbon-carbon double adjacencies. Their endpoint sets are disjoint and exactly one mapped carbon-carbon single adjacency joins one endpoint from each double adjacency, yielding one complete four-carbon conjugated path.",
+    "alkene_rule": "The other component has exactly one non-aromatic mapped carbon-carbon double adjacency.",
+    "ordering": "Retain all 47 qualifying identities in original file order without a row limit, random draw, favorable-only filter, named-product selector, yield threshold or post-outcome exclusion.",
+    "postseal_generated_product_family": "The product has one connected mapped carrier and exactly the same map inventory. Exactly two new cross-source-component adjacencies form one complete matching between the two outer diene carbons and the two alkene carbons; both matching orientations are generated. The two diene double adjacencies and alkene double adjacency each lose one multiplicity layer; the internal diene single adjacency gains one retained layer; every other mapped adjacency and multiplicity is unchanged.",
+    "postseal_targets": [
+      "complete product component count",
+      "complete mapped-atom inventory conservation",
+      "exact two new cross-component adjacencies",
+      "complete two-orientation endpoint matching family",
+      "three source multiplicity reductions",
+      "one internal diene multiplicity transfer",
+      "all other mapped adjacency retention",
+      "every favorable adverse absent malformed and unresolved selected row"
+    ]
+  },
+  "native_arithmetic_boundary": "No external numerical zero, signed, decimal, continuum or conventional structure inscription enters native forcing; structural absence is EmptyOne.",
+  "product_outcome_open_count_before_v6_seal": 0
+}

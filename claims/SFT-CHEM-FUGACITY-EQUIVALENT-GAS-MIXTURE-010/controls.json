@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-FUGACITY-EQUIVALENT-GAS-MIXTURE-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:ac1871624cffa810330738c255b2c7f7b25512d1e59cc28c669f6565bb350eb3"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:866bd5cc1bbd9dd74d51b8822eacdbf9a47c90e379a87c04332539c0749e79c8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:83a10a8cfd98436d1090cacb37321de60df488712e347320987b2db6ec6c5513"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:f776c0ac8c935e379bc803e2b52ed6d4ad2d8b984f228d594eaa036aaf003cef"
+    }
+  ]
+}

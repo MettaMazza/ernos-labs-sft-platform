@@ -1,0 +1,30 @@
+{
+  "schema": "sft-v3-value-blind-source-identity-addendum/4",
+  "claim_id": "SFT-CHEM-CONFORMER-POPULATION-ORDERING-006",
+  "obligation_id": "SFT-CHEM-OBL-ORG-006",
+  "registered_date": "2026-07-27",
+  "preserved_v3_source_addendum": [
+    "experiments/external_sources/chemistry/org_006_acs_figshare_source_identity_addendum_v3.json",
+    "sha256:82aa03ea2e64a64a58091d95e8f6ab177ecc05bf5b5076ded184f2ae944937a0"
+  ],
+  "preserved_v3_failure_inventory": [
+    "experiments/external_sources/chemistry/snapshots/org-006-acs-figshare-v3/failure-inventory-v3.json",
+    "sha256:08d5cfe81d3fc9b6180103316ece4c0780137b40782578fc12258a4b8b10b853"
+  ],
+  "method_failure_disclosed": "The v3 recorder halted after preserving the exact DOI search and metadata responses because it accessed a nonexistent Request.method attribute. The returned file payload was not downloaded or opened.",
+  "selection_rule": "Capture exactly the one file returned by the complete exact-resource-DOI metadata response preserved under the v3 seal. The identity, filename, size, file identifier and download URL are now development-observed metadata; the complete file payload remains value-unopened. No alternative file or endpoint is added and capture cannot stop selectively.",
+  "development_information_disclosed": "The exact DOI query returned one exact-match article and one file: Figshare article 2372920, file 4012420, jp404315t_si_001.txt, declared size 10913 bytes, download URL https://ndownloader.figshare.com/files/4012420. The file payload, its scientific rows, temperatures, energies, probabilities and couplings remain unopened.",
+  "exact_file_payload_values_rows_or_download_outcome_present": false,
+  "complete_registered_source_count": 1,
+  "sources": [
+    {
+      "source_id": "ACS-FIGSHARE-4012420-JP404315T-SI-001",
+      "authority": "American Chemical Society public Figshare research repository",
+      "uri": "https://ndownloader.figshare.com/files/4012420",
+      "identity": "Complete returned file 4012420, jp404315t_si_001.txt, for exact resource DOI 10.1021/jp404315t",
+      "declared_size_bytes": 10913,
+      "declared_md5": "2ae3db73c3d3f077b3e1679126d0ce28",
+      "custody_class": "metadata-development-observed-complete-file-payload-values-rows-and-outcome-unopened-before-ORG-006-v4-value-seal"
+    }
+  ]
+}

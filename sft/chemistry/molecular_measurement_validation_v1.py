@@ -1,0 +1,46 @@
+"""Capability-closed complete NIST CaH+ measurement validation for ELEC-014."""
+from __future__ import annotations
+import csv,json,platform
+from collections import Counter
+from fractions import Fraction
+from pathlib import Path
+from sft.chemistry.molecular_measurement_batch_v1 import IDENTITY_HASH,IDENTITY_PATH,MOLECULAR_MEASUREMENT_SPEC,SOURCE_ID,TARGET_HASH,TARGET_PATH
+from sft.claim_evidence import CapabilityClosedFoldInterpreter,CrossPlatformCustodyExchange,FoldTable,HostilePackageAuditor,TargetVault,fold_program_from_mapping,snapshot_protected_tree,target_identity_from_release
+from sft.engine import EmpiricalValidation,seal_isolation_certificate,seal_target_custody_certificate,unsealed_isolation_certificate,unsealed_target_custody_certificate
+from sft.engine.canonical import sha256_identity
+from sft.engine.empirical import BlindExperimentBoundary,PredictionEnvelope
+from sft.engine.exact import HeldLabel
+from sft.engine.source import hash_file
+def prediction_program_document(root:Path):
+ values=(("preparation","retained-pre-observation-state"),("probe","exact-generated-observation-class"),("retention","explicit-retained-coordinate-set"),("closure","explicit-closed-coordinate-set"),("record","retained-finite-readout-record"),("poststate","retained-post-observation-state"),("reconstruction","record-bounded-reconstruction"),("replication","complete-repeat-and-adverse-record"));ins=[{"opcode":"input","destination":"premise","arguments":["registered-premise"]}];table=[]
+ for p,(n,v) in enumerate(values,1):
+  k,w="key-%d"%p,"value-%d"%p;ins.extend(({"opcode":"label","destination":k,"arguments":["measurement-axis",n]},{"opcode":"label","destination":w,"arguments":["measurement-law",v]}));table.extend((k,w))
+ ins.extend(({"opcode":"table","destination":"law","arguments":table},{"opcode":"emit","destination":"","arguments":["law"]}));return {"schema":"sft-v3-fold-program/1","program_id":MOLECULAR_MEASUREMENT_SPEC.experiment_id+"-prediction","instructions":ins}
+def experiment_registration_record(root:Path):
+ s=MOLECULAR_MEASUREMENT_SPEC;return {"experiment_id":s.experiment_id,"claim_id":s.claim_id,"provenance":"observational_derivation","frozen_relation":s.exact_result,"identity_registry":(IDENTITY_PATH,IDENTITY_HASH),"withheld_target_registry":(TARGET_PATH,TARGET_HASH),"prediction_program":prediction_program_document(root),"target_references":tuple((r.target_id,r.source_id,r.source_locator,r.snapshot_path,r.snapshot_hash) for r in s.target_rows),"target_content_absent_from_prediction":True,"complete_NIST_package_required":True,"falsification_condition":s.falsification_condition}
+def _rows(root:Path):
+ for p,h in ((IDENTITY_PATH,IDENTITY_HASH),(TARGET_PATH,TARGET_HASH)):
+  if hash_file(root/p)!=h:raise ValueError("ELEC-014 registry changed: "+p)
+ ids=json.loads((root/IDENTITY_PATH).read_text());target_doc=json.loads((root/TARGET_PATH).read_text());targets={r["target_id"]:r for r in target_doc["rows"]};source=ids["source"]
+ if len(ids["rows"])!=330 or len(targets)!=330 or len(source["components"])!=9:raise ValueError("ELEC-014 complete package missing")
+ for c in source["components"]:
+  if hash_file(root/c["snapshot_path"])!=c["snapshot_hash"]:raise ValueError("ELEC-014 NIST component changed")
+ if hash_file(root/source["metadata_snapshot_path"])!=source["metadata_snapshot_hash"]:raise ValueError("ELEC-014 NIST metadata changed")
+ parsed={};resolved=[]
+ for identity in ids["rows"]:
+  path=root/identity["snapshot_path"]
+  if str(path) not in parsed:parsed[str(path)]=list(csv.reader(path.open(encoding="utf-8-sig")))
+  rows=parsed[str(path)];target=targets[identity["target_id"]];raw=rows[int(identity["row_ordinal"])]
+  if rows[0]!=identity["column_identities"] or raw!=target["cells"]:raise ValueError("ELEC-014 independent row reconstruction differs")
+  resolved.append(target)
+ return tuple(resolved),source
+class MolecularMeasurementValidator:
+ def __init__(self,root:Path):self.root=root.resolve();self.spec=MOLECULAR_MEASUREMENT_SPEC
+ def validate(self,sealed):
+  rows,source=_rows(self.root);registration=experiment_registration_record(self.root);rh=sha256_identity(registration);document=prediction_program_document(self.root);program=fold_program_from_mapping(document);inputs={"registered-premise":HeldLabel("sealed-derivation",sealed.seal_hash)};envelope=PredictionEnvelope(self.spec.experiment_id,{"registered-premise":sha256_identity(inputs["registered-premise"])},tuple(r.target_id for r in self.spec.target_rows),sealed.seal_hash,rh);vault=TargetVault(experiment_id=self.spec.experiment_id,custodian_id=self.spec.experiment_id+"-NIST-custodian",targets={r["target_id"]:HeldLabel("external-molecular-measurement-row",sha256_identity(r)) for r in rows},custody_nonce=sha256_identity((rh,TARGET_HASH)),expected_envelope_hash=sha256_identity(envelope));before=snapshot_protected_tree(self.root);execution=CapabilityClosedFoldInterpreter().execute(program,inputs);boundary=BlindExperimentBoundary(envelope);ps=boundary.seal_prediction(execution.output,execution.trace);after=snapshot_protected_tree(self.root);audited,audit=HostilePackageAuditor().audit_program_document(document,before,after)
+  if sha256_identity(audited)!=execution.program_hash or not audit.passed or not isinstance(execution.output,FoldTable) or len(execution.output.entries)!=8:raise ValueError("ELEC-014 prediction package differs")
+  release=vault.release(ps);CrossPlatformCustodyExchange.verify(vault.commitment,release,ps);boundary.measurement_context(release.targets);files=Counter(r["file"] for r in rows);comparisons=[{"target_id":r["target_id"],"file":r["file"],"row_ordinal":r["row_ordinal"],"cell_count":len(r["cells"]),"passed":release.targets[r["target_id"]].label==sha256_identity(r)} for r in rows]
+  intervals=[r for r in rows if r["file"] in {"entry_and_exit_times_J_1.csv","entry_and_exit_times_J_2.csv"}];positive_intervals=sum(Fraction(r["cells"][1])>Fraction(r["cells"][0]) for r in intervals);tracking=[r for r in rows if r["file"]=="tracking_time_series.csv"];positive_tracking=sum(Fraction(r["cells"][2])>0 for r in tracking);absence_tracking=sum(Fraction(r["cells"][2])==0 for r in tracking)
+  counts={"package_components":len(source["components"]),"csv_files":len(files),"rows":len(rows),"cells":sum(len(r["cells"]) for r in rows),"real_time_readouts":files["real_time_state_tracking_data.csv"],"J2_entry_exit_intervals":files["entry_and_exit_times_J_2.csv"],"J1_entry_exit_intervals":files["entry_and_exit_times_J_1.csv"],"prepared_sublevel_rows":files["sublevel_distribution_J0_to_J1.csv"],"recovery_classes":files["histogram_of_recoveries_from_J_0_and_J_2.csv"],"tracking_intervals":files["tracking_time_series.csv"],"pressure_control_rows":files["pressure_dependence_of_J_0_to_J_1_transitions.csv"],"appearance_time_rows":files["appearance_time_histogram_J_0_to_J1.csv"],"positive_entry_exit_intervals":positive_intervals,"positive_tracking_intervals":positive_tracking,"EmptyOne_tracking_boundary":absence_tracking};expected={"package_components":9,"csv_files":8,"rows":330,"cells":796,"real_time_readouts":50,"J2_entry_exit_intervals":117,"J1_entry_exit_intervals":55,"prepared_sublevel_rows":6,"recovery_classes":4,"tracking_intervals":71,"pressure_control_rows":4,"appearance_time_rows":23,"positive_entry_exit_intervals":172,"positive_tracking_intervals":70,"EmptyOne_tracking_boundary":1};adverse={"exact_complete_counts":counts==expected,"all_rows":all(r["passed"] for r in comparisons),"omission_rejected":len(rows[:-1])!=330,"zero_duration_retained":absence_tracking==1,"unrecorded_predecessor_not_in_dataset":all("predecessor" not in k.lower() for r in rows for k in r)};passed=all(adverse.values())
+  isolation=seal_isolation_certificate(unsealed_isolation_certificate(executor_id=self.spec.experiment_id+"-prediction-executor",host_platform=platform.system() or "registered-host",python_implementation=platform.python_implementation(),interpreter_hash=sha256_identity(CapabilityClosedFoldInterpreter.interpreter_id),program_hash=execution.program_hash,input_manifest_hash=execution.input_manifest_hash,registered_target_identity_hash=vault.commitment.target_identity_hash,comparison_implementation_identity_hash=sha256_identity(("complete-NIST-CaH-measurement-comparator/1",self.spec.experiment_id)),prediction_seal_hash=ps.seal_hash,output_hash=execution.output_hash,trace_hash=execution.trace_hash));ti=target_identity_from_release(release);custody=seal_target_custody_certificate(unsealed_target_custody_certificate(custodian_id=release.custodian_id,experiment_registration_hash=rh,registered_target_identity_hash=ti,prediction_seal_hash=ps.seal_hash,target_release_manifest_hash=release.release_hash));payload={"comparisons":comparisons,"counts":counts,"adverse":adverse,"trace":execution.trace_hash};measurements=tuple("%s: file %s row %s cells %s pass %s"%(r["target_id"],r["file"],r["row_ordinal"],r["cell_count"],r["passed"]) for r in comparisons)+tuple("count %s: %s"%(k,v) for k,v in counts.items());return EmpiricalValidation(sealed.seal_hash,rh,isolation,custody,True,True,True,(SOURCE_ID,),measurements,sha256_identity(payload),self.spec.falsification_condition,passed)
+__all__=("MolecularMeasurementValidator","experiment_registration_record","prediction_program_document")

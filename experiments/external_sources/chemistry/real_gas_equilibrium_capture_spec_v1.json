@@ -1,0 +1,17 @@
+{
+  "all_compound_temperature_pressure_composition_phase_equilibrium_values_absent": true,
+  "capture_rule": "Capture the complete NIST TRC ThermoML JSON record for DOI 10.1016/j.fluid.2018.12.005 and preserve the raw source byte-for-byte. Retain every directly reported experimental real-gas vapor-liquid-equilibrium dataset, every source row in source order, all compound and phase identities, every temperature, pressure, liquid and gas composition, uncertainty, method and provenance field, and all pure-component and validation-system records. Do not use Peng-Robinson, Wong-Sandler, NRTL, correlated, regressed or model-calculated values as measurements, and do not discard adverse, duplicate, endpoint, validation-system or boundary rows.",
+  "environment_rule": "Each target is identified only by the DOI, complete-source identity, PureOrMixture dataset ordinal and source point ordinal before values open. Compounds, temperature, pressure, composition, phase, equilibrium result, uncertainty and target hash remain withheld targets.",
+  "identity_rule": "No compound name or identifier, condition, composition, phase value, equilibrium class, uncertainty or target hash enters an identity row.",
+  "no_selected_system_row_condition_or_composition": true,
+  "property_rule": "Retain every direct experimental binary real-gas equilibrium record whose ThermoML metadata binds gas and liquid phases and reports pressure and/or phase composition under a declared temperature. Preserve the complete raw record and all companion direct datasets even when they are not part of the matched multicomponent vector.",
+  "schema": "sft-v3-real-gas-equilibrium-prefetch-capture-spec/1",
+  "source": {
+    "archive_authority": "NIST Thermodynamics Research Center ThermoML Archive",
+    "doi": "10.1016/j.fluid.2018.12.005",
+    "json_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.12.005.json",
+    "landing_url": "https://trc.nist.gov/ThermoML/10.1016/j.fluid.2018.12.005.html",
+    "source_id": "NIST-TRC-THERMOML-FPE-2019-485-145-152"
+  },
+  "target_values_or_hashes_present": false
+}

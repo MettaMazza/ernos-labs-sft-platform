@@ -1,0 +1,1739 @@
+/*
+  File:  jcamp-dx.js
+
+  Parsing objects / methods for JCAMP-DX files.
+
+  Developed by the NIST Chemical Sciences Divison.
+
+  This software was developed at the National Institute of Standards
+  and Technology by employees of the Federal Government in the course
+  of their official duties. Pursuant to title 17 Section 105 of the
+  United States Code this software is not subject to copyright protection
+  and is in the public domain. NIST assumes no responsibility whatsoever
+  for its use by other parties, and makes no guarantees, expressed or
+  implied, about its quality, reliability, or any other characteristic.
+*/
+
+/* Use strict mode, if supported, for the contents of this file. */
+"use strict"
+
+/*
+  Creates an object for parsing a data line from a
+  JCAMP-DX file. The exponent arguement specifies that
+  exponential notation will be allowed for floating
+  point numbers. It should not be specified if SQZ
+  compression is used.
+*/
+function jdx_line_parse(use_exponent)
+{
+  // Initialize object data.
+  this.string = null;
+  this.buffer = null;
+
+  this.index = 0;
+  this.repeat = 0;
+
+  this.last_value = 0.0;
+  this.diff = 0.0;
+
+  this.use_exponent = use_exponent;
+
+  /*
+     Loads the next line of text for parsing.
+  */
+  this.set_next_line = function (line)
+  {
+    // Set object data.
+    this.string = line;
+
+    this.index = 0;
+    this.repeat = 0;
+  }
+
+  /*
+    Returns the next value from the data line.
+    If there are no more values in the data
+    line, zero is returned.
+  */
+  this.next_value = function ()
+  {
+    // See if we have existing data.
+    if(this.repeat > 0)
+    {
+      this.repeat--;
+
+      this.last_value += this.diff;
+
+      return this.last_value;
+    }
+
+    // Attempt to read in additional data.
+    if((this.string == null) || this.read_value())
+    {
+      return Number.NaN;
+    }
+
+    // Return the value.
+    return this.last_value;
+  }
+
+  /*
+     Returns the a label from the data line. If
+     a label is not present, null is returned.
+  */
+  this.next_label = function ()
+  {
+    // Advance past separators.
+    if(this.skip_separators())
+    {
+      return null;
+    }
+
+    // Save the starting index.
+    var start_index = this.index;
+
+    // Intialize the quote indicator.
+    var quotes = false;
+
+    // Loop through the string.
+    var max_index = (this.string != null) ? this.string.length : 0;
+
+    for(var end_index = start_index;
+        end_index < max_index;
+        end_index++)
+    {
+      // Get the current character.
+      var char = this.string.charAt(end_index);
+
+      // Check for a quote.
+      if(char == '"')
+      {
+        quotes = !quotes;
+      }
+
+      // Check for the end of the string.
+      else if(!quotes && (/[\s\)]/.test(char)))
+      {
+        break;
+      }
+    }
+
+    // Update the string index.
+    this.index = end_index;
+
+    // Check for a quoted string.
+    if(((end_index - start_index) > 1) &&
+       (this.string.charAt(start_index) == '"') &&
+       (this.string.charAt(end_index - 1) == '"'))
+    {
+      start_index++;
+      end_index--;
+    }
+
+    // Return a appropriate pointer.
+    return this.string.substring(start_index, end_index);
+  }
+
+  /*
+    Indicates whether or not all values have been
+    read from the line.
+  */
+  this.is_done = function ()
+  {
+    return this.skip_separators();
+  }
+
+  /*
+    Reads the next value from the line.
+  */
+  this.read_value = function ()
+  {
+    // Skip over separators.
+    if(this.skip_separators())
+    {
+      return true;
+    }
+
+    // Get the length of the string.
+    var length = this.string.length;
+
+    // Get the next character.
+    var char = this.string.charAt(this.index);
+
+    // Check for a missing value.
+    if(char == '?')
+    {
+      // Advance past the question mark.
+      this.index++;
+
+      // Set value and increment.
+      this.last_value = Number.NaN;
+      this.diff = 0.0;
+
+      return false;
+    }
+
+    // Check for a normal value.
+    if(/[+\-\d\.]/.test(char))
+    {
+      this.last_value = this.read_numeric_value('')
+      this.diff = 0;
+
+      return false;
+    }
+
+    // Get the character code.
+    var char_code = char.charCodeAt();
+
+    // Check for a positive SQZ digit. These are
+    // characters between '@' and 'I', inclusive.
+    if((char_code >= 64) && (char_code <= 73))
+    {
+      this.index++;
+
+      this.last_value = this.read_numeric_value(
+                             String.fromCharCode(char_code - 16));
+
+      this.diff = 0.0;
+
+      return false;
+    }
+
+    // Check for a negative SQZ digit. These are
+    // characters between 'a' and 'i', inclusive.
+    if((char_code >= 97) && (char_code <= 105))
+    {
+      this.index++;
+
+      this.last_value = (-this.read_numeric_value(
+                               String.fromCharCode(char_code - 48)));
+      this.diff = 0.0;
+
+      return false;
+    }
+
+    // Check for a positive DIF digit. These are
+    // characters between 'J' and 'R' inclusive,
+    // along with '%' (which corresponds to zero).
+    if(((char_code >= 74) && (char_code <= 82)) ||
+       (char_code == 37))
+    {
+      this.index++;
+
+      if(char_code == 37)
+      {
+        this.diff = this.read_numeric_value('0');
+      }
+      else
+      {
+        this.diff = this.read_numeric_value(
+            String.fromCharCode(char_code - 25));
+      }
+
+      this.last_value += this.diff;
+
+      return false;
+    }
+
+    // Check for a negative DIF digit. These are
+    // characters between 'j' and 'r' inclusive.
+    if(((char_code >= 106) && (char_code <= 114)))
+    {
+      this.index++;
+
+      this.diff = (-this.read_numeric_value(
+          String.fromCharCode(char_code - 57)));
+
+      this.last_value += this.diff;
+
+      return false;
+    }
+
+    // Check for a DUP character ('s' or 'S' through 'Z').
+    if(((char_code >= 83) && (char_code <= 90)) ||
+       (char_code == 116))
+    {
+      // Process the current character.
+      this.index++;
+
+      // Get the repeat value.
+      if(char_code == 116)
+      {
+        this.repeat = parseInt('9' + this.read_digits());
+      }
+      else
+      {
+        this.repeat = parseInt(String.fromCharCode(char_code - 34) +
+                               this.read_digits());
+      }
+
+      // Account for this instance of the value by
+      // decrementing the repeat value.
+      this.repeat--;
+
+      // Update the return value.
+      this.last_value += this.diff;
+
+      // Return false to note that we got a value.
+      return false
+    }
+
+    // Can't identify the character, return true.
+    return true;
+  }
+
+  /*
+    Reads a floating point value.
+  */
+  this.read_numeric_value = function (prefix)
+  {
+    // Check for a number.
+    var number = /^[+-]?\d*\.?\d*/.exec(prefix +
+                                        this.string.substring(this.index))
+
+    // See if a number was not found.
+    if(number == null)
+    {
+      // Return not-a-number.
+      return Number.NaN;
+    }
+
+    // Get just the matching string.
+    number = number[0];
+
+    // Skip past the nunmber.
+    this.index += (number.length - prefix.length);
+
+    // If appropriate, check for an exponent.
+    if((this.index < this.string.length) && this.use_exponent)
+    {
+      var exponent = /^[DdEe][+-]?\d+/.exec(this.string.substring(this.index))
+
+      if(exponent != null)
+      {
+        exponent = exponent[0];
+
+        number += ('e' + exponent.substring(1))
+
+        this.index += exponent.length;
+      }
+    }
+
+    // Return a floating point value.
+    return parseFloat(number);
+  }
+
+  /*
+     Reads a set of digits as a string.
+  */
+  this.read_digits = function ()
+  {
+    // Check the string length.
+    if(this.index >= this.string.length)
+    {
+      return '';
+    }
+
+    // Look for the pattern.
+    var digits = /^\d+/.exec(this.string.substring(this.index));
+
+    if(digits == null)
+    {
+      return '';
+    }
+
+    // Skip over the digits.
+    this.index += digits[0].length;
+
+    // Return the match.
+    return digits[0];
+  }
+
+  /*
+    Skips past separators (whitespace and commas).
+  */
+  this.skip_separators = function ()
+  {
+    // Make sure there is text present.
+    if(this.string == null)
+    {
+      return true;
+    }
+
+    // Get the length of the string.
+    var max_index = this.string.length;
+
+    // Skip over separator characters.
+    while(this.index < max_index)
+    {
+      var char = this.string.charAt(this.index);
+
+      if(!/[\s,]/.test(char))
+      {
+        break;
+      }
+
+      this.index++;
+    }
+
+    // Check for the end of the string.
+    if(this.index >= max_index)
+    {
+      return true;
+    }
+
+    // Return false to indicate that the end of
+    // the string was not reached.
+    return false;
+  }
+}
+
+
+/*
+  Creates a jdx_value object for holding a datum read from a
+  JCAMP-DX file.
+
+  The following items are passed to the constructor:
+
+  x        X axis value
+  y        Y axis value
+  width    peak width (if present)
+  label    label for the point (if present)
+*/
+function jdx_value(x, y, width, label)
+{
+  // Initialize object data.
+  this.x = x;
+  this.y = y;
+  this.width = width;
+  this.label = label;
+
+  /*
+     Returns the X axis coordinate for the value.
+  */
+  this.get_x = function ()
+  {
+    return this.x;
+  }
+
+  /*
+     Returns the Y axis coordinate for the value.
+  */
+  this.get_y = function ()
+  {
+    return this.y;
+  }
+
+  /*
+     Returns the peak width for the value.
+  */
+  this.get_width = function ()
+  {
+    return this.width;
+  }
+
+  /*
+     Returns the label associated with the value.
+  */
+  this.get_label = function ()
+  {
+    return this.label;
+  }
+}
+
+/*
+  Creates an onbject which holds constants relevant to
+  JCMAP-DX files. This object needs to be instantiated
+  once to provide information for jdx_data objects.
+*/
+function jdx_const_constructor()
+{
+  /*
+    ==============================================
+    Constants used by getDataTypes()
+    ==============================================
+  */
+  /*
+    Constant used by getDataTypes() to indicate
+    that X value data is present.
+  */
+  this.X_DATA_PRESENT = 0x01;
+
+  /*
+    Constant used by getDataTypes() to indicate
+    that Y value data is present.
+  */
+  this.Y_DATA_PRESENT = 0x02;
+
+  /*
+    Constant used by getDataTypes() to indicate
+    that peak width data is present.
+  */
+  this.WIDTH_DATA_PRESENT = 0x04;
+
+  /*
+    Constant used by getDataTypes() to indicate
+    that label data is present.
+  */
+  this.LABEL_DATA_PRESENT = 0x08;
+
+  /*
+    ==============================================
+    Constants refering to JCAMP-DX fields.
+    ==============================================
+  */
+  /*
+    Constant with header for JCAMP-DX title
+    (##TITLE=). For many spectra, this field
+    contains the name of the material.
+  */
+  this.TITLE_LABEL = "##TITLE=";
+
+  /*
+    Constant with header for JCAMP-DX version
+    (##JCAMP-DX=).
+  */
+  this.JCAMP_LABEL = "##JCAMP-DX=";
+
+  /*
+    Constant with header for JCAMP-DX data
+    type (##DATA TYPE=).
+  */
+  this.DATA_TYPE_LABEL = "##DATA TYPE=";
+
+  /*
+    Constant with header for JCAMP-DX data
+    class (##CLASS=).
+  */
+  this.CLASS_LABEL = "##CLASS=";
+
+  /*
+    Constant with header for JCAMP-DX origin
+    field (##ORIGIN=).
+  */
+  this.ORIGIN_LABEL = "##ORIGIN=";
+
+  /*
+    Constant with header for JCAMP-DX origin
+    code field (##ORIGIN CODE=).
+  */
+  this.ORIGIN_CODE_LABEL = "##ORIGIN CODE=";
+
+  /*
+    Constant with header for JCAMP-DX owner
+    field (##OWNER=).
+  */
+  this.OWNER_LABEL = "##OWNER=";
+
+  /*
+    Constant with header for JCAMP-DX date
+    field (##DATE=).
+  */
+  this.DATE_LABEL = "##DATE=";
+
+  /*
+    Constant with header for JCAMP-DX time
+    field (##TIME=).
+  */
+  this.TIME_LABEL = "##TIME=";
+
+  /*
+    Constant with header for NIST ACD version
+    field (##$SPECTRA VERSION=).
+  */
+  this.NIST_SPECTRA_VERSION_LABEL = "##$SPECTRA VERSION=";
+
+  /*
+    Constant with header for NIST Qunatitative IR
+    Y uncertainty field (##$UNCERTAINTY IN Y=).
+  */
+  this.NIST_Y_UNCERTAINTY_LABEL = "##$UNCERTAINTY IN Y=";
+
+  /*
+    Constant with header for JCAMP-DX Chemical
+    Abstracts Service name field (##CAS NAME=).
+  */
+  this.CAS_NAME_LABEL = "##CAS NAME=";
+
+  /*
+    Constant with header for JCAMP-DX names
+    field (##NAMES=). This field may contain
+    multiple names, one name per line.
+  */
+  this.NAMES_LABEL = "##NAMES=";
+
+  /*
+    Constant with header for JCAMP-DX Chemical
+    Abstracts Service registry number field
+    (##CAS REGISTRY NO=).
+  */
+  this.CAS_NUMBER_LABEL = "##CAS REGISTRY NO=";
+
+  /*
+    Constant with header for JCAMP-DX EPA mass
+    spectrum number field (##EPA MASS SPEC NO=).
+  */
+  this.EPA_NUMBER_LABEL = "##EPA MASS SPEC NO=";
+
+  /*
+    Constant with header for JCAMP-DX NIST mass
+    spectrum number field (##NIST MASS SPEC NO=).
+  */
+  this.NIST_NUMBER_LABEL = "##$NIST MASS SPEC NO=";
+
+  /*
+    Constant with header for JCAMP-DX chemical
+    formula field (##MOLFORM=).
+  */
+  this.FORMULA_LABEL = "##MOLFORM=";
+
+  /*
+    Constant with header for JCAMP-DX molecular
+    weight field (##MW=).
+  */
+  this.MOL_WEIGHT_LABEL = "##MW=";
+
+  /*
+    Constant with header for JCAMP-DX melting
+    point field (##MP=).
+  */
+  this.MELTING_POINT_LABEL = "##MP=";
+
+  /*
+    Constant with header for JCAMP-DX boiling
+    point field (##BP=).
+  */
+  this.BOILING_POINT_LABEL = "##BP=";
+
+  /*
+    Constant with header for JCAMP-DX source
+    reference field (##SOURCE REFERENCE=).
+  */
+  this.SOURCE_REF_LABEL = "##SOURCE REFERENCE=";
+
+  /*
+    Constant with header for the NIST ID
+    field (##$NIST ID=).
+  */
+  this.NIST_ID_LABEL = "##$NIST ID=";
+
+  /*
+    Constant with header for the NIST SQUIB
+    field (##$NIST SQUIB=).
+  */
+  this.NIST_SQUIB_LABEL = "##$NIST SQUIB=";
+
+  /*
+    Constant with header for the NIST SOURCE
+    field (##$NIST SOURCE=).
+  */
+  this.NIST_SOURCE_LABEL = "##$NIST SOURCE=";
+
+  /*
+    Constant with header for the NIST image
+    field (##$NIST IMAGE=).
+  */
+  this.NIST_IMAGE_LABEL = "##$NIST IMAGE=";
+
+  /*
+    Constant with header for JCAMP-DX spectrometer /
+    data system field (##SPECTROMETER/DATA SYSTEM=).
+  */
+  this.SPEC_DATA_SYSTEM_LABEL = "##SPECTROMETER/DATA SYSTEM=";
+
+  /*
+    Constant with header for JCAMP-DX intrument
+    parameters field (##INSTRUMENT PARAMETERS=).
+  */
+  this.INSTRUMENT_PARAMS_LABEL = "##INSTRUMENT PARAMETERS=";
+
+  /*
+    Constant with header for JCAMP-DX spectrometer
+    type field (##SPECTROMETER TYPE=).
+  */
+  this.SPECTROMETER_TYPE_LABEL = "##SPECTROMETER TYPE=";
+
+  /*
+    Constant with header for JCAMP-DX inlet
+    field (##.INLET=).
+  */
+  this.INLET_LABEL = "##.INLET=";
+
+  /*
+    Constant with header for JCAMP-DX ionization
+    energy field (##.IONIZATION ENERGY=).
+  */
+  this.IE_LABEL = "##.IONIZATION ENERGY=";
+
+  /*
+    Constant with header for JCAMP-DX accelerating
+    voltage field (##.ACCELERATING VOLTAGE=).
+  */
+  this.VOLTAGE_LABEL = "##.ACCELERATING VOLTAGE=";
+
+  /*
+    Constant with header for JCAMP-DX ionization
+    mode field (##.IONIZATION MODE=).
+  */
+  this.IONIZATION_MODE_LABEL = "##.IONIZATION MODE=";
+
+  /*
+    Constant with header for JCAMP-DX state
+    field (##STATE=).
+  */
+  this.STATE_LABEL = "##STATE=";
+
+  /*
+    Constant with header for JCAMP-DX path
+    length field (##PATH LENGTH=).
+  */
+  this.PATH_LENGTH_LABEL = "##PATH LENGTH=";
+
+  /*
+    Constant with header for JCAMP-DX sample
+    description field (##SAMPLE DESCRIPTION=).
+  */
+  this.SAMPLE_DESCRIPTION_LABEL = "##SAMPLE DESCRIPTION=";
+
+  /*
+    Constant with header for the sample ingredients
+    field (##$SAMPLE INGREDIENTS=)
+  */
+  this.SAMPLE_INGREDIENTS_LABEL = "##$SAMPLE INGREDIENTS=";
+
+  /*
+    Constant with header for JCAMP-DX pressure
+    field (##PRESSURE=).
+  */
+  this.SAMPLE_PRESSURE_LABEL = "##PRESSURE=";
+
+  /*
+    Constant with header for JCAMP-DX sample
+    temperature field (##TEMPERATURE=).
+  */
+  this.SAMPLE_TEMP_LABEL = "##TEMPERATURE=";
+
+  /*
+    Constant with header for JCAMP-DX source
+    temperature field (##.SOURCE TEMPERATURE=).
+  */
+  this.SOURCE_TEMP_LABEL = "##.SOURCE TEMPERATURE=";
+
+  /*
+    Constant with header for JCAMP-DX sampling
+    procedure field (##SAMPLING PROCEDURE=).
+  */
+  this.SAMPLING_PROCEDURE_LABEL = "##SAMPLING PROCEDURE=";
+
+  /*
+    Constant with header for JCAMP-DX resolution
+    field (##RESOLUTION=).
+  */
+  this.RESOLUTION_LABEL = "##RESOLUTION=";
+
+   /*
+    Constant with header for JCAMP-DX data
+    processing field (##DATA PROCESSING=).
+  */
+  this.DATA_PROCESSING_LABEL = "##DATA PROCESSING=";
+
+  /*
+    Constant with header for JCAMP-DX X axis
+    units field (##XUNITS=).
+  */
+  this.X_UNITS_LABEL = "##XUNITS=";
+
+  /*
+    Constant with header for JCAMP-DX Y axis
+    units field (##YUNITS=).
+  */
+  this.Y_UNITS_LABEL = "##YUNITS=";
+
+  /*
+    Constant with header for JCAMP-DX X axis
+    label (##XLABEL=).
+  */
+  this.X_AXIS_LABEL = "##XLABEL=";
+
+  /*
+    Constant with header for JCAMP-DX Y axis
+    label (##YLABEL=).
+  */
+  this.Y_AXIS_LABEL = "##YLABEL=";
+
+  /*
+    Constant with header for JCAMP-DX X axis
+    scaling factor (##XFACTOR=).
+  */
+  this.X_FACTOR_LABEL = "##XFACTOR=";
+
+  /*
+    Constant with header for JCAMP-DX Y axis
+    scaling factor (##YFACTOR=).
+  */
+  this.Y_FACTOR_LABEL = "##YFACTOR=";
+
+  /*
+    Constant with header for JCAMP-DX X axis
+    increment (##DELTAX=).
+  */
+  this.X_DELTA_LABEL = "##DELTAX=";
+
+  /*
+    Constant with header for JCAMP-DX owner
+    field (##OWNER=).
+  */
+  this.X_FIRST_LABEL = "##FIRSTX=";
+
+  /*
+    Constant with header for JCAMP-DX last
+    X axis value (##LASTX=).
+  */
+  this.X_LAST_LABEL = "##LASTX=";
+
+  /*
+    Constant with header for JCAMP-DX first
+    Y axis value (##FIRSTY=).
+  */
+  this.Y_FIRST_LABEL = "##FIRSTY=";
+
+  /*
+    Constant with header for JCAMP-DX maximum
+    X axis value (##MAXX=).
+  */
+  this.X_MAX_LABEL = "##MAXX=";
+
+  /*
+    Constant with header for JCAMP-DX minimum
+    X axis value (##MINX=).
+  */
+  this.X_MIN_LABEL = "##MINX=";
+
+  /*
+    Constant with header for JCAMP-DX maximum
+    Y axis value (##MAXY=).
+  */
+  this.Y_MAX_LABEL = "##MAXY=";
+
+  /*
+    Constant with header for JCAMP-DX minimum
+    Y axis value (##MINY=).
+  */
+  this.Y_MIN_LABEL = "##MINY=";
+
+  /*
+    Constant with header for JCAMP-DX point
+    count (##NPOINTS=).
+  */
+  this.POINTS_LABEL = "##NPOINTS=";
+
+  /*
+    Constant with header for a JCAMP-DX X-Y
+    data set (##XYDATA=).
+  */
+  this.XY_DATA_LABEL = "##XYDATA=";
+
+  /*
+    Constant with header for a JCAMP-DX X-Y
+    pair set (##XYPAIRS=).
+  */
+  this.XY_PAIRS_LABEL = "##XYPAIRS=";
+
+  /*
+    Constant with header for a JCAMP-DX X-Y
+    point set (##XYPOINTS=).
+  */
+  this.XY_POINTS_LABEL = "##XYPOINTS=";
+
+  /*
+    Constant with header for a JCAMP-DX peak
+    table (##PEAK TABLE=).
+  */
+  this.PEAK_TABLE_LABEL = "##PEAK TABLE=";
+
+  /*
+    Constant with header for JCAMP-DX end
+    field (##END=). This field marks the
+    end of a JCAMP-DX block.
+  */
+  this.JCAMP_END_LABEL = "##END=";
+
+  /*
+    Array with all of the meta-data labels.
+  */
+  this.METADATA_LABELS = [this.TITLE_LABEL,
+                          this.JCAMP_LABEL,
+                          this.DATA_TYPE_LABEL,
+                          this.CLASS_LABEL,
+                          this.ORIGIN_LABEL,
+                          this.ORIGIN_CODE_LABEL,
+                          this.OWNER_LABEL,
+                          this.DATE_LABEL,
+                          this.TIME_LABEL,
+                          this.NIST_SPECTRA_VERSION_LABEL,
+                          this.NIST_Y_UNCERTAINTY_LABEL,
+                          this.CAS_NAME_LABEL,
+                          this.NAMES_LABEL,
+                          this.CAS_NUMBER_LABEL,
+                          this.EPA_NUMBER_LABEL,
+                          this.NIST_NUMBER_LABEL,
+                          this.FORMULA_LABEL,
+                          this.MOL_WEIGHT_LABEL,
+                          this.MELTING_POINT_LABEL,
+                          this.BOILING_POINT_LABEL,
+                          this.SOURCE_REF_LABEL,
+                          this.NIST_ID_LABEL,
+                          this.NIST_SQUIB_LABEL,
+                          this.NIST_SOURCE_LABEL,
+                          this.NIST_IMAGE_LABEL,
+                          this.SPEC_DATA_SYSTEM_LABEL,
+                          this.INSTRUMENT_PARAMS_LABEL,
+                          this.SPECTROMETER_TYPE_LABEL,
+                          this.INLET_LABEL,
+                          this.IE_LABEL,
+                          this.VOLTAGE_LABEL,
+                          this.IONIZATION_MODE_LABEL,
+                          this.STATE_LABEL,
+                          this.PATH_LENGTH_LABEL,
+                          this.SAMPLE_DESCRIPTION_LABEL,
+                          this.SAMPLE_INGREDIENTS_LABEL,
+                          this.SAMPLE_PRESSURE_LABEL,
+                          this.SAMPLE_TEMP_LABEL,
+                          this.SOURCE_TEMP_LABEL,
+                          this.SAMPLING_PROCEDURE_LABEL,
+                          this.RESOLUTION_LABEL,
+                          this.DATA_PROCESSING_LABEL,
+                          this.X_UNITS_LABEL,
+                          this.Y_UNITS_LABEL,
+                          this.X_AXIS_LABEL,
+                          this.Y_AXIS_LABEL,
+                          this.X_FACTOR_LABEL,
+                          this.Y_FACTOR_LABEL,
+                          this.X_DELTA_LABEL,
+                          this.X_FIRST_LABEL,
+                          this.X_LAST_LABEL,
+                          this.Y_FIRST_LABEL,
+                          this.X_MAX_LABEL,
+                          this.X_MIN_LABEL,
+                          this.Y_MAX_LABEL,
+                          this.Y_MIN_LABEL,
+                          this.POINTS_LABEL];
+
+  /*
+    Array with all of the data labels.
+  */
+  this.DATA_LABELS = [this.XY_DATA_LABEL,
+                      this.XY_PAIRS_LABEL,
+                      this.XY_POINTS_LABEL,
+                      this.PEAK_TABLE_LABEL];
+}
+
+
+var JDX_CONST = new jdx_const_constructor();
+
+
+/*
+  Creates an object which reads a section at a time
+  from a JCAMP-DX file. Each section is considered to
+  start with two number sign characters (##) and end
+  at the start of the next section.
+*/
+function jdx_section_parse(text, index)
+{
+  // Define object data.
+  this.text = text;
+  this.index = index;
+
+  /*
+    Returns the current index in the text string.
+  */
+  this.get_index = function ()
+  {
+    return this.index;
+  }
+
+  /*
+    Returns the next section in the text string. If the
+    end has been reached, null is returned.
+  */
+  this.next_section = function ()
+  {
+    // Check the index.
+    if((this.text == null) ||
+       (this.index >= this.text.length))
+    {
+      return null;
+    }
+
+    // Skip initial whitespace.
+    while((this.index < this.text.length) &&
+          /\s/.test(this.text.charAt(this.index)))
+    {
+      this.index++;
+    }
+
+    // Advance through the text.
+    var section = ''
+
+    var new_line = false;
+    var comment = false;
+
+    for(; this.index < this.text.length; this.index++)
+    {
+      // Get the current character.
+      var chr = this.text.charAt(this.index);
+
+      // Check for a carriage return.
+      if(chr == '\r')
+      {
+        // If present, skip over a trailing linefeed.
+        if(((this.index + 1) < this.text.length) &&
+           (this.text.charAt(this.index + 1) == '\n'))
+        {
+          this.index++;
+        }
+
+        // If we are in a comment, clear it.
+        comment = false;
+
+        // Indicate we are on a new line.
+        new_line = true;
+
+        // Move on to the next character.
+        continue;
+      }
+
+      // Look for a line feed.
+      if(chr == '\n')
+      {
+        // If we are in a comment, clear it.
+        comment = false;
+
+        // Indicate we are on a new line.
+        new_line = true;
+
+        // Move on to the next character.
+        continue;
+      }
+
+      // Skip over characters in a comment.
+      if(comment)
+      {
+        continue;
+      }
+
+      // Check for a comment.
+      if((chr == '$') &&
+         ((this.index + 1) < this.text.length) &&
+         (this.text.charAt(this.index + 1) == '$'))
+      {
+        // Indicate we are in a comment.
+        comment = true;
+
+        // Skip over the second character of the comment string.
+        this.index++;
+
+        // Process the next character.
+        continue;
+      }
+
+      // Check for the first characters on a new line.
+      if(new_line)
+      {
+        // See if we have reached the start of the next section.
+        if((chr == '#') &&
+           ((this.index + 1) < this.text.length) &&
+           (this.text.charAt(this.index + 1) == '#'))
+        {
+          break;
+        }
+
+        // See if the line has started.
+        if(!/\s/.test(chr))
+        {
+          // Add a linefeed for the prior line and the character.
+          section += ('\n' + chr);
+
+          // Indicate we are no longer on a new line.
+          new_line = false;
+        }
+
+        // Process the next character.
+        continue;
+      }
+
+      // Save the character.
+      section += chr;
+    }
+
+    // Return the desired string.
+    return (section.length > 0) ? section : null;
+  }
+}
+
+
+/*
+  Creates an object which parses JCAMP-DX files.
+*/
+function jdx_parse()
+{
+  /*
+    Resets the object.
+  */
+  this.clear = function ()
+  {
+    // Reset class data.
+    this.known_sections = {};
+    this.other_sections = {};
+    this.values = [];
+
+    this.data_label = '';
+    this.data_types = 0;
+  }
+
+  // Initialize this object.
+  this.clear();
+
+  /*
+    Loads data from a text string. Parses through the string
+    until the end of the block is reached.
+
+    input             String containg the text to be parsed
+                      as a JCMAP-DX file.
+    index             Integer indicating the starting index in
+                      the input string. Parsing will commence
+                      at this point in the string.
+    parse_data        Boolean which when true indicates that
+                      data should be parsed to get individual
+                      data points.
+
+    This method returns an integer indicating the index at
+    which parsing stopped. If this index does not point to
+    the end of the input string, additional JCAMP-DX blocks
+    may be available after this point.
+  */
+  this.load = function (input, index, parse_data)
+  {
+    // Clear exisiting data.
+    this.clear();
+
+    // Create an object to parse data.
+    var section_parser = new jdx_section_parse(input, index);
+
+    // Read sections.
+    for(;;)
+    {
+      // Read the next section.
+      var section = section_parser.next_section();
+
+      // See if we reached the end.
+      if(section == null)
+      {
+        break;
+      }
+
+      // Process the section.
+      if(this.process_section(section, parse_data))
+      {
+        break;
+      }
+    }
+
+    // Done, return.
+    return section_parser.get_index();
+  }
+
+  /*
+    Indicates if a field is present.
+
+    label             String with the label for the
+                      field of interest.
+
+    This method returns a boolean which when true
+    indicates that the field exists and can be read.
+  */
+  this.valid_field = function (label)
+  {
+    return ((label in this.known_sections) ||
+            (label in this.other_sections));
+  }
+
+  /*
+    Retrieves the text contents of a field.
+
+    label             String with the label for the
+                      field of interest.
+
+    This method returns a string containing the
+    contents of the field.
+  */
+  this.get_field = function (label)
+  {
+    // Look in the known sections first.
+    if(label in this.known_sections)
+    {
+      return this.known_sections[label];
+    }
+
+    // If no match is found, try the unknown sections.
+    if(label in this.other_sections)
+    {
+      return this.other_sections[label];
+    }
+
+    // No match, return null.
+    return null;
+  }
+
+  /*
+    Returns the contents of a field in the form of
+    an integer.
+
+    label             String with the label for the
+                      field of interest.
+    default_value     Integer with value to be used if
+                      the field is not defined.
+
+    This method retrns an integer containing the contents
+    of the field or the default value.
+  */
+  this.get_integer_field = function (label, default_value)
+  {
+    // Parse the contents of the field.
+    var value = parseInt(this.get_field(label));
+
+    // See if we were able to read a value.
+    if(value != Number.NaN)
+    {
+      return value;
+    }
+
+    // Unable to read integer, return the default value.
+    return default_value;
+  }
+
+  /*
+   Returns the contents of a field in the form of
+    a floating point value.
+
+    label             String with the label for the
+                      field of interest.
+    default_value     Float with value to be used if
+                      the field is not defined.
+
+    This method retrns a number containing the contents
+    of the field or the default value.
+  */
+  this.get_float_field = function (label, default_value)
+  {
+  // Parse the contents of the field.
+    var value = parseFloat(this.get_field(label));
+
+    // See if we were able to read a value.
+    if(value != Number.NaN)
+    {
+      return value;
+    }
+
+    // Unable to read value, return the default value.
+    return default_value;
+  }
+
+  /*
+    Returns the label of the data section if data was
+    parsed (e.g., "##PEAK TABLE". If data was not parsed
+    null is returned.
+
+  */
+  this.get_data_label = function ()
+  {
+    return this.data_label;
+  }
+
+  /*
+    Returns an integer which indicates the data types which
+    were read if data was parsed. Depending on the data read
+    the return value may consist of zero or more of the following
+    constants or'ed together:  JDX_CONST.X_DATA_PRESENT,
+    JDX_CONST.Y_DATA_PRESENT, JDX_CONST.WIDTH_DATA_PRESENT,
+    JDX_CONST.LABEL_DATA_PRESENT. If data was not parsed,
+    zero is returned.
+  */
+  this.get_data_types = function ()
+  {
+    return this.data_types;
+  }
+
+  /*
+    Returns the number of individual values available.
+    Individual values are only available if it is specified
+    that data should be parsed in the load() method.
+  */
+  this.get_value_count = function ()
+  {
+    return this.values.length;
+  }
+
+  /*
+    Returns a given individual data value.
+
+    index             integer containing the index of the
+                      value to be retrieved.
+
+    This method returns a jdx_value object for the given
+    index. If the index is out of range, null is returned.
+  */
+  this.get_value = function (index)
+  {
+    if(((index % 1) === 0) && (index >= 0) && (index < this.values.length))
+    {
+      return this.values[index];
+    }
+
+    return null;
+  }
+
+
+  this.process_section = function (section, parse_data)
+  {
+    // Look for a label in the normal labels.
+    for(var index = 0; index < JDX_CONST.METADATA_LABELS.length; index++)
+    {
+      var label = JDX_CONST.METADATA_LABELS[index];
+
+      if(section.substring(0, label.length) == label)
+      {
+        this.save_section(label, section);
+
+        return false;
+      }
+    }
+
+    // Look for a label in the data labels.
+    for(var index = 0; index < JDX_CONST.DATA_LABELS.length; index++)
+    {
+      var label = JDX_CONST.DATA_LABELS[index];
+
+      if(section.substring(0, label.length) == label)
+      {
+        this.save_section(label, section);
+
+        if(parse_data)
+        {
+          this.parse_data(label, section);
+        }
+
+        return false;
+      }
+    }
+
+    // See if the end is reached.
+    if(section.substring(0, JDX_CONST.JCAMP_END_LABEL.length) ==
+       JDX_CONST.JCAMP_END_LABEL)
+    {
+      return true;
+    }
+
+    // Save the header.
+    this.save_other_section(section);
+
+    // Done, return.
+    return false;
+  }
+
+
+  this.save_section = function (label, section)
+  {
+    // Save the section.
+    this.known_sections[label] =
+      this.clean_string(label.length, section.length, section);
+
+    // Done, return.
+    return;
+  }
+
+
+  this.save_other_section = function (section)
+  {
+    // Look for an equals sign.
+    var label_end = section.indexOf('=');
+
+    if(label_end >= 0)
+    {
+      // Save both parts of the section.
+      var label = this.clean_string(0, label_end + 1, section);
+
+      this.other_sections[label] =
+        this.clean_string(label_end + 1, section.length, section);
+    }
+    else
+    {
+      // Save the entire section as a key.
+      this.other_sections[section] = '';
+    }
+
+    // Done, return.
+    return;
+  }
+
+
+  this.set_field = function (label, value)
+  {
+    this.known_sections[label] = value.toString();
+  }
+
+
+  this.set_range = function (y_axis, min_label, max_label)
+  {
+    // Check for a lack of data.
+    if(this.values.length < 1)
+    {
+      return;
+    }
+
+    // Initialize the range.
+    var value = this.get_value(0);
+
+    var min = y_axis ? value.get_y() : value.get_x();
+    var max = min;
+
+    // Check the remaining values.
+    for(var index = 1; index < this.values.length; index++)
+    {
+      // Get the value and relevant coordinate.
+      value = this.get_value(index);
+
+      var number = y_axis ? value.get_y() : value.get_x();
+
+      // Update the range.
+      max = Math.max(max, number);
+      min = Math.min(min, number);
+    }
+
+    // Set the appropriate fields.
+    this.set_field(min_label, min);
+    this.set_field(max_label, max);
+
+    // Done, return.
+    return;
+  }
+
+
+  this.read_data = function (text, index, x_scale, y_scale,
+                             x_increment, group)
+  {
+    // Create am object to parse lines.
+    var line_parser = new jdx_line_parse(false);
+
+    // Loop through the string.
+    var max_index = text.length;
+
+    while(index < max_index)
+    {
+      // Find the end of the line.
+      var end_index = text.indexOf('\n', index);
+
+      if(end_index < 0)
+      {
+        end_index = max_index;
+      }
+      else
+      {
+        end_index = end_index + 1;
+      }
+
+      // Extract a line.
+      var line = text.substring(index, end_index);
+
+      // Update our position in the string.
+      index = end_index;
+
+      // Add the string to the parser.
+      line_parser.set_next_line(line);
+
+      // Read the line.
+      this.read_line(line_parser, x_scale, y_scale,
+                     x_increment, group);
+    }
+
+    // Done, return.
+    return;
+  }
+
+
+  this.read_line = function (line_parser, x_scale, y_scale,
+                             x_increment, group)
+  {
+    // Initialize the X value.
+    var x = 0.0;
+
+    // Indicate that this is the first pass through the line.
+    var first_value = true;
+
+    // Read the initial value.
+    do
+    {
+      // See if we have valid data.
+      if(line_parser.is_done())
+      {
+        return;
+      }
+
+      // Get the X value.
+      x = x_scale * line_parser.next_value();
+
+      // Get the y value.
+      var y = y_scale * line_parser.next_value();
+
+      // If appropriate, get the peak width.
+      var width = ((this.data_types & JDX_CONST.WIDTH_DATA_PRESENT) != 0) ?
+        dXScale * line_parser.next_value() : 0.0;
+
+      // If appropriate, get the label.
+      var label = ((this.data_types & JDX_CONST.LABEL_DATA_PRESENT) != 0) ?
+        line_parser.next_label() : null;
+
+      // Check for the first value on the line.
+      if(first_value)
+      {
+        // Clear the first value indicator.
+        first_value = false;
+
+        // See if value matches the last value on the prior line.
+        if(this.is_match(this.values.length - 1, x, y))
+        {
+          continue;
+        }
+      }
+
+      // Add the data.
+      this.values.push(new jdx_value(x, y, width, label));
+    }
+    while(group);
+
+    // Add any additional points.
+    if(!group)
+    {
+      for(;;)
+      {
+        // Compute the next X value.
+        x += x_increment;
+
+        // Get the Y value.
+        y = y_scale * line_parser.next_value();
+
+        // See if we have valid data.
+        if(line_parser.is_done())
+        {
+          return;
+        }
+
+        // Add the data.
+        this.values.push(new jdx_value(x, y, 0.0, null));
+      }
+    }
+
+    // Done, return.
+    return;
+  }
+
+
+  this.parse_data = function (label, section)
+  {
+    // Clear any existing data.
+    this.values = [];
+
+    // Save the data header.
+    this.data_label = label;
+
+    // Initialize data settings.
+    var group = true;
+    this.data_types = JDX_CONST.X_DATA_PRESENT | JDX_CONST.Y_DATA_PRESENT;
+
+    // Find the start of the data.
+    var label_length = label.length;
+    var line_length = section.indexOf('\n', this.label_length);
+
+    // Make sure data is present.
+    if(line_length < 0)
+    {
+      return;
+    }
+
+    // Get the data parameters.
+    var parameters =
+      section.substring(label_length, line_length);
+
+    // Skip over the end of the first line.
+    line_length++;
+
+    // Get data settings from the variable list.
+    if(parameters != null)
+    {
+      // See if the data is grouped.
+      group = (parameters.indexOf('X++') < 0);
+
+      // Check additional attributes for grouped data.
+      if(group)
+      {
+        // Check for peak widths.
+        if(parameters.indexOf('W') >= 0)
+        {
+          this.data_types |= JDX_CONST.WIDTH_DATA_PRESENT;
+        }
+
+        // Check for labels.
+        if((parameters.indexOf('A') >= 0) ||
+           (parameters.indexOf('M') >= 0))
+        {
+          this.data_types |= JDX_CONST.LABEL_DATA_PRESENT;
+        }
+      }
+    }
+
+    // Get scaling factors.
+    var x_scale = this.get_float_field(JDX_CONST.X_FACTOR_LABEL, 1.0);
+    var y_scale = this.get_float_field(JDX_CONST.Y_FACTOR_LABEL, 1.0);
+
+    // Get the x increment.
+    var x_increment = 1.0;
+
+    if(this.valid_field(JDX_CONST.X_FIRST_LABEL) &&
+       this.valid_field(JDX_CONST.X_LAST_LABEL) &&
+       this.valid_field(JDX_CONST.POINTS_LABEL))
+    {
+      // Compute the increment.
+      x_increment =
+        (this.get_float_field(JDX_CONST.X_LAST_LABEL, 0.0) -
+         this.get_float_field(JDX_CONST.X_FIRST_LABEL, 0.0)) /
+        (this.get_integer_field(JDX_CONST.POINTS_LABEL, 2) - 1.0);
+    }
+    else
+    {
+      // Use the given increment.
+      if(this.valid_field(JDX_CONST.X_DELTA_LABEL))
+      {
+        x_increment = this.get_float_field(JDX_CONST.X_DELTA_LABEL, 1.0);
+      }
+
+      // If we can, check for a reversed sign.
+      if(this.valid_field(JDX_CONST.X_FIRST_LABEL) &&
+         this.valid_field(JDX_CONST.X_LAST_FIELD))
+      {
+        // Check the X range.
+        var x_first = this.get_float_field(JDX_CONST.X_FIRST_LABEL, 0.0);
+        var x_last = this.get_float_field(JDX_CONST.X_LAST_LABEL, 0.0);
+
+        if(x_first != x_last)
+        {
+          // See if we have positive or negative increments.
+          if(x_last > x_first)
+          {
+            // Increment should be positive.
+            x_increment = Math.abs(x_increment);
+          }
+          else
+          {
+            // Increment should be negative.
+            x_increment = (-Math.abs(x_increment));
+          }
+        }
+      }
+    }
+
+    // Read data lines.
+    this.read_data(section, line_length, x_scale, y_scale,
+                   x_increment, group);
+
+    // If appropriate, update data.
+    var value_count = this.values.length;
+
+    if(value_count > 0)
+    {
+      // If not set, set the first X value.
+      if(!this.valid_field(JDX_CONST.X_FIRST_LABEL))
+      {
+        this.set_field(JDX_CONST.X_FIRST_LABEL,
+                       this.get_value(0).get_x());
+      }
+
+      // If not set, set the last X value.
+      if(!this.valid_field(JDX_CONST.X_LAST_LABEL))
+      {
+        this.set_field(JDX_CONST.X_LAST_LABEL,
+                       this.get_value(value_count -1).get_x());
+      }
+
+      // If not set, set the X range.
+      if(!this.valid_field(JDX_CONST.X_MIN_LABEL) ||
+         !this.valid_field(JDX_CONST.X_MAX_LABEL))
+      {
+        this.set_range(false, JDX_CONST.X_MIN_LABEL,
+                       JDX_CONST.X_MAX_LABEL);
+      }
+
+      // If not set, set the first Y value.
+      if(!this.valid_field(JDX_CONST.Y_FIRST_LABEL))
+      {
+        this.set_field(JDX_CONST.Y_FIRST_LABEL,
+                       this.get_value(0).get_y());
+      }
+
+      // If not set, set the Y range.
+      if(!this.valid_field(JDX_CONST.Y_MIN_LABEL) ||
+         !this.valid_field(JDX_CONST.Y_MAX_LABEL))
+      {
+        this.set_range(true, JDX_CONST.Y_MIN_LABEL,
+                       JDX_CONST.Y_MAX_LABEL);
+      }
+    }
+
+    // Done, return.
+    return;
+  }
+
+
+  this.is_match = function (index, x, y)
+  {
+    // Check the value index.
+    if((index < 0) || (index >= this.values.length))
+    {
+      return false;
+    }
+
+    // Get the value at the given index.
+    var value = this.values[index];
+
+    // Check for a match.
+    return (value.get_x() == x) && (value.get_y() == y);
+  }
+
+
+  this.clean_string = function (start_index, end_index, string)
+  {
+    // Skip leading whitespace.
+    while((start_index < end_index) &&
+          /\s/.test(string.charAt(start_index)))
+    {
+      start_index++;
+    }
+
+    // Skip trailing whitespace.
+    while((start_index < end_index) &&
+          /\s/.test(string.charAt(end_index - 1)))
+    {
+      end_index--;
+    }
+
+    // See if the whole string is used.
+    if((start_index == 0) && (end_index == string.length))
+    {
+      // Return the whole string.
+      return string;
+    }
+
+    // Return the desired substring.
+    return string.substring(start_index, end_index);
+  }
+}
+
