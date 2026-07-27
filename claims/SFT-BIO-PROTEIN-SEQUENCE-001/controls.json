@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-PROTEIN-SEQUENCE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:02022e7ee2f7383c57fa269de280c463e59ba27227c129a67e63fe776d9fd899"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:99b11a138d9e243fe3e9f3fe5919c41d0d4c6f34ee4fee2d5293ffa8d0516310"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:61d04d27ac41125a67eebd975fa941832f35c160dfd857148007aa4728c8fe1d"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:9bd7f3d20ceddca413b9a8a55b68bb02f2b8292ef9885097ec712df6ff48d637"
+    }
+  ]
+}

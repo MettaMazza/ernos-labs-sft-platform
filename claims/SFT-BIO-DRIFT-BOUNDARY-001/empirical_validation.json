@@ -1,0 +1,60 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-DRIFT-BOUNDARY-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NCBI-EVOLUTION-GENETICS-V1"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9179303eda1cbea356624eadf312f8e1dc6dde6ff18dbf1c7fd9f48e5e9cc3d4",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d2a6c805c5457db98035566b8b9a3e66319b60161c787922ecf4021fc325a0e3",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:81f7404d53f3093c7712cf9d1d9ffda6a0bcb95823d9f3a75b9b7e4a3aeb49b3",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-DRIFT-BOUNDARY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:398297f3ea08ad7818b324ce8fbd12df807d1a00616cb0be4140785bcf5e0e77",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3c7bfb64f50ac2215d722c57f9bd0add00aa4bf906cd9bb49d162dfd4fc3e82d",
+    "prediction_seal_hash": "sha256:9a2adb5d3a31bf88f2074b20270c23ce6fcbf2842757cc07202e09cd170ec92d",
+    "program_hash": "sha256:45bd770395b2ef5d0aa111ec2ddfad08c710b474f0c56518395c855a89cc3349",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f60a6242eb79d946efe93870c95291281051d25f06aed52d29d5dfe33acd7790",
+    "target_material_present": false,
+    "trace_hash": "sha256:5033c9b8da38d4442d5ddd2e2ffd6bcc1e1d22fb51b928979f88f2b9a14216ad"
+  },
+  "measurement_receipt_hash": "sha256:8a7c2c3e4bbd3b823341d4e7bab7a936d3c29bd0fb0d02cdcc62e9ea80108e26",
+  "measurements": [
+    "sft-bio-drift-boundary-001-authority-correspondence: predicted biology:replicate-population-carrier__state-change-to-fitness-association__sampling-and-randomizer-provenance-held__finite-replicate-boundary; source-derived biology:replicate-population-carrier__state-change-to-fitness-association__sampling-and-randomizer-provenance-held__finite-replicate-boundary; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:178317c9675c8b2d54db6fce15493c4b9f14e6235aa9e309fb41faa3c2f9424a",
+    "custodian_id": "SFT-EXP-BIO-DRIFT-BOUNDARY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:9179303eda1cbea356624eadf312f8e1dc6dde6ff18dbf1c7fd9f48e5e9cc3d4",
+    "prediction_seal_hash": "sha256:9a2adb5d3a31bf88f2074b20270c23ce6fcbf2842757cc07202e09cd170ec92d",
+    "registered_target_identity_hash": "sha256:f60a6242eb79d946efe93870c95291281051d25f06aed52d29d5dfe33acd7790",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4b6fb97ebcd896569fb2ca8fa4aafbfd8260c042e02fc61ad65f77b59363daf3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:66f4bf19f979a8c1d23a50aa08bb00325a8f2a5e4aabb62f877e4b5204dbcb1b"
+}

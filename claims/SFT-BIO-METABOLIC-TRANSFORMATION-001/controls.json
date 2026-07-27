@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-METABOLIC-TRANSFORMATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:089fba2f4d763d34e5660dd3fc7b552e0853fbbd7acb694ab291284c12bfcc81"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a0dff93659a3e7eb51b56c9a5bb2fddf40b45bd6d6b582438b592f3ad778dbdf"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:be5da43ad2d165f419fc478baa830d5d77bd46f18aa85b76fac1172de05b398d"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:80c9e7f361d1f50f6a6ab531721ce28dce48da1842d395836039940fcdc6ae11"
+    }
+  ]
+}

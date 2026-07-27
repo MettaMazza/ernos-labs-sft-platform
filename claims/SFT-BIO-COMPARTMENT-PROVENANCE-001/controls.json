@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-COMPARTMENT-PROVENANCE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a7049b4a3821bac84602f091ff89910c588fb5af2631396c3efb4366621d9736"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:09ff66ac1e2895fdfe10f841216623ec1a7992869fb8ac2430dbb35f7bd364cb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5dca4d9bc98e9a71bfbbbfa2566b30d239c11d2be40276f88a781346f0e8027b"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:9547b021fb23ff1d5f01b9ee6c772cd0ed0e418272b50b7c19cb027d834959ee"
+    }
+  ]
+}

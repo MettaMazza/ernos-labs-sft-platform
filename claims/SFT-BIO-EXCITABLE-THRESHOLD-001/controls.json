@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-EXCITABLE-THRESHOLD-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3ed34b017de8e0290e7481007040e1f222aadf6e6c21ee65d6c1836e1eff4fae"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:33d56d726655e4b5a064958e4ee39d949199159d446a99518a361b6a86363568"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b95402f0c5147de17df890d0ac18cc3d356066be3c0ac2c72e47509430a30c64"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:bab1c31365d1e7d24d8cadfe874b1aa31ef2c44062e8d7227372aea20a620435"
+    }
+  ]
+}

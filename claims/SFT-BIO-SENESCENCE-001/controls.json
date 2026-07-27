@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-SENESCENCE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:05766741ecdfc8240c79043c47975ec952c42cd8cac271334a3924c575e3635b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b89ec47eb1ab5e86a17003c1ac76e660c0cc44e64f7feb1aaa9a56299147ddb1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:51eb080ffd91634322c4b5bd0b22883032e3dfac398e611ca45b8e63c0fdda66"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:2bba67aae451b61957ecd49659a8a7e7f8a840ab51b8703c7c0374a6ca66a243"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-RESOURCE-CLOSURE-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NCBI-CELL-ORIGIN-METABOLISM",
+    "SFT-BIO-SRC-GO-ONTOLOGY-DOCUMENTATION"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:3c8263ab11003b26d9846a2e8b7e2517491406e5266536eb7d77ac5e7637773b",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:e3e7f68cb8c221716a29fde30a08d57e0395cd27ad634afb7fa5e010985eaddb",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:029f4e6867e240aca3920a3d349c9808998753435f52f9445fde3ab7895c540f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-RESOURCE-CLOSURE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8334152e35e9f126e6367aec0ae5e9ecc3706c78b3292071f9961d2bf9e8ded2",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7ce7d6fac1035c636a60a39b2a17e530359164a00d6a9936614fbec1628cbe47",
+    "prediction_seal_hash": "sha256:f1a90dd91382e0f584a43b41d5320bb9ac85008a8c8a2a96f15df0e16a6216b9",
+    "program_hash": "sha256:eab37655d9e0daeefaaac002a38a848e9c6d944bfb69985123d6fc26e95396ff",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:cad67733c17be5fc933350e8cdb91c66a427cf3a298d5ad1c02e7f5934150c85",
+    "target_material_present": false,
+    "trace_hash": "sha256:a966836ee967348456835c7e3fc01c9d2db4e03f2273786f311a3e91a88b610d"
+  },
+  "measurement_receipt_hash": "sha256:50982f53479047f4c771cfb081d0373b7820e4f97fb9c0fa7833042a21cca7e6",
+  "measurements": [
+    "sft-bio-resource-closure-001-authority-correspondence: predicted biology:organism-environment-joint-carrier__uptake-transformation-export-cycle__all-required-inputs-and-losses-retained__finite-window-closure-test; source-derived biology:organism-environment-joint-carrier__uptake-transformation-export-cycle__all-required-inputs-and-losses-retained__finite-window-closure-test; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:71dc022d0edf8ada93b713b222d3d948cc58add3c01f5a17c209d0d0d9146890",
+    "custodian_id": "SFT-EXP-BIO-RESOURCE-CLOSURE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:3c8263ab11003b26d9846a2e8b7e2517491406e5266536eb7d77ac5e7637773b",
+    "prediction_seal_hash": "sha256:f1a90dd91382e0f584a43b41d5320bb9ac85008a8c8a2a96f15df0e16a6216b9",
+    "registered_target_identity_hash": "sha256:cad67733c17be5fc933350e8cdb91c66a427cf3a298d5ad1c02e7f5934150c85",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:746e3f86834afdd6fe5c752effd2a98c30622f97772e55582cb69e29cbd99279"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:ce3b9d703953e18c88e352e8dd0e3217442435d3b854abcc483d8bdddecdc95f"
+}

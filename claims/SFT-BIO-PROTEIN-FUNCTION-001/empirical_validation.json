@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-PROTEIN-FUNCTION-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NCBI-PROTEIN-FOLDING-V1",
+    "SFT-BIO-SRC-SEQUENCE-ONTOLOGY-OBO-RELEASE-V1"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:701bca243ec0542028577cc9a404f966db598dcf11eeabfe52c74fa5ad5ee661",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0395666260e1cccc1bf8aa7181ed08c464f06f9634289da31ae5dd50970a4462",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:850c32820af5451f1f500c5fbcc78b569ddc7ef2dfbb9589c9fb3e31ae704fc1",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-PROTEIN-FUNCTION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:353a7a1efce555c83d6fb2a8ec0edbceaaf2983e013e315d65843960469362c4",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:4e0bcff298f3b2495b78d839a78229ce55dcc14bf75a3e1077074283ac1bec11",
+    "prediction_seal_hash": "sha256:cb778b9d9983c6590f5b96dda9b3cca33d61e831cc721f67bc3dd1f98faebbe1",
+    "program_hash": "sha256:51b63b906597d593280ff426fa99dba88559a9534d3ee27ae16fca6ef87c8fde",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:d8e656484a8653978b84b7a8926e75e632d2e4f21a05bf0558ecf4a57d664f00",
+    "target_material_present": false,
+    "trace_hash": "sha256:03356905a5302973298c73005bd41d0d13f0c7efb74586a4fce888f9ec40d976"
+  },
+  "measurement_receipt_hash": "sha256:9ecf349acae6a91cde1930c53e4905d1c2ba0a93cf41fadc17d90dbd98d0ef99",
+  "measurements": [
+    "sft-bio-protein-function-001-authority-correspondence: predicted biology:protein-context-process-carrier__protein-dependent-process-difference__sequence-structure-context-and-controls-held__assay-and-organism-bounded; source-derived biology:protein-context-process-carrier__protein-dependent-process-difference__sequence-structure-context-and-controls-held__assay-and-organism-bounded; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:353ce7e37dfdf710808f4aef81829a159855330e302ef1d2e423ef403357af9b",
+    "custodian_id": "SFT-EXP-BIO-PROTEIN-FUNCTION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:701bca243ec0542028577cc9a404f966db598dcf11eeabfe52c74fa5ad5ee661",
+    "prediction_seal_hash": "sha256:cb778b9d9983c6590f5b96dda9b3cca33d61e831cc721f67bc3dd1f98faebbe1",
+    "registered_target_identity_hash": "sha256:d8e656484a8653978b84b7a8926e75e632d2e4f21a05bf0558ecf4a57d664f00",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:9e1d19fb00b38e1243afe8528d61e77df1bb66b5c514c7f6bac00607445f6cd0"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d9c4f81336f4767d193738a05ea6ae2d9da8e897453c8105d5131ade35dc6a04"
+}

@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-GENOME-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-SEQUENCE-ONTOLOGY-OBO-RELEASE-V1",
+    "SFT-BIO-SRC-NCBI-GENOME-REGULATION-DEVELOPMENT-V1"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:abf1fc5bb39420c7cd74f877ef77d5c2a0fa5290eeaac1a36f2b8e468334cd14",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f67f67307eaef4c6ca0a7a8216c10a78cf9e157f8a37188afa1298751c5fceed",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7694aef10186b65e69d9fefb31663ec59a33e9dc3878ef7fb4c4a2126f35af9e",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-GENOME-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4cbcc97ca24031b7448fb18398e992a9e1be7da4678aa98067aee63e5c66bb1a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1d69d42a85059c1d7810130be068ada55c1823a4238de24d1e36557bf88e78d5",
+    "prediction_seal_hash": "sha256:ccd8abcf92b8b303d8a1f045e94490ba7555bf6ac4cc0e3415d11350980cd3ca",
+    "program_hash": "sha256:246caa20bcb39d3baf6a43afdca0f7fb1090d2525258b22119e3ff8cb9100871",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e0ea60badb9ab7cb22876a26165e0f49defd129a3dc1414bd2b1db5e819bd1a1",
+    "target_material_present": false,
+    "trace_hash": "sha256:5b2d81f928ccb013370478bb88fac81d74900ac9676c768cfaaefdf1cd04bbd5"
+  },
+  "measurement_receipt_hash": "sha256:cbe5d5583c067b3a31c7f7dffb500d403b51e130455836248033a1c738d4ba56",
+  "measurements": [
+    "sft-bio-genome-001-authority-correspondence: predicted biology:complete-hereditary-carrier-support__ordered-and-linked-locus-relation__chromosomal-compartment-and-copy-state-held__assembly-and-sample-declared; source-derived biology:complete-hereditary-carrier-support__ordered-and-linked-locus-relation__chromosomal-compartment-and-copy-state-held__assembly-and-sample-declared; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:1bb70e047d5fe71f9b875ebdfc5adb174763c7ed8b8f904fa4dfe4d5aa4ac3fd",
+    "custodian_id": "SFT-EXP-BIO-GENOME-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:abf1fc5bb39420c7cd74f877ef77d5c2a0fa5290eeaac1a36f2b8e468334cd14",
+    "prediction_seal_hash": "sha256:ccd8abcf92b8b303d8a1f045e94490ba7555bf6ac4cc0e3415d11350980cd3ca",
+    "registered_target_identity_hash": "sha256:e0ea60badb9ab7cb22876a26165e0f49defd129a3dc1414bd2b1db5e819bd1a1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b6f462a3b04844f76f4772bc89fc15ed4dc66d419d18acac476d77921ce7a926"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f4a102e885ed28376c2c5946da2ff21d4d061634115f3e364ec61e7ffd017dd3"
+}

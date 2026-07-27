@@ -8,7 +8,13 @@ Biology owns the living processes composed from those identities.
 
 ## Layer One — foundational reconstruction
 
-The foundational Biology paper must derive and test:
+Status: complete to the declared current-evidence boundary and open to lawful
+extension. All 75 required laws are engine-admitted from 19,200 enumerated
+candidates, with 75 unique survivors, 300 adverse-control passes, 75 independent
+reconstructions and 75 post-seal comparisons. The branch paper is
+`publications/current/biology/FROM_FOLD_TO_LIFE.md`.
+
+The foundational Biology paper derives and tests:
 
 1. the boundary between nonliving chemical networks and living organization;
 2. retained biological identity and compartment;
@@ -28,6 +34,8 @@ comparators only; every admitted relation requires a readable derivation and
 purpose-matched empirical evidence.
 
 ## Layer Two — complete field reconstruction
+
+Status: planned, not represented as complete by the foundational publication.
 
 The full Biology census covers:
 

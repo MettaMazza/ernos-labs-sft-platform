@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-PHYSIOLOGY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:5fbf29308ce2e219c66264e36d76249ca393b9a5500ec6ad7238347e6497c853"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:414caa8b7f6fd6d759d892305a2f435e3014f55e1e1aa031a6f73a25a800061a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4791dd5ee2dccfa23e743060336874992f0461551bb58b9db2ba8624cb1d721e"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:7d8a2a885d7915c368fc0d97835fc1cabf29dfb3a66d2bff0357887f474b9e03"
+    }
+  ]
+}

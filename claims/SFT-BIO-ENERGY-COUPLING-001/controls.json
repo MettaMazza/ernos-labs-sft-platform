@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-ENERGY-COUPLING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3179655630407d0ed039c716dcae05c01e75d6ee060e0a5bfdba67d25810b4ea"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:9f9c396fe43192c1a39720e70b5bc4e007b1db56a0643c574729f0a79cb539bb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c1b563e5dba6d88c1ab191e5201431c297410ed7fc480529b7d64a81864a5d05"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:1571117fb227ae7c6ae50ae6f76ee4d98886c7512d7c55bcd3dcfe279b92b938"
+    }
+  ]
+}

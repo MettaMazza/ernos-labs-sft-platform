@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-PROTEIN-INTERACTION-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NCBI-PROTEIN-FOLDING-V1",
+    "SFT-BIO-SRC-SEQUENCE-ONTOLOGY-OBO-RELEASE-V1"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f0172d1fbe993d42413ab1dce180936ff993b6d130dc0b63bec6d0b7df59f985",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:8f4b1642673795c00d0b2bc7de6fb6942e9dc23c49c193fc519286f969daa968",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:36a1c664c4ef1e1cda29e79204c4d883f3f66eca969bb3fd3382452f9cdd83bf",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-PROTEIN-INTERACTION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:1fe2f0694b92569427ca0ac19cd26376a271c191fa6914a12b42041f712bf84d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c255dd0706e0db97945f309a713598232c5391ed7ef80dea7af3c182b589417a",
+    "prediction_seal_hash": "sha256:61005edbc1cf88bf84efe6279a51d5b119335450d11503e524f467a8a34439c7",
+    "program_hash": "sha256:7b676ea4a5d024a06d4ae82f3e55ca77cd70c26b3018d36157565110665dfd6f",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:df9006dd9cdfc2c0992eb00497d37c43b86f43516f215c18d632aaea5dd63a1c",
+    "target_material_present": false,
+    "trace_hash": "sha256:04c5d9d70902e63f536fc0eb76e73b9f687e11b6b3a5f754c07a4009829dbc42"
+  },
+  "measurement_receipt_hash": "sha256:dd9c066afd656df8ad423a8f8e2fe0bcbc0a595ccdf0cb7218116dee3bc921c2",
+  "measurements": [
+    "sft-bio-protein-interaction-001-authority-correspondence: predicted biology:two-protein-context-carrier__specific-joint-state-recurrence__alternatives-stoichiometry-and-condition-held__interaction-assay-bounded; source-derived biology:two-protein-context-carrier__specific-joint-state-recurrence__alternatives-stoichiometry-and-condition-held__interaction-assay-bounded; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2e68d6e598ec3ad2d7ee66be7c95a4235a34849e1619ee2b23a7009215e4d7f4",
+    "custodian_id": "SFT-EXP-BIO-PROTEIN-INTERACTION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:f0172d1fbe993d42413ab1dce180936ff993b6d130dc0b63bec6d0b7df59f985",
+    "prediction_seal_hash": "sha256:61005edbc1cf88bf84efe6279a51d5b119335450d11503e524f467a8a34439c7",
+    "registered_target_identity_hash": "sha256:df9006dd9cdfc2c0992eb00497d37c43b86f43516f215c18d632aaea5dd63a1c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:44a3c96ae4d598532eed893078fc9a58918d759f2a4d23680afe685d9b1b2500"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9e3c8e6263182265958f9880b45549ecac2489d593fa715d2de2380f56a25186"
+}

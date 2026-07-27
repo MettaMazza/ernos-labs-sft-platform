@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-HOMEOSTASIS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:752fa457b92e1e688d0430731906cce0d7fc0bb44d042bd0bfa9285a092ef1aa"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:25d84d06ef76a488dda68ba6432ca2894284d1e5c7fb9cdbb958122cb56df63f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:155f7b236f908d9c258a78c45c9cb01da271bd8833ac541427a44e00a3d5a0c4"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:4a1de3a2c7ce7638154792679483c5601d07bbc3cbf89445af0c610b17f5aa86"
+    }
+  ]
+}

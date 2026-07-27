@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-GENOME-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:d2647f260665157e067554102d0a45f885092b92a04980402f286dc86561dbb8"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e262c8318cf31fe42caf5dc185be14865a3965d3b4ab9cb5bbeab3923e0e2bf1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2fa4bcd2c258d41964e1898ddab4d325d7014b6444450e6608159236796768fa"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:7f402f86c3fe27233160b804fd3324ec4d4431e0df627b298e7220f2e4037cc2"
+    }
+  ]
+}

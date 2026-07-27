@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-LIFE-MAINTENANCE-001",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NASEM-UNITY-BIOLOGY-2010",
+    "SFT-BIO-SRC-NCBI-CELL-ORIGIN-METABOLISM"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:afe89cebdbb95b1bd12845ab000555c2829c8510375a09b70a2a67ff77e4971f",
+  "falsification_condition": "Reject if any registered authoritative biological source contradicts a required content relation, if a generated alternative also preserves every dimension, or if any specimen, control, adverse row, condition or provenance distinction is missing.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b95843082b56d7175b85794d50cf3b192fcb75eaabab830becc0905e4e041a85",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:609522b7015f0a032c84f597d126bd58d84546592c9cac5bd89d6e726e5838ff",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-LIFE-MAINTENANCE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:df38af15dd704e640b84fe191c226e8f09f21426d6dd61d8c1629530c51bed46",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9bf401af49c2413ae68356ea1b8f2477ffb6039d8dd8ae2f598c8ed802a34c8a",
+    "prediction_seal_hash": "sha256:221a0f9bb1ecea11bb2269251511c689c696f2292520e5c2657c0272694a0fc8",
+    "program_hash": "sha256:f0d2baa1d02009a1573316f73d47035abc5c07f15857f1eea7b076a45479a122",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:97575366e6836375ef4e4f2444482340026f61635e4baad6c38467c90efc3dd8",
+    "target_material_present": false,
+    "trace_hash": "sha256:225680472aad88e3af6f87e19e9cf87c07a55761b851b86d0bd32d0a894b0ce2"
+  },
+  "measurement_receipt_hash": "sha256:25a45b75f33b130b03066b7ca1247fd203791df69520d90d01e18870f810242a",
+  "measurements": [
+    "sft-bio-life-maintenance-001-authority-correspondence: predicted biology:living-state-and-repair-carrier__damage-to-restoration-transition__identity-defining-relations-retained__time-and-condition-bounded; source-derived biology:living-state-and-repair-carrier__damage-to-restoration-transition__identity-defining-relations-retained__time-and-condition-bounded; exact match True",
+    "every required authoritative fragment and snapshot hash reproduced",
+    "transport/content failures and adverse scientific rows retained",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:bcef070f64c0993d4d579f40baff463194baf60a618469adc8c5095d629bf29b",
+    "custodian_id": "SFT-EXP-BIO-LIFE-MAINTENANCE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:afe89cebdbb95b1bd12845ab000555c2829c8510375a09b70a2a67ff77e4971f",
+    "prediction_seal_hash": "sha256:221a0f9bb1ecea11bb2269251511c689c696f2292520e5c2657c0272694a0fc8",
+    "registered_target_identity_hash": "sha256:97575366e6836375ef4e4f2444482340026f61635e4baad6c38467c90efc3dd8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4e0c7ebfbd21b0b3861f4d16f2c9af1d06bdbf8b68d2f0970a54c4a359977c36"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8d7e9e27f29e060635e6aa96bede6877f4d4efb027dc36a171b2d74727720540"
+}

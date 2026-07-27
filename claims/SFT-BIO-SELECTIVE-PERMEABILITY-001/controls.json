@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-SELECTIVE-PERMEABILITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:45c6fd5eeccfbc493555bdd1a38e346b97f031707df94ea5fd06403bea0e15d6"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:99e574d9d4b1c5ae83afc484d271686e00be28c40108a6bab79976b3474eb0a9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:47dcf21b945737e2e110b04a6fea0a4813ea4d2c9ef6febb688d4ed170fb3caa"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:02678b4a512925504a3d760d61b3a88e0c6a254aea634d9188fa0baef1bbf9dd"
+    }
+  ]
+}

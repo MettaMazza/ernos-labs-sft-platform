@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-CELL-TRANSPORT-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:29af76bcf95ae438f7abbbac7d7feb5bcedd2f4087762b6dc5ce82c3a16b338a"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e7c7dd7494caf5a1d1bb7c814ce71340cf20c83f1ac7d8e2de107cc36d383e53"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:758abd6d3fb80a3638440de1940253a60f2b55082bb260b637b1bbd87097bee1"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:1e106efaf5e38ae2b0881ac05ced2967c989de4f14bd2284e6c30718196df7ce"
+    }
+  ]
+}
