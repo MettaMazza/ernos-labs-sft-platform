@@ -9,6 +9,12 @@ successful implementation cannot retroactively force the law.
 
 ## Layer One — foundational reconstruction
 
+Status: current-evidence complete and extension-open. All 72 required laws are
+engine-admitted from 18,432 enumerated candidates, with 72 unique survivors,
+288 adverse-control passes, 72 implementation-distinct reconstructions and 72
+post-seal comparisons. The local paper and evidence release are ready but have
+not been published or pushed.
+
 The foundational Engineering paper must establish:
 
 1. requirement, function, constraint and operating boundary;

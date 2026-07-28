@@ -23,20 +23,26 @@ Classical Computational Science, Reversible and Quantum Computation, Physics,
 Chemistry, Materials Science, Biology and Life Sciences, Medicine and Health
 Sciences, Consciousness and Cognitive Science, Earth and Environmental
 Sciences, Astronomy and Cosmology, Social and Collective Systems, and
-Engineering Translation.  Medicine is a declared branch whose scientific
-directory and census must be scaffolded before its derivation begins.
+Engineering Translation.
 
-## Current gate correction
+## Current foundational status — 28 July 2026
 
-The dependency-ordered successor reconstruction is published through Materials.
-Foundation, Mathematics, Information Science, Classical Computation, Reversible
-and Quantum Computation, and Physics pass their dated current-evidence gates
-while remaining open to lawful extension, correction, falsification and new
-discovery. Chemistry's 86-law foundation is now secure and 90 further Chemistry
+All fifteen registered branch foundations are current-evidence complete and
+extension-open at their dated inventories. The live ordered corpus contains
+1,319 model-admitted claims. Earth and Environmental Sciences, Astronomy and
+Cosmology, Social and Collective Systems, and Engineering Translation have
+completed local Markdown, PDF and evidence releases but remain unpublished;
+no remote action is authorized. The one heavy complete verification run is
+reserved for the end of the shared census reconciliation and is not represented
+as passed until its terminal record exists.
+
+Foundational completion does not mean that every field's Layer Two programme is
+complete. Chemistry's 86-law foundation is secure and 90 further Chemistry
 claims are admitted through ORG-011; its 176-law version 1.2 paper is published,
-with 97 complete-field operations remaining. Materials version 1.2 is published
-with 92 admitted laws and complete 56/56 V1/V2 Materials ownership
-reconciliation.
+with 97 complete-field operations remaining when the paused branch resumes.
+Materials, Biology, Medicine and Consciousness have published foundational
+papers. Every other branch remains governed by its complete-field roadmap and
+open to lawful addition, correction, falsification and discovery.
 
 ## Phase A - constitutional scaffold
 
@@ -138,9 +144,20 @@ remains open to lawful versioned extension, correction and falsification.
   `10.5281/zenodo.21629306`.
 - [ ] Materials complete field: dependency-ordered subject-family expansion
   remains governed by `docs/branch_roadmaps/07-materials.md`.
-- Genetics, proteins and cellular organization.
-- Evolution, ecosystems and biological dynamics.
-- Earth and environmental systems.
+- [x] Biology foundation: 75 admitted laws, 19,200 candidates and complete
+  30/30 V1/V2 Biology ownership reconciliation; Paper 001 version 1.0 is
+  published at DOI `10.5281/zenodo.21630203`.
+- [x] Medicine foundation: 72 admitted laws and complete 5/5 V1/V2 Medicine
+  ownership reconciliation; Paper 001 version 1.0 is published at DOI
+  `10.5281/zenodo.21630785`.
+- [x] Consciousness and Cognitive Science foundation: 72 admitted laws and
+  complete 46/46 prior obligations, including substrate-independent
+  realization, qualia and the red-of-red boundary; Paper 001 version 1.0 is
+  published at DOI `10.5281/zenodo.21636397`.
+- [x] Earth and Environmental Sciences foundation: 74 admitted laws and 18,944
+  candidates; local release ready, unpublished.
+- [ ] Complete-field Biology, Medicine, Consciousness and Earth programmes
+  remain governed by their branch roadmaps.
 
 The Chemistry v1.2 successor manuscript and PDF are locally prepared for
 editorial review; no publication action is authorized. Every claimed physical
@@ -149,14 +166,24 @@ post-seal authoritative value/units/uncertainty comparison and root trace.
 
 ## Phase G - astronomy and larger systems
 
-- Stars, galaxies and astronomical populations.
-- Cosmological history and observational tests.
-- Registered interdisciplinary extensions.
+- [x] Astronomy and Cosmology foundation: 72 admitted laws, 18,432 candidates
+  and complete 53/53 V1/V2 branch-owned obligations; local release ready,
+  unpublished.
+- [x] Social and Collective Systems foundation: 72 admitted laws, 18,432
+  candidates and complete 5/5 V1/V2 branch-owned obligations; local release
+  ready, unpublished.
+- [ ] Complete-field astronomical, cosmological and social-system programmes
+  remain governed by their branch roadmaps.
 
 ## Phase H - engineering translation
 
-Translate closed laws into bounded engineering demonstrations. Engineering
-results may validate but cannot select the laws.
+[x] Engineering Translation foundation: 72 admitted laws, 18,432 candidates
+and complete 7/7 V1/V2 branch-owned obligations; local release ready,
+unpublished. Engineering results may validate an operating boundary but cannot
+select the laws.
+
+The complete translation programme remains open under
+`docs/branch_roadmaps/14-engineering-translation.md`.
 
 ## Phase I - clean application rebuilds
 

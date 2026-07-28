@@ -9,6 +9,12 @@ catalogues are not relabelled as premise-free laws.
 
 ## Layer One — foundational reconstruction
 
+Status: current-evidence complete and extension-open. All 72 required laws are
+engine-admitted from 18,432 enumerated candidates, with 72 unique survivors,
+288 adverse-control passes, 72 implementation-distinct reconstructions and 72
+post-seal comparisons. The local paper and evidence release are ready but have
+not been published or pushed.
+
 The foundational paper must establish:
 
 1. source, observer, signal, distance and observation relations;

@@ -7,7 +7,8 @@
       "atomic_ownership_audit": "audits/chemistry_v1_v2_atomic_ownership.json",
       "branch_ledger": "census/chemistry_prior_obligations.json",
       "corrected_prior_atoms": 17,
-      "current_model_admitted_claims": 86,
+      "foundation_model_admitted_claims": 86,
+      "live_model_admitted_claims": 176,
       "open_obligations": 0,
       "reviewed_source_entries": 763,
       "status": "closed_same_strength"
@@ -38,7 +39,14 @@
       "status": "closed_same_strength"
     },
     "materials": {
-      "status": "open_blocking_owner_and_same_strength_audit"
+      "atomic_obligations": 56,
+      "atomic_ownership_audit": "audits/materials_v1_v2_atomic_ownership.json",
+      "branch_ledger": "census/materials_prior_obligations.json",
+      "corrected_prior_atoms": 7,
+      "current_model_admitted_claims": 92,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
     },
     "mathematics": {
       "atomic_obligations": 71,
@@ -53,6 +61,61 @@
       "atomic_ownership_audit": "audits/medicine_v1_v2_atomic_ownership.json",
       "branch_ledger": "census/medicine_prior_obligations.json",
       "corrected_prior_atoms": 5,
+      "current_model_admitted_claims": 72,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "biology": {
+      "atomic_obligations": 30,
+      "atomic_ownership_audit": "audits/biology_v1_v2_atomic_ownership.json",
+      "branch_ledger": "census/biology_prior_obligations.json",
+      "corrected_prior_atoms": 21,
+      "current_model_admitted_claims": 75,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "consciousness_cognitive_science": {
+      "atomic_obligations": 46,
+      "atomic_ownership_audit": "audits/consciousness_v1_v2_initial_atomic_ownership.json",
+      "completion_checkpoint": "census/consciousness_continuation_checkpoint.json",
+      "current_model_admitted_claims": 72,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "earth_environment": {
+      "atomic_obligations": 3,
+      "atomic_ownership_audit": "audits/earth_environment_v1_v2_initial_atomic_ownership.json",
+      "completion_checkpoint": "census/earth_environment_continuation_checkpoint.json",
+      "current_model_admitted_claims": 74,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "astronomy_cosmology": {
+      "atomic_obligations": 53,
+      "atomic_ownership_audit": "audits/astronomy_cosmology_v1_v2_initial_atomic_ownership.json",
+      "completion_checkpoint": "census/astronomy_cosmology_continuation_checkpoint.json",
+      "current_model_admitted_claims": 72,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "social_collective_systems": {
+      "atomic_obligations": 5,
+      "atomic_ownership_audit": "audits/social_collective_v1_v2_initial_atomic_ownership.json",
+      "completion_checkpoint": "census/social_collective_continuation_checkpoint.json",
+      "current_model_admitted_claims": 72,
+      "open_obligations": 0,
+      "reviewed_source_entries": 763,
+      "status": "closed_same_strength"
+    },
+    "engineering_translation": {
+      "atomic_obligations": 7,
+      "atomic_ownership_audit": "audits/engineering_translation_v1_v2_initial_atomic_ownership.json",
+      "completion_checkpoint": "census/engineering_translation_continuation_checkpoint.json",
       "current_model_admitted_claims": 72,
       "open_obligations": 0,
       "reviewed_source_entries": 763,
@@ -80,7 +143,7 @@
       "status": "closed_same_strength"
     }
   },
-  "next_required_action": "Complete the one-owner atomic V1/V2 decomposition and same-strength receipt audit for Materials, then continue in declared dependency order.",
+  "next_required_action": "Preserve all completed branch-specific reviews; merge their atomic decompositions into the final global one-owner ledger only for the final TOE gate without rewriting any branch audit or receipt.",
   "ownership_law": {
     "branch_specific_full_source_review_may_close_a_branch_before_global_ledger": true,
     "chemical_consequences_of_physical_constants_owner": "chemistry",

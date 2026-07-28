@@ -2,16 +2,13 @@
 
 Status: `foundation_current_evidence_complete__active_full_discipline_reconstruction__extension_open`.
 
-Chemistry Branch Paper 001 and its 86 admitted Chemistry claims remain preserved
-at DOI `10.5281/zenodo.21531455` and GitHub release `chemistry-v1.0.0`. Their
-receipts remain valid at their exact registered boundaries. They are now the
-foundational categorical core of a larger reconstruction and must not be
-described as exhausting all chemical science.
-
-The local successor manuscript is version 1.2.0. It includes the complete
-foundation, all 90 additional receipt-backed Chemistry laws admitted through
-ORG-011, and the field-wide roadmap. It is not remotely publishable until Maria
-Smith gives explicit action-specific authorization.
+Chemistry Branch Paper 001 version 1.2.0 is published at DOI
+`10.5281/zenodo.21627782`. It contains the complete 86-law foundation, all 90
+additional receipt-backed Chemistry laws admitted through ORG-011, and the
+field-wide roadmap. The earlier 86-law release remains preserved at DOI
+`10.5281/zenodo.21531455` and GitHub release `chemistry-v1.0.0`; its receipts
+remain valid at their exact registered boundaries. Neither edition is described
+as exhausting all chemical science.
 
 ## What is closed
 
@@ -110,6 +107,6 @@ python3 tools/verify_chemistry_discipline_census.py
 ```
 
 Its expected frozen result is 87 admitted and 185 open; that result does not
-erase later receipts. Publishing, pushing or creating a successor DOI remains
-separately prohibited without Maria Smith's explicit action-specific
+erase later receipts. Publishing, pushing or creating another successor version
+remains separately prohibited without Maria Smith's explicit action-specific
 authorization.

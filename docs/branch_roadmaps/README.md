@@ -197,3 +197,34 @@ Roadmap checkboxes are prohibited as evidence of scientific completion.  Each
 branch plan names work and gates only.  Live counts, last admitted claims and
 next operations belong in the branch continuation checkpoint and machine census
 so a conversation restart cannot turn an old plan into a false status report.
+
+## Foundation census — 28 July 2026
+
+The machine census and branch-specific audits currently record all fifteen
+foundations as current-evidence complete and extension-open. This table is a
+human-readable index to those records, not an alternate admission mechanism.
+
+| Branch | Foundation evidence boundary | Paper state |
+|---|---:|---|
+| Foundation | 16/16 claims; 32/32 prior obligations | Published v1.2 |
+| Mathematics | 27/27; 71/71 | Published v1.3 |
+| Information Science | 12/12; 77/77 | Published v1.2 |
+| Classical Computation | 116/116; 134/134 | Published v1.2 |
+| Reversible and Quantum Computation | 22/22; 29/29 | Published v1.2 |
+| Physics | 349/349; 488/488 | Published v1.1 |
+| Chemistry | 86/86 foundation; 52/52; 176 live claims | Published v1.2; complete-field continuation paused |
+| Materials Science | 92/92; 56/56 | Published v1.2 |
+| Biology and Life Sciences | 75/75; 30/30 | Published v1.0 |
+| Medicine and Health Sciences | 72/72; 5/5 | Published v1.0 |
+| Consciousness and Cognitive Science | 72/72; 46/46 | Published v1.0 |
+| Earth and Environmental Sciences | 74/74; 3/3 | Local release ready; unpublished |
+| Astronomy and Cosmology | 72/72; 53/53 | Local release ready; unpublished |
+| Social and Collective Systems | 72/72; 5/5 | Local release ready; unpublished |
+| Engineering Translation | 72/72; 7/7 | Local release ready; unpublished |
+
+The ordered live corpus contains 1,319 model-admitted claims, including the 90
+Chemistry Layer Two claims already admitted beyond its foundation. The global
+one-owner V1/V2 ledger merge remains a separate final-ToE obligation; each
+foundation's complete 763-entry branch-specific review is already preserved in
+its ledger or atomic audit. The heavy complete verification is pending its one
+final run after this shared reconciliation.
