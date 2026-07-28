@@ -8686,6 +8686,26 @@ That is the gravity of the result. Consciousness is not awarded to a theory beca
 - Submissions: https://discord.gg/ucwGryVxGr
 - Current state: published open access
 
+### Repository verification runtime — post-publication operational note
+
+The last complete `python3 -m sft verify-all` run started at 2026-07-27
+22:57:30 UTC and passed at 2026-07-28 00:08:07 UTC. Its recorded wall-clock
+interval was **1 hour, 10 minutes and 36.8 seconds**. The run replayed
+**1,029/1,029** registered derivations, passed **944/944** unit and end-to-end
+tests, covered **1,264/1,264** core-engine executable lines, audited **721**
+empirical claims with **114/114** formal Physics claims reaching measurement,
+and passed **5/5** live NIST/CODATA checks.
+
+The measured host was an Apple M3 Ultra Mac with 512 GiB memory, macOS 15.6
+and Python 3.9.6. Reviewers on comparable hardware should reserve at least 90
+minutes; ordinary laptops may require several hours. The command is complete
+only after the terminal `SFT COMPLETE VERIFICATION: PASS` line. Full timing,
+scope and expectations are recorded in [`docs/VERIFICATION.md`](docs/VERIFICATION.md)
+and [`audits/FULL_VERIFICATION_RUNTIME_2026-07-28.json`](audits/FULL_VERIFICATION_RUNTIME_2026-07-28.json).
+
+This operational note documents the repository verification run and does not
+alter the version 1.0.0 Zenodo paper or any scientific claim.
+
 ## 32. References
 
 Primary and official external evidence:

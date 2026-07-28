@@ -10,15 +10,37 @@ On Windows use `py -m sft verify-all`.
 
 ## Expected runtime
 
-This command is intentionally exhaustive. For the current 679-claim corpus,
-allow approximately **20–45 minutes on a typical modern laptop**. Processor
-speed, filesystem performance and the final network request can move a run
-outside that range, and individual large candidate censuses or empirical
-validators may remain quiet for several minutes while still progressing. This
-is a provisional planning range based on present development runs, not yet a
-statistically measured cross-platform average. Published release reports must
-record complete timed runs on macOS, Windows and Linux so this note can be
-replaced by a measured median, range and host specification.
+This command is intentionally exhaustive. The last complete timed run of the
+current 1,029-claim corpus took **1 hour, 10 minutes and 36.8 seconds** on an
+Apple M3 Ultra Mac with 512 GiB memory, macOS 15.6 and Python 3.9.6. It started
+at 2026-07-27 22:57:30 UTC and printed the terminal pass at 2026-07-28
+00:08:07 UTC.
+
+Reviewers using a comparable machine should reserve at least **90 minutes**.
+Contributors using ordinary laptops or slower storage should allow several
+hours. Processor speed, filesystem performance, available memory and the final
+network request can move a run outside those expectations. Individual large
+candidate censuses or empirical validators may remain quiet for several
+minutes while still progressing. This is one measured reference run, not yet a
+cross-platform median or guarantee. Complete timed macOS, Windows and Linux
+runs should continue to be recorded so a measured distribution can replace
+this planning guidance.
+
+### Last complete timed verification
+
+- Command: `python3 -m sft verify-all`
+- Result: `SFT COMPLETE VERIFICATION: PASS`
+- Recorded interval: **4,236.790 seconds** (**01:10:36.790**)
+- Corpus: **1,029/1,029 registered derivations replayed**
+- Tests: **944/944 unit and end-to-end tests passed**
+- Core engine: **1,264/1,264 executable lines covered (100%)**
+- Measurement coverage: **721 empirical claims**; **114/114** formal Physics
+  claims reach measurement
+- Live comparison: **5/5** current NIST/CODATA checks passed
+- Host: Mac15,14; Apple M3 Ultra; arm64; 512 GiB memory; macOS 15.6 build
+  24G84; Python 3.9.6
+- Dated operational record:
+  `audits/FULL_VERIFICATION_RUNTIME_2026-07-28.json`
 
 The verifier prints progress during long phases. A run is complete only when it
 prints `SFT COMPLETE VERIFICATION: PASS`; elapsed time alone is never evidence

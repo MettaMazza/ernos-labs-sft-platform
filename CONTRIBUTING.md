@@ -30,6 +30,13 @@ Any other identity is void and must halt before admission. See
 `governance/ENGINE_SEAL.md` for the threat model, exact file support and public
 anchoring procedure.
 
+The final one-command verification is deliberately long-running. The last
+complete 1,029-claim run took **01:10:36.790** on an Apple M3 Ultra Mac with
+512 GiB memory. Reserve at least 90 minutes on comparable hardware and allow
+several hours on ordinary laptops. A run is complete only when it prints
+`SFT COMPLETE VERIFICATION: PASS`. See `docs/VERIFICATION.md` for the dated
+host, corpus, test and measurement record.
+
 1. Open a claim registration without encoding the desired answer.
 2. Name dependencies, provenance classes, grammar and exact boundary.
 3. Generate the candidate domain.
