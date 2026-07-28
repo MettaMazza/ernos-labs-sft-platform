@@ -65,10 +65,11 @@ The complete field census covers:
 
 ## Publication sequence
 
-The first Medicine paper is prepared locally after completion of the branch
-scaffold, 763-entry ownership audit and all seventy-two foundational clinical
-evidence admissions.  Remote publication remains separately unauthorized.
-Later versions expand specialty by specialty.  No medical claim is accepted
+The first Medicine paper was published after completion of the branch scaffold,
+763-entry ownership audit and all seventy-two foundational clinical evidence
+admissions at
+[DOI 10.5281/zenodo.21630785](https://doi.org/10.5281/zenodo.21630785).
+Later versions expand specialty by specialty. No medical claim is accepted
 merely because a biological mechanism or predictive model appears plausible.
 
 ## Handoffs

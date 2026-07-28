@@ -9,6 +9,11 @@ neural or computational correlate as the phenomenon itself.
 
 ## Layer One — foundational reconstruction
 
+Status: current-evidence complete and extension-open. All 72 foundational laws
+and 46/46 inherited atomic obligations are admitted. The standalone paper is
+published at
+[DOI 10.5281/zenodo.21636397](https://doi.org/10.5281/zenodo.21636397).
+
 The foundational paper must reconstruct and distinguish:
 
 1. observation from interior observation;
@@ -65,4 +70,3 @@ purpose-matched evidence as every other branch.
 Biological mechanisms remain owned by Biology, clinical states by Medicine,
 computational implementations by Computation and collective dynamics by Social
 Systems.  Unison AI can later test realization claims but cannot select them.
-

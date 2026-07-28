@@ -12,7 +12,8 @@ Status: complete to the declared current-evidence boundary and open to lawful
 extension. All 75 required laws are engine-admitted from 19,200 enumerated
 candidates, with 75 unique survivors, 300 adverse-control passes, 75 independent
 reconstructions and 75 post-seal comparisons. The branch paper is
-`publications/current/biology/FROM_FOLD_TO_LIFE.md`.
+`publications/current/biology/FROM_FOLD_TO_LIFE.md`, published at
+[DOI 10.5281/zenodo.21630203](https://doi.org/10.5281/zenodo.21630203).
 
 The foundational Biology paper derives and tests:
 

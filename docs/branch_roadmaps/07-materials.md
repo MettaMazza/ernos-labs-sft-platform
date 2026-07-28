@@ -49,13 +49,13 @@ The field programme covers:
 
 ## Publication sequence
 
-The archived Materials paper remains a historical edition.  The successor
-foundational edition requires full owner reconciliation and upstream Chemistry
-dependencies.  Later versions expand through the complete field census before a
+The published version 1.2 successor at
+[DOI 10.5281/zenodo.21629306](https://doi.org/10.5281/zenodo.21629306)
+contains 92 admitted laws and the completed 56/56 owner reconciliation. Later
+versions expand through the complete field census before a
 current-knowledge-complete designation is permitted.
 
 ## Handoffs
 
 Materials exports specimen and property laws to Engineering, Biology, Medicine,
 Earth Science and Astronomy.  Processing demonstrations cannot select the law.
-

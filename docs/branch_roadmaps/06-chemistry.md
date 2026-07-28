@@ -74,10 +74,11 @@ until suitable external observations exist.
 
 The foundational Chemistry inventory has passed: 86 laws, 22,016 candidate
 decisions, 86 unique survivors, 344 controls, 86 independent reconstructions
-and 86 empirical packages.  A local version 1.2 successor paper now preserves
-that foundation and all 90 further admissions through ORG-011.  It remains
-unauthorized for remote publication until Maria Smith gives explicit approval.
-Subsequent versions add complete subject families.  The
+and 86 empirical packages.  The published version 1.2 successor paper at
+[DOI 10.5281/zenodo.21627782](https://doi.org/10.5281/zenodo.21627782)
+preserves that foundation and all 90 further admissions through ORG-011. The
+complete-field continuation is paused with 97 registered operations remaining.
+Subsequent versions add complete subject families. The
 current-knowledge-complete edition requires the full live Chemistry field
 census and does not treat an archived narrower paper or the 176-law present
 surface as that finished census.

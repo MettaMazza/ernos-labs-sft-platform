@@ -12,8 +12,9 @@ records and system-level laws.
 Status: current-evidence complete and extension-open. All 74 required laws are
 engine-admitted from 18,944 enumerated candidates, with 74 unique survivors,
 296 adverse-control passes, 74 implementation-distinct reconstructions and 74
-post-seal comparisons. The local paper and evidence release are ready but have
-not been published or pushed.
+post-seal comparisons. The paper and evidence release are published at
+[DOI 10.5281/zenodo.21640810](https://doi.org/10.5281/zenodo.21640810) and
+[GitHub release v1.0.0](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/earth-environment-v1.0.0).
 
 The foundational paper must establish:
 

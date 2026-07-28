@@ -12,8 +12,9 @@ successful implementation cannot retroactively force the law.
 Status: current-evidence complete and extension-open. All 72 required laws are
 engine-admitted from 18,432 enumerated candidates, with 72 unique survivors,
 288 adverse-control passes, 72 implementation-distinct reconstructions and 72
-post-seal comparisons. The local paper and evidence release are ready but have
-not been published or pushed.
+post-seal comparisons. The paper and evidence release are published at
+[DOI 10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816) and
+[GitHub release v1.0.0](https://github.com/MettaMazza/ernos-labs-sft-platform/releases/tag/engineering-translation-v1.0.0).
 
 The foundational Engineering paper must establish:
 
