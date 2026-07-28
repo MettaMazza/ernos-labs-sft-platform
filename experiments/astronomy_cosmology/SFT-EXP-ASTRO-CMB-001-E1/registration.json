@@ -1,0 +1,108 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-ASTRO-CMB-001",
+  "complete_branch_pre_source_seal": {
+    "all_72_predictions_and_18432_candidates_sealed_before_source_selection": true,
+    "hash": "sha256:5aafa30700f2ef1470205e2dfe9bd32bffee9f01d3468899a050cb04e9dcf200",
+    "path": "experiments/sealed_predictions/astronomy_cosmology_foundation_complete_pre_source.json"
+  },
+  "controls": [
+    {
+      "kind": "false_premise"
+    },
+    {
+      "kind": "tampered_source"
+    },
+    {
+      "kind": "tampered_artifact"
+    },
+    {
+      "kind": "boundary"
+    },
+    {
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "The registered target opens only after the derivation seal, the source-bound consequence matches, every adverse/absent/unresolved/failed row remains, and a changed control is rejected.",
+    "falsification_condition": "Reject if a component-separated map is called raw observation."
+  },
+  "evidence_mode": "post_seal_primary_archive_or_measurement_correspondence",
+  "experiment_id": "SFT-EXP-ASTRO-CMB-001-E1",
+  "external_target_record": {
+    "directness": "source_bound_observation_archive_or_primary_measurement",
+    "empirical_disposition": "primary_archive_or_measurement_correspondence",
+    "hash": "sha256:c7b5f1a291d15f31d6802978cfb56bada9fd005ce6708c20bd18a2ef728a583a",
+    "path": "experiments/astronomy_cosmology/targets/SFT-ASTRO-CMB-001.json",
+    "source_ids": [
+      "NASA-LAMBDA-001"
+    ],
+    "target_ids": [
+      "sft-astro-cmb-001-external-astronomy-evidence"
+    ]
+  },
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of eight preregistered binary carrier, boundary, relation, record, evidence, provenance, generality and extension dimensions before external source identities or outcomes are opened; filter only by the registered preservation properties.",
+    "exact_domain": "Exactly eight binary dimensions: 256 forms. Closure is depth-independent for positive finite extension; empirical correspondence remains source, object, place, epoch, instrument and protocol bounded.",
+    "relation_hash": "sha256:ecd80a388d0204165efbed674d6a8f0eb01a13e2f4096fcf7a49bafba725e4bd",
+    "statement": "all-sky-frequency-temperature-polarization-carrier__cmb-release-bounded__background-anisotropy-spectrum-relation__frequency-calibration-mask-beam-foregrounds-and-covariance-held__evidence-class-explicit__root-bound-forward-forcing__positive-finite-extension-retains-all-rows__no-extra-rule",
+    "target_did_not_select_structural_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program": {
+      "instructions": [
+        {
+          "arguments": [
+            "registered-premise"
+          ],
+          "destination": "premise",
+          "opcode": "input"
+        },
+        {
+          "arguments": [
+            "physical-observation",
+            "astronomy:all-sky-frequency-temperature-polarization-carrier__background-anisotropy-spectrum-relation__frequency-calibration-mask-beam-foregrounds-and-covariance-held__cmb-release-bounded"
+          ],
+          "destination": "prediction",
+          "opcode": "label"
+        },
+        {
+          "arguments": [
+            "premise",
+            "prediction"
+          ],
+          "destination": "bound-result",
+          "opcode": "pair"
+        },
+        {
+          "arguments": [
+            "prediction"
+          ],
+          "destination": "",
+          "opcode": "emit"
+        }
+      ],
+      "program_id": "SFT-EXP-ASTRO-CMB-001-E1-prediction",
+      "schema": "sft-v3-fold-program/1"
+    },
+    "program_hash": "sha256:0699b099bf39fae6962aecd0d9acbd40797ef9c9b9bc822db5ad15947558c622"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-28",
+  "registration_record_hash": "sha256:243c3d59165ff47bbaa614fea8686d172c472c044bbdb70744fef5f9ba0a7b00",
+  "row_retention_policy": "retain favorable adverse absent unresolved censored missing and transport rows",
+  "status": "empirical_boundary_corresponded"
+}

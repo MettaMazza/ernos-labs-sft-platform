@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ASTRO-SPECTRUM-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:5b827c1a95f180bc8d46be64edf5238aad7c5553522fa4ef0992d53d0c9e5b1a"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:52fb997b934e16f689163e2b9170fceba99e437aef2f201af732d73be96307f2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:28a8e3a8c0a1c591043843800e85c955ded4d4fb115784b01f5c3ecfad4b8f46"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:6bb7c553e796fd461f8ae99c460cbbd34cba8daf83c7e05ce6d17eb9c6d99675"
+    }
+  ]
+}

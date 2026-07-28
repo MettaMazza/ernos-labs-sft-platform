@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ASTRO-CMB-001",
+  "data_source_ids": [
+    "NASA-LAMBDA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:243c3d59165ff47bbaa614fea8686d172c472c044bbdb70744fef5f9ba0a7b00",
+  "falsification_condition": "Reject if a component-separated map is called raw observation.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:76f3700067294d0a19b355237ad24b315138aa6bf8741f4cc17caf39d728fe48",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7e19a04445df6fbe77a00be849c448a6e2b055ae5dc3408404797afaad24e76c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ASTRO-CMB-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:36dd0d7fc164c3bde5051ad75ee9a1fa62836b0b1592570844cb8adf9ff10489",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cfcd972943186008e53e5c6d76b44974edb082334c50501f995d6993869cb95c",
+    "prediction_seal_hash": "sha256:7fb253886963df78e8998c5d849a8c706a08e9e78322a2fe40957067a86b5c5e",
+    "program_hash": "sha256:23543b6214ed33019cf109ab75f938e795c3aa4f6e0709d5650686a63b2df2f8",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7a2370dad5955187a6b5cb642b8951f6054903e853f71eb73dae1e04a39cfc26",
+    "target_material_present": false,
+    "trace_hash": "sha256:b6b83bda78fc0134f32caf61bc1169de215b218d83e308845949a236ce5ef36e"
+  },
+  "measurement_receipt_hash": "sha256:3ff2e0af68820a5826174071276682010152079c4f25b27e5243d1e042cac530",
+  "measurements": [
+    "sft-astro-cmb-001-external-astronomy-evidence: predicted astronomy:all-sky-frequency-temperature-polarization-carrier__background-anisotropy-spectrum-relation__frequency-calibration-mask-beam-foregrounds-and-covariance-held__cmb-release-bounded; observed astronomy:all-sky-frequency-temperature-polarization-carrier__background-anisotropy-spectrum-relation__frequency-calibration-mask-beam-foregrounds-and-covariance-held__cmb-release-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:05d07df4611fac2d901c334db1b71664b1ae14d6fce23b408efa2b4768fecb9f",
+    "custodian_id": "SFT-EXP-ASTRO-CMB-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:243c3d59165ff47bbaa614fea8686d172c472c044bbdb70744fef5f9ba0a7b00",
+    "prediction_seal_hash": "sha256:7fb253886963df78e8998c5d849a8c706a08e9e78322a2fe40957067a86b5c5e",
+    "registered_target_identity_hash": "sha256:7a2370dad5955187a6b5cb642b8951f6054903e853f71eb73dae1e04a39cfc26",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:0a4c3b1a682e55345d431872ff54f349b76b61b86f15f7f2fd6e7bd96906cc13"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:806c1220714f451e2fc205792b13182a2a524e003b0026cce6d8e82ddb9d1e47"
+}

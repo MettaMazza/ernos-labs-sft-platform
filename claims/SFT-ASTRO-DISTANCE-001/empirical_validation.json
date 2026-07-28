@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ASTRO-DISTANCE-001",
+  "data_source_ids": [
+    "ESA-GAIA-ARCHIVE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:11563cfbca88e0c0c3cec0eff7fbeb22662fd58001e99bf85f40d541f7383beb",
+  "falsification_condition": "Reject if one distance method silently substitutes for another.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6e00cd2f5324967a9aa4257e96102e41cacafb07292e589ca10901ed6dc334b0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:d6dbf3adfdab11470f1267d450e6dcb1480ffbe86ac0c8f57bcfd8ecb7aa236c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ASTRO-DISTANCE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4eaacd40a6e6542bbc8a78538f5e7ba5057485557fe0f60013ce191884ffe845",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ce4b2be47310c2f95c22725a91fb1f19710f39173730ad782fab64c7e3bc49bf",
+    "prediction_seal_hash": "sha256:c4ca158399abfa87aae73d7bb116c599157fc09309bc67af8332dad741afa320",
+    "program_hash": "sha256:0b4986444db3d13a6565a2dd29c4bf010a881b4b8e8794b53527b871a727fc22",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9aace2abd3f20699e803333356dbf5045ef7f87c81024f1699665e6d59b07bc5",
+    "target_material_present": false,
+    "trace_hash": "sha256:15654168d8eab21964d4f83bd4f0db490403cabff2e2f26f0158a6b3a429e9e7"
+  },
+  "measurement_receipt_hash": "sha256:590482ac61b0b64a0a59a72df26a5f8842be4691cc464b26ea071538a80a895d",
+  "measurements": [
+    "sft-astro-distance-001-external-astronomy-evidence: predicted astronomy:source-observer-separation-carrier__method-specific-distance-inference__method-calibration-ladder-range-and-uncertainty-held__distance-method-bounded; observed astronomy:source-observer-separation-carrier__method-specific-distance-inference__method-calibration-ladder-range-and-uncertainty-held__distance-method-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:8477ba8e6feb801c2f3f38ced14d9294a8782881e9353dfd6ad4e6af6d940702",
+    "custodian_id": "SFT-EXP-ASTRO-DISTANCE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:11563cfbca88e0c0c3cec0eff7fbeb22662fd58001e99bf85f40d541f7383beb",
+    "prediction_seal_hash": "sha256:c4ca158399abfa87aae73d7bb116c599157fc09309bc67af8332dad741afa320",
+    "registered_target_identity_hash": "sha256:9aace2abd3f20699e803333356dbf5045ef7f87c81024f1699665e6d59b07bc5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:694d39bb82bab5ea6b312131298230fec78f98b2f2e50df2f2f5f9564679e201"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:20ffa01ddc647a1445bcdaebd7fcedbf5835664239120675f6acef21496031cb"
+}

@@ -1,0 +1,1335 @@
+<!doctype html>
+<html>
+   <head>
+   <title>NASA Exoplanet Archive</title>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Varela' media='screen' rel='stylesheet' type='text/css'>
+<link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="/js/application.js" type="text/javascript"></script>
+<script src="/js/jquery.flexslider.js" type="text/javascript"></script>
+<link href='/images/icons/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+<link href='/images/icons/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='/images/icons/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='/images/icons/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='/images/icons/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+<link href='/images/icons/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='/images/icons/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+<link href='/images/icons/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/images/icons/favicon-196x196.png' rel='icon' sizes='196x196' type='image/png'>
+<link href='/images/icons/favicon-160x160.png' rel='icon' sizes='160x160' type='image/png'>
+<link href='/images/icons/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'>
+<link href='/images/icons/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/images/icons/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<meta content='#222244' name='msapplication-TileColor'>
+<meta content='/images/icons/mstile-144x144.png' name='msapplication-TileImage'>
+
+
+   <link rel="stylesheet" type="text/css" href="/css/navigation.css" />
+   <link rel="stylesheet" type="text/css" media="all" href="/js/ice/IceBlock/css/IceBlock.css" />
+   <style>
+a.overlay:link {
+	color: lemonchiffon;
+}
+a.overlay:visited {
+	color: lemonchiffon;
+}
+a.overlay:active {
+	color: lemonchiffon;
+}
+a.overlay:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+</style>
+   <script src="/js/navigation.js"></script>
+   <script type="text/javascript" src="/js/ice/IceBlock/IceBlock.js"></script>
+   <script type="text/javascript">
+   var initOverlay;
+   var debug;
+
+   function checkOverlay()
+   {
+      if(debug)
+         console.log("DEBUG> checkOverlay() INIT FUNCTION -------------------------------- ------ INIT ------ ");
+
+
+      // Start the request for the cookie data
+
+      var ovlyURL;
+
+      ovlyURL = "/cgi-bin/CheckOverlay/nph-checkOverlay?app=FrontPage";
+
+      jQuery.ajax({
+
+         type:   'GET',
+         url:     ovlyURL,
+
+         success: function(data, status, xhr) {
+
+            // Check to see if we got a JSON return
+            // (means we won't get HTML content for the overlay)
+
+            if(typeof(data.status) != "undefined")
+            {
+               if(typeof(data.msg) != "undefined")
+               {
+                  if(data.status == "ERROR")
+                     console.log("ERROR Message: " + data.msg);
+               }
+               else
+                  console.log("ERROR: Status returned but no message.");
+
+               return;
+            }
+
+
+            // If we got this far, we have HTML,
+            // so set up initial overlay
+
+            initOverlay = new IceBlock("body", false);
+
+            initOverlay.blocker.style.opacity = 0.7;
+
+            initOverlay.message.style.background = "rgba(0, 0, 0, 0)";
+            initOverlay.message.style.border     = "0px solid white";
+
+            initOverlay.setMessage(data, false);
+
+            initOverlay.show();
+         }
+      });
+   }
+
+   // $( window ).on( "load", checkOverlay );
+
+   </script>
+   <script type="text/javascript">
+
+      var muCount = 0;
+      var nuCount = 0;
+
+      var myMenu;
+
+      jQuery(document).ready(function(){
+
+		 checkOverlay();
+
+         jQuery("#objname").on("keypress", function(event){
+
+            if(event.keyCode == 13)
+               submitSearch("name");
+         });
+
+         jQuery("#locstr").on("keypress", function(event){
+
+            if(event.keyCode == 13)
+               submitSearch("location");
+         });
+
+         jQuery("#locstr").focus();
+
+         jQuery("#locstr").keyup(function() {
+
+            var nameStr = jQuery(this).val();
+
+            if(muCount == 0
+            &&(nameStr == "mu "
+            || nameStr == "MU "
+            || nameStr == "mU "
+            || nameStr == "Mu "))
+            {
+               alert("Caution: Use mu for Greek letter or MU for variable star designation.");
+               ++muCount;
+            }
+
+            if(nuCount == 0
+            &&(nameStr == "nu "
+            || nameStr == "NU "
+            || nameStr == "nU "
+            || nameStr == "Nu "))
+            {
+               alert("Caution: Use nu for Greek letter or NU for variable star designation.");
+               ++nuCount;
+            }
+         });
+
+         jQuery("#objname").focus();
+
+         jQuery("#objname").keyup(function() {
+
+            var nameStr = jQuery(this).val();
+
+            if(muCount == 0
+            &&(nameStr == "mu "
+            || nameStr == "MU "
+            || nameStr == "mU "
+            || nameStr == "Mu "))
+            {
+               alert("Caution: Use mu for Greek letter or MU for variable star designation.");
+               ++muCount;
+            }
+
+            if(nuCount == 0
+            &&(nameStr == "nu "
+            || nameStr == "NU "
+            || nameStr == "nU "
+            || nameStr == "Nu "))
+            {
+               alert("Caution: Use nu for Greek letter or NU for variable star designation.");
+               ++nuCount;
+            }
+         });
+      });
+   </script>
+   </head>
+   <body>
+   <div class='ipac_bar'>
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+        <a href="http://www.ipac.caltech.edu"><img src="../images/ipac_logo.png" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <div class='header'>
+     <div class='container'>
+  <div class='row'>
+    <div class='span8'>
+      <div class='mission_title'>
+        <h1>
+          <a href='/'>
+            <div class='big_cap uppercase'>NASA</div> <div class='big_cap'>Exoplanet</div> <div class='big_cap'>Archive</div>
+          </a>
+        </h1>
+      </div>
+      <div class='mission_subtitle'>
+        <h2>
+          <a href='http://nexsci.caltech.edu/'>
+            <div class='big_cap uppercase'>A</div> <div class='big_cap lowercase'>service</div> <div class='big_cap lowercase'>of</div> <div class='big_cap uppercase'>NASA</div> <div class='big_cap'>Exoplanet</div> <div class='big_cap'>Science</div> <div class='big_cap'>Institute</div>
+          </a>
+        </h2>
+      </div>
+    </div>
+    <div class='span4'>
+      <div class='right'>
+        <div class='for_public'>
+          <a title="NASA's Exoplanet Exploration Program" alt="NASA's Exoplanet Exploration Program" href="https://exoplanets.nasa.gov"><img src="../images/exoplanet_exploration.jpg" /></a>
+        </div>
+        <div class='social_media'>
+                    <a href="http://en.wikipedia.org/wiki/Exoplanet_Archive"><div class='icon_background'>
+            <i class='exoplanet-icon-wikipedia'></i>
+          </div>
+          </a>
+
+                    <a href="https://www.facebook.com/NExScI"><div class='icon_background'>
+            <i class='exoplanet-icon-facebook'></i>
+          </div>
+          </a>
+
+                    <a href="https://twitter.com/nexsci_ipac"><div class='icon_background'>
+            <i class='exoplanet-icon-twitter'></i>
+          </div>
+          </a>
+
+                    <a href="https://www.youtube.com/user/NASAExoplanetArchive"><div class='icon_background'>
+            <i class='exoplanet-icon-youtube'></i>
+          </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     <div class='navigation_wrapper'>
+       <div class='container'>
+         <div class='row'>
+           <div class='span12'>
+             <!-- begin navigation.html -->
+
+<nav id="exo-hrmenu" class="exo-hrmenu">
+   <ul>
+      <li>
+         <a href="/index.html">Home</a>
+      </li>
+      <li>
+         <a href="/docs/about.html">About Us</a>
+         <div class="exo-hrsub">
+            <div class="exo-hrsub-inner">
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/docs/intro.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Overview</a></li>
+                     <li><a href="/docs/holdings.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Holdings</a></li>
+                     <li><a href="/docs/counts_detail.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Exoplanet Counts</a></li>
+                     <li><a href="/docs/users_group.html">
+                         <i class="exoplanet-icon-discussion-borderless"></i>&nbsp;
+                         User Panel</a></li>                         
+                         
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/docs/faq.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         FAQ</a></li>
+                     <li><a href="/docs/acknowledge.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Acknowledgements</a></li>
+                     <li><a href="/docs/privacy.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Privacy Notice</a></li>
+                  </ul>
+               </div>
+            </div><!-- /exo-hrsub-inner -->
+         </div><!-- /exo-hrsub -->
+      </li>
+      <li>
+         <a href="/docs/data.html">Data</a>
+         <div class="exo-hrsub">
+            <div class="exo-hrsub-inner">
+               <div class="exo-hrsub-group">
+                  <h4>Planetary Systems</h4>
+                  <ul>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Planetary Systems</a></li>
+					 <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars">
+					     <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+						 Planetary Systems Composite Data</a></li>
+					 <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=STELLARHOSTS">
+					     <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+						 Stellar Hosts</a></li>
+                      <li><a href="/cgi-bin/atmospheres/nph-firefly?atmospheres">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                        Atmospheric Spectroscopy</a></li>
+                      <li><a href="/cgi-bin/observations/nph-firefly?data">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                        NExoList </a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=ML">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+
+                         Microlensing Planets</a></li>
+                    <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=directimaging&constraint=immodeldef=1">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Direct Imaging Planets</a></li>
+                    <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TD">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Transiting Planets</a></li>                         
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <h4>Kepler</h4>
+                  <ul>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=cumulative">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         KOI (Cumulative List)</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=koi">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         KOI (All Lists)</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=koiapp&constraint=pp_host_prob_score>0.3">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Positional Probabilities</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=koifpp">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         False Positive Probabilities</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=fpwg">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                        Certified False Positives</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=tce">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Threshold-Crossing Events</a></li>
+                     <li><a href="/docs/Kepler_completeness_reliability.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Completeness and Reliability</a></li>
+                     <li><a href="/docs/KeplerSimulated.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Simulated Data</a></li>                           
+                     <li><a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=keplerstellar">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         Kepler Stellar</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=kep_conf_names">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Kepler Confirmed Names</a></li>
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <h4>Transit Surveys</h4>
+                  <ul>
+				  	 <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TOI">
+					 	<i class="exoplanet-icon-table-borderless"></i>&nbsp;
+					 	TESS Project Candidates</a>
+					 </li>
+                     <li><a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=k2targets">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         K2 Targets</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=k2pandc">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         K2 Planets and Candidates</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=k2_conf_names">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         K2 Confirmed Names</a></li>
+                     <li><a href="/applications/ETSS/CoRoT_astero_index.html">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         CoRot Astero-Seismology</a></li>
+                     <li><a href="/applications/ETSS/CoRoT_exo_index.html">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         CoRoT Exoplanet</a></li>
+                     <li><a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=superwasptimeseries">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         SuperWASP Light Curves</a></li>
+                     <li><a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=kelttimeseries">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         KELT Light Curves</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ETSSView&config=conf/KELTP">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         KELT Praeseppe</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ETSSView&config=conf/XO">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         XO</a></li>
+                     <li><a href="/applications/ETSS/HATNet_index.html">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         HATNet</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ETSSView&config=conf/Cluster">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Cluster</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ETSSView&config=conf/TrES">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         TrES</a></li>
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <h4>Other</h4>
+                  <ul>
+                      <li><a href="/cgi-bin/observations/nph-firefly?datta">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         JWST Observations</a></li>
+                     <li><a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=ukirttimeseries">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         UKIRT Microlensing Survey</a></li>
+                    <li><a href="/cgi-bin/MOA/nph-firefly?MOA">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         MOA Microlensing Survey</a></li>
+                    <li><a href="/cgi-bin/ROME/nph-firefly?data&filter=True">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         ROME/REA Microlensing Survey</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=gjstars">
+                      <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Gliese-Jahreiss Stars</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=DI_STARS_EXEP">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         HWO ExEP Precursor Science Stars</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=missionstars">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Mission Stars</a></li>
+                     <li><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=mission_exocat">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Mission Stars+ExoCat</a></li>
+	    			 <li><a href="/cgi-bin/FDL/nph-fdl">
+					 	 <i class="exoplanet-icon-table-borderless"></i>&nbsp;
+                         Frontier Development Lab Datasets</a></li>
+	    	     <li><a href="/cgi-bin/CUBESAT/nph-cubesat?cute">
+                         <i class="exoplanet-icon-table-borderless"></i>&nbsp; 
+                          CUTE Mission</a></li>
+	    	     <li><a href="/docs/ASTERIAMission.html">
+                         <i class="exoplanet-icon-observatory-borderless"></i>&nbsp; 
+                          ASTERIA Mission</a></li>                      
+                     <li><a href="/docs/contributed_data.html">
+                         <i class="exoplanet-icon-observatory-borderless"></i>&nbsp;
+                         Contributed Data Sets</a></li>
+                     <li><a href="/applications/ExoTbls/upload.html">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         Interactive Tables Search and File Upload</a></li>
+                  </ul>
+               </div>
+            </div><!-- /exo-hrsub-inner -->
+            &nbsp;<p/><center><i class="exoplanet-icon-table-borderless"></i>&nbsp;&nbsp; <i>Full table display</i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="exoplanet-icon-search-borderless"></i>&nbsp;&nbsp;<i>Database search</i></center><p/>
+         </div><!-- /exo-hrsub -->
+      </li>
+      <li>
+         <a href="/docs/tools.html">Tools</a>
+         <div class="exo-hrsub">
+            <div class="exo-hrsub-inner">
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/applications/Inventory/search.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Explore the Archive</a></li>
+                     <li><a href="/applications/ExoTbls/upload.html">
+                         <i class="exoplanet-icon-search-borderless"></i>&nbsp;
+                         Interactive Table Search and File Upload</a></li>
+                     <li><a href="/cgi-bin/TransitView/nph-visibletbls?dataset=transits">
+                         <i class="exoplanet-icon-transit-borderless"></i>&nbsp;
+                         Transit and Ephemeris Service</a></li>
+                     <li><a href="/cgi-bin/CalcQty/nph-calcqty">
+                         <i class="exoplanet-icon-transit-borderless"></i>&nbsp;
+                         Predicted Observables for Exoplanets (POE)</a></li>
+                     <li><a href="/cgi-bin/Pgram/nph-pgram">
+                         <i class="exoplanet-icon-plot-borderless"></i>&nbsp;
+                         Periodogram</a></li>
+                     <!-- <li><a href="/cgi-bin/Periodogram/nph-simpleupload">
+                         <i class="exoplanet-icon-plot-borderless"></i>&nbsp;
+                         Periodogram</a></li> -->
+                     <li><a href="/ScatterPlot/?config=scatter&table=PS_output.csv&columns=PS_columns.tbl&theme=pres&x=pl_orbper&y=pl_bmassj&symbol-color=discoverymethod&symbol-size-min=8&legendpos=bottomright&link=1">
+                         <i class="exoplanet-icon-plot-simple-borderless"></i>&nbsp;
+                         Confirmed Planets Plotting Tool</a></li>
+				     <li><a href="/cgi-bin/ExoFAST/nph-exofast">
+					     <i class="exoplanet-icon-transit-borderless"></i>&nbsp;
+						 EXOFAST: Transit and RV Fitting</a></li>
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/docs/TAP/usingTAP.html">
+                         <i class="exoplanet-icon-api-search-borderless"></i>&nbsp;
+                        Table Access Protocol (TAP) Interface</a></li>
+                     <li><a href="/docs/program_interfaces.html">
+                         <i class="exoplanet-icon-api-search-borderless"></i>&nbsp;
+                         Application Programming Interface (API)</a></li>
+                     <li><a href="/bulk_data_download">
+                         <i class="exoplanet-icon-download-borderless"></i>&nbsp;
+                         Bulk Data Download</a></li>
+                     <li><a href="https://exofop.ipac.caltech.edu/">
+                         <i class="exoplanet-icon-observatory-borderless"></i>&nbsp;
+                         ExoFOP</a></li>
+                     <li><a href="/exoplanetplots/">
+                         <i class="exoplanet-icon-plot-borderless"></i>&nbsp;
+                         Pre-generated Plots</a></li>
+                    <li><a href="/support/upload_param/">
+                         <i class="exoplanet-icon-upload-borderless"></i>&nbsp;
+                         Published Data Upload</a></li>    
+                  </ul>
+               </div>
+            </div><!-- /exo-hrsub-inner -->
+         </div><!-- /exo-hrsub -->
+      </li>
+      <li>
+         <a href="/docs/help.html">Support</a>
+         <div class="exo-hrsub">
+            <div class="exo-hrsub-inner">
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/applications/DocSet/index.html?doctree=/docs/docmenu.xml&startdoc=item_1_01">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Documentation Index</a></li>
+                     <li><a href="/docs/KeplerMission.html">
+                         <i class="exoplanet-icon-book-borderless"></i>&nbsp;
+                         Kepler Documentation</a></li>
+                  </ul>
+               </div>
+               <div class="exo-hrsub-group">
+                  <ul>
+                     <li><a href="/docs/connect.html">
+                         <i class="exoplanet-icon-discussion-borderless"></i>&nbsp;
+                         Social Media and Newsletter</a></li>
+                     <li><a href="/applications/Helpdesk" target="_blank">
+                         <i class="exoplanet-icon-discussion-borderless"></i>&nbsp;
+                         Contact Us</a></li>
+                  </ul>
+               </div>
+            </div><!-- /exo-hrsub-inner -->
+         </div><!-- /exo-hrsub -->
+      </li>
+      <li>
+         <span style="font-weight: bold; cursor: pointer; padding: 3px 1.5em;" id="loginID">-</span>
+      </li>
+  </ul>
+</nav>
+<!-- end navigation.html --> 
+
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class='container'>
+     <div class='home_page'>
+       <div class='row archive_stats'>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+        <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS"><i class='right icon-white icon-arrow-right'></i>
+          <div class='stat'>
+        	6,324
+          </div>
+          <div class='title'>
+        	Confirmed Planets
+          </div>
+          <div class='date'>
+        	       07/16/2026 
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1&constraint=disc_facility+like+'%25TESS%25'"><i class='right icon-white icon-arrow-right'></i>
+        <div class='stat'>
+          910
+        </div>
+        <div class='title'>
+          TESS Confirmed Planets
+        </div>
+        <div class='date'>
+                 07/16/2026 
+        </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TOI"><i class='right icon-white icon-arrow-right'></i>
+        <div class='stat' id="tesscandcount">
+			8,064
+        </div>
+        <div class='title'>
+          TESS Project Candidates
+        </div>
+        <div class='date' id='tessdate'>
+			    07/10/2026 
+        </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/docs/counts_detail.html"><i class='right icon-white icon-arrow-right'></i>
+        <div class='title'>
+          View more Planet and Candidate statistics
+        </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+       <div class='row'>
+         <div class='span6'>
+           <div class='panel_border explore_the_archive'>
+<script type="text/javascript" src="/applications/Inventory10.4/Inventory.js"></script>
+  <div class='panel_header'>
+    <h1>
+      Explore the Archive
+    </h1>
+  </div>
+  <div class='panel_dark'>
+    <div class='input-append query'>
+      <input title="Coordinates only valid for radius search." placeholder='Name or Coordinates' type='text' id='locstr'>
+      <button class='btn btn-primary' onclick='myType="single"; submitSearch();'>
+        Search
+      </button>
+      <br>
+    </div>
+    <p class='advanced_search right'>
+            <a href="/docs/inventory_help.html"><i class='exoplanet-icon-question-borderless left'></i>
+      <a href="/applications/Inventory/search.html">Advanced Search</a>
+      <i class='icon-white icon-arrow-right'></i>
+      </a>
+
+    </p>
+    <div class='input-prepend radius'>
+      <span class='add-on' title='Radius search returns all holdings in region. Leave blank for single object overview.'>
+        Optional Radius (arcsec)
+      </span>
+      <input class='span1' type='text' title='Radius search returns all holdings in region. Leave blank for single object overview.' id='radius'>
+    </div>
+  </div>
+</div>
+
+           <div class='panel_border featured_datasets'>
+             <div class='panel_header'>
+               <h1> Featured NASA Mission Products</h1>
+             </div>
+             <div class='panel'>
+               <div class="jwst_dataset">
+  <div class="button_wrapper">
+    <div class="button_grid">
+      <div class="item double_high image">
+        <img src="/images/dataset_jwst_dark.png" />
+      </div>
+      <div class="item double_high abstract">
+        <p>
+          JWST uses precision transmission and eclipse spectroscopy and direct imaging to deliver spectra from the near-infrared to the mid-infrared.
+        </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="button_grid">
+      <div class="item">
+        <a href="/cgi-bin/atmospheres/nph-firefly?atmospheres&facility=%27%JWST%%27&spec_type=%27transmission%%27">
+          <i class="exoplanet-icon-spectra-borderless left"></i>
+          <div class="title left">Transmission Spectra</div>
+          <i class="icon-white icon-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="/cgi-bin/atmospheres/nph-firefly?atmospheres&facility=%27%JWST%%27&spec_type=%27eclipse%%27">
+          <i class="exoplanet-icon-spectra-borderless left"></i>
+          <div class="title left">Eclipse Spectra</div>
+          <i class="icon-white icon-arrow-right"></i>
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="button_grid">
+      <div class="item">
+        <a href="/cgi-bin/atmospheres/nph-firefly?atmospheres&facility=%27%JWST%%27&spec_type=%27direct%20imaging%%27">
+          <i class="exoplanet-icon-spectra-borderless left"></i>
+          <div class="title left">Direct Imaging Spectra</div>
+          <i class="icon-white icon-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="button_grid">
+      <div class="item">
+        <a href="/cgi-bin/observations/nph-firefly?data">
+          <i class="exoplanet-icon-table-borderless left"></i>
+          <div class="title left">NExoList</div>
+          <i class="icon-white icon-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="button_grid">
+      <div class="item double_wide">
+        <a href="/cgi-bin/observations/nph-firefly?">
+          <i class="exoplanet-icon-book-borderless left"></i>
+          <div class="title left">Documentation</div>
+          <i class="icon-white icon-arrow-right"></i>
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+  </div>
+</div>
+
+               <div class='tess_dataset'>
+  <div class='button_wrapper'>
+    <div class='button_grid'>
+      <div class='item double_high image'> <img src="../images/dataset_tess.png" /> </div>
+      <div class='item double_high abstract'><p>
+Launched in April 2018, TESS is surveying the sky to find transiting exoplanets around the brightest stars near Earth.</p>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+     <div class='item double_wide'><a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag=1&constraint=disc_facility+like+%27%25TESS%25%27"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'>Confirmed Planets </div>
+        <i class='icon-white icon-arrow-right'></i> </a> 
+   </div>
+        <div class='clearfix'></div>
+      </div>
+
+       <div class='button_grid'>  
+      <div class='item double_wide'> <a href="https://exofop.ipac.caltech.edu/tess"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'>ExoFOP</div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>              
+      <div class='clearfix'></div>
+    </div>
+    
+    
+    
+    
+    <div class='button_grid'>
+      <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TOI"><i class='exoplanet-icon-planet-candidate-borderless left'></i>
+        <div class='title left'>Project Candidates </div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>        
+      <div class='item'> <a href="https://exofop.ipac.caltech.edu/tess/view_ctoi.php"><i class='exoplanet-icon-planet-candidate-borderless left'></i>
+        <div class='title left'>Community Candidates </div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+        
+        
+
+      <div class='clearfix'></div>
+    </div>
+    
+    
+  </div>
+</div>
+
+               <div class='kepler_dataset'>
+  <div class='button_wrapper'>
+    <div class='button_grid'>
+      <div class='item double_high image'>
+        <img src="../images/dataset_kepler-k2.png" />
+      </div>
+      <div class='item double_high abstract'>
+        <p>
+          Kepler was NASA's first mission to search for Earth-like planets, and its continuation, K2, expanded into new and exciting observations.
+        </p>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+                <a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=keplerstellar"><i class='exoplanet-icon-observatory-borderless left'></i>
+        <div class='title left'>
+          Kepler Targets
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='item'>
+                <a href="/cgi-bin/TblSearch/nph-tblSearchInit?app=ExoTbls&config=k2targets"><i class='exoplanet-icon-observatory-borderless left'></i>
+        <div class='title left'>
+          K2 Targets
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+                <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=cumulative"><i class='exoplanet-icon-planet-candidate-borderless left'></i>
+        <div class='title left'>
+          Kepler Candidates (KOIs)
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='item'>
+                <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=k2pandc"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'>
+          K2 Planets and Candidates
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+                <a href="/docs/KeplerNumbers.html"><i class='exoplanet-icon-book-borderless left'></i>
+        <div class='title left'>
+          Planet Naming Policy
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='item'>
+                <a href="/docs/Kepler_Data_Products_Overview.html">
+                <i class='exoplanet-icon-book-borderless left'></i>
+        <div class='title left'>
+          Documentation
+        </div>
+        <i class='icon-white icon-arrow-right'></i>
+        </a>
+
+      </div>
+      <div class='clearfix'></div>
+    </div>
+  </div>
+</div>
+
+               <div class='pandora_dataset'>
+  <div class='button_wrapper'>
+    <div class='button_grid'>
+      <div class='item double_high image'>
+        <img src="/images/dataset_pandora.png" />
+      </div>
+      <div class='item double_high abstract'>
+        <p>
+          Launched in January 2026, Pandora is performing multi-wavelength characterization of exoplanets and their host stars.
+        </p>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+        <a >
+          <i class='exoplanet-icon-table-borderless left'></i>
+          <div class='title left'>
+            All Data Products
+          </div>
+        </a>
+      </div>
+      <div class='item'>
+        <a >
+          <i class='exoplanet-icon-spectra-borderless left'></i>
+          <div class='title left'>
+            Spectral Time Series
+          </div>
+        </a>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+        <a >
+          <i class='exoplanet-icon-light-curve-borderless left'></i>
+          <div class='title_multiline left'>
+            Uncorrected Pixel<br />
+            Time Series
+          </div>
+        </a>
+      </div>
+      <div class='item'>
+        <a >
+          <i class='exoplanet-icon-light-curve-borderless left'></i>
+          <div class='title_multiline left'>
+            Corrected Pixel<br />
+            Time Series
+          </div>
+        </a>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='button_grid'>
+      <div class='item'>
+        <a >
+          <i class='exoplanet-icon-book-borderless left'></i>
+          <div class='title left'>
+            Documentation
+          </div>
+        </a>
+      </div>
+      <div class='item'>
+        <a href="https://exofop.ipac.caltech.edu/tess/view_targets_pandora.php" target="_blank">
+          <i class='exoplanet-icon-api-search-borderless left'></i>
+          <div class='title left'>
+            ExoFOP Prime Target List
+          </div>
+          <i class='icon-white icon-arrow-right'></i>
+        </a>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+  </div>
+</div>
+
+             </div>
+             <div class='panel_header featured_tabs'>
+               <div class='tab'> <a class="corot_tab active" data-dataset="jwst_dataset" href="#">JWST</a> </div>
+               <div class='tab'> <a class="tess_tab" data-dataset="tess_dataset" href="#">TESS</a> </div>
+               <div class='tab'> <a class="kepler_tab" data-dataset="kepler_dataset" href="#">Kepler/K2</a> </div>
+               <div class='tab'> <a class="more_tab" data-dataset="pandora_dataset" href="#">Pandora (Coming Soon)</a></div>               
+               <div class='clearfix'></div>
+             </div>
+           </div>
+         </div>
+         <div class='span6'>
+           <div class='panel_border'>
+             <div class='panel'>
+               <div class='flexslider'>
+                 <ul class='slides'>
+                   <li> <a href="/docs/exonews_archive.html#16July2026" target="_blank">
+  <div class='image'><img src="/images/news/news-image-TOI791superpuff.jpg" alt="This illustration depicts the Sun-like star TOI-791 and two giant planets that NASA's TESS space telescope discovered in its orbit. These planets, designated TOI-791 b and TOI-791 c, are roughly the size of Jupiter but a tiny fraction of its mass, meaning they have an extraordinarily low density."> </div>
+  <div class='details'>
+    <div class='title'>Five New Planets, Including Two of the Least-Dense Planets Ever Found</div>
+    <div class='date'>July 16, 2026
+      &bull;      
+      New Data</div>
+    <div class='abstract'>This week's new data feature two super-puff planets and a spectrum of AU Mic b, the system immortalized by NASA's "Flares of Fury" poster.</div>
+  </div>
+  <div class='more'>Learn more! <i class='icon icon-white icon-arrow-right'></i> </div>
+  <div class='clear'></div>
+  </a> </li>
+
+
+
+<li> <a href="/docs/exonews_archive.html#9Jul72026" target="_blank">
+  <div class='image'><img src="/images/news/news-image-betpic.jpg" alt="This striking artist's illustration depicts the young Beta Pictoris system, featuring a brilliant central star whose sharp horizontal lens flares pierce through a glowing, amber-gold debris disk."> </div>
+  <div class='details'>
+    <div class='title'>Four Planets Added, Including a Third Discovery in the Beta Pictoris System </div>
+    <div class='date'>July 9, 2026
+      &bull;      
+      New Data</div>
+    <div class='abstract'>This week's update delivers new data for 18 planets, including a third planet in the Beta Pictoris system, as well as spectra for 21 planets.</div>
+  </div>
+  <div class='more'>Learn more! <i class='icon icon-white icon-arrow-right'></i> </div>
+  <div class='clear'></div>
+  </a> </li>
+
+
+
+<li> <a href="/docs/exonews_archive.html#2July2026" target="_blank">
+  <div class='image'> <img src="/images/news/news-image-wasp-planet.jpg" alt="This dramatic illustration shows the massive, warm-toned gas giant WASP-39 b dominated by a brilliant, glowing golden crescent where starlight filters through its thick, water-rich atmosphere. In the upper right, its nearby host star shines as a blinding white-yellow orb, casting intense light and horizontal lens flares across the planet's dark night side. The entire scene is set against the deep black vacuum of interstellar space, speckled with distant, faint stars."> </div>
+  <div class='details'>
+    <div class='title'>A Plethora of Planet Data and Spectra</div>
+    <div class='date'>July 2, 2026   
+      &bull;      
+      New Data</div>
+    <div class='abstract'>This week's update features 19 new planets, 48 new spectra (including seven of the TRAPPIST-1 planets!), and new data for 11 planets. One planet has also been demoted as a false positive.</div>
+  </div>
+  <div class='more'>Learn more!<i class='icon icon-white icon-arrow-right'></i> </div>
+  <div class='clear'></div>
+  </a> </li>
+
+
+
+<li> <a href="/docs/exonews_archive.html#18June2026" target="_blank">
+  <div class='image'><img src="/images/news/news-image-nexolist.jpg" alt="This image is a screen capture of the NExoList service."> </div>
+  <div class='details'>
+    <div class='title'>Start Planet-ing Your JWST Observations with NExoList</div>
+    <div class='date'>June 18, 2026      
+      &bull;      
+      New Service</div>
+    <div class='abstract'>We're excited to announce <strong>NExoList: the NASA Exoplanet Archive Atmospheric Observation List</strong>, a new service designed to make JWST proposal planning easier and more streamlined.</div>
+  </div>
+  <div class='more'>Learn more!<i class='icon icon-white icon-arrow-right'></i> </div>
+  <div class='clear'></div>
+  </a> </li>
+
+
+
+
+
+                   <li>
+    <a href="/exoplanetplots/index.html#scatter_PS_output_pl_orbper_pl_bmassj"><div class='image plot'>
+    <br>
+    <img src="../exoplanetplots/nea_scatter_PS_output_pl_orbper_pl_bmassj_pres.png" />
+  </div>
+  <div class='details'>
+    <div class='title'>
+      Exoplanet Mass vs. Period
+    </div>
+  </div>
+  <div class='more'>
+    More Plots
+    <i class='icon icon-white icon-arrow-right'></i>
+  </div>
+  <div class='clear'></div>
+  </a>
+
+</li>
+<li>
+    <a href="/exoplanetplots/index.html#hist_PS_output_disc_year_cumul"><div class='image plot'>
+    <br>
+    <img src="../exoplanetplots/nea_hist_PS_output_disc_year_cumul_pres.png" />
+  </div>
+  <div class='details'>
+    <div class='title'>
+        Cumulative Exoplanet Discoveries by Year
+    </div>
+  </div>
+  <div class='more'>
+    More Plots
+    <i class='icon icon-white icon-arrow-right'></i>
+  </div>
+  <div class='clear'></div>
+  </a>
+
+</li>
+<li>
+    <a href="/exoplanetplots/index.html#scatter_PS_output_pl_masse_pl_rade"><div class='image plot'>
+    <br>
+    <img src="../exoplanetplots/nea_scatter_PS_output_pl_masse_pl_rade_pres.png" />
+  </div>
+  <div class='details'>
+    <div class='title'>
+      Exoplanet Radius vs. Mass
+    </div>
+  </div>
+  <div class='more'>
+    More Plots
+    <i class='icon icon-white icon-arrow-right'></i>
+  </div>
+  <div class='clear'></div>
+  </a>
+
+</li>
+<li>
+    <a href="/exoplanetplots/index.html#scatter_TOI_output_pl_orbper_pl_rade"><div class='image plot'>
+    <br>
+    <img src="../exoplanetplots/nea_scatter_TOI_output_pl_orbper_pl_rade_pres.png" />
+  </div>
+  <div class='details'>
+    <div class='title'>
+      TESS Candidate Radius vs. Period
+   </div>
+  </div>
+  <div class='more'>
+    More Plots
+    <i class='icon icon-white icon-arrow-right'></i>
+  </div>
+  <div class='clear'></div>
+  </a>
+
+</li>
+
+                 </ul>
+               </div>
+             </div>
+             <div class='panel_header slide_controls'> <span class='title'> <a href="/docs/exonews_archive.html">News <i class='icon-white icon-arrow-right'></i> </a> </span> <a id="slide_control_0" class="slide_control active" href="#">
+               <div class='active_arrow'></div>
+               1 </a> <a id="slide_control_1" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               2 </a> <a id="slide_control_2" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               3 </a> <a id="slide_control_3" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               4 </a> <span class='spacer'> &nbsp; </span> <span class='title'> <a href="/exoplanetplots">Plots <i class='icon-white icon-arrow-right'></i> </a> </span> <a id="slide_control_4" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               1 </a> <a id="slide_control_5" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               2 </a> <a id="slide_control_6" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               3 </a> <a id="slide_control_7" class="slide_control" href="#">
+               <div class='active_arrow'></div>
+               4 </a> </div>
+           </div>
+         </div>
+       </div>
+       <div class='row'>
+         <div class='span6'>
+           <div class='panel_border tools_services'>
+  
+  <div class='panel_header'>
+    <h1> Tools & Services </h1>
+  </div>
+  <div class='panel'>
+    <div class='button_wrapper'>
+      <div class='button_grid'>
+      
+                
+        <div class='item double_wide'> 
+		  <a href="/support/upload_param/">
+		    <i class='exoplanet-icon-upload-borderless left'></i>
+            <div class='title left'> Published Data Upload </div>
+            <i class='icon-white icon-arrow-right'></i> 
+		    </a>
+		</div>
+
+        <div class='clearfix'></div>
+      </div> 
+                    
+      
+      <div class='button_grid'>
+      
+        <div class='item'> <a href="/docs/TAP/usingTAP.html"><i class='exoplanet-icon-api-search-borderless left'></i>
+        <div class='title left'> Build a Query (TAP) </div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+
+        <div class='item'> <a href="/docs/program_interfaces.html"><i class='exoplanet-icon-api-search-borderless left'></i> 
+          <div class='title left'> Build a Query (API)</div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+
+        <div class='clearfix'></div>
+      </div>
+      
+                  
+      <div class='button_grid'>
+      
+        <div class='item'> <a href="/cgi-bin/TransitView/nph-visibletbls?dataset=transits"><i class='exoplanet-icon-transit-borderless left'></i>
+          <div class='title_multiline left'> Transit and <br />
+            Ephemeris Service </div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+
+        <div class='item'> <a href="/cgi-bin/Pgram/nph-pgram"><i class='exoplanet-icon-plot-borderless left'></i>
+          <div class='title left'> Periodogram </div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+
+        <div class='clearfix'></div>
+      </div>
+      
+            
+      
+      <div class='button_grid'>
+      
+      
+        <div class='item'> <a href="/cgi-bin/ExoFAST/nph-exofast"><i class='exoplanet-icon-transit-borderless left'></i>
+          <div class='title_multiline left'>EXOFAST: <br />
+          Transit and RV Fitting</div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+      
+        <div class='item'> <a href="/cgi-bin/CalcQty/nph-calcqty"><i class='exoplanet-icon-transit-borderless left'></i>
+          <div class='title_multiline left'> Predicted Observables<br />for Exoplanets (POE) </div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+
+        <div class='clearfix'></div>
+      </div>
+            
+      
+    </div>
+  </div>
+</div>
+
+         </div>
+         <div class='span6'>
+           <div class='panel_border work_with_data'>
+  <div class='panel_header'>
+    <h1> Work with Data </h1>
+  </div>
+  
+  <div class='panel'>
+    <div class='button_wrapper'>
+
+    <div class='button_grid'>
+      <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'> Planetary Systems</div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+    
+        <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars"><i class='exoplanet-icon-table-borderless left'></i>
+          <div class='title_multiline left'> Planetary Systems<br />Composite Data</div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+      <div class='clearfix'></div>
+    </div>
+
+
+  
+    <div class='button_grid'>
+      <div class='item'> <a href="/cgi-bin/atmospheres/nph-firefly?atmospheres"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title_multiline left'> Atmospheric <br />
+          Spectroscopy <font color="#FFFF00"></font></div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+    
+      <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=DI_STARS_EXEP"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title_multiline left'> HWO ExEP <br />Precursor Science Stars</div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+      <div class='clearfix'></div>
+    </div>
+
+
+  
+      <div class='button_grid'>
+        <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TD"><i class='exoplanet-icon-table-borderless left'></i>
+          <div class='title left'> Transiting Planets </div>
+          <i class='icon-white icon-arrow-right'></i> </a> </div>
+        
+      <div class='item'> <a href="https://exofop.ipac.caltech.edu/tess"><i class='exoplanet-icon-observatory-borderless left'></i>
+        <div class='title left'> ExoFOP </div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+      <div class='clearfix'></div>
+    </div>
+  
+
+
+
+    <div class='button_grid'>
+      <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=ML&constraint=ml_modeldef=1"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'> Microlensing Planets </div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+     
+      <div class='item'> <a href="/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=STELLARHOSTS"><i class='exoplanet-icon-table-borderless left'></i>
+        <div class='title left'> Stellar Hosts </div>
+        <i class='icon-white icon-arrow-right'></i> </a> </div>
+      <div class='clearfix'></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  
+       
+
+         </div>
+       </div>
+       <div class='row help_buttons'>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/docs/faq.html"><i class='exoplanet-icon-question-borderless'></i>
+        &nbsp;FAQ
+        <div class='clearfix'></div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/applications/DocSet/index.html?doctree=/docs/docmenu.xml&startdoc=item_1_01"><i class='exoplanet-icon-book-borderless'></i>
+        &nbsp;Documentation
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/docs/videos.html"><i class='exoplanet-icon-video-borderless'></i>
+        &nbsp;Videos
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class='span3'>
+    <div class='panel_border'>
+      <div class='panel_header'>
+                <a href="/cgi-bin/Helpdesk/nph-genTicketForm" target="_blank"><i class='exoplanet-icon-discussion-borderless'></i>
+        &nbsp;Contact Us
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+     </div>
+   </div>
+   <div class='footer_wrapper'>
+  <div class='container'>
+    <div class='row'>
+      <div class='footer'>
+        <div class='span4'>
+          <ul>
+            <li>
+              <a href="/docs/acknowledge.html">Acknowledging the Archive</a>
+            </li>
+            <li>
+              <a href="http://www.ipac.caltech.edu/page/privacy">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://www.ipac.caltech.edu/page/image-use-policy">Image Use Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class='span8'>
+          <div class='affiliates right'>
+            <a alt="NASA Exoplanet Science Institute" title="NASA Exoplanet Science Institute" href="http://nexsci.caltech.edu/"><img src="../images/icon_nexsci.png" /></a>
+            <a alt="Infrared Processing and Analysis Center" title="Infrared Processing and Analysis Center" href="https://www.ipac.caltech.edu"><img src="../images/icon_ipac.png" /></a>
+            <a alt="California Institute of Technology" title="California Institute of Technology" href="http://www.caltech.edu"><img src="../images/icon_caltech.png" /></a>
+            <a alt="Jet Propulsion Laboratory" title="Jet Propulsion Laboratory" href="https://www.jpl.nasa.gov"><img src="../images/icon_jpl.png" /></a>
+            <a alt="National Aeronautics and Space Administration" title="National Aeronautics and Space Administration" href="https://www.nasa.gov"><img src="../images/icon_nasa.png" /></a>
+          </div>
+        </div>
+        <div class='span8 offset2 center disclaimer'>
+          <p>
+            NASA Exoplanet Archive is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

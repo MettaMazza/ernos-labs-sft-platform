@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ASTRO-LENSING-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:8562719999b4ef908c0d782966b3ac5992b167ebe6d7000f16c23f54db01ea21"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c9ac04ca76d2826dd06726a455e6c5778da7bb7c9bb1b6e7e8a841bbfc48d168"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:41bc8941d4852d3ee6f2679dd6b0fd100c2868a7e8d96f6151045cf83c8f9409"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:31f40361f4ce183a4f91cb0f23e38f3dc17c65368d2f29e393acc25503e7b1f3"
+    }
+  ]
+}
