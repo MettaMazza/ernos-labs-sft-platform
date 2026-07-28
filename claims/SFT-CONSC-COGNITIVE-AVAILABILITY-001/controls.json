@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CONSC-COGNITIVE-AVAILABILITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:225abeffa53c411b251afe1dec41a6ee663ccfbfa5508bf25745e33e0a535344"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:02a6089fcfc0f7db12e472841dd62229044d0cb7f4b1197b8647985b0ce757dd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4f7c62487dd3e0c4d556dacbe1686321b75944d27e1d0c4f09b20624300bfae3"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:2ca6c94549652139c9bc2e4a93b357ced133ae31f7e9aba1e59213f42c2626df"
+    }
+  ]
+}

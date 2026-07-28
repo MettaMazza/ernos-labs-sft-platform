@@ -1,0 +1,60 @@
+# Consciousness V1/V2 atomic reconciliation
+
+Status: `current_evidence_closed_extension_open`.
+
+All `763` V1/V2 entries remain reviewed. All `46` frozen atomic questions, including the separately registered qualia-resonance and red-of-red obligations, map to current V3 engine receipts: `46` closed, `0` open.
+
+Prior work supplies the accountability questions, never a V3 proof premise. Each mapped result was independently generated and admitted through the canonical engine.
+
+| Prior atom | Family | V3 admitted claims | Status |
+|---|---|---|---|
+| `SFT-PRIOR-V1-C1S-CONSC-SELF-OBSERVATION-CLOSURE` | `observation_interior_observation` | `SFT-CONSC-INTERIOR-OBSERVATION-001`, `SFT-CONSC-SELF-OBSERVATION-001` | `closed` |
+| `SFT-PRIOR-V1-C5S-CONSC-OBSERVATIONAL-MOMENT` | `observation_interior_observation` | `SFT-CONSC-OBSERVATIONAL-MOMENT-001` | `closed` |
+| `SFT-PRIOR-V1-C4S-CONSC-INTEGRATION` | `binding_unity` | `SFT-CONSC-BINDING-001`, `SFT-CONSC-INTEGRATION-BOUNDARY-001`, `SFT-CONSC-UNITY-001` | `closed` |
+| `SFT-PRIOR-V1-C2S-CONSC-SELF-OBSERVATION-BLIND-SPOT` | `self_observation_introspection` | `SFT-CONSC-INTROSPECTION-BLIND-SPOT-001` | `closed` |
+| `SFT-PRIOR-V1-C3S-CONSC-SELF-OBSERVATION-FIXED-POINT` | `subject_perspective_interiority` | `SFT-CONSC-SELF-INVARIANT-001` | `closed` |
+| `SFT-PRIOR-V1-XVII5-CONSC-MEASUREMENT-JOIN` | `observation_interior_observation` | `SFT-CONSC-MEASUREMENT-CONSCIOUSNESS-BOUNDARY-001` | `closed` |
+| `SFT-PRIOR-V1-XIV7-CONSC-SUBSTRATE-INDEPENDENCE` | `substrate_realization` | `SFT-CONSC-SUBSTRATE-INDEPENDENCE-001`, `SFT-CONSC-REALIZATION-EQUIVALENCE-001` | `closed` |
+| `SFT-PRIOR-V1-XIV7-CONSC-FEEDFORWARD-BOUNDARY` | `substrate_realization` | `SFT-CONSC-FEEDFORWARD-BOUNDARY-001` | `closed` |
+| `SFT-PRIOR-V1-XIV4-CONSC-FINITE-SELF-SIMULATION` | `finite_self_model` | `SFT-CONSC-SELF-APPLICATION-001`, `SFT-CONSC-SELF-SIMULATION-BOUNDARY-001`, `SFT-CONSC-SELF-VERIFICATION-LIMIT-001` | `closed` |
+| `SFT-PRIOR-V1-XIV3-CONSC-EXPECTATION` | `cognition_inference_representation` | `SFT-CONSC-EXPECTATION-001` | `closed` |
+| `SFT-PRIOR-V1-XIV2-CONSC-ALTERED-STATE-BOUNDARY` | `access_report_presence` | `SFT-CONSC-ALTERED-STATE-REPORT-BOUNDARY-001` | `closed` |
+| `SFT-PRIOR-V1-XIV1-CONSC-PERCEPTUAL-CHANNEL` | `qualia_resonance_composition` | `SFT-CONSC-QUALITATIVE-DISTINCTION-001`, `SFT-CONSC-QUALITATIVE-IDENTITY-001` | `closed` |
+| `SFT-PRIOR-V1-XIV1-CONSC-SYNAESTHESIA` | `qualia_resonance_composition` | `SFT-CONSC-CROSS-MODAL-QUALIA-001` | `closed` |
+| `SFT-PRIOR-V1-XI7-CONSC-INTERIORITY` | `subject_perspective_interiority` | `SFT-CONSC-INTERIORITY-001` | `closed` |
+| `SFT-PRIOR-V1-XI7-CONSC-HARD-PROBLEM` | `access_report_presence` | `SFT-CONSC-PHENOMENAL-PRESENCE-001`, `SFT-CONSC-REPORT-001`, `SFT-CONSC-FIRST-THIRD-PERSON-001` | `closed` |
+| `SFT-PRIOR-V1-XI6-CONSC-SLEEP-DREAM` | `memory_temporal_identity` | `SFT-CONSC-MEMORY-PERSISTENCE-001`, `SFT-CONSC-CESSATION-001` | `closed` |
+| `SFT-PRIOR-V1-XI5-CONSC-UNCONSCIOUS-INTROSPECTION` | `access_report_presence` | `SFT-CONSC-UNCONSCIOUS-PROCESS-001` | `closed` |
+| `SFT-PRIOR-V1-XI4-CONSC-BINDING` | `binding_unity` | `SFT-CONSC-BINDING-001`, `SFT-CONSC-QUALIA-COMPOSITION-001` | `closed` |
+| `SFT-PRIOR-V1-XI3-CONSC-FORWARD-MODEL` | `cognition_inference_representation` | `SFT-CONSC-PREDICTION-001` | `closed` |
+| `SFT-PRIOR-V1-XI2-CONSC-ATTENTION` | `attention_availability` | `SFT-CONSC-ATTENTION-001` | `closed` |
+| `SFT-PRIOR-V1-XI1-CONSC-MEMORY` | `memory_temporal_identity` | `SFT-CONSC-MEMORY-CARRIER-001`, `SFT-CONSC-RECALL-RECONSTRUCTION-001` | `closed` |
+| `SFT-PRIOR-V1-G9-CONSC-IDENTITY-TRANSPORT` | `substrate_realization` | `SFT-CONSC-IDENTITY-CONTINUITY-001`, `SFT-CONSC-REALIZATION-EQUIVALENCE-001` | `closed` |
+| `SFT-PRIOR-V1-C10S-CONSC-CESSATION` | `memory_temporal_identity` | `SFT-CONSC-CESSATION-001` | `closed` |
+| `SFT-PRIOR-V1-C9S-CONSC-FELT-SELF-INVARIANT` | `subject_perspective_interiority` | `SFT-CONSC-SUBJECT-CARRIER-001`, `SFT-CONSC-SELF-INVARIANT-001` | `closed` |
+| `SFT-PRIOR-V1-C8S-CONSC-INTROSPECTION-LIMIT` | `self_observation_introspection` | `SFT-CONSC-INTROSPECTION-LOSS-001`, `SFT-CONSC-SELF-HISTORY-RECONSTRUCTION-001` | `closed` |
+| `SFT-PRIOR-V1-C7S-CONSC-UNITY` | `binding_unity` | `SFT-CONSC-UNITY-001` | `closed` |
+| `SFT-PRIOR-V1-C6S-CONSC-EXPERIENTIAL-SEQUENCE` | `memory_temporal_identity` | `SFT-CONSC-TEMPORAL-CONTINUITY-001` | `closed` |
+| `SFT-PRIOR-V2-116-CONSC-BINDING` | `binding_unity` | `SFT-CONSC-BINDING-001`, `SFT-CONSC-SYNCHRONY-BOUNDARY-001` | `closed` |
+| `SFT-PRIOR-V2-117-CONSC-UNCONSCIOUS-ORBIT` | `access_report_presence` | `SFT-CONSC-UNCONSCIOUS-PROCESS-001` | `closed` |
+| `SFT-PRIOR-V2-117-CONSC-SELF-OPACITY` | `self_observation_introspection` | `SFT-CONSC-DETERMINISM-SELF-OPACITY-001` | `closed` |
+| `SFT-PRIOR-V2-145-CONSC-MEMORY-ORBIT` | `memory_temporal_identity` | `SFT-CONSC-MEMORY-PERSISTENCE-001` | `closed` |
+| `SFT-PRIOR-V2-148-CONSC-SLEEP-STATE-CYCLE` | `memory_temporal_identity` | `SFT-CONSC-MEMORY-PERSISTENCE-001`, `SFT-CONSC-CESSATION-001` | `closed` |
+| `SFT-PRIOR-V2-160-CONSC-PHENOMENAL-UNITY` | `binding_unity` | `SFT-CONSC-UNITY-001`, `SFT-CONSC-PHENOMENAL-PRESENCE-001` | `closed` |
+| `SFT-PRIOR-V2-160-CONSC-INTERIORITY` | `subject_perspective_interiority` | `SFT-CONSC-INTERIORITY-001`, `SFT-CONSC-PHENOMENAL-PRIVACY-001` | `closed` |
+| `SFT-PRIOR-V2-166-CONSC-EXPECTATION-OBSERVATION` | `cognition_inference_representation` | `SFT-CONSC-EXPECTATION-001` | `closed` |
+| `SFT-PRIOR-V2-175-CONSC-MULTIQUALITY-COMPOSITION` | `qualia_resonance_composition` | `SFT-CONSC-QUALIA-COMPOSITION-001`, `SFT-CONSC-RED-RECURRENCE-001` | `closed` |
+| `SFT-PRIOR-V2-178-CONSC-CROSS-MODAL-BINDING` | `qualia_resonance_composition` | `SFT-CONSC-CROSS-MODAL-QUALIA-001` | `closed` |
+| `SFT-PRIOR-V2-181-CONSC-ATTENTIONAL-CAPACITY` | `attention_availability` | `SFT-CONSC-ATTENTIONAL-CAPACITY-001`, `SFT-CONSC-ATTENTIONAL-FOCUS-001` | `closed` |
+| `SFT-PRIOR-V2-199-CONSC-REALIZATION-TEST` | `substrate_realization` | `SFT-CONSC-STRUCTURAL-CRITERION-001`, `SFT-CONSC-ARTIFICIAL-CONSCIOUSNESS-EVIDENCE-001` | `closed` |
+| `SFT-PRIOR-V2-247-CONSC-SELF-MODEL-DEPTH` | `finite_self_model` | `SFT-CONSC-SELF-MODEL-DEPTH-001` | `closed` |
+| `SFT-PRIOR-V2-253-CONSC-CESSATION-DISTINCTIONS` | `memory_temporal_identity` | `SFT-CONSC-CESSATION-001` | `closed` |
+| `SFT-PRIOR-V2-257-CONSC-MEASUREMENT-CORRESPONDENCE` | `observation_interior_observation` | `SFT-CONSC-MEASUREMENT-CONSCIOUSNESS-BOUNDARY-001` | `closed` |
+| `SFT-PRIOR-V2-281-CONSC-DETERMINISTIC-ACTION` | `cognition_inference_representation` | `SFT-CONSC-DETERMINED-AGENCY-001` | `closed` |
+| `SFT-PRIOR-V2-281-CONSC-DETERMINISM-SELF-OPACITY` | `self_observation_introspection` | `SFT-CONSC-DETERMINISM-SELF-OPACITY-001` | `closed` |
+| `SFT-PRIOR-LINEAGE-CONSC-QUALIA-RESONANCE` | `qualia_resonance_composition` | `SFT-CONSC-QUALITATIVE-DISTINCTION-001`, `SFT-CONSC-QUALITATIVE-IDENTITY-001`, `SFT-CONSC-QUALITATIVE-SIMILARITY-001`, `SFT-CONSC-QUALIA-RESONANCE-001`, `SFT-CONSC-QUALIA-RECURRENCE-001`, `SFT-CONSC-QUALIA-COMPOSITION-001` | `closed` |
+| `SFT-PRIOR-LINEAGE-CONSC-RED-OF-RED` | `red_of_red` | `SFT-CONSC-RED-STIMULUS-BOUNDARY-001`, `SFT-CONSC-RED-QUALITATIVE-IDENTITY-001`, `SFT-CONSC-RED-OF-RED-001`, `SFT-CONSC-RED-RECURRENCE-001`, `SFT-CONSC-RED-CONTROLS-001`, `SFT-CONSC-RED-EMPIRICAL-BOUNDARY-001` | `closed` |
+
+## Audit identity
+
+`sha256:712dea27f161b99a6a578c7622688c7218776ff4986d437ba629ea335e8289fb`
