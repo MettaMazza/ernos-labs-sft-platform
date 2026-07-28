@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-MICRO-MACRO-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:50ced9563edeb7641218077edc9ee461f56c3673a19cf78bdcafe1ed35920157",
+  "falsification_condition": "Reject an average as a causal collective agent or infer each individual from the aggregate.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bd507f624275d5e3f39d102edde097b6891ef2b2902c3926a928378318e6f1d0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e2e008ab7c65b4183aed71e6392ac814984ab2e54fd1de9a2788bea0d702cf71",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-MICRO-MACRO-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:06c70d94a14118897c5c3a4593dc4e8ef1dce1f020b07490293892de688704c8",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:55b4b05937929059153c7328453dc24f2967b4473d03b5a90bb92167c4bd1e38",
+    "prediction_seal_hash": "sha256:635ba7f5ed210cd229e9db4c40c27f823a28523d4d162b61a10058436b482c5c",
+    "program_hash": "sha256:3d11af4fbbccb4976487d197084039f3291c3d271c6bd874ed51373e963145ad",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:05d037005f79bad012a6558a38f84f75a9dc4aee371b23e6a6eb3501c62f04d3",
+    "target_material_present": false,
+    "trace_hash": "sha256:b7bf1534b3277a28c1f0bde98f379b4752fad2d6f5ec723fcc3809f8ed5ed833"
+  },
+  "measurement_receipt_hash": "sha256:5fc37bebbc182aff47b6233c7c40f69a33ed1a1ba28499118f9b66829c61421d",
+  "measurements": [
+    "sft-social-micro-macro-001-external-social-evidence: predicted social:agents-relations-aggregate-carrier__composition-and-distribution-relation__agent-states-links-weights-aggregation-loss-and-time-held__composition-rule-bounded; observed social:agents-relations-aggregate-carrier__composition-and-distribution-relation__agent-states-links-weights-aggregation-loss-and-time-held__composition-rule-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:04670e92aeac3dc50ce877cb702de9e8c43fa075fc5598577a4448a5df8a2e34",
+    "custodian_id": "SFT-EXP-SOCIAL-MICRO-MACRO-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:50ced9563edeb7641218077edc9ee461f56c3673a19cf78bdcafe1ed35920157",
+    "prediction_seal_hash": "sha256:635ba7f5ed210cd229e9db4c40c27f823a28523d4d162b61a10058436b482c5c",
+    "registered_target_identity_hash": "sha256:05d037005f79bad012a6558a38f84f75a9dc4aee371b23e6a6eb3501c62f04d3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:1c2019b5d2d6b2bfd3695bd4e0f495593cf4216a234fde594e36b2724aadc56d"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2994882565a7ebc4b98a68483553bf9bb856ba11d7edfb7f458a4b15cc64dabb"
+}

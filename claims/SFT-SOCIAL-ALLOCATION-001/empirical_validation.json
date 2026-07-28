@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-ALLOCATION-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8e8ec7b6c502fb196cefc45ba794a0792c678cea52dda0b682cf1d11d63006ae",
+  "falsification_condition": "Reject if distributed shares omit the stock, denominator or excluded claimants.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:4e03b056f4cfc946c94a41c585b4291f44704a9269148eab0ad86584493faf2d",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a327427687f1f2c6f440ccc4e8020042d44ec79375822f69a993cbe17bb1bff0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-ALLOCATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9ea70cd19901d00c89a8f7233c71651fb00b1e171843eee947d5fd4cc60e7541",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:59af98dad0cbcbbcf16d1ac3ad7c731a45cd4f3cb10e84a5a49e99f92437f6a8",
+    "prediction_seal_hash": "sha256:b24e4f96d01e3094870ba6d347bb6eb770261de6f06fee3b6ab0100301996709",
+    "program_hash": "sha256:83e6b2a1bda47c4312806d24d23598b25f11408a78886739f0c1d78e63597986",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7f6bf8f6d849a00716b84cc09d6407e7742c70eb36d2a2e747dd45101f6b4998",
+    "target_material_present": false,
+    "trace_hash": "sha256:951964dc0479c08b12673c73a12c3f91c602312474d2a2db254620917ee6d60f"
+  },
+  "measurement_receipt_hash": "sha256:454fd72d90c722393df5781f98ff72ac11e8813a653ca244ed0216120890f812",
+  "measurements": [
+    "sft-social-allocation-001-external-social-evidence: predicted social:resources-claimants-rule-outcome-carrier__rule-to-distribution-relation__stocks-claims-rule-priority-outcomes-losses-and-time-held__allocation-boundary-declared; observed social:resources-claimants-rule-outcome-carrier__rule-to-distribution-relation__stocks-claims-rule-priority-outcomes-losses-and-time-held__allocation-boundary-declared; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:fd6d779eb8f2bfdf596dea1b57b756407db1bd27a14ab9a39c2592f38f8d85cc",
+    "custodian_id": "SFT-EXP-SOCIAL-ALLOCATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:8e8ec7b6c502fb196cefc45ba794a0792c678cea52dda0b682cf1d11d63006ae",
+    "prediction_seal_hash": "sha256:b24e4f96d01e3094870ba6d347bb6eb770261de6f06fee3b6ab0100301996709",
+    "registered_target_identity_hash": "sha256:7f6bf8f6d849a00716b84cc09d6407e7742c70eb36d2a2e747dd45101f6b4998",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:8f04901d42f354bdec981a6e33434e3d47dba9a679098f0c9ed2780a6958e2e1"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d9ddcf56ef58df852c3b6b7836d0974cd0f40e695208ffc4702afd771e7f0519"
+}

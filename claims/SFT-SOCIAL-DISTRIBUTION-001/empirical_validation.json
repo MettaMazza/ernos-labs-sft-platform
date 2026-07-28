@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-DISTRIBUTION-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:437b4b82a19b79a913ed85b8aba3775fd7d308fece444242cdde9996e36003d6",
+  "falsification_condition": "Reject if an average, rank or index replaces the complete share distribution.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:2332d432eea768f524618339402fea1185034d1214a24e7b963358c4acd72240",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7418a32283f491574fbfec016dbfedeec3213c31c3d7c038c5075292a6414b03",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-DISTRIBUTION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:511687ba389b91801dbed1f57360b003e046ab4f66bd5fad403181a60ede0c88",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:690aabd4f5a0e7ac717104c22ac8926bd0d0af66a8465f9723f70e1b41cae0e8",
+    "prediction_seal_hash": "sha256:567b1ccd2b7b08eb78fd338f16eebec05cc8b7fc2eface7f7f558c824ea7cb45",
+    "program_hash": "sha256:4978e708acd0f3a2fe7d6bb4dff8d423e210e2f69c392a20685b46c7a85049d9",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:df5128118410f93280fd826adb83637747b5a979c837e84cef44607524d02afb",
+    "target_material_present": false,
+    "trace_hash": "sha256:2b06a004d21a7868420c4f68c8033a8ba12c390b2144aec235b63763895d7ede"
+  },
+  "measurement_receipt_hash": "sha256:98214805cc96327daa5555f7d9678b8567480d2265856cdccff3eca57a50f1ea",
+  "measurements": [
+    "sft-social-distribution-001-external-social-evidence: predicted social:population-resource-share-carrier__member-to-share-relation__population-frame-stock-shares-access-time-and-missing-held__distribution-population-bounded; observed social:population-resource-share-carrier__member-to-share-relation__population-frame-stock-shares-access-time-and-missing-held__distribution-population-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:a2b4dc7ab658de87fca9573c58b558a69c6b268c97b9e509e94393e46024f9ff",
+    "custodian_id": "SFT-EXP-SOCIAL-DISTRIBUTION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:437b4b82a19b79a913ed85b8aba3775fd7d308fece444242cdde9996e36003d6",
+    "prediction_seal_hash": "sha256:567b1ccd2b7b08eb78fd338f16eebec05cc8b7fc2eface7f7f558c824ea7cb45",
+    "registered_target_identity_hash": "sha256:df5128118410f93280fd826adb83637747b5a979c837e84cef44607524d02afb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:1a940d7e586cdca0b352c96e03246a07326851351506bb1847d6f752f8d90ad2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d0ad85eaa66d900468c7e7b34afa33159deb383dcfe5488c216521dbea44ee01"
+}

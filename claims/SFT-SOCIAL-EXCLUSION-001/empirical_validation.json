@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-EXCLUSION-001",
+  "data_source_ids": [
+    "VDEM-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:88fa4d13d9f3c3210c64779bfa75d51379b06bbcd0a2d74fd22fa53bbf90e4c9",
+  "falsification_condition": "Reject if only successful applicants define access or if absence from a system proves free choice.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a3f1f030299898f2a8ecf0ff5b775b85c704b5725baaf46aba9eee3cedbc5e6c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:c794c71eba7075de3b9ec5aaf088c368425413d86fe032322f7667fe444e2d2d",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-EXCLUSION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3b94df22530c431f241974dad60e4594144588697d6ebf53240ff9f183ba94ac",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:8be3490be3bfc514f6dfacf945805305d5920b6d1301e085012957ddda06853e",
+    "prediction_seal_hash": "sha256:3264ca3732ce2ba7ca54e792473e6a6acc427c3032a41e1c8dc2a155f3aae0b1",
+    "program_hash": "sha256:afa6089a27046aee27aeeeb9c3bbf4d15246a3d3766782f121291b618e960ce6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:627ca905835e0474565616796c8ef8631073ff04d9a911a51d63bb6619be2dea",
+    "target_material_present": false,
+    "trace_hash": "sha256:34f72f32b70afa2391c2c097d36124f80d723ac4fb75caaeb59185cf182c980a"
+  },
+  "measurement_receipt_hash": "sha256:164f4506da0b6bc23f07417a6bde7b5db2d994ecca5855e84252d6e22c4eb5b0",
+  "measurements": [
+    "sft-social-exclusion-001-external-social-evidence: predicted social:agent-opportunity-gate-decision-carrier__eligibility-access-and-denial-relation__criteria-gatekeeper-process-outcome-appeal-and-hidden-cases-held__access-system-bounded; observed social:agent-opportunity-gate-decision-carrier__eligibility-access-and-denial-relation__criteria-gatekeeper-process-outcome-appeal-and-hidden-cases-held__access-system-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:25f9428ba775ec0f79c668752a3c01e3da515b293d8ba78c76761e895ec979c1",
+    "custodian_id": "SFT-EXP-SOCIAL-EXCLUSION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:88fa4d13d9f3c3210c64779bfa75d51379b06bbcd0a2d74fd22fa53bbf90e4c9",
+    "prediction_seal_hash": "sha256:3264ca3732ce2ba7ca54e792473e6a6acc427c3032a41e1c8dc2a155f3aae0b1",
+    "registered_target_identity_hash": "sha256:627ca905835e0474565616796c8ef8631073ff04d9a911a51d63bb6619be2dea",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:2f4416e0e94206b971b6a1ba35dc43bbe9de3485917768f6f430ff2f6c83ca24"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:02341d7fa6241cee664c3be50f2ed4dbad68b9fcbbef88a39704a55442e22bc3"
+}

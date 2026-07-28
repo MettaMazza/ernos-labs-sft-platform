@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-EXCHANGE-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:51aea47cef71b919e94b7f293f4f37f9abac48dd7cac26ec107531e11eb7918c",
+  "falsification_condition": "Reject if a price alone describes rights, coercion, quality or distribution.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ce85e4742d3240cad7a14a63d857b634e27d06e42cc5ff48f480627913330e7f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fcc25b05ab540c82d93d227decb66fad315827ccd1885f2c0910d7b2d62e2127",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-EXCHANGE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c09ffad1df61af940552fb3a65fb3dabf29374e4d9f75477926a514382dc75ba",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e06aabf8d254a673ba5d69ef842a1fcf6d7deeadfd97d0b8a8e877499097daee",
+    "prediction_seal_hash": "sha256:762e58c77a3838f5b1205a58c850a9915b942a922554cfbe5db9793dafb89969",
+    "program_hash": "sha256:bc983ddb46873b8e54db30477adac767d4b69e8369275023e4922706fa15fa4d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0fb20dd29360c45ead7de1cb9b50907aedb0e25f09a51cfae27829e3baa07dac",
+    "target_material_present": false,
+    "trace_hash": "sha256:b31f692f9f9670a742732ab5a0c7e2acabf8884491fb8bf7d8aa1289259cd9d4"
+  },
+  "measurement_receipt_hash": "sha256:b48b70f427daef25a2db3b8ac810490171005f41be93abfdb7166448c9f07075",
+  "measurements": [
+    "sft-social-exchange-001-external-social-evidence: predicted social:parties-items-rights-transfer-carrier__reciprocal-or-directed-transfer-relation__parties-items-rights-terms-time-costs-and-failure-held__exchange-event-bounded; observed social:parties-items-rights-transfer-carrier__reciprocal-or-directed-transfer-relation__parties-items-rights-terms-time-costs-and-failure-held__exchange-event-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:71b0f5535cc7dd15f6b84bf6fb9f46a6082f608bc3ec8a5239380afb0a9e0807",
+    "custodian_id": "SFT-EXP-SOCIAL-EXCHANGE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:51aea47cef71b919e94b7f293f4f37f9abac48dd7cac26ec107531e11eb7918c",
+    "prediction_seal_hash": "sha256:762e58c77a3838f5b1205a58c850a9915b942a922554cfbe5db9793dafb89969",
+    "registered_target_identity_hash": "sha256:0fb20dd29360c45ead7de1cb9b50907aedb0e25f09a51cfae27829e3baa07dac",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e4968be441a35893a3406a051fc826c8d25441e50f22e008c3da21a480e0ed0a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d8e8b8ca8aa35447912697c936ca7dbe3ff3272094698b0138b4d77d48318da7"
+}

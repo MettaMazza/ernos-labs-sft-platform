@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-SOCIAL-NETWORK-001",
+  "data_source_ids": [
+    "GSS-NORC-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:103d73838b1fff792e6236cdc9c412b58e44f389fe1f88c098a76480e3b13059",
+  "falsification_condition": "Reject an abstract edge as a social tie without measurement or infer absent links outside the sample.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0a35a7c29241847dc202c37d25eef0b890bdfc2f10a8f67b5acf00e728b99255",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6e9201f8b1a088189b09569649231064596159533e88f4b467c32e6b83975cbd",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-SOCIAL-NETWORK-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:85874f11509d0594a16fa4c87b3dfb3615ec0d2e3a546306041641858ac707c7",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ba8dc0a3a02a3f54af82f5f5929d84bd7097acd16f5cd9bb5a26c680b04b44c1",
+    "prediction_seal_hash": "sha256:558d8bc007fb3527c0d1d9031a880dcc79346354a29b6fddd0fb67986ca26862",
+    "program_hash": "sha256:0ca5feb2e4dc81ba42419b80facfb689f9a9c3f6ce3270a9295d0d55385a7f3b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:cdf2175e05d32f11988844f05c6cf5bd17a4c4e5ce908b198bb69f9a07e56559",
+    "target_material_present": false,
+    "trace_hash": "sha256:be222faa9ea16cb4510ee5db2b342ea06860c3ad4a266e1b328ab8305521241e"
+  },
+  "measurement_receipt_hash": "sha256:e30d84f15853afe2b8df59df249a518df5e8e011a16427b0d918a4cbfe69e66f",
+  "measurements": [
+    "sft-social-social-network-001-external-social-evidence: predicted social:agents-typed-links-time-carrier__graph-and-interaction-relation__nodes-link-types-direction-weights-time-and-missing-held__network-construction-bounded; observed social:agents-typed-links-time-carrier__graph-and-interaction-relation__nodes-link-types-direction-weights-time-and-missing-held__network-construction-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:fd64080af69ee596b31e24bda67d4cce2b459aaf771b4ae326cccd3268e29dfc",
+    "custodian_id": "SFT-EXP-SOCIAL-SOCIAL-NETWORK-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:103d73838b1fff792e6236cdc9c412b58e44f389fe1f88c098a76480e3b13059",
+    "prediction_seal_hash": "sha256:558d8bc007fb3527c0d1d9031a880dcc79346354a29b6fddd0fb67986ca26862",
+    "registered_target_identity_hash": "sha256:cdf2175e05d32f11988844f05c6cf5bd17a4c4e5ce908b198bb69f9a07e56559",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ceaad402e3b160c66247a0f382d604caa0e7de001c54c0382375a05f4287b9c7"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:31009db1a0f6ef2e5446e5a37ce6c1f8fc68e72f194e00817b46d23364e4c963"
+}

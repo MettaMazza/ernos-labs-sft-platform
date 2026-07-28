@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SOCIAL-MOBILITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:b216fb37e4a4e1c48adec8af8263d5ad38c591336b07c17fbb3ab124f9b5e53b"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:9c36cf5dc1b4dc97a8abb848118b65e41df6d478ba4861016697bad9b92655b0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7affc7124814244e4f0cebacaecb00e07ea718642084bf9a4be41d473ae516f4"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:7b3465cf3f88d7d08f6884aaab255c3e74941a83c024fd1cd9209a65cf1f0853"
+    }
+  ]
+}

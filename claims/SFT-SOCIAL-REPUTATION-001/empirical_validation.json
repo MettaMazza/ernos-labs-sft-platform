@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-REPUTATION-001",
+  "data_source_ids": [
+    "GSS-NORC-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:186be084dd8782a711becae796b8b89152a43d7a726daa0e1eab2277d6dcafa5",
+  "falsification_condition": "Reject if popularity or repeated rumor becomes verified character.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:775554b9c31c41364978b4041471516b7149f219949be22165b6ad7cc631433f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:551b668a944444666b502f27ce63144bbb1eeca2be86c9dcf5c37433cfb6581b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-REPUTATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4fef95269f64858b3019cc84a853dee6f4a6472d912f8c9deb63f912bb1f043b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:025ae97ad8a08f19081e0a142f15996b15b7559cb9663a7fbc86ab44f006f78b",
+    "prediction_seal_hash": "sha256:c4d65c04497c953736d5c62680232af6abad6aa34f09c6e34846bda1a92f4d64",
+    "program_hash": "sha256:6402be86e9635228e1d16a0479484160e6b88660f4a88250a3a069f7d715fb5b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5e474ab17627513a44108616eea2b5bf68ecf86f57b0d74e74e53d44fa9af24e",
+    "target_material_present": false,
+    "trace_hash": "sha256:a93d736d1ed43a3e6a585085513d1e6f60312cc9db59f339a1b5fcf811c0f895"
+  },
+  "measurement_receipt_hash": "sha256:daf2229c68beb4355a5ec438efd6e1506b65b69fd650d2795dd86617129efa95",
+  "measurements": [
+    "sft-social-reputation-001-external-social-evidence: predicted social:subject-observers-reports-carrier__report-aggregation-and-transmission-relation__sources-audiences-content-time-conflict-and-incentives-held__reputation-network-bounded; observed social:subject-observers-reports-carrier__report-aggregation-and-transmission-relation__sources-audiences-content-time-conflict-and-incentives-held__reputation-network-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:710db8b6f78da161618f3bdeec1481558b5f8b40c0244caf79016e95bd148ea3",
+    "custodian_id": "SFT-EXP-SOCIAL-REPUTATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:186be084dd8782a711becae796b8b89152a43d7a726daa0e1eab2277d6dcafa5",
+    "prediction_seal_hash": "sha256:c4d65c04497c953736d5c62680232af6abad6aa34f09c6e34846bda1a92f4d64",
+    "registered_target_identity_hash": "sha256:5e474ab17627513a44108616eea2b5bf68ecf86f57b0d74e74e53d44fa9af24e",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:732b4ca8a8e5e19cd0dd509e05c5bb73277424e56b96bda9867828a184e4eb1e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1bf73d3007311d972eaf0455d23deb8b1d194f4c82d534794ddb0262445ed717"
+}

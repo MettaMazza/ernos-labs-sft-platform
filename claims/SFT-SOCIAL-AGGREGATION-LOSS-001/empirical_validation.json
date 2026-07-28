@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-AGGREGATION-LOSS-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:abcd96626fda66f8ef820ce4a3a388af8b6df84edf75b3e4915d50b10813929b",
+  "falsification_condition": "Reject ecological or atomistic inference without a cross-level bridge.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:49e9476c210ae98e76622b8a156d93e2cf3800601676b15b4244c52748d139ff",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:c19d37b18147263efd39d532a7053dccff70d4a9af1e877012815fd390b90021",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-AGGREGATION-LOSS-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:1863766adf5079c20e7268b5de8bae3739f947d257258ba511681246fad6eacc",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1b2b5260ad114d48e1b2f58af413982791a8629f5ef217903029d457ebc9d514",
+    "prediction_seal_hash": "sha256:10fb7b14b6051688b750961cfe701d8b4dabf5ce9c589c623bc0a2d3888ad8d7",
+    "program_hash": "sha256:107de88edaa0b17e23c4542ccde1c17548eed551b9b03ef9506431518ceb8429",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e542237c23612f9e8eea9d81751d203f1b56a7fab9b3378693ba6fc1db35328f",
+    "target_material_present": false,
+    "trace_hash": "sha256:d32ee6ace61cc8bcc7487edbe31e27ca1e2cd5bc5bc8185cbb958fd13f41b2e3"
+  },
+  "measurement_receipt_hash": "sha256:4a1269f0081ef3759122cbfa326a047d5c7e992e6e09064a5aad247cbac30c71",
+  "measurements": [
+    "sft-social-aggregation-loss-001-external-social-evidence: predicted social:individual-records-aggregate-carrier__many-to-one-summary-relation__source-rows-rule-distribution-loss-and-uncertainty-held__aggregation-level-bounded; observed social:individual-records-aggregate-carrier__many-to-one-summary-relation__source-rows-rule-distribution-loss-and-uncertainty-held__aggregation-level-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c0b8f509b8229c303745a7588fb0b6fcf4c0c705c51e5f8bf6f0dc6c1e302404",
+    "custodian_id": "SFT-EXP-SOCIAL-AGGREGATION-LOSS-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:abcd96626fda66f8ef820ce4a3a388af8b6df84edf75b3e4915d50b10813929b",
+    "prediction_seal_hash": "sha256:10fb7b14b6051688b750961cfe701d8b4dabf5ce9c589c623bc0a2d3888ad8d7",
+    "registered_target_identity_hash": "sha256:e542237c23612f9e8eea9d81751d203f1b56a7fab9b3378693ba6fc1db35328f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f63ceeec2167a8f9ccd1c106fb69f1d94a44a12d25a9344021fb515074d2d080"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b4bd4bd7c53a3187caef27b8737cc88c11ad9b1cc5ca3671fdd645046f88af8e"
+}

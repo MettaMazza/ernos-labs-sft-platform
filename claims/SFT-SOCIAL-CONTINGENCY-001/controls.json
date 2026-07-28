@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SOCIAL-CONTINGENCY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:fdcb0cc1166386969523bbb5327eb7af669aecd6a5fc9f74ecba8f06c68e6348"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e10c02ae87acefc2b6f10fce568f045edce30db868e44f0e39c0b4a9eccb6214"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:eda531fa9881a6550db12dea5e60a0727e1a7bdfb93bdb9a416562999c972197"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:1a3f6ec578e3a07645f898f0a98d885b2cf0d2d94e373cafcd9e00d46dbc7b01"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-MISINFORMATION-001",
+  "data_source_ids": [
+    "GSS-NORC-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:93ec7b189a91fd71f06c2e0d2b532abba3b0049020a64588b67d631cadc93e2e",
+  "falsification_condition": "Reject if dissent is labelled false by status or if later correction erases prior reach.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:43ec2cf2e15e9a938211befd35fdb11fc73be56371aa1f93ffe45cbf77d82019",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0f3194ad2cd9fe707ba29f8f8aaf4cfc3b66e94df55f46d705194739dc6a9303",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-MISINFORMATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9917f25148107dfbb19010bdc7fb0ff20643204bacf25b51630daf6ed05f6842",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:26a46c9f251f3bf87cef41e6d84068437babb9f508df780d000190745360cad5",
+    "prediction_seal_hash": "sha256:e4df37fa461aa62f1da6085bae2c24c54771da4e487c74a455b4ca05a0dee8ea",
+    "program_hash": "sha256:7ea279c534f62b621b2e75f8b931aff7676d0f8fa952664de356130f39b6c151",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f53a2162abf9fddddead3667f7d7289619062e9efa714de7e978af755bd6faa8",
+    "target_material_present": false,
+    "trace_hash": "sha256:53341425c9b526d7f38b1a97a5ee38dd37db9199e58e2b381913850938407aae"
+  },
+  "measurement_receipt_hash": "sha256:7fd295f87ac507e48a0f003ce0c53ad460d9ca3eaf1b36547a1d51938933d1a3",
+  "measurements": [
+    "sft-social-misinformation-001-external-social-evidence: predicted social:claim-source-channel-evidence-carrier__claim-to-support-comparison__versions-sources-support-corrections-reach-and-harm-held__claim-and-time-bounded; observed social:claim-source-channel-evidence-carrier__claim-to-support-comparison__versions-sources-support-corrections-reach-and-harm-held__claim-and-time-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d18ce1e33465bade4b54e086c7840f5fb3cb59c5e79d564cdb004244ccc1c8d0",
+    "custodian_id": "SFT-EXP-SOCIAL-MISINFORMATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:93ec7b189a91fd71f06c2e0d2b532abba3b0049020a64588b67d631cadc93e2e",
+    "prediction_seal_hash": "sha256:e4df37fa461aa62f1da6085bae2c24c54771da4e487c74a455b4ca05a0dee8ea",
+    "registered_target_identity_hash": "sha256:f53a2162abf9fddddead3667f7d7289619062e9efa714de7e978af755bd6faa8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e31c9f1ed6fb6dff864a8e3a7a0c0fac6924808c11016263968d7539e7c93b93"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:33987505914509e27797b58608a0edae897eb409b1ba1062a7e1e74df0816580"
+}

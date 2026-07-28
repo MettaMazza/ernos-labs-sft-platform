@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-SOCIAL-MOBILITY-001",
+  "data_source_ids": [
+    "WORLD-BANK-WDI-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5c912ac58df9999e1127085e72995e6c65e22c4d0a584813bea718c2797f1d87",
+  "falsification_condition": "Reject cross-sectional difference as individual mobility or omit those lost to follow-up.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d81ec90ce304535eb021dcc16885d40971a5a7ee4fa7970ddbcac5d5fd7b57ca",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:520e248e29912013aaf660553d0090438be3159f9a215bea450f28a492af4754",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-SOCIAL-MOBILITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a1306892c344c1ebdfb28cff5869c9a173f06888d338b6cc76206152a520933c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cba76d4e590676f6d296aba49ea79aa7a7959993b835ef70d90c5706f2e10cd1",
+    "prediction_seal_hash": "sha256:adf10bc274c242d7654ebbd7b18b66b5c59161a81129cf421c59b5eb7b0c54c9",
+    "program_hash": "sha256:82ce5d1bb1885d464dad80716b8dd4be2691c6f90db96e28ac4ff7b93b5a0ea7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2878f9168f392687a11d7f1c7adcda7855549df43927634a6291543d29016b51",
+    "target_material_present": false,
+    "trace_hash": "sha256:3cefc3f003f918e5a736fb544739854acbf8fb209077c8de8b3c5dce04f4ea3d"
+  },
+  "measurement_receipt_hash": "sha256:1f663fb703244cdca6f369d244b6661717e57b7333ee8be8447b699ff7f9108d",
+  "measurements": [
+    "sft-social-mobility-001-external-social-evidence: predicted social:agent-origin-destination-time-carrier__state-transition-and-opportunity-relation__cohort-frame-origin-destination-path-attrition-and-time-held__cohort-and-measure-bounded; observed social:agent-origin-destination-time-carrier__state-transition-and-opportunity-relation__cohort-frame-origin-destination-path-attrition-and-time-held__cohort-and-measure-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7e91b50a8d581baf4e82c77284c93a5e7f9d5e20abf24a082c8059065d496964",
+    "custodian_id": "SFT-EXP-SOCIAL-MOBILITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:5c912ac58df9999e1127085e72995e6c65e22c4d0a584813bea718c2797f1d87",
+    "prediction_seal_hash": "sha256:adf10bc274c242d7654ebbd7b18b66b5c59161a81129cf421c59b5eb7b0c54c9",
+    "registered_target_identity_hash": "sha256:2878f9168f392687a11d7f1c7adcda7855549df43927634a6291543d29016b51",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d6f0af02ac9ae70b9e5bfcc74507f48434d1572193bc4c0cc13acdff3076a71d"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:27674d075ad945e9ed09dcfcfd45533672fcf7379dec377c005f18a96b70d9db"
+}
