@@ -44,9 +44,14 @@ Git provenance makes the mismatch exact. Commit `27fab0ce` introduced the
 published the 349-claim Physics v1.1 surface with its 488/488 atomic audit on 26
 July, but did not version-update that historical test. The focused file now
 reports two passing tests and six failures, all within those superseded
-publication-state assertions. Correcting the test requires Maria Smith's
-explicit authorization because validation files must never be changed merely
-to obtain a pass.
+publication-state assertions.
+
+Maria Smith explicitly authorized factual alignment without changing the engine
+or validation logic. Only the obsolete test expectations and mocked audit
+fixture were aligned to the admitted 349-claim state. A new negative case proves
+that a hypothetical 487/488 Physics ownership surface still halts. The focused
+result is now nine of nine passing; the engine and verification-authority seals
+remain unchanged.
 
 The machine-readable companion record contains the complete branch table and
 the exact distinction between branch-specific foundational reconciliation and

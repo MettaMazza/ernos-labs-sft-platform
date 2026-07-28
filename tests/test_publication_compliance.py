@@ -8,7 +8,6 @@ from unittest.mock import patch
 
 from sft import publication_compliance
 from sft.publication_compliance import (
-    CurrentPublicationHalt,
     audit_branch,
     require_current_publication_ready,
 )
@@ -18,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicationComplianceTests(unittest.TestCase):
-    def test_closed_formal_branches_are_ready_and_physics_ownership_remains_blocked(self) -> None:
+    def test_all_currently_closed_branches_are_ready(self) -> None:
         foundation = require_current_publication_ready(ROOT, "foundation")
         self.assertTrue(foundation.current_publication_ready)
         self.assertEqual(foundation.live_claim_count, 16)
@@ -30,28 +29,28 @@ class PublicationComplianceTests(unittest.TestCase):
                 self.assertTrue(result.current_publication_ready)
                 self.assertEqual(result.blockers, ())
 
-        physics = audit_branch(ROOT, "physics")
-        self.assertFalse(physics.current_publication_ready)
-        self.assertEqual(physics.live_claim_count, 285)
-        self.assertTrue(any("categorical ownership" in row for row in physics.blockers))
+        physics = require_current_publication_ready(ROOT, "physics")
+        self.assertTrue(physics.current_publication_ready)
+        self.assertEqual(physics.live_claim_count, 349)
+        self.assertEqual(physics.blockers, ())
 
         for branch in (
             "chemistry",
             "materials",
         ):
             with self.subTest(branch=branch):
-                result = audit_branch(ROOT, branch)
-                self.assertFalse(result.current_publication_ready)
+                result = require_current_publication_ready(ROOT, branch)
+                self.assertTrue(result.current_publication_ready)
                 self.assertTrue(result.archive_integrity_boundary_preserved)
-                with self.assertRaises(CurrentPublicationHalt):
-                    require_current_publication_ready(ROOT, branch)
+                self.assertEqual(result.blockers, ())
 
-    def test_physics_categorical_inventory_equals_live_claims_but_does_not_close_prior_ownership(self) -> None:
+    def test_physics_categorical_inventory_equals_live_claims_and_closes_prior_ownership(self) -> None:
         result = audit_branch(ROOT, "physics")
-        self.assertEqual(result.live_claim_count, 285)
-        self.assertEqual(result.frozen_inventory_claim_count, 285)
-        self.assertEqual(result.archival_paper_claim_count, 285)
-        self.assertTrue(any("categorical ownership" in row for row in result.blockers))
+        self.assertEqual(result.live_claim_count, 349)
+        self.assertEqual(result.frozen_inventory_claim_count, 349)
+        self.assertEqual(result.archival_paper_claim_count, 349)
+        self.assertTrue(result.current_publication_ready)
+        self.assertEqual(result.blockers, ())
 
     def test_incomplete_branch_specific_review_halts_successor(self) -> None:
         real_read = publication_compliance._read
@@ -79,7 +78,37 @@ class PublicationComplianceTests(unittest.TestCase):
             result.blockers,
         )
 
-    def test_cli_enforcement_blocks_incomplete_physics_ownership(self) -> None:
+    def test_incomplete_physics_atomic_ownership_halts_successor(self) -> None:
+        real_read = publication_compliance._read
+
+        def read_with_incomplete_physics_audit(path: Path):
+            if path.name == "physics_v1_v2_atomic_ownership.json":
+                return {
+                    "source_surface": {"total_source_rows_reviewed": 763},
+                    "summary": {
+                        "physics_owned_atom_count": 488,
+                        "same_strength_closed_atom_count": 487,
+                        "same_strength_open_atom_count": 1,
+                        "unique_atom_ids": True,
+                        "all_declared_composite_rows_decomposed": True,
+                        "publication_blocked": True,
+                    },
+                    "audit_status": "open_blocking",
+                }
+            return real_read(path)
+
+        with patch(
+            "sft.publication_compliance._read",
+            side_effect=read_with_incomplete_physics_audit,
+        ):
+            result = audit_branch(ROOT, "physics")
+        self.assertFalse(result.current_publication_ready)
+        self.assertIn(
+            "Physics atomic ownership review or same-strength closure is incomplete",
+            result.blockers,
+        )
+
+    def test_cli_reports_completed_physics_ownership(self) -> None:
         completed = subprocess.run(
             (
                 sys.executable,
@@ -93,12 +122,13 @@ class PublicationComplianceTests(unittest.TestCase):
             capture_output=True,
             check=False,
         )
-        self.assertNotEqual(completed.returncode, 0)
-        self.assertIn("current publication gate halted for physics", completed.stderr)
+        self.assertEqual(completed.returncode, 0)
+        self.assertIn("physics: READY; live=349; frozen=349; paper=349", completed.stdout)
 
-    def test_zenodo_publish_compliance_precondition_blocks_physics(self) -> None:
-        with self.assertRaises(CurrentPublicationHalt):
-            require_current_publication_ready(ROOT, "physics")
+    def test_zenodo_publish_compliance_precondition_accepts_completed_physics(self) -> None:
+        result = require_current_publication_ready(ROOT, "physics")
+        self.assertTrue(result.current_publication_ready)
+        self.assertEqual(result.blockers, ())
 
     def test_invalid_branch_is_rejected(self) -> None:
         with self.assertRaises(ValueError):
@@ -123,6 +153,19 @@ class PublicationComplianceTests(unittest.TestCase):
                 return {
                     "assignment_complete": True,
                     "branch_summary": {"physics": {"status": "closed_same_strength"}},
+                }
+            if name == "physics_v1_v2_atomic_ownership.json":
+                return {
+                    "source_surface": {"total_source_rows_reviewed": 763},
+                    "summary": {
+                        "physics_owned_atom_count": 1,
+                        "same_strength_closed_atom_count": 1,
+                        "same_strength_open_atom_count": 0,
+                        "unique_atom_ids": True,
+                        "all_declared_composite_rows_decomposed": True,
+                        "publication_blocked": False,
+                    },
+                    "audit_status": "current_evidence_closed_extension_open",
                 }
             raise AssertionError(path)
 
@@ -159,6 +202,19 @@ class PublicationComplianceTests(unittest.TestCase):
                 return {
                     "assignment_complete": True,
                     "branch_summary": {"physics": {"status": "closed_same_strength"}},
+                }
+            if name == "physics_v1_v2_atomic_ownership.json":
+                return {
+                    "source_surface": {"total_source_rows_reviewed": 763},
+                    "summary": {
+                        "physics_owned_atom_count": 1,
+                        "same_strength_closed_atom_count": 1,
+                        "same_strength_open_atom_count": 0,
+                        "unique_atom_ids": True,
+                        "all_declared_composite_rows_decomposed": True,
+                        "publication_blocked": False,
+                    },
+                    "audit_status": "current_evidence_closed_extension_open",
                 }
             raise AssertionError(path)
 
