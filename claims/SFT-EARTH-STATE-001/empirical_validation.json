@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-STATE-001",
+  "data_source_ids": [
+    "NASA-EARTHDATA-SEARCH-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NOAA-GHCND-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8f7a1a3e7e2b47d7d81cac853ebbf4ace4fb189e44505763b68b1f039883d2ac",
+  "falsification_condition": "Reject if favorable variables alone define the state or if missing and outside-scope entries are collapsed into absence.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9911f98e50e7fbbbed053e4063e95d7a14c4511125f5076021199b61f4b933b7",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b457eb5d34c3aeecb98a4db23a3f687ac7169fac21931994454b31650e9040df",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-STATE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6acd645522f294c9575136c684a729bafc7c52acde52f84c47773882468e9c81",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:60c503df484db623c0c2adadddd4fb60581f551b8c44d49ea2e0f1c28e395f4e",
+    "prediction_seal_hash": "sha256:bc046ecf504b304ff5b466707a9ee3362083cdb363569e096d0529e895c8b0ec",
+    "program_hash": "sha256:78322d228f09ee9d4c9f28db06bb4bd9f7bdb35f10e5b0389eb2bb73b37123f0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4d2fd44aab7f7ccc58e2c643833addd5622bbafe2f85c7f62427c1fef4261410",
+    "target_material_present": false,
+    "trace_hash": "sha256:7d4c521ad05d827ff1292013e00b9aead43803bb83d6b7b3f671704e84491dde"
+  },
+  "measurement_receipt_hash": "sha256:43e968a124e6707b597faf773311042669ec814374e9e682ec0d2f4bdbda17e0",
+  "measurements": [
+    "sft-earth-state-001-external-earth-evidence: predicted earth:time-indexed-complete-reservoir-carrier__stock-relation-state-assignment__stocks-relations-missingness-and-time-held__registered-state-vector-bounded; source-derived earth:time-indexed-complete-reservoir-carrier__stock-relation-state-assignment__stocks-relations-missingness-and-time-held__registered-state-vector-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c31ec0ae2be11076756cf0210aa1164ed8b6738fcce204b9faf9cade1d840aed",
+    "custodian_id": "SFT-EXP-EARTH-STATE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:8f7a1a3e7e2b47d7d81cac853ebbf4ace4fb189e44505763b68b1f039883d2ac",
+    "prediction_seal_hash": "sha256:bc046ecf504b304ff5b466707a9ee3362083cdb363569e096d0529e895c8b0ec",
+    "registered_target_identity_hash": "sha256:4d2fd44aab7f7ccc58e2c643833addd5622bbafe2f85c7f62427c1fef4261410",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a46d376a099b9505eb4a9ad6f4c40c2f766d1784007d341679e9d1ecef325443"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:05e87363c9d2f222a794bd5c2404310f0e58558033c060200d9937237c71eb40"
+}

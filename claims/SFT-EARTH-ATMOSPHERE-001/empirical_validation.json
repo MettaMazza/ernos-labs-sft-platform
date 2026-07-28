@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-ATMOSPHERE-001",
+  "data_source_ids": [
+    "NOAA-GHCND-001",
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "EPA-AIRDATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:70b241d57ba847aab729d7c579e2db679f68e86b7ce2d7edb3a9bbbb70608cc7",
+  "falsification_condition": "Reject if a global mean erases vertical, regional or temporal structure required by the claim.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:54bea25abd8f70c4ccbb2c9ffa680d339b5d1e28e9dd44ebaa1fafad39b3623a",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:63c0aac3d08d004f00bc4ee2df145b8dd79eca159a8df2b2fbde2d8503b99993",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-ATMOSPHERE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:403a60cea1534a9520cf03d9bac36e1d6db676bd15ebf480cd4ed3abec172c8d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:401f18885ab676d114430ac7f38474901ae02ed8e64c675e2b50b01ea3082606",
+    "prediction_seal_hash": "sha256:6f7deced37d959663856164e0275b7d77d8ec873279d8cf87c1b7b5c23db2791",
+    "program_hash": "sha256:0ba3b372d9d49449c0f3064cc751c21ee16527157d05e2a9e1221a6356ab1576",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:adc0f5cf42a8932fac82b3f439a73bf216b4323c185577e38761f087611ff5d3",
+    "target_material_present": false,
+    "trace_hash": "sha256:3aede00ba37ee712a3ed67c3efc7a093190d211292f51510333d660215791216"
+  },
+  "measurement_receipt_hash": "sha256:ef13d3484b636d42bee2326022939e8f8e3b8b8eeead5f846dd0666f79787e96",
+  "measurements": [
+    "sft-earth-atmosphere-001-external-earth-evidence: predicted earth:bounded-gas-aerosol-energy-carrier__layered-composition-motion-and-exchange-relation__composition-state-height-boundaries-and-time-held__atmospheric-observation-bounded; source-derived earth:bounded-gas-aerosol-energy-carrier__layered-composition-motion-and-exchange-relation__composition-state-height-boundaries-and-time-held__atmospheric-observation-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:8eaad102bb64bc65adb768c797f690adaeac164e7df1d9f49c4ee7628558d454",
+    "custodian_id": "SFT-EXP-EARTH-ATMOSPHERE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:70b241d57ba847aab729d7c579e2db679f68e86b7ce2d7edb3a9bbbb70608cc7",
+    "prediction_seal_hash": "sha256:6f7deced37d959663856164e0275b7d77d8ec873279d8cf87c1b7b5c23db2791",
+    "registered_target_identity_hash": "sha256:adc0f5cf42a8932fac82b3f439a73bf216b4323c185577e38761f087611ff5d3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e5a07557ce8b1e2423f238bc4c4d1105a7ca9c243e1d791c2af2ad0c721b0d1b"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:091ecb00e6fdc2b8458de25810adee0f79ee15d0b3bd25f87c7e723525873f68"
+}

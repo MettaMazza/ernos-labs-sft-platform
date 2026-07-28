@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-AIR-SEA-EXCHANGE-001",
+  "data_source_ids": [
+    "NOAA-WOD-001",
+    "ARGO-DATA-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:851f0413471400485ae10ffd7a655cbe1b1b2881cd6987d0b176d00ca0b2f1f1",
+  "falsification_condition": "Reject if a transfer coefficient is fitted to close the budget and then presented as a forced Earth law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a84ad20b4f72a119a804923391c759257c076c7a49ef3a0a9d2be54d9ca30cc8",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:82d5aa05f1685e4c20fb402316fa7365963b61d6f5333e966965ec5d494a0ae5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-AIR-SEA-EXCHANGE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7a28cc3eb7fe22e65b77cb9c6904f6c34a895b9c2891793e6ba8dcdc0f89f35b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:70b34ebe57e02795f35a76cf083b10ac35c50778fee430177da0354bdff1234e",
+    "prediction_seal_hash": "sha256:6fdebd641a858234a42460b68157580c426bb43cda19a2c454f98389c12de494",
+    "program_hash": "sha256:f164895d6097af07d3b278f82bb15c882b195e2d628d1b035dd211a4e2332a46",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:225f7e70f32be56712c5a860cddfb8fb7cccc86a4e2326fc2f154f23d7cbfbd4",
+    "target_material_present": false,
+    "trace_hash": "sha256:5285c347ad862879f1c9e38f70d4f05512bc6e1fffd374c0336343d5bb1ba7de"
+  },
+  "measurement_receipt_hash": "sha256:eb5139deb5e281d2cb61e221078e70f68de9d4f4f354c8e172804c845421d76b",
+  "measurements": [
+    "sft-earth-air-sea-exchange-001-external-earth-evidence: predicted earth:atmosphere-ocean-interface-carrier__two-way-material-energy-transfer-relation__species-energy-area-direction-state-and-time-held__interface-method-bounded; source-derived earth:atmosphere-ocean-interface-carrier__two-way-material-energy-transfer-relation__species-energy-area-direction-state-and-time-held__interface-method-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5b90d8dad9bbc128d26415c7a299c8adbe055419725957a995a328ee741a4bdb",
+    "custodian_id": "SFT-EXP-EARTH-AIR-SEA-EXCHANGE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:851f0413471400485ae10ffd7a655cbe1b1b2881cd6987d0b176d00ca0b2f1f1",
+    "prediction_seal_hash": "sha256:6fdebd641a858234a42460b68157580c426bb43cda19a2c454f98389c12de494",
+    "registered_target_identity_hash": "sha256:225f7e70f32be56712c5a860cddfb8fb7cccc86a4e2326fc2f154f23d7cbfbd4",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e683e09041e8bac9d33b35fa292f85097dce14fe77ca7d256bc2d76ae9cfbad1"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b0b4d5facf1606fca98162ea02d14761da990401ca2f24e01ed038317ef3dfff"
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        
+    <meta name="description" content="Use USGS data to view water conditions near you, subscribe to only see data you are interested in, explore over 135 years of historical data, or access the data programmatically through APIs">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon_device_specific/apple-touch-icon.7cb25f47.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon_device_specific/favicon-32x32.1ea1e21c.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon_device_specific/favicon-16x16.633abc84.png">
+        <link rel="manifest" href="/static/img/favicon_device_specific/site.7009dd5e.webmanifest">
+        <link rel="mask-icon" href="/static/img/favicon_device_specific/safari-pinned-tab.svg" color="#007150">
+        <link rel="shortcut icon" href="/static/img/favicon_device_specific/favicon.01908d3e.ico">
+        <link rel="preload" as="font" type="font/woff2" crossorigin href="/static/fonts/source-sans-pro/sourcesanspro-regular-webfont.d67b548b.woff2" />
+        <link rel="preload" as="font" type="font/woff2" crossorigin href="/static/fonts/source-sans-pro/sourcesanspro-bold-webfont.f12f6a2f.woff2" />
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- WDFN Analytics start -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-564ZVPQ');</script>
+        <!-- End Google Tag Manager -->
+        <!-- WDFN Analytics end -->
+
+        <!--USGS Analytics start -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TKQR8KP');
+        </script>
+        <!--USGS Analytics end -->
+
+        <title>
+            USGS Water Data for the Nation
+        </title>
+
+        <script src="/static/scripts/uswds-init.min.7e415fc7.js"></script>
+
+        
+    
+        <link rel="stylesheet" href="/static/home-page-BiVKp9ru.36861ee3.css" />
+    
+        <link rel="stylesheet" href="/static/StateTerritorySelection-BDp9_i5E.5cd37212.css" />
+    
+        <link rel="stylesheet" href="/static/WdfnMultiselect-DUy2LeYu.ce1598f9.css" />
+    
+
+
+        
+<script type="application/javascript">
+    window.CONFIG = {
+        STATIC_URL: '/static/',
+        MY_FAVORITES_PAGE: '/favorites/',
+        NATIONAL_WATER_DASHBOARD: 'https://dashboard.waterdata.usgs.gov/app/nwd/',
+        EXPLORE_WATER_DATA_PAGE: '/explore/',
+        STATE_PAGE: '/state//',
+        COLLECTION_CATEGORIES_PAGE: '/data-collection-categories/',
+        WATERALERT_HOME: 'https://accounts.waterdata.usgs.gov/wateralert/',
+        WATER_DATA_API_HOME: 'https://api.waterdata.usgs.gov',
+        DATA_RETRIEVAL_HOME: 'https://doi-usgs.github.io/dataRetrieval/',
+    };
+</script>
+
+        <script type="application/javascript">
+          function addHandlerForQuestionsCommentsLink(feedbackLinkId) {
+              let baseQuestionsUrl = "/questions-comments/?";
+              
+            const requestUrl = "https://waterdata.usgs.gov/";
+              document.getElementById(feedbackLinkId).href = `${baseQuestionsUrl}referrerUrl=${requestUrl}${encodeURIComponent(location.hash)}`;
+              window.addEventListener(
+                "hashchange", (ev) => {
+                  document.getElementById(feedbackLinkId).href = baseQuestionsUrl + "referrerUrl=" + encodeURIComponent(ev.newURL);
+                }
+              );
+            };
+        </script>
+    </head>
+
+    <body>
+        <!-- WDFN Analytics start -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-564ZVPQ"
+                  height="0" width="0" style="display:none;visibility:hidden">
+          </iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- WDFN Analytics end -->
+
+        <!--USGS Analytics start -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+                    height="0" width="0" style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+        <!--USGS Analytics end -->
+
+        <div id="container-header-and-site-alerts">
+          <div id="container-header-and-site-alerts-wrapper">
+            
+              <div class="usa-official-wrapper">
+    <div class="">
+        <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+        <section class="usa-banner" aria-label="Official website of the United States government">
+        <div class="usa-accordion">
+            <header class="usa-banner__header">
+                <div class="usa-banner__inner">
+                    <div class="grid-col-auto">
+                        <img class="usa-banner__header-flag" aria-hidden="true" src="/static/img/us_flag_small.ab5090f5.png" alt="">
+                    </div>
+                    <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                        <p class="usa-banner__header-text">An official website of the United States government</p>
+                        <p class="usa-banner__header-action">Here’s how you know</p>
+                    </div>
+                    <button type="button"
+                            class="usa-accordion__button usa-banner__button"
+                            aria-expanded="false" aria-controls="gov-banner">
+                        <span class="usa-banner__button-text">Here’s how you know</span>
+                    </button>
+                </div>
+            </header>
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden>
+                <div class="grid-row grid-gap-lg">
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-dot-gov.svg"
+                             alt="Dot gov">
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Official websites use .gov</strong>
+                                <br/>
+                                A <strong>.gov</strong> website belongs to an official government organization in the
+                                United States.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-https.svg"
+                             role="img"
+                             alt="">
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Secure .gov websites use HTTPS</strong>
+                                <br/>
+                                A <strong>lock</strong> (
+                                <span class="icon-lock">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-description" focusable="false">
+                                        <title id="banner-lock-title">Lock</title>
+                                        <desc id="banner-lock-description">Locked padlock</desc>
+                                        <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/>
+                                    </svg>
+                                </span>
+                                ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</div>
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended usgs-header">
+    <div class="usgs-header-container">
+        <div class="">
+            <div class="usgs-logo-section-wrapper">
+                <div class="usa-navbar">
+                    <div class="usa-logo" id="extended-logo">
+                        <a href="https://www.usgs.gov">
+                            <img alt="USGS Home" src="/static/img/USGS_logo.svg"/>
+                        </a>
+                    </div>
+                    <button type="button" class="usa-menu-btn">Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="navigation-wrapper">
+        <div class="">
+            <nav aria-label="Primary navigation" role="navigation" class="usa-nav">
+                    <div class="usa-nav__inner">
+                    <button type="button" class="usa-nav__close"><img src="/static/img/usa-icons/close.svg" alt="close"></button>
+                      <ul class="usa-nav__primary usa-accordion">
+                        
+                        <li class="usa-nav__primary-item">
+                            <a
+                                class="usa-nav-link usa-current"
+                                href="/">
+                              WDFN Home
+                            </a>
+                        </li>
+                        
+                        <li class="usa-nav__primary-item">
+                            <button type="button"
+                                    class="usa-accordion__button usa-nav__link"
+                                    aria-expanded="false"
+                                    aria-controls="data-info-section">
+                                <span>WDFN tools and data</span>
+                            </button>
+                            <ul id="data-info-section" class="usa-nav__submenu">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/favorites/">
+                                        My Favorite Monitoring Locations
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://dashboard.waterdata.usgs.gov/app/nwd/">National Water Dashboard</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                  <a href="https://accounts.waterdata.usgs.gov/wateralert/">WaterAlert</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                  <a href="/explore/">Explore USGS Water Data</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://api.waterdata.usgs.gov/">
+                                        USGS Water Data APIs
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/statistics-documentation/">
+                                        Statistics documentation
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="usa-nav__primary-item">
+                          <button type="button"
+                                  class="usa-accordion__button usa-nav__link"
+                                    aria-expanded="false"
+                                    aria-controls="other-section">
+                            <span>Other water data resources</span>
+                          </button>
+                          <ul id="other-section" class="usa-nav__submenu">
+                              <li class="usa-nav__submenu-item">
+                                  <a href="https://www.usgs.gov/mission-areas/water-resources">
+                                      Water Resources Mission Area
+                                  </a>
+                              </li>
+                              <li class="usa-nav__submenu-item">
+                                  <a href="https://labs.waterdata.usgs.gov/visualizations/index.html#/">
+                                      Water Data Visualizations
+                                  </a>
+                              </li>
+                              <li class="usa-nav__submenu-item">
+                                  <a href="https://www.usgs.gov/special-topic/water-science-school">
+                                      Water Science School
+                                  </a>
+                              </li>
+                              <li class="usa-nav__submenu-item">
+                                  <a href="https://water.usgs.gov/catalog/">
+                                      WMA Catalog
+                                  </a>
+                              </li>
+                              <li class="usa-nav__submenu-item">
+                                  <a href="https://water.usgs.gov/nwaa-data/">
+                                      National Water Availability Assessment Data Companion
+                                  </a>
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <button type="button"
+                                    class="usa-accordion__button usa-nav__link"
+                                    aria-expanded="false"
+                                    aria-controls="connect-section">
+                                <span>Connect</span>
+                            </button>
+                            <ul id="connect-section" class="usa-nav__submenu">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://www.instagram.com/usgs_water/" rel="noreferrer">
+                                        USGS Water Resources Instagram
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://www.facebook.com/USGSWater/" rel="noreferrer">
+                                        USGS Water Resources Facebook
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://twitter.com/USGS_Water" rel="noreferrer">
+                                        USGS Water Resources X
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://twitter.com/USGS_DataSci" rel="noreferrer">
+                                        USGS Data Science X
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/questions-comments/?referrerUrl=https://waterdata.usgs.gov/">
+                                        Questions or Comments
+                                    </a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="https://waterdata.usgs.gov/blog/">
+                                        Water Data for the Nation Blog
+                                    </a>
+                                </li>
+                            </ul>
+                      </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+            
+            
+
+
+          </div>
+        </div>
+        
+        <div id="main-content">
+            
+    <main>
+        <div class="title-container">
+    <h1>Water Data for the Nation</h1>
+    <div class="wdfn-tag-line">High-quality and discoverable water data for everyone</div>
+    <div class="wdfn-year-count">Over 135 years of water data from more than one million monitoring locations</div>
+</div>
+        <div id="home-page-app"></div>
+    </main>
+
+        </div>
+
+        
+  <div class="user-feedback" role="navigation">
+    <a  id="feedback-link" href="/questions-comments/">
+        Questions or Comments
+    </a>
+  </div>
+    <script type="application/javascript">
+        addHandlerForQuestionsCommentsLink('feedback-link')
+    </script>
+
+<div id="container-footer">
+    <div id="footer-wrapper">
+        <footer class="usa-footer usa-footer--slim" role="contentinfo">
+            <nav class="usgs-footer-container" aria-label="Footer Navigation">
+                <div class="usgs-footer-nav">
+                    <a class="usgs-footer-link" href="https://www.doi.gov/privacy">DOI Privacy Policy</a> |
+                    <a class="usgs-footer-link" href="https://www.usgs.gov/legal">Legal</a> |
+                    <a class="usgs-footer-link" href="https://www.usgs.gov/accessibility">Accessibility</a> |
+                    <a class="usgs-footer-link" href="https://www.usgs.gov/sitemap">Site Map</a> |
+                    <a class="usgs-footer-link" href="https://answers.usgs.gov/">Contact USGS</a>
+                    <div class="social-media-links">
+                        <span>Follow</span>
+                        <a href="https://twitter.com/usgs" title="USGS Twitter" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS Twitter" role="img">
+                                <use href="/static/img/sprite.svg#x"></use>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/usgeologicalsurvey" title="USGS Facebook" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS Facebook"  role="img">
+                                <use href="/static/img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/DOI-USGS" title="USGS Github" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS Github" role="img">
+                                <use href="/static/img/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                        <a href="https://flickr.com/usgeologicalsurvey" title="USGS Flickr" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS Flickr" role="img">
+                                <use href="/static/img/sprite.svg#flickr"></use>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/usgs" title="USGS You Tube" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS You Tube" role="img">
+                                <use href="/static/img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/usgs/" title="USGS Instagram" target="_blank" rel="noopener">
+                            <svg class="usa-icon usa-icon--size-3" aria-label="USGS Instagram" role="img">
+                                <use href="/static/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="usgs-footer-nav">
+                    <a class="usgs-footer-link" href="https://www.doi.gov/">U.S. Department of the Interior</a> |
+                    <a class="usgs-footer-link" href="https://www.doioig.gov/">DOI Inspector General</a> |
+                    <a class="usgs-footer-link" href="https://www.whitehouse.gov/">White House</a> |
+                    <a class="usgs-footer-link" href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a> |
+                    <a class="usgs-footer-link" href="https://www.usgs.gov/foia">FOIA</a>
+                </div>
+            </nav>
+        </footer>
+    </div>
+</div>
+
+        
+    <script type="module" crossorigin="" src="/static/home-page.b79babc7.js"></script>
+
+    </body>
+</html>

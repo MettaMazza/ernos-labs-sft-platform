@@ -1,0 +1,261 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001",
+  "complete_branch_pre_source_seal": {
+    "all_74_predictions_and_18944_candidates_sealed_before_source_selection": true,
+    "hash": "sha256:c741b6b227098e41568c29fa05a4c7261152d2a3838b410620954e7c17bfb0cc",
+    "path": "experiments/sealed_predictions/earth_environment_foundation_complete_pre_source.json"
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the complete Earth carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed source, capture, manifest or result is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support, target row or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, an imported model, a forbidden proof value or a fitted parameter is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CONSEQUENCE",
+      "expected_rejection": "A changed external consequence label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1-external-target-custodian",
+    "release_requires_matching_seal": true
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every source identity and snapshot reproduces; evidence classes remain explicit; the source-derived consequence matches; every adverse, absent and failed row remains; and a changed control is rejected.",
+    "evaluator_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1-post-seal-source-evaluator",
+    "falsification_condition": "Reject if the catalog selects the exponent, if incomplete small events are treated as absent, or if one fitted line erases scale-dependent departures.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered Earth evidence consequence while preserving every source feature, adverse result, absence, unresolved row and failed transport, then compare with the sealed claim consequence.",
+        "metric_id": "source-derived-boundary-correspondence"
+      }
+    ]
+  },
+  "evidence_census": {
+    "absent_features_preserved": 24,
+    "bindings_hash": "sha256:a0aba2038c8d9cb9c5f48839c8c894cc0905590aa2021e0c00fed7915b074cda",
+    "bindings_path": "experiments/earth_environment/claim_source_bindings.json",
+    "failed_transports_preserved": true,
+    "feature_audit_hash": "sha256:5905fe43e5252542902407a86d571ae8aad0360b66400e35aa3a4de74606829d",
+    "feature_audit_path": "experiments/earth_environment/source_feature_audit.json",
+    "present_features": 67,
+    "registered_features": 91
+  },
+  "evidence_mode": "post_seal_purpose_matched_authoritative_observation_or_primary_measurement_boundary_correspondence",
+  "experiment_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1",
+  "external_target_record": {
+    "directness": "authoritative_observation_or_primary_measurement_boundary_correspondence",
+    "empirical_disposition": "mixed_catalog_adverse_preserved_homogeneous_holdout_compatible",
+    "hash": "sha256:f7f13820b78cb7cf57d1a935c112479f7766078c8ed589242d96f4e2ec822527",
+    "numeric_comparison": {
+      "first_adverse_result_reclassified": false,
+      "first_mixed_catalog_result": {
+        "adverse_conditions": {
+          "catalog_truncated": false,
+          "event_status_heterogeneity_present": true,
+          "heterogeneity_rows_preserved_not_filtered": true,
+          "magnitude_type_heterogeneity_present": true,
+          "missing_or_nonfinite_magnitudes": false
+        },
+        "interval": {
+          "lower": "0.076998990840681139",
+          "upper": "0.084918164588559525"
+        },
+        "observed_count_ratio_exact": {
+          "denominator": 1494,
+          "numerator": 18469
+        },
+        "passed": false,
+        "result_hash": "sha256:4657a82ad8b4263fa5394ad83a490fc7ea23bcb3a91afca04fb20cea7b7902c7"
+      },
+      "independent_homogeneous_holdout": {
+        "interval": {
+          "lower": "0.085657503235220589",
+          "upper": "0.13089188889528297"
+        },
+        "observed_count_ratio_exact": {
+          "denominator": 27,
+          "numerator": 253
+        },
+        "passed": true,
+        "registered_magnitude_label": "mww",
+        "result_hash": "sha256:2f69b1d7e56a2a1a6615b83bba99802186e7356f97cd953fd0f530191e146646"
+      }
+    },
+    "path": "experiments/earth_environment/claim_specific_external_targets.json",
+    "source_evidence": [
+      {
+        "absent_feature_count": 0,
+        "feature_rows": [
+          {
+            "derived_search_tokens": [
+              "event"
+            ],
+            "feature": "event identity",
+            "matched_tokens": [
+              "event"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+            "source_id": "USGS-EARTHQUAKE-FDSN-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "origin",
+              "locatio"
+            ],
+            "feature": "origin time and location",
+            "matched_tokens": [
+              "origin",
+              "locatio"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+            "source_id": "USGS-EARTHQUAKE-FDSN-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "magnitu"
+            ],
+            "feature": "magnitude and magnitude type",
+            "matched_tokens": [
+              "magnitu"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+            "source_id": "USGS-EARTHQUAKE-FDSN-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "catalog",
+              "query"
+            ],
+            "feature": "catalog query boundary",
+            "matched_tokens": [
+              "catalog",
+              "query"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+            "source_id": "USGS-EARTHQUAKE-FDSN-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "version"
+            ],
+            "feature": "service version",
+            "matched_tokens": [
+              "version"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+            "source_id": "USGS-EARTHQUAKE-FDSN-001",
+            "status": "present"
+          }
+        ],
+        "present_feature_count": 5,
+        "registered_feature_count": 5,
+        "source_id": "USGS-EARTHQUAKE-FDSN-001",
+        "transport_status": "captured",
+        "unresolved_feature_count": 0
+      }
+    ],
+    "source_ids": [
+      "USGS-EARTHQUAKE-FDSN-001"
+    ],
+    "target_id": "sft-earth-quake-magnitude-frequency-001-external-earth-evidence"
+  },
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of eight registered binary carrier, boundary, relation, record, evidence, provenance, generality and extension dimensions before external Earth-source identities or outcomes are opened. Filter only by the preregistered property required by each dimension.",
+    "exact_domain": "Exactly eight binary preservation dimensions, giving 256 forms. Form closure is depth-independent under the stated positive-finite successor; empirical correspondence remains source, place, time, method and protocol bounded.",
+    "relation_hash": "sha256:da917a9fa20e1a4968ced649dc3ef7c6f620ff8d72f933c1fcb8a7dd2e515146",
+    "statement": "complete-catalog-size-count-carrier__catalog-completeness-bounded__scale-to-frequency-recurrence__magnitude-scale-threshold-region-time-and-residuals-held__evidence-class-explicit__root-bound-forward-forcing__positive-finite-successor-retains-all-rows__no-extra-rule",
+    "target_did_not_select_structural_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program": {
+      "instructions": [
+        {
+          "arguments": [
+            "registered-premise"
+          ],
+          "destination": "premise",
+          "opcode": "input"
+        },
+        {
+          "arguments": [
+            "earth-external-consequence",
+            "earth:complete-catalog-size-count-carrier__scale-to-frequency-recurrence__magnitude-scale-threshold-region-time-and-residuals-held__catalog-completeness-bounded__exact-unit-exponent-presealed"
+          ],
+          "destination": "prediction",
+          "opcode": "label"
+        },
+        {
+          "arguments": [
+            "premise",
+            "prediction"
+          ],
+          "destination": "bound-result",
+          "opcode": "pair"
+        },
+        {
+          "arguments": [
+            "prediction"
+          ],
+          "destination": "",
+          "opcode": "emit"
+        }
+      ],
+      "program_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1-external-consequence-prediction",
+      "schema": "sft-v3-fold-program/1"
+    },
+    "program_hash": "sha256:c22c862c108427961e5281f23f06c5380be76202b1b7deb10739b09a2d90b4f4"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-28",
+  "registration_record_hash": "sha256:65c72845595afae21a6f96820c6a9efc02d10a2eff7a9728e5794eee6b2f9a4a",
+  "row_retention_policy": "retain every registered feature, favorable, adverse, absent, mixed, unresolved, censored, missing and transport row",
+  "status": "empirical_boundary_corresponded",
+  "stop_condition": "Halt after the target and controls are evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-claim-derivation-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_claim_prediction_until_derivation_seal": true,
+      "source_ids": [
+        "USGS-EARTHQUAKE-FDSN-001"
+      ],
+      "target_id": "sft-earth-quake-magnitude-frequency-001-external-earth-evidence"
+    }
+  ]
+}

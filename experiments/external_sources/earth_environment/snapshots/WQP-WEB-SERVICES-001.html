@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <!-- Google Tag Manager -->
+     <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T9XRGV4');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- This one is required to be first as per documentation found here: https://atthecore.usgs.gov/science-support/ocap-digital-services/web-applications -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TKQR8KP');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <title>
+        WQP Web Services Guide
+    </title>
+
+    <link rel="shortcut icon" href="/static/img/favicon.e180f634.ico" type="image/vnd.microsoft.icon" />
+
+    
+    <link rel="stylesheet" href="/static/custom.2f81930c.css">
+    <link rel="stylesheet" href="/static/vendor.89051d1d.css">
+    
+
+    <script src="/static/scripts/uswds-init.min.2163eef0.js"></script>
+    
+    <!-- TODO: Bring USWDS and vendor into bundles -->
+    <script src="/static/scripts/vendor.77b9f817.js"></script>
+    
+
+    <!-- If you need to remove google analytics from a page create a blank google_analytics_script block -->
+    <script type="text/javascript">
+        Config = {};
+
+        Config.SLD_ENDPOINT = 'https://www.waterqualitydata.us/Codes/Summary?dataSource=A&amp;geometry=S&amp;timeFrame=A';
+        Config.CODES_ENDPOINT = 'https://www.waterqualitydata.us/Codes';
+        Config.SEARCH_QUERY_ENDPOINT = 'https://www.waterqualitydata.us/data/';
+        Config.PUBLIC_SRSNAMES_ENDPOINT = 'https://www.waterqualitydata.us/Codes/public_srsnames/';
+        Config.DEBUG = 'False' === 'True';
+
+        Config.QUERY_URLS = {
+            Station: Config.SEARCH_QUERY_ENDPOINT + 'Station/search',
+            Project: Config.SEARCH_QUERY_ENDPOINT + 'Project/search',
+            ProjectMonitoringLocationWeighting: Config.SEARCH_QUERY_ENDPOINT + 'ProjectMonitoringLocationWeighting/search',
+            Result: Config.SEARCH_QUERY_ENDPOINT + 'Result/search',
+            Activity: Config.SEARCH_QUERY_ENDPOINT + 'Activity/search',
+            ActivityMetric: Config.SEARCH_QUERY_ENDPOINT + 'ActivityMetric/search',
+            ResultDetectionQuantitationLimit: Config.SEARCH_QUERY_ENDPOINT + 'ResultDetectionQuantitationLimit/search',
+            BiologicalHabitatMetric: Config.SEARCH_QUERY_ENDPOINT + 'BiologicalMetric/search',
+            Organization: Config.SEARCH_QUERY_ENDPOINT + 'Organization/search'
+        };
+
+        Config.SITES_GEOSERVER_ENDPOINT = 'https://www.waterqualitydata.us/ogcservices/';
+        Config.WQP_MAP_GEOSERVER_ENDPOINT = '/wqp_geoserver/';
+        Config.NLDI_SERVICES_ENDPOINT = 'https://api.water.usgs.gov/nldi/linked-data/';
+        Config.GEO_SEARCH_API_ENDPOINT = 'https://txdata.usgs.gov/search_api/1.1/services.ashx/search';
+        Config.HYDRO_LAYER_ENDPOINT = 'https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer';
+        Config.NLDI_ENABLED = 'True';
+        Config.NHDPLUS_FLOWLINE_ENDPOINT = 'https://api.water.usgs.gov/geoserver/wms';
+        Config.NHDPLUS_FLOWLINE_LAYER_NAME = 'wmadata:nhdflowline_network';
+        Config.STATIC_ENDPOINT = '/static/';
+        Config.GA_TRACKING_CODE = '';
+        Config.EXPLORE_BASE_PAGE = '/provider/'
+    </script>
+
+    
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9XRGV4" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- This one is required to be first as per documentation found here: https://atthecore.usgs.gov/science-support/ocap-digital-services/web-applications -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe sandbox src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="/static/scripts/uswds.min.12dc6164.js"></script>
+
+    <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+    <script async type="text/javascript"
+        src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=USGS" id="_fed_an_ua_tag"></script>
+
+    <div id="wqp-page">
+        <div id="page-header">
+            <!-- USWDS Government Website Banner -->
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<section class="usa-banner" aria-label="Official government website">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img class="usa-banner__header-flag" src="/static/img/us_flag_small.be327dc2.png"
+                         alt="U.S. flag">
+                </div>
+                <div class="grid-col-fill tablet:grid-col-auto">
+                    <p class="usa-banner__header-text">An official website of the United States government</p>
+                    <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                </div>
+                <button class="usa-accordion__button usa-banner__button" aria-expanded="false"
+                        aria-controls="gov-banner">
+                    <span class="usa-banner__button-text">Here’s how you know</span>
+                </button>
+            </div>
+        </header>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-dot-gov.42b4ac46.svg"
+                         role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Official websites use .gov</strong>
+                            <br/>
+                            A <strong>.gov</strong> website belongs to an official government organization in the United
+                            States.
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-https.73abd866.svg"
+                         role="img" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong>
+                            <br/>
+                            A <strong>lock</strong> (
+                            <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
+                                                         viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
+                                                         aria-labelledby="banner-lock-title banner-lock-description"
+                                                         focusable="false"><title id="banner-lock-title">Lock</title><desc
+                                    id="banner-lock-description">A locked padlock</desc><path fill="#000000"
+                                                                                              fill-rule="evenodd"
+                                                                                              d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+                            or <strong>https://</strong> means you’ve safely connected to the .gov website. Share
+                            sensitive information only on official, secure websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main App Header -->
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+    <div class="usa-nav-container">
+        <div class="usa-navbar">
+
+            <div class="usa-logo">
+                <img src="/static/img/NWQMC.88f834eb.png"
+                         alt="National Water Quality Monitoring Council"/>
+                <em class="usa-logo__text">
+                    NATIONAL WATER QUALITY MONITORING COUNCIL
+                </em>
+            </div>
+            <button class="usa-menu-btn">Menu</button>
+        </div>
+
+        <!-- Add .usa-current on active usa-nav__link element  -->
+        <nav aria-label="Primary navigation" class="usa-nav">
+            <button class="usa-nav__close"><img src="/static/img/close.fe3f13f6.svg" role="img" alt="close"></button>
+            <ul class="usa-nav__primary usa-accordion">
+                <li class="usa-nav__primary-item">
+                    <a href="/" class="usa-nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="usa-nav__primary-item">
+                    <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                            aria-controls="explore-wqp-sites-menu">
+                        <span>Explore WQP Sites</span>
+                    </button>
+                    <ul id="explore-wqp-sites-menu" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                            <a href="/provider/NWIS/"> NWIS </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/provider/STORET/">WQX </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="usa-nav__primary-item">
+                    <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                            aria-controls="help-menu">
+                        <span> Help & About </span>
+                    </button>
+                    <ul id="help-menu" class="usa-nav__submenu">
+                        <li class="usa-nav__submenu-item">
+                            <a href="/wqp_description/"> What is the WQP? </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/orgs/"> Contributing Organizations </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/portal_userguide/"> User Guide </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/webservices_documentation/"> Web Services Guide </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/faqs/"> FAQs </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/upload_data/"> Upload Data</a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/apps_using_portal/"> Applications using the WQP </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/other_portal_links/"> Other Water Quality Portals </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/publications/"> Publications </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                            <a href="/contact_us/"> Contact Us</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        </div>
+
+        
+        <nav class="navbar" role="navigation">
+            
+        </nav>
+        
+
+        <!-- To set the banner, set the "ANNOUNCEMENT_BANNER" variable for the specific tier in this repo
+        https://code.chs.usgs.gov/wma/docker/wqp/wqp_ui/-/tree/master/config
+
+        You have to set the variable to the html that you would want there. You can use the following link to get example html for the standard banners
+        https://designsystem.digital.gov/components/alert/
+    -->
+        
+        <div id="announcement"><div class="usa-alert usa-alert--info style="margin-top: .3rem">
+    <div class="usa-alert__body">
+        <p class="usa-alert__text">New WQX 3.0 profiles are available at <a href="https://www.waterqualitydata.us/beta/">waterqualitydata.us/beta/</a>.
+            These profiles will contain recent USGS data added since March 11, 2024, which marks the beginning of limited accessibility for USGS data.
+            Read more about the 3.0 profiles and associated changes <a href="https://waterdata.usgs.gov/blog/wqx3/">here</a>.
+            This user interface only serves WQX2.2 profiles, which do NOT contain USGS data added after March 11, 2024.</p>
+    </div>
+</div>
+</div>
+        
+
+        <main id="main-content" >
+            
+
+<div class="page-sidebar markdown-page">
+	<nav aria-label="Secondary navigation," class="sidebar">
+		<ul class='usa-sidenav'>
+<li class='usa-sidenav__item'><a href="#introduction">Introduction</a></li>
+<li class='usa-sidenav__item'><a href="#what-are-web-services">What Are Web Services?</a><ul class='usa-sidenav__sublist'>
+<li class='usa-sidenav__item'><a href="#accessing-data-programmatically-through-web-services">Accessing Data Programmatically Through Web Services</a></li>
+</ul>
+</li>
+<li class='usa-sidenav__item'><a href="#how-to-generate-web-services-requests">How to Generate Web Services Requests</a><ul class='usa-sidenav__sublist'>
+<li class='usa-sidenav__item'><a href="#example-web-service-requests">Example Web Service Requests</a></li>
+<li class='usa-sidenav__item'><a href="#queries-using-post">Queries Using POST</a></li>
+<li class='usa-sidenav__item'><a href="#retrieving-summary-data-using-the-wqp-summary-web-service">Retrieving Summary Data Using the WQP Summary Web Service</a><ul class='usa-sidenav__sublist'>
+<li class='usa-sidenav__item'><a href="#considerations">Considerations</a></li>
+</ul>
+</li>
+<li class='usa-sidenav__item'><a href="#using-open-geospatial-consortium-services-to-map-water-quality-portal-sites-based-on-water-quality-portal-parameters">Using Open Geospatial Consortium Services to map Water Quality Portal sites based on Water Quality Portal Parameters</a></li>
+<li class='usa-sidenav__item'><a href="#looking-up-domain-values-through-web-services">Looking Up Domain Values Through Web Services</a></li>
+</ul>
+</li>
+<li class='usa-sidenav__item'><a href="#using-arcgis-online-to-map-water-quality-portal-sites">Using ArcGIS Online to map Water Quality Portal Sites</a><ul class='usa-sidenav__sublist'>
+<li class='usa-sidenav__item'><a href="#adding-wqp-stations-from-the-web-new-map-viewer">Adding WQP Stations from the Web (New Map Viewer)</a></li>
+<li class='usa-sidenav__item'><a href="#adding-wqp-stations-data-from-the-web-classic-map-viewer">Adding WQP Stations data from the Web (Classic Map viewer)</a></li>
+<li class='usa-sidenav__item'><a href="#example-station-call-csv">Example Station call (csv)</a></li>
+<li class='usa-sidenav__item'><a href="#example-summary-service-call-geojson">Example Summary Service call (geojson)</a></li>
+</ul>
+</li>
+</ul>
+	</nav>
+	
+	<div class="page-sidebar-content">
+		<h1>WQP Web Services Guide</h1>
+		<!-- * [Introduction](#introduction)
+* [What Are Web Services?](#what-are-web-services?)
+* [Accessing Data Programmatically Using Web Services](#accessing-data-programmatically-using-web-services)
+* [How to Generate Web Services Requests](#how-to-generate-web-services-requests)
+* [Retrieving Summary Data Using the WQP Summary Web Service](#retrieving-summary-data-using-the-wqp-summary-web-service)
+* [Using Open Geospatial Consortium (OGC) Services to map Water Quality Portal sites based on Water Quality Portal Parameters](#using-open-geospatial-consortium-services-to-map-water-quality-portal-sites-based-on-water-quality-portal-parameters) -->
+<h2 id="introduction">Introduction</h2>
+<p>The Water Quality Data Portal (WQP) provides easy access to data stored in three large water quality databases (WQX, NWIS) through a web-based form interface as well as standalone web services. Both the form interface and the web services use the same input parameters (filters) and produce the same output formats. The web service enables programmatic access to WQP data and metadata without manually interacting with the form interface. </p>
+<p>You can use the WQP web services to quickly and easily access data and metadata available on the Water Quality Portal. URL queries are constructed in a standard format and outputs are delivered in a number of user-defined formats.</p>
+<p>For more information on the WQP input parameters (filters) and data downloads, see the WQP <a href="https://www.waterqualitydata.us/portal_userguide/">User Guide</a>.  </p>
+<h2 id="what-are-web-services">What Are Web Services?</h2>
+<p>APIs (Application Programming Interface) and Web Services are tools that enable communication between two networked devices or pieces of software using  standardized methods. They are implemented in almost all of our mobile device applications that we use on a daily basis. They allow data from one system to be easily used by a second system without requiring the second system to locally store the data, which is especially beneficial when we are dealing with <em>big</em> data sets. In fact, common software packages including Excel and R are starting to come pre-packaged with the ability to use these services.</p>
+<p>While APIs and Web Services provide similar functions, the types of communication they allow differs: </p>
+<ul>
+<li>
+<p>An API allows two applications to communicate by creating shared rules and conventions. These can be used with a network connection, but there are also APIs that do not involve a network connection. </p>
+</li>
+<li>
+<p>A web service is a <em>type</em> of API that allows one computer to communicate data to another computer in a standardized way. While all web services are APIs, not all API's are web services. </p>
+</li>
+</ul>
+<p>The WQP web services are implemented using the 'https' protocol using REST, which provides a flexible and scalable approach for constructing standardized URL statements.</p>
+<p>Click <a href="https://github.com/project-open-data/project-open-data.github.io/blob/master/api-basics.md">here</a> to learn more about the basics of APIs, or check out this <a href="https://github.com/18F/API-All-the-X/tree/master/pages">Github page</a> for details about how APIs are implemented within the USGS and across the federal government.</p>
+<h3 id="accessing-data-programmatically-through-web-services">Accessing Data Programmatically Through Web Services</h3>
+<p>Web services provide a public resource which users can also enhance with their own custom scripts.</p>
+<p>One resource created by the USGS is an R-based software package called <em>dataRetrieval</em>, which makes it easier for R users to use the WQP web services. <em>dataRetrieval</em> does the heavy lifting to download data and convert it into a familiar and usable format. <em>dataRetrevial</em> can download data from the WQP and from a number of USGS NWIS services. To learn more about <em>dataRetrieval</em>, please check out these resources:</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/dataRetrieval/index.html">CRAN</a> - Download current release</li>
+<li><a href="https://github.com/USGS-R/dataRetrieval">GitHub</a> - Download most up-to-date source code (may contain bugs)</li>
+<li><a href="https://waterdata.usgs.gov/blog/dataretrieval/">Tutorial</a> - Learn how to use <em>dataRetrieval</em></li>
+</ul>
+<h2 id="how-to-generate-web-services-requests">How to Generate Web Services Requests</h2>
+<p>You can retrieve the <em>same</em> data using Web Services that you can with the WQP User Interface (advanced form). Query basics are outlined in the following series of tables. Most non-alphanumeric characters (such as punctuation) must be <a href="https://www.tutorialspoint.com/html/html_url_encoding.htm">"<strong>url-encoded</strong>"</a>, (<em>for example</em>: space is "%20").</p>
+<p>Constructing a Request:</p>
+<p>Every request starts with a base URL: the base URL will vary depending on the type of information requested:</p>
+<ul>
+<li>Base URL for downloading project data:
+<code>https://www.waterqualitydata.us/data/Project/search?</code></li>
+<li>Base URL for downloading site data and associated metadata:
+<code>https://www.waterqualitydata.us/data/Station/search?</code></li>
+<li>Base URL for downloading results: 
+<code>https://www.waterqualitydata.us/data/Result/search?</code></li>
+<li>Base URL for downloading result detection quantitation limit data: 
+<code>https://www.waterqualitydata.us/data/ResultDetectionQuantitationLimit/search?</code></li>
+<li>Base URL for downloading activity data:
+<code>https://www.waterqualitydata.us/data/Activity/search?</code></li>
+<li>Base URL for downloading activity metric data:
+<code>https://www.waterqualitydata.us/data/ActivityMetric/search?</code></li>
+<li>Base URL for downloading biological metric data:
+<code>https://www.waterqualitydata.us/data/BiologicalMetric/search?</code></li>
+<li>Base URL for downloading project monitoring location weighting data:
+<code>https://www.waterqualitydata.us/data/ProjectMonitoringLocationWeighting/search?</code></li>
+</ul>
+<p>Construct a query by concatenating the base URL with the desired parameters and arguments,as shown in <strong><em>Table 1</em></strong>.  At least one parameter-argument pair must be specified. Separate multiple parameter-argument pairs with an <em>ampersand</em> ("&amp;"). For downloads, if no file format (<em>mime type</em>) is specified, the retrieval will default to <strong>WQX-XML format</strong>. See the <a href="https://www.waterqualitydata.us/portal_userguide/">WQP User Guide</a> for a list of elements included in the result retrievals. </p>
+<p><strong><em>Table 1.</em> URL-encoded retrieval parameters and arguments for WQP web services (parameter names are case-insensitive only to the leading capital letter)</strong></p>
+<details>
+<summary>Expand Table</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">REST parameter</th>
+<th style="text-align: center;">Argument</th>
+<th style="text-align: center;">Discussion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">bBox</td>
+<td style="text-align: center;"><em>Western-most longitude, Southern-most latitude, Eastern-most longitude, and Northern-most longitudeseparated by commas, expressed in decimal degrees, WGS84, and longitudes west of Greenwich are negative. (Example: bBox=-92.8,44.2,-88.9,46.0)</em></td>
+<td style="text-align: center;">These four arguments are used together to form a quadrant of the Earth's surface for locating data-collection stations. Many stations outside the continental US do not have latitude and longitude referenced to WGS84 and therefore cannot be found using these parameters. Other stations are not associated with latitude and longitude due to Homeland Security concerns.</td>
+</tr>
+<tr>
+<td style="text-align: center;">lat</td>
+<td style="text-align: center;"><em>Latitude for radial search, expressed in decimal degrees, WGS84</em></td>
+<td style="text-align: center;">These three arguments are used together to form a circle on the Earth's surface for locating data-collection stations. Many stations outside the continental US do not have latitude and longitude referenced to WGS84 and therefore cannot be found using these parameters.</td>
+</tr>
+<tr>
+<td style="text-align: center;">long</td>
+<td style="text-align: center;"><em>Longitude for radial search, expressed in decimal degrees, WGS84</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">within</td>
+<td style="text-align: center;"><em>Distance for radial search, expressed in decimal miles</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">countrycode</td>
+<td style="text-align: center;"><em>Two-character Federal Information Processing Standard (FIPS) country code.</em></td>
+<td style="text-align: center;">FIPS country codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub10-4.pdf">National Institute of Standards, publication 10-4</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">statecode</td>
+<td style="text-align: center;">*Two-character Federal Information Processing Standard (FIPS) country code, followed by a URL-encoded colon ("%3A"), followed by a two-digit FIPS state code. *</td>
+<td style="text-align: center;">FIPS state codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub5-2.pdf">National Institute of Standards, publication 5-2</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">countycode</td>
+<td style="text-align: center;">*Two-character Federal Information Processing Standard (FIPS) country code, followed by a URL-encoded colon ("%3A"), followed by a two-digit FIPS state code, followed by a URL-encoded colon ("%3A"), followed by a three-digit FIPS county code. *</td>
+<td style="text-align: center;">FIPS county codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub6-4.pdf">National Institute of Standards, publication 6-4</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">siteType</td>
+<td style="text-align: center;"><em>One or more case-sensitive site types, separated by semicolons.</em></td>
+<td style="text-align: center;">Restrict retrieval to stations with specified site type (location in the hydrologic cycle). The MonitoringLocationTypeName for individual records may provide more detailed information about the type of individual stations.</td>
+</tr>
+<tr>
+<td style="text-align: center;">organization</td>
+<td style="text-align: center;"><em>For USGS organization IDs, append an upper-case postal-service state abbreviation to "USGS-" to identify the USGS office managing the data collection station records. However, a few US states are serviced by one USGS office.</em> (<strong>USGS-MA</strong> = Massachusetts and Rhode Island, <strong>USGS-MD</strong> = Maryland, Delaware, and the District of Columbia, <strong>USGS-PR</strong> = Caribbean Islands, <strong>USGS-HI</strong> = Pacific Islands).</td>
+<td style="text-align: center;">USGS offices sometimes provide data for stations outside the political boundaries associated with the office's organization code. Use the statecode or countycode arguments to search for stations located within those political boundaries.</td>
+</tr>
+<tr>
+<td style="text-align: center;">siteid</td>
+<td style="text-align: center;"><em>Concatenate an agency code, a hyphen ("-"), and a site-identification number.</em></td>
+<td style="text-align: center;">Each data collection station is assigned a unique site-identification number. Other agencies often use different site identification numbers for the same stations.</td>
+</tr>
+<tr>
+<td style="text-align: center;">huc</td>
+<td style="text-align: center;"><em>One or more eight-digit hydrologic units, delimited by semicolons.</em></td>
+<td style="text-align: center;">Hydrologic unit codes identify surface watersheds. The <a href="http://water.usgs.gov/GIS/huc.html">lists and maps of hydrologic units</a> are available from USGS.</td>
+</tr>
+<tr>
+<td style="text-align: center;">sampleMedia</td>
+<td style="text-align: center;"><em>One or more case-sensitive sample media, separated by semicolons.</em></td>
+<td style="text-align: center;">Sample media are broad general classes, and may be subdivided in the retrieved data. Examine the data elements ActivityMediaName, ActivityMediaSubdivisionName, and ResultSampleFractionText for more detailed information.</td>
+</tr>
+<tr>
+<td style="text-align: center;">characteristicType</td>
+<td style="text-align: center;"><em>One or more case-sensitive characteristic types (groupings) separated by semicolons.</em></td>
+<td style="text-align: center;">These groups will be expanded as part of the ongoing collaboration between USGS and USEPA.</td>
+</tr>
+<tr>
+<td style="text-align: center;">characteristicName</td>
+<td style="text-align: center;"><em>One or more case-sensitive characteristic names, separated by semicolons.</em></td>
+<td style="text-align: center;">Characteristic names identify different types of environmental measurements. The names are derived from the USEPA <a href="http://iaspub.epa.gov/sor_internet/registry/substreg/home/overview/home.do">Substance Registry System</a> (SRS). USGS uses parameter codes for the same purpose and has <a href="https://www.waterqualitydata.us/public_srsnames/">associated most parameters</a> to SRS names.</td>
+</tr>
+<tr>
+<td style="text-align: center;">pCode</td>
+<td style="text-align: center;"><em>One or more five-digit USGS parameter codes, separated by semicolons.</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">activityId</td>
+<td style="text-align: center;"><em>One or more case-sensitive activity IDs, separated by semicolons.</em></td>
+<td style="text-align: center;">Designator that uniquely identifies an activity within an organization.</td>
+</tr>
+<tr>
+<td style="text-align: center;">startDateLo</td>
+<td style="text-align: center;"><em>Date of earliest desired data-collection activity, expressed as MM-DD-YYYY</em></td>
+<td style="text-align: center;">These two parameters, used together or individually, restrict the retrieval to data-collection activities within a range of dates.</td>
+</tr>
+<tr>
+<td style="text-align: center;">startDateHi</td>
+<td style="text-align: center;"><em>Date of last desired data-collection activity, expressed as MM-DD-YYYY</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">mimeType</td>
+<td style="text-align: center;"><em>xml</em></td>
+<td style="text-align: center;">Output format is XML compatible with WQX-Outbound schema. This is the default format, and if a mimeType is not specified, the data will be in XML format.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>xlsx</em></td>
+<td style="text-align: center;">Output format is xlsx compatible with MS-Excel 2007 and greater.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>csv</em></td>
+<td style="text-align: center;">Output format is comma-separated columns.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>tsv|tab</em></td>
+<td style="text-align: center;">Output format is tab-separated columns.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>geojson</em></td>
+<td style="text-align: center;">Output format is GeoJSON (JavaScript Object Notation).</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>kml</em></td>
+<td style="text-align: center;">Output format is KML compatible with Google Earth. This option is not available for the results service.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>kmz</em></td>
+<td style="text-align: center;">Output format is kmz, a compressed form of kml compatible with Google Earth. This option is not available for the results service.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Zip</td>
+<td style="text-align: center;"><em>yes</em></td>
+<td style="text-align: center;">Include the parameter to stream compressed data. Compression often greatly increases throughput, thus expediting the request. Kml files will be returned in the kml-specific zip format, .kmz.</td>
+</tr>
+<tr>
+<td style="text-align: center;">providers</td>
+<td style="text-align: center;">*EPA|NWIS*</td>
+<td style="text-align: center;">By default, requests are submitted to all the data providers. However, a particular provider may be specified using this parameter.</td>
+</tr>
+<tr>
+<td style="text-align: center;">sorted</td>
+<td style="text-align: center;"><em>yes|no</em></td>
+<td style="text-align: center;">By default, tabular data are sorted by organization, monitoringLocationID, and (for results) activityID. However, sorting increases response time significantly, sometimes by orders of magnitude. If you are doing your own sorting after download, set sorted=no. For large downloads (over 5 million rows) sorting is disabled by default to ensure reasonable response times. XML requests are always sorted to accommodate the WQX data schema.</td>
+</tr>
+<tr>
+<td style="text-align: center;">dataProfile</td>
+<td style="text-align: center;"><em>biological</em></td>
+<td style="text-align: center;">Only affects results endpoint at this time. The biological dataProfile returns an extended set of columns that further describe biological data.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="example-web-service-requests">Example Web Service Requests</h3>
+<p>To try out the following examples of REST web service requests, copy and paste into a web browser.</p>
+<blockquote>
+<p><em>Example:</em> REST web service request to retrieve sites from <em>Oklahoma County, Oklahoma</em>, where <em>Atrazine</em> was measured in <em>XML</em> format, <em>zipped</em>:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/Station/search?countycode=US%3A40%3A109&amp;characteristicName=Atrazine&amp;mimeType=xml&amp;zip=yes</code></p>
+<blockquote>
+<p><em>Example:</em> REST web service request to retrieve sites contained within a <em>bounding box</em> where <em>Caffeine</em> was measured in <em>KML</em> format, <em>zipped</em>:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/Station/search?characteristicName=Caffeine&amp;mimeType=kml&amp;bBox=-92.8,44.2,-88.9,46.0&amp;zip=yes</code> </p>
+<blockquote>
+<p><em>Example:</em> REST web service request to retrieve stream sites located in the state of Wyoming (USA) where parameters of the characteristicType <em>Nutrient</em> were measured, in <em>GeoJSON</em> format:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/Station/search?countrycode=US&amp;statecode=US%3A56&amp;siteType=Stream&amp;characteristicType=Nutrient&amp;mimeType=geojson</code> </p>
+<blockquote>
+<p><em>Example:</em> REST web service request to retrieve <em>Caffeine</em> sample results from sites contained within a <em>bounding box</em> and <em>collected on, or after, 10-01-2006</em> in <em>MS-Excel</em> format, <em>zipped</em>:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/Result/search?characteristicName=Caffeine&amp;bBox=-92.8,44.2,-88.9,46.0&amp;startDateLo=10-01-2006&amp;mimeType=xlsx&amp;zip=yes</code> </p>
+<h3 id="queries-using-post">Queries Using POST</h3>
+<p>In certain situations when very long requests are submitted - for example, when querying data for a large list of sites - GET requests can fail due to limits in the allowable length of the request. These requests can instead be completed using http POST. POST requests should be submitted with a JSON-formatted payload.</p>
+<p>Here's an example <em>JSON</em> object, including an organization ID and three site ID's:</p>
+<p><code>{
+"organization": ["WIDNR_WQX"],
+"siteid": ["WIDNR_WQX-133003", "WIDNR_WQX-133398", "WIDNR_WQX-133486"]
+}</code></p>
+<p>An example using <em>curl</em> with these data looks like this:</p>
+<p><code>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/zip' -d '{"organization":["WIDNR_WQX"],"siteid":["WIDNR_WQX-133003","WIDNR_WQX-133398","WIDNR_WQX-133486"]} \ 
+ ' 'https://www.waterqualitydata.us/data/Station/search?mimeType=csv&amp;zip=yes'</code></p>
+<p>The --header argument lists metadata for the web service and ensures that the correct information is received and returned. If there are any problems with the request, they are returned in the response via the warning header(s). See <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.46">RFC 2616 Section 14</a> for the format of the warning header. </p>
+<h3 id="retrieving-summary-data-using-the-wqp-summary-web-service">Retrieving Summary Data Using the WQP Summary Web Service</h3>
+<p>Among the web service offerings is also a summary service, which enables users to obtain summary-level information on a data set of interest. This can be useful for evaluating the number and types of data available for particular sites or date ranges. It can also make it quicker and easier to generate summary tables for reports and publications.</p>
+<ul>
+<li>Base URL for the summary service: <code>https://www.waterqualitydata.us/data/summary/monitoringLocation/search?</code></li>
+</ul>
+<p>There are two main types of downloads based on the <em>dataProfile</em> selected: periodOfRecord or summaryMonitoringLocation. </p>
+<ul>
+<li>
+<p><strong>periodOfRecord</strong>: For the queried sites and specific period of record, provides site-level organization and spatial data and annual summaries of total # results (equivalent to total number of records) and total # activities (equivalent to total number of collection events) for each queried characteristicName (i.e. water quality measurement).</p>
+</li>
+<li>
+<p><strong>summaryMonitoringLocation</strong>: For the queried sites and specific period of record, provides site-level organization and spatial data and the total # results (equivalent to total number of records) and total # activities (equivalent to total number of collection events) for all queried characteristicName's combined. Output is in a GeoJSON format only: be sure to specify <em>mimeType=geojson</em> in these queries. </p>
+</li>
+</ul>
+<p>Construct a query by concatenating the base URL with the desired parameters and arguments,as shown in <strong><em>Table 2</em></strong>.  At least one parameter-argument pair is required. Separate multiple parameter-argument pairs with an <em>ampersand</em> ("&amp;"). For downloads, if no file format (<em>mime type</em>) is specified, the retrieval will default to <strong>.csv</strong> format. </p>
+<blockquote>
+<p><em>Example:</em> Summary service request to retrieve annual summary counts from the most recent 5 years of <em>Nutrient</em> data from sites in Benton County, Arkansas in <em>csv</em> format, <em>zipped</em>:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/summary/monitoringLocation/search?countycode=US%3A05%3A007&amp;characteristicType=Nutrient&amp;mimeType=csv&amp;zip=yes&amp;dataProfile=periodOfRecord&amp;summaryYears=5</code></p>
+<blockquote>
+<p><em>Example:</em> Summary service request to retrieve total counts from the most recent 5 years of <em>Nutrient</em> data from sites in Benton County, Arkansas in <em>GeoJSON</em> format, <em>zipped</em>:</p>
+</blockquote>
+<p><code>https://www.waterqualitydata.us/data/summary/monitoringLocation/search?countycode=US%3A05%3A007&amp;characteristicType=Nutrient&amp;zip=yes&amp;dataProfile=summaryMonitoringLocation&amp;summaryYears=5&amp;mimeType=geojson</code></p>
+<p><strong>Table 2. URL-encoded retrieval parameters and arguments for WQP web services.</strong></p>
+<details>
+<summary>Expand Table</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">REST parameter</th>
+<th style="text-align: center;">Argument</th>
+<th style="text-align: center;">Discussion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">bBox</td>
+<td style="text-align: center;"><em>Western-most longitude, Southern-most latitude, Eastern-most longitude, and Northern-most longitudeseparated by commas, expressed in decimal degrees, WGS84, and longitudes west of Greenwich are negative. (Example: bBox=-92.8,44.2,-88.9,46.0)</em></td>
+<td style="text-align: center;">These four arguments are used together to form a quadrant of the Earth's surface for locating data-collection stations. Many stations outside the continental US do not have latitude and longitude referenced to WGS84 and therefore cannot be found using these parameters. Other stations are not associated with latitude and longitude due to Homeland Security concerns.</td>
+</tr>
+<tr>
+<td style="text-align: center;">characteristicName</td>
+<td style="text-align: center;">One or more case-sensitive characteristic names, separated by semicolons. *<em>NOTE: Using this parameter in conjunction with the parameter <em>characteristicType</em> can result in unexpected behavior, particularly when multiple arguments for <em>characteristicType</em> are specified. Combining the two parameters in a single query is not recommended.</em></td>
+<td style="text-align: center;">Characteristic names identify different measurement parameters. The names are derived from the USEPA Substance Registry System.</td>
+</tr>
+<tr>
+<td style="text-align: center;">characteristicType</td>
+<td style="text-align: center;"><em>One or more case-sensitive characteristic types (groupings) separated by semicolons (<a href="https://www.waterqualitydata.us/portal_userguide/#WQPUserGuide-Domain_Value">allowable values</a>).</em></td>
+<td style="text-align: center;">A current list of available characteristicType values can be downloaded <a href="https://cdx.epa.gov/wqx/download/DomainValues/CharacteristicWithPickList_CSV.zip">here</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">countrycode</td>
+<td style="text-align: center;"><em>Two-character Federal Information Processing Standard (FIPS) country code (<a href="https://cdx.epa.gov/wqx/download/DomainValues/Country_CSV.zip">allowable values</a>).</em></td>
+<td style="text-align: center;">FIPS country codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub10-4.pdf">National Institute of Standards, publication 10-4</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">countycode</td>
+<td style="text-align: center;"><em>Two-character Federal Information Processing Standard (FIPS) country code, followed by a URL-encoded colon ("%3A"), followed by a two-digit FIPS state code, followed by a URL-encoded colon ("%3A"), followed by a three-digit FIPS county code. (<a href="https://cdx.epa.gov/wqx/download/DomainValues/County_CSV.zip">allowable values</a>).</em></td>
+<td style="text-align: center;">FIPS county codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub6-4.pdf">National Institute of Standards, publication 6-4</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">dataProfile</td>
+<td style="text-align: center;"><em>summaryMonitoringLocation|periodOfRecord</em></td>
+<td style="text-align: center;">The type of metadata included in the summary data set. This is not the same as the WQX-curated data profiles. summaryMonitoringLocation generates a GeoJSON file that can be imported into mapping software. If not specified, defaults to summaryMonitoringLocation.</td>
+</tr>
+<tr>
+<td style="text-align: center;">huc</td>
+<td style="text-align: center;"><em>One or more eight-digit hydrologic units, delimited by semicolons.</em></td>
+<td style="text-align: center;">Hydrologic unit codes identify surface watersheds. The <a href="http://water.usgs.gov/GIS/huc.html">lists and maps of hydrologic units</a> are available from USGS.</td>
+</tr>
+<tr>
+<td style="text-align: center;">lat</td>
+<td style="text-align: center;"><em>Latitude for radial search, expressed in decimal degrees, WGS84</em></td>
+<td style="text-align: center;">These three arguments are used together to form a circle on the Earth's surface for locating data-collection stations. Many stations outside the continental US do not have latitude and longitude referenced to WGS84 and therefore cannot be found using these parameters.</td>
+</tr>
+<tr>
+<td style="text-align: center;">long</td>
+<td style="text-align: center;"><em>Longitude for radial search, expressed in decimal degrees, WGS84</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">mimeType</td>
+<td style="text-align: center;"><em>csv|geojson</em></td>
+<td style="text-align: center;">Default output format is .csv. Can also be output in  GeoJSON format (JavaScript Object Notation).</td>
+</tr>
+<tr>
+<td style="text-align: center;">nldiurl</td>
+<td style="text-align: center;"><em>URL</em></td>
+<td style="text-align: center;">The navigation query from NLDI for a list of sites.</td>
+</tr>
+<tr>
+<td style="text-align: center;">organization</td>
+<td style="text-align: center;"><em>For USGS organization IDs, append an upper-case postal-service state abbreviation to "USGS-" to identify the USGS office managing the data collection station records. However, a few US states are serviced by one USGS office.</em> (<strong>USGS-MA</strong> = Massachusetts and Rhode Island, <strong>USGS-MD</strong> = Maryland, Delaware, and the District of Columbia, <strong>USGS-PR</strong> = Caribbean Islands, <strong>USGS-HI</strong> = Pacific Islands).</td>
+<td style="text-align: center;">USGS offices sometimes provide data for stations outside the political boundaries associated with the office's organization code. Use the statecode or countycode arguments to search for stations located within those political boundaries.</td>
+</tr>
+<tr>
+<td style="text-align: center;">providers</td>
+<td style="text-align: center;"><em>STORET|NWIS|STEWARDS</em></td>
+<td style="text-align: center;">For EPA (and other WQX submissions), use STORET. For USGS, use NWIS. For USDA/NRCS, use STEWARDS. Defaults to all data providers.</td>
+</tr>
+<tr>
+<td style="text-align: center;">siteid</td>
+<td style="text-align: center;"><em>Concatenate an agency code (e.g. "USGS"), a hyphen ("-"), and a site-identification number.</em></td>
+<td style="text-align: center;">Each data collection station is assigned a unique site-identification number. Other agencies often use different site identification numbers for the same stations.</td>
+</tr>
+<tr>
+<td style="text-align: center;">siteType</td>
+<td style="text-align: center;"><em>One or more case-sensitive site types, separated by semicolons.</em></td>
+<td style="text-align: center;">Restrict retrieval to stations with specified site type (habitat or component of the hydrologic cycle).</td>
+</tr>
+<tr>
+<td style="text-align: center;">statecode</td>
+<td style="text-align: center;"><em>Two-character Federal Information Processing Standard (FIPS) country code, followed by a URL-encoded colon ("%3A"), followed by a two-digit FIPS state code.</em></td>
+<td style="text-align: center;">FIPS state codes were established by the <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub5-2.pdf">National Institute of Standards, publication 5-2</a>.</td>
+</tr>
+<tr>
+<td style="text-align: center;">summaryYears</td>
+<td style="text-align: center;"><em>all|1|5</em></td>
+<td style="text-align: center;">Target date range for summary data: most recent 1 year, 5 years, or all years available. Default=all.</td>
+</tr>
+<tr>
+<td style="text-align: center;">within</td>
+<td style="text-align: center;"><em>Distance for radial search, expressed in decimal miles</em></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">zip</td>
+<td style="text-align: center;"><em>yes|no</em></td>
+<td style="text-align: center;">Include the parameter to stream compressed data. Compression often greatly increases throughput, thus expediting the request.</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h5 id="considerations"><strong>Considerations</strong></h5>
+<ol>
+<li>
+<p>Query parameters are case-sensitive. For example, the waterqualitydata.us service refers to the nitrogen analyte as 'Nitrogen': searching for 'nitrogen' will not produce the expected result. For each of the available input parameters listed in <strong><em>Table 2</em></strong>, there may be up to tens of thousands of potential values: we recommend using one of the two following approaches to determine the correct parameter values to input.</p>
+<p>a. Construct a similar query in the Advanced form of the Water Quality Portal website. From the Results box containing the URL, copy and paste the parameters and argument values into your summary service query, excluding the dataProfile parameter-argument pair, which differs from the dataProfile options for the summary web service. Below is an example screenshot from the Water Quality Portal. The shaded area denotes the section that can be copied and pasted into the summary service URL. The crossed out section indicates the dataProfile, which should be replaced with one of the two allowable options for the summary service, as mentioned above and in Table 2.
+<img alt="Illustration of using the Results URL in the WQP web interface for constructing a summary services URL. " src="/static/img/portal_websvcsguide_image1.jpg"/>
+b. Download the full list of allowable parameter values, available on a per-parameter basis. Links are provided in <strong><em>Table 2</em></strong>.</p>
+</li>
+<li>
+<p>Use caution when specifying a parameter that is nested within another parameter (e.g. <em>characteristicName</em> and  <em>characteristicType</em>; <em>county</em> and <em>state</em>). Queries that combine nested parameters can lead to unexpected behavior, particularly when more than one argument for one or more parameters is specified. Combining nested parameters with multiple arguments for a given parameter is therefore <strong>not</strong> recommended.
+For example, the following query parameters used in combination may not produce the expected result:</p>
+</li>
+</ol>
+<p><code>characteristicType=Nutrient&amp;characteristicType=Physical&amp;characteristicName=Nitrogen&amp;characteristicName=Temperature</code></p>
+<h3 id="using-open-geospatial-consortium-services-to-map-water-quality-portal-sites-based-on-water-quality-portal-parameters">Using Open Geospatial Consortium Services to map Water Quality Portal sites based on Water Quality Portal Parameters</h3>
+<p>The Water Quality Portal has an endpoint for generating OGC-Compliant Geospatial web services. At this time, <a href="http://docs.geoserver.org/stable/en/user/services/wms/reference.html">Web Mapping Service (WMS)</a> version 1.3.0 and <a href="http://docs.geoserver.org/stable/en/user/services/wfs/reference.html">Web Feature Service (WFS)</a> version 2.0.0 are supported. The service is a customized version of the WMS and WFS services provided by <a href="http://www.geoserver.org/">Geoserver</a>. To get started, check out the Geoserver WMS Reference and WFS Reference. </p>
+<p>The base URL for both the WMS and WFS services is:
+<code>https://www.waterqualitydata.us/ogcservices/{wms|wfs}</code></p>
+<p>Use web mapping tools, such as <em>Leaflet</em> or <em>Openlayers</em>, to easily connect to these web map services. GIS tools such as <em>ArcGIS</em> and <em>QGIS</em> also connect to these web maps services.</p>
+<p>WFS and WMS services require an additional parameter, called "SearchParams", which is a URL-encoded version of the WQP search parameters. The service supports calls up to up to 250,000 sites. Calls that return large numbers of sites will take longer to load for the first time, as a cache is populated; subsequent responses will be much quicker. The cache is cleared after new data are loaded to the portal (once a day, at night).</p>
+<p>At this time, we support WMS GetMap, WMS GetFeatureInfo, and WMS GetLegendGraphic.</p>
+<p><strong>WMS Getmap</strong> </p>
+<ul>
+<li>For detailed information on constructing a WMS getmap request, refer to the <a href="http://docs.geoserver.org/stable/en/user/services/wms/reference.html#getmap">GetMap documentation at the Geoserver site</a>.  </li>
+<li>Here is an example GetMap Request for stream sites that have samples for <em>atrazine</em>:
+<code>https://www.waterqualitydata.us/ogcservices/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;VERSION=1.1.1&amp;LAYERS=wqp_sites&amp;STYLES=wqp_sources&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;HEIGHT=256&amp;WIDTH=256&amp;SEARCHPARAMS=countrycode%3AUS%3BcharacteristicName%3AAtrazine&amp;SRS=EPSG%3A3857&amp;BBOX=-15028131.257091932,-7.081154551613622e-10,-10018754.171394622,5009377.085697313</code></li>
+</ul>
+<h3 id="looking-up-domain-values-through-web-services"><strong>Looking Up Domain Values Through Web Services</strong></h3>
+<p>The allowable values for each query variable (referred to as <em>domain values</em>) may change over time as new values are added. There is a web service request that allows you to look up which values are allowed for a query parameter. </p>
+<p>A list of parameter names and arguments to use for these web service requests is shown in <strong><em>Table 3</em></strong>.</p>
+<p>Base URL for looking up domain values: <code>https://www.waterqualitydata.us/Codes/{endpointName}?{parameter}</code></p>
+<p>You must provide at least one argument in the web service call. If you want all domain values, you can just specify the <em>mimetype</em> (e.g. mimeType=json).</p>
+<p><strong><em>Table 3.</em> Domain values web service parameters and arguments</strong></p>
+<details>
+<summary>Expand Table</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">{endpointName}</th>
+<th style="text-align: center;">REST parameter</th>
+<th style="text-align: center;">Argument</th>
+<th style="text-align: center;">Discussion</th>
+<th style="text-align: center;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Common parameters for all domain values web services</td>
+<td style="text-align: center;">mimeType</td>
+<td style="text-align: center;">xml|json</td>
+<td style="text-align: center;">returns either XML or json. Default is xml</td>
+<td style="text-align: center;"><a href="https://waterqualitydata.us/Codes/characteristicname?text=ph&amp;pagesize=20&amp;pagenumber=1&amp;mimeType=json">https://waterqualitydata.us/Codes/characteristicname?text=ph&amp;pagesize=20&amp;pagenumber=1&amp;mimeType=json</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">pagenumber</td>
+<td style="text-align: center;">page number (1,2 etc)</td>
+<td style="text-align: center;">allows for results to be paginated (especially useful for endpoints with many valid responses, allows for infinite scrolling). Use along with pagesize</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">pagesize</td>
+<td style="text-align: center;">e.g. 20</td>
+<td style="text-align: center;">number of results to return per page</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">text</td>
+<td style="text-align: center;">e.g. ph</td>
+<td style="text-align: center;">text to match to endpoint results. This is straight string matching. When the text parameter is used, the results are returned sorted by length</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Endpoints with unique query parameters in addition to common query parameters</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">countrycode</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">FIPS country codes</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">statecode</td>
+<td style="text-align: center;">countrycode</td>
+<td style="text-align: center;">A FIPS country code (e.g. US)</td>
+<td style="text-align: center;">FIPS state codes. A FIPS country code argument is appended so that the URL ends as /statecode?countrycode=US</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/statecode?countrycode=US">https://www.waterqualitydata.us/Codes/statecode?countrycode=US</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">countycode</td>
+<td style="text-align: center;">statecode</td>
+<td style="text-align: center;">A FIPS statecode (e.g. statecode=US:01;US:04)</td>
+<td style="text-align: center;">FIPS county codes. A FIPS statecode argument is appended so that the URL ends as /countycode?statecode=US:01;US:04</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/countycode?statecode=US:01;US:04">https://www.waterqualitydata.us/Codes/countycode?statecode=US:01;US:04</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Sitetype</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Available site types</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/Sitetype?mimeType=json">https://www.waterqualitydata.us/Codes/Sitetype?mimeType=json</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Organization</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Available organization IDs</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/Organization?mimeType=xml">https://www.waterqualitydata.us/Codes/Organization?mimeType=xml</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Samplemedia</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Sample media</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/Samplemedia?mimeType=xml">https://www.waterqualitydata.us/Codes/Samplemedia?mimeType=xml</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Characteristictype</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Characteristic types (groups)</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/Characteristictype?mimeType=xml">https://www.waterqualitydata.us/Codes/Characteristictype?mimeType=xml</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Characteristicname</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Characteristic names. A good choice for using paginated results so that hundreds of results are not returned</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/Characteristicname?mimeType=xml">https://www.waterqualitydata.us/Codes/Characteristicname?mimeType=xml</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">providers</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">The names of the Data Sources for the Water Quality Portal</td>
+<td style="text-align: center;"><a href="https://www.waterqualitydata.us/Codes/providers?mimeType=xml">https://www.waterqualitydata.us/Codes/providers?mimeType=xml</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="using-arcgis-online-to-map-water-quality-portal-sites">Using ArcGIS Online to map Water Quality Portal Sites</h2>
+<p>Station data from the Water Quality Portal can be imported to ArcGIS Online. To get started, create a query using the Advanced form and copy the Station Web Service query at the bottom of the form.</p>
+<h3 id="adding-wqp-stations-from-the-web-new-map-viewer">Adding WQP Stations from the Web (New Map Viewer)</h3>
+<ul>
+<li>In your ArcGIS Online account, Open the Map Viewer. </li>
+<li>Under the layers tab, open the add dropdown and select “Add layer from URL”. </li>
+<li>Paste the Station query you copied above into the URL field. You may add the layer as either a csv or GeoJSON but both should be imported as a non-zipped file. </li>
+<li>Edit the URL to read "mimeType=geojson&amp;zip=no". </li>
+<li>Next, select the layer type as GeoJSON, then click next. You will be given the option of adding the layer to the map, or hosting the web layer in your content. For best results, larger queries should use the hosted feature layer option. </li>
+<li>Select “Add to Map”. The stations you queried should appear on the map.</li>
+</ul>
+<h3 id="adding-wqp-stations-data-from-the-web-classic-map-viewer">Adding WQP Stations data from the Web (Classic Map viewer)</h3>
+<ul>
+<li>In your ArcGIS Online account, Open a Classic Map Viewer. </li>
+<li>Click the “Add” dropdown and select “Add Layer from Web”. </li>
+<li>Select “A CSV File” from the file type dropdown and paste the WQP Station Query URL that was generated by your search. </li>
+<li>Edit the URL zip instructions to read “mimetype=csv&amp;zip=no” and click the “ADD LAYER” button. A pop-up will ask you to identify the latitude and longitude fields in the data. </li>
+<li>Scroll down the data fields to correctly identify “LatitudeMeasure” and “LongitudeMeasure” as the respective fields. </li>
+<li>Select “ADD LAYER” again and the stations should appear in the map.</li>
+</ul>
+<h3 id="example-station-call-csv">Example Station call (csv)</h3>
+<p>Here is an an example station call for all stations with data in Prince George County, Maryland:
+'https://www.waterqualitydata.us/data/Station/search?countrycode=US&amp;statecode=US%3A24&amp;countycode=US%3A24%3A033&amp;mimeType=csv&amp;zip=no&amp;providers=NWIS&amp;providers=STEWARDS&amp;providers=STORET'</p>
+<h3 id="example-summary-service-call-geojson">Example Summary Service call (geojson)</h3>
+<p>Here is an example of a summary service call for a 5-year summary of all nutrient data in Baxter County, Arkansas:
+'https://www.waterqualitydata.us/data/summary/monitoringLocation/search?countycode=US%3A05%3A007&amp;characteristicType=Nutrient&amp;zip=no&amp;dataProfile=summaryMonitoringLocation&amp;summaryYears=5&amp;mimeType=geojson'</p>
+<p>You can follow these same instructions to import any of the other WQP profile services, including the Result Service, Period of Record Service, or Station Summary Service simply by following the same conventions of mimetype and zip=no. You can find additional information for building calls in our web services documentation above.</p>
+<p>Note, currently all csv and geojson calls are supported in the New Map Viewer. In the Classic Map Viewer, you cannot add a geojson from the map, but may still import a hosted geojson feature service, and while you may import a csv directly into the map, there is no service to host a csv.</p>
+	</div>
+</div>
+
+        </main>
+        <div id="footer-content">
+            <div id="footer-row-div">
+    <footer class="usa-footer">
+        <div class="usa-footer__primary-section" id="primary-footer">
+            <nav class="usa-footer__nav" aria-label="Footer navigation">
+                <ul class="grid-row grid-gap">
+                    <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                        <a class="usa-footer__primary-link" href="/wqp_description/">What is
+                            the WQP?</a>
+                    </li>
+                    <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                        <a class="usa-footer__primary-link" href="/orgs/">Contributing orgs</a>
+                    </li>
+                    <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                        <a class="usa-footer__primary-link" href="/apps_using_portal/">Apps
+                            using the WQP</a>
+                    </li>
+                    <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                        <a class="usa-footer__primary-link" href="/other_portal_links/">Other
+                            Water Quality Portals</a>
+                    </li>
+                    <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                        <a class="usa-footer__primary-link" href="/provider/">Explore WQP
+                            sites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div class="usa-footer__logo grid-row mobile-lg:grid-col-4 mobile-lg:grid-gap-1">
+                        <div class="mobile-lg:grid-col-auto">
+                            <!-- <img class="usa-footer__logo-img" src="img/uswds/USGS_logo.gif" alt=""> -->
+                            <a href="http://usgs.gov"><img alt="USGS Science for a changing world"
+                                                           src="/static/img/USGS_logo.gif"/></a>
+                        </div>
+                        <div class="mobile-lg:grid-col-auto">
+                            <!-- <img class="usa-footer__logo-img" src="img/uswds/USGS_logo.gif" alt=""> -->
+                            <a href="http://epa.gov"><img alt="EPA"
+                                                          src="/static/img/EPA_logo.gif"/></a>
+                        </div>
+                    </div>
+                    <div id="etlSection" class="mobile-lg:grid-col-4">
+                        <div><b>NWIS (USGS)</b> Last Content Change: <span id="usgsETL"></span></div>
+                        <div><b>WQX (EPA)</b> Last Content Change: <span id="epaETL"></span></div>
+                    </div>
+                    <div class="usa-footer__contact-links mobile-lg:grid-col-4">
+                        <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
+                        <address class="usa-footer__address">
+                            <div class="usa-footer__contact-info grid-row grid-gap">
+                                <div class="grid-col-auto">
+                                    <a href="tel:1-800-424-9067">1-800-424-9067</a>
+                                </div>
+                                <div class="grid-col-auto">
+                                    <a href="mailto:WQX@epa.gov">WQX@epa.gov</a>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="/static/scripts/actions.514e4648.js"></script>
+    
+
+</body>
+
+</html>

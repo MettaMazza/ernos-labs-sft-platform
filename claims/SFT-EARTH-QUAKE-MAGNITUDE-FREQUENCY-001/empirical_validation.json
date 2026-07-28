@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001",
+  "data_source_ids": [
+    "USGS-EARTHQUAKE-FDSN-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:65c72845595afae21a6f96820c6a9efc02d10a2eff7a9728e5794eee6b2f9a4a",
+  "falsification_condition": "Reject if the catalog selects the exponent, if incomplete small events are treated as absent, or if one fitted line erases scale-dependent departures.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d1099e340cee23d535fc24031e3e396d5decd438ec2c6fc05b846b19d6e46885",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:867e0ec01d0452a8ab3e1dacb293b16c6d210922a174ab0eed673f1de99f25fe",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3d2ea1fb372d273b78c01b4cb3d96f68fecf5065c575ea29ebaafde37415a488",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:227bb951b6acb3cb5d555046d2c13a0b3e503b713bfe896c00e7534afcea2b0c",
+    "prediction_seal_hash": "sha256:2e5d4192df22060d02ab9e55affe12556321ca9fa37e410f340a732a0734d5d3",
+    "program_hash": "sha256:1a7d6b5bd2a0cc752430831771ff1804efa0d6fcb42acccbe30a634239c00aa5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:db9fb8ad57d0e54994e5108800a085132130d6eeb7b19f15d593359619d19329",
+    "target_material_present": false,
+    "trace_hash": "sha256:d0698d75343237761e344d442f4858cd5fa9823c132e815b8efd399a6afd59f9"
+  },
+  "measurement_receipt_hash": "sha256:9cd2a75a62bc03b4719eba7d11001b4c5fd7710a96024f219930128327628199",
+  "measurements": [
+    "sft-earth-quake-magnitude-frequency-001-external-earth-evidence: predicted earth:complete-catalog-size-count-carrier__scale-to-frequency-recurrence__magnitude-scale-threshold-region-time-and-residuals-held__catalog-completeness-bounded__exact-unit-exponent-presealed; source-derived earth:complete-catalog-size-count-carrier__scale-to-frequency-recurrence__magnitude-scale-threshold-region-time-and-residuals-held__catalog-completeness-bounded__exact-unit-exponent-presealed; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected",
+    "earthquake unit-exponent test: mixed catalogue adverse retained; separately preregistered homogeneous mww holdout compatible"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:54b56c157abe6a97f9aa0df05a2687bb10f14adfe35a35bdf88b551870eb41ac",
+    "custodian_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:65c72845595afae21a6f96820c6a9efc02d10a2eff7a9728e5794eee6b2f9a4a",
+    "prediction_seal_hash": "sha256:2e5d4192df22060d02ab9e55affe12556321ca9fa37e410f340a732a0734d5d3",
+    "registered_target_identity_hash": "sha256:db9fb8ad57d0e54994e5108800a085132130d6eeb7b19f15d593359619d19329",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:68f83fdc1761d8c72d417ec0e615a92bb330a99fa653a318cc71b35b804c2276"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:c81b35ab12973adbf829fcc5bc630ff4878db9ed7403186d96495b2274e3e319"
+}

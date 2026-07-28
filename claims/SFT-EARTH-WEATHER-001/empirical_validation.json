@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-WEATHER-001",
+  "data_source_ids": [
+    "NOAA-GHCND-001",
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "EPA-AIRDATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:84b88b7f7d339b9d95a104f68300c132576a16ed9a693ad702ffb9df46eb09d7",
+  "falsification_condition": "Reject if forecast skill selects the governing law, if adverse forecasts are dropped, or if a model trajectory is relabelled as measured weather.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:897c86cee1ec752781bb115ee74b83731339282e9cf45cfb3eab9e745e534448",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:d3f21744aa97dd8d4af82d1f9d5e5ee9680e08452dea3cf3ca3341686c5458d5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-WEATHER-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:117188b6dc894211fd10dd17f627e9ef53ec6d8ca855129ff286d1a4dc6a9f62",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:67145c70afe4ccdc8ca598d8112b63eeb85a0d7365e970f56e196640fee4e4aa",
+    "prediction_seal_hash": "sha256:e536e04a70871c3d03696a629dc8f27769a448103c4dff162154e4726aa13f07",
+    "program_hash": "sha256:3a9e1550ee7135d39cb8659de189d00c92e6b96cd37aea4bee596c6a61cb0f7b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5ff961ca7e75b502b56d2991555aad705e11f69dcaea8b76210dca62f21e5bfa",
+    "target_material_present": false,
+    "trace_hash": "sha256:e0b436e705d57ab6b74eef621e98e68c3af0c433a97978651e377b639e1ae7ea"
+  },
+  "measurement_receipt_hash": "sha256:92f942d23847c9c1cdcccae9db646385172c12c9eabe5dfaf4a22a3469c54add",
+  "measurements": [
+    "sft-earth-weather-001-external-earth-evidence: predicted earth:finite-time-atmospheric-state-carrier__state-transition-and-observation-relation__initial-state-forcing-resolution-ensemble-and-outcomes-held__forecast-horizon-bounded; source-derived earth:finite-time-atmospheric-state-carrier__state-transition-and-observation-relation__initial-state-forcing-resolution-ensemble-and-outcomes-held__forecast-horizon-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:b6248f05c4726bfbc2ad983fafe5b1797854db5d72eecf6ad1e3d14e7dc5c257",
+    "custodian_id": "SFT-EXP-EARTH-WEATHER-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:84b88b7f7d339b9d95a104f68300c132576a16ed9a693ad702ffb9df46eb09d7",
+    "prediction_seal_hash": "sha256:e536e04a70871c3d03696a629dc8f27769a448103c4dff162154e4726aa13f07",
+    "registered_target_identity_hash": "sha256:5ff961ca7e75b502b56d2991555aad705e11f69dcaea8b76210dca62f21e5bfa",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b062f58381c2da1442bd9c9df3d3a09b8adabbb7bfc60ae4da718af3194512a9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:c69a83e2b54ca4eaa93deefdb4b9d7b33acfa9a46a3510a26f398c791642f10e"
+}

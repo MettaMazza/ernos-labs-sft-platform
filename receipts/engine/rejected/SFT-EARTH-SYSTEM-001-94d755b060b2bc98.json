@@ -1,0 +1,58 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-EARTH-SYSTEM-001",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:59370dd4e21185b0a9e880f2b20959e60656db886911056b87f16e4f6ff84721",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": "sha256:df1f1f54488ee927d6fba729cddca349df2a9f6b2311af7b2472ee49637953be",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "empirical validator raised: target material cannot be opened before prediction seal",
+      "gate": "empirical_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "empirical_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:94d755b060b2bc98dab2273576e855ca59bf7a02f3f902d896609334478c0fa9",
+  "violations": [
+    "empirical validator raised: target material cannot be opened before prediction seal"
+  ]
+}

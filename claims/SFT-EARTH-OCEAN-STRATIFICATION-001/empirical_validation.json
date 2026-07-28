@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-OCEAN-STRATIFICATION-001",
+  "data_source_ids": [
+    "NOAA-WOD-001",
+    "ARGO-DATA-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:42af652e1c6e8b9521abd570232d5a6bd53dfad332972941cc036889a28dd0fd",
+  "falsification_condition": "Reject if a single profile fixes a persistent layer globally or if density is imported without its admitted physical and compositional dependencies.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0e3ec9de26d9874af007ae582449853017f390a1428c5f55a03dcfe5a01c694d",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:3e609789ee462a724965fb1641ea35904fba75e09b84992ed976e9e52c2cbaf8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-OCEAN-STRATIFICATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:df96fe4e6e238882845a235de7c88cd5f2304f5adb67f9117dd0231c3299b64e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c4556ba16dc822adaef2a29c12b411293abcd6dd6abf76bd0a8b8a654eacfa19",
+    "prediction_seal_hash": "sha256:6b1e92b76f7389d14f309f490d566b225aee6759949b57d0db85dc493e2b29c8",
+    "program_hash": "sha256:6d170a5dac5405746614418f2ebdcee1919da0a9880a02530fbd9673f7eb0845",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a0f403cabf26f221a4bb0e6deb87e6e9202c49df8680b1f58200612210ce32e5",
+    "target_material_present": false,
+    "trace_hash": "sha256:e70f6d066d13d886e08ab17f0c4dcac12d28db3da796daf0d264f229b9dd3468"
+  },
+  "measurement_receipt_hash": "sha256:6dde6518902d97aaf293790a68d9c24e73a3114ce4a6d1105845347819408d85",
+  "measurements": [
+    "sft-earth-ocean-stratification-001-external-earth-evidence: predicted earth:depth-indexed-water-mass-carrier__property-contrast-and-layer-stability-relation__temperature-composition-pressure-mixing-and-time-held__profile-network-bounded; source-derived earth:depth-indexed-water-mass-carrier__property-contrast-and-layer-stability-relation__temperature-composition-pressure-mixing-and-time-held__profile-network-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:311b9803cabe8bde5820eb76ea8571589c50718dc084ac22c3a267cd4367acf5",
+    "custodian_id": "SFT-EXP-EARTH-OCEAN-STRATIFICATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:42af652e1c6e8b9521abd570232d5a6bd53dfad332972941cc036889a28dd0fd",
+    "prediction_seal_hash": "sha256:6b1e92b76f7389d14f309f490d566b225aee6759949b57d0db85dc493e2b29c8",
+    "registered_target_identity_hash": "sha256:a0f403cabf26f221a4bb0e6deb87e6e9202c49df8680b1f58200612210ce32e5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:1b03c7170a216ef76563d9f41c5d4b25303e9fbe46bfe2ab902ce9c1de7bb000"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:43d25e648c7d1110e1c241bb9677d8657d3cde0afbddd3e226699cafb27da2f7"
+}

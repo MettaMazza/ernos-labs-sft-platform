@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-CARBON-CYCLE-001",
+  "data_source_ids": [
+    "NOAA-GML-CO2-001",
+    "NOAA-WOD-001",
+    "WQP-WEB-SERVICES-001",
+    "NEON-OPEN-DATA-001",
+    "GBIF-OCCURRENCE-API-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:7061a7e6b2b93b8007979feecd17776f875832b70e592369d7dffa35fd25a494",
+  "falsification_condition": "Reject if chemically distinct carriers are merged, if an unmeasured sink closes the budget by assumption, or if biological uptake is rederived rather than cited.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:866ff5cc49a05b6ae7adabdee33bf255efcafbb0d4ce45660f0a546a6023ec16",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0ae08c5828290f3225e2c7e9db99a2ae7a02969a779f0406637030a13f1dd2e2",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-CARBON-CYCLE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:49bf9727d352115e1e0050c02224d4238d5373c302d379d845a5b92310bdc427",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:31e50d7c7df3d6753b9909a81c1b9e07d26460fc2eedd5957d432dc7e2dbfd09",
+    "prediction_seal_hash": "sha256:0f9e0571937d618ac79209e08695959804cde24266b958ad32173786a03074a8",
+    "program_hash": "sha256:6da2fb73ce084b75ec03669b1233bb7a2c268d03fbd623c53fb8964dd441615b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:d5db6cf2d00e9439f8de0c54bf98085a4acd4895e01b07661b8eb44a675e798a",
+    "target_material_present": false,
+    "trace_hash": "sha256:e95fec455552c5ff24ed126acfa83a869d60e22970eba3562da1c40ef07fe7b0"
+  },
+  "measurement_receipt_hash": "sha256:0d9e8648542afe5add8765f7bd2be0ad5477ea19a6450cfe4fc78af81a209b15",
+  "measurements": [
+    "sft-earth-carbon-cycle-001-external-earth-evidence: predicted earth:carbon-species-reservoir-network__transformation-storage-and-transfer-relation__species-isotopes-stocks-flows-boundaries-and-time-held__earth-carbon-domain-bounded; source-derived earth:carbon-species-reservoir-network__transformation-storage-and-transfer-relation__species-isotopes-stocks-flows-boundaries-and-time-held__earth-carbon-domain-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:1cf161cf2320fb3c777ac9271ca830951ff3cf82a60534548c41fdb3c9c7da21",
+    "custodian_id": "SFT-EXP-EARTH-CARBON-CYCLE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:7061a7e6b2b93b8007979feecd17776f875832b70e592369d7dffa35fd25a494",
+    "prediction_seal_hash": "sha256:0f9e0571937d618ac79209e08695959804cde24266b958ad32173786a03074a8",
+    "registered_target_identity_hash": "sha256:d5db6cf2d00e9439f8de0c54bf98085a4acd4895e01b07661b8eb44a675e798a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e302fe09b578a25c8187a8f38d535f9e49f1cfe246a6fe92927c941421d51644"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:eac7dd0f86c2abb1a9efb0d44009efb4378097dce6be056a8a73909ce918cc66"
+}

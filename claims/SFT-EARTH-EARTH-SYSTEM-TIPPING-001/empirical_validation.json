@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-EARTH-SYSTEM-TIPPING-001",
+  "data_source_ids": [
+    "NOAA-PALEO-001",
+    "NOAA-GHCND-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5c256b149ea8a020a05e6864b0cc5704d0ee161c5c19fc442c2f7dbc17f8f5a2",
+  "falsification_condition": "Reject if abrupt change alone establishes tipping, if the threshold is read from the validation target, or if reversible and ordinary-variable alternatives survive.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ceaaf922f0470c0e410e9988b384de3ce94a63914c7420bd4f4ee87b697ed3ca",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:41cfe40c79e7469383cfddb691ba0ffadef14904f9c465c9eebfe0bcba3c5f58",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-EARTH-SYSTEM-TIPPING-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:25a94600162d01fd7070affce7e676e0544702c25587dc2ea412128d91384bd4",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d8e9815014ed59d43249af48df66002779ece17f36d255bc4e44ed3404ef6701",
+    "prediction_seal_hash": "sha256:da669beb19aae2ced2fbe3f26fa39bbdf003a71b8eb7f40c1cfc260f5ef566e3",
+    "program_hash": "sha256:106b79b800170a137368eb06bdd3da22bc3f090c79b7fcd0a185f3ab0bf47599",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9cf62e5c4fc0cafb5715ec24e5957c024c9caafae0e754e8a302e73f32b73bc8",
+    "target_material_present": false,
+    "trace_hash": "sha256:f5a555ea1ecb0919fe6cefc1d0e0c47b8699272c5f7a8df4571ede49be8b9152"
+  },
+  "measurement_receipt_hash": "sha256:73b7062f54c6adc8ed521f12ac7811555087b1cf3e0c9978e787b9405044369b",
+  "measurements": [
+    "sft-earth-earth-system-tipping-001-external-earth-evidence: predicted earth:multi-basin-state-forcing-carrier__threshold-crossing-hysteresis-and-return-relation__state-variable-driver-path-rate-controls-and-time-held__system-proxy-and-timescale-bounded__two-basin-structure-no-universal-physical-half-threshold; source-derived earth:multi-basin-state-forcing-carrier__threshold-crossing-hysteresis-and-return-relation__state-variable-driver-path-rate-controls-and-time-held__system-proxy-and-timescale-bounded__two-basin-structure-no-universal-physical-half-threshold; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:a0429b9dbdea722fcb1a70a3b62da78305dc0a541e3294657975401e7d374143",
+    "custodian_id": "SFT-EXP-EARTH-EARTH-SYSTEM-TIPPING-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:5c256b149ea8a020a05e6864b0cc5704d0ee161c5c19fc442c2f7dbc17f8f5a2",
+    "prediction_seal_hash": "sha256:da669beb19aae2ced2fbe3f26fa39bbdf003a71b8eb7f40c1cfc260f5ef566e3",
+    "registered_target_identity_hash": "sha256:9cf62e5c4fc0cafb5715ec24e5957c024c9caafae0e754e8a302e73f32b73bc8",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:629011b16ee137bb98ed658c8fb43460031d155107949fa298cb949b6b142918"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:186605d03001baac2b820b876856449173e7217e588570a76dee02561fe2b395"
+}

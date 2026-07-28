@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+      <title>
+        
+          NSF SAGE: 
+  DMC Web Services
+
+        
+      </title>
+      
+  <meta name="keywords" content="seismology, seismological data,
+  earthquakes, iris dmc" />
+  <!-- Forces IE to render in 'latest' compatible mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+
+
+
+
+
+
+      
+  <link rel="stylesheet" media="all" type="text/css" href="/static/css/iris.css" />
+
+  <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
+  
+  
+
+  
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+  
+
+      
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <!--
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/static/libs/megamenu/megamenu_plugins.js"></script>
+    <script type="text/javascript" src="/static/libs/megamenu/megamenu.min.js"></script>
+    -->
+  
+
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1860730-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-1860730-1');
+    </script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/static/libs/qtip2/2.1.1/jquery.qtip.css" />
+    <script type="text/javascript" src="/static/libs/qtip2/2.1.1/jquery.qtip.js"></script>
+    <script>
+      $(function() {
+        /* Automatically set up popup help blocks like:
+         * <div class="popup-help">
+         *   <span class="glyphicon glyphicon-question-sign"> </span>
+         *   <div>
+         *      Content to show in the popup.
+         *   </div>
+         * </div>
+         * Hovering over the icon shows the content in a popup.
+         */
+        $(".popup-help").each(function() {
+          var content = $(this).children('div').detach();
+          var popupOnClick = $(this).hasClass('popup-on-click');
+          // Attach to the first element
+          $(this).children().first().qtip({
+            content: { text: content },
+            style: { classes: 'qtip-bootstrap' },
+            hide: {
+              delay: 100,
+              fixed: true
+            },
+            show: {
+              event: popupOnClick ? 'click' : 'mouseenter'
+            },
+            position: {
+              viewport: $(window)
+            },
+          });
+        });
+      });
+    </script>
+  
+
+
+      
+  
+  <!-- START: Syntax highlighting -->
+  <link rel="stylesheet"
+        type="text/css"
+        href="/static/libs/prettify/r298/css/prettify.css" />
+  <script type="text/javascript"
+          src="/static/libs/prettify/r298/js/prettify.js">
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    prettyPrint();
+  });
+  </script>
+  <!-- END: Syntax highlighting -->
+
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-iris-theme/jquery-ui-1.8.23.custom.css" />
+  <link rel="stylesheet" type="text/css" href="/static/webservicedoc/css/services.css" />
+  <link rel="stylesheet" type="text/css" href="/static/webservicedoc/css/prism.css" />
+  <script type="text/javascript" src="/static/webservicedoc/js/datacite-references.js"></script>
+  <script type="text/javascript" src="/static/webservicedoc/js/prism.js"></script>
+
+    
+  </head>
+
+  <body>
+  
+
+    
+
+<div class="iris-purple">
+  <div class="container" style="position: relative">
+    <div class="row">
+      <div class="col-xs-12 p-margin">
+        <a href="https://www.iris.edu/hq/sage" 
+            target="_blank"
+            title="NSF SAGE"
+        >
+            <img src="/static/img/layout/logos/sage_web_white.svg" 
+                alt="NSF SAGE"
+                height="90"
+                style="margin-left:-10px"
+            />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+    <div class="container blur">
+      <div id="breadcrumbs">
+      
+        <ul class="breadcrumbs">
+          
+            
+              <li>
+                <a href="/">Web Services</a>
+              </li>
+            
+          
+        </ul>
+      
+      </div>
+
+      
+    
+  
+
+              
+              
+
+              <div id="page-content">
+
+                
+                  
+
+
+                  
+
+
+                
+
+                
+                  
+                
+
+                
+
+                  <h1>
+                  
+  NSF SAGE Facility Web Services
+
+                  </h1>
+                  
+                  
+
+                  <div id="content">
+                    
+
+	<p class="alert alert-info">These services may be used under <span class="caps">NSF</span> <span class="caps">SAGE</span> Facility
+  <a href="https://ds.iris.edu/ds/nodes/dmc/terms-of-service/">Terms of Service</a>
+  in accordance with our <a href="https://ds.iris.edu/ds/nodes/dmc/services/usage/">Usage Guidelines</a>.
+  Usage of the services and data in publications should cite the services according to our
+  <a href="https://www.iris.edu/hq/iris_citations">citation instructions</a> and
+  <a href="https://www.fdsn.org/networks/citation/">data by network</a>.</p>
+
+
+  
+
+    <h2>Service Implementations</h2>
+    
+      
+        <h3><a href="fdsnws">FDSNWS</a></h3>
+        
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Service Interface</th>
+                <th>Version</th>
+                <th>Summary</th>
+                <th>Return options</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/fdsnws/station/1/">
+                          station
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/fdsnws/station/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>metadata for time series stored in <span class="caps">SEED</span> format</p></td>
+                    <td>	<ul>
+		<li><a href="http://www.fdsn.org/xml/station/"><span class="caps">FDSN</span> StationXML</a></li>
+		<li>Text</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/fdsnws/dataselect/1/">
+                          dataselect
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/fdsnws/dataselect/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>time series data in miniSEED and other formats</p></td>
+                    <td>	<p><a href="https://ds.iris.edu/ds/nodes/dmc/data/formats/miniseed/">miniSEED</a><br />
+<a href="https://ds.iris.edu/files/sac-manual/manual/file_format.html"><span class="caps">SAC</span> zip</a><br />
+<a href="https://ds.iris.edu/files/documents/GeoCSV.pdf">GeoCSV</a></p></td>
+                  </tr>
+                
+              
+            </tbody>
+          </table>
+        
+      
+    
+      
+        <h3><a href="irisws">IRISWS</a></h3>
+        
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Service Interface</th>
+                <th>Version</th>
+                <th>Summary</th>
+                <th>Return options</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/fedcatalog/1/">
+                          fedcatalog
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/fedcatalog/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>A service for federating requests for channel metadata across multiple data centers</p></td>
+                    <td>	<p>text, request</p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/nrl/1/">
+                          nrl
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/nrl/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>A service for integrating with the Nominal Response Library</p></td>
+                    <td>	<p>__json, xml, <a href="http://www.fdsn.org/xml/station/">StationXML</a>, <a href="https://ds.iris.edu/files/xml/station/fdsn-station-response-1.1.xsd">StationXML-Response</a>, <a href="https://ds.iris.edu/ds/nodes/dmc/data/formats/resp/"><span class="caps">SEED</span> <span class="caps">RESP</span></a></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/syngine/1/">
+                          syngine
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/syngine/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>A service for synthetic seismograms</p></td>
+                    <td>	<p><span class="caps">SACZIP</span> and miniSEED</p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/timeseries/1/">
+                          timeseries
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/timeseries/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>similar to ws-dataselect with additional options for processing and reformatting</p></td>
+                    <td>	<p><span class="caps">ASCII</span>, <span class="caps">WAV</span>, <a href="http://ds.iris.edu/ds/nodes/dmc/data/types#miniSEED">miniSEED</a>, <a href="http://ds.iris.edu/ds/nodes/dmc/software/downloads/sac"><span class="caps">SAC</span></a>, <span class="caps">PNG</span></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/timeseriesplot/1/">
+                          timeseriesplot
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/timeseriesplot/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>A charting webservice offering timeseries graphic display in single-line or helicorder styles</p></td>
+                    <td>	<p>image: <span class="caps">PNG</span> (default) or <span class="caps">JPEG</span></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/rotation/1/">
+                          rotation
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/rotation/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>rotate waveform data into alternate coordinate system</p></td>
+                    <td>	<ul>
+		<li>zipped (various)</li>
+		<li>png</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/sacpz/1/">
+                          sacpz
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/sacpz/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>instrument response information (per channel)</p></td>
+                    <td>	<p>Poles and Zeroes in <span class="caps">ASCII</span></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/resp/1/">
+                          resp
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/resp/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>channel response information</p></td>
+                    <td>	<p><a href="https://ds.iris.edu/ds/nodes/dmc/data/formats/resp/"><span class="caps">SEED</span> <span class="caps">RESP</span></a></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/evalresp/1/">
+                          evalresp
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/evalresp/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>instrument response information evaluated from <span class="caps">IRIS</span> metadata</p></td>
+                    <td>	<ul>
+		<li><span class="caps">ASCII</span> : frequency-amplitude-phase</li>
+		<li><span class="caps">ASCII</span> : complex-spectra</li>
+		<li>Bode style plots</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/virtualnetwork/1/">
+                          virtualnetwork
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/virtualnetwork/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>list of stations in a virtual network</p></td>
+                    <td>	<ul>
+		<li><span class="caps">XML</span></li>
+		<li><span class="caps">CVS</span></li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/mars-event/1/">
+                          mars-event
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/mars-event/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Martian seismic events (marsquakes) from the <span class="caps">NASA</span> InSight mission to Mars</p></td>
+                    <td>	<ul>
+		<li><a href="https://quake.ethz.ch/quakeml"><span class="caps">XML</span></a></li>
+		<li>Text</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/traveltime/1/">
+                          traveltime
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/traveltime/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>travel times and ray parameters for seismic phases using a 1-D spherical earth model</p></td>
+                    <td>	<p><span class="caps">ASCII</span></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/distaz/1/">
+                          distaz
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/distaz/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>distance, azimuth and back-azimuth between two locations</p></td>
+                    <td>	<p><span class="caps">XML</span></p></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/irisws/metadatachange/1/">
+                          metadatachange
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/irisws/metadatachange/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>changes made to <span class="caps">SEED</span> metadata</p></td>
+                    <td>	<p><span class="caps">XML</span></p></td>
+                  </tr>
+                
+              
+            </tbody>
+          </table>
+        
+      
+    
+      
+        <h3><a href="mustang">MUSTANG</a></h3>
+        
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Service Interface</th>
+                <th>Version</th>
+                <th>Summary</th>
+                <th>Return options</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/measurements/1/">
+                          measurements
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/measurements/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>The main <span class="caps">MUSTANG</span> web service returning measurements for metrics relating to station data quality.</p></td>
+                    <td>	<ul>
+		<li><span class="caps">XML</span> (default)</li>
+		<li>text</li>
+		<li><span class="caps">CSV</span></li>
+		<li><span class="caps">JSON</span></li>
+		<li><span class="caps">JSONP</span></li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-psd/1/">
+                          noise-psd
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-psd/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Returns Power Spectral Density (<span class="caps">PSD</span>) estimates of seismic data and can generate aggregate plots.</p></td>
+                    <td>	<ul>
+		<li>Text &#8211; <span class="caps">CSV</span></li>
+		<li><span class="caps">XML</span></li>
+		<li>Plot (<span class="caps">PNG</span>)</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-pdf/1/">
+                          noise-pdf
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-pdf/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Returns Probability Density Functions (<span class="caps">PDF</span>s) in frequency `bins` and can generate aggregate plots.</p></td>
+                    <td>	<ul>
+		<li>Text &#8211; <span class="caps">CSV</span></li>
+		<li><span class="caps">XML</span></li>
+		<li>Plot (<span class="caps">PNG</span>)</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-spectrogram/1/">
+                          noise-spectrogram
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-spectrogram/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Returns seismic spectrogram images based on daily <span class="caps">PDF</span> mode values</p></td>
+                    <td>	<ul>
+		<li>Plot (<span class="caps">PNG</span>)</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-pdf-browser/1/">
+                          noise-pdf-browser
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-pdf-browser/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Returns browseable views of <span class="caps">MUSTANG</span> <span class="caps">PDF</span> plots and spectrogram plots</p></td>
+                    <td>	<ul>
+		<li>Text</li>
+		<li><span class="caps">JSON</span></li>
+		<li><span class="caps">HTML</span></li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-mode-timeseries/1/">
+                          noise-mode-timeseries
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/noise-mode-timeseries/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Returns <span class="caps">PDF</span> daily modes and mode timeline plots</p></td>
+                    <td>	<ul>
+		<li>Text &#8211; <span class="caps">CSV</span></li>
+		<li><span class="caps">XML</span></li>
+		<li>Plot (<span class="caps">PNG</span>)</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/metrics/1/">
+                          metrics
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/metrics/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>The metrics web service returns a description of available metrics in a variety of formats</p></td>
+                    <td>	<ul>
+		<li><span class="caps">XML</span></li>
+		<li><span class="caps">HTML</span></li>
+		<li><span class="caps">XSD</span></li>
+		<li><span class="caps">JSON</span></li>
+		<li><span class="caps">JSONP</span></li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/mustang/targets/1/">
+                          targets
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/mustang/targets/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>The targets web service returns a list of stations and channels for a given metric.</p></td>
+                    <td>	<ul>
+		<li>Text</li>
+	</ul></td>
+                  </tr>
+                
+              
+            </tbody>
+          </table>
+        
+      
+    
+      
+        <h3><a href="ph5ws">PH5WS</a></h3>
+        
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Service Interface</th>
+                <th>Version</th>
+                <th>Summary</th>
+                <th>Return options</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/station/1/">
+                          station
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/station/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>metadata for time series data stored in PH5 format</p></td>
+                    <td>	<ul>
+		<li><a href="http://www.fdsn.org/xml/station/"><span class="caps">FDSN</span> StationXML</a></li>
+		<li>Text</li>
+		<li>GeoCSV (text)</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/dataselect/1/">
+                          dataselect
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/dataselect/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>active and passive source time series for data stored in PH5 format</p></td>
+                    <td>	<ul>
+		<li><a href="http://www.iris.edu/data/miniseed.htm">miniSEED</a></li>
+		<li><a href="http://ds.iris.edu/ds/nodes/dmc/software/downloads/sac"><span class="caps">SAC</span></a></li>
+		<li>GeoCSV</li>
+		<li><a href="https://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev1.pdf"><span class="caps">SEGY</span> Revision 1</a></li>
+		<li><a href="https://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev2_0-mar2017.pdf"><span class="caps">SEGY</span> Revision 2</a></li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/event/1/">
+                          event
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/event/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>active source event metadata for time series data stored in PH5 format</p></td>
+                    <td>	<ul>
+		<li><a href="https://quake.ethz.ch/quakeml">QuakeML</a></li>
+		<li>GeoCSV</li>
+		<li>Text</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/availability/1/">
+                          availability
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/availability/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>Service for returning time series data availability</p></td>
+                    <td>	<ul>
+		<li>Text</li>
+		<li><span class="caps">JSON</span></li>
+		<li><span class="caps">GEOCSV</span></li>
+		<li>Request</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/evalresp/1/">
+                          evalresp
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/evalresp/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>instrument response information evaluated from <span class="caps">IRIS</span> metadata</p></td>
+                    <td>	<ul>
+		<li><span class="caps">ASCII</span> : frequency-amplitude-phase</li>
+		<li><span class="caps">ASCII</span> : complex-spectra</li>
+		<li>Bode style plots</li>
+	</ul></td>
+                  </tr>
+                
+              
+                
+                  <tr>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/resp/1/">
+                          resp
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <a href="/ph5ws/resp/docs/1/">
+                          v.1
+                        </a>
+                      </p>
+                    </td>
+                    <td>	<p>channel response information</p></td>
+                    <td>	<p><a href="https://ds.iris.edu/ds/nodes/dmc/data/formats/resp/"><span class="caps">SEED</span> <span class="caps">RESP</span></a></p></td>
+                  </tr>
+                
+              
+            </tbody>
+          </table>
+        
+      
+    
+
+
+	<h2>Overview</h2>
+
+	<p>Web services can be accessed in a number of different ways:</p>
+
+	<ul>
+		<li>Small requests can be handled through your browser.</li>
+		<li><a href="/clients/">Dedicated clients</a> are available for making more complex or larger queries.</li>
+		<li>Automated or scripted requests can be made using programs such as
+  <a href="https://www.gnu.org/software/wget/">wget</a> or <a href="https://curl.haxx.se/">curl</a>.</li>
+		<li>A <a href="https://ds.iris.edu/ds/nodes/dmc/software/downloads/iris-ws/">Java <span class="caps">API</span></a>
+  is available for Java and <span class="caps">MATLAB</span> users.</li>
+	</ul>
+
+	<p>Subscribe to the <a href="https://groups.google.com/a/earthscope.org/g/data-announcements">Earthscope data-announcements</a>
+    list to receive announcements of services changes and interruptions,
+    beta releases and to take part in discussions related to the
+    services or ask for help.</p>
+
+	<p>These services may be used under <span class="caps">NSF</span> <span class="caps">SAGE</span> Facility
+  <a href="https://ds.iris.edu/ds/nodes/dmc/terms-of-service/">Terms of Service</a>
+  in accordance with our <a href="https://ds.iris.edu/ds/nodes/dmc/services/usage/">Usage Guidelines</a>.
+  Usage of the services and data in publications should cite the services according to our
+  <a href="https://www.iris.edu/hq/iris_citations">citation instructions</a> and
+  <a href="https://www.fdsn.org/networks/citation/">data by network</a>.</p>
+
+	<h2>Real time data</h2>
+
+	<p>All open data arriving in (near) real time at the <span class="caps">NSF</span> <span class="caps">SAGE</span> Facility are
+    available from the <span class="caps">DMC</span>&#8217;s <a href="https://ds.iris.edu/ds/nodes/dmc/services/seedlink/">SeedLink server</a>.</p>
+
+	<p>The web services <em>should not be used</em> to retrieve
+    continuous, real time data via <strong>repeated polling</strong>.
+    Instead, the SeedLink server should be used when continuous data
+    streams are needed.</p>
+
+  
+
+
+                  </div>
+
+                
+
+              </div>
+
+            
+
+
+    
+
+
+
+    </div>
+
+    
+
+<div
+  class="iris-purple blur"
+  style="
+    border-top: 1px solid #b3b3b3;
+    margin: 7rem 0 0 0;
+    padding-bottom: 1rem;
+  "
+>
+  <div class="container" id="footer">
+    <div class="text-center">
+      <a
+        target="_blank"
+        alt="EarthScope logo"
+        title="EarthScope"
+        href="https://earthscope.org"
+      >
+        <img
+          src="https://www.iris.edu/hq/images/layout/logos/earthscope-logo-white-mobile.svg"
+          alt="EarthScope logo image"
+          height="60"
+          style="margin: 2rem 0;"
+        />
+      </a>
+    </div>
+    <div class="text-center">
+      EarthScope Consortium operates the NSF National Geophysical Facility (NSF NGF).
+      Any opinions, findings and conclusions, or recommendations expressed in this
+      material do not necessarily reflect the views of the U.S. National Science
+      Foundation.
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  </body>
+</html>

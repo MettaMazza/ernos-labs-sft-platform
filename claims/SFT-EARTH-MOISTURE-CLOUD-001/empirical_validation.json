@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-MOISTURE-CLOUD-001",
+  "data_source_ids": [
+    "NOAA-GHCND-001",
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "EPA-AIRDATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:73a1c30401f9465722c0f5632042dad339bb439ecc95a52a8f61de63330cabe6",
+  "falsification_condition": "Reject if cloud occurrence alone fixes its microphysics or if unresolved sub-grid structure is treated as absent.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0d30b0717661091977a65a5035c2879f6fecd5ff9f8fd4bb03113f512d7fc6d0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:300c00b41339abc87caef4bf78ab279da2a5369c72592966b925ac16f62788c7",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-MOISTURE-CLOUD-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:bbb5e1e45c4a952496a34143c80a45561cf32200818263e08311b2aba221f2ff",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:a617e4eff4223e86046411649c7ae0adfefd46d67488990707dc8ce76b3e1caf",
+    "prediction_seal_hash": "sha256:0b19cd4ceaf9fc21885aa60a458e6b024500df925e553478d0281a1438918523",
+    "program_hash": "sha256:0ff2225840cabb48b99071669a01ffbaf250add8fc3294e407cad9716b8ce0c4",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2e05355b74fef0f3aac28af7b44924efb8fae2fa1d503b535515e46a8f94ede0",
+    "target_material_present": false,
+    "trace_hash": "sha256:8410e0a6a1815b2f3db8653efe9e9754c801a1302d191f6cbf2f689900766868"
+  },
+  "measurement_receipt_hash": "sha256:8eacc5304804e18119a750a997a5894d6c538bd325e1dcf2d8fa464a335e33ec",
+  "measurements": [
+    "sft-earth-moisture-cloud-001-external-earth-evidence: predicted earth:water-vapour-droplet-ice-air-carrier__transport-phase-nucleation-and-precipitation-relation__phase-size-location-time-aerosol-and-uncertainty-held__cloud-observation-bounded; source-derived earth:water-vapour-droplet-ice-air-carrier__transport-phase-nucleation-and-precipitation-relation__phase-size-location-time-aerosol-and-uncertainty-held__cloud-observation-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:99540695dc3f99d66e59079d38d0ad0c588304b6efc1339d7361bd77d265fa01",
+    "custodian_id": "SFT-EXP-EARTH-MOISTURE-CLOUD-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:73a1c30401f9465722c0f5632042dad339bb439ecc95a52a8f61de63330cabe6",
+    "prediction_seal_hash": "sha256:0b19cd4ceaf9fc21885aa60a458e6b024500df925e553478d0281a1438918523",
+    "registered_target_identity_hash": "sha256:2e05355b74fef0f3aac28af7b44924efb8fae2fa1d503b535515e46a8f94ede0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d73c70811e8ed449721654543f9607e24b096c9805fef72dcd33c9ee4c85c8a6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6e54e86cda91bfe3311f6b734f430fe664cd2c0e8694b14fdde3e5ba2beb9e2e"
+}

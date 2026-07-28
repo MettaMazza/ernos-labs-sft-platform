@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-SEISMIC-WAVE-001",
+  "data_source_ids": [
+    "USGS-EARTHQUAKE-FDSN-001",
+    "EARTHSCOPE-SAGE-SERVICES-001",
+    "SMITHSONIAN-GVP-VOTW-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:62587af624a403c0160fceb8dbb715b4716f559b3ba28dcac98e8e8405f556f1",
+  "falsification_condition": "Reject if a processed arrival is treated as a direct interior image or if missing stations and phase ambiguity are erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:37334f93f2e601a11614aef13386cc63de6386b3904db52255c92b64ba8f8a47",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:819064ce7df36cef378db21bdabad991570e6d46667ce3f04c89ca21dfda5ccb",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-SEISMIC-WAVE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7276eeaa4c08e30d7bca01135c6a369d84b48d954a07dd2568c2e8b57fee32ae",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:dfd79d0f2c0e5491e599692606cecf8a43bcc79d332a1df2615882fa1b1c7892",
+    "prediction_seal_hash": "sha256:c8b9f7ebd1d0ee772cea82aa367c15235cff309d8acf951436d033de43c0eea8",
+    "program_hash": "sha256:38807075e988fc1370ff163b967deed629335f059b04f3159cb12301afb8f0eb",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:bf75c5456860882634a3ea6ec79ced1e4140f7a615a81e563874155ce3cf3d3c",
+    "target_material_present": false,
+    "trace_hash": "sha256:26b12c33783ce6afb47bffb8ad9b4b8f11ec329b3e4b78968ab98824626da22b"
+  },
+  "measurement_receipt_hash": "sha256:fca1f1bebbdb053a340f380835429bb2966069723f0f82249dfa2e028d66523c",
+  "measurements": [
+    "sft-earth-seismic-wave-001-external-earth-evidence: predicted earth:source-medium-receiver-carrier__source-to-receiver-propagation-relation__phase-path-time-instrument-and-uncertainty-held__network-resolution-bounded; source-derived earth:source-medium-receiver-carrier__source-to-receiver-propagation-relation__phase-path-time-instrument-and-uncertainty-held__network-resolution-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3c3fd34c951bf32bfd4434d0c75579b5f41771674b0f0eea47cbd2b1d2014328",
+    "custodian_id": "SFT-EXP-EARTH-SEISMIC-WAVE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:62587af624a403c0160fceb8dbb715b4716f559b3ba28dcac98e8e8405f556f1",
+    "prediction_seal_hash": "sha256:c8b9f7ebd1d0ee772cea82aa367c15235cff309d8acf951436d033de43c0eea8",
+    "registered_target_identity_hash": "sha256:bf75c5456860882634a3ea6ec79ced1e4140f7a615a81e563874155ce3cf3d3c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:00bef70d11543a670a40f463c2fe9198004232f0c4d1486ff68728d9e7ee2a6c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:207f20e9e14860504e0dd958802e16c994b8e9b04c778e2f222a91d4f498f610"
+}

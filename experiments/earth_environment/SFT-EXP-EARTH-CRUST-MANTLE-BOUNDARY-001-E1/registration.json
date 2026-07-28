@@ -1,0 +1,329 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "claim_id": "SFT-EARTH-CRUST-MANTLE-BOUNDARY-001",
+  "complete_branch_pre_source_seal": {
+    "all_74_predictions_and_18944_candidates_sealed_before_source_selection": true,
+    "hash": "sha256:c741b6b227098e41568c29fa05a4c7261152d2a3838b410620954e7c17bfb0cc",
+    "path": "experiments/sealed_predictions/earth_environment_foundation_complete_pre_source.json"
+  },
+  "controls": [
+    {
+      "control_id": "FALSE-PREMISE",
+      "expected_rejection": "A form missing the complete Earth carrier is rejected.",
+      "kind": "false_premise"
+    },
+    {
+      "control_id": "TAMPERED-SOURCE",
+      "expected_rejection": "A changed source, capture, manifest or result is rejected.",
+      "kind": "tampered_source"
+    },
+    {
+      "control_id": "TAMPERED-ARTIFACT",
+      "expected_rejection": "A changed candidate support, target row or prediction is rejected.",
+      "kind": "tampered_artifact"
+    },
+    {
+      "control_id": "BOUNDARY",
+      "expected_rejection": "Target access, an imported model, a forbidden proof value or a fitted parameter is rejected.",
+      "kind": "boundary"
+    },
+    {
+      "control_id": "UNFAVORABLE-CONSEQUENCE",
+      "expected_rejection": "A changed external consequence label fails exact comparison.",
+      "kind": "unfavorable_measurement"
+    }
+  ],
+  "custody_protocol": {
+    "custodian_distinct_from_executor": true,
+    "custodian_id": "SFT-EXP-EARTH-CRUST-MANTLE-BOUNDARY-001-E1-external-target-custodian",
+    "release_requires_matching_seal": true
+  },
+  "development_observations": [],
+  "evaluation_protocol": {
+    "acceptance_condition": "Every source identity and snapshot reproduces; evidence classes remain explicit; the source-derived consequence matches; every adverse, absent and failed row remains; and a changed control is rejected.",
+    "evaluator_id": "SFT-EXP-EARTH-CRUST-MANTLE-BOUNDARY-001-E1-post-seal-source-evaluator",
+    "falsification_condition": "Reject if local depth is generalized globally without evidence or if method-dependent alternatives are discarded.",
+    "metrics": [
+      {
+        "all_rows": true,
+        "definition": "Reconstruct the registered Earth evidence consequence while preserving every source feature, adverse result, absence, unresolved row and failed transport, then compare with the sealed claim consequence.",
+        "metric_id": "source-derived-boundary-correspondence"
+      }
+    ]
+  },
+  "evidence_census": {
+    "absent_features_preserved": 24,
+    "bindings_hash": "sha256:a0aba2038c8d9cb9c5f48839c8c894cc0905590aa2021e0c00fed7915b074cda",
+    "bindings_path": "experiments/earth_environment/claim_source_bindings.json",
+    "failed_transports_preserved": true,
+    "feature_audit_hash": "sha256:5905fe43e5252542902407a86d571ae8aad0360b66400e35aa3a4de74606829d",
+    "feature_audit_path": "experiments/earth_environment/source_feature_audit.json",
+    "present_features": 67,
+    "registered_features": 91
+  },
+  "evidence_mode": "post_seal_purpose_matched_authoritative_observation_or_primary_measurement_boundary_correspondence",
+  "experiment_id": "SFT-EXP-EARTH-CRUST-MANTLE-BOUNDARY-001-E1",
+  "external_target_record": {
+    "directness": "authoritative_observation_or_primary_measurement_boundary_correspondence",
+    "empirical_disposition": "purpose_matched_authoritative_source_features_present",
+    "hash": "sha256:f7f13820b78cb7cf57d1a935c112479f7766078c8ed589242d96f4e2ec822527",
+    "numeric_comparison": null,
+    "path": "experiments/earth_environment/claim_specific_external_targets.json",
+    "source_evidence": [
+      {
+        "absent_feature_count": 1,
+        "feature_rows": [
+          {
+            "derived_search_tokens": [
+              "station",
+              "channel"
+            ],
+            "feature": "station and channel identity",
+            "matched_tokens": [
+              "station",
+              "channel"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+            "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "wavefor",
+              "event"
+            ],
+            "feature": "waveform and event access",
+            "matched_tokens": [
+              "wavefor",
+              "event"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+            "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "instrum",
+              "respons"
+            ],
+            "feature": "instrument response",
+            "matched_tokens": [
+              "instrum",
+              "respons"
+            ],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+            "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+            "status": "present"
+          },
+          {
+            "derived_search_tokens": [
+              "observe",
+              "derived"
+            ],
+            "feature": "observed and derived product distinction",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+            "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+            "status": "absent_from_captured_surface"
+          }
+        ],
+        "present_feature_count": 3,
+        "registered_feature_count": 4,
+        "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+        "transport_status": "captured",
+        "unresolved_feature_count": 0
+      },
+      {
+        "absent_feature_count": 4,
+        "feature_rows": [
+          {
+            "derived_search_tokens": [
+              "observa"
+            ],
+            "feature": "observatory identity",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+            "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "bounded",
+              "geomagn"
+            ],
+            "feature": "time-bounded geomagnetic observation",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+            "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "station",
+              "status"
+            ],
+            "feature": "station status",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+            "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "read",
+              "only",
+              "access"
+            ],
+            "feature": "read-only access",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+            "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+            "status": "absent_from_captured_surface"
+          }
+        ],
+        "present_feature_count": 0,
+        "registered_feature_count": 4,
+        "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+        "transport_status": "captured",
+        "unresolved_feature_count": 0
+      },
+      {
+        "absent_feature_count": 4,
+        "feature_rows": [
+          {
+            "derived_search_tokens": [
+              "spatial",
+              "referen",
+              "geology"
+            ],
+            "feature": "spatially referenced geology",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+            "source_id": "USGS-NGMDB-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "report"
+            ],
+            "feature": "map and report provenance",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+            "source_id": "USGS-NGMDB-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "stratig"
+            ],
+            "feature": "stratigraphic information",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+            "source_id": "USGS-NGMDB-001",
+            "status": "absent_from_captured_surface"
+          },
+          {
+            "derived_search_tokens": [
+              "geochem",
+              "geophys",
+              "palaeon",
+              "geochro"
+            ],
+            "feature": "geochemistry geophysics palaeontology and geochronology coverage",
+            "matched_tokens": [],
+            "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+            "source_id": "USGS-NGMDB-001",
+            "status": "absent_from_captured_surface"
+          }
+        ],
+        "present_feature_count": 0,
+        "registered_feature_count": 4,
+        "source_id": "USGS-NGMDB-001",
+        "transport_status": "captured",
+        "unresolved_feature_count": 0
+      }
+    ],
+    "source_ids": [
+      "EARTHSCOPE-SAGE-SERVICES-001",
+      "USGS-GEOMAG-OBSERVATORIES-001",
+      "USGS-NGMDB-001"
+    ],
+    "target_id": "sft-earth-crust-mantle-boundary-001-external-earth-evidence"
+  },
+  "frozen_relation": {
+    "candidate_grammar": "Generate the literal Cartesian product of eight registered binary carrier, boundary, relation, record, evidence, provenance, generality and extension dimensions before external Earth-source identities or outcomes are opened. Filter only by the preregistered property required by each dimension.",
+    "exact_domain": "Exactly eight binary preservation dimensions, giving 256 forms. Form closure is depth-independent under the stated positive-finite successor; empirical correspondence remains source, place, time, method and protocol bounded.",
+    "relation_hash": "sha256:8a3c0d540465b7092514e43ab662c2b91326e5f5e37bf88bddc9286850b8c20a",
+    "statement": "solid-earth-interface-carrier__regional-observation-bounded__composition-structure-and-wave-contrast__depth-lateral-variation-method-and-uncertainty-held__evidence-class-explicit__root-bound-forward-forcing__positive-finite-successor-retains-all-rows__no-extra-rule",
+    "target_did_not_select_structural_law": true
+  },
+  "prediction_protocol": {
+    "complete_trace_required": true,
+    "forbidden_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "interpreter_id": "sft-v3-capability-closed-fold-interpreter/1",
+    "program": {
+      "instructions": [
+        {
+          "arguments": [
+            "registered-premise"
+          ],
+          "destination": "premise",
+          "opcode": "input"
+        },
+        {
+          "arguments": [
+            "earth-external-consequence",
+            "earth:solid-earth-interface-carrier__composition-structure-and-wave-contrast__depth-lateral-variation-method-and-uncertainty-held__regional-observation-bounded"
+          ],
+          "destination": "prediction",
+          "opcode": "label"
+        },
+        {
+          "arguments": [
+            "premise",
+            "prediction"
+          ],
+          "destination": "bound-result",
+          "opcode": "pair"
+        },
+        {
+          "arguments": [
+            "prediction"
+          ],
+          "destination": "",
+          "opcode": "emit"
+        }
+      ],
+      "program_id": "SFT-EXP-EARTH-CRUST-MANTLE-BOUNDARY-001-E1-external-consequence-prediction",
+      "schema": "sft-v3-fold-program/1"
+    },
+    "program_hash": "sha256:059c3560f8c5f828befdc15cf2f42dbbae475d09c7bc43a6549ec6e08fa2e544"
+  },
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-28",
+  "registration_record_hash": "sha256:d49334ca2d310f179de8a60a225ed15355a8b902fdf44951db3807bfa0480054",
+  "row_retention_policy": "retain every registered feature, favorable, adverse, absent, mixed, unresolved, censored, missing and transport row",
+  "status": "empirical_boundary_corresponded",
+  "stop_condition": "Halt after the target and controls are evaluated once, or immediately on any violation.",
+  "target_access_policy": "structurally-denied-before-claim-derivation-seal",
+  "withheld_targets": [
+    {
+      "content_withheld_from_claim_prediction_until_derivation_seal": true,
+      "source_ids": [
+        "EARTHSCOPE-SAGE-SERVICES-001",
+        "USGS-GEOMAG-OBSERVATORIES-001",
+        "USGS-NGMDB-001"
+      ],
+      "target_id": "sft-earth-crust-mantle-boundary-001-external-earth-evidence"
+    }
+  ]
+}

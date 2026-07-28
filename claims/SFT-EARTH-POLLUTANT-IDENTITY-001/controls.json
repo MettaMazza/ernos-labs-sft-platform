@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-POLLUTANT-IDENTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:db50f0823b0e40f63756cae1e4010d9f45f9258091405204ab62102ed5c2dfb2"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a3378437bd2e3c342f1742295578bca7ef92712289fc1102b694b6f001b52b4b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b64a5a71b9e08b7db184825c01626fc810611e6f1af152655ceefb322537997f"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:6f108819d9566f6bceeacdde55f0190c2cc6a9ad3362cf8452b10a24c85002cd"
+    }
+  ]
+}

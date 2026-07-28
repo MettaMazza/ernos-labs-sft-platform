@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-HYDROLOGIC-CYCLE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:d531aedd691067e2951f4abb601744459501a3024b65fab9f9257b1ccd1175fe"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7980a471b1894d5024070f40e59f9f8e8140f200dee139db571fb20cfcdda2ee"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:eea6df5380613a6a3ec5ef6cac73623025e66a167a3807ed8ac94876746e48f5"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:cd7eab7f43f393578663ccaac5c90d2b98b6fedd15918a2481092100a609ac4b"
+    }
+  ]
+}

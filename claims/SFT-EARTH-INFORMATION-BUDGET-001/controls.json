@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-INFORMATION-BUDGET-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:f81f193ce97ee5215a31263f9c2515817aca15503b6f3704f4b4b0993961c2fa"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:80efe889e53ffd06560418f8f673bdad0386bd696ab79b4eb0309d776f7db13d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c41b1a3bccfa2bc16d8a884746460cb1f2aa1427936ecb382f4633583914ce62"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:ca3abef12bf16713ae9d21a2d6061321fd28da2ff2ffc41ac57b25f9df017d59"
+    }
+  ]
+}

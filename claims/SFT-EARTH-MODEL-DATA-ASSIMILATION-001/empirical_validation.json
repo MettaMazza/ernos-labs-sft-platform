@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-MODEL-DATA-ASSIMILATION-001",
+  "data_source_ids": [
+    "NASA-EARTHDATA-SEARCH-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NOAA-GHCND-001",
+    "NOAA-PALEO-001",
+    "EARTHSCOPE-SAGE-SERVICES-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:1c96a975b51798bdd65e549bd38c602268de52ad928b99ec7800a7ee33df9dd3",
+  "falsification_condition": "Reject if tuned performance is offered as structural proof, if observations leak into a sealed prediction, or if model and observation errors are conflated.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:fdfcd0d976f1d3ba07c398279859678e5ca27e1a9ee1aa58c0761f1491eb81d2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4189ef5d62fa9e45528192274a80301b6fb0dd1d13c65ff25213ed7d4d99b444",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-MODEL-DATA-ASSIMILATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:979d76b044be48232e713a499589f298196d56516f4b2db735a832cf65464ec5",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b8fbd5f98311a95d2b0b26c058b8bf711c22dcc443cfaeb50d7d2d3f01cf8ff9",
+    "prediction_seal_hash": "sha256:5a7d5e7125aa3ad5511f5c33b41a295833d1feabd7265d80c8989c3f8100a607",
+    "program_hash": "sha256:cea4099065cd0fef96ff81bd61e1de12def2c76597cc63e2d9b1efbc0853411f",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3edc344b22d2e3d2694b1665c974b2feb7ccc0dcf66d1ebe0116399caffffe15",
+    "target_material_present": false,
+    "trace_hash": "sha256:d7f4d01d5c98e11ec935420ce24d91b4f55e25c42ebba347ebcddd0cb3516474"
+  },
+  "measurement_receipt_hash": "sha256:6f5c89629b617ee08f0ba3a0be1fa71f163c08635401f7ae67045307a870b8d5",
+  "measurements": [
+    "sft-earth-model-data-assimilation-001-external-earth-evidence: predicted earth:law-state-observation-update-carrier__conditional-simulation-and-state-update-relation__equations-as-correspondence-inputs-parameters-observations-errors-and-outputs-held__model-purpose-bounded; source-derived earth:law-state-observation-update-carrier__conditional-simulation-and-state-update-relation__equations-as-correspondence-inputs-parameters-observations-errors-and-outputs-held__model-purpose-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e86716e130a8ab3f6026db66bf7ae8012fc9d887190c2361d9cdaecba34b8039",
+    "custodian_id": "SFT-EXP-EARTH-MODEL-DATA-ASSIMILATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:1c96a975b51798bdd65e549bd38c602268de52ad928b99ec7800a7ee33df9dd3",
+    "prediction_seal_hash": "sha256:5a7d5e7125aa3ad5511f5c33b41a295833d1feabd7265d80c8989c3f8100a607",
+    "registered_target_identity_hash": "sha256:3edc344b22d2e3d2694b1665c974b2feb7ccc0dcf66d1ebe0116399caffffe15",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:bc8567029036db0cf53a160a215876903c557fe049a0f85df4b07a8940775562"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:c63e25c79220cd06034b64a67dc592a1a1b5b7a7475a95f1c355f7515a5c84ed"
+}

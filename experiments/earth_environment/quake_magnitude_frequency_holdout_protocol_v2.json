@@ -1,0 +1,33 @@
+{
+  "acceptance": "One tenth must fall inside the two-sided Clopper-Pearson 95-percent finite-sample interval for N(mww>=7)/N(mww>=6); the query must be untruncated and every returned row retained.",
+  "all_nonmatching_rows_preserved": true,
+  "claim_id": "SFT-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001",
+  "derivation_or_first_protocol_changed": false,
+  "experiment_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E2",
+  "first_adverse_result_hash": "sha256:4657a82ad8b4263fa5394ad83a490fc7ea23bcb3a91afca04fb20cea7b7902c7",
+  "first_adverse_result_path": "experiments/earth_environment/quake_magnitude_frequency_result.json",
+  "first_adverse_result_remains_dispositive_for_its_mixed_catalog": true,
+  "holdout_reason": "The first protocol preregistered magnitude-type heterogeneity as an adverse condition. This new unopened interval tests one uniform USGS preferred moment-magnitude label; it does not reclassify the first result.",
+  "pre_source_derivation_seal": "sha256:c741b6b227098e41568c29fa05a4c7261152d2a3838b410620954e7c17bfb0cc",
+  "protocol_hash": "sha256:7258f998e3f6c2ccd987bf6a1cbec7469a3a22927101ba541595c104e6d4856c",
+  "registered_analysis_class": {
+    "lower_threshold": "6.0",
+    "magnitude_type_exact_label": "mww",
+    "upper_threshold": "7.0"
+  },
+  "schema": "sft-v3-earth-quake-magnitude-frequency-holdout-protocol/2",
+  "sealed_expected_exceedance_share": {
+    "denominator": 10,
+    "numerator": 1
+  },
+  "target_opened_before_registration": false,
+  "target_query": {
+    "endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+    "endtime": "2026-01-01T00:00:00Z",
+    "format": "geojson",
+    "limit": "20000",
+    "minmagnitude": "6.0",
+    "orderby": "time-asc",
+    "starttime": "2020-01-01T00:00:00Z"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-VOLCANIC-PROCESS-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3aa8eba5ca771a725c8cda3722b3a29f21188c9a3f5029f753a16461418ca364"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4c968bbdf719f7fc6cd3d95151cef1fa0281e9d4a7834b2dea2e9656eab69693"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b1b97c69e89e696eaf7f889c1684a8bab94723f1566df2625a388be9cad1af20"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:85f88b10cf0ae1cee660dfe34ebdbfcd18970744a5f2655f9cc6c575b13293ee"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-COAST-TIDE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:f4499bdca4d8ce85559feac716b8291efacb58205f3365dc727322e14cc47eeb"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ecf5fec1eb9ff7891a57b33540758e52a1be38fef12689776a16f151188ab314"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e862e5b782e02671bfd861dcbc75fbf1c2984b24d53ecbdd6dc65666dca8e4e7"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:27205075f951dafe2d9d07123bfa6ae86ff5e81554d752d311535f9edc714908"
+    }
+  ]
+}

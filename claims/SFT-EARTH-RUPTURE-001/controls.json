@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-RUPTURE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:5edac00e830614a52469cc9ad5511cbc53db88835461493bf54861e9a2e822b4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7a944706a42bd261383b64e07f3e436f5c4585c07d23c558f915ba5f57aa2349"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7a94ae9bfc6ad0f4ed4a10d17ad35cf515206c6f8d35b57d65685c6702eae1aa"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:c6f0ef64d25cb8a78a25f5e8916d88e2144c487d6a6ce634edf34fc8a294eb00"
+    }
+  ]
+}

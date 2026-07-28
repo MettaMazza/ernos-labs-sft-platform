@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-WATER-PHASE-HANDOFF-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:822d1a20d43b018fa3b86180d08493a23b1069d0f327c4d272828dd23d69881d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1257895db1bbce983f2e46b3bb7e78aecfb09b5df78bcd51495f89d29b60e54b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:21141592e39d2bf4b189caaddbdb0950b0ad2b0596e986d39c85d7b7545129a8"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:2ad6a64584f0911accdf73c7390676bad2faa833408a92cd04df70d73cd75701"
+    }
+  ]
+}

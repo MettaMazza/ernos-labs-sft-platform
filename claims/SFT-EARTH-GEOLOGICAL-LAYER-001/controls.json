@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-GEOLOGICAL-LAYER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:520ae26615e59e57fe46bfe5d625c935109ba4829c95a05af63a7daf74bc45cd"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7ca0852d61d914a29133cb9b0225de19e80e76f2b29b8ef0ebdd9a059adfe386"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4a41d83537a2857cc7b24883a59386634cab7406ee466d78fc73a39e146be539"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:135e9ed5766c2a205ad7d769ac55ddbec0dd4dee44393f3f7d8aa2ae2721aa9e"
+    }
+  ]
+}

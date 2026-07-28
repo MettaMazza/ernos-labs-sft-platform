@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-SOURCE-SINK-STORAGE-001",
+  "data_source_ids": [
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "NOAA-WOD-001",
+    "USGS-NWIS-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f397f383fcf00b33713a728052b0f020c1ead3fdf25a2b7dbd12d2bccd94a35d",
+  "falsification_condition": "Reject if a role is assigned without direction and interval or retained after the measured transfer reverses.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3cd1723df1ab0aca9bbca061cf03a203aeb72beaa39f3930fac71de9324c86a7",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5387b9a8f2ddf8790925485af83839b37e11cb6341727e6775bd1dbf30100b86",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-SOURCE-SINK-STORAGE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:14d98d2a34191805230d9463c1d22ec405395f5e7c202c00c12315ad1bc815eb",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:8c27ebbca7251d92aa448d6be178befc2b0730f511c43a24bdf5444bd8cbf021",
+    "prediction_seal_hash": "sha256:5fab7afce2edff7fca3571c6614903c2230a2c8945d07018b1402046b3e5c9b1",
+    "program_hash": "sha256:6535625e9ec3e4a70bf28722d8079bf14537308f5a82f7ea984b49e986c92f2b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4110a149835e1510abd0f22cd904feb76144da4887eb841ac77ebdab8800533f",
+    "target_material_present": false,
+    "trace_hash": "sha256:df3c7d3675f958ed8a802a76af18c95a783f74f9aaf3e7d45a3006fe3fd2d7b7"
+  },
+  "measurement_receipt_hash": "sha256:0e0e7fc19534d74a67fbb172b8b3726fc74f2061a734d008bbdb64394079f27b",
+  "measurements": [
+    "sft-earth-source-sink-storage-001-external-earth-evidence: predicted earth:process-reservoir-role-carrier__boundary-relative-role-assignment__direction-duration-capacity-and-reversal-held__system-boundary-bounded; source-derived earth:process-reservoir-role-carrier__boundary-relative-role-assignment__direction-duration-capacity-and-reversal-held__system-boundary-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:08da58e5a3d3ff1966e3a1f972f2e31c02a91fe386231ce86d9c48f5bfd6f3a3",
+    "custodian_id": "SFT-EXP-EARTH-SOURCE-SINK-STORAGE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:f397f383fcf00b33713a728052b0f020c1ead3fdf25a2b7dbd12d2bccd94a35d",
+    "prediction_seal_hash": "sha256:5fab7afce2edff7fca3571c6614903c2230a2c8945d07018b1402046b3e5c9b1",
+    "registered_target_identity_hash": "sha256:4110a149835e1510abd0f22cd904feb76144da4887eb841ac77ebdab8800533f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:73848f24d7d185b82b99726079b01d67e8d755377b8ca7bd828a7948b247270c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fe802e3014bd9df18400440f144567aa45208e6a843216063fb2da87a33c4235"
+}

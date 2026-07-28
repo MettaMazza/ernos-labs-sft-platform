@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-PLATE-BOUNDARY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1a8984bcb4b77677498514b778973b69775d6f63379c4d64ef889810ff443887"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:9998e135fd3065dad0b10753736641dde6498616c55066a5366d1878f6544c38"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:eec53e96c1e5919dd4f4678aeea3a899bd4102367601c594d859785cbd5d18f1"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:058d6e0270e48e8aa775762f85d85d3328f6ffa74d349ead7c7f0259ee103635"
+    }
+  ]
+}

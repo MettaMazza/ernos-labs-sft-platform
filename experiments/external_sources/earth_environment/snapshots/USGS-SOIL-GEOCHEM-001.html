@@ -1,0 +1,985 @@
+
+
+<!DOCTYPE html>
+<html xmlns:mml="https://www.w3.org/1998/Math/MathML" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns:ali="https://www.niso.org/schemas/ali/1.0/" xmlns:xi="https://www.w3.org/2001/XInclude" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" lang="en">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Start SAS Google Tag Manager --> 
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-TVTCHDP');</script>
+        <!-- End SAS Google Tag Manager -->
+    
+        <!-- START USGS DAP Google Tag Manager -->
+        <!-- USE REQUIRED script for all public applications
+        IMPORTANT: REMOVE this script for any logged in pages and/or internal applications  -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TKQR8KP');</script>
+        <!-- END USGS DAP Google Tag Manager --> 
+
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="USGS Publications Warehouse">
+    <meta name="keywords" content>
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States</title>
+    <meta NAME="title" content="Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States" />
+    <meta name="description" content="Between 2007 and 2013, the U.S. Geological Survey conducted a low-density (1 site per 1,600 square kilometers, 4,857 sites) geochemical and mineralogical survey of soils in the conterminous United States. The sampling protocol for the national-scale survey included, at each site, a sample from a depth of 0 to 5 centimeters, a composite of the soil A horizon, and a deeper sample from the soil C horizon or, if the top of the C horizon was at a depth greater than 1 meter, a sample from a depth of approximately 80–100 centimeters. The &lt;2-millimeter fraction of each sample was analyzed for a suite of 45 major and trace elements by methods that yield the total or near-total elemental concentration. The major mineralogical components in the samples from the soil A and C horizons were determined by a quantitative X-ray diffraction method using Rietveld refinement. This report presents all the maps..." />
+    <META NAME="abstract" CONTENT="Between 2007 and 2013, the U.S. Geological Survey conducted a low-density (1 site per 1,600 square kilometers, 4,857 sites) geochemical and mineralogical survey of soils in the conterminous United States. The sampling protocol for the national-scale survey included, at each site, a sample from a depth of 0 to 5 centimeters, a composite of the soil A horizon, and a deeper sample from the soil C horizon or, if the top of the C horizon was at a depth greater than 1 meter, a sample from a depth of approximately 80–100 centimeters. The &lt;2-millimeter fraction of each sample was analyzed for a suite of 45 major and trace elements by methods that yield the total or near-total elemental concentration. The major mineralogical components in the samples from the soil A and C horizons were determined by a quantitative X-ray diffraction method using Rietveld refinement. This report presents all the maps and statistical information for each determined element and mineral along with an interpretive section discussing the possible processes that caused the observed national-scale geochemical and mineralogical patterns. Most often, the geochemical and mineralogical patterns reflect the composition of the underlying soil parent material with some modifications caused by leaching of the more mobile elements (for example, calcium and sodium) in the humid areas of the country." />
+    <meta NAME="author" content="David B. Smith"/><meta NAME="author" content="Federico Solano"/><meta NAME="author" content="Laurel G. Woodruff"/><meta NAME="author" content="William F. Cannon"/><meta NAME="author" content="Karl J. Ellefsen"/>
+    <meta name = "revised" content="2025-05-15T13:21:20.301081"/>
+    <meta name = "created" content="2019-04-25T11:25:00"/>
+    <meta name = "date" content="2019"/>
+  <!-- meta tags for google scholar indexing and zotero/mendeley parsing -->
+    <meta name="citation_title" content="Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States" />
+    <meta name="citation_publication_date" content="2019" />
+    <meta name="citation_date" content="2019" />
+    <meta name="citation_online_date" content="2019-04-25T11:25:00" />
+    <meta NAME="citation_author" content="David B. Smith"/><meta NAME="citation_author" content="Federico Solano"/><meta NAME="citation_author" content="Laurel G. Woodruff"/><meta NAME="citation_author" content="William F. Cannon"/><meta NAME="citation_author" content="Karl J. Ellefsen"/>
+    
+    
+    
+    <meta name="citation_journal_title" content="Scientific Investigations Report" />
+    
+    
+    <meta name="citation_issn" content="2328-0328" />
+    
+    
+    
+    
+        
+        <meta name="citation_technical_report_institution" content="U.S. Geological Survey" />
+        <meta name="citation_technical_report_number" content="2017-5118" />
+    
+    <meta name="citation_doi" content="10.3133/sir20175118" />
+    
+
+    
+        
+    
+        
+<link rel="stylesheet" href="https://pubs.usgs.gov/static/vendor/leaflet/leaflet.css">
+       
+       <link rel="stylesheet" href="https://pubs.usgs.gov/static/vendor/academicons/css/academicons.css">
+    
+    
+    
+        
+
+
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['^','^'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process',
+    menuOptions: {
+      settings: {
+        zoom: 'Click',
+        zscale: '200%'
+      }
+    },
+    enableAssistiveMml: true,
+    enableEnrichment: true,
+    sre: {
+      speech: 'deep',         // or 'shallow', or 'deep'
+      domain: 'mathspeak',    // speech rules domain
+      style: 'default',       // speech rules style
+      locale: 'en'            // the language to use (en, fr, es, de, it)
+    },
+    enrichError: (doc, math, err) => doc.enrichError(doc, math, err),  // function to call if enrichment fails
+    enableExplorer: true,
+    a11y: {
+      infoType: true,                   // show semantic type on mouse hovering
+      infoRole: true,                   // show semantic role on mouse hovering
+      infoPrefix: true,                 // show speech prefixes on mouse hovering
+    }
+  }
+};
+</script>
+
+
+<script id="MathJax-script" async
+src="https://pubs.usgs.gov/static/vendor/MathJax/es5/tex-mml-svg.js"></script>
+    
+
+
+
+
+        <title>USGS Publications Warehouse</title>
+
+        
+        
+    
+        
+<link rel="stylesheet" href="https://pubs.usgs.gov/static/vendor/leaflet/leaflet.css">
+       
+       <link rel="stylesheet" href="https://pubs.usgs.gov/static/vendor/academicons/css/academicons.css">
+    
+
+        <!--[if gt IE 8]><!-->
+        <script src="https://pubs.usgs.gov/static/vendor/polyfill.js"></script>
+        <script>
+            if (!String.prototype.startsWith) {
+                String.prototype.startsWith = function(search, pos) {
+                    return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+                };
+            }
+        </script>
+        <!--<![endif]-->
+        <script src="https://pubs.usgs.gov/static/vendor/system.js" defer></script>
+        <script defer>
+        window.addEventListener('load', () => {
+            SystemJS.import("https://pubs.usgs.gov/static/scripts/common.98c937f4.js");
+        });
+    </script>
+
+        
+    <link rel="stylesheet" href="https://pubs.usgs.gov/static/pubs_base.0210ccd6.css" type="text/css" />
+    <link rel="shortcut icon" href="https://pubs.usgs.gov/static/images/pubswh/favicon.72b5542e.ico"/>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="USGS Pubs"/>
+    <link rel="unapi-server" type="application/xml" title="unAPI" href="/unapi" />
+    <link rel="alternate" type="application/rss+xml" title="USGS Publications Warehouse RSS Feed" href="https://pubs.usgs.gov/pubs-services/publication/rss"/>
+    <script>
+        var CONFIG = {
+            lookupUrl: 'https://pubs.usgs.gov/pubs-services/lookup',
+            requestArgs: JSON.parse('{}') <!-- set to True if only one value per key is desired -->
+        }
+    </script>
+
+    </head>
+    <body>
+        <!-- Start SAS Google Tag Manager (noscript) --> 
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVTCHDP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End SAS Google Tag Manager (noscript) -->
+    
+        
+        
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    <section class="usa-banner maxw-full" aria-label="Official government website">
+        <div class="usa-accordion">
+            <header class="usa-banner__header">
+                <div class="usa-banner__inner content-container">
+                    <div class="grid-col-auto">
+                        <img class="usa-banner__header-flag" src="https://pubs.usgs.gov/static/img/us_flag_small.be327dc2.png" alt="U.S. flag">
+                    </div>
+                    <div class="grid-col-fill tablet:grid-col-auto">
+                        <p class="usa-banner__header-text">An official website of the United States government</p>
+                        <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+                    </div>
+                    <button class="usa-accordion__button usa-banner__button"
+                            aria-expanded="false" aria-controls="gov-banner">
+                        <span class="usa-banner__button-text">Here’s how you know</span>
+                    </button>
+                </div>
+            </header>
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+                <div class="grid-row grid-gap-lg">
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="https://pubs.usgs.gov/static/img/icon-dot-gov.42b4ac46.svg"
+                             alt="Dot gov">
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Official websites use .gov</strong>
+                                <br/>
+                                A <strong>.gov</strong> website belongs to an official government organization in the
+                                United States.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="usa-banner__guidance tablet:grid-col-6">
+                        <img class="usa-banner__icon usa-media-block__img" src="https://pubs.usgs.gov/static/img/icon-https.73abd866.svg"
+                             alt="Https">
+                        <div class="usa-media-block__body">
+                            <p>
+                                <strong>Secure .gov websites use HTTPS</strong>
+                                <br/>
+                                A <strong>lock</strong> (
+                                <span class="icon-lock">
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg>
+                                </span>
+                                ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="usa-overlay"></div>
+
+    <header class="usa-header usa-header--extended usgs-header site-header" role="banner">
+        <div class="usgs-header-container">
+            <div class="usa-navbar">
+                <div class="usa-logo" id="extended-logo">
+                    <a href="https://www.usgs.gov" accesskey="1" title="Home" aria-label="Home">
+                        <img alt="USGS Home" src="https://pubs.usgs.gov/static/img/USGS_logo.356d51b9.svg"></img>
+                    </a>
+                    
+                </div>
+                <button class="usa-menu-btn">Menu</button>
+            </div>
+        </div>
+
+        
+            <nav role="navigation" class="usa-nav">
+                <div>
+                    <button class="usa-nav__close"><img src="https://pubs.usgs.gov/static/img/close.fe3f13f6.svg" alt="close"></button>
+                    <ul class="usa-nav__primary usa-accordion">
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav__link" href="/">USGS Publications Warehouse</a>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <button class="usa-accordion__button usa-nav__link"
+                                    aria-expanded="false"
+                                    aria-controls="explore-section">
+                                <span>Explore</span>
+                            </button>
+                            <ul id="explore-section" class="usa-nav__submenu">
+                                <li class="usa-nav__submenu-item">
+                                 <a href="/newpubs">Explore recent publications by USGS authors</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/browse/">
+                                        Browse all of Pubs Warehouse by publication type and year
+                                    </a>
+                                </li>
+                           </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <button class="usa-accordion__button usa-nav__link"
+                                    aria-expanded="false"
+                                    aria-controls="documentation-section">
+                                <span>Documentation</span>
+                            </button>
+                            <ul id="documentation-section" class="usa-nav__submenu">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/documentation/about">About</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/documentation/faq">FAQs</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                  <a href="/documentation/web_service_documentation">Web service documentation</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                  <a href="/documentation/other_resources">Other resources</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="/documentation/usgs_series">
+                                        Descriptions of US Geological Survey Report Series
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav__link" href="/contact">Contact</a>
+                        </li>
+                        <li class="usa-nav__primary-item">
+                            <a class="usa-nav__link" href="https://www.usgs.gov/information-policies-and-instructions/liability#future-ips">Disclaimer</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="usa-nav__secondary">
+                        <form class="usa-search usa-search--small" action="/search" method="get">
+                            <div role="search">
+                                <label class="usa-sr-only" for="extended-search-field-small">Search</label>
+                                <input class="usa-input" id="extended-search-field-small" type="search" name="q">
+                                <button class="usa-button" type="submit">
+                                    <span class="usa-sr-only">Search</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        
+    </header>
+
+
+
+        <main id="main-content">
+            
+    
+
+    <div class="usa-prose">
+        
+    <main role ="main" id="publication-container" >
+        <!-- <script type="text/javascript">console.log('PUBSWH-369');</script> -->
+        <article itemscope itemtype="https://schema.org/ScholarlyArticle">
+            
+                <abbr class="unapi-id" title="https://pubs.usgs.gov/publication/sir20175118">
+                    <!-- avoid empty --></abbr>
+            
+
+            
+
+            <div class="publication-header-container">
+                <div class="pubs-thumbnail">
+                    
+                        <a class="usa-link"
+                           title="Go to USGS Index Page for more information"
+                           href="https://pubs.usgs.gov/sir/2017/5118/">
+                
+                
+                    <img id="thumbnail"
+                         src="https://pubs.usgs.gov/sir/2017/5118/coverthb.jpg"
+                         alt="thumbnail"/>
+                
+            </a>
+                    
+                </div>
+                <div class="publication-header-info-container">
+                    
+                    <div class="publication-header-titles">
+                        <h3 class="publication-title" itemprop="name" style="margin-block-end: unset;">Geochemical and Mineralogical Maps, with Interpretation, for Soils of the Conterminous United States</h3>
+
+                        
+                            <div class="series-title" style="margin-block-end: unset;">Scientific Investigations Report
+                                2017-5118</div>
+                        
+
+                        
+
+                        
+
+                        
+                    </div>
+
+                    
+                    
+
+                    <section id="contributors"><div>
+                                <span class="list-title">By: </span><span class="contributor" itemprop="author"
+                              itemtype="https://schema.org/Person">David B. Smith</span><a href="https://orcid.org/0000-0001-8396-9105" aria-label="ORC Id"><i class="ai ai-orcid"></i></a>,&nbsp;<span class="contributor" itemprop="author"
+                              itemtype="https://schema.org/Person">Federico Solano</span><a href="https://orcid.org/0000-0002-0308-5850" aria-label="ORC Id"><i class="ai ai-orcid"></i></a>,&nbsp;<span class="contributor" itemprop="author"
+                              itemtype="https://schema.org/Person">Laurel G. Woodruff</span><a href="https://orcid.org/0000-0002-2514-9923" aria-label="ORC Id"><i class="ai ai-orcid"></i></a>,&nbsp;<span class="contributor" itemprop="author"
+                              itemtype="https://schema.org/Person">William F. Cannon</span><a href="https://orcid.org/0000-0002-2699-8118" aria-label="ORC Id"><i class="ai ai-orcid"></i></a>,&nbsp;and&nbsp;<span class="contributor" itemprop="author"
+                              itemtype="https://schema.org/Person">Karl J. Ellefsen</span><a href="https://orcid.org/0000-0003-3075-4703" aria-label="ORC Id"><i class="ai ai-orcid"></i></a>
+                            </div>
+                        </section>
+                    <section>
+                        
+                        <div class="doi-container"><a itemprop="sameAs"
+                                                      class="usa-link"
+                                                      href="https://doi.org/10.3133/sir20175118"
+                                                      onclick="GA.trackGAEvent('Downloads', 'DOI', 'https://dx.doi.org/10.3133/sir20175118')">
+                            https://doi.org/10.3133/sir20175118</a>
+                        </div>
+                        
+                        <!-- <div id="doi-twitter-container">
+
+                            <a href="https://twitter.com/share"
+                               class="twitter-share-button"
+                               data-text="USGS Pub"
+                               data-via="USGS_Pubs"
+                               data-dnt="true">Tweet</a>
+                            <script>!function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^https:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + '://platform.twitter.com/widgets.js';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, 'script', 'twitter-wjs');</script>
+                        </div> -->
+                        <div id="metrics" class="pub-metrics">
+                            <p style="font-weight: bold;font-size: larger;margin-top: 0.25em;margin-bottom: 0.125em;">Metrics</p>
+                            
+                                
+                                    <div id="altmetric" style="float:unset;margin-top:0.125em;">    
+                                        <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+                                        <div class='altmetric-embed' data-badge-type='1' data-doi="10.3133/sir20175118"></div>
+                                    </div>
+                                
+                            
+                            
+                                
+                                    
+                                        <div id="crossref" >
+                                            <div style="display: flex">Cited by <a hidden id="modal-button" aria-controls="citations"  id="crossref-cited-by-count" style="font-weight: bold;padding-right: 0.25em;padding-left: 0.25em;">46</a> publications in Crossref</div>
+                                        </div>
+                                    
+                                
+                            
+                            <a href="/metrics/publication/sir20175118/" style="padding-top: 0.25em;">Web analytics dashboard</a>
+                            <a href="/documentation/faq#WhatMetricsAreAvailableForPublicationsInThePublicationsWarehouse" style="font-size:smaller;padding-top: 0.25em;display:flex;justify-content: center;">Metrics definitions</a>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+            
+            
+ 
+
+           
+
+            <section>
+                
+            </section>
+
+
+            <section id="disclaimer">
+                
+            </section>
+
+            
+            <section id="suggested">
+
+                
+                
+
+                
+                
+
+                
+                
+                <h4>Links</h4>
+                <ul class="usa-list">
+                        <li style="max-width: 100%;">More information: 
+                    <a class="usa-link Index_Page" href="https://pubs.usgs.gov/sir/2017/5118/" target="_blank"
+                       onclick="GA.trackGAEvent('Downloads', 'Index Page', 'https://pubs.usgs.gov/sir/2017/5118/')"
+                       title=" Index Page">
+                        <strong>USGS Index Page</strong></a>
+                    </li>
+                    
+                    
+                    
+
+
+                    
+                    
+                        
+                        
+                        
+                    
+                        
+                        
+                        
+                    
+                        
+                        
+                        
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                        
+                        
+
+                        
+                        
+                            
+                            
+                        
+
+                        
+                        
+                            
+                            
+                            
+                        
+
+                        
+                        
+                            
+                            
+                        
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    <li>Download citation as: <a class="usa-link RIS"
+                            href="/publication/sir20175118?mimetype=ris">RIS</a>
+                        |
+                        <a class="usa-link DUBLIN_CORE" href="/publication/sir20175118?mimetype=dublincore">Dublin
+                            Core</a></li>
+                </ul>
+            </section>
+            
+                
+                    <section itemprop="description" id="abstract">
+                        <h4 id="abstract_head">Abstract</h4>
+                        <div>
+                            <div class="abstract-contents">
+
+                                <p><span>Between 2007 and 2013, the U.S. Geological Survey conducted a low-density (1 site per 1,600 square kilometers, 4,857 sites) geochemical and mineralogical survey of soils in the conterminous United States. The sampling protocol for the national-scale survey included, at each site, a sample from a depth of 0 to 5 centimeters, a composite of the soil A horizon, and a deeper sample from the soil C horizon or, if the top of the C horizon was at a depth greater than 1 meter, a sample from a depth of approximately 80–100 centimeters. The &lt;2-millimeter fraction of each sample was analyzed for a suite of 45 major and trace elements by methods that yield the total or near-total elemental concentration. The major mineralogical components in the samples from the soil A and C horizons were determined by a quantitative X-ray diffraction method using Rietveld refinement. This report presents all the maps and statistical information for each determined element and mineral along with an interpretive section discussing the possible processes that caused the observed national-scale geochemical and mineralogical patterns. Most often, the geochemical and mineralogical patterns reflect the composition of the underlying soil parent material with some modifications caused by leaching of the more mobile elements (for example, calcium and sodium) in the humid areas of the country.</span></p>
+                            </div>
+                        </div>
+                    </section>
+                
+                
+                    <aside class="publication-aside">
+                        
+
+    <p>First posted April 25, 2019</p>
+
+
+
+
+
+
+    <div class="pub-contact-info-container">
+        <strong>For additional information, contact:</strong><br/>
+        <p>Director, <a href="https://www.usgs.gov/centers/gggsc/" data-mce-href="https://www.usgs.gov/centers/gggsc/">Geology, Geophysics, and Geochemistry Science Center</a><br>U.S. Geological Survey<br>Box 25046, MS 973<br>Denver, CO 80225</p>
+    </div>
+
+
+
+
+                    </aside>
+                
+                
+                    
+                
+            
+            
+            
+            
+                <section>
+                    <h4>Suggested Citation</h4>
+                    <p id="suggested-citation">Smith, D.B., Solano, Federico, Woodruff, L.G., Cannon, W.F., and Ellefsen, K.J., 2019,  Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States:  U.S. Geological Survey Scientific Investigations Report 2017-5118, https://doi.org/10.3133/sir20175118. [Available as HTML.]</p>
+                    
+                        <p>ISSN: 2328-0328 (online)</p>
+                    
+                    
+                </section>
+            
+                <section>
+                    <h4>Study Area</h4>
+                    <div id="mymap" style="width:90%;height:450px;"></div>
+
+                </section>
+                
+                    <section>
+                        <h4>Table of Contents</h4>
+                        <ul><li>Abstract</li><li>Introduction</li><li>Navigating the Website</li><li>Information Sources</li><li>Photo Credits</li><li>Acknowledgments</li></ul>
+                    </section>
+                
+            
+
+            <section id="details">
+                <table class="usa-table usa-table--borderless">
+                    <tbody>
+                    
+                        <tr>
+                            <th scope="row">Publication type</th>
+                            <td>Report</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Publication Subtype</th>
+                            <td>USGS Numbered Series</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Title</th>
+                            <td>Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Series title</th>
+                            <td>Scientific Investigations Report</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Series number</th>
+                            <td>2017-5118</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">DOI</th>
+                            <td>10.3133/sir20175118</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Publication Date</th>
+                            <td>April 25, 2019</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Year Published</th>
+                            <td>2019</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Language</th>
+                            <td>English</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Publisher</th>
+                            <td>U.S. Geological Survey</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Publisher location</th>
+                            <td>Reston, VA</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Contributing office(s)</th>
+                            <td>Central Mineral and Environmental Resources Science Center, Eastern Mineral and Environmental Resources Science Center</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>HTML Document</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Country</th>
+                            <td>United States</td>
+                        </tr>
+                    
+                        <tr>
+                            <th scope="row">Online Only (Y/N)</th>
+                            <td>Y</td>
+                        </tr>
+                    
+                    </tbody>
+                    <caption>Additional publication details</caption>
+                </table>
+            </section>
+            
+            
+            <aside>
+                <i>*Disclaimer: English is the official language and authoritative version of all federal information.</i>
+            </aside>
+        </article>
+    </main>
+
+    
+        <div class="usa-modal usa-modal--lg" id="citations">
+            <div style="display:flex;justify-content: flex-end;padding-top: 0.5em;">
+                <button type="button" class="usa-button" aria-label="Close this window" data-close-modal style="background-color: unset;color:black">
+                    X
+                </button>
+            </div>
+            <div class="usa-modal__content">
+                <div class="usa-modal__main">
+                    
+                    <div id="modal_list_loading_indicator" hidden>Loading...</div>
+                    <div id="modal_list" class="citation-modal-list"></div>
+                    <div class="usa-modal__footer"></div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <script type="application/javascript" defer>
+
+        // returns true if the element or one of its parents has the class classname
+        function hasSomeParentTheClass(element, classname) {
+            if (element.className.split(' ').indexOf(classname)>=0) return true;
+            return element.parentElement && hasSomeParentTheClass(element.parentElement, classname);
+        }
+    
+        let modal_has_been_opened = false;
+    
+        const p = new Promise((resolve, reject) => {
+            window.addEventListener('load', (event) => {
+    
+                document.addEventListener("pubswh-page-loaded", (event) => {
+                    console.log('Event "pubswh-page-loaded" received: ', event.detail);
+                    let modal_button = document.getElementById("modal-button");
+                    if (modal_button){
+                        modal_button.hidden=false;
+                    }
+                });
+    
+                let postLoadActionSummary = [];
+    
+                // section-508 compliance
+                var mjx_assistive_mml = document.getElementsByTagName("mjx-assistive-mml");
+                for (var i = 0; i < mjx_assistive_mml.length; i++){
+                    mjx_assistive_mml[i].role = "math";
+                    mjx_assistive_mml[i].aria_label = "";
+                    
+                    postLoadActionSummary.push("Completed 508 operation [role=math, aria_label=''] on [mjx_assistive_mml] element ");
+                }
+    
+                // section-508 compliance
+                var mjx_container = document.getElementsByTagName("mjx-container");
+                for (var i = 0; i < mjx_container.length; i++){
+                    mjx_container[i].role = "math";
+                    mjx_container[i].aria_label = "";
+                    
+                    postLoadActionSummary.push("Completed 508 operation [role=math, aria_label=''] on [mjx_container] element: ");
+                }
+    
+                //section 508 compliance -- hide cells without 'headers' attribute. 
+                var y = Array.from(document.getElementsByTagName("td")).filter(e => e.headers == "")
+                for (var i = 0; i < y.length; i++){
+    
+                    y[i]['aria-hidden'] = "true";
+                    postLoadActionSummary.push("assigned headers attribute: " + y[i].headers);
+                }
+    
+                // sticky headers on tables
+                // For each table on the page,...
+                //      - Create Fixed Header
+                //      - Top and bottom scroll
+                var table_panels = document.getElementsByClassName("table-wrap");
+                for (var i = 0; i < table_panels.length; i++)
+                {
+                    // tables to skip 
+                    var x = hasSomeParentTheClass(table_panels[i], 'conversion-factors');
+                    if (!x){
+                        // assuming the first child element of the table is the anchor with id.
+                        var id = table_panels[i].firstChild.id;
+                        try
+                        {
+                            var table_scroll_container = table_panels[i].querySelector('.table-scroll-container');
+    
+                            // this should filter out tables used for formatting
+                            var table_pdf = table_panels[i].querySelector('.table-pdf');
+                            if (table_pdf != null)
+                            {
+                                var original_thead = table_scroll_container.getElementsByClassName('table-pdf')[0].getElementsByTagName('thead')[0];
+                                // filter out tables without thead
+                                if (original_thead != null)
+                                {
+                                    // if width of table is less than the width of the container, expand 
+                                    if (table_pdf.offsetWidth < table_scroll_container.offsetWidth){
+                                        table_pdf.width = table_scroll_container.offsetWidth;
+                                    }
+    
+                                    // container for cloned header which will stick to the top
+                                    var fixed_header_wrapper = table_panels[i].querySelector('.fixed-header-wrapper');
+                                    var fixed_header_div = fixed_header_wrapper.querySelector('.fixed-header');
+                                    
+                                    // create cloned header
+                                    var table_cloned = table_pdf.cloneNode(true);
+                                    table_cloned.removeChild(table_cloned.getElementsByTagName('tbody')[0]);
+                                    table_cloned.style['margin-bottom'] = '0rem';
+    
+                                    // attach cloned header to container
+                                    fixed_header_div.appendChild(table_cloned);
+                                    // set width of container to width of table (will match scrollbars)
+                                    fixed_header_div.style.width = table_pdf.offsetWidth + 'px';
+    
+                                    // hide original header
+                                    original_thead.style['visibility'] = 'collapse';
+    
+                                    // set original header aria-hidden
+                                    original_thead.ariaHidden = true;
+    
+                                    // go through the th's in the new fixed header, modify their ID to enforce uniqueness, and set aria-hidden to prevent further problems.
+                                    Array.from(table_cloned.getElementsByTagName('th')).forEach((el) => {
+                                        el.id = el.id + "_COLLAPSED";
+                                        el.ariaHidden = true;
+                                        //console.log("Modified ID of " + el.id.toString());
+                                    });
+    
+                                    // set width of cloned header to match width of table
+                                    table_cloned.style.width = 'inherit';
+    
+                                    // prevents vertical scrollbar from appearing when header is collapsed
+                                    table_scroll_container.style['overflow-y'] = 'hidden';
+    
+                                    original_thead.style.display = 'none;';
+    
+                                    // set event listeners to synchronize scrolling from top and bottom
+                                    if (fixed_header_wrapper != null && table_scroll_container != null){
+                                        // sync top scroll bar to bottom
+                                        fixed_header_wrapper.onscroll = function(e) {
+                                            e.target.parentElement.querySelector('.table-scroll-container').scrollLeft = e.target.scrollLeft;
+                                        };
+                                        // sync bottom scroll bar to top
+                                        table_scroll_container.onscroll = function(e) {
+                                            e.target.parentElement.querySelector('.fixed-header-wrapper').scrollLeft = e.target.scrollLeft;
+                                        };
+                                    }
+                                    
+                                    postLoadActionSummary.push("Completed Fixed Header operation");
+    
+                                }
+                            }
+                        }catch(error){
+                            console.log("problem with table id: " + id);
+                            console.log(error);
+                            reject(error);
+                        }
+                    }
+                }
+    
+               
+                
+                
+                
+                let modal_button = document.getElementById("modal-button");
+                modal_button.addEventListener("click", (event) => {
+                    // console.log(modal_has_been_opened);
+    
+                    if (modal_has_been_opened === false) {
+                        const p = new Promise((resolve, reject) => {
+                        
+                            let loading_indicator = document.getElementById("modal_list_loading_indicator");
+                            loading_indicator.hidden = false;
+    
+    
+                            let data = [{"citing_doi": "10.1029/2021GH000498", "type": "journal_article"}, {"citing_doi": "10.3133/sir20235089", "type": "report_paper_content"}, {"citing_doi": "10.3390/min12060780", "type": "journal_article"}, {"citing_doi": "10.3389/fmicb.2023.1283127", "type": "journal_article"}, {"citing_doi": "10.1016/j.jhazmat.2021.125886", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.4c11211", "type": "journal_article"}, {"citing_doi": "10.1144/geochem2022-031", "type": "journal_article"}, {"citing_doi": "10.1039/D5EW00490J", "type": "journal_article"}, {"citing_doi": "10.3390/soilsystems10020034", "type": "journal_article"}, {"citing_doi": "10.1038/s43247-024-01794-w", "type": "journal_article"}, {"citing_doi": "10.70499/XUYZ7021", "type": "journal_article"}, {"citing_doi": "10.21750/REFOR.16.06.111", "type": "journal_article"}, {"citing_doi": "10.3160/0038-3872-124.2.55", "type": "journal_article"}, {"citing_doi": "10.1029/2025JG009098", "type": "journal_article"}, {"citing_doi": "10.3389/fclim.2025.1688361", "type": "journal_article"}, {"citing_doi": "10.1016/j.mex.2026.103836", "type": "journal_article"}, {"citing_doi": "10.1016/j.conbuildmat.2025.144657", "type": "journal_article"}, {"citing_doi": "10.1111/nph.19501", "type": "journal_article"}, {"citing_doi": "10.3133/sir20225112", "type": "report_paper_content"}, {"citing_doi": "10.3133/sir20235042", "type": "report_paper_content"}, {"citing_doi": "10.1002/saj2.70065", "type": "journal_article"}, {"citing_doi": "10.1016/B978-0-323-99762-1.00004-8", "type": "book_content"}, {"citing_doi": "10.1016/j.geoderma.2022.116070", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.0c06740", "type": "journal_article"}, {"citing_doi": "10.1016/j.jasrep.2024.104899", "type": "journal_article"}, {"citing_doi": "10.1016/j.jasrep.2025.105053", "type": "journal_article"}, {"citing_doi": "10.1111/ejss.70237", "type": "journal_article"}, {"citing_doi": "10.1111/gcb.70216", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.3c01219", "type": "journal_article"}, {"citing_doi": "10.1144/geochem2023-039", "type": "journal_article"}, {"citing_doi": "10.3390/land14071325", "type": "journal_article"}, {"citing_doi": "10.1029/2025GB009056", "type": "journal_article"}, {"citing_doi": "10.1021/acs.jpca.5c03608", "type": "journal_article"}, {"citing_doi": "10.1016/j.hazadv.2022.100157", "type": "journal_article"}, {"citing_doi": "10.70499/TDUQ1370", "type": "journal_article"}, {"citing_doi": "10.1038/s41598-026-37891-3", "type": "journal_article"}, {"citing_doi": "10.1002/9781119583417.ch8", "type": "book_content"}, {"citing_doi": "10.1016/j.foreco.2021.119300", "type": "journal_article"}, {"citing_doi": "10.1029/2022JD036937", "type": "journal_article"}, {"citing_doi": "10.5194/essd-15-2465-2023", "type": "journal_article"}, {"citing_doi": "10.3390/geosciences16030109", "type": "journal_article"}, {"citing_doi": "10.3133/sir20245019", "type": "report_paper_content"}, {"citing_doi": "10.1016/j.electacta.2024.145573", "type": "journal_article"}, {"citing_doi": "10.3390/min15060615", "type": "journal_article"}, {"citing_doi": "10.3389/fagro.2021.741557", "type": "journal_article"}, {"citing_doi": "10.1016/B978-0-12-818748-7.00013-7", "type": "book_content"}];
+                            // console.log(data);
+                            fetch('/get_citation_data', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json', 
+                                },
+                                body: JSON.stringify(data), 
+                            })
+                            .then(response => {
+                                
+                                if (!response.ok) throw new Error('Network response was not ok');
+                                return response.json(); 
+                            })
+                            .then(data => {  
+                                let data_response = data.response;
+                                let modal_list = document.getElementById('modal_list');
+                                
+                                for (let i = 0; i < data_response.length; i++){
+                                    
+                                    let newDiv = document.createElement("div");
+    
+                                    newDiv.textContent = data_response[i].formatted_citation;
+                                    newDiv.className = "citation-modal-list-element";
+                                    
+                                    modal_list.appendChild(newDiv);
+                                }
+                                
+                                modal_has_been_opened = true;
+                                loading_indicator.hidden = true;
+                                
+                            })
+                            .catch(error => console.error('Fetch error:', error))
+                            .finally(() => {});
+    
+                        }).then((event) => {
+                            
+                            resolve();
+                        }).catch((error) => {
+                            console.error(error.message); 
+                        }).finally(() => {});
+                    }
+                });
+                
+                
+                var event = new CustomEvent("pubswh-page-loaded", 
+                { 
+                    
+                    "detail": {
+                        "message": "post-load actions completed.",
+                        "summary": postLoadActionSummary
+                         }
+                });
+                resolve(event);
+                
+                
+            });
+        }).then((event) => {
+            document.dispatchEvent(event);
+        })
+        .catch((error) => {
+            console.error(error.message); 
+        })
+        .finally(() => {
+            
+        });
+    
+    </script>
+
+
+    </div>
+
+
+        </main>
+        <footer class="usa-footer" role="contentinfo">
+    <nav class="usa-footer-primary-section" aria-label="Footer Navigation">
+        <div class="usgs-footer-nav">
+            <a class="usgs-footer-link" href="https://www.doi.gov/privacy">DOI Privacy Policy</a> |
+            <a class="usgs-footer-link" href="https://www.usgs.gov/policies-and-notices">Legal</a> |
+            <a class="usgs-footer-link" href="https://www.usgs.gov/accessibility-and-us-geological-survey">Accessibility</a> |
+            <a class="usgs-footer-link" href="https://www.usgs.gov/sitemap.html">Site Map</a> |
+            <a class="usgs-footer-link" href="https://answers.usgs.gov/">Contact USGS</a>
+        </div>
+        <div class="usgs-footer-nav">
+            <a class="usgs-footer-link" href="https://www.doi.gov/">U.S. Department of the Interior</a> |
+            <a class="usgs-footer-link" href="https://www.doioig.gov/">DOI Inspector General</a> |
+            <a class="usgs-footer-link" href="https://www.whitehouse.gov/">White House</a> |
+            <a class="usgs-footer-link" href="https://www.whitehouse.gov/omb/management/egov/">E-gov</a> |
+            <a class="usgs-footer-link" href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a> |
+            <a class="usgs-footer-link" href="https://www.usgs.gov/about/organization/science-support/foia">FOIA</a>
+        </div>
+    </nav>
+</footer>
+        
+    <script defer>
+        window.addEventListener('load', () => {
+            SystemJS.import("https://pubs.usgs.gov/static/scripts/pubswh_plugins.8fc0c943.js");
+        });
+    </script>
+    <!-- <script async type="application/javascript"
+            src="https://www2.usgs.gov/scripts/analytics/usgs-analytics.js"></script> -->
+
+   <script defer ype="text/javascript" src="https://pubs.usgs.gov/static/vendor/leaflet/leaflet.js"></script>
+        <script defer type="text/javascript" src="https://pubs.usgs.gov/static/vendor/esri-leaflet/esri-leaflet.js"></script>
+        <script defer type="application/javascript">
+            window.addEventListener('load', (event) => {
+                SystemJS.import("https://pubs.usgs.gov/static/scripts/resultsMap.324d277e.js").then(function (resultsMap) {
+                    resultsMap.createResultsMap({
+                        mapDivId: 'mymap',
+                        publications: [{"abstractHeader": "Abstract", "altmetric": {"details": "https://www.altmetric.com/details.php?citation_id=59750498", "image": "https://badges.altmetric.com/?size=64\u0026score=4\u0026types=rrrrttdd"}, "authorsList": ["David B. Smith", "Federico Solano", "Laurel G. Woodruff", "William F. Cannon", "Karl J. Ellefsen"], "authorsListTyped": [{"email": "dsmith@usgs.gov", "orcid": "https://orcid.org/0000-0001-8396-9105", "text": "David B. Smith", "type": "person"}, {"email": "fsolanoc@usgs.gov", "orcid": "https://orcid.org/0000-0002-0308-5850", "text": "Federico Solano", "type": "person"}, {"email": "woodruff@usgs.gov", "orcid": "https://orcid.org/0000-0002-2514-9923", "text": "Laurel G. Woodruff", "type": "person"}, {"email": "wcannon@usgs.gov", "orcid": "https://orcid.org/0000-0002-2699-8118", "text": "William F. Cannon", "type": "person"}, {"email": "ellefsen@usgs.gov", "orcid": "https://orcid.org/0000-0003-3075-4703", "text": "Karl J. Ellefsen", "type": "person"}], "contact": "\u003cp\u003eDirector, \u003ca href=\"https://www.usgs.gov/centers/gggsc/\" data-mce-href=\"https://www.usgs.gov/centers/gggsc/\"\u003eGeology, Geophysics, and Geochemistry Science Center\u003c/a\u003e\u003cbr\u003eU.S. Geological Survey\u003cbr\u003eBox 25046, MS 973\u003cbr\u003eDenver, CO 80225\u003c/p\u003e", "context_item": "sir20175118", "contributors": {"authors": [{"affiliations": [{"active": true, "id": 211, "text": "Crustal Geophysics and Geochemistry Science Center", "usgs": true}, {"active": true, "id": 171, "text": "Central Mineral and Environmental Resources Science Center", "usgs": true}], "contributorId": 138565, "contributorType": {"id": 1, "text": "Authors"}, "corporation": false, "email": "dsmith@usgs.gov", "family": "Smith", "given": "David", "id": 761155, "middleInitial": "B.", "orcid": "https://orcid.org/0000-0001-8396-9105", "preferred": true, "rank": 1, "text": "Smith, David B. 0000-0001-8396-9105 dsmith@usgs.gov", "usgs": true}, {"affiliations": [{"active": true, "id": 245, "text": "Eastern Mineral and Environmental Resources Science Center", "usgs": true}], "contributorId": 4302, "contributorType": {"id": 1, "text": "Authors"}, "corporation": false, "email": "fsolanoc@usgs.gov", "family": "Solano", "given": "Federico", "id": 723106, "orcid": "https://orcid.org/0000-0002-0308-5850", "preferred": true, "rank": 2, "text": "Solano, Federico 0000-0002-0308-5850 fsolanoc@usgs.gov", "usgs": true}, {"affiliations": [{"active": true, "id": 245, "text": "Eastern Mineral and Environmental Resources Science Center", "usgs": true}], "contributorId": 2224, "contributorType": {"id": 1, "text": "Authors"}, "corporation": false, "email": "woodruff@usgs.gov", "family": "Woodruff", "given": "Laurel", "id": 723105, "middleInitial": "G.", "orcid": "https://orcid.org/0000-0002-2514-9923", "preferred": true, "rank": 3, "text": "Woodruff, Laurel G. 0000-0002-2514-9923 woodruff@usgs.gov", "usgs": true}, {"affiliations": [{"active": true, "id": 245, "text": "Eastern Mineral and Environmental Resources Science Center", "usgs": true}], "contributorId": 1883, "contributorType": {"id": 1, "text": "Authors"}, "corporation": false, "email": "wcannon@usgs.gov", "family": "Cannon", "given": "William", "id": 723104, "middleInitial": "F.", "orcid": "https://orcid.org/0000-0002-2699-8118", "preferred": true, "rank": 4, "text": "Cannon, William F. 0000-0002-2699-8118 wcannon@usgs.gov", "usgs": true}, {"affiliations": [{"active": true, "id": 82803, "text": "Geology, Geophysics, and Geochemistry Science Center", "usgs": false}], "contributorId": 789, "contributorType": {"id": 1, "text": "Authors"}, "corporation": false, "email": "ellefsen@usgs.gov", "family": "Ellefsen", "given": "Karl", "id": 723107, "middleInitial": "J.", "orcid": "https://orcid.org/0000-0003-3075-4703", "preferred": true, "rank": 5, "text": "Ellefsen, Karl J. 0000-0003-3075-4703 ellefsen@usgs.gov", "usgs": true}]}, "costCenters": [{"active": true, "id": 171, "text": "Central Mineral and Environmental Resources Science Center", "usgs": true}, {"active": true, "id": 245, "text": "Eastern Mineral and Environmental Resources Science Center", "usgs": true}], "country": "United States", "crossref": {"forward_links_dict": [{"citing_doi": "10.1029/2021GH000498", "type": "journal_article"}, {"citing_doi": "10.3133/sir20235089", "type": "report_paper_content"}, {"citing_doi": "10.3390/min12060780", "type": "journal_article"}, {"citing_doi": "10.3389/fmicb.2023.1283127", "type": "journal_article"}, {"citing_doi": "10.1016/j.jhazmat.2021.125886", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.4c11211", "type": "journal_article"}, {"citing_doi": "10.1144/geochem2022-031", "type": "journal_article"}, {"citing_doi": "10.1039/D5EW00490J", "type": "journal_article"}, {"citing_doi": "10.3390/soilsystems10020034", "type": "journal_article"}, {"citing_doi": "10.1038/s43247-024-01794-w", "type": "journal_article"}, {"citing_doi": "10.70499/XUYZ7021", "type": "journal_article"}, {"citing_doi": "10.21750/REFOR.16.06.111", "type": "journal_article"}, {"citing_doi": "10.3160/0038-3872-124.2.55", "type": "journal_article"}, {"citing_doi": "10.1029/2025JG009098", "type": "journal_article"}, {"citing_doi": "10.3389/fclim.2025.1688361", "type": "journal_article"}, {"citing_doi": "10.1016/j.mex.2026.103836", "type": "journal_article"}, {"citing_doi": "10.1016/j.conbuildmat.2025.144657", "type": "journal_article"}, {"citing_doi": "10.1111/nph.19501", "type": "journal_article"}, {"citing_doi": "10.3133/sir20225112", "type": "report_paper_content"}, {"citing_doi": "10.3133/sir20235042", "type": "report_paper_content"}, {"citing_doi": "10.1002/saj2.70065", "type": "journal_article"}, {"citing_doi": "10.1016/B978-0-323-99762-1.00004-8", "type": "book_content"}, {"citing_doi": "10.1016/j.geoderma.2022.116070", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.0c06740", "type": "journal_article"}, {"citing_doi": "10.1016/j.jasrep.2024.104899", "type": "journal_article"}, {"citing_doi": "10.1016/j.jasrep.2025.105053", "type": "journal_article"}, {"citing_doi": "10.1111/ejss.70237", "type": "journal_article"}, {"citing_doi": "10.1111/gcb.70216", "type": "journal_article"}, {"citing_doi": "10.1021/acs.est.3c01219", "type": "journal_article"}, {"citing_doi": "10.1144/geochem2023-039", "type": "journal_article"}, {"citing_doi": "10.3390/land14071325", "type": "journal_article"}, {"citing_doi": "10.1029/2025GB009056", "type": "journal_article"}, {"citing_doi": "10.1021/acs.jpca.5c03608", "type": "journal_article"}, {"citing_doi": "10.1016/j.hazadv.2022.100157", "type": "journal_article"}, {"citing_doi": "10.70499/TDUQ1370", "type": "journal_article"}, {"citing_doi": "10.1038/s41598-026-37891-3", "type": "journal_article"}, {"citing_doi": "10.1002/9781119583417.ch8", "type": "book_content"}, {"citing_doi": "10.1016/j.foreco.2021.119300", "type": "journal_article"}, {"citing_doi": "10.1029/2022JD036937", "type": "journal_article"}, {"citing_doi": "10.5194/essd-15-2465-2023", "type": "journal_article"}, {"citing_doi": "10.3390/geosciences16030109", "type": "journal_article"}, {"citing_doi": "10.3133/sir20245019", "type": "report_paper_content"}, {"citing_doi": "10.1016/j.electacta.2024.145573", "type": "journal_article"}, {"citing_doi": "10.3390/min15060615", "type": "journal_article"}, {"citing_doi": "10.3389/fagro.2021.741557", "type": "journal_article"}, {"citing_doi": "10.1016/B978-0-12-818748-7.00013-7", "type": "book_content"}], "number_of_citing_DOIs": 46}, "details": [{"Publication type": "Report"}, {"Publication Subtype": "USGS Numbered Series"}, {"Title": "Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States"}, {"Series title": "Scientific Investigations Report"}, {"Series number": "2017-5118"}, {"DOI": "10.3133/sir20175118"}, {"Publication Date": "April 25, 2019"}, {"Year Published": "2019"}, {"Language": "English"}, {"Publisher": "U.S. Geological Survey"}, {"Publisher location": "Reston, VA"}, {"Contributing office(s)": "Central Mineral and Environmental Resources Science Center, Eastern Mineral and Environmental Resources Science Center"}, {"Description": "HTML Document"}, {"Country": "United States"}, {"Online Only (Y/N)": "Y"}], "displayLinks": {"Abstract": [], "Additional Report Piece": [], "Appendix": [], "Application Site": [], "Authors Website": [], "Chapter": [], "Companion Files": [], "Cover": [], "Data Release": [], "Database": [], "Dataset": [], "Digital Object Identifier": [], "Document": [], "Errata": [], "Figure": [], "HTML Document": [], "Illustration": [], "Image": [], "Image Folder": [], "Index Page": [{"id": 363066, "rank": 1, "text": "USGS Index Page", "type": {"id": 15, "text": "Index Page"}, "url": "https://pubs.usgs.gov/sir/2017/5118/"}], "Metadata": [], "NGMDB Index Page": [], "Open Access External Repository Page": [], "Open Access Publisher Index Page": [], "Open Access USGS Document": [], "Plate": [], "Project Site": [], "Publication XML": [], "Raw Data": [], "Read Me": [], "Referenced Work": [], "Related Work": [], "Sheet": [], "Software Release": [], "Spatial Data": [], "Table": [], "Thumbnail": [{"id": 363062, "rank": 1, "type": {"id": 24, "text": "Thumbnail"}, "url": "https://pubs.usgs.gov/sir/2017/5118/coverthb.jpg"}], "USGS Store Link": [], "Version History": []}, "displayTitle": "Geochemical and Mineralogical Maps, with Interpretation, for Soils of the Conterminous United States", "displayToPublicDate": "2019-04-25T11:25:00", "docAbstract": "\u003cp\u003e\u003cspan\u003eBetween 2007 and 2013, the U.S. Geological Survey conducted a low-density (1 site per 1,600 square kilometers, 4,857 sites) geochemical and mineralogical survey of soils in the conterminous United States. The sampling protocol for the national-scale survey included, at each site, a sample from a depth of 0 to 5 centimeters, a composite of the soil A horizon, and a deeper sample from the soil C horizon or, if the top of the C horizon was at a depth greater than 1 meter, a sample from a depth of approximately 80\u2013100 centimeters. The \u0026lt;2-millimeter fraction of each sample was analyzed for a suite of 45 major and trace elements by methods that yield the total or near-total elemental concentration. The major mineralogical components in the samples from the soil A and C horizons were determined by a quantitative X-ray diffraction method using Rietveld refinement. This report presents all the maps and statistical information for each determined element and mineral along with an interpretive section discussing the possible processes that caused the observed national-scale geochemical and mineralogical patterns. Most often, the geochemical and mineralogical patterns reflect the composition of the underlying soil parent material with some modifications caused by leaching of the more mobile elements (for example, calcium and sodium) in the humid areas of the country.\u003c/span\u003e\u003c/p\u003e", "doi": "10.3133/sir20175118", "formattedModifiedDateTime": "May 15, 2025 13:21:20", "geographicExtents": {"features": [{"geometry": {"coordinates": [[[[-94.81758, 49.38905], [-94.64, 48.84], [-94.32914, 48.67074], [-93.63087, 48.60926], [-92.61, 48.45], [-91.64, 48.14], [-90.83, 48.27], [-89.6, 48.01], [-89.27292, 48.01981], [-88.37811, 48.30292], [-87.43979, 47.94], [-86.46199, 47.55334], [-85.65236, 47.22022], [-84.87608, 46.90008], [-84.77924, 46.6371], [-84.54375, 46.53868], [-84.6049, 46.4396], [-84.3367, 46.40877], [-84.14212, 46.51223], [-84.09185, 46.27542], [-83.89077, 46.11693], [-83.61613, 46.11693], [-83.46955, 45.99469], [-83.59285, 45.81689], [-82.55092, 45.34752], [-82.33776, 44.44], [-82.13764, 43.57109], [-82.43, 42.98], [-82.9, 42.43], [-83.12, 42.08], [-83.142, 41.97568], [-83.02981, 41.8328], [-82.69009, 41.67511], [-82.43928, 41.67511], [-81.27775, 42.20903], [-80.24745, 42.3662], [-78.93936, 42.86361], [-78.92, 42.965], [-79.01, 43.27], [-79.17167, 43.46634], [-78.72028, 43.62509], [-77.73789, 43.62906], [-76.82003, 43.62878], [-76.5, 44.01846], [-76.375, 44.09631], [-75.31821, 44.81645], [-74.867, 45.00048], [-73.34783, 45.00738], [-71.50506, 45.0082], [-71.405, 45.255], [-71.08482, 45.30524], [-70.66, 45.46], [-70.305, 45.915], [-69.99997, 46.69307], [-69.23722, 47.44778], [-68.905, 47.185], [-68.23444, 47.35486], [-67.79046, 47.06636], [-67.79134, 45.70281], [-67.13741, 45.13753], [-66.96466, 44.8097], [-68.03252, 44.3252], [-69.06, 43.98], [-70.11617, 43.68405], [-70.64548, 43.09024], [-70.81489, 42.8653], [-70.825, 42.335], [-70.495, 41.805], [-70.08, 41.78], [-70.185, 42.145], [-69.88497, 41.92283], [-69.96503, 41.63717], [-70.64, 41.475], [-71.12039, 41.49445], [-71.86, 41.32], [-72.295, 41.27], [-72.87643, 41.22065], [-73.71, 40.9311], [-72.24126, 41.11948], [-71.945, 40.93], [-73.345, 40.63], [-73.982, 40.628], [-73.95232, 40.75075], [-74.25671, 40.47351], [-73.96244, 40.42763], [-74.17838, 39.70926], [-74.90604, 38.93954], [-74.98041, 39.1964], [-75.20002, 39.24845], [-75.52805, 39.4985], [-75.32, 38.96], [-75.07183, 38.78203], [-75.05673, 38.40412], [-75.37747, 38.01551], [-75.94023, 37.21689], [-76.03127, 37.2566], [-75.72205, 37.93705], [-76.23287, 38.31921], [-76.35, 39.15], [-76.54272, 38.71762], [-76.32933, 38.08326], [-76.99, 38.23999], [-76.30162, 37.91794], [-76.25874, 36.9664], [-75.9718, 36.89726], [-75.86804, 36.55125], [-75.72749, 35.55074], [-76.36318, 34.80854], [-77.39763, 34.51201], [-78.05496, 33.92547], [-78.55435, 33.86133], [-79.06067, 33.49395], [-79.20357, 33.15839], [-80.30132, 32.50935], [-80.86498, 32.0333], [-81.33629, 31.44049], [-81.49042, 30.72999], [-81.31371, 30.03552], [-80.98, 29.18], [-80.53558, 28.47213], [-80.53, 28.04], [-80.05654, 26.88], [-80.08801, 26.20576], [-80.13156, 25.81677], [-80.38103, 25.20616], [-80.68, 25.08], [-81.17213, 25.20126], [-81.33, 25.64], [-81.71, 25.87], [-82.24, 26.73], [-82.70515, 27.49504], [-82.85526, 27.88624], [-82.65, 28.55], [-82.93, 29.1], [-83.70959, 29.93656], [-84.1, 30.09], [-85.10882, 29.63615], [-85.28784, 29.68612], [-85.7731, 30.15261], [-86.4, 30.4], [-87.53036, 30.27433], [-88.41782, 30.3849], [-89.18049, 30.31598], [-89.59383, 30.15999], [-89.41373, 29.89419], [-89.43, 29.48864], [-89.21767, 29.29108], [-89.40823, 29.15961], [-89.77928, 29.30714], [-90.15463, 29.11743], [-90.88022, 29.14854], [-91.62678, 29.677], [-92.49906, 29.5523], [-93.22637, 29.78375], [-93.84842, 29.71363], [-94.69, 29.48], [-95.60026, 28.73863], [-96.59404, 28.30748], [-97.14, 27.83], [-97.37, 27.38], [-97.38, 26.69], [-97.33, 26.21], [-97.14, 25.87], [-97.53, 25.84], [-98.24, 26.06], [-99.02, 26.37], [-99.3, 26.84], [-99.52, 27.54], [-100.11, 28.11], [-100.45584, 28.69612], [-100.9576, 29.38071], [-101.6624, 29.7793], [-102.48, 29.76], [-103.11, 28.97], [-103.94, 29.27], [-104.45697, 29.57196], [-104.70575, 30.12173], [-105.03737, 30.64402], [-105.63159, 31.08383], [-106.1429, 31.39995], [-106.50759, 31.75452], [-108.24, 31.75485], [-108.24194, 31.34222], [-109.035, 31.34194], [-111.02361, 31.33472], [-113.30498, 32.03914], [-114.815, 32.52528], [-114.72139, 32.72083], [-115.99135, 32.61239], [-117.12776, 32.53534], [-117.29594, 33.04622], [-117.944, 33.62124], [-118.4106, 33.74091], [-118.51989, 34.02778], [-119.081, 34.078], [-119.43884, 34.34848], [-120.36778, 34.44711], [-120.62286, 34.60855], [-120.74433, 35.15686], [-121.71457, 36.16153], [-122.54747, 37.55176], [-122.51201, 37.78339], [-122.95319, 38.11371], [-123.7272, 38.95166], [-123.86517, 39.76699], [-124.39807, 40.3132], [-124.17886, 41.14202], [-124.2137, 41.99964], [-124.53284, 42.76599], [-124.14214, 43.70838], [-124.02053, 44.6159], [-123.89893, 45.52341], [-124.07963, 46.86475], [-124.39567, 47.72017], [-124.68721, 48.18443], [-124.5661, 48.37971], [-123.12, 48.04], [-122.58736, 47.096], [-122.34, 47.36], [-122.5, 48.18], [-122.84, 49], [-120, 49], [-117.03121, 49], [-116.04818, 49], [-113, 49], [-110.05, 49], [-107.05, 49], [-104.04826, 48.99986], [-100.65, 49], [-97.22872, 49.0007], [-95.15907, 49], [-95.15609, 49.38425], [-94.81758, 49.38905]]]], "type": "MultiPolygon"}, "id": "sir20175118.base_id", "properties": {"id": "sir20175118", "info": "2019, Scientific Investigations Report 2017-5118", "title": "Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States", "url": "https://pubs.usgs.gov/publication/sir20175118", "year": "2019"}, "type": "Feature"}], "properties": {"title": "Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States"}, "type": "FeatureCollection"}, "hasExcel": false, "id": 70194290, "indexId": "sir20175118", "interactions": [], "ipdsId": "IP-069903", "language": "English", "lastModifiedDate": "2025-05-15T13:21:20.301081", "links": [{"id": 363066, "rank": 2, "type": {"id": 15, "text": "Index Page"}, "url": "https://pubs.usgs.gov/sir/2017/5118/"}, {"id": 363062, "rank": 1, "type": {"id": 24, "text": "Thumbnail"}, "url": "https://pubs.usgs.gov/sir/2017/5118/coverthb.jpg"}], "noUsgsAuthors": false, "noYear": false, "offers": null, "onlineOnly": "Y", "productDescription": "HTML Document", "pubHasNoLinks": false, "publicationDate": "April 25, 2019", "publicationStatus": "PW", "publicationSubtype": {"id": 5, "text": "USGS Numbered Series"}, "publicationType": {"id": 18, "text": "Report"}, "publicationYear": "2019", "publishedDate": "2019-04-25", "publisher": "U.S. Geological Survey", "publisherLocation": "Reston, VA", "publishingServiceCenter": {"id": 2, "text": "Denver PSC"}, "relationships": {"@context": {"dc": "https://purl.org/dc/elements/1.1/", "rdac": "https://rdaregistry.info/Elements/c/", "rdaw": "https://rdaregistry.info/Elements/w/", "rdaw:replacedByWork": {"@type": "@id"}, "rdaw:replacementOfWork": {"@type": "@id"}, "xsd": "https://www.w3.org/2001/XMLSchema#"}, "@graph": [{"@id": "https://pubs.usgs.gov/publication/sir20175118", "@type": "rdac:Work", "dc:date": "2019", "dc:title": "Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States"}]}, "seriesNumber": "2017-5118", "seriesTitle": {"active": true, "code": "SIR", "id": 334, "onlineIssn": "2328-0328", "printIssn": "2328-031X", "publicationSubtype": {"id": 5}, "text": "Scientific Investigations Report"}, "tableOfContents": "\u003cul\u003e\u003cli\u003eAbstract\u003c/li\u003e\u003cli\u003eIntroduction\u003c/li\u003e\u003cli\u003eNavigating the Website\u003c/li\u003e\u003cli\u003eInformation Sources\u003c/li\u003e\u003cli\u003ePhoto Credits\u003c/li\u003e\u003cli\u003eAcknowledgments\u003c/li\u003e\u003c/ul\u003e", "text": "sir20175118 - 2019 - Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States", "title": "Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States", "usgsCitation": "Smith, D.B., Solano, Federico, Woodruff, L.G., Cannon, W.F., and Ellefsen, K.J., 2019,  Geochemical and mineralogical maps, with interpretation, for soils of the conterminous United States:  U.S. Geological Survey Scientific Investigations Report 2017-5118, https://doi.org/10.3133/sir20175118. [Available as HTML.]"}],
+                        enablePopup: false
+                    });
+                });
+            });
+        </script>
+    
+
+
+   <script>
+       var GA = {};
+       (function (i, s, o, g, r, a, m) {
+           i['GoogleAnalyticsObject'] = r;
+           i[r] = i[r] || function () {
+                   (i[r].q = i[r].q || []).push(arguments)
+               }, i[r].l = 1 * new Date();
+           a = s.createElement(o),
+               m = s.getElementsByTagName(o)[0];
+           a.async = 1;
+           a.src = g;
+           m.parentNode.insertBefore(a, m)
+       })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+       ga('create', 'UA-10113280-1', 'auto');
+       ga('send', 'pageview');
+
+       GA.trackGAEvent = function (category, actions, labels, values) {
+           ga('send', 'event', category, actions, labels, values);
+       };
+   </script>
+
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2214b4ba90d6b4e',t:'MTc4NTIxNDU1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

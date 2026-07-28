@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-OCEAN-001",
+  "data_source_ids": [
+    "NOAA-WOD-001",
+    "ARGO-DATA-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:593ddbb02f370367e25fe54204266c3b162bde38aabd7750dbd79ec128f93411",
+  "falsification_condition": "Reject if a surface observation is generalized through depth or if basin and global records are mixed without weighting and provenance.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ab9fca7bf975831625cc573ca4bc8cbf3682a532ff530aa262ec3e1415587144",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a10832201fab50e188c44d3ddd934d196c0c5df10a3db1dd40e326a898a011e6",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-OCEAN-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:149611d5b634a0452c3924f3c70b3082ea550af95f704eb645b6008f27eebc39",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:96b40a41b2f2f7ddfd68522a7d3969dfd7b64e4a36a9a29d24b2bc35301fa365",
+    "prediction_seal_hash": "sha256:16b1fa179c0a83e0f55b93dc47428c4733cb56f7c37b1e2a57565c97a3439ea0",
+    "program_hash": "sha256:74d57fd9990105da8d2e7d1271e32d72cc947049332f723804803b8cb96176c0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5fa210877ad399ab341f592b040bca4b960c4d6f8d1bfcc8a06ee4ebb74c0a78",
+    "target_material_present": false,
+    "trace_hash": "sha256:0b39a8c4a84fa0bc170dc3cc89e86c1fa89812c3a4d425dd74f4ce9fb89e75a4"
+  },
+  "measurement_receipt_hash": "sha256:74df6b141b99e794e8a11dc9af673da33403512d598797a198a19384e8591250",
+  "measurements": [
+    "sft-earth-ocean-001-external-earth-evidence: predicted earth:bounded-seawater-basin-interface-carrier__storage-motion-composition-and-exchange-relation__basin-depth-composition-state-boundaries-and-time-held__ocean-observation-bounded; source-derived earth:bounded-seawater-basin-interface-carrier__storage-motion-composition-and-exchange-relation__basin-depth-composition-state-boundaries-and-time-held__ocean-observation-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:08617c7b9f5d719497192642e7c1703b5bb9174ad6c6368671686407493d2716",
+    "custodian_id": "SFT-EXP-EARTH-OCEAN-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:593ddbb02f370367e25fe54204266c3b162bde38aabd7750dbd79ec128f93411",
+    "prediction_seal_hash": "sha256:16b1fa179c0a83e0f55b93dc47428c4733cb56f7c37b1e2a57565c97a3439ea0",
+    "registered_target_identity_hash": "sha256:5fa210877ad399ab341f592b040bca4b960c4d6f8d1bfcc8a06ee4ebb74c0a78",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:66a88454e9038a01521aafdcb3a1139e246f30d4540e2951926cfde50d5083cc"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e576405b23ff14ff7a4de1429a837d35fe0a9f76942b22849d9204ade432caf2"
+}

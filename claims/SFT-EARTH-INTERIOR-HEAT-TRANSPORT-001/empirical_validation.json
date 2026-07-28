@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-INTERIOR-HEAT-TRANSPORT-001",
+  "data_source_ids": [
+    "EARTHSCOPE-SAGE-SERVICES-001",
+    "USGS-GEOMAG-OBSERVATORIES-001",
+    "USGS-NGMDB-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c0cf965773d22742879e4d068c260662bf9a836f953aa127b9cd54f2a55f4262",
+  "falsification_condition": "Reject if a fitted effective parameter replaces the missing carrier path or if distinct transport modes are silently merged.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0243f76df78a078f7768f3185c25e91a68637754b123899876c5567878ac8ccb",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:bb4d693e612b4745fc22cb2fb34e88c3c1c34b93e4b935058e9c6391e35a53fd",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-INTERIOR-HEAT-TRANSPORT-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a1bab115eac72d74dac6b094f36b26ab9655ba1caf549f0d863c860652131976",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ac54e6a8bb97299e0b7618f04ea54875a251d81429cb3ee6333909de69a212bb",
+    "prediction_seal_hash": "sha256:5932568a960cee23215f786af7ccdc126373c5a4185d0634fedcaffc7249a15b",
+    "program_hash": "sha256:0740c5cfd67e3a2d9412ab11a70176a5fa748fa0c06f7727832a988eb95c0dd1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:1a2fcca9e496abb40ccec8fd61906eb428c5ce0390edb3d870c429b9cd69b9ca",
+    "target_material_present": false,
+    "trace_hash": "sha256:1709b133b0f383e6a02a125b939dd07a08d1992ea51f054117ceb834162e8dd5"
+  },
+  "measurement_receipt_hash": "sha256:f0bfe5f0bbf88c7ac945deaf00b56600863d119ad9a2a59d5303b71ad9852201",
+  "measurements": [
+    "sft-earth-interior-heat-transport-001-external-earth-evidence: predicted earth:temperature-material-motion-carrier__conduction-advection-and-transition-relation__geometry-properties-boundaries-time-and-flux-held__interior-scale-bounded; source-derived earth:temperature-material-motion-carrier__conduction-advection-and-transition-relation__geometry-properties-boundaries-time-and-flux-held__interior-scale-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:946b319143fe5d2c84943698be72a95e53208007af805f6bbe7cfea7cab6216c",
+    "custodian_id": "SFT-EXP-EARTH-INTERIOR-HEAT-TRANSPORT-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:c0cf965773d22742879e4d068c260662bf9a836f953aa127b9cd54f2a55f4262",
+    "prediction_seal_hash": "sha256:5932568a960cee23215f786af7ccdc126373c5a4185d0634fedcaffc7249a15b",
+    "registered_target_identity_hash": "sha256:1a2fcca9e496abb40ccec8fd61906eb428c5ce0390edb3d870c429b9cd69b9ca",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f0047221b79ea688623f356537fb878386217c971882c2602d4ad8b8e980ffc9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6c53580d4a0a32a79a8427131dd1894e5114af493c32d3c74489171e78a0cef0"
+}

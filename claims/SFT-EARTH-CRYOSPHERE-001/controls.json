@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-CRYOSPHERE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:24a7c89a654f6a006694434a3eb3a723dc966141d766363f2d1fecf877b44c40"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:434106ccb10fa3fe565c8e30cac129035f700a58731f99199c771cd07f0588bd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bd034df7d06804d16cdad86b86f9c38b52d4eb6bd46072a4f4b5859a67acb789"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:75dc3b7711a859a3acd198e13d2f16577bef924dd2b74699dae0c70a82941beb"
+    }
+  ]
+}

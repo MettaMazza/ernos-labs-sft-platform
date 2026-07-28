@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-TECTONIC-MOTION-001",
+  "data_source_ids": [
+    "EARTHSCOPE-SAGE-SERVICES-001",
+    "USGS-GEOMAG-OBSERVATORIES-001",
+    "USGS-NGMDB-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:83f425cfaac0e35ac304491fc2994e0eff6f8744dcc297e398adb61c2b24bfe2",
+  "falsification_condition": "Reject if reference-frame change creates the claimed motion or if episodic and unresolved intervals are smoothed away.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:fd116c51ca074f1ec02e9718e67c7bc3f6f594313cfda41db9a41442960ed415",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b2ea35caca40de7a26ac7dc6b3d9faa8df3f5b4f2291103160d91f62da0d7c84",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-TECTONIC-MOTION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a0ac009143bb3c900ad9abbff947723070f5b60711f1b686f5b073d329702fa6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ac5f69af7fcd34de4d1defee533e9e5f24afba2c3fbf068bc079c7ec227d320b",
+    "prediction_seal_hash": "sha256:12b20fdef0d41b08802e06c3664341c8f0dc53eaeef88810838740f2b9b87261",
+    "program_hash": "sha256:c51f64db97ca7863846da506485a3345df14178541fc4af514bcf45e5f50b25b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e9f3b6a8bff338e188b1b6ed2e1f0e2b863f05c3632e9405b676e69455083e4c",
+    "target_material_present": false,
+    "trace_hash": "sha256:bab7d9ea7d56dd5b867c2c3be3be908f301270229ef411c0cb663e99f3bd8c44"
+  },
+  "measurement_receipt_hash": "sha256:b5c07da9b782ea6370f712950086041f445194f7247130ab82d62190313ef926",
+  "measurements": [
+    "sft-earth-tectonic-motion-001-external-earth-evidence: predicted earth:time-indexed-solid-earth-position-carrier__relative-displacement-strain-transition__reference-frame-path-rate-events-and-errors-held__spatial-temporal-window-bounded; source-derived earth:time-indexed-solid-earth-position-carrier__relative-displacement-strain-transition__reference-frame-path-rate-events-and-errors-held__spatial-temporal-window-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:da2082820d6bfccdbff13b8f8793a05b5eea0a5269dfbcc87f2ff4d4d3eb063d",
+    "custodian_id": "SFT-EXP-EARTH-TECTONIC-MOTION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:83f425cfaac0e35ac304491fc2994e0eff6f8744dcc297e398adb61c2b24bfe2",
+    "prediction_seal_hash": "sha256:12b20fdef0d41b08802e06c3664341c8f0dc53eaeef88810838740f2b9b87261",
+    "registered_target_identity_hash": "sha256:e9f3b6a8bff338e188b1b6ed2e1f0e2b863f05c3632e9405b676e69455083e4c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:337efece116ef70ec7c5b995c62eb2398f168ea536631e7eb11d627be5973310"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:55a7b8bb744437fed196b83e1b45b309ce702952f7d1783f51088f65cceff39e"
+}

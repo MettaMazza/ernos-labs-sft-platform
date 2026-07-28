@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-SURFACE-WATER-001",
+  "data_source_ids": [
+    "USGS-NWIS-001",
+    "WQP-WEB-SERVICES-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:938d0cd520c923767a073453cfe12012ee4765e7df4ea369b0a7e4842f5f17a6",
+  "falsification_condition": "Reject if ungauged reaches, diversions, floodplain storage or groundwater exchange are silently omitted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0316cb10a7e942d9e91863da1fd565ffa8ccef869a8c77e29660c88e16d095d0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:afbe5787a9b9703ec68ca8aeab9787a3c2ceccc3c6e4ffe3112dc47cb5e66316",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-SURFACE-WATER-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:5433cfebed0c50d3740f9bac9be7eac1ff458cc9d9a25a6fd8e2f636dce8b272",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9b50d63a5c4bb255a2d3a7397e0787960f609616f471479970f2989e20d72713",
+    "prediction_seal_hash": "sha256:9876dbb90832f625df4263d58b35bedd3a1cd10a12e24fc73294d52a59702f68",
+    "program_hash": "sha256:5c9fca3c28f16c80e796165a20e7e83684df42ec67100e1b8868faca06b7a8d6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3678ec0468bbf3e27f5eedfdcc7f04ec1cd668af6895e5f5e2950be238808967",
+    "target_material_present": false,
+    "trace_hash": "sha256:89221631529febd32701ad9f6df57f05edff1e8e4c3f16f10f0e3cb04d56c349"
+  },
+  "measurement_receipt_hash": "sha256:8d20250bf10f136aa7381384b8c24adfdb0ce9ca75a9a78a536cce454739783f",
+  "measurements": [
+    "sft-earth-surface-water-001-external-earth-evidence: predicted earth:surface-water-node-edge-carrier__storage-routing-and-exchange-relation__network-geometry-flow-quality-boundaries-and-time-held__catchment-window-bounded; source-derived earth:surface-water-node-edge-carrier__storage-routing-and-exchange-relation__network-geometry-flow-quality-boundaries-and-time-held__catchment-window-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c7ba7532cc771258284b87d3c373ca83b9662542a6e20cec22ab0c611cbebfc4",
+    "custodian_id": "SFT-EXP-EARTH-SURFACE-WATER-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:938d0cd520c923767a073453cfe12012ee4765e7df4ea369b0a7e4842f5f17a6",
+    "prediction_seal_hash": "sha256:9876dbb90832f625df4263d58b35bedd3a1cd10a12e24fc73294d52a59702f68",
+    "registered_target_identity_hash": "sha256:3678ec0468bbf3e27f5eedfdcc7f04ec1cd668af6895e5f5e2950be238808967",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:1b9e7d6a50337c1bb97e7bd85c6cf53df23021b64ac24e5f5adec38b09a9c94d"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:5bc6a5c37967f68775b5560eb0870b8277b762f0df9941b23a7539398887c3ae"
+}

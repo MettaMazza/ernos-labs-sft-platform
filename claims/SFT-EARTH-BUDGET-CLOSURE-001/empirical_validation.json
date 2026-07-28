@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-BUDGET-CLOSURE-001",
+  "data_source_ids": [
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "NOAA-WOD-001",
+    "USGS-NWIS-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:4e2bd0f270acca0de57c2229f8589ddedc73cde78038cf113cb2755f3d897ef6",
+  "falsification_condition": "Reject if a residual is deleted, reallocated by tuning or called closure outside the declared uncertainty and source boundary.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ff5f122420984b3ff3006fab0fc881aa940cc64eab95161f00528df22eef4dd6",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:580dcd5b5d170ea6a8a455b5c5f3fb946547d8dcae869de11f82eaac713b5ff8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-BUDGET-CLOSURE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ec746b4e1815b2d601c911fe455c2c8d1c76f6fa16490f8848957b462cf2dd7e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ce62505de83c12f236c0290c103f9e4e1271370c29e38ef1b3f9e830ea8e79bf",
+    "prediction_seal_hash": "sha256:737030fa3056b17050838663ace55de4ba5bfc7bf669d8185ee47aa5664f0676",
+    "program_hash": "sha256:9fa11ebb49102fb11dcd315f29d387c91adb48d9041132ead6455042ec817097",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:817ad2e8cba4e5bc3a75adf9631fe010c8eea137c3f5580547b9c666c572b8e0",
+    "target_material_present": false,
+    "trace_hash": "sha256:e964c263866af9d27d6a34699a635038fba126b431b2d983d7da480a88cd02f1"
+  },
+  "measurement_receipt_hash": "sha256:d601e3ea6db153772b21d788306dbac6b766461daa2d6725292e629330c17941",
+  "measurements": [
+    "sft-earth-budget-closure-001-external-earth-evidence: predicted earth:complete-registered-ledger-carrier__independent-route-balance-comparison__measurement-uncertainty-missing-terms-and-residual-held__declared-ledger-bounded; source-derived earth:complete-registered-ledger-carrier__independent-route-balance-comparison__measurement-uncertainty-missing-terms-and-residual-held__declared-ledger-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3eddf0e1905708d040f8b8477c1fd53e789cd52d26573eb1d51910c83d3ce4cc",
+    "custodian_id": "SFT-EXP-EARTH-BUDGET-CLOSURE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:4e2bd0f270acca0de57c2229f8589ddedc73cde78038cf113cb2755f3d897ef6",
+    "prediction_seal_hash": "sha256:737030fa3056b17050838663ace55de4ba5bfc7bf669d8185ee47aa5664f0676",
+    "registered_target_identity_hash": "sha256:817ad2e8cba4e5bc3a75adf9631fe010c8eea137c3f5580547b9c666c572b8e0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ffa1b81dc5ac433004b8d7c479eaa15edc782625ae36ed5a2bc6000e4ec95754"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9b7c377fab672915ee86d0f8da494b129008612bcc5d7438598822d43e512f87"
+}

@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-RUPTURE-001",
+  "data_source_ids": [
+    "USGS-EARTHQUAKE-FDSN-001",
+    "EARTHSCOPE-SAGE-SERVICES-001",
+    "SMITHSONIAN-GVP-VOTW-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:aa66c4ad90fb688c34c9cdeb6149644c44fbb15556e3b4e2e4b35e2df4d20010",
+  "falsification_condition": "Reject if catalog time alone is treated as the rupture mechanism or if unobserved nucleation is asserted as measured fact.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:173ae6c2823661a82221668c7beda6d2b0690cdb3ee098bb970c07c71ce6f8b3",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8e0a2c5a7066169beb6355139e1cc6733e33f2dabb1985d00d4653a8ba6664c9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-RUPTURE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:86031001444e281c64da5c34374e20ed906bc5c6f724b39cca6861d7f79a7dad",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:db5a73d6480d198f5304d4a9f85ad50b6109bdeef3f586d5c1febe2e1264da2f",
+    "prediction_seal_hash": "sha256:b68a6f84ce1674f1a69c6327cde3f9f7121ca692e1120b048a816687a46d9ba3",
+    "program_hash": "sha256:b45e92d95c0b1f678339d66bb74f2c3a19509421a5cb8691fa70393b262e1625",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9f3391514aa1ed83cb96f16850aa286433477c6cc92d527b09bbd74d5a389d90",
+    "target_material_present": false,
+    "trace_hash": "sha256:526e8b3da6308d4d7796181ec60ce9448421e28142729ace59350b23ff6da8df"
+  },
+  "measurement_receipt_hash": "sha256:cf5b8c2bdea06002fc9a55427a46ed0ccd5261d76e9ce41a6f9f681b2289a0c9",
+  "measurements": [
+    "sft-earth-rupture-001-external-earth-evidence: predicted earth:fault-state-transition-carrier__stored-deformation-to-slip-transition__geometry-loading-nucleation-propagation-and-arrest-held__event-and-network-bounded; source-derived earth:fault-state-transition-carrier__stored-deformation-to-slip-transition__geometry-loading-nucleation-propagation-and-arrest-held__event-and-network-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f8fb204134e8fbfbcb86121074014889e55e7dddc3676c225a8656d860eaf018",
+    "custodian_id": "SFT-EXP-EARTH-RUPTURE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:aa66c4ad90fb688c34c9cdeb6149644c44fbb15556e3b4e2e4b35e2df4d20010",
+    "prediction_seal_hash": "sha256:b68a6f84ce1674f1a69c6327cde3f9f7121ca692e1120b048a816687a46d9ba3",
+    "registered_target_identity_hash": "sha256:9f3391514aa1ed83cb96f16850aa286433477c6cc92d527b09bbd74d5a389d90",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d9122926427224d1c3d848675f79b8b045464556438af8a352d829fc58bd26c4"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:641c6737a2bea5ee01842f49ce83fd5e00581328b175c0cbeb60e97d4fb8c367"
+}

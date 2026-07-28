@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-ENERGY-BUDGET-001",
+  "data_source_ids": [
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "NOAA-WOD-001",
+    "USGS-NWIS-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:435035577a2f1598070c7fb97459151a9db82ede98ee8d7773b036f01948d206",
+  "falsification_condition": "Reject if closure is asserted after omitting a flux, changing units, mixing timescales or fitting a residual away.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6df7f9a1981e3c7d86ba272cbca1db457e76beffc4eea88314bfd2a31d14fb38",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5483fc18d34b83e0ec91fe28d0e8bdc6c8e75fcf5db27d683a64b2977520e60b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-ENERGY-BUDGET-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6f5e227f774cf3e4de2cfe99a8fae24cc6ca6f596a39919faf0ab14dde49b25b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c0a59dd8506209330309129ff159f693a7a62c42fc89e2e5f91b02f435b2dfca",
+    "prediction_seal_hash": "sha256:8d5386e4b9b4f3a67a267993975c496ac2ed17dbdbd469516fb3e56144ec932a",
+    "program_hash": "sha256:ca3696306714b6b7f3b56915110514e0001840e3219f56c5d3fa76e66debca6e",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ea9168abf071e927bd4e7277f53a5e3f5f166e3045ed69e891ca67f2f97b220a",
+    "target_material_present": false,
+    "trace_hash": "sha256:263ce1891302d95d31af9a021bd8588cc414cbae764800a7febb8c22d60df2e1"
+  },
+  "measurement_receipt_hash": "sha256:0e0dcdf40768c395d2b8e45e7a67909e48d9a582ab19941d8eb8174c1ac278e4",
+  "measurements": [
+    "sft-earth-energy-budget-001-external-earth-evidence: predicted earth:bounded-energy-stock-transfer-carrier__source-storage-transfer-loss-balance__all-terms-units-boundaries-and-times-held__budget-resolution-bounded; source-derived earth:bounded-energy-stock-transfer-carrier__source-storage-transfer-loss-balance__all-terms-units-boundaries-and-times-held__budget-resolution-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:ab63a6df6486e631c6e288a8f234889ac27a3535ae140d0df9c158f7f914fcc4",
+    "custodian_id": "SFT-EXP-EARTH-ENERGY-BUDGET-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:435035577a2f1598070c7fb97459151a9db82ede98ee8d7773b036f01948d206",
+    "prediction_seal_hash": "sha256:8d5386e4b9b4f3a67a267993975c496ac2ed17dbdbd469516fb3e56144ec932a",
+    "registered_target_identity_hash": "sha256:ea9168abf071e927bd4e7277f53a5e3f5f166e3045ed69e891ca67f2f97b220a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a68668be9fde823d665d9f73d47001e49e55f65cb6a4fabf77b747591a80c0de"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:aa24722fbb709378a13c4aa77406f749d300f1d1fba9f54ccc803bd530bb07a8"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-WATER-RESERVOIR-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:85cf6d4351bdeded9d3033c53fbe0143aeba4ef58c8912fbcd4f8923b51fae1d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:12aa7db2721b1efc9344f20d609616dfa7dcd7eb2ccc0799e4cf40f99a5c0473"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cd3ead4987efbdb6f7c1b06f8342b0893f515b618e4d2941fa8e309c17a3cf3d"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:f0ba852a3048750d56ab96a3ff94c49c5bba08e90f68b2d8705dd6acf2318ca6"
+    }
+  ]
+}

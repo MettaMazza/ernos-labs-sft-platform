@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-REMOTE-SENSING-001",
+  "data_source_ids": [
+    "NASA-EARTHDATA-SEARCH-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NOAA-GHCND-001",
+    "NOAA-PALEO-001",
+    "EARTHSCOPE-SAGE-SERVICES-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:59c03353f13009ba06815352341157d194565d024ddcc7dcb4e387320d96e645",
+  "falsification_condition": "Reject if a retrieval product is called direct ground truth or if cloud, saturation and algorithm changes are erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cf8c65fa5ed25c9d79d520726d16b8dd809264375458d16c25cd2abd212445f4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:af91fd5f92ba600f95360e7155f2cc4f3a478b44365035a59de94243d416f862",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-REMOTE-SENSING-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cec0e8bb98596c765aab9114eafcb7f466ce709e80e8d148b8b786ebb678f6da",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1cffa7d6bb2e6c422b1101940a19de70a3eb7b995e07d4b8e08f470505053f23",
+    "prediction_seal_hash": "sha256:85990ce5051cee7e54997dfeef7a113e7a977d06e7f130fa88b42a03bbb6afe0",
+    "program_hash": "sha256:6510e0071536b284171fac5354cb1d676ade5df224bd2bb7cddf8210ceb4f84d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:db15ce0c2ec5878ee33f77c8e957a43877a1ec37db5034160426aa5b8ca131c7",
+    "target_material_present": false,
+    "trace_hash": "sha256:3f21f3c129350c2da3c3dd9f8403b57df6d56dd5af06a034e4516e35d1ef50b3"
+  },
+  "measurement_receipt_hash": "sha256:68922ccace6af40770ff426620ce63c11b7c6e9f30ce136518b1d4fb55fd59aa",
+  "measurements": [
+    "sft-earth-remote-sensing-001-external-earth-evidence: predicted earth:source-path-sensor-retrieval-carrier__signal-to-geophysical-record-relation__geometry-spectrum-calibration-processing-validation-and-cloud-held__sensor-product-bounded; source-derived earth:source-path-sensor-retrieval-carrier__signal-to-geophysical-record-relation__geometry-spectrum-calibration-processing-validation-and-cloud-held__sensor-product-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:4fdcb3348c6d336948e523abb84d9901f44a642660a31b743a662841abbc907d",
+    "custodian_id": "SFT-EXP-EARTH-REMOTE-SENSING-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:59c03353f13009ba06815352341157d194565d024ddcc7dcb4e387320d96e645",
+    "prediction_seal_hash": "sha256:85990ce5051cee7e54997dfeef7a113e7a977d06e7f130fa88b42a03bbb6afe0",
+    "registered_target_identity_hash": "sha256:db15ce0c2ec5878ee33f77c8e957a43877a1ec37db5034160426aa5b8ca131c7",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:0311442ea1cb182768424c59e2320b3c6cf9da684a988a1e4a7302ef7fb508f6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e3a2d0965cb92a94de243984fc2801b96ea7f9af415815787d125528c9b38dd6"
+}

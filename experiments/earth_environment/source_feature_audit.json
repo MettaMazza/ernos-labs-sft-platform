@@ -1,0 +1,1816 @@
+{
+  "absent_feature_count": 24,
+  "audit_hash": "sha256:5905fe43e5252542902407a86d571ae8aad0360b66400e35aa3a4de74606829d",
+  "capture_manifest_hash": "sha256:24abbf10f0558a559ba4c39932fdeb6d470b68a02953eedf59c548a3a7a19855",
+  "capture_manifest_path": "experiments/external_sources/earth_environment/capture_manifest.json",
+  "failed_transports_preserved": true,
+  "feature_extraction_rule": "For each preregistered feature, derive lowercase alphanumeric tokens mechanically, remove the frozen generic stopword set, truncate retained tokens to seven characters, and report every match or absence. No source-specific token was selected after capture.",
+  "original_failed_transport_count": 1,
+  "present_feature_count": 67,
+  "registered_feature_count": 91,
+  "registry_hash": "sha256:9978316ab6cbb94cd6e082fe48bc3f21adb7c9df8bbb491bba25e5ee8b3aa352",
+  "registry_path": "experiments/earth_environment/source_registry.json",
+  "schema": "sft-v3-earth-environment-source-feature-audit/1",
+  "source_count": 21,
+  "source_transport_addendum_hash": "sha256:d9cc1b948f1a762415ff01651fd2839a25fe766336eaae56a13680dcc260048b",
+  "source_transport_addendum_path": "experiments/external_sources/earth_environment/source_transport_addendum_v1.json",
+  "sources": [
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "dataset",
+            "identit"
+          ],
+          "feature": "dataset identity",
+          "matched_tokens": [
+            "dataset"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+          "source_id": "NASA-EARTHDATA-SEARCH-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "spatial",
+            "tempora",
+            "coverag"
+          ],
+          "feature": "spatial and temporal coverage",
+          "matched_tokens": [
+            "spatial",
+            "tempora"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+          "source_id": "NASA-EARTHDATA-SEARCH-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "instrum",
+            "platfor"
+          ],
+          "feature": "instrument or platform provenance",
+          "matched_tokens": [
+            "instrum",
+            "platfor"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+          "source_id": "NASA-EARTHDATA-SEARCH-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "downloa"
+          ],
+          "feature": "download or service access",
+          "matched_tokens": [
+            "downloa"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+          "source_id": "NASA-EARTHDATA-SEARCH-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+      "source_id": "NASA-EARTHDATA-SEARCH-001",
+      "source_identity": "sha256:d161321c02569962b616ea49f404e3a1d4cee143a87e3473db33105e26f19c54",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.817145+00:00",
+          "byte_count": 259421,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.earthdata.nasa.gov/data/tools/earthdata-search",
+          "resolved_locator": "https://www.earthdata.nasa.gov/data/tools/earthdata-search",
+          "snapshot_hash": "sha256:c02fc466d113cb83350250046017682f87fcc0092cef18d8726636a348cac9d1",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-EARTHDATA-SEARCH-001.html",
+          "source_id": "NASA-EARTHDATA-SEARCH-001",
+          "source_identity": "sha256:d161321c02569962b616ea49f404e3a1d4cee143a87e3473db33105e26f19c54",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 4,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "sensor",
+            "mission"
+          ],
+          "feature": "sensor and mission identity",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+          "source_id": "USGS-LANDSAT-ACCESS-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "surface"
+          ],
+          "feature": "Earth surface observation",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+          "source_id": "USGS-LANDSAT-ACCESS-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "archive",
+            "access"
+          ],
+          "feature": "archive access",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+          "source_id": "USGS-LANDSAT-ACCESS-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "process"
+          ],
+          "feature": "product and processing distinction",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+          "source_id": "USGS-LANDSAT-ACCESS-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 0,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+      "source_id": "USGS-LANDSAT-ACCESS-001",
+      "source_identity": "sha256:f21ca4eaa35ff3eda8e6da88f7ca03c31b7070154a0ba6ed26c67d4b48654982",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.817449+00:00",
+          "byte_count": 0,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 202,
+          "registered_locator": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+          "resolved_locator": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+          "snapshot_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-LANDSAT-ACCESS-001.html",
+          "source_id": "USGS-LANDSAT-ACCESS-001",
+          "source_identity": "sha256:f21ca4eaa35ff3eda8e6da88f7ca03c31b7070154a0ba6ed26c67d4b48654982",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 4,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "spatial",
+            "referen",
+            "geology"
+          ],
+          "feature": "spatially referenced geology",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+          "source_id": "USGS-NGMDB-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "report"
+          ],
+          "feature": "map and report provenance",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+          "source_id": "USGS-NGMDB-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "stratig"
+          ],
+          "feature": "stratigraphic information",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+          "source_id": "USGS-NGMDB-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "geochem",
+            "geophys",
+            "palaeon",
+            "geochro"
+          ],
+          "feature": "geochemistry geophysics palaeontology and geochronology coverage",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+          "source_id": "USGS-NGMDB-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 0,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+      "source_id": "USGS-NGMDB-001",
+      "source_identity": "sha256:d4e13b4caeafc8c46259de87292e0cc98fc928031e38453574d0e7bdcbdcb233",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.817634+00:00",
+          "byte_count": 1141,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://ngmdb.usgs.gov/",
+          "resolved_locator": "https://ngmdb.usgs.gov/",
+          "snapshot_hash": "sha256:5bd23db5e6a1a234ada387c34da1f754435f89dffa0e689a58b37bf7c41a9d70",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NGMDB-001.html",
+          "source_id": "USGS-NGMDB-001",
+          "source_identity": "sha256:d4e13b4caeafc8c46259de87292e0cc98fc928031e38453574d0e7bdcbdcb233",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "specime",
+            "locatio"
+          ],
+          "feature": "soil specimen location",
+          "matched_tokens": [
+            "locatio"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+          "source_id": "USGS-SOIL-GEOCHEM-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "geochem",
+            "composi"
+          ],
+          "feature": "geochemical composition",
+          "matched_tokens": [
+            "geochem",
+            "composi"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+          "source_id": "USGS-SOIL-GEOCHEM-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "mineral",
+            "composi"
+          ],
+          "feature": "mineralogical composition",
+          "matched_tokens": [
+            "mineral",
+            "composi"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+          "source_id": "USGS-SOIL-GEOCHEM-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "spatial",
+            "coverag"
+          ],
+          "feature": "spatial coverage",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+          "source_id": "USGS-SOIL-GEOCHEM-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 3,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+      "source_id": "USGS-SOIL-GEOCHEM-001",
+      "source_identity": "sha256:6df622b9865d5f61a84e18c8c79567417fec014fd4360f0a6e81d5fecf5e2c96",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.817763+00:00",
+          "byte_count": 72860,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://mrdata.usgs.gov/soilgeochemistry/",
+          "resolved_locator": "https://pubs.usgs.gov/publication/sir20175118",
+          "snapshot_hash": "sha256:60cdbf6bab54310fd880c4791769581af4fe1fb598bce8ab9155b33e4d4ecbd5",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-SOIL-GEOCHEM-001.html",
+          "source_id": "USGS-SOIL-GEOCHEM-001",
+          "source_identity": "sha256:6df622b9865d5f61a84e18c8c79567417fec014fd4360f0a6e81d5fecf5e2c96",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "station",
+            "channel"
+          ],
+          "feature": "station and channel identity",
+          "matched_tokens": [
+            "station",
+            "channel"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+          "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "wavefor",
+            "event"
+          ],
+          "feature": "waveform and event access",
+          "matched_tokens": [
+            "wavefor",
+            "event"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+          "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "instrum",
+            "respons"
+          ],
+          "feature": "instrument response",
+          "matched_tokens": [
+            "instrum",
+            "respons"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+          "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "observe",
+            "derived"
+          ],
+          "feature": "observed and derived product distinction",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+          "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 3,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+      "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+      "source_identity": "sha256:c6f89afa1226a40ce783fb67a915100ee4d9104fab5c32a6217edb9d2e25f3ec",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.817892+00:00",
+          "byte_count": 35316,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://service.iris.edu/",
+          "resolved_locator": "https://service.iris.edu/",
+          "snapshot_hash": "sha256:be507aa54fc5e0fa695b71c98f565c5709078940d9e3ebf10e32d4b34fa637fd",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EARTHSCOPE-SAGE-SERVICES-001.html",
+          "source_id": "EARTHSCOPE-SAGE-SERVICES-001",
+          "source_identity": "sha256:c6f89afa1226a40ce783fb67a915100ee4d9104fab5c32a6217edb9d2e25f3ec",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 4,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "observa"
+          ],
+          "feature": "observatory identity",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+          "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "bounded",
+            "geomagn"
+          ],
+          "feature": "time-bounded geomagnetic observation",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+          "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "station",
+            "status"
+          ],
+          "feature": "station status",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+          "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "read",
+            "only",
+            "access"
+          ],
+          "feature": "read-only access",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+          "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 0,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+      "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+      "source_identity": "sha256:ea9239291046147c55a3223c7c3322c13247d5a717ec4a07736647fa4fb04546",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:51.818015+00:00",
+          "byte_count": 57393,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://geomag.usgs.gov/operations/observatory?mode=read",
+          "resolved_locator": "https://geomag.usgs.gov/operations/observatory?mode=read",
+          "snapshot_hash": "sha256:d123a91b8e7ec99bd0b66fcc418fad4a00cfb5afffe35c11693f133baaea9677",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-GEOMAG-OBSERVATORIES-001.html",
+          "source_id": "USGS-GEOMAG-OBSERVATORIES-001",
+          "source_identity": "sha256:ea9239291046147c55a3223c7c3322c13247d5a717ec4a07736647fa4fb04546",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "event"
+          ],
+          "feature": "event identity",
+          "matched_tokens": [
+            "event"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "origin",
+            "locatio"
+          ],
+          "feature": "origin time and location",
+          "matched_tokens": [
+            "origin",
+            "locatio"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "magnitu"
+          ],
+          "feature": "magnitude and magnitude type",
+          "matched_tokens": [
+            "magnitu"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "catalog",
+            "query"
+          ],
+          "feature": "catalog query boundary",
+          "matched_tokens": [
+            "catalog",
+            "query"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "version"
+          ],
+          "feature": "service version",
+          "matched_tokens": [
+            "version"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 5,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+      "source_id": "USGS-EARTHQUAKE-FDSN-001",
+      "source_identity": "sha256:d6fe7354fc048d3bc97a33cd5cb92f1b1baa897cc1cecafdd035f55f0847cf54",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:52.060489+00:00",
+          "byte_count": 34875,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://earthquake.usgs.gov/fdsnws/event/1/",
+          "resolved_locator": "https://earthquake.usgs.gov/fdsnws/event/1/",
+          "snapshot_hash": "sha256:e7659ce9d3761235909d28e6b295239d500a4d4379a555e98047f046632a45b8",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-EARTHQUAKE-FDSN-001.html",
+          "source_id": "USGS-EARTHQUAKE-FDSN-001",
+          "source_identity": "sha256:d6fe7354fc048d3bc97a33cd5cb92f1b1baa897cc1cecafdd035f55f0847cf54",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "volcano"
+          ],
+          "feature": "volcano identity",
+          "matched_tokens": [
+            "volcano"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+          "source_id": "SMITHSONIAN-GVP-VOTW-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "eruptio"
+          ],
+          "feature": "eruption identity and time",
+          "matched_tokens": [
+            "eruptio"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+          "source_id": "SMITHSONIAN-GVP-VOTW-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "locatio",
+            "morphol"
+          ],
+          "feature": "location and morphology",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+          "source_id": "SMITHSONIAN-GVP-VOTW-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "databas",
+            "version",
+            "citatio"
+          ],
+          "feature": "database version and citation",
+          "matched_tokens": [
+            "version"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+          "source_id": "SMITHSONIAN-GVP-VOTW-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 3,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+      "source_id": "SMITHSONIAN-GVP-VOTW-001",
+      "source_identity": "sha256:c090fd32a351cae45cdcd56db2ed59f7bf7b86927375447eeed2d099bafcc727",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:52.621030+00:00",
+          "byte_count": null,
+          "content_type": null,
+          "error_class": "HTTPError",
+          "error_message": "HTTP Error 403: Forbidden",
+          "http_status": 403,
+          "registered_locator": "https://volcano.si.edu/database/webservices.cfm",
+          "resolved_locator": null,
+          "snapshot_hash": null,
+          "snapshot_path": null,
+          "source_id": "SMITHSONIAN-GVP-VOTW-001",
+          "source_identity": "sha256:c090fd32a351cae45cdcd56db2ed59f7bf7b86927375447eeed2d099bafcc727",
+          "transport_status": "failed"
+        },
+        {
+          "attempted_at_utc": "2026-07-28T04:59:49.057238+00:00",
+          "byte_count": 96776,
+          "content_type": "application/xml",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "resolved_locator": "https://webservices.volcano.si.edu/geoserver/GVP-VOTW/wfs?request=GetCapabilities",
+          "snapshot_hash": "sha256:36a86fd347bbdcec8b46c3b0c7974a7712caeb044419f654a5530617e20d2374",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001.xml",
+          "transport_id": "SMITHSONIAN-GVP-VOTW-WFS-CAPABILITIES-001",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured_via_addendum_prior_failure_preserved",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 2,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "site",
+            "identit"
+          ],
+          "feature": "site identity",
+          "matched_tokens": [
+            "site"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+          "source_id": "USGS-NWIS-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "surface",
+            "water",
+            "groundw",
+            "observa"
+          ],
+          "feature": "surface water and groundwater observations",
+          "matched_tokens": [
+            "water"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+          "source_id": "USGS-NWIS-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "series"
+          ],
+          "feature": "time series",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+          "source_id": "USGS-NWIS-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "paramet",
+            "units",
+            "methods"
+          ],
+          "feature": "parameter units and methods",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+          "source_id": "USGS-NWIS-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 2,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+      "source_id": "USGS-NWIS-001",
+      "source_identity": "sha256:4d332b8590a192e172a3d6533c450d74bc7a2fd418535cf749ea0ae3ac6fd91d",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:52.711365+00:00",
+          "byte_count": 21781,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://waterdata.usgs.gov/nwis/",
+          "resolved_locator": "https://waterdata.usgs.gov/",
+          "snapshot_hash": "sha256:f265345234f754ca63f5c21af6dc460734073dac3eebcc6a1cc56d8a97606777",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/USGS-NWIS-001.html",
+          "source_id": "USGS-NWIS-001",
+          "source_identity": "sha256:4d332b8590a192e172a3d6533c450d74bc7a2fd418535cf749ea0ae3ac6fd91d",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "station",
+            "organiz"
+          ],
+          "feature": "station and organization identity",
+          "matched_tokens": [
+            "station",
+            "organiz"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+          "source_id": "WQP-WEB-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "sample",
+            "result"
+          ],
+          "feature": "sample and result identity",
+          "matched_tokens": [
+            "sample",
+            "result"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+          "source_id": "WQP-WEB-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "charact"
+          ],
+          "feature": "characteristic and unit",
+          "matched_tokens": [
+            "charact"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+          "source_id": "WQP-WEB-SERVICES-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "metadat"
+          ],
+          "feature": "quality and metadata fields",
+          "matched_tokens": [
+            "metadat"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+          "source_id": "WQP-WEB-SERVICES-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+      "source_id": "WQP-WEB-SERVICES-001",
+      "source_identity": "sha256:2bcee43634e44bd132a1ca6ab39e2cc189ffcfcd1cd94eca6c53a9a97524b570",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:52.816047+00:00",
+          "byte_count": 67817,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.waterqualitydata.us/webservices_documentation/",
+          "resolved_locator": "https://www.waterqualitydata.us/webservices_documentation/",
+          "snapshot_hash": "sha256:4ca9ed072718cc54033836b923bf978454e46622e837028651bb9be915ae8b6d",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/WQP-WEB-SERVICES-001.html",
+          "source_id": "WQP-WEB-SERVICES-001",
+          "source_identity": "sha256:2bcee43634e44bd132a1ca6ab39e2cc189ffcfcd1cd94eca6c53a9a97524b570",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "hemisph"
+          ],
+          "feature": "hemisphere and date identity",
+          "matched_tokens": [
+            "hemisph"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+          "source_id": "NSIDC-SEA-ICE-INDEX-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "extent"
+          ],
+          "feature": "extent and area distinction",
+          "matched_tokens": [
+            "extent"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+          "source_id": "NSIDC-SEA-ICE-INDEX-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "daily",
+            "monthly"
+          ],
+          "feature": "daily and monthly data",
+          "matched_tokens": [
+            "daily",
+            "monthly"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+          "source_id": "NSIDC-SEA-ICE-INDEX-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "missing",
+            "version",
+            "documen"
+          ],
+          "feature": "missing-data and product-version documentation",
+          "matched_tokens": [
+            "version",
+            "documen"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+          "source_id": "NSIDC-SEA-ICE-INDEX-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+      "source_id": "NSIDC-SEA-ICE-INDEX-001",
+      "source_identity": "sha256:16e26d8da6e38b78d13440c706da445b3d45b26a5080bb5e435dac513df1937a",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:52.928371+00:00",
+          "byte_count": 78685,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://nsidc.org/data/seaice_index/data-and-image-archive",
+          "resolved_locator": "https://nsidc.org/data/seaice_index/data-and-image-archive",
+          "snapshot_hash": "sha256:fea96aea1a135d5522d41ff2f9b5d352c4c768a49a3c4ab2a79fbcdd24012e83",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NSIDC-SEA-ICE-INDEX-001.html",
+          "source_id": "NSIDC-SEA-ICE-INDEX-001",
+          "source_identity": "sha256:16e26d8da6e38b78d13440c706da445b3d45b26a5080bb5e435dac513df1937a",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "station",
+            "metadat"
+          ],
+          "feature": "station identity and metadata",
+          "matched_tokens": [
+            "station",
+            "metadat"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "daily",
+            "weather",
+            "observa"
+          ],
+          "feature": "daily weather observations",
+          "matched_tokens": [
+            "daily",
+            "weather",
+            "observa"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "flags"
+          ],
+          "feature": "quality flags",
+          "matched_tokens": [
+            "flags"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "length",
+            "variabl"
+          ],
+          "feature": "record length and variable coverage",
+          "matched_tokens": [
+            "length",
+            "variabl"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "version"
+          ],
+          "feature": "archive version",
+          "matched_tokens": [
+            "version"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 5,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+      "source_id": "NOAA-GHCND-001",
+      "source_identity": "sha256:3b521837fab014e7df6f7b5eb9ff64c011fd41695444e183e051b2b13962c05a",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:53.324539+00:00",
+          "byte_count": 72825,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+          "resolved_locator": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+          "snapshot_hash": "sha256:a69c913066acd781fa8e8df1af9cae5cf7111665f96fc99189ea76ceabdeac7c",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GHCND-001.html",
+          "source_id": "NOAA-GHCND-001",
+          "source_identity": "sha256:3b521837fab014e7df6f7b5eb9ff64c011fd41695444e183e051b2b13962c05a",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "atmosph",
+            "surface"
+          ],
+          "feature": "top-of-atmosphere and surface boundary",
+          "matched_tokens": [
+            "atmosph",
+            "surface"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "shortwa",
+            "longwav"
+          ],
+          "feature": "shortwave and longwave flux distinction",
+          "matched_tokens": [
+            "shortwa",
+            "longwav"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "cloud",
+            "clear"
+          ],
+          "feature": "cloud and clear-sky distinction",
+          "matched_tokens": [
+            "cloud",
+            "clear"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "resolut"
+          ],
+          "feature": "spatial and temporal resolution",
+          "matched_tokens": [
+            "resolut"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "documen"
+          ],
+          "feature": "data-quality documentation",
+          "matched_tokens": [
+            "documen"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 5,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+      "source_id": "NASA-CERES-EBAF-001",
+      "source_identity": "sha256:f784bd90cb0b9a3ce30abb8b18c8bb1c62ef5010207c621b206299503e5502e8",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:53.664244+00:00",
+          "byte_count": 6726669,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://ceres.larc.nasa.gov/Data/",
+          "resolved_locator": "https://ceres.larc.nasa.gov/Data/",
+          "snapshot_hash": "sha256:2e1a7ee07852415839c98186457e16b2d91f167f7ebd54dd3c76577496605619",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NASA-CERES-EBAF-001.html",
+          "source_id": "NASA-CERES-EBAF-001",
+          "source_identity": "sha256:f784bd90cb0b9a3ce30abb8b18c8bb1c62ef5010207c621b206299503e5502e8",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 2,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "measure",
+            "program",
+            "identit"
+          ],
+          "feature": "gas and measurement programme identity",
+          "matched_tokens": [
+            "measure",
+            "program"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "altitud"
+          ],
+          "feature": "site and altitude",
+          "matched_tokens": [
+            "altitud"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "frequen"
+          ],
+          "feature": "time and frequency",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "calibra",
+            "policy"
+          ],
+          "feature": "calibration and data-use policy",
+          "matched_tokens": [
+            "calibra",
+            "policy"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "interpr",
+            "separat"
+          ],
+          "feature": "source and sink interpretation separated from measurement",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 3,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+      "source_id": "NOAA-GML-CO2-001",
+      "source_identity": "sha256:2d43a73245724fa1cf8786902f8a778c6e1fb7942ff1b68b84abade3fdab152c",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:53.673079+00:00",
+          "byte_count": 31177,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://gml.noaa.gov/ccgg/data/getdata.php?gas=co2",
+          "resolved_locator": "https://gml.noaa.gov/ccgg/data/getdata.php?gas=co2",
+          "snapshot_hash": "sha256:6583240dfd1136553b562347ca876a495c4e0f0d4b1e1d9faa7a0a2f04e7e8bf",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-GML-CO2-001.html",
+          "source_id": "NOAA-GML-CO2-001",
+          "source_identity": "sha256:2d43a73245724fa1cf8786902f8a778c6e1fb7942ff1b68b84abade3fdab152c",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "cruise",
+            "accessi"
+          ],
+          "feature": "cast cruise and accession identity",
+          "matched_tokens": [
+            "cruise",
+            "accessi"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "depth",
+            "locatio"
+          ],
+          "feature": "depth location and time",
+          "matched_tokens": [
+            "depth",
+            "locatio"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "tempera",
+            "salinit",
+            "nutrien",
+            "plankto"
+          ],
+          "feature": "temperature salinity nutrients and plankton",
+          "matched_tokens": [
+            "tempera",
+            "salinit",
+            "nutrien",
+            "plankto"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "flags"
+          ],
+          "feature": "quality flags",
+          "matched_tokens": [
+            "flags"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "origina",
+            "source",
+            "provena"
+          ],
+          "feature": "original-source provenance",
+          "matched_tokens": [
+            "origina",
+            "source"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 5,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+      "source_id": "NOAA-WOD-001",
+      "source_identity": "sha256:cb313dc080f36f95e1d18abff8d4e1eaecd05cd51b664fa8ab6640a0d266f9d2",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:53.908094+00:00",
+          "byte_count": 70488,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.ncei.noaa.gov/products/world-ocean-database",
+          "resolved_locator": "https://www.ncei.noaa.gov/products/world-ocean-database",
+          "snapshot_hash": "sha256:0143c05df4eec9819559a2cc22458b4d4d5e6afeb172fca40c0d1cda6a0b55db",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-WOD-001.html",
+          "source_id": "NOAA-WOD-001",
+          "source_identity": "sha256:cb313dc080f36f95e1d18abff8d4e1eaecd05cd51b664fa8ab6640a0d266f9d2",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "float",
+            "profile"
+          ],
+          "feature": "float and profile identity",
+          "matched_tokens": [
+            "float",
+            "profile"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+          "source_id": "ARGO-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "depth",
+            "tempera",
+            "salinit",
+            "traject"
+          ],
+          "feature": "depth temperature salinity and trajectory",
+          "matched_tokens": [
+            "depth",
+            "tempera",
+            "salinit",
+            "traject"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+          "source_id": "ARGO-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "delayed"
+          ],
+          "feature": "real-time and delayed-mode quality distinction",
+          "matched_tokens": [
+            "delayed"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+          "source_id": "ARGO-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "control",
+            "flags"
+          ],
+          "feature": "quality-control flags",
+          "matched_tokens": [
+            "control",
+            "flags"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+          "source_id": "ARGO-DATA-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+      "source_id": "ARGO-DATA-001",
+      "source_identity": "sha256:9f0d32254954db804aea263dc91b5b054b27551dca91da9ccb5f4ace9f3216a5",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:54.064420+00:00",
+          "byte_count": 91081,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://argo.ucsd.edu/data/",
+          "resolved_locator": "https://argo.ucsd.edu/data/",
+          "snapshot_hash": "sha256:2d865910ac039df681b5da8ea45851e92f786204594f5c2eaa6706bfbcee83df",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/ARGO-DATA-001.html",
+          "source_id": "ARGO-DATA-001",
+          "source_identity": "sha256:9f0d32254954db804aea263dc91b5b054b27551dca91da9ccb5f4ace9f3216a5",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "study"
+          ],
+          "feature": "archive and study identity",
+          "matched_tokens": [
+            "study"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+          "source_id": "NOAA-PALEO-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "proxy",
+            "reconst",
+            "variabl"
+          ],
+          "feature": "proxy and reconstructed-variable distinction",
+          "matched_tokens": [
+            "proxy",
+            "reconst",
+            "variabl"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+          "source_id": "NOAA-PALEO-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "dating"
+          ],
+          "feature": "dating and temporal coverage",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+          "source_id": "NOAA-PALEO-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "locatio",
+            "investi"
+          ],
+          "feature": "location and investigator provenance",
+          "matched_tokens": [
+            "locatio"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+          "source_id": "NOAA-PALEO-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 3,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+      "source_id": "NOAA-PALEO-001",
+      "source_identity": "sha256:89e2cd02c8ba41ed96e6e1f3a23cb7b14331f8c0527d15ae5e8937ddbb14c1f7",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:54.266764+00:00",
+          "byte_count": 36736,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.ncei.noaa.gov/products/paleoclimatology",
+          "resolved_locator": "https://www.ncei.noaa.gov/products/paleoclimatology",
+          "snapshot_hash": "sha256:e2f0e30c448e9cfe2045344288354340923df0e4b84755506d608582f1e99507",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NOAA-PALEO-001.html",
+          "source_id": "NOAA-PALEO-001",
+          "source_identity": "sha256:89e2cd02c8ba41ed96e6e1f3a23cb7b14331f8c0527d15ae5e8937ddbb14c1f7",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "monitor"
+          ],
+          "feature": "site and monitor identity",
+          "matched_tokens": [
+            "monitor"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "polluta",
+            "paramet",
+            "units"
+          ],
+          "feature": "pollutant parameter and units",
+          "matched_tokens": [
+            "polluta",
+            "paramet"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "hourly",
+            "daily",
+            "annual"
+          ],
+          "feature": "hourly daily and annual distinction",
+          "matched_tokens": [
+            "hourly",
+            "daily",
+            "annual"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "metadat"
+          ],
+          "feature": "method and quality metadata",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "blank",
+            "missing",
+            "records"
+          ],
+          "feature": "blank and missing records",
+          "matched_tokens": [
+            "blank",
+            "records"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+      "source_id": "EPA-AIRDATA-001",
+      "source_identity": "sha256:49487676b2407b0dd634c96f3edd5d904e10cb62366177f839b1183b64577ba4",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:55.651101+00:00",
+          "byte_count": 386197,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+          "resolved_locator": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+          "snapshot_hash": "sha256:815afb5445d66d1762caecfc5a5c4072640d7d2548638bb3c90c0ad43bdb814b",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/EPA-AIRDATA-001.html",
+          "source_id": "EPA-AIRDATA-001",
+          "source_identity": "sha256:49487676b2407b0dd634c96f3edd5d904e10cb62366177f839b1183b64577ba4",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 0,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "site",
+            "data",
+            "product",
+            "identit"
+          ],
+          "feature": "site and data-product identity",
+          "matched_tokens": [
+            "site",
+            "data",
+            "product"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+          "source_id": "NEON-OPEN-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "organis",
+            "abiotic",
+            "observa"
+          ],
+          "feature": "organismal and abiotic observations",
+          "matched_tokens": [
+            "observa"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+          "source_id": "NEON-OPEN-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "collect"
+          ],
+          "feature": "collection method",
+          "matched_tokens": [
+            "collect"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+          "source_id": "NEON-OPEN-DATA-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "availab",
+            "latency"
+          ],
+          "feature": "availability and latency",
+          "matched_tokens": [
+            "availab"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+          "source_id": "NEON-OPEN-DATA-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+      "source_id": "NEON-OPEN-DATA-001",
+      "source_identity": "sha256:31d6e62209d9a46289dd6e019297584bb031a5aa070caf3461e300c770eb2ab4",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:56.640006+00:00",
+          "byte_count": 90213,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://www.neonscience.org/data",
+          "resolved_locator": "https://www.neonscience.org/data",
+          "snapshot_hash": "sha256:b83c95ed8fecf49f66225ae912f125c2424bdcb816d66c7b57d0cf3696f1350d",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/NEON-OPEN-DATA-001.html",
+          "source_id": "NEON-OPEN-DATA-001",
+          "source_identity": "sha256:31d6e62209d9a46289dd6e019297584bb031a5aa070caf3461e300c770eb2ab4",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 2,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "occurre"
+          ],
+          "feature": "occurrence and dataset identity",
+          "matched_tokens": [
+            "occurre"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+          "source_id": "GBIF-OCCURRENCE-API-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "taxon",
+            "locatio",
+            "basis"
+          ],
+          "feature": "taxon location date and basis of record",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+          "source_id": "GBIF-OCCURRENCE-API-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "publish",
+            "organiz"
+          ],
+          "feature": "publishing organization",
+          "matched_tokens": [
+            "publish"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+          "source_id": "GBIF-OCCURRENCE-API-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "paging",
+            "limits",
+            "downloa"
+          ],
+          "feature": "paging limits and download distinction",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+          "source_id": "GBIF-OCCURRENCE-API-001",
+          "status": "absent_from_captured_surface"
+        }
+      ],
+      "present_feature_count": 2,
+      "registered_feature_count": 4,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+      "source_id": "GBIF-OCCURRENCE-API-001",
+      "source_identity": "sha256:7bce0a386b58d9d99ad8e413b03c7852fd209ad67cae80771aa0e6a4552583b3",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:56.756292+00:00",
+          "byte_count": 9811,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://techdocs.gbif.org/en/openapi/v1/occurrence",
+          "resolved_locator": "https://techdocs.gbif.org/en/openapi/v1/occurrence",
+          "snapshot_hash": "sha256:34c63152e49b2cafa2fe33e0661ec0feb8496f9eacfd143d0b7b3e040f02b8b3",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/GBIF-OCCURRENCE-API-001.html",
+          "source_id": "GBIF-OCCURRENCE-API-001",
+          "source_identity": "sha256:7bce0a386b58d9d99ad8e413b03c7852fd209ad67cae80771aa0e6a4552583b3",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    },
+    {
+      "absent_feature_count": 1,
+      "features": [
+        {
+          "derived_search_tokens": [
+            "indepen"
+          ],
+          "feature": "independent site identity",
+          "matched_tokens": [],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "status": "absent_from_captured_surface"
+        },
+        {
+          "derived_search_tokens": [
+            "magneto",
+            "spectru"
+          ],
+          "feature": "magnetometer spectrum",
+          "matched_tokens": [
+            "magneto"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "correla",
+            "scale",
+            "resonan"
+          ],
+          "feature": "correlated Earth-scale resonance",
+          "matched_tokens": [
+            "correla",
+            "resonan"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "frequen",
+            "measure",
+            "peaks"
+          ],
+          "feature": "frequency-resolved measured peaks",
+          "matched_tokens": [
+            "measure"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "status": "present"
+        },
+        {
+          "derived_search_tokens": [
+            "instrum",
+            "subtrac"
+          ],
+          "feature": "instrumental subtraction boundary",
+          "matched_tokens": [
+            "subtrac"
+          ],
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "status": "present"
+        }
+      ],
+      "present_feature_count": 4,
+      "registered_feature_count": 5,
+      "snapshot_path_used_for_feature_audit": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+      "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+      "source_identity": "sha256:260cb5aef736013d85cf2b08d1484e544abeca25f9fc75032e655e57e9904667",
+      "transport_history": [
+        {
+          "attempted_at_utc": "2026-07-28T04:55:57.060809+00:00",
+          "byte_count": 46862,
+          "content_type": "text/html",
+          "error_class": null,
+          "error_message": null,
+          "http_status": 200,
+          "registered_locator": "https://arxiv.org/abs/1802.00885",
+          "resolved_locator": "https://arxiv.org/abs/1802.00885",
+          "snapshot_hash": "sha256:838c419cbe41f0c7c499abdc2d32ad6852139792ae22c138dd1727574569c7cd",
+          "snapshot_path": "experiments/external_sources/earth_environment/snapshots/SCHUMANN-MAGNETOMETER-2018-001.html",
+          "source_id": "SCHUMANN-MAGNETOMETER-2018-001",
+          "source_identity": "sha256:260cb5aef736013d85cf2b08d1484e544abeca25f9fc75032e655e57e9904667",
+          "transport_status": "captured"
+        }
+      ],
+      "transport_status": "captured",
+      "unresolved_feature_count": 0
+    }
+  ],
+  "unresolved_feature_count": 0
+}

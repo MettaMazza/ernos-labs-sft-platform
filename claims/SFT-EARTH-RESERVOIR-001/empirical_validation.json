@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-RESERVOIR-001",
+  "data_source_ids": [
+    "NASA-EARTHDATA-SEARCH-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NOAA-GHCND-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:47c9b006aa17b1b44b8a49870b9bfa9615b21ac9c20bf58fcf973da9821f5a85",
+  "falsification_condition": "Reject if membership or boundary changes without record, or if an unobserved remainder is treated as absent.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0f79ad45ec7ec2896e155827e33ea8bb93a6c632154f5e5c4ba9f66801990c9d",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:52d601048fbf393fb085605a54dcdd8fb65f9f1ca53d3cf51f3c20fbfeef7b1e",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-RESERVOIR-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:01c48c85de55c8640fb348839a356b1a4629a51bfef8334f48f450f88636f6e1",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:683caba25a544523f0e137475318fa32341c4bdc4e7f68c6f629761fb70c3ed6",
+    "prediction_seal_hash": "sha256:9acfe51e36c2234e8d6b6dc2544c4ef658283ef79cddb1d31adaa52b646194c4",
+    "program_hash": "sha256:56a56f3d9c61c0e1546e2e882c87f7cdeb7abdbdfff615f3bb57a16535695093",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:de5807aa99c8f9d142230c2d620545977d82f03345cb9fa7c9c0a3dcbc219c3c",
+    "target_material_present": false,
+    "trace_hash": "sha256:3094e73a8721534966e20826e62f02275ec5cc9beb82f167acc2ccf0d0f431be"
+  },
+  "measurement_receipt_hash": "sha256:86f2f02cff16949b91f068d910a2bfd53f7146757c2690d82b3806a3a67c7596",
+  "measurements": [
+    "sft-earth-reservoir-001-external-earth-evidence: predicted earth:bounded-stock-membership-carrier__membership-storage-and-transfer-relation__members-stock-units-boundary-and-time-held__reservoir-definition-bounded; source-derived earth:bounded-stock-membership-carrier__membership-storage-and-transfer-relation__members-stock-units-boundary-and-time-held__reservoir-definition-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:cec7dac8305f85d74b97b9767364fd755242f05f0e1adea57357f608a512b724",
+    "custodian_id": "SFT-EXP-EARTH-RESERVOIR-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:47c9b006aa17b1b44b8a49870b9bfa9615b21ac9c20bf58fcf973da9821f5a85",
+    "prediction_seal_hash": "sha256:9acfe51e36c2234e8d6b6dc2544c4ef658283ef79cddb1d31adaa52b646194c4",
+    "registered_target_identity_hash": "sha256:de5807aa99c8f9d142230c2d620545977d82f03345cb9fa7c9c0a3dcbc219c3c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a7c226e0996561218a6d01c736bfb27ffa25ec1604c789aa07aac2538ca6bcc6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9bd096d213eaed4b1f799785e2c4bb62819f1f4795c52160884ddb399f01fa47"
+}

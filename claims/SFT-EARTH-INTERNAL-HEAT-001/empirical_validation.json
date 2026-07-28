@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-INTERNAL-HEAT-001",
+  "data_source_ids": [
+    "EARTHSCOPE-SAGE-SERVICES-001",
+    "USGS-GEOMAG-OBSERVATORIES-001",
+    "USGS-NGMDB-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bad462d1a3ba12ca30c0a53987a15dc49020c232a37c15f24106c8ed86a138cd",
+  "falsification_condition": "Reject if present surface flux is assigned to a unique interior source without a registered transport history.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a0f0f98a419edc9313486c692152fd56b0d0312c546033e9b33006753f17b322",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b60c9e6fd91a722919d43277578a168570205acee250200120b294e2e182cbe9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-INTERNAL-HEAT-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e7be2311c7f381f3c02ad576f150a975b1708224f0362bd80e90853afd74abac",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:71b26e1d38b97dd4e2079281603fc680e5de414b00426f651c9163e060ae28de",
+    "prediction_seal_hash": "sha256:e42b42e8ee640621da98d46a9ba685a5d8fc781f46d2b650403943ee8d6fb458",
+    "program_hash": "sha256:d720716ab3dfe7f99cf125f4d111ea1daf38715d071f32c22a4831b4c25ff136",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a9b5ee01c5f36899fb438d0e3c1ef082a2b6d3b82f1fde8fe412ebb65b48dffb",
+    "target_material_present": false,
+    "trace_hash": "sha256:90b9d2fe2748a4d19bfc20218db50afba88d4275c894723b89517cf4ae75cda2"
+  },
+  "measurement_receipt_hash": "sha256:99b36d0ef971774816b71dd7e51540804746886d53d189f1a242dbb2fa90f56c",
+  "measurements": [
+    "sft-earth-internal-heat-001-external-earth-evidence: predicted earth:source-reservoir-thermal-carrier__production-storage-transfer-relation__source-identity-location-rate-history-and-uncertainty-held__thermal-ledger-bounded; source-derived earth:source-reservoir-thermal-carrier__production-storage-transfer-relation__source-identity-location-rate-history-and-uncertainty-held__thermal-ledger-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9fdfdf81fdb9dd13da53d422ba54cccc425dfbcb81d9af38a081b6135a9c9cfa",
+    "custodian_id": "SFT-EXP-EARTH-INTERNAL-HEAT-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:bad462d1a3ba12ca30c0a53987a15dc49020c232a37c15f24106c8ed86a138cd",
+    "prediction_seal_hash": "sha256:e42b42e8ee640621da98d46a9ba685a5d8fc781f46d2b650403943ee8d6fb458",
+    "registered_target_identity_hash": "sha256:a9b5ee01c5f36899fb438d0e3c1ef082a2b6d3b82f1fde8fe412ebb65b48dffb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4e4c54841a21fe8660a43362fe8dac092a5b44dff13a562376850949bc510393"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:985cee9fa2bd082d9f065048b7892079cdfae9afaed4e062bb5697b2ceb09d3d"
+}

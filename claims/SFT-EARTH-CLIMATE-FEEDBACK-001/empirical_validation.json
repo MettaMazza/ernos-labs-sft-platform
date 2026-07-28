@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-CLIMATE-FEEDBACK-001",
+  "data_source_ids": [
+    "NOAA-GHCND-001",
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "NSIDC-SEA-ICE-INDEX-001",
+    "NOAA-PALEO-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6ff33b81eccaf13bb8e38a014f49a55c353f6b07ead3f90d2eab6fd2f881cc5b",
+  "falsification_condition": "Reject if correlation substitutes for a closed path or if the feedback magnitude is fitted from the same target used to validate it.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9e087a952ebca61e4b18e637fc4284413442c3ada94bd51faf214d8e1115e8c9",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fed7a3c795e78feddea8b2d116b0341b005c45c3dc5b05ee2744bb1b37aef601",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-CLIMATE-FEEDBACK-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a5b3c666ac56c059cd78319686dc943d08eda2441f767997ad692be8aa06a1cc",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d5cd09b0c2336a4b7176e0c502e9bea18c66f4ff4dda99b72171c17249b9c5f7",
+    "prediction_seal_hash": "sha256:ad82fd5de467ed76a4c0d1124b1c90492dd6caaa67f99d45e224d8e7146a7cc6",
+    "program_hash": "sha256:162853d03983dda0cd558006955df08fc303d5c8910225b521dc79ea6eff923a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5b0fe1061523896c5529f66809b035849fedf9726f58907691b32bfbcb145505",
+    "target_material_present": false,
+    "trace_hash": "sha256:367964591a7633fb7a7f143c8098258001b3831ac9ec4700a754d7917a5a6fcc"
+  },
+  "measurement_receipt_hash": "sha256:114845022c43023fe7f72ec40dc0b74e7ce92554c9874aaf4335cb5155cf6d9e",
+  "measurements": [
+    "sft-earth-climate-feedback-001-external-earth-evidence: predicted earth:state-response-return-path-carrier__response-modifies-driver-or-budget-relation__sign-as-orientation-gain-path-delay-and-boundaries-held__process-timescale-bounded; source-derived earth:state-response-return-path-carrier__response-modifies-driver-or-budget-relation__sign-as-orientation-gain-path-delay-and-boundaries-held__process-timescale-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:52e4cf80295ca5d4dd8ce012608eccdd645f4a5a2fd300bb00fdc556bb3d75c4",
+    "custodian_id": "SFT-EXP-EARTH-CLIMATE-FEEDBACK-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:6ff33b81eccaf13bb8e38a014f49a55c353f6b07ead3f90d2eab6fd2f881cc5b",
+    "prediction_seal_hash": "sha256:ad82fd5de467ed76a4c0d1124b1c90492dd6caaa67f99d45e224d8e7146a7cc6",
+    "registered_target_identity_hash": "sha256:5b0fe1061523896c5529f66809b035849fedf9726f58907691b32bfbcb145505",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:bfb79f741fb5f3fec0691841407e04e5c747c0949652b32ca26819d31ea66289"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e825ce9fddf04fd2923d938512039d4b10d3f38b63ad78c4a7d4729d4433eef7"
+}

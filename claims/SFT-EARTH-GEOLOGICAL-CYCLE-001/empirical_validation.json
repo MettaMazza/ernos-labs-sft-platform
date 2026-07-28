@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-GEOLOGICAL-CYCLE-001",
+  "data_source_ids": [
+    "USGS-NGMDB-001",
+    "USGS-SOIL-GEOCHEM-001",
+    "NOAA-PALEO-001",
+    "SMITHSONIAN-GVP-VOTW-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:4be6a7b839162a01bf9e6213e30bbf9d99c3d9207dd2cd3171bb83d37a77d017",
+  "falsification_condition": "Reject if a named cycle implies that every carrier returns or if intermediate transformations and exports are omitted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b3876d0bf5ba399b8e38a04887a42d48c18e5cdf29e2678da71227d3eb71a539",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:74c0bb2a36b3fe06d17d6833da9ed99dfaba8f32a51f9c4b035a43651a66a2be",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-GEOLOGICAL-CYCLE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a1443e72893e182984d4bdf3d2b61c8ef6b869ee6d666abf8416bb025e99b31c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:bd3f0b017723e22d7b0a8426d440d72c28bdc1228f4630208570ded1f0ca9ee6",
+    "prediction_seal_hash": "sha256:5916f5018def32641496dae12f0466691e7844dbecf331cff2e5bc660211a10a",
+    "program_hash": "sha256:fafb11b4338c656a755d7f5d2148c234a87ad59a6b7e7d1f56731d8a3dea242d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:9fc23f9e98a0b7a8e4ef5c6d288eb0a14e52144bb38a5f9bc7d56673d54363ec",
+    "target_material_present": false,
+    "trace_hash": "sha256:1684f746a51e8bf2dd0aa71e8b7585e767fb751e949a7c6cae49a1a141f62971"
+  },
+  "measurement_receipt_hash": "sha256:96774802bea84a38cfcde1defab5b8b49765d39e5ec6cbb524d2169b190ba9c4",
+  "measurements": [
+    "sft-earth-geological-cycle-001-external-earth-evidence: predicted earth:material-state-transition-network__weathering-transport-deposition-transformation-relation__inputs-products-paths-losses-and-times-held__process-network-bounded; source-derived earth:material-state-transition-network__weathering-transport-deposition-transformation-relation__inputs-products-paths-losses-and-times-held__process-network-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:4b28adea78b89d5c9f9dc0e3bffe3ede79d3938a91826d93672cf7009b17e576",
+    "custodian_id": "SFT-EXP-EARTH-GEOLOGICAL-CYCLE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:4be6a7b839162a01bf9e6213e30bbf9d99c3d9207dd2cd3171bb83d37a77d017",
+    "prediction_seal_hash": "sha256:5916f5018def32641496dae12f0466691e7844dbecf331cff2e5bc660211a10a",
+    "registered_target_identity_hash": "sha256:9fc23f9e98a0b7a8e4ef5c6d288eb0a14e52144bb38a5f9bc7d56673d54363ec",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:9a0bcba372cf68f52b99647d2be718f2e5b4135c105b0d805a8a8c928385d634"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:faf28e264910b43205dd04b43148d642abd1f135e105146cb26ab3b816dd13e5"
+}

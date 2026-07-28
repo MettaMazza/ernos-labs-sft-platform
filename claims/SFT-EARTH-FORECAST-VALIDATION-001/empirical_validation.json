@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-FORECAST-VALIDATION-001",
+  "data_source_ids": [
+    "NASA-EARTHDATA-SEARCH-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NOAA-GHCND-001",
+    "NOAA-PALEO-001",
+    "EARTHSCOPE-SAGE-SERVICES-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:6a94a6b62b1143d98c955c23ffde87a5615b4a2514a7a80d7a43736dc45a2970",
+  "falsification_condition": "Reject if the target or score enters before sealing, if unfavorable forecasts are omitted, or if accuracy is treated as proof of an opaque law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3cd979050b3a8c28fbd04a7b6e8f221d28b66639adb69d4849dcbbf428b44452",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1f8ddbe592de61b7a554b40124f0de38ac0518cc3537f2f42c1e36470f4fd6de",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-FORECAST-VALIDATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:5d9abc50550575a63623eacf4852c8a710739ff4ee4817e67d25616d7e3fb4b7",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:296aafd2f04819562ca86731dd852c9b593ba950ec72fa17df47b86aacb6292a",
+    "prediction_seal_hash": "sha256:4b68b5325cb36c414a18afab500afc151f895baa21c2bcd97ad9bae77cacf720",
+    "program_hash": "sha256:268d091629a7eab550238de198efee5924803cd237e4d300203ba1fdabe9443d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:1aeb993ae42f6da3a8240750e4fe466d66e72307ab5bf83e9cb9fe9803c31d25",
+    "target_material_present": false,
+    "trace_hash": "sha256:cb784fabef46de3754f7fc862ceb0ce30b43e3312849ff0379be51dc7511fef3"
+  },
+  "measurement_receipt_hash": "sha256:42f5d612289238a9a992c8aafc98d18ea6096bf1a5439019379b3bf4da191f7a",
+  "measurements": [
+    "sft-earth-forecast-validation-001-external-earth-evidence: predicted earth:sealed-forecast-outcome-carrier__predeclared-comparison-relation__targets-metrics-baselines-adverse-cases-missingness-and-time-held__forecast-question-bounded; source-derived earth:sealed-forecast-outcome-carrier__predeclared-comparison-relation__targets-metrics-baselines-adverse-cases-missingness-and-time-held__forecast-question-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c3beaaf362c493400a51aa85841d8fcb1f083625b3a346ef92494ac5f03d8d20",
+    "custodian_id": "SFT-EXP-EARTH-FORECAST-VALIDATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:6a94a6b62b1143d98c955c23ffde87a5615b4a2514a7a80d7a43736dc45a2970",
+    "prediction_seal_hash": "sha256:4b68b5325cb36c414a18afab500afc151f895baa21c2bcd97ad9bae77cacf720",
+    "registered_target_identity_hash": "sha256:1aeb993ae42f6da3a8240750e4fe466d66e72307ab5bf83e9cb9fe9803c31d25",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:c4de0a3dbe54d6f1b8bec1a8ec5e0bad26b746eecf04602cb92590ea247ee064"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6e28fefa70600ba9ca42f6fd021f7ef8879397c34ff3a9bc8a8dca911f4968ef"
+}

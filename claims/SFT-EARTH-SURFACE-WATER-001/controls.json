@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-SURFACE-WATER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:94a7ad14a3a943432e5baba16e26b5be9eb090442e0a0c32fc835c555e91e09f"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2618ebef41473db2fb81dc5cf64b91247f45ece0770e572ce0293d7eb0f4c929"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6c9507199095fc3fe9de6c5108f20b5e93eceb520182d80ec932df525cd28c42"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:4c32bff893d314a29e60039013a691c0ab3521d7f06cc0a33fdec0ff8cf5e523"
+    }
+  ]
+}

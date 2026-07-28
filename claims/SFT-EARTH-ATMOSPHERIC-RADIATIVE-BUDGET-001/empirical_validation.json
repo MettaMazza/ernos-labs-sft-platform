@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-ATMOSPHERIC-RADIATIVE-BUDGET-001",
+  "data_source_ids": [
+    "NOAA-GHCND-001",
+    "NASA-CERES-EBAF-001",
+    "NOAA-GML-CO2-001",
+    "EPA-AIRDATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:05662c5688cac509bc8123891b65642ddb3665e6419675aa72562f2a14f85e8e",
+  "falsification_condition": "Reject if a bulk fitted parameter substitutes for the registered carriers or if incoming and outgoing quantities use incompatible boundaries.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:43e91e1b534e2c2446f49406964adcd83d941ac8855518f9c0351774761dcfd4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6703dfd4214e1f715205325554f9439cd4554c4335cb50eb9e9a619e957497c0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-ATMOSPHERIC-RADIATIVE-BUDGET-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e119b2767d28bc0b0143a873143991b54d926b03bf574e00047e7d1054d3ef68",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:8be3c6094c3edcfaccee4e64ca45b172430403c279c7e187423f05da147fb5cc",
+    "prediction_seal_hash": "sha256:ba7c8ee7f566ec58216eddf235eab19eafb8214de9d8f9cd7b1c5d584e6ab5d1",
+    "program_hash": "sha256:e8a6a90ca46180594e5ebbe71937e11f6dff0ae6c223877121f6e0773f9b0456",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:36a94a011f85057baa9a8c0fa2bb35bee3730d65f01ce4a894492019eca3a49c",
+    "target_material_present": false,
+    "trace_hash": "sha256:965d2a8380e36da308cec04e3028b328a79a88bbe6f5f65f53551f2927d6d194"
+  },
+  "measurement_receipt_hash": "sha256:d12f604bf36e4531247e910f3aee491e90b41039950fcbb88e4611ab9addc11b",
+  "measurements": [
+    "sft-earth-atmospheric-radiative-budget-001-external-earth-evidence: predicted earth:spectral-source-layer-boundary-carrier__absorption-emission-scattering-transfer-relation__spectrum-direction-cloud-aerosol-surface-and-time-held__spectral-spatial-window-bounded; source-derived earth:spectral-source-layer-boundary-carrier__absorption-emission-scattering-transfer-relation__spectrum-direction-cloud-aerosol-surface-and-time-held__spectral-spatial-window-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:06383ba8de95d62677d33264e07141e08268ad65d6df34c9d9a1c9c6b794faf7",
+    "custodian_id": "SFT-EXP-EARTH-ATMOSPHERIC-RADIATIVE-BUDGET-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:05662c5688cac509bc8123891b65642ddb3665e6419675aa72562f2a14f85e8e",
+    "prediction_seal_hash": "sha256:ba7c8ee7f566ec58216eddf235eab19eafb8214de9d8f9cd7b1c5d584e6ab5d1",
+    "registered_target_identity_hash": "sha256:36a94a011f85057baa9a8c0fa2bb35bee3730d65f01ce4a894492019eca3a49c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a616d951236cb2865e461d2086d816ddbd33df7a71127b661d26e89f05759440"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7f75166e721c9c9888169f4622265ddf5b8e88ad77e8a42da33ea214ee460a5d"
+}

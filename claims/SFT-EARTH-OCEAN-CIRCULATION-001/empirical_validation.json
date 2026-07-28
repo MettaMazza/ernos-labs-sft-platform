@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-OCEAN-CIRCULATION-001",
+  "data_source_ids": [
+    "NOAA-WOD-001",
+    "ARGO-DATA-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:77b78ac6f4239ed5de7c12fa69f728b21f378433237b5608931cd5924ae4531a",
+  "falsification_condition": "Reject if a streamfunction or inferred path is treated as direct parcel history or if unresolved recirculation is erased.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d396ec49c5ffb6394c00c1bc3e1974e84dfa397cbc4b7758b8029e348fef55c2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1a45d4b9243f69a730cb511a393274cd07ac1515a216354ac02547d4797a3cf0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-OCEAN-CIRCULATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:f56c90310fd644057f7262c8084c6f219e3585e5e3afd3a058b21c4bf52f8bb3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:be6d051770fb54665479539cad1a825ac8a07bb09a5e56e2ae368e3698b9d224",
+    "prediction_seal_hash": "sha256:967efdd5af7466f8d0bf5b360101b3c5b0c3966e44f5fc3f75de3598c31d52a2",
+    "program_hash": "sha256:6efea2ea4073eca6a055bcc314b624559f0f6fde3d2bf8b3ee5b76b007a6dcdc",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a658abd8136dbba6309a70082dbedd126f1b9e2f12ca16d5c22435a45ff2b2b3",
+    "target_material_present": false,
+    "trace_hash": "sha256:98b2e85e8a9ddf739fff86066a65c76fdfd6c8ed55271ce015aadfcf2c0c84b8"
+  },
+  "measurement_receipt_hash": "sha256:c4c43d54b8a138444743a738989db1f9c6c1cc4a6335051907ffd5e7cf4ef436",
+  "measurements": [
+    "sft-earth-ocean-circulation-001-external-earth-evidence: predicted earth:water-mass-pathway-network__transport-overturning-and-mixing-relation__mass-properties-direction-depth-time-and-boundaries-held__basin-time-window-bounded; source-derived earth:water-mass-pathway-network__transport-overturning-and-mixing-relation__mass-properties-direction-depth-time-and-boundaries-held__basin-time-window-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:6c62d74acf9f9d54c2d6b62faf592ee48a8f549c109097126f2028163a9be971",
+    "custodian_id": "SFT-EXP-EARTH-OCEAN-CIRCULATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:77b78ac6f4239ed5de7c12fa69f728b21f378433237b5608931cd5924ae4531a",
+    "prediction_seal_hash": "sha256:967efdd5af7466f8d0bf5b360101b3c5b0c3966e44f5fc3f75de3598c31d52a2",
+    "registered_target_identity_hash": "sha256:a658abd8136dbba6309a70082dbedd126f1b9e2f12ca16d5c22435a45ff2b2b3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:656b990dbe91cda8b1005a5d585ecf333d30a95f1c01b06ea838c1f6a46be960"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d346696cf5361970590d75f1f1fc7b49fb3b445b383a8d652b0b5db59b11fa53"
+}

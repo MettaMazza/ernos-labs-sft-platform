@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-ENVIRONMENTAL-ACCUMULATION-001",
+  "data_source_ids": [
+    "EPA-AIRDATA-001",
+    "WQP-WEB-SERVICES-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NEON-OPEN-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f927a3d7e57be3217a81f4b62738b715996020781e11b8b9b4d9287bc03828e3",
+  "falsification_condition": "Reject if concentration alone establishes accumulation without volume, input, output and time records.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6df641714d4bb5a0bc23a231f0be2270ebc53ac7665fe3d49c36d6ecec38fb21",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fa9cea57e5e1f41616f44b5d345199114371ed2ee05d800bdf5e4f9d7a373396",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-ENVIRONMENTAL-ACCUMULATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:21c41657ac829383bcb3190c2bccf62e2e0345a4d477243c6515604e673fd168",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:612317698f73b2e582fa7b36434a07a9fa0749db2c26425c3f794869445c4805",
+    "prediction_seal_hash": "sha256:ee829fecd208106fc00e19d8960213a04509846e880744ed5e5ca43f1f9a4f2a",
+    "program_hash": "sha256:b3677b2bab1558306ceb10cacd01669246594618ebc655fba074d47426379e57",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0e36b0f4c3dcde62102351e10ab087897c30ed7a6be3f626f5b96e2dc2573568",
+    "target_material_present": false,
+    "trace_hash": "sha256:f7e658aff96c9cb4cf867059e9b0f8683223d689227ec1579cf21bda3a30c135"
+  },
+  "measurement_receipt_hash": "sha256:6debb95b370681de580fd3fd85dc432fa88e0eb885f01d9339bc8d4630df0cef",
+  "measurements": [
+    "sft-earth-environmental-accumulation-001-external-earth-evidence: predicted earth:input-storage-output-history-carrier__retention-and-release-ledger__carrier-reservoir-input-output-transformation-and-time-held__reservoir-and-interval-bounded; source-derived earth:input-storage-output-history-carrier__retention-and-release-ledger__carrier-reservoir-input-output-transformation-and-time-held__reservoir-and-interval-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:782d79dca28ec5e4d2d0bf222e3299fcebfe45f83f4b897c641d19962e63d49d",
+    "custodian_id": "SFT-EXP-EARTH-ENVIRONMENTAL-ACCUMULATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:f927a3d7e57be3217a81f4b62738b715996020781e11b8b9b4d9287bc03828e3",
+    "prediction_seal_hash": "sha256:ee829fecd208106fc00e19d8960213a04509846e880744ed5e5ca43f1f9a4f2a",
+    "registered_target_identity_hash": "sha256:0e36b0f4c3dcde62102351e10ab087897c30ed7a6be3f626f5b96e2dc2573568",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:26a0733ff0513d5fe44e1fcd30c61c77e8ad4f85a0d20b3ff4dfa6c39259dcb2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:45419ff6508e2e975481f270819a9b16a4cece82680a50d23b9348b37255eed2"
+}

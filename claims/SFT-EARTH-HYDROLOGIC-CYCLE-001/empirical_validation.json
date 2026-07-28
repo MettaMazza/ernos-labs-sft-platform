@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-HYDROLOGIC-CYCLE-001",
+  "data_source_ids": [
+    "USGS-NWIS-001",
+    "WQP-WEB-SERVICES-001",
+    "NSIDC-SEA-ICE-INDEX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:080b426d40ddbea86d819fa1659fd1025eefb69a0efb1d95c173259de8ac7219",
+  "falsification_condition": "Reject if the name cycle implies closure while storage change, groundwater exchange or boundary export remains unregistered.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:8b60e318c492d6fa802bc1062afe63e59a03adc9953bbfa386d9250411705149",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1fb964882c7e844295da605a4b7a5bf7b4cc687be4ad6383e21003309c1743f4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-HYDROLOGIC-CYCLE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:da6d2b617f27641de7ddf727e524e84a04f81b0eccaaf6cbb7de3a9beccf67ec",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:75b9a70f48d294603c983cc506d75e245fe450f8e434a613c807c6b82b83465d",
+    "prediction_seal_hash": "sha256:b9cfa8832f29bad663399f348b4c23c42eca6da6585872802bc4627fdeca6b03",
+    "program_hash": "sha256:11a0fe17ddcc3d9a047029992d7c17924036b26c282540a103755cd15788b192",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3a032e8b709c9f6ace3cc64c6280ea4cd3f1126fc15518721bc23487e3ed0ceb",
+    "target_material_present": false,
+    "trace_hash": "sha256:5b3be672feea693d622e802aa61e4775ff5d70ba069d37f3492e2db03c9af783"
+  },
+  "measurement_receipt_hash": "sha256:73d1d1c36ef02bec26fbee326fec2395b507d2d7ab71089194c5ad4f44f9ef92",
+  "measurements": [
+    "sft-earth-hydrologic-cycle-001-external-earth-evidence: predicted earth:water-reservoir-transfer-network__evaporation-transport-precipitation-runoff-infiltration-relation__stocks-flows-phases-boundaries-and-losses-held__basin-and-time-bounded; source-derived earth:water-reservoir-transfer-network__evaporation-transport-precipitation-runoff-infiltration-relation__stocks-flows-phases-boundaries-and-losses-held__basin-and-time-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:484d93439e162d350639ead7b9ec45b56d7f4339fce728750790552a11fc44ae",
+    "custodian_id": "SFT-EXP-EARTH-HYDROLOGIC-CYCLE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:080b426d40ddbea86d819fa1659fd1025eefb69a0efb1d95c173259de8ac7219",
+    "prediction_seal_hash": "sha256:b9cfa8832f29bad663399f348b4c23c42eca6da6585872802bc4627fdeca6b03",
+    "registered_target_identity_hash": "sha256:3a032e8b709c9f6ace3cc64c6280ea4cd3f1126fc15518721bc23487e3ed0ceb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:89149606dc69e2cf053dc79707ae7ff6cbca19a4e478d77757668f1e7b6cec91"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fdf405a71ca5e4a9de46c4f3cf98414e75d4d59c6996ae55f6eb181c6bf6f6e1"
+}

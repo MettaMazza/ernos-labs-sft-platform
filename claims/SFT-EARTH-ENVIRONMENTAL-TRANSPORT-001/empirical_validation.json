@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-ENVIRONMENTAL-TRANSPORT-001",
+  "data_source_ids": [
+    "EPA-AIRDATA-001",
+    "WQP-WEB-SERVICES-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NEON-OPEN-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c8bfc8984633766f2e506e1e63c7cc912c1fb5371f1e64897f062ddce41b3525",
+  "falsification_condition": "Reject if a fitted transport coefficient replaces missing path evidence or if unavailable downstream observations become absence.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:4e6e19dc3c53f8242613464b8987fe5a4118361088fd2c0659c1256415c845af",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a706d82c5ef9a74b877fe69036e496f3f0b38448491bcba9d9f5bf9fe57b6bf5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-ENVIRONMENTAL-TRANSPORT-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4476788717394f21aa8bf5e14bb0bdf4f95ad3bdc0316d1a144fb606301052e6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b124eb94f8611b6deb96d78f3e81630dbc24554d26b56ff748c01537dc13906e",
+    "prediction_seal_hash": "sha256:c38011269d3a7a1969e450896e80157d4d31e23a54343792a323f75cb443e64e",
+    "program_hash": "sha256:732897f8d16d358ddb82457bd10c977f68fb65fa1e6b72026336ff387192e43e",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ff840a00f28cbc7fc35200c318236e8d118a5bd689fafdcd7d42ccfae624b698",
+    "target_material_present": false,
+    "trace_hash": "sha256:48084f3d0232370c8d7ed23e891c2ec38be61670dbf5a39141f764ea7dfde520"
+  },
+  "measurement_receipt_hash": "sha256:e6804c53ae98d4b49dc569f8b98eafcdc78d38f799ae82ccf4ab5bdea5d3f513",
+  "measurements": [
+    "sft-earth-environmental-transport-001-external-earth-evidence: predicted earth:material-medium-pathway-network__advection-dispersion-partition-and-transfer-relation__species-phase-direction-boundaries-time-and-uncertainty-held__site-and-medium-bounded; source-derived earth:material-medium-pathway-network__advection-dispersion-partition-and-transfer-relation__species-phase-direction-boundaries-time-and-uncertainty-held__site-and-medium-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:0bda8d688ad3a99aa00cee703bc1179880e928b8cf7d479a46dfde1e3dfb6242",
+    "custodian_id": "SFT-EXP-EARTH-ENVIRONMENTAL-TRANSPORT-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:c8bfc8984633766f2e506e1e63c7cc912c1fb5371f1e64897f062ddce41b3525",
+    "prediction_seal_hash": "sha256:c38011269d3a7a1969e450896e80157d4d31e23a54343792a323f75cb443e64e",
+    "registered_target_identity_hash": "sha256:ff840a00f28cbc7fc35200c318236e8d118a5bd689fafdcd7d42ccfae624b698",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7fe2dd303139042b2b1f880de76e2fe9e00b91e5136512346d5b20fda7e34083"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7f5cc29983f6832de26587cce7684f937ed4a5df7e943c45cb0f047cd458e0f5"
+}

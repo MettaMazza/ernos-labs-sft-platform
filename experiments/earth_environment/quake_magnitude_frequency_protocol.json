@@ -1,0 +1,36 @@
+{
+  "adverse_rows": [
+    "missing magnitude",
+    "nonfinite external magnitude",
+    "catalog truncation at limit",
+    "event status or magnitude-type heterogeneity",
+    "ratio outside registered interval"
+  ],
+  "catalog_boundary": "Global USGS-comcat events returned by the fixed FDSN query, preserving every returned magnitude, magnitude type, status and missing field.",
+  "claim_id": "SFT-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001",
+  "comparison_only_conventional_magnitude_relation": "For thresholds 5.0 and 6.0, compute the observed cumulative count ratio N(M>=5)/N(M>=6). The unit Gutenberg-Richter exponent corresponds to a factor of ten per one conventional magnitude unit.",
+  "complete_branch_pre_source_seal": "sha256:c741b6b227098e41568c29fa05a4c7261152d2a3838b410620954e7c17bfb0cc",
+  "experiment_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1",
+  "falsification_condition": "The presealed unit exponent is adverse on this declared catalog if the exact one-tenth exceedance share is outside the preregistered 95-percent finite-sample interval, or if the query is truncated or cannot be reproduced.",
+  "measurement_may_change_derivation": false,
+  "primary_exact_comparison": "Compare the positive finite count ratio with ten; no event may be deleted by magnitude type or residual after the target opens.",
+  "protocol_hash": "sha256:826e20c4df78785babae986ac0c4ef56a48860a926b27d22e6ec189736cb5aeb",
+  "sampling_interval": "Compute an exact finite binomial 95-percent confidence enclosure for the proportion N(M>=6)/N(M>=5); the sealed unit exponent is observationally compatible only if one tenth lies inside that enclosure.",
+  "schema": "sft-v3-earth-quake-magnitude-frequency-blind-protocol/1",
+  "sealed_derivational_exponent": {
+    "denominator": 1,
+    "numerator": 1
+  },
+  "source_id": "USGS-EARTHQUAKE-FDSN-001",
+  "source_registry_hash": "sha256:9978316ab6cbb94cd6e082fe48bc3f21adb7c9df8bbb491bba25e5ee8b3aa352",
+  "target_data_opened_before_protocol": false,
+  "target_query": {
+    "endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query",
+    "endtime": "2020-01-01T00:00:00Z",
+    "format": "geojson",
+    "limit": "20000",
+    "minmagnitude": "5.0",
+    "orderby": "time-asc",
+    "starttime": "2010-01-01T00:00:00Z"
+  }
+}

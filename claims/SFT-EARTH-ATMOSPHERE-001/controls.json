@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-EARTH-ATMOSPHERE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:9bc1a0aab8a0ba2166a8b17db6b1cce105431cba9b1a15e81fc5222dcc192fd4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8fed5c8fd4afc48222e2ca3e692d9b3e2095be3c7b2ad773b78ab95b63d847c2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2d71e10d862ba3808956b8455a8e3a7209970f3effae13903113797971f2e790"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:827675631c444725533ae176760c05774d141dd4edddbe57405062a456877293"
+    }
+  ]
+}

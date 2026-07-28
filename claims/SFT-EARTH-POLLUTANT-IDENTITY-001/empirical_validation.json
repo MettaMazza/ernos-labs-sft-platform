@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-EARTH-POLLUTANT-IDENTITY-001",
+  "data_source_ids": [
+    "EPA-AIRDATA-001",
+    "WQP-WEB-SERVICES-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NEON-OPEN-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:394ef7f47bd7e58d47dceccdd8af74704f813f4d5f945c1dd42133e8308bacdc",
+  "falsification_condition": "Reject if chemical forms, exposure, dose, endpoint or Medicine-owned health evidence are omitted.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a0488e3a99a4037a90e2dc6c67bdaaeab5458e6d3816b4aa989224661442de04",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:df95e62d827d871bdb5468b2b5e71e669d44370f5b1d557dbc2c703a4760d4be",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-EARTH-POLLUTANT-IDENTITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:78cab4fcda66ce81b912adb9adf54e2b340b8aed52a85ff9d22819ea5ee0f321",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2d57b029cfdd42c4876d6480cce26d7d4c0935b3ebe200127cf4086bff3ebd1c",
+    "prediction_seal_hash": "sha256:08038fe74dfaa4bbba67fda4dc494cbcbce3bc448f64214b2c560b57e24dd8d9",
+    "program_hash": "sha256:c75d118fe00798aa5b272de19e2820b0b3a0df6e6b2264645259a0814080575d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5f15b1d9c715ecba55bfeda47c077a12d5a2e25e28d7a682411085a92592cba1",
+    "target_material_present": false,
+    "trace_hash": "sha256:1bb7585cdeb97f0940a7997db94ba0c15aba8d05588c109faa1c2a646943c3d1"
+  },
+  "measurement_receipt_hash": "sha256:5e6cef45fac3e438aec699c791762a481c349fe4fe9d9c6a23f1044748a46c57",
+  "measurements": [
+    "sft-earth-pollutant-identity-001-external-earth-evidence: predicted earth:substance-form-source-context-carrier__harm-relevant-exposure-classification__chemical-form-source-medium-dose-time-and-endpoint-held__environment-health-handoff-bounded; source-derived earth:substance-form-source-context-carrier__harm-relevant-exposure-classification__chemical-form-source-medium-dose-time-and-endpoint-held__environment-health-handoff-bounded; exact match True",
+    "source features: 67 present; 24 absent preserved; 91 registered",
+    "the original failed transport and every adverse, absent and unresolved row remain preserved",
+    "a deliberately changed external consequence was rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9bfca37fea35c5e9cdf2447d6ee6eef65ab35e6ef74bf8a62609ebdedb33a1d1",
+    "custodian_id": "SFT-EXP-EARTH-POLLUTANT-IDENTITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:394ef7f47bd7e58d47dceccdd8af74704f813f4d5f945c1dd42133e8308bacdc",
+    "prediction_seal_hash": "sha256:08038fe74dfaa4bbba67fda4dc494cbcbce3bc448f64214b2c560b57e24dd8d9",
+    "registered_target_identity_hash": "sha256:5f15b1d9c715ecba55bfeda47c077a12d5a2e25e28d7a682411085a92592cba1",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:58479b6f0cdd2dbb8e1667104fb3fdb4974173553cedba6f35a9e6f799c1909e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fd55fc88094860b22c45ef5b74dd8f180af5f90cc02d334fd0ad3d91641f28d2"
+}

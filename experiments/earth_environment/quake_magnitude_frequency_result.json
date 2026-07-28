@@ -1,0 +1,86 @@
+{
+  "adverse_conditions": {
+    "catalog_truncated": false,
+    "event_status_heterogeneity_present": true,
+    "heterogeneity_rows_preserved_not_filtered": true,
+    "magnitude_type_heterogeneity_present": true,
+    "missing_or_nonfinite_magnitudes": false
+  },
+  "catalog_limit": 20000,
+  "catalog_truncated": false,
+  "claim_id": "SFT-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001",
+  "clopper_pearson_95_interval_comparison_only": {
+    "lower": "0.076998990840681139",
+    "upper": "0.084918164588559525"
+  },
+  "content_type": "application/json",
+  "event_status_counts": {
+    "REVIEWED": 2,
+    "automatic": 12,
+    "reviewed": 18455
+  },
+  "experiment_id": "SFT-EXP-EARTH-QUAKE-MAGNITUDE-FREQUENCY-001-E1",
+  "http_status": 200,
+  "magnitude_type_counts": {
+    "Md": 1,
+    "Ml": 1,
+    "m": 5,
+    "mb": 8504,
+    "ml": 35,
+    "ms": 9,
+    "ms_20": 2,
+    "mw": 304,
+    "mwb": 1006,
+    "mwc": 3189,
+    "mwr": 288,
+    "mww": 5125
+  },
+  "measurement_changed_derivation": false,
+  "missing_or_nonfinite_magnitude_count": 0,
+  "missing_or_nonfinite_magnitude_rows": [],
+  "observed_count_ratio_exact": {
+    "denominator": 1494,
+    "numerator": 18469
+  },
+  "observed_exceedance_share_exact": {
+    "denominator": 18469,
+    "numerator": 1494
+  },
+  "passed": false,
+  "protocol_hash": "sha256:826e20c4df78785babae986ac0c4ef56a48860a926b27d22e6ec189736cb5aeb",
+  "protocol_path": "experiments/earth_environment/quake_magnitude_frequency_protocol.json",
+  "requested_locator": "https://earthquake.usgs.gov/fdsnws/event/1/query?endtime=2020-01-01T00%3A00%3A00Z&format=geojson&limit=20000&minmagnitude=5.0&orderby=time-asc&starttime=2010-01-01T00%3A00%3A00Z",
+  "resolved_locator": "https://earthquake.usgs.gov/fdsnws/event/1/query?endtime=2020-01-01T00%3A00%3A00Z&format=geojson&limit=20000&minmagnitude=5.0&orderby=time-asc&starttime=2010-01-01T00%3A00%3A00Z",
+  "result_hash": "sha256:4657a82ad8b4263fa5394ad83a490fc7ea23bcb3a91afca04fb20cea7b7902c7",
+  "returned_event_count": 18469,
+  "schema": "sft-v3-earth-quake-magnitude-frequency-result/1",
+  "sealed_expected_exceedance_share_exact": {
+    "denominator": 10,
+    "numerator": 1
+  },
+  "sealed_unit_exponent_compatible_on_registered_catalog": false,
+  "target_opened_at_utc": "2026-07-28T05:03:50.309753+00:00",
+  "target_snapshot_hash": "sha256:8ac0e0eabfe0c73b4acfc2994f3920dc3f6c9441a78de563a5b10a33c9677f6a",
+  "target_snapshot_path": "experiments/external_sources/earth_environment/targets/usgs_quakes_2010_2020_m5.geojson",
+  "threshold_counts": {
+    "magnitude_at_least_5": 18469,
+    "magnitude_at_least_6": 1494
+  },
+  "transport_history": [
+    {
+      "http_status": 400,
+      "reason": "runner serialized the registered endpoint field as an unintended query parameter",
+      "scientific_protocol_changed": false,
+      "status": "failed_before_target_release",
+      "target_body_opened": false
+    },
+    {
+      "http_status": 200,
+      "requested_locator": "https://earthquake.usgs.gov/fdsnws/event/1/query?endtime=2020-01-01T00%3A00%3A00Z&format=geojson&limit=20000&minmagnitude=5.0&orderby=time-asc&starttime=2010-01-01T00%3A00%3A00Z",
+      "resolved_locator": "https://earthquake.usgs.gov/fdsnws/event/1/query?endtime=2020-01-01T00%3A00%3A00Z&format=geojson&limit=20000&minmagnitude=5.0&orderby=time-asc&starttime=2010-01-01T00%3A00%3A00Z",
+      "status": "captured",
+      "target_body_opened": true
+    }
+  ],
+  "usable_magnitude_count": 18469
+}
