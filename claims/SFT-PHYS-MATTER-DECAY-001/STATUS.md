@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:7c3d62e4e9f23f4c61a96a2f4a3c7fc7179dd71964b6da4dc7ba44e1b86d4f7f`
-- Independent validation: `sha256:14bb288aac3e051b88c97a368e17c106739741086958601638bdfe6689f262df`
-- Blind external measurement: `sha256:7081680de252cc8971336c5ab0e2296c5092c49e1dc9d4bba6cd0eaf4663fe3e`
-- Measurement receipt: `sha256:e38dcce46ece40beeadc86694d24f4621e7b92a5886b414d250b085528428231`
-- Engine receipt: `sha256:67296b745325db1768a99db563e6a6966b0201b9fb107133746aaac222ae8291`
+- Derivation seal: `sha256:3f13fba90f46522d47d4b49fb955cac22826629d17c6d7e11941da8215ee2383`
+- Independent validation: `sha256:ec7c7b407032db5a69050cb4f8c7be16a315dc0174d6509d3ad6bd91312c1ee3`
+- Blind external measurement: `sha256:06b75856419931680e075fcad3ec2f4ebd02e13158939f6e6cfc9ff020cecb34`
+- Measurement receipt: `sha256:28f52eea4689438a90d6134087466e90aa2363f3053d62892dbc626337cb16d3`
+- Engine receipt: `sha256:b9a36548925456b6db03d9031c9b926b8617d42c0c4c2a536bd39cf814a17627`
 - External source IDs: PDG-2025-SUMMARY-TABLES

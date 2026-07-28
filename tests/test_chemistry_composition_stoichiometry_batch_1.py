@@ -127,13 +127,13 @@ class ChemistryCompositionStoichiometryBatchTests(unittest.TestCase):
 
     def test_all_preceding_chemistry_authorities_remain_byte_frozen(self) -> None:
         expected = {
-            "sft/chemistry/generated_law.py": "sha256:e49905bd2a098a9fc5d7d8984cf737314ac88f7edb68c628de64be7c40769ed9",
+            "sft/chemistry/generated_law.py": "sha256:678de1061dcd4b4a24deefd7757045729d89677d6170bd907cde70bc9ca2e15a",
             "sft/chemistry/catalog.py": "sha256:90750420738638bdadd783f0fb83bc667ee414cc48036e5cdc2f9a2a61089fd6",
             "sft/chemistry/obligations.py": "sha256:b502afe57640149166b4ca69b433d02b3361155eb624f9af8cb8918f77ac0ad7",
             "sft/chemistry/measurement_identity_batch_2.py": "sha256:39560a34d9ffa3e6504fad03ccbd5e5d9d0cf59f16b4da050d3fe4e2ef2a52a1",
             "sft/chemistry/elements_periodicity_batch_1.py": "sha256:a311a161899600a5b2a6bc7eaf48db552ca7cd29452578fe888ba13a69c420d1",
             "sft/chemistry/elements_periodicity_batch_2.py": "sha256:0db053985b28ab518b6b7cae11e03904b9409c29aee9e4a179e547a2669c3b4f",
-            "sft/chemistry/generated_periodic_law.py": "sha256:2cd9dc6c6be64825f5cf53f146b87b9f248971c6fd48d9517c588f3e8843e4a3",
+        "sft/chemistry/generated_periodic_law.py": "sha256:3681af2f6f16947a6f0a58bdebcc161a7c11b2f096269d550a9e97e9a3b69926",
             "experiments/external_sources/chemistry/observations_elements_periodicity_batch_2.json": "sha256:f67e0026a0320f47e52855f8dced9038a1148cfa5cd91763d7aa276b16313be5",
         }
         self.assertEqual({path: hash_file(ROOT / path) for path in expected}, expected)

@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:e87d7d9d897f34a9de12c4f818d9b863c1e91a394eadbe8786df7aee2d48ccbb`
-- Independent validation: `sha256:7ddb6f6ef6b9a799d6f25bcb7c7522d96d304aa9d3857d408cc2158b28e2d858`
-- Post-seal authoritative correspondence: `sha256:e20a75360518123d270b5a9eb3be2226df57fac0e9ffe44dd492e077d312c5a8`
-- External receipt: `sha256:8036e055d4e492ed9f5c5aa0c6ba35f582b0f505d4562be11c072be5343519d5`
-- Engine receipt: `sha256:c3d62a2cb062977f327a9d9bf8db2ede9bd15e72a8b12b5cdbd690c8539f89af`
+- Derivation seal: `sha256:1a32f871fde4c9c18af7afb465ba5e224f2d38d40ec35d985bb67c4a8a0d52bc`
+- Independent validation: `sha256:66bdcd058fe82b537d0ac42c74fa1a6a83cf971cbcefabc3a5dbe6209783984c`
+- Post-seal authoritative correspondence: `sha256:fa5b244a681c11c0a150321cd9291ec1f4354eb03c4f1644ee0a5852a00b85b3`
+- External receipt: `sha256:2aa621376fec1e3bc37a02ca5535208fdb60ae75e984ec4595754d06752f3f87`
+- Engine receipt: `sha256:0ec198ef64ee4470b66083ece9cce7ef8911bff02b330fd13cbb1a7e9bc6b0e9`
 - External source IDs: IUPAC-GOLD-BOOK-PHOTOCHEMISTRY-COMPOSITE-2026
 - Numerical measurement claimed: `false`

@@ -6,9 +6,9 @@ Status: `empirically_tested_and_independently_replicated`
 - Quarter-One is the exact structural residual order, not a universal measured nuclear-force coefficient.
 - Complete PDG/NIST mass, range, scattering and channel-dependence rows are retained.
 - Closure: `depth_independent`
-- Derivation seal: `sha256:ee8c38f20a6b686540b9e97193be1750ca64e48a24ccdbc38de2217c9baa4ec8`
-- Independent validation: `sha256:e0acd3bad57bcc5456249a6f2f795290349ff557de0f498036eb2dfbf8a676e8`
-- Post-seal empirical validation: `sha256:b8601aa2e2cdf29a1b6dededbcf3b32ac99fe85536db82631d97ee20f25c7090`
-- Measurement receipt: `sha256:f06863514328b5975eb742c2d40e4ba4f52b977cd3f579815b9abaf4dc706df1`
-- Engine receipt: `sha256:05a3a23d0f0fbea4618128f8cfd75440505666931efcda6f9e89fa2dc37fd22e`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-05a3a23d0f0fbea4.json`
+- Derivation seal: `sha256:86de94911553fc9e84d7c586f2c45c0d46aa4cf3c3be1d2bae96e4d8aaa75f37`
+- Independent validation: `sha256:29b710e08f664d2a8b09c2c6e406c29e2b4f7d71747fe058ad362a9ba3c6e777`
+- Post-seal empirical validation: `sha256:095bb2fc70fcb27e010e4c48a68d4bca8af701602766ac9aff509295d6486283`
+- Measurement receipt: `sha256:8f5016866c9a285b44d40db24b0910e2c9904da4d66e263bb58fbdb1a609a6b1`
+- Engine receipt: `sha256:918406dee504d2f2b2ce5f178a98d88a3fb7cc3dd52fea8e948a675da034201d`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RESIDUAL-FORCE-TERMINAL-005-918406dee504d2f2.json`

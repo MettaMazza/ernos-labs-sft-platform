@@ -17,11 +17,11 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_ORG_001_016_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:00ed97e8dec313d65d2b9f6af595e3e3787a99aa60b86814f1a00f318abf011e"
+FAMILY_BOUNDARY_HASH = "sha256:ccbc91e9873a84f31b50670c9a8f063ee6a6096d3dd216b5e7c3bf86521681b2"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/org_001_016_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:12c6822a695eb7135081ef8d044a3136c2fee2b0d486c9164b1f1166ef087381"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:8b35e1f37dbf80713c47404d946a320da8d7011deaa5dbee7fe8393b58793cee"
+FAMILY_INVENTORY_HASH = "sha256:d542adb23900f765fcd0205afae8a666813af160881bb70b0676637b090b4acc"
 LAW_PATH = "sft/chemistry/antiaromatic_nonaromatic_distinction_law_v1.py"
 LAW_HASH = "sha256:a9e459b00590a73ff4346cf6ccad670a081e98427e77b68bf691b9c3ddf89d3b"
 PRE_SOURCE_PATH = "experiments/sealed_predictions/chemistry_org_004_antiaromatic_nonaromatic_pre_source.json"
@@ -30,9 +30,9 @@ PRE_SOURCE_PAYLOAD_HASH = "sha256:df89cfe1ebaf37dc299b1679799730bc40ecbf0d0ef4d2
 IDENTITY_PATH = "experiments/external_sources/chemistry/org_004_target_identities_v1.json"
 IDENTITY_HASH = "sha256:fcc870b511bcd2da94f26b6a9c8eed77ad9c05be3fce6a15869d4c1d6e0c437d"
 TARGET_PATH = "experiments/external_sources/chemistry/org_004_withheld_targets_v1.json"
-TARGET_HASH = "sha256:9fd3b5c9dee7948c24a9f9c9b7de9abb66092e882289d7e4c5a3cf910651be8b"
+TARGET_HASH = "sha256:e1a73627e34eef30df6159624edf648aeee8458c9c444cc0c764cdff17a754e7"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/org-004-primary-records-v1.json"
-PRIMARY_HASH = "sha256:f867e426d274af749abd8a9cf84f33758bcc7b6a6df88ac6489c4dc9a659ab95"
+PRIMARY_HASH = "sha256:d46c6ab85ff4fbd9f3813bc292f5b56d8da68b5e68bd2ae0a636d1a22556c780"
 
 
 for path, expected_hash in (

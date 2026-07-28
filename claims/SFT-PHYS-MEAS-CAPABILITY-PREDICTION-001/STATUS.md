@@ -4,6 +4,6 @@ Status: `independently_replicated`
 
 - Closure: `depth_independent`
 - Empirical status: formal prerequisite; no natural-law claim
-- Derivation seal: `sha256:d4c5b29b8c8c7fbf677579bb04cb996cdf6878a95ef678bac3998c373374bae6`
-- External validation: `sha256:d6ad95de25a8dd5dd16045baead9da289366c3189e216cff4421a6308e4c7c2e`
-- Engine receipt: `sha256:dc597e88dc8d1f725ef158e3e69a1bb6b4b402c4cc138372e40b1df21fe821d8`
+- Derivation seal: `sha256:bc99279c92de616961792fbfee2b9502b70e6aec23b54fc97c73ed83fafd1b87`
+- External validation: `sha256:4abfd002a0b3c5467a517fa4f2cdf36842d757a292cb4979482c4403ad859fd7`
+- Engine receipt: `sha256:bf675d47eb8731760292d542c65fb0af31349d313360d018ee0199a71e23f9a4`

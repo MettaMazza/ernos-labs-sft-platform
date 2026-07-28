@@ -18,7 +18,7 @@ from sft.engine.source import hash_file  # noqa: E402
 LAW_PATH = "sft/chemistry/inorganic_magnetic_state_law_v1.py"
 LAW_HASH = "sha256:27c299058fa6ec1489155395766f280e3cd6e29d0786828d0e75c2d0018e9452"
 ADDENDUM_PATH = "experiments/external_sources/chemistry/inorg_009_magnetic_shared_source_identity_addendum_v1.json"
-ADDENDUM_HASH = "sha256:2ed4e683e793e9774b0e8b23e4d8c22e8a0f112646896bda78d749235cd26079"
+ADDENDUM_HASH = "sha256:b55fb12e09536da326158a016df2ccd028f4a0e8bb84ddb736a2252dbdbff161"
 SHARED_IDENTITY_PATH = "experiments/external_sources/chemistry/magnetic_response_target_identities_v1.json"
 SHARED_IDENTITY_HASH = "sha256:aeaf62719a5c7699f9743722df5ffbafb7ffc3337e366f8321bc2a2dbe357259"
 OUTPUT = ROOT / "experiments/external_sources/chemistry/inorganic_magnetic_state_target_identities_v1.json"

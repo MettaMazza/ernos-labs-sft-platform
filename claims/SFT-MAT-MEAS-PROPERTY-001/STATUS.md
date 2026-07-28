@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:1d1f8fd9378247d9dfeb92613f2b5fec6cb4c9c3909dc46815a7f416d4db2bdc`
-- Independent validation: `sha256:8d89cd0128a033bc11d35c7516a69ed90d3575999a75632bee9b7aed56a4b3bd`
-- Post-seal authority correspondence: `sha256:13e08bdc1143aa9d50e2532125113b4afabc13db1c34e8d4079f2f91bb00e27c`
-- External receipt: `sha256:7b6727c92a907c19971097f1e19c34a2064840a58b1892285497d238cfffc014`
-- Engine receipt: `sha256:d13a1540d3b9d11dd631f188e97f4096b58dcc42f19ad0dae0b4d7ad1eb60857`
+- Derivation seal: `sha256:c707792920f995a29831cc812f9b2070d96924de9184e119f9e07caf3dd85689`
+- Independent validation: `sha256:8832658808cd13e91cc10e24577a2011fac789ffe9767a6ca9658412620c42ee`
+- Post-seal authority correspondence: `sha256:6099492ba9d9a2537365b8a938f61d442aa35d3291c37bbdb438d91e30b96050`
+- External receipt: `sha256:0af87833d34e9b1a6d4f85644b454a2654cf71d274b7b64b76d9dd2c17d31e48`
+- Engine receipt: `sha256:bf49f2ad1f00be8833e35eae3aad141cd5213b11094b232ae4fb632a3bad6535`
 - External source IDs: NIST-REFERENCE-MATERIALS-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

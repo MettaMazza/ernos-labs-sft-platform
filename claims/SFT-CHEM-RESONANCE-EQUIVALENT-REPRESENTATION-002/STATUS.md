@@ -6,5 +6,5 @@ Status: `model_admitted_forward_forced_empirically_tested_and_independently_repl
 - Exact one-carrier, complete-atom, complete-adjacency representation equivalence with depth-independent complement successor.
 - External vector: four complete IUPAC representation, resonance-form, contributing-structure and delocalization records.
 - Preserved adverse evidence: one V1 incomplete search-scope result, corrected separately in V2 without source recapture.
-- Derivation seal: `sha256:6f35d22e057d792601a99dc0a4bf9bb3fd6eaca9fe9caf53ee5d5c69216e7e70`
-- Engine receipt: `sha256:7e41064554e7cd77edb23d293095720a57dbc3e4dc44c8b47c34fcd567f81f7d`
+- Derivation seal: `sha256:8cfbbe91a0942f12e4f1e489aaf07f7b9170c536afca92b2ec6ad90c024292be`
+- Engine receipt: `sha256:f2c0e4ec6a2c1223b27e05831466da02ceb92ff44b121759fa09ff673c96222d`

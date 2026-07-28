@@ -31,8 +31,8 @@ Any other identity is void and must halt before admission. See
 anchoring procedure.
 
 The final one-command verification is deliberately long-running. The last
-complete 1,029-claim run took **01:10:36.790** on an Apple M3 Ultra Mac with
-512 GiB memory. Reserve at least 90 minutes on comparable hardware and allow
+complete 1,319-claim run took **01:19:13.740** on an Apple M3 Ultra Mac with
+512 GiB memory. Reserve at least two hours on comparable hardware and allow
 several hours on ordinary laptops. A run is complete only when it prints
 `SFT COMPLETE VERIFICATION: PASS`. See `docs/VERIFICATION.md` for the dated
 host, corpus, test and measurement record.

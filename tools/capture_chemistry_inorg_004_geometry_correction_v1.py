@@ -19,7 +19,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 SPEC = ROOT / "experiments/external_sources/chemistry/inorg_004_geometry_identity_correction_v1.json"
-SPEC_HASH = "sha256:250c45d33906ecc5f02a318e458b30ba34e81f3fc5cae5da04d841d30dc7e4eb"
+SPEC_HASH = "sha256:172d67b1a9854dd3ee3114cede27e047ed9a5b209d5ca0061ecc3b408066aeac"
 SNAPSHOT = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-geometry-correction-v1"
 INVENTORY = SNAPSHOT / "source-inventory-v1.json"
 

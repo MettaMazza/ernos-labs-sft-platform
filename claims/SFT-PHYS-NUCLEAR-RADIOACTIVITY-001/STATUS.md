@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:3baaa11050ac054e4bc27061f6acafb7c8b1d20ae9a06ab2044e93c38fa43780`
-- Independent validation: `sha256:149cb62c5efcf8332acc63666d7cb9b7bb365f75008af5ffab5480b974373286`
-- Blind external measurement: `sha256:2eb2570415ea91beb3310bbccedcaeb644075e14b7a193c71a9ebf7c57c9724c`
-- Measurement receipt: `sha256:2fb40b4979572faebf3f41b84ffe8676f1e7659c4d9a3524d72f8800d851e569`
-- Engine receipt: `sha256:abfd4ba82c2ecf7fba7473fa029c2b3c06ad54d536c4fef8a7b354fbdb587576`
+- Derivation seal: `sha256:6b98f20b4d4443f9491a266859ca1de0ad7d7c5acb77ba39c79c5746ad317386`
+- Independent validation: `sha256:8c6f11383d1a9c9ae7b4f7ad33db8d21c9455878503f4e0a324958b776a99b53`
+- Blind external measurement: `sha256:99f8a32f3520b41b9c8a9c0b34024e6a24cfe0a48e548006a079e43c38a12782`
+- Measurement receipt: `sha256:fc8ad9bf968d6f5096490a2cf2e3562a235904f18606074ba638448815df9cae`
+- Engine receipt: `sha256:4e90565b4e6d54f5247bec21bd83c2deb7f3748fe72c100d3c4a5473811266d7`
 - External source IDs: IAEA-ENSDF-CURRENT-2026-07-23

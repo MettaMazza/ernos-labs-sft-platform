@@ -25,7 +25,7 @@ PREDICTION = ROOT / "experiments/sealed_predictions/chemistry_org_004_antiaromat
 PREDICTION_FILE_HASH = "sha256:ec19a1a56f5ffe3dd2759f4d82fb845b1ee111cc72dda9d04e0d582507bbe768"
 PREDICTION_PAYLOAD_HASH = "sha256:df89cfe1ebaf37dc299b1679799730bc40ecbf0d0ef4d27d842687b7163a0aa9"
 FAMILY_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:8b35e1f37dbf80713c47404d946a320da8d7011deaa5dbee7fe8393b58793cee"
+FAMILY_INVENTORY_HASH = "sha256:d542adb23900f765fcd0205afae8a666813af160881bb70b0676637b090b4acc"
 TARGET = ROOT / "experiments/external_sources/chemistry/org_004_withheld_targets_v1.json"
 PRIMARY = ROOT / "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/org-004-primary-records-v1.json"
 

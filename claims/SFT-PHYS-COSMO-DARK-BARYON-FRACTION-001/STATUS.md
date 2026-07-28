@@ -4,6 +4,6 @@ Status: `independently_replicated`
 
 - Closure: `depth_independent`
 - Empirical status: both exact ratios pass the complete Planck density interval
-- Derivation seal: `sha256:8d183903a0f43d28ae6e8dd4350fc3818619f41083dcdc1360486091788fcddb`
-- Independent validation: `sha256:671295b17b78b7078c86aa5d91762fa03d64255579c107685e0b933f03dea13f`
-- Engine receipt: `sha256:38b06863d5a59f8f8ea17fee7a0a1d5ff1fdcd0c6f7b9de3e9f635705d4f8cc2`
+- Derivation seal: `sha256:00937cfc05f8ce49be9b1ddfec0e666241d0cf9d8a082719dfb115745bc13399`
+- Independent validation: `sha256:93ab300854cbc1d02290b6b015586c989618ee5f3a8dda27b229b1d4de08cfe3`
+- Engine receipt: `sha256:d8a5088d10154314b6c018e2daf4ab64bf2c4c94e6f4ee77a814bbf56048f3f3`

@@ -5,7 +5,7 @@ Status: `model_admitted_forward_forced_empirically_tested_and_independently_repl
 - Chemistry obligation: `SFT-CHEM-OBL-INORG-011`
 - Forced support widths: `2, 6, 10`; exact capacity: `18`.
 - External vector: four complete IUPAC rows; no recapture.
-- Derivation seal: `sha256:babf3f67aeb268f90820ab9c77ede39a39b5a3c3b872e855b8adb46fd6eec9b0`
-- Independent validation: `sha256:d4ee8268ed6b8d20943cc1564907a57711d85f8d5d6fde6e906d6b6d03fda684`
-- Empirical validation: `sha256:343a077de6bb28aca04611ded6d2bd98c4641c0c3f6a00fef981e6aef2878d99`
-- Engine receipt: `sha256:ad245414544a9ee7aca5dcdcf839999ca49a39eecf1f1fcc98d4580355f7c36b`
+- Derivation seal: `sha256:30dc00e1f8d08522b68a30b0b352076e90c8c7427de1a04727321201892d8a42`
+- Independent validation: `sha256:6f3f1b4fffc9e0a8d96e0a8754a409044256ea7732e2cd820a6a2bcec7aa2f0b`
+- Empirical validation: `sha256:d607de61fd2b88c77dad5ecb6aa1323adbb1e85ca4980b0cf3a97a86edffd802`
+- Engine receipt: `sha256:39e83309e44945b8cf34698ec31d140041412cdd19451d214598fcf3c7c5011b`

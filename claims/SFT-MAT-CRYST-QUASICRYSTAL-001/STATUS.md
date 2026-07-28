@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:6a4386e007b87fab581b9006924276970082bced9cd7259a4384243c894a9a07`
-- Independent validation: `sha256:25e7cbc99190b490ca1de85a180d406e5f69d1060cc67b8232a4b4d1cdfc488f`
-- Post-seal authority correspondence: `sha256:977cb5c6105037ae75d97e2312a249489f97a3fa3fe524912be1b7a5fc79bb29`
-- External receipt: `sha256:0ad97e77ff4a78474e22cdfc34fa63f25835bd04395e2ce541ef8d2e2fec0bf9`
-- Engine receipt: `sha256:77617aba1e766abd8b64273551afa2ca856c9f67a68f869d86448ef1c5266e21`
+- Derivation seal: `sha256:2792e02374f9be3e1c8eb12123c97b0e7262a6d1806b0cf6e12935678dc690fd`
+- Independent validation: `sha256:a0ae58d43ece521b82d136abd33aed368916c4c0628e3d62bae93d20d6026e27`
+- Post-seal authority correspondence: `sha256:4943ee3814948f76fd335b73f64b709d0f42d604432d34d48a156f9c46e96045`
+- External receipt: `sha256:30551c8d1da9fd1fca796595c7df3e629dd00840a48e3c8926cf535f3b608511`
+- Engine receipt: `sha256:c397a36d1bb97f5bbab246e07e290b327c773ea18ec5c2b074d22794d7d1d094`
 - External source IDs: NIST-QUASICRYSTAL-MEASUREMENT-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

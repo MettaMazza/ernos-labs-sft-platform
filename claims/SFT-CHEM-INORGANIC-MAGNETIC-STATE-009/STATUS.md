@@ -6,7 +6,7 @@ Status: `model_admitted_forward_forced_empirically_tested_and_independently_repl
 - Balanced state: `EmptyOne`, width 1, repelled, diamagnetic.
 - Four-unpaired state: support 4, width 5, drawn, paramagnetic; successor support 5, width 6.
 - External vector: 177 rows; 136 exact magnitudes; 38 structural absences; no recapture.
-- Derivation seal: `sha256:80dad4ef54ec9b5829f4a6f6e69800aa3849a8240234256b8a2c8f25050bd981`
-- Independent validation: `sha256:9991f08b864f0df1452f8e52f977112ae17d47c089e06452a85bf8db68e40c6b`
-- Empirical validation: `sha256:d98db159aa3f3a1950b69765b3c4c4ae27328bc9d8f400d90a2fb40b959d321d`
-- Engine receipt: `sha256:630bc6e913924afe1364b9837838c06ed519c7961bac5c4bfcee01b929eb507d`
+- Derivation seal: `sha256:b5ffd946d45a8a4c19abd2704f447aec709f24f956c858f1632ee263f0ab889b`
+- Independent validation: `sha256:97e57e978cd721f68b8b07755c298742f1cde340b078394e8f38faa5690d8f92`
+- Empirical validation: `sha256:3fa22ca288965f7f774fd172bdccae251d408490c33334cf575afd7b340e61c3`
+- Engine receipt: `sha256:cabca6204189701f435c36647c70dd5ecc6dfef4e03a746ac984b2fe3ed6a7a6`

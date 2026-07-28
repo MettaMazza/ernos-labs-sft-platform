@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:1d98de21f5d7e99681d01977448efd664603dde6233b1a0a289b6339db5dae3c`
-- Independent validation: `sha256:85798ec472c45e4f89fdfc19152f5e5835f6dbbbd8af31fdda44cfc5c1ec8d11`
-- Post-seal authority correspondence: `sha256:0f5045547d470ffff7cff7a76b331bcc87321b131e410d01dfedc202fef8b7fd`
-- External receipt: `sha256:370d8291daf74de34741f463bb14759e3ae77c4e70542c12bb03fce0e4694a0c`
-- Engine receipt: `sha256:062606db8c6509ec2a58c31f865d99c78fe46b8a407e9a0bf823b7abbc04e868`
+- Derivation seal: `sha256:72838511ae9f5a22308d5682f676b7a772a9ab2b1dd9d450dc6d6c0918ae0cf5`
+- Independent validation: `sha256:01b432ac842c5146351e715ab1f27685449372feb8ffdcf78bba4e1a7fb77acc`
+- Post-seal authority correspondence: `sha256:ba85478933c0b55f0025f740e95ebc2e917ba37a8d06939c36c9f3414409843b`
+- External receipt: `sha256:bb5ee511eba185fcb2b9245aff5768e4aa122c073b1341cee6130782b7c73568`
+- Engine receipt: `sha256:7b95e56aaa1c2c51c79a84cfea8693aa695be4eb0f8fa0c9b948113547ecd68a`
 - External source IDs: NIST-WULFFMAN-CRYSTALLOGRAPHY-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

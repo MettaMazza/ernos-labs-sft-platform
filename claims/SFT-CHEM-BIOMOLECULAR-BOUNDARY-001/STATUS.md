@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:cc93dcd2e0b68c5cd2d497b751efc1292cb3a845fb29e86a07b8b7d9cf4c5a14`
-- Independent validation: `sha256:ce2e18c75f02c7a9ac082c3edb4160da04c0050bc6994594fdf9901c79a2f37f`
-- Post-seal authoritative correspondence: `sha256:3070285b3783ed838c144def1aca376ee3b6a5facdaa5215b5c971ebb5ebc572`
-- External receipt: `sha256:1fd01394c060361f41594cb2e5faeafacf6c2f2f4c6f9a57a1d93548da7df75a`
-- Engine receipt: `sha256:610945f40717478ae45485c17632b717085f1801b29cf794ae1dd1b7c008193e`
+- Derivation seal: `sha256:a165cad506a0cef78eacf0f67942163bb2fa09c5241af0271488da9a6a7aa12b`
+- Independent validation: `sha256:db6a36654236f3fb8fcb1bd5a5c155d48c6e5a878b7aa5755117506a18e7f6ea`
+- Post-seal authoritative correspondence: `sha256:c4337b17744f0ac2e605e985ce04db0dae2448c48d038c916e9d1e9489837c55`
+- External receipt: `sha256:c7069c2f9bde225b62a7aa88c291736badf28ea1d7a36cd1e2c05335e6d245fe`
+- Engine receipt: `sha256:dfed7cd5d124ff390399d5adf8b06a01a7edcc102a9e6d0ff59beb201bfd547e`
 - External source IDs: EMBL-EBI-CHEBI-BIOMOLECULAR-BOUNDARY-2026
 - Numerical measurement claimed: `false`

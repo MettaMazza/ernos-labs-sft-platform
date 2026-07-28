@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:555154742ac70136d63a345d0f10ab9c0c161554e1e8014f4b9ba7d52847822c`
-- Independent validation: `sha256:d4b7e5fdc300feba712eba719d137d821e3bf69c7e235835a0281a7832a17eea`
-- Post-seal authority correspondence: `sha256:bcae9c1e255550e984a5e79458201c89f70b0258eba44b7b1903d1bba3cf78d3`
-- External receipt: `sha256:35ceeda6bff041209f8db359a7dfcba8f80dafb726fdce296417f61bf22051e3`
-- Engine receipt: `sha256:779d6b98fcddc660d82e4349746ac115bf9463663074b27bac1a52fba754d2e0`
+- Derivation seal: `sha256:c2f3134a01011470bb48ccf6dabba64710d85cc6a83600a6cc95b8376a28c739`
+- Independent validation: `sha256:b95c45cd41c314814c862b412152b153ff3f233d2b2c7e95dc98cf86d388c003`
+- Post-seal authority correspondence: `sha256:06dd78e0ecf00a0aed91b8f0feed3a8949fd55d1e8a2ed8690423af2585aed9d`
+- External receipt: `sha256:070f7bd92e909d9db61a97e9e7cfeb0ebf834e5fdf943de78057c96bca8c4d3c`
+- Engine receipt: `sha256:ab3ac6d4d72771243c560c5ba63f56c21ecf46425253345f6c8e9a067b33a859`
 - External source IDs: NIST-JOSEPHSON-STANDARD-2026-07-24, NIST-SEMICONDUCTORS-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

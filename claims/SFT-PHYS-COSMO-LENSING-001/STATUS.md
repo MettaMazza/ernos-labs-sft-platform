@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:4fd7675d343fb9d994d603a695eb72260228dba9375314c3532c6cda7cbcb4cf`
-- Independent validation: `sha256:5639b145f3657d0684e93825141f4665d3f89b8805be09b6e4dfba48191298ad`
-- Blind external measurement: `sha256:e8dedb014783ed584746eef77f30aecb9246ff3004ebfd791c247a51910da85c`
-- Measurement receipt: `sha256:53e32cc58a397f1475b947f7f25db97c5eab1c1f964992f7dd5e1e582da7f0b5`
-- Engine receipt: `sha256:463d7041874e0b45a8ccafb32f1ee9fba54c8e733caa8446f52cce2549a07d73`
+- Derivation seal: `sha256:c11cae52e3a2ec2a6d8efe86ccaeac241ae589b1b0176c4738ec3f6c2e1d7a31`
+- Independent validation: `sha256:a753b7187e6c335a85131e859dc66413e9216cefadbcac1a074486ce9f0bc47b`
+- Blind external measurement: `sha256:e786550028a5b83cd92754ba4078f1c137e14cec4529d87a64d007a1f674d1cd`
+- Measurement receipt: `sha256:57f6faa3f4ac43599bfb4cecf25f40c23edb939db795aefaa53950a0189c68ac`
+- Engine receipt: `sha256:c7e4807f21bea4889c3f78cd9c3e02b73375658afd99cc46da93556c3d4e0189`
 - External source IDs: NASA-LAMBDA-2026-07-23

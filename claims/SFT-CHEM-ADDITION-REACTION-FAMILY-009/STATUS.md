@@ -8,5 +8,5 @@ Status: `model_admitted_forced_structural_law_postseal_externally_tested_and_ind
 - Independent holdout: 48 non-USPTO Open Reaction Database payloads containing 131,209 reactions.
 - Blind selected vector: 28/28 favorable, no adverse and no unresolved reactions; 112 exact correspondences.
 - Complete history: all V1--V8 absent, adverse, unresolved and failed-universal investigations remain preserved and did not award closure.
-- Derivation seal: `sha256:70dffa6400875614e742fcbdc8b9b4fd1a410f0b45643953974390792b76799c`
-- Engine receipt: `sha256:888c09144c811eb62792c726c3c0ce9db656513305b34b8262895eb308c039e0`
+- Derivation seal: `sha256:4f0fcdfe3f92bf11281839185946e8d0f1160ac2f647681d6fb1acf392129667`
+- Engine receipt: `sha256:bcc6d8a50dce889570f775f89c2277b832be027ea697f31f1339535e1a42d118`

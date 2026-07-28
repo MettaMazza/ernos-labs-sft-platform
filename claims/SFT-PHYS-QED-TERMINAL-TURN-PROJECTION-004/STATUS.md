@@ -3,7 +3,7 @@
 Status: `independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:f2657ac1f51936321cda999e843ac9e3ce9f1ed73660a101ff8327fb033764e4`
-- Independent validation: `sha256:e58eb683402b1b1280ad28d4d7d1200655e0c425ef68a23356a3f957d8c21a2b`
-- Engine receipt: `sha256:b85f5162d1cf55490a4bc8666fa02b354029ff4a297d9013c61dddd93491629d`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004-b85f5162d1cf5549.json`
+- Derivation seal: `sha256:e2316e4997252c4e35eab98eedfd8670b4975006c6243394e1ad247f8916d2c1`
+- Independent validation: `sha256:aa4101bc767c6d8e1b097dfc8ec49a3aa4064f57d70227e12d0b146d4512e6e6`
+- Engine receipt: `sha256:95e58749591f916244b2fa09fc71e9f8fb13f9db848dc4c2c78ed1d74bd403f0`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-QED-TERMINAL-TURN-PROJECTION-004-95e58749591f9162.json`

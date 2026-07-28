@@ -8,7 +8,7 @@ Status: `model_admitted_observationally_disclosed_empirically_tested_and_indepen
 - Fold support: three axis positions; exactly two forced fibre labels; absence is structural EmptyOne.
 - External vector: 17 IUPAC surfaces retaining general, relative-position, mirror and point-of-ligation/attachment-mode evidence.
 - Adverse/absence evidence: both presented-identity redirects and the absent literal linkage-isomer term are preserved.
-- Derivation seal: `sha256:45ce7ffdbb586ce91114d1399a619c26647bdd8b839be4efd5473da09277b456`
-- Independent validation: `sha256:fc1e6fe626d4972791bbe59f908c899ab125631b1c26fb5e928fefa671253a4a`
-- Empirical validation: `sha256:06c7b5e8af015dad12f5b239df7d7548c2b69fa258221d13297fd45a75ea11d2`
-- Engine receipt: `sha256:450b8e526e0994885a8f14e084f5cb032e68da9bcc9941d39aa08cba70fbc39a`
+- Derivation seal: `sha256:7b94dbb324b286a214c8d91f285507b3838fa522d83208130f66d4cca9a0666e`
+- Independent validation: `sha256:3e65213230b98a933be374fcf46c148662e7f4e551eaeb3a498000b4defb9e77`
+- Empirical validation: `sha256:e2e2d0617c19717952cd046c9c9b88b44215d2fef1c3be0f0746239ded6464af`
+- Engine receipt: `sha256:f10fd2daccd977ff082e2bd425c3a548ce350809e15baf1bd5f529f94a719898`

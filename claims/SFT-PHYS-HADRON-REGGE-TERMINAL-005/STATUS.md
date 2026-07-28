@@ -6,9 +6,9 @@ Status: `empirically_tested_and_independently_replicated`
 - Exact multiplet counts match PDG; strict measured ordering passes; literal equal squared-mass spacing is rejected by the complete registered intervals and retained as adverse evidence.
 - No fitted tension, intercept, residual or selected trajectory subset is admitted.
 - Closure: `depth_independent`
-- Derivation seal: `sha256:36d2f757779c14eda73684e49779c9f46f235f7a66b525805a2d1313d6b22daa`
-- Independent validation: `sha256:b3a82a613b045dea1f1fdeee5551787bb3547b591c6cc1464a27ea0588ba2286`
-- Post-seal empirical validation: `sha256:da1c36bd036f5c8ab81467f12ee9086b3ef35d493e1960a19a609887ee36806a`
-- Measurement receipt: `sha256:0f3e190970773ede50717b7bff036ae1d691887b1d49d3bb134c66a92321a9e9`
-- Engine receipt: `sha256:64caf5f62f3314597b9c525b694005ac4bc81f57446ff7e2dd436bd817646933`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-HADRON-REGGE-TERMINAL-005-64caf5f62f331459.json`
+- Derivation seal: `sha256:467a7cbe4dacc0e1f6fde3a90214820d1ca8d2cc9aedfc23ac9983bc6d6de760`
+- Independent validation: `sha256:2d286df3ce8433fea887ae36d82a9ec2bcd937e5e74f808466c37c35fbb0777e`
+- Post-seal empirical validation: `sha256:41b2181924a6893266bd4dff6210830833f7d4d5c2b5a8b90a85ae3ee0b18821`
+- Measurement receipt: `sha256:f43ce49f3e2ad612efbbd2f3036bbbceb1383e70920b098f8904946f25e709e5`
+- Engine receipt: `sha256:66bc011c6612641467f7deb8554279abbc55311f86f34efab51ac3fa2f718b29`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-HADRON-REGGE-TERMINAL-005-66bc011c66126414.json`

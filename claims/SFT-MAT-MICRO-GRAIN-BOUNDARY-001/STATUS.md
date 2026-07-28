@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:e514b24f767337ca53e38189e80c4ba8a8acb74613b672b8a5fcfdd042ab9144`
-- Independent validation: `sha256:834416d05874d2011eb1ffd3f172e77f75eb414b9ab7d09635a4ac2362a0ea45`
-- Post-seal authority correspondence: `sha256:db61a7d6a0f2d4f932107505d4ce4551d79e5139bf4aabb45252e82265b5f1cf`
-- External receipt: `sha256:28bae4d3ddb832f965a34d4a5f50d64ca9a7d2818cc04cfe3ecedd3f53bc3c7d`
-- Engine receipt: `sha256:ac7a66efd3aedc5341c9fbbd7d72a278c5f2e9e3420f3ac6c5d121b9af1505fb`
+- Derivation seal: `sha256:e1370c5024a6111172c73fec1dd8f4fabec5fbec3d8c0fff6263aee0021a7170`
+- Independent validation: `sha256:2bcf33d4c948d3379dccbe4398629462143cf82679e7362283ce939e89a4b055`
+- Post-seal authority correspondence: `sha256:bf12136c7bf55f85e865efa176c03ce57283eb15ffe7c23e4f2f65f677c592c7`
+- External receipt: `sha256:429363c3064a605f5cc547a6cccea9a974fa3f4d7cead39cff861f0f291cf6ab`
+- Engine receipt: `sha256:97779d2048b92fda5a2968a339e3b2359a2bb5389563cda49f5cdda6aacc404e`
 - External source IDs: NIST-TEXTURE-PHASE-FRACTION-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

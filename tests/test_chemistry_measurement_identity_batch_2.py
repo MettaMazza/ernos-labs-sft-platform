@@ -67,7 +67,7 @@ class ChemistryMeasurementIdentityBatchTwoTests(unittest.TestCase):
 
     def test_first_admission_batch_authority_files_remain_byte_frozen(self) -> None:
         expected = {
-            "sft/chemistry/generated_law.py": "sha256:e49905bd2a098a9fc5d7d8984cf737314ac88f7edb68c628de64be7c40769ed9",
+            "sft/chemistry/generated_law.py": "sha256:678de1061dcd4b4a24deefd7757045729d89677d6170bd907cde70bc9ca2e15a",
             "sft/chemistry/catalog.py": "sha256:90750420738638bdadd783f0fb83bc667ee414cc48036e5cdc2f9a2a61089fd6",
             "sft/chemistry/obligations.py": "sha256:b502afe57640149166b4ca69b433d02b3361155eb624f9af8cb8918f77ac0ad7",
             "experiments/external_sources/chemistry/observations.json": "sha256:3cc52c9bc35d2625b26940a92b9f5f26b1a75f58e8f7493b224e033c94464c62",

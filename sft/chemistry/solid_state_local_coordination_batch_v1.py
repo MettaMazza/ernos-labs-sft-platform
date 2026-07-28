@@ -16,19 +16,19 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_INORG_004_017_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:4624c5ac9ae4981e1c4ad424e2bcfdb9ba0c43ddcdaabbd16bc84a30487ae7d1"
+FAMILY_BOUNDARY_HASH = "sha256:87998e9fa168d82dd80c28abc9910502bfb23da0c26cb6b1ecedfb88142642bc"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 LAW_PATH = "sft/chemistry/solid_state_local_coordination_law_v1.py"
 LAW_HASH = "sha256:1ee8b5093a3de3b75513173181b73960498069174f5170f9c32217c36f8642f7"
 IDENTITY_PATH = "experiments/external_sources/chemistry/inorg_015_target_identities_v1.json"
-IDENTITY_HASH = "sha256:722ac10d9508014abddb474ce7db24dba5386a9e41127d2454c6eb87e88feb37"
+IDENTITY_HASH = "sha256:a8888f42fb182bf845784b442c5eaa07c4a4899f2ce3d53ae363b5a977dbfdf6"
 TARGET_PATH = "experiments/external_sources/chemistry/inorg_015_withheld_targets_v1.json"
-TARGET_HASH = "sha256:fd4d9b5e23f04b5b5fb640ecbae16a621fb6e9bb2ce955ae6cce657875d3adf9"
+TARGET_HASH = "sha256:db016fbc60b05d6da7db32c1f12a6b7d1a903ce6bb8ceef71a3fd5e2c550ac49"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/inorg-015-primary-records-v1.json"
-PRIMARY_HASH = "sha256:bf144dcc0c25542cc34b936ef19d11720330c0b868708de5242348c8d27313d0"
+PRIMARY_HASH = "sha256:b80128c6cb2e5fbe0c566dd8b77f4cbee8fde5d8e8941e104347c0ba60065dc8"
 
 for path, expected_hash in (
     (FAMILY_BOUNDARY_PATH, FAMILY_BOUNDARY_HASH),

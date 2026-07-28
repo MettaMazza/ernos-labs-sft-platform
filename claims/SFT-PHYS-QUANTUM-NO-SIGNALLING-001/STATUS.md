@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:74316a1ebb4a384bf4ea3fd4122b4f47673c690dc609d9de48750c88c8c25bbc`
-- Independent validation: `sha256:e7f1bb01eb155da13830bf10b3d0d0494a9aac0e343141440f3ca19d5bd4fc79`
-- Blind external measurement: `sha256:173268462d4ff03fc8b60527fcf3a464e24cda0ac2a7dc90e9c654901931c602`
-- Measurement receipt: `sha256:450eab3defda05b7ad82cccc90bbe07e93564b75c6117d69cf907932c4348215`
-- Engine receipt: `sha256:984ce2195db3fdf46ca0370f06565f79c7f1469bdf581f7c2ba99020827cd2fc`
+- Derivation seal: `sha256:915ce209b0e2abb4bec9de3b99baf53a9a1ee7af21c6e6c3776473bd170b10e0`
+- Independent validation: `sha256:e8bd5500d02d2d206d27ec0fbfb640ed52ecf18520965dce4a7538496ef12e46`
+- Blind external measurement: `sha256:39d13f24691a7fc2d84a88f7b73ea0b025713e3a42d46c0e934d629545687b5a`
+- Measurement receipt: `sha256:def6e2a60f4e4a3ba525bd88165ba9e76ba934e44724275fcd3eba0bb9924e28`
+- Engine receipt: `sha256:d1fac775f55470f3ddf961e678135bedf89fbe2b80e00aaf162180fe911429cb`
 - External source IDs: CERN-OPEN-DATA-DATASET-API-2026-07-23

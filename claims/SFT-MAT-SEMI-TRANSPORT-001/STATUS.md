@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:fcd13ccc157a4adf9d8bd511d17f75266e4d4514d3c5a8008bb2c4a9fe2e2a2c`
-- Independent validation: `sha256:07cc521721d714dd3db3311e20236df3c3daf59ff0064523b530398b1e8f4db1`
-- Post-seal authority correspondence: `sha256:6b0761d0b8abf30d604d8cd0c0d8fc0bca015f1b61338f43fd2910a8b178aa52`
-- External receipt: `sha256:8b454ccd9aee42a77be377617c292db6ea57bd02cbebae033513adf4e802cf3f`
-- Engine receipt: `sha256:7a9e1a097ec9c3c48321750ba1f42b728a9bec278024122acdb49c71d1bfeceb`
+- Derivation seal: `sha256:d15198fc406742f471508db0785f5c604c9bf0e600d4376de64918412118fc34`
+- Independent validation: `sha256:b613de5dcc6816145c07c6c244429843f0dd9ca78f6ddb4cdf9dc44ef2367309`
+- Post-seal authority correspondence: `sha256:f58b065df24b7072e4114e688461c47f76e86e9782f9d9a4012465ed7c6601fb`
+- External receipt: `sha256:15a4b8a07c8364182d1f135b748af5b2bffdb29bdf55bd61e6a5c145e755d7f4`
+- Engine receipt: `sha256:b53d46b71c00244ede38457846ac2592276922367ced522052f68e98c03c3e18`
 - External source IDs: NIST-TRANSPORT-THERMOELECTRIC-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

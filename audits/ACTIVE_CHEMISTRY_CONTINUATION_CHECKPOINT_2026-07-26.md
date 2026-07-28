@@ -2,6 +2,23 @@
 
 Date: 2026-07-27
 
+## Authorized snapshot-type correction and complete clean re-admission
+
+- The complete pre-correction Chemistry authority surface is preserved at `audits/archives/chemistry_pre_readmission_2026-07-27/chemistry_pre_readmission_authority_surface.zip`, SHA-256 `sha256:2fc47a76ca94500af5b647a1cf37d5254b82ccc1f4c50b6b1779387a0538f05c`.
+- Five IUPAC captures containing HTML were corrected from the false `.json` filename extension to `.html`; all five source byte hashes are unchanged.
+- All 176 Chemistry claims were rerun in the original registered dependency order and cleanly re-admitted through the untouched canonical engine.
+- Result: 176 of 176 model-admitted; 111 receipt identities changed solely through corrected path/provenance sealing; 65 remained identical; all 176 non-hash scientific payloads remained invariant; every old receipt remains preserved.
+- Migration receipt: `audits/CHEMISTRY_CLEAN_READMISSION_2026-07-27.json`.
+- Current latest Chemistry receipt: `SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011`, `sha256:905bd55a18ffe29d8484ad273fe9a6245121b3bf0b56f0166dd45fda91b3bdca`, at `receipts/engine/model_admitted/SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011-905bd55a18ffe29d.json`.
+- Current latest derivation seal: `sha256:296499f3dbb6ff45080a42248436d0ce1f98111f3fb7265ac45365cf41e558bd`; external validation `sha256:b338c57430bd37519f1f37df53b80574d3fec6d8e0ea28d8df81b4b54087a444`; empirical validation `sha256:60b3fbb38ec94a826956c89e68778cccebee595aed503b8cbdbce99beb4a3bcb`; measurement receipt `sha256:9faa4e295cc942e60e57cc63493498e8a9969bb226e49b2d9e8bf63316c588a8`.
+- Canonical engine and verification-authority seals pass after re-admission. Repository validation passes. Claim-package/receipt/census consistency is 176 of 176.
+- After explicit authorization, the dependent byte-identity fixtures were updated to the hashes produced by the valid clean re-admission. The focused Chemistry suite now passes 192 of 192 tests. Only expected file identities changed: no engine, verifier, admission condition, scientific payload or authority seal was changed.
+- The repository-wide replay then exposed 284 pre-existing stale source-manifest receipt identities outside the corrected Chemistry set. All 284 were archived and cleanly re-admitted through the untouched engine; every non-hash scientific payload remained invariant and every old receipt remains preserved. Audit: `audits/STALE_SOURCE_MANIFEST_CLEAN_READMISSION_2026-07-27.json`, SHA-256 `sha256:d88f75d2499bf50ea90fa035db35f254ce6d2b5d6fac9677916c2babf668c951`.
+- The two immutable Physics Grand Locks retain their original frozen validators and inputs. Two hundred refreshed certificates referenced by those historical locks are preserved under versioned certificate names, while their historical canonical certificates were restored byte-for-byte. Audit: `audits/PHYSICS_GRAND_LOCK_HISTORICAL_CERTIFICATE_PRESERVATION_2026-07-27.json`, SHA-256 `sha256:6685741b81e1eda7c830ac7b16f14fe8b36e52e77e447f61158f81f7e71e0371`.
+- Final one-command verification passes: repository integrity; 721 empirical claims; 114 of 114 formal Physics claims reaching measurement; 944 of 944 unit/E2E tests; 1,264 of 1,264 core executable lines; 1,029 of 1,029 registered derivation replays; and five exact live NIST/CODATA checks.
+- Final canonical engine seal: `sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`. Final verification-authority seal: `sha256:bf810a190b504f0f874a778a52e23251904b17b40a7364135e74b34e8ba0c3b8`.
+- Next exact operation remains `SFT-CHEM-OBL-ORG-012` when Chemistry resumes. The Consciousness foundation work that was already complete and staged before this correction remains the active cross-branch deliverable.
+
 ## Immutable newest evidence — ORG-011 admitted through the untouched engine
 
 - Latest Chemistry admission: `SFT-CHEM-REARRANGEMENT-REACTION-FAMILY-011`

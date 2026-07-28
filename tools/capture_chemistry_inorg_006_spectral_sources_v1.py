@@ -21,7 +21,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 SPEC = ROOT / "experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v1.json"
-SPEC_HASH = "sha256:7c3e63016b4f52a0cf2a84b8076ac954ba61649580d2459ed826e40a5aff0693"
+SPEC_HASH = "sha256:62da50e877530e09cd7f5f97b671ce2e927573fa4e59bc6799d8ceb3c1cbb7b1"
 SNAPSHOT = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v1"
 INVENTORY = SNAPSHOT / "source-inventory-v1.json"
 

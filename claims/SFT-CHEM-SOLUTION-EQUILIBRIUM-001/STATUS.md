@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:dbf569566576f95f51a09112cb46de35d86bc76ee5e6b0eefe1c41edd9b87a8d`
-- Independent validation: `sha256:285f027c0ee4d166d12027761c3ac52d0f033fdf7f8e575f636324ec6ec138e3`
-- Post-seal authoritative correspondence: `sha256:37417706e059873afb2f0ce6b42c19164259c4dee15e5cfc4b416c3d9b44c09f`
-- External receipt: `sha256:e05637d5d7eb545895db3b52bea9e512eb68bd36a6a08dae932dd29b33c18ebf`
-- Engine receipt: `sha256:bf4b6867d9bdc697d9105e06e2774b8634ccc97bf843faf21b1ad37e6ddea9f6`
+- Derivation seal: `sha256:413c129d443db2c75e3295c1cf4064d2b539b34a9c572953bb16bdfc84bd3f9c`
+- Independent validation: `sha256:37ac7bd4173f9d2242dccbf5f55da1d0992b9076c50253ebbf331710d733f3fc`
+- Post-seal authoritative correspondence: `sha256:4dac19d825e967b9b44ae90328fb9f50c0b5728747527f5ef51ef40c1458b87f`
+- External receipt: `sha256:c353e0ed8bafb35d69641666fce1fc3487dec610707067ae9c1a5c5dcb3673d0`
+- Engine receipt: `sha256:7e7c23b23d756d5bb9ec8d828b0920427adec44e83aefcce24fcba1335b446d3`
 - External source IDs: IUPAC-GOLD-BOOK-SOLUTION-EQUILIBRIUM-COMPOSITE-2026
 - Numerical measurement claimed: `false`

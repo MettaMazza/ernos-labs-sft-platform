@@ -8,7 +8,7 @@ Status: `model_admitted_observationally_disclosed_empirically_tested_and_indepen
 - Forced ranks: space 3; boundary 2.
 - External vector: positive incidence counts 2–6 and exact point-group inscriptions C2v, D3h, Td, D3h and Oh.
 - Adverse evidence: all four original routes that returned formaldehyde are preserved.
-- Derivation seal: `sha256:98a658d9ed19aa90838f82bdaed78375ac692bd9141aa87e7ad19d2805941f13`
-- Independent validation: `sha256:6acc2f0e49571c8251fe6e24ce6415902b3f35f96065978197437bf7c2a22f17`
-- Empirical validation: `sha256:489973125ce1cc79cc2affa16f92acd360c4a04798626e7fd57a7977b9f808b1`
-- Engine receipt: `sha256:827997385ba7fbfe0d6ddeedc9475ed51b39b3bd89595ce6194584e963383678`
+- Derivation seal: `sha256:2e2b045ae41e97402b7ba4bee09d7474c530c34b01996c94a8f9be689e72aa71`
+- Independent validation: `sha256:1e8f6199a34880b0ab7b78728863de081f8361d04d7d1e31f4ba2e7ca4efe031`
+- Empirical validation: `sha256:353c302ab28d3b570a9aac41879ed8370cf30bf4c63d256b8a57650dc0f999e3`
+- Engine receipt: `sha256:bc7f8d5d5235f114984798515944893fc3be3c17a229192cb6e12728ce9d459a`

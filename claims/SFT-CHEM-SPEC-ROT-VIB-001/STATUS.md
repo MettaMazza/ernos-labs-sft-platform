@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:214611a96dc7ce7ed35126a179a111b50b66db259a3ac7be747818b07e920aef`
-- Independent validation: `sha256:d184133bed088a2864cb839289022239ee561c40235a83dd2e4d4d026f95c7e5`
-- Post-seal authoritative correspondence: `sha256:6e5b5994425799fb11bed90270db138170775d0e10412ae47cd19fdfb829b2ae`
-- External receipt: `sha256:9e6705743272cc7a980dbff088a552cc9fa032666221bce0201399ba9c83dc25`
-- Engine receipt: `sha256:c3ab121f56b37e99216f98fd7435428eee357b453bfda395ce375032e8de808f`
+- Derivation seal: `sha256:dcc35fda03d67c27218e9ea3cc7957c6fee858ca7fb07a5b8f46cf39a1d111fa`
+- Independent validation: `sha256:dd26ee4f0c3b07a0ade826d75c164ed243d6e8a2e6aa81eabc2b6c4851f3295f`
+- Post-seal authoritative correspondence: `sha256:af9b74ac34ae3ee05c79d44d5eec848774da635587b0e326ad1cc2a383797638`
+- External receipt: `sha256:59a8c57f7fb1a5825682542c80a5ca0f21dde5d8e1ac8596ab931b577c68988b`
+- Engine receipt: `sha256:20367bb1fe68cb5795f63f6d62da369e7cfc5295098f621cc6736c7fd3075e3d`
 - External source IDs: IUPAC-GOLD-BOOK-ROTATION-VIBRATION-COMPOSITE-2026
 - Numerical measurement claimed: `false`

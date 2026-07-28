@@ -17,21 +17,21 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_INORG_004_017_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:4624c5ac9ae4981e1c4ad424e2bcfdb9ba0c43ddcdaabbd16bc84a30487ae7d1"
+FAMILY_BOUNDARY_HASH = "sha256:87998e9fa168d82dd80c28abc9910502bfb23da0c26cb6b1ecedfb88142642bc"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 CORRECTION_PATH = "experiments/external_sources/chemistry/inorg_004_geometry_identity_correction_v1.json"
-CORRECTION_HASH = "sha256:250c45d33906ecc5f02a318e458b30ba34e81f3fc5cae5da04d841d30dc7e4eb"
+CORRECTION_HASH = "sha256:172d67b1a9854dd3ee3114cede27e047ed9a5b209d5ca0061ecc3b408066aeac"
 CORRECTION_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-geometry-correction-v1/source-inventory-v1.json"
-CORRECTION_INVENTORY_HASH = "sha256:a8fa6ef0e5e25664bf4932fd43097ec4b9e9ee5783dcaafe32e702a9ae82fa73"
+CORRECTION_INVENTORY_HASH = "sha256:86ea1c59187bcdd11efbee59e583ff4ad054acbea8a4c08391642b495ff340e6"
 IDENTITY_PATH = "experiments/external_sources/chemistry/coordination_geometry_target_identities_v1.json"
-IDENTITY_HASH = "sha256:a53997749ddbf807e9371350bcc13a86f419001f16a2511671795839abb792ee"
+IDENTITY_HASH = "sha256:8b93d120cebb9b4c26015f566fbbccdd6a04804e94e69b55264bf779ecd2554c"
 TARGET_PATH = "experiments/external_sources/chemistry/coordination_geometry_withheld_targets_v1.json"
-TARGET_HASH = "sha256:b0ea506c3fa1da5b8a00475d6aedf100084313bdf5fa90b872d727d2dbefda06"
+TARGET_HASH = "sha256:f6b8973e11f38846c4ea8201d3663a1d30c8c4f904d1ac59bc7ebf2c93c9fa6e"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-geometry-correction-v1/coordination-geometry-primary-records-v1.json"
-PRIMARY_HASH = "sha256:8999d4880febc3f10787de16f3deb80f0016ef91a31050f58664c5cc670a9c18"
+PRIMARY_HASH = "sha256:22f81454a3c0213a58d724df7da14741dd93737f94bda873d144bf43eecb499d"
 
 SOURCE_FILES = (
     ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-c01332.json", "sha256:6d775b62304a84679076a7aa8b8eb537b2816c99598b6075b42f510a7142dd72"),

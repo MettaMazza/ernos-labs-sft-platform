@@ -4,9 +4,9 @@ Status: `empirically_tested_and_independently_replicated`
 
 - Provenance: `observational_derivation`
 - Closure: `depth_independent`
-- Derivation seal: `sha256:67668cac8068a8186be11f4c617ae4bb504f4c08f0b9b4b0f265863f7e6d4c13`
-- Independent validation: `sha256:fb52c027008664ad6b0684437f449f3c5daf6d70397d4302eeff36e55a4d1b32`
-- Blind within-run target release: `sha256:63ebdda8d0667627c3a7ece5e018c0def2e0bab906e49bf8ff4d9d0f247af74c`
-- Measurement receipt: `sha256:8eb2337c426dc25c6c9cb35803b78804dc2ab707f729dba7139fa5f8c37bd26c`
-- Engine receipt: `sha256:21ba6f25f064602267b8e415ceb3ed6f985e318a3b29e7c8626b1cc71ea4c7cc`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004-21ba6f25f0646022.json`
+- Derivation seal: `sha256:9d3afbb1a889bd0528310f9b755d753bb0928a4cdb9203f2423e5be768105d3c`
+- Independent validation: `sha256:0cd155c0799377a073850c428bfb1c416035594b6f020b1e7540300a8aed5b37`
+- Blind within-run target release: `sha256:8f80b514031b4a572840a540a369242d71719e5359dfdf48d447fdb5d22b1328`
+- Measurement receipt: `sha256:21c5eaf6456549ce5c2f0d6bdb40ec676ec6349ae70a188d39ac76426563d1c3`
+- Engine receipt: `sha256:e5bd6eede834a53c25e7b33a41c4bf83a8eeb439e5a89de8fe87f8fd0997680a`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-MATTER-BARYON-PHOTON-TERMINAL-004-e5bd6eede834a53c.json`

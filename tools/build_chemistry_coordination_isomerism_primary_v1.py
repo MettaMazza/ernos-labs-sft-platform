@@ -21,7 +21,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 IDENTITIES = ROOT / "experiments/external_sources/chemistry/coordination_isomerism_target_identities_v2.json"
-IDENTITIES_HASH = "sha256:7264542ef42da0fab309f6fd94cc1d7560202767417784bd8b92a1744957bd95"
+IDENTITIES_HASH = "sha256:60a107df040a81774fd312354a36710c7455d6175495c5c300ec83382a0033d1"
 TARGETS = ROOT / "experiments/external_sources/chemistry/coordination_isomerism_withheld_targets_v1.json"
 PRIMARY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1/coordination-isomerism-primary-records-v1.json"
 

@@ -22,7 +22,7 @@ IDENTITY_HASH = "sha256:7f148f0b99d0939aefb6023521d697dc00386a0de2f7a328d6b12203
 PREDICTION = ROOT / "experiments/sealed_predictions/chemistry_org_005_conformer_generation_equivalence_pre_source.json"
 PREDICTION_PAYLOAD_HASH = "sha256:1af4780a78bb418650ac93f057ca51b907333213a51cb00a0307699d22fff6ff"
 FAMILY_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:8b35e1f37dbf80713c47404d946a320da8d7011deaa5dbee7fe8393b58793cee"
+FAMILY_INVENTORY_HASH = "sha256:d542adb23900f765fcd0205afae8a666813af160881bb70b0676637b090b4acc"
 TARGET = ROOT / "experiments/external_sources/chemistry/org_005_withheld_targets_v1.json"
 PRIMARY = ROOT / "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/org-005-primary-records-v1.json"
 

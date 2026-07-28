@@ -17,11 +17,11 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_ORG_001_016_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:00ed97e8dec313d65d2b9f6af595e3e3787a99aa60b86814f1a00f318abf011e"
+FAMILY_BOUNDARY_HASH = "sha256:ccbc91e9873a84f31b50670c9a8f063ee6a6096d3dd216b5e7c3bf86521681b2"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/org_001_016_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:12c6822a695eb7135081ef8d044a3136c2fee2b0d486c9164b1f1166ef087381"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:8b35e1f37dbf80713c47404d946a320da8d7011deaa5dbee7fe8393b58793cee"
+FAMILY_INVENTORY_HASH = "sha256:d542adb23900f765fcd0205afae8a666813af160881bb70b0676637b090b4acc"
 BLIND_IDENTITY_PATH = "experiments/external_sources/chemistry/org_003_blind_cccbdb_source_identity_addendum_v1.json"
 BLIND_IDENTITY_HASH = "sha256:3a9fa45288af2a49cab7a1ad297d1e673640dfb31e27c8734658d5f12e98d5b0"
 BLIND_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/org-003-blind-cccbdb-v1/source-inventory-v1.json"

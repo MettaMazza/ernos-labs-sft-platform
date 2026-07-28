@@ -9,7 +9,7 @@ Status: `model_admitted_forward_forced_empirically_tested_and_independently_repl
 - Forced high state: one lower pair, two lower singles, two upper singles, spin width `5`, crossings `2`.
 - Exact order: high-before-low, crossover coincidence, low-before-high.
 - External vector: `1016/5 pm, 115 K, 1A1, low-spin` to `2199/10 pm, 227 K, 5T2, high-spin`; registered transport mismatch preserved.
-- Derivation seal: `sha256:0c41c370773323a7ad2d9c2588448bcfe0b64695735d677906a55bd1c4f93dd0`
-- Independent validation: `sha256:611b3d26137716a55341512474b1d044cb57e8f8b48fc3fc7a980f412a458def`
-- Empirical validation: `sha256:69fddc8f878edb96d4aa3e5ade2e2f532408e86b5e2c649d37bf14eedfaa34e1`
-- Engine receipt: `sha256:e9825faa5196f16d37dedf79f5c5098081018b95423e2d2c9de1cd2f3013c29f`
+- Derivation seal: `sha256:b2cc403ba3b72ababc2a5f15a219a28993685d1bb46e6a55526c372f6a996069`
+- Independent validation: `sha256:d3a60593dd5ec6b3634e898fba17a3f2475d9b702b7b2980bb8173dd25afb6e0`
+- Empirical validation: `sha256:955a28dc21785995e5d354fb2f9abf7b24555ebcfa9cc63c2f72ff96bc6ac842`
+- Engine receipt: `sha256:86e888fefab0bd9d8e195edeaf51cf5ec7e9822c849f49afbb0acbb6f4068c3a`

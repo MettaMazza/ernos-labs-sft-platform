@@ -21,7 +21,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 SPEC = ROOT / "experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v2.json"
-SPEC_HASH = "sha256:fa25c3d9d170254de760bc3778af9dd89793b902729ca0314bc0ececa08ff7e8"
+SPEC_HASH = "sha256:9a6e465a48e4e423fd4665318ae03812e1de8aad611f6c47c01dd8a283bca23a"
 LAW = ROOT / "sft/chemistry/ligand_state_splitting_law_v1.py"
 LAW_HASH = "sha256:b1d1350aff301a5cb2e58471e00021897dedc3a771660f574dbbe54ef8038079"
 SNAPSHOT = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v2"

@@ -4,6 +4,6 @@ Status: `independently_replicated`
 
 - Closure: `depth_independent`
 - Empirical status: formal invariant closed; measurement validation remains separate
-- Derivation seal: `sha256:f7852dece1ada6b22875ee694a35d8ffd9684c8c78d7184f762f86de35f99420`
-- Independent validation: `sha256:1092d58c7305f5ba8787b449888ceaaf7294355ec8a88de3e52558e39577f2e2`
-- Engine receipt: `sha256:d45737a631dbf57c19fb433817cdb6e443f9a6e598f7d0cbb469d47819ee3ae2`
+- Derivation seal: `sha256:89abdd07154010449d95f2aef0031768452baa7172780ee8a183cb3bd8521823`
+- Independent validation: `sha256:122e49fdc688788f76eafcb7c7da904446abdc4ac2f45284f7cd1c39f18d9abd`
+- Engine receipt: `sha256:9c7202057f7735d46e9b355f8611e63e9043d99b1a3ced16cadb6a468d09e598`

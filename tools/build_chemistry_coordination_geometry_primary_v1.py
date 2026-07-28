@@ -19,7 +19,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 IDENTITIES = ROOT / "experiments/external_sources/chemistry/coordination_geometry_target_identities_v1.json"
-IDENTITIES_HASH = "sha256:a53997749ddbf807e9371350bcc13a86f419001f16a2511671795839abb792ee"
+IDENTITIES_HASH = "sha256:8b93d120cebb9b4c26015f566fbbccdd6a04804e94e69b55264bf779ecd2554c"
 CORRECTION = ROOT / "experiments/external_sources/chemistry/inorg_004_geometry_identity_correction_v1.json"
 TARGETS = ROOT / "experiments/external_sources/chemistry/coordination_geometry_withheld_targets_v1.json"
 PRIMARY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-geometry-correction-v1/coordination-geometry-primary-records-v1.json"

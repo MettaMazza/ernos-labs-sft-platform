@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:0436ccab8b956bf9b4ff8dd85553679f27286fdaa52750759d8164f019c258a5`
-- Independent validation: `sha256:fee7d362ca3bf1c92f3c4b6446b3f575b487959c41e54737a5176ccfd4cbde4d`
-- Blind external measurement: `sha256:8c7e559f057c9378e631a19da8f7ac4d999c223aee5e3673ab8260e1014bbcbd`
-- Measurement receipt: `sha256:25a77549a95884a6c8b2f2f636f8d2521bdf5c406b96c298326e7b5fc772a502`
-- Engine receipt: `sha256:7abc9b68655deb7986f0846887236bae69f14d4d6656d2ed71c388d0f889c52d`
+- Derivation seal: `sha256:def43752e829b2bbf25eae2e3e4df1497ad1c5e343b13964456585ab5d633158`
+- Independent validation: `sha256:6f453111ec6cc349180d4e844817a20fd86c054c27a295ff2d8419e1a4c24b8f`
+- Blind external measurement: `sha256:ad5522d2cf676c784fcbc933b8df5ea99e9f9e5617d964ef2ea517fbb705c4c1`
+- Measurement receipt: `sha256:7886166e1883b3ee28f30e03150d01264e0fd2ee3efff776f66e8e0f5987f228`
+- Engine receipt: `sha256:3b1a314d1646e9db9d8213fc14565e9b9dac7cf9cd024251f89cb1cbf6420266`
 - External source IDs: GWOSC-V2-CATALOGS-2026-07-23

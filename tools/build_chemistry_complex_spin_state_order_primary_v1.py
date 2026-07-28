@@ -22,7 +22,7 @@ from sft.engine.source import hash_file  # noqa: E402
 LAW_PATH = "sft/chemistry/complex_spin_state_order_law_v1.py"
 LAW_HASH = "sha256:279e1e175fbbd6588dfd113d2a708d08c9970c2f9487387dc184976107329ba7"
 IDENTITY_PATH = "experiments/external_sources/chemistry/complex_spin_state_order_target_identities_v1.json"
-IDENTITY_HASH = "sha256:3a5f86a530064c5eff6e567565abd36e9c831491a5761ee94b51bab1b2d6e098"
+IDENTITY_HASH = "sha256:0bac4d73f7add7f9dd93a42b59da32b783225a2b34e92015e31b0c9cdaf06a79"
 TARGET_PATH = "experiments/external_sources/chemistry/complex_spin_state_order_withheld_targets_v1.json"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/complex-spin-state-order-primary-records-v1.json"
 

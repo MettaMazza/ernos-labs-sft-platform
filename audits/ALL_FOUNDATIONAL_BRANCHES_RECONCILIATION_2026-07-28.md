@@ -1,7 +1,7 @@
 # All foundational branches — reconciliation record
 
 Date: 28 July 2026  
-Status: all fifteen foundations are current-evidence complete and extension-open; the single heavy verification run is pending.
+Status: all fifteen foundations are current-evidence complete and extension-open; the single heavy verification run passed.
 
 The ordered live corpus contains 1,319 model-admitted claims. Every registered
 branch now has a complete dated foundation, a branch-specific review of all 763
@@ -30,14 +30,35 @@ Neither was modified.
 - Social and Collective Systems: `25e19847`
 - Engineering Translation: `ceedffab`
 
-## Final verification boundary
+## Final verification result
 
-The heavy command remains `python3 -m sft verify-all` and has not been run early.
-Preflight exposed one historical test file whose six assertions still require
-Physics to contain 285 claims and remain blocked from publication. The current
-sealed and published Physics v1.1 surface contains 349 claims and complete
-488/488 atomic ownership. That mismatch is preserved as a halt. No test,
-verifier, engine byte or authority seal has been edited to hide it.
+The heavy command remained `python3 -m sft verify-all` and was run exactly once
+after reconciliation. It passed at 2026-07-28 08:50:31 UTC after 4,753.740
+seconds. The untouched engine independently replayed 1,319/1,319 derivations;
+969/969 unit and end-to-end tests passed; core-engine coverage was
+1,264/1,264 executable lines; the measurement audit covered 1,011 empirical
+claims and confirmed 114/114 formal Physics claims reach measurement; and all
+5/5 live exact NIST/CODATA checks passed. The terminal result was
+`SFT COMPLETE VERIFICATION: PASS`.
+
+The complete timed record is
+`audits/FULL_VERIFICATION_RUNTIME_2026-07-28_FOUNDATIONS_1319.json`.
+
+Two exact authoritative Chemistry captures used by the successful local replay
+are larger than the ordinary GitHub per-file boundary:
+`kin-010-catalytic-turnover-v1/supplementary-data.zip` (439.42 MiB) and
+`org-009-localmapper-blind-v5/remapped_USPTO_FULL.csv` (407.36 MiB). Their
+local bytes and registered hashes remain intact, but they are not placed in the
+ordinary Git integration commit. Before any remote publication, they require
+an explicitly authorized evidence-asset distribution route that preserves the
+same checked bytes without changing the engine, validation law, claim source
+or receipt. This is a distribution boundary, not a scientific admission gap.
+
+Before the final run, preflight exposed one historical test file whose six
+assertions still required Physics to contain 285 claims and remain blocked from
+publication. The current sealed and published Physics v1.1 surface contains 349
+claims and complete 488/488 atomic ownership. That mismatch was preserved as a
+halt until specifically resolved; it was never bypassed.
 
 Git provenance makes the mismatch exact. Commit `27fab0ce` introduced the
 285-claim blocked-state expectations on 25 July. Commit `b48c3960` completed and

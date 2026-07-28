@@ -7,9 +7,9 @@ Status: `empirically_tested_and_independently_replicated`
 - Exact deterministic survival: `1/2^k` for every positive finite half-life count `k`.
 - Complete NUBASE2020 boundary: 5,843 state rows; 5,500 decay rows; 8,718 entries; 50 codes; 4,700 positive numeric half-lives.
 - Closure: `depth_independent`
-- Derivation seal: `sha256:4802ac50dd4d14b7c8cac7ea4c1a37eee8dbcaa9a146833ae0e90757249a3221`
-- Independent validation: `sha256:d8928f7a90ca122f82dc52989b8a875608885bf59434da13c1cbd54e65e21ec3`
-- Post-seal empirical validation: `sha256:bdf6efb3d44f289cfd9c57212f7b2e033af0e8c45bc45d5cca81f483f964cfe1`
-- Measurement receipt: `sha256:16638308ef6939c5af8ad447616bb50bd0a385b4939423526b95286e53e55a73`
-- Engine receipt: `sha256:83e9d821fef3a3c8d4717545ca5109a1a8e7849c433b55ce5c47a17f4ac845f4`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-83e9d821fef3a3c8.json`
+- Derivation seal: `sha256:91e20a1a06c5090effcee4cb0efe8e2d85b69ac897a88f47bb5ea588e4f68c61`
+- Independent validation: `sha256:31c8caa9ffe5620c3940cdf8579a32a8cc4dca5544e54a2daf0bffe567f7de08`
+- Post-seal empirical validation: `sha256:5c82afb9c9c769013e4ca908559618a46160a317c5672ee235a43c9058f6148c`
+- Measurement receipt: `sha256:aaa3a2c9ebffb428bcf48ae68fc5469b7ef29194c72418fbfddc12bfed40108f`
+- Engine receipt: `sha256:6c9903242fbe62385d16d103f5d7b27a214f4e6d1e2adbeec47f845daf62363f`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-RADIOACTIVE-DECAY-TERMINAL-005-6c9903242fbe6238.json`

@@ -8,9 +8,9 @@ Status: `empirically_tested_and_independently_replicated`
 - AME2020 value: `8794.5555 +/- 0.0069 keV per nucleon`; its lower endpoint exceeds every rival upper endpoint.
 - All 2,548 positive composite rows and both singleton empty-binding boundary rows are retained.
 - Closure: `depth_independent`
-- Derivation seal: `sha256:92bbc440b513a0b6a735f8fb84734ae90b49ba302a3e57a8ff0f9afbcecd4a51`
-- Independent validation: `sha256:209da4fec36c3294a70435456379bde2a65ed0f8115ee3e833da1eb351b702fe`
-- Post-seal empirical validation: `sha256:2bb993c08bfae9dc917121d46bc3defd7689fd9c50922614c044e287d7769308`
-- Measurement receipt: `sha256:3330a4b8df04fbeb9c633deb13ee4bf75167d025ba048136c1ff2ac2c862c99b`
-- Engine receipt: `sha256:0f08011755d14b3c910034436a4560016125b467a28b35b01b6b6fe02364024d`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-0f08011755d14b3c.json`
+- Derivation seal: `sha256:52b045b235c55325dd947ece9092ee10b90faaeda53a9bd6f01cbbb60023b1bf`
+- Independent validation: `sha256:43e840827408a7c49a848af7f82095afd54f2abaac48e57c0afd86352bfaacb6`
+- Post-seal empirical validation: `sha256:d55a83b0ab2af76a602619323114e6a70dd1ade29b858bed31d34222bd18b906`
+- Measurement receipt: `sha256:bc92b527d85825a9450fdb69e80dd9577ef5b3600fc9283bbdc0ef6fda36e1f8`
+- Engine receipt: `sha256:08d480f86053d84de80bb82879ba57fc11d0dbcba02557045244e7998cfa65a5`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-NUCLEAR-BINDING-CURVE-TERMINAL-005-08d480f86053d84d.json`

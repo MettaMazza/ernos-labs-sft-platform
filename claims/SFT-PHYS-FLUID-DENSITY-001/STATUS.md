@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:04ca869c52dc5303a5ee090b315b4fb0a44e2599e5abf5be6b9584c018790c84`
-- Independent validation: `sha256:bdff48145835a803f3c2873f3cf43d06b34c5f3b90e4a2a70b9b188ebbfa3ffd`
-- Blind external measurement: `sha256:5f9caf1c3efb73312888b0181c4595a61ad9f10cd6ba1288e1a34ccdd179f078`
-- Measurement receipt: `sha256:6f1ec3ffdd790df3ad9700de6a7bcf02e133f22bdede346e418c3ba41dfba650`
-- Engine receipt: `sha256:042d8b74f0692ac0c11dac25c449690e74d8f5a8b1196641080e377627b9bbcd`
+- Derivation seal: `sha256:e1135eb1e37026a68a66535735e48c35acf1719d85114cf9d6bbb7a97bc8e05a`
+- Independent validation: `sha256:ed25d13dc67b64c09887a35755599593e3c3318cce8e1494a6f3c5cf6af26aaa`
+- Blind external measurement: `sha256:f241ec59f21507d70b70567251198827f768fc4fa7eb470d33f9e6eb4492a599`
+- Measurement receipt: `sha256:e498d17d351fe8a07e3093c658a7e309084838dc5441aeb35b5ac0bf322ccc49`
+- Engine receipt: `sha256:5de8d82f4c7c74a083bf5b10cb8f369dc2edb4106e56887704b0fdd3c6d9b86e`
 - External source IDs: NIST-CODATA-2022-ALL-CONSTANTS

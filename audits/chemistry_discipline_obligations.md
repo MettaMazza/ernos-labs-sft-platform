@@ -236,4 +236,4 @@ The previous 52/52 V1/V2 atomic reconciliation remains closed, but it tests hist
 
 This census reaches zero open obligations only when every row has exactly one Chemistry owner and at least one current model-admitted receipt at the required strength; every quantitative natural-science row additionally requires a post-seal complete external value vector. A paper, manifest or verifier cannot substitute for those receipts.
 
-Census identity: `sha256:c1297d6bdc805516071fd5017ce0673494739395e5dfb68997a20ce2e143f085`.
+Census identity: `sha256:a93210e3c21f9c6b99412f05aa190fe226bce937915837827cb625692d9d22c3`.

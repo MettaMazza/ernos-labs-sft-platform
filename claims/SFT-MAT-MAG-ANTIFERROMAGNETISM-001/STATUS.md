@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:66b2d9f5998a96ae9e7a4b0f607b4b3701336de1c18415dd2cfa78eaff6de448`
-- Independent validation: `sha256:a46609ffce4544872f8f33cad521d02fd03fb08c46966d098291c136698c7eca`
-- Post-seal authority correspondence: `sha256:9c06b2a0f59c2933efdaa85f3a3f7107cdfb23da035952b54ebbb1571c31b065`
-- External receipt: `sha256:1144769f267e47cca17f0dc4ddd226220357394daaece0f0da693ac5622311f1`
-- Engine receipt: `sha256:4e024776e6572a09e72fd47738e804b731ccffff0685efb0993023aecafc15c7`
+- Derivation seal: `sha256:c04a4719c95dbcf99b4c96be7f8d4910f23e56b32695e1655ea128c3b2fd01f0`
+- Independent validation: `sha256:8e526f547300619d4237766a667379879932882a11098cd824b50b49497c0193`
+- Post-seal authority correspondence: `sha256:a2f34542fc6b417538f1a4828727cc64fe6cf3766097c0d2f94ec95d4ad1acdf`
+- External receipt: `sha256:a0911fab2bf134d35e132ecb27c6b0991373376ea1f9d4e061148da4cd6c131a`
+- Engine receipt: `sha256:042d5e6093d1ae270db43da2ccb72f5299318e53632719ca3714ba648561dbbe`
 - External source IDs: NIST-ANTIFERROMAGNETIC-COUPLING-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

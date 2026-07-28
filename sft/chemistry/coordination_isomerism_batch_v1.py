@@ -17,28 +17,28 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_INORG_004_017_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:4624c5ac9ae4981e1c4ad424e2bcfdb9ba0c43ddcdaabbd16bc84a30487ae7d1"
+FAMILY_BOUNDARY_HASH = "sha256:87998e9fa168d82dd80c28abc9910502bfb23da0c26cb6b1ecedfb88142642bc"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 ADDENDUM_PATH = "experiments/external_sources/chemistry/inorg_005_linkage_source_identity_addendum_v1.json"
-ADDENDUM_HASH = "sha256:980b2752e4617f217b145a491a786baa035d18170db88dbdd6c75783b068a6ba"
+ADDENDUM_HASH = "sha256:da68d9c34165fb25c56c44d30b619804e42016a5ad29e4350f2e6fc6d185bac7"
 ADDENDUM_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1/source-inventory-v1.json"
-ADDENDUM_INVENTORY_HASH = "sha256:9b647ea38a27cc5484b50fc0af2dbdca8798facc7eed0f093305c4733c787a53"
+ADDENDUM_INVENTORY_HASH = "sha256:3abde417b058f41574fefad5f26c2741fa6b462574601c74a69d4a49f4f3f12c"
 PRELIMINARY_IDENTITY_PATH = "experiments/external_sources/chemistry/coordination_isomerism_target_identities_v1.json"
-PRELIMINARY_IDENTITY_HASH = "sha256:7f5508970550449115ceb997b6e3d340a3bba3c27878bd83b2ea98b6892b5290"
+PRELIMINARY_IDENTITY_HASH = "sha256:52224a0a386431cc43129efe732acf6c46fe0c09ea3dacf586cc1e17e0c7d34c"
 IDENTITY_PATH = "experiments/external_sources/chemistry/coordination_isomerism_target_identities_v2.json"
-IDENTITY_HASH = "sha256:7264542ef42da0fab309f6fd94cc1d7560202767417784bd8b92a1744957bd95"
+IDENTITY_HASH = "sha256:60a107df040a81774fd312354a36710c7455d6175495c5c300ec83382a0033d1"
 TARGET_PATH = "experiments/external_sources/chemistry/coordination_isomerism_withheld_targets_v1.json"
-TARGET_HASH = "sha256:6a36cc12e39bd64feb4961f3f2e137f940bb833cb5f878406a4eeecc709829c2"
+TARGET_HASH = "sha256:efb16e9b9662125ea9c229911ffd7dd615bf008ac5113a9ed4bfc5845b5856c0"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1/coordination-isomerism-primary-records-v1.json"
-PRIMARY_HASH = "sha256:399785a3d0401f2c2d65295c29d3a153f334648d01b6ad8f84183c5d76bbb751"
+PRIMARY_HASH = "sha256:4e8f5e719224ff6217939dd3fe61e7edcfd5015c56e64e3b818cad8191143a9c"
 
 SOURCE_FILES = (
     ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-i03294.json", "sha256:32ea1e227a6ce189a09d759909248c367b075c76ac3759fa77497f114ce9c8b9"),
-    ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-g02620.json", "sha256:796412f38c7b2bd8a48fa24bcc6f522643acba4565d7943f7c1ba4ae997c7f05"),
-    ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-o04308.json", "sha256:ac846f06d05251b9463aaa2d80d2c6b64b1128bbb6f242918837f16a16da1702"),
+    ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-g02620.html", "sha256:796412f38c7b2bd8a48fa24bcc6f522643acba4565d7943f7c1ba4ae997c7f05"),
+    ("experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-o04308.html", "sha256:ac846f06d05251b9463aaa2d80d2c6b64b1128bbb6f242918837f16a16da1702"),
     ("experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1/iupac-red-book-2005-complete.pdf", "sha256:3595c86a1b288b82be6d74061315592b89fe3eb17ffa80bb3df3e970e622890f"),
 )
 

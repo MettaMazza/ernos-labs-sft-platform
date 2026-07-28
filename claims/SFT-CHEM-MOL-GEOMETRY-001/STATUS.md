@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:7c7c69d3817c8e880c5621d6516d1773cf534ef508972d15409ca78c271f8cc2`
-- Independent validation: `sha256:ebe9f30414581e4ed31c537b8d8140ccb10e1d98b7bf74c37a6a04bac972a36f`
-- Post-seal authoritative correspondence: `sha256:e57949262e42f976fe560cebebf3e96e91920b87aaaba582d0688c8fd102d961`
-- External receipt: `sha256:754bd429fa783348692940e3a757fbadb588fc1cd3d825a5db48053eacf78528`
-- Engine receipt: `sha256:32416047fc77a3215966466b4a829e4658bcfb50c14652b3425b9aa1e8603a89`
+- Derivation seal: `sha256:d376c83016e57ce1a32db75872af7bc2c629a83cf16577a9ee79f06c14c0f41a`
+- Independent validation: `sha256:1b42100ba5378f5065e252bde551930747d9c7686fcdeea86ae1136958564158`
+- Post-seal authoritative correspondence: `sha256:4d2df2952afb0c9c85752e96c6c4bff3c5d0a8bde6d3856eb931bde635e0d650`
+- External receipt: `sha256:ad21369442e5b2c57feb8b2e3369beea9d627af1b476f91db250fc066192b4a2`
+- Engine receipt: `sha256:ac60f99b83d623409f27d5997eae114ad5384e6fb2fdcbcf3c71b50d9a0aa054`
 - External source IDs: IUPAC-GOLD-BOOK-S06061-2026
 - Numerical measurement claimed: `false`

@@ -22,16 +22,16 @@ LAW_HASH = "sha256:b1d1350aff301a5cb2e58471e00021897dedc3a771660f574dbbe54ef8038
 FAMILY_REGISTRY = ROOT / "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 ADDENDUMS = (
-    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v1.json", "sha256:7c3e63016b4f52a0cf2a84b8076ac954ba61649580d2459ed826e40a5aff0693"),
-    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v2.json", "sha256:fa25c3d9d170254de760bc3778af9dd89793b902729ca0314bc0ececa08ff7e8"),
-    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v3.json", "sha256:eeca900246f02c7b8d32fa77e5060adbc1033f99dbe2df103c4d8f4d2cb0c17b"),
+    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v1.json", "sha256:62da50e877530e09cd7f5f97b671ce2e927573fa4e59bc6799d8ceb3c1cbb7b1"),
+    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v2.json", "sha256:9a6e465a48e4e423fd4665318ae03812e1de8aad611f6c47c01dd8a283bca23a"),
+    ("experiments/external_sources/chemistry/inorg_006_spectral_source_identity_addendum_v3.json", "sha256:14a8af673f8996cd37560ea28877e508370b7ebec5525a68ef978fb5ad84e5cd"),
 )
 INVENTORIES = (
-    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v1/source-inventory-v1.json", "sha256:d76d5b6a898ce98a45c97ea936a5fe7902356701474f54ca6443b752f124d1f2", "development-observed"),
-    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v2/source-inventory-v1.json", "sha256:d9d0e0255439404dcb82a4b585de24d4b6fafbc51d3ae64f2c893985a30fc752", "law-sealed-adverse-absence"),
-    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v3/source-inventory-v1.json", "sha256:fe95562bfb5e930c37b17a9fd9ee25d17031c36c7ee9b7949441a533f17acc7b", "law-sealed-blind"),
+    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v1/source-inventory-v1.json", "sha256:b5138715c33a0596238f464beed864e6c0d14fffd0faba11a73ca0aa78802e14", "development-observed"),
+    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v2/source-inventory-v1.json", "sha256:2eeee5b354489188121d13b8e1c4a19a4dfe9eec72cc0293a1ba9ac3543b5d45", "law-sealed-adverse-absence"),
+    ("experiments/external_sources/chemistry/snapshots/inorg-006-spectral-addendum-v3/source-inventory-v1.json", "sha256:b4758e23add2a869c438438acd55e43dc0c02a544ac0a26ff2008ffe95f47d78", "law-sealed-blind"),
 )
 IUPAC_FILES = (
     ("IUPAC-LT06764", "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/iupac-lt06764.json", "sha256:dad6da4049a23236e040e7219d1d81d8730e732a72ac63e05da91d3bad410155"),

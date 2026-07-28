@@ -18,7 +18,7 @@ from sft.engine.source import hash_file  # noqa: E402
 
 
 SPEC = ROOT / "experiments/external_sources/chemistry/inorg_005_linkage_source_identity_addendum_v1.json"
-SPEC_HASH = "sha256:980b2752e4617f217b145a491a786baa035d18170db88dbdd6c75783b068a6ba"
+SPEC_HASH = "sha256:da68d9c34165fb25c56c44d30b619804e42016a5ad29e4350f2e6fc6d185bac7"
 SNAPSHOT = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1"
 DOCUMENT = SNAPSHOT / "iupac-red-book-2005-complete.pdf"
 INVENTORY = SNAPSHOT / "source-inventory-v1.json"

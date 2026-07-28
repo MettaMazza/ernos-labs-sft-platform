@@ -11,12 +11,12 @@ On Windows use `py -m sft verify-all`.
 ## Expected runtime
 
 This command is intentionally exhaustive. The last complete timed run of the
-current 1,029-claim corpus took **1 hour, 10 minutes and 36.8 seconds** on an
+current 1,319-claim corpus took **1 hour, 19 minutes and 13.7 seconds** on an
 Apple M3 Ultra Mac with 512 GiB memory, macOS 15.6 and Python 3.9.6. It started
-at 2026-07-27 22:57:30 UTC and printed the terminal pass at 2026-07-28
-00:08:07 UTC.
+at 2026-07-28 07:31:18 UTC and printed the terminal pass at 2026-07-28
+08:50:31 UTC.
 
-Reviewers using a comparable machine should reserve at least **90 minutes**.
+Reviewers using a comparable machine should reserve at least **two hours**.
 Contributors using ordinary laptops or slower storage should allow several
 hours. Processor speed, filesystem performance, available memory and the final
 network request can move a run outside those expectations. Individual large
@@ -30,17 +30,21 @@ this planning guidance.
 
 - Command: `python3 -m sft verify-all`
 - Result: `SFT COMPLETE VERIFICATION: PASS`
-- Recorded interval: **4,236.790 seconds** (**01:10:36.790**)
-- Corpus: **1,029/1,029 registered derivations replayed**
-- Tests: **944/944 unit and end-to-end tests passed**
+- Recorded interval: **4,753.740 seconds** (**01:19:13.740**)
+- Corpus: **1,319/1,319 registered derivations replayed**
+- Tests: **969/969 unit and end-to-end tests passed**
 - Core engine: **1,264/1,264 executable lines covered (100%)**
-- Measurement coverage: **721 empirical claims**; **114/114** formal Physics
+- Measurement coverage: **1,011 empirical claims**; **114/114** formal Physics
   claims reach measurement
 - Live comparison: **5/5** current NIST/CODATA checks passed
 - Host: Mac15,14; Apple M3 Ultra; arm64; 512 GiB memory; macOS 15.6 build
   24G84; Python 3.9.6
 - Dated operational record:
-  `audits/FULL_VERIFICATION_RUNTIME_2026-07-28.json`
+  `audits/FULL_VERIFICATION_RUNTIME_2026-07-28_FOUNDATIONS_1319.json`
+
+The earlier 1,029-claim timed run remains preserved at
+`audits/FULL_VERIFICATION_RUNTIME_2026-07-28.json` as historical operational
+evidence; it is not the current-corpus verification record.
 
 The verifier prints progress during long phases. A run is complete only when it
 prints `SFT COMPLETE VERIFICATION: PASS`; elapsed time alone is never evidence

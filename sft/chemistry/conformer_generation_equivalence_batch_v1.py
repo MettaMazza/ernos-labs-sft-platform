@@ -12,11 +12,11 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_ORG_001_016_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:00ed97e8dec313d65d2b9f6af595e3e3787a99aa60b86814f1a00f318abf011e"
+FAMILY_BOUNDARY_HASH = "sha256:ccbc91e9873a84f31b50670c9a8f063ee6a6096d3dd216b5e7c3bf86521681b2"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/org_001_016_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:12c6822a695eb7135081ef8d044a3136c2fee2b0d486c9164b1f1166ef087381"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:8b35e1f37dbf80713c47404d946a320da8d7011deaa5dbee7fe8393b58793cee"
+FAMILY_INVENTORY_HASH = "sha256:d542adb23900f765fcd0205afae8a666813af160881bb70b0676637b090b4acc"
 LAW_PATH = "sft/chemistry/conformer_generation_equivalence_law_v1.py"
 LAW_HASH = "sha256:d6416d06e430df2968693a6731723c2e2fea39397e2ff20c93270d8cd21330de"
 PRE_SOURCE_PATH = "experiments/sealed_predictions/chemistry_org_005_conformer_generation_equivalence_pre_source.json"
@@ -25,9 +25,9 @@ PRE_SOURCE_PAYLOAD_HASH = "sha256:1af4780a78bb418650ac93f057ca51b907333213a51cb0
 IDENTITY_PATH = "experiments/external_sources/chemistry/org_005_target_identities_v1.json"
 IDENTITY_HASH = "sha256:7f148f0b99d0939aefb6023521d697dc00386a0de2f7a328d6b1220377965ad4"
 TARGET_PATH = "experiments/external_sources/chemistry/org_005_withheld_targets_v1.json"
-TARGET_HASH = "sha256:35de0b7eb5b41d2a655af1bc546fcec240c64bd45c916c7b8348f7bc3edd0eec"
+TARGET_HASH = "sha256:ed750adf9e52a8257fd3784f19fee213bca5c3a147cd72cb9488a2a4ec45c8f3"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/org-005-primary-records-v1.json"
-PRIMARY_HASH = "sha256:83cf55e7f3749fc675f48984644f52ed0611d988827596327ce630cb11345089"
+PRIMARY_HASH = "sha256:a5eb356e0240a4e56457ba7265368cc7e06ca0396b38b103eac357e9ac186f10"
 
 for path, expected in (
     (FAMILY_BOUNDARY_PATH, FAMILY_BOUNDARY_HASH), (FAMILY_REGISTRY_PATH, FAMILY_REGISTRY_HASH),

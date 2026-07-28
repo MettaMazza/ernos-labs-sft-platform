@@ -4,6 +4,6 @@ Status: `independently_replicated`
 
 - Closure: `depth_independent`
 - Empirical status: formal consequence sealed; downstream blind comparison separate
-- Derivation seal: `sha256:59b8326ad42873e5d8bc8d868f6d8cc795f5757341747de16dd093f92b8f3331`
-- Independent validation: `sha256:329323f9ce81e7559e72e47ce558f071ad3a619644057a8997a403d700fd87e2`
-- Engine receipt: `sha256:3017771dde2eabf649278851cd9e43fb6c5e939b5a052a09f02f6e604d6ed50e`
+- Derivation seal: `sha256:30d182b1a49310aca015977e10dc218b14cfc7d22f345c50d1685d17d600144d`
+- Independent validation: `sha256:1f4e2b977d4fb33ca84e5c4fbd7fe76a87a5a76bf8a34def76b2cc143b6db157`
+- Engine receipt: `sha256:51fb37f85fc2774d3118fd08636204778a68aa8c908453ae788179e06de90b0a`

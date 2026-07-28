@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:3740214d264d8442af6b2e386567eaa01e64fad19b15ae07c7984aac0cac2c33`
-- Independent validation: `sha256:26edbb1e3a330662b802e7bae193acf93c95500274f46ce17792801c9ca6be8f`
-- Blind external measurement: `sha256:ab9efc043970126329e33dc9b07174c9dcdf0277d8e1a347a6ed4a8d0ccc0558`
-- Measurement receipt: `sha256:4d1eb98a218d275eaf351ed5538c5981c465ed13a8b3305a46873ef7f85ae315`
-- Engine receipt: `sha256:d68a2030d9e3e914068a84fb738d109c84f7d1b7be48c88c97d37d26646c09f8`
+- Derivation seal: `sha256:93c47074658ac8480c829c0f8d695ef7be306f2be45fc7e1353afe6e23b9931b`
+- Independent validation: `sha256:34feb7b353710d9d9048ee63ee0613fdb84740b01d2a7ea39b2d3c3ace2200c2`
+- Blind external measurement: `sha256:172db803b1c7d9591d25dfa490da8b5644b0ea883e8a22bc43d84ae26c183ff4`
+- Measurement receipt: `sha256:263132e9e112673a7538c0acdf9d56c2d146ed3c61df81eb44c80d84da59aa2a`
+- Engine receipt: `sha256:120247c26273364ae2733af59411df4ff71663c9a06bf477f3902e0b13f3f304`
 - External source IDs: IAPWS-RELEASES-2026-07-23

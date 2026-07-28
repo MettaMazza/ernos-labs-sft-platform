@@ -10,5 +10,5 @@ Status: `model_admitted_forward_forced_empirically_tested_and_independently_repl
 - Exact repeated-CH-unit gap: 14027/600 kJ mol^-1; positive lower gap 578/25.
 - Complete surface: five sources, 39 scientific tables and 226 rows plus two complete IUPAC records.
 - Custody: three development-observed records; two CCCBDB outcomes unopened until after sealing.
-- Derivation seal: `sha256:b92b639bdcd601dd89ef796e86b4d4e85729cf6959432d5a1c43265c4aa35060`
-- Engine receipt: `sha256:b79a97ae6d184edd246d4f8d63959f4fcb7ccf6bd518ddd9e495b677979685af`
+- Derivation seal: `sha256:62bd9b8fb6a429399457107249cc2f82a5ee601b4aaf31d6cdaaee58a92decdf`
+- Engine receipt: `sha256:3ba25097797fbac99c2575eb5554d30f6a475c4f74116b452716ba04c802953c`

@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:ec0c31fbd11a54c788be250ab61969d397b4ba503be6cf081e86a5d201cd5bca`
-- Independent validation: `sha256:16a9bf046561df3e32f17a20c4f46ecf6d9dc3c8aa66b2d3ad7644b3b84e6855`
-- Blind external measurement: `sha256:b0c28bf902eb524babfda5092b927443e1baef638f8b6d77babd6ae45be348e6`
-- Measurement receipt: `sha256:a15894aa0d01b667e5f1ff9750c1044d160fcd8bfabf67b97c1580fafce31968`
-- Engine receipt: `sha256:8279f3140235ca46ae66bbf4ed0fbf28c804d3bb42b43ecdb0d12ce45dc807b8`
+- Derivation seal: `sha256:2cde5bb0238d8ffa9f8e222b4e115e0ec561fe6acbd58d2bdc0a6afd6c1de323`
+- Independent validation: `sha256:f3e2f08bd58a00f1e1c19da4096460082ba35507e209e15830321fb506ec669b`
+- Blind external measurement: `sha256:bee619b212faa3ca3d6b4f2c3f2d89c99915f4bb2208db324414e18bdc726f4e`
+- Measurement receipt: `sha256:e4efcfa0509c550a7e72e0eb4844bd51b522e3503731cad6538da738a6d50579`
+- Engine receipt: `sha256:5fab7cea569fcb273a9b39aacdd824a37ed42f3939fd494517dcb62619a95752`
 - External source IDs: GRAVITY-SPACETIME-AUTHORITATIVE-2017-2026

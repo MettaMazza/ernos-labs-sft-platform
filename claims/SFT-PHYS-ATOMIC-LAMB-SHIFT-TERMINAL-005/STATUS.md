@@ -5,9 +5,9 @@ Status: `empirically_tested_and_independently_replicated`
 - Protocol: `observational-data-informed_target-inaccessible_sealed-prediction`
 - Observation informed the explicit frozen law; capability-gated execution sealed the exact prediction before NIST target release.
 - Closure: `depth_independent`
-- Derivation seal: `sha256:c73ab2b2ba64c77e09ce5a0fcfaea8fb09d291c7bf73fef2f7bb1d0af2705eee`
-- Independent validation: `sha256:9db086c354091e3230a33301c17db2b7e00fbec853218ba21e6e080bf5d4c461`
-- Post-seal empirical validation: `sha256:60554a83dedfb28a27cc08aaddd2f9371c1d0bb4f301077c9a70fb341a3b78ae`
-- Measurement receipt: `sha256:c7a9435997ecde43fa7922c31846d62b8fc13d938b98c9ff8f033af4cef0270b`
-- Engine receipt: `sha256:38fa8fa2ffbfa3733e9ab90ca7a052699c265c5e844e896a570c8edf1ec5afe3`
-- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005-38fa8fa2ffbfa373.json`
+- Derivation seal: `sha256:176b961bc07508f9ab48d66136a630768b05210eccb3f06fee03376b6509cfb4`
+- Independent validation: `sha256:fde079e56f76bb45693979a6faa00daeb5549c68f86628f1877d9177418031d4`
+- Post-seal empirical validation: `sha256:7c520df62c053f0b10ed52ba24237d4c82d70364902eef8df02a43ad27cbba76`
+- Measurement receipt: `sha256:85484cf7048f1b161ce841e7180eebc08ef9505be94a24d5fd4a1199545f6c26`
+- Engine receipt: `sha256:40acfad3f08aa1358a859a5ab95388d74d055c7d708a9521702b27a2c172ab75`
+- Receipt path: `receipts/engine/model_admitted/SFT-PHYS-ATOMIC-LAMB-SHIFT-TERMINAL-005-40acfad3f08aa135.json`

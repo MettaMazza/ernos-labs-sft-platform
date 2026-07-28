@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:f4ab1b925e7eb9ecbeeb8511ad7af697559a8887f0f28eeca980955ea0792b8b`
-- Independent validation: `sha256:f52bbd11dab3c6ab2b6fdee62e87b1e9a9f43db335aa14655b91348b7a5ee5f2`
-- Blind external measurement: `sha256:a2a16e3f3b10f21bb0058aeceafac87b76a0ef521e5ef5bbc82fc8462eb69a33`
-- Measurement receipt: `sha256:32da7e42cfd301ed589ba2c8e40eeddd7f5a0976125c8bc5f270b055f4c13c75`
-- Engine receipt: `sha256:2cd2aeb5d9d4f311bab1b6778728a80b9cf087a82263645db5e9c2a222078b83`
+- Derivation seal: `sha256:91fcee665e8f564ad0f8eb596f3657fa72c65f0c679ae9c0e2dd259b1cb88449`
+- Independent validation: `sha256:5dbdd9291daadc1c591f2e332993abe7546f58c4e46e75dbce80ec115a68fe4c`
+- Blind external measurement: `sha256:7ded85d56ce448f9588e0a8d7ddc568e07f56e85ae3715c73cfe95b3feed23fa`
+- Measurement receipt: `sha256:6ba2d1a8ef90dd1b12ebb8838bf805f176e351ebbd05dc43e7747ea27fd2d8e0`
+- Engine receipt: `sha256:73d24227b39bed29d9648706021b5d098732eb9e054568f70d5144bc29f3881b`
 - External source IDs: RELATIVISTIC-FIELD-AUTHORITATIVE-1971-2026

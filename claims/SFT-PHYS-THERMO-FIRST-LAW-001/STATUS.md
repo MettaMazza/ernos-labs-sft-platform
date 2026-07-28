@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:0b838b25b123c6367b0fca9efe12dd04beac2bd5294d1bd202f587d1264ca8df`
-- Independent validation: `sha256:3f63f7200bab7ab8d23baed640f89c3bdd69366cb901e77416b24c8729b7d130`
-- Blind external measurement: `sha256:fa52340b68dc82d2ea089378f31bc3aadad7fa494d08bb9794add9ad60c54406`
-- Measurement receipt: `sha256:5b600737da737e7769e0b3e0cc4528b75a6cc29c33012af23337de9054fa656a`
-- Engine receipt: `sha256:18e493c59cbd7979db1bcc2b33a97f582329f92707c16bc6455c2ee55ef2b13a`
+- Derivation seal: `sha256:2f6f4e1533d9acfc84c5b0f23be38d3100a0609ec8bf1a8450df35d87c51df00`
+- Independent validation: `sha256:fec704a24bfe324caf04366192636b567de921e7cded02e5d30df1b7ff7efcfc`
+- Blind external measurement: `sha256:37ec084ec78fda59b326de8dbab75a30b02661fa21367957fe1623d4d7b8c81e`
+- Measurement receipt: `sha256:27b5e2e6f2ded07ae9da19cac4a1083ddc468fd0145f86bc5424750c71f2942f`
+- Engine receipt: `sha256:7362f8e65ebb689e893823f347b2fdedc17fd5e01e858dff505997936acb79a8`
 - External source IDs: NIST-CHEMISTRY-WEBBOOK-2026-07-23

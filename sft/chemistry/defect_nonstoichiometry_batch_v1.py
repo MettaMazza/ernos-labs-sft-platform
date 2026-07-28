@@ -16,23 +16,23 @@ from sft.engine.source import hash_file
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILY_BOUNDARY_PATH = "audits/CHEMISTRY_INORG_004_017_FAMILY_BOUNDARY_2026-07-27.json"
-FAMILY_BOUNDARY_HASH = "sha256:4624c5ac9ae4981e1c4ad424e2bcfdb9ba0c43ddcdaabbd16bc84a30487ae7d1"
+FAMILY_BOUNDARY_HASH = "sha256:87998e9fa168d82dd80c28abc9910502bfb23da0c26cb6b1ecedfb88142642bc"
 FAMILY_REGISTRY_PATH = "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 LAW_PATH = "sft/chemistry/defect_nonstoichiometry_law_v1.py"
 LAW_HASH = "sha256:89485a387bf7a993c6a5f395300a2ae5edfd10d60c963d653e5633550be3a40c"
 IDENTITY_PATH = "experiments/external_sources/chemistry/inorg_016_target_identities_v1.json"
-IDENTITY_HASH = "sha256:f2f97dc76295f1007d6cc6868080129839ff0e1b9d5e3f0b757092e0086f3328"
+IDENTITY_HASH = "sha256:3ca9d30a0cc2e34d8cf9a01a9ce3f095d024a7a5295dd823f31396f2e273634a"
 V1_TARGET_PATH = "experiments/external_sources/chemistry/inorg_016_withheld_targets_v1.json"
-V1_TARGET_HASH = "sha256:c170a932926c96fb479ae43777663db2e865a3e64f83ff4cb28c5ce4a667c3cd"
+V1_TARGET_HASH = "sha256:bab036b88f9d3e91638c5d11cc4d78b35c0a32cc58d0251110c0b664328fd6d0"
 V1_PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/inorg-016-primary-records-v1.json"
-V1_PRIMARY_HASH = "sha256:ecec2d5bc15b307013c8a53b805dd373abb9cc6016b6b30c5c4d542acaf3cdba"
+V1_PRIMARY_HASH = "sha256:307e20dcce41b22c71fa25b46414b92639f00790a8d384ea67462f747e67ab8d"
 TARGET_PATH = "experiments/external_sources/chemistry/inorg_016_withheld_targets_v2.json"
-TARGET_HASH = "sha256:79176a9fb158fefd1f66f22773f72df98c6a07947f90107db8abb8a7f961e80b"
+TARGET_HASH = "sha256:ced531ee7f908ac60b7c8719b0f4e6399f2218604457a5e54c2a64d6095c4cb5"
 PRIMARY_PATH = "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/inorg-016-primary-records-v2.json"
-PRIMARY_HASH = "sha256:962d67de394c6ff524ad027b1d7d685c3b00541440100024459e8bb5cd10c042"
+PRIMARY_HASH = "sha256:f664e8614083b4d06dc59ab9758b525e5c67899c99c660cc9a684a89dac5b74e"
 
 for path, expected_hash in (
     (FAMILY_BOUNDARY_PATH, FAMILY_BOUNDARY_HASH),

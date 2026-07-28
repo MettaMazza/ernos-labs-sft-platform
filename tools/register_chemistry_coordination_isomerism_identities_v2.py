@@ -18,13 +18,13 @@ from sft.engine.source import hash_file  # noqa: E402
 FAMILY_REGISTRY = ROOT / "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 ADDENDUM = ROOT / "experiments/external_sources/chemistry/inorg_005_linkage_source_identity_addendum_v1.json"
-ADDENDUM_HASH = "sha256:980b2752e4617f217b145a491a786baa035d18170db88dbdd6c75783b068a6ba"
+ADDENDUM_HASH = "sha256:da68d9c34165fb25c56c44d30b619804e42016a5ad29e4350f2e6fc6d185bac7"
 ADDENDUM_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-005-linkage-addendum-v1/source-inventory-v1.json"
-ADDENDUM_INVENTORY_HASH = "sha256:9b647ea38a27cc5484b50fc0af2dbdca8798facc7eed0f093305c4733c787a53"
+ADDENDUM_INVENTORY_HASH = "sha256:3abde417b058f41574fefad5f26c2741fa6b462574601c74a69d4a49f4f3f12c"
 PRELIMINARY = ROOT / "experiments/external_sources/chemistry/coordination_isomerism_target_identities_v1.json"
-PRELIMINARY_HASH = "sha256:7f5508970550449115ceb997b6e3d340a3bba3c27878bd83b2ea98b6892b5290"
+PRELIMINARY_HASH = "sha256:52224a0a386431cc43129efe732acf6c46fe0c09ea3dacf586cc1e17e0c7d34c"
 OUTPUT = ROOT / "experiments/external_sources/chemistry/coordination_isomerism_target_identities_v2.json"
 
 

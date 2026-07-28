@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:827cfa9bc16633bc9e45d63d74209619bcfd40942f632c5bcdc6d0cf83da8098`
-- Independent validation: `sha256:67f1a8e737f8f5da46378dcebd60f9ee9adce75c99f638dc9252cc1ee114c5b4`
-- Post-seal authority correspondence: `sha256:7929a09e55e51aa0aa0d30d435bfa2a2755c8f23d5951673931c13c94d98e889`
-- External receipt: `sha256:075d6446b70e416f2a1961f712d1b26ac009326b0eec2664ac4e1edb2398ad06`
-- Engine receipt: `sha256:b0bf205091f5c263309fad96e87e51572c4a3f60f40d61263205778c4509f299`
+- Derivation seal: `sha256:5e54681356135899526771136f25bdbfd6472725ecb67007f1d35d87e616a107`
+- Independent validation: `sha256:7a27391491e013e3ff9cd95e27738d3a9bdf02b3aead83e04f353a9a8b6cdcf2`
+- Post-seal authority correspondence: `sha256:9df2c79f62083e89ea0957dfa9272251fcd8351c48cba3f50cadc9b11fb2c35b`
+- External receipt: `sha256:bed9eec70e75c6adef280364039b21c2e946bdd26d859902e78aadd3304ad52f`
+- Engine receipt: `sha256:da14ebc7c6205220ec0993a22cbb9b0fb41777bc23e4a17ffcd978c4b8f8ce53`
 - External source IDs: BIPM-JCGM-VIM-TRACEABILITY-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

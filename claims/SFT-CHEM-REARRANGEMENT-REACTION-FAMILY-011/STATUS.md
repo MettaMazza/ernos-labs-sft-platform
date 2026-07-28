@@ -7,5 +7,5 @@ Status: `model_admitted_forced_structural_law_postseal_observable_consequences_t
 - External surface: three complete IUPAC records, the preserved first blind surface, and the complete official 38-page Claisen supporting information.
 - Exact endpoint result: eight of eight independently enumerated source/product atom inventories match; zero adverse and zero unresolved; every pair displays a positive constitutional-incidence change.
 - Controls: all optimization, non-detection, signed stereochemical and spectral rows remain present; the first incomplete blind surface remains unresolved.
-- Derivation seal: `sha256:ad26a616149c2ea1d4ca6dc4b5eb122bacd28c170883e92edad8bd338ec4748c`
-- Engine receipt: `sha256:7ba693262ac98dc03798ef32d617dce9cd1ea839f4e21380b3df7bd09a4cc3f6`
+- Derivation seal: `sha256:296499f3dbb6ff45080a42248436d0ce1f98111f3fb7265ac45365cf41e558bd`
+- Engine receipt: `sha256:905bd55a18ffe29d8484ad273fe9a6245121b3bf0b56f0166dd45fda91b3bdca`

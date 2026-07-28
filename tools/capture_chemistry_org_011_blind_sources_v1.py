@@ -19,7 +19,7 @@ from sft.engine.canonical import sha256_identity  # noqa: E402
 
 
 IDENTITY = ROOT / "experiments/external_sources/chemistry/org_011_target_identities_v1.json"
-IDENTITY_HASH = "sha256:8ae0fcf2482cc32fa65e8b718de312883a88789c1c172c2e208f87bf14538b85"
+IDENTITY_HASH = "sha256:7fe944b94b3796a55124388d9ef4228df5e0aca1daf45d5c10c7b87ca1b54490"
 PRESEAL = ROOT / "experiments/sealed_predictions/chemistry_org_011_rearrangement_reaction_pre_source_v1.json"
 PRESEAL_HASH = "sha256:261ca2fed579e3a02906c04edf3c7e44fd5c752ecf6abfb3b24f08945e682b1c"
 PRESEAL_PAYLOAD_HASH = "sha256:e624d9e2305b7ab53494816cd0bb8ca99a941ab3a4f63d675319bbc6019f7af7"

@@ -3,11 +3,11 @@
 Status: `model_admitted_authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:edbbea4729b78617df2c8f1ecdb55716528ac140a38827276580103223e2b971`
-- Independent validation: `sha256:bc66886b883b3b04e280b2c157934a163799a8e3abcd37cc54ea9170516dc3b5`
-- Post-seal authority correspondence: `sha256:4463105306d4f42745346031c4a24c8910c65ae30aaf2ea125d0108575905655`
-- External receipt: `sha256:1bebb8a089facd8820e247e0c2b56def398143bf54d99b01e82b17c475edc90b`
-- Engine receipt: `sha256:12eb3dc5c5b6718a083650f79097da45e15e1c0f9a7d6d962fb3afdf672576ea`
+- Derivation seal: `sha256:47169b8e382e6ccebc074d5004d702d19d08d602a8d9e838f969cf1da65e8534`
+- Independent validation: `sha256:608ee39e9c13d036b6299b80e31d8bce517979d0b487aa03bc6a61967ad08264`
+- Post-seal authority correspondence: `sha256:0727c3bbb53dd9a0128bf28f9de5a5e8103ada5f99ae00d347ed534d228715a7`
+- External receipt: `sha256:6b7a896defc4ffa0f47749217f79fd59679afbbbbe55e6c734839d899523c0af`
+- Engine receipt: `sha256:eabc8076794eaf93d8139866bb2cb1b68f83fb9eff249cd9d3f785dab6c7f790`
 - External source IDs: NIST-SUPERCONDUCTING-FLUX-2026-07-24
 - Exact structural value validated: `not a universal numeric magnitude`
 - Specimen-dependent magnitude claimed as universal: `false`

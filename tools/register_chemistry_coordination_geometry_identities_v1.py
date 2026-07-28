@@ -18,11 +18,11 @@ from sft.engine.source import hash_file  # noqa: E402
 FAMILY_REGISTRY = ROOT / "experiments/external_sources/chemistry/inorg_004_017_family_source_identity_registry_v1.json"
 FAMILY_REGISTRY_HASH = "sha256:fce17d6e980696c8051f982ce0f4c8364520ea213f68153187253b96ec914bd2"
 FAMILY_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-017-family-v1/source-inventory-v1.json"
-FAMILY_INVENTORY_HASH = "sha256:e631c5d914b9f18315a4fb7927044c4b76574bb7461c884a23ba835c504ecbd5"
+FAMILY_INVENTORY_HASH = "sha256:e03724f16e4866b43b5f3b53a6804588a2c86f5405bcda37cfb717e5724bb7c2"
 CORRECTION = ROOT / "experiments/external_sources/chemistry/inorg_004_geometry_identity_correction_v1.json"
-CORRECTION_HASH = "sha256:250c45d33906ecc5f02a318e458b30ba34e81f3fc5cae5da04d841d30dc7e4eb"
+CORRECTION_HASH = "sha256:172d67b1a9854dd3ee3114cede27e047ed9a5b209d5ca0061ecc3b408066aeac"
 CORRECTION_INVENTORY = ROOT / "experiments/external_sources/chemistry/snapshots/inorg-004-geometry-correction-v1/source-inventory-v1.json"
-CORRECTION_INVENTORY_HASH = "sha256:a8fa6ef0e5e25664bf4932fd43097ec4b9e9ee5783dcaafe32e702a9ae82fa73"
+CORRECTION_INVENTORY_HASH = "sha256:86ea1c59187bcdd11efbee59e583ff4ad054acbea8a4c08391642b495ff340e6"
 OUTPUT = ROOT / "experiments/external_sources/chemistry/coordination_geometry_target_identities_v1.json"
 
 

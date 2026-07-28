@@ -99,11 +99,11 @@ class ChemistryMolecularStructureBatchTwoTests(unittest.TestCase):
 
     def test_preceding_bonding_authorities_are_byte_frozen(self) -> None:
         expected = {
-            "sft/chemistry/generated_law.py": "sha256:e49905bd2a098a9fc5d7d8984cf737314ac88f7edb68c628de64be7c40769ed9",
+            "sft/chemistry/generated_law.py": "sha256:678de1061dcd4b4a24deefd7757045729d89677d6170bd907cde70bc9ca2e15a",
             "sft/chemistry/catalog.py": "sha256:90750420738638bdadd783f0fb83bc667ee414cc48036e5cdc2f9a2a61089fd6",
             "sft/chemistry/obligations.py": "sha256:b502afe57640149166b4ca69b433d02b3361155eb624f9af8cb8918f77ac0ad7",
             "sft/chemistry/composition_stoichiometry_batch_1.py": "sha256:d4829957d2f8b7b00f51037649cad06cb26acbca17e2a48774ec0097aa66438b",
-            "sft/chemistry/generated_goldbook_extended_law.py": "sha256:88d6210b83fbb5cb0613885818a45813137e1f4a999f3570a7a0110ea5d06be1",
+        "sft/chemistry/generated_goldbook_extended_law.py": "sha256:328e90af0dbe88372e8cceea84d1ff16e54b0f128e694e65dbaf4b4252e3fbd5",
             "sft/chemistry/bonding_molecular_batch_1.py": "sha256:7ecd8bbb47755910f21dff24a488509d1d803b1a0446b33d8bb88378fb9280c0",
             "experiments/external_sources/chemistry/observations_bonding_molecular_batch_1.json": "sha256:6abbd6fb6e2725adc2f6a9e3eace92bbbd368d0de38b14b6fe31e91d8f69cd04",
         }

@@ -4,6 +4,6 @@ Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
 - Measurement: known sector anchors pass; new sectors remain unmeasured predictions
-- Derivation seal: `sha256:47a084c8a7fb4dc9e2a613e747813f2e9507f5796b95cb099f66528c7d398eb1`
-- Blind external measurement: `sha256:d37956fd80f0bceb8395c122997d8f3a970a901ba10a90724d2e45f1f062a9e8`
-- Engine receipt: `sha256:5cd64eeef9ed14372e44541ffc2df625aec020eb1277e52cd76de0bb222261a9`
+- Derivation seal: `sha256:a1e35e13a982c482c7a75ece5032e60e77b5b51789266c24317170a6fbec7033`
+- Blind external measurement: `sha256:b855fdf8e536d5cf1d50f5f3d2f69cdb1e4e14897cc46cfd9a0ab1c598bdf42e`
+- Engine receipt: `sha256:88a3d6273a4332a6eb1dbe565e812e59d6ec768c094c0e37f1f81b3bcc0c00ba`

@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:582d610ed05178d5192eed4b4fdec549803f63d5301aac65277383bf73bc07fe`
-- Independent validation: `sha256:7cb7a69daec5075021039bbe43cb787566c22df79088c9465d3b6b0142fc6b6d`
-- Blind external measurement: `sha256:0722575d8b7614615674d68833b5ba5d0a8d957cd8ac71919fac7ff54a2239a0`
-- Measurement receipt: `sha256:cc8f919e13fbfd2e36a5fc37868c528d5ecbad8e7fc7d236291b7b0a9b0ff5cd`
-- Engine receipt: `sha256:63c0243e02bdf6d5786ee2ed2ba0fcabfd6ecae5aeeb7d299923a1d2c6728b67`
+- Derivation seal: `sha256:4cf6d00ce900bdd5cc2a5585369233006c33f388e857a4155e0cf8f7040ecab1`
+- Independent validation: `sha256:eb65354e0c7521f35ef3bd47b3cc08c9818e7d59effa0e5f6ebb78211cbd9bf1`
+- Blind external measurement: `sha256:2c691a537544d0a4334de99fd9437cd484f0d9b33b8b0e3eddde7b0625ce4a67`
+- Measurement receipt: `sha256:ebc8e171524e298373f518758f4cdfdcc3e3404e4a77a4ed578f319026b3f79d`
+- Engine receipt: `sha256:60c5b750220a91b600f9752669227be225c67e5ec8abb7d760f023557ace561a`
 - External body: Bureau International des Poids et Mesures

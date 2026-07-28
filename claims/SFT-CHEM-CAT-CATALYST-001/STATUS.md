@@ -3,10 +3,10 @@
 Status: `authoritatively_corresponded_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:dff7a7af9f63f2ce6f3acb8ebba8a8daef932c3556723ea419109b456507103a`
-- Independent validation: `sha256:ef91777583f0538821a1e265b7a626a150d14043bb13afc9d614706e5205913a`
-- Post-seal authoritative correspondence: `sha256:5b97ac2db40346dd17a6fbd79f10d8f7ee129c5c3aac5cf36fce2fb428f3067b`
-- External receipt: `sha256:96d8e97195cd37027b33af2b192ef23d00925f57b66bff2ab20ba127440643ac`
-- Engine receipt: `sha256:239ac25a2ef81dbb6f4a5a2664ee3310f3fb0e9c6388aa4a5fc6a80aaa214b35`
+- Derivation seal: `sha256:02b882f2690edd1b84ca21c86f4b58ff3fb20df90af5e05951790bb9ba1cfe8a`
+- Independent validation: `sha256:2fa83fab5a2e35d78ded002a011c38a6fc7091bcb0d205d5dc5e11298c2a2c9c`
+- Post-seal authoritative correspondence: `sha256:6d488e0b27f55e5590338d7a3c80e053a3304bff7acd1a1e8d06da7e3c3f3f3c`
+- External receipt: `sha256:434e14464ec053c73dd4f4773e7342ad7a5ddb3feaa4442447fab056e70e3c57`
+- Engine receipt: `sha256:937aa5f579196ccd541a1fe09dfff3eb5cd095a64ccd378f29c566b97df3793e`
 - External source IDs: CHEM-AUTHORITY-CATALYST-COMPOSITE-2026
 - Numerical measurement claimed: `false`

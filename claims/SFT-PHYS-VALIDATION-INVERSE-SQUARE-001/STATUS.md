@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:3524f02008eb569098ef3f8c5f7b7e1e1b24ee038c784410feb0d61a4640db5e`
-- Independent validation: `sha256:27183e829b317d0cd10824f7e429ec8f3be39f8d46b3f8f9f5c4fcdc66940f0b`
-- Post-seal empirical validation: `sha256:4790e8635bc9a04ccfda3909c6b242cfb3b8f0aa04c26bdaa7f901276124f141`
-- Measurement receipt: `sha256:7e578b51b3663020cfec74ee6d42bc8c1085373c9a5f91730a784d8e7b7b5582`
-- Engine receipt: `sha256:31bd4d97bd010d4af89b2b85ed1bb02056b5b6d67a3acca65110366ab479e698`
+- Derivation seal: `sha256:2ba3cad3055c04f18e765fdb982ee818b418a339345d85a4ab6ee592e24e8c70`
+- Independent validation: `sha256:0cf56dd06325c73eab0125f0a6d323062158c01ffde7d8c9009ab63ac5f3e99a`
+- Post-seal empirical validation: `sha256:590cd21dab3dad6d12ef0d8030ae9d5c91bcf4f931afb318b024a7ad9aa5068b`
+- Measurement receipt: `sha256:ce1b0821186866e407419d06e9e49510b3b5dcc4c4cd39c545ef85410fec45b7`
+- Engine receipt: `sha256:e70905b63729a3bf5619b26115f7fe8b78eb04aba53eba78f6697405d78a220b`
 - Measurement supplied the formal exponent: `false`

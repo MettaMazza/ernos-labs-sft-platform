@@ -3,9 +3,9 @@
 Status: `empirically_tested_and_independently_replicated`
 
 - Closure: `depth_independent`
-- Derivation seal: `sha256:affe1a6ffc785a1372e39c484e3844fc383abd0c8f41b18724b11d271be07dd6`
-- Independent validation: `sha256:490c134e7f103a2a48b51f6557ec36cb4cdeb27ec7b45051be30d18e34a3c98a`
-- Blind external measurement: `sha256:e82cea38e8e08ce5f75e0273369e848c054abfd98b14333023573cd7fce543e7`
-- Measurement receipt: `sha256:e555277d4ddcc736be3baa5be0396411711be8e7e6d231c2336afa5a7d26bd3b`
-- Engine receipt: `sha256:89c64800b967585a1f8d5ec366c316fa95767b53479b8ef2878a963d292f3c06`
+- Derivation seal: `sha256:885177a42d0708abac8f7fd97cd6efd3293e2feab3e2933eefd0b5cd63543d87`
+- Independent validation: `sha256:2dfa9249400a4902546a86fd34fe3074b77782a2b51752a04418b82b545d8990`
+- Blind external measurement: `sha256:037830773e529ab4d45438b054315936b393c1bfaf3170c01eecb5b7de8a707c`
+- Measurement receipt: `sha256:1db5d59ff856de727e2077baa8139c453df44c1f8227b2b38f8a09373195fa03`
+- Engine receipt: `sha256:2faf46c5d43a2e2026a6ea4dc78cb52557592b262b6801d3ccda2c6a594b1d5e`
 - External source IDs: VACUUM-LINEAGE-AUTHORITATIVE-2015-2026
