@@ -4,7 +4,8 @@
 
 **Maria Smith — independent researcher and founder, Ernos Labs**  
 **Smithian Fold Theory Astronomy and Cosmology Paper 001 — Version 1.0.0 — 28 July 2026**  
-**Current-evidence closed, extension-open foundation — local prepublication manuscript**
+**DOI:** [10.5281/zenodo.21640812](https://doi.org/10.5281/zenodo.21640812)  
+**Current-evidence closed, extension-open foundation — published open access**
 
 > This paper reports a machine-admitted foundational reconstruction of astronomical observation, celestial objects, populations and cosmic history. It does not ask a conventional cosmology to choose the law. Seventy-two explicit obligations were generated before external source selection; their 18,432 candidate forms were exhaustively decided; exactly one preserving form survived in each claim; separate implementations reconstructed every survivor; and post-seal primary archives tested the resulting evidence boundaries. The work remains open to lawful extension and criticism. No branch is permanently locked.
 
@@ -3680,7 +3681,7 @@ Each extension will be decomposed into explicit obligations, sealed before outco
 
 ## Reproduction
 
-A reviewer runs the repository’s single cross-platform verification command only after all branch foundations are integrated. During branch development, focused tests and both immutable seals are used to avoid repeatedly imposing the heavy full-suite cost. This Astronomy closure passed six focused tests, 72 sequential engine admissions, 72 independent validators and the branch integration audit. The final all-foundations run is intentionally deferred until Astronomy, Social/Collective Sciences and Engineering Translation are all complete.
+This Astronomy closure passed six focused tests, 72 sequential engine admissions, 72 independent validators and the branch integration audit. After all fifteen foundations were integrated, the untouched repository command `python3 -m sft verify-all` passed on 28 July 2026: 1,319/1,319 derivations replayed, 969/969 unit and end-to-end tests passed, 1,264/1,264 core executable lines covered, 1,011 empirical claims audited, 114/114 formal Physics claims reaching measurement and 5/5 live exact NIST/CODATA checks. The measured runtime was 4,753.740 seconds.
 
 ## Rights, participation and scientific admission
 

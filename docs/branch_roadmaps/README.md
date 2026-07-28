@@ -217,14 +217,15 @@ human-readable index to those records, not an alternate admission mechanism.
 | Biology and Life Sciences | 75/75; 30/30 | Published v1.0 |
 | Medicine and Health Sciences | 72/72; 5/5 | Published v1.0 |
 | Consciousness and Cognitive Science | 72/72; 46/46 | Published v1.0 |
-| Earth and Environmental Sciences | 74/74; 3/3 | Local release ready; unpublished |
-| Astronomy and Cosmology | 72/72; 53/53 | Local release ready; unpublished |
-| Social and Collective Systems | 72/72; 5/5 | Local release ready; unpublished |
-| Engineering Translation | 72/72; 7/7 | Local release ready; unpublished |
+| Earth and Environmental Sciences | 74/74; 3/3 | [Published v1.0](https://doi.org/10.5281/zenodo.21640810) |
+| Astronomy and Cosmology | 72/72; 53/53 | [Published v1.0](https://doi.org/10.5281/zenodo.21640812) |
+| Social and Collective Systems | 72/72; 5/5 | [Published v1.0](https://doi.org/10.5281/zenodo.21640814) |
+| Engineering Translation | 72/72; 7/7 | [Published v1.0](https://doi.org/10.5281/zenodo.21640816) |
 
 The ordered live corpus contains 1,319 model-admitted claims, including the 90
 Chemistry Layer Two claims already admitted beyond its foundation. The global
 one-owner V1/V2 ledger merge remains a separate final-ToE obligation; each
 foundation's complete 763-entry branch-specific review is already preserved in
-its ledger or atomic audit. The heavy complete verification is pending its one
-final run after this shared reconciliation.
+its ledger or atomic audit. The complete all-foundations verification passed on
+28 July 2026: 1,319/1,319 registered derivations replayed, 969/969 tests passed,
+and the run completed in 4,753.740 seconds (1 hour, 19 minutes, 13.740 seconds).

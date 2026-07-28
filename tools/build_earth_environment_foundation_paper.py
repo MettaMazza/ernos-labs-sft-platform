@@ -212,6 +212,8 @@ def main() -> None:
 
 **Earth and Environmental Sciences Foundational Branch Paper 001, version 1.0.0 - Smithian Fold Theory V3 Clean-Room Reconstruction**
 
+**DOI:** [10.5281/zenodo.21640810](https://doi.org/10.5281/zenodo.21640810) · **Published open access:** 28 July 2026
+
 ## Abstract
 
 This paper reports the current-evidence-closed, extension-open foundation of Earth and Environmental Sciences in the third clean-room Smithian Fold Theory reconstruction. Seventy-four obligations in twelve ordered families generate 18,944 exact candidate forms and decisions, seventy-four unique survivors, seventy-four depth-independent certificates, 296 passing adverse controls, seventy-four implementation-distinct reconstructions and seventy-four post-seal empirical-boundary comparisons. Every dependency chain reaches the single premise-free theorem, There Is No Nothing. The branch uses zero axioms, zero free or fitted parameters, no negative proof quantities, no irrational or imaginary proof values, no target-selected law and no opaque predictor.
@@ -239,7 +241,7 @@ All 356 V1 rows and 407 V2 steps were atomically reviewed. The three Earth-owned
 
 ## Status and scope
 
-**LOCAL PREPUBLICATION MANUSCRIPT. Publication is not yet authorized.** Building this paper performs no push, release, upload, DOI creation or Zenodo action.
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** The canonical release contains this Markdown paper, its rendered PDF, the evidence/source archive and checksum ledger.
 
 Foundational closure means every question in the frozen seventy-four-obligation Layer One surface has one engine-admitted theorem inside its declared exact grammar, with a complete root path, adverse controls, independent reconstruction and purpose-matched post-seal comparison. It does not claim the complete Layer Two reconstruction of every Earth discipline and it does not permanently lock the branch. Lawful extensions remain open through the same public engine.
 
@@ -313,11 +315,11 @@ This is how Earth science remains empirical without becoming answer-selected. A 
 ## Repository and publication status
 
 - Canonical repository: https://github.com/MettaMazza/ernos-labs-sft-platform
-- Zenodo DOI: not created; separate authorization required
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21640810
 - Author: Maria Smith, Ernos Labs
 - Contact: Maria.Smith.Sftoe@gmail.com
 - Submissions: https://discord.gg/ucwGryVxGr
-- Current state: local prepublication; no remote action performed
+- Current state: published open access
 
 ## References
 

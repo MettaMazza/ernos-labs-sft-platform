@@ -4,7 +4,8 @@
 
 **Maria Smith — independent researcher and founder, Ernos Labs**  
 **Smithian Fold Theory Engineering Translation Paper 001 — Version 1.0.0 — 28 July 2026**  
-**Current-evidence closed, extension-open foundation — local prepublication manuscript**
+**DOI:** [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816)  
+**Current-evidence closed, extension-open foundation — published open access**
 
 > This paper derives the constitution that turns an admitted law into a bounded, testable and accessible artifact without allowing the artifact to rewrite the law. Seventy-two obligations were fixed before external standards or performance records were opened; 18,432 forms were exhaustively decided; one preserving form survived for each law; independent implementations reconstructed every survivor; and post-seal primary engineering handbooks, standards and public guidance tested the evidence boundary. Requirements, versions, alternatives, failures, uncertainty, accessibility and lifecycle remain visible. The result is current-evidence closed and extension-open.
 
@@ -5134,9 +5135,9 @@ Every later extension will be decomposed into nonduplicate obligations, sealed b
 
 ## Reproduction and present validation state
 
-During branch construction the repository uses proportionate checks: both immutable seals around each admission, one 256-form census and independent reconstruction per claim, and the six Engineering-focused tests after integration. The heavy repository-wide one-command verification is deliberately reserved until every remaining foundation branch has been integrated. This avoids repeatedly consuming reviewer time while preserving the same protected admission authority. The final run will be timed and its completion date and duration recorded in the public documentation.
+During branch construction the repository used proportionate checks: both immutable seals around each admission, one 256-form census and independent reconstruction per claim, and the six Engineering-focused tests after integration. After all fifteen foundations were integrated, the untouched repository command `python3 -m sft verify-all` passed on 28 July 2026: 1,319/1,319 derivations replayed, 969/969 unit and end-to-end tests passed, 1,264/1,264 core executable lines covered, 1,011 empirical claims audited, 114/114 formal Physics claims reaching measurement and 5/5 live exact NIST/CODATA checks. The measured runtime was 4,753.740 seconds.
 
-This branch passed 72 sequential admissions, 72 independent validators, 18,432 candidate decisions, its integration audit and six focused tests. Neither the engine nor verification authority was modified. Remote publication remains unauthorized at this stage; the paper and evidence release are prepared locally for later explicit approval.
+This branch passed 72 sequential admissions, 72 independent validators, 18,432 candidate decisions, its integration audit and six focused tests. Neither the engine nor verification authority was modified. The paper and evidence release are published open access at DOI [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816).
 
 ## Rights, participation and scientific admission
 

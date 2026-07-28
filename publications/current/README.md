@@ -8,12 +8,12 @@ directory name does not assert current scientific completeness.
 ## Current boundary and published roadmap successors
 
 The papers below are real published, citable archival records.
-Their claim packages and receipts remain immutable. Later ownership audits and
-same-strength reconstructions repaired the earlier completion boundary through
-Physics; the Chemistry foundation is now secure and 90 further Chemistry laws
-have also been admitted through ORG-011. Materials now has 92 admitted laws,
-including complete 56/56 V1/V2 Materials ownership reconciliation, while its
-complete-field programme remains open.
+Their claim packages and receipts remain immutable. All fifteen registered
+branch foundations are now published. Later ownership audits and same-strength
+reconstructions repaired the earlier completion boundary through Physics; the
+Chemistry foundation is secure and 90 further Chemistry laws have also been
+admitted through ORG-011. Every complete-field programme remains open until its
+dated field census has been fully admitted at the same standard.
 
 The project now uses one rule for every branch: first publish a complete
 foundational reconstruction, then extend the same paper through sequential
@@ -43,6 +43,13 @@ the subsequently completed Materials release is recorded in
 | Physics | [From Fold to Physics](../successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_2.md) | [10.5281/zenodo.21627765](https://doi.org/10.5281/zenodo.21627765) | 349 laws and 488 prior atoms current-evidence complete; v1.2 roadmap published; extension-open |
 | Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21627782](https://doi.org/10.5281/zenodo.21627782) | Foundation 86/86 secure; 90 further laws admitted; v1.2 published; 97 continuation operations remain |
 | Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21629306](https://doi.org/10.5281/zenodo.21629306) | Version 1.2; 92 laws and 56/56 prior Materials atoms current-evidence closed; extension-open |
+| Biology | [From Fold to Life](biology/FROM_FOLD_TO_LIFE.md) | [10.5281/zenodo.21630203](https://doi.org/10.5281/zenodo.21630203) | Version 1.0; 75 foundational laws and 30/30 prior Biology atoms current-evidence closed; extension-open |
+| Medicine | [From Fold to Medicine](medicine/FROM_FOLD_TO_MEDICINE.md) | [10.5281/zenodo.21630785](https://doi.org/10.5281/zenodo.21630785) | Version 1.0; 72 foundational laws and 5/5 prior Medicine atoms current-evidence closed; extension-open |
+| Consciousness and Cognitive Science | [From Fold to Consciousness](consciousness_cognitive_science/FROM_FOLD_TO_CONSCIOUSNESS.md) | [10.5281/zenodo.21636397](https://doi.org/10.5281/zenodo.21636397) | Version 1.0; 72 foundational laws and 46/46 prior atoms current-evidence closed; extension-open |
+| Earth and Environmental Sciences | [From One World to Earth](earth_environment/FROM_ONE_WORLD_TO_EARTH.md) | [10.5281/zenodo.21640810](https://doi.org/10.5281/zenodo.21640810) | Version 1.0; 74 foundational laws and 3/3 prior atoms current-evidence closed; extension-open |
+| Astronomy and Cosmology | [From One Sky to Cosmos](astronomy_cosmology/FROM_ONE_SKY_TO_COSMOS.md) | [10.5281/zenodo.21640812](https://doi.org/10.5281/zenodo.21640812) | Version 1.0; 72 foundational laws and 53/53 prior atoms current-evidence closed; extension-open |
+| Social and Collective Systems | [From One Relation to Society](social_collective_systems/FROM_ONE_RELATION_TO_SOCIETY.md) | [10.5281/zenodo.21640814](https://doi.org/10.5281/zenodo.21640814) | Version 1.0; 72 foundational laws and 5/5 prior atoms current-evidence closed; extension-open |
+| Engineering Translation | [From One Law to a Working World](engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD.md) | [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816) | Version 1.0; 72 foundational laws and 7/7 prior atoms current-evidence closed; extension-open |
 
 ## Machine-readable current gate
 
