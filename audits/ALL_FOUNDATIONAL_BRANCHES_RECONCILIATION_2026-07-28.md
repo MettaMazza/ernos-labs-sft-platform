@@ -39,6 +39,15 @@ sealed and published Physics v1.1 surface contains 349 claims and complete
 488/488 atomic ownership. That mismatch is preserved as a halt. No test,
 verifier, engine byte or authority seal has been edited to hide it.
 
+Git provenance makes the mismatch exact. Commit `27fab0ce` introduced the
+285-claim blocked-state expectations on 25 July. Commit `b48c3960` completed and
+published the 349-claim Physics v1.1 surface with its 488/488 atomic audit on 26
+July, but did not version-update that historical test. The focused file now
+reports two passing tests and six failures, all within those superseded
+publication-state assertions. Correcting the test requires Maria Smith's
+explicit authorization because validation files must never be changed merely
+to obtain a pass.
+
 The machine-readable companion record contains the complete branch table and
 the exact distinction between branch-specific foundational reconciliation and
 the still-open global one-owner merge required for the final TOE paper.
