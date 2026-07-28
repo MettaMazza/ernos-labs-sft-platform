@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-V4-HANDOFF-001",
+  "data_source_ids": [
+    "CISA-SECURE-BY-DESIGN-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f9e53148f1915175e56f35cbcc3584b98346c8b1da5a6d2541d0c2cdd2eacbb1",
+  "falsification_condition": "Reject if a self-hosted implementation becomes authority merely by reproducing itself or changes the protected V3 record.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ac22e507cd814b09f06c63dcd2c2584ccbafec8cd281661d52666c42384c8d44",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0d40fe06797b16619448212b4764f3dab03ea25b382fdd4ddd245d1224c5af3a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-V4-HANDOFF-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ef7c929d435475436039333acb7c7b9bda30b88e8a690a2905142be0d06b4b28",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ad34d42ae360142495ebf7bd222b86bc84aaaaa7e5dc6c8184da3b8351411f61",
+    "prediction_seal_hash": "sha256:ac58f6e0a307422fae30c1f8232454e9d4e3026a6cfb81c6a2775173bbd33342",
+    "program_hash": "sha256:16fd9847d98ebae8e4bb2318bf6321b4d73a02b0771c4d0a75d9a911258f94e3",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f3b8ba3930df6f54efa112e5754aff24651304af2af2ec0a699df25003db01ef",
+    "target_material_present": false,
+    "trace_hash": "sha256:d88bfd27e6b5bd204c92033a43fae2e15f2c9fc53a75e86e0ded4216ce503dbc"
+  },
+  "measurement_receipt_hash": "sha256:cec4ed46540039f99dcb778e12eef969f79ba522ee60b3a32d3389b5d8ff117f",
+  "measurements": [
+    "sft-eng-v4-handoff-001-external-engineering-record: predicted engineering:v3-corpus-language-compiler-runtime-carrier__admitted-semantics-to-self-hosted-rebuild-relation__all-upstream-receipts-specification-bootstrap-tests-divergences-and-provenance-held__future-rebuild-authority-bounded; observed engineering:v3-corpus-language-compiler-runtime-carrier__admitted-semantics-to-self-hosted-rebuild-relation__all-upstream-receipts-specification-bootstrap-tests-divergences-and-provenance-held__future-rebuild-authority-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:def818d1b3b9223f5e4dc18be734cbc567b979ac2df4e18bdf46a0f509b35f2d",
+    "custodian_id": "SFT-EXP-ENG-V4-HANDOFF-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:f9e53148f1915175e56f35cbcc3584b98346c8b1da5a6d2541d0c2cdd2eacbb1",
+    "prediction_seal_hash": "sha256:ac58f6e0a307422fae30c1f8232454e9d4e3026a6cfb81c6a2775173bbd33342",
+    "registered_target_identity_hash": "sha256:f3b8ba3930df6f54efa112e5754aff24651304af2af2ec0a699df25003db01ef",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:eef9b03ddd11169b129d300b7f9f38c600488fc63502992e84f3daded273e9a3"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:adc9b2ebc17ca1bcc9233c9a1d6b8f9e565c29ee96ea6bbefd18d70c6343165e"
+}

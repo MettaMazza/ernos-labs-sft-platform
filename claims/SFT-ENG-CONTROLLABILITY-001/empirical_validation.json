@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-CONTROLLABILITY-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:45267b8707a374d9a5b84e9bad960bed31deb506564e7a9ecbb0a058080d3a78",
+  "falsification_condition": "Reject if an unreachable state is assumed or an unlimited actuator proves reachability.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5018a6234711324e43636c996adb11170325bf7eb612de16147ea7bd4e922437",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:d3e1bb0d3b02cd17e0d62c2d43e335bd0293208b88abd33aab159825a4214784",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-CONTROLLABILITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cda20eccec72dd7084a36e7eaf00d0608923bf322b384d30a2cd4ca8098ab5e8",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:33c57869fe806fd9ae6c7b042d02658ecdfa6b1a8a13a3dbd037447dad0e3635",
+    "prediction_seal_hash": "sha256:50cc0acceeabfeecc74dae9ae77991a6c366fc514523f84edde795a13d34ecdd",
+    "program_hash": "sha256:1355ca96e83353d9ff5a52bdf0120abdd2da843e07b461be8b08c0019e0dd364",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8433a8a43b4cdf1938a5a2ae5dd661096e2fff3c43351d86bee9f6b2f98fe6ca",
+    "target_material_present": false,
+    "trace_hash": "sha256:1ec93c7901a304404504898082c510fd2ebc9ffeb3fd638eed9ab2d55cac4ef5"
+  },
+  "measurement_receipt_hash": "sha256:b4b35399c73dabbb170f56fdabb2420b0c06cc7daaeb5741c0165a9e081b6e80",
+  "measurements": [
+    "sft-eng-controllability-001-external-engineering-record: predicted engineering:initial-target-action-sequence-carrier__bounded-input-to-state-transition-relation__states-actions-limits-duration-path-and-failures-held__reachable-set-bounded; observed engineering:initial-target-action-sequence-carrier__bounded-input-to-state-transition-relation__states-actions-limits-duration-path-and-failures-held__reachable-set-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:add056d398089964d7d04e5645fe2192962c2d8dd092833d698d70941113fb2d",
+    "custodian_id": "SFT-EXP-ENG-CONTROLLABILITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:45267b8707a374d9a5b84e9bad960bed31deb506564e7a9ecbb0a058080d3a78",
+    "prediction_seal_hash": "sha256:50cc0acceeabfeecc74dae9ae77991a6c366fc514523f84edde795a13d34ecdd",
+    "registered_target_identity_hash": "sha256:8433a8a43b4cdf1938a5a2ae5dd661096e2fff3c43351d86bee9f6b2f98fe6ca",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:6b59f08baee7b9bd985617a416cf8acdff40b6173c3e48af30072ce07d44e480"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fcede7a41b161cf74535677f72affe49c5c4d8fedea505e28b87164fd0960ac6"
+}

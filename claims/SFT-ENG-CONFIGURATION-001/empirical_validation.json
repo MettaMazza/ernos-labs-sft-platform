@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-CONFIGURATION-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:3d72cc63a047b3ce0b1e9cf16a0261f7353faae7153dee4695b63aca7e1b22e0",
+  "falsification_condition": "Reject if mutable latest versions or hidden settings preserve the same identity.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:1f08688811f0925a05bf8034659727e7c85d4a34ab108da607342dedf9f1de66",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:44d78d10e443bd8de770b21da4cf5c832aac5ca6e34109f9403c44f9e06b49bd",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-CONFIGURATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0c44201742f3b2b37d2e269325a7d3bd6eaa4e32757b5b5eeef4388b3a9242c2",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:bb06c267e8d23b999fe4e21b746446c6d971865d4f49d358716e1c3fb9c690f8",
+    "prediction_seal_hash": "sha256:5cdbc1f30a54cf682e84ac1564129db0248380c540402a16cde1c2ef17eb5fcb",
+    "program_hash": "sha256:266119f2f0ed2187b46d4e186af4b851bb8d4305777b833beefc67bc50c39400",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6ce73e2a1af169ad48f80b21142a46965f315bea838d3e2b6e8d9a8ee1669898",
+    "target_material_present": false,
+    "trace_hash": "sha256:5e9bebc8d990063547efdc99156a2f4fcf7bee7ca2f1e9267c859034e50e6caa"
+  },
+  "measurement_receipt_hash": "sha256:6eb3c481e3d224779747b76fbcce8c266a4f96bff1a974cac12b4e6cd3a6b4bf",
+  "measurements": [
+    "sft-eng-configuration-001-external-engineering-record: predicted engineering:artifact-version-dependency-environment-carrier__configuration-to-reproduced-behaviour-relation__source-dependencies-settings-platform-hashes-and-date-held__configuration-baseline-bounded; observed engineering:artifact-version-dependency-environment-carrier__configuration-to-reproduced-behaviour-relation__source-dependencies-settings-platform-hashes-and-date-held__configuration-baseline-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2bc9b509a63709539b10530aa2b3331e8150f948f555cdf4f0e28ab2ea58c738",
+    "custodian_id": "SFT-EXP-ENG-CONFIGURATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:3d72cc63a047b3ce0b1e9cf16a0261f7353faae7153dee4695b63aca7e1b22e0",
+    "prediction_seal_hash": "sha256:5cdbc1f30a54cf682e84ac1564129db0248380c540402a16cde1c2ef17eb5fcb",
+    "registered_target_identity_hash": "sha256:6ce73e2a1af169ad48f80b21142a46965f315bea838d3e2b6e8d9a8ee1669898",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f21061b095830fa8147a6405f769afb1a3b43a2777f5b7aeb812fec99830611b"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2b19de499bdeb7b4351fe3214fc7b424fac18a3740e73d5b0ba8cad0a435aa19"
+}

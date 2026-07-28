@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-EFFICIENCY-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:3bb4acae28ca49254728fa8427f26c811b117a3a914fbb01c1ed4e294485e52f",
+  "falsification_condition": "Reject efficiency above the closed resource account or omit externalized loss.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f04e3669cf9e80a68322b728ce95a323f8cf5c2272d7b18c5c298a9a3c17397f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fb71b9c58a61b81693b6ae41bca7d739cd0c6771db45d7eebd48959f1c36f4e0",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-EFFICIENCY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:50b6244901fb001d2d87a0ab323fc14ddf0d92b0bb93e5986e6ef494c759d750",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3cea9862ebf62e15715a02d9f8ba4527cb2ee083437b8e674703a720b397f6fc",
+    "prediction_seal_hash": "sha256:e3cc42c756a322b6a878aff7dd94bf47ba01ca8f63547c8849d9c737e1156e84",
+    "program_hash": "sha256:fe9dab7d7ad4219a63c08203c64da70753e8da59010fad09bba1d8aca7a38f57",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:83428304898b8f2ed15f9e6b3c7732b6199b4194fbe5a8092b71a7810be948d0",
+    "target_material_present": false,
+    "trace_hash": "sha256:eb2d5046d08af287aec6bfc60b2a9521e1dc439638952391cd072f5e9e24d8d1"
+  },
+  "measurement_receipt_hash": "sha256:0c5d9e5598c44bcc6623ffe7450c79c739a10bca2f4e4caf2fe289afb366f2ed",
+  "measurements": [
+    "sft-eng-efficiency-001-external-engineering-record: predicted engineering:input-useful-output-loss-carrier__accounted-output-to-input-relation__boundary-input-output-loss-time-and-uncertainty-held__efficiency-boundary-declared; observed engineering:input-useful-output-loss-carrier__accounted-output-to-input-relation__boundary-input-output-loss-time-and-uncertainty-held__efficiency-boundary-declared; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:77a3f2c6b0c027e10afa3c177fb141717be708da7ea140e6c88ac0e6729f3297",
+    "custodian_id": "SFT-EXP-ENG-EFFICIENCY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:3bb4acae28ca49254728fa8427f26c811b117a3a914fbb01c1ed4e294485e52f",
+    "prediction_seal_hash": "sha256:e3cc42c756a322b6a878aff7dd94bf47ba01ca8f63547c8849d9c737e1156e84",
+    "registered_target_identity_hash": "sha256:83428304898b8f2ed15f9e6b3c7732b6199b4194fbe5a8092b71a7810be948d0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:5879cf2fd04d07e29b489732a240171a51501b0cad0993d039e1faa2ba138adc"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e53a9e26a49a45d121b041d7d5dca7fd764e2e89536dce4b62844a9f4ec7049a"
+}

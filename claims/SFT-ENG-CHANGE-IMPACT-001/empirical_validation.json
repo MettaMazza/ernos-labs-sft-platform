@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-CHANGE-IMPACT-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:97f905e785a5000499fc5978c35f0922d022b359b5433100a7addf3f06ac39c6",
+  "falsification_condition": "Reject if a changed dependency is declared irrelevant without trace evidence.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:acfdca247089ed5f6a87ddd448e8c9a9e33b266258a1b7442c44975928c833d6",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:442002639a73dba5e026b38fa77d7ee4550a37a42fb7927d0d88c1394a2847cb",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-CHANGE-IMPACT-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e0970aa58c0d6d2713e6983825d4eea4316d287207450363bb7c0eda12ec017e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d1dd99854aa02dd3e7b8a39122400999f35ac78f5d3be0dad3f2aa6fbeb1e1fa",
+    "prediction_seal_hash": "sha256:2f90b35eff9793e718ebb59fa24e2f6d21c77aced81e83e7070101e369e1e725",
+    "program_hash": "sha256:ba421bb31bb5a4802955025fc9c7e62971761fadaf58aa2ed0c2180c16a87ce5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:1c02fee2bdc77fc7006309d8e2d84a5b9000b98eb0fde94b63dff0dd09ecfc21",
+    "target_material_present": false,
+    "trace_hash": "sha256:e96f4b88047b9eb7f98e08e8cc8d9f11918cd895843404eb4469bde18d23f660"
+  },
+  "measurement_receipt_hash": "sha256:e717099b9366cc4d49c32b4ca0842ebeea67deab61fa2a75ec6220e95b05667a",
+  "measurements": [
+    "sft-eng-change-impact-001-external-engineering-record: predicted engineering:baseline-change-dependency-carrier__changed-element-to-affected-evidence-relation__proposal-links-risks-tests-results-and-rollback-held__dependency-graph-bounded; observed engineering:baseline-change-dependency-carrier__changed-element-to-affected-evidence-relation__proposal-links-risks-tests-results-and-rollback-held__dependency-graph-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:479488f81c6f70daf41c18aef97205c8f6f87620b107f520bd27f67d17b13d7d",
+    "custodian_id": "SFT-EXP-ENG-CHANGE-IMPACT-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:97f905e785a5000499fc5978c35f0922d022b359b5433100a7addf3f06ac39c6",
+    "prediction_seal_hash": "sha256:2f90b35eff9793e718ebb59fa24e2f6d21c77aced81e83e7070101e369e1e725",
+    "registered_target_identity_hash": "sha256:1c02fee2bdc77fc7006309d8e2d84a5b9000b98eb0fde94b63dff0dd09ecfc21",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ae3ed73fd7a0cb80a6e00240b258bb39ae4ad80a1e98c4dd2545efca5b7e3866"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e7b4b036ddd8cc533af1bac0e5f65563fd4008bcbcfcfe2dab113826d14695b7"
+}

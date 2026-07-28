@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-MODULARITY-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bc3933947bb6935be60a622dfc49ed9de67aaa3264f0e70f2186cc5eabae2704",
+  "falsification_condition": "Reject if decomposition hides cross-module state or failure coupling.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c311cf2e1272caf60c179d147b635725c9ba90e7601e107cb03fa399a57b7c39",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:98270128eb33e5b9995bbb4b826ca9b2c367ae47caae7e721127c52eb8b6d046",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-MODULARITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:37569cc845281adedacde14a2f4423d01602df96b31d0867ac5772d6668c349d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e4160bb71a28921af54d832e29757f666fcd5dad60ab74c691323ba89e6d0ae8",
+    "prediction_seal_hash": "sha256:2205eef64a0dba6df347e0b5b23d53615bbd68779e574ca89b2de6c62d3c960d",
+    "program_hash": "sha256:845550b8552502af22641d32038a2d76a138268a15be414b1be2ad63cdca453a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7162e56f3711b74141fe66ea285e6da8fcd5b04c2aff4842f4f4149914706d7e",
+    "target_material_present": false,
+    "trace_hash": "sha256:60deb4d8fa28805af1748f4bd3ad8e8dee6a3bbf94ff4a061b7dcf423f30ee88"
+  },
+  "measurement_receipt_hash": "sha256:d390b7e5c1c32ab7653f8c4cf717a1b4b6469f788fd58091b980436c2766725a",
+  "measurements": [
+    "sft-eng-modularity-001-external-engineering-record: predicted engineering:system-partition-interface-carrier__decomposition-recomposition-relation__partition-contract-coupling-state-loss-and-tests-held__decomposition-boundary-declared; observed engineering:system-partition-interface-carrier__decomposition-recomposition-relation__partition-contract-coupling-state-loss-and-tests-held__decomposition-boundary-declared; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:257b61e791b65c54ef6f21ed85cb319219e4ab5f0eb180d943dfe443d0c61767",
+    "custodian_id": "SFT-EXP-ENG-MODULARITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:bc3933947bb6935be60a622dfc49ed9de67aaa3264f0e70f2186cc5eabae2704",
+    "prediction_seal_hash": "sha256:2205eef64a0dba6df347e0b5b23d53615bbd68779e574ca89b2de6c62d3c960d",
+    "registered_target_identity_hash": "sha256:7162e56f3711b74141fe66ea285e6da8fcd5b04c2aff4842f4f4149914706d7e",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:bdcad3067b0f187b50ca5d7f7764e0e4da1ae1ac3ecc616d1fa607cc2c7ac089"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:99aab7daea7e20b09c0ea1437131d11843a488429637173f1d371fabe84172ab"
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-OPERATING-BOUNDARY-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:24596646db7794ad5cfc256322922b2ad5120fc0e5703b36acae6b1af6022cc8",
+  "falsification_condition": "Reject if success inside one test envelope is universalized beyond its registered boundary.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:576e8bb655e4028f16fff50433f9d0feb96a04d434b47c4090bfd8edbae47fa0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:66e87bc070979f520d141890b3b128f9695e2e570c56b6cceb803991e4a3efe3",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-OPERATING-BOUNDARY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cea4bf7c1bc9dbf55d8f13c9c8a3ce4e3e6cb4c8ea626b212c9f32a73af081e6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:45c40f9b559fc692e9c35930d585642072af5f8b9396e4a977048e56a30afa70",
+    "prediction_seal_hash": "sha256:9d4bb12e1d37ef15bc5bf5523b7e248887131471a346f83a886994f61798657a",
+    "program_hash": "sha256:9cb65452efdfb99f7facb777c989d67a862eb9b3f4886d7d62dc2f3833b35bf3",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2e0190a4084da98482b29b0004ae7a501e83a824947ae62a3413a050abebdee5",
+    "target_material_present": false,
+    "trace_hash": "sha256:e91c5f76814220b67431cb111cc8a73c47647f5fe573aa27ff144af627f7716c"
+  },
+  "measurement_receipt_hash": "sha256:5d8b18d2b77a0b03dad7621be0a8a224447fad50583b037e7cff03e39b85fedc",
+  "measurements": [
+    "sft-eng-operating-boundary-001-external-engineering-record: predicted engineering:system-environment-state-limit-carrier__condition-to-valid-operation-relation__conditions-duration-loads-transients-exceptions-and-failures-held__declared-operation-envelope; observed engineering:system-environment-state-limit-carrier__condition-to-valid-operation-relation__conditions-duration-loads-transients-exceptions-and-failures-held__declared-operation-envelope; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:01060cb79d61c7384dc418cb30f98e78120c5191dc9f08226ce80edaed9e4f25",
+    "custodian_id": "SFT-EXP-ENG-OPERATING-BOUNDARY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:24596646db7794ad5cfc256322922b2ad5120fc0e5703b36acae6b1af6022cc8",
+    "prediction_seal_hash": "sha256:9d4bb12e1d37ef15bc5bf5523b7e248887131471a346f83a886994f61798657a",
+    "registered_target_identity_hash": "sha256:2e0190a4084da98482b29b0004ae7a501e83a824947ae62a3413a050abebdee5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b31ba6cc4dbe8458bd47b1f1c9631b1551f85843d44a848586fdd40c25579ceb"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1575ba4d03cf91565f594dc9d5b3a2540a0282950b5fdaab73f9d90be4b71b26"
+}

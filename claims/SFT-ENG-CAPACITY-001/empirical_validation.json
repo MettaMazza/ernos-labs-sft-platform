@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-CAPACITY-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:78adc4dba438d0a5b373938a0c140d0271b0dfbfeb92031081e166d510cd507c",
+  "falsification_condition": "Reject if peak, average or one successful load is universalized.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5a13492904e0dab659b68e7452f317e35557a10a39764aca8d7055693f784352",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f3a815f900820d88be8a2aa8323aa57d67d47ed04bb81bd0644b41d695012e6f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-CAPACITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:86adcb0fdaf1c5c47897aeb7baf80396284677de941c4fa894a88f846e92dff5",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9374c060a07333ea2c5a5c40611aefb2c6a3ecdc2c485414584e0417c3ce50e0",
+    "prediction_seal_hash": "sha256:176b73590e84f65a31f89ab83bacc06ac49882751471381afa4d90989b62b41f",
+    "program_hash": "sha256:aa1ddace34e679f3f50ca7c124618d7445254323924a03dc37944b0ec687aeb7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6ddde953dbac94a412b043504340917941f013211374557150417ec9f92fbec7",
+    "target_material_present": false,
+    "trace_hash": "sha256:fe89176bbd6da28c196036a58c11fc6c20625a7d1045fa4d8413cb34f29b9ab7"
+  },
+  "measurement_receipt_hash": "sha256:0658d58f30f2b78157aefc851b57e32047791af413d9464498290534607e4c58",
+  "measurements": [
+    "sft-eng-capacity-001-external-engineering-record: predicted engineering:system-demand-capability-carrier__load-to-service-relation__demand-capacity-duration-queue-degradation-and-failure-held__load-profile-bounded; observed engineering:system-demand-capability-carrier__load-to-service-relation__demand-capacity-duration-queue-degradation-and-failure-held__load-profile-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f329f07ac51fc101950d6d5fbf7731e80058dee39a81b2de7b28c29b5f86b0ef",
+    "custodian_id": "SFT-EXP-ENG-CAPACITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:78adc4dba438d0a5b373938a0c140d0271b0dfbfeb92031081e166d510cd507c",
+    "prediction_seal_hash": "sha256:176b73590e84f65a31f89ab83bacc06ac49882751471381afa4d90989b62b41f",
+    "registered_target_identity_hash": "sha256:6ddde953dbac94a412b043504340917941f013211374557150417ec9f92fbec7",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:407b240719388d44d40a62f168a95f6a3e200633d3dca36abf4439b7b3550043"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e40e1a26fc3b5836762ac7e2559bd8de458883f6b5158f9b8126a046208f5176"
+}

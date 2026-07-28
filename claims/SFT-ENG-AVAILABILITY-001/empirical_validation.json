@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-AVAILABILITY-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:a94f093f426ad408c061a126a374ed1fc9ee6a3c08787469336558b188a46520",
+  "falsification_condition": "Reject if scheduled observation or missing monitoring becomes uptime.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bb905aea48eeddf2f5d641ac4e1719e89bbebf256202f5264adfaf9e4af2b17e",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:516d25ce14cd014461496a335663638266038f29f4513808abd266e6b331d5cd",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-AVAILABILITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6599d643f71e5fa5d495d7b2590d804c3ba2621e8f2a2798cfd6d36ea200b9dd",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:5dcc4a58232a5222f102bf6b3e0fd51c0fc4eadca4a27477ac81dd987b1d9568",
+    "prediction_seal_hash": "sha256:83333600be4c963923d06d8e759ddc561091db62315509072ccd6ed86b715d67",
+    "program_hash": "sha256:3ff09f8d7c2a529aeeeba4778f57a78f3b030522e68dfc81292f15a3ce4a95a7",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ec833bddb3580600a9d5dd7f8a53054a84078569ffd8dd6157b241f13541b137",
+    "target_material_present": false,
+    "trace_hash": "sha256:9875f29f38eeb6d7006da0f97c9235119db867895c09e66d70eff4e24cbf80bc"
+  },
+  "measurement_receipt_hash": "sha256:488232642905d21b5b3148f863b9eaf4e180e0bcfa3829cc18e169cd7e19ef14",
+  "measurements": [
+    "sft-eng-availability-001-external-engineering-record: predicted engineering:system-service-time-state-carrier__serviceable-time-relation__uptime-downtime-cause-maintenance-demand-and-window-held__availability-window-bounded; observed engineering:system-service-time-state-carrier__serviceable-time-relation__uptime-downtime-cause-maintenance-demand-and-window-held__availability-window-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:ae4d324c500524c0afd44ba13f2e4538f8587be9a69ee19c8f36453dc21ac345",
+    "custodian_id": "SFT-EXP-ENG-AVAILABILITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:a94f093f426ad408c061a126a374ed1fc9ee6a3c08787469336558b188a46520",
+    "prediction_seal_hash": "sha256:83333600be4c963923d06d8e759ddc561091db62315509072ccd6ed86b715d67",
+    "registered_target_identity_hash": "sha256:ec833bddb3580600a9d5dd7f8a53054a84078569ffd8dd6157b241f13541b137",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:17898a3378f7fedf1cd22b7f71b5d6acfcee66dfad7a3a6fce7b51330a7bbe9e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d6949264c4d9cf38876a0391316e39f9f83b6a2826abec9f9bdd8df717e1c561"
+}

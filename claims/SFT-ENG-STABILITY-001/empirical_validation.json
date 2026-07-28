@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-STABILITY-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:511de1824d5845edf4b59c251c7464bbdbcee849954fce687e7dd899187e0b73",
+  "falsification_condition": "Reject if one settled trace proves global or infinite-time stability.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:e907dec7a0dcee043a5166bb11aa9db2df90b9498b62f02c760fec3da2f25360",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b83f29faafa506117856a8c80ca341f4e178c98cd7b99ea1227e53ffcb8235fc",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-STABILITY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b16e5cdf43430464ca55571cd75af9b304799b824326331a529056ff130e4fbd",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3514e8e9107fa00939fdaef77a4c4d26ab551f1f9f8213f4acf90c21050b0540",
+    "prediction_seal_hash": "sha256:9f93bfb9ac756ace8f7fd5c23a211a05da877205c4f0b8b1a4446abc26dc974d",
+    "program_hash": "sha256:42fddd8633830c209f84179432a4c671af596a7240b80b2d90ccd51900190011",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:32dfb52b5a4a658f10cf724ebbf616319460d7a743647f15208e66f68d17a84d",
+    "target_material_present": false,
+    "trace_hash": "sha256:8b666813df03de5b26dbc41300e8e84cba559af91b4f5322e487cac2416610e0"
+  },
+  "measurement_receipt_hash": "sha256:8ccc533ce20059bd5cf582eca2ebe101eddcdca8c2d7f5e6624c29c72ef59eb5",
+  "measurements": [
+    "sft-eng-stability-001-external-engineering-record: predicted engineering:system-perturbation-bound-return-carrier__perturbed-trajectory-to-operating-region-relation__initial-state-disturbance-time-bound-overshoot-and-failure-held__stability-region-bounded; observed engineering:system-perturbation-bound-return-carrier__perturbed-trajectory-to-operating-region-relation__initial-state-disturbance-time-bound-overshoot-and-failure-held__stability-region-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:81368a2f5dc407c33d81790917730f79785d105d1e84434adb780c0cd0b5db7d",
+    "custodian_id": "SFT-EXP-ENG-STABILITY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:511de1824d5845edf4b59c251c7464bbdbcee849954fce687e7dd899187e0b73",
+    "prediction_seal_hash": "sha256:9f93bfb9ac756ace8f7fd5c23a211a05da877205c4f0b8b1a4446abc26dc974d",
+    "registered_target_identity_hash": "sha256:32dfb52b5a4a658f10cf724ebbf616319460d7a743647f15208e66f68d17a84d",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:518c7b97430439b3dcc944a55909837b686d433f2ca01e7331787a6a52a4b869"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:08f9cc443e6952a37f7cf4d11bee6f885b07c56e179eddb1eeede7e6557045a2"
+}

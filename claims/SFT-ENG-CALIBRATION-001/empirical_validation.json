@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-CALIBRATION-001",
+  "data_source_ids": [
+    "NIST-TRACEABILITY-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9ea27b2a2899ece7c9a2942424f06b2dcf72cddfe2fadb62d42e35dff86bfaae",
+  "falsification_condition": "Reject if adjustment, self-test or manufacturer status is called calibration without comparison.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:57e41926cec44527f04739726e038c6a181efec571cf5fb9943d6e5b108164fd",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:eddd59246c10e327596781006e705edcc615eb0a86c5ec2950477ab80876fa63",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-CALIBRATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:afa5b34cb8e9a7fba98c7e244ad11d74b77e0be65800ae1c1093769ea354dbc8",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:efeba8fb0440ea09179171c64a04732c5a77b27f6fd032d1a9a2e0124a42eb70",
+    "prediction_seal_hash": "sha256:eb1a196e40ef85aa3e3c3550024b3e25a8c02a82d2cfeac23dfc476b1cf00415",
+    "program_hash": "sha256:b2ad1c1271e6c1506a606a1682f815f05d4b9766efcb1fe6f75788d291d1f6db",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:888ad38521cb6dd122c6d0b0777fef31b2b7cf032d234a90ae96b59559905823",
+    "target_material_present": false,
+    "trace_hash": "sha256:9d316fdbd05aa6c07aa874043e6cde5ca8b6a5173adc84c21168ca16ecbaa81e"
+  },
+  "measurement_receipt_hash": "sha256:3b296c20520b169ea568c158fd06ee783de140cdcf55e15cd9046c3ec4b8d9c2",
+  "measurements": [
+    "sft-eng-calibration-001-external-engineering-record: predicted engineering:instrument-reference-condition-result-carrier__reference-to-indication-comparison__reference-traceability-range-condition-result-and-date-held__calibration-range-bounded; observed engineering:instrument-reference-condition-result-carrier__reference-to-indication-comparison__reference-traceability-range-condition-result-and-date-held__calibration-range-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2a200294b02299d618516bce4e6f3c52ed8f86775599d3b4c73204e779260300",
+    "custodian_id": "SFT-EXP-ENG-CALIBRATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:9ea27b2a2899ece7c9a2942424f06b2dcf72cddfe2fadb62d42e35dff86bfaae",
+    "prediction_seal_hash": "sha256:eb1a196e40ef85aa3e3c3550024b3e25a8c02a82d2cfeac23dfc476b1cf00415",
+    "registered_target_identity_hash": "sha256:888ad38521cb6dd122c6d0b0777fef31b2b7cf032d234a90ae96b59559905823",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:a5712572f4a0720134a4a95a471432543ac6e6c7fd9ba0b4a72792a9a2c8c64a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fbff96a9d04df72a02b7634abc16b8a6f64993acb980cff044b67001be8eedb3"
+}

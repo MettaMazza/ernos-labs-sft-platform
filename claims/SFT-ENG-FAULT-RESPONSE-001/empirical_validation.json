@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-FAULT-RESPONSE-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c5da74cfc0a2074a2642ea87a88a5293a67a2a93c480430491861f67d97eaa9c",
+  "falsification_condition": "Reject if no alarm proves no fault or response success erases missed detections.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5631b5849490af5b4c410fd81d2a31b20efeba35c266d7c972c55669eb9c24d1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a1582ae06b73324e63cfaa8cc0ff82d462ae2d89165570f86f570e7242654f43",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-FAULT-RESPONSE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9a78b2c93a8615725bffd95593e3c72a6aa4f3ed2c01ad42f98895bf18cd1536",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d20795609a8352e5622c4c57b0a09db1dca6127b026ffd3d4b052383ff2405b5",
+    "prediction_seal_hash": "sha256:5d1c85d9d7248b73b0e298487ca5c161417737307f02a77a04119fbed9571ecd",
+    "program_hash": "sha256:a76895d1138f20592676dd526b99eac399a212e7536c16306fd328f4225c9ee2",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2f4be6ee0dc5000fe1457552ba6653d44d564d6892348d0d1fc28283c345afd0",
+    "target_material_present": false,
+    "trace_hash": "sha256:80362b453a6191828699ee20f06f75cf0e5a920f5eabcde2b3aea4835dd1b2fd"
+  },
+  "measurement_receipt_hash": "sha256:bbcc9da269f3a4c9c7697849350ee744aa8c0e02727ae1388743284e64e31c33",
+  "measurements": [
+    "sft-eng-fault-response-001-external-engineering-record: predicted engineering:system-fault-sensor-response-carrier__fault-evidence-to-bounded-response-relation__fault-detection-latency-action-state-recovery-and-misses-held__fault-family-bounded; observed engineering:system-fault-sensor-response-carrier__fault-evidence-to-bounded-response-relation__fault-detection-latency-action-state-recovery-and-misses-held__fault-family-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2ae48557b80acfa2a48c8e78bb161535496be16c40b8c5c9c4234ad4a460e75d",
+    "custodian_id": "SFT-EXP-ENG-FAULT-RESPONSE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:c5da74cfc0a2074a2642ea87a88a5293a67a2a93c480430491861f67d97eaa9c",
+    "prediction_seal_hash": "sha256:5d1c85d9d7248b73b0e298487ca5c161417737307f02a77a04119fbed9571ecd",
+    "registered_target_identity_hash": "sha256:2f4be6ee0dc5000fe1457552ba6653d44d564d6892348d0d1fc28283c345afd0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:755c6fe896a939c5771883c6e832f7a1508e94e2f6470d50adb58108e3a994e6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fde4b490c31d2daf29a92fec6454accd9fb7b642e7240f10570969a17cec1005"
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-SIMULATION-001",
+  "data_source_ids": [
+    "NASA-SE-APPENDIX-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:3922a31e369d68b5617b0519563563b03a4cca1cc96784db012572a118b002e1",
+  "falsification_condition": "Reject if simulated output is relabelled measured performance.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cf42f29dd8ee6e26deb0a8d912d8b9e0a76185f8d7ed4cf528cb928159b77df1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4b2377e1da658efa17c8edea349a509636b8db29d61a4ccb27ff3ea295b3f727",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-SIMULATION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:e0bc65ad927d2127eba2ad6f94cd87e1e08a7abd1a1e88455cc4584ff03b16a9",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c7952c7fae3d6c8588781131907620baaba2906d3acecfd69294978cac4c82c6",
+    "prediction_seal_hash": "sha256:769d625a8b5c2433dd4775613e155478144a25efa6a7f3b5aaf5678aa2a8cc24",
+    "program_hash": "sha256:f9be0f4794a3616101a6c5110da2f46d3f44d14aa38b4b33375aba4dc03e7d66",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6cc9bb02c7f2a06443ab69da0fcd6f1af372694e77d15bfe836910a9267554b4",
+    "target_material_present": false,
+    "trace_hash": "sha256:55a48c80cad74dbc547beba6a994d66872c67221126cac1a948f56653b5c5aec"
+  },
+  "measurement_receipt_hash": "sha256:398b6ae1e386f0f8609cfcf4091ad44c488023a64345176ab05dda3a2b54afdb",
+  "measurements": [
+    "sft-eng-simulation-001-external-engineering-record: predicted engineering:model-input-assumption-output-carrier__declared-model-to-computed-result-relation__equations-discretization-inputs-assumptions-errors-and-comparison-held__model-and-resolution-bounded; observed engineering:model-input-assumption-output-carrier__declared-model-to-computed-result-relation__equations-discretization-inputs-assumptions-errors-and-comparison-held__model-and-resolution-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9379126fcbcfddf1ee2690960b6ab753a55873efb89b2beceb3f3e381e9da5dc",
+    "custodian_id": "SFT-EXP-ENG-SIMULATION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:3922a31e369d68b5617b0519563563b03a4cca1cc96784db012572a118b002e1",
+    "prediction_seal_hash": "sha256:769d625a8b5c2433dd4775613e155478144a25efa6a7f3b5aaf5678aa2a8cc24",
+    "registered_target_identity_hash": "sha256:6cc9bb02c7f2a06443ab69da0fcd6f1af372694e77d15bfe836910a9267554b4",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7a8e5f0a18258c90d520184deb035d1377e12f29f0ecee174714236958cf4987"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:cb5367823b7944ede9909a643368058f49c65dad6267dd8e03a8ce4ed20c0835"
+}

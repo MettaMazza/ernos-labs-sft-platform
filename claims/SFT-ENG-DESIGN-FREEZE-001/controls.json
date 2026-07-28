@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-DESIGN-FREEZE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a5d14e77fb52ca60a1c228cf39953ea55607c66c4aeed1f7a7c3ba4059821f9d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fd361e2ae1589b4c7ff1f63fedf63c9edaa80cd0d73b8c56b8237165f68a7aa7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a1ae211e7f1cf136ffe5e296e62d24983549a8bfe64bf8ca7f00d86654af7691"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:11fd365c1d0fba18e735cf2e701227fa46213dca20c0b49c6f5b86bf51ee360c"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-FAIL-SAFE-001",
+  "data_source_ids": [
+    "HSE-COMAH-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5ad12c8f16e8d16a51c76d99fd56494406f2018014f26cd8137c88a3ef5f4f88",
+  "falsification_condition": "Reject if an untested fault or silent continuation is called fail-safe.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:1ddb0ad785696eef6a4439af992a5ed20406dd21b51a0657767c84142cf3414d",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7eac42849e9c21ee2d613a695b3995adbecf676736b9f97ed1c5664995d16844",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-FAIL-SAFE-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b28105a3ea90ff567db1e58ac1d33a22748611bd51f4b6a2abdea7da6d43e6ce",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:0b25bcd3d94dbbc00e7fb8a1a3c674d5111c88cd78516321d17a2c4f202cabf6",
+    "prediction_seal_hash": "sha256:a9a7113199d364f22b25b0f15d3b2b46adee26eda87d10c0687486c5cfb25b34",
+    "program_hash": "sha256:5203deb6b022c5e5122e62a2b391e7b7b4a75bbdb239ae63801b0113a601838b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7c72e269d7b8c87a3771cee1fc42e51f84d1a1460e57758d71f9914e53ae85c0",
+    "target_material_present": false,
+    "trace_hash": "sha256:d0acb57f2fd8029309bfd2ced1741dec43c97182210319e00ca00e176765ddc1"
+  },
+  "measurement_receipt_hash": "sha256:a7325270db05cbca26d3de937bc932b1e33fef95a3b3236f6207f637739db804",
+  "measurements": [
+    "sft-eng-fail-safe-001-external-engineering-record: predicted engineering:system-fault-safe-state-carrier__detected-or-bounded-fault-to-safe-transition-relation__faults-detection-actions-safe-state-residual-harm-and-test-held__declared-fault-set-bounded; observed engineering:system-fault-safe-state-carrier__detected-or-bounded-fault-to-safe-transition-relation__faults-detection-actions-safe-state-residual-harm-and-test-held__declared-fault-set-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5f3dd884559af97fdd56fccd2785e1cf1438c18b726737b293354a71a1a38ac4",
+    "custodian_id": "SFT-EXP-ENG-FAIL-SAFE-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:5ad12c8f16e8d16a51c76d99fd56494406f2018014f26cd8137c88a3ef5f4f88",
+    "prediction_seal_hash": "sha256:a9a7113199d364f22b25b0f15d3b2b46adee26eda87d10c0687486c5cfb25b34",
+    "registered_target_identity_hash": "sha256:7c72e269d7b8c87a3771cee1fc42e51f84d1a1460e57758d71f9914e53ae85c0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:41c1cfcd08c66b1837b1f7c42ab12c36bac92dafcd92a7d0c103d73ccbec7abf"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8d1fbc8307f6763381a316672a4807e4d16576af49313826dc767aa97fb3a695"
+}

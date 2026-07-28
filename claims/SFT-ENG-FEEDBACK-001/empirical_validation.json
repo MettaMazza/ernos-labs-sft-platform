@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-FEEDBACK-001",
+  "data_source_ids": [
+    "NASA-SE-HANDBOOK-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:713a6aae1150babaff84e1fd458ea3d3560a631e1791418eea178bac51002142",
+  "falsification_condition": "Reject if correlation or repeated adjustment proves closed-loop feedback.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:dfe52333f968de7e9b7ff54726c2ae2cf40ee94edd46ef717d5c3721a9b8c474",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:dfbd3a15ab645e7410f08fddafa5b573fa9f415136dc7339dec287d9a287c63c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-FEEDBACK-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:8129812b526eb047b352748b08b7abbfac5c946b92fbf5ceae3720c01116029c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:452a2cfbae0acbe9c8f64a8ff33b4e039451b40926553bb6ca1c03afb6d02169",
+    "prediction_seal_hash": "sha256:d09c9ef3b1e35714511ad9b609f7b19b5ba4995da10832e95edaabf75cddfbb5",
+    "program_hash": "sha256:8cdaa139729726b273dad9880ea46ca6eeae293d97d0cdcd0f507c5eef71a8df",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ec589c9ccd5138b11b51d39c6244015c205a775967e59499652b57fa7f4f8e67",
+    "target_material_present": false,
+    "trace_hash": "sha256:11d741dcf079bd29e919e28b9fd527887999723100e876cd1a59d49c15ef3a6a"
+  },
+  "measurement_receipt_hash": "sha256:97938858c4a550c334d54beaa60bd76b9bce192490cc2f88ff18046330631659",
+  "measurements": [
+    "sft-eng-feedback-001-external-engineering-record: predicted engineering:plant-sensor-controller-actuator-carrier__output-record-to-next-action-relation__components-delays-gains-bounds-noise-and-failures-held__loop-configuration-bounded; observed engineering:plant-sensor-controller-actuator-carrier__output-record-to-next-action-relation__components-delays-gains-bounds-noise-and-failures-held__loop-configuration-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:7abe5bdf2eb8796dcaf82fec3b99f722ad0f6f3eb903c25a5ecc5d0be913a844",
+    "custodian_id": "SFT-EXP-ENG-FEEDBACK-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:713a6aae1150babaff84e1fd458ea3d3560a631e1791418eea178bac51002142",
+    "prediction_seal_hash": "sha256:d09c9ef3b1e35714511ad9b609f7b19b5ba4995da10832e95edaabf75cddfbb5",
+    "registered_target_identity_hash": "sha256:ec589c9ccd5138b11b51d39c6244015c205a775967e59499652b57fa7f4f8e67",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e6b4d1fe49fd9216be9b060e26911e1d1187dfd3f85226f116d0e9c52179cca4"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:88cb021cdb8ae721a122a4aca2e2aa12addfa3ed8e03a20d81879e5df09201d0"
+}

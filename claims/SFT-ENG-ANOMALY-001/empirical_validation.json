@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-ANOMALY-001",
+  "data_source_ids": [
+    "CISA-SECURE-BY-DESIGN-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:0d62eb536d18cbfea970719a5eb0393425ff52b6175c340dd86f4aa053bc7e0a",
+  "falsification_condition": "Reject if surprise, noise, undocumented configuration or post-hoc expectation is called an anomaly.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:cba36cffa0fb471e1247dad487dab9fb5ea9e545cf34904421b239df829c558d",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1c50e706817626444ea5470d2e098df992ff16e9ceacf16b76373f6b3ab4e8b4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-ANOMALY-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ca62b829867fb09052dab15fae0c18399e3b36beb83b320b5f6796af8ed56a77",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b8c23d535372e084f7fff6e15edf4838b846f05354cac2b52bb6adcbb22f3997",
+    "prediction_seal_hash": "sha256:8e00b88f0b4e7ab50d7b7aa4f06bc93de0f68eb031594bb5029e55b9e296dc0e",
+    "program_hash": "sha256:489459fbe727abf2b48e688f395330a3dfb450c40e60a0fa3c994ce24653f600",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8484279a0d41a8ad0b79d1ee96d13d1cf789244c1168913e0799a92a2cae5e29",
+    "target_material_present": false,
+    "trace_hash": "sha256:934b05cc80cbad21a7dc3dbea27899b6dca2c8bb221cd62c619b027a6c7e3716"
+  },
+  "measurement_receipt_hash": "sha256:398154640b3e07c6c5a0383c90e297b8fd5b1aa8e75b118c3e879d55a32a8893",
+  "measurements": [
+    "sft-eng-anomaly-001-external-engineering-record: predicted engineering:artifact-expected-observed-context-carrier__registered-expectation-to-deviation-relation__versions-setup-raw-data-controls-repeats-and-uncertainty-held__anomaly-protocol-bounded; observed engineering:artifact-expected-observed-context-carrier__registered-expectation-to-deviation-relation__versions-setup-raw-data-controls-repeats-and-uncertainty-held__anomaly-protocol-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:21ec8c48b9139b40b695b31eb9ffe121e174d306c7f6121e7318772e34976767",
+    "custodian_id": "SFT-EXP-ENG-ANOMALY-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:0d62eb536d18cbfea970719a5eb0393425ff52b6175c340dd86f4aa053bc7e0a",
+    "prediction_seal_hash": "sha256:8e00b88f0b4e7ab50d7b7aa4f06bc93de0f68eb031594bb5029e55b9e296dc0e",
+    "registered_target_identity_hash": "sha256:8484279a0d41a8ad0b79d1ee96d13d1cf789244c1168913e0799a92a2cae5e29",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f813469f84b92601286544aad176fd436bce64db0e45eb94ea13f796c4fb5609"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f86b71f2c1b9ddcf3ee04e04484797e4747d23178f2b2c4f550585525e8ec1a7"
+}

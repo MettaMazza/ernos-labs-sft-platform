@@ -1,0 +1,58 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-ENG-DECOMMISSION-001",
+  "data_source_ids": [
+    "EPA-LIFECYCLE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:0220e7685760ee69342115dfd576a988cf59a01f69649700795faadb4c030721",
+  "falsification_condition": "Reject if disabling a service proves data, hazard or dependency removal.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:413438521bd8978c8244b1e2a9a89668c10b1a3eb5038ee97f7c77d7c2867dd9",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:44a499a9b1cf02b24ff8e6fd3c61ffd1888e1f8a2785af9d965a4396ff585352",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-ENG-DECOMMISSION-001-E1-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:79a3d6ca340386c2ee14981d05518c23abe70b5389932bc0972fa509c06a09fb",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:a0be1c5a7fa3bdf58acc302dd0a7d77128d4ff205e75870d970da429a1655af0",
+    "prediction_seal_hash": "sha256:91472ff1033a4f6207b08632911241bcb4dcadbf4b031f4a0c607a2547b7a40b",
+    "program_hash": "sha256:b7dde23b898bc2d658864a68c7987b5746b7aaa476a1423435ee265f645567db",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ce1b2b16fb97ac85e944af6d23bbc95cb8a7ffedccea3d3721d8fae9bf3197f0",
+    "target_material_present": false,
+    "trace_hash": "sha256:1d61abf585a79ce64771329271b32bf25a9561f2d9480f50300d7f68efecc7d0"
+  },
+  "measurement_receipt_hash": "sha256:d558f7ce8a1d909ba9f224b1dce825955cd5763909b0c9e265156cf8566623e0",
+  "measurements": [
+    "sft-eng-decommission-001-external-engineering-record: predicted engineering:system-service-end-assets-record-carrier__active-to-retired-state-relation__authority-users-data-materials-hazards-recovery-and-custody-held__retirement-scope-bounded; observed engineering:system-service-end-assets-record-carrier__active-to-retired-state-relation__authority-users-data-materials-hazards-recovery-and-custody-held__retirement-scope-bounded; exact match True",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e491218e6a51bd3523f9af9764abe5d491d9bd5d3f6a270fabc28a6df5d33d1b",
+    "custodian_id": "SFT-EXP-ENG-DECOMMISSION-001-E1-external-target-custodian",
+    "experiment_registration_hash": "sha256:0220e7685760ee69342115dfd576a988cf59a01f69649700795faadb4c030721",
+    "prediction_seal_hash": "sha256:91472ff1033a4f6207b08632911241bcb4dcadbf4b031f4a0c607a2547b7a40b",
+    "registered_target_identity_hash": "sha256:ce1b2b16fb97ac85e944af6d23bbc95cb8a7ffedccea3d3721d8fae9bf3197f0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:75cfd733f55b42c267839760f3c370e882f966cb00da2d1771bc0a9538755bd8"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fc014d9c5e3ae8192c3851020bab19c9b619b3dcd60f26dc10c74284cc1d601b"
+}
