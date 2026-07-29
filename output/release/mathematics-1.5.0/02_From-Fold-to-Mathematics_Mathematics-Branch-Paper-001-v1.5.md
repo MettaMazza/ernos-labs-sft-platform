@@ -8,9 +8,14 @@ Maria.Smith.Sftoe@gmail.com<br>
 Mathematics Branch Paper 001 - Version 1.5 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
 Previous version DOI: [10.5281/zenodo.21627708](https://doi.org/10.5281/zenodo.21627708)  
-Version 1.5 DOI: pending archival deposit
+Existing concept DOI: [10.5281/zenodo.21516145](https://doi.org/10.5281/zenodo.21516145)<br>
+Version 1.5 DOI: pending deposit as a new version of that existing record
 
-Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is
+**FINAL PUBLICATION CANDIDATE — NOT YET APPROVED OR DEPOSITED.** Version 1.5
+must be published only through Zenodo's new-version route for the existing
+concept DOI above. It must not be deposited as a new record or paper.
+
+Copyright © 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is
 licensed separately under Apache-2.0. The Ernos Labs designation is governed by
 the published conformance policy.
 
@@ -18,24 +23,95 @@ the published conformance policy.
 
 This paper reports the complete-field Mathematics branch of the third clean-room reconstruction of Smithian Fold Theory (SFT), complete to the frozen dated census and explicitly open to lawful extension. The census contains **323 obligations in 24 dependency-ordered families**. Every obligation now has an untouched-engine model-admission receipt, an exact candidate census, one unique survivor, four adverse controls, a depth-independent finite-successor or explicit boundary certificate, an implementation-distinct reconstruction, and post-registry observation custody. Together the branch preserves **97,280 generated candidates, 323 unique survivors and 1,292 passed controls**. The final reconciliation identity is `sha256:526c6d78a3ff77c21c6d4dd71c266499f5b234a7763cb223e5d009fa9f101c64`.
 
-The field reconstruction covers exact arithmetic and number structure; algebraic extensions; combinatorics; graphs, networks and matroids; linear, multilinear and tensor structure; algebraic systems; order, lattices and domains; geometry; topology; calculus correspondence; analysis correspondence; equation structures; measure and integration; deterministic-support probability and statistics; optimization and operations research; dynamical systems; logic and foundations; category, type and compositional structures; numerical mathematics; symbolic and constructive mathematics; cross-disciplinary interfaces; the complete validation vector; and one-owner handoffs. The previously admitted Smithian Fold Scientific Calculator remains the accessible translation surface and does not become an alternate admission route.
+The field reconstruction covers exact arithmetic and number structure; algebraic extensions; combinatorics; graphs, networks and matroids; linear, multilinear and tensor structure; algebraic systems; order, lattices and domains; geometry; topology; calculus correspondence; analysis correspondence; equation structures; measure and integration; deterministic-support probability and statistics; optimisation and operations research; dynamical systems; logic and foundations; category, type and compositional structures; numerical mathematics; symbolic and constructive mathematics; cross-disciplinary interfaces; the complete validation vector; and one-owner handoffs. The previously admitted Smithian Fold Scientific Calculator remains the accessible translation surface and does not become an alternate admission route.
 
-The proof domain admits no conventional axiom as an SFT premise, no fitted or free parameter, no semantic numerical zero, negative proof magnitude, irrational or imaginary proof scalar, floating proof quantity, completed infinity, ungenerated continuum or ontic randomness. Displayed `0` denotes structural absence; opposition is typed orientation; non-rational conventional objects enter only through exact constructions or certified enclosures. The Validation Grand Lock partitions all 305 pre-validation receipts exactly once across 22 families and preserves all 305 favorable, adverse, absent, unresolved and boundary records. The final six handoffs bring the branch to 323/323 without transferring empirical ownership to Mathematics or claiming permanent closure.
+The proof domain admits no conventional axiom as an SFT premise, no fitted or free parameter, no semantic numerical zero, negative proof magnitude, irrational or imaginary proof scalar, floating proof quantity, completed infinity, ungenerated continuum or ontic randomness. Displayed `0` denotes structural absence; opposition is typed orientation; non-rational conventional objects enter only through exact constructions or certified enclosures. The Validation Grand Lock partitions all 305 pre-validation receipts exactly once across 22 families and preserves all 305 favourable, adverse, absent, unresolved and boundary records. The final six handoffs bring the branch to 323/323 without transferring empirical ownership to Mathematics or claiming permanent closure.
 
 Version 1.5 preserves the complete version 1.4 paper and its foundational, prior-corpus and calculator derivations, then executes the roadmap that version 1.4 registered. No application selected these laws. No engine or protected-verifier source was modified. Every later extension must enter as a new registered question and pass the same public protocol.
 
-**Keywords:** Smithian Fold Theory; complete-field mathematics; exact arithmetic; algebra; combinatorics; graph theory; geometry; topology; calculus; analysis; probability; optimization; dynamics; logic; category theory; numerical mathematics; symbolic mathematics; scientific calculator; computational proof; open science.
+**Keywords:** Smithian Fold Theory; complete-field mathematics; exact arithmetic; algebra; combinatorics; graph theory; geometry; topology; calculus; analysis; probability; optimisation; dynamics; logic; category theory; numerical mathematics; symbolic mathematics; scientific calculator; computational proof; open science.
 ## Results first: what this branch changes
 
 | Headline result | Exact executed result | Scientific consequence |
 |---|---|---|
 | Complete-field Mathematics | 323/323 frozen obligations are receipt-backed across 24 families, with 97,280 enumerated candidates, 323 unique survivors and 1,292 passed controls. | The former roadmap is now an executed, independently replayable mathematical corpus rather than a statement of future intent. |
-| Arithmetic without hidden continuum primitives | Exact positive finite generation, normalized fractions, ordered gaps, interval enclosures and structural absence replace semantic zero, negative proof magnitude and floating proof values. | Ordinary notation remains available at the interface, but every proof value retains an exact Fold construction or certified enclosure. |
-| Full structural span | Combinatorics, graphs, linear and algebraic structures, order, geometry, topology, calculus, analysis, equations, measure, probability, optimization, dynamics, logic, category, numerical and symbolic mathematics are separately owned and dependency ordered. | No familiar discipline name imports its conventional axioms; each law has its own generated grammar, eliminations, survivor and certificate. |
+| Arithmetic without hidden continuum primitives | Exact positive finite generation, normalised fractions, ordered gaps, interval enclosures and structural absence replace semantic zero, negative proof magnitude and floating proof values. | Ordinary notation remains available at the interface, but every proof value retains an exact Fold construction or certified enclosure. |
+| Full structural span | Combinatorics, graphs, linear and algebraic structures, order, geometry, topology, calculus, analysis, equations, measure, probability, optimisation, dynamics, logic, category, numerical and symbolic mathematics are separately owned and dependency ordered. | No familiar discipline name imports its conventional axioms; each law has its own generated grammar, eliminations, survivor and certificate. |
 | Numerical and symbolic computation | Exact rounding custody, interval propagation, stability, conditioning, convergence, root isolation, solvers, quadrature, recurrences, canonical syntax, rewrite provenance, transforms and constructive certificates are admitted. | Numerical and symbolic tools can be audited without hiding floating, signed, imaginary or oracle-selected proof values. |
-| Validation Grand Lock | All 305 pre-validation claims are partitioned exactly once across 22 families, with 305 adverse and boundary records retained. | Completeness is a reproducible reconciliation claim, not a label applied after favorable results. |
+| Validation Grand Lock | All 305 pre-validation claims are partitioned exactly once across 22 families, with 305 adverse and boundary records retained. | Completeness is a reproducible reconciliation claim, not a label applied after favourable results. |
 | Dated, extension-open completion | Six final handoffs distinguish mathematical structure from downstream meaning, measurement, conventional correspondence and engineering use. | Mathematics is 100.0% complete to this frozen census while remaining open to correction, falsification and lawful new discoveries. |
 | Public proof surface | Every claim exposes its registration, candidate census, decisions, controls, certificate, external record, receipt and executable entry point. | Independent researchers can reproduce or challenge the work without credential, paywall or institutional permission selecting the outcome. |
+## Current status, evidence language and reader map
+
+| Status field | Current position |
+|---|---|
+| Branch and completion boundary | Mathematics: 323/323 frozen obligations; 323 live claims. This is dated, versioned completion and remains open to lawful extension. |
+| Formal status | Every live claim represented here has a current model-admitted receipt. Formal admission does not by itself imply empirical confirmation. |
+| Empirical status | Claim-specific. Blind, non-blind, development-observed, holdout, adverse, unresolved, unavailable and formal-only distinctions remain exactly as recorded in the claim ledger and evidence packages. |
+| Chronology | Claim-specific registration, seal, custody and observation order governs. Later evidence does not retroactively become an earlier prediction. |
+| Publication status | Version 1.5.0 is a final publication candidate awaiting Maria Smith's approval. It is not yet deposited. |
+| Existing record lineage | Current record DOI `10.5281/zenodo.21627708`; concept DOI `10.5281/zenodo.21516145`. Publication is permitted only through the existing record's new-version route. |
+| What is not claimed | Permanent closure of science, universal empirical confirmation, transfer of another branch's ownership or permission to replace an adverse or unresolved record. |
+
+### Corpus-wide terminology and evidence key
+
+| Term | Reserved meaning in this paper |
+|---|---|
+| Theorem | A formally closed proposition at its declared grammar and dependency boundary. |
+| Law | An admitted branch relation with its declared carrier, boundary, dependencies and extension rule. |
+| Claim | The registered unit judged by the engine and bound to one immutable receipt. |
+| Constitution | The rules governing admissible objects, derivations, evidence and publication; not an empirical result. |
+| Derivation | Generation and elimination of the declared candidate space to its surviving structure. |
+| Prediction | A consequence sealed before the matching target is released under the registered custody protocol. |
+| Observation | A source-bound external record; it does not enter candidate generation. |
+| Measurement | An instrument-, method-, condition- and uncertainty-bound observed value. |
+| Reconstruction | A separately implemented regeneration or an explicitly identified inference of a retained state or history. |
+| Exact numerical correspondence | Equality or registered interval relation between exact numerical objects at the declared boundary. |
+| Structural correspondence | A post-derivation relation between forms without a claim of exact numerical prediction. |
+| Boundary correspondence | Agreement restricted to the named interface, limit or ownership boundary. |
+| Compatibility | Non-adverse but non-discriminating evidence. |
+| Support | Relevant evidence that is not unique confirmation. |
+| Confirmation | Used only when the current registered evidence protocol warrants that classification. |
+| Validation | Successful execution of the specified formal, computational or empirical test; its kind must be named. |
+| Adverse result | A registered test result that conflicts with the tested claim at its declared boundary. |
+| Unresolved result | Required evidence remains unavailable, incomplete, disputed or insufficiently classified. |
+| Implementation identity | The hash-bound identity of executable material; implementation success is not empirical confirmation. |
+| Formal, empirical and publication status | Three independent classifications. None silently substitutes for another. |
+| Foundational closure | Completion of the registered foundation only. It does not imply field-wide closure. |
+| Field-wide closure | Completion of the frozen or registered dated field census named in this paper. |
+| Current-evidence closure | Closure only to the evidence surface presently registered and preserved. |
+| Extension openness | New questions may be added by a later version without rewriting existing receipts or history. |
+
+Proof language is reserved for formal closure; derivation for generated
+structure; implementation for executable demonstration; prediction for a
+correctly sealed prospective consequence; observation and measurement for
+source-bound external records; reconstruction for separately regenerated or
+inferred states; correspondence for post-derivation relationships;
+compatibility and support for non-unique evidence; confirmation only where the
+registered protocol authorises it; adverse for conflict; and unresolved where
+required evidence remains incomplete.
+
+### Three reading levels
+
+1. **Conceptual paper.** The abstract, headline findings, branch narrative,
+   major derivations, evidence synthesis, limitations and conclusion provide
+   the readable scientific argument.
+2. **Scientific audit layer.** Family and claim sections preserve exact status,
+   dependencies, candidate and survivor counts, controls, chronology, sources,
+   corrections, adverse evidence and reconciliation.
+3. **Machine archive.** The cited repository packages preserve complete
+   candidates, decisions, hashes, receipts, executable traces, source snapshots
+   and certificates. Those files remain authoritative where prose abbreviates
+   their display.
+
+### Editorial change control
+
+This version may improve expression, order, typography and navigation. It may
+not change scientific meaning, scope, chronology, evidence class, ownership,
+claim status or machine identity. Any apparent conflict between authoritative
+records must be traced and either resolved by explicit supersession or recorded
+for Maria Smith; prose alone cannot manufacture agreement.
+
 ## Public scientific mission and admission boundary
 
 Ernos Labs is an open-source science movement, verification platform and public
@@ -52,10 +128,10 @@ institutional research employment and conventional grant funding. That fact is
 not offered as evidence for a theorem; the derivations and observations carry
 the entire scientific burden. It is evidence about access. A credential-first
 system loses more than individual opportunity: it loses unknown questions,
-methods and discoveries from minds that capital and status never authorize.
+methods and discoveries from minds that capital and status never authorise.
 This work therefore treats Maria Smith's authorship neither as exceptionalism
 nor as a reason for dismissal, but as an indictment of every scientific
-contribution lost when financial gatekeeping is presented as rigor.
+contribution lost when financial gatekeeping is presented as rigour.
 
 The institutional argument is empirical, not a claim that every institution or
 funded researcher acts in bad faith. Published studies document sponsor-linked
@@ -192,7 +268,7 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The exact arithmetic kernel is complete positive-trace coverage with disjoint junction, pair-cell product, common-refinement quotient, complete pairing comparison, held-oriented remainder, base/successor generality and no extra rule.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - disjoint junction is associative on mutually disjoint generated traces.
 - pair-cell product distributes over disjoint junction by generated cell provenance.
@@ -200,7 +276,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - exact quotient exists only with a complete refinement-pairing witness.
 - comparison returns same-form or a held positive remainder orientation.
 
-### 6.4 Operational witnesses and unfavorable checks
+### 6.4 Operational witnesses and unfavourable checks
 
 - `junction-associativity` - (a joined b) joined c and a joined (b joined c) retain the same canonical trace. Result: `PASS`.
 - `pair-cell-cardinality` - Two generated cells paired with three generated cells produce the complete six labelled pair cells. Result: `PASS`.
@@ -221,7 +297,7 @@ Base: The structural One supplies the first nonempty trace and exact self-whole.
 
 Successor: Appending one fresh generated occurrence preserves complete trace identity; junction appends it once, pair-cell refinement appends one labelled cell per opposite trace element, and pairing either extends with one mate or records the unmatched held remainder.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 6.6 Meaning and scientific consequence
 
@@ -290,7 +366,7 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The discrete kernel is complete unique canonical collections with retained membership, pair-cell-selected relations, total single-valued maps, held sequence order, One/base-successor induction and no extra constructor.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - canonical membership is decidable for every generated finite collection.
 - held selection never introduces an element outside its source collection.
@@ -298,7 +374,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - map composition preserves total single-valuedness when interfaces agree.
 - structural induction covers every generated finite collection trace.
 
-### 7.4 Operational witnesses and unfavorable checks
+### 7.4 Operational witnesses and unfavourable checks
 
 - `unique-collection` - A generated collection retains each canonical member once. Result: `PASS`.
 - `held-membership` - A held selection contains only members of its registered source. Result: `PASS`.
@@ -320,7 +396,7 @@ Base: The structural One is the first canonical generated member and the empty O
 
 Successor: Given a complete unique canonical collection, append one fresh canonical form once; membership, relation pair support, map-image obligation and predecessor order extend by their local generated clauses.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 7.6 Meaning and scientific consequence
 
@@ -389,7 +465,7 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The combinatorial kernel is complete canonical carrier generation by held-choice recurrence with complete choice provenance, canonical deduplication, witnessed symmetry, disjoint class accounting, successor generality and no imported formula.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - every arrangement holds each carrier member exactly once.
 - every selection is produced once by the fresh-member absent/held recurrence.
@@ -397,7 +473,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - disjoint class ledgers conserve the complete generated family.
 - enumerated count is the identity of the complete output trace.
 
-### 8.4 Operational witnesses and unfavorable checks
+### 8.4 Operational witnesses and unfavourable checks
 
 - `arrangement-completeness` - Three distinct held labels generate six unique ordered arrangements. Result: `PASS`.
 - `arrangement-coverage` - Every arrangement holds every carrier label exactly once. Result: `PASS`.
@@ -418,7 +494,7 @@ Base: A one-member carrier has one complete arrangement and two structural selec
 
 Successor: For a fresh carrier member, arrangements partition by its held position and recurse on the prior remainder; selections partition into prior forms and the same forms with the fresh member held. These disjoint generated classes exhaust the successor carrier without an imported formula.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 8.6 Meaning and scientific consequence
 
@@ -488,7 +564,7 @@ The complete product contains 512 candidates. Its completeness-certificate ident
 
 > The graph/network kernel is complete canonical nodes with held ordered pair-cell edges, complete adjacent paths, witnessed reachability and return, held crossing cuts, ingress/egress pairing and no extra rule.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - path concatenation is lawful exactly when the interface node agrees.
 - reachability is reflexive by the retained identity path and transitive by path composition.
@@ -496,7 +572,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - a cut contains every and only relation crossing a held/complementary node partition.
 - network balance preserves token identity rather than cancelling signed magnitudes.
 
-### 9.4 Operational witnesses and unfavorable checks
+### 9.4 Operational witnesses and unfavourable checks
 
 - `valid-path` - The chain retains both required adjacent edges. Result: `PASS`.
 - `missing-edge-control` - An endpoint sequence with a missing adjacency is not a path. Result: `PASS`.
@@ -518,7 +594,7 @@ Base: One canonical node supplies the identity path and contains no nontrivial e
 
 Successor: Appending one fresh node generates exactly its ordered pair cells with prior nodes; any held edge selection extends paths locally, and connectivity, cycle, cut and balance witnesses update only through those new cells.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 9.6 Meaning and scientific consequence
 
@@ -588,7 +664,7 @@ The complete product contains 512 candidates. Its completeness-certificate ident
 
 > The algebraic kernel is a complete canonical carrier and complete closed single-valued operation table, with identity, association, returns, special properties and maps admitted only by exhaustive witnesses.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - closure is exact membership of every operation result in the registered carrier.
 - identity is a two-sided exhaustive preservation witness.
@@ -596,7 +672,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - return is a unique held mate relation and never a negative proof value.
 - homomorphism is complete operation preservation, not resemblance of presentations.
 
-### 10.4 Operational witnesses and unfavorable checks
+### 10.4 Operational witnesses and unfavourable checks
 
 - `closed-table` - Every complete input pair in the witness table has one carrier result. Result: `PASS`.
 - `identity` - The structural One form preserves both witness carrier forms. Result: `PASS`.
@@ -618,7 +694,7 @@ Base: The One carrier has one pair cell, its result remains One, and identity an
 
 Successor: Adding one fresh carrier form generates exactly its left, right and self pair cells. A proposed extension is admitted only after results remain in the extended carrier and every newly formed identity, triple, return and map obligation is checked.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 10.6 Meaning and scientific consequence
 
@@ -654,7 +730,7 @@ Claim identity: `SFT-MATH-ORDER-LATTICE-001`
 
 ### 11.1 Question and necessity
 
-Order is needed for comparison, optimization, proof strength and topology. Retaining incomparability prevents a conventional scalar line from being imported where the Fold structure does not force one.
+Order is needed for comparison, optimisation, proof strength and topology. Retaining incomparability prevents a conventional scalar line from being imported where the Fold structure does not force one.
 
 The exact theorem statement is:
 
@@ -688,7 +764,7 @@ The complete product contains 512 candidates. Its completeness-certificate ident
 
 > The order/lattice kernel is a canonical carrier with an exhaustively witnessed partial-order relation, conditional totality, complete bound selections, uniquely witnessed meet/join and monotone maps.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - partial order requires reflexive, antisymmetric and transitive relation closure.
 - incomparability is retained and never forced into a borrowed total scale.
@@ -696,7 +772,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - a finite lattice is exactly an admitted partial order with meet and join for every generated pair.
 - monotonicity is preservation of every registered relation cell.
 
-### 11.4 Operational witnesses and unfavorable checks
+### 11.4 Operational witnesses and unfavourable checks
 
 - `partial-order` - The diamond relation passes all three partial-order obligations. Result: `PASS`.
 - `incomparability-retained` - The diamond retains left and right as incomparable. Result: `PASS`.
@@ -718,7 +794,7 @@ Base: The One carrier has its identity relation and One is both unique lower and
 
 Successor: Adding one fresh canonical form generates all comparisons to prior forms. Order closure, comparability, bounds and extremal uniqueness are rechecked only for pairs and composites touching the fresh form.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 11.6 Meaning and scientific consequence
 
@@ -789,7 +865,7 @@ The complete product contains 1,024 candidates. Its completeness-certificate ide
 
 > The geometry/topology kernel is finite canonical cells with held acyclic incidence, boundary-depth dimension, shared-face adjacency, exact shortest paths, closed finite open families, inverse-image continuity and reversible incidence-preserving deformation.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - cell dimension is determined by complete acyclic boundary descent.
 - path distance retains a shortest generated transition trace and uses empty One at identity.
@@ -797,7 +873,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - continuity is exact inverse-image preservation of every admitted target open.
 - geometric equivalence requires a reversible invariant-preserving transformation trace.
 
-### 12.4 Operational witnesses and unfavorable checks
+### 12.4 Operational witnesses and unfavourable checks
 
 - `incidence` - Every witness face and cell belongs to the finite carrier. Result: `PASS`.
 - `dimension-depth` - The witness triangle has one more boundary layer than its edge. Result: `PASS`.
@@ -819,7 +895,7 @@ Base: One point is a canonical cell; its open family consists of empty One and t
 
 Successor: Adding one fresh cell generates its possible boundary incidences, shared-face adjacencies and path edges; adding one fresh point generates exactly the open selections needed for closure checks. Every new boundary, path, intersection, join and inverse image is then exhaustively tested.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 12.6 Meaning and scientific consequence
 
@@ -889,7 +965,7 @@ The complete product contains 512 candidates. Its completeness-certificate ident
 
 > The probability/statistics kernel is complete deterministic support, held events, exact held/whole weights, observation-class uncertainty, common-refinement conditioning, pair-cell independence, transparent finite summaries and post-seal empirical checking without random parameters.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - event weight is an exact positive part relation; empty event is empty One.
 - conditional weight is exact restriction to a nonempty held condition.
@@ -897,7 +973,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - uncertainty belongs to an observation partition and does not alter deterministic microstate evolution.
 - statistical summaries retain exact provenance and all tied alternatives.
 
-### 13.4 Operational witnesses and unfavorable checks
+### 13.4 Operational witnesses and unfavourable checks
 
 - `exact-weight` - Two held states in four complete states have the exact one-over-two part. Result: `PASS`.
 - `empty-event` - The empty event is structural empty One rather than numerical zero. Result: `PASS`.
@@ -919,7 +995,7 @@ Base: A One-state support has whole certainty; its held-empty event is represent
 
 Successor: Adding one fresh microstate extends whole support once and either extends or leaves each held event. Exact parts, observation classes, intersections and summaries update from that retained membership without a prior.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 13.6 Meaning and scientific consequence
 
@@ -949,7 +1025,7 @@ This closes exact finite probability and descriptive statistics. Inferential cla
 - Engine receipt: `sha256:2a86d644881cdacb757327d5aaca01de41c3458c043980c66a16f5084cdfb45b`.
 - Engine receipt path: `receipts/engine/model_admitted/SFT-MATH-PROBABILITY-STATISTICS-001-2a86d644881cdacb.json`.
 
-## 14. Derivation 9: Exact finite optimization and retained optima
+## 14. Derivation 9: Exact finite optimisation and retained optima
 
 Claim identity: `SFT-MATH-OPTIMIZATION-001`
 
@@ -969,7 +1045,7 @@ Orders supply witnessed preference and incomparability; graphs supply search rel
 
 Generation rule: Generate the complete product of candidate coverage, feasibility, preference, optimum selection, tie retention, constraint provenance, decomposition, approximation and extra-objective status.
 
-Exact grammar boundary: All finite optimization instances generated from canonical candidates, exact predicates, held preference relations, complete dominance checks, interface-preserving decomposition and exact positive part bounds.
+Exact grammar boundary: All finite optimisation instances generated from canonical candidates, exact predicates, held preference relations, complete dominance checks, interface-preserving decomposition and exact positive part bounds.
 
 The complete product contains 512 candidates. Its completeness-certificate identity is `sha256:a15ea2f582138e72734b4421a5d69ae92089f444f70597f7539532587a30ddbe`. The following table gives every grammar axis, its explicit failure alternative and its forced coordinate. Their Cartesian product is the complete candidate census; the full row-level list is preserved in `claims/SFT-MATH-OPTIMIZATION-001/candidate_census.json`.
 
@@ -989,15 +1065,15 @@ The complete product contains 512 candidates. Its completeness-certificate ident
 
 > The optimization kernel is complete canonical candidates, source-bound feasibility, exact preference, complete undominated selection, retained ties, exact constraints and interfaces, and positive-part bounds without an added objective.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-- optimization may eliminate a candidate only with a retained feasible dominator witness.
+- optimisation may eliminate a candidate only with a retained feasible dominator witness.
 - all undominated candidates survive and uniqueness is a separately checked singleton property.
 - Pareto comparison retains incomparability across exact criteria.
 - decomposition is lawful only with complete shared-interface factorization.
 - approximation is an exact generated part relation rather than a rounded scalar.
 
-### 14.4 Operational witnesses and unfavorable checks
+### 14.4 Operational witnesses and unfavourable checks
 
 - `feasible-selection` - The complete verdict relation retains exactly a and b. Result: `PASS`.
 - `unique-optimum` - A witnessed a-over-b relation leaves a as the singleton optimum. Result: `PASS`.
@@ -1019,11 +1095,11 @@ Base: A One-candidate feasible carrier has that candidate as its unique complete
 
 Successor: Adding one fresh candidate generates its feasibility verdicts and every preference pair with prior feasible forms. It is either eliminated by a retained dominator, eliminates witnessed dominated forms, or joins the retained optimal class; no prior optimum is silently discarded.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 14.6 Meaning and scientific consequence
 
-Optimization is forced as elimination by exact witness rather than maximization of an imported floating score. Every candidate and feasibility verdict is present. A candidate is removed only when a retained feasible dominator exists. The complete undominated selection is the solution; singleton status alone licenses uniqueness. Multiple optimal or Pareto-incomparable forms remain visible rather than being broken by an undeclared convention.
+Optimisation is forced as elimination by exact witness rather than maximization of an imported floating score. Every candidate and feasibility verdict is present. A candidate is removed only when a retained feasible dominator exists. The complete undominated selection is the solution; singleton status alone licenses uniqueness. Multiple optimal or Pareto-incomparable forms remain visible rather than being broken by an undeclared convention.
 
 ### 14.7 Correspondence after sealing
 
@@ -1036,7 +1112,7 @@ Only after the SFT survivor and receipt are fixed may the following established 
 - no tunable regularizer or tie-break parameter.
 - no unenumerated candidate domain.
 
-This closes exact finite optimization structure. Complexity of finding the complete frontier and laws for particular objective families belong to the algorithms and complexity branches.
+This closes exact finite optimisation structure. Complexity of finding the complete frontier and laws for particular objective families belong to the algorithms and complexity branches.
 
 ### 14.9 Evidence identities
 
@@ -1065,7 +1141,7 @@ Admitted dependencies: `SFT-FOUNDATION-FORM-ENFORCEMENT-001`, `SFT-MATH-GRAPH-NE
 
 ### 15.2 Generated grammar and exact boundary
 
-Graph paths supply evolution; optimization supplies complete invariant and basin selection; canonical forms supply state identity. Ten choices force the finite transition-and-record dynamics kernel.
+Graph paths supply evolution; optimisation supplies complete invariant and basin selection; canonical forms supply state identity. Ten choices force the finite transition-and-record dynamics kernel.
 
 Generation rule: Generate the complete product of state coverage, transition provenance, trajectory trace, time, fixed forms, return, basin/recurrence, reversibility, stability and extra-dynamic status.
 
@@ -1090,15 +1166,15 @@ The complete product contains 1,024 candidates. Its completeness-certificate ide
 
 > The dynamical kernel is complete canonical states, held transitions, complete trajectories, transition-count time, witnessed fixed/return/basin structure, retained-record reversibility and registered perturbation stability.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - trajectory composition is lawful exactly at an equal canonical interface state.
 - time is a positive transition trace and identity duration is empty One.
-- fixed, cyclic and recurrent behavior require explicit transition witnesses.
+- fixed, cyclic and recurrent behaviour require explicit transition witnesses.
 - many-to-one evolution loses predecessor distinction unless a source record is retained.
 - stability is quantified only over a complete registered finite perturbation class.
 
-### 15.4 Operational witnesses and unfavorable checks
+### 15.4 Operational witnesses and unfavourable checks
 
 - `well-formed` - Every witness transition remains in the complete state carrier. Result: `PASS`.
 - `trajectory` - The a-to-b-to-terminal trace retains both allowed transitions. Result: `PASS`.
@@ -1121,7 +1197,7 @@ Base: One state supplies its identity trajectory; no transition time or predeces
 
 Successor: Adding one transition appends one exact state pair to every extended trajectory. Fixed, return, basin, predecessor and stability obligations change only for paths that use the new relation and are rechecked completely.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 15.6 Meaning and scientific consequence
 
@@ -1192,7 +1268,7 @@ The complete product contains 1,024 candidates. Its completeness-certificate ide
 
 > The logic/proof kernel is canonical distinguished propositions, complementary held denial, joint and held alternative proof forms, proof-carrying implication, complete inference traces, explicit consistency and soundness, and completeness only over the exhausted registered grammar.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - denial changes held orientation while preserving proposition identity.
 - conjunction and disjunction retain their complete source proof structure.
@@ -1200,7 +1276,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - a valid proof is replayable step by step from its premises and rule registry.
 - completeness is always indexed by an explicit generated grammar boundary.
 
-### 16.4 Operational witnesses and unfavorable checks
+### 16.4 Operational witnesses and unfavourable checks
 
 - `held-denial` - Denial preserves P while changing only its held orientation. Result: `PASS`.
 - `joint-proof` - Conjunction retains both exact constituent proofs. Result: `PASS`.
@@ -1223,7 +1299,7 @@ Base: One proposition form and its two orientations provide the first decidable 
 
 Successor: Adding one proposition or rule generates its complementary orientation, joint and alternative combinations, and all new premise tuples. Consistency and proof replay are rechecked for precisely those new forms and steps.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 16.6 Meaning and scientific consequence
 
@@ -1294,7 +1370,7 @@ The complete product contains 1,024 candidates. Its completeness-certificate ide
 
 > The compositional kernel is canonical Fold objects, proof-carrying arrows, empty-One identity, exact-interface composition, path-flattening association, source-bound types, joint products, held sums, preserving functors and equal-path naturality.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - identity preserves source and target and contributes no nonidentity transition.
 - composition exists exactly at a canonical interface match.
@@ -1302,7 +1378,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - products preserve both coordinates and sums preserve the held source alternative.
 - functoriality and naturality are finite replayable preservation witnesses.
 
-### 17.4 Operational witnesses and unfavorable checks
+### 17.4 Operational witnesses and unfavourable checks
 
 - `interface-composition` - f then g composes from A to C with both traces retained. Result: `PASS`.
 - `identity` - Empty-One return preserves the interface and adds no elementary transition. Result: `PASS`.
@@ -1325,7 +1401,7 @@ Base: One canonical object supplies its empty-One identity arrow and the first s
 
 Successor: Adding one object or arrow generates its identities, every exact interface-compatible composite, product and sum cells, type verdicts and preservation squares. Closure follows by appending its trace to prior flat paths.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 17.6 Meaning and scientific consequence
 
@@ -1394,14 +1470,14 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The unique exact relation kernel is generated-part ratio, held shorter separation, unique complement threshold, Fold-factor transport and least-common-return composition with finite-family induction.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - a positive ratio composed with its reciprocal returns the One.
 - relative views telescope by exact ratio composition.
 - the first common return of finite periods is their iterated least common multiple.
 - count times the corresponding equal part reconstructs the One.
 
-### 18.4 Operational witnesses and unfavorable checks
+### 18.4 Operational witnesses and unfavourable checks
 
 - `reciprocal` - The ratio three-of-two composed with two-of-three returns the One. Result: `PASS`.
 - `count-measure` - Eight equal one-of-eight parts reconstruct the One. Result: `PASS`.
@@ -1422,7 +1498,7 @@ Base: One exact cycle returns after its own generated period.
 
 Successor: Composing one more positive finite cycle replaces the current joint period by its least common return with the new period.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 18.6 Meaning and scientific consequence
 
@@ -1491,14 +1567,14 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > Fold return and binary multiplicative order are one exact remainder identity; odd reduced residues tile into cyclotomic orbits and each binary denominator factor contributes one transient Fold.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - orbit length equals the multiplicative order of the binary generator modulo the reduced odd denominator.
 - the reduced-residue count is the product of orbit length and orbit count.
 - for a prime denominator the period divides one less than that prime.
 - binary valuation is the exact transient depth to the odd recurrent core.
 
-### 19.4 Operational witnesses and unfavorable checks
+### 19.4 Operational witnesses and unfavourable checks
 
 - `orders` - The independently counted orders for denominators three, five, seven, nine and eleven are two, four, three, six and ten. Result: `PASS`.
 - `all-reduced-ranks` - Every reduced rank through odd denominator ninety-nine has orbit length equal to its denominator order. Result: `PASS`.
@@ -1518,7 +1594,7 @@ Base: The first reduced odd denominator above the One executes one complete fini
 
 Successor: For any next supplied odd denominator the finite residue permutation independently partitions into cycles; adjoining one binary factor prepends exactly one transient Fold.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 19.6 Meaning and scientific consequence
 
@@ -1587,17 +1663,17 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > Potential infinity is the never-terminal generated successor process; every reached object is finite and positive, convergence is an exact nested-bound certificate, and completed infinity or continuum is outside the admitted object language.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - every dyadic rung reaches the One in exactly its counted depth.
 - every finite depth has a lawful next depth.
 - exact finite-difference sequences may converge by shrinking positive rational error bounds.
 - no completed continuum cardinality claim is admitted without a generated object.
 
-### 20.4 Operational witnesses and unfavorable checks
+### 20.4 Operational witnesses and unfavourable checks
 
 - `finite-rungs` - Every generated dyadic rung through depth fourteen is positive and returns after its counted depth. Result: `PASS`.
-- `quadratic-curvature` - The centered second difference of x squared is exactly two at every tested rational spacing. Result: `PASS`.
+- `quadratic-curvature` - The centred second difference of x squared is exactly two at every tested rational spacing. Result: `PASS`.
 - `cubic-convergence` - The forward second-difference curvature of x cubed at the One has exact error six times the spacing, halving at each refinement. Result: `PASS`.
 - `finite-closure` - The first five dyadic rungs plus the boundary rung reconstruct the One. Result: `PASS`.
 
@@ -1614,7 +1690,7 @@ Base: The One is the complete finite base and its first refinement is a positive
 
 Successor: Appending one generated Fold depth replaces a positive one-of-b^k rung by the positive one-of-b^(k+1) rung and records one additional return step.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 20.6 Meaning and scientific consequence
 
@@ -1683,13 +1759,13 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The unique admitted algebraic-magnitude representation is a positive polynomial-balance identity with exact rational order-swap bracket and replayable bisection trace; the irrational root is never a proof value.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - separating signed terms into two positive sides preserves the defining balance.
 - an endpoint order swap plus exact bisection yields nested rational enclosures.
 - Vieta relations provide an implementation-distinct coefficient cross-check for a bracketed root family.
 
-### 21.4 Operational witnesses and unfavorable checks
+### 21.4 Operational witnesses and unfavourable checks
 
 - `square-balance` - The positive sides x squared and two swap order across seven-of-five and three-of-two. Result: `PASS`.
 - `exact-midpoints` - Twenty bisections of that bracket retain exact rational endpoints and an order swap. Result: `PASS`.
@@ -1708,7 +1784,7 @@ Base: One exact rational bracket with opposite side order is a complete first en
 
 Successor: The exact midpoint retains the order swap in exactly one half-bracket unless it is itself the exact balance, so the certificate narrows at every supplied finite step.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 21.6 Meaning and scientific consequence
 
@@ -1777,13 +1853,13 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > All finite componentwise Fold tuples are eventually recurrent; their recurrent joint period is the iterated least common multiple of component odd-core periods.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - Fold preserves each reduced odd denominator core.
 - a finite product of finite deterministic component orbits is finite.
 - the first joint recurrent return is the least common component period.
 
-### 22.4 Operational witnesses and unfavorable checks
+### 22.4 Operational witnesses and unfavourable checks
 
 - `three-cycle` - The tuple one-, two- and four-of-seven returns after three componentwise Folds. Result: `PASS`.
 - `four-cycle` - The four ranks over denominator five rotate and return after four Folds. Result: `PASS`.
@@ -1802,7 +1878,7 @@ Base: One rational Fold component is transient-to-periodic by its denominator de
 
 Successor: Appending one component preserves finite product support and replaces the recurrent period by its least common return with the new component period.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 22.6 Meaning and scientific consequence
 
@@ -1871,13 +1947,13 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The native Fold-lattice gradient bound is b^k at depth k, attained by a One velocity gap across one minimum edge; the depth-five value is thirty-two and every finite-depth field remains bounded.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - positive minimum spacing prevents a vanishing denominator.
 - One-bounded velocity separation divided by one-of-b^k is at most b^k.
 - the successor depth multiplies the bound by the generated Fold count.
 
-### 23.4 Operational witnesses and unfavorable checks
+### 23.4 Operational witnesses and unfavourable checks
 
 - `depth-five` - The exact reciprocal of the depth-five binary floor is thirty-two. Result: `PASS`.
 - `depth-table` - Every depth one through fourteen has reciprocal-floor bound two-to-depth. Result: `PASS`.
@@ -1896,7 +1972,7 @@ Base: At the first Fold depth, the positive floor is one-of-b and the edge-gradi
 
 Successor: Refining one Fold divides the floor by b while preserving the One velocity ceiling, so the exact finite bound is multiplied by b.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 23.6 Meaning and scientific consequence
 
@@ -1965,13 +2041,13 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The exhaustive 4 through 10,000 census contains 4,999 even inputs, zero Goldbach failures and exactly 205 twin-prime pairs with upper member at most 10,000.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - every declared even input is partitioned by all positive complementary pairs.
 - prime status is decided by a complete finite divisor certificate.
 - the finite boundary is part of the theorem and cannot be erased.
 
-### 24.4 Operational witnesses and unfavorable checks
+### 24.4 Operational witnesses and unfavourable checks
 
 - `goldbach-range` - Every even whole from four through ten thousand has a generated prime complement pair. Result: `PASS`.
 - `even-count` - The declared range contains exactly four thousand nine hundred ninety-nine even inputs. Result: `PASS`.
@@ -1991,7 +2067,7 @@ Base: The first declared even whole, four, is the junction of two and two.
 
 Successor: The census successor advances to the next even whole, exhausts every complementary split and records either a prime witness or an explicit failure.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 24.6 Meaning and scientific consequence
 
@@ -2060,13 +2136,13 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > Half-One is the unique fixed axis of exact complement; every other positive part is paired. This closes the SFT Riemann-mirroring claim and explicitly does not assert classical complex zero location.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - complement composed twice is identity.
 - self-complementarity uniquely forces the half-One.
 - reflection symmetry does not by itself imply that all points of an invariant set lie on the fixed axis.
 
-### 25.4 Operational witnesses and unfavorable checks
+### 25.4 Operational witnesses and unfavourable checks
 
 - `fixed-half` - Half-One is equal to its exact complement. Result: `PASS`.
 - `off-axis-pairs` - Quarter/three-quarter and one-third/two-thirds are distinct complement pairs. Result: `PASS`.
@@ -2085,11 +2161,11 @@ Base: The Foundation half-One certificate supplies the self-complementary witnes
 
 Successor: Every newly generated non-half part is paired with its exact complement and neither becomes a second fixed point.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 25.6 Meaning and scientific consequence
 
-The complement involution has exactly one fixed point: the half-One. That is the forced SFT mirror corresponding to the one-half axis of the classical functional equation. An unfavorable control constructs an off-axis symmetric pair, proving that symmetry alone cannot locate all members of a symmetric set. This preserves the strongest detailed V1 statement: prime-orbit structure and the mirror close, while classical complex zero location does not.
+The complement involution has exactly one fixed point: the half-One. That is the forced SFT mirror corresponding to the one-half axis of the classical functional equation. An unfavourable control constructs an off-axis symmetric pair, proving that symmetry alone cannot locate all members of a symmetric set. This preserves the strongest detailed V1 statement: prime-orbit structure and the mirror close, while classical complex zero location does not.
 
 ### 25.7 Correspondence after sealing
 
@@ -2154,14 +2230,14 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The complete starts One through 100,000 census has zero failures, start 27 takes 111 steps, the terminal cycle is 1-4-2, and the constant-3/4 pointwise contraction premise is rejected.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - every odd three-times-plus-One result is even.
 - every declared start has a finite replay trace to the terminal cycle.
 - the claim boundary remains finite and does not become the unrestricted Collatz conjecture.
 - a false contraction heuristic cannot serve as proof even when the bounded census passes.
 
-### 26.4 Operational witnesses and unfavorable checks
+### 26.4 Operational witnesses and unfavourable checks
 
 - `odd-even` - Every positive odd start through ten thousand one maps to an even three-times-plus-One result. Result: `PASS`.
 - `bounded-census` - Every start through one hundred thousand reaches the One. Result: `PASS`.
@@ -2181,7 +2257,7 @@ Base: The One lies on the declared 1-4-2 recurrent cycle.
 
 Successor: For each next positive whole start, execute the exact transition until an already certified cycle member appears and retain the full prefix.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 26.6 Meaning and scientific consequence
 
@@ -2250,7 +2326,7 @@ The complete product contains 256 candidates. Its completeness-certificate ident
 
 > The exact Fold rate is binary separation expansion and one closed label per step; unit rank power is the unique Fold-self-similar exponent, m-labelled support is m^d, and decreasing rational terms close convergence without importing their limit as a value.
 
-Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+**Shared claim-record clause `MATH-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 - local uncast separation multiplies by the Fold count.
 - one predecessor label is closed per Fold merge.
@@ -2258,7 +2334,7 @@ Exactly one candidate combines every forced coordinate. Replacing any of those c
 - m-labelled successor support obeys the base/successor count m^d.
 - a geometric rational tail bound proves finite accumulated separation.
 
-### 27.4 Operational witnesses and unfavorable checks
+### 27.4 Operational witnesses and unfavourable checks
 
 - `chaotic-rate` - The separation two-of-thirty-five advances to four-of-thirty-five before cast. Result: `PASS`.
 - `support` - Ternary support has three, nine and twenty-seven states at depths one, two and three. Result: `PASS`.
@@ -2279,7 +2355,7 @@ Base: At depth One an m-labelled successor has m states and one Fold closes one 
 
 Successor: Appending one label multiplies support by m; applying one Fold multiplies an uncast local gap by b and closes one predecessor label; one further rational term preserves the tail bound.
 
-The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+**Shared claim-record clause `MATH-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 27.6 Meaning and scientific consequence
 
@@ -2544,7 +2620,7 @@ The complete Cartesian product contains 8,192 candidate forms and has completene
 | `trace` | `answer-only` - An answer without provenance cannot be replayed or independently checked. | `complete-proof-resource-trace` - Input translation, operations, result and counted resources are retained. |
 | `addition` | `has-extra-rule` - A fitted constant or answer-selecting rule is not supplied by the dependencies. | `no-extra-rule` - The calculator composes only already-admitted exact structures and proofs. |
 | `scientific_surface` | `partial-basic-function-subset` - A basic subset is not the requested scientific calculator. | `complete-declared-scientific-surface` - Arithmetic, rational/non-rational powers, roots, logs, exponentials, circular/inverse/hyperbolic functions, combinatorics, exact statistics and typed orthogonal operations are all routed through certified kernels. |
-| `session` | `stateless-expression-only` - A stateless expression evaluator lacks terminal equals, answer, memory and history behavior. | `equals-answer-memory-history` - The terminal equals key executes; Ans, memory and ordered history retain explicit typed state without altering laws. |
+| `session` | `stateless-expression-only` - A stateless expression evaluator lacks terminal equals, answer, memory and history behaviour. | `equals-answer-memory-history` - The terminal equals key executes; Ans, memory and ordered history retain explicit typed state without altering laws. |
 | `application` | `terminal-only-opaque-answer` - A terminal-only answer surface is not a clean general-user calculator app and hides evidence. | `cross-platform-app-trace-and-guide` - One standard-library desktop app provides editable display, keypad, angle selector, memory, history, exact detail, proof trace and embedded SFT guidance. |
 
 Unique survivor and exact result:
@@ -2670,7 +2746,7 @@ Replacing any forced coordinate by its enumerated alternative loses a registered
 - a local Mathematics replay can reproduce a registered census but cannot issue or impersonate an engine admission receipt.
 - progressive disclosure changes presentation only and cannot change the exact retained answer.
 - large circular input is equivalent after subtraction of any generated whole number of complete turns.
-- the current expression census is one-to-one with the registered predecessor catalog and halts if that catalog changes without a translation.
+- the current expression census is one-to-one with the registered predecessor catalogue and halts if that catalogue changes without a translation.
 - complete implementation coverage is necessary but remains distinct from engine forcing and independent validation.
 
 Executed witnesses:
@@ -2693,7 +2769,7 @@ Adverse controls:
 - `tampered_artifact` - expected: reject a missing, duplicated or additional survivor Observed: the generated product contains exactly one registered survivor Result: `PASS`; receipt `sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219`.
 - `boundary` - expected: halt any attempt to import an excluded object or answer-producing model Observed: no numerical zero, negative magnitude, irrational scalar, imaginary scalar or floating proof value; no fitted scientific parameter, host transcendental answer, random oracle, NaN or infinity; no GUI or terminal path may bypass the exact evaluator; no calculator replay is labelled an admission receipt; no claim to future Mathematics families not present in the exact predecessor census; no proprietary calculator-specific surface is claimed beyond the declared expression language Result: `PASS`; receipt `sha256:eefb6e9e942e0a51c61bd23f963e704839a3ef7cb8507308620dae96ab4f04fc`.
 
-Depth-independent base: Claim 005 supplies one exact scalar calculation and one desktop evidence surface; the twenty-four fixed predecessors supply the complete current Mathematics catalog.
+Depth-independent base: Claim 005 supplies one exact scalar calculation and one desktop evidence surface; the twenty-four fixed predecessors supply the complete current Mathematics catalogue.
 
 Depth-independent successor: Adding one expression, interaction, platform view or Mathematics family is lawful only when it maps to an admitted kernel, retains exact typed evidence, adds a generated census coordinate or registered translation, and introduces no uncovered execution branch.
 
@@ -2706,7 +2782,7 @@ Exact exclusions:
 - no claim to future Mathematics families not present in the exact predecessor census.
 - no proprietary calculator-specific surface is claimed beyond the declared expression language.
 
-Limitation: Closure covers the exact current predecessor catalog, declared scientific expression language and application behavior. It does not claim that a calculation is a new theorem, that every future Mathematics discovery is already translated, or that every proprietary calculator button is required. Lawful future additions remain open versioned extensions.
+Limitation: Closure covers the exact current predecessor catalogue, declared scientific expression language and application behaviour. It does not claim that a calculation is a new theorem, that every future Mathematics discovery is already translated, or that every proprietary calculator button is required. Lawful future additions remain open versioned extensions.
 
 Evidence identities:
 
@@ -2751,7 +2827,7 @@ The complete Cartesian product contains 256 candidate forms and has completeness
 | `session_state` | `shared-global-visitor-state` - One visitor or test can contaminate another visitor's landing value. | `fresh-independent-page-session` - Every page load receives a fresh retained controller identity while its own history and memory persist. |
 | `network_reach` | `desktop-loopback-only` - A computer-only default blocks ordinary same-network phone use. | `same-network-default-with-private-option` - The default binds to the local network and displays its phone address; private mode remains explicit. |
 | `dependency_boundary` | `heavy-GUI-or-container-runtime` - A heavy platform runtime violates the accessibility requirement. | `Python-standard-library-and-installed-browser` - HTTP service, exact controller and page assets require no third-party runtime or container. |
-| `validation` | `hidden-widget-dimensions-only` - Widget dimensions did not detect the observed blank window. | `API-render-responsive-adverse-and-complete-coverage` - The corrected route checks HTTP behavior, semantic rendering, mobile structure, prohibited results, session isolation and complete active-file coverage. |
+| `validation` | `hidden-widget-dimensions-only` - Widget dimensions did not detect the observed blank window. | `API-render-responsive-adverse-and-complete-coverage` - The corrected route checks HTTP behaviour, semantic rendering, mobile structure, prohibited results, session isolation and complete active-file coverage. |
 
 Unique survivor and exact result:
 
@@ -2817,7 +2893,7 @@ Evidence identities:
 
 ### 28.6 Exact value translation and fail-closed semantics
 
-| Familiar surface | Exact calculator meaning | Boundary behavior |
+| Familiar surface | Exact calculator meaning | Boundary behaviour |
 |---|---|---|
 | `0` | structural empty One | displayable and usable as the empty/identity form; never stored as a conventional numerical-zero proof scalar |
 | positive integer or decimal | exact positive whole or rational Fold part, parsed character by character | no binary floating conversion is admitted |
@@ -2867,7 +2943,7 @@ calculator_launchers/launch-smithian-fold-calculator.sh         # Linux
 
 Claim 006 records 1,869 executable statements and 696 branches across its declared active calculator implementation, all covered with no missing statement, branch or partial branch. Claim 007 records 293 executable statements and 86 branches across the active browser adapter, again with no missing statement, branch or partial branch. These are statement-and-branch coverage facts over the declared files, not a claim that every physical browser or device in existence has been tested.
 
-The executed checks cover exact values; every operation and parser branch; invalid domains and resource exhaustion; expression-machine, session, memory and history integration; pure controller state; command-line execution; operating-system launchers; server API behavior; request bounds and authorization; fresh-session isolation; full control partition; semantic page structure; phone reflow and focus behavior; exact interval presentation; negative-result rollback; and implementation-distinct HTTP replay. Direct use supplied an additional unfavorable route: the first desktop widget visibly opened blank even though hidden geometry tests passed. That failure is preserved in the 007 false-premise control and is why the standards-rendered route, rather than the deprecated widget path, survives.
+The executed checks cover exact values; every operation and parser branch; invalid domains and resource exhaustion; expression-machine, session, memory and history integration; pure controller state; command-line execution; operating-system launchers; server API behaviour; request bounds and authorisation; fresh-session isolation; full control partition; semantic page structure; phone reflow and focus behaviour; exact interval presentation; negative-result rollback; and implementation-distinct HTTP replay. Direct use supplied an additional unfavourable route: the first desktop widget visibly opened blank even though hidden geometry tests passed. That failure is preserved in the 007 false-premise control and is why the standards-rendered route, rather than the deprecated widget path, survives.
 
 Representative end-to-end outcomes:
 
@@ -2909,7 +2985,7 @@ Four explicit reconciliation outcomes deserve front-page visibility because they
 
 The twenty-two foundational theorems form one dependency chain rather than a list of renamed fields. Exact arithmetic gives lawful trace junction, pair-cell product, refinement and comparison. Discrete mathematics turns those operations into canonical carriers, selections, relations, maps and induction. Combinatorics then generates complete families of choices; graph theory holds a relation from complete pair support and promotes it to path, cycle, cut and network structure. Algebra asks which complete operation relations close, associate, return and map. Order retains only witnessed comparison and derives conditional extremal operations.
 
-Geometry and topology use graph paths, incidence and order closure to derive the finite structures computation actually requires. Probability uses complete combinatorial support and exact parts to quantify observation classes without altering deterministic state. Optimization uses order to preserve feasible undominated alternatives. Dynamics uses graph transitions to define trajectory, return, basin and record-dependent reversal. Logic then turns distinguished forms and relations into proof-carrying inference. Category, type and composition close the chain by showing how exact objects and transformations compose without losing interface provenance.
+Geometry and topology use graph paths, incidence and order closure to derive the finite structures computation actually requires. Probability uses complete combinatorial support and exact parts to quantify observation classes without altering deterministic state. Optimisation uses order to preserve feasible undominated alternatives. Dynamics uses graph transitions to define trajectory, return, basin and record-dependent reversal. Logic then turns distinguished forms and relations into proof-carrying inference. Category, type and composition close the chain by showing how exact objects and transformations compose without losing interface provenance.
 
 No result licenses backward importation. Because category-like composition is derived last, it cannot be an axiom used to select arithmetic. Because probability is downstream of complete deterministic support, it cannot install an ontic random cause in the earlier state law. Because geometry is finite incidence before continuum correspondence, an irrational coordinate cannot retroactively become foundational proof evidence.
 
@@ -2931,9 +3007,9 @@ An event is a held support selection. For a nonempty event, probability quantity
 
 Statistical summaries are allowed because they are transparent functions of complete finite records. Ties are retained. A natural-data claim would require a separate empirical registration, frozen source and target custody. The target must remain closed until after the derivation seal; all rows, including failures, must be preserved. No natural dataset was needed or used to admit the formal probability theorem in this paper.
 
-## 33. Formal proof versus empirical validation
+## 33. Formal proof and empirical constitution
 
-The twenty-two foundational claims and five calculator records are formal structural theorems, exhaustive finite mathematical censuses or executable translations. Their empirical content in this paper is computational execution and direct interface testing: the candidate products are actually generated, decisions actually run, controls are deliberately perturbed, separate validator processes execute and receipts are independently replayed. This execution evidence demonstrates that the declared finite grammars and certificates have the reported machine behavior. It is not observational evidence about an external natural system, and the paper does not mislabel it as such.
+The twenty-two foundational claims and five calculator records are formal structural theorems, exhaustive finite mathematical censuses or executable translations. Their empirical content in this paper is computational execution and direct interface testing: the candidate products are actually generated, decisions actually run, controls are deliberately perturbed, separate validator processes execute and receipts are independently replayed. This execution evidence demonstrates that the declared finite grammars and certificates have the reported machine behaviour. It is not observational evidence about an external natural system, and the paper does not mislabel it as such.
 
 When a later branch asserts a relation to natural data, the Foundation measurement boundary applies. Formal law selection and target evaluation are different phases with different custody. A blind opaque predictor cannot replace a derivation chain because a score alone does not identify premises, alternatives, eliminations, source identity, failure conditions or whether the target influenced the law. An empirical SFT claim must expose all of those objects and halt if custody or capability isolation fails.
 
@@ -2946,7 +3022,7 @@ python3 -m sft verify-all   # macOS and most Linux systems
 py -m sft verify-all        # standard Windows Python launcher
 ```
 
-No Docker image, virtual machine, network service or third-party Python package is required for the scientific verification path. The command validates repository structure, runs all unit, unfavorable-control and end-to-end tests under line coverage, requires 100 percent executable-line coverage of the 15-module admission engine, loads the ordered execution manifest, rebuilds each source manifest, reruns every candidate and control, launches every independent validator and compares each new receipt byte-for-structure with the admitted stored receipt.
+No Docker image, virtual machine, network service or third-party Python package is required for the scientific verification path. The command validates repository structure, runs all unit, unfavourable-control and end-to-end tests under line coverage, requires 100 percent executable-line coverage of the 15-module admission engine, loads the ordered execution manifest, rebuilds each source manifest, reruns every candidate and control, launches every independent validator and compares each new receipt byte-for-structure with the admitted stored receipt.
 
 The proportionate local report for this successor paper is:
 
@@ -2972,13 +3048,13 @@ The repository also supports mechanical attacks: alter a source after registrati
 
 The current-evidence-complete branch supplies the exact resources downstream branches may cite: symbols can be canonical distinguished forms; encodings can be complete maps; information quantity can be an exact relation between support distinctions and observation; channels can be relations; entropy and uncertainty must respect deterministic support and exact parts; coding can use combinatorial word families, graph paths and algebraic operations. None of those downstream laws is admitted by this paper merely because its mathematical vocabulary now exists.
 
-Formal computation may build states from canonical forms, transitions from relations, machines from dynamical systems, resource orders from exact positive traces, semantics from proof-carrying composition and quantum support from complete Fold word families. Physics and later natural sciences may use finite geometry, dynamics, exact probability and optimization, but must separately derive their laws and pass blind empirical validation where observation is required. Applications remain frontier translations until the relevant science branches close.
+Formal computation may build states from canonical forms, transitions from relations, machines from dynamical systems, resource orders from exact positive traces, semantics from proof-carrying composition and quantum support from complete Fold word families. Physics and later natural sciences may use finite geometry, dynamics, exact probability and optimisation, but must separately derive their laws and pass blind empirical validation where observation is required. Applications remain frontier translations until the relevant science branches close.
 
 ## 37. Scope, limitations and lawful extension
 
 Current-evidence completion is exact at the versioned generated-finite Mathematics boundary. It does not assert a completed universe of all sets, a real or complex continuum, an infinite-dimensional space or every named theorem of conventional mathematics. It derives the general structural kernels needed to generate and test finite exact instances. Named special structures must still expose their carrier and property evidence. Continuum expressions can enter only through separately registered finite approximation or measurement claims.
 
-No official natural empirical claim is made in this branch. The calculator is an executable mathematical translation and validation surface, not a natural-data experiment. Information Science and the computation branches have their own later papers and receipts; after this Mathematics 1.3 publication the active clean-room programme returns to Physics. None of those downstream results can retroactively select a Mathematics law.
+No official natural empirical claim is made in this branch. The calculator is an executable mathematical translation and validation surface, not a natural-data experiment. Information Science and the computation branches have their own later papers and receipts; after this Mathematics 1.5 publication the active clean-room programme returns to Physics. None of those downstream results can retroactively select a Mathematics law.
 
 ## 38. Open-science status, rights and participation
 
@@ -2996,9 +3072,9 @@ Credentials cannot rescue a failed gate, and lack of credentials cannot prevent 
 
 ## 39. Conclusion
 
-Mathematics is complete to its frozen 29 July 2026 census: **323/323 obligations, 24/24 families, 97,280 complete candidate decisions, 323 unique survivors, 1,292 passed adverse controls, 323 implementation-distinct reconstructions and no open registered obligation**. The final reconciliation identity is `sha256:526c6d78a3ff77c21c6d4dd71c266499f5b234a7763cb223e5d009fa9f101c64`. Repository validation passes with 1,983 V3 claims across the full platform, while the canonical engine seal and verification-authority seal remain unchanged.
+Mathematics is complete to its frozen 29 July 2026 census: **323/323 obligations, 24/24 families, 97,280 complete candidate decisions, 323 unique survivors, 1,292 passed adverse controls, 323 implementation-distinct reconstructions and no open registered obligation**. The final reconciliation identity is `sha256:526c6d78a3ff77c21c6d4dd71c266499f5b234a7763cb223e5d009fa9f101c64`. The current lightweight repository status records 2,751 admitted V3 claims across the full platform, while the canonical engine seal and verification-authority seal remain unchanged.
 
-The scientific result is both mathematical and methodological. Arithmetic, algebra, discrete structure, geometry, topology, analysis, probability, optimization, dynamics, logic, compositional mathematics, numerical analysis and symbolic construction are expressed through one exact generated constitution. Each familiar correspondence is downstream of a sealed SFT derivation. Each empty case is structural absence, each opposed direction is typed, each non-rational conventional object is represented by an exact construction or enclosure, and every claimed generality has a finite-successor or explicit boundary certificate.
+The scientific result is both mathematical and methodological. Arithmetic, algebra, discrete structure, geometry, topology, analysis, probability, optimisation, dynamics, logic, compositional mathematics, numerical analysis and symbolic construction are expressed through one exact generated constitution. Each familiar correspondence is downstream of a sealed SFT derivation. Each empty case is structural absence, each opposed direction is typed, each non-rational conventional object is represented by an exact construction or enclosure, and every claimed generality has a finite-successor or explicit boundary certificate.
 
 The Validation Grand Lock does not erase adverse evidence. It preserves all 305 pre-validation boundary records and partitions every receipt exactly once. The final handoff family then prevents Mathematics from absorbing the empirical meanings owned by Physics, Chemistry, Biology, Social Science or Engineering. This is dated completion, not permanent closure: future discoveries remain welcome, but they do not enter by editorial preference, reputation or fit. They enter by registration, enumeration, uniqueness, falsification, independent reconstruction, observation and the unchanged engine.
 ## Appendix A. Foundational and calculator receipt identities preserved from version 1.4
@@ -3054,6 +3130,18 @@ Executable law sources are under `sft/mathematics/`. `sft/mathematics/catalog.py
 ## Appendix C. Reproducibility interpretation
 
 A successful rerun proves that the checked sources deterministically reproduce the registered censuses, decisions, closures, controls, independent certificates and receipts on the reviewing host. It does not compel agreement with the grammar boundary. Scientific review therefore has two complementary tasks: reproduce the artifact and scrutinize whether the declared grammar exhausts the stated boundary. The repository makes both tasks explicit.
+
+## Family results, complete claim inventory and claim-level audit records
+
+The dependency-ordered ledger below is the complete human-readable
+Mathematics claim inventory for this version. Each claim section exposes
+its claim identity, family, formal and empirical status, exact statement,
+dependency route, carrier and boundary, candidate grammar and count, unique
+survivor, elimination logic, falsification condition, controls, source and
+custody records, chronology, scientific meaning and receipt identities. Where
+a generic clause is referenced, its full unchanged wording is retained in the
+shared claim-record appendix. The machine packages remain authoritative for
+complete candidates, decisions and executable traces.
 
 ## 40. Complete-field Mathematics execution - version 1.5
 
@@ -6746,11 +6834,49 @@ This family contributes 1,536 completely decided candidates, 6 unique survivors 
 
 Mathematics is empirical here in the ordinary sense that its generated consequences are observed through exact executions and independently reproduced records. Where a mathematical structure is later used to describe nature, the owning empirical science must separately identify the physical target, seal the prediction and compare units, values and uncertainty. The Mathematics handoff forbids a formal identity from impersonating a physical measurement.
 
-The Grand Lock's 305 boundary rows include favorable, adverse, absent, unresolved and excluded cases. Their preservation is essential: the reported 100.0% is the fraction of frozen obligations with complete admitted packages, not the fraction of attempted routes that happened to look favorable. A halted attempt earns no admission; a corrected route remains visible through its versioned evidence chain.
+The Grand Lock's 305 boundary rows include favourable, adverse, absent, unresolved and excluded cases. Their preservation is essential: the reported 100.0% is the fraction of frozen obligations with complete admitted packages, not the fraction of attempted routes that happened to look favourable. A halted attempt earns no admission; a corrected route remains visible through its versioned evidence chain.
 
 ## 42. Reproducibility and publication boundary
 
-The complete branch can be reviewed claim by claim through `census/mathematics_discipline_current_reconciliation_v23.json` and rerun through the repository's documented verification route. The heavy all-branch verification command remains reserved for the final global Grand Lock; this paper was prepared with exact family replay, focused tests, repository validation and both immutable seals. Version 1.5 is locally prepared and is not published until Maria Smith explicitly authorizes its GitHub and Zenodo release.
+The complete branch can be reviewed claim by claim through `census/mathematics_discipline_current_reconciliation_v23.json` and rerun through the repository's documented verification route. The heavy all-branch verification command remains reserved for the final global Grand Lock; this paper was prepared with exact family replay, focused tests, repository validation and both immutable seals. Version 1.5 is locally prepared and is not published until Maria Smith explicitly authorises its GitHub and Zenodo release.
+## Data and code availability
+
+The open repository is
+[`MettaMazza/ernos-labs-sft-platform`](https://github.com/MettaMazza/ernos-labs-sft-platform).
+The live model-admitted index is `census/claims.json`; the Mathematics
+field boundary is `census/mathematics_discipline_obligations.json`. Every represented claim has its own
+package under `claims/<claim-id>/` and its immutable model-admitted receipt
+under `receipts/engine/model_admitted/`.
+
+The publication evidence map is `publications/successors/mathematics/evidence_map_v1_5.json` and the candidate
+manifest is `publications/successors/mathematics/manifest_v1_5.json`. Registered external records and source
+captures are retained under `experiments/external_sources/mathematics/` together with their
+source identities, transport outcomes and hashes. Files too large for ordinary
+Git remain checksum-bound and are distributed through the applicable existing
+Zenodo record rather than omitted or replaced.
+
+Build, render, replay and verification programs are retained under `tools/`,
+with branch implementations under `sft/`, independent reconstructions under
+`generated/` and tests under `tests/`. The final approved Markdown, rendered
+PDF, evidence map, manifest, metadata and checksums must agree before deposit.
+No successful test is treated as empirical confirmation unless the
+claim-specific evidence protocol separately authorises that status.
+
+## Shared claim-record clauses
+
+The clauses below previously appeared verbatim in multiple claim records.
+They are preserved once here to reduce mechanical repetition. Each in-text
+clause reference applies this exact wording at that claim location; no
+scientific statement, status, condition or qualification has been removed.
+
+### `MATH-S001` — applied at 22 claim locations
+
+Exactly one candidate combines every forced coordinate. Replacing any of those coordinates by its generated alternative triggers the corresponding rejection in the table. Adding a rule fails the final addition coordinate. This establishes minimality inside the declared grammar and named-shape uniqueness over the complete product. The survivor entails the following operational laws:
+
+### `MATH-S002` — applied at 22 claim locations
+
+The finite product execution classifies representation rules; this base/successor certificate establishes that the forced rule continues at every generated finite size or depth. It does not posit a completed infinity.
+
 ## References
 
 1. Smith M. *From Nothing to Fold: A Premise-Free, Parameter-Free and Machine-Closed Foundation for Smithian Fold Theory*. Ernos Labs Foundation Branch Paper 001, version 1.1. 2026. doi:10.5281/zenodo.21535636.

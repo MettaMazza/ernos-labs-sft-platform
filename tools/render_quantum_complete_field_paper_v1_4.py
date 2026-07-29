@@ -42,6 +42,7 @@ def cover():
     kicker = ParagraphStyle("QuantumV14CoverKicker", fontName="Helvetica-Bold", fontSize=9, leading=12, textColor=base.ACCENT, alignment=TA_CENTER)
     author = ParagraphStyle("QuantumV14CoverAuthor", fontName="Times-Roman", fontSize=12, leading=18, textColor=base.INK, alignment=TA_CENTER)
     note = ParagraphStyle("QuantumV14CoverNote", fontName="Times-Roman", fontSize=9, leading=13, textColor=base.MUTED, alignment=TA_CENTER, leftIndent=18 * mm, rightIndent=18 * mm)
+    warning = ParagraphStyle("QuantumV14CoverWarning", fontName="Helvetica-Bold", fontSize=9, leading=13, textColor=base.ACCENT_DARK, alignment=TA_CENTER)
     return [
         Spacer(1, 21 * mm),
         Paragraph("SMITHIAN FOLD THEORY - REVERSIBLE AND QUANTUM COMPUTATION BRANCH PAPER 001", kicker),
@@ -66,6 +67,8 @@ def cover():
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,
         ),
+        Spacer(1, 7 * mm),
+        Paragraph("FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 

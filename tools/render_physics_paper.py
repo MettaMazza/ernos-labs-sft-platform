@@ -17,9 +17,9 @@ import render_platform_paper as base
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(os.environ.get("SFT_PHYSICS_PAPER_SOURCE", ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md")).resolve()
-OUTPUT = Path(os.environ.get("SFT_PHYSICS_PDF_OUTPUT", ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.1.pdf")).resolve()
-METADATA = Path(os.environ.get("SFT_PHYSICS_METADATA", ROOT / "publication/physics_zenodo_metadata.json")).resolve()
+SOURCE = Path(os.environ.get("SFT_PHYSICS_PAPER_SOURCE", ROOT / "publications/successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_3.md")).resolve()
+OUTPUT = Path(os.environ.get("SFT_PHYSICS_PDF_OUTPUT", ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.3.pdf")).resolve()
+METADATA = Path(os.environ.get("SFT_PHYSICS_METADATA", ROOT / "publications/successors/physics/zenodo_metadata_v1_3.json")).resolve()
 
 
 def cover(authorized: bool, doi: str, statistics: str, version: str):
@@ -46,9 +46,9 @@ def cover(authorized: bool, doi: str, statistics: str, version: str):
         Spacer(1, 9 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 9 * mm),
-        Paragraph(f"Corrected and expanded complete-field version {version}<br/>" + statistics + (f"<br/>Reserved DOI: {doi}" if doi else "<br/>Version DOI pending archival deposit") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph(f"Corrected and expanded complete-field edition<br/>Version {version}<br/>" + statistics + (f"<br/>Reserved DOI: {doi}" if doi else "<br/>Version DOI pending archival deposit") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
-        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "PUBLICATION-READY MANUSCRIPT - RELEASE NOT YET AUTHORIZED", warning),
+        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 
@@ -76,7 +76,7 @@ def main() -> None:
             canvas.setFont("Helvetica", 7.1); canvas.setFillColor(base.MUTED)
             canvas.drawString(18 * mm, height - 11.8 * mm, "FROM FOLD TO PHYSICS - ERNOS LABS PHYSICS PAPER 001")
             canvas.drawRightString(width - 18 * mm, 11 * mm, str(doc.page))
-            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - PUBLICATION-READY / UNRELEASED"
+            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - FINAL CANDIDATE / UNRELEASED"
             canvas.drawString(18 * mm, 11 * mm, footer)
         canvas.restoreState()
 

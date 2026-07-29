@@ -42,9 +42,9 @@ def cover(authorized: bool, doi: str):
         Spacer(1, 13 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm),
-        Paragraph("Version 1.3 - complete to the dated current standard, extension-open<br/>289 required laws - 73,984 exact candidates<br/>29 July 2026" + (f"<br/>{'DOI' if authorized else 'Previous version DOI'}: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph("Version 1.3 - complete to the dated current standard, extension-open<br/>289 required laws - 73,984 exact candidates - 1,156 controls<br/>29 July 2026" + (f"<br/>{'DOI' if authorized else 'Previous version DOI'}: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
-        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "LOCAL PREPUBLICATION MANUSCRIPT - PUBLICATION NOT YET AUTHORIZED", warning),
+        Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 
@@ -65,7 +65,7 @@ def main() -> None:
             canvas.setFillColor(base.MUTED)
             canvas.drawString(18 * mm, height - 11.8 * mm, "FROM FOLD TO MATERIALS - ERNOS LABS MATERIALS PAPER 001")
             canvas.drawRightString(width - 18 * mm, 11 * mm, str(doc.page))
-            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - LOCAL PREPUBLICATION"
+            footer = f"Maria Smith - 2026 - CC BY 4.0 - DOI {doi}" if authorized else "Maria Smith - 2026 - CC BY 4.0 - FINAL CANDIDATE / UNRELEASED"
             canvas.drawString(18 * mm, 11 * mm, footer)
         canvas.restoreState()
 

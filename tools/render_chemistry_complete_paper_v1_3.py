@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT / "tools") not in sys.path: sys.path.insert(0, str(ROOT / "tools"))
 import render_platform_paper as base  # noqa: E402
 
-SOURCE = ROOT / "publications/current/chemistry/FROM_FOLD_TO_CHEMISTRY.md"
+SOURCE = ROOT / "publications/successors/chemistry/FROM_FOLD_TO_CHEMISTRY_PAPER_001_V1_3.md"
 OUTPUT = ROOT / "output/pdf/from-fold-to-chemistry-branch-paper-001-v1.3.pdf"
 
 
@@ -32,7 +32,7 @@ def cover():
         Spacer(1, 10 * mm), Paragraph("Ernos Labs", kicker), Paragraph("Open Source Science Platform and Knowledge Tree", author),
         Spacer(1, 13 * mm), Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 13 * mm), Paragraph("Version 1.3 - complete to the registered current standard and open to lawful extension<br/>272/272 obligations - 281 claims - 71,936 candidates - 1,124 controls<br/>29 July 2026<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
-        Spacer(1, 8 * mm), Paragraph("LOCAL PREPUBLICATION SUCCESSOR - REMOTE PUBLICATION NOT AUTHORIZED", warning),
+        Spacer(1, 8 * mm), Paragraph("FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 
@@ -44,7 +44,7 @@ def main():
             canvas.setStrokeColor(base.RULE); canvas.setLineWidth(0.4); canvas.line(18 * mm, height - 15 * mm, width - 18 * mm, height - 15 * mm)
             canvas.setFont("Helvetica", 7.1); canvas.setFillColor(base.MUTED)
             canvas.drawString(18 * mm, height - 11.8 * mm, "FROM FOLD TO CHEMISTRY - ERNOS LABS CHEMISTRY PAPER 001 V1.3")
-            canvas.drawRightString(width - 18 * mm, 11 * mm, str(doc.page)); canvas.drawString(18 * mm, 11 * mm, "Maria Smith - 2026 - CC BY 4.0 - LOCAL PREPUBLICATION")
+            canvas.drawRightString(width - 18 * mm, 11 * mm, str(doc.page)); canvas.drawString(18 * mm, 11 * mm, "Maria Smith - 2026 - CC BY 4.0 - FINAL CANDIDATE / UNRELEASED")
         canvas.restoreState()
     document = BaseDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=16 * mm, leftMargin=16 * mm, topMargin=21 * mm, bottomMargin=18 * mm, title="From Fold to Chemistry", author="Maria Smith", subject="Complete-current-standard Chemistry reconstruction in Smithian Fold Theory", creator="Ernos Labs publication renderer")
     frame = Frame(document.leftMargin, document.bottomMargin, document.width, document.height, id="body")

@@ -22,13 +22,12 @@ import render_platform_paper as base
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md"
-DOI_PATH = ROOT / "publications/current/information_science/doi.txt"
+SOURCE = ROOT / "publications/successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_4.md"
 OUTPUT = ROOT / "output/pdf/from-distinction-to-information-branch-paper-001-v1.4.pdf"
 
 
 def doi() -> str:
-    return DOI_PATH.read_text(encoding="utf-8").strip()
+    return "Version 1.4 DOI pending archival deposit"
 
 
 def draw_page(canvas, doc):
@@ -97,6 +96,14 @@ def cover():
         leftIndent=22 * mm,
         rightIndent=22 * mm,
     )
+    warning = ParagraphStyle(
+        "InformationCoverWarning",
+        fontName="Helvetica-Bold",
+        fontSize=9,
+        leading=13,
+        textColor=base.ACCENT_DARK,
+        alignment=TA_CENTER,
+    )
     return [
         Spacer(1, 23 * mm),
         Paragraph("SMITHIAN FOLD THEORY - INFORMATION SCIENCE BRANCH PAPER 001", kicker),
@@ -133,6 +140,8 @@ def cover():
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,
         ),
+        Spacer(1, 7 * mm),
+        Paragraph("FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 

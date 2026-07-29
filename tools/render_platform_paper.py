@@ -68,7 +68,10 @@ def inline_markup(text: str) -> str:
     text = re.sub(r"`([^`]+)`", lambda match: hold(f'<font name="Courier">{html.escape(match.group(1))}</font>'), text)
     text = html.escape(text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", text)
-    text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<i>\1</i>", text)
+    # Single-asterisk emphasis is recognised only at word boundaries. This
+    # prevents exact multiplication strings such as ``g*m*B`` and
+    # ``3*53*64`` from being consumed as italic markup.
+    text = re.sub(r"(?<![\w*])\*([^*\n]+)\*(?![\w*])", r"<i>\1</i>", text)
     text = text.replace("&lt;br&gt;", "<br/>")
     for index, token in enumerate(tokens):
         text = text.replace(f"@@TOKEN{index}@@", token)

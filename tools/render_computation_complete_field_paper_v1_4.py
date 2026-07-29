@@ -96,6 +96,14 @@ def cover():
         leftIndent=20 * mm,
         rightIndent=20 * mm,
     )
+    warning = ParagraphStyle(
+        "ComputationV14CoverWarning",
+        fontName="Helvetica-Bold",
+        fontSize=9,
+        leading=13,
+        textColor=base.ACCENT_DARK,
+        alignment=TA_CENTER,
+    )
     return [
         Spacer(1, 22 * mm),
         Paragraph("SMITHIAN FOLD THEORY - CLASSICAL COMPUTATION BRANCH PAPER 001", kicker),
@@ -133,6 +141,8 @@ def cover():
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,
         ),
+        Spacer(1, 7 * mm),
+        Paragraph("FINAL PUBLICATION CANDIDATE - RELEASE NOT YET AUTHORISED", warning),
     ]
 
 

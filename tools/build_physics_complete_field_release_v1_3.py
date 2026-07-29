@@ -171,6 +171,8 @@ def main():
         "schema": "sft-v3-physics-complete-field-paper-evidence-map/1",
         "branch_id": "physics",
         "version": "1.3.0",
+        "publication_authorized": False,
+        "ready_to_publish": False,
         "inventory_identity": inventory["inventory_hash"],
         "current_claim_count": 368,
         "candidate_count": candidate_total,

@@ -3,14 +3,19 @@
 **Maria Smith**<br>
 Independent researcher and founder, Ernos Labs<br>
 Maria.Smith.Sftoe@gmail.com<br>
-2026-07-29
+29 July 2026
 
 Reversible and Quantum Computation Branch Paper 001, version 1.4.0 - Smithian Fold Theory V3 Clean-Room Reconstruction
 
 Previous version DOI: [10.5281/zenodo.21627748](https://doi.org/10.5281/zenodo.21627748)<br>
-Version 1.4 DOI: pending archival deposit
+Existing concept DOI: [10.5281/zenodo.21518312](https://doi.org/10.5281/zenodo.21518312)<br>
+Version 1.4 DOI: pending deposit as a new version of that existing record
 
-Copyright (c) 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0.
+**FINAL PUBLICATION CANDIDATE — NOT YET APPROVED OR DEPOSITED.** Version 1.4
+must be published only through Zenodo's new-version route for the existing
+concept DOI above. It must not be deposited as a new record or paper.
+
+Copyright © 2026 Maria Smith. Licensed under CC BY 4.0. Repository code is licensed separately under Apache-2.0.
 
 ## Abstract
 
@@ -30,7 +35,7 @@ Version 1.4 preserves the full version 1.3 foundation, public scientific mission
 The frozen census identity is `sha256:a7f855b7e9fc6ffe4ae9485faf26f1be44bd672b843ecbfbad42b0f523726e3c`. The final reconciliation identity is `sha256:ac4acee07a49cbde19eee7baacd7be7d8c87c93e4d75a47467160fb31499e650`. The branch contains 73,728 completely decided candidate structures, 288 unique survivors and 1,152 passing controls. Every full-field registration has an empty axiom list and an empty free-parameter list. Every dependency chain reaches `SFT-ROOT-THERE-IS-NO-NOTHING` through actual registered receipts rather than narrative assertion.
 
 Closure means that every exact kernel named by this dated census has passed its declared grammar and evidence conditions. It does not convert a formal quantum computation law into an unperformed physical measurement. The theorem `2t+1` is unbounded over supplied positive finite fault orders; it is not an imported stochastic hardware threshold. Physical amplitudes, device errors, timing, energy, experimental speedup and natural outcome distributions remain measurement handoffs. The branch is complete to known registered scope, not permanently closed to lawful discoveries, counterexamples or stronger versioned extensions.
-## 2. Headline results at a glance
+## 2. Headline findings and results at a glance
 
 | Result | Exact executed result | Scientific meaning and boundary |
 |---|---|---|
@@ -46,6 +51,77 @@ Closure means that every exact kernel named by this dated census has passed its 
 | Grand Lock and adverse evidence | Twelve validation laws replay the whole branch. One first-attempt `VALID-001` label-binding submission halted and remains preserved; the corrected separately versioned protocol binding later admitted without changing the law, target, engine, verifier or condition. | The validation Grand Lock is a dated reconciliation layer, not immunity from criticism and not permission to reward a halt. |
 
 Historical quantum names enter only after the Fold carriers, alternatives and operations have been forced. They are correspondence labels and tests; they do not select a survivor.
+## Current status, evidence language and reader map
+
+| Status field | Current position |
+|---|---|
+| Branch and completion boundary | Reversible and Quantum Computation: 288/288 frozen obligations; 288 live claims. This is dated, versioned completion and remains open to lawful extension. |
+| Formal status | Every live claim represented here has a current model-admitted receipt. Formal admission does not by itself imply empirical confirmation. |
+| Empirical status | Claim-specific. Blind, non-blind, development-observed, holdout, adverse, unresolved, unavailable and formal-only distinctions remain exactly as recorded in the claim ledger and evidence packages. |
+| Chronology | Claim-specific registration, seal, custody and observation order governs. Later evidence does not retroactively become an earlier prediction. |
+| Publication status | Version 1.4.0 is a final publication candidate awaiting Maria Smith's approval. It is not yet deposited. |
+| Existing record lineage | Current record DOI `10.5281/zenodo.21627748`; concept DOI `10.5281/zenodo.21518312`. Publication is permitted only through the existing record's new-version route. |
+| What is not claimed | Permanent closure of science, universal empirical confirmation, transfer of another branch's ownership or permission to replace an adverse or unresolved record. |
+
+### Corpus-wide terminology and evidence key
+
+| Term | Reserved meaning in this paper |
+|---|---|
+| Theorem | A formally closed proposition at its declared grammar and dependency boundary. |
+| Law | An admitted branch relation with its declared carrier, boundary, dependencies and extension rule. |
+| Claim | The registered unit judged by the engine and bound to one immutable receipt. |
+| Constitution | The rules governing admissible objects, derivations, evidence and publication; not an empirical result. |
+| Derivation | Generation and elimination of the declared candidate space to its surviving structure. |
+| Prediction | A consequence sealed before the matching target is released under the registered custody protocol. |
+| Observation | A source-bound external record; it does not enter candidate generation. |
+| Measurement | An instrument-, method-, condition- and uncertainty-bound observed value. |
+| Reconstruction | A separately implemented regeneration or an explicitly identified inference of a retained state or history. |
+| Exact numerical correspondence | Equality or registered interval relation between exact numerical objects at the declared boundary. |
+| Structural correspondence | A post-derivation relation between forms without a claim of exact numerical prediction. |
+| Boundary correspondence | Agreement restricted to the named interface, limit or ownership boundary. |
+| Compatibility | Non-adverse but non-discriminating evidence. |
+| Support | Relevant evidence that is not unique confirmation. |
+| Confirmation | Used only when the current registered evidence protocol warrants that classification. |
+| Validation | Successful execution of the specified formal, computational or empirical test; its kind must be named. |
+| Adverse result | A registered test result that conflicts with the tested claim at its declared boundary. |
+| Unresolved result | Required evidence remains unavailable, incomplete, disputed or insufficiently classified. |
+| Implementation identity | The hash-bound identity of executable material; implementation success is not empirical confirmation. |
+| Formal, empirical and publication status | Three independent classifications. None silently substitutes for another. |
+| Foundational closure | Completion of the registered foundation only. It does not imply field-wide closure. |
+| Field-wide closure | Completion of the frozen or registered dated field census named in this paper. |
+| Current-evidence closure | Closure only to the evidence surface presently registered and preserved. |
+| Extension openness | New questions may be added by a later version without rewriting existing receipts or history. |
+
+Proof language is reserved for formal closure; derivation for generated
+structure; implementation for executable demonstration; prediction for a
+correctly sealed prospective consequence; observation and measurement for
+source-bound external records; reconstruction for separately regenerated or
+inferred states; correspondence for post-derivation relationships;
+compatibility and support for non-unique evidence; confirmation only where the
+registered protocol authorises it; adverse for conflict; and unresolved where
+required evidence remains incomplete.
+
+### Three reading levels
+
+1. **Conceptual paper.** The abstract, headline findings, branch narrative,
+   major derivations, evidence synthesis, limitations and conclusion provide
+   the readable scientific argument.
+2. **Scientific audit layer.** Family and claim sections preserve exact status,
+   dependencies, candidate and survivor counts, controls, chronology, sources,
+   corrections, adverse evidence and reconciliation.
+3. **Machine archive.** The cited repository packages preserve complete
+   candidates, decisions, hashes, receipts, executable traces, source snapshots
+   and certificates. Those files remain authoritative where prose abbreviates
+   their display.
+
+### Editorial change control
+
+This version may improve expression, order, typography and navigation. It may
+not change scientific meaning, scope, chronology, evidence class, ownership,
+claim status or machine identity. Any apparent conflict between authoritative
+records must be traced and either resolved by explicit supersession or recorded
+for Maria Smith; prose alone cannot manufacture agreement.
+
 ## Public scientific mission and admission boundary
 
 Ernos Labs is an open-source science movement, verification platform and public
@@ -62,10 +138,10 @@ institutional research employment and conventional grant funding. That fact is
 not offered as evidence for a theorem; the derivations and observations carry
 the entire scientific burden. It is evidence about access. A credential-first
 system loses more than individual opportunity: it loses unknown questions,
-methods and discoveries from minds that capital and status never authorize.
+methods and discoveries from minds that capital and status never authorise.
 This work therefore treats Maria Smith's authorship neither as exceptionalism
 nor as a reason for dismissal, but as an indictment of every scientific
-contribution lost when financial gatekeeping is presented as rigor.
+contribution lost when financial gatekeeping is presented as rigour.
 
 The institutional argument is empirical, not a claim that every institution or
 funded researcher acts in bad faith. Published studies document sponsor-linked
@@ -146,6 +222,18 @@ Classical computation embeds as the single-held-branch, phase-insensitive revers
 | 22 | `SFT-QUANTUM-UNBOUNDED-FINITE-FAULT-TOLERANCE-002` | 256 | depth-independent |
 
 The branch total is **5,632 candidates**, **22 survivors**, **88 adverse controls** and **22 independent validations**.
+## Family results, complete claim inventory and claim-level audit records
+
+The dependency-ordered ledger below is the complete human-readable
+Reversible and Quantum Computation claim inventory for this version. Each claim section exposes
+its claim identity, family, formal and empirical status, exact statement,
+dependency route, carrier and boundary, candidate grammar and count, unique
+survivor, elimination logic, falsification condition, controls, source and
+custody records, chronology, scientific meaning and receipt identities. Where
+a generic clause is referenced, its full unchanged wording is retained in the
+shared claim-record appendix. The machine packages remain authoritative for
+complete candidates, decisions and executable traces.
+
 ## 9. Derivation 1: Complete Fold reversible-computation model
 
 Claim: `SFT-QUANTUM-REVERSIBLE-MODEL-001`
@@ -187,11 +275,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 9.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -204,11 +292,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced reversible computation kernel retains canonical configurations; bijective transition rows; retained held labels; exact inverse traces; universal reversible interpretation; complete resource ledger; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 9.4 Operational laws and consequences
 
@@ -218,15 +306,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 9.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact reversible computation record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 9.6 Executed witnesses and adverse controls
 
@@ -314,11 +402,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 10.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -331,11 +419,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum information units kernel retains one Fold distinction; two held fibre labels; complete word support; exact observation classes; retained phase-label carrier; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 10.4 Operational laws and consequences
 
@@ -345,15 +433,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 10.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum information units record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 10.6 Executed witnesses and adverse controls
 
@@ -441,11 +529,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 11.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -458,11 +546,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum state composition kernel retains complete branch support; exact pair-cell joint words; component identities; phase-label composition; marginal reconstruction; product and correlated classes; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 11.4 Operational laws and consequences
 
@@ -472,15 +560,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 11.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum state composition record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 11.6 Executed witnesses and adverse controls
 
@@ -568,11 +656,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 12.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -585,11 +673,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced superposition-equivalent structure kernel retains complete b^k Fold-word support; one record per branch; held phase label per branch; no selected actual branch before observation; exact support provenance; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 12.4 Operational laws and consequences
 
@@ -599,15 +687,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 12.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact superposition-equivalent structure record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 12.6 Executed witnesses and adverse controls
 
@@ -695,11 +783,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 13.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -712,11 +800,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced phase and interference kernel retains period-b held phase cycle; reversible phase action; total branch-to-image relation; complete predecessor fibres; same-image merge ledger; retained phase provenance; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 13.4 Operational laws and consequences
 
@@ -726,15 +814,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 13.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact phase and interference record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 13.6 Executed witnesses and adverse controls
 
@@ -822,11 +910,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 14.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -839,11 +927,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced entanglement kernel retains joint word support; exact marginals; product-support test; nonfactorable pair-cell classes; retained component observations; compositional trace; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 14.4 Operational laws and consequences
 
@@ -853,15 +941,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 14.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact entanglement record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 14.6 Executed witnesses and adverse controls
 
@@ -949,11 +1037,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 15.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -966,11 +1054,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced measurement kernel retains total observation relation; retained observation class; closed branch distinctions; complete pre-observation record; selected-class state; exact reconstruction boundary; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 15.4 Operational laws and consequences
 
@@ -980,15 +1068,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 15.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact measurement record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 15.6 Executed witnesses and adverse controls
 
@@ -1076,11 +1164,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 16.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1093,11 +1181,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum transformations and gates kernel retains bijective branch-word map; period-held phase action; complete domain and image support; exact inverse; source-bound gate identity; composition interface; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 16.4 Operational laws and consequences
 
@@ -1107,15 +1195,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 16.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum transformations and gates record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 16.6 Executed witnesses and adverse controls
 
@@ -1203,11 +1291,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 17.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1220,11 +1308,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum circuits kernel retains generated wires; information units; reversible gates; causal circuit order; complete branchwise evaluation; inverse circuit; observation boundary; resource ledger; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 17.4 Operational laws and consequences
 
@@ -1234,15 +1322,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 17.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum circuits record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 17.6 Executed witnesses and adverse controls
 
@@ -1330,11 +1418,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 18.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1347,11 +1435,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum universal computation kernel retains frozen gate-description grammar; exact encoded circuits; one interpreter; branchwise trace simulation; phase and observation preservation; overhead ledger; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 18.4 Operational laws and consequences
 
@@ -1361,15 +1449,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 18.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum universal computation record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 18.6 Executed witnesses and adverse controls
 
@@ -1457,11 +1545,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 19.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1474,11 +1562,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum algorithms kernel retains complete input support; reversible branch generation; phase action; interference merge; observation decoder; correctness trace per branch; classical comparison boundary; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 19.4 Operational laws and consequences
 
@@ -1488,15 +1576,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 19.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum algorithms record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 19.6 Executed witnesses and adverse controls
 
@@ -1584,11 +1672,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 20.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1601,11 +1689,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum computational resources kernel retains canonical input size; gate count; causal depth; live branch support; query and communication rows; measurement records; lower and upper witness boundary; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 20.4 Operational laws and consequences
 
@@ -1615,15 +1703,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 20.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum computational resources record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 20.6 Executed witnesses and adverse controls
 
@@ -1711,11 +1799,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 21.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1728,11 +1816,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum communication kernel retains sender and receiver supports; joint state composition; local transformations; channel relation; retained correlations; observation records; resource and loss ledger; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 21.4 Operational laws and consequences
 
@@ -1742,15 +1830,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 21.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum communication record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 21.6 Executed witnesses and adverse controls
 
@@ -1838,11 +1926,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 22.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1855,11 +1943,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum coding kernel retains logical branch support; redundant joint words; reversible encoder; declared error actions; disjoint syndrome supports; decoder and reconstruction trace; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 22.4 Operational laws and consequences
 
@@ -1869,15 +1957,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 22.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum coding record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 22.6 Executed witnesses and adverse controls
 
@@ -1965,11 +2053,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 23.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -1982,11 +2070,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum error correction kernel retains forced repetition width 2t+1; exact fault-depth trace; all error masks through t; majority held-label decoder; syndrome ledger; recovery certificate; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 23.4 Operational laws and consequences
 
@@ -1996,15 +2084,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 23.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum error correction record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 23.6 Executed witnesses and adverse controls
 
@@ -2092,11 +2180,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 24.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2109,11 +2197,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced fault-tolerant quantum computation kernel retains encoded logical support; declared component faults; transversal or contained transformations; recovery after each location; malignant-fault boundary; induction over circuit locations; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 24.4 Operational laws and consequences
 
@@ -2123,15 +2211,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 24.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact fault-tolerant quantum computation record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 24.6 Executed witnesses and adverse controls
 
@@ -2221,11 +2309,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 25.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2238,11 +2326,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum simulation kernel retains encoded target state support; reversible update law; phase and interference traces; observation map; exact simulator correspondence; resource ledger; falsification boundary; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 25.4 Operational laws and consequences
 
@@ -2252,15 +2340,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 25.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum simulation record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 25.6 Executed witnesses and adverse controls
 
@@ -2348,11 +2436,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 26.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2365,11 +2453,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum verification kernel retains claim and witness supports; verifier circuit; challenge schedule; branchwise acceptance; soundness and completeness ledgers; measurement records; tamper controls; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 26.4 Operational laws and consequences
 
@@ -2379,15 +2467,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 26.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum verification record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 26.6 Executed witnesses and adverse controls
 
@@ -2475,11 +2563,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 27.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2492,11 +2580,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced quantum learning kernel retains classical or joint example support; reversible hypothesis process; phase/interference search; observation decoder; retained alternatives; sample and gate resources; sealed evaluation; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 27.4 Operational laws and consequences
 
@@ -2506,15 +2594,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 27.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact quantum learning record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 27.6 Executed witnesses and adverse controls
 
@@ -2602,11 +2690,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 28.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2619,11 +2707,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced classical and quantum operational correspondence kernel retains common generated descriptions; embedding of classical states; reversible classical submodel; branchwise quantum execution; measurement decoder; bidirectional result preservation; overhead ledger; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 28.4 Operational laws and consequences
 
@@ -2633,15 +2721,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 28.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact classical and quantum operational correspondence record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 28.6 Executed witnesses and adverse controls
 
@@ -2729,11 +2817,11 @@ Generation rule: Generate the literal product of eight registered Fold-quantum s
 | `generality` | `fixed-circuit-examples` | fixed-circuit-examples removes the required exact generality structure. | `branch-and-depth-successor-certificate` | branch-and-depth-successor-certificate retains the required exact generality structure. |
 | `addition` | `imported-quantum-model` | imported-quantum-model removes the required exact addition structure. | `no-extra-quantum-premise` | no-extra-quantum-premise retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 29.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2746,11 +2834,11 @@ Every rejected candidate fails at the first non-preserving coordinate in registe
 | 2 | fixed-circuit-examples removes the required exact generality structure. |
 | 1 | imported-quantum-model removes the required exact addition structure. |
 
-The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+**Shared claim-record clause `QUANT-S003` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 > The forced limits of quantum computation kernel retains classical computability dependency; finite description grammar; exact quantum execution; self-description support; halting and undecidability transfer; resource and observation boundaries; no hypercomputational oracle; branch support, phase, transformation, observation, composition and resources remain exact, finite, source-bound and free of imported amplitudes or postulates.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 29.4 Operational laws and consequences
 
@@ -2760,15 +2848,15 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Observation law: selected support and every closed distinction remain reconstructible from the measurement record.
 - Composition law: joint pair-cell words preserve component identity and explicitly classify factorable and nonfactorable support.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 29.5 Depth-independent closure
 
 Base: One Fold distinction supplies the minimal two-label support and one exact limits of quantum computation record.
 
-Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+**Shared claim-record clause `QUANT-S006` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 29.6 Executed witnesses and adverse controls
 
@@ -2852,11 +2940,11 @@ Generation rule: Generate the literal product of fault order, width, mask covera
 | `generality` | `fixed-t-table` | fixed-t-table removes the required exact generality structure. | `fault-order-successor-and-ceiling-defeat` | fault-order-successor-and-ceiling-defeat retains the required exact generality structure. |
 | `addition` | `imported-hardware-threshold` | imported-hardware-threshold removes the required exact addition structure. | `no-rate-device-or-noise-parameter` | no-rate-device-or-noise-parameter retains the required exact addition structure. |
 
-The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+**Shared claim-record clause `QUANT-S001` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 30.3 Exhaustion, eliminations and unique survivor
 
-Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+**Shared claim-record clause `QUANT-S002` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 | Eliminated candidates | Exact first-failure reason |
 |---:|---|
@@ -2873,7 +2961,7 @@ The unique all-preserving member is `supplied-positive-finite-fault-trace__first
 
 > For every supplied positive finite fault-order trace t, the unique first repetition width correcting every mask through t is 2t+1: at least t+1 source labels remain against at most t changes, every width through 2t has a constructive tie or wrong-majority counterexample, redundancy is exactly 2t, and the successor fault order adds exactly two labels. The corrected word composes with exact Fold circuit semantics. This is an unbounded finite fault-order theorem, not a stochastic hardware-rate or physical threshold constant.
 
-Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+**Shared claim-record clause `QUANT-S004` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 30.4 Operational laws and consequences
 
@@ -2883,7 +2971,7 @@ Minimality follows because changing any one of the eight admitted coordinates re
 - Successor law: replacing t by its next generated fault order adds exactly two carrier positions and defeats every fixed positive finite ceiling.
 - Composition law: recovery supplies the exact source word to the already-admitted reversible circuit semantics.
 
-These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+**Shared claim-record clause `QUANT-S005` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 30.5 Depth-independent closure
 
@@ -2891,7 +2979,7 @@ Base: At the first positive fault order, widths one and two have explicit failur
 
 Successor: If width 2t+1 is the first survivor at fault order t, the next order requires one further possible change and one further retained source majority; exactly two added positions produce 2(t+1)+1, while every shorter successor width has the same constructive counterexample.
 
-The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+**Shared claim-record clause `QUANT-S007` applies.** The full, unchanged clause is preserved in the shared-clause appendix.
 
 ### 30.6 Executed witnesses and adverse controls
 
@@ -2982,7 +3070,7 @@ The audit also corrects the former wording around 'unlimited thresholds'. The cu
 
 Quantum science is especially vulnerable to authority by opacity: proprietary devices, inaccessible calibration data, result-only cloud interfaces and mathematical notation presented without the full route from premise to observation. Such systems may be useful instruments, but a reported score or vendor label cannot close a law when reviewers cannot reconstruct the support, transformation, measurement record, alternatives and failure boundary. This release exposes each of those objects.
 
-The institutional critique is evidential, not an allegation that every funded scientist or institution acts in bad faith. Reviews report associations between commercial sponsorship and favorable outcomes, influence on research agendas, limits in grant-review reliability and fairness, and underpublication of null results. Capital, prestige, paywalls and consensus can therefore shape what becomes visible; none substitutes for an inspectable branch trace and independently reproducible receipt.
+The institutional critique is evidential, not an allegation that every funded scientist or institution acts in bad faith. Reviews report associations between commercial sponsorship and favourable outcomes, influence on research agendas, limits in grant-review reliability and fairness, and underpublication of null results. Capital, prestige, paywalls and consensus can therefore shape what becomes visible; none substitutes for an inspectable branch trace and independently reproducible receipt.
 
 Maria Smith developed this programme without conventional academic credentials, appointment or a funding gate. That biography proves no quantum theorem; the public derivations must bear the whole scientific burden. It demonstrates why credentials cannot be permission to create knowledge and why every excluded mind is a scientific loss. Expert criticism is invited on the same evidential terms as outsider criticism.
 
@@ -6531,9 +6619,9 @@ Each entry below reports the registered scientific question, forced law, unique 
 - **Prohibited imports and boundary:** no duplicated owner or application-selected law; host 0 denotes absence only; no negative irrational imaginary floating fitted or completed-infinite proof scalar; no invented physical chemistry materials or engineering value; no closed extension gate or suppressed adverse handoff; no protected authority mutation.
 - **Evidence identities:** derivation `sha256:e61eb09b8421fa367b82e13c03f8c99e927b6fd24269c4c5b05df2e031f22350`; independent implementation `sha256:4758092639c0a90a8c9e0b79c26af9527ed3632765fb66773bbf15683de5a6a4`; independent certificate `sha256:14aa427629e75135c5645f40e2f50246fa9ff6641dc466de204baa168496891f`; measurement `sha256:85a9e123f4460e091beddbf312fdb7cd94cc249c65e720ce3ade1f320ca1027b`; engine receipt `sha256:ef8df1b6bb47eea3ca46acd3458598c247270d8628de0d964b43b104af03c8d6` at `receipts/engine/model_admitted/SFT-QUANTUM-HAND-CROSS-BRANCH-COMPLETENESS-006-ef8df1b6bb47eea3.json`.
 
-## 37. What empirical means in this branch
+## 37. Empirical constitution: what empirical means in this branch
 
-Empirical means grounded in observation or experience rather than accepted solely by theory or authority. In formal quantum computation the directly observable objects are generated supports, machine states, transformations, phase labels, predecessor merges, joint cells, measurement records, error masks, traces, resources, outputs, tamper responses and independent executions. Each target identity is registered before its outcome is opened; all favorable, adverse, absent and unresolved rows are preserved. Where a claim concerns physical hardware or nature, this branch records the handoff instead of pretending that a formal execution measured a device.
+Empirical means grounded in observation or experience rather than accepted solely by theory or authority. In formal quantum computation the directly observable objects are generated supports, machine states, transformations, phase labels, predecessor merges, joint cells, measurement records, error masks, traces, resources, outputs, tamper responses and independent executions. Each target identity is registered before its outcome is opened; all favourable, adverse, absent and unresolved rows are preserved. Where a claim concerns physical hardware or nature, this branch records the handoff instead of pretending that a formal execution measured a device.
 
 The branch admits no result-only oracle. A result requires its initial support, generated description, full transition and phase trace, dependencies, resource ledger, controls, source identities, independent reconstruction and engine receipt. Apparent randomization is complete deterministic schedule support plus observation-relative uncertainty. This permits probabilistic and quantum correspondence without introducing an uncaused event into a superdeterministic model.
 
@@ -6553,9 +6641,69 @@ The twelve VALID claims are the dated Quantum Computation validation Grand Lock:
 
 Reversible and Quantum Computation is complete to its frozen 29 July 2026 census: **288/288 obligations, 13/13 families, 73,728 candidate decisions, 288 unique survivors, 1,152 passed adverse controls, 288 independent reconstructions and no open frozen obligation**.
 
-The contribution is one unified computational object. Reversible state, quantum support, phase, interference, entanglement, measurement, gate, circuit, algorithm, code, simulator, verifier and learner are successive exact organizations of retained Fold distinctions. Historical formalisms are comparison boundaries after derivation, not premises before it. The branch also states its limits with equal force: no-cloning, disturbance, halting, undecidability, incompleteness and absent hypercomputation survive the quantum extension.
+The contribution is one unified computational object. Reversible state, quantum support, phase, interference, entanglement, measurement, gate, circuit, algorithm, code, simulator, verifier and learner are successive exact organisations of retained Fold distinctions. Historical formalisms are comparison boundaries after derivation, not premises before it. The branch also states its limits with equal force: no-cloning, disturbance, halting, undecidability, incompleteness and absent hypercomputation survive the quantum extension.
+
+The preserved `SFT-QUANTUM-VALID-REVERSIBLE-001` halt remains part of the scientific history; the separately versioned protocol-label correction did not alter the law, target, grammar, engine, verifier or acceptance condition. The validation Grand Lock retains favourable, adverse, absent and unresolved rows without treating formal execution as a physical-device measurement. Six terminal handoffs keep hardware, Chemistry, Materials and later applications with their owning branches. The branch is complete only to this frozen census and remains open to lawful correction, falsification and extension.
 
 The public contribution is the evidence route itself. Maria Smith's lack of credentialed access is not evidence for a theorem; it is evidence of what credential and capital gates can exclude. The open corpus invites unrestricted criticism, reuse and lawful extension while reserving the Ernos Labs designation for work that preserves full derivation chains, adverse evidence, unchanged admission routes, retained authorship and transparent community review.
+## Data and code availability
+
+The open repository is
+[`MettaMazza/ernos-labs-sft-platform`](https://github.com/MettaMazza/ernos-labs-sft-platform).
+The live model-admitted index is `census/claims.json`; the Reversible and Quantum Computation
+field boundary is `census/quantum_computation_discipline_obligations.json`. Every represented claim has its own
+package under `claims/<claim-id>/` and its immutable model-admitted receipt
+under `receipts/engine/model_admitted/`.
+
+The publication evidence map is `publications/successors/quantum_computation/evidence_map_v1_4.json` and the candidate
+manifest is `publications/successors/quantum_computation/manifest_v1_4.json`. Registered external records and source
+captures are retained under `experiments/external_sources/quantum_computation/` together with their
+source identities, transport outcomes and hashes. Files too large for ordinary
+Git remain checksum-bound and are distributed through the applicable existing
+Zenodo record rather than omitted or replaced.
+
+Build, render, replay and verification programs are retained under `tools/`,
+with branch implementations under `sft/`, independent reconstructions under
+`generated/` and tests under `tests/`. The final approved Markdown, rendered
+PDF, evidence map, manifest, metadata and checksums must agree before deposit.
+No successful test is treated as empirical confirmation unless the
+claim-specific evidence protocol separately authorises that status.
+
+## Shared claim-record clauses
+
+The clauses below previously appeared verbatim in multiple claim records.
+They are preserved once here to reduce mechanical repetition. Each in-text
+clause reference applies this exact wording at that claim location; no
+scientific statement, status, condition or qualification has been removed.
+
+### `QUANT-S001` — applied at 22 claim locations
+
+The literal product contains **256** candidates. The census preserves 256 candidate identities and the elimination receipt preserves 256 decisions. There are **1** survivors and **255** eliminations.
+
+### `QUANT-S002` — applied at 22 claim locations
+
+Every rejected candidate fails at the first non-preserving coordinate in registered axis order. The following ledger groups all eliminations by their exact first failure; the counts sum to the complete rejected support.
+
+### `QUANT-S003` — applied at 21 claim locations
+
+The unique all-preserving member is `complete-generated-branch-support__one-Fold-distinction-unit__complete-pair-cell-joint-support__period-held-phase-action__total-reversible-source-bound-map__retained-class-and-complete-record__branch-and-depth-successor-certificate__no-extra-quantum-premise`.
+
+### `QUANT-S004` — applied at 22 claim locations
+
+Minimality follows because changing any one of the eight admitted coordinates replaces it with the generated failure coordinate and removes its named condition. Named-shape uniqueness follows because the complete product contains one and only one tuple composed entirely of admitted coordinates.
+
+### `QUANT-S005` — applied at 22 claim locations
+
+These are construction laws, not renamed conventional equations. They specify exact carriers, relations, traces, interfaces and boundary failures. Host integers count generated artifacts but never become SFT proof quantities.
+
+### `QUANT-S006` — applied at 21 claim locations
+
+Successor: Adding one generated branch, component, fault position or circuit location appends all new joint cells, phase rows, transformations and observation distinctions while retaining prior records.
+
+### `QUANT-S007` — applied at 22 claim locations
+
+The certificate therefore does not infer unrestricted completion from a depth table. It proves that every fresh generated finite successor extends the same classification while preserving prior identities and adding all new relations. No completed infinity is created.
+
 ## References
 
 1. Landauer R. Irreversibility and heat generation in the computing process. *IBM Journal of Research and Development*. 1961;5:183-191. doi:10.1147/rd.53.0183.

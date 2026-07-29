@@ -14,6 +14,8 @@ PDF = ROOT / "output/pdf/from-fold-to-materials-branch-paper-001-v1.3.pdf"
 RECON = ROOT / "census/materials_discipline_current_reconciliation_v20.json"
 OUT = ROOT / "publications/successors/materials"
 RELEASE = ROOT / "output/release/materials-1.3.0"
+METADATA_SOURCE = ROOT / "publication/materials_zenodo_metadata_v1_3_draft.json"
+METADATA = OUT / "zenodo_metadata_v1_3.json"
 
 
 def read(path: Path):
@@ -92,15 +94,30 @@ def main():
     evidence_path = OUT / "evidence_map_v1_3.json"
     write(evidence_path, evidence)
     archive_paths.add(evidence_path)
+    metadata = read(METADATA_SOURCE)
+    metadata["publication_authorized"] = False
+    metadata["ready_to_publish"] = False
+    metadata["doi"] = "10.5281/zenodo.21629306"
+    metadata["supersedes_record"] = 21629306
+    relations = [
+        item for item in metadata["metadata"].get("related_identifiers", [])
+        if item.get("relation") != "isNewVersionOf"
+    ]
+    relations.append({"identifier": "10.5281/zenodo.21629306", "relation": "isNewVersionOf", "scheme": "doi"})
+    metadata["metadata"]["related_identifiers"] = relations
+    write(METADATA, metadata)
+    archive_paths.add(METADATA)
     manifest = {
         "schema": "sft-v3-branch-publication-manifest/1", "branch_id": "materials",
         "version": "1.3.0", "source_path": PAPER.relative_to(ROOT).as_posix(),
         "source_hash": sha(PAPER), "rendered_paper_path": PDF.relative_to(ROOT).as_posix(),
         "rendered_paper_hash": sha(PDF), "evidence_map_path": evidence_path.relative_to(ROOT).as_posix(),
         "evidence_map_hash": sha(evidence_path), "required_claim_count": 289,
+        "zenodo_metadata_path": METADATA.relative_to(ROOT).as_posix(),
+        "zenodo_metadata_hash": sha(METADATA),
         "generated_candidate_count": 73984, "comprehensive_derivation_coverage": True,
         "controls_passed": True, "root_traces_verified": True,
-        "publication_authorized": False, "ready_for_review": True,
+        "publication_authorized": False, "ready_for_review": True, "ready_to_publish": False,
     }
     manifest_path = OUT / "manifest_v1_3.json"
     write(manifest_path, manifest)
