@@ -10,6 +10,11 @@
 > **V3 publication catalogue:** the sixteen authoritative clean-room papers and
 > the complete pre-V3 Zenodo replacement map are indexed in
 > [`publication/V3_ZENODO_CATALOGUE_AND_PRE_V3_STATUS_2026-07-28.md`](publication/V3_ZENODO_CATALOGUE_AND_PRE_V3_STATUS_2026-07-28.md).
+>
+> **Final complete-field publication pass:** the seven updated Mathematics
+> through Materials versions, their retained concept DOI lineages and their
+> checksum-verification boundary are indexed in
+> [`publication/FINAL_COMPLETE_FIELD_PUBLICATIONS_2026-07-29.md`](publication/FINAL_COMPLETE_FIELD_PUBLICATIONS_2026-07-29.md).
 
 **Consciousness and Cognitive Science Foundational Branch Paper 001, version 1.0.0 - Smithian Fold Theory V3 Clean-Room Reconstruction**
 

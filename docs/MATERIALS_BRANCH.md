@@ -1,5 +1,18 @@
 # Materials Science branch status
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_3_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`FROM_FOLD_TO_MATERIALS_PAPER_001_V1_3.md`](../publications/successors/materials/FROM_FOLD_TO_MATERIALS_PAPER_001_V1_3.md),
+published as version 1.3.0 at
+[10.5281/zenodo.21688923](https://doi.org/10.5281/zenodo.21688923) in the
+retained concept DOI lineage `10.5281/zenodo.21532481`. It covers 289 claims,
+73,984 candidates, 289 unique survivors and 1,156 controls. The historical
+v1.2 foundation status below is preserved but superseded for current
+complete-field publication status.
+
 Status: `published_v1_2_foundation_current_evidence_closed_extension_open`.
 
 Materials Branch Paper 001 version 1.2 and its 92 admitted claims are published

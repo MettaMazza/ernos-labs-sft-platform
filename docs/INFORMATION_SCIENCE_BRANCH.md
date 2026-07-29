@@ -1,5 +1,18 @@
 # Information Science branch status and review guide
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_4.md`](../publications/successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_4.md),
+published as version 1.4.0 at
+[10.5281/zenodo.21688817](https://doi.org/10.5281/zenodo.21688817) in the
+retained concept DOI lineage `10.5281/zenodo.21516915`. It covers 262 claims,
+75,776 candidates, 262 unique survivors and 1,048 controls. The historical
+scope below remains part of the chronology but no longer controls current
+completion status.
+
 Status: `published_v1_current_reconciliation_open`; standalone paper: archived
 and published.
 

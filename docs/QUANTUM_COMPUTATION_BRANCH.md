@@ -1,5 +1,18 @@
 # Reversible and Quantum Computation branch status and review guide
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_4.md`](../publications/successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_4.md),
+published as version 1.4.0 at
+[10.5281/zenodo.21688860](https://doi.org/10.5281/zenodo.21688860) in the
+retained concept DOI lineage `10.5281/zenodo.21518312`. It covers 288 claims,
+73,728 candidates, 288 unique survivors and 1,152 controls. The historical
+scope below remains visible but no longer controls the current completion or
+publication status.
+
 Status: `published_v1_current_reconciliation_open`; standalone paper: `published`; publication:
 `10.5281/zenodo.21518313`.
 

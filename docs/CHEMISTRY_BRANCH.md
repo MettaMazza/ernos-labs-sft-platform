@@ -1,5 +1,19 @@
 # Chemistry branch status
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_3_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`FROM_FOLD_TO_CHEMISTRY_PAPER_001_V1_3.md`](../publications/successors/chemistry/FROM_FOLD_TO_CHEMISTRY_PAPER_001_V1_3.md),
+published as version 1.3.0 at
+[10.5281/zenodo.21688899](https://doi.org/10.5281/zenodo.21688899) in the
+retained concept DOI lineage `10.5281/zenodo.21531454`. It covers 281 live
+claims, 272 of 272 registered obligations, 71,936 candidates, 281 unique
+survivors and 1,124 controls. The two large v1.2 source-evidence files were
+preserved byte-for-byte in the new version. Historical continuation counts
+below remain visible for chronology but are superseded for current status.
+
 Status: `foundation_current_evidence_complete__active_full_discipline_reconstruction__extension_open`.
 
 Chemistry Branch Paper 001 version 1.2.0 is published at DOI

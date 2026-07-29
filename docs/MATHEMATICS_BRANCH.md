@@ -1,5 +1,18 @@
 # Mathematics branch status and review guide
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_5_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_5.md`](../publications/successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_5.md),
+published as version 1.5.0 at
+[10.5281/zenodo.21688766](https://doi.org/10.5281/zenodo.21688766) in the
+retained concept DOI lineage `10.5281/zenodo.21516145`. It covers 323 claims,
+97,280 candidates, 323 unique survivors and 1,292 controls. The historical
+scope below is retained for chronology but is superseded wherever it describes
+the branch as reconciliation-open.
+
 Status: `published_v1_current_reconciliation_open`
 
 Paper: [From Fold to Mathematics](../publications/current/mathematics/FROM_FOLD_TO_MATHEMATICS.md)

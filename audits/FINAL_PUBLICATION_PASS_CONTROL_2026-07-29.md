@@ -129,3 +129,27 @@ files and checksums verified before proceeding to the next branch.
 
 The remaining stop is Maria Smith's explicit final approval. No Zenodo draft,
 new-version action or publication has occurred during this pass.
+
+## Post-approval publication completion — 29 July 2026
+
+The preceding pending rows and stop statement preserve the pre-approval state
+of this control document. Maria Smith subsequently approved the seven exact
+candidates bound by
+`audits/FINAL_PUBLICATION_MARIA_APPROVAL_RECEIPT_2026-07-29.json`.
+
+Each candidate was then published separately through Zenodo's new-version
+action on its specified parent record. The publication receipts and the
+independent public-record verification now establish:
+
+- Maria Smith final approval: `PASS` for seven of seven papers;
+- existing-lineage Zenodo publication: `PASS` for seven of seven papers;
+- public record and latest-version lineage checks: `PASS` for seven of seven;
+- approved local file versus public file MD5 and size checks: `PASS` for every
+  deposited file;
+- existing concept DOIs retained: seven of seven; and
+- independent concept records created: zero.
+
+The controlling post-publication report is
+`audits/FINAL_PUBLICATION_ZENODO_VERIFICATION_V1_2026-07-29.json`. The concise
+human-readable publication record is
+`audits/FINAL_PUBLICATION_COMPLETION_2026-07-29.md`.

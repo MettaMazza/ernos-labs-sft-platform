@@ -1,4 +1,20 @@
-# Published Physics v1 inventory and blocking successor audit
+# Physics branch status
+
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_3_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`FROM_FOLD_TO_PHYSICS_PAPER_001_V1_3.md`](../publications/successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_3.md),
+published as version 1.3.0 at
+[10.5281/zenodo.21688879](https://doi.org/10.5281/zenodo.21688879) in the
+retained concept DOI lineage `10.5281/zenodo.21520880`. It covers 368 claims,
+257,776 candidates, 368 unique survivors and 1,472 controls. The v1 inventory
+and blocking-successor audit below are retained as historical evidence; their
+open counts and publication blockers are superseded by the current Grand Locks,
+reconciliation records and version 1.3 release gate.
+
+## Historical v1 inventory and blocking successor audit
 
 The frozen Physics v1 inventory, its paper and evidence release are
 published at DOI [`10.5281/zenodo.21520881`](https://doi.org/10.5281/zenodo.21520881).

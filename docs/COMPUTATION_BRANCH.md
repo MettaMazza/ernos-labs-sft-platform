@@ -1,5 +1,18 @@
 # Classical Computation branch status and review guide
 
+## Current complete-field publication — 29 July 2026
+
+Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
+
+The authoritative complete-field paper is
+[`AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_4.md`](../publications/successors/computation/AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_4.md),
+published as version 1.4.0 at
+[10.5281/zenodo.21688837](https://doi.org/10.5281/zenodo.21688837) in the
+retained concept DOI lineage `10.5281/zenodo.21518310`. It covers 369 claims,
+94,464 candidates, 369 unique survivors and 1,476 controls. Historical blocked
+or narrower inventory statements below are preserved as chronology and are
+superseded for current publication status.
+
 Status: `published_v1_inventory_closed_v2_reconciliation_open`; standalone paper: `published`; publication:
 `10.5281/zenodo.21518311`.
 
