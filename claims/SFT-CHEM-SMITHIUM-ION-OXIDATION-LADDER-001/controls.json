@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SMITHIUM-ION-OXIDATION-LADDER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:072f3d83f8f3e7388f79891cea9b9edbbe40f8b576ca3943f989ce1808977d6e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:12b37cf92b19e1b31177bf7558229111195f16efba8972361381df7ec07f78cc"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:15d7a0ce0516aeeda907f72c1141c497653a4366134b5d1cb3f5d51c36ee9bb8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:060e26dbc9100f8df3bd03753f381c90db927672afb89531e8689f7142595a21"
+    }
+  ]
+}

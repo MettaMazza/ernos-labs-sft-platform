@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SMITHIUM-SPECTROSCOPIC-CLASSES-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:eecbbe2969685e474b76d5d309dbb913fc7d232c950898f1a0cb6dc1c7ae1f5e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:570b230267a84a5220ddc900a3dde8bfb1ee3d77d22c270a308ede0dba2a7d17"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ff912c2b7dad0b4d201c1767745cb500290ced7bd764aedbedfe3cbdc9871611"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:97651cea51c89cc5c111cd1604c3250cf802feedeabdd80acf4cf145ba4bf9f6"
+    }
+  ]
+}

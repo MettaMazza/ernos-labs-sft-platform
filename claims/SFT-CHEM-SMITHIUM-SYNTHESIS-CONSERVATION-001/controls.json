@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SMITHIUM-SYNTHESIS-CONSERVATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5439aebaf61b5e3e7438495082c4853f08fdd9a75c31e62da5c27b1da5547af7"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f68cf521265b85d2d66a78b587fae6a3133426c9e68380e2c500b78e856a2186"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:380aba5e86c5a36057ed6e3bfed690ee860f004670114c132153dd2456f6ff4d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:6b923f79e135688dff8a19c5daf7c5b58574c6035e2382cc6770ba9e58333f42"
+    }
+  ]
+}

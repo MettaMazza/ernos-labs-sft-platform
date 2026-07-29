@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-BOUNDED-ORBIT-ECOSYSTEM-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:630e90c55d014ba6529c548aaffd40278299390d9b6c77b503de321bbe60d2e5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:661096ff58957c270db299f012e57c7f037567bf29a29c91c9b47a434a5f8d2f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:86a4806d0c7f1b8bae270d97ccecd1dd8680e950511952cea057c48788d1055a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:04546319ce0f213b0c2696742453412cc8da4f104933fa52f5cd5a79d02759ca"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-MECHANICAL-MATCHING-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9b769a12d252448b511c6fe7285fd8dc4bfced12746ec3efd980d3d0458fef0c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fcaf95b0bee8cb4e8d2eb39eabef6d434bbc42a37f2aad809e46508b60ad7f8b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:870936546803b71cd6e123c533b1d4da7a45f66ca2321fff45125fc8acc81d88"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e53e0cee9704849c1f2b9875a71e5f6d41a5ddc6ad37d6a877034860cda72e28"
+    }
+  ]
+}

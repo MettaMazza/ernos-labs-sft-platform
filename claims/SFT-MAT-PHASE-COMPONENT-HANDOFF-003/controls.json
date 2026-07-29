@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-COMPONENT-HANDOFF-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0c6d5859ae9c86a97228422d39935b430a88eeb3c0bf6a2f418fb97eaf60d7ae"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2fd46ed63c18ff9322e3b09bcc472fbc04b06e872492b6f346965ac91ad2edad"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b09215c3e9b0851cc94cd3297874ccc44adaac1e289b783101b69a84b535c4b2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ee8e0cbc9b8c8d2f7c74be48d121b445ef94b971a71d3de618062c8194a2e4a9"
+    }
+  ]
+}

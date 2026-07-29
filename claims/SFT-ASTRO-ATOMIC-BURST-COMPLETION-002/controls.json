@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ASTRO-ATOMIC-BURST-COMPLETION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:ccb94e2eb016bb27de3349bf4222d6e68337dfd90ff66de8c9cc1ef85b47d003"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f03506526791b3bfae6ba878c51a33f4a63199bacda70ddceaf05db937127879"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:baf169803e906d17c2d3278c0283d5ee564bcb227b4f08bb8875edea9cd05822"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1916efe63355ba7e1121c123b66407d4d0bd0d0ce5130e5f088b9eccea4db294"
+    }
+  ]
+}

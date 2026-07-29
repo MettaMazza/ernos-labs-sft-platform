@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-COARSENING-TRANSFER-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:451e5041cbfc0ccf4f71c3ecba0693de2e1da672f322bb811c70de7724230a0a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:86647a9f582dc9dd7126f7fec88d83f923787db5399301fa6668cd17288dc374"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:038a9f819b98a423f27c362fe8bd21b8e8fac79603e038814869df4631636c46"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8f24e3c92f58e1ebb84f04106a27c9b11173a5effc55f976ccb8e0b3837ed4f7"
+    }
+  ]
+}

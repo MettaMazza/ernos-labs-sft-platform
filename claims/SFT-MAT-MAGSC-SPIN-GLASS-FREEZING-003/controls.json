@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-SPIN-GLASS-FREEZING-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:7ad3be10242ec13e34084b665fbee76569a79669f75d4f44d404794dc2b7f764"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:244d94041de4cdbb45b9d4102b6d3b8629c2481e311073e2a66fa2b9a374adde"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:84f0b3895a1890b0f5c14bdd6c4cbf1ba28d02612f05e649b3552b05693b53d8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8716a52cae14a04cba4fbec6a4f910f55367f9c5c31b0c2a6b26d1db37edb9a9"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-COMP-RATE-DISTORTION-BOUNDARY-011",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Partial support changes the compression problem.",
+      "passed": true,
+      "receipt_hash": "sha256:d8c903637cda8764e6e10cffa9f0a60c0a02fceb6a07473f2b19bcc284663755"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported entropy model, rate-distortion formula or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no fitted dictionary, hidden model selection, erased microform or unregistered code grammar; no sampled candidate family or completed-infinite source; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:e2c1a26141109748478c34b76296826e2268ecbcf00fd0a49fa71e163c5e190b"
+    }
+  ]
+}

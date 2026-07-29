@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-IONIC-TRANSFERENCE-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6f5e891b3c94eff1619a438a3d40056717aee257411bc0b1a6af7af831a9fd26"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:cf0bff4b2994132a79bcbca38583426cebf67907f9c928548c0bd1e5553112cd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:854472c67a6a1121e8bf5069b4db3763939656fb2032dad0ff83e548583a3c47"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:06731bba3e061c669276769a305c3c0ed7ed9fb379bd9e46ae851d637a662abe"
+    }
+  ]
+}

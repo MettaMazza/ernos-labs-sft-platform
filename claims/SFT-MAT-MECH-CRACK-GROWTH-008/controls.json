@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-CRACK-GROWTH-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:bb9845c6efaed5175fa34056f5bc9575d97754fff6be8474d6770540c5a00076"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:96c04b0cb6020c7cdd3c92e9d60cb796981d1c1f38f77d291f68d0edd73c4399"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:01748b184f70517e3df7fe2b1a57e64e356adbff3c82f4ce54f09fc42018e304"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f8c8e2821fdd52e77030845a2dc4dbae795e3c0af0aa0bdc6793e3b4b48011c7"
+    }
+  ]
+}

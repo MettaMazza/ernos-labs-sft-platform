@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-EMPIRICAL-GRAND-LOCK-012",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:646f6a94bd422d165b415901cf9313d05bdd6b57384a90053cfb1425fa9352af"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:15fbdc8fe7973e262113a4f490917d3682889a7d4a014507458151688816f579"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:08a63170c99cb7a98464b390a43d5f5dc9750708eb099d9ff51b6c7e5a9056ac"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:84e9fec68eea28474574ee64e58e4056ab2059a0cd15de9e9d0f895dbfc296bc"
+    }
+  ]
+}

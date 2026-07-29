@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-NANOWIRE-CONFINEMENT-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4d632347897c6e13b31efc849f6498f59f8fc415b0ad17818574f0046cb87a1c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4b0328274b9dd45f06a4b512ef971c75495d4dafc29fc56570aa568daa0f1a4c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a62103f329fa5f4dccf0023806a2ee2047d4370fc2d26771b50365526368c66d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b76664f4f872a3b9525d6c27bef9b939992ec9d94d1730680e04bfdcf459f0c8"
+    }
+  ]
+}

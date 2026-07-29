@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-SMITHIUM-COMPLETE-FAMILY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4b5d413cfc510a2689477684e05e7e31d5023b6d56d78664643e7b2963657e8d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7a53dfa32e19db93299294b49f28a0a0bb193186cf34399d7972223b14d85cb8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8dc220e998e4d7079fc369611d80e53c0e93380a2ecb3e959c33b9a2dadf8e61"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f25b33a40b36f2a35116b024a081a0aabba2a82238b9396b87e2166075d23080"
+    }
+  ]
+}

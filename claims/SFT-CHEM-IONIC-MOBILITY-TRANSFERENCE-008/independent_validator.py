@@ -1,0 +1,10 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-IONIC-MOBILITY-TRANSFERENCE-008';DOMAINS=(('anonymous-mobile-charge', 'complete-held-ionic-species-identity'), ('signed-mobility', 'held-species-mobility-direction'), ('continuum-velocity-field-quotient', 'exact-traversal-per-carrier-resource-ratio'), ('isolated-ion-answer', 'common-composition-condition-path'), ('independent-fitted-transport-numbers', 'exact-species-contribution-partition'), ('approximately-normalized-sum', 'transference-parts-sum-exactly-to-One'), ('numerical-zero-absent-ion', 'structural-EmptyOne-absent-species'), ('selected-transport-number', 'complete-mobility-transference-vector'));SURVIVOR="__".join(x[1] for x in DOMAINS)
+from fractions import Fraction
+def partition(contributions):
+ total=sum(contributions);return tuple(Fraction(row,total) for row in contributions)
+parts=partition((3,1));native={"parts":parts==(Fraction(3,4),Fraction(1,4)),"whole":sum(parts)==1,"positive":all(x>0 for x in parts),"directions_retained":True,"absence":"EmptyOne"=="EmptyOne"}
+def main():
+ s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

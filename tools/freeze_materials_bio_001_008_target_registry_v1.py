@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+from hashlib import sha256
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/"census/materials_bio_001_008_target_registry_v1.json"
+ROWS=(("001","SFT-MAT-BIO-BIOCOMPATIBILITY-INTERFACE-001","biocompatibility as a material-interface boundary",("NIST-BIOMATERIAL-MEASUREMENTS",)),("002","SFT-MAT-BIO-BIORESORPTION-DEGRADATION-002","bioresorption and degradation ledger",("NIST-BIORESORPTION-RATE",)),("003","SFT-MAT-BIO-SCAFFOLD-POROSITY-CONNECTIVITY-003","tissue-scaffold porosity and connectivity",("NIST-REFERENCE-SCAFFOLDS",)),("004","SFT-MAT-BIO-CELL-MATERIAL-ADHESION-004","cell-material adhesion handoff",("NIST-CELL-MATRIX",)),("005","SFT-MAT-BIO-MECHANICAL-MATCHING-005","mechanical matching at a biological interface",("NIST-BONE-IMPLANT-LAYERS",)),("006","SFT-MAT-BIO-CONTROLLED-RELEASE-006","controlled-release material transport boundary",("NIST-CONTROLLED-PROTEIN-RELEASE",)),("007","SFT-MAT-BIO-MINERALIZED-ORGANIZATION-007","mineralized biological material organization",("NIST-HYDROXYAPATITE",)),("008","SFT-MAT-BIO-BIOFABRICATED-IDENTITY-008","biologically derived and biofabricated material identity",("NIST-BIOFABRICATION-METROLOGY",)))
+def canonical(v): return "sha256:"+sha256(json.dumps(v,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()).hexdigest()
+def main():
+ if OUT.exists(): raise SystemExit("refusing overwrite")
+ x={"schema":"sft-v3-materials-bio-target-identities/1","authority":"Maria Smith","date":"2026-07-29","family":"biomaterials_biologically_derived_materials","selection_rule":"All eight obligations and authoritative target identities are frozen as one whole subcategory before detailed outcome extraction.","custody_disclosure":"Source identities and target classes only; no value, fragment, candidate, survivor or outcome.","targets":[{"obligation_id":f"SFT-MAT-OBL-BIO-{n}","claim_id":c,"target_class":t,"source_identities":list(s)} for n,c,t,s in ROWS],"target_count":8,"all_family_members_registered":True,"target_content_present":False,"survivor_identity_present":False,"measured_value_present":False,"outcome_present":False,"failed_route_retires_obligation":False}; x["registry_identity"]=canonical(x); OUT.write_text(json.dumps(x,indent=2,sort_keys=True)+"\n"); print(x["registry_identity"])
+if __name__=="__main__": main()

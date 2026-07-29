@@ -63,6 +63,25 @@ The complete field census covers:
 - medical devices and biomaterials at the Engineering handoff; and
 - evidence quality, replication, adverse outcomes and limits of generalization.
 
+## Mandatory prior-corpus return families
+
+Status: complete to the frozen current standard and open to lawful extension.
+The objective placebo/nocebo return family now has four new untouched-engine
+receipts from 1,024 enumerated candidates. It derives the exact expectation/body
+Fold fibre, the available-state-only physiological boundary, and complete
+objective/report clinical-record separation before opening its empirical target.
+The nine-row identity-first comparison preserves positive objective placebo and
+nocebo physiology, small and null outcomes, an unresolved protocol and
+non-purpose-matched selections. The result is real where observed, explicitly
+bounded and context dependent; no report is substituted for a biomarker and no
+unavailable cure is manufactured.
+
+Completion certificate:
+`audits/MEDICINE_PLACEBO_NOCEBO_FAMILY_COMPLETION_2026-07-28.json`.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The first Medicine paper was published after completion of the branch scaffold,

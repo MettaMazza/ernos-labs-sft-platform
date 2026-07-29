@@ -1,0 +1,3 @@
+# Why POLY-010 requires a derivation check
+
+A conventional polymer equation, measured value, named distribution or favorable source row cannot establish fold polymer conformation and size law. The package generates all 256 registered forms before external comparison, requires exactly one survivor, and reconstructs eight separately registered targets from the complete 21-artifact, 28,928,563-byte and 279-page source surface. The first failed extraction and the source-internal PAMS arithmetic defect remain visible; neither retires the obligation. Every source value, unit, uncertainty, correction, method disagreement, favorable, adverse, absent, unavailable, inconsistent and unresolved record remains downstream provenance and cannot select the native Fold law.

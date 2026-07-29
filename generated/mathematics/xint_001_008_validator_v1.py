@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""Implementation-distinct exact validator for XINT-001--008."""
+import json,sys
+from itertools import product
+from pathlib import Path
+REL=("typed-information-structure-handoff","typed-computation-structure-handoff","typed-physics-structure-handoff","typed-chemistry-structure-handoff","typed-biology-structure-handoff","typed-social-structure-handoff","typed-engineering-structure-handoff","single-owner-cross-reference")
+ROWS=(("information",("exact-support","distinguishability-structure"),("semantic-information-quantity","channel-observation")),("computation",("state-set","relation","proof-structure"),("execution","resource-law","machine-behaviour")),("physics",("exact-quantity-record","geometry","symmetry-structure"),("physical-identification","measured-value","unit-realization")),("chemistry",("graph","algebraic-relation","enumeration"),("chemical-identity","reaction-measurement","material-context")),("biology",("network","order","probability-correspondence"),("biological-function","organism-observation","evolutionary-history")),("social",("inference-structure","game-relation","network"),("population-observation","institutional-meaning","behavioural-claim")),("engineering",("calculation","optimization-structure","certificate"),("design-choice","performance-test","safety-acceptance")))
+def good(row):return bool(row[1] and row[2] and set(row[1]).isdisjoint(row[2]))
+def witness(i):return good(ROWS[i-1]) if i<8 else len({row[0] for row in ROWS})==7 and all(good(row) for row in ROWS)
+def surface(i):
+ axes=(("duplicate-or-anonymous-object","single-owned-mathematical-identity"),("untyped-cross-branch-import",REL[i-1]),("negative-ownership-scalar","held-source-target-orientation"),("sampled-handoffs","complete-declared-interface-census"),("outcome-selected","root-bound-forward-forcing"),("preopened-result","post-registry-exact-observation"),("single-consumer-only","finite-successor-or-explicit-boundary"),("fit-exception-extra-rule","dated-complete-no-extra-rule"));rows=tuple("__".join(x) for x in product(*axes));return rows,"__".join(x[1] for x in axes)
+def main():
+ cid,root,path=sys.argv[1],Path(sys.argv[2]),Path(sys.argv[3]);i=int(cid.rsplit("-",1)[-1]);sealed=json.loads(path.read_text());rows,sur=surface(i);got=tuple(x["candidate_id"] for x in sealed["census"]["candidates"]);dec={x["candidate_id"]:bool(x["survives"]) for x in sealed["decisions"]};expected={x:x==sur for x in rows};passed=all((got==rows,len(set(got))==len(got)==256,dec==expected,sum(expected.values())==1,len(sealed["controls"])==4,all(x["passed"] for x in sealed["controls"]),sealed["closure"]["scope"]=="depth_independent",witness(i)));print(json.dumps({"passed":passed,"validated_seal_hash":sealed["seal_hash"],"recomputed_from_declared_inputs":True,"certificate":{"candidate_count":256,"unique_survivor_count":1,"complete_interface_witness":witness(i)}}));raise SystemExit(0 if passed else 1)
+if __name__=="__main__":main()

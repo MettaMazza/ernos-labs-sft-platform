@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-ABSORPTION-EXTINCTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:066a3e2086e715859f467ea24dd478c6b1a3de0fb811b9356252bae0fab76807"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e91c083b26373ba32248f5fb69096efbf32021c2e286382aa08ca38c6fa404bb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:52009e44f81bf0d4970fae935d7d2b3495904aff150925710e23d82bfaadad78"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:41f8e12a9445cb481070f71039843e6e90f38637f478749a9296a1bd932a6978"
+    }
+  ]
+}

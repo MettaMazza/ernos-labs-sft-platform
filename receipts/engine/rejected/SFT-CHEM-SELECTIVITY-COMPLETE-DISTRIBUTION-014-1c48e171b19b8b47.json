@@ -1,0 +1,58 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-CHEM-SELECTIVITY-COMPLETE-DISTRIBUTION-014",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:e529d5b66f6cc6398b9522cfffff7707df447fc36017775323034c56d6a7b25b",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": "sha256:e3f49b656a928e219af738a7c1288fe8d261aab9ca9ae518b8b806bea838e83a",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "empirical validator raised: __init__() takes 1 positional argument but 6 were given",
+      "gate": "empirical_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "empirical_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:1c48e171b19b8b476ea9d3b1b2064e6a3b2b479cbd9301ed3f0dcb98ff3c28e6",
+  "violations": [
+    "empirical validator raised: __init__() takes 1 positional argument but 6 were given"
+  ]
+}

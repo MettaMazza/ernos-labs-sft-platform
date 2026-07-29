@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-ENGINEERING-OWNERSHIP-HANDOFF-001",
+  "data_source_ids": [
+    "NIST-REPRODUCIBLE-PROCESS-MONITORING",
+    "CISA-SECURE-BY-DESIGN-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:459e836f765613b0249d9507741dc442d1132f901c1430a990f9afb85aeb9caa",
+  "falsification_condition": "Reject if any registered owner, paired receipt, external record, registration, dependency edge, root trace, control or extension boundary is missing, duplicated, changed or opened before the value-free owner registry.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9a1c5fc81336c5697a80c31de6f8d37b0fcfa92d8326707d43d697fc21e0036c",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0b89f3a4219907622fddc123f72214ff24daebeb48e43fbdb75f127bcca30383",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-HAND-001-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:d4ec787fd47273f610b7fe7863b3ff5c76e0c81f6564dd526e627e01ec01b850",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9e0bc6f291e3a4c3613ff61392131bb40e27fb9373ed17f4c4349076b3b42e0c",
+    "prediction_seal_hash": "sha256:0a3f732b09ac78c5a4fd879f96fbf6f0cc220bf2d596da1b5ff440bc4b71a70f",
+    "program_hash": "sha256:3b34e07368a3d0f7f84780e13515c275d88777e5c7ad84397c9b67d09ae0e51d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:45f86cec1f5f217fa2bf5d6bfb0462038dabcb5158c6e0e8be070dc734ec5788",
+    "target_material_present": false,
+    "trace_hash": "sha256:a53bec1677fc699b663752b1b35e4832790c300fc8084df5e290e65e8805a04d"
+  },
+  "measurement_receipt_hash": "sha256:25d54e226d4508afb499cb40e01930979efb5ab5038592ba2744e5eaef1f14c3",
+  "measurements": [
+    "HAND-001: value-free owner registry preceded outcome access",
+    "frozen graph: 1681 claims, 28437 dependency edges, 19852 cross-branch uses",
+    "paired external surface: 15 records, 28 source identities, 54 evidence lines",
+    "all selected evidence rows preserved; omission control rejected True",
+    "materials owns SFT-MAT-PROC-WINDOW-PROVENANCE-010; sources=1; evidence-lines=4; receipt=sha256:0ad7b92e5c8d24cdfc2ee2617314ee031fbf333bf5e0b18f35e9809fa34d261f",
+    "engineering_translation owns SFT-ENG-PHYSICAL-HANDOFF-001; sources=1; evidence-lines=2; receipt=sha256:3c5e2bcfc0353b573de31a1f50e5b60e1983a348e9712b6ada307d889c5bbcf8"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e4b121fce65b98dcdb98a5a353c77fb99fff8ad13c09b728c13cde5bbcd0951c",
+    "custodian_id": "SFT-EXP-MAT-HAND-001-V1-custodian",
+    "experiment_registration_hash": "sha256:459e836f765613b0249d9507741dc442d1132f901c1430a990f9afb85aeb9caa",
+    "prediction_seal_hash": "sha256:0a3f732b09ac78c5a4fd879f96fbf6f0cc220bf2d596da1b5ff440bc4b71a70f",
+    "registered_target_identity_hash": "sha256:45f86cec1f5f217fa2bf5d6bfb0462038dabcb5158c6e0e8be070dc734ec5788",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:afc400f9c23f48f646d4aba18febb396fe148c388d6479464c61e0b8c2146167"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e832769c55f75aae61e45aff33c3382a998f1b15d0a986befaabbb7b45bb4a98"
+}

@@ -1,0 +1,67 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-EARTH-ENVIRONMENT-OWNERSHIP-HANDOFF-004",
+  "data_source_ids": [
+    "NIST-CIRCULAR-END-OF-USE",
+    "EPA-AIRDATA-001",
+    "WQP-WEB-SERVICES-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NEON-OPEN-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:4ae7f090c3680d686dd1ce0ac094157963a5ed546d1a6bea1379f30a4629c7c3",
+  "falsification_condition": "Reject if any registered owner, paired receipt, external record, registration, dependency edge, root trace, control or extension boundary is missing, duplicated, changed or opened before the value-free owner registry.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:10f525f2855d32d7427a50c4e700975239678f92026197b28fa57ee13c88d337",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:934a3400a0cb957e301aaa87b3ecbf89bec53442bbec996ef674c6126c2c3b79",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-HAND-004-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a84b49c167391fd702dae49fcef5960abcfcc9801e9b338c192d22d9c7ad752e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ec83475b512173cf06b6d6a9d6d18b025ddd7f6e27746ada2c901210df47fbdf",
+    "prediction_seal_hash": "sha256:cbd08c225010722e630210028dce7a4911deb4f3fa8c58a1967cbd9e61b18017",
+    "program_hash": "sha256:9dc96f4dd3e69381d1f4672cbdc83b4902623e85ec1e9bfe865d8f0f52ae15dd",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:5351b023c8c41b14f0aecd01d42bf651fb5c0e13f8c911db33ae3e4ae7e05368",
+    "target_material_present": false,
+    "trace_hash": "sha256:07072fa2622a99af7732e78b634f8cb879f9819296087ff4ef428d98c25f4329"
+  },
+  "measurement_receipt_hash": "sha256:b1cc3e93791ef6c8329aab4393c8deb3548f6f0471aa35808027174e2d86fd6e",
+  "measurements": [
+    "HAND-004: value-free owner registry preceded outcome access",
+    "frozen graph: 1681 claims, 28437 dependency edges, 19852 cross-branch uses",
+    "paired external surface: 15 records, 28 source identities, 54 evidence lines",
+    "all selected evidence rows preserved; omission control rejected True",
+    "materials owns SFT-MAT-SUST-END-OF-LIFE-CUSTODY-009; sources=1; evidence-lines=4; receipt=sha256:c722e8ed79cdea2dbbdff7dd45e64e9e33d6c0fe63c0d7b283a24e72f1b0f580",
+    "earth_environment owns SFT-EARTH-POLLUTANT-IDENTITY-001; sources=4; evidence-lines=4; receipt=sha256:f70ce5119a12f8ad926fd279bbbe6fcb49b650d666e604dff2f6e586b7d1f993",
+    "earth_environment owns SFT-EARTH-SOURCE-PATH-RECEPTOR-001; sources=4; evidence-lines=4; receipt=sha256:29ff886be12a107ecbcbe035eb5573a52bc661557faa4c0bfafd9ff7f28a8727"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:dc0ddd5f92041c58e9f398589f8bace4dc34637f07b7814aeb7a4a59cbcde045",
+    "custodian_id": "SFT-EXP-MAT-HAND-004-V1-custodian",
+    "experiment_registration_hash": "sha256:4ae7f090c3680d686dd1ce0ac094157963a5ed546d1a6bea1379f30a4629c7c3",
+    "prediction_seal_hash": "sha256:cbd08c225010722e630210028dce7a4911deb4f3fa8c58a1967cbd9e61b18017",
+    "registered_target_identity_hash": "sha256:5351b023c8c41b14f0aecd01d42bf651fb5c0e13f8c911db33ae3e4ae7e05368",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:5391e8cbac4a94081e23dac747379b4e2a3e21570875c1bd5d5b088ebb3c6bfc"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1483590bd4041ca0421d433f5b398ecf114002ea784feb2bbac749696f688e3e"
+}

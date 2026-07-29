@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SOFT-EMULSION-DROPLET-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:de401c3c7dd44f5516de91d4af8e82207b6abab6701df63b416d47546a5cf126"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:08c27c4c3c23499c674edf00b21b662d6f28d58e2183b13f684b55f701fe6bc2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7fcbca98fb9c7164d8ccd7650a205e26599dd2b10143d9c1025fb9e4e1500656"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:216b6928efa43cd73e7537cd31dd2c3d16a9bb76db3120c51458b984c8ef1ba4"
+    }
+  ]
+}

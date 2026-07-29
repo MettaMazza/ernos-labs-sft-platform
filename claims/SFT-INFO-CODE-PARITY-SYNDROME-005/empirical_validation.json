@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-CODE-PARITY-SYNDROME-005",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-CODING-OBSERVER",
+    "SFT-V1-V2-CODING-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:89457b045fc8e44d661c2a9c0c8d731f039146bb582daff21ea01314302f47f7",
+  "falsification_condition": "Reject if the value-free registry, complete code census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d7718ef5d36c7e01b46e86f65b97a2cfc317d9ef65285f77bc41a35734b9ae8a",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1d883d0ddf3028ef273f7009b1a13e4585c5ecf1dd64b43e4ef6af1cd8a6f515",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-CODE-005-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:36c975e8a8e29763f95ba423fc7bb047afbca360d2cbf01fac28f20f100aabd3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:1640f6fc1f74b52f572529979bc9620c2e0fd75029eeb0062e5afbbcb3d733b9",
+    "prediction_seal_hash": "sha256:68baa4a79e3cabd6f761936051c82b8f6d8dfd9b39431d2906a799699be59569",
+    "program_hash": "sha256:d2e2c3874ce6cb44922414f36baf009c11b268876655697d9b759edca5308a3d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:fdda0f53a19e787209e8c2bac02752adf953b9fe625f9f4ef72ee37fab064aeb",
+    "target_material_present": false,
+    "trace_hash": "sha256:74a3726b929f6549c9e99a8b753915ee5ef83f5606a2c126ea68441ad8ffc7f6"
+  },
+  "measurement_receipt_hash": "sha256:aa7568cc6e48cf45052d9aa0841539e24de93002cb0ba430b70f2171c89c69b1",
+  "measurements": [
+    "CODE-005: parity_syndrome",
+    "exact observation: {\"check_count\":2,\"localized_position\":1,\"syndrome\":[\"different\",\"same\"]}",
+    "complete family observation custody: 18 records; all rows preserved",
+    "complete finite source, codeword, error-mask, check, predecessor, decoder, path and rate-part enumeration supplies the observation; no imported stochastic error law, likelihood decoder, fitted threshold or hidden codeword enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5163d91d92e13a8ac1184239386aa3bbf572fc31c5353c69c294c077f679aa50",
+    "custodian_id": "SFT-EXP-INFO-CODE-005-V1-custodian",
+    "experiment_registration_hash": "sha256:89457b045fc8e44d661c2a9c0c8d731f039146bb582daff21ea01314302f47f7",
+    "prediction_seal_hash": "sha256:68baa4a79e3cabd6f761936051c82b8f6d8dfd9b39431d2906a799699be59569",
+    "registered_target_identity_hash": "sha256:fdda0f53a19e787209e8c2bac02752adf953b9fe625f9f4ef72ee37fab064aeb",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d21d810be89dad7d1fe611aff7597bfb96104b401c4d833a1fec53a03fa34d0b"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:ae57927bd22680e423314255af1d601a12d5885ba8e291bd509845ddd34cc494"
+}

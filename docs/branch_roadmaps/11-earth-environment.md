@@ -56,6 +56,20 @@ The complete field census covers:
 - planetary comparison at the Astronomy handoff; and
 - contingent history distinguished from universal law.
 
+## Mandatory prior-corpus return families
+
+Status: completed to the frozen current standard and open to lawful extension.
+The Earth branch retains its admitted Earth-ionosphere resonance and exact
+earthquake unit-exponent receipt. The stronger normalized tipping lock is now
+admitted: quarter-One and three-quarter-One are the exact basin preimages of
+half-One, while dimensional Earth thresholds remain system-specific. Its
+identity-first comparison retains observed hysteresis, threshold uncertainty
+and interacting-system controls. Cross-domain identity remains reserved for
+Synthesis rather than inferred from analogy.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational edition establishes coupled Earth-system laws and evidence

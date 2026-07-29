@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-VISCOELASTIC-MEMORY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:89105f2ee757983fbaae174f70972efa185d64de1988db1b0e6bc4fb602cdb23"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:6cb0bfb137e444fc9e6cf801c5d52d4141ea37c569a9288ac68aa9b4eeb65299"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:aba234f52dcc46ea8629c4017934bd1984803caef6d4e9e127a9cef9373be5e3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1543f3dff640e36dc0d26e53b9f79333036df78454744c8fe6ad8a2780f75403"
+    }
+  ]
+}

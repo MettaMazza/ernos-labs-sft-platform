@@ -1,0 +1,51 @@
+{
+  "schema": "sft-v3-chemistry-org-014-target-identities/1",
+  "claim_id": "SFT-CHEM-SELECTIVITY-COMPLETE-DISTRIBUTION-014",
+  "obligation_id": "SFT-CHEM-OBL-ORG-014",
+  "registered_date": "2026-07-28",
+  "selection_rule": {
+    "authority": "Open Reaction Database official data repository mirrored on Hugging Face",
+    "frozen_repository_commit": "16ce3beca278610b8b039201b445ee4a17f791b4",
+    "complete_non_uspto_config_count": 48,
+    "selection": "SHA-256(claim_id) interpreted as a whole nonnegative host index modulo the 48 lexicographically ordered registered non-USPTO configurations",
+    "selected_zero_based_index": 47,
+    "selected_config": "ord_dataset-feaf1b793c6d408aaec1cac7cc3ceadc",
+    "selected_complete_row_interval": {"first": 1, "last": 130},
+    "no_source_or_outcome_property_selected_a_row": true
+  },
+  "source_identities": [
+    {
+      "source_id": "IUPAC-C01051",
+      "identity": "complete current chemoselectivity term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-c01051.json",
+      "snapshot_sha256": "sha256:a77907eddbf3fd523a249c275a4cd90844185c45617a230fe47ea30663033088",
+      "custody_status": "development_observed"
+    },
+    {
+      "source_id": "IUPAC-R05243",
+      "identity": "complete current regioselectivity term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-r05243.json",
+      "snapshot_sha256": "sha256:9b50f87f8aa6e76effcfeeb5110baf0b31991b8b8059f8520ee7960358221aab",
+      "custody_status": "development_observed"
+    },
+    {
+      "source_id": "IUPAC-S05991",
+      "identity": "complete current stereoselectivity term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-s05991.json",
+      "snapshot_sha256": "sha256:a54e5bace79d2add9152125a40d9e563196db36c3f8a8aaab7be46e9cdad713c",
+      "custody_status": "development_observed"
+    },
+    {
+      "source_id": "ORD-FEAF1B793C6D408AAEC1CAC7CC3CEADC",
+      "identity": "complete 130-row parquet configuration selected without source or outcome inspection",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-009-ord-holdout-v9/ord_dataset-feaf1b793c6d408aaec1cac7cc3ceadc.parquet",
+      "snapshot_sha256": "sha256:ebefbe9aba687f182d4f068e94be0f7fd71d1189bdb2eff2aca6fedf4d522bf3",
+      "registered_bytes": 37643,
+      "registered_row_count": 130,
+      "custody_status": "complete_row_interval_outcomes_unopened_for_org_014_at_identity_seal"
+    }
+  ],
+  "postseal_requirement": "Open every registered reaction row, preserve every outcome, every product, every product identifier and every reported measurement exactly; retain absent products and amounts; never score only a major product.",
+  "target_values_products_amounts_and_outcomes_present": false,
+  "numerical_zero_negative_decimal_continuum_or_measured_value_used_by_native_law": false
+}

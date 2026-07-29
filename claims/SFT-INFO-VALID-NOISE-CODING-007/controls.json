@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-VALID-NOISE-CODING-007",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omitted claims or evidence rows invalidate completeness.",
+      "passed": true,
+      "receipt_hash": "sha256:8421ee17925730015bf71a2451617406f0c756e1bb15204d800a1f770a18088c"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported consensus assessment, fitted tolerance or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no missing receipt, stale certificate, erased adverse row, changed scope or duplicated obligation owner; no validation claim substitutes for the underlying derivation or repairs a halted result by editing authority; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:9ce85ecc970f571b10ef8cde1da030c7120c389e49d4b17fde4f2072dc66156b"
+    }
+  ]
+}

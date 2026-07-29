@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-HYSTERESIS-LOOP-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2f7a12954643c9ff45f2e24d16eb04e2cc52b425f57afe7dac42f30d824795f7"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d224f960ea1c1b11a88ec17505853fec59728b4c20ccb1e498f40e9a814f6108"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:439cb71fc40fec0c15c1dc798c7f2c903d38bcdcdac0010928dbb0d5a01720a1"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ece61ea141097912ce5acedbf4f0ad4f533d04f898294b6db23028d7788d917b"
+    }
+  ]
+}

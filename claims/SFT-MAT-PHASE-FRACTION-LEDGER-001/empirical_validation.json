@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-PHASE-FRACTION-LEDGER-001",
+  "data_source_ids": [
+    "NIST-TEXTURE-PHASE-FRACTION",
+    "NIST-LEVER-RULE-SOLIDIFICATION"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:e5fd168e636bf1e191618d345db76fbd32259427c859301f315d38248a020440",
+  "falsification_condition": "Reject if any registered source identity, source byte, available fragment, condition boundary, phase distinction, prediction seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c6016e10a727ee076610c982f07f1d08fe55cb9509e324305e417d0ef8cb855f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:052150c928611a3895a9c9a6c94cfe1f871d035dc15831e20d35e0b46d7f7883",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-PHASE-001-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cdfad72d35ed83e243f381a879e31d290b531bfbe4fd82638ab3a562d7b8c0f8",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:3d5209fd86ac09bbab94ca031d22fad0c59078d79025faadd13116ee5738ec3b",
+    "prediction_seal_hash": "sha256:a48b9751eeda8d357fed30be7c8d8f8e1da9992de234275755ae9fe97361c664",
+    "program_hash": "sha256:259c0bf75a6c1e1946e4b2c246f38bc07a29e7247bad05685bacc6a395b8902d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:13550151a11e3a0b3b7085b44b55204e60f5ec9cd0dc7ddb5dd3b955077125dc",
+    "target_material_present": false,
+    "trace_hash": "sha256:ee29a0fd84ff31eae53bc06e3c4f29ed12612c48551d3e8d97b5a5b709b38415"
+  },
+  "measurement_receipt_hash": "sha256:e8a19e481509b325f98a1d2d5e3cc249c3c7f3e2051c29d7d747393d39858ebd",
+  "measurements": [
+    "PHASE-001: 2 authoritative comparisons retained",
+    "family custody: 11 usable and 0 unavailable sources",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-TEXTURE-PHASE-FRACTION: captured_preexisting_official_snapshot; Accurate quantification of the crystallographic texture; phase fraction measurements; first=True; second=True",
+    "NIST-LEVER-RULE-SOLIDIFICATION: captured_post_registry; phase compositions; phase fractions and enthalpies; first=True; second=True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9ac77d8a1ef80c7d4e936426e865362c1f1466e6fb5f61a60384f360631ca3f4",
+    "custodian_id": "SFT-EXP-MAT-PHASE-001-V1-custodian",
+    "experiment_registration_hash": "sha256:e5fd168e636bf1e191618d345db76fbd32259427c859301f315d38248a020440",
+    "prediction_seal_hash": "sha256:a48b9751eeda8d357fed30be7c8d8f8e1da9992de234275755ae9fe97361c664",
+    "registered_target_identity_hash": "sha256:13550151a11e3a0b3b7085b44b55204e60f5ec9cd0dc7ddb5dd3b955077125dc",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b15f59ea74f20bb2a06c9f25c2f06b1841b1c79db6d6e13b6f68e0e2b35bfe36"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:1025f35b9f1fbf9df6585c0b682409d8a613dd730ac17b73461d5083a29ff30b"
+}

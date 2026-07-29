@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-SC-VORTEX-PINNING-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e9182b2eb9610ffbceaeff156a19b1383ecbd584225f54a566185751d4839ef6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7aed0ca8ff764183dbc6bcc7c616310836b74e1b54ac34b0523385c8e8e0bd47"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4da7546519ebac3f2f82810bd6e2eb034322469cb400b2bea728ec7e9a2db158"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:086ae7c920b85ff2a0349770aab40d6362be5d4dd3ec749b119dcac9a9db0de9"
+    }
+  ]
+}

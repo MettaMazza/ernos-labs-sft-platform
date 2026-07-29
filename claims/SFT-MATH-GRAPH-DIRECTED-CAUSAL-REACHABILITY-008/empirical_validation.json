@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MATH-GRAPH-DIRECTED-CAUSAL-REACHABILITY-008",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-GRAPH-OBSERVER",
+    "SFT-V1-V2-MATHEMATICS-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8f33e4cdef1d765c79ceea5ab43d515317fadd89e4924476f57ce6a45dad0906",
+  "falsification_condition": "Reject if the value-free registry, complete finite graph census, exact observation, candidate survivor, source identity, seal, custody record, adverse predecessor, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:61490a468e2caedce99fcf121a6d422e94537f80e649b79841b1376f54247cfd",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1af4bc95a11fb5fdc462a90edebbe9b25f02ae3422d4082fe71e63dc22a92ebc",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MATH-GRAPH-008-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2adb83397391df0e15b4f2cb3feac1eafc1667ecb78a4ef699343765dc48253a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e988c90d27c14addc0a2e42c2c78c64dd5c1af4c1fc2d7d3d4c3ea505e5d058f",
+    "prediction_seal_hash": "sha256:f6a753876569d3d2474a59e328b5e2370487beafb40d2a7bfb13f36a4d5affa5",
+    "program_hash": "sha256:4fe23a2216928af055a309383765307d694b8e46e95c05e15029834b1c2dea27",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:da6979d4e519302ea4da7d28052c6ab3b7c94ab8044c200df0f8a982ddc80476",
+    "target_material_present": false,
+    "trace_hash": "sha256:8b77dfaa7df77d29c079297a873c4e59d53834a53f99d09be2cda2224c0914d5"
+  },
+  "measurement_receipt_hash": "sha256:3c3100c081282d25262bb23201fc7fab39b1cfbf7ff6dad1d9625a26c62d5a2e",
+  "measurements": [
+    "GRAPH-008: directed_causal_reachability",
+    "exact observation: {\"causal_pairs\":9,\"topological_order\":[1,2,3,4,5],\"vertices\":5}",
+    "complete family observation custody: 14 records; all rows and the adverse predecessor are preserved",
+    "complete deterministic graph enumeration supplies the observation; no random, fitted or imported theorem answer enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e1a974fa6d29e326252f65a67424313a831e71cb4c53b5d076a5fe85728eff88",
+    "custodian_id": "SFT-EXP-MATH-GRAPH-008-V1-custodian",
+    "experiment_registration_hash": "sha256:8f33e4cdef1d765c79ceea5ab43d515317fadd89e4924476f57ce6a45dad0906",
+    "prediction_seal_hash": "sha256:f6a753876569d3d2474a59e328b5e2370487beafb40d2a7bfb13f36a4d5affa5",
+    "registered_target_identity_hash": "sha256:da6979d4e519302ea4da7d28052c6ab3b7c94ab8044c200df0f8a982ddc80476",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:7ecec967eedd97ef7f0067526e55dfad8185a7024ff7bda7cb6c6791cf6675bb"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:ddc1e1b21eeb795b860d7ee38912000586b692f3a1ca11ee7282dd76b950c864"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-DEFECT-MICROSTRUCTURE-VECTOR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:042e384099895082deb3873c8fdd86d0ed58231a08ffc02bf99bd9cdbe76a813"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:01f3b2df967456e2aebf69022bf544c601cbc8c9792482184e932e0818159bd8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:16bfa54a0ce7120bec02385d033a31805c583e7fe99b6bc78d519704b1a99826"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:45eee85d3ddb818cef33430d59669904ee038b39fb59d011afc1d4dc27897d68"
+    }
+  ]
+}

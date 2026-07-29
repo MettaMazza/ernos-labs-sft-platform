@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-THIN-FILM-GROWTH-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:bdafaca1950d435c934f85c4f345ba0d2c8e3fec7ec0fc56a957c9aef1cb9544"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:bbf9353fb27a29849f3764b04516af954c609b64704573ffdc0fa40214a64bd0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f8785954c49b1ab8676f5af28ddc4f17d5dc743c4f300f550ea928ff248b40f5"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:649e85b766b34246a70f0251a286a26f95beef83b40f9510bc3505465e815577"
+    }
+  ]
+}

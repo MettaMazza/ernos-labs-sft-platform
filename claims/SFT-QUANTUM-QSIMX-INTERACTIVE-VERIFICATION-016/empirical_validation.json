@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-QSIMX-INTERACTIVE-VERIFICATION-016",
+  "data_source_ids": [
+    "SFT-V3-ADMITTED-QUANTUM-SIMULATION-001",
+    "SFT-V3-ADMITTED-QUANTUM-VERIFICATION-001",
+    "SFT-V3-ADMITTED-QCODEX-COMPLETENESS-032",
+    "SFT-V1-V2-QUANTUM-SIMULATION-VERIFICATION-COMPARISON-CORPUS",
+    "OWNING-DOMAIN-PHYSICAL-MEASUREMENT-HANDOFFS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:af104bfa9b670095b0e01994e7d0406c0532520e46af30f79ef43ac1530b5455",
+  "falsification_condition": "Reject if the value-free registry, complete simulator/verifier grammar, exact execution or explicit handoff, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:63ec426d724418f617b625d2b35fe6af27bb6ced8cb95b1ae44c883edff2909b",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:989acd28eebf12cb934d9a0c695b436eb4f478cd27c90e9e4ea541f39704ccd5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-QSIMX-016-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2f58562c0f4004d165f1a77e2997e23dc61032b6ec16aa74cdbe22567a325447",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:789ffd3d26449bc554e7943b02a7dbe8f1a5075ea00ea20d82565fc0d5c67482",
+    "prediction_seal_hash": "sha256:4852f278d5b28be0e64ae32ee4e30a21b2cbc26076ab40aad12584ad010d8e84",
+    "program_hash": "sha256:5dc27061d06718a42bf685b0ff3194140e72c916bb45e24d8809e5454a5e8a5c",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:70efd8c5e99f891f77c9f0056b332dc9d05ce8b0c1ae16b435e94110da03084b",
+    "target_material_present": false,
+    "trace_hash": "sha256:d7f4bf6ab7b6e35423d8d648590bb2b0b02a6a8dddaf3cafb3cacd6cc133f7c1"
+  },
+  "measurement_receipt_hash": "sha256:c50f433e6623f809bf440f031f4223e2a6e370620c9e7b3c57decbb0e757f8f7",
+  "measurements": [
+    "QSIMX-016: interactive_verification",
+    "exact simulation/verification execution: {\"challenge_rounds\":3,\"complete_transcript\":true,\"response_rows\":3}",
+    "complete simulation/verification custody: 24 records; all rows preserved",
+    "exact finite operational rows supply formal observations; physical dynamics, scales, fidelities and owning-domain values remain explicit measurement handoffs"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5c1123112b7dc9d1314a46083c4d274b063c50fdd7ad9cbdcf3458cf3a69e332",
+    "custodian_id": "SFT-EXP-QUANTUM-QSIMX-016-V1-custodian",
+    "experiment_registration_hash": "sha256:af104bfa9b670095b0e01994e7d0406c0532520e46af30f79ef43ac1530b5455",
+    "prediction_seal_hash": "sha256:4852f278d5b28be0e64ae32ee4e30a21b2cbc26076ab40aad12584ad010d8e84",
+    "registered_target_identity_hash": "sha256:70efd8c5e99f891f77c9f0056b332dc9d05ce8b0c1ae16b435e94110da03084b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:86db2d5960a972f811c7cc77678fd19884b1f58818561daf1f4286afffb993a5"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:fe340e5025f18af3d61b39b8214d027ea937165e6722421b66e15de2484ca058"
+}

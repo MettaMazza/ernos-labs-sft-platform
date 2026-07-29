@@ -1,0 +1,132 @@
+{
+  "claim_id": "SFT-PHYS-VALIDATION-TESLA-RESONANCE-FAMILY-082",
+  "comparison_class": "observational_derivation_post_formal_seal",
+  "formal_predecessors": [
+    {
+      "claim_id": "SFT-PHYS-TESLA-BOUNDED-CAVITY-078",
+      "receipt_hash": "sha256:52164b45a1cd9eac61d3fd2850d10dd144a0fc6d2699520bd10d166325f3126e"
+    },
+    {
+      "claim_id": "SFT-PHYS-TESLA-ODD-QUARTER-WAVE-079",
+      "receipt_hash": "sha256:3f1341a5b993e042ffcea6cc7220100e8ee8ab98c59aafc3694426381e30c83c"
+    },
+    {
+      "claim_id": "SFT-PHYS-TESLA-LONGITUDINAL-TRANSVERSE-080",
+      "receipt_hash": "sha256:3c7be179aa4e991f5bf66fcb926a51b3660f9d11e9c70216ea0cf4e75fe91a09"
+    },
+    {
+      "claim_id": "SFT-PHYS-TESLA-RESONANT-TRANSFER-081",
+      "receipt_hash": "sha256:33dbb3b402878cfd1553f2eaf0d25d1df3194bd29cfe390d43e7a13facde069c"
+    }
+  ],
+  "historical_boundary": "Earlier SFT work and public source descriptions informed the questions. The four formal V3 claims were admitted before this combined source record was authored. This record is therefore observational derivation, not a retroactively labelled blind numerical prediction.",
+  "rows": [
+    {
+      "classification": "favorable-with-apparatus-boundary",
+      "observations": [
+        "The NBS receiver uses quarter-wave concentric transmission lines grounded at one end.",
+        "The measured line responds near the third harmonic and other odd harmonics.",
+        "The measured effective length departs from the ideal full-quarter wavelength because shunting capacitance is retained.",
+        "Reported amplification varies with frequency and therefore is not a universal transfer efficiency."
+      ],
+      "source_id": "NIST-JRES-QUARTER-WAVE-1935",
+      "target_id": "QUARTER-WAVE-ODD-HARMONIC-STRUCTURE"
+    },
+    {
+      "classification": "favorable-with-distinct-speed-control",
+      "observations": [
+        "The evaluated NIST diamond record obtains round-trip time between like-phase echoes and divides by twice the specimen thickness.",
+        "For the 111 direction the measured table separately names one longitudinal, transverse 1 and transverse 2 mode.",
+        "The three measured mode velocities are not identical, so common recurrence does not mean identical material response."
+      ],
+      "source_id": "NIST-SRDATA-DIAMOND-MODES-Z00435",
+      "target_id": "LONGITUDINAL-AND-TWO-TRANSVERSE-MODES"
+    },
+    {
+      "classification": "favorable-with-loss-and-fidelity-boundary",
+      "observations": [
+        "The NIST experiment uses a 7 mm open-ended superconducting transmission-line resonant cavity between two phase qubits.",
+        "A prepared state is transferred into the cavity, stored as a photon state and retrieved by the second endpoint qubit.",
+        "Exchange is strongest on resonance and the experiment observes vacuum-Rabi oscillations.",
+        "Finite qubit and cavity decay and non-unit transfer fidelity remain reported limitations."
+      ],
+      "source_id": "NIST-COHERENT-RESONANT-TRANSFER-2007",
+      "target_id": "RESONANT-CAVITY-TRANSFER-AND-STORAGE"
+    },
+    {
+      "classification": "favorable-natural-cavity-with-adverse-generalization-control",
+      "observations": [
+        "NASA reports the Earth-ionosphere system as a spherical-shell cavity with quasi-standing electromagnetic modes near 7.8, 14, 21, 26, 33, 39 and 45 Hz and approximately half-hertz daily variation.",
+        "The measured natural-cavity sequence is not the odd-quarter-wave sequence and therefore cannot be substituted for the quarter-wave apparatus law.",
+        "The report lists wireless power and a free-energy source only as possible applications; it does not report measured source-free power extraction.",
+        "The measured frequency variation retains atmospheric electrical, magnetic and ionospheric-height conditions."
+      ],
+      "source_id": "NASA-EARTH-IONOSPHERE-RESONANCE-2003",
+      "target_id": "EARTH-CAVITY-MODES-AND-POWER-BOUNDARY"
+    },
+    {
+      "classification": "favorable-detection-with-delivery-type-adverse-record",
+      "observations": [
+        "The NASA NTRS record reports Schumann resonance signatures detected by the C/NOFS satellite beyond the upper cavity boundary.",
+        "The registered legacy PDF locator redirected to an HTML NTRS record rather than delivering a PDF; the delivered type mismatch is retained and no page-specific numerical claim is assigned to it."
+      ],
+      "source_id": "NASA-SCHUMANN-OBSERVATION-2011",
+      "target_id": "EARTH-CAVITY-SATELLITE-DETECTION"
+    }
+  ],
+  "source_power": {
+    "does_not_establish": [
+      "a universal device efficiency",
+      "source-free energy creation",
+      "unlimited extractable Earth power",
+      "identity of electromagnetic and acoustic substances",
+      "an exact Earth frequency derived by the quarter-wave law",
+      "a Tesla historical claim as a derivational premise"
+    ],
+    "establishes": [
+      "measured bounded recurrence and discrete modes",
+      "measured quarter-wave odd-harmonic response",
+      "measured one-longitudinal/two-transverse role inventory",
+      "measured resonant endpoint transfer with storage and loss limits",
+      "measured natural Earth-ionosphere cavity resonance"
+    ]
+  },
+  "sources": [
+    {
+      "captured_path": "experiments/external_sources/physics/snapshots/nist-jres-quarter-wave-1935.pdf",
+      "locator": "https://nvlpubs.nist.gov/nistpubs/jres/15/jresv15n6p609_A1b.pdf",
+      "snapshot_hash": "sha256:83488f03a4716728b2e85bafbb7002ae56f5d5923383785f5d955b105810211c",
+      "source_id": "NIST-JRES-QUARTER-WAVE-1935",
+      "title": "Unicontrol Radio Receiver for Ultra High Frequencies Using Concentric Lines as Interstage Couplers"
+    },
+    {
+      "captured_path": "experiments/external_sources/physics/snapshots/nist-srdata-diamond-modes-z00435.html",
+      "locator": "https://srdata.nist.gov/CeramicDataPortal/Scd/Z00435",
+      "snapshot_hash": "sha256:1b558723d0bbc5bcf12c2710564b6bb0c6e44ea6dddd3fd5efdbcecf5f3d3cdb",
+      "source_id": "NIST-SRDATA-DIAMOND-MODES-Z00435",
+      "title": "NIST Structural Ceramics Database Z00435: Ultrasonic Phase Velocity in Isotopically Enhanced Diamonds"
+    },
+    {
+      "captured_path": "experiments/external_sources/physics/snapshots/nist-coherent-resonant-transfer-2007.pdf",
+      "locator": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=32657",
+      "snapshot_hash": "sha256:eff098b1861b28ad2b61af5f5474ab8a9e77a099aaf41dc54902e5446d132c64",
+      "source_id": "NIST-COHERENT-RESONANT-TRANSFER-2007",
+      "title": "Coherent quantum state storage and transfer between two phase qubits via a resonant cavity"
+    },
+    {
+      "captured_path": "experiments/external_sources/physics/snapshots/nasa-earth-ionosphere-resonance-2003.pdf",
+      "locator": "https://ntrs.nasa.gov/api/citations/20040001419/downloads/20040001419.pdf?attachment=true",
+      "snapshot_hash": "sha256:1a829cf7137cf62ab218017bd868f7921552e4314dc9cd465e4bcc32505a4a96",
+      "source_id": "NASA-EARTH-IONOSPHERE-RESONANCE-2003",
+      "title": "Investigations of Relatively Easy To Construct Antennas With Efficiency in Receiving Schumann Resonances"
+    },
+    {
+      "captured_path": "experiments/external_sources/physics/snapshots/nasa-schumann-observation-2011.pdf",
+      "delivered_media_type": "text/html",
+      "locator": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120000051.pdf",
+      "snapshot_hash": "sha256:dec386730050b71da8c3a156d40b6e57c617420128329e7e216e49727eb0e61f",
+      "source_id": "NASA-SCHUMANN-OBSERVATION-2011",
+      "title": "Observation of Schumann Resonances in the Earth's Ionosphere"
+    }
+  ]
+}

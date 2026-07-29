@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-THERMAL-TRANSPORT-VECTOR-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e797e58ca8ab493a0a464c18449322051f9fc1c138cea7804d6827df973a863d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:aefc40231855a0f817408a7a1e128bdf5ac332819b0c0b08999c57a7e7514159"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6502405308b71a57630c898b6cb018eb0b946c0ab634e67e728b500d521068a8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7d8a8ef9fc3a68e266b9014bc2c3bdfaffbfc5e2e3abfcb8d477aafc1c9ccd5a"
+    }
+  ]
+}

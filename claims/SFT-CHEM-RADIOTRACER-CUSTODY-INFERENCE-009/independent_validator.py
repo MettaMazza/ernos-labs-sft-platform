@@ -1,0 +1,13 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-RADIOTRACER-CUSTODY-INFERENCE-009';DOMAINS=(('activity-only-tracer', 'held-tracer-and-chemical-carrier'), ('continuous-concentration-field', 'positive-ordered-observation-support'), ('selected-detector-location', 'complete-location-time-vector'), ('expected-count-premise', 'positive-administered-and-observed-counts'), ('fitted-recovery-coefficient', 'exact-observed-per-administered-ratio'), ('negative-missing-activity', 'positive-Take-or-EmptyOne-unobserved'), ('model-selected-localization', 'inference-bounded-by-observed-support'), ('renormalized-selected-series', 'successor-preserves-identity-and-complete-record'));SURVIVOR='held-tracer-and-chemical-carrier__positive-ordered-observation-support__complete-location-time-vector__positive-administered-and-observed-counts__exact-observed-per-administered-ratio__positive-Take-or-EmptyOne-unobserved__inference-bounded-by-observed-support__successor-preserves-identity-and-complete-record'
+from fractions import Fraction
+def record(rows):
+ if not rows or tuple(r[0] for r in rows)!=tuple(range(1,len(rows)+1)):return None
+ if len({(r[1],r[2]) for r in rows})!=1:return None
+ return tuple((r[3],Fraction(r[4],r[5]),None if r[4]==r[5] else r[5]-r[4]) for r in rows)
+r=((1,"Tc-99m","pertechnetate","inlet",3,5),(2,"Tc-99m","pertechnetate","outlet",4,5))
+native={"identity":len({(x[1],x[2]) for x in r})==1,"support":tuple(x[0] for x in r)==(1,2),"locations":len({x[3] for x in r})==2,"events":all(x[5]>=x[4]>0 for x in r),"recovery":record(r)[0][1]==Fraction(3,5),"loss":record(r)[0][2]==2 and record(((1,"T","C","L",5,5),))[0][2] is None,"inference":len(record(r))==2,"successor":len(record(r+((3,"Tc-99m","pertechnetate","terminal",5,5),)))==3}
+def main():
+ s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

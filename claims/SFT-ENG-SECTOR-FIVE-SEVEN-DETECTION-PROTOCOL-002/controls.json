@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0c40ca3ccce8b18eff41772fd12f3d77ee959632352b4c309a48c604c9cbcaa8"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:30d7c8f88ba3b2d4dac279a092e8ad092f87b15ef22970781e9acfa6e0160bc4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7e4999b923c9bff5c15e11495c84773705ac66ba1fd9b15eb23f23c2f270381c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d5dd23bc7ea62547be171e278d644ee0e260eea30f12707b5d9f317b92c652a9"
+    }
+  ]
+}

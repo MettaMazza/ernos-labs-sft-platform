@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-PHOTONIC-GAP-DEFECT-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1e5a986077d76643566709d0a9c711591b7d07cc53a28d625594610b82c74c6a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e414e8ebbe657cfa8c39d06c7ee15850c787f7faf7d2a40347ca57f16c0e8720"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3faf8169658aad25c81ef9290e4273a1b9f0d971268ececd1edab7dcfc8ef546"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:21630055b1e717e07d08bacb074a8191b4b7553e0e8fa0285f5a1d248453f107"
+    }
+  ]
+}

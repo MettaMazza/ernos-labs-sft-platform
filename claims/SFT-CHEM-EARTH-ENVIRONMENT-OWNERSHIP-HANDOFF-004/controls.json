@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-EARTH-ENVIRONMENT-OWNERSHIP-HANDOFF-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e917c84dcef57bf4bf9796c4435f6e89d07ec7aca7bd7fd5e8e073f61531199f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:47baf1d877be819d8b08c2be664cff4edbed0071e81e0a25155d26c4b4b8398f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a81d74338a00b32c756de8987d2304c0bfd339bce87b44062236f2c35515532e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e78acb0e0d487b399f0baa895c8dd018cf91472fac019ba7959e25eb2b10e8e4"
+    }
+  ]
+}

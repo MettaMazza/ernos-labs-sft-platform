@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-INFER-SEQUENTIAL-STOPPING-012",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Omitted hypotheses falsify inference closure.",
+      "passed": true,
+      "receipt_hash": "sha256:ad8b63321fd1752e677525e3865b7139ffdd8913fff7f7e92dcdbf5bc72e81f7"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported prior distribution, fitted likelihood or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no hidden hypothesis, favorable evidence sample, fitted decision threshold or erased error class; no learning objective, semantic meaning or physical sensor law imported into this owner; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:22d370210860de504b38f8c2b933cbe1bf96fb314a33669c1ef6ebca82b38a6f"
+    }
+  ]
+}

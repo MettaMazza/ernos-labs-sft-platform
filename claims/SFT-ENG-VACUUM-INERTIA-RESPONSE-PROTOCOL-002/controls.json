@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4eb5ed569818ed1ef32be7cd70601f0a320f1a466d7165efe5c361186c8e3add"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fd1fb16e7272ecf3ee5e71fc635a600c76d2d0d1f2a51700b1e909796a89b9f0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1ec5470692a606367b9b6b0b0158a96fd1b743ecdcfd6d2c46c1b5f8d01952b7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4b331171cac8260d6c25675b93b74f369de3bb1c86ca391ed6c53f00bf1073c7"
+    }
+  ]
+}

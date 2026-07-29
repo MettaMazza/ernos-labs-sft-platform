@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-MEASURE-DISTINCTION-COUNT-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Partial support changes the possible distinctions.",
+      "passed": true,
+      "receipt_hash": "sha256:534af192501c93e31482880b8440c07057aeea05e17d359d3237d5b3ed67ff30"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported entropy formula, logarithmic continuum or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no unregistered grammar, universal-complexity oracle, hidden unit conversion or fitted threshold; no sampled partition support or unregistered completed-infinite source; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:5a1a9c58f6097cf2a89e8c8303484e965316bfec4c3a47d7f52d6407561e1aa6"
+    }
+  ]
+}

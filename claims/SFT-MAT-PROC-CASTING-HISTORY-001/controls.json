@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-CASTING-HISTORY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:543386049aa8f45934759122332408393e7052bab2b8a4423edd1def80f7564d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d8da4a90a9c906c3b1f724e5f81ee6c11f13ba48a654bc777b40924d5149e0d0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4e5d0b58b6e70d1629d373b5e6ec7af39a0a6d9e36ca637ec7c520501d52b8ce"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:82f7ac3d1542861b2498f19f574f0ac6909793ca22ee9729a9d95a2097dfebe1"
+    }
+  ]
+}

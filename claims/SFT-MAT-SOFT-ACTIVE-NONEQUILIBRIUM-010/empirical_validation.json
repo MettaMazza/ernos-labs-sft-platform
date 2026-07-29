@@ -1,0 +1,60 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-SOFT-ACTIVE-NONEQUILIBRIUM-010",
+  "data_source_ids": [
+    "NIST-SOFT-NONEQUILIBRIUM"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:0b9337eb4c53de1420876e4c92de060c34e64f9f961ea22f0142ecdaa354f26a",
+  "falsification_condition": "Reject if any registered source, fragment, condition, path, seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:4d84e4fa92146a30298cca69c326a51d8603c6aae6e62a3ca1877e91db1ae2c4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5bb31025531086bc965eddbd9a7ab81e43a87ea2b5c9bb7f27f8e70614681bc8",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-SOFT-010-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:dfe85ef88a1fd752f8e0ee43d0918552c34f138fd49d7a8c9a5dbdb969eb7ab5",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:0786558a1171e11183a470d8959693f3453decad3ded606c1a93472dc2a2d480",
+    "prediction_seal_hash": "sha256:cc5bdc8e1b438cd3a012032b16c8baf358fd736fb4c64377b4c55281b7de9e60",
+    "program_hash": "sha256:d1f6c3dbe487d66832420996d1e5c381a09526271f10ff3fc1020e32ac993693",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:d644a3d397f356c1c4b92b6857df8cd6f1693a2b99d90ad30eb7ba48c6c7a97a",
+    "target_material_present": false,
+    "trace_hash": "sha256:e8444fcc82f669878fa5893fbc107c50c58e18f80218bced2db13ea76b31522b"
+  },
+  "measurement_receipt_hash": "sha256:2c7a4f5cb6212a68f5d9f0c3383ea57e2c84f53c1c4e172883871876e289137d",
+  "measurements": [
+    "SOFT-010: 1 comparisons",
+    "family sources: 10",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-SOFT-NONEQUILIBRIUM: far from the material's preferred state of equilibrium; sensitive to changes in pressure and temperature"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:135487fc6aa637bb5b32ec429706334795172d79780c9be82c04e92fbd5b4332",
+    "custodian_id": "SFT-EXP-MAT-SOFT-010-V1-custodian",
+    "experiment_registration_hash": "sha256:0b9337eb4c53de1420876e4c92de060c34e64f9f961ea22f0142ecdaa354f26a",
+    "prediction_seal_hash": "sha256:cc5bdc8e1b438cd3a012032b16c8baf358fd736fb4c64377b4c55281b7de9e60",
+    "registered_target_identity_hash": "sha256:d644a3d397f356c1c4b92b6857df8cd6f1693a2b99d90ad30eb7ba48c6c7a97a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:51a16e4111aed4f0ddb78d58cb4abd1e6e6b34d162bb9588bd8b72d572109957"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:c981f8faf489e6bd9621374a8db73629919fc259182e37b76e411649c8336d61"
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import json,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from sft.engine.canonical import sha256_identity
+from sft.materials.mech_001_014_external_v1 import experiment_registration
+from sft.materials.mech_001_014_laws_v1 import ORDER,SPECS
+from sft.physics.structural_constants import completeness_record,survivor_id
+RID="sha256:a35bbb4297261a17b7d543c83935f944aceb2a038717c89c6c973cb29a70d476";VID="sha256:796ae288a892f41a0415a8cf133089eca567368ed2ea48e6b5ff31e5f83e7c72"
+def write(p,v):
+ if p.exists():raise SystemExit("refusing overwrite "+str(p))
+ p.parent.mkdir(parents=True,exist_ok=True);p.write_text(v if isinstance(v,str) else json.dumps(v,indent=2,sort_keys=True)+"\n")
+def main():
+ for cid in ORDER:
+  s=SPECS[cid];pkg=ROOT/"claims"/cid;eid=f"SFT-EXP-MAT-MECH-{s.number}-V1";exp=ROOT/"experiments/materials"/eid;write(pkg/"registration.json",{"$schema":"../../governance/claim.schema.json","branch":"materials","subbranch":"mechanical_fracture_fatigue_creep_tribology_rheology","claim_id":cid,"title":s.title,"statement":s.statement,"dependencies":list(s.dependencies),"root_theorems":["SFT-ROOT-THERE-IS-NO-NOTHING"],"axioms":[],"free_parameters":[],"candidate_grammar":{"boundary":s.grammar_boundary,"generator":s.generation_rule,"expected_cardinality":256,"completeness_certificate":sha256_identity(completeness_record(s)),"unique_survivor":survivor_id(s)},"excluded_inputs":list(s.exclusions),"empirical_protocol":f"experiments/materials/{eid}/registration.json","provenance_classes":["forward_forcing"],"pre_source_target_registry":"census/materials_mech_001_014_target_registry_v1.json","pre_source_target_registry_identity":RID,"required_controls":["false_premise","tampered_source","tampered_artifact","boundary"],"registered_by":"Maria Smith","registration_date":"2026-07-29","status":"registered_pending_untouched_engine_admission"});write(pkg/"STATUS.md",f"# {cid}\n\nStatus: `registered_pending_untouched_engine_admission`\n");write(pkg/"WHY_DERIVATION_CHECK.md",f"# Why MECH-{s.number} requires a derivation check\n\n{s.statement}\n\nThe 256-form grammar is generated before source release, independently reconstructed and compared against every registered authoritative record.\n");write(pkg/"execution.py",f"from pathlib import Path\nfrom sft.materials.mech_001_014_execution_v1 import build_execution as assemble\ndef build_execution(root: Path):\n    return assemble(root, {cid!r}, Path(__file__).resolve())\n");write(exp/"registration.json",{"$schema":"../../../governance/experiment.schema.json","schema":"sft-v3-materials-mech-experiment-registration/1",**experiment_registration(s),"evidence_mode":"complete_enumeration_independent_reconstruction_post_registry_external_correspondence","target_registry":"census/materials_mech_001_014_target_registry_v1.json","source_custody_manifest":"experiments/external_sources/materials/mech_001_014_v1/source_custody_manifest.json","complete_evidence_vector":"experiments/external_sources/materials/mech_001_014_v1/complete_evidence_vector_v1.json","complete_evidence_vector_identity":VID,"absence_boundary":{"display_glyph":"0","native_proof_form":"structural absence held as labelled empty form","numerical_zero_as_physical_quantity_admitted":False},"all_result_classes_required":True,"registered_by":"Maria Smith","registration_date":"2026-07-29","status":"registered_sources_captured_post_registry_pending_engine"})
+ print("scaffolded",len(ORDER),"MECH packages")
+if __name__=="__main__":main()

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-CORROSION-PATH-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:125f8b5c322ba30b61e555d58aeb65df2c85467a148adb3d4af876d2a9e05af4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8d8b6509c0a6070c74f035847bc67a3855a85e615a06c6e1f6844df33a6b204f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:24e6d0b3dc8c59616107596594b73cb5d6c33b89b7c1a503c723a4820f78e2b3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ee186f58255e98a99aac0694b07bbf3970a7303b6c65fd829e889583cab73bbb"
+    }
+  ]
+}

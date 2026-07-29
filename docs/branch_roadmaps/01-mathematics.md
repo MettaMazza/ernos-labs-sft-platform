@@ -29,6 +29,30 @@ only when the proposed claim separately satisfies the complete engine protocol.
 
 ## Layer Two — complete field reconstruction
 
+The complete-field census is now frozen at **323 obligations** under identity
+`sha256:10e2399fbecd99ae9106436660edbc8c0f84fad6b9dde75139099d202d58c36c`.
+The preserved 27 laws plus the complete 18-law Arithmetic and Number Structure,
+10-law Algebraic Extension, 12-law Combinatorics, 14-law Graph, Network and
+Matroid, 14-law Linear, Multilinear and Tensor, 16-law Algebraic Structures and
+12-law Order, Lattice and Domain, 16-law Geometry, 14-law Topology, 12-law
+Calculus Correspondence, 16-law Analysis Correspondence, 12-law Equation
+Structures, 10-law Measure and Integration, 16-law Probability and Statistics
+16-law Optimization and Operations Research, 12-law Dynamical Systems,
+16-law Logic and Foundations, 12-law Category, Type and Compositional
+Structures, 12-law Numerical Mathematics and 10-law Symbolic and Constructive
+Mathematics and 8-law Cross-disciplinary Mathematical Interfaces families
+and 12-law Validation and Grand Lock plus 6-law Handoff families close
+**323/323 = 100.0%** of that denominator; no frozen obligation remains open.
+`ARITH-001--018`, `ALEXT-001--010`, `COMB-001--012`, `GRAPH-001--014` and
+`LINEAR-001--014`, `ALG-001--016`, `ORDER-001--012`, `GEOM-001--016` and
+`TOPO-001--014`, `CALC-001--012`, `ANAL-001--016`, `EQN-001--012` and
+`MEAS-001--010`, `PROB-001--016`, `OPT-001--016`, `DYN-001--012` and
+Every family through `HAND-001--006` is admitted and exact-replayed in full.
+The branch is complete to the frozen dated census and remains open to lawful
+versioned extension. A family
+percentage increases only after every member has its own untouched-engine
+receipt.
+
 The field census expands through these families:
 
 - arithmetic, divisibility, fractions, recurrence, sequences and exact number
@@ -78,6 +102,22 @@ a question in the field census, assigned a categorical owner and given a lawful
 finite or successor boundary.  Unsupported continuum or infinity statements
 must be translated to generated finite families, exact enclosures or remain
 open with the missing certificate named.
+
+## Prior-corpus famous-boundary reconciliation
+
+The complete atomic V1/V2 audit establishes seven exact obligations across the
+Riemann mirror, Collatz, Goldbach, twin primes, continuum/infinity/CH, the
+prime-orbit/Artin synthesis and floored-fluid regularity.  They are closed at
+the strongest boundary actually carried by the prior derivations and execution
+record.  The current claims retain exact finite censuses, depth-independent
+native laws and explicit conventional-translation boundaries without turning
+them into unsupported unrestricted theorems.
+
+The family certificate is
+[`audits/MATHEMATICS_FAMOUS_BOUNDARIES_FAMILY_COMPLETION_2026-07-28.json`](../../audits/MATHEMATICS_FAMOUS_BOUNDARIES_FAMILY_COMPLETION_2026-07-28.json).
+
+The content-level ledger is
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
 
 ## Publication sequence
 

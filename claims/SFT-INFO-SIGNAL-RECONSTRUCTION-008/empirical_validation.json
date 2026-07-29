@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-SIGNAL-RECONSTRUCTION-008",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-FINITE-SIGNAL-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:64884579fd537c86708189322398e10e679dc0769fd7d05971ea949cd07ee603",
+  "falsification_condition": "Reject if the value-free registry, complete signal census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:adbee7f9bf047e761e6a0337bad13d4db11ec10f6104149d4801f981930f9559",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:27bf7c948a36440b632147930396bb951b23be9ad6216fbd88ca46d6ad4b6f78",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-SIGNAL-008-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ce726b3ec79eb84b6cda6572e5b7428c112aad7223a85669ca1b1948ea6e49bb",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:65cf48e8789755fd21215a5de0949e61ee520e59e1ec7b5255fc164d3f00d84b",
+    "prediction_seal_hash": "sha256:f3e75b52c6a65188eef1483da2abae4399501c94efbaaea7cdf7c0bba4760ef9",
+    "program_hash": "sha256:0ef4cb6b909c77183aa045bc9b05b823bb3648af27b525a9965f0cebca903ba1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4a930a6711c884a40be6cf93dcd4aa0e36a79f267e710fcbe16dc521adf9c2c5",
+    "target_material_present": false,
+    "trace_hash": "sha256:1de6d539142dadd2fd338c00a7fc41c161be988459b4dc094690a2c31cab1f51"
+  },
+  "measurement_receipt_hash": "sha256:83cc17a457ca5927aad6643a4b2cd17370274956a0dd40ec170a753d60eb5140",
+  "measurements": [
+    "SIGNAL-008: reconstruction",
+    "exact observation: {\"samples\":4,\"source_rows\":4,\"unique_reconstruction\":true}",
+    "complete family observation custody: 14 records; all rows preserved",
+    "complete finite position, amplitude, sample, alias, quantization, reconstruction, transform and provenance enumeration supplies the observation; no imported continuum theorem, hidden predecessor or fitted threshold enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5533a18ec78994e75066e895f3db49ef68fd9fcaf5d549c3f87a5009b6d848d7",
+    "custodian_id": "SFT-EXP-INFO-SIGNAL-008-V1-custodian",
+    "experiment_registration_hash": "sha256:64884579fd537c86708189322398e10e679dc0769fd7d05971ea949cd07ee603",
+    "prediction_seal_hash": "sha256:f3e75b52c6a65188eef1483da2abae4399501c94efbaaea7cdf7c0bba4760ef9",
+    "registered_target_identity_hash": "sha256:4a930a6711c884a40be6cf93dcd4aa0e36a79f267e710fcbe16dc521adf9c2c5",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4fccc2e0463e4d8cf018b0b6f2fa40a3d0d95cf3d9fed031d00600204e991ee0"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:3e69b9ec631539b6cf3cd72530c1add653a247dd154010fbb4f10a7c23e7cd97"
+}

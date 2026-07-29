@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-MOIRE-SUPERSTRUCTURE-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:22bdb96721ed1f633b308940b75dfc562195703b1333cd16f5f84ee9b4bb62b6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f7b766e96a109bf546efabee55cfc610e873426f12160fce5e07181601d2038f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8087b4f2e0cabb3da4aac96c5cd3097dd25562e377514b588dd2a35246ad8d2a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bda0e8e7c3fc8f9180b0db284611e4c3223b321d8dfeea5cb48dfeb249719815"
+    }
+  ]
+}

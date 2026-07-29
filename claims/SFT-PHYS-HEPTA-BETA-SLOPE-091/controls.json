@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-HEPTA-BETA-SLOPE-091",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:59668e1a8836b68942e73812945d05e8ccb1c88fdd69f9d7cd6090318eb1283b"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:cefc9e4ab171f4d58ca559432dc3a4275f1867dc53c43589840b5c0df8b53ccf"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d8ff54f2acceebd518bfc93895e3ff68db2ce8359c8b5a8412f7bec3c1f8083b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:802664a10d97cabbfd570646d032224daf5bf21b9c3bc798f6160cac1dfde56b"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-SHOCK-FATIGUE-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c2c7a1a4642d7f2db5e64260045aa35a8101a9bcfd061f9a4741761cb220807e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:11ecb5f2e47c4d87c725e3316d1f81a7f601df68af3b87ef4130d058f4332e3d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7bc8f5dbb5e2824dc654d8b06fd7f9558df0d05c73c98a833355d2f5e0370885"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d2c63d9e3d930ff2b3b7149104fe753a1e7e96faf122d63ce96b5727dc8353dc"
+    }
+  ]
+}

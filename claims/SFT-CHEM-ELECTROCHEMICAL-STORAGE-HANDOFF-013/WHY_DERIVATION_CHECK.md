@@ -1,0 +1,3 @@
+# Why ECHEM-013 requires a derivation check
+
+A conventional battery or device classification cannot establish a branch-ownership law. This claim generates all 256 ownership/handoff forms before claim-specific comparison, requires one owner for every coordinate and halts on duplicated ownership. The external stage binds three already admitted branch certificates, two explicit handoff edges and the complete inherited 97,292-byte NIST Materials source. Its development-observed source status is disclosed; it is never relabelled blind. No device outcome, measured performance or application selects the native Fold law.

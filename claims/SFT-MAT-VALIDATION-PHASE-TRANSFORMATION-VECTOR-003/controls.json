@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-PHASE-TRANSFORMATION-VECTOR-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2ed1b33eddd9ac5a974509dfb7968799ee79ac4aefc878abb1908f57e9332e68"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:53ad6286b369516288673febfeba3a94eda4d1f65d1c468f3f642ac25d8204e6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2e8116a65800a204c8b2a575f0b282d90fc286a4d7c050189f27157e651b8f8b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9b21a1015ac5441d6533d0c1d4497a86bcba6df90bbc5382497690b6c8dbe1c8"
+    }
+  ]
+}

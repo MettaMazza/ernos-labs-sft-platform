@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-THERMOELECTRIC-BOUNDARY-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b079c5d84c7eef2c781eb7211ffdc14db67273a0c5143217c87a5c7cbfbde054"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:accc4307c4e207d42db41d3489261af92d877181e2f41430a50fb6515356840e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e05531e8a51d7f08b498e0ce350406eddb184865597e8744830b4ddae277a4af"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8b205d7e5cbb930c28a70a5071cd862a9e077cb63a061835a3d956bd64b89822"
+    }
+  ]
+}

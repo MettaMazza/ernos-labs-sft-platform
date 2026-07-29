@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SOFT-MEMBRANE-THIN-FILM-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5d94d8fe2a26ec7979e2485c346813e013315b9733811bfe270e532155e6a29d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a230fbfcfb9c4c9bd8e3051bd1f9d15110cc5ca0f150fbe0c251e1921c372f4d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cb31cecce06f562f831c272bc525bf26ec7cdfc4d793df123d930c74625d7754"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:3d46dd367a6cb28c569f05bd97455cb4de0456c07d0fb3a67f1136ae99959253"
+    }
+  ]
+}

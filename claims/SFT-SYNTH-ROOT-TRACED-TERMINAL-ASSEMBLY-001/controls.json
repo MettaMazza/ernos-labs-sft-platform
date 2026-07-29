@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-ROOT-TRACED-TERMINAL-ASSEMBLY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5fb1ae415af5f8ab771bcaf455c6d1699e9accb82bdf8a2bf0f91d12bb023571"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2b7bc450bb96dcc6677244073213d9692959cf0638ccdccb8217f5946c6b1095"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a7e45c04bf0cdad8b17439984e8fe50396da398ae3de739acfd0cb3d7ee5373d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4b663d6ba09bc5a74543e5d7fb3bcc9330932ed26a39b52a602c15952e415ec2"
+    }
+  ]
+}

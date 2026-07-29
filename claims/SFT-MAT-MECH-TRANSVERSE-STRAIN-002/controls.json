@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-TRANSVERSE-STRAIN-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e73d6aaa9a2f32f924fb0d0a19355b14623c29f69da3f30791f030bd918786df"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b6d4cfed63bfa8d08680939b4e143883d78a75f72076b2276b673824b7b46364"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:576bd096bca7768e942325b0c0b0e8eff6238d5eaedd8fb44d24d25682476660"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8bc014e6b85edf467cd41dd20432292e88074dba58b7e06f0992c6d01407649f"
+    }
+  ]
+}

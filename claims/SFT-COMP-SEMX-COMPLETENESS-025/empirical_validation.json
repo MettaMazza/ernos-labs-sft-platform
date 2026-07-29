@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-SEMX-COMPLETENESS-025",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+    "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:44bbf95f7461dbe318e240c8b7b63cb54624531439f166100c815e71e0e7da23",
+  "falsification_condition": "Reject if the value-free registry, complete syntax, scope ledger, semantic trace, judgment, proof, translation boundary, source identity, survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b6f273626ba7339a8e0e7027aa840d20a0ab5c9d52ef55b0559efb171e2b1b53",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:6ed622e8d4a193947108c4e15c44fcf1e76d2adaadeee4c87e613dbdcdc5c5b2",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-SEMX-025-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:133cda02918bd41fd0263e8cf7dc84de74e7f6ee862fb04bf5c7382e05dd9580",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b1fb64180493d63468c6ce76b08ffba6ebb6748f995c9b233881ea3349830f7c",
+    "prediction_seal_hash": "sha256:2b6ffa30305b95e9782d87d943cbe2023fa4c5924fb3b8c9e658b14a8b36d1f7",
+    "program_hash": "sha256:8c52219af23027c204e806aa1b4cd0d03b5ea0456d9002b09f36feebdba4d216",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:236e4a82423298f8d48865982eca1ddabaafb427c811448809ecfda83e385cd4",
+    "target_material_present": false,
+    "trace_hash": "sha256:ef74b28fdc8e59595f2c48c59bffc2adab3b534ed5d66b39729f7a2b0bf63e2d"
+  },
+  "measurement_receipt_hash": "sha256:d50cdfa3dc66f374c3e7dde039ffba15bd311a166ae10a34632b10daa19c4efd",
+  "measurements": [
+    "SEMX-025: semantics_completeness",
+    "exact execution: {\"duplicate_owners\":0,\"independent_execution_rows\":25,\"omitted_owners\":0,\"registered_obligations\":25}",
+    "complete family observation custody: 25 records; all rows preserved",
+    "complete generated execution supplies the observation; no imported theorem answer, hidden branch or target-selected survivor enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:414273f81a0e7873c7963b12d08d3fb4fc74e0fae3fda2dc8f5fc5d0c21b2121",
+    "custodian_id": "SFT-EXP-COMP-SEMX-025-V1-custodian",
+    "experiment_registration_hash": "sha256:44bbf95f7461dbe318e240c8b7b63cb54624531439f166100c815e71e0e7da23",
+    "prediction_seal_hash": "sha256:2b6ffa30305b95e9782d87d943cbe2023fa4c5924fb3b8c9e658b14a8b36d1f7",
+    "registered_target_identity_hash": "sha256:236e4a82423298f8d48865982eca1ddabaafb427c811448809ecfda83e385cd4",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:295da1e60e3bb8b9a303e1509df8e13f0f5e4c8c4f4971f3537962f7156876db"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7fec01187f28765a219fd1960dd915e7139a709eec74fa7ca62f50992909e603"
+}

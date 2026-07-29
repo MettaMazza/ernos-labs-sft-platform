@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-PHONON-MEAN-PATH-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:28c9d1ba3ca1823ff7b48fef026142609714ec24f22aa06f6d758686acf7a556"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:361cbc325c31bdc9dc5ea86acdff3b1d28782db73167fa6a5ecf4fe04b839fe1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1042aa67b0490841ce8da2b6bbece7ad678a043c5fb669f81335e0d682f6cd9a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:17c33769ca0727f63be62395f67da882153a36c3eae83393e618599c0e02d020"
+    }
+  ]
+}

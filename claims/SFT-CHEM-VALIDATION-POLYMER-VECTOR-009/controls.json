@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-POLYMER-VECTOR-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5b7ca2ee698b44de9e2a5b68e1baa96074f15821315d9968c250fee29acc0b6d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:44d143ae4620b556d8d04effc8358101636c811d96eb32811fa07cefdd8115a6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:39ebbb58d2377b4fef765b584a4728070ad02bc699e3832264c87019d3e9cfd4"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:aabf93e3a768890194c34cd5b8164be31159269e45d8e18a05e2b12b6d342890"
+    }
+  ]
+}

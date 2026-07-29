@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-SOMATIC-GERMLINE-ORBIT-SPLIT-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:dc393a542147c5b60d05633dd5cdadc90537fa58a278679eef1fba5cea69bde2"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c4ce459b86dc997c9c06ee7a1af431702955ac719490dd7f09d65f2c6cbe27e8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e8786a21a01dca4ef0e0def96c205f4febadc0297c16f36c4b71d42e9269bd53"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:708144f268ea5c8e9bb9525e4c2166d581979fa82eb0306f81de3e4bf82e1629"
+    }
+  ]
+}

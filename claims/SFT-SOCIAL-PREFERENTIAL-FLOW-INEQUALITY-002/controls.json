@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SOCIAL-PREFERENTIAL-FLOW-INEQUALITY-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f6318fcd6623eb092601cb0f3c07c4eae70282fe05d8f2b314d78ce19dd770eb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:951da4819f0038ef58e0be0d26e1a17ca8def8c3381b0ac6884d793b712602b3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:87d15f4e7a682e492e93b1e5054f334b236ecdfeea859159d1d623839811295d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:21e3ac2c3221d033199039d8370a64437c5454e07c6a9cd5589f983bd6f8ba69"
+    }
+  ]
+}

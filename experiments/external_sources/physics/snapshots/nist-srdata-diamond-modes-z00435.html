@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NIST Structural Ceramics Database(SCD) Database - NIST Ceramics Data Portal</title>
+    <link href="/CeramicDataPortal/Content/css?v=k2-0e-kZG8Ih0ACtOKeVQFBC2G4gbwY3AFlsPgTtIYU1" rel="stylesheet"/>
+
+    <script src="/CeramicDataPortal/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/CeramicDataPortal/Content/Custom.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/CeramicDataPortal/Content/generic-nist-exit-script.css" /> 
+    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+    <meta http-equiv="Content-Security-Policy"
+          content="
+        default-src 'self' https://pages.nist.gov;
+        style-src 'self' https://pages.nist.gov 'unsafe-inline';
+        img-src 'self' data: https://pages.nist.gov;
+          frame-ancestors 'self';
+      ">
+</head>
+<body>
+      <usa-banner></usa-banner>
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin:0px;">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="container">
+                    <a href="http://www.nist.gov">
+                        <img src="/CeramicDataPortal/images/nistlogo.jpg" class="img-responsive" alt="NIST Logo">
+                    </a>
+                </div>
+                <div class="container">
+                    <a href="/CeramicDataPortal/">
+                        <img src="/CeramicDataPortal/images/webbook.gif" class="img-rounded img-responsive" alt="Webbook Logo">
+                    </a>
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                            <a href="/CeramicDataPortal/">
+                                <i class="glyphicon glyphicon-home"></i>
+                                <span class="sr-only">Home</span>
+                            </a>
+                        </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">High Temp. Superconductors<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/CeramicDataPortal/hit" title="High Temp. Superconductors (HTS) Database">Search</a></li> 
+                            <li><a href="/CeramicDataPortal/Manual/HtsHelper" title="User Manual">User Manual</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Structural Ceramics<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/CeramicDataPortal/scd" title="Structural Ceramics Database">Search</a></li>
+                            <li><a href="/CeramicDataPortal/manual" title="User Manual">User Manual</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Property Data Summaries<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/CeramicDataPortal/pds" title="Property Data Summaries">Studies</a></li>
+                            <li><a href="/CeramicDataPortal/Manual/PdsHelper" title="User Manual">User Manual</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Material Properties <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/CeramicDataPortal/elasticity" title="Elastic Moduli Data for Polycrystalline Ceramics">Elastic Moduli</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/CeramicDataPortal/fracture" title="Fracture Toughness / Fracture Energy Data for Oxide Glasses">Fracture Toughness / Glass</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/CeramicDataPortal/ftmain" title="Fracture Toughness / Fracture Energy Data for Ceramics">Fracture Toughness / Ceramics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+
+        <div class="col-sm-12">
+            <!-- Modal -->
+            <div class="modal fade" id="scdDiscModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">DISCLAIMERS:</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>A substantial effort has been made to select data for this database on the basis of sound scientific judgment. However, the National Institute of Standards and Technology (NIST) makes no warranties regarding its use, and NIST shall not be liable for any damage that may result from errors or omissions in the database.</p>
+                            <p>Certain trade names and other commercial designations are used in this work for the purpose of clarity. In no case does such identification imply endorsement by the National Institute of Standards and Technology, nor does it imply that products or services so identified are necessarily the best available for the purpose. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>  <!-- End of Modal content-->
+                </div>
+            </div>
+
+            <div class="modal fade" id="scdDataEvaModal" role="dialog" aria-labelledby="dataEvaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <h4 class="modal-title" id="dataEvaModalLabel">DATA EVALUATION:</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>How are data evaluated?</p>
+                            <p>Scientific and technical data may be examined from three viewpoints:</p>
+                            <ul class="list-group">
+                                <li class="list-group-item"> how well is the data generation described,</li>
+                                <li class="list-group-item"> how do the data follow the known physical laws,</li>
+                                <li class="list-group-item"> and how do the data compare to other measurements or calculations of the same phenomena.</li>
+                            </ul>
+                            <p>The description of data generation is crucial. The identification and control of all relevant independent variables must be addressed and demonstrated. For mature areas such as thermodynamics and atomic physics, many measurement techniques are well characterized. In these cases, the adherence to physical laws and intercomparisons predominate. For areas in which behavior is not well understood, such as corrosion, data from different experiments are not usually comparable. Consequently, documentation of control of the experimental condition is most important.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="contactModal" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <h4 class="modal-title" id="contactModalLabel">CONTACT:</h4>
+                        </div>
+                        <div class="modal-body">
+                            <address>
+                                <strong>Technical inquiries:</strong><br />
+                                Ceramics Division<br />
+                                NIST, 100 Bureau Drive, Stop 8520, Gaithersburg, MD 20899-8520<br />
+                                <abbr title="Phone">Phone: (301) 975-6119</abbr><br />
+                                <abbr title="Fax">Fax: (301) 975-5334</abbr>
+                            </address>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div><button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactModal">Contact Information</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Modal for Introduction -->
+            <div class="modal fade" id="scdIntroModal" role="dialog" aria-labelledby="introModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <h4 class="modal-title" id="introModalLabel">INTRODUCTION:</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>The NIST WWW Structural Ceramics Database (WebSCD) provides evaluated materials property data for a wide range of advanced ceramics known variously as structural ceramics, engineering ceramics, and fine ceramics. These materials tend to have low mass densities and high strengths and tend to be resistant to corrosion. These characteristics form the basis for applications of these materials in high-temperature, energy-efficient heat exchangers, advanced engine designs, bearings, wear resistant parts, and stable electronic substrates and electronic packaging.</p>
+                            <p>The range of materials covers the major series of compounds derived from the ceramic oxide, carbide, nitride, boride, and oxynitride chemical families. The materials are described by specification and characterization information that includes processing details and chemical compositions. Physical characteristics such as density and crystal structure are given in numeric tables. All measured values are evaluated and supported by descriptions of the measurement methods, procedures, and conditions. In all cases, the sources of the data are fully documented in a detailed bibliography.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+    </div>
+           </div>
+
+	<div class="modal fade" id="citGuideScdModal" role="dialog" aria-labelledby="ackModalLabHts" aria-hidden="true">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                            <h4 class="modal-title" id="ackModalLabScd">Citation Guide:</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>A Guide to the proper citation of data from this site</p>
+			    <br/>
+			    <p>NIST Structural Ceramics Database (SCD) Database, NIST Standard Reference Database Number 30, , National Institute of Standards and Technology, Gaithersburg MD, 20899 (2015), doi:<a href="http://dx.doi.org/10.18434/T4F30D">10.18434/T4F30D</a>, (retrieved [date of access]).
+			    </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+              
+     
+            <div class="row row-centered">
+                <div class="col-sm-2">
+
+                    <a href="/CeramicDataPortal/scd">
+                        <img src="/CeramicDataPortal/images/scd.gif" class="img-rounded img-responsive" alt="SCD Logo">
+                    </a>
+                </div>
+                <div class="col-sm-10">
+                    <h3 class="text-center">NIST Structural Ceramics Database (SCD) Database</h3>
+                    <p class="text-center text-danger">NIST Standard Reference Database 30</p>
+		     <p class="text-center"><strong>Last Update to Data Content:&nbsp;</strong>2002</p>
+		 <p class="text-center"><strong>DOI:&nbsp;</strong><a href="http://dx.doi.org/10.18434/T4F30D" target="_blank">http://dx.doi.org/10.18434/T4F30D</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="breadcrom">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#scdIntroModal">Introduction</button></li>
+                            <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#scdDataEvaModal">Data Evaluation</button></li>
+                            <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#scdDiscModal">Disclaimer</button></li>
+			        <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#citGuideScdModal">Citation Guide</button></li>
+                        </ul>
+                    </nav>
+
+
+                    
+
+<hr />
+<strong>SCD Citation Number: </strong>Z00435<br />
+<h4>Bibliographic Information</h4>
+
+<strong>Reference: </strong>
+<blockquote>
+    "Ultrasonic Phase Velocity and Elastic Modulus in Isotopically Enhanced Manufactured Diamonds," D.C. Hurley, R.S. Gilmore, and W.F. Banholzer, <em>Journal of Applied Physics</em>, Vol. 76 [12], pp. 7726-7730 (1994), published by American Institute of Physics.
+</blockquote>
+<strong>Language: </strong>English
+<br />
+<hr />
+<h4>General Materials Processing Notes</h4>
+<blockquote>
+    The authors cite T.R. Anthony, et al., Diamond and Relat. Mater., Vol. 1, 717 (1992), and summarize the procedure as follows.  "Nine single-crystal diamonds, manufactured by high-pressure, temperature-gradient methods, were used in these experiments.  Isotope composition ranged from nominally 0% to 99% <sup>13</sup>C... The &#60;111&#62;-oriented samples were reasonably thick (1mm - 2 mm), with a typically cross-sectional area of 6 x 6 mm<sup>2</sup> and a mass of 0.1 g - 0.2 g.  The &#60;100&#62;-oriented samples were thinner (0.3 mm - 0.7 mm) and smaller, with typical dimensions 4 x 4 mm<sup>2</sup>.  After manufacture, the diamonds were cut and polished to optical-quality finish by a professional jeweler."
+</blockquote>
+<hr />
+<h4>Measurement Methods</h4>
+<strong>Ultrasonic method</strong><br />
+<blockquote>
+    The authors cite E.P. Papadakis, J. Acoust. Soc. Am., Vol. 42, 1045 (1967), and summarize the procedure as follows.  "The acoustic phase velocities were measured using a broadband pulse-echo technique derived from the pulse-echo overlap method.  Our measurements were performed using a fast digital oscilloscope and a commercial ultrasonic pulser/receiver.  Two different transducers were used:  one generated L waves with a center frequency of 100 MHz and a nominal bandwidth of &#177;50 MHz, while the other generated 20 MHz linearly polarized T waves with a bandwidth of approximately &#177;10 MHz.  An integral part of each transducer was a 0.5 in. quartz buffer rod that served to separate in time the multiple ultrasonic pulses.  The diamond samples were placed directly in contact with the buffer rod using glycerin (L transducer) or honey (T transducer) to assure good acoustic coupling.  Using this experimental setup, ultrasonic pulse-echo wave forms were captured with the oscilloscope.  The round-trip travel time was determined from the time between like phases for several echoes in the wave form.  Signal averaging and the use of several (5-10) echoes made an experimental repeatability of &#177;1 ns possible.  The transit times were then divided into twice the sample thickness to determine the longitudinal and transverse velocities.  Thicknesses were obtained by measuring the samples repeatedly using a digital micrometer with an accuracy of &#177;2 &#181;m"
+</blockquote>
+
+<hr />
+<h4>Index of Materials and Properties</h4>
+<div class="container">
+    <h5>Material Number 1: C</h5> <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#M1P1">Material</a></li>
+        <li><a data-toggle="tab" href="#M1P2">Elasticity Tensor</a></li>
+        <li><a data-toggle="tab" href="#M1P3">Sound Velocity</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+        <div id="M1P1" class="tab-pane fade in active">
+            <h4>Material Specification and Properties for C</h4>Material number 1 of 1<br />
+            in SCD Citation Number: Z00435<br />
+            <strong>Chemical Class:</strong> Elemental Solid<br /><strong>Chemical Family:</strong> C<br /><strong>Formula:</strong> C<br /><strong>Informal Name:</strong> diamond<br /><strong>Structure Type:</strong> Single Crystal<br /><strong>Manufacturer:</strong> GE Superabrasives<br /><strong>Process:</strong> Crystal Growth<br />
+            <hr />
+        </div><div id="M1P2" class="tab-pane fade">
+            <h4>C</h4>
+            Material number 1 of 1<br />
+            in SCD Citation Number: Z00435<br />
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <caption>Elasticity Tensor</caption>
+                    <tr>
+                        <th>C(i,j)<br />&#160;<br />&#160; </th>
+                        <th>Density<br />&#160;<br />( g/cm<sup>3</sup> ) </th>
+                        <th>Atom Fraction<br />of (13)<sup>C</sup><br />( % ) </th>
+                        <th>C(i,j)<br />Value<br />( GPa ) </th>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.512</td>
+                        <td>0.002</td>
+                        <td>1093 &#177; 9</td>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.512</td>
+                        <td>0.1</td>
+                        <td>1088 &#177; 5</td>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.515</td>
+                        <td>1.1</td>
+                        <td>1098 &#177; 6</td>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.659</td>
+                        <td>50.0</td>
+                        <td>1105 &#177; 7</td>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.659</td>
+                        <td>50.0</td>
+                        <td>1092 &#177; 4</td>
+                    </tr>
+                    <tr>
+                        <td>C(1,1)</td>
+                        <td>3.803</td>
+                        <td>99.0</td>
+                        <td>1092 &#177; 6</td>
+                    </tr>
+                    <tr>
+                        <td>C(4,4)</td>
+                        <td>3.512</td>
+                        <td>0.002</td>
+                        <td>596 &#177; 5</td>
+                    </tr>
+                    <tr>
+                        <td>C(4,4)</td>
+                        <td>3.512</td>
+                        <td>0.1</td>
+                        <td>584 &#177; 3</td>
+                    </tr>
+                    <tr>
+                        <td>C(4,4)</td>
+                        <td>3.659</td>
+                        <td>50.0</td>
+                        <td>587 &#177; 4</td>
+                    </tr>
+                    <tr>
+                        <td>C(4,4)</td>
+                        <td>3.659</td>
+                        <td>50.0</td>
+                        <td>580 &#177; 3</td>
+                    </tr>
+                    <tr>
+                        <td>C(4,4)</td>
+                        <td>3.803</td>
+                        <td>99.0</td>
+                        <td>584 &#177; 3</td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <strong>Measurement Method: </strong>Ultrasonic method<br />
+            <strong>Evaluation Status: </strong>Evaluated by acceptance criteria
+            <br />
+            <hr />
+        </div><div id="M1P3" class="tab-pane fade">
+            <h4>C</h4>
+            Material number 1 of 1<br />
+            in SCD Citation Number: Z00435<br />
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <caption>Sound Velocity</caption>
+                    <tr>
+                        <th>Crystal<br />Direction<br />&#160; </th>
+                        <th>Mode<br />&#160;<br />&#160; </th>
+                        <th>Atom Fraction<br />of (13)<sup>C</sup><br />( % ) </th>
+                        <th>Sound<br />Velocity<br />( km/s ) </th>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>0.002</td>
+                        <td>17.64 &#177; 0.11</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>0.1</td>
+                        <td>17.60 &#177; 0.06</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>1.1</td>
+                        <td>17.68 &#177; 0.07</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>50.0</td>
+                        <td>17.38 &#177; 0.08</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>50.0</td>
+                        <td>17.27 &#177; 0.05</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Longitudinal</td>
+                        <td>99.0</td>
+                        <td>16.94 &#177; 0.06</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Transverse</td>
+                        <td>0.002</td>
+                        <td>13.03 &#177; 0.08</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Transverse</td>
+                        <td>0.1</td>
+                        <td>12.90 &#177; 0.04</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Transverse</td>
+                        <td>50.0</td>
+                        <td>12.66 &#177; 0.06</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Transverse</td>
+                        <td>50.0</td>
+                        <td>12.59 &#177; 0.04</td>
+                    </tr>
+                    <tr>
+                        <td><sub>100</sub></td>
+                        <td>Transverse</td>
+                        <td>99.0</td>
+                        <td>12.39 &#177; 0.04</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Longitudinal</td>
+                        <td>0.0</td>
+                        <td>18.59 &#177; 0.02</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Longitudinal</td>
+                        <td>1.1</td>
+                        <td>18.61 &#177; 0.02</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Longitudinal</td>
+                        <td>99.0</td>
+                        <td>18.65 &#177; 0.04</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 1</td>
+                        <td>0.0</td>
+                        <td>12.31 &#177; 0.02</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 1</td>
+                        <td>1.1</td>
+                        <td>12.27 &#177; 0.01</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 1</td>
+                        <td>99.0</td>
+                        <td>12.13 &#177; 0.02</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 2</td>
+                        <td>0.0</td>
+                        <td>12.00 &#177; 0.02</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 2</td>
+                        <td>1.1</td>
+                        <td>11.94 &#177; 0.01</td>
+                    </tr>
+                    <tr>
+                        <td><sub>111</sub></td>
+                        <td>Transverse, 2</td>
+                        <td>99.0</td>
+                        <td>12.03 &#177; 0.02</td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <strong>Measurement Method: </strong>Ultrasonic method<br />
+            <strong>Evaluation Status: </strong>Evaluated by acceptance criteria
+            <br />
+
+            
+
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <p />
+        <div class="content container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <a href="" class="go_back">
+                            <img src="/CeramicDataPortal/images/go-back-icon.png" class="img-rounded img-responsive" alt="Go back icon" title="Go back">
+                        </a>
+                    </div>
+                    <hr />
+                    <p>All contents &copy; 2026 by the <a href="http://www.commerce.gov/" target="_blank">U. S. Department of Commerce</a> on behalf of the United States of America. All rights reserved.</p>
+                </div> <!--col-sm-12-->
+
+                <div class-"col-sm-12">
+                    Date created: June 1, 2015  |  Last updated: June 22, 2015   Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e387829782a38d8a9097cd848c95">[email&#160;protected]</a>
+                </div>
+            </div> <!--row-->
+        </div> <!--content container-->
+    </footer>
+    <!--javascript-->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/CeramicDataPortal/bundles/jquery?v=ywRv5tGf_C8UyV9Nh0RJf-e9u4Rh_SmIN-qx3i-kH8Y1"></script>
+
+    <script src="/CeramicDataPortal/bundles/bootstrap?v=XgT8av2qmQqLLwWGjyDZDLuXf0LqRYzchP-RN7r4fCI1"></script>
+
+    <script src="/CeramicDataPortal/Scripts/federated-analytics.all.min.js?agency=NIST&amp;subagency=srdata&amp;pua=UA-37115410-6&amp;yt=true" id="_fed_an_js_tag"></script>
+             <script src="/CeramicDataPortal/Scripts/usa-banner.js" type="module" crossorigin="anonymous"></script>
+    
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3MW4237XQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q3MW4237XQ');
+</script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('.go_back').click(function (e) {
+                e.preventDefault();
+                history.go(-1);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a226c6ebddb688cb',t:'MTc4NTI3MjA0NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

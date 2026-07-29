@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-MOBILITY-CONCENTRATION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1945318327b6618b459e9012b06a53c88b1c979283bcd07d9a1b553140dde9fb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:274224a4d5504e65f31a89db9c9367d40d294abfacbf3024009f154c009bccd9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0a47d5168c028af1115364f51e1f8634d745e1e7fe53c86a5b656d5c5f0f36e3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5d10fbd8acfb3082d6b0d5e802cc519ea0c766e4645a3841815d9ee7cbe2c336"
+    }
+  ]
+}

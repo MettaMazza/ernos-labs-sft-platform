@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-PHASE-STORAGE-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:855455ea96496ca275000dd6eeeeee7e696123981be39138ff7fd241b95651be"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:34b3071c5757fc60d7c2bd02344fd9ddcc3c284298453cb4579a3a24f3ac0f46"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ad6d3818ee46e1d15bf3633d6924e33f97bd046d88d1819d027330aa92b6c6bd"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:54a7308fd86bd533d1c7ba620c7e76ae8fef49bdeddaf62b063d0be8b2773519"
+    }
+  ]
+}

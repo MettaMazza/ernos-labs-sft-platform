@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="J8NS9ovmoW008wnQgOwmWAEpStcht69G4ZhpIiMj">
+
+    <!-- Description (per-page override via section 'meta_description' or injected variable `$meta_description`) -->
+    <meta name="description" content="The LIPID MAPS® Structure Database (LMSD) is a relational database encompassing structures and annotations of biologically relevant lipids. As of today, LMSD co...">
+    <title>LIPID MAPS</title>
+     
+    <!-- Flavicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.lipidmaps.org/assets/images/flavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.lipidmaps.org/assets/images/flavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.lipidmaps.org/assets/images/flavicon/favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="preload" as="style" href="https://www.lipidmaps.org/build/assets/app-Bv-zvoHc.css" /><link rel="stylesheet" href="https://www.lipidmaps.org/build/assets/app-Bv-zvoHc.css" data-navigate-track="reload" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0G925F2V7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K0G925F2V7');
+    </script>
+
+    <!-- Optional meta tags -->
+     </head>
+<body class="lmsd overview">
+    <div id="app" class="min-h-screen flex flex-col">
+        
+        <nav class="flex flex-col md:flex-row position-relative items-center justify-between bg-theme3 px-4 lg:flex-row lg:flex-no-wrap text-white">
+    <div class="w-full flex justify-between md:w-auto">
+        <!-- Nav Logo -->
+        <a class="inline-block py-2 mr-2 whitespace-no-wrap text-white hover:text-white hover:no-underline" href="/">
+    <img src="https://www.lipidmaps.org/assets/images/logos/lipid_maps_transparent_sm.png" width="60" class="inline-block align-top" alt="LIPID MAPS® logo">
+            <span class="hidden lg:inline pl-2 hover:underline" style="font-size:1.6rem;">
+                LIPID MAPS®
+            </span>
+</a>
+
+        <!-- Nav Toggler -->
+        <button class="lm-menu-toggle block md:hidden" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lm-menu-toggle material-icons">menu</span>
+        </button>
+    </div>
+
+    <div class="lm-menu-div hidden md:block">
+        <!-- Nav Menu -->
+    <div class="flex flex-col items-center flex-grow md:flex-row">
+    <ul class="flex flex-col w-full pl-0 mb-0 list-none md:flex-row md:w-auto md:ml-auto">
+    <!-- Databases -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="/databases-dropdown" aria-haspopup="true" aria-expanded="false">
+        Databases
+    </button>
+                <div id="/databases-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/lmsd/overview">LMSD</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/lmpd/overview">LMPD</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/comp_db/overview">COMP_DB</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/lmissd/overview">LMISSD</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/ion_mobility/overview">Ion Mobility</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/partial_db/overview">Partial Spectra DB</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/standardspectraDB/overview">Standards Spectra DB</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/oxidizedphospholipidDB/overview">Oxidized Phospholipid DB</a>
+                                                    <hr class="dropdown-divider">
+                                                                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/shorthand/overview">Shorthand DB</a>
+        </div>
+    </li>
+
+            <!-- Pathways -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="/resources/reactions-dropdown" aria-haspopup="true" aria-expanded="false">
+        Pathways
+    </button>
+                <div id="/resources/reactions-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/reactions">Reactions Explorer</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/pathways">LIPID MAPS® Pathways</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/sphingomap">SphinGOMAP©</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/external">Cayman Pathway Maps</a>
+        </div>
+    </li>
+            
+            <!-- Tools -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="/resources/tools/index.php-dropdown" aria-haspopup="true" aria-expanded="false">
+        Tools
+    </button>
+                <div id="/resources/tools/index.php-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="/resources/tools?page=flow_chart"><div class="flex flex-col items-center"><div>Lipidomics</div><div>Tool Guide</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/tools/ms">MS Analysis</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/tools/structure"><div class="flex flex-col items-center"><div>Structure</div><div>Drawing</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/tools/stats"><div class="flex flex-col items-center"><div>Statistical</div><div>Analysis</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/tools/nomenclature"><div class="flex flex-col items-center"><div>Nomenclature</div><div>Tools</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/tools/lm_software"><div class="flex flex-col items-center"><div>Lipid Analysis</div><div>Software</div></div></a>
+        </div>
+    </li>
+
+            <!-- Education -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="nav-education-dropdown" aria-haspopup="true" aria-expanded="false">
+        Education
+    </button>
+                <div id="nav-education-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/webinars">Webinars</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/podcasts">Podcasts</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/tutorials">Tutorials</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/resources">Resources</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/classification">Classification</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="/lipid_nomenclature">Nomenclature</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/structure">Structure</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/lm_protocols"><div class="flex flex-col items-center"><div>Methods and</div><div>Protocols</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/education/training-school"><div class="flex flex-col items-center"><div>Training</div><div>School</div></div></a>
+        </div>
+    </li>
+
+            <!-- Community -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="nav-community-dropdown" aria-haspopup="true" aria-expanded="false">
+        Community
+    </button>
+                <div id="nav-community-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/updates/lipidofthemonth"><div class="flex flex-col items-center"><div>Lipid of the</div><div>Month</div></div></a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/updates/lipidmatters"><div class="flex flex-col items-center"><div>Lipid Matters</div><div>Blog</div></div></a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/updates/highlights">Highlights</a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/lipid_web">LipidWeb</a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/updates/newsletters">Newsletters</a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/links"><div class="flex flex-col items-center"><div>External</div><div>Resources</div></div></a>
+                <hr class="dropdown-divider">
+                <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/updates/calendar"><div class="flex flex-col items-center"><div>Events Calendar</div></a>
+        </div>
+    </li>
+
+            
+            <!-- About -->
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="nav-about-dropdown" aria-haspopup="true" aria-expanded="false">
+        About
+    </button>
+                <div id="nav-about-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/information">About Us</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/partners"><div class="flex flex-col items-center"><div>About Our</div><div>Partners</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/sponsors"><div class="flex flex-col items-center"><div>About Our</div><div>Sponsors</div></div></a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/sponsorUs">Sponsor Us</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/contact">Contact Us</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/about/archive">Archive</a>
+        </div>
+    </li>
+
+            <li class="relative" style="z-index:100007">
+    <button type="button" class="block p-2 text-gray-300 hover:text-gray-300 hover:no-underline font-medium toggle-icon lm-dropdown-toggle" data-dropdown-target="nav-downloads-dropdown" aria-haspopup="true" aria-expanded="false">
+        Downloads
+    </button>
+                <div id="nav-downloads-dropdown" class="text-black bg-white border rounded z-10 opacity-0 transition-all duration-450 ease-out transform md:absolute md:right-0 md:w-max-content md:py-2">
+            <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/data">Experimental Data</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/rest">REST</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/resources/sparql">SPARQL</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/lmsd/download">LMSD</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/lmpd/download">LMPD</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/comp_db/download">COMP_DB</a>
+                    <hr class="dropdown-divider">
+                    <a class="text-black flex justify-center hover:text-grey-600 block py-1 px-1 md:py-1 md:px-6 hover:bg-gray-100" href="https://www.lipidmaps.org/databases/partial_db/download">PARTIAL_DB</a>
+        </div>
+    </li>
+</ul>
+        <search-bar action="/quick_search"></search-bar>
+</div>
+    </div>
+</nav>
+
+        
+        
+        
+        <main id="mainContent" class="grow">
+                <div  class="container mx-auto">
+    <h1 class="text-5xl font-medium">
+    LIPID MAPS® Structure Database (LMSD)
+</h1>
+
+        <nav aria-label="breadcrumb" >
+    <ol class="w-full h-12 mb-2 rounded px-4
+                flex items-center
+                bg-gray-200">
+        <li class="">
+        <a href="https://www.lipidmaps.org/databases">
+            Databases
+        </a>
+        <span class="select-none inline-block mx-1 text-gray-700">/</span>
+    </li>
+    <li class="text-gray-700" aria-current="page">
+        LMSD
+    </li>
+    </ol>
+</nav>
+
+<div class="grid w-full grid-cols-none md:grid-cols-12 gap-2 mt-3 my-2">
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/overview" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     selected leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Overview
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/browse" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Browse Classification
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/text_search" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Search (Ontology)
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/structure_search" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Search (Structure)
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="/resources/tools/bulk-structure-search/create?database=LMSD" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Search (Bulk)
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/programatic_access" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Programmatic Access
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/download" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Download
+</a>
+</div>
+    <div class="col-span-3">
+    <a href="https://www.lipidmaps.org/databases/lmsd/submission" class="inline-block text-center align-middle select-none
+        border border-transparent
+        transition ease-in-out duration-150
+     leading-6 text-lg py-2 px-4 md:text-lg 
+        bg-lm-blue text-white hover:bg-lm-blue-hover hover:text-white rounded-md
+        border-lm-blue
+     w-full">
+    Submit
+</a>
+</div>
+</div>
+
+        <div class="relative flex flex-col
+        break-words
+        bg-clip-border bg-white
+        border border-gray-200
+        card rounded-lg
+     my-2">
+        
+    <div class="flex-grow flex-shrink p-3 px-5">
+        <div class="grid w-full grid-cols-12 gap-8 mt-3 my-2">
+    <div class="col-span-12 md:col-span-6">
+    <p class="text-xl font-light">
+    The LIPID MAPS® Structure Database (LMSD) is a relational database encompassing structures and annotations of biologically relevant lipids. As of today, LMSD contains <strong>50547</strong> unique lipid structures, making it the largest public lipid-only database in the world.
+</p>
+                    <p> Structures of lipids in the database come from several sources: (i) LIPID MAPS® Consortium's core laboratories and partners; (ii) lipids identified by LIPID MAPS® experiments; (iii) biologically relevant lipids manually curated from LIPID BANK, LIPIDAT, Lipid Library, Cyberlipids, ChEBI and other public sources; (iv) novel lipids submitted to peer-reviewed journals; (v) computationally generated structures for appropriate classes. </p>
+                    <p> All the lipid structures in LMSD adhere to the structure drawing <a href="/resources/education/structure">rules</a> proposed by the LIPID MAPS® consortium and are curated <a href="/assets/documents/Curation_SOP.pdf">according to our protocols</a>. All lipids in the LMSD have been classified using the <a href='/databases/lmsd/browse'>LIPID MAPS® Lipid Classification System</a>. Each lipid structure has been assigned a LIPID MAPS® ID (LM_ID). In addition to a classification-based retrieval of lipids, users can search LMSD using either text-based or structure-based search options. </p>
+                    <p> Questions regarding the submission of structures should be submitted via our <a href="/about/contact">Contact page</a>.</p>
+</div>
+
+                <div class="col-span-12 md:col-span-6  my-4 overflow-auto">
+    <div class="w-full overflow-x-auto text-base" >
+        <table class="table-auto border-l border-b">
+                <tbody>
+            <thead>
+                            <tr class="border-t bg-blue-100 border px-2 py-2">
+    <th class="border-r px-1">
+    Lipid Category
+</th>
+                                <th class="border-r px-1">
+    Curated
+</th>
+                                <th class="border-r px-1">
+    Computationally-generated
+</th>
+                                <th class="border-r px-1">
+    All
+</th>
+</tr>
+                        </thead>
+                        <tbody>
+                                                                                                        <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Fatty Acyls [FA]
+</td>
+                                <td class="border-r px-2">
+    9840
+</td>
+                                <td class="border-r px-2">
+    1897
+</td>
+                                <td class="border-r px-2">
+    11737
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Glycerolipids [GL]
+</td>
+                                <td class="border-r px-2">
+    438
+</td>
+                                <td class="border-r px-2">
+    7378
+</td>
+                                <td class="border-r px-2">
+    7816
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Glycerophospholipids [GP]
+</td>
+                                <td class="border-r px-2">
+    2309
+</td>
+                                <td class="border-r px-2">
+    8297
+</td>
+                                <td class="border-r px-2">
+    10606
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Sphingolipids [SP]
+</td>
+                                <td class="border-r px-2">
+    1893
+</td>
+                                <td class="border-r px-2">
+    3168
+</td>
+                                <td class="border-r px-2">
+    5061
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Sterol Lipids [ST]
+</td>
+                                <td class="border-r px-2">
+    4102
+</td>
+                                <td class="border-r px-2">
+    0
+</td>
+                                <td class="border-r px-2">
+    4102
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Prenol Lipids [PR]
+</td>
+                                <td class="border-r px-2">
+    2651
+</td>
+                                <td class="border-r px-2">
+    0
+</td>
+                                <td class="border-r px-2">
+    2651
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Saccharolipids [SL]
+</td>
+                                <td class="border-r px-2">
+    57
+</td>
+                                <td class="border-r px-2">
+    1294
+</td>
+                                <td class="border-r px-2">
+    1351
+</td>
+</tr>
+                                                                                <tr class="border-t text-center px-2 py-2">
+    <td class="border-r px-2">
+    Polyketides [PK]
+</td>
+                                <td class="border-r px-2">
+    7223
+</td>
+                                <td class="border-r px-2">
+    0
+</td>
+                                <td class="border-r px-2">
+    7223
+</td>
+</tr>
+                                                <tr class="border-t text-center px-2 py-2">
+    <th class="border-r px-1">
+    TOTAL
+</th>
+                            <th class="border-r px-1">
+    28513
+</th>
+                            <th class="border-r px-1">
+    22034
+</th>
+                            <th class="border-r px-1">
+    50547
+</th>
+</tr>
+                        </tbody>
+        </tbody>
+    </table>
+</div>
+                    <caption>Number of structures per lipid category</caption>
+</div>
+</div>
+    </div>
+
+    </div>
+
+        
+
+        
+<h3 class="text-3xl font-medium">
+    Change log
+</h3>
+        <div class="relative flex flex-col
+        break-words
+        bg-clip-border bg-white
+        border border-gray-200
+        card rounded-lg
+     my-2">
+        
+    <div class="flex-grow flex-shrink p-3 px-5">
+        <p>
+                At the point of curation, a new structure and associated metadata will receive a time/date stamp held in the database.  This is displayed on the webpage as “created at”, though only date is displayed.
+               The curation interface enables changes to metadata and/or structure and these are time/date stamped and displayed on the webpage as “updated at”.
+               Changes to lipid structures are rare (~1%) resulting from errors or adding chirality to an existing structure where new evidence is found.
+            </p>
+    </div>
+
+    </div>
+        <h3 class="text-3xl font-medium mt-4">
+    References
+</h3>
+        <div class="relative flex flex-col
+        break-words
+        bg-clip-border bg-white
+        border border-gray-200
+        card rounded-lg
+     my-2">
+        
+    <div class="flex-grow flex-shrink p-3 px-5">
+        <div class="mt-3">
+        LMSD: LIPID MAPS® structure database,    Sud M, Fahy E, Cotter D, Brown A, Dennis EA, Glass CK, Merrill AH Jr, Murphy RC, Raetz CR, Russell DW, Subramaniam S.,    Nucleic Acids Research,    2007,    35: p. D527-32.,      DOI: <a href="//doi.org/10.1093/nar/gkl838" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    10.1093/nar/gkl838
+</a>
+,      PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/17098933?dopt=Abstract" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    17098933
+</a>
+</div>
+
+            <div class="mt-3">
+        LIPID MAPS® online tools for lipid research,    Fahy E, Sud M, Cotter D & Subramaniam S.,    Nucleic Acids Research,    2007,    35: p. W606-12.,      DOI: <a href="//doi.org/10.1093/nar/gkm324" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    10.1093/nar/gkm324
+</a>
+,      PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/17584797?dopt=Abstract" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    17584797
+</a>
+</div>
+
+            <div class="mt-3">
+        LIPID MAPS: update to databases and tools for the lipidomics community,    Conroy MJ, Andrews RM, Andrews S, Cockayne L, Dennis, EA, Fahy E, Gaud C, Griffiths WJ, Jukes G, Kolchin M,  Mendivelso K, Lopez-Clavijo AF, Ready C, Subramaniam S, O'Donnell, VB,    Nucleic Acids Research,    2023,          DOI: <a href="//doi.org/10.1093/nar/gkad896" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    10.1093/nar/gkad896
+</a>
+,      PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/37855672?dopt=Abstract" class="transition_ ease-in-out_ duration-150_ hover:underline text-lm-blue hover:text-lm-blue-hover">
+    37855672
+</a>
+</div>
+    </div>
+
+    </div>
+</div>
+        </main>
+        <footer class="border-t-4 border-theme3">
+            <div class="md:w-5/6 flex justify-center my-2 md:my-6 mx-4 md:mx-auto flex-wrap">
+                <a href="https://profiles.cardiff.ac.uk/staff/o-donnellvb">
+    <img class="partner-logo" src="https://www.lipidmaps.org/assets/images/logos/cardiff.png" alt="Cardiff University Logo">
+</a>
+                <div class="relative partner-logo-container">
+                    <img class="partner-logo" src="https://www.lipidmaps.org/assets/images/logos/babraham.png" alt="Babraham Institute Logo" />
+                    <div class="dropdown-menu hidden absolute bg-white shadow-lg rounded bottom-full mb-2 p-2 text-sm">
+                        <a href="https://www.babraham.ac.uk/science-facilities/bioinformatics/simon-andrews" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Simon Andrews</a>
+                        <a href="https://www.babraham.ac.uk/our-research/signalling/len-stephens" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Len Stephens</a>
+                        <a href="https://www.babraham.ac.uk/our-research/signalling/phillip-hawkins" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Phillip Hawkins</a>
+                        
+                    </div>
+                </div>
+                <div class="relative partner-logo-container">
+                    <img class="partner-logo" src="https://www.lipidmaps.org/assets/images/logos/UCSD.png" alt="UCSD Logo" />
+                    <div class="dropdown-menu hidden absolute bg-white shadow-lg rounded bottom-full mb-2 p-2 text-sm">
+                        <a href="https://pharmacology.ucsd.edu/faculty/department-faculty/edward-dennis.html" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Edward Dennis</a>
+                        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=19" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Shankar Subramaniam</a>
+                    </div>
+                </div>
+                <a href="https://www.swansea.ac.uk/staff/w.j.griffiths/">
+    <img class="partner-logo" src="https://www.lipidmaps.org/assets/images/logos/swansea.png" alt="Swansea University Logo">
+</a>
+                <div class="relative partner-logo-container">
+                    <img class="partner-logo" src="https://www.lipidmaps.org/assets/images/logos/edinburgh_sm.png" alt="Edinburgh University Logo" />
+                    <div class="dropdown-menu hidden absolute bg-white shadow-lg rounded bottom-full mb-2 p-2 text-sm">
+                        <a href="https://www.ed.ac.uk/profile/ruth-andrew" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Ruth Andrew</a>
+                        <a href="https://www.ed.ac.uk/profile/professor-dominic-campopiano" class="block px-1 py-2 text-gray-800 hover:bg-gray-200">Dominic Campopiano</a>
+                    </div>
+                </div>
+                <a href="https://www.ukri.org/councils/mrc/">
+    <img class="partner-logo border-l border-theme3" src="https://www.lipidmaps.org/assets/images/logos/mrc-logo.png" alt="Medical Research Council">
+</a>
+            </div>
+
+            <div class="w-full bg-black px-6 py-2 flex justify-center md:justify-between items-center flex-wrap">
+                
+                <small class="font-light text-white mb-2 md:mb-0">© 2003-2026 LIPID MAPS®</small>
+                
+                <small class="flex md:block flex-wrap justify-center">
+                    <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="http://creativecommons.org/licenses/by/4.0/" rel="license">
+                        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                    </a>
+                    <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="https://www.lipidmaps.org/terms-of-use">Terms of Use</a>
+                    <!-- <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="https://www.lipidmaps.org/how-to-cite">How to Cite</a> -->
+                    <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="https://www.lipidmaps.org/how-to-link">How to Link & Cite</a>
+                    <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="https://www.lipidmaps.org/browsers">Browsers Supported</a>
+                    <a class="text-white inline-block mr-4 hover:text-white hover:underline" href="https://www.lipidmaps.org/cookie-policy">Manage Cookies</a>
+                </small>
+            </div>
+        </footer>
+
+            </div>
+
+    <!-- Modals -->
+    
+    
+    <div class="lm-modal fixed top-0 bottom-0 left-0 right-0 hidden opacity-0
+        transition duration-500 ease-in-out" id="cookie_notice_modal">
+    <div class="close-modal modal-backdrop fixed top-0 bottom-0 left-0 right-0 bg-gray-700 flex justify-center items-start p-8 bg-opacity-75"></div>
+    <div class="modal-content flex justify-center my-8 mx-auto bg-opacity-0">
+        <div class="relative flex flex-col
+        break-words
+        bg-clip-border bg-white
+        border border-gray-200
+        card rounded-lg
+     w-100 md:w-3/5 lg:w-1/2">
+                <div class="py-1 px-5 mb-0 bg-gray-100 text-xl font-semibold">
+            We use Cookies
+        </div>
+    
+    <div class="flex-grow flex-shrink p-3 px-5">
+        This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyze your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties.
+    </div>
+
+            <div class="py-1 px-5 mb-0 bg-gray-100">
+            <div class="float-right">
+                <button class="inline-block text-center align-middle select-none
+        py-1 px-3
+        border border-transparent
+        transition ease-in-out duration-150
+     
+        text-lm-blue hover:underline
+     close-modal" id="cookie_notice_prefs">
+    More Options
+</button>
+                <button class="inline-block text-center align-middle select-none
+        py-1 px-3
+        border border-transparent
+        transition ease-in-out duration-150
+     
+        bg-lm-blue text-white hover:bg-lm-blue-hover
+        border-lm-blue rounded" id="cookie_notice_accept">
+    Accept
+</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+    <!-- Scripts -->
+        <link rel="preload" as="style" href="https://www.lipidmaps.org/build/assets/app-Bv-zvoHc.css" /><link rel="modulepreload" href="https://www.lipidmaps.org/build/assets/app-DbzUugJU.js" /><link rel="modulepreload" href="https://www.lipidmaps.org/build/assets/_plugin-vue2_normalizer-C6miFg7D.js" /><link rel="modulepreload" href="https://www.lipidmaps.org/build/assets/jquery-rTXOsbo7.js" /><link rel="modulepreload" href="https://www.lipidmaps.org/build/assets/_commonjsHelpers-BosuxZz1.js" /><link rel="modulepreload" href="https://www.lipidmaps.org/build/assets/trix.esm.min-CRIV1KuT.js" /><link rel="stylesheet" href="https://www.lipidmaps.org/build/assets/app-Bv-zvoHc.css" data-navigate-track="reload" /><script type="module" src="https://www.lipidmaps.org/build/assets/app-DbzUugJU.js" data-navigate-track="reload"></script><script type="module" src="https://www.lipidmaps.org/build/assets/trix.esm.min-CRIV1KuT.js" data-navigate-track="reload"></script>    <script>
+        // Temporary import of JS menu controls until proper location of code can be found
+        function hideDropdownMenus() {
+            const menus = document.querySelectorAll('.lm-dropdown-toggle');
+            for (let i = 0; i < menus.length; i++) {
+                const menu = menus[i];
+                hideDropdownMenu(menu);
+            }
+        }
+
+        function hideDropdownMenu(button) {
+            let href = button.getAttribute("data-dropdown-target");
+
+            if (href) {
+                let menu = document.getElementById(href);
+
+                if (menu) {
+                    menu.classList.add('opacity-0', 'scale-95', 'pointer-events-none', 'hidden');
+                    menu.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+                    button.classList.remove('open');
+                    button.setAttribute('aria-expanded', "false");
+            }
+            }
+        }
+
+        function showDropdownMenu(button) {
+            let href = button.getAttribute("data-dropdown-target");
+
+            if (href) {
+                let menu = document.getElementById(href);
+
+                if (menu) {
+                    menu.classList.remove('opacity-0', 'scale-95', 'pointer-events-none', 'hidden');
+                    menu.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
+                    button.classList.add('open');
+                    button.setAttribute('aria-expanded', "true");
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            hideDropdownMenus();
+            document.querySelectorAll('.partner-logo-container').forEach(function (container) {
+                container.addEventListener('click', function (event) {
+                    //event.preventDefault(); // Prevent the default anchor click behavior
+
+                    // Toggle the visibility of the dropdown menu
+                    const dropdownMenu = container.querySelector('.dropdown-menu');
+                    dropdownMenu.classList.toggle('hidden');
+                });
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!event.target.closest('.partner-logo-container')) {
+                    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+                        menu.classList.add('hidden');
+                    });
+                }
+            });
+
+            // Show a menu if it's hovered over
+            const dropdownItems = document.querySelectorAll('.lm-dropdown-toggle')
+            dropdownItems.forEach(item=>{
+                item.addEventListener("mouseenter", function(e){
+                    hideDropdownMenus();
+                    showDropdownMenu(item);
+                })
+                const parentLi = item.closest("li")
+                if(parentLi){
+                    parentLi.addEventListener("mouseleave", function(e){
+                        hideDropdownMenu(item);
+                    })
+                }
+            })
+
+            // External link hover functionality with custom styled tooltip
+            const currentDomain = window.location.hostname;
+            const externalLinks = document.querySelectorAll('a[href]');
+            
+            // Create tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'external-link-tooltip';
+            tooltip.style.cssText = `
+                position: absolute;
+                background: #1f2937;
+                color: white;
+                padding: 6px 10px;
+                border-radius: 6px;
+                font-size: 12px;
+                font-weight: 500;
+                font-style: italic;
+                white-space: nowrap;
+                z-index: 9999;
+                pointer-events: none;
+                opacity: 0;
+                transform: translateY(-8px);
+                transition: opacity 0.2s ease, transform 0.2s ease;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            `;
+            tooltip.innerHTML = '(External Link)'; // we can add this too 🔗 
+            document.body.appendChild(tooltip);
+            
+            externalLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                
+                // Check if it's an external link (starts with http/https and different domain)
+                if (href && (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('//'))) {
+                    try {
+                        const linkUrl = new URL(href, window.location.href);
+                        if (linkUrl.hostname !== currentDomain) {
+                            
+                            link.addEventListener('mouseenter', function(e) {
+                                const rect = this.getBoundingClientRect();
+                                tooltip.style.left = (rect.left + rect.width / 2 - tooltip.offsetWidth / 2) + 'px';
+                                tooltip.style.top = (rect.top - tooltip.offsetHeight - 8 + window.scrollY) + 'px';
+                                tooltip.style.opacity = '1';
+                                tooltip.style.transform = 'translateY(0)';
+                            });
+                            
+                            link.addEventListener('mouseleave', function() {
+                                tooltip.style.opacity = '0';
+                                tooltip.style.transform = 'translateY(-8px)';
+                            });
+                        }
+                    } catch (e) {
+                        // Invalid URL, skip
+                    }
+                }
+            });
+        });
+        </script>
+
+    <!-- TIME TRACKING -->
+    
+        </body>
+</html>

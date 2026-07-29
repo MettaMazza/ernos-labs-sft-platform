@@ -66,6 +66,18 @@ consensus vote as scientific evidence.  Equally, criticism of institutions does
 not itself admit an SFT law: the complete derivation and empirical standards
 remain unchanged.
 
+## Mandatory prior-corpus return families
+
+Status: completed to the frozen current standard and open to lawful extension.
+Four new receipts reconstruct preferential-flow inequality, the exact
+consensus/polarization observation lock, the one-third/two-thirds recurrent
+collective orbit and a 21-source cross-context comparison. Institutional
+controversy or political interpretation selected none of the laws; historical
+context, intervention, broken cycles and unresolved causation remain explicit.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational edition establishes collective objects and evidence boundaries.

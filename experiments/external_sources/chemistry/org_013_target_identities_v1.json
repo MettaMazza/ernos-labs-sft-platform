@@ -1,0 +1,70 @@
+{
+  "schema": "sft-v3-chemistry-org-013-target-identities/1",
+  "claim_id": "SFT-CHEM-RADICAL-REACTION-NETWORK-013",
+  "obligation_id": "SFT-CHEM-OBL-ORG-013",
+  "registered_date": "2026-07-28",
+  "law_path": "sft/chemistry/radical_reaction_network_law_v1.py",
+  "law_sha256": "sha256:9d8fdb2822078e1543af07684b425d4234dff669d3963104efd19145db4c446d",
+  "development_observed_authority_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-013-IUPAC-CHAIN",
+      "source_id": "IUPAC-C00960",
+      "identity": "chain reaction and propagation complete current term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-c00960.json",
+      "snapshot_sha256": "sha256:8c33e0c77b8fffca3a5a43e119dba22e4a610437311e3c5ecb7dfe66e4430659"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-013-IUPAC-INITIATION",
+      "source_id": "IUPAC-I03042",
+      "identity": "initiation complete current term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-i03042.json",
+      "snapshot_sha256": "sha256:f5f9768597b01a6f40697f83d39ce55dd3852224fbc739cc3cc8e9f61b4dbfbc"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-013-IUPAC-TERMINATION",
+      "source_id": "IUPAC-T06274",
+      "identity": "termination complete current term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-t06274.json",
+      "snapshot_sha256": "sha256:3186b083062fe1adac850b20060bb7bf1ab3e8dc49a314b55c3874408c9143cb"
+    }
+  ],
+  "development_observed_primary_article_identity": {
+    "target_id": "SFT-CHEM-ORG-013-RADICAL-POLYMERIZATION-ARTICLE",
+    "source_id": "PMC11598545-ARTICLE",
+    "authority": "PubMed Central and Polymers",
+    "registered_identity": "On the Activation Energy of Termination in Radical Polymerization, as Studied at Low Conversion",
+    "doi": "10.3390/polym16223225",
+    "pmcid": "PMC11598545",
+    "pmid": "39599316",
+    "license": "CC BY 4.0",
+    "custody_class": "development_observed_title_abstract_and_summary_exact_payload_unopened",
+    "disclosures_before_payload_seal": [
+      "the title, abstract and article-level statement that initiation, propagation and termination are the three fundamental reactions were observed during source selection and are never described as blind",
+      "the abstract reports experimental activation-energy values spanning 25 to 39 kJ mol-1 for four dilute-solution low-conversion homopolymerizations",
+      "the exact OA archive, full XML, table rows, individual values, conditions, adverse rows, absences, figures and supplementary members remained unopened"
+    ]
+  },
+  "outcome_unopened_release": {
+    "target_id": "SFT-CHEM-ORG-013-COMPLETE-OA-PACKAGE",
+    "source_id": "NCBI-OA-PACKAGE-PMC11598545",
+    "authority": "National Center for Biotechnology Information PubMed Central Open Access",
+    "registered_identity": "complete PMC11598545 open-access package resolved from the official OA record",
+    "oa_record_uri": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11598545",
+    "custody_class": "outcome_payload_unopened_before_org_013_claim_specific_seal",
+    "oa_record_resolved_before_seal": false,
+    "archive_downloaded_before_seal": false,
+    "archive_members_opened_before_seal": false,
+    "exact_table_rows_opened_before_seal": false
+  },
+  "postseal_complete_row_rule": {
+    "archive": "Retain and hash every official OA archive member in source order, including full text, tables, figures, supplements, adverse records and structural absences.",
+    "trace": "Retain every explicit initiation, propagation, termination, chain-length and active/inactive relation; do not discard transfer, alternate termination, unresolved or unfavorable rows.",
+    "values": "Retain every measured activation-energy, rate, chain-length, temperature, concentration and uncertainty inscription exactly as external conventional evidence; no value enters native forcing.",
+    "comparison": "Test the sealed structural consequence that initiation generates retained active support, propagation preserves active support through positive finite recurrence, and termination closes active support without erasure.",
+    "omission_control": "Removing any archive member, table row, reaction class, measured value, condition, adverse row or absence must halt the comparison."
+  },
+  "sealed_native_prediction": "A complete radical chain contains a generated initiation, a positive finite contiguous propagation family and a terminal closure. The same two held radical-support labels remain throughout; active-site absence before opening and after closure is structural EmptyOne, never numerical zero.",
+  "native_arithmetic_boundary": "No conventional numerical zero, sign, decimal, irrational, imaginary, continuum quantity, energy, rate, temperature, concentration, chain length or measured outcome enters native forcing.",
+  "external_target_content_used_by_candidate_generator_or_eliminator": false,
+  "official_oa_archive_open_count_before_seal": 0
+}

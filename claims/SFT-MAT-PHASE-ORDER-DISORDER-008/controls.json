@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-ORDER-DISORDER-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b85f72062cc85e82a841e68fa0b3160117ee1503f5a5c7067fe60b4c02d0405f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3cef4befe78bb1332724c34fdf347fe7a582041f318cde623b9043d6dcd6a74a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2e56e6bce4a5a8d92617cc8b032d64bcfe2431fcea8846e9d7926d891edc430a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0d9a4b67c08f73b2aebf06fdd46fe3317e7a4c972c57769e3c7d1722ad263a06"
+    }
+  ]
+}

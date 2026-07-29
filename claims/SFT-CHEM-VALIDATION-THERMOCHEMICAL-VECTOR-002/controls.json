@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-THERMOCHEMICAL-VECTOR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:065256c9b7b4bbd465a467e4196d419e7e732fbb2af782471e94b4d6a7ee2ac0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2e9ae016709d5e626303c00e6ec7b5a059ce9682ec3bf93e8a96f08e6a2f804a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8f886e569e4942deb86716f3cd4ee6153a4ef3999f3f671914897de52670dd89"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:6a4c4898592e4d89620397600708b461aa9cd4ca6094f3ca092fd8c858ca62be"
+    }
+  ]
+}

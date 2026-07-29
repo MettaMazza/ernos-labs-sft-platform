@@ -1,0 +1,4 @@
+"""Post-registry exact execution validator for ALGX-001 through ALGX-031."""
+from sft.computation.complete_field_observation_v1 import CompleteFieldObservationValidator
+REGISTRY="census/computation_algx_001_031_target_registry_v1.json";REGISTRY_HASH="sha256:7e451df18f36c1aa973e45bfe7165d6a440c26fc8d219bd42b50b4e11d0f31d9";VECTOR="experiments/external_sources/computation/algx_001_031_observation_vector_v1.json";VECTOR_HASH="sha256:277e6575a67bf9049f923be1fc455ab40895437652ff8c56c66b1c7bbdc4a639";FALSIFICATION="Reject if the value-free registry, complete input organization, invariant, exact trace, result or guarantee, source identity, survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order."
+def AlgorithmObservationValidator(root,spec):return CompleteFieldObservationValidator(root,spec,"ALGX",REGISTRY,REGISTRY_HASH,VECTOR,VECTOR_HASH,"classical-computation-algx-observer-v1",FALSIFICATION)

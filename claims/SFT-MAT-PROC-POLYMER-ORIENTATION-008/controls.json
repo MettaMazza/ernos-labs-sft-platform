@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-POLYMER-ORIENTATION-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:77d22e8ffb1261a6bca94993773c7ce5300e41c80957b2ee1cdd71e3dcabefbd"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d5202919cc9d51b80270f557d127e7264fd6bb9e4ea588b0f74f289d3eb8674d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e9e041ee8f454c25ed3b03e4b8669207dfd6bf35c5f1176b0618398f6dbdb1a6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0e3ae47522ae9b0354e626011031e132b7aada1cd6abd77046a22f31e8ab70ad"
+    }
+  ]
+}

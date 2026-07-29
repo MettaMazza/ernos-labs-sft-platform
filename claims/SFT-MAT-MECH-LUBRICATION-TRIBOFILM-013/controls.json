@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-LUBRICATION-TRIBOFILM-013",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:37fee2ce6cf2c22ccd656616525d77d44184ad50fad392d08f35030183ccf0b1"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:64bbab189e75e421596f7e126d95d42d23fdde46ad71fbc84bca1536e29cb72d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6754538e10f2db208f2827165e26bc0a308d92f143aa81e6b5ff3579a5eb607f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d3f9d3468e89c0b32ef22f6e9bc64255fa6252227d201fb49294f21a72522983"
+    }
+  ]
+}

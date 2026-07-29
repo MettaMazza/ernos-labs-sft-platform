@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-DIELECTRIC-LOSS-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3e629a6a022e052c27c322e29768dac054eaba9b93f8f1366f3649f8620de9f9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d94acf0fb8f8cf88068447296f1edcc1d7b43d367e8038bbb89ca08b92ff7aa4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0352cc248b6301867e0046b60a2354c9fc5ca298c58d84926a3f7cd14bd135c5"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:07053c60a29729887765be6fc013fdeec8be6d468257e599b95027e4c10dabb2"
+    }
+  ]
+}

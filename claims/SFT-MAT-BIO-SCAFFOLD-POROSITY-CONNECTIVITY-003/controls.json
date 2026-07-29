@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-SCAFFOLD-POROSITY-CONNECTIVITY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:706a186ad91b8ecaf9a61e47138c5ac1966b1c6c6e959883b8cde75038ad915c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:fe7020a3250f343f3cdff63abdc7112214bbf12340c21bd75d4b427836df3165"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e3b351580e0cbe28feb845fda348e556031bafdaa3cfd855706dab356f44a589"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:46d94cf703beda38926aebe154b9a164207e04e231cb25d61ef9edb7b95834c9"
+    }
+  ]
+}

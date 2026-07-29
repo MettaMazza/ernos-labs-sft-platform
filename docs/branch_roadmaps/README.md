@@ -1,5 +1,21 @@
 # Branch reconstruction and field-completion programme
 
+## Current programme checkpoint — 29 July 2026
+
+The live local corpus contains **2,751 registered, model-admitted claims**.
+Mathematics, Information Science, Classical Computation, Reversible and Quantum
+Computation, Physics, Chemistry and Materials are complete to their current
+dated full-field boundaries. Biology is the active branch at **82/424** frozen
+obligations, with **342 open**. The remaining downstream branches retain
+complete published foundations and complete prior-return families but do not
+yet have frozen full-field denominators.
+
+The complete status ledger, publication boundary and exact restart operation
+are maintained in
+[`audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+The foundation table later in this file remains the historical 28 July
+all-foundations baseline and must not be used as the current full-field count.
+
 ## Purpose
 
 This directory defines the dependency-ordered plan for every scientific branch
@@ -147,6 +163,7 @@ The spine and its major downstream forks are:
 13. Astronomy and Cosmology
 14. Social and Collective Systems
 15. Engineering Translation
+16. Cross-branch Synthesis and final ToE assembly
 
 This list is an execution order for shared foundations, not a claim that every
 later science has only one immediate parent.  Astronomy consumes Physics and
@@ -190,6 +207,13 @@ is never reset merely because the roadmap is reorganized.
 - [Astronomy and Cosmology](12-astronomy-cosmology.md)
 - [Social and Collective Systems](13-social-collective-systems.md)
 - [Engineering Translation](14-engineering-translation.md)
+- [Cross-branch Synthesis and final ToE assembly](15-cross-branch-synthesis.md)
+
+The mandatory content-level correction for unusual, disputed and previously
+cross-owned V1/V2 results is recorded in
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+Its obligations cannot be removed by assigning a row to an unnamed synthesis or
+by citing a narrower same-topic claim.
 
 ## Status language
 
@@ -198,7 +222,7 @@ branch plan names work and gates only.  Live counts, last admitted claims and
 next operations belong in the branch continuation checkpoint and machine census
 so a conversation restart cannot turn an old plan into a false status report.
 
-## Foundation census — 28 July 2026
+## Published foundation census — 28 July 2026 historical baseline
 
 The machine census and branch-specific audits currently record all fifteen
 foundations as current-evidence complete and extension-open. This table is a
@@ -212,7 +236,7 @@ human-readable index to those records, not an alternate admission mechanism.
 | Classical Computation | 116/116; 134/134 | Published v1.2 |
 | Reversible and Quantum Computation | 22/22; 29/29 | Published v1.2 |
 | Physics | 349/349; 488/488 | Published v1.1 |
-| Chemistry | 86/86 foundation; 52/52; 176 live claims | Published v1.2; complete-field continuation paused |
+| Chemistry | 86/86 foundation; 52/52; 176 claims at this checkpoint | Published v1.2; continuation was still open at this historical boundary |
 | Materials Science | 92/92; 56/56 | Published v1.2 |
 | Biology and Life Sciences | 75/75; 30/30 | Published v1.0 |
 | Medicine and Health Sciences | 72/72; 5/5 | Published v1.0 |
@@ -222,8 +246,15 @@ human-readable index to those records, not an alternate admission mechanism.
 | Social and Collective Systems | 72/72; 5/5 | [Published v1.0](https://doi.org/10.5281/zenodo.21640814) |
 | Engineering Translation | 72/72; 7/7 | [Published v1.0](https://doi.org/10.5281/zenodo.21640816) |
 
-The ordered live corpus contains 1,319 model-admitted claims, including the 90
-Chemistry Layer Two claims already admitted beyond its foundation. The global
+These branch-specific inherited counts were produced after categorical
+prefiltering.  They remain accurate for the rows assigned to each audit, but
+they do not close a prior row excluded as an unnamed cross-synthesis or assigned
+to the wrong owner.  The 28 July content-level return audit is the mandatory
+correction for those omissions and narrower reconstructions.
+
+At this historical checkpoint, the ordered corpus contained 1,319
+model-admitted claims, including the 90 Chemistry Layer Two claims then admitted
+beyond its foundation. The global
 one-owner V1/V2 ledger merge remains a separate final-ToE obligation; each
 foundation's complete 763-entry branch-specific review is already preserved in
 its ledger or atomic audit. The complete all-foundations verification passed on

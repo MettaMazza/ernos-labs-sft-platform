@@ -1,0 +1,74 @@
+{
+  "schema": "sft-v3-smithium-source-derived-observations/1",
+  "target_id": "SMITHIUM-COMPLETE-OFFICIAL-STATUS-2026-07-28",
+  "source_id": "IUPAC-NIST-SMITHIUM-COMPLETE-RECORD-2026-07-28",
+  "support_documents": [
+    {
+      "authority": "IUPAC/IUPAP Joint Working Group",
+      "kind": "official-text-extraction",
+      "snapshot_hash": "sha256:219d6e1dc7c197e63c910a545a351f30876dda54acee125a4861bb92683c2e36",
+      "snapshot_path": "evidence/external/chemistry/smithium_2026-07-28/iupac_superheavy_discovery_2018.txt",
+      "source_url": "https://iupac.org/wp-content/uploads/2018/11/pac20180918_v20181112.pdf"
+    },
+    {
+      "authority": "IUPAC",
+      "kind": "official-html",
+      "snapshot_hash": "sha256:ebd4ffd03cf5efd5f185efd45fa6b54adbe55d5e0b77ac4fda854fe46df81e16",
+      "snapshot_path": "evidence/external/chemistry/smithium_2026-07-28/iupac_periodic_table.html",
+      "source_url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+    },
+    {
+      "authority": "NIST",
+      "kind": "official-html",
+      "snapshot_hash": "sha256:572b39362756cd6ca7c2359632f2e9af2a8927c14bbc836c8b7c45b3b4ca6343",
+      "snapshot_path": "evidence/external/chemistry/smithium_2026-07-28/nist_atomic_spectroscopy.html",
+      "source_url": "https://www.nist.gov/pml/atomic-spectroscopy-compendium-basic-ideas-notation-data-and-formulas/atomic-spectroscopy"
+    }
+  ],
+  "ordered_feature_extractions": [
+    {
+      "document": "iupac_superheavy_discovery_2018.txt",
+      "normalized_feature": "current-known-element-boundary-118",
+      "required_fragment": "The so far highest element, oganesson, has the atomic number Z = 118"
+    },
+    {
+      "document": "iupac_periodic_table.html",
+      "normalized_feature": "official-table-release-includes-element-118",
+      "required_fragment": "elements 113, 115, 117, and element 118"
+    },
+    {
+      "document": "iupac_superheavy_discovery_2018.txt",
+      "normalized_feature": "superheavy-production-by-heavy-ion-fusion",
+      "required_fragment": "All superheavy elements with proton number Z >= 104 were solely produced in heavy ion fusion reactions"
+    },
+    {
+      "document": "iupac_superheavy_discovery_2018.txt",
+      "normalized_feature": "identification-by-implantation-alpha-decay-or-spontaneous-fission",
+      "required_fragment": "were identified by decay chains starting with a signal from the implantation of an evaporation residue into a Si detector and subsequent signals from alpha-decays and/or SF"
+    },
+    {
+      "document": "nist_atomic_spectroscopy.html",
+      "normalized_feature": "electric-dipole-one-electron-orbital-rank-change-one",
+      "required_fragment": "One electron jumping, with Delta l = +/- 1, Delta n arbitrary"
+    },
+    {
+      "document": "iupac_superheavy_discovery_2018.txt",
+      "normalized_feature": "smithium-126-remains-standing-unobserved-beyond-current-boundary",
+      "required_fragment": "All 118 elements from Z = 1, hydrogen, to Z = 118, oganesson, are known"
+    }
+  ],
+  "preserved_result_classes": {
+    "absent": [
+      "No recognized element 126 occurs within the source-dated known boundary ending at 118."
+    ],
+    "adverse": [],
+    "favorable_correspondence": [
+      "The official production record corresponds to the sealed heavy-ion entrance grammar.",
+      "The official identification record corresponds to the sealed decay and joint-record classes.",
+      "The NIST E1 rule corresponds to the sealed g-to-f and g-to-h orbital classes."
+    ],
+    "unresolved": [
+      "No Smithium production route, cross-section, lifetime, branching ratio, line energy, wavelength or chemical separation result is measured in the registered record."
+    ]
+  }
+}

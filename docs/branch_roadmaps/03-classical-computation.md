@@ -1,5 +1,29 @@
 # Classical Computational Science branch roadmap
 
+## Current receipt-backed status — 2026-07-29
+
+- Frozen complete-field census: **369 obligations in 12 dependency-ordered families**.
+- Admitted and reconciled: **369/369 (100.0%)**.
+- Complete families: **BASE 117/117**, **FORMX 22/22**, **CBLX 21/21**,
+  **CPLXX 33/33**, **ALGX 31/31**, **SEMX 25/25**, **DISTX 26/26**,
+  **SECX 25/25**, **LEARNX 26/26**, **SCIX 25/25**, **VALID 12/12** and
+  **HAND 6/6**.
+- Open families in the frozen census: **none**.
+- Frozen census: `census/computation_discipline_obligations.json`.
+- Frozen census identity:
+  `sha256:411959c9505e6e09ec57e03923572f249cb5402996dca17911b3e1616e81b6ea`.
+- Current reconciliation:
+  `census/computation_discipline_current_reconciliation_v12.json`.
+- Current reconciliation identity:
+  `sha256:84e436aa27ed392c4c2a5cab77833952a027f43e878151627e958e64be3ee30e`.
+
+The 117 foundational claims remain complete and must not be replayed as open
+work. The denominator was frozen before new complete-field target access.
+Progress changes only after a whole family has individual untouched-engine
+receipts, four controls per claim, implementation-distinct reconstruction,
+post-registry observation or explicit evidence-boundary records, exact replay
+and reconciliation. Completion remains dated and open to lawful extension.
+
 ## Scientific ownership
 
 This branch owns the science of formal and classical computation.  It includes
@@ -103,6 +127,27 @@ lower bounds and unrestricted computation boundaries receive exact definitions,
 generated finite investigations and theorem requirements.  They are never
 labelled solved from bounded evidence alone.
 
+## Prior-corpus correspondence return
+
+The four-obligation return is complete.  The native Fold-P equals Fold-NP result
+remains scoped to its admitted process grammar.  A separate conditional
+transport theorem now enumerates the exact conditions under which a complete
+conventionally presented decision family inherits that equality: total source
+coverage, reverse-reconstructible encoding, verdict and trace preservation,
+sound-complete certificate transport and explicit polynomial resources on a
+common size carrier.  The arbitrary conventional conclusion rejects when those
+conditions are absent.
+
+The admitted descent/optimization and bounded-self-simulation laws close the
+computational components of their prior statements.  Biology and final
+cross-branch synthesis retain their separately owned components.
+
+The family certificate is
+[`audits/COMPUTATION_CORRESPONDENCE_FAMILY_COMPLETION_2026-07-28.json`](../../audits/COMPUTATION_CORRESPONDENCE_FAMILY_COMPLETION_2026-07-28.json).
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational paper establishes the Fold machine and shared computational
@@ -115,4 +160,3 @@ computer-science census and preserves unresolved frontier boundaries.
 Operational quantum algorithms move to Quantum Computation.  Software and
 hardware implementations move to Engineering Translation.  Unison AI, Fold
 Chess and Fold Go remain downstream testbeds.
-

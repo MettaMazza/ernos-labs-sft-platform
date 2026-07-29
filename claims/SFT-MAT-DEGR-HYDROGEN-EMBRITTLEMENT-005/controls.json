@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-HYDROGEN-EMBRITTLEMENT-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5ff78b3b01439885b6e49f5c4cf350f00d60c5aa5dafa40fc05f62facba3c0aa"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e056073e758e7650051778f5991cd64724117f16b043105adc9a71910d965179"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b0fb80bbb2e547fc710cdaef66347859b16adde485e12f3db8829fbb20e331ea"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f0bb2db96e0066bf3e3b732cc846092d6819265f9a1e21db42b859787fb47c7c"
+    }
+  ]
+}

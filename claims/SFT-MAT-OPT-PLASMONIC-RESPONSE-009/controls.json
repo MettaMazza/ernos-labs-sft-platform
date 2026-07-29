@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-PLASMONIC-RESPONSE-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:575b7e91867e84394f23f4fbc049f368f75b7582d5af3d1fdd5acf9f08779ab5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1825f63fe080da62ec19acaa474a344df1d1a2cc5a0657317f99a21fdc625e84"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1878f60738bcc7f8dcaded0c69f61c37e71c79f198bdadf5af627a9b090602d7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ec9de528b9a51846bda1c92fffdea492a4d372e25de6d0297ca9bea339e7b1e4"
+    }
+  ]
+}

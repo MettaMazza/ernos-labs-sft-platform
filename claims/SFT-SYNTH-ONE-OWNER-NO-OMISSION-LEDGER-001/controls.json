@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-ONE-OWNER-NO-OMISSION-LEDGER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c22f21d84bedc1d53da78b5bab697ccfa97d97962b12e26cd7dfc052512a8c72"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:870cdf4fc9575de65177f04f3803ae2af6c9fb7f82480e35814720e484081ce2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:79c67951145e0067598ef72c9a5062d58b4acf27d27d27980f86c41dcc979ac2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:215d39ae60e75198a6aee267cd8e42cd9c8cb37b391d83bab0d9818aea100b5b"
+    }
+  ]
+}

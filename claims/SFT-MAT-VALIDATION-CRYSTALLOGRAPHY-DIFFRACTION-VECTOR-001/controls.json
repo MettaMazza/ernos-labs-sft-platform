@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-CRYSTALLOGRAPHY-DIFFRACTION-VECTOR-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c93d2a4782a152aa9b43a19a166b18a0a049554a584a71f2b4b7b10a6dbef743"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:164c6ec877981e052ddf2056a4baeea2c7413173c269b241477b1a1be787204c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a08e47f9903ac11fc12f986975f3f5af0c054bf9e7d0ebe9b6eae7f6e7dc032b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:df33bec7eea1f0fd97441ab4966fafd5a0315a6df7f54db728d3a4f30a43822d"
+    }
+  ]
+}

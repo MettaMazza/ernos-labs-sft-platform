@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-VALID-GATE-CIRCUIT-003",
+  "data_source_ids": [
+    "QUANTUM-RECONCILIATION-V11",
+    "ALL-CURRENT-QUANTUM-FAMILY-AUDITS",
+    "ALL-CURRENT-QUANTUM-RECEIPTS",
+    "ALL-CURRENT-QUANTUM-ADVERSE-AND-HANDOFF-ROWS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d2100ae0ebfc543ef376ea16f35b50d3be0b15f23c5252729c259bce41f64ed5",
+  "falsification_condition": "Reject if the value-free registry, complete current receipt/evidence replay, adverse/ownership vector, source identity, candidate survivor, seal, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0786af04750abc14c90ed378aa65edabaa4f05d23ab7eeedc7936137af0ef3f9",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a41fecc93f885f121906e43c285b032a9f3b0826fcba9b91a015c03831c976c5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-VALID-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c1545327968403629b34b016bd5883a72e53c3bd29047e78767eef83a0c34b76",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:4293cf62780a344c7dc2aecd87391a04fb94a5cefbe3d8b83dc3a659afaa93f3",
+    "prediction_seal_hash": "sha256:55c305d3e91ad7dd1a26eea0ef97f2ec61048e42e281608e50873f0130ca07ee",
+    "program_hash": "sha256:7d45e4ec925608a104819651a1e18e88fd3022ac22db1d7ddae8beb05ccfbfd5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ff9e3effe854fd3439b2a0aa6c9c15161b222136a2cdf453fe17dc8a2205556b",
+    "target_material_present": false,
+    "trace_hash": "sha256:e3d4a4659e2de6bb4f3fa5c3b907945c7443b1edf7fe756eb8cc219e814a6ea2"
+  },
+  "measurement_receipt_hash": "sha256:e20acb7a1387a1351e547910555e39a4888e266c955fabd793446d2644c3001a",
+  "measurements": [
+    "VALID-003: gatex_vector",
+    "exact Quantum family validation replay: {\"all_rows_replayed\":true,\"controls_and_certificates_present\":true,\"family\":\"GATEX\",\"receipt_rows\":22}",
+    "complete formal/empirical/adverse custody: 12 vectors; all rows preserved",
+    "the Grand Lock binds current receipts and evidence without inventing downstream measured values or closing lawful extensions"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:48c16a8db6a7eff0a48f5783090bf0bf818a3aeed4db3e5d497c4c335ddc44c2",
+    "custodian_id": "SFT-EXP-QUANTUM-VALID-003-V1-custodian",
+    "experiment_registration_hash": "sha256:d2100ae0ebfc543ef376ea16f35b50d3be0b15f23c5252729c259bce41f64ed5",
+    "prediction_seal_hash": "sha256:55c305d3e91ad7dd1a26eea0ef97f2ec61048e42e281608e50873f0130ca07ee",
+    "registered_target_identity_hash": "sha256:ff9e3effe854fd3439b2a0aa6c9c15161b222136a2cdf453fe17dc8a2205556b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:72bf6e8a79ab4731cb4e64f0a650c366156e4e2b545e5fd776e3f7700b18f80e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:82335e86a9b8d7c9ab1a1634faaaf2f733d5fca64a68982b385ad146adae0cef"
+}

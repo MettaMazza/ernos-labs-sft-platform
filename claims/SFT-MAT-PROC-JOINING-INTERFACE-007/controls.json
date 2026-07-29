@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-JOINING-INTERFACE-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a692ceca76f429f6f3521c103f846979b7fc5b07a9b3126cc899687fe2b0456a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c4402ad345b80a3045db1b2b3f72bcbe279fb80466e56f2f9b52aa90a7137b2b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c8e54cceb16e14c05437f6fa453da19b0084c2c4ace470bb7947749dc6229142"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:91b20db38efaf657d1b8e914ede0f11c67d836e9d4ae51afc2e926f77996c5b8"
+    }
+  ]
+}

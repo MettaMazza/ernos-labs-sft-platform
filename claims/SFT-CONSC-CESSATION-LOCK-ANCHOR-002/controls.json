@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CONSC-CESSATION-LOCK-ANCHOR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:83bee440875ad73ebafd9605ac1fb942247a0cee928df1942d7f1a2f1890b498"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:463f73d794d0ece8b5194609bcac2f7035017a8065c9827c7e27994ae6ac9e6e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e71d13def5f8a1d37a0136bf46f16f72ce2109ba31f1e2a7f5d8e3eeb426869d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d6b1a8844ed1fdb203e99f557bd4df016c3ac3a234bc5fc5e40677e1d4412c7e"
+    }
+  ]
+}

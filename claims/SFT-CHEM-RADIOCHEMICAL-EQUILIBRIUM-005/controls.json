@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RADIOCHEMICAL-EQUILIBRIUM-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:a9c62cada930affa54c97c70a94c9ebdb9c938734720a656f4cb32492a53138f"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:720dbade1d46550917942824a02ed7dad670e645aac6c4af052941af32c2fa53"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3b97b38a9367da1ed323e7b6ce32fe87729e1773924ac82b8d4557c92093c582"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:5dec36e137f7359e18d203c6f80db3ff481276f1213203a4a323e68d5c791c3f"
+    }
+  ]
+}

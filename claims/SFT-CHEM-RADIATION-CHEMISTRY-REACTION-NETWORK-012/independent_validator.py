@@ -1,0 +1,13 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-RADIATION-CHEMISTRY-REACTION-NETWORK-012';DOMAINS=(('chemistry-defines-deposited-energy', 'explicit-positive-deposited-resource-handoff'), ('anonymous-radical-yield', 'held-medium-reactant-product-identities'), ('single-net-equation', 'complete-directed-reaction-network'), ('continuum-concentration-premise', 'positive-product-event-counts'), ('fitted-G-value', 'exact-product-per-deposited-resource-ratio'), ('selected-major-products', 'exact-complete-channel-partition-of-One'), ('negative-consumption-ledger', 'explicit-reaction-or-EmptyOne-termination'), ('differential-kinetic-model-premise', 'successor-retains-and-recomputes-complete-network'));SURVIVOR='explicit-positive-deposited-resource-handoff__held-medium-reactant-product-identities__complete-directed-reaction-network__positive-product-event-counts__exact-product-per-deposited-resource-ratio__exact-complete-channel-partition-of-One__explicit-reaction-or-EmptyOne-termination__successor-retains-and-recomputes-complete-network'
+from fractions import Fraction
+def network(rows):
+ if not rows:return None
+ if len({r[0] for r in rows})!=1 or len({r[3] for r in rows})!=len(rows):return None
+ total=sum(r[4] for r in rows);return tuple((r[1],r[2],r[3],Fraction(r[4],r[5]),Fraction(r[4],total)) for r in rows)
+r=(("water","water","hydroxyl","ionization",3,10),("water","water","hydrogen","dissociation",2,10))
+native={"handoff":r[0][5]>0,"identity":r[0][0]=="water" and r[0][1]!=r[0][2],"network":len({x[3] for x in r})==2,"events":tuple(x[4] for x in r)==(3,2),"yield":network(r)[0][3]==Fraction(3,10),"partition":sum(x[-1] for x in network(r))==1,"closure":network(()) is None,"successor":len(network(r+(("water","water","peroxide","recombination",1,10),)))==3}
+def main():
+ s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

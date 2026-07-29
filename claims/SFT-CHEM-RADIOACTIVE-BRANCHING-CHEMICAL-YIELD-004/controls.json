@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RADIOACTIVE-BRANCHING-CHEMICAL-YIELD-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:dc86736b14c945dffec5f7075509eff42bb53295d579562948a6b0a9bcfcc2c3"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f61e6511c309d1791a76b857122d48c6b8285efbd1b88fc1f7c3056b927d98b5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:04d81801f3d121383420d6ef12cbfb8437ecb90e3e1fa363385d160765795737"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:eb7df2f8b23b6a774f4bd7b4bce1dd6517cd0644a21c502fdad5971642f4a3f0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-INORGANIC-COORDINATION-VECTOR-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:301279d1f8578919eca5fa3a503a7c945cde3cb6788e03d4c7725267e9b2f131"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b35290ed85cfd01f1395288c8d96ab2b762e5870b666a6af69277a4e9d22da61"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ca6f44c27ececd18e43b9376404ceb8d18d7d9a645ef03bf631beb8289ee8b20"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a9bcfd00e9f1efe42fdbcf72c3a260892df5a93378317340d23c883dacb128f2"
+    }
+  ]
+}

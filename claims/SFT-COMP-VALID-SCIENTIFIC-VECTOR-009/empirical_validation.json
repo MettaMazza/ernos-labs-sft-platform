@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-VALID-SCIENTIFIC-VECTOR-009",
+  "data_source_ids": [
+    "SFT-V3-COMPUTATION-RECONCILIATION-V10",
+    "SFT-V3-CURRENT-ENGINE-RECEIPTS",
+    "SFT-V3-INDEPENDENT-CERTIFICATES"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bb4f0491e33326c01a18b1fe25b246a8e2529323975d11da144e5195dc93e0f7",
+  "falsification_condition": "Reject if the value-free registry, frozen obligation, current receipt replay, candidate census, survivor, control, observation, independent certificate, root lineage or explicit theorem and handoff boundary is missing, stale, changed, duplicated, suppressed or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d869c2824141b424cceba0c500e4c769306010009cf87e3af06018565c9be856",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8074f78046b8f5e5f962d11aa77cec6a1491bbbd0e0976a25546d011e9362b1a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-VALID-009-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3235f519bdc96c9b90eb66ddb5f1069510c3fec7b854bb4f65124826c3ff4ad7",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:06bdcefca7e53638d184924b058c145af82496a2dff444a8a40fef98e199fc69",
+    "prediction_seal_hash": "sha256:10de41cb791e503828db54ba3dc2340fef2a4964221309562cc833b076b492ea",
+    "program_hash": "sha256:c747ee80d87042a579186dbd060facc20877a8712f736a3b9281bd44cd0deb43",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0faba0c6f6967101c229fb62caa7186ecae94caaa69bbcb9b4dd872ef96d3b3e",
+    "target_material_present": false,
+    "trace_hash": "sha256:995ce7d79615469fc2bd43d9f72afa2909c85ec7fb710eef617177f95e636093"
+  },
+  "measurement_receipt_hash": "sha256:272820a419fff4c60a83030e142f0bdc9dacdc0b997f64ed9df03656f6ab5de2",
+  "measurements": [
+    "VALID-009: scix_validation",
+    "exact execution: {\"candidate_rows\":6400,\"claims\":25,\"family\":\"SCIX\",\"independent_reconstructions\":25,\"passed_controls\":100,\"post_registry_observations\":25,\"receipt_replay\":\"25/25\",\"unique_survivors\":25}",
+    "complete family observation custody: 12 records; all rows preserved",
+    "complete generated execution supplies the observation; no imported theorem answer, hidden branch or target-selected survivor enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:16b84853b95729614022b45495a583938666937ef7b23595d4e7e830c564a601",
+    "custodian_id": "SFT-EXP-COMP-VALID-009-V1-custodian",
+    "experiment_registration_hash": "sha256:bb4f0491e33326c01a18b1fe25b246a8e2529323975d11da144e5195dc93e0f7",
+    "prediction_seal_hash": "sha256:10de41cb791e503828db54ba3dc2340fef2a4964221309562cc833b076b492ea",
+    "registered_target_identity_hash": "sha256:0faba0c6f6967101c229fb62caa7186ecae94caaa69bbcb9b4dd872ef96d3b3e",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:653809b74aa828706bcb0d457545d31944133432e7b852f9e5b20da753453587"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a38989125e9d47c3af1342579e16cdca019c4b16a6e9ddf242fd20abf6539c67"
+}

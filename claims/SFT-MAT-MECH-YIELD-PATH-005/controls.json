@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-YIELD-PATH-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5ff26249ec2655aa5d46f5fbde588a20743b5d801dfd134a90e8c3b1efe77d50"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:035c3287589212fffe822d7193f716a8a3dbb542f852c91f1906c10ca663bf5a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:079c430bd619d33282d594a7b0f0cb6a3ffa392380a52d2b92efc75cf2546c12"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:759c37515efa675dc460969fc4962e7c6048c06915cf06f04966a662874ad64b"
+    }
+  ]
+}

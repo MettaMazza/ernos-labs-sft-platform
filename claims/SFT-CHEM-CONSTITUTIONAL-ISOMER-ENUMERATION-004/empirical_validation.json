@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-CONSTITUTIONAL-ISOMER-ENUMERATION-004",
+  "data_source_ids": [
+    "PUBCHEM-PUG-REST-AUTHORITY",
+    "PUBCHEM-C3H8O-FORMULA-CENSUS",
+    "PUBCHEM-ASPIRIN-CONFORMERS",
+    "PUBCHEM-ASPIRIN-SUBSTRUCTURE",
+    "PUBCHEM-ASPIRIN-SIMILARITY",
+    "CHEBI-REST-AUTHORITY",
+    "RHEA-IMMUTABLE-REACTION-SMILES",
+    "USPTO-IMMUTABLE-REACTION-SURFACE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f78d55dbce0b83542ad2343f4424bea737631cf038282acb782dff139a1b2b08",
+  "falsification_condition": "COMP-004 halts if its survivor is nonunique; a registered target, source route, graph, atom, bond, orientation, mapping, reaction row, provenance record, database conflict, adverse result or resource halt is omitted; the implementation-distinct reconstruction disagrees; a dependency is absent; or external data selects the native law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d488d98fa8c8b5b8f0e26cc96d7d8e5fb1f53962128282a379b25cdee0d46f42",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:da1e9ff3bbbb557bde0f679e521030d0d8c3398dffbe45eb1c0b7b50eacfc6be",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-CONSTITUTIONAL-ISOMER-ENUMERATION-004-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:87d3a9d9ed43f0ece7f86b82b4fdef3570013bdfb62a7a76b7764b05105bc476",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b8ee638b6cfb79754505dee7b02787e0d636a3fd3bf5e229fa9744360b0e44e4",
+    "prediction_seal_hash": "sha256:b14fd993f27b32e151422de8bf79b7d4a1eb85cbc7511b7c066ce03964b8f034",
+    "program_hash": "sha256:e1310195a2a6ff07c9e405dfc457d76808ac166e25395587e007c47b8c638ea5",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b608f65fa4c8a7ae2bd99d79e016a8fba79b841351d1c4f990cc8857a58dd085",
+    "target_material_present": false,
+    "trace_hash": "sha256:c826e2e8b843e949bf3a4b6187462300b2d8c76ce3818212d9cf19c9c5c4ef71"
+  },
+  "measurement_receipt_hash": "sha256:825cac40ad2dd6075ce06056887c1c9ec09b6027d073130ce159ae46b6ebaaef",
+  "measurements": [
+    "complete 59-artifact 444,644,830-byte post-seal surface retained",
+    "12 PubChem records, four ChEBI cross-source records, 36,444 Rhea reactions, 50,016 USPTO reactions and 1,065,119 atom-mapped reactions retained",
+    "all twelve registered invalid-property responses, low-confidence rows, conflicts, unavailable records and resource halts retained",
+    "all 8 separately registered claim targets retained",
+    "external formats, algorithms, scores and outcomes never select the Fold-native survivor"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:953c8ead94af28dc9622d40e613dd66e0b9c55902a4f2749ccf2e5158fddb701",
+    "custodian_id": "SFT-EXP-CHEM-CONSTITUTIONAL-ISOMER-ENUMERATION-004-external-target-custodian",
+    "experiment_registration_hash": "sha256:f78d55dbce0b83542ad2343f4424bea737631cf038282acb782dff139a1b2b08",
+    "prediction_seal_hash": "sha256:b14fd993f27b32e151422de8bf79b7d4a1eb85cbc7511b7c066ce03964b8f034",
+    "registered_target_identity_hash": "sha256:b608f65fa4c8a7ae2bd99d79e016a8fba79b841351d1c4f990cc8857a58dd085",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:128fb54dac3575f003e05d785858f8d1d8f35df14458464e84ad06f133b827ea"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:5f273f254fc2e647b21e98638b9427ebcd52f72eef643cd8bf36d93d5f3d8c00"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-FRACTURE-ENERGY-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:765150cfa51df6c6b3c542c521a29c837408c9288c5898b73d6616ba76cec57f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:6c2dd18c1f227964cba58f2df75c8bd4ae7529f212f04980422d4ccb25730eb0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e8b747f73338bc3a307156f216a5f7c052c840a409e1bdbb5f96ced89916d8ea"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a039145c9f07b3127cc23064c34d31bcd6f477a85cd0795f4596218e8b3e3abe"
+    }
+  ]
+}

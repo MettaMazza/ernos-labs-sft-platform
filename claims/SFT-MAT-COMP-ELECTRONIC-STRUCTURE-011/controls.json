@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-COMP-ELECTRONIC-STRUCTURE-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:80aa653cb434aa74f4b0ef1d8c3861e6aa38f096af0b2cbd823be5c314475d98"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:86271f2d78b15eb6c204d5daf60786f0654014a127270ded7bde33b38d2d8fa3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6b1a5254ffca0690bedd807eb6cf56e80070c0a1a337c8f402c210d16db09b51"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:15582fc1b507b32dbe2ef2cf0234a89c5954296e427a8eac23b3918c91be8e5a"
+    }
+  ]
+}

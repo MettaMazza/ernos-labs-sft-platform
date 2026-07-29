@@ -1,0 +1,63 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-HAND-CROSS-BRANCH-COMPLETENESS-006",
+  "data_source_ids": [
+    "QUANTUM-RECONCILIATION-V12",
+    "QUANTUM-GRAND-LOCK-012",
+    "CROSS-BRANCH-OWNERSHIP-MAP",
+    "PHYSICS-CHEMISTRY-MATERIALS-ENGINEERING-EXTENSION-HANDOFFS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:23ae4cdd436cc7e1515a3621a717931724bf36ca5b7093ca7047962c8ff10c4b",
+  "falsification_condition": "Reject if the value-free registry, single-owner handoff grammar, complete interface payload, status custody, source identity, candidate survivor, seal, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:154353710b08ad646ffd6e104b835061ebe7e0158ed26f1f5c40d7ea95c0c6e8",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:92c821462c671f4a38bbeafce45742c95ff133b9ce9e8dc74e43130b2098377c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-HAND-006-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:7176e4cc0483775b43367cc9a225ac93a0fcfcb47a5c3961f72f13baf37abfc1",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:20989e95f3ba85579f03b945a82d7bf0f678f3f50a37471635d60d2ed7c7318b",
+    "prediction_seal_hash": "sha256:9200eddbaa13a09d084540974709d5238fde12c5d8779510d395f017d28c5296",
+    "program_hash": "sha256:93d0579b4448a94cd95c7832f6538801a5e86d73a81a05819bf2380d5b321979",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:152e3280edbd89a75fa303aa97c5712d754508ccaa6fc44d36c657dcfa23c0a2",
+    "target_material_present": false,
+    "trace_hash": "sha256:49091ae7873ebd0530fce67de2796f5cc8499186a3ab0d955a2582d04df40ca9"
+  },
+  "measurement_receipt_hash": "sha256:85a9e123f4460e091beddbf312fdb7cd94cc249c65e720ce3ade1f320ca1027b",
+  "measurements": [
+    "HAND-006: cross_branch_completeness",
+    "exact Quantum ownership/handoff execution: {\"duplicate_owners\":0,\"execution_rows\":6,\"omitted_handoffs\":0,\"registered_handoffs\":6}",
+    "complete owner, consumer and extension custody: 6 records; all rows preserved",
+    "downstream sciences and engineering own their measurements and implementations; no handoff invents a value or selects the source law"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:de6bfd225a39fbbf5ded3b1484a6a35655a18ecfd801404d9f472c06a6cced5b",
+    "custodian_id": "SFT-EXP-QUANTUM-HAND-006-V1-custodian",
+    "experiment_registration_hash": "sha256:23ae4cdd436cc7e1515a3621a717931724bf36ca5b7093ca7047962c8ff10c4b",
+    "prediction_seal_hash": "sha256:9200eddbaa13a09d084540974709d5238fde12c5d8779510d395f017d28c5296",
+    "registered_target_identity_hash": "sha256:152e3280edbd89a75fa303aa97c5712d754508ccaa6fc44d36c657dcfa23c0a2",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:c31b2d8b997ab17072281d65db7825f8288f8c7717d114d4bdcaf10ef937b37e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e61eb09b8421fa367b82e13c03f8c99e927b6fd24269c4c5b05df2e031f22350"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-LOGIC-FINITE-COLLECTION-010",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "An imported language assumes the grammar.",
+      "passed": true,
+      "receipt_hash": "sha256:98dc53170d436f6584ddd39b3ed90e968cffe68567fff62eae91291e7e7be689"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported logical system, theorem answer or target outcome selects the result; host 0 denotes structural absence or counts artifacts only and is not an SFT number object; truth orientation is held or opposed structure and never a negative numerical scalar; no unrestricted infinite language, universe, compactness or self-consistency claim; no opaque theorem prover or proof step lacking explicit premises and rule custody; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:e14f3685465f4cd6f8b5c0ef44656ae505d28e8a5ee29702b1d0e4818d49b415"
+    }
+  ]
+}

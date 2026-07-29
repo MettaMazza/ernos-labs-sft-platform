@@ -57,6 +57,29 @@ The full census covers:
 - falsifiable discriminators among competing realization structures; and
 - ethical consequences stated separately from empirical admission.
 
+## Mandatory prior-corpus return families
+
+Status: completed to the frozen current standard and open to lawful extension.
+The stronger inherited family now has five new untouched-engine receipts:
+stable directional synaesthesia; the exact one-seventh, two-sevenths,
+four-sevenths three-quality orbit and nonordinary-report boundary; the exact
+one-third/two-thirds sleep-dream orbit; the releasable half-One lock versus
+fixed-One cessation distinction; and a 27-source identity-first comparison
+that preserves favorable, heterogeneous, non-purpose-matched and unresolved
+rows. Determined agency and self-opacity were already admitted at the required
+strength and were not replayed. Bounded placebo/nocebo physiology was completed
+in Medicine under its correct owner.
+
+The already admitted substrate-independent criterion, feed-forward boundary,
+qualia composition and red-of-red trace remain full dependencies and must
+never be reduced to a generic hard-problem discussion. The completion evidence
+is `audits/CONSCIOUSNESS_NONORDINARY_FAMILY_COMPLETION_2026-07-28.json`; its
+scope was frozen before implementation in
+`audits/CONSCIOUSNESS_NONORDINARY_WHOLE_SUBCATEGORY_BOUNDARY_2026-07-28.json`.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational edition must include the complete qualia and red-of-red trace,

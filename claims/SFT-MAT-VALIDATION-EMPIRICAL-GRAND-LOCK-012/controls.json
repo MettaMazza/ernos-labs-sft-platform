@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-EMPIRICAL-GRAND-LOCK-012",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0bf419e47e3b09d77df583c35790e0a19b5392d9cf5b92a042564cfbbfdc643e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:feeedd55021f74cd0008a9b4a1f3b715198ddb784e0b461a57214583c829a4de"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8c26c445a0eca677362b75e3afff8e42d54c02425554b59d4f5b83e146149e0c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ccab034c1a8bcf67eb7406384448cbf1c86af25a4a636226ddee7a80965b8401"
+    }
+  ]
+}

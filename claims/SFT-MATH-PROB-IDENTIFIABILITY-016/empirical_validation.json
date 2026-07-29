@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MATH-PROB-IDENTIFIABILITY-016",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-PROBABILITY-OBSERVER",
+    "SFT-V1-V2-MATHEMATICS-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:e2c53d40a3187fdf07075bc42b5e4e032c384f8d1833ee26f91f51847c192e4e",
+  "falsification_condition": "Reject if the value-free registry, complete deterministic support census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:14c814f71fd4d94f818b599dcca97c58ed9c0c27bd62fa6940dc0b28227edcc2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:416f3a9414d1dcc7f0d49b71468c7b555094c68f3cbe20a1a811599425b416ce",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MATH-PROB-016-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0f599b4dcf30c46d0c5c3fccc2ac15d83159f5345f41bb25779453ab843dbe5c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cc774050a40924ccd6391aede066b6d5fb2155b195438547976c9c0aafeb300e",
+    "prediction_seal_hash": "sha256:478913c572cb136bf91de659671148bc3d35098420fbb4c5e3cf0d94651f1cec",
+    "program_hash": "sha256:af70c982be11b565481411d1595c76e642e7c4cb0ee6faf8cc643629ce67f53c",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:d550c387954b14cc7a01b7e75ddb8f47a7893c7c276c12813b9e7bf5ef67b433",
+    "target_material_present": false,
+    "trace_hash": "sha256:94ecbc9164d05aff9e73f30f53ea37a9fde00177a2a04a27890690a781c1fa25"
+  },
+  "measurement_receipt_hash": "sha256:49eb35969e374e515de62367a020d40151355ba3ae5880abd019fab0c1f444f4",
+  "measurements": [
+    "PROB-016: identifiability",
+    "exact observation: {\"identifiable_with_latent_custody\":true,\"latent_records\":[[\"1/4\",\"3/4\"],[\"1/2\",\"1/2\"]],\"merged_observation_weight\":1,\"nonidentifiable_after_merge\":true}",
+    "complete family observation custody: 16 records; all rows preserved",
+    "complete deterministic path and support enumeration supplies the correspondence; no ontic randomness, fitted limit, forbidden scalar or opaque solver enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:dcbb3ee6535307b15bcf0e0db12682d674417ef4ae897c4ca368f78efceff8ce",
+    "custodian_id": "SFT-EXP-MATH-PROB-016-V1-custodian",
+    "experiment_registration_hash": "sha256:e2c53d40a3187fdf07075bc42b5e4e032c384f8d1833ee26f91f51847c192e4e",
+    "prediction_seal_hash": "sha256:478913c572cb136bf91de659671148bc3d35098420fbb4c5e3cf0d94651f1cec",
+    "registered_target_identity_hash": "sha256:d550c387954b14cc7a01b7e75ddb8f47a7893c7c276c12813b9e7bf5ef67b433",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b7237d1bb6f6c4290b13dee5a9504b8620cbd94e6a74c62551076bc6f9b6ac4b"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a9b306094f70cf6480eba061afcb227df5c9d4c23b4b5a7b053dca2d25be6bf0"
+}

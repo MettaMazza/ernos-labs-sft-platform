@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RETROSYNTHETIC-DECOMPOSITION-RECONSTRUCTION-016",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:0b72f405b358e02add2df4b70db9039d419032dea626816a305efebd23a5a1b1"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f11e5afa2d124f6b341da50e464139d1dcc1d5f36dafd64334fa5cab8a52231f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c441958ce77e7521e7c5006be201d30c30542c5a676fe175a5cfccd5a91ed057"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:76ae0f6df30327df9f68536a0529cc2256a80be00f88b5f9a901cd20dfae8fab"
+    }
+  ]
+}

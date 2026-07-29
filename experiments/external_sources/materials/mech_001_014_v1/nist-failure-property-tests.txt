@@ -1,0 +1,858 @@
+ 
+ 
+NISTIR 7847 
+ 
+Mechanical Properties Testing for Metal 
+Parts Made via Additive Manufacturing: A 
+Review of the State of the Art of Mechanical 
+Property Testing 
+ 
+John Slotwinski 
+April Cooke 
+Shawn Moylan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+NISTIR 7847 
+ 
+ 
+Mechanical Properties Testing for Metal 
+Parts Made via Additive Manufacturing: A 
+Review of the State of the Art of Mechanical 
+Property Testing 
+ 
+ 
+John Slotwinski 
+April Cooke 
+Shawn Moylan 
+ 
+Intelligent Systems Division 
+Engineering Laboratory 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+March 2012 
+ 
+ 
+ 
+ 
+U.S. Department of Commerce 
+John E. Bryson, Secretary 
+ 
+National Institute of Standards and Technology 
+Patrick D. Gallagher, Under Secretary of Commerce for Standards and Technology and Director 
+
+ 
+ 
+Certain commercial entities, equipment, or materials may be identified in this 
+document in order to describe an experimental procedure or concept adequately.  
+Such identification is not intended to imply recommendation or endorsement by the 
+National Institute of Standards and Technology, nor is it intended to imply that the 
+entities, materials, or equipment are necessarily the best available for the purpose. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+National Institute of Standards and Technology IR 7847 
+Natl. Inst. Stand. Technol. IR 7847, 22 Pages (March, 2012) 
+CODEN: NTNOEF 
+  
+
+4 
+ 
+TABLE OF CONTENTS 
+ 
+INTRODUCTION          5 
+ 
+Background           5 
+Scope            5 
+ 
+DEFORMATION PROPERTIES        7 
+ 
+General Description          7 
+Properties Measured          8 
+Specific Tests           8 
+Tension Tests 
+Compression Tests 
+Bearing Tests 
+Modulus Tests  
+Hardness Tests 
+ 
+FAILURE PROPERTIES         11 
+ 
+General Description          11 
+Properties Measured          11 
+Specific Tests           11 
+Fatigue 
+Fracture toughness 
+Crack Growth 
+ 
+CONCLUSIONS AND NEXT STEPs       15 
+ 
+ACKNOWLEDGEMENTS         16 
+ 
+APPENDIX A: DEFINITIONS OF MATERIAL PROPERTY TERMS   17 
+REFERENCES          20 
+  
+
+5 
+ 
+INTRODUCTION 
+ 
+Background 
+ 
+This National Institute of Standards and Technology Internal Report (NISTIR)  is the first in a series of 
+planned reports from the National Institute of Standards and Technology’s (NIST) Engineering 
+Laboratory project titled Materials Standards for Additive Manufacturing.
+1  This project provides the 
+measurement science for the additive manufacturing industry to measure material properties in a 
+standardized way.  Currently there are no consensus -based standards in this area, except for those 
+pertaining to terminology and data file formats.  This project, in co njunction with NIST’s  Fundamental 
+Measurement Science for Additive Processes  project,2 will provide the technical foundation and 
+documentary standards development necessary to develop new consensus-based standards. This will be 
+done via ASTM -International’s (hereafter referred to as ‘ASTM’) Committee F42 on Additive 
+Manufacturing Technologies and the newly formed International Organization for Standardization (ISO) 
+TC261 committee on Additive Manufacturing. 
+ 
+Determining the properties of the po wder used for metal -based additive manufacturing, as well as the 
+properties of the resulting bulk metal material, is a necessary condition for industry to be able to 
+confidently select powder and produce consistent parts with known and predictable properti es. By 
+2014, the project team will  develop and deliver enhanced measurement techniques that support new, 
+standardized methods for quantifying the material properties of both the powders used for additive 
+manufacturing and the resulting manufactured products.  
+ 
+The project’s research plan includes assessments of  the current state- of-the-art testing methods for 
+determining properties of both bulk metal materials , which is the focus of this report,  and raw metal 
+powder, which will be reported on in mid -2012. These methods will then be evaluated for applicability 
+and enhanced for use on additively manufactured parts and raw additive powder. NIST’s new Direct 
+Metal Laser Sintering (DMLS) machine will be used to make parts, and these new methods will be 
+rigorously implemented. Using these enhanced methods, the sensitivity of part material properties to 
+variations in initial powder properties will be determined.  This is a critical step necessary for 
+determination of scopes of relevant material standards for additiv e manufacturing  and for the 
+production of additive manufacturing parts with consistent properties.   
+ 
+Scope 
+ 
+In order to perform this state -of-the-art assessment of bulk metal material property measurements in a 
+rational and reasonable way, the focus was o n existing consensus -based standards. Careful scoping of 
+existing standards was first performed to ensure that the assessment was both representative of the 
+                                                           
+1 http://www.nist.gov/el/isd/sbm/matstandaddmanu.cfm  
+2 http://www.nist.gov/el/isd/sbm/fundmeasursci.cfm  
+
+6 
+ 
+state-of-the-art, and at the same time not unwieldy. To do this, three criteria were applied to determine 
+which standards should be included in this assessment: 
+• Metals – Only standardized methods for measuring the mechanical properties of metal parts 
+were included.  Mechanical property measurements for non -metals such as polymers or 
+ceramics were excluded. 
+• Bulk Mechanical Properties – Only standardized methods for measu ring bulk properties were 
+included.  Mechanical property measurements of extremely localized properties, such as those 
+obtained by micro-indentation methods, were excluded.   This criterion does not preclude most 
+standardized hardness tests,  because the res ults of these tests are reflective of the bulk 
+properties of the specimen.  
+• Focus on International Standards – This was done in order to make the assessment practical.  A 
+cursory review of standards from the major  Standards Development Organizations showed that 
+the ASTM-International and the International Organization for Standardization  mechanical 
+standards are representative of all the pertinent standardized mechanical testing methods. 
+In addition, care was taken to ensure that both all of the mechanical testing characteristics required by 
+the MMPDS3 and the characteristics typically reported by the additive manufacturing original equipment 
+suppliers were included in the assessment.  The MMPDS includes both required tests (tensile, 
+compression, shear, bearing, moduli) and recommended tests (tests at elevated temperatures, fatigue, 
+fracture toughness, crack growth  [1].)  EOS  – a German producer of additive manufacturing machines 
+with a significant market presence in the U.S. –  reports tensile strength, yield point, hardness, and 
+fatigue strength for their materials  [2]. The criteria above were applied to  a total of 86 standards –  58 
+ASTM and 29 ISO – covering the measurement of material properties.   
+ 
+The following is organized into two sections: (1) deformat ion properties ( where the tests attempt to 
+quantify how a material will yield or deform ) and (2) failure properties (where  the tests attempt to 
+quantify the potential for the component to rupture or fail .)   Deformation property tests include 
+tension, comp ression, bearing, modulus, and hardness tests. Failure property tests include f atigue, 
+fracture toughness, and crack growth tests.  Within each of these general test classifications the most 
+general test is first described, followed by modified tests that have testing features or parameters that 
+make them distinct from the most general test. 
+  
+                                                           
+3 The MMPDS is the Metallic Materials Properties Database and Standardization.  This database replaced MIL -
+HDBK-5 and is the preeminent source for aerospace component design allowables.  See http://  
+http://projects.battelle.org/mmpds/ for further information. 
+
+7 
+ 
+DEFORMATION PROPERTIES 
+ 
+General Description 
+ 
+One criterion for the selection of engineering materials for particular applications is how those materials 
+behave when subjected to forces, since parts made from those materials will typically be subjected to 
+forces while in service.  This is particularly true for parts and structures used in the aerospace and 
+biomedical industry.     
+ 
+If a material is subjected to a static or very slowly changing stress and that stress is applied uniformly 
+over a cross section of that material, then the resulting deformation behavior can be characterized by a 
+simple stress -strain test.   The stress can be applied in several different ways relative to the sample 
+including tension (stretching), compression (sq ueezing), shear ( sliding), and torsion (twisting.)   The 
+applied stress causes a certain amount of displacement, or strain, in the test specimen.  The graphical 
+representation of the amount of strain (on the abscissa) resulting from the applied stress (on the 
+ordinate) is referred to as a stress-strain diagram.    
+ 
+For most metals that are stressed in tension at low levels , the stress and strain are proportional to each  
+other and the constant of proportionality is Young’s Modulus [3]. This type of low-level stress where this 
+proportionality is maintained is called elastic deformation.  Under elastic deformation the material 
+returns to its original configuration after the stress is removed. For some materials the initial elastic 
+portion of the s tress-strain relationship is not linear; in these cases the tangent (the slope of the stress -
+strain curve at a specified value of stress) and/or secant modulus (the slope of a line drawn between the 
+origin and a given point on the stress-strain curve) is used. 
+ 
+Above a certain level of strain most metal materials no longer strain elastically, and non -recoverable 
+(i.e., the material does not return to its original configuration  when the stress is released ) plastic 
+deformation occurs.  A subset of these exhib it yield -point phenomena, where the stress -strain curve 
+drops precipitously from the end -point of the elastic deformation (called the upper yield point), and 
+then remains nearly constant for further increasing strain (called the lower yield point) before again 
+gradually increasing for further increases in strain  [3].  If the strain is continued to even higher levels 
+most materials eventually fail via rupturing.   
+ 
+Indentation tests, which measure the resistance of a material to plastic deformation, are also included 
+here.  These types of measures use a specified load and loading condition to force a small indent er into 
+the material surface.  The size of the indent is then measured, from which the material hardness can be 
+computed.  Since different hardnes s tests employ different indenters with different sizes and 
+geometries, the resulting hardness value applies only to the particular test being used.  Hence hardness 
+measurements are mostly relative in nature [3, 4].   
+ 
+ 
+
+8 
+ 
+Properties Measured 
+ 
+Deformation property tests, which include  tension, compression, modulus, and hardness tests, provide  
+the measured material properties  listed below.  Definitions for many of these terms can be found in 
+Appendix A. 
+ 
+Stress-Strain Diagram 
+Torque-Twist Diagram 
+Yield Strength 
+Yield Point 
+Tensile Strength 
+Rupture Strength 
+Upper Yield Strength 
+Lower Yield Strength 
+Compressive Strength 
+Bearing Strength 
+Ductility 
+Young’s Modulus 
+Shear Modulus 
+Poisson’s Ratio 
+Tangent Modulus 
+Secant Modulus 
+Chord Modulus 
+Brinell Hardness Number 
+Rockwell Hardness Number 
+Knoop Hardness Number 
+Vickers Hardness Number 
+Scleroscope Hardness Number 
+Webster Hardness 
+Indentation Hardness 
+Indentation Modulus 
+Elasto-plastic Hardness 
+  
+ 
+ 
+Specific Tests 
+ 
+Tension Tests 
+ 
+ASTM E8 [5] is the basic method for uniaxial tension testing of metals at room temperatures (10 °C – 38 
+°C).  ISO 6892 -1 [6] is the equivalent ISO test and includes additional test sample geometries such as 
+sheet and wire.  Both methods give the material’s measured yield and tensile strengths.  ASTM E21 [ 7] 
+and ISO 6892-2 [8] provide methods for tension test of metals at elevated temperatures (above 38  °C.)  
+ISO 15579 is similar to ASTM E8 and ISO 6892 -1 but provides guidance for testing at low temperatures, 
+between 10 °C and -196 °C [9].  Guidance for tension testing of metals at cryogenic temperatures (less 
+than -196 °C) is covered in ASTM E1450 [10] and ISO 19819 [11]. 
+ 
+ASTM also has two metal material tension tests, ASTM E292 [ 12], and ASTM E740 [13] , that are similar 
+to E8, except that the samples are first prepared with a notch or surface-crack before subjecting them to 
+tension.  ASTM E292 is  explicitly performed  at elevated temperatures.  These tests provide the test 
+material’s rupture strength (E292) or metal plate yield strength (E740.) 
+ 
+Finally, there are two ISO  standards, ISO 26203 [ 14] and ISO 26203 [ 15], that describe testing of metal 
+sheet material at high-strain rates (10-2 s-1 to 103 s-1 and higher), such as the testing of sheet metal for 
+automotive bodies.  There do not appear to be any equivalent standards in ASTM. 
+
+9 
+ 
+ 
+Compression Tests 
+ 
+ASTM E9 [ 16] is the basic method for uniaxial compression testing of metallic samples at room 
+temperatures.  ASTM standard practice E209 [17] is the same test performed at elevated and uniform 
+temperatures, up to and beyond 538 °C.  There do not appear to be equivalent test standards in ISO.   
+ 
+Bearing Tests 
+ 
+ASTM E238 appears to be the only ASTM or ISO method for pin -type bearing tests [ 18], which 
+determines the bearing yield strength and bearing strength for a rectangular metal specimen containing 
+a hole for a bearing pin.   The load on the bearing pin is  increased at a rate of 0.05 bearing -strain per 
+minute and a plot of the bearing pin load versus be aring deformation is made. From this data the 
+bearing yield strength and bearing strength are determined. 
+ 
+Modulus Tests  
+ 
+ASTM E111 is the basic method  for conducting modulus tests  [19]; it builds  on the test methods 
+specified in ASTM E8 for tension and E9 for compression by providing additional guidance on  the 
+number of required trials, specimen preparation , and test tempera tures.  It also defines how to 
+determine the Young’s, Tangent, and Chord modulus  values from the tens ion and compression test 
+data. ASTM E111 includes guidance for modulus measurements at both high and low temperatures.  
+ASTM E143 provides the basic method for measuring the shear modulu s at room temperature  [20].  
+Both of the E143 and  E111 methods involve subjecting the test specimens to macroscopic tension, 
+compression, or twisting. 
+ 
+Alternatively, dynamic methods that employ more microscopic deformations may be employed. ASTM  
+E1875 describes a vibrational method that induces a sonic resonance throughout the entire sample, 
+using a variable -frequency audio oscillator to generate a sinusoidal signal and a power- amplified 
+transducer to convert that signal into a mechanical driving vibration  [21]. A suspension-coupling system 
+supports the test spec imen and another transducer detects the mechanical vibration in the sample.  If 
+both the flexural mode and torsional mechanical resonances of the specimen are measureable, and if 
+the geometry and mass are known , then the Young’s and Shear modulus and Poisson’s Ratio can be 
+determined.  This method includes guidance for making measurements made at  room, elevated, and 
+very low temperatures, across the range -195 °C to 1200 °C.  ASTM E1876 is similar, and is also a micro -
+scale deformation method; however this test uses a more localized elastic excitation, typically generated 
+by an impulse tool  [22].  Both  E1875 and E1876 methods give the dynamic Young’s and Shear Modul i 
+and Poisson’s Ratio.  With careful experiments, ultrasonic nondestructive testing techniques , which are 
+similar conceptually to E1876, can measure the various dynamic m oduli and Poisson’s Ratio of a 
+suitably-sized metal material with a measurement uncertainty of better than 1 % (k=2) [23].   
+ 
+ 
+
+10 
+ 
+Hardness Tests 
+ 
+Hardness tests give a general indication of the strength of a material and its resistance to deformation  
+[3].  Hardness is not a fundamental material property, however, due to the wide variety of indenters and 
+a material’s resistance to indentation being dependant on the size and geometry of the indenter and the 
+applied load [3, 4].  Hence it is difficult to make quantified comparisons between material tests made 
+with different indenters.  ASTM E140 [24] does provide approximate conversions of the hardness values 
+measured with different types of indenters. 
+ 
+ASTM E10 [ 25] and ISO 6506 -1 [26] provide guidance for hardness tests of metal samples using Brinell 
+indenters, which are spherical in shape, at room temperatures (10  °C to 35 °C).  ASTM E18 [27] and ISO 
+6508 [28] provide th e same for Rockwell ( either tungsten carbide balls (Rockwell B) or diamond 
+spheroconical indenters (Rockwell C ) hardness tests , also at room temperatures.   Knoop and Vickers 
+indentation tests are covered in ASTM E384 [29] and ISO 4545-1 [30] (for Knoop) and ISO 6507-1 [31] for 
+Knoop and Vickers, respectively.  Both Knoop and Vickers indenters are pyramidal in shape , but with 
+different face angles.   
+ 
+The above methods all involve the application of a static (or quasi- static) load.  ASTM E448 [ 32] 
+describes a Scleroscope  Hardness measurement, which is a dynamic measurement.   For this test an 
+indenter is dropped from a height above the metal test sample, and the magnitude of the rebound 
+height is used to determine the hardness.  ISO 14577-1 is also an elastic method, and measures both the 
+plastic and elastic deformation of the metal material during application of the indenter, in order to 
+compute the indentation modulus and the elasto-plastic hardness [33]. 
+ 
+Four  ASTM standards also provide guidance on three hand-held instrument methods which are useful in 
+production environments for quality control purposes.  These include the Webster  [34] and Barcol  
+Indentation Hardness [35] (both of which are not as sensitive to material properties as Rockwell or 
+Brinell), and the Rockwell B- Scale Hardness, which is measured using a Newage Instrument  [36].  All 
+three of these portable methods are only standardized in ASTM for use on aluminum materials.  ASTM 
+E110 also includes portable hardness testers [37]. 
+ 
+Finally, ISO Technical Report 29381 [38] summarizes the state of the art in deriving bulk material tensile 
+properties from the indentation response of the material.  It describes three techniques: representative 
+stress-strain, inverse finite elem ent analysis methods, and the use of neural networks.  However, all of 
+these techniques assume a test piece that is free of residual stresses.
+  
+
+11 
+ 
+FAILURE PROPERTIES 
+ 
+General Description 
+  
+Part failure is an undesirable aspect of in -service parts that is difficult to predict . A number of mostly 
+qualitative tests have been devised to determine a part’s or material’s resistance to failure under cyclical 
+stress or impacts.  These include impact tests and cyclical stress tests, which are often made on 
+specimens that include pre -made cracks.  These types of tests are also useful for materials that don’t 
+strain well and rupture quickly under applied stress, thus making them problematic for deformation 
+testing. 
+ 
+Properties Measured 
+ 
+Failure property tests, which includ e fatigue, fracture toughness, and crack growth tests, provide the 
+measured material properties listed below.  Definitions for many of  these terms can be found in 
+Appendix A. 
+ 
+Number of Cycles to Failure 
+Stress/Strain Ranges 
+Strain Ratio 
+Fatigue Crack Growth Rates as a Function of Stress-Intensity Factor Range (∆K) 
+Fatigue Life 
+Tensile and Compressive Stresses as a Function of Number of Fatigue Cycles 
+Representative Cycles of Mechanical Strain Versus Stress/Temperature 
+Plane-Strain Fracture Toughness 
+Fracture Toughness 
+Plain-Strain Crack-Arrest Fracture Toughness 
+Crack-Tip Opening displacement  
+Absorbed Impact Energy 
+Specimen Residual Strength 
+Creep Crack Growth Rate 
+Threshold Stress Intensity Factor 
+Crack Resistance Curve 
+ 
+ 
+Specific Tests 
+ 
+Fatigue 
+ 
+In basic fatigue tests a test specimen is subjected to cyclical stresses (e.g., tension and compression) 
+until the specimen fails.  ASTM E466 is the basic ASTM method for room -temperature fatigue testing of 
+
+12 
+ 
+metals [39] and ISO 1099 is the equivalent ISO standard test method [ 40], although 1099 inclu des 
+guidance on performing the tests at higher temperatures.  ISO 1099 provides a quantitative measure of 
+the fatigue life, while E466 just determines whether a part will fail for a given set of material and testing 
+conditions, such as material composition , geometry, and surface condition.  The basic test subjects 
+either un-notched or pre -notched specimens to a constant amplitude periodic axial force.  ASTM E606 
+[41] is similar to E466, but is strain-controlled instead of force-controlled fatigue, and provides guidance 
+on determining the fatigue life, similar to ISO 1099.  In addition, E606 determines the cyclic stresses and 
+strains at any time during the tests. 
+ 
+ASTM E647 is a f atigue test that measures the rate of crack growth in a specimen [ 42] and determines 
+the rate as a function of the stress -intensity factor range ( ∆K).  The method uses cyclic loading of 
+notched specimens that have been pre-cracked.  The crack size is measured as a function of the number 
+of fatigue cycles, and the crack growth rates are expressed in terms of ∆ K, which is calculated from 
+linear stress analysis.  ISO 12108 is the equivalent ISO test [43]. 
+ 
+ASTM E2368 is a practice for strain -controlled thermomechanical fatigue testing, which occurs when a 
+uniform temperature and strain field over the specimen are simultaneously varied and independently 
+controlled [44].  ISO 12111 is the equivalent ISO test method [ 45].  ASTM E2714 is the ASTM test 
+method for creep -fatigue testing [ 46].  This test determin es deformation and crack formation or crack 
+nucleation as a result of constant -amplitude strain -controlled tests or constant- amplitude force -
+controlled tests (see ASTM E606, ASTM 466, ISO 12106, and ISO 1099.)  These tests are typically done at 
+elevated te mperatures and involve sequential or simultaneous application of the loading conditions 
+necessary to generate cyclical deformation or damage enhanced by creep deformation or damage.  The 
+distinction between E2714 and E466 is that E2714 involves much longer  hold times.  ISO 12111 is the 
+equivalent ISO test method for strain-controlled thermomechanical fatigue testing [45]. 
+ 
+ASTM E2760 is the ASTM test method for creep -fatigue crack growth testing [47].  E2760 covers fatigue 
+cycling with long loading/unloading rates and/or hold times.  This causes creep deformation in t he pre-
+cracked crack tip and the creep deformation is then responsible for enhanced crack growth during each 
+loading cycle. 
+ 
+ASTM E2789 is the ASTM guide for fretting fatigue testing [48].  E466 is still the basic method, but E2789 
+provides guidance for fatigue testing of small amplitude oscillatory tangential motion between two solid 
+surfaces in contact.  Fretting fatigue is generally characterized by a sharp decrease in fatigue life at the 
+same stress level of a standard specimen.  This decrease is due to the shortened time required to form a 
+crack and the acceleration of the crack growth under the coupling of the fretting and bulk cyclical 
+stresses and strains. 
+ 
+ISO 1143 measures the fatigue life o f rotating bar bending fatigue testing [ 49].  This method uses metal 
+samples with a circular cross -section, which are rotated and subjected to a bending moment.  ISO 1352 
+is similar to ISO 1143 but is for torque -controlled fatigue testing [ 50].  ISO 12106 covers fatigue testing 
+of metal samples where the axial- strain is controlled [ 51].  This is similar to ISO 1099 but is a low -cycle 
+
+13 
+ 
+fatigue test that is performed until specimen failure.  The standard has guidance on performing the test 
+at both low and high temperatures. 
+ 
+Fracture toughness 
+ 
+The basic fracture toughness test subjects a pre -cracked specimen to strain, in an attempt to initiate 
+crack growth and fracture the material.  The ability of a material to resist this fracture is a measure of its 
+fracture toughness.  ASTM E399 [ 52] and E1820 [ 53] are the basic ASTM test method s for determining 
+the linear-elastic plain-strain fracture toughness of metals.  The E399  test is performed on metals under 
+linear-elastic, plane-strain conditions using fatigue pre-cracked specimens that are subjected to a slowly 
+increasing crack -displacement force.  ISO 12737 [ 54] is the equivalent ISO test method  of E399 .   In 
+ASTM E1820 a precracked fatigue test specimen is loaded to induce either stable or unstable crack 
+extensions.  ISO 12135 [ 55] is the ISO equivalent of E1820, and ISO 22889 is similar, but provides 
+guidance for specimens that are very small, and hence have size sensitivities [56].  ASTM B646 [57] is the 
+standard practice for fracture toughness of aluminum alloys, and provides  information supplementary 
+to E399 on specimen size, analysis, and interpretation of results, especially for parts of varying thickness, 
+when aluminum alloys are tested.  ASTM B645 [58] is supplementary to both E399 and B646, and is the 
+basic test method for plane- strain fracture to ughness measurements of aluminum specimens.  ASTM 
+B909 [59] provides additional guidance for fracture toughness tests of aluminum where complete stress 
+relief of the aluminum samples is not possible  and ASTM E1304 covers plane -strain fracture toughness 
+of metal materials that have a Chevron-shaped-notch [60].  
+ 
+ASTM E23 contains the standard methods for absorbed impact energy measurements of notched metal 
+bars using both Charpy and Izod test methods [61].  These two methods have differences in the shape of 
+the notches, the bar holding mechanisms, the impact locations, and the sample dimensions.  ASTM E23 
+has detailed information about testing at different temperatures.  ISO 148 -1 is the equivalent ISO 
+Charpy test [ 62] and in addition provides guidance on performing the test at elevated or decreased 
+temperatures using liquid or gaseous mediums.  ISO 14556 is similar to 148 -1 but is for steel materials 
+[63].   
+ 
+ASTM E1221 is the ASTM test method for determining the plane- strain crack-arrest fracture toughness 
+of ferritic steels [64].  There does not appear to be an equivalent ISO test.  ASTM E1290 [65] is the ASTM 
+test method for crack -tip opening displacement (CTOD) fracture toughness measurements.  This test 
+determines the critical CTOD values, which are used to mea sured cleavage crack initiation toughness for 
+materials that exhibit a change from ductile to brittle behavior with decreasing temperatures.  Finally, 
+ISO 27306 is a standard method of constraint loss correction of CTOD fracture toughness for fracture 
+assessment of steel components [66].  Specifically, this method converts fracture toughness from 
+laboratory specimens to the equivalent value for structural components.  There does not appear to be 
+an equivalent ASTM standard. 
+ 
+ 
+ 
+
+14 
+ 
+ 
+Crack Growth 
+ 
+In basic crack growth testing a pre-cracked specimen is subjected to stress, and the rate of growth of the 
+crack(s) is measured.  ASTM has four standards that cover crack growth testing.  ASTM E740 [ 13] is the 
+practice for fracture testing with surface -crack tension specimens.  This practice covers the design, 
+preparation, and testing of surface -crack specimens, and the test is performed with a continuously 
+increasing force, and excludes cyclical and sustained loadings.  This test determines the residual strength 
+of specimens with semi-elliptical or circular-segment fatigue cracks.  ASTM E1457 [67] is a test method 
+for measurement of creep crack growth times in metal specimens.  It determines the creep crack growth 
+in metals at elevated temperatures using pre -cracked specimens that are subjected to static or quasi -
+static loading conditions.  ASTM E1 681 [68] is a test method for determining the threshold stress 
+intensity factor for environmentally -assisted cra cking of metallic materials, and requires an 
+environmental chamber.  Finally, ASTM E2472 [ 69] is a test method for determination of  resistance to 
+stable crack extension under low -constraint conditions, which occurs when the crack -length-to-
+thickness and uncracked -ligament-to-thickness ratios are greater than or equal to 4.  This test is 
+performed only under a slowly increasing remote applied displacement.   
+  
+
+15 
+ 
+CONCLUSIONS AND NEXT STEPS 
+ 
+As mentioned in the introduction, this report is the first step of a longer process to develop standards 
+appropriate for the testing of the mechanical properties of metal parts made via additive manufacturing.   
+A future report will assess the practical applicability of the existing test methods and standards 
+summarized in this report for use on additively -made metal parts.  Nevertheless, some initial 
+conclusions can be made. 
+ 
+First, this assessment shows that a large number of international, consensus-based standards covering a 
+wide range of material mechanical properties already exists.  This is fortunate because it means that the 
+baseline technical development for these standard tests has already been done.  These tests include the 
+typical mechanical properties specified in the introduction for both the MMPDS and a typical additive 
+parts manufacturer.  The hope is that these existing tests can be used, in either their current or slightly 
+modified forms, on metal additive parts.   
+ 
+However, given the way in which these parts are manufactured, supplementary guidance will have to 
+accompany these tests.  This will be necessary to account, for example, for the anisotropy and potential 
+porosity that may be present in these parts.  Users should not assume that specimens made via additive 
+manufacturing processes are isotropic , and the influence of anisotropy and porosity on the results 
+obtained with these tests will need to be determined.   In addition, not all o f the test specimens 
+described in these standards are easily built with additive manufacturing; very thin test specimens for 
+example will be problematic because the resulting residual stresses may warp the specimens. Finally, 
+there is a strong need for a careful study of the sensitivity of the material properties to both the additive 
+manufacturing build parameters and the properties of the initial powder. 
+ 
+The next step is to assess the state- of-the-art measurements for the properties of metal powders.  Th e 
+properties of interest include measurements of particulate size, powder chemical composition, powder 
+viscosity, and powder particulate morphology.  This will be reported on in mid-2012.  Following that, the 
+suitability of these existing measurements - both mechanical properties of metal parts and properties of 
+metal powders - will be assessed for use in additive manufacturing. 
+  
+
+16 
+ 
+ACKNOWLEDGEMENTS 
+ 
+The authors would like to thank William Luecke (NIST/Metallurgy Division) and David McColskey 
+(NIST/Materials Reliability Division) for their helpful comments, suggestions, and discussions.  
+
+17 
+ 
+ 
+APPENDIX A: DEFINITIONS OF MATERIAL PROPERTY TERMS 
+ 
+Absorbed Impact Energy  – In an Izod or Charpy test, the amount of energy required to fracture a 
+material. 
+ 
+Bearing Strength – The maximum bearing stress which a material is capable of sustaining.  [70] 
+ 
+Brinell Hardness Number – Result from indentation hardness test in which a number proportional to the 
+quotient obtained by dividing the test force by the curved surface area of the indentation which is 
+assumed to be spherical and of the diameter of the ball.  [70] 
+ 
+Chord Modulus – The slope of the chord drawn between any two specified points on the stress -strain 
+curve.  [19] 
+ 
+Compressive Strength – The maximum compressive stress that a material is capable of sustaining.  [70] 
+ 
+Crack-Tip Opening Displacement – The crack displacement resulting from the total deformation (elastic 
+plus plastic) at variously defined locations near the original (prior to force application) crack tip.  [71] 
+ 
+Creep Crack Growth Rate – The rate of crack extension caused by creep damage and expressed in terms 
+of average crack extension per unit time.  [71] 
+ 
+Ductility – The ability of a material to deform plastically before fracturing.  [70] 
+ 
+Elasto-plastic Hardness  – Hardness measured from the recorded time record of the force and 
+displacement data of an indentation during plastic and elastic deformation.  
+ 
+Fatigue Cycle  – One complete sequence of values of force (strain) that is repeated under constant 
+amplitude loading (straining).  [71] 
+ 
+Fatigue Life – The number of cycles of a specified character that a given specimen sustains before failure 
+of a specified nature occurs.  [71] 
+ 
+Fracture Toughness – A generic term for measures of resistance to extension of a crack.  [71] 
+ 
+Indentation Hardness  – The hardness as evaluated from measurements of area or depth of the 
+indentation made by pressing a specific inde nter into the surface of a material under specified static 
+loading conditions.  [70] 
+ 
+
+18 
+ 
+Indentation Modulus – Modulus measured from the recorded time record of the force and displacement 
+data of an indentation during plastic and elastic deformation. 
+ 
+Knoop Hardness Number  – A number related to the applied force and to the projected area of the 
+permanent impression made by a rhombic -based pyramidal diamond indenter having included edge 
+angles of 172° 30’  and 130° 0’. [70] 
+ 
+Lower Yield Strength – The minimum stress recorded during discontinuous yielding, ignoring transient 
+effects.  [70] 
+ 
+Plane-Strain Fracture Toughness  – The crack -extension resistance under conditions of crack -tip plan e 
+strain in Mode I for slow rates of loading under predominately linear- elastic conditions and negligible 
+plastic-zone adjustment.  [71] 
+ 
+Poisson’s Ratio – The negative of the ratio of transverse strain to the corresponding axial strain resulting 
+from an axial stress below the proportional limit of the material. [70] 
+ 
+Rockwell Hardness Number – A number derived from the net increase in the depth of indentation as the 
+force on an indenter is increased from a specified pre liminary test force to a specified total test force 
+and then returned to the preliminary test force.  [70] 
+ 
+Rupture Strength  – The stress at which rupture (a failure that is accompanied  by significant plastic 
+deformation, often associated with creep failure) occurs.  [3] 
+ 
+Scleroscope Hardness Number  – A number related to the height of rebound of a diamond -tipped 
+hammer dropped on a material being tested.  [70] 
+ 
+Secant Modulus  – On a stress- strain curve, the slope of a line between the origin and any specified 
+stress.  [3] 
+ 
+Shear Modulus (aka torsional modulus)  – The ratio of shear str ess to corresponding shear strain below 
+the proportional limit.  [70] 
+ 
+Strain Ratio – The ratio of width to thickness strain determined in the uniform elongation portion of a 
+tension test.  [72] 
+ 
+Stress-Intensity Factor – The magnitude of the mathematically ideal, crack-tip stress field for a particular 
+mode in a homogeneous, linear-elastic body.  [71] 
+ 
+Stress-Intensity Factor Range – In fatigue, the variation in the stress-intensity factor in a cycle.  [71] 
+ 
+
+19 
+ 
+Stress-Strain Diagram (aka Stress-Strain Curve) – A diagram in which corresponding values of stress an d 
+strain are plotted against each other.  Values of stress are usually plotted as ordinates and values of 
+strain as abscissas. [70] 
+ 
+Tangent Modulus – The slope of the stress-strain curve at any specified stress or strain.  [19] 
+ 
+Tensile Strength (aka Ultimate Tensile Strength)  – The maximum tensile stress which a material is 
+capable of sustaining.  Tensile strength is calculated from the maximum force during a tension test 
+carried to rupture and the original cross-sectional area of the specimen. [
+70] 
+ 
+Torque-Twist Diagram (aka Torque -Twist Curve) – In shear testing, a diagram in which corresponding 
+values of torque and twist are plotted against each other.  Values of torque are usually plotted as 
+ordinates and values of twist as abscissas. 
+ 
+Upper Yield Strength – See Yield Point. 
+ 
+Vickers Hardness Number  – A number related to the applied force and the surface area of the 
+permanent impression made by a square -based pyramidal diamond indenter having included face 
+angles of 136°. [70] 
+ 
+Webster Hardness – A hardness number measured by a Webster Hardness gauge.  Webster Hardness 
+gauges can measure a range of hardness that corresponds to 5 HRE to 110 HRE on the Rockwell 
+hardness scale.  [34] 
+ 
+Yield Point (aka Upper Yield Strength)  – In a uniaxial test, the first stress maximum associated with 
+discontinuous yielding at or near the onset of plastic deformation.  [70] 
+ 
+Yield Strength – The engineering stress at which it is considered that plastic elongation of the material 
+has commenced.  [70] 
+ 
+Young’s Modulus  – The ratio of tensile or compressive stress to corresponding strain below the 
+proportional limit of the material.  [70] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+20 
+ 
+REFERENCES 
+ 
+[1] J. Jackson, Definition of Design Allowables for Aerospace Metallic Materials, AeroMat Presentation. 
+(2007). 
+[2] EOS, Aluminum AlSi10MG Material Data Sheet (2009). 
+[3] J. William D. Callister, Materials Science and Engineering: An Introduction. (1994). 
+[4] S. Kalpakjian, Manufacturing Engineering and Technology. (1995). 
+[5] ASTM, E8: Standard Test Methods for Tension Testing of Metallic Materials (2009). 
+[6] ISO, 6892 -1: Metallic materials -- Tensile testing -- Part 1: Method of test at room temperature. 
+(2009). 
+[7] ASTM, E21: Test Methods for Elevated Temperature Tension Tests of Metallic Materials. (2009). 
+[8] ISO, 6892 -2: Metallic materials -- Tensile testing --  Part 2: Method of test at elevated temperature.  
+(2011). 
+[9] ISO, 15579: Metallic materials -- Tensile testing at low temperature. (2000). 
+[10] ASTM, E1450: Test Method for Tension Testing of Structural Alloys in Liquid Helium. (2009). 
+[11] ISO, 19819: Metallic materials -- Tensile testing in liquid helium. (2004). 
+[12] ASTM, E292: Test Methods for Conducting Time -for-Rupture Notch Tension Tests of Materials. 
+(2009). 
+[13] ASTM, E740: Practice for Fracture Testing with Surface-Crack Tension Specimens. (2010). 
+[14] ISO, 26203- 1: Metallic materials -- Tensile testing at high strain rates -- Part 1: Elastic -bar-type 
+systems. (2010). 
+[15] ISO, 26203-2: Metallic materials -- Tensile testing at high strain rates -- Part 2: Servo-hydraulic and 
+other test systems. (2011). 
+[16] ASTM, E9: Test Methods of Compression Testing of Metallic Materials at Room Temperature. 
+(2009). 
+[17] ASTM, E209: Practice for Compression Tests of Metallic Materials at Elevated Temperatures with 
+Conventional or Rapid Heating Rates and Strain Rates. (2010). 
+[18] ASTM, E238: Test Method for Pin-Type Bearing Test of Metallic Materials. (2008). 
+[19] ASTM, E111: Test Method for Young's Modulus, Tangent Modulus, and Chord Modulus. (2010). 
+[20] ASTM, E143: Test Method for Shear Modulus at Room Temperature. (2008). 
+[21] ASTM, E1875: Test Method  for Dynamic Young's Modulus, Shear Modulus, and Poisson's Ratio by 
+Sonic Resonance. (2008). 
+[22] ASTM, E1876: Test Method for Dynamic Young's Modulus, Shear Modulus, and Poisson's Ratio by 
+Impulse Excitation of Vibration. (2009). 
+[23] J. A. Slotwinski and  G. V. Blessing, Ultrasonic Measurement of the Dynamic Elastic Moduli of Small 
+Metal Samples, Journal of Testing and Evaluation. 27 (2), 164-166 (1999). 
+[24] ASTM, E140: Hardness Conversion Tables for Metals Relationship Among Brinell Hardness, Vickers 
+Hardness, Rockwell Hardness, Superficial Hardness, Knoop Hardness, and Scleroscope Hardness. (2007). 
+[25] ASTM, E10: Test Method for Brinell Hardness of Metallic Materials. (2010). 
+[26] ISO, 6506: Metallic materials -- Brinell hardness test -- Part 1: Test method. (2005). 
+[27] ASTM, E18: Test Methods for Rockwell Hardness of Metallic Materials. (2008). 
+[28] ISO, 6508: Metallic materials -- Rockwell hardness test -- Part 1: Test method (scales A, B, C, D, E, F, 
+G, H, K, N, T). (2005). 
+[29] ASTM, E384: Test Method for Knoop and Vickers Hardness of Materials. (2011). 
+[30] ISO, 4545: Metallic materials -- Knoop hardness test -- Part 1: Test method. (2005). 
+[31] ISO, 6507-1: Metallic materials -- Vickers hardness test -- Part 1: Test method. (2005). 
+[32] ASTM, E448: Practice for Scleroscope Hardness Testing of Metallic Materials. (2008). 
+
+21 
+ 
+[33] ISO, 14577 -1: Metallic materials -- Instrumented indentation test for hardness and materials 
+parameters -- Part 1: Test method. (2002). 
+[34] ASTM, B647: Standard Test Method for  Indentation Hardness of Aluminum Alloys by Means of a 
+Webster Hardness Gage. (2010). 
+[35] ASTM, B648: Standard Test Method for Indentation Hardness of Aluminum Alloys by Means of a 
+Barcol Impressor. (2010). 
+[36] ASTM, B724: Standard Test Method for Indent ation Hardness of Aluminum Alloys by Means of a 
+Newage, Portable, Non-Caliper-Type Instrument. (2006). 
+[37] ASTM, E110: Standard Test Method for Indentation Hardness of Metallic Materials by Portable 
+Hardness Testers. (2010). 
+[38] ISO, 29381: Metallic mate rials -- Measurement of mechanical properties by an instrumented 
+indentation test -- Indentation tensile properties. (2008). 
+[39] ASTM, E466: Practice for Conducting Force Controlled Constant Amplitude Axial Fatigue Tests of 
+Metallic Materials. (2007). 
+[40] ISO, 1099: Metallic materials -- Fatigue testing -- Axial force-controlled method. (2006). 
+[41] ASTM, E606: Practice for Strain-Controlled Fatigue Testing. (2004). 
+[42] ASTM, E647: Test Method for Measurement of Fatigue Crack Growth Rates. (2011). 
+[43] ISO, 12108: Metallic materials -- Fatigue testing -- Fatigue crack growth method. (2002). 
+[44] ASTM, E2368: Practice for Strain Controlled Thermomechanical Fatigue Testing. (2010). 
+[45] ISO, 12111: Metallic materials -- Fatigue testing -- Strain-controlled thermomechanical fatigue 
+testing method. (2011). 
+[46] ASTM, E2714: Test Method for Creep-Fatigue Testing. (2009). 
+[47] ASTM, E2760: Test Method for Creep-Fatigue Crack Growth Testing. (2010). 
+[48] ASTM, E2789: Guide for Fretting Fatigue Testing. (2010). 
+[49] ISO, 1143: Metallic materials -- Rotating bar bending fatigue testing. (2010). 
+[50] ISO, 1352: Metallic materials -- Torque-controlled fatigue testing. (2011). 
+[51] ISO, 12106: Metallic materials -- Fatigue testing -- Axial-strain-controlled method. (2003). 
+[52] ASTM, E399: Test Method for Linear -Elastic Plane -Strain Fracture Toughness Ic of Metallic 
+Materials. (2009). 
+[53] ASTM, E1820: Test Method for Measurement of Fracture Toughness. (2011). 
+[54] ISO, 12737: Metallic materials -- Determination of plane-strain fracture toughness. (2010). 
+[55] ISO, 12135: Metallic materials -- Unified method of test for the determination of quasistatic fracture 
+toughness. (2002). 
+[56] ISO, 22889: Metallic materials -- Method of test for the determination of resistance to stable crack 
+extension using specimens of low constraint. (2007). 
+[57] ASTM, B646: Standard Practice for Fracture Toughness Testing of Aluminum Alloys. (2006). 
+[58] ASTM, B645: Standard Practice for Linear- Elastic Plane -Strain Fracture Toughness Testin g of 
+Aluminum Alloys. (2010). 
+[59] ASTM, B909: Standard Guide for Plane Strain Fracture Toughness Testing of Non -Stress Relieved 
+Aluminum Products. (2006). 
+[60] ASTM, E1304: Test Method for Plane -Strain (Chevron -Notch) Fracture Toughness of Metallic 
+Materials. (2008). 
+[61] ASTM, E23: Test Methods for Notched Bar Impact Testing of Metallic Materials. (2007). 
+[62] ISO, 148-1: Metallic materials -- Charpy pendulum impact test -- Part 1: Test method. (2009). 
+[63] ISO, 14556: Steel -- Charpy V-notch pendulum impact test -- Instrumented test method. (2000). 
+[64] ASTM, E1221: Test Method for Determining Plane- Strain Crack -Arrest Fracture Toughness, Ia, of 
+Ferritic Steels. (2010). 
+
+22 
+ 
+[65] ASTM, E1290: Test Method for Crack -Tip Opening Displacement (CTOD) Fracture Tough ness 
+Measurement. (2008). 
+[66] ISO, 27306: Metallic materials -- Method of constraint loss correction of CTOD fracture toughness 
+for fracture assessment of steel components. (2009). 
+[67] ASTM, E1457: Test Method for Measurement of Creep Crack Growth Times in Metals. (2007). 
+[68] ASTM, E1681: Test Method for Determining Threshold Stress Intensity Factor for Environment-
+Assisted Cracking of Metallic Materials. (2008). 
+[69] ASTM, E2472: Test Method for Determination of Resistance to Stable Crack Extension under Low -
+Constraint Conditions. (2006). 
+[70] ASTM, E6: Terminology Relating to Methods of Mechanical Testing. (2009). 
+[71] ASTM, E1823: Terminology Relating to Fatigue and Fracture Testing. (2010). 
+[72] online: http://www.worthingtonsteel.com. Accessed  
+ 
+ 

@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-MEASURE-BALANCE-LEDGER-010",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-INFORMATION-MEASURE-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:dfe56bbcac0afd94661b1d85450948543c56ef9acd9a1b90e2a0006fa05194c1",
+  "falsification_condition": "Reject if the value-free registry, complete measure census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:375273c2bf8fa64780a07b951f3697f5ce6d7c55417559e67b99a148dfe8ea35",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b20fa4f29e4dddb4dd7660bcfdb42be90edc0a36a5656a6cfdbe6a3e3c6d8d43",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-MEASURE-010-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6322ad479e00eb840d5021ec46c417856690b817d84a3a6990715d6f694da163",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:623954aed100537b7219cd2a6820425bf42dec8cf4add89a08f9fe1f99894f19",
+    "prediction_seal_hash": "sha256:86bd77aeade0d9faefd69c7698a7d4b6aa369484fe654710dcd383122c2091bc",
+    "program_hash": "sha256:022b04bb09b251d0bed690aac05f4b2fb078d9595f6cbdc955606c227aa925d1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:652e843458018e0dc16bf9222c5798d4333e450c103d4f2a42fe5a03a23f9b0f",
+    "target_material_present": false,
+    "trace_hash": "sha256:3c0424f313aeccc57ffe340c04e3cef88fcc07b50809f6b61055a5e2cbc6b23a"
+  },
+  "measurement_receipt_hash": "sha256:7b5adf44e43f97fe720cce2e9333823e85f5bce1266a83abc4efb193d2970821",
+  "measurements": [
+    "MEASURE-010: balance_ledger",
+    "exact observation: {\"closed_pairs\":2,\"disjoint_and_exhaustive\":true,\"retained_pairs\":4,\"source_pairs\":6}",
+    "complete family observation custody: 16 records; all rows preserved",
+    "complete finite support, partition, description-program, unit and retained/closed-ledger enumeration supplies the observation; no imported entropy formula, continuum logarithm, universal oracle or fitted threshold enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:da57d1ad5c72d3a2a9a82099da268d8971d9e53dd484b81f31ecc595c0ca42e0",
+    "custodian_id": "SFT-EXP-INFO-MEASURE-010-V1-custodian",
+    "experiment_registration_hash": "sha256:dfe56bbcac0afd94661b1d85450948543c56ef9acd9a1b90e2a0006fa05194c1",
+    "prediction_seal_hash": "sha256:86bd77aeade0d9faefd69c7698a7d4b6aa369484fe654710dcd383122c2091bc",
+    "registered_target_identity_hash": "sha256:652e843458018e0dc16bf9222c5798d4333e450c103d4f2a42fe5a03a23f9b0f",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:14af24b3b6979dbb1b96af39c2ba10a4a29edcf20297edbe55f7fd2766c9be1d"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a7a65b15ede2b456467f1f3b333f15e502d16fbe6ce86b5a3a10ab08ca145f97"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-ARCHITECTED-CELLULAR-012",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5942ff5232ba5062f11107727b1c6f46237868e891a79fdd6f33b838648fe6b5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:6e6a624192b2ce5cea559cc86173ef638f9197592bafd9c23e8b88ab54843f77"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ba153cc88c8fe9ed49f1d89287d01a8cc771ba4812c95d7c74fe051f0bb73e97"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4ab553cfb8a87357c0d8f3d817d1a7ce6ad733152ca1305478cdbc7d9b3697ad"
+    }
+  ]
+}

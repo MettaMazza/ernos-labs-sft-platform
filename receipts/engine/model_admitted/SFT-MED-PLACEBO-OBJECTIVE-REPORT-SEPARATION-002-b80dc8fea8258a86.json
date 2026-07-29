@@ -1,0 +1,56 @@
+{
+  "accepted_evidence": true,
+  "claim_id": "SFT-MED-PLACEBO-OBJECTIVE-REPORT-SEPARATION-002",
+  "closure_status": "depth_independent",
+  "derivation_seal_hash": "sha256:f7a3f6a3389dd4334df4f2781118fd1f11b02aab204bc46ecdd559e84f12e061",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "independently_replicated",
+  "external_validation_hash": "sha256:b7bdabd9d01e4bd22542c098162e5e532300152705faa5a63389adcfb03b9ed5",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "closed law may become a dependency",
+      "gate": "model_admission",
+      "passed": true
+    }
+  ],
+  "halted_stage": null,
+  "model_admitted": true,
+  "receipt_hash": "sha256:b80dc8fea8258a86a5017270ce9fd9205354705a9ba4faa9295fd2f67929910c",
+  "violations": []
+}

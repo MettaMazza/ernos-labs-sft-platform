@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-MACHINING-DAMAGE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9e20b85ed018b38b09c951f2afe20ba7a2c25b122c433b25f43a93bf6431e23a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:df431ad505b2dabba113ac3b5f434fcd43c57ee41ff8204808401b3e5032829f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:83f0d8d9eab8e51a088d4c357d3dc50112e81762276530ad224420367a8877c4"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:2444f341e4f0d6e0b58403be8b4afef844fba7fbe16900427a1d818fa8410977"
+    }
+  ]
+}

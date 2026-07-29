@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-POLYMER-DISPERSITY-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:7b1d3c0ce553fd9200ba87bf0c79cdebc2d761c5afc872c5250ee3c9cfbba821"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:67ea8165bdd01751628f550a17429857872f760b8336e1fd56aec26c35d8fae5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2f36bd25142053ddf3ac211e2024c7676a2e589808db47b63a064ac4a24b713d"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:dab73aeaf58627c9e3555d85ef6487ede885e3271f98bf5caf9bfb34e6cbe92e"
+    }
+  ]
+}

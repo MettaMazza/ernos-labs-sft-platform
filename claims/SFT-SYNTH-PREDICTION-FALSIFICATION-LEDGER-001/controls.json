@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-PREDICTION-FALSIFICATION-LEDGER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9742b745a3bc920242144abe264a0828c7a9ab2bb5a154d9a5338e721b795a70"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:40f0b6685bf30ac25ea32ed9e0fc64ed9d0190f31a644a2100b4b58a61aa0207"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f76e5a2321bc979404214485e2a8bdac28e909f27e0c51c4a339d4d933630e74"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8cd3156b2d0b656bfde3c04ec39d101739a7676178bd59a1ee2a713fa116ac7d"
+    }
+  ]
+}

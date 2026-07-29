@@ -1,0 +1,60 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-EXT-COMBINED-PATH-CUSTODY-008",
+  "data_source_ids": [
+    "NIST-COMBINED-EXTREME-KOLSKY"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:42d539c52408f88bc011d385895dda5e06d3df552cad935a7816c395078acf10",
+  "falsification_condition": "Reject if any registered source, fragment, condition, path, seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5ac757f0de2b424386ab698ac49ba343ce9842a9d66c331468530b24b3cc6f1f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e34298afb3a5301126d35fe689db24495852a22db1edd110e42f6b542017dd0f",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-EXT-008-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:a052d958366d127b95639e23093c16e170e14efe50edaaac815e1ecd111caa13",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:05db492b427b0e481746efcf39d279bb0865fa3c632871c7ea3613d93641f359",
+    "prediction_seal_hash": "sha256:a38769e1f10437dda0a2765a92c2e395694a60df7c1efdb6758ea0e14cb039d7",
+    "program_hash": "sha256:8d80ad0fc0ea26948cf0517ad562aea26a8aa60286b7331d342cfd747b154594",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:93aa8cf6401d89cb0d1d01c25ea626437769a7a183d9ca04050204ff3aa71c42",
+    "target_material_present": false,
+    "trace_hash": "sha256:3c6c0d6bfc2771f6815442fa7b216727d2cb4af5ec1cb4f052ec7c2b8a1063b1"
+  },
+  "measurement_receipt_hash": "sha256:1b2586d44738104e690e0aa6a36123a7768cb6e6e89a5cd74a0f89117cf6da28",
+  "measurements": [
+    "EXT-008: 1 comparisons",
+    "family sources: 8",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-COMBINED-EXTREME-KOLSKY: two extreme conditions; rapidly heating; applying force at the same time"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:020a323fbbebbdef96d557f265599d3340323b1731b1e37661fcaf8b93a166a2",
+    "custodian_id": "SFT-EXP-MAT-EXT-008-V1-custodian",
+    "experiment_registration_hash": "sha256:42d539c52408f88bc011d385895dda5e06d3df552cad935a7816c395078acf10",
+    "prediction_seal_hash": "sha256:a38769e1f10437dda0a2765a92c2e395694a60df7c1efdb6758ea0e14cb039d7",
+    "registered_target_identity_hash": "sha256:93aa8cf6401d89cb0d1d01c25ea626437769a7a183d9ca04050204ff3aa71c42",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f191aac24266d3f8babf7f37bd292b00428169b3523abb73f2934d422ba58307"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6ec520e4acd30f9d5da88a650dba721413177151c599215b6f97be5e4955b8f0"
+}

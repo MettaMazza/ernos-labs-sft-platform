@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-DEFECT-TRAP-STATES-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2aaa8539be46fa9341eb24e44406a3990ae44fb9d7a03514d8adf78edc500416"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ad37202821a9eae062435b792fb5f29e3f106a78c34c9f9592e97e111176c027"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3c23cbab921977653490ecc2ef36bde8d5a92d4830c5661bf49b7984f8b76e6c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b1a56d1cddd9b141aff84a4e4e8eaf69988123ee24e8bc47d01f2a4b9c9b9070"
+    }
+  ]
+}

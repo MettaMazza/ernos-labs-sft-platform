@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-CHROMATOGRAPHIC-RETENTION-RESOLUTION-018",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:b52b59d40799e087350adfcc0533500eda93ff29bd3ef9dfb383470d77fcf063"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:45728329dfa537ebfbe25bba7b593f34d5b9e8033f91964c632213490c57cdeb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1b2b0f87c590fec31fde28afc8527140096a99cd726806c29b235f48c75b8082"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:544bf02b1986d8e50aeb4dfd827d56b465eee1f7cd2e9b28e42f08dce685049a"
+    }
+  ]
+}

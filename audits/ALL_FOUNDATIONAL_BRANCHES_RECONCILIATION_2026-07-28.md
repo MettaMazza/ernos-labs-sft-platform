@@ -1,5 +1,9 @@
 # All foundational branches — reconciliation record
 
+> Historical checkpoint: this record is the immutable 1,319-claim
+> all-foundations boundary. The later 2,751-claim programme position is indexed
+> in [`CURRENT_PROGRAMME_STATUS_2026-07-29.md`](CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+
 Date: 28 July 2026  
 Status: all fifteen foundations are current-evidence complete and extension-open; the single heavy verification run passed.
 

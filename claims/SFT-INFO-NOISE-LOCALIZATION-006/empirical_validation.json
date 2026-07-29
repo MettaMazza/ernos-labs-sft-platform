@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-NOISE-LOCALIZATION-006",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-DETERMINISTIC-NOISE-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5174157b8206e0b752982a3fc815f27a91d0db9bb60979e8484abfa0bcf290d7",
+  "falsification_condition": "Reject if the value-free registry, complete deterministic error-mask and predecessor census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:a1f289b179a7f4e44d5aa3dfd4b0497cb5f8998814770a9d054f469ed8f06ed0",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:18c024c379f50c5ebafd16f969649e780da4b59c155763aede99dd0d08e52c2e",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-NOISE-006-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:f14736d641f79851266c99c52176070c36f7faf4a582b7a68f5a0be9c63dba5c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:d094c0bd322bb9661ed89b32740e13799c4ea511ec3e1fedb59758a420c0a154",
+    "prediction_seal_hash": "sha256:500fa6b9554174b019030b281189a54a4a39eecf0c4cf0bf169cb6ba2acaec20",
+    "program_hash": "sha256:53356c9d5814ab7327b8f8e4ac9fad44573f55beabe10c6315558c160a166bd1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:a37a4da885a3f6387fbd69440f99c53ba71e526a2226d6b12202f26001bb2d74",
+    "target_material_present": false,
+    "trace_hash": "sha256:fd001b141405f85e739301bb197257ac36dc7e7fb28e515a698c6bb73a88704b"
+  },
+  "measurement_receipt_hash": "sha256:1f591bd681606aa3e9199a4e89cf34897c5fe09027ef05dcf6f3e932ac31dc80",
+  "measurements": [
+    "NOISE-006: localization",
+    "exact observation: {\"all_unique\":true,\"localized_positions\":[1,2,3],\"masks\":3}",
+    "complete family observation custody: 12 records; all rows preserved",
+    "complete deterministic mask, trace, predecessor, detection, localization, estimation and budget enumeration supplies the observation; no stochastic distribution, fitted error rate, likelihood prior or hidden threshold enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:5d89dabe196ca3bdb528e6efe452345d366d97e0cd5393cde0b8678659d75653",
+    "custodian_id": "SFT-EXP-INFO-NOISE-006-V1-custodian",
+    "experiment_registration_hash": "sha256:5174157b8206e0b752982a3fc815f27a91d0db9bb60979e8484abfa0bcf290d7",
+    "prediction_seal_hash": "sha256:500fa6b9554174b019030b281189a54a4a39eecf0c4cf0bf169cb6ba2acaec20",
+    "registered_target_identity_hash": "sha256:a37a4da885a3f6387fbd69440f99c53ba71e526a2226d6b12202f26001bb2d74",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:97cf7cf0f3c2585539cab9e68fecfe1a76ea0e0866d2e52112ff869e980f702c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:dcd087314eeae397aebdb057370e9e8c8ae2d9f3fecafd411636ad661433900f"
+}

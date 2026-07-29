@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-COATING-SUBSTRATE-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a4f05fd333e774e7d7c4fe65ce98449da53625174ffa17f6816fcbc47ffde816"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:16b8e492fa402b424b3240ab11a907403fda829083790ce537fa3550d5e8d516"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1e9261008870006465737700f27cf8391bf68544e9c3d70aedf94fd3cb2819c6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4b8fc164654bd827b1cb3e20c177caf037b861fe34ec698552a88963a17d1180"
+    }
+  ]
+}

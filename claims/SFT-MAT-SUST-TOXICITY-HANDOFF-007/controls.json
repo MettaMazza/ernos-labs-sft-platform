@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-TOXICITY-HANDOFF-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:07b84cbdca6fda61c82d90bc25e07bce98d2e958c9e253b6155e88a0b4b2af40"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:398e90c2e662d703187a3fddb1a72743763410ebf5221902b78326c987f7803b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3bf3608b8172eca96425093aa6a46673ef3b626fcd4cf5c0a198560b06e8e7e6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ba147889799924a37b0f7f4bf5edc68493d8d7240619732784ee1e65d4ac3465"
+    }
+  ]
+}

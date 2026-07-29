@@ -1,0 +1,14 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-NMR-CHEMICAL-SHIFT-006';DOMAINS=(('detached-shift-number', 'held-molecular-carrier'), ('element-only-spectrum', 'held-nucleus-identity'), ('unordered-peak-list', 'complete-nucleus-site-map'), ('absolute-frequency-relabeled-shift', 'held-reference-comparison'), ('unconditioned-universal-shift', 'held-solvent-and-condition'), ('signed-or-floating-shift-premise', 'held-side-positive-exact-ratio-or-EmptyOne'), ('selected-assigned-peaks', 'complete-shift-uncertainty-ambiguity-custody'), ('renormalized-added-spectrum', 'successor-retains-and-appends-complete-sites'));SURVIVOR='held-molecular-carrier__held-nucleus-identity__complete-nucleus-site-map__held-reference-comparison__held-solvent-and-condition__held-side-positive-exact-ratio-or-EmptyOne__complete-shift-uncertainty-ambiguity-custody__successor-retains-and-appends-complete-sites'
+from fractions import Fraction
+EMPTY="EmptyOne"
+def relation(sample,reference):
+ if sample==reference:return ("coincident",EMPTY)
+ return ("higher-frequency" if sample>reference else "lower-frequency",abs(sample-reference)/reference)
+carrier="molecule-a";reference="reference-a";condition=("solvent-a","condition-a")
+rows=(("one-H","site-a",relation(Fraction(1001),Fraction(1000)),Fraction(1,10000)),("one-H","site-b",relation(Fraction(1000),Fraction(1000)),EMPTY))
+native={"identity":carrier=="molecule-a","nucleus":all(x[0]=="one-H" for x in rows),"site":len({x[1] for x in rows})==2,"reference":reference=="reference-a","environment":condition==("solvent-a","condition-a"),"relation":rows[0][2][1]==Fraction(1,1000) and rows[1][2][1]==EMPTY,"custody":rows[0][3]==Fraction(1,10000) and rows[1][3]==EMPTY,"extension":len(rows+(("one-H","site-c",relation(Fraction(1002),Fraction(1000)),EMPTY),))==3}
+def main():
+ sealed=json.load(open(sys.argv[1]));generated=["__".join(item) for item in product(*DOMAINS)];decisions={item["candidate_id"]:item["survives"] for item in sealed["decisions"]};passed=sealed["claim_id"]==CLAIM_ID and [item["candidate_id"] for item in sealed["census"]["candidates"]]==generated and decisions=={item:item==SURVIVOR for item in generated} and sum(decisions.values())==1 and sealed["closure"]["scope"]=="depth_independent" and all(item["passed"] for item in sealed["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":sealed["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_native_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

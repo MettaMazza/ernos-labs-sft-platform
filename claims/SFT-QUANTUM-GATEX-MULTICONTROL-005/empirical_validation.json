@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-GATEX-MULTICONTROL-005",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-GATE-CIRCUIT-OBSERVER",
+    "SFT-V1-V2-QUANTUM-CIRCUIT-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:f2b3bc7adf74351e63c5aab8d9447accef19b949986e9cc611e8abd7b4359650",
+  "falsification_condition": "Reject if the value-free registry, complete gate/circuit grammar, exact branchwise execution, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7b8f26dd5d5fc3a8cefc417380a1aa831ae894617248caaa9579959593f63c75",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:2e572f4c91ef8e9868bbfce08324625a1168a547730082c94145f1b068eaf904",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-GATEX-005-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:3eea95bfe2ee7d04c008d07333067443bc9ae23dd3c8420e52fb6133a3111db6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e7ca2524325878f8318e98ea7655ed8eafea0fde6161ee3f53289cc2f1c91229",
+    "prediction_seal_hash": "sha256:a025863e9146d770e0005416bcf22159f97325ca4eabed086c615e9c8b24c370",
+    "program_hash": "sha256:09005f964def225511347fca4f9b1f376c0984074ddb10c26b5908d6ce23b160",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ad6aa4867fa5f51876a30a0f5451d9699b17042111ddd06c80c739b1f53bc5c0",
+    "target_material_present": false,
+    "trace_hash": "sha256:0b7a5faa620f89a31ed4bfcc34bc188e335df015b2093c7130168e294e2a5c1f"
+  },
+  "measurement_receipt_hash": "sha256:b619700fb368f1b17f250903efc84cb851505d40c8db5f06b83521b7c9fa22c2",
+  "measurements": [
+    "GATEX-005: multi_controlled_gate",
+    "exact gate/circuit execution: {\"control_width\":2,\"trigger_words\":1,\"unaffected_words_retained\":true}",
+    "complete gate/circuit custody: 22 records; all rows preserved",
+    "complete finite support, gate, inverse, circuit, observation and resource execution supplies the observation; physical timing, gaps, error rates and device outcomes remain downstream measurements"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:1c26471151a977af187721fddc220e66a21ff1e550ebc52723ef6f5fc247bb0d",
+    "custodian_id": "SFT-EXP-QUANTUM-GATEX-005-V1-custodian",
+    "experiment_registration_hash": "sha256:f2b3bc7adf74351e63c5aab8d9447accef19b949986e9cc611e8abd7b4359650",
+    "prediction_seal_hash": "sha256:a025863e9146d770e0005416bcf22159f97325ca4eabed086c615e9c8b24c370",
+    "registered_target_identity_hash": "sha256:ad6aa4867fa5f51876a30a0f5451d9699b17042111ddd06c80c739b1f53bc5c0",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:d5926ba290fcac000d7e9248e59f92c46c0fffb8e4fc89d842b180d4c818b2e9"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7b140765c7edda87916a18f6b1969bb2c35b9ab3c6d95027707a8aa72f7ea7c4"
+}

@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-DISTX-HAPPENS-BEFORE-003",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+    "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:956de0c1aa0743d776ff6a2400d78fd16b5737df65b91048b8ef96707bb10c9a",
+  "falsification_condition": "Reject if the value-free registry, event identity, local order, message or synchronization ledger, fault, timing or topology boundary, exact trace, source identity, survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:78af38711d9d797325056b12b16834e5ac271e04ba4895bd69bd54019e2b61ef",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:9d7f4be2c80f7f90c6a418e527e173c134d4e1e15e21da11011a51f95b4a1c6b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-DISTX-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:68e03e78b91688993c56a6efee69c7fde7a06fb8935709a27b695ed7a117c4a6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9ad073a366905e49fd192b5d693493b4d84a829b8f56d50e4425246ddce03d38",
+    "prediction_seal_hash": "sha256:2eac604a4f881b0f17993722e6055532731df735091b93e4dff46a001cbf50bb",
+    "program_hash": "sha256:c2af26285ad23d3b95c71850251b6626749c99dcf2df6a729ca8b0a1f4bdf7f6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:eab8ce8012ef62b9f20caebe26bc2605629fa143acbf8c687b938cc08586a261",
+    "target_material_present": false,
+    "trace_hash": "sha256:08860168181638c46927f83931e607fa4e19bf9ec1c8dff931aedb7edff61e83"
+  },
+  "measurement_receipt_hash": "sha256:7ff4ba069cf7bfa126fecba88e13c751712e5e68995de0c90b30cb7e4d1700da",
+  "measurements": [
+    "DISTX-003: happens_before",
+    "exact execution: {\"closure_edges\":3,\"forced_transitive_edge\":[\"a\",\"c\"],\"primitive_edges\":[[\"a\",\"b\"],[\"b\",\"c\"]]}",
+    "complete family observation custody: 26 records; all rows preserved",
+    "complete generated execution supplies the observation; no imported theorem answer, hidden branch or target-selected survivor enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:86e324eddbc0a6bbf3c974c4800a643ff425f12424b112523325a3e415887699",
+    "custodian_id": "SFT-EXP-COMP-DISTX-003-V1-custodian",
+    "experiment_registration_hash": "sha256:956de0c1aa0743d776ff6a2400d78fd16b5737df65b91048b8ef96707bb10c9a",
+    "prediction_seal_hash": "sha256:2eac604a4f881b0f17993722e6055532731df735091b93e4dff46a001cbf50bb",
+    "registered_target_identity_hash": "sha256:eab8ce8012ef62b9f20caebe26bc2605629fa143acbf8c687b938cc08586a261",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ece1ba0bcd8349dacd94e684cab32f02fbb38c518499c2b9190a8fc8624d8eed"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:269b20477bd097586be8c7ceadf34a2c8933e7a2ad0415291e67439b65211c57"
+}

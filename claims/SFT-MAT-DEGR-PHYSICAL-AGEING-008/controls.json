@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-PHYSICAL-AGEING-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:be62436e5603a4eb594b69aabdc9586ec1b745753d0e9a6f367da2a25cbb10c7"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:572e03783c2e191c7a21cf04829726539d784411eb2ac4802baefc528e18764f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ff3691e4478a5b3a0c5a17b1182f369f8899e7e2243e99302a99864f7dc962d5"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:74e1b1b1126c9d6c0dbb04fcd410203503bcd943c7f8f530a2dd0a1198112319"
+    }
+  ]
+}

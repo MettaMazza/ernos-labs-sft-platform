@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-BIOFABRICATED-IDENTITY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:cb22542e1c3b8c5225574ccf7448ed945527f48d5845f983160fe631ec6a5fa1"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:26c8da4956e8c305b2d1009cbd48e48f8576eabae5a094edd887f277047da81e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:97060904d7f23491cf51295db4909f2f68101617b413b3e571ddce3d8b203334"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:50e2e66722ead31c87d8e610365d5d6a5b5ee4324ea7945eeab49ed9b6814825"
+    }
+  ]
+}

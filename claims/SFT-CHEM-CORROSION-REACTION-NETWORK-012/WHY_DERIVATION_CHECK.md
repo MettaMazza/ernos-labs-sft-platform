@@ -1,0 +1,3 @@
+# Why ECHEM-012 requires a derivation check
+
+A conventional displayed value cannot establish the corrosion reaction-network law. This claim separately generates all 256 forms before comparison, retains every registered chemical carrier and condition, and uses only its own value-free identity and seal. The shared post-seal family capture preserves all 73 pages and 156,376 extracted characters. Every value, unit, conventional sign or zero glyph, fit, correction, uncertainty, discrepancy, adverse row, absence and unresolved observation remains downstream provenance and cannot select the native Fold law.

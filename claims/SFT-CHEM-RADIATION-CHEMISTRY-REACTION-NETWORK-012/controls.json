@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RADIATION-CHEMISTRY-REACTION-NETWORK-012",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:130ce93877c3ae7fa3454ba000aef4c86504140480d7f5162e947dd1f8fd87bc"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4689cde66f237c91844b54e1169c1f7544a2ae3d084cb67fcf7223154cefea4f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e454c640aee66dde6f37a2f9e7f057f18b6bea41b50a9382b766e8f38af8ca73"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:1e2888c5d7a1cf079ee20e385e35358750add754a12e86e737fd9f53178e8660"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SOCIAL-VALIDATION-EXACT-COMPLETE-FAMILY-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:550d8ba954146ad7aef36f5eec5146b3ef91c38443294f0d8719edfa259e5ba5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1363dea628eb750d0187fc76906570d855b2493f7de1285b93bac2df72e1996e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b299d47c13bedba394a2baf02dd6a810830e7822fa906dd6b6186796327eaf6d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:3852ae15db705dddb6f9ef58e94ad66515747ae866582630add4360183c2747c"
+    }
+  ]
+}

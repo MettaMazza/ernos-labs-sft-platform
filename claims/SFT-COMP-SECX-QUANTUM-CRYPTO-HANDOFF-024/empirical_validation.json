@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-SECX-QUANTUM-CRYPTO-HANDOFF-024",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-SECURITY-OBSERVER",
+    "SFT-V1-V2-SECURITY-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c1b2c0a064918f3e32aac2c78e4d860388816d3decd4dafd8b233cb024543c8f",
+  "falsification_condition": "Reject if the value-free registry, scheme, adversary, key, message, transcript, resource, success event, leakage or handoff boundary, source identity, survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5c049e61311f1d602baf64b8e29eef3e266f02c9fa5c6e4bacfb5163f6bbe42b",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:c7109f50fd6e1be75a37f3b6caaa9041cea28f4c0a280536c21bd0a54204c630",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-SECX-024-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:96e6ad0ed108b1a8bc1fe9621e2dbb30f1e8d4fe3c0ca2b52cd06f1eaf01a2f9",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:ddbd57dfc9082ba0e27c011f8f53fbb89c8a37f84b76e80f24de4592de3ae1e5",
+    "prediction_seal_hash": "sha256:37889fe10ba695c420c96e2ba3ae58784c2802715a6bce42650321da2bba8477",
+    "program_hash": "sha256:93f319a21b88e24d1058ea3672d97b968b119c0131493a75184e09c2d3de51c4",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b78e42425f14242312b427ade7fe5a731f23009e863e2270301bd225d05c24f2",
+    "target_material_present": false,
+    "trace_hash": "sha256:2a135e63f5f3a63c039f07f6866eeb1774d574eda2359a61f9e84f8d1152b96a"
+  },
+  "measurement_receipt_hash": "sha256:e76a3bf9615ec2cc504e04155fd78654a2a66206eed61f9a2f49bd760530ccb5",
+  "measurements": [
+    "SECX-024: quantum_cryptography_handoff",
+    "exact execution: {\"classical_security_owner\":\"computation-security\",\"handoff_explicit\":true,\"quantum_channel_owner\":\"quantum-computation\"}",
+    "complete family observation custody: 25 records; all rows preserved",
+    "complete generated execution supplies the observation; no imported theorem answer, hidden branch or target-selected survivor enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d4e30c307124fa9acd6d0e10f0437f4c1a7dadb647d300159fa823cf69060fe2",
+    "custodian_id": "SFT-EXP-COMP-SECX-024-V1-custodian",
+    "experiment_registration_hash": "sha256:c1b2c0a064918f3e32aac2c78e4d860388816d3decd4dafd8b233cb024543c8f",
+    "prediction_seal_hash": "sha256:37889fe10ba695c420c96e2ba3ae58784c2802715a6bce42650321da2bba8477",
+    "registered_target_identity_hash": "sha256:b78e42425f14242312b427ade7fe5a731f23009e863e2270301bd225d05c24f2",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:136e7aacc68e2664df6d601f455d8d8efb5fef90bc4b9ac941b814d76de9cba2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f3b87c399d43fa8fd59d73eca6dffabc1f255c4c1a33f6f0b50c6b454b79efb0"
+}

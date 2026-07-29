@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-COMP-MOLECULAR-DYNAMICS-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:51ecad0f42a3a48060581d87f65d0d3ae6e35e07e78c8486bc542fb742fd5ed8"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ab83ed6bdc3ec60738225f68363433eb250afdec9e3b1dae1273cc5a6acd5931"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9ffbb15ce9cdd01e168ee93025949c8cf90529c57a13bd74bddc0893cd748833"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f383f428a4844e37e27e64b109afc58a539fd9927b1b8be22d5331e5f99391b0"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-PHYS-TESLA-BOUNDED-CAVITY-078",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:aec2c0f4359c14d2c5992ab434b3187265d7a983a05e9f8d07835ad7398db9b8",
+  "empirical_validation_hash": null,
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": null,
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "validator raised: external validator exited 1: Traceback (most recent call last):\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/generated/physics/tesla_resonance_family_validator_v1.py\", line 80, in <module>\n    main()\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/generated/physics/tesla_resonance_family_validator_v1.py\", line 46, in main\n    dependency_ids = tuple(sealed[\"registration\"][\"dependencies\"])\nKeyError: 'registration'",
+      "gate": "independent_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "independent_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:4281ee3a1502b179b6fa1f5d9edec4f936306e19f2632bb0df8d938c1ea6841a",
+  "violations": [
+    "validator raised: external validator exited 1: Traceback (most recent call last):\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/generated/physics/tesla_resonance_family_validator_v1.py\", line 80, in <module>\n    main()\n  File \"/Users/mettamazza/Desktop/Smithian Fold Theory Of Everything/generated/physics/tesla_resonance_family_validator_v1.py\", line 46, in main\n    dependency_ids = tuple(sealed[\"registration\"][\"dependencies\"])\nKeyError: 'registration'"
+  ]
+}

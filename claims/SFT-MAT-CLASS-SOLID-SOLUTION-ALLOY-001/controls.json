@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-SOLID-SOLUTION-ALLOY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:bb1f45a79ee1be9dda782b8bd38da2af225af35737e8012598276c9e8b243f98"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8049837f1534162f79ad5b89205db79c3722e74643a5faa52916f8de94d8246a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ca0e465e754dc189018f8031b6d1f5c9a8de5f5205d4e4416379b4a5ea1c899f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:03946f9c99417b003fc2036fdbb7b7335d0edc1d14ad6eff277952ab429b5d1a"
+    }
+  ]
+}

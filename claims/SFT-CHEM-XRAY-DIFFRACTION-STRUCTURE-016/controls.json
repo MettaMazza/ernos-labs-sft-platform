@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-XRAY-DIFFRACTION-STRUCTURE-016",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:3ee6584602617d278dcc9159ae31543ddbfe11eedf8f741cd029a6dc43fccec0"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c1a69d8a51cd21499c17bbca82e4e7f0f6e4f9249bc6d8f33c690f789223f8b3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1c21a85f3e815a0f52abcb47ddd0c0a1de642bd4603bd87a01852ffb8bc37e63"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:a65f50c75c9d183a636a7fcda5dd4fa0369fc0ad2e5539df0038c03ccd860463"
+    }
+  ]
+}

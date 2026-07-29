@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SMITHIUM-CHEMICAL-SEPARATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:57be8b275da76c12b6590c42a242812f334925c84ca7feca2c91f010134a4fee"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c6d27a375c45a54a0c35f5ceb226ec16438bfc674c61eb3aa20c21ad0041c2f5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e9ddae0aa96e9795a815f7ea3e03fc977c2567e970b5ec81c5108c3bb2fd0874"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:cfd963cd0fca6d8c602305956389d319aa4a799be550c3f48fa8e6b69e86d5ca"
+    }
+  ]
+}

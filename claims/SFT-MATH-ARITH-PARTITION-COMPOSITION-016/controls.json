@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-ARITH-PARTITION-COMPOSITION-016",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "A symbol without a generated trace has no exact carrier.",
+      "passed": true,
+      "receipt_hash": "sha256:46b9ccdcd3a217fcae3648117139878162602d887c2bb720b2c991c4a995d279"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, fitted parameter, imported theorem answer or target outcome selects the law; no semantic numerical zero, negative magnitude, irrational, imaginary or floating proof scalar; structural absence is empty One; host 0 may only display absence or count artifacts; no completed infinity, ungenerated continuum or infinite formal series is admitted; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:efd26b2d40f9286adde01ca733376930514a1298b07d211970ec6941efbeafc2"
+    }
+  ]
+}

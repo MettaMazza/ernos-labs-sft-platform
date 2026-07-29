@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-REL-DATA-PROCESSING-005",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Missing rows change every relational conclusion.",
+      "passed": true,
+      "receipt_hash": "sha256:3f5d9feeadc74dc7ae61aa463e75737fcc14230a0affa5b32f883826ab2be615"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported probability distribution, logarithmic formula or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no hidden joint row, signed-information premise, likelihood allocation or fitted causal threshold; no semantic meaning, cryptographic secrecy or physical mechanism imported into this owner; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:1749cd95e21f5c374892a1679553e40a163b80340c55ced59e104b1107f10009"
+    }
+  ]
+}

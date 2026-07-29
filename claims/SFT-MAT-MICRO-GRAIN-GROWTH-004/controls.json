@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-GRAIN-GROWTH-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:dd7bbf25db4771bb5415dc3641f11528344d1bf16d099e214902f4acd84b35df"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b02fe5dc4a3622ef306e0b2d892a45f1a9d9b84b849f56f1e3ae5e9c027ec420"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:609c0156e85f7cd412d56b835b6f345d6c80aa56573fff00d79ed9bd58de866f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:3701828f31339cf4e02b7fc048c667f925fbc2a805211d6c03a250ac27b73c55"
+    }
+  ]
+}

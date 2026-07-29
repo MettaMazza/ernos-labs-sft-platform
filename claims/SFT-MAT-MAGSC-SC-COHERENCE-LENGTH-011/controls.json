@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-SC-COHERENCE-LENGTH-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a628169e36356207118e5ad47276f0a43fda19d8b1fb2f584593cffa2ce61f05"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:de8aaa571b207f98d4f080d28bbf4d37f429656de4c719b36725616f341457e4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:02802d629d0b630058dd19b936f6ca36e64f17f8b3a640cbcafd87f3d590bf6e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4ce98c505b153b6ceabc9d1045a7324086667537da30b39050ffe8e4942d8535"
+    }
+  ]
+}

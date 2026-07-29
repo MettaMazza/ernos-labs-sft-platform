@@ -36,7 +36,14 @@ purpose-matched empirical evidence.
 
 ## Layer Two — complete field reconstruction
 
-Status: planned, not represented as complete by the foundational publication.
+Status: active against the frozen 29 July 2026 full-field census
+`census/biology_discipline_obligations.json`, identity
+`sha256:0ffaed3fd2ebaa087e83b526c05380887544d97aac028ccb856bcbe3d896f6d6`.
+The census contains 424 exact obligations: 82 already closed by current
+model-admitted receipts and 342 open obligations.  Its open rows were frozen
+without external outcome values.  Complete-to-current-knowledge closure will
+require a receipt for every row; the branch remains open to lawful extensions
+after that dated boundary is complete.
 
 The full Biology census covers:
 
@@ -65,6 +72,25 @@ The full Biology census covers:
 - ageing, senescence and biological longevity;
 - conservation biology and biosphere-scale processes; and
 - astrobiology handoffs without treating absence of observation as proof.
+
+## Mandatory prior-corpus return families
+
+Status: complete to the frozen current standard and open to lawful extension.
+The stronger inherited family now has seven new untouched-engine receipts from
+1,792 enumerated candidates: six exact mechanisms and one post-seal complete
+source comparison. It independently reconstructs autocatalytic origin-of-life
+ignition, homochiral amplification, the somatic/germ-line orbit split, the
+half-One excitable threshold, differentiation-loss cancer and bounded-orbit
+ecosystem stability. The foundational definitions remain dependencies rather
+than substitutes. Exact Fold thresholds are distinguished from direct
+biological measurements wherever an authoritative source does not itself
+measure the mapping.
+
+Completion certificate:
+`audits/BIOLOGY_PRIOR_MECHANISMS_FAMILY_COMPLETION_2026-07-28.json`.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
 
 ## Publication sequence
 

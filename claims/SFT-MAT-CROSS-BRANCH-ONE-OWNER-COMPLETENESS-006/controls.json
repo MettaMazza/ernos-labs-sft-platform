@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CROSS-BRANCH-ONE-OWNER-COMPLETENESS-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9d10ce9cd51e8a27d3709d932e9d4fc85c2ce53b90f9e5a5b1783bca1a3fc841"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:15f09720212512afe6d6913df1bd37bcaac8638426e079fa0cff40ca2b6da6a7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e92484bb76354eadf991854f2f16556de9f568d6baf5cc14cfccf288b4f5b3c7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:dbfd8f7705bc4133868cf8c3ec1496e6e785e3a31585918326b03cf770c7d0ad"
+    }
+  ]
+}

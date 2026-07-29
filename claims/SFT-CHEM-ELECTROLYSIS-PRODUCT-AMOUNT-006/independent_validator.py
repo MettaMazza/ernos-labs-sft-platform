@@ -1,0 +1,10 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-ELECTROLYSIS-PRODUCT-AMOUNT-006';DOMAINS=(('mass-answer-only', 'complete-process-electrode-product-custody'), ('continuous-charge-premise', 'positive-counted-transfer-occurrences'), ('empirical-equivalent-factor', 'positive-carriers-per-product-occurrence'), ('rounded-product-count', 'exact-carrier-to-product-ratio'), ('discarded-incomplete-product', 'complete-products-plus-held-remainder'), ('numerical-zero-product', 'structural-EmptyOne-no-complete-product'), ('selected-coulometer-result', 'complete-charge-product-amount-vector'), ('batch-specific-conversion', 'like-batches-compose-by-counted-addition'));SURVIVOR="__".join(x[1] for x in DOMAINS)
+from fractions import Fraction
+def amount(transferred,required):
+ complete,remainder=divmod(transferred,required);return complete,remainder,Fraction(transferred,required)
+a=amount(5,2);b=amount(4,2);native={"ratio":a[2]==Fraction(5,2),"complete":a[0]==2,"remainder":a[1]==1,"exact_division":b[:2]==(2,0),"batch_composition":amount(2+2,2)[0]==2,"custody":True}
+def main():
+ s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

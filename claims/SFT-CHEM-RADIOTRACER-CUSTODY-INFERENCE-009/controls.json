@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RADIOTRACER-CUSTODY-INFERENCE-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1412287ad3834bc04016ca32739e5b1777be764c43d103d1079a00d429519ee4"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0648c1efedc71495922d6547263b9ce54219611c7c6210aaa03ef51edefa5db9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:894a3d5950a9aa5145b681a161d6558d913085e0de38b863d9618f3b26c76c7f"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:38240d4975673aa06c619eb09fda9c28c1b1256d6e249f330ca68ee4349f74ac"
+    }
+  ]
+}

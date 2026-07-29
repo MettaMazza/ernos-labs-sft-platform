@@ -1,0 +1,3 @@
+# Why 006 requires a derivation check
+
+A conventional displayed value cannot establish the electrolysis/product-amount law. This claim separately generates all 256 forms before comparison, retains every chemical carrier and condition, and uses only its own value-free identity and seal. The shared family capture preserves all 519 pages and 1,754,402 extracted characters after all four seals. Every measured value, unit, conventional sign or zero glyph, correction, uncertainty, historical disagreement, adverse row, absence and unresolved observation remains downstream provenance and cannot select the native Fold law.

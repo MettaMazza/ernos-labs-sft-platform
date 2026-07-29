@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-ADHESION-SEPARATION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5266dd4694ae1d6d22146cf4f27c7dd407f30d794dac49c4ccd98fa57489dd2d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:871dc210318ced54a476f5b2431f7c6647c687d13be7d4fdce4e0ae0b331e8b5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2fa0c2c0d84ed6838b35faedc83b2f92f126c09f39d0f1575b41677e75af7d95"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:dc0f08574d5892dd2e9eb7b329d9ac3d43dddbf35fe3b720ea10f5c64e9b17f8"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-REFLECTION-TRANSMISSION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:68df4f875f11d0ecaf0ca470d4d7b8d136d578e6133e08b8a673e493cd51dd4e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2f9a8ad79b4ce09631c67d51c283ae144e3e2a2842a424886ee51a0f56539e7f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cf88879096ea26702cabcc1bb4ef52f55cad2225e2ef2eb8469d96b78228fb5d"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ee76e3ac7ba5a296fce05ceae49bf07730d2547eeb9bb4d0078d4a50e4b9540e"
+    }
+  ]
+}

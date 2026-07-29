@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-ORGANIC-REACTION-VECTOR-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4dd2a95d4ff92565af3eba7f8bf0d069fbd645d2f8ac900bb9464e7c0ff7a2a9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ec562a0671d5c00c5e9c8ae33ff1035f25f9834dd2ff59df3145817806b4c8b4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ff319304464bc47f183f83593be444ffd9ed3287356f7985c8f3cb3f5a4e9ea9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:355489339e3cda45dec2dfe909b11c3c34d042056387c9c4a97b865d05eff3d8"
+    }
+  ]
+}

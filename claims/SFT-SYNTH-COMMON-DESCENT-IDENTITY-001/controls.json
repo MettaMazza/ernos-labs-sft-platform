@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-COMMON-DESCENT-IDENTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0dbbb7d3a987d1c97c27cac1429b15f59250561255f9f98f950be623425323bc"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:07b53f04070458fe38a6190d373a5b6735f6c29f3bb03aba1bfc58f7bd697b82"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:22e4d8c029163997f807637f1c2fe85a08b692b112f5baa73777e6bf35e9311f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bbba9f625c7e3ed856ac972186f974864b09521e23c00e5de7192beaaf8b207c"
+    }
+  ]
+}

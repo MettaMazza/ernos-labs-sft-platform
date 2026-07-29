@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-ELECTROCHEMICAL-INSERTION-012",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3719e751f66a1be6645ce1154a3de78739b6f5082eaf00c8ef7ec152b12b9754"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:471021fb68d762f601a82771c04a642a47104f6e384aa762134435a57346c988"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:022b710aefddf47c6ec3438538df0088923d4c467508dd6a837570d2b33a4b48"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:cf94e2ca1c109ba1ce5899e437c36c54453c1d9f92437c949810815f05e0da9e"
+    }
+  ]
+}

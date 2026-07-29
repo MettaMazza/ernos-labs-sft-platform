@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-ORIGIN-AUTOCATALYTIC-IGNITION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b670e23d01e110aa84e8eca42b5997b657176f4d2ca751b3062ce793729ef117"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:35f725b9a391aaf9a15ea0cb50196ecceac6ec5bb0f7f2efc7b7d8d0087d8485"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9830bd9d68beae1f788d222f78e9878c7adc5854e00acf93afaa08508f414ba2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0688782124d6c7ee6d42bfc4ff163d1133ef4537a9f2096a3a583d45f6f9868e"
+    }
+  ]
+}

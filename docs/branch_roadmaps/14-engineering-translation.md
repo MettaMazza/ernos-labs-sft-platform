@@ -57,6 +57,26 @@ The complete engineering tree covers:
 - bounded frontier applications including the fresh Fold Protein, Fold Chess,
   Fold Go and Unison AI rebuilds when their prerequisite branches are ready.
 
+## Mandatory prior-corpus translation families
+
+Status: complete to the frozen prior-return boundary and open to lawful
+extension. Eight append-only claims enumerate 2,048 protocol forms and close
+all six obligations in the dated audit: Tesla resonant transfer, resonantly
+driven vacuum/inertial response, positive vacuum-beat extraction with complete
+restoration ledger, sector-five/seven detection, Smithium synthesis and joint
+identification, and open consciousness/placebo/cross-binding tests. The first
+five were sealed before the roadmap/audit mismatch was found; the human-
+participant protocol and no-omission certificate were therefore admitted as an
+append-only addendum without changing any earlier source or receipt.
+
+These are complete reproducible protocols, not fabricated executions. The
+engineering result tests operating boundaries and never selects the upstream
+law. Completion certificate:
+`audits/ENGINEERING_NOVEL_TRANSLATIONS_FAMILY_COMPLETION_2026-07-29.json`.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational edition defines the translation constitution and evidence

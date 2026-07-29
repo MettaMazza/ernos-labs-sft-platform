@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-WINDOW-PROVENANCE-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:48f34a58165f3135ee0d885ec9425e2735920581fc123bf4950c9c5978af6f36"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:98bc48dd7da8fbac906da6098359079ed08eb0443250a51709cf23c1afda0247"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1ac5c151ddc31f875aedd60788262b68305b81eecc0648c5efe9d06cbfe79cfe"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bf3b35b3b9a92ed9b5b28dc5ed8579794ebb6ee0c0e23d8ec393fead9f3a95dc"
+    }
+  ]
+}

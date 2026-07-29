@@ -1,0 +1,34 @@
+{
+  "audit_id": "CHEMISTRY-POLY-SOURCE-RECONSTRUCTION-RETRY-2026-07-28",
+  "branch": "chemistry",
+  "family": "POLY-001-013",
+  "status": "pre_admission_reconstruction_retry_complete",
+  "reason": "The first post-seal reconstruction exposed one scanned source with unavailable embedded text and two printed dispersity cells that did not exactly reconstruct from the displayed molecular-mass cells. Neither observation retires an obligation or constitutes a failed SFT law.",
+  "first_attempt_rule": {
+    "first_failure_may_retire_claim": false,
+    "source_extraction_failure_is_model_failure": false,
+    "source_internal_arithmetic_inconsistency_is_model_failure": false,
+    "required_action": "Preserve the first attempt, retry through a distinct lawful source-reconstruction route, retain every inconsistent inscription, and admit nothing except through the untouched sealed engine.",
+    "negative_theorem_boundary": "Only exhaustive structural enumeration can establish impossibility; a parser failure, inaccessible payload, ambiguous source row, source defect or unsuccessful reconstruction cannot."
+  },
+  "retries": [
+    {
+      "source_id": "NIST-POLYMER-THERMAL-DEGRADATION",
+      "first_attempt": "Embedded-text extraction returned fourteen characters.",
+      "distinct_retry": "Apple Vision OCR over every rendered PDF page.",
+      "result": "Fifteen pages and 1,140 OCR lines reconstructed; the registered thermal-degradation, depolymerization, monomer, scission and product anchors are present.",
+      "ocr_artifact": "experiments/external_sources/chemistry/snapshots/poly-001-013-whole-subfield-v1/13_nist_polymer_thermal_degradation_ocr_v1.json",
+      "ocr_sha256": "sha256:9e93a55985618dc5a2889442d87f50a627db315587696366658ad4d3c2fd5cec"
+    },
+    {
+      "source_id": "NIST-MONODISPERSE-PAMS-KINETIC-NETWORK",
+      "first_attempt": "The printed 2.9-percent and 58-percent conversion dispersity cells did not both reproduce exactly from the displayed GPC mass cells under a one-hundredth scalar comparison.",
+      "distinct_retry": "Full-page visual OCR plus direct inspection of the primary scanned Table 4, with exact interval reconstruction from the table's displayed integer and two-decimal resolutions.",
+      "result": "The source itself prints 890, 1011 and 1.24 in the 2.9-percent row. The exact quotient is 1011/890, so this printed row is internally arithmetically inconsistent even under the stated display resolutions. The 58-percent row prints 88, 175 and 1.98 and is compatible with unprinted values inside the displayed integer cells. All inscriptions and the inconsistency are retained. The exact dispersity law is compared using reconstructible molecular-mass pairs and independent NIST distribution records; the defective printed cell cannot select or falsify the native law.",
+      "ocr_artifact": "experiments/external_sources/chemistry/snapshots/poly-001-013-quantitative-addendum-v1/03_nist_monodisperse_pams_kinetic_network_ocr_v1.json",
+      "ocr_sha256": "sha256:69b7da6fa152732b2b2edf4b9cc2aba1e515917578d3fc6a3aec824c07a65cbd"
+    }
+  ],
+  "closure_credit": 0,
+  "engine_or_verifier_modified": false
+}

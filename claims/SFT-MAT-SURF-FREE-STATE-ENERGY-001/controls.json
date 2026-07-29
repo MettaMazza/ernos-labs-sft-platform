@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-FREE-STATE-ENERGY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3bad46aefc05bf4e90c097a02191808ee42eb48e35d7ea8525d030e10e29da40"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:5bd63a0e8754a60bc15a5e1bbd2d251f50d56ecf583dd7ed923cbe418aa58664"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f2e021a7d49d99b92b5500a06571494ea0784caa01b4f7aa95371aba175fbf24"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:54a4b1fbfa567327eee0b649b7e45a636f0301c9c99d6602f9979106f46d4dcb"
+    }
+  ]
+}

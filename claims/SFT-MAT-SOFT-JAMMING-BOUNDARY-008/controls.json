@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SOFT-JAMMING-BOUNDARY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a2dec3bafc374711f790b308b1aa5e5bdee47d88cabd8b1fa717b3d288dbc36d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f4225383fd84c05c77ebcd0048c7dceeebc61d0c588fe504b5ee16f5cccedb3e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5ec9887be8eb6887bcf652b5130611adb01051025d66cb97e21ccc4197a14e20"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:dcbb705a5bcbbaad1510bf8c63a3cfb7c09dda43e0c108512d3c21cbeb5be574"
+    }
+  ]
+}

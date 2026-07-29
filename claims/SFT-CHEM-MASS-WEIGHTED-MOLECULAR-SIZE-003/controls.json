@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-MASS-WEIGHTED-MOLECULAR-SIZE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:76eb7cac6ca7a28149a5a4862118c84542b4c1a004e110f8ec9a31ade300bb4d"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:93c10d64347ccb3bc45bfefa9aa69a8a0900e65f38b855bb647e0c3ef8bc8b79"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:08cbd895f5a4b016104fa62349cc0890fd2da093ed2240b95785a730c87dac4a"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:31675aa3a515f3bea3cc33fc42ec878ce6e197e275fa7efab5cff39e7826e763"
+    }
+  ]
+}

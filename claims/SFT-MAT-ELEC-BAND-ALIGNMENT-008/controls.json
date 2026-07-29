@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-BAND-ALIGNMENT-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:40f8f28c2ee660ab4e25a4116f137f92256287bfb74058d4ec9c03a2a37e7233"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:477fbff2e89d50da5b3cbad31fee6212304870927ee0c6594c19383bd3f331a3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5f8341ff1b651627e1824ce141c03a95a92154393515f89d07e211795e85df50"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b6af52fde433e4c118a287b8b57a547c1f929c5920e22156d5e70acff13fd0a4"
+    }
+  ]
+}

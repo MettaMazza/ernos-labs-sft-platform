@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-MECHANICAL-TRIBOLOGICAL-VECTOR-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3eb9969e849e2cee1a9dd14d38c3e0968d5f64c6ad5a96f1bf24dea864e71fed"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d9298dcd569c65c8a8f33a28b4025113e140aaabb24ff75a3d75cabcc83283ea"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6d2653ba5f74184102e7bd33ff22e2822f3644b76ed4e02056824c1b9e68f686"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bc00234d445547f43070f7c0c03844846438d70adfc33af6dac6682244a679ed"
+    }
+  ]
+}

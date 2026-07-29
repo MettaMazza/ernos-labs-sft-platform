@@ -1,0 +1,58 @@
+{
+  "accepted_evidence": false,
+  "claim_id": "SFT-QUANTUM-VALID-REVERSIBLE-001",
+  "closure_status": "not_admitted",
+  "derivation_seal_hash": "sha256:db8eae8d7ed33e85894ba176dd5ab0594dfceb014d04f0d424f7822fa1c12d7c",
+  "empirical_validation_hash": "sha256:9f9ba977d439a98da5a9a472687f18e08b9ff89c403a117f9028b5062b854c65",
+  "engine_id": "sft-v3-single-admission-engine/1",
+  "external_status": "not_admitted",
+  "external_validation_hash": "sha256:dccc91d0b7cca0f7d1720e582cf303a4c578bc589faac3e5adc6d2774f82acd2",
+  "gate_results": [
+    {
+      "detail": "one theorem, no axioms, zero free parameters and admitted dependencies",
+      "gate": "registration",
+      "passed": true
+    },
+    {
+      "detail": "generated candidate census matches its registered complete boundary",
+      "gate": "enumeration",
+      "passed": true
+    },
+    {
+      "detail": "every generated candidate decided and exactly one survivor remains",
+      "gate": "forcing",
+      "passed": true
+    },
+    {
+      "detail": "minimality and named-shape uniqueness established at the exact boundary",
+      "gate": "form_closure",
+      "passed": true
+    },
+    {
+      "detail": "all required false, tampered and boundary controls behaved as registered",
+      "gate": "controls",
+      "passed": true
+    },
+    {
+      "detail": "derivation, census, closure and controls sealed",
+      "gate": "seal",
+      "passed": true
+    },
+    {
+      "detail": "distinct implementation recomputed the sealed result from declared inputs",
+      "gate": "independent_validation",
+      "passed": true
+    },
+    {
+      "detail": "empirical validation failed",
+      "gate": "empirical_validation",
+      "passed": false
+    }
+  ],
+  "halted_stage": "empirical_validation",
+  "model_admitted": false,
+  "receipt_hash": "sha256:bc2e0eb42e8650c848de9872a8666fc879d84aec5c21201b378721f00fd8a62e",
+  "violations": [
+    "empirical validation failed"
+  ]
+}

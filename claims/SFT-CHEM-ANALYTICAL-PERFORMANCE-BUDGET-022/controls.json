@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ANALYTICAL-PERFORMANCE-BUDGET-022",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:df30a809e8d90d9d5daee9318eec34195278aa3fb80977d4bb2dd4e2dcd48b3f"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4513891e667d5c6d954ae932b7b618128eb136c832856a5130a7890219f3b68d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4ec1642ac139f161bc5398d5ebba244c21bdc158a053af2ae46b6ad2e3a39b3e"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:60ae218134bb7211075570e0931fba05e635e477a83c5a5f8a3b8e8251b893af"
+    }
+  ]
+}

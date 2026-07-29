@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MATH-HAND-CROSS-BRANCH-COMPLETENESS-006",
+  "data_source_ids": [
+    "census/mathematics_discipline_current_reconciliation_v22.json",
+    "census/mathematics_discipline_obligations.json",
+    "docs/branch_roadmaps/README.md"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:e66814dd72860c91a5b16088f6ebf1095b851209885adb26e677130049287af1",
+  "falsification_condition": "Reject if the value-free registry, complete exact-handoff census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ecb6e375c2cbac3553d237924d707b23bda65b06401de57eb1b4e7a18925d511",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4598a0b48f4f2879c7a3c8887ec0086e62a36336b11ea9261bb67a45b543bea6",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MATH-HAND-006-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b66eb7ed1a5baf66d314da15e6c68d0c5978d389e09ffff0362086ea3335eaf3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:156a99da1d01f530acda9131d4352c70ebb9787ab5e4489801aae360841d82e5",
+    "prediction_seal_hash": "sha256:051179d4c40ff2cbf9268fa225390552cc771717fd6a2950495ba70f07423603",
+    "program_hash": "sha256:a96d79ab5047c3d1f6dcf47eadfc185e9c251d60a45a7749756fa70fb058441a",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4be65044f123c0380877d86f8140f89c4f409ad8a4da8ca4bb49019b7a3734af",
+    "target_material_present": false,
+    "trace_hash": "sha256:94b2050cafe3647357a335ca44852b91cc63b2cb1df224a152072b31cc1e7daf"
+  },
+  "measurement_receipt_hash": "sha256:e3abc8093bdf1407ca1f085887e7977efc5872e2d179c75ffe9f9977989f2cec",
+  "measurements": [
+    "HAND-006: cross_branch_completeness",
+    "exact observation: {\"expected_post_handoff_total\":323,\"frozen_census_total\":323,\"pre_handoff_closed\":317,\"registered_handoff_obligations\":6,\"single_owner_required\":true}",
+    "complete family observation custody: 6 records; all rows preserved",
+    "complete mathematical-owner and downstream-semantic-owner records supply the observation; no duplicate owner, silent semantic import or untyped cross-branch handoff enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:221c825ed6c7f5b4d44c0adfaf4ec6e85ccee030381283bdc0d5a1656a903165",
+    "custodian_id": "SFT-EXP-MATH-HAND-006-V1-custodian",
+    "experiment_registration_hash": "sha256:e66814dd72860c91a5b16088f6ebf1095b851209885adb26e677130049287af1",
+    "prediction_seal_hash": "sha256:051179d4c40ff2cbf9268fa225390552cc771717fd6a2950495ba70f07423603",
+    "registered_target_identity_hash": "sha256:4be65044f123c0380877d86f8140f89c4f409ad8a4da8ca4bb49019b7a3734af",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b332ab4091e3c77f670ebb116c3b4b2b054e6d9192c5c0c85d3f6dfc1b5bcc0e"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:2eb6acb9f7abc12fd2301e44de97ffd7cd68613473380ef4588b848b88980ac7"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-COMP-INVERSE-PROBLEM-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f7b57b9bbfd815a36f5a6de582de5f045b7f5125462679f6517b45a822587a70"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:60e4043275057d76305879be5f20ef714ed843abdfbe3eccc8d5d406a8bfe6b2"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:29ccce2ac74767b9e3ae0c7e267b39710bc011d6c914bd61d19ab970ba5eac24"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e25b313b946206b6217fb2dd8092f29a78ac33bed4f806d69b5af4d81da4b638"
+    }
+  ]
+}

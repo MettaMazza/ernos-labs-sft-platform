@@ -1,0 +1,3 @@
+# Why NUCHEM-003 requires a derivation check
+
+A conventional displayed value cannot establish the activity–amount–time law. This claim separately generates all 256 registered forms before comparison and uses only its own value-free identity and pre-source seal. The shared post-seal capture reconstructs four official NIST sources as 8 complete PDF pages, 2 complete HTML documents and 34,442 extracted characters. Every value, unit, conventional zero or sign, decimal, uncertainty, assumption, correction, method disagreement, favorable, adverse, absent, unavailable and unresolved row remains downstream provenance and cannot select the native Fold law.

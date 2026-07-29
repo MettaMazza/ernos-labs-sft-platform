@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-MICRO-COARSENING-TRANSFER-007",
+  "data_source_ids": [
+    "NIST-BENCHMARK-COARSENING-2017",
+    "NIST-STRUCTURES-PRECIPITATION-HANDBOOK"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:7154250bb083d149c6787d4cb8be7a1fdeae78afa9279018e736498aaa1c1c9b",
+  "falsification_condition": "Reject if any registered source identity, available fragment, unavailable row, failed route, specimen/method/condition boundary, prediction seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9bb3ac3b3a71d708fa40d7afe2c263e6c7af3c8bd36676c8bf36d10aba995c5e",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5c6aac037de4332b5b97da6316480f1f3d7d43af797ebaf339bae19afce77a30",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-MICRO-007-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:52d9498ab946b219f46859f8e6a41b446d02922f57cfa077a2aad9c07365fd8c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:597689523fcde0bb1978e00c7c3e88f39a0bbe8b74828d891386338003e5370b",
+    "prediction_seal_hash": "sha256:90488459f7e26c465dfa7bdefc90b18a122027b9171aaa2d2b95daf71dd11123",
+    "program_hash": "sha256:af7f63e3b40a9e1375d469687369798b24b85c5f2d6740c4847bf039e6f649d6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:dae3970729b0d70d710c90a5be4a38af0c82e7c839b41e5d3d0ec0fb4e7a2daa",
+    "target_material_present": false,
+    "trace_hash": "sha256:08df37ec0ea6cec0bd978a11412b44cc5030d3af49790550729c8257e1c57b51"
+  },
+  "measurement_receipt_hash": "sha256:4425a149b7c34a3fb7df00445ba126e97bb3ef0b78aa1847a20f54d4e8b0f972",
+  "measurements": [
+    "MICRO-007: 2 distinct comparisons retained",
+    "family custody: 9 usable and 1 unavailable sources",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-BENCHMARK-COARSENING-2017: captured; growth and coarsening of a second phase; ostwald ripening problem; favourable-use=True",
+    "NIST-STRUCTURES-PRECIPITATION-HANDBOOK: source_unavailable_http_404_preserved; source unavailable 404 preserved; replacement addendum retained; favourable-use=False"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:e19728449632c37400368bb65fbd907d9eeb9fe47c686cfae21bf002cab5c56d",
+    "custodian_id": "SFT-EXP-MAT-MICRO-007-V1-custodian",
+    "experiment_registration_hash": "sha256:7154250bb083d149c6787d4cb8be7a1fdeae78afa9279018e736498aaa1c1c9b",
+    "prediction_seal_hash": "sha256:90488459f7e26c465dfa7bdefc90b18a122027b9171aaa2d2b95daf71dd11123",
+    "registered_target_identity_hash": "sha256:dae3970729b0d70d710c90a5be4a38af0c82e7c839b41e5d3d0ec0fb4e7a2daa",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:6065747dacfd500061dee3d6759130d272ed930425e15fdea40278b423436d2c"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:559a40a8d1321d7a2834c558bf0cc60918b12a456c80286540cf4eae25850e3f"
+}

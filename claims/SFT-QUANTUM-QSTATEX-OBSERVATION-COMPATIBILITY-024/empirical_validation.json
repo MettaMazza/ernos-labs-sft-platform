@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-QSTATEX-OBSERVATION-COMPATIBILITY-024",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-QUANTUM-STATE-OBSERVER",
+    "SFT-V1-V2-QUANTUM-STATE-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9bf3b468f467440df032964c42fcbdf4e4264b02aae131487f256403b7ce89ae",
+  "falsification_condition": "Reject if the value-free registry, complete state grammar, exact support/phase/partition execution, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f37fcc6ecf6a98ae4fbfa50f7198121452436625433afa6ef756600ca31b6d92",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:89bc1fcb5ae2d6459dd766e7fdf016896ff1484031ceb6e731daf8bf64f5f105",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-QSTATEX-024-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:800cb359c0570bb23db2ef5220bca58184ccd5804f73dcdfba2d2b28846cc213",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:f89b01fb856d5b1374dbaae63ad72ed6de14f7c288c06384f9af5301bede1a83",
+    "prediction_seal_hash": "sha256:e290f8ebd397988c6e92fe7e95b3798cfe3a59e29c7ab18e09793f4bae7dddf8",
+    "program_hash": "sha256:08f9a45094ad2031f79aafa4e408a3b535c93488dbfffe953b4aafc3657a3b20",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:91d58eeedc1524f0706a6c9f1c8fab5327c612505043517b97c519a3674a6b5c",
+    "target_material_present": false,
+    "trace_hash": "sha256:e152711fcaef07d5c7f690bfb3e0e9b8c5745c646f3f698293efcd7960828abb"
+  },
+  "measurement_receipt_hash": "sha256:ed74781bb71ecb26ff6efe6341242471c459e1c7186a0086c627111c413d5af0",
+  "measurements": [
+    "QSTATEX-024: observation_compatibility",
+    "exact quantum-state execution: {\"causal_orders_compared\":2,\"same_record_required_for_compatibility\":true}",
+    "complete quantum-state custody: 28 records; all rows preserved",
+    "complete finite support, phase, path, partition and record execution supplies the observation; physical frequencies, amplitudes and device outcomes remain downstream measurements"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:263a19bf803dd72b2a82bcbaf1f29f666ceee0b8600153ea2471351f0f8f5f4d",
+    "custodian_id": "SFT-EXP-QUANTUM-QSTATEX-024-V1-custodian",
+    "experiment_registration_hash": "sha256:9bf3b468f467440df032964c42fcbdf4e4264b02aae131487f256403b7ce89ae",
+    "prediction_seal_hash": "sha256:e290f8ebd397988c6e92fe7e95b3798cfe3a59e29c7ab18e09793f4bae7dddf8",
+    "registered_target_identity_hash": "sha256:91d58eeedc1524f0706a6c9f1c8fab5327c612505043517b97c519a3674a6b5c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:dde5f3aac4db077e31235cf95568be5b4d1d1d564cdb8ba278e168c6f98e8dac"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9821d8f3467c4c951faeb092b2865c43aa996994abaab6e15d0e41e3e87bdef3"
+}

@@ -1,5 +1,12 @@
 # Final Theory of Everything paper protocol
 
+Current status, 29 July 2026: the final paper is not yet ready. The complete
+programme ledger is
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+Biology is the active full-field branch at 82/424 obligations; the downstream
+full-field censuses, global one-owner lineage merge, canonical publication
+reconciliation and final heavy verification remain outstanding.
+
 The final TOE paper is assembled only after every registered branch has a
 completed comprehensive branch paper and the global census has no unclassified
 or unclosed frontier obligation within the frozen current-knowledge inventory.

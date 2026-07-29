@@ -1,0 +1,383 @@
+   <!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head><title>Metabolomics Workbench : NIH Data Repository</title>		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noarchive" />
+		<meta name="keywords" content="metabolomics, metabolites, metabolic pathways, metabolomics tools, data repository, standards, tutorials, training, pathways, Metabolomics Workbench">
+		<meta name="description" content="About the Metabolomics Workbench: The National Institutes of Health (NIH) Common Fund Metabolomics Program was developed with the goal of increasing national capacity in metabolomics by supporting the development of next generation technologies, providing training and mentoring opportunities, increasing the inventory and availability of high quality reference standards, and promoting data sharing and collaboration. In support of this effort, the Metabolomics Program's Data Repository and Coordinating Center (DRCC), housed at the San Diego Supercomputer Center (SDSC), University of California, San Diego, has developed the Metabolomics Workbench. The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.">		<link rel="home" href="/" title="home" />
+		<link rel='stylesheet' href='/style/style.14.css' type='text/css' />		<style type='text/css' media='screen, projection, print'><!--/*--><![CDATA[/*><!--*/
+
+		/* high pass filter to hide @imports from browsers with poor CSS1 parsing - also hide from mac IE */
+		@import "/common/style/null.css?\"\{";
+		@import "/common/includes/header/02/style/header.css";
+		@import "/common/style/layout.css";
+		@import "/style/layout.css";
+		@import "/common/style/main.css";
+		@import "/style/site.css";			@import "/style/layout_1col.css";	@import "/common/style/restrict_width/966px.css";
+
+	#hdr .login-nav {
+		/* background-image: url('/images/banner_20120503a.png'); */
+		background-color: #ffffff;
+		background-image: url('/images/MW_banner_background_v05.png');
+	}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a, .dropbtn {
+    display: inline;
+    color: #215EA9;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav li a:hover, .dropdown:hover .dropbtn {
+}
+
+.topnav li.dropdown {
+    display: inline;
+}
+
+.topnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 10;
+}
+
+.topnav .dropdown-content a {
+    color: black;
+    padding: 5px 7px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-weight: lighter;
+}
+
+.topnav .dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.topnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+	/* end hide from mac ie */
+	/*]]>*/--></style>
+
+	<link rel='stylesheet' type='text/css' href='/common/style/print.css' media='print' title='Print Stylesheet' />
+
+	<script type='text/javascript'><!--//--><![CDATA[//><!--
+	//--><!]]></script></head><body>		<div id="constrain">
+			<div class="constrain">
+
+
+				<div id="hdr">
+
+					<span class="cleardiv"><!-- --></span>
+					<span class="cleardiv"><!-- --></span>
+					<div class="login-nav"><div style="text-align:right; vertical-align: text-bottom; height:1.1cm; padding-right: 1.0em; padding-top: 1.0em;"><a href="/login.php" style="color: #dddddd;">Log in</a> <span style="color: #dddddd;"> / </span>
+		<a href="/register.php" style="color: #dddddd;">Register</a></div> <div
+	style="text-align:right;
+			position: absolute;
+			top:80px;
+			right:2px;
+">
+	<form method="get" id="searchform" action="/search/sitesearch.php">
+
+	<table style='background-color:#cccccc;'>
+		<tr>
+			<td style="background-color: #cccccc;">
+			<input type="text" placeholder="Search the Metabolomics Workbench"
+				value=""
+				name="Name"
+				id="s"
+				size="36"
+				title="Search the RefMet database by metabolite name, neutral mass, formula, InChIKey or PubChem compound ID, the metabolite database by name and the NMDR studies by metabolite name, project title or study title. Perform a regular expression search on names by using a 'grep:' prefix."
+				style="font-style: italic;"/>
+
+		</td><td style="background-color: #cccccc; width: 18px; height: 20px;">
+			<input
+				style="
+					background: url(/images/mag_glass_icon.png) no-repeat center;
+					padding: 3px;
+					padding-bottom: 4px;
+					border-width:0px;
+					border-color: #AAA9BB;
+					border-radius: 6px;
+					width: 20px;
+					"
+				 type="submit" id="go" title="Search" value="">
+		</td>
+		</tr>
+		</table>
+
+	</form>
+</div>
+<ul id="header-nav" class="topnav">		
+<li class="top-level dropdown"><a href="/" class="tl-link">Home</a>
+			<ul class='subnav' style='padding-top: 6px; padding-bottom: 0px;' >
+<li><a href='/data/index.php'>Overview</a></li>
+<li><a href='/data/DRCCDataDeposit.php'>Upload / Manage Data</a></li>
+<li class='hilite-sub'><a href='/data/browse.php'>Browse / Search Studies</a></li>
+<li><a href='/data/analyze.php'>Analyze Studies</a></li>
+<li><a href='/data/tutorials.php'>Tutorials</a></li>
+<li class='last'><a href='/data/faq.php'>FAQ</a></li>			</ul> <!-- end class subnav -->
+		</li>
+			
+<li class="top-level hilite dropdown">
+				<a href="/data/index.php" class="tl-link dropbtn">Data Repository</a>
+   			<div class="dropdown-content">
+				<a href="/data/index.php">Overview</a>
+				<a href="/data/DRCCDataDeposit.php">Upload / Manage Studies</a>
+				<a href="/data/browse.php">Browse / Search Studies</a>
+				<a href="/data/analyze.php">Analyze Studies</a>
+				<a href='/data/datasharing.php'>Data Sharing Policy</a>
+				<a href="/data/tutorials.php">Tutorials</a>
+				<a href="/data/faq.php">FAQ</a>
+   			</div>
+			</li>
+			
+<li class="top-level dropdown">
+				<a href="/databases/index.php" class="tl-link dropbtn">Databases</a>
+   			<div class="dropdown-content">
+				<a href="/databases/index.php">Overview</a>
+   				<a href="/databases/refmet/index.php">RefMet: Metabolite Nomenclature</a>
+   				<a href="/databases/metabolitedatabase.php">Metabolite Database</a>
+   				<a href="/databases/proteome/MGP.php">Human Metabolome Gene/Protein Database (MGP)</a>
+				<a href='/databases/externaldatabases.php'>External Metabolomics Databases (Links)</a>
+   			</div>
+			</li>
+			
+<li class="top-level dropdown">
+				<a href="/protocols/index.php" class="tl-link dropbtn">Protocols</a>
+   			<div class="dropdown-content">
+				<a href="/protocols/index.php">Overview</a>
+				<a href="/protocols/general.php">General Protocols</a>
+				<a href="/protocols/studyspecific.php">Study-specific Protocols</a>
+   			</div>
+			</li>
+			
+<li class="top-level dropdown">
+				<a href="/tools/index.php" class="tl-link dropbtn">Tools</a>
+   			<div class="dropdown-content">
+				<a href="/tools/index.php">Overview</a>
+				<a href ="/data/stats/">Load and analyze your own dataset</a>
+				<a href ="/data/analyze.php" title="(Go to NIH Data Repository section)">Analyze Studies</a>
+				<a href="/search/ms.php">MS Searches</a>
+				<a href="/tools/structuredrawing/sterol_gen2_form.php">Structure drawing</a>
+				<a href="/tools/mw_rest.php">REST Service</a>
+				<a href="/tools/externaltools.php">External Tools (Links)</a>
+   			</div>
+			</li>
+			
+<li class="top-level dropdown">
+				<a href="/about/index.php" class="tl-link dropbtn">About</a>
+   			<div class="dropdown-content">
+				<a href="/about/index.php">Overview</a>
+<!--
+				<a href="/about/funding.php">Funding</a>
+				<a href="/about/rcmrcs.php">Regional Comprehensive Metabolomics Resource Cores (RCMRCs)</a>
+				<a href="https://metabolomics.info/consortium/" target='_blank'>NIH Working Groups</a>
+-->
+				<a href="/about/publishingpartners.php">Publishing Partners</a>
+				<a href="/about/howtocite.php">How to Cite</a>
+				<a href="/about/howtolink.php">How to Link</a>
+				<a href="/about/termsofuse.php">Terms of Use</a>
+				<a href="/about/personnel.php">Personnel</a>
+			<!--	<a href="/about/jobs.php">Jobs</a> -->
+				<a href="/about/contact.php">Contact</a>
+				<a href="/about/sitemap.php">Sitemap</a>
+			<!--	<a href="/about/archive.php">Archive</a> -->
+   			</div>
+			</li>
+			
+<li class="top-level dropdown">
+				<a href="/search/index.php" class="tl-link dropbtn">Search</a>
+   			<div class="dropdown-content">
+				<a href="/search/sitesearch.php">Keyword Search</a>
+				<a href='/search/advancedsearches.php'>Advanced Searches</a>
+   			</div>
+			</li>
+</ul>
+ <!-- end class topnav -->
+						<span class="cleardiv"><!-- --></span>
+					</div> <!-- end div class="login-nav" -->
+
+				</div> <!-- end div id="hdr" -->
+
+
+
+			</div> <!-- end div class="constrain" -->
+		</div><!-- end div id="constrain"-->		<div class='constrain-outer'>
+		<div class='constrain'>
+			<span class='cleardiv'><!-- --></span>
+
+			<div id='content-extranav'>
+				<!-- 20170420 -->
+				<!--<div style='padding-bottom:12px;'>&nbsp;</div>-->
+				<div id='content-journalnav'>
+					<div id='content'>
+<h1>Summary of Study ST004494</h1>
+<div class='help'><p>This data is available at the NIH Common Fund's National Metabolomics Data Repository (NMDR) website, the Metabolomics Workbench, https://www.metabolomicsworkbench.org, where it has been assigned Project ID PR002830. The data can be accessed directly via it's Project DOI: <a href=http://dx.doi.org/10.21228/M8VG27>10.21228/M8VG27</a> This work is supported by NIH grant, U2C- DK119886. See: <a href=https://www.metabolomicsworkbench.org/about/howtocite.php>https://www.metabolomicsworkbench.org/about/howtocite.php</a></p></div><a href=stats_toolbox.php?STUDY_ID=ST004494>Perform statistical analysis</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=subject_fetch.php?STUDY_ID=ST004494&STUDY_TYPE=MS&RESULT_TYPE=1>Show all samples</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=show_metabolites_by_study.php?STUDY_ID=ST004494&SEARCH_TYPE=KNOWN&STUDY_TYPE=MS&RESULT_TYPE=1>Show named metabolites</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=data_table_output.php?STUDY_ID=ST004494&STUDY_TYPE=MS&RESULT_TYPE=1>Download named metabolite data</a>&nbsp;&nbsp;</br><a href=study_textformat_list.php?STUDY_ID=ST004494&STUDY_TYPE=MS&RESULT_TYPE=1>Download mwTab file (text)</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href=study_textformat_list.php?JSON=YES&STUDY_ID=ST004494&STUDY_TYPE=MS&RESULT_TYPE=1>Download mwTab file(JSON)</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href=DRCCStudySummary.php?Mode=SetupRawDataDownload&StudyID=ST004494>Download data files (Contains raw data)</a>
+
+<div itemscope itemtype="http://schema.org/Dataset">
+<table class="datatable2" style="border:0px;">
+<tr class="even"><td align=left><b>Study ID</b></td><td><span itemprop="identifier">ST004494</span></td></tr><tr class="odd"><td align=left><b>Study Title</b></td><td><span itemprop="name">Metabolic Flux Analysis of Glycolysis and the Pentose Phosphate Pathway Using U-¹³C-Glucose Stable Isotope Tracing in Wild-type and sgTIGAR HT-29 Cl.16E Cells</span></td></tr><tr class="even"><td align=left><b>Study Summary</b></td><td><span itemprop="description">To investigate the mechanisms underlying glucose metabolism reprogramming upon TIGAR depletion, we performed stable isotope tracing using U ¹³C glucose. In HT29 CL.16E cells incubated with U ¹³C glucose, TIGAR knockout resulted in reduced carbon flux through the pentose phosphate pathway (PPP) and enhanced flux through glycolysis. Specifically, TIGAR-deficient cells exhibited increased fractional enrichment of ¹³C-labeled intermediates in glycolysis—including glucose-6-phosphate (G6P), fructose-6-phosphate (F6P), 2-phosphoglycerate (2-PG), pyruvate (PYR), and lactate—compared to controls. Conversely, the fractional enrichment of ¹³C-labeled 6-phosphogluconate (6-PG) and ribose-5-phosphate (R5P), key metabolites in the PPP, was markedly decreased. Consistent with this, the isotope exchange rate for 6-PG was significantly lower in TIGAR-deficient cells than in control cells. Although total lactate levels were elevated in TIGAR-deficient cells, the isotope exchange rate of lactate was also increased, further supporting enhanced glycolytic activity in the absence of TIGAR.</span></td></tr><tr class="odd"><td align=left><b>Institute</b></td><td><div itemprop="creator" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Southwest Hospital, Third Military Medical University</span></div></td></tr><tr class="even"><td align=left><b>Department</b></td><td>Clinical Medical Research Center,</td></tr><tr class="odd"><td align=left><b>Laboratory</b></td><td>Clinical Medical Research Center,</td></tr><tr class="even"><td align=left><b>Last Name</b></td><td>Su</td></tr><tr class="odd"><td align=left><b>First Name</b></td><td>Sen</td></tr><tr class="even"><td align=left><b>Address</b></td><td>Gaotanyan Street 30, Shapingba District, Chongqing, Chongqing, 400038, China</td></tr><tr class="odd"><td align=left><b>Email</b></td><td>1441suse@163.com</td></tr><tr class="even"><td align=left><b>Phone</b></td><td>0086015023351789</td></tr><tr class="odd"><td align=left><b>Submit Date</b></td><td>2025-12-08</td></tr><tr class="even"><td align=left><b>Raw Data Available</b></td><td>Yes</td></tr><tr class="odd"><td align=left><b>Raw Data File Type(s)</b></td><td>mzML</td></tr><tr class="even"><td align=left><b>Analysis Type Detail</b></td><td>LC-MS</td></tr><tr class="odd"><td align=left><b>Release Date</b></td><td>2026-01-02</td></tr><tr class="even"><td align=left><b>Release Version</b></td><td><span itemprop="version">1</span></td></tr></table>
+<div style="display: none">
+<div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+<span itemprop="givenName">Sen</span>
+<span itemprop="familyName">Su</span>
+<span itemprop="name">Sen Su</span>
+</div>
+<span itemprop="url">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST004494&StudyType=MS&ResultType=1</span>
+<span itemprop="citation">https://dx.doi.org/10.21228/M8VG27</span>
+<div itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload">
+<span itemprop="contentUrl">ftp://www.metabolomicsworkbench.org/Studies/</span>
+<span itemprop="encodingFormat">application/zip</span>
+</div>
+</div>
+
+</div>
+<div id = "DataTabs">
+<br/><p>Select appropriate tab below to view additional metadata details:</p>
+</div>
+<table width="950px" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td class="TabNav" align="left" valign="bottom" nowrap>
+    <div class="HorizontalTabs">
+      <ul>
+        <li id="Current"><a href="./DRCCMetadata.php?Mode=Study&DataMode=AllData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>All</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=ProjectData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Project</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=SubjectData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Subject</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=FactorsData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Study Design</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=CollectionData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Collection</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=TreatmentData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Treatment</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=SamplePrepData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Sample Preparation</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=ChromatographyData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Chromatography</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=AnalysisData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>Analysis</span></a></li>
+        <li ><a href="./DRCCMetadata.php?Mode=Study&DataMode=MSData&StudyID=ST004494&StudyType=MS&ResultType=1#DataTabs"><span>MS</span></a></li>
+      </ul>
+    </div>
+  </td>
+  </tr>
+</table><br/><p><b>Project:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Project ID:</b></td><td><a href='/data/DRCCMetadata.php?Mode=Project&ProjectID=PR002830'>PR002830</a></td></tr><tr class="odd"><td align=left><b>Project DOI:</b></td><td>doi: 10.21228/M8VG27</td></tr><tr class="even"><td align=left><b>Project Title:</b></td><td>TIGAR Regulates Intestinal Mucus Barrier Integrity by Inhibiting Lactylation of G6PD/6PGD in Ulcerative Colitis</td></tr><tr class="odd"><td align=left><b>Project Summary:</b></td><td>Oxidative stress and metabolic dysregulation in goblet cells represent significant contributors to the pathogenesis of ulcerative colitis (UC). TIGAR (TP53-induced glycolysis and apoptosis regulator) plays a critical role as a metabolic regulatory enzyme by promoting NADPH synthesis, thereby counteracting oxidative stress. However, the precise mechanisms through which TIGAR regulates NADPH synthesis and its impact on UC remain incompletely understood. Here, we demonstrate that TIGAR inhibits the lactylation of glucose-6-phosphate dehydrogenase (G6PD) and 6-phosphogluconate dehydrogenase (6PGD), both pivotal enzymes in the NADPH biosynthesis pathway, hence preserving their enzymatic activities. We further identify specific lactylation sites at lysine 432 (K432) in G6PD and lysine 38 (K38) in 6PGD. Lactylation modifications impact the formation of G6PD homodimers and the binding of 6PGD with NADP+. In male UC mice, persistently low TIGAR expression results in elevated lactic acid levels, which enhance the lactylation of G6PD and 6PGD, inhibit NADPH synthesis, and exacerbate oxidative stress in goblet cells. Consequently, these alterations lead to a reduction in thioredoxin 1 (Trx1) reductase activity, inducing S-nitrosylation of anterior gradient homolog 2 (AGR2), a key enzyme involved in MUC2 modification, thus impeding mature MUC2 production and compromising the integrity of the intestinal mucus barrier. Overall, our study elucidates the critical mechanisms by which TIGAR regulates NADPH synthesis, provides novel insights into how TIGAR maintains cellular redox homeostasis, and offers experimental evidence for considering TIGAR as a potential target for UC therapy.</td></tr><tr class="even"><td align=left><b>Institute:</b></td><td>Southwest Hospital, Third Military Medical University</td></tr><tr class="odd"><td align=left><b>Department:</b></td><td>Clinical Medical Research Center</td></tr><tr class="even"><td align=left><b>Laboratory:</b></td><td>Clinical Medical Research Center</td></tr><tr class="odd"><td align=left><b>Last Name:</b></td><td>Su</td></tr><tr class="even"><td align=left><b>First Name:</b></td><td>Sen</td></tr><tr class="odd"><td align=left><b>Address:</b></td><td>Gaotanyan Street 30, Shapingba District, Chongqing, Chongqing, 400038, China</td></tr><tr class="even"><td align=left><b>Email:</b></td><td>1441suse@163.com</td></tr><tr class="odd"><td align=left><b>Phone:</b></td><td>0086015023551789</td></tr></table><br/><p><b>Subject:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Subject ID:</b></td><td>SU004671</td></tr><tr class="odd"><td align=left><b>Subject Type:</b></td><td>Cultured cells</td></tr><tr class="even"><td align=left><b>Subject Species:</b></td><td>Homo sapiens</td></tr><tr class="odd"><td align=left><b>Taxonomy ID:</b></td><td>9606</td></tr></table>
+<br/><p><b>Factors:</b></p>
+<p><b>Subject type:</b> Cultured cells; <b>Subject species:</b><i> Homo sapiens</i> (Factor headings shown in green)<p/>
+<table class="datatable2">
+<tr><th>mb_sample_id</th>
+<th>local_sample_id</th>
+<th class="greenbg">Genotype</th>
+<th class="greenbg"> Treatment</th>
+<th class="greenbg"> Time</th>
+<th class="greenbg"> Sample source</th>
+</tr><tr class="odd"><td>SA534325</td><td>C13-1H-KO-1</td><td>TIGAR-knockout </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534326</td><td>C13-1H-KO-2</td><td>TIGAR-knockout </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534327</td><td>C13-1H-KO-3</td><td>TIGAR-knockout </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534328</td><td>C13-1H-KO-4</td><td>TIGAR-knockout </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534329</td><td>C13-24H-KO-4</td><td>TIGAR-knockout </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534330</td><td>C13-24H-KO-3</td><td>TIGAR-knockout </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534331</td><td>C13-24H-KO-2</td><td>TIGAR-knockout </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534332</td><td>C13-24H-KO-1</td><td>TIGAR-knockout </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534333</td><td>C13-2H-KO-1</td><td>TIGAR-knockout </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534334</td><td>C13-2H-KO-2</td><td>TIGAR-knockout </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534335</td><td>C13-2H-KO-3</td><td>TIGAR-knockout </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534336</td><td>C13-2H-KO-4</td><td>TIGAR-knockout </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534337</td><td>C13-4H-KO-2</td><td>TIGAR-knockout </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534338</td><td>C13-4H-KO-4</td><td>TIGAR-knockout </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534339</td><td>C13-4H-KO-3</td><td>TIGAR-knockout </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534340</td><td>C13-4H-KO-1</td><td>TIGAR-knockout </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534341</td><td>C13-8H-KO-2</td><td>TIGAR-knockout </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534342</td><td>C13-8H-KO-1</td><td>TIGAR-knockout </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534343</td><td>C13-8H-KO-4</td><td>TIGAR-knockout </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534344</td><td>C13-8H-KO-3</td><td>TIGAR-knockout </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534345</td><td>C13-1H-Cont-3</td><td>Wild-type </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534346</td><td>C13-1H-Cont-4</td><td>Wild-type </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534347</td><td>C13-1H-Cont-1</td><td>Wild-type </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534348</td><td>C13-1H-Cont-2</td><td>Wild-type </td><td>13C Glc </td><td>1H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534349</td><td>C13-24H-Cont-1</td><td>Wild-type </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534350</td><td>C13-24H-Cont-3</td><td>Wild-type </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534351</td><td>C13-24H-Cont-4</td><td>Wild-type </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534352</td><td>C13-24H-Cont-2</td><td>Wild-type </td><td>13C Glc </td><td>24H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534353</td><td>C13-2H-Cont-3</td><td>Wild-type </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534354</td><td>C13-2H-Cont-1</td><td>Wild-type </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534355</td><td>C13-2H-Cont-4</td><td>Wild-type </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534356</td><td>C13-2H-Cont-2</td><td>Wild-type </td><td>13C Glc </td><td>2H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534357</td><td>C13-4H-Cont-4</td><td>Wild-type </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534358</td><td>C13-4H-Cont-2</td><td>Wild-type </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534359</td><td>C13-4H-Cont-1</td><td>Wild-type </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534360</td><td>C13-4H-Cont-3</td><td>Wild-type </td><td>13C Glc </td><td>4H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534361</td><td>C13-8H-Cont-2</td><td>Wild-type </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534362</td><td>C13-8H-Cont-4</td><td>Wild-type </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="odd"><td>SA534363</td><td>C13-8H-Cont-3</td><td>Wild-type </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr><tr class="even"><td>SA534364</td><td>C13-8H-Cont-1</td><td>Wild-type </td><td>13C Glc </td><td>8H </td><td>HT29 CL.16E cells</td></tr></table>
+<table class="datatable" style="border:0px;" cellpadding="0" cellspacing="0">
+<tr>
+<td style="text-align:left;">
+Showing results 1 to 40 of 40</td>
+</tr>
+</table>
+<br/><p><b>Collection:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Collection ID:</b></td><td>CO004664</td></tr><tr class="odd"><td align=left><b>Collection Summary:</b></td><td>Sodium butyrate was utilized to differentiate HT29 cells into mature goblet cells, thereby obtaining mucus-secreting HT29 CL.16E cells. Briefly, Human colon cancer cell line HT29 (ATCC, HTB-38) was cultured in a 5 mmol/L sodium butyrate solution for 9 days. Subsequently, the cells were passaged and maintained in a medium supplemented with sodium butyrate for 14 days to generate the HT-29 Cl.16E cell line. Over time, these cells differentiate into goblet cell phenotypes characterized by their ability to produce substantial amounts of mucus. The HT-29 Cl.16E cells were cultured at 37°C in a humidified atmosphere containing 5% CO2. The culture medium consisted of DMEM supplemented with 10% FBS, 100 U/mL penicillin/streptomycin, and 1 mM sodium pyruvate.</td></tr><tr class="even"><td align=left><b>Sample Type:</b></td><td>Tumor cells</td></tr></table>
+<br/><p><b>Treatment:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Treatment ID:</b></td><td>TR004680</td></tr><tr class="odd"><td align=left><b>Treatment Summary:</b></td><td>Stable knockout cell lines of TIGAR were generated utilizing CRISPR/Cas9 technology. The double-stranded oligonucleotide complementary to the target sequence was cloned into the lentiCRISPRv2 vector and co-transfected with the packaging plasmid into HEK293 cells. Subsequently, a 48h viral supernatant was collected to infect HT-29 Cl.16E cells with polybrene. sample (wild-type or sgTIGAR HT-29 Cl.16E; n = 3 biological replicates per group) were seeded in 6-cm plates and cultured in sodium bicarbonate–free DMEM supplemented with 10% dialyzed FBS, 2 mM L-glutamine, and 5 mM glucose. For functional assays, 2000 000 cells (WT or sgTIGAR HT-29 Cl.16E cells; n = 4 biological replicates per group) were seeded in 6-cm culture plates in sodium bicarbonate-free DMEM medium supplemented with 10% dialyzed FBS, 2 mM L‐glutamine and 10 mM U‐13C‐Glucose. Samples were collected at 1, 2, 4, 8, and 24 hours post-treatment.</td></tr></table><br/><p><b>Sample Preparation:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Sampleprep ID:</b></td><td>SP004677</td></tr><tr class="odd"><td align=left><b>Sampleprep Summary:</b></td><td>For cellular samples, 1 mL of pre-chilled (at -80°C) 80% (v/v) methanol of MS grade was added to the culture dish, and cell debris was scraped off using a spatula. The cells were disrupted using a low-temperature ultrasonic disrupter for 60 seconds at -20°C, followed by a pause of 30 seconds, with this cycle repeated three times. The resulting homogenates from cells were transferred and incubated at -20°C for 60 minutes. Subsequently, samples were centrifuged at 18,410 x g for 10 minutes at 4°C. The supernatant was collected after centrifugation, dried under a nitrogen gas, reconstituted, and centrifuged again to obtain the supernatant for subsequent analysis. A 20 μL aliquot from each sample was combined to prepare a quality control (QC) mixture for mass spectrometry analyses.</td></tr></table>
+<br/><p><b>Combined analysis:</b>
+<table class="datatable2"><tr class="even"><th>Analysis ID</th>
+<td align="left">AN007536</td>
+
+<tr class="odd"><th>Chromatography ID</th>
+<td align="left">CH005718</td>
+
+<tr class="even"><th>MS ID</th>
+<td align="left">MS007233</td>
+
+<tr class="odd"><th>Analysis type</th>
+<td align="left">MS</td>
+
+<tr class="even"><th>Chromatography type</th>
+<td align="left">HILIC</td>
+
+<tr class="odd"><th>Chromatography system</th>
+<td align="left">Thermo Vanquish</td>
+
+<tr class="even"><th>Column</th>
+<td align="left">Waters Atlantis Premier BEH Z-HILIC Column (2.1 × 100 mm, 1.7 μm)</td>
+
+<tr class="odd"><th>MS Type</th>
+<td align="left">ESI</td>
+
+<tr class="even"><th>MS instrument type</th>
+<td align="left">Orbitrap</td>
+
+<tr class="odd"><th>MS instrument name</th>
+<td align="left">Thermo Orbitrap Exploris 120</td>
+
+<tr class="even"><th>Ion Mode</th>
+<td align="left">NEGATIVE</td>
+
+<tr class="odd"><th>Units</th>
+<td align="left">peak area</td>
+
+</table>
+<br/><p><b>Chromatography:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>Chromatography ID:</b></td><td>CH005718</td></tr><tr class="odd"><td align=left><b>Instrument Name:</b></td><td>Thermo Vanquish</td></tr><tr class="even"><td align=left><b>Column Name:</b></td><td>Waters Atlantis Premier BEH Z-HILIC Column (2.1 × 100 mm, 1.7 μm)</td></tr><tr class="odd"><td align=left><b>Column Temperature:</b></td><td>30°C</td></tr><tr class="even"><td align=left><b>Flow Gradient:</b></td><td>0-5 min: 90% B-65% B; 5-6 min: 65% B-65% B; 6 -8 min: 65% B-90% B; 8-10 min: 90% B</td></tr><tr class="odd"><td align=left><b>Flow Rate:</b></td><td>0.5 mL/min</td></tr><tr class="even"><td align=left><b>Solvent A:</b></td><td>5% ACN/95% water, 15 mM ammonium acetate (pH 9)</td></tr><tr class="odd"><td align=left><b>Solvent B:</b></td><td>95% ACN/5% water, 15 mM ammonium acetate (pH 9)</td></tr><tr class="even"><td align=left><b>Chromatography Type:</b></td><td>HILIC</td></tr></table>
+<br/><p><b>MS:</b></p>
+<table class="datatable2">
+<tr class="even"><td align=left><b>MS ID:</b></td><td>MS007233</td></tr><tr class="odd"><td align=left><b>Analysis ID:</b></td><td>AN007536</td></tr><tr class="even"><td align=left><b>Instrument Name:</b></td><td>Thermo Orbitrap Exploris 120</td></tr><tr class="odd"><td align=left><b>Instrument Type:</b></td><td>Orbitrap</td></tr><tr class="even"><td align=left><b>MS Type:</b></td><td>ESI</td></tr><tr class="odd"><td align=left><b>MS Comments:</b></td><td>The MS parameters for detection were: ESI source voltage 3.0 kV in negative ion scanning mode with scan range of m/z 70-1050 for mass spectrometry scanning, full scanning resolution of 120000, and MS2 scanning resolution of 60000, the top four precursor ions were broken up with the higher energy collisional dissociation cell in MS2 set to 30% normalized collision energy. the sheath gas was set at 60 arbitrary units, the auxiliary gas was set at 20 arbitrary units, and the blow air flow rate of 2Arb; the ion transport tube was set to 380 ° C; the vaporizer temperature of the ion source was set to 350 ° C. Software tools Xcalibur 4.3 (Thermo Fisher Scientific) and Compound Discover 3.3 (Thermo Fisher Scientific) were used for data processing and analyzing.Retention time alignment across all samples was achieved using the ChromeAlign node, with a pooled quality control (QC) sample serving as the reference. The pooled QC sample was prepared by combining equal aliquots from all biological samples. It was injected repeatedly—once every 10 analytical runs—to monitor instrument stability, enable batch effect correction, and support data normalization. Putative metabolite features were detected and grouped across all samples using the following key parameters (all other settings remained at default values): minimum peak intensity threshold of 1 × 10⁵ (area under the curve); mass tolerance of 5 ppm; retention time tolerance of 0.25 min; ionization modes limited to [M – H]⁻; and peak rating filter set to 4. Missing values were imputed using the built-in “Fill Gap” function, configured with a mass tolerance of 5 ppm and a signal-to-noise ratio threshold of 1.5. Metabolite identification was carried out through a tiered annotation strategy. Matching of both accurate mass (±5 ppm) and retention time (±0.5 min) to an in-house spectral library generated from authentic commercial standards, or spectral matching against the mzCloud database (https://www.mzcloud.org/) and mzVault database using MS/MS fragmentation data, with precursor and fragment mass tolerances of 10 ppm and a minimum match factor of 50.</td></tr><tr class="even"><td align=left><b>Ion Mode:</b></td><td>NEGATIVE</td></tr></table>
+ 	<div id="ftr" class="footer">
+	<ul class="journal-details">
+	<li class="last">UCSD Metabolomics Workbench, a resource sponsored by the Common Fund of the National Institutes of Health</li> 
+	<li class="last">This repository is under review for potential modification in compliance with Administration directives</li>
+	</ul>
+	<ul class="footer-links">
+		<li><a href="/about/termsofuse.php">Terms of use</a></li>
+		<li><a href="/about/sitemap.php">Site map</a></li>
+		<li><a href="/about/contact.php">Contact</a></li>
+		<li class="last"><a href="/about/personnel.php">NMDR Personnel</a></li>
+	<!--	</ul> -->
+	<!--	</li> -->
+	</ul>
+	<span class="cleardiv"><!-- --></span>
+	</div>
+
+	<table>
+	<tr>
+	<td>&nbsp;</td>
+	<td style="vertical-align:middle; width:60px;">
+	<img src="/images/ucsd_logo.png" alt="logo" width="100">
+	</td>
+	</tr>
+	</table>	</div> <!-- close div class='constrain' -->
+</div> <!-- close div class='constrain-outer' -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZQL2CL7F0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1ZQL2CL7F0');
+</script></body>
+</html>

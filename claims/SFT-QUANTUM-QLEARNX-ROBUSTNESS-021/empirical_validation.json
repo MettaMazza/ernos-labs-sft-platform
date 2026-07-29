@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-QLEARNX-ROBUSTNESS-021",
+  "data_source_ids": [
+    "SFT-V3-ADMITTED-QSIMX-COMPLETENESS-024",
+    "SFT-V3-ADMITTED-QUANTUM-LEARNING-001",
+    "SFT-V3-ADMITTED-CLASSICAL-LEARNING-COMPLETENESS-026",
+    "SFT-V1-V2-QUANTUM-LEARNING-COMPARISON-CORPUS",
+    "HELD-OUT-OWNING-DOMAIN-TARGET-HANDOFFS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9aa9fdb912c2f701c621499372f3ceca9f7a3b288acd486bc5dbdc7829aeedf8",
+  "falsification_condition": "Reject if the value-free registry, complete learning grammar, held-out custody, exact execution or explicit handoff, source identity, candidate survivor, seal, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:75105b1eda7813fbe9f929c5192194cd3e1866c325fd52618a75a24826d68ced",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:f04df9f6a677ff5f6301076d758cdf10d391fcb7157eb02021c9ac9c1b2600b6",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-QLEARNX-021-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2b62f86f3d08b98890c97794966d01a16176a977922293829c35f5fea3fcbb04",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:76f089a7d17b07b0c5252b0f71b96ad5defe2128a61ba820b2f0f49f948c56f7",
+    "prediction_seal_hash": "sha256:81be79570eb63ee730081aacce837ea22904dd0cec330ae8dba11afce944e18d",
+    "program_hash": "sha256:9eac595a7fe2f441c93750368fa5fa7d19878e66cf3a3cb899dcebc24d1f8658",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:615cba2c4122a426bbbcac211567a68e70afcf97ac58677f31444682b8c1fb32",
+    "target_material_present": false,
+    "trace_hash": "sha256:a6c9f38d15ba17304b296e7835a2831965d6a236d52ff32d92ceb906882588c8"
+  },
+  "measurement_receipt_hash": "sha256:483d12da8ea03dadc80c7773ef3ae3337a36705f80347d1e90f498c1dedb9113",
+  "measurements": [
+    "QLEARNX-021: robustness",
+    "exact quantum-learning execution: {\"adverse_rows_preserved\":true,\"registered_perturbations\":2,\"support_rows\":4}",
+    "complete learning and held-out custody: 22 records; all rows preserved",
+    "exact finite learning rows supply formal observations; physical advantage, device behavior and application targets remain explicit owning-domain measurement handoffs"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:cfc696cb40b5a247ad860242fc1e205706b453882789fe8a6a54edddedec4c6f",
+    "custodian_id": "SFT-EXP-QUANTUM-QLEARNX-021-V1-custodian",
+    "experiment_registration_hash": "sha256:9aa9fdb912c2f701c621499372f3ceca9f7a3b288acd486bc5dbdc7829aeedf8",
+    "prediction_seal_hash": "sha256:81be79570eb63ee730081aacce837ea22904dd0cec330ae8dba11afce944e18d",
+    "registered_target_identity_hash": "sha256:615cba2c4122a426bbbcac211567a68e70afcf97ac58677f31444682b8c1fb32",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:94cfeb80d0610e437d941c1dccb60634c1174ee5ef8b7792334b6a5b30cd775f"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f167893927b4d15821a039b452512d3b998ae00e08891b46ea163e32b1dc5897"
+}

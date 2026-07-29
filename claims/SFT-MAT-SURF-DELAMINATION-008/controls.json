@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-DELAMINATION-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:398f4caa9338febe7a1c8b88839dbb990ac43403d3e76d2c5bc5be8dfeb02547"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0b62f3ccbbc0881cba189fb37be96cd0422bce37d15778ae32b1259ee8b6dcbe"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8dc102cdadf2cafb786a2be0939e64413cbc3bc33cf44ce79f27399dae9f78b8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5eb2aebf39a972fcc10db66a0a70344a7101ba8d6b51c4a93b37a05d098c3c3f"
+    }
+  ]
+}

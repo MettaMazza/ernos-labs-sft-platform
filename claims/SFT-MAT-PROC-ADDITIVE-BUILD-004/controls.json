@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-ADDITIVE-BUILD-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:aa9b82243812ec46f8c0898970c41be092bd19ec403248c503d08566205f2e42"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:59375d9f7ef7e37cff5c3024da677fc78399229a79c5dc261cc127c7e2581306"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:09570a8414becdc0e8eadde3bc29ace0c5e70692fb4290cd5e26c702d191612b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:2efee92d96138ebaed01c45a64dffc54637740d94a1c519c80f0ea61f61f1cd1"
+    }
+  ]
+}

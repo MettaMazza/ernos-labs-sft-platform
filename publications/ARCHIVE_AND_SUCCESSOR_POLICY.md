@@ -5,9 +5,11 @@ manifests, release tooling, local references and external links already bind
 those locations. Its name does not presently assert that the papers are the
 complete current V3 scientific account.
 
-The eight contained branch directories are immutable v1 source trees for:
-Foundation, Mathematics, Information Science, Classical Computation, Quantum
-Computation, Physics, Chemistry and Materials.
+The contained branch directories preserve the published compatibility sources
+for all fifteen foundations. Newer complete-field successor manuscripts may
+also exist locally under `publications/successors/`; their presence does not
+constitute publication. The current programme ledger is
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
 
 New work follows these locations:
 

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-TENSOR-STRESS-STRAIN-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:61669ea5951edc28006a6631aa9f2eb73840de2a4a0ea1f8426a88aa8d9ce9c8"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7b6156c4e4e85f06490ce526d7da8b6ecefe419002bbaf93b9a46103d65d3fcb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a05e91b96bb66f2da2a8cf0c95ee0949813d5435682de5739480e3d4f72d1334"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c6804c6b5db1d56366060b7e142d5f97a8f8d6f2734b3b58287edc58bd077a79"
+    }
+  ]
+}

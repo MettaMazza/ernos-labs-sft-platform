@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-DEFECT-MIGRATION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e7c2f26b8b58995acefd4f8c857efce430c1b7ecc3fff8184c821f518824c119"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:68e5acb857199ca3f8492984c83ce1a01db6c7ccfd4fc5de9716db6ecffa2624"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:673fd12a549509e89dcfc1cfc140ff8a8cfa4c6a7830c09f1484963e9b04d4d6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a0fc65e157e9e8fd55cd0e29d3820d44b2d4447be7a5f2cd7eac5c8d7b64df7b"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-EXT-CRYOGENIC-RESPONSE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:645f625037a08fa7cfbab27e62f0a7be534776dbc748048e7b6692ef459417c9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:6d6c30e8c7063416d573f7e3fa820f52e5a67ac4bedcc482f42af85633f0f9e0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d1a04f19ac20216718b7ff235cb2df8c9010e7c0d9f2e42b633f9eb8228132fb"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:480d0bdeb9091139b9a821bf5399050d3bca9e3f3f67a207f2b6a0d43930232e"
+    }
+  ]
+}

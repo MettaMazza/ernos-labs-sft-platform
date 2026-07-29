@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MED-PLACEBO-AVAILABLE-STATE-BOUNDARY-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8a3d76cdd0492c021adb380be57bb399959e406b9398a1ee299cc502ce970bcd"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0bf15aa5250d3859131716b528ca36b7e1848f71e271104f54f24c5317aade00"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:57ce7ebed41a08337a3b4979b5437b2b3fd0308dc483f8c15706524e4ee93542"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:583088e6c431a8183690b8c228676b58bc3e237c923a70133ce4cf39382421ae"
+    }
+  ]
+}

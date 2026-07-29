@@ -1,0 +1,3 @@
+# Why NUCHEM-012 requires a derivation check
+
+A conventional displayed value cannot establish the radiation-chemistry reaction-network law. This claim separately generates all 256 registered forms before comparison and uses only its own value-free identity and source-exposure-disclosed derivation seal. The shared post-seal capture reconstructs four official sources as 370 complete PDF pages and 837,013 extracted characters. All product, reaction, preferred-yield, high-dose, rare-gas and adverse/limit rows. Every value, unit, conventional zero or sign, decimal, uncertainty, assumption, correction, fit, estimate, loss, method disagreement, favorable, adverse, absent, unavailable and unresolved row remains downstream provenance and cannot select the native Fold law.

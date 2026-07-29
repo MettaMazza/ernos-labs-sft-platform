@@ -1,0 +1,67 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-BIO-VALIDATION-PRIOR-MECHANISMS-COMPLETE-FAMILY-002",
+  "data_source_ids": [
+    "SFT-BIO-SRC-NCBI-CELL-ORIGIN-METABOLISM",
+    "SFT-BIO-SRC-PUBMED-HOMOCHIRALITY-35969306-V1",
+    "SFT-BIO-SRC-NCBI-AGING-SENESCENCE-V1",
+    "SFT-BIO-SRC-GO-ONTOLOGY-DOCUMENTATION",
+    "SFT-BIO-SRC-NCBI-GENOME-REGULATION-DEVELOPMENT-V1",
+    "SFT-BIO-SRC-NASEM-UNITY-BIOLOGY-2010",
+    "SFT-BIO-SRC-GBIF-SURVEY-GUIDE-V1"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9f1fb373e89b430d0ee953888103477348e44bc9e79cb27768e235b47ea20225",
+  "falsification_condition": "Reject if source bytes differ, a required feature is absent, a contrary row is suppressed, target content opens before the derivation seal, or the source-derived category differs from the sealed prediction.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6dcfb4d5df3be8458b632886519f29b079fe870bbabb4f5f96309857cb4ebd18",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b99d6c601c3558a81a2939bd71e00c94f50f863c3666fdd032b4d9da81e0894b",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-BIO-VALIDATION-PRIOR-MECHANISMS-COMPLETE-FAMILY-002-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6f3dcff2c35de49fdfa52d79c74229aa46ebc92fb5e865190e01d829b1ca8573",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:6e1a02af8af5b3f29156e8921d425ebed6a06125a519497c75d59a83d9a842bd",
+    "prediction_seal_hash": "sha256:986fe9ff65b79a2f0a379326f032b1a94e66720f7914c8b7f6057c795c7d39df",
+    "program_hash": "sha256:1178190ff767bce1c76c68e2bfc07ee85b8dc518dd9136929b3459b6fc2dea5b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:607a97bca8fcb97292256132963e6439e26958bbe1f331fe4895226c5e377051",
+    "target_material_present": false,
+    "trace_hash": "sha256:13e1bf1848f9c68827fcd282895b86b898411045f21a025d21ac296e68bccb62"
+  },
+  "measurement_receipt_hash": "sha256:8cc079400435819d4e346c71069e3a78c39f4b451c316640d6b2c38190543824",
+  "measurements": [
+    "BIOLOGY-PRIOR-MECHANISM-AUTHORITY-CORRESPONDENCE-2026-07-28: exact source-derived categorical match True",
+    "favorable correspondence retained for each source-supported biological category",
+    "absent retained: exact Fold threshold/orbit values are not falsely described as directly measured",
+    "unresolved retained: origin of biological homochirality and quantitative organism mappings",
+    "deliberately tampered unfavorable control rejected"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:67ee163fb5af21b5c3f0147aa3e5a02a8d9873d4d489abddaea080138ffcd2e5",
+    "custodian_id": "SFT-EXP-BIO-VALIDATION-PRIOR-MECHANISMS-COMPLETE-FAMILY-002-source-custodian",
+    "experiment_registration_hash": "sha256:9f1fb373e89b430d0ee953888103477348e44bc9e79cb27768e235b47ea20225",
+    "prediction_seal_hash": "sha256:986fe9ff65b79a2f0a379326f032b1a94e66720f7914c8b7f6057c795c7d39df",
+    "registered_target_identity_hash": "sha256:607a97bca8fcb97292256132963e6439e26958bbe1f331fe4895226c5e377051",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:9a2a2a0b2fe01fcb6495c9dc41780c289083f14dc4ec780d8a27b6012cacdbd8"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8995d8dceae7ca15163756b42d7e9c02cb277ac4d23f8d7f80fe9112f4ae71e6"
+}

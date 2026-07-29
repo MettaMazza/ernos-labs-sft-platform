@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-DISLOCATION-REACTION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c10b358d4895da2def97a015ca90aa13c0501e3b23052df64805c7575cad89e6"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:07b51d18c7b02cb341a5dbad90f3c5d252313389229a7dd32c2d39eb120b7666"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8bb49b29fba0095fec99730c4ad8043a7f4d7fafb8e6787786e20bc7931a6680"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a5bb790145c344406470058c79ec433b1d77f5e2c69a3ebbda3aabf6f1bdfd98"
+    }
+  ]
+}

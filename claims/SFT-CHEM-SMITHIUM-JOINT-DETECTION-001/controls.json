@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-SMITHIUM-JOINT-DETECTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:76dfd5fd278f80df827f765d17f1de610c483867e58c2a5f25ade7a32300ebeb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8b6fcb7731bf1e2018a4200d3366116306ef9fc9dc94747ae0b708c34a5a112e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:74494f499aed0918c2bbd70ca42b4736317f54c00c80d7dc3eea874090b48913"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4eaeac4e82e85cc884fec471e96c2de2b4288cc12186f9cb617a503e897bea1d"
+    }
+  ]
+}

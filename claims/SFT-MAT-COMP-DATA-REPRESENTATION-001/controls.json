@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-COMP-DATA-REPRESENTATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f1688f9e44512e6d3874acde906ade91c1387648fd7d74ad9eb2d1dae0aa7d16"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:300737596227db9242063c2d834645b4d3260e40676dc2040580f1a33f8babf1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:583ecd8d392f071a2f2a8a63d6b7bad799167488d177b187830cec2bd6863ae0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e2aaa607250b69ca3b55f6779e6aef4e9b6fb11a0d05de871463012f476d29bb"
+    }
+  ]
+}

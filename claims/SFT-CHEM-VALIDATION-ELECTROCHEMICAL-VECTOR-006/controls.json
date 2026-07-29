@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-ELECTROCHEMICAL-VECTOR-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1bada631a5f2c1998344379bc6f66bdc3effadcb15cd02d24f1e50cf9db607d9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:447793820c04a60f75353fbc5a8f3248954a95837df009d0f9474b0338638599"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ac443e029c8a49bde8f3061acce7c75f1de1dc71a4f7ba0bd0e7e23031d7ee6e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:90a895443a417c3fdebb62a44c4ecea78b1da9cd21aa6209620dd2d2cc84ef67"
+    }
+  ]
+}

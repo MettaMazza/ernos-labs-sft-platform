@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-COMP-VALID-SEMANTICS-VECTOR-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking complete first-axis coverage",
+      "kind": "false_premise",
+      "observed_behavior": "An incomplete census cannot close validation.",
+      "passed": true,
+      "receipt_hash": "sha256:28f06a15c868af2f122799727f16081795ae8e59744f2cd0bdd609c7f7a3d5ba"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:30b7b2860fc89d23ee9873ab94f7ce47c92281871e7b9df46f37ff2ad7f4ab7a"
+    },
+    {
+      "expected_behavior": "reject missing, duplicated or additional survivors",
+      "kind": "tampered_artifact",
+      "observed_behavior": "literal product contains one survivor and unique identities",
+      "passed": true,
+      "receipt_hash": "sha256:48f165b5c488c6e67dc710c7b4bb5c75b202a20000d32f6406578ff327e1fd44"
+    },
+    {
+      "expected_behavior": "halt imported models, parameters or excluded quantum machinery",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, target outcome or publication status selects the validation result; no missing, duplicate, stale or noncurrent receipt is accepted; no failed control, reconstruction or observation row is suppressed; no bounded result is exported as an unrestricted theorem; no downstream application substitutes for its owning law; no protected engine or verification-authority edit is permitted",
+      "passed": true,
+      "receipt_hash": "sha256:29a50a041ac724b6b3e7b6e5d4e09ec5f96762f7c2968cd9dbc326948dc9dc56"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-ASTRONOMY-OWNERSHIP-HANDOFF-005",
+  "data_source_ids": [
+    "NIST-RADIATION-DAMAGE-MEASUREMENT",
+    "ESA-GAIA-ARCHIVE-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8749bca4548bb23c629f74193f49f53c82d0b371b0f1b694b0fe41b346c0b4b9",
+  "falsification_condition": "Reject if any registered owner, paired receipt, external record, registration, dependency edge, root trace, control or extension boundary is missing, duplicated, changed or opened before the value-free owner registry.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:1b9bb8d9b4ea71e090c0bd95f1a2ed9e5c66541e59748357807e868ff5978d02",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:55e4cf5bdb598ec0ff78927a02836466b732a7ffb3572d68e6851a4b5fd014c5",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-HAND-005-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:cf52d35c63107007b5a9602b8fe0a15f38ea538431cb73248868b00a455d4c7c",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cc5914c6dab6b7144eb8eb30fd359628ea31885ba065900183ef26fffc36fab3",
+    "prediction_seal_hash": "sha256:ba42c2699efb57deba6bfd0f720732377e265faf50e9fcf1a947378f53115e62",
+    "program_hash": "sha256:d5c90e325f50f8e6223eae28c797baed39dd1f8577a37ac490370707a263dd25",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:83d183bf7452883eaa7583134b636d62bb9c27bda3cd16d206aed819bb8d18ce",
+    "target_material_present": false,
+    "trace_hash": "sha256:541e3368161dbe669fef671b15acca8757f93b0bbfe800e8a7c09791aa747489"
+  },
+  "measurement_receipt_hash": "sha256:9c6b0e6ba8d5be3cdaa6aeb8c9c623f6758ec9c703c928335c8b37ed39946a84",
+  "measurements": [
+    "HAND-005: value-free owner registry preceded outcome access",
+    "frozen graph: 1681 claims, 28437 dependency edges, 19852 cross-branch uses",
+    "paired external surface: 15 records, 28 source identities, 54 evidence lines",
+    "all selected evidence rows preserved; omission control rejected True",
+    "materials owns SFT-MAT-EXT-RADIATION-RESPONSE-007; sources=1; evidence-lines=4; receipt=sha256:9378b3b6d4e9a2a2413e9d856f063be97bfc02e2cf7c289cfb9660efed86305d",
+    "astronomy_cosmology owns SFT-ASTRO-SPECTRUM-001; sources=1; evidence-lines=2; receipt=sha256:3c2ae757898fd4ca1063639281403d361117113843e1a4bd69144ffa55655594",
+    "astronomy_cosmology owns SFT-ASTRO-SOURCE-001; sources=1; evidence-lines=2; receipt=sha256:5473ed30f43a3ee1099bf327c08e196a9abcd888adb958b68d7c85d51681e958"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:eb9e8e0918ec6544bde26e05bc39ac3e9f671ab6b5df2125d11086c55974b176",
+    "custodian_id": "SFT-EXP-MAT-HAND-005-V1-custodian",
+    "experiment_registration_hash": "sha256:8749bca4548bb23c629f74193f49f53c82d0b371b0f1b694b0fe41b346c0b4b9",
+    "prediction_seal_hash": "sha256:ba42c2699efb57deba6bfd0f720732377e265faf50e9fcf1a947378f53115e62",
+    "registered_target_identity_hash": "sha256:83d183bf7452883eaa7583134b636d62bb9c27bda3cd16d206aed819bb8d18ce",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:dbb2f49cd3d68c17a54037da913ad731f554ad6f4faadbcf0d1b68d19fb8661a"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:48f2a3bacb32748a449144ce569e3a6623ce2b4f4c4943055251644ea390d0a2"
+}

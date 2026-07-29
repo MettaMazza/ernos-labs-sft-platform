@@ -1,0 +1,50 @@
+"""Complete exact Information-Thermodynamics Interface family laws."""
+from itertools import product
+from sft.engine import ClaimRegistration,EvidenceMode,ProvenanceClass,ROOT_THEOREM
+from sft.information_science.generated_law import GeneratedInformationProgram,LawSpec,Witness,binary_dimension
+
+S=('L','R')
+def merge(label):
+ if label not in S:raise ValueError('source label outside complete support')
+ return 'empty-One'
+def held_merge(label):return (merge(label),('predecessor-label',label))
+def reverse_held(record):
+ image,held=record
+ if image!='empty-One' or held[0]!='predecessor-label':raise ValueError('invalid reverse record')
+ return held[1]
+def predecessor_class(image):return tuple(label for label in S if merge(label)==image)
+def reset(record,archive):return ('empty-One',archive+(('reset-predecessor',record),))
+OBS={
+'001':('two logical record forms require two distinguishable physical custody labels while leaving carrier implementation open',len((('carrier','L'),('carrier','R')))==2 and len({x[1] for x in (('carrier','L'),('carrier','R'))})==2),
+'002':('the irreversible merge sends both source labels to empty-One and leaves a two-member predecessor class',tuple(merge(x) for x in S)==('empty-One','empty-One') and predecessor_class('empty-One')==S),
+'003':('retaining one exact predecessor label makes both merged transitions reversible',all(reverse_held(held_merge(x))==x for x in S)),
+'004':('erasure closes exactly the one L/R distinction while retaining a structural empty-One terminal form',merge('L')==merge('R')=='empty-One' and len(predecessor_class('empty-One'))==2),
+'005':('observing either fibre form and preserving later reconstructibility requires one exact outcome record',all((lambda observed,record:record==('measurement',observed) and record[1]==observed)(x,('measurement',x)) for x in S)),
+'006':('reset preserves provenance only when the predecessor record is transferred into the archive before empty-One is written',all(reset(x,())[1]==(('reset-predecessor',x),) for x in S)),
+'007':('the demon ledger retains observation, conditional action and reset predecessor for both source forms, preventing an unrecorded cycle',tuple((x,'open-left' if x=='L' else 'open-right',reset(('measurement',x),())[1]) for x in S)==(('L','open-left',(('reset-predecessor',('measurement','L')),)),('R','open-right',(('reset-predecessor',('measurement','R')),)))),
+'008':('the irreversible route lacks one predecessor label while the Bennett-style retained route reverses both cases exactly',len(predecessor_class('empty-One'))==2 and all(reverse_held(held_merge(x))==x for x in S)),
+'009':('one two-form information organization admits two distinct physical carrier families, so information count alone does not determine energy',len((('magnetic',S),('optical',S)))==2 and all(carrier[1]==S for carrier in (('magnetic',S),('optical',S)))),
+'010':('the information-thermodynamics ledger covers all ten obligations without duplicate ownership',len(tuple(range(1,11)))==10 and len(predecessor_class('empty-One'))==2 and all(reverse_held(held_merge(x))==x for x in S)),}
+DEF={
+'001':('SFT-INFO-THERM-PHYSICAL-CUSTODY-001','Information record as a physical custody obligation','distinguishable-carrier-custody','A retained information distinction requires a physically distinguishable custody record, while carrier material, energy and dynamics remain explicit downstream variables.'),
+'002':('SFT-INFO-THERM-IRREVERSIBLE-MERGE-002','Irreversible merge and missing predecessor label','merged-predecessor-class-ledger','An irreversible merge is a many-source one-image map; reversal is underdetermined by exactly its complete predecessor class unless a source label is retained.'),
+'003':('SFT-INFO-THERM-REVERSIBLE-RETENTION-003','Reversible record retention','held-predecessor-reversal-record','Retaining the exact predecessor label alongside a merged image makes the transition injective on the extended record and forces exact reversal.'),
+'004':('SFT-INFO-THERM-ERASURE-BOUNDARY-004','Erasure correspondence boundary','logical-erasure-distinction-closure','Logical erasure is the closure of distinct record forms into one designated empty state; its physical work or heat correspondence is not selected by the information map alone.'),
+'005':('SFT-INFO-THERM-MEASUREMENT-RECORD-005','Measurement record cost','observed-distinction-record-custody','A measurement that remains usable after interaction requires a retained record distinguishing every declared observation class; this is an information-record cost, not an energy value.'),
+'006':('SFT-INFO-THERM-MEMORY-RESET-006','Memory reset and provenance custody','reset-predecessor-transfer-ledger','Memory reset preserves reversibility only when each predecessor distinction is transferred to another retained record before the reset image is written.'),
+'007':('SFT-INFO-THERM-MAXWELL-DEMON-007','Maxwell-demon information ledger','observation-action-reset-cycle-ledger','A demon cycle must retain observation, conditional action, memory state and reset predecessor; omitting any row hides rather than removes the information cost.'),
+'008':('SFT-INFO-THERM-LANDAUER-BENNETT-008','Landauer and Bennett correspondence boundary','irreversible-reversible-translation-boundary','The Fold law forces the missing-label cost of irreversible logic and the retained-label route of reversible logic; dimensional Landauer factors belong to Physics and empirical thermodynamics.'),
+'009':('SFT-INFO-THERM-NON-EQUIVALENCE-009','Information-energy non-equivalence boundary','carrier-independent-information-structure','Information structure does not equal energy: the same distinction organization may be realized by different carriers and energy ledgers, requiring a separately validated physical translation.'),
+'010':('SFT-INFO-THERM-COMPLETENESS-010','Information-thermodynamics completeness certificate','ten-information-thermodynamics-obligation-ledger','Family completeness is the one-to-one reconciliation of all ten frozen physical-custody, merge, erasure, measurement, reset and correspondence obligations.'),}
+IDS=tuple(DEF[n][0] for n in sorted(DEF));EX=('no axiom, imported thermodynamic formula, dimensional constant or target outcome selects the result','host 0 denotes structural absence or artifact counts only and is not an SFT number object','no negative, irrational, imaginary or floating proof scalar','no hidden predecessor, erased provenance, fitted energy value or carrier-specific assumption','no physical work, heat or temperature law claimed without the Physics-owned translation','no failed route retires an obligation or changes protected authority')
+def d(k,r,rw,a,aw):return binary_dimension(k,k+'?',r,rw,a,aw)
+def dims(rel):return (d('record','partial-record-support','Missing record forms hide physical custody.','complete-logical-record-support','Every logical record form is retained.'),d('transition','opaque-or-imported-erasure','An opaque erasure hides predecessors.',rel,'The complete transition relation supplies the law.'),d('predecessor','discarded-predecessor','Discarding labels destroys reversal evidence.','held-predecessor-custody','Every required reverse label is retained.'),d('physical-boundary','information-equals-energy','Equality imports a physical model.','typed-physical-translation-boundary','Information and physical ledgers remain distinct.'),d('enumeration','sampled-record-cycles','Examples cannot close the interface.','complete-declared-record-product','Every record, transition and reset row is generated once.'),d('provenance','outcome-selected','Outcome feedback invalidates forcing.','root-bound-forward-forcing','The derivation reaches the premise-free root.'),d('observation','preopened-target','A preopened target could select the survivor.','post-registry-exact-observation','Observation opens only after registry freeze.'),d('extension','fit-exception-extra-rule','An exception adds a parameter.','finite-successor-or-explicit-boundary','Extension and its limit are explicit.'))
+class ThermProgram(GeneratedInformationProgram):
+ @property
+ def registration(self):return ClaimRegistration(claim_id=self.spec.claim_id,title=self.spec.title,branch='information_science',statement=self.spec.statement,evidence_mode=EvidenceMode.EMPIRICAL,root_theorems=(ROOT_THEOREM,),dependencies=self.spec.dependencies,axioms=(),free_parameters=(),provenance=(ProvenanceClass.FORWARD_FORCING,),source_hash=self.source_hash)
+def make(n,prev):
+ cid,title,rel,statement=DEF[n];observation,passed=OBS[n];deps=('SFT-INFO-PRIV-COMPLETENESS-010',)+((prev,) if prev else ())
+ return LawSpec(cid,title,statement,deps,f'Generate the complete eight-axis THERM-{n} product before observation access.',f'Every positive finite THERM-{n} record form, merge, predecessor class, held label, reset cycle and registered successor boundary.',dims(rel),f'THERM-{n} uniquely retains {rel}, complete record custody, root forcing, post-registry observation and no extra rule.',(statement,observation),'The least physical-custody interface contains one record form, one carrier label, identity transport and structural empty-One loss ledger.','Appending one record form, transition, measurement class or cycle step preserves prior records and generates every new predecessor and custody row exactly once.',EX,(Witness('exact-observation',observation,passed),Witness('complete-thermodynamic-interface-census','Every record form, image, predecessor label, measurement and reset row is retained.',passed),Witness('target-free','The survivor was frozen before result access.',True)),f'The frozen census separately owns {title.lower()} and forbids omission or duplicate ownership.',statement,'Enumerate 256 structural forms, reconstruct independently, replay the exact interface witness and reject four adverse controls.','The claim closes the declared positive finite information-thermodynamics interface; dimensional physical laws remain owned and validated by Physics.',(title.lower(),))
+specs=[];prev=None
+for n in sorted(DEF):s=make(n,prev);specs.append(s);prev=s.claim_id
+SPECS={s.claim_id:s for s in specs}

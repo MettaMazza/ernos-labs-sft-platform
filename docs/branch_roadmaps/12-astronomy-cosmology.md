@@ -58,6 +58,21 @@ The full census covers:
 - unexplained observations and alternative model discriminators; and
 - exact separation of universal law from source-dated cosmic history.
 
+## Mandatory prior-corpus return families
+
+Status: completed to the frozen current standard and open to lawful extension.
+Parker proton energy, the Tully-Fisher fourth-power carrier and damped ringdown
+were already admitted at full strength and were not replayed. Five new laws now
+cover the exact solar/radio unit-release benchmark, atomic burst completion,
+depth-seven planetary binary ladder and one-Fold lithium-seven depletion,
+together with the Earth tipping lock and a complete 25-source comparison.
+Measured departures remain explicit: transient exponents are heterogeneous,
+planetary spacing is not universal and lithium is a factor-of-few problem rather
+than a universally measured exact half.
+
+See
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+
 ## Publication sequence
 
 The foundational edition joins admitted physical laws to astronomical

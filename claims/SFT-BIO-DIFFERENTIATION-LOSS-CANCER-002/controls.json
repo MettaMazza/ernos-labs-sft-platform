@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-DIFFERENTIATION-LOSS-CANCER-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2ff1c15e91ced8499a844f7e4010ba253f8b6da8e42aaaff6db23d64d459197d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ebd7effd8f7082fb967031ae78fbb496bd9fe53425ccd13034dcdaaa629db8b9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cdc90229e4bd2673149e48834d03691fa39cad47a7e8b396d90a7613522bb0e0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:dad78fb07284cc55ab4b8530bd43015822a10b1b199831bddd9153495df0040b"
+    }
+  ]
+}

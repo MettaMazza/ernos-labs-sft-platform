@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-PASSIVATION-BREAKDOWN-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:dd411ddeaa134c118fe4a475cf7f8d5b061a9d202b46e80a55ceb52b154aa9cd"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:707c7510ad991ce7e56769eeeb4848c87097f205c6e94cf512e57abcb7d6f195"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:dc0b23153622964cdc1dae0ea31dbd37229a343f0e342b44af3f478766ce2300"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:84411b04e22cec6c2ec1a81777a517132cb0736bf185c642a9fa4fc873d9bc2e"
+    }
+  ]
+}

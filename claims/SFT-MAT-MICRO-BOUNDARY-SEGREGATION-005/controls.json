@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-BOUNDARY-SEGREGATION-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6c24f81296aee9b5af5345db78152a2f1b23b7d3a865ed1b02d48cb372458606"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:47ecbf85fc23571877bd4244d90ee2db88a22b12c1eb677eff258657007bfb1c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3510037983578147e3323a36384eb3c655742fb99ef2b4b4f2d36b3a18a65eb0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9e33ec7214394d24fe89e756eb438bb608c4c8fbe552a94a268705878a9caeb4"
+    }
+  ]
+}

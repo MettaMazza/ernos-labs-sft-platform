@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-EXCITON-DYNAMICS-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:149512407c5db6064d043c447fa117fa3db82fe60af1c8a9fc9fbea062efc737"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f70772d1e8db12416765d5ccfcdc1ca90d487a333be22d20a55fd96b6f8a485a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:08e4df87d43047f0dbd08dee0a9e762d4d8be16e63317f172473ed2d535975da"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a0f9bae86f49418bbb66adc179b08d500b4d1c7fe377c04377ad92ad43349db3"
+    }
+  ]
+}

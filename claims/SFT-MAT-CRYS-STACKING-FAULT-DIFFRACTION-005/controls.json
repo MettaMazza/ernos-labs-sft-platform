@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYS-STACKING-FAULT-DIFFRACTION-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:068bd1c1b4916709fe9ae1bbf4404979606ee0b5ceb99cc37dc541c59cd0463c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:eee27b5b26055ad0e32f36e7b514fef1b25fe0bdc0b5c7764fc8285a088e86f9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:6ffbea93a74c5960a4cdbb5afb7799799c02faf09c2cbc38343c46a27404b3a2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5fffd46c869667fe1448df6eb20c9f91df2079f229d6a8c6d0fb562eb4610eca"
+    }
+  ]
+}

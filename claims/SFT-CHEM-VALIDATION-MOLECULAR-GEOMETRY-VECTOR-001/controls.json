@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-VALIDATION-MOLECULAR-GEOMETRY-VECTOR-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f3c1e021125c5f0769bde21e4e4682bcbe768ee42c1bd1b20e44ba5e63cda28d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:783740ba6603fb309ea0a4efa49547b2def9c96cbd22c60ea5c7b6a8248f80e0"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5fdbab30ecc3d91161ce4f628af43731e143872f1beb796a403330dedc434a73"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b97a5ce76480aff38b9a75a8ee9f63bfd86bbd0b7c0d4e9fb06270a6a3e73489"
+    }
+  ]
+}

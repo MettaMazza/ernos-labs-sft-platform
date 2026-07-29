@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-RECOVERY-YIELD-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f54c84c4916c6c1d0b7769a2db3fa371a0b384be7859f6a947d78dbe4b79be11"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:309efa9d9134c0246fbf53f6629e0e6a9107ee33cd8797d97d81a3157d5a90ac"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:131f32978c4025b703274beb72cdad0e03413ff60f2c89582d596d556bba6bba"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d3803a1810cd7cf84e4c503a15d16a49b2b5d9238c96adc7ec48bd002783404e"
+    }
+  ]
+}

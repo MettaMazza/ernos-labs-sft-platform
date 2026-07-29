@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:91fb689945f0adc32d2967b76b4f989d54c7bb70434d7162b94b1faea8f3639a"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a230115390a992d1b626790a9ed45e6fdbe3e92f3c2850df9bd337de139f6456"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5f1bc6962747bf379c15b72745904e0ebd4533861a9526a0314ad80ef7b7fd87"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:69bf3f10fb3ff91b621cfaf210ca3c9a5c5808e1fd1cfd0679a3d3f9b22f5e29"
+    }
+  ]
+}

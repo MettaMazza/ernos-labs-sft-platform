@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-WETTING-CONTACT-ANGLE-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:1341eb4239ba55a5b54160ede824fd6de3d6bbf613798bb464ca5150a33aed09"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d686b60b2c5a80c383bdf9b396187f200212c4d3a9b17b02bf62e21717b931e4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:04a2a3376d3908c439a6b427879bd5f265660ed7e4a49fcaa6a5297b19e19f87"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a934050d61ed2432fb39a481a790781ece94be215a876ab71d71c6f282ed414f"
+    }
+  ]
+}

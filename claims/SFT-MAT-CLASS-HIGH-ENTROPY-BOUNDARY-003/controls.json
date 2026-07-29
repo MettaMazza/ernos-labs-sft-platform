@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-HIGH-ENTROPY-BOUNDARY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f4e51a31c3b480819d34b3beec78551e58ae564f0b39df391831e2d808ebde94"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:66de86ba078049b4d9587266254510630370fef35981d86f568161daed564b5e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:76b31813622b8f1f6e966c29bb937ea351ae0175e3816f3e7be839318e0cfb9f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:93eb6a06b5f2ee3865fef64a7fc6d1a73df1a9dbbc786593db6346b2fe773653"
+    }
+  ]
+}

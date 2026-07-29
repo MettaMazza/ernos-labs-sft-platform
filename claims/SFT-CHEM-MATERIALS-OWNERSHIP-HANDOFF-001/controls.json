@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-MATERIALS-OWNERSHIP-HANDOFF-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6772d88a5ad91028cbca9c07aa90676eb42b7e37e4c2324da1656568fb198359"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:87519e6c64024b2783a95a6972790304b9617d9f2f8a0bb35c48b3b085518e6d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b92857632a4d29ded2afd903db515711f1f67b159d3b2f71fe00a209fc32125c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1314b03906c8d63630baedb0abe6681c53b1b437ab68a18e24c3406b39d55b01"
+    }
+  ]
+}

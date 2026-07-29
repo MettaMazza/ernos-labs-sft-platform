@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-PRIME-VACUUM-ORBIT-IDENTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:bf4dd50698ba399b6e879ff7649bc1fd359f8ba0fa456b7c26e336b1b9c7955f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8c53819983875138cf7c2d593a241340961d066e07652fa12d10287924f912e4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7aa2e042df467240aedd27d4c1e5a7815fafe30cfb3be3b24b6aa7fb43338dcf"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:cfc94c2d3608602d56f129e8b66c8938cf1056680f418b8dda00d4fa19ebf458"
+    }
+  ]
+}

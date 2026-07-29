@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-SYMBOLIC-PROPERTY-EVALUATION-012",
+  "data_source_ids": [
+    "PUBCHEM-PUG-REST-AUTHORITY",
+    "PUBCHEM-C3H8O-FORMULA-CENSUS",
+    "PUBCHEM-ASPIRIN-CONFORMERS",
+    "PUBCHEM-ASPIRIN-SUBSTRUCTURE",
+    "PUBCHEM-ASPIRIN-SIMILARITY",
+    "CHEBI-REST-AUTHORITY",
+    "RHEA-IMMUTABLE-REACTION-SMILES",
+    "USPTO-IMMUTABLE-REACTION-SURFACE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:8fa4f78cbff02e668262324c8b4a89cbcae1d687a088d2eab13f2b538131c1ca",
+  "falsification_condition": "COMP-012 halts if its survivor is nonunique; a registered target, source route, graph, atom, bond, orientation, mapping, reaction row, provenance record, database conflict, adverse result or resource halt is omitted; the implementation-distinct reconstruction disagrees; a dependency is absent; or external data selects the native law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:714d14d514d1743bd950379e803e7d5df7e3ba11ef818cff65bf6659e9ecacd2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:4140fea71218327005cc3b17ce0dc3500f86dba1bfec4ae9163f5cec08f2f681",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-SYMBOLIC-PROPERTY-EVALUATION-012-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:fa10c53b5f0799a0cd13ce631e0bc98727044c6edeb114bedfa731f9b9219a8e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:a403402eaa0b587b52ec050eed717c426ca1b0693f9e853437e4a89141f63bee",
+    "prediction_seal_hash": "sha256:61c269dd0d1d3c71b28a6d08c5a5e4ab1da02317a73f4573d820e5cf869f5621",
+    "program_hash": "sha256:7e8a78d203d849a4051049c93c20dd3ebd9f7b04145effa92336825fdc9c0356",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:4807cdafb8acf4dcad206e54db874037ad0432aeeb2fefe48b18227de7c78c3a",
+    "target_material_present": false,
+    "trace_hash": "sha256:ba12e7f1d692654680c841afb31e4adc49a887652be7607a54144852185f06c3"
+  },
+  "measurement_receipt_hash": "sha256:a6675ebb641d971bc086844fedbd3ab83bd73b7b71cf518995b622c4cc5867f0",
+  "measurements": [
+    "complete 59-artifact 444,644,830-byte post-seal surface retained",
+    "12 PubChem records, four ChEBI cross-source records, 36,444 Rhea reactions, 50,016 USPTO reactions and 1,065,119 atom-mapped reactions retained",
+    "all twelve registered invalid-property responses, low-confidence rows, conflicts, unavailable records and resource halts retained",
+    "all 8 separately registered claim targets retained",
+    "external formats, algorithms, scores and outcomes never select the Fold-native survivor"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:eb0ad11d2299b1979ec1bb8bb0fc8b6ab5a3dfc1fdfe4bf2b27ea6ba79236dd0",
+    "custodian_id": "SFT-EXP-CHEM-SYMBOLIC-PROPERTY-EVALUATION-012-external-target-custodian",
+    "experiment_registration_hash": "sha256:8fa4f78cbff02e668262324c8b4a89cbcae1d687a088d2eab13f2b538131c1ca",
+    "prediction_seal_hash": "sha256:61c269dd0d1d3c71b28a6d08c5a5e4ab1da02317a73f4573d820e5cf869f5621",
+    "registered_target_identity_hash": "sha256:4807cdafb8acf4dcad206e54db874037ad0432aeeb2fefe48b18227de7c78c3a",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:71867c50376f8c52854832e87d190f20e0b82c44ed5f65be4f9889252a1435cc"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e588e308c20e25c58236e44999c0219f63f2ee9cf131adecfaf073f8a65c312e"
+}

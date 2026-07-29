@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-RETR-PRECISION-RECALL-008",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-RETRIEVAL-OBSERVER",
+    "SFT-V1-V2-RETRIEVAL-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:7df5a1f3d89cdd169ba9ebe660695a747ae47ac3e372ca03b6ea2ea32ae7a34d",
+  "falsification_condition": "Reject if the value-free registry, complete source-index-query-result census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:0c6c6caee2d20e40b45d83ade5bb789fb620809bf3de7b4d35d293d60ace86b3",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:cbed8e37fa67c44ff6e2ee84011df6e6a4506cec851fd0c6163ea2973f246e18",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-RETR-008-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9bfa1d29985ee6db82c61227abd6d04ac68d516fa8b473fe1b74194c036f0c35",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:799792f039a0e0c14340bfaa3ccaa8af38f1becb8b48f9053fc5e31caea0001e",
+    "prediction_seal_hash": "sha256:5334a3fa0e20212009893a28163d12f57eab36ac724f6687bef8088c68f37e06",
+    "program_hash": "sha256:7bcd6fb18f8ab0d291daa92f3c748a40ff2a6c6dcc9dffd33da13b84a07afdba",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:030374a89f565da574b2a5d46316075bf5c69350e206a5aa16bfca6789426573",
+    "target_material_present": false,
+    "trace_hash": "sha256:7ea82e40e1b8afb92f0240b1bc445d9b91d033f548278f30e54aef76327f25f8"
+  },
+  "measurement_receipt_hash": "sha256:f8c9922cedc99cb568b44bd1f8594d20d92580a646216b886ea1c97f1c5126c3",
+  "measurements": [
+    "RETR-008: precision_recall",
+    "exact observation: {\"intersection\":1,\"precision_part\":[1,2],\"recall_part\":[1,2]}",
+    "complete family observation custody: 12 records; all rows preserved",
+    "complete source, key, location, query, result, order-class, relevance and reference-edge enumeration supplies the observation; no imported relevance judgment, fitted rank score, silent tie break or stale source version enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3e375dd2fe3466adbd918b3f293cda943a6d82bcfb7cc64d1d24e234f08ed588",
+    "custodian_id": "SFT-EXP-INFO-RETR-008-V1-custodian",
+    "experiment_registration_hash": "sha256:7df5a1f3d89cdd169ba9ebe660695a747ae47ac3e372ca03b6ea2ea32ae7a34d",
+    "prediction_seal_hash": "sha256:5334a3fa0e20212009893a28163d12f57eab36ac724f6687bef8088c68f37e06",
+    "registered_target_identity_hash": "sha256:030374a89f565da574b2a5d46316075bf5c69350e206a5aa16bfca6789426573",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:3959bb2cd5560c8e08394473cc8d445f3b29d605eb8ed5598f3037b33406a2a1"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6af76b859b469b777a1c155bbf713a3a1f95b2d0f4b915c68e98aa96a8b7e5ba"
+}

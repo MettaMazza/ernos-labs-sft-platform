@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-QALGX-COMPLETENESS-030",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-QUANTUM-ALGORITHM-OBSERVER",
+    "SFT-V1-V2-QUANTUM-ALGORITHM-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:d91c30ed00dc31bff78c6806b8370ebbbb0b4f9f0511224a61a3d97f63c0b960",
+  "falsification_condition": "Reject if the value-free registry, complete algorithm grammar, exact execution/resource trace, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:48e11acc9a295e27d5615d26cc8e71c997b6455e1b15465ec42a477783869e68",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:854ff917e136ee99795ab5b96d2a854da0e3006ef3e8bc33ff4aa808e11bf110",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-QALGX-030-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ee93910742c9c0a086768b082255ab3657109348b69d46da10ad263be7e5e026",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:163c473017c5b7113a7adfb49720f032cf09a0837bcea502051f966a914d90c5",
+    "prediction_seal_hash": "sha256:035d35916adfb4d1bf335242a6857c016765a714ed288d9ca8065639cba95568",
+    "program_hash": "sha256:74ec195ef10487d2aa25fd5176064cec64c8cfd00c1ad29f9de34bfad84ead41",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6b20be4e167602f97974fdf0b2b8cf5f83eb7fdad3d663ecdfbbf15fbdf2c502",
+    "target_material_present": false,
+    "trace_hash": "sha256:3d452dbb68dc78b1abbae2ba45efd0fad5a66d61690c5fa84f67e7e0b9a8b62f"
+  },
+  "measurement_receipt_hash": "sha256:1089e9298c9a62a75d8937cc4348f4cb6b2f0bbf53b60090f9a679bd134509f3",
+  "measurements": [
+    "QALGX-030: algorithm_completeness",
+    "exact quantum-algorithm execution: {\"duplicate_owners\":0,\"execution_rows\":30,\"omitted_owners\":0,\"registered_obligations\":30}",
+    "complete quantum-algorithm custody: 30 records; all rows preserved",
+    "complete finite input, path, query, result and resource execution supplies the observation; physical hardware performance and unrestricted advantage remain downstream measurements or explicit boundaries"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:cac74f8b6accebd2ae3e7c67b08ce8bc0dfed1b1b09b679cf973b8ce24f04d42",
+    "custodian_id": "SFT-EXP-QUANTUM-QALGX-030-V1-custodian",
+    "experiment_registration_hash": "sha256:d91c30ed00dc31bff78c6806b8370ebbbb0b4f9f0511224a61a3d97f63c0b960",
+    "prediction_seal_hash": "sha256:035d35916adfb4d1bf335242a6857c016765a714ed288d9ca8065639cba95568",
+    "registered_target_identity_hash": "sha256:6b20be4e167602f97974fdf0b2b8cf5f83eb7fdad3d663ecdfbbf15fbdf2c502",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:4890af4a953e5d1cf2d6555993be081c365e1c6f0efca1b78bec3602d2684773"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6a709620fe6c53c4e99752096a09d3ba63448818be54430f00a2e953174dbdc3"
+}

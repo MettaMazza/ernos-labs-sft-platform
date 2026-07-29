@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-CLASSICAL-QUANTUM-ALGORITHM-CORRESPONDENCE-014",
+  "data_source_ids": [
+    "PUBCHEM-PUG-REST-AUTHORITY",
+    "PUBCHEM-C3H8O-FORMULA-CENSUS",
+    "PUBCHEM-ASPIRIN-CONFORMERS",
+    "PUBCHEM-ASPIRIN-SUBSTRUCTURE",
+    "PUBCHEM-ASPIRIN-SIMILARITY",
+    "CHEBI-REST-AUTHORITY",
+    "RHEA-IMMUTABLE-REACTION-SMILES",
+    "USPTO-IMMUTABLE-REACTION-SURFACE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:52b565ca0b9fb4d02d6910945c14a2c93664f7e4b0a490a75d5e8fc0e4d8f278",
+  "falsification_condition": "COMP-014 halts if its survivor is nonunique; a registered target, source route, graph, atom, bond, orientation, mapping, reaction row, provenance record, database conflict, adverse result or resource halt is omitted; the implementation-distinct reconstruction disagrees; a dependency is absent; or external data selects the native law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:950da84d4b0408ba2c47189513b0137b7812e27a2dafafcfa6d7b15a9a0805c1",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e9af40c667dd84b453ab44172846821e25b2bb701a72c6e87cb1b5134f742d36",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-CLASSICAL-QUANTUM-ALGORITHM-CORRESPONDENCE-014-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:2d9055233582fd0399c5b2ff088c6d0957b9e79590fa1d9f744f3c9788c9f6b1",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:c190461bd61934f5057b52f2c2177ee97d4f22208b64d8078d1d4af235ddf1d2",
+    "prediction_seal_hash": "sha256:2a884004e58f2d2860dd5274adb50eef1ee01c85f2b86378c1de8a2b40d54749",
+    "program_hash": "sha256:c7bb86585f05356fac04687580219a5e983ab52e4743700e018faed2cd1bea7e",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2f72248404a617902bb42153abc75813322168879decef051455f0a2ee7e595d",
+    "target_material_present": false,
+    "trace_hash": "sha256:bf2a35b6bdc0d03d1fbc2cc932f61bc3e789ea0c04b7b964e6fda10ce5d849b7"
+  },
+  "measurement_receipt_hash": "sha256:facb9543c124496152767897345a4afe6e54fd506784c5dcc1a85b43675d610c",
+  "measurements": [
+    "complete 59-artifact 444,644,830-byte post-seal surface retained",
+    "12 PubChem records, four ChEBI cross-source records, 36,444 Rhea reactions, 50,016 USPTO reactions and 1,065,119 atom-mapped reactions retained",
+    "all twelve registered invalid-property responses, low-confidence rows, conflicts, unavailable records and resource halts retained",
+    "all 8 separately registered claim targets retained",
+    "external formats, algorithms, scores and outcomes never select the Fold-native survivor"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:2c0dba9444fd5cc8485f9c18607c10fc8924ca34706bd9be0fedec9ff6f96e3f",
+    "custodian_id": "SFT-EXP-CHEM-CLASSICAL-QUANTUM-ALGORITHM-CORRESPONDENCE-014-external-target-custodian",
+    "experiment_registration_hash": "sha256:52b565ca0b9fb4d02d6910945c14a2c93664f7e4b0a490a75d5e8fc0e4d8f278",
+    "prediction_seal_hash": "sha256:2a884004e58f2d2860dd5274adb50eef1ee01c85f2b86378c1de8a2b40d54749",
+    "registered_target_identity_hash": "sha256:2f72248404a617902bb42153abc75813322168879decef051455f0a2ee7e595d",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:76c493f822c259a234c2b704fcb1de714327ce3f92824881628e0de635595804"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e534d776324594aa6bcf2fa3c9d381cbba67e4aec169b33b63da1de43e67f3c0"
+}

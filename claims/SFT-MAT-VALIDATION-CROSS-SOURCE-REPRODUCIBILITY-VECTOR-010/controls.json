@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-CROSS-SOURCE-REPRODUCIBILITY-VECTOR-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0e200a76a724b58d2eecfc5957f427b12b2fcac06361b0d8c7f5cd6623dd5d42"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b64c616530f95d421df9db93e5f7361320c522875bfad5a8752bf973ea82fea9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:dda3eb2e5ddafefe97ecd129658177e246b3a5f2db17812cb2a658e58da1c35f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5da0a196e302c1a0868bb1a4fb90b8a888704cc8ad5ea39626a2ba95f1be44ea"
+    }
+  ]
+}

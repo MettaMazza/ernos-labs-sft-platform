@@ -1,0 +1,66 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-ELECTROCHEMICAL-STORAGE-HANDOFF-013",
+  "data_source_ids": [
+    "SFT-CHEM-CELL-POTENTIAL-COMPOSITION-003",
+    "SFT-MAT-DEGR-CORROSION-001",
+    "SFT-ENG-REQUIREMENT-001",
+    "SFT-V3-LIVE-CLAIM-CENSUS",
+    "SFT-V3-LIVE-DEPENDENCY-GRAPH",
+    "SFT-CHEM-MAT-PAIRED-RECEIPTS",
+    "NIST-METAL-ADDITIVE-CORROSION",
+    "SFT-V3-BRANCH-OWNERSHIP-BOUNDARY"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:bb887b67a0192c458098da1347e7d1b090e21b2c80312908a69fe90cdb763a37",
+  "falsification_condition": "The claim halts if the survivor is nonunique; any owner, coordinate, admitted receipt, directed handoff, external material record or duplication control is omitted; or an application outcome selects the ownership law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:6c9eb344ca81f0c33debe0894219f0afc74310c50a0ce015a3b9a6d0d8286c93",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a60654b83bfb5cbdb2df10365ee1b23458dbb26b3066d429471a4a4d5d9e9074",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-ELECTROCHEMICAL-STORAGE-HANDOFF-013-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4af134a7e048fd0ad1ab3184dc2a165fe55c26eb3dde0d3c6bd2b688e17c6777",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:31f562c5bb9f104c437e6764de00b3306bbe6fd6695343b848e4d4a095283eac",
+    "prediction_seal_hash": "sha256:ed4b52cd108128fedf394bcec0a039cec927840750a54fd63f1896297c4c7775",
+    "program_hash": "sha256:29f6ac366dc479cdee8df249c762a44a49ec58feab4c3de8b6befb3ad669a8c0",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:0c8ea0d73b5ca2bec7ceda0827e1996e113d0e29acf107b9b3169e447016d7db",
+    "target_material_present": false,
+    "trace_hash": "sha256:876c56641ce6b45a93b917eea20e57a775505ff1bfe1a246f2eb818dcc029b4b"
+  },
+  "measurement_receipt_hash": "sha256:5d13e5471cd765f0166c60fa3fdbfff0614c541dac9840646b3dd31b1287d046",
+  "measurements": [
+    "three admitted branch-owner certificates retained",
+    "two directed handoffs and complete 97,292-byte NIST Materials source retained",
+    "development-observed source status disclosed and never relabelled blind"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:4ae406e53d901fe3561c5e6f2667ebdef08b37045fa13a927bc905736f3b246e",
+    "custodian_id": "SFT-EXP-CHEM-ELECTROCHEMICAL-STORAGE-HANDOFF-013-external-target-custodian",
+    "experiment_registration_hash": "sha256:bb887b67a0192c458098da1347e7d1b090e21b2c80312908a69fe90cdb763a37",
+    "prediction_seal_hash": "sha256:ed4b52cd108128fedf394bcec0a039cec927840750a54fd63f1896297c4c7775",
+    "registered_target_identity_hash": "sha256:0c8ea0d73b5ca2bec7ceda0827e1996e113d0e29acf107b9b3169e447016d7db",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:8dc93f5f6f17df1de5c6a49723126f5f522d7259702690c0d7f70f631b78306f"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f5a82eaee94ab90d3d7ac7fcc3141643c412ce3fbc5991ac3783a76849e15295"
+}

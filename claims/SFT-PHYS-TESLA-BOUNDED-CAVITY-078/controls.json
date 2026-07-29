@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-TESLA-BOUNDED-CAVITY-078",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9daa906efda4e214f382d2ff60ced91f26d6c125bd44a515f33d416be0e96c51"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a53019f1b2dcdba8e1d3fbbeaea704096d13ddb82de9c5ef79850fc78d0640f6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:53e6ea51c75355d278acd420203685cdf6bd61fb48be4cdae95e52dc3f229626"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9daef0df1ace8c42f05849c3aee5c15142d1296d58eb45c7f7bc0bb0c43a1c69"
+    }
+  ]
+}

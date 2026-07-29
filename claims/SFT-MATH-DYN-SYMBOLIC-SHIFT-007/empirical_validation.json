@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MATH-DYN-SYMBOLIC-SHIFT-007",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-DYNAMICS-OBSERVER",
+    "SFT-V1-V2-MATHEMATICS-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ee3f96c664942d077f3049c0594a5d06f6d649517ca90ac168cdb1a67bff7ebf",
+  "falsification_condition": "Reject if the value-free registry, complete state-orbit census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:ad6330fd28ec602626074041c4f8583dd20ca7a8e560172f6252b2cf1c1c97a4",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fd69ab9947e37cde4d6dc5db99e5f49e6ff4a9801936043902e3020223a5bb24",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MATH-DYN-007-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:34c4cad0ec7ee19f5b3d19a2eca404240505ba95f1ef2d5d7d5a0ff22acbd227",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:9118cd1685e7ccbdbee7cb72ed8408f77507f73697d38ae7c435f3c47d13cdaf",
+    "prediction_seal_hash": "sha256:76158d19801ea110f85080a5c06842e86dcbddc2066dbde142d3b8eb02760555",
+    "program_hash": "sha256:87e285d502218a3accf97c131bd4fc90b3be93e239318c98472e992b179f423d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8d6c65120eebc25383cff49ca07f99f4fb826b8779be4c95748adafce99b0413",
+    "target_material_present": false,
+    "trace_hash": "sha256:c81aa1f1ed2147cc41ab5dc90b423438ed6a624042db34870ea1e6bc40fa495b"
+  },
+  "measurement_receipt_hash": "sha256:602661c9e7e163be264e8f705dadba8ea2af51feaa07448aae6dfbb7b733282c",
+  "measurements": [
+    "DYN-007: symbolic_shift",
+    "exact observation: {\"multiset_preserved\":true,\"return_shifts\":4,\"word\":[1,1,2,2]}",
+    "complete family observation custody: 12 records; all rows preserved",
+    "complete finite state, transition and orbit enumeration supplies the observation; no fitted dynamics, imported continuum phase space or opaque solver enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9da3061f643b5b1af9090ef8b495127363135658fafc45747b1c7c2415a64eb9",
+    "custodian_id": "SFT-EXP-MATH-DYN-007-V1-custodian",
+    "experiment_registration_hash": "sha256:ee3f96c664942d077f3049c0594a5d06f6d649517ca90ac168cdb1a67bff7ebf",
+    "prediction_seal_hash": "sha256:76158d19801ea110f85080a5c06842e86dcbddc2066dbde142d3b8eb02760555",
+    "registered_target_identity_hash": "sha256:8d6c65120eebc25383cff49ca07f99f4fb826b8779be4c95748adafce99b0413",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:fd1a9bbdfe2ab4a2f6d759ccba56224a3829443e4e3dd5e9425c74fe5a0972b6"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:26e243425509829818576170d28906afcdf4b029b15034140bda26dea01cc2d7"
+}

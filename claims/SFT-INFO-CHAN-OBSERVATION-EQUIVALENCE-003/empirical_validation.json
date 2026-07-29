@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-CHAN-OBSERVATION-EQUIVALENCE-003",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-FINITE-CHANNEL-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:c85e05e21b52b616ab6022e2054759b5e2fcdca2a524f24fcd2c968051651495",
+  "falsification_condition": "Reject if the value-free registry, complete channel census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:c282624710ed78d6431a6da50d162a77b5038540964b7e6378232fe63e9e1b4b",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:369a08d0f122970247d63a627e6fba0086d84abcbfa1ddfc07270e3aabe337da",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-CHAN-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:b64929f8679a7f871a9886845e9731de8cb9b202d4e13b605e3e85c815a4849d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:14903428ac38d791e686e28c75cfea9de68d31063ee74b7bcaac4e719912303f",
+    "prediction_seal_hash": "sha256:413fe1419514bedb9710791205cb1b72122648d0e4dc365e388b7e76f953e5ba",
+    "program_hash": "sha256:737b1c995f55b9f5f688ecad21abbba37a41903ff76d9ddf14bfd07783513b04",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:b3bbe62c7e80a02e8ce19e1eb22f377a88fe217c42ec361494e7f4fd0b7bc350",
+    "target_material_present": false,
+    "trace_hash": "sha256:65e1a7b27eaf403640eea942017880e165cff6e8c0acc183e8d54b61473e773a"
+  },
+  "measurement_receipt_hash": "sha256:b51463e669b7eb0b2c8499091a10fe137e172a821338c9e623f7f405ec782dea",
+  "measurements": [
+    "CHAN-003: observation_equivalence",
+    "exact observation: {\"coarse_classes\":2,\"fine_classes\":3,\"source_microforms\":3}",
+    "complete family observation custody: 18 records; all rows preserved",
+    "complete finite input, output, relation, observation, codebook, use-history, route, cut and simulation enumeration supplies the observation; no imported stochastic channel, logarithmic capacity formula or fitted distribution enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:173c794debb8a988b417b29acc97506ef48aadb65d428b4c7eb9d3ca95ca8395",
+    "custodian_id": "SFT-EXP-INFO-CHAN-003-V1-custodian",
+    "experiment_registration_hash": "sha256:c85e05e21b52b616ab6022e2054759b5e2fcdca2a524f24fcd2c968051651495",
+    "prediction_seal_hash": "sha256:413fe1419514bedb9710791205cb1b72122648d0e4dc365e388b7e76f953e5ba",
+    "registered_target_identity_hash": "sha256:b3bbe62c7e80a02e8ce19e1eb22f377a88fe217c42ec361494e7f4fd0b7bc350",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:ff6d07fa8a4a3c91908f550faf784aac28d0328b3aeec510f4922ca201651158"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:160e02672a0c7cc1e2094cef2d966812c9466d1a06732322818f34047fa7f27a"
+}

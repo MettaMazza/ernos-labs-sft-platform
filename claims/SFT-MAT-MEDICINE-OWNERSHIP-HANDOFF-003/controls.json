@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MEDICINE-OWNERSHIP-HANDOFF-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f2aca75da592b407ec0f438dbb46ee09213f90ff229009984153a97f0df9a5a9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:9908c3556e06df6fb1e8c309cf08227323f5b98ca5ad5f865af9433f054299f5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:25fa00504a903ac164c8bffa7e8a02f73c730eaaabdc053d868eb7a531d11202"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bb61ea4bec174d3653bd80ab14c06747f4e66793d34e5c8b054df0b2c816e2ed"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-SERVICE-LIFE-EVIDENCE-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0b01722fcf8e1cb80f758aca459394abd9dfdaca10311b92cd19f67247bd3167"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a962991ced308c1a14c3a94082bab97301c976beb9f4a597706450fec7e4dd8c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e965ed0c8a66a0092b7f25749573f3bc913cd99271ca3cd4ce2cc25f7d0db499"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d228748878724c24d43f614c137c22060ea7a6b6e44a63f3464618e2d5f20f13"
+    }
+  ]
+}

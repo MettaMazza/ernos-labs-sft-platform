@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MED-PLACEBO-OBJECTIVE-REPORT-SEPARATION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fb112ecd6e46772906fbccd3ffd9e01aaa306fedd73854652612df6b81c8c809"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8434da711ff3046ef71cd21066385e3c706ceb102bc49af494764ab24beed7c9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e628047121e6ae01b1271a5a5e61f4fabcbebbf9e9a0b847dc51b94d3173c634"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0c7d2e4c4693ab18818dcc6d383981b35d8e12928ce71d9988dffc15672569d7"
+    }
+  ]
+}

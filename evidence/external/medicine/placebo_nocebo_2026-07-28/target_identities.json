@@ -1,0 +1,59 @@
+{
+  "excluded_pmids": [
+    "11498597",
+    "14508021",
+    "16120776",
+    "17108175",
+    "19888784",
+    "20679593",
+    "25776211",
+    "27436632",
+    "27461877",
+    "28321201",
+    "29755621",
+    "30296557",
+    "30457698",
+    "31350784",
+    "31886161",
+    "32701847",
+    "33684624",
+    "34716408",
+    "36340278",
+    "36351953",
+    "36932915",
+    "37043203",
+    "37900300",
+    "38733772",
+    "39537677",
+    "41114660",
+    "41588673",
+    "42138727",
+    "7607192",
+    "7888260"
+  ],
+  "formal_predecessor_receipts": {
+    "available_state": "sha256:183d1cc98d5d834ec6b5b44b90c76b5dfed458ed591da348166d868824e8a594",
+    "fibre": "sha256:84338832d2057f854707262e2c59af07a41c65451c3d823567596d98185ed555",
+    "record_separation": "sha256:b80dc8fea8258a86a5017270ce9fd9205354705a9ba4faa9295fd2f67929910c"
+  },
+  "schema": "sft-v3-medicine-placebo-target-identities/1",
+  "selected": [
+    {
+      "class": "objective-placebo",
+      "pmid": "41966073",
+      "query": "placebo[Title] AND (biomarker OR cytokine OR dopamine OR opioid OR fMRI) AND humans[MeSH Terms]"
+    },
+    {
+      "class": "objective-nocebo",
+      "pmid": "42296699",
+      "query": "nocebo[Title] AND (biomarker OR cortisol OR fMRI OR physiological) AND humans[MeSH Terms]"
+    },
+    {
+      "class": "bounded-null",
+      "pmid": "42308284",
+      "query": "placebo[Title] AND randomized controlled trial[Publication Type] AND humans[MeSH Terms]"
+    }
+  ],
+  "selection_rule": "Newest PubMed identity returned by each frozen query after removing every pre-seal or search-exposed PMID; identity list selected without fetching abstracts.",
+  "target_content_present": false
+}

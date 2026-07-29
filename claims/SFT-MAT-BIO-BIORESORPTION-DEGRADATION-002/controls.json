@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-BIORESORPTION-DEGRADATION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9dbfd15eedaf5bdad1e4060d97fdc5ae0d054cb19209d2167a8ef27a16347401"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e2a24a671d3b9dcf1ecffcd4b2568ca882e7a02f73ff9ec30f45ef46dc008292"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0dcdfa5722cabdaee87f6a9b380fa84f24c1a647254e1eac705f7d8e922ce8ac"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:288feca742bee75d6990d71ff2f1ba9bb309b20430a465d592e6f293ee97f4c3"
+    }
+  ]
+}

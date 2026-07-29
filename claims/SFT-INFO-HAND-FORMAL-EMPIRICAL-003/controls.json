@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-INFO-HAND-FORMAL-EMPIRICAL-003",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "An anonymous result loses its derivation owner.",
+      "passed": true,
+      "receipt_hash": "sha256:8ff708fe56a1642957800d6d619ef6078875f15e03e938ca71640a11a4d1e0b9"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported downstream law, conventional prior or target outcome selects the result; host 0 denotes structural absence or artifact counts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no duplicate owner, copied law, missing dependency, erased adverse row or rewritten receipt; no dated completeness claim bars lawful versioned discovery; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:722f05a8e0b924e4c6566f96c23ce349670a0a5d00afdf4c600565bcd5a6b906"
+    }
+  ]
+}

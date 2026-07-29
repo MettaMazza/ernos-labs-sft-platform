@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYS-TWIN-DOMAIN-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:cf06ac54eea20566e69e011c796338650632c119a48611effeae01fb0a2b94ab"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:23c6739f2dec3f7f8c811eb3c95e273e18a8a0b31059ea1bade4365a5bf98c78"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:70a3bbc2f9f8acc6c49e9caae1658fe9e5c28daacde957dcb1278e822ebfb81b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ce23df3fa494292dcad7e87d3c5eb04a0ee6444b1eef8c154f81e48dbda3229d"
+    }
+  ]
+}

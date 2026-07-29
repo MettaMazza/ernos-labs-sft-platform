@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-XINT-ONE-OWNER-IDENTITY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Duplicate identity destroys custody.",
+      "passed": true,
+      "receipt_hash": "sha256:655af49cb77b30ab1cb06275b06e46ae43b81bfc8033a107a79b22200bc2d4d0"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported branch conclusion or target outcome selects the result; host 0 denotes structural absence or counts artifacts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no duplicated ownership, silent semantic import or untyped handoff; no downstream measurement is recast as a mathematical premise; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:5a7cddec6b0784b962f82761fc846a1242501843e2fe1bf91614ed0beb0878fb"
+    }
+  ]
+}

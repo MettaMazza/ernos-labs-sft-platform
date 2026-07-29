@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-CONTROLLED-RELEASE-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5616afe0d1d561434ba334957a64ddc3dc68bd958146304ddc490a74c82e4468"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b1ced58e241c04543baba4d3641e27606f287782edf134a274750d7c2c71a81c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e854dd5f5ba9705b53ac7efe0002e0d441cfddde23e53fb8fa1b8d1fb4fe223e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e1f10e711a89fb01c6bc023a03e80cc3b80aee07b7a95db155d82e806b87eb04"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-STRESS-CORROSION-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d664e817bd8f31ebc8840b8af629a3318430d1e441cf66b20af78e2fde89247f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f66a0b1674d80aca21b94ba27197c40d1a08c2fe40f51b2e1e93e2bd3032bba3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2fd9be4605005a82990e089e24e37dd8c55dd1f7afe2f16a8448c5d598d1a5aa"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:1a8fc97e8bee93ed90c1c09d9bb20171ffeb6d48342daaf93751e7386ffd9f5e"
+    }
+  ]
+}

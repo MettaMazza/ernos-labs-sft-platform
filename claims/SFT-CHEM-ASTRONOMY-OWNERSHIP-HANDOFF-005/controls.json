@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ASTRONOMY-OWNERSHIP-HANDOFF-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a849c0e767ab9ca3eda3b8428986944bc641c4c96f31b5d14f357e8fb5ce4288"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:61173f32649b5b624d7faa78ad4fbf7d0153e43e668eaecf34f1cbe118e75521"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:4cf7574d295467b4b1f32698138d863d7d63c4925f1b4db31c2f20353d865ddd"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d906957c465ce6b3ddc384cf7a49bb989683260e79a0b8b06a82ab5f12847e22"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-EMBODIED-LEDGER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:afc52ac1ffe8e8215aa322aa49fd8800271ce25daef05db44bdb6b295672cd35"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8602541006f4694f559918bd6b81f4ba309d0773835e1050c759ca8771897de9"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:87fca7cc9cf93d9372a6895653742b8ced84e073fdaaaa827524e30970ddb0fd"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:b866a3d8983493e5e3c9fd9eaefdc8d2757ddeff4eed73e1b4275befbdfc7bf3"
+    }
+  ]
+}

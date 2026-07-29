@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MATH-VALID-NUMERICAL-SYMBOLIC-010",
+  "data_source_ids": [
+    "census/mathematics_discipline_current_reconciliation_v21.json",
+    "census/claims.json",
+    "census/execution_manifest.json"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:7cb40bd5979a876a9aaf260d016d3a94caad2aab4a44b7495e498c9298205443",
+  "falsification_condition": "Reject if the value-free registry, complete exact-validation census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5efa23f68d947df881b22455171b894398ec30dd5564974af11190f25265f911",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:0662b8e0b57adbc447bd9a1b115bbdf8696a5e442ca40d80578d82ca9a32f13c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MATH-VALID-010-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:fe63b6441e8476fa549efb519d652fc940db386bfd4111eaec7963234c5fd631",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:46d8c79069cdd77b2c43a5abd80d5f3ffe32b7d3b0998e90e175251d6e7b0eb1",
+    "prediction_seal_hash": "sha256:85f4a39a5a78c48c00e2f9d296ebaf384f0a033f994ae8e31ee71bff588d8598",
+    "program_hash": "sha256:062afab74ff506b1e6b064e925341007687ac2daa1380b60f5162aa4d2199810",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f72a992933bbcd40417fd20d3bef1408f1a137e8ef540b192f7e249f569378b3",
+    "target_material_present": false,
+    "trace_hash": "sha256:36721b669f6e85d0494c433dd9489d1189aabaa833e7590a0acd2e4c8fd673ba"
+  },
+  "measurement_receipt_hash": "sha256:d731954f0ed340b6095f61806b96fee28878bffbcb771ff9af80b12c5f566bc8",
+  "measurements": [
+    "VALID-010: numerical_symbolic",
+    "exact observation: {\"all_external_statuses\":[\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\",\"empirically_tested_and_independently_replicated\"],\"all_model_admitted\":false,\"claim_count\":22,\"families\":[\"NUM\",\"SYMB\"],\"receipt_hashes\":[\"sha256:8e0f6ddf5bc90fef46eefc32a535fa9fae3d8fc45d3a0f0dd93f657d8c1836c4\",\"sha256:8c13117d2033b4657174a69f0dae9093d27277e74ea89abe10609bb463cc5072\",\"sha256:259b72ccea62db62192f6788cc51d7c5e54c21e36eb8a5099148c0f1b6b98b38\",\"sha256:6929ba74b44f626e8ea7e3b5af82fd3c97e5a4375aa27f1ba050eab41fa2b9be\",\"sha256:d426bb53ef24834bf45d6ff67e99cbcd3d4b1eb55e300e460138fe2907ab1b34\",\"sha256:eb7d30b58833016ecf2928e7ddc354f8d5e428bfe0ef3ca80a56a815d3706757\",\"sha256:cdde0b0bd96c982f20d5f2caa6227c8dcc5a56338f8efd7e8a08fff00df49ecd\",\"sha256:8b2b0f1ba1f2834f192150342fb2c319be37ff34289dbc4150edf24e092d4a0a\",\"sha256:e751920f65b81f5cc2649abdfcd11aa0c1dfae51c10f4d888d4415716d4d2b09\",\"sha256:648b6d3a1e7459deb29c93bf36fbb8f428b743ff0045f05f36cac4f6712a1910\",\"sha256:00a35c5c34967fc4c562146e871ba053dd4af162aef69f61a6122d5222fd789e\",\"sha256:0696ffb60057ca05592a019bc74437c233e398d8e3ed8633d13122917999105d\",\"sha256:1fc6dbd6b91cb7dac6d70badd5ab5bee41c63de626a6abd2a076fb40f3f2a407\",\"sha256:9cf05501f0c8844ef8a38799f148078b8458cc4e42582114034220672d1183cf\",\"sha256:532d8d3fe185773057827ec65c5ede613f674b27e0ffdbe8fdc49a9a419be9ff\",\"sha256:30c7bffc4bfa23e1bb4bbb549fd04f89c9cb1f72be967384b53be228a266d015\",\"sha256:ab851259d84f0c5b760b72589e8b6695d2b3e44efc11dd4b503e839d4647b37f\",\"sha256:8c88175914327cf3786f3f8b238fa3ec9d4b5a872a2c54beafc9f759d7f0732a\",\"sha256:78a40cfd8bef40d4c2979e7fcf85c1ff31f0b49925a73452d2bd3619bbf8e731\",\"sha256:86d0c48ae5b12195f37496629db40327bed840d8bbfe1fea05830f68540f6152\",\"sha256:f30bfc00ab43dc67ac366865b093161f74729273113b2e2a6361b45e80901069\",\"sha256:fda3df9ae9119867ecd3cef93e2affb43dc0dd8596f37043767c6a45b3cf617a\"]}",
+    "complete family observation custody: 12 records and 305 boundary rows; all preserved",
+    "the complete pre-validation Mathematics reconciliation supplies every receipt, outcome class, source and boundary record exactly once; no favorable-only selection or duplicate coverage enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:39934c945bcce4e1e69d9993d33372268ca158a01f623a9367504eba664054f8",
+    "custodian_id": "SFT-EXP-MATH-VALID-010-V1-custodian",
+    "experiment_registration_hash": "sha256:7cb40bd5979a876a9aaf260d016d3a94caad2aab4a44b7495e498c9298205443",
+    "prediction_seal_hash": "sha256:85f4a39a5a78c48c00e2f9d296ebaf384f0a033f994ae8e31ee71bff588d8598",
+    "registered_target_identity_hash": "sha256:f72a992933bbcd40417fd20d3bef1408f1a137e8ef540b192f7e249f569378b3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b16575391771e6a07382c0592d9216e254cfba25928e13f498912281f466fd78"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:7da3bab49ddf336ed36b14627636b331ab577b18363131224b14b29b6dc85990"
+}

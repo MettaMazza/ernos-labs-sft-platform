@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "external_signed_and_zero_inscriptions_are_provenance_only": true,
+    "native_proof_form": "positive held carrier occurrences and exact source/terminal orientation",
+    "numerical_zero_admitted": false
+  },
+  "claim_id": "SFT-CHEM-HALF-REACTION-IDENTITY-ORIENTATION-001",
+  "evaluation_protocol": {
+    "acceptance_condition": "All six preregistered comparisons, the complete IUPAC record, all 22 NIST pages and all 99,794 extracted characters are retained and reproduced after sealing.",
+    "all_6_targets_required": true,
+    "falsification_condition": "The claim fails if more than one form survives; any species, phase, carrier, orientation, inverse or reference is omitted; any IUPAC content or NIST page is omitted; or an external sign or value selects the native law."
+  },
+  "evidence_mode": "observational_derivation_plus_complete_external_record_reconstruction",
+  "experiment_id": "SFT-EXP-CHEM-HALF-REACTION-IDENTITY-ORIENTATION-001",
+  "external_measurement_sources": [
+    {
+      "complete_records": 1,
+      "measurement_body": "International Union of Pure and Applied Chemistry",
+      "source_id": "IUPAC-RT06783"
+    },
+    {
+      "complete_pages": 22,
+      "measurement_body": "National Institute of Standards and Technology",
+      "source_id": "NIST-JPCRD-STANDARD-ELECTRODE-POTENTIALS-1989"
+    }
+  ],
+  "frozen_relation": {
+    "relation_hash": "sha256:ad7a684bf200078900788e459634f60506bc737b2b94570367784db4ddbcae6d",
+    "statement": "exact-half-reaction-identity__complete-species-phase-carrier__positive-count-of-held-electron-carriers__held-source-terminal-orientation__exact-inverse-half-reaction-pair__held-reference-half-cell-identity__complete-half-reaction-record__fresh-species-successor-preserves-prior-record",
+    "targets_did_not_select_survivor": true
+  },
+  "identity_registry": "experiments/external_sources/chemistry/echem_001_target_identities_v1.json",
+  "prediction_seal": "experiments/sealed_predictions/chemistry_echem_001_half_reaction_pre_source_v1.json",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-28",
+  "schema": "sft-v3-chemistry-experiment-registration/1",
+  "status": "measured_postseal_complete"
+}

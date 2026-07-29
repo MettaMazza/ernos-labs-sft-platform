@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-PHOSPHORESCENCE-INTERSYSTEM-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:9ffe80cbde5bba43610b194f37aa49d1b046419e6990560ff29a4c66ac283226"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:457b72b1f5386f3f2622113bd4c0505f8786946a8ce1e168c02ca2b94180328c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b2545fbc6c9da19ad891c6e4777239981e12cf9bcd8fe9ed9ce02467c15ce5ff"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:951beb9cab004709c750ab77758a15cd756aa9405da931d8a11dc49748f090cd"
+    }
+  ]
+}

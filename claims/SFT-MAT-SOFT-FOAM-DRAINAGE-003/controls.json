@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SOFT-FOAM-DRAINAGE-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:772c21f62b11ef9c7eaead8e99c2c9e225c261b20a6382ed0e214cd517625ddf"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7dc65a639f422e8517156278a3f6275d4a756a126f990ba4afe6f1c3451f84dd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5cc6fbd6791674330c5aaf68e24ef51c0c3e790ab403dcda6886010d6e81b9d5"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:65e802710e4a8f44c36ff6e9ba4721671d406da49093f5bf19f8b66eaf9ba102"
+    }
+  ]
+}

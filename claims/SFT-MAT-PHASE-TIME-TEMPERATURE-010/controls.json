@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-TIME-TEMPERATURE-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e0e7fb853c975806873eb7cd03a75edc94d06971df7c27623d44990c7f3e7964"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7f486f6618c1526d9ab2c6faa9e9bbb9f01b67446e56be248a4723ba2ea6823f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:63517c19722c78703bb6f9b2ef4e9a91d1d13573cffe9cd075694095a317af9b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8588b9aceac124c3cf2ed9d0cfa87f7a1af84e9e83e2ef5931550bc7f486948d"
+    }
+  ]
+}

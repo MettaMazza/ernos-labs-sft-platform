@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ELECTROCHEMICAL-STORAGE-HANDOFF-013",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:5f5765463a92bc3ffc730b8ce79dbd7a3edb23052fa4bf1a057e6dd7ba1e34b1"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a7703d796f8e230e6546277acf69481c652913cf70f7ee28b8de67f7e9e63d9e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c477816e651f5fa0ec24bccb1a8db37230889f0a9c701e215587f1f43d7383b8"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:fd35e709db5ed26c546525d0b5dba295065844946ccb47853cfdca768e184dee"
+    }
+  ]
+}

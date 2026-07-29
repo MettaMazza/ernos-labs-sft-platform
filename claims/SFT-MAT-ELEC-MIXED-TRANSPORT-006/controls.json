@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-MIXED-TRANSPORT-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e2548aa5371ee11a72a50369cc0614a8d3716e3266a3b70a3a869575d7d61947"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3acb9df78c879b0b10ecc6f67f1ee69d7068523ac7fe0423c2e67d00ff5a85f6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b0ab462cd4464c0038d5821794561adeb1d26bf73465536d142f34ba4b324dff"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:02aec6a61187e6e4dc6c21959d5b816fe343898e57c3936655222aca35613f49"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-FISSION-PRODUCT-CHEMICAL-DISTRIBUTION-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:c2d085226134cc44674183a5be1b629b6593f5a37095916732af79cb49bc7383"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:8cae2552c9114c32e075be4827050de084735d171b4221e88d00d7112996176a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:03fd71b465091a77977d94975623d31ff7c146c18a3174d85169704ea3a06615"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:3f4638693b9fde0036f03bd2a5fab36e7d7d31fdb40bb9e1fc30322f1480dfc2"
+    }
+  ]
+}

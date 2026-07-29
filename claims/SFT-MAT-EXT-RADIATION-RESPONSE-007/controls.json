@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-EXT-RADIATION-RESPONSE-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:51a5f07e47214b1506f8db88f017c86bdd5d25867d62f599c4b37fc502ceb3e2"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:896eb51b2591e5c6fb677a658be940353d2adc95916d969113ecd9a4ae9b5291"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ec1c8485399ee76f021ac5a33abe29de6a614c023bba297d1cab214fbe24cf59"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4dec881961aa4866d2b37e1c8afdb696b768b3e89a22e9b4e99a0bc21068629c"
+    }
+  ]
+}

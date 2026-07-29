@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-QCODEX-LEAKAGE-LOSS-029",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-QUANTUM-CODING-OBSERVER",
+    "SFT-V1-V2-QUANTUM-CODING-FAULT-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:54f6d7ace23677327d5040d28481cb1eed62e7147a8c42557ae777a030ee8b77",
+  "falsification_condition": "Reject if the value-free registry, complete code/fault grammar, exhaustive recovery execution, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:997923959bfe48a759ce48f4c878d660615cd554bb3e32663e58073930830860",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e047e0e6dd3363a42488133185b02f54dbc65c1f9f12ce6b6949f1e983e8f333",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-QCODEX-029-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:aab039180ec9e27290ea934c5a89fc8cd04241cd134edbbeaed714b1fa43c41d",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:7e1cc8b7021e404d51d1b10537e0a2486d224d2fe3b839026ff748b08a6a7061",
+    "prediction_seal_hash": "sha256:47abb2f6bf1a1e796d044e69e29b22942376983c3fa4f5d728bf22e002481389",
+    "program_hash": "sha256:e13d89bd41338d93258cd1de3197e950936a88ada5fbbb83d8b84668a68c871b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:cb321370b8b1a76f85c38d136b7fc9b7adbdf52a09a17e38c7c1ca209319ae47",
+    "target_material_present": false,
+    "trace_hash": "sha256:2b528d72214b2a504b40779a5a7a10cface1d51cab87492c0a5d3cd639781b63"
+  },
+  "measurement_receipt_hash": "sha256:5bb4bbfa2ff01ac26b98c073b3779837d7acfddd8bf842d13a026fc88f8263e3",
+  "measurements": [
+    "QCODEX-029: leakage_loss",
+    "exact coding/fault execution: {\"code_support_classes\":2,\"located_loss_classes\":1,\"outside_support_classes\":1}",
+    "complete coding/fault custody: 32 records; all rows preserved",
+    "complete finite code, error-mask, syndrome, recovery and adverse-fault records supply the observation; physical thresholds and device values remain downstream measurements"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:89c7db05ded22dac68bb54600a3488e89b2e861cd0323874b377de968cb43d67",
+    "custodian_id": "SFT-EXP-QUANTUM-QCODEX-029-V1-custodian",
+    "experiment_registration_hash": "sha256:54f6d7ace23677327d5040d28481cb1eed62e7147a8c42557ae777a030ee8b77",
+    "prediction_seal_hash": "sha256:47abb2f6bf1a1e796d044e69e29b22942376983c3fa4f5d728bf22e002481389",
+    "registered_target_identity_hash": "sha256:cb321370b8b1a76f85c38d136b7fc9b7adbdf52a09a17e38c7c1ca209319ae47",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:819cdf6728e4e4d5287a2adadf6345a4bc1fceed446a5735c9dfaa966698d9d0"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:b413d5ce16b9c55fd9db42340c0076d4721e6a99dd9c4c0177037b805272cd74"
+}

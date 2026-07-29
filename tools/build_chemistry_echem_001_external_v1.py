@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""Build the complete post-seal ECHEM-001 source vector."""
+import hashlib,json
+from pathlib import Path
+from pypdf import PdfReader
+ROOT=Path(__file__).resolve().parents[1];SNAP=ROOT/"experiments/external_sources/chemistry/snapshots/echem-001-half-reaction-v1";INV=SNAP/"source-inventory-v1.json";IUPAC=SNAP/"iupac-rt06783.json";PDF=SNAP/"nist-standard-electrode-potentials-1989.pdf";OUT=SNAP/"complete-postseal-analysis-v1.json";EXPECTED_INV="sha256:87560ac101dd65b0c2b15fd2a6d49e3291a0a508476ec5ad8bfd320aa5d891ba";EXPECTED_IUPAC="sha256:70a372cafc17d95cf41d5c47efb540c96455ce38ad35a4c98e02eff0b5f44124";EXPECTED_PDF="sha256:67bc634e804a9c608baee0425704e4645b53c956491242017a76699b6ce61cb6"
+def dig(b):return "sha256:"+hashlib.sha256(b).hexdigest()
+def hf(p):return dig(p.read_bytes())
+def main():
+ if OUT.exists():raise SystemExit("ECHEM-001 analysis exists; replay prohibited")
+ if hf(INV)!=EXPECTED_INV or hf(IUPAC)!=EXPECTED_IUPAC or hf(PDF)!=EXPECTED_PDF:raise SystemExit("ECHEM-001 source changed")
+ term=json.loads(IUPAC.read_text())["term"];definition=" ".join(x["text"] for x in term["definitions"]);pages=[]
+ for n,page in enumerate(PdfReader(PDF).pages,1):
+  text="\n".join(line.strip() for line in (page.extract_text() or "").replace("\u00ad","").splitlines() if line.strip());pages.append({"page":n,"complete_extracted_text":text,"text_sha256":dig(text.encode()),"character_count":len(text),"half_reaction_line_count":sum("half-reaction" in line.casefold() for line in text.splitlines()),"electron_symbol_line_count":sum("e-" in line.casefold() or "electron" in line.casefold() for line in text.splitlines())})
+ combined="\n".join(x["complete_extracted_text"] for x in pages).casefold();checks={"iupac_two_half_reactions":all(x in definition.casefold() for x in ("divided into two half-reactions","undergoes oxidation","undergoes reduction")),"iupac_reduction_oxidation_orientation":all(x in definition.casefold() for x in ("written as a reduction","written as oxidation")),"iupac_standard_reference_half_cell":"standard reference half-cell" in definition.casefold(),"nist_half_reaction_definition":all(x in combined for x in ("standard electrode potential","half-reaction","reference electrode")),"nist_standard_state_conditions":all(x in combined for x in ("298.15 k","unit activity","standard hydrogen electrode")),"complete_pdf_pages_retained":len(pages)>=20,"all_nist_tables_and_conventional_values_retained":sum(x["character_count"] for x in pages)>50000}
+ payload={"schema":"sft-v3-chemistry-echem-001-complete-postseal-analysis/1","claim_id":"SFT-CHEM-HALF-REACTION-IDENTITY-ORIENTATION-001","source_inventory_sha256":EXPECTED_INV,"iupac_complete_record":json.loads(IUPAC.read_text()),"iupac_definition":definition,"nist_pdf_page_count":len(pages),"nist_complete_pages_in_order":pages,"structural_relation_checks":checks,"complete_source_records_preserved":True,"all_conventional_signs_values_units_phases_references_uncertainties_adverse_and_absent_fields_retained":True};v=dict(payload);payload["complete_result_vector_sha256"]=dig(json.dumps(v,sort_keys=True,separators=(",",":")).encode());OUT.write_text(json.dumps(payload,indent=2,sort_keys=True,ensure_ascii=False)+"\n");print(json.dumps({"output_sha256":hf(OUT),"page_count":len(pages),"characters":sum(x["character_count"] for x in pages),"checks":checks,"result":payload["complete_result_vector_sha256"]},indent=2))
+if __name__=="__main__":main()

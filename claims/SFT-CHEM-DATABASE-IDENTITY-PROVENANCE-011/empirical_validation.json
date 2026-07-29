@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-DATABASE-IDENTITY-PROVENANCE-011",
+  "data_source_ids": [
+    "PUBCHEM-PUG-REST-AUTHORITY",
+    "PUBCHEM-C3H8O-FORMULA-CENSUS",
+    "PUBCHEM-ASPIRIN-CONFORMERS",
+    "PUBCHEM-ASPIRIN-SUBSTRUCTURE",
+    "PUBCHEM-ASPIRIN-SIMILARITY",
+    "CHEBI-REST-AUTHORITY",
+    "RHEA-IMMUTABLE-REACTION-SMILES",
+    "USPTO-IMMUTABLE-REACTION-SURFACE"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:1aa46c26b5c8d43ab82593df7e18c764aa02e930d87a2ff0e47f1d1f7a3e2303",
+  "falsification_condition": "COMP-011 halts if its survivor is nonunique; a registered target, source route, graph, atom, bond, orientation, mapping, reaction row, provenance record, database conflict, adverse result or resource halt is omitted; the implementation-distinct reconstruction disagrees; a dependency is absent; or external data selects the native law.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9a89f336fa49126b72198101ffa18014b488f560785e7d139c2edc8cec2292c2",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:8e1899e1a1230d52600a177fe3ccad643e776ce8b15f2315ebb5af868f93827a",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-DATABASE-IDENTITY-PROVENANCE-011-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:19ff4440ee9b84b9f5599ea6b2f2c4360de232e45a022b632ca8fe6750ffc6ee",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b603943a7f8b0f24f07243131e63af9e5d88d4c240e6f6d5a01634c540c12298",
+    "prediction_seal_hash": "sha256:350fbb4ff70a521899512695e984ffdf3ca83a7e3ab14cc42d25ce62a4cf36b1",
+    "program_hash": "sha256:a4a1bd64ddc7a9af3aa1378a2c4d2308f993fa4ac9f22397f46befe292314f5f",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e54ba783140c3851ec136319e75b52b0781b5ccedb0ca06af02f2003a1c123ac",
+    "target_material_present": false,
+    "trace_hash": "sha256:020673e574dfc5e03b8e9ba74a7b32490e8ea36705ff5f0defdd8aa21de60942"
+  },
+  "measurement_receipt_hash": "sha256:b5de3861d06006210c1f2eb3b7c1e5292b556e6f2845656b3c071f77659e69f7",
+  "measurements": [
+    "complete 59-artifact 444,644,830-byte post-seal surface retained",
+    "12 PubChem records, four ChEBI cross-source records, 36,444 Rhea reactions, 50,016 USPTO reactions and 1,065,119 atom-mapped reactions retained",
+    "all twelve registered invalid-property responses, low-confidence rows, conflicts, unavailable records and resource halts retained",
+    "all 8 separately registered claim targets retained",
+    "external formats, algorithms, scores and outcomes never select the Fold-native survivor"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:3d6eaf52eb79f3179fd5fff1b84dc79acdfc57b1a022cc01e0a4260a68fa9aa5",
+    "custodian_id": "SFT-EXP-CHEM-DATABASE-IDENTITY-PROVENANCE-011-external-target-custodian",
+    "experiment_registration_hash": "sha256:1aa46c26b5c8d43ab82593df7e18c764aa02e930d87a2ff0e47f1d1f7a3e2303",
+    "prediction_seal_hash": "sha256:350fbb4ff70a521899512695e984ffdf3ca83a7e3ab14cc42d25ce62a4cf36b1",
+    "registered_target_identity_hash": "sha256:e54ba783140c3851ec136319e75b52b0781b5ccedb0ca06af02f2003a1c123ac",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:2ae2c69d5dca2514d8cb984f68d3720ccf2f4a69372a7396b1678a06589624ee"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:e28c740c2db6d5a1b79c54c342a4f5b43e94e427403be9693120d03d1d1f6448"
+}

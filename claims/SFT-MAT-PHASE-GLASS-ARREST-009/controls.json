@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-GLASS-ARREST-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:116cf49d45294794d9dc16f437fbd6159cbdc37f304a2dc6d2c1d37a1f3497bb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ef191397d2426a45e271df09f4663e539a0cd0ab5e2e0a99a41e9407b1a1c144"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:48d459fe621c7d9986c2507e57f150bb0281f678a1b57f2621b49e169cd04f9a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bca22ae8aa93e43a95b342881b1436551ea27659f866d6c5c7297506d9d57c00"
+    }
+  ]
+}

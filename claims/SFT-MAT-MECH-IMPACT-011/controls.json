@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-IMPACT-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:10934047348740fb81c528ffd90470e9533f98df9cbbd701505dabae7d460fd4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:149186209bbcfbc757846760f34b40fe9d708a8891376b2e2e27b8a3ce32a8cf"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:d7fdab2547a011c3b25ca1b34e3d9b953b3683be2f9d0b403357a3f01a964a43"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ac511ac3b67d2b0eba8386acf5e86c69a4adc0f2c4e96108f60f8948dfaeb005"
+    }
+  ]
+}

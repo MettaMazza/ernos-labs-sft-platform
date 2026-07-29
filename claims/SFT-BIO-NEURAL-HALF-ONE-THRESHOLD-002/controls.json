@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-NEURAL-HALF-ONE-THRESHOLD-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:107886be67aa43555a93f7ff8d1e7640c255024a529006a69d153956ea8c061e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:386122b0e2b52a727f0210a7b66394341ef23a9f1eb8f43d40b7285de7172efb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1660c16ea092ceba0cae9a71c895451a5270db0f0d455026c72557dff0c1aabb"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:99f78734ac0a92143cb041551b4cf06c6936912f1f43d2722facecef000563b5"
+    }
+  ]
+}

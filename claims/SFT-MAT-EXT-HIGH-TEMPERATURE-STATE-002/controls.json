@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-EXT-HIGH-TEMPERATURE-STATE-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:42a3aca55ececa41b9ec9467e3f6292adcdc7f30a8a42403b32726f4971fa69b"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:23eab13a4adbc1b7cee586ce5c43b553059f647b3a80273dfab37547d0392d06"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:69580f04d4d3891d21c8472ed143617e74db766e4c1377ba88eb741172659d59"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:725dd5aea791d122df127869ed7b2bc12930e2a466d1929e0dff6d237177bc16"
+    }
+  ]
+}

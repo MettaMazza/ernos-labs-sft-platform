@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-PHASE-METASTABLE-RETENTION-004",
+  "data_source_ids": [
+    "NIST-LIQUID-WATER-METASTABLE",
+    "NIST-BINARY-HALIDE-TRANSFORMATIONS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:dfd86eb8c9980ee1f161cf282b43e94e6a668b964f528cb8967ceba4b4793318",
+  "falsification_condition": "Reject if any registered source identity, source byte, available fragment, condition boundary, phase distinction, prediction seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:4164a7dc17809624cb59fbdc0192a471ad96e8061caabc3f31ed9ce4ad9e4316",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:bcfcc7170607f220b13b0ad5502133d7c5c77570b23a6d90ef275769e4f18034",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-PHASE-004-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4a96632ea631bb80a06122985c9aa8a3e05e544b063bf71f4a86a36e278fb154",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:b3a21b9f56e5c8bcb2add80b82d93fed3b2a860cbfdbe7a4076e7d24c729a239",
+    "prediction_seal_hash": "sha256:1889d6fbf1be5941ebb0ad565c53f557cf2692a021b9e49d617188ad97915bf7",
+    "program_hash": "sha256:f8445b4e1a1d7e728d49bfd3e5c8999836877dca92d9ae8ecfe5cd829c774ff9",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:96bfa333e90af4b623ea79df55a808ea93897f3db78c73529c3ec2a2f5aaee15",
+    "target_material_present": false,
+    "trace_hash": "sha256:3719c4419eda8a7b17ff173619543fd4e942e0d74b3e2ba0389af9a5601c210f"
+  },
+  "measurement_receipt_hash": "sha256:5e114ed809d533ff73fb28973a9e92faf6f776252c643f584cdcbf8f11e373c6",
+  "measurements": [
+    "PHASE-004: 2 authoritative comparisons retained",
+    "family custody: 11 usable and 0 unavailable sources",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-LIQUID-WATER-METASTABLE: captured_preexisting_official_snapshot; some temperatures where liquid water is metastable; metastable liquid phase; first=True; second=True",
+    "NIST-BINARY-HALIDE-TRANSFORMATIONS: captured_post_registry; Irreversible crystal structure transformations; function of time; first=True; second=True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:22b1fc48714b90d7cc45c559146340461aa3867e06a5a2845ed67a2a94373efc",
+    "custodian_id": "SFT-EXP-MAT-PHASE-004-V1-custodian",
+    "experiment_registration_hash": "sha256:dfd86eb8c9980ee1f161cf282b43e94e6a668b964f528cb8967ceba4b4793318",
+    "prediction_seal_hash": "sha256:1889d6fbf1be5941ebb0ad565c53f557cf2692a021b9e49d617188ad97915bf7",
+    "registered_target_identity_hash": "sha256:96bfa333e90af4b623ea79df55a808ea93897f3db78c73529c3ec2a2f5aaee15",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:153c15c3f404311fc62965d8270ac7829809d15716c6d540982b8928f0ace293"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:0679e4c2f8af2d11755c91d77458324c1d0bdb0849f99595d465f70e68c6d8cb"
+}

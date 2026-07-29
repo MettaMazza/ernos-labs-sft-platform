@@ -1,0 +1,516 @@
+{
+  "all_rows_preserved": true,
+  "authority": "Maria Smith",
+  "date": "2026-07-29",
+  "external_measurement_boundary": "Semantic laws are directly tested by complete generated program executions and implementation-distinct reconstruction. Conventional languages, compilers and implementation benchmarks remain explicit comparison boundaries and never select a survivor.",
+  "outcomes_opened_only_after_registry_freeze": true,
+  "protected_engine_or_verifier_edit_made": false,
+  "record_count": 25,
+  "records": [
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-AST-WELL-FORMED-001",
+      "exact_observation": {
+        "closed_term": "let x=a in join(x,b)",
+        "constructor_rows": 4,
+        "unbound_name_rejected": true
+      },
+      "expected_label": "complete-semx-001-execution-retained",
+      "number": "001",
+      "obligation_id": "SFT-COMP-OBL-SEMX-001",
+      "observation_name": "ast_well_formed",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-FREE-BOUND-SCOPE-002",
+      "exact_observation": {
+        "bound_name": "x",
+        "free_support": [
+          "y"
+        ],
+        "nearest_binder_retained": true
+      },
+      "expected_label": "complete-semx-002-execution-retained",
+      "number": "002",
+      "obligation_id": "SFT-COMP-OBL-SEMX-002",
+      "observation_name": "free_bound_scope",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-ALPHA-RENAMING-003",
+      "exact_observation": {
+        "bound_occurrences_renamed": 1,
+        "free_names_changed": false,
+        "fresh_binder": "u",
+        "source_binder": "x"
+      },
+      "expected_label": "complete-semx-003-execution-retained",
+      "number": "003",
+      "obligation_id": "SFT-COMP-OBL-SEMX-003",
+      "observation_name": "alpha_equivalence",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-CAPTURE-AVOIDING-SUBSTITUTION-004",
+      "exact_observation": {
+        "capture_occurred": false,
+        "conflicting_binder_renamed": "u",
+        "replacement_free_name": "y",
+        "substituted_name": "x"
+      },
+      "expected_label": "complete-semx-004-execution-retained",
+      "number": "004",
+      "obligation_id": "SFT-COMP-OBL-SEMX-004",
+      "observation_name": "capture_avoiding_substitution",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-SMALL-STEP-005",
+      "exact_observation": {
+        "intermediates_retained": 2,
+        "source": "join(a,b)",
+        "terminal_word": [
+          "a",
+          "b"
+        ],
+        "transition_count": 1
+      },
+      "expected_label": "complete-semx-005-execution-retained",
+      "number": "005",
+      "obligation_id": "SFT-COMP-OBL-SEMX-005",
+      "observation_name": "small_step",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-BIG-STEP-006",
+      "exact_observation": {
+        "environment_binding_retained": true,
+        "source": "let x=a in join(x,b)",
+        "terminal_word": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-006-execution-retained",
+      "number": "006",
+      "obligation_id": "SFT-COMP-OBL-SEMX-006",
+      "observation_name": "big_step",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-EVALUATION-CONTEXT-007",
+      "exact_observation": {
+        "context": "join(hole,b)",
+        "filled_term": "join(a,b)",
+        "hole_count": 1,
+        "terminal_word": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-007-execution-retained",
+      "number": "007",
+      "obligation_id": "SFT-COMP-OBL-SEMX-007",
+      "observation_name": "evaluation_context",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-DENOTATIONAL-COMPOSITION-008",
+      "exact_observation": {
+        "composed_meaning": [
+          "a",
+          "b"
+        ],
+        "left_meaning": [
+          "a"
+        ],
+        "right_meaning": [
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-008-execution-retained",
+      "number": "008",
+      "obligation_id": "SFT-COMP-OBL-SEMX-008",
+      "observation_name": "denotational_composition",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-OPERATIONAL-DENOTATIONAL-ADEQUACY-009",
+      "exact_observation": {
+        "denotational_value": [
+          "a",
+          "b"
+        ],
+        "directions_checked": 2,
+        "operational_value": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-009-execution-retained",
+      "number": "009",
+      "obligation_id": "SFT-COMP-OBL-SEMX-009",
+      "observation_name": "operational_denotational_adequacy",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-FULL-ABSTRACTION-BOUNDARY-010",
+      "exact_observation": {
+        "export_unrestricted": false,
+        "observations_equal": true,
+        "registered_contexts": [
+          "hole",
+          "join(hole,a)"
+        ],
+        "terms": [
+          "join(a,b)",
+          "ab"
+        ]
+      },
+      "expected_label": "complete-semx-010-execution-retained",
+      "number": "010",
+      "obligation_id": "SFT-COMP-OBL-SEMX-010",
+      "observation_name": "full_abstraction_boundary",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-TYPE-RULES-011",
+      "exact_observation": {
+        "inferred_type": "word",
+        "premise_tree_retained": true,
+        "term": "let x=a in join(x,b)"
+      },
+      "expected_label": "complete-semx-011-execution-retained",
+      "number": "011",
+      "obligation_id": "SFT-COMP-OBL-SEMX-011",
+      "observation_name": "type_rules",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-TYPE-INFERENCE-012",
+      "exact_observation": {
+        "branch_types_equal": true,
+        "inferred_type": "word",
+        "term": "same(a,a,b,a)"
+      },
+      "expected_label": "complete-semx-012-execution-retained",
+      "number": "012",
+      "obligation_id": "SFT-COMP-OBL-SEMX-012",
+      "observation_name": "type_inference",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-POLYMORPHISM-PARAMETRICITY-013",
+      "exact_observation": {
+        "identity_results_preserved": 3,
+        "representation_inspection": false,
+        "type_fibres": [
+          "word",
+          "vector",
+          "pair"
+        ]
+      },
+      "expected_label": "complete-semx-013-execution-retained",
+      "number": "013",
+      "obligation_id": "SFT-COMP-OBL-SEMX-013",
+      "observation_name": "parametric_identity",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-DEPENDENT-EVIDENCE-014",
+      "exact_observation": {
+        "mismatched_index_rejected": true,
+        "retained_index": 3,
+        "witness_width": 3
+      },
+      "expected_label": "complete-semx-014-execution-retained",
+      "number": "014",
+      "obligation_id": "SFT-COMP-OBL-SEMX-014",
+      "observation_name": "dependent_evidence",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-STATE-EFFECT-EXCEPTION-015",
+      "exact_observation": {
+        "effects_after_exception": 0,
+        "effects_executed": [
+          "set-x",
+          "get-x",
+          "raise-halt"
+        ],
+        "terminal": "exception-halt"
+      },
+      "expected_label": "complete-semx-015-execution-retained",
+      "number": "015",
+      "obligation_id": "SFT-COMP-OBL-SEMX-015",
+      "observation_name": "state_effect_exception",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-CONTEXTUAL-BISIMULATION-016",
+      "exact_observation": {
+        "all_observations_equal": true,
+        "optimized": "ab",
+        "registered_context_count": 2,
+        "source": "join(a,b)"
+      },
+      "expected_label": "complete-semx-016-execution-retained",
+      "number": "016",
+      "obligation_id": "SFT-COMP-OBL-SEMX-016",
+      "observation_name": "contextual_equivalence",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-TERMINATION-DESCENT-017",
+      "exact_observation": {
+        "source_size": 3,
+        "strict_descent": true,
+        "successor_size": 1
+      },
+      "expected_label": "complete-semx-017-execution-retained",
+      "number": "017",
+      "obligation_id": "SFT-COMP-OBL-SEMX-017",
+      "observation_name": "termination_measure",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-PARTIAL-TOTAL-CORRECTNESS-018",
+      "exact_observation": {
+        "generated_states": 2,
+        "postcondition_rows": 2,
+        "precondition_rows": 2,
+        "termination_certificate": "single append transition"
+      },
+      "expected_label": "complete-semx-018-execution-retained",
+      "number": "018",
+      "obligation_id": "SFT-COMP-OBL-SEMX-018",
+      "observation_name": "partial_total_correctness",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-ASSERTION-INVARIANT-019",
+      "exact_observation": {
+        "generated_states": 2,
+        "initial_minimum_width": 1,
+        "invariant_preserved": true,
+        "terminal_minimum_width": 2
+      },
+      "expected_label": "complete-semx-019-execution-retained",
+      "number": "019",
+      "obligation_id": "SFT-COMP-OBL-SEMX-019",
+      "observation_name": "assertion_invariant",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-SPECIFICATION-REFINEMENT-020",
+      "exact_observation": {
+        "behavior_inclusion": true,
+        "generated_inputs": 2,
+        "source_outputs": [
+          "a",
+          "ba"
+        ],
+        "target_outputs": [
+          "a",
+          "ba"
+        ]
+      },
+      "expected_label": "complete-semx-020-execution-retained",
+      "number": "020",
+      "obligation_id": "SFT-COMP-OBL-SEMX-020",
+      "observation_name": "specification_refinement",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-PROGRAM-TRANSFORMATION-021",
+      "exact_observation": {
+        "source": "join(a,b)",
+        "source_value": [
+          "a",
+          "b"
+        ],
+        "transformed": "ab",
+        "transformed_value": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-021-execution-retained",
+      "number": "021",
+      "obligation_id": "SFT-COMP-OBL-SEMX-021",
+      "observation_name": "program_transformation",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-COMPILER-SIMULATION-022",
+      "exact_observation": {
+        "source_steps": 1,
+        "source_value": [
+          "a",
+          "b"
+        ],
+        "target_instructions": 3,
+        "target_value": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-semx-022-execution-retained",
+      "number": "022",
+      "obligation_id": "SFT-COMP-OBL-SEMX-022",
+      "observation_name": "compiler_simulation",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-INTERMEDIATE-COMPOSITION-023",
+      "exact_observation": {
+        "interfaces_identical": true,
+        "source": "join(join(a,b),a)",
+        "target_instructions": 5,
+        "terminal_value": [
+          "a",
+          "b",
+          "a"
+        ]
+      },
+      "expected_label": "complete-semx-023-execution-retained",
+      "number": "023",
+      "obligation_id": "SFT-COMP-OBL-SEMX-023",
+      "observation_name": "intermediate_composition",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-PROOF-CARRYING-024",
+      "exact_observation": {
+        "checked_type": "word",
+        "checked_value": [
+          "a",
+          "b"
+        ],
+        "producer_trusted": false,
+        "term_well_formed": true
+      },
+      "expected_label": "complete-semx-024-execution-retained",
+      "number": "024",
+      "obligation_id": "SFT-COMP-OBL-SEMX-024",
+      "observation_name": "proof_carrying_program",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-SEMX-COMPLETENESS-025",
+      "exact_observation": {
+        "duplicate_owners": 0,
+        "independent_execution_rows": 25,
+        "omitted_owners": 0,
+        "registered_obligations": 25
+      },
+      "expected_label": "complete-semx-025-execution-retained",
+      "number": "025",
+      "obligation_id": "SFT-COMP-OBL-SEMX-025",
+      "observation_name": "semantics_completeness",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-SEMANTICS-OBSERVER",
+        "SFT-V1-V2-SEMANTICS-OBSERVATION-CORPUS"
+      ]
+    }
+  ],
+  "registry_identity": "sha256:227f703ce25d14778ad14c9321f2fbd9feba783347c52e4319b0d5584b8ebe0f",
+  "schema": "sft-v3-classical-computation-semx-observation-vector/1",
+  "vector_identity": "sha256:88aa0063f24d0c50b575429a7056b8a66de83150c9a65bb1a69d86d813d653fc"
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-WEATHERING-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:63b4720b4a8bf3e257f3f21e3551fb5b3b34284b819540d5c3ed1fd23b3d8a05"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:07a48c3b6146f26ed23f99454f9508a2f9e13a917cfc175cc963964edb69e513"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:9e2324d72ab634dc773a69abae82520e87871c930dff9e914e5152334fafd304"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:530e62b047b3fe2b6ad3f6bd1f29d1002314dfc71ba6c6b9e762dd2787b20e44"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-LAYER-STACKING-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d4aae6cdabf9ed07292da97d7d4909886280616137d634ed92b05dd25e7f38a9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:413b980c9f652b378a7bc78942c3757648374ca460453c8c2063b673ca1a1a49"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:552f220d92cf344c3a069aca4054e48da5edcf69fe2e3bfea307e0f6e56552a9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ee0feccf5bc96528e66e40c4fd1738f43dab27b1c58b1cfe10c3312813aebef2"
+    }
+  ]
+}

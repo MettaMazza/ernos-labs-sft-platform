@@ -9,16 +9,17 @@ from __future__ import annotations
 
 from collections import Counter
 import json
+import os
 import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "publications/inventories/physics.json"
-PAPER = ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md"
+PAPER = Path(os.environ.get("SFT_PHYSICS_PAPER_OUTPUT", ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md")).resolve()
 LANDING = ROOT / "README.md"
 CENSUS = ROOT / "census/claims.json"
-METADATA = ROOT / "publication/physics_zenodo_metadata.json"
+METADATA = Path(os.environ.get("SFT_PHYSICS_METADATA", ROOT / "publication/physics_zenodo_metadata.json")).resolve()
 
 
 SUBBRANCH_INTRO = {
@@ -49,6 +50,19 @@ def clean(value: object) -> str:
 def list_items(values) -> str:
     rows = tuple(values)
     return "\n".join(f"- {clean(value)}" for value in rows) if rows else "- None."
+
+
+def current_certificate(claim: Path, receipt_hash: str) -> dict:
+    matches = []
+    for path in claim.glob("certificate*.json"):
+        payload = read(path)
+        if payload.get("engine_receipt_hash") == receipt_hash:
+            matches.append((path, payload))
+    if len(matches) != 1:
+        raise SystemExit(
+            f"expected exactly one receipt-bound certificate for {claim.name}; found {len(matches)}"
+        )
+    return matches[0][1]
 
 
 def axis_eliminations(candidate: dict, elimination: dict) -> list[tuple[str, str, str, str]]:
@@ -91,10 +105,10 @@ def claim_block(order: int, claim_id: str, subbranch: str, heading_level: int = 
     candidate = read(claim / "candidate_census.json")
     elimination = read(claim / "elimination_receipt.json")
     controls = read(claim / "controls.json")["controls"]
-    certificate = read(claim / "certificate.json")
     empirical_path = claim / "empirical_validation.json"
     empirical = read(empirical_path) if empirical_path.exists() else None
     census_row = next(row for row in read(CENSUS)["claims"] if row["claim_id"] == claim_id)
+    certificate = current_certificate(claim, census_row["receipt_hash"])
     survivor = next(row for row in elimination["decisions"] if row["survives"])
     exact_result = certificate["exact_result"]
     sources, locators = experiment_details(claim_id)
@@ -181,6 +195,7 @@ The result is closed only at its registered generated and empirical boundary. It
 def main() -> None:
     inventory = read(INVENTORY)
     metadata = read(METADATA)
+    version = str(metadata.get("metadata", {}).get("version", "unversioned"))
     authorized = bool(metadata["publication_authorized"])
     doi = str(metadata.get("doi", ""))
     if authorized and not doi:
@@ -310,8 +325,32 @@ def main() -> None:
             "SFT-PHYS-VALIDATION-COLLECTIVE-RADIATION-RESPONSE-042",
         ),
         (
+            "Unified constants object",
+            "one rooted object fixes b=2, c=3, spatial rank 3, boundary rank 2, cover depths 5/7, terminal alpha, lepton/quark products, dark/baryon and expansion ratios, Planck hierarchy, vacuum floors and normalized cosmological magnitude",
+            "the object composes already sealed structural and measured-value receipts; no listed value is introduced as a fitted cross-sector parameter",
+            "SFT-PHYS-UNIFIED-CONSTANTS-OBJECT-077",
+        ),
+        (
+            "Tesla resonance family",
+            "bounded round trip 2q; positive whole mode family 2qn; odd quarter-wave harmonics; one longitudinal and two transverse roles; exact resonant transfer with complete energy ledger",
+            "five captured source rows support the resonance classes while retaining material losses, distinct speeds, Earth-cavity boundaries and no source-free or unlimited-power claim",
+            "SFT-PHYS-VALIDATION-TESLA-RESONANCE-FAMILY-082",
+        ),
+        (
+            "Vacuum/inertia drive family",
+            "local exact drive a to b retains positive transfer a Take b; vacuum and inertia co-vary at exchange ratio One; finite-depth floor 1/2^(k+1); restoration closes the six-label ledger",
+            "official records retain the proposed mechanism, nonempty vacuum response and unity anchor, while also retaining no public prototype measurement, pump energy and no source-free cyclic gain",
+            "SFT-PHYS-VALIDATION-VACUUM-INERTIA-DRIVE-FAMILY-087",
+        ),
+        (
+            "Penta/hepta sectors and Smithion census",
+            "sector 5: coupling 4/5, 5 charge kinds, 24 mediators, slope 4; sector 7: coupling 6/7, 7 charge kinds, 48 mediators, slope 6; category-clean total 110 fundamental kinds",
+            "known 3/8 sector anchors and known fermions agree; 72 new gauge carriers and 12 Smithion kinds remain explicit standing predictions with exact search and falsification boundaries",
+            "SFT-PHYS-VALIDATION-NEW-SECTOR-COMPLETE-FAMILY-095",
+        ),
+        (
             "Physics Grand Lock",
-            "349 current claims; pre-lock certificate over 347 claims and 534 dependency nodes; 21/21 declared generator-dependent headline values move under 3→4 while half-One, spatial rank 3 and boundary rank 2 hold",
+            "the published pre-extension snapshot contains 349 claims; its formal certificate covers 347 claims and 534 dependency nodes; 21/21 generator-dependent headline values move under 3→4 while half-One, spatial rank 3 and boundary rank 2 hold",
             "234 pre-lock empirical receipts reconcile 147 distinct external source identities; all 14 detected unfavorable-result or scope-boundary claims and all 6 legacy receipt shapes remain explicit",
             "SFT-PHYS-VALIDATION-GRAND-LOCK-076",
         ),
@@ -337,12 +376,11 @@ def main() -> None:
 
 This paper reports a zero-parameter reconstruction of physical science from the single foundational Smithian One theorem, without imported axioms, fitted coefficients, numerical zero, negative proof magnitudes, irrational or imaginary proof values, floating-point proof equality, or continuum premises. Its lead numerical result is an exact first-principles derivation of the fine-structure constant:
 
-> α⁻¹ = 503846395469/3676744786 = 137.035999177180855…<br/>
-> α = 3676744786/503846395469 = 0.007297352564321794…
+> α⁻¹ = 503846395469/3676744786 = 137.035999177180855…; α = 3676744786/503846395469 = 0.007297352564321794…
 
-The value was sealed before the registered CODATA 2022 target was released and lies inside the complete interval 137.035999177 ± 0.000000021. The same derivational constitution produces exact charged-lepton cubic and Koide relations, electron and muon magnetic anomalies, the on-shell electroweak share, Higgs mass and self-coupling, the Planck/proton hierarchy, proton radius, vacuum and cosmological ratios, nuclear closure numbers, hadron trajectories, inverse-square dilution, relativistic and quantum laws, thermodynamic and extraction boundaries, gravitational-wave ordering, and the remaining Physics inventory documented here.
+The value was sealed before the registered CODATA 2022 target was released and lies inside the complete interval 137.035999177 ± 0.000000021. The same derivational constitution produces exact charged-lepton cubic and Koide relations, electron and muon magnetic anomalies, the on-shell electroweak share, Higgs mass and self-coupling, the Planck/proton hierarchy, proton radius, vacuum and cosmological ratios, nuclear closure numbers, hadron trajectories, inverse-square dilution, relativistic and quantum laws, thermodynamic and extraction boundaries, gravitational-wave ordering, the Unified Constants Object, Tesla resonance laws, vacuum/inertia co-variation and restoration, and the penta/hepta/Smithion standing-prediction family documented here.
 
-The publication contains all {len(obligations)} current engine-admitted Physics claims. Their generated grammars contain {candidate_total:,} candidates, {candidate_total:,} one-for-one decisions, {len(obligations)} unique survivors and {control_total:,} passing mandatory adverse controls. Of those claims, {empirical_count} contain sealed post-derivation external-validation records; formal claims are connected to their registered empirical successors or retain their exact structural test boundary. The categorical clean-room audit closes all 488 Physics-owned V1/V2 atoms at the declared current-evidence boundary, with no open Physics atom or gap family. Grand Lock 075 proves the complete root trace and structural perturbation result; Grand Lock 076 reconciles the full empirical vector, including adverse and scope-boundary rows. These locks establish a reproducible release snapshot while leaving Physics permanently open to lawful extension, correction and falsification.
+The publication contains all {len(obligations)} current engine-admitted Physics claims. Their generated grammars contain {candidate_total:,} candidates, {candidate_total:,} one-for-one decisions, {len(obligations)} unique survivors and {control_total:,} passing mandatory adverse controls. Of those claims, {empirical_count} contain sealed post-derivation external-validation records; formal claims are connected to their registered empirical successors or retain their exact structural test boundary. The categorical clean-room audit closes all 488 Physics-owned V1/V2 atoms at the declared current-evidence boundary, with no open Physics atom or gap family. Grand Locks 075/076 preserve the 349-claim pre-extension snapshot; the separately admitted Unified Constants, Tesla resonance, vacuum/inertia and new-sector families add nineteen current claims with their own completion audits and terminal empirical receipts. The current dated inventory is therefore a 368-claim full-field projection, complete to known registered scope and permanently open to lawful extension, correction and falsification.
 
 ## 1. Publication and authorship boundary
 
@@ -384,7 +422,7 @@ The present release stops at Physics. Chemistry, Materials and every later branc
 | 03 | *From Distinction to Information* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md) | [10.5281/zenodo.21591171](https://doi.org/10.5281/zenodo.21591171) |
 | 04 | *After Turing: The Fold Machine* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/computation/AFTER_TURING_THE_FOLD_MACHINE.md) | [10.5281/zenodo.21591174](https://doi.org/10.5281/zenodo.21591174) |
 | 05 | *The Quantum Fold Machine* | 1.2.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/quantum_computation/THE_QUANTUM_FOLD_MACHINE.md) | [10.5281/zenodo.21591175](https://doi.org/10.5281/zenodo.21591175) |
-| 06 | *From Fold to Physics* | 1.1.0 | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/physics/FROM_FOLD_TO_PHYSICS.md) | [10.5281/zenodo.21548363](https://doi.org/10.5281/zenodo.21548363) |
+| 06 | *From Fold to Physics* | {version} | [Markdown](https://github.com/MettaMazza/ernos-labs-sft-platform/blob/main/publications/current/physics/FROM_FOLD_TO_PHYSICS.md) | Version DOI pending archival deposit; previous 1.2 DOI [10.5281/zenodo.21627765](https://doi.org/10.5281/zenodo.21627765) |
 
 ## 2. Lead derivation: the exact fine-structure constant
 
@@ -458,7 +496,7 @@ The paper therefore keeps three levels distinct without diminishing any of them:
 
 ## 5. Complete current Physics status
 
-The current categorical inventory contains {len(obligations)} Physics claims in {len(inventory['subbranch_order'])} ordered subbranches. All {len(obligations)} have immutable model-admitted receipts. The categorical V1/V2 ownership audit identifies 488 Physics-owned atoms, all 488 closed at the declared same-strength current-evidence boundary, with no open atom or gap family. Formal Grand Lock 075 binds the complete pre-lock ownership surface, verifies its acyclic 534-node dependency dictionary, proves that every Physics route reaches the foundational One and tests generator dependence. Empirical Grand Lock 076 reconciles all 234 pre-lock empirical claims, 147 distinct external source identities, every available measurement receipt, all disclosed legacy receipt shapes and every detected unfavorable or scope-boundary claim.
+The current categorical inventory contains {len(obligations)} Physics claims in {len(inventory['subbranch_order'])} ordered subbranches. All {len(obligations)} have immutable model-admitted receipts. The categorical V1/V2 ownership audit identifies 488 Physics-owned atoms, all 488 closed at the declared same-strength current-evidence boundary, with no open atom or gap family. Formal Grand Lock 075 binds the complete pre-extension ownership surface, verifies its acyclic 534-node dependency dictionary, proves that every route in that snapshot reaches the foundational One and tests generator dependence. Empirical Grand Lock 076 reconciles all 234 pre-extension empirical claims, 147 distinct external source identities, every available measurement receipt, all disclosed legacy receipt shapes and every detected unfavorable or scope-boundary claim. Nineteen later Physics extensions are not silently folded backward into those historical locks: their own family-completion certificates, post-seal comparison receipts and live categorical inventory preserve them explicitly.
 
 “Closed” here means complete to the dated corpus, methods and evidence standard. It never means immune to correction or permanently closed to discovery. New findings, stronger evidence and falsifications remain lawful versioned extensions through the unchanged engine; existing receipts remain immutable.
 
@@ -518,7 +556,7 @@ The repository uses Python's standard library for the core engine and supports m
 
 The paper's lead result is the exact derivation `α⁻¹ = 503846395469/3676744786`, not an isolated numerical fit but the first terminal constant in a connected Physics reconstruction. The same root and admission constitution force and validate the charged-lepton relations, precision anomalies, electroweak share, Higgs sector, Planck/proton hierarchy, proton radius, vacuum and cosmological ratios, spatial rank, inverse-square force law, nuclear and hadronic structure, quantum and relativistic correspondence, thermodynamics, collective matter and gravitation documented in the complete ledger.
 
-At the declared derivational boundary, all {len(obligations)} current V3 Physics claims and all 488 categorically Physics-owned V1/V2 atoms are engine-admitted and current-evidence closed, with no open Physics gap family. Grand Locks 075 and 076 make ownership, root trace, structural perturbation and complete empirical reconciliation explicit. The manuscript and evidence package are publication-ready; release authority remains Maria Smith's alone. Physics remains open to lawful versioned extension, correction and falsification after publication. The result is an open, inspectable tree of physical laws whose authority rests on exact derivation, complete enumeration, sealed measurement, adverse evidence and reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection.
+At the declared derivational boundary, all {len(obligations)} current V3 Physics claims and all 488 categorically Physics-owned V1/V2 atoms are engine-admitted and current-evidence closed, with no open Physics gap family. Grand Locks 075/076 preserve the pre-extension validation snapshot; the Unified Constants, Tesla resonance, vacuum/inertia and new-sector completion records reconcile the nineteen later claims. The manuscript and evidence package are publication-ready; release authority remains Maria Smith's alone. Physics remains open to lawful versioned extension, correction and falsification after publication. The result is an open, inspectable tree of physical laws whose authority rests on exact derivation, complete enumeration, sealed measurement, adverse evidence and reproducible traces rather than credentials, institutional permission, opaque prediction or consensus selection.
 
 ## References and official data bodies
 
@@ -553,12 +591,12 @@ Copyright 2026 Maria Smith. Paper and documentation are licensed CC BY 4.0; repo
 
 Independent review, replication, lawful extension and attempted invalidation are invited. Contact Maria.Smith.Sftoe@gmail.com or https://discord.gg/ucwGryVxGr. Scientific admission requires the complete derivation chain and an unchanged-engine receipt; neither reputation nor criticism alone changes the model census.
 
-Suggested citation: Smith, Maria (2026), *From Fold to Physics: An Exact, Parameter-Free and Machine-Closed Reconstruction of Physical Science from Smithian Fold Theory*, Ernos Labs Physics Branch Paper 001, version 1.1.
+Suggested citation: Smith, Maria (2026), *From Fold to Physics: An Exact, Parameter-Free and Machine-Closed Reconstruction of Physical Science from Smithian Fold Theory*, Ernos Labs Physics Branch Paper 001, version {version}.
 """)
     PAPER.parent.mkdir(parents=True, exist_ok=True)
     paper_text = "\n".join(sections).rstrip() + "\n"
     PAPER.write_text(paper_text, encoding="utf-8")
-    if authorized:
+    if authorized and PAPER == ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md":
         LANDING.write_text(paper_text, encoding="utf-8")
     print(f"built {PAPER.relative_to(ROOT)} with {order - 1} categorical Physics claim sections")
 

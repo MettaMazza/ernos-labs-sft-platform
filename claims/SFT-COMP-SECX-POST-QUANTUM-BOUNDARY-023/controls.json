@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-COMP-SECX-POST-QUANTUM-BOUNDARY-023",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking complete first-axis coverage",
+      "kind": "false_premise",
+      "observed_behavior": "An implicit adversary makes security undefined.",
+      "passed": true,
+      "receipt_hash": "sha256:0f39eb8ebb377832e59a285fe64085afc129d0651fa2024bbb578421035131bd"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:4e91f020dbdbe9da3b7ef94cdd1437bd5805957a67af5ce2f68ca1cd7958622b"
+    },
+    {
+      "expected_behavior": "reject missing, duplicated or additional survivors",
+      "kind": "tampered_artifact",
+      "observed_behavior": "literal product contains one survivor and unique identities",
+      "passed": true,
+      "receipt_hash": "sha256:22cc6424b10bd5e9c686c30149bdcef3257c8f3bcc7a1c5d2cb8a39385a77f96"
+    },
+    {
+      "expected_behavior": "halt imported models, parameters or excluded quantum machinery",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported cryptographic theorem answer or target outcome selects the survivor; host absence and artifact counters are not admitted numerical-zero objects; no negative, irrational, imaginary, floating or completed-infinite proof scalar; no hidden key, oracle, leakage channel, adversary action, resource or success event; no toy execution silently exports to unrestricted practical security; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:071fecaf887f256ffce37e4d6239140c91502323d8cfbfaa37e2894fcbee22b2"
+    }
+  ]
+}

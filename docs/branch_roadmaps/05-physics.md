@@ -1,5 +1,22 @@
 # Physics branch roadmap
 
+## Current dated complete-field status - 29 July 2026
+
+The live categorical Physics inventory is **368/368 current engine-admitted
+claims**, organized across all thirteen subbranches below. Their complete
+generated support contains 257,776 candidates, 368 unique survivors and 1,472
+passed adverse controls; 238 claims carry sealed empirical-validation records.
+All 488 Physics-owned V1/V2 atoms remain same-strength closed. The nineteen
+post-v1.2 additions - Unified Constants, Tesla resonance, vacuum/inertia and
+the complete new-sector/Smithion family - are included explicitly rather than
+being attributed backward to Grand Locks 075/076.
+
+This is dated completion to the registered current-knowledge scope, not a
+permanent lock against discoveries. New physical questions, counterexamples,
+stronger measurements and lawful extensions remain open through versioned
+registration and the unchanged engine. The exhaustive version 1.3 paper and
+local review package are complete; remote publication remains unauthorized.
+
 ## Scientific ownership
 
 Physics owns universal physical relations, physical constants and dimensionless
@@ -62,6 +79,20 @@ The complete Physics census covers:
 - standing predictions with no present measurement, kept distinct from measured
   agreements; and
 - newly discovered physical obligations admitted through versioned extension.
+
+## Mandatory prior-corpus return families
+
+Before the current-knowledge-complete Physics edition, the branch must execute
+the Physics-owned rows in
+[`audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](../../audits/V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md),
+including the Tesla resonance laws, the resonantly driven vacuum/inertia
+channel, the full sector-five/seven phenotype, the unbundled beta slopes, the
+complete particle census and the dark-sector applied signatures.  Generic wave,
+vacuum or force claims do not count as substitutes for those exact obligations.
+
+The admitted zero-point, positive vacuum-extraction, Smithium-support,
+Majorana, nonstandard-spacetime and unified-constants results remain retained;
+the return work extends or completes them and does not rewrite their receipts.
 
 ## Publication sequence
 

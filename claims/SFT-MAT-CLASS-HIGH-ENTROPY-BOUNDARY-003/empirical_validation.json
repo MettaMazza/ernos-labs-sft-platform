@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-CLASS-HIGH-ENTROPY-BOUNDARY-003",
+  "data_source_ids": [
+    "NIST-HEA-PHASE",
+    "NIST-HEA-INTERMETALLIC"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:99932819ecb9a3e902f22a8252e068478999aad3a0da19d18834d548506e873b",
+  "falsification_condition": "Reject if any registered source, fragment, condition, path, seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b836b51a06ae54bf230e9c628c587abfa4eda8071f9f784f16d6e67b62a00fb8",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:e34d65b45e55a7938617d2f491b859d56a5c6ae11f87076534d1e786c873cf35",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-CLASS-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:1ca000defeceb2d17fc14b005a85d7e1a0a7f19b2c493842cac415b4c4a335e0",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:35527ca35dd4c92444b2763aee27d307a50f2f5a1fc8690883e816a4ba7d0dc7",
+    "prediction_seal_hash": "sha256:08b280190a4349ecf9e0dd045739b6128cb2522d09927f3b0d91ec972db16695",
+    "program_hash": "sha256:e8624ccc86b76133f958db7b8fb5b547da40d358f2c2e494b082ae015ffc1167",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c83b03694461a40ced64296b480ff19580bcbcdabaad1215c087638cf9d2309d",
+    "target_material_present": false,
+    "trace_hash": "sha256:fc2e12e874a8caed32c2bb1c8326f757fe2fdfcf9ce8afb1a310c7edec05942f"
+  },
+  "measurement_receipt_hash": "sha256:c2912b760d75265b52625c2016eb98dd4993a63cd380c16b6e3d99c957a48d7a",
+  "measurements": [
+    "CLASS-003: 2 comparisons",
+    "family sources: 11",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-HEA-PHASE: entropy of mixing; multicomponent phase diagrams",
+    "NIST-HEA-INTERMETALLIC: High Entropy Thin Films; L10-Ordered"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:edd0729ae8a4633f07902576a222bfbe155b2265b4874d16ed317871a3fcbe2a",
+    "custodian_id": "SFT-EXP-MAT-CLASS-003-V1-custodian",
+    "experiment_registration_hash": "sha256:99932819ecb9a3e902f22a8252e068478999aad3a0da19d18834d548506e873b",
+    "prediction_seal_hash": "sha256:08b280190a4349ecf9e0dd045739b6128cb2522d09927f3b0d91ec972db16695",
+    "registered_target_identity_hash": "sha256:c83b03694461a40ced64296b480ff19580bcbcdabaad1215c087638cf9d2309d",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:2166e8aa7de48809229a76efc24f63a9e8bbe17dbc9d700f0744690eeac3c37f"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:34fd1f5e5583e5c925ffb4b5cef5285abfcdc274d161f25321cd11aacca0842f"
+}

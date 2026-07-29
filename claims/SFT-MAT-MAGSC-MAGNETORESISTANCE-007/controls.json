@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-MAGNETORESISTANCE-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2b8caa3c78b4890f20de38beb489e6b9231fe05c811a44fbf3cb17f1adca6ad5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:1387418af7ae133ba56fdddb1c6f9f9561776829d19e044924f8ad7ae228e844"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a35b5c0fb35a79b894579f88a659bb85c6706c35c41a50fae532f95756774635"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:81baa4adb06df8df4cd5ff59752543529b55984064c16b3ad5ee100c2c90be71"
+    }
+  ]
+}

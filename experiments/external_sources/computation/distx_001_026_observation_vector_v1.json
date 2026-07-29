@@ -1,0 +1,590 @@
+{
+  "all_rows_preserved": true,
+  "authority": "Maria Smith",
+  "date": "2026-07-29",
+  "external_measurement_boundary": "Distributed laws are directly tested across complete generated event, schedule, message, fault and topology supports and by implementation-distinct reconstruction. Platform deployments and conventional protocol claims require explicit transport and never select a survivor.",
+  "outcomes_opened_only_after_registry_freeze": true,
+  "protected_engine_or_verifier_edit_made": false,
+  "record_count": 26,
+  "records": [
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-EVENT-LOCAL-ORDER-001",
+      "exact_observation": {
+        "events": [
+          "p1",
+          "p2",
+          "p3"
+        ],
+        "local_edges": [
+          [
+            "p1",
+            "p2"
+          ],
+          [
+            "p2",
+            "p3"
+          ]
+        ],
+        "process": "p"
+      },
+      "expected_label": "complete-distx-001-execution-retained",
+      "number": "001",
+      "obligation_id": "SFT-COMP-OBL-DISTX-001",
+      "observation_name": "event_local_order",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-INTERLEAVING-PARTIAL-ORDER-002",
+      "exact_observation": {
+        "events": [
+          "a",
+          "b",
+          "c"
+        ],
+        "lawful_linearizations": [
+          [
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "b",
+            "a",
+            "c"
+          ]
+        ],
+        "required_edges": [
+          [
+            "a",
+            "c"
+          ],
+          [
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "expected_label": "complete-distx-002-execution-retained",
+      "number": "002",
+      "obligation_id": "SFT-COMP-OBL-DISTX-002",
+      "observation_name": "partial_order_interleavings",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-HAPPENS-BEFORE-003",
+      "exact_observation": {
+        "closure_edges": 3,
+        "forced_transitive_edge": [
+          "a",
+          "c"
+        ],
+        "primitive_edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "expected_label": "complete-distx-003-execution-retained",
+      "number": "003",
+      "obligation_id": "SFT-COMP-OBL-DISTX-003",
+      "observation_name": "happens_before",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-MESSAGE-CUSTODY-004",
+      "exact_observation": {
+        "message": "m",
+        "orphan_receipts": 0,
+        "receipt_count": 1,
+        "receiver": "q",
+        "send_count": 1,
+        "sender": "p"
+      },
+      "expected_label": "complete-distx-004-execution-retained",
+      "number": "004",
+      "obligation_id": "SFT-COMP-OBL-DISTX-004",
+      "observation_name": "message_custody",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-SYNCHRONY-BOUNDARY-005",
+      "exact_observation": {
+        "asynchronous_queue_width": 1,
+        "synchronous_events": [
+          "send",
+          "receive",
+          "ack"
+        ],
+        "timing_inferred": false
+      },
+      "expected_label": "complete-distx-005-execution-retained",
+      "number": "005",
+      "obligation_id": "SFT-COMP-OBL-DISTX-005",
+      "observation_name": "synchrony_boundary",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-MUTUAL-EXCLUSION-006",
+      "exact_observation": {
+        "lawful_schedule_max_holders": 1,
+        "overlap_control_rejected": true,
+        "token_identity_retained": true
+      },
+      "expected_label": "complete-distx-006-execution-retained",
+      "number": "006",
+      "obligation_id": "SFT-COMP-OBL-DISTX-006",
+      "observation_name": "mutual_exclusion",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-PROGRESS-CLASSES-007",
+      "exact_observation": {
+        "distinct_classes": 3,
+        "nonterminal_cycle_retained": true,
+        "terminal_classes": [
+          "deadlock",
+          "livelock",
+          "progress"
+        ]
+      },
+      "expected_label": "complete-distx-007-execution-retained",
+      "number": "007",
+      "obligation_id": "SFT-COMP-OBL-DISTX-007",
+      "observation_name": "progress_classes",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-COORDINATION-PRIMITIVES-008",
+      "exact_observation": {
+        "barrier_release_rows": 1,
+        "participants": 2,
+        "rendezvous_pair_retained": true,
+        "semaphore_permit_retained": true
+      },
+      "expected_label": "complete-distx-008-execution-retained",
+      "number": "008",
+      "obligation_id": "SFT-COMP-OBL-DISTX-008",
+      "observation_name": "coordination_primitives",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-LOGICAL-CLOCK-009",
+      "exact_observation": {
+        "causal_inequality": "send-before-receipt",
+        "receipt_clock": 2,
+        "send_clock": 1,
+        "wall_clock_used": false
+      },
+      "expected_label": "complete-distx-009-execution-retained",
+      "number": "009",
+      "obligation_id": "SFT-COMP-OBL-DISTX-009",
+      "observation_name": "logical_clock",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-DELIVERY-MODES-010",
+      "exact_observation": {
+        "broadcast_deliveries": 3,
+        "multicast_deliveries": 2,
+        "point_deliveries": 1,
+        "registered_receivers": 3
+      },
+      "expected_label": "complete-distx-010-execution-retained",
+      "number": "010",
+      "obligation_id": "SFT-COMP-OBL-DISTX-010",
+      "observation_name": "delivery_modes",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-FAILURE-FREE-CONSENSUS-011",
+      "exact_observation": {
+        "decision": "a",
+        "inputs": [
+          "b",
+          "a",
+          "b"
+        ],
+        "participant_decisions": [
+          "a",
+          "a",
+          "a"
+        ],
+        "validity": true
+      },
+      "expected_label": "complete-distx-011-execution-retained",
+      "number": "011",
+      "obligation_id": "SFT-COMP-OBL-DISTX-011",
+      "observation_name": "failure_free_consensus",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-CRASH-CONSENSUS-BOUNDARY-012",
+      "exact_observation": {
+        "hidden_remote_states_distinct": true,
+        "retained_local_views_equal": true,
+        "unconditional_total_decision_admitted": false
+      },
+      "expected_label": "complete-distx-012-execution-retained",
+      "number": "012",
+      "obligation_id": "SFT-COMP-OBL-DISTX-012",
+      "observation_name": "crash_fault_boundary",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-BYZANTINE-AGREEMENT-BOUNDARY-013",
+      "exact_observation": {
+        "declared_fault_support": 1,
+        "least_pair_intersection": 2,
+        "nonadversarial_intersection_forced": true,
+        "participants": 4,
+        "quorum_width": 3
+      },
+      "expected_label": "complete-distx-013-execution-retained",
+      "number": "013",
+      "obligation_id": "SFT-COMP-OBL-DISTX-013",
+      "observation_name": "byzantine_quorum",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-HIDDEN-PREDECESSOR-014",
+      "exact_observation": {
+        "predecessor_count": 2,
+        "predecessor_identifiable": false,
+        "reverse_label_retained": false,
+        "terminal_images": 1
+      },
+      "expected_label": "complete-distx-014-execution-retained",
+      "number": "014",
+      "obligation_id": "SFT-COMP-OBL-DISTX-014",
+      "observation_name": "hidden_predecessor",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-FAILURE-DETECTOR-CUSTODY-015",
+      "exact_observation": {
+        "basis": "missed-declared-round",
+        "knowledge_claimed": false,
+        "suspected_process": "q",
+        "synchrony_contract": "bounded-round"
+      },
+      "expected_label": "complete-distx-015-execution-retained",
+      "number": "015",
+      "obligation_id": "SFT-COMP-OBL-DISTX-015",
+      "observation_name": "failure_detector_custody",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-REPLICATION-STATE-MACHINE-016",
+      "exact_observation": {
+        "command_trace": [
+          "a",
+          "b"
+        ],
+        "deterministic_transition": true,
+        "distinct_terminal_states": 1,
+        "replicas": 3
+      },
+      "expected_label": "complete-distx-016-execution-retained",
+      "number": "016",
+      "obligation_id": "SFT-COMP-OBL-DISTX-016",
+      "observation_name": "replication",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-LINEARIZABLE-SEQUENTIAL-017",
+      "exact_observation": {
+        "linearizable_history": true,
+        "program_order_edges_retained": true,
+        "read_mismatch_control": true,
+        "real_time_edges_retained": true
+      },
+      "expected_label": "complete-distx-017-execution-retained",
+      "number": "017",
+      "obligation_id": "SFT-COMP-OBL-DISTX-017",
+      "observation_name": "consistency_boundary",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-CAUSAL-EVENTUAL-018",
+      "exact_observation": {
+        "causal_edges_preserved": 2,
+        "merge_after_updates": true,
+        "unregistered_convergence_time": false,
+        "updates": [
+          "write-a",
+          "write-b"
+        ]
+      },
+      "expected_label": "complete-distx-018-execution-retained",
+      "number": "018",
+      "obligation_id": "SFT-COMP-OBL-DISTX-018",
+      "observation_name": "causal_eventual",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-QUORUM-INTERSECTION-019",
+      "exact_observation": {
+        "least_intersection": 1,
+        "participants": 3,
+        "quorum_count": 3,
+        "quorum_width": 2
+      },
+      "expected_label": "complete-distx-019-execution-retained",
+      "number": "019",
+      "obligation_id": "SFT-COMP-OBL-DISTX-019",
+      "observation_name": "quorum_intersection",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-TRANSACTION-ATOMICITY-020",
+      "exact_observation": {
+        "all_yes_decision": "commit",
+        "partial_effect_admitted": false,
+        "retained_no_decision": "abort"
+      },
+      "expected_label": "complete-distx-020-execution-retained",
+      "number": "020",
+      "obligation_id": "SFT-COMP-OBL-DISTX-020",
+      "observation_name": "transaction_atomicity",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-DISTRIBUTED-KNOWLEDGE-021",
+      "exact_observation": {
+        "common_support": [
+          "b"
+        ],
+        "local_views": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ]
+        ],
+        "shared_support": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "expected_label": "complete-distx-021-execution-retained",
+      "number": "021",
+      "obligation_id": "SFT-COMP-OBL-DISTX-021",
+      "observation_name": "distributed_knowledge",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-LOCALITY-RADIUS-022",
+      "exact_observation": {
+        "instant_remote_access": false,
+        "round_layers": [
+          [
+            "a"
+          ],
+          [
+            "b"
+          ],
+          [
+            "c"
+          ],
+          [
+            "d"
+          ]
+        ],
+        "rounds_to_d": 3,
+        "source": "a"
+      },
+      "expected_label": "complete-distx-022-execution-retained",
+      "number": "022",
+      "obligation_id": "SFT-COMP-OBL-DISTX-022",
+      "observation_name": "locality_radius",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-NETWORK-TOPOLOGY-023",
+      "exact_observation": {
+        "path_required": true,
+        "reachable": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "reachable_count": 4,
+        "source": "a"
+      },
+      "expected_label": "complete-distx-023-execution-retained",
+      "number": "023",
+      "obligation_id": "SFT-COMP-OBL-DISTX-023",
+      "observation_name": "network_topology",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-PARTITION-CUSTODY-024",
+      "exact_observation": {
+        "components": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "c",
+            "d"
+          ]
+        ],
+        "cross_partition_delivery": false,
+        "source_a_reachable": [
+          "a",
+          "b"
+        ]
+      },
+      "expected_label": "complete-distx-024-execution-retained",
+      "number": "024",
+      "obligation_id": "SFT-COMP-OBL-DISTX-024",
+      "observation_name": "partition_custody",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-SAFETY-LIVENESS-FAIRNESS-025",
+      "exact_observation": {
+        "continuously_enabled_actions_served": 2,
+        "safety_control_passed": true,
+        "terminal_progress_reached": true
+      },
+      "expected_label": "complete-distx-025-execution-retained",
+      "number": "025",
+      "obligation_id": "SFT-COMP-OBL-DISTX-025",
+      "observation_name": "safety_liveness_fairness",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    },
+    {
+      "all_rows_preserved": true,
+      "claim_id": "SFT-COMP-DISTX-COMPLETENESS-026",
+      "exact_observation": {
+        "duplicate_owners": 0,
+        "independent_execution_rows": 26,
+        "omitted_owners": 0,
+        "registered_obligations": 26
+      },
+      "expected_label": "complete-distx-026-execution-retained",
+      "number": "026",
+      "obligation_id": "SFT-COMP-OBL-DISTX-026",
+      "observation_name": "distributed_completeness",
+      "source_ids": [
+        "SFT-V3-INDEPENDENT-EXACT-DISTRIBUTED-OBSERVER",
+        "SFT-V1-V2-DISTRIBUTED-OBSERVATION-CORPUS"
+      ]
+    }
+  ],
+  "registry_identity": "sha256:3b06778b63af6f7fdf8b19d33a0f17de22f58610e9c6c0780bb32def7eab4a65",
+  "schema": "sft-v3-classical-computation-distx-observation-vector/1",
+  "vector_identity": "sha256:76186bb8badc6d13087a1eb18c58651b2ccd0f3a4b5e7974a5896c89afdae913"
+}

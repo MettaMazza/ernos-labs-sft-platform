@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-PRIV-CRYPTO-HANDOFF-009",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-PRIVACY-OBSERVER",
+    "SFT-V1-V2-PRIVACY-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:310f73f8866cf21f7ee5f04d110c60a0c11f6e8cb5409833ca416a607a326d83",
+  "falsification_condition": "Reject if the value-free registry, complete protected-source/adversary-view census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:b26db5fee25bd867259c6a02f78c37bc4e2241ed620fe42c112359232f940863",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5a4725b175c243b86bcb9ec132fc9ba1f673845975b8c204f6cfdb195c1d50a1",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-PRIV-009-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:26bdc2ca459c226ad78f0c8cf109d233a41bc7b0c6b078ef63e15ecdfc9a91bb",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:15327e3c9dd572b43e01deb7643f4c02a4137637610859967f60e4f1e81d17e5",
+    "prediction_seal_hash": "sha256:22845aa219d53e4c8237848a72fbe9bcb473a96e930cb4d480401039d02357a5",
+    "program_hash": "sha256:f6e5327c89f1ac1e905697d16757f92d929dbf8741d273e5b592a66af115223b",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:ce61dd57eb16a12e6820a34cc422329fab6a2e24ab5cfc0a02b9647d29f11169",
+    "target_material_present": false,
+    "trace_hash": "sha256:804402d9d9cf0fb64d4080c3ce93e005c60438512641ce4008ef2d92e64217d3"
+  },
+  "measurement_receipt_hash": "sha256:557fd5e0c9a16e6a31820f3ccfd7433111df0ac836b8cade4c0e086242492bb2",
+  "measurements": [
+    "PRIV-009: cryptographic_handoff",
+    "exact observation: {\"downstream_owner\":\"cryptography\",\"exported_information_records\":3,\"ownership_overlap\":0}",
+    "complete family observation custody: 10 records; all rows preserved",
+    "complete protected-source, adversary-view, side-information, predecessor-class, query and leaked-distinction enumeration supplies the observation; no imported privacy metric, secret prior, fitted privacy weight or hidden side channel enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:8d8fc8fd88aedd08649877c70037331d6f0a9bddfa350b298a4a4c9771d30471",
+    "custodian_id": "SFT-EXP-INFO-PRIV-009-V1-custodian",
+    "experiment_registration_hash": "sha256:310f73f8866cf21f7ee5f04d110c60a0c11f6e8cb5409833ca416a607a326d83",
+    "prediction_seal_hash": "sha256:22845aa219d53e4c8237848a72fbe9bcb473a96e930cb4d480401039d02357a5",
+    "registered_target_identity_hash": "sha256:ce61dd57eb16a12e6820a34cc422329fab6a2e24ab5cfc0a02b9647d29f11169",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:e4780be77551e11e31ec3162e3ac177b08e96c58b220a5543c82dbb9b25d86b0"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6d0a4fb98b2084ef74a4857db75ff2126ffd251cd2d7cf13c17725a5d9bd5ce2"
+}

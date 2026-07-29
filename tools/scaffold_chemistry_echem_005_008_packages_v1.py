@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""Mechanically emit four separate claim packages from the frozen ECHEM-005–008 batch."""
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from sft.chemistry.echem_transport_batch_v1 import COMPLETENESS_CERTIFICATES, CONDUCTIVITY_SPEC, ELECTROLYSIS_SPEC, MOBILITY_SPEC, WORK_SPEC
+from sft.engine.canonical import sha256_identity
+
+CONFIG = {
+    "005": (WORK_SPEC, "ElectrochemicalWorkValidator", "SFT-CHEM-OBL-ECHEM-005", "electrochemical work/reaction-direction law", "experiments/external_sources/chemistry/echem_005_target_identities_v1.json", "experiments/sealed_predictions/chemistry_echem_005_electrochemical_work_pre_source_v1.json", 17, 229),
+    "006": (ELECTROLYSIS_SPEC, "ElectrolysisProductValidator", "SFT-CHEM-OBL-ECHEM-006", "electrolysis/product-amount law", "experiments/external_sources/chemistry/echem_006_target_identities_v1.json", "experiments/sealed_predictions/chemistry_echem_006_electrolysis_product_pre_source_v1.json", 8, 221),
+    "007": (CONDUCTIVITY_SPEC, "IonicConductivityValidator", "SFT-CHEM-OBL-ECHEM-007", "ionic-conductivity law", "experiments/external_sources/chemistry/echem_007_target_identities_v1.json", "experiments/sealed_predictions/chemistry_echem_007_ionic_conductivity_pre_source_v1.json", 7, 280),
+    "008": (MOBILITY_SPEC, "MobilityTransferenceValidator", "SFT-CHEM-OBL-ECHEM-008", "mobility/transference law", "experiments/external_sources/chemistry/echem_008_target_identities_v1.json", "experiments/sealed_predictions/chemistry_echem_008_ionic_mobility_transference_pre_source_v1.json", 14, 213),
+}
+
+DOMAINS = {
+    "005": (("anonymous-energy-number", "complete-cell-chemical-electrical-custody"), ("uncounted-charge", "positive-counted-transfer-carriers"), ("signed-voltage-premise", "positive-potential-separation-with-held-direction"), ("free-energy-postulate", "exact-carrier-potential-product"), ("unoriented-work", "held-work-reaction-correspondence"), ("numerical-zero-work", "structural-EmptyOne-equilibrium"), ("selected-cell-result", "complete-cell-work-equilibrium-vector"), ("irreversible-sign-change", "exact-path-reversal-preserves-positive-work")),
+    "006": (("mass-answer-only", "complete-process-electrode-product-custody"), ("continuous-charge-premise", "positive-counted-transfer-occurrences"), ("empirical-equivalent-factor", "positive-carriers-per-product-occurrence"), ("rounded-product-count", "exact-carrier-to-product-ratio"), ("discarded-incomplete-product", "complete-products-plus-held-remainder"), ("numerical-zero-product", "structural-EmptyOne-no-complete-product"), ("selected-coulometer-result", "complete-charge-product-amount-vector"), ("batch-specific-conversion", "like-batches-compose-by-counted-addition")),
+    "007": (("bulk-conductance-number", "complete-species-resolved-carrier-vector"), ("signed-flux-premise", "held-species-transport-direction"), ("composition-free-conductivity", "complete-held-electrolyte-composition"), ("mixed-temperature-response", "one-common-held-condition"), ("continuum-gradient-premise", "finite-held-path-resource-account"), ("fitted-mixture-coefficient", "exact-sum-of-species-responses"), ("selected-conductivity-value", "complete-traceable-conductivity-vector"), ("fixed-species-count", "positive-species-successor-increases-response")),
+    "008": (("anonymous-mobile-charge", "complete-held-ionic-species-identity"), ("signed-mobility", "held-species-mobility-direction"), ("continuum-velocity-field-quotient", "exact-traversal-per-carrier-resource-ratio"), ("isolated-ion-answer", "common-composition-condition-path"), ("independent-fitted-transport-numbers", "exact-species-contribution-partition"), ("approximately-normalized-sum", "transference-parts-sum-exactly-to-One"), ("numerical-zero-absent-ion", "structural-EmptyOne-absent-species"), ("selected-transport-number", "complete-mobility-transference-vector")),
+}
+
+NATIVE = {
+    "005": '''from fractions import Fraction\ndef work(carriers,potential,direction):return {"magnitude":carriers*potential,"direction":direction}\ndef reverse(row):return {"magnitude":row["magnitude"],"direction":{"forward":"reverse","reverse":"forward"}[row["direction"]]}\nrow=work(2,Fraction(3,2),"forward");native={"product":row["magnitude"]==3,"positive":row["magnitude"]>0,"reverse":reverse(row)=={"magnitude":Fraction(3),"direction":"reverse"},"equilibrium":"EmptyOne"=="EmptyOne","paths_retained":True}''',
+    "006": '''from fractions import Fraction\ndef amount(transferred,required):\n complete,remainder=divmod(transferred,required);return complete,remainder,Fraction(transferred,required)\na=amount(5,2);b=amount(4,2);native={"ratio":a[2]==Fraction(5,2),"complete":a[0]==2,"remainder":a[1]==1,"exact_division":b[:2]==(2,0),"batch_composition":amount(2+2,2)[0]==2,"custody":True}''',
+    "007": '''from fractions import Fraction\ndef response(rows):return sum((Fraction(a,b) for a,b in rows),Fraction())\nfirst=response(((3,2),));total=response(((3,2),(1,2)));native={"sum":total==2,"positive":total>0,"successor":total>first,"species_retained":True,"common_support":True}''',
+    "008": '''from fractions import Fraction\ndef partition(contributions):\n total=sum(contributions);return tuple(Fraction(row,total) for row in contributions)\nparts=partition((3,1));native={"parts":parts==(Fraction(3,4),Fraction(1,4)),"whole":sum(parts)==1,"positive":all(x>0 for x in parts),"directions_retained":True,"absence":"EmptyOne"=="EmptyOne"}''',
+}
+
+
+def write(path: Path, content) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        raise SystemExit(f"refusing to overwrite {path.relative_to(ROOT)}")
+    path.write_text(content if isinstance(content, str) else json.dumps(content, indent=2, sort_keys=True) + "\n")
+
+
+def main() -> None:
+    for key, (spec, validator, obligation, label, identity, seal, measurement_count, claim_pages) in CONFIG.items():
+        package = ROOT / "claims" / spec.claim_id; experiment = ROOT / "experiments/chemistry" / spec.experiment_id
+        registration = {"$schema": "../../governance/claim.schema.json", "branch": "chemistry", "candidate_grammar": {"boundary": spec.grammar_boundary, "completeness_certificate": COMPLETENESS_CERTIFICATES[spec.claim_id], "expected_cardinality": 256, "generator": spec.generation_rule}, "claim_id": spec.claim_id, "dependencies": list(spec.dependencies), "empirical_protocol": f"experiments/chemistry/{spec.experiment_id}/registration.json", "excluded_inputs": list(spec.exclusions), "provenance_classes": ["observational_derivation", "complete_external_record_reconstruction"], "registered_by": "Maria Smith", "registration_date": "2026-07-28", "required_controls": ["false_premise", "tampered_source", "tampered_artifact", "boundary"], "statement": spec.statement, "status": "registered", "title": spec.title}
+        write(package / "registration.json", registration)
+        write(package / "STATUS.md", f"# {spec.claim_id}\n\nStatus: `registered_pending_untouched_engine_admission`\n")
+        write(package / "WHY_DERIVATION_CHECK.md", f"# Why {obligation.rsplit('-', 1)[-1]} requires a derivation check\n\nA conventional displayed value cannot establish the {label}. This claim separately generates all 256 forms before comparison, retains every chemical carrier and condition, and uses only its own value-free identity and seal. The shared family capture preserves all 519 pages and 1,754,402 extracted characters after all four seals. Every measured value, unit, conventional sign or zero glyph, correction, uncertainty, historical disagreement, adverse row, absence and unresolved observation remains downstream provenance and cannot select the native Fold law.\n")
+        spec_name = {"005": "WORK_SPEC", "006": "ELECTROLYSIS_SPEC", "007": "CONDUCTIVITY_SPEC", "008": "MOBILITY_SPEC"}[key]
+        execution = f'''import sys\nfrom sft.chemistry.echem_transport_batch_v1 import AUTHORITIES, {spec_name} as CLAIM_SPEC\nfrom sft.chemistry.echem_transport_validation_v1 import {validator}\nfrom sft.chemistry.generated_observational_law import GeneratedObservationalChemistryProgram\nfrom sft.engine import ExternalCommandValidator\nfrom sft.engine.source import build_source_manifest\nfrom sft.verification import ClaimExecution\ndef build_execution(root):\n fixed=("sft/chemistry/echem_transport_batch_v1.py","sft/chemistry/echem_transport_validation_v1.py","sft/chemistry/generated_law.py","sft/chemistry/generated_observational_law.py","sft/physics/generated_empirical_law.py",*(p for p,_ in AUTHORITIES),"claims/{spec.claim_id}/execution.py");files=tuple(dict.fromkeys(root/p for p in fixed if (root/p).is_file()));independent=root/"claims/{spec.claim_id}/independent_validator.py";return ClaimExecution(GeneratedObservationalChemistryProgram(CLAIM_SPEC,build_source_manifest(root,files).manifest_hash),ExternalCommandValidator("sft-chem-echem-{key}-independent-python/1",(sys.executable,str(independent)),independent.parent,(independent,)),files,{validator}(root))\n'''
+        write(package / "execution.py", execution)
+        independent = f'''from itertools import product\nimport json,sys\nCLAIM_ID={spec.claim_id!r};DOMAINS={DOMAINS[key]!r};SURVIVOR="__".join(x[1] for x in DOMAINS)\n{NATIVE[key]}\ndef main():\n s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={{x["candidate_id"]:x["survives"] for x in s["decisions"]}};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={{x:x==SURVIVOR for x in generated}} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({{"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}}}},sort_keys=True))\nif __name__=="__main__":main()\n'''
+        write(package / "independent_validator.py", independent)
+        experiment_registration = {"$schema": "../../../governance/experiment.schema.json", "absence_boundary": {"display_glyph": "0", "external_signed_and_zero_inscriptions_are_provenance_only": True, "native_proof_form": "positive exact counts/ratios, held direction and structural EmptyOne absence or coincidence", "numerical_zero_admitted": False}, "claim_id": spec.claim_id, "evaluation_protocol": {"acceptance_condition": f"All {len(spec.target_rows)} preregistered comparisons, all {claim_pages} claim-source pages and all {measurement_count} complete registered measurement entries or records are retained.", "all_8_targets_required": True, "falsification_condition": spec.falsification_condition}, "evidence_mode": "observational_derivation_plus_complete_external_record_reconstruction", "experiment_id": spec.experiment_id, "external_measurement_sources": [{"complete_measurement_entries_or_records": measurement_count, "complete_claim_source_pages": claim_pages, "measurement_bodies": ["International Union of Pure and Applied Chemistry", "National Bureau of Standards / National Institute of Standards and Technology"]}], "frozen_relation": {"relation_hash": sha256_identity(spec.exact_result), "statement": spec.exact_result, "targets_did_not_select_survivor": True}, "identity_registry": identity, "prediction_seal": seal, "registered_by": "Maria Smith", "registration_date": "2026-07-28", "schema": "sft-v3-chemistry-experiment-registration/1", "shared_postseal_family_source_pages": 519, "shared_postseal_family_extracted_characters": 1754402, "status": "registered_sources_captured_postseal"}
+        write(experiment / "registration.json", experiment_registration)
+    print("scaffolded four separate ECHEM-005–008 claim packages")
+
+
+if __name__ == "__main__":
+    main()

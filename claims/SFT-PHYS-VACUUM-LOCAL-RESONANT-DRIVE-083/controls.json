@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-PHYS-VACUUM-LOCAL-RESONANT-DRIVE-083",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:de8a1addfd8c353e86de13275e6b7858440140512349f6e399c398b735043098"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4c675afae1b83249d0540988d5fe550f56254cc3bd49bbdaa6f4d15c60cd4151"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c4820d48548f8599168c38083953042fb5332da742e06122330f83b49480af5a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d2387b55601003bbc22c07e35cf28e9c2edfe9c04de886852888ca5782c0cf5f"
+    }
+  ]
+}

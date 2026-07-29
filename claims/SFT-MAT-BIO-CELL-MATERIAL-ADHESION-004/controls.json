@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-BIO-CELL-MATERIAL-ADHESION-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e9bd3ba547ddc2b08edc890e28ed60832d664d36a0b713386c3da0f8551a57c3"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3f060323321ab5d7e9ff4975112c2cce85e77b91f64a7a5107d7cf3a54ce8f6e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:52a48058658c6825b671604dce2d8d56c346894116e908842eb09e36a0b8da71"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7adb51f730ee20e744d68555647ee8fd4df19b4e6e907e833c8ae01d5f573b10"
+    }
+  ]
+}

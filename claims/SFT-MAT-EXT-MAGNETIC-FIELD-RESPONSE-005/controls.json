@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-EXT-MAGNETIC-FIELD-RESPONSE-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8ea5c162e117fee43afd60421b5fb410e7defcd91367342340b583dab722810c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2d5496ea44bb538c4d859eea26700d0a12e58e8994c4db70500fe9fcf4ed9af8"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f955c2c7d5db30acfd5e33fe535257ae0e92a356f87bfa804d888bc21a451cf2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:514de1dc0d618299a2f09e3f8017d327d3897ce752d6f4c80d357ef865d0cb71"
+    }
+  ]
+}

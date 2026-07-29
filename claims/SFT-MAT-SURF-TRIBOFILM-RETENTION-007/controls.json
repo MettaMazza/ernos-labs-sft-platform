@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-TRIBOFILM-RETENTION-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b6eacfd149d9e7a4bc8694e84b6333fd7933ee57eae05939440c47579c2b5ea2"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a56392c95fad5330e51b5f1a5aa08e711df3df2f52742fd290c8495e2f1ee927"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7d9bd7e3862b2f21ce02e441f94e01414d0b12af2b86c3208aa7a5baec5050a9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:553ef3b9f0c18c201e06d1d54597bda32d54d75e07151257220b017991003db5"
+    }
+  ]
+}

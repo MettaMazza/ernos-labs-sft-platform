@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-RADIOCHEMICAL-SEPARATION-DECONTAMINATION-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:525a89263a4c3d2f87ceb2619ac6c5b5155c2e6adeb09e3ade4ccc4985b42692"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f8ae0b83dc96661b830969c7ce0c50e08fe3e013ae1dfdc732df6f216f96a3f4"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:41cf4b3e5b3e8d3cf2c3b320e02dd2f5b72c70a353eec15afab6cfeb95079dc0"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:b4e5a34bbe2cea192a6723dad3171e306d3e0010cd73bcfb49f9abf04090f4e2"
+    }
+  ]
+}

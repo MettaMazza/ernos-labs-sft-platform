@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-BIO-HOMOCHIRAL-AMPLIFICATION-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:dd409f37cde4abe44047834a35d8a0d2d9de20861952d43133212940b0efb826"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b96429b762c04b158d0d480380bbb7ee22cf07b036e3cb36ea07fe7fb87343b1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3de369e63681b46c2f3ca6e4869d283ef7db86cd9e717bc3db40350d71af604b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:6517b241c2e54f2b612bd6959442580610304d6b064d4f3fb0e590b29801bf60"
+    }
+  ]
+}

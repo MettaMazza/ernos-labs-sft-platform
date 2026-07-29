@@ -1,0 +1,59 @@
+{
+  "schema": "sft-v3-chemistry-org-010-complete-carrier-reconstruction-identity/3",
+  "date": "2026-07-28",
+  "authority": "Maria Smith",
+  "claim_id": "SFT-CHEM-ELIMINATION-REACTION-FAMILY-010",
+  "obligation_id": "SFT-CHEM-OBL-ORG-010",
+  "status": "identity-exposed-repair-registered-before-version-three-reconstruction",
+  "blindness_disclosure": "The source and its product outcomes were already exposed by the admitted version-one experiment. This registration therefore makes no blind-prediction claim. It freezes the distinct reconstruction route, complete row boundary and exact comparison before the version-three carrier reconstruction is executed.",
+  "protected_authority": {
+    "engine_seal": "sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a",
+    "verification_authority_seal": "sha256:bf810a190b504f0f874a778a52e23251904b17b40a7364135e74b34e8ba0c3b8",
+    "engine_or_verifier_edit_authorized": false
+  },
+  "frozen_sources": [
+    {
+      "identity": "Royal Society of Chemistry supporting information for DOI 10.1039/D4SC01905A",
+      "path": "experiments/external_sources/chemistry/snapshots/org-010-europe-pmc-blind-v1/SC-015-D4SC01905A-s001.pdf",
+      "sha256": "sha256:f274759e0f850ecefb14e4d685d78bcae2641284b366d74f2bd03b10a8459620",
+      "required_surfaces": [
+        "general procedures 2.16 and 2.17",
+        "possible mechanistic pathways on source page 29",
+        "observed brominated intermediate 3a-prime",
+        "complete intermediate-to-product time course",
+        "all thirty-two source-ordered characterized products",
+        "all five unsuccessful substrate controls"
+      ]
+    },
+    {
+      "identity": "source-native possible-mechanistic-pathways image",
+      "path": "experiments/external_sources/chemistry/snapshots/org-010-europe-pmc-blind-v1/d4sc01905a-s6.jpg",
+      "sha256": "sha256:75d3643a5edf47d14f26a64c4949b7dfa220f729ce390c82ba7e7f8a6a3de92f"
+    },
+    {
+      "identity": "preserved version-one complete post-seal extraction",
+      "path": "experiments/external_sources/chemistry/snapshots/org-010-europe-pmc-blind-v1/complete-postseal-analysis-v1.json",
+      "sha256": "sha256:157144f86339efa5ddb583d860ef1fd444af6761c3080a82465367544735b89b"
+    }
+  ],
+  "frozen_target": {
+    "row_boundary": "all thirty-two products in original source order plus all five unsuccessful controls",
+    "procedure_2_16_equation": "held-product-carrier + CHO2K + C3H6BrNO2 -> held-product-carrier + CO2 + C3H7NO2 + KBr",
+    "procedure_2_17_equation": "held-product-carrier + CHO2K + C10H14BrNO2 -> held-product-carrier + CO2 + C10H15NO2 + KBr",
+    "comparison": "The two sides must have identical complete positive element-support multisets after the unchanged held-product carrier is retained on both sides.",
+    "required_distinctions": [
+      "procedure 2.16 versus procedure 2.17",
+      "source-observed product unsaturation versus reconstructed complete carrier custody",
+      "successful product rows versus unsuccessful substrate controls",
+      "source-observed intermediate and time course versus structurally reconstructed coproduct carriers"
+    ]
+  },
+  "prohibited_routes": [
+    "selecting reactions from an unlabeled database after observing newly formed unsaturation",
+    "treating a product-only characterization block as complete carrier custody",
+    "discarding any unsuccessful control",
+    "claiming that every coproduct was separately measured when it was structurally reconstructed",
+    "altering the law, row boundary, comparison or protected engine after observing the reconstruction"
+  ],
+  "halt_condition": "Halt if either exact equation fails, any of the thirty-two rows is omitted or reordered, a procedure is assigned the wrong reagent, an unsuccessful control is admitted as a successful elimination, or any protected byte changes."
+}

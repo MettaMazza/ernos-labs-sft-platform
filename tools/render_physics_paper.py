@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from reportlab.lib.enums import TA_CENTER
@@ -16,12 +17,12 @@ import render_platform_paper as base
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md"
-OUTPUT = ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.1.pdf"
-METADATA = ROOT / "publication/physics_zenodo_metadata.json"
+SOURCE = Path(os.environ.get("SFT_PHYSICS_PAPER_SOURCE", ROOT / "publications/current/physics/FROM_FOLD_TO_PHYSICS.md")).resolve()
+OUTPUT = Path(os.environ.get("SFT_PHYSICS_PDF_OUTPUT", ROOT / "output/pdf/from-fold-to-physics-branch-paper-001-v1.1.pdf")).resolve()
+METADATA = Path(os.environ.get("SFT_PHYSICS_METADATA", ROOT / "publication/physics_zenodo_metadata.json")).resolve()
 
 
-def cover(authorized: bool, doi: str, statistics: str):
+def cover(authorized: bool, doi: str, statistics: str, version: str):
     title = ParagraphStyle("PhysicsCoverTitle", fontName="Helvetica-Bold", fontSize=27, leading=32, textColor=base.ACCENT_DARK, alignment=TA_CENTER)
     subtitle = ParagraphStyle("PhysicsCoverSubtitle", fontName="Helvetica", fontSize=13, leading=18, textColor=base.INK, alignment=TA_CENTER)
     kicker = ParagraphStyle("PhysicsCoverKicker", fontName="Helvetica-Bold", fontSize=9, leading=12, textColor=base.ACCENT, alignment=TA_CENTER)
@@ -45,7 +46,7 @@ def cover(authorized: bool, doi: str, statistics: str):
         Spacer(1, 9 * mm),
         Paragraph("Maria Smith<br/>Independent researcher and founder, Ernos Labs<br/>Maria.Smith.Sftoe@gmail.com", author),
         Spacer(1, 9 * mm),
-        Paragraph("Corrected and expanded publication-ready version 1.1<br/>" + statistics + (f"<br/>Reserved DOI: {doi}" if doi else "") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
+        Paragraph(f"Corrected and expanded complete-field version {version}<br/>" + statistics + (f"<br/>Reserved DOI: {doi}" if doi else "<br/>Version DOI pending archival deposit") + "<br/>Paper: CC BY 4.0 - Code: Apache-2.0", note),
         Spacer(1, 8 * mm),
         Paragraph("PUBLISHED OPEN-ACCESS BRANCH PAPER" if authorized else "PUBLICATION-READY MANUSCRIPT - RELEASE NOT YET AUTHORIZED", warning),
     ]
@@ -54,6 +55,7 @@ def cover(authorized: bool, doi: str, statistics: str):
 def main() -> None:
     metadata = json.loads(METADATA.read_text(encoding="utf-8"))
     authorized = bool(metadata["publication_authorized"]); doi = str(metadata.get("doi", ""))
+    version = str(metadata.get("metadata", {}).get("version", "unversioned"))
     inventory = json.loads((ROOT / "publications/inventories/physics.json").read_text(encoding="utf-8"))
     obligations = inventory["obligations"]
     candidate_total = sum(
@@ -62,7 +64,7 @@ def main() -> None:
     )
     statistics = (
         f"{len(obligations)} current engine-admitted derivations - 488/488 categorical Physics atoms closed, lawful extensions open"
-        f"<br/>{candidate_total:,} Physics candidates - {4 * len(obligations):,} mandatory adverse controls - 26 July 2026"
+        f"<br/>{candidate_total:,} Physics candidates - {4 * len(obligations):,} mandatory adverse controls - 29 July 2026"
     )
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
@@ -86,7 +88,7 @@ def main() -> None:
     )
     frame = Frame(document.leftMargin, document.bottomMargin, document.width, document.height, id="body")
     document.addPageTemplates([PageTemplate(id="paper", frames=[frame], onPage=draw_page)])
-    document.build(cover(authorized, doi, statistics) + [PageBreak()] + base.body_story(SOURCE.read_text(encoding="utf-8")))
+    document.build(cover(authorized, doi, statistics, version) + [PageBreak()] + base.body_story(SOURCE.read_text(encoding="utf-8")))
     print(f"rendered {OUTPUT.relative_to(ROOT)}")
 
 

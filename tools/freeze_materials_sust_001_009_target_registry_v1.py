@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+"""Freeze all SUST target identities before source capture or outcome extraction."""
+from hashlib import sha256
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/"census/materials_sust_001_009_target_registry_v1.json"
+ROWS=(("001","SFT-MAT-SUST-EMBODIED-LEDGER-001","embodied material and energy ledger",("NIST-LIFE-CYCLE-ASSESSMENT",)),("002","SFT-MAT-SUST-AVAILABILITY-BOUNDARY-002","critical-material availability boundary",("NIST-CRITICAL-MINERALS-MATERIALS",)),("003","SFT-MAT-SUST-REUSE-REMANUFACTURE-003","material reuse and remanufacture",("NIST-REGENERATIVE-MANUFACTURING",)),("004","SFT-MAT-SUST-RECOVERY-YIELD-004","recycling separation and recovery yield",("NIST-CRITICAL-MATERIAL-RECOVERY",)),("005","SFT-MAT-SUST-CIRCULAR-FLOW-005","circular material-flow organization",("NIST-MATERIAL-FLOW-CIRCULARITY",)),("006","SFT-MAT-SUST-DURABILITY-EXTENSION-006","durability and life-extension relation",("NIST-MATERIALS-RESILIENCE",)),("007","SFT-MAT-SUST-TOXICITY-HANDOFF-007","material toxicity and health handoff",("NIST-CIRCULAR-SAFETY",)),("008","SFT-MAT-SUST-SUBSTITUTION-FUNCTION-008","material substitution and function preservation",("NIST-CRITICAL-SUBSTITUTION",)),("009","SFT-MAT-SUST-END-OF-LIFE-CUSTODY-009","end-of-life fate and residual custody",("NIST-CIRCULAR-END-OF-USE",)))
+def canonical(v): return "sha256:"+sha256(json.dumps(v,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()).hexdigest()
+def main():
+ if OUT.exists(): raise SystemExit("refusing overwrite")
+ v={"schema":"sft-v3-materials-sust-target-identities/1","authority":"Maria Smith","date":"2026-07-29","family":"sustainable_material_cycles_lifecycle_complete_custody","selection_rule":"All nine obligations and authoritative target identities are frozen as one whole subcategory before detailed outcome extraction.","custody_disclosure":"Source identities and target classes only; no value, fragment, candidate, survivor or outcome.","targets":[{"obligation_id":f"SFT-MAT-OBL-SUST-{n}","claim_id":c,"target_class":t,"source_identities":list(s)} for n,c,t,s in ROWS],"target_count":9,"all_family_members_registered":True,"target_content_present":False,"survivor_identity_present":False,"measured_value_present":False,"outcome_present":False,"failed_route_retires_obligation":False}; v["registry_identity"]=canonical(v); OUT.write_text(json.dumps(v,indent=2,sort_keys=True)+"\n"); print(v["registry_identity"])
+if __name__=="__main__": main()

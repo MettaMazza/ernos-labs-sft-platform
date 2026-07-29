@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-BOUNDARY-RESISTANCE-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:10c867cbe2ddc982fe448e863a12a1c1f6b0bba2407351e0799f0c6c4509fa62"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:840e90def92ea59207a2b7fc9a80890f62a98a7b429041d3b5f645196c67183b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:07a8734a85983357079eea056c9ecc9598ad523602cce41922e564a5bbc8850a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4df3ca55898cd95f20adcc51152a01e3f96d21ddca828a7610c18ba3c1110821"
+    }
+  ]
+}

@@ -1,20 +1,92 @@
 # Active Physics continuation checkpoint
 
+> **Content-level audit correction (28 July 2026):** the earlier `488/488`
+> count only covered rows already labelled Physics-owned and therefore cannot
+> prove that cross-synthesis or mis-owned prior statements were reconstructed.
+> The mandatory successor ledger is
+> [`V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md`](V1_V2_NOVEL_DERIVATION_RETURN_AUDIT_2026-07-28.md).
+> It does not invalidate any admitted receipt; it adds the omitted and narrowed
+> obligations that must be executed when their branches return.
+
 This file is the durable restart boundary for the current V3 Physics successor.
 It prevents conversation compression from causing completed work to be repeated
 or the derivation sequence to restart.
 
-## Live restart position — 2026-07-26
+## Authoritative complete-field restart position - 2026-07-29
+
+This section supersedes the older live-restart instruction below. Physics has
+not been restarted or rederived. The 349-claim published inventory and the
+nineteen later admitted Unified Constants, Tesla resonance, vacuum/inertia and
+new-sector extensions are now reconciled into the factual live categorical
+inventory: **368/368 current Physics claims**, zero unclassified row and zero
+open registered Physics obligation. All 488 categorically Physics-owned V1/V2
+atoms remain same-strength closed at their dated current-evidence boundary.
+
+The complete current totals are **257,776 generated candidates**, 257,776
+one-for-one decisions, **368 unique survivors**, **1,472 passed mandatory
+adverse controls**, 368 independent reconstructions and **238 claims with
+sealed empirical-validation records**. The inventory identity is
+`sha256:203e84420470fd8e1adc81f260629aa1fadbcb7bd33a2e268202c12f6b04ff5b`.
+Completion is dated and remains open to lawful extension, correction,
+falsification and discovery.
+
+The exhaustive unpublished version 1.3 manuscript contains one complete
+section for every live Physics claim. It is 30,666 lines, 337,266 words and 907
+rendered pages. Its headline results explicitly include the exact
+fine-structure constant and other measured constants, the Unified Constants
+Object, Tesla resonance, vacuum/inertia drive and restoration, and the
+penta/hepta/Smithion standing-prediction family. The release package puts the
+PDF first and includes Markdown, the 368-claim evidence map, manifest, draft
+Zenodo metadata, inventory, prior audit, all three later family-completion
+records and checksums.
+
+- Manuscript: `publications/successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_3.md`
+- Manuscript identity: `sha256:4573ff38d336940ea65875f4c3b7b44b51c2a36d59f0cc906d120451a57c80b4`
+- PDF: `output/pdf/from-fold-to-physics-branch-paper-001-v1.3.pdf`
+- PDF identity: `sha256:fb4a60f3f5b70f437684812759c737120d27a40df1b986f79c7a15818cb842f6`
+- Evidence map identity: `sha256:bd3b5f73936ed57bb30f2a27d308980f9dbfaf26e7fb32ad2a7223ac74f0188f`
+- Local release: `output/release/physics-1.3.0/`
+
+The Physics-wide focused suite passes all **420/420** discovered tests.
+Repository validation passes at 2,751 admitted V3 claims. The engine and
+verification-authority seals remain canonical and unchanged. The heavy global
+`verify-all` command has not been run and remains reserved for the final
+all-branch Grand Lock.
+
+The existing Physics publication checker correctly remains unchanged. Its
+attempt against the expanded inventory halted because it reads only the
+historical `certificate.json`, while 200 readmitted claims preserve their
+unique current receipt-bound certificate under a versioned filename. There is
+exactly one matching current certificate for every one of the 368 live claims,
+with zero missing and zero duplicate match. The halt is preserved in
+`PHYSICS_PUBLICATION_CHECKER_HISTORICAL_CERTIFICATE_HALT_2026-07-29.json`;
+neither certificate generation nor validation authority was edited. The v1.3
+documentation projection selects the unique certificate whose receipt identity
+equals the live census row.
+
+No push, release, DOI action or Zenodo publication is authorized or performed.
+Physics is complete to this dated scope and ready for Maria Smith's review.
+The all-sciences programme now advances to Chemistry, resuming only from its
+durable receipt-backed checkpoint without repeating completed families.
+
+## Live restart position — 2026-07-28
 
 This section supersedes every older progress count in this file.  It must be
 read before any continuation work.
 
 - Newest formal receipt:
-  `SFT-PHYS-GRAND-LOCK-TERMINAL-075`,
-  `sha256:ae18f67371c8e7054430935d6b5e5f3162f24cf9cba073769384bf7ba467d817`.
+  `SFT-PHYS-SMITHION-INTERACTION-SEARCH-SIGNATURES-094`,
+  `sha256:5e1ffc9a06c962f4d8301714cf57d5a6e306884cf9c4c4fcfed4b43365c101b7`.
 - Newest empirical receipt:
-  `SFT-PHYS-VALIDATION-GRAND-LOCK-076`,
-  `sha256:93f4497d6f7ef3c477246079f62c21f96a7ae27fd9516fa876e9d413bbab569e`.
+  `SFT-PHYS-VALIDATION-NEW-SECTOR-COMPLETE-FAMILY-095`,
+  `sha256:2f13335a3bfdd7a395689ff113676a6c3287d90c7b4c8e49eac53730d5c5f2bd`.
+- The complete Tesla, vacuum/inertia and new-sector return subcategories are
+  admitted and must not be repeated. Their completion certificates are
+  `PHYSICS_TESLA_RESONANCE_FAMILY_COMPLETION_2026-07-28.json` and
+  `PHYSICS_VACUUM_INERTIA_DRIVE_FAMILY_COMPLETION_2026-07-28.json` and
+  `PHYSICS_NEW_SECTOR_COMPLETE_FAMILY_COMPLETION_2026-07-28.json`.
+- The frozen programme now advances to `MATH-FAMOUS-BOUNDARIES`; no prior
+  Physics family or Grand Lock may be replayed because of compression.
 - Every preceding Physics family is completed evidence and must not be
   regenerated or replayed because of conversation compression.
 - Claim 075 independently regenerated all 4,096 formal alternatives and closed
@@ -24,6 +96,9 @@ read before any continuation work.
   reconciled 234 pre-lock empirical claims, 147 source identities, every
   available measurement receipt, six legacy shapes and fourteen adverse/scope
   claims.  Its first duplicate-dependency submission remains rejected evidence.
+- Grand Locks 075/076 remain immutable validation and reconciliation layers;
+  Claim 077 is the separately named unified mathematical object they do not
+  replace.
 - The categorical audit is 488/488 same-strength closed with zero open atom and
   zero remaining gap family.  The current categorical inventory is 349 claims.
 - Physics paper v1.1 is being repaired as a publication-ready manuscript.  No

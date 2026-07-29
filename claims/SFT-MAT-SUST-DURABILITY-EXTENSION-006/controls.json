@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-DURABILITY-EXTENSION-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:7374cb638494651a5480a36e021e29de9f0fb9ae986cd0f1771976d89f5fa6db"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:73362e265138240c0d2bdcd76d28291382396a183b37e4cd6be5793bf1c9f971"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b077c86ef8d8d23ed81fce0a5f7ca0336c3fa44f7a39ede5c66bc06945c38286"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:688461e48fc3f7b815a4a05ba7a6c765329fe325285e0f67d231323aaeeeb332"
+    }
+  ]
+}

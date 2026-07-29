@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-WEAR-MODE-DISTINCTION-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a2ae66db3780eb6060e1f3aa37e7c12da082b61c6a0cd9b08177173be5bb10b4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:18c371a0015fb704f1c85ecdd0bc787a415049db9c9d3000ca55a7a0cd4014c3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1a3f25163f9cc70b5247176d38ba78cd1f6ca874ccbf5381f533fb33fdc905b5"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9aa1a24e074dd45aa0890003d87b237cfe90d61baabc368dbe7c700e799d3f9d"
+    }
+  ]
+}

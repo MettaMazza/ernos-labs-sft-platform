@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-WAVE-MODE-RECURRENCE-IDENTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:09407a1da5643de37b714683776f129eb68d95246405a595ea3d1c20bc65c74e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:48f8368bf2f6885af1ca8612f878102270106709bb051b9c1433827115c31858"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:858dbc1148aea5d2f8b98cb521a84ba07140c1710e72326d4e65082ddee9586b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c7b74548034b30960a8c652db662565f423c4e2485c4192d2f7f942eecdebacd"
+    }
+  ]
+}

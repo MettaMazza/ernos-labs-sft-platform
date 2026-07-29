@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-SPINODAL-INSTABILITY-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:71ce225893d413f9d96ee9f91483e1f3aa3dc086c708a4d6c81632c423074aae"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:43df58bc3e34e29cceb073d3875d514b924e4972ccd63375d2101ab35b275e0f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7d0f2be7e95343274e735cfaf45618a7be7e927ba7b9b87bb617229b8820e5c1"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c3cd6265c4861ac39b17c3f02e2b674db9147d9e5e30b26118363495a7a76af6"
+    }
+  ]
+}

@@ -1,5 +1,16 @@
 # From Fold to Consciousness
 
+> **Current programme checkpoint (29 July 2026):** the local V3 corpus contains
+> 2,751 registered, model-admitted claims. Mathematics through Materials are
+> complete to their dated full-field boundaries; Biology is the active branch
+> at 82/424 obligations. Published versions, local successor packages and the
+> still-open global integration gates are reconciled in
+> [`audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+>
+> **V3 publication catalogue:** the sixteen authoritative clean-room papers and
+> the complete pre-V3 Zenodo replacement map are indexed in
+> [`publication/V3_ZENODO_CATALOGUE_AND_PRE_V3_STATUS_2026-07-28.md`](publication/V3_ZENODO_CATALOGUE_AND_PRE_V3_STATUS_2026-07-28.md).
+
 **Consciousness and Cognitive Science Foundational Branch Paper 001, version 1.0.0 - Smithian Fold Theory V3 Clean-Room Reconstruction**
 
 ## Abstract

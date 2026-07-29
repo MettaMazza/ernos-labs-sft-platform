@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-SYMREP-CODEWORD-PARSING-003",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-REPRESENTATION-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:9c665675b3866a1f3b1d03f27edd2e3b4cc924c304cee20aeee29c80322ff717",
+  "falsification_condition": "Reject if the value-free registry, complete representation census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:f99f1ec995ca4a2579d744f267245edc6924fe3c027b94cb02526673e6ae9416",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:2213cafe0afda6d7dc5328fc1d661c61730837b415f1c61e2dc5ba0cd6d917c2",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-SYMREP-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:01c386ca6033febc314b028876e569bd320993bb1440a06872be0a3266f39c8f",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:866a0fc3e92f3fe12d3e4048bbbb816640ad319168d8dbfe1a40642a363c525a",
+    "prediction_seal_hash": "sha256:c6f1b11c8f3c9d8ea286c68903b9b30f4948ce717ae49297b90eaa8b01a25baa",
+    "program_hash": "sha256:04766dd53aac62f68d716ff978728e1a6628d695c29dce7cd8c167ae53df8dce",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:2badcd5d91e85ca3a515535e5f46bee1fa4565d4374c1ef15c1e8109d849d6a9",
+    "target_material_present": false,
+    "trace_hash": "sha256:2249a1dbb3dc034dab1bbfe58f00b1e64a0c0316b8bdc23d7cce72ec45efca4c"
+  },
+  "measurement_receipt_hash": "sha256:79ead775c88ad4007c6895836fa4450fd7ee851ad91bee4ce6bce1ac477b6231",
+  "measurements": [
+    "SYMREP-003: codeword_parsing",
+    "exact observation: {\"encoded_units\":[\"L\",\"R\",\"L\",\"R\",\"R\"],\"parse_count\":1,\"source_word\":[\"a\",\"b\",\"c\"]}",
+    "complete family observation custody: 14 records; all rows preserved",
+    "complete finite alphabet, code, parse, grammar and relation enumeration supplies the observation; no imported coding axiom, semantic prior or hidden parse enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d407665a7c82ea52de0520c289d260d9c226383057dfa69617fc69df8cea1271",
+    "custodian_id": "SFT-EXP-INFO-SYMREP-003-V1-custodian",
+    "experiment_registration_hash": "sha256:9c665675b3866a1f3b1d03f27edd2e3b4cc924c304cee20aeee29c80322ff717",
+    "prediction_seal_hash": "sha256:c6f1b11c8f3c9d8ea286c68903b9b30f4948ce717ae49297b90eaa8b01a25baa",
+    "registered_target_identity_hash": "sha256:2badcd5d91e85ca3a515535e5f46bee1fa4565d4374c1ef15c1e8109d849d6a9",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:56747129dc3a2e3037786b0095bbe185800dc87231f08c4ea31d3e470a0016ea"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:be8bec10906cf83fa5c2e938de2d27effcf67e84af9cb6925062b8a2be05d019"
+}

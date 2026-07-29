@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-BIOLOGY-OWNERSHIP-HANDOFF-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:06d98c345a5ce96f3dbb01584fc6a6b1fe551a5887e48cafea28dbe60139daa9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3e1c66f7aed300103a5d42668838d91b3411fc1882a243a1591321213a4fad56"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c301c1dda90912425441daa4369722a71087a659c701da0f955a0577de22d704"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c6377be36ebf6f18b2cc5334a72ef7ac197bf551f69b1a300df5f526ce25161b"
+    }
+  ]
+}

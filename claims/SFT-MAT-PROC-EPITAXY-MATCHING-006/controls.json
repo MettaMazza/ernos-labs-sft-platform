@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PROC-EPITAXY-MATCHING-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:5a4e260fe1761de1a85d20f8f269d7a8b0d781c4c01bf50d3d3909e4214f1f0f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:667532db4c363d8b17b725a2b74c0367c46642110fb1dffc57b24ebba468c66f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e824eefb26f17471c561b6e1b5484d09d84c62dcefdbca89c37a9d23f91db4f0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:97e24e9bcaf461ae56a26b1066da2c6a9028fb91398646bb00464728e31a3ba2"
+    }
+  ]
+}

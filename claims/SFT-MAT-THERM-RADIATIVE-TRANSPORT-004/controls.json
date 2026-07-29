@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-RADIATIVE-TRANSPORT-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:af620239c22732699642d3df34824f8074bfad2363d6427badeb46b840f8cee9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0d447374db696e41af1d1130d496f87bbb1f4528b9430f513b21b5b66e634a89"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:80d16a397c26c01a94d3b6cb2dceb9d54d53a998626ca16dbc297fb9e64f3d29"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4d212bd7caed6fffdb5f241901b16ad4f5c1697f276b7b0d2c18d123207737fb"
+    }
+  ]
+}

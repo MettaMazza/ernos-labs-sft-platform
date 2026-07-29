@@ -1,0 +1,73 @@
+{
+  "schema": "sft-v3-chemistry-org-012-target-identities/1",
+  "claim_id": "SFT-CHEM-PERICYCLIC-REACTION-FAMILY-012",
+  "obligation_id": "SFT-CHEM-OBL-ORG-012",
+  "registered_date": "2026-07-28",
+  "law_path": "sft/chemistry/pericyclic_reaction_law_v1.py",
+  "law_sha256": "sha256:62c3a99545ce9be8c19c1d9eab69b16dad23357818850ab60d4e90f8ad0dd004",
+  "family_boundary_path": "audits/CHEMISTRY_ORG_001_016_FAMILY_BOUNDARY_2026-07-27.json",
+  "family_boundary_sha256": "sha256:ccbc91e9873a84f31b50670c9a8f063ee6a6096d3dd216b5e7c3bf86521681b2",
+  "family_registry_path": "experiments/external_sources/chemistry/org_001_016_family_source_identity_registry_v1.json",
+  "family_registry_sha256": "sha256:12c6822a695eb7135081ef8d044a3136c2fee2b0d486c9164b1f1166ef087381",
+  "development_observed_authority_rows": [
+    {
+      "target_id": "SFT-CHEM-ORG-012-IUPAC-PERICYCLIC",
+      "source_id": "IUPAC-P04491",
+      "authority": "International Union of Pure and Applied Chemistry Gold Book",
+      "registered_identity": "pericyclic reaction complete current term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-p04491.json",
+      "snapshot_sha256": "sha256:cb5be92166e5a42b37710bccdc101f56e15c96e9925b02b9dec71af43892c968",
+      "custody_class": "development_observed_complete_authority_record"
+    },
+    {
+      "target_id": "SFT-CHEM-ORG-012-IUPAC-CYCLOADDITION",
+      "source_id": "IUPAC-C01496",
+      "authority": "International Union of Pure and Applied Chemistry Gold Book",
+      "registered_identity": "cycloaddition complete current term record",
+      "snapshot_path": "experiments/external_sources/chemistry/snapshots/org-001-016-family-v1/iupac-c01496.json",
+      "snapshot_sha256": "sha256:d74d74ee41c355e2d1776788094a7d4ad725229fb56e1d76a787a8bdeaa19535",
+      "custody_class": "development_observed_complete_authority_record"
+    }
+  ],
+  "development_observed_primary_article_identity": {
+    "target_id": "SFT-CHEM-ORG-012-DIELS-ALDER-ARTICLE",
+    "source_id": "PMC8162770-ARTICLE",
+    "authority": "PubMed Central and Chemical Science",
+    "registered_identity": "The simplest Diels-Alder reactions are not endo-selective",
+    "doi": "10.1039/D0SC04553E",
+    "pmcid": "PMC8162770",
+    "pmid": "34123213",
+    "license": "CC BY",
+    "custody_class": "development_observed_title_abstract_and_general_article_conclusion_exact_payload_unopened",
+    "disclosures_before_payload_seal": [
+      "the title, abstract-level orientation and article-level conclusion were observed during source selection and are never described as blind",
+      "the general article conclusion reports that the simplest Diels-Alder reactions do not have one universal endo preference",
+      "the exact full-text XML, tables, supporting files, row order, individual product ratios, conditions, adverse rows and absent fields remained unopened"
+    ]
+  },
+  "outcome_unopened_release": {
+    "target_id": "SFT-CHEM-ORG-012-DIELS-ALDER-COMPLETE-OA-PACKAGE",
+    "source_id": "NCBI-OA-PACKAGE-PMC8162770",
+    "authority": "National Center for Biotechnology Information PubMed Central Open Access",
+    "registered_identity": "complete PMC8162770 open-access package",
+    "uri": "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c9/18/PMC8162770.tar.gz",
+    "oa_record_uri": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8162770",
+    "custody_class": "outcome_payload_unopened_before_org_012_claim_specific_seal",
+    "archive_downloaded_before_seal": false,
+    "archive_members_opened_before_seal": false,
+    "exact_article_rows_opened_before_seal": false,
+    "exact_supplementary_rows_opened_before_seal": false
+  },
+  "postseal_complete_row_rule": {
+    "archive_completeness": "Retain the complete official open-access archive and hash every member in archive order; retain the full article XML and every associated-data member without favorable-result filtering.",
+    "article_rows": "Retain every reported Diels-Alder reaction row, every reactant/product identity, every endo/exo or other product class, every amount or ratio, every condition, every adverse statement, every structural absence and every unresolved field in source order.",
+    "supplementary_rows": "If associated supporting information exists, retain every page and every experimental, product, control, adverse, absent and unresolved row. If no supplement exists, preserve that absence explicitly.",
+    "comparison": "Test whether the complete primary record preserves both generated relative-orientation classes and whether a target-independent universal preferred class is contradicted by the complete observed row vector. No numerical ratio or conventional label enters native forcing.",
+    "omission_control": "Removing any archive member, article row, reported product class, amount, condition, adverse row, absence or unresolved row must halt the comparison.",
+    "observation_order": "The exact Fold law, complete source identities, row-preservation rule and value-free structural prediction seal before the official archive is captured or opened."
+  },
+  "sealed_native_prediction": "The two Fold fibres generate four complete joint face assignments, which form exactly two relative-orientation classes under global complement. Both classes remain lawful; the native law does not force one target-independent universally preferred observed product class.",
+  "native_arithmetic_boundary": "No conventional numerical zero, signed value, decimal, irrational, imaginary, continuum quantity, yield, ratio, temperature, energy, time or measured product label enters native forcing; structural absence is EmptyOne.",
+  "external_target_content_used_by_candidate_generator_or_eliminator": false,
+  "official_oa_archive_open_count_before_seal": 0
+}

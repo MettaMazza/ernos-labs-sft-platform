@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-COMMON-LOCK-IDENTITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3ba4627dceb0e3d0e7fcefedbf9c19e3aaae1930b5de6fbe58b6185958acfc50"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a709270a51d9379d41e83f28088a57cd429d8eba008782f5d6a3850f02be9125"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:350b6fa3cb5133d32c3259705cd07e3ff326332f07e4f5847bad948b1ea146ff"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bb5d7fa87eb7d2963549a8f8b7b96b7dd0daa09e55c6e99c2b67e9ee77b614ae"
+    }
+  ]
+}

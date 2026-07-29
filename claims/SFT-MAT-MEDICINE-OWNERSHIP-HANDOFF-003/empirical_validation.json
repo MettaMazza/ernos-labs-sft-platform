@@ -1,0 +1,68 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-MEDICINE-OWNERSHIP-HANDOFF-003",
+  "data_source_ids": [
+    "NIST-CONTROLLED-PROTEIN-RELEASE",
+    "MED-ICH-E6R3-001",
+    "MED-ICH-E9R1-001",
+    "MED-FDA-EXPOSURE-RESPONSE-001",
+    "MED-FDA-BIOMARKER-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:14410c3c54f528a1988e7cee1048a14250e4b0d242cbbf5b622b72348198d316",
+  "falsification_condition": "Reject if any registered owner, paired receipt, external record, registration, dependency edge, root trace, control or extension boundary is missing, duplicated, changed or opened before the value-free owner registry.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d7e1a7580de997de1723ea83338dec9a8614f316203fb0b8d863a783ec796783",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:9cd2510256fc5e688eb3748f50740052ef29210d0f560fba9ff1b4b839520675",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-HAND-003-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:57e294005393dfa5aa0742f47d42d30cd24077d678ce39dae16484771edb1a2b",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2556abfa71f9bcc7dd9157f342c25e730b52cf295dc61a72d2ccaf563b53c309",
+    "prediction_seal_hash": "sha256:b87e146a57ead3e4125475c831fd3190130a3cc3ccaf3fc00208d91090004f2b",
+    "program_hash": "sha256:0ef37606a8ef0aa4ad394f3754058757cccbc1f2a936241e5d2d69bae95eabd1",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:47635d760f232a3007617bac961cdf89e98a4f5afb77385b23ddca9ade0b4507",
+    "target_material_present": false,
+    "trace_hash": "sha256:7d7721348d893c4f7945e2118705ec2e589c57c8381c7c8d763cd7f4511b1fcd"
+  },
+  "measurement_receipt_hash": "sha256:3d251f537b4470226490c9f0797b34e2c42fafa02b1e0a4a485f3fc27d9257fb",
+  "measurements": [
+    "HAND-003: value-free owner registry preceded outcome access",
+    "frozen graph: 1681 claims, 28437 dependency edges, 19852 cross-branch uses",
+    "paired external surface: 15 records, 28 source identities, 54 evidence lines",
+    "all selected evidence rows preserved; omission control rejected True",
+    "materials owns SFT-MAT-BIO-CONTROLLED-RELEASE-006; sources=1; evidence-lines=4; receipt=sha256:10c4443b381f4482ad2889e538708109711794e1c8c8aac77d6c7d66dac4d3a1",
+    "medicine owns SFT-MED-INTERVENTION-001; sources=2; evidence-lines=4; receipt=sha256:ef389261cfe2919237eefe5a95ed42263554fa6271eb87e13685b1d43ed1ddcc",
+    "medicine owns SFT-MED-DOSE-001; sources=3; evidence-lines=4; receipt=sha256:ac1d83eb8670e428a755b801006e386ef850299d00310595b34b68fdbbac76a5",
+    "medicine owns SFT-MED-RESPONSE-001; sources=3; evidence-lines=4; receipt=sha256:3a051896a773bd06407d83654f7e55a5f64aca695299eace57d1e33edef69367"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:eaa49b49747cb516f7fbfd5c9aa62bae88ca350f3e94445c16bf8f41809572b3",
+    "custodian_id": "SFT-EXP-MAT-HAND-003-V1-custodian",
+    "experiment_registration_hash": "sha256:14410c3c54f528a1988e7cee1048a14250e4b0d242cbbf5b622b72348198d316",
+    "prediction_seal_hash": "sha256:b87e146a57ead3e4125475c831fd3190130a3cc3ccaf3fc00208d91090004f2b",
+    "registered_target_identity_hash": "sha256:47635d760f232a3007617bac961cdf89e98a4f5afb77385b23ddca9ade0b4507",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f6f3cf13741d31b552d0b7242711c8910161aac6ae00c5e258224b57ce8f5da8"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:a91e40fb59aacadf1240deab590ffc1c890e028a503e7ddc357294555405e79e"
+}

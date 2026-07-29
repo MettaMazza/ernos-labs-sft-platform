@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ASTRONOMY-OWNERSHIP-HANDOFF-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:06d52d36fc30486c94ec32ba3ffa717fafd92152fe00b60fa90aba7861b52088"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:84701a02192e27ef13622ef3b79655d0856143e8c643728322af749c7cc28581"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:446c4ae09cfc9bdec657ae5f96821b856cb2ffd9ebcfaa410cb743e21bc2b595"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c80ac44b0c2de05c9a719137e419a67a583cecb2e485e7abfdc514966a1bfdb2"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-FATIGUE-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6b13895bc616793f4949312fc2162c3e6d304464a85ca35b949d9db299396412"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3e9855995e9571c85d93ddfb2f218bfbaee26476997c29c1375f93575a9272fa"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:1644a823680abcbf909e3ddab58a95426cc9e5e31e513797c5dc5008f13f46ad"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9cde2e06c4991ca55cd393290635869e29c7a0b88f9e7772825c563bac62c662"
+    }
+  ]
+}

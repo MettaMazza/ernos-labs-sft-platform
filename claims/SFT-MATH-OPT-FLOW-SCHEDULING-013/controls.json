@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-OPT-FLOW-SCHEDULING-013",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Selected candidates may hide alternatives.",
+      "passed": true,
+      "receipt_hash": "sha256:c69067e8bfd5ed973e27f72c5e323e7b6bce828dfe3bd12bd6555dd8b3e83204"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, fitted objective, imported optimizer answer or target outcome selects the result; host 0 denotes structural absence or counts artifacts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no opaque solver, sampled feasible subset or unregistered tie breaker; no unrestricted continuum optimum without a separate exact successor or enclosure certificate; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:feb4fcd372db4a17bbfa1bbea00b328972afcd1566f322dd3b0a719595270068"
+    }
+  ]
+}

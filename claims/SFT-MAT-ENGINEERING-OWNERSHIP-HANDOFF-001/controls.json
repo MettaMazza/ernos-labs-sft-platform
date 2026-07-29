@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ENGINEERING-OWNERSHIP-HANDOFF-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4535746b87e78e3d078dbedf5571acf2ada785749a29ce0c4d8c3b9926e9b62e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:0b9e6a0ddb59bdab81cbec36009e73090bbd250eea7fbee6c0ed370fd5c9e73c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e4007293a8e8d22e5fd76a1e1931a94f18fabf523cc284ac24b984af4dafcfbc"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f80ac37e9ff4bd752c57316926a11d9c6a37b3c0f24aef84596538ecd8b5f836"
+    }
+  ]
+}

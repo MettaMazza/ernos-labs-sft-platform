@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:92e4a28005adf76c0027d3390bd26ffcd7d0313b4b81f302a70a8caf91c7c02e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ef8898b52d217569f7e8fce94e44f7c0294a44ff17f30b5eefbdac7362b9dc1e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:22be9ebfaa8cf4bce9d4a3f704627e1d0cdc24d225395fb3e91bfc598601e5f6"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:a9fa84461228fb20f30ca99411172e8ae7d20456b1e964bfe615bf0e03840c8d"
+    }
+  ]
+}

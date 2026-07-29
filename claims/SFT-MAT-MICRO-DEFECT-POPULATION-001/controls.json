@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-DEFECT-POPULATION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:cfdd8f6013644e8ebf2ea90936b858174e893d6b310b7f9a9f984bce235eaa96"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:13ce7abb61091067a8009237013a01ffe84e79e976f9cf5a20a0fdc3e9500f35"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b43f314f7b2129f309cd807faaac683bcf015f601d70e8455ff31db8be4d22d1"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:c195763952dfc9f6254d66a80e311ba84917077deb6308ffbb25577d9b5c942a"
+    }
+  ]
+}

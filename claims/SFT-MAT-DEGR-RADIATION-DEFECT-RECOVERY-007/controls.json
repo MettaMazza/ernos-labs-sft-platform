@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-RADIATION-DEFECT-RECOVERY-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d88f426f8d93e942cd157c494fe644295ffe0323caf878ec938c28ea9f29cd67"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:108ff5b3b201da767bf505c36f4b9aa99b7538fdd051ed9c2d152b1e7fe70c5b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c8e5732700a17ba713fe92773365f9b351e5b265ab0b6ff912aee13f5fc1a18e"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8c497b8f266f393aecb62dd3ddacce562b0cf391d78087031b6fe9f21266374c"
+    }
+  ]
+}

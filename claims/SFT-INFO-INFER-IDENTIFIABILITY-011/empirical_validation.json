@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-INFER-IDENTIFIABILITY-011",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-INFERENCE-OBSERVER",
+    "SFT-V1-V2-INFERENCE-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ca2c16be977e139cbc9308a5a21f6c9c389204ff893b6200210f97024b0ea5f5",
+  "falsification_condition": "Reject if the value-free registry, complete inference census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5848328775db2757e6306470ae6bc92d4376d407da0a50d9ee19a8b6619de45f",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:002e78aeaff1c93f08c6cebf58b15b19f423f7d6f14bbb286282b3342402bd99",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-INFER-011-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:4fcefd3199d00fb891047c9b9686b5ec872bbbce9464ca1b9e6102152ab4e647",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2e4f4b5bc7949773688a4d89282f2e4bd05e7053ed00e2ceb4acfa9260391471",
+    "prediction_seal_hash": "sha256:2a228e5fc44f219f54e1e98ec13b32e6309c1e746e101af65197bc91cf87ca6a",
+    "program_hash": "sha256:d88d9e2c1aba9290eee00cad7c42f95afd5c565feb5c9309ca3ace2b15220728",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:692278641e03daeb3ef3d6942419843d5d9d1d466b729dd99036983d9d6a06ac",
+    "target_material_present": false,
+    "trace_hash": "sha256:164abab38bc13a7527fab24796ed85f0174851d0c280df8b9a80d9a6ff71ae45"
+  },
+  "measurement_receipt_hash": "sha256:fd60738c8af3dfacbd971b06d784cb6f4f9e0ecd0c6e6b3c3f623e7e5e6a9ecb",
+  "measurements": [
+    "INFER-011: identifiability",
+    "exact observation: {\"equivalent_hypotheses_before\":2,\"identifiable_after\":1}",
+    "complete family observation custody: 14 records; all rows preserved",
+    "complete finite hypothesis, evidence, support, decision, error-class, stopping and sensor-record enumeration supplies the observation; no imported prior, fitted likelihood, chosen threshold or hidden hypothesis enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:f45d75c142bf4835da340a71fed97619be09697a8bea501f4e41a83abe63b752",
+    "custodian_id": "SFT-EXP-INFO-INFER-011-V1-custodian",
+    "experiment_registration_hash": "sha256:ca2c16be977e139cbc9308a5a21f6c9c389204ff893b6200210f97024b0ea5f5",
+    "prediction_seal_hash": "sha256:2a228e5fc44f219f54e1e98ec13b32e6309c1e746e101af65197bc91cf87ca6a",
+    "registered_target_identity_hash": "sha256:692278641e03daeb3ef3d6942419843d5d9d1d466b729dd99036983d9d6a06ac",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:20830253871113cca53017411bb46c70ee04cf665e3426d98b26d695732848da"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:453c7f6946dbbe2fc6d0b19a50b59f72dbc8474fe1bf57392e55baf977076263"
+}

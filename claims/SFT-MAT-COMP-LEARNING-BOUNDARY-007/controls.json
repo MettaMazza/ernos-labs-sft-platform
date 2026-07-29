@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-COMP-LEARNING-BOUNDARY-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e7d73777eb3153e298b3c4766cfcebc137e5862f62072105f163077d6087792f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:12e1233c5c4780a701916c5f46aad346be863a52790c059ba7c233380274c7ad"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:95a2f0936e0d7755d88b9483bce966a277833fdaddf8634f6e534b27434a0306"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7559e78eca0a90e95cbbdfb7b56680dc5d2176ffd402f9bf1d6b9dd2a07b736f"
+    }
+  ]
+}

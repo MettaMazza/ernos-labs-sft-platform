@@ -1,0 +1,289 @@
+Certain commercial entities, equipment, or materials may be identified in this document in order to describe an 
+experimental procedure or concept adequately. Such identification  is not intended to imply recommendation or 
+endorsement by the National Institute of Standards and Technology, nor is it intended to imply that the entities, 
+materials, or equipment are necessarily the best available for the purpose. 
+THERMAL PROPERTY MEASUREMENT METHODS AND ANALYSIS FOR ADDITIVE 
+MANUFACTURING SOLIDS AND POWDERS 
+J. Whiting 1, B. Lane 1, K. Chou 2, B. Cheng 2
+1Engineering Laboratory, National Institute of Standards and Technology 
+Gaithersburg, MD 20899 
+2Department of Industrial Engineering, University of Louisville 
+Louisville, KY 40292  
+Abstract 
+Thermal properties of additive manufacturing (AM) solids and precursor materials are im portant 
+factors for build process and part performance.  However, measured thermal properties are not 
+well documented, despite being used extensively in AM modeling and simulation.  The National 
+Institute of Standards and Technology (NIST) and the University of Louisville are developing the 
+measurement science for AM material thermal properties.  New measurement methods, sample 
+preparation techniques, and results  are demonstrated for laser flash (LF) thermal diffusivity 
+measurements on metal AM solids and powders.  Due to the complexity of these materials, new 
+sample fabrication methods are developed and demonstrated.  Results from LF measurements are 
+presented and compared.   
+Keywords: laser powder bed fusion; thermal properties; thermal diffusivity; thermal conductivity 
+1 Introduction 
+As additive manufacturing (AM) gains popularity and becomes widely used , so does the demand 
+for accurate and reliable AM processes.  Of the many factors that play a role in the quality of AM 
+parts, the thermal properties of the material arguably play one of the most important roles.  These 
+properties dictate the rate of solidification, amongst other things, which in turn controls the phase 
+composition and therefore the mechanical properties.  While there is, for the most part, sufficient 
+published empirical data on the thermal properties of the common materials used in AM, there is 
+very little in regards to the thermal properties of these materials in a powder form and even less in 
+terms of sintered or melted states.  There is a need for accurate AM thermal property data.   
+The laser flash technique, developed and first used by Parker et al. in 1961  [1], allows the direct 
+measurement of thermal diffusivity, 𝛼.  The technique consists of a pulsed thermal energy source 
+(i.e., laser or flashlamp)  which heats one side of the sample being analyz ed.  The heat conducts 
+through the specimen and is detected by a pyrometer on the opposite side.  This signal vs. time 
+Solid Freeform Fabrication 2017: Proceedings of the 28th Annual International 
+29
+Solid Freeform Fabrication Symposium – An Additive Manufacturing Conference
+
+result is called a thermogram.  Based on a solution to the Fourier heat equation assuming semi -
+infinite boundary conditions , t he thermogr am of this heat is used along with the specimen’s 
+thickness to obtain the thermal diffusivity of t he material. This relationship, derived by Parker in 
+[1], is 
+𝛼 = 1.37𝐿2
+π2𝑡1
+2
+, (1) 
+where  𝐿 is the sample thickness and t1/2 is the time from the laser pulse to half-maximum of the 
+thermogram.  Note that derivation of diffusivity from Equation 1 depends on the relative amplitude 
+of the thermogram to determine t1/2, and not absolute temperature.  A schematic of the process is 
+shown in Figure 1.  For this relationship to hold true, there are several assumptions that need to be 
+made.  The derivation of Parker’s diffusivity calculation assumes the heat to be instantaneously 
+and uniformly absorbed by a thin portion of the sample, the sample to be homogeneous and 
+isotropic, and the heat transfer in the radial direction to be negligible.  Testing thermally conductive 
+materials at optimal thicknesses will allow the original Parker solution to be used with minimal 
+error assuming the conditions of the test are similar to the assumptions made, but this is often not 
+the case.  Since Parker’s work was published there have been quite a few pieces of work aimed to 
+improve on the originally proposed solution by accounting for these assumptions.  The heat losses 
+are considered in [2] and [3], while the finite heat p ulse is accounted for in [2, 3 -5], and the lack 
+of uniform of heating in [2,3, 6].  Some of these can be avoided with appropriate experi mental 
+apparatus and conditions , including the use of a high -quality fiber l aser to avoid nonuniform 
+heating and integration of the measured temperature over the sample’s surface.  
+Figure 1: Schematic of the laser flash technique 
+The work detailed here focuses on measuring the thermal properties of solid and powder AM 
+materials.  While the powders evaluated here are comprised of particles with a distribution of sizes 
+optimal for laser powder bed fusion (LPBF), there is no reason these methods could not be applied 
+to powders optimized for other AM processes.  
+(s)Time (s)
+30
+
+ 
+ 
+2 Experimental Procedure 
+The wor k shown here uses a commercially availab le laser flash system that features  an 
+environment module capable of heating samples to 1600 °C, a six-sample carousel that holds 12.5 
+mm cylindrical samples, an Nd:glass laser, and a InSb pyrometer (shown in Figure 2).  The 
+manufacturer claims the device provides thermal diffusivity measurements accurate to ± 2.3 % 
+with a repeatability of ± 2 %.  Prior to testing, each sample is coated with a thin layer of graphite 
+as described in ISO 22007-4:2017 [7] to optimize laser energy absorption on the top surface, and 
+emission towards the pyrometer on the bottom surface .  Each test consists of a series of ‘test 
+segments’ in which the samples are raised to specific setpoint temperatures within the environment 
+chamber.  During each segment the samples undergo three ‘shots’ with ample time in between for 
+the sample to cool to the current segment setpoint temperature.   
+  
+Figure 2:  Schematic of the laser flash system 
+2.1 Solid AM and Wrought  
+Solid AM samples were built in a commercial laser powder bed fusion system  using nickel alloy 
+625 and 17 -4 stainless steel  powder using the original equipment manufacturer’s  suggested 
+settings.  In order to ensure geometric accuracy, the samples were taken from a 25 mm tall cylinder 
+with a 12.5  mm diameter using an electric al discharge machining (EDM) operation.  Wrought 
+nickel alloy 625 and 17-4 stainless steel were procured in 12.5 mm rods and were machined using 
+EDM in a similar fashion.  The nickel alloy was heat treated at 1010 °C for an unspecified duration 
+then water cooled and the 17-4 stainless steel was heat treated at ≈ 482 °C for 1 hr then air cooled.  
+Both groups (AM and wrought) were sliced into similar thicknesses (≈ 1.6 mm).   
+2.2 AM Powder Capsules 
+The laser flash technique requires two sides of the sample to be accessible, and, as is the case for 
+the system used at the Natio nal Institute of Standards and Technology ( NIST), the cylindrical 
+31
+
+ 
+ 
+sample’s flat surfaces are horizontally oriented.  This prevents loose powder from being tested 
+without some sort of container. 
+In order to imitate the conditions in which the powder is used, additively manufactured capsules 
+were fabricated with loose powder trapped inside.  This allows a volume of powder to be extracted 
+that has the same density as in the LPBF machine and for the powder sample to be taken with the 
+environmental gas used in the process (nitrogen in this case).  The thermal conductivity of the gas 
+has been shown to have a significant impact on the effective conductivity in [8 ].  The as-built 
+configuration is shown in Figure 3.  The samples are built in groups of five and subsequently 
+machined to size and removed from the others with an EDM operation.  The powder was removed 
+from one sample by means of a small ( ≈ 0.5 mm) hole to differentiate the powder’s contribution 
+to the thermogram’s shape and calculated diffusivity from the solid capsule shell.  While there will 
+be a portion of overhanging solid geom etry in the samples, they are oriented so that this region’s 
+size is minimized and in a location in which it should not significantly alter the heat transfer.    
+ 
+Figure 3: Cross-sectional view of model of five-sample group 
+ 
+2.3 Copper and Yttria Stabilized Zirconia 
+A powder container was fabricated using a top and bottom with high thermal conductivities, and 
+a thermally insulating surrounding tube to ensure a substantial portion of the laser’s thermal energy 
+passes through the powder.  Figure 4 shows a cross section of the powder capsule design  and the 
+actual assembled capsule can be seen in Figure 5.  Copper was chosen for the top and bottom, and 
+yttria stabilized zirconia (YSZ or Zr) for the tube.  The powder and holder materials wil l be 
+subjected to temperatures up to  400 °C and will m ove with respect to one another due to th eir 
+different thermal expansion coefficients.  Therefore the lid is fabricated with a  diameter slightly 
+less than that of the tube ’s inner diameter so that it can move freely in the vertical direction to 
+ensure it remains in contact with the powder throughout the test.  The bottom is p ress-fit into the 
+ceramic tube, then powder is poured in and the excess is scraped away with a razor blade and the 
+lid is gently placed on the powder.   
+32
+
+ 
+ 
+ 
+  
+Figure 4: Cross-sectional view of computer-
+aided design model of Copper and YSZ powder 
+container 
+Figure 5: Powder filled copper and YSZ 
+powder capsule 
+ 
+3 Results and Discussion 
+All thermal diffusivities reported are calculated using the Parker model  and each of the reported 
+values for diffusivity is an average of three ‘shots’ of the laser flash system.  As previously 
+mentioned there are some assumptions made in Parker’s derivation that may not be appropriate, 
+therefore the resu lts reported here should serve as comparisons to one another and are not 
+necessarily absolute values.  This is especially true for the more complex powder capsules.  Finite 
+element modeling will help extract the effective thermal properties of the powder f rom the 
+aggregate (i.e., what is empirically measured).  If error bars are present, they are the range of values 
+over the three ‘shots’.     
+3.1 Solid AM and Wrought 
+Results from the laser flash testing of nickel alloy 625 and 17-4 stainless steel are shown in Figure 
+6.  The calculated thermal diffusivity of the wrought nickel alloy  625 samples and the AM 
+counterparts are very similar with a maximum percent difference of 1.5 % at 600 °C.  Conversely, 
+the wrought and AM stainless steel specimens are quite different from one another.  The wrought 
+samples show a nonlinear trend especially at temperatures over 200 °C while the AM samples are 
+linear.  The wrought 17-4 stainless steel purchased was H900 conditioned.  Since the laser flash 
+system holds all the samples at elevated temperatures that are near this H900 heat treatment (i.e., 
+483 °C ) for often over several hours, this material is likely undergoing phase transformations that 
+are altering the thermal properties of the wrought material.  As shown in [9], the nitrogen gas used 
+during the atomization process of this 17-4 stainless steel powder seems to play a role in retaining 
+the austenitic phase during heat treatment.  This may explain the discrepancy between the two 
+materials’ measured thermal diffusivities.  
+33
+
+ 
+ 
+ 
+Figure 6: Thermal diffusivities of solid AM and wrought 17-4 stainless steel and nickel alloy 
+625.  Diffusivity is calculated using the Parker model. 
+3.2 AM Powder Capsules 
+The results from the laser flash testing of both full and empty 17 -4 stainless steel AM powder 
+capsules are shown in Figure 7.  Each sample was tested at 100 °C intervals f rom 100 °C to 400 
+°C, and again at 100 °C to test for the presence of hysteresis.  This entire process was repeated 
+upon the first test’s completion.  While the thermal diffusivities of the hollow sample are repeatable 
+and linear with respect to temperature, the powder filled specimens showed substantial deviation 
+from one another, were not linear with temperature, and showed hysteresis in regards to the 
+measured thermal diffusivities.  This indicates some sort of change in the powder likely either due 
+to a density change in the powder caused by settling or a phase transformation as seen in the solid 
+wrought materials.  The entire test process was conducted a total of three times with only the initial 
+results showing the presence of hysteresis.  Additionally, the large range in the diffusivity of the 
+shots seen in Test  #1 Capsule #1’s first segment (conducted at 100 °C) are not seen elsewhere 
+indicating the sample was changing in between shots.  The results from the second test are shown 
+in Figure 8, and show that whatever was causing the variability is not a fact or after the initial test 
+segment.  The x-ray computed tomography image in Figure 9 shows settling near the top corners 
+of the powder container which may be the cause of the deviation.  The powder undergoes thermal 
+expansion and contraction during testing which causes the powder to settle.  Also, the thickness of 
+the side walls of the sample is  also variable ranging from ≈ .861 mm to ≈ .342 mm.  This is 
+attributed to a combination of errors incurred during the EDM operation and the portion of the 
+sample that is built as an ov er-hanging structure.  Since the temperature of the bottom surface is 
+integrated by the pyrometer, this will likely not significantly alter the measurement, but more work 
+is needed to confirm this. 
+(°C) Temperature (°C) 
+34
+
+ 
+ 
+  
+Figure 7: Thermal diffusivities of powder-filled AM capsules compared to the emptied, hollow 
+capsule 
+  
+Figure 8: Repeat of test conducted in Figure 7 comparing powder-filled AM capsules to the 
+emptied, hollow capsule. 
+Last shots conducted at 100 °C to 
+evaluate hysteresis  
+17-4 AM Capsule #1 Test #1 
+17-4 AM Capsule #2 Test #1 
+17-4 AM Empty Capsule Test #1 
+Last shots conducted at 100  °C to 
+evaluate hysteresis  
+17-4 AM Capsule #1 Test #2 
+17-4 AM Capsule #2 Test #2 
+17-4 AM Empty Capsule Test #2 
+Temperature (°C) 
+(°C) Temperature (°C) 
+35
+
+ 
+ 
+ 
+Figure 9: XCT image of 17-4 stainless steel AM capsule showing asymmetry and powder 
+settling 
+3.3 Copper and Yttria Stabilized Zirconia 
+Calculated thermal diffusivities from the Cu and YSZ sample holders are shown in Figure 10.  The 
+hysteresis previously seen in the AM capsul es is not present indicating the copper lid is 
+maintaining contact with the powder throughout the tests .  While this apparatus seems to be the 
+most promising given the aforementioned constraints, more work needs to be done to extract the 
+powder’s effective thermal properties before they can be evaluated.  This will involve comparison 
+with theoretical powder bed heat transfer as well as finite element method modeling.              
+ 
+Figure 10: Thermal diffusivities of 17-4 stainless steel powder filled Cu-Zr capsules.  Parker 
+model is used to extract diffusivity values from thermograms. 
+Cu-YSZ Capsule, 17-4 powder, #1 
+Cu-YSZ Capsule, 17-4 powder, #2 
+Cu-YSZ Capsule, 17-4 powder, #3 
+(°C) Temperature (°C) 
+36
+
+ 
+ 
+4 Conclusions 
+The thermal diffusivities of LPBF solid nickel alloy 625 and 17-4 stainless steel have been tested 
+using the laser flash technique.  While the AM nickel alloy specimens proved to have very similar 
+thermal diffusivities (within 1.5 % of their wrought counterparts ), the stainless steel specim ens 
+showed a nonlinear relationship between temperature and thermal properties  compared to the 
+linear nature of the AM samples  which is likely due to phase transformation .  To evaluate the 
+thermal properties of precursor AM materials, work has been done to design and fabricate various 
+sample holders.  While the additively manufactured powder capsules allow the powder to be 
+captured in a state similar to its use in the LPBF process, several drawbacks were identified 
+including inconsistent contact between powder and solid phase and the observed asymmetry of the 
+capsules.  A copper and yttria stabilized zirconia holder was employed and has shown to provide 
+repeatable results.  Comparisons to modeling and theoretical thermal properties will be conducted 
+in the future.   
+Acknowledgments 
+The authors would like to thank Felix Kim, NIST, for providing the x-ray computed tomography 
+imaging and his expertise.  
+  
+37
+
+ 
+ 
+References 
+[1] Parker, W. J., R. J. Jenkins, C. P. Butler, and G. L. Abbott. “Flash Method of Determining 
+Thermal Diffusivity, Heat Capacity, and Thermal Conductivity.” Journal of Applied Physics  
+32, no. 9 (September 1, 1961): 1679–84. doi:10.1063/1.1728417. 
+[2] Watt, D. A. “Theory of Thermal Diffusivity by Pulse Technique.” British Journal of Applied 
+Physics 17, no. 2 (1966): 231. 
+[3] Clark III, L. M., and R. E. Taylor. “Radiation Loss in the Flash Method for Thermal 
+Diffusivity.” Journal of Applied Physics  46, no. 2 (February 1 975): 714 –19. 
+doi:10.1063/1.321635. 
+[4] Cape, J. A., and G. W. Lehman. “Temperature and Finite Pulse ‐Time Effects in the Flash 
+Method for Measuring Thermal Diffusivity.” Journal of Applied Physics 34, no. 7 (July 1963): 
+1909–13. doi:10.1063/1.1729711. 
+[5] Larson, KB, and Karl Koyama. “Correction for Finite ‐Pulse‐Time Effects in Very Thin 
+Samples Using the Flash Method of Measuring Thermal Diffusivity.” Journal of Applied 
+Physics 38, no. 2 (1967): 465–74. 
+[6] Baba, T., M. Kobayashi, A. Ono, J.H. Hong, and M.M. Suliyanti. “Experimental Investigation 
+of the Nonuniform Heating Effect in Laser Flash Thermal Diffusivity Measurements.” 
+Thermochimica Acta 218 (May 1993): 329–39. doi:10.1016/0040-6031(93)80433-B. 
+[7] ISO 22007 -4: Plastics -- Determination of thermal conductivity and thermal diffusivity -- 
+Part 4: Laser Flash Method, 2017-06, International Organization for Standardization, Geneva, 
+Switzerland.  
+[8] Deissler, RG, and CS Eian. “Investigation of Effective Ther mal Conductivities of Powders.” 
+Lewis Flight Propulsion Lab., NACA, 1952. 
+[9] Cheruvathur, Sudha, Eric A. Lass, and Carelyn E. Campbell. “Additive Manufacturing of 17 -
+4 PH Stainless Steel: Post -Processing Heat Treatment to Achieve Uniform Reproducible 
+Microstructure.” JOM 68, no. 3 (March 2016): 930–42. doi:10.1007/s11837-015-1754-4. 
+ 
+38

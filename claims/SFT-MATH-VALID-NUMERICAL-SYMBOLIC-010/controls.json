@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-VALID-NUMERICAL-SYMBOLIC-010",
+  "controls": [
+    {
+      "expected_behavior": "reject a generated form missing the first required structural condition",
+      "kind": "false_premise",
+      "observed_behavior": "Partial or duplicate coverage is invalid.",
+      "passed": true,
+      "receipt_hash": "sha256:e4de90169ac31fdf3ed33678fc113e33c8916586ee77b2b9432417ba5af6b856"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the registered source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:a549a1da4d8bc6d4bc9fb65e0d475f2e3bc196a80c402742f80f637f51eb4e26"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicated or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the generated product contains exactly one registered survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b79ac01f095bf293f4d7a736893d30f1c51e9c6a1c5d98b04f5a8cda8f071219"
+    },
+    {
+      "expected_behavior": "halt any attempt to import an excluded object or answer-producing model",
+      "kind": "boundary",
+      "observed_behavior": "no axiom, imported validation conclusion or target outcome selects the result; host 0 denotes structural absence or counts artifacts only and is not an SFT number object; no negative, irrational, imaginary or floating proof scalar; no favorable, adverse, absent, unresolved, boundary or source row may be omitted; no receipt, family or ownership identity may be duplicated to increase coverage; no failed route retires an obligation or changes protected authority",
+      "passed": true,
+      "receipt_hash": "sha256:8e6b88a0f9883c42de252c106da3b929914a9cbb440c758022c73d1db2ef44cf"
+    }
+  ]
+}

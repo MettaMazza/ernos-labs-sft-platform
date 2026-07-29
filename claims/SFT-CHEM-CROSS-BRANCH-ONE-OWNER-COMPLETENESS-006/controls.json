@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-CROSS-BRANCH-ONE-OWNER-COMPLETENESS-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8e2a512f3aaa9b3b3ad6573330fa92578c4643f22a53128e51a25184eb8e3937"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:adf3e2e55f835f60b3926e42826818ac3404bbc6ee13c614e135e57f10df82ac"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:85096c41ea7f9d678097dfaa5a4bc9f52f75a167c428017517e0913a69b06ff4"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9ba3b7e525195342aa90c9fa6274fc24e28f6c501e82608aba2681ce4870509b"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-THERM-DIFFUSIVITY-001",
+  "data_source_ids": [
+    "NIST-MATERIALS-DATA-GUIDE",
+    "NIST-THERMAL-DIFFUSIVITY-AM"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:46319ebc389693047b94581ccbff5a79a1ea6f6359d9cd5e8d69c57dd16c9033",
+  "falsification_condition": "Reject if any registered source, fragment, condition, path, seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:70a163a49ec8572be7f69fc44f1b59f7b4dc25748c541faf7fdb7ae5ac558d00",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:fa284390b6184dcdc1d354746ef832d5580b4eea4e9207b93cc54dca40642ac9",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-THERM-001-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:dbdd8c28db3422d90f8664b22acf88215edf354faa9cb0d74b811feede01ddf6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:f639e98440e0d6fc5b5d690ac05d4c9a42636e288596874e65242cc357c3bb84",
+    "prediction_seal_hash": "sha256:776544a39ec444922ebdf2333fa9dd668a277ab206235449ea7aeafc5683ae89",
+    "program_hash": "sha256:ecf0414de27cd2d2353a947ccd66f46278aa57a665a6d5981470c7524fdb28a3",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:002b89c5574dceaf533a8403c8c822da605eed33de398a0d68cb9a8d0627fbe3",
+    "target_material_present": false,
+    "trace_hash": "sha256:1b4d72422b29c6b418258eab5dc40ba23515fe7fd8ddf5bbab27e9d9f95baecc"
+  },
+  "measurement_receipt_hash": "sha256:63c3ca600535618d446b3c604e37a79e18b070f7d0b357da3c7c485ef92d4e1f",
+  "measurements": [
+    "THERM-001: 2 comparisons",
+    "family sources: 12",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-MATERIALS-DATA-GUIDE: K=pCpD; thermal conductivity and thermal diffusivity should be correlated",
+    "NIST-THERMAL-DIFFUSIVITY-AM: thermal diffusivity; thermal conductivity"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:bb408de6ebe86a7a647e782e366cea99ed61cc557a364e35dc4ddd86ee638098",
+    "custodian_id": "SFT-EXP-MAT-THERM-001-V1-custodian",
+    "experiment_registration_hash": "sha256:46319ebc389693047b94581ccbff5a79a1ea6f6359d9cd5e8d69c57dd16c9033",
+    "prediction_seal_hash": "sha256:776544a39ec444922ebdf2333fa9dd668a277ab206235449ea7aeafc5683ae89",
+    "registered_target_identity_hash": "sha256:002b89c5574dceaf533a8403c8c822da605eed33de398a0d68cb9a8d0627fbe3",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:df3c813e5d52a10f6fd68aad5c51f203bdebb8cff18baa50831806a444fd05a2"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:3b8252191b70101b383daace33052e9dd65f93728e2d90b3048ea9fea6f28e44"
+}

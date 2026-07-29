@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MAGSC-SC-CRITICAL-FIELDS-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:17de2656f7ba6d4db222a80dd4099abc71d1ad2c446e4c6b792fe0a5be6f2a7f"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:9a05754cfccd09e91a824d2696181c6828988a3b670423d9553239594a1c550e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bec3b24ff8e35be9f097c834c9b47d5974f14ea13f74ac7f02158949003e4ba7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ed15e984017b7b67492baa6b59a225e786edf89d0c4e314d42177aefb0570cd1"
+    }
+  ]
+}

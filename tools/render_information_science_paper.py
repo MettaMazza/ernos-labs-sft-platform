@@ -24,7 +24,7 @@ import render_platform_paper as base
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications/current/information_science/FROM_DISTINCTION_TO_INFORMATION.md"
 DOI_PATH = ROOT / "publications/current/information_science/doi.txt"
-OUTPUT = ROOT / "output/pdf/from-distinction-to-information-branch-paper-001-v1.2.pdf"
+OUTPUT = ROOT / "output/pdf/from-distinction-to-information-branch-paper-001-v1.4.pdf"
 
 
 def doi() -> str:
@@ -125,10 +125,10 @@ def cover():
         ),
         Spacer(1, 15 * mm),
         Paragraph(
-            "Third clean-room reconstruction - complete V1/V2 Information Science reconciliation"
-            "<br/>Twelve admitted derivations - 11,776 generated candidate structures"
-            "<br/>Seventy-seven prior obligations closed - none open"
-            "<br/>Version 1.2 - 26 July 2026"
+            "Third clean-room reconstruction - complete dated Information Science field"
+            "<br/>262 admitted derivations - 75,776 generated candidate structures"
+            "<br/>1,048 adverse controls - 262 independent reconstructions"
+            "<br/>Version 1.4 - 29 July 2026"
             f"<br/>{doi()}"
             "<br/>Paper: CC BY 4.0 - Code: Apache-2.0",
             note,

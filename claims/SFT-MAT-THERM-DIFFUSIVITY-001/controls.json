@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-THERM-DIFFUSIVITY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8a95cdc5d5a68f059c1ff2f0f629f7a02d69fca0b5dc87576f531eddcd8aff4e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b4e830390bacd3a52fe4d201ddcec72b80aedb58c378f6e57bd951344e6a407a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c3765c6fbd789bac174653639ff88bbaf80ccf18260273d83e10738d6fb6e2d3"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:bc20f48f488b2909ebb07ed6c81aae42259570cdbcc33c926976b31bffd617ee"
+    }
+  ]
+}

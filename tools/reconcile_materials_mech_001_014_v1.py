@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+from hashlib import sha256
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];FROZEN=ROOT/"census/materials_discipline_obligations.json";PREV=ROOT/"census/materials_discipline_current_reconciliation_v3.json";OUT=ROOT/"census/materials_discipline_current_reconciliation_v4.json";AUD=ROOT/"audits/MATERIALS_MECH_001_014_COMPLETION_2026-07-29.json"
+CLAIMS=("SFT-MAT-MECH-TENSOR-STRESS-STRAIN-001","SFT-MAT-MECH-TRANSVERSE-STRAIN-002","SFT-MAT-MECH-VISCOELASTIC-MEMORY-003","SFT-MAT-MECH-VISCOPLASTIC-FLOW-004","SFT-MAT-MECH-YIELD-PATH-005","SFT-MAT-MECH-WORK-HARDENING-006","SFT-MAT-MECH-FRACTURE-ENERGY-007","SFT-MAT-MECH-CRACK-GROWTH-008","SFT-MAT-MECH-FATIGUE-009","SFT-MAT-MECH-CREEP-RUPTURE-010","SFT-MAT-MECH-IMPACT-011","SFT-MAT-MECH-FRICTION-CONTACT-012","SFT-MAT-MECH-LUBRICATION-TRIBOFILM-013","SFT-MAT-MECH-RHEOLOGY-014")
+def canon(v):return "sha256:"+sha256(json.dumps(v,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()).hexdigest()
+def main():
+ f=json.loads(FROZEN.read_text());fid=f.pop("census_identity");p=json.loads(PREV.read_text());pid=p.pop("reconciliation_identity")
+ if canon(f)!=fid or canon(p)!=pid or p["current_closed_count"]!=119:raise SystemExit("MECH reconciliation predecessor changed")
+ live={x["claim_id"]:x for x in json.loads((ROOT/"census/claims.json").read_text())["claims"]};rows=[]
+ for i,cid in enumerate(CLAIMS,1):
+  row=live[cid];cert=json.loads((ROOT/"claims"/cid/"certificate.json").read_text());obl=f"SFT-MAT-OBL-MECH-{i:03d}"
+  if not row["model_admitted"] or cert["engine_receipt_hash"]!=row["receipt_hash"] or cert["materials_obligation"]!=obl:raise SystemExit("MECH reconciliation halt "+cid)
+  rows.append({"obligation_id":obl,"claim_id":cid,"receipt_hash":row["receipt_hash"],"receipt_path":row["receipt_path"],"closure_status":row["closure_status"],"external_status":row["external_status"]})
+ fam=dict(p["completed_families"]);fam["MECH"]=rows;current=133;payload={"schema":"sft-v3-materials-discipline-current-reconciliation/4","date":"2026-07-29","frozen_census_identity":fid,"frozen_obligation_count":289,"closed_at_freeze":92,"predecessor_reconciliation_identity":pid,"completed_families":fam,"current_closed_count":current,"current_open_count":156,"current_completion_fraction":"133/289","current_completion_percent":"46.0%","frozen_census_mutated":False,"extension_policy":"complete to the current registered standard and open to lawful versioned extension"};payload["reconciliation_identity"]=canon(payload);OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n");audit={"schema":"sft-v3-materials-mech-completion/1","date":"2026-07-29","family":"MECH-001--014","family_completion":"14/14","candidate_count":3584,"survivor_count":14,"control_count":56,"independent_reconstruction_count":14,"empirical_correspondence_count":14,"external_comparison_count":19,"captured_external_source_count":8,"receipt_rows":rows,"exact_replay":"pending post-admission execution","focused_tests":"3/3 passed","protected_engine_or_verifier_changed":False,"current_materials_progress":"133/289","current_materials_percent":"46.0%","reconciliation_identity":payload["reconciliation_identity"]};AUD.write_text(json.dumps(audit,indent=2,sort_keys=True)+"\n");print(json.dumps({"closed":133,"open":156,"percent":"46.0%","identity":payload["reconciliation_identity"]},indent=2))
+if __name__=="__main__":main()

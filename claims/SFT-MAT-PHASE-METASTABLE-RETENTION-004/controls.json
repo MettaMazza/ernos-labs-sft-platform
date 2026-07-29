@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-METASTABLE-RETENTION-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:2c951b93c1bd8e54a29899497850b9d4c333c7f6131cfa860b3bec30fc6120a0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7a6faa6c8ef182ff2a525581820c83edf81956f56a5eb26f98ee0c337a15041f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:168ab2174e15e0479fdb917c55453ec20a2c8743e4c696425d9ef70f6d018c95"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f21dde540a7cbb5307156975e14fb219e01e0ff128af092c91f1a7863d3a5cb5"
+    }
+  ]
+}

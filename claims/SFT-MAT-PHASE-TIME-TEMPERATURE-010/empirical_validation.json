@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-PHASE-TIME-TEMPERATURE-010",
+  "data_source_ids": [
+    "NIST-SOLIDIFICATION",
+    "NIST-PHASE-TRANSITION-TEMPERATURES"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5d5bbd458dc3266fe0e29ef568ca91f8f8d7cd975a4145538681f9582a8b62a3",
+  "falsification_condition": "Reject if any registered source identity, source byte, available fragment, condition boundary, phase distinction, prediction seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:638c657dd18ce3f06f2a44cc9bdd4fd85d334cf6601e158754a2f7d11f1ba335",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:44f44ea67855f0f6a515bb75f30451919411b35ca6fc0c2df05273b75a537658",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-PHASE-010-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:9959cd34edc020e73bc0c4af17faeaf3b38a9811246e09ab9b60e196b61a5ae2",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:e5b7b30b19586995205c9fe66c74436a2d26b482d847e12a532b8c58fb6cda94",
+    "prediction_seal_hash": "sha256:b586e2d4a16adda326144f93f15c59a006693685601b3f353107653671201feb",
+    "program_hash": "sha256:80cc4a722ee536075923488263d5f47a55b9e2c21d7ca706c26889d66cf1a4fc",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:59e5c0e7aaf392055a07cb2a6e7d3c7e3a0b9c6ae3600938adfdfe9f5fdfb2dd",
+    "target_material_present": false,
+    "trace_hash": "sha256:ba969275329fd16db6ed85bae14e804c6ff54e7e65fc40746008bd11f0aaa0cb"
+  },
+  "measurement_receipt_hash": "sha256:574469a9e22e4e5441dafd719b1dfba6da76ae1c179d067f9aaeb86e33ce6137",
+  "measurements": [
+    "PHASE-010: 2 authoritative comparisons retained",
+    "family custody: 11 usable and 0 unavailable sources",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-SOLIDIFICATION: captured_preexisting_official_snapshot; nucleation, growth kinetics; Polyphase solidification; first=True; second=True",
+    "NIST-PHASE-TRANSITION-TEMPERATURES: captured_post_registry; compiled and evaluated phase transition temperatures; recommended phase transitions; first=True; second=True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:6d59faa875ac5d664724a5f356b6a6d5013c6829d77aeb91006191b29bad7fd6",
+    "custodian_id": "SFT-EXP-MAT-PHASE-010-V1-custodian",
+    "experiment_registration_hash": "sha256:5d5bbd458dc3266fe0e29ef568ca91f8f8d7cd975a4145538681f9582a8b62a3",
+    "prediction_seal_hash": "sha256:b586e2d4a16adda326144f93f15c59a006693685601b3f353107653671201feb",
+    "registered_target_identity_hash": "sha256:59e5c0e7aaf392055a07cb2a6e7d3c7e3a0b9c6ae3600938adfdfe9f5fdfb2dd",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:67f18a742267d4dc62dc659c1d7521818dd66487499994588c95e570225bdabd"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:8cd59423c0082437aa7463dca509eef25d4ee8ef13df1538bda8fcc526dc7f01"
+}

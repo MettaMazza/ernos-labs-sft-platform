@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-VISCOPLASTIC-FLOW-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d3b580cdc628a324c37aca6a9999fefb4e0566f67c34b872f07a3b379ecdb7eb"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2e4ab0415f045735e30ac0acba3011a75a0d25077f75ae9a740bd7e20c261727"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:86f9545ee7cc33d83f440dd5df8f6710bd6144b8a39f04aaf29bbc2207a2ac4b"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0cc48ab6efeb86490e408d5f910fc52cf80fee5a8ee683ff11e33e8a2991fbf7"
+    }
+  ]
+}

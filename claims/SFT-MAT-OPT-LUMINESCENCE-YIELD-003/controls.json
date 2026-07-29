@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-LUMINESCENCE-YIELD-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d100e41ab1ca2d82cc5318ca7f26cce90900791ac260e3f41b16e85e5c09c70e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ffd205c34d70b37495621525581786e7b9ed0b26eb72eba13f4747acded51d49"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:2d081986cbae9408bce25007ba29ce402d2862c96c6615433d0ca809079af91f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:9fb9e6ac04c27b7b21f3a349c48e8d262dd84526ebf6b7a7c17aa8ebb7ad67db"
+    }
+  ]
+}

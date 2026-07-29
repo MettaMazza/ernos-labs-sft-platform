@@ -1,0 +1,31 @@
+{
+  "schema": "sft-v3-nonscientific-dependency-identity-correction/1",
+  "date": "2026-07-28",
+  "family": "ECHEM-005-008",
+  "status": "pre_admission_metadata_correction",
+  "reason": "Two value-free law files used descriptive dependency identifiers that are not claim identifiers in the live admitted census.",
+  "corrections": [
+    {
+      "claim_id": "SFT-CHEM-IONIC-CONDUCTIVITY-RELATION-007",
+      "sealed_descriptive_identifier": "SFT-COMP-RESOURCE-LAW-001",
+      "live_admitted_claim_identifier": "SFT-COMP-CPLX-TIME-SPACE-001",
+      "identity_basis": "The admitted Fold time and space resource law is the exact live resource-counting dependency intended by the descriptive identifier."
+    },
+    {
+      "claim_id": "SFT-CHEM-IONIC-MOBILITY-TRANSFERENCE-008",
+      "sealed_descriptive_identifier": "SFT-INFO-CONDITIONAL-001",
+      "live_admitted_claim_identifier": "SFT-INFO-MUTUAL-CONDITIONAL-001",
+      "identity_basis": "The admitted exact mutual and conditional information law is the exact live conditional-information dependency intended by the descriptive identifier."
+    }
+  ],
+  "candidate_dimensions_changed": false,
+  "candidate_cardinality_changed": false,
+  "unique_survivor_changed": false,
+  "native_operation_changed": false,
+  "target_identity_changed": false,
+  "external_value_outcome_uncertainty_or_pass_label_used": false,
+  "source_capture_repeated": false,
+  "admission_attempted_before_correction": false,
+  "original_law_files_and_pre_source_seals_preserved_unchanged": true,
+  "effect": "The batch registration resolves only the two dependency identifiers to already admitted live claim IDs before any engine submission."
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SOFT-ACTIVE-NONEQUILIBRIUM-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:ddf68b309b02f7aa9f903e9319b2f2d03e969fa00c45d04a04fdf6d3a887a918"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b1adbbc695c1087c970f545269edda946a61aacfef51796ac9b00b379bdd5c51"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:8ac726d1823ef176960627178365d7076e5e38b9a50a6a8bfe799f08d3bc30f8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:f7203116e4994f7d5fe915bd0f0f3f9322328ae6b2d4f0a3f38b5bc664e40baa"
+    }
+  ]
+}

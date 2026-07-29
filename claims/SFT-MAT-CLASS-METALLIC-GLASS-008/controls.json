@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-METALLIC-GLASS-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:39b3dc1733bc5f007dc348d75f76a5bfc9ef8eaf3d064debc33e48c255f82035"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:680efd5acf92750eac18805a0fe36e25d0a88f6e7062c01340b86d11a59e113a"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:714328c62a83630c10e1aca004a7858e719b8880dbf7fc96df618e88b494e677"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:0862c171adaa0d68fda520cc0a22e10294a8b40228bcd5c980b05d129bb9654d"
+    }
+  ]
+}

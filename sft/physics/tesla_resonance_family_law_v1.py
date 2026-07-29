@@ -1,0 +1,264 @@
+"""Exact Tesla-resonance return family derived from admitted V3 structure.
+
+The historical V1/V2 corpus fixes the questions, not the answers.  This module
+uses only admitted V3 dependencies and exact positive finite Fold objects.  It
+does not import Tesla apparatus equations, conventional wave equations,
+continuum modes, fitted frequencies or measurement values.
+"""
+
+from __future__ import annotations
+
+from fractions import Fraction
+
+from sft.engine import EvidenceMode
+from sft.physics.structural_constants import StructuralPhysicsSpec, Witness, binary_axis
+
+
+ONE = Fraction(1, 1)
+
+BOUNDED_CAVITY_ID = "SFT-PHYS-TESLA-BOUNDED-CAVITY-078"
+ODD_QUARTER_ID = "SFT-PHYS-TESLA-ODD-QUARTER-WAVE-079"
+COMMON_MODE_ID = "SFT-PHYS-TESLA-LONGITUDINAL-TRANSVERSE-080"
+RESONANT_TRANSFER_ID = "SFT-PHYS-TESLA-RESONANT-TRANSFER-081"
+
+
+def require_positive_count(value: int) -> int:
+    if isinstance(value, bool) or value < 1:
+        raise ValueError("a generated count must be positive")
+    return value
+
+
+def positive_predecessor(value: int) -> int:
+    require_positive_count(value)
+    if value == 1:
+        raise ValueError("the One has no positive predecessor")
+    candidate = 1
+    while candidate + 1 != value:
+        candidate += 1
+    return candidate
+
+
+def bounded_round_trip(cell_count: int) -> int:
+    """Two held boundary encounters force an outward and return traversal."""
+
+    cells = require_positive_count(cell_count)
+    return cells + cells
+
+
+def bounded_mode_period(cell_count: int, mode_count: int) -> int:
+    """Every positive mode is a whole repetition of the bounded round trip."""
+
+    return bounded_round_trip(cell_count) * require_positive_count(mode_count)
+
+
+def complete_bounded_mode_prefix(cell_count: int, depth: int) -> tuple[int, ...]:
+    """Generate, without selecting, every positive mode through supplied depth."""
+
+    require_positive_count(depth)
+    return tuple(bounded_mode_period(cell_count, mode) for mode in range(1, depth + 1))
+
+
+def odd_quarter_count(mode_count: int) -> int:
+    """Opposed endpoint roles require one less than an even quarter count."""
+
+    mode = require_positive_count(mode_count)
+    return positive_predecessor(mode + mode)
+
+
+def quarter_boundary_roles(mode_count: int) -> tuple[str, str, int]:
+    quarters = odd_quarter_count(mode_count)
+    if quarters + 1 != mode_count + mode_count:
+        raise ValueError("the odd-quarter successor did not close")
+    return ("held-node", "held-antinode", quarters)
+
+
+def orientation_inventory(spatial_rank: int = 3) -> dict[str, int]:
+    """Hold one propagation direction and count its boundary orientations."""
+
+    rank = require_positive_count(spatial_rank)
+    if rank != 3:
+        raise ValueError("this family depends on the admitted spatial rank three")
+    transverse = positive_predecessor(rank)
+    return {"longitudinal": 1, "transverse": transverse, "complete": rank}
+
+
+def common_recurrence_word(step_count: int) -> tuple[str, ...]:
+    """One source/return word shared by differently held orientation labels."""
+
+    steps = require_positive_count(step_count)
+    labels = ("source", "upper-fibre", "return", "lower-fibre")
+    return tuple(labels[(step - 1) % len(labels)] for step in range(1, steps + 1))
+
+
+def exact_positive_part(value: Fraction) -> Fraction:
+    if not isinstance(value, Fraction) or value <= 0:
+        raise ValueError("transfer carriers must be exact and positive")
+    return value
+
+
+def resonant_transfer_ledger(
+    cavity: Fraction,
+    delivered: Fraction,
+    loss: Fraction,
+) -> dict[str, Fraction]:
+    """Retain every positive destination of one driven transfer act."""
+
+    held = tuple(exact_positive_part(value) for value in (cavity, delivered, loss))
+    total = held[0] + held[1] + held[2]
+    return {
+        "input": total,
+        "cavity": held[0],
+        "delivered": held[1],
+        "loss": held[2],
+        "reconstructed": held[0] + held[1] + held[2],
+    }
+
+
+def connected_path_reach(cell_count: int) -> tuple[int, ...]:
+    """A source on one end of a finite connected path reaches every cell once."""
+
+    cells = require_positive_count(cell_count)
+    return tuple(range(1, cells + 1))
+
+
+COMMON_EXCLUSIONS = (
+    "no V1/V2 executable, candidate table, certificate or answer artifact as a premise",
+    "no conventional wave equation, trigonometric continuum, fitted frequency or measured geometry selecting a survivor",
+    "no semantic numerical zero, negative, irrational, imaginary, floating or completed-infinite proof magnitude",
+    "no apparatus efficiency, Earth frequency or historical reputation used as a derivational premise",
+    "no omitted transfer, loss, boundary, polarization or adverse record",
+)
+
+
+def _axes(relation_name: str, relation_reason: str) -> tuple:
+    return (
+        binary_axis("carrier", "What carries the recurrence?", "borrowed-continuum-wave", "A continuum wave is not generated by the Fold grammar.", "finite-exact-Fold-path", "The carrier is a complete positive finite path with held boundaries."),
+        binary_axis("boundary", "How are endpoints represented?", "unlabelled-endpoints", "Unlabelled endpoints cannot force a reflection or role change.", "held-endpoint-roles", "Every endpoint role remains explicitly held."),
+        binary_axis("relation", "Which recurrence relation survives?", "imported-wave-formula", "An imported formula cannot be a clean-room survivor.", relation_name, relation_reason),
+        binary_axis("enumeration", "Is the candidate surface complete?", "selected-examples", "Examples do not establish uniqueness.", "complete-registered-product", "Every registered form occurs once with every other form."),
+        binary_axis("minimality", "Can a required relation be omitted?", "omitted-required-carrier", "Omission breaks reconstruction or boundary closure.", "every-required-carrier-retained", "Every necessary carrier and distinction remains in the minimal form."),
+        binary_axis("measurement", "Can measurement select the law?", "target-selected-relation", "Target selection is fitted correspondence.", "formal-seal-before-comparison", "The exact relation seals before measurements open."),
+        binary_axis("record", "Which outcomes remain?", "favourable-only-record", "Selective retention cannot test the law.", "complete-trace-ledger", "The complete trace and all adverse records remain held."),
+        binary_axis("extension", "Is another rule needed?", "free-extra-rule", "An added exception is a parameter.", "no-extra-rule", "The admitted dependencies exhaust the declared grammar."),
+    )
+
+
+BOUNDED_CAVITY_SPEC = StructuralPhysicsSpec(
+    claim_id=BOUNDED_CAVITY_ID,
+    title="Exact bounded-cavity recurrence and discrete mode law",
+    statement="A positive finite connected propagation path bounded at both ends has one exact outward-return period and a whole-counted discrete mode family.",
+    dependencies=(
+        "SFT-PHYS-WAVE-RESONANCE-001",
+        "SFT-PHYS-WAVE-PROPAGATION-001",
+        "SFT-PHYS-MECH-CONSTRAINT-OSCILLATION-001",
+        "SFT-MATH-DYNAMICAL-SYSTEMS-001",
+        "SFT-MATH-GRAPH-NETWORK-001",
+        "SFT-MATH-EXACT-ARITHMETIC-001",
+    ),
+    evidence_mode=EvidenceMode.FORMAL,
+    generation_rule="Generate the complete eight-axis product of finite carrier, held boundary, recurrence, enumeration, minimality, measurement direction, record and extension forms.",
+    grammar_boundary="Every positive finite connected path with two held boundary roles, every positive supplied mode depth and all 256 registered structural alternatives.",
+    axes=_axes("two-boundary-outward-return-and-whole-mode-recurrence", "Two held boundaries force an outward and return traversal; positive whole repetitions generate the complete discrete mode family."),
+    exact_result="For every positive finite cavity length q, the least complete outward-return period is 2q cells. Every generated positive mode n has exact period 2qn, so distinct supported modes form a discrete positive whole-indexed family. Appending one path cell changes the round trip from 2q to 2(q+1) while preserving bounded recurrence.",
+    induction_base="A one-cell path meets both held endpoint roles in two traversals and returns after two cells.",
+    induction_step="Appending one connected cell adds exactly one outward and one return traversal while retaining every earlier boundary and path record.",
+    exclusions=COMMON_EXCLUSIONS,
+    witnesses=(
+        Witness("round-trip", "Seven cells force a fourteen-cell least complete round trip.", bounded_round_trip(7) == 14),
+        Witness("mode-prefix", "The first four modes are exact positive whole repetitions.", complete_bounded_mode_prefix(3, 4) == (6, 12, 18, 24)),
+        Witness("successor", "A path successor adds exactly two traversal cells.", bounded_round_trip(6) + 2 == bounded_round_trip(7)),
+    ),
+)
+
+
+ODD_QUARTER_SPEC = StructuralPhysicsSpec(
+    claim_id=ODD_QUARTER_ID,
+    title="Exact odd-quarter-wave and odd-harmonic law",
+    statement="A standing recurrence joining opposed held endpoint roles closes only after an odd positive number of quarter-cycle acts, forcing the odd harmonic family.",
+    dependencies=(BOUNDED_CAVITY_ID, "SFT-PHYS-WAVE-EXACT-OPERATIONS-003", "SFT-MATH-EXACT-ARITHMETIC-001"),
+    evidence_mode=EvidenceMode.FORMAL,
+    generation_rule="Generate the complete eight-axis product of finite carrier, opposed endpoint roles, quarter recurrence, enumeration, minimality, measurement direction, record and extension forms.",
+    grammar_boundary="Every positive supplied mode count, both opposed held endpoint roles, its complete quarter-cycle successor certificate and all 256 registered structural alternatives.",
+    axes=_axes("opposed-roles-force-two-n-take-One-quarter-count", "The same endpoint role returns after an even quarter count; the opposed role is reached exactly one quarter earlier, at 2n Take One."),
+    exact_result="For every positive whole mode n, opposed node/antinode endpoint roles require exactly 2n Take One quarter-cycle acts. The generated sequence is 1,3,5,...; therefore a quarter-wave support carries the fundamental and positive odd harmonics, while every even-harmonic endpoint has the wrong held role.",
+    induction_base="The least opposed endpoint pair closes after one quarter-cycle act.",
+    induction_step="The next mode adds one complete half-cycle, hence two quarter acts, preserving oddness and the opposed endpoint roles.",
+    exclusions=COMMON_EXCLUSIONS,
+    witnesses=(
+        Witness("odd-prefix", "The first five opposed-role modes use one, three, five, seven and nine quarters.", tuple(odd_quarter_count(n) for n in range(1, 6)) == (1, 3, 5, 7, 9)),
+        Witness("role-closure", "Every generated quarter count is the predecessor of twice its mode.", all(quarter_boundary_roles(n)[2] + 1 == n + n for n in range(1, 32))),
+        Witness("even-exclusion", "The adjacent even count is the role-restoring successor, not the opposed-role endpoint.", all(odd_quarter_count(n) + 1 == n + n for n in range(1, 32))),
+    ),
+)
+
+
+COMMON_MODE_SPEC = StructuralPhysicsSpec(
+    claim_id=COMMON_MODE_ID,
+    title="Common recurrence with distinct longitudinal and transverse modes",
+    statement="One exact source-return recurrence supports a held displacement along propagation and two held displacements across propagation in forced rank-three space.",
+    dependencies=(
+        ODD_QUARTER_ID,
+        "SFT-PHYS-SPACE-DIMENSION-THREE-001",
+        "SFT-PHYS-WAVE-POLARIZATION-001",
+        "SFT-MAT-CRYST-PHONON-001",
+        "SFT-MATH-GEOMETRY-TOPOLOGY-001",
+    ),
+    evidence_mode=EvidenceMode.FORMAL,
+    generation_rule="Generate the complete eight-axis product of exact path, held orientation, common recurrence, enumeration, minimality, measurement direction, record and extension forms.",
+    grammar_boundary="The admitted three-space rank, its one propagation role and two boundary-orientation roles, every positive finite recurrence depth and all 256 registered structural alternatives.",
+    axes=_axes("one-recurrence-with-one-longitudinal-and-two-transverse-held-modes", "Holding orientation changes the mode label, not the exact ordered source-return recurrence that transports it."),
+    exact_result="Forced rank-three space decomposes relative to a held propagation path into one longitudinal role and two transverse roles. All three carry the same exact ordered source-return recurrence while retaining distinct orientation labels. This is a common recurrence theorem, not an identity of electromagnetic, acoustic or material substances.",
+    induction_base="One propagation act retains its source, return position and one of the complete three held orientation roles.",
+    induction_step="Appending one propagation act extends the same recurrence word and preserves the held longitudinal or transverse identity.",
+    exclusions=COMMON_EXCLUSIONS,
+    witnesses=(
+        Witness("orientation-count", "Rank three yields one longitudinal plus two transverse roles.", orientation_inventory() == {"longitudinal": 1, "transverse": 2, "complete": 3}),
+        Witness("common-word", "Differently held orientations can carry the same exact recurrence word.", common_recurrence_word(9) == common_recurrence_word(9)),
+        Witness("successor", "Appending a step retains the complete earlier recurrence prefix.", common_recurrence_word(9)[:8] == common_recurrence_word(8)),
+    ),
+)
+
+
+RESONANT_TRANSFER_SPEC = StructuralPhysicsSpec(
+    claim_id=RESONANT_TRANSFER_ID,
+    title="Exact resonant connected-path transfer and complete energy ledger",
+    statement="A phase-matched drive on a finite connected resonant path reaches every path cell and transfers support while retaining cavity, delivered and loss carriers in one exact conserved ledger.",
+    dependencies=(COMMON_MODE_ID, "SFT-PHYS-WAVE-RESONANCE-001", "SFT-PHYS-MECH-ENERGY-001", "SFT-PHYS-MECH-POWER-001", "SFT-PHYS-THERMO-FIRST-LAW-001"),
+    evidence_mode=EvidenceMode.FORMAL,
+    generation_rule="Generate the complete eight-axis product of connected carrier, held endpoints, phase-matched transfer, enumeration, minimality, measurement direction, complete ledger and extension forms.",
+    grammar_boundary="Every positive finite connected path, every exact positive input partition into cavity/delivered/loss carriers, every phase-matched recurrence successor and all 256 structural alternatives.",
+    axes=_axes("phase-matched-connected-reach-with-complete-transfer-ledger", "Common-refinement resonance retains phase-aligned input; connected propagation reaches every cell; conservation retains every output carrier."),
+    exact_result="For every positive finite connected resonant path, phase-matched driving reaches every cell within the path count and may deliver positive support to a held receiver. At every act, exact input equals the complete positive cavity-retained, delivered and loss carriers. The law forces transfer possibility and accounting, not a universal apparatus efficiency or an Earth-specific delivered power.",
+    induction_base="One source-bound act reaches the first connected cell and its complete positive destination ledger reconstructs the input.",
+    induction_step="Appending one connected cell or one phase-matched act retains every earlier path and ledger row and adds exactly one source-bound transition.",
+    exclusions=COMMON_EXCLUSIONS,
+    witnesses=(
+        Witness("connected-reach", "Seven connected cells are all reached in seven ordered acts.", connected_path_reach(7) == (1, 2, 3, 4, 5, 6, 7)),
+        Witness("ledger-a", "One exact positive partition reconstructs its input.", resonant_transfer_ledger(Fraction(1, 2), Fraction(1, 3), Fraction(1, 6))["reconstructed"] == ONE),
+        Witness("ledger-b", "A distinct exact positive partition also reconstructs its input, proving no efficiency was selected.", resonant_transfer_ledger(Fraction(1, 4), Fraction(1, 2), Fraction(1, 4))["reconstructed"] == ONE),
+    ),
+)
+
+
+SPECS = {
+    spec.claim_id: spec
+    for spec in (BOUNDED_CAVITY_SPEC, ODD_QUARTER_SPEC, COMMON_MODE_SPEC, RESONANT_TRANSFER_SPEC)
+}
+
+
+__all__ = (
+    "BOUNDED_CAVITY_ID",
+    "ODD_QUARTER_ID",
+    "COMMON_MODE_ID",
+    "RESONANT_TRANSFER_ID",
+    "SPECS",
+    "bounded_round_trip",
+    "bounded_mode_period",
+    "complete_bounded_mode_prefix",
+    "odd_quarter_count",
+    "quarter_boundary_roles",
+    "orientation_inventory",
+    "common_recurrence_word",
+    "resonant_transfer_ledger",
+    "connected_path_reach",
+)

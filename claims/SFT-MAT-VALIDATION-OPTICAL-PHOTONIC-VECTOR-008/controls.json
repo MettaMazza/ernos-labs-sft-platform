@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-OPTICAL-PHOTONIC-VECTOR-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:7cb4cf0c7de37ac7d1c7fbc94f6219632fbf4f90635c6236cd38ed3edda71b59"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:648fbb48814d019c9dc838eb2291ab1fd757f0fb7093f08963a06c6da8a5f892"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bc4addd7800a2191f47a8a1c66f717ebe056e016b538f90160f0d634108500b7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:359aafd9544dc82a93a4434f0cdd1d04cd138eb9a8b13d92f680500bd66e4cc4"
+    }
+  ]
+}

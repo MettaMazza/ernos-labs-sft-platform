@@ -1,5 +1,25 @@
 # Reversible and Quantum Computation branch roadmap
 
+## Current receipt-backed status - 2026-07-29
+
+- Frozen complete-field census: **288 obligations across 13 families**.
+- Current admitted and reconciled position: **288/288 (100.0%)**.
+- Completed families: `BASE` **22/22**, `REVX` **18/18**, `QSTATEX`
+  **28/28**, `GATEX` **22/22**, `QALGX` **30/30**, `QCPLXX` **26/26** and
+  `QCOMMX` **24/24**, `QCODEX` **32/32**, `QSIMX` **24/24**, `QLEARNX`
+  **22/22**, `QLIMITX` **22/22**, `VALID` **12/12** and `HAND` **6/6**.
+- Genuine open frozen obligations: **0**.
+- Frozen census identity:
+  `sha256:a7f855b7e9fc6ffe4ae9485faf26f1be44bd672b843ecbfbad42b0f523726e3c`.
+- Current reconciliation identity:
+  `sha256:ac4acee07a49cbde19eee7baacd7be7d8c87c93e4d75a47467160fb31499e650`.
+- Durable continuation checkpoint:
+  `audits/ACTIVE_QUANTUM_COMPUTATION_CONTINUATION_CHECKPOINT_2026-07-29.md`.
+
+Completion is dated to this frozen census and remains open to lawful extension.
+Every frozen family is complete and is not to be repeated. Completion is dated
+to the frozen census and remains open to a newly registered lawful extension.
+
 ## Scientific ownership
 
 This branch owns reversible and quantum models of computation.  It consumes
@@ -64,4 +84,3 @@ treated as automatic extensions of the completed one-error construction.
 Quantum physical measurements belong to Physics.  Quantum chemistry and
 materials applications consume admitted quantum-computational laws but retain
 their own empirical evidence.
-

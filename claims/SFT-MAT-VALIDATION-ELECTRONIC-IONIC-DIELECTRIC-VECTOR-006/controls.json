@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-ELECTRONIC-IONIC-DIELECTRIC-VECTOR-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3baa42396d16a23472c01b921e95e0f9627783df4d1474911afaa28044edcdcd"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7e3becef53592e9fe6219a49051543b7ace512f99b06c37436056c4c47d4447e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b651a50bb1f02c475f17589556bd4a2081e1e16015775fdceecdb6832a8e8600"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:825d19d266a97d57a86b0f791743ced9688ebda2ffd34757f54e2d82d8300885"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-OPT-NONLINEAR-MIXING-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fe3248aac7b835aed757d280593fb0e1737f0297623f57d5033cfaff5ff4a6db"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:396e1b964e4e1385f986008944dd66d6a016d60716ebcb9fb3f47491db946f73"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:3ad54280b26667a7fe17e14d711dd13ef1080ea279c68c56b52acf4d12f6710a"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:03ff14494eec7f83cfcd0e515f6918e10c0978ba93118249b284110f915133fa"
+    }
+  ]
+}

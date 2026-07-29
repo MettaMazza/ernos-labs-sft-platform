@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../governance/experiment.schema.json",
+  "absence_boundary": {
+    "display_glyph": "0",
+    "external_signed_decimal_and_zero_inscriptions_are_provenance_only": true,
+    "native_proof_form": "positive exact counts/ratios, held orientation and structural EmptyOne absence",
+    "numerical_zero_admitted": false
+  },
+  "claim_id": "SFT-CHEM-NMR-CHEMICAL-SHIFT-006",
+  "evaluation_protocol": {
+    "acceptance_condition": "All eight preregistered comparisons and the complete ten-source, 1,633-row NMR family surface are retained.",
+    "all_8_targets_required": true,
+    "falsification_condition": "The claim halts if its survivor is nonunique; any registered NMR value, site, reference, condition, unit, uncertainty, ambiguity, absent field, adverse orientation, page or source byte is omitted; the independent reconstruction disagrees; or any external result selects the law. Eight dimensions exhaust carrier, nucleus, site, reference, environment, exact relation, custody and extension."
+  },
+  "evidence_mode": "observational_derivation_plus_complete_external_record_reconstruction",
+  "experiment_id": "SFT-EXP-CHEM-NMR-CHEMICAL-SHIFT-006",
+  "external_measurement_sources": [
+    {
+      "claim_surface": "556 complete 1H chemical-shift rows from BMRB 68, DSS reference, pH 4.7 and 323 K conditions, every ambiguity code and all 556 unreported error fields",
+      "complete_html_documents": 5,
+      "complete_measured_rows": 1633,
+      "complete_nmr_star_records": 4,
+      "complete_pdf_pages": 24,
+      "complete_source_bytes": 1527681,
+      "measurement_bodies": [
+        "International Union of Pure and Applied Chemistry",
+        "Biological Magnetic Resonance Bank"
+      ]
+    }
+  ],
+  "frozen_relation": {
+    "relation_hash": "sha256:bdf3af51748903715e6394c422670c3b8e04f14c374712436f4bc45b2dd84b15",
+    "statement": "held-molecular-carrier__held-nucleus-identity__complete-nucleus-site-map__held-reference-comparison__held-solvent-and-condition__held-side-positive-exact-ratio-or-EmptyOne__complete-shift-uncertainty-ambiguity-custody__successor-retains-and-appends-complete-sites",
+    "targets_did_not_select_survivor": true
+  },
+  "identity_registry": "experiments/external_sources/chemistry/anal_006_target_identities_v1.json",
+  "prediction_seal": "experiments/sealed_predictions/chemistry_anal_006_pre_source_v1.json",
+  "registered_by": "Maria Smith",
+  "registration_date": "2026-07-28",
+  "schema": "sft-v3-chemistry-experiment-registration/1",
+  "status": "measured_postseal_complete"
+}

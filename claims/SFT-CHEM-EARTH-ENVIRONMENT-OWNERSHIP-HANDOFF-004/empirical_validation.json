@@ -1,0 +1,69 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-EARTH-ENVIRONMENT-OWNERSHIP-HANDOFF-004",
+  "data_source_ids": [
+    "IUPAC-GOLD-BOOK-C01039-2026",
+    "IUPAC-GOLD-BOOK-CHEMICAL-REACTION-COMPOSITE-2026",
+    "EPA-AIRDATA-001",
+    "WQP-WEB-SERVICES-001",
+    "USGS-LANDSAT-ACCESS-001",
+    "NEON-OPEN-DATA-001"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:33429b6a5ad62e8c331237182044eb71e73f2f4bbb687695d42a0db57bddbc02",
+  "falsification_condition": "Reject if any registered owner, paired receipt, external record, registration, dependency edge, root trace, control or extension boundary is missing, duplicated, changed or opened before the value-free owner registry.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d2ff74804fae9335fd16bff15438c7cde7fe7ddae8fbd4cb5d7a47353fa69267",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:7bf83d7eb52b7150ba2c331f7fe59922092a69b719824e95f65fbde7c6ddfc98",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-HAND-004-V2-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:65d07bfb23e32d2ff18c1a4cc8703b8b76e0f8c9f8fb80f011251b635fb237f6",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:bf2c8003863994487591641e2a4565ddef8a33f7a9bc87c0eac866b423c3c588",
+    "prediction_seal_hash": "sha256:1f443f334062985fac3852d64294043565b211ed40d0883fdf6bef14be3616b8",
+    "program_hash": "sha256:4ff6ab4c65d892b84b81f9b5a55e9553a32f1d395650173418c48f93b030bd3d",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:7459be90675a3118261fd6bbf0d9f25ef03e95fce41960149f197bb71a3b871d",
+    "target_material_present": false,
+    "trace_hash": "sha256:d6ceed6c8de67b195679a4c5c253dfa87e028c72c70e3088941468ccb1a6a25a"
+  },
+  "measurement_receipt_hash": "sha256:3663472269afd8f9beb171052324bdf7ad927e39a2b20d8bd4e6dd264bb5ec8f",
+  "measurements": [
+    "HAND-004: value-free owner registry preceded outcome access",
+    "frozen graph: 1484 claims, 25013 dependency edges, 18553 cross-branch uses",
+    "paired external surface: 17 records, 31 source identities, 53 evidence lines",
+    "all selected evidence rows preserved; omission control rejected True",
+    "chemistry owns SFT-CHEM-MEAS-SUBSTANCE-001; sources=1; evidence-lines=2; receipt=sha256:c24408e53e46d5873b5c2f77d638045df99bf6250d5cbae3895cc9a092df15e7",
+    "chemistry owns SFT-CHEM-RXN-IDENTITY-001; sources=1; evidence-lines=2; receipt=sha256:ec1b06b42e323744b8166f5498671868cd4f9ce5ef68c1f43d718a894712e42d",
+    "earth_environment owns SFT-EARTH-ENVIRONMENTAL-TRANSFORMATION-001; sources=4; evidence-lines=4; receipt=sha256:90f90906ca26785c8256f3e093512560e27bfb09ca386250231eb0f66bc24fb8",
+    "earth_environment owns SFT-EARTH-ENVIRONMENTAL-TRANSPORT-001; sources=4; evidence-lines=4; receipt=sha256:4406c9886170dbcd2c3b7a8348b855d249b42b605272afc2ba4a02ae4cde94c0"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:878688d194651d911c45cc6cd3a80d70b63d16d172af55fec0092b82d9cca384",
+    "custodian_id": "SFT-EXP-CHEM-HAND-004-V2-custodian",
+    "experiment_registration_hash": "sha256:33429b6a5ad62e8c331237182044eb71e73f2f4bbb687695d42a0db57bddbc02",
+    "prediction_seal_hash": "sha256:1f443f334062985fac3852d64294043565b211ed40d0883fdf6bef14be3616b8",
+    "registered_target_identity_hash": "sha256:7459be90675a3118261fd6bbf0d9f25ef03e95fce41960149f197bb71a3b871d",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:f9f1b126300c49f02b6bd2e689056a0e0541b8f5bc5899d573fb9eb4351aaf7f"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:06a854cd62a5597232687f79813d2833ec21ffd8988c18dcd926262cce9ecf35"
+}

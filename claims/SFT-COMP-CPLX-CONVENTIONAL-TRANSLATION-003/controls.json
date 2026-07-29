@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-COMP-CPLX-CONVENTIONAL-TRANSLATION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking complete first-axis coverage",
+      "kind": "false_premise",
+      "observed_behavior": "Samples cannot establish a family translation.",
+      "passed": true,
+      "receipt_hash": "sha256:3972fe19b42ada94f159346e7819a495c03d68b2e355bf96ca313dc87066951c"
+    },
+    {
+      "expected_behavior": "reject a changed official source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs",
+      "passed": true,
+      "receipt_hash": "sha256:631b6c8e6f374ce06f8dae3585420cff66739431ba71010d8eba22704eb33c04"
+    },
+    {
+      "expected_behavior": "reject missing, duplicated or additional survivors",
+      "kind": "tampered_artifact",
+      "observed_behavior": "literal product contains one survivor and unique identities",
+      "passed": true,
+      "receipt_hash": "sha256:0eec7f536882a483dba649d1a59c8b438514369873dc42d022aaa7577377711d"
+    },
+    {
+      "expected_behavior": "halt imported models, parameters or excluded quantum machinery",
+      "kind": "boundary",
+      "observed_behavior": "no arbitrary conventional P-versus-NP conclusion; no partial, sampled or answer-changing encoding; no unmatched input-size or resource convention; no hidden advice, oracle or nondeterministic machine import; no completed infinite language object",
+      "passed": true,
+      "receipt_hash": "sha256:2c2d7d8a91b9356d8f6d67befeabd1aaa96fe75373c2f8223ecef476afc91dc0"
+    }
+  ]
+}

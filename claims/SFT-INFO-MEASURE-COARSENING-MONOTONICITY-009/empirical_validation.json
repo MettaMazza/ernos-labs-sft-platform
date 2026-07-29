@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-MEASURE-COARSENING-MONOTONICITY-009",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-INFORMATION-MEASURE-OBSERVER",
+    "SFT-V1-V2-INFORMATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:49fde765083ecd1bbedb21873e07b5def2fdebfbba8deb806822fa5e11889f0a",
+  "falsification_condition": "Reject if the value-free registry, complete measure census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:7f767bdffd2366b81c182720f2d85a041f89ea24fbaa1a003412e3fa86dc35aa",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:b5877c22964ba8f04e60b54570dd31637ed9a644995d35ea4a8db9d07556a0f6",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-MEASURE-009-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:27e6791f93c76ebc33992b3cfeac30c562eabff2255b95306fa9c0c620c95235",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2ccbf36c84bdf3e980a688796199f81ea3d186ed50e1a503a77cd80fdf7840a8",
+    "prediction_seal_hash": "sha256:73cabf0e1dd946824c439c08768c426cc2e20a9cc222b261a4d6dcc1269a0934",
+    "program_hash": "sha256:0ead32a87cd09312c676a9aba9d01ae53ae496d501bbb42b027cb4a7efe4b18f",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:3bfa1432cbfc43e8104f44f68921c3ce754666009c4ea066b97a164e8d2dd9da",
+    "target_material_present": false,
+    "trace_hash": "sha256:212afd797b9da7e2b3cc56bcdf7c0945d9848b6c4bc72c832f33633af00d846f"
+  },
+  "measurement_receipt_hash": "sha256:8a9b7b1ed1448c2b0288611d2e1e52918eec1701340ba4c4c6c2f4cc520ad978",
+  "measurements": [
+    "MEASURE-009: coarsening_monotonicity",
+    "exact observation: {\"nonincreasing\":true,\"retained_pair_counts\":[6,5,4,0],\"zero_is_structural_absence\":true}",
+    "complete family observation custody: 16 records; all rows preserved",
+    "complete finite support, partition, description-program, unit and retained/closed-ledger enumeration supplies the observation; no imported entropy formula, continuum logarithm, universal oracle or fitted threshold enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:eed02d8a89e99830934bb807749219388a3f01018e1c216b1fdd64908f6ff42c",
+    "custodian_id": "SFT-EXP-INFO-MEASURE-009-V1-custodian",
+    "experiment_registration_hash": "sha256:49fde765083ecd1bbedb21873e07b5def2fdebfbba8deb806822fa5e11889f0a",
+    "prediction_seal_hash": "sha256:73cabf0e1dd946824c439c08768c426cc2e20a9cc222b261a4d6dcc1269a0934",
+    "registered_target_identity_hash": "sha256:3bfa1432cbfc43e8104f44f68921c3ce754666009c4ea066b97a164e8d2dd9da",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:da29c1ac70f3b138b817aa4d2177d77543ffae82fad3246cf9c87e5a2633c9d0"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:334dd81af5430a74c757896deb53586b3369a32d9f086ee506f048c2d8bfe2b8"
+}

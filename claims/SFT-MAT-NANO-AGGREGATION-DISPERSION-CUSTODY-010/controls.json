@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-AGGREGATION-DISPERSION-CUSTODY-010",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e0e73b81d49ad17e4ce038b134796b1aa38335c68f2d2c7c3fdd5f5b95f1590d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4cb9ea94fed8563e98b50c5da12b9ac3e887414688efb9d7c539b22b93462f1e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:36b038712e931bbedf441c68e8da53e11af36f9cb18d9bb4b8ed5807df7f21bc"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7a089f0e57ff3347d66119a90f9305bde3a141b3d8d5047a7607ac6d6260036d"
+    }
+  ]
+}

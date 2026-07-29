@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-REFRACTORY-UHT-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4b787b424e3aeab99bcc61e45504470a2459a05344682dd71933ca77f548d197"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c45e438018803c91f176a2e3fba330c43e906d0f6eeea0f213399c964ca624be"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:32604fccd6af3149be4215bced2463fbc8e41e5d2f9d827741facbbf1daf4bd7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e0dc889f5e1dbc5f5d0ab07d57dac7451b6816d8bb4fced2c67a3d0e4ef8932f"
+    }
+  ]
+}

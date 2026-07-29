@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-RHEOLOGY-014",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:66f4f5a92c0d81c614e54a808d272e7db3e389f37d33cb09c88310a8dfaa2366"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:046cc41522d26cebb0856a55764b8e1769ac992ea6f73f1f04993e52e62ba9dc"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:5ff5cdf48727d416c4c89b2e1e9b06476357ba131467331b8a1ecea180c90ea8"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:7b889ab48a310ccdf578df5f4aca9eaccc3ba14280877e8860fded0708b84652"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-FORMX-REWRITE-NORMAL-FORM-011",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-FORMAL-COMPUTATION-OBSERVER",
+    "SFT-V1-V2-COMPUTATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:dd98e337dbfee97a8d08d8c635322c6db9dacc2c80c63d5bd2a6be942f895f35",
+  "falsification_condition": "Reject if the value-free registry, complete formal grammar, exact execution, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:9501c965875973cdad22b3ca41126f424831f7b2a9bf3e23cd3ea597cc410091",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:ddba9a2d6c9dcddff57c0a1ad007fe95d77685ba41dab694c27a5ba2d71f5357",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-FORMX-011-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:6f47fee42a3e58014267cb15b788d2e33d7896a2e42c415c25ee12e70cce1ae9",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:fc32d458a8ea1aca7c800ae23d3291b5ec35c6be9c14eec73debe589075b71a1",
+    "prediction_seal_hash": "sha256:92efe4f0d92ef02b7bbc79dfe180fef9106b1dbdeac8f25359f7a5d880fa1bee",
+    "program_hash": "sha256:c1bb389b8bac035884f86f4d7a0bb89d5fe041cd3190d1021369c0fff03906bd",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:f5202618dc72078a05d47028870748e763ba145e06459a22966d4d4a676f080c",
+    "target_material_present": false,
+    "trace_hash": "sha256:a7606d57c893348cc83d2d594dca85c7935b47a74a5d828a448359a5e087e857"
+  },
+  "measurement_receipt_hash": "sha256:201a787c821eea9475d56af164267e552232c2231fd6cf2e1a9c412783943740",
+  "measurements": [
+    "FORMX-011: rewrite_normal_form",
+    "exact execution: {\"normal_form\":\"bbaa\",\"source_word\":\"abab\",\"terminal_forms\":1,\"well_founded_descent\":true}",
+    "complete formal-computation observation custody: 22 records; all rows preserved",
+    "complete finite state, transition, grammar, trace, circuit and translation execution supplies the observation; no imported machine axiom, hidden branch or target-selected answer enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c9dfb2210bc6fdcc932509ac737381dae687ce34526183784331774571e02408",
+    "custodian_id": "SFT-EXP-COMP-FORMX-011-V1-custodian",
+    "experiment_registration_hash": "sha256:dd98e337dbfee97a8d08d8c635322c6db9dacc2c80c63d5bd2a6be942f895f35",
+    "prediction_seal_hash": "sha256:92efe4f0d92ef02b7bbc79dfe180fef9106b1dbdeac8f25359f7a5d880fa1bee",
+    "registered_target_identity_hash": "sha256:f5202618dc72078a05d47028870748e763ba145e06459a22966d4d4a676f080c",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:b392c59a3b5e78fd2a0eadd0a0c87d38baf063b526d664776be134ad77480152"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:9b06e9d9e5a7d5cb45e7fdd92fc03b1592f3c4a7cf0e1225de8eb52ef4e17a65"
+}

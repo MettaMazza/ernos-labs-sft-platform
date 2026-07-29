@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYS-SHORT-RANGE-DIFFUSE-004",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f04f881bc1a956e795e4e73fa91ca6f2c7dd04c4aeaffeb8d12d06f8972271d4"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:cd64deace565b9b68e81659f50ce4bdc1858d94bf39829c24c2e1da473d714c1"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ddc422d3b55487ebfe63690f499eed501a5391e17e1112927b9c803f29b77cd2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4952e0501d20b720beb5666b1eb8eecddef71e6ad3fae2e3f1f9226a064aa45f"
+    }
+  ]
+}

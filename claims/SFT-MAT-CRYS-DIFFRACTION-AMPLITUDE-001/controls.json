@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYS-DIFFRACTION-AMPLITUDE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:4be4b13eec5ad3539966212b556a5ae83398962ca29eaba943f19dc03240f0f9"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:7312a19238bdc9342f9684b433f23e6eab149d04d4fc448ed2b6eb924caf43aa"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ed36bce31b9f3ab8ba51e8c2595bece9772c69ee26c142b6cfeddf586f4fb1ec"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:8702bc1de8d732a993f8abefe48111a3616aa5e800f6e0f2d8751c24d0d86177"
+    }
+  ]
+}

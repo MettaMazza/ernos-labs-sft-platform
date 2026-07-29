@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-RECONSTRUCTIVE-007",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:498d4923fcd67be82b3c6f83521fd56a130b59c765798d05b0ddc1a2f73311c0"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:694947b6f4bdb71e9f48b6a45772eb15020b34e43054b9cb157e9a7eec5c26bc"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:80ab986edb57fa0fedeb820a39c672d32701622fa01710a29f3f3b7bdb3e88c2"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d26ad7817cb70d7500d8d1c9087cc01600b309401b01677527a40ef276e09abc"
+    }
+  ]
+}

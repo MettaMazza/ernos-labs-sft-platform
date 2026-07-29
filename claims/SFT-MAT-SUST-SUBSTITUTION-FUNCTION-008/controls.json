@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-SUBSTITUTION-FUNCTION-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:adbc520695193e2e214a613fea99709dce0281439ad0900e0934f0ee82146346"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e4450f6b3649d741537346b9bacb66b2e7954aec343a145c7410633db4bfbe47"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:7b27ab201c7250a781f4a56c09656b6170aa470a2d0ae91a9966e7448985e939"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:58c41da0ad3da8e151142be36dd00f210dcc34c09b702ca4c16cbb0fba896af1"
+    }
+  ]
+}

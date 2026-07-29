@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MECH-WORK-HARDENING-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:89f280f9d5588c1118ba3fa01f73e78b5626a2be6c2e4aacfc5c38491ceb47c2"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:bee073301dd0167de2011821f1959095671f13a8c0e0e33375ecdc91760f6860"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:fb63db258201e8e3f746f742fa90003cea5ef64766b7dbb297efacbac5fa6656"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:4a9e9fc9c8de3d4a939079e568ff364d873a4282420ac3158fdef05f173e998c"
+    }
+  ]
+}

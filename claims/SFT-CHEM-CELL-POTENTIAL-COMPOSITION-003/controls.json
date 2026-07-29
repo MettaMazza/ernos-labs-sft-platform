@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-CELL-POTENTIAL-COMPOSITION-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:1e281e07e6da6377a6340ec59573c77ac680664859607b0f07bcfab84c6cb8bd"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f8d98370ee32227302c1c25abf1e9bc4e8112c362db7beee0e279e2d318dc700"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:a455b27c4a18b53034bae58e023774538dd74fae869e5d614d391197980a0d40"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:c038614dd1164c684674ca9fc4391d6ab93802bb658f5abfad76a4c88f0ef7e8"
+    }
+  ]
+}

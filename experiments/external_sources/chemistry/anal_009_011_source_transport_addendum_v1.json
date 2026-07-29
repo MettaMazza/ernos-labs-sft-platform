@@ -1,0 +1,36 @@
+{
+  "schema": "sft-v3-postseal-source-transport-addendum/1",
+  "family": "ANAL-009-011-RAMAN-FLUORESCENCE-PHOSPHORESCENCE",
+  "created_date": "2026-07-28",
+  "sealed_source_registry_path": "experiments/external_sources/chemistry/anal_009_011_photoluminescence_family_source_identity_registry_v1.json",
+  "sealed_source_registry_hash": "sha256:56a97fb99d5e8e3ea34f6ce2da2d35a5bf40b8ec11bba33ac0cda4337a29ffee",
+  "reason": "The registered IUPAC trailing-slash PDF routes returned successful status with empty response bodies during post-seal transport. The quantum-yield DOI was also found to contain a one-character year transcription error. This addendum changes transport only, preserves the same registered publication identities and cannot alter candidates, targets or survivors.",
+  "transport_corrections": [
+    {
+      "source_id": "IUPAC-FLUORESCENCE-STANDARDS-2010",
+      "registered_transport": "https://publications.iupac.org/pac/82/12/2315/pdf/",
+      "postseal_transport": "https://publications.iupac.org/pac/82/12/2315/index.html",
+      "status": "official complete identity and abstract surface; full-pdf transport remained unavailable to the capture client and is retained as unavailable rather than silently omitted"
+    },
+    {
+      "source_id": "IUPAC-PHOTOLUMINESCENCE-QUANTUM-YIELD-2011",
+      "registered_transport": "https://publications.iupac.org/pac/83/12/2213/pdf/",
+      "postseal_transport": "https://pure.uva.nl/ws/files/1189483/104485_354696.pdf/1000",
+      "transport_authority": "University of Amsterdam institutional repository final published version",
+      "registered_doi_transcription": "10.1351/PAC-REC-11-09-31",
+      "correct_doi": "10.1351/PAC-REP-10-09-31",
+      "status": "complete final published PDF transported from the author's institutional repository"
+    },
+    {
+      "source_id": "NIST-IR-7458-REFERENCE-45-FLUORESCENCE-LIFETIME",
+      "registered_transport": "NIST IR 7458 complete reference 45, DOI 10.1021/ac062160k",
+      "postseal_transport": "https://escholarship.org/content/qt54v9h1d4/qt54v9h1d4.pdf?download=1",
+      "transport_authority": "University of California institutional repository",
+      "status": "complete accessible article PDF containing the registered 20-combination interlaboratory lifetime surface; search metadata exposure is disclosed and never relabelled blind"
+    }
+  ],
+  "source_identity_changed": false,
+  "target_identity_changed": false,
+  "candidate_or_survivor_changed": false,
+  "postseal_outcome_used_to_select_transport": false
+}

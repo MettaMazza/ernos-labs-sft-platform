@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-DEGR-OXIDATION-SCALE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:8cf0983a118dba7af3a8b5c11fbdb6f8bdc8ef0316f331738918c312006a4eba"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e5240c0e01a41835243d3f81e5d7d8c8b52ee98b6a7b4ed082f54598d17ce8b7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:49a849cd13192bf3cbf8dab8540295cc21b119931032cd97b02d718eb56f02cd"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e2bded4eec2b0361dc973d24f569a6cbf1c2697836b75272fc9d9864369129db"
+    }
+  ]
+}

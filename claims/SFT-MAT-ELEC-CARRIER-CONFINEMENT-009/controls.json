@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-CARRIER-CONFINEMENT-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:247177d5a14e8b8a21ba15e1301cf48cd30dcc32dfb145a8427dd592aa84dc7d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:b8c3e4c9be372fbcf9d69c61e50a19070b71c543fbb979be2016217c45ef298f"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:23bac81e4ff5d22f31ad06057fe4535fcc2f64abedf36b0d525b4dc8b313d3a0"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:93a064abfb6160d74365451b5bad32619cc24e38b4d214afb53bd0dfb84e1435"
+    }
+  ]
+}

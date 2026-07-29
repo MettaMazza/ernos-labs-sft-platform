@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-FUNCTIONALLY-GRADED-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:78f5db6b4a3ae82ed88193134f68520556cf7280ac081019afe06d6aa39f3e6d"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c0fa31bde0cda47e583528e0633b6ffa34896ecf7dd2dd836dd60220975bb1e7"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:ec3d39e64e7e1c2165f6c84b13e167e663833d4e969979b9992620deb3bed723"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:3bc60b49b082463779b4564ed2a81ca8399f229e45d3ed6d3628535e29cbf46c"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-CHEM-ELECTROLYSIS-PRODUCT-AMOUNT-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the generated form lacking the complete physical carrier",
+      "kind": "false_premise",
+      "observed_behavior": "reject the generated form lacking the complete physical carrier",
+      "passed": true,
+      "receipt_hash": "sha256:580e6173aee195cf17312c687318eac76ceac69964cf1fefad85e860c5d9edfb"
+    },
+    {
+      "expected_behavior": "reject a changed registered source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed registered source identity",
+      "passed": true,
+      "receipt_hash": "sha256:e91b70c7c6b5c757e88743165004162fa8227fbaed6a084c1e3d504a46c01deb"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:cf8ebb8b3127be8105569a218758277841b5de521e9d07b863d8a1259113d966"
+    },
+    {
+      "expected_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "kind": "boundary",
+      "observed_behavior": "reject target access, forbidden proof values, imported laws and free parameters",
+      "passed": true,
+      "receipt_hash": "sha256:ac25682a14f521968f5092399ec656a4c3d4d1c39a42bfaaca2882b8023d910e"
+    }
+  ]
+}

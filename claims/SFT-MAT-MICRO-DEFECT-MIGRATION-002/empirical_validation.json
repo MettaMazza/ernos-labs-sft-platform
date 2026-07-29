@@ -1,0 +1,62 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-MICRO-DEFECT-MIGRATION-002",
+  "data_source_ids": [
+    "NIST-POINT-DEFECTS-2026",
+    "NIST-DISLOCATION-DYNAMICS-2021"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:ed3383ad26f1e858c9899af3ffe1c6a69d16ae993d44e74559fde59bb0b2c261",
+  "falsification_condition": "Reject if any registered source identity, available fragment, unavailable row, failed route, specimen/method/condition boundary, prediction seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:5ad2caa5f50f3fdd03c71c8a25f07a30a5ea22acf5364b1a1b105b0a1901c7c6",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:18d5a08a26d8c4bdd89d679ad18b5da93c83cb8f7fac388cdef8fa9fb707bd31",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-MICRO-002-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:323db1356f8bb3d4dead455f705320ea4346c39f408546140bff40044ca447d3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:cc8057b9c570ca20d706a747296dc9d9783f2fbd9850b2c30a5631dcb7fb5c71",
+    "prediction_seal_hash": "sha256:b6515601ea21706221c05c91db90556c01d3ea6d43382336a395b0ac1c2e3136",
+    "program_hash": "sha256:374ac217c952c93e514cac162fa86be48f4438d17a56745ae0ce5149f3f98da6",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:e9a58cafeb0ee481d04ef46c8a7582a226439acc97e7155a1e198b590663c433",
+    "target_material_present": false,
+    "trace_hash": "sha256:48038fd466227449fb163a039edbaeec8665aa38d9fafea703d2c0fd904548f6"
+  },
+  "measurement_receipt_hash": "sha256:c1e1ea25de13bd67599583f5e7f7d885fa0d096bda9d4096dcc13bd75c2b3e0b",
+  "measurements": [
+    "MICRO-002: 2 distinct comparisons retained",
+    "family custody: 9 usable and 1 unavailable sources",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-POINT-DEFECTS-2026: captured_preexisting_official_snapshot; vacancy diffusion; mobility and local interaction of ionic charge carriers; favourable-use=True",
+    "NIST-DISLOCATION-DYNAMICS-2021: captured; evolution of dislocation structures; vacancy concentration; favourable-use=True"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d18bc7468d5154adb75126a3ae70375e53cd3aa754546344ca3b6e76d27373fd",
+    "custodian_id": "SFT-EXP-MAT-MICRO-002-V1-custodian",
+    "experiment_registration_hash": "sha256:ed3383ad26f1e858c9899af3ffe1c6a69d16ae993d44e74559fde59bb0b2c261",
+    "prediction_seal_hash": "sha256:b6515601ea21706221c05c91db90556c01d3ea6d43382336a395b0ac1c2e3136",
+    "registered_target_identity_hash": "sha256:e9a58cafeb0ee481d04ef46c8a7582a226439acc97e7155a1e198b590663c433",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:54de3eb608a22b97b33559486d906f70f8c5a6ee5393a5436e8bfec4a0b7ab20"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:cb1e1ffc59df5bbd49ba30aa3aac7fda333287b1797a83581daa9a88333c087d"
+}

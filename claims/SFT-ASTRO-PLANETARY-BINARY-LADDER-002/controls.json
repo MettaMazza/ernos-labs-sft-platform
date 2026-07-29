@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ASTRO-PLANETARY-BINARY-LADDER-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:6e4b68dad3881089e91dd21939b32c4f36465639d1a300bd2f80198dbf43644c"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:c3ef3949e833392ad262341578c8e8e1646685f2b7336cecf803918ab58a799e"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:e44e80e4f557e74013976afbab560ce3d27eb9643082eb3d5fed7530a5b500b9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:5db4e22a6637b75393ecce2a1735638b114d1629520e5b81c18ef2b9c3626d84"
+    }
+  ]
+}

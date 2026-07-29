@@ -1,0 +1,83 @@
+{
+  "schema": "sft-v3-chemistry-echem-001-013-family-source-identities/1",
+  "registered_date": "2026-07-28",
+  "family": "ECHEM-001-013",
+  "outcome_values_used_to_select_a_source_identity": false,
+  "sources": [
+    {
+      "source_id": "IUPAC-GREEN-BOOK-ELECTROCHEMISTRY-2007",
+      "authority": "International Union of Pure and Applied Chemistry",
+      "uri": "https://old.iupac.org/reports/provisional/abstract05/GreenBook051206_prs.pdf",
+      "identity": "complete electrochemistry quantities, units, cell, standard-potential and transport terminology surface",
+      "obligations": ["ECHEM-001", "ECHEM-002", "ECHEM-003", "ECHEM-004", "ECHEM-005", "ECHEM-006", "ECHEM-007", "ECHEM-008", "ECHEM-009", "ECHEM-010", "ECHEM-011"],
+      "custody_status": "development_observed_terminology_and_display_equations__exact_claim_rows_not_labelled_blind"
+    },
+    {
+      "source_id": "NIST-JPCRD-STANDARD-ELECTRODE-POTENTIALS-1989",
+      "authority": "National Institute of Standards and Technology, Journal of Physical and Chemical Reference Data",
+      "uri": "https://srd.nist.gov/jpcrdreprint/1.555839.pdf",
+      "identity": "Standard Electrode Potentials and Temperature Coefficients in Water at 298.15 K, complete reference-data article and tables",
+      "obligations": ["ECHEM-001", "ECHEM-002", "ECHEM-003", "ECHEM-004", "ECHEM-005"],
+      "custody_status": "title_introduction_and_reference_definition_development_observed__complete_tables_unopened_for_claim_specific_selection"
+    },
+    {
+      "source_id": "NIST-JRES-AGCL-STANDARD-POTENTIAL-2001",
+      "authority": "National Institute of Standards and Technology",
+      "uri": "https://www.nist.gov/publications/treasure-past-vi-standard-potential-silver-silver-chloride-electrode-0deg-95degc-and",
+      "identity": "complete silver-silver-chloride standard-potential and dilute-HCl thermodynamic record across 0 to 95 degrees Celsius",
+      "obligations": ["ECHEM-002", "ECHEM-003", "ECHEM-004", "ECHEM-005"],
+      "custody_status": "landing_identity_development_observed__complete article values reserved for claim-specific postseal capture"
+    },
+    {
+      "source_id": "NIST-CODATA-2022-ALL-CONSTANTS",
+      "authority": "National Institute of Standards and Technology CODATA",
+      "uri": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "identity": "complete 2022 CODATA all-constants ASCII record including the Faraday constant",
+      "obligations": ["ECHEM-005", "ECHEM-006"],
+      "custody_status": "already_captured_authoritative_dependency_record",
+      "snapshot_path": "experiments/external_sources/physics/snapshots/nist-codata-2022-allascii.txt",
+      "snapshot_sha256": "sha256:77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67"
+    },
+    {
+      "source_id": "NIST-SP-260-176-SRM-CATALOG",
+      "authority": "National Institute of Standards and Technology",
+      "uri": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.260-176.pdf",
+      "identity": "complete Standard Reference Materials catalog, conductivity section and certificate-routing identities",
+      "obligations": ["ECHEM-007", "ECHEM-008"],
+      "custody_status": "catalog_descriptions_development_observed__claim_specific_certificates_and_values_to_be_sealed_separately"
+    },
+    {
+      "source_id": "NIST-DOUBLE-LAYER-GRAPHENE-ELECTROLYTE-2020",
+      "authority": "National Institute of Standards and Technology",
+      "uri": "https://www.nist.gov/publications/nanoscale-mapping-double-layer-potential-graphene-electrolyte-interface",
+      "identity": "complete article and quantitative potential-drop records for graphene-capped aqueous electrolytes",
+      "obligations": ["ECHEM-009", "ECHEM-010", "ECHEM-011"],
+      "custody_status": "abstract_and_material_system_development_observed__complete quantitative surfaces reserved for claim-specific seal"
+    },
+    {
+      "source_id": "NIST-METAL-ADDITIVE-CORROSION",
+      "authority": "National Institute of Standards and Technology",
+      "uri": "https://www.nist.gov/",
+      "identity": "captured NIST metal-additive corrosion program record inherited at the Chemistry-to-Materials boundary",
+      "obligations": ["ECHEM-012", "ECHEM-013"],
+      "custody_status": "already_captured_handoff_dependency_record",
+      "snapshot_path": "experiments/external_sources/materials/snapshots/nist-metal-additive-corrosion.html",
+      "snapshot_sha256": "sha256:a1bb9a6bc22eb85fb7a1b3c7d0ac4bc0837d68832b7b7c6f357a68ea6cde0322"
+    }
+  ],
+  "claim_target_boundaries": {
+    "ECHEM-001": "complete half-reaction species, phase, reference and held transfer orientation; conventional signed electron notation remains external",
+    "ECHEM-002": "complete standard-potential reference vector with half-reaction, reference electrode, temperature, species, phase, unit and uncertainty",
+    "ECHEM-003": "paired half-cell composition with exact cell orientation and complete potential vector",
+    "ECHEM-004": "predeclared concentration/activity and potential series with all temperatures, phases, signs and uncertainty retained",
+    "ECHEM-005": "complete cell-work, reaction-direction and equilibrium correspondence with Faraday custody inherited from Physics",
+    "ECHEM-006": "counted transferred distinctions against complete charge/product-amount records and the authoritative Faraday record",
+    "ECHEM-007": "complete NIST-traceable conductivity certificate vectors, compositions, temperatures, units and uncertainties",
+    "ECHEM-008": "complete species-resolved mobility and transference vectors; all carriers and direction labels retained",
+    "ECHEM-009": "complete current-potential-condition vectors with no fitted exchange-current or imported exponential premise",
+    "ECHEM-010": "complete overpotential and polarization curves with the equilibrium reference state retained",
+    "ECHEM-011": "complete double-layer potential/capacitance surfaces with composition, interface and spatial support retained",
+    "ECHEM-012": "complete coupled anodic/cathodic corrosion network, potential/rate vector and Chemistry-to-Materials boundary",
+    "ECHEM-013": "exact one-owner storage handoff linking admitted cell chemistry to Materials bulk response without duplicate ownership"
+  }
+}

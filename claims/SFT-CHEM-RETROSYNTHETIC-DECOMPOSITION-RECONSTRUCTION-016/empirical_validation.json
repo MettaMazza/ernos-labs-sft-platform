@@ -1,0 +1,66 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-CHEM-RETROSYNTHETIC-DECOMPOSITION-RECONSTRUCTION-016",
+  "data_source_ids": [
+    "IUPAC-M03804",
+    "IUPAC-M03804",
+    "IUPAC-M03804",
+    "IUPAC-M03804",
+    "IUPAC-R05174",
+    "IUPAC-R05174",
+    "IUPAC-R05174"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:70b559949ae4095918237595efcfde2951058388f28283f0a4fd23df1decb874",
+  "falsification_condition": "The claim fails if more than one form survives; a split or tree is omitted or duplicated; a path does not exactly reconstruct the target; either complete IUPAC record, alternatives or incomplete-evidence disclosure is omitted; or an external route selects the graph.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:d1a444cec6e98fd81b898a4c5a65f277333d93fb074b1510bc514c0ca5b7dcdb",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:1103de562c9b92c9ebf6763602a59d88f6441515cc71af2bbfcfe9cf02a022ec",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-CHEM-RETROSYNTHETIC-DECOMPOSITION-RECONSTRUCTION-016-prediction-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:af472332d3eb440d4d7bb9ed06b059288f6d17a8ca602ca8583d01bbbd2e260e",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:77d0a7c9c1c8873044e415a96dcc310386ffc2bc1a36f71a348c1e4147e42e7d",
+    "prediction_seal_hash": "sha256:8b882421ea3626a2b25bc4a1794cece21c713f10f588811951a06095c2c6e165",
+    "program_hash": "sha256:5531af8828e8804acf0ced4e2fb410ccaaa112af46e8c8c1eb80a479eccdd689",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:c57a949b74287a6633505a008b0f96056aba4db48bd277e66137626c2ec4ecef",
+    "target_material_present": false,
+    "trace_hash": "sha256:ce907bf465ab87baddd049d03b18b592b03cdfe610174ba76110b3fa61f63774"
+  },
+  "measurement_receipt_hash": "sha256:fa7ab759bca0a1484a7676937e44db9fa076f0cd04d18e9324336f8e97d179ab",
+  "measurements": [
+    "both complete IUPAC records retained",
+    "five four-leaf trees and fourteen five-leaf successor trees generated exactly",
+    "all nineteen bounded trees forward-reconstruct their exact target",
+    "alternative mechanisms and incomplete-evidence disclosures retained"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:b6360800cc16a14600a5ad66346b9339e720f8abc032f8b537750111b986348a",
+    "custodian_id": "SFT-EXP-CHEM-RETROSYNTHETIC-DECOMPOSITION-RECONSTRUCTION-016-external-target-custodian",
+    "experiment_registration_hash": "sha256:70b559949ae4095918237595efcfde2951058388f28283f0a4fd23df1decb874",
+    "prediction_seal_hash": "sha256:8b882421ea3626a2b25bc4a1794cece21c713f10f588811951a06095c2c6e165",
+    "registered_target_identity_hash": "sha256:c57a949b74287a6633505a008b0f96056aba4db48bd277e66137626c2ec4ecef",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:595f997536ff689cc03cfe4f2f08b63ce2d171282d4389e78c17f7f41e8536a4"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:d703b40b3725707312d9dc451a7fde6937343f8253e40f5678df48899f972bc3"
+}

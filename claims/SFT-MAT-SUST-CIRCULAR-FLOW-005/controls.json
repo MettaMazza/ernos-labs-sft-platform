@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-CIRCULAR-FLOW-005",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:0832c57dd03585aa070b4a73a735f1b848e82243da42d28ff90db9a4e51e30ff"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:76c2832f8a8fb7266ff6c4c05f7ebbd498528d373eb225c70ac884c3994431f3"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:915d18aa9c0960cb7cbdfbc3c2ca15806f19fd3db26e830f799101352efb6f0c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d6237e95657b8a930a3b62c647d7897ea28ee8ff71203ff636552e2abbb505ed"
+    }
+  ]
+}

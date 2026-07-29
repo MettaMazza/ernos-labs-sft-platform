@@ -1,0 +1,3 @@
+# Why NUCHEM-007 requires a derivation check
+
+A conventional displayed value cannot establish the equilibrium isotope-fractionation law. This claim separately generates all 256 registered forms before comparison and uses only its own value-free identity and source-exposure-disclosed derivation seal. The shared post-seal capture reconstructs five registered official sources as 266 complete PDF pages, one complete HTML document and 410,095 extracted characters. Every measured value, unit, conventional zero or sign, decimal, uncertainty, assumption, correction, estimate, loss, method disagreement, favorable, adverse, absent, unavailable and unresolved row remains downstream provenance and cannot select the native Fold law.

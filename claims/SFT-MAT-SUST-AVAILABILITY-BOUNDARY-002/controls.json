@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SUST-AVAILABILITY-BOUNDARY-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c137e39aa75555bf3d70c06db00b653b7d706b27d4ea68f9c005d68ac45cb4f5"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:4590d3b03570d251ec54e4865be1fbf1c84257935258cbf93238c16587e31afd"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bbe8e144095ad63ee47852a516dcd4fa9ec06bce13f04055f6cfab65cd70536f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:372d8ff369ed026a0428ac4cc84d349be04198198bcc6405a95499181d586b9f"
+    }
+  ]
+}

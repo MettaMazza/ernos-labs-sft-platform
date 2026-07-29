@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-SIZE-SHAPE-DISTRIBUTION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:fd550fbbcf0a9736a53cf673fbde48cf513963848566a7fa86670eec2c3d5072"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ca799500f522df2ebe2e44f61be2cc35fb4f08adc3d3e51a73217b5188a70d6c"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c7b00969b5bed57fc0dbfcc9b9e4bc8eaa099afbd60e05cdcfa8b012c2baec47"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e9dfac62b80481ab81d592a0e2b357aa1655dc49ec98078ddc2b2bf451a7f14a"
+    }
+  ]
+}

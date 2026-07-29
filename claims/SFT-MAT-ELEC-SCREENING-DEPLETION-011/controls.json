@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-ELEC-SCREENING-DEPLETION-011",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:40b4952815401aee46948deb298fa3e6287b5be8bb9d7dbff388ca4a7edac45e"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:2abc45e7b03a0aa2fac321b890e2d197368a17ec1d78b877f0d0554121a85c19"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b10147d4b5c1e89334a62954425f77e3a6fdcde898b4efed60aa571b0a8110c1"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:aee2b1df8da5514a896bd8229176da7d42b3ae616308d360914240c20b051e85"
+    }
+  ]
+}

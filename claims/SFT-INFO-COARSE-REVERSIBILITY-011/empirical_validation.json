@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-INFO-COARSE-REVERSIBILITY-011",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-COARSENING-OBSERVER",
+    "SFT-V1-V2-COARSE-INFORMATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:2fb9f6db2ef719aaa8d8cb406d972fae51472a0fff5d6c7ceac66fb6e6181262",
+  "falsification_condition": "Reject if the value-free registry, complete source-partition and reconstruction census, exact observation, candidate survivor, source identity, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:bec67684f0478cc7b5363b92ca448d8c6593df7df029ae74f8e3504591daaa57",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:738708cbb0af46433e17c3b40e4984c84f2ae1a3365e28407bd5958ee014b43c",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-INFO-COARSE-011-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:95d614c89a3ce0f4004a55f59eaa176bc8fc589e989ae5614087ef0610264fb3",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:2246627f55c1a58030a5fd0b8f03debd34c7fba7d46a26bac7dda2782bdeac39",
+    "prediction_seal_hash": "sha256:9dc4db96c58cc129876fbaa101b4e30152309d751aa5200ccab3088ddf2291ad",
+    "program_hash": "sha256:d3265a59a6498237b4738a5c332ffa1b71da4460551b69a00a3acf864bb1ba85",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:645dfd27d762411d8d26aee28a1fbf7a6c4ca5b3d5ed82c15638d55769867cfc",
+    "target_material_present": false,
+    "trace_hash": "sha256:c0eaf571e38893ada14f3271c72f44221dd5f548e54ac2931f505b872f624f53"
+  },
+  "measurement_receipt_hash": "sha256:2b3627ff7d23be3c6d2511f20f71c099f113ec58c29e499d995dfc4134bb62e1",
+  "measurements": [
+    "COARSE-011: reversibility",
+    "exact observation: {\"identity_fibre_size\":1,\"pair_fibre_size\":2,\"retained_label_required\":true}",
+    "complete family observation custody: 12 records; all rows preserved",
+    "complete source, partition, target-class, loss-pair, quotient-transition and reconstruction-fibre enumeration supplies the observation; no imported statistic, fitted bottleneck weight, chosen feature score or hidden source enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:badb6219b02eeb7fc21620bb1d2b0d582181c587996b2f6d5de586038ee687a7",
+    "custodian_id": "SFT-EXP-INFO-COARSE-011-V1-custodian",
+    "experiment_registration_hash": "sha256:2fb9f6db2ef719aaa8d8cb406d972fae51472a0fff5d6c7ceac66fb6e6181262",
+    "prediction_seal_hash": "sha256:9dc4db96c58cc129876fbaa101b4e30152309d751aa5200ccab3088ddf2291ad",
+    "registered_target_identity_hash": "sha256:645dfd27d762411d8d26aee28a1fbf7a6c4ca5b3d5ed82c15638d55769867cfc",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:1b5a375a46d4f626d5ca54dc9825539397be0e150ccf0f831a6e70a5cf27b7cb"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6fc41b0f88d539021c023dcec37e3469710f06c1be8e58f8d7188380ba3a88e3"
+}

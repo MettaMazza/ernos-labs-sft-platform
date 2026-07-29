@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-NANO-PHASE-MELTING-BOUNDARY-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:3a0c0cffa8ddc1a81aace5423659992eda0c8d9a2034c8f7d2ff8463245c3e87"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:3a9fdee4ec9c311c30b469bd87e68493bc19e7b29617e035a26adc4f18122567"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:f00ab62d3745e3df8848b298cfc93e01ffa544d662ae69125045613891cfbace"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:e8594b7ea33eebc87084c84869534abd2b73830a99457d505b7a99faefbd5b8b"
+    }
+  ]
+}

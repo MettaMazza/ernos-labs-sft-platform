@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-COMP-ALGX-NONCOMPARISON-ORDER-004",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-ALGORITHM-OBSERVER",
+    "SFT-V1-V2-ALGORITHM-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:450a3cac91f69eff109302634c143c35ac231979f49134edf63a307e02046feb",
+  "falsification_condition": "Reject if the value-free registry, complete input organization, invariant, exact trace, result or guarantee, source identity, survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:280e9d69891b6b525f0426bc56b5e41ac6015a1ef738978739785f602ea2f7dd",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:3eb30889b3266ae224ef5925d9a7fdc4f8c8d4de4b302d9248b7f23fca3de4b1",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-COMP-ALGX-004-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:0ee750f844c712c64d3f292ba720626aa659a11137a6d98a226c9744df1d4d04",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:645585bf018709e90dc4ad40f262fbeeb492ca6704bb430ed6955fa09fbab9ad",
+    "prediction_seal_hash": "sha256:ce56d5f3883f4d3d7cc22137b9491beae88566a92e01f6c6c4ea4d0a3b25ffdf",
+    "program_hash": "sha256:fa3c427d351b5a5ca8f6b23ff2234fddc1cfa52d649691491a41f6c8ed7575eb",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:6ea713ec2b901ed79a9b6da65ee8792e7be41b4f545a0539d35a468a4dad6fbd",
+    "target_material_present": false,
+    "trace_hash": "sha256:602f2e3b2fddb430cd22b2b8d02791e86defb6139b845d47e08c33f804e429de"
+  },
+  "measurement_receipt_hash": "sha256:09813d9087f305a8ea2dabff7f17feaccc514fd1701becf5fbf1605bfc920e33",
+  "measurements": [
+    "ALGX-004: bucket_order",
+    "exact execution: {\"alphabet\":[\"a\",\"b\",\"c\"],\"input\":[\"c\",\"a\",\"b\",\"a\"],\"output\":[\"a\",\"a\",\"b\",\"c\"]}",
+    "complete family observation custody: 31 records; all rows preserved",
+    "complete generated execution supplies the observation; no imported theorem answer, hidden branch or target-selected survivor enters"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:c5457782637531eed017054e0ea03b1243e5121cc08e2e3483aacdf045cd47c3",
+    "custodian_id": "SFT-EXP-COMP-ALGX-004-V1-custodian",
+    "experiment_registration_hash": "sha256:450a3cac91f69eff109302634c143c35ac231979f49134edf63a307e02046feb",
+    "prediction_seal_hash": "sha256:ce56d5f3883f4d3d7cc22137b9491beae88566a92e01f6c6c4ea4d0a3b25ffdf",
+    "registered_target_identity_hash": "sha256:6ea713ec2b901ed79a9b6da65ee8792e7be41b4f545a0539d35a468a4dad6fbd",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:dd582e41d9dc3301892aea4c4b6ee746b221856695a217dfb3f58294b36cb632"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:f0d5a368fa30298b5a8f83e900669a9619c815723059d521d8881b4d47d29902"
+}

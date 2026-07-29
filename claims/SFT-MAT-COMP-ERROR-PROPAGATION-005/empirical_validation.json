@@ -1,0 +1,60 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-MAT-COMP-ERROR-PROPAGATION-005",
+  "data_source_ids": [
+    "NIST-UNCERTAINTY-PROPAGATION"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:b9a207161c2609c700521f6957bed7989e5cf0e946e695993035dbfb0e6784e8",
+  "falsification_condition": "Reject if any registered source, fragment, condition, path, seal, custody identity, candidate, control or independent reconstruction is missing or changed.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:3908edee45c501a5bc5ef59b11e86fe73500945c2fba514c9f4eaaef9378a259",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:a954a1b3f895f06e4fc29410bef03c052f1b45b00fb86d485603351b40968eb4",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-MAT-COMP-005-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:c0ebd538239e063c2ef9eea2bacf6f370c9cf96c0ad11fe9e9e2d4a588a0012a",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:bb39a663d8844be1a80cc5fd85035f5c5b6e8cd321ba02618a2426f59a3642e4",
+    "prediction_seal_hash": "sha256:d59da673e05e29d61c60e583346dbb69d4bc5980fcb690433abb254061a3ee0f",
+    "program_hash": "sha256:243d6bb83b20a3334259bf9ed85c05b7060f31e462fee3a27ff0a1063d837936",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:8a49ed7beb32952cf5e8981d69505a0074d8f702123651b2c05c76e0282c860b",
+    "target_material_present": false,
+    "trace_hash": "sha256:7c8a96b4746bfeb2ed1c69eec4579bb6c7626727fca2f9066705284065b27b21"
+  },
+  "measurement_receipt_hash": "sha256:c6ae4612fbf0d0bff28eecf61beb43750ae588668b41eaf9bbdaf994b9d42fa7",
+  "measurements": [
+    "COMP-005: 1 comparisons",
+    "family sources: 12",
+    "exact correspondence: True; omission rejected: True",
+    "NIST-UNCERTAINTY-PROPAGATION: propagating errors and uncertainties; first-order Taylor series expansion"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:9e9ae17ec2691d003b9189a706d0c7dc90c8a092e893794d01779749b26c463c",
+    "custodian_id": "SFT-EXP-MAT-COMP-005-V1-custodian",
+    "experiment_registration_hash": "sha256:b9a207161c2609c700521f6957bed7989e5cf0e946e695993035dbfb0e6784e8",
+    "prediction_seal_hash": "sha256:d59da673e05e29d61c60e583346dbb69d4bc5980fcb690433abb254061a3ee0f",
+    "registered_target_identity_hash": "sha256:8a49ed7beb32952cf5e8981d69505a0074d8f702123651b2c05c76e0282c860b",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:40ac25daf4daa2ffcd65591030de2ffdc320ff704ab5a7cf25ec7a089d320a78"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:6043e657a7498c7dd8cd5a4af0f9ab9ab7074fa995232e35ae795cfc8256de24"
+}

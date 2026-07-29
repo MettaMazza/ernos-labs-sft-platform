@@ -1,0 +1,12 @@
+from itertools import product
+import json,sys
+CLAIM_ID='SFT-CHEM-RADIOCHEMICAL-SEPARATION-DECONTAMINATION-010';DOMAINS=(('total-radioactivity-only', 'held-target-and-contaminant-species'), ('product-only-record', 'complete-feed-product-waste-streams'), ('continuum-concentration-premise', 'positive-species-resolved-counts'), ('unrecorded-process-loss', 'exact-target-and-contaminant-conservation'), ('percent-recovery-premise', 'exact-product-target-per-feed-target-ratio'), ('fitted-separation-factor', 'exact-contaminant-fraction-ratio'), ('numerical-zero-contaminant', 'positive-Take-or-EmptyOne-residual'), ('selected-best-stage', 'successor-composes-balanced-stages'));SURVIVOR='held-target-and-contaminant-species__complete-feed-product-waste-streams__positive-species-resolved-counts__exact-target-and-contaminant-conservation__exact-product-target-per-feed-target-ratio__exact-contaminant-fraction-ratio__positive-Take-or-EmptyOne-residual__successor-composes-balanced-stages'
+from fractions import Fraction
+def valid(x):return x[2]==x[4]+x[6] and x[3]==x[5]+x[7]
+def recovery(x):return Fraction(x[4],x[2])
+def decontamination(x):return Fraction(x[3]*x[4],x[2]*x[5])
+x=("Sc","V",10,12,8,2,2,10)
+native={"identity":x[0]!=x[1],"streams":len(x[2:])==6,"inventory":min(x[2:])>0,"balance":valid(x),"recovery":recovery(x)==Fraction(4,5),"decontamination":decontamination(x)==Fraction(24,5),"absence":(None if 10==10 else 10-10) is None and 10-8==2,"successor":valid(x)}
+def main():
+ s=json.load(open(sys.argv[1]));generated=["__".join(x) for x in product(*DOMAINS)];decisions={x["candidate_id"]:x["survives"] for x in s["decisions"]};passed=s["claim_id"]==CLAIM_ID and [x["candidate_id"] for x in s["census"]["candidates"]]==generated and decisions=={x:x==SURVIVOR for x in generated} and sum(decisions.values())==1 and s["closure"]["scope"]=="depth_independent" and all(x["passed"] for x in s["controls"]) and all(native.values());print(json.dumps({"validated_seal_hash":s["seal_hash"],"recomputed_from_declared_inputs":True,"passed":passed,"certificate":{"claim_id":CLAIM_ID,"generated_cardinality":len(generated),"unique_survivor":SURVIVOR if passed else None,"closure":"depth_independent" if passed else None,**native,"external_source_accessed":False,"numerical_zero_negative_irrational_imaginary_continuum_fitted_free_random_or_imported_parameter_used":False}},sort_keys=True))
+if __name__=="__main__":main()

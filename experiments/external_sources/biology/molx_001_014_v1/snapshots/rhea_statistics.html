@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<title>Rhea - reaction knowledgebase</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="google" content="notranslate"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="An expert-curated knowledgebase of chemical and transport reactions of biological interest" />
+		<link rel="preload" href="/style/fonts/material-design.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="/style/css/statistics.eed68a951b5f5cac7fdc.css" />
+		<script defer src="/js/customelements.js"></script>
+		 
+			<!-- Matomo -->
+			<script>
+			  var _paq = window._paq = window._paq || [];
+			  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			  _paq.push(['enableHeartBeatTimer', 5]);
+			  _paq.push(['trackPageView']);
+			  _paq.push(['enableLinkTracking']);
+			  (function() {
+			    var u="https://matomo.sib.swiss/";
+			    _paq.push(['setTrackerUrl', u+'matomo.php']);
+			    _paq.push(['setSiteId', '9']);
+			    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			  })();
+			</script>
+			<!-- End Matomo Code -->
+	    
+	</head>
+
+<body class="nosidebar"><a href="https://www.rhea-db.org/cdn-cgi/content?id=eXa_.HMsiJMpKacfiHrx8wBnzY86iakF3WXsycMKLmk-1785347302.0756602-1.2.1.1-0MxH2qUbwtpH7TzqV58HD1WKbeivJSwSxFn2PtwzCLQ" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <header class="row-container">
+		<div class="logos">
+		<a class="sib_logo" href="https://www.sib.swiss"> <img
+			alt="SIB logo" height="50px" width="65px" src="/style/images/sib_logo_short.png" />
+		</a>
+		<a class="rhea_logo" href="/"> <img alt="Rhea logo"
+			height="50px" width="103px" src="/style/images/rhea_logo.png" />
+		</a>
+	</div>
+		<div class="formContainer column-container">
+			<div class="row-container">
+				<form id="searchForm" action="/rhea" method="get">
+					<input value="" type="text" autocomplete="off" id="query"
+						name="query"
+						placeholder="ex:adenosine / CHEBI:29748 / RHEA:16505 / 4.1.3.40 / inchikey:XLYOFNOQVPJJNP-UHFFFAOYSA-N ..."></input>
+					<button id="search-button" form="searchForm" type="submit">Search</button>
+				</form>
+			</div>
+			<div class="row-container" style="align-items: center; margin-top: 5px;">
+				<rhea-search-examples></rhea-search-examples>
+				<a id="advanced-search-button">Advanced search</a>
+				<a id="browse-button">Browse</a>
+			</div>
+		</div>
+	</header>
+    <nav role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="row-container">
+        <a itemprop="url" href="/structuresearch">
+        	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4.59 6.89c.7-.71 1.4-1.35 1.71-1.22.5.2 0 1.03-.3 1.52-.25.42-2.86 3.89-2.86 6.31 0 1.28.48 2.34 1.34 2.98.75.56 1.74.73 2.64.46 1.07-.31 1.95-1.4 3.06-2.77 1.21-1.49 2.83-3.44 4.08-3.44 1.63 0 1.65 1.01 1.76 1.79-3.78.64-5.38 3.67-5.38 5.37 0 1.7 1.44 3.09 3.21 3.09 1.63 0 4.29-1.33 4.69-6.1H21v-2.5h-2.47c-.15-1.65-1.09-4.2-4.03-4.2-2.25 0-4.18 1.91-4.94 2.84-.58.73-2.06 2.48-2.29 2.72-.25.3-.68.84-1.11.84-.45 0-.72-.83-.36-1.92.35-1.09 1.4-2.86 1.85-3.52.78-1.14 1.3-1.92 1.3-3.28C8.95 3.69 7.31 3 6.44 3 5.12 3 3.97 4 3.72 4.25c-.36.36-.66.66-.88.93l1.75 1.71zm9.29 11.66c-.31 0-.74-.26-.74-.72 0-.6.73-2.2 2.87-2.76-.3 2.69-1.43 3.48-2.13 3.48z"/></svg>
+        	<span itemprop="name">Structure search</span>
+        </a>
+        <a itemprop="url" href="/mapping">
+        	<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24" x="0"/></g><g><g><g><path d="M9.01,14H2v2h7.01v3L13,15l-3.99-4V14z M14.99,13v-3H22V8h-7.01V5L11,9L14.99,13z"/></g></g></g></svg>
+           	<span itemprop="name">Retrieve/ID mapping</span>
+        </a>
+        <a itemprop="url" class="sparqlEndpoint" href="https://sparql.rhea-db.org/sparql">
+        	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+        	<span itemprop="name">SPARQL</span>
+        </a>
+        <a itemprop="url" href="/help/download">
+        	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+       	 	<span itemprop="name">Download</span>
+       	 </a>
+        <a itemprop="url" href="/help">
+        	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19.07 4.93l-1.41 1.41C19.1 7.79 20 9.79 20 12c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.08 3.05-7.44 7-7.93v2.02C8.16 6.57 6 9.03 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6c0-1.66-.67-3.16-1.76-4.24l-1.41 1.41C15.55 9.9 16 10.9 16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86v2.14c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V2h-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07z"/></svg>
+        	<span itemprop="name">Help</span>
+        </a>
+        <a itemprop="url" href="/feedback">
+        	<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        	<span itemprop="name">Feedback</span>
+        </a>
+	</nav>
+    <main>
+    	<section class="advanced-search" style="display:none"></section>
+        <section>
+            <h2>
+            	Statistics for release <span>141</span> (<span>2026-06-10</span>)
+            </h2>
+            <p>The number of reactions given here is the number of <a href="/help/reaction-side-direction#reaction_directions">reaction quartets</a>.
+        	
+        		<p><span>Unique reactions: </span><span>18,558</span></p>
+        		<p><span>Unique reaction participants: </span><span>15,193</span></p>
+	        </th:block>
+        </section>
+        <section>
+        	<table>
+        		<thead>
+        			<tr>
+        				<th colspan="3">
+        					Reaction participants
+        					<sup class="tooltip-from-html" data-tooltip-content="
+                                &lt;div&gt;
+                                    &lt;p&gt;Rhea reactions may contain three types of &lt;a href=&quot;/help/reaction-participant&quot;&gt;reaction participants&lt;/a&gt; (aka compounds): &lt;a href=&quot;/help/reaction-participant#smallMolecule&quot;&gt;Small molecule&lt;/a&gt;, &lt;a href=&quot;/help/reaction-participant#macromolecule&quot;&gt;Macromolecule&lt;/a&gt; and &lt;a href=&quot;/help/reaction-participant#polymer&quot;&gt;Polymer&lt;/a&gt;.&lt;/p&gt;
+                                &lt;/div&gt;
+                            ">
+            					<i class="material-icons info">help_outline</i>
+            				</sup>
+        				</th>
+        			</tr>
+        			<tr>
+        				<th>Type</th>
+        				<th>Participants</th>
+        				<th>Reactions</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>
+        					<span>Small molecule (ChEBI)</span>
+        					
+        				</td>
+        				<td style="text-align:right">12,950</td>
+        				<td style="text-align:right">18,489</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Macromolecule (Rhea)</span>
+        					
+        				</td>
+        				<td style="text-align:right">1,979</td>
+        				<td style="text-align:right">3,364</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Polymer (Rhea)</span>
+        					
+        				</td>
+        				<td style="text-align:right">264</td>
+        				<td style="text-align:right">328</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        	<table>
+        		<thead>
+        			<tr>
+        				<th colspan="2">
+                            Reactions by status
+                            <sup class="tooltip-from-html" data-tooltip-content="
+                                &lt;div&gt;
+                                    &lt;p&gt;A &lt;a href=&quot;/help/reaction-status&quot;&gt;status&lt;/a&gt; is assigned to each reaction during &lt;a href=&quot;/help/reaction-curation&quot;&gt;Rhea curation&lt;/a&gt;.&lt;/p&gt;
+                                &lt;/div&gt;
+                            ">
+            					<i class="material-icons info">help_outline</i>
+            				</sup>
+                        </th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>
+        					<span>Approved</span>
+        					
+        				</td>
+        				<td style="text-align:right">18,184</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Preliminary</span>
+        					
+        				</td>
+        				<td style="text-align:right">374</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        	<table>
+        		<thead>
+        			<tr>
+        				<th colspan="2">Reactions by qualifier</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>
+        					<span>Chemically balanced</span>
+        					
+        				</td>
+        				<td style="text-align:right">18,551</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Transport</span>
+        					
+        				</td>
+        				<td style="text-align:right">1,597</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        	<table>
+        		<thead>
+        			<tr>
+        				<th colspan="6">Linked database records</th>
+        			</tr>
+        			<tr>
+        				<th>Database</th>
+        				<th>Data type</th>
+        				<th>Origin</th>
+        				<th>Unique database IDs</th>
+        				<th>Links</th>
+        				<th>Total reactions</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>
+        					<span>EcoCyc</span>
+        					
+        				</td>
+        				<td>Reaction</td>
+        				<td>Curated</td>
+        				<td style="text-align:right">1,622</td>
+        				<td style="text-align:right">1,667</td>
+        				<td style="text-align:right">1,655</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>MetaCyc</span>
+        					
+        				</td>
+        				<td>Reaction</td>
+        				<td>Curated</td>
+        				<td style="text-align:right">9,452</td>
+        				<td style="text-align:right">9,770</td>
+        				<td style="text-align:right">9,612</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Reactome</span>
+        					
+        				</td>
+        				<td>Reaction</td>
+        				<td>Computed via ChEBI IDs</td>
+        				<td style="text-align:right">1,436</td>
+        				<td style="text-align:right">1,685</td>
+        				<td style="text-align:right">990</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>KEGG</span>
+        					
+        				</td>
+        				<td>Reaction</td>
+        				<td>Curated</td>
+        				<td style="text-align:right">7,026</td>
+        				<td style="text-align:right">7,161</td>
+        				<td style="text-align:right">7,121</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>M-CSA</span>
+        					
+        				</td>
+        				<td>Reaction</td>
+        				<td>Computed</td>
+        				<td style="text-align:right">138</td>
+        				<td style="text-align:right">138</td>
+        				<td style="text-align:right">136</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>Enzyme</span>
+        					
+        				</td>
+        				<td>EC number</td>
+        				<td>Curated </td>
+        				<td style="text-align:right">6,199</td>
+        				<td style="text-align:right">7,928</td>
+        				<td style="text-align:right">7,635</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>PubMed</span>
+        					
+        				</td>
+        				<td>Bibliographic citation</td>
+        				<td>Curated </td>
+        				<td style="text-align:right">18,792</td>
+        				<td style="text-align:right">38,419</td>
+        				<td style="text-align:right">17,615</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>ChEBI</span>
+        					
+        				</td>
+        				<td>Compound</td>
+        				<td>Curated</td>
+        				<td style="text-align:right">14,251</td>
+        				<td style="text-align:right">87,367</td>
+        				<td style="text-align:right">18,558</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					<span>GO</span>
+        					
+        				</td>
+        				<td></td>
+        				<td>Enzymes</td>
+        				<td style="text-align:right">4,729</td>
+        				<td style="text-align:right">6,956</td>
+        				<td style="text-align:right">6,954</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </section>
+    </main>
+    <footer class="row-container" style="text-align: center;">
+    	<div class="row-container footer-logo">
+    		<img alt="SIB logo" width="70px" height="37px" src="/style/images/sib_logo_short.png" />
+    		<span>
+    			<a href="/help/license-disclaimer">License & Disclaimer</a> |
+	        	<a href="https://www.sib.swiss/privacy-policy">Privacy Policy</a>
+    		</span>
+    	</div>
+    	<div class="row-container footer-logo">
+    		<a href="https://www.elixir-europe.org/platforms/data/core-data-resources">
+   				<img width="64px" height="64px" id="elixir-cdr-logo" alt="Elixir-cdr-logo" src="/style/images/elixir-cdr.gif">
+    		</a>
+    		<h4>ELIXIR Core Data Resource</h4>
+    	</div>
+    	<div class="row-container footer-logo">
+    		<a href="https://globalbiodata.org/scientific-activities/global-core-biodata-resources/">
+   				<img width="64px" height="64px" id="global-cdr-logo" alt="Global-cdr-logo" src="/style/images/GCBR-Logo-RGB.svg">
+    		</a>
+    		<h4>Global Core Biodata Resource</h4>
+    	</div>
+    </footer>
+    <script type="module" src="/js/statistics-bundle-3797a1b5063d9070df46.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a22df43df986bead',t:'MTc4NTM0NzMwMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

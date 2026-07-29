@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-SURF-REACTION-CATALYSIS-HANDOFF-006",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:49637468e2acfb0e730cbbfef5b9800304155e57b01c8d9a274ae530b1cae694"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:a0c9061f9b0fffdfd123efc731610557ed92fc9f2085e6a734930a24a64999d5"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:0d9e86b9c3876afd6401603c21a3e9750b554fed208ba83710324ac6b77255b7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:691ebc918dceffa5762cc3bab523e155cfd711f048fd96ac6ee69afed380055b"
+    }
+  ]
+}

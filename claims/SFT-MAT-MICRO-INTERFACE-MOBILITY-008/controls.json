@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-INTERFACE-MOBILITY-008",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d11bb142c5f07748541be5db5a6c625a9703c1efda76b4639b69b7ad96013941"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ecd377074285543227f1e72ca54cb603974a741d44e2cf25e452641551a8a0ef"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:738c0b35f7fa78a272501116b756bfae3949a5d2d9fc4f14b55b2f928f64a65c"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:cc0ac8b3731e664f6365761237f9b59437a067a351c423911816b9f0b7928e78"
+    }
+  ]
+}

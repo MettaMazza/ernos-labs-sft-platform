@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-VALIDATION-MATERIAL-CLASS-PROCESSING-VECTOR-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:e9fa1b5a9086a0f2402381f4f808fbedaaa6a946245c5cc39a540292b865e78b"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:27e1b452c442bf79bf3aca9b90dfb657aa06ee2080f5a02e648ad191d17e8889"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:745a5fba3c7e4d894239459aff29e76e21a5df714c8fd12ed99b33c1cd4a67a7"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:3b588355dd95d73afecbb608a4a840c5572222fbc1f00f77f3d13c7dd885f7e4"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-PHASE-FRACTION-LEDGER-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:c275fef6b780ee27821e2d34e547d3be1555bcefcc897a51c0ae62444f19e2d2"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:185f6589e1304e9a9ed2adb951d4a2dd861f0d0af84497f016029a68d1291f6b"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:84674513df450f75659aa7a77fd797f782d06c02d0b71a128768e3b0d9cba1a9"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:89581574f3e5d6ac123c80e6cabf09faf301829b340213dea2afe154ff5cefa0"
+    }
+  ]
+}

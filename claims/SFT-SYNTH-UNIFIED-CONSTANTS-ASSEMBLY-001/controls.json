@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-SYNTH-UNIFIED-CONSTANTS-ASSEMBLY-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:a4adbec48d752f50e815a4a0b9056472ec575e0027dc22c58b57119029d71b02"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:d6dabc3ecbffc685a0e6dd6b17bac5e0936506c888269899846315f64b6cd457"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:69289a4cb13fa661d83ac65c89884c0ebd9503dde05db2d7badc166464a87184"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:d08f3a1a81066d6887ab68bdc12bd9260aa1fb4cf523a9c970f65f0f0f18a89b"
+    }
+  ]
+}

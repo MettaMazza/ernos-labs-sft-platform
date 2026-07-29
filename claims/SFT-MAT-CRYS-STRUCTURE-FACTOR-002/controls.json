@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CRYS-STRUCTURE-FACTOR-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:b1d50a02f871775ea161303d416a32a6d3f8937531c44f5ec4112d27cbdd2637"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:596b77f60443ba6c1868975ad042e63e08f908dac6fd7b557242a9182342ad77"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:c501cab38deb0ac6340835cace6d4bb699eefde671b31766858289765e994c22"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:eece2e80b4f708549f6e3b27db2dcc3caa778943bcc812f20663b8476c998880"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-EXT-HIGH-PRESSURE-STATE-001",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:9fc24e8815f805ea5b7dc9109bc0e3df7b2ffc7e501ba3c497dd456084275f27"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f3ba318f75d82c087cbc08be2934425b32731c658360a04794e09ad80fca6449"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:29da351f9523d60eda2ef3123fbe51ebe4155ecb2a98fe8755215fd1cdf7c337"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:905bb9ef7a972bafd8b704e2e60e4f33af9d8a4ddab5b5f3a6026d8a3948ae89"
+    }
+  ]
+}

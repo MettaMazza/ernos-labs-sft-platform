@@ -1,0 +1,61 @@
+{
+  "all_rows_preserved": true,
+  "claim_id": "SFT-QUANTUM-REVX-COMPLETENESS-018",
+  "data_source_ids": [
+    "SFT-V3-INDEPENDENT-EXACT-REVERSIBLE-COMPUTATION-OBSERVER",
+    "SFT-V1-V2-QUANTUM-COMPUTATION-OBSERVATION-CORPUS"
+  ],
+  "evaluator_verified_seal": true,
+  "experiment_registration_hash": "sha256:5fe36ad1dea072c041e28292559926a2c2ff310fd8d1d77fd6c2afa195abdaec",
+  "falsification_condition": "Reject if the value-free registry, complete reversible grammar, exact forward/inverse execution, source identity, candidate survivor, seal, custody record, control or independent reconstruction is missing, changed, duplicated or opened out of order.",
+  "isolation_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "attempted_forbidden_operations": [],
+    "certificate_hash": "sha256:77293457e9fd25da7f08a34b15ad22e760c04d4e36a1314bdcc241bf6f42e308",
+    "comparison_code_present": false,
+    "comparison_implementation_identity_hash": "sha256:5dcb2274f4ca0715b4a2c22b2481f3701c5828563126f02507f2eb0356bd5199",
+    "completed": true,
+    "denied_capabilities": [
+      "clock",
+      "dynamic_import",
+      "environment",
+      "filesystem_read",
+      "filesystem_write",
+      "foreign_function",
+      "network",
+      "subprocess"
+    ],
+    "executor_id": "SFT-EXP-QUANTUM-REVX-018-V1-executor",
+    "host_platform": "Darwin",
+    "input_manifest_hash": "sha256:ba4cf4bb05f92446d7d12c34264786ed629bfa8e15cd95b6c239425d41537580",
+    "interpreter_hash": "sha256:74c830c25a558c7ae0698b0106438efc723b4f04edd75c0be8205031503f3686",
+    "output_hash": "sha256:f492f023360c1466f0adce12849b09daba0dc810feb6bcc194cce8651a54b0d6",
+    "prediction_seal_hash": "sha256:1b38a1315afd7a7f361c1d4e5cd15582a9586da0b700113a1a28b2a769e55708",
+    "program_hash": "sha256:6e7f393c9eb39fe81e5dc1500636454797207d21901c65628346cb78a5f02260",
+    "python_implementation": "CPython",
+    "registered_target_identity_hash": "sha256:681231854663ab3c00791c6cdcc794336ac668e397bd7ca9f2d6654cab1f4950",
+    "target_material_present": false,
+    "trace_hash": "sha256:fe6caaf09f546ead7b32c446b3a9e4aa0ec3efd0e40feefab0747b54ce24a009"
+  },
+  "measurement_receipt_hash": "sha256:141fd744e8ed8de24b7a2d75f43efef497a0b276701aed5d1b5cd537dea7312d",
+  "measurements": [
+    "REVX-018: reversible_computation_completeness",
+    "exact reversible execution: {\"duplicate_owners\":0,\"execution_rows\":18,\"omitted_owners\":0,\"registered_obligations\":18}",
+    "complete reversible-computation custody: 18 records; all rows preserved",
+    "complete finite forward and inverse traces supply the observation; physical energy, heat, timing, noise and hardware performance remain downstream measurements and cannot select the formal law"
+  ],
+  "passed": true,
+  "target_custody_certificate": {
+    "adapter_id": "sft-portable-capability-custody/1",
+    "certificate_hash": "sha256:d2aedf94bdd70312884be20c46a56fddd822caadecb9274fdac69a2a19cbcc58",
+    "custodian_id": "SFT-EXP-QUANTUM-REVX-018-V1-custodian",
+    "experiment_registration_hash": "sha256:5fe36ad1dea072c041e28292559926a2c2ff310fd8d1d77fd6c2afa195abdaec",
+    "prediction_seal_hash": "sha256:1b38a1315afd7a7f361c1d4e5cd15582a9586da0b700113a1a28b2a769e55708",
+    "registered_target_identity_hash": "sha256:681231854663ab3c00791c6cdcc794336ac668e397bd7ca9f2d6654cab1f4950",
+    "released_after_prediction_seal": true,
+    "target_absent_until_prediction_seal": true,
+    "target_release_manifest_hash": "sha256:c57841669f3c6a5199633a7ee9683581d62197395f8e9a88c1801ad2ce5990fa"
+  },
+  "target_opened_after_seal": true,
+  "validated_seal_hash": "sha256:ad6b52cae6615d2747042929ea7c79001060f29c11ca940b3bc67b9974a1f6cb"
+}

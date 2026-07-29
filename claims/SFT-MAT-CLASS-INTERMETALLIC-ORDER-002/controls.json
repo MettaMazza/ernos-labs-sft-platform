@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-CLASS-INTERMETALLIC-ORDER-002",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:f1831c9bff931837ee438999cf620af61657c8d556c9f2bd0fea819b05712aab"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:f8383da4f993b5bcd6dd4d750b11bd8240b38695e452d4fcdf61df710b9c731d"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:796cd2a7652f335a221eb1a4dc29c9f029b3281703d466b052dd61dfcdc56a9f"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:25bb47d4b51abff56a004069136efba7eb908b68beeedd33033d90e82856c15b"
+    }
+  ]
+}

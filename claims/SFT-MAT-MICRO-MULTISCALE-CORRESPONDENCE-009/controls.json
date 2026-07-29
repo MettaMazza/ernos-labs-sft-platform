@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MAT-MICRO-MULTISCALE-CORRESPONDENCE-009",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:7141915714b3bb630721000d2200a72fef5fd11aef2d0597af05d64b22721f81"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:ec77e6a73711b3f81aef80501a2131de84c72bb93e09fbf7136ee8def7d104dc"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:bfd7dfb3be08773d6199c57b3c3fc3192f2eaa05ad075e59c8cca348e5a4d014"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:ba38f4310f82303b76fe4dc2cabe9b89fbd56d1dbcc019b53aa9e1080394627b"
+    }
+  ]
+}
