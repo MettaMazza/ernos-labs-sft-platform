@@ -179,6 +179,24 @@ def remote_file_map(deposition: dict) -> dict[str, tuple[int, str]]:
     }
 
 
+def expected_file_map(publication: Publication) -> dict[str, tuple[int, str]]:
+    expected = {
+        name: (path.stat().st_size, md5(path))
+        for name, path in local_files(publication).items()
+    }
+    if publication.preserve_inherited:
+        source = public_request(f"{API}/records/{publication.source_record}")
+        source_files = {
+            item["key"]: (int(item["size"]), item["checksum"].removeprefix("md5:"))
+            for item in source.get("files", [])
+        }
+        for name in publication.preserve_inherited:
+            require(name in source_files, f"published inherited evidence missing: {publication.branch}: {name}")
+            require(name not in expected, f"release file collides with inherited evidence: {name}")
+            expected[name] = source_files[name]
+    return expected
+
+
 def write_receipt(path: Path | None, value: dict) -> None:
     if path is None:
         return
@@ -243,11 +261,13 @@ def stage(publication: Publication, draft_id: int, access_token: str) -> dict:
     concept = draft.get("conceptdoi") or draft.get("metadata", {}).get("conceptdoi")
     require(concept == publication.concept_doi, f"draft concept DOI mismatch: {publication.branch}")
 
+    complete_expected = expected_file_map(publication)
     preserved = {}
     for inherited in draft.get("files", []):
         name = inherited["filename"]
         if name in publication.preserve_inherited:
             preserved[name] = (int(inherited["filesize"]), inherited["checksum"].removeprefix("md5:"))
+            require(preserved[name] == complete_expected[name], f"inherited evidence checksum changed: {publication.branch}: {name}")
         else:
             request(access_token, "DELETE", inherited["links"]["self"])
 
@@ -257,6 +277,7 @@ def stage(publication: Publication, draft_id: int, access_token: str) -> dict:
         require(name not in expected, f"release file collides with preserved evidence: {name}")
         request(access_token, "PUT", f"{bucket}/{urllib.parse.quote(name, safe='')}", path.read_bytes(), "application/octet-stream")
         expected[name] = (path.stat().st_size, md5(path))
+    require(expected == complete_expected, f"complete staged expectation mismatch: {publication.branch}")
 
     remote_metadata = metadata(publication)
     request(access_token, "PUT", draft_url, json.dumps({"metadata": remote_metadata}).encode("utf-8"), "application/json")
@@ -289,14 +310,19 @@ def publish(publication: Publication, draft_id: int, access_token: str) -> dict:
     concept = draft.get("conceptdoi") or draft.get("metadata", {}).get("conceptdoi")
     require(concept == publication.concept_doi, f"draft concept DOI mismatch: {publication.branch}")
     require(draft.get("metadata", {}).get("version") == publication.candidate_version, f"draft version mismatch: {publication.branch}")
-    expected_names = set(local_files(publication)) | set(publication.preserve_inherited)
-    require(set(remote_file_map(draft)) == expected_names, f"draft file inventory mismatch: {publication.branch}")
+    expected = expected_file_map(publication)
+    expected_names = set(expected)
+    require(remote_file_map(draft) == expected, f"draft file checksum inventory mismatch: {publication.branch}")
     published = request(access_token, "POST", f"{draft_url}/actions/publish")
     record_id = int(published.get("record_id") or published.get("id"))
     record = public_request(f"{API}/records/{record_id}")
     require(record.get("conceptdoi") == publication.concept_doi, f"published concept DOI mismatch: {publication.branch}")
     require(record.get("metadata", {}).get("version") == publication.candidate_version, f"published version mismatch: {publication.branch}")
-    require(set(item["key"] for item in record.get("files", [])) == expected_names, f"published file inventory mismatch: {publication.branch}")
+    published_files = {
+        item["key"]: (int(item["size"]), item["checksum"].removeprefix("md5:"))
+        for item in record.get("files", [])
+    }
+    require(published_files == expected, f"published file checksum inventory mismatch: {publication.branch}")
     return {
         "branch": publication.branch,
         "status": "PUBLISHED_VERIFIED",
