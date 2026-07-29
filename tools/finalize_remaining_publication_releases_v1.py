@@ -269,11 +269,19 @@ def chemistry() -> dict:
             "rendered_paper_sha256": sha(pdf),
             "rendered_page_count": pages,
             "publication_authorized": False,
+            "ready_to_publish": False,
         }
     )
     write(evidence_path, evidence)
     metadata = read(metadata_path)
-    require(metadata["publication_authorized"] is False and metadata["remote_action_permitted"] is False, "Chemistry authorization boundary changed")
+    metadata["ready_to_publish"] = False
+    write(metadata_path, metadata)
+    require(
+        metadata["publication_authorized"] is False
+        and metadata["remote_action_permitted"] is False
+        and metadata["ready_to_publish"] is False,
+        "Chemistry authorization boundary changed",
+    )
     manifest = read(manifest_path)
     manifest.update(
         {
@@ -288,6 +296,7 @@ def chemistry() -> dict:
             "rendered_page_count": pages,
             "publication_authorized": False,
             "remote_action_permitted": False,
+            "ready_to_publish": False,
         }
     )
     write(manifest_path, manifest)

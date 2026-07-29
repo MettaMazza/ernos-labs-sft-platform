@@ -44,6 +44,7 @@ Recommended exact approval statement:
 - Raster gate v1: 7/7 passed; all 5,295 pages rasterised into 29 contact sheets; no blank-page, edge-ink or render failures.
 - Manual visual review: all 29 contact sheets reviewed; all papers use A4 pages and no clipping, malformed tables, blank runs or broken cover layouts were found.
 - Release gate v1: 7/7 passed; every staged manuscript and PDF matches its authoritative identity; metadata retains the correct existing-record lineage; every package remains `publication_authorized: false` and `ready_to_publish: false` pending this decision.
+- Live Zenodo lineage preflight v1: 7/7 passed in read-only unauthenticated mode; every listed record remains the latest version in the expected concept DOI lineage and no draft, new version, upload or remote mutation was performed.
 - No conflict markers or malformed patch whitespace were found. Git's generic whitespace check reports intentional two-space Markdown hard breaks in generated release copies; those breaks are byte-identical to their authoritative manuscripts and are preserved by the release gate.
 
 Primary gate records:
@@ -56,6 +57,7 @@ Primary gate records:
 - `audits/FINAL_PUBLICATION_PDF_VISUAL_REVIEW_2026-07-29.md`
 - `audits/FINAL_PUBLICATION_PROOFREADING_REVIEW_2026-07-29.md`
 - `audits/FINAL_PUBLICATION_RELEASE_GATE_V1_2026-07-29.json`
+- `audits/FINAL_PUBLICATION_ZENODO_LINEAGE_PREFLIGHT_V1_2026-07-29.json`
 
 ## Preserved halts and repository-wide test boundary
 
