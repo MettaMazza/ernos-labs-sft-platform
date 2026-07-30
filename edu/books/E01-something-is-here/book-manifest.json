@@ -1,0 +1,59 @@
+{
+  "schema": "sft-education-book-manifest/1",
+  "book_id": "SFT-EDU-E01-SOMETHING-IS-HERE",
+  "title": "Something Is Here",
+  "subtitle": "A first story about noticing and checking",
+  "version": "1.0.0",
+  "status": "live",
+  "stage": "early_years",
+  "branches": ["foundation"],
+  "knowledge_boundary": {
+    "repository_commit": "20cefca59d6d254ea88257db7e3bf5c98f03cec2",
+    "census_claim_count": 2751,
+    "inspected_date": "2026-07-30",
+    "notes": "The book translates the independently replicated operational root theorem only."
+  },
+  "scientific_sources": [
+    {
+      "claim_id": "SFT-ROOT-THERE-IS-NO-NOTHING",
+      "receipt_hash": "sha256:711864171e4d3a2f2734f0c2890965bcd81a0228349538751a3c80699c27d669",
+      "receipt_path": "receipts/engine/model_admitted/SFT-ROOT-THERE-IS-NO-NOTHING-711864171e4d3a2f.json",
+      "use": "Sole scientific content authority for the operational theorem, candidate partition, result and boundary."
+    }
+  ],
+  "provenance_policy": "Direct-forcing content is separated from educational examples and checks; no external model enters derivation.",
+  "external_references": [
+    {
+      "title": "Early years foundation stage statutory framework",
+      "url": "https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2",
+      "use": "Age, activity and learning-area calibration only",
+      "authority_in_sft_derivation": false
+    }
+  ],
+  "author": "Maria Smith",
+  "editorial_assistance": "Educational implementation and reproducible layout prepared with automated tooling under Maria Smith's authority.",
+  "license": "CC-BY-4.0",
+  "artifacts": [
+    {"path": "edu/books/E01-something-is-here/source/book.json", "role": "canonical_student_source"},
+    {"path": "edu/books/E01-something-is-here/adult-guide.md", "role": "adult_guidance_source"},
+    {"path": "edu/books/E01-something-is-here/accessible/student-book.html", "role": "semantic_accessible_edition"},
+    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.0.0/SFT-E01-Something-Is-Here-v1.0.0.pdf", "role": "student_pdf"},
+    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.0.0/SFT-E01-Adult-Guide-v1.0.0.pdf", "role": "adult_guide_pdf"},
+    {"path": "edu/books/E01-something-is-here/ILLUSTRATION_AND_ACCESSIBILITY_AUDIT.md", "role": "visual_and_accessibility_audit"},
+    {"path": "edu/books/E01-something-is-here/RELEASE_NOTES.md", "role": "release_notes"},
+    {"path": "edu/books/E01-something-is-here/CHECKSUMS.sha256", "role": "release_checksums"}
+  ],
+  "release_checks": {
+    "engine_seal_valid": true,
+    "verification_authority_seal_valid": true,
+    "manifest_valid": true,
+    "claim_map_verified": true,
+    "student_text_reviewed": true,
+    "adult_guidance_reviewed": true,
+    "semantic_html_generated": true,
+    "pdf_text_extraction_passed": true,
+    "pdf_visual_review_passed": true,
+    "accessibility_review_passed": true,
+    "release_checksums_recorded": true
+  }
+}
