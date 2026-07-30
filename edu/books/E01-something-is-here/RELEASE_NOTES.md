@@ -1,43 +1,49 @@
-# E01 *Something Is Here* - Version 1.0.0
+# E01 *Something Is Here* - Review version 1.1.0
 
-Status: live educational work
-Released to repository: 30 July 2026
+Status: complete working edition under review
+Prepared: 30 July 2026
 Author: Maria Smith
 Licence: CC BY 4.0
+Final-publication approval: pending
 
-## What this edition contains
+## Why this edition was made
 
-- a 24-page Early Years read-aloud picture and activity book;
-- original vector illustrations and 24 page-specific descriptions;
-- three supervised noticing and checking activities;
-- an adult guide with exact theorem, scope, prompts, answers, misconceptions,
-  accessibility and safeguarding guidance;
-- a semantic HTML screen-reader edition;
-- page-level claim and provenance mapping; and
-- reproducible PDF source and release checks.
+Maria Smith found that version 1.0.0 became too telling-heavy from page 12 and
+introduced terms before a child had experienced their meaning. Version 1.1.0
+therefore rebuilds the flow as Mira and Pip's Nothing Hunt.
 
-## Scientific boundary
+## Educational changes
 
-This edition teaches only the independently replicated operational root claim
-`SFT-ROOT-THERE-IS-NO-NOTHING`. It presents the complete declared partition:
-an unpresented absence supplies no counterexample, while every presented
-example is an occurrence and is not nothing.
+- Expanded the child book from 24 to 32 pages.
+- Added a continuous treasure-map game story with five clue stars.
+- Added recurring characters, busy spotting scenes and harmless extra clues.
+- Replaced the abstract page-12 transition with challenge/reveal page pairs.
+- Lets the child experience empty, still, blank, hidden and no-example cases
+  before the result is stated.
+- Moves formal provenance and candidate-grammar terminology into the adult
+  guide.
+- Adds final spotting, sorting and retelling games with answers on following
+  pages.
+- Rewrites the adult guide with complete facilitation and answer guidance.
 
-It does not claim knowledge of an unexpressed metaphysical domain, introduce a
-numerical zero, or add an empirical result.
+## Scientific status
 
-## Live-work notice
+The source and boundary are unchanged. The edition teaches only
+`SFT-ROOT-THERE-IS-NO-NOTHING`, receipt
+`sha256:711864171e4d3a2f2734f0c2890965bcd81a0228349538751a3c80699c27d669`.
+The child-facing two-door game translates the complete presented/unpresented
+partition after five experiential examples. It adds no empirical claim and
+makes no claim about an unexpressed metaphysical domain.
 
-This is the current edition at release. Later scientific, educational,
-accessibility or safety corrections will be issued as new versions. This
-edition and its checksums will remain preserved rather than silently changed.
+## Version custody
 
-## External navigation
+Version 1.0.0 remains available with its original PDF hashes and source commit.
+Version 1.1.0 uses a new source file and a new output directory. It does not
+silently replace the earlier artifacts.
 
-England's EYFS is referenced only to calibrate activity form and learning-area
-navigation. It is not a scientific dependency or validation source.
+## Publication boundary
 
-## Remote scope
-
-The edition is intended for the existing GitHub repository. No DOI, Zenodo
-record or other publication service is created by this release.
+This is a review copy in the working education library. It is not yet an
+approved final educational publication and is not placed under
+`publications/education/`. No DOI, Zenodo record, GitHub Release or other remote
+publication is created.

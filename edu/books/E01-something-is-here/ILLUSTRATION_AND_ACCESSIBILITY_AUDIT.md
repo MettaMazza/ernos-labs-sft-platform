@@ -1,52 +1,90 @@
-# E01 Illustration and Accessibility Audit
+# E01 illustration and accessibility audit
 
-Edition: 1.0.0
+Edition: 1.1.0 review
 Audit date: 30 July 2026
-Result: PASS
+Final-publication approval: pending
 
-## Accuracy standard
+## Visual design intent
 
-The illustrations are original symbolic teaching diagrams, not photographs or
-empirical images. Accuracy means that each visual preserves the operational
-meaning and boundary of `SFT-ROOT-THERE-IS-NO-NOTHING` without adding an object,
-measurement or metaphysical claim.
+The 32-page student edition is a continuous visual game story. Mira and Pip
+recur throughout, a treasure map retains the five-clue progression, and every
+challenge page is followed by a reveal or check. Busy scenes contain harmless
+extra details so a child's unprompted observation can be correct even when it
+is not the printed target.
 
-## Page audit
+All scenes are original vector drawings produced by the checked-in renderer.
+No stock image, publisher illustration, copied character or generated bitmap is
+used.
 
-| Pages | Visual purpose | Accuracy and accessibility result |
-|---|---|---|
-| 1-4 | Introduce Mira, Pip and the checking question | Question marks are prompts, not evidence. Characters and objects have complete text descriptions. |
-| 5-6 | Empty container versus no presented thing | The box is visibly retained; no toy is drawn inside; looking, asking and recording are shown as separate presented occurrences. |
-| 7-8 | Missing clap versus occurring observation | Unclapped hands represent the declared missing event; listening and its record remain visible. Silence is not drawn as a substance. |
-| 9-10 | Word versus referent | The written word, paper and pencil remain presented; the text does not treat a label as the thing it names. |
-| 11-12 | No supplied example | The four outlined presentation routes remain unfilled. No hidden counterexample is inserted. |
-| 13-16 | Complete two-path grammar | Both paths are present and named. Colour is redundant with solid/dashed shape and text labels. The complete-path bracket includes both classes. |
-| 17-18 | Unique operational result and root | The occurrence card gathers show/say/record/check routes. The root diagram marks a starting dependency, not a biological or cosmic claim. |
-| 19 | Exact boundary | A solid operational region is separated from an unclaimed region by a dashed boundary. The outer area carries the text “NO CLAIM ADDED.” |
-| 20-23 | Supervised checks and retained outcomes | The bowl is empty of named content but remains present. Listening is time-bounded. Both agreeing and disagreeing records are preserved. |
-| 24 | Recap and handoff | Question, check and record remain distinct; the next-book reference introduces no new scientific result. |
+## Scientific visual accuracy
 
-## Description coverage
+- Empty-box scenes distinguish the present container from the named toy that is
+  not inside.
+- Still-bell scenes bound “no ring” to the illustrated listening check and do
+  not depict silence as a substance.
+- Blank-card scenes retain the card, edge and observers while declaring only
+  that no mark is on the card.
+- Curtain scenes depict one blocked view, not nonexistence.
+- Door A visibly presents an example; Door B visibly records that no example
+  was supplied and does not place a hidden counterexample in the frame.
+- The fair-play boundary contains only show, say, draw and record tokens and
+  adds no invented object beyond the declared checking region.
 
-- 24 of 24 canonical pages include a page-specific illustration description.
-- 24 of 24 semantic HTML page sections expose the description through a
-  `figure` with `role="img"` and `aria-label`.
-- Colour is not the sole carrier of any scientific distinction.
-- Student type is large, high-contrast and placed on quiet backgrounds.
-- The adult guide instructs readers to describe illustrations aloud, offer
-  tactile objects and accept nonverbal response modes.
+The pictures are educational demonstrations of the operational distinction.
+They are not empirical measurements or substitutes for the exact two-class
+claim census.
 
-## Visual QA
+## Description audit
 
-All 24 student pages and all four adult-guide pages were rendered to PNG and
-inspected. The first render exposed overlaps on student pages 9, 10, 15, 16,
-18, 19 and 24 plus incorrect list markers in the adult guide. The layout was
-corrected and the complete set re-rendered. The final inspection found no
-clipped, overlapping, unreadable or broken visual element.
+The canonical source contains 32 nonempty, page-specific illustration
+descriptions. The semantic HTML attaches each description to its page figure
+through `role="img"`, an `aria-label` and a visible figcaption. The automated
+verifier checks that every description appears in the semantic edition.
 
-## Known format boundary
+Descriptions name:
 
-The PDF contains selectable text and metadata but is not a fully tagged PDF.
-The semantic HTML edition is the primary screen-reader edition and includes the
-complete reading text and illustration descriptions. A future tagged-PDF
-edition may supersede this format without changing the book's scientific scope.
+- all intended spotting targets;
+- the location and relation that matter to the answer;
+- extra visual clues where their presence affects fair play;
+- text and shape labels that duplicate colour distinctions; and
+- whether a frame is deliberately unfilled rather than holding a hidden item.
+
+## Perceivability and interaction
+
+- Colour is never the only carrier: targets use numbers, outlines, words,
+  distinct object shapes or dashed frames.
+- Student text is large, high contrast and set against stable backgrounds.
+- Challenges accept pointing, gaze, sign, sound, speech, drawing or a partner
+  record.
+- Reveals are separated onto later pages so screen-reader and print users both
+  receive the challenge before the answer.
+- The adult guide advises reducing scene density, using tactile equivalents and
+  allowing extra processing time.
+- The certificate records participation rather than ability or attainment.
+
+## Format boundary
+
+The semantic HTML is the primary screen-reader edition and supports browser
+text scaling. The PDF contains selectable text and metadata but is not claimed
+as a fully tagged PDF. This limitation is stated rather than hidden.
+
+## Render review record
+
+All 32 student pages and all 6 adult-guide pages were rendered from the latest
+PDFs to PNG and inspected on 30 July 2026. The review found and corrected:
+
+- descriptions that implied gestures or background objects absent from the
+  vector scenes;
+- Door A's first static card, which did not visibly demonstrate a handover;
+- sorting cards that relied on written labels without picture symbols; and
+- answer-basket labels that needed repainting above their connecting lines.
+
+The corrected full contact sheets show no clipped text, overlapping text,
+broken glyph, missing answer label, unreadable contrast or page-number defect.
+Challenge and reveal pages remain visually distinct. The six-page adult guide
+has consistent headings, margins, page numbers and footers with no split or
+overlap defect.
+
+Visual rendering and accessibility review therefore pass for the 1.1.0 review
+edition. This pass does not constitute Maria Smith's final-publication
+approval.

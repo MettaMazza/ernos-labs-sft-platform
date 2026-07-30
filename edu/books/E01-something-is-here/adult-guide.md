@@ -1,23 +1,29 @@
 # Adult Guide - E01 *Something Is Here*
 
-Version 1.0.0 live edition
+Review version 1.1.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
+Final-publication status: awaiting Maria Smith's approval
 
-## Purpose
+## Purpose of the new game-story edition
 
-This book introduces one careful habit: every example that can be shown, said,
-recorded or checked is an occurrence. An absence that is not presented supplies
-no counterexample. The child is not asked to settle a metaphysical question.
-They are invited to notice the difference between an empty container, a missing
-event, a spoken word and no presented example at all.
+The child joins Mira and Pip in a five-clue “Nothing Hunt.” Each challenge page
+lets the child look, listen, choose, point or communicate before the following
+page reveals and discusses possible answers. The story delays its general rule
+until the child has experienced empty, quiet, blank, hidden and unpresented
+cases.
+
+The child book deliberately avoids the formal terms *candidate grammar*,
+*counterexample*, *occurrence*, *operational boundary* and *direct forcing*.
+Those exact terms belong here, where an adult can protect the scientific scope
+without making the child repeat unexplained language.
 
 ## Exact SFT source
 
 Claim: `SFT-ROOT-THERE-IS-NO-NOTHING`
 Status: independently replicated
 Provenance: direct forcing
-Closure: depth-independent within the operational boundary
+Closure: depth-independent within the declared operational boundary
 Receipt: `sha256:711864171e4d3a2f2734f0c2890965bcd81a0228349538751a3c80699c27d669`
 
 Exact statement:
@@ -34,175 +40,248 @@ The complete declared grammar has two named classes:
    identity; that presentation is an occurrence and is not nothing.
 
 The theorem does not claim knowledge of an unexpressed metaphysical domain.
+The book's game, characters and visible examples are educational translations;
+they do not prove a new theorem or replace the admitted claim package.
 
-## Learning outcomes
+## Learning through experience
 
-After repeated shared reading, a child may be able to:
+After repeated shared play, a child may begin to:
 
-- name something that is visibly or audibly presented;
-- distinguish an empty object from no presented object;
-- notice that speaking, writing, pointing, listening and checking are events;
-- state that a missing event is not the same as no presented example;
-- make a simple observation record; and
-- accept agreement, disagreement or “we need to check again” without hiding the
-  result.
+- notice several things in a detailed scene;
+- distinguish a present container from a named item that is not inside it;
+- distinguish a missing sound or mark from the listening or page that remains;
+- notice that hidden is not the same as erased;
+- attempt a challenge before seeing a possible answer;
+- sort presented examples from a case where no example is supplied;
+- explain a choice by pointing, speaking, signing, drawing or using a
+  communication aid; and
+- keep an unexpected answer rather than changing the game to force agreement.
 
-These are developmental opportunities, not pass/fail requirements.
+These are invitations, not pass/fail expectations.
 
-## Vocabulary
+## Child-facing vocabulary
 
-- **present** - available to point to, say, record or check;
-- **empty** - a declared container lacks a named content;
-- **occurrence** - something happening or presented at the checking boundary;
-- **example** - the presented thing offered for checking;
-- **record** - a retained mark, word, picture or trace of what happened;
-- **check** - looking again or using another route to test the record;
-- **boundary** - the exact place where a rule applies and where it stops.
+- **here** - available in the game for us to notice;
+- **inside** - held within the named container;
+- **empty** - the named content is not inside a container;
+- **still** - no declared movement happened during the short check;
+- **blank** - no declared mark appears on the card;
+- **hidden** - blocked from the chosen view;
+- **clue** - something noticed that helps the investigation;
+- **check** - look, listen or try again using the declared game; and
+- **example** - something supplied for the players to inspect.
 
-Use ordinary words first. Introduce “occurrence” and “boundary” only when the
-child is ready.
+Prefer those words in conversation. If a child asks about “occurrence” or
+“boundary,” explain them in ordinary language but do not require recall.
 
-## Before reading
+## Before playing
 
-Prepare:
+The printed story is complete without extra materials. Optional demonstration
+materials are:
 
-- one safe empty bowl or open box;
-- one familiar toy placed out of sight;
-- paper and thick pencils or crayons; and
-- an optional quiet timer set for no more than a few seconds.
+- one large, safe open box or bowl;
+- one familiar large toy;
+- a bell that an adult controls, or simply a pretend bell;
+- sturdy paper and thick crayons; and
+- a blanket or cloth used where the child can see and leave freely.
 
-Do not use sealed containers, choking hazards or activities that require a
-child to remain silent or still against their wishes.
+Avoid small parts, sealed containers, blindfolds and enforced silence. Never
+hide a person, essential comfort object or item the child may find distressing.
+The child may watch, point, sign, speak, move, draw or opt out.
 
-## Page-by-page conversation prompts
+## How to use a challenge/reveal pair
 
-### Pages 3-6: the empty box
+1. Read the challenge page and pause.
+2. Let the child scan the whole illustration before prompting.
+3. Accept any clearly identified present detail, including one not in the
+   suggested answer.
+4. Ask “What helped you decide?” rather than “Are you sure?”
+5. Turn the page and compare with the reveal.
+6. If the child's answer differs, keep it and inspect the picture together.
 
-Ask: “What can you point to?” “What is not inside?” “Is an empty box the same as
-no box?”
+The reveal is a shared check, not a score screen. Several pages contain extra
+details so noticing beyond the printed target remains valuable.
 
-Expected reasoning: the box and the observation are present; the named toy is
-not inside. Do not say that emptiness is a numerical zero.
+## Page-by-page story and answer guidance
 
-### Pages 7-8: no clap
+### Pages 3-4 - enter the Nothing Hunt
 
-Ask: “Did a clap happen?” “Did listening happen?” “Could we make a mark to show
-that we listened?”
+Invite the child to trace the route on the map and count the empty star spaces
+by pointing, without turning this into a number lesson. Rehearse the game rhythm:
+“Spot, say, then check.” A non-speaking child may use gaze, gesture or a partner
+record.
 
-Expected reasoning: no clap occurred during the declared moment; listening and
-recording still occurred. Avoid claiming that silence itself is a substance.
+### Pages 5-6 - warm-up spot scene
 
-### Pages 9-10: the written word
+The five illustrated answers are Mira, Pip, the box, bell and rug. The lamp,
+question card and peeking star are valid extra answers. The aim is to establish
+that the child can find more than the adult's printed list.
 
-Ask: “What is on the paper?” “Does writing the word make the paper disappear?”
+### Pages 7-9 - the empty box
 
-Expected reasoning: the word, paper and act of writing are presented
-occurrences. A label is not automatically the thing it names.
+Challenge first: “Did she find nothing?” Do not correct immediately.
 
-### Pages 11-16: the complete paths
+Reveal: the named toy is not inside. The box, its lid, looking and the players
+remain presented. Page 9 gives the child-facing distinction: *empty* says what
+is missing from a named container; it does not erase the container.
 
-Use two large cards: `EXAMPLE PRESENTED` and `NO EXAMPLE PRESENTED`. Let the
-child place a sample record on the first card. Leave the second card without a
-sample.
+Optional demonstration: show the large toy, place it in the box, remove it and
+ask what changed and what stayed. Keep both records.
 
-Say: “If someone gives us an example, giving it is happening. If no example is
-given, we have no counterexample to check.”
+### Pages 10-11 - the still bell
 
-The cards are a teaching translation. They do not replace the registered
-candidate census.
+Allow a brief listening pause. Expected observations include Mira listening,
+Pip waiting and the bell staying still. “No ring” is bounded to that short
+declared moment. If a real sound interrupts an optional demonstration, record
+it rather than replaying solely to obtain the desired answer.
 
-### Pages 17-19: result and boundary
+Do not describe silence as a substance and do not ask the child to remain still.
 
-Repeat the careful form: “Every example we can show, say, record or check is
-something.” Do not simplify this to “we know everything exists everywhere.”
+### Pages 12-13 - the blank card
 
-### Pages 20-23: activities
+The four intended clues are the card, its edge, Pip's feather and Mira's
+magnifying glass. Other page features may also be noticed. The reveal separates
+“no mark on the card” from “no card presented.”
 
-Allow pointing, gesture, drawing, speech, a communication aid or a partner
-record. The learning goal is distinguishability and honest checking, not one
-communication mode.
+### Pages 14-15 - the hidden word
 
-## Activity guidance and answers
+The letters N-O-T-H-I-N-G appear across seven blocks. A child may find some
+letters, the whole word, other shapes or the enclosing outline. The reveal shows
+that a written label is itself a presented record. It is not automatically the
+thing it names.
 
-### Activity 1 - empty bowl
+### Pages 16-17 - behind the curtain
 
-Possible present items: bowl, table, people, light, pointing or spoken record.
-Possible absent content: the specifically named toy is not inside the bowl.
+The toys are hidden from the chosen view. The curtain, its toy-shaped bumps,
+Mira, Pip and play remain visible. Avoid generalising this to objects that are
+unobserved by every route; the activity concerns one blocked view in the scene.
 
-Correct reasoning names the container and the missing named content separately.
-“Nothing is there” should be gently expanded to “There is no toy inside; the
-bowl is here.”
+### Pages 18-21 - the two-door game
 
-### Activity 2 - listening moment
+Page 19 is the setup. Door A presents a star card while saying it has presented
+“nothing.” Door B supplies no example.
 
-If no clap occurs, record “no clap during our short listening moment.” Also
-record that listening or timing occurred. If an unexpected sound occurs, keep
-it; do not restart merely to obtain quiet.
+Page 20 checks Door A: the handover, card and inspection are presented, so the
+offered example is an occurrence rather than nothing.
 
-### Activity 3 - second check
+Page 21 checks Door B: there is no delivered example to inspect. This is not a
+secret counterexample and the book must not pretend one was supplied.
 
-Agreement is allowed. Disagreement is also allowed and retained. Ask what each
-person observed and whether their observation boundaries were the same.
+These two doors are the child-facing translation of the complete two-class
+candidate grammar. The picture game does not replace its formal census.
 
-## Common misconceptions
+### Pages 22-23 - try to draw nothing
+
+Both choices are allowed. If the child draws, the mark and action are presented.
+If the child makes no mark, the card and the choice remain presented. Do not
+call a blank page numerical zero.
+
+### Pages 24-25 - infer and name the result
+
+Only after all challenges does Mira state the detective rule. Ask the child to
+retell one earlier level that supports it. Page 25 then names the root theorem:
+“There is no nothing.” The adult should retain the operational boundary in the
+exact-source section above.
+
+### Page 26 - fair-play boundary
+
+The game mat marks what can be shown, said, drawn or recorded. Beyond the rope,
+the illustration adds no invented object and makes no claim. A useful adult
+sentence is: “We say what our check can reach, and we do not pretend it reaches
+farther.”
+
+### Pages 27-28 - final spot scene
+
+The four intended pairs are:
+
+- box here - no toy inside;
+- bell here - no ring during the scene;
+- card here - no mark on the card; and
+- curtain here - toy hidden from the chosen view.
+
+Mira, Pip and decorative shapes are valid extra present details.
+
+### Pages 29-30 - sorting game
+
+Place the empty box, still bell and blank card under “something to check.” Each
+is a presented object with a declared missing content, event or mark. Place only
+the dashed “no example given” card under that heading. The second basket does
+not contain a hidden thing; it records that no example was supplied.
+
+### Pages 31-32 - retell and continue
+
+The certificate records participation, not attainment. Invite the child to
+choose one clue to retell. Page 32 previews E02 by showing one whole made from
+visible fitting parts; it does not yet teach the next theorem.
+
+## Common misconceptions and gentle responses
 
 ### “An empty box is nothing.”
 
-Response: the box is a presented container. It lacks the named content at the
-declared boundary.
+“The toy is not inside. What can you point to that is still here?”
 
-### “The number zero proves nothing exists.”
+### “Nothing happened when the bell did not ring.”
 
-Response: a written symbol is a presented record. SFT does not install
-numerical zero as a foundational object.
+“You noticed no ring. What did you do while you checked?”
 
-### “If I close my eyes, everything becomes nothing.”
+### “If I cannot see it, it is nothing.”
 
-Response: closing eyes changes one observation route. The act, the person and
-other possible records are not erased by that change.
+“In this picture the curtain blocks one view. What else can we still see?”
 
-### “The theorem tells us what is beyond all possible expression.”
+### “The word NOTHING is nothing.”
 
-Response: it does not. Its exact scope is operational statements, denials,
-records, proof objects and derivational objects.
+“Can you point to the letters? Then the written word is something we can check.”
+
+### “Door B proves a secret nothing is behind it.”
+
+“Door B did not give us an example. We do not add a secret one.”
+
+### “The theorem tells us everything about what nobody could ever express.”
+
+It does not. The admitted claim concerns operational statements, denials,
+records, proof objects and derivational objects. It claims no knowledge of an
+unexpressed metaphysical domain.
 
 ## Observation notes
 
-Use brief narrative notes rather than a score. Useful observations include:
+Use brief narrative notes only when useful. Possible observations include:
 
-- distinguishes container from content;
-- names what happened and what did not happen;
-- makes or interprets a simple record;
-- asks for a second check;
-- keeps an unexpected or disagreeing result; and
-- uses speech, gesture, drawing or another communication form to show the
-  distinction.
+- scans a complex illustration and notices an unprompted detail;
+- waits for the reveal after offering an answer;
+- distinguishes container from named content;
+- distinguishes no event from listening or waiting;
+- explains that hidden depends on a selected view;
+- accepts or investigates a different answer; and
+- communicates through speech, sign, gaze, pointing, drawing or an aid.
 
 ## Accessibility
 
-- Read every page aloud and describe its illustration.
-- Offer tactile objects for the box and cards.
-- Never rely on colour alone; the two paths have text and shape labels.
-- Accept nonverbal response modes.
-- Reduce visual choice and repeat pages as needed.
-- Allow children to opt out of the quiet-listening activity.
-
-The semantic HTML edition contains every illustration description.
+- Read all text and illustration descriptions aloud when helpful.
+- Offer real, large tactile versions of the box, card and cloth.
+- Every target has a shape or text cue; colour is never the only cue.
+- Let the child examine one area at a time or cover busy parts of a scene.
+- Accept all communication routes and allow extra processing time.
+- Use the semantic HTML edition for scalable text and page descriptions.
+- The PDF contains selectable text but is not claimed as a fully tagged PDF.
 
 ## Reference-only curriculum navigation
 
-The activities can support communication and language, personal/social
-development, literacy, mathematics, understanding the world and expressive
-arts. These links calibrate usability against England's EYFS learning areas;
-they are not scientific dependencies and do not validate the theorem.
+The play can support attention, turn-taking, communication, early literacy,
+observation and expressive response. Those usability links are calibrated
+against Early Years practice. Curricula are not scientific dependencies and do
+not validate the theorem.
 
 ## Scientific checks preserved in the adult edition
 
 The admitted claim passed the complete two-class census, minimality,
 named-shape uniqueness, false-premise, tampered-source, tampered-artifact and
-boundary controls, plus implementation-distinct reconstruction. The picture
-book translates those habits into presenting, retaining both paths, checking
-again and keeping disagreement.
+boundary controls, plus implementation-distinct reconstruction. The story
+translates these habits into paired challenges, both two-door routes, a delayed
+reveal and a fair-play boundary.
+
+No empirical claim is added. The box, bell, card, curtain and game characters
+are demonstrations of language and checking, not measurements proving the
+formal theorem.
 
 ## Attribution and licence
 
@@ -210,5 +289,5 @@ Copyright 2026 Maria Smith. Licensed under Creative Commons Attribution 4.0
 International. When sharing or adapting, name Maria Smith, the title, version
 and source repository, link the licence and state modifications.
 
-External curricula and conventional accounts are reference-only. No
-third-party textbook text or illustration is reproduced.
+All text, game structure and vector scenes are original to this edition. No
+third-party textbook text, illustration, layout or character is reproduced.
