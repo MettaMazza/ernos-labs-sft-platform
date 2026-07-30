@@ -1,6 +1,6 @@
 # Level One manual end-to-end QA
 
-Version: 1.4.1 review
+Version: 1.4.2 review
 Date: 30 July 2026
 Final-publication approval: pending Maria Smith's review
 
@@ -29,6 +29,10 @@ deliberately repeat it.
 Optional code entry, local resume and Start Over were also checked. Codes did
 not change the scientific route or reveal an answer.
 
+The new level selector was checked before and after Level One play. Level One
+starts or resumes without a page reload, the in-level home control returns to
+the selector, and Level Two remains visibly unavailable while in development.
+
 Each success panel offers `Play again`; it resets only that stage's interactive
 state, preserves earned progress and returns directly to the activity prompt.
 
@@ -38,6 +42,7 @@ state, preserves earned progress and returns directly to the activity prompt.
 - Phone: 390 × 844, complete play-through using touch interactions.
 - Tablet: 1024 × 768, opening and moving-stage layout inspection.
 - Body scroll: absent at all three sizes.
+- Root and body overscroll: `none` at all three sizes.
 - Browser errors and warnings: none.
 
 Corrections made during QA kept Mira visibly identifiable as a permanent member
@@ -45,16 +50,18 @@ of the trio, replaced ambiguous or clipped props with labelled emoji objects,
 kept the mobile cast clear of activities, made the five-star holder and each
 earned star animate clearly, held the curtain reveal long enough to inspect,
 kept recall objects separate and adjusted the phone door room so both small
-doors remain visible.
+doors remain visible. Mira's tall portrait sprite is now bottom-anchored so her
+feet share the trio's ground line, and the opening cast has a separate safe area
+above the level title and cards at phone, tablet and desktop sizes.
 
 ## Automated checks
 
-- seven application/content tests: pass;
+- eight application/content tests: pass;
 - lint: pass, with two non-blocking image-optimisation warnings;
 - production build: pass;
 - no application fetch or analytics call: pass;
 - scientific claim and receipt identity: pass;
 - all 34 narration files present: pass.
 
-This QA makes review 1.4.1 ready for Maria Smith's play test. It does not approve
+This QA makes review 1.4.2 ready for Maria Smith's play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

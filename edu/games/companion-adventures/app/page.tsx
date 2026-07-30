@@ -290,6 +290,15 @@ export default function Home() {
     try { localStorage.removeItem("sft-e01-moving-stage-v1"); } catch { /* optional */ }
   }
 
+  function beginLevelOne() {
+    setFinished(false); setStarted(true);
+    window.setTimeout(() => playEffect("clunk"), 50);
+  }
+
+  function showLevelSelect() {
+    audioRef.current?.pause(); setFinished(false); setStarted(false); setJournalOpen(false);
+  }
+
   function activity() {
     if (complete) return null;
     if (scene.activity === "note") return <div className="note-search" aria-label="Find the note among three objects">
@@ -323,25 +332,25 @@ export default function Home() {
     </>;
   }
 
-  if (!started) return <main className="opening-screen">
+  if (!started) return <main className="opening-screen level-select-screen">
     <div className="opening-art" /><div className="opening-shade" />
     <div className="opening-cast" aria-hidden="true">
       <CharacterSprite name="mira" speaking={false} index={0} />
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">BOOK ONE · PLAYABLE LEVEL ONE</p><h1>The Star Door Mystery</h1><p>Mira, Sol and Tavi are the main adventure team. Today they will meet one new friend and follow five clues together.</p><button className="primary" onClick={() => { setStarted(true); window.setTimeout(() => playEffect("clunk"), 50); }}>Start the story</button><p className="small-print">Narrated with local Kokoro voices · captions always shown · no adverts or sign-in</p></section>
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card upcoming"><span>LEVEL 2 · NEXT</span><h2>Book Two Adventure</h2><p>The next verified SFT book and its new game level are being built together.</p><button disabled>In development</button></article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
   </main>;
 
   if (finished) return <main className="ending-screen">
-    <div className="ending-art" /><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They always found something present—or found that no object had been shown.</p><blockquote>There is no nothing.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><button className="primary" onClick={restart}>Play the story again</button></section>
+    <div className="ending-art" /><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They always found something present—or found that no object had been shown.</p><blockquote>There is no nothing.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell">
     <header className="game-hud">
       <div><span className="eyebrow">THE STAR DOOR MYSTERY</span><strong>{scene.title}</strong></div>
       <StarTrail count={starCount} focus={starCount === 0} newest={earnedStar} />
-      <nav><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={() => setMuted((value) => !value)} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={() => setJournalOpen(true)}>⌨ <span>Book code</span></button></nav>
+      <nav><button onClick={showLevelSelect} aria-label="Choose a level">⌂ <span>Levels</span></button><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={() => setMuted((value) => !value)} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={() => setJournalOpen(true)}>⌨ <span>Book code</span></button></nav>
     </header>
 
     <section key={scene.id} className={`play-stage scene-${scene.id}`} style={{ backgroundImage: `url('/art/stages/${scene.background}')` }} aria-label={`${scene.title}, an animated observatory story scene`}>

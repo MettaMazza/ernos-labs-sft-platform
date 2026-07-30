@@ -1,8 +1,9 @@
 # SFT E01 companion adventure
 
 *The Star Door Mystery* is the animated companion to review edition 1.4.0 of
-E01 *Something Is Here*. It is a fixed, full-screen moving stage: not a menu,
-quiz-card stack or read-and-scroll page.
+E01 *Something Is Here*. A full-screen level selector leads into its fixed,
+moving stage: the adventure itself is not a quiz-card stack or read-and-scroll
+page. Level Two is already reserved as the next book-and-game milestone.
 
 ## What the child does
 
@@ -27,6 +28,15 @@ later through a natural story encounter or as an optional hint earned after a
 genuine attempt. Returning characters can recall how to look or check, but must
 never state the new answer. The formal continuity record is
 `character-continuity.json`.
+
+## Level selection and mobile play
+
+The landing page shows every adventure level. Level One can start or resume
+from device-local progress; Level Two is visibly marked as in development. The
+in-level home control and the ending screen return to level selection without a
+page reload. The app root and every moving stage are locked to the visible
+viewport, with page overflow and pull-to-refresh overscroll contained for phone
+and tablet play.
 
 ## Offline narration and privacy
 

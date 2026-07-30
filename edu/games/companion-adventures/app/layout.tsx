@@ -6,8 +6,8 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Star Door Mystery | SFT Book One Level One",
-  description: "An original offline 3D story-puzzle adventure accompanying SFT Early Years book E01, Something Is Here.",
+  title: "SFT Learning Adventures | Books and Game Levels",
+  description: "An original offline learning adventure with one complete, replayable game level for each SFT education book.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

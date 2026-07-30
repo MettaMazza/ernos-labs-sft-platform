@@ -13,6 +13,7 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.match(styles, /@keyframes actor-walks-in/);
   assert.match(styles, /@keyframes actor-idles/);
   assert.match(styles, /@keyframes actor-speaks/);
+  assert.match(styles, /\.actor-mira img \{[^}]*bottom:-18px/);
   assert.doesNotMatch(source, /choice-grid|scene-choice|interaction-panel|window\.scrollTo/);
   for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
   assert.match(source, /className="emoji-prop recall-box/);
@@ -21,6 +22,17 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.equal(manifest.levels.length, 8);
   assert.equal(manifest.interaction_system.length, manifest.levels.length);
   assert.match(manifest.mini_game_policy, /Every stage in every level or book.*mini-game/i);
+});
+
+test("the landing page selects levels without browser-edge page movement", () => {
+  assert.match(source, /className="level-grid"/);
+  assert.match(source, /LEVEL 1 · READY/);
+  assert.match(source, /LEVEL 2 · NEXT/);
+  assert.match(source, /showLevelSelect/);
+  assert.match(styles, /html,body \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
+  assert.match(styles, /\.play-stage \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
+  assert.equal(manifest.level_select.enabled, true);
+  assert.match(manifest.mobile_navigation_guard, /prevent accidental pull-to-refresh/i);
 });
 
 test("automatic narration plays each story beat once and stops at the activity boundary", () => {

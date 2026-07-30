@@ -13,10 +13,12 @@ test("server renders the new narrated moving-stage adventure", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
+  assert.match(html, /Choose an adventure/);
+  assert.match(html, /LEVEL 1 · READY/);
+  assert.match(html, /LEVEL 2 · NEXT/);
   assert.match(html, /The Star Door Mystery/);
-  assert.match(html, /Start the story/);
-  assert.match(html, /Narrated with local Kokoro voices/);
-  assert.match(html, /Mira, Sol and Tavi are the main adventure team/);
-  assert.match(html, /meet one new friend/);
+  assert.match(html, /Play Level 1/);
+  assert.match(html, /Local Kokoro narration/);
+  assert.match(html, /Mira, Sol and Tavi travel through one complete learning level for each book/);
   assert.doesNotMatch(html, /Every star answers the mystery|complete lesson in game form|scene-choice/);
 });
