@@ -2,6 +2,21 @@
 
 All notable educational editions are preserved here.
 
+## 1.3.0 - review - 2026-07-30
+
+- Moved all story words and instructions above the illustrations.
+- Moved every reveal label above the object it names.
+- Hid each optional reading code as a small detail inside its scene.
+- Rewrote child-facing book and game language as direct, natural actions.
+- Rebuilt the narrative around a parcel, five empty map spaces, a no-star
+  practice search, five caused star rewards and the final Star Door.
+- Replaced the companion’s disconnected text-card prototype with one complete
+  original 3D story-puzzle level and persistent visual map.
+- Preserved version 1.2.0 identities and the unchanged scientific boundary.
+
+This edition remains under review and is not approved for
+`publications/education/` or remote hosting.
+
 ## 1.2.0 - review - 2026-07-30
 
 - Replaced abstract objects with familiar OpenMoji illustrations.

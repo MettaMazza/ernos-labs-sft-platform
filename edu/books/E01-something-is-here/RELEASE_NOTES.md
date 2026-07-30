@@ -1,4 +1,4 @@
-# E01 *Something Is Here* - Review version 1.2.0
+# E01 *Something Is Here* - Review version 1.3.0
 
 Status: complete working edition under review
 Prepared: 30 July 2026
@@ -8,30 +8,31 @@ Final-publication approval: pending
 
 ## Why this edition was made
 
-Maria Smith approved the direction of version 1.1.0 but found its abstract
-shapes unclear. She asked for easily recognised objects, repeated and labelled
-on the answer page, and proposed emoji as the universal visual vocabulary. She
-also required words to be understood through experience rather than appearing
-as unexplained labels.
+Maria Smith found the imagery clearer but asked for the reading order to be
+unmistakable: words above pictures, labels above the objects they name, and
+book codes hidden in the scenes as a searching game. She also rejected awkward
+phrasing such as “looking was happening” in favour of natural actions such as
+“Mira looked.” A later review found that stars and the final doors appeared
+without a sufficiently clear cause, so this same version was rebuilt around a
+parcel, a visible five-space map and one continuous Star Door mystery.
 
 ## Educational changes
 
-- Replaced abstract child-facing shapes with familiar OpenMoji illustrations.
-- Repeated every spotting scene on its reveal page with explicit written
-  labels attached to the recognisable objects.
-- Corrected image descriptions so they name exactly what the page displays.
-- Added plain-language first-use teaching for clue, container, empty, view,
-  example and *no example given*.
-- Rewrote the two-door sequence so the child first sees that Door B has shown
-  no object, then learns the short phrase *no example was given*.
-- Replaced the visible stop-sign symbol for absence with an explicitly empty
-  dashed frame, avoiding a contradictory visible object.
-- Added six optional reading codes and a six-level text-based companion game.
-- Added per-level word helpers, device-local progress and a full reset.
+- Moved story text, prompts and supporting words above every illustration.
+- Moved every reveal label above the recognisable object it names.
+- Turned six large code banners into small codes hidden inside scene details.
+- Rewrote every flagged child-facing sentence as direct, spoken English.
+- Matched the companion game's prompts, explanations and code hunt to the new
+  book wording.
+- Kept codes optional: they unlock story fun, never knowledge or progression.
+- Introduced the parcel and five empty star spaces before any clue reward.
+- Made the room search explicit practice with no star, then numbered the five
+  clue-to-star changes and used the fifth star to cause the final door to open.
 
 ## Reading-first companion
 
-The game returns the learner to exact book pages after every attempt. Codes
+The completely rebuilt original 3D game follows the same causal story from
+parcel to five stars to two doors. It returns the learner to exact book pages after every attempt. Codes
 unlock only character moments and badges; they never hide scientific content
 or block progress. The local source contains no sign-in, advertising,
 analytics, timer, streak or personal-data collection. It has not been remotely
@@ -47,7 +48,7 @@ open claim and make no claim about an unexpressed metaphysical domain.
 
 ## Version custody and publication boundary
 
-Versions 1.0.0 and 1.1.0 retain their original identities. Version 1.2.0 uses a
+Versions 1.0.0, 1.1.0 and 1.2.0 retain their original identities. Version 1.3.0 uses a
 new overlay source, output directory and release hashes. It is a working review
 copy and is not placed under `publications/education/`. No DOI, Zenodo record,
 GitHub Release or remote website deployment is created.

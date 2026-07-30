@@ -3,14 +3,17 @@
 **Shelf:** Early Years / Foundation
 **SFT branch:** Foundation
 **Scientific source:** `SFT-ROOT-THERE-IS-NO-NOTHING`
-**Current working edition:** 1.2.0 review
+**Current working edition:** 1.3.0 review
 **Final-publication approval:** pending Maria Smith's decision
 
-`Something Is Here` begins the SFT Open Education Library. Version 1.2.0 is a
-32-page discovery-led game story in which children help Mira and Pip complete
-the Nothing Hunt. Familiar emoji replace abstract shapes. A challenge first
+`Something Is Here` begins the SFT Open Education Library. Version 1.3.0 is a
+32-page discovery-led game story in which children help Mira and Pip solve the
+Star Door mystery introduced by a parcel and a five-space clue map. Practice
+earns no star; five numbered investigations then light five stars and cause the
+final door to open. Familiar emoji replace abstract shapes. A challenge first
 shows recognisable objects without answer labels; the following reveal repeats
-the scene and names each object clearly.
+the scene and names each object clearly. Story words and reveal labels sit
+above the illustrations. Six optional codes are hidden as tiny scene details.
 
 Important learning words are experienced and explained in plain language at
 first use. For example, the child sees that Door B has not shown an object
@@ -18,21 +21,22 @@ before the phrase *no example was given* is introduced.
 
 ## Current package
 
-- `source/book-v1.2.0.json` - canonical 1.2.0 overlay, reading codes and image
+- `source/book-v1.3.0.json` - canonical 1.3.0 overlay, hidden codes and image
   descriptions; it keeps the complete 1.1.0 source as an immutable dependency.
-- `source/render_e01_v1_2.py` - reproducible OpenMoji PDF and semantic HTML
+- `source/render_e01_v1_3.py` - reproducible OpenMoji PDF and semantic HTML
   generator.
 - `adult-guide.md` - exact source, facilitation, vocabulary, complete page
   answers, misconceptions, accessibility and safeguarding.
 - `claim-map.json` - page-to-claim, provenance, vocabulary and game mapping.
 - `book-manifest.json` - version, boundary, licence, artifacts and checks.
-- `accessible/student-book-v1.2.0.html` - generated semantic edition.
-- `edu/games/companion-adventures/` - the reading-first text adventure.
-- `editions/1.1.0/RELEASE_RECORD.md` - immutable identity of the previous
+- `accessible/student-book-v1.3.0.html` - generated semantic edition.
+- `edu/games/companion-adventures/` - the complete original 3D Level One story
+  adventure.
+- `editions/1.2.0/RELEASE_RECORD.md` - immutable identity of the previous
   working edition.
 
 Rendered review PDFs are written to
-`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.2.0/`.
+`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.3.0/`.
 
 ## Rebuild
 
@@ -42,7 +46,7 @@ dependencies so the renderer can read OpenMoji 16 assets:
 ```bash
 python3 -m pip install -r edu/books/E01-something-is-here/source/requirements.txt
 cd edu/games/companion-adventures && npm install
-python3 edu/books/E01-something-is-here/source/render_e01_v1_2.py
+python3 edu/books/E01-something-is-here/source/render_e01_v1_3.py
 ```
 
 Run the companion locally with `npm run dev`; verify it with `npm test`.

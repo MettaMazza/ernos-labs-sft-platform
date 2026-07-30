@@ -107,7 +107,7 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
             book["pages"][page_index].update(update)
     claim_map = json.loads((book_dir / "claim-map.json").read_text(encoding="utf-8"))
     pages = book["pages"]
-    expected_pages = 32 if manifest["version"] in {"1.1.0", "1.2.0"} else 24
+    expected_pages = 32 if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0"} else 24
     require(len(pages) == expected_pages, f"E01 {manifest['version']} must have {expected_pages} pages")
     require([p["page"] for p in pages] == list(range(1, expected_pages + 1)), "page sequence is not continuous")
     require(all(p.get("text", "").strip() for p in pages), "a page has no text")
@@ -148,7 +148,7 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
     require("unexpressed metaphysical domain" in adult_text, "adult guide missing scope boundary")
     require("curriculum" in adult_text and "not scientific dependencies" in adult_text, "external-reference boundary missing")
 
-    if manifest["version"] in {"1.1.0", "1.2.0"}:
+    if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0"}:
         require(book["status"] == "review", f"E01 {manifest['version']} canonical source must remain review")
         require(manifest.get("final_publication", {}).get("approved") is False, "unapproved E01 entered final-publication state")
         require(claim_map["educational_sequence"].startswith("experience_then_"), "discovery sequence missing")
@@ -163,19 +163,38 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         require("page 19 is the setup" in adult_text, "adult guide lacks paired-page answer guidance")
         require("not approved" in adult_text or "awaiting maria smith's approval" in adult_text, "approval boundary missing")
 
-    if manifest["version"] == "1.2.0":
-        require(overlay is not None, "E01 1.2.0 must use its preserved-source overlay")
+    if manifest["version"] in {"1.2.0", "1.3.0"}:
+        require(overlay is not None, f"E01 {manifest['version']} must use its preserved-source overlay")
         require(overlay["visual_contract"]["recognisable_objects"] is True, "recognisable-object contract missing")
         require(overlay["visual_contract"]["challenge_pages_unlabelled"] is True, "challenge label boundary missing")
-        require(overlay["visual_contract"]["reveal_pages_explicitly_labelled"] is True, "reveal label contract missing")
+        if manifest["version"] == "1.2.0":
+            require(overlay["visual_contract"]["reveal_pages_explicitly_labelled"] is True, "reveal label contract missing")
+        else:
+            require(overlay["visual_contract"]["story_words_above_illustrations"] is True, "words-above-art contract missing")
+            require(overlay["visual_contract"]["reveal_labels_above_objects"] is True, "labels-above-objects contract missing")
+            require(overlay["visual_contract"]["reading_codes_hidden_as_scene_easter_eggs"] is True, "hidden-code contract missing")
         expected_codes = ["ROOMSTAR", "BOXCLUE", "QUIETWINGS", "BLANKEDGE", "CURTAINMAP", "TWODOORS"]
         require([entry["code"] for entry in overlay["reading_codes"]] == expected_codes, "reading code set mismatch")
         require(all(entry["required_for_progress"] is False for entry in overlay["reading_codes"]), "a reading code blocks progress")
         require("something shown for us to look at is called an example" in child_text, "example is not defined at first use")
-        require("we have not seen an object from door b yet" in child_text, "no-example experience is not explicit")
+        if manifest["version"] == "1.2.0":
+            require("we have not seen an object from door b yet" in child_text, "no-example experience is not explicit")
+        else:
+            require("there was no new object from door b for mira to look at" in child_text, "no-example experience is not explicit")
+            for poor_phrase in (
+                "looking was happening",
+                "no ring happened",
+                "the container and the looking",
+                "declared mark",
+                "which happening",
+            ):
+                require(poor_phrase not in child_text, f"awkward phrase remains in child text: {poor_phrase}")
         require("no example was given" in child_text, "plain experience is not linked to the short term")
         require("a clue is something" in child_text, "clue is not defined")
-        require("a container is something" in child_text, "container is not defined")
+        require(
+            "a container is something" in child_text or "a container holds things" in child_text,
+            "container is not defined",
+        )
         require("a view is what we can see" in child_text, "view is not defined")
 
         game_manifest_path = REPO / artifacts_by_role["companion_game_manifest"]
@@ -185,6 +204,8 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         require(game_manifest["scientific_source"]["claim_id"] == source["claim_id"], "companion game claim mismatch")
         require(game_manifest["scientific_source"]["receipt_hash"] == source["receipt_hash"], "companion game receipt mismatch")
         require(game_manifest["reading_codes"] == expected_codes, "companion game code set mismatch")
+        if manifest["version"] == "1.3.0":
+            require(game_manifest["codes_hidden_in_book_scenes"] is True, "companion hidden-code contract missing")
         require(game_manifest["codes_required_for_progress"] is False, "companion code blocks progress")
         require(game_manifest["scientific_content_locked_behind_codes"] is False, "scientific content is code-locked")
         require(game_manifest["personal_data_collected"] is False, "companion game collects personal data")
@@ -195,10 +216,28 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         require(game_manifest["final_publication"]["hosted"] is False, "companion was marked hosted without authority")
 
         game_source = (REPO / artifacts_by_role["companion_game_source"]).read_text(encoding="utf-8")
-        require("Word helper" in game_source, "companion word helper missing")
+        require(
+            "Word helper" in game_source or "word-definition" in game_source,
+            "companion word helper missing",
+        )
         require("no object has been shown for us to look at yet" in game_source, "companion no-example definition missing")
         require(re.search(r"\bfetch\s*\(", game_source) is None, "companion application makes a network fetch")
         require("localStorage.removeItem" in game_source, "companion local reset missing")
+        if manifest["version"] == "1.3.0":
+            game_text = normalized(game_source)
+            require("five checked clues will light five stars" in game_text, "five-star premise is not established")
+            require("no star lights because" in game_text, "practice scene incorrectly implies a star")
+            require("all five stars shine. the star door opens" in game_text, "final door lacks its five-star cause")
+            require(game_manifest["level_model"].startswith("one continuous story-puzzle level"), "companion remains fragmented")
+            for poor_phrase in (
+                "looking was happening",
+                "no ring happened",
+                "the container and the looking",
+                "declared mark",
+                "which happening",
+                "printed on its reveal page",
+            ):
+                require(poor_phrase not in game_text, f"awkward phrase remains in companion: {poor_phrase}")
 
         attribution = (REPO / artifacts_by_role["third_party_asset_attribution"]).read_text(encoding="utf-8")
         require("OpenMoji" in attribution and "CC BY-SA 4.0" in attribution, "OpenMoji attribution incomplete")

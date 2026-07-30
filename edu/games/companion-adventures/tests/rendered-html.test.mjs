@@ -12,15 +12,15 @@ async function render() {
   );
 }
 
-test("server-renders the E01 reading-first companion", async () => {
+test("server-renders the coherent E01 3D story adventure", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /Mira &amp; Pip’s Nothing Hunt/i);
-  assert.match(html, /Begin the adventure/i);
-  assert.match(html, /The book gives the deeper clues/i);
+  assert.match(html, /The Star Door Mystery/i);
+  assert.match(html, /Enter Mira’s workshop/i);
+  assert.match(html, /Every star answers the mystery introduced at the start/i);
   assert.match(html, /No sign-in\. No adverts\. No timer\./i);
-  assert.match(html, /A companion, not a replacement textbook/i);
+  assert.match(html, /A complete lesson in game form/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });

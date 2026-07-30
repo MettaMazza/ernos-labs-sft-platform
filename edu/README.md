@@ -31,9 +31,11 @@ presented as SFT authority.
   by every book companion.
 
 The first working companion is
-`edu/games/companion-adventures/`, paired with E01 review version 1.2.0. Its
-book codes unlock optional story moments only; the book remains the primary
-place for explanations and demonstrations.
+`edu/games/companion-adventures/`, paired with E01 review version 1.3.0. Its
+Level One is one continuous original 3D story-puzzle adventure. Its hidden book
+codes unlock optional story moments only. The game teaches the full child-facing
+lesson; the book remains a distinct, slower challenge/reveal reading route with
+deeper shared discussion.
 
 ## Current source boundary
 
