@@ -3,72 +3,64 @@
 **Shelf:** Early Years / Foundation
 **SFT branch:** Foundation
 **Scientific source:** `SFT-ROOT-THERE-IS-NO-NOTHING`
-**Current working edition:** 1.3.0 review
+**Current working edition:** 1.4.0 review
 **Final-publication approval:** pending Maria Smith's decision
 
-`Something Is Here` begins the SFT Open Education Library. Version 1.3.0 is a
-32-page discovery-led game story in which children help Mira and Pip solve the
-Star Door mystery introduced by a parcel and a five-space clue map. Practice
-earns no star; five numbered investigations then light five stars and cause the
-final door to open. Familiar emoji replace abstract shapes. A challenge first
-shows recognisable objects without answer labels; the following reveal repeats
-the scene and names each object clearly. Story words and reveal labels sit
-above the illustrations. Six optional codes are hidden as tiny scene details.
+*Something Is Here: The Star Door Mystery* begins the SFT Open Education
+Library. The child follows Mira and six original travellers through one
+continuous 32-page journey: a waking door supplies a note, the note establishes
+five clues, each checked clue lights one star, five stars open the door, two
+small doors answer the question, and a library scene retrieves an earlier clue.
 
-Important learning words are experienced and explained in plain language at
-first use. For example, the child sees that Door B has not shown an object
-before the phrase *no example was given* is introduced.
+The child looks, listens, moves, draws, reads and remembers before the story
+gives a short meaning. All story words and answer labels sit above the main
+illustration. Six optional picture codes are hidden inside scenes, but no code
+gates a clue, explanation, route, star or answer.
 
 ## Current package
 
-- `source/book-v1.3.0.json` - canonical 1.3.0 overlay, hidden codes and image
-  descriptions; it keeps the complete 1.1.0 source as an immutable dependency.
-- `source/render_e01_v1_3.py` - reproducible OpenMoji PDF and semantic HTML
-  generator.
-- `adult-guide.md` - exact source, facilitation, vocabulary, complete page
-  answers, misconceptions, accessibility and safeguarding.
-- `claim-map.json` - page-to-claim, provenance, vocabulary and game mapping.
-- `book-manifest.json` - version, boundary, licence, artifacts and checks.
-- `accessible/student-book-v1.3.0.html` - generated semantic edition.
-- `edu/games/companion-adventures/` - the complete original 3D Level One story
-  adventure.
-- `editions/1.2.0/RELEASE_RECORD.md` - immutable identity of the previous
-  working edition.
+- `source/book-v1.4.0.json` — complete canonical 32-page source and picture
+  descriptions.
+- `source/render_e01_v1_4.py` — reproducible student PDF, adult PDF and semantic
+  HTML renderer.
+- `adult-guide.md` — exact SFT source, facilitation, answers, safeguarding,
+  accessibility and returning-character rules.
+- `claim-map.json` — page-to-claim, vocabulary, code and companion mapping.
+- `book-manifest.json` — version, boundary, artifacts and completed checks.
+- `accessible/student-book-v1.4.0.html` — scalable semantic edition with a
+  visible description and accessible image role for every page.
+- `edu/games/companion-adventures/` — the matching offline-first animated game.
 
-Rendered review PDFs are written to
-`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.3.0/`.
+Rendered review PDFs are in
+`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.4.0/`.
 
-## Rebuild
-
-Install the Python packages in `source/requirements.txt`, then install the game
-dependencies so the renderer can read OpenMoji 16 assets:
+## Rebuild and verify
 
 ```bash
 python3 -m pip install -r edu/books/E01-something-is-here/source/requirements.txt
-cd edu/games/companion-adventures && npm install
-python3 edu/books/E01-something-is-here/source/render_e01_v1_3.py
+python3 edu/books/E01-something-is-here/source/render_e01_v1_4.py
+python3 edu/tools/verify_book.py edu/books/E01-something-is-here/book-manifest.json
+cd edu/games/companion-adventures
+npm install
+npm test
+npm run build
 ```
-
-Run the companion locally with `npm run dev`; verify it with `npm test`.
 
 ## Scientific boundary
 
 The book teaches only the independently replicated operational root claim. An
-unpresented absence supplies no counterexample, while every presented example
-is an occurrence and therefore is not nothing. The story does not claim
-knowledge of an unexpressed metaphysical domain, add a numerical zero or create
-an empirical result.
+unpresented absence supplies no counterexample, while every presented
+counterexample is an occurrence and is not nothing. The scenes do not claim
+knowledge of an unexpressed metaphysical domain, add an empirical result or
+use an external model as scientific authority.
 
-## Approval and hosting boundary
+## Approval boundary
 
-The book and game may be reviewed from `edu/` and GitHub. They must not enter
+Version 1.4.0 is a complete working review build. It must not enter
 `publications/education/current/` until Maria Smith explicitly approves this
-exact version. The game has not been remotely deployed; hosting needs a
-separate explicit decision.
+exact book-and-game version. Local-network testing is available; public hosting
+requires a separate decision and a cleared dependency review.
 
-## Licences
-
-Copyright 2026 Maria Smith. Original educational text and documentation are
-licensed under CC BY 4.0. Rendering and game code are Apache-2.0 repository
-code. OpenMoji-derived book illustrations are CC BY-SA 4.0; full attribution is
-recorded in `edu/games/companion-adventures/OPENMOJI_ATTRIBUTION.md`.
+Copyright 2026 Maria Smith. Educational text and documentation: CC BY 4.0.
+Repository code: Apache-2.0. Generated-art and narration provenance are recorded
+with the companion game.

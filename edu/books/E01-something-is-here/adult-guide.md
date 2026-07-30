@@ -1,68 +1,60 @@
 # Adult Guide - E01 *Something Is Here*
 
-Review version 1.3.0
+Review version 1.4.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
 Final-publication status: awaiting Maria Smith's approval
 
-## Purpose of the new game-story edition
+## Purpose
 
-The child joins Mira and Pip in one continuous mystery. A parcel arrives on
-page 3 with a map and the instruction **FIND NOTHING TO OPEN THE STAR DOOR**.
-The map visibly begins with five empty star spaces. The practice search does
-not earn a star; the empty box, still bell, blank card, visible word and partly
-hidden toys then earn Stars One to Five in that order. Only after all five have
-been checked does the Star Door open and reveal the two-door investigation.
-The result therefore resolves the question introduced by the parcel instead of
-appearing as an unrelated statement near the end.
+The child joins Mira and six original travellers in one continuous physical
+journey. Before breakfast, the sleeping Star Door wakes and slides out the note
+**FIND NOTHING. FIVE CLUES WILL SHOW THE WAY.** The note causes the journey.
+Each star opens the route to the next recognisable room: parcel, bell gallery,
+paper room, letter tiles and curtain passage. Five checked clues cause the Star
+Door to open. Two little doors answer the note's question. In the library,
+Tavi asks the child to retrieve the first clue before the map is filed.
 
-Each challenge page lets the child look, listen, choose, point or communicate
-before the following page reveals and discusses possible answers. The story
-delays its general rule until the child has experienced empty, quiet, blank,
-hidden and unpresented cases.
+The child experiences each distinction before receiving its short name. A
+challenge page asks the child to look, listen, pretend-draw, point or remember;
+the following reveal names what happened. The printed words always sit above
+the illustration. The same story, rooms, characters and causal order drive the
+companion game.
 
-Version 1.3.0 keeps the familiar OpenMoji pictures and changes the reading
-order: story words and prompts now appear above the illustration. Challenge
-pages show recognisable objects without answer names; the next page repeats the
-scene with each label above its object. The same emoji vocabulary appears in
-the companion digital adventure.
+## Narrative rule
 
-The six reading codes are no longer printed in large banners. Each reveal hides
-its code within a story object. Finding one is an
-optional picture hunt. The accessible description states the code and its
-location so the game remains available to a learner who cannot search visually.
+Every new object, reward and room must have a visible cause:
 
-The child book deliberately avoids the formal terms *candidate grammar*,
-*counterexample*, *occurrence*, *operational boundary* and *direct forcing*.
-Those exact terms belong here, where an adult can protect the scientific scope
-without making the child repeat unexplained language.
+1. the waking Star Door supplies the note;
+2. the note establishes five clues and the map shows five dark stars;
+3. each room is reached because the previous clue changes the route;
+4. one checked clue lights exactly one star;
+5. five lit stars open the Star Door;
+6. both little doors are inspected before the result;
+7. the library callback asks a memory question without giving its answer; and
+8. filing the map closes E01 before the next parcel previews E02.
 
-## Narrative-coherence rule
-
-Every new object, rule and reward must have a visible cause in the story:
-
-1. the parcel introduces the mystery;
-2. the five empty spaces establish the number of investigations;
-3. the practice search teaches the play rhythm without quietly awarding a star;
-4. each numbered clue changes exactly one empty space into a lit star;
-5. five lit stars cause the Star Door to open;
-6. the two doors supply the complete final check; and
-7. the completed map is filed in the workshop library before the next parcel
-   previews Book E02.
-
-When sharing the book, briefly point back to the map whenever a star lights.
-If the child loses the thread, use: “The parcel asked a question. We are checking
-five clues so the door will let us test it.” Do not introduce a reward or
-scientific term before the story has shown why it is present.
+If the child loses the thread, use: “The door asked a question. We are following
+five clues so we can answer it.” Do not introduce an unrelated reward or term.
 
 ## Vocabulary rule
 
-A learning word is not used as though its meaning were already known. The
-child first sees or performs the distinction, then receives the short word and
-a plain explanation. The next relevant page repeats it. The companion game
-adds a visible word helper for every level. Ordinary conversation should still
-replace any word the child does not understand; completing a vocabulary test is
-not a condition of participating in the story.
+Do not use a learning word as though its meaning were already known. Let the
+child see or perform the distinction, then give the short explanation.
+
+- **empty** - the named thing is not inside the container;
+- **still** - not moving during this short check;
+- **blank** - there is no mark on the card;
+- **hidden** - blocked from this view, not erased or gone;
+- **word** - letters placed together so they can be read;
+- **remember** - bring an earlier clue back to mind;
+- **no object shown** - no object has been supplied for us to inspect; and
+- **check** - look, listen or try again within the agreed activity.
+
+The child book avoids *candidate grammar*, *counterexample*, *occurrence*,
+*operational boundary* and *direct forcing*. Those terms remain here so adults
+can protect the scientific scope without making a young child repeat language
+they have not experienced.
 
 ## Exact SFT source
 
@@ -86,211 +78,102 @@ The complete declared grammar has two named classes:
    identity; that presentation is an occurrence and is not nothing.
 
 The theorem does not claim knowledge of an unexpressed metaphysical domain.
-The book's game, characters and visible examples are educational translations;
-they do not prove a new theorem or replace the admitted claim package.
+The book's story scenes are educational translations; they do not prove a new
+theorem or replace the admitted claim package. External curricula, voice
+models and image tools are references or production tools, never authorities
+in SFT derivation.
 
-## Learning through experience
+## Before sharing
 
-After repeated shared play, a child may begin to:
+The book is complete without extra materials. Optional large, safe materials
+are an open box or bowl, a familiar toy, a bell controlled by an adult, sturdy
+paper with thick crayons, and a cloth. Avoid small parts, blindfolds, enforced
+silence and hiding an essential comfort object. The child may watch, point,
+sign, speak, move, draw or opt out.
 
-- notice several things in a detailed scene;
-- distinguish a present container from a named item that is not inside it;
-- distinguish a missing sound or mark from the listening or page that remains;
-- notice that hidden is not the same as erased;
-- attempt a challenge before seeing a possible answer;
-- sort presented examples from a case where no example is supplied;
-- explain a choice by pointing, speaking, signing, drawing or using a
-  communication aid; and
-- keep an unexpected answer rather than changing the game to force agreement.
+For every challenge/reveal pair:
 
-These are invitations, not pass/fail expectations.
+1. read the challenge and pause;
+2. let the child scan the illustration before prompting;
+3. accept any clearly identified present detail;
+4. ask “What helped you decide?” rather than “Are you sure?”;
+5. turn the page and compare with the reveal; and
+6. keep a different first answer and inspect it together.
 
-## Child-facing vocabulary
+The reveal is a shared check, not a score screen.
 
-- **here** - available in the game for us to notice;
-- **inside** - held within the named container;
-- **empty** - the named content is not inside a container;
-- **still** - the object did not move during the short check;
-- **blank** - there is no mark on the card;
-- **hidden** - blocked from the chosen view;
-- **clue** - something noticed that helps us look again;
-- **check** - look, listen or try again using the declared game; and
-- **observation** - something the child notices during the agreed look, listen
-  or check;
-- **example** - something shown or given for the players to look at or check.
+## Page-by-page guidance
 
-Prefer those words in conversation. If a child asks about “occurrence” or
-“boundary,” explain them in ordinary language but do not require recall.
+### Pages 3-6 - the door, note and route
 
-## Before playing
+Let the child hear or make the CLUNK. Locate the real note and five dark stars.
+Sol's joke provides energy; Tavi's reply establishes careful looking without
+giving an answer. Trace the route with a finger. The optional `ROOMSTAR` code
+is hidden on page 5 and unlocks only a character moment in the game.
 
-The printed story is complete without extra materials. Optional demonstration
-materials are:
+### Pages 7-9 - Sol's box
 
-- one large, safe open box or bowl;
-- one familiar large toy;
-- a bell that an adult controls, or simply a pretend bell;
-- sturdy paper and thick crayons; and
-- a blanket or cloth used where the child can see and leave freely.
+Move the toy out in imagination or with a real large toy. Pause on Sol's claim.
+The reveal keeps both records: the toy is outside and the box remains. *Empty*
+means the named toy is not inside this box. It does not mean the box became
+nothing. Optional code: `BOXCLUE` on page 9.
 
-Avoid small parts, sealed containers, blindfolds and enforced silence. Never
-hide a person, essential comfort object or item the child may find distressing.
-The child may watch, point, sign, speak, move, draw or opt out.
+### Pages 10-12 - Nori and the bell
 
-## How to use a challenge/reveal pair
+Allow one comfortable listening breath. “No ring” is bounded to this short
+listen. Nori's breath and the still bell remain. Do not describe silence as a
+substance or require the child to be still. Optional code: `QUIETWINGS` on
+page 12.
 
-1. Read the challenge page and pause.
-2. Let the child scan the whole illustration before prompting.
-3. Accept any clearly identified present detail, including one not in the
-   suggested answer.
-4. Ask “What helped you decide?” rather than “Are you sure?”
-5. Turn the page and compare with the reveal.
-6. If the child's answer differs, keep it and inspect the picture together.
+### Pages 13-15 - Vee's card
 
-The reveal is a shared check, not a score screen. Several pages contain extra
-details so noticing beyond the printed target remains valuable.
+Both pretend choices are allowed. If the child makes a mark, the mark and card
+are available. If the child leaves it blank, the card remains. *Blank* means
+no mark on this card; it does not mean no card was shown. Optional code:
+`BLANKEDGE` on page 15.
 
-## Page-by-page story and answer guidance
+### Pages 16-18 - Moss and the word
 
-### Pages 3-4 - receive the parcel and learn the route
+Point across N-O-T-H-I-N-G from left to right. The written word is itself a
+visible, sayable and readable record. Naming nothing does not make the tiles
+vanish. This is an early literacy experience, not a spelling test.
 
-Name the parcel before reading its note. Let the child locate the map, the five
-empty star spaces and the closed Star Door. The note creates the story question;
-the map creates the order in which it will be investigated. Invite the child to
-trace the route and count the empty spaces by pointing, without turning this
-into a number lesson. Rehearse the game rhythm: “Look, say, turn, check.” A
-non-speaking child may use gaze, gesture or a partner record.
+### Pages 19-21 - Luma's curtain
 
-### Pages 5-6 - practice before Clue One
+Let the child decide before opening the curtain. The activity concerns one
+chosen view: the curtain blocks the toy and later reveals it. *Hidden* means
+blocked from this view, not erased. Optional code: `CURTAINMAP` on page 21.
 
-The challenge shows familiar emoji for Mira, Pip, bed, window, books, lamp,
-box and bell without labels. The reveal repeats the same arrangement and writes
-each name above its emoji. Any named pictured object is valid. The
-aim is to establish that the child can find more than the adult's printed list.
-Page 6 explicitly says that this is practice and that no map star has lit yet.
+### Pages 22-26 - the final doors
 
-Hidden code: `ROOMSTAR`, printed on a small star sticker among the room objects.
+The fifth star visibly pays off the route established on page 4. Door A offers
+a card; Door B offers no object. Inspect both. The intended result is neither:
+A presents a card and B does not present an object, so the story does not invent
+a secret one. Page 26 connects that result back to the original note. Optional
+code: `TWODOORS` on page 25.
 
-### Pages 7-9 - the empty box
+### Pages 27-30 - delayed recall and Tavi's method
 
-Challenge first: “Did she find nothing?” Do not correct immediately.
+Tavi asks, “What did Sol call empty?” and then waits. If the child chooses the
+toy, use only the process hint “The toy was outside. What was empty?” The hint
+does not state the answer. Page 28 reveals the box. Page 30 names Tavi's
+transferable habit: name what is here, say what changed, and do not add a
+secret answer.
 
-Reveal: the named toy is outside the box. The box and toy remain visible, and
-Mira looks inside. Page 9 explains in ordinary speech that a container holds
-things and that *empty* means the named toy is not inside it.
+### Pages 31-32 - close and continue
 
-Optional demonstration: show the large toy, place it in the box, remove it and
-ask what changed and what stayed. Keep both records.
+The map is already filed before the new parcel arrives, so E01 has a complete
+ending. The new question previews E02 without teaching or unlocking its answer.
 
-Hidden code on page 9: `BOXCLUE`, on the clue-star picture.
+## Returning-character guardrail
 
-### Pages 10-11 - the still bell
+Every future level introduces one memorable lesson character. An earlier
+character may return through a natural story encounter or as an optional hint
+after a genuine attempt. A returning character may ask how the child looked or
+model an investigative habit. They must never identify the new answer. The new
+lesson must remain understandable when a child has not played the earlier one.
 
-Allow a brief listening pause. Expected observations include Mira listening,
-Pip waiting and the bell staying still. “No ring” is bounded to that short
-declared moment. If a real sound interrupts an optional demonstration, record
-it rather than replaying solely to obtain the desired answer.
-
-Do not describe silence as a substance and do not ask the child to remain still.
-
-Hidden code: `QUIETWINGS`, printed on the bell.
-
-### Pages 12-13 - the blank card
-
-The four intended clues are the card, pencil, Pip's feather and Mira's
-magnifying glass. Other page features may also be noticed. The reveal separates
-“no mark on the card” from “no card presented.”
-
-Hidden code: `BLANKEDGE`, along the card edge.
-
-### Pages 14-15 - the hidden word
-
-The letters N-O-T-H-I-N-G appear across seven blocks. A child may find some
-letters, the whole word, other shapes or the enclosing outline. The reveal shows
-that a written label is itself a presented record. It is not automatically the
-thing it names.
-
-### Pages 16-17 - behind the curtain
-
-Part of each toy is hidden from the chosen view while a recognisable part stays
-visible. The child can still see the curtain, toy parts, Mira and Pip.
-Avoid generalising this to objects that are unobserved by every route; the
-activity concerns one partly blocked view in the scene.
-
-Hidden code: `CURTAINMAP`, woven into the curtain picture.
-
-### Pages 18-21 - the Star Door and two-door game
-
-Page 18 pays off the map established on page 4: all five spaces are now lit, so
-the Star Door opens. The two smaller doors are behind it and were not available
-before the five investigations. Page 19 is the setup. Door A holds out a card while Door B does not. The child
-is first asked which door gives Mira something to look at. Only then
-does the book explain that an *example* means something shown for us to look at
-or check.
-
-Page 20 checks Door A: the door shows the card to Mira, so the
-offered example is an occurrence rather than nothing.
-
-Page 21 checks Door B in concrete language first: no card was shown, so Mira
-has no object from that door to look at yet. The short phrase *no example was
-given* is introduced only after that experience. It does not mean that a secret
-object was observed; the book must not pretend one was supplied.
-
-These two doors are the child-facing translation of the complete two-class
-candidate grammar. The picture game does not replace its formal census.
-
-The final hidden code is `TWODOORS`, placed on the treasure ribbon on page 25.
-
-### Pages 22-23 - try to draw nothing
-
-Both choices are allowed. If the child draws, the mark and action are presented.
-If the child makes no mark, the card and the choice remain presented. Do not
-call a blank page numerical zero.
-
-### Pages 24-25 - infer, name and resolve the parcel
-
-Only after all challenges does Mira state the detective rule. Ask the child to
-retell one earlier clue that supports it. Page 25 then names the root theorem:
-“There is no nothing,” and explicitly connects the result to the parcel’s note.
-The adult should retain the operational boundary in the exact-source section
-above.
-
-### Page 26 - fair-play boundary
-
-The game mat marks what can be shown, said, drawn or recorded. Beyond the rope,
-the illustration adds no invented object and makes no claim. A useful adult
-sentence is: “We say what our check can reach, and we do not pretend it reaches
-farther.”
-
-### Pages 27-28 - final spot scene
-
-The four intended pairs are:
-
-- box here - no toy inside;
-- bell here - no ring during the scene;
-- card here - no mark on the card; and
-- curtain here - toy partly hidden from the chosen view.
-
-Mira, Pip and decorative shapes are valid extra present details.
-
-### Pages 29-30 - sorting game
-
-Place the empty box, still bell and blank card under “object to look at.” Each
-is a shown object with a declared missing content, event or mark. Place only the
-dashed empty frame under the NO OBJECT SHOWN YET heading. Page 30 then links this
-plain description to the short phrase *no example given*. The second basket
-does not contain a hidden thing; it records that no object was shown for the
-players to inspect.
-
-### Pages 31-32 - file the case and continue
-
-The certificate records participation, not attainment. Invite the child to
-choose one clue to retell. Mira files the completed five-star map in the
-workshop library so the story visibly closes. A new parcel then previews E02 by
-asking how one whole can have many parts; it does not yet teach the next
-theorem.
-
-## Common misconceptions and gentle responses
+## Common misconceptions and responses
 
 ### “An empty box is nothing.”
 
@@ -302,76 +185,45 @@ theorem.
 
 ### “If I cannot see it, it is nothing.”
 
-“In this picture the curtain blocks one view. What else can we still see?”
+“In this picture the curtain blocks one view. What can we try next?”
 
-### “The word NOTHING is nothing.”
+### “Door B shows a secret nothing.”
 
-“Can you point to the letters? Then the written word is something we can check.”
+“Door B did not show an object. We do not add a secret one.”
 
-### “Door B proves a secret nothing is behind it.”
-
-“Door B did not give us an example. We do not add a secret one.”
-
-### “The theorem tells us everything about what nobody could ever express.”
+### “The theorem tells us everything about what nobody could express.”
 
 It does not. The admitted claim concerns operational statements, denials,
-records, proof objects and derivational objects. It claims no knowledge of an
-unexpressed metaphysical domain.
-
-## Observation notes
-
-Use brief narrative notes only when useful. Possible observations include:
-
-- scans a complex illustration and notices an unprompted detail;
-- waits for the reveal after offering an answer;
-- distinguishes container from named content;
-- distinguishes no event from listening or waiting;
-- explains that hidden depends on a selected view;
-- accepts or investigates a different answer; and
-- communicates through speech, sign, gaze, pointing, drawing or an aid.
+records, proof objects and derivational objects. It makes no claim of knowledge
+over an unexpressed metaphysical domain.
 
 ## Accessibility
 
-- Read all text and illustration descriptions aloud when helpful.
-- Offer real, large tactile versions of the box, card and cloth.
-- Every target has a shape or text cue; colour is never the only cue.
-- Let the child examine one area at a time or cover busy parts of a scene.
-- Accept all communication routes and allow extra processing time.
+- Read all text and image descriptions aloud when helpful.
+- Offer large tactile versions of the box, card and cloth.
+- Colour is never the only cue; every target has shape, position or text.
+- Accept speech, sign, gaze, pointing, drawing and communication aids.
+- Allow extra processing time and repeat any scene without penalty.
 - Use the semantic HTML edition for scalable text and page descriptions.
 - The PDF contains selectable text but is not claimed as a fully tagged PDF.
 
 ## Companion digital adventure
 
-Level One is a complete original 3D story-puzzle adventure called *The Star
-Door Mystery*. It is not six disconnected quiz levels. Mira, Pip and six
-original travellers receive the same parcel, see the same five empty spaces,
-practise without earning a star, investigate the same five clue families and
-open the same final door. The map remains visible during play so the reason for
-every star and the location of the ending are never lost.
+Level One is a full-screen moving-stage adventure, not a read-and-scroll menu.
+Characters walk into each generated 3D room, idle, speak and celebrate. The
+child directly moves Sol's toy, listens at Nori's bell, draws on Vee's card,
+steps Moss's letters, drags Luma's curtain, inspects both doors and retrieves an
+earlier clue with Tavi. Local sound effects respond to those actions.
 
-Every learning word is defined in the game after the relevant experience. The
-game contains the complete child-facing lesson and boundary explanation, while
-the book remains valuable for its slower challenge/reveal rhythm, labelled
-illustrations, shared discussion and hidden-code searches. The six codes unlock
-optional character moments only. They never gate an explanation, star, next
-scene or scientific result.
+Twenty-eight caption-matched spoken lines were pre-rendered from Maria Smith's
+local Kokoro ONNX weights. Narration remains offline after installation, and
+the written caption is always visible. Kokoro supplies voices only and has no
+authority over the lesson or SFT claim. The game collects no name, age, email,
+location, voice, image or analytics; progress stays on the device.
 
-The intended loop is:
-
-1. follow the current story event and try its visual puzzle;
-2. keep the first try and compare it with the labelled check;
-3. read or reread the exact named book pages;
-4. optionally enter the hidden page code for extra character story; and
-5. return to see the checked clue change the persistent map.
-
-Replay moves some choices. After the two-door result, the map asks one later
-question about an earlier clue; a correct answer earns a memory spark but never
-changes the five-star route. No first try loses a star, and no timer or streak
-competes with reading.
-
-The game collects no name, age, email, location, voice, image or analytics.
-Optional progress is stored only on the device and can be reset. There are no
-advertisements, purchases, public scores, chat, streaks or time pressure.
+Book codes unlock optional jokes, visits or previews. They never gate a clue,
+explanation, star, route or answer. A hint callback appears only after an
+attempt and asks a process question rather than revealing the result.
 
 ## Reference-only curriculum navigation
 
@@ -380,17 +232,13 @@ observation and expressive response. Those usability links are calibrated
 against Early Years practice. Curricula are not scientific dependencies and do
 not validate the theorem.
 
-## Scientific checks preserved in the adult edition
+## Scientific checks preserved
 
 The admitted claim passed the complete two-class census, minimality,
 named-shape uniqueness, false-premise, tampered-source, tampered-artifact and
-boundary controls, plus implementation-distinct reconstruction. The story
-translates these habits into paired challenges, both two-door routes, a delayed
-reveal and a fair-play boundary.
-
-No empirical claim is added. The box, bell, card, curtain and game characters
-are demonstrations of language and checking, not measurements proving the
-formal theorem.
+boundary controls, plus implementation-distinct reconstruction. No empirical
+claim is added. The rooms, props and characters demonstrate language and
+checking; they do not measure or prove the formal theorem.
 
 ## Attribution and licence
 
@@ -398,11 +246,9 @@ Copyright 2026 Maria Smith. Licensed under Creative Commons Attribution 4.0
 International. When sharing or adapting, name Maria Smith, the title, version
 and source repository, link the licence and state modifications.
 
-All text and game structure are original to this edition. Book emoji artwork is
-from OpenMoji version 16.0.0, the open-source emoji and icon project, and is used
-under CC BY-SA 4.0 with attribution. The game’s 3D world, travellers and props
-were generated specifically for this project from original prompts and then
-cropped for local use; their generation model is an illustration tool, never a
-scientific source or authority. No third-party textbook text, game world,
-layout, publisher character or recognisable third-party game asset is
-reproduced.
+All text and game structure are original to this edition. The six 3D stage
+backgrounds, original travellers and props were generated specifically for
+this project with the built-in image-generation tool from original prompts.
+The image tool is an illustration tool, never a scientific source or authority.
+No third-party textbook text, publisher character, game world, interface or
+recognisable third-party game asset is reproduced.

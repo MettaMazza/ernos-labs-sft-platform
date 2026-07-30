@@ -1,30 +1,27 @@
-# E01 companion adventure - review 1.3.0
+# E01 companion adventure - review 1.4.0
 
 Prepared: 30 July 2026  
 Author: Maria Smith  
-Status: working review version; not finally approved or hosted
+Status: complete working review; not finally approved or publicly hosted
 
-- Completely replaces the earlier text-card prototype with one continuous,
-  original 3D story-puzzle level called *The Star Door Mystery*.
-- Establishes the parcel, five empty map spaces and locked Star Door before any
-  reward appears; practice earns no star, and Clues One to Five light exactly
-  Stars One to Five before the two-door ending.
-- Places every choice label above a clear 3D illustration and defines each
-  learning word after the relevant experience.
-- Sends the learner back to exact book pages after every attempt.
-- Directs the learner to search for six codes hidden in the book scenes; they
-  unlock story moments, never scientific
-  content or progression.
-- Keeps progress only in local browser storage, with a visible reset control.
-- Includes no account, advertisements, analytics, timer, streak or personal
-  data collection.
-- Preserves the exact E01 scientific claim and operational boundary.
-- Replaces awkward abstract phrasing with direct actions in natural English.
-- Adds replay choice movement, a persistent map, local progress resume and a
-  delayed recall memory spark, plus a complete plain-language ending with the
-  formal boundary labelled for adults.
+- Replaced the 1.3 read-and-scroll/card interface with a fixed `100dvh` animated
+  stage and no gameplay body scrolling.
+- Added six original generated 3D room backgrounds and independent original
+  character sprites with walk-in, idle, speaking and celebration motion.
+- Added eight direct environmental activities: note search, toy/box movement,
+  held listening, finger drawing, letter stepping, curtain dragging, two-door
+  inspection and delayed object recall.
+- Added 28 caption-matched local Kokoro narration files and offline Web Audio
+  effects for taps, steps, clunks, stars, rustles and listening.
+- Kept all captions visible and all progress device-local.
+- Introduced Tavi as E01's careful spotter and recorded the series rule that a
+  callback must be a natural encounter or earned process hint, never an answer.
+- Added a wrong-recall route that first reminds the child what was outside and
+  then asks what was empty; the answer remains for the child to choose.
+- Preserved all six optional book codes without locking knowledge or progress.
+- Completed desktop and phone end-to-end play-throughs, tablet layout review,
+  production build, lint and six application/content tests.
 
-This is a companion source release on GitHub `main`, not a remote website
-deployment or an approved final educational publication. The upstream
-production dependency advisories found during review are preserved in
-`SECURITY_REVIEW.md`; remote hosting readiness remains false.
+This source review may be tested on the local network and pushed on GitHub
+`main`. It is not a deployed child service or approved final educational
+publication. Dependency advisories remain recorded in `SECURITY_REVIEW.md`.

@@ -1,0 +1,24 @@
+{
+  "schema": "sft-education-character-continuity/1",
+  "policy": "Every level introduces one memorable lesson character. Later levels may bring that character back through a natural story encounter or an optional hint earned after a genuine attempt. A callback may recall an investigative habit but must never state or expose the new answer.",
+  "callback_guardrails": [
+    "A returning character asks or demonstrates; they do not solve the new task.",
+    "Narrative callbacks must make sense even when the player does not remember the earlier level.",
+    "Hint callbacks unlock only after an attempt or through an optional book code.",
+    "No required lesson, answer or route is locked behind remembering a character."
+  ],
+  "characters": [
+    {
+      "id": "tavi",
+      "name": "Tavi",
+      "introduced_in": "E01",
+      "role": "careful spotter",
+      "lesson_memory": "Name what is here before naming what is missing.",
+      "return_rule": "Bring Tavi back naturally when a later claim needs careful looking. Tavi may ask what the player can check first, but cannot identify the new answer."
+    }
+  ],
+  "planned_level_slots": [
+    {"level": "E02", "new_character": "reserved", "callback": "Tavi arrives carrying the old empty box as an ordinary story prop and asks where the player would look first; the E02 answer remains undisclosed."},
+    {"level": "E03", "new_character": "reserved", "callback": "An earlier character can appear after the first attempt with a process hint, never the result."}
+  ]
+}

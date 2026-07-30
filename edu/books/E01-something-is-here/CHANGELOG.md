@@ -2,6 +2,23 @@
 
 All notable educational editions are preserved here.
 
+## 1.4.0 - review - 2026-07-30
+
+- Rebuilt the book around one caused journey from the waking Star Door to the
+  library and E02 parcel.
+- Replaced the earlier printable emoji system with original generated 3D stage
+  environments and recurring original characters.
+- Made every lesson experiential before naming its bounded meaning.
+- Added delayed recall with Tavi and a formal guardrail preventing callbacks or
+  hints from supplying a new answer.
+- Rebuilt the companion as a full-screen animated stage with direct mini-games,
+  local Kokoro narration, captions and sound effects.
+- Completed desktop and phone end-to-end play-throughs plus tablet layout
+  inspection and all 32 student/5 adult PDF page checks.
+
+This edition remains under review and is not approved for
+`publications/education/` or public hosting.
+
 ## 1.3.0 - review - 2026-07-30
 
 - Moved all story words and instructions above the illustrations.

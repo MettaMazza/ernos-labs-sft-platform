@@ -1,6 +1,6 @@
 # Level One art provenance
 
-Version: E01 companion review 1.3.0
+Version: E01 companion review 1.4.0
 
 Prepared: 30 July 2026
 
@@ -28,6 +28,16 @@ characters, assets, logos, interface elements and world designs.
   `public/art/characters/individual/`.
 - `public/art/world/e01-prop-sheet-v1.png` — transparent prop sheet used to
   derive the local images in `public/art/props/`.
+- `public/art/stages/e01-stage-01-observatory-v1.png` — empty playable
+  observatory with the Star Door, parcel, bell, card and route map.
+- `public/art/stages/e01-stage-02-bell-gallery-v1.png` — playable bell gallery.
+- `public/art/stages/e01-stage-03-paper-room-v1.png` — playable blank-card and
+  seven-tile room.
+- `public/art/stages/e01-stage-04-curtain-passage-v1.png` — playable curtain
+  passage.
+- `public/art/stages/e01-stage-05-star-door-v1.png` — final two-door chamber.
+- `public/art/stages/e01-stage-06-library-v1.png` — library and next-parcel
+  ending.
 
 Earlier chroma-removal trials `e01-six-character-sheet-v1.png` and
 `e01-six-character-sheet-v2.png` remain as provenance records but are not used
@@ -64,10 +74,34 @@ rolled clue map, wooden star door and empty violet dotted frame. Use clear,
 recognisable silhouettes, consistent warm lighting, no labels, no overlap and
 entirely original asset design.
 
+### Playable stage set (1.4.0)
+
+Built-in image generation mode was used with the observatory key art as a
+style-and-world reference only. Each prompt requested a wide, empty, original
+3D animated-film game environment with a broad lower-third walking lane, no
+characters, no words, no interface, no logo or watermark, and no copied or
+recognisably similar third-party imagery.
+
+The six primary requests were:
+
+1. An observatory stage with the brass-and-blue Star Door at right and an open
+   parcel, five-star map, hand bell and blank card on the centre table.
+2. A connected bell gallery with three brass bells, a large still central bell
+   and a glowing star-map pedestal.
+3. A connected paper-and-letter room with a low table, blank cream card,
+   chunky pencil and seven separate unlettered colourful tiles.
+4. A connected curtain passage with a freestanding brass rail, coral velvet
+   sliding curtain, empty toy plinth and star-map pedestal.
+5. A final chamber with two small matching doors, a visible card at Door A, an
+   empty matching shelf at Door B, and the five-socket Star Door behind them.
+6. A welcoming observatory library with curved low shelves, a child-height
+   route-map stand, reading rug, sunrise window and newly delivered parcel.
+
 ## Processing mode
 
-Mode: image generation followed by local chroma removal and lossless cropping.
-The key art is used directly. Character and prop crops are stored as PNG files
-so each interactive choice has one stable, recognisable illustration. CSS adds
-the visible word tiles, curtain and door-plus-card composite without changing
-the scientific content.
+Mode: built-in image generation for the key art, character/prop sources and all
+six 1.4.0 stage backgrounds, followed by local chroma removal and lossless
+cropping only for the earlier character and prop sheets. Stage images are used
+directly. Character and prop crops are transparent PNG files that the game
+moves independently over the stages; CSS supplies movement, touch targets,
+letter reveals and the draggable curtain without changing scientific content.
