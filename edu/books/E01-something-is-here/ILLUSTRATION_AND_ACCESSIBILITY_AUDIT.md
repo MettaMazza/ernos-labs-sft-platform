@@ -1,13 +1,13 @@
 # E01 illustration and accessibility audit
 
-Edition: 1.4.0 review
+Edition: 1.5.0 review
 Audit date: 30 July 2026
 Final-publication approval: pending
 
 ## Visual system and accuracy
 
 The 32-page student edition uses six original, warm 3D environments generated
-for this project and original transparent traveller/prop assets. No publisher
+for this project and original transparent character and prop assets. No publisher
 illustration, third-party game character, world or interface is reproduced.
 Prompts, source paths and the non-authority boundary are recorded in
 `edu/games/companion-adventures/ART_PROVENANCE.md`.
@@ -45,17 +45,19 @@ the new answer.
 ## Manual render record
 
 All 32 final student pages and all 5 adult-guide pages were rendered to PNG and
-inspected at readable resolution. Corrections removed duplicate props, kept the
-box from covering Sol, removed a redundant card, preserved character faces and
-replaced a child-facing editorial callback sentence with an in-story clue.
+inspected at readable resolution. The 1.5.0 pass removed the old extra cast from
+the cover, restored the full four-character cast after Nori's introduction and
+added a clear note beside Mira's boots and in her hand. It also preserved every
+character's face and kept the box, teddy, card, bells and doors recognisable.
 Final pages show no clipped text, overlap, broken glyph, missing label, unreadable
 contrast or page-number defect.
 
-The matching game was played from opening to ending at 1280 × 720 and 390 × 844,
-including every mini-game, an incorrect recall and the earned process hint. The
-1024 × 768 stage was separately inspected. Body scrolling was absent; captions,
-touch targets and the two-door scene remained visible. Browser console errors
-and warnings were absent.
+The matching game retained the full earlier end-to-end play record. For 1.5.0,
+the revised mobile story was retested at 390 pixels wide through the note and
+parcel activity. Reloading during Sol's line returned to that exact line.
+Reloading after moving the teddy kept the unfinished activity and enabled the
+box check without revealing the answer early. Automated build and content tests
+also passed.
 
-Visual and accessibility review passes for review 1.4.0. This does not constitute
+Visual and accessibility review passes for review 1.5.0. This does not constitute
 Maria Smith's final-publication approval.

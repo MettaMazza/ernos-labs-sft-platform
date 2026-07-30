@@ -19,7 +19,7 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.doesNotMatch(source, /choice-grid|scene-choice|interaction-panel|window\.scrollTo/);
   for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
   assert.match(source, /className="emoji-prop recall-box/);
-  assert.match(source, /Find the note among three objects/);
+  assert.match(source, /Find the note among three things/);
   assert.match(source, /Play again/);
   assert.equal(manifest.levels.length, 8);
   assert.equal(manifest.interaction_system.length, manifest.levels.length);
@@ -45,27 +45,43 @@ test("automatic narration plays each story beat once and stops at the activity b
 
 test("the coherent child story has visible causes and short natural dialogue", () => {
   for (const phrase of [
-    "Star Door woke with a clunk", "followed the first arrow across the observatory", "next glowing arrow into the bell room",
-    "through the blue door to look for nothing in the paper room", "golden arrow led the four friends to a red curtain",
-    "five bright stars opened the great Star Door", "carried the bright map into the library",
+    "The Star Door was shut", "A note slid through the letter box",
+    "Mira bent down, picked up the note and opened it", "My brown teddy is inside",
+    "Tap the toy to lift it out. Then tap the box", "A gold star appeared on the map, and a blue door opened",
+    "Mira carried the note through the doorway", "I found a white card on this table",
+    "seven wall tiles lit up, one after another", "My teddy rolled out of my bag",
+    "All five bright stars turned together, and the Star Door opened", "Mira folded the note",
   ]) assert.match(source, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
-  assert.doesNotMatch(source, /operational distinction|candidate grammar|presented record|declared check|occurrence/);
-  assert.match(source, /The empty box is still here\. Empty means the toy is not inside/);
-  assert.match(source, /Hidden is not gone/);
-  assert.match(source, /B showed no object, so we do not invent one/);
+  assert.doesNotMatch(source, /operational distinction|candidate grammar|presented record|declared check|occurrence|registered partition|generated item|fitted tray/);
+  assert.match(source, /Empty means there is no toy inside this box\. The box is still here/);
+  assert.match(source, /Hidden means the curtain blocked it from our view/);
+  assert.match(source, /Door B showed an empty shelf/);
+  assert.doesNotMatch(source, /woke with a clunk|brass|rectangular slot|folded paper note|Now the box has nothing in it|My toy! I knew I packed you/);
   assert.doesNotMatch(source, /\bShh\b|Vee|Moss|Luma/);
 });
 
+test("mobile page restoration returns to the exact active turn instead of the title", () => {
+  for (const field of ["started", "finished", "sceneIndex", "beat", "activityStep", "complete", "letters", "curtain", "doors", "drawn", "cardOpen"]) {
+    assert.match(source, new RegExp(`\\b${field}\\b`));
+  }
+  assert.match(source, /typeof saved\.started === "boolean"\) setStarted\(saved\.started\)/);
+  assert.match(source, /localStorage\.setItem\("sft-e01-moving-stage-v1"/);
+  assert.match(source, /storageReadyRef\.current/);
+  assert.match(source, /!storageReady && <div className="restore-screen"/);
+  assert.match(source, /window\.addEventListener\("pagehide", saveNow\)/);
+  assert.match(source, /document\.addEventListener\("visibilitychange", saveWhenHidden\)/);
+});
+
 test("Kokoro narration is caption matched, bundled and offline", async () => {
-  assert.equal(narration.lines.length, 34);
+  assert.equal(narration.lines.length, 35);
   assert.equal(manifest.network_required_after_install, false);
   assert.match(manifest.sound_system, /Kokoro narration.*offline Web Audio/i);
   for (const [filename, speaker, caption] of narration.lines) {
     assert.match(source, new RegExp(`audio: \\"${filename}\\"`));
     assert.ok(source.includes(`speaker: "${speaker}", text: "${caption.replaceAll('"', '\\"')}"`));
-    await access(new URL(`../public/audio/e01/${filename}.mp3`, import.meta.url));
+    await access(new URL(`../public/audio/e01-v1.5.0/${filename}.mp3`, import.meta.url));
   }
-  await access(new URL("../public/audio/e01/generation-receipt.json", import.meta.url));
+  await access(new URL("../public/audio/e01-v1.5.0/generation-receipt.json", import.meta.url));
   assert.doesNotMatch(source, /\bfetch\s*\(|XMLHttpRequest|WebSocket|sendBeacon/);
 });
 

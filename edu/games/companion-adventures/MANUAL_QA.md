@@ -1,14 +1,16 @@
 # Level One manual end-to-end QA
 
-Version: 1.4.3 review
+Version: 1.5.0 review
 Date: 30 July 2026
 Final-publication approval: pending Maria Smith's review
 
 ## Complete journey tested
 
-The local game was manually played from opening to ending on desktop and phone:
+The complete 1.4.3 game structure was manually played from opening to ending on
+desktop and phone. Review 1.5.0 keeps those activities and adds the plain-language
+dialogue and exact mobile restoration checks recorded below:
 
-1. Star Door wakes, supplies the note and establishes five clues.
+1. A note comes through the shut Star Door's letter box and establishes five clues.
 2. A three-object spotting game asks the child to identify the written note.
 3. Toy is moved out and the box is inspected.
 4. Bell is pressed and held for the bounded listening check.
@@ -59,12 +61,23 @@ indicator is anchored to her visible portrait box beside her head.
 
 ## Automated checks
 
-- eight application/content tests: pass;
+- nine application/content tests: pass;
 - lint: pass, with two non-blocking image-optimisation warnings;
 - production build: pass;
 - no application fetch or analytics call: pass;
 - scientific claim and receipt identity: pass;
-- all 34 narration files present: pass.
+- all 35 narration files present: pass.
 
-This QA makes review 1.4.3 ready for Maria Smith's play test. It does not approve
+## 1.5.0 mobile restoration and wording regression
+
+- At 390 pixels wide, reloading during Sol's first parcel line returned to that
+  exact sentence instead of the level selector.
+- After moving the teddy but before opening the box, reloading kept the activity
+  unfinished and kept the box ready to inspect.
+- The empty-box definition appeared only after the child inspected the box.
+- The opening used only Star Door, letter box and note; no decorative material,
+  geometric slot description or unexplained door action remained.
+- The generated Kokoro files were rebuilt from the exact 35 revised captions.
+
+This QA makes review 1.5.0 ready for Maria Smith's next play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

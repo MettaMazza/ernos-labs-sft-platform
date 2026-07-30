@@ -1,6 +1,6 @@
 "use client";
 
-import { CSSProperties, FormEvent, PointerEvent, useEffect, useRef, useState } from "react";
+import { CSSProperties, FormEvent, PointerEvent, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 type Character = "mira" | "tavi" | "sol" | "nori";
 type Activity = "note" | "box" | "bell" | "card" | "word" | "curtain" | "doors" | "recall";
@@ -21,86 +21,87 @@ type Scene = {
 
 const scenes: Scene[] = [
   {
-    id: "note", title: "The door wakes", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], activity: "note",
+    id: "note", title: "A note comes through", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], activity: "note",
     lines: [
-      { speaker: "Narrator", text: "Before breakfast, the brass Star Door woke with a clunk.", audio: "01-narrator-door-wakes" },
-      { speaker: "Mira", text: "A note! It says: Find nothing. Five clues will show the way.", audio: "02-mira-note" },
-      { speaker: "Sol", text: "Find nothing? Easy. I am brilliant at finding things that are not there!", audio: "03-sol-easy" },
-      { speaker: "Tavi", text: "Let us stay together and look carefully. We will follow every clue.", audio: "04-tavi-together" },
+      { speaker: "Narrator", text: "Before breakfast, Mira, Sol and Tavi met in the star room. The Star Door was shut.", audio: "01-narrator-door-shut" },
+      { speaker: "Narrator", text: "A note slid through the letter box and landed beside Mira's boots.", audio: "02-narrator-note-through-letter-box" },
+      { speaker: "Narrator", text: "Mira bent down, picked up the note and opened it.", audio: "03-narrator-mira-picks-up-note" },
+      { speaker: "Mira", text: "I found a note! It says: Find nothing. Five clues will show the way.", audio: "04-mira-finds-and-reads-note" },
+      { speaker: "Sol", text: "Find nothing? That sounds very strange. I want to see what the clues show us!", audio: "05-sol-strange-mystery" },
+      { speaker: "Tavi", text: "Let's stay together and check everything we find. First, can you spot Mira's note?", audio: "06-tavi-spot-note" },
     ],
-    prompt: "Which object slid from the Star Door? Find and tap the written note.",
-    success: { speaker: "Mira", text: "Look at the five hollow stars at the top. Each clue we find will light one. The first arrow points to the parcel!", audio: "05-mira-star-map" },
+    prompt: "Mira picked up the note that came through the letter box. Tap the note.",
+    success: { speaker: "Mira", text: "You found the note. Look at the five empty star shapes at the top. They have no gold stars in them yet. Each checked clue will fill one. The first arrow is glowing beside the parcel!", audio: "07-mira-star-map" },
   },
   {
-    id: "box", title: "The parcel clue", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], journey: "The first arrow leads across the observatory to the parcel.", activity: "box", star: 1,
+    id: "box", title: "The parcel clue", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], journey: "The first arrow points across the star room to the parcel.", activity: "box", star: 1,
     lines: [
-      { speaker: "Narrator", text: "Mira, Sol and Tavi followed the first arrow across the observatory. They looked for nothing inside the parcel.", audio: "06-narrator-to-parcel" },
-      { speaker: "Sol", text: "My toy! I knew I packed you.", audio: "07-sol-toy" },
-      { speaker: "Sol", text: "Now the box has nothing in it.", audio: "08-sol-nothing" },
-      { speaker: "Tavi", text: "Let us check. Move the toy outside, then look inside the box.", audio: "09-tavi-look" },
+      { speaker: "Narrator", text: "Mira carried the note. The three friends followed its gold arrow across the room. It pointed to a parcel.", audio: "08-narrator-to-parcel" },
+      { speaker: "Sol", text: "I opened the parcel. My brown teddy is inside. There is my toy!", audio: "09-sol-sees-toy" },
+      { speaker: "Tavi", text: "The first clue says to move the teddy. Tap the toy to lift it out. Then tap the box and look inside.", audio: "10-tavi-move-then-look" },
     ],
-    prompt: "Move the toy outside, then tap the box.",
-    success: { speaker: "Tavi", text: "The toy is outside. The empty box is still here. Empty means the toy is not inside. We found a box, not nothing.", audio: "10-tavi-empty" },
+    prompt: "First move the teddy outside. Then tap the box and look inside.",
+    success: { speaker: "Tavi", text: "You moved the teddy outside and looked inside. The box is empty. Empty means there is no toy inside this box. The box is still here.", audio: "11-tavi-empty-defined" },
   },
   {
     id: "bell", title: "Meet Nori in the bell room", background: "e01-stage-02-bell-gallery-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The box was still there, so the next arrow leads to the bell room.", introduces: "nori", activity: "bell", star: 2,
     lines: [
-      { speaker: "Narrator", text: "They found an empty box, but they did not find nothing. So they followed the next glowing arrow into the bell room to try there.", audio: "11-narrator-to-bells" },
-      { speaker: "Nori", text: "Hello! I am Nori. I listen for tiny sounds. May I join your search?", audio: "12-nori-meets" },
-      { speaker: "Mira", text: "Yes, please, Nori. We are looking for nothing. Let us listen together.", audio: "13-mira-welcome" },
-      { speaker: "Nori", text: "Listen closely. The wind has stopped.", audio: "14-nori-listen" },
-      { speaker: "Narrator", text: "The brass bell hung still. Nori leaned close to listen.", audio: "15-narrator-bell" },
+      { speaker: "Narrator", text: "The box was empty, but it was still a box. They had not found a thing called nothing. A gold star appeared on the map, and a blue door opened.", audio: "12-narrator-first-star-door" },
+      { speaker: "Narrator", text: "Mira carried the note through the doorway. Sol and Tavi followed her into a room with three big bells.", audio: "13-narrator-enter-bells" },
+      { speaker: "Nori", text: "Hello! I am Nori. I listen for tiny sounds. May I help you check the bell room?", audio: "14-nori-meets" },
+      { speaker: "Mira", text: "Yes, please. The note asks us to find nothing. The first room showed us a box. Let's see what this room shows us.", audio: "15-mira-welcome" },
+      { speaker: "Nori", text: "The wind has stopped, and the big bell is not moving. Hold the bell picture while we stay very quiet and listen.", audio: "16-nori-listen" },
     ],
-    prompt: "Press and hold the bell while everyone listens.",
-    success: { speaker: "Nori", text: "I heard no ring. But I heard my breath, and the bell stayed right there. We found a bell, not nothing.", audio: "16-nori-no-ring" },
+    prompt: "Press and hold the big bell while everyone listens.",
+    success: { speaker: "Nori", text: "The bell did not ring while we listened. I heard my breath, and the bell stayed right there. We found a quiet bell, not a thing called nothing.", audio: "17-nori-no-ring" },
   },
   {
     id: "card", title: "The paper room", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The bell stayed in the room, so everyone follows the next arrow to the paper room.", activity: "card", star: 3,
     lines: [
-      { speaker: "Narrator", text: "They heard no ring, but the bell was still there. So the four friends went through the blue door to look for nothing in the paper room.", audio: "17-narrator-to-paper" },
-      { speaker: "Mira", text: "Here is a card with no mark on it. Shall we test it?", audio: "18-mira-card" },
-      { speaker: "Tavi", text: "Use your finger. Make a mark, or choose to leave the card blank.", audio: "19-tavi-draw" },
+      { speaker: "Narrator", text: "The bell did not ring, but it was still there. The second star lit, and another blue door opened into a room filled with paper.", audio: "18-narrator-to-paper" },
+      { speaker: "Mira", text: "I found a white card on this table. Look, there are no marks on it yet.", audio: "19-mira-finds-card" },
+      { speaker: "Tavi", text: "Touch the card. You may draw a mark, or choose Leave blank so the card keeps no marks.", audio: "20-tavi-draw-or-leave" },
     ],
     prompt: "Draw on the card—or leave it blank—then check.",
-    success: { speaker: "Mira", text: "A mark is something we can see. A blank card is still a card. We found a card, not nothing.", audio: "20-mira-card-result" },
+    success: { speaker: "Mira", text: "If you drew, the mark and the card are here. If you left it blank, blank means there is no mark on this card. The card is still here either way.", audio: "21-mira-card-result" },
   },
   {
-    id: "word", title: "Seven glowing steps", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The card remained, so seven tiles glow and offer the next place to look.", activity: "word", star: 4,
+    id: "word", title: "Seven glowing letters", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The card stayed there, so seven wall tiles light up for the next clue.", activity: "word", star: 4,
     lines: [
-      { speaker: "Narrator", text: "They found a card whether it was marked or blank. Then seven wall tiles began to glow, so they tried the word next.", audio: "21-narrator-to-word" },
-      { speaker: "Sol", text: "The tiles want us to spell the mystery word. Step with me!", audio: "22-sol-step" },
+      { speaker: "Narrator", text: "The card stayed there with or without a mark. The third star lit. Then seven wall tiles lit up, one after another.", audio: "22-narrator-to-word" },
+      { speaker: "Sol", text: "Each glowing tile shows one letter. Read them from left to right with me!", audio: "23-sol-step" },
     ],
     prompt: "Tap the letters in order to spell NOTHING.",
-    success: { speaker: "Tavi", text: "Nothing is a word we can see, say and read. The word stayed here when we named it, so it is not nothing.", audio: "23-tavi-word" },
+    success: { speaker: "Tavi", text: "The seven letters spell the word nothing. We can see and read it. Nothing is the word on the tiles. It is a word, not a thing.", audio: "24-tavi-word" },
   },
   {
     id: "curtain", title: "Behind the curtain", background: "e01-stage-04-curtain-passage-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The word stayed visible, so a golden arrow leads everyone to the curtain passage.", activity: "curtain", star: 5,
     lines: [
-      { speaker: "Narrator", text: "The word stayed visible, so it was not nothing. The next golden arrow led the four friends to a red curtain to try again.", audio: "24-narrator-to-curtain" },
-      { speaker: "Sol", text: "My toy rolled behind the curtain. I cannot see it now!", audio: "25-sol-curtain" },
-      { speaker: "Nori", text: "Let us slide the curtain slowly and watch what appears.", audio: "26-nori-curtain" },
+      { speaker: "Narrator", text: "The written word stayed on the tiles, so the fourth star lit. A gold arrow appeared on the floor and led the friends to a red curtain.", audio: "25-narrator-to-curtain" },
+      { speaker: "Sol", text: "My teddy rolled out of my bag! It crossed the floor and went behind the curtain. I saw where it went, but I cannot see it now!", audio: "26-sol-curtain" },
+      { speaker: "Nori", text: "Slide the curtain slowly. Let's see what is behind it.", audio: "27-nori-curtain" },
     ],
     prompt: "Slowly slide the curtain open and watch for the toy.",
-    success: { speaker: "Mira", text: "There it is! Hidden is not gone. The curtain changed what we could see. We found the toy, not nothing.", audio: "27-mira-hidden" },
+    success: { speaker: "Mira", text: "There is the teddy. Hidden means the curtain blocked it from our view. The toy did not disappear. Opening the curtain let us see it again.", audio: "28-mira-hidden" },
   },
   {
-    id: "doors", title: "The final question", background: "e01-stage-05-star-door-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "Five clues are complete, so five bright stars open the great Star Door.", activity: "doors",
+    id: "doors", title: "The final question", background: "e01-stage-05-star-door-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "Five clues are complete, so five bright stars open the Star Door.", activity: "doors",
     lines: [
-      { speaker: "Narrator", text: "They had tried five places and found something each time. Their five bright stars opened the great Star Door.", audio: "28-narrator-to-doors" },
-      { speaker: "Narrator", text: "Two little doors waited. Door A offered a card. Door B offered no object.", audio: "29-narrator-two-doors" },
-      { speaker: "Mira", text: "The note said, find nothing. Which door showed us nothing? Let us inspect both.", audio: "30-mira-question" },
+      { speaker: "Narrator", text: "Opening the curtain showed the teddy, so the fifth star lit. All five bright stars turned together, and the Star Door opened.", audio: "29-narrator-to-doors" },
+      { speaker: "Narrator", text: "Behind the Star Door were two small doors. Door A had a white card on its shelf. Door B had an empty shelf.", audio: "30-narrator-two-doors" },
+      { speaker: "Mira", text: "My note still says, Find nothing. Tap both small doors. We must look at each one before we answer.", audio: "31-mira-question" },
     ],
-    prompt: "Inspect both little doors before choosing.",
-    success: { speaker: "Tavi", text: "Neither door showed nothing. A showed a card. B showed no object, so we do not invent one.", audio: "31-tavi-neither" },
+    prompt: "Look behind both little doors before choosing.",
+    success: { speaker: "Tavi", text: "Door A showed a card. Door B showed an empty shelf. Neither door showed a thing called nothing.", audio: "32-tavi-neither" },
   },
   {
     id: "recall", title: "The map remembers", background: "e01-stage-06-library-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The mystery is solved, so the friends carry their map to the library and remember the journey.", activity: "recall",
     lines: [
-      { speaker: "Narrator", text: "The friends solved the door puzzle. Before going home, they carried the bright map into the library to remember where their search began.", audio: "32-narrator-library" },
-      { speaker: "Tavi", text: "Before we file the map, what did Sol call empty in the first room?", audio: "33-tavi-remember" },
+      { speaker: "Narrator", text: "The friends solved the note's puzzle. Mira folded the note. Everyone carried the five-star map into the library before going home.", audio: "33-narrator-library" },
+      { speaker: "Tavi", text: "Before we put the map away, let's remember the first clue. Which thing became empty after you moved Sol's teddy outside?", audio: "34-tavi-remember" },
     ],
-    prompt: "Tap the object that was empty in the first clue.",
-    success: { speaker: "Mira", text: "The box was empty, but it was still here. The toy was outside. We searched every room and found no nothing.", audio: "34-mira-ending" },
+    prompt: "Tap the thing that became empty in the first clue.",
+    success: { speaker: "Mira", text: "The box became empty after the teddy moved outside, but the box stayed in the room. We checked every clue. We found things, sounds and a written word, but no thing called nothing.", audio: "35-mira-ending" },
   },
 ];
 
@@ -153,12 +154,15 @@ export default function Home() {
   const [cardOpen, setCardOpen] = useState(false);
   const [savedStars, setSavedStars] = useState(0);
   const [earnedStar, setEarnedStar] = useState<number | null>(null);
+  const [storageReady, setStorageReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const drawingRef = useRef(false);
   const curtainRevealRef = useRef(false);
   const soundContextRef = useRef<AudioContext | null>(null);
   const lastAutoLineRef = useRef("");
+  const storageReadyRef = useRef(false);
+  const progressRef = useRef<Record<string, unknown>>({});
 
   const scene = scenes[sceneIndex];
   const dialogueDone = beat >= scene.lines.length;
@@ -166,10 +170,17 @@ export default function Home() {
   const speakingName = (!dialogueDone || complete) ? currentLine?.speaker.toLowerCase() : "";
   const starCount = Math.max(savedStars, scenes.slice(0, sceneIndex + (complete ? 1 : 0)).filter((item) => item.star).length);
 
+  useLayoutEffect(() => {
+    progressRef.current = {
+      started, finished, sceneIndex, beat, activityStep, complete,
+      stars: starCount, letters, curtain, doors, drawn, cardOpen,
+    };
+  }, [started, finished, sceneIndex, beat, activityStep, complete, starCount, letters, curtain, doors, drawn, cardOpen]);
+
   function playLine(line = currentLine) {
     if (!line || muted) return;
     audioRef.current?.pause();
-    const audio = new Audio(`/audio/e01/${line.audio}.mp3`);
+    const audio = new Audio(`/audio/e01-v1.5.0/${line.audio}.mp3`);
     audioRef.current = audio;
     audio.play().catch(() => undefined);
   }
@@ -216,16 +227,44 @@ export default function Home() {
       try {
         const saved = JSON.parse(localStorage.getItem("sft-e01-moving-stage-v1") ?? "{}");
         if (typeof saved.sceneIndex === "number") setSceneIndex(Math.min(saved.sceneIndex, scenes.length - 1));
+        if (typeof saved.beat === "number") setBeat(Math.max(0, saved.beat));
+        if (typeof saved.activityStep === "number") setActivityStep(Math.max(0, saved.activityStep));
+        if (typeof saved.complete === "boolean") setComplete(saved.complete);
+        if (typeof saved.finished === "boolean") setFinished(saved.finished);
+        if (typeof saved.started === "boolean") setStarted(saved.started);
         if (typeof saved.stars === "number") setSavedStars(Math.min(saved.stars, 5));
+        if (typeof saved.letters === "number") setLetters(Math.max(0, Math.min(saved.letters, 7)));
+        if (typeof saved.curtain === "number") setCurtain(Math.max(0, Math.min(saved.curtain, 100)));
+        if (Array.isArray(saved.doors)) setDoors(saved.doors.filter((door: unknown) => door === "A" || door === "B"));
+        if (typeof saved.drawn === "boolean") setDrawn(saved.drawn);
+        if (typeof saved.cardOpen === "boolean") setCardOpen(saved.cardOpen);
       } catch { /* The story also works without local saving. */ }
+      storageReadyRef.current = true;
+      setStorageReady(true);
     }, 0);
     return () => window.clearTimeout(timeout);
   }, []);
 
   useEffect(() => {
-    if (!started) return;
-    try { localStorage.setItem("sft-e01-moving-stage-v1", JSON.stringify({ sceneIndex, stars: starCount })); } catch { /* optional */ }
-  }, [sceneIndex, starCount, started]);
+    if (!storageReady) return;
+    try {
+      localStorage.setItem("sft-e01-moving-stage-v1", JSON.stringify(progressRef.current));
+    } catch { /* optional */ }
+  }, [storageReady, started, finished, sceneIndex, beat, activityStep, complete, starCount, letters, curtain, doors, drawn, cardOpen]);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    const saveNow = () => {
+      try { localStorage.setItem("sft-e01-moving-stage-v1", JSON.stringify(progressRef.current)); } catch { /* optional */ }
+    };
+    const saveWhenHidden = () => { if (document.visibilityState === "hidden") saveNow(); };
+    window.addEventListener("pagehide", saveNow);
+    document.addEventListener("visibilitychange", saveWhenHidden);
+    return () => {
+      window.removeEventListener("pagehide", saveNow);
+      document.removeEventListener("visibilitychange", saveWhenHidden);
+    };
+  }, [storageReady]);
 
   function nextBeat() {
     playEffect("tap");
@@ -284,7 +323,7 @@ export default function Home() {
   }
 
   function restart() {
-    audioRef.current?.pause(); setStarted(true); setFinished(false); setSceneIndex(0); setBeat(0); setActivityStep(0); setComplete(false); setSavedStars(0); setLetters(0); setCurtain(0); setDoors([]); setEarnedStar(null);
+    audioRef.current?.pause(); setStarted(true); setFinished(false); setSceneIndex(0); setBeat(0); setActivityStep(0); setComplete(false); setSavedStars(0); setLetters(0); setCurtain(0); setDoors([]); setDrawn(false); setCardOpen(false); setEarnedStar(null);
     lastAutoLineRef.current = "";
     curtainRevealRef.current = false;
     try { localStorage.removeItem("sft-e01-moving-stage-v1"); } catch { /* optional */ }
@@ -301,11 +340,11 @@ export default function Home() {
 
   function activity() {
     if (complete) return null;
-    if (scene.activity === "note") return <div className="note-search" aria-label="Find the note among three objects">
+    if (scene.activity === "note") return <div className="note-search" aria-label="Find the note among three things">
       <button className="emoji-prop note-choice note-map" onClick={() => { playEffect("tap"); setActivityStep(1); }} aria-label="Choose the route map"><span aria-hidden="true">🗺️</span><b>Map</b></button>
       <button className="emoji-prop note-choice note-book" onClick={() => { playEffect("tap"); setActivityStep(2); }} aria-label="Choose the blue book"><span aria-hidden="true">📘</span><b>Book</b></button>
       <button className="emoji-prop note-choice note-paper pulse" onClick={() => { playEffect("rustle"); finishActivity(); }} aria-label="Choose the written note"><span aria-hidden="true">📝</span><b>Note</b></button>
-      {activityStep > 0 && <p className="gentle-hint note-hint">That is the {activityStep === 1 ? "map" : "book"}. Which object has writing on one sheet of paper?</p>}
+      {activityStep > 0 && <p className="gentle-hint note-hint">That is the {activityStep === 1 ? "map" : "book"}. Which thing is one sheet of paper with writing on it?</p>}
     </div>;
     if (scene.activity === "box") return <>
       <button className={`emoji-prop toy-prop ${activityStep ? "toy-moved" : "pulse"}`} onClick={() => { playEffect("rustle"); setActivityStep(1); }} aria-label="Move Sol's toy outside the box"><span aria-hidden="true">🧸</span><b>Move toy</b></button>
@@ -322,8 +361,8 @@ export default function Home() {
     if (scene.activity === "word") return <div className="letter-steps" aria-label={`${letters} of 7 letters found`}>{"NOTHING".split("").map((letter, index) => <button key={index} className={index < letters ? "found" : index === letters ? "next-letter pulse" : ""} onClick={() => { if (index !== letters) return; playEffect("tap"); const value = letters + 1; setLetters(value); if (value === 7) window.setTimeout(finishActivity, 650); }} aria-label={index === letters ? `Choose ${letter}` : index < letters ? `${letter} found` : "A sleeping tile"}>{index <= letters ? letter : "?"}</button>)}</div>;
     if (scene.activity === "curtain") return <div className={`curtain-play ${activityStep ? "revealed" : ""}`}><span className="curtain-toy" role="img" aria-label="Sol's teddy behind the curtain">🧸</span><div className="curtain-overlay" style={{ transform: `translateX(${curtain}%)` }} />{activityStep > 0 && <div className="curtain-surprise">There you are! <span aria-hidden="true">✨</span></div>}<label><span>Slide slowly</span><input aria-label="Slide the curtain open" type="range" min="0" max="105" value={curtain} onInput={(event) => { const value = Number(event.currentTarget.value); setCurtain(value); if (value >= 100 && !curtainRevealRef.current) { curtainRevealRef.current = true; setActivityStep(1); playEffect("rustle"); window.setTimeout(finishActivity, 3200); } }} /></label></div>;
     if (scene.activity === "doors") return <>
-      <button className={`hotspot emoji-hotspot door-a ${doors.includes("A") ? "inspected" : "pulse"}`} onClick={() => { playEffect("clunk"); const next = doors.includes("A") ? doors : [...doors, "A"]; setDoors(next); if (next.includes("A") && next.includes("B")) window.setTimeout(finishActivity, 900); }}><span className="object-emoji" aria-hidden="true">🚪</span><span className="object-label">{doors.includes("A") ? "A showed a card 📄" : "Inspect door A"}</span></button>
-      <button className={`hotspot emoji-hotspot door-b ${doors.includes("B") ? "inspected" : "pulse"}`} onClick={() => { playEffect("clunk"); const next = doors.includes("B") ? doors : [...doors, "B"]; setDoors(next); if (next.includes("A") && next.includes("B")) window.setTimeout(finishActivity, 900); }}><span className="object-emoji" aria-hidden="true">🚪</span><span className="object-label">{doors.includes("B") ? "B showed no object" : "Inspect door B"}</span></button>
+      <button className={`hotspot emoji-hotspot door-a ${doors.includes("A") ? "inspected" : "pulse"}`} onClick={() => { playEffect("clunk"); const next = doors.includes("A") ? doors : [...doors, "A"]; setDoors(next); if (next.includes("A") && next.includes("B")) window.setTimeout(finishActivity, 900); }}><span className="object-emoji" aria-hidden="true">🚪</span><span className="object-label">{doors.includes("A") ? "A showed a card 📄" : "Look behind door A"}</span></button>
+      <button className={`hotspot emoji-hotspot door-b ${doors.includes("B") ? "inspected" : "pulse"}`} onClick={() => { playEffect("clunk"); const next = doors.includes("B") ? doors : [...doors, "B"]; setDoors(next); if (next.includes("A") && next.includes("B")) window.setTimeout(finishActivity, 900); }}><span className="object-emoji" aria-hidden="true">🚪</span><span className="object-label">{doors.includes("B") ? "B showed no object" : "Look behind door B"}</span></button>
     </>;
     return <>
       <button className="emoji-prop recall-box pulse" onClick={finishActivity} aria-label="Choose the empty cardboard box"><span aria-hidden="true">📦</span><b>Box</b></button>
@@ -333,6 +372,7 @@ export default function Home() {
   }
 
   if (!started) return <main className="opening-screen level-select-screen">
+    {!storageReady && <div className="restore-screen" aria-label="Returning to your adventure"><p>Returning to your adventure…</p></div>}
     <div className="opening-art" /><div className="opening-shade" />
     <div className="opening-cast" aria-hidden="true">
       <CharacterSprite name="mira" speaking={false} index={0} />
@@ -343,7 +383,7 @@ export default function Home() {
   </main>;
 
   if (finished) return <main className="ending-screen">
-    <div className="ending-art" /><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They always found something present—or found that no object had been shown.</p><blockquote>There is no nothing.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
+    <div className="ending-art" /><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They found things, sounds and a written word—but no thing called nothing.</p><blockquote>Nothing was not a thing they could find.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell">
@@ -353,7 +393,7 @@ export default function Home() {
       <nav><button onClick={showLevelSelect} aria-label="Choose a level">⌂ <span>Levels</span></button><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={() => setMuted((value) => !value)} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={() => setJournalOpen(true)}>⌨ <span>Book code</span></button></nav>
     </header>
 
-    <section key={scene.id} className={`play-stage scene-${scene.id}`} style={{ backgroundImage: `url('/art/stages/${scene.background}')` }} aria-label={`${scene.title}, an animated observatory story scene`}>
+    <section key={scene.id} className={`play-stage scene-${scene.id}`} style={{ backgroundImage: `url('/art/stages/${scene.background}')` }} aria-label={`${scene.title}, an animated star-room story scene`}>
       <div className="stage-light" />
       {beat === 0 && scene.journey && <div className="journey-banner"><span aria-hidden="true">✨</span><strong>{scene.journey}</strong></div>}
       {scene.introduces && beat <= 1 && <div className="guest-banner">New friend for Level One: <strong>{characterNames[scene.introduces]}</strong></div>}

@@ -1,6 +1,6 @@
 # Level One narration provenance
 
-Version: E01 companion review 1.4.1
+Version: E01 companion review 1.5.0
 Prepared: 30 July 2026
 Scientific-authority status: none
 
@@ -15,10 +15,10 @@ caption is always visible and is the authoritative accessibility transcript.
 - model used: `/Users/mettamazza/Desktop/HIVENET/models/kokoro-v1.0.onnx`
 - voices used: `/Users/mettamazza/Desktop/HIVENET/models/voices-v1.0.bin`
 - generator: `scripts/generate_kokoro_narration.py`
-- output: 34 MP3 files at 24 kHz in `public/audio/e01/`
+- output: 35 MP3 files at 24 kHz in `public/audio/e01-v1.5.0/`
 - playback: bundled files only; no network or runtime model access
 - detailed model, voice, manifest and output hashes:
-  `public/audio/e01/generation-receipt.json`
+  `public/audio/e01-v1.5.0/generation-receipt.json`
 
 The large local model weights are deliberately not copied into the repository
 or sent to a child's device. A device receives only the pre-rendered narrated

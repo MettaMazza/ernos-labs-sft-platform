@@ -1,19 +1,20 @@
 # Adult Guide - E01 *Something Is Here*
 
-Review version 1.4.0
+Review version 1.5.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
 Final-publication status: awaiting Maria Smith's approval
 
 ## Purpose
 
-The child joins Mira and six original travellers in one continuous physical
-journey. Before breakfast, the sleeping Star Door wakes and slides out the note
-**FIND NOTHING. FIVE CLUES WILL SHOW THE WAY.** The note causes the journey.
-Each star opens the route to the next recognisable room: parcel, bell gallery,
-paper room, letter tiles and curtain passage. Five checked clues cause the Star
-Door to open. Two little doors answer the note's question. In the library,
-Tavi asks the child to retrieve the first clue before the map is filed.
+The child joins the permanent team, Mira, Sol and Tavi, in one continuous
+journey. The Star Door is shut. A note slides through its letter box and lands
+beside Mira. She picks it up, opens it and reads **FIND NOTHING. FIVE CLUES WILL
+SHOW THE WAY.** The note begins the journey. Each star opens the way to the next
+room: the parcel, bells, paper, letter tiles and curtain. Nori is the one new
+friend introduced in this adventure. Five checked clues open the Star Door.
+Two little doors answer the note's question. In the library, Tavi asks the
+child to remember the first clue before Mira puts the map away.
 
 The child experiences each distinction before receiving its short name. A
 challenge page asks the child to look, listen, pretend-draw, point or remember;
@@ -25,7 +26,7 @@ companion game.
 
 Every new object, reward and room must have a visible cause:
 
-1. the waking Star Door supplies the note;
+1. a note comes through the shut Star Door's letter box;
 2. the note establishes five clues and the map shows five dark stars;
 3. each room is reached because the previous clue changes the route;
 4. one checked clue lights exactly one star;
@@ -34,8 +35,9 @@ Every new object, reward and room must have a visible cause:
 7. the library callback asks a memory question without giving its answer; and
 8. filing the map closes E01 before the next parcel previews E02.
 
-If the child loses the thread, use: “The door asked a question. We are following
-five clues so we can answer it.” Do not introduce an unrelated reward or term.
+If the child loses the thread, use: “Mira's note gave us a question. We are
+following five clues so we can answer it.” Do not add an unrelated reward or
+term.
 
 ## Vocabulary rule
 
@@ -106,10 +108,12 @@ The reveal is a shared check, not a score screen.
 
 ### Pages 3-6 - the door, note and route
 
-Let the child hear or make the CLUNK. Locate the real note and five dark stars.
-Sol's joke provides energy; Tavi's reply establishes careful looking without
-giving an answer. Trace the route with a finger. The optional `ROOMSTAR` code
-is hidden on page 5 and unlocks only a character moment in the game.
+Point to the shut Star Door, its letter box and the note beside Mira. Follow
+Mira as she picks up, opens and reads the note. Then locate the five star shapes
+with no gold inside them. Sol's joke adds fun; Tavi encourages careful looking
+without giving an answer. Trace the arrow with a finger. The optional
+`ROOMSTAR` code is hidden on page 5 and unlocks only a character moment in the
+game.
 
 ### Pages 7-9 - Sol's box
 
@@ -125,20 +129,20 @@ listen. Nori's breath and the still bell remain. Do not describe silence as a
 substance or require the child to be still. Optional code: `QUIETWINGS` on
 page 12.
 
-### Pages 13-15 - Vee's card
+### Pages 13-15 - Mira's card
 
 Both pretend choices are allowed. If the child makes a mark, the mark and card
 are available. If the child leaves it blank, the card remains. *Blank* means
 no mark on this card; it does not mean no card was shown. Optional code:
 `BLANKEDGE` on page 15.
 
-### Pages 16-18 - Moss and the word
+### Pages 16-18 - the word on the tiles
 
 Point across N-O-T-H-I-N-G from left to right. The written word is itself a
 visible, sayable and readable record. Naming nothing does not make the tiles
 vanish. This is an early literacy experience, not a spelling test.
 
-### Pages 19-21 - Luma's curtain
+### Pages 19-21 - the curtain
 
 Let the child decide before opening the curtain. The activity concerns one
 chosen view: the curtain blocks the toy and later reveals it. *Hidden* means
@@ -154,11 +158,11 @@ code: `TWODOORS` on page 25.
 
 ### Pages 27-30 - delayed recall and Tavi's method
 
-Tavi asks, “What did Sol call empty?” and then waits. If the child chooses the
-toy, use only the process hint “The toy was outside. What was empty?” The hint
-does not state the answer. Page 28 reveals the box. Page 30 names Tavi's
-transferable habit: name what is here, say what changed, and do not add a
-secret answer.
+Tavi asks which thing became empty after the child moved Sol's teddy outside,
+and then waits. If the child chooses the toy, use only the process hint “The toy
+was outside. What was empty?” The hint does not state the answer. Page 28
+reveals the box. Page 30 names Tavi's transferable habit: look, say what
+changed, and check that the answer matches what the child found.
 
 ### Pages 31-32 - close and continue
 
@@ -211,11 +215,12 @@ over an unexpressed metaphysical domain.
 
 Level One is a full-screen moving-stage adventure, not a read-and-scroll menu.
 Characters walk into each generated 3D room, idle, speak and celebrate. The
-child directly moves Sol's toy, listens at Nori's bell, draws on Vee's card,
-steps Moss's letters, drags Luma's curtain, inspects both doors and retrieves an
-earlier clue with Tavi. Local sound effects respond to those actions.
+child spots Mira's note, moves Sol's toy, listens at Nori's bell, draws on
+Mira's card, taps the letters, opens the curtain, inspects both doors and
+remembers an earlier clue with Tavi. Local sound effects respond to those
+actions.
 
-Twenty-eight caption-matched spoken lines were pre-rendered from Maria Smith's
+Thirty-five caption-matched spoken lines were pre-rendered from Maria Smith's
 local Kokoro ONNX weights. Narration remains offline after installation, and
 the written caption is always visible. Kokoro supplies voices only and has no
 authority over the lesson or SFT claim. The game collects no name, age, email,
@@ -247,8 +252,8 @@ International. When sharing or adapting, name Maria Smith, the title, version
 and source repository, link the licence and state modifications.
 
 All text and game structure are original to this edition. The six 3D stage
-backgrounds, original travellers and props were generated specifically for
-this project with the built-in image-generation tool from original prompts.
+backgrounds, four character images and props were generated specifically for
+this project from original prompts.
 The image tool is an illustration tool, never a scientific source or authority.
 No third-party textbook text, publisher character, game world, interface or
 recognisable third-party game asset is reproduced.

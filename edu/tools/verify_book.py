@@ -107,7 +107,7 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
             book["pages"][page_index].update(update)
     claim_map = json.loads((book_dir / "claim-map.json").read_text(encoding="utf-8"))
     pages = book["pages"]
-    expected_pages = 32 if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0", "1.4.0"} else 24
+    expected_pages = 32 if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0"} else 24
     require(len(pages) == expected_pages, f"E01 {manifest['version']} must have {expected_pages} pages")
     require([p["page"] for p in pages] == list(range(1, expected_pages + 1)), "page sequence is not continuous")
     require(all(p.get("text", "").strip() for p in pages), "a page has no text")
@@ -148,21 +148,21 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
     require("unexpressed metaphysical domain" in adult_text, "adult guide missing scope boundary")
     require("curriculum" in adult_text and "not scientific dependencies" in adult_text, "external-reference boundary missing")
 
-    if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0", "1.4.0"}:
+    if manifest["version"] in {"1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0"}:
         require(book["status"] == "review", f"E01 {manifest['version']} canonical source must remain review")
         require(manifest.get("final_publication", {}).get("approved") is False, "unapproved E01 entered final-publication state")
         require(claim_map["educational_sequence"].startswith("experience_then_"), "discovery sequence missing")
-        minimum_pairs = 8 if manifest["version"] == "1.4.0" else 10
+        minimum_pairs = 8 if manifest["version"] in {"1.4.0", "1.5.0"} else 10
         require(len(claim_map["challenge_reveal_pairs"]) >= minimum_pairs, "too few challenge/reveal pairs")
         challenge_pages = [page for page in pages if page["kind"] == "challenge"]
         reveal_pages = [page for page in pages if page["kind"] == "reveal"]
-        minimum_reveals = 6 if manifest["version"] == "1.4.0" else 8
+        minimum_reveals = 6 if manifest["version"] in {"1.4.0", "1.5.0"} else 8
         require(len(challenge_pages) >= 8 and len(reveal_pages) >= minimum_reveals, "game challenge/reveal structure is incomplete")
         child_text = normalized(" ".join(page["text"] + " " + page["subtext"] for page in pages))
         for adult_term in ("candidate grammar", "direct forcing", "operational boundary", "provenance", "counterexample"):
             require(adult_term not in child_text, f"unexplained adult term remains in child text: {adult_term}")
         require("challenge/reveal" in adult_text, "adult guide does not explain the revised pedagogy")
-        if manifest["version"] == "1.4.0":
+        if manifest["version"] in {"1.4.0", "1.5.0"}:
             require("returning-character guardrail" in adult_text, "adult guide lacks callback guardrail")
             require("must never identify the new answer" in adult_text, "adult guide permits an answer-giving callback")
         else:
@@ -248,8 +248,8 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         attribution = (REPO / artifacts_by_role["third_party_asset_attribution"]).read_text(encoding="utf-8")
         require("OpenMoji" in attribution and "CC BY-SA 4.0" in attribution, "OpenMoji attribution incomplete")
 
-    if manifest["version"] == "1.4.0":
-        require(overlay is None, "E01 1.4.0 must use its complete canonical source")
+    if manifest["version"] in {"1.4.0", "1.5.0"}:
+        require(overlay is None, f"E01 {manifest['version']} must use its complete canonical source")
         require(book["visual_contract"]["words_above_illustrations"] is True, "words-above-art contract missing")
         require(book["visual_contract"]["recognisable_3d_scenes"] is True, "recognisable 3D scene contract missing")
         require(book["visual_contract"]["challenge_before_reveal"] is True, "challenge-first contract missing")
@@ -258,11 +258,18 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         expected_codes = ["ROOMSTAR", "BOXCLUE", "QUIETWINGS", "BLANKEDGE", "CURTAINMAP", "TWODOORS"]
         require([entry["code"] for entry in book["reading_codes"]] == expected_codes, "reading code set mismatch")
         require(all(entry["required_for_progress"] is False for entry in book["reading_codes"]), "a reading code blocks progress")
-        require("empty means the toy is not inside" in child_text, "empty is not defined after its experience")
-        require("no ring means the bell did not ring during this short listen" in child_text, "bounded no-ring explanation missing")
-        require("a blank card is still a card" in child_text, "blank-card distinction missing")
-        require("hidden is not gone" in child_text, "hidden distinction missing")
-        require("remember means to bring an earlier clue back to mind" in child_text, "remember is not defined")
+        if manifest["version"] == "1.5.0":
+            require("empty means there is no toy inside this box" in child_text, "empty is not defined after its experience")
+            require("the bell did not ring while we listened" in child_text, "bounded no-ring explanation missing")
+            require("blank means there is no mark on this card" in child_text, "blank-card distinction missing")
+            require("hidden means it was there" in child_text, "hidden distinction missing")
+            require("remember means bringing an earlier clue back to mind" in child_text, "remember is not defined")
+        else:
+            require("empty means the toy is not inside" in child_text, "empty is not defined after its experience")
+            require("no ring means the bell did not ring during this short listen" in child_text, "bounded no-ring explanation missing")
+            require("a blank card is still a card" in child_text, "blank-card distinction missing")
+            require("hidden is not gone" in child_text, "hidden distinction missing")
+            require("remember means to bring an earlier clue back to mind" in child_text, "remember is not defined")
         for poor_phrase in (
             "looking was happening",
             "no ring happened",
@@ -294,11 +301,12 @@ def verify_e01(manifest_path: Path, manifest: dict) -> None:
         require("never state or expose the new answer" in continuity["policy"], "callback answer guardrail missing")
         require(any("after an attempt" in rule for rule in continuity["callback_guardrails"]), "post-attempt hint rule missing")
         narration = json.loads((REPO / game_manifest["tts_manifest"]).read_text(encoding="utf-8"))
-        require(len(narration["lines"]) == 28, "offline narration line count mismatch")
-        audio_dir = REPO / "edu/games/companion-adventures/public/audio/e01"
+        expected_lines = 35 if manifest["version"] == "1.5.0" else 28
+        require(len(narration["lines"]) == expected_lines, "offline narration line count mismatch")
+        audio_dir = REPO / ("edu/games/companion-adventures/public/audio/e01-v1.5.0" if manifest["version"] == "1.5.0" else "edu/games/companion-adventures/public/audio/e01")
         require(all((audio_dir / f"{line[0]}.mp3").is_file() for line in narration["lines"]), "offline narration file missing")
         art_provenance = (REPO / artifacts_by_role["companion_generated_art_provenance"]).read_text(encoding="utf-8")
-        require("six 1.4.0 stage backgrounds" in art_provenance, "generated stage provenance incomplete")
+        require("six" in art_provenance and "stage backgrounds" in art_provenance, "generated stage provenance incomplete")
 
     print(f"PASS manifest: {manifest_path.relative_to(REPO)}")
     print(f"PASS pages: {len(pages)} canonical, {len(student.pages)} PDF, {html_audit.page_sections} semantic HTML")
