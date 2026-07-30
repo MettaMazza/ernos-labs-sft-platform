@@ -1,6 +1,6 @@
 # E01 illustration and accessibility audit
 
-Edition: 1.1.0 review
+Edition: 1.2.0 review
 Audit date: 30 July 2026
 Final-publication approval: pending
 
@@ -8,13 +8,16 @@ Final-publication approval: pending
 
 The 32-page student edition is a continuous visual game story. Mira and Pip
 recur throughout, a treasure map retains the five-clue progression, and every
-challenge page is followed by a reveal or check. Busy scenes contain harmless
-extra details so a child's unprompted observation can be correct even when it
-is not the printed target.
+challenge page is followed by a reveal or check. Challenge pages use familiar,
+recognisable emoji without answer names. Reveal pages repeat the scene and
+attach a written label to every intended answer object.
 
-All scenes are original vector drawings produced by the checked-in renderer.
-No stock image, publisher illustration, copied character or generated bitmap is
-used.
+Printable emoji are OpenMoji 16 colour SVGs rendered as vector artwork. They
+are used under CC BY-SA 4.0 with attribution recorded in
+`edu/games/companion-adventures/OPENMOJI_ATTRIBUTION.md`. No publisher
+illustration, copied character or generated bitmap is used. The browser game
+uses the reader's native emoji glyphs as text symbols and redistributes no
+platform emoji font.
 
 ## Scientific visual accuracy
 
@@ -25,8 +28,10 @@ used.
 - Blank-card scenes retain the card, edge and observers while declaring only
   that no mark is on the card.
 - Curtain scenes depict one blocked view, not nonexistence.
-- Door A visibly presents an example; Door B visibly records that no example
-  was supplied and does not place a hidden counterexample in the frame.
+- Door A visibly presents a card. Door B uses an empty dashed frame and first
+  says that no card has been shown yet. Only afterward does the text introduce
+  the short phrase “no example was given.” No hidden counterexample is placed
+  in the frame.
 - The fair-play boundary contains only show, say, draw and record tokens and
   adds no invented object beyond the declared checking region.
 
@@ -49,6 +54,9 @@ Descriptions name:
 - text and shape labels that duplicate colour distinctions; and
 - whether a frame is deliberately unfilled rather than holding a hidden item.
 
+Descriptions were cross-checked against the exact visible emoji and labels.
+They do not claim an arrow, lid, gesture or object absent from the page.
+
 ## Perceivability and interaction
 
 - Colour is never the only carrier: targets use numbers, outlines, words,
@@ -58,6 +66,8 @@ Descriptions name:
   record.
 - Reveals are separated onto later pages so screen-reader and print users both
   receive the challenge before the answer.
+- Important learning words are defined in plain language at first child-facing
+  use. The companion game repeats those meanings in a visible word helper.
 - The adult guide advises reducing scene density, using tactile equivalents and
   allowing extra processing time.
 - The certificate records participation rather than ability or attainment.
@@ -70,21 +80,23 @@ as a fully tagged PDF. This limitation is stated rather than hidden.
 
 ## Render review record
 
-All 32 student pages and all 6 adult-guide pages were rendered from the latest
-PDFs to PNG and inspected on 30 July 2026. The review found and corrected:
+All 32 student pages and all 7 adult-guide pages were rendered from the latest
+1.2.0 PDFs to PNG and inspected on 30 July 2026. The review found and corrected:
 
-- descriptions that implied gestures or background objects absent from the
-  vector scenes;
-- Door A's first static card, which did not visibly demonstrate a handover;
-- sorting cards that relied on written labels without picture symbols; and
-- answer-basket labels that needed repainting above their connecting lines.
+- labels and descriptions that referred to a lid or arrow not shown;
+- the two-door vocabulary, which used *no example* before explaining it;
+- a visible stop-sign symbol that contradicted “nothing shown yet,” replaced by
+  an empty dashed frame;
+- the map-opening scene, which needed separate MAP and FIVE CLUE STARS labels;
+  and
+- the final sorting picture sizes and answer-basket connections.
 
 The corrected full contact sheets show no clipped text, overlapping text,
 broken glyph, missing answer label, unreadable contrast or page-number defect.
-Challenge and reveal pages remain visually distinct. The six-page adult guide
+Challenge and reveal pages remain visually distinct. The seven-page adult guide
 has consistent headings, margins, page numbers and footers with no split or
 overlap defect.
 
-Visual rendering and accessibility review therefore pass for the 1.1.0 review
+Visual rendering and accessibility review therefore pass for the 1.2.0 review
 edition. This pass does not constitute Maria Smith's final-publication
 approval.

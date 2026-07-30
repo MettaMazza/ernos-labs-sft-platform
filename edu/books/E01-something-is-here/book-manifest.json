@@ -2,16 +2,16 @@
   "schema": "sft-education-book-manifest/1",
   "book_id": "SFT-EDU-E01-SOMETHING-IS-HERE",
   "title": "Something Is Here",
-  "subtitle": "Mira and Pip's Nothing Hunt",
-  "version": "1.1.0",
+  "subtitle": "Mira and Pip's illustrated Nothing Hunt",
+  "version": "1.2.0",
   "status": "review",
   "stage": "early_years",
   "branches": ["foundation"],
   "knowledge_boundary": {
-    "repository_commit": "4e3143ade3cae5682bc341cecb317d71902c5899",
+    "repository_commit": "a42b8ba53f157af638cb3e6204338b2f11469cfd",
     "census_claim_count": 2751,
     "inspected_date": "2026-07-30",
-    "notes": "The scientific boundary is unchanged from 1.0.0. This review edition changes the educational flow in response to Maria Smith's review."
+    "notes": "The scientific boundary is unchanged. This review edition adds recognisable emoji scenes, explicit reveal labels, plain-language word teaching and a reading-first companion adventure in response to Maria Smith's review."
   },
   "scientific_sources": [
     {
@@ -21,7 +21,7 @@
       "use": "Sole scientific content authority for the operational theorem, complete two-class partition, result and boundary."
     }
   ],
-  "provenance_policy": "The child experiences age-appropriate operational examples before the result is named. Formal direct-forcing language remains in the adult guide; no external model enters derivation.",
+  "provenance_policy": "The child experiences each distinction before its short name is introduced. Formal direct-forcing language remains in the adult guide; no external model enters derivation.",
   "external_references": [
     {
       "title": "Early years foundation stage statutory framework",
@@ -30,17 +30,35 @@
       "authority_in_sft_derivation": false
     }
   ],
+  "third_party_assets": [
+    {
+      "name": "OpenMoji",
+      "version": "16.0.0",
+      "use": "Recognisable colour emoji illustrations in the printable review edition",
+      "license": "CC-BY-SA-4.0",
+      "attribution_path": "edu/games/companion-adventures/OPENMOJI_ATTRIBUTION.md",
+      "authority_in_sft_derivation": false
+    }
+  ],
   "author": "Maria Smith",
   "editorial_assistance": "Educational implementation and reproducible layout prepared with automated tooling under Maria Smith's authority.",
   "license": "CC-BY-4.0",
   "artifacts": [
-    {"path": "edu/books/E01-something-is-here/source/book-v1.1.0.json", "role": "canonical_student_source"},
-    {"path": "edu/books/E01-something-is-here/source/render_e01_v1_1.py", "role": "render_source"},
-    {"path": "edu/books/E01-something-is-here/source/render_e01.py", "role": "render_dependency"},
+    {"path": "edu/books/E01-something-is-here/source/book-v1.2.0.json", "role": "canonical_student_source"},
+    {"path": "edu/books/E01-something-is-here/source/book-v1.1.0.json", "role": "canonical_base_dependency"},
+    {"path": "edu/books/E01-something-is-here/source/render_e01_v1_2.py", "role": "render_source"},
+    {"path": "edu/books/E01-something-is-here/source/render_e01_v1_1.py", "role": "render_layout_dependency"},
+    {"path": "edu/books/E01-something-is-here/source/render_e01.py", "role": "render_base_dependency"},
+    {"path": "edu/books/E01-something-is-here/source/requirements.txt", "role": "render_requirements"},
     {"path": "edu/books/E01-something-is-here/adult-guide.md", "role": "adult_guidance_and_answers_source"},
-    {"path": "edu/books/E01-something-is-here/accessible/student-book-v1.1.0.html", "role": "semantic_accessible_edition"},
-    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.1.0/SFT-E01-Something-Is-Here-v1.1.0.pdf", "role": "student_pdf"},
-    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.1.0/SFT-E01-Adult-Guide-v1.1.0.pdf", "role": "adult_guide_pdf"},
+    {"path": "edu/books/E01-something-is-here/accessible/student-book-v1.2.0.html", "role": "semantic_accessible_edition"},
+    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.2.0/SFT-E01-Something-Is-Here-v1.2.0.pdf", "role": "student_pdf"},
+    {"path": "output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.2.0/SFT-E01-Adult-Guide-v1.2.0.pdf", "role": "adult_guide_pdf"},
+    {"path": "edu/games/companion-adventures/game-manifest.json", "role": "companion_game_manifest"},
+    {"path": "edu/games/companion-adventures/app/page.tsx", "role": "companion_game_source"},
+    {"path": "edu/games/companion-adventures/SECURITY_REVIEW.md", "role": "companion_security_review"},
+    {"path": "edu/games/companion-adventures/CHECKSUMS.sha256", "role": "companion_release_checksums"},
+    {"path": "edu/games/companion-adventures/OPENMOJI_ATTRIBUTION.md", "role": "third_party_asset_attribution"},
     {"path": "edu/books/E01-something-is-here/ILLUSTRATION_AND_ACCESSIBILITY_AUDIT.md", "role": "visual_and_accessibility_audit"},
     {"path": "edu/books/E01-something-is-here/RELEASE_NOTES.md", "role": "release_notes"},
     {"path": "edu/books/E01-something-is-here/CHECKSUMS.sha256", "role": "release_checksums"}
@@ -56,6 +74,8 @@
     "pdf_text_extraction_passed": true,
     "pdf_visual_review_passed": true,
     "accessibility_review_passed": true,
+    "companion_game_build_passed": true,
+    "companion_game_content_boundary_passed": true,
     "release_checksums_recorded": true
   },
   "final_publication": {

@@ -2,6 +2,20 @@
 
 All notable educational editions are preserved here.
 
+## 1.2.0 - review - 2026-07-30
+
+- Replaced abstract objects with familiar OpenMoji illustrations.
+- Made each challenge/reveal pair repeat the same recognisable scene and add
+  explicit answer labels only on the reveal.
+- Added plain-language first-use definitions and per-level game word helpers.
+- Reworked *no example given* so the child first experiences “no object was
+  shown for us to look at yet.”
+- Added six optional reading codes and a reading-first companion adventure.
+- Preserved version 1.1.0 identities and the unchanged scientific boundary.
+
+This edition remains under review and is not approved for
+`publications/education/` or remote hosting.
+
 ## 1.1.0 - review - 2026-07-30
 
 - Rebuilt the book as Mira and Pip's 32-page Nothing Hunt game story in

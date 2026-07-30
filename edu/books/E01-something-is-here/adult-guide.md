@@ -1,6 +1,6 @@
 # Adult Guide - E01 *Something Is Here*
 
-Review version 1.1.0
+Review version 1.2.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
 Final-publication status: awaiting Maria Smith's approval
@@ -13,10 +13,24 @@ page reveals and discusses possible answers. The story delays its general rule
 until the child has experienced empty, quiet, blank, hidden and unpresented
 cases.
 
+Version 1.2.0 replaces abstract vector objects with familiar OpenMoji emoji.
+Challenge pages show the recognisable scene without object names; the next page
+repeats the scene with a written label attached to every answer object. The same
+emoji vocabulary appears in the companion digital adventure.
+
 The child book deliberately avoids the formal terms *candidate grammar*,
 *counterexample*, *occurrence*, *operational boundary* and *direct forcing*.
 Those exact terms belong here, where an adult can protect the scientific scope
 without making the child repeat unexplained language.
+
+## Vocabulary rule
+
+A learning word is not used as though its meaning were already known. The
+child first sees or performs the distinction, then receives the short word and
+a plain explanation. The next relevant page repeats it. The companion game
+adds a visible word helper for every level. Ordinary conversation should still
+replace any word the child does not understand; completing a vocabulary test is
+not a condition of participating in the story.
 
 ## Exact SFT source
 
@@ -69,7 +83,9 @@ These are invitations, not pass/fail expectations.
 - **hidden** - blocked from the chosen view;
 - **clue** - something noticed that helps the investigation;
 - **check** - look, listen or try again using the declared game; and
-- **example** - something supplied for the players to inspect.
+- **observation** - something the child notices during the agreed look, listen
+  or check; and
+- **example** - something shown or given for the players to look at or check.
 
 Prefer those words in conversation. If a child asks about “occurrence” or
 “boundary,” explain them in ordinary language but do not require recall.
@@ -111,22 +127,27 @@ by pointing, without turning this into a number lesson. Rehearse the game rhythm
 “Spot, say, then check.” A non-speaking child may use gaze, gesture or a partner
 record.
 
-### Pages 5-6 - warm-up spot scene
+### Pages 5-6 - Mira's labelled room
 
-The five illustrated answers are Mira, Pip, the box, bell and rug. The lamp,
-question card and peeking star are valid extra answers. The aim is to establish
-that the child can find more than the adult's printed list.
+The challenge shows familiar emoji for Mira, Pip, bed, window, books, lamp,
+box and bell without labels. The reveal repeats the same arrangement and writes
+each name directly beneath its emoji. Any named pictured object is valid. The
+aim is to establish that the child can find more than the adult's printed list.
+
+Book code: `ROOMSTAR`.
 
 ### Pages 7-9 - the empty box
 
 Challenge first: “Did she find nothing?” Do not correct immediately.
 
-Reveal: the named toy is not inside. The box, its lid, looking and the players
+Reveal: the named toy is outside the box. The box, toy, looking and the players
 remain presented. Page 9 gives the child-facing distinction: *empty* says what
 is missing from a named container; it does not erase the container.
 
 Optional demonstration: show the large toy, place it in the box, remove it and
 ask what changed and what stayed. Keep both records.
+
+Book code on page 9: `BOXCLUE`.
 
 ### Pages 10-11 - the still bell
 
@@ -137,11 +158,15 @@ it rather than replaying solely to obtain the desired answer.
 
 Do not describe silence as a substance and do not ask the child to remain still.
 
+Book code: `QUIETWINGS`.
+
 ### Pages 12-13 - the blank card
 
-The four intended clues are the card, its edge, Pip's feather and Mira's
+The four intended clues are the card, pencil, Pip's feather and Mira's
 magnifying glass. Other page features may also be noticed. The reveal separates
 “no mark on the card” from “no card presented.”
+
+Book code: `BLANKEDGE`.
 
 ### Pages 14-15 - the hidden word
 
@@ -152,23 +177,32 @@ thing it names.
 
 ### Pages 16-17 - behind the curtain
 
-The toys are hidden from the chosen view. The curtain, its toy-shaped bumps,
-Mira, Pip and play remain visible. Avoid generalising this to objects that are
-unobserved by every route; the activity concerns one blocked view in the scene.
+Part of each toy is hidden from the chosen view while a recognisable part stays
+visible. The curtain, toy parts, Mira, Pip and play remain available to notice.
+Avoid generalising this to objects that are unobserved by every route; the
+activity concerns one partly blocked view in the scene.
+
+Book code: `CURTAINMAP`.
 
 ### Pages 18-21 - the two-door game
 
-Page 19 is the setup. Door A presents a star card while saying it has presented
-“nothing.” Door B supplies no example.
+Page 19 is the setup. Door A holds out a card while Door B holds out no card.
+The child is first asked which route gives Mira something to look at. Only then
+does the book explain that an *example* means something shown for us to look at
+or check.
 
 Page 20 checks Door A: the handover, card and inspection are presented, so the
 offered example is an occurrence rather than nothing.
 
-Page 21 checks Door B: there is no delivered example to inspect. This is not a
-secret counterexample and the book must not pretend one was supplied.
+Page 21 checks Door B in concrete language first: no card was shown, so Mira
+has no object from that door to look at yet. The short phrase *no example was
+given* is introduced only after that experience. It does not mean that a secret
+object was observed; the book must not pretend one was supplied.
 
 These two doors are the child-facing translation of the complete two-class
 candidate grammar. The picture game does not replace its formal census.
+
+The final summary code printed on page 25 is `TWODOORS`.
 
 ### Pages 22-23 - try to draw nothing
 
@@ -197,16 +231,18 @@ The four intended pairs are:
 - box here - no toy inside;
 - bell here - no ring during the scene;
 - card here - no mark on the card; and
-- curtain here - toy hidden from the chosen view.
+- curtain here - toy partly hidden from the chosen view.
 
 Mira, Pip and decorative shapes are valid extra present details.
 
 ### Pages 29-30 - sorting game
 
-Place the empty box, still bell and blank card under “something to check.” Each
-is a presented object with a declared missing content, event or mark. Place only
-the dashed “no example given” card under that heading. The second basket does
-not contain a hidden thing; it records that no example was supplied.
+Place the empty box, still bell and blank card under “object to look at.” Each
+is a shown object with a declared missing content, event or mark. Place only the
+dashed empty frame under the NOTHING SHOWN YET heading. Page 30 then links this
+plain description to the short phrase *no example given*. The second basket
+does not contain a hidden thing; it records that no object was shown for the
+players to inspect.
 
 ### Pages 31-32 - retell and continue
 
@@ -264,6 +300,25 @@ Use brief narrative notes only when useful. Possible observations include:
 - Use the semantic HTML edition for scalable text and page descriptions.
 - The PDF contains selectable text but is not claimed as a fully tagged PDF.
 
+## Companion digital adventure
+
+The E01 companion is a short text adventure with six book-linked levels. Each
+level asks for a choice, reveals labels after the attempt, gives a neutral
+explanation and directs the player back to named pages. The six codes above
+unlock optional story messages and badges. They never gate the explanation,
+the next level or the scientific result.
+
+The intended loop is:
+
+1. try the brief game scene;
+2. read or reread the named book pages;
+3. enter the reveal-page code for an optional bonus; and
+4. return to apply the distinction in the next scene.
+
+The game collects no name, age, email, location, voice, image or analytics.
+Optional progress is stored only on the device and can be reset. There are no
+advertisements, purchases, public scores, chat, streaks or time pressure.
+
 ## Reference-only curriculum navigation
 
 The play can support attention, turn-taking, communication, early literacy,
@@ -289,5 +344,7 @@ Copyright 2026 Maria Smith. Licensed under Creative Commons Attribution 4.0
 International. When sharing or adapting, name Maria Smith, the title, version
 and source repository, link the licence and state modifications.
 
-All text, game structure and vector scenes are original to this edition. No
-third-party textbook text, illustration, layout or character is reproduced.
+All text and game structure are original to this edition. Emoji artwork is from
+OpenMoji version 16.0.0, the open-source emoji and icon project, and is used
+under CC BY-SA 4.0 with attribution. No third-party textbook text, layout or
+publisher character is reproduced.

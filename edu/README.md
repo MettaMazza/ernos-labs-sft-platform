@@ -26,6 +26,14 @@ presented as SFT authority.
   dated sixteen-branch content inventory and educational boundaries.
 - [`SFT_MASTER_SYLLABUS.md`](SFT_MASTER_SYLLABUS.md) — the full learning
   progression, proposed books, assessments and production order.
+- [`COMPANION_GAME_STANDARD.md`](COMPANION_GAME_STANDARD.md) — the reading-first
+  game loop, optional-code, privacy, accessibility and publication rules used
+  by every book companion.
+
+The first working companion is
+`edu/games/companion-adventures/`, paired with E01 review version 1.2.0. Its
+book codes unlock optional story moments only; the book remains the primary
+place for explanations and demonstrations.
 
 ## Current source boundary
 

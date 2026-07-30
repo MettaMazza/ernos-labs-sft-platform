@@ -1,49 +1,53 @@
-# E01 *Something Is Here* - Review version 1.1.0
+# E01 *Something Is Here* - Review version 1.2.0
 
 Status: complete working edition under review
 Prepared: 30 July 2026
 Author: Maria Smith
-Licence: CC BY 4.0
+Licence: CC BY 4.0, with OpenMoji illustrations under CC BY-SA 4.0
 Final-publication approval: pending
 
 ## Why this edition was made
 
-Maria Smith found that version 1.0.0 became too telling-heavy from page 12 and
-introduced terms before a child had experienced their meaning. Version 1.1.0
-therefore rebuilds the flow as Mira and Pip's Nothing Hunt.
+Maria Smith approved the direction of version 1.1.0 but found its abstract
+shapes unclear. She asked for easily recognised objects, repeated and labelled
+on the answer page, and proposed emoji as the universal visual vocabulary. She
+also required words to be understood through experience rather than appearing
+as unexplained labels.
 
 ## Educational changes
 
-- Expanded the child book from 24 to 32 pages.
-- Added a continuous treasure-map game story with five clue stars.
-- Added recurring characters, busy spotting scenes and harmless extra clues.
-- Replaced the abstract page-12 transition with challenge/reveal page pairs.
-- Lets the child experience empty, still, blank, hidden and no-example cases
-  before the result is stated.
-- Moves formal provenance and candidate-grammar terminology into the adult
-  guide.
-- Adds final spotting, sorting and retelling games with answers on following
-  pages.
-- Rewrites the adult guide with complete facilitation and answer guidance.
+- Replaced abstract child-facing shapes with familiar OpenMoji illustrations.
+- Repeated every spotting scene on its reveal page with explicit written
+  labels attached to the recognisable objects.
+- Corrected image descriptions so they name exactly what the page displays.
+- Added plain-language first-use teaching for clue, container, empty, view,
+  example and *no example given*.
+- Rewrote the two-door sequence so the child first sees that Door B has shown
+  no object, then learns the short phrase *no example was given*.
+- Replaced the visible stop-sign symbol for absence with an explicitly empty
+  dashed frame, avoiding a contradictory visible object.
+- Added six optional reading codes and a six-level text-based companion game.
+- Added per-level word helpers, device-local progress and a full reset.
+
+## Reading-first companion
+
+The game returns the learner to exact book pages after every attempt. Codes
+unlock only character moments and badges; they never hide scientific content
+or block progress. The local source contains no sign-in, advertising,
+analytics, timer, streak or personal-data collection. It has not been remotely
+hosted.
 
 ## Scientific status
 
 The source and boundary are unchanged. The edition teaches only
 `SFT-ROOT-THERE-IS-NO-NOTHING`, receipt
 `sha256:711864171e4d3a2f2734f0c2890965bcd81a0228349538751a3c80699c27d669`.
-The child-facing two-door game translates the complete presented/unpresented
-partition after five experiential examples. It adds no empirical claim and
-makes no claim about an unexpressed metaphysical domain.
+The examples and game are educational translations. They add no empirical or
+open claim and make no claim about an unexpressed metaphysical domain.
 
-## Version custody
+## Version custody and publication boundary
 
-Version 1.0.0 remains available with its original PDF hashes and source commit.
-Version 1.1.0 uses a new source file and a new output directory. It does not
-silently replace the earlier artifacts.
-
-## Publication boundary
-
-This is a review copy in the working education library. It is not yet an
-approved final educational publication and is not placed under
-`publications/education/`. No DOI, Zenodo record, GitHub Release or other remote
-publication is created.
+Versions 1.0.0 and 1.1.0 retain their original identities. Version 1.2.0 uses a
+new overlay source, output directory and release hashes. It is a working review
+copy and is not placed under `publications/education/`. No DOI, Zenodo record,
+GitHub Release or remote website deployment is created.
