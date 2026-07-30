@@ -1,7 +1,7 @@
 # Dependency security review
 
 Review date: 30 July 2026
-Scope: E01 companion adventure review 1.4.2
+Scope: E01 companion adventure review 1.4.3
 Remote hosting status: not authorised and not ready
 
 The production build and eight application/content tests pass with Node.js 22.

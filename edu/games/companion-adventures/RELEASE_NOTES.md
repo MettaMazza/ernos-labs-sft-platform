@@ -1,4 +1,4 @@
-# E01 companion adventure - review 1.4.2
+# E01 companion adventure - review 1.4.3
 
 Prepared: 30 July 2026  
 Author: Maria Smith  
@@ -24,6 +24,10 @@ Status: complete working review; not finally approved or publicly hosted
 - Bottom-anchored Mira's taller sprite and moved the permanent trio into a
   dedicated responsive cast area so no character floats or overlaps the level
   title and cards.
+- Added a short-phone title safe zone: the cast now finishes at least 70 pixels
+  above the heading in the verified 390 × 724 viewport.
+- Sized Mira's animation box to her visible portrait instead of the whole stage,
+  keeping her speech indicator beside her head like Sol's and Tavi's.
 - Added an in-level home control and an ending-screen route back to level
   selection without reloading the page.
 - Contained root and stage overscroll so an accidental mobile edge swipe or

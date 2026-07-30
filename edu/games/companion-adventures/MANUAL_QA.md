@@ -1,6 +1,6 @@
 # Level One manual end-to-end QA
 
-Version: 1.4.2 review
+Version: 1.4.3 review
 Date: 30 July 2026
 Final-publication approval: pending Maria Smith's review
 
@@ -39,7 +39,8 @@ state, preserves earned progress and returns directly to the activity prompt.
 ## Visual/device checks
 
 - Desktop: 1280 × 720, complete play-through.
-- Phone: 390 × 844, complete play-through using touch interactions.
+- Phone: 390 × 844, complete play-through using touch interactions; 390 × 724,
+  short-browser title and first-dialogue regression inspection.
 - Tablet: 1024 × 768, opening and moving-stage layout inspection.
 - Body scroll: absent at all three sizes.
 - Root and body overscroll: `none` at all three sizes.
@@ -52,7 +53,9 @@ earned star animate clearly, held the curtain reveal long enough to inspect,
 kept recall objects separate and adjusted the phone door room so both small
 doors remain visible. Mira's tall portrait sprite is now bottom-anchored so her
 feet share the trio's ground line, and the opening cast has a separate safe area
-above the level title and cards at phone, tablet and desktop sizes.
+above the level title and cards at phone, tablet and desktop sizes. At the short
+phone size the measured cast-to-title gap is 70 pixels, and Mira's speech
+indicator is anchored to her visible portrait box beside her head.
 
 ## Automated checks
 
@@ -63,5 +66,5 @@ above the level title and cards at phone, tablet and desktop sizes.
 - scientific claim and receipt identity: pass;
 - all 34 narration files present: pass.
 
-This QA makes review 1.4.2 ready for Maria Smith's play test. It does not approve
+This QA makes review 1.4.3 ready for Maria Smith's play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

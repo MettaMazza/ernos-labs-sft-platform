@@ -58,7 +58,7 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
 .actor.speaking { z-index:6; animation:actor-speaks .58s ease-in-out infinite alternate; filter:drop-shadow(0 0 18px #ffd75f) drop-shadow(0 16px 10px #0007); }
 .actor.speaking::before { content:"💬"; position:absolute; z-index:2; top:-5%; right:0; font-size:2rem; animation:speech-bob .7s ease-in-out infinite alternate; }
 .actor.speaking span { opacity:1; }
-.actor-mira { left:3%; width:clamp(150px,17vw,260px); height:100%; }
+.actor-mira { left:3%; width:clamp(150px,17vw,260px); height:auto; aspect-ratio:2/3; }
 .actor-mira img { position:absolute; left:0; bottom:-18px; }
 .actor-tavi { left:32%; }
 .actor-sol { left:54%; }
@@ -176,11 +176,11 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
   .journey-banner { top:72px; }.guest-banner { top:122px; }
   .walking-cast { left:0; right:0; bottom:27%; height:41%; }
   .actor { width:23vw; max-width:132px; }
-  .actor-mira { left:0; width:29vw; max-width:160px; height:100%; }
+  .actor-mira { left:0; width:29vw; max-width:160px; height:auto; }
   .actor-tavi { left:29%; }.actor-sol { left:51%; }.actor-nori { left:75%; }
   .scene-note .actor-tavi,.scene-box .actor-tavi { left:39%; }
   .scene-note .actor-sol,.scene-box .actor-sol { left:70%; }
-  .scene-card .actor-mira,.scene-doors .actor-mira { left:2%; width:26vw; height:60%; }
+  .scene-card .actor-mira,.scene-doors .actor-mira { left:2%; width:26vw; height:auto; }
   .actor.speaking::before { top:-2%; right:-2%; font-size:1.4rem; }
   .speech-panel { left:7px; right:7px; bottom:8px; min-height:158px; grid-template-columns:56px 1fr auto; gap:4px 9px; padding:11px 11px 11px 8px; border-radius:20px; }
   .speaker-portrait { width:54px; height:66px; border-width:2px; border-radius:15px; }
@@ -213,8 +213,8 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
   .gentle-hint { top:17%; width:max-content; max-width:76%; text-align:center; font-size:.78rem; }
   .star-reward { top:23%; padding:11px 15px; }.star-reward span{font-size:4rem}.star-reward strong{font-size:.9rem}
   .restart-corner { display:none; }
-  .opening-cast { left:0; right:0; top:2%; bottom:auto; height:43%; }
-  .opening-cast .actor-mira { left:3%; width:31vw; height:100%; }.opening-cast .actor-tavi { left:43%; width:23vw; }.opening-cast .actor-sol { left:70%; width:23vw; }
+  .opening-cast { left:0; right:0; top:1%; bottom:auto; height:34%; }
+  .opening-cast .actor-mira { left:3%; width:31vw; height:auto; }.opening-cast .actor-tavi { left:43%; width:23vw; }.opening-cast .actor-sol { left:70%; width:23vw; }
   .opening-screen section { padding:18px 0 3vh; }
   .opening-screen h1 { margin:6px 0 10px; font-size:clamp(2.8rem,13vw,4rem); }
   .opening-screen section>p:not(.eyebrow,.small-print) { margin:0; font-size:.92rem; line-height:1.35; }

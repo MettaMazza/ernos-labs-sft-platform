@@ -14,6 +14,8 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.match(styles, /@keyframes actor-idles/);
   assert.match(styles, /@keyframes actor-speaks/);
   assert.match(styles, /\.actor-mira img \{[^}]*bottom:-18px/);
+  assert.match(styles, /\.actor-mira \{[^}]*height:auto;[^}]*aspect-ratio:2\/3/);
+  assert.match(styles, /\.opening-cast \{[^}]*top:1%;[^}]*height:34%/);
   assert.doesNotMatch(source, /choice-grid|scene-choice|interaction-panel|window\.scrollTo/);
   for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
   assert.match(source, /className="emoji-prop recall-box/);
