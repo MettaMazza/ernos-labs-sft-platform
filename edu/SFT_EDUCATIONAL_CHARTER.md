@@ -179,6 +179,12 @@ A book is ready for public educational release only when:
 - the source boundary and update policy are printed; and
 - Maria Smith authorises the specific publication action.
 
+Passing these gates makes a working edition eligible for approval; it does not
+itself grant final-publication status. Only Maria Smith's explicit approval of
+the exact rendered version permits a checksum-identical copy to enter
+`publications/education/current/`. Future corrections remain live work under
+`edu/` until their updated version is separately approved.
+
 ## 12. UK framework references used only for calibration
 
 The library's age bands are calibrated against, but not scientifically governed

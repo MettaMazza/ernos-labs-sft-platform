@@ -64,6 +64,33 @@
     "release_checks": {
       "type": "object",
       "additionalProperties": {"type": "boolean"}
+    },
+    "final_publication": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["approved"],
+          "properties": {
+            "approved": {"const": false},
+            "note": {"type": "string"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["approved", "approver", "approval_date", "publication_path"],
+          "properties": {
+            "approved": {"const": true},
+            "approver": {"const": "Maria Smith"},
+            "approval_date": {"type": "string", "format": "date"},
+            "publication_path": {
+              "type": "string",
+              "pattern": "^publications/education/current/"
+            }
+          }
+        }
+      ]
     }
   }
 }

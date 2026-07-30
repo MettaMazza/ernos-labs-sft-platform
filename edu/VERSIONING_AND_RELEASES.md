@@ -43,6 +43,36 @@ under `output/pdf/edu/<book-id>/<version>/`. Each release includes:
 - a release checksum file; and
 - release notes that state the scientific and educational boundaries.
 
+## Maria Smith approval and final-publication layout
+
+GitHub availability from the working `edu/` tree is not the same as approval
+as a final educational publication. A book enters the final education
+collection only after Maria Smith explicitly approves that exact book version.
+
+Before approval:
+
+- the editable book remains in `edu/books/<book-id>/`;
+- rendered review copies remain in `output/pdf/edu/<book-id>/<version>/`;
+- new manifests record `final_publication.approved: false`; and
+- no copy of that version is placed in `publications/education/`.
+
+After explicit approval:
+
+1. finish any changes requested during approval and increment the version if
+   those changes alter the already-recorded edition;
+2. rerun the complete scientific, educational, accessibility, PDF and checksum
+   gates on the updated final copy;
+3. record the approved version, approval date and Maria Smith as approver in
+   the manifest and release notes;
+4. preserve the editable source under `edu/` for future live-work updates;
+5. place the complete approved, checksum-bound publication copy under
+   `publications/education/current/<book-id>/<version>/`; and
+6. commit and push that exact approved copy to `main`.
+
+When a later approved edition replaces it, move the earlier approved package
+to `publications/education/superseded/<book-id>/<version>/`. Never overwrite or
+silently alter an approved publication package.
+
 ## Superseding an edition
 
 When an edition becomes outdated:
@@ -57,7 +87,9 @@ When an edition becomes outdated:
 
 ## GitHub publication
 
-Each verified version is committed intentionally with only its scoped files,
-then pushed to the existing project repository. Tags and GitHub Releases are
-separate remote actions and are not implied by an ordinary push. DOI, Zenodo
-and other services always require separate explicit authorization.
+Each verified working version is committed intentionally with only its scoped
+files, then pushed to the existing project repository. Placement in
+`publications/education/` additionally requires Maria Smith's explicit final
+approval for the exact version. Tags and GitHub Releases are separate remote
+actions and are not implied by an ordinary push. DOI, Zenodo and other services
+always require separate explicit authorization.

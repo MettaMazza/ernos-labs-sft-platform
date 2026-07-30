@@ -45,3 +45,15 @@
 - [ ] Scoped commit contains no unrelated user work.
 - [ ] GitHub push has explicit authority.
 - [ ] No DOI, Zenodo or other remote action occurred without separate approval.
+
+## Final education-publication approval
+
+- [ ] The exact version has been explicitly approved by Maria Smith.
+- [ ] Any approval-requested changes were applied before the final gates ran.
+- [ ] The manifest records the approval decision, approver and approval date.
+- [ ] The final PDFs are checksum-identical to the approved rendered copies.
+- [ ] The complete approved package is under
+      `publications/education/current/<book-id>/<version>/`.
+- [ ] Any earlier approved edition is preserved under
+      `publications/education/superseded/<book-id>/<version>/`.
+- [ ] The working source remains under `edu/` for future updated editions.
