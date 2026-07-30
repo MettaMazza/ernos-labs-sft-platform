@@ -1,6 +1,6 @@
 # Level One art provenance
 
-Version: E01 companion review 1.4.0
+Version: E01 companion review 1.4.1
 
 Prepared: 30 July 2026
 
@@ -38,6 +38,8 @@ characters, assets, logos, interface elements and world designs.
 - `public/art/stages/e01-stage-05-star-door-v1.png` — final two-door chamber.
 - `public/art/stages/e01-stage-06-library-v1.png` — library and next-parcel
   ending.
+- `public/art/characters/individual/mira-v1.png` — transparent, independently
+  animated Mira sprite used on the opening and every playable stage.
 
 Earlier chroma-removal trials `e01-six-character-sheet-v1.png` and
 `e01-six-character-sheet-v2.png` remain as provenance records but are not used
@@ -97,10 +99,21 @@ The six primary requests were:
 6. A welcoming observatory library with curved low shelves, a child-height
    route-map stand, reading rug, sunrise window and newly delivered parcel.
 
+### Mira sprite (1.4.1)
+
+Built-in image generation mode was used to create a stylized-concept,
+full-body game sprite preserving Mira's established identity, outfit and warm
+3D adventure style. The final prompt requested a front-facing, friendly Mira
+with one hand raised as if speaking; a flat `#ff00ff` removable chroma
+background; and no crop, shadow, text, logo, watermark or other character.
+The generated source was saved under `tmp/imagegen/e01-mira-chroma-v1.png` and
+processed with the repository's chroma-removal helper into
+`public/art/characters/individual/mira-v1.png`.
+
 ## Processing mode
 
-Mode: built-in image generation for the key art, character/prop sources and all
-six 1.4.0 stage backgrounds, followed by local chroma removal and lossless
+Mode: built-in image generation for the key art, character/prop sources, Mira
+sprite and all six 1.4.0 stage backgrounds, followed by local chroma removal and lossless
 cropping only for the earlier character and prop sheets. Stage images are used
 directly. Character and prop crops are transparent PNG files that the game
 moves independently over the stages; CSS supplies movement, touch targets,

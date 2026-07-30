@@ -6,11 +6,12 @@ quiz-card stack or read-and-scroll page.
 
 ## What the child does
 
-Characters walk into six original generated 3D rooms, idle, speak and celebrate.
-The child finds the note, moves Sol's toy, inspects the box, listens at Nori's
-bell, draws on Vee's card, steps Moss's letters, drags Luma's curtain, checks both
-small doors and retrieves an earlier clue with Tavi. The written caption remains
-visible whenever a local voice line plays.
+Mira, Sol and Tavi walk into six original generated 3D rooms, idle, speak and
+celebrate. The child spots the written note, moves Sol's toy, inspects the box,
+listens at Nori's bell, draws on a card, steps the mystery-word letters, drags a
+curtain, checks both small doors and retrieves an earlier clue. Every one of the
+eight story stages contains a short playable learning activity. The written
+caption remains visible whenever a local voice line plays.
 
 The door supplies the note, the note establishes five clues, every checked clue
 lights one star and five stars open the final chamber. A new parcel appears only
@@ -19,7 +20,9 @@ or previews; they never gate an explanation, star, route or answer.
 
 ## Characters and future callbacks
 
-Each level introduces one memorable lesson character. A character may return
+Sol, Tavi and Mira are the permanent adventure trio. Each level or book
+introduces no more than one memorable lesson character; E01 introduces Nori. A
+guest character may return
 later through a natural story encounter or as an optional hint earned after a
 genuine attempt. Returning characters can recall how to look or check, but must
 never state the new answer. The formal continuity record is
@@ -27,7 +30,7 @@ never state the new answer. The formal continuity record is
 
 ## Offline narration and privacy
 
-Twenty-eight lines were pre-rendered from Maria Smith's local Kokoro ONNX model
+Thirty-four lines were pre-rendered from Maria Smith's local Kokoro ONNX model
 and voice weights. Audio is bundled under `public/audio/e01/`; after installation
 the game does not need the model or an internet connection. Sound effects are
 made locally in the browser. Captions are always available.

@@ -1,24 +1,31 @@
 {
   "schema": "sft-education-character-continuity/1",
-  "policy": "Every level introduces one memorable lesson character. Later levels may bring that character back through a natural story encounter or an optional hint earned after a genuine attempt. A callback may recall an investigative habit but must never state or expose the new answer.",
+  "policy": "Sol, Tavi and Mira are the permanent main trio. Each new level or book may introduce no more than one new guest character to join them and teach one memorable lesson. A previous guest may reappear only when that lesson is relevant, through a natural story encounter or an optional hint earned after a genuine attempt. A callback may recall a method but must never state or expose the new answer.",
+  "main_cast": [
+    {"id":"sol","name":"Sol","role":"energetic question asker"},
+    {"id":"tavi","name":"Tavi","role":"careful checker"},
+    {"id":"mira","name":"Mira","role":"visible child guide and journey narrator"}
+  ],
   "callback_guardrails": [
+    "No level or book introduces more than one new guest character.",
+    "A returning guest appears only when their earlier lesson is relevant.",
     "A returning character asks or demonstrates; they do not solve the new task.",
     "Narrative callbacks must make sense even when the player does not remember the earlier level.",
     "Hint callbacks unlock only after an attempt or through an optional book code.",
     "No required lesson, answer or route is locked behind remembering a character."
   ],
-  "characters": [
+  "guest_characters": [
     {
-      "id": "tavi",
-      "name": "Tavi",
+      "id": "nori",
+      "name": "Nori",
       "introduced_in": "E01",
-      "role": "careful spotter",
-      "lesson_memory": "Name what is here before naming what is missing.",
-      "return_rule": "Bring Tavi back naturally when a later claim needs careful looking. Tavi may ask what the player can check first, but cannot identify the new answer."
+      "role": "careful listener",
+      "lesson_memory": "Listen within a short check and name what was heard without inventing a sound.",
+      "return_rule": "Bring Nori back only when careful listening is relevant. Nori may ask what the player heard, but cannot identify the new answer."
     }
   ],
   "planned_level_slots": [
-    {"level": "E02", "new_character": "reserved", "callback": "Tavi arrives carrying the old empty box as an ordinary story prop and asks where the player would look first; the E02 answer remains undisclosed."},
-    {"level": "E03", "new_character": "reserved", "callback": "An earlier character can appear after the first attempt with a process hint, never the result."}
+    {"level":"E02","new_guest":"reserved","maximum_new_guests":1,"possible_callback":"Nori may return only if a listening check becomes relevant; otherwise E02 proceeds with the main trio and its one new guest."},
+    {"level":"E03","new_guest":"reserved","maximum_new_guests":1,"possible_callback":"An earlier guest may appear after an attempt with a relevant process hint, never the result."}
   ]
 }

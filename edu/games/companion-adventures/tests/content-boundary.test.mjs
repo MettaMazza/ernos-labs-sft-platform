@@ -14,24 +14,36 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.match(styles, /@keyframes actor-idles/);
   assert.match(styles, /@keyframes actor-speaks/);
   assert.doesNotMatch(source, /choice-grid|scene-choice|interaction-panel|window\.scrollTo/);
-  for (const activity of ["box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
-  assert.match(source, /className="stage-prop recall-box/);
+  for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
+  assert.match(source, /className="emoji-prop recall-box/);
+  assert.match(source, /Find the note among three objects/);
+  assert.match(source, /Play again/);
+  assert.equal(manifest.levels.length, 8);
+  assert.equal(manifest.interaction_system.length, manifest.levels.length);
+  assert.match(manifest.mini_game_policy, /Every stage in every level or book.*mini-game/i);
+});
+
+test("automatic narration plays each story beat once and stops at the activity boundary", () => {
+  assert.match(source, /lastAutoLineRef\.current === lineKey/);
+  assert.match(source, /dialogueDone && !complete/);
+  assert.match(source, /setTimeout\(\(\) => \{/);
 });
 
 test("the coherent child story has visible causes and short natural dialogue", () => {
   for (const phrase of [
-    "Star Door woke with a clunk", "The first clue was tucked inside the parcel", "The wind has stopped",
-    "The card made the wall tiles glow", "I can make Sol's toy vanish", "Five clues. Five stars",
-    "The crew carried the bright map into the library",
+    "Star Door woke with a clunk", "followed the first arrow across the observatory", "next glowing arrow into the bell room",
+    "through the blue door to look for nothing in the paper room", "golden arrow led the four friends to a red curtain",
+    "five bright stars opened the great Star Door", "carried the bright map into the library",
   ]) assert.match(source, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.doesNotMatch(source, /operational distinction|candidate grammar|presented record|declared check|occurrence/);
   assert.match(source, /The empty box is still here\. Empty means the toy is not inside/);
   assert.match(source, /Hidden is not gone/);
   assert.match(source, /B showed no object, so we do not invent one/);
+  assert.doesNotMatch(source, /\bShh\b|Vee|Moss|Luma/);
 });
 
 test("Kokoro narration is caption matched, bundled and offline", async () => {
-  assert.equal(narration.lines.length, 28);
+  assert.equal(narration.lines.length, 34);
   assert.equal(manifest.network_required_after_install, false);
   assert.match(manifest.sound_system, /Kokoro narration.*offline Web Audio/i);
   for (const [filename, speaker, caption] of narration.lines) {
@@ -52,14 +64,17 @@ test("book codes are optional and callbacks never reveal new answers", () => {
   assert.match(source, /never lessons or progress/i);
 });
 
-test("every stage background and the recurring Tavi record are declared", async () => {
+test("every stage background and the permanent trio plus one E01 guest are declared", async () => {
   for (let index = 1; index <= 6; index += 1) {
     const name = String(index).padStart(2, "0");
     const match = source.match(new RegExp(`e01-stage-${name}-[^\"]+\\.png`));
     assert.ok(match, `stage ${name} is referenced`);
     await access(new URL(`../public/art/stages/${match[0]}`, import.meta.url));
   }
-  assert.equal(continuity.characters[0].id, "tavi");
-  assert.equal(continuity.characters[0].introduced_in, "E01");
-  assert.match(continuity.characters[0].return_rule, /cannot identify the new answer/i);
+  assert.deepEqual(continuity.main_cast.map((character) => character.id), ["sol", "tavi", "mira"]);
+  assert.equal(continuity.guest_characters.length, 1);
+  assert.equal(continuity.guest_characters[0].id, "nori");
+  assert.equal(continuity.guest_characters[0].introduced_in, "E01");
+  assert.match(continuity.guest_characters[0].return_rule, /cannot identify the new answer/i);
+  assert.match(continuity.policy, /no more than one new guest character/i);
 });

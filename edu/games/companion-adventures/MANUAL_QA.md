@@ -1,6 +1,6 @@
 # Level One manual end-to-end QA
 
-Version: 1.4.0 review
+Version: 1.4.1 review
 Date: 30 July 2026
 Final-publication approval: pending Maria Smith's review
 
@@ -9,7 +9,7 @@ Final-publication approval: pending Maria Smith's review
 The local game was manually played from opening to ending on desktop and phone:
 
 1. Star Door wakes, supplies the note and establishes five clues.
-2. Note hotspot opens the route.
+2. A three-object spotting game asks the child to identify the written note.
 3. Toy is moved out and the box is inspected.
 4. Bell is pressed and held for the bounded listening check.
 5. Card accepts pointer/touch drawing or may remain blank.
@@ -21,8 +21,16 @@ The local game was manually played from opening to ending on desktop and phone:
    still had to choose the answer.
 10. The completed map was filed before the E02 parcel appeared.
 
+The automatic narration boundary was also exercised between dialogue and every
+activity. The final story line did not replay when the activity prompt appeared;
+each automatic line is keyed to play once, and only the replay control can
+deliberately repeat it.
+
 Optional code entry, local resume and Start Over were also checked. Codes did
 not change the scientific route or reveal an answer.
+
+Each success panel offers `Play again`; it resets only that stage's interactive
+state, preserves earned progress and returns directly to the activity prompt.
 
 ## Visual/device checks
 
@@ -32,19 +40,21 @@ not change the scientific route or reveal an answer.
 - Body scroll: absent at all three sizes.
 - Browser errors and warnings: none.
 
-Corrections made during QA moved the cast clear of the dialogue overlay, aligned
-the box hotspot and visible parcel, stopped props covering faces, made curtain
-drag reliable for touch, kept recall objects separate and adjusted the phone
-door-room crop so both small doors remain visible.
+Corrections made during QA kept Mira visibly identifiable as a permanent member
+of the trio, replaced ambiguous or clipped props with labelled emoji objects,
+kept the mobile cast clear of activities, made the five-star holder and each
+earned star animate clearly, held the curtain reveal long enough to inspect,
+kept recall objects separate and adjusted the phone door room so both small
+doors remain visible.
 
 ## Automated checks
 
-- six application/content tests: pass;
-- lint: pass, with five non-blocking image-optimisation warnings;
+- seven application/content tests: pass;
+- lint: pass, with two non-blocking image-optimisation warnings;
 - production build: pass;
 - no application fetch or analytics call: pass;
 - scientific claim and receipt identity: pass;
-- all 28 narration files present: pass.
+- all 34 narration files present: pass.
 
-This QA makes review 1.4.0 ready for Maria Smith's play test. It does not approve
+This QA makes review 1.4.1 ready for Maria Smith's play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

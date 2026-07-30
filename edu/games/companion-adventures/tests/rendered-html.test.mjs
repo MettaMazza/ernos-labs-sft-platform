@@ -16,6 +16,7 @@ test("server renders the new narrated moving-stage adventure", async () => {
   assert.match(html, /The Star Door Mystery/);
   assert.match(html, /Start the story/);
   assert.match(html, /Narrated with local Kokoro voices/);
-  assert.match(html, /Mira and six little travellers/);
+  assert.match(html, /Mira, Sol and Tavi are the main adventure team/);
+  assert.match(html, /meet one new friend/);
   assert.doesNotMatch(html, /Every star answers the mystery|complete lesson in game form|scene-choice/);
 });
