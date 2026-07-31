@@ -75,11 +75,20 @@ export default function useLevelMusic(track: "level-one" | "level-two" | "level-
     const pageShow = () => {
       if (enabledRef.current && wantedRef.current && document.visibilityState === "visible") ensureAudio().play().catch(() => undefined);
     };
+    const resumeFromGesture = () => {
+      if (!enabledRef.current || !wantedRef.current || document.visibilityState !== "visible") return;
+      const audio = ensureAudio();
+      if (audio.paused) audio.play().catch(() => undefined);
+    };
     document.addEventListener("visibilitychange", visibility);
+    document.addEventListener("pointerdown", resumeFromGesture, true);
+    document.addEventListener("keydown", resumeFromGesture, true);
     window.addEventListener("pagehide", pageHide);
     window.addEventListener("pageshow", pageShow);
     return () => {
       document.removeEventListener("visibilitychange", visibility);
+      document.removeEventListener("pointerdown", resumeFromGesture, true);
+      document.removeEventListener("keydown", resumeFromGesture, true);
       window.removeEventListener("pagehide", pageHide);
       window.removeEventListener("pageshow", pageShow);
       audioRef.current?.pause();

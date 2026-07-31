@@ -9,6 +9,7 @@ const levelTwo = await readFile(new URL("../app/level-two.tsx", import.meta.url)
 const levelThree = await readFile(new URL("../app/level-three.tsx", import.meta.url), "utf8");
 const levelPrelude = await readFile(new URL("../app/level-prelude.tsx", import.meta.url), "utf8");
 const levelMusic = await readFile(new URL("../app/use-level-music.ts", import.meta.url), "utf8");
+const narrationController = await readFile(new URL("../app/narration-controller.mjs", import.meta.url), "utf8");
 const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 const gameplayStandard = await readFile(new URL("../GAMEPLAY_STANDARD.md", import.meta.url), "utf8");
 const manifest = JSON.parse(await readFile(new URL("../game-manifest.json", import.meta.url), "utf8"));
@@ -214,6 +215,22 @@ test("Level Two has nine distinct multi-step replayable mini-games and one new g
   }
 });
 
+test("Level Two keeps its mobile puzzle controls aligned and contained", () => {
+  for (const direction of ["up", "left", "right", "down"]) {
+    assert.match(levelTwo, new RegExp(`className="parcel-arrow-${direction}"`));
+    assert.match(levelTwo, new RegExp(`aria-label="Move parcel ${direction}"`));
+    assert.match(styles, new RegExp(`\\.parcel-arrows \\.parcel-arrow-${direction} \\{ grid-area:${direction}; \\}`));
+  }
+  assert.match(styles, /grid-template-areas:\s*"\. up \."\s*"left \. right"\s*"\. down \."/);
+  assert.match(styles, /--parcel-key-size:44px/);
+  assert.match(levelTwo, /className="round-reset-label">Reset round/);
+  assert.match(styles, /\.e02-stage \.round-reset-label \{\s*display:none/);
+  assert.match(styles, /\.e02-stage \.mini-game-header \{\s*left:calc\(2% \+ 50px\);\s*right:calc\(2% \+ 74px\)/);
+  assert.match(styles, /\.e02-stage \.try-lights b \{\s*display:none/);
+  assert.match(styles, /\.plan-card-tray \{\s*grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+  assert.match(styles, /\.plan-card-tray \.lantern-quarter \{\s*width:min\(64px,100%\);\s*max-width:100%;\s*height:auto/);
+});
+
 test("Level Two language is simple, causal and does not give answers before play", () => {
   for (const phrase of [
     "The parcel that slid down the library ramp after the first mystery",
@@ -292,7 +309,8 @@ test("Level Three resumes past its prelude at the exact saved flow", () => {
   assert.match(levelThree, /const \[introSeen, setIntroSeen\] = useState\(false\)/);
   assert.match(levelThree, /const introOpen = !introSeen/);
   assert.match(levelThree, /progressRef\.current = \{ introSeen, sceneIndex, beat, complete, finished, activityStep, chosen, wrong, mistakes, roundLost, round, resolution \}/);
-  assert.match(levelThree, /setIntroSeen\(readLevelThreeIntroSeen\(saved, stored !== null\)\)/);
+  assert.match(levelThree, /const restoredIntroSeen = readLevelThreeIntroSeen\(saved, stored !== null\)/);
+  assert.match(levelThree, /setIntroSeen\(restoredIntroSeen\)/);
   assert.match(levelThree, /setIntroSeen\(true\); lastLineRef\.current = ""/);
   assert.match(levelThree, /setIntroSeen\(false\); setResolution\(null\)/);
   assert.match(levelThree, /\[storageReady, introSeen, sceneIndex, beat, complete, finished, activityStep, chosen, wrong, mistakes, roundLost, round, resolution\]/);
@@ -417,12 +435,23 @@ test("all levels restore locally and background switching stops stale narration"
     assert.match(component, /document\.addEventListener\("visibilitychange", stopBackgroundAudio\)/);
     assert.match(component, /window\.addEventListener\("pagehide", stopForPageHide\)/);
     assert.match(component, /document\.visibilityState !== "visible"/);
-    assert.match(component, /audioRef\.current = null/);
+    assert.match(component, /narrationGenerationRef/);
+    assert.match(component, /narrationGenerationRef\.current !== scheduledGeneration/);
+    assert.match(component, /stopNarration\(audioRef, narrationGenerationRef, duckMusic\)/);
     assert.match(component, /lessonAudio\?\.pause\(\)/);
   }
+  assert.match(source, /lastAutoLineRef\.current = saved\.started && !saved\.introOpen && !saved\.finished/);
+  assert.match(levelTwo, /lastLineRef\.current = !saved\.introOpen && !saved\.finished/);
+  assert.match(levelThree, /lastLineRef\.current = restoredIntroSeen && !restoredFinished/);
+  assert.match(source, /!started \|\| levelTwoActive \|\| levelThreeActive/);
+  assert.match(narrationController, /generationRef\.current \+= 1/);
+  assert.match(narrationController, /audioRef\.current = null/);
+  assert.match(narrationController, /visibility\(\) !== "visible"/);
 });
 
 test("the title offers a confirmed fresh game that clears every level", () => {
+  assert.match(source, /Play title music/);
+  assert.match(source, /function playTitleMusic\(\) \{\s*if \(musicOn\) startMusic\(\);\s*else toggleMusic\(\)/);
   assert.match(source, /Start a fresh game/);
   assert.match(source, /Begin a completely fresh game\?/);
   assert.match(source, /This removes all saved progress from Levels 1, 2 and 3/);
@@ -505,7 +534,14 @@ test("three distinct original music tracks are bundled and follow the shared lif
   assert.match(levelMusic, /document\.visibilityState === "hidden"/);
   assert.match(levelMusic, /document\.addEventListener\("visibilitychange", visibility\)/);
   assert.match(levelMusic, /window\.addEventListener\("pagehide", pageHide\)/);
+  assert.match(levelMusic, /document\.addEventListener\("pointerdown", resumeFromGesture, true\)/);
+  assert.match(levelMusic, /document\.addEventListener\("keydown", resumeFromGesture, true\)/);
   assert.match(levelMusic, /audioRef\.current\?\.pause\(\)/);
   assert.match(levelMusic, /audioRef\.current\.currentTime = 0/);
   assert.match(levelMusic, /DUCKED_VOLUME/);
+  assert.match(source, /if \(levelTwoActive \|\| levelThreeActive\) \{\s*stopMusic\(\)/);
+  assert.match(source, /function showLevelSelect\(\) \{\s*stopNarration[^}]*startMusic\(\)/);
+  assert.match(source, /function startFreshGame\(\) \{\s*stopNarration[^}]*startMusic\(\)/);
+  assert.match(levelTwo, /if \(storageReady\) startMusic\(\)/);
+  assert.match(levelThree, /if \(storageReady\) startMusic\(\)/);
 });

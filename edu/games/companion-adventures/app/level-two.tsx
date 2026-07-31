@@ -3,6 +3,7 @@
 
 import { CSSProperties, FormEvent, ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
 import LevelPrelude, { PreludeLine } from "./level-prelude";
+import { startNarration, stopNarration } from "./narration-controller.mjs";
 import {
   claimLevelTwoCompletion,
   levelTwoRoundSetup,
@@ -201,6 +202,8 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const soundRef = useRef<AudioContext | null>(null);
   const lastLineRef = useRef("");
+  const narrationGenerationRef = useRef(0);
+  const endingLessonPlayedRef = useRef(false);
   const progressRef = useRef<Record<string, unknown>>({});
   const feedbackTimerRef = useRef<number | null>(null);
   const completionLockRef = useRef(false);
@@ -216,16 +219,16 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   const speaking = (!dialogueDone || complete) ? (line?.speaker.toLowerCase() === "mia" ? "mira" : line?.speaker.toLowerCase()) : "";
 
   useEffect(() => {
+    if (storageReady) startMusic();
+  }, [storageReady, startMusic]);
+
+  useEffect(() => {
     const stopBackgroundAudio = () => {
       if (document.visibilityState !== "hidden") return;
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     const stopForPageHide = () => {
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     document.addEventListener("visibilitychange", stopBackgroundAudio);
     window.addEventListener("pagehide", stopForPageHide);
@@ -256,6 +259,8 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
         setMistakes(saved.mistakes);
         setRound(saved.round);
         completionLockRef.current = saved.complete;
+        lastLineRef.current = !saved.introOpen && !saved.finished ? `${saved.sceneIndex}:${saved.complete ? "success" : saved.beat}` : "";
+        endingLessonPlayedRef.current = saved.finished;
       } catch { /* The level still works if device storage is unavailable. */ }
       setStorageReady(true);
     }, 0);
@@ -279,46 +284,42 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   }, [storageReady, introOpen, preludeStep, sceneIndex, beat, complete, finished, activityStep, chosen, mistakes, round]);
 
   useEffect(() => {
-    if (!finished || muted) return;
+    if (!storageReady || !finished || muted || endingLessonPlayedRef.current) return;
+    endingLessonPlayedRef.current = true;
     let lessonAudio: HTMLAudioElement | null = null;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (audioRef.current && !audioRef.current.paused) return;
-      audioRef.current?.pause();
-      duckMusic(true);
-      const audio = new Audio(`/audio/e02-v1.0.0/${endingLesson.audio}.mp3?v=e02-story-20260731f`);
-      lessonAudio = audio;
-      audioRef.current = audio;
-      const restoreMusic = () => duckMusic(false);
-      audio.addEventListener("ended", restoreMusic, { once: true });
-      audio.addEventListener("error", restoreMusic, { once: true });
-      audio.play().catch(restoreMusic);
+      lessonAudio = startNarration({
+        src: `/audio/e02-v1.0.0/${endingLesson.audio}.mp3?v=e02-story-20260731f`,
+        audioRef,
+        generationRef: narrationGenerationRef,
+        duckMusic,
+      });
     }, 120);
     return () => {
       window.clearTimeout(timeout);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
       lessonAudio?.pause();
-      duckMusic(false);
-      if (audioRef.current === lessonAudio) audioRef.current = null;
     };
-  }, [finished, muted, duckMusic]);
+  }, [storageReady, finished, muted, duckMusic]);
 
   useEffect(() => () => {
-    audioRef.current?.pause();
-    audioRef.current = null;
+    stopNarration(audioRef, narrationGenerationRef, duckMusic);
     if (feedbackTimerRef.current !== null) window.clearTimeout(feedbackTimerRef.current);
     stopMusic();
-  }, [stopMusic]);
+  }, [duckMusic, stopMusic]);
 
   function playLine(current = line) {
     if (!current || muted) return;
-    audioRef.current?.pause();
-    duckMusic(true);
-    const audio = new Audio(`/audio/e02-v1.0.0/${current.audio}.mp3?v=e02-story-20260731f`);
-    audioRef.current = audio;
-    const restoreMusic = () => duckMusic(false);
-    audio.addEventListener("ended", restoreMusic, { once: true });
-    audio.addEventListener("error", restoreMusic, { once: true });
-    audio.play().catch(restoreMusic);
+    startNarration({
+      src: `/audio/e02-v1.0.0/${current.audio}.mp3?v=e02-story-20260731f`,
+      audioRef,
+      generationRef: narrationGenerationRef,
+      duckMusic,
+    });
   }
 
   function sound(kind: "tap" | "good" | "wrong" | "step") {
@@ -341,17 +342,20 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   }
 
   useEffect(() => {
-    if (introOpen || !line || (dialogueDone && !complete)) { audioRef.current?.pause(); duckMusic(false); return; }
+    if (finished) return;
+    if (introOpen || !line || (dialogueDone && !complete)) { stopNarration(audioRef, narrationGenerationRef, duckMusic); return; }
     const key = `${sceneIndex}:${complete ? "success" : beat}`;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (lastLineRef.current === key) return;
       lastLineRef.current = key;
       playLine(line);
     }, 25);
-    return () => { window.clearTimeout(timeout); audioRef.current?.pause(); };
+    return () => { window.clearTimeout(timeout); stopNarration(audioRef, narrationGenerationRef, duckMusic); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [introOpen, sceneIndex, beat, complete, muted]);
+  }, [finished, introOpen, sceneIndex, beat, complete, muted]);
 
   function clearFeedback() {
     if (feedbackTimerRef.current !== null) window.clearTimeout(feedbackTimerRef.current);
@@ -383,12 +387,12 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   function nextBeat() { sound("tap"); if (beat < scene.lines.length) setBeat((value) => value + 1); }
   function nextScene() {
     sound("step");
-    if (sceneIndex === scenes.length - 1) { audioRef.current?.pause(); audioRef.current = null; duckMusic(false); setFinished(true); return; }
+    if (sceneIndex === scenes.length - 1) { stopNarration(audioRef, narrationGenerationRef, duckMusic); endingLessonPlayedRef.current = false; setFinished(true); return; }
     completionLockRef.current = false; clearFeedback(); setSceneIndex((value) => value + 1); setBeat(0); setComplete(false); setActivityStep(0); setChosen([]); setMistakes(0); lastLineRef.current = "";
   }
-  function replay() { audioRef.current?.pause(); completionLockRef.current = false; clearFeedback(); setComplete(false); setActivityStep(0); setChosen([]); setMistakes(0); setRound((value) => value + 1); lastLineRef.current = ""; }
+  function replay() { stopNarration(audioRef, narrationGenerationRef, duckMusic); completionLockRef.current = false; clearFeedback(); setComplete(false); setActivityStep(0); setChosen([]); setMistakes(0); setRound((value) => value + 1); lastLineRef.current = ""; }
   function restart() {
-    audioRef.current?.pause(); duckMusic(false); completionLockRef.current = false; clearFeedback(); setIntroOpen(true); setPreludeStep(-1); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setMistakes(0); setRound(0); lastLineRef.current = "";
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); completionLockRef.current = false; clearFeedback(); setIntroOpen(true); setPreludeStep(-1); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setMistakes(0); setRound(0); lastLineRef.current = ""; endingLessonPlayedRef.current = false;
     try {
       localStorage.removeItem(LEVEL_TWO_STORAGE_KEY);
       localStorage.setItem("sft-active-level-v1", "e02");
@@ -399,9 +403,9 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
     setCodeMessage(codes[clean] ?? "That code is hiding on another book page. Keep looking.");
     if (codes[clean]) setCode("");
   }
-  function toggleNarration() { const next = !muted; setMuted(next); if (next) { audioRef.current?.pause(); audioRef.current = null; duckMusic(false); } }
-  function exitLevel() { audioRef.current?.pause(); clearFeedback(); duckMusic(false); stopMusic(); onExit(); }
-  function goToNextLevel() { audioRef.current?.pause(); duckMusic(false); stopMusic(); onNext(); }
+  function toggleNarration() { const next = !muted; setMuted(next); if (next) stopNarration(audioRef, narrationGenerationRef, duckMusic); }
+  function exitLevel() { stopNarration(audioRef, narrationGenerationRef, duckMusic); clearFeedback(); stopMusic(); onExit(); }
+  function goToNextLevel() { stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); onNext(); }
 
   function activity() {
     if (complete) return null;
@@ -415,7 +419,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
         if (next === 10 || chosen.includes(next)) { wrongTry("That square is behind the parcel. Keep moving towards the yellow reading mat."); return; }
         const nextPath=[...chosen,next];clearFeedback();setChosen(nextPath);setActivityStep(next);sound("step");if(next===4)finish();
       };
-      return <MiniGame title={scene.gameTitle} icon="📦" progress={`${chosen.length + 1}/${open.length} path squares`}><div className="parcel-path-game"><div className="parcel-path-grid">{Array.from({length:15},(_,cell)=><span key={cell} className={`${open.includes(cell)?"open":"cart"} ${chosen.includes(cell)?"used":""} ${cell===current?"parcel-here":""} ${cell===4?"reading-mat":""}`}>{cell===current?"📦":cell===4?"🟨":open.includes(cell)?"✨":"📚"}<b>{cell===10?"START":cell===4?"READING MAT":""}</b></span>)}</div><div className="parcel-arrows"><button onClick={()=>move(-5)}>↑</button><button onClick={()=>move(-1)}>←</button><button onClick={()=>move(1)}>→</button><button onClick={()=>move(5)}>↓</button></div></div></MiniGame>;
+      return <MiniGame title={scene.gameTitle} icon="📦" progress={`${chosen.length + 1}/${open.length} path squares`}><div className="parcel-path-game"><div className="parcel-path-grid">{Array.from({length:15},(_,cell)=><span key={cell} className={`${open.includes(cell)?"open":"cart"} ${chosen.includes(cell)?"used":""} ${cell===current?"parcel-here":""} ${cell===4?"reading-mat":""}`}>{cell===current?"📦":cell===4?"🟨":open.includes(cell)?"✨":"📚"}<b>{cell===10?"START":cell===4?"READING MAT":""}</b></span>)}</div><div className="parcel-arrows" role="group" aria-label="Move the parcel"><button type="button" className="parcel-arrow-up" aria-label="Move parcel up" onClick={()=>move(-5)}><span aria-hidden="true">↑</span></button><button type="button" className="parcel-arrow-left" aria-label="Move parcel left" onClick={()=>move(-1)}><span aria-hidden="true">←</span></button><button type="button" className="parcel-arrow-right" aria-label="Move parcel right" onClick={()=>move(1)}><span aria-hidden="true">→</span></button><button type="button" className="parcel-arrow-down" aria-label="Move parcel down" onClick={()=>move(5)}><span aria-hidden="true">↓</span></button></div></div></MiniGame>;
     }
     if (scene.activity === "whole") {
       const revealOrder = roundSetup.wholeRevealOrder;
@@ -542,7 +546,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
     initialStep={preludeStep}
     onStepChange={setPreludeStep}
     onSpeak={(current) => { startMusic(); playLine(current); }}
-    onBegin={() => { audioRef.current?.pause(); duckMusic(false); setIntroOpen(false); lastLineRef.current = ""; }}
+    onBegin={() => { stopNarration(audioRef, narrationGenerationRef, duckMusic); setIntroOpen(false); lastLineRef.current = ""; }}
     onExit={exitLevel}
     musicOn={musicOn}
     onToggleMusic={toggleMusic}
@@ -564,7 +568,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
       {scene.introduces && beat <= 1 && <div className="guest-banner">New friend for Level Two: <strong>{names[scene.introduces]}</strong></div>}
       <div className="walking-cast" aria-hidden="true">{scene.cast.map((name, index) => <CharacterSprite key={name} name={name} index={index} speaking={speaking === name} />)}</div>
       {scene.id === "parcel" && !dialogueDone && <div className="story-parcel" aria-label="parcel beside the map"><span aria-hidden="true">📦</span><b>PARCEL</b></div>}
-      {dialogueDone && !complete && <div className="activity-layer"><TryLights mistakes={mistakes}/>{!roundLost && <button className="round-reset" onClick={retryRound} aria-label="Reset this puzzle round">↻ Reset round</button>}{!roundLost && activity()}{wrong && !roundLost && <p className="e02-feedback" role="status">{wrong}</p>}{roundLost && <section className="round-lost" role="alert"><span aria-hidden="true">◆ ◆ ◆</span><h2>Round over</h2><p>That round used all three try lights. The story is safe. Change your plan and try this puzzle again.</p><button onClick={retryRound}>Try again</button></section>}</div>}
+      {dialogueDone && !complete && <div className="activity-layer"><TryLights mistakes={mistakes}/>{!roundLost && <button className="round-reset" onClick={retryRound} aria-label="Reset this puzzle round"><span aria-hidden="true">↻</span><span className="round-reset-label">Reset round</span></button>}{!roundLost && activity()}{wrong && !roundLost && <p className="e02-feedback" role="status">{wrong}</p>}{roundLost && <section className="round-lost" role="alert"><span aria-hidden="true">◆ ◆ ◆</span><h2>Round over</h2><p>That round used all three try lights. The story is safe. Change your plan and try this puzzle again.</p><button onClick={retryRound}>Try again</button></section>}</div>}
       <aside className={`speech-panel ${dialogueDone && !complete ? "prompting" : ""} ${complete ? "completed" : ""}`} aria-live="polite">
         {!dialogueDone || complete ? <><div className="speaker-portrait"><Portrait speaker={line.speaker} /></div><span className="speaker">{complete ? "NARRATOR · WHAT YOU DISCOVERED" : line.speaker}</span><p>{line.text}</p>{complete ? <div className="completion-controls"><button className="replay-control" onClick={replay}><span aria-hidden="true">↻</span> Play again</button><button className="next-control" onClick={nextScene}>{sceneIndex === scenes.length - 1 ? "Light the lantern" : "Follow the plan"} <span aria-hidden="true">→</span></button></div> : <button className="next-control" onClick={nextBeat}>Next <span aria-hidden="true">→</span></button>}</> : <><div className="speaker-portrait prompt-portrait" aria-hidden="true">☝️</div><span className="speaker">YOUR TURN</span><p>{scene.prompt}</p><span className="action-nudge" aria-hidden="true">↑ Try it in the scene</span></>}
       </aside>

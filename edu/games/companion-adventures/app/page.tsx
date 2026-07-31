@@ -4,6 +4,7 @@ import { CSSProperties, FormEvent, PointerEvent, useEffect, useLayoutEffect, use
 import LevelTwo from "./level-two";
 import LevelThree from "./level-three";
 import LevelPrelude, { PreludeLine } from "./level-prelude";
+import { startNarration, stopNarration } from "./narration-controller.mjs";
 import useLevelMusic from "./use-level-music";
 import {
   claimLevelOneCompletion,
@@ -193,6 +194,8 @@ export default function Home() {
   const curtainRevealRef = useRef(false);
   const soundContextRef = useRef<AudioContext | null>(null);
   const lastAutoLineRef = useRef("");
+  const narrationGenerationRef = useRef(0);
+  const endingLessonPlayedRef = useRef(false);
   const progressRef = useRef<Record<string, unknown>>({});
   const completionLockRef = useRef(false);
   const resolutionRef = useRef<"finish" | null>(null);
@@ -210,16 +213,21 @@ export default function Home() {
   const resolving = pendingResolution === "finish";
 
   useEffect(() => {
+    if (!storageReady) return;
+    if (levelTwoActive || levelThreeActive) {
+      stopMusic();
+      return;
+    }
+    startMusic();
+  }, [storageReady, levelTwoActive, levelThreeActive, startMusic, stopMusic]);
+
+  useEffect(() => {
     const stopBackgroundAudio = () => {
       if (document.visibilityState !== "hidden") return;
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     const stopForPageHide = () => {
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     document.addEventListener("visibilitychange", stopBackgroundAudio);
     window.addEventListener("pagehide", stopForPageHide);
@@ -260,14 +268,12 @@ export default function Home() {
 
   function playLine(line = currentLine) {
     if (!line || muted) return;
-    audioRef.current?.pause();
-    duckMusic(true);
-    const audio = new Audio(`/audio/e01-v1.6.0/${line.audio}.mp3?v=e01-story-20260731c`);
-    audioRef.current = audio;
-    const restoreMusic = () => duckMusic(false);
-    audio.addEventListener("ended", restoreMusic, { once: true });
-    audio.addEventListener("error", restoreMusic, { once: true });
-    audio.play().catch(restoreMusic);
+    startNarration({
+      src: `/audio/e01-v1.6.0/${line.audio}.mp3?v=e01-story-20260731c`,
+      audioRef,
+      generationRef: narrationGenerationRef,
+      duckMusic,
+    });
   }
 
   function playEffect(kind: "step" | "tap" | "clunk" | "star" | "rustle" | "listen") {
@@ -293,45 +299,46 @@ export default function Home() {
   useEffect(() => {
     // Crossing from the final story beat into the activity must not replay that
     // final line. The activity panel is a new turn with its own visible prompt.
+    if (finished) return;
     if (!started || introOpen || !currentLine || (dialogueDone && !complete)) {
-      audioRef.current?.pause();
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
       return;
     }
     const lineKey = `${sceneIndex}:${complete ? "success" : beat}`;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (lastAutoLineRef.current === lineKey) return;
       lastAutoLineRef.current = lineKey;
       playLine(currentLine);
     }, 25);
-    return () => { window.clearTimeout(timeout); audioRef.current?.pause(); };
+    return () => { window.clearTimeout(timeout); stopNarration(audioRef, narrationGenerationRef, duckMusic); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [started, introOpen, sceneIndex, beat, complete, muted]);
+  }, [started, finished, introOpen, sceneIndex, beat, complete, muted]);
 
   useEffect(() => {
-    if (!finished || muted) return;
+    if (!storageReady || !started || levelTwoActive || levelThreeActive || !finished || muted || endingLessonPlayedRef.current) return;
+    endingLessonPlayedRef.current = true;
     let lessonAudio: HTMLAudioElement | null = null;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (audioRef.current && !audioRef.current.paused) return;
-      audioRef.current?.pause();
-      duckMusic(true);
-      const audio = new Audio(`/audio/e01-v1.6.0/${endingLesson.audio}.mp3?v=e01-story-20260731c`);
-      lessonAudio = audio;
-      audioRef.current = audio;
-      const restoreMusic = () => duckMusic(false);
-      audio.addEventListener("ended", restoreMusic, { once: true });
-      audio.addEventListener("error", restoreMusic, { once: true });
-      audio.play().catch(restoreMusic);
+      lessonAudio = startNarration({
+        src: `/audio/e01-v1.6.0/${endingLesson.audio}.mp3?v=e01-story-20260731c`,
+        audioRef,
+        generationRef: narrationGenerationRef,
+        duckMusic,
+      });
     }, 120);
     return () => {
       window.clearTimeout(timeout);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
       lessonAudio?.pause();
-      duckMusic(false);
-      if (audioRef.current === lessonAudio) audioRef.current = null;
     };
-  }, [finished, muted, duckMusic]);
+  }, [storageReady, started, levelTwoActive, levelThreeActive, finished, muted, duckMusic]);
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
@@ -340,6 +347,8 @@ export default function Home() {
         const saved = restoreLevelOneProgress(localStorage.getItem(LEVEL_ONE_STORAGE_KEY), scenes.length, levelOnePrelude.length);
         const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
         const savedLevelThree = JSON.parse(localStorage.getItem("sft-e03-moving-stage-v1") ?? "{}");
+        lastAutoLineRef.current = saved.started && !saved.introOpen && !saved.finished ? `${saved.sceneIndex}:${saved.complete ? "success" : saved.beat}` : "";
+        endingLessonPlayedRef.current = saved.finished;
         setSceneIndex(saved.sceneIndex);
         setBeat(saved.beat);
         setActivityStep(saved.activityStep);
@@ -450,7 +459,7 @@ export default function Home() {
   }, [pendingResolution, complete, scene.activity]);
 
   function resetActivityRound() {
-    audioRef.current?.pause();
+    stopNarration(audioRef, narrationGenerationRef, duckMusic);
     lastAutoLineRef.current = "";
     completionLockRef.current = false;
     resolutionRef.current = null;
@@ -474,9 +483,8 @@ export default function Home() {
   function nextScene() {
     playEffect("step");
     if (sceneIndex === scenes.length - 1) {
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
+      endingLessonPlayedRef.current = false;
       setFinished(true);
       try { localStorage.setItem("sft-active-level-v1", "e01"); } catch { /* optional */ }
       return;
@@ -524,12 +532,13 @@ export default function Home() {
   function toggleNarration() {
     const next = !muted;
     setMuted(next);
-    if (next) { audioRef.current?.pause(); audioRef.current = null; duckMusic(false); }
+    if (next) stopNarration(audioRef, narrationGenerationRef, duckMusic);
   }
 
   function restart() {
-    audioRef.current?.pause(); duckMusic(false); setStarted(true); setIntroOpen(true); setPreludeStep(-1); setFinished(false); setSceneIndex(0); setBeat(0); setActivityStep(0); setComplete(false); setResolution(null); setSavedStars(0); setLetters(0); setCurtain(0); setDoors([]); setDrawn(false); setCardOpen(false); setCardInk(""); setRound(0); setEarnedStar(null);
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); setStarted(true); setIntroOpen(true); setPreludeStep(-1); setFinished(false); setSceneIndex(0); setBeat(0); setActivityStep(0); setComplete(false); setResolution(null); setSavedStars(0); setLetters(0); setCurtain(0); setDoors([]); setDrawn(false); setCardOpen(false); setCardInk(""); setRound(0); setEarnedStar(null);
     lastAutoLineRef.current = "";
+    endingLessonPlayedRef.current = false;
     completionLockRef.current = false;
     resolutionRef.current = null;
     bellHoldRef.current = false;
@@ -543,11 +552,12 @@ export default function Home() {
 
   function beginLevelOne() {
     setStarted(true);
+    startMusic();
     try { localStorage.setItem("sft-active-level-v1", "e01"); } catch { /* optional */ }
   }
 
   function beginLevelTwo() {
-    audioRef.current?.pause(); audioRef.current = null; stopMusic(); setStarted(false);
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); setStarted(false);
     try {
       localStorage.setItem("sft-active-level-v1", "e02");
     } catch { /* optional */ }
@@ -555,7 +565,7 @@ export default function Home() {
   }
 
   function beginLevelThree() {
-    audioRef.current?.pause(); audioRef.current = null; stopMusic(); setStarted(false);
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); setStarted(false);
     try {
       localStorage.setItem("sft-active-level-v1", "e03");
     } catch { /* optional */ }
@@ -563,7 +573,7 @@ export default function Home() {
   }
 
   function showLevelSelect() {
-    audioRef.current?.pause(); stopMusic(); setStarted(false); setLevelTwoActive(false); setLevelThreeActive(false); setJournalOpen(false);
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); setStarted(false); setLevelTwoActive(false); setLevelThreeActive(false); setJournalOpen(false); startMusic();
     try {
       localStorage.setItem("sft-active-level-v1", "select");
       const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
@@ -575,9 +585,14 @@ export default function Home() {
     } catch { /* optional */ }
   }
 
+  function playTitleMusic() {
+    if (musicOn) startMusic();
+    else toggleMusic();
+  }
+
   function startFreshGame() {
-    audioRef.current?.pause();
-    stopMusic();
+    stopNarration(audioRef, narrationGenerationRef, duckMusic);
+    startMusic();
     setLevelTwoActive(false);
     setLevelThreeActive(false);
     setStarted(false);
@@ -603,6 +618,7 @@ export default function Home() {
     setCode("");
     setCodeMessage("");
     lastAutoLineRef.current = "";
+    endingLessonPlayedRef.current = false;
     completionLockRef.current = false;
     resolutionRef.current = null;
     bellHoldRef.current = false;
@@ -675,7 +691,7 @@ export default function Home() {
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mia, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{finished ? "Review Level 1 ending" : savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{finished ? "Level 1 complete on this device" : `${savedStars} of 5 clue stars found on this device`}</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Review Level 2 ending" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article><article className="level-card available level-three-card"><span>LEVEL 3 · READY</span><h2>The Turning-Light Trail</h2><p>Book Three: <em>The Fold Makes a Pattern</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelThree}>{savedLevelThreeStages === 9 ? "Review Level 3 ending" : savedLevelThreeStages > 0 ? "Continue Level 3" : "Play Level 3"}</button>{savedLevelThreeStages > 0 && <small>{savedLevelThreeStages} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p><button className="fresh-game-button" onClick={() => setFreshGameOpen(true)}><span aria-hidden="true">↺</span> Start a fresh game</button></section>
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mia, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{finished ? "Review Level 1 ending" : savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{finished ? "Level 1 complete on this device" : `${savedStars} of 5 clue stars found on this device`}</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Review Level 2 ending" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article><article className="level-card available level-three-card"><span>LEVEL 3 · READY</span><h2>The Turning-Light Trail</h2><p>Book Three: <em>The Fold Makes a Pattern</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelThree}>{savedLevelThreeStages === 9 ? "Review Level 3 ending" : savedLevelThreeStages > 0 ? "Continue Level 3" : "Play Level 3"}</button>{savedLevelThreeStages > 0 && <small>{savedLevelThreeStages} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p><div className="title-controls"><button className="title-music-button" onClick={playTitleMusic}><span aria-hidden="true">♫</span> Play title music</button><button className="fresh-game-button" onClick={() => setFreshGameOpen(true)}><span aria-hidden="true">↺</span> Start a fresh game</button></div></section>
     {freshGameOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setFreshGameOpen(false)}><section className="code-modal fresh-game-modal" role="dialog" aria-modal="true" aria-labelledby="fresh-game-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setFreshGameOpen(false)} aria-label="Close">×</button><p className="eyebrow">START AGAIN</p><h2 id="fresh-game-title">Begin a completely fresh game?</h2><p>This removes all saved progress from Levels 1, 2 and 3 on this device. The books and game stay safely installed.</p><div className="fresh-game-actions"><button className="secondary" onClick={() => setFreshGameOpen(false)}>Keep my progress</button><button className="danger-action" onClick={startFreshGame}>Restart all progress</button></div></section></div>}
   </main>;
 
@@ -693,7 +709,7 @@ export default function Home() {
     ]}
     discoveries={[<>📝 Find a mysterious note</>, <>👀 Look, listen and check</>, <>⭐ Help five clue stars glow</>]}
     onSpeak={(line) => { startMusic(); playLine(line); }}
-    onBegin={() => { audioRef.current?.pause(); duckMusic(false); setIntroOpen(false); lastAutoLineRef.current = ""; window.setTimeout(() => playEffect("clunk"), 80); }}
+    onBegin={() => { stopNarration(audioRef, narrationGenerationRef, duckMusic); setIntroOpen(false); lastAutoLineRef.current = ""; window.setTimeout(() => playEffect("clunk"), 80); }}
     initialStep={preludeStep}
     onStepChange={setPreludeStep}
     onExit={showLevelSelect}

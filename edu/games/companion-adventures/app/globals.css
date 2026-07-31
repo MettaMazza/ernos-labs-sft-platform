@@ -30,8 +30,9 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
 .level-card h2,.level-card p { margin:0; }.level-card h2{font-size:1.35rem}.level-card p{font-size:.83rem!important;line-height:1.35!important}
 .level-card button { justify-self:start; margin-top:auto; }.level-card button:disabled { border:2px solid #788397; border-radius:999px; padding:11px 18px; color:#626d7e; background:#ccd4df; cursor:not-allowed; font-weight:900; }
 .level-card small { color:#526174; font-size:.7rem; font-weight:750; }
-.fresh-game-button { display:inline-flex; align-items:center; gap:7px; margin-top:10px; padding:9px 14px; color:white; border:2px solid #ffffff9e; border-radius:999px; background:#101a31d9; box-shadow:0 8px 22px #0006; font-size:.78rem; font-weight:900; }
-.fresh-game-button span { font-size:1.1rem; }
+.title-controls { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:10px; }
+.fresh-game-button,.title-music-button { display:inline-flex; align-items:center; gap:7px; margin:0; padding:9px 14px; color:white; border:2px solid #ffffff9e; border-radius:999px; background:#101a31d9; box-shadow:0 8px 22px #0006; font-size:.78rem; font-weight:900; }
+.fresh-game-button span,.title-music-button span { font-size:1.1rem; }
 .fresh-game-modal { text-align:left; }
 .fresh-game-actions { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:9px; margin-top:22px; }
 .fresh-game-actions .secondary { color:var(--ink); background:white; }
@@ -605,4 +606,116 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
   .memory-four-parts .lantern-quarter i { width:40px; height:40px; font-size:29px; }
   .memory-four-parts .lantern-quarter-2 i,.memory-four-parts .lantern-quarter-4 i { left:-20px; }
   .memory-four-parts .lantern-quarter-3 i,.memory-four-parts .lantern-quarter-4 i { top:-20px; }
+}
+
+/* Level Two mobile controls stay inside their own boxes. */
+.e02-stage .mini-game-header {
+  left:calc(2% + 158px);
+  right:calc(2% + 146px);
+}
+.e02-stage .mini-game-header>b {
+  margin-right:0;
+}
+.e02-stage .round-reset {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  white-space:nowrap;
+}
+
+/* A true three-by-three D-pad keeps every arrow the same distance from its centre. */
+.parcel-arrows {
+  --parcel-key-size:58px;
+  --parcel-key-gap:6px;
+  grid-template-areas:
+    ". up ."
+    "left . right"
+    ". down .";
+  grid-template-columns:repeat(3,var(--parcel-key-size));
+  grid-template-rows:repeat(3,var(--parcel-key-size));
+  gap:var(--parcel-key-gap);
+  place-content:center;
+  justify-self:center;
+}
+.parcel-arrows button {
+  inline-size:var(--parcel-key-size);
+  block-size:var(--parcel-key-size);
+  min-width:var(--parcel-key-size);
+  min-height:var(--parcel-key-size);
+  display:grid;
+  place-items:center;
+  padding:0;
+  touch-action:manipulation;
+}
+.parcel-arrows .parcel-arrow-up { grid-area:up; }
+.parcel-arrows .parcel-arrow-left { grid-area:left; }
+.parcel-arrows .parcel-arrow-right { grid-area:right; }
+.parcel-arrows .parcel-arrow-down { grid-area:down; }
+
+/* Lantern pictures shrink with their cards instead of crossing the card borders. */
+.plan-card-tray {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.plan-card-tray button {
+  overflow:hidden;
+}
+.plan-card-tray .lantern-quarter {
+  width:min(64px,100%);
+  max-width:100%;
+  height:auto;
+  aspect-ratio:1;
+}
+
+@media (max-width:760px) {
+  .e02-stage .round-reset {
+    width:44px;
+    min-width:44px;
+    height:44px;
+    padding:0;
+    font-size:1.05rem;
+  }
+  .e02-stage .round-reset-label {
+    display:none;
+  }
+  .e02-stage .mini-game-header {
+    left:calc(2% + 50px);
+    right:calc(2% + 74px);
+  }
+  .e02-stage .try-lights b {
+    display:none;
+  }
+  .parcel-arrows {
+    --parcel-key-size:44px;
+    --parcel-key-gap:4px;
+  }
+  .parcel-arrows button {
+    border-width:2px;
+    border-radius:10px;
+    font-size:1rem;
+  }
+  .plan-card-tray {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .plan-card-tray .lantern-quarter {
+    width:100%;
+    max-width:48px;
+    height:auto;
+  }
+  .plan-card-tray button {
+    grid-template-columns:clamp(34px,10vw,46px) minmax(0,1fr);
+  }
+  .plan-card-tray b {
+    min-width:0;
+  }
+  .title-controls {
+    flex-wrap:nowrap;
+    gap:5px;
+    margin-top:5px;
+  }
+  .fresh-game-button,.title-music-button {
+    margin:0;
+    padding:6px 9px;
+    font-size:.58rem;
+  }
 }

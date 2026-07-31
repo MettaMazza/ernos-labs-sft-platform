@@ -2,6 +2,7 @@
 
 import { CSSProperties, FormEvent, PointerEvent as ReactPointerEvent, ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
 import LevelPrelude, { PreludeLine } from "./level-prelude";
+import { startNarration, stopNarration } from "./narration-controller.mjs";
 import { levelThreeRelayForRound, pendingLevelThreeResolution, readLevelThreeIntroSeen, readLevelThreeResolution } from "./level-three-state.mjs";
 import useLevelMusic from "./use-level-music";
 
@@ -189,6 +190,8 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const soundRef = useRef<AudioContext | null>(null);
   const lastLineRef = useRef("");
+  const narrationGenerationRef = useRef(0);
+  const endingLessonPlayedRef = useRef(false);
   const progressRef = useRef<Record<string, unknown>>({});
   const pointerStartRef = useRef(0);
   const swipedRef = useRef(false);
@@ -209,16 +212,16 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   const relay = levelThreeRelayForRound(round);
 
   useEffect(() => {
+    if (storageReady) startMusic();
+  }, [storageReady, startMusic]);
+
+  useEffect(() => {
     const stopBackgroundAudio = () => {
       if (document.visibilityState !== "hidden") return;
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     const stopForPageHide = () => {
-      audioRef.current?.pause();
-      audioRef.current = null;
-      duckMusic(false);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
     };
     document.addEventListener("visibilitychange", stopBackgroundAudio);
     window.addEventListener("pagehide", stopForPageHide);
@@ -237,11 +240,18 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
       try {
         const stored = localStorage.getItem("sft-e03-moving-stage-v1");
         const saved = JSON.parse(stored ?? "{}");
-        setIntroSeen(readLevelThreeIntroSeen(saved, stored !== null));
-        if (typeof saved.sceneIndex === "number") setSceneIndex(Math.min(Math.max(saved.sceneIndex, 0), scenes.length - 1));
-        if (typeof saved.beat === "number") setBeat(Math.max(saved.beat, 0));
-        if (typeof saved.complete === "boolean") setComplete(saved.complete);
-        if (typeof saved.finished === "boolean") setFinished(saved.finished);
+        const restoredIntroSeen = readLevelThreeIntroSeen(saved, stored !== null);
+        const restoredSceneIndex = typeof saved.sceneIndex === "number" ? Math.min(Math.max(saved.sceneIndex, 0), scenes.length - 1) : 0;
+        const restoredBeat = typeof saved.beat === "number" ? Math.max(saved.beat, 0) : 0;
+        const restoredComplete = saved.complete === true;
+        const restoredFinished = saved.finished === true;
+        setIntroSeen(restoredIntroSeen);
+        setSceneIndex(restoredSceneIndex);
+        setBeat(restoredBeat);
+        setComplete(restoredComplete);
+        setFinished(restoredFinished);
+        lastLineRef.current = restoredIntroSeen && !restoredFinished ? `${restoredSceneIndex}:${restoredComplete ? "success" : restoredBeat}` : "";
+        endingLessonPlayedRef.current = restoredFinished;
         if (typeof saved.activityStep === "number") setActivityStep(Math.max(saved.activityStep, 0));
         if (Array.isArray(saved.chosen)) setChosen(saved.chosen.filter((value: unknown) => typeof value === "number"));
         if (typeof saved.wrong === "string") setWrong(saved.wrong);
@@ -272,45 +282,41 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   }, [storageReady, introSeen, sceneIndex, beat, complete, finished, activityStep, chosen, wrong, mistakes, roundLost, round, resolution]);
 
   useEffect(() => {
-    if (!finished || muted) return;
+    if (!storageReady || !finished || muted || endingLessonPlayedRef.current) return;
+    endingLessonPlayedRef.current = true;
     let lessonAudio: HTMLAudioElement | null = null;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (audioRef.current && !audioRef.current.paused) return;
-      audioRef.current?.pause();
-      duckMusic(true);
-      const audio = new Audio(`/audio/e03-v1.0.0/${endingLesson.audio}.mp3?v=e03-review-20260731c`);
-      lessonAudio = audio;
-      audioRef.current = audio;
-      const restoreMusic = () => duckMusic(false);
-      audio.addEventListener("ended", restoreMusic, { once: true });
-      audio.addEventListener("error", restoreMusic, { once: true });
-      audio.play().catch(restoreMusic);
+      lessonAudio = startNarration({
+        src: `/audio/e03-v1.0.0/${endingLesson.audio}.mp3?v=e03-review-20260731c`,
+        audioRef,
+        generationRef: narrationGenerationRef,
+        duckMusic,
+      });
     }, 120);
     return () => {
       window.clearTimeout(timeout);
+      stopNarration(audioRef, narrationGenerationRef, duckMusic);
       lessonAudio?.pause();
-      duckMusic(false);
-      if (audioRef.current === lessonAudio) audioRef.current = null;
     };
-  }, [finished, muted, duckMusic]);
+  }, [storageReady, finished, muted, duckMusic]);
 
   useEffect(() => () => {
-    audioRef.current?.pause();
-    audioRef.current = null;
+    stopNarration(audioRef, narrationGenerationRef, duckMusic);
     stopMusic();
-  }, [stopMusic]);
+  }, [duckMusic, stopMusic]);
 
   function playLine(current = line) {
     if (!current || muted) return;
-    audioRef.current?.pause();
-    duckMusic(true);
-    const audio = new Audio(`/audio/e03-v1.0.0/${current.audio}.mp3?v=e03-review-20260731c`);
-    audioRef.current = audio;
-    const restoreMusic = () => duckMusic(false);
-    audio.addEventListener("ended", restoreMusic, { once: true });
-    audio.addEventListener("error", restoreMusic, { once: true });
-    audio.play().catch(restoreMusic);
+    startNarration({
+      src: `/audio/e03-v1.0.0/${current.audio}.mp3?v=e03-review-20260731c`,
+      audioRef,
+      generationRef: narrationGenerationRef,
+      duckMusic,
+    });
   }
 
   function sound(kind: "tap" | "good" | "wrong" | "step") {
@@ -333,17 +339,20 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   }
 
   useEffect(() => {
-    if (introOpen || !line || (dialogueDone && !complete)) { audioRef.current?.pause(); duckMusic(false); return; }
+    if (finished) return;
+    if (introOpen || !line || (dialogueDone && !complete)) { stopNarration(audioRef, narrationGenerationRef, duckMusic); return; }
     const key = `${sceneIndex}:${complete ? "success" : beat}`;
+    const scheduledGeneration = narrationGenerationRef.current;
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
+      if (narrationGenerationRef.current !== scheduledGeneration) return;
       if (lastLineRef.current === key) return;
       lastLineRef.current = key;
       playLine(line);
     }, 25);
-    return () => { window.clearTimeout(timeout); audioRef.current?.pause(); };
+    return () => { window.clearTimeout(timeout); stopNarration(audioRef, narrationGenerationRef, duckMusic); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [introOpen, sceneIndex, beat, complete, muted]);
+  }, [finished, introOpen, sceneIndex, beat, complete, muted]);
 
   function finish() { sound("good"); setResolution(null); setWrong(""); setMistakes(0); setRoundLost(false); setComplete(true); }
   function beginResolution(next: Exclude<Resolution, null>) { if (resolving || complete || roundLost) return; setResolution(next); }
@@ -352,12 +361,12 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   function nextBeat() { sound("tap"); if (beat < scene.lines.length) setBeat((value) => value + 1); }
   function nextScene() {
     sound("step");
-    if (sceneIndex === scenes.length - 1) { audioRef.current?.pause(); audioRef.current = null; duckMusic(false); setResolution(null); setFinished(true); return; }
+    if (sceneIndex === scenes.length - 1) { stopNarration(audioRef, narrationGenerationRef, duckMusic); endingLessonPlayedRef.current = false; setResolution(null); setFinished(true); return; }
     setResolution(null); setSceneIndex((value) => value + 1); setBeat(0); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); lastLineRef.current = "";
   }
-  function replay() { audioRef.current?.pause(); setResolution(null); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound((value) => value + 1); lastLineRef.current = ""; }
+  function replay() { stopNarration(audioRef, narrationGenerationRef, duckMusic); setResolution(null); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound((value) => value + 1); lastLineRef.current = ""; }
   function restart() {
-    audioRef.current?.pause(); duckMusic(false); setIntroSeen(false); setResolution(null); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound(0); lastLineRef.current = "";
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); setIntroSeen(false); setResolution(null); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound(0); lastLineRef.current = ""; endingLessonPlayedRef.current = false;
     try {
       localStorage.removeItem("sft-e03-moving-stage-v1");
       localStorage.setItem("sft-active-level-v1", "e03");
@@ -368,8 +377,8 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     setCodeMessage(codes[clean] ?? "That code is hiding on another book page. Keep looking.");
     if (codes[clean]) { setUnlockedCode(clean); setCode(""); sound("good"); }
   }
-  function toggleNarration() { const next = !muted; setMuted(next); if (next) { audioRef.current?.pause(); audioRef.current = null; duckMusic(false); } }
-  function exitLevel() { audioRef.current?.pause(); duckMusic(false); stopMusic(); onExit(); }
+  function toggleNarration() { const next = !muted; setMuted(next); if (next) stopNarration(audioRef, narrationGenerationRef, duckMusic); }
+  function exitLevel() { stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); onExit(); }
 
   useEffect(() => {
     if (!pendingResolution || complete || roundLost) return;
@@ -474,7 +483,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     ]}
     discoveries={[<>↻ Turn a two-sided tile</>, <>🌙☀️ Work out what comes next</>, <>🛠️ Keep and repair a first try</>]}
     onSpeak={(current) => { startMusic(); playLine(current); }}
-    onBegin={() => { audioRef.current?.pause(); duckMusic(false); setIntroSeen(true); lastLineRef.current = ""; }}
+    onBegin={() => { stopNarration(audioRef, narrationGenerationRef, duckMusic); setIntroSeen(true); lastLineRef.current = ""; }}
     onExit={exitLevel}
     musicOn={musicOn}
     onToggleMusic={toggleMusic}
