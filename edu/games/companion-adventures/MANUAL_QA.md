@@ -135,13 +135,26 @@ used the Levels control.
 
 ## Unified automated checks
 
-- thirteen application/content tests: pass;
+- fourteen application/content tests: pass;
 - plain-language gate for E01 and E02: pass;
 - lint: no errors; four expected image-optimisation warnings for local character
   sprites;
 - production build: pass;
 - all 62 caption-matched narration files present: pass;
 - no application fetch, analytics, sign-in or child-data collection: pass.
+
+## Short-phone ending escape regression
+
+- Level Two was completed through the real interface at a 360 × 640 viewport.
+- The complete ending card, replay button and level-select button all remained
+  visible inside the phone viewport.
+- The ending itself can scroll when a still shorter browser needs more room.
+- A fixed `Levels` control remained in the phone safe area throughout the
+  ending and returned directly to the adventure selector.
+- Opening the game in a new tab after completion returned to the selector
+  instead of restoring an inescapable ending screen.
+- The selector retained the completed progress and offered `Play Level 2
+  again`; choosing replay starts a fresh Level Two journey.
 
 This QA makes E01 review 1.6.0, E02 review 1.0.0 and unified game review 2.0.0
 ready for Maria Smith's next play test. It does not approve

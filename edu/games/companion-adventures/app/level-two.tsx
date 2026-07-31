@@ -181,8 +181,9 @@ export default function LevelTwo({ onExit }: { onExit: () => void }) {
     if (!storageReady) return;
     const save = () => {
       try {
-        localStorage.setItem("sft-e02-moving-stage-v1", JSON.stringify(progressRef.current));
-        localStorage.setItem("sft-active-level-v1", "e02");
+        const progress = progressRef.current;
+        localStorage.setItem("sft-e02-moving-stage-v1", JSON.stringify(progress));
+        localStorage.setItem("sft-active-level-v1", progress.finished === true ? "select" : "e02");
       } catch { /* optional */ }
     };
     save();
@@ -243,7 +244,10 @@ export default function LevelTwo({ onExit }: { onExit: () => void }) {
   function replay() { audioRef.current?.pause(); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); lastLineRef.current = ""; }
   function restart() {
     audioRef.current?.pause(); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setWrong(""); lastLineRef.current = "";
-    try { localStorage.removeItem("sft-e02-moving-stage-v1"); } catch { /* optional */ }
+    try {
+      localStorage.removeItem("sft-e02-moving-stage-v1");
+      localStorage.setItem("sft-active-level-v1", "e02");
+    } catch { /* optional */ }
   }
   function submitCode(event: FormEvent) {
     event.preventDefault(); const clean = code.toUpperCase().replace(/[^A-Z]/g, "");
@@ -305,7 +309,7 @@ export default function LevelTwo({ onExit }: { onExit: () => void }) {
   if (!storageReady) return <main className="restore-screen"><p>Returning to your adventure…</p></main>;
 
   if (finished) return <main className="ending-screen e02-ending">
-    <div className="ending-art" /><section><p className="eyebrow">LEVEL TWO COMPLETE</p><div className="e02-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Moon Lantern shines.</h1><p>Mira, Sol, Tavi and Pax solved one clear problem: the whole lantern was too wide for the small door.</p><blockquote>They checked the whole, took it apart, carried every part, and built the same whole again.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this level uses exact positive finite counts and exact visible parts only. It does not introduce zero, fractions, infinity or hidden equivalence.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 2 again</button><button className="secondary" onClick={onExit}>Choose a level</button></div></section>
+    <div className="ending-art" /><button className="ending-home" onClick={onExit} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL TWO COMPLETE</p><div className="e02-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Moon Lantern shines.</h1><p>Mira, Sol, Tavi and Pax solved one clear problem: the whole lantern was too wide for the small door.</p><blockquote>They checked the whole, took it apart, carried every part, and built the same whole again.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this level uses exact positive finite counts and exact visible parts only. It does not introduce zero, fractions, infinity or hidden equivalence.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 2 again</button><button className="secondary" onClick={onExit}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell level-two-shell">

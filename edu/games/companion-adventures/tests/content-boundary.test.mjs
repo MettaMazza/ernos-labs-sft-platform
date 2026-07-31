@@ -42,6 +42,15 @@ test("the landing page selects levels without browser-edge page movement", () =>
   assert.match(manifest.mobile_navigation_guard, /prevent accidental pull-to-refresh/i);
 });
 
+test("completed levels always have a reachable mobile escape", () => {
+  assert.match(styles, /\.ending-screen \{[^}]*height:100dvh;[^}]*overflow-y:auto;[^}]*overscroll-behavior:contain/);
+  assert.match(styles, /\.ending-home \{[^}]*position:fixed;[^}]*z-index:40/);
+  assert.match(source, /className="ending-home" onClick=\{showLevelSelect\}/);
+  assert.match(levelTwo, /className="ending-home" onClick=\{onExit\}/);
+  assert.match(levelTwo, /progress\.finished === true \? "select" : "e02"/);
+  assert.match(source, /savedLevelTwoRooms === 9 \? "Play Level 2 again"/);
+});
+
 test("automatic narration plays each story beat once and stops at the activity boundary", () => {
   assert.match(source, /lastAutoLineRef\.current === lineKey/);
   assert.match(source, /dialogueDone && !complete/);

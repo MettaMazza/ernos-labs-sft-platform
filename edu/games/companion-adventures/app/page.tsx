@@ -299,7 +299,11 @@ export default function Home() {
 
   function nextScene() {
     playEffect("step");
-    if (sceneIndex === scenes.length - 1) { setFinished(true); return; }
+    if (sceneIndex === scenes.length - 1) {
+      setFinished(true);
+      try { localStorage.setItem("sft-active-level-v1", "select"); } catch { /* optional */ }
+      return;
+    }
     setSceneIndex((value) => value + 1);
     setBeat(0); setActivityStep(0); setComplete(false); setLetters(0); setCurtain(0); setDoors([]); setDrawn(false); setCardOpen(false); setEarnedStar(null);
     curtainRevealRef.current = false;
@@ -335,7 +339,10 @@ export default function Home() {
     audioRef.current?.pause(); setStarted(true); setFinished(false); setSceneIndex(0); setBeat(0); setActivityStep(0); setComplete(false); setSavedStars(0); setLetters(0); setCurtain(0); setDoors([]); setDrawn(false); setCardOpen(false); setEarnedStar(null);
     lastAutoLineRef.current = "";
     curtainRevealRef.current = false;
-    try { localStorage.removeItem("sft-e01-moving-stage-v1"); } catch { /* optional */ }
+    try {
+      localStorage.removeItem("sft-e01-moving-stage-v1");
+      localStorage.setItem("sft-active-level-v1", "e01");
+    } catch { /* optional */ }
   }
 
   function beginLevelOne() {
@@ -345,8 +352,15 @@ export default function Home() {
   }
 
   function beginLevelTwo() {
-    audioRef.current?.pause(); setStarted(false); setLevelTwoActive(true);
-    try { localStorage.setItem("sft-active-level-v1", "e02"); } catch { /* optional */ }
+    audioRef.current?.pause(); setStarted(false);
+    try {
+      if (savedLevelTwoRooms === 9) {
+        localStorage.removeItem("sft-e02-moving-stage-v1");
+        setSavedLevelTwoRooms(0);
+      }
+      localStorage.setItem("sft-active-level-v1", "e02");
+    } catch { /* optional */ }
+    setLevelTwoActive(true);
   }
 
   function showLevelSelect() {
@@ -402,11 +416,11 @@ export default function Home() {
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Play Level 2 again" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
   </main>;
 
   if (finished) return <main className="ending-screen">
-    <div className="ending-art" /><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They found things, sounds and a written word—but no thing called nothing.</p><blockquote>Nothing was not a thing they could find.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
+    <div className="ending-art" /><button className="ending-home" onClick={showLevelSelect} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They found things, sounds and a written word—but no thing called nothing.</p><blockquote>Nothing was not a thing they could find.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell">
