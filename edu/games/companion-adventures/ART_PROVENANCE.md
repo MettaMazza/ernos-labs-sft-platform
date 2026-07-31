@@ -151,3 +151,28 @@ with an open lower walking lane, clear countable spaces, no characters, no
 words, no interface, no logo or watermark, and no copied or recognisably
 similar third-party imagery. The generated backgrounds do not carry answers:
 the renderer and eventual game add the exact countable diagrams separately.
+
+## Level Three source art - planning 0.1.0
+
+Prepared: 31 July 2026
+Scientific-authority status: none
+
+Built-in image generation extended the same original 3D world for *The
+Turning-Light Trail*. The four landscape source scenes are stored under
+`public/art/stages/e03-source/`:
+
+1. `e03-stage-01-trail-station-v1.png` - the Moon Lantern, the first alternating
+   blue-moon and gold-sun lights, and the distant Sunrise Arch.
+2. `e03-stage-02-turn-gate-v1.png` - a child-safe one-turn gate with an empty
+   round mechanism for an exact interactive tile overlay.
+3. `e03-stage-03-over-under-bridge-v1.png` - one clearly visible route over a
+   rounded bridge and one clearly visible route under it.
+4. `e03-stage-04-sunrise-arch-v1.png` - the pre-dawn final arch and three empty
+   route lanes for exact interactive choices.
+
+Each prompt requested a polished, child-friendly 3D scene with open foreground
+space, no characters, no words, no interface, no logo and no watermark. The
+blue-moon and gold-sun symbols in the first scene are decorative continuity
+props. All question state, order, labels and correct answers are added by the
+deterministic book renderer and game interface. Generated pixels supply no SFT
+premise, theorem, derivation or curriculum authority.

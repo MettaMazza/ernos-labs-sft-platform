@@ -105,6 +105,24 @@ def verify(path: Path) -> None:
         require("how can the whole lantern get through the small door" in by_page[5], f"{path}: page 5 does not state the child-facing story question")
         require("take the lantern apart" in by_page[6] and "put the whole lantern together again" in by_page[6], f"{path}: page 6 does not state the learning plan")
 
+    if "E03" in book.get("book_id", ""):
+        by_page = {page["page"]: (page.get("text", "") + " " + page.get("subtext", "")).lower() for page in pages}
+        require("gold sun side showing" not in by_page[7], f"{path}: page 7 gives away its answer")
+        require("gold sun comes next" not in by_page[10], f"{path}: page 10 gives away its answer")
+        require("blue moon comes next" not in by_page[12], f"{path}: page 12 gives away its answer")
+        require("blue moon comes next" not in by_page[16], f"{path}: page 16 gives away its answer")
+        require("fourth tile should show gold sun" not in by_page[19], f"{path}: page 19 gives away its answer")
+        require("under comes next" not in by_page[23], f"{path}: page 23 gives away its answer")
+        require("route c follows" not in by_page[26], f"{path}: page 26 gives away its answer")
+        require("gold sun came out" not in by_page[28], f"{path}: page 28 gives away its answer")
+        require("leaf comes next" not in by_page[30], f"{path}: page 30 gives away its answer")
+        require("return means the earlier side is showing again" in by_page[13], f"{path}: return is not plainly defined after the activity")
+        require("a pattern is a rule that tells us what move comes next" in by_page[17], f"{path}: pattern is not plainly defined after the activity")
+        require("a broken rule means one shown move does not follow the declared rule" in by_page[20], f"{path}: broken rule is not plainly defined after the activity")
+        require("moon lantern shone blue, then gold, then blue, then gold" in by_page[3], f"{path}: page 3 does not clearly continue the Moon Lantern story")
+        require("then the trail stopped" in by_page[4] and "rest of the path stayed dark" in by_page[4], f"{path}: page 4 does not clearly state the problem")
+        require("restore the turning-light trail before sunrise" in by_page[5], f"{path}: page 5 does not clearly state the child-facing mission")
+
     print(f"Early Years language verified: {path}")
 
 
