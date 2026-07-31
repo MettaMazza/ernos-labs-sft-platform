@@ -88,7 +88,7 @@ PART_COLORS = (colors.HexColor("#6FD4D0"), colors.HexColor("#FFD35C"), colors.He
 
 
 def draw_quartered_lantern(c: canvas.Canvas, cx: float, cy: float, radius: float, filled: int = 4, alternate: bool = False) -> None:
-    """Draw one exact four-part lantern; `filled` controls how many parts remain."""
+    """Draw one exact four-part round lantern; `filled` controls how many parts remain."""
     c.saveState()
     c.setStrokeColor(NAVY)
     c.setLineWidth(1.5)
@@ -104,6 +104,25 @@ def draw_quartered_lantern(c: canvas.Canvas, cx: float, cy: float, radius: float
     c.setStrokeColor(GOLD)
     c.setLineWidth(2.4)
     c.circle(cx, cy, radius, fill=0, stroke=1)
+
+    # A handle, top cap and foot make the round object read as a lantern rather
+    # than as an unexplained four-colour circle. The four registered parts stay
+    # inside the same circular frame, so the lesson's exact part count is intact.
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(max(1.3, radius / (9 * mm)))
+    c.arc(
+        cx - radius * .52,
+        cy + radius * .72,
+        cx + radius * .52,
+        cy + radius * 1.48,
+        0,
+        180,
+    )
+    c.setFillColor(colors.HexColor("#B98645"))
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(1)
+    c.roundRect(cx - radius * .34, cy + radius * .88, radius * .68, radius * .22, radius * .08, fill=1, stroke=1)
+    c.roundRect(cx - radius * .46, cy - radius * 1.10, radius * .92, radius * .20, radius * .07, fill=1, stroke=1)
     c.restoreState()
 
 
@@ -125,13 +144,109 @@ def draw_extra_triangle(c: canvas.Canvas, cx: float, cy: float, size: float) -> 
     c.restoreState()
 
 
-def draw_footprint(c: canvas.Canvas, cx: float, cy: float, fill: colors.Color) -> None:
+def draw_footprint(c: canvas.Canvas, cx: float, cy: float, fill: colors.Color, scale: float = 1.0) -> None:
     c.saveState()
     c.setFillColor(fill)
-    c.ellipse(cx - 3.2 * mm, cy - 5 * mm, cx + 3.2 * mm, cy + 3 * mm, fill=1, stroke=0)
+    c.ellipse(
+        cx - 3.2 * mm * scale,
+        cy - 5 * mm * scale,
+        cx + 3.2 * mm * scale,
+        cy + 3 * mm * scale,
+        fill=1,
+        stroke=0,
+    )
     for dx, dy, radius in ((-3, 4, 1.4), (0, 5, 1.6), (3, 4, 1.35)):
-        c.circle(cx + dx * mm, cy + dy * mm, radius * mm, fill=1, stroke=0)
+        c.circle(
+            cx + dx * mm * scale,
+            cy + dy * mm * scale,
+            radius * mm * scale,
+            fill=1,
+            stroke=0,
+        )
     c.restoreState()
+
+
+def draw_parcel(c: canvas.Canvas, cx: float, cy: float, width: float = 45 * mm, height: float = 30 * mm) -> None:
+    """Draw the labelled parcel that arrives at the end of E01."""
+    c.saveState()
+    c.setFillColor(colors.HexColor("#C98B53"))
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(1.8)
+    c.roundRect(cx - width / 2, cy - height / 2, width, height, 3 * mm, fill=1, stroke=1)
+    c.setFillColor(colors.HexColor("#F3D49D"))
+    c.rect(cx - 4 * mm, cy - height / 2, 8 * mm, height, fill=1, stroke=0)
+    c.rect(cx - width / 2, cy - 3 * mm, width, 6 * mm, fill=1, stroke=0)
+    c.setStrokeColor(NAVY)
+    c.line(cx - width / 2, cy + height / 2, cx, cy + 3 * mm)
+    c.line(cx + width / 2, cy + height / 2, cx, cy + 3 * mm)
+    c.setFillColor(CREAM)
+    c.setStrokeColor(NAVY)
+    c.roundRect(cx - 17 * mm, cy - 11 * mm, 34 * mm, 9 * mm, 2 * mm, fill=1, stroke=1)
+    c.setFillColor(INK)
+    c.setFont(base.font("bold"), 6.2)
+    c.drawCentredString(cx, cy - 8 * mm, "MIA · SOL · TAVI")
+    c.restoreState()
+
+
+def draw_delivery_card(c: canvas.Canvas, cx: float, cy: float) -> None:
+    """Draw a readable picture card pointing towards a balcony."""
+    width, height = 46 * mm, 33 * mm
+    c.saveState()
+    c.setFillColor(CREAM)
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2)
+    c.roundRect(cx - width / 2, cy - height / 2, width, height, 4 * mm, fill=1, stroke=1)
+    c.setFillColor(INK)
+    c.setFont(base.font("bold"), 6.5)
+    c.drawCentredString(cx, cy + 10 * mm, "TO THE BALCONY")
+    c.setStrokeColor(GREEN)
+    c.setLineWidth(2.4)
+    c.line(cx - 15 * mm, cy, cx + 11 * mm, cy)
+    arrow = c.beginPath()
+    arrow.moveTo(cx + 15 * mm, cy)
+    arrow.lineTo(cx + 9 * mm, cy + 4 * mm)
+    arrow.lineTo(cx + 9 * mm, cy - 4 * mm)
+    arrow.close()
+    c.setFillColor(GREEN)
+    c.drawPath(arrow, fill=1, stroke=0)
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(1.4)
+    c.line(cx - 15 * mm, cy - 8 * mm, cx + 15 * mm, cy - 8 * mm)
+    for post_x in (cx - 12 * mm, cx - 4 * mm, cx + 4 * mm, cx + 12 * mm):
+        c.line(post_x, cy - 8 * mm, post_x, cy - 14 * mm)
+    c.restoreState()
+
+
+def draw_carrying_spot(c: canvas.Canvas, cx: float, cy: float, visits: int = 0) -> None:
+    """Draw one unmistakable glowing floor spot and any recorded footprints."""
+    c.saveState()
+    c.setFillColor(colors.Color(1, .83, .36, alpha=.20))
+    c.circle(cx, cy, 10 * mm, fill=1, stroke=0)
+    c.setFillColor(colors.HexColor("#28496D"))
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2)
+    c.circle(cx, cy, 7.5 * mm, fill=1, stroke=1)
+    if visits == 1:
+        draw_footprint(c, cx, cy - .5 * mm, CREAM, .72)
+    elif visits > 1:
+        draw_footprint(c, cx - 2.1 * mm, cy - 1.2 * mm, CREAM, .58)
+        draw_footprint(c, cx + 2.7 * mm, cy + 1.8 * mm, colors.HexColor("#EF816D"), .58)
+    c.restoreState()
+
+
+def draw_spot_row(
+    c: canvas.Canvas,
+    centers: tuple[float, float, float, float],
+    cy: float,
+    visits: tuple[int, int, int, int] = (0, 0, 0, 0),
+    label: str | None = None,
+) -> None:
+    if label:
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 6.3)
+        c.drawCentredString(sum(centers) / 4, cy + 10.5 * mm, label)
+    for cx, count in zip(centers, visits):
+        draw_carrying_spot(c, cx, cy, count)
 
 
 def draw_partition_choices(c: canvas.Canvas, x: float, y: float, reveal: bool) -> None:
@@ -164,7 +279,31 @@ def draw_pair(c: canvas.Canvas, cx: float, cy: float, equal: bool) -> None:
         c.circle(cx + offset, cy, size, fill=1, stroke=1)
 
 
-def draw_lantern_part_card(c: canvas.Canvas, cx: float, cy: float, part: int, size: float = 18 * mm) -> None:
+def draw_pair_card(c: canvas.Canvas, cx: float, cy: float, label: str, equal: bool, reveal: bool) -> None:
+    c.saveState()
+    c.setFillColor(CREAM)
+    c.setStrokeColor(GOLD if reveal and equal else WHITE)
+    c.setLineWidth(2.6 if reveal and equal else 1.5)
+    c.roundRect(cx - 31 * mm, cy - 22 * mm, 62 * mm, 44 * mm, 4 * mm, fill=1, stroke=1)
+    c.setFillColor(INK)
+    c.setFont(base.font("bold"), 8)
+    c.drawCentredString(cx, cy + 14 * mm, label)
+    draw_pair(c, cx, cy, equal)
+    if reveal:
+        c.setFillColor(GREEN if equal else colors.HexColor("#B34B4B"))
+        c.setFont(base.font("bold"), 6.5)
+        c.drawCentredString(cx, cy - 17 * mm, "SAME SIZE" if equal else "DIFFERENT SIZES")
+    c.restoreState()
+
+
+def draw_lantern_part_card(
+    c: canvas.Canvas,
+    cx: float,
+    cy: float,
+    part: int,
+    size: float = 18 * mm,
+    label: str | None = None,
+) -> None:
     c.saveState()
     c.setFillColor(CREAM)
     c.setStrokeColor(NAVY)
@@ -172,20 +311,88 @@ def draw_lantern_part_card(c: canvas.Canvas, cx: float, cy: float, part: int, si
     c.roundRect(cx - size / 2, cy - size / 2, size, size, 2.5 * mm, fill=1, stroke=1)
     radius = size * .36
     starts = {1: 90, 2: 0, 3: 180, 4: 270}
+    c.setStrokeColor(colors.HexColor("#C9B98D"))
+    c.setLineWidth(.7)
+    c.circle(cx, cy, radius, fill=0, stroke=1)
     c.setFillColor(PART_COLORS[part - 1])
     c.setStrokeColor(GOLD)
     c.setLineWidth(1.4)
     c.wedge(cx - radius, cy - radius, cx + radius, cy + radius, starts[part], 90, fill=1, stroke=1)
-    c.setFillColor(INK)
-    c.setFont(base.font("bold"), 7)
-    c.drawCentredString(cx, cy - size * .41, "1")
+    if label:
+        c.setFillColor(INK)
+        c.setFont(base.font("bold"), 7)
+        c.drawCentredString(cx, cy - size * .41, label)
+    c.restoreState()
+
+
+def draw_part_tray(c: canvas.Canvas, centers: tuple[float, float, float, float], cy: float, size: float = 16 * mm) -> None:
+    left = centers[0] - size * .62
+    right = centers[-1] + size * .62
+    c.saveState()
+    c.setFillColor(colors.Color(.05, .11, .22, alpha=.86))
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(1.8)
+    c.roundRect(left, cy - size * .65, right - left, size * 1.3, 4 * mm, fill=1, stroke=1)
+    c.restoreState()
+    for index, cx in enumerate(centers, 1):
+        draw_lantern_part_card(c, cx, cy, index, size)
+
+
+def draw_sequence_arrow(c: canvas.Canvas, x1: float, x2: float, cy: float) -> None:
+    c.saveState()
+    c.setStrokeColor(CREAM)
+    c.setFillColor(CREAM)
+    c.setLineWidth(2)
+    c.line(x1, cy, x2 - 3 * mm, cy)
+    arrow = c.beginPath()
+    arrow.moveTo(x2, cy)
+    arrow.lineTo(x2 - 4 * mm, cy + 3 * mm)
+    arrow.lineTo(x2 - 4 * mm, cy - 3 * mm)
+    arrow.close()
+    c.drawPath(arrow, fill=1, stroke=0)
+    c.restoreState()
+
+
+def draw_light_lantern_face(c: canvas.Canvas, cx: float, cy: float, symbol: str, heading: str) -> None:
+    """Draw one round lantern face in the moon-sun-moon preview."""
+    radius = 14 * mm
+    c.saveState()
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2.4)
+    c.setFillColor(colors.HexColor("#24476D") if symbol == "moon" else colors.HexColor("#6B3D24"))
+    c.circle(cx, cy, radius, fill=1, stroke=1)
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(1.6)
+    c.arc(cx - 8 * mm, cy + 9 * mm, cx + 8 * mm, cy + 23 * mm, 0, 180)
+    c.line(cx - 8 * mm, cy + 16 * mm, cx - 8 * mm, cy + 11 * mm)
+    c.line(cx + 8 * mm, cy + 16 * mm, cx + 8 * mm, cy + 11 * mm)
+    c.setFillColor(GOLD)
+    c.rect(cx - 7 * mm, cy - radius - 2 * mm, 14 * mm, 3 * mm, fill=1, stroke=0)
+    if symbol == "moon":
+        c.setFillColor(colors.HexColor("#DDF7FF"))
+        c.circle(cx - 1.5 * mm, cy, 7 * mm, fill=1, stroke=0)
+        c.setFillColor(colors.HexColor("#24476D"))
+        c.circle(cx + 2.2 * mm, cy + 1.7 * mm, 6.2 * mm, fill=1, stroke=0)
+    else:
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(1.8)
+        for x1, y1, x2, y2 in (
+            (-10, 0, -7, 0), (7, 0, 10, 0), (0, -10, 0, -7), (0, 7, 0, 10),
+            (-7, -7, -5, -5), (5, 5, 7, 7), (-7, 7, -5, 5), (5, -5, 7, -7),
+        ):
+            c.line(cx + x1 * mm, cy + y1 * mm, cx + x2 * mm, cy + y2 * mm)
+        c.setFillColor(GOLD)
+        c.circle(cx, cy, 6 * mm, fill=1, stroke=0)
+    c.setFillColor(CREAM)
+    c.setFont(base.font("bold"), 6.2)
+    c.drawCentredString(cx, cy + 24 * mm, heading)
     c.restoreState()
 
 
 def draw_addition_equation(c: canvas.Canvas, x: float, y: float, answer: str) -> None:
     positions = (x + 18 * mm, x + 53 * mm, x + 88 * mm, x + 123 * mm)
     for index, cx in enumerate(positions, 1):
-        draw_lantern_part_card(c, cx, y, index)
+        draw_lantern_part_card(c, cx, y, index, label="1")
         if index < 4:
             c.setFillColor(WHITE)
             c.setFont(base.font("bold"), 18)
@@ -204,15 +411,17 @@ def draw_addition_equation(c: canvas.Canvas, x: float, y: float, answer: str) ->
 
 def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float, h: float) -> None:
     number = page["page"]
-    if number == 4:
-        draw_quartered_lantern(c, x + 92 * mm, y + 57 * mm, 20 * mm)
+    if number == 3:
+        draw_parcel(c, x + 112 * mm, y + 67 * mm)
+    elif number == 4:
+        draw_quartered_lantern(c, x + 67 * mm, y + 66 * mm, 19 * mm)
+        draw_delivery_card(c, x + 132 * mm, y + 66 * mm)
     elif number == 5:
         draw_quartered_lantern(c, x + 132 * mm, y + 62 * mm, 27 * mm)
     elif number == 6:
         draw_quartered_lantern(c, x + 42 * mm, y + 60 * mm, 13 * mm)
-        for index, cx in enumerate((x + 73 * mm, x + 84 * mm, x + 95 * mm, x + 106 * mm)):
-            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.1)
-            c.roundRect(cx - 4 * mm, y + 56 * mm, 8 * mm, 8 * mm, 2 * mm, fill=1, stroke=1)
+        for index, cx in enumerate((x + 70 * mm, x + 84 * mm, x + 98 * mm, x + 112 * mm)):
+            draw_lantern_part_card(c, cx, y + 60 * mm, index + 1, 11 * mm)
         c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(2.2)
         c.roundRect(x + 118 * mm, y + 43 * mm, 17 * mm, 34 * mm, 6 * mm, fill=1, stroke=1)
         draw_quartered_lantern(c, x + 155 * mm, y + 60 * mm, 13 * mm)
@@ -224,27 +433,35 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
         if number == 8:
             c.setStrokeColor(GOLD); c.setLineWidth(4)
             c.circle(x + 91 * mm, y + 66 * mm, 15 * mm, fill=0, stroke=1)
-    elif number in (11, 12, 13):
-        tile_x = (x + 51 * mm, x + 79 * mm, x + 107 * mm, x + 135 * mm)
-        for index, cx in enumerate(tile_x):
-            draw_footprint(c, cx, y + 50 * mm, GREEN if number in (11, 13, 29) else colors.HexColor("#EF816D"))
-            if index == 2 and number in (12, 13):
-                draw_footprint(c, cx + 5 * mm, y + 58 * mm, colors.HexColor("#EF816D"))
+    elif number in (9, 10, 11, 12):
+        spot_x = (x + 50 * mm, x + 78 * mm, x + 106 * mm, x + 134 * mm)
+        visits = (1, 1, 1, 1) if number == 11 else (1, 1, 2, 1) if number == 12 else (0, 0, 0, 0)
+        draw_spot_row(c, spot_x, y + 59 * mm, visits)
+    elif number == 13:
+        spot_x = (x + 50 * mm, x + 78 * mm, x + 106 * mm, x + 134 * mm)
+        draw_spot_row(c, spot_x, y + 80 * mm, (1, 1, 2, 1), "SOL'S FIRST TRY")
+        draw_spot_row(c, spot_x, y + 54 * mm, (1, 1, 1, 1), "SOL'S NEW TRY")
     elif number in (14, 15, 16, 17):
         draw_partition_choices(c, x, y + 68 * mm, reveal=number == 17)
     elif number in (18, 19):
-        for index, cx in enumerate((x + 94 * mm, x + 113 * mm, x + 132 * mm, x + 151 * mm)):
-            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
-            c.roundRect(cx - 7 * mm, y + 49 * mm, 14 * mm, 14 * mm, 3 * mm, fill=1, stroke=1)
+        part_x = (x + 94 * mm, x + 113 * mm, x + 132 * mm, x + 151 * mm)
+        draw_part_tray(c, part_x, y + 57 * mm)
     elif number == 20:
-        for index, cx in enumerate((x + 65 * mm, x + 84 * mm, x + 103 * mm, x + 122 * mm)):
-            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
-            c.roundRect(cx - 7 * mm, y + 49 * mm, 14 * mm, 14 * mm, 3 * mm, fill=1, stroke=1)
+        part_x = (x + 61 * mm, x + 82 * mm, x + 103 * mm, x + 124 * mm)
+        draw_part_tray(c, part_x, y + 57 * mm)
     elif number in (21, 22):
-        draw_pair(c, x + 55 * mm, y + 58 * mm, True)
-        draw_pair(c, x + 128 * mm, y + 58 * mm, False)
+        draw_pair_card(c, x + 50 * mm, y + 61 * mm, "PAIR A", True, number == 22)
+        draw_pair_card(c, x + 132 * mm, y + 61 * mm, "PAIR B", False, number == 22)
     elif number == 23:
-        draw_quartered_lantern(c, x + 92 * mm, y + 61 * mm, 26 * mm, filled=3)
+        draw_quartered_lantern(c, x + 70 * mm, y + 61 * mm, 26 * mm, filled=3)
+        c.setFillColor(colors.Color(.05, .11, .22, alpha=.86))
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(1.8)
+        c.roundRect(x + 121 * mm, y + 44 * mm, 32 * mm, 34 * mm, 4 * mm, fill=1, stroke=1)
+        draw_lantern_part_card(c, x + 137 * mm, y + 60 * mm, 4, 24 * mm)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 6.2)
+        c.drawCentredString(x + 137 * mm, y + 82 * mm, "PART ON THE TRAY")
     elif number == 24:
         draw_quartered_lantern(c, x + 92 * mm, y + 61 * mm, 26 * mm)
     elif number == 25:
@@ -252,7 +469,7 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
             draw_lantern_part_card(c, cx, y + 61 * mm, index, 16 * mm)
         draw_extra_triangle(c, x + 148 * mm, y + 58 * mm, 8 * mm)
     elif number in (26, 27):
-        panels = ((x + 20 * mm, "PAX IS HOLDING", (1, 2)), (x + 101 * mm, "WAITING ON THE TRAY", (3, 4)))
+        panels = ((x + 20 * mm, "PAX IS HOLDING", (1, 2)), (x + 101 * mm, "ON THE TRAY", (3, 4)))
         for px, label, parts in panels:
             c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(1.8)
             c.roundRect(px, y + 42 * mm, 68 * mm, 42 * mm, 5 * mm, fill=1, stroke=1)
@@ -261,11 +478,13 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
             draw_lantern_part_card(c, px + 23 * mm, y + 58 * mm, parts[0], 18 * mm)
             draw_lantern_part_card(c, px + 45 * mm, y + 58 * mm, parts[1], 18 * mm)
         if number == 27:
-            for cx, label in ((x + 54 * mm, "2 HELD"), (x + 135 * mm, "4 PARTS IN ALL")):
-                c.setFillColor(GOLD); c.setStrokeColor(WHITE); c.setLineWidth(1)
-                c.roundRect(cx - 18 * mm, y + 34 * mm, 36 * mm, 7 * mm, 2 * mm, fill=1, stroke=1)
-                c.setFillColor(INK); c.setFont(base.font("bold"), 7)
-                c.drawCentredString(cx, y + 36 * mm, label)
+            c.setFillColor(GOLD)
+            c.setStrokeColor(WHITE)
+            c.setLineWidth(1.6)
+            c.roundRect(x + 56 * mm, y + 87 * mm, 70 * mm, 11 * mm, 4 * mm, fill=1, stroke=1)
+            c.setFillColor(INK)
+            c.setFont(base.font("bold"), 13)
+            c.drawCentredString(x + 91 * mm, y + 90 * mm, "2 + 2 = 4")
     elif number == 28:
         draw_addition_equation(c, x, y + 58 * mm, "?")
     elif number == 29:
@@ -282,9 +501,15 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
         c.setFillColor(WHITE)
         c.setFont(base.font("bold"), 12)
         c.drawCentredString(x + 92 * mm, y + 42 * mm, "4 PARTS  ->  1 WHOLE LANTERN")
-        draw_quartered_lantern(c, x + 92 * mm, y + 24 * mm, 13 * mm)
+        # Keep the summary lantern in the clear space between Tavi and Sol.
+        draw_quartered_lantern(c, x + 83 * mm, y + 24 * mm, 9 * mm)
     elif number == 32:
-        draw_quartered_lantern(c, x + 92 * mm, y + 58 * mm, 26 * mm, alternate=True)
+        face_x = (x + 45 * mm, x + 92 * mm, x + 139 * mm)
+        draw_light_lantern_face(c, face_x[0], y + 60 * mm, "moon", "FIRST · BLUE MOON")
+        draw_light_lantern_face(c, face_x[1], y + 60 * mm, "sun", "THEN · GOLD SUN")
+        draw_light_lantern_face(c, face_x[2], y + 60 * mm, "moon", "NEXT · BLUE MOON")
+        draw_sequence_arrow(c, face_x[0] + 16 * mm, face_x[1] - 16 * mm, y + 60 * mm)
+        draw_sequence_arrow(c, face_x[1] + 16 * mm, face_x[2] - 16 * mm, y + 60 * mm)
 
 
 def draw_stage(c: canvas.Canvas, page: dict) -> None:

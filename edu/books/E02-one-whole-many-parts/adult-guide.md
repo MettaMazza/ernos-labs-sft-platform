@@ -19,6 +19,32 @@ one necessary part of that plan. The vocabulary follows the experience rather
 than replacing it. The completed lantern reaches the balcony and naturally
 begins the two-label pattern that previews E03.
 
+## Opening recap and invitation
+
+Book Two and Level Two begin with a short story recap so a child understands
+why the parcel is waiting and what the team is doing next. The recap must also
+work for a child who starts here instead of completing Level One.
+
+The book opening and the game's non-playable prelude should:
+
+1. welcome the child back to Mia, Sol and Tavi, or introduce the trio in one
+   sentence for a new child;
+2. explain that the team followed five clues, opened the Star Door and learned
+   to describe exactly what they found instead of inventing “nothing”;
+3. show that the parcel arrived at the end of that mystery and is now waiting
+   beside the filed map;
+4. let the team open the parcel and reveal the complete Moon Lantern before it
+   is moved or taken apart;
+5. show the picture card asking for the lantern at the balcony and the small
+   door that blocks the whole lantern; and
+6. invite the child to discover how one whole can become several parts, how to
+   count every part once, and how the same whole can be built again—without
+   revealing the plan's answers.
+
+The prelude is a warm continuation, not a spoken contents list. On replay it
+may be watched again or skipped, but skipping it must not mark any activity as
+complete.
+
 ## The permanent cast and Pax
 
 Mia, Sol and Tavi remain the main trio. E02 introduces exactly one new guest:
@@ -262,6 +288,51 @@ Page 31 keeps the addition statement and the reassembly statement distinct.
 Page 32 previews the two-label transition and recurrence of E03 without
 teaching its result or unlocking Level Three.
 
+## What the narrator explains after each game
+
+After every mini-game, the narrator addresses the child directly. The short
+explanation says what the child did, what the result showed, the plain-language
+idea it teaches, and how that result advances the Moon Lantern mission. It
+follows an attempt and never supplies the solution in advance.
+
+1. **Find the whole lantern:** all of the registered lantern is present, with
+   no piece missing and no unrelated extra attached. That complete object is
+   the whole the team must rebuild later.
+2. **Count the carrying spots:** touching each of the four spots once gives the
+   exact count. Skipping one or visiting one twice changes the record, so the
+   child keeps the failed route visible and tries a new route.
+3. **Choose the four-part plan:** the useful plan fills the round lantern frame
+   with four separate, same-size pieces and no gap or overlap. The balanced
+   left-right and top-bottom picture is a way to check the fit after looking.
+4. **Carry every lantern part:** each of the same four visible lantern parts
+   crosses the small doorway once. None is left behind and none is counted as
+   a new extra part on the other side.
+5. **Compare the part sizes:** Pair A stays level because its two parts are the
+   same visible size. Pair B does not. Having the same number of pieces does
+   not by itself show that the pieces are equal in size.
+6. **Check the gap and extra:** a frame with a missing registered piece is not
+   the complete lantern, and an unrelated extra does not become a lantern part
+   merely because it is nearby. A complete rebuild needs every agreed part and
+   nothing extra.
+7. **Name the held and whole counts:** two selected pieces are held while four
+   registered pieces make this whole plan. The labels matter because they tell
+   the child what each count is counting.
+8. **Join the counts:** each visible one-part group is used exactly once, so
+   `1 + 1 + 1 + 1 = 4 parts`. *Plus* joins the counted groups, and *equals*
+   says that both sides count the same four visible parts.
+9. **Build the Moon Lantern again:** the four separate parts fit back into the
+   one complete lantern the team saw at the start. `4 parts → 1 whole lantern`
+   describes a rebuilding action; it does not say that the words *four parts*
+   and *one whole lantern* are the same unit.
+
+The final fourth-wall explanation should tell the child: one whole can be
+taken into agreed parts and rebuilt when every part is kept and counted once.
+The team checked for a missing part, a repeated part, a gap, an overlap and an
+extra before saying the lantern was complete. Addition helped join the four
+one-part counts into the same exact total. This matters when we build, pack,
+repair or check anything made from parts. The spoken version and caption must
+match exactly.
+
 ## Safe optional materials
 
 The book is complete without materials. Optional use may include large card
@@ -292,10 +363,43 @@ the whole; a passive picture-memory sequence is not an acceptable substitute.
 The book-page bridge remains available after a correct answer. Optional codes
 unlock only character moments, alternate replay arrangements or an E03 preview.
 
-Narration must be caption-matched and pre-rendered from Maria Smith's local
-Kokoro weights. Audio and sound effects are delivery tools only. The installed
-game must run offline, collect no personal or behavioural data and keep optional
-progress locally on the device.
+Narration, including the recap and every post-game explanation, must be
+caption-matched and pre-rendered from Maria Smith's local Kokoro weights. Audio
+and sound effects are delivery tools only. The installed game must run offline,
+collect no personal or behavioural data and keep optional progress locally on
+the device.
+
+Level Two has its own playful workshop theme, distinct from Level One's magical
+mystery music and Level Three's travelling rhythm. Gentle wooden taps, soft
+chimes or other building sounds may respond to play, but the background track
+must stay below speech and soften during narration. Provide a plainly labelled
+music control separate from narration and action sounds, and remember its
+setting on the device. Captions and visual changes must carry every necessary
+meaning when music is off. When the app loses focus, pause all sound; when it
+returns, do not restart a completed explanation or allow two clips or themes to
+overlap.
+
+## Connecting the book and Level Two
+
+The book and game each give a complete route through the same lesson. The game
+adds physical manipulation, changing arrangements and replay; it must not alter
+the cause, count, vocabulary or final result established by the book.
+
+- Start with the mission, not the answer: “The whole lantern cannot fit through
+  the small door. How can we get the same lantern to the balcony?”
+- Let the child inspect the complete lantern before showing separate parts, so
+  they know what the parts must rebuild.
+- Pair each book challenge with its matching mini-game in either order. After
+  the child's attempt and the narrator's explanation, ask the child to point to
+  the same evidence in the other format.
+- Use process prompts such as “Have we used every part?”, “Did we visit that
+  one already?”, “Is there a gap?” or “What are we counting?” Never point out
+  the correct piece, route, total or position before an attempt.
+- Keep a wrong arrangement visible long enough to compare it with the plan.
+  Replay changes the puzzle arrangement, not the meaning of *whole*, *part*,
+  *plus* or *equals*.
+- Do not use a book code as a hint or prerequisite. It adds an optional moment,
+  not an answer.
 
 ## Reference-only curriculum navigation
 

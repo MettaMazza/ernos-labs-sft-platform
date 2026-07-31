@@ -17,7 +17,7 @@
       }
     ],
     "narration_manifest": "edu/games/companion-adventures/narration-manifest.json",
-    "narrated_lines": 36,
+    "narrated_lines": 40,
     "reading_codes": ["ROOMSTAR", "BOXCLUE", "QUIETWINGS", "BLANKEDGE", "CURTAINMAP", "TWODOORS"]
   },
   "level_2": {
@@ -33,7 +33,7 @@
       {"claim_id":"SFT-MATH-ARITH-JUNCTION-ADDITION-002","receipt_hash":"sha256:ecbb32a37fb10022315429bb39d88f49437fc856396d0b8db42fca49b2032493"}
     ],
     "narration_manifest": "edu/games/companion-adventures/narration-manifest-e02.json",
-    "narrated_lines": 28,
+    "narrated_lines": 32,
     "reading_codes": ["WHOLELIGHT", "ONCEEACH", "ONCEAROUND", "FAIRFIT", "PARTPAIR", "GAPCHECK", "HELDWHOLE"]
   },
   "level_3": {
@@ -46,7 +46,7 @@
       {"claim_id":"SFT-FOUNDATION-FOLD-DYNAMICS-001","receipt_hash":"sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675"}
     ],
     "narration_manifest": "edu/games/companion-adventures/narration-manifest-e03.json",
-    "narrated_lines": 28,
+    "narrated_lines": 32,
     "reading_codes": ["TRAILLIGHT", "TWOSIDES", "TURNBACK", "NEXTLIGHT", "KEEPTHETRY", "OVERUNDER", "RIGHTROUTE", "NEWROLES"]
   },
   "level_select": {
@@ -63,7 +63,18 @@
     "level_3": ["Moon-and-Sun Catch: move a catcher across three lanes while every attempt moves the next ordered light", "Two-Side Camera: turn one tile and record its two different faces", "Gate Crank: pull the gate handle to its marked turn or use the touch alternative", "Return Run: compare three complete paths and launch the tile through the one-turn return path, whose letter changes on replay", "Path Builder: choose between two visibly moving lights and place three lawful lights", "Rule Repair: replace the first broken move in a retained randomized row", "Bridge Hop: move Vee visibly through five alternating over-and-under arches", "Trail Mapper: inspect three readable route maps and find the route that reaches the arch while keeping the rule", "New-Role Relay: continue star-and-leaf roles from a fixed clue, then recall the first gate"]
   },
   "mini_game_policy": "Every stage in every level or book contains a short replayable learning mini-game with direct input, visible feedback and a clear learning purpose; narrative-only stages are not permitted.",
-  "sound_system": "92 caption-matched local Kokoro narration lines plus offline Web Audio movement and interaction effects",
+  "sound_system": "104 caption-matched local Kokoro narration lines, three distinct original offline background music tracks, plus offline Web Audio movement and interaction effects",
+  "background_music": {
+    "originality": "Three distinct instrumental loops were composed and synthesized locally from programmed notes and tones; no streamed or stock recordings are used.",
+    "generator": "edu/games/companion-adventures/scripts/generate_background_music.py",
+    "tracks": [
+      {"level":"level_1","path":"edu/games/companion-adventures/public/audio/music/level-one.mp3","description":"gentle 72 BPM star-room bell score"},
+      {"level":"level_2","path":"edu/games/companion-adventures/public/audio/music/level-two.mp3","description":"warm 84 BPM workshop pluck score"},
+      {"level":"level_3","path":"edu/games/companion-adventures/public/audio/music/level-three.mp3","description":"moving 96 BPM turning-trail score"}
+    ],
+    "controls": "A child can turn background music on or off from each level prelude, gameplay HUD and ending screen; the preference is stored only on the device.",
+    "lifecycle": "Music starts only after a child begins the narrated introduction, loops quietly, ducks beneath narration, pauses when the page is hidden or leaving, resumes when appropriate, and stops and resets when the child exits or changes levels."
+  },
   "codes_required_for_progress": false,
   "scientific_content_locked_behind_codes": false,
   "callback_policy": "Sol, Tavi and Mia are permanent; each level introduces at most one guest; callbacks appear only when relevant and never identify a new answer.",

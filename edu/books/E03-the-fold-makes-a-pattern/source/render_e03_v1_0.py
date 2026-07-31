@@ -130,63 +130,350 @@ def draw_role(c: canvas.Canvas, cx: float, cy: float, role: str, radius: float =
     c.restoreState()
 
 
-def draw_sequence(c: canvas.Canvas, roles: list[str], x: float, y: float, gap: float = 28 * mm, mark: int | None = None) -> None:
+def draw_sequence(
+    c: canvas.Canvas,
+    roles: list[str],
+    x: float,
+    y: float,
+    gap: float = 28 * mm,
+    mark: int | None = None,
+    radius: float = 9 * mm,
+    labels: list[str] | None = None,
+) -> None:
     for index, role in enumerate(roles):
         cx = x + index * gap
-        draw_role(c, cx, y, role, 9 * mm)
+        if role == "unknown":
+            draw_unknown(c, cx, y, radius)
+        elif role == "dark":
+            draw_dark_stone(c, cx, y, radius)
+        else:
+            draw_role(c, cx, y, role, radius)
+        if labels:
+            c.setFillColor(CREAM)
+            c.setFont(base.font("bold"), 5.6 if radius < 8 * mm else 6.2)
+            c.drawCentredString(cx, y + radius + 3 * mm, labels[index])
         if index + 1 < len(roles):
             c.setStrokeColor(WHITE); c.setLineWidth(2)
-            c.line(cx + 10 * mm, y, cx + gap - 10 * mm, y)
+            c.line(cx + radius + 1 * mm, y, cx + gap - radius - 1 * mm, y)
         if mark == index:
             c.setStrokeColor(colors.HexColor("#EF6F61")); c.setLineWidth(4)
-            c.circle(cx, y, 12 * mm, fill=0, stroke=1)
+            c.circle(cx, y, radius + 3 * mm, fill=0, stroke=1)
 
 
-def draw_unknown(c: canvas.Canvas, cx: float, cy: float) -> None:
+def draw_unknown(c: canvas.Canvas, cx: float, cy: float, radius: float = 9 * mm) -> None:
     c.setFillColor(CREAM); c.setStrokeColor(WHITE); c.setLineWidth(2)
-    c.circle(cx, cy, 9 * mm, fill=1, stroke=1)
+    c.circle(cx, cy, radius, fill=1, stroke=1)
     c.setFillColor(NAVY); c.setFont(base.font("bold"), 20)
     c.drawCentredString(cx, cy - 2.5 * mm, "?")
 
 
+def draw_dark_stone(c: canvas.Canvas, cx: float, cy: float, radius: float = 9 * mm) -> None:
+    """Draw an unmistakably unlit trail stone rather than an abstract blank."""
+    c.saveState()
+    c.setFillColor(colors.HexColor("#202A3E"))
+    c.setStrokeColor(CREAM)
+    c.setLineWidth(2)
+    c.circle(cx, cy, radius, fill=1, stroke=1)
+    c.setStrokeColor(colors.HexColor("#7F8AA0"))
+    c.setLineWidth(1.2)
+    c.line(cx - radius * .42, cy - radius * .42, cx + radius * .42, cy + radius * .42)
+    c.line(cx - radius * .42, cy + radius * .42, cx + radius * .42, cy - radius * .42)
+    c.restoreState()
+
+
+def draw_arrow(c: canvas.Canvas, x1: float, x2: float, cy: float, fill: colors.Color = WHITE) -> None:
+    c.saveState()
+    c.setStrokeColor(fill)
+    c.setFillColor(fill)
+    c.setLineWidth(2.2)
+    c.line(x1, cy, x2 - 3 * mm, cy)
+    arrow = c.beginPath()
+    arrow.moveTo(x2, cy)
+    arrow.lineTo(x2 - 4 * mm, cy + 3 * mm)
+    arrow.lineTo(x2 - 4 * mm, cy - 3 * mm)
+    arrow.close()
+    c.drawPath(arrow, fill=1, stroke=0)
+    c.restoreState()
+
+
+LANTERN_PART_COLORS = (BLUE, GOLD, PURPLE, colors.HexColor("#EF816D"))
+
+
+def draw_whole_lantern(c: canvas.Canvas, cx: float, cy: float, radius: float = 14 * mm) -> None:
+    """Reuse E02's recognisable four-part round Moon Lantern design."""
+    c.saveState()
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(1.5)
+    for fill, angle in zip(LANTERN_PART_COLORS, (0, 90, 180, 270)):
+        c.setFillColor(fill)
+        c.wedge(cx - radius, cy - radius, cx + radius, cy + radius, angle, 90, fill=1, stroke=1)
+    c.setFillColor(colors.Color(1, 1, 1, alpha=.14))
+    c.circle(cx, cy, radius * .58, fill=1, stroke=0)
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2.4)
+    c.circle(cx, cy, radius, fill=0, stroke=1)
+    c.setFillColor(GOLD)
+    c.rect(cx - radius * .45, cy + radius + 1 * mm, radius * .9, 3 * mm, fill=1, stroke=0)
+    c.restoreState()
+
+
+def draw_role_card(
+    c: canvas.Canvas,
+    cx: float,
+    cy: float,
+    role: str,
+    label: str,
+    width: float = 36 * mm,
+    height: float = 34 * mm,
+    dim: bool = False,
+) -> None:
+    """Keep each word attached above its recognisable moon or sun picture."""
+    c.saveState()
+    c.setFillColor(colors.Color(.04, .09, .18, alpha=.90))
+    c.setStrokeColor(GOLD if not dim else colors.HexColor("#A7AFC0"))
+    c.setLineWidth(2)
+    c.roundRect(cx - width / 2, cy - height / 2, width, height, 4 * mm, fill=1, stroke=1)
+    c.setFillColor(CREAM)
+    c.setFont(base.font("bold"), 5.8)
+    c.drawCentredString(cx, cy + height / 2 - 6 * mm, label)
+    draw_role(c, cx, cy - 3 * mm, role, min(width, height) * .24, dim=dim)
+    c.restoreState()
+
+
+def draw_turn_transition(
+    c: canvas.Canvas,
+    x: float,
+    y: float,
+    before: str,
+    after: str | None,
+    gate_label: str,
+) -> None:
+    """Show one physical before/turn/after action inside the round gate scene."""
+    cy = y + 58 * mm
+    left = x + 64 * mm
+    right = x + 124 * mm
+    rounded_label(c, gate_label, x + 65 * mm, y + 84 * mm, 52 * mm, NAVY)
+    draw_role_card(c, left, cy, before, f"BEFORE · {role_name(before)}")
+    draw_arrow(c, left + 20 * mm, right - 20 * mm, cy)
+    c.setFillColor(CREAM)
+    c.setFont(base.font("bold"), 6)
+    c.drawCentredString((left + right) / 2, cy + 6 * mm, "ONE TURN")
+    if after is None:
+        c.saveState()
+        c.setFillColor(colors.Color(.04, .09, .18, alpha=.90))
+        c.setStrokeColor(WHITE)
+        c.setLineWidth(2)
+        c.roundRect(right - 18 * mm, cy - 17 * mm, 36 * mm, 34 * mm, 4 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 5.8)
+        c.drawCentredString(right, cy + 11 * mm, "AFTER · WHICH SIDE?")
+        draw_unknown(c, right, cy - 3 * mm, 8 * mm)
+        c.restoreState()
+    else:
+        draw_role_card(c, right, cy, after, f"AFTER · {role_name(after)}")
+
+
+def role_name(role: str) -> str:
+    return {"moon": "BLUE MOON", "sun": "GOLD SUN", "star": "STAR", "leaf": "LEAF"}[role]
+
+
+def draw_small_arch(c: canvas.Canvas, cx: float, cy: float, label: str) -> None:
+    c.saveState()
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2)
+    c.line(cx - 5 * mm, cy - 6 * mm, cx - 5 * mm, cy)
+    c.line(cx + 5 * mm, cy - 6 * mm, cx + 5 * mm, cy)
+    c.arc(cx - 5 * mm, cy - 5 * mm, cx + 5 * mm, cy + 5 * mm, 0, 180)
+    c.setFillColor(CREAM)
+    c.setFont(base.font("bold"), 4.8)
+    c.drawCentredString(cx, cy + 7 * mm, label)
+    c.restoreState()
+
+
+def draw_garden_gate(c: canvas.Canvas, cx: float, cy: float) -> None:
+    """Place the next destination visibly beyond the lit Sunrise Arch."""
+    width, height = 54 * mm, 38 * mm
+    c.saveState()
+    c.setFillColor(colors.Color(.05, .11, .20, alpha=.84))
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(2.4)
+    c.roundRect(cx - width / 2, cy - height / 2, width, height, 5 * mm, fill=1, stroke=1)
+    for post in range(7):
+        px = cx - 21 * mm + post * 7 * mm
+        c.line(px, cy - 12 * mm, px, cy + 10 * mm)
+        picket = c.beginPath()
+        picket.moveTo(px - 2.3 * mm, cy + 10 * mm)
+        picket.lineTo(px, cy + 15 * mm)
+        picket.lineTo(px + 2.3 * mm, cy + 10 * mm)
+        picket.close()
+        c.drawPath(picket, fill=0, stroke=1)
+    c.line(cx - 23 * mm, cy - 5 * mm, cx + 23 * mm, cy - 5 * mm)
+    c.setFillColor(GOLD)
+    c.roundRect(cx - 20 * mm, cy + 18 * mm, 40 * mm, 9 * mm, 4 * mm, fill=1, stroke=0)
+    c.setFillColor(NAVY)
+    c.setFont(base.font("bold"), 7)
+    c.drawCentredString(cx, cy + 21 * mm, "GARDEN GATE")
+    c.restoreState()
+
+
 def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float, h: float) -> None:
     number = page["page"]
-    cy = y + 62 * mm
-    if number in (3, 4, 15, 16, 17):
-        roles = ["moon", "sun", "moon", "sun"]
-        draw_sequence(c, roles, x + 40 * mm, cy)
-        if number == 16:
-            draw_unknown(c, x + 152 * mm, cy)
-        elif number == 17:
-            draw_role(c, x + 152 * mm, cy, "moon", 9 * mm)
-    elif number in (6, 7, 8):
-        draw_role(c, x + 70 * mm, cy, "moon", 16 * mm)
-        draw_role(c, x + 114 * mm, cy, "sun", 16 * mm, dim=number in (6, 7))
+    cy = y + 61 * mm
+    if number == 3:
+        c.setFillColor(colors.Color(.04, .09, .18, alpha=.88))
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(2)
+        c.roundRect(x + 20 * mm, y + 39 * mm, 142 * mm, 54 * mm, 6 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 6.2)
+        c.drawCentredString(x + 48 * mm, y + 82 * mm, "SAME WHOLE LANTERN")
+        draw_whole_lantern(c, x + 48 * mm, y + 60 * mm, 14 * mm)
+        draw_arrow(c, x + 65 * mm, x + 79 * mm, y + 60 * mm)
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon"],
+            x + 91 * mm,
+            y + 60 * mm,
+            gap=27 * mm,
+            radius=7 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON"],
+        )
+    elif number in (4, 5):
+        c.setFillColor(colors.Color(.04, .09, .18, alpha=.88))
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(2)
+        c.roundRect(x + 24 * mm, y + 40 * mm, 137 * mm, 50 * mm, 6 * mm, fill=1, stroke=1)
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "dark"],
+            x + 45 * mm,
+            y + 60 * mm,
+            gap=35 * mm,
+            radius=8 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON", "NO LIGHT"],
+        )
+        c.setFillColor(GOLD)
+        c.setFont(base.font("bold"), 6.5)
+        c.drawCentredString(x + 150 * mm, y + 82 * mm, "TRAIL STOPS")
+    elif number == 6:
+        c.setFillColor(colors.Color(.04, .09, .18, alpha=.88))
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(2)
+        c.roundRect(x + 35 * mm, y + 39 * mm, 114 * mm, 54 * mm, 6 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 7)
+        c.drawCentredString(x + 92 * mm, y + 84 * mm, "ONE TILE · TWO SIDES")
+        draw_role_card(c, x + 67 * mm, y + 59 * mm, "moon", "BLUE MOON SIDE", 42 * mm, 34 * mm)
+        draw_role_card(c, x + 117 * mm, y + 59 * mm, "sun", "GOLD SUN SIDE", 42 * mm, 34 * mm)
+    elif number == 7:
+        draw_role_card(c, x + 58 * mm, y + 59 * mm, "moon", "TILE SHOWING NOW", 42 * mm, 38 * mm)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 6.2)
+        c.drawCentredString(x + 129 * mm, y + 83 * mm, "POINT TO ONE PICTURE")
+        draw_role_card(c, x + 112 * mm, y + 58 * mm, "moon", "BLUE MOON", 31 * mm, 31 * mm)
+        draw_role_card(c, x + 148 * mm, y + 58 * mm, "sun", "GOLD SUN", 31 * mm, 31 * mm)
+    elif number == 8:
+        c.setFillColor(colors.Color(.04, .09, .18, alpha=.88))
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(2)
+        c.roundRect(x + 35 * mm, y + 39 * mm, 114 * mm, 54 * mm, 6 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 7)
+        c.drawCentredString(x + 92 * mm, y + 84 * mm, "THE SAME TILE")
+        draw_role_card(c, x + 67 * mm, y + 59 * mm, "moon", "SHOWING · BLUE MOON", 44 * mm, 34 * mm)
+        draw_role_card(c, x + 119 * mm, y + 59 * mm, "sun", "UNDER · GOLD SUN", 44 * mm, 34 * mm, dim=True)
     elif number in (9, 10):
-        draw_role(c, x + 92 * mm, cy, "moon", 18 * mm)
+        draw_turn_transition(c, x, y, "moon", None, "FIRST GATE")
     elif number == 11:
-        draw_role(c, x + 92 * mm, cy, "sun", 18 * mm)
+        draw_turn_transition(c, x, y, "moon", "sun", "FIRST GATE")
     elif number == 12:
-        draw_role(c, x + 92 * mm, cy, "sun", 18 * mm)
-        draw_unknown(c, x + 132 * mm, cy)
-    elif number in (13, 14):
-        draw_sequence(c, ["moon", "sun", "moon"], x + 64 * mm, cy)
+        draw_turn_transition(c, x, y, "sun", None, "SECOND GATE")
+    elif number == 13:
+        draw_turn_transition(c, x, y, "sun", "moon", "SECOND GATE")
+    elif number == 14:
+        rounded_label(c, "THE FOLD RULE", x + 66 * mm, y + 86 * mm, 52 * mm, NAVY)
+        states = ((x + 48 * mm, "moon", "START · BLUE MOON"),
+                  (x + 94 * mm, "sun", "1 TURN · GOLD SUN"),
+                  (x + 140 * mm, "moon", "RETURN · BLUE MOON"))
+        for sx, role, label in states:
+            draw_role_card(c, sx, y + 59 * mm, role, label, 34 * mm, 34 * mm)
+        draw_arrow(c, x + 66 * mm, x + 76 * mm, y + 59 * mm)
+        draw_arrow(c, x + 112 * mm, x + 122 * mm, y + 59 * mm)
+    elif number == 15:
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "sun"],
+            x + 40 * mm,
+            cy,
+            gap=34 * mm,
+            radius=8 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON", "GOLD SUN"],
+        )
+    elif number == 16:
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "sun", "unknown"],
+            x + 33 * mm,
+            cy,
+            gap=30 * mm,
+            radius=8 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON", "GOLD SUN", "WHAT NEXT?"],
+        )
+    elif number == 17:
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "sun", "moon"],
+            x + 33 * mm,
+            cy,
+            gap=30 * mm,
+            radius=8 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON", "GOLD SUN", "NEXT · BLUE"],
+        )
     elif number in (18, 19, 20):
-        draw_sequence(c, ["moon", "sun", "moon", "moon"], x + 40 * mm, cy, mark=3 if number == 20 else None)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 7)
+        c.drawCentredString(x + 92 * mm, y + 84 * mm, "SOL'S FIRST TRY")
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "moon"],
+            x + 40 * mm,
+            cy,
+            gap=34 * mm,
+            mark=3 if number == 20 else None,
+            radius=8 * mm,
+            labels=["BLUE MOON", "GOLD SUN", "BLUE MOON", "BLUE MOON"],
+        )
     elif number == 21:
-        draw_sequence(c, ["moon", "sun", "moon", "sun"], x + 40 * mm, cy)
-    elif number in (22, 23, 24):
-        c.setFillColor(CREAM); c.setStrokeColor(WHITE); c.setLineWidth(2)
-        c.roundRect(x + 44 * mm, cy - 8 * mm, 28 * mm, 16 * mm, 5 * mm, fill=1, stroke=1)
-        c.roundRect(x + 80 * mm, cy - 8 * mm, 28 * mm, 16 * mm, 5 * mm, fill=1, stroke=1)
-        c.roundRect(x + 116 * mm, cy - 8 * mm, 28 * mm, 16 * mm, 5 * mm, fill=1, stroke=1)
-        c.setFillColor(NAVY); c.setFont(base.font("bold"), 10)
-        for label, cx in (("OVER", 58), ("UNDER", 94), ("OVER", 130)):
-            c.drawCentredString(x + cx * mm, cy - 1.8 * mm, label)
-        if number == 24:
-            rounded_label(c, "UNDER", x + 148 * mm, cy - 5 * mm, 28 * mm, GOLD)
-        elif number == 23:
-            draw_unknown(c, x + 162 * mm, cy)
+        c.setFillColor(CREAM)
+        c.setFont(base.font("bold"), 5.8)
+        c.drawCentredString(x + 92 * mm, y + 91 * mm, "FIRST TRY KEPT")
+        draw_sequence(c, ["moon", "sun", "moon", "moon"], x + 65 * mm, y + 78 * mm, gap=18 * mm, radius=5 * mm)
+        c.setFont(base.font("bold"), 6.5)
+        c.drawCentredString(x + 92 * mm, y + 67 * mm, "REPAIRED TRAIL")
+        draw_sequence(
+            c,
+            ["moon", "sun", "moon", "sun"],
+            x + 42 * mm,
+            y + 51 * mm,
+            gap=33 * mm,
+            radius=7.5 * mm,
+        )
+    elif number == 22:
+        rounded_label(c, "FIRST · OVER", x + 66 * mm, y + 82 * mm, 52 * mm, GOLD)
+        draw_arrow(c, x + 62 * mm, x + 123 * mm, y + 75 * mm, GOLD)
+        rounded_label(c, "NEXT · UNDER", x + 66 * mm, y + 57 * mm, 52 * mm, BLUE)
+        draw_arrow(c, x + 62 * mm, x + 123 * mm, y + 50 * mm, BLUE)
+    elif number in (23, 24):
+        roles = ["OVER", "UNDER", "OVER", "UNDER" if number == 24 else "?"]
+        for index, label in enumerate(roles):
+            cx = x + (42 + index * 34) * mm
+            c.setFillColor(GOLD if number == 24 and index == 3 else CREAM)
+            c.setStrokeColor(WHITE)
+            c.setLineWidth(2)
+            c.roundRect(cx - 14 * mm, cy - 9 * mm, 28 * mm, 18 * mm, 5 * mm, fill=1, stroke=1)
+            c.setFillColor(NAVY)
+            c.setFont(base.font("bold"), 9 if label != "?" else 14)
+            c.drawCentredString(cx, cy - (2 if label != "?" else 2.8) * mm, label)
     elif number in (25, 26, 27):
         route_roles = (("A", ["moon", "sun", "moon"]),
                        ("B", ["moon", "sun", "sun", "moon"]),
@@ -197,16 +484,44 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
             rounded_label(c, f"ROUTE {label}", x + 48 * mm, ry - 5 * mm, 30 * mm, GOLD if chosen else CREAM)
             for role_index, role in enumerate(roles):
                 draw_role(c, x + (88 + role_index * 18) * mm, ry, role, 5.4 * mm)
+            if label == "A":
+                c.setStrokeColor(CREAM)
+                c.setLineWidth(2.2)
+                c.line(x + 148 * mm, ry - 7 * mm, x + 148 * mm, ry + 7 * mm)
+                c.setFillColor(CREAM)
+                c.setFont(base.font("bold"), 4.8)
+                c.drawCentredString(x + 148 * mm, ry + 9 * mm, "STOPS")
+            else:
+                draw_small_arch(c, x + 164 * mm, ry, "ARCH")
             if chosen:
                 c.setStrokeColor(GOLD); c.setLineWidth(3)
                 c.roundRect(x + 84 * mm, ry - 8 * mm, 80 * mm, 16 * mm, 8 * mm, fill=0, stroke=1)
-    elif number in (28, 29):
-        draw_role(c, x + 70 * mm, cy, "moon", 14 * mm)
-        c.setStrokeColor(WHITE); c.setLineWidth(3); c.line(x + 88 * mm, cy, x + 112 * mm, cy)
-        draw_unknown(c, x + 132 * mm, cy) if number == 28 else draw_role(c, x + 132 * mm, cy, "sun", 14 * mm)
-    elif number in (30, 31):
-        draw_sequence(c, ["star", "leaf", "star"], x + 58 * mm, cy)
-        draw_unknown(c, x + 142 * mm, cy) if number == 30 else draw_role(c, x + 142 * mm, cy, "leaf", 9 * mm)
+    elif number == 28:
+        draw_turn_transition(c, x, y, "moon", None, "THE ARCH REMEMBERS")
+    elif number == 29:
+        draw_turn_transition(c, x, y, "moon", "sun", "REMEMBERED")
+    elif number == 30:
+        draw_sequence(
+            c,
+            ["star", "leaf", "star", "unknown"],
+            x + 44 * mm,
+            cy,
+            gap=34 * mm,
+            radius=8 * mm,
+            labels=["STAR", "LEAF", "STAR", "WHAT NEXT?"],
+        )
+    elif number == 31:
+        draw_sequence(
+            c,
+            ["star", "leaf", "star", "leaf"],
+            x + 44 * mm,
+            cy,
+            gap=34 * mm,
+            radius=8 * mm,
+            labels=["STAR", "LEAF", "STAR", "NEXT · LEAF"],
+        )
+    elif number == 32:
+        draw_garden_gate(c, x + 92 * mm, y + 63 * mm)
 
 
 def draw_stage(c: canvas.Canvas, page: dict) -> None:

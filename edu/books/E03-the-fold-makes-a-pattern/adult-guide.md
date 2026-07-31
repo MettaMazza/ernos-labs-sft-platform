@@ -24,6 +24,32 @@ The child should increasingly be able to:
 This is not a conventional pattern book with Fold vocabulary added. The topic
 and sequence come from the admitted Foundation dependency spine.
 
+## Opening recap and invitation
+
+Book Three and Level Three start by joining the story back together before the
+new problem appears. The opening must be understandable whether the child has
+played the earlier levels recently, read only the books, or chosen Level Three
+first from the level screen.
+
+The book opening and the game's short prelude should:
+
+1. welcome the child to Mia, Sol and Tavi in the Star Door world;
+2. recall that the team took the Moon Lantern apart, carried all four parts
+   through the small door, counted each part once and rebuilt the same whole;
+3. show the complete lantern safely on the balcony before it begins changing;
+4. let the child see its light turn from blue moon to gold sun and back, without
+   naming the rule too early;
+5. show that the changing light wakes a trail towards the Sunrise Arch, but the
+   trail stops before the team can reach it;
+6. introduce Vee as the one new friend and state the mission in simple words:
+   “Help Vee restore the turning-light trail before sunrise”; and
+7. tease that the child will turn, compare, continue and repair the trail,
+   without showing the correct next role or route.
+
+This prelude is a visual story scene rather than an instruction list. A
+returning child may replay or skip it, but skipping must not complete the first
+activity or reveal any answer.
+
 ## Scientific authority and exact boundary
 
 ### `SFT-FOUNDATION-FOLD-001`
@@ -97,6 +123,48 @@ Wrong answers are useful records. Ask “What is showing now?” and “What doe
 move do?” Preserve the chosen picture until the child has compared it. Do not
 say “No, that is wrong” or praise a child as clever for the answer.
 
+## What the narrator explains after each game
+
+After every mini-game, the narrator speaks to the child directly. Each short
+explanation names the action just completed, the visible result, the idea the
+child has discovered, and why that idea helps repair the trail. It comes after
+an attempt and does not turn the next activity into a told answer.
+
+1. **Catch the lantern lights:** the child caught the moving moon and sun lights
+   and found where the trail stopped. Looking at which lights are lit and which
+   are dark gives the team a clear starting record.
+2. **Inspect both sides:** one tile has a blue moon side and a gold sun side.
+   The sides are different roles of the same tile; neither side has disappeared
+   while the other is showing.
+3. **Turn at the first gate:** one declared turn changes the visible role from
+   blue moon to gold sun. A *turn* means this one agreed move, so the team can
+   check its result.
+4. **Find the returning path:** one more lawful turn brings the blue moon back.
+   *Return* means the earlier role shows again after the next agreed move.
+5. **Continue the light trail:** repeating the same turn gives moon, sun, moon,
+   sun. A *pattern* is the stated rule that tells the team which lawful move
+   comes next, not merely a row that looks familiar.
+6. **Keep and repair Sol's try:** checking from the first move finds the earliest
+   place the turn rule breaks. Keeping Sol's first route lets the child compare
+   the change and repair only the broken move.
+7. **Guide Vee over and under:** five arches alternated over, under, over, under,
+   over, or the reverse from an UNDER start. The same two-role rule worked with
+   new names.
+8. **Choose the complete route:** the accepted route follows the rule at every
+   move and reaches the Sunrise Arch. Checking the whole route matters because
+   a good first step alone does not complete the journey.
+9. **Continue new roles and remember the first gate:** star and leaf can follow
+   the same two-role rule, and recalling the first gate checks whether the child
+   understood the move rather than copied the last picture.
+
+The final fourth-wall explanation should tell the child: the team discovered
+two different roles and one clear move that changes which role shows. Repeating
+the move brought the first role back and made a rule the child could continue,
+check and repair. The same rule still worked when moon and sun became over and
+under, then star and leaf. This matters because a clear rule helps us predict
+what comes next, find the first change that does not fit, and try a careful
+repair. The spoken line and its visible caption must match exactly.
+
 ## Plain-language meanings
 
 - **Side:** one named face of the same tile.
@@ -134,8 +202,8 @@ Every activity has a pointing or spoken alternative. Movement is optional.
 ## Companion Level Three contract
 
 Level Three must retain Mia, Sol and Tavi as the permanent team and introduce
-only Vee. It must include eight or more story stages, each with a distinct,
-replayable mini-game:
+only Vee. It opens with the recap and story invitation above, then includes
+eight or more story stages, each with a distinct, replayable mini-game:
 
 1. catch moving lantern lights and reveal the stopped trail;
 2. inspect both sides of one tile and record both pictures;
@@ -150,6 +218,40 @@ replayable mini-game:
 The game is not a menu of questions. Characters move in the scene, each action
 changes the visible trail, progress restores exactly after tab or page changes,
 and every completed mini-game offers replay.
+
+Narration includes the opening recap and every post-game explanation. It is
+pre-rendered with Maria Smith's local Kokoro voices, works offline, and matches
+the visible caption exactly. A finished line must not replay merely because the
+child changes tabs or returns to the app.
+
+Level Three has its own gentle travelling rhythm, shaped by alternating musical
+pulses that support the turning-light journey without giving an answer. It is
+distinct from Level One's magical mystery theme and Level Two's workshop theme.
+The music stays below voices and softens during narration. A plainly labelled
+music control turns background music on or off separately from narration and
+action sounds and remembers the setting on the device. No musical cue may be
+required to solve a game. Leaving the app pauses all audio; returning restores
+only the current scene without overlapping or restarting completed speech.
+
+## Connecting the book and Level Three
+
+The book and game tell the same causal story and teach the same rule. The book
+slows the child down to compare challenge and reveal; the game lets the child
+perform, repair and replay the moves. Neither format is homework for the other.
+
+- Begin with the mission: “The turning-light trail stopped. We are helping Vee
+  repair it before sunrise.”
+- Before a move, ask “What is showing now?” and “What does one turn do?” Do not
+  say which picture or route comes next.
+- Use a book challenge before or after its matching mini-game. Once the child
+  has tried and heard the narrator's explanation, invite them to show the same
+  rule in the other format.
+- If the child is stuck, trace the completed moves from the beginning or let
+  them operate one move again. Do not point to the next answer.
+- Keep the first broken route visible and compare it with the repair. The aim is
+  to understand the rule, not to hide evidence of a useful attempt.
+- Optional codes add animation, character moments or replay variety only. They
+  do not reveal the next role, route or remembered answer.
 
 ## Optional book codes
 

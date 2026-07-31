@@ -662,6 +662,11 @@ def parse_markdown_to_story(markdown_text: str) -> list:
                 flush_list()
             list_kind = "number"
             list_items.append(re.sub(r"^\d+\. ", "", line))
+        elif list_items and raw[:1].isspace():
+            # Markdown wraps long list items onto indented continuation lines.
+            # Keep those lines inside the current item so ordered lists retain
+            # their sequence instead of restarting at 1 after every wrap.
+            list_items[-1] = f"{list_items[-1]} {line.strip()}"
         else:
             flush_list()
             paragraph_lines.append(line)

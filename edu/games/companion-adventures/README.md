@@ -57,13 +57,26 @@ page reload. The app root and every moving stage are locked to the visible
 viewport, with page overflow and pull-to-refresh overscroll contained for phone
 and tablet play.
 
-## Offline narration and privacy
+## Offline narration, music and privacy
 
-Ninety-two lines were pre-rendered from Maria Smith's local Kokoro ONNX model
-and voice weights. Audio is bundled under `public/audio/e01-v1.6.0/` and
+One hundred and four lines were pre-rendered from Maria Smith's local Kokoro
+ONNX model and voice weights: 40 for Level One, 32 for Level Two and 32 for
+Level Three. Audio is bundled under `public/audio/e01-v1.6.0/`,
 `public/audio/e02-v1.0.0/` and `public/audio/e03-v1.0.0/`; after installation
-the game does not need the model or an internet connection. Sound effects are
-made locally in the browser. Captions are always available.
+the game does not need the model or an internet connection. Captions are always
+available.
+
+Each level also has its own original instrumental background score:
+`public/audio/music/level-one.mp3`, `level-two.mp3` and `level-three.mp3`.
+These three distinct loops were composed and synthesized locally by
+`scripts/generate_background_music.py` from programmed notes and tones; no
+streamed or stock recording is used. Music begins only after the child starts
+the narrated introduction, loops quietly and ducks while someone speaks. It
+can be turned on or off from the introduction, gameplay controls and ending
+screen, with that preference kept only on the device. Music pauses when the
+page is hidden or left, resumes when appropriate, and stops and resets when a
+level is exited or changed. Movement and interaction effects are made locally
+in the browser with Web Audio.
 
 The game collects no name, age, email, location, voice, image or analytics. It
 saves only progress on the device. Start Over removes that record.

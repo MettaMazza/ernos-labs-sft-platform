@@ -22,6 +22,28 @@ the following reveal names what happened. The printed words always sit above
 the illustration. The same story, rooms, characters and causal order drive the
 companion game.
 
+## A welcoming beginning
+
+Book One and Level One must begin by welcoming the child into the same magical
+world before the mystery starts. The opening should not assume that the child
+already knows the characters, the Star Door or how to play.
+
+The book's first pages and the game's short opening cutscene should:
+
+1. invite the child through the magical entrance into the Star Door rooms;
+2. introduce Mia, Sol and Tavi by name, voice and one simple action each;
+3. tell the child that they are part of the team and may look, listen, point,
+   move things and try again;
+4. show the shut Star Door before the note arrives;
+5. tease that a mystery and five clues are waiting without giving away what any
+   clue means; and
+6. show the note coming through the letter box, landing beside Mia, and being
+   picked up before its words are read.
+
+Keep this introduction warm, visual and brief. It is a story invitation, not a
+lesson summary or a menu. On replay it may be watched again or skipped by an
+adult or returning child. Skipping it must never skip the first activity.
+
 ## Narrative rule
 
 Every new object, reward and room must have a visible cause:
@@ -169,6 +191,45 @@ changed, and check that the answer matches what the child found.
 The map is already filed before the new parcel arrives, so E01 has a complete
 ending. The new question previews E02 without teaching or unlocking its answer.
 
+## What the narrator explains after each game
+
+After every mini-game, the narrator speaks directly to the child. The narrator
+first says what the child did, then what the visible result showed, gives the
+useful word in plain language, and says why that discovery helps the team. This
+explanation comes after a genuine attempt, never before the child has had a
+chance to notice or decide.
+
+1. **The note and five stars:** “You found the note beside Mia. The five star
+   outlines are waiting to be filled. Each clue we check will light one star
+   and help us open the Star Door.”
+2. **Sol's toy box:** the child moved the teddy outside, so the box is empty of
+   the teddy while the box and teddy are still present. *Empty* tells us what
+   is not inside a named container; it does not mean the container is nothing.
+3. **Nori's bell:** during this short check the bell did not ring, but the bell,
+   the room and the listening team remained. Reporting “no ring” is a clear
+   observation about what was checked.
+4. **Mia's card:** a blank card has no mark on it. The card is still present,
+   and a drawn mark is present if the child chooses to make one.
+5. **The letter tiles:** the letters make the readable word *NOTHING*. A word
+   that can be seen, touched or spoken is something the team can inspect.
+6. **The curtain:** the curtain blocked one view of the toy. *Hidden* means the
+   toy could not be seen from there; opening the curtain showed that it had not
+   vanished.
+7. **The two little doors:** one door presented a card and the other presented
+   no object. The team reports exactly what each door showed and does not invent
+   a secret object behind the second result.
+8. **Tavi's memory check:** remembering the box and checking the earlier scene
+   helped the child say exactly what changed. Looking back is a useful way to
+   test a first answer.
+
+At the end of the level, the narrator joins these discoveries in one simple
+fourth-wall explanation: the team never found a thing called “nothing”. They
+found an empty box, no ring during one listen, a blank card, a written word, a
+hidden toy and one door that supplied no object. Each result could still be
+noticed, described or checked. That matters because clear words help us say
+what really happened instead of guessing. This closing explanation must match
+its visible caption exactly.
+
 ## Returning-character guardrail
 
 Every future level introduces one memorable lesson character. An earlier
@@ -220,15 +281,46 @@ Mia's card, taps the letters, opens the curtain, inspects both doors and
 remembers an earlier clue with Tavi. Local sound effects respond to those
 actions.
 
-Thirty-five caption-matched spoken lines were pre-rendered from Maria Smith's
-local Kokoro ONNX weights. Narration remains offline after installation, and
-the written caption is always visible. Kokoro supplies voices only and has no
-authority over the lesson or SFT claim. The game collects no name, age, email,
-location, voice, image or analytics; progress stays on the device.
+All spoken lines, including the opening and every post-game explanation, are
+pre-rendered from Maria Smith's local Kokoro ONNX weights and must match their
+visible captions exactly. Narration remains offline after installation.
+Kokoro supplies voices only and has no authority over the lesson or SFT claim.
+The game collects no name, age, email, location, voice, image or analytics;
+progress stays on the device.
+
+Level One has its own gentle magical-mystery background theme. It may change
+instrument or intensity as the team moves through a room, but it should remain
+recognisably the Level One music and must not be reused as the main theme of
+another level. Music stays below speech and briefly softens during narration.
+A plainly labelled music control lets the child or adult turn background music
+on or off without muting narration, captions or necessary action sounds. The
+choice is remembered on this device. When the app loses focus, every sound
+pauses; on return, only the current scene's music or requested narration may
+resume. A completed line must not restart or overlap a new line.
 
 Book codes unlock optional jokes, visits or previews. They never gate a clue,
 explanation, star, route or answer. A hint callback appears only after an
 attempt and asks a process question rather than revealing the result.
+
+## Connecting the book and Level One
+
+The book and game each teach the complete lesson, so either may be used first.
+They share the same causes, meanings and results, while the game gives the
+child movement, choice, sound and replay rather than copying the page exactly.
+
+- Before a book challenge or game, remind the child only of the mission: “We
+  are following five clues to answer Mia's note.”
+- Let the child attempt the activity before using the reveal or the narrator's
+  explanation.
+- If help is needed, ask “What can you see?”, “What changed?” or “What could we
+  check?” Do not name the object, position or answer for the child.
+- After the narrator explains a discovery, find the matching book scene and
+  invite the child to show the evidence there, or reverse the order after
+  reading the book.
+- Treat a different first answer as something to compare, not a failure to
+  erase. Replay the action and let the visible result settle the question.
+- Book codes are optional surprises. Never suggest that a child must find a
+  code to understand or finish the lesson.
 
 ## Reference-only curriculum navigation
 
