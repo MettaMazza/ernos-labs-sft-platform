@@ -1,6 +1,7 @@
 "use client";
 
 import { CSSProperties, FormEvent, PointerEvent, useEffect, useLayoutEffect, useRef, useState } from "react";
+import LevelTwo from "./level-two";
 
 type Character = "mira" | "tavi" | "sol" | "nori";
 type Activity = "note" | "box" | "bell" | "card" | "word" | "curtain" | "doors" | "recall";
@@ -137,6 +138,8 @@ function StarTrail({ count, focus = false, newest = null }: { count: number; foc
 }
 
 export default function Home() {
+  const [levelTwoActive, setLevelTwoActive] = useState(false);
+  const [savedLevelTwoRooms, setSavedLevelTwoRooms] = useState(0);
   const [started, setStarted] = useState(false);
   const [sceneIndex, setSceneIndex] = useState(0);
   const [beat, setBeat] = useState(0);
@@ -225,19 +228,25 @@ export default function Home() {
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       try {
+        const activeLevel = localStorage.getItem("sft-active-level-v1");
         const saved = JSON.parse(localStorage.getItem("sft-e01-moving-stage-v1") ?? "{}");
+        const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
         if (typeof saved.sceneIndex === "number") setSceneIndex(Math.min(saved.sceneIndex, scenes.length - 1));
         if (typeof saved.beat === "number") setBeat(Math.max(0, saved.beat));
         if (typeof saved.activityStep === "number") setActivityStep(Math.max(0, saved.activityStep));
         if (typeof saved.complete === "boolean") setComplete(saved.complete);
         if (typeof saved.finished === "boolean") setFinished(saved.finished);
-        if (typeof saved.started === "boolean") setStarted(saved.started);
+        if (activeLevel === "e02") setLevelTwoActive(true);
+        else if (activeLevel === "select") setStarted(false);
+        else if (typeof saved.started === "boolean") setStarted(saved.started);
         if (typeof saved.stars === "number") setSavedStars(Math.min(saved.stars, 5));
         if (typeof saved.letters === "number") setLetters(Math.max(0, Math.min(saved.letters, 7)));
         if (typeof saved.curtain === "number") setCurtain(Math.max(0, Math.min(saved.curtain, 100)));
         if (Array.isArray(saved.doors)) setDoors(saved.doors.filter((door: unknown) => door === "A" || door === "B"));
         if (typeof saved.drawn === "boolean") setDrawn(saved.drawn);
         if (typeof saved.cardOpen === "boolean") setCardOpen(saved.cardOpen);
+        if (savedLevelTwo.finished === true) setSavedLevelTwoRooms(9);
+        else if (typeof savedLevelTwo.sceneIndex === "number") setSavedLevelTwoRooms(Math.max(0, Math.min(9, savedLevelTwo.sceneIndex + (savedLevelTwo.complete ? 1 : 0))));
       } catch { /* The story also works without local saving. */ }
       storageReadyRef.current = true;
       setStorageReady(true);
@@ -331,11 +340,23 @@ export default function Home() {
 
   function beginLevelOne() {
     setFinished(false); setStarted(true);
+    try { localStorage.setItem("sft-active-level-v1", "e01"); } catch { /* optional */ }
     window.setTimeout(() => playEffect("clunk"), 50);
   }
 
+  function beginLevelTwo() {
+    audioRef.current?.pause(); setStarted(false); setLevelTwoActive(true);
+    try { localStorage.setItem("sft-active-level-v1", "e02"); } catch { /* optional */ }
+  }
+
   function showLevelSelect() {
-    audioRef.current?.pause(); setFinished(false); setStarted(false); setJournalOpen(false);
+    audioRef.current?.pause(); setFinished(false); setStarted(false); setLevelTwoActive(false); setJournalOpen(false);
+    try {
+      localStorage.setItem("sft-active-level-v1", "select");
+      const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
+      if (savedLevelTwo.finished === true) setSavedLevelTwoRooms(9);
+      else if (typeof savedLevelTwo.sceneIndex === "number") setSavedLevelTwoRooms(Math.max(0, Math.min(9, savedLevelTwo.sceneIndex + (savedLevelTwo.complete ? 1 : 0))));
+    } catch { /* optional */ }
   }
 
   function activity() {
@@ -371,6 +392,8 @@ export default function Home() {
     </>;
   }
 
+  if (levelTwoActive) return <LevelTwo onExit={showLevelSelect} />;
+
   if (!started) return <main className="opening-screen level-select-screen">
     {!storageReady && <div className="restore-screen" aria-label="Returning to your adventure"><p>Returning to your adventure…</p></div>}
     <div className="opening-art" /><div className="opening-shade" />
@@ -379,7 +402,7 @@ export default function Home() {
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card upcoming"><span>LEVEL 2 · NEXT</span><h2>Book Two Adventure</h2><p>The next verified SFT book and its new game level are being built together.</p><button disabled>In development</button></article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 rooms complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
   </main>;
 
   if (finished) return <main className="ending-screen">

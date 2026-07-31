@@ -1,7 +1,7 @@
-# Level One manual end-to-end QA
+# Level One and Level Two manual end-to-end QA
 
-Version: 1.6.0 review
-Date: 30 July 2026
+Version: unified game 2.0.0 review
+Date: 31 July 2026
 Final-publication approval: pending Maria Smith's review
 
 ## Complete journey tested
@@ -31,9 +31,9 @@ deliberately repeat it.
 Optional code entry, local resume and Start Over were also checked. Codes did
 not change the scientific route or reveal an answer.
 
-The new level selector was checked before and after Level One play. Level One
-starts or resumes without a page reload, the in-level home control returns to
-the selector, and Level Two remains visibly unavailable while in development.
+The level selector was checked before and after Level One play. Level One starts
+or resumes without a page reload, and the in-level home control returns to the
+selector. Level Two is now available beside it with separate saved progress.
 
 Each success panel offers `Play again`; it resets only that stage's interactive
 state, preserves earned progress and returns directly to the activity prompt.
@@ -59,7 +59,7 @@ above the level title and cards at phone, tablet and desktop sizes. At the short
 phone size the measured cast-to-title gap is 70 pixels, and Mira's speech
 indicator is anchored to her visible portrait box beside her head.
 
-## Automated checks
+## Level One automated checks
 
 - nine application/content tests: pass;
 - lint: pass, with two non-blocking image-optimisation warnings;
@@ -83,5 +83,54 @@ indicator is anchored to her visible portrait box beside her head.
 - Leaving for another browser tab and returning preserved that exact line and
   the picked-up note. Reloading preserved the same state too.
 
-This QA makes review 1.6.0 ready for Maria Smith's next play test. It does not approve
+## Level Two complete journey
+
+Level Two was manually played from the first parcel to the lit Moon Lantern:
+
+1. The parcel was opened before its card became available.
+2. Pax was introduced as the only new guest, after the trio reached the narrow
+   workshop door.
+3. Whole-lantern choices showed a gap, every part and an extra part clearly.
+4. Each of four bridge tiles accepted one touch; touching one twice produced a
+   short correction without completing the game.
+5. The part choices clearly showed a gap, an overlap and four same-size parts.
+6. Four separate lantern parts moved into the circle one time each.
+7. The same-size comparison kept both pairs visible until the child chose.
+8. A recognisable lantern part filled the gap; the triangle remained outside.
+9. The held count and whole count were asked on separate turns, before answers
+   were spoken.
+10. Four separate footprint tiles supported delayed recall without a character
+    giving the answer; the child then placed the whole lantern on its stand.
+
+Every stage's wrong path, success path and `Play again` control was exercised.
+All room changes had a visible or spoken cause. Object names appeared above the
+new activity pictures. Reload during Level Two restored the exact unfinished
+activity. Leaving for another browser tab and returning preserved Mira's exact
+parcel sentence. The landing page stayed on the chosen level until the child
+used the Levels control.
+
+## Level Two visual/device checks
+
+- Desktop: 1280 × 720, all nine stages and ending inspected.
+- Phone: 390 × 844, all nine stages and ending inspected; 390 × 724 selector,
+  cast/title spacing and whole-lantern choices inspected.
+- Tablet: 1024 × 768, all nine stages, selector and ending inspected.
+- No activity was covered by the phone navigation buttons after the final
+  right-side safe-area adjustment.
+- The selector kept Mira, Tavi and Sol above and clear of the title and cards at
+  phone, tablet and desktop sizes.
+- Pax, Mira, Sol and Tavi shared a visible ground line in all Level Two rooms.
+
+## Unified automated checks
+
+- thirteen application/content tests: pass;
+- plain-language gate for E01 and E02: pass;
+- lint: no errors; four expected image-optimisation warnings for local character
+  sprites;
+- production build: pass;
+- all 62 caption-matched narration files present: pass;
+- no application fetch, analytics, sign-in or child-data collection: pass.
+
+This QA makes E01 review 1.6.0, E02 review 1.0.0 and unified game review 2.0.0
+ready for Maria Smith's next play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

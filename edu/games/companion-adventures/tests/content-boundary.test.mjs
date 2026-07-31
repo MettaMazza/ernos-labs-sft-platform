@@ -3,6 +3,7 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const source = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+const levelTwo = await readFile(new URL("../app/level-two.tsx", import.meta.url), "utf8");
 const styles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 const manifest = JSON.parse(await readFile(new URL("../game-manifest.json", import.meta.url), "utf8"));
 const narration = JSON.parse(await readFile(new URL("../narration-manifest.json", import.meta.url), "utf8"));
@@ -25,15 +26,15 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.match(styles, /@keyframes note-lands/);
   assert.match(styles, /@keyframes note-lifts/);
   assert.match(source, /Play again/);
-  assert.equal(manifest.levels.length, 8);
-  assert.equal(manifest.interaction_system.length, manifest.levels.length);
+  assert.equal(manifest.level_1.scenes.length, 8);
+  assert.equal(manifest.interaction_system.level_1.length, manifest.level_1.scenes.length);
   assert.match(manifest.mini_game_policy, /Every stage in every level or book.*mini-game/i);
 });
 
 test("the landing page selects levels without browser-edge page movement", () => {
   assert.match(source, /className="level-grid"/);
   assert.match(source, /LEVEL 1 · READY/);
-  assert.match(source, /LEVEL 2 · NEXT/);
+  assert.match(source, /LEVEL 2 · READY/);
   assert.match(source, /showLevelSelect/);
   assert.match(styles, /html,body \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
   assert.match(styles, /\.play-stage \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
@@ -79,7 +80,7 @@ test("mobile page restoration returns to the exact active turn instead of the ti
 test("Kokoro narration is caption matched, bundled and offline", async () => {
   assert.equal(narration.lines.length, 35);
   assert.equal(manifest.network_required_after_install, false);
-  assert.match(manifest.sound_system, /Kokoro narration.*offline Web Audio/i);
+  assert.match(manifest.sound_system, /Kokoro narration lines plus offline Web Audio/i);
   for (const [filename, speaker, caption] of narration.lines) {
     assert.match(source, new RegExp(`audio: \\"${filename}\\"`));
     assert.ok(source.includes(`speaker: "${speaker}", text: "${caption.replaceAll('"', '\\"')}"`));
@@ -106,9 +107,66 @@ test("every stage background and the permanent trio plus one E01 guest are decla
     await access(new URL(`../public/art/stages/${match[0]}`, import.meta.url));
   }
   assert.deepEqual(continuity.main_cast.map((character) => character.id), ["sol", "tavi", "mira"]);
-  assert.equal(continuity.guest_characters.length, 1);
+  assert.equal(continuity.guest_characters.length, 2);
   assert.equal(continuity.guest_characters[0].id, "nori");
   assert.equal(continuity.guest_characters[0].introduced_in, "E01");
   assert.match(continuity.guest_characters[0].return_rule, /cannot identify the new answer/i);
+  assert.equal(continuity.guest_characters[1].id, "pax");
+  assert.equal(continuity.guest_characters[1].introduced_in, "E02");
   assert.match(continuity.policy, /no more than one new guest character/i);
+});
+
+test("Level Two has nine connected replayable games and one new guest", async () => {
+  for (const activity of ["parcel", "whole", "bridge", "parts", "rebuild", "match", "gap", "count", "recall"]) {
+    assert.match(levelTwo, new RegExp('scene.activity === "' + activity + '"'));
+  }
+  assert.equal((levelTwo.match(/id: "/g) ?? []).length, 9);
+  assert.match(levelTwo, /New friend for Level Two/);
+  assert.match(levelTwo, /introduces: "pax"/);
+  assert.doesNotMatch(levelTwo, /introduces: "(?:mira|tavi|sol|nori)"/);
+  assert.match(levelTwo, /Play again/);
+  assert.match(levelTwo, /Go to the next room/);
+  assert.equal(manifest.level_2.scenes.length, 9);
+  assert.equal(manifest.interaction_system.level_2.length, manifest.level_2.scenes.length);
+  for (let index = 2; index <= 8; index += 1) {
+    const name = String(index).padStart(2, "0");
+    const match = levelTwo.match(new RegExp('e02-stage-' + name + '-[^"]+\\.png'));
+    assert.ok(match, "E02 stage " + name + " is referenced");
+    await access(new URL("../public/art/stages/" + match[0], import.meta.url));
+  }
+});
+
+test("Level Two language is simple, causal and does not give answers before play", () => {
+  for (const phrase of [
+    "Then a parcel rolled down the library ramp",
+    "Let’s open it and see what is inside",
+    "It was too wide for the door",
+    "The first door opens. A short bridge leads deeper into the workshop",
+    "The bridge is ready, so everyone crosses to the next door",
+    "On the other side, they must build the lantern again",
+    "The last door opens. The friends reach the balcony",
+  ]) assert.ok(levelTwo.includes(phrase));
+  assert.doesNotMatch(levelTwo, /great brass|brass rectangular|magical door|registered|partition|fitted tray|coordinate|gold seal|door woke/i);
+});
+
+test("Level Two Kokoro narration matches every visible caption and is bundled", async () => {
+  const levelTwoNarration = JSON.parse(await readFile(new URL("../narration-manifest-e02.json", import.meta.url), "utf8"));
+  assert.equal(levelTwoNarration.lines.length, 27);
+  for (const [filename, speaker, caption] of levelTwoNarration.lines) {
+    assert.match(levelTwo, new RegExp('audio: "' + filename + '"'));
+    assert.ok(levelTwo.includes('speaker: "' + speaker + '", text: "' + caption.replaceAll('"', '\\"') + '"'));
+    await access(new URL("../public/audio/e02-v1.0.0/" + filename + ".mp3", import.meta.url));
+  }
+  await access(new URL("../public/audio/e02-v1.0.0/generation-receipt.json", import.meta.url));
+  assert.doesNotMatch(levelTwo, /\bfetch\s*\(|XMLHttpRequest|WebSocket|sendBeacon/);
+});
+
+test("both levels restore locally and tab switching does not reset the story", () => {
+  assert.match(source, /sft-active-level-v1/);
+  assert.match(levelTwo, /sft-e02-moving-stage-v1/);
+  assert.match(levelTwo, /window\.addEventListener\("pagehide", save\)/);
+  assert.match(levelTwo, /document\.addEventListener\("visibilitychange", hidden\)/);
+  for (const field of ["sceneIndex", "beat", "complete", "finished", "activityStep", "chosen"]) {
+    assert.match(levelTwo, new RegExp("\\b" + field + "\\b"));
+  }
 });
