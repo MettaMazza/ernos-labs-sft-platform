@@ -4,6 +4,18 @@ Version: unified game 2.0.0 review
 Date: 31 July 2026
 Final-publication approval: pending Maria Smith's review
 
+## Level Two story-clarity replay
+
+Level Two was replayed from the parcel to the final lantern at 390 x 844. Every
+dialogue turn, prompt, correct interaction, success line and transition was
+checked. The child sees and hears the same mission before Pax teaches the plan;
+the carrying and recall controls consistently say `spot`, not `tile`; the ending
+answers the opening question; and no console errors occurred.
+
+The persistent mission banner and layout bounds were also checked at 1024 x 768
+and 1280 x 720. Returning to the page restored the exact Level Two scene after
+the brief loading state.
+
 ## Complete journey tested
 
 The complete 1.4.3 game structure was manually played from opening to ending on

@@ -15,27 +15,26 @@ Status: canonical design for review production
 
 ## Caused story journey
 
-The blue-and-gold parcel previewed at the end of E01 opens in the library. It
-contains a Moon Lantern, a fitted tray and a delivery card: one complete lantern
-must reach the observatory balcony before the first evening star appears. A
-narrow workshop route means the lantern must be checked, counted, carried in
-parts and rebuilt. Pax arrives because the workshop recognises its registered
-piece-keeper. Each completed check opens exactly the next mechanism:
+The parcel previewed at the end of E01 rolls into the library. It contains a
+Moon Lantern and a picture card asking the team to take it to the balcony before
+the first evening star. One small door blocks the way, and the lantern is too
+wide to fit. The child therefore has one question to hold throughout the story:
+**How can the whole lantern get through the small door?**
 
-1. the parcel supplies the lantern, outline and delivery problem;
-2. the Whole Seal opens only when the child identifies the complete lantern;
-3. the Count Bridge opens when every generated light tile is visited once;
-4. Sol's duplicated count is preserved and corrected rather than erased;
-5. the Part Gate accepts only a complete, non-overlapping, equal-piece layout;
-6. the Carry Slots separate the registered lantern so its pieces can travel;
-7. the Match Table checks equal and unequal visible pieces without pretending
-   that every object called “one piece” has the same size;
-8. the Gap Gate rejects an incomplete rebuild and the Extra Gate keeps an
-   outside piece outside the registered whole;
-9. the Holding Dial records both positive counts: pieces held and pieces in the
-   complete partition; and
-10. the team rebuilds the Moon Lantern, retrieves the earlier duplicate-count
-    lesson and delivers one complete whole to the balcony.
+Pax introduces one visible four-step plan: check the whole, choose and count
+every part, carry every part through, and rebuild the same whole. The stages are
+parts of that plan rather than unrelated locks:
+
+1. the parcel supplies the lantern and balcony request;
+2. the small doorway creates a real reason to work with parts;
+3. the child identifies the original whole so the rebuild has a clear target;
+4. the child chooses a complete, separate, equal-piece layout;
+5. Sol's duplicated check is preserved and corrected rather than erased;
+6. every lantern part is carried through the same doorway exactly once;
+7. visible size and held/whole counts are checked while all four parts remain in view;
+8. the child repairs a gap and keeps an unrelated extra outside;
+9. all four parts return to the round frame and the tray becomes empty; and
+10. the team recalls the earlier counting lesson and delivers the rebuilt whole.
 
 The lantern is never repaired by an unexplained reward, character assertion or
 scene cut. The child sees the causal mechanism change after every check.
@@ -76,13 +75,13 @@ part-equivalence theorem and is outside E02.
 
 | Stage | Book pages | Level Two mini-game | Reading code |
 |---|---:|---|---|
-| Parcel and Whole Seal | 3–8 | spot the complete lantern among gap/extra forms | `WHOLELIGHT` |
-| Count Bridge | 9–13 | touch every generated tile once; replay Sol's duplicate | `ONCEAROUND` |
-| Part Gate | 14–17 | choose the layout that is complete, separate and equal | `FAIRFIT` |
-| Carry Slots | 18–20 | drag every registered piece through and rebuild the outline | `PARTPAIR` |
-| Match Table | 21–22 | sort equal and unequal visible pairs | — |
-| Gap and Extra Gates | 23–25 | repair a gap; keep the outside extra outside | `GAPCHECK` |
-| Holding Dial | 26–27 | select held pieces and report held/whole positive counts | `HELDWHOLE` |
+| Parcel, problem and plan | 3–8 | meet the obstacle and spot the complete lantern | `WHOLELIGHT` |
+| Four carrying spots | 9–13 | touch every spot once; replay Sol's duplicate | `ONCEAROUND` |
+| Four-part plan | 14–17 | choose the layout that is complete, separate and equal | `FAIRFIT` |
+| Carry through the door | 18–20 | move every lantern part through once | `PARTPAIR` |
+| Check the sizes | 21–22 | compare equal and unequal visible pairs | — |
+| Rebuild: gap and extra | 23–25 | repair a gap; keep the outside extra outside | `GAPCHECK` |
+| Check the two counts | 26–27 | report held/whole positive counts | `HELDWHOLE` |
 | Recall and delivery | 28–32 | identify Sol's earlier duplicate, rebuild, deliver and preview E03 | — |
 
 Every stage is replayable, has direct input, gives visible and audible feedback,

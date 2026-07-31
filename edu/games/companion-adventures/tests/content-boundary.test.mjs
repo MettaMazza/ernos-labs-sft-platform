@@ -125,7 +125,7 @@ test("Level Two has nine connected replayable games and one new guest", async ()
   assert.match(levelTwo, /introduces: "pax"/);
   assert.doesNotMatch(levelTwo, /introduces: "(?:mira|tavi|sol|nori)"/);
   assert.match(levelTwo, /Play again/);
-  assert.match(levelTwo, /Go to the next room/);
+  assert.match(levelTwo, /Follow the plan/);
   assert.equal(manifest.level_2.scenes.length, 9);
   assert.equal(manifest.interaction_system.level_2.length, manifest.level_2.scenes.length);
   for (let index = 2; index <= 8; index += 1) {
@@ -138,14 +138,16 @@ test("Level Two has nine connected replayable games and one new guest", async ()
 
 test("Level Two language is simple, causal and does not give answers before play", () => {
   for (const phrase of [
-    "Then a parcel rolled down the library ramp",
+    "parcel from the last adventure rolled down the library ramp",
     "Let’s open it and see what is inside",
-    "It was too wide for the door",
-    "The first door opens. A short bridge leads deeper into the workshop",
-    "The bridge is ready, so everyone crosses to the next door",
-    "On the other side, they must build the lantern again",
-    "The last door opens. The friends reach the balcony",
+    "The lantern was too wide to fit through it",
+    "Mission: get the whole lantern through the small door",
+    "take the lantern apart, carry every part through, and build the whole lantern again",
+    "All four lantern parts made it through. None was left behind",
+    "The same whole lantern is back",
+    "The plan worked",
   ]) assert.ok(levelTwo.includes(phrase));
+  assert.doesNotMatch(levelTwo, /next door|next room|first door opens|last door opens/i);
   assert.doesNotMatch(levelTwo, /great brass|brass rectangular|magical door|registered|partition|fitted tray|coordinate|gold seal|door woke/i);
 });
 

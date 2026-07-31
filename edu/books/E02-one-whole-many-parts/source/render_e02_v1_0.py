@@ -166,8 +166,18 @@ def draw_pair(c: canvas.Canvas, cx: float, cy: float, equal: bool) -> None:
 
 def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float, h: float) -> None:
     number = page["page"]
-    if number in (4, 6):
+    if number == 4:
         draw_quartered_lantern(c, x + 92 * mm, y + 57 * mm, 20 * mm)
+    elif number == 5:
+        draw_quartered_lantern(c, x + 132 * mm, y + 62 * mm, 27 * mm)
+    elif number == 6:
+        draw_quartered_lantern(c, x + 42 * mm, y + 60 * mm, 13 * mm)
+        for index, cx in enumerate((x + 73 * mm, x + 84 * mm, x + 95 * mm, x + 106 * mm)):
+            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.1)
+            c.roundRect(cx - 4 * mm, y + 56 * mm, 8 * mm, 8 * mm, 2 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(2.2)
+        c.roundRect(x + 118 * mm, y + 43 * mm, 17 * mm, 34 * mm, 6 * mm, fill=1, stroke=1)
+        draw_quartered_lantern(c, x + 155 * mm, y + 60 * mm, 13 * mm)
     elif number in (7, 8):
         draw_gap_lantern(c, x + 47 * mm, y + 66 * mm, 12 * mm)
         draw_quartered_lantern(c, x + 91 * mm, y + 66 * mm, 12 * mm)
@@ -189,7 +199,9 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
             c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
             c.roundRect(cx - 7 * mm, y + 49 * mm, 14 * mm, 14 * mm, 3 * mm, fill=1, stroke=1)
     elif number == 20:
-        draw_quartered_lantern(c, x + 52 * mm, y + 59 * mm, 23 * mm)
+        for index, cx in enumerate((x + 65 * mm, x + 84 * mm, x + 103 * mm, x + 122 * mm)):
+            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
+            c.roundRect(cx - 7 * mm, y + 49 * mm, 14 * mm, 14 * mm, 3 * mm, fill=1, stroke=1)
     elif number in (21, 22):
         draw_pair(c, x + 55 * mm, y + 58 * mm, True)
         draw_pair(c, x + 128 * mm, y + 58 * mm, False)
@@ -208,10 +220,13 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
     elif number == 30:
         draw_quartered_lantern(c, x + 92 * mm, y + 58 * mm, 25 * mm)
     elif number == 31:
-        draw_quartered_lantern(c, x + 48 * mm, y + 62 * mm, 12 * mm)
-        for cx in (x + 78 * mm, x + 91 * mm, x + 104 * mm, x + 117 * mm):
-            draw_footprint(c, cx, y + 62 * mm, GREEN)
-        draw_pair(c, x + 145 * mm, y + 62 * mm, True)
+        draw_quartered_lantern(c, x + 40 * mm, y + 61 * mm, 12 * mm)
+        for index, cx in enumerate((x + 67 * mm, x + 78 * mm, x + 89 * mm, x + 100 * mm)):
+            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.1)
+            c.roundRect(cx - 4 * mm, y + 57 * mm, 8 * mm, 8 * mm, 2 * mm, fill=1, stroke=1)
+        c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(2.2)
+        c.roundRect(x + 113 * mm, y + 44 * mm, 17 * mm, 34 * mm, 6 * mm, fill=1, stroke=1)
+        draw_quartered_lantern(c, x + 153 * mm, y + 61 * mm, 12 * mm)
     elif number == 32:
         draw_quartered_lantern(c, x + 92 * mm, y + 58 * mm, 26 * mm, alternate=True)
 

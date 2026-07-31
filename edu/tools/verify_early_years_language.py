@@ -99,9 +99,11 @@ def verify(path: Path) -> None:
         require("one space is open" not in by_page[23], f"{path}: page 23 heading gives away its answer")
         require("they are equal in size" in by_page[22], f"{path}: equal in size is not plainly defined after the activity")
         require("whole means every part is here" in by_page[8], f"{path}: whole is not plainly defined after the activity")
-        require("the little wall door opened" in by_page[3], f"{path}: page 3 does not show where the parcel came from")
+        require("parcel from the last adventure rolled down the library ramp" in by_page[3], f"{path}: page 3 does not clearly continue the parcel story")
         require("opened the parcel" in by_page[4], f"{path}: page 4 does not show how the lantern appeared")
         require("too wide to go through the door" in by_page[5], f"{path}: page 5 does not explain the first obstacle")
+        require("how can the whole lantern get through the small door" in by_page[5], f"{path}: page 5 does not state the child-facing story question")
+        require("take the lantern apart" in by_page[6] and "put the whole lantern together again" in by_page[6], f"{path}: page 6 does not state the learning plan")
 
     print(f"Early Years language verified: {path}")
 

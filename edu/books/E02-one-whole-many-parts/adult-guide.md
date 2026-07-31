@@ -7,18 +7,17 @@ Final-publication status: awaiting Maria Smith's approval
 
 ## Purpose
 
-The child rejoins Mira, Sol and Tavi immediately after E01. The parcel already
-shown at the end of that book contains one Moon Lantern and a delivery card. The
-lantern is too wide for the workshop route, so the team must identify its whole,
-count a generated row without omission or duplication, choose a lawful visible
-partition, carry every registered piece, distinguish equal from unequal pieces,
-repair a gap, keep an extra outside and record both positive counts for a held
-part. The completed lantern then reaches the balcony and naturally begins the
-two-label pattern that previews E03.
+The child rejoins Mira, Sol and Tavi immediately after E01. The parcel contains
+one Moon Lantern and a picture card asking the team to take it to the balcony.
+A small door blocks the way, and the lantern is too wide to fit through it. The
+book then holds one simple question in view: **How can the whole lantern get
+through the small door?**
 
-This is one continuous caused story. Each challenge page pauses before its
-reveal. The reveal labels sit above a recognisable picture and name only what the
-child has just experienced.
+Pax gives the child a four-step plan: check the whole, choose and count every
+part, carry every part through, then rebuild the same whole. Every activity is
+one necessary part of that plan. The vocabulary follows the experience rather
+than replacing it. The completed lantern reaches the balcony and naturally
+begins the two-label pattern that previews E03.
 
 ## The permanent cast and Pax
 
@@ -32,19 +31,20 @@ pieces overlap; it must not reveal a new answer.
 
 ## Narrative cause chain
 
-1. The E01 parcel supplies the Moon Lantern and delivery card.
-2. The narrow doorway creates a real need to inspect and later carry parts.
-3. The Whole Seal opens the Count Bridge.
-4. The complete count opens the Part Gate.
-5. The accepted registered partition opens four Carry Slots.
-6. Reassembly opens the Match Table.
-7. Equal/unequal comparison opens the Gap and Extra Gates.
-8. Correcting the gap and excluding the extra opens the Holding Dial.
-9. Both positive counts release the final pieces.
-10. Delayed recall checks the earlier counting lesson before delivery.
+1. The E01 parcel supplies the Moon Lantern and picture card.
+2. The small doorway creates the one practical problem.
+3. The child identifies the original whole so they know what must be rebuilt.
+4. The child chooses four complete, separate, same-size parts.
+5. The child checks each carrying spot once so no part is missed or repeated.
+6. All four parts pass through the doorway.
+7. The child compares visible sizes and checks held and whole counts.
+8. The child fills the gap and keeps the unrelated extra outside.
+9. Every lantern part returns to the round frame; the tray is empty.
+10. Delayed recall checks the counting lesson before balcony delivery.
 
-If the child loses the thread, say: “The lantern is too wide for this route. We
-are checking the whole and every part so we can rebuild it at the balcony.”
+If the child loses the thread, point to the small door and say: “The whole
+lantern will not fit. What is our plan?” Then use the four short actions:
+“Check it. Take it apart. Carry every part. Build it again.”
 
 ## Experience-before-vocabulary
 
@@ -157,37 +157,38 @@ The reveal is a shared check, not a score screen.
 
 ## Page guidance and answers
 
-### Pages 3–8 — parcel and Whole Seal
+### Pages 3–8 — parcel, problem and plan
 
-Pages 3–6 establish the previous-book callback, need and single new guest.
+Pages 3–6 establish the previous-book callback, the one clear problem, the
+child-facing question, the four-step plan and the single new guest.
 Page 7 answer: the complete round lantern, not the lantern with a gap and not
 the complete lantern plus an attached extra. Page 8 introduces *whole* only
 after the child has compared all three.
 
-### Pages 9–13 — Count Bridge
+### Pages 9–13 — four carrying spots
 
-Page 10 asks the child to visit the four visible tiles once each. Page 12
-preserves Sol's route `1, 2, 3, 3, 4`; the problem is the repeated third tile.
+Page 10 asks the child to visit the four visible spots once each. Page 12
+preserves Sol's check `1, 2, 3, 3, 4`; the problem is the repeated third spot.
 Page 13 explicitly keeps that failed attempt and rebuilds the trace.
 
-### Pages 14–17 — Part Gate
+### Pages 14–17 — choose the four-part plan
 
 The accepted layout is the one that fills the entire agreed outline, has no
 overlap and uses same-sized pieces. A layout can fail more than one condition.
 Ask all three questions rather than accepting a familiar-looking picture.
 
-### Pages 18–20 — carrying and reassembly
+### Pages 18–20 — carry every part
 
-Every registered piece moves from a fitted tray into the one outline. The empty
-tray is checked after rebuilding. No new piece appears during the reveal.
+Every lantern part passes through the same small doorway. One carrying spot is
+used for each part so the child can see that none was missed or repeated.
 
-### Pages 21–22 — equal and unequal
+### Pages 21–22 — check the plan's sizes
 
 Pair A is equal-sized; Pair B is visibly unequal. Unequal pieces are not called
 false or bad. The narrower claim is that counts alone cannot identify equal
 portions when the partition pieces are unequal.
 
-### Pages 23–25 — gap and extra
+### Pages 23–25 — rebuild: gap and extra
 
 Page 23 is not complete because one registered place is unfilled. Page 24
 returns the registered fourth piece. Page 25 keeps the extra triangle visible
@@ -206,11 +207,12 @@ Answer B: Sol touched one tile twice. If the child first chooses A or C, say,
 “Look for a tile with two footprints.” Do not say “the answer is B” before a
 genuine reinspection.
 
-### Pages 30–32 — delivery, summary and next dependency
+### Pages 30–32 — answer the story question
 
-The registered lantern is rebuilt before delivery. Page 31 gives a three-part
-retrieval routine. Page 32 previews the two-label transition and recurrence of
-E03 without teaching its result or unlocking Level Three.
+The lantern is rebuilt before delivery. Page 30 explicitly answers the opening
+question. Page 31 asks the child to retell the four-step plan. Page 32 previews
+the two-label transition and recurrence of E03 without teaching its result or
+unlocking Level Three.
 
 ## Safe optional materials
 

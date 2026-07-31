@@ -14,11 +14,12 @@ curtain, checks both small doors and retrieves an earlier clue. Every one of the
 eight story stages contains a short playable learning activity. The written
 caption remains visible whenever a local voice line plays.
 
-In Level Two the child opens the new parcel, meets Pax, finds a whole lantern,
-touches four bridge tiles once each, chooses four fitting parts, rebuilds the
-lantern, compares same-size parts, fills a gap, keeps an extra part outside,
-answers two different count questions and remembers Sol's repeated bridge tile.
-Every one of its nine connected story stages contains a replayable game.
+In Level Two the child holds one problem throughout: the whole Moon Lantern is
+too wide for a small door on the way to the balcony. The child checks the whole,
+chooses a four-part plan, compares sizes, carries each part through once, checks
+the held and whole counts, keeps an unrelated extra outside and rebuilds the
+same whole lantern. Every one of its nine connected story stages contains a
+replayable game and visibly advances that plan.
 
 The note comes through the Star Door's letter box, establishes five clues, and every checked clue
 lights one star and five stars open the final chamber. A new parcel appears only

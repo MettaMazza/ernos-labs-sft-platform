@@ -51,6 +51,7 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
 .journey-banner,.guest-banner { position:absolute; z-index:11; left:50%; translate:-50% 0; max-width:min(700px,calc(100% - 130px)); padding:9px 15px; color:var(--ink); text-align:center; border:2px solid var(--gold); border-radius:18px; background:#fff8e9f2; box-shadow:0 10px 30px #0007; pointer-events:none; }
 .journey-banner { top:83px; display:flex; align-items:center; gap:8px; animation:journey-shows 5.3s both; }
 .guest-banner { top:137px; border-color:var(--aqua); background:#eafffbf2; animation:guest-arrives 1s .4s both; }
+.level-two-shell .journey-banner { animation:none; opacity:1; }
 
 .walking-cast { position:absolute; z-index:3; left:2%; right:2%; bottom:21%; height:50%; pointer-events:none; }
 .actor { --actor-index:0; position:absolute; bottom:0; width:clamp(112px,13vw,205px); transform-origin:50% 100%; filter:drop-shadow(0 16px 10px #0007); animation:actor-walks-in 1.35s cubic-bezier(.2,.8,.2,1) both,actor-idles 2.8s 1.4s ease-in-out infinite; animation-delay:calc(var(--actor-index) * .18s),calc(1.4s + var(--actor-index) * .2s); }
