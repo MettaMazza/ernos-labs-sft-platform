@@ -2,7 +2,7 @@
   "schema": "sft-education-game-manifest/2",
   "game_id": "SFT-EDU-LEARNING-ADVENTURES",
   "title": "SFT Learning Adventures",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "status": "review",
   "level_model": "one fixed-screen animated story adventure per book, with a short replayable game in every connected story stage",
   "level_1": {
@@ -49,28 +49,46 @@
     "narrated_lines": 32,
     "reading_codes": ["TRAILLIGHT", "TWOSIDES", "TURNBACK", "NEXTLIGHT", "KEEPTHETRY", "OVERUNDER", "RIGHTROUTE", "NEWROLES"]
   },
+  "level_4": {
+    "book_id": "SFT-EDU-E04-LOOK-AGAIN-HOW-WE-CHECK",
+    "book_version": "1.0.0",
+    "title": "The Garden Checkpoint",
+    "scenes": ["search", "build", "memory", "difference", "trace", "measure", "friend", "height", "checkpoint"],
+    "scientific_sources": [
+      {"claim_id":"SFT-FOUNDATION-DERIVATION-TRACE-001","receipt_hash":"sha256:457414dd7e3a14e44b200b1ac329cdc9e2bb3527abe901c3255d7fb6f9233c5e"},
+      {"claim_id":"SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001","receipt_hash":"sha256:a4e409f6bb8b203de746bd0c21d3f2566e8052003219490c657249e11f6f2086"},
+      {"claim_id":"SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001","receipt_hash":"sha256:0e21ffcb217271ddfab4000901691761c2b7fd423b93d27f81ab757f0300c58c"},
+      {"claim_id":"SFT-ENG-INDEPENDENT-CHECK-001","receipt_hash":"sha256:927d1b0f871cb92e06ae180a9c1fbcf6b2fe0a024135fb487fbf41a9b082b364"}
+    ],
+    "narration_manifest": "edu/games/companion-adventures/narration-manifest-e04.json",
+    "narrated_lines": 32,
+    "reading_codes": ["LOOKCLOSE", "SIGNMAKER", "KEEPFIRST", "SPOTCHANGE", "FOLLOWSTEPS", "WIDTHONLY", "FRIENDCHECK", "MOREWORK", "ALLCHECKED"]
+  },
   "level_select": {
     "enabled": true,
     "level_1": "available with device-local resume",
     "level_2": "available with device-local resume",
-    "level_3": "available with device-local resume"
+    "level_3": "available with device-local resume",
+    "level_4": "available with device-local resume"
   },
-  "narrative_cause_chain": "Level Two asks how the whole lantern can pass through a small door; every puzzle advances the separate, carry and rebuild plan. Level Three begins when that lantern lights a trail; every puzzle repairs one visible part of the same journey to the Sunrise Arch.",
+  "narrative_cause_chain": "Level Two asks how the whole lantern can pass through a small door; every puzzle advances the separate, carry and rebuild plan. Level Three begins when that lantern lights a trail; every puzzle repairs one visible part of the same journey to the Sunrise Arch. Level Four begins at the closed garden gate just beyond that arch; every puzzle contributes a visible observation, retained try, ordered trace, bounded measurement or fresh check needed before the Garden Welcome Sign passes the checkpoint.",
   "plain_language_rule": "Use the shortest familiar word that keeps the meaning exact. Child text uses door, letter box, note, box, part, gap and extra; technical boundary terms stay in adult guidance.",
   "interaction_system": {
     "level_1": ["spot note", "move toy and inspect box", "hold bell", "draw or leave blank", "step letters", "slide curtain", "inspect two doors", "recall first clue"],
     "level_2": ["Parcel Dash: steer through a changing obstacle course", "Lantern Detective: uncover all four visible parts of one lantern", "Fit-the-Circle Lab: match four exact symmetrical lantern quadrants to one circular plan", "Twin-Part Test: place lantern-part pairs on a balance and compare their sizes", "Doorway Delivery: carry each of four lantern parts through the small door exactly once", "Count-and-Collect: count the four visible lantern parts, including the two Pax holds", "Gap Repair: choose, rotate and fit the matching curved lantern part in a practice frame", "Lantern Sum Builder: make 1 + 1 + 1 + 1 = 4 parts while the four parts stay separate", "Lantern Builder: use those same four counted parts in the one final whole-lantern jigsaw"],
-    "level_3": ["Moon-and-Sun Catch: move a catcher across three lanes while every attempt moves the next ordered light", "Two-Side Camera: turn one tile and record its two different faces", "Gate Crank: pull the gate handle to its marked turn or use the touch alternative", "Return Run: compare three complete paths and launch the tile through the one-turn return path, whose letter changes on replay", "Path Builder: choose between two visibly moving lights and place three lawful lights", "Rule Repair: replace the first broken move in a retained randomized row", "Bridge Hop: move Vee visibly through five alternating over-and-under arches", "Trail Mapper: inspect three readable route maps and find the route that reaches the arch while keeping the rule", "New-Role Relay: continue star-and-leaf roles from a fixed clue, then recall the first gate"]
+    "level_3": ["Moon-and-Sun Catch: move a catcher across three lanes while every attempt moves the next ordered light", "Two-Side Camera: turn one tile and record its two different faces", "Gate Crank: pull the gate handle to its marked turn or use the touch alternative", "Return Run: compare three complete paths and launch the tile through the one-turn return path, whose letter changes on replay", "Path Builder: choose between two visibly moving lights and place three lawful lights", "Rule Repair: replace the first broken move in a retained randomized row", "Bridge Hop: move Vee visibly through five alternating over-and-under arches", "Trail Mapper: inspect three readable route maps and find the route that reaches the arch while keeping the rule", "New-Role Relay: continue star-and-leaf roles from a fixed clue, then recall the first gate"],
+    "level_4": ["Look-and-Point Lens: move a lens to the named source corner and choose the picture actually shown", "Build-the-Board: place all four picture cards once in the matching marked corners while the source remains visible", "Curtain Rebuild: study, cover and rebuild the whole sign while every complete failed try remains recorded", "Difference Finder: compare the complete source and complete first rebuild and mark both changed corners", "Placement Trace: inspect four placement cards in order and stop at the first different step", "Measuring Ribbon: align one width tool between the declared hooks without extending its answer to height or pictures", "Fresh-Path Friend Check: guide Ivo through the same source on a separate board before uncovering the team answer", "Height Question: reject guessing and voting, name the unchecked height question and measure bottom to top", "Four-Record Checkpoint: match picture, width, height and friend-check records to the four questions they answer"]
   },
   "mini_game_policy": "Every stage in every level or book contains a short replayable learning mini-game with direct input, visible feedback and a clear learning purpose; narrative-only stages are not permitted.",
-  "sound_system": "104 caption-matched local Kokoro narration lines, three distinct original offline background music tracks, plus offline Web Audio movement and interaction effects",
+  "sound_system": "136 caption-matched local Kokoro narration lines, four distinct original offline background music tracks, plus offline Web Audio movement and interaction effects",
   "background_music": {
-    "originality": "Three distinct instrumental loops were composed and synthesized locally from programmed notes and tones; no streamed or stock recordings are used.",
+    "originality": "Four distinct instrumental loops were composed and synthesized locally from programmed notes and tones; no streamed or stock recordings are used.",
     "generator": "edu/games/companion-adventures/scripts/generate_background_music.py",
     "tracks": [
       {"level":"level_1","path":"edu/games/companion-adventures/public/audio/music/level-one.mp3","description":"gentle 72 BPM star-room bell score"},
       {"level":"level_2","path":"edu/games/companion-adventures/public/audio/music/level-two.mp3","description":"warm 84 BPM workshop pluck score"},
-      {"level":"level_3","path":"edu/games/companion-adventures/public/audio/music/level-three.mp3","description":"moving 96 BPM turning-trail score"}
+      {"level":"level_3","path":"edu/games/companion-adventures/public/audio/music/level-three.mp3","description":"moving 96 BPM turning-trail score"},
+      {"level":"level_4","path":"edu/games/companion-adventures/public/audio/music/level-four.mp3","description":"gentle 78 BPM garden-check call-and-answer score"}
     ],
     "controls": "A child can turn background music on or off from each level prelude, gameplay HUD and ending screen; the preference is stored only on the device.",
     "lifecycle": "Music starts only after a child begins the narrated introduction, loops quietly, ducks beneath narration, pauses when the page is hidden or leaving, resumes when appropriate, and stops and resets when the child exits or changes levels."
@@ -89,6 +107,6 @@
   "final_publication": {
     "approved": false,
     "hosted": false,
-    "note": "Awaiting Maria Smith's review and explicit approval; none of the first three books has been moved into publications/education."
+    "note": "Awaiting Maria Smith's review and explicit approval; none of the first four books has been moved into publications/education."
   }
 }

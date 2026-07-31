@@ -7,6 +7,7 @@ import { levelThreeRelayForRound, pendingLevelThreeResolution, readLevelThreeInt
 const source = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
 const levelTwo = await readFile(new URL("../app/level-two.tsx", import.meta.url), "utf8");
 const levelThree = await readFile(new URL("../app/level-three.tsx", import.meta.url), "utf8");
+const levelFour = await readFile(new URL("../app/level-four.tsx", import.meta.url), "utf8");
 const levelPrelude = await readFile(new URL("../app/level-prelude.tsx", import.meta.url), "utf8");
 const levelMusic = await readFile(new URL("../app/use-level-music.ts", import.meta.url), "utf8");
 const narrationController = await readFile(new URL("../app/narration-controller.mjs", import.meta.url), "utf8");
@@ -17,11 +18,14 @@ const claimMap = JSON.parse(await readFile(new URL("../claim-map.json", import.m
 const narration = JSON.parse(await readFile(new URL("../narration-manifest.json", import.meta.url), "utf8"));
 const levelTwoNarration = JSON.parse(await readFile(new URL("../narration-manifest-e02.json", import.meta.url), "utf8"));
 const levelThreeNarration = JSON.parse(await readFile(new URL("../narration-manifest-e03.json", import.meta.url), "utf8"));
+const levelFourNarration = JSON.parse(await readFile(new URL("../narration-manifest-e04.json", import.meta.url), "utf8"));
 const continuity = JSON.parse(await readFile(new URL("../character-continuity.json", import.meta.url), "utf8"));
 const e02Book = JSON.parse(await readFile(new URL("../../../books/E02-one-whole-many-parts/source/book-v1.0.0.json", import.meta.url), "utf8"));
 const e03Book = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/source/book-v1.0.0.json", import.meta.url), "utf8"));
 const e03ClaimMap = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/claim-map.json", import.meta.url), "utf8"));
 const e03AdultGuide = await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/adult-guide.md", import.meta.url), "utf8");
+const e04Book = JSON.parse(await readFile(new URL("../../../books/E04-look-again-how-we-check/source/book-v1.0.0.json", import.meta.url), "utf8"));
+const e04ClaimMap = JSON.parse(await readFile(new URL("../../../books/E04-look-again-how-we-check/claim-map.json", import.meta.url), "utf8"));
 
 function assertCaptionLine(component, [filename, speaker, caption]) {
   const audioMarker = `audio: "${filename}"`;
@@ -65,6 +69,8 @@ test("the landing page selects levels without browser-edge page movement", () =>
   assert.match(source, /className="level-grid"/);
   assert.match(source, /LEVEL 1 · READY/);
   assert.match(source, /LEVEL 2 · READY/);
+  assert.match(source, /LEVEL 3 · READY/);
+  assert.match(source, /LEVEL 4 · READY/);
   assert.match(source, /showLevelSelect/);
   assert.match(styles, /html,body \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
   assert.match(styles, /\.play-stage \{[^}]*overflow:hidden;[^}]*overscroll-behavior:none/);
@@ -78,6 +84,7 @@ test("completed levels always have a reachable mobile escape", () => {
   assert.match(source, /className="ending-home" onClick=\{showLevelSelect\}/);
   assert.match(levelTwo, /className="ending-home" onClick=\{exitLevel\}/);
   assert.match(levelThree, /className="ending-home" onClick=\{exitLevel\}/);
+  assert.match(levelFour, /className="ending-home" onClick=\{exitLevel\}/);
   for (const component of [levelTwo, levelThree]) {
     assert.match(component, /function exitLevel\(\) \{[^}]*stopMusic\(\); onExit\(\); \}/);
   }
@@ -130,13 +137,15 @@ test("Kokoro narration is caption matched, bundled and offline", async () => {
   assert.equal(narration.lines.length, 40);
   assert.equal(levelTwoNarration.lines.length, 32);
   assert.equal(levelThreeNarration.lines.length, 32);
-  assert.equal(narration.lines.length + levelTwoNarration.lines.length + levelThreeNarration.lines.length, 104);
+  assert.equal(levelFourNarration.lines.length, 32);
+  assert.equal(narration.lines.length + levelTwoNarration.lines.length + levelThreeNarration.lines.length + levelFourNarration.lines.length, 136);
   assert.equal(manifest.level_1.narrated_lines, 40);
   assert.equal(manifest.level_2.narrated_lines, 32);
   assert.equal(manifest.level_3.narrated_lines, 32);
+  assert.equal(manifest.level_4.narrated_lines, 32);
   assert.equal(manifest.network_required_after_install, false);
-  assert.match(manifest.sound_system, /104 caption-matched local Kokoro narration lines/i);
-  assert.match(manifest.sound_system, /three distinct original offline background music tracks/i);
+  assert.match(manifest.sound_system, /136 caption-matched local Kokoro narration lines/i);
+  assert.match(manifest.sound_system, /four distinct original offline background music tracks/i);
   assert.match(manifest.sound_system, /offline Web Audio movement and interaction effects/i);
   for (const line of narration.lines) {
     const [filename] = line;
@@ -164,7 +173,7 @@ test("every stage background and the permanent trio plus one E01 guest are decla
     await access(new URL(`../public/art/stages/${match[0]}`, import.meta.url));
   }
   assert.deepEqual(continuity.main_cast.map((character) => character.id), ["sol", "tavi", "mia"]);
-  assert.equal(continuity.guest_characters.length, 3);
+  assert.equal(continuity.guest_characters.length, 4);
   assert.equal(continuity.guest_characters[0].id, "nori");
   assert.equal(continuity.guest_characters[0].introduced_in, "E01");
   assert.match(continuity.guest_characters[0].return_rule, /cannot identify the new answer/i);
@@ -172,6 +181,8 @@ test("every stage background and the permanent trio plus one E01 guest are decla
   assert.equal(continuity.guest_characters[1].introduced_in, "E02");
   assert.equal(continuity.guest_characters[2].id, "vee");
   assert.equal(continuity.guest_characters[2].introduced_in, "E03");
+  assert.equal(continuity.guest_characters[3].id, "ivo");
+  assert.equal(continuity.guest_characters[3].introduced_in, "E04");
   assert.match(continuity.policy, /no more than one new guest character/i);
 });
 
@@ -266,7 +277,7 @@ test("Book Two delays answers, keeps every part visible and reserves the final r
   assert.match(page(30).subtext, /arrow shows what happened next.*It is not an equals sign/);
 });
 
-test("Levels Two and Three use distinct consequence-bearing puzzle systems", () => {
+test("Levels Two, Three and Four use distinct consequence-bearing puzzle systems", () => {
   assert.match(gameplayStandard, /Three wrong moves end the round/i);
   for (const mechanic of ["light-catch-board", "two-side-lab", "gate-crank", "return-lane-puzzle", "pattern-conveyor", "rule-repair-board", "bridge-runner", "route-compare", "role-relay"]) {
     assert.ok(levelThree.includes(mechanic), mechanic + " is implemented");
@@ -277,9 +288,11 @@ test("Levels Two and Three use distinct consequence-bearing puzzle systems", () 
   assert.match(levelThree, /Round over/);
   assert.match(source, /LEVEL 3 · READY/);
   assert.match(levelTwo, /Next level/);
-  assert.match(levelThree, /Next level · coming soon/);
+  assert.match(levelThree, /<button className="primary" onClick=\{goToNextLevel\}>Next level<\/button>/);
   assert.equal(manifest.level_3.scenes.length, 9);
   assert.equal(manifest.interaction_system.level_3.length, 9);
+  assert.equal(manifest.level_4.scenes.length, 9);
+  assert.equal(manifest.interaction_system.level_4.length, 9);
   assert.deepEqual(manifest.level_3.scientific_sources.map((source) => source.claim_id), ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
   assert.deepEqual(claimMap.levels.E03.claim_ids, ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
   assert.deepEqual(Object.keys(claimMap.levels.E03.scene_to_book_pages), manifest.level_3.scenes);
@@ -299,6 +312,44 @@ test("Levels Two and Three use distinct consequence-bearing puzzle systems", () 
   assert.match(styles, /\.repair-row\{[^}]*grid-template-columns:repeat\(3,1fr\)/);
   assert.match(styles, /\.bridge-lanes\{[^}]*height:260px/);
   assert.match(styles, /\.route-map-cards\{[^}]*grid-template-columns:1fr/);
+});
+
+test("Level Four release metadata stays aligned with Book Four", () => {
+  const scenes = ["search", "build", "memory", "difference", "trace", "measure", "friend", "height", "checkpoint"];
+  const claims = [
+    "SFT-FOUNDATION-DERIVATION-TRACE-001",
+    "SFT-FOUNDATION-MEASURED-VALUE-BOUNDARY-001",
+    "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+    "SFT-ENG-INDEPENDENT-CHECK-001",
+  ];
+  const pages = {
+    search: [6, 7, 8],
+    build: [9, 10, 11],
+    memory: [12, 13, 14],
+    difference: [15, 16],
+    trace: [17, 18, 19],
+    measure: [20, 21, 22],
+    friend: [23, 24, 25],
+    height: [26, 27],
+    checkpoint: [28, 29, 30],
+  };
+
+  assert.equal(manifest.version, "2.1.0");
+  assert.equal(claimMap.version, "2.1.0");
+  assert.equal(manifest.level_4.book_id, "SFT-EDU-E04-LOOK-AGAIN-HOW-WE-CHECK");
+  assert.deepEqual(manifest.level_4.scenes, scenes);
+  assert.deepEqual(Object.keys(claimMap.levels.E04.scene_to_book_pages), scenes);
+  assert.deepEqual(claimMap.levels.E04.scene_to_book_pages, pages);
+  assert.deepEqual(claimMap.levels.E04.prelude_to_book_pages, [3, 4, 5]);
+  assert.deepEqual(claimMap.levels.E04.ending_to_book_pages, [31, 32]);
+  assert.deepEqual(manifest.level_4.scientific_sources.map((entry) => entry.claim_id), claims);
+  assert.deepEqual(claimMap.levels.E04.claim_ids, claims);
+  assert.deepEqual(e04ClaimMap.scientific_claims.map((entry) => entry.claim_id), claims);
+  assert.deepEqual(manifest.level_4.reading_codes, e04Book.reading_codes.map((entry) => entry.code));
+  assert.equal(manifest.level_select.level_4, "available with device-local resume");
+  assert.equal(manifest.background_music.tracks.length, 4);
+  assert.equal(continuity.guest_characters.at(-1).id, "ivo");
+  assert.equal(continuity.planned_level_slots.at(-1).level, "E04");
 });
 
 test("Level Three resumes past its prelude at the exact saved flow", () => {
@@ -456,9 +507,9 @@ test("the title offers a confirmed fresh game that clears every level", () => {
   assert.match(source, /function playTitleMusic\(\) \{\s*if \(musicOn\) startMusic\(\);\s*else toggleMusic\(\)/);
   assert.match(source, /Start a fresh game/);
   assert.match(source, /Begin a completely fresh game\?/);
-  assert.match(source, /This removes all saved progress from Levels 1, 2 and 3/);
+  assert.match(source, /This removes all saved progress from Levels 1, 2, 3 and 4/);
   assert.match(source, /localStorage\.removeItem\(LEVEL_ONE_STORAGE_KEY\)/);
-  for (const key of ["sft-e02-moving-stage-v1", "sft-e03-moving-stage-v1"]) {
+  for (const key of ["sft-e02-moving-stage-v1", "sft-e03-moving-stage-v1", "sft-e04-garden-check-v1"]) {
     assert.match(source, new RegExp(`localStorage\\.removeItem\\(\"${key}\"\\)`));
   }
   assert.match(source, /localStorage\.setItem\("sft-active-level-v1", "select"\)/);
@@ -472,9 +523,12 @@ test("every finished level explains its lesson directly to the child", () => {
     assert.match(component, /This matters because/);
     assert.match(component, /Hear the lesson again/);
   }
+  assert.match(levelFour, /NARRATOR TO YOU/);
+  assert.match(levelFour, /const endingLesson = authored\("10-narrator-to-you"\)/);
+  assert.match(levelFour, /Hear the lesson again/);
 });
 
-test("all three levels begin with a four-part narrated prelude", () => {
+test("all four levels begin with a four-part narrated prelude", () => {
   assert.match(levelPrelude, /export default function LevelPrelude/);
   assert.match(levelPrelude, /Begin the introduction/);
   assert.match(levelPrelude, /Hear again/);
@@ -501,6 +555,11 @@ test("all three levels begin with a four-part narrated prelude", () => {
   }
   assert.match(levelTwo, /after every game I will explain what your actions helped you learn/);
   assert.match(levelThree, /listen after every game for what you discovered/);
+  assert.match(levelFour, /const preludeLines: PreludeLine\[\] = \[/);
+  assert.match(levelFour, /if \(introOpen\) return <LevelPrelude/);
+  assert.match(levelFour, /lines=\{preludeLines\}/);
+  assert.equal(levelFourNarration.lines.slice(0, 4).length, 4);
+  assert.ok(levelFourNarration.lines.slice(0, 4).every(([, speaker]) => speaker === "Narrator"));
 });
 
 test("every playable stage ends with narrator-led teaching", () => {
@@ -510,13 +569,16 @@ test("every playable stage ends with narrator-led teaching", () => {
     assert.ok(teachers.every((speaker) => speaker === "Narrator"));
     assert.match(component, /complete \? "NARRATOR · WHAT YOU DISCOVERED" : (?:currentLine|line)\.speaker/);
   }
+  assert.equal((levelFour.match(/success: authored\("0[1-9]c-[^"]+"\)/g) ?? []).length, 9);
+  assert.match(levelFour, /complete \? "NARRATOR · WHAT THIS GAME TAUGHT" : currentLine\.speaker/);
 });
 
-test("three distinct original music tracks are bundled and follow the shared lifecycle", async () => {
+test("four distinct original music tracks are bundled and follow the shared lifecycle", async () => {
   const levelTracks = [
     [source, "level-one"],
     [levelTwo, "level-two"],
     [levelThree, "level-three"],
+    [levelFour, "level-four"],
   ];
   const hashes = new Set();
   for (const [component, track] of levelTracks) {
@@ -528,7 +590,7 @@ test("three distinct original music tracks are bundled and follow the shared lif
     assert.ok(bytes.length > 100_000, `${track} contains a full local score`);
     hashes.add(createHash("sha256").update(bytes).digest("hex"));
   }
-  assert.equal(hashes.size, 3, "each level has a distinct score");
+  assert.equal(hashes.size, 4, "each level has a distinct score");
   assert.match(levelMusic, /new Audio\(`\/audio\/music\/\$\{track\}\.mp3/);
   assert.match(levelMusic, /audio\.loop = true/);
   assert.match(levelMusic, /audio\.preload = "auto"/);
@@ -541,7 +603,7 @@ test("three distinct original music tracks are bundled and follow the shared lif
   assert.match(levelMusic, /audioRef\.current\?\.pause\(\)/);
   assert.match(levelMusic, /audioRef\.current\.currentTime = 0/);
   assert.match(levelMusic, /DUCKED_VOLUME/);
-  assert.match(source, /if \(levelTwoActive \|\| levelThreeActive\) \{\s*stopMusic\(\)/);
+  assert.match(source, /if \(levelTwoActive \|\| levelThreeActive \|\| levelFourActive\) \{\s*stopMusic\(\)/);
   assert.match(source, /function showLevelSelect\(\) \{\s*stopNarration[^}]*startMusic\(\)/);
   assert.match(source, /function startFreshGame\(\) \{\s*stopNarration[^}]*startMusic\(\)/);
   assert.match(levelTwo, /if \(storageReady\) startMusic\(\)/);

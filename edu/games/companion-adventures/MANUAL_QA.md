@@ -1,8 +1,60 @@
-# Levels One, Two and Three manual end-to-end QA
+# Levels One through Four manual end-to-end QA
 
-Version: unified game 2.0.0 review
+Version: unified game 2.1.0 review
 Date: 31 July 2026
 Final-publication approval: pending Maria Smith's review
+
+## Level Four complete journey
+
+Level Four was manually played from its four-part introduction to the opened
+garden gate at 390 × 844 phone, 768 × 1024 tablet and 1440 × 900 desktop
+viewports. All nine games were completed through their successful route and a
+plausible wrong route:
+
+1. `Look-and-Point Lens`: made an unsupported choice, then moved the lens to
+   the named MOON corner and selected the visible bee.
+2. `Build-the-Board`: tried an incorrect marked corner, then used every picture
+   once to reproduce the complete shown source.
+3. `Curtain Rebuild`: submitted a complete non-matching rebuild, kept that
+   exact board visible, looked again and completed the matching rebuild.
+4. `Difference Finder`: checked a matching corner before marking both changed
+   corners where bee and boot had traded places.
+5. `Placement Trace`: attempted an out-of-order card, then followed all four
+   cards from Step 1 and identified Step 3 as the first change.
+6. `Measuring Ribbon`: took a wrong alignment path before checking only the
+   sign's width from the left hook to the right hook.
+7. `Fresh-Path Friend Check`: took a wrong source-recording path, then guided
+   Ivo through all four source corners before uncovering the team sign.
+8. `Height Question`: tried an unsupported guess or vote, then named the
+   missing height question and measured from the bottom edge to the top edge.
+9. `Four-Record Checkpoint`: made a wrong record-to-question match and kept it
+   on the checking rail, then supported pictures, width, height and friend
+   check with their own four records.
+
+One complete three-try round was deliberately lost and reset. A completed game
+was replayed with a different solvable presentation while the fixed SUN to
+sunflower, MOON to bee, LEAF to watering can and STAR to boot source remained
+unchanged. Retained failed rebuilds and wrong checkpoint matches remained
+visible as intended.
+
+## Level Four visual, restoration and ending checks
+
+- Phone 390 × 844, tablet 768 × 1024 and desktop 1440 × 900: full nine-stage
+  routes, wrong and successful paths, round loss and reset, replay variation,
+  final narrator lesson and ending controls completed through the interface.
+- The ending fitted each viewport and kept replay and level-selection controls
+  reachable.
+- Returning to the title after play showed the four-card selector without the
+  cast or name labels bleeding into the title after the title-cast fix.
+- Reload and resume were manually verified during Level Four. The active turn
+  and unfinished game state returned instead of dropping to the title.
+- Levels One, Two and Three each launched their narrated prelude from the
+  selector after the Level Four integration.
+- Automated lifecycle coverage passed for hidden-page and page-exit narration
+  cancellation, generation invalidation and prevention of stale-line replay.
+- A true operating-system app-switch was not manually tested in this pass; no
+  such manual result is claimed. Reload and in-browser resume were the manually
+  verified restoration paths.
 
 ## Level Three complete journey
 
@@ -285,6 +337,8 @@ nineteen pass together with lint and the production build.
 - Passed all nineteen application/content tests, the production build and lint
   with no errors.
 
-This QA makes E01 review 1.6.0, E02 review 1.0.0, E03 review 1.0.0 and unified game review 2.0.0
-ready for Maria Smith's next play test. It does not approve
-the version, authorise public hosting or move it into `publications/education/`.
+The evidence above keeps E01 review 1.6.0, E02 review 1.0.0, E03 review 1.0.0,
+E04 review 1.0.0 and unified game review 2.1.0 ready for Maria Smith's next play
+test. The OS app-switch boundary has automated lifecycle coverage but no manual
+OS-level result in this pass. Nothing in this file approves a version,
+authorises public hosting or moves it into `publications/education/`.

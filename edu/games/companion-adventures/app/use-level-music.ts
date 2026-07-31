@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const NORMAL_VOLUME = 0.12;
 const DUCKED_VOLUME = 0.035;
 
-export default function useLevelMusic(track: "level-one" | "level-two" | "level-three") {
+export default function useLevelMusic(track: "level-one" | "level-two" | "level-three" | "level-four") {
   const [enabled, setEnabled] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const enabledRef = useRef(true);

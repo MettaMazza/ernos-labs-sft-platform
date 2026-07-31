@@ -168,7 +168,7 @@ function TryLights({ mistakes }: { mistakes: number }) {
   return <div className="try-lights" aria-label={`${3 - mistakes} of 3 try lights left`}><b>TRY LIGHTS</b>{[0,1,2].map((value) => <span key={value} className={value < 3 - mistakes ? "on" : "off"}>◆</span>)}</div>;
 }
 
-export default function LevelThree({ onExit }: { onExit: () => void }) {
+export default function LevelThree({ onExit, onNext }: { onExit: () => void; onNext: () => void }) {
   const [sceneIndex, setSceneIndex] = useState(0);
   const [introSeen, setIntroSeen] = useState(false);
   const [beat, setBeat] = useState(0);
@@ -379,6 +379,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   }
   function toggleNarration() { const next = !muted; setMuted(next); if (next) stopNarration(audioRef, narrationGenerationRef, duckMusic); }
   function exitLevel() { stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); onExit(); }
+  function goToNextLevel() { stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); onNext(); }
 
   useEffect(() => {
     if (!pendingResolution || complete || roundLost) return;
@@ -490,7 +491,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   />;
 
   if (finished) return <main className="ending-screen e03-ending">
-    <div className="ending-art" /><button className="ending-home" onClick={exitLevel} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL THREE COMPLETE</p><div className="e03-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Sunrise Arch shines.</h1><p>Mia, Sol, Tavi and Vee restored the turning-light trail before sunrise.</p><blockquote>A clear move made a pattern. Keeping the first try helped the team find and repair the break.</blockquote><div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div><div className="ending-controls"><button className="primary" disabled title="Book Four and Level Four are in development">Next level · coming soon</button><button className="secondary" onClick={restart}>Play Level 3 again</button><button className="secondary" onClick={exitLevel}>Choose a level</button><button className="secondary" onClick={toggleMusic}>{musicOn ? "Turn music off" : "Turn music on"}</button></div></section>
+    <div className="ending-art" /><button className="ending-home" onClick={exitLevel} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL THREE COMPLETE</p><div className="e03-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Sunrise Arch shines.</h1><p>Mia, Sol, Tavi and Vee restored the turning-light trail before sunrise.</p><blockquote>A clear move made a pattern. Keeping the first try helped the team find and repair the break.</blockquote><div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div><div className="ending-controls"><button className="primary" onClick={goToNextLevel}>Next level</button><button className="secondary" onClick={restart}>Play Level 3 again</button><button className="secondary" onClick={exitLevel}>Choose a level</button><button className="secondary" onClick={toggleMusic}>{musicOn ? "Turn music off" : "Turn music on"}</button></div></section>
   </main>;
 
   const promptText = scene.activity === "transfer" && activityStep === 1

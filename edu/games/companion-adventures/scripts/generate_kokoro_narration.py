@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the checked E01 narration manifest with local Kokoro ONNX weights."""
+"""Render a checked narration manifest with local Kokoro ONNX weights."""
 
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ def main() -> None:
     args.output.mkdir(parents=True, exist_ok=True)
     kokoro = Kokoro(str(args.model), str(args.voices))
 
-    with tempfile.TemporaryDirectory(prefix="sft-e01-kokoro-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="sft-kokoro-") as temporary:
         temp = Path(temporary)
         for filename, speaker, text in manifest["lines"]:
             samples, rate = kokoro.create(text, voice=manifest["voices"][speaker], speed=0.94, lang="en-gb")

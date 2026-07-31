@@ -3,6 +3,7 @@
 import { CSSProperties, FormEvent, PointerEvent, useEffect, useLayoutEffect, useRef, useState } from "react";
 import LevelTwo from "./level-two";
 import LevelThree from "./level-three";
+import LevelFour from "./level-four";
 import LevelPrelude, { PreludeLine } from "./level-prelude";
 import { startNarration, stopNarration } from "./narration-controller.mjs";
 import useLevelMusic from "./use-level-music";
@@ -162,6 +163,8 @@ export default function Home() {
   const [savedLevelTwoRooms, setSavedLevelTwoRooms] = useState(0);
   const [levelThreeActive, setLevelThreeActive] = useState(false);
   const [savedLevelThreeStages, setSavedLevelThreeStages] = useState(0);
+  const [levelFourActive, setLevelFourActive] = useState(false);
+  const [savedLevelFourStages, setSavedLevelFourStages] = useState(0);
   const [started, setStarted] = useState(false);
   const [introOpen, setIntroOpen] = useState(true);
   const [preludeStep, setPreludeStep] = useState(-1);
@@ -214,12 +217,12 @@ export default function Home() {
 
   useEffect(() => {
     if (!storageReady) return;
-    if (levelTwoActive || levelThreeActive) {
+    if (levelTwoActive || levelThreeActive || levelFourActive) {
       stopMusic();
       return;
     }
     startMusic();
-  }, [storageReady, levelTwoActive, levelThreeActive, startMusic, stopMusic]);
+  }, [storageReady, levelTwoActive, levelThreeActive, levelFourActive, startMusic, stopMusic]);
 
   useEffect(() => {
     const stopBackgroundAudio = () => {
@@ -318,7 +321,7 @@ export default function Home() {
   }, [started, finished, introOpen, sceneIndex, beat, complete, muted]);
 
   useEffect(() => {
-    if (!storageReady || !started || levelTwoActive || levelThreeActive || !finished || muted || endingLessonPlayedRef.current) return;
+    if (!storageReady || !started || levelTwoActive || levelThreeActive || levelFourActive || !finished || muted || endingLessonPlayedRef.current) return;
     endingLessonPlayedRef.current = true;
     let lessonAudio: HTMLAudioElement | null = null;
     const scheduledGeneration = narrationGenerationRef.current;
@@ -338,7 +341,7 @@ export default function Home() {
       stopNarration(audioRef, narrationGenerationRef, duckMusic);
       lessonAudio?.pause();
     };
-  }, [storageReady, started, levelTwoActive, levelThreeActive, finished, muted, duckMusic]);
+  }, [storageReady, started, levelTwoActive, levelThreeActive, levelFourActive, finished, muted, duckMusic]);
 
   useEffect(() => {
     const timeout = window.setTimeout(() => {
@@ -347,6 +350,7 @@ export default function Home() {
         const saved = restoreLevelOneProgress(localStorage.getItem(LEVEL_ONE_STORAGE_KEY), scenes.length, levelOnePrelude.length);
         const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
         const savedLevelThree = JSON.parse(localStorage.getItem("sft-e03-moving-stage-v1") ?? "{}");
+        const savedLevelFour = JSON.parse(localStorage.getItem("sft-e04-garden-check-v1") ?? "{}");
         lastAutoLineRef.current = saved.started && !saved.introOpen && !saved.finished ? `${saved.sceneIndex}:${saved.complete ? "success" : saved.beat}` : "";
         endingLessonPlayedRef.current = saved.finished;
         setSceneIndex(saved.sceneIndex);
@@ -360,7 +364,8 @@ export default function Home() {
         setResolution(saved.resolution);
         resolutionRef.current = saved.resolution;
         completionLockRef.current = saved.complete;
-        if (activeLevel === "e03") setLevelThreeActive(true);
+        if (activeLevel === "e04") setLevelFourActive(true);
+        else if (activeLevel === "e03") setLevelThreeActive(true);
         else if (activeLevel === "e02") setLevelTwoActive(true);
         else if (activeLevel === "select") setStarted(false);
         else setStarted(saved.started);
@@ -375,6 +380,8 @@ export default function Home() {
         else if (typeof savedLevelTwo.sceneIndex === "number") setSavedLevelTwoRooms(Math.max(0, Math.min(9, savedLevelTwo.sceneIndex + (savedLevelTwo.complete ? 1 : 0))));
         if (savedLevelThree.finished === true) setSavedLevelThreeStages(9);
         else if (typeof savedLevelThree.sceneIndex === "number") setSavedLevelThreeStages(Math.max(0, Math.min(9, savedLevelThree.sceneIndex + (savedLevelThree.complete ? 1 : 0))));
+        if (savedLevelFour.finished === true) setSavedLevelFourStages(9);
+        else if (typeof savedLevelFour.sceneIndex === "number") setSavedLevelFourStages(Math.max(0, Math.min(9, savedLevelFour.sceneIndex + (savedLevelFour.complete ? 1 : 0))));
       } catch { /* The story also works without local saving. */ }
       setStorageReady(true);
     }, 0);
@@ -572,8 +579,17 @@ export default function Home() {
     setLevelThreeActive(true);
   }
 
+  function beginLevelFour() {
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); stopMusic(); setStarted(false);
+    try {
+      localStorage.setItem("sft-active-level-v1", "e04");
+    } catch { /* optional */ }
+    setLevelThreeActive(false);
+    setLevelFourActive(true);
+  }
+
   function showLevelSelect() {
-    stopNarration(audioRef, narrationGenerationRef, duckMusic); setStarted(false); setLevelTwoActive(false); setLevelThreeActive(false); setJournalOpen(false); startMusic();
+    stopNarration(audioRef, narrationGenerationRef, duckMusic); setStarted(false); setLevelTwoActive(false); setLevelThreeActive(false); setLevelFourActive(false); setJournalOpen(false); startMusic();
     try {
       localStorage.setItem("sft-active-level-v1", "select");
       const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
@@ -582,6 +598,9 @@ export default function Home() {
       const savedLevelThree = JSON.parse(localStorage.getItem("sft-e03-moving-stage-v1") ?? "{}");
       if (savedLevelThree.finished === true) setSavedLevelThreeStages(9);
       else if (typeof savedLevelThree.sceneIndex === "number") setSavedLevelThreeStages(Math.max(0, Math.min(9, savedLevelThree.sceneIndex + (savedLevelThree.complete ? 1 : 0))));
+      const savedLevelFour = JSON.parse(localStorage.getItem("sft-e04-garden-check-v1") ?? "{}");
+      if (savedLevelFour.finished === true) setSavedLevelFourStages(9);
+      else if (typeof savedLevelFour.sceneIndex === "number") setSavedLevelFourStages(Math.max(0, Math.min(9, savedLevelFour.sceneIndex + (savedLevelFour.complete ? 1 : 0))));
     } catch { /* optional */ }
   }
 
@@ -595,6 +614,7 @@ export default function Home() {
     startMusic();
     setLevelTwoActive(false);
     setLevelThreeActive(false);
+    setLevelFourActive(false);
     setStarted(false);
     setIntroOpen(true);
     setPreludeStep(-1);
@@ -614,6 +634,7 @@ export default function Home() {
     setSavedStars(0);
     setSavedLevelTwoRooms(0);
     setSavedLevelThreeStages(0);
+    setSavedLevelFourStages(0);
     setEarnedStar(null);
     setCode("");
     setCodeMessage("");
@@ -627,6 +648,7 @@ export default function Home() {
       localStorage.removeItem(LEVEL_ONE_STORAGE_KEY);
       localStorage.removeItem("sft-e02-moving-stage-v1");
       localStorage.removeItem("sft-e03-moving-stage-v1");
+      localStorage.removeItem("sft-e04-garden-check-v1");
       localStorage.setItem("sft-active-level-v1", "select");
     } catch { /* A fresh in-memory game still begins if storage is unavailable. */ }
     setFreshGameOpen(false);
@@ -680,7 +702,8 @@ export default function Home() {
     </>;
   }
 
-  if (levelThreeActive) return <LevelThree onExit={showLevelSelect} />;
+  if (levelFourActive) return <LevelFour onExit={showLevelSelect} />;
+  if (levelThreeActive) return <LevelThree onExit={showLevelSelect} onNext={beginLevelFour} />;
   if (levelTwoActive) return <LevelTwo onExit={showLevelSelect} onNext={beginLevelThree} />;
 
   if (!started) return <main className="opening-screen level-select-screen">
@@ -691,8 +714,8 @@ export default function Home() {
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mia, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{finished ? "Review Level 1 ending" : savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{finished ? "Level 1 complete on this device" : `${savedStars} of 5 clue stars found on this device`}</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Review Level 2 ending" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article><article className="level-card available level-three-card"><span>LEVEL 3 · READY</span><h2>The Turning-Light Trail</h2><p>Book Three: <em>The Fold Makes a Pattern</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelThree}>{savedLevelThreeStages === 9 ? "Review Level 3 ending" : savedLevelThreeStages > 0 ? "Continue Level 3" : "Play Level 3"}</button>{savedLevelThreeStages > 0 && <small>{savedLevelThreeStages} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p><div className="title-controls"><button className="title-music-button" onClick={playTitleMusic}><span aria-hidden="true">♫</span> Play title music</button><button className="fresh-game-button" onClick={() => setFreshGameOpen(true)}><span aria-hidden="true">↺</span> Start a fresh game</button></div></section>
-    {freshGameOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setFreshGameOpen(false)}><section className="code-modal fresh-game-modal" role="dialog" aria-modal="true" aria-labelledby="fresh-game-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setFreshGameOpen(false)} aria-label="Close">×</button><p className="eyebrow">START AGAIN</p><h2 id="fresh-game-title">Begin a completely fresh game?</h2><p>This removes all saved progress from Levels 1, 2 and 3 on this device. The books and game stay safely installed.</p><div className="fresh-game-actions"><button className="secondary" onClick={() => setFreshGameOpen(false)}>Keep my progress</button><button className="danger-action" onClick={startFreshGame}>Restart all progress</button></div></section></div>}
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mia, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{finished ? "Review Level 1 ending" : savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{finished ? "Level 1 complete on this device" : `${savedStars} of 5 clue stars found on this device`}</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Review Level 2 ending" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article><article className="level-card available level-three-card"><span>LEVEL 3 · READY</span><h2>The Turning-Light Trail</h2><p>Book Three: <em>The Fold Makes a Pattern</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelThree}>{savedLevelThreeStages === 9 ? "Review Level 3 ending" : savedLevelThreeStages > 0 ? "Continue Level 3" : "Play Level 3"}</button>{savedLevelThreeStages > 0 && <small>{savedLevelThreeStages} of 9 story steps complete on this device</small>}</article><article className="level-card available level-four-card"><span>LEVEL 4 · READY</span><h2>The Garden Checkpoint</h2><p>Book Four: <em>Look Again: How We Check</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelFour}>{savedLevelFourStages === 9 ? "Review Level 4 ending" : savedLevelFourStages > 0 ? "Continue Level 4" : "Play Level 4"}</button>{savedLevelFourStages > 0 && <small>{savedLevelFourStages} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p><div className="title-controls"><button className="title-music-button" onClick={playTitleMusic}><span aria-hidden="true">♫</span> Play title music</button><button className="fresh-game-button" onClick={() => setFreshGameOpen(true)}><span aria-hidden="true">↺</span> Start a fresh game</button></div></section>
+    {freshGameOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setFreshGameOpen(false)}><section className="code-modal fresh-game-modal" role="dialog" aria-modal="true" aria-labelledby="fresh-game-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setFreshGameOpen(false)} aria-label="Close">×</button><p className="eyebrow">START AGAIN</p><h2 id="fresh-game-title">Begin a completely fresh game?</h2><p>This removes all saved progress from Levels 1, 2, 3 and 4 on this device. The books and game stay safely installed.</p><div className="fresh-game-actions"><button className="secondary" onClick={() => setFreshGameOpen(false)}>Keep my progress</button><button className="danger-action" onClick={startFreshGame}>Restart all progress</button></div></section></div>}
   </main>;
 
   if (introOpen) return <LevelPrelude

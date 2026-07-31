@@ -176,3 +176,103 @@ blue-moon and gold-sun symbols in the first scene are decorative continuity
 props. All question state, order, labels and correct answers are added by the
 deterministic book renderer and game interface. Generated pixels supply no SFT
 premise, theorem, derivation or curriculum authority.
+
+## Level Four generated art — live review
+
+Prepared: 31 July 2026
+Scientific-authority status: none
+Approval status: generated review assets; not approved-final publication art
+
+Built-in image generation extended the same original 3D world into the garden
+checking workshop for *Look Again: How We Check*. Generated pixels establish
+setting and empty play surfaces only. They supply no SFT claim, lesson, answer,
+measurement or checking result. The exact prompt plan and the full per-scene
+custody record are preserved in `media/e04/SHOT_LIST_AND_AUDIO_HANDOFF.md` and
+`media/e04/ART_PROVENANCE.md`.
+
+The character export `public/art/characters/individual/ivo-v1.png` and runtime
+alias `public/art/characters/individual/ivo.png` are byte-identical 1254×1254
+RGBA PNG files, each with SHA-256
+`ea3382945c0285a12fa3649972827a1c0245b5a0ff610b441367ad06cd11c599`.
+Ivo is the one new E04 guest and carries a magnifying lens and checkerboard
+satchel; the sprite contains no puzzle answer.
+
+Each generated source scene is a 1672×941 opaque PNG. Each matching playable
+file is a distinct 1536×864 opaque PNG export:
+
+1. Look-and-Point — canonical closed-gate source
+   `public/art/stages/e04-source/e04-stage-01-look-and-point-v2.png`
+   (`010868b27f7b58e77ea496071c081f03d1a5bc25c23b3b51a58bfbe650c93503`),
+   canonical playable `public/art/stages/e04-stage-01-look-and-point-v2.png`
+   (`aba8b8450d7e9e0fecec168b3c0e8669b6c7a1fae631272ca6e189322b5f2cd0`).
+   The open-gate v1 source
+   `public/art/stages/e04-source/e04-stage-01-look-and-point-v1.png`
+   (`3abce9429b1a14153af8722c2ec0e442fa478b2c46159956ac042f4fe816071c`)
+   and playable `public/art/stages/e04-stage-01-look-and-point-v1.png`
+   (`a56e6acb85a39b871c083d4c2f57c2aa64307c15bdf2aa1439aec5c3bceb8c03`)
+   are superseded review outputs retained only for provenance.
+2. Build-the-Board — source
+   `public/art/stages/e04-source/e04-stage-02-build-the-board-v1.png`
+   (`266274074483ba04b5c88ad585bc698be201c082b7d1ee6af332fff43c6d06ae`),
+   playable `public/art/stages/e04-stage-02-build-the-board-v1.png`
+   (`ee1681b225b77d4316763fc371d74c2d2c999628141305e41071c3d7f639fb3a`).
+3. Curtain Memory — source
+   `public/art/stages/e04-source/e04-stage-03-curtain-memory-v1.png`
+   (`3b303a66ed682e706598b7a4cd74cf57c0e218095d55d5a31f1423de56bf675b`),
+   playable `public/art/stages/e04-stage-03-curtain-memory-v1.png`
+   (`4cd6d9b732ba776f6f52c6b18faa1642632175f1d499ac426a0fcae6db12cb8a`).
+4. Difference Finder — source
+   `public/art/stages/e04-source/e04-stage-04-difference-finder-v1.png`
+   (`15d84cf27a12af212fce7e839453265d9f47ddd709f6afd732b89f57c6a52c14`),
+   playable `public/art/stages/e04-stage-04-difference-finder-v1.png`
+   (`8c998afe9e22ac2f7b7ff673e1a19481f040d698497725e1af05bd7e98de5a14`).
+5. Ordered Placement Record — canonical source
+   `public/art/stages/e04-source/e04-stage-05-placement-record-v2.png`
+   (`c9b0785de78e6e3ebe522f98e1248ebc568c716f21b4b17732a97170f7e05def`),
+   canonical playable `public/art/stages/e04-stage-05-placement-record-v2.png`
+   (`4d4f2792347b241197b128d04e6131d17dddcf2560eb72f93b61a42d5038cfaa`).
+   The v1 route-scene source
+   `public/art/stages/e04-source/e04-stage-05-footprint-trace-v1.png`
+   (`2d8720eee949e7d41dd77dacdbb03336f66ef9e6d8bf2bb0368e0ad550878924`)
+   and playable `public/art/stages/e04-stage-05-footprint-trace-v1.png`
+   (`78e1ed34267e600df0322be5cb70e9e0c12fc41167b5fafbc985e35489d5e1b1`)
+   are superseded review outputs retained only for provenance.
+6. Measuring Ribbon — source
+   `public/art/stages/e04-source/e04-stage-06-measuring-ribbon-v1.png`
+   (`0a6cb30c5edacc12fbc21c8a9715bafdf7ab7175777c6330d8a5c6d390a28e36`),
+   playable `public/art/stages/e04-stage-06-measuring-ribbon-v1.png`
+   (`a0c1e55676f83853382b734392853eee421c7e1ed209b54945cc8b0420be323d`).
+7. Friend Check — source
+   `public/art/stages/e04-source/e04-stage-07-friend-check-v1.png`
+   (`9cee25cdd9f8d28630e98329faf76d7486a68f205042223a592a89dd4f4fd7a4`),
+   playable `public/art/stages/e04-stage-07-friend-check-v1.png`
+   (`dfe43399138a8209f59f1234cec16a63e307a05e78d2ed3e91cb4d412321ffb0`).
+8. Height Question — canonical source
+   `public/art/stages/e04-source/e04-stage-08-height-check-v2.png`
+   (`1be2596e866b097ddafd5a0f1f4e21c5977e40da8c4f6f93dd5cc84bb53e08a8`),
+   canonical playable `public/art/stages/e04-stage-08-height-check-v2.png`
+   (`08ab5c1495bfc7f77b70725f62bc8a3e20a3e7794b88b895b8252c674e879c3c`).
+   The v1 claim-board source
+   `public/art/stages/e04-source/e04-stage-08-disagreement-detective-v1.png`
+   (`2492bc1e4423cbc76b832fff1a4d98bf1f3427890f618923bbb5064d6547f336`)
+   and playable `public/art/stages/e04-stage-08-disagreement-detective-v1.png`
+   (`26c11b54f2a9be15f54e5f714b9e3519f7aa695ada75ecb4e9479a46f11b3fe2`)
+   are superseded review outputs retained only for provenance.
+9. Four-Record Checkpoint — canonical source
+   `public/art/stages/e04-source/e04-stage-09-record-checkpoint-v2.png`
+   (`2b2d8fb94f33cd26b53ff1b3634251da276d0e2b86b003e41a579d0f53b34719`),
+   canonical playable `public/art/stages/e04-stage-09-record-checkpoint-v2.png`
+   (`129d7301b8133c36db71422ea7354ce6cc03cb5b25d5ec754b462d11d50317e4`).
+   The v1 open-gate/lamp source
+   `public/art/stages/e04-source/e04-stage-09-final-checkpoint-v1.png`
+   (`6f5173598fb3a2821391f1b961b225434107757af4a4a37efb7d75368b58b708`)
+   and playable `public/art/stages/e04-stage-09-final-checkpoint-v1.png`
+   (`854be055f291a8c6485e058bcbecb67912a6dbebe42ffc6db1d080cdae63b4f4`)
+   are superseded review outputs retained only for provenance.
+
+All nine backgrounds are blank of story answers. Picture order, controlled
+differences, ordered placement records, measurements, retained attempts, independent-check
+records and outcomes remain deterministic game overlays. The Friend Check
+background's three decorative desk slots are not canonical counters; the game
+must display the exact four checks separately. Exact visual and music custody
+is verified by `media/e04/CHECKSUMS.sha256`.

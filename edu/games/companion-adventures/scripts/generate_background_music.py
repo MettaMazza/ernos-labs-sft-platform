@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Create three original, gentle looping scores for the offline learning game."""
+"""Create original, gentle looping scores for the offline learning game."""
 
 from __future__ import annotations
 
+import argparse
 import math
 import subprocess
 import tempfile
@@ -42,6 +43,13 @@ def tone(frequency: float, seconds: float, kind: str = "soft", phase: float = 0.
     elif kind == "pluck":
         raw = np.sin(2 * math.pi * frequency * t + phase) + 0.22 * np.sin(2 * math.pi * frequency * 2 * t)
         raw *= np.exp(-5.2 * t / max(seconds, 0.01))
+    elif kind == "wood":
+        raw = (
+            0.86 * np.sin(2 * math.pi * frequency * t + phase)
+            + 0.19 * np.sin(2 * math.pi * frequency * 3.0 * t + 0.2)
+            + 0.08 * np.sin(2 * math.pi * frequency * 4.02 * t)
+        )
+        raw *= np.exp(-6.2 * t / max(seconds, 0.01))
     else:
         raw = (
             0.72 * np.sin(2 * math.pi * frequency * t + phase)
@@ -89,13 +97,24 @@ def make_track(bpm: int, chords: list[tuple[int, int, int]], melody: list[int], 
             add_note(track, note, step * beat / 2, 0.54 * beat, 0.070, (-0.35, 0.35)[step % 2], "pluck")
         for beat_index in range(BEATS):
             add_note(track, 50 if beat_index % 4 in (0, 2) else 57, beat_index * beat, 0.32 * beat, 0.032, 0.0, "pluck")
-    else:
+    elif style == "trail":
         pattern = [0, 1, 0, 2, 0, 1, 3, 2]
         for step in range(BEATS * 2):
             note = melody[pattern[step % len(pattern)] % len(melody)]
             add_note(track, note, step * beat / 2, 0.46 * beat, 0.066, -0.45 if step % 2 else 0.45, "pluck")
         for bar in range(BEATS // 4):
             add_note(track, melody[(bar + 1) % len(melody)] + 12, (bar * 4 + 1.75) * beat, 0.9 * beat, 0.032, 0.65, "bell")
+    elif style == "garden":
+        # Paired wooden notes make a gentle "look, check" call-and-answer.
+        pattern = [0, 2, 1, 2, 3, 2, 1, 2]
+        for step in range(BEATS * 2):
+            note = melody[pattern[step % len(pattern)] % len(melody)]
+            add_note(track, note, step * beat / 2, 0.42 * beat, 0.068, -0.38 if step % 2 else 0.38, "wood")
+        for bar in range(BEATS // 4):
+            # One soft chime closes each checked phrase without sounding like a reward alarm.
+            add_note(track, melody[(bar * 2 + 1) % len(melody)] + 12, (bar * 4 + 3.0) * beat, 0.72 * beat, 0.030, 0.58, "bell")
+    else:
+        raise ValueError(f"Unknown score style: {style}")
 
     # A quiet two-tap echo gives each loop a soft room rather than a hard edge.
     for delay_seconds, amount in ((0.19, 0.12), (0.37, 0.07)):
@@ -119,23 +138,36 @@ def write_wave(path: Path, track: np.ndarray) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--score",
+        default="all",
+        choices=("all", "level-one", "level-two", "level-three", "level-four"),
+        help="Render one score without rewriting the other checked releases.",
+    )
+    args = parser.parse_args()
+
     output = Path(__file__).resolve().parents[1] / "public" / "audio" / "music"
     output.mkdir(parents=True, exist_ok=True)
     scores = {
         "level-one": (72, [(48, 55, 64), (45, 52, 60), (41, 48, 57), (43, 50, 59)], [72, 76, 79, 83, 79, 76], "stars"),
         "level-two": (84, [(50, 57, 66), (47, 54, 62), (43, 50, 59), (45, 52, 61)], [66, 69, 73, 69, 71, 74, 73, 69], "workshop"),
         "level-three": (96, [(40, 47, 55), (48, 55, 64), (43, 50, 59), (38, 45, 54)], [64, 67, 71, 74], "trail"),
+        "level-four": (78, [(43, 50, 59), (40, 47, 55), (48, 55, 64), (50, 57, 66)], [67, 71, 69, 71, 74, 71, 69, 67], "garden"),
     }
+    selected = scores.items() if args.score == "all" else ((args.score, scores[args.score]),)
     with tempfile.TemporaryDirectory(prefix="sft-story-music-") as temporary:
         temporary_path = Path(temporary)
-        for name, (bpm, chords, melody, style) in scores.items():
+        rendered = 0
+        for name, (bpm, chords, melody, style) in selected:
             wave_path = temporary_path / f"{name}.wav"
             write_wave(wave_path, make_track(bpm, chords, melody, style))
             subprocess.run([
                 "ffmpeg", "-loglevel", "error", "-y", "-i", str(wave_path),
                 "-codec:a", "libmp3lame", "-b:a", "112k", "-ar", str(RATE), str(output / f"{name}.mp3"),
             ], check=True)
-    print(f"Created {len(scores)} original looping scores in {output}")
+            rendered += 1
+    print(f"Created {rendered} original looping score{'s' if rendered != 1 else ''} in {output}")
 
 
 if __name__ == "__main__":

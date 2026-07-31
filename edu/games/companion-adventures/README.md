@@ -1,8 +1,9 @@
 # SFT Learning Adventures
 
-This offline game now contains three complete book companions: E01 *The Star
-Door Mystery*, E02 *The Moon Lantern Workshop* and E03 *The Turning-Light
-Trail*. The level selector opens any of the three fixed, animated adventures.
+This offline game now contains four complete book companions: E01 *The Star
+Door Mystery*, E02 *The Moon Lantern Workshop*, E03 *The Turning-Light Trail*
+and E04 *The Garden Checkpoint*. The level selector opens any of the four fixed,
+animated adventures.
 None is a quiz-card stack or a
 read-and-scroll page.
 
@@ -32,6 +33,15 @@ repairs the first broken move, guides Vee over and under five arches, compares
 three complete route maps and reuses the same rule with star and leaf. Each
 stage has a recoverable wrong path, three visible try lights and replay.
 
+In Level Four the turning light reaches the Sunrise Arch and reveals a closed
+garden gate. The child observes the four-picture source, builds and rebuilds
+the Garden Welcome Sign, keeps complete failed tries, compares both changed
+corners, follows an ordered placement trace, measures width and height as
+separate questions, guides Ivo through a fresh check and matches four visible
+records at the final checkpoint. Its nine games preserve failed attempts,
+support three-try recovery and vary only proven-solvable presentation details
+on replay; the source itself never changes.
+
 The note comes through the Star Door's letter box, establishes five clues, and every checked clue
 lights one star and five stars open the final chamber. A new parcel appears only
 after the completed map is filed. Six book codes unlock optional jokes, visits
@@ -41,7 +51,7 @@ or previews; they never gate an explanation, star, route or answer.
 
 Sol, Tavi and Mia are the permanent adventure trio. Each level or book
 introduces no more than one memorable lesson character; E01 introduces Nori,
-E02 introduces Pax and E03 introduces Vee. A
+E02 introduces Pax, E03 introduces Vee and E04 introduces Ivo. A
 guest character may return
 later through a natural story encounter or as an optional hint earned after a
 genuine attempt. Returning characters can recall how to look or check, but must
@@ -50,7 +60,7 @@ never state the new answer. The formal continuity record is
 
 ## Level selection and mobile play
 
-The landing page shows all three available adventure levels. Each can start or resume
+The landing page shows all four available adventure levels. Each can start or resume
 from device-local progress. The
 in-level home control and the ending screen return to level selection without a
 page reload. The app root and every moving stage are locked to the visible
@@ -59,16 +69,16 @@ and tablet play.
 
 ## Offline narration, music and privacy
 
-One hundred and four lines were pre-rendered from Maria Smith's local Kokoro
-ONNX model and voice weights: 40 for Level One, 32 for Level Two and 32 for
-Level Three. Audio is bundled under `public/audio/e01-v1.6.0/`,
-`public/audio/e02-v1.0.0/` and `public/audio/e03-v1.0.0/`; after installation
-the game does not need the model or an internet connection. Captions are always
-available.
+One hundred and thirty-six lines were pre-rendered from Maria Smith's local
+Kokoro ONNX model and voice weights: 40 for Level One and 32 each for Levels
+Two, Three and Four. Audio is bundled under `public/audio/e01-v1.6.0/`,
+`public/audio/e02-v1.0.0/`, `public/audio/e03-v1.0.0/` and
+`public/audio/e04-v1.0.0/`; after installation the game does not need the model
+or an internet connection. Captions are always available.
 
 Each level also has its own original instrumental background score:
-`public/audio/music/level-one.mp3`, `level-two.mp3` and `level-three.mp3`.
-These three distinct loops were composed and synthesized locally by
+`public/audio/music/level-one.mp3`, `level-two.mp3`, `level-three.mp3` and
+`level-four.mp3`. These four distinct loops were composed and synthesized locally by
 `scripts/generate_background_music.py` from programmed notes and tones; no
 streamed or stock recording is used. Music begins only after the child starts
 the narrated introduction, loops quietly and ducks while someone speaks. It
@@ -79,7 +89,8 @@ level is exited or changed. Movement and interaction effects are made locally
 in the browser with Web Audio.
 
 The game collects no name, age, email, location, voice, image or analytics. It
-saves only progress on the device. Start Over removes that record.
+saves only progress on the device. Start a fresh game removes all four progress
+records after confirmation.
 
 ## Run and verify
 
@@ -96,7 +107,7 @@ npm run build
 Devices on the same local network can open the computer's displayed LAN URL.
 Public hosting is not authorised and remains blocked by the dependency review.
 
-The scientific sources and exact receipt hashes for all three levels are recorded in
+The scientific sources and exact receipt hashes for all four levels are recorded in
 `game-manifest.json` and `claim-map.json`.
 Art and voice systems have no scientific-authority role. This is a review build,
 not an approved final publication.

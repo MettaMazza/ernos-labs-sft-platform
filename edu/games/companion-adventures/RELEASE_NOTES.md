@@ -1,8 +1,36 @@
-# SFT Learning Adventures - review 2.0.0
+# SFT Learning Adventures - review 2.1.0
 
 Prepared: 31 July 2026
 Author: Maria Smith  
 Status: working review; not finally approved or publicly hosted
+
+## Level Four companion implementation
+
+- Added the complete nine-stage companion to E04 *Look Again: How We Check*.
+- Continued directly from the Level Three Sunrise Arch ending to the closed
+  garden gate and the four-picture Garden Welcome Sign.
+- Kept Mia, Sol and Tavi as the permanent trio and introduced only Ivo, the
+  garden checker.
+- Built nine distinct games for observation, source-led construction, covered
+  rebuild, retained-failure comparison, ordered trace, width measurement,
+  fresh friend checking, a separate height question and a four-record final
+  checkpoint.
+- Fixed the source throughout the level as SUN to sunflower, MOON to bee, LEAF
+  to watering can and STAR to boot. Replay changes card, trace, tool and record
+  presentation only within checked solvable variants.
+- Retained every complete failed rebuild, wrong trace step and wrong checkpoint
+  match so a mistake remains useful evidence instead of disappearing.
+- Added three visible try lights, recoverable round loss, touch alternatives,
+  device-local restoration and app-switch narration cancellation.
+- Added 32 exact-caption Kokoro lines, Ivo's continuing voice, nine optional
+  book-code surprises and a distinct local garden-check music track.
+- Enabled Level Four in the selector, linked the Level Three ending directly to
+  it and extended the confirmed fresh-game reset across all four levels.
+- Added deterministic lifecycle coverage for all nine mechanics, the fixed
+  source, replay variation, caption lock, final lesson and local restoration.
+- Manual phone, tablet and desktop play-through results remain explicitly
+  pending in `MANUAL_QA.md`; this implementation is not a final-publication or
+  public-hosting approval.
 
 ## Level Two symmetry and story-order correction
 
@@ -43,7 +71,7 @@ Status: working review; not finally approved or publicly hosted
   route comparison and a new-role relay with delayed recall.
 - Added three visible try lights, recoverable round loss, replay variation and
   a genuine wrong path to every Level Three puzzle.
-- Added 28 exact-caption Kokoro lines from the local model and voice weights,
+- Added 32 exact-caption Kokoro lines from the local model and voice weights,
   including a final narrator lesson spoken directly to the child.
 - Preserved the exact Level Three scene, dialogue, unfinished activity and
   completed ending across reloads and mobile app switching.
@@ -63,7 +91,7 @@ Status: working review; not finally approved or publicly hosted
 - Renamed the counting interaction from abstract bridge tiles to carrying spots
   that track the actual lantern pieces.
 - Kept the mission banner visible while the first obstacle is explained.
-- Regenerated all 28 Level Two Kokoro lines from the revised captions,
+- Regenerated all 32 Level Two Kokoro lines from the revised captions,
   including the final direct-to-child lesson.
 
 ## Mobile ending escape fix
@@ -102,7 +130,7 @@ Status: working review; not finally approved or publicly hosted
 - Used clear labelled pictures for whole, gap, extra, overlap, four parts,
   same-size parts, held counts and four separate carrying spots.
 - Put object words above their pictures in the new activities.
-- Added 27 exact-caption Kokoro lines from the local model and voice weights.
+- Added 32 exact-caption Kokoro lines from the local model and voice weights.
 - Added separate device-local Level Two progress and active-level restoration.
 - Enabled Level Two on the landing screen without disturbing Level One.
 - Completed full visual play-throughs at 1280 × 720, 390 × 844, 390 × 724 and
