@@ -29,6 +29,21 @@ Status: working review; not finally approved or publicly hosted
 - Added an automated regression check for ending scrolling, fixed navigation
   and completed-session restoration.
 
+## Nine-stage mini-game rebuild
+
+- Replaced Level Two’s short tap prompts with nine named, distinct mini-games.
+- Added multi-step play to every stage: catching, unwrapping, inspecting,
+  fitting, measuring, delivering, collecting, repairing, building, lighting
+  and crossing a memory path.
+- Added an always-visible mini-game title and live progress counter so a child
+  knows what they are playing and what remains.
+- Kept every mini-game replayable, with sound feedback, gentle wrong-answer
+  guidance and no penalty for trying again.
+- Kept each mechanic inside the Moon Lantern journey rather than interrupting
+  the story with unrelated quizzes.
+- Completed all nine revised mini-games at 360 × 640 and inspected the desktop
+  layout at 1280 × 720.
+
 - Added the complete nine-stage companion to E02 *One Whole, Many Parts*.
 - Added Pax as the only new Level Two guest while keeping Mira, Sol and Tavi as
   the permanent team.

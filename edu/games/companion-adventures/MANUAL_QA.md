@@ -156,6 +156,31 @@ used the Levels control.
 - The selector retained the completed progress and offered `Play Level 2
   again`; choosing replay starts a fresh Level Two journey.
 
+## Level Two nine-mini-game play-through
+
+Level Two was replayed from its first line through all nine revised mini-games
+at 360 × 640:
+
+1. `Parcel Dash`: caught the moving parcel, removed three separate ribbons,
+   lifted the lid and read the card.
+2. `Lantern Detective`: chose the whole lantern and inspected all three clues.
+3. `Fit-the-Circle Lab`: chose the sound plan and fitted all four parts.
+4. `Twin-Part Test`: found the same-size pair and measured both parts.
+5. `Doorway Delivery`: selected each part and paired it with one unused spot;
+   all eight part-and-spot touches remained clear of the phone controls.
+6. `Count-and-Collect`: collected two parts from Pax, unlocked the tray and
+   collected the other two.
+7. `Gap Repair`: fitted the missing part, activated three repair sparks and
+   moved the extra triangle outside.
+8. `Lantern Builder`: placed all four parts and woke all four lantern lights.
+9. `Memory Moonwalk`: answered the delayed recall, crossed four stones in order
+   and placed the lantern on its stand.
+
+Each mini-game displayed its own title and live progress. Success led back into
+the story and `Play again` restarted the complete mini-game. A wrong delayed-
+recall answer produced a gentle clue without changing progress. The activity
+and prompt regions did not overlap at 1280 × 720.
+
 This QA makes E01 review 1.6.0, E02 review 1.0.0 and unified game review 2.0.0
 ready for Maria Smith's next play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

@@ -125,10 +125,19 @@ test("every stage background and the permanent trio plus one E01 guest are decla
   assert.match(continuity.policy, /no more than one new guest character/i);
 });
 
-test("Level Two has nine connected replayable games and one new guest", async () => {
+test("Level Two has nine distinct multi-step replayable mini-games and one new guest", async () => {
   for (const activity of ["parcel", "whole", "bridge", "parts", "rebuild", "match", "gap", "count", "recall"]) {
     assert.match(levelTwo, new RegExp('scene.activity === "' + activity + '"'));
   }
+  for (const title of ["Parcel Dash", "Lantern Detective", "Fit-the-Circle Lab", "Twin-Part Test", "Doorway Delivery", "Count-and-Collect", "Gap Repair", "Lantern Builder", "Memory Moonwalk"]) {
+    assert.match(levelTwo, new RegExp('gameTitle: "' + title + '"'));
+    assert.ok(manifest.interaction_system.level_2.some((description) => description.startsWith(title + ":")));
+  }
+  assert.equal((levelTwo.match(/gameTitle: "/g) ?? []).length, 9);
+  for (const mechanic of ["Undo every ribbon", "Inspect the whole", "Fit part", "Measure both equal parts", "Pick one lantern part first", "collected", "Repair spark", "Wake light", "Cross in order"]) {
+    assert.ok(levelTwo.includes(mechanic), mechanic + " is implemented");
+  }
+  assert.match(levelTwo, /MINI-GAME/);
   assert.equal((levelTwo.match(/id: "/g) ?? []).length, 9);
   assert.match(levelTwo, /New friend for Level Two/);
   assert.match(levelTwo, /introduces: "pax"/);
