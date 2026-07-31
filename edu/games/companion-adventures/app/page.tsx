@@ -24,20 +24,20 @@ const scenes: Scene[] = [
     id: "note", title: "A note comes through", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], activity: "note",
     lines: [
       { speaker: "Narrator", text: "Before breakfast, Mira, Sol and Tavi met in the star room. The Star Door was shut.", audio: "01-narrator-door-shut" },
-      { speaker: "Narrator", text: "A note slid through the letter box and landed beside Mira's boots.", audio: "02-narrator-note-through-letter-box" },
-      { speaker: "Narrator", text: "Mira bent down, picked up the note and opened it.", audio: "03-narrator-mira-picks-up-note" },
+      { speaker: "Narrator", text: "A note came through the letter box and landed next to Mira.", audio: "02-narrator-note-through-letter-box" },
+      { speaker: "Narrator", text: "Mira picked up the note and opened it.", audio: "03-narrator-mira-picks-up-note" },
       { speaker: "Mira", text: "I found a note! It says: Find nothing. Five clues will show the way.", audio: "04-mira-finds-and-reads-note" },
-      { speaker: "Sol", text: "Find nothing? That sounds very strange. I want to see what the clues show us!", audio: "05-sol-strange-mystery" },
-      { speaker: "Tavi", text: "Let's stay together and check everything we find. First, can you spot Mira's note?", audio: "06-tavi-spot-note" },
+      { speaker: "Sol", text: "Find nothing? That is a funny thing to look for. Let's follow the clues!", audio: "05-sol-strange-mystery" },
+      { speaker: "Tavi", text: "Let's stay together and look carefully. First, can you spot Mira's note?", audio: "06-tavi-spot-note" },
     ],
     prompt: "Mira picked up the note that came through the letter box. Tap the note.",
-    success: { speaker: "Mira", text: "You found the note. Look at the five empty star shapes at the top. They have no gold stars in them yet. Each checked clue will fill one. The first arrow is glowing beside the parcel!", audio: "07-mira-star-map" },
+    success: { speaker: "Mira", text: "You found the note. Look at the five star outlines at the top. None are gold yet. Each clue will turn one star gold. The first arrow points to the parcel!", audio: "07-mira-star-map" },
   },
   {
     id: "box", title: "The parcel clue", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], journey: "The first arrow points across the star room to the parcel.", activity: "box", star: 1,
     lines: [
-      { speaker: "Narrator", text: "Mira carried the note. The three friends followed its gold arrow across the room. It pointed to a parcel.", audio: "08-narrator-to-parcel" },
-      { speaker: "Sol", text: "I opened the parcel. My brown teddy is inside. There is my toy!", audio: "09-sol-sees-toy" },
+      { speaker: "Narrator", text: "The friends followed the arrow across the room. It pointed to a parcel.", audio: "08-narrator-to-parcel" },
+      { speaker: "Sol", text: "I opened the parcel. Look! My brown teddy is inside.", audio: "09-sol-sees-toy" },
       { speaker: "Tavi", text: "The first clue says to move the teddy. Tap the toy to lift it out. Then tap the box and look inside.", audio: "10-tavi-move-then-look" },
     ],
     prompt: "First move the teddy outside. Then tap the box and look inside.",
@@ -46,11 +46,11 @@ const scenes: Scene[] = [
   {
     id: "bell", title: "Meet Nori in the bell room", background: "e01-stage-02-bell-gallery-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The box was still there, so the next arrow leads to the bell room.", introduces: "nori", activity: "bell", star: 2,
     lines: [
-      { speaker: "Narrator", text: "The box was empty, but it was still a box. They had not found a thing called nothing. A gold star appeared on the map, and a blue door opened.", audio: "12-narrator-first-star-door" },
-      { speaker: "Narrator", text: "Mira carried the note through the doorway. Sol and Tavi followed her into a room with three big bells.", audio: "13-narrator-enter-bells" },
+      { speaker: "Narrator", text: "They had found an empty box, not a thing called nothing. The first star turned gold. A blue door opened.", audio: "12-narrator-first-star-door" },
+      { speaker: "Narrator", text: "The friends went through the door. They entered a room with three big bells.", audio: "13-narrator-enter-bells" },
       { speaker: "Nori", text: "Hello! I am Nori. I listen for tiny sounds. May I help you check the bell room?", audio: "14-nori-meets" },
-      { speaker: "Mira", text: "Yes, please. The note asks us to find nothing. The first room showed us a box. Let's see what this room shows us.", audio: "15-mira-welcome" },
-      { speaker: "Nori", text: "The wind has stopped, and the big bell is not moving. Hold the bell picture while we stay very quiet and listen.", audio: "16-nori-listen" },
+      { speaker: "Mira", text: "Yes, please. The note tells us to find nothing. We found an empty box in the first room. Let's check the bells next.", audio: "15-mira-welcome" },
+      { speaker: "Nori", text: "The wind stopped, and the big bell stopped moving. Hold the bell while we stay quiet and listen.", audio: "16-nori-listen" },
     ],
     prompt: "Press and hold the big bell while everyone listens.",
     success: { speaker: "Nori", text: "The bell did not ring while we listened. I heard my breath, and the bell stayed right there. We found a quiet bell, not a thing called nothing.", audio: "17-nori-no-ring" },
@@ -58,12 +58,12 @@ const scenes: Scene[] = [
   {
     id: "card", title: "The paper room", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The bell stayed in the room, so everyone follows the next arrow to the paper room.", activity: "card", star: 3,
     lines: [
-      { speaker: "Narrator", text: "The bell did not ring, but it was still there. The second star lit, and another blue door opened into a room filled with paper.", audio: "18-narrator-to-paper" },
+      { speaker: "Narrator", text: "The bell did not ring, but it was still there. The second star turned gold. A door opened to the paper room.", audio: "18-narrator-to-paper" },
       { speaker: "Mira", text: "I found a white card on this table. Look, there are no marks on it yet.", audio: "19-mira-finds-card" },
-      { speaker: "Tavi", text: "Touch the card. You may draw a mark, or choose Leave blank so the card keeps no marks.", audio: "20-tavi-draw-or-leave" },
+      { speaker: "Tavi", text: "Touch the card. You can draw a mark, or choose Leave blank and do not draw.", audio: "20-tavi-draw-or-leave" },
     ],
     prompt: "Draw on the card—or leave it blank—then check.",
-    success: { speaker: "Mira", text: "If you drew, the mark and the card are here. If you left it blank, blank means there is no mark on this card. The card is still here either way.", audio: "21-mira-card-result" },
+    success: { speaker: "Mira", text: "If you drew, there is a mark on the card. If you did not draw, the card is blank. Blank means there is no mark on the card. The card is still here both times.", audio: "21-mira-card-result" },
   },
   {
     id: "word", title: "Seven glowing letters", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The card stayed there, so seven wall tiles light up for the next clue.", activity: "word", star: 4,
@@ -72,7 +72,7 @@ const scenes: Scene[] = [
       { speaker: "Sol", text: "Each glowing tile shows one letter. Read them from left to right with me!", audio: "23-sol-step" },
     ],
     prompt: "Tap the letters in order to spell NOTHING.",
-    success: { speaker: "Tavi", text: "The seven letters spell the word nothing. We can see and read it. Nothing is the word on the tiles. It is a word, not a thing.", audio: "24-tavi-word" },
+    success: { speaker: "Tavi", text: "The seven letters spell the word nothing. We can see and read the word. The word does not show us a thing called nothing.", audio: "24-tavi-word" },
   },
   {
     id: "curtain", title: "Behind the curtain", background: "e01-stage-04-curtain-passage-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The word stayed visible, so a golden arrow leads everyone to the curtain passage.", activity: "curtain", star: 5,
@@ -82,12 +82,12 @@ const scenes: Scene[] = [
       { speaker: "Nori", text: "Slide the curtain slowly. Let's see what is behind it.", audio: "27-nori-curtain" },
     ],
     prompt: "Slowly slide the curtain open and watch for the toy.",
-    success: { speaker: "Mira", text: "There is the teddy. Hidden means the curtain blocked it from our view. The toy did not disappear. Opening the curtain let us see it again.", audio: "28-mira-hidden" },
+    success: { speaker: "Mira", text: "There is the teddy. Hidden means it was there, but the curtain stopped us from seeing it. The toy did not disappear.", audio: "28-mira-hidden" },
   },
   {
     id: "doors", title: "The final question", background: "e01-stage-05-star-door-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "Five clues are complete, so five bright stars open the Star Door.", activity: "doors",
     lines: [
-      { speaker: "Narrator", text: "Opening the curtain showed the teddy, so the fifth star lit. All five bright stars turned together, and the Star Door opened.", audio: "29-narrator-to-doors" },
+      { speaker: "Narrator", text: "Opening the curtain showed the teddy. The fifth star turned gold. Now all five stars were gold, and the Star Door opened.", audio: "29-narrator-to-doors" },
       { speaker: "Narrator", text: "Behind the Star Door were two small doors. Door A had a white card on its shelf. Door B had an empty shelf.", audio: "30-narrator-two-doors" },
       { speaker: "Mira", text: "My note still says, Find nothing. Tap both small doors. We must look at each one before we answer.", audio: "31-mira-question" },
     ],
@@ -180,7 +180,7 @@ export default function Home() {
   function playLine(line = currentLine) {
     if (!line || muted) return;
     audioRef.current?.pause();
-    const audio = new Audio(`/audio/e01-v1.5.0/${line.audio}.mp3`);
+    const audio = new Audio(`/audio/e01-v1.6.0/${line.audio}.mp3`);
     audioRef.current = audio;
     audio.play().catch(() => undefined);
   }
@@ -397,6 +397,7 @@ export default function Home() {
       <div className="stage-light" />
       {beat === 0 && scene.journey && <div className="journey-banner"><span aria-hidden="true">✨</span><strong>{scene.journey}</strong></div>}
       {scene.introduces && beat <= 1 && <div className="guest-banner">New friend for Level One: <strong>{characterNames[scene.introduces]}</strong></div>}
+      {scene.id === "note" && beat >= 1 && !dialogueDone && <div className={`story-note ${beat >= 2 ? "picked-up" : "landed"}`} role="img" aria-label={beat >= 2 ? "Mira is holding the note" : "The note has landed next to Mira"}><strong>Note</strong><span aria-hidden="true">📝</span></div>}
       <div className="walking-cast" aria-hidden="true">{scene.cast.map((name, index) => <CharacterSprite key={name} name={name} index={index} speaking={speakingName === name} />)}</div>
       {dialogueDone && !complete && <div className="activity-layer">{activity()}</div>}
       {earnedStar && <div className="star-reward" role="status"><span aria-hidden="true">★</span><strong>Clue star {earnedStar} lights!</strong></div>}

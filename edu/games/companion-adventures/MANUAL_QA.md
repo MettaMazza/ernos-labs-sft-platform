@@ -1,13 +1,13 @@
 # Level One manual end-to-end QA
 
-Version: 1.5.0 review
+Version: 1.6.0 review
 Date: 30 July 2026
 Final-publication approval: pending Maria Smith's review
 
 ## Complete journey tested
 
 The complete 1.4.3 game structure was manually played from opening to ending on
-desktop and phone. Review 1.5.0 keeps those activities and adds the plain-language
+desktop and phone. Review 1.6.0 keeps those activities and adds the plain-language
 dialogue and exact mobile restoration checks recorded below:
 
 1. A note comes through the shut Star Door's letter box and establishes five clues.
@@ -68,7 +68,7 @@ indicator is anchored to her visible portrait box beside her head.
 - scientific claim and receipt identity: pass;
 - all 35 narration files present: pass.
 
-## 1.5.0 mobile restoration and wording regression
+## 1.6.0 mobile restoration and wording regression
 
 - At 390 pixels wide, reloading during Sol's first parcel line returned to that
   exact sentence instead of the level selector.
@@ -78,6 +78,10 @@ indicator is anchored to her visible portrait box beside her head.
 - The opening used only Star Door, letter box and note; no decorative material,
   geometric slot description or unexplained door action remained.
 - The generated Kokoro files were rebuilt from the exact 35 revised captions.
+- At 390 by 724 pixels, the labelled note lands beside Mira on the matching
+  caption and moves to her hand on “Mira picked up the note and opened it.”
+- Leaving for another browser tab and returning preserved that exact line and
+  the picked-up note. Reloading preserved the same state too.
 
-This QA makes review 1.5.0 ready for Maria Smith's next play test. It does not approve
+This QA makes review 1.6.0 ready for Maria Smith's next play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

@@ -37,6 +37,11 @@ BANNED_CHILD_PHRASES = (
     "cream card",
     "rebuild the trace",
     "woke with a clunk",
+    "great brass door",
+    "magical door",
+    "gold seal",
+    "passes all three checks",
+    "split along the same lines",
 )
 
 
@@ -77,8 +82,8 @@ def verify(path: Path) -> None:
     if "E01" in book.get("book_id", ""):
         for phrase in (
             "the star door was shut",
-            "a note slid through the letter box",
-            "mira bent down, picked up the note and opened it",
+            "a note came through the letter box",
+            "mira picked up the note and opened it",
             "his brown teddy was inside",
             "empty means there is no toy inside this box",
         ):
@@ -93,10 +98,10 @@ def verify(path: Path) -> None:
         require("four-piece" not in by_page[26], f"{path}: page 26 states the whole count before asking")
         require("one space is open" not in by_page[23], f"{path}: page 23 heading gives away its answer")
         require("they are equal in size" in by_page[22], f"{path}: equal in size is not plainly defined after the activity")
-        require("whole means all of the lantern is here" in by_page[8], f"{path}: whole is not plainly defined after the activity")
+        require("whole means every part is here" in by_page[8], f"{path}: whole is not plainly defined after the activity")
         require("the little wall door opened" in by_page[3], f"{path}: page 3 does not show where the parcel came from")
-        require("the parcel opened" in by_page[4], f"{path}: page 4 does not show how the lantern appeared")
-        require("too wide for the door" in by_page[5], f"{path}: page 5 does not explain the first obstacle")
+        require("opened the parcel" in by_page[4], f"{path}: page 4 does not show how the lantern appeared")
+        require("too wide to go through the door" in by_page[5], f"{path}: page 5 does not explain the first obstacle")
 
     print(f"Early Years language verified: {path}")
 

@@ -3,7 +3,7 @@
 **Shelf:** Early Years / Foundation
 **SFT branch:** Foundation
 **Scientific source:** `SFT-ROOT-THERE-IS-NO-NOTHING`
-**Current working edition:** 1.5.0 review
+**Current working edition:** 1.6.0 review
 **Final-publication approval:** pending Maria Smith's decision
 
 *Something Is Here: The Star Door Mystery* begins the SFT Open Education
@@ -20,7 +20,7 @@ gates a clue, explanation, route, star or answer.
 
 ## Current package
 
-- `source/book-v1.5.0.json` — complete canonical 32-page source and picture
+- `source/book-v1.6.0.json` — complete canonical 32-page source and picture
   descriptions.
 - `source/render_e01_v1_5.py` — reproducible student PDF, adult PDF and semantic
   HTML renderer.
@@ -28,12 +28,12 @@ gates a clue, explanation, route, star or answer.
   accessibility and returning-character rules.
 - `claim-map.json` — page-to-claim, vocabulary, code and companion mapping.
 - `book-manifest.json` — version, boundary, artifacts and completed checks.
-- `accessible/student-book-v1.5.0.html` — scalable semantic edition with a
+- `accessible/student-book-v1.6.0.html` — scalable semantic edition with a
   visible description and accessible image role for every page.
 - `edu/games/companion-adventures/` — the matching offline-first animated game.
 
 Rendered review PDFs are in
-`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.5.0/`.
+`output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/1.6.0/`.
 
 ## Rebuild and verify
 
@@ -41,7 +41,7 @@ Rendered review PDFs are in
 python3 -m pip install -r edu/books/E01-something-is-here/source/requirements.txt
 python3 edu/books/E01-something-is-here/source/render_e01_v1_5.py
 python3 edu/tools/verify_early_years_language.py \
-  edu/books/E01-something-is-here/source/book-v1.5.0.json \
+  edu/books/E01-something-is-here/source/book-v1.6.0.json \
   edu/books/E02-one-whole-many-parts/source/book-v0.1.0.json
 python3 edu/tools/verify_book.py edu/books/E01-something-is-here/book-manifest.json
 cd edu/games/companion-adventures
@@ -60,7 +60,7 @@ use an external model as scientific authority.
 
 ## Approval boundary
 
-Version 1.5.0 is a complete working review build. It must not enter
+Version 1.6.0 is a complete working review build. It must not enter
 `publications/education/current/` until Maria Smith explicitly approves this
 exact book-and-game version. Local-network testing is available; public hosting
 requires a separate decision and a cleared dependency review.

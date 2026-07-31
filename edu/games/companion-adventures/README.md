@@ -1,6 +1,6 @@
 # SFT E01 companion adventure
 
-*The Star Door Mystery* is the animated companion to review edition 1.5.0 of
+*The Star Door Mystery* is the animated companion to review edition 1.6.0 of
 E01 *Something Is Here*. A full-screen level selector leads into its fixed,
 moving stage: the adventure itself is not a quiz-card stack or read-and-scroll
 page. Level Two is already reserved as the next book-and-game milestone.
@@ -41,7 +41,7 @@ and tablet play.
 ## Offline narration and privacy
 
 Thirty-five lines were pre-rendered from Maria Smith's local Kokoro ONNX model
-and voice weights. Audio is bundled under `public/audio/e01-v1.5.0/`; after installation
+and voice weights. Audio is bundled under `public/audio/e01-v1.6.0/`; after installation
 the game does not need the model or an internet connection. Sound effects are
 made locally in the browser. Captions are always available.
 

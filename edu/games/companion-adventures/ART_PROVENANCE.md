@@ -118,3 +118,36 @@ cropping only for the earlier character and prop sheets. Stage images are used
 directly. Character and prop crops are transparent PNG files that the game
 moves independently over the stages; CSS supplies movement, touch targets,
 letter reveals and the draggable curtain without changing scientific content.
+
+## Level Two source art — review 1.0.0
+
+Prepared: 31 July 2026
+Scientific-authority status: none
+
+The same original warm 3D world was extended for *The Moon Lantern Workshop*.
+Image generation supplied illustration pixels only and did not supply or judge
+any SFT claim. Source generations are preserved under
+`public/art/stages/e02-source/`; the matching playable 16:9 crops are stored one
+directory above them.
+
+The generated stages are:
+
+1. `e02-stage-02-whole-room-v1.png` — one Moon Lantern, one narrow workshop
+   door and three blank choice spaces.
+2. `e02-stage-03-count-bridge-v1.png` — exactly four large glowing floor tiles.
+3. `e02-stage-04-part-gate-v1.png` — exactly three blank circular choices and
+   exactly four tray spaces.
+4. `e02-stage-05-rebuild-room-v1.png` — one empty round outline and exactly
+   four tray spaces. An earlier five-space generation was rejected and is not
+   used.
+5. `e02-stage-06-match-table-v1.png` — exactly two blank comparison mats.
+6. `e02-stage-07-checking-room-v1.png` — one circle divided into exactly four
+   spaces and one route onward.
+7. `e02-stage-08-balcony-v1.png` — one empty lantern stand, open doors and the
+   first evening star.
+
+Each prompt requested an original, child-friendly, wide 3D game environment
+with an open lower walking lane, clear countable spaces, no characters, no
+words, no interface, no logo or watermark, and no copied or recognisably
+similar third-party imagery. The generated backgrounds do not carry answers:
+the renderer and eventual game add the exact countable diagrams separately.

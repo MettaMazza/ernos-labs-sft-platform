@@ -1,9 +1,9 @@
 # Adult Guide — E02 *One Whole, Many Parts*
 
-Draft version 0.1.0
+Review version 1.0.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
-Final-publication status: incomplete review work; approval not requested
+Final-publication status: awaiting Maria Smith's approval
 
 ## Purpose
 

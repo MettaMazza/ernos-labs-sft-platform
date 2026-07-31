@@ -66,6 +66,12 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
 .actor-nori { left:76%; }
 .scene-note .actor-tavi,.scene-box .actor-tavi { left:42%; }
 .scene-note .actor-sol,.scene-box .actor-sol { left:70%; }
+.story-note { position:absolute; z-index:7; left:22%; bottom:30%; display:grid; justify-items:center; color:var(--night); filter:drop-shadow(0 10px 8px #0008); pointer-events:none; }
+.story-note strong { padding:4px 10px; border:2px solid white; border-radius:999px; background:var(--gold); font-size:.76rem; }
+.story-note span { font-size:clamp(3.6rem,7vw,5.4rem); line-height:1; }
+.story-note.landed { animation:note-lands .8s cubic-bezier(.2,.9,.25,1) both,note-glows 1.1s .8s ease-in-out infinite alternate; }
+.story-note.picked-up { left:19%; bottom:32%; animation:note-lifts .55s cubic-bezier(.2,.9,.25,1) both,note-glows 1.1s .55s ease-in-out infinite alternate; }
+.story-note.picked-up span { font-size:clamp(2.7rem,5vw,4rem); }
 
 .speech-panel { position:absolute; z-index:15; left:clamp(12px,3vw,42px); right:clamp(12px,3vw,42px); bottom:clamp(13px,2.5vh,30px); min-height:138px; display:grid; grid-template-columns:78px 1fr auto; grid-template-rows:auto 1fr; align-content:center; gap:5px 18px; padding:16px clamp(18px,3vw,34px) 16px 18px; color:var(--ink); border:3px solid #d9b95e; border-radius:28px; background:#fffaf1f5; box-shadow:0 18px 50px #0008; backdrop-filter:blur(7px); }
 .speech-panel::before { content:""; position:absolute; top:-17px; left:16%; border:9px solid transparent; border-bottom-color:#d9b95e; }
@@ -163,6 +169,9 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
 @keyframes reward-arrives { 0%{opacity:0;transform:scale(.25) rotate(-15deg)} 20%,75%{opacity:1;transform:scale(1) rotate(0)} 100%{opacity:0;transform:scale(1.15)} }
 @keyframes toy-celebrates { 0%{transform:scale(.7);opacity:.4} 22%{transform:scale(1.35) rotate(-10deg);opacity:1} 40%{transform:scale(1.1) rotate(8deg)} 60%{transform:scale(1.25) rotate(-5deg)} 100%{transform:scale(1.1);opacity:1} }
 @keyframes surprise-shows { 0%{opacity:0;transform:scale(.4)} 15%,80%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:translateY(-18px)} }
+@keyframes note-lands { from{transform:translate(70px,-45vh) rotate(-18deg);opacity:0} to{transform:translate(0,0) rotate(5deg);opacity:1} }
+@keyframes note-lifts { from{transform:translateY(17vh) rotate(5deg)} to{transform:translateY(0) rotate(-4deg)} }
+@keyframes note-glows { to{filter:drop-shadow(0 0 15px #ffd35c) drop-shadow(0 10px 8px #0008)} }
 
 @media (max-width:760px) {
   .game-shell { min-height:520px; }
@@ -181,6 +190,7 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
   .actor-tavi { left:29%; }.actor-sol { left:51%; }.actor-nori { left:75%; }
   .scene-note .actor-tavi,.scene-box .actor-tavi { left:39%; }
   .scene-note .actor-sol,.scene-box .actor-sol { left:70%; }
+  .story-note { left:27%; bottom:31%; }.story-note.picked-up { left:18%; bottom:32%; }
   .scene-card .actor-mira,.scene-doors .actor-mira { left:2%; width:26vw; height:auto; }
   .actor.speaking::before { top:-2%; right:-2%; font-size:1.4rem; }
   .speech-panel { left:7px; right:7px; bottom:8px; min-height:158px; grid-template-columns:56px 1fr auto; gap:4px 9px; padding:11px 11px 11px 8px; border-radius:20px; }

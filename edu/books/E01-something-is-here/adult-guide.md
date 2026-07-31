@@ -1,6 +1,6 @@
 # Adult Guide - E01 *Something Is Here*
 
-Review version 1.5.0
+Review version 1.6.0
 Author: Maria Smith
 Audience: parents, carers, early-years practitioners and teachers
 Final-publication status: awaiting Maria Smith's approval
@@ -8,8 +8,8 @@ Final-publication status: awaiting Maria Smith's approval
 ## Purpose
 
 The child joins the permanent team, Mira, Sol and Tavi, in one continuous
-journey. The Star Door is shut. A note slides through its letter box and lands
-beside Mira. She picks it up, opens it and reads **FIND NOTHING. FIVE CLUES WILL
+journey. The Star Door is shut. A note comes through its letter box and lands
+next to Mira. She picks it up, opens it and reads **FIND NOTHING. FIVE CLUES WILL
 SHOW THE WAY.** The note begins the journey. Each star opens the way to the next
 room: the parcel, bells, paper, letter tiles and curtain. Nori is the one new
 friend introduced in this adventure. Five checked clues open the Star Door.

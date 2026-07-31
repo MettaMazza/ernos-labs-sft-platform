@@ -1,7 +1,7 @@
-# E01 *Something Is Here* - Review version 1.5.0
+# E01 *Something Is Here* - Review version 1.6.0
 
 Status: complete working edition under review
-Prepared: 30 July 2026
+Prepared: 31 July 2026
 Author: Maria Smith
 Licence: CC BY 4.0
 Final-publication approval: pending
@@ -10,8 +10,10 @@ Final-publication approval: pending
 
 - The Star Door is simply named; decorative material and shape descriptions
   were removed from the child text.
-- A note now clearly slides through the letter box, lands beside Mira, and is
+- A note now clearly comes through the letter box, lands next to Mira, and is
   picked up and opened before she reads it.
+- A series rule now rejects decorative mechanical phrases such as “great brass
+  door” or “rectangular slot” when the ordinary word is enough.
 - Every move between rooms states why the friends go there and what opens the
   way.
 - Sol sees his teddy inside the parcel before the child moves it. The word
@@ -34,11 +36,12 @@ Final-publication approval: pending
 
 ## Matching companion game
 
-Game review 1.5.0 uses the same revised wording and 35 caption-matched local
+Game review 1.6.0 uses the same revised wording and 35 caption-matched local
 Kokoro narration lines. Device-local progress now preserves the exact scene,
 dialogue turn and unfinished activity when a mobile browser hides or reloads
-the page. A 390-pixel mobile check confirmed that Sol's parcel line and the
-partly completed teddy activity both return correctly.
+the page. A 390-by-724 mobile check confirmed the note landing beside Mira,
+Mira picking it up, exact turn restoration after reload, and exact restoration
+after leaving for another tab and returning.
 
 ## Scientific and publication status
 

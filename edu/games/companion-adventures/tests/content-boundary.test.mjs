@@ -20,6 +20,10 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
   assert.match(source, /className="emoji-prop recall-box/);
   assert.match(source, /Find the note among three things/);
+  assert.match(source, /The note has landed next to Mira/);
+  assert.match(source, /Mira is holding the note/);
+  assert.match(styles, /@keyframes note-lands/);
+  assert.match(styles, /@keyframes note-lifts/);
   assert.match(source, /Play again/);
   assert.equal(manifest.levels.length, 8);
   assert.equal(manifest.interaction_system.length, manifest.levels.length);
@@ -45,16 +49,16 @@ test("automatic narration plays each story beat once and stops at the activity b
 
 test("the coherent child story has visible causes and short natural dialogue", () => {
   for (const phrase of [
-    "The Star Door was shut", "A note slid through the letter box",
-    "Mira bent down, picked up the note and opened it", "My brown teddy is inside",
-    "Tap the toy to lift it out. Then tap the box", "A gold star appeared on the map, and a blue door opened",
-    "Mira carried the note through the doorway", "I found a white card on this table",
+    "The Star Door was shut", "A note came through the letter box",
+    "Mira picked up the note and opened it", "My brown teddy is inside",
+    "Tap the toy to lift it out. Then tap the box", "The first star turned gold. A blue door opened",
+    "The friends went through the door", "I found a white card on this table",
     "seven wall tiles lit up, one after another", "My teddy rolled out of my bag",
-    "All five bright stars turned together, and the Star Door opened", "Mira folded the note",
+    "Now all five stars were gold, and the Star Door opened", "Mira folded the note",
   ]) assert.match(source, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.doesNotMatch(source, /operational distinction|candidate grammar|presented record|declared check|occurrence|registered partition|generated item|fitted tray/);
   assert.match(source, /Empty means there is no toy inside this box\. The box is still here/);
-  assert.match(source, /Hidden means the curtain blocked it from our view/);
+  assert.match(source, /Hidden means it was there, but the curtain stopped us from seeing it/);
   assert.match(source, /Door B showed an empty shelf/);
   assert.doesNotMatch(source, /woke with a clunk|brass|rectangular slot|folded paper note|Now the box has nothing in it|My toy! I knew I packed you/);
   assert.doesNotMatch(source, /\bShh\b|Vee|Moss|Luma/);
@@ -79,9 +83,9 @@ test("Kokoro narration is caption matched, bundled and offline", async () => {
   for (const [filename, speaker, caption] of narration.lines) {
     assert.match(source, new RegExp(`audio: \\"${filename}\\"`));
     assert.ok(source.includes(`speaker: "${speaker}", text: "${caption.replaceAll('"', '\\"')}"`));
-    await access(new URL(`../public/audio/e01-v1.5.0/${filename}.mp3`, import.meta.url));
+    await access(new URL(`../public/audio/e01-v1.6.0/${filename}.mp3`, import.meta.url));
   }
-  await access(new URL("../public/audio/e01-v1.5.0/generation-receipt.json", import.meta.url));
+  await access(new URL("../public/audio/e01-v1.6.0/generation-receipt.json", import.meta.url));
   assert.doesNotMatch(source, /\bfetch\s*\(|XMLHttpRequest|WebSocket|sendBeacon/);
 });
 
