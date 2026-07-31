@@ -16,6 +16,15 @@
 > checksum-verification boundary are indexed in
 > [`publication/FINAL_COMPLETE_FIELD_PUBLICATIONS_2026-07-29.md`](publication/FINAL_COMPLETE_FIELD_PUBLICATIONS_2026-07-29.md).
 
+> **Unison Fold AI preliminary computational proof (version 0.1.0-rc1):**
+> [read the PDF](output/pdf/sft-v3-unison-fold-ai-computational-proof-preliminary-v0.1.0-rc1.pdf),
+> [inspect the paper and reproducibility record](applications/frontier/v3_computational_proofs/Unison%20Fold%20AI/paper/UNISON_FOLD_AI_SFT_V3_COMPUTATIONAL_PROOF_PRELIMINARY.md),
+> or cite the standalone open-access record at
+> [Zenodo DOI 10.5281/zenodo.21726397](https://doi.org/10.5281/zenodo.21726397).
+> The active distilled model remains outside this preliminary result; completed
+> evidence will be issued through Zenodo's new-version action on the same
+> concept lineage.
+
 **Consciousness and Cognitive Science Foundational Branch Paper 001, version 1.0.0 - Smithian Fold Theory V3 Clean-Room Reconstruction**
 
 ## Abstract
