@@ -20,10 +20,14 @@ table syntax. Text extraction, receipt identity, accessible page structure,
 source-scene size and the nine challenge boundaries are checked by the
 checked-in release verifier.
 
-The matching Level Three was played through all nine stages at 390 × 844,
-including a deliberate wrong path and the success path in every puzzle. Selector
-and ending layouts were inspected at 768 × 1024 and 1440 × 900. Reload, tab
-switching, exact completion restoration, offline caption-matched narration and
+The matching Level Three was played through all nine stages at both 390 × 844
+and the supplied 579 × 1280 phone size, including deliberate wrong paths and
+the success path in every puzzle. The final phone boards use a deterministic
+moving catch lane, two always-visible Path Builder choices, a readable 3-by-2
+repair grid, fixed-height labelled bridge arches and stacked route cards.
+Selector and ending layouts were inspected at 768 × 1024 and 1440 × 900.
+Reload during unfinished play, tab switching, exact completion restoration,
+the harmless animated book-code reward, offline caption-matched narration and
 the direct-to-child ending lesson passed their checks.
 
 This is a GitHub review version under `edu`. It must not be copied into

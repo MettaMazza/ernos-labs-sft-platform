@@ -11,6 +11,7 @@ const manifest = JSON.parse(await readFile(new URL("../game-manifest.json", impo
 const claimMap = JSON.parse(await readFile(new URL("../claim-map.json", import.meta.url), "utf8"));
 const narration = JSON.parse(await readFile(new URL("../narration-manifest.json", import.meta.url), "utf8"));
 const continuity = JSON.parse(await readFile(new URL("../character-continuity.json", import.meta.url), "utf8"));
+const e02Book = JSON.parse(await readFile(new URL("../../../books/E02-one-whole-many-parts/source/book-v1.0.0.json", import.meta.url), "utf8"));
 
 test("Level One is a fixed animated stage, not a read-and-scroll choice menu", () => {
   assert.match(styles, /height:100dvh;[^}]*overflow:hidden/);
@@ -155,11 +156,18 @@ test("Level Two has nine distinct multi-step replayable mini-games and one new g
   for (const contract of ["mistakes", "roundLost", "retryRound", "TryLights"]) assert.match(levelTwo, new RegExp(contract));
   assert.equal(manifest.level_2.scenes.length, 9);
   assert.equal(manifest.interaction_system.level_2.length, manifest.level_2.scenes.length);
+  assert.deepEqual(manifest.level_2.scenes.slice(-2), ["sum", "rebuild"]);
   assert.match(levelTwo, /One part plus one part plus one part plus one part equals four parts/);
-  assert.match(levelTwo, /4 PARTS → 1 WHOLE LANTERN/);
+  assert.match(levelTwo, /4 COUNTED PARTS → 1 WHOLE LANTERN/);
+  assert.match(levelTwo, /The equation checked all four parts/);
+  assert.match(levelTwo, /That balanced match is called symmetrical/);
+  assert.match(levelTwo, /1: "top left", 2: "top right", 3: "bottom left", 4: "bottom right"/);
+  assert.match(levelTwo, /Take all 4 parts to the round frame/);
+  assert.doesNotMatch(levelTwo, /setActivityStep\(7\)/);
+  assert.match(styles, /\.lantern-plan-frame \{ grid-template-columns:repeat\(2,clamp\(56px,12vw,72px\)\)/);
   assert.ok(manifest.level_2.scientific_sources.some((source) => source.claim_id === "SFT-MATH-EXACT-ARITHMETIC-001"));
   assert.ok(manifest.level_2.scientific_sources.some((source) => source.claim_id === "SFT-MATH-ARITH-JUNCTION-ADDITION-002"));
-  for (let index = 2; index <= 8; index += 1) {
+  for (const index of [2, 3, 4, 6, 7, 8]) {
     const name = String(index).padStart(2, "0");
     const match = levelTwo.match(new RegExp('e02-stage-' + name + '-[^"]+\\.png'));
     assert.ok(match, "E02 stage " + name + " is referenced");
@@ -175,11 +183,23 @@ test("Level Two language is simple, causal and does not give answers before play
     "Mission: get the whole lantern through the small door",
     "take the lantern apart, carry every part through, and build the whole lantern again",
     "All four lantern parts went through the small door. Each part moved once",
-    "The same whole lantern is back",
-    "The four lantern parts were still separate",
+    "the same whole lantern is back",
+    "All four lantern parts were still separate",
   ]) assert.ok(levelTwo.includes(phrase));
   assert.doesNotMatch(levelTwo, /next door|next room|first door opens|last door opens/i);
   assert.doesNotMatch(levelTwo, /great brass|brass rectangular|magical door|registered|partition|fitted tray|coordinate|gold seal|door woke/i);
+});
+
+test("Book Two keeps four parts separate until addition and the one final rebuild", () => {
+  const page = (number) => e02Book.pages.find((entry) => entry.page === number);
+  assert.match(page(16).subtext, /Matching sides around the middle are called symmetrical/);
+  assert.match(page(23).text, /flat practice frame/);
+  assert.match(page(24).subtext, /returned all four parts to the carrying tray/);
+  assert.match(page(26).text, /four separate parts to the balcony/);
+  assert.match(page(28).text, /1 PART \+ 1 PART \+ 1 PART \+ 1 PART = \? PARTS/);
+  assert.match(page(29).text, /EQUALS sign says both sides count the same four parts/);
+  assert.doesNotMatch(e02Book.pages.filter((entry) => entry.page < 30).map((entry) => entry.text).join(" "), /same Moon Lantern was ONE WHOLE again/);
+  assert.match(page(30).text, /same Moon Lantern was ONE WHOLE again/);
 });
 
 test("Levels Two and Three use distinct consequence-bearing puzzle systems", () => {
@@ -199,6 +219,16 @@ test("Levels Two and Three use distinct consequence-bearing puzzle systems", () 
   assert.deepEqual(manifest.level_3.scientific_sources.map((source) => source.claim_id), ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
   assert.deepEqual(claimMap.levels.E03.claim_ids, ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
   assert.doesNotMatch(JSON.stringify(manifest.level_3), /pending-review/i);
+  assert.match(levelThree, /const lane = \(chosen\.length \+ mistakes \+ round\) % 3/);
+  assert.doesNotMatch(levelThree, /setInterval|belt\[tick/);
+  assert.match(levelThree, /className="conveyor-choices"/);
+  assert.match(manifest.interaction_system.level_3.join(" "), /one-turn.*letter changes on replay/i);
+  assert.match(levelThree, /aria-label="Restart Level Three"/);
+  assert.match(levelThree, /codeTreats/);
+  assert.match(levelThree, /className="code-treat"/);
+  assert.match(styles, /\.repair-row\{[^}]*grid-template-columns:repeat\(3,1fr\)/);
+  assert.match(styles, /\.bridge-lanes\{[^}]*height:260px/);
+  assert.match(styles, /\.route-map-cards\{[^}]*grid-template-columns:1fr/);
 });
 
 test("Level Three Kokoro narration matches every visible caption and is bundled", async () => {

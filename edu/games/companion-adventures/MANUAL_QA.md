@@ -7,9 +7,10 @@ Final-publication approval: pending Maria Smith's review
 ## Level Three complete journey
 
 Level Three was played from its opening Moon Lantern line to the lit Sunrise
-Arch at a 390 × 844 phone viewport. Every one of the nine puzzles was completed
-through the visible interface. A plausible wrong path was deliberately taken
-in every puzzle before the successful path:
+Arch at both the compact 390 × 844 phone viewport and the supplied 579 × 1280
+phone viewport. Every one of the nine puzzles was completed through the visible
+interface. A plausible wrong path was deliberately taken in every puzzle before
+the successful path:
 
 1. `Moon-and-Sun Catch`: moved the catcher between three lanes, missed a light,
    then caught blue moon, gold sun, blue moon and gold sun in order.
@@ -38,8 +39,8 @@ pulsed before a genuine attempt.
 
 ## Level Three visual, restoration and ending checks
 
-- Phone 390 × 844: complete play-through, all wrong paths, successes, replays,
-  final lesson and all ending controls.
+- Phone 390 × 844 and 579 × 1280: complete play-through, all wrong paths,
+  successes, replays, final lesson and all ending controls.
 - Tablet 768 × 1024: selector, cast/title spacing and completed ending checked.
 - Desktop 1440 × 900: selector and completed ending checked; the narrator
   lesson and all three controls fit without scrolling.
@@ -47,7 +48,15 @@ pulsed before a genuine attempt.
   tablet and desktop sizes.
 - The rebuilt bridge showed five numbered arches with explicit open and closed
   over/under lanes; all three route maps fit inside the phone board.
+- Rapidly pressing catch a second time failed after the light moved to a new
+  lane; `Path Builder` kept both moon and sun visible without a timer race.
+- `Rule Repair` used a readable 3-by-2 phone board, `Bridge Hop` kept Vee inside
+  a fixed-height arch board, and `Trail Mapper` used three full-width route
+  rows with recognisable symbols.
 - Reload during a dialogue restored the exact scene and dialogue turn.
+- Reload during a retained wrong `Rule Repair` attempt restored the same scene,
+  used try light and unfinished board; leaving for another tab and returning
+  preserved it too.
 - Leaving for another tab and returning preserved the current state and stopped
   narration while hidden.
 - A completed Level Three run reloaded to its exact ending. The selector offers
@@ -55,6 +64,8 @@ pulsed before a genuine attempt.
 - The ending narrator speaks directly to the child, defines a pattern, names
   the evidence used in the level and explains why prediction and locating a
   mistake matter.
+- The `TRAILLIGHT` book code displayed its animated music-and-lantern surprise
+  without exposing an answer or skipping a lesson.
 
 ## Level Two story-clarity replay
 
@@ -187,9 +198,9 @@ used the Levels control.
 
 ## Unified automated checks
 
-- eighteen application/content tests: pass;
+- nineteen application/content tests: pass;
 - plain-language gate for E01 and E02: pass;
-- lint: no errors; six expected image-optimisation warnings for local character
+- lint: no errors; seven expected image-optimisation warnings for local character
   sprites;
 - production build: pass;
 - all 92 caption-matched narration files present: pass;
@@ -211,31 +222,36 @@ used the Levels control.
 ## Level Two nine-mini-game play-through
 
 Level Two was replayed from its first line through all nine revised mini-games
-at 360 × 640:
+at 579 × 1280:
 
-1. `Parcel Dash`: caught the moving parcel, removed three separate ribbons,
-   lifted the lid and read the card.
-2. `Lantern Detective`: chose the whole lantern and inspected all three clues.
-3. `Fit-the-Circle Lab`: chose the sound plan and fitted all four parts.
-4. `Twin-Part Test`: found the same-size pair and measured both parts.
-5. `Doorway Delivery`: selected each part and paired it with one unused spot;
-   all eight part-and-spot touches remained clear of the phone controls.
+1. `Parcel Dash`: steered the parcel along the glowing floor path to the yellow
+   reading mat without crossing a book-cart square.
+2. `Lantern Detective`: uncovered one visible lantern quarter per tap, then
+   chose the supported whole/missing/extra conclusion.
+3. `Fit-the-Circle Lab`: matched four exact numbered quadrants to one round
+   plan, with every curve meeting at the same centre.
+4. `Twin-Part Test`: compared both visible pairs on the balance and selected
+   the same-size pair.
+5. `Doorway Delivery`: selected each lantern part and carried it through the
+   small door once, with already-carried parts retained visibly.
 6. `Count-and-Collect`: tapped each of the two parts in Pax's hands and the two
    parts on the labelled tray, then answered the held count and whole count on
    separate turns.
-7. `Gap Repair`: fitted the missing part, activated three repair sparks and
-   moved the extra triangle outside.
-8. `Lantern Builder`: placed all four parts and woke all four lantern lights.
-9. `Lantern Sum Builder`: placed four visible one-part groups, chose the total,
-   read the exact addition statement and joined the same parts into one whole.
+7. `Gap Repair`: used a labelled flat practice frame, rejected the triangle,
+   turned and fitted the missing lantern picture, then returned the real parts
+   to the carrying tray.
+8. `Lantern Sum Builder`: placed four visible one-part groups, chose the total
+   and read the exact addition statement while all four parts stayed separate.
+9. `Lantern Builder`: used those same four counted parts in the one final
+   whole-lantern jigsaw.
 
 Each mini-game displayed its own title and live progress. Success led back into
 the story and `Play again` restarted the complete mini-game. A wrong answer
 produced a gentle clue without changing completed progress. The activity and
 prompt regions did not overlap at 1280 × 720.
 
-The current automated suite contains eighteen application/content tests; all
-eighteen pass together with lint and the production build.
+The current automated suite contains nineteen application/content tests; all
+nineteen pass together with lint and the production build.
 
 ## Level Two exact-addition revision — 31 July 2026
 
@@ -249,17 +265,20 @@ eighteen pass together with lint and the production build.
 - In `Lantern Sum Builder`, placed all four visible parts, deliberately chose
   the wrong total `3`, retained the recoverable clue and one used try light,
   then chose `4`.
-- Verified the revealed equation `1 part + 1 part + 1 part + 1 part = 4 parts`,
-  the separate explanations of plus and equals, and the following
-  `4 parts → 1 whole lantern` reassembly action.
+- Verified the revealed equation `1 part + 1 part + 1 part + 1 part = 4 parts`
+  and the separate explanations of plus and equals while the four parts stayed
+  visibly separate. Verified that the following and final `Lantern Builder`
+  alone performs the `4 counted parts → 1 whole lantern` reassembly.
 - Confirmed the completion dialogue and direct-to-child lesson fit the phone
   screen and that `Next level`, `Play Level 2 again` and `Choose a level` remain
   reachable.
-- Rendered and visually inspected revised student pages 28–31 and all six adult
-  guide pages. Fixed a stranded adult-guide heading before the final render.
+- Rendered and visually inspected revised student pages 14–17 and 23–32 plus
+  all six adult-guide pages. The practice-frame, held/tray count, addition and
+  final rebuild images remain recognisable and in the same causal order as the
+  text.
 - Regenerated all 28 E02 voice files from the caption manifest using Maria
   Smith's local Kokoro model and voice weights.
-- Passed all eighteen application/content tests, the production build and lint
+- Passed all nineteen application/content tests, the production build and lint
   with no errors.
 
 This QA makes E01 review 1.6.0, E02 review 1.0.0, E03 review 1.0.0 and unified game review 2.0.0

@@ -4,12 +4,12 @@ Prepared: 31 July 2026
 Status: working review; not finally approved
 
 This review contains the 32-page student book *One Whole, Many Parts*, its
-five-page adult guide, semantic HTML, exact claim-and-receipt map, original
+six-page adult guide, semantic HTML, exact claim-and-receipt map, original
 illustrations and the complete Level Two companion adventure.
 
 The student book and adult guide were rendered page by page and visually
 checked. The Level Two game was played from start to finish on phone, tablet and
-desktop. All 27 spoken lines were generated from the exact visible captions
+desktop. All 28 spoken lines were generated from the exact visible captions
 using Maria Smith's local Kokoro weights.
 
 Child text follows the series plain-language rule: use a familiar short word
@@ -28,6 +28,12 @@ build the same whole again. The former chain of unexplained doors and rooms has
 been removed. Carrying spots now keep track of the actual lantern parts, and
 the final summary retells the same journey rather than listing disconnected
 terms.
+
+The four-part plan now makes its symmetry explicit only after the child has
+observed matching left/right and top/bottom sides. The middle gap activity is a
+practice-frame check, after which all four separate parts return to the tray.
+The exact addition equation is completed while those parts remain separate,
+and the final jigsaw is the story's single whole-lantern rebuild.
 
 The revised student and adult PDFs were rendered and inspected page by page.
 The matching Level Two captions were regenerated with the local Kokoro weights,

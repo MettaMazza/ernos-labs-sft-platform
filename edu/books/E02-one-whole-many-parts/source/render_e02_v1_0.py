@@ -248,13 +248,24 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
     elif number == 24:
         draw_quartered_lantern(c, x + 92 * mm, y + 61 * mm, 26 * mm)
     elif number == 25:
-        draw_quartered_lantern(c, x + 82 * mm, y + 61 * mm, 24 * mm)
-        draw_extra_triangle(c, x + 132 * mm, y + 58 * mm, 8 * mm)
+        for index, cx in enumerate((x + 50 * mm, x + 72 * mm, x + 94 * mm, x + 116 * mm), 1):
+            draw_lantern_part_card(c, cx, y + 61 * mm, index, 16 * mm)
+        draw_extra_triangle(c, x + 148 * mm, y + 58 * mm, 8 * mm)
     elif number in (26, 27):
-        draw_quartered_lantern(c, x + 76 * mm, y + 61 * mm, 24 * mm, filled=2)
-        for index, (cx, cy) in enumerate(((x + 130 * mm, y + 67 * mm), (x + 145 * mm, y + 55 * mm))):
-            c.setFillColor(PART_COLORS[index + 2]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
-            c.roundRect(cx - 6 * mm, cy - 6 * mm, 12 * mm, 12 * mm, 3 * mm, fill=1, stroke=1)
+        panels = ((x + 20 * mm, "PAX IS HOLDING", (1, 2)), (x + 101 * mm, "WAITING ON THE TRAY", (3, 4)))
+        for px, label, parts in panels:
+            c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(1.8)
+            c.roundRect(px, y + 42 * mm, 68 * mm, 42 * mm, 5 * mm, fill=1, stroke=1)
+            c.setFillColor(INK); c.setFont(base.font("bold"), 7)
+            c.drawCentredString(px + 34 * mm, y + 76 * mm, label)
+            draw_lantern_part_card(c, px + 23 * mm, y + 58 * mm, parts[0], 18 * mm)
+            draw_lantern_part_card(c, px + 45 * mm, y + 58 * mm, parts[1], 18 * mm)
+        if number == 27:
+            for cx, label in ((x + 54 * mm, "2 HELD"), (x + 135 * mm, "4 PARTS IN ALL")):
+                c.setFillColor(GOLD); c.setStrokeColor(WHITE); c.setLineWidth(1)
+                c.roundRect(cx - 18 * mm, y + 34 * mm, 36 * mm, 7 * mm, 2 * mm, fill=1, stroke=1)
+                c.setFillColor(INK); c.setFont(base.font("bold"), 7)
+                c.drawCentredString(cx, y + 36 * mm, label)
     elif number == 28:
         draw_addition_equation(c, x, y + 58 * mm, "?")
     elif number == 29:

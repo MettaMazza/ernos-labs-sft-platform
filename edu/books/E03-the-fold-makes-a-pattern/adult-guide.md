@@ -141,7 +141,7 @@ replayable mini-game:
 2. inspect both sides of one tile and record both pictures;
 3. pull the first gate handle to its gold mark, with a tap alternative;
 4. compare complete paths and choose the path that returns the moon;
-5. place the next lawful light in a moving sequence;
+5. choose between two visibly moving lights and place the next three lawful lights;
 6. preserve, identify and repair the first broken move;
 7. guide Vee through five alternating over-and-under arches;
 8. inspect three complete route maps and choose the lawful route; and

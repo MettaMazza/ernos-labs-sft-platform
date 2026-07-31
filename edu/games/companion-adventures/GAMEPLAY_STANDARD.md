@@ -48,22 +48,22 @@ world.
 | Doorway delivery | choose each lantern part and carry it through the small door exactly once | repeat a carried part three times | part tray order |
 | Held-and-whole count | count the four visible lantern parts, then answer how many Pax holds and how many make the whole | three repeated counts or wrong answers | visible part order |
 | Gap repair | choose, rotate and fit one piece while rejecting distractors | three non-fitting pieces | distractor set and rotation |
-| Lantern builder | assemble the four-part lantern as a spatial jigsaw | three wrong slots | starting rotation and tray order |
-| Lantern Sum Builder | place four visible one-part groups, choose the exact total, read `1 + 1 + 1 + 1 = 4 parts`, then join the parts into one whole lantern | three wrong totals | part-tray order |
+| Lantern Sum Builder | place four visible one-part groups, choose the exact total and read `1 + 1 + 1 + 1 = 4 parts` while every part stays separate | three wrong totals | part-tray order |
+| Lantern builder | after the equation has checked all four parts, assemble those same parts as the one final spatial jigsaw | three wrong slots | starting rotation and tray order |
 
 ## Level Three rebuild map
 
 | Stage | Puzzle mechanic | Loss condition | Replay change |
 | --- | --- | --- | --- |
-| Moon-and-Sun Catch | move a catcher across three lanes to collect the four ordered moving lights | three missed lights | timing and spawn lane |
+| Moon-and-Sun Catch | move a catcher across three lanes to collect four ordered lights; each attempt moves the next light to a new lane | three missed lights | starting lane |
 | Two-Side Camera | turn one tile and photograph both named faces | three repeated face records | starting face |
 | Gate Crank | pull a gate handle to its gold mark, or use the equivalent tap target, and release it | three early releases | handle direction |
-| Return Run | compare three complete paths and send the tile through the one-turn path that restores its first face | three wrong paths | path order |
-| Path Builder | place three lawful lights from a moving belt | three rule breaks | row start and belt timing |
+| Return Run | compare three complete paths and send the tile through the one-turn path that restores its first face | three wrong paths | the one-turn path changes letter and position |
+| Path Builder | choose between two visibly moving lights and place three lawful lights from left to right | three rule breaks | choice order |
 | Rule Repair | find and replace the first broken move in a retained row | three incorrect replacements | break position |
 | Bridge Hop | guide Vee through five physical arches, changing between over and under after every crossing | three wrong lane moves | starting role |
 | Trail Mapper | inspect three complete route maps and find the one whose lights keep the rule to the arch | three wrong routes | map order |
-| New-Role Relay | continue star-and-leaf roles from one fixed star clue, then recall the first gate | three sequence or recall errors | choice timing |
+| New-Role Relay | continue star-and-leaf roles from one fixed star clue, then recall the first gate | three sequence or recall errors | fresh two-part relay |
 
 ## Completion-screen rule
 

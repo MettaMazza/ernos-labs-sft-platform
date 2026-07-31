@@ -82,7 +82,7 @@ vocabulary.
 | The lantern starts the trail | 3–5 | catch the two lights and reveal the stopped route | `TRAILLIGHT` |
 | Keep the two sides distinct | 6–8 | inspect and label both faces of one turning tile | `TWOSIDES` |
 | One turn, then return | 9–14 | turn the tile through both visible states | `TURNBACK` |
-| Copy and predict | 15–17 | continue the declared blue/gold recurrence | `NEXTLIGHT` |
+| Copy and predict | 15–17 | choose between two moving lights and continue the declared blue/gold recurrence | `NEXTLIGHT` |
 | Preserve and repair the break | 18–21 | find the first unlawful move, keep it visible and repair it | `KEEPTHETRY` |
 | Over and under transfer | 22–24 | move through two named route roles in lawful order | `OVERUNDER` |
 | Choose the complete route | 25–27 | compare one lawful trace with incomplete and broken traces | `RIGHTROUTE` |

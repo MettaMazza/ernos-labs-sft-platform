@@ -26,9 +26,9 @@ const scenes: Scene[] = [
     id: "trail", title: "The garden path goes dark", gameTitle: "Moon-and-Sun Catch", gameIcon: "✨", background: "e03-source/e03-stage-01-trail-station-v1.png", cast: ["mira", "tavi", "sol"], journey: "The Moon Lantern sends a line of light from the balcony into the garden.", activity: "trail",
     lines: [
       { speaker: "Narrator", text: "The Moon Lantern shone on the balcony. A blue moon picture lit up, then a gold sun picture. The two lights jumped onto the garden path. Then the path went dark.", audio: "01-narrator-trail-stops" },
-      { speaker: "Mia", text: "The Sunrise Arch is at the far end of the garden. Its light helps everyone find the garden gate in the morning. Let’s catch the moon and sun lights so we can see how the path should work.", audio: "02-mira-catch-lights" },
+      { speaker: "Mia", text: "The Sunrise Arch lights the way to the garden gate each morning. Let’s catch the moon and sun lights so we can see how the path should work.", audio: "02-mira-catch-lights" },
     ],
-    prompt: "Move the catcher below the falling light, then catch it. Three missed catches end the round.",
+    prompt: "Move the catcher below the falling light, then catch it. The next light will move to a new lane. Three missed catches end the round.",
     success: { speaker: "Tavi", text: "We caught blue moon, gold sun, blue moon, gold sun. They took turns. Now we can follow the dark path and find out why it stopped.", audio: "03-tavi-four-lights" },
   },
   {
@@ -64,11 +64,11 @@ const scenes: Scene[] = [
       { speaker: "Narrator", text: "The working stones showed blue moon, gold sun, blue moon, gold sun. Three dark stones waited next.", audio: "13-narrator-next-place" },
       { speaker: "Mia", text: "Look from left to right. Put the next three lights on the path. Use the same turn-over rule the gate showed us.", audio: "14-mira-pattern-defined" },
     ],
-    prompt: "Wait for the next light on the moving belt. Place three lights, one at a time, in the dark spaces.",
+    prompt: "Choose the moon or sun light that belongs in the glowing space. Fill the three spaces from left to right.",
     success: { speaker: "Sol", text: "Blue moon, gold sun, blue moon came next. The path follows a pattern. Pattern means a rule that tells us what comes next.", audio: "15-sol-next-moon" },
   },
   {
-    id: "repair", title: "Sol's first try", gameTitle: "Rule Repair", gameIcon: "🛠️", background: "e03-source/e03-stage-01-trail-station-v1.png", cast: ["mira", "tavi", "sol", "vee"], journey: "The trail reaches the balcony. Sol places one tile the wrong way, and the light stops.", activity: "repair",
+    id: "repair", title: "Sol's first try", gameTitle: "Rule Repair", gameIcon: "🛠️", background: "e03-source/e03-stage-01-trail-station-v1.png", cast: ["mira", "tavi", "sol", "vee"], journey: "The light reaches a bend in the garden path. Sol places one tile the wrong way, and the light stops.", activity: "repair",
     lines: [
       { speaker: "Narrator", text: "Sol hurried ahead and placed six tiles. Two matching pictures met in one place, so the light stopped. His whole first try stayed where everyone could see it.", audio: "16-narrator-sols-row" },
       { speaker: "Sol", text: "Start at the left and check each move. Find the first tile that stops taking turns, then replace only that tile.", audio: "17-sol-repair-row" },
@@ -117,6 +117,17 @@ const codes: Record<string, string> = {
   NEWROLES: "A star and leaf wave hello from the next adventure.",
 };
 
+const codeTreats: Record<string, string> = {
+  TRAILLIGHT: "🎵 ✨ 🏮 ✨",
+  TWOSIDES: "🥽 ✨ 📷",
+  TURNBACK: "✨ ↻ ✨ ↻",
+  NEXTLIGHT: "🎶 💡 🎶",
+  KEEPTHETRY: "🖼️ ⭐",
+  OVERUNDER: "🎵 🌉 🎶",
+  RIGHTROUTE: "✨ 🗺️ ✨",
+  NEWROLES: "⭐ 👋 🍃",
+};
+
 const names: Record<Character, string> = { mira: "Mia", tavi: "Tavi", sol: "Sol", vee: "Vee" };
 const endingLesson: Line = { speaker: "Narrator", text: "Here is the lesson. A pattern is a rule that tells us what comes next. We watched moon and sun take turns, turned one tile to see its other side, saw the first side return, repaired the first move that broke the rule, and used the same rule with over and under, then star and leaf. This matters because a clear rule helps us predict what comes next and find where a mistake began.", audio: "28-narrator-to-you" };
 const image = (name: Character) => name === "mira"
@@ -155,13 +166,13 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   const [codesOpen, setCodesOpen] = useState(false);
   const [code, setCode] = useState("");
   const [codeMessage, setCodeMessage] = useState("");
+  const [unlockedCode, setUnlockedCode] = useState("");
   const [activityStep, setActivityStep] = useState(0);
   const [chosen, setChosen] = useState<number[]>([]);
   const [wrong, setWrong] = useState("");
   const [mistakes, setMistakes] = useState(0);
   const [roundLost, setRoundLost] = useState(false);
   const [round, setRound] = useState(0);
-  const [tick, setTick] = useState(0);
   const [storageReady, setStorageReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const soundRef = useRef<AudioContext | null>(null);
@@ -243,7 +254,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
       audioRef.current?.pause();
-      const audio = new Audio(`/audio/e03-v1.0.0/${endingLesson.audio}.mp3?v=mia-20260731`);
+      const audio = new Audio(`/audio/e03-v1.0.0/${endingLesson.audio}.mp3?v=e03-review-20260731b`);
       lessonAudio = audio;
       audioRef.current = audio;
       audio.play().catch(() => undefined);
@@ -260,16 +271,10 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     audioRef.current = null;
   }, []);
 
-  useEffect(() => {
-    if (!storageReady || !dialogueDone || complete || roundLost || !["trail", "continue"].includes(scene.activity)) return;
-    const timer = window.setInterval(() => setTick((value) => value + 1), scene.activity === "trail" ? 1600 : 900);
-    return () => window.clearInterval(timer);
-  }, [storageReady, dialogueDone, complete, roundLost, scene.activity, round]);
-
   function playLine(current = line) {
     if (!current || muted) return;
     audioRef.current?.pause();
-    const audio = new Audio(`/audio/e03-v1.0.0/${current.audio}.mp3?v=mia-20260731`);
+    const audio = new Audio(`/audio/e03-v1.0.0/${current.audio}.mp3?v=e03-review-20260731b`);
     audioRef.current = audio;
     audio.play().catch(() => undefined);
   }
@@ -308,16 +313,16 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
 
   function finish() { sound("good"); setWrong(""); setMistakes(0); setRoundLost(false); setComplete(true); }
   function wrongTry(message: string) { if (roundLost) return; sound("wrong"); const next = mistakes + 1; setMistakes(next); setWrong(message); if (next >= 3) setRoundLost(true); else window.setTimeout(() => setWrong(""), 2200); }
-  function retryRound() { sound("step"); setRound((value) => value + 1); setMistakes(0); setRoundLost(false); setWrong(""); setActivityStep(0); setChosen([]); setTick(0); }
+  function retryRound() { sound("step"); setRound((value) => value + 1); setMistakes(0); setRoundLost(false); setWrong(""); setActivityStep(0); setChosen([]); }
   function nextBeat() { sound("tap"); if (beat < scene.lines.length) setBeat((value) => value + 1); }
   function nextScene() {
     sound("step");
     if (sceneIndex === scenes.length - 1) { setFinished(true); return; }
-    setSceneIndex((value) => value + 1); setBeat(0); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setTick(0); lastLineRef.current = "";
+    setSceneIndex((value) => value + 1); setBeat(0); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); lastLineRef.current = "";
   }
-  function replay() { audioRef.current?.pause(); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound((value) => value + 1); setTick(0); lastLineRef.current = ""; }
+  function replay() { audioRef.current?.pause(); setComplete(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound((value) => value + 1); lastLineRef.current = ""; }
   function restart() {
-    audioRef.current?.pause(); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound(0); setTick(0); lastLineRef.current = "";
+    audioRef.current?.pause(); setSceneIndex(0); setBeat(0); setComplete(false); setFinished(false); setActivityStep(0); setChosen([]); setWrong(""); setMistakes(0); setRoundLost(false); setRound(0); lastLineRef.current = "";
     try {
       localStorage.removeItem("sft-e03-moving-stage-v1");
       localStorage.setItem("sft-active-level-v1", "e03");
@@ -326,7 +331,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
   function submitCode(event: FormEvent) {
     event.preventDefault(); const clean = code.toUpperCase().replace(/[^A-Z]/g, "");
     setCodeMessage(codes[clean] ?? "That code is hiding on another book page. Keep looking.");
-    if (codes[clean]) setCode("");
+    if (codes[clean]) { setUnlockedCode(clean); setCode(""); sound("good"); }
   }
 
   function activity() {
@@ -334,7 +339,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     const icons = { moon: "🌙", sun: "☀️", star: "⭐", leaf: "🍃" };
     if (scene.activity === "trail") {
       const expected = chosen.length % 2 ? "sun" : "moon";
-      const lane = (tick + round) % 3;
+      const lane = (chosen.length + mistakes + round) % 3;
       const catcherLane = activityStep % 3;
       const moveCatcher = (change: number) => { setActivityStep((value) => (value + change + 3) % 3); sound("step"); };
       const catchLight = () => {
@@ -356,20 +361,22 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
       return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${crank}/4 handle marks`}><div className={`gate-crank ${round % 2 ? "crank-reversed" : ""}`}><div className="crank-machine"><span className={`crank-tile crank-${crank}`}>{crank < 2 ? icons.moon : icons.sun}</span><div className="crank-arc" aria-hidden="true">↷</div><label><b>Pull the handle to the gold mark</b><input type="range" min="0" max="4" step="1" value={crank} onChange={(event)=>{setActivityStep(Number(event.currentTarget.value));sound("step");}} /></label><div className="crank-marks" aria-hidden="true"><i/><i/><i/><i/><i className="gold"/></div><button className="tap-gold-mark" onClick={()=>{setActivityStep(4);sound("step");}}>Tap the gold mark</button></div><button className="release-crank" onClick={release}>Release the handle</button></div></MiniGame>;
     }
     if (scene.activity === "return") {
-      const paths = [
-        { name: "Path A", turns: 0, track: ["☀️", "—", "—", "—", "☀️"] },
-        { name: "Path B", turns: 1, track: ["☀️", "—", "↻", "—", "🌙"] },
-        { name: "Path C", turns: 2, track: ["☀️", "↻", "—", "↻", "☀️"] },
+      const kinds = [
+        { turns: 0, track: ["☀️", "—", "—", "—", "☀️"] },
+        { turns: 1, track: ["☀️", "—", "↻", "—", "🌙"] },
+        { turns: 2, track: ["☀️", "↻", "—", "↻", "☀️"] },
       ];
+      const rotated = [...kinds.slice(round % 3), ...kinds.slice(0, round % 3)];
+      const paths = rotated.map((path, index) => ({ ...path, name: `Path ${String.fromCharCode(65 + index)}` }));
       const selected = activityStep ? paths[activityStep - 1] : null;
       const launch = () => { if (!selected) { setWrong("Choose one path before you launch the tile."); return; } setChosen((values)=>[...values,activityStep]); if (selected.turns !== 1) { wrongTry(selected.turns === 0 ? "That path missed the gate, so the gold sun stayed on top." : "That path turned the tile twice, so the gold sun came back on top. We need one turn."); return; } finish(); };
       return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={selected?`${selected.name} ready` : "Choose one path"}><div className="return-lane-puzzle"><div className="return-paths">{paths.map((path,index)=><button key={path.name} className={`${activityStep===index+1?"selected":""} ${chosen.includes(index+1)?"tested":""}`} onClick={()=>{setActivityStep(index+1);sound("tap");}}><b>{path.name}</b><span>{path.track.join(" ")}</span><small>{path.turns === 0 ? "no gate" : `${path.turns} turning ${path.turns===1?"gate":"gates"}`}</small></button>)}</div><button className="launch-return" onClick={launch}>Send the gold sun tile →</button></div></MiniGame>;
     }
     if (scene.activity === "continue") {
-      const belt=round%2?["sun","sun","moon","sun","moon"]:["moon","sun","sun","moon","moon"];const visible=belt[tick%belt.length];
       const expected=chosen.length%2===0?"moon":"sun";
-      const drop=(role:string)=>{if(role!==expected){wrongTry(`That ${role} picture would put two matching pictures together. Look at the last stone and wait for the other picture.`);return;}const next=[...chosen,role==="moon"?1:2];setChosen(next);sound("good");if(next.length===3)window.setTimeout(finish,450);};
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/3 dark stones lit`}><div className="pattern-conveyor"><div className="fixed-pattern" aria-label="Moon, sun, moon, sun, then three dark stones"><span>{icons.moon}</span><span>{icons.sun}</span><span>{icons.moon}</span><span>{icons.sun}</span>{[0,1,2].map((index)=><button key={index} className={index===chosen.length?"next-gap":""} disabled={index>chosen.length} onDragOver={(event)=>event.preventDefault()} onDrop={(event)=>index===chosen.length&&drop(event.dataTransfer.getData("text/plain"))} onClick={()=>index===chosen.length&&drop(visible)}>{index<chosen.length?(chosen[index]===1?icons.moon:icons.sun):"?"}</button>)}</div><button className={`belt-tile ${visible}`} draggable onDragStart={(event)=>event.dataTransfer.setData("text/plain",visible)} onClick={()=>drop(visible)}><span>{icons[visible as "moon"|"sun"]}</span><b>Place this moving light</b></button><small>The belt keeps moving. Look at the last lit stone before choosing.</small></div></MiniGame>;
+      const drop=(role:string)=>{if(role!==expected){wrongTry(`That ${role} picture would put two matching pictures together. Look at the last stone, then choose the other picture.`);return;}const next=[...chosen,role==="moon"?1:2];setChosen(next);sound("good");if(next.length===3)window.setTimeout(finish,450);};
+      const options = (round % 2 ? ["sun", "moon"] : ["moon", "sun"]) as Array<"moon"|"sun">;
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/3 dark stones lit`}><div className="pattern-conveyor"><div className="fixed-pattern" aria-label="Moon, sun, moon, sun, then three dark stones"><span>{icons.moon}</span><span>{icons.sun}</span><span>{icons.moon}</span><span>{icons.sun}</span>{[0,1,2].map((index)=><button key={index} className={index===chosen.length?"next-gap":""} disabled={index>chosen.length} onDragOver={(event)=>event.preventDefault()} onDrop={(event)=>index===chosen.length&&drop(event.dataTransfer.getData("text/plain"))}>{index<chosen.length?(chosen[index]===1?icons.moon:icons.sun):"?"}</button>)}</div><div className="conveyor-choices" aria-label="Choose the next moving light">{options.map((role)=><button key={role} className={`belt-tile ${role}`} draggable onDragStart={(event)=>event.dataTransfer.setData("text/plain",role)} onClick={()=>drop(role)}><span>{icons[role]}</span><b>Choose {role}</b></button>)}</div><small>Both lights keep moving. Choose the one that belongs after the last lit stone.</small></div></MiniGame>;
     }
     if (scene.activity === "repair") {
       const brokenIndex=1+(round%4);const correct=(brokenIndex%2?"sun":"moon") as "moon"|"sun";const row=["moon","sun","moon","sun","moon","sun"] as Array<"moon"|"sun">;row[brokenIndex]=row[brokenIndex-1];
@@ -379,7 +386,8 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     if (scene.activity === "bridge") {
       const startsOver=round%2===0;const path=Array.from({length:5},(_,index)=>((index+(startsOver?1:0))%2));const step=chosen.length;const lane=activityStep;
       const move=()=>{if(lane!==path[step]){wrongTry(`Vee met the closed ${lane?"over":"under"} gate and stopped safely. Change to the other path before crossing this arch.`);return;}const next=[...chosen,step];setChosen(next);sound("step");if(next.length===path.length)window.setTimeout(finish,450);};
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${step}/5 bridge arches`}><div className="bridge-runner"><div className="bridge-start-sign">FIRST SIGN: <b>{startsOver?"OVER":"UNDER"}</b></div><div className="bridge-lanes"><div className={lane===1?"vee-here":""}>OVER</div><div className={lane===0?"vee-here":""}>UNDER</div>{path.map((open,index)=><i key={index} className={index===step?"next":""} aria-label={`Arch ${index+1}: ${open?"over is open and under is closed":"under is open and over is closed"}`}><small>ARCH {index+1}</small><span className={open===1?"open":"closed"}>{index===step&&lane===1?"🟣":index<step&&open===1?"✓":open===1?"GO":"×"}</span><span className={open===0?"open":"closed"}>{index===step&&lane===0?"🟣":index<step&&open===0?"✓":open===0?"GO":"×"}</span></i>)}</div><div><button className={lane===1?"selected":""} onClick={()=>{setActivityStep(1);sound("tap");}}>Move Vee OVER</button><button className={lane===0?"selected":""} onClick={()=>{setActivityStep(0);sound("tap");}}>Move Vee UNDER</button><button className="cross-arch" onClick={move}>Cross this arch →</button></div></div></MiniGame>;
+      const veeToken = <img className="bridge-vee-token" src={image("vee")} alt="Vee" />;
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${step}/5 bridge arches`}><div className="bridge-runner"><div className="bridge-start-sign">FIRST SIGN: <b>{startsOver?"OVER":"UNDER"}</b></div><div className="bridge-lanes"><div className={lane===1?"vee-here":""}>OVER</div><div className={lane===0?"vee-here":""}>UNDER</div>{path.map((open,index)=><i key={index} className={index===step?"next":""} aria-label={`Arch ${index+1}: ${open?"over is open and under is closed":"under is open and over is closed"}`}><small>ARCH {index+1}</small><span className={open===1?"open":"closed"}>{index===step&&lane===1?veeToken:index<step&&open===1?"✓":open===1?"GO":"×"}</span><span className={open===0?"open":"closed"}>{index===step&&lane===0?veeToken:index<step&&open===0?"✓":open===0?"GO":"×"}</span></i>)}</div><div><button className={lane===1?"selected":""} onClick={()=>{setActivityStep(1);sound("tap");}}>Move Vee OVER</button><button className={lane===0?"selected":""} onClick={()=>{setActivityStep(0);sound("tap");}}>Move Vee UNDER</button><button className="cross-arch" onClick={move}>Cross this arch →</button></div></div></MiniGame>;
     }
     if (scene.activity === "routes") {
       const routes=[
@@ -393,7 +401,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     }
     if (scene.activity === "transfer") {
       const phase=activityStep;const sequence=["leaf","star","leaf"] as const;
-      const press=(role:string)=>{if(phase===1){if(role!=="sun"){wrongTry("A blue moon went into the first gate. One turn showed the tile's other side. Try the other picture.");return;}finish();return;}const expected=sequence[chosen.length];if(role!==expected){wrongTry("The first window already has a star. Look at it, then choose the other picture so they take turns.");setChosen([]);return;}const next=[...chosen,role==="star"?1:2];setChosen(next);sound("tap");if(next.length===3)window.setTimeout(()=>{setActivityStep(1);setChosen([]);sound("good");},450);};
+      const press=(role:string)=>{if(phase===1){if(role!=="sun"){wrongTry("A blue moon went into the first gate. One turn showed the tile's other side. Try the other picture.");return;}finish();return;}const expected=sequence[chosen.length];if(role!==expected){wrongTry("The first window already has a star. Look at it, then choose the other picture so they take turns.");setChosen([]);return;}const next=[...chosen,role==="star"?1:2];setChosen(next);sound("tap");if(next.length===3)window.setTimeout(()=>{setWrong("");setActivityStep(1);setChosen([]);sound("good");},450);};
       return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={phase===0?`Arch windows · ${chosen.length+1}/4`:"First-gate memory"}><div className="role-relay">{phase===0?<><div className="relay-track"><span className="lit given">{icons.star}</span>{sequence.map((role,index)=><span key={index} className={index<chosen.length?"lit":""}>{index<chosen.length?icons[role]:"?"}</span>)}</div><div>{(["star","leaf"] as const).map(role=><button key={role} onClick={()=>press(role)}><span>{icons[role]}</span><b>{role.toUpperCase()}</b></button>)}</div></>:<><div className="gate-memory-card"><strong>FIRST GATE</strong><span>{icons.moon} → ↻ → ?</span><small>Blue moon went in. The tile turned over once.</small></div><div>{(["moon","sun"] as const).map(role=><button key={role} onClick={()=>press(role)}><span>{icons[role]}</span><b>{role.toUpperCase()} CAME OUT</b></button>)}</div></>}</div></MiniGame>;
     }
     return null;
@@ -413,7 +421,7 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
     <header className="game-hud e03-hud">
       <div><span className="eyebrow">THE TURNING-LIGHT TRAIL</span><strong>{scene.title}</strong></div>
       <div className="e03-progress" aria-label={`${sceneIndex + (complete ? 1 : 0)} of 9 story steps complete`}>{scenes.map((_, index) => <span key={index} className={index < sceneIndex || (index === sceneIndex && complete) ? "done" : index === sceneIndex ? "now" : ""}>●</span>)}</div>
-      <nav><button onClick={onExit} aria-label="Choose a level">⌂ <span>Levels</span></button><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={() => setMuted((value) => !value)} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={() => setCodesOpen(true)}>⌨ <span>Book code</span></button></nav>
+      <nav><button onClick={onExit} aria-label="Choose a level">⌂ <span>Levels</span></button><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={() => setMuted((value) => !value)} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={restart} aria-label="Restart Level Three">↺ <span>Start over</span></button><button onClick={() => setCodesOpen(true)}>⌨ <span>Book code</span></button></nav>
     </header>
     <section key={scene.id} className={`play-stage e03-stage scene-e03-${scene.id}`} style={{ backgroundImage: `url('/art/stages/${scene.background}')` }} aria-label={`${scene.title}, an animated turning-light story scene`}>
       <div className="stage-light" />
@@ -426,7 +434,6 @@ export default function LevelThree({ onExit }: { onExit: () => void }) {
         {!dialogueDone || complete ? <><div className="speaker-portrait"><Portrait speaker={line.speaker} /></div><span className="speaker">{line.speaker}</span><p>{line.text}</p>{complete ? <div className="completion-controls"><button className="replay-control" onClick={replay}><span aria-hidden="true">↻</span> Play again</button><button className="next-control" onClick={nextScene}>{sceneIndex === scenes.length - 1 ? "Light the arch" : "Follow the trail"} <span aria-hidden="true">→</span></button></div> : <button className="next-control" onClick={nextBeat}>Next <span aria-hidden="true">→</span></button>}</> : <><div className="speaker-portrait prompt-portrait" aria-hidden="true">☝️</div><span className="speaker">YOUR TURN</span><p>{promptText}</p><span className="action-nudge" aria-hidden="true">↑ Try it in the scene</span></>}
       </aside>
     </section>
-    <button className="restart-corner" onClick={restart}>Start over</button>
-    {codesOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setCodesOpen(false)}><section className="code-modal" role="dialog" aria-modal="true" aria-labelledby="e03-code-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setCodesOpen(false)} aria-label="Close">×</button><p className="eyebrow">OPTIONAL BOOK SECRET</p><h2 id="e03-code-title">Mia’s code pocket</h2><p>Codes unlock jokes and small previews. They never give an answer or skip a lesson.</p><form onSubmit={submitCode}><label htmlFor="e03-book-code">Code from Book Three</label><div><input id="e03-book-code" value={code} onChange={(event) => setCode(event.target.value)} autoComplete="off" /><button>Open</button></div></form><p className="code-result" aria-live="polite">{codeMessage}</p></section></div>}
+    {codesOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setCodesOpen(false)}><section className="code-modal" role="dialog" aria-modal="true" aria-labelledby="e03-code-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setCodesOpen(false)} aria-label="Close">×</button><p className="eyebrow">OPTIONAL BOOK SECRET</p><h2 id="e03-code-title">Mia’s code pocket</h2><p>Codes unlock jokes and small previews. They never give an answer or skip a lesson.</p><form onSubmit={submitCode}><label htmlFor="e03-book-code">Code from Book Three</label><div><input id="e03-book-code" value={code} onChange={(event) => setCode(event.target.value)} autoComplete="off" /><button>Open</button></div></form>{unlockedCode && <div className="code-treat" role="img" aria-label="A harmless animated book-code surprise">{codeTreats[unlockedCode]}</div>}<p className="code-result" aria-live="polite">{codeMessage}</p></section></div>}
   </main>;
 }

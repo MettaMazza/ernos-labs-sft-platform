@@ -214,6 +214,10 @@ Page 13 explicitly keeps that failed attempt and rebuilds the trace.
 The accepted layout is the one that fills the entire agreed outline, has no
 overlap and uses same-sized pieces. A layout can fail more than one condition.
 Ask all three questions rather than accepting a familiar-looking picture.
+Pages 16–17 add the observable symmetry check only after the child has looked:
+left and right match around the middle, and top and bottom match around the
+middle. *Symmetrical* names that balanced match; it is not used as an
+unexplained instruction.
 
 ### Pages 18–20 — carry every part
 
@@ -226,12 +230,15 @@ Pair A is equal-sized; Pair B is visibly unequal. Unequal pieces are not called
 false or bad. The narrower claim is that counts alone cannot identify equal
 portions when the partition pieces are unequal.
 
-### Pages 23–25 — rebuild: gap and extra
+### Pages 23–25 — practice-frame check: gap and extra
 
-Page 23 is not complete because one registered place is unfilled. Page 24
-returns the registered fourth piece. Page 25 keeps the extra triangle visible
-and outside; it does not disappear and is not absorbed into the lantern by a
-word.
+The flat frame is a checking picture, not the final lantern rebuild. Page 23 is
+not complete because one registered place is unfilled. Page 24 returns the
+registered fourth part, then explicitly returns all four separate parts to the
+carrying tray. Page 25 keeps the extra triangle visible and outside; it does
+not disappear and is not absorbed into the lantern by a word. This keeps the
+story state coherent for the addition activity on pages 28–29 and the one final
+rebuild on page 30.
 
 ### Pages 26–27 — held and whole counts
 

@@ -4,6 +4,20 @@ Prepared: 31 July 2026
 Author: Maria Smith  
 Status: working review; not finally approved or publicly hosted
 
+## Level Two symmetry and story-order correction
+
+- Enlarged the circular four-part plan on phones and labelled the four exact
+  positions so the pieces visibly meet at one centre without gaps or overlap.
+- Let the child observe matching left/right and top/bottom sides before naming
+  that balanced match *symmetrical*.
+- Changed the middle gap activity into a clearly labelled practice-frame check;
+  the real four parts return to the carrying tray afterwards.
+- Moved `Lantern Sum Builder` before the final jigsaw. The child now counts the
+  four separate parts, completes `1 + 1 + 1 + 1 = 4`, learns the meanings of
+  plus and equals, and only then performs the one final whole-lantern rebuild.
+- Regenerated the changed Level Two Kokoro narration from the exact visible
+  captions.
+
 ## Level Two exact-addition revision
 
 - Replaced cropped emoji quadrants with four exact symmetrical pieces cut from
@@ -37,7 +51,7 @@ Status: working review; not finally approved or publicly hosted
   sizes, and compacted the desktop ending so every control remains visible.
 - Manually played every wrong and successful path at 390 × 844 and inspected
   selector and ending layouts at 768 × 1024 and 1440 × 900.
-- Passed all eighteen application/content tests, lint and the production build.
+- Passed all nineteen application/content tests, lint and the production build.
 
 ## Story-clarity revision
 
@@ -93,7 +107,7 @@ Status: working review; not finally approved or publicly hosted
 - Enabled Level Two on the landing screen without disturbing Level One.
 - Completed full visual play-throughs at 1280 × 720, 390 × 844, 390 × 724 and
   1024 × 768, including wrong answers, replay, reload and tab return.
-- Passed the production build and all eighteen application/content tests.
+- Passed the production build and all nineteen application/content tests.
 
 This source review may be tested on the local network and pushed to GitHub
 `main`. It is not a deployed child service or an approved final educational

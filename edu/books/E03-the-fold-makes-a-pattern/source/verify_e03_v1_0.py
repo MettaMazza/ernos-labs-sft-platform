@@ -45,8 +45,15 @@ def main() -> None:
     book = json.loads(SOURCE.read_text(encoding="utf-8"))
     claims = json.loads(CLAIM_MAP.read_text(encoding="utf-8"))
     require(book["version"] == "1.0.0" and book["status"] == "review", "source is not review 1.0.0")
+    require(claims["version"] == "1.0.0", "claim map must match the 1.0.0 review")
     require(len(book["pages"]) == 32, "student source must contain 32 pages")
     require([p["page"] for p in book["pages"]] == list(range(1, 33)), "student page order is broken")
+    require(all(p.get("alt", "").strip() for p in book["pages"]), "every student page needs a picture description")
+    require(len(book["reading_codes"]) == 8, "E03 must contain eight optional picture codes")
+    require(len({entry["code"] for entry in book["reading_codes"]}) == 8, "E03 picture codes must be unique")
+    child_copy = " ".join(str(p.get(field, "")) for p in book["pages"] for field in ("text", "subtext", "alt"))
+    require("Mira" not in child_copy, "retired character name appears in current child copy")
+    require("lights the garden gate" not in child_copy, "unclear arch wording remains in child copy")
     require(len(claims["scientific_claims"]) == 2, "E03 must cite exactly two direct SFT claims")
     for claim in claims["scientific_claims"]:
         receipt = ROOT / claim["receipt_path"]
@@ -80,6 +87,7 @@ def main() -> None:
 
     challenge_pages = [p["page"] for p in book["pages"] if p["kind"] == "challenge"]
     require(challenge_pages == [7, 10, 12, 16, 19, 23, 26, 28, 30], "challenge sequence changed")
+    require(claims["challenge_reveal_pairs"] == [[7, 8], [10, 11], [12, 13], [16, 17], [19, 20], [23, 24], [26, 27], [28, 29], [30, 31]], "challenge/reveal pacing changed")
     require(set(book["pages"][25]["choices"]) == {"route-short", "route-broken", "route-lawful"}, "route choices changed")
     print("E03 review book verified")
 

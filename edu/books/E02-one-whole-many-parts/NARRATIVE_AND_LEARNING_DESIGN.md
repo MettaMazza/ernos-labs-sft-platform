@@ -1,6 +1,6 @@
 # E02 narrative and learning design
 
-Working version: 0.1.0
+Working version: 1.0.0
 Status: canonical design for review production
 
 ## Identity
@@ -32,11 +32,13 @@ parts of that plan rather than unrelated locks:
 5. Sol's duplicated check is preserved and corrected rather than erased;
 6. every lantern part is carried through the same doorway exactly once;
 7. visible size and held/whole counts are checked while all four parts remain in view;
-8. the child repairs a gap and keeps an unrelated extra outside;
-9. all four parts return to the round frame and the tray becomes empty;
+8. the child uses a flat practice frame to repair a gap and keeps an unrelated
+   extra outside, then all four parts return to the tray;
+9. visible held/whole counts are checked while all four parts remain separate;
 10. the child joins four separate one-part counts and chooses the exact total;
     and
-11. the same four parts are fitted together as one whole lantern.
+11. only then are the same four counted parts fitted together as one whole
+    lantern.
 
 The lantern is never repaired by an unexplained reward, character assertion or
 scene cut. The child sees the causal mechanism change after every check.
@@ -50,6 +52,7 @@ scene cut. The child sees the causal mechanism change after every check.
 | Fit pieces inside one outline | complete | every place in the agreed whole is filled |
 | Notice pieces do not cover each other | separate / not overlapping | one piece does not sit over another piece |
 | Compare pieces cut to the same size | equal pieces | pieces made the same size in this partition |
+| Compare left with right and top with bottom around the middle | symmetrical | the two sides match in a balanced way |
 | Hold selected pieces while the full set stays visible | held part | the chosen nonempty pieces inside the complete partition |
 | Say both numbers | held count and whole count | how many are held, and how many make the complete partition |
 | Place four separate one-part groups and choose the total | plus / addition | join the separate counts while keeping every part once |
@@ -87,10 +90,10 @@ theorem and is outside E02.
 |---|---:|---|---|
 | Parcel, problem and plan | 3–8 | meet the obstacle and spot the complete lantern | `WHOLELIGHT` |
 | Four carrying spots | 9–13 | touch every spot once; replay Sol's duplicate | `ONCEAROUND` |
-| Four-part plan | 14–17 | choose the layout that is complete, separate and equal | `FAIRFIT` |
+| Four-part plan | 14–17 | choose the layout that is complete, separate, equal-sized and symmetrical | `FAIRFIT` |
 | Carry through the door | 18–20 | move every lantern part through once | `PARTPAIR` |
 | Check the sizes | 21–22 | compare equal and unequal visible pairs | — |
-| Rebuild: gap and extra | 23–25 | repair a gap; keep the outside extra outside | `GAPCHECK` |
+| Practice-frame check: gap and extra | 23–25 | repair a practice-picture gap, return the parts to the tray and keep the outside extra outside | `GAPCHECK` |
 | Check the two counts | 26–27 | report held/whole positive counts | `HELDWHOLE` |
 | Add, rebuild and deliver | 28–32 | make `1 + 1 + 1 + 1 = 4 parts`, then join the four parts into one whole lantern | — |
 

@@ -47,7 +47,7 @@ const scenes: Scene[] = [
       { speaker: "Pax", text: "Each card shows one same-size part. Match every curved part to its place. The four parts must fill the lantern plan with no gap and no part on top of another.", audio: "11-pax-find-parts" },
     ],
     prompt: "Tap a lantern-part card, then tap its matching place in the round plan. Fit all four parts with no gap or overlap.",
-    success: { speaker: "Pax", text: "All four lantern pictures fit the plan. There is no gap, and no part covers another. Together, they fill the same whole lantern.", audio: "12-pax-parts-fit" },
+    success: { speaker: "Pax", text: "All four same-size parts meet in the middle. The left and right sides match, and the top and bottom match. That balanced match is called symmetrical. Together, the four parts fill one whole lantern.", audio: "12-pax-parts-fit" },
   },
   {
     id: "match", title: "Check the sizes", gameTitle: "Twin-Part Test", gameIcon: "📏", background: "e02-stage-06-match-table-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "Step 1 continued: check what ‘same size’ looks like before Pax uses the plan.", activity: "match",
@@ -77,31 +77,31 @@ const scenes: Scene[] = [
     success: { speaker: "Sol", text: "Pax is holding two. Four parts make the whole lantern. We have all four, so we can rebuild it.", audio: "24-sol-two-four" },
   },
   {
-    id: "gap", title: "Find the missing part", gameTitle: "Gap Repair", gameIcon: "🛠️", background: "e02-stage-07-checking-room-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "Step 4 of 4: choose the right parts for the whole lantern.", activity: "gap",
+    id: "gap", title: "Check the practice frame", gameTitle: "Gap Repair", gameIcon: "🛠️", background: "e02-stage-07-checking-room-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "Practice check: find the missing picture, then return all four real parts to the carrying tray.", activity: "gap",
     lines: [
-      { speaker: "Narrator", text: "Mia placed three lantern parts in the round frame. One space was still empty. A lantern part and a triangle were nearby.", audio: "19-narrator-gap" },
-      { speaker: "Mia", text: "Which piece is part of this lantern? Choose it, turn its top upright, and fit it into the empty space.", audio: "20-mira-gap-extra" },
+      { speaker: "Narrator", text: "Pax placed three lantern-part pictures in a flat practice frame. One picture space was empty. Another lantern picture and a triangle were nearby.", audio: "19-narrator-gap" },
+      { speaker: "Mia", text: "Which picture completes the practice frame? Choose it, turn its top upright, and fit it into the empty space.", audio: "20-mira-gap-extra" },
     ],
-    prompt: "Choose the missing lantern part. It starts sideways, so turn it until its top points up, then fit it into the empty space.",
-    success: { speaker: "Pax", text: "The lantern part belongs in the gap. The triangle stays outside because it is not part of this lantern.", audio: "21-pax-gap-extra" },
+    prompt: "Choose the missing lantern picture. It starts sideways, so turn it until its top points up, then fit it into the practice frame.",
+    success: { speaker: "Pax", text: "The lantern picture fills the practice-frame gap. The triangle stays outside. This was only a check, so I returned all four real lantern parts to the carrying tray.", audio: "21-pax-gap-extra" },
   },
   {
-    id: "rebuild", title: "Build the whole again", gameTitle: "Lantern Builder", gameIcon: "🌕", background: "e02-stage-05-rebuild-room-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "Finish Step 4: put every lantern part back into the round frame.", activity: "rebuild",
+    id: "sum", title: "Count every part together", gameTitle: "Lantern Sum Builder", gameIcon: "➕", background: "e02-stage-08-balcony-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "Step 4 of 4: count the four separate parts at the balcony before rebuilding the lantern.", activity: "sum",
     lines: [
-      { speaker: "Narrator", text: "All four lantern parts waited beside the empty round frame.", audio: "13-narrator-four-parts" },
-      { speaker: "Mia", text: "Put every part into the frame. Use each part once, and leave none behind.", audio: "14-mira-rebuild" },
+      { speaker: "Narrator", text: "The friends reached the balcony before the first evening star. All four lantern parts were still separate, ready to be counted together.", audio: "25-narrator-balcony" },
+      { speaker: "Tavi", text: "Put one lantern part in each space. A plus sign means join the separate counts. The equals sign tells us the total on the other side must count the same parts.", audio: "26-tavi-remembers" },
     ],
-    prompt: "Choose or drag each curved piece into its matching place. Three wrong fits end the round.",
-    success: { speaker: "Sol", text: "We did it! All four parts fit together. The same whole lantern is back, and the tray is empty.", audio: "15-sol-whole-again" },
+    prompt: "Put one lantern part in each space. Choose the total that makes the equation true. Keep all four parts separate for the final rebuild.",
+    success: { speaker: "Mia", text: "One part plus one part plus one part plus one part equals four parts. Plus joined our separate counts. Equals tells us both sides count the same four parts. Now we know every part reached the balcony.", audio: "27-mira-ending" },
   },
   {
-    id: "sum", title: "Light the balcony", gameTitle: "Lantern Sum Builder", gameIcon: "➕", background: "e02-stage-08-balcony-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "The four lantern parts reached the balcony. Count them together, then rebuild the whole lantern.", activity: "sum",
+    id: "rebuild", title: "Build and light the whole", gameTitle: "Lantern Builder", gameIcon: "🌕", background: "e02-stage-08-balcony-v1.png", cast: ["mira", "tavi", "sol", "pax"], journey: "The equation checked all four parts. Now fit those same parts together to rebuild the whole lantern.", activity: "rebuild",
     lines: [
-      { speaker: "Narrator", text: "The friends reached the balcony before the first evening star. The four lantern parts were still separate. They needed to count the parts together before rebuilding the lantern.", audio: "25-narrator-balcony" },
-      { speaker: "Tavi", text: "Put one lantern part in each space. The plus signs mean we are joining the separate counted parts. Then choose how many parts there are altogether.", audio: "26-tavi-remembers" },
+      { speaker: "Narrator", text: "Mia placed the empty round frame on the balcony. The four parts they had counted waited beside it.", audio: "13-narrator-four-parts" },
+      { speaker: "Mia", text: "Our equation checked that all four parts are here. Now fit each part into the frame. Use every part once, and leave none behind.", audio: "14-mira-rebuild" },
     ],
-    prompt: "Put one lantern part in each space. Choose the total that makes the equation true. Then join the four parts to rebuild one whole lantern.",
-    success: { speaker: "Mia", text: "One part plus one part plus one part plus one part equals four parts. Equals means both sides count the same four parts. Then we joined the four parts and rebuilt one whole lantern. A blue moon picture lit up. Then a gold sun picture lit up. The two pictures began to take turns.", audio: "27-mira-ending" },
+    prompt: "Choose or drag each curved lantern part into its matching place. Use all four counted parts to rebuild one whole lantern.",
+    success: { speaker: "Sol", text: "We did it! All four counted parts fit together, so the same whole lantern is back. A blue moon picture lit up. Then a gold sun picture lit up. The two pictures began to take turns.", audio: "15-sol-whole-again" },
   },
 ];
 
@@ -150,7 +150,8 @@ function WholeLantern({ label = "one whole Moon Lantern" }: { label?: string }) 
 
 function LanternQuarter({ part, turned = 0 }: { part: 1 | 2 | 3 | 4; turned?: number }) {
   const viewBoxes = { 1: "0 0 100 100", 2: "100 0 100 100", 3: "0 100 100 100", 4: "100 100 100 100" } as const;
-  return <span className={`lantern-quarter lantern-quarter-${part}`} style={{ transform: `rotate(${turned * 90}deg)` }} role="img" aria-label={`lantern part ${part}, one of four same-size parts`}><svg viewBox={viewBoxes[part]} preserveAspectRatio="none"><LanternDrawing /></svg></span>;
+  const positions = { 1: "top left", 2: "top right", 3: "bottom left", 4: "bottom right" } as const;
+  return <span className={`lantern-quarter lantern-quarter-${part}`} style={{ transform: `rotate(${turned * 90}deg)` }} role="img" aria-label={`lantern part ${part}, the ${positions[part]} quarter of four same-size parts`}><svg viewBox={viewBoxes[part]} preserveAspectRatio="none" shapeRendering="geometricPrecision"><LanternDrawing /></svg></span>;
 }
 
 function MiniGame({ title, icon, progress, children }: { title: string; icon: string; progress: string; children: ReactNode }) {
@@ -260,7 +261,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
     const timeout = window.setTimeout(() => {
       if (document.visibilityState !== "visible") return;
       audioRef.current?.pause();
-      const audio = new Audio(`/audio/e02-v1.0.0/${endingLesson.audio}.mp3?v=e02-story-20260731d`);
+      const audio = new Audio(`/audio/e02-v1.0.0/${endingLesson.audio}.mp3?v=e02-story-20260731e`);
       lessonAudio = audio;
       audioRef.current = audio;
       audio.play().catch(() => undefined);
@@ -280,7 +281,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   function playLine(current = line) {
     if (!current || muted) return;
     audioRef.current?.pause();
-    const audio = new Audio(`/audio/e02-v1.0.0/${current.audio}.mp3?v=e02-story-20260731d`);
+    const audio = new Audio(`/audio/e02-v1.0.0/${current.audio}.mp3?v=e02-story-20260731e`);
     audioRef.current = audio;
     audio.play().catch(() => undefined);
   }
@@ -369,7 +370,8 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
         if (selectedPart !== slot) { wrongTry("That curved edge does not match this place. Keep the card and try another place."); return; }
         const next = [...chosen,slot]; setChosen(next); setActivityStep(0); sound("step"); if(next.length===4)window.setTimeout(finish,500);
       };
-      return <MiniGame title={scene.gameTitle} icon="🏮" progress={`${chosen.length}/4 plan parts placed`}><div className="plan-workbench"><div className="lantern-plan-frame" aria-label={`${chosen.length} of 4 lantern plan parts placed`}>{[1,2,3,4].map((slot)=><button key={slot} className={`plan-slot plan-slot-${slot} ${chosen.includes(slot)?"filled":""}`} onClick={()=>placePart(slot)} disabled={chosen.includes(slot)} aria-label={chosen.includes(slot)?`Lantern part ${slot} is placed`:`Empty place ${slot}`}>{chosen.includes(slot)?<LanternQuarter part={slot as 1|2|3|4}/>:<span>?</span>}</button>)}</div><div className="plan-card-tray"><strong>LANTERN-PICTURE CARDS</strong>{cardOrder.map((part)=><button key={part} className={selectedPart===part?"selected":""} onClick={()=>{setActivityStep(part);sound("tap");}} disabled={chosen.includes(part)} aria-label={`Choose lantern part ${part}`}><LanternQuarter part={part as 1|2|3|4}/><b>PART {part}</b></button>)}</div><p>{chosen.length===4?"The four parts fill one whole lantern.":selectedPart?`Part ${selectedPart} is ready. Tap its matching place.`:"Choose a picture card."}</p></div></MiniGame>;
+      const positions = ["top left", "top right", "bottom left", "bottom right"];
+      return <MiniGame title={scene.gameTitle} icon="🏮" progress={`${chosen.length}/4 plan parts placed`}><div className="plan-workbench"><div className="lantern-plan-frame" aria-label={`${chosen.length} of 4 lantern plan parts placed`}>{[1,2,3,4].map((slot)=><button key={slot} className={`plan-slot plan-slot-${slot} ${chosen.includes(slot)?"filled":""}`} onClick={()=>placePart(slot)} disabled={chosen.includes(slot)} aria-label={chosen.includes(slot)?`Lantern part ${slot} is placed in the ${positions[slot-1]}`:`Empty ${positions[slot-1]} place for part ${slot}`}>{chosen.includes(slot)?<LanternQuarter part={slot as 1|2|3|4}/>:<span>{slot}</span>}</button>)}</div><div className="plan-card-tray"><strong>FOUR SAME-SIZE LANTERN PARTS</strong>{cardOrder.map((part)=><button key={part} className={selectedPart===part?"selected":""} onClick={()=>{setActivityStep(part);sound("tap");}} disabled={chosen.includes(part)} aria-label={`Choose lantern part ${part}, ${positions[part-1]}`}><LanternQuarter part={part as 1|2|3|4}/><b>PART {part}<small>{positions[part-1]}</small></b></button>)}</div><p>{chosen.length===4?"The four parts meet in the middle. The finished lantern has matching sides.":selectedPart?`Part ${selectedPart} is ready. Match its curves and number to the same place.`:"Choose one lantern part. Its number and curves show where it fits."}</p></div></MiniGame>;
     }
     if (scene.activity === "match") {
       const pairOrder = [1,2];
@@ -412,10 +414,10 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
       const selected = activityStep; const turns = chosen[0] ?? 0;
       const fitPiece = () => {
         if (!selected) { setWrong("Choose one loose piece first."); window.setTimeout(() => setWrong(""),1500); return; }
-        if (selected !== 1 || turns % 4 !== 1) { wrongTry("The piece must be part of the lantern, and its top must point up like the lantern in the frame."); return; }
+        if (selected !== 1 || turns % 4 !== 1) { wrongTry("Choose the lantern picture, then turn it until its top points up like the pictures in the practice frame."); return; }
         finish();
       };
-      return <MiniGame title={scene.gameTitle} icon="🛠️" progress={selected ? `${turns} turns` : "Choose piece"}><div className="gap-fit-puzzle"><div className="emoji-lantern-gap"><strong>THE LANTERN</strong><div>{([1,2,3] as const).map(part=><LanternQuarter key={part} part={part}/>)}<span className="empty-quarter">?</span></div><b>One lantern part is missing</b></div><div className="loose-shape-tray">{pieceOrder.map((piece)=><button key={piece} className={selected===piece?"selected":""} onClick={()=>{setActivityStep(piece);setChosen([]);sound("tap");}}>{piece===1?<LanternQuarter part={4} turned={selected===piece?turns-1:-1}/>:<span className="loose-shape">{piece===2?"🔺":"🟦"}</span>}<b>{piece===1?"Lantern part":piece===2?"Triangle":"Blue square"}</b></button>)}</div><div className="gap-tools"><button onClick={()=>selected?setChosen([(turns+1)%4]):setWrong("Choose a piece before turning it.")}>↻ Turn the chosen piece</button><button onClick={fitPiece}>Fit it into the empty space</button></div></div></MiniGame>;
+      return <MiniGame title={scene.gameTitle} icon="🛠️" progress={selected ? `${turns} turns` : "Choose picture"}><div className="gap-fit-puzzle"><div className="emoji-lantern-gap"><strong>PRACTICE FRAME</strong><div>{([1,2,3] as const).map(part=><LanternQuarter key={part} part={part}/>)}<span className="empty-quarter">?</span></div><b>One picture space is empty</b></div><div className="loose-shape-tray">{pieceOrder.map((piece)=><button key={piece} className={selected===piece?"selected":""} onClick={()=>{setActivityStep(piece);setChosen([]);sound("tap");}}>{piece===1?<LanternQuarter part={4} turned={selected===piece?turns-1:-1}/>:<span className="loose-shape">{piece===2?"🔺":"🟦"}</span>}<b>{piece===1?"Lantern picture":piece===2?"Triangle":"Blue square"}</b></button>)}</div><div className="gap-tools"><button onClick={()=>selected?setChosen([(turns+1)%4]):setWrong("Choose a picture before turning it.")}>↻ Turn the chosen picture</button><button onClick={fitPiece}>Fit it into the practice frame</button></div></div></MiniGame>;
     }
     if (scene.activity === "rebuild") {
       const orders = [[3,1,4,2],[2,4,1,3],[4,2,3,1]];
@@ -451,8 +453,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
           </div>
           {chosen.length < 4 && <><div className="sum-part-tray"><strong>CHOOSE A LANTERN PART</strong>{order.map((part) => <button key={part} disabled={chosen.includes(part)} className={selectedPart === part ? "selected" : ""} onClick={() => { setActivityStep(part); sound("tap"); }}><LanternQuarter part={part as 1|2|3|4}/><b>PART {part}</b></button>)}</div><button className="sum-action" onClick={placeNext}>Put the chosen part in the next space</button></>}
           {activityStep === 5 && <div className="sum-answer"><strong>How many lantern parts are there altogether?</strong><div>{[3,4,5].map((answer) => <button key={answer} onClick={() => chooseTotal(answer)}>{answer}</button>)}</div></div>}
-          {activityStep === 6 && <div className="sum-meaning"><p><b>Plus</b> joins the separate counted parts.</p><p><b>Equals</b> says both sides count the same four parts.</p><button onClick={() => { sound("good"); setActivityStep(7); }}>Join the 4 parts</button></div>}
-          {activityStep === 7 && <div className="sum-reassembly"><div><LanternQuarter part={1}/><LanternQuarter part={2}/><LanternQuarter part={3}/><LanternQuarter part={4}/></div><span aria-hidden="true">→</span><WholeLantern /><b>4 PARTS → 1 WHOLE LANTERN</b><button onClick={finish}>Light the whole lantern</button></div>}
+          {activityStep === 6 && <div className="sum-meaning"><p><b>Plus</b> joins the separate counted parts.</p><p><b>Equals</b> says both sides count the same four parts.</p><button onClick={finish}>Take all 4 parts to the round frame</button></div>}
         </div>
       </MiniGame>;
     }
@@ -462,7 +463,7 @@ export default function LevelTwo({ onExit, onNext }: { onExit: () => void; onNex
   if (!storageReady) return <main className="restore-screen"><p>Returning to your adventure…</p></main>;
 
   if (finished) return <main className="ending-screen e02-ending">
-    <div className="ending-art" /><button className="ending-home" onClick={onExit} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL TWO COMPLETE</p><div className="e02-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Moon Lantern shines.</h1><p>Mia, Sol, Tavi and Pax solved one clear problem: the whole lantern was too wide for the small door.</p><blockquote>They counted the four separate parts with addition, then fitted those parts together to rebuild one whole lantern.</blockquote><div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div><p className="grownup-boundary"><strong>For grown-ups:</strong> this level uses exact positive finite counts, exact visible parts, and exact addition. It does not introduce zero, fractions, infinity or hidden equivalence.</p><div className="ending-controls"><button className="primary" onClick={onNext}>Next level</button><button className="secondary" onClick={restart}>Play Level 2 again</button><button className="secondary" onClick={onExit}>Choose a level</button></div></section>
+    <div className="ending-art" /><button className="ending-home" onClick={onExit} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL TWO COMPLETE</p><div className="e02-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div><h1>The Moon Lantern shines.</h1><p>Mia, Sol, Tavi and Pax solved one clear problem: the whole lantern was too wide for the small door.</p><blockquote>They counted the four separate parts with addition, then fitted those same parts together.</blockquote><p className="rebuild-equation">4 COUNTED PARTS → 1 WHOLE LANTERN</p><div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div><p className="grownup-boundary"><strong>For grown-ups:</strong> this level uses exact positive finite counts, exact visible parts, and exact addition. It does not introduce zero, fractions, infinity or hidden equivalence.</p><div className="ending-controls"><button className="primary" onClick={onNext}>Next level</button><button className="secondary" onClick={restart}>Play Level 2 again</button><button className="secondary" onClick={onExit}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell level-two-shell">
