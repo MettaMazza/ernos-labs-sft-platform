@@ -7,7 +7,7 @@
 **Final-publication approval:** pending Maria Smith's decision
 
 *Something Is Here: The Star Door Mystery* begins the SFT Open Education
-Library. The child follows permanent friends Mira, Sol and Tavi through one
+Library. The child follows permanent friends Mia, Sol and Tavi through one
 continuous 32-page journey. A note comes through the shut Star Door's letter
 box and starts five clues. Each checked clue lights one star, five stars open
 the door, two small doors answer the question, and a library scene recalls an

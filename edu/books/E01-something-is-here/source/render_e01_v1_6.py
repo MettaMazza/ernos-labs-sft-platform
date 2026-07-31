@@ -79,7 +79,7 @@ def rounded_label(c: canvas.Canvas, text: str, x: float, y: float, width: float,
 
 
 def draw_note(c: canvas.Canvas, x: float, y: float, raised: bool) -> None:
-    """Draw one unmistakable note beside Mira without adding decorative jargon."""
+    """Draw one unmistakable note beside Mia without adding decorative jargon."""
     c.saveState()
     c.translate(x, y)
     c.rotate(-5 if raised else 7)

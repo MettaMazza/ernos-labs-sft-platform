@@ -7,14 +7,14 @@ Final-publication status: awaiting Maria Smith's approval
 
 ## Purpose
 
-The child joins the permanent team, Mira, Sol and Tavi, in one continuous
+The child joins the permanent team, Mia, Sol and Tavi, in one continuous
 journey. The Star Door is shut. A note comes through its letter box and lands
-next to Mira. She picks it up, opens it and reads **FIND NOTHING. FIVE CLUES WILL
+next to Mia. She picks it up, opens it and reads **FIND NOTHING. FIVE CLUES WILL
 SHOW THE WAY.** The note begins the journey. Each star opens the way to the next
 room: the parcel, bells, paper, letter tiles and curtain. Nori is the one new
 friend introduced in this adventure. Five checked clues open the Star Door.
 Two little doors answer the note's question. In the library, Tavi asks the
-child to remember the first clue before Mira puts the map away.
+child to remember the first clue before Mia puts the map away.
 
 The child experiences each distinction before receiving its short name. A
 challenge page asks the child to look, listen, pretend-draw, point or remember;
@@ -35,7 +35,7 @@ Every new object, reward and room must have a visible cause:
 7. the library callback asks a memory question without giving its answer; and
 8. filing the map closes E01 before the next parcel previews E02.
 
-If the child loses the thread, use: “Mira's note gave us a question. We are
+If the child loses the thread, use: “Mia's note gave us a question. We are
 following five clues so we can answer it.” Do not add an unrelated reward or
 term.
 
@@ -108,8 +108,8 @@ The reveal is a shared check, not a score screen.
 
 ### Pages 3-6 - the door, note and route
 
-Point to the shut Star Door, its letter box and the note beside Mira. Follow
-Mira as she picks up, opens and reads the note. Then locate the five star shapes
+Point to the shut Star Door, its letter box and the note beside Mia. Follow
+Mia as she picks up, opens and reads the note. Then locate the five star shapes
 with no gold inside them. Sol's joke adds fun; Tavi encourages careful looking
 without giving an answer. Trace the arrow with a finger. The optional
 `ROOMSTAR` code is hidden on page 5 and unlocks only a character moment in the
@@ -129,7 +129,7 @@ listen. Nori's breath and the still bell remain. Do not describe silence as a
 substance or require the child to be still. Optional code: `QUIETWINGS` on
 page 12.
 
-### Pages 13-15 - Mira's card
+### Pages 13-15 - Mia's card
 
 Both pretend choices are allowed. If the child makes a mark, the mark and card
 are available. If the child leaves it blank, the card remains. *Blank* means
@@ -215,8 +215,8 @@ over an unexpressed metaphysical domain.
 
 Level One is a full-screen moving-stage adventure, not a read-and-scroll menu.
 Characters walk into each generated 3D room, idle, speak and celebrate. The
-child spots Mira's note, moves Sol's toy, listens at Nori's bell, draws on
-Mira's card, taps the letters, opens the curtain, inspects both doors and
+child spots Mia's note, moves Sol's toy, listens at Nori's bell, draws on
+Mia's card, taps the letters, opens the curtain, inspects both doors and
 remembers an earlier clue with Tavi. Local sound effects respond to those
 actions.
 

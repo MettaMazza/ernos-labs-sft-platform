@@ -1,6 +1,6 @@
 # E03 narrative and learning design
 
-Working version: 0.1.0  
+Working version: 1.0.0
 Status: canonical design for review production
 
 ## Identity
@@ -8,7 +8,7 @@ Status: canonical design for review production
 - Book: **E03 — The Fold Makes a Pattern**
 - Story subtitle: **The Turning-Light Trail**
 - Stage: Early Years / Foundation
-- Permanent leads: Mira, Sol and Tavi
+- Permanent leads: Mia, Sol and Tavi
 - One new guest: Vee, the pattern-path keeper
 - Prior knowledge: E01's bounded habit of naming what is presented and E02's
   habit of retaining one whole, every exact part and every visible attempt
@@ -88,9 +88,11 @@ vocabulary.
 | Choose the complete route | 25–27 | compare one lawful trace with incomplete and broken traces | `RIGHTROUTE` |
 | Recall and new-role transfer | 28–32 | recall the earlier transition, then apply it to star/leaf roles | `NEWROLES` |
 
-Each game stage will contain a distinct, replayable mini-game with direct input,
-visible progress, sound feedback, a wrong path and a book-page bridge. Book
-codes unlock only harmless story variations or previews.
+Each game stage contains a distinct, replayable mini-game with direct input,
+visible progress, sound feedback, a recoverable wrong path and a book-page
+bridge. Touch alternatives replace any gesture that a child may not be able to
+perform on their device. Book codes unlock only harmless story variations or
+previews.
 
 ## Vee continuity record
 

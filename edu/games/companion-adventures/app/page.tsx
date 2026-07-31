@@ -2,6 +2,7 @@
 
 import { CSSProperties, FormEvent, PointerEvent, useEffect, useLayoutEffect, useRef, useState } from "react";
 import LevelTwo from "./level-two";
+import LevelThree from "./level-three";
 
 type Character = "mira" | "tavi" | "sol" | "nori";
 type Activity = "note" | "box" | "bell" | "card" | "word" | "curtain" | "doors" | "recall";
@@ -24,15 +25,15 @@ const scenes: Scene[] = [
   {
     id: "note", title: "A note comes through", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], activity: "note",
     lines: [
-      { speaker: "Narrator", text: "Before breakfast, Mira, Sol and Tavi met in the star room. The Star Door was shut.", audio: "01-narrator-door-shut" },
-      { speaker: "Narrator", text: "A note came through the letter box and landed next to Mira.", audio: "02-narrator-note-through-letter-box" },
-      { speaker: "Narrator", text: "Mira picked up the note and opened it.", audio: "03-narrator-mira-picks-up-note" },
-      { speaker: "Mira", text: "I found a note! It says: Find nothing. Five clues will show the way.", audio: "04-mira-finds-and-reads-note" },
+      { speaker: "Narrator", text: "Before breakfast, Mia, Sol and Tavi met in the star room. The Star Door was shut.", audio: "01-narrator-door-shut" },
+      { speaker: "Narrator", text: "A note came through the letter box and landed next to Mia.", audio: "02-narrator-note-through-letter-box" },
+      { speaker: "Narrator", text: "Mia picked up the note and opened it.", audio: "03-narrator-mira-picks-up-note" },
+      { speaker: "Mia", text: "I found a note! It says: Find nothing. Five clues will show the way.", audio: "04-mira-finds-and-reads-note" },
       { speaker: "Sol", text: "Find nothing? That is a funny thing to look for. Let's follow the clues!", audio: "05-sol-strange-mystery" },
-      { speaker: "Tavi", text: "Let's stay together and look carefully. First, can you spot Mira's note?", audio: "06-tavi-spot-note" },
+      { speaker: "Tavi", text: "Let's stay together and look carefully. First, can you spot Mia's note?", audio: "06-tavi-spot-note" },
     ],
-    prompt: "Mira picked up the note that came through the letter box. Tap the note.",
-    success: { speaker: "Mira", text: "You found the note. Look at the five star outlines at the top. None are gold yet. Each clue will turn one star gold. The first arrow points to the parcel!", audio: "07-mira-star-map" },
+    prompt: "Mia picked up the note that came through the letter box. Tap the note.",
+    success: { speaker: "Mia", text: "You found the note. Look at the five star outlines at the top. None are gold yet. Each clue will turn one star gold. The first arrow points to the parcel!", audio: "07-mira-star-map" },
   },
   {
     id: "box", title: "The parcel clue", background: "e01-stage-01-observatory-v1.png", cast: ["mira", "tavi", "sol"], journey: "The first arrow points across the star room to the parcel.", activity: "box", star: 1,
@@ -50,7 +51,7 @@ const scenes: Scene[] = [
       { speaker: "Narrator", text: "They had found an empty box, not a thing called nothing. The first star turned gold. A blue door opened.", audio: "12-narrator-first-star-door" },
       { speaker: "Narrator", text: "The friends went through the door. They entered a room with three big bells.", audio: "13-narrator-enter-bells" },
       { speaker: "Nori", text: "Hello! I am Nori. I listen for tiny sounds. May I help you check the bell room?", audio: "14-nori-meets" },
-      { speaker: "Mira", text: "Yes, please. The note tells us to find nothing. We found an empty box in the first room. Let's check the bells next.", audio: "15-mira-welcome" },
+      { speaker: "Mia", text: "Yes, please. The note tells us to find nothing. We found an empty box in the first room. Let's check the bells next.", audio: "15-mira-welcome" },
       { speaker: "Nori", text: "The wind stopped, and the big bell stopped moving. Hold the bell while we stay quiet and listen.", audio: "16-nori-listen" },
     ],
     prompt: "Press and hold the big bell while everyone listens.",
@@ -60,11 +61,11 @@ const scenes: Scene[] = [
     id: "card", title: "The paper room", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The bell stayed in the room, so everyone follows the next arrow to the paper room.", activity: "card", star: 3,
     lines: [
       { speaker: "Narrator", text: "The bell did not ring, but it was still there. The second star turned gold. A door opened to the paper room.", audio: "18-narrator-to-paper" },
-      { speaker: "Mira", text: "I found a white card on this table. Look, there are no marks on it yet.", audio: "19-mira-finds-card" },
+      { speaker: "Mia", text: "I found a white card on this table. Look, there are no marks on it yet.", audio: "19-mira-finds-card" },
       { speaker: "Tavi", text: "Touch the card. You can draw a mark, or choose Leave blank and do not draw.", audio: "20-tavi-draw-or-leave" },
     ],
     prompt: "Draw on the card—or leave it blank—then check.",
-    success: { speaker: "Mira", text: "If you drew, there is a mark on the card. If you did not draw, the card is blank. Blank means there is no mark on the card. The card is still here both times.", audio: "21-mira-card-result" },
+    success: { speaker: "Mia", text: "If you drew, there is a mark on the card. If you did not draw, the card is blank. Blank means there is no mark on the card. The card is still here both times.", audio: "21-mira-card-result" },
   },
   {
     id: "word", title: "Seven glowing letters", background: "e01-stage-03-paper-room-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The card stayed there, so seven wall tiles light up for the next clue.", activity: "word", star: 4,
@@ -83,14 +84,14 @@ const scenes: Scene[] = [
       { speaker: "Nori", text: "Slide the curtain slowly. Let's see what is behind it.", audio: "27-nori-curtain" },
     ],
     prompt: "Slowly slide the curtain open and watch for the toy.",
-    success: { speaker: "Mira", text: "There is the teddy. Hidden means it was there, but the curtain stopped us from seeing it. The toy did not disappear.", audio: "28-mira-hidden" },
+    success: { speaker: "Mia", text: "There is the teddy. Hidden means it was there, but the curtain stopped us from seeing it. The toy did not disappear.", audio: "28-mira-hidden" },
   },
   {
     id: "doors", title: "The final question", background: "e01-stage-05-star-door-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "Five clues are complete, so five bright stars open the Star Door.", activity: "doors",
     lines: [
       { speaker: "Narrator", text: "Opening the curtain showed the teddy. The fifth star turned gold. Now all five stars were gold, and the Star Door opened.", audio: "29-narrator-to-doors" },
       { speaker: "Narrator", text: "Behind the Star Door were two small doors. Door A had a white card on its shelf. Door B had an empty shelf.", audio: "30-narrator-two-doors" },
-      { speaker: "Mira", text: "My note still says, Find nothing. Tap both small doors. We must look at each one before we answer.", audio: "31-mira-question" },
+      { speaker: "Mia", text: "My note still says, Find nothing. Tap both small doors. We must look at each one before we answer.", audio: "31-mira-question" },
     ],
     prompt: "Look behind both little doors before choosing.",
     success: { speaker: "Tavi", text: "Door A showed a card. Door B showed an empty shelf. Neither door showed a thing called nothing.", audio: "32-tavi-neither" },
@@ -98,16 +99,16 @@ const scenes: Scene[] = [
   {
     id: "recall", title: "The map remembers", background: "e01-stage-06-library-v1.png", cast: ["mira", "tavi", "sol", "nori"], journey: "The mystery is solved, so the friends carry their map to the library and remember the journey.", activity: "recall",
     lines: [
-      { speaker: "Narrator", text: "The friends solved the note's puzzle. Mira folded the note. Everyone carried the five-star map into the library before going home.", audio: "33-narrator-library" },
+      { speaker: "Narrator", text: "The friends solved the note's puzzle. Mia folded the note. Everyone carried the five-star map into the library before going home.", audio: "33-narrator-library" },
       { speaker: "Tavi", text: "Before we put the map away, let's remember the first clue. Which thing became empty after you moved Sol's teddy outside?", audio: "34-tavi-remember" },
     ],
     prompt: "Tap the thing that became empty in the first clue.",
-    success: { speaker: "Mira", text: "The box became empty after the teddy moved outside, but the box stayed in the room. We checked every clue. We found things, sounds and a written word, but no thing called nothing.", audio: "35-mira-ending" },
+    success: { speaker: "Narrator", text: "The box became empty after the teddy moved outside, but the box stayed in the room. Then Mia put the finished map in the library stand. A little door opened high in the wall. A parcel slid down a ramp and stopped beside the map. Its label said Mia, Sol and Tavi. Their next adventure had arrived.", audio: "35-mira-ending" },
   },
 ];
 
 const codes: Record<string, string> = {
-  ROOMSTAR: "Mira finds a tiny practice star tucked under the route map.",
+  ROOMSTAR: "Mia finds a tiny practice star tucked under the route map.",
   BOXCLUE: "Sol's joke: an empty box can still be full of clues.",
   QUIETWINGS: "Nori teaches the trio a quiet listening wave.",
   BLANKEDGE: "Tavi finds a tiny sketchbook pocket.",
@@ -115,7 +116,8 @@ const codes: Record<string, string> = {
   TWODOORS: "The next parcel whispers: one whole can have many parts.",
 };
 
-const characterNames: Record<Character, string> = { mira: "Mira", tavi: "Tavi", sol: "Sol", nori: "Nori" };
+const characterNames: Record<Character, string> = { mira: "Mia", tavi: "Tavi", sol: "Sol", nori: "Nori" };
+const endingLesson: Line = { speaker: "Narrator", text: "Here is the lesson. There is no thing called nothing for us to find. We found an empty box, a quiet bell, a blank card, the written word nothing, and a hidden teddy. Each time, something was still there. This matters because careful words tell other people exactly what you saw, heard, or found.", audio: "36-narrator-to-you" };
 const characterImage = (name: Character) => name === "mira" ? "/art/characters/individual/mira-v1.png" : `/art/characters/individual/${name}.png`;
 
 function CharacterSprite({ name, speaking, index }: { name: Character; speaking: boolean; index: number }) {
@@ -125,7 +127,7 @@ function CharacterSprite({ name, speaking, index }: { name: Character; speaking:
 }
 
 function SpeakerPortrait({ speaker }: { speaker: string }) {
-  const id = speaker.toLowerCase() as Character;
+  const id = (speaker.toLowerCase() === "mia" ? "mira" : speaker.toLowerCase()) as Character;
   if (!(id in characterNames)) return <span className="narrator-portrait" aria-hidden="true">📖</span>;
   return <img className={`portrait-${id}`} src={characterImage(id)} alt="" aria-hidden="true" />;
 }
@@ -140,6 +142,8 @@ function StarTrail({ count, focus = false, newest = null }: { count: number; foc
 export default function Home() {
   const [levelTwoActive, setLevelTwoActive] = useState(false);
   const [savedLevelTwoRooms, setSavedLevelTwoRooms] = useState(0);
+  const [levelThreeActive, setLevelThreeActive] = useState(false);
+  const [savedLevelThreeStages, setSavedLevelThreeStages] = useState(0);
   const [started, setStarted] = useState(false);
   const [sceneIndex, setSceneIndex] = useState(0);
   const [beat, setBeat] = useState(0);
@@ -148,6 +152,7 @@ export default function Home() {
   const [finished, setFinished] = useState(false);
   const [muted, setMuted] = useState(false);
   const [journalOpen, setJournalOpen] = useState(false);
+  const [freshGameOpen, setFreshGameOpen] = useState(false);
   const [code, setCode] = useState("");
   const [codeMessage, setCodeMessage] = useState("");
   const [letters, setLetters] = useState(0);
@@ -170,8 +175,26 @@ export default function Home() {
   const scene = scenes[sceneIndex];
   const dialogueDone = beat >= scene.lines.length;
   const currentLine = complete ? scene.success : scene.lines[Math.min(beat, scene.lines.length - 1)];
-  const speakingName = (!dialogueDone || complete) ? currentLine?.speaker.toLowerCase() : "";
+  const speakingName = (!dialogueDone || complete) ? (currentLine?.speaker.toLowerCase() === "mia" ? "mira" : currentLine?.speaker.toLowerCase()) : "";
   const starCount = Math.max(savedStars, scenes.slice(0, sceneIndex + (complete ? 1 : 0)).filter((item) => item.star).length);
+
+  useEffect(() => {
+    const stopBackgroundAudio = () => {
+      if (document.visibilityState !== "hidden") return;
+      audioRef.current?.pause();
+      audioRef.current = null;
+    };
+    const stopForPageHide = () => {
+      audioRef.current?.pause();
+      audioRef.current = null;
+    };
+    document.addEventListener("visibilitychange", stopBackgroundAudio);
+    window.addEventListener("pagehide", stopForPageHide);
+    return () => {
+      document.removeEventListener("visibilitychange", stopBackgroundAudio);
+      window.removeEventListener("pagehide", stopForPageHide);
+    };
+  }, []);
 
   useLayoutEffect(() => {
     progressRef.current = {
@@ -183,7 +206,7 @@ export default function Home() {
   function playLine(line = currentLine) {
     if (!line || muted) return;
     audioRef.current?.pause();
-    const audio = new Audio(`/audio/e01-v1.6.0/${line.audio}.mp3`);
+    const audio = new Audio(`/audio/e01-v1.6.0/${line.audio}.mp3?v=e01-story-20260731b`);
     audioRef.current = audio;
     audio.play().catch(() => undefined);
   }
@@ -217,6 +240,7 @@ export default function Home() {
     }
     const lineKey = `${sceneIndex}:${complete ? "success" : beat}`;
     const timeout = window.setTimeout(() => {
+      if (document.visibilityState !== "visible") return;
       if (lastAutoLineRef.current === lineKey) return;
       lastAutoLineRef.current = lineKey;
       playLine(currentLine);
@@ -226,17 +250,37 @@ export default function Home() {
   }, [started, sceneIndex, beat, complete]);
 
   useEffect(() => {
+    if (!finished || muted) return;
+    let lessonAudio: HTMLAudioElement | null = null;
+    const timeout = window.setTimeout(() => {
+      if (document.visibilityState !== "visible") return;
+      audioRef.current?.pause();
+      const audio = new Audio(`/audio/e01-v1.6.0/${endingLesson.audio}.mp3?v=e01-story-20260731b`);
+      lessonAudio = audio;
+      audioRef.current = audio;
+      audio.play().catch(() => undefined);
+    }, 120);
+    return () => {
+      window.clearTimeout(timeout);
+      lessonAudio?.pause();
+      if (audioRef.current === lessonAudio) audioRef.current = null;
+    };
+  }, [finished, muted]);
+
+  useEffect(() => {
     const timeout = window.setTimeout(() => {
       try {
         const activeLevel = localStorage.getItem("sft-active-level-v1");
         const saved = JSON.parse(localStorage.getItem("sft-e01-moving-stage-v1") ?? "{}");
         const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
+        const savedLevelThree = JSON.parse(localStorage.getItem("sft-e03-moving-stage-v1") ?? "{}");
         if (typeof saved.sceneIndex === "number") setSceneIndex(Math.min(saved.sceneIndex, scenes.length - 1));
         if (typeof saved.beat === "number") setBeat(Math.max(0, saved.beat));
         if (typeof saved.activityStep === "number") setActivityStep(Math.max(0, saved.activityStep));
         if (typeof saved.complete === "boolean") setComplete(saved.complete);
         if (typeof saved.finished === "boolean") setFinished(saved.finished);
-        if (activeLevel === "e02") setLevelTwoActive(true);
+        if (activeLevel === "e03") setLevelThreeActive(true);
+        else if (activeLevel === "e02") setLevelTwoActive(true);
         else if (activeLevel === "select") setStarted(false);
         else if (typeof saved.started === "boolean") setStarted(saved.started);
         if (typeof saved.stars === "number") setSavedStars(Math.min(saved.stars, 5));
@@ -247,6 +291,8 @@ export default function Home() {
         if (typeof saved.cardOpen === "boolean") setCardOpen(saved.cardOpen);
         if (savedLevelTwo.finished === true) setSavedLevelTwoRooms(9);
         else if (typeof savedLevelTwo.sceneIndex === "number") setSavedLevelTwoRooms(Math.max(0, Math.min(9, savedLevelTwo.sceneIndex + (savedLevelTwo.complete ? 1 : 0))));
+        if (savedLevelThree.finished === true) setSavedLevelThreeStages(9);
+        else if (typeof savedLevelThree.sceneIndex === "number") setSavedLevelThreeStages(Math.max(0, Math.min(9, savedLevelThree.sceneIndex + (savedLevelThree.complete ? 1 : 0))));
       } catch { /* The story also works without local saving. */ }
       storageReadyRef.current = true;
       setStorageReady(true);
@@ -301,7 +347,7 @@ export default function Home() {
     playEffect("step");
     if (sceneIndex === scenes.length - 1) {
       setFinished(true);
-      try { localStorage.setItem("sft-active-level-v1", "select"); } catch { /* optional */ }
+      try { localStorage.setItem("sft-active-level-v1", "e01"); } catch { /* optional */ }
       return;
     }
     setSceneIndex((value) => value + 1);
@@ -352,25 +398,63 @@ export default function Home() {
   }
 
   function beginLevelTwo() {
-    audioRef.current?.pause(); setStarted(false);
+    audioRef.current?.pause(); audioRef.current = null; setFinished(false); setStarted(false);
     try {
-      if (savedLevelTwoRooms === 9) {
-        localStorage.removeItem("sft-e02-moving-stage-v1");
-        setSavedLevelTwoRooms(0);
-      }
       localStorage.setItem("sft-active-level-v1", "e02");
     } catch { /* optional */ }
     setLevelTwoActive(true);
   }
 
+  function beginLevelThree() {
+    audioRef.current?.pause(); audioRef.current = null; setFinished(false); setStarted(false);
+    try {
+      localStorage.setItem("sft-active-level-v1", "e03");
+    } catch { /* optional */ }
+    setLevelThreeActive(true);
+  }
+
   function showLevelSelect() {
-    audioRef.current?.pause(); setFinished(false); setStarted(false); setLevelTwoActive(false); setJournalOpen(false);
+    audioRef.current?.pause(); setFinished(false); setStarted(false); setLevelTwoActive(false); setLevelThreeActive(false); setJournalOpen(false);
     try {
       localStorage.setItem("sft-active-level-v1", "select");
       const savedLevelTwo = JSON.parse(localStorage.getItem("sft-e02-moving-stage-v1") ?? "{}");
       if (savedLevelTwo.finished === true) setSavedLevelTwoRooms(9);
       else if (typeof savedLevelTwo.sceneIndex === "number") setSavedLevelTwoRooms(Math.max(0, Math.min(9, savedLevelTwo.sceneIndex + (savedLevelTwo.complete ? 1 : 0))));
+      const savedLevelThree = JSON.parse(localStorage.getItem("sft-e03-moving-stage-v1") ?? "{}");
+      if (savedLevelThree.finished === true) setSavedLevelThreeStages(9);
+      else if (typeof savedLevelThree.sceneIndex === "number") setSavedLevelThreeStages(Math.max(0, Math.min(9, savedLevelThree.sceneIndex + (savedLevelThree.complete ? 1 : 0))));
     } catch { /* optional */ }
+  }
+
+  function startFreshGame() {
+    audioRef.current?.pause();
+    setLevelTwoActive(false);
+    setLevelThreeActive(false);
+    setStarted(false);
+    setFinished(false);
+    setSceneIndex(0);
+    setBeat(0);
+    setActivityStep(0);
+    setComplete(false);
+    setLetters(0);
+    setCurtain(0);
+    setDoors([]);
+    setDrawn(false);
+    setCardOpen(false);
+    setSavedStars(0);
+    setSavedLevelTwoRooms(0);
+    setSavedLevelThreeStages(0);
+    setEarnedStar(null);
+    setCode("");
+    setCodeMessage("");
+    lastAutoLineRef.current = "";
+    try {
+      localStorage.removeItem("sft-e01-moving-stage-v1");
+      localStorage.removeItem("sft-e02-moving-stage-v1");
+      localStorage.removeItem("sft-e03-moving-stage-v1");
+      localStorage.setItem("sft-active-level-v1", "select");
+    } catch { /* A fresh in-memory game still begins if storage is unavailable. */ }
+    setFreshGameOpen(false);
   }
 
   function activity() {
@@ -406,7 +490,8 @@ export default function Home() {
     </>;
   }
 
-  if (levelTwoActive) return <LevelTwo onExit={showLevelSelect} />;
+  if (levelThreeActive) return <LevelThree onExit={showLevelSelect} />;
+  if (levelTwoActive) return <LevelTwo onExit={showLevelSelect} onNext={beginLevelThree} />;
 
   if (!started) return <main className="opening-screen level-select-screen">
     {!storageReady && <div className="restore-screen" aria-label="Returning to your adventure"><p>Returning to your adventure…</p></div>}
@@ -416,11 +501,12 @@ export default function Home() {
       <CharacterSprite name="tavi" speaking={false} index={1} />
       <CharacterSprite name="sol" speaking={false} index={2} />
     </div>
-    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mira, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Play Level 2 again" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p></section>
+    <section><p className="eyebrow">SFT LEARNING ADVENTURES</p><h1>Choose an adventure</h1><p>Mia, Sol and Tavi travel through one complete learning level for each book. Pick the level you want to play.</p><div className="level-grid"><article className="level-card available"><span>LEVEL 1 · READY</span><h2>The Star Door Mystery</h2><p>Book One: <em>Something Is Here</em><br />Eight replayable learning games</p><button className="primary" onClick={beginLevelOne}>{savedStars > 0 ? "Continue Level 1" : "Play Level 1"}</button>{savedStars > 0 && <small>{savedStars} of 5 clue stars found on this device</small>}</article><article className="level-card available level-two-card"><span>LEVEL 2 · READY</span><h2>The Moon Lantern Workshop</h2><p>Book Two: <em>One Whole, Many Parts</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelTwo}>{savedLevelTwoRooms === 9 ? "Review Level 2 ending" : savedLevelTwoRooms > 0 ? "Continue Level 2" : "Play Level 2"}</button>{savedLevelTwoRooms > 0 && <small>{savedLevelTwoRooms} of 9 story steps complete on this device</small>}</article><article className="level-card available level-three-card"><span>LEVEL 3 · READY</span><h2>The Turning-Light Trail</h2><p>Book Three: <em>The Fold Makes a Pattern</em><br />Nine replayable learning games</p><button className="primary" onClick={beginLevelThree}>{savedLevelThreeStages === 9 ? "Review Level 3 ending" : savedLevelThreeStages > 0 ? "Continue Level 3" : "Play Level 3"}</button>{savedLevelThreeStages > 0 && <small>{savedLevelThreeStages} of 9 story steps complete on this device</small>}</article></div><p className="small-print">Local Kokoro narration · captions always shown · no adverts or sign-in</p><button className="fresh-game-button" onClick={() => setFreshGameOpen(true)}><span aria-hidden="true">↺</span> Start a fresh game</button></section>
+    {freshGameOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setFreshGameOpen(false)}><section className="code-modal fresh-game-modal" role="dialog" aria-modal="true" aria-labelledby="fresh-game-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setFreshGameOpen(false)} aria-label="Close">×</button><p className="eyebrow">START AGAIN</p><h2 id="fresh-game-title">Begin a completely fresh game?</h2><p>This removes all saved progress from Levels 1, 2 and 3 on this device. The books and game stay safely installed.</p><div className="fresh-game-actions"><button className="secondary" onClick={() => setFreshGameOpen(false)}>Keep my progress</button><button className="danger-action" onClick={startFreshGame}>Restart all progress</button></div></section></div>}
   </main>;
 
   if (finished) return <main className="ending-screen">
-    <div className="ending-art" /><button className="ending-home" onClick={showLevelSelect} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mira, Sol, Tavi and their new friend Nori searched every room. They found things, sounds and a written word—but no thing called nothing.</p><blockquote>Nothing was not a thing they could find.</blockquote><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
+    <div className="ending-art" /><button className="ending-home" onClick={showLevelSelect} aria-label="Choose a level">⌂ Levels</button><section><p className="eyebrow">LEVEL ONE COMPLETE</p><StarTrail count={5} /><h1>The mystery is solved.</h1><p>Mia, Sol, Tavi and their new friend Nori searched every room. They found things, sounds and a written word—but no thing called nothing.</p><blockquote>Nothing was not a thing they could find.</blockquote><div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div><p className="grownup-boundary"><strong>For grown-ups:</strong> this is the E01 operational boundary. It concerns what is presented within the check; it makes no claim of authority over an unexpressed metaphysical domain.</p><div className="ending-controls"><button className="primary" onClick={beginLevelTwo}>Next level</button><button className="secondary" onClick={restart}>Play Level 1 again</button><button className="secondary" onClick={showLevelSelect}>Choose a level</button></div></section>
   </main>;
 
   return <main className="game-shell">
@@ -434,7 +520,7 @@ export default function Home() {
       <div className="stage-light" />
       {beat === 0 && scene.journey && <div className="journey-banner"><span aria-hidden="true">✨</span><strong>{scene.journey}</strong></div>}
       {scene.introduces && beat <= 1 && <div className="guest-banner">New friend for Level One: <strong>{characterNames[scene.introduces]}</strong></div>}
-      {scene.id === "note" && beat >= 1 && !dialogueDone && <div className={`story-note ${beat >= 2 ? "picked-up" : "landed"}`} role="img" aria-label={beat >= 2 ? "Mira is holding the note" : "The note has landed next to Mira"}><strong>Note</strong><span aria-hidden="true">📝</span></div>}
+      {scene.id === "note" && beat >= 1 && !dialogueDone && <div className={`story-note ${beat >= 2 ? "picked-up" : "landed"}`} role="img" aria-label={beat >= 2 ? "Mia is holding the note" : "The note has landed next to Mia"}><strong>Note</strong><span aria-hidden="true">📝</span></div>}
       <div className="walking-cast" aria-hidden="true">{scene.cast.map((name, index) => <CharacterSprite key={name} name={name} index={index} speaking={speakingName === name} />)}</div>
       {dialogueDone && !complete && <div className="activity-layer">{activity()}</div>}
       {earnedStar && <div className="star-reward" role="status"><span aria-hidden="true">★</span><strong>Clue star {earnedStar} lights!</strong></div>}
@@ -449,6 +535,6 @@ export default function Home() {
     </section>
 
     <button className="restart-corner" onClick={restart}>Start over</button>
-    {journalOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setJournalOpen(false)}><section className="code-modal" role="dialog" aria-modal="true" aria-labelledby="code-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setJournalOpen(false)} aria-label="Close">×</button><p className="eyebrow">OPTIONAL BOOK SECRET</p><h2 id="code-title">Mira&apos;s code pocket</h2><p>The book hides six codes in its pictures. They unlock jokes and previews, never lessons or progress.</p><form onSubmit={submitCode}><label htmlFor="book-code">Code from the book</label><div><input id="book-code" value={code} onChange={(event) => setCode(event.target.value)} autoComplete="off" /><button>Open</button></div></form><p className="code-result" aria-live="polite">{codeMessage}</p></section></div>}
+    {journalOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setJournalOpen(false)}><section className="code-modal" role="dialog" aria-modal="true" aria-labelledby="code-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setJournalOpen(false)} aria-label="Close">×</button><p className="eyebrow">OPTIONAL BOOK SECRET</p><h2 id="code-title">Mia&apos;s code pocket</h2><p>The book hides six codes in its pictures. They unlock jokes and previews, never lessons or progress.</p><form onSubmit={submitCode}><label htmlFor="book-code">Code from the book</label><div><input id="book-code" value={code} onChange={(event) => setCode(event.target.value)} autoComplete="off" /><button>Open</button></div></form><p className="code-result" aria-live="polite">{codeMessage}</p></section></div>}
   </main>;
 }

@@ -1,8 +1,60 @@
-# Level One and Level Two manual end-to-end QA
+# Levels One, Two and Three manual end-to-end QA
 
 Version: unified game 2.0.0 review
 Date: 31 July 2026
 Final-publication approval: pending Maria Smith's review
+
+## Level Three complete journey
+
+Level Three was played from its opening Moon Lantern line to the lit Sunrise
+Arch at a 390 × 844 phone viewport. Every one of the nine puzzles was completed
+through the visible interface. A plausible wrong path was deliberately taken
+in every puzzle before the successful path:
+
+1. `Moon-and-Sun Catch`: moved the catcher between three lanes, missed a light,
+   then caught blue moon, gold sun, blue moon and gold sun in order.
+2. `Two-Side Camera`: recorded one face twice to use a try light, then turned
+   the tile and recorded both named faces.
+3. `Gate Crank`: released early, then used the gold-mark touch alternative and
+   released the fully turned tile.
+4. `Return Run`: launched the tile through a path that missed the required
+   one-turn return, then chose the path that brought the blue moon back.
+5. `Path Builder`: placed the wrong moving light, then completed the next three
+   lawful lights from the belt.
+6. `Rule Repair`: replaced the wrong place first, then found and repaired the
+   first broken move while Sol's original row remained visible.
+7. `Bridge Hop`: chose a closed lane, then guided Vee through all five labelled
+   arches while changing between over and under.
+8. `Trail Mapper`: tested the broken route before choosing the route that both
+   reached the arch and changed picture at every move.
+9. `New-Role Relay`: broke the star-and-leaf rule, then continued it from the
+   fixed first star; the delayed first-gate recall was also answered wrongly
+   once before the gold sun was chosen.
+
+All three-try round-loss and one-touch recovery controls remained available.
+Every board retained its goal, current state and relevant objects together.
+No puzzle could be completed by clicking every object, and no correct answer
+pulsed before a genuine attempt.
+
+## Level Three visual, restoration and ending checks
+
+- Phone 390 × 844: complete play-through, all wrong paths, successes, replays,
+  final lesson and all ending controls.
+- Tablet 768 × 1024: selector, cast/title spacing and completed ending checked.
+- Desktop 1440 × 900: selector and completed ending checked; the narrator
+  lesson and all three controls fit without scrolling.
+- The opening cast remained entirely above the title and level cards at phone,
+  tablet and desktop sizes.
+- The rebuilt bridge showed five numbered arches with explicit open and closed
+  over/under lanes; all three route maps fit inside the phone board.
+- Reload during a dialogue restored the exact scene and dialogue turn.
+- Leaving for another tab and returning preserved the current state and stopped
+  narration while hidden.
+- A completed Level Three run reloaded to its exact ending. The selector offers
+  `Review Level 3 ending` without erasing completion.
+- The ending narrator speaks directly to the child, defines a pattern, names
+  the evidence used in the level and explains why prediction and locating a
+  mistake matter.
 
 ## Level Two story-clarity replay
 
@@ -60,15 +112,15 @@ state, preserves earned progress and returns directly to the activity prompt.
 - Root and body overscroll: `none` at all three sizes.
 - Browser errors and warnings: none.
 
-Corrections made during QA kept Mira visibly identifiable as a permanent member
+Corrections made during QA kept Mia visibly identifiable as a permanent member
 of the trio, replaced ambiguous or clipped props with labelled emoji objects,
 kept the mobile cast clear of activities, made the five-star holder and each
 earned star animate clearly, held the curtain reveal long enough to inspect,
 kept recall objects separate and adjusted the phone door room so both small
-doors remain visible. Mira's tall portrait sprite is now bottom-anchored so her
+doors remain visible. Mia's tall portrait sprite is now bottom-anchored so her
 feet share the trio's ground line, and the opening cast has a separate safe area
 above the level title and cards at phone, tablet and desktop sizes. At the short
-phone size the measured cast-to-title gap is 70 pixels, and Mira's speech
+phone size the measured cast-to-title gap is 70 pixels, and Mia's speech
 indicator is anchored to her visible portrait box beside her head.
 
 ## Level One automated checks
@@ -78,7 +130,7 @@ indicator is anchored to her visible portrait box beside her head.
 - production build: pass;
 - no application fetch or analytics call: pass;
 - scientific claim and receipt identity: pass;
-- all 35 narration files present: pass.
+- all 36 narration files present: pass.
 
 ## 1.6.0 mobile restoration and wording regression
 
@@ -90,8 +142,8 @@ indicator is anchored to her visible portrait box beside her head.
 - The opening used only Star Door, letter box and note; no decorative material,
   geometric slot description or unexplained door action remained.
 - The generated Kokoro files were rebuilt from the exact 35 revised captions.
-- At 390 by 724 pixels, the labelled note lands beside Mira on the matching
-  caption and moves to her hand on “Mira picked up the note and opened it.”
+- At 390 by 724 pixels, the labelled note lands beside Mia on the matching
+  caption and moves to her hand on “Mia picked up the note and opened it.”
 - Leaving for another browser tab and returning preserved that exact line and
   the picked-up note. Reloading preserved the same state too.
 
@@ -117,7 +169,7 @@ Level Two was manually played from the first parcel to the lit Moon Lantern:
 Every stage's wrong path, success path and `Play again` control was exercised.
 All room changes had a visible or spoken cause. Object names appeared above the
 new activity pictures. Reload during Level Two restored the exact unfinished
-activity. Leaving for another browser tab and returning preserved Mira's exact
+activity. Leaving for another browser tab and returning preserved Mia's exact
 parcel sentence. The landing page stayed on the chosen level until the child
 used the Levels control.
 
@@ -129,18 +181,18 @@ used the Levels control.
 - Tablet: 1024 × 768, all nine stages, selector and ending inspected.
 - No activity was covered by the phone navigation buttons after the final
   right-side safe-area adjustment.
-- The selector kept Mira, Tavi and Sol above and clear of the title and cards at
+- The selector kept Mia, Tavi and Sol above and clear of the title and cards at
   phone, tablet and desktop sizes.
-- Pax, Mira, Sol and Tavi shared a visible ground line in all Level Two rooms.
+- Pax, Mia, Sol and Tavi shared a visible ground line in all Level Two rooms.
 
 ## Unified automated checks
 
-- fourteen application/content tests: pass;
+- eighteen application/content tests: pass;
 - plain-language gate for E01 and E02: pass;
-- lint: no errors; four expected image-optimisation warnings for local character
+- lint: no errors; six expected image-optimisation warnings for local character
   sprites;
 - production build: pass;
-- all 62 caption-matched narration files present: pass;
+- all 92 caption-matched narration files present: pass;
 - no application fetch, analytics, sign-in or child-data collection: pass.
 
 ## Short-phone ending escape regression
@@ -151,8 +203,8 @@ used the Levels control.
 - The ending itself can scroll when a still shorter browser needs more room.
 - A fixed `Levels` control remained in the phone safe area throughout the
   ending and returned directly to the adventure selector.
-- Opening the game in a new tab after completion returned to the selector
-  instead of restoring an inescapable ending screen.
+- Opening the game in a new tab after completion restored the exact ending; its
+  fixed Levels control returned to the selector without trapping the player.
 - The selector retained the completed progress and offered `Play Level 2
   again`; choosing replay starts a fresh Level Two journey.
 
@@ -168,19 +220,48 @@ at 360 × 640:
 4. `Twin-Part Test`: found the same-size pair and measured both parts.
 5. `Doorway Delivery`: selected each part and paired it with one unused spot;
    all eight part-and-spot touches remained clear of the phone controls.
-6. `Count-and-Collect`: collected two parts from Pax, unlocked the tray and
-   collected the other two.
+6. `Count-and-Collect`: tapped each of the two parts in Pax's hands and the two
+   parts on the labelled tray, then answered the held count and whole count on
+   separate turns.
 7. `Gap Repair`: fitted the missing part, activated three repair sparks and
    moved the extra triangle outside.
 8. `Lantern Builder`: placed all four parts and woke all four lantern lights.
-9. `Memory Moonwalk`: answered the delayed recall, crossed four stones in order
-   and placed the lantern on its stand.
+9. `Lantern Sum Builder`: placed four visible one-part groups, chose the total,
+   read the exact addition statement and joined the same parts into one whole.
 
 Each mini-game displayed its own title and live progress. Success led back into
-the story and `Play again` restarted the complete mini-game. A wrong delayed-
-recall answer produced a gentle clue without changing progress. The activity
-and prompt regions did not overlap at 1280 × 720.
+the story and `Play again` restarted the complete mini-game. A wrong answer
+produced a gentle clue without changing completed progress. The activity and
+prompt regions did not overlap at 1280 × 720.
 
-This QA makes E01 review 1.6.0, E02 review 1.0.0 and unified game review 2.0.0
+The current automated suite contains eighteen application/content tests; all
+eighteen pass together with lint and the production build.
+
+## Level Two exact-addition revision — 31 July 2026
+
+- Played Level Two from the opening parcel through the revised ending at a
+  579 × 1280 phone viewport, matching the supplied phone screenshots.
+- Inspected the empty and completed `Fit-the-Circle Lab`: all four pieces are
+  exact quadrants of the same code-drawn lantern, meet at one centre, and touch
+  the same circular rim.
+- Replaced and removed `Memory Moonwalk`; no passive picture-order task remains
+  in Level Two.
+- In `Lantern Sum Builder`, placed all four visible parts, deliberately chose
+  the wrong total `3`, retained the recoverable clue and one used try light,
+  then chose `4`.
+- Verified the revealed equation `1 part + 1 part + 1 part + 1 part = 4 parts`,
+  the separate explanations of plus and equals, and the following
+  `4 parts → 1 whole lantern` reassembly action.
+- Confirmed the completion dialogue and direct-to-child lesson fit the phone
+  screen and that `Next level`, `Play Level 2 again` and `Choose a level` remain
+  reachable.
+- Rendered and visually inspected revised student pages 28–31 and all six adult
+  guide pages. Fixed a stranded adult-guide heading before the final render.
+- Regenerated all 28 E02 voice files from the caption manifest using Maria
+  Smith's local Kokoro model and voice weights.
+- Passed all eighteen application/content tests, the production build and lint
+  with no errors.
+
+This QA makes E01 review 1.6.0, E02 review 1.0.0, E03 review 1.0.0 and unified game review 2.0.0
 ready for Maria Smith's next play test. It does not approve
 the version, authorise public hosting or move it into `publications/education/`.

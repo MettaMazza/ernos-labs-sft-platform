@@ -21,6 +21,6 @@ test("server renders the new narrated moving-stage adventure", async () => {
   assert.match(html, /Play Level 2/);
   assert.match(html, /The Moon Lantern Workshop/);
   assert.match(html, /Local Kokoro narration/);
-  assert.match(html, /Mira, Sol and Tavi travel through one complete learning level for each book/);
+  assert.match(html, /Mia, Sol and Tavi travel through one complete learning level for each book/);
   assert.doesNotMatch(html, /Every star answers the mystery|complete lesson in game form|scene-choice/);
 });

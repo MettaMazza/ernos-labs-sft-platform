@@ -8,7 +8,7 @@ Status: canonical design for review production
 - Book: **E02 — One Whole, Many Parts**
 - Story subtitle: **The Moon Lantern Workshop**
 - Stage: Early Years / Foundation
-- Permanent leads: Mira, Sol and Tavi
+- Permanent leads: Mia, Sol and Tavi
 - One new guest: Pax, the patient piece-keeper
 - Prior knowledge: E01's bounded habit of naming what is presented and not
   inventing an unseen answer
@@ -33,8 +33,10 @@ parts of that plan rather than unrelated locks:
 6. every lantern part is carried through the same doorway exactly once;
 7. visible size and held/whole counts are checked while all four parts remain in view;
 8. the child repairs a gap and keeps an unrelated extra outside;
-9. all four parts return to the round frame and the tray becomes empty; and
-10. the team recalls the earlier counting lesson and delivers the rebuilt whole.
+9. all four parts return to the round frame and the tray becomes empty;
+10. the child joins four separate one-part counts and chooses the exact total;
+    and
+11. the same four parts are fitted together as one whole lantern.
 
 The lantern is never repaired by an unexplained reward, character assertion or
 scene cut. The child sees the causal mechanism change after every check.
@@ -50,10 +52,12 @@ scene cut. The child sees the causal mechanism change after every check.
 | Compare pieces cut to the same size | equal pieces | pieces made the same size in this partition |
 | Hold selected pieces while the full set stays visible | held part | the chosen nonempty pieces inside the complete partition |
 | Say both numbers | held count and whole count | how many are held, and how many make the complete partition |
+| Place four separate one-part groups and choose the total | plus / addition | join the separate counts while keeping every part once |
+| Compare both sides of the equation | equals | both sides count the same four visible parts |
 
 ## Scientific boundary
 
-The child activities translate three admitted forward-forced claims. They do
+The child activities translate five admitted claims. They do
 not constitute new proofs.
 
 - `SFT-FOUNDATION-ONE-001`: complete self-whole without omission or unforced
@@ -64,12 +68,18 @@ not constitute new proofs.
 - `SFT-FOUNDATION-PART-001`: a positive held selection in a complete, disjoint,
   equal-fibred finite partition is exactly identified by the held count and the
   complete-partition count.
+- `SFT-MATH-EXACT-ARITHMETIC-001`: the exact arithmetic kernel follows only
+  after the generated count and part structures are admitted.
+- `SFT-MATH-ARITH-JUNCTION-ADDITION-002`: addition joins held-disjoint generated
+  traces while retaining every source unit exactly once.
 
-The book does not introduce numerical zero, negative or decimal quantity,
-floating-point equality, completed infinity, an ungenerated continuum, or
-cross-partition equivalence. In particular, it does not claim that `2 held of 4`
-and `1 held of 2` are interchangeable. That requires the separate downstream
-part-equivalence theorem and is outside E02.
+The symbols `+` and `=` are child-facing correspondence after the SFT
+derivation; they do not provide authority for it. The book does not introduce
+numerical zero, fractions, negative or decimal quantity, floating-point
+equality, completed infinity, an ungenerated continuum, or cross-partition
+equivalence. In particular, it does not claim that `2 held of 4` and `1 held of
+2` are interchangeable. That requires the separate downstream part-equivalence
+theorem and is outside E02.
 
 ## Book/game stage pairing
 
@@ -82,7 +92,7 @@ part-equivalence theorem and is outside E02.
 | Check the sizes | 21–22 | compare equal and unequal visible pairs | — |
 | Rebuild: gap and extra | 23–25 | repair a gap; keep the outside extra outside | `GAPCHECK` |
 | Check the two counts | 26–27 | report held/whole positive counts | `HELDWHOLE` |
-| Recall and delivery | 28–32 | identify Sol's earlier duplicate, rebuild, deliver and preview E03 | — |
+| Add, rebuild and deliver | 28–32 | make `1 + 1 + 1 + 1 = 4 parts`, then join the four parts into one whole lantern | — |
 
 Every stage is replayable, has direct input, gives visible and audible feedback,
 and retains a visible bridge back to the relevant book pages.

@@ -17,39 +17,56 @@
       }
     ],
     "narration_manifest": "edu/games/companion-adventures/narration-manifest.json",
-    "narrated_lines": 35,
+    "narrated_lines": 36,
     "reading_codes": ["ROOMSTAR", "BOXCLUE", "QUIETWINGS", "BLANKEDGE", "CURTAINMAP", "TWODOORS"]
   },
   "level_2": {
     "book_id": "SFT-EDU-E02-ONE-WHOLE-MANY-PARTS",
     "book_version": "1.0.0",
     "title": "The Moon Lantern Workshop",
-    "scenes": ["parcel", "whole", "parts", "match", "bridge", "count", "gap", "rebuild", "recall"],
+    "scenes": ["parcel", "whole", "parts", "match", "bridge", "count", "gap", "rebuild", "sum"],
     "scientific_sources": [
       {"claim_id":"SFT-FOUNDATION-ONE-001","receipt_hash":"sha256:68332624c276dc5d0ddfd568a26b95e20d7d5665fcdb7e825ff1b7b19bf1d51c"},
       {"claim_id":"SFT-FOUNDATION-COUNT-001","receipt_hash":"sha256:4b2411716cbef2fb9fa7aac58b24ce5eb3c0c59fe7230fd703fd89b5260f6e23"},
-      {"claim_id":"SFT-FOUNDATION-PART-001","receipt_hash":"sha256:87b40affae50458ba5492af91778fbca79a8de0bc3b951e520535093c2b7b728"}
+      {"claim_id":"SFT-FOUNDATION-PART-001","receipt_hash":"sha256:87b40affae50458ba5492af91778fbca79a8de0bc3b951e520535093c2b7b728"},
+      {"claim_id":"SFT-MATH-EXACT-ARITHMETIC-001","receipt_hash":"sha256:28252bae62373d8657967ba28f8f2d497c2cf09abbae71609cb05c4f40196418"},
+      {"claim_id":"SFT-MATH-ARITH-JUNCTION-ADDITION-002","receipt_hash":"sha256:ecbb32a37fb10022315429bb39d88f49437fc856396d0b8db42fca49b2032493"}
     ],
     "narration_manifest": "edu/games/companion-adventures/narration-manifest-e02.json",
-    "narrated_lines": 27,
+    "narrated_lines": 28,
     "reading_codes": ["WHOLELIGHT", "ONCEEACH", "ONCEAROUND", "FAIRFIT", "PARTPAIR", "GAPCHECK", "HELDWHOLE"]
+  },
+  "level_3": {
+    "book_id": "SFT-EDU-E03-THE-FOLD-MAKES-A-PATTERN",
+    "book_version": "1.0.0",
+    "title": "The Turning-Light Trail",
+    "scenes": ["trail", "sides", "turn", "return", "continue", "repair", "bridge", "routes", "transfer"],
+    "scientific_sources": [
+      {"claim_id":"SFT-FOUNDATION-FOLD-001","receipt_hash":"sha256:9e99f91d15e2b68a5c24f825093686863c168595319c2083e6a5b52b0314e003"},
+      {"claim_id":"SFT-FOUNDATION-FOLD-DYNAMICS-001","receipt_hash":"sha256:ffaa7c3740dd747aecfc858391cec140dd6c1b3c8ab219ca798fccfc1785b675"}
+    ],
+    "narration_manifest": "edu/games/companion-adventures/narration-manifest-e03.json",
+    "narrated_lines": 28,
+    "reading_codes": ["TRAILLIGHT", "TWOSIDES", "TURNBACK", "NEXTLIGHT", "KEEPTHETRY", "OVERUNDER", "RIGHTROUTE", "NEWROLES"]
   },
   "level_select": {
     "enabled": true,
     "level_1": "available with device-local resume",
-    "level_2": "available with device-local resume"
+    "level_2": "available with device-local resume",
+    "level_3": "available with device-local resume"
   },
-  "narrative_cause_chain": "Level Two holds one child-facing question throughout: how can the whole lantern get through the small door? Every activity completes one visible part of the check, separate, carry and rebuild plan.",
+  "narrative_cause_chain": "Level Two asks how the whole lantern can pass through a small door; every puzzle advances the separate, carry and rebuild plan. Level Three begins when that lantern lights a trail; every puzzle repairs one visible part of the same journey to the Sunrise Arch.",
   "plain_language_rule": "Use the shortest familiar word that keeps the meaning exact. Child text uses door, letter box, note, box, part, gap and extra; technical boundary terms stay in adult guidance.",
   "interaction_system": {
     "level_1": ["spot note", "move toy and inspect box", "hold bell", "draw or leave blank", "step letters", "slide curtain", "inspect two doors", "recall first clue"],
-    "level_2": ["Parcel Dash: catch the parcel, undo three ribbons, lift the lid and find the card", "Lantern Detective: identify the whole and inspect three defining clues", "Fit-the-Circle Lab: choose the sound plan and fit all four parts", "Twin-Part Test: compare the pairs and measure both same-size parts", "Doorway Delivery: pair each lantern part with one empty carrying spot", "Count-and-Collect: collect two held parts, then collect all four", "Gap Repair: fit the missing part, seal the gap and move the extra outside", "Lantern Builder: rebuild the whole and wake four lights", "Memory Moonwalk: recall Sol’s try, cross four stones in order and place the lantern"]
+    "level_2": ["Parcel Dash: steer through a changing obstacle course", "Lantern Detective: uncover all four visible parts of one lantern", "Fit-the-Circle Lab: match four exact symmetrical lantern quadrants to one circular plan", "Twin-Part Test: place lantern-part pairs on a balance and compare their sizes", "Doorway Delivery: carry each of four lantern parts through the small door exactly once", "Count-and-Collect: count the four visible lantern parts, including the two Pax holds", "Gap Repair: choose, rotate and fit the matching curved lantern part", "Lantern Builder: solve a four-piece lantern-picture jigsaw", "Lantern Sum Builder: make 1 + 1 + 1 + 1 = 4 parts, then join those four parts into one whole lantern"],
+    "level_3": ["Moon-and-Sun Catch: move a catcher across three lanes and catch the four ordered lights", "Two-Side Camera: turn one tile and record its two different faces", "Gate Crank: pull the gate handle to its marked turn or use the touch alternative", "Return Run: compare three complete paths and launch the tile through the one-turn return path", "Path Builder: place three lawful lights from a moving belt", "Rule Repair: replace the first broken move in a retained randomized row", "Bridge Hop: guide Vee through five alternating over-and-under arches", "Trail Mapper: inspect three complete maps and find the route that reaches the arch while keeping the rule", "New-Role Relay: continue star-and-leaf roles from a fixed clue, then recall the first gate"]
   },
   "mini_game_policy": "Every stage in every level or book contains a short replayable learning mini-game with direct input, visible feedback and a clear learning purpose; narrative-only stages are not permitted.",
-  "sound_system": "62 caption-matched local Kokoro narration lines plus offline Web Audio movement and interaction effects",
+  "sound_system": "92 caption-matched local Kokoro narration lines plus offline Web Audio movement and interaction effects",
   "codes_required_for_progress": false,
   "scientific_content_locked_behind_codes": false,
-  "callback_policy": "Sol, Tavi and Mira are permanent; each level introduces at most one guest; callbacks appear only when relevant and never identify a new answer.",
+  "callback_policy": "Sol, Tavi and Mia are permanent; each level introduces at most one guest; callbacks appear only when relevant and never identify a new answer.",
   "mobile_navigation_guard": "The application root and game stages use fixed-height overflow containment and overscroll-behavior none to prevent accidental pull-to-refresh or swipe-off scrolling.",
   "progress_storage": "device-local browser storage only; active level, exact scene, dialogue turn and unfinished activity are saved during play and when the page is hidden",
   "personal_data_collected": false,
@@ -61,6 +78,6 @@
   "final_publication": {
     "approved": false,
     "hosted": false,
-    "note": "Awaiting Maria Smith's review and explicit approval; neither book has been moved into publications/education."
+    "note": "Awaiting Maria Smith's review and explicit approval; none of the first three books has been moved into publications/education."
   }
 }

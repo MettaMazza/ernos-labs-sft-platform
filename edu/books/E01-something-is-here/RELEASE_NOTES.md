@@ -10,7 +10,7 @@ Final-publication approval: pending
 
 - The Star Door is simply named; decorative material and shape descriptions
   were removed from the child text.
-- A note now clearly comes through the letter box, lands next to Mira, and is
+- A note now clearly comes through the letter box, lands next to Mia, and is
   picked up and opened before she reads it.
 - A series rule now rejects decorative mechanical phrases such as “great brass
   door” or “rectangular slot” when the ordinary word is enough.
@@ -24,12 +24,12 @@ Final-publication approval: pending
 
 ## Character and picture corrections
 
-- Mira, Sol and Tavi remain the permanent team.
+- Mia, Sol and Tavi remain the permanent team.
 - Nori is the only new character in Book One and appears only from the bell room
   onwards.
 - The cover no longer contains unused characters.
 - Four-character scenes now render the full cast.
-- The note is clearly visible beside Mira's boots, in her hand when first read,
+- The note is clearly visible beside Mia's boots, in her hand when first read,
   and in her hand when read again.
 - All 32 student pages and all five adult-guide pages were rendered and visually
   inspected.
@@ -39,8 +39,8 @@ Final-publication approval: pending
 Game review 1.6.0 uses the same revised wording and 35 caption-matched local
 Kokoro narration lines. Device-local progress now preserves the exact scene,
 dialogue turn and unfinished activity when a mobile browser hides or reloads
-the page. A 390-by-724 mobile check confirmed the note landing beside Mira,
-Mira picking it up, exact turn restoration after reload, and exact restoration
+the page. A 390-by-724 mobile check confirmed the note landing beside Mia,
+Mia picking it up, exact turn restoration after reload, and exact restoration
 after leaving for another tab and returning.
 
 ## Scientific and publication status

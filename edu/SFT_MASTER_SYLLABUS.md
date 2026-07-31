@@ -71,10 +71,14 @@ presented observation.”
 
 ### E02 — *One Whole, Many Parts*
 
-**SFT source:** One, positive finite count, exact positive parts and reassembly.
+**SFT source:** One, positive finite count, exact positive parts, exact
+arithmetic, junction addition and reassembly.
 **Units:** one object; equal and unequal visible shares; matching parts;
-rebuilding a whole; no missing piece hidden by language.
-**Outcome:** the child can make and describe simple whole–part relations.
+joining separate one-part counts; reading plus and equals; rebuilding a whole;
+no missing piece hidden by language. Fractions remain outside E02.
+**Outcome:** the child can make and describe simple whole–part relations, form
+`1 + 1 + 1 + 1 = 4 parts`, explain that both sides have the same total, and
+distinguish that equation from rebuilding four parts as one whole object.
 
 ### E03 — *The Fold Makes a Pattern*
 

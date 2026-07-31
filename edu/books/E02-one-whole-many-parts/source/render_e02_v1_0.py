@@ -164,6 +164,44 @@ def draw_pair(c: canvas.Canvas, cx: float, cy: float, equal: bool) -> None:
         c.circle(cx + offset, cy, size, fill=1, stroke=1)
 
 
+def draw_lantern_part_card(c: canvas.Canvas, cx: float, cy: float, part: int, size: float = 18 * mm) -> None:
+    c.saveState()
+    c.setFillColor(CREAM)
+    c.setStrokeColor(NAVY)
+    c.setLineWidth(1.2)
+    c.roundRect(cx - size / 2, cy - size / 2, size, size, 2.5 * mm, fill=1, stroke=1)
+    radius = size * .36
+    starts = {1: 90, 2: 0, 3: 180, 4: 270}
+    c.setFillColor(PART_COLORS[part - 1])
+    c.setStrokeColor(GOLD)
+    c.setLineWidth(1.4)
+    c.wedge(cx - radius, cy - radius, cx + radius, cy + radius, starts[part], 90, fill=1, stroke=1)
+    c.setFillColor(INK)
+    c.setFont(base.font("bold"), 7)
+    c.drawCentredString(cx, cy - size * .41, "1")
+    c.restoreState()
+
+
+def draw_addition_equation(c: canvas.Canvas, x: float, y: float, answer: str) -> None:
+    positions = (x + 18 * mm, x + 53 * mm, x + 88 * mm, x + 123 * mm)
+    for index, cx in enumerate(positions, 1):
+        draw_lantern_part_card(c, cx, y, index)
+        if index < 4:
+            c.setFillColor(WHITE)
+            c.setFont(base.font("bold"), 18)
+            c.drawCentredString(cx + 17.5 * mm, y - 2 * mm, "+")
+    c.setFillColor(WHITE)
+    c.setFont(base.font("bold"), 18)
+    c.drawCentredString(x + 142 * mm, y - 2 * mm, "=")
+    c.setFillColor(GOLD)
+    c.setStrokeColor(WHITE)
+    c.setLineWidth(1.6)
+    c.roundRect(x + 151 * mm, y - 10 * mm, 24 * mm, 20 * mm, 3 * mm, fill=1, stroke=1)
+    c.setFillColor(INK)
+    c.setFont(base.font("bold"), 17)
+    c.drawCentredString(x + 163 * mm, y - 3 * mm, answer)
+
+
 def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float, h: float) -> None:
     number = page["page"]
     if number == 4:
@@ -186,11 +224,11 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
         if number == 8:
             c.setStrokeColor(GOLD); c.setLineWidth(4)
             c.circle(x + 91 * mm, y + 66 * mm, 15 * mm, fill=0, stroke=1)
-    elif number in (11, 12, 13, 28, 29):
+    elif number in (11, 12, 13):
         tile_x = (x + 51 * mm, x + 79 * mm, x + 107 * mm, x + 135 * mm)
         for index, cx in enumerate(tile_x):
             draw_footprint(c, cx, y + 50 * mm, GREEN if number in (11, 13, 29) else colors.HexColor("#EF816D"))
-            if index == 2 and number in (12, 13, 28, 29):
+            if index == 2 and number in (12, 13):
                 draw_footprint(c, cx + 5 * mm, y + 58 * mm, colors.HexColor("#EF816D"))
     elif number in (14, 15, 16, 17):
         draw_partition_choices(c, x, y + 68 * mm, reveal=number == 17)
@@ -217,16 +255,23 @@ def draw_page_diagram(c: canvas.Canvas, page: dict, x: float, y: float, w: float
         for index, (cx, cy) in enumerate(((x + 130 * mm, y + 67 * mm), (x + 145 * mm, y + 55 * mm))):
             c.setFillColor(PART_COLORS[index + 2]); c.setStrokeColor(NAVY); c.setLineWidth(1.4)
             c.roundRect(cx - 6 * mm, cy - 6 * mm, 12 * mm, 12 * mm, 3 * mm, fill=1, stroke=1)
+    elif number == 28:
+        draw_addition_equation(c, x, y + 58 * mm, "?")
+    elif number == 29:
+        draw_addition_equation(c, x, y + 58 * mm, "4")
     elif number == 30:
-        draw_quartered_lantern(c, x + 92 * mm, y + 58 * mm, 25 * mm)
+        for index, cx in enumerate((x + 28 * mm, x + 50 * mm, x + 72 * mm, x + 94 * mm), 1):
+            draw_lantern_part_card(c, cx, y + 58 * mm, index, 16 * mm)
+        c.setFillColor(WHITE)
+        c.setFont(base.font("bold"), 16)
+        c.drawCentredString(x + 116 * mm, y + 56 * mm, "->")
+        draw_quartered_lantern(c, x + 150 * mm, y + 58 * mm, 22 * mm)
     elif number == 31:
-        draw_quartered_lantern(c, x + 40 * mm, y + 61 * mm, 12 * mm)
-        for index, cx in enumerate((x + 67 * mm, x + 78 * mm, x + 89 * mm, x + 100 * mm)):
-            c.setFillColor(PART_COLORS[index]); c.setStrokeColor(NAVY); c.setLineWidth(1.1)
-            c.roundRect(cx - 4 * mm, y + 57 * mm, 8 * mm, 8 * mm, 2 * mm, fill=1, stroke=1)
-        c.setFillColor(CREAM); c.setStrokeColor(GOLD); c.setLineWidth(2.2)
-        c.roundRect(x + 113 * mm, y + 44 * mm, 17 * mm, 34 * mm, 6 * mm, fill=1, stroke=1)
-        draw_quartered_lantern(c, x + 153 * mm, y + 61 * mm, 12 * mm)
+        draw_addition_equation(c, x, y + 72 * mm, "4")
+        c.setFillColor(WHITE)
+        c.setFont(base.font("bold"), 12)
+        c.drawCentredString(x + 92 * mm, y + 42 * mm, "4 PARTS  ->  1 WHOLE LANTERN")
+        draw_quartered_lantern(c, x + 92 * mm, y + 24 * mm, 13 * mm)
     elif number == 32:
         draw_quartered_lantern(c, x + 92 * mm, y + 58 * mm, 26 * mm, alternate=True)
 
@@ -345,10 +390,10 @@ def adult_footer(c: canvas.Canvas, doc: SimpleDocTemplate) -> None:
 def render_adult() -> None:
     doc = SimpleDocTemplate(str(ADULT_PDF), pagesize=A4, rightMargin=20*mm, leftMargin=20*mm, topMargin=19*mm, bottomMargin=20*mm, title="Adult Guide · E02 · Review 1.0.0", author="Maria Smith")
     story = base.parse_markdown_to_story(ADULT_GUIDE.read_text(encoding="utf-8"))
-    for index, flowable in enumerate(story):
-        if getattr(flowable, "getPlainText", lambda: "")() == "Vocabulary rule":
-            story.insert(index, PageBreak())
-            break
+    for flowable in story:
+        style = getattr(flowable, "style", None)
+        if getattr(style, "name", "") in ("SFTH1", "SFTH2", "SFTH3"):
+            style.keepWithNext = 1
     doc.build(story, onFirstPage=adult_footer, onLaterPages=adult_footer)
 
 

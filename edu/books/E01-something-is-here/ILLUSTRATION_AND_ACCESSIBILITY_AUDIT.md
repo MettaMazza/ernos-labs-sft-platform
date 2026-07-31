@@ -47,7 +47,7 @@ the new answer.
 All 32 final student pages and all 5 adult-guide pages were rendered to PNG and
 inspected at readable resolution. The 1.6.0 pass removed the old extra cast from
 the cover, restored the full four-character cast after Nori's introduction and
-added a clear note beside Mira's boots and in her hand. It also preserved every
+added a clear note beside Mia's boots and in her hand. It also preserved every
 character's face and kept the box, teddy, card, bells and doors recognisable.
 Final pages show no clipped text, overlap, broken glyph, missing label, unreadable
 contrast or page-number defect.
