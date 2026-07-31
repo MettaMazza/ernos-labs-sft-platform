@@ -467,12 +467,21 @@ button:focus-visible,input:focus-visible,canvas:focus-visible { outline:4px soli
   .route-map-cards{width:min(440px,96%);grid-template-columns:1fr;gap:5px}.route-map-cards button{height:92px;grid-template-columns:82px 1fr;grid-template-rows:1fr 1fr;align-content:center;justify-items:start;gap:1px 6px;padding:7px 10px;border-width:2px;border-radius:11px}.route-map-cards button b{grid-column:1;grid-row:1;align-self:end;font-size:.65rem}.route-map-cards button small{grid-column:1;grid-row:2;align-self:start;font-size:.58rem}.route-lights{grid-column:2;grid-row:1/3;gap:3px;white-space:nowrap;font-size:.52rem;line-height:1}.route-lights i{font-size:1.35rem}.route-compare p{padding:5px 8px;font-size:.56rem}
   .relay-track{gap:3px;padding:5px;border-width:2px;border-radius:11px}.relay-track span{width:48px;height:48px;border-width:2px;font-size:2rem}.role-relay>div:last-child{gap:4px}.role-relay button{min-width:90px;padding:4px;border-width:2px;font-size:.52rem}.role-relay button span{font-size:2rem}.gate-memory-card{gap:4px;padding:7px 12px;border-width:2px;border-radius:12px}.gate-memory-card strong,.gate-memory-card small{font-size:.5rem}.gate-memory-card span{font-size:2rem}
   .restart-corner { display:none; }
-  .opening-cast { left:0; right:0; top:1%; bottom:auto; height:min(30vh,260px); }
+  .level-select-screen { grid-template-rows:minmax(clamp(150px,22dvh,210px),1fr) auto; align-items:stretch; overflow-x:hidden; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+  .level-select-screen .opening-cast { position:relative; grid-row:1; left:auto; right:auto; top:auto; bottom:auto; width:100%; height:100%; overflow:hidden; }
+  .level-select-screen .opening-cast .actor { bottom:18px; max-height:calc(100% - 18px); }
   .opening-cast .actor-mira { left:3%; width:31vw; height:auto; }.opening-cast .actor-tavi { left:43%; width:23vw; }.opening-cast .actor-sol { left:70%; width:23vw; }
+  .level-select-screen>section { grid-row:2; }
   .opening-screen section { padding:18px 0 3vh; }
   .opening-screen h1 { margin:6px 0 10px; font-size:clamp(2.8rem,13vw,4rem); }
   .opening-screen section>p:not(.eyebrow,.small-print) { margin:0; font-size:.92rem; line-height:1.35; }
   .level-grid { gap:5px; margin-top:8px; }.level-card{min-height:150px;padding:8px;border-width:2px;border-radius:15px;gap:3px}.level-card h2{font-size:.82rem;line-height:1.03}.level-card p{font-size:.57rem!important}.level-card>span{font-size:.54rem}.level-card .primary,.level-card button:disabled{padding:7px 7px;font-size:.6rem}.level-card small{font-size:.5rem}.small-print{margin-top:6px;font-size:.6rem}.fresh-game-button{margin-top:5px;padding:6px 10px;font-size:.62rem}.fresh-game-modal{padding:24px}.fresh-game-modal h2{font-size:1.65rem}.fresh-game-actions{justify-content:stretch}.fresh-game-actions button{flex:1;min-height:44px}
+}
+
+@media (max-height:650px) and (orientation:landscape) {
+  .level-select-screen { display:block; overflow-x:hidden; overflow-y:auto; }
+  .level-select-screen .opening-cast { display:none; }
+  .level-select-screen>section { padding:18px 0 24px; }
 }
 
 /* Story preludes: every level begins with context, a recap, and a clear promise. */

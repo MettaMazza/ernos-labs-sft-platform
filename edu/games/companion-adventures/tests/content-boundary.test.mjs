@@ -42,7 +42,9 @@ test("Level One is a fixed animated stage, not a read-and-scroll choice menu", (
   assert.match(styles, /@keyframes actor-speaks/);
   assert.match(styles, /\.actor-mira img \{[^}]*bottom:-18px/);
   assert.match(styles, /\.actor-mira \{[^}]*height:auto;[^}]*aspect-ratio:2\/3/);
-  assert.match(styles, /\.opening-cast \{[^}]*top:1%;[^}]*height:min\(30vh,260px\)/);
+  assert.match(styles, /\.level-select-screen \{[^}]*grid-template-rows:minmax\(clamp\(150px,22dvh,210px\),1fr\) auto;[^}]*overflow-y:auto/);
+  assert.match(styles, /\.level-select-screen \.opening-cast \{[^}]*position:relative;[^}]*grid-row:1;[^}]*height:100%;[^}]*overflow:hidden/);
+  assert.match(styles, /\.level-select-screen \.opening-cast \.actor \{[^}]*bottom:18px;[^}]*max-height:calc\(100% - 18px\)/);
   assert.match(styles, /\.activity-layer \{[^}]*inset:68px 54px 162px 0/);
   assert.doesNotMatch(source, /choice-grid|scene-choice|interaction-panel|window\.scrollTo/);
   for (const activity of ["note", "box", "bell", "card", "word", "curtain", "doors"]) assert.match(source, new RegExp(`scene.activity === \\"${activity}\\"`));
