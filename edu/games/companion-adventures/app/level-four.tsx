@@ -39,7 +39,7 @@ function authored(audio: string): Line {
   return { speaker: entry.speaker, text: entry.text, audio: entry.audio };
 }
 
-export const LEVEL_FOUR_AUDIO_DIRECTORY = "/audio/e04-v1.0.0";
+export const LEVEL_FOUR_AUDIO_DIRECTORY = "/audio/e04-v1.0.1";
 export const LEVEL_FOUR_MUSIC = "/audio/music/level-four.mp3";
 export const LEVEL_FOUR_ASSETS = Object.freeze({
   search: "/art/stages/e04-stage-01-look-and-point-v2.png",
@@ -56,57 +56,57 @@ export const LEVEL_FOUR_ASSETS = Object.freeze({
 
 const scenes: Scene[] = [
   {
-    id: "search", title: "Look at the source", gameTitle: "Look-and-Point Lens", gameIcon: "🔎", background: LEVEL_FOUR_ASSETS.search, cast: ["mira", "tavi", "sol", "ivo"], journey: "The turning light shines on Sunrise Arch. A closed garden gate waits ahead, with a Welcome Sign beside it.", activity: "search",
+    id: "search", title: "Look at the picture plan", gameTitle: "Find It With the Lens", gameIcon: "🔎", background: LEVEL_FOUR_ASSETS.search, cast: ["mira", "tavi", "sol", "ivo"], journey: "The friends step through the Sunrise Arch. The gate is shut. A picture plan and an empty Welcome Sign stand beside it.", activity: "search",
     lines: [authored("01a-narrator-gate"), authored("01b-mia-find")],
-    prompt: "Move the lens to the named source corner. Then choose the picture you can see there. A wrong corner stays marked and uses one try light.",
+    prompt: "Tap the MOON corner. Tap Use the lens. Then choose the picture you see. You have three try lights. A wrong answer turns one off.",
     success: authored("01c-narrator-observation"),
   },
   {
-    id: "build", title: "Build the Welcome Sign", gameTitle: "Build-the-Board", gameIcon: "🧩", background: LEVEL_FOUR_ASSETS.build, cast: ["mira", "tavi", "sol", "ivo"], journey: "The source stays beside the closed gate while the team builds the blank sign from the four picture cards.", activity: "build",
+    id: "build", title: "Build the Welcome Sign", gameTitle: "Welcome Sign Builder", gameIcon: "🧩", background: LEVEL_FOUR_ASSETS.build, cast: ["mira", "tavi", "sol", "ivo"], journey: "Ivo puts four picture cards beside the empty sign. The picture plan stays where everyone can see it.", activity: "build",
     lines: [authored("02a-narrator-ivo-arrives"), authored("02b-ivo-build")],
-    prompt: "Use every picture once. Drag a card, or tap it and then tap its matching sun, moon, leaf or star corner.",
+    prompt: "Choose a picture card. Then tap the corner where the plan shows that picture. Put all four pictures on the sign.",
     success: authored("02c-narrator-build-check"),
   },
   {
-    id: "memory", title: "Rebuild behind the curtain", gameTitle: "Curtain Rebuild", gameIcon: "🎭", background: LEVEL_FOUR_ASSETS.memory, cast: ["mira", "tavi", "sol", "ivo"], journey: "The team uses a curtain to practise rebuilding without staring at the source. Every complete failed board will be kept.", activity: "memory",
+    id: "memory", title: "Build it again", gameTitle: "Curtain Copy", gameIcon: "🎭", background: LEVEL_FOUR_ASSETS.memory, cast: ["mira", "tavi", "sol", "ivo"], journey: "A playful gust pulls a curtain over the picture plan. You will build on one sign. Sol will build on another sign behind the curtain.", activity: "memory",
     lines: [authored("03a-narrator-curtain"), authored("03b-tavi-memory")],
-    prompt: "Study the complete source. After the curtain closes, use all four cards once. Check the whole rebuild only when all four corners are filled.",
+    prompt: "Look at all four pictures. When the curtain closes, put one picture in every corner. Then tap Check my sign.",
     success: authored("03c-narrator-memory-check"),
   },
   {
-    id: "difference", title: "Keep Sol's first try", gameTitle: "Difference Finder", gameIcon: "👀", background: LEVEL_FOUR_ASSETS.difference, cast: ["mira", "tavi", "sol", "ivo"], journey: "Sol makes a practice copy so the team can compare a complete first try with the plan.", activity: "difference",
+    id: "difference", title: "What changed on Sol's sign?", gameTitle: "Difference Finder", gameIcon: "👀", background: LEVEL_FOUR_ASSETS.difference, cast: ["mira", "tavi", "sol", "ivo"], journey: "The team's sign matches. Sol uncovers the sign he made behind the curtain. Something on his sign is different.", activity: "difference",
     lines: [authored("04a-narrator-first-try"), authored("04b-sol-compare")],
-    prompt: "Compare the complete source with Sol's complete first rebuild. Find both corners where bee and boot changed places. Matching corners stay checked.",
+    prompt: "Look at the picture plan and Sol's sign. Tap the two corners on Sol's sign that are different. A matching corner will get a tick.",
     success: authored("04c-narrator-retained-try"),
   },
   {
-    id: "trace", title: "Follow the placement record", gameTitle: "Placement Trace", gameIcon: "🗂️", background: LEVEL_FOUR_ASSETS.trace, cast: ["mira", "tavi", "sol", "ivo"], journey: "Sol's four placement cards show what he did first, next and last. The team follows them to find where his rebuild changed.", activity: "trace",
+    id: "trace", title: "Follow Sol's four moves", gameTitle: "Sol's Step Cards", gameIcon: "🗂️", background: LEVEL_FOUR_ASSETS.trace, cast: ["mira", "tavi", "sol", "ivo"], journey: "Ivo opens four little cards. While Sol built, Ivo wrote down Move 1, Move 2, Move 3 and Move 4.", activity: "trace",
     lines: [authored("05a-narrator-footprints"), authored("05b-mia-trace")],
-    prompt: "Start with Step 1. Check each placement card against the source in order. Out-of-order checks stay marked and use one try light.",
+    prompt: "Tap the move cards in order. Start with Move 1. Find the first move that puts a picture in the wrong corner.",
     success: authored("05c-narrator-trace"),
   },
   {
-    id: "measure", title: "Measure one boundary", gameTitle: "Measuring Ribbon", gameIcon: "📏", background: LEVEL_FOUR_ASSETS.measure, cast: ["mira", "tavi", "sol", "ivo"], journey: "The corrected sign returns to the gate, but its width must match the frame before it can be hung.", activity: "measure",
+    id: "measure", title: "Will it fit side to side?", gameTitle: "Measuring Ribbon", gameIcon: "📏", background: LEVEL_FOUR_ASSETS.measure, cast: ["mira", "tavi", "sol", "ivo"], journey: "Mia has fixed the two mixed-up pictures. She lifts the sign towards two hooks on the gate. Will it fit from the left hook to the right hook?", activity: "measure",
     lines: [authored("06a-narrator-frame"), authored("06b-ivo-measure")],
-    prompt: "Align the ribbon from the left hook to the right hook. This checks width only, not the pictures or height.",
+    prompt: "Use Shorter and Longer. Make the ribbon touch the left hook and the right hook. Then tap Test this width.",
     success: authored("06c-narrator-boundary"),
   },
   {
-    id: "friend", title: "Ivo checks without copying", gameTitle: "Fresh-Path Friend Check", gameIcon: "🔍", background: LEVEL_FOUR_ASSETS.friend, cast: ["mira", "tavi", "sol", "ivo"], journey: "The team hides its finished sign. Ivo takes the same source, fresh cards and a separate board so he cannot copy their answer.", activity: "friend",
+    id: "friend", title: "Ivo checks without peeking", gameTitle: "Ivo Makes His Own Sign", gameIcon: "🔍", background: LEVEL_FOUR_ASSETS.friend, cast: ["mira", "tavi", "sol", "ivo"], journey: "Before the sign is hung, the team hides it behind a cloth. Ivo takes the picture plan, four unused cards and an empty sign.", activity: "friend",
     lines: [authored("07a-narrator-friend-check"), authored("07b-tavi-scan")],
-    prompt: "Follow Ivo's fresh lens order. Read each source corner and record its picture. Uncover the team sign only after Ivo's four places are complete.",
+    prompt: "Find the next corner shown on Ivo's card. Move his lens there, then put that picture on Ivo's sign. Finish all four before lifting the cloth.",
     success: authored("07c-narrator-independent"),
   },
   {
-    id: "height", title: "One question is still open", gameTitle: "Height Question", gameIcon: "↕️", background: LEVEL_FOUR_ASSETS.height, cast: ["mira", "tavi", "sol", "ivo"], journey: "Mia says the whole sign fits because its width passed. Ivo points to the unchecked bottom and top edges.", activity: "height",
+    id: "height", title: "Did we check the height?", gameTitle: "Does It Fit Bottom to Top?", gameIcon: "↕️", background: LEVEL_FOUR_ASSETS.height, cast: ["mira", "tavi", "sol", "ivo"], journey: "The width fits. Mia thinks the sign may be ready. Ivo points to its bottom and top edges. They have not checked that way yet.", activity: "height",
     lines: [authored("08a-narrator-disagreement"), authored("08b-ivo-outcomes")],
-    prompt: "Choose what to do about the unchecked height. Then move the height tool from the bottom edge to the top edge and test it.",
+    prompt: "Tap USE A HEIGHT TOOL. Then tap Taller until the blue tool touches the bottom and top edges. Tap Does it touch both edges?",
     success: authored("08c-narrator-outcomes"),
   },
   {
-    id: "checkpoint", title: "The Garden Checkpoint", gameTitle: "Four-Record Checkpoint", gameIcon: "✅", background: LEVEL_FOUR_ASSETS.checkpoint, cast: ["mira", "tavi", "sol", "ivo"], journey: "The closed gate asks four clear questions. The team carries four visible records to the matching checkpoint rails.", activity: "checkpoint",
+    id: "checkpoint", title: "Four checks for the gate", gameTitle: "Match the Answer Cards", gameIcon: "✅", background: LEVEL_FOUR_ASSETS.checkpoint, cast: ["mira", "tavi", "sol", "ivo"], journey: "The morning visitors wait beyond the gate. Four empty locks light up, and four answer cards wait on the table.", activity: "checkpoint",
     lines: [authored("09a-narrator-checkpoint"), authored("09b-mia-final")],
-    prompt: "Choose one visible record, then match it to the gate question it answered. Support all four questions before the gate opens.",
+    prompt: "Choose an answer card. Then tap the gate question that the card answers. Put all four cards by their questions to open the gate.",
     success: authored("09c-narrator-final-check"),
   },
 ];
@@ -127,11 +127,11 @@ const bookCodes: Record<string, string> = {
   LOOKCLOSE: "Ivo's lens draws a harmless sparkling circle around the sign.",
   SIGNMAKER: "The four sign spaces glow in a gentle garden pattern.",
   KEEPFIRST: "Sol pins a copy of his first try into the team scrapbook.",
-  SPOTCHANGE: "Two tiny leaf markers dance beside the comparison board.",
-  FOLLOWSTEPS: "The footprint trace gives a soft leaf-rustle celebration.",
+  SPOTCHANGE: "Two tiny leaf markers dance beside the two signs.",
+  FOLLOWSTEPS: "Sol's step cards give a soft leaf-rustle celebration.",
   WIDTHONLY: "A ribbon stretches from one glowing side edge to the other.",
   FRIENDCHECK: "Ivo's four check marks play a gentle four-note tune.",
-  MOREWORK: "Ivo opens one extra check-card pocket in his satchel.",
+  MOREWORK: "Ivo opens one extra pocket in his satchel.",
   ALLCHECKED: "The Garden Welcome Sign sparkles after every check is complete.",
 };
 
@@ -400,6 +400,14 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
     else window.setTimeout(() => setWrong(""), 2300);
   }
 
+  function learningTry(message: string, token?: string) {
+    if (roundLost || resolving || complete) return;
+    sound("wrong");
+    if (token) setTried((values) => values.includes(token) ? values : [...values, token]);
+    setWrong(message);
+    window.setTimeout(() => setWrong(""), 2300);
+  }
+
   function resetActivity(nextRound: number) {
     setResolution(null);
     setRound(nextRound);
@@ -482,7 +490,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       const look = () => {
         const corner = config.source[lensIndex];
         if (lensIndex !== config.requestIndex) {
-          wrongTry(`The lens is over ${corner.symbolLabel}. The question asks for ${config.source[config.requestIndex].symbolLabel}. This corner stays marked, and you can move the lens again.`, `search:${corner.symbol}`);
+          wrongTry(`You are looking at the ${corner.symbolLabel} corner. We need the ${config.source[config.requestIndex].symbolLabel} corner. This mark will stay so you remember where you looked. Try another corner.`, `search:${corner.symbol}`);
           return;
         }
         setSelected("lens-ready");
@@ -490,7 +498,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       };
       const choosePicture = (picture: string) => {
         if (picture !== config.requestPicture) {
-          wrongTry(`That is the ${pictureLabels[picture]}. Look through the lens at ${config.source[config.requestIndex].symbolLabel} and choose the picture you can see there.`, `search-picture:${picture}`);
+          wrongTry(`You chose the ${pictureLabels[picture]}. Look inside the ${config.source[config.requestIndex].symbolLabel} corner again. Which picture is there?`, `search-picture:${picture}`);
           return;
         }
         setChosen([config.requestPicture]);
@@ -499,14 +507,14 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`Find ${config.source[config.requestIndex].symbolLabel}`}>
         <div className="e04-search-game">
           <p className="e04-question-card">Which picture is at <strong>{config.source[config.requestIndex].symbolLabel}</strong>?</p>
-          <div className="e04-reference-plan e04-source-lens" aria-label="The complete four-corner source plan">
-            <strong>SHOWN SOURCE</strong>
+          <div className="e04-reference-plan e04-source-lens" aria-label="The four-corner picture plan">
+            <strong>PICTURE PLAN</strong>
             {config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }, index: number) => <span key={entry.symbol} className={`${lensIndex === index ? "under-lens" : ""} ${tried.includes(`search:${entry.symbol}`) ? "kept-wrong" : ""}`}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}{lensIndex === index && <i aria-hidden="true">🔍</i>}</span>)}
           </div>
-          <label className="e04-lens-control"><strong>Move the lens across the named corners</strong><input aria-label="Move the observation lens" type="range" min="0" max="3" step="1" value={lensIndex} onChange={(event) => { setMeter(Number(event.currentTarget.value)); setSelected(""); sound("step"); }} /></label>
-          <div className="e04-step-controls e04-corner-controls" aria-label="Choose a source corner">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <button key={entry.symbol} type="button" className={lensIndex === index ? "active" : ""} aria-pressed={lensIndex === index} onClick={() => { setMeter(index); setSelected(""); sound("step"); }}>{symbolIcons[entry.symbol]} {entry.symbolLabel}</button>)}</div>
+          <label className="e04-lens-control"><strong>Choose a corner</strong><input aria-label="Move the looking lens" type="range" min="0" max="3" step="1" value={lensIndex} onChange={(event) => { setMeter(Number(event.currentTarget.value)); setSelected(""); sound("step"); }} /></label>
+          <div className="e04-step-controls e04-corner-controls" aria-label="Choose a picture-plan corner">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <button key={entry.symbol} type="button" className={lensIndex === index ? "active" : ""} aria-pressed={lensIndex === index} onClick={() => { setMeter(index); setSelected(""); sound("step"); }}>{symbolIcons[entry.symbol]} {entry.symbolLabel}</button>)}</div>
           {selected !== "lens-ready" ? <button className="primary" onClick={look}>Use the lens on {config.source[lensIndex].symbolLabel}</button> : <section className="e04-lens-answer"><strong>What picture can you see through the lens?</strong><div className="e04-card-tray">{config.cardTray.map((picture: string) => <button key={picture} className={tried.includes(`search-picture:${picture}`) ? "kept-wrong" : ""} onClick={() => choosePicture(picture)}>{pictureCard(picture)}</button>)}</div></section>}
-          {tried.some((value) => value.startsWith("search:")) && <p className="kept-attempts">Checked corners stay marked. Move the lens and use what the source shows.</p>}
+          {tried.some((value) => value.startsWith("search:")) && <p className="kept-attempts">The corners you tried stay marked. Move the lens and look at the picture plan.</p>}
         </div>
       </MiniGame>;
     }
@@ -517,7 +525,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       const place = (picture: string, slot: number) => {
         if (!picture) { setWrong("Choose a picture card first, then choose a space on the sign."); return; }
         if (config.plan[slot] !== picture) {
-          wrongTry(`That space is for the ${pictureLabels[config.plan[slot]]}. Keep this try visible and compare it with the plan.`, `build:${slot}:${picture}`);
+          wrongTry(`The plan shows the ${pictureLabels[config.plan[slot]]} in this corner. Your try will stay marked. Look at the plan and try again.`, `build:${slot}:${picture}`);
           return;
         }
         const next = chosen.filter((entry) => !entry.startsWith(`${slot}:`) && !entry.endsWith(`:${picture}`));
@@ -526,12 +534,12 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         setSelected("");
         if (new Set(next.map((entry) => entry.split(":")[0])).size === 4) finishRound(); else sound("good");
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${Object.keys(placements).length}/4 spaces built`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${Object.keys(placements).length}/4 pictures placed`}>
         <div className="e04-build-game">
-          <div className="e04-reference-plan"><strong>SHOWN SOURCE</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div>
+          <div className="e04-reference-plan"><strong>PICTURE PLAN</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div>
           <div className="e04-sign-board">{config.source.map((entry: { symbol: string; symbolLabel: string }, slot: number) => <button key={entry.symbol} className={placements[slot] ? "filled" : ""} onClick={() => place(selected, slot)} onDragOver={(event) => event.preventDefault()} onDrop={(event) => place(event.dataTransfer.getData("text/plain"), slot)}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{placements[slot] ? pictureCard(placements[slot]) : <span>?</span>}</button>)}</div>
           <div className="e04-card-tray">{config.cardTray.map((picture) => <button key={picture} className={selected === picture ? "selected" : ""} disabled={placedPictures.has(picture)} draggable={!placedPictures.has(picture)} onDragStart={(event) => event.dataTransfer.setData("text/plain", picture)} onClick={() => { setSelected(picture); sound("tap"); }}>{pictureCard(picture)}</button>)}</div>
-          {tried.some((value) => value.startsWith("build:")) && <p className="kept-attempts">KEPT TRIES: {tried.filter((value) => value.startsWith("build:")).length} marked on the team card</p>}
+          {tried.some((value) => value.startsWith("build:")) && <p className="kept-attempts">PLACES YOU TRIED: {tried.filter((value) => value.startsWith("build:")).length}</p>}
         </div>
       </MiniGame>;
     }
@@ -545,20 +553,20 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         sound("tap");
       };
       const checkRebuild = () => {
-        if (chosen.length !== 4) { setWrong("Use all four picture cards once before checking the complete rebuild."); return; }
+        if (chosen.length !== 4) { setWrong("Put one picture in every corner before you check."); return; }
         if (chosen.every((picture, index) => picture === config.memoryPlan[index])) { finishRound(); return; }
         setMemoryAttempts((attempts) => attempts.some((attempt) => attempt.join(":") === chosen.join(":")) ? attempts : [...attempts, [...chosen]]);
-        wrongTry("The complete rebuild does not match the complete source. This exact board is kept below. Look again, then make a repairable new try.", `memory:${chosen.join("-")}`);
+        wrongTry("This sign does not match the picture plan yet. It will stay below so you can see your try. Show the plan again, then make a new sign.", `memory:${chosen.join("-")}`);
         setChosen([]);
         setActivityStep(0);
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={curtainOpen ? "Plan visible · curtain closing" : `${chosen.length}/4 remembered`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={curtainOpen ? "Look now — the curtain will close" : `${chosen.length}/4 pictures placed`}>
         <div className="e04-memory-game">
           <div className={`e04-memory-window ${curtainOpen ? "open" : "closed"}`}>
-            {curtainOpen ? config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture)}</span>) : <><strong>SOURCE COVERED</strong><span aria-hidden="true">🎭</span></>}
+            {curtainOpen ? config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture)}</span>) : <><strong>PICTURE PLAN HIDDEN</strong><span aria-hidden="true">🎭</span></>}
           </div>
-          {!curtainOpen && <><div className="e04-memory-answer">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{chosen[index] ? pictureCard(chosen[index], true) : <b>?</b>}</span>)}</div><div className="e04-card-tray">{config.cardTray.map((picture) => <button key={picture} disabled={chosen.includes(picture)} onClick={() => choose(picture)}>{pictureCard(picture)}</button>)}</div><div className="e04-memory-actions"><button className="primary" onClick={checkRebuild} disabled={chosen.length !== 4}>Check the complete rebuild</button><button className="secondary e04-look-again" onClick={() => { setActivityStep(0); setChosen([]); setWrong(""); sound("step"); }}>Look again for 3 seconds</button></div></>}
-          {memoryAttempts.length > 0 && <section className="e04-memory-attempts" aria-label="Complete failed rebuilds kept visible"><strong>COMPLETE FAILED REBUILDS · KEPT</strong>{memoryAttempts.map((attempt, attemptIndex) => <div key={`${attempt.join("-")}-${attemptIndex}`}><small>TRY {attemptIndex + 1}</small>{attempt.map((picture, index) => <span key={`${picture}-${index}`}><i>{symbolIcons[config.source[index].symbol]}</i>{pictureIcons[picture]}</span>)}</div>)}</section>}
+          {!curtainOpen && <><div className="e04-memory-answer">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{chosen[index] ? pictureCard(chosen[index], true) : <b>?</b>}</span>)}</div><div className="e04-card-tray">{config.cardTray.map((picture) => <button key={picture} disabled={chosen.includes(picture)} onClick={() => choose(picture)}>{pictureCard(picture)}</button>)}</div><div className="e04-memory-actions"><button className="primary" onClick={checkRebuild} disabled={chosen.length !== 4}>Check my sign</button><button className="secondary e04-look-again" onClick={() => { setActivityStep(0); setChosen([]); setWrong(""); sound("step"); }}>Show the plan again</button></div></>}
+          {memoryAttempts.length > 0 && <section className="e04-memory-attempts" aria-label="Earlier signs kept visible"><strong>MY EARLIER SIGNS</strong>{memoryAttempts.map((attempt, attemptIndex) => <div key={`${attempt.join("-")}-${attemptIndex}`}><small>TRY {attemptIndex + 1}</small>{attempt.map((picture, index) => <span key={`${picture}-${index}`}><i>{symbolIcons[config.source[index].symbol]}</i>{pictureIcons[picture]}</span>)}</div>)}</section>}
         </div>
       </MiniGame>;
     }
@@ -566,7 +574,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
     if (scene.activity === "difference") {
       const check = (index: number) => {
         if (!config.differenceIndexes.includes(index)) {
-          wrongTry("That corner matches the source. It now has a check mark. Compare another corner without hiding Sol's complete first rebuild.", `difference:${index}`);
+          wrongTry("This picture is in the same corner on both signs. It gets a tick. Look at another corner.", `difference:${index}`);
           return;
         }
         if (chosen.includes(String(index))) return;
@@ -576,7 +584,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       };
       return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/2 changed corners found`}>
         <div className="e04-difference-game">
-          <div className="e04-compare-row"><section><strong>COMPLETE SOURCE</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</section><section><strong>SOL&apos;S COMPLETE FIRST REBUILD · KEPT</strong>{config.firstTry.map((picture, index) => <button key={index} className={`${tried.includes(`difference:${index}`) ? "checked" : ""} ${chosen.includes(String(index)) ? "changed" : ""}`} onClick={() => check(index)}><small>{symbolIcons[config.source[index].symbol]} {config.source[index].symbolLabel}</small>{pictureCard(picture, true)}{tried.includes(`difference:${index}`) && <i>✓ MATCH</i>}{chosen.includes(String(index)) && <i>↔ CHANGED</i>}</button>)}</section></div>
+          <div className="e04-compare-row"><section><strong>PICTURE PLAN</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</section><section><strong>SOL&apos;S FIRST SIGN — KEEP IT HERE</strong>{config.firstTry.map((picture, index) => <button key={index} className={`${tried.includes(`difference:${index}`) ? "checked" : ""} ${chosen.includes(String(index)) ? "changed" : ""}`} onClick={() => check(index)}><small>{symbolIcons[config.source[index].symbol]} {config.source[index].symbolLabel}</small>{pictureCard(picture, true)}{tried.includes(`difference:${index}`) && <i>✓ SAME</i>}{chosen.includes(String(index)) && <i>↔ DIFFERENT</i>}</button>)}</section></div>
         </div>
       </MiniGame>;
     }
@@ -585,7 +593,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       const checkStep = (index: number) => {
         const expectedIndex = chosen.length;
         if (index !== expectedIndex) {
-          wrongTry(`That is Step ${index + 1}. Start with Step ${expectedIndex + 1} so the record stays in first, next and last order.`, `trace-order:${expectedIndex}:${index}`);
+          wrongTry(`You tapped Move ${index + 1}. We are checking Move ${expectedIndex + 1} now. Start there, then go one card at a time.`, `trace-order:${expectedIndex}:${index}`);
           return;
         }
         const step = config.trace[index];
@@ -594,17 +602,17 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         setChosen(next);
         if (step.symbol !== expectedSymbol) finishRound(); else sound("good");
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/4 placement steps checked`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length} moves checked`}>
         <div className="e04-trace-game e04-placement-trace">
-          <div className="e04-reference-plan"><strong>SHOWN SOURCE</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div>
+          <div className="e04-reference-plan"><strong>PICTURE PLAN</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div>
           <div className="e04-placement-cards">{config.trace.map((step: { picture: string; symbol: string }, index: number) => {
             const sourceSymbol = config.source.find((entry: { picture: string }) => entry.picture === step.picture)?.symbol;
             const checked = chosen.includes(String(index));
             const departure = checked && step.symbol !== sourceSymbol;
             const outOfOrder = tried.some((value) => value === `trace-order:${chosen.length}:${index}` || value.endsWith(`:${index}`));
-            return <button key={`${step.picture}-${index}`} className={`${checked ? "checked" : ""} ${departure ? "departure" : ""} ${outOfOrder ? "kept-wrong" : ""}`} onClick={() => checkStep(index)}><small>STEP {index + 1}</small><span>{pictureIcons[step.picture]} <b>{pictureLabels[step.picture]}</b></span><i aria-hidden="true">→</i><span>{symbolIcons[step.symbol]} <b>{step.symbol.toUpperCase()}</b></span>{checked && <em>{departure ? "FIRST CHANGE" : "MATCH"}</em>}</button>;
+            return <button key={`${step.picture}-${index}`} className={`${checked ? "checked" : ""} ${departure ? "departure" : ""} ${outOfOrder ? "kept-wrong" : ""}`} onClick={() => checkStep(index)}><small>MOVE {index + 1}</small><span>{pictureIcons[step.picture]} <b>{pictureLabels[step.picture]}</b></span><i aria-hidden="true">→</i><span>{symbolIcons[step.symbol]} <b>{step.symbol.toUpperCase()}</b></span>{checked && <em>{departure ? "FIRST MOVE THAT CHANGED" : "SAME AS PLAN"}</em>}</button>;
           })}</div>
-          {tried.some((value) => value.startsWith("trace-order:")) && <p className="kept-attempts">Out-of-order checks stay marked. Continue with Step {chosen.length + 1}.</p>}
+          {tried.some((value) => value.startsWith("trace-order:")) && <p className="kept-attempts">Moves tapped too soon stay marked. Continue with Move {chosen.length + 1}.</p>}
         </div>
       </MiniGame>;
     }
@@ -613,19 +621,19 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       const widthValue = Math.min(4, Math.max(1, meter || 1));
       const test = () => {
         if (widthValue !== config.measureWidth) {
-          wrongTry(widthValue < config.measureWidth ? "The ribbon stops before the right hook. Make the width longer." : "The ribbon passes the right hook. Make the width shorter.", `measure:${widthValue}`);
+          learningTry(widthValue < config.measureWidth ? "The ribbon does not reach the right hook yet. Tap Longer and try again." : "The ribbon goes past the right hook. Tap Shorter and try again.", `measure:${widthValue}`);
           return;
         }
         finishRound();
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`Width ribbon ${widthValue} · one named question`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress="Make the ribbon touch both hooks">
         <div className="e04-measure-game">
           <div className="e04-boundary-records"><span className="done">PICTURES ✓</span><span className="active">WIDTH ?</span><span>HEIGHT NOT CHECKED</span></div>
-          <div className={`e04-gate-frame width-${config.measureWidth}`} aria-label="Gate frame with a clearly marked left hook and right hook"><i>LEFT HOOK</i><div className={`e04-ribbon width-${widthValue}`}><span>←</span><b>WIDTH {widthValue}</b><span>→</span></div><i>RIGHT HOOK</i></div>
-          <label><strong>Align the width ribbon between the hooks</strong><input type="range" min="1" max="4" step="1" value={widthValue} onChange={(event) => { setMeter(Number(event.currentTarget.value)); sound("step"); }} /></label>
+          <div className={`e04-gate-frame width-${config.measureWidth}`} aria-label="Gate frame with a clearly marked left hook and right hook"><i>LEFT HOOK</i><div className={`e04-ribbon width-${widthValue}`}><span>←</span><b>WIDTH RIBBON</b><span>→</span></div><i>RIGHT HOOK</i></div>
+          <label><strong>Make the width ribbon touch both hooks</strong><input type="range" min="1" max="4" step="1" value={widthValue} onChange={(event) => { setMeter(Number(event.currentTarget.value)); sound("step"); }} /></label>
           <div className="e04-step-controls" aria-label="Change the width ribbon"><button type="button" disabled={widthValue <= 1} onClick={() => { setMeter(widthValue - 1); sound("step"); }}>← Shorter</button><button type="button" disabled={widthValue >= 4} onClick={() => { setMeter(widthValue + 1); sound("step"); }}>Longer →</button></div>
           <button className="primary" onClick={test}>Test this width</button>
-          {tried.some((value) => value.startsWith("measure:")) && <div className="e04-measure-tries"><strong>KEPT WIDTH TRIES</strong>{tried.filter((value) => value.startsWith("measure:")).map((value) => <span key={value}>Width {value.split(":")[1]} ×</span>)}</div>}
+          {tried.some((value) => value.startsWith("measure:")) && <div className="e04-measure-tries"><strong>YOUR EARLIER RIBBONS</strong>{tried.filter((value) => value.startsWith("measure:")).map((value) => { const triedWidth = Number(value.split(":")[1]); return <span key={value}>{triedWidth < config.measureWidth ? "Stopped short" : "Went past"} ×</span>; })}</div>}
         </div>
       </MiniGame>;
     }
@@ -638,7 +646,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         if (chosen.length >= 4) return;
         const corner = config.source[lensIndex];
         if (corner.symbol !== nextSymbol) {
-          wrongTry(`Ivo's fresh path asks for ${nextSymbol.toUpperCase()} next. The lens is over ${corner.symbolLabel}. Keep that mark and move to the named corner.`, `friend:${chosen.length}:${corner.symbol}`);
+          wrongTry(`Ivo's card says ${nextSymbol.toUpperCase()} next. You are looking at ${corner.symbolLabel}. This try will stay marked. Move the lens to ${nextSymbol.toUpperCase()}.`, `friend:${chosen.length}:${corner.symbol}`);
           return;
         }
         const next = [...chosen, `${lensIndex}:${corner.picture}`];
@@ -646,11 +654,11 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         sound("good");
       };
       const uncover = () => { setSelected("uncovered"); sound("step"); };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/4 fresh-path places recorded`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/4 pictures on Ivo's sign`}>
         <div className="e04-friend-game">
-          <div className="e04-reference-plan e04-source-lens"><strong>SAME SHOWN SOURCE</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }, index: number) => <span key={entry.symbol} className={lensIndex === index ? "under-lens" : ""}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}{lensIndex === index && <i aria-hidden="true">🔍</i>}</span>)}</div>
-          <div className="e04-fresh-check-row"><section><strong>IVO&apos;S FRESH BOARD</strong><div className="e04-sign-board">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{placements[index] ? pictureCard(placements[index], true) : <b>?</b>}</span>)}</div></section><section className={selected === "uncovered" ? "uncovered" : "covered"}><strong>TEAM SIGN</strong>{selected === "uncovered" ? <div className="e04-sign-board">{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div> : <div className="e04-team-screen">TEAM ANSWER HIDDEN<br />UNTIL IVO FINISHES</div>}</section></div>
-          {chosen.length < 4 ? <><p className="e04-next-corner">IVO&apos;S FRESH PATH: find <strong>{nextSymbol.toUpperCase()}</strong> next</p><label className="e04-lens-control"><strong>Move Ivo&apos;s lens</strong><input type="range" min="0" max="3" step="1" value={lensIndex} onChange={(event) => setMeter(Number(event.currentTarget.value))} /></label><div className="e04-step-controls e04-corner-controls" aria-label="Choose Ivo's source corner">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <button key={entry.symbol} type="button" className={lensIndex === index ? "active" : ""} aria-pressed={lensIndex === index} onClick={() => { setMeter(index); sound("step"); }}>{symbolIcons[entry.symbol]} {entry.symbolLabel}</button>)}</div><button className="secondary" onClick={record}>Record {config.source[lensIndex].symbolLabel}</button></> : selected !== "uncovered" ? <button className="primary" onClick={uncover}>Uncover the team sign</button> : <button className="primary" onClick={finishRound}>CONFIRM all four matching places</button>}
+          <div className="e04-reference-plan e04-source-lens"><strong>PICTURE PLAN</strong>{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }, index: number) => <span key={entry.symbol} className={lensIndex === index ? "under-lens" : ""}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}{lensIndex === index && <i aria-hidden="true">🔍</i>}</span>)}</div>
+          <div className="e04-fresh-check-row"><section><strong>IVO&apos;S SIGN</strong><div className="e04-sign-board">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{placements[index] ? pictureCard(placements[index], true) : <b>?</b>}</span>)}</div></section><section className={selected === "uncovered" ? "uncovered" : "covered"}><strong>OUR SIGN</strong>{selected === "uncovered" ? <div className="e04-sign-board">{config.source.map((entry: { symbol: string; symbolLabel: string; picture: string }) => <span key={entry.symbol}><small>{symbolIcons[entry.symbol]} {entry.symbolLabel}</small>{pictureCard(entry.picture, true)}</span>)}</div> : <div className="e04-team-screen">OUR SIGN IS HIDDEN<br />NO PEEKING</div>}</section></div>
+          {chosen.length < 4 ? <><p className="e04-next-corner">IVO&apos;S NEXT CORNER: find <strong>{nextSymbol.toUpperCase()}</strong></p><label className="e04-lens-control"><strong>Move Ivo&apos;s lens</strong><input type="range" min="0" max="3" step="1" value={lensIndex} onChange={(event) => setMeter(Number(event.currentTarget.value))} /></label><div className="e04-step-controls e04-corner-controls" aria-label="Choose Ivo's picture-plan corner">{config.source.map((entry: { symbol: string; symbolLabel: string }, index: number) => <button key={entry.symbol} type="button" className={lensIndex === index ? "active" : ""} aria-pressed={lensIndex === index} onClick={() => { setMeter(index); sound("step"); }}>{symbolIcons[entry.symbol]} {entry.symbolLabel}</button>)}</div><button className="secondary" onClick={record}>Put this picture on Ivo&apos;s sign</button></> : selected !== "uncovered" ? <button className="primary" onClick={uncover}>Lift the cloth</button> : <button className="primary" onClick={finishRound}>Do the two signs match?</button>}
         </div>
       </MiniGame>;
     }
@@ -659,7 +667,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       const heightValue = Math.min(4, Math.max(1, meter || 1));
       const chooseQuestion = (choice: "height" | "guess" | "vote") => {
         if (choice !== "height") {
-          wrongTry(choice === "guess" ? "A guess does not check the missing top-to-bottom question. Keep it marked and choose a tool that can check height." : "A vote counts choices, but it does not measure the unchecked height. Keep it marked and choose the height tool.", `height-choice:${choice}`);
+          learningTry(choice === "guess" ? "A guess is an answer without checking. It cannot tell us how tall the sign is. Choose the height tool." : "A vote tells us what people choose. It does not tell us how tall the sign is. Choose the height tool.", `height-choice:${choice}`);
           return;
         }
         setSelected("height");
@@ -668,34 +676,34 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       };
       const testHeight = () => {
         if (heightValue !== config.heightTarget) {
-          wrongTry(heightValue < config.heightTarget ? "The height tool stops before the top edge. Make it taller." : "The height tool passes the top edge. Make it shorter.", `height:${heightValue}`);
+          learningTry(heightValue < config.heightTarget ? "The blue tool does not touch the top edge yet. Tap Taller and try again." : "The blue tool goes past the top edge. Tap Shorter and try again.", `height:${heightValue}`);
           return;
         }
         finishRound();
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={selected === "height" ? `Height tool ${heightValue}` : "Choose the missing question"}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={selected === "height" ? "Make the tool touch bottom and top" : "How can we check bottom to top?"}>
         <div className="e04-height-game">
-          <div className="e04-disagreement-people"><section><strong>MIA SAYS</strong><p>“The width fits, so the whole sign fits.”</p></section><section><strong>IVO NOTICES</strong><p>“We have not checked the height from the bottom edge to the top edge.”</p></section></div>
-          {selected !== "height" ? <div className="e04-height-choices"><strong>WHAT SHOULD THE TEAM DO?</strong><button onClick={() => chooseQuestion("height")}>↕ CHECK HEIGHT</button><button className={tried.includes("height-choice:guess") ? "kept-wrong" : ""} onClick={() => chooseQuestion("guess")}>? GUESS</button><button className={tried.includes("height-choice:vote") ? "kept-wrong" : ""} onClick={() => chooseQuestion("vote")}>✋ VOTE</button></div> : <><div className="e04-height-boundaries"><i>TOP EDGE</i><div className={`e04-height-tool height-${heightValue}`}><span>↑</span><b>HEIGHT {heightValue}</b><span>↓</span></div><i>BOTTOM EDGE</i></div><label><strong>Move the height tool from bottom to top</strong><input type="range" min="1" max="4" step="1" value={heightValue} onChange={(event) => { setMeter(Number(event.currentTarget.value)); sound("step"); }} /></label><div className="e04-step-controls" aria-label="Change the height tool"><button type="button" disabled={heightValue <= 1} onClick={() => { setMeter(heightValue - 1); sound("step"); }}>↓ Shorter</button><button type="button" disabled={heightValue >= 4} onClick={() => { setMeter(heightValue + 1); sound("step"); }}>Taller ↑</button></div><button className="primary" onClick={testHeight}>Test this height</button></>}
-          {tried.some((value) => value.startsWith("height:")) && <div className="e04-measure-tries"><strong>KEPT HEIGHT TRIES</strong>{tried.filter((value) => /^height:\d/.test(value)).map((value) => <span key={value}>Height {value.split(":")[1]} ×</span>)}</div>}
+          <div className="e04-disagreement-people"><section><strong>MIA ASKS</strong><p>“The width fits. Are we finished?”</p></section><section><strong>IVO NOTICES</strong><p>“We still need to check bottom to top.”</p></section></div>
+          {selected !== "height" ? <div className="e04-height-choices"><strong>WHAT SHOULD THE TEAM DO?</strong><button onClick={() => chooseQuestion("height")}>↕ USE A HEIGHT TOOL</button><button className={tried.includes("height-choice:guess") ? "kept-wrong" : ""} onClick={() => chooseQuestion("guess")}>? GUESS</button><button className={tried.includes("height-choice:vote") ? "kept-wrong" : ""} onClick={() => chooseQuestion("vote")}>✋ VOTE</button></div> : <><div className="e04-height-boundaries"><i>TOP EDGE</i><div className={`e04-height-tool height-${heightValue}`}><span>↑</span><b>HEIGHT TOOL</b><span>↓</span></div><i>BOTTOM EDGE</i></div><label><strong>Grow the tool from the bottom edge to the top edge</strong><input type="range" min="1" max="4" step="1" value={heightValue} onChange={(event) => { setMeter(Number(event.currentTarget.value)); sound("step"); }} /></label><div className="e04-step-controls" aria-label="Change the height tool"><button type="button" disabled={heightValue <= 1} onClick={() => { setMeter(heightValue - 1); sound("step"); }}>↓ Shorter</button><button type="button" disabled={heightValue >= 4} onClick={() => { setMeter(heightValue + 1); sound("step"); }}>Taller ↑</button></div><button className="primary" onClick={testHeight}>Does it touch both edges?</button></>}
+          {tried.some((value) => /^height:\d/.test(value)) && <div className="e04-measure-tries"><strong>HEIGHTS YOU TRIED</strong>{tried.filter((value) => /^height:\d/.test(value)).map((value) => <span key={value}>Stopped short ×</span>)}</div>}
         </div>
       </MiniGame>;
     }
 
     if (scene.activity === "checkpoint") {
       const recordDetails: Record<string, { title: string; detail: string; icon: string }> = {
-        pictures: { title: "SOURCE COMPARISON", detail: "Four picture corners matched", icon: "🖼️" },
-        width: { title: "WIDTH RECORD", detail: "Ribbon fitted between hooks", icon: "↔️" },
-        height: { title: "HEIGHT RECORD", detail: "Tool fitted bottom to top", icon: "↕️" },
-        friend: { title: "IVO FRESH CHECK", detail: "Separate four-corner rebuild matched", icon: "🔍" },
+        pictures: { title: "PICTURE CHECK", detail: "All four pictures match the plan", icon: "🖼️" },
+        width: { title: "WIDTH CHECK", detail: "The ribbon touched both side hooks", icon: "↔️" },
+        height: { title: "HEIGHT CHECK", detail: "The tool touched the bottom and top", icon: "↕️" },
+        friend: { title: "IVO'S CHECK", detail: "Ivo's sign matched ours", icon: "🔍" },
       };
-      const questionLabels: Record<string, string> = { pictures: "PICTURES?", width: "WIDTH?", height: "HEIGHT?", friend: "FRIEND CHECK?" };
+      const questionLabels: Record<string, string> = { pictures: "Do the pictures match?", width: "Is the width right?", height: "Is the height right?", friend: "Did Ivo's sign match?" };
       const matchedQuestions = new Set(chosen.map((entry) => entry.split(":")[0]));
       const matchedRecords = new Set(chosen.map((entry) => entry.split(":")[1]));
       const match = (question: string) => {
-        if (!selected) { setWrong("Choose one visible record first, then choose the gate question it answered."); return; }
+        if (!selected) { setWrong("Choose one answer card first. Then choose the gate question it answers."); return; }
         if (selected !== question) {
-          wrongTry(`${recordDetails[selected].title} does not answer ${questionLabels[question]}. This wrong match stays on the checking rail so you can repair it.`, `checkpoint:${question}:${selected}`);
+          wrongTry(`This is the ${recordDetails[selected].title} card, but you tapped ${questionLabels[question]} This card answers a different question. Leave this try here and try again.`, `checkpoint:${question}:${selected}`);
           return;
         }
         const next = [...chosen, `${question}:${selected}`];
@@ -703,11 +711,11 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
         setSelected("");
         if (next.length === 4) finishRound(); else sound("good");
       };
-      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/4 questions supported`}>
+      return <MiniGame title={scene.gameTitle} icon={scene.gameIcon} progress={`${chosen.length}/4 answer cards placed`}>
         <div className="e04-checkpoint-game">
-          <section className="e04-record-tray"><strong>FOUR VISIBLE RECORDS</strong>{config.checkpointRecords.map((record: string) => <button key={record} disabled={matchedRecords.has(record)} className={selected === record ? "selected" : ""} onClick={() => { setSelected(record); sound("tap"); }}><span>{recordDetails[record].icon}</span><b>{recordDetails[record].title}</b><small>{recordDetails[record].detail}</small></button>)}</section>
-          <section className="e04-gate-questions"><strong>CLOSED GATE QUESTIONS</strong>{config.checkpointQuestions.map((question: string) => <button key={question} disabled={matchedQuestions.has(question)} className={matchedQuestions.has(question) ? "matched" : ""} onClick={() => match(question)}><b>{questionLabels[question]}</b>{matchedQuestions.has(question) && <span>✓ {recordDetails[question].title}</span>}</button>)}</section>
-          {tried.some((value) => value.startsWith("checkpoint:")) && <section className="e04-checking-rail"><strong>WRONG MATCHES · KEPT</strong>{tried.filter((value) => value.startsWith("checkpoint:")).map((value) => { const [, question, record] = value.split(":"); return <span key={value}>{recordDetails[record].title} → {questionLabels[question]} ×</span>; })}</section>}
+          <section className="e04-record-tray"><strong>FOUR ANSWER CARDS</strong>{config.checkpointRecords.map((record: string) => <button key={record} disabled={matchedRecords.has(record)} className={selected === record ? "selected" : ""} onClick={() => { setSelected(record); sound("tap"); }}><span>{recordDetails[record].icon}</span><b>{recordDetails[record].title}</b><small>{recordDetails[record].detail}</small></button>)}</section>
+          <section className="e04-gate-questions"><strong>FOUR GATE QUESTIONS</strong>{config.checkpointQuestions.map((question: string) => <button key={question} disabled={matchedQuestions.has(question)} className={matchedQuestions.has(question) ? "matched" : ""} onClick={() => match(question)}><b>{questionLabels[question]}</b>{matchedQuestions.has(question) && <span>✓ {recordDetails[question].title}</span>}</button>)}</section>
+          {tried.some((value) => value.startsWith("checkpoint:")) && <section className="e04-checking-rail"><strong>TRIES TO LOOK AT AGAIN</strong>{tried.filter((value) => value.startsWith("checkpoint:")).map((value) => { const [, question, record] = value.split(":"); return <span key={value}>{recordDetails[record].title} → {questionLabels[question]} ×</span>; })}</section>}
         </div>
       </MiniGame>;
     }
@@ -719,9 +727,9 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
 
   if (introOpen) return <LevelPrelude
     levelClass="level-four-prelude"
-    eyebrow="LEVEL FOUR · THE GARDEN CHECK"
-    title="The Garden Checkpoint"
-    subtitle="Rebuild the four-picture Welcome Sign, keep every useful try, and check it carefully before the garden opens."
+    eyebrow="LEVEL FOUR · THE GARDEN GATE"
+    title="The Garden Gate Check"
+    subtitle="A blank Welcome Sign is waiting by a closed garden gate. Help the friends copy its pictures, find a mistake and make sure it fits."
     background={LEVEL_FOUR_ASSETS.search}
     lines={preludeLines}
     characters={[
@@ -730,7 +738,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       { id: "sol", name: "Sol", image: image("sol") },
       { id: "ivo", name: "Ivo", image: image("ivo") },
     ]}
-    discoveries={[<>🔎 Look again and compare</>, <>📏 Measure one clear boundary</>, <>✅ Ask a friend to check</>]}
+    discoveries={[<>🔎 Find what changed</>, <>📏 Check side to side and bottom to top</>, <>🧑‍🤝‍🧑 Let Ivo check without peeking</>]}
     initialStep={preludeStep}
     onStepChange={setPreludeStep}
     onSpeak={(entry) => { startMusic(); playLine(entry); }}
@@ -747,8 +755,8 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       <p className="eyebrow">LEVEL FOUR COMPLETE</p>
       <div className="e03-progress e04-progress" aria-label="9 of 9 story steps complete">{scenes.map((_, index) => <span className="done" key={index}>●</span>)}</div>
       <h1>The garden gate opens.</h1>
-      <p>Mia, Sol, Tavi and Ivo rebuilt and checked the Garden Welcome Sign. The source comparison, width record, height record and Ivo&apos;s fresh friend-check record supported all four gate questions.</p>
-      <blockquote>The closed gate opens only after all four records support their own questions.</blockquote>
+      <p>Mia, Sol, Tavi and Ivo finished the Welcome Sign. Its pictures matched the plan. The width ribbon touched both side hooks. The height tool touched the bottom and top edges. Ivo&apos;s sign matched too. All four checks were complete, so the gate opened for the morning visitors.</p>
+      <blockquote>One check answers one question. Four questions needed four checks.</blockquote>
       <div className="ending-lesson"><span aria-hidden="true">📖</span><div><strong>NARRATOR TO YOU</strong><p>{endingLesson.text}</p></div><button onClick={() => playLine(endingLesson)}>Hear the lesson again</button></div>
       <div className="ending-controls">
         {onNext ? <button className="primary" onClick={onNext}>Next level</button> : <button className="primary" disabled>Next level · coming soon</button>}
@@ -761,7 +769,7 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
 
   return <main className="game-shell level-four-shell">
     <header className="game-hud e04-hud">
-      <div><span className="eyebrow">THE GARDEN CHECKPOINT</span><strong>{scene.title}</strong></div>
+      <div><span className="eyebrow">THE GARDEN GATE CHECK</span><strong>{scene.title}</strong></div>
       <div className="e03-progress e04-progress" aria-label={`${sceneIndex + (complete ? 1 : 0)} of 9 story steps complete`}>{scenes.map((_, index) => <span key={index} className={index < sceneIndex || (index === sceneIndex && complete) ? "done" : index === sceneIndex ? "now" : ""}>●</span>)}</div>
       <nav><button onClick={exitLevel} aria-label="Choose a level">⌂ <span>Levels</span></button><button onClick={() => playLine()} aria-label="Replay narration">↻ <span>Hear again</span></button><button onClick={toggleNarration} aria-pressed={muted}>{muted ? "🔇" : "🔊"} <span>{muted ? "Narration off" : "Narration on"}</span></button><button onClick={toggleMusic} aria-pressed={musicOn}>{musicOn ? "♫" : "♩"} <span>{musicOn ? "Music on" : "Music off"}</span></button><button onClick={restart} aria-label="Restart Level Four">↺ <span>Start over</span></button><button onClick={() => setCodesOpen(true)}>⌨ <span>Book code</span></button></nav>
     </header>
@@ -769,9 +777,9 @@ export default function LevelFour({ onExit, onNext }: LevelFourProps) {
       <div className="stage-light" />
       {beat === 0 && <div className="journey-banner"><span aria-hidden="true">→</span><strong>{scene.journey}</strong></div>}
       <div className="walking-cast" aria-hidden="true">{scene.cast.map((name, index) => <CharacterSprite key={name} name={name} index={index} speaking={speaking === name} />)}</div>
-      {dialogueDone && !complete && <div className="activity-layer"><TryLights mistakes={mistakes} />{!roundLost && <fieldset className="resolution-lock" disabled={resolving} aria-busy={resolving}>{activity()}</fieldset>}{wrong && <p className="e03-feedback e04-feedback" role="status">{wrong}</p>}{roundLost && <section className="round-lost" role="alert"><span aria-hidden="true">◆ ◆ ◆</span><h2>Round over</h2><p>That round used all three try lights. The story is safe, and every failed try is still on the check card. Change your plan and try a new solvable board.</p><button onClick={retryRound}>Try a new board</button></section>}</div>}
+      {dialogueDone && !complete && <div className="activity-layer">{scene.activity === "measure" || scene.activity === "height" ? <div className="e04-practice-badge">TRY AS MANY LENGTHS AS YOU NEED</div> : <TryLights mistakes={mistakes} />}{!roundLost && <fieldset className="resolution-lock" disabled={resolving} aria-busy={resolving}>{activity()}</fieldset>}{wrong && <p className="e03-feedback e04-feedback" role="status">{wrong}</p>}{roundLost && <section className="round-lost" role="alert"><span aria-hidden="true">◆ ◆ ◆</span><h2>Try lights are dark</h2><p>All three try lights are dark. Your tries are still here, and the story can continue. Tap Try a new puzzle to get three new lights.</p><button onClick={retryRound}>Try a new puzzle</button></section>}</div>}
       <aside className={`speech-panel ${dialogueDone && !complete ? "prompting" : ""} ${complete ? "completed" : ""}`} aria-live="polite">
-        {!dialogueDone || complete ? <><div className="speaker-portrait"><Portrait speaker={currentLine.speaker} /></div><span className="speaker">{complete ? "NARRATOR · WHAT THIS GAME TAUGHT" : currentLine.speaker}</span><p>{currentLine.text}</p>{complete ? <div className="completion-controls"><button className="replay-control" onClick={replay}><span aria-hidden="true">↻</span> Play again</button><button className="next-control" onClick={nextScene}>{sceneIndex === scenes.length - 1 ? "Open the garden" : "Continue the mission"} <span aria-hidden="true">→</span></button></div> : <button className="next-control" onClick={nextBeat}>Next <span aria-hidden="true">→</span></button>}</> : <><div className="speaker-portrait prompt-portrait" aria-hidden="true">☝️</div><span className="speaker">YOUR TURN</span><p>{scene.prompt}</p><span className="action-nudge" aria-hidden="true">↑ Try it in the scene</span></>}
+        {!dialogueDone || complete ? <><div className="speaker-portrait"><Portrait speaker={currentLine.speaker} /></div><span className="speaker">{complete ? "NARRATOR · WHAT THIS GAME TAUGHT" : currentLine.speaker}</span><p>{currentLine.text}</p>{complete ? <div className="completion-controls"><button className="replay-control" onClick={replay}><span aria-hidden="true">↻</span> Play again</button><button className="next-control" onClick={nextScene}>{sceneIndex === scenes.length - 1 ? "Open the garden" : "Go to the next game"} <span aria-hidden="true">→</span></button></div> : <button className="next-control" onClick={nextBeat}>Next <span aria-hidden="true">→</span></button>}</> : <><div className="speaker-portrait prompt-portrait" aria-hidden="true">☝️</div><span className="speaker">YOUR TURN</span><p>{scene.prompt}</p><span className="action-nudge" aria-hidden="true">↑ Try it in the scene</span></>}
       </aside>
     </section>
     {codesOpen && <div className="modal-backdrop" role="presentation" onMouseDown={() => setCodesOpen(false)}><section className="code-modal" role="dialog" aria-modal="true" aria-labelledby="e04-code-title" onMouseDown={(event) => event.stopPropagation()}><button className="close-modal" onClick={() => setCodesOpen(false)} aria-label="Close">×</button><p className="eyebrow">OPTIONAL BOOK SECRET</p><h2 id="e04-code-title">Mia&apos;s code pocket</h2><p>Codes unlock small surprises. They never give an answer or skip a checking lesson.</p><form onSubmit={submitCode}><label htmlFor="e04-book-code">Code from Book Four</label><div><input id="e04-book-code" value={code} onChange={(event) => setCode(event.target.value)} autoComplete="off" /><button>Open</button></div></form><p className="code-result" aria-live="polite">{codeMessage}</p></section></div>}

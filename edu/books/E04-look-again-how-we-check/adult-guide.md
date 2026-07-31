@@ -1,6 +1,6 @@
 # Adult guide - E04 *Look Again: How We Check*
 
-Version: review 1.0.0
+Version: review 1.0.1
 
 Story: *The Garden Welcome Sign*
 
@@ -15,15 +15,17 @@ continues directly from E03 at the garden gate. The child helps Mia, Sol, Tavi
 and one new guest, Ivo, rebuild and check a four-picture welcome sign before
 the morning visitors arrive.
 
-The child should increasingly be able to:
+With an adult, the child should increasingly be able to:
 
-- look at a shown source and say what is observed rather than guess;
-- build, cover and rebuild a small arrangement;
-- keep a failed attempt so it can be compared with the source;
-- follow a short ordered trace to find the first changed step;
-- understand that one measuring tool answers only its declared question;
-- ask a friend to make a fresh check without copying the first answer; and
-- accept that checking may confirm, disagree or show that more work is needed.
+- point to what the picture plan actually shows before answering;
+- copy four pictures, cover them and make the complete sign again;
+- keep a try that does not match so it can be compared with the plan;
+- follow four step cards from first to last and find the first changed move;
+- use one ribbon for side-to-side width and another for bottom-to-top height;
+- let a friend make their own check without seeing or copying the first answer;
+  and
+- notice whether a check shows a match, a difference or another question to
+  answer.
 
 This is not a general classroom checking lesson with SFT language added. Its
 sequence comes from the maintained E04 syllabus and the receipt-backed SFT
@@ -35,21 +37,48 @@ Book Four and Level Four must make sense to a child who has just finished Level
 Three, has read only the books, or selects Level Four later. The opening should:
 
 1. welcome the child back to Mia, Sol and Tavi;
-2. recall that they repaired the turning-light trail by keeping a failed try;
+2. recall that they repaired the turning-light trail by keeping Sol's first
+   try;
 3. show the trio at the exact garden gate teased at the end of E03;
 4. reveal one clear new problem: the four-picture welcome sign must be rebuilt
    and checked before the morning visitors arrive;
 5. introduce Ivo as the sole new guest, with his moss-green body, round lens and
    checkerboard satchel visible before his job is described;
-6. show the source plan, blank sign and closed gate so the mission has a visible
-   cause; and
+6. show the picture plan, blank sign and closed gate so the mission has a
+   visible cause; and
 7. preview looking, building, remembering, tracing, measuring and friend
    checking without revealing any challenge answer.
 
 The story contains no unexplained package, ramp, magical instruction note or
 new location jump. Every move follows from the same sign-and-gate mission.
 
-## Scientific authority and exact boundary
+## Experience before vocabulary
+
+Do not use a learning word as though the child already knows it. Let the child
+see or perform the action first, then give the short name and meaning.
+
+- Show the **picture plan** before using the adult/reviewer word *source*.
+- Let the child look and answer before naming an **observation**.
+- Ask whether two pictures are **the same or different** before introducing
+  **compare**, **confirm** or **disagree**.
+- Keep and follow Sol's four **step cards**. Use *step cards* with the child;
+  keep the formal word *trace* in the reviewer-only boundary.
+- Move from side to side before naming that distance **width**.
+- Move from bottom to top before naming that distance **height**.
+- Let Ivo build without seeing the team's sign before naming his work an
+  **independent check**.
+- Say that a check can show a match, a difference or another question before
+  using the adult summary *confirm, disagree or more work*.
+
+Use *picture plan*, *Sol's first try*, *step cards*, *one question at a time*
+and *Ivo's own check without copying* in speech to the child. Keep *source*,
+*failed attempt*, *declared question*, *supported record* and *fresh path* for
+adult or reviewer explanation.
+
+## Scientific authority and exact boundary - reviewer only
+
+This section protects the exact SFT boundary. It is not a read-aloud script and
+the child is not expected to repeat its terminology.
 
 ### `SFT-FOUNDATION-DERIVATION-TRACE-001`
 
@@ -137,55 +166,62 @@ the morning visitors arrive**.
 
 - Pages 3-5: E03's repaired trail reaches the closed garden gate; the sign
   problem appears; Ivo joins as the sole new guest.
-- Pages 6-8: the child observes one requested source picture before meeting the
-  observation/guess distinction.
-- Pages 9-11: the child builds all four pictures while the source is visible.
-- Pages 12-14: the source is covered; Sol rebuilds from memory; the source is
-  uncovered; the mismatching attempt stays visible.
+- Pages 6-8: the child looks at one requested picture in the visible plan, then
+  meets the words observation and guess after answering.
+- Pages 9-11: the child builds all four pictures while the picture plan is
+  visible.
+- Pages 12-14: the plan is covered; Sol rebuilds from memory while Ivo keeps one
+  card for each move; the plan is uncovered; Sol's try stays visible.
 - Pages 15-16: the child compares every marked corner and identifies the two
   changed pictures.
-- Pages 17-19: the child follows the placement trace and finds Step 3 as the
-  first departure from the source.
+- Pages 17-19: the child follows Sol's four placement cards and finds Step 3 as
+  the first move that differs from the picture plan.
 - Pages 20-22: the repaired sign's width is measured; the result is explicitly
   prevented from answering picture or height questions.
-- Pages 23-25: Ivo reconstructs separately and confirms all four picture places.
-- Pages 26-27: Mia overextends the width result; Ivo disagrees; a separate
-  height check resolves the named missing question.
-- Pages 28-30: every checkpoint question is matched to its own record before
-  the gate opens.
+- Pages 23-25: Ivo builds from the same picture plan without seeing the team's
+  sign; after the two signs are compared, the word confirm is introduced.
+- Pages 26-27: Mia treats the width answer as a whole-sign answer; Ivo points
+  out that bottom-to-top distance has not been checked; measuring introduces
+  the word height and answers that missing question.
+- Pages 28-30: each of four questions is matched to the illustrated check card
+  that answers it before the gate opens.
 - Pages 31-32: the narrator addresses the child directly; the checked sign
   guides visitors; a closed Star Door quietly teases later learning without
   inventing an unsupported title.
 
-If the child loses the story, point to the source sign, rebuilt sign and closed
+If the child loses the story, point to the picture plan, rebuilt sign and closed
 gate. Restate the mission rather than skipping to an answer.
 
 ## Challenge and reveal answers
 
-- **Page 7 - Which picture is at MOON?** The source shows BEE. Ask the child to
-  point to the actual source picture before naming it.
-- **Page 10 - Build from the source.** Sunflower goes to SUN, bee to MOON,
+- **Page 7 - Which picture is with MOON?** The picture plan shows BEE. Ask the
+  child to point to the actual picture before naming it.
+- **Page 10 - Build from the picture plan.** Sunflower goes to SUN, bee to MOON,
   watering can to LEAF and boot to STAR. Use every card once.
-- **Page 13 - Does Sol's memory rebuild match?** It does not. Honest answers
-  include NOT SURE while the source is covered. Page 14 reveals that bee and
-  boot traded places.
+- **Page 13 - Does Sol's memory rebuild match?** Offer MATCH, DOES NOT MATCH and
+  NOT SURE. A child who correctly remembers the difference must not be forced
+  to choose NOT SURE. Do not mark any of the three answers before page 14
+  reveals that bee and boot traded places.
 - **Page 15 - Which pictures differ?** BEE and BOOT. Compare all four corners;
   do not infer that every picture changed.
-- **Page 18 - Where did the swap begin?** STEP 3 first departs from the source
+- **Page 18 - Where did the swap begin?** STEP 3 first differs from the plan
   by placing BOOT at MOON. Step 4 is also different, but it is later.
 - **Page 21 - Does the width fit?** FITS. Both sign edges align with the green
   WIDTH marks.
-- **Page 24 - Do the two picture checks agree?** CONFIRM. Ivo's separately
-  rebuilt picture positions match the repaired team sign.
-- **Page 26 - What should happen when the checkers disagree?** CHECK HEIGHT.
-  Guessing or voting cannot answer the missing height question.
-- **Page 29 - Can every checkpoint be supported?** Yes: source comparison
-  supports picture positions, the width record supports width, the height
-  record supports height and Ivo's fresh board supports the friend check.
+- **Page 24 - Are the two signs the same or different?** SAME. Page 25 then
+  introduces *confirm*: Ivo's independently rebuilt picture positions match
+  the repaired team sign.
+- **Page 26 - What has not been checked?** MEASURE BOTTOM TO TOP. Guessing or
+  voting cannot measure the missing distance. Page 27 introduces the word
+  *height* after the child sees that measurement.
+- **Page 29 - Can every question be given a check card?** Yes: the picture-plan
+  comparison answers the picture question, the horizontal ribbon answers
+  width, the vertical ribbon answers height and Ivo's own sign answers the
+  independent-check question.
 
-Wrong answers are useful records. Keep the child's selected card or route long
-enough to ask, “Which question are we answering?” and “Which record supports
-that answer?” Avoid “No, that is wrong,” “You are clever,” or revealing the
+Wrong answers are useful to keep. Leave the child's selected card or route in
+place long enough to ask, “What are we checking?” and “Which card or picture
+shows us?” Avoid “No, that is wrong,” “You are clever,” or revealing the
 correct object with a pointing gesture before the attempt.
 
 ## What the narrator explains after each game
@@ -193,67 +229,68 @@ correct object with a pointing gesture before the attempt.
 Each explanation comes after a completed attempt. It names the action, result,
 idea and story purpose without giving away the next stage.
 
-1. **Look-and-Point:** You moved the lens over the shown plan and found the bee
-   in the moon corner. That was an observation because you used what you could
-   see instead of guessing. A clear observation gives the team a starting
-   record.
-2. **Build-the-Board:** You used every picture once and matched each one to its
-   source corner. Building from a shown source lets the team compare the result
-   with the same starting plan.
-3. **Curtain Memory:** You studied, covered and rebuilt the four pictures. When
-   the curtain opened, the first rebuild stayed visible even though two
-   pictures had traded places. A failed try can still help us check.
-4. **Difference Finder:** You compared every corner and found that bee and boot
-   changed places while the other two pictures stayed the same. Comparing the
-   complete source with the complete try is more reliable than one quick guess.
-5. **Footprint Trace:** You followed the placement record in order and found
-   Step 3 as the first change. A trace keeps what happened first, next and last,
-   so the team can find where a different result began.
-6. **Measuring Ribbon:** You aligned the WIDTH ribbon and found that the sign
-   fits between the hooks. The ribbon answered width only; it did not check the
-   pictures or height. A measuring tool answers its declared question.
-7. **Friend Check:** Ivo rebuilt from the same source without seeing the team
-   sign. His four picture places matched, so the fresh check confirmed that
-   result. A separate path matters because copying would not be a fresh check.
-8. **Disagreement Detective:** Mia used the width answer to claim the whole sign
-   fit, but Ivo noticed height was still unchecked. You chose a height tool
-   instead of guessing or voting. Disagreement can show that more work is
-   needed.
-9. **Final Checkpoint:** You matched every gate question to its own visible
-   record. The sign passed only after picture, width, height and friend checks
-   were supported. Keeping all the records made the final decision clear.
+1. **Look-and-Point:** You looked at the plan and found the bee beside the moon.
+   You answered from what you could see. That is an observation.
+2. **Build-the-Board:** You put every picture beside the same symbol as the
+   plan. Now the sign can be checked against that plan.
+3. **Curtain Memory:** You looked, covered the plan and rebuilt. When the
+   curtain opened, Sol's try stayed there. A try that does not match can still
+   help.
+4. **Difference Finder:** You checked all four places. Bee and boot were
+   different; the other two matched. Looking at both signs helped you find the
+   change.
+5. **Step Cards:** You followed Sol's cards from Step 1 and found the first
+   mix-up at Step 3. Keeping steps in order helps us find where a change began.
+6. **Measuring Ribbon:** You checked side to side and found that the width fits.
+   The ribbon told us about width only. It did not check the pictures or
+   height.
+7. **Ivo's Own Check:** Ivo used the same plan but did not look at the team
+   sign. His own sign matched. A check made without copying can confirm a
+   result.
+8. **Missing-Height Check:** You noticed that width did not answer bottom to
+   top. You measured height instead of guessing or voting. Sometimes we need
+   one more check.
+9. **Four-Question Check:** You matched each question to the card that showed
+   its answer. When all four questions had checked answers, the gate could
+   open.
 
 ### Canonical final fourth-wall explanation
 
-The game's spoken line and visible caption must match this text exactly:
+The eventual game's spoken captions should use these short visual beats rather
+than one long, formal paragraph:
 
-> You learned how to check. You looked at what was shown instead of guessing.
-> You built the sign, covered it, rebuilt it, and kept the first try when it did
-> not match. You followed the steps to find where the change began. You used a
-> width tool for width and a height tool for height, because one tool answers
-> only its own question. Then Ivo checked by a fresh path. His result confirmed
-> the picture places. When Mia and Ivo disagreed, you did more work instead of
-> guessing or voting. Checking matters because it helps us say what we
-> observed, keep useful mistakes, and find the next question that needs an
-> answer.
+> You checked what was really shown.
+>
+> You kept Sol's first try and followed his steps to find the first change.
+>
+> One ribbon checked width. Another checked height. Ivo made his own check
+> without copying.
+>
+> Sometimes a check shows a match. Sometimes it shows a difference. Sometimes
+> it tells us what to check next. That is why checking helps.
 
 ## Plain-language meanings
 
-- **Observation:** saying what we can see in the shown source or scene.
+- **Picture plan:** the kept picture the child can look at while building and
+  checking.
+- **Observation:** saying what we can see in the shown plan or scene.
 - **Guess:** choosing an answer without checking what is shown.
-- **Source:** the kept starting plan used for a build and its checks.
-- **Rebuild:** make the complete arrangement again from its source.
-- **Failed attempt:** a try that did not meet the declared check. Keep it.
-- **Trace:** a kept record of the steps in the order they happened.
-- **Compare:** look at two complete records for sameness and difference.
+- **Source:** the adult/reviewer word for the kept starting plan.
+- **Rebuild:** make the complete arrangement again from the picture plan or
+  memory.
+- **Try that did not match:** a useful try to keep and compare.
+- **Trace:** the adult/reviewer term for the complete ordered step record. Say
+  *step cards* to the child.
+- **Compare:** look at two things side by side for what is the same and what is
+  different.
 - **Width:** distance from one side to the other side.
 - **Height:** distance from the bottom to the top.
-- **Independent check:** a friend uses the same source by a fresh path without
+- **Independent check:** a friend uses the same picture plan without seeing or
   copying the first answer.
-- **Confirm:** the fresh check agrees with the first result for the named
-  question.
-- **Disagree:** two results or claims do not match.
-- **More work:** the current records do not yet answer every declared question.
+- **Confirm:** the new check gives the same result for the question being
+  checked.
+- **Different / disagree:** two results or ideas do not match.
+- **Another check:** one of the questions still needs an answer.
 
 Do not use *deterministic replay*, *target opening*, *disposition receipt*,
 *implementation carrier*, *provenance class* or *fail-closed admission* as
@@ -262,21 +299,25 @@ unexplained child shorthand.
 ## Running the book activity
 
 Use four large picture cards, a sheet divided into four marked spaces and a
-cloth. Draw the source before the activity. The child's pictures may be simple
-but each must have a word or shape cue so colour is never the only identifier.
+cloth. Draw the picture plan before the activity. The child's pictures may be
+simple but each must have a word or shape cue so colour is never the only
+identifier.
 
-1. Read pages 3-8 and point to what the source actually shows.
-2. Build the sign with the source visible.
+1. Read pages 3-8 and point to what the picture plan actually shows.
+2. Build the sign with the picture plan visible.
 3. Photograph or sketch the first build if it cannot safely remain in place.
-4. Cover the source and rebuild on a second sheet.
+4. Cover the picture plan and rebuild on a second sheet. Make or photograph one
+   simple step card after each placement so the later step-card activity has
+   been visibly prepared.
 5. Uncover and compare every marked space. Keep the second build even if it
    differs.
-6. Make a four-card trace of the child's placement order.
+6. Hang the four step cards in the order the pictures were placed. Follow them
+   from first to last.
 7. Ask a width question and a height question separately with separate strips
    of paper.
-8. If possible, let a second person rebuild from the source without seeing the
-   first answer. If that is not possible, describe the idea; do not call a
-   second look by the same person independent.
+8. If possible, let a second person rebuild from the picture plan without
+   seeing the first answer. If that is not possible, describe the idea; do not
+   call a second look by the same person independent.
 
 The child may point, speak, use eye gaze or choose between large cards. Physical
 rebuilding is optional.
@@ -295,9 +336,10 @@ operate scissors, fasteners and elevated displays.
 - The four spaces use sun, moon, leaf and star markers instead of position or
   colour alone.
 - WIDTH and HEIGHT tools carry both words and directional edge cues.
-- Source, first rebuild, repaired sign and Ivo's check use persistent labels.
+- Picture plan, Sol's first try, repaired sign and Ivo's check use persistent
+  labels.
 - Challenge choices remain visible until the separate reveal.
-- All descriptions name the relevant source, attempt, step, tool and result.
+- All descriptions name the relevant plan, try, step, tool and result.
 - The accessible HTML preserves page order and exposes each picture
   description beside the page text.
 - Every game drag or movement has a labelled tap and keyboard alternative.
@@ -316,17 +358,17 @@ stages. Each stage has a genuinely different replayable mechanic:
 2. place four picture pieces into four symbol-marked sign spaces, with shuffled
    layouts that are always solvable and a clear reset;
 3. study a varied board, close the curtain, rebuild it and uncover the same
-   source, retaining the exact attempt;
+   picture plan, retaining the exact attempt;
 4. compare two full boards and mark all changed positions before the mistake
    allowance runs out;
-5. guide Sol along ordered placement footprints and stop at the first trace
-   step that departs from the source;
+5. inspect four ordered placement cards and stop at the first step that differs
+   from the picture plan;
 6. align a tactile width ribbon between two hooks, with too-short, fit and
    too-wide rounds that answer width only;
 7. direct Ivo through a separate build route, then connect matching results
    without exposing the team's answer during his build;
-8. choose the missing question and operate a height tool while guess and vote
-   choices visibly fail to answer it; and
+8. identify that bottom-to-top distance is still unchecked, then operate a
+   height tool while guess and vote choices visibly fail to measure it; and
 9. route source, width, height and friend-check evidence cards to four gate
    checkpoints; unsupported or mismatched evidence halts the gate and can be
    retried.
@@ -356,8 +398,8 @@ tool, make a recoverable mistake and replay with a new bounded arrangement.
 - Begin with: “We are rebuilding and checking one welcome sign before the
   visitors arrive.”
 - Ask “What can you see?” before “What do you think?”
-- Keep the source and first try in view after a reveal.
-- When stuck, restate the named question and point to the available records;
+- Keep the picture plan and first try in view after a reveal.
+- When stuck, restate the question and point to the available cards or pictures;
   do not point to the correct choice.
 - After a game explanation, invite the child to find the same action in the
   book. Neither medium is homework for the other.
@@ -385,7 +427,7 @@ for SFT claims, topic order or derivation.
 
 ## Review and publication status
 
-Review version 1.0.0 remains under `edu/`. It may be rendered and tested as a
+Review version 1.0.1 remains under `edu/`. It may be rendered and tested as a
 live review work. It must not be copied into `publications/education`, described
 as finally approved or released as a child-facing hosted service until Maria
 Smith explicitly approves this exact book and companion level.

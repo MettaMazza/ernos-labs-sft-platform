@@ -5,48 +5,48 @@
  * requires the E04 narration manifest and local audio to be regenerated.
  */
 export const LEVEL_FOUR_NARRATION = Object.freeze([
-  { audio: "00a-narrator-recap", speaker: "Narrator", heading: "The light reaches the arch", text: "You repaired the turning-light trail and helped its light reach the Sunrise Arch. The closed garden gate waited just ahead." },
-  { audio: "00b-narrator-mission", speaker: "Narrator", heading: "One sign beside the gate", text: "Beside the closed gate stood a four-picture source plan and a blank Garden Welcome Sign. The sign had to be rebuilt and checked before the morning visitors arrived." },
-  { audio: "00c-narrator-discover", speaker: "Narrator", heading: "What you will discover", text: "You will look at a source, build and rebuild, keep a failed try, follow its steps, measure one named question at a time, and use four records at the final checkpoint." },
-  { audio: "00d-narrator-ivo", speaker: "Narrator", heading: "Meet Ivo", text: "At the closed gate, Mia, Sol and Tavi met Ivo, the garden checker. He was moss-green and carried a round magnifying lens in his hand and a checkerboard satchel across his body. He joined the team to check the sign by a fresh path." },
+  { audio: "00a-narrator-recap", speaker: "Narrator", heading: "The light reaches the garden", text: "You helped the moon-and-sun light travel along the garden path. It shines through the Sunrise Arch. Mia, Sol and Tavi follow it to a closed garden gate." },
+  { audio: "00b-narrator-mission", speaker: "Narrator", heading: "A sign needs help", text: "Words glow on the gate. Please finish my Welcome Sign before the morning visitors arrive. Beside the gate are a picture plan and an empty sign." },
+  { audio: "00c-narrator-discover", speaker: "Narrator", heading: "What you will do", text: "You will look closely, copy four pictures, keep a wrong sign so you can find its mistake, and check whether the finished sign fits the gate." },
+  { audio: "00d-narrator-ivo", speaker: "Narrator", heading: "Meet Ivo", text: "A green garden helper called Ivo waves. He likes to look twice. Later, he will make his own sign without peeking at the team's sign." },
 
-  { audio: "01a-narrator-gate", speaker: "Narrator", text: "The source plan beside the closed gate had four named corners: sun, moon, leaf and star. Each corner held one picture." },
-  { audio: "01b-mia-find", speaker: "Mia", text: "The first question asks, Which picture is at moon? Move the lens over the shown plan. Then use the lens to choose what you can really see in the moon corner." },
-  { audio: "01c-narrator-observation", speaker: "Narrator", text: "You moved the lens over the shown plan and found the bee in the moon corner. That was an observation because you used what you could see instead of guessing. A clear observation gives the team a starting record." },
+  { audio: "01a-narrator-gate", speaker: "Narrator", text: "The picture plan has four corners. The corner marks are sun, moon, leaf and star. Each corner holds one picture." },
+  { audio: "01b-mia-find", speaker: "Mia", text: "The gate gives us our first clue. Look at the moon corner. Move the lens to the moon. What picture can you see?" },
+  { audio: "01c-narrator-observation", speaker: "Narrator", text: "You found the bee in the moon corner. You looked before you answered. Something you find by looking is called an observation." },
 
-  { audio: "02a-narrator-ivo-arrives", speaker: "Narrator", text: "The source stayed beside the gate. The four blank sign corners carried the same sun, moon, leaf and star marks." },
-  { audio: "02b-ivo-build", speaker: "Ivo", text: "Use every picture once. Drag a card, or tap it and then tap its matching symbol corner. Keep the source visible while you build." },
-  { audio: "02c-narrator-build-check", speaker: "Narrator", text: "You used every picture once and matched each one to its source corner. Building from a shown source lets the team compare the result with the same starting plan." },
+  { audio: "02a-narrator-ivo-arrives", speaker: "Narrator", text: "The empty sign has the same sun, moon, leaf and star corner marks as the picture plan." },
+  { audio: "02b-ivo-build", speaker: "Ivo", text: "Look at one corner on the plan. Put that picture in the same corner on the sign. Use every card once." },
+  { audio: "02c-narrator-build-check", speaker: "Narrator", text: "All four pictures are in the same places as the plan. The sign and the plan match. Looking at them side by side helped you check your work." },
 
-  { audio: "03a-narrator-curtain", speaker: "Narrator", text: "The team studied the complete source. Then the curtain covered it, and a fresh four-corner rebuild board waited." },
-  { audio: "03b-tavi-memory", speaker: "Tavi", text: "Use all four cards once to make a complete rebuild. When it is complete, check the whole board. If it does not match, keep that exact try and look again." },
-  { audio: "03c-narrator-memory-check", speaker: "Narrator", text: "You studied, covered and rebuilt the four pictures. When the curtain opened, every complete failed rebuild stayed visible. A failed try can still help us check." },
+  { audio: "03a-narrator-curtain", speaker: "Narrator", text: "Look closely at all four pictures now. In a moment, the curtain will hide the plan and an empty sign will appear." },
+  { audio: "03b-tavi-memory", speaker: "Tavi", text: "Put one picture in every corner. Then check your sign. If it is different, we will keep it, look again and make a new sign." },
+  { audio: "03c-narrator-memory-check", speaker: "Narrator", text: "You built and checked your sign. Any wrong sign stayed below so you could look at it again. Sol made his own sign too. Let us see it next." },
 
-  { audio: "04a-narrator-first-try", speaker: "Narrator", text: "Sol's complete first rebuild stayed beside the complete source. Bee and boot had traded places, while sunflower and watering can stayed where they began." },
-  { audio: "04b-sol-compare", speaker: "Sol", text: "Compare every symbol corner. Mark both corners that changed. If a corner matches, mark it checked and keep looking." },
-  { audio: "04c-narrator-retained-try", speaker: "Narrator", text: "You compared every corner and found that bee and boot changed places while the other two pictures stayed the same. Comparing the complete source with the complete try is more reliable than one quick guess." },
+  { audio: "04a-narrator-first-try", speaker: "Narrator", text: "Sol puts his whole sign beside the picture plan. He does not erase it. Now everyone can look for what changed." },
+  { audio: "04b-sol-compare", speaker: "Sol", text: "Oops! I mixed up two pictures. Please tap the two corners on my sign that do not match the plan." },
+  { audio: "04c-narrator-retained-try", speaker: "Narrator", text: "You put Sol's sign beside the picture plan and found the bee and boot in different corners. Looking at two things side by side to find what is the same or different is called comparing. Sol's wrong sign stayed where everyone could see it, so it helped show what needed to change." },
 
-  { audio: "05a-narrator-footprints", speaker: "Narrator", text: "Sol kept four placement cards showing what he did first, next and last. The cards made an ordered record of his rebuild." },
-  { audio: "05b-mia-trace", speaker: "Mia", text: "Start with Step 1 and check the cards in order against the source. Stop when you reach the first step that placed a picture in a different corner." },
-  { audio: "05c-narrator-trace", speaker: "Narrator", text: "You followed the placement record in order and found Step 3 as the first change. A trace keeps what happened first, next and last, so the team can find where a different result began." },
+  { audio: "05a-narrator-footprints", speaker: "Narrator", text: "Each of Ivo's four cards shows one move. It shows which picture Sol picked and where he put it." },
+  { audio: "05b-mia-trace", speaker: "Mia", text: "Tap Move 1 and look at it beside the plan. If it matches, go to the next move. Stop at the first move that does not match." },
+  { audio: "05c-narrator-trace", speaker: "Narrator", text: "Moves 1 and 2 matched. Move 3 was the first move that changed. Mia puts the bee and boot back in their right corners. Now the sign matches. A record is something we keep to remember what happened. These four cards are Sol's record." },
 
-  { audio: "06a-narrator-frame", speaker: "Narrator", text: "The repaired picture places were recorded. The next card asked only whether the sign's width fitted between the two gate hooks." },
-  { audio: "06b-ivo-measure", speaker: "Ivo", text: "Align the width ribbon from the left hook to the right hook. This tool checks width only. It does not check the pictures or the sign's height." },
-  { audio: "06c-narrator-boundary", speaker: "Narrator", text: "You aligned the width ribbon and found that the sign fits between the hooks. The ribbon answered width only; it did not check the pictures or height. A measuring tool answers its declared question." },
+  { audio: "06a-narrator-frame", speaker: "Narrator", text: "First, the team checks the width. Width means how far the sign goes from one side to the other." },
+  { audio: "06b-ivo-measure", speaker: "Ivo", text: "Put the ribbon on the left hook. Make it longer or shorter until it touches the right hook too. Then test the width." },
+  { audio: "06c-narrator-boundary", speaker: "Narrator", text: "The ribbon touches both hooks. The sign has the right width. This check tells us about width only. It does not tell us how tall the sign is or whether its pictures are right. One check answers one question." },
 
-  { audio: "07a-narrator-friend-check", speaker: "Narrator", text: "The team sign was hidden behind a screen. Ivo took the same source, fresh cards and a separate work board so he could not copy the team's answer." },
-  { audio: "07b-tavi-scan", speaker: "Ivo", text: "Guide my lens through the source corners in the order shown. Record each source picture on my fresh board. We will uncover the team sign only after my four places are complete." },
-  { audio: "07c-narrator-independent", speaker: "Narrator", text: "Ivo rebuilt from the same source without seeing the team sign. His four picture places matched, so the fresh check confirmed that result. A separate path matters because copying would not be a fresh check." },
+  { audio: "07a-narrator-friend-check", speaker: "Narrator", text: "Ivo cannot see the team's sign. He will make his own sign by looking only at the picture plan." },
+  { audio: "07b-tavi-scan", speaker: "Ivo", text: "My card tells me which corner to look at next. Move my lens there. I will put that picture on my sign. No peeking at the team's sign!" },
+  { audio: "07c-narrator-independent", speaker: "Narrator", text: "Ivo made his sign without seeing the team's sign. When the cloth lifted, both signs matched. Checking without seeing or copying the first answer is called an independent check." },
 
-  { audio: "08a-narrator-disagreement", speaker: "Narrator", text: "The width record passed. Mia said the whole sign fitted, but Ivo noticed that nobody had checked its height from the bottom edge to the top edge." },
-  { audio: "08b-ivo-outcomes", speaker: "Ivo", text: "Do not guess and do not vote. Choose the missing height question, then move the height tool from the bottom edge to the top edge and test the fit." },
-  { audio: "08c-narrator-outcomes", speaker: "Narrator", text: "Mia used the width answer to claim the whole sign fit, but Ivo noticed height was still unchecked. You chose a height tool instead of guessing or voting. Disagreement can show that more work is needed." },
+  { audio: "08a-narrator-disagreement", speaker: "Narrator", text: "The width check looked from side to side. No one has measured from the bottom edge to the top edge yet." },
+  { audio: "08b-ivo-outcomes", speaker: "Ivo", text: "Width means side to side. Height means bottom to top. Shall we guess, vote or measure? Choose the action that can really check the height." },
+  { audio: "08c-narrator-outcomes", speaker: "Narrator", text: "The height tool touches the bottom and top edges. The sign has the right height. Mia and Ivo were not sure, so you measured instead of guessing. Another check answered the question." },
 
-  { audio: "09a-narrator-checkpoint", speaker: "Narrator", text: "The closed gate asked four questions: pictures, width, height and friend check. Four visible records waited to be matched to the question each one had answered." },
-  { audio: "09b-mia-final", speaker: "Mia", text: "Choose one record, then match it to its gate question. A wrong match will stay on the checking rail. The gate must wait until all four questions have support." },
-  { audio: "09c-narrator-final-check", speaker: "Narrator", text: "You matched every gate question to its own visible record. The sign passed only after picture, width, height and friend checks were supported. Keeping all the records made the final decision clear." },
+  { audio: "09a-narrator-checkpoint", speaker: "Narrator", text: "Four empty locks light up on the gate. They ask: Do the pictures match? Is the width right? Is the height right? Did Ivo's sign match? One answer card waits for each question." },
+  { audio: "09b-mia-final", speaker: "Mia", text: "Pick one answer card. Then tap the question it answers. If it belongs somewhere else, we will leave the try where we can see it and try again." },
+  { audio: "09c-narrator-final-check", speaker: "Narrator", text: "You gave each gate question its own answer card. The gate stayed closed while a question had no answer. When all four checks were complete, it opened. Evidence is something we can point to that shows what we found. These four answer cards are evidence." },
 
-  { audio: "10-narrator-to-you", speaker: "Narrator", text: "You learned how to check. You looked at what was shown instead of guessing. You built the sign, covered it, rebuilt it, and kept the first try when it did not match. You followed the steps to find where the change began. You used a width tool for width and a height tool for height, because one tool answers only its own question. Then Ivo checked by a fresh path. His result confirmed the picture places. When Mia and Ivo disagreed, you did more work instead of guessing or voting. Checking matters because it helps us say what we observed, keep useful mistakes, and find the next question that needs an answer." },
+  { audio: "10-narrator-to-you", speaker: "Narrator", text: "Here is what you learned. You looked at the picture plan instead of guessing. You kept Sol's wrong sign and compared it with the plan. You followed Sol's moves and found the first move that changed. You measured side to side for width, then bottom to top for height. Ivo made a new sign without looking at the team's sign, and both signs matched. When Mia and Ivo were not sure, you checked again. At the gate, you put each of the four answer cards beside the question it answered. This matters because a careful check helps us find mistakes, shows what we know, and tells us what still needs checking." },
 ]);
 
 export const LEVEL_FOUR_SOURCE = Object.freeze([
@@ -158,7 +158,9 @@ export function levelFourRoundForRound(round) {
     measureWidth: [3, 2, 4, 3][variant],
     friendOrder: [...FRIEND_ORDERS[variant]],
     friendBoard: [...plan],
-    heightTarget: [3, 2, 4, 3][variant],
+    // The visible height frame always runs from the bottom edge to the top
+    // edge, so its truthful full-height answer is always step 4.
+    heightTarget: 4,
     checkpointQuestions: [...RECORDS],
     checkpointRecords: rotate([...RECORDS], variant + 1),
   };

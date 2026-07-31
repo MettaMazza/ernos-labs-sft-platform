@@ -1,60 +1,63 @@
 # Levels One through Four manual end-to-end QA
 
-Version: unified game 2.1.0 review
+Version: unified game 2.1.1 review
 Date: 31 July 2026
 Final-publication approval: pending Maria Smith's review
 
 ## Level Four complete journey
 
-Level Four was manually played from its four-part introduction to the opened
-garden gate at 390 × 844 phone, 768 × 1024 tablet and 1440 × 900 desktop
-viewports. All nine games were completed through their successful route and a
-plausible wrong route:
+Corrected review 2.1.1 was manually played from its four-part introduction to
+the opened garden gate at the 390 × 844 phone viewport. All nine games were
+completed through their successful route, and a useful wrong choice was tested
+where it was needed to check the revised teaching and recovery:
 
-1. `Look-and-Point Lens`: made an unsupported choice, then moved the lens to
+1. `Find It With the Lens`: made an unsupported choice, then moved the lens to
    the named MOON corner and selected the visible bee.
-2. `Build-the-Board`: tried an incorrect marked corner, then used every picture
-   once to reproduce the complete shown source.
-3. `Curtain Rebuild`: submitted a complete non-matching rebuild, kept that
-   exact board visible, looked again and completed the matching rebuild.
+2. `Welcome Sign Builder`: used every picture once to reproduce the complete
+   picture plan.
+3. `Curtain Copy`: rebuilt the four-picture sign from memory and uncovered the
+   result before moving to Sol's separately made sign.
 4. `Difference Finder`: checked a matching corner before marking both changed
    corners where bee and boot had traded places.
-5. `Placement Trace`: attempted an out-of-order card, then followed all four
-   cards from Step 1 and identified Step 3 as the first change.
-6. `Measuring Ribbon`: took a wrong alignment path before checking only the
-   sign's width from the left hook to the right hook.
-7. `Fresh-Path Friend Check`: took a wrong source-recording path, then guided
-   Ivo through all four source corners before uncovering the team sign.
-8. `Height Question`: tried an unsupported guess or vote, then named the
-   missing height question and measured from the bottom edge to the top edge.
-9. `Four-Record Checkpoint`: made a wrong record-to-question match and kept it
-   on the checking rail, then supported pictures, width, height and friend
-   check with their own four records.
+5. `Sol's Step Cards`: followed all four cards from Move 1 and identified Move
+   3 as the first change.
+6. `Measuring Ribbon`: tested short lengths before the ribbon reached both
+   side hooks. Every length remained available and no practice consumed a try
+   light.
+7. `Ivo Makes His Own Sign`: guided Ivo through all four picture-plan corners
+   before lifting the cloth and comparing his sign with the team's sign.
+8. `Does It Fit Bottom to Top?`: tried both Guess and Vote, then measured every
+   height from 1 through 4. Heights 1, 2 and 3 gave clear "stopped short"
+   feedback without consuming a try; height 4 visibly touched both edges and
+   completed the game.
+9. `Match the Answer Cards`: made a wrong card-to-question match and kept it on
+   the checking rail, then answered the picture, width, height and Ivo questions
+   with their four matching cards.
 
-One complete three-try round was deliberately lost and reset. A completed game
-was replayed with a different solvable presentation while the fixed SUN to
-sunflower, MOON to bee, LEAF to watering can and STAR to boot source remained
-unchanged. Retained failed rebuilds and wrong checkpoint matches remained
-visible as intended.
+The corrected height game could not become unwinnable through exploration.
+The fixed SUN to sunflower, MOON to bee, LEAF to watering can and STAR to boot
+picture plan remained unchanged throughout the story. A wrong final
+answer-card match remained visible and the child could then complete all four
+questions.
 
 ## Level Four visual, restoration and ending checks
 
-- Phone 390 × 844, tablet 768 × 1024 and desktop 1440 × 900: full nine-stage
-  routes, wrong and successful paths, round loss and reset, replay variation,
-  final narrator lesson and ending controls completed through the interface.
-- The ending fitted each viewport and kept replay and level-selection controls
-  reachable.
+- Phone 390 × 844: complete nine-stage route, selected wrong choices, every
+  measuring length, final narrator lesson and ending controls completed through
+  the visible interface.
+- Tablet 768 × 1024 and desktop 1440 × 900: the returned title selector and
+  completed ending were visually inspected. The ending fitted each viewport
+  and kept replay, music and level-selection controls reachable.
 - Returning to the title after play showed the four-card selector without the
   cast or name labels bleeding into the title after the title-cast fix.
-- Reload and resume were manually verified during Level Four. The active turn
-  and unfinished game state returned instead of dropping to the title.
-- Levels One, Two and Three each launched their narrated prelude from the
-  selector after the Level Four integration.
+- Leaving for another browser tab and returning preserved the exact Level Four
+  ending instead of dropping to the title.
 - Automated lifecycle coverage passed for hidden-page and page-exit narration
   cancellation, generation invalidation and prevention of stale-line replay.
 - A true operating-system app-switch was not manually tested in this pass; no
-  such manual result is claimed. Reload and in-browser resume were the manually
-  verified restoration paths.
+  such manual result is claimed. Automated lifecycle coverage is the check for
+  stale hidden-page narration, while in-browser tab return was manually
+  verified.
 
 ## Level Three complete journey
 
@@ -338,7 +341,8 @@ nineteen pass together with lint and the production build.
   with no errors.
 
 The evidence above keeps E01 review 1.6.0, E02 review 1.0.0, E03 review 1.0.0,
-E04 review 1.0.0 and unified game review 2.1.0 ready for Maria Smith's next play
-test. The OS app-switch boundary has automated lifecycle coverage but no manual
-OS-level result in this pass. Nothing in this file approves a version,
-authorises public hosting or moves it into `publications/education/`.
+corrected E04 review 1.0.1 and unified game review 2.1.1 ready for Maria Smith's
+next play test. The OS app-switch boundary has automated lifecycle coverage but
+no manual OS-level result in this pass. Nothing in this file approves a
+version, authorises public hosting or moves it into
+`publications/education/`.

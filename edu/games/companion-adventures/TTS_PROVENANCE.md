@@ -1,6 +1,6 @@
 # Levels One through Four audio provenance
 
-Version: unified game review 2.1.0
+Version: unified game review 2.1.1
 Prepared: 31 July 2026
 Scientific-authority status: none
 
@@ -20,13 +20,13 @@ caption is always visible and is the authoritative accessibility transcript.
 - output: 40 E01 MP3 files at 24 kHz in `public/audio/e01-v1.6.0/`
 - output: 32 E02 MP3 files at 24 kHz in `public/audio/e02-v1.0.0/`
 - output: 32 E03 MP3 files at 24 kHz in `public/audio/e03-v1.0.0/`
-- output: 32 E04 MP3 files at 24 kHz in `public/audio/e04-v1.0.0/`
+- output: 32 E04 MP3 files at 24 kHz in `public/audio/e04-v1.0.1/`
 - playback: bundled files only; no network or runtime model access
 - detailed model, voice, manifest and output hashes:
   `public/audio/e01-v1.6.0/generation-receipt.json`,
   `public/audio/e02-v1.0.0/generation-receipt.json`,
   `public/audio/e03-v1.0.0/generation-receipt.json` and
-  `public/audio/e04-v1.0.0/generation-receipt.json`
+  `public/audio/e04-v1.0.1/generation-receipt.json`
 
 The large local model weights are deliberately not copied into the repository
 or sent to a child's device. A device receives only the pre-rendered narrated

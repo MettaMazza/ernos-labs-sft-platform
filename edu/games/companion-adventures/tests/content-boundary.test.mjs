@@ -24,7 +24,7 @@ const e02Book = JSON.parse(await readFile(new URL("../../../books/E02-one-whole-
 const e03Book = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/source/book-v1.0.0.json", import.meta.url), "utf8"));
 const e03ClaimMap = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/claim-map.json", import.meta.url), "utf8"));
 const e03AdultGuide = await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/adult-guide.md", import.meta.url), "utf8");
-const e04Book = JSON.parse(await readFile(new URL("../../../books/E04-look-again-how-we-check/source/book-v1.0.0.json", import.meta.url), "utf8"));
+const e04Book = JSON.parse(await readFile(new URL("../../../books/E04-look-again-how-we-check/source/book-v1.0.1.json", import.meta.url), "utf8"));
 const e04ClaimMap = JSON.parse(await readFile(new URL("../../../books/E04-look-again-how-we-check/claim-map.json", import.meta.url), "utf8"));
 
 function assertCaptionLine(component, [filename, speaker, caption]) {
@@ -334,8 +334,9 @@ test("Level Four release metadata stays aligned with Book Four", () => {
     checkpoint: [28, 29, 30],
   };
 
-  assert.equal(manifest.version, "2.1.0");
-  assert.equal(claimMap.version, "2.1.0");
+  assert.equal(manifest.version, "2.1.1");
+  assert.equal(claimMap.version, "2.1.1");
+  assert.equal(manifest.level_4.book_version, "1.0.1");
   assert.equal(manifest.level_4.book_id, "SFT-EDU-E04-LOOK-AGAIN-HOW-WE-CHECK");
   assert.deepEqual(manifest.level_4.scenes, scenes);
   assert.deepEqual(Object.keys(claimMap.levels.E04.scene_to_book_pages), scenes);

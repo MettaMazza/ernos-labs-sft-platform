@@ -1,8 +1,8 @@
 # E04 media shot list and audio handoff
 
-Status: live-review production plan; no asset in this plan is an approved-final publication
+Status: corrected live-review 2.1.1 production handoff; no asset in this plan is an approved-final publication
 
-Scope: Book/Game E04, *Look Again: How We Check*
+Scope: Book/Game E04, *Look Again: How We Check*; corrected narration output set `e04-v1.0.1`
 
 Scientific-authority status: none. Generated illustration pixels, synthesized music and Kokoro voices may present the checked story, but they do not supply or validate any educational or SFT claim. The game captions and the E04 claim map remain authoritative.
 
@@ -10,7 +10,7 @@ Scientific-authority status: none. Generated illustration pixels, synthesized mu
 
 - Permanent team: Mia, Sol and Tavi.
 - One new E04 guest only: **Ivo**, a friendly moss-green garden checker with a round magnifying lens and a checkerboard satchel.
-- World connection: the turning-light trail reaches a garden gate and a welcome-sign checking workshop.
+- World connection: the turning-light trail reaches a closed garden gate, where a blank Welcome Sign must be finished before the morning visitors arrive.
 - Visual language: original warm 3D children's puzzle-adventure, rounded sculpted forms, tactile wood/cloth/painted metal, expressive but uncluttered silhouettes, soft morning garden light and no resemblance to a third-party game property.
 - Every stage background is scenery only. Characters, movable props, measurements, differences, ordered placement records, answers, labels and failed attempts must be deterministic overlays so replay variations remain exact and readable.
 
@@ -44,7 +44,7 @@ Acceptance checks:
 
 ## Nine stage backgrounds
 
-### 1. Look-and-Point
+### 1. Find It With the Lens
 
 Canonical source: `public/art/stages/e04-source/e04-stage-01-look-and-point-v2.png`
 
@@ -56,9 +56,9 @@ Add to the master constraints:
 
 > Show the outside of a welcoming magical garden gate at early morning. The gate stands closed at centre-right so opening it remains a later story result. Beside it is one child-height wooden welcome-sign frame with a completely blank cream signboard, a low stone ledge and three empty brass pointing markers. Leave a wide clear lawn-and-path area at centre-left for exact observation props and touch targets. The trail from the previous adventure glows faintly as alternating moon-blue and sunrise-gold stones leading to the gate. Do not include any readable mark on the sign and do not place clues or differences in the scenery.
 
-Overlay purpose: the child points only to what is visibly present; a deterministic sign/prop overlay carries the observation choices.
+Overlay purpose: the child moves the lens over the four-corner picture plan, looks at the requested corner and chooses only the picture that is visibly there.
 
-### 2. Build-the-Board
+### 2. Welcome Sign Builder
 
 Source: `public/art/stages/e04-source/e04-stage-02-build-the-board-v1.png`
 
@@ -68,7 +68,7 @@ Add to the master constraints:
 
 > Inside a bright garden checking workshop, show one large empty rectangular sign frame on a sturdy child-height workbench. Place four clearly separate but empty shallow parts trays along the back edge, plus a second slim display rail where a failed first arrangement can remain visible. Keep the sign frame and trays blank and front-facing. Leave the centre of the bench unobstructed for draggable board pieces. Rounded shelves hold only soft-focus garden tools in the distance.
 
-Overlay purpose: build, test and rebuild the same welcome board while the first failed arrangement stays visible.
+Overlay purpose: copy all four pictures from the visible picture plan onto the Welcome Sign, using every picture card once.
 
 ### 3. Curtain Memory
 
@@ -80,7 +80,7 @@ Add to the master constraints:
 
 > Show a small garden-show room connected to the workshop. A wide brass rail holds two fully open sunflower-yellow curtains, revealing one empty, evenly lit four-space Welcome Sign frame. Include a second empty four-space recall frame beside it. Leave generous space for a curtain overlay to close across the complete sign and for four separate picture-card overlays. No picture may already occupy a sign space.
 
-Overlay purpose: observe the canonical four-picture sign order, close the curtain, rebuild that order from memory, then reveal and compare without deleting the attempt.
+Overlay purpose: look at the four-picture plan, close the curtain, build the sign again from memory, then show the plan again without deleting an earlier sign.
 
 ### 4. Difference Finder
 
@@ -92,9 +92,9 @@ Add to the master constraints:
 
 > Show a leafy inspection courtyard with two identical empty cream display panels mounted side by side at the same height, same size and same camera angle. Put a small neutral comparison rail exactly between them and leave both panels completely blank. Keep lighting symmetrical across the two panels and reserve clear space around every edge for tappable difference overlays.
 
-Overlay purpose: two deterministic welcome-sign pictures differ in controlled places; scenery must not introduce accidental asymmetry.
+Overlay purpose: keep Sol's whole wrong sign beside the picture plan while the child finds the two corners that are different.
 
-### 5. Ordered Placement Record
+### 5. Sol's Step Cards
 
 Canonical source: `public/art/stages/e04-source/e04-stage-05-placement-record-v2.png`
 
@@ -104,9 +104,9 @@ Superseded route-scene review output retained for provenance only: `public/art/s
 
 Add to the master constraints:
 
-> Show an inviting garden checking terrace beside the same closed gate. Put one long child-height workbench across the middle distance. On it place exactly four clearly separated, identical, blank upright card holders in one straight left-to-right row, plus one large blank square source-plan frame divided into exactly four equal corner spaces. Keep every holder and source space blank. Include no printed arrow, number, letter, word, icon, picture, footprint, route or highlighted answer.
+> Show an inviting garden checking terrace beside the same closed gate. Put one long child-height workbench across the middle distance. On it place exactly four clearly separated, identical, blank upright card holders in one straight left-to-right row, plus one large blank square picture-plan frame divided into exactly four equal corner spaces. Keep every holder and picture-plan space blank. Include no printed arrow, number, letter, word, icon, picture, footprint, route or highlighted answer.
 
-Overlay purpose: show Sol's four placement cards as an ordered record, compare them with the source in order and retain Step 3 as the first changed placement.
+Overlay purpose: show Sol's four move cards in order, find Move 3 as the first move that changed, then visibly return the bee and boot to their right corners before measuring the repaired sign.
 
 ### 6. Measuring Ribbon
 
@@ -118,7 +118,7 @@ Add to the master constraints:
 
 > Show an airy potting-and-measuring nook with one long perfectly straight child-height worktable viewed nearly front-on. The table has a blank inset measuring channel across its full width, a fixed brass start stop at the left and three empty object stands above it. Keep the channel free of tick marks, numbers, ribbons and objects. Leave clear horizontal space for a draggable measuring-ribbon overlay to start at the brass stop.
 
-Overlay purpose: align the same zero/start boundary, measure a board piece and check rather than judge length by appearance.
+Overlay purpose: make the width ribbon touch the left and right gate hooks. Short and long learning tries remain visible but never remove a try light; the width check answers width only.
 
 ### 7. Friend Check
 
@@ -128,11 +128,11 @@ Playable: `public/art/stages/e04-stage-07-friend-check-v1.png`
 
 Add to the master constraints:
 
-> Show a cosy greenhouse checking bay with two separate, identical child-height inspection desks facing one central blank sign stand. Each desk has one empty four-space checklist holder, and a low divider prevents one checker from seeing the other's choices too soon. Leave standing space for Tavi at one desk and Mia, Sol and Ivo at the other. Keep every holder, stand and board blank.
+> Show a cosy greenhouse checking bay with two separate, identical child-height inspection desks facing one central blank sign stand. Each desk has one empty four-space checklist holder, and a low divider prevents one checker from seeing the other's choices too soon. Leave standing space for Ivo at one desk and Mia, Sol and Tavi at the other. Keep every holder, stand and board blank.
 
-Overlay purpose: Tavi checks all four spaces independently before the team compares results; nobody supplies Tavi with Mia's answer first.
+Overlay purpose: hide the team's sign while Ivo uses only the picture plan and unused cards to make his own sign. Reveal the team's sign only after Ivo has placed all four pictures.
 
-### 8. Height Question
+### 8. Does It Fit Bottom to Top?
 
 Canonical source: `public/art/stages/e04-source/e04-stage-08-height-check-v2.png`
 
@@ -144,9 +144,9 @@ Add to the master constraints:
 
 > Show a clear height-check workshop beside the same closed garden gate. Include exactly one upright blank Welcome Sign in a tall simple frame with its top and bottom edges fully visible. Beside it leave one broad clean vertical measuring lane running from the bottom edge to the top edge. Add one small neutral worktable at the side. Include no claim boards, voting props, width ribbon, tick, ruler, answer or pass state.
 
-Overlay purpose: expose that width alone did not answer height, choose the missing height question instead of guessing or voting, and move a height tool from the bottom edge to the top edge.
+Overlay purpose: show that width alone did not answer height, choose the height tool instead of guessing or voting, and make the tool visibly touch both the bottom and top edges. Short height tries remain available without removing a try light.
 
-### 9. Four-Record Checkpoint
+### 9. Match the Answer Cards
 
 Canonical source: `public/art/stages/e04-source/e04-stage-09-record-checkpoint-v2.png`
 
@@ -156,9 +156,9 @@ Superseded open-gate/lamp review output retained for provenance only: `public/ar
 
 Add to the master constraints:
 
-> Return to the magical garden gate in warm early-morning light. Keep the gate visibly closed and latched before the final decision. Beside it place one blank Welcome Sign. Build exactly four identical blank record plinths in one clean left-to-right row and exactly four identical blank gate-question frames in a second paired row. Keep all eight spaces blank. Include no open onward path, lamp, label, answer or success state.
+> Return to the magical garden gate in warm early-morning light. Keep the gate visibly closed and latched before the final decision. Beside it place one blank Welcome Sign. Build exactly four identical blank answer-card stands in one clean left-to-right row and exactly four identical blank gate-lock frames in a second paired row. Keep all eight spaces blank. Include no open onward path, lamp, label, answer or success state.
 
-Overlay purpose: match the four visible picture, width, height and friend-check records to their four gate questions; retain wrong matches and open the gate only after every question has support.
+Overlay purpose: match the four physical picture, width, height and Ivo answer cards to the gate questions they answer. Keep wrong matches visible and open the gate for the waiting morning visitors only after all four cards are placed correctly.
 
 ## Image-generation rejection gate
 
@@ -188,6 +188,8 @@ Expected output: `public/audio/music/level-four.mp3`, 24 kHz stereo MP3 at 112 k
 
 The copy-locked source is the exported `LEVEL_FOUR_NARRATION` array in `app/level-four-state.mjs`. `narration-manifest-e04.json` contains its 32 stable IDs, speakers and captions without editorial changes. The manifest must be regenerated whenever that authoritative array changes; stale audio must never be retained beneath revised visible text.
 
+Review 2.1.1 changes the child-facing narration throughout Level Four. The older `e04-v1.0.0` audio is therefore superseded and must not be shipped with these captions. Generate the corrected files into `public/audio/e04-v1.0.1` only after the equality gate below passes.
+
 Voice continuity for the eventual manifest:
 
 ```json
@@ -209,7 +211,7 @@ python3 scripts/generate_kokoro_narration.py \
   --model /Users/mettamazza/Desktop/HIVENET/models/kokoro-v1.0.onnx \
   --voices /Users/mettamazza/Desktop/HIVENET/models/voices-v1.0.bin \
   --manifest narration-manifest-e04.json \
-  --output public/audio/e04-v1.0.0
+  --output public/audio/e04-v1.0.1
 ```
 
 The generator renders British English at speed 0.94, encodes mono MP3 at 24 kHz/80 kbit/s and writes `generation-receipt.json` with the exact model, voice bundle, manifest and output SHA-256 hashes. The weights remain local and must never be copied into the repository or sent to a child's device.
@@ -223,4 +225,4 @@ Before rendering, the E04 manifest must satisfy all of these gates:
 5. Punctuation is written for natural TTS; no shorthand such as `shh`, symbols read unexpectedly or stage directions are spoken.
 6. App-switch/resume testing proves that hidden or superseded lines stop and do not replay over the current caption.
 
-After rendering, record `narration-manifest-e04.json`, `public/audio/e04-v1.0.0/generation-receipt.json`, every E04 MP3, `level-four.mp3`, the final generated art, this handoff and the changed generator in the release checksum set.
+After rendering, record `narration-manifest-e04.json`, `public/audio/e04-v1.0.1/generation-receipt.json`, every corrected E04 MP3, `level-four.mp3`, the final generated art, this handoff and the changed generator in the release checksum set.

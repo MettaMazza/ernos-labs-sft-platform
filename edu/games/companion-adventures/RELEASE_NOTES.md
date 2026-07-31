@@ -1,25 +1,45 @@
-# SFT Learning Adventures - review 2.1.0
+# SFT Learning Adventures - review 2.1.1
 
 Prepared: 31 July 2026
 Author: Maria Smith  
 Status: working review; not finally approved or publicly hosted
 
+## Level Four clarity and measuring correction
+
+- Rewrote the complete Level Four introduction, journey lines, instructions,
+  feedback and ending around one visible child-sized story: finish and check a
+  Welcome Sign so the gate can open for the waiting morning visitors.
+- Replaced unexplained child-facing framework words with picture plan, wrong
+  sign, move cards, ribbon, height tool, gate questions and answer cards.
+- Paired observation, compare, record, width, independent check, height and
+  evidence with the matching visible action and an immediate plain explanation.
+- Made Sol's wrong sign and Ivo's move cards appear before they are used, and
+  visibly repaired the bee and boot before the measuring games begin.
+- Corrected the final height activity so the visibly full bottom-to-top tool is
+  always the accepted answer.
+- Made width and height exploration unlimited: shorter attempts, Guess and Vote
+  give guidance without consuming try lights or making a round impossible.
+- Added regression coverage for every replay variant. Corrected review 2.1.1
+  was played from introduction to ending at 390 x 844; its selector and ending
+  were also visually inspected at 768 x 1024 and 1440 x 900.
+
 ## Level Four companion implementation
 
-- Added the complete nine-stage companion to E04 *Look Again: How We Check*.
+- Added the complete nine-stage companion to E04 *Look Again: How We Check*,
+  titled *The Garden Gate Check*.
 - Continued directly from the Level Three Sunrise Arch ending to the closed
   garden gate and the four-picture Garden Welcome Sign.
 - Kept Mia, Sol and Tavi as the permanent trio and introduced only Ivo, the
   garden checker.
-- Built nine distinct games for observation, source-led construction, covered
-  rebuild, retained-failure comparison, ordered trace, width measurement,
-  fresh friend checking, a separate height question and a four-record final
-  checkpoint.
-- Fixed the source throughout the level as SUN to sunflower, MOON to bee, LEAF
-  to watering can and STAR to boot. Replay changes card, trace, tool and record
-  presentation only within checked solvable variants.
-- Retained every complete failed rebuild, wrong trace step and wrong checkpoint
-  match so a mistake remains useful evidence instead of disappearing.
+- Built nine distinct games: find a picture with the lens, copy the picture
+  plan, rebuild after the curtain closes, compare Sol's wrong sign, follow his
+  four move cards, fit a ribbon between two hooks, help Ivo make a sign without
+  peeking, check bottom-to-top height and match four answer cards to the gate.
+- Kept the picture plan throughout the level as SUN to sunflower, MOON to bee,
+  LEAF to watering can and STAR to boot. Replay changes the order of cards and
+  move prompts only within checked solvable versions of the same plan.
+- Kept every complete wrong sign, move tapped too soon and wrong answer-card
+  match visible so a mistake can help the child decide what to try next.
 - Added three visible try lights, recoverable round loss, touch alternatives,
   device-local restoration and app-switch narration cancellation.
 - Added 32 exact-caption Kokoro lines, Ivo's continuing voice, nine optional
@@ -28,9 +48,9 @@ Status: working review; not finally approved or publicly hosted
   it and extended the confirmed fresh-game reset across all four levels.
 - Added deterministic lifecycle coverage for all nine mechanics, the fixed
   source, replay variation, caption lock, final lesson and local restoration.
-- Manual phone, tablet and desktop play-through results remain explicitly
-  pending in `MANUAL_QA.md`; this implementation is not a final-publication or
-  public-hosting approval.
+- The exact manual scope and the untested operating-system app-switch boundary
+  are recorded in `MANUAL_QA.md`; this implementation is not a
+  final-publication or public-hosting approval.
 
 ## Level Two symmetry and story-order correction
 

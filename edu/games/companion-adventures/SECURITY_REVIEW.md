@@ -1,7 +1,7 @@
 # Dependency security review
 
 Review date: 31 July 2026
-Scope: unified E01 through E04 companion adventure review 2.1.0
+Scope: unified E01 through E04 companion adventure review 2.1.1
 Remote hosting status: not authorised and not ready
 
 The four-level application contains no server action, upload, sign-in, database,
