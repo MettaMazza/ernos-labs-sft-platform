@@ -41,9 +41,10 @@ pulsed before a genuine attempt.
 
 - Phone 390 × 844 and 579 × 1280: complete play-through, all wrong paths,
   successes, replays, final lesson and all ending controls.
-- Tablet 768 × 1024: selector, cast/title spacing and completed ending checked.
-- Desktop 1440 × 900: selector and completed ending checked; the narrator
-  lesson and all three controls fit without scrolling.
+- Tablet 768 × 1024: complete nine-stage play-through with a full lost round,
+  recovery, deliberate wrong paths, all successes and the completed ending.
+- Desktop 1440 × 900: complete nine-stage play-through through the visible
+  interface; the narrator lesson and all three controls fit without scrolling.
 - The opening cast remained entirely above the title and level cards at phone,
   tablet and desktop sizes.
 - The rebuilt bridge showed five numbered arches with explicit open and closed
@@ -66,6 +67,9 @@ pulsed before a genuine attempt.
   mistake matter.
 - The `TRAILLIGHT` book code displayed its animated music-and-lantern surprise
   without exposing an answer or skipping a lesson.
+- The turning tile has an explicit Enter/Space keyboard handler in addition to
+  swipe and pointer activation. Every drag activity retains a labelled click or
+  tap alternative, and live feedback uses status or alert semantics.
 
 ## Level Two story-clarity replay
 

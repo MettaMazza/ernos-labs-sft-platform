@@ -12,6 +12,8 @@ const claimMap = JSON.parse(await readFile(new URL("../claim-map.json", import.m
 const narration = JSON.parse(await readFile(new URL("../narration-manifest.json", import.meta.url), "utf8"));
 const continuity = JSON.parse(await readFile(new URL("../character-continuity.json", import.meta.url), "utf8"));
 const e02Book = JSON.parse(await readFile(new URL("../../../books/E02-one-whole-many-parts/source/book-v1.0.0.json", import.meta.url), "utf8"));
+const e03Book = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/source/book-v1.0.0.json", import.meta.url), "utf8"));
+const e03ClaimMap = JSON.parse(await readFile(new URL("../../../books/E03-the-fold-makes-a-pattern/claim-map.json", import.meta.url), "utf8"));
 
 test("Level One is a fixed animated stage, not a read-and-scroll choice menu", () => {
   assert.match(styles, /height:100dvh;[^}]*overflow:hidden/);
@@ -218,12 +220,18 @@ test("Levels Two and Three use distinct consequence-bearing puzzle systems", () 
   assert.equal(manifest.interaction_system.level_3.length, 9);
   assert.deepEqual(manifest.level_3.scientific_sources.map((source) => source.claim_id), ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
   assert.deepEqual(claimMap.levels.E03.claim_ids, ["SFT-FOUNDATION-FOLD-001", "SFT-FOUNDATION-FOLD-DYNAMICS-001"]);
+  assert.deepEqual(Object.keys(claimMap.levels.E03.scene_to_book_pages), manifest.level_3.scenes);
+  assert.deepEqual([...new Set(Object.values(claimMap.levels.E03.scene_to_book_pages).flat())].sort((a,b)=>a-b), Array.from({length:30},(_,index)=>index+3));
+  assert.deepEqual(manifest.level_3.reading_codes, e03Book.reading_codes.map((entry) => entry.code));
+  assert.deepEqual(manifest.level_3.scientific_sources.map((entry) => entry.claim_id), e03ClaimMap.scientific_claims.map((entry) => entry.claim_id));
+  assert.equal(claimMap.book_remains_distinct_deeper_reading_route, true);
   assert.doesNotMatch(JSON.stringify(manifest.level_3), /pending-review/i);
   assert.match(levelThree, /const lane = \(chosen\.length \+ mistakes \+ round\) % 3/);
   assert.doesNotMatch(levelThree, /setInterval|belt\[tick/);
   assert.match(levelThree, /className="conveyor-choices"/);
   assert.match(manifest.interaction_system.level_3.join(" "), /one-turn.*letter changes on replay/i);
   assert.match(levelThree, /aria-label="Restart Level Three"/);
+  assert.match(levelThree, /onKeyDown=\{\(event\)=>\{if\(event\.key===\"Enter\"\|\|event\.key===\" \"\)\{event\.preventDefault\(\);flip\(\);\}\}\}/);
   assert.match(levelThree, /codeTreats/);
   assert.match(levelThree, /className="code-treat"/);
   assert.match(styles, /\.repair-row\{[^}]*grid-template-columns:repeat\(3,1fr\)/);

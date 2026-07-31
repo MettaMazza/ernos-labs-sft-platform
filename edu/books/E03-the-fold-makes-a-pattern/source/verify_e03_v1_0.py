@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -15,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[4]
 BOOK = Path(__file__).resolve().parents[1]
 SOURCE = BOOK / "source" / "book-v1.0.0.json"
 CLAIM_MAP = BOOK / "claim-map.json"
+MANIFEST = BOOK / "book-manifest.json"
+CHECKSUMS = BOOK / "CHECKSUMS.sha256"
 HTML = BOOK / "accessible" / "student-book-v1.0.0.html"
 RELEASE = ROOT / "output" / "pdf" / "edu" / "SFT-EDU-E03-THE-FOLD-MAKES-A-PATTERN" / "1.0.0"
 STUDENT = RELEASE / "SFT-E03-The-Fold-Makes-A-Pattern-v1.0.0.pdf"
@@ -44,8 +47,14 @@ class SectionCounter(HTMLParser):
 def main() -> None:
     book = json.loads(SOURCE.read_text(encoding="utf-8"))
     claims = json.loads(CLAIM_MAP.read_text(encoding="utf-8"))
+    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     require(book["version"] == "1.0.0" and book["status"] == "review", "source is not review 1.0.0")
     require(claims["version"] == "1.0.0", "claim map must match the 1.0.0 review")
+    require(manifest["version"] == "1.0.0" and manifest["status"] == "review", "manifest is not review 1.0.0")
+    require(manifest["final_publication"]["approved"] is False, "review build must not be marked approved")
+    require(all(manifest["release_checks"].values()), "one or more manifest release checks are not recorded as passed")
+    for artifact in manifest["artifacts"]:
+        require((ROOT / artifact["path"]).is_file(), f"missing manifest artifact: {artifact['path']}")
     require(len(book["pages"]) == 32, "student source must contain 32 pages")
     require([p["page"] for p in book["pages"]] == list(range(1, 33)), "student page order is broken")
     require(all(p.get("alt", "").strip() for p in book["pages"]), "every student page needs a picture description")
@@ -89,6 +98,29 @@ def main() -> None:
     require(challenge_pages == [7, 10, 12, 16, 19, 23, 26, 28, 30], "challenge sequence changed")
     require(claims["challenge_reveal_pairs"] == [[7, 8], [10, 11], [12, 13], [16, 17], [19, 20], [23, 24], [26, 27], [28, 29], [30, 31]], "challenge/reveal pacing changed")
     require(set(book["pages"][25]["choices"]) == {"route-short", "route-broken", "route-lawful"}, "route choices changed")
+
+    required_checksums = {
+        "edu/books/E03-the-fold-makes-a-pattern/README.md",
+        "edu/books/E03-the-fold-makes-a-pattern/NARRATIVE_AND_LEARNING_DESIGN.md",
+        "edu/books/E03-the-fold-makes-a-pattern/adult-guide.md",
+        "edu/books/E03-the-fold-makes-a-pattern/book-manifest.json",
+        "edu/books/E03-the-fold-makes-a-pattern/claim-map.json",
+        "edu/books/E03-the-fold-makes-a-pattern/editions/1.0.0/RELEASE_RECORD.md",
+        "edu/books/E03-the-fold-makes-a-pattern/source/book-v1.0.0.json",
+        "edu/books/E03-the-fold-makes-a-pattern/source/render_e03_v1_0.py",
+        "edu/books/E03-the-fold-makes-a-pattern/source/verify_e03_v1_0.py",
+        "edu/books/E03-the-fold-makes-a-pattern/accessible/student-book-v1.0.0.html",
+        "output/pdf/edu/SFT-EDU-E03-THE-FOLD-MAKES-A-PATTERN/1.0.0/SFT-E03-The-Fold-Makes-A-Pattern-v1.0.0.pdf",
+        "output/pdf/edu/SFT-EDU-E03-THE-FOLD-MAKES-A-PATTERN/1.0.0/SFT-E03-Adult-Guide-v1.0.0.pdf",
+    }
+    recorded_checksums: dict[str, str] = {}
+    for line in CHECKSUMS.read_text(encoding="utf-8").splitlines():
+        digest, relative_path = line.split(maxsplit=1)
+        recorded_checksums[relative_path] = digest
+    require(set(recorded_checksums) == required_checksums, "E03 checksum boundary is incomplete or contains an unexpected file")
+    for relative_path, expected_digest in recorded_checksums.items():
+        data = (ROOT / relative_path).read_bytes()
+        require(hashlib.sha256(data).hexdigest() == expected_digest, f"checksum mismatch: {relative_path}")
     print("E03 review book verified")
 
 

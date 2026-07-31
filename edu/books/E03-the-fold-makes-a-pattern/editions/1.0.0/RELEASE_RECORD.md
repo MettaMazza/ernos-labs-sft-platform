@@ -25,7 +25,12 @@ and the supplied 579 × 1280 phone size, including deliberate wrong paths and
 the success path in every puzzle. The final phone boards use a deterministic
 moving catch lane, two always-visible Path Builder choices, a readable 3-by-2
 repair grid, fixed-height labelled bridge arches and stacked route cards.
-Selector and ending layouts were inspected at 768 × 1024 and 1440 × 900.
+The complete nine-stage journey was also replayed through the visible interface
+at 768 × 1024 tablet and 1440 × 900 desktop sizes. The tablet run included a
+full lost round, recovery, deliberate wrong outcomes and every successful path.
+The desktop run completed every stage and ending control. Keyboard activation
+for the two-sided tile is explicit for Enter and Space, and every drag activity
+retains a labelled click or tap alternative.
 Reload during unfinished play, tab switching, exact completion restoration,
 the harmless animated book-code reward, offline caption-matched narration and
 the direct-to-child ending lesson passed their checks.
