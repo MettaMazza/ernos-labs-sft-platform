@@ -15,3 +15,7 @@ learning object without depending on a device’s emoji font or on a network req
 The OpenMoji-derived images remain CC BY-SA 4.0. The educational text, original
 character/world illustrations and other project material retain their separately
 stated licences.
+
+`build_lantern_parts.py` mechanically clips the versioned lantern emoji into
+four transparent quadrants for Book Two's paper puzzle. The four derived files
+remain OpenMoji artwork under CC BY-SA 4.0; they are not generated illustrations.
