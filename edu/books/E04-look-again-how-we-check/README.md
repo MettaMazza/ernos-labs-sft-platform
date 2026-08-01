@@ -4,7 +4,7 @@
 
 **SFT branch:** Foundation, with one bounded Engineering Translation check
 
-**Current working edition:** 1.0.1 review
+**Current working edition:** 2.0.0 review
 
 **Final-publication approval:** pending Maria Smith's decision
 
@@ -13,39 +13,35 @@ repaired light through the Sunrise Arch to a closed garden gate. Mia, Sol and
 Tavi meet one new friend, Ivo, and rebuild a four-picture welcome sign before
 the morning visitors arrive.
 
-The child looks at a picture plan before answering, builds and rebuilds the
-sign, keeps Sol's first try, follows his four step cards, checks side to side
-and bottom to top separately, and compares Ivo's own sign without copying. The
-story ends after four recognisable cards answer four clear questions.
+The child looks at a picture plan before answering, keeps Sol's first try,
+follows four clear step cards, checks side to side and bottom to top separately,
+and compares Ivo's own sign without copying. Repeated teaching objects use
+stable OpenMoji emoji; generated art is reserved for settings and characters.
 
 ## Read and review
 
-- Student PDF: `editions/1.0.1/SFT-E04-Look-Again-How-We-Check-v1.0.1.pdf`
-- Adult guide PDF: `editions/1.0.1/SFT-E04-Adult-Guide-v1.0.1.pdf`
-- Scalable text edition: `accessible/student-book-v1.0.1.html`
-- Canonical student source: `source/book-v1.0.1.json`
-- Adult guide source: `adult-guide.md`
+- Student PDF: `output/pdf/edu/SFT-EDU-E04-LOOK-AGAIN-HOW-WE-CHECK/2.0.0/SFT-E04-Look-Again-How-We-Check-v2.0.0.pdf`
+- Adult guide PDF: `output/pdf/edu/SFT-EDU-E04-LOOK-AGAIN-HOW-WE-CHECK/2.0.0/SFT-E04-Adult-Guide-v2.0.0.pdf`
+- Scalable text edition: `accessible/student-book-v2.0.0.html`
+- Canonical student source: `source/book-v2.0.0.json`
+- Adult guide source: `adult-guide-v2.0.0.md`
 - Companion level: `edu/games/companion-adventures/`
 
-The complete 1.0.0 review remains preserved under `source/`, `accessible/` and
-`editions/1.0.0/` as historical material. Its renderer and verifier remain
-available and are not used to rebuild 1.0.1.
+Earlier 1.0.0 and 1.0.1 reviews remain preserved as historical material. Their
+renderers and verifiers are not used to rebuild 2.0.0.
 
 ## Rebuild and verify
 
 ```bash
-python3 edu/books/E04-look-again-how-we-check/source/generate_accessible_e04_v1_0_1.py
-python3 edu/books/E04-look-again-how-we-check/source/render_e04_v1_0_1.py
-python3 edu/books/E04-look-again-how-we-check/source/verify_e04_v1_0_1.py
-python3 edu/tools/verify_book.py edu/books/E04-look-again-how-we-check/book-manifest.json
+python3 edu/books/E04-look-again-how-we-check/source/render_e04_v2_0.py
+python3 edu/books/E04-look-again-how-we-check/source/render_e04_adult_v2_0.py
+python3 edu/books/E04-look-again-how-we-check/source/verify_e04_v2_0.py
 ```
 
-The renderer creates a 32-page square student book and a portrait adult guide.
-The verifier checks page order, challenge/reveal boundaries, single-guest canon,
-receipt identities, reading-code safety, experience-before-vocabulary order,
-the three page-13 choices, step-card continuity, the missing bottom-to-top
-check, accessible structure, PDF page counts and required child-facing
-language.
+The renderers create a 32-page square student book and a four-page portrait
+adult guide. The verifier checks page order, eleven paper activities,
+single-guest canon, receipt identities, stable emoji use, accessible structure,
+PDF page counts and the publication boundary.
 
 ## Scientific boundary
 
@@ -58,7 +54,7 @@ production support only.
 
 ## Approval boundary
 
-Version 1.0.1 is a complete working review build. It must not enter
+Version 2.0.0 is a complete working review build. It must not enter
 `publications/education/` until Maria Smith explicitly approves this exact
 book-and-game version.
 
