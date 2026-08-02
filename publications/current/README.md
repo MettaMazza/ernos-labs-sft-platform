@@ -13,13 +13,13 @@ directory name does not assert current scientific completeness.
 
 ## Current boundary and published roadmap successors
 
-The current model contains 2,765 admitted claims and passed the independent
-Lean 4 whole-model verifier. Nineteen existing paper lineages now have local
-versioned successors, and the standalone Lean verification paper is prepared as
-version 1.0.0. The source-level publication-guidance gate passes all 20 local
-candidates. Their canonical manifest is
-[`LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json`](../lean4_verification/LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json).
-None of those local candidates is published, deposited or assigned a new DOI.
+The current model contains 2,777 admitted claims and passed the independent
+Lean 4 whole-model verifier. Seventeen existing papers and the standalone Lean
+verification paper are published in their retained Zenodo concept DOI
+lineages. Their status-corrected patch versions remove the erroneous
+prepublication wording without changing scientific content. The public
+correction record is
+[`PUBLISHED_STATUS_CORRECTION_ZENODO_PUBLICATION_RECORD_2026-08-02.json`](../lean4_verification/PUBLISHED_STATUS_CORRECTION_ZENODO_PUBLICATION_RECORD_2026-08-02.json).
 
 The papers below are real published, citable archival records. Their claim
 packages and receipts remain immutable. All fifteen registered branch
@@ -43,26 +43,28 @@ set through Chemistry is recorded in
 the subsequently completed Materials release is recorded in
 [`materials_release.json`](../../publication/materials_release.json).
 
-## Published archival papers
+## Current published papers
 
 | Branch | Paper | DOI | Current status |
 |---|---|---|---|
-| Methods 00 | [There Is No Nothing](../successors/methods/THERE_IS_NO_NOTHING_METHODS_PAPER_001_V0_3.md) | [10.5281/zenodo.21627646](https://doi.org/10.5281/zenodo.21627646) | Version 0.3 publishes the shared two-layer branch roadmap |
-| Foundation | [From Nothing to Fold](../successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_3.md) | [10.5281/zenodo.21627656](https://doi.org/10.5281/zenodo.21627656) | 16-law foundation current-evidence complete; v1.3 roadmap published; extension-open |
-| Mathematics | [From Fold to Mathematics](../successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_4.md) | [10.5281/zenodo.21627708](https://doi.org/10.5281/zenodo.21627708) | Published v1.4; local 323/323 complete-field v1.5 package prepared |
-| Information Science | [From Distinction to Information](../successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_3.md) | [10.5281/zenodo.21627717](https://doi.org/10.5281/zenodo.21627717) | Published v1.3; local 262/262 complete-field v1.4 package prepared |
-| Classical Computation | [After Turing: The Fold Machine](../successors/computation/AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_3.md) | [10.5281/zenodo.21627721](https://doi.org/10.5281/zenodo.21627721) | Published v1.3; local 369/369 complete-field v1.4 package prepared |
-| Quantum Computation | [The Quantum Fold Machine](../successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_3.md) | [10.5281/zenodo.21627748](https://doi.org/10.5281/zenodo.21627748) | Published v1.3; local 288/288 complete-field v1.4 package prepared |
-| Physics | [From Fold to Physics](../successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_2.md) | [10.5281/zenodo.21627765](https://doi.org/10.5281/zenodo.21627765) | Published v1.2; local 368/368 current-scope v1.3 package prepared |
-| Chemistry | [From Fold to Chemistry](chemistry/FROM_FOLD_TO_CHEMISTRY.md) | [10.5281/zenodo.21627782](https://doi.org/10.5281/zenodo.21627782) | Published v1.2; local 272/272 discipline obligations and 281 live claims documented in v1.3 package |
-| Materials | [From Fold to Materials](materials/FROM_FOLD_TO_MATERIALS.md) | [10.5281/zenodo.21629306](https://doi.org/10.5281/zenodo.21629306) | Published v1.2; local 289/289 complete-field v1.3 package prepared |
-| Biology | [From Fold to Life](biology/FROM_FOLD_TO_LIFE.md) | [10.5281/zenodo.21630203](https://doi.org/10.5281/zenodo.21630203) | Published foundation v1.0; local full-field continuation active at 82/424 |
-| Medicine | [From Fold to Medicine](medicine/FROM_FOLD_TO_MEDICINE.md) | [10.5281/zenodo.21630785](https://doi.org/10.5281/zenodo.21630785) | Published foundation v1.0; 76 live claims after completed placebo/nocebo return; full-field census not frozen |
-| Consciousness and Cognitive Science | [From Fold to Consciousness](consciousness_cognitive_science/FROM_FOLD_TO_CONSCIOUSNESS.md) | [10.5281/zenodo.21636397](https://doi.org/10.5281/zenodo.21636397) | Published foundation v1.0; 77 live claims after completed nonordinary return; full-field census not frozen |
-| Earth and Environmental Sciences | [From One World to Earth](earth_environment/FROM_ONE_WORLD_TO_EARTH.md) | [10.5281/zenodo.21640810](https://doi.org/10.5281/zenodo.21640810) | Published foundation v1.0; 75 live claims after completed tipping return; full-field census not frozen |
-| Astronomy and Cosmology | [From One Sky to Cosmos](astronomy_cosmology/FROM_ONE_SKY_TO_COSMOS.md) | [10.5281/zenodo.21640812](https://doi.org/10.5281/zenodo.21640812) | Published foundation v1.0; 77 live claims after completed prior-return family; full-field census not frozen |
-| Social and Collective Systems | [From One Relation to Society](social_collective_systems/FROM_ONE_RELATION_TO_SOCIETY.md) | [10.5281/zenodo.21640814](https://doi.org/10.5281/zenodo.21640814) | Published foundation v1.0; 76 live claims after completed exact-return family; full-field census not frozen |
-| Engineering Translation | [From One Law to a Working World](engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD.md) | [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816) | Published foundation v1.0; 80 live claims after completed translation-return family; full-field census not frozen |
+| Theory of Everything | [The Smithian Fold Theory V3 Theory of Everything](../preliminary_toe/successors/v0_2_1/SMITHIAN_FOLD_THEORY_V3_EXHAUSTIVE_PRELIMINARY_TOE_MONOGRAPH_V0_2_1.md) | [10.5281/zenodo.21761648](https://doi.org/10.5281/zenodo.21761648) | Published v0.2.1 status correction; scientific content unchanged |
+| Methods 00 | [There Is No Nothing](../successors/methods/THERE_IS_NO_NOTHING_METHODS_PAPER_001_V0_4_1.md) | [10.5281/zenodo.21761649](https://doi.org/10.5281/zenodo.21761649) | Published v0.4.1 status correction; scientific content unchanged |
+| Foundation | [From Nothing to Fold](../successors/foundation/FROM_NOTHING_TO_FOLD_FOUNDATION_PAPER_001_V1_4_1.md) | [10.5281/zenodo.21761650](https://doi.org/10.5281/zenodo.21761650) | Published v1.4.1 status correction; scientific content unchanged |
+| Mathematics | [From Fold to Mathematics](../successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6_1.md) | [10.5281/zenodo.21761651](https://doi.org/10.5281/zenodo.21761651) | Published v1.6.1 status correction; scientific content unchanged |
+| Information Science | [From Distinction to Information](../successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_5_1.md) | [10.5281/zenodo.21761652](https://doi.org/10.5281/zenodo.21761652) | Published v1.5.1 status correction; scientific content unchanged |
+| Classical Computation | [After Turing: The Fold Machine](../successors/computation/AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_5_1.md) | [10.5281/zenodo.21761653](https://doi.org/10.5281/zenodo.21761653) | Published v1.5.1 status correction; scientific content unchanged |
+| Quantum Computation | [The Quantum Fold Machine](../successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_5_1.md) | [10.5281/zenodo.21761654](https://doi.org/10.5281/zenodo.21761654) | Published v1.5.1 status correction; scientific content unchanged |
+| Physics | [From Fold to Physics](../successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_4_1.md) | [10.5281/zenodo.21761655](https://doi.org/10.5281/zenodo.21761655) | Published v1.4.1 status correction; scientific content unchanged |
+| Chemistry | [From Fold to Chemistry](../successors/chemistry/FROM_FOLD_TO_CHEMISTRY_PAPER_001_V1_4_1.md) | [10.5281/zenodo.21761656](https://doi.org/10.5281/zenodo.21761656) | Published v1.4.1 status correction; scientific content unchanged |
+| Materials | [From Fold to Materials](../successors/materials/FROM_FOLD_TO_MATERIALS_PAPER_001_V1_4_1.md) | [10.5281/zenodo.21761657](https://doi.org/10.5281/zenodo.21761657) | Published v1.4.1 status correction; scientific content unchanged |
+| Biology | [From Fold to Life](../successors/biology/FROM_FOLD_TO_LIFE_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761658](https://doi.org/10.5281/zenodo.21761658) | Published v1.1.1 status correction; scientific content unchanged |
+| Medicine | [From Fold to Medicine](../successors/medicine/FROM_FOLD_TO_MEDICINE_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761659](https://doi.org/10.5281/zenodo.21761659) | Published v1.1.1 status correction; scientific content unchanged |
+| Consciousness and Cognitive Science | [From Fold to Consciousness](../successors/consciousness_cognitive_science/FROM_FOLD_TO_CONSCIOUSNESS_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761660](https://doi.org/10.5281/zenodo.21761660) | Published v1.1.1 status correction; scientific content unchanged |
+| Earth and Environmental Sciences | [From One World to Earth](../successors/earth_environment/FROM_ONE_WORLD_TO_EARTH_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761661](https://doi.org/10.5281/zenodo.21761661) | Published v1.1.1 status correction; scientific content unchanged |
+| Astronomy and Cosmology | [From One Sky to Cosmos](../successors/astronomy_cosmology/FROM_ONE_SKY_TO_COSMOS_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761662](https://doi.org/10.5281/zenodo.21761662) | Published v1.1.1 status correction; scientific content unchanged |
+| Social and Collective Systems | [From One Relation to Society](../successors/social_collective_systems/FROM_ONE_RELATION_TO_SOCIETY_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761663](https://doi.org/10.5281/zenodo.21761663) | Published v1.1.1 status correction; scientific content unchanged |
+| Engineering Translation | [From One Law to a Working World](../successors/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD_PAPER_001_V1_1_1.md) | [10.5281/zenodo.21761664](https://doi.org/10.5281/zenodo.21761664) | Published v1.1.1 status correction; scientific content unchanged |
+| Lean 4 verification | [Independent Lean 4 Verification](../lean4_verification/SMITHIAN_FOLD_THEORY_LEAN4_WHOLE_MODEL_VERIFICATION_PAPER_V1_0_1.md) | [10.5281/zenodo.21761665](https://doi.org/10.5281/zenodo.21761665) | Published v1.0.1 status correction; scientific content unchanged |
 
 ## Machine-readable current gate
 

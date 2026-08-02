@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed mechanical audit of the 20 Lean-verified publication PDFs."""
+"""Fail-closed mechanical audit of a Lean-verified publication PDF suite."""
 
 from __future__ import annotations
 
@@ -149,20 +149,52 @@ def scan_pdf(record: dict, paper: dict, claims: list[dict]) -> dict:
         normalised = normalise_text(all_text)
         compact = compact_text(all_text)
         cover_text = normalise_text(all_text_parts[0] if all_text_parts else "")
+        publication_status = paper.get("publication_status", "local_candidate")
         cover_requirements = {
             "title": normalise_text(paper["title"]),
             "author": "maria smith",
             "version": normalise_text(f"Version {paper['version']}"),
-            "local DOI status": "doi: not assigned - local publication candidate",
-            "publication status": "unpublished local publication candidate",
-            "confirmation control": "maria smith's explicit confirmation is required before release",
             "Lean report SHA-256": lean_report_sha256,
         }
+        if publication_status == "published_open_access":
+            cover_requirements.update(
+                {
+                    "published DOI": normalise_text(f"DOI: {paper['doi']}"),
+                    "publication status": "published open access",
+                    "record verification": "zenodo record verified",
+                }
+            )
+        else:
+            cover_requirements.update(
+                {
+                    "local DOI status": "doi: not assigned - local publication candidate",
+                    "publication status": "unpublished local publication candidate",
+                    "confirmation control": "maria smith's explicit confirmation is required before release",
+                }
+            )
         missing_cover_requirements = [
             label for label, required in cover_requirements.items() if required not in cover_text
         ]
         if missing_cover_requirements:
             failures.append("cover is missing required publication-control text")
+        if publication_status == "published_open_access":
+            forbidden_publication_text = (
+                "unpublished local publication candidate",
+                "local publication candidate",
+                "not approved, deposited or published",
+                "awaiting maria smith's approval",
+                "confirmation is required before release",
+                "not assigned - local publication candidate",
+            )
+            normalised_all_text = normalise_text(all_text)
+            present_forbidden = [
+                phrase for phrase in forbidden_publication_text if phrase in normalised_all_text
+            ]
+            if present_forbidden:
+                failures.append(
+                    "published PDF retains prepublication status text: "
+                    + "; ".join(present_forbidden)
+                )
         if lean_report_sha256 not in compact:
             failures.append("Lean report SHA-256 is absent from extracted PDF text")
 
@@ -248,8 +280,8 @@ def write_markdown(payload: dict, path: Path) -> None:
     lines.extend(
         [
             "",
-            "No publication, upload, DOI action, release or remote repository mutation was",
-            "performed. Maria Smith remains the sole publication authority.",
+            "This audit performs no publication action. Maria Smith remains the sole",
+            "publication authority, and any remote actions are recorded separately.",
             "",
         ]
     )
@@ -312,9 +344,13 @@ def main() -> None:
                 len(paper["replacement_glyph_pages"]) for paper in complete_records
             ),
         },
-        "publication_authorized": False,
+        "publication_authorized": bool(suite_manifest.get("publication_authorized")),
         "remote_actions_performed": [],
-        "status": "PASS" if not failure_count and len(papers) == 20 else "FAIL",
+        "status": (
+            "PASS"
+            if not failure_count and len(papers) == int(suite_manifest.get("paper_count", len(suite_manifest["papers"])))
+            else "FAIL"
+        ),
     }
     arguments.json_output.resolve().write_text(
         json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n",

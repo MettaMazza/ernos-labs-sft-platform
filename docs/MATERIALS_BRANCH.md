@@ -1,13 +1,13 @@
 # Materials Science branch status
 
-## Lean-verified current local successor — 2 August 2026
+## Lean-verified current published successor — 2 August 2026
 
-Version 1.4.0 is the publication-guidance-compliant local successor for
+Version 1.4.1 is the published status-corrected successor for
 this branch. It binds all 289 current registered claims and is included in the
 17-branch Lean 4 PASS. The manuscript is
-[`FROM_FOLD_TO_MATERIALS_PAPER_001_V1_4.md`](../publications/successors/materials/FROM_FOLD_TO_MATERIALS_PAPER_001_V1_4.md). It is prepared for review but has no
-new DOI and is not published; the 29 July release below remains the most recent
-published version until Maria Smith explicitly authorises publication. Earlier
+[`FROM_FOLD_TO_MATERIALS_PAPER_001_V1_4_1.md`](../publications/successors/materials/FROM_FOLD_TO_MATERIALS_PAPER_001_V1_4_1.md), published at
+[10.5281/zenodo.21761657](https://doi.org/10.5281/zenodo.21761657). This patch
+corrects only the false prepublication wording. Earlier
 open-work wording below is retained as historical chronology and does not
 override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 

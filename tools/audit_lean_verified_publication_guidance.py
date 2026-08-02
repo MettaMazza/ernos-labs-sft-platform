@@ -292,11 +292,19 @@ def paper_audit(record: dict, claims: list[dict], report: dict, report_hash: str
     evidence_hash_ok = (
         evidence.get("paper_sha256", evidence.get("successor_sha256")) == sha256(path)
     )
-    metadata_control_ok = (
-        metadata.get("publication_authorized") is False
-        and metadata.get("remote_action_permitted") is False
-        and metadata.get("ready_to_publish") is False
-    )
+    publication_status = record.get("publication_status", "local_candidate")
+    if publication_status == "published_open_access":
+        metadata_control_ok = (
+            metadata.get("publication_authorized") is True
+            and metadata.get("remote_action_permitted") is True
+            and metadata.get("ready_to_publish") is True
+        )
+    else:
+        metadata_control_ok = (
+            metadata.get("publication_authorized") is False
+            and metadata.get("remote_action_permitted") is False
+            and metadata.get("ready_to_publish") is False
+        )
     headings_text = "\n".join(re.findall(r"(?m)^#{1,6}\s+.*$", text)).lower()
     normalised_text = re.sub(r"\s+", " ", text)
     required_surfaces = {
@@ -331,6 +339,35 @@ def paper_audit(record: dict, claims: list[dict], report: dict, report_hash: str
         "references": bool(re.search(r"(?im)^##\s+References", text)),
         "machine_identity": "machine-identity" in headings_text or "verification-source identities" in headings_text,
     }
+    forbidden_prepublication_text = (
+        "unpublished local publication candidate",
+        "final local publication candidate",
+        "not approved, deposited or published",
+        "awaiting maria smith's approval",
+        "not deposited or published",
+        "not yet approved or deposited",
+        "pending the authorised new-version or new-record deposit",
+        "pending a new standalone record after explicit confirmation",
+        "no push, upload, doi action, release or publication is authorised",
+    )
+    if publication_status == "published_open_access":
+        publication_control_ok = (
+            "published open access" in first
+            and record["doi"].lower() in first
+            and not any(phrase in text.lower() for phrase in forbidden_prepublication_text)
+            and evidence.get("publication_authorized") is True
+            and evidence.get("remote_actions_performed") is True
+            and evidence_hash_ok
+            and metadata_control_ok
+        )
+    else:
+        publication_control_ok = (
+            "not approved, deposited or published" in first
+            and evidence.get("publication_authorized") is False
+            and evidence.get("remote_actions_performed") is False
+            and evidence_hash_ok
+            and metadata_control_ok
+        )
     checks = {
         "01_authoritative_context": (
             sha256(path) == record["output_sha256"]
@@ -385,13 +422,7 @@ def paper_audit(record: dict, claims: list[dict], report: dict, report_hash: str
         "21_authorship_open_science": all(marker.lower() in text.lower() for marker in ("Maria Smith", "Ernos Labs", "CC BY 4.0", "Apache-2.0", "publication authority")),
         "22_conclusion": bool(conclusion) and all(word in conclusion.lower() for word in ("formal", "evidence", "adverse", "unresolved", "open")),
         "23_limitations_open_frontier": bool(limitations) and all(word in limitations.lower() for word in ("formal", "empirical", "open")),
-        "publication_control": (
-            "not approved, deposited or published" in first
-            and evidence.get("publication_authorized") is False
-            and evidence.get("remote_actions_performed") is False
-            and evidence_hash_ok
-            and metadata_control_ok
-        ),
+        "publication_control": publication_control_ok,
     }
     failures = [name for name, value in checks.items() if not value]
     return {
@@ -429,7 +460,7 @@ def write_outputs(result: dict, json_path: Path, md_path: Path) -> None:
         f"**Lines read:** {result['summary']['lines_read']:,}  ",
         f"**Current claims checked in paper scope:** {result['summary']['claim_bindings_checked']:,}",
         "",
-        "Every candidate was read in full by the gate. Each of the 23 guidance sections has an explicit Boolean result. Exact claim statements, receipts, identifiers and literal records were compared with the current census and preserved sources rather than rewritten by the prose pass.",
+        "Every paper was read in full by the gate. Each of the 23 guidance sections has an explicit Boolean result. Exact claim statements, receipts, identifiers and literal records were compared with the current census and preserved sources rather than rewritten by the prose pass.",
         "",
         "| Paper | Version | Claims | Lines | Result | Failures |",
         "|---|---:|---:|---:|---|---|",
@@ -441,9 +472,9 @@ def write_outputs(result: dict, json_path: Path, md_path: Path) -> None:
     lines.extend(
         [
             "",
-            "## Publication boundary",
+            "## Publication record boundary",
             "",
-            "This audit does not authorise publication. PDF rendering, PDF mechanical and visual QA, release-bundle hashing and Maria Smith's explicit final confirmation remain separate gates.",
+            "This audit performs no remote publication action. PDF rendering, PDF mechanical and visual QA, release-bundle hashing, publication receipts and public-record verification remain separate records.",
         ]
     )
     md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -451,10 +482,12 @@ def write_outputs(result: dict, json_path: Path, md_path: Path) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--manifest", type=Path, default=MANIFEST)
     parser.add_argument("--json-out", type=Path, default=DEFAULT_JSON)
     parser.add_argument("--md-out", type=Path, default=DEFAULT_MD)
     args = parser.parse_args()
-    manifest = json.loads(MANIFEST.read_bytes())
+    manifest_path = args.manifest if args.manifest.is_absolute() else ROOT / args.manifest
+    manifest = json.loads(manifest_path.read_bytes())
     report_path = ROOT / manifest["lean_report_path"]
     report = json.loads(report_path.read_bytes())
     report_hash = sha256(report_path)
@@ -465,8 +498,8 @@ def main() -> int:
         "date": "2026-08-02",
         "guidance_path": "publication guidance.md",
         "guidance_sha256": sha256(GUIDANCE),
-        "manifest_path": MANIFEST.relative_to(ROOT).as_posix(),
-        "manifest_sha256": sha256(MANIFEST),
+        "manifest_path": manifest_path.relative_to(ROOT).as_posix(),
+        "manifest_sha256": sha256(manifest_path),
         "lean_report_path": report_path.relative_to(ROOT).as_posix(),
         "lean_report_sha256": report_hash,
         "papers": papers,
@@ -481,8 +514,8 @@ def main() -> int:
             "guidance_checks": 23 * len(papers),
             "guidance_passes": sum(sum(bool(value) for name, value in paper["checks"].items() if name[:2].isdigit()) for paper in papers),
         },
-        "publication_authorized": False,
-        "remote_actions_performed": False,
+        "publication_authorized": bool(manifest.get("publication_authorized")),
+        "remote_actions_performed": bool(manifest.get("remote_actions_performed")),
     }
     result["status"] = "PASS" if result["summary"]["halts"] == 0 else "HALT"
     json_path = args.json_out if args.json_out.is_absolute() else ROOT / args.json_out

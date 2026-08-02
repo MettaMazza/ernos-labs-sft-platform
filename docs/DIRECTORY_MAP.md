@@ -58,8 +58,8 @@
   current scientific completeness.
 - `publications/superseded/` - older pre-branch publication artifacts.
 - `publications/` - paper protocols, successor plans and publication records.
-- `publications/lean4_verification/` - standalone Lean paper, evidence map,
-  draft metadata and the 20-paper local candidate-suite manifest.
-- `publications/preliminary_toe/successors/v0_2_0/` - exhaustive current-census
-  ToE successor, 17 generated volumes, inventory and content matrix.
+- `publications/lean4_verification/` - published standalone Lean paper,
+  evidence maps, Zenodo receipts and the published-status correction record.
+- `publications/preliminary_toe/successors/v0_2_1/` - published status-corrected
+  exhaustive ToE successor; the v0.2.0 scientific source remains preserved.
 - `tools/` - repository validation and reproducibility tools.

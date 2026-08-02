@@ -88,6 +88,17 @@ def pdf_name(paper: dict) -> str:
 
 def cover_story(paper: dict):
     lean_report_sha256 = file_sha256(LEAN_REPORT)
+    publication_status = paper.get("publication_status", "local_candidate")
+    if publication_status == "published_open_access":
+        doi = paper["doi"]
+        doi_line = f'DOI: <link href="https://doi.org/{doi}">{doi}</link>'
+        status_line = "PUBLISHED OPEN ACCESS<br/>ZENODO RECORD VERIFIED"
+    else:
+        doi_line = "DOI: not assigned - local publication candidate"
+        status_line = (
+            "UNPUBLISHED LOCAL PUBLICATION CANDIDATE<br/>"
+            "MARIA SMITH'S EXPLICIT CONFIRMATION IS REQUIRED BEFORE RELEASE"
+        )
     title_style = ParagraphStyle(
         "SuiteCoverTitle",
         fontName="ToeSerifBold",
@@ -163,7 +174,7 @@ def cover_story(paper: dict):
         Paragraph(
             f"Version {inline_markup(paper['version'])}<br/>"
             "2 August 2026<br/>"
-            "DOI: not assigned - local publication candidate<br/>"
+            f"{doi_line}<br/>"
             "Paper: CC BY 4.0 - Code: Apache-2.0",
             note,
         ),
@@ -174,11 +185,7 @@ def cover_story(paper: dict):
             note,
         ),
         Spacer(1, 8 * mm),
-        Paragraph(
-            "UNPUBLISHED LOCAL PUBLICATION CANDIDATE<br/>"
-            "MARIA SMITH'S EXPLICIT CONFIRMATION IS REQUIRED BEFORE RELEASE",
-            status,
-        ),
+        Paragraph(status_line, status),
     ]
 
 
@@ -205,10 +212,15 @@ def render_one(paper: dict, output_path: Path) -> dict:
                 header = header[:69].rstrip() + "..."
             canvas.drawString(17 * mm, height - 10.2 * mm, header)
             canvas.drawRightString(width - 17 * mm, height - 10.2 * mm, f"v{paper['version']}")
+            footer_status = (
+                "published open access"
+                if paper.get("publication_status") == "published_open_access"
+                else "local candidate"
+            )
             canvas.drawString(
                 17 * mm,
                 9 * mm,
-                "Maria Smith - Ernos Labs - 2026 - CC BY 4.0 - local candidate",
+                f"Maria Smith - Ernos Labs - 2026 - CC BY 4.0 - {footer_status}",
             )
             canvas.drawRightString(width - 17 * mm, 9 * mm, str(document.page))
         canvas.restoreState()
@@ -261,11 +273,21 @@ def render_one(paper: dict, output_path: Path) -> dict:
         "pdf_bytes": output_path.stat().st_size,
         "page_count": page_count,
         "metadata": metadata,
-        "status": "RENDERED_LOCAL_CANDIDATE",
+        "status": (
+            "RENDERED_PUBLISHED"
+            if paper.get("publication_status") == "published_open_access"
+            else "RENDERED_LOCAL_CANDIDATE"
+        ),
     }
 
 
-def write_manifest(records: list[dict], suite_manifest_path: Path) -> None:
+def write_manifest(
+    records: list[dict],
+    suite_manifest_path: Path,
+    render_manifest_path: Path,
+    expected_count: int,
+    publication_authorized: bool,
+) -> None:
     payload = {
         "schema": "sft.lean4_verified_pdf_render_manifest.v1",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -274,22 +296,22 @@ def write_manifest(records: list[dict], suite_manifest_path: Path) -> None:
         "lean_report_sha256": f"sha256:{file_sha256(LEAN_REPORT)}",
         "paper_count": len(records),
         "papers": sorted(records, key=lambda item: item["paper_id"]),
-        "pdf_render_complete": len(records) == 20,
-        "publication_authorized": False,
+        "pdf_render_complete": len(records) == expected_count,
+        "publication_authorized": publication_authorized,
         "remote_actions_performed": [],
-        "status": "PASS" if len(records) == 20 else "IN_PROGRESS",
+        "status": "PASS" if len(records) == expected_count else "IN_PROGRESS",
     }
-    RENDER_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-    RENDER_MANIFEST.write_text(
+    render_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    render_manifest_path.write_text(
         json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 
 
-def load_existing_records() -> dict[str, dict]:
-    if not RENDER_MANIFEST.is_file():
+def load_existing_records(render_manifest_path: Path) -> dict[str, dict]:
+    if not render_manifest_path.is_file():
         return {}
-    payload = json.loads(RENDER_MANIFEST.read_text(encoding="utf-8"))
+    payload = json.loads(render_manifest_path.read_text(encoding="utf-8"))
     return {record["paper_id"]: record for record in payload.get("papers", [])}
 
 
@@ -313,6 +335,7 @@ def main() -> None:
 
     manifest_path = arguments.manifest.resolve()
     output_dir = arguments.output_dir.resolve()
+    render_manifest_path = output_dir / "PDF_RENDER_MANIFEST.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     selected = set(arguments.paper_id)
     papers = [
@@ -324,7 +347,7 @@ def main() -> None:
         raise SystemExit(f"unknown paper IDs: {', '.join(sorted(missing))}")
 
     register_fonts()
-    records = load_existing_records()
+    records = load_existing_records(render_manifest_path)
     for index, paper in enumerate(papers, start=1):
         output_path = output_dir / pdf_name(paper)
         prior = records.get(paper["paper_id"], {})
@@ -334,14 +357,26 @@ def main() -> None:
         print(f"[{index}/{len(papers)}] rendering: {paper['paper_id']}", flush=True)
         record = render_one(paper, output_path)
         records[paper["paper_id"]] = record
-        write_manifest(list(records.values()), manifest_path)
+        write_manifest(
+            list(records.values()),
+            manifest_path,
+            render_manifest_path,
+            len(papers),
+            bool(manifest.get("publication_authorized")),
+        )
         print(
             f"[{index}/{len(papers)}] rendered: {paper['paper_id']} "
             f"({record['page_count']} pages, {record['pdf_sha256']})",
             flush=True,
         )
-    write_manifest(list(records.values()), manifest_path)
-    print(f"render manifest: {RENDER_MANIFEST.relative_to(ROOT)}", flush=True)
+    write_manifest(
+        list(records.values()),
+        manifest_path,
+        render_manifest_path,
+        len(papers),
+        bool(manifest.get("publication_authorized")),
+    )
+    print(f"render manifest: {render_manifest_path.relative_to(ROOT)}", flush=True)
 
 
 if __name__ == "__main__":

@@ -1,13 +1,13 @@
 # Mathematics branch status and review guide
 
-## Lean-verified current local successor — 2 August 2026
+## Lean-verified current published successor — 2 August 2026
 
-Version 1.6.0 is the publication-guidance-compliant local successor for
-this branch. It binds all 332 current registered claims and is included in the
+Version 1.6.1 is the published status-corrected successor for
+this branch. It binds all 341 current registered claims and is included in the
 17-branch Lean 4 PASS. The manuscript is
-[`FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6.md`](../publications/successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6.md). It is prepared for review but has no
-new DOI and is not published; the 29 July release below remains the most recent
-published version until Maria Smith explicitly authorises publication. Earlier
+[`FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6_1.md`](../publications/successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6_1.md), published at
+[10.5281/zenodo.21761651](https://doi.org/10.5281/zenodo.21761651). This patch
+corrects only the false prepublication wording. Earlier
 open-work wording below is retained as historical chronology and does not
 override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 

@@ -31,12 +31,12 @@ The Zenodo tool invokes this stronger gate before any `--publish` action.
 
 ## Current scientific status
 
-The official ordered model census contains **2,765 admitted V3 claims** across
-17 machine branch identifiers. It reconciles 895,830 candidates and decisions,
-2,765 unique survivors and 11,060 controls. Admission remains valid only at
+The official ordered model census contains **2,777 admitted V3 claims** across
+17 machine branch identifiers. It reconciles 898,902 candidates and decisions,
+2,777 unique survivors and 11,108 controls. Admission remains valid only at
 each claim's registered formal and empirical boundary.
 
-The independent Lean 4.32.0 layer passed all 2,765 current claims with no issue
+The independent Lean 4.32.0 layer passed all 2,777 current claims with no issue
 and natively proved the two-class operational root's unique survivor. This is
 additional read-only verification; it does not change the engine or the
 authority surface and cannot issue an admission receipt.
@@ -49,11 +49,11 @@ published foundations and integrate every later admitted return claim in the 2
 August local successor suite. The complete current model is not being described
 as missing a scientific branch.
 
-Nineteen existing paper successors and one standalone Lean paper are local
-publication candidates. The source-level `publication guidance.md` gate passes
-20/20. PDF, heavy replay, release-bundle and author-confirmation gates remain
-publication work rather than missing scientific claims. The canonical status
-is `audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`.
+Seventeen existing papers and the standalone Lean paper are published in their
+retained Zenodo concept DOI lineages. Their status-corrected patch versions
+remove the false prepublication wording without changing scientific content.
+The canonical public record is
+`publications/lean4_verification/PUBLISHED_STATUS_CORRECTION_ZENODO_PUBLICATION_RECORD_2026-08-02.json`.
 
 ## Current publication command
 

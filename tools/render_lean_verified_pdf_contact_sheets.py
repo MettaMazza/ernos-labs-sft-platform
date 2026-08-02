@@ -179,7 +179,7 @@ def main() -> None:
         "key_page_sheet_count": len(records),
         "papers": records,
         "visual_review_status": "AWAITING_REVIEW",
-        "publication_authorized": False,
+        "publication_authorized": bool(manifest.get("publication_authorized")),
         "remote_actions_performed": [],
     }
     manifest_path = output_dir / "CONTACT_SHEET_MANIFEST.json"

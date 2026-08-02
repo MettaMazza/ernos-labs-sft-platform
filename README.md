@@ -1,18 +1,18 @@
 # From Fold to Consciousness
 
 > **Current programme checkpoint (2 August 2026):** the complete current V3
-> corpus contains 2,765 registered, model-admitted claims across 17 machine
-> branch identifiers, generated from 895,830 candidates with 2,765 unique
-> survivors and 11,060 passed controls. The independent Lean 4 whole-model
-> verifier passed all 2,765 claims with no issue. Exact scope, branch totals,
+> corpus contains 2,777 registered, model-admitted claims across 17 machine
+> branch identifiers, generated from 898,902 candidates with 2,777 unique
+> survivors and 11,108 passed controls. The independent Lean 4 whole-model
+> verifier passed all 2,777 claims with no issue. Exact scope, branch totals,
 > verification boundaries and publication status are reconciled in
 > [`audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 >
-> **Lean-verified publication suite:** 19 existing paper lineages have local
-> successors and the standalone Lean verification paper is prepared as version
-> 1.0.0. The source-level publication-guidance gate passes 20/20 candidates.
-> These files are not published and no DOI, push, upload or release action is
-> authorised. See
+> **Lean-verified publication suite:** the 17 existing papers and the standalone
+> Lean verification paper are published in their retained Zenodo concept DOI
+> lineages. Status-corrected patch versions remove the erroneous prepublication
+> wording without changing scientific content. The Lean paper is version 1.0.1
+> at [10.5281/zenodo.21761665](https://doi.org/10.5281/zenodo.21761665). See
 > [`publications/lean4_verification/README.md`](publications/lean4_verification/README.md).
 >
 > **V3 publication catalogue:** the sixteen authoritative clean-room papers and
