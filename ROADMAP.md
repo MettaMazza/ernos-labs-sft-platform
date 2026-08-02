@@ -1,5 +1,24 @@
 # Dependency-ordered reconstruction roadmap
 
+## Current completion and publication-preparation boundary — 2 August 2026
+
+The scientific model is complete to the current registered census: 2,765
+model-admitted claims, 895,830 candidates and decisions, 2,765 unique survivors
+and 11,060 controls across 17 machine branch identifiers. The independent Lean
+4 layer passed the whole ordered census with no issue and natively proved the
+two-class operational root's unique survivor. The complete current status is
+[`audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+Nineteen existing paper successors and one standalone Lean paper are prepared
+locally. Remaining roadmap work is publication preparation: current heavy
+engine replay, PDF rendering and visual QA, bundle finalisation, consistency
+audit and Maria Smith's explicit confirmation. It is not unfinished scientific
+branch construction. No remote action is authorised.
+
+The dated execution narrative below is retained as historical programme
+chronology. Its earlier counts and “active branch” language do not override the
+2 August status above.
+
 ## Two-layer branch programme
 
 Every scientific branch now has a dedicated roadmap under

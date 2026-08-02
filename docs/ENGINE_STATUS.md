@@ -31,44 +31,29 @@ The Zenodo tool invokes this stronger gate before any `--publish` action.
 
 ## Current scientific status
 
-The official model census contains 504 admitted V3 claims. Admission remains
-valid only at each claim's registered formal and empirical boundary.
+The official ordered model census contains **2,765 admitted V3 claims** across
+17 machine branch identifiers. It reconciles 895,830 candidates and decisions,
+2,765 unique survivors and 11,060 controls. Admission remains valid only at
+each claim's registered formal and empirical boundary.
 
-The repository also contains eight published v1 branch papers. Their files,
-DOIs, evidence maps, manifests and receipts remain immutable archival evidence.
-Their former designation as complete current V3 branches is withdrawn because
-the full prior-result owner and same-strength audit is open.
+The independent Lean 4.32.0 layer passed all 2,765 current claims with no issue
+and natively proved the two-class operational root's unique survivor. This is
+additional read-only verification; it does not change the engine or the
+authority surface and cannot issue an admission receipt.
 
-Foundation has since completed the stronger successor route. Its full
-763-entry branch review assigns 32 atomic Foundation obligations and closes all
-32; its current inventory contains 16 admitted theorems and its successor paper
-covers all 16. The later branches remain open until they independently satisfy
-the same gate.
+The earlier 504-claim and branch-reopening text was a superseded live-status
+checkpoint. Its dated audit and all published sources remain historical
+evidence, but it is not the current census. Mathematics through Materials have
+complete dated current-standard papers. The downstream papers preserve their
+published foundations and integrate every later admitted return claim in the 2
+August local successor suite. The complete current model is not being described
+as missing a scientific branch.
 
-The blocking counts are:
-
-- V1: 356 registered rows; 346 unmapped; 351 without same-strength closure.
-- V2: 407 registered steps; 286 unmapped; 400 without same-strength closure.
-- Physics: 160 live claims; Physics Paper 001 covers 140.
-
-Consequently:
-
-- Foundation is current and closed at its registered formal boundaries.
-- Mathematics is reopened for owner and same-strength reconciliation.
-- Information Science is reopened for owner and same-strength reconciliation.
-- Classical Computation is reopened for owner and same-strength
-  reconciliation.
-- Quantum Computation is reopened for owner and same-strength reconciliation.
-- Physics is open for the complete physical-value reconstruction and paper
-  replacement.
-- Chemistry is open for complete reconciliation and corrected Physics
-  dependency placement.
-- Materials is open for complete reconciliation.
-- all later branches remain unstarted or open according to their own ledgers.
-
-“Reopened” does not revoke admitted claims. It means the evidence is not yet
-sufficient for the stronger statement that the entire branch is closed against
-all registered prior and current knowledge.
+Nineteen existing paper successors and one standalone Lean paper are local
+publication candidates. The source-level `publication guidance.md` gate passes
+20/20. PDF, heavy replay, release-bundle and author-confirmation gates remain
+publication work rather than missing scientific claims. The canonical status
+is `audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`.
 
 ## Current publication command
 
@@ -76,10 +61,11 @@ all registered prior and current knowledge.
 python3 tools/verify_publication_compliance.py
 ```
 
-Foundation presently reports `READY`; the later listed branches report
-`BLOCKED`. A `READY` result is lawful only after the categorical-owner ledger is complete, that branch has no
-same-strength open result, the manuscript covers the live census exactly and
-all ordinary paper evidence checks pass.
+This command remains the authoritative branch compliance route. Its result must
+be read against the current census and current versioned paper evidence maps; a
+historical `READY` or `BLOCKED` output cannot substitute for a fresh run. Lean
+PASS is an independent publication evidence layer, not a bypass around this
+gate.
 
 ## Physics empirical correction
 

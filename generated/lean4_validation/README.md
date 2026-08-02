@@ -18,21 +18,21 @@ current ordered census:
 
 | Surface | Verified result |
 |---|---:|
-| Claims and proof-bearing accepted gates | 2,765/2,765 |
-| Source-bound claims | 2,765/2,765 |
-| Candidates | 895,830 |
-| Decisions | 895,830 |
-| Controls | 11,060 |
+| Claims and proof-bearing accepted gates | 2,777/2,777 |
+| Source-bound claims | 2,777/2,777 |
+| Candidates | 898,902 |
+| Decisions | 898,902 |
+| Controls | 11,108 |
 | Branch identifiers | 17 |
 | Issues | 0 |
 
 The machine report is `reports/whole_model_validation.json`, SHA-256
-`sha256:63f7939a6632961448bc9e686c65f261181079a565cfacb07b276330d111e1e6`.
+`sha256:6b6a5a9a9a0b74687a6f97fb3b4fcc7455968e35c82395290837cda60d7501cf`.
 The standalone publication candidate and its evidence map are under
 `publications/lean4_verification/`.
 
 The root theorem and generic gate implications are native Lean propositions.
-The other 2,764 scientific statements are checked as complete registered
+The other 2,776 scientific statements are checked as complete registered
 artifacts by the Lean executable, not misrepresented as bespoke native Lean
 theorems. The PASS supports formal coherence, current-census exhaustiveness,
 unique-survivor enforcement and provenance integrity. It does not replace

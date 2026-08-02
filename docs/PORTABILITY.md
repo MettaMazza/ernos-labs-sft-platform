@@ -44,3 +44,13 @@ through the engine.
 The repository includes a continuous-validation matrix for the three host
 families. A passing matrix establishes implementation portability of the tested
 engine version; it does not establish a scientific derivation.
+
+## Lean 4 verification host boundary
+
+The independent whole-model verifier pins `leanprover/lean4:v4.32.0` in
+`generated/lean4_validation/lean-toolchain`. Its local `.elan/` and `.lake/`
+directories are build infrastructure and do not alter the model. The checked-in
+`run_validation.sh` builds and checks the complete current census. The source
+binding gate uses a disclosed read-only Python bridge for registered factories;
+therefore this version is reproducible on the tested macOS host but is not yet
+claimed as a measured cross-platform Lean runtime distribution.

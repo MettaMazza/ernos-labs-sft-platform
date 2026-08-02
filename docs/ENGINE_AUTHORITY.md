@@ -26,6 +26,22 @@ on the claim's evidence class:
 This does not exempt mathematics from external validation or exempt empirical
 science from derivation. It assigns the appropriate external object to each.
 
+## Independent Lean verification is not admission authority
+
+The project under `generated/lean4_validation/` is a read-only verifier outside
+the authority surface. It natively proves the registered two-class operational
+root and generic gate implications, then checks every current claim's identity,
+source binding, dependencies, candidates, decisions, unique survivor, controls,
+empirical boundary, certificate and admitted receipt. Its 2 August 2026 report
+passes 2,765/2,765 claims.
+
+Lean cannot admit a claim, write or replace a receipt, alter a status or weaken
+an engine gate. The disclosed Python source-binding probe only instantiates
+registered source factories and returns data to Lean. A Lean failure blocks the
+Lean verification claim; a Lean pass provides independent evidence about the
+existing model. Neither result changes the single admission authority defined
+here.
+
 ## Engine stages
 
 1. **Registration gate** - the root theorem has no premise or dependency; every

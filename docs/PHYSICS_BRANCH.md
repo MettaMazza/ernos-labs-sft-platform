@@ -1,6 +1,17 @@
 # Physics branch status
 
-## Current complete-field publication — 29 July 2026
+## Lean-verified current local successor — 2 August 2026
+
+Version 1.4.0 is the publication-guidance-compliant local successor for
+this branch. It binds all 368 current registered claims and is included in the
+17-branch Lean 4 PASS. The manuscript is
+[`FROM_FOLD_TO_PHYSICS_PAPER_001_V1_4.md`](../publications/successors/physics/FROM_FOLD_TO_PHYSICS_PAPER_001_V1_4.md). It is prepared for review but has no
+new DOI and is not published; the 29 July release below remains the most recent
+published version until Maria Smith explicitly authorises publication. Earlier
+open-work wording below is retained as historical chronology and does not
+override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+## Most recent published complete-field release — 29 July 2026
 
 Status: `published_v1_3_complete_field_current_evidence_closed_extension_open`.
 
@@ -44,12 +55,13 @@ therefore contains 160 admitted claims. The inverse-alpha derivation and CODATA
 check are categorically Physics results even though their first exhaustive
 paper treatment appeared downstream in the Chemistry paper.
 
-That statement is exhaustive only for the declared v1 inventory. It is not a
+That statement was exhaustive only for the declared v1 inventory. It did not
 claim that every physical derivation in the authoritative 407-step V2 corpus
-has already been independently reconstructed in V3. The broader reconciliation
-is active and is a blocking completion requirement, not optional historical
-context. Every V1/V2 physical result must be independently regenerated and
-engine-admitted in V3 before the final Physics branch can be called complete.
+had already been independently reconstructed in V3. At that checkpoint, the
+broader reconciliation was an active blocking completion requirement, not
+optional historical context. Every V1/V2 physical result had to be
+independently regenerated and engine-admitted in V3 before the final Physics
+branch could be called complete.
 On 2026-07-24 V3 independently admitted generator three,
 three-dimensional stability, boundary rank two and inverse-square dilution,
 then admitted a separate post-derivation experimental comparison. Those new
@@ -86,13 +98,15 @@ forces vacuum `11/16`, matter `5/16`, baryon `25/512` and cold dark `135/512`;
 all four pass together after exact Hubble-interval propagation. This closes V2
 Steps 15 and 201 and V1 VIII-12 through a disclosed successor result.
 
-The v1 inventory is no longer eligible to be described as the current complete
-Physics branch. A successor paper is blocked until every V1/V2 physical value
+The v1 inventory was no longer eligible to be described as the complete
+Physics branch. A successor paper was blocked until every V1/V2 physical value
 and discriminator is registered as a prior observation, mapped to its owning
 Physics claim, independently reconstructed or explicitly failed, sealed before
 external measurement, checked with units and uncertainty where applicable, and
 traced to the foundational theorem. A relation evaluated from measured inputs
-does not by itself count as forcing the absolute input values.
+does not by itself count as forcing the absolute input values. Those successor
+conditions were subsequently met by the complete-field release and are carried
+forward into the version 1.4.0 local publication candidate.
 
 Release contents:
 

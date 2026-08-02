@@ -1,6 +1,17 @@
 # Mathematics branch status and review guide
 
-## Current complete-field publication — 29 July 2026
+## Lean-verified current local successor — 2 August 2026
+
+Version 1.6.0 is the publication-guidance-compliant local successor for
+this branch. It binds all 332 current registered claims and is included in the
+17-branch Lean 4 PASS. The manuscript is
+[`FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6.md`](../publications/successors/mathematics/FROM_FOLD_TO_MATHEMATICS_PAPER_001_V1_6.md). It is prepared for review but has no
+new DOI and is not published; the 29 July release below remains the most recent
+published version until Maria Smith explicitly authorises publication. Earlier
+open-work wording below is retained as historical chronology and does not
+override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+## Most recent published complete-field release — 29 July 2026
 
 Status: `published_v1_5_complete_field_current_evidence_closed_extension_open`.
 
@@ -41,8 +52,10 @@ The archived frozen inventory is
 It has no unclassified or frontier obligation. The twelve grammars contain 7,424
 generated candidates and exactly twelve survivors. Every claim is
 depth-independently closed, model-admitted and independently replicated at its
-registered boundary. Current branch completion remains blocked until every
-Mathematics-owned V1/V2 result has a same-strength V3 disposition.
+registered boundary. At that archived checkpoint, branch completion remained
+blocked until every Mathematics-owned V1/V2 result had a same-strength V3
+disposition. The later complete-field release and version 1.6.0 local successor
+record that closure.
 
 ## Exact domain
 

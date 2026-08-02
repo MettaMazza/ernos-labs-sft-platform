@@ -10,6 +10,11 @@ Read:
 4. `docs/CLAIM_LIFECYCLE.md`; and
 5. `docs/EMPIRICAL_METHOD.md` for natural-science work.
 
+The current model and publication boundary is recorded in
+`audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`. The independent Lean project
+under `generated/lean4_validation/` is a read-only verifier, not a second claim
+admission route.
+
 ## Submission route
 
 The admission engine is immutable for contributors and automated agents. Do
@@ -36,6 +41,12 @@ complete 1,319-claim run took **01:19:13.740** on an Apple M3 Ultra Mac with
 several hours on ordinary laptops. A run is complete only when it prints
 `SFT COMPLETE VERIFICATION: PASS`. See `docs/VERIFICATION.md` for the dated
 host, corpus, test and measurement record.
+
+That timed record is historical and must not be described as a 2,765-claim
+replay. For a fast independent check of the complete current ordered census,
+run `generated/lean4_validation/run_validation.sh`. Its current PASS covers
+2,765 claims, 895,830 candidates and decisions and 11,060 controls. It does not
+replace `python3 -m sft verify-all`, admit a claim or establish empirical truth.
 
 1. Open a claim registration without encoding the desired answer.
 2. Name dependencies, provenance classes, grammar and exact boundary.

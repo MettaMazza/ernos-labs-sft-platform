@@ -1,5 +1,18 @@
 # Complete verification command
 
+## Current independent Lean 4 whole-model result
+
+The read-only Lean 4.32.0 project under `generated/lean4_validation/` passes the
+complete 2 August 2026 ordered census: 2,765/2,765 claims, 895,830 candidates
+and decisions, 11,060 controls, 17 branch identifiers and no issue. Its report
+is `generated/lean4_validation/reports/whole_model_validation.json`, SHA-256
+`sha256:63f7939a6632961448bc9e686c65f261181079a565cfacb07b276330d111e1e6`.
+
+Lean natively proves the exact two-class operational root and the generic gate
+implications. It checks the remaining claim content as registered artifacts.
+This independent layer neither admits claims nor replaces the authoritative
+heavy replay below.
+
 Run from the repository root on macOS or Linux:
 
 ```text
@@ -50,7 +63,9 @@ The verifier prints progress during long phases. A run is complete only when it
 prints `SFT COMPLETE VERIFICATION: PASS`; elapsed time alone is never evidence
 of success.
 
-This is the sole public validation route. It performs, in order:
+This is the sole authoritative admission-engine replay route. The Lean layer
+above is an additional independent verification route and cannot write an
+engine receipt. The authoritative replay performs, in order:
 
 1. repository and policy validation;
 2. a generated external-measurement coverage audit that fails if an empirical

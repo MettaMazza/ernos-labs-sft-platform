@@ -91,3 +91,16 @@ A reviewer must be able to answer yes to all applicable questions:
     downstream branch consumes or publishes it?
 
 If any applicable answer is no, the claim is not admitted at that status.
+
+## Independent Lean post-admission verification
+
+After admission, the Lean 4 layer independently checks the complete ordered
+census as read-only data. It natively proves the two-class operational root and
+generic gate implications, then requires twelve accepted gates for each live
+claim: identity, source binding, dependency closure, candidate completeness,
+decision coverage, exactly one survivor, minimality, named-shape uniqueness,
+controls, empirical boundary, certificate binding and admitted receipt.
+
+A Lean PASS is additional verification of an existing status. It cannot emit a
+receipt, admit a rejected package, reclassify empirical evidence or replace the
+engine lifecycle above.

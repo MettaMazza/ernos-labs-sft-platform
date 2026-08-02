@@ -3,6 +3,16 @@
 Status: binding editorial and evidence plan; scientific successors remain
 blocked by `tools/verify_publication_compliance.py`.
 
+## Current execution status — 2 August 2026
+
+Nineteen existing paper lineages now have new local successors integrating the
+complete 2,765-claim census and the independent Lean 4 PASS. A standalone Lean
+verification paper is prepared as version 1.0.0. The 20-paper source suite
+passes all 23 applicable sections of `publication guidance.md` across 468,146
+lines. This completes the manuscript-reconstruction phase without changing any
+historical release. Rendering, heavy replay, bundle finalisation and Maria
+Smith's explicit publication confirmation remain separate gates.
+
 ## Publication rule
 
 A successor is a new exhaustive academic paper, not a silent edit of a DOI

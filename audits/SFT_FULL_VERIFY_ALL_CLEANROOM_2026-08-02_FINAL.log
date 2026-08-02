@@ -1,0 +1,35 @@
+[SFT verify-all] repository integrity: start
+[SFT verify-all] repository integrity: pass
+[SFT verify-all] external-measurement coverage: start
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/__main__.py", line 5, in <module>
+    main()
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/cli.py", line 73, in main
+    report = verify_all(ROOT, progress=progress)
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/verification.py", line 295, in verify_all
+    measurement_coverage = require_external_measurement_coverage(root)
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/external_coverage.py", line 105, in require_external_measurement_coverage
+    report = audit_external_measurement_coverage(root)
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/external_coverage.py", line 47, in audit_external_measurement_coverage
+    executions = {entry["claim_id"]: _load_execution(root, entry) for entry in entries}
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/external_coverage.py", line 47, in <dictcomp>
+    executions = {entry["claim_id"]: _load_execution(root, entry) for entry in entries}
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/verification.py", line 180, in _load_execution
+    specification.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/claims/SFT-CHEM-CATALYTIC-TURNOVER-CYCLE-FREQUENCY-010/execution.py", line 4, in <module>
+    from sft.chemistry.catalytic_turnover_batch_v1 import CATALYTIC_TURNOVER_SPEC, IDENTITY_PATH, INVENTORY_PATH, PRIMARY_PATH, SOURCE_FILES, SPEC_PATH, TARGET_PATH
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/chemistry/catalytic_turnover_batch_v1.py", line 47, in <module>
+    if hash_file(ROOT / path) != expected:
+  File "/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/sft/engine/source.py", line 27, in hash_file
+    with path.open("rb") as handle:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mettamazza/Desktop/.sft-verify-all-cleanroom-p1lrsoyq/experiments/external_sources/chemistry/snapshots/kin-010-catalytic-turnover-v1/supplementary-data.zip'

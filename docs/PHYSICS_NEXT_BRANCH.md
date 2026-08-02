@@ -1,14 +1,22 @@
 # Physics branch reconstruction status
 
-Status: `open_blocking`; Physics Branch Paper 001 is preserved as a published
-archival artifact but is superseded for current-completeness claims.
+Status: `superseded_historical_plan`.
 
-## Why Physics is open
+This file preserves the reconstruction plan that preceded the complete-field
+Physics successors. Physics now has 368/368 current registered claims, a local
+version 1.4.0 successor and inclusion in the 2 August 2026 Lean 4 whole-model
+PASS. It is not a current blocker. See
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 
-The archived paper contains 132 required Physics claims and eight supplemental
-validation claims. The live corpus contains 160 Physics claims. Twenty live
-claims are therefore absent from the paper, and the larger V1/V2 physical-value
-reconciliation remains incomplete.
+The sections below are retained as historical completion criteria and must not
+be read as the current state.
+
+## Historical reason Physics was open
+
+At the time of this plan, the archived paper contained 132 required Physics
+claims and eight supplemental validation claims, while the then-live corpus
+contained 160. Twenty claims were therefore absent from that paper and the
+larger V1/V2 physical-value reconciliation was incomplete.
 
 The earlier publication gate verified the frozen inventory against its receipts
 and manuscript. It did not prove that the frozen inventory included every

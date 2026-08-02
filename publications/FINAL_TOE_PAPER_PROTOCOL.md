@@ -1,11 +1,15 @@
 # Final Theory of Everything paper protocol
 
-Current status, 29 July 2026: the final paper is not yet ready. The complete
-programme ledger is
-[`../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
-Biology is the active full-field branch at 82/424 obligations; the downstream
-full-field censuses, global one-owner lineage merge, canonical publication
-reconciliation and final heavy verification remain outstanding.
+Current status, 2 August 2026: the scientific model is complete to its current
+registered 2,765-claim census. The independent Lean 4 layer passed the complete
+ordered model with no issue and the exhaustive ToE successor version 0.2.0 is a
+local publication candidate. The authoritative ledger is
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+The final paper's remaining work is publication validation, not construction
+of a missing model branch: current heavy engine replay, PDF rendering and
+visual QA, local bundle and checksum finalisation, cross-file audit and Maria
+Smith's explicit approval. None of those steps authorises remote publication.
 
 The final TOE paper is assembled only after every registered branch has a
 completed comprehensive branch paper and the global census has no unclassified
@@ -22,6 +26,8 @@ The final publication gate verifies:
 - every source, paper and evidence-map hash;
 - comprehensive derivation coverage;
 - cross-branch consistency controls; and
+- the independent Lean report, its formal-versus-artifact scope and its exact
+  bound census and execution-manifest identities;
 - exact statement of any boundary that remains outside the frozen inventory.
 
 No summary paper can replace or silently omit the branch papers. The final paper

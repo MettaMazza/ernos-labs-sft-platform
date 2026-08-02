@@ -8,8 +8,16 @@ complete current V3 scientific account.
 The contained branch directories preserve the published compatibility sources
 for all fifteen foundations. Newer complete-field successor manuscripts may
 also exist locally under `publications/successors/`; their presence does not
-constitute publication. The current programme ledger is
+constitute publication. The preserved 29 July programme ledger is
 [`../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+
+The current successor ledger is now
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+The Lean-verified 20-paper local suite is indexed by
+`publications/lean4_verification/LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json`.
+It creates new versioned files and never rewrites the archival sources named
+above. Local preparation, rendering or a passing audit does not constitute
+publication.
 
 New work follows these locations:
 
@@ -19,6 +27,8 @@ New work follows these locations:
 - successor editorial requirements: `publications/SUCCESSOR_PAPER_RECONSTRUCTION_PLAN.md`;
 - successor manuscript generation: only after the branch's full 763-entry
   ownership review, atomic same-strength closure and current gate pass; and
+- independent Lean verification evidence: read-only, versioned and explicitly
+  separated from engine admission authority; and
 - immutable released artifacts: existing DOI/release records remain unchanged.
 
 No new successor manuscript may silently overwrite a v1 paper. At successor

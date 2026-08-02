@@ -1,6 +1,17 @@
 # Information Science branch status and review guide
 
-## Current complete-field publication — 29 July 2026
+## Lean-verified current local successor — 2 August 2026
+
+Version 1.5.0 is the publication-guidance-compliant local successor for
+this branch. It binds all 262 current registered claims and is included in the
+17-branch Lean 4 PASS. The manuscript is
+[`FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_5.md`](../publications/successors/information_science/FROM_DISTINCTION_TO_INFORMATION_PAPER_001_V1_5.md). It is prepared for review but has no
+new DOI and is not published; the 29 July release below remains the most recent
+published version until Maria Smith explicitly authorises publication. Earlier
+open-work wording below is retained as historical chronology and does not
+override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+## Most recent published complete-field release — 29 July 2026
 
 Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
 
@@ -43,8 +54,10 @@ It has no unclassified or frontier obligation. The twelve registered grammars
 contain 11,776 generated candidates and exactly twelve survivors. Every claim
 has depth-independent closure at its registered boundary, a model-admitted
 engine receipt, four passing adverse controls and an implementation-distinct
-validation certificate. Current branch completion remains blocked until every
-Information-Science-owned V1/V2 result has a same-strength V3 disposition.
+validation certificate. At that archived checkpoint, branch completion
+remained blocked until every Information-Science-owned V1/V2 result had a
+same-strength V3 disposition. The later complete-field release and version
+1.5.0 local successor record that closure.
 
 ## Exact domain and central result
 

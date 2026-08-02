@@ -1,6 +1,13 @@
 # Next branch plan: Formal Computation
 
-Status: `planned`; no Formal Computation claim is registered or admitted yet.
+Status: `superseded_historical_plan`.
+
+This plan predates the completed Computation branch. The current registered
+Computation corpus contains 371 model-admitted claims, is included in the Lean
+4 whole-model PASS and has a local version 1.5.0 successor manuscript. The
+material below is preserved as historical planning context, not as an open
+branch or missing part of the model. See
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 
 Formal Computation is the next dependency branch after the frozen Information
 Science inventory. Its purpose is to derive what a computation and a universal

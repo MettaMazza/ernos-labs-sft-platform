@@ -1,7 +1,7 @@
 # Published branch archive and current reconstruction status
 
-> **Live programme status:** the authoritative 29 July 2026 working-tree ledger
-> is [`audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+> **Live programme status:** the authoritative 2 August 2026 working-tree ledger
+> is [`audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 > This directory records published archival boundaries and must not be used to
 > erase newer admitted local continuation work or to imply that an unissued
 > successor has already been published.
@@ -12,6 +12,14 @@ release references. See
 directory name does not assert current scientific completeness.
 
 ## Current boundary and published roadmap successors
+
+The current model contains 2,765 admitted claims and passed the independent
+Lean 4 whole-model verifier. Nineteen existing paper lineages now have local
+versioned successors, and the standalone Lean verification paper is prepared as
+version 1.0.0. The source-level publication-guidance gate passes all 20 local
+candidates. Their canonical manifest is
+[`LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json`](../lean4_verification/LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json).
+None of those local candidates is published, deposited or assigned a new DOI.
 
 The papers below are real published, citable archival records. Their claim
 packages and receipts remain immutable. All fifteen registered branch

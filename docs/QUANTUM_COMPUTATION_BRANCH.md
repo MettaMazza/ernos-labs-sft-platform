@@ -1,6 +1,17 @@
 # Reversible and Quantum Computation branch status and review guide
 
-## Current complete-field publication — 29 July 2026
+## Lean-verified current local successor — 2 August 2026
+
+Version 1.5.0 is the publication-guidance-compliant local successor for
+this branch. It binds all 289 current registered claims and is included in the
+17-branch Lean 4 PASS. The manuscript is
+[`THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_5.md`](../publications/successors/quantum_computation/THE_QUANTUM_FOLD_MACHINE_PAPER_001_V1_5.md). It is prepared for review but has no
+new DOI and is not published; the 29 July release below remains the most recent
+published version until Maria Smith explicitly authorises publication. Earlier
+open-work wording below is retained as historical chronology and does not
+override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+## Most recent published complete-field release — 29 July 2026
 
 Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
 
@@ -29,9 +40,10 @@ correspondence; and computational limits.
 
 The grammars contain 5,376 candidates and exactly 21 survivors. Every claim is
 depth-independently closed, controlled, independently replicated and admitted
-at their registered boundaries. Current branch completion remains blocked until
-every Quantum-Computation-owned V1/V2 result has a same-strength V3
-disposition.
+at their registered boundaries. At that archived checkpoint, branch completion
+remained blocked until every Quantum-Computation-owned V1/V2 result had a
+same-strength V3 disposition. The later complete-field release and version
+1.5.0 local successor record that closure.
 The operational kernel uses exact Fold words, finite phase-label cycles,
 pair-cell joint support, predecessor fibres, bijections and complete observation
 records. It imports no complex amplitude, imaginary or irrational proof value,

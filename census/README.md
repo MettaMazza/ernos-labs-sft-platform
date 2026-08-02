@@ -1,9 +1,11 @@
 # Fundamental knowledge census
 
-As of the 29 July 2026 working-tree checkpoint, `claims.json` contains 2,751
-registered, model-admitted V3 claims. The branch-level interpretation of that
-live census is indexed in
-[`../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+As of the 2 August 2026 working-tree checkpoint, `claims.json` contains 2,765
+registered, model-admitted V3 claims across 17 machine branch identifiers. The
+independent Lean 4 report reconciles 895,830 candidates and decisions, 11,060
+controls and no issue. The branch-level interpretation and exact verification
+boundary are indexed in
+[`../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 
 `claims.json` is the machine-readable global index of V3 claims admitted through
 the engine. Earlier-corpus claims are not automatically admitted into it.

@@ -41,5 +41,13 @@ The earlier claim-set publication receipts remain immutable evidence that the
 archived papers covered their declared inventories. They are not substitutes
 for this stronger current-knowledge compliance result.
 
+For the 2 August 2026 successor suite, the paper must additionally bind the
+current Lean whole-model report and state its exact scope: the root and generic
+gate implications are native Lean theorems; the remaining scientific content
+is checked as complete registered artifacts. Lean verification cannot replace
+the engine gate, empirical evidence, current-compliance gate or branch
+ownership. A mismatch between the paper, census, report or evidence-map hash
+halts publication preparation.
+
 Passing this gate establishes scientific readiness. Pushing or publishing still
 requires Maria Smith's explicit authorization.

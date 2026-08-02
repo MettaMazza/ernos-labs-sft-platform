@@ -1,6 +1,17 @@
 # Classical Computation branch status and review guide
 
-## Current complete-field publication — 29 July 2026
+## Lean-verified current local successor — 2 August 2026
+
+Version 1.5.0 is the publication-guidance-compliant local successor for
+this branch. It binds all 373 current registered claims and is included in the
+17-branch Lean 4 PASS. The manuscript is
+[`AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_5.md`](../publications/successors/computation/AFTER_TURING_THE_FOLD_MACHINE_PAPER_001_V1_5.md). It is prepared for review but has no
+new DOI and is not published; the 29 July release below remains the most recent
+published version until Maria Smith explicitly authorises publication. Earlier
+open-work wording below is retained as historical chronology and does not
+override the [2 August current programme ledger](../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
+
+## Most recent published complete-field release — 29 July 2026
 
 Status: `published_v1_4_complete_field_current_evidence_closed_extension_open`.
 
@@ -36,8 +47,9 @@ The archived grammars contain 28,928 candidates and exactly 113 survivors.
 Every claim has a structural-One base/successor certificate, four passing
 controls, an independent validator and a model-admitted receipt. The frozen
 inventory contains no unclassified or frontier row at that declared boundary.
-The current branch remains open until every Computation-owned V1/V2 result has
-a same-strength V3 disposition.
+At that archived checkpoint, the branch remained open until every
+Computation-owned V1/V2 result had a same-strength V3 disposition. The later
+complete-field release and version 1.5.0 local successor record that closure.
 
 ## Exact boundary
 

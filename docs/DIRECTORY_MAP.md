@@ -41,7 +41,8 @@
 - `census/` - machine-readable global obligation and status registry.
 - `experiments/` - development observations, registrations, sealed predictions,
   measurements and unfavorable controls.
-- `generated/` - independent generated certificates.
+- `generated/` - independent generated certificates and the read-only Lean 4
+  whole-model verification project under `generated/lean4_validation/`.
 - `tests/` - implementation, proof, control and integration tests.
 - `frontier/` - openly unclosed questions and their admission requirements.
 
@@ -57,4 +58,8 @@
   current scientific completeness.
 - `publications/superseded/` - older pre-branch publication artifacts.
 - `publications/` - paper protocols, successor plans and publication records.
+- `publications/lean4_verification/` - standalone Lean paper, evidence map,
+  draft metadata and the 20-paper local candidate-suite manifest.
+- `publications/preliminary_toe/successors/v0_2_0/` - exhaustive current-census
+  ToE successor, 17 generated volumes, inventory and content matrix.
 - `tools/` - repository validation and reproducibility tools.

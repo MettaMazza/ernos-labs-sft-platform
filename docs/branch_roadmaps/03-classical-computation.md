@@ -1,4 +1,14 @@
 # Classical Computational Science branch roadmap
+## Lean-verified current checkpoint — 2 August 2026
+
+This branch is complete to its current registered census and is included in the
+2,765-claim, 17-branch Lean 4 PASS and the local 20-paper successor suite. The
+model remains open only to later lawful versioned extension. Any earlier
+open-work or forward-plan wording below is retained as chronology and does not
+override the current ledger in
+[`../../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md) or the local suite manifest in
+[`../../publications/lean4_verification/LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json`](../../publications/lean4_verification/LEAN4_VERIFIED_PUBLICATION_SUITE_MANIFEST.json).
+
 
 ## Current receipt-backed status — 2026-07-29
 

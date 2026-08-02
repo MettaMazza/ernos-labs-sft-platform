@@ -1,18 +1,17 @@
 # Branch reconstruction and field-completion programme
 
-## Current programme checkpoint — 29 July 2026
+## Current programme checkpoint — 2 August 2026
 
-The live local corpus contains **2,751 registered, model-admitted claims**.
-Mathematics, Information Science, Classical Computation, Reversible and Quantum
-Computation, Physics, Chemistry and Materials are complete to their current
-dated full-field boundaries. Biology is the active branch at **82/424** frozen
-obligations, with **342 open**. The remaining downstream branches retain
-complete published foundations and complete prior-return families but do not
-yet have frozen full-field denominators.
+The complete current corpus contains **2,765 registered, model-admitted
+claims**, **895,830 candidates and decisions**, **2,765 unique survivors** and
+**11,060 controls** across 17 machine branch identifiers. The independent Lean
+4 layer passed the entire ordered census with no issue. The model is complete
+to that dated registered surface and remains open to lawful versioned
+extension.
 
 The complete status ledger, publication boundary and exact restart operation
 are maintained in
-[`audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-07-29.md).
+[`audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md`](../../audits/CURRENT_PROGRAMME_STATUS_2026-08-02.md).
 The foundation table later in this file remains the historical 28 July
 all-foundations baseline and must not be used as the current full-field count.
 
