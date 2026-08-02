@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-QUANTUM-OAI26-PARALLEL-REPETITION-001",
+  "controls": [
+    {
+      "expected_behavior": "reject a changed source target",
+      "kind": "false_premise",
+      "observed_behavior": "A changed or paraphrased target is not the registered proposition.",
+      "passed": true,
+      "receipt_hash": "sha256:00d5ff3b7737774dc399fc19a792797777577356dac168f888605f43cb673623"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "changed source identity differs from the executed source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:9788dc323dab51e50580754e482466fc8acc3c1e97587e81adf48b2ed0f256c9"
+    },
+    {
+      "expected_behavior": "reject a missing duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the complete route product contains exactly one all-admitted derivation",
+      "passed": true,
+      "receipt_hash": "sha256:8970d4ca995307df4afc6555ad0307719fb733f7894da0e42068be413d8de651"
+    },
+    {
+      "expected_behavior": "reject carrier denial finite examples imported proof authority or incomplete chains",
+      "kind": "boundary",
+      "observed_behavior": "exact correspondence, full proof graph, arbitrary-input closure and executable certificates all passed",
+      "passed": true,
+      "receipt_hash": "sha256:8ebd4ac0d3b7ac4c553ba278580a605b94ffe1317a85ac3dfe91a08420b8b9cc"
+    }
+  ]
+}

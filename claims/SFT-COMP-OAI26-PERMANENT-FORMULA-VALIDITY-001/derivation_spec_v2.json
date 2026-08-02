@@ -1,0 +1,369 @@
+{
+  "atomic_id": "OAI26-COMP-001",
+  "branch": "computation",
+  "checks": [
+    {
+      "actual": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "check_id": "source-axiom-vector",
+      "expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "exact_list"
+    },
+    {
+      "check_id": "axiom-zero-nonzero-contradiction",
+      "kind": "zero_nonzero_contradiction",
+      "observed": 3,
+      "required": 0
+    },
+    {
+      "check_id": "source-token-coverage",
+      "kind": "token_coverage",
+      "observed": [
+        "permanent_rational_formula_logarithmic_lower_bound",
+        "RationalFormula",
+        "FractionRing",
+        "Real.logb"
+      ],
+      "required": [
+        "permanent_rational_formula_logarithmic_lower_bound",
+        "RationalFormula",
+        "FractionRing",
+        "Real.logb"
+      ]
+    },
+    {
+      "check_id": "source-native-distinct",
+      "kind": "distinct_identity",
+      "left": "sha256:504b394627a623c0efeb8c2c73e6d9fab79502c10e2b6494768c410eadb881f4",
+      "right": "sha256:61273f9aa8700e823c194f648718038e1854aa9caf29bfc886e9376781cf9396"
+    },
+    {
+      "check_id": "nontransfer-flags",
+      "kind": "all_false",
+      "values": [
+        false,
+        false
+      ]
+    }
+  ],
+  "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-VALIDITY-001",
+  "contradiction_summary": "SFT validity forces an empty axiom vector and admitted carriers; the exact source exposes three axioms and the theorem-specific excluded component. The assumption therefore entails a contradiction.",
+  "dependencies": [
+    "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+    "SFT-MATH-LOGIC-PROOF-001",
+    "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+    "SFT-MATH-SYMB-CANONICAL-EXPRESSION-001",
+    "SFT-COMP-CPLXX-FORMULA-BRANCHING-CIRCUIT-014",
+    "SFT-COMP-CPLXX-ARBITRARY-FOLD-CIRCUIT-LOWER-024"
+  ],
+  "derivation_identity": "sha256:146f7f6a197b8b0f55935cca96f34e43a51bcf674879657db24527e5e138478d",
+  "domain_contradiction": "SFT exact operations and circuit lower bounds apply to admitted canonical carriers and Fold edges; the source gate basis has no total SFT transport theorem.",
+  "native_reconstruction_used_as_validity_premise": false,
+  "necessary_source_component": "complex fraction-ring formulas with subtraction/division and a completed real logarithmic resource scalar",
+  "original_reconstruction_claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-001",
+  "original_reconstruction_formula_hash": "sha256:61273f9aa8700e823c194f648718038e1854aa9caf29bfc886e9376781cf9396",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "actual_contradiction_derived": true,
+    "axiom_count": 3,
+    "check_count": 5,
+    "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-VALIDITY-001",
+    "dependency_count": 6,
+    "native_reconstruction_transferred": false,
+    "negation_hash": "sha256:7bf22a4b5a0693d1eb071ec0ee3ce927a95444423d1cfa8af839512ee6b0e05c",
+    "outcome_axis_present": false,
+    "proof_outcome": "DISPROVED",
+    "source_statement_hash": "sha256:504b394627a623c0efeb8c2c73e6d9fab79502c10e2b6494768c410eadb881f4",
+    "step_count": 10,
+    "target_hash": "sha256:0812db90937bc1cfaded68bc283b4c3ef6a6aea5eaa68b4688f0d39598f9a8e1"
+  },
+  "proof_kind": "validity_contradiction",
+  "proof_outcome": "DISPROVED",
+  "quoted_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "registered_negation": "Not SFTValid(exact frozen artifact PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires complex fraction-ring formulas with subtraction/division and a completed real logarithmic resource scalar.",
+  "registry_identity": "sha256:6e6b712f125a4c0e9d4c0dad864c6fd77416435108aa3a38088b15aa6e4cbafc",
+  "required_source_tokens": [
+    "permanent_rational_formula_logarithmic_lower_bound",
+    "RationalFormula",
+    "FractionRing",
+    "Real.logb"
+  ],
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-artifact",
+          false,
+          "A changed artifact cannot decide the registered validity proposition."
+        ],
+        [
+          "exact-frozen-artifact",
+          true,
+          "The declaration, file, commit, signature and source hashes match the frozen artifact."
+        ]
+      ],
+      "key": "source_binding"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-substituted-proposition",
+          false,
+          "A native reconstruction is not the exact quoted source proposition."
+        ],
+        [
+          "exact-statement-and-quantifier-quotation",
+          true,
+          "Every source binder, hypothesis and conjunct is retained in order."
+        ]
+      ],
+      "key": "quotation"
+    },
+    {
+      "choices": [
+        [
+          "axiom-vector-hidden-or-assumed-empty",
+          false,
+          "The submitted proof dependency vector must be exposed exactly."
+        ],
+        [
+          "nonempty-source-axiom-vector-exposed",
+          true,
+          "The frozen manifest exposes the exact nonempty source axiom vector."
+        ]
+      ],
+      "key": "axiom_evidence"
+    },
+    {
+      "choices": [
+        [
+          "necessary-source-component-omitted",
+          false,
+          "Deleting the theorem-specific carrier or totality requirement changes the proposition."
+        ],
+        [
+          "necessary-source-component-exposed",
+          true,
+          "The exact theorem-specific component conflicting with the SFT domain is retained."
+        ]
+      ],
+      "key": "carrier_evidence"
+    },
+    {
+      "choices": [
+        [
+          "invented-validity-rule",
+          false,
+          "A new rule cannot replace the pre-existing SFT admission and domain laws."
+        ],
+        [
+          "preexisting-admission-and-domain-laws",
+          true,
+          "Only prior model-admitted SFT laws govern the contradiction."
+        ]
+      ],
+      "key": "governing_law"
+    },
+    {
+      "choices": [
+        [
+          "inadmissibility-asserted-without-negated-target",
+          false,
+          "A label or missing receipt is not a proof of the registered validity negation."
+        ],
+        [
+          "assume-valid-and-derive-actual-contradiction",
+          true,
+          "The proof assumes SFT validity and derives both a mandatory condition and its exact failure."
+        ]
+      ],
+      "key": "contradiction_chain"
+    },
+    {
+      "choices": [
+        [
+          "unexecuted-or-sampled-evidence",
+          false,
+          "Every finite source, axiom, token, dependency and identity check must execute."
+        ],
+        [
+          "complete-executable-evidence",
+          true,
+          "Every registered finite check is recomputed exactly."
+        ]
+      ],
+      "key": "execution"
+    },
+    {
+      "choices": [
+        [
+          "native-proof-transferred-to-source",
+          false,
+          "Proof of a different SFT-native proposition cannot validate the source artifact."
+        ],
+        [
+          "native-reconstruction-kept-distinct",
+          true,
+          "The reconstruction is retained separately and supplies no premise for source validity."
+        ]
+      ],
+      "key": "transfer_boundary"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-source-validity-disproof/2",
+  "sft_validity_proposition": "SFTValid(exact frozen artifact PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound)",
+  "source_binding_hash": "sha256:84051328927be5642919772ed0ce96c9aa5d9896051217c0036e96531226032e",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_sha256": "sha256:bdd53fe0b026c9b9e369db67b3c040e5d3eeffd04d13f00e041d23eb33603111",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "source_statement_hash": "sha256:504b394627a623c0efeb8c2c73e6d9fab79502c10e2b6494768c410eadb881f4",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "SFT validity requires empty registered axioms, zero free parameters, generated-domain proof objects and a root-bound complete trace",
+      "dependency_claims": [
+        "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+        "SFT-MATH-LOGIC-PROOF-001"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "admission-laws"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFT exact operations and circuit lower bounds apply to admitted canonical carriers and Fold edges; the source gate basis has no total SFT transport theorem.",
+      "dependency_claims": [
+        "SFT-FOUNDATION-EXACT-OPERATIONS-001",
+        "SFT-MATH-SYMB-CANONICAL-EXPRESSION-001",
+        "SFT-COMP-CPLXX-FORMULA-BRANCHING-CIRCUIT-014",
+        "SFT-COMP-CPLXX-ARBITRARY-FOLD-CIRCUIT-LOWER-024"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "domain-laws"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the exact frozen declaration, quantifiers, axiom vector and theorem-specific source tokens are fixed",
+      "dependency_claims": [],
+      "premises": [],
+      "rule": "exact_source_extraction",
+      "step_id": "exact-artifact"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFTValid(exact frozen artifact PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound)",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact"
+      ],
+      "rule": "validity_assumption",
+      "step_id": "assume-source-valid"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the submitted artifact has zero registered axioms and every necessary source carrier is SFT-admitted",
+      "dependency_claims": [],
+      "premises": [
+        "admission-laws",
+        "assume-source-valid"
+      ],
+      "rule": "definition_elimination",
+      "step_id": "validity-requirements"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the artifact has three registered axioms and requires complex fraction-ring formulas with subtraction/division and a completed real logarithmic resource scalar",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact",
+        "domain-laws"
+      ],
+      "rule": "exact_source_extraction",
+      "step_id": "source-failures"
+    },
+    {
+      "check_ids": [
+        "axiom-zero-nonzero-contradiction"
+      ],
+      "conclusion": "the same exact artifact has both zero registered axioms and three registered axioms",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "contradiction",
+      "step_id": "axiom-contradiction"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the same necessary source component is both SFT-admitted and excluded by the governing SFT domain law",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "carrier_conflict",
+      "step_id": "carrier-conflict"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "Not SFTValid(exact frozen artifact PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires complex fraction-ring formulas with subtraction/division and a completed real logarithmic resource scalar.",
+      "dependency_claims": [],
+      "premises": [
+        "assume-source-valid",
+        "axiom-contradiction",
+        "carrier-conflict"
+      ],
+      "rule": "negation_introduction",
+      "step_id": "validity-negation"
+    },
+    {
+      "check_ids": [
+        "source-native-distinct",
+        "nontransfer-flags"
+      ],
+      "conclusion": "REGISTERED_SOURCE_VALIDITY_NEGATION",
+      "dependency_claims": [],
+      "premises": [
+        "validity-negation"
+      ],
+      "rule": "nontransfer",
+      "step_id": "nontransfer"
+    }
+  ],
+  "title": "SFT disproof of source-artifact validity: PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound"
+}

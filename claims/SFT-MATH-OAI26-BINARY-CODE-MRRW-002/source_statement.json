@@ -1,0 +1,28 @@
+{
+  "atomic_id": "OAI26-MATH-002",
+  "claim_id": "SFT-MATH-OAI26-BINARY-CODE-MRRW-002",
+  "declaration": "MetricCodes.Johnson.binaryRate_lt_mrrw",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall d : Real",
+    "hypothesis 0 < d",
+    "hypothesis d < 1/2",
+    "conclusion binaryRate d < mrrwRate d"
+  ],
+  "expanded_source_definitions": [],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 20799,
+  "signature_sha256": "sha256:b721fc6b61325e09140e6c75d9f03d50655ff2187b10cbe2718a77eddb1bb721",
+  "signature_start_line": 20797,
+  "signature_text": "theorem binaryRate_lt_mrrw\n    {d : \u211d} (hd : 0 < d) (hdhalf : d < (1 : \u211d) / 2) :\n    MetricCodes.Hamming.binaryRate d < mrrwRate d := by",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "MetricCodes.lean",
+  "source_file_sha256": "sha256:f8b2b1b59f094005f37f34a746f30a2aa3afb6341d63151ee4f602758731eb32",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

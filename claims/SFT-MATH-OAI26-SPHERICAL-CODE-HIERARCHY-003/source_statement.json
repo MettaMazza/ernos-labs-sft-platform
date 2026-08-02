@@ -1,0 +1,29 @@
+{
+  "atomic_id": "OAI26-MATH-003",
+  "claim_id": "SFT-MATH-OAI26-SPHERICAL-CODE-HIERARCHY-003",
+  "declaration": "MetricCodes.Spherical.HigherHierarchy.strict_hierarchy",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall s : Real",
+    "hypothesis 0 < s",
+    "hypothesis s < 1",
+    "forall r : Nat, two strict successor-level inequalities",
+    "four retained hierarchy/row/level comparisons and one terminal equality"
+  ],
+  "expanded_source_definitions": [],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 114344,
+  "signature_sha256": "sha256:448b278605c7a2ffaacd175c48dcad36e4937520230fe414d0e3066a71d1cee9",
+  "signature_start_line": 114336,
+  "signature_text": "theorem strict_hierarchy {s : \u211d} (hs : 0 < s) (hs' : s < 1) :\n    (\u2200 r : \u2115,\n      levelRate (r + 1) s < levelRate r s \u2227\n        localizedLevelRate (r + 1) s < localizedLevelRate r s) \u2227\n      sphericalCodeRate s \u2264 localizedHierarchyRate s \u2227\n      localizedHierarchyRate s < localizedLevelRate 1 s \u2227\n      localizedLevelRate 1 s < localizedRowRate s \u2227\n      localizedRowRate s < localizedLevelRate 0 s \u2227\n      localizedLevelRate 0 s = classicalLocalizedRate s :=",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "MetricCodes.lean",
+  "source_file_sha256": "sha256:f8b2b1b59f094005f37f34a746f30a2aa3afb6341d63151ee4f602758731eb32",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

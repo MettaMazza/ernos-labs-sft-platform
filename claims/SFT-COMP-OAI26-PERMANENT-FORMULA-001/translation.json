@@ -1,0 +1,26 @@
+{
+  "atomic_id": "OAI26-COMP-001",
+  "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-001",
+  "governing_grammar_composition": "canonical rational-formula syntax x validity/evaluation traces x permanent expression support x leaf-resource certificates x size-successor induction",
+  "governing_preexisting_claims": [
+    "SFT-MATH-SYMB-CANONICAL-EXPRESSION-001",
+    "SFT-COMP-CPLXX-FORMULA-BRANCHING-CIRCUIT-014",
+    "SFT-COMP-CPLXX-ARBITRARY-FOLD-CIRCUIT-LOWER-024",
+    "SFT-MATH-CALC-RATIONAL-ENCLOSURE-CONVERGENCE-006"
+  ],
+  "native_formula": "For every generated n at least thirty-two and every admissible canonical encoding of a valid rational formula over structurally paired exact complex coordinates whose evaluation equals the encoded permanent polynomial in the encoded fraction ring, the source lower bound on variable leaves holds as an exact-real enclosure inequality.",
+  "outcome_axis_present": false,
+  "proof_body_imported": false,
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "registry_path": "census/openai_ten_advances_2026_sft_obligation_registry_v1.json",
+  "schema": "sft-v3-external-theorem-native-translation/1",
+  "source_declaration": "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ]
+}

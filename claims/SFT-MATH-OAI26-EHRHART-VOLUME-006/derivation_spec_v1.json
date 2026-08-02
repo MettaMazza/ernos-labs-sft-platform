@@ -1,0 +1,350 @@
+{
+  "arbitrary_input_certificate": "dimension base plus successor and arbitrary generated-body implication",
+  "atomic_id": "OAI26-MATH-006",
+  "branch": "mathematics",
+  "checks": [
+    {
+      "check_id": "factorials",
+      "kind": "factorial_table",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "actual": [
+        "convex",
+        "compact",
+        "interior",
+        "centered",
+        "unique-lattice-point"
+      ],
+      "check_id": "body-fields",
+      "expected": [
+        "convex",
+        "compact",
+        "interior",
+        "centered",
+        "unique-lattice-point"
+      ],
+      "kind": "field_coverage"
+    },
+    {
+      "check_id": "dimension-successor",
+      "kind": "successor_trace",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+  "correspondence_required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "dependencies": [
+    "SFT-MATH-GEOM-CONVEX-HULL-SEPARATION-005",
+    "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+    "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005",
+    "SFT-MATH-MEAS-CONVERGENCE-FINITE-WITNESS-010",
+    "SFT-MATH-CALC-RATIONAL-ENCLOSURE-CONVERGENCE-006"
+  ],
+  "derivation_identity": "sha256:d2ca8868906c6f6655224ddf0514fe1d6c9bdea42796e58f526e49349b4af89c",
+  "governing_grammar_composition": "generated convex-body descriptions x lattice-point support x barycenter certificates x exact volume enclosures x dimension-successor traces",
+  "native_formula": "For every positive generated dimension and every admissible exact generated encoding of a real-space set with certificates for the source convexity, compactness, nonempty interior, centered barycenter and unique interior lattice point hypotheses, the exact normalized-volume enclosure is at most (n plus One)^n divided by n factorial.",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "all_checks_passed": true,
+    "all_steps_reach_terminal": true,
+    "check_count": 3,
+    "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+    "dependency_count": 5,
+    "native_formula_hash": "sha256:11c0c3c91aa603361eda11ed05fc033334f84a152f59b9e60e649ab152b6e13f",
+    "outcome_axis_present": false,
+    "proof_outcome": "PROVED",
+    "source_statement_hash": "sha256:4288bd0a526e42912346ce0f4f275a2bac6c0d7b1fda31a2343bf5f0529388ea",
+    "step_count": 6,
+    "translation_hash": "sha256:9e24eb1e8cbf953ce627152c46a4a93b36524272e2c6eef39e2d13e6ef2e494b",
+    "upstream_proof_used_as_premise": false
+  },
+  "proof_kind": "constructive_proof",
+  "proof_label": "generated centered body, lattice support and moment-body volume bound",
+  "proof_outcome": "PROVED",
+  "quantifier_mode": "universal_dimension_and_body",
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-source",
+          false,
+          "A changed or paraphrased target is not the registered proposition."
+        ],
+        [
+          "exact-frozen-source",
+          true,
+          "The source file, span, text and identities all match the frozen capture."
+        ]
+      ],
+      "key": "source_binding",
+      "question": "Is the exact frozen declaration the target?"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-reordered-shape",
+          false,
+          "Dropping or changing a quantifier, hypothesis or conjunct changes the theorem."
+        ],
+        [
+          "exact-quantifier-conjunct-order",
+          true,
+          "The complete registered binder and conjunct order is retained."
+        ]
+      ],
+      "key": "logical_shape",
+      "question": "Are all binders, hypotheses, polarities and conjuncts retained?"
+    },
+    {
+      "choices": [
+        [
+          "carrier-rejection-or-finite-analogue",
+          false,
+          "Carrier rejection or a finite example is not a truth-preserving translation."
+        ],
+        [
+          "exact-native-correspondence",
+          true,
+          "Encode/decode, relations, implications and negations are preserved exactly."
+        ]
+      ],
+      "key": "translation",
+      "question": "Does the SFT-native translation preserve the proposition?"
+    },
+    {
+      "choices": [
+        [
+          "invented-verdict-census",
+          false,
+          "A new verdict coordinate cannot select a mathematical result."
+        ],
+        [
+          "preexisting-branch-grammar-composition",
+          true,
+          "Only the admitted dependency grammars generate proof objects."
+        ]
+      ],
+      "key": "grammar",
+      "question": "Which enumeration governs the derivation?"
+    },
+    {
+      "choices": [
+        [
+          "missing-or-unadmitted-dependency",
+          false,
+          "Every mathematical premise must have a prior model-admitted owner."
+        ],
+        [
+          "complete-prior-receipt-trace",
+          true,
+          "Every dependency is prior, receipt-bound and used in the proof graph."
+        ]
+      ],
+      "key": "dependency_trace",
+      "question": "Is the root-to-result dependency trace complete?"
+    },
+    {
+      "choices": [
+        [
+          "truncated-or-circular-chain",
+          false,
+          "A missing, forward, circular or orphaned proof step cannot close the theorem."
+        ],
+        [
+          "complete-root-to-result-chain",
+          true,
+          "Every step is prior-founded and the unique terminal step is the exact proposition."
+        ]
+      ],
+      "key": "mathematical_chain",
+      "question": "Does the complete theorem-specific proof chain reach the registered proposition?"
+    },
+    {
+      "choices": [
+        [
+          "asserted-or-sampled-checks",
+          false,
+          "Unexecuted assertions and incomplete samples do not certify a result."
+        ],
+        [
+          "complete-executable-certificates",
+          true,
+          "Every registered finite check is recomputed and passes exactly."
+        ]
+      ],
+      "key": "execution",
+      "question": "Are all finite equalities, bounds, witnesses and enumerations executed?"
+    },
+    {
+      "choices": [
+        [
+          "imported-openai-proof-authority",
+          false,
+          "The upstream proof and its foundations have no SFT derivational authority."
+        ],
+        [
+          "sft-root-bound-forward-derivation",
+          true,
+          "The result is selected only by the SFT proof chain and admitted dependencies."
+        ]
+      ],
+      "key": "provenance",
+      "question": "What selects the proof?"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-native-derivation/1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "Ehrhart.Volume.ehrhart_volume_inequality_for_sets",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "source_signature_hash": "sha256:db3d7c386f112fb9b24b75f77a770fc7bcc10ce153e97272f78615f50559fdc4",
+  "source_statement_hash": "sha256:4288bd0a526e42912346ce0f4f275a2bac6c0d7b1fda31a2343bf5f0529388ea",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "every admissible body is generated with convex compact interior and barycenter certificates",
+      "dependency_claims": [
+        "SFT-MATH-GEOM-CONVEX-HULL-SEPARATION-005",
+        "SFT-MATH-MEAS-CONVERGENCE-FINITE-WITNESS-010"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "body-generator"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the complete interior lattice support contains only the centered point",
+      "dependency_claims": [
+        "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+        "SFT-MATH-CALC-RATIONAL-ENCLOSURE-CONVERGENCE-006"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "lattice-support"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "finite-support moment sums have an exact rational convergence modulus",
+      "dependency_claims": [
+        "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "moment-convergence"
+    },
+    {
+      "check_ids": [
+        "body-fields"
+      ],
+      "conclusion": "the source hypotheses form a generated centered body",
+      "dependency_claims": [],
+      "premises": [
+        "body-generator",
+        "lattice-support"
+      ],
+      "rule": "record_assembly",
+      "step_id": "centered-body"
+    },
+    {
+      "check_ids": [
+        "factorials",
+        "dimension-successor"
+      ],
+      "conclusion": "normalized volume is bounded by the exact (n+One)^n over n-factorial enclosure",
+      "dependency_claims": [],
+      "premises": [
+        "centered-body",
+        "moment-convergence"
+      ],
+      "rule": "universal_successor",
+      "step_id": "sharp-bound"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "REGISTERED_NATIVE_PROPOSITION",
+      "dependency_claims": [],
+      "premises": [
+        "sharp-bound"
+      ],
+      "rule": "implication",
+      "step_id": "ehrhart-theorem"
+    }
+  ],
+  "title": "SFT reconstruction of the sharp Ehrhart volume inequality",
+  "translated_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "translation_hash": "sha256:9e24eb1e8cbf953ce627152c46a4a93b36524272e2c6eef39e2d13e6ef2e494b",
+  "upstream_proof_used_as_premise": false,
+  "witness_grammar": [
+    "convex-body generator",
+    "lattice support",
+    "barycenter ledger",
+    "moment convergence",
+    "volume enclosure"
+  ]
+}

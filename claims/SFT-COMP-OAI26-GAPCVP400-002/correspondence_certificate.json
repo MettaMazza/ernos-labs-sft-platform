@@ -1,0 +1,48 @@
+{
+  "carrier_rejection_used_as_negation": false,
+  "claim_id": "SFT-COMP-OAI26-GAPCVP400-002",
+  "correspondence_identity": "sha256:7b8fd70ed298079e03fdb5d70bb1dcfb9e65892458d5f115a8f95aa8ac89a24d",
+  "encode_decode_theorems": [
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.toNat_ofNat",
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.ofNat_toNat",
+    "SFTValidation.OpenAI2026.Correspondence.forall_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.exists_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.implication_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.not_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.eventually_iff_generated",
+    "SFTValidation.OpenAI2026.Correspondence.tendsto_iff_generated"
+  ],
+  "lean_axiom_audit": "empty",
+  "lean_report_path": "generated/lean4_validation/reports/openai_2026_obligations_lean4.json",
+  "lean_report_sha256": "sha256:4fb8e605cacfc2f75e8b1d0d1cb2e6805040887d825d83bc3e1b4140dcfbe77b",
+  "logical_shape_preserved": true,
+  "native_formula_hash": "sha256:4aa13c6d59f53502969fe62d158a17ebab38c05e54e3cee8938cda4969b40590",
+  "native_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ],
+  "required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "schema": "sft-v3-openai-2026-correspondence-certificate/1",
+  "source_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ],
+  "source_signature_hash": "sha256:ba8e333d4bd14e4d5317eb9fc1672fd643151ba5a3ad51b64eafef209d9579dc",
+  "source_statement_hash": "sha256:af529fb1024f621e8ce7cd1a0af768007cb4a5a3039601b730699cc192810dda",
+  "status": "PROVED",
+  "translation_hash": "sha256:2491a3de85b86b137850dd41cd608fd6d3fc93fa0b8db84768a86eca8d5177a9",
+  "upstream_proof_used_as_derivational_authority": false
+}

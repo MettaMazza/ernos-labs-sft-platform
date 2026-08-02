@@ -1,0 +1,291 @@
+{
+  "arbitrary_input_certificate": "structural induction over arbitrary generated NP-machine inputs",
+  "atomic_id": "OAI26-COMP-002",
+  "branch": "computation",
+  "checks": [
+    {
+      "check_id": "bit-roundtrip",
+      "kind": "bool_word_roundtrip",
+      "maximum_length": 6
+    },
+    {
+      "check_id": "factor",
+      "kind": "integer_equality",
+      "left": 400,
+      "right": 400
+    },
+    {
+      "actual": [
+        "map",
+        "polynomial_time",
+        "completeness",
+        "soundness"
+      ],
+      "check_id": "reduction-fields",
+      "expected": [
+        "map",
+        "polynomial_time",
+        "completeness",
+        "soundness"
+      ],
+      "kind": "field_coverage"
+    }
+  ],
+  "claim_id": "SFT-COMP-OAI26-GAPCVP400-002",
+  "correspondence_required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "dependencies": [
+    "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+    "SFT-MATH-GEOM-EUCLIDEAN-DISTANCE-002",
+    "SFT-COMP-CPLXX-REDUCTION-COMPLETE-PROBLEM-021",
+    "SFT-COMP-CPLXX-APPROXIMATION-RATIO-026"
+  ],
+  "derivation_identity": "sha256:ec572b1c9d3b68261c14d57937b6ec2965432b821561d5d2559d03bbb376f75d",
+  "governing_grammar_composition": "generated bit languages x NP witness machines x total reduction maps x exact lattice instances x promise verdict/resource traces",
+  "native_formula": "For every admissible generated bit language carrying an exact SFT IsNP witness, there exists a total generated bit-list reduction to the exact encoded gapCVP400 promise, a polynomial-resource machine certificate, and complete per-input yes-preservation and no-preservation proofs; the four PromiseReduction fields are retained.",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "all_checks_passed": true,
+    "all_steps_reach_terminal": true,
+    "check_count": 3,
+    "claim_id": "SFT-COMP-OAI26-GAPCVP400-002",
+    "dependency_count": 4,
+    "native_formula_hash": "sha256:4aa13c6d59f53502969fe62d158a17ebab38c05e54e3cee8938cda4969b40590",
+    "outcome_axis_present": false,
+    "proof_outcome": "PROVED",
+    "source_statement_hash": "sha256:af529fb1024f621e8ce7cd1a0af768007cb4a5a3039601b730699cc192810dda",
+    "step_count": 5,
+    "translation_hash": "sha256:2491a3de85b86b137850dd41cd608fd6d3fc93fa0b8db84768a86eca8d5177a9",
+    "upstream_proof_used_as_premise": false
+  },
+  "proof_kind": "constructive_proof",
+  "proof_label": "exact integer-target lattice encoding and total NP promise reduction",
+  "proof_outcome": "PROVED",
+  "quantifier_mode": "universal_generated_languages",
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-source",
+          false,
+          "A changed or paraphrased target is not the registered proposition."
+        ],
+        [
+          "exact-frozen-source",
+          true,
+          "The source file, span, text and identities all match the frozen capture."
+        ]
+      ],
+      "key": "source_binding",
+      "question": "Is the exact frozen declaration the target?"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-reordered-shape",
+          false,
+          "Dropping or changing a quantifier, hypothesis or conjunct changes the theorem."
+        ],
+        [
+          "exact-quantifier-conjunct-order",
+          true,
+          "The complete registered binder and conjunct order is retained."
+        ]
+      ],
+      "key": "logical_shape",
+      "question": "Are all binders, hypotheses, polarities and conjuncts retained?"
+    },
+    {
+      "choices": [
+        [
+          "carrier-rejection-or-finite-analogue",
+          false,
+          "Carrier rejection or a finite example is not a truth-preserving translation."
+        ],
+        [
+          "exact-native-correspondence",
+          true,
+          "Encode/decode, relations, implications and negations are preserved exactly."
+        ]
+      ],
+      "key": "translation",
+      "question": "Does the SFT-native translation preserve the proposition?"
+    },
+    {
+      "choices": [
+        [
+          "invented-verdict-census",
+          false,
+          "A new verdict coordinate cannot select a mathematical result."
+        ],
+        [
+          "preexisting-branch-grammar-composition",
+          true,
+          "Only the admitted dependency grammars generate proof objects."
+        ]
+      ],
+      "key": "grammar",
+      "question": "Which enumeration governs the derivation?"
+    },
+    {
+      "choices": [
+        [
+          "missing-or-unadmitted-dependency",
+          false,
+          "Every mathematical premise must have a prior model-admitted owner."
+        ],
+        [
+          "complete-prior-receipt-trace",
+          true,
+          "Every dependency is prior, receipt-bound and used in the proof graph."
+        ]
+      ],
+      "key": "dependency_trace",
+      "question": "Is the root-to-result dependency trace complete?"
+    },
+    {
+      "choices": [
+        [
+          "truncated-or-circular-chain",
+          false,
+          "A missing, forward, circular or orphaned proof step cannot close the theorem."
+        ],
+        [
+          "complete-root-to-result-chain",
+          true,
+          "Every step is prior-founded and the unique terminal step is the exact proposition."
+        ]
+      ],
+      "key": "mathematical_chain",
+      "question": "Does the complete theorem-specific proof chain reach the registered proposition?"
+    },
+    {
+      "choices": [
+        [
+          "asserted-or-sampled-checks",
+          false,
+          "Unexecuted assertions and incomplete samples do not certify a result."
+        ],
+        [
+          "complete-executable-certificates",
+          true,
+          "Every registered finite check is recomputed and passes exactly."
+        ]
+      ],
+      "key": "execution",
+      "question": "Are all finite equalities, bounds, witnesses and enumerations executed?"
+    },
+    {
+      "choices": [
+        [
+          "imported-openai-proof-authority",
+          false,
+          "The upstream proof and its foundations have no SFT derivational authority."
+        ],
+        [
+          "sft-root-bound-forward-derivation",
+          true,
+          "The result is selected only by the SFT proof chain and admitted dependencies."
+        ]
+      ],
+      "key": "provenance",
+      "question": "What selects the proof?"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-native-derivation/1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "GapCVP.Comparator.gapCVP400IsNPHard",
+  "source_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ],
+  "source_signature_hash": "sha256:ba8e333d4bd14e4d5317eb9fc1672fd643151ba5a3ad51b64eafef209d9579dc",
+  "source_statement_hash": "sha256:af529fb1024f621e8ce7cd1a0af768007cb4a5a3039601b730699cc192810dda",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "integer lattice instances and squared distances have exact encodings",
+      "dependency_claims": [
+        "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+        "SFT-COMP-CPLXX-REDUCTION-COMPLETE-PROBLEM-021"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "lattice-carrier"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "NP witnesses transport through total verdict-preserving maps with explicit overhead",
+      "dependency_claims": [
+        "SFT-MATH-GEOM-EUCLIDEAN-DISTANCE-002",
+        "SFT-COMP-CPLXX-APPROXIMATION-RATIO-026"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "reduction-law"
+    },
+    {
+      "check_ids": [
+        "bit-roundtrip",
+        "factor"
+      ],
+      "conclusion": "GapCVP400 instances round-trip through the generated bit-list encoding",
+      "dependency_claims": [],
+      "premises": [
+        "lattice-carrier"
+      ],
+      "rule": "exact_construction",
+      "step_id": "binary-encoding"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the generated map preserves every YES input and every NO input",
+      "dependency_claims": [],
+      "premises": [
+        "binary-encoding",
+        "reduction-law"
+      ],
+      "rule": "exact_construction",
+      "step_id": "promise-map"
+    },
+    {
+      "check_ids": [
+        "reduction-fields"
+      ],
+      "conclusion": "REGISTERED_NATIVE_PROPOSITION",
+      "dependency_claims": [],
+      "premises": [
+        "promise-map"
+      ],
+      "rule": "universal_successor",
+      "step_id": "np-hardness"
+    }
+  ],
+  "title": "SFT reconstruction of GapCVP400 NP-hardness",
+  "translated_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ],
+  "translation_hash": "sha256:2491a3de85b86b137850dd41cd608fd6d3fc93fa0b8db84768a86eca8d5177a9",
+  "upstream_proof_used_as_premise": false,
+  "witness_grammar": [
+    "NP machine",
+    "bit-list map",
+    "polynomial clock",
+    "YES preservation",
+    "NO preservation"
+  ]
+}

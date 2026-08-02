@@ -1,0 +1,30 @@
+{
+  "atomic_id": "OAI26-MATH-005",
+  "claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-005",
+  "governing_grammar_composition": "generated group presentations x representation actions x operator supports x finite-support traces x family-successor certificates",
+  "governing_preexisting_claims": [
+    "SFT-MATH-ALG-GROUP-HELD-INVERSE-004",
+    "SFT-MATH-ALG-REPRESENTATION-ACTION-DECOMPOSITION-013",
+    "SFT-MATH-ANAL-BOUNDED-COMPACT-OPERATOR-008",
+    "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005",
+    "SFT-MATH-LIMIT-CONTINUUM-002"
+  ],
+  "native_formula": "There exist a generated countable-discrete-group description Lambda and a successor generator Gamma for group descriptions satisfying every source FG, ICC, property-(T), tracial-factor-isomorphism and group-nonisomorphism conjunct, with each universal natural quantifier carried by base-and-successor certificates and every operator/factor relation carried by exact generated support.",
+  "outcome_axis_present": false,
+  "proof_body_imported": false,
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "registry_path": "census/openai_ten_advances_2026_sft_obligation_registry_v1.json",
+  "schema": "sft-v3-external-theorem-native-translation/1",
+  "source_declaration": "ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+  "source_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "atomic_id": "OAI26-MATH-008",
+  "claim_id": "SFT-MATH-OAI26-COMPACTNESS-008",
+  "declaration": "CompactnessConjecture.quantitativeCompactnessCounterexample",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "exists finite family of FiniteGraph and real constants c C",
+    "family nonempty",
+    "forall forbidden in family: connected, bipartite and cyclic",
+    "positive c and positive C",
+    "UniformMemberLower family c",
+    "forall n and every host SimpleGraph (Fin n), FamilyFree implies the sixteenth-power host bound",
+    "forall n, the sixteenth-power familyExtremal bound",
+    "positive 1/48 and exact exponent identity",
+    "not IsCompactFamily family and not CompactnessConjectureStatement"
+  ],
+  "expanded_source_definitions": [
+    {
+      "end_line": 39,
+      "label": "IsCompactFamily and CompactnessConjectureStatement",
+      "sha256": "sha256:9e70924df808789dd4d518a8ed15b70f6b6a1e8a4ab1e23fb0ef8f09c814bb36",
+      "start_line": 27,
+      "text": "def IsCompactFamily (family : Finset FiniteGraph) : Prop :=\n  \u2203 forbidden \u2208 family, \u2203 C : \u211d, 0 < C \u2227\n    \u2200\u1da0 n : \u2115 in atTop,\n      (SimpleGraph.extremalNumber n forbidden.graph : \u211d) \u2264\n        C * (familyExtremal family n : \u211d)\n\ndef CompactnessConjectureStatement : Prop :=\n  \u2200 family : Finset FiniteGraph,\n    family.Nonempty \u2192 IsCyclicFamily family \u2192 IsCompactFamily family\n\ntheorem FamilyFree.member {family : Finset FiniteGraph}\n    {forbidden : FiniteGraph} (hmem : forbidden \u2208 family)\n    {n : \u2115} {host : SimpleGraph (Fin n)}"
+    }
+  ],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 9337,
+  "signature_sha256": "sha256:453ebb81feb0acb38fe1f7a150c0bf45e8eb42396b708a1c4bf9cca9ef52dd92",
+  "signature_start_line": 9320,
+  "signature_text": "theorem quantitativeCompactnessCounterexample :\n    \u2203 (family : Finset FiniteGraph) (c C : \u211d),\n      family.Nonempty \u2227\n      (\u2200 forbidden \u2208 family,\n        forbidden.graph.Connected \u2227 forbidden.graph.IsBipartite \u2227\n          \u00ac forbidden.graph.IsAcyclic) \u2227\n      0 < c \u2227\n      0 < C \u2227\n      UniformMemberLower family c \u2227\n      (\u2200 (n : \u2115) (host : SimpleGraph (Fin n)),\n        FamilyFree family host \u2192\n          (host.edgeFinset.card : \u211d) ^ 16 \u2264 C * (n : \u211d) ^ 21) \u2227\n      (\u2200 n : \u2115,\n        (familyExtremal family n : \u211d) ^ 16 \u2264 C * (n : \u211d) ^ 21) \u2227\n      (0 : \u211d) < 1 / 48 \u2227\n      (21 : \u211d) / 16 = (4 : \u211d) / 3 - 1 / 48 \u2227\n      \u00ac IsCompactFamily family \u2227\n      \u00ac CompactnessConjectureStatement := by",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "CompactnessAndDegeneracy.lean",
+  "source_file_sha256": "sha256:17637d0697b9657f221dc1aa734cb1d19765b50edbfdda1dc3446874735fbd81",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

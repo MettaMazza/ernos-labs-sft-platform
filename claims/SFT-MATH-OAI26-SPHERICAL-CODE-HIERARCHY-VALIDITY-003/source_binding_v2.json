@@ -1,0 +1,35 @@
+{
+  "claim_id": "SFT-MATH-OAI26-SPHERICAL-CODE-HIERARCHY-VALIDITY-003",
+  "declaration": "MetricCodes.Spherical.HigherHierarchy.strict_hierarchy",
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall s : Real",
+    "hypothesis 0 < s",
+    "hypothesis s < 1",
+    "forall r : Nat, two strict successor-level inequalities",
+    "four retained hierarchy/row/level comparisons and one terminal equality"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-SPHERICAL-CODE-HIERARCHY-003",
+  "quotation_identity": "sha256:170668a275984bc76624ee2b57c61ec65af33f23a229bd15810edc94b370a702",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "strict_hierarchy",
+    "levelRate",
+    "localizedLevelRate",
+    "sphericalCodeRate"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:448b278605c7a2ffaacd175c48dcad36e4937520230fe414d0e3066a71d1cee9",
+  "signature_text": "theorem strict_hierarchy {s : \u211d} (hs : 0 < s) (hs' : s < 1) :\n    (\u2200 r : \u2115,\n      levelRate (r + 1) s < levelRate r s \u2227\n        localizedLevelRate (r + 1) s < localizedLevelRate r s) \u2227\n      sphericalCodeRate s \u2264 localizedHierarchyRate s \u2227\n      localizedHierarchyRate s < localizedLevelRate 1 s \u2227\n      localizedLevelRate 1 s < localizedRowRate s \u2227\n      localizedRowRate s < localizedLevelRate 0 s \u2227\n      localizedLevelRate 0 s = classicalLocalizedRate s :=",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MetricCodes.lean",
+  "source_file_sha256": "sha256:f8b2b1b59f094005f37f34a746f30a2aa3afb6341d63151ee4f602758731eb32",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:21f5c134e8d3e1433eed0ea06fe7b70cac85f887b67963efef80560382421a09",
+  "source_statement_path": "claims/SFT-MATH-OAI26-SPHERICAL-CODE-HIERARCHY-003/source_statement.json"
+}

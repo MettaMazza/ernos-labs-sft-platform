@@ -1,0 +1,39 @@
+{
+  "actual_negated_target": "SFTValid(exact frozen artifact Ehrhart.Volume.ehrhart_volume_inequality_for_sets)",
+  "carrier_inadmissibility_used_as_negation_of_mathematical_conclusion": false,
+  "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-VALIDITY-006",
+  "correspondence_identity": "sha256:1ccd6c1c6162d31eef45d1b4fb37b1e1c0044fddcc24f55f270746c5257ce49a",
+  "exact_source_syntax_quotation_proved": true,
+  "lean_axiom_audit": "empty",
+  "lean_report_path": "generated/lean4_validation/reports/openai_2026_source_validity_lean4.json",
+  "lean_report_sha256": "sha256:605ff49b0a32ffc466d1686edccf58970fb8cbc0a2abcaa97ad9fc3e9c551f5a",
+  "lean_theorem": "SFTValidation.OpenAI2026.SourceValidity.ehrhartVolume_source_invalid",
+  "logical_shape_preserved_as_quotation": true,
+  "native_reconstruction_claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+  "native_reconstruction_is_distinct": true,
+  "native_reconstruction_transfers_source_validity": false,
+  "nonexistence_reason": "SFT validity forces an empty axiom vector and admitted carriers; the exact source exposes three axioms and the theorem-specific excluded component. The assumption therefore entails a contradiction.",
+  "quoted_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "schema": "sft-v3-openai-2026-source-validity-correspondence/2",
+  "source_binding_hash": "sha256:25d9e27b7e3a314859c4e507fd2c3d0a2d17124b1c26d642137d10133073396c",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "source_statement_hash": "sha256:4288bd0a526e42912346ce0f4f275a2bac6c0d7b1fda31a2343bf5f0529388ea",
+  "status": "TOTAL_SEMANTIC_CORRESPONDENCE_DISPROVED",
+  "total_truth_preserving_admission_exists": false
+}

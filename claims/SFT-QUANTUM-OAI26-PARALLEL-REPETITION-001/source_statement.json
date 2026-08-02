@@ -1,0 +1,29 @@
+{
+  "atomic_id": "OAI26-QUANTUM-001",
+  "claim_id": "SFT-QUANTUM-OAI26-PARALLEL-REPETITION-001",
+  "declaration": "QuantumParallelRepetition.distributionUniformExponential",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "exists c : Real with 0 < c",
+    "forall types X Y A B with Fintype instances",
+    "forall game G : Game X Y A B",
+    "Nonempty A implies Nonempty B implies positive entangled-value gap implies",
+    "forall n : Nat, 0 < n implies the stated repeatedEntangledValue exponential upper bound"
+  ],
+  "expanded_source_definitions": [],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 70968,
+  "signature_sha256": "sha256:65c987a3b4589f4b2ebf5d0e1ad3c794d57d944e15dce9f1bb46a4ffc3b894be",
+  "signature_start_line": 70953,
+  "signature_text": "theorem distributionUniformExponential :\n    \u2203 c : \u211d, 0 < c \u2227\n      \u2200 {X Y A B : Type}\n        [Fintype X] [Fintype Y] [Fintype A] [Fintype B]\n        (G : Game X Y A B),\n        Nonempty A \u2192 Nonempty B \u2192\n        0 < 1 - entangledValue G \u2192\n        \u2200 n : \u2115, 0 < n \u2192\n          repeatedEntangledValue G n \u2264\n            Real.exp\n              (-(c *\n                ((1 - entangledValue G) ^ 13 /\n                  ((1 - entangledValue G) +\n                    Real.log\n                      ((Fintype.card A : \u211d) *\n                        (Fintype.card B : \u211d))))) * (n : \u211d)) :=",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "QuantumParallelRepetition.lean",
+  "source_file_sha256": "sha256:c6632bba9908e2d7148f28c110e166277425040330d5feef3a417461214d1445",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

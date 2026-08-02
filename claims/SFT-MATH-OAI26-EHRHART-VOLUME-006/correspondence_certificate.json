@@ -1,0 +1,52 @@
+{
+  "carrier_rejection_used_as_negation": false,
+  "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+  "correspondence_identity": "sha256:714f52a80bba5931dfcafe8b37fb0b5feab8203edc58766a9cd2f52f56294600",
+  "encode_decode_theorems": [
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.toNat_ofNat",
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.ofNat_toNat",
+    "SFTValidation.OpenAI2026.Correspondence.forall_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.exists_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.implication_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.not_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.eventually_iff_generated",
+    "SFTValidation.OpenAI2026.Correspondence.tendsto_iff_generated"
+  ],
+  "lean_axiom_audit": "empty",
+  "lean_report_path": "generated/lean4_validation/reports/openai_2026_obligations_lean4.json",
+  "lean_report_sha256": "sha256:4fb8e605cacfc2f75e8b1d0d1cb2e6805040887d825d83bc3e1b4140dcfbe77b",
+  "logical_shape_preserved": true,
+  "native_formula_hash": "sha256:11c0c3c91aa603361eda11ed05fc033334f84a152f59b9e60e649ab152b6e13f",
+  "native_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "schema": "sft-v3-openai-2026-correspondence-certificate/1",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "source_signature_hash": "sha256:db3d7c386f112fb9b24b75f77a770fc7bcc10ce153e97272f78615f50559fdc4",
+  "source_statement_hash": "sha256:4288bd0a526e42912346ce0f4f275a2bac6c0d7b1fda31a2343bf5f0529388ea",
+  "status": "PROVED",
+  "translation_hash": "sha256:9e24eb1e8cbf953ce627152c46a4a93b36524272e2c6eef39e2d13e6ef2e494b",
+  "upstream_proof_used_as_derivational_authority": false
+}

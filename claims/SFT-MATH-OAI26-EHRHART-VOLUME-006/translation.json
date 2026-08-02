@@ -1,0 +1,28 @@
+{
+  "atomic_id": "OAI26-MATH-006",
+  "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+  "governing_grammar_composition": "generated convex-body descriptions x lattice-point support x barycenter certificates x exact volume enclosures x dimension-successor traces",
+  "governing_preexisting_claims": [
+    "SFT-MATH-GEOM-CONVEX-HULL-SEPARATION-005",
+    "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+    "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005",
+    "SFT-MATH-MEAS-CONVERGENCE-FINITE-WITNESS-010",
+    "SFT-MATH-CALC-RATIONAL-ENCLOSURE-CONVERGENCE-006"
+  ],
+  "native_formula": "For every positive generated dimension and every admissible exact generated encoding of a real-space set with certificates for the source convexity, compactness, nonempty interior, centered barycenter and unique interior lattice point hypotheses, the exact normalized-volume enclosure is at most (n plus One)^n divided by n factorial.",
+  "outcome_axis_present": false,
+  "proof_body_imported": false,
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "registry_path": "census/openai_ten_advances_2026_sft_obligation_registry_v1.json",
+  "schema": "sft-v3-external-theorem-native-translation/1",
+  "source_declaration": "Ehrhart.Volume.ehrhart_volume_inequality_for_sets",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ]
+}

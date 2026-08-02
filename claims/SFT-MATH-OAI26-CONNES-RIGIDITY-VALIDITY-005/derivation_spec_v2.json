@@ -1,0 +1,374 @@
+{
+  "atomic_id": "OAI26-MATH-005",
+  "branch": "mathematics",
+  "checks": [
+    {
+      "actual": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "check_id": "source-axiom-vector",
+      "expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "exact_list"
+    },
+    {
+      "check_id": "axiom-zero-nonzero-contradiction",
+      "kind": "zero_nonzero_contradiction",
+      "observed": 3,
+      "required": 0
+    },
+    {
+      "check_id": "source-token-coverage",
+      "kind": "token_coverage",
+      "observed": [
+        "exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+        "IsICC",
+        "TracialGroupFactorsIsomorphic"
+      ],
+      "required": [
+        "exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+        "IsICC",
+        "TracialGroupFactorsIsomorphic"
+      ]
+    },
+    {
+      "check_id": "source-native-distinct",
+      "kind": "distinct_identity",
+      "left": "sha256:2a9d7e3218fc81a3a32459cf4aa08d1eb6b0e3f221c5d12b99102f32549bfe2f",
+      "right": "sha256:f38f4a7e2912c82e7917c51e2151610668707c2ebc587ce70f2ae0e72708ac27"
+    },
+    {
+      "check_id": "nontransfer-flags",
+      "kind": "all_false",
+      "values": [
+        false,
+        false
+      ]
+    }
+  ],
+  "claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-VALIDITY-005",
+  "contradiction_summary": "SFT validity forces an empty axiom vector and admitted carriers; the exact source exposes three axioms and the theorem-specific excluded component. The assumption therefore entails a contradiction.",
+  "dependencies": [
+    "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+    "SFT-MATH-LOGIC-PROOF-001",
+    "SFT-MATH-ALG-GROUP-HELD-INVERSE-004",
+    "SFT-MATH-ALG-REPRESENTATION-ACTION-DECOMPOSITION-013",
+    "SFT-MATH-ANAL-BOUNDED-COMPACT-OPERATOR-008",
+    "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005",
+    "SFT-MATH-LIMIT-CONTINUUM-002"
+  ],
+  "derivation_identity": "sha256:37e0d3a910ab93176bd307c2fb8968021d48d49a01ffed703bcf5f5828f5a3b2",
+  "domain_contradiction": "SFT group, representation, operator and integration supports are generated finite objects; the source IsICC/infinite-family fields require the denied completed carrier.",
+  "native_reconstruction_used_as_validity_premise": false,
+  "necessary_source_component": "infinite groups, an infinite indexed family, infinite conjugacy classes and completed operator factors",
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-005",
+  "original_reconstruction_formula_hash": "sha256:f38f4a7e2912c82e7917c51e2151610668707c2ebc587ce70f2ae0e72708ac27",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "actual_contradiction_derived": true,
+    "axiom_count": 3,
+    "check_count": 5,
+    "claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-VALIDITY-005",
+    "dependency_count": 7,
+    "native_reconstruction_transferred": false,
+    "negation_hash": "sha256:84f85090c889fe3b9e0a1d1b6933b9583659521c672162877072a8fbb6e9d4cb",
+    "outcome_axis_present": false,
+    "proof_outcome": "DISPROVED",
+    "source_statement_hash": "sha256:2a9d7e3218fc81a3a32459cf4aa08d1eb6b0e3f221c5d12b99102f32549bfe2f",
+    "step_count": 10,
+    "target_hash": "sha256:68f2250e0900af602873a6e7cb5b32ededb0b904954b9de88475458bbbbd6cc5"
+  },
+  "proof_kind": "validity_contradiction",
+  "proof_outcome": "DISPROVED",
+  "quoted_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ],
+  "registered_negation": "Not SFTValid(exact frozen artifact ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires infinite groups, an infinite indexed family, infinite conjugacy classes and completed operator factors.",
+  "registry_identity": "sha256:6e6b712f125a4c0e9d4c0dad864c6fd77416435108aa3a38088b15aa6e4cbafc",
+  "required_source_tokens": [
+    "exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+    "IsICC",
+    "TracialGroupFactorsIsomorphic"
+  ],
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-artifact",
+          false,
+          "A changed artifact cannot decide the registered validity proposition."
+        ],
+        [
+          "exact-frozen-artifact",
+          true,
+          "The declaration, file, commit, signature and source hashes match the frozen artifact."
+        ]
+      ],
+      "key": "source_binding"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-substituted-proposition",
+          false,
+          "A native reconstruction is not the exact quoted source proposition."
+        ],
+        [
+          "exact-statement-and-quantifier-quotation",
+          true,
+          "Every source binder, hypothesis and conjunct is retained in order."
+        ]
+      ],
+      "key": "quotation"
+    },
+    {
+      "choices": [
+        [
+          "axiom-vector-hidden-or-assumed-empty",
+          false,
+          "The submitted proof dependency vector must be exposed exactly."
+        ],
+        [
+          "nonempty-source-axiom-vector-exposed",
+          true,
+          "The frozen manifest exposes the exact nonempty source axiom vector."
+        ]
+      ],
+      "key": "axiom_evidence"
+    },
+    {
+      "choices": [
+        [
+          "necessary-source-component-omitted",
+          false,
+          "Deleting the theorem-specific carrier or totality requirement changes the proposition."
+        ],
+        [
+          "necessary-source-component-exposed",
+          true,
+          "The exact theorem-specific component conflicting with the SFT domain is retained."
+        ]
+      ],
+      "key": "carrier_evidence"
+    },
+    {
+      "choices": [
+        [
+          "invented-validity-rule",
+          false,
+          "A new rule cannot replace the pre-existing SFT admission and domain laws."
+        ],
+        [
+          "preexisting-admission-and-domain-laws",
+          true,
+          "Only prior model-admitted SFT laws govern the contradiction."
+        ]
+      ],
+      "key": "governing_law"
+    },
+    {
+      "choices": [
+        [
+          "inadmissibility-asserted-without-negated-target",
+          false,
+          "A label or missing receipt is not a proof of the registered validity negation."
+        ],
+        [
+          "assume-valid-and-derive-actual-contradiction",
+          true,
+          "The proof assumes SFT validity and derives both a mandatory condition and its exact failure."
+        ]
+      ],
+      "key": "contradiction_chain"
+    },
+    {
+      "choices": [
+        [
+          "unexecuted-or-sampled-evidence",
+          false,
+          "Every finite source, axiom, token, dependency and identity check must execute."
+        ],
+        [
+          "complete-executable-evidence",
+          true,
+          "Every registered finite check is recomputed exactly."
+        ]
+      ],
+      "key": "execution"
+    },
+    {
+      "choices": [
+        [
+          "native-proof-transferred-to-source",
+          false,
+          "Proof of a different SFT-native proposition cannot validate the source artifact."
+        ],
+        [
+          "native-reconstruction-kept-distinct",
+          true,
+          "The reconstruction is retained separately and supplies no premise for source validity."
+        ]
+      ],
+      "key": "transfer_boundary"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-source-validity-disproof/2",
+  "sft_validity_proposition": "SFTValid(exact frozen artifact ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors)",
+  "source_binding_hash": "sha256:89b582dad43f080412cf9f55739dafbb819ead3eaa828eb2bbbe7a2d9a60b2b3",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_sha256": "sha256:31f6c419f341ee6aa5b03bc15800a9d8ee2c654c344aab90bdef0639353ccc91",
+  "source_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ],
+  "source_statement_hash": "sha256:2a9d7e3218fc81a3a32459cf4aa08d1eb6b0e3f221c5d12b99102f32549bfe2f",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "SFT validity requires empty registered axioms, zero free parameters, generated-domain proof objects and a root-bound complete trace",
+      "dependency_claims": [
+        "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+        "SFT-MATH-LOGIC-PROOF-001"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "admission-laws"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFT group, representation, operator and integration supports are generated finite objects; the source IsICC/infinite-family fields require the denied completed carrier.",
+      "dependency_claims": [
+        "SFT-MATH-ALG-GROUP-HELD-INVERSE-004",
+        "SFT-MATH-ALG-REPRESENTATION-ACTION-DECOMPOSITION-013",
+        "SFT-MATH-ANAL-BOUNDED-COMPACT-OPERATOR-008",
+        "SFT-MATH-MEAS-FINITE-SUPPORT-INTEGRATION-005",
+        "SFT-MATH-LIMIT-CONTINUUM-002"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "domain-laws"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the exact frozen declaration, quantifiers, axiom vector and theorem-specific source tokens are fixed",
+      "dependency_claims": [],
+      "premises": [],
+      "rule": "exact_source_extraction",
+      "step_id": "exact-artifact"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFTValid(exact frozen artifact ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors)",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact"
+      ],
+      "rule": "validity_assumption",
+      "step_id": "assume-source-valid"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the submitted artifact has zero registered axioms and every necessary source carrier is SFT-admitted",
+      "dependency_claims": [],
+      "premises": [
+        "admission-laws",
+        "assume-source-valid"
+      ],
+      "rule": "definition_elimination",
+      "step_id": "validity-requirements"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the artifact has three registered axioms and requires infinite groups, an infinite indexed family, infinite conjugacy classes and completed operator factors",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact",
+        "domain-laws"
+      ],
+      "rule": "exact_source_extraction",
+      "step_id": "source-failures"
+    },
+    {
+      "check_ids": [
+        "axiom-zero-nonzero-contradiction"
+      ],
+      "conclusion": "the same exact artifact has both zero registered axioms and three registered axioms",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "contradiction",
+      "step_id": "axiom-contradiction"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the same necessary source component is both SFT-admitted and excluded by the governing SFT domain law",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "carrier_conflict",
+      "step_id": "carrier-conflict"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "Not SFTValid(exact frozen artifact ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires infinite groups, an infinite indexed family, infinite conjugacy classes and completed operator factors.",
+      "dependency_claims": [],
+      "premises": [
+        "assume-source-valid",
+        "axiom-contradiction",
+        "carrier-conflict"
+      ],
+      "rule": "negation_introduction",
+      "step_id": "validity-negation"
+    },
+    {
+      "check_ids": [
+        "source-native-distinct",
+        "nontransfer-flags"
+      ],
+      "conclusion": "REGISTERED_SOURCE_VALIDITY_NEGATION",
+      "dependency_claims": [],
+      "premises": [
+        "validity-negation"
+      ],
+      "rule": "nontransfer",
+      "step_id": "nontransfer"
+    }
+  ],
+  "title": "SFT disproof of source-artifact validity: ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors"
+}

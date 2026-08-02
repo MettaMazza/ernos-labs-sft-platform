@@ -1,0 +1,35 @@
+{
+  "claim_id": "SFT-MATH-OAI26-TWO-DEGENERATE-VALIDITY-009",
+  "declaration": "TwoDegenerateGraphs.twoDegenerateExtremalCounterexample",
+  "exact_quantifier_and_conjunct_order": [
+    "exists q : Nat and H : SimpleGraph (Fin q)",
+    "H connected, bipartite and two-degenerate",
+    "forall two-colourings of H and forall sides, maximum side degree is greater than two",
+    "exists real c epsilon with both positive",
+    "eventually for all n atTop, c*n^(3/2+epsilon) <= extremalNumber n H"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-TWO-DEGENERATE-009",
+  "quotation_identity": "sha256:e6fffc339a236b61bb4e6f630558c4941c581d7ad8bf7d9f637a1d6377801bba",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "twoDegenerateExtremalCounterexample",
+    "IsTwoDegenerate",
+    "extremalNumber",
+    "atTop"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:50116dfa60e2184a532980d0fa1fb8b32fccc719bc7d0dee12a584c237f00fe2",
+  "signature_text": "theorem twoDegenerateExtremalCounterexample :\n    \u2203 (q : \u2115) (H : SimpleGraph (Fin q)),\n      H.Connected \u2227\n      H.IsBipartite \u2227\n      IsTwoDegenerate H \u2227\n      (\u2200 coloring : H.Coloring (Fin 2), \u2200 side : Fin 2,\n        2 < (Finset.univ.filter\n          (fun vertex : Fin q => coloring vertex = side)).sup\n          (fun vertex => H.degree vertex)) \u2227\n      \u2203 c \u03b5 : \u211d, 0 < c \u2227 0 < \u03b5 \u2227\n        \u2200\u1da0 n : \u2115 in atTop,\n          c * (n : \u211d) ^ ((3 : \u211d) / 2 + \u03b5) \u2264\n            (SimpleGraph.extremalNumber n H : \u211d) := by",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/CompactnessAndDegeneracy.lean",
+  "source_file_sha256": "sha256:17637d0697b9657f221dc1aa734cb1d19765b50edbfdda1dc3446874735fbd81",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:b2a6eb15be12548b5195eb3d8611453052598bbc71c2b3951224a1c550de6243",
+  "source_statement_path": "claims/SFT-MATH-OAI26-TWO-DEGENERATE-009/source_statement.json"
+}

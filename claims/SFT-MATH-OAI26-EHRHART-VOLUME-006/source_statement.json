@@ -1,0 +1,31 @@
+{
+  "atomic_id": "OAI26-MATH-006",
+  "claim_id": "SFT-MATH-OAI26-EHRHART-VOLUME-006",
+  "declaration": "Ehrhart.Volume.ehrhart_volume_inequality_for_sets",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 0 < n",
+    "forall S : Set (Space n)",
+    "hypotheses Convex Real S, IsCompact S, Nonempty (interior S)",
+    "hypothesis barycenter S = zero",
+    "hypothesis interiorLatticePoints S = singleton zero",
+    "conclusion normalizedVolume S <= (n+1)^n / n!"
+  ],
+  "expanded_source_definitions": [],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 55738,
+  "signature_sha256": "sha256:db3d7c386f112fb9b24b75f77a770fc7bcc10ce153e97272f78615f50559fdc4",
+  "signature_start_line": 55733,
+  "signature_text": "theorem ehrhart_volume_inequality_for_sets {n : \u2115} (hn : 0 < n)\n    (S : Set (Space n)) (hconvex : Convex \u211d S)\n    (hcompact : IsCompact S) (hinterior : (interior S).Nonempty)\n    (hcentered : barycenter S = 0)\n    (hlattice : interiorLatticePoints S = {0}) :\n    normalizedVolume S \u2264 ((n : \u211d) + 1) ^ n / (n.factorial : \u211d) := by",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "EhrhartVolumeInequality.lean",
+  "source_file_sha256": "sha256:e16493429e7afaa3d12daf568ec23eddeaf02afeca414992c066f55f3251a4a5",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

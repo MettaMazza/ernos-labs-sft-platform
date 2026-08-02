@@ -1,0 +1,26 @@
+{
+  "atomic_id": "OAI26-MATH-009",
+  "claim_id": "SFT-MATH-OAI26-TWO-DEGENERATE-009",
+  "governing_grammar_composition": "finite graph supports x two-colouring census x degree/degeneracy witnesses x extremal host traces x size-successor threshold certificate",
+  "governing_preexisting_claims": [
+    "SFT-MATH-COMB-EXTREMAL-SET-SYSTEM-007",
+    "SFT-MATH-GRAPH-COLOURING-CONSTRAINT-006",
+    "SFT-MATH-GRAPH-MATCHING-COVERING-PACKING-007",
+    "SFT-MATH-CALC-RATIONAL-ENCLOSURE-CONVERGENCE-006",
+    "SFT-MATH-LIMIT-CONTINUUM-002"
+  ],
+  "native_formula": "There exist a generated vertex count q and complete finite graph H satisfying the exact connected, bipartite, two-degenerate and every-two-colouring degree conjuncts, together with positive exact-real names c and epsilon and a generated threshold plus successor proof for the complete extremal-number lower bound.",
+  "outcome_axis_present": false,
+  "proof_body_imported": false,
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "registry_path": "census/openai_ten_advances_2026_sft_obligation_registry_v1.json",
+  "schema": "sft-v3-external-theorem-native-translation/1",
+  "source_declaration": "TwoDegenerateGraphs.twoDegenerateExtremalCounterexample",
+  "source_quantifier_and_conjunct_order": [
+    "exists q : Nat and H : SimpleGraph (Fin q)",
+    "H connected, bipartite and two-degenerate",
+    "forall two-colourings of H and forall sides, maximum side degree is greater than two",
+    "exists real c epsilon with both positive",
+    "eventually for all n atTop, c*n^(3/2+epsilon) <= extremalNumber n H"
+  ]
+}

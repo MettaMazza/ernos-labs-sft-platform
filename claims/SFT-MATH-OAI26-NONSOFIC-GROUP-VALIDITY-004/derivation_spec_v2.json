@@ -1,0 +1,362 @@
+{
+  "atomic_id": "OAI26-MATH-004",
+  "branch": "mathematics",
+  "checks": [
+    {
+      "actual": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "check_id": "source-axiom-vector",
+      "expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "exact_list"
+    },
+    {
+      "check_id": "axiom-zero-nonzero-contradiction",
+      "kind": "zero_nonzero_contradiction",
+      "observed": 3,
+      "required": 0
+    },
+    {
+      "check_id": "source-token-coverage",
+      "kind": "token_coverage",
+      "observed": [
+        "exists_finitelyPresented_nonsofic_group",
+        "IsFinitelyPresented",
+        "Sofic"
+      ],
+      "required": [
+        "exists_finitelyPresented_nonsofic_group",
+        "IsFinitelyPresented",
+        "Sofic"
+      ]
+    },
+    {
+      "check_id": "source-native-distinct",
+      "kind": "distinct_identity",
+      "left": "sha256:42b87c8ce2c8b3b26250cc8ab09818851b112b8cdddaa6c0e38c2eb158ffc7e2",
+      "right": "sha256:e4d2f68427d12419eb1ff2198e07a43532aac0514921ab1d8a8dac85c8197479"
+    },
+    {
+      "check_id": "nontransfer-flags",
+      "kind": "all_false",
+      "values": [
+        false,
+        false
+      ]
+    }
+  ],
+  "claim_id": "SFT-MATH-OAI26-NONSOFIC-GROUP-VALIDITY-004",
+  "contradiction_summary": "SFT validity forces an empty axiom vector and admitted carriers; the exact source exposes three axioms and the theorem-specific excluded component. The assumption therefore entails a contradiction.",
+  "dependencies": [
+    "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+    "SFT-MATH-LOGIC-PROOF-001",
+    "SFT-MATH-ALG-GROUP-HELD-INVERSE-004",
+    "SFT-MATH-ALG-PERMUTATION-GROUP-ACTION-005",
+    "SFT-MATH-LOGIC-MODEL-INTERPRETATION-006",
+    "SFT-MATH-LIMIT-CONTINUUM-002"
+  ],
+  "derivation_identity": "sha256:de19213abe1b3f45b174964f994cadc9d962f0265195896550c3e12e12a001a2",
+  "domain_contradiction": "Every admitted SFT group stage is generated with a complete finite carrier; its left-regular permutation action supplies an exact sofic model, leaving no admitted nonsofic witness.",
+  "native_reconstruction_used_as_validity_premise": false,
+  "necessary_source_component": "an existential group carrier that is finitely presented and not sofic",
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-NONSOFIC-GROUP-004",
+  "original_reconstruction_formula_hash": "sha256:e4d2f68427d12419eb1ff2198e07a43532aac0514921ab1d8a8dac85c8197479",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "actual_contradiction_derived": true,
+    "axiom_count": 3,
+    "check_count": 5,
+    "claim_id": "SFT-MATH-OAI26-NONSOFIC-GROUP-VALIDITY-004",
+    "dependency_count": 6,
+    "native_reconstruction_transferred": false,
+    "negation_hash": "sha256:906129e4c0c2d8c6eefba1d7043613fec9066412f11f82edfd33aaaf9be4758a",
+    "outcome_axis_present": false,
+    "proof_outcome": "DISPROVED",
+    "source_statement_hash": "sha256:42b87c8ce2c8b3b26250cc8ab09818851b112b8cdddaa6c0e38c2eb158ffc7e2",
+    "step_count": 10,
+    "target_hash": "sha256:8d4f5fd7ae24668d9c25931701554e9ff3d34cfa1fc28641838f0f2f5036a020"
+  },
+  "proof_kind": "validity_contradiction",
+  "proof_outcome": "DISPROVED",
+  "quoted_quantifier_and_conjunct_order": [
+    "exists a carrier type G",
+    "exists a Group G instance",
+    "Group.IsFinitelyPresented G",
+    "not SoficGroups.Sofic G"
+  ],
+  "registered_negation": "Not SFTValid(exact frozen artifact SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires an existential group carrier that is finitely presented and not sofic.",
+  "registry_identity": "sha256:6e6b712f125a4c0e9d4c0dad864c6fd77416435108aa3a38088b15aa6e4cbafc",
+  "required_source_tokens": [
+    "exists_finitelyPresented_nonsofic_group",
+    "IsFinitelyPresented",
+    "Sofic"
+  ],
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-artifact",
+          false,
+          "A changed artifact cannot decide the registered validity proposition."
+        ],
+        [
+          "exact-frozen-artifact",
+          true,
+          "The declaration, file, commit, signature and source hashes match the frozen artifact."
+        ]
+      ],
+      "key": "source_binding"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-substituted-proposition",
+          false,
+          "A native reconstruction is not the exact quoted source proposition."
+        ],
+        [
+          "exact-statement-and-quantifier-quotation",
+          true,
+          "Every source binder, hypothesis and conjunct is retained in order."
+        ]
+      ],
+      "key": "quotation"
+    },
+    {
+      "choices": [
+        [
+          "axiom-vector-hidden-or-assumed-empty",
+          false,
+          "The submitted proof dependency vector must be exposed exactly."
+        ],
+        [
+          "nonempty-source-axiom-vector-exposed",
+          true,
+          "The frozen manifest exposes the exact nonempty source axiom vector."
+        ]
+      ],
+      "key": "axiom_evidence"
+    },
+    {
+      "choices": [
+        [
+          "necessary-source-component-omitted",
+          false,
+          "Deleting the theorem-specific carrier or totality requirement changes the proposition."
+        ],
+        [
+          "necessary-source-component-exposed",
+          true,
+          "The exact theorem-specific component conflicting with the SFT domain is retained."
+        ]
+      ],
+      "key": "carrier_evidence"
+    },
+    {
+      "choices": [
+        [
+          "invented-validity-rule",
+          false,
+          "A new rule cannot replace the pre-existing SFT admission and domain laws."
+        ],
+        [
+          "preexisting-admission-and-domain-laws",
+          true,
+          "Only prior model-admitted SFT laws govern the contradiction."
+        ]
+      ],
+      "key": "governing_law"
+    },
+    {
+      "choices": [
+        [
+          "inadmissibility-asserted-without-negated-target",
+          false,
+          "A label or missing receipt is not a proof of the registered validity negation."
+        ],
+        [
+          "assume-valid-and-derive-actual-contradiction",
+          true,
+          "The proof assumes SFT validity and derives both a mandatory condition and its exact failure."
+        ]
+      ],
+      "key": "contradiction_chain"
+    },
+    {
+      "choices": [
+        [
+          "unexecuted-or-sampled-evidence",
+          false,
+          "Every finite source, axiom, token, dependency and identity check must execute."
+        ],
+        [
+          "complete-executable-evidence",
+          true,
+          "Every registered finite check is recomputed exactly."
+        ]
+      ],
+      "key": "execution"
+    },
+    {
+      "choices": [
+        [
+          "native-proof-transferred-to-source",
+          false,
+          "Proof of a different SFT-native proposition cannot validate the source artifact."
+        ],
+        [
+          "native-reconstruction-kept-distinct",
+          true,
+          "The reconstruction is retained separately and supplies no premise for source validity."
+        ]
+      ],
+      "key": "transfer_boundary"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-source-validity-disproof/2",
+  "sft_validity_proposition": "SFTValid(exact frozen artifact SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group)",
+  "source_binding_hash": "sha256:f3063dccba7e3bae4040c427b2d5e4caf8670a3b3dbd9a9bcacffe5e97699efc",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_sha256": "sha256:f39b61646df1206d0b592f57c77c47cc41aea4761e12d99141bdae4776095534",
+  "source_quantifier_and_conjunct_order": [
+    "exists a carrier type G",
+    "exists a Group G instance",
+    "Group.IsFinitelyPresented G",
+    "not SoficGroups.Sofic G"
+  ],
+  "source_statement_hash": "sha256:42b87c8ce2c8b3b26250cc8ab09818851b112b8cdddaa6c0e38c2eb158ffc7e2",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "SFT validity requires empty registered axioms, zero free parameters, generated-domain proof objects and a root-bound complete trace",
+      "dependency_claims": [
+        "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+        "SFT-MATH-LOGIC-PROOF-001"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "admission-laws"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "Every admitted SFT group stage is generated with a complete finite carrier; its left-regular permutation action supplies an exact sofic model, leaving no admitted nonsofic witness.",
+      "dependency_claims": [
+        "SFT-MATH-ALG-GROUP-HELD-INVERSE-004",
+        "SFT-MATH-ALG-PERMUTATION-GROUP-ACTION-005",
+        "SFT-MATH-LOGIC-MODEL-INTERPRETATION-006",
+        "SFT-MATH-LIMIT-CONTINUUM-002"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "domain-laws"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the exact frozen declaration, quantifiers, axiom vector and theorem-specific source tokens are fixed",
+      "dependency_claims": [],
+      "premises": [],
+      "rule": "exact_source_extraction",
+      "step_id": "exact-artifact"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFTValid(exact frozen artifact SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group)",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact"
+      ],
+      "rule": "validity_assumption",
+      "step_id": "assume-source-valid"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the submitted artifact has zero registered axioms and every necessary source carrier is SFT-admitted",
+      "dependency_claims": [],
+      "premises": [
+        "admission-laws",
+        "assume-source-valid"
+      ],
+      "rule": "definition_elimination",
+      "step_id": "validity-requirements"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the artifact has three registered axioms and requires an existential group carrier that is finitely presented and not sofic",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact",
+        "domain-laws"
+      ],
+      "rule": "exact_source_extraction",
+      "step_id": "source-failures"
+    },
+    {
+      "check_ids": [
+        "axiom-zero-nonzero-contradiction"
+      ],
+      "conclusion": "the same exact artifact has both zero registered axioms and three registered axioms",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "contradiction",
+      "step_id": "axiom-contradiction"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the same necessary source component is both SFT-admitted and excluded by the governing SFT domain law",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "carrier_conflict",
+      "step_id": "carrier-conflict"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "Not SFTValid(exact frozen artifact SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires an existential group carrier that is finitely presented and not sofic.",
+      "dependency_claims": [],
+      "premises": [
+        "assume-source-valid",
+        "axiom-contradiction",
+        "carrier-conflict"
+      ],
+      "rule": "negation_introduction",
+      "step_id": "validity-negation"
+    },
+    {
+      "check_ids": [
+        "source-native-distinct",
+        "nontransfer-flags"
+      ],
+      "conclusion": "REGISTERED_SOURCE_VALIDITY_NEGATION",
+      "dependency_claims": [],
+      "premises": [
+        "validity-negation"
+      ],
+      "rule": "nontransfer",
+      "step_id": "nontransfer"
+    }
+  ],
+  "title": "SFT disproof of source-artifact validity: SoficGroups.SourceTopLevelCompressionFinal.exists_finitelyPresented_nonsofic_group"
+}

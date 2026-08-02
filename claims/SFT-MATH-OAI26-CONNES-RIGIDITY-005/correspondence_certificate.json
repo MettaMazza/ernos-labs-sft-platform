@@ -1,0 +1,56 @@
+{
+  "carrier_rejection_used_as_negation": false,
+  "claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-005",
+  "correspondence_identity": "sha256:303dd429540670cd8dd8f0ce09f64e9d08715b6f754c4b77955e8af29c4f348e",
+  "encode_decode_theorems": [
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.toNat_ofNat",
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.ofNat_toNat",
+    "SFTValidation.OpenAI2026.Correspondence.forall_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.exists_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.implication_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.not_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.eventually_iff_generated",
+    "SFTValidation.OpenAI2026.Correspondence.tendsto_iff_generated"
+  ],
+  "lean_axiom_audit": "empty",
+  "lean_report_path": "generated/lean4_validation/reports/openai_2026_obligations_lean4.json",
+  "lean_report_sha256": "sha256:4fb8e605cacfc2f75e8b1d0d1cb2e6805040887d825d83bc3e1b4140dcfbe77b",
+  "logical_shape_preserved": true,
+  "native_formula_hash": "sha256:f38f4a7e2912c82e7917c51e2151610668707c2ebc587ce70f2ae0e72708ac27",
+  "native_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ],
+  "required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "schema": "sft-v3-openai-2026-correspondence-certificate/1",
+  "source_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ],
+  "source_signature_hash": "sha256:2bdd95a8bc297c5a88ca91a2467d31494f7ed1c5e7e9c049f37577e3a7932072",
+  "source_statement_hash": "sha256:2a9d7e3218fc81a3a32459cf4aa08d1eb6b0e3f221c5d12b99102f32549bfe2f",
+  "status": "PROVED",
+  "translation_hash": "sha256:abd4f94c47b55aa7705306eafa971c58b8554816ca52ee0c754d801a687d2c43",
+  "upstream_proof_used_as_derivational_authority": false
+}

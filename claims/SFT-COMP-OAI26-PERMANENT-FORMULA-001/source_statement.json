@@ -1,0 +1,30 @@
+{
+  "atomic_id": "OAI26-COMP-001",
+  "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-001",
+  "declaration": "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "expanded_source_definitions": [],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 27560,
+  "signature_sha256": "sha256:a2783d4157f28229196f3c114cd4e3eb774dd35c129acba36b95d62a5944ce17",
+  "signature_start_line": 27551,
+  "signature_text": "theorem permanent_rational_formula_logarithmic_lower_bound\n    {n : \u2115} (hn : 32 \u2264 n)\n    (f : RationalFormula (Fin n \u00d7 Fin n) \u2102)\n    (hvalid : RationalFormula.Valid f)\n    (hf : RationalFormula.eval f =\n      algebraMap (MvPolynomial (Fin n \u00d7 Fin n) \u2102)\n        (FractionRing (MvPolynomial (Fin n \u00d7 Fin n) \u2102))\n        (permanentPolynomial n)) :\n    (n : \u211d) ^ 4 / (192 * Real.logb 2 (n : \u211d)) \u2264\n      (RationalFormula.variableLeaves f : \u211d) :=",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "Permanent.lean",
+  "source_file_sha256": "sha256:bdd53fe0b026c9b9e369db67b3c040e5d3eeffd04d13f00e041d23eb33603111",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

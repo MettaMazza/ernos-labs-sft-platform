@@ -1,0 +1,32 @@
+{
+  "claim_id": "SFT-MATH-OAI26-MULTICOLOUR-RAMSEY-VALIDITY-007",
+  "declaration": "ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit",
+  "exact_quantifier_and_conjunct_order": [
+    "first conjunct: forall k : Nat, 2 <= k implies the explicit real lower bound for triangleRamseyNumber k",
+    "second conjunct: Tendsto atTop atTop of k-th roots of triangleRamseyNumber k"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-MULTICOLOUR-RAMSEY-007",
+  "quotation_identity": "sha256:535973a8ecd20076bebf18eaa92fce265d3c27bbb58b8a98edf853bf2c3f1b1b",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "erdos_problem_183_explicit",
+    "triangleRamseyNumber",
+    "Real.exp",
+    "Tendsto"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:a4d1d6c9a83ee6b21847d7780bb20a49fd6bfdeb2d1758cd828826462441f0f2",
+  "signature_text": "theorem erdos_problem_183_explicit :\n    (\u2200 k : \u2115, 2 \u2264 k \u2192\n      (((1 : \u211d) / (6 * Real.exp 38)) *\n        (k : \u211d) ^ ((1 : \u211d) / 3) / Real.log (k : \u211d)) ^ k \u2264\n          (triangleRamseyNumber k : \u211d)) \u2227\n      Filter.Tendsto\n        (fun k : \u2115 =>\n          (triangleRamseyNumber k : \u211d) ^ ((1 : \u211d) / (k : \u211d)))\n        atTop atTop := by",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MulticolorTriangleRamsey.lean",
+  "source_file_sha256": "sha256:a87bd60efe16dab00ba07ea4069f22b8dbc991b3f3ba34ae5088b1f8b1987cd3",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:054002dbd4c006bd494822308daff8403f3647e62c378874e297e80fed0568ac",
+  "source_statement_path": "claims/SFT-MATH-OAI26-MULTICOLOUR-RAMSEY-007/source_statement.json"
+}

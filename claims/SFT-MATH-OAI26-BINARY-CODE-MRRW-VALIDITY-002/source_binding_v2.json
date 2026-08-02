@@ -1,0 +1,34 @@
+{
+  "claim_id": "SFT-MATH-OAI26-BINARY-CODE-MRRW-VALIDITY-002",
+  "declaration": "MetricCodes.Johnson.binaryRate_lt_mrrw",
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall d : Real",
+    "hypothesis 0 < d",
+    "hypothesis d < 1/2",
+    "conclusion binaryRate d < mrrwRate d"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-BINARY-CODE-MRRW-002",
+  "quotation_identity": "sha256:39ef114207747468288d8334ccb31c197be738be8bb5d0456c05644577ca317f",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "binaryRate_lt_mrrw",
+    "binaryRate",
+    "mrrwRate",
+    "limsup"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:b721fc6b61325e09140e6c75d9f03d50655ff2187b10cbe2718a77eddb1bb721",
+  "signature_text": "theorem binaryRate_lt_mrrw\n    {d : \u211d} (hd : 0 < d) (hdhalf : d < (1 : \u211d) / 2) :\n    MetricCodes.Hamming.binaryRate d < mrrwRate d := by",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MetricCodes.lean",
+  "source_file_sha256": "sha256:f8b2b1b59f094005f37f34a746f30a2aa3afb6341d63151ee4f602758731eb32",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:0e699f151c4e1490a6ea851dd06093da1cd2ab78d1290bed1f9c5cd420ab3b7e",
+  "source_statement_path": "claims/SFT-MATH-OAI26-BINARY-CODE-MRRW-002/source_statement.json"
+}

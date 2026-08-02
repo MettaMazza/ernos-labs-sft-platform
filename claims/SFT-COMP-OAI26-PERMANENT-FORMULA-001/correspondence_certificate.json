@@ -1,0 +1,50 @@
+{
+  "carrier_rejection_used_as_negation": false,
+  "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-001",
+  "correspondence_identity": "sha256:ae11366fd5959760c2bf7a0879be79a69b8cf5b9734a290588973fd8c1409976",
+  "encode_decode_theorems": [
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.toNat_ofNat",
+    "SFTValidation.OpenAI2026.Correspondence.GeneratedOrdinal.ofNat_toNat",
+    "SFTValidation.OpenAI2026.Correspondence.forall_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.exists_iff_of_preserves",
+    "SFTValidation.OpenAI2026.Correspondence.implication_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.not_iff_of_iff",
+    "SFTValidation.OpenAI2026.Correspondence.eventually_iff_generated",
+    "SFTValidation.OpenAI2026.Correspondence.tendsto_iff_generated"
+  ],
+  "lean_axiom_audit": "empty",
+  "lean_report_path": "generated/lean4_validation/reports/openai_2026_obligations_lean4.json",
+  "lean_report_sha256": "sha256:4fb8e605cacfc2f75e8b1d0d1cb2e6805040887d825d83bc3e1b4140dcfbe77b",
+  "logical_shape_preserved": true,
+  "native_formula_hash": "sha256:61273f9aa8700e823c194f648718038e1854aa9caf29bfc886e9376781cf9396",
+  "native_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "required_preservation": [
+    "binder order and dependency",
+    "forall/exists polarity",
+    "implication direction",
+    "strict versus non-strict comparison",
+    "every conjunction field",
+    "source negation as actual predicate negation"
+  ],
+  "schema": "sft-v3-openai-2026-correspondence-certificate/1",
+  "source_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "source_signature_hash": "sha256:a2783d4157f28229196f3c114cd4e3eb774dd35c129acba36b95d62a5944ce17",
+  "source_statement_hash": "sha256:504b394627a623c0efeb8c2c73e6d9fab79502c10e2b6494768c410eadb881f4",
+  "status": "PROVED",
+  "translation_hash": "sha256:d91b79de6012de0443695ab5d186d29f19b66d6e90451403cef183a5be096a61",
+  "upstream_proof_used_as_derivational_authority": false
+}

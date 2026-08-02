@@ -1,0 +1,38 @@
+{
+  "claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-VALIDITY-005",
+  "declaration": "ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+  "exact_quantifier_and_conjunct_order": [
+    "exists Lambda : CountableDiscreteGroup",
+    "exists Gamma : Nat -> CountableDiscreteGroup",
+    "FG Lambda and forall n, FG (Gamma n)",
+    "IsICC Lambda and forall n, IsICC (Gamma n)",
+    "HasKazhdanPropertyT Lambda and forall n, HasKazhdanPropertyT (Gamma n)",
+    "forall n, TracialGroupFactorsIsomorphic (Gamma n) Lambda",
+    "forall m n, TracialGroupFactorsIsomorphic (Gamma m) (Gamma n)",
+    "forall m n, m != n implies not GroupsIsomorphic (Gamma m) (Gamma n)",
+    "forall n, not GroupsIsomorphic Lambda (Gamma n)"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-CONNES-RIGIDITY-005",
+  "quotation_identity": "sha256:a38fe9a57a257bc6984d84cfc03e521e561de528b540d192d326f78a60db954b",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors",
+    "IsICC",
+    "TracialGroupFactorsIsomorphic"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:2bdd95a8bc297c5a88ca91a2467d31494f7ed1c5e7e9c049f37577e3a7932072",
+  "signature_text": "    exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors :\n    \u2203 (\u039b : ConnesRigidity.CountableDiscreteGroup.{0})\n      (\u0393 : \u2115 \u2192 ConnesRigidity.CountableDiscreteGroup.{0}),\n      Group.FG \u039b \u2227\n      (\u2200 n, Group.FG (\u0393 n)) \u2227\n      ConnesRigidity.IsICC \u039b \u2227\n      (\u2200 n, ConnesRigidity.IsICC (\u0393 n)) \u2227\n      ConnesRigidity.HasKazhdanPropertyT \u039b \u2227\n      (\u2200 n, ConnesRigidity.HasKazhdanPropertyT (\u0393 n)) \u2227\n      (\u2200 n, ConnesRigidity.TracialGroupFactorsIsomorphic (\u0393 n) \u039b) \u2227\n      (\u2200 m n, ConnesRigidity.TracialGroupFactorsIsomorphic (\u0393 m) (\u0393 n)) \u2227\n      (\u2200 \u2983m n : \u2115\u2984, m \u2260 n \u2192\n        \u00acConnesRigidity.GroupsIsomorphic (\u0393 m) (\u0393 n)) \u2227\n      (\u2200 n, \u00acConnesRigidity.GroupsIsomorphic \u039b (\u0393 n)) := by",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/ConnesRigidity.lean",
+  "source_file_sha256": "sha256:31f6c419f341ee6aa5b03bc15800a9d8ee2c654c344aab90bdef0639353ccc91",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:2a9d7e3218fc81a3a32459cf4aa08d1eb6b0e3f221c5d12b99102f32549bfe2f",
+  "source_statement_path": "claims/SFT-MATH-OAI26-CONNES-RIGIDITY-005/source_statement.json"
+}

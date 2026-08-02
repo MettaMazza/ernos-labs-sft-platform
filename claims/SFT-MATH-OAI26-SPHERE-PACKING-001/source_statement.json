@@ -1,0 +1,42 @@
+{
+  "atomic_id": "OAI26-MATH-001",
+  "claim_id": "SFT-MATH-OAI26-SPHERE-PACKING-001",
+  "declaration": "PackingBounds.sharpFullCohnElkiesManuscriptConclusions",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "root_before_infimum: Tendsto over generated dimension d",
+    "root_before_infimum_vanishing_error: exists err : Nat -> Real; Tendsto err; forall positive d, exact equality",
+    "linear_program_root: Tendsto over generated dimension d",
+    "natural_logarithmic_rate: Tendsto over generated dimension d",
+    "natural_vanishing_exponential_error: exists err : Nat -> Real; Tendsto err; eventually forall d, exact equality",
+    "universal_nonnegative_delta: exists delta : Nat -> Real; Tendsto delta; forall d nonnegative; eventually forall d and every FullAdmissible f, lower bound",
+    "base_two_exponent_positive: closed strict inequality",
+    "base_two_decimal_certificate: closed interval membership",
+    "base_two_logarithmic_rate: Tendsto over generated dimension d",
+    "base_two_vanishing_exponential_error: exists err : Nat -> Real; Tendsto err; eventually forall d, exact equality"
+  ],
+  "expanded_source_definitions": [
+    {
+      "end_line": 55488,
+      "label": "SharpFullCohnElkiesManuscriptConclusions",
+      "sha256": "sha256:66652a6ffcee7dc3ee71a66d63acc2f31e1b6ba16d3b2554d5651b2838fb3804",
+      "start_line": 55430,
+      "text": "structure SharpFullCohnElkiesManuscriptConclusions : Prop where\n  root_before_infimum :\n    Tendsto\n      (fun d : \u2115 =>\n        sInf {q : \u211d | \u2203 f : FullAdmissible d,\n          fullQuotient f ^ ((d : \u211d)\u207b\u00b9) = q} /\n          Real.sqrt (d : \u211d))\n      atTop (\ud835\udcdd (1 / Real.pi))\n  root_before_infimum_vanishing_error :\n    \u2203 err : \u2115 \u2192 \u211d,\n      Tendsto err atTop (\ud835\udcdd 0) \u2227\n      \u2200 d : \u2115, 0 < d \u2192\n        sInf {q : \u211d | \u2203 f : FullAdmissible d,\n          fullQuotient f ^ ((d : \u211d)\u207b\u00b9) = q} =\n          (1 / Real.pi + err d) * Real.sqrt (d : \u211d)\n  linear_program_root :\n    Tendsto\n      (fun d : \u2115 => (fullLinearProgram d) ^ ((d : \u211d)\u207b\u00b9))\n      atTop (\ud835\udcdd (Real.sqrt (Real.exp 1 / (2 * Real.pi))))\n  natural_logarithmic_rate :\n    Tendsto\n      (fun d : \u2115 => Real.log (fullLinearProgram d) / (d : \u211d))\n      atTop\n      (\ud835\udcdd ((1 / 2 : \u211d) * Real.log (Real.exp 1 / (2 * Real.pi))))\n  natural_vanishing_exponential_error :\n    \u2203 err : \u2115 \u2192 \u211d,\n      Tendsto err atTop (\ud835\udcdd 0) \u2227\n      (\u2200\u1da0 d : \u2115 in atTop,\n        fullLinearProgram d =\n          (Real.sqrt (Real.exp 1 / (2 * Real.pi)) + err d) ^ d)\n  universal_nonnegative_delta :\n    \u2203 \u03b4 : \u2115 \u2192 \u211d,\n      Tendsto \u03b4 atTop (\ud835\udcdd 0) \u2227\n      (\u2200 d : \u2115, 0 \u2264 \u03b4 d) \u2227\n      (\u2200\u1da0 d : \u2115 in atTop, \u2200 f : FullAdmissible d,\n        (2 : \u211d) ^ d / CohnElkies.unitBallVolume d *\n          (Real.sqrt (Real.exp 1 / (2 * Real.pi)) - \u03b4 d) ^ d \u2264\n            fullQuotient f)\n  base_two_exponent_positive :\n    0 < (1 / 2 : \u211d) * Real.logb 2 (2 * Real.pi / Real.exp 1)\n  base_two_decimal_certificate :\n    (1 / 2 : \u211d) * Real.logb 2 (2 * Real.pi / Real.exp 1) \u2208\n      Set.Ioo\n        (0.604400544291677695341677307053 : \u211d)\n        0.604400544291677695341677307054\n  base_two_logarithmic_rate :\n    Tendsto\n      (fun d : \u2115 => Real.logb 2 (fullLinearProgram d) / (d : \u211d))\n      atTop\n      (\ud835\udcdd (-((1 / 2 : \u211d) * Real.logb 2 (2 * Real.pi / Real.exp 1))))\n  base_two_vanishing_exponential_error :\n    \u2203 err : \u2115 \u2192 \u211d,\n      Tendsto err atTop (\ud835\udcdd 0) \u2227\n      (\u2200\u1da0 d : \u2115 in atTop,\n        fullLinearProgram d =\n          (2 : \u211d) ^\n            (-((1 / 2 : \u211d) *\n                Real.logb 2 (2 * Real.pi / Real.exp 1) + err d) *\n              (d : \u211d)))"
+    }
+  ],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 55592,
+  "signature_sha256": "sha256:eb1aa1bf8b0b8df89752c05490ece03e2163aa62104ec3357b8647469771f763",
+  "signature_start_line": 55591,
+  "signature_text": "theorem sharpFullCohnElkiesManuscriptConclusions :\n    SharpFullCohnElkiesManuscriptConclusions :=",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "SpherePacking.lean",
+  "source_file_sha256": "sha256:5e8a4d4ffa0c3b8c488f99ecedc43943dff63513d65bd5bd70d5e33beccc2c0f",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

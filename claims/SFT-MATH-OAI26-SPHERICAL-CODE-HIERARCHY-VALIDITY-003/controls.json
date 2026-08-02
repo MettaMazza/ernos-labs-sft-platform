@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-MATH-OAI26-SPHERICAL-CODE-HIERARCHY-VALIDITY-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the false premise that the frozen source axiom vector is empty",
+      "kind": "false_premise",
+      "observed_behavior": "the exact three-entry source vector is nonempty",
+      "passed": true,
+      "receipt_hash": "sha256:db357fe5db184cac200c9faf89f8f32a28c631f914780770858c6e2c970e9b7a"
+    },
+    {
+      "expected_behavior": "reject any changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "the changed identity differs from the executed source manifest",
+      "passed": true,
+      "receipt_hash": "sha256:42c268de9d96d7d4e3921825e48e05f2e4f9103331fa692b0076f9a7220a7117"
+    },
+    {
+      "expected_behavior": "reject a missing duplicate or additional complete contradiction route",
+      "kind": "tampered_artifact",
+      "observed_behavior": "the complete route product has one all-evidence survivor",
+      "passed": true,
+      "receipt_hash": "sha256:b3bc58e549cebd706bd62246465099881ef40de01912e2dca04dd70dcaaba171"
+    },
+    {
+      "expected_behavior": "reject transfer from the SFT-native reconstruction to the external artifact",
+      "kind": "boundary",
+      "observed_behavior": "the contradiction proves only the exact source-validity negation and records the reconstruction as distinct",
+      "passed": true,
+      "receipt_hash": "sha256:a01bb9075a3a7bae8e70f30d6e31754228ec3b7612f3eca4133273d122deaee2"
+    }
+  ]
+}

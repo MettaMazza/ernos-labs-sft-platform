@@ -1,0 +1,39 @@
+{
+  "claim_id": "SFT-MATH-OAI26-COMPACTNESS-VALIDITY-008",
+  "declaration": "CompactnessConjecture.quantitativeCompactnessCounterexample",
+  "exact_quantifier_and_conjunct_order": [
+    "exists finite family of FiniteGraph and real constants c C",
+    "family nonempty",
+    "forall forbidden in family: connected, bipartite and cyclic",
+    "positive c and positive C",
+    "UniformMemberLower family c",
+    "forall n and every host SimpleGraph (Fin n), FamilyFree implies the sixteenth-power host bound",
+    "forall n, the sixteenth-power familyExtremal bound",
+    "positive 1/48 and exact exponent identity",
+    "not IsCompactFamily family and not CompactnessConjectureStatement"
+  ],
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-COMPACTNESS-008",
+  "quotation_identity": "sha256:5ec35748fd5d7487bdc708d49cd64f201fd0a9fd69adcbbaf9fe7c873a27b6da",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "quantitativeCompactnessCounterexample",
+    "UniformMemberLower",
+    "IsCompactFamily",
+    "atTop"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:453ebb81feb0acb38fe1f7a150c0bf45e8eb42396b708a1c4bf9cca9ef52dd92",
+  "signature_text": "theorem quantitativeCompactnessCounterexample :\n    \u2203 (family : Finset FiniteGraph) (c C : \u211d),\n      family.Nonempty \u2227\n      (\u2200 forbidden \u2208 family,\n        forbidden.graph.Connected \u2227 forbidden.graph.IsBipartite \u2227\n          \u00ac forbidden.graph.IsAcyclic) \u2227\n      0 < c \u2227\n      0 < C \u2227\n      UniformMemberLower family c \u2227\n      (\u2200 (n : \u2115) (host : SimpleGraph (Fin n)),\n        FamilyFree family host \u2192\n          (host.edgeFinset.card : \u211d) ^ 16 \u2264 C * (n : \u211d) ^ 21) \u2227\n      (\u2200 n : \u2115,\n        (familyExtremal family n : \u211d) ^ 16 \u2264 C * (n : \u211d) ^ 21) \u2227\n      (0 : \u211d) < 1 / 48 \u2227\n      (21 : \u211d) / 16 = (4 : \u211d) / 3 - 1 / 48 \u2227\n      \u00ac IsCompactFamily family \u2227\n      \u00ac CompactnessConjectureStatement := by",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/CompactnessAndDegeneracy.lean",
+  "source_file_sha256": "sha256:17637d0697b9657f221dc1aa734cb1d19765b50edbfdda1dc3446874735fbd81",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:493dd45eca5bf57c39eb8983ba85518824a7c5ef270c99e85a7c3bb48c778f28",
+  "source_statement_path": "claims/SFT-MATH-OAI26-COMPACTNESS-008/source_statement.json"
+}

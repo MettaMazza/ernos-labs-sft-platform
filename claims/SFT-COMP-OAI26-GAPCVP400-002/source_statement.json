@@ -1,0 +1,37 @@
+{
+  "atomic_id": "OAI26-COMP-002",
+  "claim_id": "SFT-COMP-OAI26-GAPCVP400-002",
+  "declaration": "GapCVP.Comparator.gapCVP400IsNPHard",
+  "derivational_authority_for_sft": false,
+  "exact_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ],
+  "expanded_source_definitions": [
+    {
+      "end_line": 130214,
+      "label": "PromiseReduction and IsNPHardPromise",
+      "sha256": "sha256:f7792b7125f5d38c856f723ff6b2f459533a9c3853eaecc9828b4cfe67f5ecaf",
+      "start_line": 130203,
+      "text": "structure PromiseReduction (language : BitLanguage) (problem : PromiseProblem) where\n  map : List Bool \u2192 List Bool\n  polynomial_time : Nonempty\n    (BitTM map)\n  completeness : \u2200 input, language input \u2192 problem.yes (map input)\n  soundness : \u2200 input, \u00ac language input \u2192 problem.no (map input)\n\ndef IsNPHardPromise (problem : PromiseProblem) : Bool :=\n  @decide\n    (\u2200 language : BitLanguage,\n      IsNP language \u2192 Nonempty (PromiseReduction language problem))\n    (Classical.propDecidable _)"
+    }
+  ],
+  "schema": "sft-v3-external-theorem-source-statement/1",
+  "signature_end_line": 130398,
+  "signature_sha256": "sha256:ba8e333d4bd14e4d5317eb9fc1672fd643151ba5a3ad51b64eafef209d9579dc",
+  "signature_start_line": 130398,
+  "signature_text": "theorem gapCVP400IsNPHard : IsNPHardPromise gapCVP400Promise :=",
+  "source_capture_id": "OPENAI-TEN-ADVANCES-MATHEMATICS-2026-08-01-V1",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_file": "GapCVP.lean",
+  "source_file_sha256": "sha256:625d84181085b04f9214bab855880d96c0657414509976cf47fb4e5ef1cc541a",
+  "upstream_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_sorry_count": 0
+}

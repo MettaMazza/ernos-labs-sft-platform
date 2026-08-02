@@ -1,0 +1,375 @@
+{
+  "atomic_id": "OAI26-MATH-008",
+  "branch": "mathematics",
+  "checks": [
+    {
+      "actual": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "check_id": "source-axiom-vector",
+      "expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "exact_list"
+    },
+    {
+      "check_id": "axiom-zero-nonzero-contradiction",
+      "kind": "zero_nonzero_contradiction",
+      "observed": 3,
+      "required": 0
+    },
+    {
+      "check_id": "source-token-coverage",
+      "kind": "token_coverage",
+      "observed": [
+        "quantitativeCompactnessCounterexample",
+        "UniformMemberLower",
+        "IsCompactFamily",
+        "atTop"
+      ],
+      "required": [
+        "quantitativeCompactnessCounterexample",
+        "UniformMemberLower",
+        "IsCompactFamily",
+        "atTop"
+      ]
+    },
+    {
+      "check_id": "source-native-distinct",
+      "kind": "distinct_identity",
+      "left": "sha256:493dd45eca5bf57c39eb8983ba85518824a7c5ef270c99e85a7c3bb48c778f28",
+      "right": "sha256:8457196c58c9aa268b99acfd6d2c7d769a26e56165ff27d6a25cfc479a558fee"
+    },
+    {
+      "check_id": "nontransfer-flags",
+      "kind": "all_false",
+      "values": [
+        false,
+        false
+      ]
+    }
+  ],
+  "claim_id": "SFT-MATH-OAI26-COMPACTNESS-VALIDITY-008",
+  "contradiction_summary": "SFT validity forces an empty axiom vector and admitted carriers; the exact source exposes three axioms and the theorem-specific excluded component. The assumption therefore entails a contradiction.",
+  "dependencies": [
+    "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+    "SFT-MATH-LOGIC-PROOF-001",
+    "SFT-MATH-COMB-EXTREMAL-SET-SYSTEM-007",
+    "SFT-MATH-GRAPH-MATCHING-COVERING-PACKING-007",
+    "SFT-MATH-LIMIT-CONTINUUM-002",
+    "SFT-FOUNDATION-EXACT-OPERATIONS-001"
+  ],
+  "derivation_identity": "sha256:bffb7f1071703b37056a96173e4a1087def08478fe9167804f57aaf41b784bc1",
+  "domain_contradiction": "SFT extremal graph laws close exact finite host/family censuses; the completed eventual filter and unrestricted real exponent required by the source witness are excluded.",
+  "native_reconstruction_used_as_validity_premise": false,
+  "necessary_source_component": "eventually-atTop real lower bounds, all-size fractional powers and a completed compactness predicate",
+  "original_reconstruction_claim_id": "SFT-MATH-OAI26-COMPACTNESS-008",
+  "original_reconstruction_formula_hash": "sha256:8457196c58c9aa268b99acfd6d2c7d769a26e56165ff27d6a25cfc479a558fee",
+  "outcome_axis_present": false,
+  "primary_preflight_certificate": {
+    "actual_contradiction_derived": true,
+    "axiom_count": 3,
+    "check_count": 5,
+    "claim_id": "SFT-MATH-OAI26-COMPACTNESS-VALIDITY-008",
+    "dependency_count": 6,
+    "native_reconstruction_transferred": false,
+    "negation_hash": "sha256:1210ac1906b686126f7976cf67a549684941193681ba293dad9d92407c4e956a",
+    "outcome_axis_present": false,
+    "proof_outcome": "DISPROVED",
+    "source_statement_hash": "sha256:493dd45eca5bf57c39eb8983ba85518824a7c5ef270c99e85a7c3bb48c778f28",
+    "step_count": 10,
+    "target_hash": "sha256:29ecd35c0170775158b4b0e1dbb9ece53b38bc18147e9114850f3dea98fa92d8"
+  },
+  "proof_kind": "validity_contradiction",
+  "proof_outcome": "DISPROVED",
+  "quoted_quantifier_and_conjunct_order": [
+    "exists finite family of FiniteGraph and real constants c C",
+    "family nonempty",
+    "forall forbidden in family: connected, bipartite and cyclic",
+    "positive c and positive C",
+    "UniformMemberLower family c",
+    "forall n and every host SimpleGraph (Fin n), FamilyFree implies the sixteenth-power host bound",
+    "forall n, the sixteenth-power familyExtremal bound",
+    "positive 1/48 and exact exponent identity",
+    "not IsCompactFamily family and not CompactnessConjectureStatement"
+  ],
+  "registered_negation": "Not SFTValid(exact frozen artifact CompactnessConjecture.quantitativeCompactnessCounterexample): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires eventually-atTop real lower bounds, all-size fractional powers and a completed compactness predicate.",
+  "registry_identity": "sha256:6e6b712f125a4c0e9d4c0dad864c6fd77416435108aa3a38088b15aa6e4cbafc",
+  "required_source_tokens": [
+    "quantitativeCompactnessCounterexample",
+    "UniformMemberLower",
+    "IsCompactFamily",
+    "atTop"
+  ],
+  "route_dimensions": [
+    {
+      "choices": [
+        [
+          "stale-or-paraphrased-artifact",
+          false,
+          "A changed artifact cannot decide the registered validity proposition."
+        ],
+        [
+          "exact-frozen-artifact",
+          true,
+          "The declaration, file, commit, signature and source hashes match the frozen artifact."
+        ]
+      ],
+      "key": "source_binding"
+    },
+    {
+      "choices": [
+        [
+          "weakened-or-substituted-proposition",
+          false,
+          "A native reconstruction is not the exact quoted source proposition."
+        ],
+        [
+          "exact-statement-and-quantifier-quotation",
+          true,
+          "Every source binder, hypothesis and conjunct is retained in order."
+        ]
+      ],
+      "key": "quotation"
+    },
+    {
+      "choices": [
+        [
+          "axiom-vector-hidden-or-assumed-empty",
+          false,
+          "The submitted proof dependency vector must be exposed exactly."
+        ],
+        [
+          "nonempty-source-axiom-vector-exposed",
+          true,
+          "The frozen manifest exposes the exact nonempty source axiom vector."
+        ]
+      ],
+      "key": "axiom_evidence"
+    },
+    {
+      "choices": [
+        [
+          "necessary-source-component-omitted",
+          false,
+          "Deleting the theorem-specific carrier or totality requirement changes the proposition."
+        ],
+        [
+          "necessary-source-component-exposed",
+          true,
+          "The exact theorem-specific component conflicting with the SFT domain is retained."
+        ]
+      ],
+      "key": "carrier_evidence"
+    },
+    {
+      "choices": [
+        [
+          "invented-validity-rule",
+          false,
+          "A new rule cannot replace the pre-existing SFT admission and domain laws."
+        ],
+        [
+          "preexisting-admission-and-domain-laws",
+          true,
+          "Only prior model-admitted SFT laws govern the contradiction."
+        ]
+      ],
+      "key": "governing_law"
+    },
+    {
+      "choices": [
+        [
+          "inadmissibility-asserted-without-negated-target",
+          false,
+          "A label or missing receipt is not a proof of the registered validity negation."
+        ],
+        [
+          "assume-valid-and-derive-actual-contradiction",
+          true,
+          "The proof assumes SFT validity and derives both a mandatory condition and its exact failure."
+        ]
+      ],
+      "key": "contradiction_chain"
+    },
+    {
+      "choices": [
+        [
+          "unexecuted-or-sampled-evidence",
+          false,
+          "Every finite source, axiom, token, dependency and identity check must execute."
+        ],
+        [
+          "complete-executable-evidence",
+          true,
+          "Every registered finite check is recomputed exactly."
+        ]
+      ],
+      "key": "execution"
+    },
+    {
+      "choices": [
+        [
+          "native-proof-transferred-to-source",
+          false,
+          "Proof of a different SFT-native proposition cannot validate the source artifact."
+        ],
+        [
+          "native-reconstruction-kept-distinct",
+          true,
+          "The reconstruction is retained separately and supplies no premise for source validity."
+        ]
+      ],
+      "key": "transfer_boundary"
+    }
+  ],
+  "schema": "sft-v3-openai-2026-source-validity-disproof/2",
+  "sft_validity_proposition": "SFTValid(exact frozen artifact CompactnessConjecture.quantitativeCompactnessCounterexample)",
+  "source_binding_hash": "sha256:f4da4e7e9a823bb23b354f554a645ccb6c3941184366e3a792ec5bc912686292",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declaration": "CompactnessConjecture.quantitativeCompactnessCounterexample",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_sha256": "sha256:17637d0697b9657f221dc1aa734cb1d19765b50edbfdda1dc3446874735fbd81",
+  "source_quantifier_and_conjunct_order": [
+    "exists finite family of FiniteGraph and real constants c C",
+    "family nonempty",
+    "forall forbidden in family: connected, bipartite and cyclic",
+    "positive c and positive C",
+    "UniformMemberLower family c",
+    "forall n and every host SimpleGraph (Fin n), FamilyFree implies the sixteenth-power host bound",
+    "forall n, the sixteenth-power familyExtremal bound",
+    "positive 1/48 and exact exponent identity",
+    "not IsCompactFamily family and not CompactnessConjectureStatement"
+  ],
+  "source_statement_hash": "sha256:493dd45eca5bf57c39eb8983ba85518824a7c5ef270c99e85a7c3bb48c778f28",
+  "steps": [
+    {
+      "check_ids": [],
+      "conclusion": "SFT validity requires empty registered axioms, zero free parameters, generated-domain proof objects and a root-bound complete trace",
+      "dependency_claims": [
+        "SFT-FOUNDATION-ADMISSION-ENFORCEMENT-001",
+        "SFT-MATH-LOGIC-PROOF-001"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "admission-laws"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFT extremal graph laws close exact finite host/family censuses; the completed eventual filter and unrestricted real exponent required by the source witness are excluded.",
+      "dependency_claims": [
+        "SFT-MATH-COMB-EXTREMAL-SET-SYSTEM-007",
+        "SFT-MATH-GRAPH-MATCHING-COVERING-PACKING-007",
+        "SFT-MATH-LIMIT-CONTINUUM-002",
+        "SFT-FOUNDATION-EXACT-OPERATIONS-001"
+      ],
+      "premises": [],
+      "rule": "dependency_composition",
+      "step_id": "domain-laws"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the exact frozen declaration, quantifiers, axiom vector and theorem-specific source tokens are fixed",
+      "dependency_claims": [],
+      "premises": [],
+      "rule": "exact_source_extraction",
+      "step_id": "exact-artifact"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "SFTValid(exact frozen artifact CompactnessConjecture.quantitativeCompactnessCounterexample)",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact"
+      ],
+      "rule": "validity_assumption",
+      "step_id": "assume-source-valid"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the submitted artifact has zero registered axioms and every necessary source carrier is SFT-admitted",
+      "dependency_claims": [],
+      "premises": [
+        "admission-laws",
+        "assume-source-valid"
+      ],
+      "rule": "definition_elimination",
+      "step_id": "validity-requirements"
+    },
+    {
+      "check_ids": [
+        "source-axiom-vector",
+        "source-token-coverage"
+      ],
+      "conclusion": "the artifact has three registered axioms and requires eventually-atTop real lower bounds, all-size fractional powers and a completed compactness predicate",
+      "dependency_claims": [],
+      "premises": [
+        "exact-artifact",
+        "domain-laws"
+      ],
+      "rule": "exact_source_extraction",
+      "step_id": "source-failures"
+    },
+    {
+      "check_ids": [
+        "axiom-zero-nonzero-contradiction"
+      ],
+      "conclusion": "the same exact artifact has both zero registered axioms and three registered axioms",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "contradiction",
+      "step_id": "axiom-contradiction"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "the same necessary source component is both SFT-admitted and excluded by the governing SFT domain law",
+      "dependency_claims": [],
+      "premises": [
+        "validity-requirements",
+        "source-failures"
+      ],
+      "rule": "carrier_conflict",
+      "step_id": "carrier-conflict"
+    },
+    {
+      "check_ids": [],
+      "conclusion": "Not SFTValid(exact frozen artifact CompactnessConjecture.quantitativeCompactnessCounterexample): assuming this artifact is an SFT-valid derivation forces the axiom vector to be empty and every necessary carrier to be SFT-admitted, while the exact frozen source exposes the nonempty vector [propext, Classical.choice, Quot.sound] and requires eventually-atTop real lower bounds, all-size fractional powers and a completed compactness predicate.",
+      "dependency_claims": [],
+      "premises": [
+        "assume-source-valid",
+        "axiom-contradiction",
+        "carrier-conflict"
+      ],
+      "rule": "negation_introduction",
+      "step_id": "validity-negation"
+    },
+    {
+      "check_ids": [
+        "source-native-distinct",
+        "nontransfer-flags"
+      ],
+      "conclusion": "REGISTERED_SOURCE_VALIDITY_NEGATION",
+      "dependency_claims": [],
+      "premises": [
+        "validity-negation"
+      ],
+      "rule": "nontransfer",
+      "step_id": "nontransfer"
+    }
+  ],
+  "title": "SFT disproof of source-artifact validity: CompactnessConjecture.quantitativeCompactnessCounterexample"
+}

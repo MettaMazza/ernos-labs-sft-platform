@@ -1,0 +1,25 @@
+{
+  "atomic_id": "OAI26-COMP-002",
+  "claim_id": "SFT-COMP-OAI26-GAPCVP400-002",
+  "governing_grammar_composition": "generated bit languages x NP witness machines x total reduction maps x exact lattice instances x promise verdict/resource traces",
+  "governing_preexisting_claims": [
+    "SFT-MATH-GEOM-DISCRETE-LATTICE-POLYTOPE-006",
+    "SFT-MATH-GEOM-EUCLIDEAN-DISTANCE-002",
+    "SFT-COMP-CPLXX-REDUCTION-COMPLETE-PROBLEM-021",
+    "SFT-COMP-CPLXX-APPROXIMATION-RATIO-026"
+  ],
+  "native_formula": "For every admissible generated bit language carrying an exact SFT IsNP witness, there exists a total generated bit-list reduction to the exact encoded gapCVP400 promise, a polynomial-resource machine certificate, and complete per-input yes-preservation and no-preservation proofs; the four PromiseReduction fields are retained.",
+  "outcome_axis_present": false,
+  "proof_body_imported": false,
+  "registry_identity": "sha256:5d95e95e2a4d80bc98f325e922ef72514993c926b583e3f18975efd8d30cebb0",
+  "registry_path": "census/openai_ten_advances_2026_sft_obligation_registry_v1.json",
+  "schema": "sft-v3-external-theorem-native-translation/1",
+  "source_declaration": "GapCVP.Comparator.gapCVP400IsNPHard",
+  "source_quantifier_and_conjunct_order": [
+    "forall language : BitLanguage",
+    "IsNP language implies Nonempty (PromiseReduction language gapCVP400Promise)",
+    "each PromiseReduction existentially carries a total bit-list map and polynomial-time BitTM witness",
+    "forall input, language input implies target yes",
+    "forall input, not language input implies target no"
+  ]
+}

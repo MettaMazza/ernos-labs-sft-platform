@@ -1,0 +1,36 @@
+{
+  "claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-VALIDITY-001",
+  "declaration": "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
+  "exact_quantifier_and_conjunct_order": [
+    "implicit forall n : Nat",
+    "hypothesis 32 <= n",
+    "forall f : RationalFormula (Fin n x Fin n) Complex",
+    "hypothesis RationalFormula.Valid f",
+    "hypothesis eval f equals the fraction-ring image of permanentPolynomial n",
+    "conclusion n^4/(192*log base 2 n) <= variableLeaves f"
+  ],
+  "original_reconstruction_claim_id": "SFT-COMP-OAI26-PERMANENT-FORMULA-001",
+  "quotation_identity": "sha256:5436dcda466ea368b185aa820686faa5e806fba183c469af34b8ec939af7830f",
+  "quotation_preserves_source_syntax_exactly": true,
+  "required_source_tokens": [
+    "permanent_rational_formula_logarithmic_lower_bound",
+    "RationalFormula",
+    "FractionRing",
+    "Real.logb"
+  ],
+  "schema": "sft-v3-openai-2026-exact-source-quotation/2",
+  "semantic_native_correspondence_asserted": false,
+  "signature_sha256": "sha256:a2783d4157f28229196f3c114cd4e3eb774dd35c129acba36b95d62a5944ce17",
+  "signature_text": "theorem permanent_rational_formula_logarithmic_lower_bound\n    {n : \u2115} (hn : 32 \u2264 n)\n    (f : RationalFormula (Fin n \u00d7 Fin n) \u2102)\n    (hvalid : RationalFormula.Valid f)\n    (hf : RationalFormula.eval f =\n      algebraMap (MvPolynomial (Fin n \u00d7 Fin n) \u2102)\n        (FractionRing (MvPolynomial (Fin n \u00d7 Fin n) \u2102))\n        (permanentPolynomial n)) :\n    (n : \u211d) ^ 4 / (192 * Real.logb 2 (n : \u211d)) \u2264\n      (RationalFormula.variableLeaves f : \u211d) :=",
+  "source_commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+  "source_declared_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_file_path": "experiments/external_sources/mathematics/openai_ten_advances_mathematics_2026-08-01_v1/upstream_tree/ten-proofs-94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/Permanent.lean",
+  "source_file_sha256": "sha256:bdd53fe0b026c9b9e369db67b3c040e5d3eeffd04d13f00e041d23eb33603111",
+  "source_sorry_count": 0,
+  "source_statement_hash": "sha256:504b394627a623c0efeb8c2c73e6d9fab79502c10e2b6494768c410eadb881f4",
+  "source_statement_path": "claims/SFT-COMP-OAI26-PERMANENT-FORMULA-001/source_statement.json"
+}
