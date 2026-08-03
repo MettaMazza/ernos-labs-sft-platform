@@ -6,7 +6,7 @@ Status: **PASS**
 - Advertised mathematical positions answered: **10/10**
 - Total direct responses: **26/26**
 - Open items: **0**
-- User-direction checks: **8/8**
+- User-direction checks: **19/19**
 
 | ID | Kind | Source position, paraphrased | Direct response |
 |---|---|---|---|
@@ -37,4 +37,4 @@ Status: **PASS**
 | `OAI-BLOG-RESULT-09` | advertised_mathematical_result | Multicolour triangle Ramsey bound | PASS |
 | `OAI-BLOG-RESULT-10` | advertised_mathematical_result | Compactness and two-degenerate extremal counterexamples | PASS |
 
-Audit identity: `sha256:84e3952025d15efbd4faac5ef4054e1652b3f07f9c5f1bc9a48ec38e0ca7031c`
+Audit identity: `sha256:d6df101506a96926b4b8174208db08994845af86434588e2be1036a5170a8019`

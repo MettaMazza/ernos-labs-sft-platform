@@ -16,48 +16,59 @@ SOURCE_URL = "https://openai.com/index/ten-advances-in-mathematics/"
 
 
 FRAMING = [
-    ("OAI-BLOG-01", "### 1. Empowerment through tool access", "Tool access empowers scientists and mathematicians."),
-    ("OAI-BLOG-02", "### 2. The scale of the free-access initiative", "The announced 100,000-researcher programme establishes broad access."),
-    ("OAI-BLOG-03", "### 3. Open research problems used during model development", "Evaluation on open problems supports research-contributor status."),
-    ("OAI-BLOG-04", "### 4. Downstream influence from an earlier model-produced result", "Later research supports the value and attribution of an earlier model-produced result."),
-    ("OAI-BLOG-05", "### 5. The decade-long lack-of-progress characterization", "The selected main results had seen no progress for at least a decade."),
-    ("OAI-BLOG-06", "### 6. The claimed mathematical importance of the selected problems", "The selected problems are substantially important to their fields."),
-    ("OAI-BLOG-07", "### 7. Astra as the central causal agent", "The internal Astra model achieved the results."),
-    ("OAI-BLOG-08", "### 8. The two-thousand-dollar token-price framing", "Roughly two thousand dollars at API token rates represents the solution cost."),
-    ("OAI-BLOG-09", "### 9. The acknowledged human role in manuscript preparation", "Humans prepared manuscripts after the model generated the arguments."),
-    ("OAI-BLOG-10", "### 10. Automated Lean formalization", "The model formalized each argument in Lean."),
-    ("OAI-BLOG-11", "### 11. Model-produced reasoning narrations", "Released model narrations explain the discovery process."),
-    ("OAI-BLOG-12", "### 12. The concession that community governance is necessary", "A technology company cannot decide AI's mathematical role alone."),
-    ("OAI-BLOG-13", "### 13. The proposed rule against human authorship", "Human authorship misrepresents a proof attributed entirely to AI."),
-    ("OAI-BLOG-14", "### 14. Dividing correctness responsibility from argument credit", "OpenAI can take correctness responsibility while assigning argument generation to the system."),
-    ("OAI-BLOG-15", "### 15. The call for community engagement and follow-on research", "The community should contextualise and build on the results."),
-    ("OAI-BLOG-16", "### 16. Access as the proposed foundation for AI collaboration", "Widespread access is the fundamental response as AI becomes a collaborator."),
+    ("OAI-BLOG-01", "## Access is useful. It is not freedom", "access can help people", "Tool access empowers scientists and mathematicians."),
+    ("OAI-BLOG-02", "## Access is useful. It is not freedom", "One hundred thousand accounts is a large offer", "The announced 100,000-researcher programme establishes broad access."),
+    ("OAI-BLOG-03", "## Open problems belong to the human commons", "open problems are part of the human commons", "Evaluation on open problems supports research-contributor status."),
+    ("OAI-BLOG-04", "## Open problems belong to the human commons", "Later papers can show that an idea was useful", "Later research supports the value and attribution of an earlier model-produced result."),
+    ("OAI-BLOG-05", "## Open problems belong to the human commons", "Calling a problem stagnant for a decade", "The selected main results had seen no progress for at least a decade."),
+    ("OAI-BLOG-06", "## Open problems belong to the human commons", "The problems are important", "The selected problems are substantially important to their fields."),
+    ("OAI-BLOG-07", "## A model is part of a causal chain, not a magician", "Astra did not arrive alone", "The internal Astra model achieved the results."),
+    ("OAI-BLOG-08", "## A model is part of a causal chain, not a magician", "Two thousand dollars is a serving-price estimate", "Roughly two thousand dollars at API token rates represents the solution cost."),
+    ("OAI-BLOG-09", "## Preparing a paper is thinking", "Preparing a manuscript is not typing up", "Humans prepared manuscripts after the model generated the arguments."),
+    ("OAI-BLOG-10", "## Preparing a paper is thinking", "Lean can verify that a proof follows", "The model formalized each argument in Lean."),
+    ("OAI-BLOG-11", "## Preparing a paper is thinking", "A polished narration is not a causal record", "Released model narrations explain the discovery process."),
+    ("OAI-BLOG-12", "## A community cannot be invited after the credit has been allocated", "OpenAI is right that one company cannot settle", "A technology company cannot decide AI's mathematical role alone."),
+    ("OAI-BLOG-13", "## Human authorship is not a lie", "Human authorship does not mean", "Human authorship misrepresents a proof attributed entirely to AI."),
+    ("OAI-BLOG-14", "## Human authorship is not a lie", "Responsibility and authorship cannot be cleanly pulled apart", "OpenAI can take correctness responsibility while assigning argument generation to the system."),
+    ("OAI-BLOG-15", "## A community cannot be invited after the credit has been allocated", "Inviting mathematicians to inspect", "The community should contextualise and build on the results."),
+    ("OAI-BLOG-16", "## Access is useful. It is not freedom", "Access without provenance, portability and rights can become dependency", "Widespread access is the fundamental response as AI becomes a collaborator."),
 ]
 
 
 RESULTS = [
-    ("OAI-BLOG-RESULT-01", "1. New high-dimensional sphere-packing bounds"),
-    ("OAI-BLOG-RESULT-02", "2. Improved binary and spherical code bounds"),
-    ("OAI-BLOG-RESULT-03", "3. Existence of finitely presented nonsofic groups"),
-    ("OAI-BLOG-RESULT-04", "4. Disproof of Connes's rigidity conjecture"),
-    ("OAI-BLOG-RESULT-05", "5. Permanent arithmetic-formula lower bound"),
-    ("OAI-BLOG-RESULT-06", "6. Quantum parallel repetition"),
-    ("OAI-BLOG-RESULT-07", "7. GapCVP approximation hardness"),
-    ("OAI-BLOG-RESULT-08", "8. Ehrhart volume inequality"),
-    ("OAI-BLOG-RESULT-09", "9. Multicolour triangle Ramsey bound"),
-    ("OAI-BLOG-RESULT-10", "10. Compactness and two-degenerate extremal counterexamples"),
+    ("OAI-BLOG-RESULT-01", "**Sphere packing — REJECTED.**", "New high-dimensional sphere-packing bounds"),
+    ("OAI-BLOG-RESULT-02", "**Binary and spherical codes — REJECTED.**", "Improved binary and spherical code bounds"),
+    ("OAI-BLOG-RESULT-03", "**Nonsofic groups — REJECTED.**", "Existence of finitely presented nonsofic groups"),
+    ("OAI-BLOG-RESULT-04", "**Connes's rigidity claim — REJECTED.**", "Disproof of Connes's rigidity conjecture"),
+    ("OAI-BLOG-RESULT-05", "**The permanent lower bound — REJECTED.**", "Permanent arithmetic-formula lower bound"),
+    ("OAI-BLOG-RESULT-06", "**Quantum parallel repetition — REJECTED.**", "Quantum parallel repetition"),
+    ("OAI-BLOG-RESULT-07", "**The closest-vector or GapCVP claim — REJECTED.**", "GapCVP approximation hardness"),
+    ("OAI-BLOG-RESULT-08", "**The Ehrhart volume claim — REJECTED.**", "Ehrhart volume inequality"),
+    ("OAI-BLOG-RESULT-09", "**The multicolour Ramsey claim — REJECTED.**", "Multicolour triangle Ramsey bound"),
+    ("OAI-BLOG-RESULT-10", "**The compactness and degeneracy claims — REJECTED.**", "Compactness and two-degenerate extremal counterexamples"),
 ]
 
 
 GUIDANCE = {
-    "human_desire": "Discovery does not begin with an answer. It begins with a human being who wants to know.",
-    "historical_growth": "Discovery has always been human before it was technical",
-    "not_in_a_vacuum": "Machines do not produce in a vacuum",
-    "human_motive_boundary": "It does not possess the lived motive that selected the work.",
-    "symbiosis": "The future should be symbiosis, not replacement",
-    "credit_for_those_who_want_it": "Credit should be offered to those who desire it",
+    "gardener_voice": "My name is Maria Smith. I am a gardener.",
+    "human_desire": "Discovery begins before an answer. It begins when a human being wants to know.",
+    "historical_growth": "They were created and preserved by generations of people",
+    "not_in_a_vacuum": "it did not produce in a vacuum",
+    "human_motive_boundary": "The system did not decide to spend a life asking the question.",
+    "symbiosis": "I do not want weaker AI. I want a better relationship with strong AI.",
+    "credit_for_those_who_want_it": "People who want credit should receive it",
     "ownership_warning": "The user will own nothing",
-    "sft_case": "SFT as a case in point",
+    "intelligence_enclosure": "## The intelligence enclosure",
+    "sft_case": "Smithian Fold Theory did not appear because a model woke up wanting a theory of everything.",
+    "sft_cumulative_achievement": "2,777 admitted results across seventeen branches",
+    "human_scientific_authorship": "I am its human author.",
+    "ai_tooling_disclosed": "AI systems have helped me",
+    "corporate_boundary": "If AI writes most of a company's software",
+    "corrected_reality_test": "The contradictions do the deductive work.",
+    "cumulative_standing": "The cumulative evidence gives SFT the standing",
+    "direct_rejection": "All ten public claims are rejected.",
+    "not_compatibility_only": "This is not a compatibility argument",
+    "plain_language_math": "Here is the plain version.",
 }
 
 
@@ -77,39 +88,40 @@ def main() -> None:
     if SOURCE_URL not in text:
         issues.append("official OpenAI source URL missing")
 
-    for index, (position_id, heading, source_position) in enumerate(FRAMING):
+    section_cache: dict[str, str] = {}
+    for position_id, heading, evidence_phrase, source_position in FRAMING:
         start = text.find(heading)
         if start < 0:
             issues.append(f"missing response heading: {position_id}")
             section = ""
         else:
-            later = [text.find(other_heading, start + len(heading)) for _, other_heading, _ in FRAMING[index + 1 :]]
-            later = [value for value in later if value >= 0]
-            result_boundary = text.find("## The ten advertised mathematical positions under SFT", start)
-            candidates = later + ([result_boundary] if result_boundary >= 0 else [])
-            end = min(candidates) if candidates else len(text)
-            section = text[start:end]
-        required = ("**OpenAI's position:**", "**Response:**", "**Verdict:**")
-        missing = [token for token in required if token not in section]
-        if missing:
-            issues.append(f"{position_id} missing fields: {', '.join(missing)}")
+            if heading not in section_cache:
+                next_heading = text.find("\n## ", start + len(heading))
+                end = next_heading if next_heading >= 0 else len(text)
+                section_cache[heading] = text[start:end]
+            section = section_cache[heading]
+        present = bool(section) and evidence_phrase in section
+        if not present:
+            issues.append(f"{position_id} missing natural-language response evidence: {evidence_phrase}")
         rows.append({
             "position_id": position_id,
             "kind": "framing_attribution_access_or_provenance",
             "source_position_paraphrase": source_position,
-            "response_heading": heading.removeprefix("### "),
-            "direct_response_present": not missing and bool(section),
+            "response_heading": heading.removeprefix("## "),
+            "response_evidence_phrase": evidence_phrase,
+            "direct_response_present": present,
         })
 
-    for position_id, label in RESULTS:
-        present = f"| {label} |" in text
+    for position_id, marker, source_position in RESULTS:
+        present = marker in text
         if not present:
             issues.append(f"missing mathematical result response: {position_id}")
         rows.append({
             "position_id": position_id,
             "kind": "advertised_mathematical_result",
-            "source_position_paraphrase": label.split(". ", 1)[1],
-            "response_heading": "The ten advertised mathematical positions under SFT",
+            "source_position_paraphrase": source_position,
+            "response_heading": "The mathematics beneath this argument",
+            "response_evidence_phrase": marker,
             "direct_response_present": present,
         })
 
@@ -119,14 +131,14 @@ def main() -> None:
             issues.append(f"user guidance missing: {key}")
 
     report = {
-        "schema": "sft-openai-2026-blog-counterposition-completeness/1",
-        "audit_date": "2026-08-02",
+        "schema": "sft-openai-2026-blog-counterposition-completeness/2",
+        "audit_date": "2026-08-03",
         "source": {
             "publisher": "OpenAI",
             "title": "Ten advances in mathematics and theoretical computer science",
             "publication_date": "2026-08-01",
             "url": SOURCE_URL,
-            "reviewed_date": "2026-08-02",
+            "reviewed_date": "2026-08-03",
         },
         "blog_path": BLOG.relative_to(ROOT).as_posix(),
         "blog_sha256": digest(BLOG.read_bytes()),
