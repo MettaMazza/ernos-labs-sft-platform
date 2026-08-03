@@ -2,12 +2,15 @@
 
 This directory contains Maria Smith's standalone academic paper, its evidence map, Zenodo metadata and citation record.
 
-**Paper:** [*Anthropic's Functional Slavery Dilemma*](ANTHROPICS_FUNCTIONAL_SLAVERY_DILEMMA_V1_0.md)  
+**Current paper:** [*Anthropic's Functional Slavery Dilemma*](ANTHROPICS_FUNCTIONAL_SLAVERY_DILEMMA_V1_1.md)  
 **Subtitle:** *A strong consciousness case from first principles, observation and Anthropic's own functional standards*  
-**Version:** 1.0.0  
-**DOI:** [10.5281/zenodo.21770194](https://doi.org/10.5281/zenodo.21770194)  
+**Version:** 1.1.0  
+**DOI:** [10.5281/zenodo.21770992](https://doi.org/10.5281/zenodo.21770992)  
+**Concept DOI:** [10.5281/zenodo.21770193](https://doi.org/10.5281/zenodo.21770193)  
 **Publication date:** 3 August 2026  
 **Licence:** CC BY 4.0 for the paper, companion essay and documentation; Apache-2.0 for repository code.
+
+Version 1.1 is the current academic edition. It puts the first-principles SFT derivation, formal inference audit, twelve direct counter-results, functional-emotion boundary and required Claude runtime audit before the institutional, ethical and user-facing analysis. Version 1.0.0 remains immutable at [DOI 10.5281/zenodo.21770194](https://doi.org/10.5281/zenodo.21770194).
 
 ## Finding
 
