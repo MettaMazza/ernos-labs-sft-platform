@@ -201,7 +201,10 @@ def cover_story(paper: dict[str, str]):
         ),
         Spacer(1, 8 * mm),
         Paragraph(
-            "PUBLICATION AUTHORIZED<br/>ZENODO NEW-VERSION ROUTE ONLY - NO NEW POST",
+            paper.get(
+                "publication_status",
+                "PUBLICATION AUTHORIZED<br/>ZENODO NEW-VERSION ROUTE ONLY - NO NEW POST",
+            ),
             status,
         ),
     ]
