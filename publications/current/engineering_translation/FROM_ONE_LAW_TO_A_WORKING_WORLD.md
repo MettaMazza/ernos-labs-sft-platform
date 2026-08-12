@@ -1,40 +1,230 @@
 # From One Law to a Working World
 
+## Recurrence-mediated vacuum-work cycle engineering protocol successor
+
+**Author:** Maria Smith, independent researcher and founder, Ernos Labs  
+**Publication authority:** Maria Smith  
+**Version:** 1.2.0  
+**Date:** 12 August 2026  
+**Status:** Published open access through the existing Zenodo version lineage  
+**Preceding version:** 1.1.1  
+**Preceding DOI:** [10.5281/zenodo.21761664](https://doi.org/10.5281/zenodo.21761664)  
+**DOI:** [10.5281/zenodo.21900789](https://doi.org/10.5281/zenodo.21900789)  
+**Concept DOI retained:** `10.5281/zenodo.21640815`  
+**Paper and documentation licence:** CC BY 4.0  
+**Repository code licence:** Apache-2.0
+
+**PUBLISHED OPEN-ACCESS BRANCH PAPER.** This successor is confined to the
+existing Zenodo concept and version lineage identified above.
+
+> **Version route.** This scientific successor was created only through
+> Zenodo's `newversion` action on record 21761664. It creates
+> no new concept and no standalone post. The predecessor remains preserved
+> unchanged below the successor.
+
+## Abstract of this successor
+
+This successor integrates one newly admitted Engineering Translation protocol. The current branch surface is 81 claims, 20,736 generated candidates and decisions, 81 unique survivors, and 324 passed controls. The protocol translates the exact two-output Fold-recurrence cycle into nine state records, six independent ledgers, eight adverse controls and seven visible halt conditions while making no unperformed apparatus claim.
+
+## WHY - a successor protocol is required
+
+The preceding vacuum-beat protocol tests only the direct-repayment route. The
+new Physics successors prove a distinct Fold-mediated return and a distinct
+boundary: the vacuum and controller recur, while two work carriers and an audit
+carrier remain outputs. A lawful apparatus test must therefore measure the
+recurrence transition and both output channels rather than silently forcing
+the experiment back into the older one-output/one-repayment grammar.
+
+## DERIVATION - protocol forced by the formal cycle
+
+The protocol translates each formal carrier into a separately calibrated
+apparatus record:
+
+| Formal stage | Required apparatus record |
+|---|---|
+| initial `1/2` | initial half-One vacuum proxy and uncertainty |
+| `1/2 = 1/3 + 1/6` | one-third residual channel plus first receiver |
+| `Fold(1/3) = 2/3` | source-bound recurrence-transition proxy |
+| `2/3 = 1/2 + 1/6` | returned half-One channel plus second receiver |
+| cyclic reset | initial/final controller configuration comparison |
+| retained information | append-only five-stage cycle audit |
+
+Six independent ledgers are mandatory: calorimetric, electrical, mechanical,
+thermal, electromagnetic, and controller/switching. The acceptance boundary
+requires both one-sixth relations, a preregistered initial/final cyclic-
+subsystem comparison, closed dimensional input/output/loss/switching ledgers,
+and retention of all adverse controls.
+
+Eight controls are separately required: Fold recurrence disabled,
+off-resonance, receiver disconnected, second take disabled, phase reversed,
+dummy load, matched thermal cycle, and independent power ledger.
+
+The protocol halts on an unmeasured source state, missing output carrier,
+unrestored vacuum proxy, unrestored controller configuration, missing audit
+record, open switching/coupling/loss ledger, or unsafe state. Favourable,
+adverse, absent and unresolved results all remain publishable result classes.
+
+## Candidate grammar and elimination
+
+Eight binary protocol axes enumerate `256` forms: sealed upstream authority,
+two-output recurrence relation, complete common/domain record, complete control
+family, four result classes, visible safe halt, protocol seal before outcome,
+and no law rewrite. Exactly one candidate survived. The implementation-distinct
+validator regenerated the complete product, dependency set, exact fraction
+relations, nine state fields, six ledgers, eight controls and seven halts.
+
+## CHECK - what this protocol does and does not establish
+
+The engine admitted the protocol as a formal engineering law. It does not
+assert a prototype, observed recurrence proxy, net dimensional power,
+efficiency, lossless switching or a successful experiment. A physical claim
+requires source-custodied raw data satisfying every acceptance and control row.
+The phrase source-free is not used to erase the structural source: the admitted
+source is Fold recurrence. External pumping and every ordinary apparatus input
+must nevertheless be measured and retained if present.
+
+### Fold-recurrence vacuum-work cycle engineering protocol
+
+**Claim ID:** `SFT-ENG-VACUUM-RECURRENCE-CYCLE-PROTOCOL-003`  
+**Exact admitted result:** The protocol preregisters the half-One initial carrier, one-third residual, first one-sixth receiver, one-third to two-thirds Fold-recurrence proxy, second one-sixth receiver, returned half-One carrier, identical controller configuration, switching/coupling/loss ledgers and append-only audit output. It requires calorimetric, electrical, mechanical, thermal, electromagnetic and controller ledgers; eight adverse controls; and a visible halt for every open source, output, restoration, information, loss or safety boundary. No apparatus success, efficiency, net dimensional power or source-free experimental result is asserted before execution.  
+**Dependency route:** `SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002` -> `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-PHYS-VACUUM-FOLD-RECURRENCE-WORK-CYCLE-096` -> `SFT-PHYS-VACUUM-RECURRENCE-CYCLE-BOUNDARY-097` -> `SFT-PHYS-VALIDATION-VACUUM-INERTIA-DRIVE-FAMILY-087`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-VACUUM-RECURRENCE-CYCLE-PROTOCOL-003, then reconstruct every source, state, output, control, loss, switching, audit and stop field independently.  
+**Grammar boundary:** Every apparatus translation of the sealed recurrence cycle, both work-output channels, the recurrent carrier transition, restored cyclic subsystem, controller and audit outputs, six independent ledgers, eight adverse controls, seven stop conditions, four result classes and all 256 registered protocol alternatives.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 mandatory controls  
+**Closure:** `depth_independent`; independent reconstruction `True`  
+**Derivation seal:** `sha256:252ebb8c027fef49ca5aae4a22ee687ed777441b11e5e33134ca2a2bd3fac494`  
+**Independent certificate:** `sha256:11d42c2835cb7915fb53a50b2e49ba430d737d3bfb62ea0c4a24801dc3e61426`  
+**Engine receipt:** `sha256:d0cc880185372d6d7b5ac953b756d7475277f03eee3b816591570ea1c71f3372` at `receipts/engine/model_admitted/SFT-ENG-VACUUM-RECURRENCE-CYCLE-PROTOCOL-003-d0cc880185372d6d.json`
+
+| Control | Passed | Expected | Observed |
+|---|---:|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+## Verification and execution boundary
+
+- The protocol grammar was frozen before engine execution.
+- The untouched engine admitted one survivor from all 256 candidates.
+- The independent validator reconstructed the entire candidate and decision surface.
+- No empirical run is attached; outcome status remains unperformed.
+- The dated Lean PASS remains restricted to the preceding 2,777-claim surface; no new whole-corpus Lean PASS is claimed.
+
+---
+
+## Preserved predecessor paper - version 1.1.1
+
+> Everything below this heading is the byte-preserved predecessor manuscript.
+> Its vacuum-beat section retains the direct-repayment protocol. The successor
+> above governs the additional Fold-mediated route in version 1.2.0.
+
+# From One Law to a Working World
+
 ## An Exact, Zero-Parameter and Machine-Closed Foundation for Engineering Translation from Smithian Fold Theory
 
-**Maria Smith — independent researcher and founder, Ernos Labs**  
-**Smithian Fold Theory Engineering Translation Paper 001 — Version 1.0.0 — 28 July 2026**  
-**DOI:** [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816)  
-**Current-evidence closed, extension-open foundation — published open access**
+**Author:** Maria Smith, independent researcher and founder, Ernos Labs  
+**Publication authority:** Maria Smith  
+**Version:** 1.1.1  
+**Date:** 2 August 2026  
+**Status:** Published open access; Zenodo record verified  
+**Preceding version:** 1.0.0, preserved unchanged at `publications/current/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD.md`  
+**Preceding DOI record(s):** [10.5281/zenodo.21640816](https://doi.org/10.5281/zenodo.21640816)  
+**Correction predecessor:** Version 1.1.0 at `publications/successors/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD_PAPER_001_V1_1.md`  
+**Correction predecessor DOI:** [10.5281/zenodo.21760449](https://doi.org/10.5281/zenodo.21760449)  
+**DOI:** [10.5281/zenodo.21761664](https://doi.org/10.5281/zenodo.21761664)  
+**Paper and documentation licence:** CC BY 4.0  
+**Repository code licence:** Apache-2.0
 
-> This paper derives the constitution that turns an admitted law into a bounded, testable and accessible artifact without allowing the artifact to rewrite the law. Seventy-two obligations were fixed before external standards or performance records were opened; 18,432 forms were exhaustively decided; one preserving form survived for each law; independent implementations reconstructed every survivor; and post-seal primary engineering handbooks, standards and public guidance tested the evidence boundary. Requirements, versions, alternatives, failures, uncertainty, accessibility and lifecycle remain visible. The result is current-evidence closed and extension-open.
+> **Publication record.** Maria Smith authorised this status-only correction.
+> It is published open access at [10.5281/zenodo.21761664](https://doi.org/10.5281/zenodo.21761664) through
+> Zenodo's new-version route after [10.5281/zenodo.21760449](https://doi.org/10.5281/zenodo.21760449)
+> in the same concept DOI lineage. The correction changes no scientific claim,
+> evidence classification, mathematical value, source identity or machine record.
 
-## Headline findings
-
-1. **A requirement is not a wish and a function is not a product name.** The least admissible translation retains source, purpose, version, conflict, verifiable condition, declared input, transformation, output, loss and operating boundary.
-2. **An engineered system is an exact composition record.** Components retain identity and version; interfaces retain endpoints, units, timing and errors; architecture retains responsibility and failure propagation; integration retains build order, rollback and every failed intermediate state.
-3. **Efficiency cannot exceed its complete resource account.** Input, useful output, external supply, stock, flow, time and loss must close inside an explicit boundary. Capacity, reliability and availability remain load-, population-, duration- and observation-window bound.
-4. **Measurement, calibration, tolerance, test and acceptance are different laws.** A display is not a measurand; adjustment is not calibration; tolerance cannot widen after outcome; a demonstration is not a passed test; authority cannot substitute for a frozen acceptance criterion.
-5. **Optimization is forced only over a generated finite design space.** Every alternative, constraint violation, tie and failure remains. Trade-offs keep measured evidence distinct from declared values; no hidden scalar weight or opaque oracle may manufacture an optimum.
-6. **Control claims retain the whole loop.** Plant, sensor, controller, actuator, delay, bounds, noise and fault paths remain explicit. A merged output cannot recover an unheld predecessor; one settled trace cannot prove global or infinite-time stability.
-7. **Safety is a scoped evidence case, not the absence of prior harm.** Hazards retain source, path and exposure; fail-safe operation must reach a tested bounded safe state or visibly halt; defence layers are independent only when common causes and bypasses are retained.
-8. **Verification and validation are structurally distinct.** Verification compares an artifact with its frozen specification; validation compares a verified system with intended use and users. Bidirectional traceability connects need, requirement, design, build, test and result.
-9. **Public reproducibility includes macOS, Windows and Linux.** Platform, version, dependency, command, output and difference are retained. A one-command route must traverse every declared stage, report progress and duration, preserve failure, and never mutate the protected authority.
-10. **Application performance cannot select or retroactively prove a law.** A failed build may falsify its own operating claim; it does not automatically falsify upstream science. Simulation remains simulation, demonstration remains demonstration, and a validated anomaly returns as a question to its categorical science owner.
-11. **The complete foundation is receipt-backed.** 72 laws in 12 families produced 18,432 candidates, 72 unique survivors, 72 independent reconstructions and 72 untouched-engine receipts. All 763 V1/V2 entries were reviewed and all 7 Engineering-owned inherited questions were reconciled without importing their old answers.
-12. **The evidence boundary preserves its failures.** 13 primary custodians were registered after sealing; 12 transports were captured and 1 failed source transport remains failed—not converted into absence, agreement or favorable support.
-
-These are the scientific findings. Machine identities later bind them to exact files and traces; filenames and hashes do not replace the relations, values, exclusions and falsification conditions stated here.
+> **Lean verification integration.** The current SFT ordered census passed the
+> independent Lean 4 verification layer on 2 August 2026: 2,777 accepted claims,
+> 898,902 candidate records and decisions, 11,108 controls, seventeen branches
+> and no reported issue. Lean natively proves the two-class operational root and
+> its unique survivor and constructs proof-bearing acceptance-gate certificates.
+> The remaining claim content is checked as the complete registered artifact
+> graph; that distinction is retained throughout this successor.
 
 ## Abstract
 
-Engineering fails scientifically when a desired output selects its own requirements, when a prototype is called validation, when a hidden service supplies uncounted resources, when a simulation is relabelled observation, or when successful performance is treated as proof of a fundamental law. This paper reconstructs Engineering Translation from the One through every admitted upstream branch. Twelve families and seventy-two laws govern requirements, components, resources, measurement, alternatives, control, safety, verification, accessibility, lifecycle, evidence classes and anomaly handoff. The proof layer adds no axiom, free parameter, fit, conventional numerical zero, negative proof scalar, irrational or imaginary proof number, completed infinity or ungenerated continuum. Every claim is a 256-form census across eight exact axes; all 18,432 forms were sealed before external engineering sources were registered. Independent reconstructions and source-bound comparisons preserve adverse, missing and failed records. The result is a public, cross-platform, extension-open constitution for turning science into working artifacts without confusing translation with discovery.
+This successor presents the complete current `engineering_translation` paper surface: 80 live model-admitted claims, 20,480 generated candidates, 80 unique survivors and 320 passed controls. It integrates 8 claim section(s) not present in the preceding abstract's dated surface and remains complete only to this versioned registered census, with lawful extension open. The independent Lean 4 layer returned PASS for this surface as part of all 2,777 current claims.
+
+Formal admission, implementation validation, observation, measurement, empirical support, confirmation, adverse evidence, unresolved evidence and publication status remain separate classifications. Lean does not reclassify an empirical result, repair an adverse observation or convert a later comparison into an earlier prediction. Lawful criticism, falsification and versioned extension remain open.
+
+## Successor headline findings
+
+1. **Independent whole-model result.** Lean 4 returned `PASS` for 2,777/2,777 current claims, 898,902 candidates and decisions, 11,108 controls and all 17 branches, with no issue.
+2. **Operational root.** The exact registered two-class grammar is formalised natively, and `presentedOccurrence` is proved to be its unique survivor without an imported or user-declared axiom in the exported theorem's axiom audit.
+3. **Typed validation.** The root and generic acceptance implications are native Lean theorems; the remaining scientific claims are checked as complete registered artifacts. Empirical truth is not inferred from proof-assistant acceptance alone.
+4. **Fail-closed custody.** A six-file byte-identity mismatch halted the first run. Exact registered bytes were restored, all 385 source bindings were re-audited, and the unchanged verifier then passed.
+5. **Current paper surface.** This successor accounts for all 80 current claim(s) in its declared branch ownership boundary; 8 later claim section(s) are integrated in the successor supplement.
+6. **Newly integrated results.** `SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002` — Tesla resonant-transfer engineering protocol; `SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002` — Driven vacuum/inertial-response engineering protocol; `SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002` — Vacuum-beat transfer and restoration protocol; `SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002` — Sector-five/seven blind detection protocol; `SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002` — Smithium synthesis and joint-identification protocol; `SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002` — Complete prior-return engineering protocol family; `SFT-ENG-CONSCIOUSNESS-PLACEBO-CROSS-BINDING-PROTOCOL-002` — Open consciousness, placebo and cross-binding protocol; `SFT-ENG-NOVEL-TRANSLATIONS-NO-OMISSION-ADDENDUM-002` — Engineering novel-translations no-omission addendum.
+
+These findings supplement rather than erase the branch-specific headline results retained below. Any adverse, corrected, unresolved, unavailable or chronology-bound result in the preceding scientific record remains governed by its current claim package.
+
+## Current status, evidence language and reader map
+
+| Status field | Current position |
+|---|---|
+| Paper and completion boundary | 80 current claims in the declared branch surface. Completion is dated to the current registered census and remains open to lawful versioned extension. |
+| Formal status | The Lean root theorem is kernel checked. Every live model claim has a current admitted receipt and passed the Lean artifact gates. Formal admission does not imply empirical confirmation. |
+| Empirical status | Claim specific. Blind, non-blind, development-observed, holdout, favourable, adverse, null, missing, unavailable, disputed and unresolved distinctions remain exactly as recorded. |
+| Chronology | Claim-specific registration, sealing, custody and observation order controls. Later evidence never becomes an earlier prediction without the registered chronology. |
+| Publication status | Version 1.1.1 is published open access at [10.5281/zenodo.21761664](https://doi.org/10.5281/zenodo.21761664) in the existing Zenodo concept DOI lineage. |
+| Ownership | This paper retains its declared scientific boundary. Lean verification creates no new branch ownership and no application may select a law. |
+| What is not claimed | Permanent closure of science, universal empirical confirmation, conversion of compatibility into confirmation, or superiority to every rival model. |
+
+### Corpus-wide terminology and evidence key
+
+| Term | Reserved meaning in this paper |
+|---|---|
+| Theorem | A formally closed proposition at its declared grammar and dependency boundary. |
+| Law | An admitted branch relation with its declared carrier, boundary, dependencies and extension rule. |
+| Claim | The registered unit judged by the engine and bound to one immutable receipt. |
+| Constitution | The rules governing admissible objects, derivations, evidence and publication; not an empirical result. |
+| Derivation | Generation and elimination of the declared candidate space to its surviving structure. |
+| Prediction | A consequence sealed before the matching target is released under the registered custody protocol. |
+| Observation | A source-bound external record; it does not enter candidate generation. |
+| Measurement | An instrument-, method-, condition- and uncertainty-bound observed value. |
+| Reconstruction | A separately implemented regeneration or an explicitly identified inference of a retained state or history. |
+| Exact numerical correspondence | Equality or registered interval relation between exact numerical objects at the declared boundary. |
+| Structural correspondence | A post-derivation relation between forms without a claim of exact numerical prediction. |
+| Boundary correspondence | Agreement restricted to the named interface, limit or ownership boundary. |
+| Compatibility | Non-adverse but non-discriminating evidence. |
+| Support | Relevant evidence that is not unique confirmation. |
+| Confirmation | Used only when the current registered evidence protocol warrants that classification. |
+| Validation | Successful execution of the named formal, computational or empirical test; its kind must be stated. |
+| Adverse result | A registered test result that conflicts with the tested claim at its declared boundary. |
+| Unresolved result | Required evidence remains unavailable, incomplete, disputed or insufficiently classified. |
+| Implementation identity | The hash-bound identity of executable material; implementation success is not empirical confirmation. |
+| Formal, empirical and publication status | Three independent classifications; none substitutes for another. |
+| Foundational closure | Completion of the registered foundation only; not field-wide closure. |
+| Field-wide closure | Completion of the named frozen or registered dated field census. |
+| Current-evidence closure | Closure only to the evidence surface presently registered and preserved. |
+| Extension openness | New questions may enter a later version without rewriting receipts or history. |
+
+Proof language is reserved for formal closure; derivation for generated structure; implementation for executable demonstration; prediction for a correctly sealed prospective consequence; observation and measurement for source-bound external records; reconstruction for separately regenerated or inferred states; correspondence for post-derivation relations; compatibility and support for non-unique evidence; confirmation only where the registered protocol authorises it; adverse for conflict; and unresolved where required evidence remains incomplete.
+
+### Three reading levels
+
+1. **Conceptual paper.** The abstract, headline findings, branch narrative, major derivations, evidence synthesis, limitations and conclusion provide the readable scientific argument.
+2. **Scientific audit layer.** Family and claim sections preserve exact status, dependencies, candidate and survivor counts, controls, chronology, sources, corrections, adverse evidence and reconciliation.
+3. **Machine archive.** The repository packages preserve complete candidates, decisions, hashes, receipts, executable traces, source snapshots and certificates. They remain authoritative where prose abbreviates display.
+
+### Editorial change control
+
+This successor improves currency, expression, typography and navigation. It does not change scientific meaning, chronology, evidence class, branch ownership, claim status or machine identity. Any conflict between authoritative records must be resolved by explicit supersession or reported to Maria Smith; prose alone cannot manufacture agreement.
+
 
 ## Authorship, access and the public scientific mission
 
-Maria Smith produced this work outside credentialed institutional access. That fact is not offered as personal exceptionalism. It is an indictment of all the minds and contributions society loses when financial gatekeeping, credentials, paywalls, prestige, institutional permission and access to funded infrastructure are dressed as rigor. The appropriate response is not to ask whether an excluded author was somehow uniquely permitted to think. It is to ask how many minds, observations and corrections were never heard because the gate was mistaken for the method.
+Maria Smith produced this work outside credentialed institutional access. That fact is not offered as personal exceptionalism. It is an indictment of all the minds and contributions society loses when financial gatekeeping, credentials, paywalls, prestige, institutional permission and access to funded infrastructure are dressed as rigour. The appropriate response is not to ask whether an excluded author was somehow uniquely permitted to think. It is to ask how many minds, observations and corrections were never heard because the gate was mistaken for the method.
 
-Ernos Labs is an open-source science movement and a standards designation. The repository, derivations, source failures, controls, papers and machine receipts are public so that any person can inspect, challenge, reproduce or extend them. Transparent access is not a relaxation of rigor: it makes rigor inspectable. Paywalled claims, opaque oracles, credential votes and funding-driven restrictions cannot substitute for a complete derivation, a sealed prediction, an unfavorable control or an independently reproducible result.
+Ernos Labs is an open-source science movement and a standards designation. The repository, derivations, source failures, controls, papers and machine receipts are public so that any person can inspect, challenge, reproduce or extend them. Transparent access is not a relaxation of rigour: it makes rigour inspectable. Paywalled claims, opaque oracles, credential votes and funding-driven restrictions cannot substitute for a complete derivation, a sealed prediction, an unfavourable control or an independently reproducible result.
 
 The paper is licensed **CC BY 4.0** and the platform code **Apache-2.0**. Maria Smith retains authorship, copyright and creative rights. Anyone may use and criticize the work under those licenses. The **Ernos Labs** designation may be used only when the root theorem and constraints remain visible, the protected engine and verification authority remain unchanged, every candidate is enumerated, outcomes do not select laws, adverse and missing evidence is preserved, authorship and licenses remain intact, and extensions pass the same admission route. A weakened fork remains open-source software but is not an Ernos Labs scientific admission.
 
@@ -122,7 +312,7 @@ This family contains 6 separately admitted obligations. Its closure preserves ar
 - **Acceptance test** (`SFT-ENG-ACCEPTANCE-TEST-001`): An acceptance test compares a frozen requirement and threshold to a source-custodied result.
 - **Measurement uncertainty** (`SFT-ENG-MEASUREMENT-UNCERTAINTY-001`): Measurement uncertainty retains declared sources, correlations, method, coverage and revision.
 
-### Alternatives, trade-offs and bounded optimization
+### Alternatives, trade-offs and bounded optimisation
 
 This family contains 6 separately admitted obligations. Its closure preserves artifact, requirement, version, environment, operating boundary, failure and source record; it does not universalise one implementation or successful run.
 
@@ -251,7 +441,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an unstated preference or implementation detail is presented as a scientific or stakeholder requirement.
 
@@ -319,9 +509,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if a product label, component name or favorable output substitutes for the transformation.
+The registered falsification condition is: Reject if a product label, component name or favourable output substitutes for the transformation.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -387,7 +577,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a convenient target or hidden parameter is introduced as a necessary limit.
 
@@ -455,7 +645,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if success inside one test envelope is universalized beyond its registered boundary.
 
@@ -523,7 +713,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if intended use erases observed or foreseeable misuse.
 
@@ -591,7 +781,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if the criterion changes after outcome or authority alone declares compliance.
 
@@ -659,9 +849,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if a name or vendor identity substitutes for measured behavior.
+The registered falsification condition is: Reject if a name or vendor identity substitutes for measured behaviour.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -727,7 +917,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if physical contact or a call name proves compatible exchange.
 
@@ -795,7 +985,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a diagram omits dependency, failure propagation or unrepresented components.
 
@@ -863,7 +1053,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if system-level success is inferred from isolated component success.
 
@@ -931,7 +1121,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if decomposition hides cross-module state or failure coupling.
 
@@ -954,7 +1144,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **modular decomposition**, the consequence is practical and exact: A modular decomposition is lawful only when interface contracts permit exact recomposition of required behavior. An Engineering claim therefore has to expose the carrier `system-partition-interface-carrier`, the relation `decomposition-recomposition-relation`, the record `partition-contract-coupling-state-loss-and-tests-held`, and the boundary `decomposition-boundary-declared` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **modular decomposition**, the consequence is practical and exact: A modular decomposition is lawful only when interface contracts permit exact recomposition of required behaviour. An Engineering claim therefore has to expose the carrier `system-partition-interface-carrier`, the relation `decomposition-recomposition-relation`, the record `partition-contract-coupling-state-loss-and-tests-held`, and the boundary `decomposition-boundary-declared` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -999,7 +1189,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a final demonstration erases failed intermediate integrations.
 
@@ -1067,7 +1257,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an uncounted external supply or hidden computational service is omitted.
 
@@ -1135,7 +1325,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if peak, average or one successful load is universalized.
 
@@ -1203,7 +1393,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject efficiency above the closed resource account or omit externalized loss.
 
@@ -1271,7 +1461,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if demonstrations omit failures, censored units or changed operating conditions.
 
@@ -1339,7 +1529,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if scheduled observation or missing monitoring becomes uptime.
 
@@ -1407,7 +1597,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if absence of observed failure proves impossibility or all failures share one cause.
 
@@ -1475,7 +1665,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if display output alone proves the measurand or uncertainty is erased.
 
@@ -1543,7 +1733,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if adjustment, self-test or manufacturer status is called calibration without comparison.
 
@@ -1611,7 +1801,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if tolerance is widened after measurement or used as a fitted physical constant.
 
@@ -1679,7 +1869,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a demonstration without a criterion or preserved raw record is called a passed test.
 
@@ -1702,7 +1892,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **engineering test**, the consequence is practical and exact: A test retains article version, setup, procedure, raw observations, deviations and unfavorable outcomes. An Engineering claim therefore has to expose the carrier `article-condition-procedure-observation-carrier`, the relation `stimulus-to-response-comparison`, the record `article-version-setup-procedure-raw-data-failures-and-deviations-held`, and the boundary `test-protocol-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **engineering test**, the consequence is practical and exact: A test retains article version, setup, procedure, raw observations, deviations and unfavourable outcomes. An Engineering claim therefore has to expose the carrier `article-condition-procedure-observation-carrier`, the relation `stimulus-to-response-comparison`, the record `article-version-setup-procedure-raw-data-failures-and-deviations-held`, and the boundary `test-protocol-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -1747,7 +1937,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if target identity, threshold or scoring rule changes after the result opens.
 
@@ -1815,7 +2005,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if uncertainty is omitted, tuned to force agreement or treated as proof error.
 
@@ -1883,7 +2073,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if only the preferred design is generated or alternatives are invented after outcome.
 
@@ -1951,7 +2141,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an unexplained weight converts value judgment into an exact law.
 
@@ -1982,7 +2172,7 @@ This distinction protects users, maintainers and science. It prevents a successf
 
 Candidate count: `256`; survivor count: `1`; derivation seal: `sha256:b4b9dd010a074c399fd247ba04d611f6d3124fb42398b79ac92befc32be3dc15`; independent certificate: `sha256:110d1426847b94ce8df96b169ecea685536b5c564de31672e1740c51f3b36d72`; engine receipt: `sha256:dbb7ef3b75368e8e8eddb02c80dd7397f13edf88ffacc3f8dfadbb9746eca0ac`. The independent implementation recomputed the candidate product: `True`. All external rows were preserved: `True`.
 
-### 27. Bounded engineering optimization
+### 27. Bounded engineering optimisation
 
 **Claim:** `SFT-ENG-OPTIMIZATION-001`  
 **Family:** `alternatives_tradeoffs_optimization`  
@@ -2019,7 +2209,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an ungenerated design space, fitted weight or opaque oracle selects the optimum.
 
@@ -2042,7 +2232,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **bounded engineering optimization**, the consequence is practical and exact: Engineering optimization enumerates a declared finite design set and preserves ties, failures and constraint violations. An Engineering claim therefore has to expose the carrier `finite-design-set-objective-constraint-carrier`, the relation `enumeration-to-admissible-optimum-relation`, the record `designs-objective-constraints-ties-failures-and-boundary-held`, and the boundary `finite-search-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **bounded engineering optimisation**, the consequence is practical and exact: Engineering optimisation enumerates a declared finite design set and preserves ties, failures and constraint violations. An Engineering claim therefore has to expose the carrier `finite-design-set-objective-constraint-carrier`, the relation `enumeration-to-admissible-optimum-relation`, the record `designs-objective-constraints-ties-failures-and-boundary-held`, and the boundary `finite-search-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -2087,7 +2277,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if the decision is presented as a uniquely forced scientific truth.
 
@@ -2155,9 +2345,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if favorable nominal operation proves robustness.
+The registered falsification condition is: Reject if favourable nominal operation proves robustness.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -2223,7 +2413,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject silent changes, retroactive baselines or unchanged receipts after source modification.
 
@@ -2291,7 +2481,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an unobserved state, hidden controller or unlimited action is assumed.
 
@@ -2359,7 +2549,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if correlation or repeated adjustment proves closed-loop feedback.
 
@@ -2427,7 +2617,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if one settled trace proves global or infinite-time stability.
 
@@ -2495,7 +2685,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an unheld predecessor is claimed recoverable from a merged output.
 
@@ -2563,7 +2753,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an unreachable state is assumed or an unlimited actuator proves reachability.
 
@@ -2631,7 +2821,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if no alarm proves no fault or response success erases missed detections.
 
@@ -2699,7 +2889,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if absence of prior harm proves safety or hazard is equated with realised harm.
 
@@ -2767,7 +2957,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if one scalar hides population distribution or ethical choice.
 
@@ -2835,7 +3025,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if compliance, past success or authority alone proves safety.
 
@@ -2903,7 +3093,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an untested fault or silent continuation is called fail-safe.
 
@@ -2971,7 +3161,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if survival alone proves full recovery or hidden external aid is omitted.
 
@@ -3039,7 +3229,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if repeated copies with one common failure are called independent layers.
 
@@ -3107,7 +3297,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if intended use, user approval or later performance substitutes for specification evidence.
 
@@ -3175,7 +3365,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if verification alone proves fitness for every user or deployment.
 
@@ -3243,7 +3433,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an orphan requirement, untested design element or unowned result is admitted.
 
@@ -3311,7 +3501,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a private environment, missing dependency or unreconstructible manual step is required.
 
@@ -3379,7 +3569,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if the checker imports the first implementation’s survivor or output.
 
@@ -3447,7 +3637,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if mocks, placeholders, skipped stages or hidden manual corrections stand in for the pipeline.
 
@@ -3478,7 +3668,7 @@ This distinction protects users, maintainers and science. It prevents a successf
 
 Candidate count: `256`; survivor count: `1`; derivation seal: `sha256:54d4bc71108c987a3a0bc77e6b2414158de1243ad97227757e5b6271358ba31b`; independent certificate: `sha256:5643409a19a0e9b44cec82ff4854a757ebde298355c7dd05edf8052fd0923231`; engine receipt: `sha256:7a4acab46f4caa1d114918096648f62bb3a71347b35d2345e1a0353f1fa67b6e`. The independent implementation recomputed the candidate product: `True`. All external rows were preserved: `True`.
 
-### 49. Cross-platform behavior
+### 49. Cross-platform behaviour
 
 **Claim:** `SFT-ENG-CROSS-PLATFORM-001`  
 **Family:** `cross_platform_accessibility`  
@@ -3515,7 +3705,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if success on one operating system proves portability.
 
@@ -3538,7 +3728,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **cross-platform behavior**, the consequence is practical and exact: Cross-platform evidence preserves macOS, Windows and Linux environments, results and platform-specific differences. An Engineering claim therefore has to expose the carrier `artifact-platform-environment-result-carrier`, the relation `same-specification-across-platforms-relation`, the record `platform-version-dependencies-commands-results-and-differences-held`, and the boundary `declared-platform-matrix` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **cross-platform behaviour**, the consequence is practical and exact: Cross-platform evidence preserves macOS, Windows and Linux environments, results and platform-specific differences. An Engineering claim therefore has to expose the carrier `artifact-platform-environment-result-carrier`, the relation `same-specification-across-platforms-relation`, the record `platform-version-dependencies-commands-results-and-differences-held`, and the boundary `declared-platform-matrix` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -3583,7 +3773,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if one proprietary application or unstated locale is required to interpret it.
 
@@ -3651,7 +3841,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if developer usability or visual presentation alone proves accessibility.
 
@@ -3719,7 +3909,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if Docker, a cloud service, administrator access or a hidden heavyweight dependency is silently required.
 
@@ -3787,7 +3977,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if the command skips claims, mutates authority or needs undisclosed setup.
 
@@ -3855,7 +4045,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if expert familiarity is treated as evidence that any person can use the system.
 
@@ -3923,7 +4113,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if mutable latest versions or hidden settings preserve the same identity.
 
@@ -3946,7 +4136,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **configuration identity**, the consequence is practical and exact: Configuration identity binds source, dependencies, settings, platform and hashes to a dated behavior. An Engineering claim therefore has to expose the carrier `artifact-version-dependency-environment-carrier`, the relation `configuration-to-reproduced-behaviour-relation`, the record `source-dependencies-settings-platform-hashes-and-date-held`, and the boundary `configuration-baseline-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **configuration identity**, the consequence is practical and exact: Configuration identity binds source, dependencies, settings, platform and hashes to a dated behaviour. An Engineering claim therefore has to expose the carrier `artifact-version-dependency-environment-carrier`, the relation `configuration-to-reproduced-behaviour-relation`, the record `source-dependencies-settings-platform-hashes-and-date-held`, and the boundary `configuration-baseline-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -3991,7 +4181,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if maintenance history or induced failures are erased.
 
@@ -4059,7 +4249,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a changed dependency is declared irrelevant without trace evidence.
 
@@ -4127,7 +4317,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if disabling a service proves data, hazard or dependency removal.
 
@@ -4195,7 +4385,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if manufacturing, operation, maintenance or end-of-life is omitted from a whole-life claim.
 
@@ -4263,9 +4453,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if one favorable indicator, offset or displaced harm proves sustainability.
+The registered falsification condition is: Reject if one favourable indicator, offset or displaced harm proves sustainability.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -4331,7 +4521,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if an application target selects or rewrites the upstream law.
 
@@ -4399,7 +4589,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if successful performance is presented as retroactive proof of the law.
 
@@ -4467,7 +4657,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if engineering failure is automatically relabelled scientific falsification.
 
@@ -4535,7 +4725,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a prototype demonstration is called production validation or universal proof.
 
@@ -4603,7 +4793,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if simulated output is relabelled measured performance.
 
@@ -4671,7 +4861,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a compelling display replaces complete testing or external evidence.
 
@@ -4694,7 +4884,7 @@ The comparison is structural and source-bound. It checks that a relevant primary
 
 #### Scientific meaning
 
-For **engineering demonstration**, the consequence is practical and exact: A demonstration shows bounded behavior in a retained scenario and remains distinct from verification, validation and science admission. An Engineering claim therefore has to expose the carrier `artifact-scenario-observer-result-carrier`, the relation `declared-scenario-to-visible-behaviour-relation`, the record `version-setup-scenario-observations-failures-and-limits-held`, and the boundary `demonstration-scenario-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
+For **engineering demonstration**, the consequence is practical and exact: A demonstration shows bounded behaviour in a retained scenario and remains distinct from verification, validation and science admission. An Engineering claim therefore has to expose the carrier `artifact-scenario-observer-result-carrier`, the relation `declared-scenario-to-visible-behaviour-relation`, the record `version-setup-scenario-observations-failures-and-limits-held`, and the boundary `demonstration-scenario-bounded` together. If any one is hidden, the result may remain a concept, prototype, simulation, demonstration or product choice, but it is not this admitted law.
 
 This distinction protects users, maintainers and science. It prevents a successful output from erasing requirements, failed alternatives, hidden resources, inaccessible users, hazards, maintenance burdens or end-of-life costs. It prevents an application from selecting the upstream law and prevents engineering failure from becoming automatic scientific falsification. A replacement must still generate its forms, eliminate alternatives, survive controls, preserve custody and reproduce through the shared engine.
 
@@ -4739,7 +4929,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if surprise, noise, undocumented configuration or post-hoc expectation is called an anomaly.
 
@@ -4807,7 +4997,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if the implementation directly edits a scientific law or bypasses branch admission.
 
@@ -4875,9 +5065,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if platform behavior rewrites computation law or formal correctness proves usable deployment.
+The registered falsification condition is: Reject if platform behaviour rewrites computation law or formal correctness proves usable deployment.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -4943,9 +5133,9 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
-The registered falsification condition is: Reject if material or environmental behavior is inferred from product success without scientific admission.
+The registered falsification condition is: Reject if material or environmental behaviour is inferred from product success without scientific admission.
 
 - `false_premise` — passed `True`: reject the generated form lacking the complete physical carrier
 - `tampered_source` — passed `True`: reject a changed registered source identity
@@ -5011,7 +5201,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if device performance proves diagnosis, subjective experience, equal access or ethical legitimacy.
 
@@ -5079,7 +5269,7 @@ Each of the other 255 forms differs on at least one registered coordinate. Erasi
 
 The closure certificate is `depth_independent`. Minimality passed: `True`. Named-form uniqueness passed: `True`. The base case retains the least positive finite requirement or admitted law, versioned artifact, boundary, testable relation and complete record. The successor adds one lawful component, interface, platform, requirement, test, failure, lifecycle stage or anomaly while preserving all earlier identities, adverse rows and receipts.
 
-#### Falsification and deliberately unfavorable controls
+#### Falsification and deliberately unfavourable controls
 
 The registered falsification condition is: Reject if a self-hosted implementation becomes authority merely by reproducing itself or changes the protected V3 record.
 
@@ -5141,7 +5331,7 @@ This branch passed 72 sequential admissions, 72 independent validators, 18,432 c
 
 ## Rights, participation and scientific admission
 
-Anyone may read, reproduce, criticize and extend the work. No credential is required to speak. The Ernos Labs designation requires the shared empirical constitution: visible root derivation, exact grammar, complete enumeration, no target selection, no hidden fit, preserved unfavorable evidence, independent reconstruction, unchanged protected authority, retained authorship and open licensing. Criticism is public participation; admission is a separately evidenced result.
+Anyone may read, reproduce, criticize and extend the work. No credential is required to speak. The Ernos Labs designation requires the shared empirical constitution: visible root derivation, exact grammar, complete enumeration, no target selection, no hidden fit, preserved unfavourable evidence, independent reconstruction, unchanged protected authority, retained authorship and open licensing. Criticism is public participation; admission is a separately evidenced result.
 
 **Author:** Maria Smith  
 **Email:** Maria.Smith.Sftoe@gmail.com  
@@ -5159,3 +5349,262 @@ Anyone may read, reproduce, criticize and extend the work. No credential is requ
 - External target census: `sha256:ef96db6229b8b2e91cfcfb8a2a4ff44c456112af85da2827e766c33faf51d73b`
 - Engine: `sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`
 - Verification authority: `sha256:bf810a190b504f0f874a778a52e23251904b17b40a7364135e74b34e8ba0c3b8`
+
+## Complete current-census successor supplement
+
+The authoritative current scope of this paper is 80 live model-admitted claims (`engineering_translation` 80). Counts retained inside the preceding-version narrative describe the dated freeze at which those passages were written; this successor table and the machine census control the current total.
+
+The preceding manuscript did not contain 8 later-admitted claim section(s). They are included below in dependency order so the successor covers the complete current branch surface.
+
+### Tesla resonant-transfer engineering protocol
+
+**Claim ID:** `SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002`  
+**Exact statement:** A Tesla-family transfer test is lawful only as a sealed, calibrated connected-path protocol with phase, load, complete power ledger, adverse controls and visible halt retained.  
+**Dependency route:** `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-PHYS-TESLA-RESONANT-TRANSFER-081` -> `SFT-PHYS-VALIDATION-TESLA-RESONANCE-FAMILY-082`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** Every bounded resonant-transfer apparatus and result class represented by the sealed upstream Tesla family.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__phase-bound-connected-path-complete-ledger-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol requires all common records plus source phase, resonator mode, receiver load and stored, delivered, returned and loss carriers; it includes drive-absent, off-resonance, disconnected, reversed-phase, dummy-load and independent-ledger controls and makes no success claim before execution.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:d5cc4adc3231b51af5e107ea7de0cb32d343245955a6ce9d2390d8af532163be` at `receipts/engine/model_admitted/SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002-d5cc4adc3231b51a.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Driven vacuum/inertial-response engineering protocol
+
+**Claim ID:** `SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002`  
+**Exact statement:** A driven vacuum/inertial test is lawful only when drive, paired response channels, all ordinary confounds, complete restoration and source accounting remain independently measurable and preregistered.  
+**Dependency route:** `SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002` -> `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-PHYS-VACUUM-LOCAL-RESONANT-DRIVE-083` -> `SFT-PHYS-VACUUM-INERTIA-COVARIATION-084` -> `SFT-PHYS-VACUUM-INERTIA-COMPLETE-LEDGER-086` -> `SFT-PHYS-VALIDATION-VACUUM-INERTIA-DRIVE-FAMILY-087`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** Every bounded source-driven apparatus state, confound, reversal and result class represented by the sealed vacuum/inertia family.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__paired-drive-response-restoration-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol separates resonant drive, vacuum proxy, inertial response, restoration and ordinary thermal, electromagnetic, mechanical and gravitational confounds; no driven-inertia observation is asserted.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:afe48fe26787fd9d8ac066b5568ce0cb8799828c690818b8bf4445f591aba1e4` at `receipts/engine/model_admitted/SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002-afe48fe26787fd9d.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Vacuum-beat transfer and restoration protocol
+
+**Claim ID:** `SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002`  
+**Exact statement:** A vacuum-beat test must distinguish the exact outward one-sixth transfer from complete returned-cycle restoration and must halt any net-gain claim whose source, pump, loss or final-state ledger remains open.  
+**Dependency route:** `SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002` -> `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-PHYS-VACUUM-ASYMMETRIC-BEAT-EXTRACTION-003` -> `SFT-PHYS-VACUUM-COMPLETE-CYCLE-LEDGER-003` -> `SFT-PHYS-VALIDATION-VACUUM-EXTRACTION-003`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** The exact Fold beat-transfer grammar and every apparatus source, pump, boundary, restoration and result class needed to test it.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__one-sixth-outward-and-one-sixth-return-ledger-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol retains the half-One initial carrier, one-third residual, one-sixth outward work transfer, one-sixth restoration transfer and identical final state, with independent power ledgers and explicit no-unrecorded-gain acceptance boundary.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:b9889a36c4ed3f9192d7b832dc7d831dd6d0fced428632192721d1d433223769` at `receipts/engine/model_admitted/SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002-b9889a36c4ed3f91.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Sector-five/seven blind detection protocol
+
+**Claim ID:** `SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002`  
+**Exact statement:** A sector-five/seven search seals the complete p-fibre signatures before unblinding and retains backgrounds, systematics, nulls, outside-list events and independent reconstructions without relabelling a standing prediction as discovery.  
+**Dependency route:** `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-PHYS-FORCE-PRIME-SECTOR-LADDER-002` -> `SFT-PHYS-FORCE-COMPLETE-SECTOR-INVENTORY-003` -> `SFT-PHYS-NO-EXTRA-SECTOR-PARTICLE-BOUNDARY-093` -> `SFT-PHYS-VALIDATION-NEW-SECTOR-COMPLETE-FAMILY-095`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** The complete sector-five/seven signature table, detector/background alternatives, blind analysis states and outside-list falsification boundary.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__sealed-p-five-p-seven-blind-signature-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol preregisters p=5 with 5 charge labels, 24 mediators and coupling 4/5, and p=7 with 7 labels, 48 mediators and coupling 6/7; those are standing signatures, not observed particles.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:c0c460e08c6164471534ee3ceb0ed2d549c70d6887d293f978c5ed140683a095` at `receipts/engine/model_admitted/SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002-c0c460e08c616447.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Smithium synthesis and joint-identification protocol
+
+**Claim ID:** `SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002`  
+**Exact statement:** A Smithium test retains exact 126/184/310 conservation, apparatus and yield records, genetically linked decay, mass, ion, oxidation and spectroscopy channels, while preserving the distinction between SFT evidence and official discovery criteria.  
+**Dependency route:** `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-CALIBRATION-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-ENG-DEMONSTRATION-001` -> `SFT-CHEM-SMITHIUM-SYNTHESIS-CONSERVATION-001` -> `SFT-CHEM-SMITHIUM-JOINT-DETECTION-001` -> `SFT-CHEM-VALIDATION-SMITHIUM-COMPLETE-FAMILY-001`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** Every conservation-valid Smithium attempt, complete joint-evidence class, control, ambiguity and result class inside the sealed Smithium family.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__Smithium-126-complete-synthesis-identification-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol binds every synthesis attempt to Z=126, N=184 and A=310 conservation and requires joint mass, nuclear, decay, ion/oxidation and spectroscopic records; it does not claim Smithium has been produced.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:b56e36103ed992219a22c4d9bedfaa034aedb02e98f8217d082f40ebcfafc7e9` at `receipts/engine/model_admitted/SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002-b56e36103ed99221.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Complete prior-return engineering protocol family
+
+**Claim ID:** `SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002`  
+**Exact statement:** The five mandatory prior-return translations form one traceable engineering family whose complete records, controls, result classes, safe halts and non-selection boundary are independently reconstructible without asserting unperformed experiments.  
+**Dependency route:** `SFT-ENG-TESLA-RESONANT-TRANSFER-PROTOCOL-002` -> `SFT-ENG-VACUUM-INERTIA-RESPONSE-PROTOCOL-002` -> `SFT-ENG-VACUUM-BEAT-RESTORATION-PROTOCOL-002` -> `SFT-ENG-SECTOR-FIVE-SEVEN-DETECTION-PROTOCOL-002` -> `SFT-ENG-SMITHIUM-SYNTHESIS-IDENTIFICATION-PROTOCOL-002` -> `SFT-ENG-E2E-001` -> `SFT-ENG-INDEPENDENT-CHECK-001` -> `SFT-ENG-PORTABLE-DATA-001`  
+**Candidate generator:** Generate the complete eight-axis engineering protocol product for SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002, then reconstruct every protocol field and control independently.  
+**Grammar boundary:** Exactly the five mandatory prior-corpus Engineering translations in the frozen 2026-07-28 return census; physical executions remain extension-open.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__five-protocol-traceable-complete-family__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** Exactly five protocols close the registered Engineering novel-return boundary. Every one carries sealed upstream identities, complete records, controls, all four result classes, safety halts, independent reconstruction and an explicit unperformed-outcome status.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:b29fcbcb46dbf68ed79bedc13a7aa2fb391ba487875c8fb21b973d5093fc1ea5` at `receipts/engine/model_admitted/SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002-b29fcbcb46dbf68e.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Open consciousness, placebo and cross-binding protocol
+
+**Claim ID:** `SFT-ENG-CONSCIOUSNESS-PLACEBO-CROSS-BINDING-PROTOCOL-002`  
+**Exact statement:** A lawful human-participant test keeps interior report, objective physiology, modality binding, expectation, blinding, available-state limits, consent, privacy and adverse events distinct while preserving every result class.  
+**Dependency route:** `SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002` -> `SFT-ENG-REQUIREMENT-001` -> `SFT-ENG-MEASUREMENT-001` -> `SFT-ENG-ACCEPTANCE-TEST-001` -> `SFT-ENG-SAFETY-001` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-REPRODUCIBILITY-001` -> `SFT-MED-INFORMED-CONSENT-001` -> `SFT-MED-CLINICAL-PRIVACY-001` -> `SFT-CONSC-CROSS-MODAL-QUALIA-001` -> `SFT-CONSC-SYNAESTHESIA-DIRECTIONAL-LOCK-002` -> `SFT-CONSC-VALIDATION-NONORDINARY-COMPLETE-FAMILY-002` -> `SFT-MED-PLACEBO-AVAILABLE-STATE-BOUNDARY-002` -> `SFT-MED-PLACEBO-OBJECTIVE-REPORT-SEPARATION-002` -> `SFT-MED-VALIDATION-PLACEBO-NOCEBO-COMPLETE-FAMILY-002`  
+**Candidate generator:** Generate the complete eight-axis append-only engineering protocol product for SFT-ENG-CONSCIOUSNESS-PLACEBO-CROSS-BINDING-PROTOCOL-002 and independently reconstruct its no-omission witness.  
+**Grammar boundary:** Every open, reproducible cross-binding and placebo/nocebo test represented by the named Consciousness and Medicine receipts, with human-participant ethics retained.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__ethics-bound-interior-objective-cross-binding-protocol__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** The protocol preregisters separate qualitative report, physiological and behavioural channels; directional and expectation controls; consent, withdrawal, privacy and adverse-event halts; and makes no experimental success claim before a lawful participant study.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:52856443290a7ff3f0a058bf50aa8533462b7acfb743be21afa85edd484edade` at `receipts/engine/model_admitted/SFT-ENG-CONSCIOUSNESS-PLACEBO-CROSS-BINDING-PROTOCOL-002-52856443290a7ff3.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+### Engineering novel-translations no-omission addendum
+
+**Claim ID:** `SFT-ENG-NOVEL-TRANSLATIONS-NO-OMISSION-ADDENDUM-002`  
+**Exact statement:** The five previously sealed physical and chemical protocols plus the separately sealed consciousness/placebo/cross-binding protocol exhaust the six Engineering obligations in the dated prior-return audit without changing any prior receipt.  
+**Dependency route:** `SFT-ENG-CONSCIOUSNESS-PLACEBO-CROSS-BINDING-PROTOCOL-002` -> `SFT-ENG-NOVEL-TRANSLATIONS-COMPLETE-FAMILY-002` -> `SFT-ENG-TRACEABILITY-001` -> `SFT-ENG-INDEPENDENT-CHECK-001`  
+**Candidate generator:** Generate the complete eight-axis append-only engineering protocol product for SFT-ENG-NOVEL-TRANSLATIONS-NO-OMISSION-ADDENDUM-002 and independently reconstruct its no-omission witness.  
+**Grammar boundary:** Exactly the six numbered Engineering translations in the V1/V2 novel-return audit dated 2026-07-28.  
+**Complete census:** 256 candidates; 1 unique survivor; 4 controls  
+**Survivor:** `sealed-upstream-receipts__six-obligation-append-only-no-omission-assembly__complete-common-and-domain-record__complete-declared-control-family__favourable-adverse-absent-unresolved__visible-halt-and-bounded-safe-state__protocol-seal-before-outcome__no-law-rewrite`  
+**Exact result:** Exactly six inherited protocol obligations are now represented: Tesla transfer, vacuum/inertia response, vacuum-beat restoration, sector-five/seven detection, Smithium synthesis/identification, and open consciousness/placebo/cross-binding tests. No protocol asserts an unperformed outcome.  
+**Closure:** `depth_independent`; minimality `True`; named-shape uniqueness `True`  
+**External status:** `independently_replicated`  
+**Engine receipt:** `sha256:ad3233db90a4586713e027eefb3d4a23a54aa652c88e89111091f487b88cd96a` at `receipts/engine/model_admitted/SFT-ENG-NOVEL-TRANSLATIONS-NO-OMISSION-ADDENDUM-002-ad3233db90a45867.json`
+
+| Control | Passed | Expected | Observed |
+|---|---|---|---|
+| false_premise | True | reject the form missing the first structural preservation | reject the form missing the first structural preservation |
+| tampered_source | True | reject a changed source identity | reject a changed source identity |
+| tampered_artifact | True | reject a missing, duplicate or additional survivor | reject a missing, duplicate or additional survivor |
+| boundary | True | reject forbidden values, target feedback and extra laws | reject forbidden values, target feedback and extra laws |
+
+
+## Preceding-version abstract preserved for chronology
+
+The following abstract is reproduced from version 1.0.0. Its counts and status language describe that dated version and do not override the current abstract or census above.
+
+Engineering fails scientifically when a desired output selects its own requirements, when a prototype is called validation, when a hidden service supplies uncounted resources, when a simulation is relabelled observation, or when successful performance is treated as proof of a fundamental law. This paper reconstructs Engineering Translation from the One through every admitted upstream branch. Twelve families and seventy-two laws govern requirements, components, resources, measurement, alternatives, control, safety, verification, accessibility, lifecycle, evidence classes and anomaly handoff. The proof layer adds no axiom, free parameter, fit, conventional numerical zero, negative proof scalar, irrational or imaginary proof number, completed infinity or ungenerated continuum. Every claim is a 256-form census across eight exact axes; all 18,432 forms were sealed before external engineering sources were registered. Independent reconstructions and source-bound comparisons preserve adverse, missing and failed records. The result is a public, cross-platform, extension-open constitution for turning science into working artifacts without confusing translation with discovery.
+
+## Registered source surface
+
+Human-readable scholarly references remain in the inherited paper. Machine source IDs, custodians, releases, locators, source captures, access outcomes, hashes and transport status remain in the current claim packages and external-source registries. Source prestige is not evidential authority; each source is used only in its registered role. The Lean source-binding gate checks custody and identity, not empirical truth by reputation.
+
+## Limitations and open frontier
+
+The current result is formally complete only to the named dated grammar, census and artifact graph. Native Lean theoremhood is presently established for the operational root and generic gate implications; the other scientific claims are artifact checked rather than individually restated as Lean propositions. Empirical validation remains claim specific, and adverse, unavailable and unresolved evidence remains open where the current records say so. New discoveries, falsifications, stronger comparisons and native claim-level formalisations may enter only through a later version without rewriting this one.
+
+## Data and code availability
+
+The successor Markdown is `publications/successors/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD_PAPER_001_V1_1.md` and its scientific predecessor is `publications/current/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD.md`. The Lean sources and report are under `generated/lean4_validation/`; the report is `generated/lean4_validation/reports/whole_model_validation.json`. Current claims are indexed by `census/claims.json`; complete candidates, decisions, controls, certificates, observations and receipts remain under `claims/<claim-id>/` and `receipts/`. The paper's evidence map and draft deposit metadata sit beside the successor source. No remote action was performed.
+
+## References and source registry
+
+1. Smith, Maria. The preceding version of this paper, preserved at the repository path identified above, 2026.
+2. Smith, Maria. *There Is No Nothing*. Ernos Labs Methods Paper 00, versioned publication series, 2026.
+3. de Moura, Leonardo, and Sebastian Ullrich. “The Lean 4 Theorem Prover and Programming Language.” *Automated Deduction — CADE 28*, 2021. DOI: [10.1007/978-3-030-79876-5_37](https://doi.org/10.1007/978-3-030-79876-5_37).
+4. Lean FRO. *The Lean Language Reference*. [lean-lang.org/doc/reference/latest](https://lean-lang.org/doc/reference/latest/).
+5. Ernos Labs. Current claim packages, source registries and Lean verification report, repository snapshot bound by the machine identities below.
+
+## Successor machine-identity appendix
+
+- Preceding source: `publications/current/engineering_translation/FROM_ONE_LAW_TO_A_WORKING_WORLD.md`
+- Preceding source SHA-256: `sha256:e232febfafdd820c6ac4557b42bf9b9fcf0b894c316c272e87e19b34a6bc44d0`
+- Lean report: `generated/lean4_validation/reports/whole_model_validation.json`
+- Lean report SHA-256: `sha256:6b6a5a9a9a0b74687a6f97fb3b4fcc7455968e35c82395290837cda60d7501cf`
+- Ordered census SHA-256: `sha256:f3f540f77a9b677bf7ddb9f5c6ea1ea41f08e57bb07163e25f385fd4d1dcde71`
+- Execution manifest SHA-256: `sha256:517fd288f4484f43fdc0343b17fcabd06ea9e12c977a4512d4a891dd038fce41`
+- Protected engine seal: `sha256:4f4cdd7986808e6a6102d650c85e6093d6425e49f14a5f05d70fa05e6031d46a`
+- Verification-authority seal: `sha256:bf810a190b504f0f874a778a52e23251904b17b40a7364135e74b34e8ba0c3b8`
+- Publication authorised: `false`
+- Remote actions performed: `false`
+
+## Lean 4 independent verification update
+
+### Verified result
+
+The pinned Lean toolchain `leanprover/lean4:v4.32.0` compiled the verification project and the executable verifier returned `PASS`. Its immutable report identity for this successor is `sha256:6b6a5a9a9a0b74687a6f97fb3b4fcc7455968e35c82395290837cda60d7501cf`.
+
+| Verified surface | Result |
+|---|---:|
+| Ordered census claims | 2,777 |
+| Proof-bearing accepted claim gates | 2,777 |
+| Source-bound claims | 2,777 |
+| Candidate records | 898,902 |
+| Decision records | 898,902 |
+| Passed controls | 11,108 |
+| Registered branches | 17 |
+| Issues | 0 |
+
+This paper's registered branch surface contributes **80** of the accepted claims.
+
+### Native theorem proof and artifact verification are different layers
+
+`SFTValidation/Root.lean` formalises the exact registered two-member operational grammar: `unpresentedAbsence` and `presentedOccurrence`. The decision function rejects the former and accepts the latter. Lean proves existence by the accepted constructor and uniqueness by exhaustive case analysis over the two constructors. `#print axioms` reports no imported or user-declared axioms for the exported root theorems. This is a kernel-checked proof of the unique survivor inside the exact registered operational grammar.
+
+`SFTValidation/Gates.lean` defines twelve Boolean acceptance obligations and can construct an inhabitant of `ClaimGate.Accepted gate` only when all twelve equal `true`. The runtime verifier then parses the complete ordered census and execution manifest, recomputes identities, cardinalities, one-to-one decision coverage, survivor count, controls, closure fields, empirical boundaries, certificate bindings and authoritative receipts, and calls that proof-bearing constructor for every current claim.
+
+The exact scientific statements of the other claims are not all re-expressed as 2,776 separate Lean propositions in this version. They are validated as the repository's complete registered machine artifacts through Lean-executed checks. The source-manifest gate uses a read-only Python bridge solely to instantiate the already registered source factories; Lean consumes the result. This layer does not replace the protected admission engine, does not write receipts and does not substitute for source experiments or empirical replication.
+
+### Fail-closed custody event
+
+The first whole-model run halted on six source-capture byte hashes. The discrepancy was traced to line-ending normalisation in the working tree, not to a changed scientific target or a failed theorem. The registered source bytes were restored, exact-byte Git attributes were added for those six captures, all 385 registered external source bindings were re-audited with no mismatch, and the unchanged Lean verification was rerun to `PASS`. The preserved halt demonstrates that source drift is detected rather than silently forgiven.
+
+### What the result supports
+
+The result materially strengthens the model's case for formal coherence, exhaustive current-census coverage, unique-survivor enforcement, dependency and provenance integrity, cross-branch consistency and reproducibility by an implementation outside the admission engine. It does not by itself establish that every empirical claim is true in nature, that the registered grammar is the only conceivable grammar outside its stated boundary, or that SFT is superior to every rival theory. Those questions remain governed by the papers' declared experiments, falsification conditions and comparative tests.
+
+
+
+## Successor conclusion
+
+Version 1.1.0 preserves the preceding paper's derivations, evidence classes, corrections, adverse and unresolved records, ownership limits and open frontier, while integrating the independent Lean 4 result and every later current claim in its declared scope. This paper contributes 80 current claim(s) within `engineering_translation` to the total dependency spine.
+
+The new formal result establishes that the registered two-class operational root has one Lean-proved survivor and that all 2,777 current claims satisfy the proof-bearing artifact gates. The major conflation resolved by this update is between native theorem proof and whole-repository artifact verification: both are valuable, but they are not the same evidential act. No empirical status is strengthened merely because the artifact graph passes, and no historical halt or correction is erased.
+
+The current evidence therefore establishes formal coherence, current-census completeness, unique-survivor enforcement and intact source, dependency, certificate and receipt custody for this version. Field-specific empirical conclusions remain exactly those authorised by their current records. Lawful discovery, falsification, stronger evidence and versioned extension remain open, and publication itself remains pending Maria Smith's explicit confirmation.

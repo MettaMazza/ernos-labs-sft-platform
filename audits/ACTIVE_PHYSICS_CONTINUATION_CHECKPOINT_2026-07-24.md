@@ -1,5 +1,43 @@
 # Active Physics continuation checkpoint
 
+## Authoritative recurrence-work correction - 2026-08-12
+
+This section supersedes the 2026-07-29 Physics count for restart purposes
+without reopening or rewriting any earlier receipt. Physics now contains
+**370 current claims**. The two new formal successors each enumerate 256
+candidates, one survivor and four controls:
+
+- `SFT-PHYS-VACUUM-FOLD-RECURRENCE-WORK-CYCLE-096`, engine receipt
+  `sha256:b20905e98a76c7cfdf74fbb45265e7800328fe5c4cadbd0f7ac3571565f03b6f`;
+- `SFT-PHYS-VACUUM-RECURRENCE-CYCLE-BOUNDARY-097`, engine receipt
+  `sha256:0e904250bbf4a3a67513237641a6a7014affade133bcbdfcad478d84f8025165`.
+
+The exact successor route is
+`1/2 -> 1/3 + work 1/6; Fold(1/3) -> 2/3; 2/3 -> 1/2 + work 1/6`.
+The local vacuum and repeatable controller configuration recur; two work
+carriers and an append-only audit carrier cross the output boundary. The global
+state is therefore not falsely labelled identical. The earlier direct-
+repayment and global-return receipts remain valid inside their declared
+grammars.
+
+Engineering Translation now contains **81 current claims**. The apparatus test
+boundary is admitted as
+`SFT-ENG-VACUUM-RECURRENCE-CYCLE-PROTOCOL-003`, engine receipt
+`sha256:d0cc880185372d6d7b5ac953b756d7475277f03eee3b816591570ea1c71f3372`.
+No apparatus outcome, dimensional power, efficiency, switching result or loss
+measurement is claimed. Focused recurrence, predecessor and protocol tests pass
+15/15. Engine and verification-authority seals remain valid and unchanged.
+
+The complete current corpus count is 2,781 admitted claims. The dated Lean PASS
+remains restricted to the preceding 2,777-claim surface; no new whole-corpus
+Lean PASS is claimed. The unrelated current worktree Lean failure remains user
+work and is neither rewritten nor included in this correction.
+
+Publication successors are Physics 1.5.0, Engineering Translation 1.2.0 and
+Theory of Everything 0.4.0. All use existing Zenodo `newversion` lineages; no
+new concept or standalone post is authorized. The private investigation remains
+outside this public claim, paper, release and Git scope.
+
 > **Content-level audit correction (28 July 2026):** the earlier `488/488`
 > count only covered rows already labelled Physics-owned and therefore cannot
 > prove that cross-synthesis or mis-owned prior statements were reconstructed.

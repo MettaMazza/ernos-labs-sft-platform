@@ -1,0 +1,33 @@
+{
+  "claim_id": "SFT-ENG-VACUUM-RECURRENCE-CYCLE-PROTOCOL-003",
+  "controls": [
+    {
+      "expected_behavior": "reject the form missing the first structural preservation",
+      "kind": "false_premise",
+      "observed_behavior": "reject the form missing the first structural preservation",
+      "passed": true,
+      "receipt_hash": "sha256:d1851c5dc6a7a848b90e639c3fe2fc080513863210a70905915238b85029e906"
+    },
+    {
+      "expected_behavior": "reject a changed source identity",
+      "kind": "tampered_source",
+      "observed_behavior": "reject a changed source identity",
+      "passed": true,
+      "receipt_hash": "sha256:49b17ebde355fec5bc2b92da21dffccb6cc5e1d91e5623339bdaa724c9a1f7e6"
+    },
+    {
+      "expected_behavior": "reject a missing, duplicate or additional survivor",
+      "kind": "tampered_artifact",
+      "observed_behavior": "reject a missing, duplicate or additional survivor",
+      "passed": true,
+      "receipt_hash": "sha256:de4fddf8efa30a938b1ac69a2cb92e7f8871cc0e45da322ede21e9800f780d68"
+    },
+    {
+      "expected_behavior": "reject forbidden values, target feedback and extra laws",
+      "kind": "boundary",
+      "observed_behavior": "reject forbidden values, target feedback and extra laws",
+      "passed": true,
+      "receipt_hash": "sha256:17cb358c6073c87b0b70309a4ba3ade9b87ab83e9384a21d9ec1459b08832dd0"
+    }
+  ]
+}
