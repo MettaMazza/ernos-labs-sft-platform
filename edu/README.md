@@ -1,5 +1,17 @@
 # Smithian Fold Theory Open Education Library
 
+## Active programme — 8 September 2026
+
+The full-series goal is active. Start with [CONTINUATION.md](CONTINUATION.md)
+for the exact working position, [USER_GUIDANCE_2026-09-08.md](USER_GUIDANCE_2026-09-08.md)
+for the complete user brief, and [SERIES_PROGRAMME.md](SERIES_PROGRAMME.md)
+for the all-age production programme. The first priority is critical review
+and improvement of the four existing books and game levels. Authors:
+**Maria & Matthew Smith**.
+
+The older version and science-count descriptions below are historical July
+context, not a current completion report. They are due for source-based review.
+
 This directory is the working home for an open-source educational library built
 from Smithian Fold Theory (SFT), beginning with the foundational theorem and
 progressing from early learning to advanced independent reconstruction.
