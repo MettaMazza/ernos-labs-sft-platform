@@ -1,11 +1,14 @@
 # SFT Learning Adventures
 
-This offline game now contains four complete book companions: E01 *The Star
+This offline review game contains four available book companions: E01 *The Star
 Door Mystery*, E02 *The Moon Lantern Workshop*, E03 *The Turning-Light Trail*
 and E04 *The Garden Gate Check*. The level selector opens any of the four fixed,
 animated adventures.
-None is a quiz-card stack or a
-read-and-scroll page.
+
+The September 2026 quality review is in progress. Availability and prior tests
+do not establish that every puzzle is clear, enjoyable or defect-free. See
+`../../reviews/GAME_PLAY_REVIEW_2026-09-08.md` for the actual current play-test
+coverage. The book reviews are separate; no revised edition is implied here.
 
 ## What the child does
 

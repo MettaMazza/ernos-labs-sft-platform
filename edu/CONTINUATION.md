@@ -1,7 +1,7 @@
 # Education series: current checkpoint
 
 Updated: 8 September 2026.
-Status: full-series goal ACTIVE; E01/E02 full visual reviews complete; E03 review in progress. Write/network access restored by the user on 8 September 2026.
+Status: full-series goal ACTIVE; all four current books and adult guides visually reviewed. Game play audit started; revised editions pending. Write/network access restored by the user on 8 September 2026.
 
 ## Read first
 
@@ -13,7 +13,7 @@ Status: full-series goal ACTIVE; E01/E02 full visual reviews complete; E03 revie
 ## Current position
 
 Repository: /Users/mettamazza/Desktop/Smithian Fold Theory Of Everything.
-Branch inspected: main. HEAD before saving completed visual reviews: f1c8100c.
+Branch inspected: main. Latest review-checkpoint commit before completing E03/E04: 07cee249 (pushed).
 There are extensive unrelated research edits. Scope education changes explicitly.
 Current book files: E01–E04 review 2.0.0, 32 pages each. Game: review 2.1.1.
 E01 already has uncommitted credit and page-8 case corrections; preserve them.
@@ -31,12 +31,15 @@ User page-by-page review stopped at corrected E01 page 8; next requested review 
 
 - E01: complete source/adult reading, all 32 student pages and all four adult pages visually inspected. See reviews/E01_PAGE_REVIEW_2026-09-08.md. Major defects: sealed box teaches empty/inside, missing earned stars, hidden-object contradictions and static reused action art.
 - E02: complete source/adult reading, all 32 student pages and all five adult pages visually inspected. See reviews/E02_PAGE_REVIEW_2026-09-08.md. Major defects: fit problem not shown, parts/cards conflated, paths miss doorway, premature reconstruction, weak addition demonstration.
-- E03: complete JSON source read; only actual PDF pages 1–4 visually inspected. See reviews/E03_PAGE_REVIEW_2026-09-08.md. Adult guide not yet reviewed.
+- E03: complete JSON/adult source read; all 32 student pages and all four adult pages visually inspected. See reviews/E03_PAGE_REVIEW_2026-09-08.md. Major defects: two cards presented as two sides of one tile, flip not shown, procedural language, path endpoints replaced by text labels, tiny sprites.
+- E04: complete JSON/adult source read; all 32 student pages and all four adult pages visually inspected. See reviews/E04_PAGE_REVIEW_2026-09-08.md. Major defects: missing reference plans; noncontiguous/inconsistent measuring units; clipped upper tile; colour-only width/height records; weak job setup.
+- Total actual book visual coverage: 128 student pages and 17 adult-guide pages. Not game coverage and not user approval.
+- Game: local dev server launched, desktop selector and four-beat Level 1 intro inspected, first playable scene entered, then returned to selector. No character bleed in that desktop path. No mini-game/mobile/audio pass yet. See reviews/GAME_PLAY_REVIEW_2026-09-08.md for exact tested scope and runtime.
 - Reviews were performed read-only, then saved after full access was restored. They are not fixed editions, play-test results, or user approval.
 
 ## Next exact operation
 
-Continue E03 visual review at student page 5 through 32, then read and inspect its adult guide. Do not repeat completed E01/E02 reviews or E03 pages 1–4 just because of compression. Inspect E04 and play current Levels 1–4 next, then implement versioned revisions beginning with E01's complete story and teaching-object state sequence. Full write/network access is now enabled; do not continue reporting read-only limitations. Use the actual applicable PDF/image/game skills for production. Keep the broader catalogue refresh independent of scientific source-content mutation.
+All four book reviews are complete: do not replay the 128 pages because of compression. Revalidate retained dev session 5825 / http://localhost:3000/; no duplicate launch if still live. Native Chrome game tab is at level selection (no browser provider available). Continue Level 1 from settled entrance through actual mini-games, then Levels 2–4; record success, wrong paths, retry, mobile layouts and audio lifecycle separately. Begin versioned book revision with E01's complete story and teaching-object state sequence, using the four saved reviews to keep continuity coherent. Full write/network access is enabled. Preserve historical releases and existing user edits. Game contains .openai/hosting.json, so read Sites skill guidance; local-only scope means no Sites registration/deployment. Keep curriculum refresh independent of scientific source mutation.
 
 ## Authority and boundaries
 
@@ -44,4 +47,4 @@ User authorized autonomous education development and scoped main review releases
 
 ## Honesty
 
-September E01/E02 book-and-guide visual review is complete; E03/E04 and all game play audits remain incomplete. No claim that prior bug reports are fixed. The 104-book architecture is provisional, not a claim of 104 completed works. Keep the full-series goal active.
+September E01–E04 book-and-guide visual review is complete; all September game play audits and revised editions remain incomplete. No claim that prior bug reports are fixed. The 104-book architecture is provisional, not a claim of 104 completed works. Keep the full-series goal active.
