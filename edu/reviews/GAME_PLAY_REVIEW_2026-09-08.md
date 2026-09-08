@@ -19,14 +19,24 @@ Actual desktop UI flow:
 ## Initial observations, not full conclusions
 
 - Introduction supplies world/team context but uses an abstract opening and describes character traits instead of demonstrating them through action. Evaluate alongside the book rewrite.
-- First playable-scene screenshot showed Mia/Tavi but not Sol; this may be transient entry motion. Check after the animation settles before calling it a persistent missing-character defect.
+- First playable-scene screenshot initially showed Mia/Tavi but not Sol. A later settled screenshot showed all three; a persistent missing-Sol defect was not reproduced in this desktop path.
 - Caption accessibility presents text/buttons but not canvas character/object detail. Audit accessible alternatives during the actual activities.
 - Music/narration labels are present. No sound capture/listening or visibility/audio lifecycle test has yet been completed.
 
+## Additional first-activity pass
+
+Resumed Level 1 after the intro had already been seen and advanced through all six opening dialogue beats. The note's arrival, Mia picking it up, the message and the request to identify it appeared in order. At the settled scene all three characters were visible. The note artwork remained a floating symbol near Mia rather than clearly held in her hand.
+
+Entered the first activity, with route-map, book and written-note choices. Deliberately chose the wrong book. The game stayed playable and responded: “That is the book. Which thing is one sheet of paper with writing on it?” Then chose the written note and reached the discovery recap and next-arrow control. This checks one wrong answer followed by correction, not the separate Reset round or Play again behavior.
+
+The beginner identification task is readable, but the note has already been shown, named and read before the choice. It offers limited discovery and is a labelled multiple-choice interaction, not evidence of a substantial adventure puzzle. Do not generalise this first activity's success to the rest of the game.
+
+Clicked Follow the next arrow. The subsequent accessibility response was truncated; the next scene was not inspected. Re-read current UI state before taking another action.
+
 ## Untested
 
-All mini-games; wrong actions; retries; meaningful variation; all later scenes/endings; Levels 2–4; mobile/tablet layouts; device app switching; persisted resume; audio overlap/caption alignment; complete keyboard/drag alternatives; actual offline LAN access from another device. No claim of a full play pass.
+All mini-games after the note identification; Reset round/Play again; meaningful variation; all later scenes/endings; Levels 2–4; mobile/tablet layouts; device app switching; persisted resume; audio overlap/caption alignment; complete keyboard/drag alternatives; actual offline LAN access from another device. No claim of a full play pass.
 
 ## Runtime continuation
 
-At this checkpoint dev server was retained under exec session 5825. Revalidate its handle or exact localhost route before relying on it; do not start a duplicate server because of compression. Chrome is back at level selection. Next actual test: resume Level 1, inspect settled entrance and play the first activity with success and wrong-input behavior; progress through all stages and layouts, keeping notes as tests happen.
+At this checkpoint dev server was retained under exec session 5825. Revalidate its handle or exact localhost route before relying on it; do not start a duplicate server because of compression. Native Chrome's local game tab was advanced beyond the first note recap, but the resulting scene was not inspected. Read its live accessibility state, then continue the next actual activity. Browser provider was unavailable; the persistent native app binding was `gameApp` for `com.google.Chrome`.
