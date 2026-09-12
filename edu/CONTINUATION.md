@@ -1,7 +1,7 @@
 # Education series: current checkpoint
 
-Updated: 8 September 2026.
-Status: full-series goal ACTIVE; all four current books and adult guides visually reviewed. E01 v3 manuscript and four-page rendered development proof now exist; full revised editions pending. Game play audit remains partial. Write/network access restored by the user on 8 September 2026.
+Updated: 12 September 2026.
+Status: full-series goal ACTIVE; all four current books and adult guides visually reviewed. E01 v3 manuscript and a continuous twelve-page development excerpt now exist; full revised editions pending. Game play audit remains partial. Write/network access restored by the user on 8 September 2026.
 
 ## Read first
 
@@ -13,7 +13,7 @@ Status: full-series goal ACTIVE; all four current books and adult guides visuall
 ## Current position
 
 Repository: /Users/mettamazza/Desktop/Smithian Fold Theory Of Everything.
-Branch inspected: main. Last pushed completed-review checkpoint before the v3 development slice: 1745a6c5. Inspect live HEAD and scoped status when resuming.
+Branch inspected: main. Live HEAD at the 12 September resumption was 92febbdc, containing the v3 manuscript/box proof; that prior goal turn was progress. The current opening slice is being committed separately. Inspect live HEAD and scoped status when resuming.
 There are extensive unrelated research edits. Scope education changes explicitly.
 Current book files: E01–E04 review 2.0.0, 32 pages each. Game: review 2.1.1.
 E01 already has uncommitted credit and page-8 case corrections; preserve them.
@@ -45,9 +45,17 @@ User page-by-page review stopped at corrected E01 page 8; next requested review 
 - PDF: `output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/3.0.0-development/SFT-E01-Box-Sequence-Layout-Proof-v3.0.0.pdf`. Four actual proof pages visually inspected after final rendering; initial character crop and teddy scale corrected. Credit and development status visible.
 - Read `reviews/E01_V3_DEVELOPMENT_2026-09-08.md` for exact implemented/remaining scope. This is not a complete book, adult-guide update or game update. Existing v2 user changes remain untouched.
 
+## Opening implemented on 12 September
+
+- New `source/render_e01_v3_opening.py` renders pages 1–8 and appends the checked box PDF unchanged, producing a continuous twelve-page excerpt and accessible HTML.
+- New saved art: `art/v3.0.0/story/e01-enter-v3.0.0.png` and `e01-note-held-v3.0.0.png`. Two successful built-in generations; exact prompts appended to the art record. No fallback or old-asset overwrite.
+- Actual new-page visual coverage: all eight opening pages, followed by rechecks of changed pages. Fixed label contrast/face overlap, Tavi label proximity and the missing preceding letter box. The note is on the rug before it is in Mia's palms; the five-stop map is visible before a star is earned.
+- Current PDF: `output/pdf/edu/SFT-EDU-E01-SOMETHING-IS-HERE/3.0.0-development/SFT-E01-Opening-and-Box-Development-v3.0.0.pdf`. Exactly 12 pages; correct author metadata. See `reviews/E01_V3_OPENING_2026-09-12.md`.
+- Important remaining issue: this excerpt is for one-page-at-a-time reading. Final print pagination must prevent a question and revealing picture from appearing on the same facing spread. The earlier even-page question rule was wrong; the manuscript now records the real requirement. No print-ready or complete-book claim.
+
 ## Next exact operation
 
-Do not replay the completed 128-page old-edition review. Continue E01 v3 production from the new full manuscript: illustrate/render pages 1–8 to establish Mia's motivation, the arriving note and the actual five-place map, then pages 13–32. Reuse the checked open-box sequence and asset record; do not regenerate it because of compression. Read the PDF and imagegen skills before authoring. The four-page proof is only a section and must not become the full book by default.
+Do not replay the completed 128-page old-edition review or regenerate the checked opening/box because of compression. Continue E01 v3 from pages 13–18: Nori's introduction, bell ringing then still, and blank/marked cards. Then finish pages 19–32, the complete adult/accessible materials, and print-spread question/reveal placement. Read current PDF/imagegen skills before authoring. The twelve-page excerpt is not the whole book and must not become the target by default.
 
 For game work, revalidate retained dev session 5825 / http://localhost:3000/; no duplicate launch if live. Native Chrome local game tab has just advanced from the first note recap; the resulting scene was not read because the last UI output was truncated. Get fresh accessibility state before clicking. Continue actual games and later levels; record success, wrong paths, retries, mobile layouts and audio lifecycle separately. Game contains .openai/hosting.json, so use Sites skill guidance; local-only scope means no registration/deployment. Full write/network access is enabled. Preserve historical releases and user edits. Curriculum refresh remains independent of scientific mutation.
 
@@ -57,4 +65,4 @@ User authorized autonomous education development and scoped main review releases
 
 ## Honesty
 
-September E01–E04 old-book-and-guide visual review is complete; the E01 v3 manuscript and four-page visual development proof are implemented. Full game audits and complete revised editions remain incomplete. No claim that all prior bugs are fixed. The 104-book architecture is provisional, not a claim of 104 completed works. Keep the full-series goal active.
+September E01–E04 old-book-and-guide visual review is complete; the E01 v3 manuscript and twelve-page development excerpt are implemented. Full game audits, complete revised editions and final print layouts remain incomplete. No claim that all prior bugs are fixed. The 104-book architecture is provisional, not a claim of 104 completed works. Keep the full-series goal active.
